@@ -1,0 +1,66 @@
+{
+    "certificate": "@[package:astro]{astro} moves from %[from]{7.3.1} to %[to]{7.3.2}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:react]{react} moves from %[from]{19.2.8} to %[to]{19.3.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:react-dom]{react-dom} moves from %[from]{19.2.8} to %[to]{19.3.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:_types_react]{@types/react} moves from %[from]{19.2.18} to %[to]{19.3.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:_types_react-dom]{@types/react-dom} moves from %[from]{19.2.7} to %[to]{19.3.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:_types_react-dom.from": "inferred",
+        "package:_types_react-dom.name": "inferred",
+        "package:_types_react-dom.semverSafe": "gateway",
+        "package:_types_react-dom.to": "inferred",
+        "package:_types_react.from": "inferred",
+        "package:_types_react.name": "inferred",
+        "package:_types_react.semverSafe": "gateway",
+        "package:_types_react.to": "inferred",
+        "package:astro.from": "inferred",
+        "package:astro.name": "inferred",
+        "package:astro.semverSafe": "gateway",
+        "package:astro.to": "inferred",
+        "package:react-dom.from": "inferred",
+        "package:react-dom.name": "inferred",
+        "package:react-dom.semverSafe": "gateway",
+        "package:react-dom.to": "inferred",
+        "package:react.from": "inferred",
+        "package:react.name": "inferred",
+        "package:react.semverSafe": "gateway",
+        "package:react.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "from": "inferred",
+        "semverSafe": "gateway",
+        "to": "inferred"
+    },
+    "store": {
+        "package:_types_react-dom.from": "19.2.7",
+        "package:_types_react-dom.name": "@types/react-dom",
+        "package:_types_react-dom.semverSafe": 1,
+        "package:_types_react-dom.to": "19.3.0",
+        "package:_types_react.from": "19.2.18",
+        "package:_types_react.name": "@types/react",
+        "package:_types_react.semverSafe": 1,
+        "package:_types_react.to": "19.3.0",
+        "package:astro.from": "7.3.1",
+        "package:astro.name": "astro",
+        "package:astro.semverSafe": 1,
+        "package:astro.to": "7.3.2",
+        "package:react-dom.from": "19.2.8",
+        "package:react-dom.name": "react-dom",
+        "package:react-dom.semverSafe": 1,
+        "package:react-dom.to": "19.3.0",
+        "package:react.from": "19.2.8",
+        "package:react.name": "react",
+        "package:react.semverSafe": 1,
+        "package:react.to": "19.3.0"
+    },
+    "verified": true
+}

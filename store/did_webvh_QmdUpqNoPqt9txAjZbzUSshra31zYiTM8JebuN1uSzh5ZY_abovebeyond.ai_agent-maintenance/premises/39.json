@@ -1,0 +1,34 @@
+{
+    "certificate": "@[package:astro]{astro} moves from %[from]{7.2.10} to %[to]{7.3.2}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:astro.from": "inferred",
+        "package:astro.name": "inferred",
+        "package:astro.semverSafe": "gateway",
+        "package:astro.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "from": "inferred",
+        "semverSafe": "gateway",
+        "to": "inferred"
+    },
+    "store": {
+        "package:astro.from": "7.2.10",
+        "package:astro.name": "astro",
+        "package:astro.semverSafe": 1,
+        "package:astro.to": "7.3.2"
+    },
+    "verified": true
+}

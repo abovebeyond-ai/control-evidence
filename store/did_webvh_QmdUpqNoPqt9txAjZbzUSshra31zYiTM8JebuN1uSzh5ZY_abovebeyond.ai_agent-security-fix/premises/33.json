@@ -1,0 +1,36 @@
+{
+    "certificate": "@[package:smol-toml]{smol-toml} moves from %[from]{1.6.1} to %[to]{1.7.1}, closing %[advisories]{1} advisory, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:smol-toml.advisories": "inferred",
+        "package:smol-toml.from": "inferred",
+        "package:smol-toml.name": "inferred",
+        "package:smol-toml.semverSafe": "gateway",
+        "package:smol-toml.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "from": "inferred",
+        "semverSafe": "gateway",
+        "to": "inferred"
+    },
+    "store": {
+        "package:smol-toml.advisories": 1,
+        "package:smol-toml.from": "1.6.1",
+        "package:smol-toml.name": "smol-toml",
+        "package:smol-toml.semverSafe": 1,
+        "package:smol-toml.to": "1.7.1"
+    },
+    "verified": true
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"json-canonicalize\",\"to\":\"3.0.1\",\"lock\":\"package-lock.json\"},{\"pkg\":\"playwright\",\"to\":\"1.63.0\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 2,
+            "plan_sha256": "d0ec66dd819a068c0b501b92e2704c28bb91e461451fa3c4021630d42c0370e0",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "ShaneDeconinck/shanedeconinck.be"
+    },
+    "run": "01M259TVSX9AYVEVZBZYASTT8N"
+}

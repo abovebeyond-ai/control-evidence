@@ -1,0 +1,74 @@
+{
+    "certificate": "@[package:laravel_nightwatch]{laravel/nightwatch} moves from %[from]{1.28.5} to %[to]{1.30.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:laravel_telescope]{laravel/telescope} moves from %[from]{5.20.0} to %[to]{5.24.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:league_flysystem-aws-s3-v3]{league/flysystem-aws-s3-v3} moves from %[from]{3.35.1} to %[to]{3.35.3}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:livewire_livewire]{livewire/livewire} moves from %[from]{4.3.3} to %[to]{4.4.4}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:mockery_mockery]{mockery/mockery} moves from %[from]{1.6.12} to %[to]{1.6.15}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:nunomaduro_collision]{nunomaduro/collision} moves from %[from]{8.9.4} to %[to]{8.9.5}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:laravel_nightwatch.from": "inferred",
+        "package:laravel_nightwatch.name": "inferred",
+        "package:laravel_nightwatch.semverSafe": "gateway",
+        "package:laravel_nightwatch.to": "inferred",
+        "package:laravel_telescope.from": "inferred",
+        "package:laravel_telescope.name": "inferred",
+        "package:laravel_telescope.semverSafe": "gateway",
+        "package:laravel_telescope.to": "inferred",
+        "package:league_flysystem-aws-s3-v3.from": "inferred",
+        "package:league_flysystem-aws-s3-v3.name": "inferred",
+        "package:league_flysystem-aws-s3-v3.semverSafe": "gateway",
+        "package:league_flysystem-aws-s3-v3.to": "inferred",
+        "package:livewire_livewire.from": "inferred",
+        "package:livewire_livewire.name": "inferred",
+        "package:livewire_livewire.semverSafe": "gateway",
+        "package:livewire_livewire.to": "inferred",
+        "package:mockery_mockery.from": "inferred",
+        "package:mockery_mockery.name": "inferred",
+        "package:mockery_mockery.semverSafe": "gateway",
+        "package:mockery_mockery.to": "inferred",
+        "package:nunomaduro_collision.from": "inferred",
+        "package:nunomaduro_collision.name": "inferred",
+        "package:nunomaduro_collision.semverSafe": "gateway",
+        "package:nunomaduro_collision.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "from": "inferred",
+        "semverSafe": "gateway",
+        "to": "inferred"
+    },
+    "store": {
+        "package:laravel_nightwatch.from": "1.28.5",
+        "package:laravel_nightwatch.name": "laravel/nightwatch",
+        "package:laravel_nightwatch.semverSafe": 1,
+        "package:laravel_nightwatch.to": "1.30.0",
+        "package:laravel_telescope.from": "5.20.0",
+        "package:laravel_telescope.name": "laravel/telescope",
+        "package:laravel_telescope.semverSafe": 1,
+        "package:laravel_telescope.to": "5.24.0",
+        "package:league_flysystem-aws-s3-v3.from": "3.35.1",
+        "package:league_flysystem-aws-s3-v3.name": "league/flysystem-aws-s3-v3",
+        "package:league_flysystem-aws-s3-v3.semverSafe": 1,
+        "package:league_flysystem-aws-s3-v3.to": "3.35.3",
+        "package:livewire_livewire.from": "4.3.3",
+        "package:livewire_livewire.name": "livewire/livewire",
+        "package:livewire_livewire.semverSafe": 1,
+        "package:livewire_livewire.to": "4.4.4",
+        "package:mockery_mockery.from": "1.6.12",
+        "package:mockery_mockery.name": "mockery/mockery",
+        "package:mockery_mockery.semverSafe": 1,
+        "package:mockery_mockery.to": "1.6.15",
+        "package:nunomaduro_collision.from": "8.9.4",
+        "package:nunomaduro_collision.name": "nunomaduro/collision",
+        "package:nunomaduro_collision.semverSafe": 1,
+        "package:nunomaduro_collision.to": "8.9.5"
+    },
+    "verified": true
+}

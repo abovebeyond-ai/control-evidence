@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"smol-toml\",\"to\":\"1.7.1\",\"lock\":\"sanity\\/package-lock.json\"}]"
+            },
+            "packages": 1,
+            "plan_sha256": "43b659bcafc551ef6174789e1f2d8462a4c7362d2cbcf4e3a15aef67f44596c7",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "01M25TRM6J7A7XT59V30KHSDNS"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"laravel\\/nightwatch\",\"to\":\"1.30.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"laravel\\/telescope\",\"to\":\"5.24.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"league\\/flysystem-aws-s3-v3\",\"to\":\"3.35.3\",\"lock\":\"composer.lock\"},{\"pkg\":\"livewire\\/livewire\",\"to\":\"4.4.4\",\"lock\":\"composer.lock\"},{\"pkg\":\"mockery\\/mockery\",\"to\":\"1.6.15\",\"lock\":\"composer.lock\"},{\"pkg\":\"nunomaduro\\/collision\",\"to\":\"8.9.5\",\"lock\":\"composer.lock\"}]"
+            },
+            "packages": 6,
+            "plan_sha256": "ec3258ba6e42d306dfb3f75fea58b5d8637dfde760e209f28060b1358ba6fc2c",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "01M258XAGPAP8CZ6NQ8GVJNHWE"
+}

@@ -15,4 +15,6 @@ To verify, with the tooling at https://github.com/abovebeyond-ai/control:
 
 The standard is the Advanced AI Society's Proof-of-Control, draft v0.1. The conformance
 statement is in the control repository under `conformance/`. This mirror is a copy; the
-checkpoints and the anchors are what bind it.
+checkpoints and the anchors are what bind it. Reads of the gateway itself are recorded
+beside its chains; clones of this mirror are not, and need not be: verify it, and tell
+nobody, if you like.

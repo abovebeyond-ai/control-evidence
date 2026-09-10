@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"react\",\"to\":\"19.3.0\",\"lock\":\"package-lock.json\"},{\"pkg\":\"react-dom\",\"to\":\"19.3.0\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 2,
+            "plan_sha256": "21fe72b732f8f4dddee5e3b3d333fef3570bfb9d3fb05a84b4a4ba05954d528e",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "ShaneDeconinck/cides"
+    },
+    "run": "01M259EAEPVEFVM5FJG6KD9388"
+}

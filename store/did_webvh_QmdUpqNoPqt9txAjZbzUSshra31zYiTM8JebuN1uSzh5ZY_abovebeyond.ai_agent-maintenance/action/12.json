@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Bijgewerkt binnen semver, dus de aanroepen blijven werken:\n\n- @ai-sdk/openai-compatible to 3.0.47\n- dotenv to 17.4.2\n- zod to 4.6.1\n\n## Bewijs\n\n- de tests stonden groen v\u00f3\u00f3r de wijziging, en opnieuw erna\n- de lockfiles zijn teruggelezen: wat hierboven staat, staat er ook echt in\n\nVoorgesteld door Elixir. Mergen doet een mens.",
+            "branch": "elixir/security-2026-09-10-0907",
+            "packages": 3,
+            "title": "Maintenance: update 3 package(s) within semver"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "01M2593A7E49RT0W5DJT8DHBNY"
+}

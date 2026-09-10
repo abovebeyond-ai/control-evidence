@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"astro\",\"to\":\"7.3.2\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 1,
+            "plan_sha256": "e1fd6ff13cc38083cf321ee7084ad31d542804f0207ccba9e0b22c522086caa2",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "01M259CEK0KSR33G27VBTWFSGZ"
+}

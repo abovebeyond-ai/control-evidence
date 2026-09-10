@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"laravel\\/framework\",\"to\":\"13.31.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"laravel\\/nightwatch\",\"to\":\"1.30.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"web-auth\\/webauthn-lib\",\"to\":\"5.3.8\",\"lock\":\"composer.lock\"},{\"pkg\":\"larastan\\/larastan\",\"to\":\"3.11.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"laravel\\/pao\",\"to\":\"1.1.5\",\"lock\":\"composer.lock\"},{\"pkg\":\"laravel\\/pint\",\"to\":\"1.32.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"mockery\\/mockery\",\"to\":\"1.6.15\",\"lock\":\"composer.lock\"},{\"pkg\":\"phpunit\\/phpunit\",\"to\":\"13.3.3\",\"lock\":\"composer.lock\"}]"
+            },
+            "packages": 8,
+            "plan_sha256": "21d3e455f603adcb8f0760102efaa0eb94fa6e6c4e8c2d256b0a80df712b468f",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "01M259HBQQCHKJN57BN4WMPCXC"
+}

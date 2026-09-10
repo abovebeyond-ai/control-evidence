@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"astro\",\"to\":\"7.3.2\",\"lock\":\"package-lock.json\"},{\"pkg\":\"react\",\"to\":\"19.3.0\",\"lock\":\"package-lock.json\"},{\"pkg\":\"react-dom\",\"to\":\"19.3.0\",\"lock\":\"package-lock.json\"},{\"pkg\":\"@types\\/react\",\"to\":\"19.3.0\",\"lock\":\"package-lock.json\"},{\"pkg\":\"@types\\/react-dom\",\"to\":\"19.3.0\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 5,
+            "plan_sha256": "91751d9cf9d552743585dd8a01b4d7b8bc7169352f65b6fa9d3099f12dcceecd",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "ShaneDeconinck/vlamingdam-frituur"
+    },
+    "run": "01M259XD8EN28JZSHYXFJ5K0X5"
+}

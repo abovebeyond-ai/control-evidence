@@ -1,0 +1,42 @@
+{
+    "certificate": "@[package:react]{react} moves from %[from]{19.2.8} to %[to]{19.3.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:react-dom]{react-dom} moves from %[from]{19.2.8} to %[to]{19.3.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:react-dom.from": "inferred",
+        "package:react-dom.name": "inferred",
+        "package:react-dom.semverSafe": "gateway",
+        "package:react-dom.to": "inferred",
+        "package:react.from": "inferred",
+        "package:react.name": "inferred",
+        "package:react.semverSafe": "gateway",
+        "package:react.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "from": "inferred",
+        "semverSafe": "gateway",
+        "to": "inferred"
+    },
+    "store": {
+        "package:react-dom.from": "19.2.8",
+        "package:react-dom.name": "react-dom",
+        "package:react-dom.semverSafe": 1,
+        "package:react-dom.to": "19.3.0",
+        "package:react.from": "19.2.8",
+        "package:react.name": "react",
+        "package:react.semverSafe": 1,
+        "package:react.to": "19.3.0"
+    },
+    "verified": true
+}

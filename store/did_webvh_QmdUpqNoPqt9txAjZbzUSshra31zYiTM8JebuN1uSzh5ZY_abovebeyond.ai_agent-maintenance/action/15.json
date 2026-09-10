@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"laravel\\/framework\",\"to\":\"13.31.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"laravel\\/nightwatch\",\"to\":\"1.30.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"laravel\\/pao\",\"to\":\"1.1.5\",\"lock\":\"composer.lock\"},{\"pkg\":\"laravel\\/pint\",\"to\":\"1.32.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"mockery\\/mockery\",\"to\":\"1.6.15\",\"lock\":\"composer.lock\"},{\"pkg\":\"resend\\/resend-php\",\"to\":\"1.13.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"symfony\\/http-client\",\"to\":\"8.1.6\",\"lock\":\"composer.lock\"},{\"pkg\":\"larastan\\/larastan\",\"to\":\"3.11.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"phpunit\\/phpunit\",\"to\":\"13.3.3\",\"lock\":\"composer.lock\"}]"
+            },
+            "packages": 9,
+            "plan_sha256": "741eddd71f80d67e446f7344d15aa7b2f07b05da36fac759e00c960e4f62cef3",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "01M2596C59C6KPR8SV7BAKA4JH"
+}

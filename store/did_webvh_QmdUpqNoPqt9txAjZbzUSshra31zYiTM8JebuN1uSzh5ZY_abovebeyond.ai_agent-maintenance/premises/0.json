@@ -1,0 +1,66 @@
+{
+    "certificate": "@[package:laravel_framework]{laravel/framework} moves from %[from]{13.23.0} to %[to]{13.31.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:livewire_livewire]{livewire/livewire} moves from %[from]{4.3.5} to %[to]{4.4.4}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:laravel_pao]{laravel/pao} moves from %[from]{1.1.3} to %[to]{1.1.5}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:laravel_pint]{laravel/pint} moves from %[from]{1.30.3} to %[to]{1.32.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:mockery_mockery]{mockery/mockery} moves from %[from]{1.6.12} to %[to]{1.6.15}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:laravel_framework.from": "inferred",
+        "package:laravel_framework.name": "inferred",
+        "package:laravel_framework.semverSafe": "gateway",
+        "package:laravel_framework.to": "inferred",
+        "package:laravel_pao.from": "inferred",
+        "package:laravel_pao.name": "inferred",
+        "package:laravel_pao.semverSafe": "gateway",
+        "package:laravel_pao.to": "inferred",
+        "package:laravel_pint.from": "inferred",
+        "package:laravel_pint.name": "inferred",
+        "package:laravel_pint.semverSafe": "gateway",
+        "package:laravel_pint.to": "inferred",
+        "package:livewire_livewire.from": "inferred",
+        "package:livewire_livewire.name": "inferred",
+        "package:livewire_livewire.semverSafe": "gateway",
+        "package:livewire_livewire.to": "inferred",
+        "package:mockery_mockery.from": "inferred",
+        "package:mockery_mockery.name": "inferred",
+        "package:mockery_mockery.semverSafe": "gateway",
+        "package:mockery_mockery.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "from": "inferred",
+        "semverSafe": "gateway",
+        "to": "inferred"
+    },
+    "store": {
+        "package:laravel_framework.from": "13.23.0",
+        "package:laravel_framework.name": "laravel/framework",
+        "package:laravel_framework.semverSafe": 1,
+        "package:laravel_framework.to": "13.31.0",
+        "package:laravel_pao.from": "1.1.3",
+        "package:laravel_pao.name": "laravel/pao",
+        "package:laravel_pao.semverSafe": 1,
+        "package:laravel_pao.to": "1.1.5",
+        "package:laravel_pint.from": "1.30.3",
+        "package:laravel_pint.name": "laravel/pint",
+        "package:laravel_pint.semverSafe": 1,
+        "package:laravel_pint.to": "1.32.0",
+        "package:livewire_livewire.from": "4.3.5",
+        "package:livewire_livewire.name": "livewire/livewire",
+        "package:livewire_livewire.semverSafe": 1,
+        "package:livewire_livewire.to": "4.4.4",
+        "package:mockery_mockery.from": "1.6.12",
+        "package:mockery_mockery.name": "mockery/mockery",
+        "package:mockery_mockery.semverSafe": 1,
+        "package:mockery_mockery.to": "1.6.15"
+    },
+    "verified": true
+}

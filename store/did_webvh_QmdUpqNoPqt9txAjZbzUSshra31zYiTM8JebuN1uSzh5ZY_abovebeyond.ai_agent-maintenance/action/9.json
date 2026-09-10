@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"@ai-sdk\\/openai-compatible\",\"to\":\"3.0.47\",\"lock\":\"package-lock.json\"},{\"pkg\":\"dotenv\",\"to\":\"17.4.2\",\"lock\":\"package-lock.json\"},{\"pkg\":\"zod\",\"to\":\"4.6.1\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 3,
+            "plan_sha256": "62bebded869c702c371b370b99d6362c411a111243495e016a9dfdf7d711d696",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "01M2593A7E49RT0W5DJT8DHBNY"
+}

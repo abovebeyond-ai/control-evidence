@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"laravel\\/framework\",\"to\":\"13.31.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"livewire\\/livewire\",\"to\":\"4.4.4\",\"lock\":\"composer.lock\"},{\"pkg\":\"laravel\\/pao\",\"to\":\"1.1.5\",\"lock\":\"composer.lock\"},{\"pkg\":\"laravel\\/pint\",\"to\":\"1.32.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"mockery\\/mockery\",\"to\":\"1.6.15\",\"lock\":\"composer.lock\"}]"
+            },
+            "packages": 5,
+            "plan_sha256": "453acfd970d804e782a6968c7ec2ed506f17894788cc8f459ead3c35ced89e01",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "01M258TX11BG080FP30YH1SNK2"
+}

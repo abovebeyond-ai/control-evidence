@@ -1,0 +1,42 @@
+{
+    "certificate": "@[package:json-canonicalize]{json-canonicalize} moves from %[from]{3.0.0} to %[to]{3.0.1}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:playwright]{playwright} moves from %[from]{1.62.1} to %[to]{1.63.0}, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:json-canonicalize.from": "inferred",
+        "package:json-canonicalize.name": "inferred",
+        "package:json-canonicalize.semverSafe": "gateway",
+        "package:json-canonicalize.to": "inferred",
+        "package:playwright.from": "inferred",
+        "package:playwright.name": "inferred",
+        "package:playwright.semverSafe": "gateway",
+        "package:playwright.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "from": "inferred",
+        "semverSafe": "gateway",
+        "to": "inferred"
+    },
+    "store": {
+        "package:json-canonicalize.from": "3.0.0",
+        "package:json-canonicalize.name": "json-canonicalize",
+        "package:json-canonicalize.semverSafe": 1,
+        "package:json-canonicalize.to": "3.0.1",
+        "package:playwright.from": "1.62.1",
+        "package:playwright.name": "playwright",
+        "package:playwright.semverSafe": 1,
+        "package:playwright.to": "1.63.0"
+    },
+    "verified": true
+}
