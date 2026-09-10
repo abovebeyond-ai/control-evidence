@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"league\\/commonmark\",\"to\":\"2.10.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"nanoid\",\"to\":\"3.3.18\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 2,
+            "plan_sha256": "8a9c397b06c73a093219a5fd81c90a9e9784a6431aa174302f2b8f51d186a36d",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "01M23TSK04WPBRABQ7TNXP54E2"
+}

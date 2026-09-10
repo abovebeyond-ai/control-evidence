@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "branch": "elixir/security-2026-09-09",
+            "packages": 17
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "01M23SJAEP7W2QRXZ1GXZ82HQ1"
+}

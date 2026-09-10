@@ -1,0 +1,10 @@
+{
+    "action": "db109b09fc33b25041ee46b4f443ed6d",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "kind not in grant",
+    "step": 18,
+    "verdict": "DENY"
+}

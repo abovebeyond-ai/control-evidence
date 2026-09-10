@@ -1,0 +1,46 @@
+{
+    "certificate": "@[package:league_commonmark]{league/commonmark} moves from %[from]{2.9.0} to %[to]{2.10.0}, closing %[advisories]{4} advisories, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:nanoid]{nanoid} moves from %[from]{3.3.17} to %[to]{3.3.18}, closing %[advisories]{1} advisory, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:league_commonmark.advisories": "inferred",
+        "package:league_commonmark.from": "inferred",
+        "package:league_commonmark.name": "inferred",
+        "package:league_commonmark.semverSafe": "gateway",
+        "package:league_commonmark.to": "inferred",
+        "package:nanoid.advisories": "inferred",
+        "package:nanoid.from": "inferred",
+        "package:nanoid.name": "inferred",
+        "package:nanoid.semverSafe": "gateway",
+        "package:nanoid.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "from": "inferred",
+        "semverSafe": "gateway",
+        "to": "inferred"
+    },
+    "store": {
+        "package:league_commonmark.advisories": 4,
+        "package:league_commonmark.from": "2.9.0",
+        "package:league_commonmark.name": "league/commonmark",
+        "package:league_commonmark.semverSafe": 1,
+        "package:league_commonmark.to": "2.10.0",
+        "package:nanoid.advisories": 1,
+        "package:nanoid.from": "3.3.17",
+        "package:nanoid.name": "nanoid",
+        "package:nanoid.semverSafe": 1,
+        "package:nanoid.to": "3.3.18"
+    },
+    "verified": true
+}

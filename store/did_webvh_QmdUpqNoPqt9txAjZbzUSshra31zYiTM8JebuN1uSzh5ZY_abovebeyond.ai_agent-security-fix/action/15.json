@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "branch": "elixir/security-2026-09-09",
+            "packages": 2
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "01M23TH0CC75XS3574AGDKY745"
+}

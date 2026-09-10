@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Bijgewerkt binnen semver, dus de aanroepen blijven werken:\n\n- tar to 7.5.21\n- baseline-browser-mapping to 2.11.0\n- dompurify to 3.4.13\n- prismjs to 1.30.0\n- browserslist to 4.28.7\n- nanoid to 3.3.18\n- postcss to 8.5.23\n- baseline-browser-mapping to 2.11.0\n\n## Mislukt\n\n- **brace-expansion** \u00b7 the tree carries 2 and 5.x of this package; an override would move them all\n- **glob** \u00b7 the tree carries 10 and 13.x of this package; an override would move them all\n- **nanoid** \u00b7 the tree carries 5 and 3.x of this package; an override would move them all\n- **undici** \u00b7 the tree carries 7 and 6.x of this package; an override would move them all\n- **js-yaml** \u00b7 the tree carries 3 and 4.x of this package; an override would move them all\n\n## Bewijs\n\n- de tests stonden groen v\u00f3\u00f3r de wijziging, en opnieuw erna\n- de lockfiles zijn teruggelezen: wat hierboven staat, staat er ook echt in\n\nVoorgesteld door Elixir. Mergen doet een mens.",
+            "branch": "elixir/security-2026-09-09-1940",
+            "packages": 8,
+            "title": "Security: update 8 package(s)"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "01M23TWTNSED78QP4VSRYESVAY"
+}
