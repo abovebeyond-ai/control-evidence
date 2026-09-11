@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Bijgewerkt binnen semver, dus de aanroepen blijven werken:\n\n- livewire/livewire to 4.3.4\n- js-yaml to 3.15.2\n- qs to 6.16.0\n- qs to 6.16.0\n\n## Mislukt\n\n- **postcss-selector-parser** \u00b7 the tree carries 3 and 6.x of this package; an override would move them all\n\n## Bewijs\n\n- de tests stonden groen v\u00f3\u00f3r de wijziging, en opnieuw erna\n- de lockfiles zijn teruggelezen: wat hierboven staat, staat er ook echt in\n\nVoorgesteld door Elixir. Mergen doet een mens.",
+            "branch": "elixir/security-2026-09-10-2009",
+            "packages": 4,
+            "title": "Security: update 4 package(s)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "01M26EVTQ5FZEQ0S1D0MCFW37Z"
+}

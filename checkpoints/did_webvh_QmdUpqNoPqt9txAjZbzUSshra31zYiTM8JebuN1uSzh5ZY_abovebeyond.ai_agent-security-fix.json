@@ -1,8 +1,8 @@
 {
     "agent": "did:webvh:QmdUpqNoPqt9txAjZbzUSshra31zYiTM8JebuN1uSzh5ZY:abovebeyond.ai#agent-security-fix",
-    "tree_size": 45,
-    "root": "sha-256:700f5a540d444093138db5a4a395eaa7e0ef85bc0351764a851a4ae3d814529f",
-    "chain_head": "sha-256:6631babdc4e4fe18141d0e638b91f422b730c1249534a4165d00e1d249c61b0f",
-    "attestation": "sha-256:b1b05f33da6a3de87e65e83f176e4e14f35fc21ff5f1ef4f796119beb8815016",
-    "signature": "eb9afa0b8a009bdf7fd0c583df59cdef67dcba7b8222a74f58c8639dd35cc7fd6c0c80ed3ba881886fe65f668680fd5093f5d0db846369b6a23ad5a7480a6607"
+    "tree_size": 57,
+    "root": "sha-256:0ffee5b911db756f8d34ef14f4d0dd0d213955c4650160109ee59848a5beb088",
+    "chain_head": "sha-256:126c486d21da6e4247e06edcbf072e9796141b7c6f864fbe200228e58e104175",
+    "attestation": "sha-256:920df960b49032b7803f6b6220fd85045236d48ea7a3cb6e84844e90f3417fdf",
+    "signature": "b9f894d455825ed5762019f335eaddb28a1c4ff926f70b0db319d921a320dcb2bc223eef37b77f3c7744f67b692caa522fe50638e485a233677de3330f39c008"
 }

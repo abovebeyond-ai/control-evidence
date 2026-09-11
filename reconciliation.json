@@ -1,0 +1,207 @@
+{
+    "computed_at": "2026-09-11T07:33:30+00:00",
+    "window": {
+        "since": "2026-09-10T14:20:00+00:00",
+        "days": 7,
+        "bounded_by": "the start of service mode"
+    },
+    "repositories": {
+        "Hoet-design/cabrio-eyewear": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "Hoet-design/cabrio-eyewear-mirror": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "Hoet-design/hoet-eyewear": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "Hoet-design/hoet-eyewear-mirror": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "ShaneDeconinck/cides": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "ShaneDeconinck/good-governance": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "ShaneDeconinck/naviskore": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "ShaneDeconinck/shanedeconinck.be": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "ShaneDeconinck/vlamingdam-frituur": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "Trendwolves/gentells-pipeline": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "Trendwolves/gentells-site": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "Trendwolves/glk-transferor": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "abovebeyond-ai/abovebeyond": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "abovebeyond-ai/portal": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "abovebeyond-ai/trustedagentic.ai": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "kubo-global/afrodidact-website": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "kubo-global/kubo-website": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "stocklistdealer-eu/peugeot-de-backer": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "stocklistdealer-eu/stocklistdealer": {
+            "dispatches": {
+                "github": 5,
+                "gateway": 5
+            },
+            "pulls": {
+                "github": 1,
+                "gateway": 1
+            }
+        }
+    },
+    "unexplained": [],
+    "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind (rows 10.3.2, 10.3.4)"
+}

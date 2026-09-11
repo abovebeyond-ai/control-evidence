@@ -1,0 +1,76 @@
+{
+    "certificate": "@[package:livewire_livewire]{livewire/livewire} moves from %[from]{4.3.3} to %[to]{4.3.4}, closing %[advisories]{1} advisory, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:js-yaml]{js-yaml} moves from %[from]{3.15.1} to %[to]{3.15.2}, closing %[advisories]{1} advisory, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:qs]{qs} moves from %[from]{6.15.3} to %[to]{6.16.0}, closing %[advisories]{2} advisories, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:qs-2]{qs} moves from %[from]{6.15.2} to %[to]{6.16.0}, closing %[advisories]{2} advisories, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:postcss-selector-parser]{postcss-selector-parser} moves from %[from]{6.1.2} to %[to]{6.1.3}, closing %[advisories]{1} advisory, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:js-yaml.advisories": "inferred",
+        "package:js-yaml.from": "inferred",
+        "package:js-yaml.name": "inferred",
+        "package:js-yaml.semverSafe": "gateway",
+        "package:js-yaml.to": "inferred",
+        "package:livewire_livewire.advisories": "inferred",
+        "package:livewire_livewire.from": "inferred",
+        "package:livewire_livewire.name": "inferred",
+        "package:livewire_livewire.semverSafe": "gateway",
+        "package:livewire_livewire.to": "inferred",
+        "package:postcss-selector-parser.advisories": "inferred",
+        "package:postcss-selector-parser.from": "inferred",
+        "package:postcss-selector-parser.name": "inferred",
+        "package:postcss-selector-parser.semverSafe": "gateway",
+        "package:postcss-selector-parser.to": "inferred",
+        "package:qs-2.advisories": "inferred",
+        "package:qs-2.from": "inferred",
+        "package:qs-2.name": "inferred",
+        "package:qs-2.semverSafe": "gateway",
+        "package:qs-2.to": "inferred",
+        "package:qs.advisories": "inferred",
+        "package:qs.from": "inferred",
+        "package:qs.name": "inferred",
+        "package:qs.semverSafe": "gateway",
+        "package:qs.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "from": "inferred",
+        "semverSafe": "gateway",
+        "to": "inferred"
+    },
+    "store": {
+        "package:js-yaml.advisories": 1,
+        "package:js-yaml.from": "3.15.1",
+        "package:js-yaml.name": "js-yaml",
+        "package:js-yaml.semverSafe": 1,
+        "package:js-yaml.to": "3.15.2",
+        "package:livewire_livewire.advisories": 1,
+        "package:livewire_livewire.from": "4.3.3",
+        "package:livewire_livewire.name": "livewire/livewire",
+        "package:livewire_livewire.semverSafe": 1,
+        "package:livewire_livewire.to": "4.3.4",
+        "package:postcss-selector-parser.advisories": 1,
+        "package:postcss-selector-parser.from": "6.1.2",
+        "package:postcss-selector-parser.name": "postcss-selector-parser",
+        "package:postcss-selector-parser.semverSafe": 1,
+        "package:postcss-selector-parser.to": "6.1.3",
+        "package:qs-2.advisories": 2,
+        "package:qs-2.from": "6.15.2",
+        "package:qs-2.name": "qs",
+        "package:qs-2.semverSafe": 1,
+        "package:qs-2.to": "6.16.0",
+        "package:qs.advisories": 2,
+        "package:qs.from": "6.15.3",
+        "package:qs.name": "qs",
+        "package:qs.semverSafe": 1,
+        "package:qs.to": "6.16.0"
+    },
+    "verified": true
+}
