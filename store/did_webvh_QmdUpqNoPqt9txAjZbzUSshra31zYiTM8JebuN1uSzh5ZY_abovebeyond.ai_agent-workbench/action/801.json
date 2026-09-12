@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f310cdbffc46dc1450ccd6cb414ad714cf0188cc",
+            "branch": "workbench/perf/timing-view-marks",
+            "files_sha256": "b11a01a8ea93bb2d99e621b7e3675e07fa892b428f067d2fd8b2550a51408a22",
+            "message": "Stocklist view: timing marks after the head, the filter panel and the cards"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912180706-bc3e89"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "aa8b1819dbb5b874f592a36627dd0f92",
+    "effect": {
+        "detail": {
+            "base": "3d08eee28daffc5e3b7d4aae64f7e9c1df491ed9",
+            "branch": "workbench/perf/ownstock-portals-eager",
+            "commit": "c54096ebfd6890c696af9ebcc921978a74b06ab0",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 849,
+    "verdict": "ALLOW"
+}

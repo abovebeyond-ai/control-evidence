@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The same change as PR 270: a line on the keys card takes the word Elixir gave its facet, a facet Elixir did not judge is background, never ok, the wording follows the threshold that fired, and no number of the card's own remains. PR 270 also carried an older copy of the site card, from a working copy that predated PR 269, and that is what broke SiteCardTest: the hand pushes a file whole, as it stands on the machine that proposes, so a file edited before a pull is proposed stale. This is the keys card from PR 270 on top of main's site card, test from PR 270 included. Full suite green, PHPStan clean. PR 270 can be closed.",
+            "branch": "workbench/elixir/keys-card-no-number",
+            "title": "The keys card holds no number of its own (PR 270, rebuilt on main)"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912181703-240f26"
+}

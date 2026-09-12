@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "sign_urls (from #191) confirmed it: 222 of the 260 ms the twenty cards take is the AWS SDK presigning two URLs per card (11 ms each), and the first request after a deploy spent 21 s in it (cold SDK). A SigV4 query presign is four HMACs and two hashes.\n\n- App\\Support\\S3Presigner: virtual-hosted style like the SDK, path style optional, X-Amz-Content-Sha256=UNSIGNED-PAYLOAD signed like the SDK does. No network.\n- VehicleImageService::ondertekend() uses it when the vehicles disk is s3 with an endpoint and key; otherwise (local disk, tests with Storage::fake) the SDK path stays.\n- Test: same host, path and signature as S3Client::createPresignedRequest for the same inputs (the SDK orders the query parameters differently; S3 sorts them itself), plus a path-style case.\n\nExpected: view_cards from 260 ms to about 40 ms; the Stocklist render under 200 ms.\n",
+            "branch": "workbench/perf/own-presigner",
+            "title": "Own S3 presigner: 220 ms of SDK per page gone"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912181733-0f48ae"
+}

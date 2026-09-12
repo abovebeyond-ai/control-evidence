@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3d08eee28daffc5e3b7d4aae64f7e9c1df491ed9",
+            "branch": "workbench/perf/ownstock-portals-eager",
+            "files_sha256": "f2e0a31a3ce0b87f99f3552c0fe16a887141ad674615b260e75b40f9948722b7",
+            "message": "Own stock list: load the portal behind each dealer portal with the rows (124 queries per render)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912183411-c72576"
+}

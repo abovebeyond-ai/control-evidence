@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "372b105b37424126cff8c15d7b1b5516c02b302b",
+            "branch": "workbench/perf/own-presigner",
+            "files_sha256": "91693497609417ed1bf53a883baabb7e383f1446942bc1586df3cc370cdce2ac",
+            "message": "Bucket URLs signed by our own SigV4 presigner instead of the AWS SDK"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912181733-0f48ae"
+}

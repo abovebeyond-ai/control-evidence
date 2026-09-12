@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fifth card, reading the verdicts abovebeyond-ai/elixir#174 writes for `vuln`.\n\n- The card's level is the worst of Elixir's `runtime` and `packages` verdicts; the malware line takes the `malware` verdict. The ladder next to them (critical this week, high a month, the rest background) stays as fallback for a row written before Elixir judged, and goes in the follow-up after the Monday round.\n- One `Judged` line names the thresholds that fired.\n\nBehaviour on current rows unchanged. Two new tests in `VulnerabilityCardTest`. Suite green except the worktree-only `BuildStampTest`; PHPStan and Pint clean. Either merge order works.\n",
+            "branch": "workbench/vulns-judged",
+            "title": "The Packages card reads Elixir's verdict per facet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912181741-30e559"
+}

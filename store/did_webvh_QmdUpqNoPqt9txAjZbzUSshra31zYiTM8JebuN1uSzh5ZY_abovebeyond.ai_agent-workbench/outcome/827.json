@@ -1,0 +1,15 @@
+{
+    "action": "e792914e2869cfc3ed2c5925d19b298a",
+    "effect": {
+        "detail": {
+            "base": "372b105b37424126cff8c15d7b1b5516c02b302b",
+            "branch": "workbench/perf/own-presigner",
+            "commit": "79ffd07615dff51931f7214ae1cd1396d6a88664",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 825,
+    "verdict": "ALLOW"
+}

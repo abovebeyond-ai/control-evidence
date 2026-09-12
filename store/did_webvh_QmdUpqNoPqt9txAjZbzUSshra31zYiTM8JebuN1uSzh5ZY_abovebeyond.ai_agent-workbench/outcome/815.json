@@ -1,0 +1,15 @@
+{
+    "action": "10c5d9ca90848df7ab3f7fba4183fbba",
+    "effect": {
+        "detail": {
+            "base": "f37cf41042915cc3e5c21e21db19c9bcf2a2f09c",
+            "branch": "workbench/elixir/keys-card-no-number",
+            "commit": "84abcbdc18abb92e30bd5626a42d2ab475e808b1",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 813,
+    "verdict": "ALLOW"
+}

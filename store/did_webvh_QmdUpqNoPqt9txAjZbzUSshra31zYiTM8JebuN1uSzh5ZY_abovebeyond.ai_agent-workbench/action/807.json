@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3fb0308b7b1145f873c7b9c7449d784946eb3767",
+            "branch": "workbench/perf/timing-sign",
+            "files_sha256": "af3ef5c3b937af5eac9e11cfcabb38cb8d686d4c3c90cf38de6e4b00ccd26385",
+            "message": "Timing: book the signing of bucket URLs"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912181108-1885f6"
+}

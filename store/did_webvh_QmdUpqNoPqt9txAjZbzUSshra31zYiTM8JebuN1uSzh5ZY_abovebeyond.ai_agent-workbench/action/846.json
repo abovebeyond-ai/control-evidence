@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fifth measurement to carry verdicts.\n\n| facet | thresholds, worst first |\n| --- | --- |\n| malware | `MALWARE_FOUND` (now), `MALWARE_FREE` (ok) |\n| runtime | `VULN_RUNTIME_CRITICAL` (week), `VULN_RUNTIME_HIGH` (month), `VULN_RUNTIME_FOUND` (background), `VULN_RUNTIME_FREE` (ok) |\n| packages | `VULN_FOUND` (background), `VULN_FREE` (ok) |\n\nThe ladder is Portal's card, copied: the judgement follows what the site runs, and a critical advisory in build tooling stays background. Two flat facts (`runtimeCritical`, `runtimeHigh`, read out of the runtime tally) make that a registry matter instead of a `match` in PHP. The six existing entries gain a level; two are new.\n\nTests: four cases in `VulnerabilitiesScanTest`, one end to end with a critical advisory stubbed. Suite 597 green, PHPStan and Pint clean. Portal follows with the Packages card reading the three facets.\n\nReplaces #174, which was built on a local `main` from before #173: the hand sends whole files, so its `Thresholds.php` silently dropped the site entries and CI's PHPStan caught the registry no longer knowing `outside`. This one is rebased on current main; #174 can be closed.\n",
+            "branch": "workbench/vulns-judges-2",
+            "title": "Vulnerabilities judges its own facts, by what the site runs"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912182318-e4e521"
+}

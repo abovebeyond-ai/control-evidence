@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f37cf41042915cc3e5c21e21db19c9bcf2a2f09c",
+            "branch": "workbench/vulns-judged",
+            "files_sha256": "5d8014a21360734c34b6df53bd074e12d9bd80ef9b36a9434b0c6f82e7720124",
+            "message": "The Packages card reads Elixir's verdict per facet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912181741-30e559"
+}

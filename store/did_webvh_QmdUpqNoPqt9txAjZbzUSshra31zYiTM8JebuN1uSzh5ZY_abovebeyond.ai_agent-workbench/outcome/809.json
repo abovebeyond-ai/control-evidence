@@ -1,0 +1,15 @@
+{
+    "action": "3816082f4daa3050c6706ce2d6d6a375",
+    "effect": {
+        "detail": {
+            "base": "3fb0308b7b1145f873c7b9c7449d784946eb3767",
+            "branch": "workbench/perf/timing-sign",
+            "commit": "c01759291e77ce04ffdbcc124f234a372f6c830c",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 807,
+    "verdict": "ALLOW"
+}

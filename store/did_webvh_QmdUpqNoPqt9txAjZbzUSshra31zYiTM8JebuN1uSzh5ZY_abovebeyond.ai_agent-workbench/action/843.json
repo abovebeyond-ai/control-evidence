@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "410159088525eda27c59c0a9fb5257aa59a28129",
+            "branch": "workbench/vulns-judges-2",
+            "files_sha256": "f63c1b0ad0e065888772f44921f4a7af5598f7f653dec84d94d059a98e037b40",
+            "message": "Vulnerabilities judges its own facts, by what the site runs"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912182318-e4e521"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "0183ce1fb1f2cc79e2e2e8680fb4baa8",
+    "effect": {
+        "detail": {
+            "base": "410159088525eda27c59c0a9fb5257aa59a28129",
+            "branch": "workbench/vulns-judges",
+            "commit": "5f2f43d08655db1a13e8ad05ff12d39ed9d8db19",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 819,
+    "verdict": "ALLOW"
+}
