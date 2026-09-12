@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7ea5ed88ad9c9d5948706ce71233410163c91ae0",
+            "branch": "workbench/perf/detail-viewer-md",
+            "files_sha256": "dd93fa118fed1a5247e86e0b7855f14df174d6ec39dab1effddbc9db07b3671f",
+            "message": "Vehicle detail: the fullscreen viewer uses the 960px WebP, not the original"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912190100-0afc9c"
+}

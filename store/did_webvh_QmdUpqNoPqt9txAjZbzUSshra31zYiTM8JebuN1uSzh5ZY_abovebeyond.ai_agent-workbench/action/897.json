@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3afc95da1e36d77607fe0bc15870ba0f66fb9726",
+            "branch": "workbench/perf/demo-resolve-derived",
+            "files_sha256": "8520c316357c5d01587729ece5649f14173e4b8b6710232b6e80b909ae55c485",
+            "message": "DemoMediaDisk: derived sizes resolve to demo/ without a HEAD"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912185552-6f3b8a"
+}

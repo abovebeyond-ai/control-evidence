@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dc8d0bebbebc2f1b186b449749be34df9da9a10e",
+            "branch": "workbench/docs/cutover-presigner",
+            "files_sha256": "910c2902daaa42d2765f1fe3ea7838699e9050b9edf5fdf462f9156dd52158d0",
+            "message": "CUTOVER: OWN_PRESIGNER=true on production"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912184807-019298"
+}

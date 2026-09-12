@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "21cbd5ad833f40473d73f1fd9562624ba2328461",
+            "branch": "workbench/pages-judges",
+            "files_sha256": "7dcbb9be4c55da7eea485f2a56fc3ad1e0ac88fc2b6277d9494ad45b3208abfc",
+            "message": "Pages judges its own facts, one facet per question the cards ask"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912184945-22d999"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Every photo on staging broke after #192: the own presigner's URLs answer 403 on the Hetzner bucket while the SDK's work, although the unit test shows both identical for the same inputs. So the real disk configuration differs from what the test assumes (endpoint form, region or path style). Until that is found, the SDK signs again; the presigner stays behind OWN_PRESIGNER=true (config filesystems.own_presigner, default off).\n",
+            "branch": "workbench/fix/presigner-off",
+            "title": "Hotfix: photos back, own presigner off by default"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912183648-a5ea5b"
+}

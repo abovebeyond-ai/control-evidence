@@ -1,0 +1,15 @@
+{
+    "action": "9c8123b3cc32bbb0ca7ae2ac3264f8e4",
+    "effect": {
+        "detail": {
+            "base": "6e7ad6cb9ed500db79e5c087b934a1f2f2aca6de",
+            "branch": "workbench/docs/cutover-media-and-shards",
+            "commit": "6aab85af03995bbbfe1c6feff12f862d6c77455a",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 867,
+    "verdict": "ALLOW"
+}

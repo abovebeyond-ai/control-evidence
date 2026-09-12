@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On staging the vehicles above id 20710 have no files in the bucket yet (the rclone step of the cutover), and every one of them showed the browser's broken-image icon in the grid. The card now drops the img on error and shows a faint car icon on the grey tile instead. Also right for production whenever a file is gone.\n",
+            "branch": "workbench/ui/card-photo-missing",
+            "title": "Vehicle card: placeholder for a missing photo"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912184444-438a92"
+}

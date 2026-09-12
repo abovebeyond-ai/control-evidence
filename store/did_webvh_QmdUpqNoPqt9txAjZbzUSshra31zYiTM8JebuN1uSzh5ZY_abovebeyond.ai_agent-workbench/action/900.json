@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "With OWN_PRESIGNER on, staging still spent 3.7 s and 10.6 s in sign_urls on the first visit of a vehicle detail page: DemoMediaDisk::resolve() asked S3 (HEAD) per URL whether the file lives under demo/, 150 times, then cached for five minutes. Derived sizes (_afgeleid/...) are only ever written by this environment, so they are under demo/ by definition: resolved without a HEAD. Originals may come from the shared real folder and still ask (cached). Staging only; production has no wrapper.\n",
+            "branch": "workbench/perf/demo-resolve-derived",
+            "title": "Staging: no HEAD per derived URL (first detail visit was 4 to 10 s)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912185552-6f3b8a"
+}

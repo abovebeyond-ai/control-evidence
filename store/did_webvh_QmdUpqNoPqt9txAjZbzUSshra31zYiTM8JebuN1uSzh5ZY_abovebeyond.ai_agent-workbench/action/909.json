@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "256c7863c2a48709ab556f47d545c9aaedd43cf1",
+            "branch": "workbench/rules-out",
+            "files_sha256": "92c0f3f9e7a069aa4c425b91c452ad32daa48ae399c102d79b4094c933e6ecb5",
+            "message": "No card holds a threshold number of its own"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912191524-6cb7a1"
+}

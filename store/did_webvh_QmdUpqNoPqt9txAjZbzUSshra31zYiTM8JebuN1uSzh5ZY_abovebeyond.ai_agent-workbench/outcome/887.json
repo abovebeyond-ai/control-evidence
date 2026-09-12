@@ -1,0 +1,15 @@
+{
+    "action": "fe26378c34abfdac57b74d4dc125f0ab",
+    "effect": {
+        "detail": {
+            "base": "21cbd5ad833f40473d73f1fd9562624ba2328461",
+            "branch": "workbench/pages-judges",
+            "commit": "090b061981a2f4ccdec69281693551206caec200",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 885,
+    "verdict": "ALLOW"
+}

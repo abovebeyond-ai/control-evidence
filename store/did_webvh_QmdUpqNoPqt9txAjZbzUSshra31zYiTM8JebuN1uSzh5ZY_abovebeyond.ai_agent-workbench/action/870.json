@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "- stocklist:fotos-afgeleid: --shard=i/n now also applies to the plain backfill (rows without media_version), not only to --maat. Production has ~124,000 photos to do on Tuesday.\n- CUTOVER.md: run the backfill in four shards right after the import; everything staging wrote in the bucket sits under vehicles/demo/ (the seal) and is orphaned once the fresh dump is in and APP_ENV=production: rclone size, then rclone purge, listed under step 6.\n",
+            "branch": "workbench/docs/cutover-media-and-shards",
+            "title": "Backfill shards for the plain run; cutover notes on demo/ and shards"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912183956-786106"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Sixth measurement on the Portal side, and the one four cards read. Reads the verdicts abovebeyond-ai/elixir#176 writes for `pages`.\n\n- Pages and SEO: Basic tags (`tags`), Pages (`broken`), Missing (`missing`), Also missing (`extras`), Thin (`thin`), robots.txt (`robots`) each take Elixir's word; one Judged line covers those facets.\n- Links: the rows keep Elixir's internal/external distinction as their weight; a Judged line carries the `links` verdict.\n- Speed: the response-time line takes the `speed` verdict; the 1200 ms next to it is the fallback and goes with the follow-up. The server CPU lines belong to the `server` measurement and are untouched.\n- Weakest pages lists rows, no rule of its own.\n\nBehaviour on current rows unchanged. Two tests in a new `PagesCardTest`. Suite green except the worktree-only `BuildStampTest`; PHPStan and Pint clean. Branched from `origin/main` at 19ea34c, checked fresh before proposing.\n",
+            "branch": "workbench/pages-judged",
+            "title": "The four cards on the pages measurement read Elixir's verdict per facet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912185149-f8fa2a"
+}

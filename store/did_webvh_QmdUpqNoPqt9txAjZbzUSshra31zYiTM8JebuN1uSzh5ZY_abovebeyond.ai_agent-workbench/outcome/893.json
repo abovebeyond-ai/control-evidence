@@ -1,0 +1,15 @@
+{
+    "action": "127604500aeedf74ff63207a7093fe89",
+    "effect": {
+        "detail": {
+            "base": "19ea34c8ab1363fc87d251dd7e8191e8b3657c6d",
+            "branch": "workbench/pages-judged",
+            "commit": "5ea21dd09de27d83273404f23544d6d7c1e53c0a",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 891,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a19fbaf3e6113087b6a60e4d75b58f3041c2ef4",
+            "branch": "workbench/ui/card-photo-missing",
+            "files_sha256": "d192bbcddb75faa816a401f300142e319e5628dace53bdacb50fa933efec1594",
+            "message": "Vehicle card: a missing photo shows a quiet placeholder instead of the broken-image icon"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912184444-438a92"
+}

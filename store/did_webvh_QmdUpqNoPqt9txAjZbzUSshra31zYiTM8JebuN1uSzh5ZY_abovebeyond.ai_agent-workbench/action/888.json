@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Sixth measurement to carry verdicts, and the one four cards read (Pages and SEO, Weakest pages, Links, Speed).\n\n| facet | thresholds, worst first |\n| --- | --- |\n| tags | `SEO_WEAK` (<85, month), `SEO_STRONG` (ok) |\n| broken | `PAGES_BROKEN` (week), `PAGES_HEALTHY` (ok) |\n| missing | `TAGS_MISSING` (title, description, h1, alt summed as `tagGaps`; month), `TAGS_COMPLETE` (ok) |\n| extras | `EXTRAS_MISSING` (canonical, og:image as `extraGaps`; background), `EXTRAS_COMPLETE` (ok) |\n| thin | `THIN_PAGES` (background), `THIN_NONE` (ok) |\n| robots | `ROBOTS_MISSING` (month), `ROBOTS_PRESENT` (ok) |\n| links | `LINKS_BROKEN_INTERNAL` (month), `LINKS_BROKEN` (other sites, background), `LINKS_OK` (ok) |\n| speed | `PAGES_SLOW` (avgMs > 1200, month), `PAGES_FAST` (ok) |\n\nLevels copied from the cards; the 1200 ms sat in the Speed card. Four new flat facts (`tagGaps`, `extraGaps`, `brokenLinks`, `brokenLinksInternal`) let the registry read what the cards summed in PHP. Without a sitemap only robots.txt is judged; without timings there is no word on speed.\n\nTests: four cases in `PagesScanTest`. Suite 607 green, PHPStan and Pint clean. Branched from main at 21cbd5a (after #175). Portal follows with the four cards reading these facets.\n",
+            "branch": "workbench/pages-judges",
+            "title": "Pages judges its own facts, one facet per question the cards ask"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912184945-22d999"
+}

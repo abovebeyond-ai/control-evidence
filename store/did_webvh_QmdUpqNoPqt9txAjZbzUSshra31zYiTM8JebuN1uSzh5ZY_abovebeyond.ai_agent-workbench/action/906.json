@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "First visits of a detail page still took 3 to 5 s in sign_urls after #200: the fullscreen viewer and the photo anchors sign the original of every photo (twice per photo), and outside production each original costs a HEAD to find out whether it lives under demo/. The viewer now uses the md derivative (960px WebP) like the carousel: no HEADs, and several MB per photo less for everyone, production included. A larger derived size can come as a new generation when wanted.\n",
+            "branch": "workbench/perf/detail-viewer-md",
+            "title": "Detail viewer on the md derivative"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912190100-0afc9c"
+}

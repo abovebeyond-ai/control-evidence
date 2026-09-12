@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Detail page on staging measured 630 ms of which 480 ms sign_urls with the SDK back on (hotfix #195), 6.7 s cold. OWN_PRESIGNER=true is the cure now that #196 resolves the demo/ path; listed under step 5 with the tinker check.\n",
+            "branch": "workbench/docs/cutover-presigner",
+            "title": "CUTOVER: own presigner on production"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912184807-019298"
+}

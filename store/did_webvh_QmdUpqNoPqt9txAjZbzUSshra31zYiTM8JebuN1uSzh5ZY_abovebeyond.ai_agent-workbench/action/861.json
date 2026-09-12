@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6e7ad6cb9ed500db79e5c087b934a1f2f2aca6de",
+            "branch": "workbench/fix/presigner-demo-path",
+            "files_sha256": "52ddce1c2b215fa591ffbe84f2726910f79cff31bcea3c1b7aa9e71639e8b070",
+            "message": "Own presigner resolves the real path through DemoMediaDisk (demo/ outside production)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912183844-8d20d6"
+}

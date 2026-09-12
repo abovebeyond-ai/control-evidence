@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eb5644295d850b8c484facd0e18850b846976860",
+            "branch": "workbench/perf/bidding-cards",
+            "files_sha256": "088794880afe4c5ae0df9616e1aafa6f9dd0a01cf71b40eb167961abe6216e90",
+            "message": "Bidding cards: eager-load what the card reads; photo straight from the bucket"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912193535-d2a425"
+}
