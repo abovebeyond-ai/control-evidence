@@ -1,0 +1,10 @@
+{
+    "action": "44e530b36eeec67e7f82a58fbe8917b9",
+    "effect": {
+        "error": "GitHub answered 403 for blob sanity/package.json: Resource not accessible by personal access token",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 0,
+    "verdict": "ALLOW"
+}

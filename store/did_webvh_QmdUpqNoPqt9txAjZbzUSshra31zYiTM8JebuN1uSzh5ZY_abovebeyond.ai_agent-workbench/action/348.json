@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9d9fb903d217135bf8f4040aadd3e2699da5e996",
+            "branch": "elixir/publish-unreadable",
+            "files_sha256": "f2cc730fe267f8a5f48b5eddf96d2685d0cd0d2a7782c489b4acf6c5d70acecc",
+            "message": "control-publish: \u00e9\u00e9n onleesbare bijlage stopt de spiegel niet, en wordt genoemd"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912081513-93aace"
+}

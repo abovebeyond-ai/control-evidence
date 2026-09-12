@@ -1,0 +1,15 @@
+{
+    "action": "74a6dcd8628283debff34d776d4d257e",
+    "effect": {
+        "detail": {
+            "base": "4a119692a7d3c36e7e88eee1d3077ba79126e11c",
+            "branch": "www-is-not-the-site",
+            "commit": "bcc1878084659be701e485c763a3518fd36e8c46",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 225,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "29ab01c79a167caf7428a405b4bbe982ca0c96e2",
+            "branch": "readme-says-what-the-repo-says",
+            "files_sha256": "242f05016da75a842036cff0afa652b943d7b5aca8ad50e4360d70707ab0bc3a",
+            "message": "README: what the repo says about itself"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20260912062534-cf987c"
+}

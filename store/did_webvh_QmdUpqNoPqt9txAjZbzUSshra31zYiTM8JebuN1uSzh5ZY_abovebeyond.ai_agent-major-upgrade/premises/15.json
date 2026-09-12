@@ -1,0 +1,48 @@
+{
+    "certificate": "@[package:uuid]{uuid} moves from %[from]{10.0.0} to %[to]{11.1.1}, a major version; tests on main before %[testsBefore]{1}, tests on the branch after %[testsAfter]{1} in run %[ciRun]{34679505842}, ?[under: MAJOR_UNDER_TESTS]{green on both sides}.",
+    "errors": null,
+    "provenance": {
+        "package:uuid.ciRun": "inferred",
+        "package:uuid.from": "inferred",
+        "package:uuid.name": "inferred",
+        "package:uuid.testsAfter": "inferred",
+        "package:uuid.testsBefore": "inferred",
+        "package:uuid.to": "inferred",
+        "package:uuid.underTests": "gateway"
+    },
+    "registry": {
+        "MAJOR_UNDER_TESTS": {
+            "field": "underTests",
+            "label": "the tests were green on main before and on the branch after the change",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "MAJOR_UNDER_TESTS"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "attempt": "gateway",
+        "ciRun": "inferred",
+        "coverage": "inferred",
+        "filesChanged": "inferred",
+        "from": "inferred",
+        "model": "inferred",
+        "semverSafe": "gateway",
+        "testsAfter": "inferred",
+        "testsBefore": "inferred",
+        "to": "inferred",
+        "underTests": "gateway"
+    },
+    "store": {
+        "package:uuid.ciRun": 34679505842,
+        "package:uuid.from": "10.0.0",
+        "package:uuid.name": "uuid",
+        "package:uuid.testsAfter": 1,
+        "package:uuid.testsBefore": 1,
+        "package:uuid.to": "11.1.1",
+        "package:uuid.underTests": 1
+    },
+    "verified": true
+}

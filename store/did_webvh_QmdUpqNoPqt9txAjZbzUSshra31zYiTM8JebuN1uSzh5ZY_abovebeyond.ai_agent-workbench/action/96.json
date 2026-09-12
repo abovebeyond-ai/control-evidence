@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f2b01e6d0d330000b928a6880ec963ca8b5cb0b8",
+            "branch": "readme-says-what-the-repo-says",
+            "files_sha256": "6625d69aaec031504af2b6d8d23e8134ea9bb8139ced70cb1588128fa8862ff3",
+            "message": "README: what the repo says about itself"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260912062512-2fa89d"
+}

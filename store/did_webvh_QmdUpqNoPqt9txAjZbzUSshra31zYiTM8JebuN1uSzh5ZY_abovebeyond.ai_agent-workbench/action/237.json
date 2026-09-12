@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e300865f16597a2718fb9a01c5ee3a159cd2286d",
+            "branch": "the-key-scan-reads-clean",
+            "files_sha256": "e3c5ea08f214619725d21f5633d96b51535f09ea6123ec6791b8967afa77233a",
+            "message": "credentials: de vormen van beide kopie\u00ebn expliciet, zodat PHPStan ze leest"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912070109-3bb194"
+}

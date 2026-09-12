@@ -1,0 +1,88 @@
+{
+    "expiry": "none: a standing grant, replaced by a new bundle when it changes",
+    "judgements": [],
+    "kinds": [
+        "branch.push",
+        "pull.open"
+    ],
+    "max_per_kind": 1,
+    "path_aware": true,
+    "premises_for": [],
+    "principal": "did:webvh:QmdUpqNoPqt9txAjZbzUSshra31zYiTM8JebuN1uSzh5ZY:abovebeyond.ai",
+    "principal_key": "d72ed1a3cffb003bd6ea966699bced6ae322ddb912a90dd35579e117951dd843",
+    "resources": [
+        "Hoet-design/cabrio-eyewear",
+        "Hoet-design/cabrio-eyewear-mirror",
+        "Hoet-design/hoet-design-web",
+        "Hoet-design/hoet-eyewear",
+        "Hoet-design/hoet-eyewear-mirror",
+        "ShaneDeconinck/cafe-t-hoekske",
+        "ShaneDeconinck/cides",
+        "ShaneDeconinck/dbc-subsidieportaal",
+        "ShaneDeconinck/good-governance",
+        "ShaneDeconinck/naviskore",
+        "ShaneDeconinck/naviskore-viz",
+        "ShaneDeconinck/shanedeconinck.be",
+        "ShaneDeconinck/trendwolves-call-agents",
+        "ShaneDeconinck/vlamingdam-frituur",
+        "Trendwolves/gentells-pipeline",
+        "Trendwolves/gentells-site",
+        "Trendwolves/glk-transferor",
+        "abovebeyond-ai/abovebeyond",
+        "abovebeyond-ai/control",
+        "abovebeyond-ai/portal",
+        "abovebeyond-ai/trustedagentic.ai",
+        "kubo-global/afrodidact-deployments",
+        "kubo-global/afrodidact-website",
+        "kubo-global/kubo-school-platform",
+        "kubo-global/kubo-website",
+        "stocklistdealer-eu/landing",
+        "stocklistdealer-eu/peugeot-de-backer",
+        "stocklistdealer-eu/stocklistdealer"
+    ],
+    "schemas": {
+        "branch.delete": {
+            "optional": {
+                "reason": "string"
+            },
+            "required": {
+                "branch": "string"
+            }
+        },
+        "branch.push": {
+            "optional": {
+                "base_sha": "string",
+                "files_sha256": "hex64",
+                "message": "string",
+                "packages": "int"
+            },
+            "required": {
+                "branch": "string"
+            }
+        },
+        "pull.open": {
+            "optional": {
+                "body": "string",
+                "packages": "int",
+                "title": "string"
+            },
+            "required": {
+                "base": "string",
+                "branch": "string"
+            }
+        },
+        "workflow.dispatch": {
+            "optional": {
+                "inputs": "strings",
+                "packages": "int",
+                "plan_sha256": "hex64"
+            },
+            "required": {
+                "ref": "string",
+                "workflow": "string"
+            }
+        }
+    },
+    "submitter_key": "ae22b6bebd8a2c8194f1b519c3f809fa2ffd334845ff12d5f5beaa41d4cde6dd",
+    "version": "control-1"
+}

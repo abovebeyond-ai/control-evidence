@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "919bb31e80628c852d60380b8c2c740b12c8efc0",
+            "branch": "readme-says-what-the-repo-says",
+            "files_sha256": "1f7eeafa2e4879c2a4fa2ca957499c2c9416ec0879746a293852f82e727a1c6b",
+            "message": "README: what the repo says about itself"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260912062655-7050c6"
+}

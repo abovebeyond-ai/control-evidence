@@ -1,0 +1,15 @@
+{
+    "action": "48886011eadc20b4b6cc514b91152610",
+    "effect": {
+        "detail": {
+            "base": "7d161e87b253302371dbafd706f8e5a3d9976891",
+            "branch": "a-token-that-expires-says-when-2",
+            "commit": "40cdb6a95cd5a6f405c5d73600024b992ccf9586",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 159,
+    "verdict": "ALLOW"
+}

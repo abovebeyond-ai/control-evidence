@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eb079df9700c031065d3aafb9c19fcb53b6336e2",
+            "branch": "ui/vin-button-refresh",
+            "files_sha256": "d9385a466d980cb9c7dbcb62df521f4a48ade85e59245e2e6fc71c4214fa5cdd",
+            "message": "VIN button: never hidden, reads as a refresh once fetched"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912074117-75f913"
+}

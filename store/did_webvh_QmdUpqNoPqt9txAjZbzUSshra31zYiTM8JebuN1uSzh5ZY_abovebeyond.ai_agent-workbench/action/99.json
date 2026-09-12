@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The repository had no README. This one says what the repo itself says: the site (a Peugeot garage in Adegem, the WordPress replacement that keeps the old URLs), the stack (Astro 4, Sanity as an optional content source with the local seed under src/content/pages, Netlify with forms), the layout including src/data/site.ts as the one place for business data, how to run it with no env vars at all, what the tests and the workflow check, what netlify.toml redirects and sets, and what Elixir reads.\n\nOne thing the repo made me say plainly: npm run check calls astro check, but @astrojs/check is in neither package.json nor the lockfile. Written from main as of 2026-09-10; the stockcars rebranding on its own branch is not described.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "readme-says-what-the-repo-says",
+            "title": "README: what the repo says about itself"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260912062512-2fa89d"
+}

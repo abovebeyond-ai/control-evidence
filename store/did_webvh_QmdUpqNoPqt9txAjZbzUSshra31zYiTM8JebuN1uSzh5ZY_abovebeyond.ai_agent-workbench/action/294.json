@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The three proposals of the key scan (#161, #163) put `app/Elixir/Scans/Credentials.php` and `tests/Feature/CredentialsScanTest.php` at the root of the repository instead of under `elixir-app/`: the workbench client took paths relative to a subdirectory and the gateway pushed them as given. The pull requests looked right and the app never saw the file. `hand.mjs` now refuses a root that is not the repository's top level.\n\nThis adds the two files where they belong. The two stray copies at the root have to go by hand; the gateway's push cannot delete a file yet:\n\n```\ngit rm app/Elixir/Scans/Credentials.php tests/Feature/CredentialsScanTest.php\n```\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "the-key-scan-where-the-app-reads-it",
+            "title": "De sleutelmeting waar de app haar leest: onder elixir-app/"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912074225-1574d8"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "b565add989939bb9d674c66858c5d546",
+    "effect": {
+        "detail": {
+            "base": "88e660d12c0af68e64778c5a874805d72907acc4",
+            "branch": "ui/delete-question-names-vehicle-v2",
+            "commit": "e7e4eab64d241f30e0bd69564413d59530f60f43",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 366,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8d3180558c15d02de5e34ffd749b8220443506d8",
+            "branch": "a-redirect-is-not-a-refusal",
+            "files_sha256": "f021c86a1b979f414fb7c1ed7937d9566df9144d6301a818626516b55f5a87a2",
+            "message": "Een adres dat doorstuurt is geen app die nee zegt"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912082648-947f8d"
+}

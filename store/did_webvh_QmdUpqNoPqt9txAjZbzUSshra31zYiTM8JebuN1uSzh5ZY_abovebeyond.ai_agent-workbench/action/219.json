@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4255e14b4653d2559ab415f9ef32401c92d32a4e",
+            "branch": "readme-read-against-the-code",
+            "files_sha256": "847d218058c0f898fa49ae6df8b5557b1954952f0b97b1126b8ec9a7aef5f3d7",
+            "message": "README: read against the code"
+        },
+        "resource": "ShaneDeconinck/good-governance"
+    },
+    "run": "workbench-20260912065637-c68818"
+}

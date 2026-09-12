@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "- Step one: the three type options sit tight together (6px) with clear air before the chassis number, which is a separate question.\n- Footer: on the first step 'Volgende' takes the full row instead of hanging half-right; 'Opslaan' is a quiet outline while a next step exists and stays the accent button on the last step.",
+            "branch": "ui/step-one-and-actions-mobile",
+            "title": "Vehicle sheet on phones: step one grouping and footer actions"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912080319-f0e7a7"
+}

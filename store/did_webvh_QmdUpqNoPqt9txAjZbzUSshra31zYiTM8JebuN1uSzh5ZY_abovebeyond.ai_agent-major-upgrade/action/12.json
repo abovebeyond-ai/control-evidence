@@ -1,0 +1,16 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "uuid moves from 10.0.0 to 11.1.1. That is a major version: the calls that changed were moved with it.\n\n**A model edited this code, and nothing has judged it yet.** claude-opus-5, with read and edit tools only, no shell, in attempt 1 of at most 2. This is a draft so that your own checks can run; it is marked ready only if they come back green, and removed if they do not. Files changed:\n- `sanity/package.json`",
+            "branch": "elixir/major-uuid-2026-09-12-0654",
+            "draft": true,
+            "packages": 1,
+            "title": "Major version: uuid to 11.1.1"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "01M2A6ACBCWDD6XGR3RPH137BM"
+}

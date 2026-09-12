@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.ready",
+        "params": {
+            "body": "uuid moves from 10.0.0 to 11.1.1. That is a major version: the calls that changed were moved with it. It closes 1 security advisory(ies).\n\n**A model edited this code.** claude-opus-5, with read and edit tools only, no shell, in attempt 1 of at most 2. Files changed:\n- `sanity/package.json`\n\n**Judged by your own CI.** Run 34679505842 on this branch ended green (https://github.com/kubo-global/afrodidact-website/actions/runs/34679505842). Main was green before the change.\n\nMerging is yours. Nothing here merges on its own.",
+            "number": 22
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "01M2A6ACBCWDD6XGR3RPH137BM"
+}

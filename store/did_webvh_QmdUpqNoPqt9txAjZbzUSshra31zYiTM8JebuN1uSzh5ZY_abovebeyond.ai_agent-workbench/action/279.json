@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "769687e87389b95c38aa344c0606ebbc34af671f",
+            "branch": "ui/vin-button-three-states",
+            "files_sha256": "c9cf934ee590b37b911b7bffdfeb3ae065b66aebe1faff9e4523f2ab443aa1c9",
+            "message": "VIN button: accent without chassis, quiet with an unfetched chassis, hidden once fetched"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912073753-3a5190"
+}

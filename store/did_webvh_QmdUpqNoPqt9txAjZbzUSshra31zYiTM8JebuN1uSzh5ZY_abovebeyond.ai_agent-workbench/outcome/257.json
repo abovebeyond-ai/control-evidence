@@ -1,0 +1,15 @@
+{
+    "action": "1ea1c765ea95ebefb77ec503bb0c26c4",
+    "effect": {
+        "detail": {
+            "base": "670a258b47698eee854a99219cd04b88161c29fe",
+            "branch": "ui/gemiddelde-mobiel",
+            "commit": "c1ca023544be82c84e3222a7bc3330915f14383f",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 255,
+    "verdict": "ALLOW"
+}

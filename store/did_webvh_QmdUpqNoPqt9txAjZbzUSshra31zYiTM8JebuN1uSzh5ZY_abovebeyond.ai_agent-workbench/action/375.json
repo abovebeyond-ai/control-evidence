@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "master",
+            "body": "`elixir.json` declared `https://www.sportbusinessgame.eu` as production, and that address answers 301 to `https://sportbusinessgame.eu`. Elixir sent `/api/elixir` there with the bearer token, got the redirect, and its new credentials measurement read that as \"the app refused the token; it was probably rotated on one side only\". The token was right all along; the address was not. The canonical the site itself chooses is the one to declare.\n\nThe other half (a redirect on `/api/elixir` must be named as a redirect, not blamed on the token) goes to Elixir.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "production-is-the-address-that-answers",
+            "title": "elixir.json: production is sportbusinessgame.eu, the address that answers"
+        },
+        "resource": "ShaneDeconinck/good-governance"
+    },
+    "run": "workbench-20260912082332-f2c00b"
+}

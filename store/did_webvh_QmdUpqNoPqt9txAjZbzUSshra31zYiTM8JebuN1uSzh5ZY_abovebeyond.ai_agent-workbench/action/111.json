@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The README was the untouched Laravel boilerplate. This one says what the repo itself says: what Stocklist is and which services it talks to, the stack and the architecture rule (controller to service to repository, business rules in docs/bedrijfsregels with @rule tags in the tests), the two environments from elixir.json with the outbound seal on everything that is not production, how to run it and the variables .env.example groups, what the suites and the extra checks cover (rules coverage, the stylesheet, the build contract), what CI does including the schema baseline date that has to move with the schema dump, every artisan command with its signature, what routes/console.php schedules and what runs outside it, and the three routes Forge and Elixir read.\n\nOne caution the repo made me keep: composer.json says PHP ^8.2 while CI, the Composer platform config and elixir-fix.yml run 8.5; the README cites both rather than choosing.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "readme-says-what-the-repo-says",
+            "title": "README: what the repo says about itself"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912062622-f5203b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1fd10983db2938be79aa60b0400576a67443bfe9",
+            "branch": "the-credentials-card",
+            "files_sha256": "752b9c8935a95a4ea89a780383d138b13edaea6fdea358e1cd542fce7daf4a40",
+            "message": "De kaart Credentials: een sleutel die verloopt zegt wanneer"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912065234-f3b7f6"
+}

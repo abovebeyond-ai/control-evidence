@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2bb53dfb03ddca08ef03469a8f18e7ef35f4ff80",
+            "branch": "the-key-scan-where-the-app-reads-it",
+            "files_sha256": "4fae89c2d1aaddcb6dd9339d5a06ece640b9fb072ee76e4bfd8554e9f9d3d242",
+            "message": "De sleutelmeting waar de app haar leest: onder elixir-app/"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912074225-1574d8"
+}

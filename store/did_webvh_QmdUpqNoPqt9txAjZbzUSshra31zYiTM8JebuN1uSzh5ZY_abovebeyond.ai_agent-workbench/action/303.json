@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "148a735139ec8017e0bb65491f9b73492b51eeb1",
+            "branch": "elixir/executable-bit",
+            "files_sha256": "8d227a8d4ab773f3c0529d8c85720e3c3f163df97ef78e5a5577ec7b4fe8c9c9",
+            "message": "branch.push: een script houdt zijn uitvoerbit"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912074757-7c11b5"
+}

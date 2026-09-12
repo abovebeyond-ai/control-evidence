@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7d161e87b253302371dbafd706f8e5a3d9976891",
+            "branch": "a-token-that-expires-says-when-2",
+            "files_sha256": "e4a8a85195f577dd84788f330ede48387c4b554ec264abec0f56d6c9b5abe613",
+            "message": "credentials: \u00e9\u00e9n vorm voor beide kopie\u00ebn, zodat PHPStan ze leest"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912065340-9ead6d"
+}

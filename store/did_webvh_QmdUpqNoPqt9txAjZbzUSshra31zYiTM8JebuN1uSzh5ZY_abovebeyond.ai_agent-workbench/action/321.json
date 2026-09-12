@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "16e74ed16e1548f845f48306561b297ef1557238",
+            "branch": "ui/step-one-and-actions-mobile",
+            "files_sha256": "657640eb68d328705c3cdf65b24e439c73a4ce3c96363ac6da17cdfbe4f15376",
+            "message": "Vehicle sheet on phones: type options as one group, full-width next on step one, quiet save while a next step remains"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912080319-f0e7a7"
+}

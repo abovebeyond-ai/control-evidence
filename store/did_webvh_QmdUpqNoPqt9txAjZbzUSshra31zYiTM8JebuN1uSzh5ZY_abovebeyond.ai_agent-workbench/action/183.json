@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "48efc850462a434bae3351d28302550ab2971e17",
+            "branch": "readme-read-against-the-code",
+            "files_sha256": "75f04689299497c8cef30d5e755a052a0c806b5434723764501d094785ab5a42",
+            "message": "README: read against the code"
+        },
+        "resource": "Hoet-design/cabrio-eyewear-mirror"
+    },
+    "run": "workbench-20260912065545-edabaa"
+}

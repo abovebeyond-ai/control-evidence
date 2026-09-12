@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first major-upgrade run that reached a client repository pushed its branch through the gateway and then found no judge: afrodidact's tests run on a pull request and on main, not on a bare branch, and that is the common shape across the fleet. So a change whose only judge is the pull request's own checks has to be a pull request before it is judged, and a draft is GitHub's own word for \"not yet a proposal\".\n\nTwo additions to the GitHub adapter. `pull.open` takes an optional `draft`. `pull.ready` marks a draft ready for review on the record: it reads the pull request, refuses one whose head is not under `elixir/` or whose body carries no footer of the gateway's, rewrites the body with the words the hand sends while keeping the footer the draft was born with, and runs the GraphQL mutation that turns the draft into a proposal. The merge check keeps reading the record that opened the pull request; the green working is this record, in the chain. Schema gains a `bool` type. Statement updated.\n\nTest: the whole path against a fake GitHub, the footer kept byte for byte, a person's draft and a footerless one refused after a single look.\n",
+            "branch": "elixir/pull-ready",
+            "title": "pull.ready: a draft of the gateway's own, marked ready on green"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912062140-554d35"
+}

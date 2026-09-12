@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "670a258b47698eee854a99219cd04b88161c29fe",
+            "branch": "ui/gemiddelde-mobiel",
+            "files_sha256": "1b796cca24c4888a905075f6ac109932ce38f08104ec906ff3d243a3ab670ebe",
+            "message": "Gemiddelde verkoopprijs op de telefoon: onderblad, \u00e9\u00e9n kolom, min/max als \u00e9\u00e9n zin"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912070409-3ae029"
+}

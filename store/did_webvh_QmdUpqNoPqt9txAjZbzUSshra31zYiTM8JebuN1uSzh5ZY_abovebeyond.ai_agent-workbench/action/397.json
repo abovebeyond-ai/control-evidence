@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3dcea590d628dbf71373f0eae143eca8e02d652e",
+            "branch": "ui/stocklist-types-and-toolbar-v2",
+            "files_sha256": "254ecd43495f9c03b57c13358a9a0d19d90d7216a35251d8634b5131749c3beb",
+            "message": "Stocklist: types without offer are not shown; phone toolbar controls equal in height and type"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912082850-7fb787"
+}

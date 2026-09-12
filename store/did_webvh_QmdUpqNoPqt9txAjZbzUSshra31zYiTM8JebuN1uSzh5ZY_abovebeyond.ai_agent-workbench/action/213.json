@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5648798f3695166778bb185276806609ff32cf1e",
+            "branch": "readme-read-against-the-code",
+            "files_sha256": "977777315bd6ab762f27680b936644c3f73c83892c51932ced52eee87303a90e",
+            "message": "README: read against the code"
+        },
+        "resource": "ShaneDeconinck/cides"
+    },
+    "run": "workbench-20260912065616-376cf5"
+}

@@ -1,0 +1,10 @@
+{
+    "action": "0f65d72111d9d86b7125d4cd67941704",
+    "effect": {
+        "error": "GitHub answered 403 for blob effects/github.go: Resource not accessible by personal access token",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 6,
+    "verdict": "ALLOW"
+}

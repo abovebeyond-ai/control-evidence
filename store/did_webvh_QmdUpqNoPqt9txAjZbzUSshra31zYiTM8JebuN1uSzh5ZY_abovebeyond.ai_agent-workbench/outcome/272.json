@@ -1,0 +1,10 @@
+{
+    "action": "710e3b7d2d8b15f3a8ea06b18990e200",
+    "effect": {
+        "error": "GitHub answered 403 for the tree: Resource not accessible by personal access token",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 270,
+    "verdict": "ALLOW"
+}

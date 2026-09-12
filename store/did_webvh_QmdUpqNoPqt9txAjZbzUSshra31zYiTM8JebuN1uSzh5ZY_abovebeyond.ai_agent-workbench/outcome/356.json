@@ -1,0 +1,15 @@
+{
+    "action": "fd177bcc33c416a53dfcb9b86c09a96f",
+    "effect": {
+        "detail": {
+            "base": "01448a5f6caf7fb8c9e5bd50fb561d0600b626aa",
+            "branch": "elixir/atomic-attach",
+            "commit": "65f7a874c81c568b06c478bfe3363dd043bc8768",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 354,
+    "verdict": "ALLOW"
+}

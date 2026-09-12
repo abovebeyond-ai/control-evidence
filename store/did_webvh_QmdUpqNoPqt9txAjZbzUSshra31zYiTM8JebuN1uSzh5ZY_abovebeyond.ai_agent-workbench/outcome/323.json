@@ -1,0 +1,15 @@
+{
+    "action": "c0a11b4f824994bb275253bd05697638",
+    "effect": {
+        "detail": {
+            "base": "16e74ed16e1548f845f48306561b297ef1557238",
+            "branch": "ui/step-one-and-actions-mobile",
+            "commit": "8ae5bb12a5a86340affde4774462cb966b80f90f",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 321,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The README, read against the code. Only stale claims corrected and missing essentials added; language and structure kept. Every change with the file and line that justifies it:\n\n- Intro: \"a single static `index.html`\" is stale. The iframe is now loaded by `mirror.js` after the `load` event (mirror.js lines 10-13), with a `<noscript>` fallback (index.html lines 143-146). README.new.md says so.\n- Files list: added `mirror.js` (exists; index.html line 152 loads it with `defer`; the comment at index.html lines 147-151 and _headers line 20 explain it is external because the CSP refuses inline scripts).\n- Files list: added `logo-white.webp` (index.html lines 126-130 use a `<picture>` with webp first and png as fallback). The README only named the png.\n- Files list: added `share.png` (index.html lines 22-24: og:image 1200x630).\n- Files list: added `_headers` (Netlify headers file: Cache-Control lines 4-9, CSP line 23, Permissions-Policy line 32, X-Content-Type-Options line 34, Referrer-Policy line 37).\n- Files list: added `robots.txt` and `sitemap.xml` (both present; robots.txt line 7 points to the sitemap).\n- Files list: added `elixir.json` and `.github/workflows/evidence.yml` (both present).\n- Files list: `index.html` description extended with the Open Graph tags and canonical link (index.html lines 16-25 and 55).\n- Files list: the em dashes of the original list were replaced by colons, per the brief; no other wording change.\n- Deploy: \"host the three files anywhere\" is stale. There are eleven tracked files, and the host is Netlify: `_headers` is Netlify's headers format (its comment on line 1 names Netlify), .gitignore lines 4-5 ignore the Netlify CLI folder, index.html line 8 says Netlify sends the content-type header. The headers only work on a host that reads `_headers`, so \"anywhere\" is qualified.\n- Added \"Run locally\": no package.json, no build step; opening index.html works, but `_headers` does not apply locally.\n- Added \"Tests\": none exist in the repository (no test files, no package.json, no workflow that runs tests).\n- Added \"CI\": describes `.github/workflows/evidence.yml` (trigger pull_request on main, `if: startsWith(github.head_ref, 'elixir/')`, `abovebeyond-ai/control-verify-action@v1` with `mode: pull`, header comment lines 1-6).\n- Added \"Elixir\": `elixir.json` declares production `https://hoet-eyewear-mirror.com`; no `/up`, `/.well-known/build.json` or `/api/elixir` exist in a static site (no such files or routes in the repo).\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "readme-read-against-the-code",
+            "title": "README: read against the code"
+        },
+        "resource": "Hoet-design/hoet-eyewear-mirror"
+    },
+    "run": "workbench-20260912065538-fe434d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "- Vehicle types (<= 640px): one row of icon tiles that fits without a scroll row; only the chosen type shows its name.\n- Toolbar (<= 900px): a two-column grid. Row one: Filters toggle | sort select (label hidden, the select says 'Nieuwste eerst'). Row two: customer mode | favourites. The filter toggle moved into the toolbar; its Alpine state now lives on the component root.\n- Desktop unchanged.",
+            "branch": "ui/stocklist-toolbar-mobile",
+            "title": "Stocklist on phones: type tiles and a two-row toolbar"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912080516-9326fe"
+}

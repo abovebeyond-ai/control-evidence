@@ -1,0 +1,10 @@
+{
+    "action": "e3ce9d271277bb5e7a18b215989c99cf",
+    "effect": {
+        "error": "GitHub answered 403 for blob docs/major-upgrade.md: Resource not accessible by personal access token",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 12,
+    "verdict": "ALLOW"
+}

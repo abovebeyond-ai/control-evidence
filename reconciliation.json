@@ -1,5 +1,5 @@
 {
-    "computed_at": "2026-09-11T07:33:30+00:00",
+    "computed_at": "2026-09-12T07:33:41+00:00",
     "window": {
         "since": "2026-09-10T14:20:00+00:00",
         "days": 7,
@@ -13,7 +13,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "Hoet-design/cabrio-eyewear-mirror": {
@@ -24,7 +24,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "Hoet-design/hoet-eyewear": {
@@ -34,7 +34,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "Hoet-design/hoet-eyewear-mirror": {
@@ -45,7 +45,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "ShaneDeconinck/cides": {
@@ -55,7 +55,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "ShaneDeconinck/good-governance": {
@@ -66,7 +66,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "ShaneDeconinck/naviskore": {
@@ -76,7 +76,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -86,7 +86,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "ShaneDeconinck/vlamingdam-frituur": {
@@ -96,7 +96,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "Trendwolves/gentells-pipeline": {
@@ -117,7 +117,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "Trendwolves/glk-transferor": {
@@ -127,7 +127,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -137,7 +137,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "abovebeyond-ai/portal": {
@@ -146,8 +146,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 5
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -158,7 +158,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "kubo-global/afrodidact-website": {
@@ -167,8 +167,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 3
             }
         },
         "kubo-global/kubo-website": {
@@ -188,7 +188,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 2
             }
         },
         "stocklistdealer-eu/stocklistdealer": {
@@ -198,10 +198,152 @@
             },
             "pulls": {
                 "github": 1,
-                "gateway": 1
+                "gateway": 7
+            }
+        },
+        "Hoet-design/hoet-design-web": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "ShaneDeconinck/cafe-t-hoekske": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "ShaneDeconinck/dbc-subsidieportaal": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "ShaneDeconinck/naviskore-viz": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "ShaneDeconinck/trendwolves-call-agents": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "abovebeyond-ai/control": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 3,
+                "gateway": 5
+            }
+        },
+        "abovebeyond-ai/elixir": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 2,
+                "gateway": 6
+            }
+        },
+        "abovebeyond-ai/verify-abovebeyond": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "kubo-global/afrodidact-deployments": {
+            "dispatches": {
+                "github": null,
+                "gateway": 0
+            },
+            "pulls": {
+                "github": null,
+                "gateway": 0
+            }
+        },
+        "kubo-global/kubo-school-platform": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "stocklistdealer-eu/landing": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
             }
         }
     },
-    "unexplained": [],
+    "unexplained": [
+        "Hoet-design/cabrio-eyewear: 0 pulls on GitHub, 1 performed by the gateway",
+        "Hoet-design/cabrio-eyewear-mirror: 0 pulls on GitHub, 1 performed by the gateway",
+        "Hoet-design/hoet-eyewear: 0 pulls on GitHub, 1 performed by the gateway",
+        "Hoet-design/hoet-eyewear-mirror: 0 pulls on GitHub, 1 performed by the gateway",
+        "ShaneDeconinck/cides: 0 pulls on GitHub, 1 performed by the gateway",
+        "ShaneDeconinck/good-governance: 0 pulls on GitHub, 1 performed by the gateway",
+        "ShaneDeconinck/naviskore: 0 pulls on GitHub, 1 performed by the gateway",
+        "ShaneDeconinck/shanedeconinck.be: 0 pulls on GitHub, 1 performed by the gateway",
+        "ShaneDeconinck/vlamingdam-frituur: 0 pulls on GitHub, 1 performed by the gateway",
+        "Trendwolves/gentells-site: 0 pulls on GitHub, 1 performed by the gateway",
+        "Trendwolves/glk-transferor: 0 pulls on GitHub, 1 performed by the gateway",
+        "abovebeyond-ai/abovebeyond: 0 pulls on GitHub, 1 performed by the gateway",
+        "abovebeyond-ai/portal: 1 pulls on GitHub, 5 performed by the gateway",
+        "abovebeyond-ai/trustedagentic.ai: 0 pulls on GitHub, 1 performed by the gateway",
+        "kubo-global/afrodidact-website: 1 pulls on GitHub, 3 performed by the gateway",
+        "stocklistdealer-eu/peugeot-de-backer: 0 pulls on GitHub, 2 performed by the gateway",
+        "stocklistdealer-eu/stocklistdealer: 1 pulls on GitHub, 7 performed by the gateway",
+        "abovebeyond-ai/control: 3 pulls on GitHub, 5 performed by the gateway",
+        "abovebeyond-ai/elixir: 2 pulls on GitHub, 6 performed by the gateway",
+        "kubo-global/afrodidact-deployments: GitHub could not be read for dispatches",
+        "kubo-global/afrodidact-deployments: GitHub could not be read for pulls"
+    ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind (rows 10.3.2, 10.3.4)"
 }

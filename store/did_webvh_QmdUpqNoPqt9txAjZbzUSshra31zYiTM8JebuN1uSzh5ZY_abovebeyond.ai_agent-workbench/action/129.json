@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f8244b0211391fc45f479371200e12164db96186",
+            "branch": "elixir/major-ticket-kinds",
+            "files_sha256": "ea30dba0a17789d839e8f456fd858d853f33641d21c8e6148838547d86056e09",
+            "message": "Het ticket van de major-hand noemt zijn eigen vier werkwoorden"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912062815-e85f5c"
+}

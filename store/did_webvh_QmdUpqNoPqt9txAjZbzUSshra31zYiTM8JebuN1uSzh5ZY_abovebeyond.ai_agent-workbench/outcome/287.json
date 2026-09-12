@@ -1,0 +1,15 @@
+{
+    "action": "422b3215e80735946e3a4ec009992a01",
+    "effect": {
+        "detail": {
+            "base": "eb079df9700c031065d3aafb9c19fcb53b6336e2",
+            "branch": "ui/vin-button-refresh",
+            "commit": "25914c095a62a82babfcb415c61e82957d719651",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 285,
+    "verdict": "ALLOW"
+}

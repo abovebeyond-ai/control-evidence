@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The major-upgrade hand's first run on afrodidact (12 September) asked the gateway for `branch.delete` and the ticket, which named the repair hands' three verbs, refused it. The hand's verbs differ: it starts no runner, and it needs two the repair hands never do: `branch.delete` for a branch whose checks went red, and `pull.ready` (control v0.14.0) for the draft it opens when the branch alone draws no run. The ticket for that playbook now names those four and nothing more; the other hands' tickets are unchanged, and a test pins each hand's list.\n",
+            "branch": "elixir/major-ticket-kinds",
+            "title": "The major-upgrade ticket names its own four verbs"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912062815-e85f5c"
+}

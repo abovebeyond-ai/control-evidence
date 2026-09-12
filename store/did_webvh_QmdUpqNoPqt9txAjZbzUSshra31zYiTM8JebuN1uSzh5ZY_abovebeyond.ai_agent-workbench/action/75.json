@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The capability for shanedeconinck.be named `ShaneDeconinck/shanedeconinck`, and the gateway rightly refused the push on `ShaneDeconinck/shanedeconinck.be`: the principal had signed for a repository that does not exist. Same for trustedagentic.ai. `Capability::repoOf` stopped at the first dot; it now keeps the name whole and drops only a trailing `.git`, a trailing slash, or a path after the repository (`/tree/main`). Five cases in the test.\n\nThis also concerned Elixir's own hands: an elixir-fix on shanedeconinck.be would have been refused the same way.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "a-repository-may-carry-a-dot-2",
+            "title": "Een repositorynaam mag een punt dragen (opnieuw: #255 droeg geen wijziging)"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912061805-b8bc00"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "- A vehicle type without offer is no longer rendered (a greyed button that does nothing is noise); with one type left the row disappears. Desktop and phone.\n- Phone: the remaining types are wrapping chips with icon and name; the 'only the active one shows its name' rule from #149 clipped the name and is gone.\n- Phone toolbar: Filters and the sort select are two equal controls (42px, 14px medium, plain text with a chevron); the funnel icon is dropped there so the pair reads as one.",
+            "branch": "ui/stocklist-types-and-toolbar-v2",
+            "title": "Stocklist: hide empty vehicle types, equal toolbar controls on phones"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912082850-7fb787"
+}

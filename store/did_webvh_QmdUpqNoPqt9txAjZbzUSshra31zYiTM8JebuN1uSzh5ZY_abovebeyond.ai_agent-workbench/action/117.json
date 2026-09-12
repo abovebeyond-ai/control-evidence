@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "24be14c7c750c1709464788c03aa32c7f9ab5329",
+            "branch": "readme-says-what-the-repo-says-2",
+            "files_sha256": "7666fe1633648be0d2fb4990c0bce73ddf8d90fa8cb566a059df5a185079624f",
+            "message": "README: what the repo says about itself"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912062738-81d6b5"
+}

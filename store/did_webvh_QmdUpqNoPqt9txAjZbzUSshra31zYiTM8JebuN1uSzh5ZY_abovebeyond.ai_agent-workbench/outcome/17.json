@@ -1,0 +1,15 @@
+{
+    "action": "9c18e1fcb465b713dd8676a4f7629800",
+    "effect": {
+        "detail": {
+            "base": "96ace65321dd878b1eb5c72088ece12d8f6c31fe",
+            "branch": "elixir/major-candidates-from-deps",
+            "commit": "97d8ada267418fe7c7736f027308f01b7ddc977b",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 15,
+    "verdict": "ALLOW"
+}

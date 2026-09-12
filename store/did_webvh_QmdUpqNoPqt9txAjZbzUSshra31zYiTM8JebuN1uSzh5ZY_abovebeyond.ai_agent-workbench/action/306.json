@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "PR 21 arrived with deploy/gcp/rehearse.sh as a plain file: the gateway wrote every blob as 100644, and after the merge the operator's next rehearse.sh call would have been refused. A file may now say it is executable; the bit is part of the files digest only when true, so hands that never set it digest exactly as before, and the tree entry gets 100755. The workbench hand learns to set it next. Test extended: two files, one plain, one script; the plain digest unchanged.",
+            "branch": "elixir/executable-bit",
+            "title": "branch.push keeps a script's executable bit"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912074757-7c11b5"
+}

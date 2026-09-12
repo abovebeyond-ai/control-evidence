@@ -1,0 +1,15 @@
+{
+    "action": "a9e8a6d3efa3e8b1e3456b72c56f4fd7",
+    "effect": {
+        "detail": {
+            "base": "a9a4caa354b708a07d47a71f9ec3bda8a7bdfe94",
+            "branch": "elixir/major-draft-ready",
+            "commit": "f79b3dcdb1283a39a2b4d2635cf779d3a8b30112",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 123,
+    "verdict": "ALLOW"
+}

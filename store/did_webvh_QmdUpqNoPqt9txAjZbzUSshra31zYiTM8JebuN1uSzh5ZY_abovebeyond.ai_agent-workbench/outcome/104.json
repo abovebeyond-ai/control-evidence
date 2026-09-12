@@ -1,0 +1,15 @@
+{
+    "action": "23b993a7fa70951159c4190b4c58c973",
+    "effect": {
+        "detail": {
+            "base": "29ab01c79a167caf7428a405b4bbe982ca0c96e2",
+            "branch": "readme-says-what-the-repo-says",
+            "commit": "de9da1b3f6a4847a60a41d6499942edd1fd63a24",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 102,
+    "verdict": "ALLOW"
+}

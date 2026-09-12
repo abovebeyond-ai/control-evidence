@@ -1,0 +1,15 @@
+{
+    "action": "d8ad7681159751ec6c473b9a8d6b729a",
+    "effect": {
+        "detail": {
+            "base": "0939e8c12377e43def05190ee8060be17709f2f6",
+            "branch": "feature/draft-autosave-on-next",
+            "commit": "b9695727a86fce930ceba40920660af4d49e218b",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 333,
+    "verdict": "ALLOW"
+}

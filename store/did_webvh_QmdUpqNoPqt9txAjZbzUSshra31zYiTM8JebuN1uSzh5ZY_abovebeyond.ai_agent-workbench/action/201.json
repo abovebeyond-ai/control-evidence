@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e0f7777f0f4d10ec5dfc7716a448c0e0440cf67e",
+            "branch": "readme-read-against-the-code",
+            "files_sha256": "11cc14b171f961339a3790a83827c1e0442056d6a48800f5689193fc5cf24f4c",
+            "message": "README: read against the code"
+        },
+        "resource": "ShaneDeconinck/vlamingdam-frituur"
+    },
+    "run": "workbench-20260912065604-b1d86f"
+}

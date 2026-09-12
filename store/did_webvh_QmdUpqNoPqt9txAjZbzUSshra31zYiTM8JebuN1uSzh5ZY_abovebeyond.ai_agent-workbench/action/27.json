@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first proposal of the workbench yesterday was allowed by the gateway, recorded, and then not performed: `no GitHub token for ShaneDeconinck in the gateway's secrets`, while `github-token-shanedeconinck` sat right there. GitHub compares owners case-insensitively, the grants spell them as the repositories do (ShaneDeconinck, Hoet-design, Trendwolves), and the boot script on the VM fetches the secrets under lower-case names. The adapter now looks the token up in lower case; test in `effects/github_test.go`. Every hand touching a repository with a capital in its owner ran into this since service mode began.\n\nProposed through the gateway itself, under the grant of `#agent-workbench` (elixir#157). A second attempt that also carried a `release.yml` was refused by GitHub with 403 on the tree: the gateway's token has no Workflows permission, and that is right, a hand must not be able to rewrite the judge. The release workflow (a tag builds the four static binaries on a runner and publishes them with SHA256SUMS, so the VM's pinned sha has a source anyone can rebuild) is therefore for the principal to add by hand; the file is ready.\n\nAfter the merge: tag `v0.13.1`, pin the gateway's sha in `deploy/gcp/startup.sh`, carry it with `rehearse.sh upgrade`.\n",
+            "branch": "a-repository-owner-is-not-case-sensitive",
+            "title": "Een eigenaar van een repository is niet hoofdlettergevoelig"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912054618-cc6611"
+}

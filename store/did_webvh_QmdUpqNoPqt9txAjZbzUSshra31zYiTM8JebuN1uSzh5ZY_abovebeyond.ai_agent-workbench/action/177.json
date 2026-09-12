@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6e28e9138968997e4060d1c9f4941fcb7e3ac7b4",
+            "branch": "readme-read-against-the-code",
+            "files_sha256": "c5940cbadfd829758d2734a6b744deba8fa392a6123e9908d71c7cd222fc2b50",
+            "message": "README: read against the code"
+        },
+        "resource": "Hoet-design/hoet-eyewear-mirror"
+    },
+    "run": "workbench-20260912065538-fe434d"
+}

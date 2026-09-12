@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "30668a77d341b474327f0694de97004a6745ac7c",
+            "branch": "readme-says-what-the-repo-says",
+            "files_sha256": "33f801f5137fc6d6d733ca4f304a2525dbd18dc178c312d8a86c35d390f725c0",
+            "message": "README: what the repo says about itself"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260912055719-0bb17c"
+}

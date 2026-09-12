@@ -1,0 +1,10 @@
+{
+    "action": "352c3c06563fc708df45543d039aa4e7",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on abovebeyond-ai/trustedagentic.ai",
+    "step": 66,
+    "verdict": "DENY"
+}

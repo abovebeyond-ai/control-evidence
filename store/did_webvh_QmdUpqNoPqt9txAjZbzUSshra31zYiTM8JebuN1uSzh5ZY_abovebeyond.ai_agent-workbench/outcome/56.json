@@ -1,0 +1,15 @@
+{
+    "action": "7594cf880bec5870da2a2e7c613b8d34",
+    "effect": {
+        "detail": {
+            "base": "e928c8fd8341291c5901a39e5b7ac009261a3231",
+            "branch": "a-repository-may-carry-a-dot",
+            "commit": "52c1b1750e81badd016a6f79afb92bc82aef56fb",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 54,
+    "verdict": "ALLOW"
+}

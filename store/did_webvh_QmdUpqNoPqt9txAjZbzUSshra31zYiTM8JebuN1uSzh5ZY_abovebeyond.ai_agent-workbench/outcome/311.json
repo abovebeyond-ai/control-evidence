@@ -1,0 +1,15 @@
+{
+    "action": "99d661621ff91d83d348e9260c403f2a",
+    "effect": {
+        "detail": {
+            "base": "16e74ed16e1548f845f48306561b297ef1557238",
+            "branch": "ui/sheet-header-spacing",
+            "commit": "0622338981539549fd69556fd34c602d99119289",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 309,
+    "verdict": "ALLOW"
+}

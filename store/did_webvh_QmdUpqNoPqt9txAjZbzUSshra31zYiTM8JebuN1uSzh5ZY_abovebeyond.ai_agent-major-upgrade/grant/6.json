@@ -1,0 +1,86 @@
+{
+    "expiry": "none: a standing grant, replaced by a new bundle when it changes",
+    "judgements": [
+        "MAJOR_PROPOSED",
+        "MAJOR_UNDER_TESTS"
+    ],
+    "kinds": [
+        "branch.delete",
+        "branch.push",
+        "pull.open"
+    ],
+    "max_per_kind": 1,
+    "path_aware": true,
+    "premises_for": [
+        "branch.push",
+        "pull.open"
+    ],
+    "principal": "did:webvh:QmdUpqNoPqt9txAjZbzUSshra31zYiTM8JebuN1uSzh5ZY:abovebeyond.ai",
+    "principal_key": "d72ed1a3cffb003bd6ea966699bced6ae322ddb912a90dd35579e117951dd843",
+    "resources": [
+        "Hoet-design/cabrio-eyewear",
+        "Hoet-design/cabrio-eyewear-mirror",
+        "Hoet-design/hoet-eyewear",
+        "Hoet-design/hoet-eyewear-mirror",
+        "ShaneDeconinck/cides",
+        "ShaneDeconinck/good-governance",
+        "ShaneDeconinck/naviskore",
+        "ShaneDeconinck/shanedeconinck.be",
+        "ShaneDeconinck/vlamingdam-frituur",
+        "Trendwolves/gentells-pipeline",
+        "Trendwolves/gentells-site",
+        "Trendwolves/glk-transferor",
+        "abovebeyond-ai/abovebeyond",
+        "abovebeyond-ai/portal",
+        "abovebeyond-ai/trustedagentic.ai",
+        "kubo-global/afrodidact-website",
+        "kubo-global/kubo-website",
+        "stocklistdealer-eu/peugeot-de-backer",
+        "stocklistdealer-eu/stocklistdealer"
+    ],
+    "schemas": {
+        "branch.delete": {
+            "optional": {
+                "reason": "string"
+            },
+            "required": {
+                "branch": "string"
+            }
+        },
+        "branch.push": {
+            "optional": {
+                "base_sha": "string",
+                "files_sha256": "hex64",
+                "message": "string",
+                "packages": "int"
+            },
+            "required": {
+                "branch": "string"
+            }
+        },
+        "pull.open": {
+            "optional": {
+                "body": "string",
+                "packages": "int",
+                "title": "string"
+            },
+            "required": {
+                "base": "string",
+                "branch": "string"
+            }
+        },
+        "workflow.dispatch": {
+            "optional": {
+                "inputs": "strings",
+                "packages": "int",
+                "plan_sha256": "hex64"
+            },
+            "required": {
+                "ref": "string",
+                "workflow": "string"
+            }
+        }
+    },
+    "submitter_key": "eccad2b277d1f2495aa6c83207ee2d3916c8676a3671d60ab3e7d0f174685cee",
+    "version": "control-1"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "88e660d12c0af68e64778c5a874805d72907acc4",
+            "branch": "ui/delete-question-names-vehicle-v2",
+            "files_sha256": "a48d24be38edc910cf1ea58bf14755b5e1c63a91d7f7c0e62136d557b93dbd91",
+            "message": "Own stock: the delete question names the vehicle"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912082037-74e496"
+}

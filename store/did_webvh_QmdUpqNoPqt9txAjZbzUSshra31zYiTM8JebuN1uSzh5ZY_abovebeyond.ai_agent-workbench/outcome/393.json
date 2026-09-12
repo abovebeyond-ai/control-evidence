@@ -1,0 +1,15 @@
+{
+    "action": "8a40f43565a8a6a395a6575d63e393c0",
+    "effect": {
+        "detail": {
+            "base": "8d3180558c15d02de5e34ffd749b8220443506d8",
+            "branch": "elixir/client-retry",
+            "commit": "f0435df785940d5af4b4f13b612c295759b2f2db",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 391,
+    "verdict": "ALLOW"
+}

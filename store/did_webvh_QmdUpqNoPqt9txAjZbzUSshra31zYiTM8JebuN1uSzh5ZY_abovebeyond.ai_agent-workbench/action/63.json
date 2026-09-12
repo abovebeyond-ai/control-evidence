@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The repository had no README. This one says what the repo itself says: the site and what it hosts (the company pages, the ProveML demo, docs and paper, the did:webvh identity, the two signed posts), the stack, the layout with the parked pages and the generated paper fragment that must not be edited here, how to run it, what the three tests check and what the three workflows do, the identity script with the one rule that matters (never run create again), and what netlify.toml says about deploying.\n\nTwo things the repo made me say plainly: scripts/huis-lint.mjs is not part of npm test, although brand/huisstijl.md says it runs in the tests; and there is no elixir.json here, so the repo does not declare what Elixir measures. Both are for separate changes if wanted.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "readme-says-what-the-repo-says",
+            "title": "README: what the repo says about itself"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260912061359-bbebc2"
+}

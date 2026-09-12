@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A reset that landed mid-write on 11 September 2026 left an empty action file beside the workbench's step 3, and every reader of it has failed since: the gateway answers 500, the daily mirror stopped there. Attachments are now written to a temporary name and renamed into place, as the records already are synced. The empty file on the machine stays as it is; the mirror names it (elixir PR 166) and the record beside it is intact.",
+            "branch": "elixir/atomic-attach",
+            "title": "log: an attachment is written whole or not at all"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912081532-076f4e"
+}

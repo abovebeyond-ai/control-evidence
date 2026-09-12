@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0f2ce517fadb60c9e35c9b9734d6705afd3108c7",
+            "branch": "npm-run-check-can-run",
+            "files_sha256": "13562b499f0185cd48e5f726a82379e88fcb7fd7d96056095af178c014597788",
+            "message": "npm run check can run: @astrojs/check and typescript as dev dependencies"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260912065809-555a09"
+}

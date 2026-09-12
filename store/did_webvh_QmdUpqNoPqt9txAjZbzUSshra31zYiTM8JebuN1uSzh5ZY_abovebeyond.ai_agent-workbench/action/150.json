@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Counterpart of the `credentials` scan in Elixir. The Hoet-design token expired on 2026-09-11 and nothing said so: every GitHub measurement for four sites read \"did not answer\" for a day. A fine-grained token carries its own expiry in every answer; the scan asks, this card shows it per owner.\n\n- Under Stability: the token Elixir reads with (valid until, or never expires, which is named and not judged) and the copy the gateway pushes with (the same token, or renewed alone, or missing).\n- Severity: refused now; under 7 days now; under 30 days this week; two different copies this week; no gateway copy this month.\n- Worklist playbook \"token vernieuwen\", manual.\n\nTests in `CredentialsCardTest`. Suite green except `BuildStampTest`, which fails only in the git worktree this was written in (`.git` is a file there); PHPStan green.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "the-credentials-card",
+            "title": "De kaart Credentials: een sleutel die verloopt zegt wanneer"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912065234-f3b7f6"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7e66c031e9f49b7357218014acaccf007fb2dc3a",
+            "branch": "readme-read-against-the-code",
+            "files_sha256": "356f6c859a668c93016e42bf51cf2f77d515123f027e1ed85cfee33c3ff74f15",
+            "message": "README: read against the code"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260912065557-6e28e0"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Until now the attestation record carried four measurement registers and a verifier could say only \"the same as yesterday\". This gives each layer a reference and names whose word it rests on.\n\n- Firmware (MRTD): held to Google's signed launch endorsement for that exact measurement, fetched by the MRTD from Google's bucket or given with `--endorsement`, verified under Google's root for confidential computing, pinned in the repository (`attest/GCE-cc-tcb-root_1.crt`, published at pki.goog). Today's MRTD verifies: UEFI 53c558fe\u2026, endorsed 2026-05-21.\n- Boot chain (RTMR0 to RTMR2): the record carries the boot event log the kernel exposes (the ACPI CCEL table and the region it points at); the verifier replays it with Google's go-eventlog and the replay must land on the quote's registers. It prints what was measured: secure boot, shim and grub, the kernel with its command line, the initrd, grub's files.\n- Ours (RTMR3): before taking the quote the gateway measures its own binary and the carried configuration into RTMR3 through the kernel's sysfs door (Linux 6.16 and later; the machine runs 7.0). The record names both inputs, the configuration's bytes travel with it, and the verifier holds RTMR3 to their fold and the binary to the release asset (`--release-sha384`). A register already at the fold (the daily retake) is left; a register holding something else is left alone and reported, never claimed.\n\nAlso: the image is pinned by name in `rehearse.sh create` (the family moved); `conformance/machine-image.md` names the references and what each does not reach; the register's gateway-attested claim and the statement say the same; verify-yourself.md hashes the release asset.\n\nTests: Google's endorsement for our MRTD verifies under the pinned root and does not cover another MRTD or a truncated file; a real TDX boot log (Google's COS sample) replays to its registers and a flipped bit breaks it; RTMR3 is the ordered fold of the named inputs, and carried content must hash to its digest.\n\nAfter the release: `rehearse.sh upgrade` carries the new boot script (which keeps the carried attribute as a file) and pins v0.15.0; the first quote after the reboot carries the event log and RTMR3. Then the watcher passes `--release-sha384`.\n",
+            "branch": "elixir/machine-image",
+            "title": "The machine's layers: firmware endorsed by Google, the boot log replayed, RTMR3 with the gateway's own binary and configuration"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912074520-bd74cf"
+}

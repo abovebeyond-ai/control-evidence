@@ -1,0 +1,15 @@
+{
+    "action": "de94565347fd764052163913ea66e155",
+    "effect": {
+        "detail": {
+            "base": "338720dd3106cd5badb3cd5d4fdb33ac19d3b094",
+            "branch": "a-repository-owner-is-not-case-sensitive",
+            "commit": "2db47dd3fa07a1eafa08205892dc50405483d4eb",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 24,
+    "verdict": "ALLOW"
+}

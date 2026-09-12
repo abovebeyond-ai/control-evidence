@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The mirror asks the gateway for every attachment of every record, thousands of requests in a row through the IAP tunnel, and this morning the tunnel reset a connection around the hundredth (curl 56, connection reset by peer) and the mirror stopped. Every read call through the client now retries a connection failure three times with a second's pause; a refusal by the gateway is not retried. The tunnel's flakiness is an operational fact, and the mirror's job is to get the evidence out, not to be the first to notice it.",
+            "branch": "elixir/client-retry",
+            "title": "control client: a tunnel reset is retried three times"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912082813-5e285a"
+}

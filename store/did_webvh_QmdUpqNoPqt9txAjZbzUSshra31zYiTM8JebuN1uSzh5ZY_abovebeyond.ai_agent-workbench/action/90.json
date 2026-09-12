@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5dd310ce822e79026f8d23e26f591a21b9d5f5d7",
+            "branch": "elixir/pull-ready",
+            "files_sha256": "ad3eed25a148e7c48712104c3927da0b926687128c78c2b2367fccd3a5c119bf",
+            "message": "pull.ready: een concept van eigen makelij klaarzetten als de checks groen zijn, met de voetnoot van de geboorte behouden"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912062140-554d35"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e928c8fd8341291c5901a39e5b7ac009261a3231",
+            "branch": "a-repository-may-carry-a-dot",
+            "files_sha256": "e3c2eb0c5e75a1532a12e435aa439cf56099520a8bea6d242770d3ff04a4cd1e",
+            "message": "Een repositorynaam mag een punt dragen"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912061330-82f306"
+}

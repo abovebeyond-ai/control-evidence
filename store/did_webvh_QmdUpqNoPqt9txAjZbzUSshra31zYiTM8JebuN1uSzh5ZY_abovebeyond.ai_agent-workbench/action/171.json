@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bb408e33101d3a21e4c6528a6217da1ffcffc6f9",
+            "branch": "readme-read-against-the-code",
+            "files_sha256": "ee53bb86ecdc06fd5262e6984a4c9555e1cf5b6eff5aadf892e4ad1a48ca2965",
+            "message": "README: read against the code"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260912065532-652fc6"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "9d98cf9ccea6a6f9668256cd68d980a0",
+    "effect": {
+        "detail": {
+            "base": "769687e87389b95c38aa344c0606ebbc34af671f",
+            "branch": "ui/vin-button-three-states",
+            "commit": "3e14e5a3c822decaaf40fef1c0573e4552baec0b",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 279,
+    "verdict": "ALLOW"
+}

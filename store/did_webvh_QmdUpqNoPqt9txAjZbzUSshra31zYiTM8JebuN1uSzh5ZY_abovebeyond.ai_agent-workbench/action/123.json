@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a9a4caa354b708a07d47a71f9ec3bda8a7bdfe94",
+            "branch": "elixir/major-draft-ready",
+            "files_sha256": "a5b4e21eb804abf1dfc02466e77c4f7356529a9de1120ed59fd23dc7a5a90aa9",
+            "message": "major-upgrade: een concept als de tak alleen geen rechter trekt, klaarzetten bij groen, en de nota zegt wat de gateway antwoordde"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912062807-4fff9f"
+}

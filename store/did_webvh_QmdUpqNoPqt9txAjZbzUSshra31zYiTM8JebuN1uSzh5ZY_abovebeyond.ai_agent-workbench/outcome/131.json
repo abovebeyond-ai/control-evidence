@@ -1,0 +1,15 @@
+{
+    "action": "05d1481dc60097be972d2baea852223d",
+    "effect": {
+        "detail": {
+            "base": "f8244b0211391fc45f479371200e12164db96186",
+            "branch": "elixir/major-ticket-kinds",
+            "commit": "5b6e9aff4089c92d4bb7b634171f0196e2e1bae8",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 129,
+    "verdict": "ALLOW"
+}

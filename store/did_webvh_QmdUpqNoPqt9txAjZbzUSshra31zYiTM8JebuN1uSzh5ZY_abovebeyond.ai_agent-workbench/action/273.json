@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7bdb17608c8fecf73e90f322f652e38e4f4348de",
+            "branch": "ui/sheet-header-mobile",
+            "files_sha256": "472bca2c7119b2ea9e65852091e1b28cad783c7da3abf735d1cd8f3bafcac625",
+            "message": "Vehicle sheet header: hide VIN button once the chassis is known, quiet back link, air under the step groove"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912071329-101aec"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "2187481ade0d24b77a2c163401d76c67",
+    "effect": {
+        "detail": {
+            "base": "680879c4e1f4430340ab82784e6494dcf561f3c2",
+            "branch": "production-is-the-address-that-answers",
+            "commit": "0f20bd5dead99b22580e0ae7ddc4b757fd7822d0",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 372,
+    "verdict": "ALLOW"
+}

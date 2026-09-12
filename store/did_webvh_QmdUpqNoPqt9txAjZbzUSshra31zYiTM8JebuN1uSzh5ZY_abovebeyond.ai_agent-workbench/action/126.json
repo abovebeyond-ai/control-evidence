@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first run that reached a client repository (afrodidact, 12 September) pushed its branch through the gateway and then found no judge: the project's tests run on a pull request and on main, not on a bare branch, and that is the fleet's common shape. Two more things came out of that run. Its ticket did not cover `branch.delete`, so the removal was refused, while the note said \"the branch was removed\". And a pull request draws several runs, and the first one GitHub lists is not the judge.\n\nSo: when the branch alone draws no run within the first-sign window, the change becomes a draft pull request with the bounded working and a body that says nothing has judged it yet; the draft's checks judge it, all of them, one red is the verdict, skipped is not red; on green the draft is marked ready (`pull.ready`, control v0.14.0, PR 18 there) with the green working and the proposal's body; on red the branch is removed, which closes the draft. The grant names the four verbs. The clean-up keeps what the gateway answered and the note says it. The wait's windows are properties, so the tests need not wait.\n\nNeeds control v0.14.0 on the machine and the recarried grants (the kinds), and Portal's ticket naming the same four verbs (portal PR alongside). Until then the draft path is refused by the ticket, and the note says so.\n\nTests: the draft path on green and on red; a branch the gateway could not remove is not called removed; the six that were there.\n",
+            "branch": "elixir/major-draft-ready",
+            "title": "Major upgrade: a draft when the branch alone draws no judge, ready on green"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912062807-4fff9f"
+}

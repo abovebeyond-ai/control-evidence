@@ -1,0 +1,15 @@
+{
+    "action": "fc787469fddd5b0b356d67b0ce5f84a5",
+    "effect": {
+        "detail": {
+            "base": "7bdb17608c8fecf73e90f322f652e38e4f4348de",
+            "branch": "ui/sheet-header-mobile",
+            "commit": "6dcae5949cbdfaa0362467903d4446d7c2f070b4",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 273,
+    "verdict": "ALLOW"
+}

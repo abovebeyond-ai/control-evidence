@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #152 (conflicted with #151 on the language file).\n\n'Voertuig verwijderen?' said nothing about which one. Now the question is 'Hyundai i20 (2020), nr. 123 verwijderen?' (falls back to 'Dit voertuig verwijderen?' for a draft without make), with the same hint as the bulk delete underneath: it disappears from the list at once and cannot be undone. Both the row button and the row menu.",
+            "branch": "ui/delete-question-names-vehicle-v2",
+            "title": "Own stock: the delete question names the vehicle"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912082037-74e496"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "17821299327eb511a1f0c0285259c39eb2a2ad5a",
+            "branch": "ui/stapkop-mobiel",
+            "files_sha256": "6681aa24804aafce61bbf19cd905a5f71877dffcb157de684d030ac8bd1409c3",
+            "message": "Fiche op de telefoon: stapkop als \u00e9\u00e9n blok met groef per stap"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912070849-2af276"
+}

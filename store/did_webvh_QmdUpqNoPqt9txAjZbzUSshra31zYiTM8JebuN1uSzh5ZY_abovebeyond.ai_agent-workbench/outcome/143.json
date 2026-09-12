@@ -1,0 +1,15 @@
+{
+    "action": "0a3d7b996d29cd9c7abc4e9a0bf5691c",
+    "effect": {
+        "detail": {
+            "base": "767089b2381a90a0eb6d9b59fea761ebe76ce6a7",
+            "branch": "elixir/pin-v0-14-0",
+            "commit": "8706949278805dc397e6247826f17456cb78c1d5",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 141,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "f8e26fec21375392a88802570978d739",
+    "effect": {
+        "detail": {
+            "base": "063a11455393af9bd54a0b30b8908beaa949fe80",
+            "branch": "pin-the-gateway-at-v0-13-1",
+            "commit": "362b85442e64a196787a6cc4ec11f3407205e79d",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 30,
+    "verdict": "ALLOW"
+}

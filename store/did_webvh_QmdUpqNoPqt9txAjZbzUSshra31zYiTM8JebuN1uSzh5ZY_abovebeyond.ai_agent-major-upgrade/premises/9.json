@@ -1,0 +1,48 @@
+{
+    "certificate": "@[package:uuid]{uuid} moves from %[from]{10.0.0} to %[to]{11.1.1}, a major version, closing %[advisories]{1} advisory; the calls were moved by a model named in the bill of materials, in %[filesChanged]{1} file(s), attempt %[attempt]{1} of at most two, ?[bounded: MAJOR_PROPOSED]{within the bound}.",
+    "errors": null,
+    "provenance": {
+        "package:uuid.advisories": "inferred",
+        "package:uuid.attempt": "gateway",
+        "package:uuid.filesChanged": "inferred",
+        "package:uuid.from": "inferred",
+        "package:uuid.model": "inferred",
+        "package:uuid.name": "inferred",
+        "package:uuid.to": "inferred"
+    },
+    "registry": {
+        "MAJOR_PROPOSED": {
+            "field": "attempt",
+            "label": "a bounded attempt at crossing a major version, at most two",
+            "op": "lte",
+            "value": 2
+        }
+    },
+    "requiredControls": [
+        "MAJOR_PROPOSED"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "attempt": "gateway",
+        "ciRun": "inferred",
+        "coverage": "inferred",
+        "filesChanged": "inferred",
+        "from": "inferred",
+        "model": "inferred",
+        "semverSafe": "gateway",
+        "testsAfter": "inferred",
+        "testsBefore": "inferred",
+        "to": "inferred",
+        "underTests": "gateway"
+    },
+    "store": {
+        "package:uuid.advisories": 1,
+        "package:uuid.attempt": 1,
+        "package:uuid.filesChanged": 1,
+        "package:uuid.from": "10.0.0",
+        "package:uuid.model": "claude-opus-5",
+        "package:uuid.name": "uuid",
+        "package:uuid.to": "11.1.1"
+    },
+    "verified": true
+}

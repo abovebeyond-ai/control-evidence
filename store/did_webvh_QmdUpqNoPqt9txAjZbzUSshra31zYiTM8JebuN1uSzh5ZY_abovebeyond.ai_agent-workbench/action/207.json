@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ce1b8cd72ed062120dcce52593868e8018d5f0f1",
+            "branch": "readme-read-against-the-code",
+            "files_sha256": "347748913a82ee5d5cdd9cdf7106e324006168c5c475cfba3fdb1c5af9d3d5bb",
+            "message": "README: read against the code"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912065609-76ed56"
+}

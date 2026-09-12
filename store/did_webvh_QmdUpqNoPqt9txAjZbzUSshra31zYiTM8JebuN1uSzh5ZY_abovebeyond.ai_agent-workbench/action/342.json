@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0939e8c12377e43def05190ee8060be17709f2f6",
+            "branch": "feature/draft-autosave-on-next-v2",
+            "files_sha256": "52d51766cf5fbf0809c1058da768dd73215fe1845eccb0462f2615ff0a96678d",
+            "message": "Adding a vehicle: 'next' saves the step to the draft, one 'Wagen toevoegen' button on the last step"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912081453-db6ff4"
+}

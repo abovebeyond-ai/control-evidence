@@ -1,0 +1,10 @@
+{
+    "action": "76b6a0eb58ee83cd1146baf5029818c5",
+    "effect": {
+        "error": "no GitHub token for ShaneDeconinck in the gateway's secrets",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 0,
+    "verdict": "ALLOW"
+}

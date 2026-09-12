@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "986debc12af0f50faf4c0bbed963eb2de472dc51",
+            "branch": "readme-read-against-the-code",
+            "files_sha256": "57a27b06594e6e7dccc00e3967659598a14342da3d269e3d3a7844dc2a209f32",
+            "message": "README: read against the code"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260912065551-073d7d"
+}

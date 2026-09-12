@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "01448a5f6caf7fb8c9e5bd50fb561d0600b626aa",
+            "branch": "elixir/atomic-attach",
+            "files_sha256": "8cb48b1eea48f5fd8d9bd565e13bd15e7b0ef5f612645ad295c65b8e49a9699b",
+            "message": "log: een bijlage wordt heel geschreven of niet"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912081532-076f4e"
+}

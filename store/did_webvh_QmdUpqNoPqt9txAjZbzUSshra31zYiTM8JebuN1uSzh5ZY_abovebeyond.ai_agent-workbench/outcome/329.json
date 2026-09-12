@@ -1,0 +1,15 @@
+{
+    "action": "7f9b528bfcad7a209e655efe5b4c3f1c",
+    "effect": {
+        "detail": {
+            "base": "16e74ed16e1548f845f48306561b297ef1557238",
+            "branch": "ui/stocklist-toolbar-mobile",
+            "commit": "53f5fba2dca1d7aea8ccf705431465da680c947c",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 327,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,10 @@
+{
+    "action": "419bce6d0de08e04dee036b8e36b5600",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.delete on kubo-global/afrodidact-website",
+    "step": 6,
+    "verdict": "DENY"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0939e8c12377e43def05190ee8060be17709f2f6",
+            "branch": "feature/draft-autosave-on-next",
+            "files_sha256": "4fb2309f39cce3b8d5bed2e951aec189e4c2e9663d720d3ff676d875d327262b",
+            "message": "Test: use a numeric-ruled field for the format error (between on a string checks length)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912081430-aa3663"
+}

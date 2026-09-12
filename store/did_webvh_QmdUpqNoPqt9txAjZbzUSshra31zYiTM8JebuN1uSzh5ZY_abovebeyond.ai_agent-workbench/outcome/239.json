@@ -1,0 +1,15 @@
+{
+    "action": "2e11baaf6d7a78372cf1c9844c5a3455",
+    "effect": {
+        "detail": {
+            "base": "e300865f16597a2718fb9a01c5ee3a159cd2286d",
+            "branch": "the-key-scan-reads-clean",
+            "commit": "5800ac36d098709f1a7ff29a29ab378f1593b050",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 237,
+    "verdict": "ALLOW"
+}

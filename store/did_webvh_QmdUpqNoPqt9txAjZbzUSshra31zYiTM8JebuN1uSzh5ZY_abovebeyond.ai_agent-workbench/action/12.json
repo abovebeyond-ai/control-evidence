@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "96ace65321dd878b1eb5c72088ece12d8f6c31fe",
+            "branch": "elixir/major-candidates-from-deps",
+            "files_sha256": "9ace488b59b950ee5e68925e59cbf829316374f5119c345148b3b3c603219102",
+            "message": "major-upgrade: kandidaten ook uit de deps-scan, en een rechter voor de major-claim"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260911212753-4ed6f7"
+}

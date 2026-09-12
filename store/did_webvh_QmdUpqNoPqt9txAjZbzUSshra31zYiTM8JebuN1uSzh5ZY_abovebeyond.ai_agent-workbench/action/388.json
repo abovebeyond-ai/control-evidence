@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The app-health probe followed redirects, and the client drops the Authorization header when it follows one to another host. A declared address that answers 301 to its canonical (`www.sportbusinessgame.eu` to `sportbusinessgame.eu`, this morning) therefore came back as \"the app refused the token; it was probably rotated on one side only\". The token was right; the address was not. The probe no longer follows redirects and names one as what it is: \"the declared address redirects to \u2026; declare the address that answers in elixir.json\". The credentials measurement, which reads that note, then stops blaming the token.\n\nThe other half is ShaneDeconinck/good-governance#22 (elixir.json on the canonical). Test in `AppHealthScanTest`. Suite green, PHPStan green.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "a-redirect-is-not-a-refusal",
+            "title": "Een adres dat doorstuurt is geen app die nee zegt"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912082648-947f8d"
+}

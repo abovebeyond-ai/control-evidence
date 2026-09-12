@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "16e74ed16e1548f845f48306561b297ef1557238",
+            "branch": "ui/stocklist-toolbar-mobile",
+            "files_sha256": "02f381e95d0e532581a6ebc2dbb92885d759b3b911b710b2c2ff33fef69c99de",
+            "message": "Stocklist on phones: type tiles in one row, toolbar as two rows with the filter toggle next to the sort"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912080516-9326fe"
+}

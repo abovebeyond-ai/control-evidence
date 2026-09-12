@@ -1,0 +1,15 @@
+{
+    "action": "1d4fffb74a2480994c05d5e85fbc9d0f",
+    "effect": {
+        "detail": {
+            "base": "1fd10983db2938be79aa60b0400576a67443bfe9",
+            "branch": "the-credentials-card",
+            "commit": "ef8ee3a5ad02f615c49172cff18457b6cec03e8d",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 147,
+    "verdict": "ALLOW"
+}

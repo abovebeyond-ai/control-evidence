@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.delete",
+        "params": {
+            "branch": "elixir/major-uuid-2026-09-12-0538",
+            "reason": "the project's CI did not run on the branch"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "01M2A208WTV35PGZ690QJNSJYE"
+}

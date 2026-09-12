@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The theme's page-titles padding plus mt-5 left a lot of empty space between the navbar, the title, the buttons and the first card. Header margins and paddings reduced in the mobile block.",
+            "branch": "ui/sheet-header-spacing",
+            "title": "Vehicle sheet header on phones: tighter spacing"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912080221-4003a4"
+}

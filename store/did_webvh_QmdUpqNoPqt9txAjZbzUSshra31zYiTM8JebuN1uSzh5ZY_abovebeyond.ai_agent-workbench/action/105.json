@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The repository had no README. This one says what the repo itself says: the site in its own words, the stack (Astro 7 with the Node adapter, Sanity, Mollie, Maileroo, nginx and pm2 on the host), the layout including the API routes and the campaign pages, how to run it, the three test layers and what each needs, how merging to main deploys through deploy.yml and what the rebuild script on the server does, and what Elixir's two workflows do.\n\nTwo things the repo made me say plainly: .env.example lists two variables while the code reads nine, so the README names the other seven with their purpose; and there is no elixir.json here. Not in the README because it is a finding rather than documentation: the layout and robots.txt use https://www.afrodidact.org for canonical and sitemap URLs while nginx redirects www to the bare domain.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "readme-says-what-the-repo-says",
+            "title": "README: what the repo says about itself"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20260912062534-cf987c"
+}

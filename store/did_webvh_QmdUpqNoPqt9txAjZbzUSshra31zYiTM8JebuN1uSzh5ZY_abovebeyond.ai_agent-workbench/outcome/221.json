@@ -1,0 +1,15 @@
+{
+    "action": "690b99b2b5a7125841354bb6623a3ef4",
+    "effect": {
+        "detail": {
+            "base": "4255e14b4653d2559ab415f9ef32401c92d32a4e",
+            "branch": "readme-read-against-the-code",
+            "commit": "e5aa88a324ec0d2268eda2ec9099315ed7529c1c",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 219,
+    "verdict": "ALLOW"
+}

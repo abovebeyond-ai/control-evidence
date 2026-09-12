@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "148a735139ec8017e0bb65491f9b73492b51eeb1",
+            "branch": "elixir/machine-image",
+            "files_sha256": "ec14e7981a70269e9bd8163477ed8ce64cc3ccf4d8cd024c910711f0468d72a7",
+            "message": "De lagen van de machine: firmware tegen Googles ondertekende maat, de bootlog nagespeeld, RTMR3 met de eigen binary en de gedragen configuratie"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912074520-bd74cf"
+}
