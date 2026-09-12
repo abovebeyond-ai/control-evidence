@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The reconciliation counts pull requests from elixir/* branches on GitHub against the effects the gateway performed. The workbench opened its README pull requests today from plain branch names, so every repository it touched read \"0 pulls on GitHub, 1 performed by the gateway\" and the calm layer went amber over work that was done and merged.\n\nThe hands name their branches: elixir/* for Elixir, workbench/* for the session on the operator's machine; the GitHub side is read by that convention alone, never by the gateway's records, so the count stays independent. `hand.mjs` now prefixes every branch with workbench/. Test in `ControlReconcileTest`. Suite green, PHPStan green.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "workbench/the-workbench-counts-too",
+            "title": "De verzoening telt ook de werkbank: takken workbench/*"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912090804-4ea4c5"
+}

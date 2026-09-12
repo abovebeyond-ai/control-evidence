@@ -1,0 +1,15 @@
+{
+    "action": "ba83e9553302159d564c19ca9f61b98a",
+    "effect": {
+        "detail": {
+            "base": "bc46e15ce50149ce51e9ef45bdc489b4da891530",
+            "branch": "workbench/perf/detail-thumbs-lazy",
+            "commit": "7f2170fd8a2ed1ce8e223f55b6066fbda6e0ed7b",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 490,
+    "verdict": "ALLOW"
+}

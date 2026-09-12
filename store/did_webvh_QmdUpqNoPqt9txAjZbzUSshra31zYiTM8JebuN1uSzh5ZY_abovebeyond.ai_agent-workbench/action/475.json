@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`elixir.json` declared `https://www.cides.be`, which answers 301 to `https://cides.be`, the site the Astro config itself names as its address. Elixir measured the redirecting host. Same case as ShaneDeconinck/good-governance#22 this morning.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "production-is-the-address-that-answers",
+            "title": "elixir.json: production is cides.be, the address that answers"
+        },
+        "resource": "ShaneDeconinck/cides"
+    },
+    "run": "workbench-20260912090523-79b680"
+}

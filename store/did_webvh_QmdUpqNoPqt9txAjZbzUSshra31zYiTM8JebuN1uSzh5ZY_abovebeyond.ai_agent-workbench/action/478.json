@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1aec88084337841c2cf91daa0dd3c77a8ccc51bc",
+            "branch": "workbench/the-workbench-counts-too",
+            "files_sha256": "40497686c58d6254697e4ec02ddecfed9912b1ff753c30586f3832e4e3a5c837",
+            "message": "De verzoening telt ook de werkbank: takken workbench/*"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912090804-4ea4c5"
+}

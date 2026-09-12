@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The public copy verifies BROKEN on the workbench chain: action a2d40613, a pull.open judged ALLOW at 08:26 UTC today, has a request record and nothing after it. The machine was reset between the request record and the effect record (the v0.15.0 upgrade). The effect may or may not have reached GitHub; nothing recorded it. The gateway now closes such an action when it opens the chain, at boot, with the two records it lacks, whose outcome says interrupted in those words and whose reasons say effect interrupted and result interrupted. Every agent's chain is opened at boot rather than at its first request, so the closing happens then. An action with its three records is left alone; opening again writes nothing. The statement gains a section. Tests: the interruption is closed and says so; the persistence test now counts the two records.",
+            "branch": "workbench/elixir/interrupted-actions",
+            "title": "An interrupted action gets its effect and result records at open, saying so"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912091147-fdf3c8"
+}

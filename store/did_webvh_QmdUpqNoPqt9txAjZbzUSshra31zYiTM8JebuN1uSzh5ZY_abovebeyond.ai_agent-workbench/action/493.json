@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On staging the detail page of a vehicle with 69 photos fired 69 thumbnail requests at once (background-image on every li), which held the load event for almost three seconds after the HTML. Now the first eight thumbnails load at once and the rest carry their address in data-thumb and load through an IntersectionObserver (200px margin) when they come into view; browsers without it load them all as before. The main slides were already lazy.\n\nMeasured on staging: HTML 0.6 to 2.3 s server time (separate issue, see the note in chat), thumbnails 2.8 s, Real Garant AJAX 2.0 s.\n",
+            "branch": "workbench/perf/detail-thumbs-lazy",
+            "title": "Vehicle detail: lazy thumbnails"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912091240-7d25ba"
+}

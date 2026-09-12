@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2c76b4356f59bdd35f4ee1ad5d3e6520e053e07a",
+            "branch": "workbench/elixir/pin-v0-16-1",
+            "files_sha256": "ab51de8f4a1b90adac6ca2d50f48ddbecea209d11bfa9820128a3a9c138ddc36",
+            "message": "De VM op v0.16.1; het script krijgt zijn uitvoerbit terug"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912092128-4350f2"
+}

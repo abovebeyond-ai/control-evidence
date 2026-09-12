@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "29830079664af764a9edfa4a944e4b65103be2f8",
+            "branch": "workbench/elixir/interrupted-actions",
+            "files_sha256": "034534220ed662c1ed4ae13b744e5b776bf973f9c48963adad7709d8ba017f41",
+            "message": "Een onderbroken handeling krijgt bij het openen haar effect- en resultaatrecord, die zeggen dat het zo was"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912091147-fdf3c8"
+}

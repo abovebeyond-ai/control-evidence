@@ -1,0 +1,15 @@
+{
+    "action": "16d16cc93735bf23c71afb4e40665696",
+    "effect": {
+        "detail": {
+            "base": "b6815a64f4a15bd9a360b78241972a80c464a9e5",
+            "branch": "workbench/the-workbench-in-the-did-log",
+            "commit": "605421e0d624e5ca41dd2f9eacc4cd3182e7d734",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 502,
+    "verdict": "ALLOW"
+}

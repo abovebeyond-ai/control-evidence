@@ -1,0 +1,15 @@
+{
+    "action": "a41703ae2fb6760139e72bab313b89e2",
+    "effect": {
+        "detail": {
+            "base": "29830079664af764a9edfa4a944e4b65103be2f8",
+            "branch": "workbench/elixir/interrupted-actions",
+            "commit": "30947fde004c2ddc88a60e62e007de2da871fd9c",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 484,
+    "verdict": "ALLOW"
+}

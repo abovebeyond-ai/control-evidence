@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "60f42456e899f672d25acd49a8bcbdb119c58f61",
+            "branch": "workbench/perf/thumbs-webp",
+            "files_sha256": "7d2c6f7f97c33302053306b8431715f63e707d8be2ed1b6593663aa1753062b2",
+            "message": "Thumbnails as WebP: sm size in WebP, --maat regenerate mode, older versions through the app route until regenerated"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912092306-6dedfa"
+}

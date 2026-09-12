@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bc46e15ce50149ce51e9ef45bdc489b4da891530",
+            "branch": "workbench/perf/detail-thumbs-lazy",
+            "files_sha256": "da0c3114538a25d3e778145fa2c5abd98cbd883f08be95e7cea9198042540a15",
+            "message": "Vehicle detail: thumbnails past the first eight load when they scroll into view"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912091240-7d25ba"
+}
