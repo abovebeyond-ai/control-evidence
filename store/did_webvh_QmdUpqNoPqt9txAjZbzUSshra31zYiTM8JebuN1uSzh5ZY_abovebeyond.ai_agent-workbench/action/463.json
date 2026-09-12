@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The code of this repo is English; the checker for the house style was the one script with a Dutch name. `scripts/huis-lint.mjs` is now `scripts/brand-lint.mjs`, next to `brand/huisstijl.md` that it enforces; the guide and the README name it accordingly. Nothing inside the script changed.\n\nFirst proposal with a deletion in it: control v0.16.0 lets a push remove a file, so a rename no longer needs a person's hand.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "brand-lint",
+            "title": "brand-lint: the house-style checker under an English name"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260912090334-1071a7"
+}

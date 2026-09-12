@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first stop-and-start upgrade showed a gap: systemd started the enabled unit at boot before the boot script ran, the old binary (v0.15.0) measured itself into RTMR3, the script then installed v0.15.1 and restarted the service, and the new binary found the register holding another fold and left it, as designed. RTMR3 extends once per boot, so the machine now serves v0.15.1 under a quote that names no inputs. The unit is no longer enabled at boot; the boot script starts it after the release check on every boot. If the script does not run, the gateway does not serve. One more stop and start after this lands, and the quote binds the release it serves.",
+            "branch": "elixir/start-after-install",
+            "title": "The gateway starts after the release check, not before it"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912084947-9954b3"
+}

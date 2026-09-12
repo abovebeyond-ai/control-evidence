@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twice today a hand could add a file but not take one away: two copies of a measurement landed at the wrong path and had to be removed by the operator, and a rename was a person's job.\n\nA file change with `delete: true` becomes a tree entry with a null sha, which is how GitHub's tree API deletes. A deletion carries no content (refused otherwise) and digests as a deletion, so it cannot pass for a write of nothing. `go test ./...` green, gofmt clean.\n\nAfter the merge: tag `v0.16.0`, then the pin in `startup.sh` and `rehearse.sh upgrade`. The workbench client learns `--delete <path>` in the same step.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "a-push-may-remove-a-file",
+            "title": "A push may remove a file"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912084438-6ce301"
+}

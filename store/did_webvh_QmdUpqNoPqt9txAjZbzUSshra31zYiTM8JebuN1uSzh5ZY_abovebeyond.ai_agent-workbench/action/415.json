@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3e821006c72445af955c8ee0d19d2454ff3bc14a",
+            "branch": "a-push-may-remove-a-file",
+            "files_sha256": "cf19dc1b0e58678cd709e0106998f09352d2010d07138d601e2ae81fe8ba587b",
+            "message": "A push may remove a file"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912084438-6ce301"
+}

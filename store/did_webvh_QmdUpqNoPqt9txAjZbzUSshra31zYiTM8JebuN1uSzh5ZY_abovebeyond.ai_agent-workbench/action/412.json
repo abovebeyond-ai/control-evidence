@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The mirror's first full run this morning found 35 unreadable attachments, all beside the workbench's records and all written in the minute before one of the machine's resets on 11 and 12 September: 21:15 and 21:25 yesterday, 06:11, 07:02 and 08:25 today. The records themselves were synced from the first day and are intact; the material beside them was written without a sync, and a reset is a power cut, so a file whose name reached the disk but whose bytes did not reads as empty. Two changes: an attachment is written, synced, closed and renamed into place, and its directory synced; and the rehearsal script's reboot is now a stop and a start, an orderly shutdown that flushes the disk, with the power cut kept under its own name for a stop that hangs. The 35 files stay empty; the mirror names them in coverage.json, and nothing in the chain depends on them.",
+            "branch": "elixir/attach-synced",
+            "title": "Attachments synced to disk; a reboot is a stop and a start, not a power cut"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912083953-77d473"
+}

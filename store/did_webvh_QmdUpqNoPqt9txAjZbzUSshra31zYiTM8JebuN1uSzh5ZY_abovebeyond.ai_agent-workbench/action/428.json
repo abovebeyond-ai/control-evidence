@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "07ba43aa537689a3cab1b79226d72684a8c4bed8",
+            "branch": "pin-the-gateway-at-v0-16-0",
+            "files_sha256": "1d8c7744fc1c00383a51c4ab49c7df547c850afd29a8a6c9d7d9cd2f94c45782",
+            "message": "The VM at v0.16.0: a push may remove a file"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912084943-7ebba1"
+}

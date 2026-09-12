@@ -1,0 +1,15 @@
+{
+    "action": "e805efb55976106f9e2578b39b5b043f",
+    "effect": {
+        "detail": {
+            "base": "3e821006c72445af955c8ee0d19d2454ff3bc14a",
+            "branch": "a-push-may-remove-a-file",
+            "commit": "6109c93fe4610a1e565b14bbe190e0294b3e61ab",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 415,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b4d6768a9b5399e0f53c84b376130199aa3a24b5",
+            "branch": "brand-lint",
+            "files_sha256": "f23248a2e3cc6ceb23a6ce6b90fe68198d826c8f310347a32eb998c765939a46",
+            "message": "brand-lint: the house-style checker under an English name"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260912090334-1071a7"
+}

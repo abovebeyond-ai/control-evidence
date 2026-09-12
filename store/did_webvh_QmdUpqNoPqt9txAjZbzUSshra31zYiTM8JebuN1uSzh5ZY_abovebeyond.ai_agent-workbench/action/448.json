@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e2ccd05ac982fddf9d255ba24dc722d99714f559",
+            "branch": "ui/detail-phone-partners-v2",
+            "files_sha256": "1792a6009087cabf5e40479350d7063666a804db8a673801e0c27c02a9d71b6e",
+            "message": "Vehicle detail on phones: header, actions panel, partner blocks without banners, no lease NaN; drawer no longer flashes on load"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912085109-8b58a6"
+}

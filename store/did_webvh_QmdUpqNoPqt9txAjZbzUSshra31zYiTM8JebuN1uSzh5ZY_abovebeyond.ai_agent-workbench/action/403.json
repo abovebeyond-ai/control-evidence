@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f2c27d84e4102f96f653e10014271cb3848632c2",
+            "branch": "ui/stocklist-header-phone-spacing",
+            "files_sha256": "fa5e30a701c16668aef3eb8939a0e2692cc7008dd9722f81a64ff5bde10d3d50",
+            "message": "Stocklist on phones: title starts lower like own stock, type chips as equal columns"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912083436-c56003"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De campagnesectie zei \"\u00e9\u00e9n matrijs, \u20ac5.000, eenmalig\" naast een balk die \"van \u20ac10.000\" toont, want de afrodidact.org-campagne (kubo-mal) vraagt \u20ac10.000: de matrijs \u00e9n de eerste productiebatch behuizingen.\n\n- MoldCampaign: de investering is \u20ac10.000, met vier stappen in plaats van drie (vandaag \u2192 matrijs \u20ac5.000 \u2192 eerste reeks \u20ac5.000 \u2192 daarna); surplus-zin verwijst naar matrijs en eerste reeks. EN, FR, NL.\n- Impact-pagina's (EN, FR, NL): \u20ac10.000 voor matrijs en eerste reeks.\n\nNiet aangeraakt: de print-inserts en de brief aan Nkhoma in `print-src/` (PDF's zijn al gegenereerd en zeggen nog \u20ac5.000 voor de matrijs alleen).\n\nGebouwd en nagekeken op /nl/#mold-campaign; tests groen (18).\n",
+            "branch": "mold-campaign-10k",
+            "title": "Campagne: \u20ac10.000 voor matrijs \u00e9n eerste reeks behuizingen"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20260912090349-6f3858"
+}

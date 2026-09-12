@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e2ccd05ac982fddf9d255ba24dc722d99714f559",
+            "branch": "ui/detail-phone-partners",
+            "files_sha256": "f8131c55c709d5cdc3d380dca9e435aa8fdfa3a28d203b0964486b6cf2e0923e",
+            "message": "x"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912084954-30d17f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7f035f578e8ceca63854bdf77f6d2f04c0770e2c",
+            "branch": "fix/favicon-ico-new-mark",
+            "files_sha256": "44e9a61cb9e1ec1e632c092403ab4f9dff792cca182d437b47dbf48816d3bc14",
+            "message": "favicon.ico carries the new mark (Chrome falls back to it on slow pages)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912090330-437525"
+}

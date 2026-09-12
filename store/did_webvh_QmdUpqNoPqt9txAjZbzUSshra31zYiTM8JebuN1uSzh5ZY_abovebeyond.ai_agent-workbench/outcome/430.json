@@ -1,0 +1,15 @@
+{
+    "action": "00847bffdcaa5d5f202cee681eb31efe",
+    "effect": {
+        "detail": {
+            "base": "e2ccd05ac982fddf9d255ba24dc722d99714f559",
+            "branch": "ui/detail-phone-partners",
+            "commit": "6f07c406c35aa8d01e9b164e600ca11142aeb143",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 427,
+    "verdict": "ALLOW"
+}

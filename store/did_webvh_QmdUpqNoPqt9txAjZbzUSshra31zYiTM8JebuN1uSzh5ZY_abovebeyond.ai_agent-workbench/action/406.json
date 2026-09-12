@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "- The title sat against the top bar; same air as the own-stock header now (28px).\n- The type chips are equal-width columns (two per row on a phone) instead of two loose widths stacked.",
+            "branch": "ui/stocklist-header-phone-spacing",
+            "title": "Stocklist on phones: header spacing and type chips as columns"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912083436-c56003"
+}

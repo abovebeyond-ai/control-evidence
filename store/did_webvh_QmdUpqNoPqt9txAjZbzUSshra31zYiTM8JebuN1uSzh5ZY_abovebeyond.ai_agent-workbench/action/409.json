@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cc351324d4d5cfa4b3883785a333f855199104ce",
+            "branch": "elixir/attach-synced",
+            "files_sha256": "5cf4a24c5d2218366277993c32fe2f07a91aa72a0bcce0e0ecdcd4da96a9d254",
+            "message": "Bijlagen gesynchroniseerd naar schijf; een herstart is een stop en een start, geen stroomonderbreking"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912083953-77d473"
+}

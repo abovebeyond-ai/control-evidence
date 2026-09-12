@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #157 (opened by mistake with a probe title and only the stylesheet; please close it).\n\n- Mobile menu: the theme hid the drawer only after its JS added mini-sidebar, so every page load flashed the open menu. Hidden by CSS until show-sidebar.\n- Detail header on phones: title on its own line with side padding, customer-mode toggle under it, actions under that.\n- Actions toggle: when open it becomes the head of a panel and the actions sit inside it; label Acties verbergen.\n- Real Garant and Flexlease blocks: the skewed banner with stripes is gone; one quiet pattern (title with icon, partner logo on a dark tile, text, fields grid, result sentence with the amount in bold). Bootstrap row/col markup replaced; JS selectors kept (data-warranty instead of .row).\n- Flexlease: an empty or sealed answer no longer prints vanaf EUR NaN but Leaseprijs is nu niet beschikbaar; the spinner also stops on a failed request.\n- The skew CSS stays: the offer/order screens and the website theme still use it.\n",
+            "branch": "ui/detail-phone-partners-v2",
+            "title": "Vehicle detail on phones: header, actions panel, partner blocks, drawer flash"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912085109-8b58a6"
+}

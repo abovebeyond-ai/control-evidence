@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "73d5cc0d6fc680c3739c71fdd53b99a580c817af",
+            "branch": "mold-campaign-10k",
+            "files_sha256": "fd0e6ee8ed957755b57669a8550615e838d2c758eaa73f95017ec3d3468023a4",
+            "message": "Campagne: \u20ac10.000 voor matrijs \u00e9n eerste reeks behuizingen"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20260912090349-6f3858"
+}
