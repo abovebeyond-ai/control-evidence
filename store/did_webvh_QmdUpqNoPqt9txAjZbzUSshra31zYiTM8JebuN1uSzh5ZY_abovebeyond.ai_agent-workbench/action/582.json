@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "15c57750fb260a3438b6e0dc3346072555c86d5c",
+            "branch": "workbench/fix/thumb-bridge-existing-file",
+            "files_sha256": "1c0000eb50a0d0e3f6839d0276c12403b43ac227684c7dd5c7235f0707e4efc3",
+            "message": "Thumbnails of older versions point at their existing PNG/JPG in the bucket, no on-demand build"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912105904-333d76"
+}

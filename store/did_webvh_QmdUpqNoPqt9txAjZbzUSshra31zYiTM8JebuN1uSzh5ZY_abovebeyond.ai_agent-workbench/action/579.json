@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "- Stocklist (desktop): sort, per row and favourites sit right of the vehicle types on one row instead of a third row under the title.\n- Detail header (phones): the theme's -10px margin on .page-titles clipped the first letter of the title; margin reset. The bare customer-mode switch is scaled to 85%.\n",
+            "branch": "workbench/ui/header-rows-and-detail-title",
+            "title": "Stocklist header rows on desktop, detail title on phones"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912105515-3f92d3"
+}

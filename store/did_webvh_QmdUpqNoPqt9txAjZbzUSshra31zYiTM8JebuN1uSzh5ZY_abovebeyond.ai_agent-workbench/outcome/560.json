@@ -1,0 +1,15 @@
+{
+    "action": "430ecd0d49915137b17fecd58cd12ea1",
+    "effect": {
+        "detail": {
+            "base": "e72248d73a1eab97f4e8ae11ae9de45e96d8a6b0",
+            "branch": "workbench/ui/customer-mode-switch-aligned",
+            "commit": "e1bce490da922f6c863616306412fecdaea315df",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 558,
+    "verdict": "ALLOW"
+}

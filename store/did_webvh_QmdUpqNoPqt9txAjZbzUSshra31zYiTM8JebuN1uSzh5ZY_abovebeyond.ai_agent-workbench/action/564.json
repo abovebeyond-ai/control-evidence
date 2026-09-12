@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a24cc8d006e7a0cc64d5d6961db8f448d2204234",
+            "branch": "workbench/the-brief-speaks-in-measurements",
+            "files_sha256": "334eb23af591f98cca28c5aed9e433059d29c5ea98b98707940e96d7b5f33a2a",
+            "message": "De fleet brief spreekt in metingen: catalogus, feiten en oordeel per sleutel (versie 2)"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912104301-3e84c9"
+}

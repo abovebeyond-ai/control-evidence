@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2f4ed6ac883c7ade44b2510c4b89f24f08365c6a",
+            "branch": "workbench/fix/flexlease-fuel-names",
+            "files_sha256": "391397b6e99d98e7aa905230fa804cd7501d952270eedb94e9c8bf5383503eb8",
+            "message": "FlexLease: translate our fuel names to the five FlexLease accepts; API URL in the cutover list"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912101849-aec90a"
+}

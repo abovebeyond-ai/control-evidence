@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e72248d73a1eab97f4e8ae11ae9de45e96d8a6b0",
+            "branch": "workbench/ui/customer-mode-switch-aligned",
+            "files_sha256": "8eefda3dc7c94f5a36b350ffc36def0c2cc4e698d93c054f2b5bbf8ae3413a0a",
+            "message": "Detail header: customer-mode switch without the word in customer mode, aligned; the word stays for screen readers"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912103357-81f150"
+}

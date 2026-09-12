@@ -1,0 +1,15 @@
+{
+    "action": "d6f889b9886592f0336124f5efc2176c",
+    "effect": {
+        "detail": {
+            "base": "207c4b3944440f5c68186011548ccbbb9f2fa750",
+            "branch": "workbench/elixir/checker-v0-16-2",
+            "commit": "a4594a050840b5691a6352b75b19140e6b92dbf7",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 627,
+    "verdict": "ALLOW"
+}

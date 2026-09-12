@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The brief was built from the screen's cards alone: an agent read titles made for eyes (\"Weakest pages\") and Portal kept a table (`MEETSLEUTEL`) to turn them back into measurement keys. Shane asked why the agent side maps to the human screens at all.\n\nVersion 2 adds, without renaming anything of version 1:\n\n- `catalogue`: what Elixir measures, as Elixir declares it, by key (concern, cost, decay, cadence, triggers, dependsOn, needs).\n- per watched project `measurements`: every measurement Elixir wrote, under its key, with state, moments, facts verbatim (lists over 30 cut with a marker) and the dashboard's `verdict` on those facts: the worst of the cards that read the key, so brief and screen cannot disagree. `staging` alongside when it ran there. Null for an unwatched project, not an empty map.\n- every task carries `measurementKey`, the key `measure --only` takes.\n\nThe cards stay as the rendering for a screen; the markdown brief is unchanged. Contract in `docs/fleet-brief.md`, test in `FleetBriefTest`. Suite green (BuildStampTest fails only in this worktree), PHPStan green.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "workbench/the-brief-speaks-in-measurements",
+            "title": "De fleet brief spreekt in metingen (versie 2)"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912104301-3e84c9"
+}

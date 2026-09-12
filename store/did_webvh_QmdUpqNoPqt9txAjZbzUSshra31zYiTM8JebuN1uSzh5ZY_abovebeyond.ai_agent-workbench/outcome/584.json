@@ -1,0 +1,15 @@
+{
+    "action": "c2ccd86b3576da8b77da2c612d91df3e",
+    "effect": {
+        "detail": {
+            "base": "15c57750fb260a3438b6e0dc3346072555c86d5c",
+            "branch": "workbench/fix/thumb-bridge-existing-file",
+            "commit": "914035e70ffd4c50c0f2e43c11d2e57004f25825",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 582,
+    "verdict": "ALLOW"
+}

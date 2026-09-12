@@ -1,0 +1,15 @@
+{
+    "action": "31da10eca02bd291097dc0d4fad37562",
+    "effect": {
+        "detail": {
+            "base": "6147b54eeb0a4b4506c84b60d3d7475cefe4daf0",
+            "branch": "workbench/feature/media-set-generations-v2",
+            "commit": "ea55e9041a6b11f2a32f4e0b17bded7c319e666c",
+            "files": 8
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 606,
+    "verdict": "ALLOW"
+}

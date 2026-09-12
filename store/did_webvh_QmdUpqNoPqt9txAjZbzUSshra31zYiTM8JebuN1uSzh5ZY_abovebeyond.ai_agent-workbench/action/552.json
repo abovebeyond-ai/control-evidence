@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e72248d73a1eab97f4e8ae11ae9de45e96d8a6b0",
+            "branch": "workbench/ui/customer-mode-label",
+            "files_sha256": "2f7a2b5db38a737fb36966fc5db923ad29ed65ecfee81d04a5e0ad8f12515134",
+            "message": "Detail header: the customer-mode switch keeps its label in customer mode"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912102936-31271c"
+}

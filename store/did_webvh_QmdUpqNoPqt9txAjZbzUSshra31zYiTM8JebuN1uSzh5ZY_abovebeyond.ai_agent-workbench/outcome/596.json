@@ -1,0 +1,15 @@
+{
+    "action": "b1282912957408bbe5cf7c68dcfe19eb",
+    "effect": {
+        "detail": {
+            "base": "c150832ec2ae4ae62b1d28e07ca81c2dced8cf7f",
+            "branch": "workbench/portal-renders-the-verdict",
+            "commit": "404f35799eaa542bacaa2c759512e4113a0a220f",
+            "files": 14
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 594,
+    "verdict": "ALLOW"
+}

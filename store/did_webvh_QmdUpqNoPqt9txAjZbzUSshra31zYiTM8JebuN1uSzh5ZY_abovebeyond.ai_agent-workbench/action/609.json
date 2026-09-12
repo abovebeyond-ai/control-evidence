@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #170 (one test fixture lacked media_set; the hand cannot update a branch).\n\nOne rule for photo URLs: the row says what lies in the bucket, the URL points at that, and nothing is checked against S3 or built while a page renders.\n\n- New column vehicle_photos.media_set: the generation of derived sizes present for the photo (VehicleImageService::SET; 1 = sm in the original's format, 2 = sm as WebP). The migration marks every row that already has a media_version as generation 1.\n- VehicleImageService::url(): derived sizes exist (version + set) -> signed bucket URL for the file of that generation; no derived sizes yet -> the plain file itself (the upload's thumbnail file for a thumb, else the original), signed, from the bucket. The app route is no longer used for views on S3; it stays for old links and local disks. SM_WEBP_SINCE is gone.\n- Every writer of media_version also writes media_set = SET (upload job, blur job, image controller, backfill). stocklist:fotos-afgeleid --maat=<size> selects rows below the current generation, creates the size and stamps the row, so the URLs switch per photo as the run progresses.\n- Tests pin: generation 1 -> -sm.jpg/png, generation 2 -> -sm.webp, version without set counts as 1, no version -> the original.\n- Needs php artisan migrate on staging after merge; on production it is part of cutover step 2 (CUTOVER.md updated).\n\nWhy: #161 bridged old rows through the app route, which built WebP on first request; 69 thumbnails at once saturated PHP-FPM and the detail page answered 504 (#169 was the stopgap).\n",
+            "branch": "workbench/feature/media-set-generations-v2",
+            "title": "Photos: derived generations in the row, URLs follow, no builds while rendering"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912111820-d72067"
+}

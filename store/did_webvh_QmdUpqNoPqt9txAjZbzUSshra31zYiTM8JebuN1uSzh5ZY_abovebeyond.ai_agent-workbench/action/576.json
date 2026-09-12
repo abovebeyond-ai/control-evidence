@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2b8237d3ba2d1bc90dde6f83f27d84ffb003f1c6",
+            "branch": "workbench/ui/header-rows-and-detail-title",
+            "files_sha256": "e749ed5f6925e037e9adad955314e8f03e09c5960688f383cba00e3bd2a69797",
+            "message": "Stocklist header: actions share the row with the types on desktop; detail title no longer clipped on phones, smaller bare switch"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912105515-3f92d3"
+}

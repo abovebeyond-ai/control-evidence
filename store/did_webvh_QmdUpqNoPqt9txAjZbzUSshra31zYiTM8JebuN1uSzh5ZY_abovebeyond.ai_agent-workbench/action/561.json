@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #165 (please close). Production keeps the switch and drops the word in customer mode; same here. The word is kept visually hidden (sr-only) so the control still has a name for screen readers, and the bare switch is vertically centred on a 24px line and flush left, so it lines up with the title.\n",
+            "branch": "workbench/ui/customer-mode-switch-aligned",
+            "title": "Detail header: bare customer-mode switch, aligned"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912103357-81f150"
+}

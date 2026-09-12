@@ -1,0 +1,15 @@
+{
+    "action": "d64bbc8f839e1e704c639a656af6a3bc",
+    "effect": {
+        "detail": {
+            "base": "2b8237d3ba2d1bc90dde6f83f27d84ffb003f1c6",
+            "branch": "workbench/docs/flexlease-question-withdrawn",
+            "commit": "7143a6d12d50c007bec96973cd393262371f567f",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 570,
+    "verdict": "ALLOW"
+}

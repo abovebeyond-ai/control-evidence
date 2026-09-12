@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Third step for `deployed`. One round after abovebeyond-ai/elixir#170 every measured row carries Elixir's verdict (seven projects ok, naviskore staging month, all `source: elixir` in the brief), so the card's own rule goes: the 7 and 2 days in PHP are deleted. A row without a verdict (a stale one from before) shows background with \"not yet\", never ok and never now, because a level made up on a screen is the drift this removes. The launch-list fixture carries a verdict now, as the real staging rows do. Architecture paper updated.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "workbench/the-card-holds-no-number",
+            "title": "The Deployed card holds no number: Elixir's verdict or not judged yet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912112206-f38622"
+}

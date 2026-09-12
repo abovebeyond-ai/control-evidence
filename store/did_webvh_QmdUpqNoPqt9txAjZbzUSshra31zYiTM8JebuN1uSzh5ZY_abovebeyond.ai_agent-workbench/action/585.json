@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The bridge in #161 sent thumbnails of older photo versions through the app route to build the WebP on first request. On staging the detail page of a vehicle with 69 photos fired dozens of those builds at once (each reads the original from S3 and resizes), PHP-FPM ran out of workers and the page itself answered 504.\n\nNow a photo versioned before SM_WEBP_SINCE gets a signed URL to the sm file that already exists in the bucket in the original's format (-sm.png / -sm.jpg): no request reaches PHP. stocklist:fotos-afgeleid --maat=sm still creates the WebP files; afterwards the SM_WEBP_SINCE check goes and every thumbnail is WebP.\n\nafgeleidPad() gets a legacyFormat flag; test updated to pin the existing-file URLs.\n",
+            "branch": "workbench/fix/thumb-bridge-existing-file",
+            "title": "Fix 504 on the detail page: thumbnail bridge without on-demand builds"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912105904-333d76"
+}

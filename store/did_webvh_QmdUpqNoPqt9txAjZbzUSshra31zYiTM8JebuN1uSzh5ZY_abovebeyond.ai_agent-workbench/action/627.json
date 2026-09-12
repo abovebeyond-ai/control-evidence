@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "207c4b3944440f5c68186011548ccbbb9f2fa750",
+            "branch": "workbench/elixir/checker-v0-16-2",
+            "files_sha256": "736bff81c181fba24e5106676a3fd4966f4826670eb5b62c5565347f2cc7e6f5",
+            "message": "The checker at v0.16.2, and the machine's layers held to the release asset"
+        },
+        "resource": "abovebeyond-ai/verify-abovebeyond"
+    },
+    "run": "workbench-20260912112924-e8f1a9"
+}

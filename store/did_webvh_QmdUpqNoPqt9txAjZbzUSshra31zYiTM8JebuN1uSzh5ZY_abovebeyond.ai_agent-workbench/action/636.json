@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "control v0.16.2 is what the machine runs. Its checker reads the layers the attestation now carries: the firmware against Google's signed endorsement, the boot log replayed, and RTMR3 against the gateway's own binary, which this workflow downloads from the same tag and hashes, so the machine is held to the release anyone can fetch. Replaces PR 1, which named v0.14.0 by mistake.",
+            "branch": "workbench/elixir/checker-v0-16-2-b",
+            "title": "The checker at v0.16.2, and the machine's layers held to the release asset"
+        },
+        "resource": "abovebeyond-ai/verify-abovebeyond"
+    },
+    "run": "workbench-20260912112945-d4e75a"
+}

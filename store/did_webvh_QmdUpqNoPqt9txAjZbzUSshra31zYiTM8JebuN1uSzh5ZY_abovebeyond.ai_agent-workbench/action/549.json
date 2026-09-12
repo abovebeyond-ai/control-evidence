@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "FlexLease answered 'The selected fuel is invalid.' for most of our fuel types. Their API (https://peugeotdebacker.flexlease.rent/api/v1/, checked today, no key, no IP restriction) accepts exactly five names, case-sensitive: Benzine, Diesel, Elektrisch, Hybride Benzine, Hybride Diesel. Our list has fifteen ('PHEV Hybride - Benzine', 'MHEV Hybride - Diesel', CNG, LPG, Waterstof, ...).\n\n- FlexLeaseService::fuelFor() maps ours to theirs (any hybrid with benzine/diesel -> Hybride Benzine/Diesel; electric -> Elektrisch); a fuel without an equivalent (CNG, LPG, hydrogen, ethanol) goes out as null so their answer stays 'invalid' and the page says the price is unavailable, rather than pricing a fuel the car does not have. Used in the price call and both PDF calls.\n- Unit test over the whole list.\n- CUTOVER.md: FLEXLEASE_URL with the value, and flexlease in OUTBOUND_ALLOW on staging.\n",
+            "branch": "workbench/fix/flexlease-fuel-names",
+            "title": "FlexLease: fuel names their API accepts"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912101849-aec90a"
+}
