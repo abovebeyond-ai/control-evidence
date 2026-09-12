@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two rotations, signed by the operator on 2026-09-12 with both YubiKeys. Version 8 had left the next key as a file on the Mac; version 9 moved it through, version 10 puts the update key on token 39780275 and the next key on token 39780281. No key of any agent changed. `node scripts/did-webvh.mjs verify` resolves the log.\n\nProposed through the control gateway under #agent-workbench.\n",
+            "branch": "workbench/both-keys-on-tokens",
+            "title": "did:webvh versions 9 and 10: both keys back on the tokens"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260912095024-2a62e2"
+}

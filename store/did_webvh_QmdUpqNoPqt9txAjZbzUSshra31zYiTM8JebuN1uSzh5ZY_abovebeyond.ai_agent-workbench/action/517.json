@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "v0.16.1 closed nothing at boot: the action file beside the interrupted request (step 384 of the workbench) went with the same reset, its name never reached the disk, and the closing step skipped an action it could not name. The record's own claims still say what was judged, the kind from what the grant matched and the resource, so the closing records now take those, carry no parameters, and say in the outcome that the parameters were lost with the same stop. Test added. After this release the one open gap on the public copy closes as an interruption.",
+            "branch": "workbench/elixir/interrupted-without-action",
+            "title": "An interrupted action without its file is still closed, from the record's claims"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912093526-be6422"
+}

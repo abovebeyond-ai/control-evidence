@@ -1,0 +1,4 @@
+{
+    "error": "interrupted: the gateway stopped between the request record and the effect record; whether the effect reached the far end is not recorded; the action's parameters beside the request record were lost with the same stop, kind and resource are taken from the record",
+    "ok": false
+}

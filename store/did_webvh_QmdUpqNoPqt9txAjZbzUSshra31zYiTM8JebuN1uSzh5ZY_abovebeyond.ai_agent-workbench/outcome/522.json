@@ -1,0 +1,15 @@
+{
+    "action": "5d2b8a32b2a5df00c7cf609e59a9db4b",
+    "effect": {
+        "detail": {
+            "base": "95b9a7767d4424c701aef6c849bcab443b4901e7",
+            "branch": "workbench/both-keys-on-tokens",
+            "commit": "71e89f14acc125ffc1fdbd658830a99a6d55dff9",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 520,
+    "verdict": "ALLOW"
+}

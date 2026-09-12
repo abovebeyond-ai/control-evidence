@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "07c99bc4d396fe9df08cc591c5dc37c99263ef7b",
+            "branch": "workbench/elixir/interrupted-without-action",
+            "files_sha256": "9e79a2aba13fa310b1b1bec9d2ea37f639c580c53496459a18527a1fdf5dd8fc",
+            "message": "Een onderbroken handeling zonder haar bestand wordt ook gesloten, uit de claims van het record"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260912093526-be6422"
+}

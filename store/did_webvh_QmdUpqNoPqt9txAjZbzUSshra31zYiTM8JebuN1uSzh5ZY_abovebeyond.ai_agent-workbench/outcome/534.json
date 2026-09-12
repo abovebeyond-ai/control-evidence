@@ -1,0 +1,15 @@
+{
+    "action": "230b0a0162c7d5157fcbec954b0feb85",
+    "effect": {
+        "detail": {
+            "base": "feed73fa87152a66ed4cafd61dc48677ca9fea15",
+            "branch": "workbench/docs/cutover-flexlease-url",
+            "commit": "2cef2a3d32859a87bc0e672f98769cf5660faf9c",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 532,
+    "verdict": "ALLOW"
+}

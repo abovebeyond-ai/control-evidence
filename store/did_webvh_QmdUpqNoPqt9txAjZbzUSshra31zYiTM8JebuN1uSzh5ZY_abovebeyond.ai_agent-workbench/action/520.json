@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "95b9a7767d4424c701aef6c849bcab443b4901e7",
+            "branch": "workbench/both-keys-on-tokens",
+            "files_sha256": "0faf122a1cbaf6888d4af88e8ab3753f4c1084cd1ec4ba7ab335cfb07e8b5402",
+            "message": "did:webvh versions 9 and 10: both keys back on the tokens"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260912095024-2a62e2"
+}
