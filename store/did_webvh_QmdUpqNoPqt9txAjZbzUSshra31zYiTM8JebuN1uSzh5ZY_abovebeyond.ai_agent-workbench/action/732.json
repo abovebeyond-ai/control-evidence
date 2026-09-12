@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Third card, after Deployed and App health, reading the verdicts abovebeyond-ai/elixir#172 writes for this measurement.\n\n- The owner line takes Elixir's `owner` verdict, the gateway line its `gateway` verdict; the per-key rows keep their state word (written by Elixir already) and the card's `keys` facet covers them.\n- The PHP rule next to each line (the 7 and 30) stays as fallback for a row written before Elixir judged, and goes in the follow-up once a round has written verdicts everywhere. While the rule decides, the \"not yet\" Judged line carries no weight.\n- One `Judged` line names the thresholds that fired, worst first.\n\nBehaviour on current rows unchanged. Two new tests; suite green except the worktree-only `BuildStampTest`; PHPStan and Pint clean. Merge elixir#172 first, or in either order, the fallback covers both.\n",
+            "branch": "workbench/keys-judged",
+            "title": "The Credentials card reads Elixir's verdict per party"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912172445-26212b"
+}

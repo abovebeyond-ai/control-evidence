@@ -1,0 +1,15 @@
+{
+    "action": "9320a716965e50b70cc9168b6293a698",
+    "effect": {
+        "detail": {
+            "base": "d5c961f4ac493f25a076e8553c5df9c4f8ddecfb",
+            "branch": "workbench/perf/server-timing-groups",
+            "commit": "3b967bc5b97043f189d98b67c7a01d11850f9901",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 753,
+    "verdict": "ALLOW"
+}

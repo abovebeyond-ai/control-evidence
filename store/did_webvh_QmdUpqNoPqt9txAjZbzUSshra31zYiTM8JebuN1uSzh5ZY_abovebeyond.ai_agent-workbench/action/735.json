@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3a37c04dc2479cef7ae4754b9e25c4ac30255e13",
+            "branch": "workbench/perf/realgarant-out-of-render",
+            "files_sha256": "6eb27ff91add4bda23fdd0e428c8e159ae9000ad92be6a2516aae44304a97f78",
+            "message": "RealGarant: page renders ask only whether it is configured; the AJAX request logs in and hides the block when that fails"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912172728-05b65b"
+}

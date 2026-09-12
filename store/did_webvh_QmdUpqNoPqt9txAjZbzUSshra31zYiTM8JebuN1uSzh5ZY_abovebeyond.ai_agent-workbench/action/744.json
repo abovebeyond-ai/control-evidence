@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #183 (parse error from a careless sed on one line).\n\nFollow-up to #182 (token cache): the login should not be in a page render at all.\n\n- RealGarantService::isConfigured(): consents accepted and the three credentials filled, database only. VehicleRealGarantService::isConfiguredAndValid() adds the vehicle check.\n- StockListController::detail and the StocklistBrowser render use those instead of isConnected(): no HTTP leaves the house while a page renders.\n- The warranty block already fetched its options over AJAX (real-garant.show). That endpoint now does the login; when it fails it answers 204 and the page removes the section, so a dead RealGarant never shows an empty frame.\n",
+            "branch": "workbench/perf/realgarant-out-of-render-v2",
+            "title": "RealGarant login out of the page render"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912172946-ee8419"
+}

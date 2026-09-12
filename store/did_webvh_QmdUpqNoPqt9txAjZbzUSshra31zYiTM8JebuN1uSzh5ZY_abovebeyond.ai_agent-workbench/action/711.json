@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "38266205fe5ab04d48906059a6cd5cda41309b6a",
+            "branch": "workbench/keys-judges",
+            "files_sha256": "1752ffbd74f860c084afb2971cba5a6bea445fa21f193ba5d92a5d452ed48f15",
+            "message": "Credentials judges its own facts, per party that has to open a door"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912171933-bc05a9"
+}

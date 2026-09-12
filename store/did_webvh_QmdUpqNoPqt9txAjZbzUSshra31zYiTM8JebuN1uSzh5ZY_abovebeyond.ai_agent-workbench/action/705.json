@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a6a33cc1e47849e761ea14bec0c9875b1063e8a4",
+            "branch": "workbench/perf/index-vehicle-dealer-exceptions",
+            "files_sha256": "537959b7460eb394b62ba78aa53bdc5159570d544770f8ba930ad4d5bcfabce2",
+            "message": "Index vehicle_dealer_exceptions (vehicle_id, dealer_id): the list query scanned it per candidate vehicle"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912171749-10590a"
+}

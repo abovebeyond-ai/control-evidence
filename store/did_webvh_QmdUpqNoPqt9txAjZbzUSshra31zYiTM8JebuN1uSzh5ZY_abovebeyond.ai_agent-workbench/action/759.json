@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "83d2b28ece3cc27ab0de98afb494696700056494",
+            "branch": "workbench/site-judges",
+            "files_sha256": "dac7360fa4a5cf5184aceaf17ea9daa7ea7450f8ed1466649c311eae24546b14",
+            "message": "Site judges its own facts: up or down, and how long the certificate holds"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912174715-a00a8d"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "1e6c7e10b092ebe5390b34c9964ae67d",
+    "effect": {
+        "detail": {
+            "base": "86c27b3857dca8e4dc8a8251c90be74f5454a4ad",
+            "branch": "workbench/perf/realgarant-token-cache",
+            "commit": "4a611d4f473c9668060731be55644fe58c79cd65",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 723,
+    "verdict": "ALLOW"
+}

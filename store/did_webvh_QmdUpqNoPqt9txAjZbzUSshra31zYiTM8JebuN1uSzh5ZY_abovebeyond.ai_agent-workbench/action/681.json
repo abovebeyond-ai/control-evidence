@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c265a91e0072f62e40f0fd575a8ed54aefc52e6f",
+            "branch": "workbench/perf/server-timing-detail",
+            "files_sha256": "af17e781b255f92c39a40ea6d91673a54d8ba5fabd1802468764b5e74b75631d",
+            "message": "Server-Timing: X-Timing-Detail request header adds the eight slowest queries"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912124039-825188"
+}

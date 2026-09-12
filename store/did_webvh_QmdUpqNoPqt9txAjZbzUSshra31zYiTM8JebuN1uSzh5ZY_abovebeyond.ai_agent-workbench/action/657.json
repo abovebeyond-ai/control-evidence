@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "88d04e80d0e0a04e41df9f4a0f51f3850d71a96d",
+            "branch": "workbench/feature/afgeleid-shard",
+            "files_sha256": "081476404b886f069b815d817d36e4f555f92cef03c23afae6c4b14526b17351",
+            "message": "stocklist:fotos-afgeleid --maat: --shard=i/n to run copies side by side"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912121057-4004e3"
+}

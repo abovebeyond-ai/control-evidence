@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "After #178 the two statements were still 720 to 790 ms each on staging (measured with X-Timing-Detail). The remaining cost was the shape of the query, not indexes:\n\n- GROUP BY vehicles.id on every list query forced a temp table and filesort over the joins; a vehicle can only repeat when the options join is present, so the group is applied only then.\n- paginate() on a grouped query counts with select count(*) from (select vehicles.* ...), materialising every column of every matching vehicle. The list now counts with count(distinct vehicles.id) on a clone without columns and order, then fetches the page and builds a LengthAwarePaginator (same API: total(), hasMorePages()).\n\nI will re-measure after deploy and report.\n",
+            "branch": "workbench/perf/stocklist-count",
+            "title": "Stocklist list: cheaper count and no needless GROUP BY"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912165647-232fdf"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a983102b6a49ce522b7f9ad564c6a93aaaf7ce0f",
+            "branch": "workbench/perf/stocklist-render-n1",
+            "files_sha256": "efe674ac1c85316631d3411c73a1a3631a0237c24955091bda7e0fbcb2221638",
+            "message": "Stocklist render: options with values and group in one go (cached), dealer.country with the cards"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912175508-8f35a6"
+}

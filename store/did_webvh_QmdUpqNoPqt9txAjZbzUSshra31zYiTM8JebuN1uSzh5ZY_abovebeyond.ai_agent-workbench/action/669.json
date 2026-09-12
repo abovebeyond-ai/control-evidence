@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a5c7282d4f2bc85bc2c1fdbb6532688f3ab5e609",
+            "branch": "workbench/perf/server-timing",
+            "files_sha256": "39ec36f4d4d5d0cf3a2e611cae382cda0943282750df357a794ace2c0766c3ed",
+            "message": "Server-Timing header for administrators: total, database time, query count"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912122841-c69659"
+}

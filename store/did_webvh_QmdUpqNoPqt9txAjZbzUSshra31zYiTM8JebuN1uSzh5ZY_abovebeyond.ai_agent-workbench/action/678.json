@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Second card after Deployed (#263), reading the verdicts abovebeyond-ai/elixir#171 writes for `app`.\n\n- Each line whose facet Elixir judged (`scheduler`, `jobs`, `failing`, `queue`, `backlog`, `debug`, `disk`, `cache`, `errors`, `reachable`) takes Elixir's level; the PHP rule next to it stays as fallback for a row written before Elixir judged, and goes in the follow-up PR once a round has written verdicts everywhere.\n- One `Judged` line names the thresholds that fired, worst first (\"scheduler silent for minutes (42) \u00b7 SCHEDULER_LATE\"); \"by Elixir, every facet ok\" when nothing fired; \"not yet\" on an old row. The card's `facet` is the worst one, as for Deployed.\n- New `Failing` line: a job that fails on every run while never late (the 120-runs auto-deploy case) had `failingNames` in the measurement and no line on the card.\n\nBehaviour on current rows is unchanged (no verdicts yet, rules apply). Tests: four new cases in `AppHealthCardTest`. Suite green except the worktree-only `BuildStampTest`; PHPStan and Pint clean.\n\nMerge order: elixir#171 first, then this; the fallback makes either order safe.\n",
+            "branch": "workbench/app-health-judged",
+            "title": "The App health card reads Elixir's verdict per facet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912122923-cf3e0b"
+}

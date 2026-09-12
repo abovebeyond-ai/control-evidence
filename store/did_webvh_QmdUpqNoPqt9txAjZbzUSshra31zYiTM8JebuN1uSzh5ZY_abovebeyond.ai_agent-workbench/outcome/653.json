@@ -1,0 +1,15 @@
+{
+    "action": "078e5aa20a93d41f6968ae14328016b5",
+    "effect": {
+        "detail": {
+            "base": "07ef4c8fef0578408a8c9a54c6adaaefb16dca0e",
+            "branch": "workbench/elixir/paper-12-sept",
+            "commit": "b6e4dcbd97e11fe2a1f480c9bcd2e4858a70fffc",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 651,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "217944e77ab36830bd95010de4031989",
+    "effect": {
+        "detail": {
+            "base": "08f2053ed54dfbbea5c64e6c83f50c4f4d0b6426",
+            "branch": "workbench/elixir/add-keys-at-once",
+            "commit": "6299173eb0c23e4050aa3512238e738f91286e04",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 765,
+    "verdict": "ALLOW"
+}

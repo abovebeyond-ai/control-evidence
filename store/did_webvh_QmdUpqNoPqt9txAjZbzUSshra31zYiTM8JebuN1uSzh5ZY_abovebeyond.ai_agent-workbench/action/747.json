@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fac0a0267b0afc03268b3f5ab41655f8299a0efd",
+            "branch": "workbench/perf/orders-exports-eager",
+            "files_sha256": "a5f7fc1d9d49873bd88b5f2a0d30d8cb1dc7fdb8eecbb0bdea60670b39645955",
+            "message": "Orders and exports overviews: eager-load what a row touches; ShowTransport asked once per request; RealGarant configured, not connected"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912174042-f22cb2"
+}

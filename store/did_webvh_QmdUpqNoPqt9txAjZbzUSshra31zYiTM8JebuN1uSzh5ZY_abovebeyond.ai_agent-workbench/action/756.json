@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "With request header X-Timing-Detail: groups the response carries X-Query-Group-1..12: the statements of the request grouped by shape (bindings stripped), how often each ran and their summed time. Finds an N+1 in one request; /exports still runs 87 queries after #185 and the slowest-eight view does not show which shape repeats.\n",
+            "branch": "workbench/perf/server-timing-groups",
+            "title": "Server-Timing detail: query groups"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912174532-7190cd"
+}

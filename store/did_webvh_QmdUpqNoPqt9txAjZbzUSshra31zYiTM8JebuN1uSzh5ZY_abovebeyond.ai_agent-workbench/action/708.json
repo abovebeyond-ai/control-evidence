@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "EXPLAIN via #180 on the Stocklist list query:\n\n    dealers range Module2 432\n    vehicles ref search_index 55 per dealer\n    vehicle_categories ref category_group_id\n    export_vehicles ref idx_vehicle_id\n    vehicle_dealer_exceptions ALL - 2106 rows  <-- no index at all\n\nThe correlated subquery (select count(dealer_id) from vehicle_dealer_exceptions where vehicle_id = vehicles.id and dealer_id = ?) = 0 runs once per candidate vehicle and scanned the full table each time: that is the 700 ms. One composite index (vehicle_id, dealer_id) answers it from the index. Forge runs the migration on deploy; on production it is part of the migrate step.\n",
+            "branch": "workbench/perf/index-vehicle-dealer-exceptions",
+            "title": "Index on vehicle_dealer_exceptions: the missing one behind the slow list"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912171749-10590a"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "41be169232ab3841ba96d06529879761",
+    "effect": {
+        "detail": {
+            "base": "a5c7282d4f2bc85bc2c1fdbb6532688f3ab5e609",
+            "branch": "workbench/perf/server-timing",
+            "commit": "0ea9d622cc6c5a6d5c9378c3ccfbd75fbc84df98",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 669,
+    "verdict": "ALLOW"
+}

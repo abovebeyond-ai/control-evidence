@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Second measurement to carry verdicts, after `deployed` (#170).\n\n**What moves.** The numbers Portal's Runtime card held for App health are now entries in `Thresholds` with a level, and `AppHealth` judges by them per facet:\n\n| facet | thresholds, worst first |\n| --- | --- |\n| scheduler | `SCHEDULER_STALLED` (>30 min, now), `SCHEDULER_LATE` (>5, week), `SCHEDULER_RUNNING` (ok), `SCHEDULER_NEVER` (v2 app without a beat, week) |\n| jobs / failing | `APP_JOBS_LATE` (week) / `APP_JOBS_FAILING` (week), `APP_JOBS_ON_TIME` / `APP_JOBS_HEALTHY` (ok) |\n| queue | `QUEUE_FAILED_TODAY` (week), `QUEUE_FAILING` (accumulated, month), `QUEUE_CLEAN` (ok) |\n| backlog | `QUEUE_STUCK` (>900 s, week), `QUEUE_MOVING` (ok) |\n| debug | `DEBUG_IN_PRODUCTION` (now), `DEBUG_OFF` (ok) |\n| disk | `DISK_CRITICAL` (<10%, now), `DISK_LOW` (<20%, week), `DISK_FINE` (ok) |\n| cache | `CACHE_UNREACHABLE` (week), `CACHE_REACHABLE` (ok) |\n| errors | `ERRORS_MANY` (>50, week), `ERRORS_SOME` (month), `ERRORS_NONE` (ok) |\n\nSame numbers as the card, so no verdict changes, with one exception that is a fix: the endpoint has sent `queue.failedLast24h` from the start and the scan never carried it over, so every queue with one old failure read as \"accumulated since the start\" (month) and a queue failing right now read the same. Now `queueFailed24h` is a fact and fresh failures are this week.\n\nThree derived facts carry logic that sat in the card: `schedulerNeverBeat`, `debugInProduction`, `errorsSinceRelease` (the release boundary: when every listed error predates the running release, the count stays but the judgement is ok).\n\n**One way to judge.** `Judged::judgements()` is now `facet => threshold names, worst first`, and the new `Judges` trait is the single implementation of `judge()`: first hit per facet wins, a facet whose fact is absent says nothing (a v1 app that sends no disk figure is not an app with a full disk), booleans read as 1 and 0. `Deployed` moved onto it. The catalogue publishes `facet` next to each judgement.\n\nTests: 17 new cases in `AppHealthScanTest`, one per verdict; the catalogue test pins the facet. Suite 585 green, PHPStan and Pint clean.\n\nPortal follows with a PR that reads `verdicts` for `app` when present and keeps its rule as fallback for one release.\n",
+            "branch": "workbench/app-health-judges",
+            "title": "App health judges its own facts; Judges is the one way a measurement judges"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912122716-0de461"
+}

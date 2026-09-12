@@ -1,0 +1,15 @@
+{
+    "action": "f5ea7dd7e5607db11d40d031f6febce9",
+    "effect": {
+        "detail": {
+            "base": "0c3b73700ab6ce65a693ab4cfcddbe6f9c274683",
+            "branch": "workbench/docs/forge-runs-migrations",
+            "commit": "7146a6d65330c2bb5f529117d82236fa2d7d3367",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 645,
+    "verdict": "ALLOW"
+}

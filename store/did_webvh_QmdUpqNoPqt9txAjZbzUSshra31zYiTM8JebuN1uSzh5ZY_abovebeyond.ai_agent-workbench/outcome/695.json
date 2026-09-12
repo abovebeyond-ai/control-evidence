@@ -1,0 +1,15 @@
+{
+    "action": "e63c155751a489ea53a454cee7961c2d",
+    "effect": {
+        "detail": {
+            "base": "477cabe99731a4fc3e84be81904f843ff5550e16",
+            "branch": "workbench/perf/stocklist-count",
+            "commit": "c5649ad610877467884e91b45969ffa3bfc01b9a",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 693,
+    "verdict": "ALLOW"
+}

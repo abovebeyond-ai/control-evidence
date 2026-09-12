@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Third measurement to carry verdicts, after `deployed` (#170) and `app` (#171).\n\n| facet | thresholds, worst first |\n| --- | --- |\n| owner (the token Elixir reads with) | `OWNER_TOKEN_REFUSED` (now), `OWNER_TOKEN_EXPIRING_NOW` (<7 days, now), `OWNER_TOKEN_EXPIRING` (<30, week), `OWNER_TOKEN_VALID` (ok) |\n| gateway (its copy) | `GATEWAY_TOKEN_REFUSED` (now), `GATEWAY_TOKEN_DIFFERS` (week), `GATEWAY_TOKEN_MISSING` (month), `GATEWAY_TOKEN_SAME` (ok) |\n| keys (every key the project acts with) | `CREDENTIAL_REFUSED` (now), `CREDENTIAL_EXPIRING` (<14 days, week), `CREDENTIAL_UNPROVEN` (month), `CREDENTIALS_HONOURED` (ok) |\n\nThe 7 and 30 are Portal's card numbers, copied, so no verdict changes. The four `CREDENTIAL_*` entries existed and only gain a level. The scan's two private constants (14 days, 24 hours) move into the registry as well: the per-row state now reads `CREDENTIAL_EXPIRING` and the new `CREDENTIAL_PROOF_STALE`, so no judgement number is left outside `Thresholds`.\n\nWithout an answer from GitHub there is no word on the owner or the gateway, only on the keys (the row is unproven, so month), as before.\n\nTests: eight new cases in `CredentialsScanTest`, one per verdict. Suite 593 green, PHPStan and Pint clean. Portal follows with the card reading `owner`, `gateway` and `keys`.\n",
+            "branch": "workbench/keys-judges",
+            "title": "Credentials judges its own facts, per party that has to open a door"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912171933-bc05a9"
+}

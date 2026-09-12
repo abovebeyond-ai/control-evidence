@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "07ef4c8fef0578408a8c9a54c6adaaefb16dca0e",
+            "branch": "workbench/elixir/paper-12-sept",
+            "files_sha256": "7d48b521c89e969c5bc15572774948e42a2b151533f12a5234d7f4a960930410",
+            "message": "Architectuurpaper: 12 september, de push door de gateway, de lagen van de machine, drie operationele lessen"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912120625-a1a9c1"
+}

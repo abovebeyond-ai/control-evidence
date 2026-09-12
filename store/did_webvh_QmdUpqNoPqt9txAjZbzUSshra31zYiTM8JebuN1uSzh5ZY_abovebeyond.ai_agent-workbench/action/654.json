@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The paper moves with the architecture. Two of the reasons that held four claims at tier 2 are gone: the branch push is the gateway's (afrodidact PR 22, draft, green, ready, merged), and the sealed machine's measurement is held to published references (Google's firmware endorsement, the replayed boot log, RTMR3 with the gateway's own binary). The watcher is named as a public run, not an outsider's. Three operational facts learned on 12 September are kept with their failure: a reset is a power cut for unsynced attachments, an interrupted action is closed at boot, a token lives in two files on the box.",
+            "branch": "workbench/elixir/paper-12-sept",
+            "title": "Architecture paper: 12 September, the push through the gateway, the machine's layers, three operational lessons"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912120625-a1a9c1"
+}

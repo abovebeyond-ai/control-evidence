@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "06701710264202c8765c47ae08332698cd0a4f92",
+            "branch": "workbench/perf/server-timing-explain",
+            "files_sha256": "e33a67eaa4585707bc9ac65add430f941453ec9faea8ca195846799358c70aa3",
+            "message": "Server-Timing detail: EXPLAIN of the two slowest selects"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912171343-73bcde"
+}

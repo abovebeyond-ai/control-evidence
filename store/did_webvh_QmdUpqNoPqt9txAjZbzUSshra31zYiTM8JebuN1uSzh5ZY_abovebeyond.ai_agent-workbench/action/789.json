@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b81b84ac5d057ccc1caa30cd47df85df571190d2",
+            "branch": "workbench/perf/timing-segments",
+            "files_sha256": "5d6ac960ed38747fbefe792404b784219b37c0648e53192396d031f33495a132",
+            "message": "Timing segments in Server-Timing; the Stocklist render marked in five steps"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912180017-94ca1e"
+}

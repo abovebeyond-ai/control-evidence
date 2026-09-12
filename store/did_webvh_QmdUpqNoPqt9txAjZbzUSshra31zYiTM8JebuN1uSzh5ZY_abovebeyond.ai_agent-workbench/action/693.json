@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "477cabe99731a4fc3e84be81904f843ff5550e16",
+            "branch": "workbench/perf/stocklist-count",
+            "files_sha256": "bb67a9c2a9e2f5251c44e7afeb3b7a940da08c510ac2e8c1d2be52d9ccfec469",
+            "message": "extendedSearch: group only with the options join; count(distinct id) instead of a materialised count subquery"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912165647-232fdf"
+}

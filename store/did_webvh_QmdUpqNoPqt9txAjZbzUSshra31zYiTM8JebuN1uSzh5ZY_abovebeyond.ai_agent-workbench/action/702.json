@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "With X-Timing-Detail the response also carries X-Explain-1 and X-Explain-2: the MariaDB plan of the two slowest SELECTs (table, access type, key, rows, extra per step). Needed because after #178 and #179 the two list statements still take 700 ms each and the SQL text alone does not say which step scans.\n",
+            "branch": "workbench/perf/server-timing-explain",
+            "title": "Server-Timing detail: query plans"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912171343-73bcde"
+}

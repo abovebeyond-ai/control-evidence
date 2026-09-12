@@ -1,0 +1,15 @@
+{
+    "action": "987b5b11778e8acf2f681e78bdb4212e",
+    "effect": {
+        "detail": {
+            "base": "3a37c04dc2479cef7ae4754b9e25c4ac30255e13",
+            "branch": "workbench/perf/realgarant-out-of-render-v2",
+            "commit": "fde66cf9449b0dffc5709f8871f4ff624a48e03a",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 741,
+    "verdict": "ALLOW"
+}

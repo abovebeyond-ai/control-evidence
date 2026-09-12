@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "CLAUDE.md said Forge does not run migrations; it does (migrate --force in the deploy script, confirmed on staging today). The photo URL paragraph now describes the media_set rule from #173. CUTOVER.md keeps the manual migrate after the fresh import as the one that matters.\n",
+            "branch": "workbench/docs/forge-runs-migrations",
+            "title": "Docs: Forge runs migrations on deploy"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912120423-6caf50"
+}

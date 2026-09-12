@@ -1,0 +1,15 @@
+{
+    "action": "95cd5be866b5eb55aeebab0c45e6eb83",
+    "effect": {
+        "detail": {
+            "base": "a3c01317e4de560dac7ae1aed76943845973c757",
+            "branch": "workbench/app-health-rule-out",
+            "commit": "d3cb17c52662e4a3d7205d0a6813f98a39235f1a",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 717,
+    "verdict": "ALLOW"
+}

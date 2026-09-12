@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "After #188 the Stocklist render is 27 queries and 80 ms database, but 400 ms app. To see where the PHP goes, App\\Support\\Timing books named segments (mark/measure) that the ServerTiming middleware appends to the header for administrators. The StocklistBrowser render is marked in five steps: before_render (boot, hydration), facets_and_histograms, search, card_relations, rest_of_render; what remains up to app is the Blade view and Livewire's dehydration.\n",
+            "branch": "workbench/perf/timing-segments",
+            "title": "Server-Timing: named segments, Stocklist render instrumented"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912180017-94ca1e"
+}

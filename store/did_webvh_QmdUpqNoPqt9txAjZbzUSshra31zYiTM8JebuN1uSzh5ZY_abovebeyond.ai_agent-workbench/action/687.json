@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1358a1ee7de06597521f0095a3eeeead5f682f22",
+            "branch": "workbench/perf/stocklist-query",
+            "files_sha256": "4eb708dc3847594916dc0d2bd26ffc74f5ef8ac44404f5df54736e0e6f9ae255",
+            "message": "Stocklist and bidding lists: drop the test-phase photo-migration filter, compare DATE columns without date()"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912124537-815b34"
+}

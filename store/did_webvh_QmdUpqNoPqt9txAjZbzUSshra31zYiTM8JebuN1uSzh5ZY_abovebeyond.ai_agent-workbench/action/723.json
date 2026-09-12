@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "86c27b3857dca8e4dc8a8251c90be74f5454a4ad",
+            "branch": "workbench/perf/realgarant-token-cache",
+            "files_sha256": "b5833e518a92a7f3ded953164df09eb897e4a9cf03e7689e7369a7f78d8b9ce2",
+            "message": "RealGarant: cache the session token per dealer for fifteen minutes"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912172404-3804fc"
+}

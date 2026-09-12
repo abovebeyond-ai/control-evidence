@@ -1,0 +1,15 @@
+{
+    "action": "ab641f7e6a01076e5f3537a0d864a021",
+    "effect": {
+        "detail": {
+            "base": "b81b84ac5d057ccc1caa30cd47df85df571190d2",
+            "branch": "workbench/perf/timing-segments",
+            "commit": "09fca32ebf97fe10297fce3cc22484e3f00e7616",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 789,
+    "verdict": "ALLOW"
+}

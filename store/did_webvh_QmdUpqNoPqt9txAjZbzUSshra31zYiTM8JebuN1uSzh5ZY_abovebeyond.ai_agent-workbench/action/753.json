@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d5c961f4ac493f25a076e8553c5df9c4f8ddecfb",
+            "branch": "workbench/perf/server-timing-groups",
+            "files_sha256": "5ccaf7659003408b557e9bcdb9805e2349de90a51a4752924ca2de5fd69bf153",
+            "message": "Server-Timing detail: X-Timing-Detail: groups lists statements by shape with counts (N+1 finder)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912174532-7190cd"
+}

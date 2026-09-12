@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "X-Timing-Detail: groups on the Stocklist list render (66 queries): 25x option_values, 8x option_groups, 7x countries. The options filter panel printed each option's values and group lazily; the card prices ask dealer->country for the VAT conversion. Options now load with values and group and sit in the facet cache; dealer.country joins the card eager load. Expected: about 26 queries per render.\n",
+            "branch": "workbench/perf/stocklist-render-n1",
+            "title": "Stocklist render: the remaining N+1s (options panel, dealer country)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912175508-8f35a6"
+}

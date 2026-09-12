@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6147b54eeb0a4b4506c84b60d3d7475cefe4daf0",
+            "branch": "workbench/feature/media-set-generations-v4",
+            "files_sha256": "4d96a572a8dc3fc6c5b6063c4c8e92cbcb4b1c85ee6b0e8559a8d81d17121580",
+            "message": "Photos: the row says which derived generation lies in the bucket (media_set); URLs follow it, nothing is built while rendering"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912113802-c3338c"
+}

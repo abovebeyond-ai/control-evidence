@@ -1,0 +1,15 @@
+{
+    "action": "a0f95758e19e5c6c2f528e15ec8af920",
+    "effect": {
+        "detail": {
+            "base": "a6a33cc1e47849e761ea14bec0c9875b1063e8a4",
+            "branch": "workbench/perf/index-vehicle-dealer-exceptions",
+            "commit": "560c043ebc71f68148b8648392e276db7455b4f3",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 705,
+    "verdict": "ALLOW"
+}

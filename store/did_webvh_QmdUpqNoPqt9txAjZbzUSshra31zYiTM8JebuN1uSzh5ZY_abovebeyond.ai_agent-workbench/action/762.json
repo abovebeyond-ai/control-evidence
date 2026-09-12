@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fourth measurement to carry verdicts, after `deployed`, `app` and the keys.\n\n| facet | thresholds, worst first |\n| --- | --- |\n| reachable | `IS_DOWN` (status outside 200..399, now), `IS_UP` (ok) |\n| certificate | `TLS_CRITICAL` (<8 days, now), `TLS_EXPIRING` (<21, week), `TLS_HEALTHY` (ok) |\n\n`IS_UP` was always the one truth about \"up\"; `IS_DOWN` is its complement, through a new operator `outside` in `Thresholds::reaches()` and in `Report\\Gate`, so that down is a word Elixir says rather than the absence of one. A site that does not answer (status 0) is down the same way. The 8 is Portal's card number, copied; 21 was already here.\n\nNo certificate is no verdict on it (plain http, or a certificate we failed to read), as the facts already worked.\n\nTests: six cases in `SiteScanTest`; the catalogue test and the \"no level\" test moved to `dns`, which still does not judge. Suite 599 green, PHPStan and Pint clean. Portal follows: the Site card reads `reachable` and `certificate`, and `ElixirRegistry` learns `outside` for the day it reads such an entry.\n",
+            "branch": "workbench/site-judges",
+            "title": "Site judges its own facts: up or down, and how long the certificate holds"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260912174715-a00a8d"
+}

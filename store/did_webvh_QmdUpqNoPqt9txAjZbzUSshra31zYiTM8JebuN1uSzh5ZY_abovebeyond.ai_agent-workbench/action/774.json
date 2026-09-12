@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fourth card, reading the verdicts abovebeyond-ai/elixir#173 writes for `site`.\n\n- The Response line takes Elixir's `reachable` verdict (`IS_UP` or `IS_DOWN`), the Certificate line its `certificate` verdict (`TLS_CRITICAL`, `TLS_EXPIRING`, `TLS_HEALTHY`). The 8 next to it stays as fallback for a row written before Elixir judged, and goes in the follow-up.\n- The minute watch (\"Watched\") and the uptime history are Portal's own store, computed from the ticks, and keep their own words; they are not part of the `site` measurement's facts.\n- `ElixirRegistry::reaches()` learns the operator `outside` that `IS_DOWN` uses.\n- One `Judged` line names the thresholds that fired.\n\nThree tests in a new `SiteCardTest`. Suite green except the worktree-only `BuildStampTest`; PHPStan and Pint clean. Either merge order works.\n",
+            "branch": "workbench/site-judged",
+            "title": "The Site card reads Elixir's verdict on reachability and the certificate"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912174845-b5843e"
+}

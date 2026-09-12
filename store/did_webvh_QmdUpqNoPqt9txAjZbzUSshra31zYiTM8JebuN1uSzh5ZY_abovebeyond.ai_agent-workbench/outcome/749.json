@@ -1,0 +1,15 @@
+{
+    "action": "f1ab6f94b5b80a4c9922ac407a5fc3b0",
+    "effect": {
+        "detail": {
+            "base": "fac0a0267b0afc03268b3f5ab41655f8299a0efd",
+            "branch": "workbench/perf/orders-exports-eager",
+            "commit": "e1f65872eeda6c662accb356451e4f8466749717",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 747,
+    "verdict": "ALLOW"
+}

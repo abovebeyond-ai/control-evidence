@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a3c01317e4de560dac7ae1aed76943845973c757",
+            "branch": "workbench/keys-judged",
+            "files_sha256": "c04c8be9b022ddb6a5ccb19a1211d46656ab73af1f80db06fc7522089abcdd9b",
+            "message": "The Credentials card reads Elixir's verdict per party"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260912172445-26212b"
+}

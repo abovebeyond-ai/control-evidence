@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0c3b73700ab6ce65a693ab4cfcddbe6f9c274683",
+            "branch": "workbench/docs/forge-runs-migrations",
+            "files_sha256": "39e5978a51cb0b76de60c710ed93605e666381fbba5ec2bd484424d8e000977f",
+            "message": "Docs: Forge runs migrate --force on deploy; photo URL rule updated for media_set"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912120423-6caf50"
+}

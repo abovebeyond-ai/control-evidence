@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Sweep with Server-Timing over 49 pages: two overviews stood out.\n\n- /orders and /orders/sold: 819 ms and 225 ms, 178 queries for twenty rows. Each row loaded relation, vehicle, manufacturer, model, creating user, the latest transport, the contract and summed the extras, all lazily; ShowTransport counted the dealer's transport settings per row; and the controller logged in at RealGarant. Now: one eager load of those relations, extra_price from the loaded relation, ShowTransport memoised per dealer for the request, isConfigured() instead of a login.\n- /exports (classic bidding list): 326 ms, 135 queries. Rows touched vehicle.primary_photo, the winning bid and the highest bid with dealer or merchant, lazily. Eager-loaded.\n\nExpected: both under 120 ms and under 40 queries. I re-measure after deploy.\n",
+            "branch": "workbench/perf/orders-exports-eager",
+            "title": "Orders and exports overviews: 178 and 135 queries to a handful"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260912174042-f22cb2"
+}
