@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The 06:44 run broke because this workflow held the machine's RTMR3 to the binary of its own checker tag, v0.16.3, while the machine ran v0.16.2. Since control v0.16.4 the checker reads the release from the machine's newest record, fetches that asset, and holds it to the sha256 the record names and RTMR3 to its SHA-384. The download step goes; the checker tag here no longer has to match the machine.",
+            "branch": "workbench/elixir/release-from-record",
+            "title": "The checker at v0.16.4 reads the machine's release from its records"
+        },
+        "resource": "abovebeyond-ai/verify-abovebeyond"
+    },
+    "run": "workbench-20260913065520-55a0c7"
+}

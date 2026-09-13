@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7b40e888424dc2a5d5c4cd91b6609f76b3af966b",
+            "branch": "workbench/feature/customer-mode-price",
+            "files_sha256": "e4e13abd104ee828c4ae1ff99e2daaeb358160ec524298b23b4790f894109739",
+            "message": "Customer-mode price: one class reproducing every screen's number; the differences become X-77 and V-10"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913072951-ac8c9c"
+}

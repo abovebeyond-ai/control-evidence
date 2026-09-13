@@ -1,0 +1,15 @@
+{
+    "action": "b9fc68d422781235efa375b54bcf3e67",
+    "effect": {
+        "detail": {
+            "base": "273fd94d544daa4622bf68f10fd613a9cb644998",
+            "branch": "workbench/round-120-log",
+            "commit": "52baef15b5f87d89981faa565f5abb05cdc8f157",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1143,
+    "verdict": "ALLOW"
+}

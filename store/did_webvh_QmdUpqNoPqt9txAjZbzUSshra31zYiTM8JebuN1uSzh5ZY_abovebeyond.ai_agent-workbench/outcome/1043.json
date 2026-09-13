@@ -1,0 +1,15 @@
+{
+    "action": "31f3f0029115c0081c6b69c187612efb",
+    "effect": {
+        "detail": {
+            "base": "b80fee1544df3a09108f5909c8ba3ec0220bedfd",
+            "branch": "workbench/feature/offer-pricing",
+            "commit": "391d4204aeb017cbb9af43a6d014eb852e1556c9",
+            "files": 10
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1041,
+    "verdict": "ALLOW"
+}

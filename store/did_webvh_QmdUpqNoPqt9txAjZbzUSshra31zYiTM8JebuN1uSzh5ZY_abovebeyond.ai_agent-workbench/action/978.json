@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Creating an offer felt slow: the PDF asked getImageBinary(thumbnail_path, 'md') for every photo of the vehicle. A thumbnail file has no derived sizes, so the service built one per photo per PDF (download, resize, encode, write back to the bucket), about half a second each, thirty photos per offer. The thumbnail is already the size a photo page needs and is now read as it is. The other reads pass the photo's media_version so the service does not HEAD the bucket per photo to find one. Same path serves order PDFs through the shared partials.\n\nNo offer exists on the test dealer to measure with; please time one after deploy.\n",
+            "branch": "workbench/perf/offer-pdf-images",
+            "title": "Offer PDF: no derived build per photo"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913061020-a087f9"
+}

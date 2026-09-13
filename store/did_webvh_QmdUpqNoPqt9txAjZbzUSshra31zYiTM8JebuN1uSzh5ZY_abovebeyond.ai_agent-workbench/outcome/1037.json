@@ -1,0 +1,15 @@
+{
+    "action": "ee1dcb300415df8073368ebfe91f0480",
+    "effect": {
+        "detail": {
+            "base": "03c1321815e49d9ad717594dc571befac595a33a",
+            "branch": "workbench/seven-judges",
+            "commit": "208182872a2f9b271803fe72090dafb6a258ed1f",
+            "files": 12
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1035,
+    "verdict": "ALLOW"
+}

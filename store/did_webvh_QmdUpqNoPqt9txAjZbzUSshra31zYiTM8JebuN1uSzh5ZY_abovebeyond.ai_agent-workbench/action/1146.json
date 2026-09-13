@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "One line in rounds.txt: push 120 (the review page from proveml #44, a judged reading unfolds when its mark is clicked). Measure 267 own statements unanswered, bound 336.",
+            "branch": "workbench/round-120-log",
+            "title": "Round log: push 120"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260913072656-ad9d7f"
+}

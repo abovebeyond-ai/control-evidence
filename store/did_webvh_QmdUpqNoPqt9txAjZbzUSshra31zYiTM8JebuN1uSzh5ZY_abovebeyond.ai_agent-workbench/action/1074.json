@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Reads the verdicts abovebeyond-ai/elixir#181 writes for `consent`, `dns`, `exposure`, `forge`, `search`, `git` and `deps`. With this, every card on the dashboard renders Elixir's verdict and the brief says `source: elixir` for every measurement.\n\n- Consent (trackers, mode, banner, assets), DNS (records, changes) and Mail authentication (spf, dmarc, fragile), Exposure (paths, headers, probes), Forge (scheduler, deploy, healthcheck), Search traffic (clicks), Git (activity, pushed, tree), Dependencies (stack): each judged line takes Elixir's word; the mapping next to it stays as fallback for an older row. One Judged line per card.\n- `MEASUREMENT_KEYS` gains Mail authentication, Git and Dependencies, so the brief and the tasks carry key and facet for them too.\n- Found on the way: the Git card's unreachable Node-era path (deleted; the own measurement was already the only branch), and `Progress` counting a measurement once per card that reads it, which promised four crawls where one runs.\n\nTwo tests in `SevenCardsTest`. Suite green except the worktree-only `BuildStampTest`; PHPStan and Pint clean. Either merge order works.\n",
+            "branch": "workbench/seven-judged",
+            "title": "The last seven cards read Elixir's verdict per facet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913065642-977d37"
+}

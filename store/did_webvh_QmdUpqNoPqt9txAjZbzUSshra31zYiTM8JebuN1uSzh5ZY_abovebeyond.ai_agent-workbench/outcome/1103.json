@@ -1,0 +1,10 @@
+{
+    "action": "6bc525d104ebfc65a8d6920ba003c405",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on ShaneDeconinck/portal",
+    "step": 1101,
+    "verdict": "DENY"
+}

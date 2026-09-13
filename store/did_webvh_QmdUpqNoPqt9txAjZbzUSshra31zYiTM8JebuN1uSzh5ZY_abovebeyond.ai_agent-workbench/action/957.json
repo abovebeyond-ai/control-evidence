@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2f339fce9cbcedd0b90386fb9074aac072177f26",
+            "branch": "workbench/vitals-judged",
+            "files_sha256": "f64c9fb75c1341b94b46ffbf2c94971c2c3315090f566b7a76bdc2ad256d15ce",
+            "message": "The Core Web Vitals card reads Elixir's verdict per facet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913060345-a4dd50"
+}

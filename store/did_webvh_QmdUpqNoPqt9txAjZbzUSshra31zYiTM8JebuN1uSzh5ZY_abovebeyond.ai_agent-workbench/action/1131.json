@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "67a570d955f14322b78ed2acd2a9e0470a81c5c7",
+            "branch": "workbench/reopen-judged-reading",
+            "files_sha256": "726b2a2a528d4f2a20d4bc15d69ca72edb856941067cfbe6b57686889c1f94fa",
+            "message": "Reviewpagina: een beoordeelde lezing klapt weer open als je haar mark in de tekst aanklikt\n\nEen beoordeelde lezing ligt gevouwen op haar kop in het paneel. Wie in de tekst op de mark klikt (een goedgekeurde citatie, een gebonden getal) vraagt haar terug te zien: de passage, de vraag, het oordeel. Tot 13 september 2026 scrolde het paneel wel naar de kop, maar bleef die dicht."
+        },
+        "resource": "abovebeyond-ai/proveml"
+    },
+    "run": "workbench-20260913072217-0d22b0"
+}

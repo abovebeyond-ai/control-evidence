@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "37b788681464a1e2ecf34867168d4e8138a57655",
+            "branch": "workbench/workbench-capability-portal",
+            "files_sha256": "e87569efbbe73161de2aed54119feb97251af0b97d868ee7a3ba85a7baa0a791",
+            "message": "Werkbank-capability: ook de schrijfacties op Portal, op de resource portal:<slug>; een project zonder repo krijgt er ook een\n\nHet woord van de operator voor de werkbank noemde push en pull request op de repository van het project. Sinds control#38 schrijft de werkbank ook naar Portal door de gateway (update, uren, kost, projectveld, taakstatus, meet- en playbook-aanvraag), dus de capability noemt nu ook die zeven kinds en het project zelf als resource portal:<slug>. Een project zonder repository werd geweigerd omdat er niets te noemen was; een project zonder code heeft wel updates, dus het krijgt een capability die alleen het project noemt. Voor de playbooks verandert niets: die draaien in een repository."
+        },
+        "resource": "ShaneDeconinck/portal"
+    },
+    "run": "workbench-20260913070207-7ed5ce"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2b7cc1e9aa0dfdd63184d5b75480e01d3d919b41",
+            "branch": "workbench/workbench-portal-kinds",
+            "files_sha256": "bfbd345712f764bfeec1f81c6262ad09bda10f40d49dabe4108a98183c477ad4",
+            "message": "Werkbank-grant: ook wat een sessie naar Portal schrijft, op de resource portal:<slug>\n\nDe grant van #agent-workbench kende push en pull request. Wat een sessie op de Mac naar Portal schreef (een update, uren, een kost, een projectveld, een taakstatus, een meet- of playbook-aanvraag) ging rechtstreeks op het owner-token, zonder record; sinds control#38 heeft de gateway daar een adapter voor. De grant noemt nu de zeven portal.*-kinds en elk project van Portal als resource portal:<slug>, met of zonder repository: een project zonder code heeft ook updates. Nooit een project aanmaken en nooit een token uitgeven; dat blijft artisan, in de hand van de operator."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913065856-84b24c"
+}

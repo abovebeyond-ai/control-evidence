@@ -1,0 +1,15 @@
+{
+    "action": "6e37a87724e90829e1b7f13a8554eb26",
+    "effect": {
+        "detail": {
+            "base": "9cc19938c5d674ff2716b4c56e115b1bcd18a4ad",
+            "branch": "workbench/perf/showroom",
+            "commit": "88b81e4b95dfef283afe686a47da8da7420e5342",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1083,
+    "verdict": "ALLOW"
+}

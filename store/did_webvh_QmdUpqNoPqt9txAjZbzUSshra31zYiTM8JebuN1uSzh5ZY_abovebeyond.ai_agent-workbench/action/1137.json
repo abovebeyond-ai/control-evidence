@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "769004d51ac9761fbdcab50587b98c619155a119",
+            "branch": "workbench/tests-on-every-push",
+            "files_sha256": "6d5a5e0d01f7789d8ab677a26d4ea01cb6bd53b03985493b7a2a8113ff6fc0a8",
+            "message": "CI: de tests op elke push en pull request, op Node 20 en 24\n\nTot nu draaiden de tests alleen op een tag, als poort voor de release; een pull request kon groen gemerged worden zonder dat iets buiten de laptop van de indiener ze had gezien. Dezelfde stappen als release.yml zonder de publicatie."
+        },
+        "resource": "abovebeyond-ai/proveml"
+    },
+    "run": "workbench-20260913072614-bb212c"
+}

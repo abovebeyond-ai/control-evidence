@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "- `App\\Support\\OfferPricing`: the price calculation printed on offers and orders, in one tested class. price/discount/extras/advance/takeover, exclusive = inclusive / (1 + vat%), final price, total before takeover, price after takeover, total to pay with the RealGarant lines (own VAT rate) added as they are. The template only prints; the ten inline formulas and the `<?php $total += ?>` blocks are gone; rows, labels and rounding unchanged.\n- `tests/Unit/OfferPricingTest`: pins the numbers the template produced (VAT vehicle at 21%: 25000 - 500 + 1210 = 25710 incl / 21247.93 excl, before takeover 23710 / 19595.04, after takeover 15710 / 12983.47; margin vehicle 8250 - 250 + 300 - 1000 - 1500 = 5800; total to pay 10000 + 374.93 + 90.00 = 10464.93; zero discount; stored percentage beats the fallback). @rule S4-3.9..3.12.\n- Migration: nullable `vat_percentage` decimal(5,2) on `offers` and `orders`; set in OfferController::create and both OrderController create paths from the dealer's percentage. `OfferPricing::for($doc, $fallback)` uses the stored value, older documents fall back to the signed-in dealer's percentage as the template always did. The Spoticar page-2 figures use the same stored value.\n- Docs: S4-3.9..3.12 point at OfferPricing; finding X-73 (percentage came from the signed-in user at print time; now fixed at creation) in 90-x-bevindingen.md; question V-9 (X-73) for Ilse in acceptatietest.md (old documents: today's percentage, or backfill the percentage of the time); 92-testdekking regenerated.\n\nPreserved on purpose (looked odd, kept byte-identical): in the VAT branch the advance row prints the label \"Voorschot:\" on both the excl and incl line, the other rows only once; in the margin branch the advance and takeover rows have an empty third cell instead of \"alles inclusief\"; the takeover vehicle / quick description block is hidden for offers in the margin branch but shown for offers in the VAT branch; discount rows appear only when > 0 while advance and takeover rows always appear.\n",
+            "branch": "workbench/feature/offer-pricing",
+            "title": "Offer pricing: one tested class, VAT percentage stored on the document"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913064620-38db2a"
+}

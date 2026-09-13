@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## The workbench capability names the writes to Portal\n\nThird piece of the same handshake, after abovebeyond-ai/control#38 (the Portal adapter) and abovebeyond-ai/elixir#182 (the grant). The gateway requires a submission's kind and resource to be in both the grant and the capability, so Portal's capability for `workbench` now names the seven `portal.*` kinds and the project as `portal:<slug>`, next to the repository.\n\n- A project without a repository used to get a 409 (\"nothing to name\"); the workbench writes to Portal about such a project too, so it now gets a capability naming the project alone. The playbooks keep their repository requirement.\n- Tests: kinds and resources of the workbench capability; the repository-less project; the per-hand verbs table.\n\nFull suite: 505 of 506 pass; `BuildStampTest` fails identically on `main` in a fresh checkout (it wants a build stamp the deploy writes) and is unrelated.\n",
+            "branch": "workbench/workbench-capability-portal",
+            "title": "Workbench capability: the writes to Portal, and a project without a repository"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913070259-b2b89e"
+}

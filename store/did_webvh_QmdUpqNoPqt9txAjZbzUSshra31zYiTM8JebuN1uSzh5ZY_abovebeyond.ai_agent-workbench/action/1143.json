@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "273fd94d544daa4622bf68f10fd613a9cb644998",
+            "branch": "workbench/round-120-log",
+            "files_sha256": "119623a46c0e01181fcced3821b6fdccbf9bc2e357489741cb7321b0500d906f",
+            "message": "Rondelog: push 120, de beoordeelde citatie klapt weer open (proveml #44)"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260913072656-ad9d7f"
+}

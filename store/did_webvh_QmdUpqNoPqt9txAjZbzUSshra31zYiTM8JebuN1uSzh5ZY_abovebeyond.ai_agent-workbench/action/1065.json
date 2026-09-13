@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9cc19938c5d674ff2716b4c56e115b1bcd18a4ad",
+            "branch": "workbench/feature/integration-smoke-wt",
+            "files_sha256": "3042a4be770a63eb58c0b9472c9f22531e991d94193158aa54f4164d59183a3e",
+            "message": "stocklist:smoke: one read per integration, one line each; daily at 07:10; cutover step"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913065525-941732"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A second machine, control-gateway-rehearsal, created from the pinned image with the v0.16.2 boot script, the production configuration carried and the machine set to dry: up in under two minutes, its own key, tokens from Secret Manager, attested, served, all layers holding through Google's tunnel. MRTD and RTMR0 to RTMR2 byte for byte the production machine's; RTMR3 the same release binary. Deleted after. The rehearsal found the third thing the production machine had by hand and the create step did not set: the network tag the firewall rule for the tunnel range names. docs/rebuild.md records the rehearsal and what remains unrehearsed (the key replacement ceremony, the change of name); conformance/machine-image.md records the reference values reproduced once.",
+            "branch": "workbench/elixir/rebuild-rehearsed",
+            "title": "The rebuild rehearsed: a second machine from the same image gives the same registers; create sets the network tag"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913063650-fdb639"
+}

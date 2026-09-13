@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## The workbench may write to Portal, through the gateway\n\nFollows abovebeyond-ai/control#38 (the Portal adapter). The grant of `#agent-workbench` gains the seven `portal.*` kinds and, per Portal project, the resource `portal:<slug>`, repository or not: a project without code still has updates. `max_per_kind` stays 1, so one run is one write; creating a project and issuing a token stay out of the grant (artisan, the operator's hand).\n\nNothing else changes: `control-service` writes the new grant into `control/config.json` on its next minute; `rehearse.sh config` plus a reboot carry it to the VM, and `startup.sh` (control#38) then fetches `control-portal-token` because a `portal:` resource is named.\n\nTest: the grant test now lists the kinds and asserts a project without a repository appears as a Portal resource. Control suites: 64 passed. Pint clean.\n",
+            "branch": "workbench/workbench-portal-kinds",
+            "title": "Workbench grant: the writes to Portal, on portal:<slug>"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913065856-84b24c"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Eighth measurement to carry verdicts.\n\n| facet | thresholds, worst first |\n| --- | --- |\n| running | `SERVER_STOPPED` (week), `SERVERS_RUNNING` (ok) |\n| backups | `BACKUPS_MISSING` (week), `BACKUPS_ON` (ok) |\n| sizing | `SERVERS_OVERSIZED` (background), `SERVERS_FIT` (ok) |\n\nThree counts over the project's machines make these registry matters (`serversStopped`, `serversNoBackup`, `serversOversized`); `serversNoBackup` was a threshold field nothing measured, it is measured now. Each machine carries `oversized: true` when the registry's `SERVER_OVERSIZED` fires on its thirty-day peak, so the Servers card maps a word; a machine whose meter could not be read carries no mark.\n\nLevels copied from Portal's Servers and Backups cards. Tests: two cases in `ServersScanTest`. Suite 613 green, PHPStan and Pint clean. Portal follows with Servers, Backups and the CPU lines in Speed reading the words.\n",
+            "branch": "workbench/servers-judges",
+            "title": "Servers judges its own facts: running, backed up, sized to their load"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913060831-6579b7"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The last seven measurements to judge their own facts. With these every measurement that has a card judges in Elixir, and the fleet brief says `source: elixir` for all of them.\n\n| measurement | facets |\n| --- | --- |\n| consent | trackers (week), mode (week), banner (week), assets (month); mode and banner only on a site that tracks |\n| dns | records (no address: now), changes (month, only with a previous reading), spf (month), dmarc (conflict month, missing month, monitoring background), fragile (month, only when it fires) |\n| exposure | paths (now), headers (CSP or HSTS month, others background), probes (inconclusive background); no word on paths on a catch-all site |\n| forge | scheduler (missing or wrong: week), deploy (failed: now), healthcheck (missing: month) |\n| search | clicks (a quarter lost against the previous window: month; the 25 sat in Portal's card) |\n| git | activity (quiet over 30 days: background), pushed (unpushed: month), tree (dirty: background) |\n| deps | stack (a major behind: background) |\n\nDerived facts carry what the cards computed in PHP: `consentModeMissing`, `consentBannerMissing`, `aRecords`, `dnsChanges`, `dmarcMonitoring`, `heavyHeadersMissing`, an explicit `inconclusive`, `schedulerIssues`, `clicksDeltaPct`. Existing entries gain a level; `MAIL_FRAGILE` and `MAIL_DMARC_CONFLICT` had none.\n\nTests: `SevenJudgesTest` pins the ladders; the exposure tests now read `inconclusive` as a stated fact. Suite 622 green, PHPStan and Pint clean. Portal follows with the seven cards reading these facets (Consent, DNS, Mail authentication, Exposure, Forge, Search traffic, Git, Dependencies).\n",
+            "branch": "workbench/seven-judges",
+            "title": "The last seven measurements judge their own facts"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913064555-06bf23"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Makes main green after #213 (merged with a red CI). Four failures, four causes:\n\n- ExportVehicleWindowsTest x2: the model used floor() on Carbon 3's float diff, while Delta's templates on Carbon 2 got an integer (truncated toward zero): on the end day the counter reads 1, not 0, and twelve days after the end the winner counter reads 3, not 2. The model now truncates (`wholeDaysUntil`), pinned against `cutover-baseline` (export/index.blade.php line 111 and 121 there); the tests describe that behaviour.\n- RulesCoverageTest: the edited B1-6.2 row had lost its status cell, so the tool no longer recognised the rule the new test tags. Restored (`| code |`).\n- UiApiUsageTest: the setWinner error handler had an `alert()` fallback; `ui.notify` only.\n\nNo other change.\n",
+            "branch": "workbench/fix/bidding-windows-green",
+            "title": "Green main: bidding window arithmetic as the old templates, no alert(), rule row restored"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913073054-d11bb7"
+}

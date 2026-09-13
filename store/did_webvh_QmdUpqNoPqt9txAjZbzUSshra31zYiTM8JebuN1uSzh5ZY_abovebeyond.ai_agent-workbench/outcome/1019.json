@@ -1,0 +1,15 @@
+{
+    "action": "b2a0d7f21b3d0342f0ccc02bc802e629",
+    "effect": {
+        "detail": {
+            "base": "8a313586e9b1363a9a6bd413bcbeb438a0465469",
+            "branch": "workbench/elixir/rebuild-rehearsed",
+            "commit": "af7fe9817e44fb62943a47e62bddd73e3775dcb8",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1017,
+    "verdict": "ALLOW"
+}

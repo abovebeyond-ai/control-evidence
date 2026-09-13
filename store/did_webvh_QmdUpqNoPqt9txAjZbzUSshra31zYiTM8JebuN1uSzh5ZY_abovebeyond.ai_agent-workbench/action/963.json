@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5e40fc6e0f2b97d097e72d3be71708c7ec445439",
+            "branch": "workbench/ui/relations-search-and-rg-link",
+            "files_sha256": "5172439dbe9c9f98d3fa7d07ef31bc5b102c96c48d6d7cc6d2672363b57e238f",
+            "message": "Relations: one search box instead of a filter toggle; Real Garant info as a named link"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913060648-4f91fa"
+}

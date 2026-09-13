@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "48b6d2019dd4d057bd91db07007d0d2ab7a202dd",
+            "branch": "workbench/portal-adapter",
+            "files_sha256": "3dfb91714cd060e443b4c035b636f559d26351ec6b0e2b3c05941f5f7bedbb5f",
+            "message": "Portal-adapter: wat een hand naar Portal schrijft gaat door de gateway, met het token in de geheimenmap\n\nTot 13 september 2026 gingen een update, uren, een kost, een projectveld, een taakstatus, een meetaanvraag en een playbook-aanvraag rechtstreeks van de machine van een sessie naar Portals ingest-API op het owner-token: Portal zag de hand van de operator en die van een sessie als dezelfde, en niets legde vast welke het was. Dezelfde hand zonder bewijs die de GitHub-adapter voor pushes verving. Nu zeven kinds (portal.update, portal.time_entry, portal.expense, portal.project.patch, portal.task, portal.measure, portal.playbook) op de resource portal:<slug>, uitgevoerd met portal-token uit de geheimenmap van de gateway; het record en de capability reizen mee als Control-Evidence en Control-Capability. Een projectveld buiten de bekende lijst wordt geweigerd v\u00f3\u00f3r de schrijfactie, in plaats van stil door Portals validatie te vallen terwijl het record zegt dat het gezet is; een bestand bij een kost komt later, als bijlage met digest zoals de bestanden van een branch.push. Tests tegen een nep-Portal. De VM haalt control-portal-token op zodra een grant een portal:-resource noemt; rehearse.sh tokens draagt hem mee van de box. rehearse.sh config schrijft naar mktemp: op 13 september stond de invoer van de operator op het vaste tussenpad, de shell maakte hem leeg v\u00f3\u00f3r python hem las, en de reboot paste de oude grant opnieuw toe."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913065132-346b30"
+}

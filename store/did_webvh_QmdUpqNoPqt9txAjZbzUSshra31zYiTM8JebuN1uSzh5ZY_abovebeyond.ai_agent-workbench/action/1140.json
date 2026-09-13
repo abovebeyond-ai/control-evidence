@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "proveml had no CI: the tests ran only on a tag, as the release gate, so a pull request could be merged without anything outside the submitter's laptop having run them. This adds .github/workflows/test.yml with the same steps as release.yml minus the publish, on Node 20 (the engines floor) and 24 (the release version), on pushes to main and on pull requests. With the workbench proposing through the control gateway, the judge should not run on the proposer's machine.",
+            "branch": "workbench/tests-on-every-push",
+            "title": "CI: run the tests on every push and pull request"
+        },
+        "resource": "abovebeyond-ai/proveml"
+    },
+    "run": "workbench-20260913072614-bb212c"
+}

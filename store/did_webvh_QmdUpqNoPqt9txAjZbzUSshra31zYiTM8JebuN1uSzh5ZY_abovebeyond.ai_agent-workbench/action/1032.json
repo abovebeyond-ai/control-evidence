@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "control v0.16.3: verify --did-log takes every key #control-gateway ever had from the identity log, verifies each chain under the key that signed it and the attestation under the current one. A rebuilt machine with a new key then leaves its predecessor's chains verifiable here without a change to this workflow. The verdict still names the current key, read the same way, for the record.",
+            "branch": "workbench/elixir/key-history",
+            "title": "The checker at v0.16.3 reads the gateway's key history from the identity log"
+        },
+        "resource": "abovebeyond-ai/verify-abovebeyond"
+    },
+    "run": "workbench-20260913064226-f1eaad"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d846e121ccaba902a4df24b72e3a2969265ae2ef",
+            "branch": "workbench/portal-schemas",
+            "files_sha256": "7fa68e0416fd27ab82ff8bc8aabc6efc6c6d8f2b9aad403042b893c56c2532e5",
+            "message": "Portal-kinds: een parameterschema per soort, met de typen die Portals velden vragen\n\nDe eerste Portal-schrijfactie door de gateway (13 september 2026, portal.task) werd geweigerd met \"no parameter schema is registered for portal.task\": de adapter van control#38 kende de soorten, het schemaregister (rij 4.1.4) niet, en zonder schema komt een actie niet tot aan de grant. Nu heeft elke Portal-soort een schema dat precies de velden noemt die Portals ingest-validatie aanvaardt, met drie typen erbij die er nog niet waren: number (uren en bedragen zijn geen gehele getallen), list (de regels van een update, de stack) en records (doelen en links: objecten van strings). De projectvelden staan plat in de parameters, zoals het schema ze noemt, in plaats van in \u00e9\u00e9n object dat het schema niet kon typen; clearNextAction staat voor de null waarmee Portal de volgende actie leegmaakt. Een test houdt elke soort van de adapter aan een schema."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913073423-735341"
+}

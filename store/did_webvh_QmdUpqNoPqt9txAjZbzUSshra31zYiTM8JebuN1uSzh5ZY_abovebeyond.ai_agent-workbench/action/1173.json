@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first Portal write through the gateway (portal.task, this morning) was refused with `out of schema: no parameter schema is registered for portal.task`: #38 registered the adapter but not the schemas (row 4.1.4), and without a schema an action never reaches the grant.\n\n- `policy/schema.go`: a schema per Portal kind naming exactly the fields Portal's ingest validation accepts; three types added: `number` (hours, amounts), `list` (an update's lines, the stack), `records` (milestones and links: objects of strings).\n- `portal.project.patch` takes its fields flat, as the schema names them, instead of one untyped object; `clearNextAction: true` becomes the `nextAction: null` Portal takes.\n- Tests: every adapter kind has a schema; well-formed update and patch pass; a key outside the schema is refused.\n\nBelongs in v0.17.0 with #38.",
+            "branch": "workbench/portal-schemas",
+            "title": "Portal kinds: a parameter schema per kind"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913073423-735341"
+}

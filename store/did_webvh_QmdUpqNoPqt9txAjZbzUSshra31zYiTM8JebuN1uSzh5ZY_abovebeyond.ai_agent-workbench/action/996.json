@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three small measurements at once.\n\n| measurement | facet | thresholds, worst first |\n| --- | --- | --- |\n| domain | expiry | `DOMAIN_EXPIRING_NOW` (<30 days, now), `DOMAIN_EXPIRING` (<60, week), `DOMAIN_VALID` (ok) |\n| ci | run | `CI_RED` (week), `CI_GREEN` (ok) |\n| ci | coverage | `COVERAGE_LOW` (<40%, background), `COVERAGE_OK` (ok) |\n| repo | readme | `README_THIN` (<100 words, background), `README_FULL` (ok) |\n| repo | docs | `DOCS_STALE` (>90 days, background), `DOCS_FRESH` (ok) |\n| repo | alignment | `DOCS_TRAILING` (background), `DOCS_ALIGNED` (ok) |\n\nNumbers copied from Portal's cards (Domain, Tests and CI, Repo). No verdict where there is nothing to judge: a registry that publishes no expiry, a pipeline without a completed run, a repository without a readme.\n\nTests: `ThreeSmallJudgesTest` pins the ladders. Suite 616 green, PHPStan and Pint clean.\n",
+            "branch": "workbench/three-judges",
+            "title": "Domain, Ci and Repo judge their own facts"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913061725-f10037"
+}

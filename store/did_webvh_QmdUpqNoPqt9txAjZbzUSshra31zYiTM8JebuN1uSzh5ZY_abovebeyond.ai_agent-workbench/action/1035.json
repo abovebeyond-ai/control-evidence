@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "03c1321815e49d9ad717594dc571befac595a33a",
+            "branch": "workbench/seven-judges",
+            "files_sha256": "0cb8ba2b164db5292fb9a455686ea17e68cae9e6e224bb943742c0531f15c401",
+            "message": "The last seven measurements judge their own facts"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913064555-06bf23"
+}

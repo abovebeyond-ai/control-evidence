@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "- Offer and order modals: 900px dialog instead of modal-xl, 10px between rows, labels 13px, fields 38px, the price hints on one line, warranty and extras boxes without dead space.\n- Extras: the '+' in the box head sat above the first row's '-' in the same column and read as a pair of loose buttons. Gone; one 'Extra toevoegen' text row always sits under the extras (the empty state and the add action are the same thing now). Same in the order modal.\n\nThis is a spacing pass; the real rebuild of these modals stays on the per-screen list after the cutover.\n",
+            "branch": "workbench/ui/offer-modal-compact",
+            "title": "Offer and order modals: compact, one add-row for extras"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913061534-560f75"
+}

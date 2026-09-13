@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7b40e888424dc2a5d5c4cd91b6609f76b3af966b",
+            "branch": "workbench/tw/settings",
+            "files_sha256": "3e6ed42e4a942b444fb7db053080c31ff215de6bbb374682b8281d35b6231755",
+            "message": "Settings screen rebuilt in Tailwind: tab chips on phones, one-column forms, switch and affix components; its refresh.css patches removed"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913071601-96ab2b"
+}

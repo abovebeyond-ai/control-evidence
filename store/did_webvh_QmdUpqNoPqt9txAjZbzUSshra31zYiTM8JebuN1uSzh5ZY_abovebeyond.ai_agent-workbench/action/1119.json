@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2058972f1320568d027f365fc937222c2b7046b4",
+            "branch": "workbench/fix/bidding-documents-and-mails-wt",
+            "files_sha256": "acaf3cbef8bbfce4653c0d3caced629ac229e2374c44efce3539de4b45ec60bb",
+            "message": "Bidding: windows on ExportVehicle and enforced in setWinner; agreement and borderel print from the saved model; mails decide for the recipient"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913071433-3a8b12"
+}

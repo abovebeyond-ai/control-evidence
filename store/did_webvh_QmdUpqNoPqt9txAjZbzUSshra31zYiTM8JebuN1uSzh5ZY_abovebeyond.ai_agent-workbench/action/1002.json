@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Reads the verdicts abovebeyond-ai/elixir#180 writes for `domain`, `ci` and `repo`.\n\n- Domain: the Expires line takes the `expiry` verdict; the 30 and 60 stay as fallback for an older row.\n- Tests and CI: Last run takes `run`, Coverage takes `coverage`; the 40 stays as fallback.\n- Repo: README misses / README current take `alignment`, Documentation takes `docs`, README takes `readme`; the 100 words stay as fallback.\n- One Judged line per card.\n\nBehaviour on current rows unchanged. Two tests in `ThreeSmallCardsTest`. Suite green except the worktree-only `BuildStampTest`; PHPStan and Pint clean. Either merge order works.\n",
+            "branch": "workbench/three-judged",
+            "title": "Domain, Tests and CI, and Repo read Elixir's verdict per facet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913061930-324182"
+}

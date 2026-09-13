@@ -1,0 +1,15 @@
+{
+    "action": "2134cfeadf2ac35fa2a876c786e09f15",
+    "effect": {
+        "detail": {
+            "base": "37b788681464a1e2ecf34867168d4e8138a57655",
+            "branch": "workbench/workbench-capability-portal",
+            "commit": "f62cd5133f9e76e8ffc1f99dd6eb4a9dcda2fcc8",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1104,
+    "verdict": "ALLOW"
+}

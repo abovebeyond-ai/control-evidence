@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "994bd39ad8a65e6eaa2749ce13f544b83d247dc7",
+            "branch": "workbench/three-judges",
+            "files_sha256": "a3fbdfd40d4abf584118244a0cc2e839f70b0b21dd2eccfa40160f5a0cc73a18",
+            "message": "Domain, Ci and Repo judge their own facts"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913061725-f10037"
+}

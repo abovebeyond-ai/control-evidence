@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What changed on the page\n\n- The related-work paragraph had 13 \"no source: the paper's own words\" readings that were clauses whose passages stood one reading above them (the citation reading). A `paperUse` tag now also tells the flag pass those words are sourced; a proposal on them is cut to what lies outside, and a residue keeps its number over a longer stretch without one. Tags widened to whole clauses (`related-work-claims.json`); README documents the rule.\n- The paragraph's own claims are bound: the technical report's SymGen table caption (\"on identical models, prompts and data\"), the binding-error share (108 of 157), arithmetic in the data layer (verifier-check), claim-locked reporting's foreign text (derived, with the argument).\n- VeriFin: \"with an SMT solver\" is not in the abstract; \"checks claims using Z3\" is. Reworded to \"with the Z3 solver\".\n- Citing sentences for SummaC, AlignScore and Nadkarni were cut at a semicolon inside a parenthesis (brackets counted from the citation, not from the sentence start). Citing sentences in bound paragraphs showed raw marks; they now show the value.\n- 157, 108 and 43 at their second mention (Findings 2, 3, provenance) bound to the same fields; \"3\u201313% of the citation URLs\" bound to the Rao abstract. Judgements of a paragraph that becomes bound travel from its hash to its name (11 carried on the hallucination paragraph).\n- Planted run: seven plants no longer located after 12 September's edits, five had become bound; re-anchored and reclassified (14 bound, 29 prose). Build refused 14/14; flag pass marked 27/29 (S5 the known miss; S10 marked on 12 September, not today: the pass's recall varies between runs). Resolver stage not rerun; `plant/out/` keeps the 12 September run the paper binds.\n\nPush 119: bound 329 \u2192 336, own statements unanswered 286 \u2192 276.\n\nNot committed: `report/review.json`, `roots.json`, `sources/index.json`, `approvals.json`, `manifests-enc/`, `package-lock.json`.\n",
+            "branch": "workbench/related-work-passages-cover",
+            "title": "Related work: passages cover the paper's words for the flag pass; own claims bound; Z3"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260913064207-d2a767"
+}

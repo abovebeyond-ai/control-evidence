@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7b40e888424dc2a5d5c4cd91b6609f76b3af966b",
+            "branch": "workbench/fix/bidding-windows-green",
+            "files_sha256": "d8ed391686419a4ca3b3c4132dd2e5a16541a1fd7d0e1fa39617a4912941b30e",
+            "message": "Bidding windows: whole days truncated toward zero as Delta's templates did; notify only; B1-6.2 row keeps its status"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913073054-d11bb7"
+}

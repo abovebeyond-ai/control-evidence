@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b80fee1544df3a09108f5909c8ba3ec0220bedfd",
+            "branch": "workbench/feature/offer-pricing",
+            "files_sha256": "2b19a662781333afbfcf444f5bf37e3c4e0ba7e1eeecaa470b497657830597e3",
+            "message": "Offer and order pricing in App\\Support\\OfferPricing (tested); VAT percentage stored on the document"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913064620-38db2a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3ed8882a0743914c7b897f4be74eed42b1f42762",
+            "branch": "workbench/three-judged",
+            "files_sha256": "90694cc9f138af3abc3994b2f3a9de9638bc6d17a85e9be8fe39616b418b30e6",
+            "message": "Domain, Tests and CI, and Repo read Elixir's verdict per facet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913061930-324182"
+}

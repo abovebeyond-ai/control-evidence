@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8a313586e9b1363a9a6bd413bcbeb438a0465469",
+            "branch": "workbench/elixir/rebuild-rehearsed",
+            "files_sha256": "d951d03e1d6e6800c33158303d76ea5f4c351c0bd888c246fedda9f2812ab924",
+            "message": "De herbouw gerepeteerd: een tweede machine uit hetzelfde beeld geeft dezelfde registers; create zet de netwerktag"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913063650-fdb639"
+}

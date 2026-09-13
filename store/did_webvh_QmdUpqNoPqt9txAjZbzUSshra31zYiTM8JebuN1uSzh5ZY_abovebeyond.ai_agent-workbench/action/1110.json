@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3c223bf7ed63a6d85b0a1b04c0e56b2a92c0d2ab",
+            "branch": "workbench/elixir/spare-successor",
+            "files_sha256": "1de69d6aad2d56ad6d6d1c2334cb5680f062a6099b8a57025e8cb1f9390e4860",
+            "message": "did-webvh: de reserve, een derde volgende sleutel voor de kluis"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260913070355-c78354"
+}

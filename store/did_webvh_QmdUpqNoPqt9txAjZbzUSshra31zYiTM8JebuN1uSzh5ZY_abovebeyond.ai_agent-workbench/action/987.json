@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "54bfaec70ce1ff3c43dafa3ae12035b18d4bb1dc",
+            "branch": "workbench/ui/offer-modal-compact",
+            "files_sha256": "28bea86a149e54e6987d153665ecaef40a3172edac4abaa40b0781ca5aec5af8",
+            "message": "Offer and order modals: less air; extras get one 'Extra toevoegen' row instead of a head + and per-row minus stacked"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913061534-560f75"
+}

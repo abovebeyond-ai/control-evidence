@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb1ef870c93709a845463a9cb7e73156880d5fcf",
+            "branch": "workbench/related-work-passages-cover",
+            "files_sha256": "058fd9f6af20a34ffbec56017b7f4fa8aae64b582b46f429a382fe3d58599c88",
+            "message": "Related work: een paperUse-tag dekt de woorden van het paper ook voor de vlagpas; eigen claims van de alinea gebonden\n\nDertien eigen-uitspraak-lezingen op de related-work-alinea waren zinsdelen waarvan de passage \u00e9\u00e9n lezing hoger stond. Een paperUse-tag zegt nu ook tegen inferSubject dat die woorden gedekt zijn; een voorstel erop wordt gesneden tot wat erbuiten ligt, met een rest die zijn getal houdt boven een langere zonder. De tags zijn verbreed tot hele zinsdelen. De eigen claims van de alinea zijn gebonden: de SymGen-tabel van het technical report, het aandeel bindingsfouten, rekenwerk in de datalaag, de niet-auditeerbare tekst van claim-locked. VeriFin: \"SMT solver\" staat niet in het abstract, \"Z3\" wel. De zinsnijder telde haakjes vanaf de citatie, niet vanaf de zinsstart (SummaC, AlignScore, Nadkarni afgekapt); een citerende zin toont nu de waarde van een mark, niet de sleutel. 157, 108 en 43 bij hun tweede vermelding gebonden; 3\u201313% aan het Rao-abstract. Oordelen van een alinea die gebonden wordt reizen mee van haar hash naar haar naam. Zeven plants opnieuw verankerd, vijf naar de klasse bound (build weigert 14 van 14, vlagpas markeert 27 van 29). Push 119."
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260913064207-d2a767"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d9547d831ee3f132de6372a4cc3d958e2b2d11fc",
+            "branch": "workbench/ui/relations-search-width",
+            "files_sha256": "2b6d173da11b0d50b36b5dea6d32f80bc1802b2451095cfba6849581622bc65a",
+            "message": "Relations: wider search box, shorter placeholder; a nameless lead shows its e-mail as name"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913062854-5da3e8"
+}

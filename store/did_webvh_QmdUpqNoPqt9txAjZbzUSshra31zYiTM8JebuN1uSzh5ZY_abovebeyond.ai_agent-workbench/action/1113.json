@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Both tokens lost meant the identity ends. prepare-spare makes one software key, its private half on a medium that goes to the safe, its public half beside the key descriptors; every rotation from then on commits the spare's hash beside the fresh next key's, so nextKeyHashes carries two entries and the spare can sign the version after any of them. rotate --sign-with-spare FILE is the recovery: the spare signs, becomes the update key as a file, is retired at the next rotation, and a new spare is made. Rehearsed on a throwaway identity: spare committed at version 2, next key deleted, spare signs version 3, verify holds, version 4 rotates on. The log shows the spare only as a hash. README updated.",
+            "branch": "workbench/elixir/spare-successor",
+            "title": "did-webvh: the spare, a third successor for the safe"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260913070355-c78354"
+}

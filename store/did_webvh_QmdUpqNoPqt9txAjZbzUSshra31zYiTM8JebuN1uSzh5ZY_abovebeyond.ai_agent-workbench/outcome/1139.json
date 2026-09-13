@@ -1,0 +1,15 @@
+{
+    "action": "cb8291741a1567ebf3911b1653686ed3",
+    "effect": {
+        "detail": {
+            "base": "769004d51ac9761fbdcab50587b98c619155a119",
+            "branch": "workbench/tests-on-every-push",
+            "commit": "542fadc8f557097fb7f5e0fe7e43d11bb0712dec",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1137,
+    "verdict": "ALLOW"
+}

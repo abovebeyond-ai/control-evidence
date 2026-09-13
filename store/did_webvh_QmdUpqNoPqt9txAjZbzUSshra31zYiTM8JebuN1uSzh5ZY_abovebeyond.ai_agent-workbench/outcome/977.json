@@ -1,0 +1,15 @@
+{
+    "action": "f9259d8cd259152e1ab2aac7f27437a8",
+    "effect": {
+        "detail": {
+            "base": "5e40fc6e0f2b97d097e72d3be71708c7ec445439",
+            "branch": "workbench/perf/offer-pdf-images",
+            "commit": "c722b8a4aad9ca3bde0e38bdc08bb8151d6d0e5b",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 975,
+    "verdict": "ALLOW"
+}

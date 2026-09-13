@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "35b79326274c2c0d5c8f3f7a48649fd6e17bdfd4",
+            "branch": "workbench/elixir/key-history",
+            "files_sha256": "667f59b93caf3c7314697ed0929a348dac065104e27874a813d5a0870528627c",
+            "message": "The checker at v0.16.3 reads the gateway's key history from the identity log"
+        },
+        "resource": "abovebeyond-ai/verify-abovebeyond"
+    },
+    "run": "workbench-20260913064226-f1eaad"
+}

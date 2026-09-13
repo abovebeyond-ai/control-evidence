@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Ahead of the first rebuild of the sealed machine. A rebuilt gateway has a new key, and the chains its predecessor signed verify only under the old one. The checker now takes --did-log (file or URL) and reads every key #control-gateway ever had from the identity log, oldest first: the attestation must bind the current one, each chain is verified under the key that signed its first record, and a chain under an earlier key is noted. --key stays for a single key by hand. The create step of the rehearsal script now sets the service account Secret Manager trusts and the listen address the tunnel expects, both of which the production machine had by hand and a rebuild would have missed. docs/rebuild.md is the runbook, honest that it is not yet rehearsed. Test: the history reader on a three-version log.",
+            "branch": "workbench/elixir/key-history",
+            "title": "The checker reads the gateway's key history from the identity log; a rebuild runbook"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913061935-2ca086"
+}

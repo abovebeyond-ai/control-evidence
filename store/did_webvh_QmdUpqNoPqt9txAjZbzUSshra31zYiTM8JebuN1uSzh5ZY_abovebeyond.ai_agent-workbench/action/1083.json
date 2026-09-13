@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9cc19938c5d674ff2716b4c56e115b1bcd18a4ad",
+            "branch": "workbench/perf/showroom",
+            "files_sha256": "96accdde1f0e081f924edb6bab5a1a2f71fdd9235e341aec4b99baa663b75998",
+            "message": "Showroom: eager-load what a slide reads, no RealGarant login in the render, timing marks; rules S2-7.6 to 7.9 and findings X-74 to X-76"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913065814-b92d9e"
+}

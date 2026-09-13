@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "08727be974d396af2accace6e9bb85eb4b7b6e09",
+            "branch": "workbench/elixir/release-from-record",
+            "files_sha256": "bc24bc89e03975f8aad585795e1f65e957800e86ce739a15a7e399e86dab75c0",
+            "message": "verify: de release uit de records, het asset opgehaald en aan zijn sha256 gehouden"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913064647-647d36"
+}

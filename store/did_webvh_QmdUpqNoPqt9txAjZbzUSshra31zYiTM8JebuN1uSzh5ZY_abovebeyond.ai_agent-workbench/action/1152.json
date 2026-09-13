@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Item 1 (+3) of the view-logic audit (docs/bedrijfsregels/93-logica-in-views.md): the customer-mode price lived in seven views with three formulas. Behaviour per screen is unchanged; the arithmetic now sits in one place.\n\n- `App\\Support\\CustomerModePrice` + `CustomerModeState` (session read once; the three readings of \"customer mode on\" that the views use are kept apart and documented). Named variants per screen: `listPrice()` (grid card), `indexCardPrice()`, `detailPrice()` (buybox), `documentPrefill()` (offer modal, lease rows), `orderPrefill()` (order modal), `leaseBase()` (lease block), static `websitePrice()`, `websiteLeaseBase()`, `showroomPrice()`, and `listFormula()` as the one shared formula (also used by `PublicWebsitePrice` for the API and its SQL twin).\n- Views call the variant that matches what they showed; `StockListController::client_vehicle_index_mode` uses the same list formula.\n- `tests/Unit/CustomerModePriceTest.php` (7 tests, 46 assertions) pins every screen for a VAT vehicle and a margin vehicle and asserts the divergences explicitly.\n\nNumbers pinned (margin 500, viewer VAT 21%):\n\n| screen | VAT vehicle (dealer 10 000) | margin vehicle (dealer 8 000) |\n|---|---|---|\n| grid card, index card, controller, website card, showroom (VAT) | 10 605,00 | 8 500,00 |\n| detail page (buybox) | 10 605,00 | **10 285,00** (VAT formula on a margin vehicle) |\n| offer modal, order modal (colleague), lease rows, lease block | **10 500,00** (no VAT step; saved on the offer) | 8 500,00 |\n| website lease base | 10 500,00 | 8 500,00 |\n| showroom slide | 10 605,00 | **9 000,00** (margin twice, X-74) |\n\nDocs: S5-4.3..4.6, S4-2.5, S4-4.5, S2-7.6 point at the class; S5-4.4 marked `betwist`; **X-77** with these numbers; **V-10 (X-77)** in the acceptance test asks which formula is intended, with the consequence per answer. 92-testdekking regenerated (the tool warns about R B1-6.2 referenced by another PR's test; not from this change).\n\nKept identical on purpose: the offer modal pre-fills the margin price even for an own vehicle (it never checked ownership), the lease block treats any value of `client_mode` as on, the index card shows nothing in customer mode without margin or price.\n",
+            "branch": "workbench/feature/customer-mode-price",
+            "title": "Customer-mode price in one class (X-77, V-10)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913072951-ac8c9c"
+}

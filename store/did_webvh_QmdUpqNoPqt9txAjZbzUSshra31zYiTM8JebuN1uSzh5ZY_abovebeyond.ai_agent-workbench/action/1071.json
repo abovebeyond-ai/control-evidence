@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ee0c0ac3bc252c654ec918b2402a8622bc1d4560",
+            "branch": "workbench/seven-judged",
+            "files_sha256": "293807016f3f4087caaadd6afd3dc6a69c1929a6719c9f6ba00c689bdf5a04aa",
+            "message": "The last seven cards read Elixir's verdict per facet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913065642-977d37"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "14ed14b69776bb990de451f2bb292d2c",
+    "effect": {
+        "detail": {
+            "base": "08727be974d396af2accace6e9bb85eb4b7b6e09",
+            "branch": "workbench/elixir/release-from-record",
+            "commit": "3078d924e44609fbbf89c4d288120472d090ed5d",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1047,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b9dba63610234322fa0e19bbc7df245f0b4cb08f",
+            "branch": "workbench/servers-judges",
+            "files_sha256": "5c445e7c0ee26557309777eb4564f50fa22a4a2bfb0992357f663cc45e239f93",
+            "message": "Servers judges its own facts: running, backed up, sized to their load"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913060831-6579b7"
+}
