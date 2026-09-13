@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The calm layer went amber this morning: `repos-sync` reset sportbusinessgame to `origin/master`, a branch that `--prune` had just removed after yesterday's rename to `main`. A clone remembers the default branch of the day it was made (`refs/remotes/origin/HEAD`) and fetch never updates that pointer.\n\nFix: ask the remote where HEAD points (`git remote set-head origin --auto`) on every sync before reading it; when the remote does not answer, read what the clone remembers rather than fail. One test with a bare repo whose default is renamed under a clone. Suite green, PHPStan and Pint clean.\n\nThe clone on the box heals itself on the next sync after this deploys; no hand on the server needed.\n",
+            "branch": "workbench/default-branch-follows",
+            "title": "repos-sync follows a renamed default branch"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913054837-42389b"
+}

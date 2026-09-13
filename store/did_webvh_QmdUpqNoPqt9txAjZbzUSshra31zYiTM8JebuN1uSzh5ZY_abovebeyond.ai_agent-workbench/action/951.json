@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "175ca6fa9100986f18bd364a04fe4d7ef25211ca",
+            "branch": "workbench/vitals-judges",
+            "files_sha256": "9f62a18642d9ef0cd37aebc2d3e6fd0e0d66c4554aebaff6745afb4e2802ea1a",
+            "message": "Vitals judges its own facts: score, the three vitals, weight and the biggest saving"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913060144-016100"
+}

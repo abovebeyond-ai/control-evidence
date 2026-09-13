@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cf77905b4e6c41990e1c1b95d661421d8df2ecd6",
+            "branch": "workbench/default-branch-follows",
+            "files_sha256": "2291dd3d771f46758e3902364701b19f1326e4fb4cf91e5c9189d44eb358f169",
+            "message": "repos-sync follows a renamed default branch"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913054837-42389b"
+}

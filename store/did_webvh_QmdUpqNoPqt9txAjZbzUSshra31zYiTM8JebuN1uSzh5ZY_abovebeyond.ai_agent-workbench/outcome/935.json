@@ -1,0 +1,15 @@
+{
+    "action": "efc3cf1cb75eb83d44f0fbab1c56eb5c",
+    "effect": {
+        "detail": {
+            "base": "cf77905b4e6c41990e1c1b95d661421d8df2ecd6",
+            "branch": "workbench/default-branch-follows",
+            "commit": "581f60e16c70adff4057ea7adaa0779587bfa6d8",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 933,
+    "verdict": "ALLOW"
+}

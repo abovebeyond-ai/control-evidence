@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Bootstrap's .spinner-grow (the pulsing ball) is used in ten places: the Real Garant options while they load, photo uploads, the worklist, option lists. One rule turns it into the house spinner (ring with a blue head, same as the AI text and the average price), sizes kept; white variant on dark buttons.\n",
+            "branch": "workbench/ui/spinner-not-ball",
+            "title": "Spinner instead of the pulsing ball, everywhere"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913060119-40b9a0"
+}

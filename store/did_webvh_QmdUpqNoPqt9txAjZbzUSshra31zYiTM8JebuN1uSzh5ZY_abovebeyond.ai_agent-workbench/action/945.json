@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c8b8a0907119fc4452eb996d83880b64fb1c6d79",
+            "branch": "workbench/ui/spinner-not-ball",
+            "files_sha256": "10629dbf6b5526928fc5a3dad7a27144e3396e1def0715ea9547a5c5d340647f",
+            "message": "Loading indicator: Bootstrap's pulsing ball becomes the house spinner everywhere"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913060119-40b9a0"
+}

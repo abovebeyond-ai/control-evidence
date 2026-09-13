@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "In customer mode the Stocklist render took 2.1 s against 0.2 s without: rest_of_render 1.9 s, which was getFlexLeaseInfo() for the twenty cards, a live POST to FlexLease on every render (live since flexlease went into OUTBOUND_ALLOW today). Its result, flexleasePrices, was passed to the view and read by no template; the card shows only the Flexlease badge. Removed. Shane saw the list keep loading because his session was in customer mode.\n",
+            "branch": "workbench/perf/stocklist-no-flexlease-call",
+            "title": "Stocklist: customer mode no longer calls FlexLease per render (1.9 s for nothing)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913055355-a100d7"
+}

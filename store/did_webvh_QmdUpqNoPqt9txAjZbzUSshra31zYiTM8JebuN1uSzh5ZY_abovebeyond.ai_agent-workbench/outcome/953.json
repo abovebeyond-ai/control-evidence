@@ -1,0 +1,15 @@
+{
+    "action": "004abb40ec4e4d1e0ce1d2a01bfb82bd",
+    "effect": {
+        "detail": {
+            "base": "175ca6fa9100986f18bd364a04fe4d7ef25211ca",
+            "branch": "workbench/vitals-judges",
+            "commit": "0aceb9ee919d7d2d6316ae48b1c04973f11da2cc",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 951,
+    "verdict": "ALLOW"
+}

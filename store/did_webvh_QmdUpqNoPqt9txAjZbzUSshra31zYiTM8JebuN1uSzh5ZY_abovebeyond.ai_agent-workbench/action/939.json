@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "95be1a88a1e8b234cd8291ed241c329a44e25bd2",
+            "branch": "workbench/perf/stocklist-no-flexlease-call",
+            "files_sha256": "2a6b33285d9ab2752d75e798efe8eb0227528d9ea7002533f36d05d4ca94eced",
+            "message": "Stocklist render: drop the FlexLease call in customer mode; nothing read its result"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913055355-a100d7"
+}

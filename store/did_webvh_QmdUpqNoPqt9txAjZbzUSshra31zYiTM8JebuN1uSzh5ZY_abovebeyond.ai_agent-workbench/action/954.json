@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Seventh measurement to carry verdicts.\n\n| facet | thresholds, worst first |\n| --- | --- |\n| score | `SCORE_POOR` (<50, week), `SCORE_FAIR` (<90, month), `SCORE_GOOD` (ok) |\n| lcp / inp / cls | `*_POOR` (week), `*_FAIR` (month, new middle entries), `*_GOOD` (ok), on Google's numbers already in the registry |\n| weight | `PAGE_HEAVY` (>3000 kB, month), `PAGE_LIGHT` (ok) |\n| savings | `SAVINGS_LARGE` (>=1000 ms, month), `SAVINGS_SMALL` (ok) |\n\nThe 50, 90, 3000 and 1000 are Portal's card numbers, copied. The reading is written flat (`lcpMs`, `inpMs`, `cls`, `pageWeightKb`, `biggestSavingMs`) next to the `field`/`lab` maps so the registry can read it; INP exists only in the field. Each opportunity carries `large: true` when it saves a second or more, so the card's rows map a word instead of comparing a number.\n\nTests: three cases in `VitalsScanTest`. Suite 611 green, PHPStan and Pint clean. Branched from main after #177.\n",
+            "branch": "workbench/vitals-judges",
+            "title": "Vitals judges its own facts: score, the three vitals, weight and the biggest saving"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913060144-016100"
+}
