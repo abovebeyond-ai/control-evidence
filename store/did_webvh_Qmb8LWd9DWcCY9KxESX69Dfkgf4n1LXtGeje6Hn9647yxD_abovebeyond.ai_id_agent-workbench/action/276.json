@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8080dc29784efbaa9dd9043a1cfc5c105f22acea",
+            "branch": "workbench/exposure-csp-facet",
+            "files_sha256": "5d2c0c3471e15ea3a81241bd541de0ac62524994a14201956140989a75f437eb",
+            "message": "The content security policy is a facet of its own\n\nA facet is a unit of work, and these two are different work by different\nhands. The safe set is four headers with one right answer, which the\nheaders hand writes as middleware; a content security policy says which\nscripts a site may run, and nobody can know that from the outside.\n\nJudged together, a site where the hand had done everything it could kept\na task open with the hand's name on it, and pressing the button answered\n\"a human's call\" forever. That is portal since this afternoon: three\nheaders set and confirmed, one policy missing, the task still open.\n\nSo: HEADERS_* now read the safe set (safeHeadersMissing, safeHeavyMissing\nfor HSTS), and CSP_MISSING / CSP_SET judge the policy on facet csp. The\nreport's voice counts the safe set too."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913193446-751653"
+}

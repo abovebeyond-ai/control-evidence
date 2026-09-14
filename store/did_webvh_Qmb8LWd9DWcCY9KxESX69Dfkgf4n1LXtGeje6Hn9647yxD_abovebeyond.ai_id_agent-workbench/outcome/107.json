@@ -1,0 +1,15 @@
+{
+    "action": "a6c31dcff72b43b8ec3039c4fdc65bb7",
+    "effect": {
+        "detail": {
+            "base": "9c5272ad0170ae9b93fdb356a78fc98d0509577e",
+            "branch": "workbench/review-ticket-read",
+            "commit": "618cd0edb52fa95ba2c82028081f6b73d911e870",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 105,
+    "verdict": "ALLOW"
+}

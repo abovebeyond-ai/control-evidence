@@ -1,0 +1,206 @@
+{
+    "expiry": "none: a standing grant, replaced by a new bundle when it changes",
+    "judgements": [
+        "REVIEW_COMPLETE"
+    ],
+    "kinds": [
+        "review.invite",
+        "review.publish",
+        "review.sign"
+    ],
+    "max_per_kind": 8,
+    "path_aware": true,
+    "premises_for": [
+        "review.sign"
+    ],
+    "principal": "did:webvh:Qmb8LWd9DWcCY9KxESX69Dfkgf4n1LXtGeje6Hn9647yxD:abovebeyond.ai:id",
+    "principal_key": "d72ed1a3cffb003bd6ea966699bced6ae322ddb912a90dd35579e117951dd843",
+    "resources": [
+        "vera/abovebeyond/*",
+        "vera/afrodidact-website/*",
+        "vera/axa-dare-to-call/*",
+        "vera/blitzt-website/*",
+        "vera/cabrio-eyewear-mirror/*",
+        "vera/cabrio-eyewear/*",
+        "vera/cafe-t-hoekske-website/*",
+        "vera/cides-portfolio/*",
+        "vera/control/*",
+        "vera/dbc-webapplicatie/*",
+        "vera/elixir-fix/*",
+        "vera/elixir/*",
+        "vera/find-your-voice/*",
+        "vera/garage-de-backer-website/*",
+        "vera/gentells/*",
+        "vera/glk-transferor/*",
+        "vera/hoet-design-web/*",
+        "vera/hoet-eyewear-mirror/*",
+        "vera/hoet/*",
+        "vera/kubo-it-lab/*",
+        "vera/kubo-platform/*",
+        "vera/menukaart-webapp/*",
+        "vera/naviskore-viz/*",
+        "vera/naviskore-webapp/*",
+        "vera/portal/*",
+        "vera/proveml-research/*",
+        "vera/proveml/*",
+        "vera/schoutteet/*",
+        "vera/shanedeconinck-be/*",
+        "vera/she-cosmetics-website/*",
+        "vera/signal-observatory-gentells/*",
+        "vera/sportbusinessgame/*",
+        "vera/stocklist-dealer-landing/*",
+        "vera/stocklistplatform-eu/*",
+        "vera/trustedagentic/*",
+        "vera/vera/*",
+        "vera/verify-abovebeyond/*"
+    ],
+    "schemas": {
+        "branch.delete": {
+            "optional": {
+                "reason": "string"
+            },
+            "required": {
+                "branch": "string"
+            }
+        },
+        "branch.push": {
+            "optional": {
+                "base_sha": "string",
+                "files_sha256": "hex64",
+                "message": "string",
+                "packages": "int"
+            },
+            "required": {
+                "branch": "string"
+            }
+        },
+        "portal.expense": {
+            "optional": {
+                "currency": "string",
+                "date": "string",
+                "description": "string",
+                "files_sha256": "hex64",
+                "invoiceNumber": "string",
+                "rebillable": "bool"
+            },
+            "required": {
+                "amount": "number",
+                "vendor": "string"
+            }
+        },
+        "portal.measure": {
+            "optional": {
+                "only": "string"
+            },
+            "required": []
+        },
+        "portal.playbook": {
+            "optional": [],
+            "required": {
+                "playbook": "string"
+            }
+        },
+        "portal.project.patch": {
+            "optional": {
+                "clearNextAction": "bool",
+                "elixir": "bool",
+                "links": "records",
+                "milestones": "records",
+                "nextAction": "string",
+                "productionTheirs": "bool",
+                "replaceLinks": "bool",
+                "stack": "list",
+                "status": "string",
+                "summary": "string"
+            },
+            "required": []
+        },
+        "portal.task": {
+            "optional": {
+                "note": "string",
+                "url": "string"
+            },
+            "required": {
+                "key": "string",
+                "state": "string"
+            }
+        },
+        "portal.time_entry": {
+            "optional": {
+                "billable": "bool",
+                "date": "string",
+                "note": "string"
+            },
+            "required": {
+                "hours": "number"
+            }
+        },
+        "portal.update": {
+            "optional": {
+                "body": "list",
+                "clientVisible": "bool",
+                "date": "string"
+            },
+            "required": {
+                "title": "string"
+            }
+        },
+        "pull.open": {
+            "optional": {
+                "body": "string",
+                "draft": "bool",
+                "packages": "int",
+                "title": "string"
+            },
+            "required": {
+                "base": "string",
+                "branch": "string"
+            }
+        },
+        "pull.ready": {
+            "optional": {
+                "body": "string"
+            },
+            "required": {
+                "number": "int"
+            }
+        },
+        "review.invite": {
+            "optional": [],
+            "required": {
+                "email": "string"
+            }
+        },
+        "review.publish": {
+            "optional": {
+                "by": "string",
+                "title": "string"
+            },
+            "required": {
+                "page_sha256": "hex64"
+            }
+        },
+        "review.sign": {
+            "optional": {
+                "judged": "int",
+                "readings": "int"
+            },
+            "required": {
+                "root": "string"
+            }
+        },
+        "workflow.dispatch": {
+            "optional": {
+                "inputs": "strings",
+                "packages": "int",
+                "plan_sha256": "hex64"
+            },
+            "required": {
+                "ref": "string",
+                "workflow": "string"
+            }
+        }
+    },
+    "submitter_key": "eec79ec15b080315bc0a4679f0523af8fd5337e9aaebc562aaedc7ad4305f85f",
+    "version": "control-1"
+}

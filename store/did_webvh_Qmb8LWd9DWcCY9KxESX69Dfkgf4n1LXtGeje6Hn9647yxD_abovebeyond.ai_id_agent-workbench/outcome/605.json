@@ -1,0 +1,15 @@
+{
+    "action": "5fd023efc097d8d4cb66026590910b92",
+    "effect": {
+        "detail": {
+            "base": "8750ec8b53f5f5fb58f8faafa5e8e9054fdac39f",
+            "branch": "workbench/heavy-off-the-thread",
+            "commit": "c20ae47669ca297a2d901cd2d73516ee9af1dd36",
+            "files": 7
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 603,
+    "verdict": "ALLOW"
+}

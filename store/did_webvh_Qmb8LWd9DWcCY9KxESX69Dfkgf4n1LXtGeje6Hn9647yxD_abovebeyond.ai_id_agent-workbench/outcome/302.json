@@ -1,0 +1,15 @@
+{
+    "action": "11cf70cf8bf1543eaf05b55fb9ac84df",
+    "effect": {
+        "detail": {
+            "base": "95f27fe6b0da7934fde9ba3ca1f1c6d215affc04",
+            "branch": "workbench/ui/sort-vehicle-dropdowns",
+            "commit": "b7621b99309883e65199bc09d16e9b79f988a2cc",
+            "files": 7
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 300,
+    "verdict": "ALLOW"
+}

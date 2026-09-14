@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "exposure"
+        },
+        "resource": "portal:sportbusinessgame"
+    },
+    "run": "workbench-20260913213658-7c7426"
+}

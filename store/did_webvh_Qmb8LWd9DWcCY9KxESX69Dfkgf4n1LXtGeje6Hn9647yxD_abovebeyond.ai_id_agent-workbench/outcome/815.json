@@ -1,0 +1,15 @@
+{
+    "action": "eb730f37d388f5876e77c0aadae21863",
+    "effect": {
+        "detail": {
+            "base": "e78ff28a7875126988442e434602167f23e255e1",
+            "branch": "workbench/feat/ai-two-audiences",
+            "commit": "62a441f28da591eb6db66841f1b2b5d835114a65",
+            "files": 10
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 813,
+    "verdict": "ALLOW"
+}

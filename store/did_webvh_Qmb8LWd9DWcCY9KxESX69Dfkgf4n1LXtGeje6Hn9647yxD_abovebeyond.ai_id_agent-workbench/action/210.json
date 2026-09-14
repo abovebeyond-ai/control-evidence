@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first proposal of the headers hand failed Portal's own style gate (portal#310): an import the generated provider did not use, and a class name written in full where that project writes it as an import. Both house style, not a fault in the change.\n\nA hand that must know every house style knows none of them well. When the project has Pint, the runner now runs it over exactly the files a file plan wrote, before the tests, so the proposal passes the gate of the people who have to read it. No Pint: the files stay as the hand wrote them.\n\nThe step reads the applied paths out of the outcome, so it touches nothing else; package plans are unaffected.\n",
+            "branch": "workbench/project-style",
+            "title": "De opmaak is die van het project: Pint over wat een bestandenplan schreef"
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260913185852-b69480"
+}

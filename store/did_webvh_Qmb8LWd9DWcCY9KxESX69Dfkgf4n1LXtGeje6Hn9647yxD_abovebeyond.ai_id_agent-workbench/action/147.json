@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three holes in the agent door, found by reading the code after the first real sign-in this afternoon. All three are the same kind: a promise the code did not keep.\n\n**The consent screen was decoration.** Scopes were declared (`Passport::tokensCan`), shown to the member, stored on the token, and never read back. A client that asked for only the latest posts was served the sources, the graph and the archive as well. `Reader` now carries what the token was granted and `may()` needs the plan AND the grant. A grant can only narrow: it never opens a door the plan lacks, so a client cannot ask its way into a higher plan. A key made on the account page carries no scopes, which means the member acting as themselves and so the whole plan, unchanged.\n\n**The allowance counted per key, and the account page mints keys freely.** Twenty keys were twenty allowances, so the one thing metering exists to prevent was a loop away. The account now has a ceiling of its own: the plan's daily reads, times four for a plan carrying the team ability, because that plan is several agents by design. The 429 says which ceiling was hit.\n\n**No per-request ceiling protects a catalogue this small.** A hundred and ten published trends means a reader on Decode can walk every source in a hundred requests, well inside any allowance, so the daily number never reaches the thing worth taking. The sources now carry their own brake counted in DISTINCT trends: a quarter of the catalogue a day, never fewer than ten, with a trend already opened today staying open, and reads that carry no sources untouched. This cannot make extraction impossible for a member entitled to read. It makes a full sweep take four days and leave four days of attributed records with a name on them, which is the honest guarantee and the one worth putting in the terms.\n\nSix tests in `DoorLockTest`, one per hole plus the cases that must not change. `AgentDoorTest` signed its agents in with a `latest` scope on every plan, which encoded the old behaviour; those helpers now use an unscoped key, since what they measure is the plan.\n\nSuite 264 green, Pint clean. The consent screen now lists what the client will be able to read under a heading that says so.\n",
+            "branch": "workbench/lock-the-door",
+            "title": "Three locks on the agent door"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260913183842-ec43ea"
+}

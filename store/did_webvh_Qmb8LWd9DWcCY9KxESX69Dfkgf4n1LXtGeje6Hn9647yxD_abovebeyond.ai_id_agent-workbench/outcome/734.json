@@ -1,0 +1,14 @@
+{
+    "action": "438e23f7ba3ea5977f1cd2070361d5c8",
+    "effect": {
+        "detail": {
+            "playbook": "headers",
+            "project": "vera",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 732,
+    "verdict": "ALLOW"
+}

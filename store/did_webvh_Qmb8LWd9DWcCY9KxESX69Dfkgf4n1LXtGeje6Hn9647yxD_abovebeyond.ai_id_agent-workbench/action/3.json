@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "One line in rounds.txt. Admitted by #operator (YubiKey #39780275) under did:webvh:Qmb8LWd9\u2026:abovebeyond.ai:id, the successor of the identifier closed today; verified by the gateway against the key published in /id/did.jsonl.",
+            "branch": "workbench/first-under-the-successor",
+            "title": "Round log: the first proposal under the successor identity"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260913162512-836b0b"
+}

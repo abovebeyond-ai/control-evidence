@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a809abe1aaa5516f7b5df6d23567f698428b0a9b",
+            "branch": "workbench/headers-netlify",
+            "files_sha256": "838fc9c549c9450e86111b4365028fbeb1c42fcdf4b646620c7d7e88040dde36",
+            "message": "The headers hand writes for Netlify too\n\nThree of the eight sites with a headers task are Astro sites on Netlify,\nand the hand refused all three with \"this is not a Laravel project\". The\nrefusal was honest and the work was still not done: the same four headers,\na site that cannot say them in PHP.\n\nSo the site says how it sends a header and the hand writes for that. A\nLaravel app: a middleware, a provider, one line in bootstrap/providers.php.\nA Netlify site: public/_headers, which Netlify serves from the published\ndirectory and every static builder copies verbatim. Same safe set, same\ncertificate, same judge, same ledger; another writer. Still never an\noverwrite: a project that already carries _headers decided something this\nhand cannot read."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913194854-674889"
+}

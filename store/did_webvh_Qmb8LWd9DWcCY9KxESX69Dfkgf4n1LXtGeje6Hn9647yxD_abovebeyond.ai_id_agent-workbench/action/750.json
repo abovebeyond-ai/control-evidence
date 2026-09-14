@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vera's own page on abovebeyond.ai has a face, a promise and a hue of her own; the app that carries her work had none of it, and worse, it carried the house's colours typed by hand. The guide is blunt about that one: a retyped hex drifts the moment the site moves, and then two things of the same house stand in slightly different colours.\n\n**The colours are read, not retyped.** `skill/house-css.mjs` lifts the paper tokens, the night set, Vera's declared hue (`.night-page[data-hue='vera']`) and the brand's own gradient out of abovebeyond's `globals.css`, and writes `skill/lib/house-tokens.css` with the sha256 of the file it read. `App\\Support\\House` serves it to the layout. The file is committed because the box that serves Vera has no checkout of the site, and the footer says in one quiet line which `globals.css` dressed the page, so drift is visible rather than silent.\n\nWhile reading the site I found the brand gradient is declared twice under the same selector, four thousand lines apart: the first `.nav-mark` rule is typography, the second carries `--merk-ver-a` and `--merk-ver-b`. Reading only the first found no brand at all, so the reader takes every rule with that selector.\n\n**The voice is hers.** The front door leads with the site's promise, \"Before you send it, ask Vera\", and what she does follows as the lede. Every page has a title and a description of its own, which also closes the two open `pages:*` findings on this project, and the mast links back: Vera is part of abovebeyond.\n\n**Controls are the house's, once.** Six buttons were styled inline with a typed white and two different radii. There is now one filled `.act` for a real action (submitting a form), `.act.quiet` for the second way in, and `.as-text` for what the guide calls text that behaves. The light ink on the accent is the house's own token, not a typed white, and focus keeps its ring.\n\nNothing structural moved, no page was redesigned, and the review page itself is untouched: it already reads the house through its own generator. Suite 32/32.\n",
+            "branch": "workbench/house-style",
+            "title": "Vera's app in het huis: gelezen kleuren, haar eigen stem"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914061856-b0e9bd"
+}

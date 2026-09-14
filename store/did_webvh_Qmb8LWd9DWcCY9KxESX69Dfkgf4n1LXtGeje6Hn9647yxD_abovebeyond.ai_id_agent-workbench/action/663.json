@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "377ab8f6fa000393ddd94e6e1a70ed0f183abd1d",
+            "branch": "workbench/app-health",
+            "files_sha256": "713c034ab2193ff31d93707233b2300784c3b46b9bc35a41737eb7ca8844fe3a",
+            "message": "Vera vertelt wat alleen zij weet: de app-health-deur en de hartslag"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914053133-b70998"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "418423d65d95dfa6a60237b253acf7f4",
+    "effect": {
+        "detail": {
+            "base": "11be9962b9956252d8c620d399b73b2872e3d49a",
+            "branch": "workbench/mcp-over-http",
+            "commit": "410fa509cce9b453964f19411305c105f957d253",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 624,
+    "verdict": "ALLOW"
+}

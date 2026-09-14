@@ -1,0 +1,15 @@
+{
+    "action": "46e6d40cc649edf9a50d688fed61e3ac",
+    "effect": {
+        "detail": {
+            "base": "a0e0ba4fceb9e9c9e248f4a5a6370619fb6514f0",
+            "branch": "workbench/a-refusal-says-what",
+            "commit": "b00215cd512b715014dd03f652ad1dbe2790eb70",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 591,
+    "verdict": "ALLOW"
+}

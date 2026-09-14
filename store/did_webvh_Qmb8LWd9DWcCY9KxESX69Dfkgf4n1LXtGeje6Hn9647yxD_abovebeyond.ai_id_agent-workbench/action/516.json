@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "34b586ebb9e7951f9ca369a9e8d7b0ee21e690ee",
+            "branch": "workbench/vocabulary-converging",
+            "files_sha256": "bf7ab2a5290d51d33bc5e60e098f199d5e6458b77150b14b9182c30eea1c47f0",
+            "message": "Is the vocabulary converging: cohort reuse, read per cohort"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260913211124-33883f"
+}

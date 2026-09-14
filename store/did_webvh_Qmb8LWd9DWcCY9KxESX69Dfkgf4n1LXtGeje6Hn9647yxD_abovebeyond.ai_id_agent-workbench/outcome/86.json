@@ -1,0 +1,10 @@
+{
+    "action": "bd7b2dd05b5b0c3025282e8a404a301b",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on Trendwolves/gentells-site",
+    "step": 84,
+    "verdict": "DENY"
+}

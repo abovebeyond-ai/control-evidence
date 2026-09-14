@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c140b1995f2d96ab62d9daeba71112c4f62becd4",
+            "branch": "elixir/headers-2026-09-13-2020",
+            "files_sha256": "e1b785dc694d3f0194b2becd678b326f9b0779d4d17ab8aad8531524959d4413",
+            "message": "Security headers: permissions-policy",
+            "packages": 1
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "01M2E6T9NH4E6D841XM852DPMM"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The companion of portal#311. Vera became a hand on its own machine today, but the grant the gateway judges it under still named Portal as the only principal: `principal_key`, Portal's KMS key. The workbench names `principal_keys`, the two YubiKeys from the DID document, so one hand ended at the operator and the other at an application.\n\n- `ReviewHand::serviceGrant()` adds `principal_keys` from the published DID document, exactly as `Workbench` does, and keeps `principal_key` beside it.\n- The gateway picks the key the ticket names as its issuer and falls back to the principal key, so a ticket the operator signed on the YubiKey and a ticket Portal issued on the owner token are both judged, each against the key that actually signed it.\n- The test pins both: the review hand carries the operator fragments, Portal's key stays, and the resources are still the project's reviews by prefix.\n\nWith this, every hand the gateway judges is admitted by a key on a YubiKey that anyone can read from the identity log.\n",
+            "branch": "workbench/vera-operator-word",
+            "title": "De reviewhand eindigt bij de sleutel van de operator"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913185604-821c7b"
+}

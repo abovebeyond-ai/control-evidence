@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vera's worker moved to Vera's own machine today: its key (`#agent-vera`) was made there, it reaches the gateway through its own IAP tunnel on its own service account, and the gateway judges for it. One door still assumed the operator's laptop: a review ticket was issued on the owner token only, and that token lives in Portal's `.env` and nowhere else.\n\nSo the review ticket follows the workbench's rule now.\n\n- `POST ingest/capability/vera/{slug}/{review}` accepts the read token, the one a machine may hold.\n- On anything but the owner token it issues only while an admission for that project stands, the same admission the workbench needs, which the operator signs with a key or on the project page. Without an admission: 409, with what to do.\n- The owner token still issues directly, which is Portal speaking to itself.\n\nWithout this, a machine that read the token could open reviews in Portal's name, and the app would again be the trust root rather than a channel.\n",
+            "branch": "workbench/review-ticket-read",
+            "title": "Reviewticket: op het leestoken, achter de toelating van de operator"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913180551-a140d0"
+}

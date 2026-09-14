@@ -1,0 +1,15 @@
+{
+    "action": "a109c33ae5b64487fccb09266f041a9e",
+    "effect": {
+        "detail": {
+            "base": "597f1157527ffe7524908a0ac27ef553e5e7b94d",
+            "branch": "workbench/ui/vin-message-as-flash-v2",
+            "commit": "68530d7730e49e3a025f0e1e7778b2cbbeea228b",
+            "files": 14
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 441,
+    "verdict": "ALLOW"
+}

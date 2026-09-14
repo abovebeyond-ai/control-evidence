@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "exposure"
+        },
+        "resource": "portal:portal"
+    },
+    "run": "workbench-20260913194046-3e5f43"
+}

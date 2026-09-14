@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9edd1c3339e1e343bc50b7ded2d8848e9c192bdc",
+            "branch": "workbench/ui/tailwind-stocklist-modals",
+            "files_sha256": "2b07ddc0316b1e6ed401012d70ff5ee996b9409bb707a319dc6dc2903e81edb9",
+            "message": "Stocklist modals off Bootstrap grid and forms, onto the ui vocabulary"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913171239-1e396a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "efd8596da118994bc56572679c69c17461946d4a",
+            "branch": "workbench/ui/tailwind-bidding-lists",
+            "files_sha256": "a054a700f0b7fdc1b389d1adb4fa83d743fe3a39130b7470d52dcb6e2dcf6c9f",
+            "message": "Move the bids table and the three bidding modals to the ui- vocabulary"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913200621-e0a085"
+}

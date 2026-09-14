@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d643be2864fea09a46544107eab59ea6482e664c",
+            "branch": "workbench/fix/price-warning-stays",
+            "files_sha256": "f5e1d1b1cdf27058ea265607d56a09fdb9c245c92580f2701c41f385a89ca6bc",
+            "message": "The price warning disappears once both prices are filled"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914071231-80efc0"
+}

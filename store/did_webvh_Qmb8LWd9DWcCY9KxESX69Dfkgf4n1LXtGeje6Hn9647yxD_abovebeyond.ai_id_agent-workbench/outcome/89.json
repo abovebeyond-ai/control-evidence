@@ -1,0 +1,15 @@
+{
+    "action": "b40f58c3fc48da46b15f71fe47bc43cd",
+    "effect": {
+        "detail": {
+            "base": "24d8c1311f968e8ed636e9ef6a1acdc8676847f8",
+            "branch": "workbench/plans-from-projection",
+            "commit": "b50e39158efb0bd276e5a297bbebbf08cf4b180e",
+            "files": 14
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 87,
+    "verdict": "ALLOW"
+}

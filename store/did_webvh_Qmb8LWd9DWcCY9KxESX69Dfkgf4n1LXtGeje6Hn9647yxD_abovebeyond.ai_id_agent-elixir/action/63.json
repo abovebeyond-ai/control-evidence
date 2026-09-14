@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"kind\":\"meta\",\"branch\":\"headers\",\"message\":\"Security headers: referrer-policy, permissions-policy\"},{\"kind\":\"file\",\"path\":\"netlify.toml\",\"before\":\"[build]\",\"text\":\"# The protective headers this site was missing, proposed by Elixir. Only the safe set:\\n# a Content-Security-Policy is a per-site decision and is not set here. In netlify.toml\\n# rather than public\\/_headers, because this site renders on the server and that file\\n# does not reach a function response.\\n[[headers]]\\n  for = \\\"\\/*\\\"\\n  [headers.values]\\n  referrer-policy = \\\"strict-origin-when-cross-origin\\\"\\n  permissions-policy = \\\"camera=(), microphone=()\\\"\\n\"}]"
+            },
+            "packages": 2,
+            "plan_sha256": "d52540b78af69efbd82124df95b8c61d93a273d69d5a2f682d3d65a54439665b",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "ShaneDeconinck/vlamingdam-frituur"
+    },
+    "run": "01M2F5M1HAG08M94DZHSTZXSCW"
+}

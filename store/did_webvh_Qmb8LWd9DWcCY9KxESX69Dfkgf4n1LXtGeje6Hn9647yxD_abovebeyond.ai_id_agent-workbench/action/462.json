@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The read token lives on a laptop, and a laptop travels and opens links. Until now whoever held it could read `brief/{slug}` for every project: the access codes of seventeen client systems, the internal notes, the rates and the unbilled hours, in one call and without a signature. That was the largest thing a stolen laptop was worth, and it is the one piece of tonight's work that also protects the Mac as it is today.\n\nThe brief now answers in two sizes.\n\n- Status stays open on the read token: title, next action, stack, milestones, links, subscriptions, attachments, updates, evolution. A session that cannot read status is a session that guesses.\n- Access codes, internal notes, finance, unbilled hours, time entries and expenses need the operator's word: the same admission a proposal needs, signed on the YubiKey or on the project page.\n- What is held back is named (`withheld`, `withheldReason`) rather than silently absent. A brief that quietly shrinks reads as a project without codes, and that is the failure this file has warned about since the day silence became an assertion.\n- The owner token is unchanged, because it lives in Portal's own `.env`: that is Portal speaking to itself.\n\nSuite 549/550 (the one failure is `BuildStampTest`, which wants a stamp a real deploy writes).\n",
+            "branch": "workbench/brief-behind-the-word",
+            "title": "De brief: status open, de codes achter het woord van de operator"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913204532-57ea72"
+}

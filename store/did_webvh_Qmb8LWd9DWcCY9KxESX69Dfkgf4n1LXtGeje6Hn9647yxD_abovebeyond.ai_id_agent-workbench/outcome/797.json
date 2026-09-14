@@ -1,0 +1,15 @@
+{
+    "action": "0f273645568e97008246f755868c71ad",
+    "effect": {
+        "detail": {
+            "base": "999d8c3fb01a524b0fe00a1516bbdf98a4464ae6",
+            "branch": "workbench/fix/demo-disk-probe",
+            "commit": "eb1ccb28dc5ac77506c1da7950d207d077db985b",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 795,
+    "verdict": "ALLOW"
+}

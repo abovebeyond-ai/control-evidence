@@ -1,0 +1,15 @@
+{
+    "action": "22eccf79a9d68c6083f54eca5986c2f9",
+    "effect": {
+        "detail": {
+            "base": "d7cdf1bd6a9060480a14168b75ab1418f3fb3bde",
+            "branch": "workbench/word-for-the-act",
+            "commit": "5c267ace0bb8688b46ed6ecb8348edf8ffb0e499",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 552,
+    "verdict": "ALLOW"
+}

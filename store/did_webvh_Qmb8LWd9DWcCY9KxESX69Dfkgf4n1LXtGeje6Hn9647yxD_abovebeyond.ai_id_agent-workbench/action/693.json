@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "exposure"
+        },
+        "resource": "portal:menukaart-webapp"
+    },
+    "run": "workbench-20260914053745-a69b1b"
+}

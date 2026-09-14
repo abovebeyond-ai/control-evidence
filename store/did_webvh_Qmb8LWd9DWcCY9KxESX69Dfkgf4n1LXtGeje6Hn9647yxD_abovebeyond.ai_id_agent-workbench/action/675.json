@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "724df37e8089c6ffa2ecd85de0c6eedbc9d1f142",
+            "branch": "workbench/ssr-headers-in-the-app",
+            "files_sha256": "aa14dbae23ca6448524cdc5de4254c6fbe0726403e746a32654456c27586af8f",
+            "message": "What answers the request sends the header: SSR gets middleware\n\nmenukaart-webapp has now proved both of Netlify's ways wrong for a site\nthat renders on the server. public/_headers deployed and changed nothing.\nA headers block in netlify.toml deployed and changed nothing: the page\nstill answers with the two headers Netlify sends itself, on the redirect\nand on the page behind it.\n\nNetlify's custom headers do not reach a response that comes from a\nfunction, and this site is a function. What answers the request is the\napp, so the app is where the header belongs, exactly as in Laravel: an\nAstro middleware that sets what is missing and overrides nothing.\n\nA site that already has middleware is one where four lines are a person's\nedit, and there the hand says where they go rather than place them blind."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914053431-64867b"
+}

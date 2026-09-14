@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Overview gets one row: whether the vocabulary is converging.\n\n\"Vocabulary \u00b7 converging \u00b7 [bars] \u00b7 11.3% of the 6,860 concepts minted in week 34, 2026 came back\". One bar per week of minting, its height the share that came back, the freshest weeks drawn pale because they are too young to judge and the note explaining them appearing only when there is something pale on screen.\n\nIt sits above the supervisor row on purpose: this is a WEEKLY reading and everything below it is about this minute. Mixed into the same status line, both got quieter.\n\nThe reading comes from `/pipeline-delta` (pipeline alongside) and costs nothing extra: it travels with the concept flow that row already reads.\n\nChecked against a copy of the live database. The component lints clean; the two errors `npm run lint` reports in Overview.jsx are on main already.\n",
+            "branch": "workbench/vocabulary-panel",
+            "title": "The Overview says whether the vocabulary is converging"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260913213631-7d816c"
+}

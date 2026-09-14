@@ -1,0 +1,15 @@
+{
+    "action": "8fb1ceb77b4658555680ff2d48541183",
+    "effect": {
+        "detail": {
+            "base": "d5b7e16e3ad7dac33cf985a8947ac3c202482435",
+            "branch": "workbench/first-under-the-successor",
+            "commit": "58a36efcbcba71b75c8cbbc2deca88cde31d48f7",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 0,
+    "verdict": "ALLOW"
+}

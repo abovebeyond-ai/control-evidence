@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b3b2d3aa3c4b44d0f8a7aeb195d42b9b1b370d8f",
+            "branch": "workbench/headers-of-the-page-a-visitor-gets",
+            "files_sha256": "0a8790f8e76ae5590f09288efccd24629b68b6c6511234432410382913a99e1c",
+            "message": "The headers read are those of the page a visitor gets\n\nwww.sportbusinessgame.eu answers 301 to the apex, and that redirect comes\nfrom the web server before any application: one header on the hop, all\nfour on the page behind it. The measurement read the hop, so a site that\nhad just done everything right looked like a site that had done nothing,\nand the judge would have called a true claim false.\n\nThe header read now follows a redirect, at most three hops and never off\nthis site: a redirect elsewhere is another site's answer. The probes keep\nfollowing nothing, because there a redirect IS the answer and following it\nwould let another page's content count as a find."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913210754-d06e9f"
+}

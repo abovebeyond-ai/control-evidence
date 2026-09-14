@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "de1f84845486b15a9c9d21079a1d2775b1850171",
+            "branch": "workbench/brief-behind-the-word",
+            "files_sha256": "97b38e918b1e13c2c5b12f16781b3a005d1ca256b636a0c8594a71770f71da1d",
+            "message": "De brief geeft de codes pas op het woord van de operator"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913204532-57ea72"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "999d8c3fb01a524b0fe00a1516bbdf98a4464ae6",
+            "branch": "workbench/fix/demo-disk-probe",
+            "files_sha256": "13839d79590390109bcdc474a4f25e50edb5020956e703645ff1c5397a42f8f3",
+            "message": "The demo disk asks whether one file exists, and never waits forever"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914064812-59cdf9"
+}

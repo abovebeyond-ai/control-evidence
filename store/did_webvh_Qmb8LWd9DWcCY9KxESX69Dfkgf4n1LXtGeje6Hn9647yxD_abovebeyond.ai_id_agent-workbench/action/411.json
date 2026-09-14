@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two headers proposals were refuted **seven minutes after they merged**, against an exposure measurement taken *before* the merge. One of the two sites (abovebeyond) was already sending all three headers at that moment; the other (sportbusinessgame) had not been deployed yet. Merging is not deploying, and deploying is not measuring.\n\nThe judge now waits for a reading taken after the pull request landed: no reading since the merge is no verdict, exactly as an open proposal is no verdict. `pullByNumber` carries `mergedAt` for it, and `Judge::SECTION` names the reading each claim type is decided by.\n\nThis was never only a headers problem: every claim type was compared against whatever the last measurement happened to say. A refutation costs a playbook its rung for good (`confirmed >= 10 && refuted === 0`), so judging too early writes a record that is wrong in the harshest direction.\n\nTests: a reading from before the merge is no verdict and writes nothing; one from after decides. Checked that it bites. 648 green, PHPStan, Pint.\n\n**The two wrong entries are still in the ledger** (a ledger is not rewritten), and they block that playbook from ever reaching `act`. A correction path that keeps the original visible is the subject of the next proposal, if you want it.\n",
+            "branch": "workbench/judge-after-the-merge",
+            "title": "A claim is judged against the world after the change, never before it"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913202559-446e8a"
+}

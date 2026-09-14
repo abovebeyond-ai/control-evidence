@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "df1339502e713cabce646143c6147a0054add580",
+            "branch": "workbench/a-claim-rests-on-what-the-hand-wrote",
+            "files_sha256": "2029376118f2c716589f241ee74717f269e1442265f2d53c89407bf890c6efc4",
+            "message": "Een bewering steunt op wat de hand schreef\n\nmenukaart-webapp bevestigde twee runs waarvan het mechanisme aantoonbaar\nniets deed: eerst public/_headers, dan een blok in netlify.toml, allebei\nuitgerold en allebei zonder effect. De kopregels kwamen er door de hand\nvan een mens, in de middleware van de app. De rechter zag de wereld, zag\ndat ze klopte, en schreef het op naam van de agent. Twee van de negen\nbevestigingen waren zo het werk van iemand anders, en de trede die daarop\nstaat is een vertrouwensmaat.\n\nDus zegt een bewering nu ook waarop ze steunt: welke bestanden deze run\nschreef. Staat een van die bestanden niet meer op de hoofdtak, dan blijft\nde run onbeoordeeld, met de reden erbij. Geen weerlegging: of het ooit\nwerkte is dan niet meer te zien. Een pad waar GitHub geen antwoord op\ngeeft telt als aanwezig; stilte is geen bewijs.\n\nEn een intrekking mag definitief zijn (--final), voor precies het geval\nhierboven: wat de hand schreef is weg, de bewering werd waar door iemand\nanders, en elke volgende meting zou haar blijven bevestigen."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914063935-962ca3"
+}

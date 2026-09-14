@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "be1de822a4a06dc31a6b5a45069e9b27e47aa52f",
+            "branch": "workbench/house-style",
+            "files_sha256": "e8691d114f478f43438572514671ae2c7e2fcb7e4b85dce93bdea38cc7cb5372",
+            "message": "De app draagt het huis: tokens gelezen, de stem van haar eigen pagina, \u00e9\u00e9n bediening"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914061856-b0e9bd"
+}

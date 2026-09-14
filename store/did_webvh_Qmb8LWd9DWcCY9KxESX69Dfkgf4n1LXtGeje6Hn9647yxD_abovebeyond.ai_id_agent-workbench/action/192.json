@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e7b1ae48113797f6c46c6fc8d48d5e29dd269e84",
+            "branch": "workbench/recurrence",
+            "files_sha256": "7bbff01d20af91b9afdd19bd47c8edc8fcef1a58cb53f8a3465cdea654fcac13",
+            "message": "The record behind a trend: how much of each month touched it"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260913185803-ca296e"
+}

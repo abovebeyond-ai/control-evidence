@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0e12fec7f329da7bfac19e216575a67dee5d4fdd",
+            "branch": "workbench/ui/mail-theme-v3",
+            "files_sha256": "51614ef5520b28c81feb64c7c7433c0d322ce16eb0b2a0b172aa279a89095111",
+            "message": "Transactional mail in the house style, with a preview command"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913212737-e8bdd1"
+}

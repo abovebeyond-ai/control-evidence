@@ -1,0 +1,15 @@
+{
+    "action": "16cfc95b63574f1532f9592b78ae5ed6",
+    "effect": {
+        "detail": {
+            "base": "9782ced3b9f02728a98e9d28570017264487c949",
+            "branch": "workbench/patient-reconcile",
+            "commit": "e8bb194447b1e980fe870e2e9cf0904bcf311612",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 492,
+    "verdict": "ALLOW"
+}

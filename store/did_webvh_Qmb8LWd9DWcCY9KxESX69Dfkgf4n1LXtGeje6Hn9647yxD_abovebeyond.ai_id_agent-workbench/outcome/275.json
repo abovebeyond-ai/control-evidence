@@ -1,0 +1,14 @@
+{
+    "action": "68b92e6cafdb271cd946462a471b4fc7",
+    "effect": {
+        "detail": {
+            "playbook": "headers",
+            "project": "sportbusinessgame",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 273,
+    "verdict": "ALLOW"
+}

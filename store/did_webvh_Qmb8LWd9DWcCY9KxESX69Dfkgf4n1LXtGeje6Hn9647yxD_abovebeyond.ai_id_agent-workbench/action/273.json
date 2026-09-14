@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.playbook",
+        "params": {
+            "playbook": "headers"
+        },
+        "resource": "portal:sportbusinessgame"
+    },
+    "run": "workbench-20260913193152-0bdef6"
+}

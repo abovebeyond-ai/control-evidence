@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "07cd8b5b9c720c382d4e1baba659ce7239eb2183",
+            "branch": "workbench/feat/photo-backlog-visible",
+            "files_sha256": "7ea303d2ffdd4ae04d048a70e47525007322b946265b96fd78dcef90933c6451",
+            "message": "The derived photo backlog is counted, reported and swept"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913185706-a2953b"
+}

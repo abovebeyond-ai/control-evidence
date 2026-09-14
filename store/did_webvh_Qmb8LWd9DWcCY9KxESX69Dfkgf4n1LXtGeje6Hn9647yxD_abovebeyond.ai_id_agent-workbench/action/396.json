@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5c33f3163fe9db299d8d4baa0f8b6cb2c7d699ba",
+            "branch": "workbench/record-once",
+            "files_sha256": "e440fb663ee075a0420e25334e89444fd6fb4fb42f752f2e39ca2dd92708e30f",
+            "message": "A per-round cost does not belong to the row"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260913202024-6ac50d"
+}

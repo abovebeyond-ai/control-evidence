@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "916604d87ba6fb1f9d426ad946f25d54f2924ad0",
+            "branch": "workbench/project-style",
+            "files_sha256": "7386578628ff20c453d864d760ebaa8ddd7aff2bba09187d08bb8bfd6bc17dec",
+            "message": "De opmaak is die van het project: Pint over wat een bestandenplan schreef\n\nHet eerste voorstel van de kopregelhand viel op de stijlpoort van de CI van\nhet project (portal#310): een import die het bestand niet gebruikte, en een\nklassenaam voluit waar dat project ze als import schrijft. Allebei\nhuisstijl, geen fout in de wijziging.\n\nEen hand die elke huisstijl moet kennen, kent er geen enkele goed. Draait\nhet project Pint, dan laat de runner die na het schrijven over exact de\ngeschreven bestanden gaan, v\u00f3\u00f3r de tests, zodat het voorstel de poort\nhaalt van wie het moet lezen. Geen Pint: dan blijft het zoals de hand het\nschreef."
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260913185852-b69480"
+}

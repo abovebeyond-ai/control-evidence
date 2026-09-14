@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "215b570c1d8a22c44a866f2573aa68e824781e78",
+            "branch": "workbench/ui/tailwind-damage-v2",
+            "files_sha256": "b616e087aa21a7d162dbbd34ff4b548332027f3565b5a92182d97dc1ae11b397",
+            "message": "Move the damage tab of the vehicle sheet to the ui vocabulary"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913201424-b83635"
+}

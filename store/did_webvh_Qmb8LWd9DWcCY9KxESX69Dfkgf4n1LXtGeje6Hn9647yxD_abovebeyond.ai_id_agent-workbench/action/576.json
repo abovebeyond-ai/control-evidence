@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "35a37b12b7b8525e2b3dc06ba21713bc376ec07a",
+            "branch": "workbench/netlify-ssr-headers",
+            "files_sha256": "965161a894d31d78f518fda44972c916d01b9c07a90559956d444a688307383c",
+            "message": "A Netlify site that renders on the server says it in netlify.toml\n\nmenukaart-webapp merged its public/_headers, deployed green, and kept\nsending two headers. It is an Astro site with output \"server\": every\nrequest is answered by a function, and a file in the published directory\nnever touches that response. The hand had written the right thing in the\nwrong place, and the site said so.\n\nSo the writer follows how the site answers: a static build keeps\npublic/_headers, a server-rendered one gets a headers block in\nnetlify.toml, which Netlify applies to what it serves either way. Both\nrefuse to rewrite: an existing _headers, an existing block, or a\nnetlify.toml without one unmistakable [build] line to place it before."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913214952-402a4e"
+}

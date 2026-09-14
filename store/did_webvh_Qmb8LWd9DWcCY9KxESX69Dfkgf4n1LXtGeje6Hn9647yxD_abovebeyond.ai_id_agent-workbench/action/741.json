@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.playbook",
+        "params": {
+            "playbook": "headers"
+        },
+        "resource": "portal:vera"
+    },
+    "run": "workbench-20260914060644-10ce46"
+}

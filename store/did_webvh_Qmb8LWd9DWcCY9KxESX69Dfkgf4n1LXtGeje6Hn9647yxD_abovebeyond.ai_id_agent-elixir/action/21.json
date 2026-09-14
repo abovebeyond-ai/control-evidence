@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f7c32aeb38ff462da693a48d3facad3904c63ffc",
+            "branch": "elixir/headers-2026-09-13-1959",
+            "files_sha256": "d136a09424ad73c4ac4d065bcfea1a1087031755fdf4e7c5cdf02f779d513ae3",
+            "message": "Security headers: strict-transport-security, referrer-policy, permissions-policy",
+            "packages": 3
+        },
+        "resource": "ShaneDeconinck/good-governance"
+    },
+    "run": "01M2E5K6FVC2W9S3C2EGS1CT3R"
+}

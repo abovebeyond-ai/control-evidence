@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pins release v0.20.0 (the capability kept beside the record; verify re-checks the operator's word against the published key, #55) in startup.sh with the sha256 of control-gateway-linux-amd64 from the release's SHA256SUMS, checked here against the downloaded asset. After merge: pull main, rehearse.sh upgrade.",
+            "branch": "workbench/vm-v0-20-0",
+            "title": "The VM on v0.20.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913163320-8beb75"
+}

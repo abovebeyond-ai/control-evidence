@@ -1,0 +1,14 @@
+{
+    "action": "ae23b93850717678dbd77bc084807c63",
+    "effect": {
+        "detail": {
+            "playbook": "headers",
+            "project": "portal",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 225,
+    "verdict": "ALLOW"
+}

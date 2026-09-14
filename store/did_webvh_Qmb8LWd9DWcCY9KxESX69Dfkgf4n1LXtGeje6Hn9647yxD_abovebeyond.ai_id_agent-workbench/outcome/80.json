@@ -1,0 +1,15 @@
+{
+    "action": "5653ce2a8f6390105ef99ca21cb3409b",
+    "effect": {
+        "detail": {
+            "base": "9e0a8529ec718f4815f5eb075335cafac3dd0995",
+            "branch": "workbench/rename-behind-a-step",
+            "commit": "912325d061474e299b0e84c74f7eface3f57d7be",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 78,
+    "verdict": "ALLOW"
+}

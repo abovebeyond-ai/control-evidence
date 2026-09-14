@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2f8dd8ebd97bf22a6d5736e708a77155d26862bf",
+            "branch": "workbench/vera-word-per-act",
+            "files_sha256": "3c48c75dd83e8e928884f69865a16746278b41c7114393dc5aef6fc357a13374",
+            "message": "De reviewhand: uitnodigen en zegelen vragen het woord voor die ene daad"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913210200-a0584e"
+}

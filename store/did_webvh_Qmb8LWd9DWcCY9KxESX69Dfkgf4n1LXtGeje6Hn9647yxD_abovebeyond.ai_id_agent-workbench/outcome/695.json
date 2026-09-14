@@ -1,0 +1,14 @@
+{
+    "action": "63d6cf367b55e423f1457cd7068aba01",
+    "effect": {
+        "detail": {
+            "only": "exposure",
+            "project": "menukaart-webapp",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 693,
+    "verdict": "ALLOW"
+}

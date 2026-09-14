@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "review.invite",
+        "params": {
+            "email": "hello@shanedeconinck.be"
+        },
+        "resource": "vera/vera/smoke-two"
+    },
+    "run": "vera-20260913215727-730315"
+}

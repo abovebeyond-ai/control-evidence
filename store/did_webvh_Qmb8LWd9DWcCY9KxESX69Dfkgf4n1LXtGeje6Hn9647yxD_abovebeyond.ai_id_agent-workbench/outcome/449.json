@@ -1,0 +1,15 @@
+{
+    "action": "d3adafb87058305b1a1dfd5a7c5adee7",
+    "effect": {
+        "detail": {
+            "base": "bdfef8b7d2b9c2a626a375674a55fcef60483e56",
+            "branch": "workbench/ledger-correction",
+            "commit": "2bd47d407f0759ed3e145b3573d5f1440251e842",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 447,
+    "verdict": "ALLOW"
+}

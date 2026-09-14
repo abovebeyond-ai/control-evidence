@@ -1,0 +1,14 @@
+{
+    "action": "6aaea7a77d38008ca211b3512daaa5f8",
+    "effect": {
+        "detail": {
+            "playbook": "headers",
+            "project": "afrodidact-website",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 636,
+    "verdict": "ALLOW"
+}

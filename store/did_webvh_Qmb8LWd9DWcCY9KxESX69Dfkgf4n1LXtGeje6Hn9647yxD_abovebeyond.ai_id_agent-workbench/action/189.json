@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #87. That PR gave `frontier-residuals.mjs` a `--tag`; this one makes the review page use it, because the page was still saying the opposite.\n\nThe reading behind Finding 3's \"the 108 binding errors of the first study are 16 in the second\" carried this note: *CATCH. The published residuals script has no --tag option [...] The paper's 16 did not regenerate here. Your call.* True when it was written, false since #87, and a review that reports a defect which is no longer there is worse than one that reports none.\n\n- `regenerate.mjs` gains a `residuals2` entry: the same classifier, `--tag frontier2`, into `report/sources/raw/frontier2-residuals.txt`.\n- `build.mjs` takes it as a source (\"second frontier study residual errors (--tag frontier2)\") and the reading is now a quote against it, `binding: 16 (64%) in 3 query-runs`, instead of a flagged catch against the summary. The note says why the binding figure comes from the classifier and not from the summary line, which counts addressability more broadly (80% of 25 and 43% of 7, about 23).\n- The Setup paragraph changed in #87, so its hash changed and the model pass read it again: 18 proposals, 6 marks, and the reproducibility claim is back as `para:pe3f560ebb981.inf4` with the same question against the corrected text.\n\nRebuild: 674 of 674 verified, 161 blocks, 654 readings, 336 bound, 115 sources, nothing left pending.\n\nNot in this PR: `report/review.json`. The judgements are the reviewer's own state and the build never writes them; they stay to be committed by hand. No signed root is touched either, the last sign-off covers a root from 3 September.\n",
+            "branch": "workbench/review-residuals2",
+            "title": "Source the second study's residuals in the review"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260913185739-6ec915"
+}

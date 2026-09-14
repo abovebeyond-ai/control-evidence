@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d5b7e16e3ad7dac33cf985a8947ac3c202482435",
+            "branch": "workbench/first-under-the-successor",
+            "files_sha256": "48a02f170b10b7853a1642450ed0ab991e18d0cf7de32fb1b2dfd611a234a5ec",
+            "message": "Rondelog: het eerste voorstel onder de opvolger-identiteit, toegelaten door #operator op de YubiKey"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260913162512-836b0b"
+}

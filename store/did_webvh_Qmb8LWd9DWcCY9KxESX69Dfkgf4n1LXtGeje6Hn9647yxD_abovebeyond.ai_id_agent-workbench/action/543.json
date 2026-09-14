@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "39b6714a3cfd8e3a598d017d3e01d7f4d23c2892",
+            "branch": "workbench/vocabulary-panel",
+            "files_sha256": "fb6961df77606b8c4ee19b6254e19d775065560d9ec3ba7cac04e73311fd769e",
+            "message": "The Overview says whether the vocabulary is converging"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260913213631-7d816c"
+}

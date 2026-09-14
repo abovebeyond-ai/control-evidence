@@ -1,0 +1,15 @@
+{
+    "action": "4a265f228a966126c93e73b573ae5a9f",
+    "effect": {
+        "detail": {
+            "base": "9edd1c3339e1e343bc50b7ded2d8848e9c192bdc",
+            "branch": "workbench/ui/tailwind-ownstock-1",
+            "commit": "ccd8e617a6e0eb79cdfb201f33e3686f3df48a30",
+            "files": 7
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 48,
+    "verdict": "ALLOW"
+}

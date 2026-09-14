@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9f51c6c504c3875316e179d42ca5b39c1aad3780",
+            "branch": "workbench/statement-operators-word",
+            "files_sha256": "628fd9f741aa6cbf489e1f9ebc6d2ad453b3d2e56f43bbc548a4921c9dcaab6a",
+            "message": "Conformiteitsverklaring: het woord van de operator op het token, en de opvolging van de identiteit\n\nSinds 13 september 2026 is het woord van de operator voor de werkbank een handtekening op een YubiKey (#operator, #operator-2, gepubliceerd in het DID-log), door de gateway getoetst aan die sleutel, naast het record bewaard en door verify en de relying party opnieuw getoetst: de keten van een werkbankactie eindigt bij een persoon, niet bij Portal (4.2.2, 4.1.6, 6.3.1). De passkey-weg via Portal is als terugval benoemd, met haar grens. En de opvolging: de eerste identifier is definitief op versie 14 na een sleutelgeneratie op het verkeerde token op aanwijzing van de assistent; de opvolger onder /id draagt dezelfde sleutels, twee volgende sleutels per versie, en wordt op de gedeelde #key-1 vertrouwd. Twee regels in de vertrouwenslijst: de operator-sleutels en wat een token niet kan tonen."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913171006-1c9da4"
+}

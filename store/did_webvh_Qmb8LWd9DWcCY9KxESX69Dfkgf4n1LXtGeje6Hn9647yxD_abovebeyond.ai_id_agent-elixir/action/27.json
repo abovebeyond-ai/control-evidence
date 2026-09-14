@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"kind\":\"meta\",\"branch\":\"headers\",\"message\":\"Security headers: x-content-type-options, referrer-policy, permissions-policy\"},{\"kind\":\"file\",\"path\":\"public\\/_headers\",\"content\":\"IyBUaGUgcHJvdGVjdGl2ZSBoZWFkZXJzIHRoaXMgc2l0ZSB3YXMgbWlzc2luZywgcHJvcG9zZWQgYnkgRWxpeGlyLgojIE9ubHkgdGhlIHNhZmUgc2V0OiBhIENvbnRlbnQtU2VjdXJpdHktUG9saWN5IGlzIGEgcGVyLXNpdGUgZGVjaXNpb24gYW5kIGlzIG5vdCBzZXQgaGVyZS4KLyoKICB4LWNvbnRlbnQtdHlwZS1vcHRpb25zOiBub3NuaWZmCiAgcmVmZXJyZXItcG9saWN5OiBzdHJpY3Qtb3JpZ2luLXdoZW4tY3Jvc3Mtb3JpZ2luCiAgcGVybWlzc2lvbnMtcG9saWN5OiBjYW1lcmE9KCksIG1pY3JvcGhvbmU9KCkK\"}]"
+            },
+            "packages": 2,
+            "plan_sha256": "e0566a5b3079a618ff5ecbc7e51dbc7713da50d0973247fe70fd609ec07ae970",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "01M2E5RA02AZ5WQPGN2D5BVKD8"
+}

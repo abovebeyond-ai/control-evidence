@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The record I added this evening made the trends projection time out, and took the showcase graph and the taxonomy down with it.\n\n**What it cost.** `recurrenceFor` read the corpus-wide monthly intake, its denominator, once per trend: a scan of 188,000 signals, 160ms each, 110 times. The projection went from a couple of seconds to eighteen, and the site gives up at ten. Measured against a copy of the live database: 14,259ms per-card, 1,979ms with the denominator read once.\n\n**Why the other two endpoints failed as well.** The server is single threaded, so eighteen seconds of synchronous SQLite blocks everything queued behind it. They were not broken; they were waiting. Fixing the one fixes all three, which is worth knowing before anyone goes looking at the taxonomy.\n\n`monthlyIntake(db)` is now the round's read and travels in as `shared`, along with `watchingSince`, which was a second scan for a value that cannot change between two trends measured a millisecond apart. A single trend still works on its own: the helper computes what it was not given.\n\nThe lesson in the comment, since this is the second time this week that something cheap alone was written straight into a loop: a per-round cost does not belong to the row.\n\nSuite 653 green.\n",
+            "branch": "workbench/record-once",
+            "title": "The record's denominator is read once, not once per trend"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260913202024-6ac50d"
+}

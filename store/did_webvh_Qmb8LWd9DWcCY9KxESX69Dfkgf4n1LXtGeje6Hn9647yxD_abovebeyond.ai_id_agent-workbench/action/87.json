@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "24d8c1311f968e8ed636e9ef6a1acdc8676847f8",
+            "branch": "workbench/plans-from-projection",
+            "files_sha256": "8cba2f4c93fc85c92e5b9bd24b556ff11274ee8f1f2ba919263b875dd2c90a34",
+            "message": "The offer comes from the Observatory through the projection"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260913175131-e5c752"
+}

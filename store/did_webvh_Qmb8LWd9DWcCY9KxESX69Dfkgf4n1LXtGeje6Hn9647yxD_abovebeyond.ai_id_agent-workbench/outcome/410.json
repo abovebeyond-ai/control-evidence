@@ -1,0 +1,15 @@
+{
+    "action": "f630ad5902d925a4a91eec700e63d300",
+    "effect": {
+        "detail": {
+            "base": "ede4e73de7feca40cf68444d5d537dcc0972355b",
+            "branch": "workbench/judge-after-the-merge",
+            "commit": "7095bf8b3b0ecb24579802cedc5d52811ae25d74",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 408,
+    "verdict": "ALLOW"
+}

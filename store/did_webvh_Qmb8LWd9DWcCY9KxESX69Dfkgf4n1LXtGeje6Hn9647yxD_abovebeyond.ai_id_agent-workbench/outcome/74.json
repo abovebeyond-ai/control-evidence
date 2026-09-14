@@ -1,0 +1,15 @@
+{
+    "action": "7a75833b45f5249c5bead97338b44e8a",
+    "effect": {
+        "detail": {
+            "base": "6c505c1da20366d498ec60c0fd24509213c6901f",
+            "branch": "workbench/passkeys-named-and-kinds",
+            "commit": "6d66de7f7d052e94368d5e6df8182e415dbd4876",
+            "files": 7
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 72,
+    "verdict": "ALLOW"
+}

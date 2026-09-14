@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`afrodidact.org` runs on its own machine behind nginx: no framework to hook, no Netlify to configure. Its headers are a line in a server block, and that line lives on a box this hand does not touch. But the project keeps its nginx config under version control (`deploy/nginx/sites-available/afrodidact.conf`) and copies it out on deploy, and there the header is a line in a file like any other.\n\n**Third target `nginx`:** a `*.conf` under `deploy/nginx` that names the measured host in exactly one `server_name <host>;` line. The plan inserts the `add_header \u2026 always;` lines in that block (`always`, because a header that vanishes on an error page cannot be relied on).\n\n**Two refusals keep it honest:**\n- the config already uses `add_header` anywhere: nginx drops every inherited header the moment a location sets one of its own, so these lines would silently not reach every path\n- the host is named in more than one block: which block serves it would be a guess\n\nThe deploy stays a person's (that project's README says `ssh root@\u2026 'nginx -t \\&\\& systemctl reload nginx'`), so the claim waits for the measurement like any other.\n\n646 tests, PHPStan, Pint.\n",
+            "branch": "workbench/headers-nginx",
+            "title": "The headers hand writes nginx too, when the repo carries the config"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913201152-1cb282"
+}

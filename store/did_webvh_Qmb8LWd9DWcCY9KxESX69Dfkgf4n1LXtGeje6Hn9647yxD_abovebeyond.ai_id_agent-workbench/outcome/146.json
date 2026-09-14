@@ -1,0 +1,15 @@
+{
+    "action": "beed949af5a6e843755945a284c02a91",
+    "effect": {
+        "detail": {
+            "base": "bf89ce2290c1da75e1fb66edd4300a7c946ebacc",
+            "branch": "workbench/lock-the-door",
+            "commit": "6b137f7a082daeb413e73fd5ee1db15ea910013a",
+            "files": 9
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 144,
+    "verdict": "ALLOW"
+}

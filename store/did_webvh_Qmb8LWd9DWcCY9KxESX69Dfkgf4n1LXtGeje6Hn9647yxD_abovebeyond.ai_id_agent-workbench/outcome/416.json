@@ -1,0 +1,15 @@
+{
+    "action": "8959c8f23a2b7a0f894105eab8d6f350",
+    "effect": {
+        "detail": {
+            "base": "ede4e73de7feca40cf68444d5d537dcc0972355b",
+            "branch": "workbench/netlify-without-public",
+            "commit": "69b6fbd4f60f488e49484e52645c21fdc49091a8",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 414,
+    "verdict": "ALLOW"
+}

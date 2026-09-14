@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "465f00381d35974dde95c6c9e1a0998166cbba5f",
+            "branch": "workbench/security/encrypt-carpass-password",
+            "files_sha256": "493588d46a5fd7578572b499a62f716e61ea9bddd60388c39f884394520905b0",
+            "message": "Car-Pass passwords encrypted at rest and never echoed back"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913192735-4042ed"
+}

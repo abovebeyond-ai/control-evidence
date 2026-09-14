@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "504d5f5efdb80e4ed7a5ba013e372fce65ccade2",
+            "branch": "workbench/plans-tab",
+            "files_sha256": "e689a66501966f3910c4318f26ddc21862d70be7a5ecb3532396b8949a0cbcb8",
+            "message": "Settings: the Plans tab, the offer on gentells.com as a table"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260913175148-93d466"
+}

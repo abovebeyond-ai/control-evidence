@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Node gives a process one thread of JavaScript and better-sqlite3 is synchronous, so a query does not yield. While this server built the public trend set, every other request to it waited: that is how the articles, the showcase graph and the taxonomy all timed out at ten seconds last night while nothing was broken, and why a retry a minute later worked every time.\n\n**First, a correction.** I told Shane the engine was holding the thread. It cannot: the engine is separate processes and the database is in WAL, so a reader is never blocked by a writer. The server was blocking itself.\n\n**`heavy.mjs`** names the three reads that walk the table: the pipeline stats, the 24 hour delta, and the public trend set. Naming them in one table is what lets them run elsewhere, and it also makes them testable, which they were not while they lived inside a route handler.\n\n**`heavy-pool.mjs`** runs them on one long-lived worker, one job at a time. Two threads scanning the same table would only trade one queue for another; the point is to keep the SERVER's thread free. It refuses three things: a crashed worker never takes the endpoint with it (the pending calls reject and the next call starts a fresh one), a hung job never holds the later ones (two minute ceiling), and a worker that cannot start at all means the job runs inline, so the worst case is exactly today's behaviour rather than an outage.\n\n**Measured on the box, not on a copy.** A copy of the database on my machine reported the stats at 42 seconds; the box says 1.6, so every number here was taken there. The trend set is about 5.4 seconds of records and subgraphs. Served through the worker it still takes 6.7 seconds, and a request arriving two seconds in now answers in 1.7 milliseconds instead of waiting for all of it.\n\nFive tests on the pool, including that stopping it rejects what was in flight rather than leaving it hanging. Suite 666 green.\n\nOne thing found while building it: the worker was unreferenced so it would not hold the process open, which meant a script awaiting an answer could exit without one. It now holds the loop only while a call is outstanding.\n",
+            "branch": "workbench/heavy-off-the-thread",
+            "title": "The heavy reads run on a thread of their own"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914050713-3e15a6"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "4d5328eca3bec67b9a35cbc346497ddf",
+    "effect": {
+        "detail": {
+            "base": "11315e0ecec3fe5d96e9268d044092c5a2ba32af",
+            "branch": "workbench/own-tunnel",
+            "commit": "23dff8a587ce5536e3fdc8136e25a281f58076f6",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 111,
+    "verdict": "ALLOW"
+}

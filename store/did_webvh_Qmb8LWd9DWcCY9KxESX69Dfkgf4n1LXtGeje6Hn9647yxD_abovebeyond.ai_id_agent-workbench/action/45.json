@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nSince PR 238 nearly every test in CI is marked risky: \"Test code or tested code removed error handlers other than its own\" (and the same for exception handlers). The tests still pass, but the marker drowns out any genuine risky test.\n\nThe cause is the route sweep in `tests/Feature/SmokeTest.php`. Its data provider `reachableRoutes()` boots the application through `bootstrap/app.php` + the console kernel to read the route table. A data provider runs before any test, outside every `setUp`/`tearDown`, so whatever it starts stays: the `HandleExceptions` bootstrapper's error and exception handlers remain on the PHP handler stack for the rest of the process. PHPUnit snapshots that stack before each test; Laravel's `tearDown` (`HandleExceptions::flushState()`) restores every handler and re-enables only PHPUnit's own. Every test therefore ends with fewer handlers than it started with, which is exactly what PHPUnit reports.\n\nConfirmed locally: `tests/Unit/BluritServiceTest.php` alone is clean; the same file run together with `SmokeTest --filter skipped_routes` (so only the provider runs) marks all three Blurit tests risky.\n\n## What\n\n- The provider reads the route table once (memoized, shared with `test_skipped_routes_exist`, so no second bootstrap inside a running test) and then tears its application down the way Laravel's own `tearDown` does: `HandleExceptions::flushState()`, `$app->flush()`, facades cleared, and the container instance and facade application restored to what they were before (nothing outside a test, the running app inside one).\n- `test_skipped_routes_exist` now asserts the generated list is not empty. With `SKIPPED` empty it performed no assertions at all, which was its own risky marker hiding behind the handler one.\n- The provider's output is unchanged: `phpunit --list-tests tests/Feature/SmokeTest.php` gives the identical 107 cases before and after.\n\n## Before / after\n\nFull suite locally (`php artisan test` against MySQL `forge_test`):\n\n| | risky | of which \"removed error handlers\" | of which \"no assertions\" |\n|---|---|---|---|\n| origin/main | 366 of 415 | 366 | 1 (`test_skipped_routes_exist`) |\n| this branch | 0 of 415 | 0 | 0 |\n\n(One failure in both runs, `BuildStampTest`, is local only: the stamp reads the loose ref next to `.git/HEAD`, which a git worktree keeps in the main checkout. CI runs in a clone.)\n",
+            "branch": "workbench/test/no-risky-marker",
+            "title": "Tests: no more 'removed error handlers' risky marker on every test"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913171152-41777f"
+}

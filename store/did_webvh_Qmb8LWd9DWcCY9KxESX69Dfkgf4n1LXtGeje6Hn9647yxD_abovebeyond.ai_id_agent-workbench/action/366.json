@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vera's three outward acts go through the control gateway since today, and the gateway holds the app's operator token. But the laptop still held that same token, so the gateway was optional there: a session could publish, invite or seal by calling the app directly, with no record. That is the hole `report.mjs` had until this morning.\n\nA second token, and the line between them is the record.\n\n- `VERA_MACHINE_TOKEN` opens what a machine that *prepares* a review needs: the record (`review.json`, `events.json`, `approvals.json`), the key ceremony (`device-keys`, `people/keys.json`, `devices.json`, `PUT keys`, `keys.json?recipient=`), the encrypted manifests (`PUT sources`), an approval request, and a PDPP grant.\n- `VERA_OPERATOR_TOKEN` keeps exactly the three acts that leave a record: `PUT /r/{id}` (publish), `POST people/invite`, `PUT root-signature` (seal). It belongs in the gateway's secrets and nowhere else.\n\nWhy the ceremony stays on the machine rather than moving to the sealed one: wrapping a content key needs the content key, and that must never reach the gateway. So \"everything through the gateway\" would be the wrong rule here; \"everything that leaves a record through the gateway\" is the right one.\n\n`MachineToken` middleware guards the routes; `OperatorToken::machine()` answers the same question inside the controllers that also accept a session. A token that is neither opens nothing.\n\nSuite 30/30.\n",
+            "branch": "workbench/machine-token",
+            "title": "Een tweede token: de grens ligt bij het record"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260913200734-6d6c2f"
+}

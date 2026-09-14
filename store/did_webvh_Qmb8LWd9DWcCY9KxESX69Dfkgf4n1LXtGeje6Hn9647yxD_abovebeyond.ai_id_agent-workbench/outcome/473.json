@@ -1,0 +1,15 @@
+{
+    "action": "20db74a926f9622dcfe9408b967400ad",
+    "effect": {
+        "detail": {
+            "base": "b430ae264fa1e5149ca040d4284ad8af29c3f1ed",
+            "branch": "workbench/ui/mail-theme",
+            "commit": "360775542888fd20c96c10f6744271a686507051",
+            "files": 11
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 471,
+    "verdict": "ALLOW"
+}

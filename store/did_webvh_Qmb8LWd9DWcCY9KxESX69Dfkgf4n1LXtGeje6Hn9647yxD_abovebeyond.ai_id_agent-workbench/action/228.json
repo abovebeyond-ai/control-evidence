@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2311a0a391207038dde2d2849877431a957df173",
+            "branch": "workbench/ui/tailwind-vehicle-general",
+            "files_sha256": "a272be50576599d3611569109bc1f53537ec79a26eeddadc1a8702ebf0edab34",
+            "message": "Vehicle sheet general tab on the ui vocabulary"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913190955-188b53"
+}

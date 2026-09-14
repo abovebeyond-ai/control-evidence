@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1efe912c13d743185a8e0c9b982dd01d013c7c1e",
+            "branch": "workbench/evidence-has-kinds",
+            "files_sha256": "0622d1a33f19084cdc438dd8661dcd51eb55e2ba03822ef588fa2b7c78691413",
+            "message": "The evidence says what kind it is"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914063734-ce5ce2"
+}

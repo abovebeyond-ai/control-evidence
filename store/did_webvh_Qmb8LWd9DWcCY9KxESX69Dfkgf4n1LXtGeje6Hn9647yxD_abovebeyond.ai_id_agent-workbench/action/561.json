@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The same run (`good-governance#24`, sportbusinessgame) was misjudged twice today: first against a reading from before the merge (elixir#199), then against one that read the redirect hop instead of the page behind it (elixir#203). The first correction fitted in `wasVerdict`; the second was refused, because one field holds one withdrawal, and the record kept a verdict everybody knew to be wrong.\n\n`withdrawals` is a list now: every verdict that was passed keeps its evidence, its reason and its moment, and the run returns to `unjudged` each time so the next reading decides it. A withdrawal without a reason is still refused.\n\nAfter merging, on the box:\n\n```\nphp artisan elixir:ledger-withdraw headers https://github.com/ShaneDeconinck/good-governance/pull/24 --reason=\"judged on a reading that followed the redirect hop instead of the page behind it; fixed in elixir#203, and the site sends all four\"\nphp artisan elixir:judge headers\n```\n\n653 tests, PHPStan, Pint.\n",
+            "branch": "workbench/withdrawals-are-a-history",
+            "title": "A withdrawal is a history, not a field"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913214021-f9344c"
+}

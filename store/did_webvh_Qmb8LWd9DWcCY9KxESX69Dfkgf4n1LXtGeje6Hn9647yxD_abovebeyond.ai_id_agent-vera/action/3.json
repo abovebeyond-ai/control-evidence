@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "review.publish",
+        "params": {
+            "by": "shane@abovebeyond.ai",
+            "page_sha256": "e79cc82588aac6af2176c2cd207f54f0b1ba07514cb05f7ec237a56d0b6771ff",
+            "title": "Signed by the operator"
+        },
+        "resource": "vera/vera/smoke-two"
+    },
+    "run": "vera-20260913194200-917afb"
+}

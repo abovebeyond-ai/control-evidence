@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The one reading that says whether this system is learning a language or inventing one, and it was nowhere a person looks.\n\nA concept minted and never mentioned again is a label for a single signal, and the corpus never compounds: the fortieth sighting of a thing gets a fresh name instead of strengthening the name it already has. The Overview showed births and archivals, which say how busy enrich was, not whether the words are settling.\n\n**`cohortReuse()`** reads it per COHORT of minting, and that is the whole point. Asked over the last seven days the same data says 93% of new concepts never came back, which sounds like a catastrophe and is mostly an artefact of asking about two-day-old concepts. Asked per cohort it says the opposite: from 3.5% in late July to 11.3% in the last complete week, while minting fell five-fold. That is match-before-mint (3 September) working, and until now nothing reported it.\n\nA cohort whose youngest member has not had ten days is shown and not judged, and a verdict needs four mature cohorts. `converging`, `branching`, `steady` or `too new`, on the last two mature cohorts against the two before them.\n\nIt travels with `conceptFlow` in `/pipeline-delta`, because births and convergence are read together. 121ms against the live database, on an endpoint that already takes seven seconds and is memoised for a minute.\n\nFour tests, including the trap itself: a cohort too young to have answered must not drag the verdict. Suite 661 green.\n\nThe panel is in the dashboard alongside.\n",
+            "branch": "workbench/vocabulary-converging",
+            "title": "Is the vocabulary converging"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260913211124-33883f"
+}

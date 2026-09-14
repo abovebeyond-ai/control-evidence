@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Observatory's schedule lived only in `crontab -l` on one machine: eleven jobs nobody could read without logging in, no history of when one changed, comments that had drifted off the jobs they described, and one still explaining a 3D graph job that had been removed. That is the same shape of risk as the 8,185 lines that once lived in `/opt/hub-jobs` with no remote.\n\n**`ops/crontab`** is now the source, every job carrying the reason it exists above it, because a line without one is a line nobody can safely delete. It is the live crontab verbatim, checked line for line, plus one new job.\n\n**`bin/crontab-install`** shows the difference with what is installed and writes it with `--apply`, keeping the previous crontab in `~/crontab-backups/` so undoing is one command. Dry by default: the crontab is the one file on that box where a typo is silent for a week, since a broken line does not fail, it simply never runs.\n\n**`GET /crons` reports the drift**, so a line edited by hand on the box shows up as installed-but-not-declared instead of being quietly authoritative, and a job declared but never installed stops being invisible. Comments and blank lines are not compared; they are for the reader.\n\n**The one new job is the graph's weekly round**, Monday at 05:30, before the collect at 06:00 and clear of the backup at 03:40. Neither half of it had ever run: the co-occurrence decay was written with a thirty day half-life and never scheduled, and the dead references had no drain until today.\n\nFour tests on the drift, suite 657 green.\n\nOn the box after merging: `bin/crontab-install` to read the difference, which should be exactly the graph-drain line, then `--apply`.\n",
+            "branch": "workbench/crontab-as-a-file",
+            "title": "The clock is a file"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260913204207-038a70"
+}

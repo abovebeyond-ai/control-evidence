@@ -1,0 +1,15 @@
+{
+    "action": "800f5747649dfec431808f9d5ebd95ae",
+    "effect": {
+        "detail": {
+            "base": "8080dc29784efbaa9dd9043a1cfc5c105f22acea",
+            "branch": "workbench/exposure-csp-facet",
+            "commit": "99b6dac4c5b6422f64e22e0e8170bb73c6c30555",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 276,
+    "verdict": "ALLOW"
+}

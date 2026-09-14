@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ede4e73de7feca40cf68444d5d537dcc0972355b",
+            "branch": "workbench/judge-after-the-merge",
+            "files_sha256": "02c4ee1478c9a82914dbde92b258d9666618d5ec6c58426b727b3b883925a299",
+            "message": "A claim is judged against the world after the change, never before it\n\nTwo headers proposals were refuted seven minutes after they merged,\nagainst an exposure measurement taken before the merge; one of the two\nsites was already sending all three headers at that moment, and the other\nhad not been deployed yet. Merging is not deploying, and deploying is not\nmeasuring.\n\nThe judge now waits for a reading taken after the pull request landed:\nno reading since the merge is no verdict, exactly as an open proposal is\nno verdict. This was never only a headers problem; every claim type\ncompared against whatever the last measurement happened to say.\n\nA refutation costs a playbook its rung for good, so judging too early\nwrites a record that is wrong in the harshest direction."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913202559-446e8a"
+}

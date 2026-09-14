@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "14fa10aff2050de665e43189a2c4d294fd92d6e5",
+            "branch": "workbench/fix/smoke-whatsapp-and-mail",
+            "files_sha256": "79db27ef3e41ee1e000ba065c64ce93de9eb0041b4a4602b670cb2cb026d7ade",
+            "message": "The smoke test reads a WhatsApp message id correctly and can send one real mail"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913213130-1b9b89"
+}

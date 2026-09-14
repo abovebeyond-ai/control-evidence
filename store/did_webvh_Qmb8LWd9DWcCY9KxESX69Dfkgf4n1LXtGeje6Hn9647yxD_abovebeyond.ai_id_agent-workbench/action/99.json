@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "039a02ceffda65830fab482b41f4b5a8f5a99e06",
+            "branch": "workbench/residuals-tag",
+            "files_sha256": "8681ec7dfd6502c788b8afdb34559aeb65b1f09e378dfbfd62fa6703827b0e58",
+            "message": "Classify residual errors of either study with --tag"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260913175531-323dcb"
+}

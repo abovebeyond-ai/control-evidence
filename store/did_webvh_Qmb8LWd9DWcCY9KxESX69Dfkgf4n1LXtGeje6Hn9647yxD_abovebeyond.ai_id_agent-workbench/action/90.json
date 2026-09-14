@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The site's half of \"the offer is a setting\": every plan fact now comes from the Observatory through the projection.\n\n**`App\\Plans\\Offer`** holds the projected offer (`/internal/projection/plans`, pulled by `reconcile:projection` and by the `plans` webhook nudge) with the code defaults as the fallback, field by field, so a projection that has not arrived yet leaves the site with the offer it had, never with none. An ability the site does not know is dropped; the latest is every plan's.\n\n**`Plan`** reads label, price, blurb, abilities, archive window, reads per day and requests per minute through it. Price prints \"Free\", \"EUR 14.99\" or \"EUR 1,499\". A plan that is \"by conversation\" shows \"Talk to the team\" on the pricing page instead of a checkout; that used to be hardcoded to Intelligence. The agent rate limiter reads per-minute from the plan. The `plans` block in `config/gentells.php` is gone.\n\nThe cache lives in the container, not in a static: a static survived from one test to the next and made a Signal that opened reports in one test open them in every test after.\n\nSuite 258 green, Pint clean. README and the design doc say where the offer lives now.\n",
+            "branch": "workbench/plans-from-projection",
+            "title": "The offer comes from the Observatory through the projection"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260913175131-e5c752"
+}

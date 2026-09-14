@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The other half of Shane's reading: a report is a different kind of signal, already reported. Yesterday's change fixed how much a report counts. This makes a reading say what it rests on.\n\n`evidenceKinds()` splits the signals under a trend into four: **observed** (someone posted it, on the platforms we watch), **reported** (a trend report or study someone else already read for us), **press**, and **academic**. Read from the signal's own platform field and not the sources catalogue, which has no row for an uploaded PDF and therefore called 23% of the evidence unknown.\n\nIt travels with the counts on the projection, so the site and the agent door get it without asking for anything new.\n\nWhat it says about the first trends in the set, measured on the live data: 71 signals of which 46 reported and 11 observed; 86 signals of which 47 reported and 30 observed. That is the frontier model's verdict of 13 September, now a number we publish rather than one a customer derives.\n",
+            "branch": "workbench/evidence-has-kinds",
+            "title": "The evidence says what kind it is"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914063734-ce5ce2"
+}

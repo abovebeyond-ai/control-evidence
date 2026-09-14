@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8e0844856473e115bf044d48a5f16f9b5510a86d",
+            "branch": "workbench/academic-follows-the-desk",
+            "files_sha256": "a23d1444cf4083c8f179999b6521200c2253b89d8e41abe89175448baa564e87",
+            "message": "The research follows the desk"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914053219-82d6a6"
+}

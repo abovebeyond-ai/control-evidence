@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a5813999740778b08d81988392e1d46839fbe981",
+            "branch": "workbench/project-delete",
+            "files_sha256": "a00c97426bd0a94888713edc52df63f31a1c5b4a9a05cd5f55ec727e9a58b33f",
+            "message": "Een project verwijderen kan, en het kost vier sloten\n\nAanmaken kon al, verwijderen niet, dus bleef een site die niemand meer\nonderhoudt gemeten worden, taken openen en de rustlaag kleuren. Met de\nhand in de databank is geen antwoord: dan verdwijnt er meer dan iemand\nziet, en niets zegt achteraf wat er stond.\n\nportal:project-delete <slug> toont standaard wat eraan hangt en verwijdert\nniets. Pas --confirm=<slug>, de slug voluit getypt, laat het toe. Wat\nverdwijnt wordt eerst als \u00e9\u00e9n JSON weggeschreven naar\nstorage/app/private/deleted-projects/. Niet-gefactureerde uren en door te\nrekenen kosten weigeren het, tenzij --with-money erbij staat. En het ruimt\nook op wat geen foreign key heeft: de metingen op slug en de\nwerkbank-toelatingen, want anders blijft een verwijderd project als meting\nin het vlootbeeld staan.\n\nFacturen hangen aan de klant en niet aan het project: die blijven staan\nwaar de boekhouding ze zoekt."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914051432-77ca2a"
+}

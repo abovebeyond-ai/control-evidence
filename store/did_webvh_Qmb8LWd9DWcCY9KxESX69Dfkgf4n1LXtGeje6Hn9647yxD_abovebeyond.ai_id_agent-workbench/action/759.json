@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3ede1296c1c1ec9714fe9f63f903f34add4ec584",
+            "branch": "workbench/node-cache-when-there-is-a-lockfile",
+            "files_sha256": "280e8ac6b93c5c80329e2be48acf267ca347822c8680cb5cd279fefe5c4d49b5",
+            "message": "Cachen waar er een lockfile ligt, en anders gewoon draaien\n\n`cache: npm` eist een lockfile in de root van de repo en zet de hele run\nstop als hij er geen vindt. Vera houdt zijn node-modules in skill/ (npm ci\n--prefix skill) en heeft er in de root geen; de runner stopte daar met\n\"Dependencies lock file is not found\", v\u00f3\u00f3r er iets gemeten of geschreven\nwas, en de hand meldde alleen \"de run eindigde als failure\".\n\nEen cache is een versnelling, geen voorwaarde. Ligt er een lockfile in de\nroot, dan cachen we; ligt hij ergens anders, dan draait de run gewoon."
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260914062109-0c5d70"
+}

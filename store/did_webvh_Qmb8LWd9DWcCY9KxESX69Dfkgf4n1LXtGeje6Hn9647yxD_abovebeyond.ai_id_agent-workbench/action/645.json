@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "24c3bf7e0d09e874c4583197a85763d50922755d",
+            "branch": "workbench/a-report-is-not-a-sighting",
+            "files_sha256": "9e14cacc99e20fdad73080d2ef87af5b9c6c009f0507b28c248461eceb8ed81f",
+            "message": "A report is not a sighting"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914052727-eb6097"
+}

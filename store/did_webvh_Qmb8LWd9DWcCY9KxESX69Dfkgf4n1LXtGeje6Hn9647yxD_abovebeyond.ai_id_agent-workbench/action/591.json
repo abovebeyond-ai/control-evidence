@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a0e0ba4fceb9e9c9e248f4a5a6370619fb6514f0",
+            "branch": "workbench/a-refusal-says-what",
+            "files_sha256": "8495193d7339b5dff0b480336f868a09a810cdc9453c088fe24cb3c7a951058c",
+            "message": "Een weigering van de app zegt wat er scheelt"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913215836-894f05"
+}

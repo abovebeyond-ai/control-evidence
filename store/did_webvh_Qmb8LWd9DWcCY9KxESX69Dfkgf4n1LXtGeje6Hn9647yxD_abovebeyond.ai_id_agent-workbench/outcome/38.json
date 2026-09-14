@@ -1,0 +1,15 @@
+{
+    "action": "101f173f74e53cb7bfa3cad8d056fcb3",
+    "effect": {
+        "detail": {
+            "base": "9f51c6c504c3875316e179d42ca5b39c1aad3780",
+            "branch": "workbench/key-custody-operator",
+            "commit": "3bb7f1c8590a101bbffca2cd18facfa97c5c6fa1",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 36,
+    "verdict": "ALLOW"
+}

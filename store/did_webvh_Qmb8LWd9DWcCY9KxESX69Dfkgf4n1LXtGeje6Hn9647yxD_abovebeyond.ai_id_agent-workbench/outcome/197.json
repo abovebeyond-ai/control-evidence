@@ -1,0 +1,15 @@
+{
+    "action": "88b545b3cfb27e9f05a23e1dd565716b",
+    "effect": {
+        "detail": {
+            "base": "a1fc3dd50162ec2a2ce6fb359be366bbd17249b9",
+            "branch": "workbench/trend-record",
+            "commit": "9d8e70fceed2478845c1a55676226212e15bfeb8",
+            "files": 9
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 195,
+    "verdict": "ALLOW"
+}

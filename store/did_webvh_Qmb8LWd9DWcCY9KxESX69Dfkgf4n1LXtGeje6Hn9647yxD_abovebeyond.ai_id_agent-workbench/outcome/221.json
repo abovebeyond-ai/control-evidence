@@ -1,0 +1,15 @@
+{
+    "action": "cfc6b72c297911601e089a26b52a6e1b",
+    "effect": {
+        "detail": {
+            "base": "01fc7b46816ef9c9aefb9467a83844ef72c62c88",
+            "branch": "workbench/fix/warranty-password-and-chat-toggle-v2",
+            "commit": "8d74b2f8d8d1f9b6203942627584a29460119514",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 219,
+    "verdict": "ALLOW"
+}

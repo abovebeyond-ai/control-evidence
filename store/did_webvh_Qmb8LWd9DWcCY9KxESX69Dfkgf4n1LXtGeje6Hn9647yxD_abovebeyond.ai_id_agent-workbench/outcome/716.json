@@ -1,0 +1,14 @@
+{
+    "action": "98046e5db2eb6315f0bd6dd7bf1837be",
+    "effect": {
+        "detail": {
+            "only": "forge",
+            "project": "vera",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 714,
+    "verdict": "ALLOW"
+}

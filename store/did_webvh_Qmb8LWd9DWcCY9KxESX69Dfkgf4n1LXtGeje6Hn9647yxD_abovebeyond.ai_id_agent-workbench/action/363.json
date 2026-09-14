@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "df1e6da927f0923a5a440a2fe9423f3e81d5439f",
+            "branch": "workbench/machine-token",
+            "files_sha256": "bf556a26d548743429cc4d249cf44ce2480395177d36e7d771ab356fd033ea57",
+            "message": "Een tweede token: de machine leest en wikkelt, de operator publiceert, nodigt en zegelt"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260913200734-6d6c2f"
+}

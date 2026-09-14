@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fd0d82b8e1bc746727be71fa2bffab40e090e232",
+            "branch": "workbench/word-for-an-act",
+            "files_sha256": "48b45032d28a64db384aef079f68e16a1dcae5df7a6277c93fd6350ee78851d5",
+            "message": "Portal draagt ook het woord voor \u00e9\u00e9n daad, en geeft het enkel aan wie die daad noemt"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913210336-03f3be"
+}

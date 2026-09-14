@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abbb762a4d703ea8f0b0bfc0b2d6c03a255b227a",
+            "branch": "workbench/headers-gate-reads-the-measurement",
+            "files_sha256": "6a81648d7100340150ef6eaa70b1b8b545256b5c20038bef259096d806a7b77a",
+            "message": "Urgency decides what the worklist shows, not whether a hand may work\n\nkubo-it-lab and menukaart-webapp were refused with \"nothing to set: no\nopen headers task\" while three headers of the safe set were missing on\nboth. A task opens at month; a site that misses only the lighter headers\nis judged background, and the gate read the task instead of the\nmeasurement.\n\nIt now reads the count the exposure measurement publishes\n(safeHeadersMissing): more than none is work this hand can do. Portal\ndoes not learn which headers are the safe set, and a row that is not\nurgent still has no button."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913200516-19af3c"
+}

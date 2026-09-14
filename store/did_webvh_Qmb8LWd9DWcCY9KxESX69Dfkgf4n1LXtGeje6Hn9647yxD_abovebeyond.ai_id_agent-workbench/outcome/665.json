@@ -1,0 +1,15 @@
+{
+    "action": "d0802bcad7690c729a3b6fbe3dd10884",
+    "effect": {
+        "detail": {
+            "base": "377ab8f6fa000393ddd94e6e1a70ed0f183abd1d",
+            "branch": "workbench/app-health",
+            "commit": "dd4e53a61c0f4bed463be4e3191dec706165dea6",
+            "files": 9
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 663,
+    "verdict": "ALLOW"
+}

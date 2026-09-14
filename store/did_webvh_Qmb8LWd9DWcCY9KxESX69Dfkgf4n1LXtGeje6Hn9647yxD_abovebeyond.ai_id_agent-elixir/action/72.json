@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"kind\":\"meta\",\"branch\":\"headers\",\"message\":\"Security headers: strict-transport-security, x-content-type-options, referrer-policy, permissions-policy\"},{\"kind\":\"file\",\"path\":\"deploy\\/nginx\\/sites-available\\/afrodidact.conf\",\"before\":\"    server_name afrodidact.org;\",\"text\":\"    # The protective headers this site was missing, proposed by Elixir.\\n    # Only the safe set: a Content-Security-Policy is a per-site decision.\\n    add_header strict-transport-security \\\"max-age=604800\\\" always;\\n    add_header x-content-type-options \\\"nosniff\\\" always;\\n    add_header referrer-policy \\\"strict-origin-when-cross-origin\\\" always;\\n    add_header permissions-policy \\\"camera=(), microphone=()\\\" always;\"}]"
+            },
+            "packages": 2,
+            "plan_sha256": "8cb1b4d079425e31afa02b1f4f718c9901d6346d61845456874ed14777c08bd2",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "01M2F5QAP4P5G7C9G5MX5RC9M8"
+}

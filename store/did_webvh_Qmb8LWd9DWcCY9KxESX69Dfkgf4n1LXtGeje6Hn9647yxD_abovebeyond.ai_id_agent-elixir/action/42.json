@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A middleware that sends the protective headers this site was missing, on every web response:\n\n- `permissions-policy: camera=(), microphone=()`\n\nOnly the safe set: no Content-Security-Policy, which is a per-site decision. HSTS starts at one week; raise it once it has held.\nA header the app already sends is left as it is.\n\n## Evidence\n\n- the tests were green before the change, and again after\n- the exposure measurement judges this proposal once it is live: the headers have to be what the site answers with\n\nProposed by Elixir. A human merges.",
+            "branch": "elixir/headers-2026-09-13-2018",
+            "packages": 1,
+            "title": "Security: send 1 protective header(s)"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "01M2E6PAH71WR1XDCME0F7C7YE"
+}

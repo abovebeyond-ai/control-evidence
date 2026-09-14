@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "30e197878f2bb3c02cbe520e44eca104fd5f3590",
+            "branch": "workbench/fix/alpine-statement-in-click",
+            "files_sha256": "4564ef86dafccfeda8262f927b411d1c6fb8219910f5f58de9fae363c1b01d42",
+            "message": "Alpine evaluates expressions, so the card handler is one"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914061952-1a0faf"
+}

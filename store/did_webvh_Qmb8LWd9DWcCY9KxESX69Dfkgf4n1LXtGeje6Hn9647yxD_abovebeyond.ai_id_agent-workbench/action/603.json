@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8750ec8b53f5f5fb58f8faafa5e8e9054fdac39f",
+            "branch": "workbench/heavy-off-the-thread",
+            "files_sha256": "61f41bd71ec26c4cf5764bdca1b6579790cba03eef725ed6eb70db5b2786c141",
+            "message": "The heavy reads run on a thread of their own"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914050713-3e15a6"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "95f27fe6b0da7934fde9ba3ca1f1c6d215affc04",
+            "branch": "workbench/ui/sort-vehicle-dropdowns",
+            "files_sha256": "9fbe1ddd528a687ffba0cdc9ef3c5f7b6ac5c72a542648374403dc156610e6b7",
+            "message": "Choice lists on the vehicle sheet in alphabetical order"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913194013-b4526f"
+}

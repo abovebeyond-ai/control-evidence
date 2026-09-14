@@ -1,0 +1,15 @@
+{
+    "action": "39ac421cb09bf96ab8cb5883170c3d30",
+    "effect": {
+        "detail": {
+            "base": "06a6be9599d055ac2b4b6b1761267f50f6a46a8d",
+            "branch": "workbench/ui/transport-tab-layout-v2",
+            "commit": "2f8ce8de0c97a6a5bfb0d0b12eb01a61002c5113",
+            "files": 17
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 117,
+    "verdict": "ALLOW"
+}

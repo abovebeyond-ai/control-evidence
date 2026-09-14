@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "review.publish",
+        "params": {
+            "by": "shane@abovebeyond.ai",
+            "page_sha256": "e79cc82588aac6af2176c2cd207f54f0b1ba07514cb05f7ec237a56d0b6771ff",
+            "title": "First act from Vera machine"
+        },
+        "resource": "vera/vera/smoke-one"
+    },
+    "run": "vera-20260913184640-c79792"
+}

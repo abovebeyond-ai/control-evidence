@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "elixir": true
+        },
+        "resource": "portal:vera"
+    },
+    "run": "workbench-20260914053717-bdafcb"
+}

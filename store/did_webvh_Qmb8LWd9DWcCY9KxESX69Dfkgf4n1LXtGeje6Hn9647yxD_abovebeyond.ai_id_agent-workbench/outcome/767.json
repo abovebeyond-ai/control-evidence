@@ -1,0 +1,15 @@
+{
+    "action": "cae46c6801306eef6142f7925a87fa75",
+    "effect": {
+        "detail": {
+            "base": "6107f4f392989188187d0bb9a1467eb62a25caee",
+            "branch": "workbench/its-own-gates",
+            "commit": "3077ce7ccc5931f4feece77d6163440cb0a4c986",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 765,
+    "verdict": "ALLOW"
+}

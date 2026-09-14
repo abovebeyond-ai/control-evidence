@@ -1,0 +1,15 @@
+{
+    "action": "5af7a159918ece1eb8f9c7048047d83a",
+    "effect": {
+        "detail": {
+            "base": "9edd1c3339e1e343bc50b7ded2d8848e9c192bdc",
+            "branch": "workbench/ui/tailwind-stocklist-modals",
+            "commit": "f9610159a14f2f943c06e0ed881e7dda5b726199",
+            "files": 7
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 60,
+    "verdict": "ALLOW"
+}

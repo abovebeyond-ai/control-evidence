@@ -1,0 +1,15 @@
+{
+    "action": "96298fc826b21294192ae9089030765b",
+    "effect": {
+        "detail": {
+            "base": "abbb762a4d703ea8f0b0bfc0b2d6c03a255b227a",
+            "branch": "workbench/headers-gate-reads-the-measurement",
+            "commit": "c7c82405c5e044ce20ac863c66424a0a7278c602",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 351,
+    "verdict": "ALLOW"
+}

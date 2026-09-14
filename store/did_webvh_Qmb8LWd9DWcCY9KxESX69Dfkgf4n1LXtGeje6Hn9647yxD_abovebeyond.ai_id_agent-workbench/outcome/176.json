@@ -1,0 +1,15 @@
+{
+    "action": "b594cb8d7087c41b1a1dda5ccf44aa09",
+    "effect": {
+        "detail": {
+            "base": "2a840306e2cc58701e32c67e8e558222ffe6f3bc",
+            "branch": "workbench/vera-operator-word",
+            "commit": "d6e642f719b0465c4e6482fe4dcb5f6d02fb2ecf",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 174,
+    "verdict": "ALLOW"
+}

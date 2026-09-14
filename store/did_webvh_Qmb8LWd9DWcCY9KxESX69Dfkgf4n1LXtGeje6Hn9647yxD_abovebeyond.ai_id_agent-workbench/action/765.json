@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6107f4f392989188187d0bb9a1467eb62a25caee",
+            "branch": "workbench/its-own-gates",
+            "files_sha256": "a17e9998ce2b05433cba37cca4bbc6d7d2ee6b87c30955e2b91ddccd76013667",
+            "message": "De runner haalt zijn eigen poorten: tests en CI\n\nDeze repo raakt elke repo van de vloot aan, en hield zich als enige niet\naan wat de vloot van elk project vraagt: een remote, tests, en een rechter\ndie niet op de machine van de dader draait. Dat kostte gisteren en vandaag\ntwee keer hetzelfde: een fout in het bestandenplan, en een run die afbrak\nop een ontbrekende lockfile in de root. Allebei pas zichtbaar in de CI van\neen klantproject, nadat een hand er al mee gedraaid had.\n\nNu: node:test over het bestandenplan zoals de workflow het aanroept\n(schrijven, invoegen v\u00f3\u00f3r een marker, idempotent, nooit buiten de repo, een\nleeg plan), plus een controle dat fix.yml leesbaar blijft en zijn invoer\nnog heet zoals elk project hem meegeeft. De pakkettenkant draait npm en\ncomposer en blijft bewezen worden in de CI van een project."
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260914062416-b82c7a"
+}

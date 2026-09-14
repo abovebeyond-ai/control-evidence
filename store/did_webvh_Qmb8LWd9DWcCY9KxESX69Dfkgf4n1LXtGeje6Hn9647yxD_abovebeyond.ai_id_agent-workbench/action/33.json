@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Since 13 September 2026 the operator's word for the workbench is a signature on a YubiKey (#operator, #operator-2, published in the DID log), verified by the gateway against that key, kept beside the record, and re-verified by `verify` and by the far end: the chain of a workbench action ends at a person, not at Portal (4.2.2, 4.1.6, 6.3.1). The passkey path through Portal is named as the fallback, with its limit. And the succession: the first identifier is final at version 14 after a key generation on the wrong token on the assistant's instruction; the successor under /id carries the same keys, two next keys per version, and is trusted on the shared #key-1. Two rows on the trust list: the operator's keys, and what a token cannot display.",
+            "branch": "workbench/statement-operators-word",
+            "title": "Conformance statement: the operator's word on the token, and the identity's succession"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913171006-1c9da4"
+}

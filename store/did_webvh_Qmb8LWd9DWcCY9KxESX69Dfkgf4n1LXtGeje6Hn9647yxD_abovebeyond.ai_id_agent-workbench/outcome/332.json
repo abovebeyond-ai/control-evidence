@@ -1,0 +1,14 @@
+{
+    "action": "d13016af0892cbf25c88833a718a9c9c",
+    "effect": {
+        "detail": {
+            "playbook": "headers",
+            "project": "abovebeyond",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 330,
+    "verdict": "ALLOW"
+}

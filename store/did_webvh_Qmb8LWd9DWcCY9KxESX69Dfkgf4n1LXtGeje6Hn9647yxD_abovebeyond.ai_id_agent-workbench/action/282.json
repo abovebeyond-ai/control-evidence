@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ec10dc75b2c3cebc7f67d244f1cdb593c70a6367",
+            "branch": "workbench/exposure-csp-facet",
+            "files_sha256": "7eff135045340e632a873e25aa0355e5b8db3b108844e2cf5a1de3b151b9a7f4",
+            "message": "The policy is a person's row: exposure:csp beside exposure:headers\n\nElixir judges the content security policy apart from the safe set\n(elixir#196), so the worklist hands them to different places: the safe set\nto the headers playbook, the policy to a person, with its own chip. A site\nwhere the hand has set everything it can now has no row with the hand's\nname on it, which is what portal looked like all afternoon: a button that\nanswered \"a human's call\" every time."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913193636-189df9"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bdfef8b7d2b9c2a626a375674a55fcef60483e56",
+            "branch": "workbench/ledger-correction",
+            "files_sha256": "0ae5acab9522cf728f16a6122705ac0c2532a90aebb8d77e056c0b0e35d82264",
+            "message": "A verdict that rested on the wrong evidence can be withdrawn, visibly\n\nThe judge refuted two claims against a measurement taken before the change\nhad landed (elixir#199 stops that happening again). Those two verdicts are\nstill in the ledger, and a refutation is permanent in the rung: ten\nconfirmed, zero refuted. One wrong one closes a door that does not reopen.\n\nSo a withdrawal, and not a rewrite. The verdict that was passed stays on\nthe run as wasVerdict with its evidence and the reason it was withdrawn;\nthe run returns to unjudged and the next reading decides it properly. A\nreader sees what happened, the counting sees a run nobody judged yet.\n\nOnly a person runs it, and only with a reason: an error that disappears\nteaches nobody, and a record that quietly improves is not a record."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913204436-2369f3"
+}

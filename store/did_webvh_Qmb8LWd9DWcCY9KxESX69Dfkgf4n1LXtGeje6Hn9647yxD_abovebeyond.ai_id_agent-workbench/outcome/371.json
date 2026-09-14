@@ -1,0 +1,15 @@
+{
+    "action": "2eb4b6b382b36500ed0e028fa51c6846",
+    "effect": {
+        "detail": {
+            "base": "786e93f62a0c09324e10150e56010a0b2e023c2d",
+            "branch": "workbench/headers-nginx",
+            "commit": "97861043730d0f2f450092855f43f8b3624936a0",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 369,
+    "verdict": "ALLOW"
+}

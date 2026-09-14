@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ec97f54e2773aee4ec2e8355acc01e031991b85c",
+            "branch": "workbench/headers-in-the-middleware",
+            "files_sha256": "e5962757d35c1e2db29c098f039ae921530781a56b64718c0377d2f89e41a249",
+            "message": "De kopregels waar ze wel aankomen: in de middleware\n\nTwee pogingen deden niets. public/_headers werd netjes uitgerold en de\nsite bleef antwoorden met de twee kopregels die Netlify zelf zet; een\nheaders-blok in netlify.toml idem. Netlify's kopregels bereiken geen\nantwoord dat uit een functie komt, en deze site rendert op de server: elk\nverzoek is een functie.\n\nDus staan ze nu waar het antwoord gemaakt wordt, in de middleware die er\nal was, met een regel die nooit overschrijft wat er al staat (Netlify zet\nzelf een strengere HSTS). En wat niet werkte gaat weg: een bestand en een\nblok die beweren iets te doen wat ze niet doen, zijn erger dan niets."
+        },
+        "resource": "ShaneDeconinck/vlamingdam-frituur"
+    },
+    "run": "workbench-20260914053055-25619f"
+}

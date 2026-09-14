@@ -1,0 +1,15 @@
+{
+    "action": "543f8c1b59f717a2785a5cd2e09fbf32",
+    "effect": {
+        "detail": {
+            "base": "3479084bd762832332a52a7a4b95574a5419993c",
+            "branch": "workbench/elixir-fix-workflow",
+            "commit": "23bc940b5370307fb4b0f53cf952b2be5c0aca8b",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 321,
+    "verdict": "ALLOW"
+}

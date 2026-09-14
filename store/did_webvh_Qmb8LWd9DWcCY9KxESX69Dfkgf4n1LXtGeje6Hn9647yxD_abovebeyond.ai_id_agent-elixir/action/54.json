@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"kind\":\"meta\",\"branch\":\"headers\",\"message\":\"Security headers: referrer-policy, permissions-policy\"},{\"kind\":\"file\",\"path\":\"public\\/_headers\",\"content\":\"IyBUaGUgcHJvdGVjdGl2ZSBoZWFkZXJzIHRoaXMgc2l0ZSB3YXMgbWlzc2luZywgcHJvcG9zZWQgYnkgRWxpeGlyLgojIE9ubHkgdGhlIHNhZmUgc2V0OiBhIENvbnRlbnQtU2VjdXJpdHktUG9saWN5IGlzIGEgcGVyLXNpdGUgZGVjaXNpb24gYW5kIGlzIG5vdCBzZXQgaGVyZS4KLyoKICByZWZlcnJlci1wb2xpY3k6IHN0cmljdC1vcmlnaW4td2hlbi1jcm9zcy1vcmlnaW4KICBwZXJtaXNzaW9ucy1wb2xpY3k6IGNhbWVyYT0oKSwgbWljcm9waG9uZT0oKQo=\"}]"
+            },
+            "packages": 2,
+            "plan_sha256": "f90c3dfc366eadf21f4f13094818a8239a1ef7f342ae88adc9476c78f6803a29",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "ShaneDeconinck/vlamingdam-frituur"
+    },
+    "run": "01M2E93HZ56XVKZHZ91JG7R8HQ"
+}

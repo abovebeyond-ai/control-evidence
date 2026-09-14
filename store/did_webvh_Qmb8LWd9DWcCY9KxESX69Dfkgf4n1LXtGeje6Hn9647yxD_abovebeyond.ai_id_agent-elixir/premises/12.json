@@ -1,0 +1,48 @@
+{
+    "certificate": "@[site:portal_abovebeyond_ai]{portal.abovebeyond.ai} misses %[missingHeaders]{4} protective header(s), %[heavyHeadersMissing]{2} of them CSP or HSTS; the hand sets %[headersToSet]{3} of them by middleware, ?[safe: HEADERS_SAFE_SET]{all from the safe set}.",
+    "errors": null,
+    "provenance": {
+        "site:portal_abovebeyond_ai.headersToSet": "gateway",
+        "site:portal_abovebeyond_ai.heavyHeadersMissing": "inferred",
+        "site:portal_abovebeyond_ai.missingHeaders": "inferred",
+        "site:portal_abovebeyond_ai.name": "inferred",
+        "site:portal_abovebeyond_ai.safeHeaders": "gateway"
+    },
+    "registry": {
+        "HEADERS_SAFE_SET": {
+            "field": "safeHeaders",
+            "label": "the headers set are the safe set, without a content security policy",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "HEADERS_SAFE_SET"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "attempt": "gateway",
+        "ciRun": "inferred",
+        "coverage": "inferred",
+        "filesChanged": "inferred",
+        "from": "inferred",
+        "headersToSet": "gateway",
+        "heavyHeadersMissing": "inferred",
+        "missingHeaders": "inferred",
+        "model": "inferred",
+        "safeHeaders": "gateway",
+        "semverSafe": "gateway",
+        "testsAfter": "inferred",
+        "testsBefore": "inferred",
+        "to": "inferred",
+        "underTests": "gateway"
+    },
+    "store": {
+        "site:portal_abovebeyond_ai.headersToSet": 3,
+        "site:portal_abovebeyond_ai.heavyHeadersMissing": 2,
+        "site:portal_abovebeyond_ai.missingHeaders": 4,
+        "site:portal_abovebeyond_ai.name": "portal.abovebeyond.ai",
+        "site:portal_abovebeyond_ai.safeHeaders": 1
+    },
+    "verified": true
+}

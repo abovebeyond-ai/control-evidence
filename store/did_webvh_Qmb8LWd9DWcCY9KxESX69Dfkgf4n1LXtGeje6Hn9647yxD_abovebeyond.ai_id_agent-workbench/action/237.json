@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4fb65eac171cb6098ddc379972ef7415b1d67a15",
+            "branch": "workbench/security-fix-split",
+            "files_sha256": "40006d75a0ae0536df369489641c9e1a48af4f804f0155a7ecc66fda7b10a061",
+            "message": "SecurityFix: de gedeelde machinerie in drie trekken met een naam"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913192216-22fc7f"
+}

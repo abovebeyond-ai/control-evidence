@@ -1,0 +1,15 @@
+{
+    "action": "1efcfbff169d18ccaeee26f9b4b83d51",
+    "effect": {
+        "detail": {
+            "base": "4fb65eac171cb6098ddc379972ef7415b1d67a15",
+            "branch": "workbench/security-fix-split",
+            "commit": "72b896ee7cc72e45084553d41447c9674e759395",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 237,
+    "verdict": "ALLOW"
+}

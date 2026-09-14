@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`menukaart-webapp` confirmed two runs whose mechanism provably did nothing: first `public/_headers`, then a block in `netlify.toml`, both deployed, neither reaching the response. The headers arrived by a person's edit in the app's middleware. The judge looked at the world, saw it was right, and wrote it to the agent's name: two of nine confirmations were somebody else's work, and the rung that rests on them is a measure of trust.\n\n- A claim now records **what it rests on**: the paths this run wrote (`claims.paths`).\n- Before confirming or refuting, the judge asks whether those files are still on the default branch. One of them gone, and the run stays **unjudged** with the reason printed. Not a refutation: whether it ever worked is no longer ours to see. A path GitHub cannot answer for counts as present, because silence is not proof of removal.\n- A withdrawal can be **final** (`elixir:ledger-withdraw \u2026 --final`), for exactly the case above: what the hand wrote is gone, the claim came true by another hand, and every next reading would keep confirming the world. The judge then leaves the run alone instead of re-judging it.\n\nOlder runs recorded no paths and are judged as before.\n\nAfter merging, on the box, so the two menukaart entries stop counting as this hand's:\n\n```\nphp artisan elixir:ledger-withdraw headers https://github.com/ShaneDeconinck/vlamingdam-frituur/pull/21 --final --reason=\"the headers arrived by a person's edit in the app; what this run wrote was removed\"\nphp artisan elixir:ledger-withdraw headers https://github.com/ShaneDeconinck/vlamingdam-frituur/pull/22 --final --reason=\"idem: netlify.toml never reached a function response, and the block was removed\"\n```\n\nThat puts the ledger at 7 confirmed, and the tenth will be earned rather than inherited. 657 tests, PHPStan, Pint.\n",
+            "branch": "workbench/a-claim-rests-on-what-the-hand-wrote",
+            "title": "Een bewering steunt op wat de hand schreef"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914063935-962ca3"
+}

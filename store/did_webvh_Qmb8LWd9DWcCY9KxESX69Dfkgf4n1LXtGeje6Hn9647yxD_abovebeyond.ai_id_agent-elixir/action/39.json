@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b782c192f53b67620d186dd083e3234f2f141916",
+            "branch": "elixir/headers-2026-09-13-2018",
+            "files_sha256": "e1b785dc694d3f0194b2becd678b326f9b0779d4d17ab8aad8531524959d4413",
+            "message": "Security headers: permissions-policy",
+            "packages": 1
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "01M2E6PAH71WR1XDCME0F7C7YE"
+}

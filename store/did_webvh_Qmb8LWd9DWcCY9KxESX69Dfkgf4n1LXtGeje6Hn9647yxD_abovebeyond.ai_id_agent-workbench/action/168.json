@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4efa703027d04cb6229cc87a4d3fa0764a51e789",
+            "branch": "workbench/vera-operator-word",
+            "files_sha256": "3bfdacafaba20d10d6afc95e4729b16690e33949e9eb7ef71b47b7e60e86774f",
+            "message": "Het woord van de operator geldt ook voor Vera: de toelating noemt haar hand"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913185259-1ff4cc"
+}

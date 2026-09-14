@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nCI on `main` is red since #258: `ChatToggleTest > the chat endpoint is gone when the chatbot is off`\nasserted a 404 on `POST /chatbot/message` and gets a 500. That test was mine, and it was testing the\nwrong layer. `ChatBotController` resolves `ChatBotService` in its constructor, and that service needs\nan OpenAI key no test environment has, so the constructor blows up before the `abort(404)` that the\ntest was aiming at. A request there says something about the key, not about the condition.\n\n## What\n\nThe endpoint case is replaced by two that read the condition where its three callers read it\n(`Access::showChat()` \u2014 the layout's include of the toggle, the Echo client, the abort in the\ncontroller):\n\n- `test_show_chat_follows_the_setting_for_a_beheerder_too` \u2014 the regression #258 fixed, stated\n  directly: with the chatbot off the answer is false for a BEHEERDER as well, and with it on, true.\n  A BEHEERDER used to be the exception that made this true whatever `CHATBOT_ENABLED` said.\n- `test_a_guest_never_gets_the_chat` \u2014 the other half of the condition.\n\nThe two rendering tests from #258 (no toggle when off, a labelled toggle when on) are untouched, and\nso is everything outside this file. Test-only change.\n\n## Checked\n\n`php -l` on the changed file. The database-backed suite cannot run on this machine \u2014 the local MySQL\nonly answers to a socket login this session does not have \u2014 so CI is the judge. In the #258 run every\nother test passed, including all six of `WarrantyPasswordTest`; this one failure is the only thing\nthis PR addresses.\n",
+            "branch": "workbench/fix/warranty-password-and-chat-toggle-v2",
+            "title": "Settings: fix the red chat-toggle test from #258"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913190229-0a2b0b"
+}

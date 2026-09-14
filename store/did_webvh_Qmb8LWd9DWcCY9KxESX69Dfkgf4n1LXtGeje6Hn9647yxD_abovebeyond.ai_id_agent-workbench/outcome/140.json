@@ -1,0 +1,15 @@
+{
+    "action": "8a546ee428cfea6cd478d42b49912ed4",
+    "effect": {
+        "detail": {
+            "base": "3baa0b9175b79618c6eb4f9174aad0e487c0944b",
+            "branch": "workbench/refactor/platform-credentials-in-env-v2",
+            "commit": "4011c0a57c47f9610b4844006618a01f825a01a7",
+            "files": 20
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 138,
+    "verdict": "ALLOW"
+}

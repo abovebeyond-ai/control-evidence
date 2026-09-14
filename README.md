@@ -7,7 +7,8 @@ it without asking us: the records per agent (`store/*.jsonl`), what sits beside 
 the anchor receipts (DigiCert RFC 3161 and Hedera), and `coverage.json`.
 
 Issuer `https://portal.abovebeyond.ai/elixir/control`; public key `8d8c2fdc663a379290f681aa71cec120512e6b5b3d7121f578cd7964784c6f31`, resolvable through the
-did:webvh log at https://abovebeyond.ai/.well-known/did.jsonl.
+did:webvh log at https://abovebeyond.ai/id/did.jsonl (records before 13 September 2026 name the first identifier, whose
+log stays at https://abovebeyond.ai/.well-known/did.jsonl, final at version 14).
 
 To verify, with the tooling at https://github.com/abovebeyond-ai/control:
 

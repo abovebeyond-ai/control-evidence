@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "10551d1f68af79f6435b756618a55c1ba94d86f6",
+            "branch": "workbench/fix/damage-highlight-and-ghost",
+            "files_sha256": "009283ca071fb33bcc1fd07f79228758dfb61d4844b0f547b107ac4162f2080a",
+            "message": "A damaged location is highlighted again, and the damage card holds only its own markup"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913220259-bbb391"
+}

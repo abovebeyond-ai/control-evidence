@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nA second kind of plan for the runner, so the headers hand of Elixir (elixir#184) has something that understands it. A package plan installs; a file plan **writes files**:\n\n- `{kind: 'file', path, content}` writes the file (base64), `{kind: 'file', path, before, text}` inserts a line before the first exact match of `before`. Both idempotent: a file already holding that content, or a marker already preceded by that line, counts as applied and changes nothing.\n- A path must be relative and may not contain `..`; anything else is a refusal, not a write.\n- `{kind: 'meta', branch, message}` names the branch and the commit message the hand-back uses.\n- Outcome: `{kind: 'files', meta, applied: [{path, kind}], failed, unproven: []}`.\n\nThe workflow lays exactly the applied paths in `commit.json` for the gateway (branch `elixir/<meta.branch>-<date-time>`, base the commit it worked on), the same shape the package branch has used since `gateway-pushes`; the runner still pushes nothing. Package plans are untouched.\n\n## Why this shape\n\nThe hand knows what the files should say (a middleware and a provider it generated, a line in `bootstrap/providers.php`); the runner should not have to know Laravel. So the plan carries content, and the runner's only judgement is \"did this end up on disk\".\n\n## Tests\n\n`node --check` on the script, the workflow parses, and a local run of both plan kinds (write, insert, idempotent repeat, refused `..`). The moving tag `v1` is what the fleet uses, so this reaches every project on its next run.\n",
+            "branch": "workbench/file-plans",
+            "title": "A second kind of plan: files"
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260913184705-9fe5fa"
+}

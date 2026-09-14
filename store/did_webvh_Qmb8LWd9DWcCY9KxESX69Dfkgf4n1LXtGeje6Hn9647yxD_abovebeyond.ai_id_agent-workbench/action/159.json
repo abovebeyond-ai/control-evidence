@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "31dad05379adf438dc853381a655eef713f715f4",
+            "branch": "workbench/file-plans",
+            "files_sha256": "7bc72fc5d4f51bceeeb3e1320d6835907407d623476b5bfa6ef364c7541d7512",
+            "message": "A second kind of plan: files\n\nThe headers hand of Elixir puts a middleware in a Laravel project and\nregisters it; that is not an npm command but a few files written or\namended. The script writes them (content, or a line inserted before an\nexact marker, idempotent) and the workflow hands back exactly those files\nunder the branch and message the plan names. Package plans are unchanged."
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260913184705-9fe5fa"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`menukaart-webapp` has now proved **both** of Netlify's ways wrong for a site that renders on the server:\n\n- `public/_headers` merged, deployed, changed nothing (elixir#205 was the first guess)\n- a `[[headers]]` block in `netlify.toml` merged, deployed, changed nothing: the site still answers with the two headers Netlify sends itself, on the redirect **and** on the page behind it\n\nNetlify's custom headers do not reach a response that comes from a function, and an Astro site with `output: \"server\"` is a function. What answers the request is the app, so the app is where the header belongs, exactly as in Laravel: an Astro middleware that sets what is missing and never overrides what the app already sends.\n\nA site that **already** has middleware (Astro reads exactly one entry point) is one where four lines are a person's edit; there the hand refuses and names where they go instead of placing them blind. menukaart is that case, so I will propose those four lines as a normal change, together with removing the two mechanisms that turned out to claim something untrue.\n\n654 tests, PHPStan, Pint.\n",
+            "branch": "workbench/ssr-headers-in-the-app",
+            "title": "What answers the request sends the header: SSR gets middleware"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914053431-64867b"
+}

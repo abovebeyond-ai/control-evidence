@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The design page for the agent doors, written after a night where publishing one review page cost a build on the laptop, an 8.4 MB copy to Vera's machine, an ssh for a token, a tunnel, a refusal, a release and an upgrade. Every step was right; the dance between environments was the cost.\n\nIt describes what exists (two MCP servers, both stdio, both therefore running on the laptop), the shape that removes the dance (one server per product, living where the product lives; reading tools answer, writing tools propose through the gateway; tools take references, never payloads), the transport that is missing, and the chat in Vera as the first client of it.\n\nNothing is built here. It is the page to disagree with before anything is.\n",
+            "branch": "workbench/agent-doors",
+            "title": "Ontwerp: agent doors, \u00e9\u00e9n server per product"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914051134-244774"
+}

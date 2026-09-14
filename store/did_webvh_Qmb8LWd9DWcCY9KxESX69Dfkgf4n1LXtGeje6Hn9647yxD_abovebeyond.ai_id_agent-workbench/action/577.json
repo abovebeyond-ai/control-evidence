@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5e9145a2554135c0f9f1fdd23103fdebf05f2495",
+            "branch": "workbench/feat/mail-always-to",
+            "files_sha256": "0abb4444c442f9fbd5e5ea192b09566ae0fffe1b183116f7828cb4c68ddda560",
+            "message": "Mail can be tested outside production only when every message is redirected"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913214949-670cfa"
+}

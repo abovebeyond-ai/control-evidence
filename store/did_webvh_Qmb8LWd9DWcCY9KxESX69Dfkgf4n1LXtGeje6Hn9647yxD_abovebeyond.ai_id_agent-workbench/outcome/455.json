@@ -1,0 +1,15 @@
+{
+    "action": "f2fa0290a21bbdc89fd7617dbc4f5556",
+    "effect": {
+        "detail": {
+            "base": "597f1157527ffe7524908a0ac27ef553e5e7b94d",
+            "branch": "workbench/ui/warranty-box-size",
+            "commit": "4997584739d95e0499be126241c530be483d89b1",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 453,
+    "verdict": "ALLOW"
+}

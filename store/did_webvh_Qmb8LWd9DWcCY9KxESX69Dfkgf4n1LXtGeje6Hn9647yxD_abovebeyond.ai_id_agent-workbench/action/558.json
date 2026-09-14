@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "25d16c6c5c020e1de50727ff3157dadcb9ff95e3",
+            "branch": "workbench/withdrawals-are-a-history",
+            "files_sha256": "24782075d956ea05cfd3ef4e88d67ac708bb8af141d1235d6745c43ab0534be8",
+            "message": "A withdrawal is a history, not a field\n\nThe same run was misjudged twice today: first against a reading from before\nthe merge, then against one that read a redirect instead of the page behind\nit. The first correction fitted in wasVerdict; the second was refused,\nbecause one field holds one withdrawal, and the record kept a verdict\neverybody knew to be wrong.\n\nSo withdrawals is a list: every verdict that was passed keeps its evidence,\nits reason and its moment. Two mistakes, two entries, and the run returns\nto unjudged each time so the next reading decides it."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913214021-f9344c"
+}

@@ -1,5 +1,5 @@
 {
-    "computed_at": "2026-09-13T07:33:46+00:00",
+    "computed_at": "2026-09-14T07:33:49+00:00",
     "window": {
         "since": "2026-09-10T14:20:00+00:00",
         "days": 7,
@@ -13,7 +13,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 1
+                "gateway": 0
             }
         },
         "Hoet-design/cabrio-eyewear-mirror": {
@@ -24,7 +24,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 1
+                "gateway": 0
             }
         },
         "Hoet-design/hoet-eyewear": {
@@ -34,7 +34,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 1
+                "gateway": 0
             }
         },
         "Hoet-design/hoet-eyewear-mirror": {
@@ -45,7 +45,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 1
+                "gateway": 0
             }
         },
         "ShaneDeconinck/cides": {
@@ -55,17 +55,16 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 2
+                "gateway": 0
             }
         },
         "ShaneDeconinck/good-governance": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0,
-                "workflow": "absent"
+                "github": 1,
+                "gateway": 1
             },
             "pulls": {
-                "github": 0,
+                "github": 2,
                 "gateway": 2
             }
         },
@@ -76,7 +75,7 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 1
+                "gateway": 0
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -86,17 +85,17 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 1
+                "gateway": 0
             }
         },
         "ShaneDeconinck/vlamingdam-frituur": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             },
             "pulls": {
-                "github": 0,
-                "gateway": 1
+                "github": 3,
+                "gateway": 3
             }
         },
         "Trendwolves/gentells-pipeline": {
@@ -105,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 12,
+                "gateway": 10
             }
         },
         "Trendwolves/gentells-site": {
@@ -116,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 1
+                "github": 10,
+                "gateway": 5
             }
         },
         "Trendwolves/glk-transferor": {
@@ -127,27 +126,27 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 1
+                "gateway": 0
             }
         },
         "abovebeyond-ai/abovebeyond": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             },
             "pulls": {
-                "github": 4,
-                "gateway": 6
+                "github": 10,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/portal": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             },
             "pulls": {
-                "github": 20,
-                "gateway": 24
+                "github": 60,
+                "gateway": 16
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -158,47 +157,57 @@
             },
             "pulls": {
                 "github": 0,
-                "gateway": 1
+                "gateway": 0
+            }
+        },
+        "abovebeyond-ai/vera": {
+            "dispatches": {
+                "github": 2,
+                "gateway": 2
+            },
+            "pulls": {
+                "github": 16,
+                "gateway": 9
             }
         },
         "kubo-global/afrodidact-website": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             },
             "pulls": {
-                "github": 1,
-                "gateway": 3
+                "github": 2,
+                "gateway": 1
             }
         },
         "kubo-global/kubo-website": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             },
             "pulls": {
-                "github": 0,
+                "github": 1,
                 "gateway": 1
             }
         },
         "stocklistdealer-eu/peugeot-de-backer": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             },
             "pulls": {
-                "github": 0,
-                "gateway": 2
+                "github": 1,
+                "gateway": 1
             }
         },
         "stocklistdealer-eu/stocklistdealer": {
             "dispatches": {
                 "github": 5,
-                "gateway": 5
+                "gateway": 0
             },
             "pulls": {
-                "github": 57,
-                "gateway": 78
+                "github": 100,
+                "gateway": 38
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -256,6 +265,17 @@
                 "gateway": 0
             }
         },
+        "Trendwolves/gentells-dashboard": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 2,
+                "gateway": 2
+            }
+        },
         "abovebeyond-ai/control": {
             "dispatches": {
                 "github": 0,
@@ -263,8 +283,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 19,
-                "gateway": 23
+                "github": 46,
+                "gateway": 10
             }
         },
         "abovebeyond-ai/elixir": {
@@ -274,8 +294,19 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 18,
-                "gateway": 24
+                "github": 43,
+                "gateway": 16
+            }
+        },
+        "abovebeyond-ai/elixir-fix": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 4,
+                "gateway": 4
             }
         },
         "abovebeyond-ai/proveml": {
@@ -286,7 +317,7 @@
             },
             "pulls": {
                 "github": 2,
-                "gateway": 2
+                "gateway": 0
             }
         },
         "abovebeyond-ai/proveml-research": {
@@ -296,19 +327,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
-            }
-        },
-        "abovebeyond-ai/vera": {
-            "dispatches": {
-                "github": 0,
-                "gateway": 0,
-                "workflow": "absent"
-            },
-            "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 6,
+                "gateway": 3
             }
         },
         "abovebeyond-ai/verify-abovebeyond": {
@@ -318,8 +338,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 5,
-                "gateway": 5
+                "github": 6,
+                "gateway": 0
             }
         },
         "kubo-global/kubo-school-platform": {
@@ -342,9 +362,6 @@
         "portal:axa-dare-to-call": {
             "skipped": "no token to read GitHub"
         },
-        "portal:blitzt-website": {
-            "skipped": "no token to read GitHub"
-        },
         "portal:cabrio-eyewear": {
             "skipped": "no token to read GitHub"
         },
@@ -364,6 +381,9 @@
             "skipped": "no token to read GitHub"
         },
         "portal:elixir": {
+            "skipped": "no token to read GitHub"
+        },
+        "portal:elixir-fix": {
             "skipped": "no token to read GitHub"
         },
         "portal:find-your-voice": {
@@ -451,29 +471,130 @@
                 "github": 0,
                 "gateway": 0
             }
+        },
+        "vera/abovebeyond/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/afrodidact-website/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/axa-dare-to-call/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/cabrio-eyewear-mirror/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/cabrio-eyewear/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/cafe-t-hoekske-website/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/cides-portfolio/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/control/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/dbc-webapplicatie/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/elixir-fix/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/elixir/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/find-your-voice/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/garage-de-backer-website/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/gentells/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/glk-transferor/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/hoet-design-web/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/hoet-eyewear-mirror/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/hoet/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/kubo-it-lab/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/kubo-platform/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/menukaart-webapp/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/naviskore-viz/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/naviskore-webapp/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/portal/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/proveml-research/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/proveml/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/schoutteet/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/shanedeconinck-be/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/she-cosmetics-website/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/signal-observatory-gentells/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/sportbusinessgame/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/stocklist-dealer-landing/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/stocklistplatform-eu/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/trustedagentic/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/vera/*": {
+            "skipped": "no token to read GitHub"
+        },
+        "vera/verify-abovebeyond/*": {
+            "skipped": "no token to read GitHub"
         }
     },
     "unexplained": [
-        "Hoet-design/cabrio-eyewear: 0 pulls on GitHub, 1 performed by the gateway",
-        "Hoet-design/cabrio-eyewear-mirror: 0 pulls on GitHub, 1 performed by the gateway",
-        "Hoet-design/hoet-eyewear: 0 pulls on GitHub, 1 performed by the gateway",
-        "Hoet-design/hoet-eyewear-mirror: 0 pulls on GitHub, 1 performed by the gateway",
-        "ShaneDeconinck/cides: 0 pulls on GitHub, 2 performed by the gateway",
-        "ShaneDeconinck/good-governance: 0 pulls on GitHub, 2 performed by the gateway",
-        "ShaneDeconinck/naviskore: 0 pulls on GitHub, 1 performed by the gateway",
-        "ShaneDeconinck/shanedeconinck.be: 0 pulls on GitHub, 1 performed by the gateway",
-        "ShaneDeconinck/vlamingdam-frituur: 0 pulls on GitHub, 1 performed by the gateway",
-        "Trendwolves/gentells-site: 0 pulls on GitHub, 1 performed by the gateway",
-        "Trendwolves/glk-transferor: 0 pulls on GitHub, 1 performed by the gateway",
-        "abovebeyond-ai/abovebeyond: 4 pulls on GitHub, 6 performed by the gateway",
-        "abovebeyond-ai/portal: 20 pulls on GitHub, 24 performed by the gateway",
-        "abovebeyond-ai/trustedagentic.ai: 0 pulls on GitHub, 1 performed by the gateway",
-        "kubo-global/afrodidact-website: 1 pulls on GitHub, 3 performed by the gateway",
-        "kubo-global/kubo-website: 0 pulls on GitHub, 1 performed by the gateway",
-        "stocklistdealer-eu/peugeot-de-backer: 0 pulls on GitHub, 2 performed by the gateway",
-        "stocklistdealer-eu/stocklistdealer: 57 pulls on GitHub, 78 performed by the gateway",
-        "abovebeyond-ai/control: 19 pulls on GitHub, 23 performed by the gateway",
-        "abovebeyond-ai/elixir: 18 pulls on GitHub, 24 performed by the gateway"
+        "Trendwolves/gentells-pipeline: 12 pulls on GitHub, 10 performed by the gateway",
+        "Trendwolves/gentells-site: 10 pulls on GitHub, 5 performed by the gateway",
+        "abovebeyond-ai/abovebeyond: 10 pulls on GitHub, 1 performed by the gateway",
+        "abovebeyond-ai/portal: 60 pulls on GitHub, 16 performed by the gateway",
+        "abovebeyond-ai/vera: 16 pulls on GitHub, 9 performed by the gateway",
+        "kubo-global/afrodidact-website: 2 pulls on GitHub, 1 performed by the gateway",
+        "stocklistdealer-eu/stocklistdealer: 5 dispatches on GitHub, 0 performed by the gateway",
+        "stocklistdealer-eu/stocklistdealer: 100 pulls on GitHub, 38 performed by the gateway",
+        "abovebeyond-ai/control: 46 pulls on GitHub, 10 performed by the gateway",
+        "abovebeyond-ai/elixir: 43 pulls on GitHub, 16 performed by the gateway",
+        "abovebeyond-ai/proveml: 2 pulls on GitHub, 0 performed by the gateway",
+        "abovebeyond-ai/proveml-research: 6 pulls on GitHub, 3 performed by the gateway",
+        "abovebeyond-ai/verify-abovebeyond: 6 pulls on GitHub, 0 performed by the gateway"
     ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind (rows 10.3.2, 10.3.4)"
 }

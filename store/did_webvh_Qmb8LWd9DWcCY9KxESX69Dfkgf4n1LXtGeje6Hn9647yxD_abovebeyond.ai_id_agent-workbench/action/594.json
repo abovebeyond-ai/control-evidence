@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "An invitation refused by the app tonight came back as `Vera answered 404: <nil>`. The run was refused, the record was written, and neither said why: the adapter printed `res[\"error\"]` with `%v`, and Vera answers some refusals without a JSON error at all \u2014 a 404 for a review that does not exist has none.\n\n`said(status, res)` now turns the answer into a sentence: the app's own words where it gives them, \"no such review\" on a 404, \"the gateway's token does not open this\" on a 401 or 403, and \"without saying why\" when the app truly said nothing, which is at least honest about the silence.\n\nA refusal that cannot say why is the one failure this project keeps coming back to: the record exists precisely so a reader can tell what happened without asking the person who ran it.\n",
+            "branch": "workbench/a-refusal-says-what",
+            "title": "Een weigering zegt wat er scheelt"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913215836-894f05"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "ff2a57e14eacbf021d804656eb6b53b9",
+    "effect": {
+        "detail": {
+            "base": "19cf3e1a3b7a31bcf9b995e33a0b97cdcd13a5e0",
+            "branch": "workbench/operator-keys-cache-2",
+            "commit": "81ae4c4f267a3a4aa83abdc39b15d7fd7e92fd1d",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 132,
+    "verdict": "ALLOW"
+}

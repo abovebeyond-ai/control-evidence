@@ -1,0 +1,8 @@
+{
+    "action": "cc505a8939d2a261dab5f3d353cc2a7f",
+    "effect": {
+        "error": "interrupted: the gateway stopped between the request record and the effect record; whether the effect reached the far end is not recorded",
+        "ok": false
+    },
+    "verdict": "ALLOW"
+}

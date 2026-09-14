@@ -1,0 +1,15 @@
+{
+    "action": "6a371af444430f65a98a45aa46bc23bf",
+    "effect": {
+        "detail": {
+            "base": "25d16c6c5c020e1de50727ff3157dadcb9ff95e3",
+            "branch": "workbench/withdrawals-are-a-history",
+            "commit": "b36d60c6c71b12d349ad5e80afb3a918bf75e195",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 558,
+    "verdict": "ALLOW"
+}

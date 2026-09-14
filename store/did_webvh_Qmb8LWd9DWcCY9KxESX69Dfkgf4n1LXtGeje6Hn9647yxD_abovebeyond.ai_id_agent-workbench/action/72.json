@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6c505c1da20366d498ec60c0fd24509213c6901f",
+            "branch": "workbench/passkeys-named-and-kinds",
+            "files_sha256": "0075bc069f09d63e96215953a3ba4db67e694314d5e59803788ac4b5a8fab8c1",
+            "message": "Sleutels: een naam van de eigenaar, en de soort uit de credential zelf\n\nDe sleutelpagina noemde een passkey naar de platformstring van de browser die hem registreerde: een YubiKey heette \"MacIntel\", een Android-telefoon \"Linux armv81\", en hernoemen bestond niet. Nu heeft elke sleutel een naam die de eigenaar geeft (hernoemen op de regel zelf, alleen door de eigenaar), en zegt de pagina wat de sleutel is, gelezen uit de credential: hardware (\u00e9\u00e9n toestel, niet te exporteren, wat het DID-log mag publiceren) of gesynchroniseerd (een passkey die een cloud tussen toestellen kopieert; goed om aan te melden, nooit een sleutel van de identiteit), met de maker uit de AAGUID (YubiKey, Apple iCloud Keychain, Google Password Manager). Het onderscheid is de voorwaarde voor de volgende stap: alleen hardwaresleutels in het DID-log."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913171937-13b153"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "9182d30acd50bed7a7125d8af0d3be15",
+    "effect": {
+        "detail": {
+            "base": "5e9145a2554135c0f9f1fdd23103fdebf05f2495",
+            "branch": "workbench/feat/mail-always-to",
+            "commit": "830a03b1271efd6621c29ea386a60912cef181f6",
+            "files": 11
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 577,
+    "verdict": "ALLOW"
+}

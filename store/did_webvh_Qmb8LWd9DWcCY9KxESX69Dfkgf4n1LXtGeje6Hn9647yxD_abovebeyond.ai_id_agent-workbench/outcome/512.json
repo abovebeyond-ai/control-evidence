@@ -1,0 +1,15 @@
+{
+    "action": "a22cbffbf3d514a2e9fa223a3836fde2",
+    "effect": {
+        "detail": {
+            "base": "b3b2d3aa3c4b44d0f8a7aeb195d42b9b1b370d8f",
+            "branch": "workbench/headers-of-the-page-a-visitor-gets",
+            "commit": "bd2c9aa9bdaaa6ebca952cb1fb81829fe601d6b1",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 510,
+    "verdict": "ALLOW"
+}

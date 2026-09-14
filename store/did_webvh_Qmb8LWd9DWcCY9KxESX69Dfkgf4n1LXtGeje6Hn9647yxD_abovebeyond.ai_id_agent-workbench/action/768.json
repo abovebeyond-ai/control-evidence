@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "This repository touches every repository in the fleet, and it was the only one not held to what the fleet asks of each project: a remote, tests, and a judge that does not run on the machine of the accused. That cost the same thing twice in two days: the file-plan bug, and a run that aborted on a missing lockfile in the root. Both only visible in a client project's CI, after a hand had already run with them.\n\n- `node --test \"test/*.test.mjs\"`, in CI on every push and pull request: the file plan as the workflow calls it (write, insert before a marker, running twice changes nothing, never writes outside the repository, an empty plan does nothing and says so).\n- A check that `fix.yml` still parses and that its twelve inputs still carry the names every project passes: a renamed input breaks the whole fleet at once.\n\nThe package side runs npm and composer, so it stays proven in a project's own CI rather than mocked here: a test that imitates a package manager copies the code and proves nothing.\n",
+            "branch": "workbench/its-own-gates",
+            "title": "De runner haalt zijn eigen poorten: tests en CI"
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260914062416-b82c7a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two attempts did nothing. `public/_headers` deployed and the site kept answering with the two headers Netlify sends itself; a `[[headers]]` block in `netlify.toml` the same. Netlify's custom headers do not reach a response that comes from a function, and this site renders on the server: every request is a function.\n\nSo the headers go where the response is made: the middleware that was already there, with a rule that never overrides what the response already carries (Netlify sends a stronger HSTS of its own). And the two mechanisms that did nothing are removed: a file and a block that claim to do something they do not are worse than nothing.\n\nAfter the deploy, `https://vlamingdam-frituur.netlify.app/beheer` should answer with referrer-policy and permissions-policy as well; Elixir judges the claim on exactly that.\n",
+            "branch": "workbench/headers-in-the-middleware",
+            "title": "De kopregels waar ze wel aankomen: in de middleware"
+        },
+        "resource": "ShaneDeconinck/vlamingdam-frituur"
+    },
+    "run": "workbench-20260914053055-25619f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": "2c55d3dbe1bcb52dfb420754b8c9b6d4",
+    "effect": {
+        "detail": {
+            "only": "exposure",
+            "project": "portal",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 234,
+    "verdict": "ALLOW"
+}

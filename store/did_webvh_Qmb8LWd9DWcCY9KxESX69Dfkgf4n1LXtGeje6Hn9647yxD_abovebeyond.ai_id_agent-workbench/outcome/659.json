@@ -1,0 +1,15 @@
+{
+    "action": "282d9f6aa50b8f314cad5f06819b2d9e",
+    "effect": {
+        "detail": {
+            "base": "ec97f54e2773aee4ec2e8355acc01e031991b85c",
+            "branch": "workbench/headers-in-the-middleware",
+            "commit": "bc9a9ae31d4ad31bad03da1a23227b4c75162296",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 657,
+    "verdict": "ALLOW"
+}

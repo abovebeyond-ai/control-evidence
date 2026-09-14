@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7a7dc012acb5abaa36f639495a74e6bef4df596a",
+            "branch": "workbench/ui/tailwind-offer-realgarant-partials-v2",
+            "files_sha256": "6f61f3d05d33d6efc1808a7a5c8a6066d0b6062d2e0a11d74c40f36c4b959eb1",
+            "message": "Offer and order RealGarant partials on the ui vocabulary"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913171626-5b4987"
+}

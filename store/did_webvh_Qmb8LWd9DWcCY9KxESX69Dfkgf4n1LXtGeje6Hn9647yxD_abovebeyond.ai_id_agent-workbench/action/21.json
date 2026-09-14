@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The evidence check on every pull request (control-verify-action, cmd/relying) refuses every workbench proposal since this afternoon: the agent is under the successor did:webvh:\u2026:abovebeyond.ai:id, not the configured did:web:abovebeyond.ai or its aliases, and the capability is signed by #operator on the YubiKey, not #portal.\n\n- **Succession.** An agent not under the configured DID is accepted only on the successor's own word: its document (fetched at the DID's path, `DocumentURL`) names the configured DID or an alias in `alsoKnownAs` **and** carries the same `#key-1`, the identity's own key. A document that claims the predecessor without that key is refused. The successor's keys are then the ones checked against.\n- **The issuer's key.** The capability is verified against the key its issuer names in the document (`Keys.Issuer`): `#portal` for the principal's own hands, `#operator`/`#operator-2` for the workbench. A capability naming `#operator` but carrying Portal's signature is refused. Without methods in the document (the old construction) the principal key still applies.\n- Tests: the successor's agent admitted by #operator holds; an impostor document is refused; a forged issuer is refused; document URLs follow the path.\n\nAfter merge: tag v0.20.1, then bump `control-verify-action@v1` to install `cmd/relying@v0.20.1` (it pins v0.9.2 today), so the check on every repo picks it up.",
+            "branch": "workbench/relying-succession",
+            "title": "Relying party: a successor identity on its own key; the capability against the key it names"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913163731-056b11"
+}

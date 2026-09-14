@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e5466293bb6177b42f57b0464727114e6cb7b970",
+            "branch": "workbench/paper-todays-laws",
+            "files_sha256": "e9d5cf7f7f34bc3e41da1746071670c15d2b10764822477f858bd8dc4b1086f0",
+            "message": "The paper carries what 13 September taught\n\nThree lessons, each from a mistake the fleet made that day, and each now a\nlaw instead of a memory: a judgement reads the world after the change, a\nverdict can be withdrawn while the withdrawal stays, and a hand writes for\nhow the thing it is fixing actually works."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914051848-e4400a"
+}

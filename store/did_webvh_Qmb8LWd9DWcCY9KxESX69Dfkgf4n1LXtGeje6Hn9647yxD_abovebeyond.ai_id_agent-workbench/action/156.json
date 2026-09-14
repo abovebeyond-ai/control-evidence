@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Settings gets a third tab, **Plans**: the offer on gentells.com as a table, one column per plan, one row per fact (name, price, blurb, by conversation, the seven doors as checkboxes, archive window, reads per day, requests per minute). An admin edits and saves; a member sees it read-only. The save goes to `POST /config/plans` on the pipeline, which validates whole and answers with the reason when it refuses; the site follows within seconds.\n\nWhy: until today every price and allowance was a line in the site's code and a deploy by a developer, so the offer waited on a meeting. Now Trendwolves configures its own offer.\n\nChecked locally against the pipeline branch: the tab renders the defaults, a save lands in the file with who and what. The two touched files lint clean; the 75 problems `npm run lint` reports are on main already.\n",
+            "branch": "workbench/plans-tab",
+            "title": "Settings: the Plans tab"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260913184457-e67aaf"
+}

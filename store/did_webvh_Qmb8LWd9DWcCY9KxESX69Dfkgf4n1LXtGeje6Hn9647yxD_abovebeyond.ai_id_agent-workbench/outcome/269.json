@@ -1,0 +1,14 @@
+{
+    "action": "9bca18a135cce845e3b5c555eaf216fc",
+    "effect": {
+        "detail": {
+            "playbook": "headers",
+            "project": "kubo-it-lab",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 267,
+    "verdict": "ALLOW"
+}

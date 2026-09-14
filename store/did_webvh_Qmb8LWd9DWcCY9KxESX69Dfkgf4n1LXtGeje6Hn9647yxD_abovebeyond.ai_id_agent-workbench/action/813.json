@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e78ff28a7875126988442e434602167f23e255e1",
+            "branch": "workbench/feat/ai-two-audiences",
+            "files_sha256": "df92f58c1ddffd598daa7a762a3551e0ba56660d4ed085ac2966e3515147e3be",
+            "message": "The two vehicle texts are written for their own reader"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914073249-5120c8"
+}

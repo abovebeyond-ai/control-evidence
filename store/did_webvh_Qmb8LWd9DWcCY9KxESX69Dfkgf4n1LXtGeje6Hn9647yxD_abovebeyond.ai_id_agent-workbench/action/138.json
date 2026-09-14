@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3baa0b9175b79618c6eb4f9174aad0e487c0944b",
+            "branch": "workbench/refactor/platform-credentials-in-env-v2",
+            "files_sha256": "612ea69765a1b999315743565a45ad29d746f1e2d9211b377ce681a673de7905",
+            "message": "Platform credentials from the environment, with the settings row as fallback"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913181941-ae96f5"
+}

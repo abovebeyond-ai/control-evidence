@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane's second reading: we should search better on ourselves for academic work. The machinery was already there and thoughtful, including a translator that turns our vocabulary into a literature's (\"gen alpha\" is a generation to us and an alpha subunit to a biologist). What was missing is that the questions were six phrases typed in March and never changed, while the desk went on to confirm 1,335 concepts from what it actually saw and asked the research about none of them.\n\n**`academic-follow.mjs`** makes the strongest confirmed concepts the questions, and they move as the desk moves. Concepts rather than patterns or insights on purpose: a concept is the smallest thing the desk has committed to and `confirmed` means it earned that, while a pattern is our own composition and an insight our own argument. Asking a literature to confirm our argument is how you find only what you brought.\n\nAsked live before building it: our heaviest concept returned 2,137 papers with the first two squarely on it, and \"brainrot gaming vernacular\" returned eight, the first of them a paper on exactly that. A narrow concept returning four papers is not a failure; four papers on the thing we are watching is the point.\n\nTwo things it will not do. It never touches the six hand-written queries: they cover ground the vocabulary does not, and a job that quietly deletes a colleague's work to make room for its own is not a good colleague. And a concept that falls out of the top is put to sleep rather than deleted, because the row carries what it already collected and the concept may be back next week.\n\n**A literature does not move hourly.** Both academic adapters asked every source on every collect round, twelve times a day, each: with forty queries that would be a thousand requests a day to open indexes for a handful of new papers, and duplicates are dropped on arrival anyway. Once a day per query now, which is also politeness towards services that ask for nothing but an email address.\n\nDry by default. Weekly in `ops/crontab`, an hour before the graph round. Five tests, suite 673 green.\n\nToday it would add forty queries where there are six.\n",
+            "branch": "workbench/academic-follows-the-desk",
+            "title": "The research follows the desk"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914053219-82d6a6"
+}

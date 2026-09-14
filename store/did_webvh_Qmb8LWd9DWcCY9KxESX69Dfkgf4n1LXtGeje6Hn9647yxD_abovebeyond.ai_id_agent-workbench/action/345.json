@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "efd8596da118994bc56572679c69c17461946d4a",
+            "branch": "workbench/ui/tailwind-photos",
+            "files_sha256": "ba95c44e47ff65c55ea12398002196a8f8ff6ab7c959543e38329a92a917d101",
+            "message": "Move the photo tab of the vehicle sheet to the ui vocabulary"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913200306-9ef22c"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4d90d7558299607f9aa5a219f9b38f7be1191ce3",
+            "branch": "workbench/review-residuals2",
+            "files_sha256": "6b256b00ed9f4bcc0dd220c1a24ba4c9eb718e6f7fd4f1f424df0275cbcf3a7c",
+            "message": "Source the second study's residuals in the review"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260913185739-6ec915"
+}

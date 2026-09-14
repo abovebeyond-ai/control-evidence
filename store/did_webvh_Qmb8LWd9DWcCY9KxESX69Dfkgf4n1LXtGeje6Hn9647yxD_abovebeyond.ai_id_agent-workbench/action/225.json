@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.playbook",
+        "params": {
+            "playbook": "headers"
+        },
+        "resource": "portal:portal"
+    },
+    "run": "workbench-20260913190719-88810a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bf89ce2290c1da75e1fb66edd4300a7c946ebacc",
+            "branch": "workbench/lock-the-door",
+            "files_sha256": "9dd110fcfab75c7d80487b086ece01596f5a735299a37ddaef5dfaa0a9dc99c4",
+            "message": "Three locks on the agent door: the grant, the account, the sources"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260913183842-ec43ea"
+}

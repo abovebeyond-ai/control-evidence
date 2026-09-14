@@ -1,0 +1,15 @@
+{
+    "action": "2b9066e201a168d4aa9c2686cea6b6af",
+    "effect": {
+        "detail": {
+            "base": "a17b0c8915a384f2ca84fae32c93a5f9adb4286e",
+            "branch": "workbench/health-behind-a-proxy",
+            "commit": "8ac9e322482e9949009fa721d69e27d9eeb9d161",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 681,
+    "verdict": "ALLOW"
+}

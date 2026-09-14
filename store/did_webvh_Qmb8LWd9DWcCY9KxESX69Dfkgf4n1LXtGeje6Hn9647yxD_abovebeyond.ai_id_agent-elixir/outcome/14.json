@@ -1,0 +1,15 @@
+{
+    "action": "739a212653b46566cc7c9371c717cbc4",
+    "effect": {
+        "detail": {
+            "base": "22592944ea0b51e6dc8ee16926c1d7e447fe65dc",
+            "branch": "elixir/headers-2026-09-13-1909",
+            "commit": "4eef32edf30f1696f0beb800365fd7134e569c3a",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 12,
+    "verdict": "ALLOW"
+}

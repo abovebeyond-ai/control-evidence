@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "07cd8b5b9c720c382d4e1baba659ce7239eb2183",
+            "branch": "workbench/fix/warranty-password-and-chat-toggle",
+            "files_sha256": "48414ea60c63488d513bc317d25549b89482ed2a11be31a89cfcd7ac5d76a368",
+            "message": "Warranty password never leaves the server; the chat button only when the chatbot is on"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913185819-67888d"
+}

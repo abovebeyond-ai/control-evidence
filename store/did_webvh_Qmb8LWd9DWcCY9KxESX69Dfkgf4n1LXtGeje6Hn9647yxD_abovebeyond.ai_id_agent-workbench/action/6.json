@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9edd1c3339e1e343bc50b7ded2d8848e9c192bdc",
+            "branch": "workbench/ui/tailwind-ownstock-2",
+            "files_sha256": "70a652c3e2c5d01fdc02b3461d82f48723fb31cf0f136fab0c73d511598aa8eb",
+            "message": "Own stock: prices, dates, properties and extras steps in the ui vocabulary"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913162846-9f6797"
+}

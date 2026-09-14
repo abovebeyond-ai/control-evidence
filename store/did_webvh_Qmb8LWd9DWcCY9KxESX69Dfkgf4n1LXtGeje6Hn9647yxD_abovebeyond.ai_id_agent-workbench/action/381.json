@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "94df22ca463c712d33dbfa9f690d7a700d3275e0",
+            "branch": "workbench/submission-size",
+            "files_sha256": "93a216827cc72b7a352e1ad79d4c54ed2350e0b6f7a66067b7288e2fe7854d44",
+            "message": "Een inzending mag 32 MiB wegen, en te zwaar zegt dat het te zwaar is"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913201605-effa30"
+}

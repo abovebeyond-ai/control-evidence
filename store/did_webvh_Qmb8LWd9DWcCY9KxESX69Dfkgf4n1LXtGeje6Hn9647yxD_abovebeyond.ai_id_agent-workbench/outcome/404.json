@@ -1,0 +1,15 @@
+{
+    "action": "c2a5ed06ccda02e1d09945d27df63869",
+    "effect": {
+        "detail": {
+            "base": "f6f37c35747f0cc29d83c6fc7b180150179a4ce7",
+            "branch": "workbench/fix/exports-view-variables",
+            "commit": "0ca1b012e5377eda6db3bd4f2ecb520e5531ffcd",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 402,
+    "verdict": "ALLOW"
+}

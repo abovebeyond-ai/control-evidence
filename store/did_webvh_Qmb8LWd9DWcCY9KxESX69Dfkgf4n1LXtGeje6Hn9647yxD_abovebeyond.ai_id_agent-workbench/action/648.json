@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane's reading of the evidence mix: we lean on reports too heavily, and a report is a different kind of thing, already reported. He is right, and the machine was tilted toward them in two places at once.\n\n**A report weighed three, more than anything else.** When two concepts meet in a trend report, that is one author's framing of a world they already read for us; when they meet in a post, that is the world. Weighing the synthesis triple made the graph a graph of other people's readings, which is the substance of what a frontier model said when it audited a trend on 13 September: strong as a synthesis, thinner as primary observation. The ladder is now the right way up. What someone posted themselves counts double, because that is the thing the desk exists to catch and the part nobody can copy from us. A report counts as the one voice it is, and it still counts, because a good report is evidence and often the only sight of a market we do not crawl.\n\n**And reports were claimed from the raw queue first.** Combined with the weight, that is how 8% of the corpus became 43% of everything a published trend cites. It is also the wrong way round on its own terms: a PDF published last month reads the same tomorrow, while a platform signal is about a week from being history. What perishes now goes first and the reports are picked up when there is room.\n\nMeasured on the box before changing anything, from the signals' own platform field rather than the sources catalogue, which does not know uploaded reports: of the distinct signals under the published trends, 43% are reports, 32% web and press, 23% platform-native, 1% academic. Reports are 8.1% of the corpus and 42.9% of what is cited, a factor of 5.3.\n\nThe numbers in the ladder are a product judgement and they are Trendwolves': changing one is a line in `signalWorth`, and the reasoning above is what a change has to argue against.\n\nTwo tests on the ladder itself, including that a report which IS peer content is read as the sighting it carries. The decay test's expectations moved with the weights. Suite 668 green.\n\nThis changes what the graph learns from here on; it does not rewrite the edges already counted. Those decay on their own, weekly, now that the round is scheduled.\n",
+            "branch": "workbench/a-report-is-not-a-sighting",
+            "title": "A report is not a sighting"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914052727-eb6097"
+}

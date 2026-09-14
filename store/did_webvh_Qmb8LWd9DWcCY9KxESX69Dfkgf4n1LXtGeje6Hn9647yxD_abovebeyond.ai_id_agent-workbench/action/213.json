@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c0fe47ea37d0ac0d5f259f03a84a93e758623593",
+            "branch": "workbench/headers-provider-import",
+            "files_sha256": "891b8e14c96980ea9a3e3bad6fcd557c0461fea3eeb38db334ff4a92079d09a0",
+            "message": "The headers provider imports only what it uses\n\nThe first proposal of this hand (portal#310) failed the project's style\ngate on an import the generated provider never used. A test now walks\nevery import in the generated file and asks whether the name appears\nagain; the runner runs the project's own Pint over these files besides."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913190052-668a39"
+}

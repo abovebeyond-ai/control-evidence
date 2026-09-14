@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "786e93f62a0c09324e10150e56010a0b2e023c2d",
+            "branch": "workbench/headers-nginx",
+            "files_sha256": "1853aa05fd4f48c77a130e9d0a31addff710047acc45dd6dfdb6e9db8f51a880",
+            "message": "The headers hand writes nginx too, when the repo carries the config\n\nafrodidact.org runs on its own machine behind nginx, so its headers are a\nline in a server block and not in any framework. That line lives on a box,\nand this hand does not touch boxes; but that project keeps its config\nunder version control and copies it out on deploy, and there the header is\na line in a file like any other.\n\nSo a third target: a *.conf under deploy/nginx that names this host in\nexactly one `server_name <host>;` line gets the add_header lines inserted\nin that block, with always, so an error page carries them too. Two\nrefusals keep it honest: a config that already uses add_header anywhere\n(nginx drops every inherited one where a location sets its own), and a\nhost named in more than one block, where which block serves it would be a\nguess."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913201152-1cb282"
+}

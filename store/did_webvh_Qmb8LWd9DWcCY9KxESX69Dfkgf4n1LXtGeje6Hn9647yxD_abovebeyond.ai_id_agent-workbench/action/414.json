@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ede4e73de7feca40cf68444d5d537dcc0972355b",
+            "branch": "workbench/netlify-without-public",
+            "files_sha256": "7a593ce2d778805d9992452cbe78be008d612d49d5e49fe733ddaa7927fe5878",
+            "message": "A Netlify site with nothing static of its own can still send a header\n\nmenukaart-webapp is an Astro site on Netlify without a public/ directory,\nand the hand said it knew no way to send a header there. It did: Astro\ncopies public/ into what it publishes whether that directory existed\nbefore the build or not, and the runner makes the directory it writes in.\n\nSo the target is Netlify when netlify.toml is there and the build is one\nthat copies public/: an existing directory, or an Astro config."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913202633-76c51f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4fb65eac171cb6098ddc379972ef7415b1d67a15",
+            "branch": "workbench/judge-every-ledger",
+            "files_sha256": "cfa0f460fa37fd18a0c3c830a5f279b1ca17fc32c22df6d36e28cbfc6aed583e",
+            "message": "Every ledger has its judge on the clock\n\nTwo of the four ledgers were scheduled. The headers hand's first claim\n(portal, three headers set, merged and live) sat unjudged for that reason\nalone, and a playbook whose runs are never judged keeps a record of\nnothing: the rung can never move, and nobody notices until it does not.\n\nmajor-upgrade at 07:17, headers at 07:18, and a test that walks the hands\nand asks whether each one's ledger is on the clock, so the next hand is\nnot forgotten the same way."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913192239-363e09"
+}

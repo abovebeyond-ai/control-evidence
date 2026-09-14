@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The judge refuted two true claims against a measurement taken before the change had landed. elixir#199 stops that happening again; this is about the two verdicts already written, and about the general case.\n\nA refutation is permanent in the rung (`10 confirmed, 0 refuted`), so one wrong one closes a door that does not reopen. But a ledger is not rewritten, so this is a **withdrawal, not a rewrite**:\n\n- the verdict stays on the run as `wasVerdict`, with `wasEvidence` and `withdrawn: {reason, at}`\n- `verdict` returns to `unjudged`, so the next reading decides it properly\n- a reader sees what happened; the counting sees a run nobody has judged yet\n- `elixir:ledger-withdraw <playbook> <url> --reason=\"\u2026\"`, a person's hand only, and refused without a reason\n\nAfter merging, on the box:\n\n```\nphp artisan elixir:ledger-withdraw headers https://github.com/abovebeyond-ai/abovebeyond/pull/134 --reason=\"judged against an exposure measurement from before the merge; the site was already sending all three headers\"\nphp artisan elixir:ledger-withdraw headers https://github.com/ShaneDeconinck/good-governance/pull/24 --reason=\"judged against an exposure measurement from before the merge, and before the deploy\"\n```\n\nThen the next exposure round judges both on what the sites actually answer.\n\n650 tests, PHPStan, Pint.\n",
+            "branch": "workbench/ledger-correction",
+            "title": "A verdict that rested on the wrong evidence can be withdrawn, visibly"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913204436-2369f3"
+}

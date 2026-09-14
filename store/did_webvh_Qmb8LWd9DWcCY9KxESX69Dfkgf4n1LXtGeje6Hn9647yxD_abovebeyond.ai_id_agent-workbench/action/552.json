@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d7cdf1bd6a9060480a14168b75ab1418f3fb3bde",
+            "branch": "workbench/word-for-the-act",
+            "files_sha256": "68eca1c6e18b17902657e37aaec5ecea8356f5905a956ccb76be8d6bbca84e4c",
+            "message": "De skill vraagt het woord dat de daad noemt, en zegt wat te tekenen"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260913213739-2de3e5"
+}

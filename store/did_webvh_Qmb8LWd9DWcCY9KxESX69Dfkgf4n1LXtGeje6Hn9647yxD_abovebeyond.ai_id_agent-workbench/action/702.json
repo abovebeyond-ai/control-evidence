@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3f61bcde07aa4f669a1665cfad740a487ae62a2b",
+            "branch": "workbench/ui/select-all-photos",
+            "files_sha256": "08e4470a685bd14e77e03eac5ff45f6bf46a1072511e7a4973720fac05cce474",
+            "message": "A master checkbox selects every photo that is on screen"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914054124-ef3f30"
+}

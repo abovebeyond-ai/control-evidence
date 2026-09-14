@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vera is a hand on its own machine since today, but its ticket was still signed by Portal's own key: the grant for `#agent-vera` named Portal as the principal, while the workbench names the two YubiKeys. So one hand ended at the operator and the other at an application, which is the thing rows 4.1.5 and 5.2.2 of the standard rule out.\n\nPortal now carries the operator's word for Vera as it does for the workbench.\n\n- An admission says which hand it admits (`agent` on `workbench_admissions`, nullable: a row written before Vera existed is the workbench's). A word signed for one hand never admits the other.\n- `OperatorKeys::check` accepts a word whose subject is `#agent-workbench` or `#agent-vera`, and nothing else.\n- `POST ingest/capability/vera/{slug}/{review}` hands back exactly what the operator signed when such a word stands. The word covers `vera/<slug>/*`, the answer names the one review. Portal's own ticket remains for the owner token, which is Portal speaking to itself.\n\nPortal keeps carrying what it could not have made. With the companion change in Elixir (the review grant takes `principal_keys` from the DID document), every hand on the gateway is admitted by a key on a YubiKey.\n",
+            "branch": "workbench/vera-operator-word",
+            "title": "Het woord van de operator geldt ook voor Vera"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913185259-1ff4cc"
+}

@@ -1,0 +1,14 @@
+{
+    "action": "0e60044fa7dd9fc1d3abce5aaa02da90",
+    "effect": {
+        "detail": {
+            "playbook": "headers",
+            "project": "menukaart-webapp",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 270,
+    "verdict": "ALLOW"
+}

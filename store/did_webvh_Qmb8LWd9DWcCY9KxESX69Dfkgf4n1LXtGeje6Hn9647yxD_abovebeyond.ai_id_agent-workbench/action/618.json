@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Creating a project was possible, deleting one was not, so a site nobody maintains any more keeps being measured, keeps opening tasks and keeps colouring the calm layer (blitzt.be, today). By hand in the database is no answer: more disappears than anyone sees, and nothing says afterwards what was there.\n\n`php artisan portal:project-delete <slug>` with four locks, each from something a deletion can do:\n\n1. **It deletes nothing by default.** It prints what hangs off the project (updates, hours, costs, files, measurements). Only `--confirm=<slug>`, the slug typed out in full, lets it act: otherwise a wrong slug in a shell history is one arrow-up away from a deleted project.\n2. **What disappears is written down first**, as one JSON in `storage/app/private/deleted-projects/`: the project, its updates, hours, costs, files and the last state of every measurement. Deleting is allowed, forgetting is not.\n3. **Money refuses.** Unbilled billable hours or rebillable costs stop it until `--with-money` is given. Invoices hang off the *client*, not the project, so they are untouched and stay where the bookkeeping looks for them.\n4. **It cleans what has no foreign key**, in one transaction: reports keyed by slug and the workbench admissions and requests. Without that a deleted project stays in the fleet view as a measurement.\n\nTests: nothing without the repeated slug, nothing on a typo, money refuses and then allows, the export contains what disappeared, an unknown slug says so. Suite green but `BuildStampTest` (worktree only).\n",
+            "branch": "workbench/project-delete",
+            "title": "Een project verwijderen kan, en het kost vier sloten"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914051432-77ca2a"
+}

@@ -1,0 +1,48 @@
+{
+    "certificate": "@[site:sportbusinessgame_eu]{sportbusinessgame.eu} misses %[missingHeaders]{4} protective header(s), %[heavyHeadersMissing]{2} of them CSP or HSTS; the hand sets %[headersToSet]{3} of them by middleware, ?[safe: HEADERS_SAFE_SET]{all from the safe set}.",
+    "errors": null,
+    "provenance": {
+        "site:sportbusinessgame_eu.headersToSet": "gateway",
+        "site:sportbusinessgame_eu.heavyHeadersMissing": "inferred",
+        "site:sportbusinessgame_eu.missingHeaders": "inferred",
+        "site:sportbusinessgame_eu.name": "inferred",
+        "site:sportbusinessgame_eu.safeHeaders": "gateway"
+    },
+    "registry": {
+        "HEADERS_SAFE_SET": {
+            "field": "safeHeaders",
+            "label": "the headers set are the safe set, without a content security policy",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "HEADERS_SAFE_SET"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "attempt": "gateway",
+        "ciRun": "inferred",
+        "coverage": "inferred",
+        "filesChanged": "inferred",
+        "from": "inferred",
+        "headersToSet": "gateway",
+        "heavyHeadersMissing": "inferred",
+        "missingHeaders": "inferred",
+        "model": "inferred",
+        "safeHeaders": "gateway",
+        "semverSafe": "gateway",
+        "testsAfter": "inferred",
+        "testsBefore": "inferred",
+        "to": "inferred",
+        "underTests": "gateway"
+    },
+    "store": {
+        "site:sportbusinessgame_eu.headersToSet": 3,
+        "site:sportbusinessgame_eu.heavyHeadersMissing": 2,
+        "site:sportbusinessgame_eu.missingHeaders": 4,
+        "site:sportbusinessgame_eu.name": "sportbusinessgame.eu",
+        "site:sportbusinessgame_eu.safeHeaders": 1
+    },
+    "verified": true
+}

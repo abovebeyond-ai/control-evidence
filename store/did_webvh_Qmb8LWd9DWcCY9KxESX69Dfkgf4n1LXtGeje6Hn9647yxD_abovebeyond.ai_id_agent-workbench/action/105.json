@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9c5272ad0170ae9b93fdb356a78fc98d0509577e",
+            "branch": "workbench/review-ticket-read",
+            "files_sha256": "6806bded2e2b7591f5bee5ca84f51da7ac1572acde9d2332e77729cb5e0deb75",
+            "message": "Het reviewticket volgt de regel van de werkbank: leestoken plus een toelating"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913180551-a140d0"
+}

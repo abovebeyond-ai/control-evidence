@@ -1,0 +1,10 @@
+{
+    "action": "6eec54dfae3fba3ee9229b11fdfde5cd",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability is for did:webvh:QmdUpqNoPqt9txAjZbzUSshra31zYiTM8JebuN1uSzh5ZY:abovebeyond.ai#agent-workbench, not this agent",
+    "step": 6,
+    "verdict": "DENY"
+}

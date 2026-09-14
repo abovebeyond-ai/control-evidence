@@ -1,0 +1,15 @@
+{
+    "action": "797ac3ff7cfadd7ddff231b17fec3448",
+    "effect": {
+        "detail": {
+            "base": "4fb65eac171cb6098ddc379972ef7415b1d67a15",
+            "branch": "workbench/judge-every-ledger",
+            "commit": "ba86849d2aa434c1864dec58b452a3292447af51",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 243,
+    "verdict": "ALLOW"
+}

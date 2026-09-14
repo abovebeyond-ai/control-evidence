@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`SecurityFix.php` stood at 1,369 lines, and the four rules it exists for (within semver always, a major never on its own, never a prerelease, never in a repo without tests) were buried under two hundred lines of gateway plumbing before the reader reached them. The same fault the dashboard had at 3,000 lines, and the same fix: not fewer lines, but each part where it belongs.\n\nThree traits under `Playbooks\\Concerns`, moved as they were, no behaviour changed:\n\n- `SpeaksToTheGateway` (272) \u2014 who the hand is, the grant it stands under, the gate its move goes through, the capability, the evidence. Knows nothing of what is being repaired.\n- `HandsOverToTheRunner` (235) \u2014 starting the workflow in the project's own CI, waiting for it, reading back what it did.\n- `WorksTheCheckout` (434) \u2014 the baseline, the change, the tests as judge, the cleanup when it fails. Every line here touches something; no judgement lives in it.\n\n`SecurityFix` keeps what is its own: the rules, the decision, the run, the claims it makes to the ledger. 1,369 lines to 489.\n\nNothing moved between classes, so the three playbooks that inherit from it (Maintenance, MajorUpgrade, Headers) are untouched. That they inherit from the security hand rather than from a base of their own is the next thing out of place, and deliberately not mixed into this change.\n\nSuite 643/643, PHPStan clean, Pint clean.\n",
+            "branch": "workbench/security-fix-split",
+            "title": "SecurityFix: de regels vooraan, de machinerie met een naam ernaast"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913192216-22fc7f"
+}

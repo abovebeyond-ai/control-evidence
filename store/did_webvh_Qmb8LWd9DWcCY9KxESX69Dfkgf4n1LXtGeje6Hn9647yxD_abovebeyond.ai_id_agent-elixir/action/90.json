@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "75e09d7a04e5e3814ad1c131d85bf59291cbcdef",
+            "branch": "elixir/headers-2026-09-14-0626",
+            "files_sha256": "d136a09424ad73c4ac4d065bcfea1a1087031755fdf4e7c5cdf02f779d513ae3",
+            "message": "Security headers: strict-transport-security, referrer-policy, permissions-policy",
+            "packages": 3
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "01M2F9E9MDCMNHK34CNVY6DPB8"
+}

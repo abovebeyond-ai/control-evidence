@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f6f37c35747f0cc29d83c6fc7b180150179a4ce7",
+            "branch": "workbench/fix/exports-view-variables",
+            "files_sha256": "cf8b8f444fa210492eab3b5db72e8361f5f816559bc7bd9e60daa4ea2b24407f",
+            "message": "The exports list always gets the variables its rows read"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913202120-d68aa2"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two of the four ledgers were scheduled (`security-fix`, `maintenance`). The headers hand's first claim on portal, merged and live, stayed `unjudged` for that reason alone; running `elixir:judge headers` by hand confirmed it at once (\"3 header(s) now sent\").\n\nA playbook whose runs are never judged keeps a record of nothing, and a record of nothing never earns a rung. So: `major-upgrade` at 07:17, `headers` at 07:18, and a test that walks the four hands and asks whether each ledger is on the clock. Checked that it bites by removing the headers line.\n",
+            "branch": "workbench/judge-every-ledger",
+            "title": "Every ledger has its judge on the clock"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913192239-363e09"
+}

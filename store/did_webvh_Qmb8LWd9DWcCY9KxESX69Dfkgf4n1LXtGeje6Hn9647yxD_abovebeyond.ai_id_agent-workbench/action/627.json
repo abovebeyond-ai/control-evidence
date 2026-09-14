@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Step one of `docs/agent-doors.md` (portal#318): a door on the machine where Vera lives.\n\nThe stdio server runs where the agent runs, which is why publishing one page on 13 September cost an 8.4 MB copy to Vera's machine and two ssh hops. `mcp-http.mjs` runs on Vera's own machine and is reached over HTTP, so nothing travels but the request: the page is built and published where it already is.\n\n- **Reads answer from the record**: `vera_record`, `vera_events`, `vera_approvals`, with this box's own machine token.\n- **Writes are proposals**: `vera_publish`, `vera_invite`, `vera_seal` go through the control gateway under the operator's word, and an invitation or a seal answers with what to sign when no word names that act. The door hands out no power a hand does not already have.\n- **The key ceremony is deliberately absent.** Wrapping a content key needs the content key, and those stay with the people on the review; an agent that needs it uses the stdio server where those keys are. `README-mcp.md` says which door is for what.\n- **Opened by the box's machine token**, the one the app's client already uses, so revoking it closes both doors and there is no second secret to forget. Constant-time compare, and a request without it never reaches the transport.\n- Listens on `127.0.0.1` only. In front of it goes one `location /mcp` in the site's nginx, so the existing certificate covers it; the README carries the block and the `claude mcp add --transport http` line.\n\nStateless per request on purpose: a door kept alive by a supervisor must not hold a session a client would silently lose.\n",
+            "branch": "workbench/mcp-over-http",
+            "title": "Vera's deur voor agents, op haar eigen machine"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914051808-a00098"
+}

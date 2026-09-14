@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3f61bcde07aa4f669a1665cfad740a487ae62a2b",
+            "branch": "workbench/perf/deploy-warmup",
+            "files_sha256": "ef3b78745fdaef41babb8c3c22099301f73d5de0504b8cbb867823956fb105db",
+            "message": "A deploy warms the caches so no visitor pays for the first request"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914055241-3ff910"
+}

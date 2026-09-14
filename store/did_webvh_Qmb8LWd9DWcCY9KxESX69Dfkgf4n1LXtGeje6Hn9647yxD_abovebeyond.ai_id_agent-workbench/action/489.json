@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The companion of control#63. Vera's review hand may invite a person and seal a root, and neither can be taken back: an invitation is mail that has been sent, a seal is anchored. Until now both rode on a word that named a period, \"admitted on this project until 23:59\", which a machine holding the hand key could spend as often as it liked inside the window.\n\n- `ReviewHand::PER_ACTION` names `review.invite` and `review.sign`, and the grant carries it.\n- Publishing keeps its window on purpose: a page can be published again, and the judgements survive it, so the cost of a touch of the key per publish buys nothing.\n\nThe gateway then requires a capability naming that exact act, and spends it on use.\n",
+            "branch": "workbench/vera-word-per-act",
+            "title": "Uitnodigen en zegelen vragen het woord voor die ene daad"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913210200-a0584e"
+}

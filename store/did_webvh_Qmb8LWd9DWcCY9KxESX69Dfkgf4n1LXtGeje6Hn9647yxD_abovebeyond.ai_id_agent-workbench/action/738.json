@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Without this workflow there is nothing to hand the work to: the hands of Elixir propose, but they run in the project's own CI, never beside the fleet's keys. The headers hand stopped here today with exactly that reason.\n\nThe logic lives in `abovebeyond-ai/elixir-fix` on the moving `v1` tag, so no copy ages here. Versions and steps mirror `ci.yml`: PHP 8.5, Node 22, composer plus `npm ci --prefix skill` (the skill runs in Node with its own modules), the key written into `.env` and the untracked `tests/Unit` directory created, then `php artisan test`.\n\nAfter this, the headers hand can propose the protective headers this site misses as Laravel middleware.\n",
+            "branch": "workbench/elixir-fix-workflow",
+            "title": "De runner van Elixir in dit project"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914060541-9c4fab"
+}

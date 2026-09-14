@@ -1,0 +1,15 @@
+{
+    "action": "ce4753564342d35ef2a7057277d85fa6",
+    "effect": {
+        "detail": {
+            "base": "2311a0a391207038dde2d2849877431a957df173",
+            "branch": "workbench/ui/tailwind-vehicle-general",
+            "commit": "6acb4bf640911d2a3e8f86900e2b26e7d7782fd3",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 228,
+    "verdict": "ALLOW"
+}

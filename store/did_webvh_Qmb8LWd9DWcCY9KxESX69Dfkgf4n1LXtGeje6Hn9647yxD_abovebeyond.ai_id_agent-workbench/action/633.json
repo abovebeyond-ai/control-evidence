@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three things yesterday taught the hard way, written down where the next reader will find them rather than left in a pull request nobody rereads:\n\n- **A judgement reads the world after the change.** Two true claims were refuted seven minutes after their pull requests merged, against a reading from before the merge; and a second time against a reading that followed a redirect hop instead of the page behind it. Merging is not deploying, deploying is not measuring, and a judge is only as good as the reading it trusts.\n- **A verdict can be withdrawn, and the withdrawal stays.** A ledger is not rewritten, but until yesterday it could not be corrected either, and one wrong refutation costs a playbook its rung for good. Every verdict a run was given stays on it with its evidence and the reason it did not hold; the run returns to unjudged. A person does that, with a reason.\n- **A hand writes for how the thing it is fixing actually works.** One claim, three writers (Laravel middleware, a Netlify _headers file, nginx lines in a repo-carried config), and refusals instead of guesses. Writing the right thing in the wrong place is its own failure mode.\n",
+            "branch": "workbench/paper-todays-laws",
+            "title": "The paper carries what 13 September taught"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914051848-e4400a"
+}

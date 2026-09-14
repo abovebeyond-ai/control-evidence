@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"kind\":\"meta\",\"branch\":\"headers\",\"message\":\"Security headers: permissions-policy\"},{\"kind\":\"file\",\"path\":\"public\\/_headers\",\"content\":\"IyBUaGUgcHJvdGVjdGl2ZSBoZWFkZXJzIHRoaXMgc2l0ZSB3YXMgbWlzc2luZywgcHJvcG9zZWQgYnkgRWxpeGlyLgojIE9ubHkgdGhlIHNhZmUgc2V0OiBhIENvbnRlbnQtU2VjdXJpdHktUG9saWN5IGlzIGEgcGVyLXNpdGUgZGVjaXNpb24gYW5kIGlzIG5vdCBzZXQgaGVyZS4KLyoKICBwZXJtaXNzaW9ucy1wb2xpY3k6IGNhbWVyYT0oKSwgbWljcm9waG9uZT0oKQo=\"}]"
+            },
+            "packages": 2,
+            "plan_sha256": "fc17917a59c6608d586affc584e4337522a85552c51e4b769913b4328aacf0eb",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "01M2E6PAH71WR1XDCME0F7C7YE"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d3bd3e1b19569657acb7624dd3333bc28363945",
+            "branch": "workbench/vm-v0-20-1",
+            "files_sha256": "91b18fa65502d7a7efb0f5ea973b2a1296634c764662f7d69d6a86053ba03c4f",
+            "message": "De VM op v0.20.1\n\nDe capability naast het record (#55) en de relying party die een opvolger volgt (#57); de sha256 van control-gateway-linux-amd64 uit SHA256SUMS van de release, hier nagerekend op het gedownloade asset."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913170121-7d9bb7"
+}

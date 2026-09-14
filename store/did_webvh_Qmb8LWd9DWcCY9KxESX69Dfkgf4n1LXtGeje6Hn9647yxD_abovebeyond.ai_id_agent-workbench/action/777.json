@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "I shipped this yesterday activating its own forty sources. It should not, and a live check of the queries it would have added shows why.\n\n**A third of our confirmed concept names are not research questions.** Asked of OpenAlex today: \"multi platform gaming efficiency\" returns 42,597 papers whose first result is drone-assisted disaster response, and \"aesthetic identity curation\" lands in cosmetic medicine. Ten of those a day would have entered the corpus every day carrying academic authority, tier a and trust 1.2.\n\n**And no automatic test separates them.** Volume is useless, because the bad queries return MORE than the good ones. A stricter field search still lands on ride-pooling and diffusion models. Anchoring the query in \"youth\" silences the good ones too: \"brainrot gaming vernacular\" goes from eight relevant papers to none. A person reading forty lines tells them apart in a minute, and the index cannot.\n\nSo the job now does what every other hand on this desk does: it proposes. The queries are created inactive under the same `source-proposed-` prefix the scout uses, so they appear in the same place, and a person switches on the ones that name something real.\n\nThree rules, each with a reason. It proposes a query ONCE and never again, in any state, because a hand that keeps re-offering what was turned down is not proposing but insisting. It never approves. And a query whose concept has faded is reported rather than switched off, because that row is collecting and the call is a person's.\n\nLeft as it was: it never touches the six hand-written queries.\n\nSuite 674 green. The weekly line in `ops/crontab` stays, and is now safe to run unattended, which the merged version was not: next Monday it would have activated forty unreviewed sources on its own.\n",
+            "branch": "workbench/academic-proposes",
+            "title": "The academic queries are proposed, not decided"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914062558-a555d7"
+}

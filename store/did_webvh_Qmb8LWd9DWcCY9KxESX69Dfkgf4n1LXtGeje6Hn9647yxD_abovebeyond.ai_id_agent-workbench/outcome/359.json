@@ -1,0 +1,15 @@
+{
+    "action": "2d6df1f92816201e638777d19fa23541",
+    "effect": {
+        "detail": {
+            "base": "efd8596da118994bc56572679c69c17461946d4a",
+            "branch": "workbench/ui/tailwind-bidding-lists",
+            "commit": "a45c629a90cd26b7eae4aa307560f13af5693d08",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 357,
+    "verdict": "ALLOW"
+}

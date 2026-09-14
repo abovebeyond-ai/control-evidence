@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follows #305. The name is shown as text; pressing \"rename\" opens the field and a save button (a `<details>`, the same step the remove button takes), so a row is never a form until asked. Passkey tests green.",
+            "branch": "workbench/rename-behind-a-step",
+            "title": "Keys: the name reads as text; the field appears behind \"rename\""
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913172331-f223ce"
+}

@@ -1,0 +1,48 @@
+{
+    "certificate": "@[site:peugeotdebacker_be]{peugeotdebacker.be} misses %[missingHeaders]{2} protective header(s), %[heavyHeadersMissing]{1} of them CSP or HSTS; the hand sets %[headersToSet]{1} of them by middleware, ?[safe: HEADERS_SAFE_SET]{all from the safe set}.",
+    "errors": null,
+    "provenance": {
+        "site:peugeotdebacker_be.headersToSet": "gateway",
+        "site:peugeotdebacker_be.heavyHeadersMissing": "inferred",
+        "site:peugeotdebacker_be.missingHeaders": "inferred",
+        "site:peugeotdebacker_be.name": "inferred",
+        "site:peugeotdebacker_be.safeHeaders": "gateway"
+    },
+    "registry": {
+        "HEADERS_SAFE_SET": {
+            "field": "safeHeaders",
+            "label": "the headers set are the safe set, without a content security policy",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "HEADERS_SAFE_SET"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "attempt": "gateway",
+        "ciRun": "inferred",
+        "coverage": "inferred",
+        "filesChanged": "inferred",
+        "from": "inferred",
+        "headersToSet": "gateway",
+        "heavyHeadersMissing": "inferred",
+        "missingHeaders": "inferred",
+        "model": "inferred",
+        "safeHeaders": "gateway",
+        "semverSafe": "gateway",
+        "testsAfter": "inferred",
+        "testsBefore": "inferred",
+        "to": "inferred",
+        "underTests": "gateway"
+    },
+    "store": {
+        "site:peugeotdebacker_be.headersToSet": 1,
+        "site:peugeotdebacker_be.heavyHeadersMissing": 1,
+        "site:peugeotdebacker_be.missingHeaders": 2,
+        "site:peugeotdebacker_be.name": "peugeotdebacker.be",
+        "site:peugeotdebacker_be.safeHeaders": 1
+    },
+    "verified": true
+}

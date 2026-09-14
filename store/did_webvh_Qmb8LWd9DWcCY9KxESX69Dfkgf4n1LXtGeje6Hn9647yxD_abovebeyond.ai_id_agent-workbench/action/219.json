@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "01fc7b46816ef9c9aefb9467a83844ef72c62c88",
+            "branch": "workbench/fix/warranty-password-and-chat-toggle-v2",
+            "files_sha256": "678210f8549378c74f59b41b87dc883a961c67cca487ad6145782db3b1f87c70",
+            "message": "Test the chat condition where three callers read it, not through a controller that needs an OpenAI key"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913190229-0a2b0b"
+}

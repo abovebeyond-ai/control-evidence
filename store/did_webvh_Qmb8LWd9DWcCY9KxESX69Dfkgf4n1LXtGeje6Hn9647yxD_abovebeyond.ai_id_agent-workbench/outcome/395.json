@@ -1,0 +1,14 @@
+{
+    "action": "2ad217d79e4d32a6488882c3c12c7ce6",
+    "effect": {
+        "detail": {
+            "playbook": "headers",
+            "project": "garage-de-backer-website",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 393,
+    "verdict": "ALLOW"
+}

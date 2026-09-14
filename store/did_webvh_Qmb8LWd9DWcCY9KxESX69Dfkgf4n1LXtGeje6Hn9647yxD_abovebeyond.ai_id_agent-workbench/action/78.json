@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9e0a8529ec718f4815f5eb075335cafac3dd0995",
+            "branch": "workbench/rename-behind-a-step",
+            "files_sha256": "8ec5ce735d961a8d947df263138002a06c4b5080710c280bae9b4f60b85f85e0",
+            "message": "Sleutels: de naam leest als tekst; het veld verschijnt pas achter \"hernoemen\", zoals bij verwijderen"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913172331-f223ce"
+}

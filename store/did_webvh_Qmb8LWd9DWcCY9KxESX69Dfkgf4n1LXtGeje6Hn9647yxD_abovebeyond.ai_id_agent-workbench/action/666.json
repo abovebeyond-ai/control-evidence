@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vera has been live on its own machine since yesterday and is the one product nothing watches: no uptime check, no certificate expiry, no app health. Silence is an assertion, so this gives Elixir something to read.\n\n- The app-health module, as Portal carries it: `GET /api/elixir` behind a bearer token, the scheduler's heartbeat, the queue, the release, runtime, storage, database, cache and today's errors. Version 2 of the contract.\n- `elixir:beat` every minute in `routes/console.php`. The heartbeat is the point of the module: without it a crontab line that fell away looks like a quiet week, because every task keeps its old `lastRunAt`. Vera schedules nothing else of its own; the work a review makes is queued by the front door, and `config/elixir.php` says so rather than declaring jobs that do not exist.\n- `elixir.json` declares the topology, as every measured project does: production on `vera.abovebeyond.ai`, the health path, and `gated` true because the review pages sit behind a link and a session, so judging them on meta descriptions would say nothing.\n- Tests: the door is shut without a token and to a wrong one; with one it answers the contract; and `scheduler` is absent until a beat has been recorded, because what an app does not send is not judged, which is different from a zero.\n\nThree things outside this repo follow: the scheduler on the box (Forge), the token in the app's environment and in `elixir-secrets/app-tokens/vera`, and switching the project on in Portal. Suite 32/32.\n",
+            "branch": "workbench/app-health",
+            "title": "Vera onder Elixir: de app-health-deur en de hartslag"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914053133-b70998"
+}

@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.playbook",
+        "params": {
+            "playbook": "headers"
+        },
+        "resource": "portal:menukaart-webapp"
+    },
+    "run": "workbench-20260913201914-83a09c"
+}

@@ -1,0 +1,48 @@
+{
+    "certificate": "@[site:afrodidact_org]{afrodidact.org} misses %[missingHeaders]{5} protective header(s), %[heavyHeadersMissing]{2} of them CSP or HSTS; the hand sets %[headersToSet]{4} of them by middleware, ?[safe: HEADERS_SAFE_SET]{all from the safe set}.",
+    "errors": null,
+    "provenance": {
+        "site:afrodidact_org.headersToSet": "gateway",
+        "site:afrodidact_org.heavyHeadersMissing": "inferred",
+        "site:afrodidact_org.missingHeaders": "inferred",
+        "site:afrodidact_org.name": "inferred",
+        "site:afrodidact_org.safeHeaders": "gateway"
+    },
+    "registry": {
+        "HEADERS_SAFE_SET": {
+            "field": "safeHeaders",
+            "label": "the headers set are the safe set, without a content security policy",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "HEADERS_SAFE_SET"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "attempt": "gateway",
+        "ciRun": "inferred",
+        "coverage": "inferred",
+        "filesChanged": "inferred",
+        "from": "inferred",
+        "headersToSet": "gateway",
+        "heavyHeadersMissing": "inferred",
+        "missingHeaders": "inferred",
+        "model": "inferred",
+        "safeHeaders": "gateway",
+        "semverSafe": "gateway",
+        "testsAfter": "inferred",
+        "testsBefore": "inferred",
+        "to": "inferred",
+        "underTests": "gateway"
+    },
+    "store": {
+        "site:afrodidact_org.headersToSet": 4,
+        "site:afrodidact_org.heavyHeadersMissing": 2,
+        "site:afrodidact_org.missingHeaders": 5,
+        "site:afrodidact_org.name": "afrodidact.org",
+        "site:afrodidact_org.safeHeaders": 1
+    },
+    "verified": true
+}

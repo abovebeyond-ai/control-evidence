@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9edd1c3339e1e343bc50b7ded2d8848e9c192bdc",
+            "branch": "workbench/test/no-risky-marker",
+            "files_sha256": "b38bf9e3aa6fd7cd85c0f16f7289fcafd4ac8bc032ea8d09bbbb0299b94a4cae",
+            "message": "Tests: the route sweep's data provider leaves no error handler behind"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913162921-14ea90"
+}

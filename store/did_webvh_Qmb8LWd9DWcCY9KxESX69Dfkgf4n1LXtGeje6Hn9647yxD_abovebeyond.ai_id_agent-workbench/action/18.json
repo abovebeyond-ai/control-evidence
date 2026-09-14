@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9f82da40d487bc99674bdb9e2f0f16cf57bdf6f4",
+            "branch": "workbench/relying-succession",
+            "files_sha256": "76c466cab7c4698df74a1153bf3b8e7f2b812cae7e59f5867c97f84e923f8656",
+            "message": "Relying party: een opvolger-identiteit op haar eigen sleutel, en de capability aan de sleutel die ze als uitgever noemt\n\nDe evidence-check op elke pull request (control-verify-action, cmd/relying) weigerde vanaf 13 september 2026 elk voorstel van de werkbank: de agent staat onder de opvolger did:webvh:\u2026:abovebeyond.ai:id, niet onder de geconfigureerde did:web:abovebeyond.ai of haar aliassen, en de capability is getekend door #operator op de YubiKey, niet door #portal. Nu aanvaardt de relying party een agent van een opvolger alleen op het woord van die opvolger zelf: haar document (opgehaald op het pad van de DID) noemt de geconfigureerde DID of een alias in alsoKnownAs \u00e9n draagt dezelfde #key-1, de sleutel van de identiteit; wie de voorganger claimt zonder die sleutel wordt geweigerd. En de capability wordt getoetst aan de sleutel die ze als uitgever noemt in dat document (#portal voor Portals eigen handen, #operator en #operator-2 voor de werkbank); een capability die #operator noemt met de handtekening van Portal wordt geweigerd. Zonder methoden in het document (de oude constructie) blijft de principal-sleutel gelden."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913163731-056b11"
+}

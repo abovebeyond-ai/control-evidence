@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"kind\":\"meta\",\"branch\":\"headers\",\"message\":\"Security headers: strict-transport-security, referrer-policy, permissions-policy\"},{\"kind\":\"file\",\"path\":\"app\\/Http\\/Middleware\\/SecurityHeaders.php\",\"content\":\"PD9waHAKCm5hbWVzcGFjZSBBcHBcSHR0cFxNaWRkbGV3YXJlOwoKdXNlIENsb3N1cmU7CnVzZSBJbGx1bWluYXRlXEh0dHBcUmVxdWVzdDsKdXNlIFN5bWZvbnlcQ29tcG9uZW50XEh0dHBGb3VuZGF0aW9uXFJlc3BvbnNlOwoKLyoqCiAqIFRoZSBwcm90ZWN0aXZlIGhlYWRlcnMgdGhpcyBzaXRlIHdhcyBtaXNzaW5nLCBvbiBldmVyeSB3ZWIgcmVzcG9uc2UuCiAqCiAqIFByb3Bvc2VkIGJ5IEVsaXhpciAodGhlIGhlYWRlcnMgaGFuZCkgZnJvbSBpdHMgZXhwb3N1cmUgbWVhc3VyZW1lbnQuIE9ubHkgdGhlIHNhZmUgc2V0OgogKiBhIENvbnRlbnQtU2VjdXJpdHktUG9saWN5IGlzIGEgcGVyLXNpdGUgZGVjaXNpb24gYW5kIGlzIG5vdCBzZXQgaGVyZS4gQSBoZWFkZXIgdGhlIGFwcAogKiBhbHJlYWR5IHNlbmRzIGlzIGxlZnQgYXMgaXQgaXMuIEhTVFMgc3RhcnRzIGF0IG9uZSB3ZWVrOyByYWlzZSBpdCBvbmNlIGl0IGhhcyBoZWxkLgogKi8KY2xhc3MgU2VjdXJpdHlIZWFkZXJzCnsKICAgIHByaXZhdGUgY29uc3QgSEVBREVSUyA9IFsKICAgICAgICAnc3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eScgPT4gJ21heC1hZ2U9NjA0ODAwJywKICAgICAgICAncmVmZXJyZXItcG9saWN5JyA9PiAnc3RyaWN0LW9yaWdpbi13aGVuLWNyb3NzLW9yaWdpbicsCiAgICAgICAgJ3Blcm1pc3Npb25zLXBvbGljeScgPT4gJ2NhbWVyYT0oKSwgbWljcm9waG9uZT0oKScsCiAgICBdOwoKICAgIHB1YmxpYyBmdW5jdGlvbiBoYW5kbGUoUmVxdWVzdCAkcmVxdWVzdCwgQ2xvc3VyZSAkbmV4dCk6IFJlc3BvbnNlCiAgICB7CiAgICAgICAgJHJlc3BvbnNlID0gJG5leHQoJHJlcXVlc3QpOwoKICAgICAgICBmb3JlYWNoIChzZWxmOjpIRUFERVJTIGFzICRuYW1lID0+ICR2YWx1ZSkgewogICAgICAgICAgICBpZiAoJG5hbWUgPT09ICdzdHJpY3QtdHJhbnNwb3J0LXNlY3VyaXR5JyAmJiAhICRyZXF1ZXN0LT5pc1NlY3VyZSgpKSB7CiAgICAgICAgICAgICAgICBjb250aW51ZTsKICAgICAgICAgICAgfQogICAgICAgICAgICBpZiAoISAkcmVzcG9uc2UtPmhlYWRlcnMtPmhhcygkbmFtZSkpIHsKICAgICAgICAgICAgICAgICRyZXNwb25zZS0+aGVhZGVycy0+c2V0KCRuYW1lLCAkdmFsdWUpOwogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gJHJlc3BvbnNlOwogICAgfQp9Cg==\"},{\"kind\":\"file\",\"path\":\"app\\/Providers\\/SecurityHeadersServiceProvider.php\",\"content\":\"PD9waHAKCm5hbWVzcGFjZSBBcHBcUHJvdmlkZXJzOwoKdXNlIEFwcFxIdHRwXE1pZGRsZXdhcmVcU2VjdXJpdHlIZWFkZXJzOwp1c2UgSWxsdW1pbmF0ZVxDb250cmFjdHNcSHR0cFxLZXJuZWw7CnVzZSBJbGx1bWluYXRlXFN1cHBvcnRcU2VydmljZVByb3ZpZGVyOwoKLyoqCiAqIFJlZ2lzdGVycyB0aGUgU2VjdXJpdHlIZWFkZXJzIG1pZGRsZXdhcmUgb24gdGhlIHdlYiBncm91cC4gSXRzIG93biBwcm92aWRlciByYXRoZXIgdGhhbgogKiBhbiBlZGl0IHRvIGJvb3RzdHJhcC9hcHAucGhwOiBvbmUgbGluZSBpbiBib290c3RyYXAvcHJvdmlkZXJzLnBocCBpcyBhIGNoYW5nZSBhIHJlYWRlcgogKiBjaGVja3MgYXQgYSBnbGFuY2UsIGFuZCBhIHJld3JpdGUgb2YgYXBwLnBocCBpcyBub3QuCiAqLwpjbGFzcyBTZWN1cml0eUhlYWRlcnNTZXJ2aWNlUHJvdmlkZXIgZXh0ZW5kcyBTZXJ2aWNlUHJvdmlkZXIKewogICAgcHVibGljIGZ1bmN0aW9uIGJvb3QoKTogdm9pZAogICAgewogICAgICAgICR0aGlzLT5hcHBbJ3JvdXRlciddLT5wdXNoTWlkZGxld2FyZVRvR3JvdXAoJ3dlYicsIFNlY3VyaXR5SGVhZGVyczo6Y2xhc3MpOwogICAgfQp9Cg==\"},{\"kind\":\"file\",\"path\":\"bootstrap\\/providers.php\",\"before\":\"];\",\"text\":\"    App\\\\Providers\\\\SecurityHeadersServiceProvider::class,\"}]"
+            },
+            "packages": 4,
+            "plan_sha256": "b35d6e21ef53bb14bcfe0d8b02d37036aa4e82f4d969593c4354a9e266555242",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "01M2E1QGCCHPR9BDHNSCP029DM"
+}

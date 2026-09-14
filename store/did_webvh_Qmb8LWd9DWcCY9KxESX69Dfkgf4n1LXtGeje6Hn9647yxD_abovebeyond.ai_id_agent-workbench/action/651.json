@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8bbaab6213433f4ba614159c9d174a4067e47dea",
+            "branch": "workbench/ui/bigger-background-samples",
+            "files_sha256": "2039d8ef5119fe0f6a55bdbd4cfed9585b3fe1829679907f551a8116739f0346",
+            "message": "The background samples are big enough to tell apart"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914052817-150349"
+}

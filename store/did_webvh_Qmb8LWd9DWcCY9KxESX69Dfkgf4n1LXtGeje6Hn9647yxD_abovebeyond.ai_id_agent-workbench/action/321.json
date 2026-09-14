@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3479084bd762832332a52a7a4b95574a5419993c",
+            "branch": "workbench/elixir-fix-workflow",
+            "files_sha256": "e47d8e2c0ffa1fa2a2c430c1b846aa8b782a3d15d4b2e58ddcb11a0b539ab6c3",
+            "message": "De runner van Elixir in dit project\n\nZonder deze workflow is er niets om het werk aan te geven: de handen van\nElixir stellen voor, maar ze draaien in de CI van het project zelf, nooit\nnaast de sleutels van de vloot. De logica staat in abovebeyond-ai/elixir-fix\nop de meebewegende tag v1, dus hier ligt geen kopie te verouderen.\n\nVersies en stappen zijn die van tests.yml, zodat de runner niets goedkeurt\nwat daar breekt."
+        },
+        "resource": "ShaneDeconinck/good-governance"
+    },
+    "run": "workbench-20260913195500-949cd6"
+}

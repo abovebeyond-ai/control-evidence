@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "95f27fe6b0da7934fde9ba3ca1f1c6d215affc04",
+            "branch": "workbench/security/encrypt-removebg-key",
+            "files_sha256": "c002f3cdd50b0171b73a232de471c19fc7fed0dd40ddacbc303b84c8a3545749",
+            "message": "The remove.bg key is encrypted at rest and never rendered"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913193924-84f2e2"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Without this workflow there is nothing to hand the work to: the hands of Elixir propose, but they run in the project's own CI, never beside the fleet's keys. The headers hand stopped here today with exactly that reason.\n\nThe logic lives in `abovebeyond-ai/elixir-fix` on the moving `v1` tag, so no copy ages here. Versions and steps mirror `tests.yml` (PHP 8.4, Node 22, composer + npm ci, `npm run build` because the feature tests render Blade layouts that ask @vite for the manifest, then Pest). The browser tests stay in `tests.yml`: they need Playwright and prove nothing extra about a package or file plan.\n\nAfter this, `node ~/Projects/.portal/playbook.mjs --slug sportbusinessgame --playbook headers` can propose the missing protective headers as middleware.\n",
+            "branch": "workbench/elixir-fix-workflow",
+            "title": "De runner van Elixir in dit project"
+        },
+        "resource": "ShaneDeconinck/good-governance"
+    },
+    "run": "workbench-20260913195500-949cd6"
+}

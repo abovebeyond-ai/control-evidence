@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The section claims that every number in it regenerates from the published runs, and names the commands. One did not hold for the commands as printed: `frontier-residuals.mjs` matched only `convergence-results-frontier-*`, so Finding 3's second-study residuals (the 108 binding errors of the first study against 16 in the second) could not be reached from the paper's own parenthesis. The numbers were in the artifacts; the command was not.\n\n- `frontier-residuals.mjs` takes `--tag` (default `frontier`). Output for the default is byte-identical to before; `--tag frontier2` gives 16 binding errors for Opus 5 in three query-runs, 0 for the other two models, which is the figure Finding 3 reports. An unknown tag exits 1 with `no run files for tag <tag>` rather than printing three empty lines.\n- The paper's parenthesis now says `frontier-residuals.mjs`, with the same `--tag`, for the residual classification of either study.\n- `REPRODUCING.md` names the flag beside the command.\n\nChecked while reviewing the claim: both tables regenerate cell for cell from `frontier-summary.mjs --tag frontier|frontier2` (rates, sample sd, fully-verified and coverage columns), the judgment table and its prose from `judgment-summary.mjs`, the latencies and store size from `deployment-numbers.mjs --tag frontier`, and the first study's 157 / 108 / 69% / 17 of 35 / 40 / 2 from the residual classifier. Finding 1's seven markup-less correction candidates and Finding 3's 297 of 298, 322 of 323, five pupil queries and two repaired by the correction all check out against the run files.\n\nStill not printed by any named command, and left as is: Finding 2's hand sub-classification of the wrong values, and the 16-to-29 per-run range of the baseline (the script reports the per-model means, 18.0 to 26.0, which is the figure the sentence beside it uses).\n",
+            "branch": "workbench/residuals-tag",
+            "title": "Residual classification for either study"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260913175531-323dcb"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"88 signals across 30 sources\" reads as 88 observations. On 13 September a frontier model reading a trend through the agent door found otherwise: mostly other people's reports, one of them carrying nearly half. It was right, and the number had not lied so much as kept quiet.\n\nSo the evidence now says what kind it is, on the trend page and in the agent door, on every plan: how many signals were observed on platforms, taken from reports, from press, or from research. Under the counts, one line: \"11 observed on platforms, 46 from reports, 13 from press, 1 from research\". A kind with nothing in it is not named, because a zero is not a fact worth a word.\n\nThe MCP server instructions and `llms.txt` now tell an agent to use it, since an agent quoting our totals without the kinds is making a claim we did not make.\n\nNeeds `php artisan migrate --force` and one `gentells:reconcile` after the pipeline side lands. Four tests, suite 273 green, Pint clean.\n",
+            "branch": "workbench/evidence-kinds",
+            "title": "The evidence says what kind it is"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260914065619-95c237"
+}

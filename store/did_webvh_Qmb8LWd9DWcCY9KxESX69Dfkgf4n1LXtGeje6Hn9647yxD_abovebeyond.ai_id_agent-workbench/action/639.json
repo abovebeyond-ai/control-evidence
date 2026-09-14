@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5ca182d8f01f43fad485c2298cd98a4a59abc6d8",
+            "branch": "workbench/ui/mail-footer-copy",
+            "files_sha256": "a1f4ed0399bebdf1913ece8f622a73247df5c30c2680a2b195e13739daf3f4c3",
+            "message": "The mail footer says who sent it and why, not how it was built"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914052355-2ee5d2"
+}

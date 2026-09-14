@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The client half of control#63, elixir#202 and portal#317. Inviting someone and sealing a root cannot be taken back, so the gateway now wants a word from the operator naming that act, and spends it on use. This teaches the skill to ask for the right word, and to say exactly what to sign when none stands.\n\n- `actDigest(kind, resource, params)` is the same number the gateway computes (`capability.ActDigest`), and the test pins both digests as the Go implementation produced them rather than recomputing them here. A test that asks the same code the same question agrees with itself and proves nothing; a drift here would not read as \"wrong digest\" but as \"the operator never signed this\".\n- `submit` asks Portal for the word that names this act when the kind needs one, and otherwise for the standing period, as before.\n- When no word stands, the refusal is the instruction: the act in words (\"invite someone@example.org\"), the exact command to run on the machine that holds the YubiKey, and the reminder that the word is spent on this act and nothing else.\n\nPublishing keeps its window on purpose: a page can be published again and the judgements survive it.\n",
+            "branch": "workbench/word-for-the-act",
+            "title": "De skill vraagt het woord dat de daad noemt"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260913213739-2de3e5"
+}

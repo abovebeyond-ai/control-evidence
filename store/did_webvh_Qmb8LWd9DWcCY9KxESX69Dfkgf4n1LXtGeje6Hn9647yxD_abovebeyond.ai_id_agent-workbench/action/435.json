@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "597f1157527ffe7524908a0ac27ef553e5e7b94d",
+            "branch": "workbench/security/rights-without-session-key",
+            "files_sha256": "9f202196327706ebbbb8daff21dc0de77a8fb2bfa605e3b315e8adf6541b83c9",
+            "message": "Rights are rebuilt when the session lacks them instead of skipping the check"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913204322-a0f140"
+}

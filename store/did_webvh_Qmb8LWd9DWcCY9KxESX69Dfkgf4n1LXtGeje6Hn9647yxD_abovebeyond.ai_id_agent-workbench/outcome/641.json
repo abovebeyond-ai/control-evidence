@@ -1,0 +1,15 @@
+{
+    "action": "314a819d65dfb0e2101c391461ec5007",
+    "effect": {
+        "detail": {
+            "base": "5ca182d8f01f43fad485c2298cd98a4a59abc6d8",
+            "branch": "workbench/ui/mail-footer-copy",
+            "commit": "75b42d6de63372737dd836a518e5001272186ad0",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 639,
+    "verdict": "ALLOW"
+}

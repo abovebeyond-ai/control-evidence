@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "11be9962b9956252d8c620d399b73b2872e3d49a",
+            "branch": "workbench/mcp-over-http",
+            "files_sha256": "f8b888ac4950a0357297739b6f6abb2a2b844dd2b4115bb7aa2a15c783ac6a86",
+            "message": "Vera's deur voor agents, op de machine waar Vera woont"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914051808-a00098"
+}

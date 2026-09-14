@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9edd1c3339e1e343bc50b7ded2d8848e9c192bdc",
+            "branch": "workbench/ui/tailwind-ownstock-1",
+            "files_sha256": "8a810da370807c2527feba90f5d9141230a1f48efaf3158046e16303b76fd9d6",
+            "message": "Own stock modals: Bootstrap grid/forms to the ui vocabulary"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913171212-3a27d2"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b430ae264fa1e5149ca040d4284ad8af29c3f1ed",
+            "branch": "workbench/test/green-main-v2",
+            "files_sha256": "48d10dc109845be9206859932062df40fbd3f2376d4fdb5c4f37c18ba94bd8cc",
+            "message": "The VIN message tests log in with rights, as the middleware now requires"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913211309-6df2d8"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Tonight's deploy stopped on \"Uncommitted changes \u2014 commit first\" while nothing of ours was modified. Two faults behind one confusing refusal.\n\n**Untracked files were counted as uncommitted.** They cannot travel: a push carries commits, so a stray file in a working tree has nothing to do with what lands on the server. Eleven old environment backups and the dashboard's build directory on the box were enough to stop every deploy, which is a guard failing in the expensive direction. The check now reads tracked changes only, and prints them when it refuses so the next person does not have to go looking.\n\n**And the script was being run on the server it pushes into.** That is an easy mistake because the file is right there, but the normal way to deploy is merging on main and letting `bin/auto-deploy` follow within two minutes. It now says that, plainly, instead of refusing for a reason that sounds like breakage.\n\n`dashboard-dist/` is gitignored: it is produced on the box and served from there, so it belongs to the machine and not to the history.\n\nSuite 653 green. Unrelated but found alongside: eleven `.env.bak-*` files sitting in the app directory on the box, the oldest from May, each holding a full set of secrets from the day it was written. Not web-reachable, but worth clearing out; that is Shane's hand, not mine.\n",
+            "branch": "workbench/deploy-untracked",
+            "title": "A deploy is not blocked by files that cannot travel"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260913193742-861d46"
+}

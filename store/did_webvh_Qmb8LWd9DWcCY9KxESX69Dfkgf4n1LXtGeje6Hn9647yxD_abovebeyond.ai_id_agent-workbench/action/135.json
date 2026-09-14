@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Laying an operator-signed admission down at Portal (`POST ingest/workbench/admitted/{slug}`, the door the YubiKey's word goes through) answered 500 the first time it was ever used, today, for Vera's machine. The reason was nowhere near the door: `OperatorKeys::published()` caches the operator's keys as raw 32 bytes, the cache store in production is the database, and its `value` column is text, so MySQL refused the whole write with `Incorrect string value: '\\xBF\\xB1\\x84...'`.\n\n- What is cached is now the key as the document writes it, base64url; the caller still gets the raw bytes.\n- The test reads the cached shape rather than the store's behaviour, because the suite runs on the array store and would never have seen this.\n\nThe door matters beyond the workbench: Vera's own machine holds the read token, and a review ticket is issued only while an admission stands, so an admission that cannot be kept means that machine cannot act at all.\n",
+            "branch": "workbench/operator-keys-cache-2",
+            "title": "Toelating op het token: de sleutels als tekst in de cache"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260913181704-dda454"
+}

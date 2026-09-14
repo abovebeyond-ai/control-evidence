@@ -1,0 +1,15 @@
+{
+    "action": "31c32218c453145b60cdf5a3bafc1957",
+    "effect": {
+        "detail": {
+            "base": "31dad05379adf438dc853381a655eef713f715f4",
+            "branch": "workbench/file-plans",
+            "commit": "a16be4ca73f1e30d45c31320b47e415b928bc9b7",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 159,
+    "verdict": "ALLOW"
+}

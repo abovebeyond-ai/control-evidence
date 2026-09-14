@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ede5f512f75eacd166ef25bd2ac07d797d15654d",
+            "branch": "workbench/crontab-as-a-file",
+            "files_sha256": "efac44286333283f6e1df3e6c3053023c9d427f75a12ab55637f7d0182cd6e9e",
+            "message": "The clock is a file"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260913204207-038a70"
+}

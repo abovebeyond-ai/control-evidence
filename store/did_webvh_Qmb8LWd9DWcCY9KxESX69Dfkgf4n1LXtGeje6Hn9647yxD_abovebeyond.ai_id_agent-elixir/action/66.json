@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0ba82bb39c3a569b487f9e3d18e4c6ee2c04d363",
+            "branch": "elixir/headers-2026-09-14-0519",
+            "files_sha256": "7a926eb525f0a27573c9a93fcd4b6c8ac24e81502570bb577206a94e694a5e2c",
+            "message": "Security headers: referrer-policy, permissions-policy",
+            "packages": 2
+        },
+        "resource": "ShaneDeconinck/vlamingdam-frituur"
+    },
+    "run": "01M2F5M1HAG08M94DZHSTZXSCW"
+}

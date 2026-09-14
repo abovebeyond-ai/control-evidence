@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9f51c6c504c3875316e179d42ca5b39c1aad3780",
+            "branch": "workbench/key-custody-operator",
+            "files_sha256": "d0beea0ba6a75c5bcf727e37c2b5debf7b275762877c317ee16fb27e7e47c0e8",
+            "message": "Sleutelbewaring: de sleutels van de operator op de YubiKeys, en de updatesleutels en de reserve van de identiteit"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913171048-7a7544"
+}

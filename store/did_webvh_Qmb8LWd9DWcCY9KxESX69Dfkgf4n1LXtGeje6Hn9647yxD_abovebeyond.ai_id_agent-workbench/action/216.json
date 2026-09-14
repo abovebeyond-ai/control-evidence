@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The generated provider carried `use Illuminate\\Contracts\\Http\\Kernel;` and never used it, so the first proposal of the headers hand failed Portal's `pint --test` gate (portal#310). Dropped, and pinned with a test that walks every import in the generated provider and asks whether the name appears again.\n\nThe other half of that failure (a class name written in full where the project writes it as an import) is house style, fixed in the runner: elixir-fix#6 runs the project's own Pint over exactly the files a file plan wrote.\n",
+            "branch": "workbench/headers-provider-import",
+            "title": "The headers provider imports only what it uses"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260913190052-668a39"
+}

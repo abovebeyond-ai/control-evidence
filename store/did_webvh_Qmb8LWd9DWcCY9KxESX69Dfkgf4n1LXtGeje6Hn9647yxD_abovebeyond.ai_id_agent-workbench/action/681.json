@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a17b0c8915a384f2ca84fae32c93a5f9adb4286e",
+            "branch": "workbench/health-behind-a-proxy",
+            "files_sha256": "f925327704c6fc71a37d6ac28e410c1cb299fec233944e5a4b5abe8437b10d47",
+            "message": "De gezondheidscheck antwoordt ook waar de proxy het pad laat"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914053607-fba32d"
+}

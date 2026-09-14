@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "review.publish",
+        "params": {
+            "by": "hello@shanedeconinck.be",
+            "page_sha256": "c1377f620abc65d5770983bb2fa976a38268b13d168fd76a26b676e13c82b340",
+            "title": "ProveML: Inline Claim Markup for Deterministic Verification of AI-Generated Text"
+        },
+        "resource": "vera/proveml-research/paper1"
+    },
+    "run": "vera-20260913204218-160663"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "32397d7576647940209d635a568ea050a8769ec3",
+            "branch": "workbench/deploy-untracked",
+            "files_sha256": "47488c3f31dbd54d2cc38d9643987c2f9dc9fe13c20d256d6c6df1fb9983aa82",
+            "message": "A deploy is not blocked by files that cannot travel"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260913193742-861d46"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d20a9eb0f9e253384bb40b8d0660b77b106c9533",
+            "branch": "workbench/agent-doors",
+            "files_sha256": "164a81f0d904a5d022b79a64b39f9862ca3614d9830fc43fe34c20a3f1a30b21",
+            "message": "Ontwerp: de deuren waar een agent op klopt, per product"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914051134-244774"
+}

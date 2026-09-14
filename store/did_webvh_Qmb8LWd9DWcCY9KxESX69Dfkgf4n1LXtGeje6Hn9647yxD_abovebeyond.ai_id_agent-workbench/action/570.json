@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5e9145a2554135c0f9f1fdd23103fdebf05f2495",
+            "branch": "workbench/ui/vehicle-sheet-polish-v2",
+            "files_sha256": "df9061c8ce34e73d020cb44f1a6059055f338a74be6e6db0fab8b2b3eda03865",
+            "message": "Vehicle sheet: spacing under the switch, warranty pane tied to its tabs, empty amounts show empty"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913214746-5faa34"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The one claim about a trend that a model reading our sources cannot make for itself: how often we have actually seen it, month by month, since March.\n\n**`packages/core/recurrence.mjs`** walks a trend's patterns to its concepts and counts the distinct signals mentioning them, per month, and the projection carries it with the card.\n\n**It is a SHARE of the month, and that is the whole design.** Our intake swings five-fold (9,288 signals in May, 53,334 in August), so a raw count rises whenever collection rises. Measured that way the first trend I checked looked like a four-fold surge from May to August; against the intake it went 2.4% to 3.0%, which is the truth and a much quieter sentence. Both numbers travel, because a share is not evidence without its numerator and denominator.\n\n**Counted by ingestion, not publication.** 4% of signals carry a publication date older than the corpus and some carry the year 2926. When we saw a thing is the only claim the record actually supports, and it carries `watching_since` so nobody reads the first month of the corpus as the beginning of a trend.\n\nThe direction (rising, falling, steady, too new) is judged on the share and on complete months only: the month in progress is a third of a month and would read as a collapse every time.\n\nSeven tests, including the trap itself: a month where the count doubles while the share halves must not read as a rise. Suite 652 green. The repo's eslint config is missing a dependency on main, so the lint step could not run; nothing to do with this change.\n",
+            "branch": "workbench/recurrence",
+            "title": "The record behind a trend, and the graph's drain"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260913192633-069d56"
+}

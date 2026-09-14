@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A capability is a period today: two hours, or the rest of the day. That is right for what a person can undo, and wrong for what they cannot. A push and a pull request end in a review before anything is merged. An invitation is mail that has been sent. A seal is anchored. For the second kind, \"the operator admitted this project until 23:59\" is a weaker sentence than it sounds, and a machine holding the hand key can use it as often as it likes inside the window.\n\nSo a grant may now name the kinds whose word has to name the act.\n\n- `Payload.Act` is the canonical digest of the action: kind, resource and parameters. The same verb on the same review with another parameter is a different act and needs its own word.\n- `Grant.PerAction` lists the kinds that require it. Everything not listed keeps its window, because every kind here costs the operator a touch of the key per action, and a rule that is unbearable gets worked around.\n- The word is spent, durably (`spent.jsonl` in the store). Without that an attacker on the machine that holds the hand key could replay the same signed word until it expired, and \"the operator signed this action\" would mean \"signed one like it, once\". A restart that forgets is a restart that allows a replay.\n- The record says `control_word` with the act and that it was spent, so a reader can tell the two kinds of authority apart.\n\nNothing changes until a grant lists a kind: `PerAction` is empty everywhere. The first one to set it will be Vera's review hand, for `review.invite` and `review.sign`.\n\nTests: a word for a period cannot invite; a word for another act is refused; the word for this act allows it once and the record names it; the second attempt is refused as spent; a kind that is not listed still works twice on one word.\n",
+            "branch": "workbench/word-names-the-act",
+            "title": "Het woord noemt de daad, en wordt opgebruikt"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260913205442-a234e4"
+}

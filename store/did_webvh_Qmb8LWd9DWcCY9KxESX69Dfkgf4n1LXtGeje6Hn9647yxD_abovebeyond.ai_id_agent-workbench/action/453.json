@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "597f1157527ffe7524908a0ac27ef553e5e7b94d",
+            "branch": "workbench/ui/warranty-box-size",
+            "files_sha256": "b10189c9569d2e40a0bbd5eff530f7017187f45ae68ab7e23b84d55501061fb9",
+            "message": "The warranty block sits in the form instead of in a large empty card"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260913204528-1935bb"
+}
