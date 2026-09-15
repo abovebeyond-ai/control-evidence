@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Six tasks in the fleet say \"set DNS records\" and stop there. The work is one line of text in a registrar's panel, and this scan already knows what that line needs: which providers send in this name, where the MX points, what is missing. Keeping that in our heads makes a person work out twice what was measured once.\n\n- `dmarcDraft`: `v=DMARC1; p=none` when there is no policy. It holds nothing back and only shows what is being sent in the name; whoever tightens to quarantine later does it with reports in hand rather than blind.\n- `spfDraft`: the includes of every provider the scan can actually see (by include or DKIM selector), ending in `~all` so an unseen sender lands in spam rather than bouncing. **Null when it cannot be known**: no recognised sender, or an MX pointing somewhere none of them owns \u2014 a SPF that misses a real sender puts that sender's mail in the spam folder, which is worse than no suggestion.\n\nA draft, never a hand: DNS is the one place where a wrong line stops a whole company's mail, and no grant here reaches a registrar.\n\n664 tests, PHPStan, Pint.\n",
+            "branch": "workbench/the-record-to-paste",
+            "title": "De regel om te plakken, als we hem kunnen weten"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914124836-7edd43"
+}

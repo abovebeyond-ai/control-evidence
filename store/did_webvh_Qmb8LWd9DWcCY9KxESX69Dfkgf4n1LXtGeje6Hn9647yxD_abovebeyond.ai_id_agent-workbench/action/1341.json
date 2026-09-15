@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #326, and a gap I left in it. The profile was computed and never reached the surface agents read: `FleetBrief` exports `rung` and dropped `pac`, so a brief said `propose` without the reason. An agent that cannot see why will ask again tomorrow for what was refused today.\n\n`autonomy` now travels on every task: `level` and `name` in PAC's words (A1 to A5), `blast` plus `blastMeaning`, `verifiedBy`, `infrastructure` read from the evidence, `reliability` with its margin, the `bar` the blast radius asks for, `reversal`, `heldBy`, and `why` in one sentence. Null for work no hand declares.\n\n`rung` keeps its three words, so nothing downstream changes: brief version 5 is additive.\n\nDocumented in `docs/fleet-brief.md` with the field table and a version note, and the brief's own test now reads `FleetBrief::VERSION` instead of a literal, so the next bump does not need a test edit to notice it.\n",
+            "branch": "workbench/the-brief-carries-the-profile",
+            "title": "De brief draagt de reden, niet alleen de trede (versie 5)"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914190447-14d46a"
+}

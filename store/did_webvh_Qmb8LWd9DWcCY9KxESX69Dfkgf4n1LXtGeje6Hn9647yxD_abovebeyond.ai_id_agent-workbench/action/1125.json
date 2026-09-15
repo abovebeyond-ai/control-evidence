@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "96da47aecb0da6b789f5e5553f2891eebb21ed32",
+            "branch": "workbench/fix/carpass-polling-and-pending",
+            "files_sha256": "1d6e89e51d788970d9b69c1b1eefbe39e373c2a12d7c46a65031e7d5c4c16ce3",
+            "message": "Wait for Car-Pass the way Car-Pass asks, and remember a pending request"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914141604-0005da"
+}

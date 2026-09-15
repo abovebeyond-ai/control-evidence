@@ -1,0 +1,15 @@
+{
+    "action": "d11e0f85c90aef394a086a46189788d3",
+    "effect": {
+        "detail": {
+            "base": "6a3c5eab2cf1e49affcc30af886472d46ae15502",
+            "branch": "workbench/fix/upload-is-not-unsaved",
+            "commit": "7826081bc7c6f5496a79f913e0651960deafd109",
+            "files": 11
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1368,
+    "verdict": "ALLOW"
+}

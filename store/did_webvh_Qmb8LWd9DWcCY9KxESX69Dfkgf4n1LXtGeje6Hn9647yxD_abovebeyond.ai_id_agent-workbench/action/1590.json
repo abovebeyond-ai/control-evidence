@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De generator schreef drie bestanden naar de site: het fragment, de opmaak en een json die\nzei hoeveel claims geverifieerd waren. Wat niet meereisde was de store waartegen dat gebeurd\nwas. De site kon dus alleen doorvertellen dat er geverifieerd w\u00e1s; zelf natrekken kon ze niet,\nen een pakketbump die een oordeel veranderde was daar stil gebleven.\n\nErbij: `proveml-paper-live.store.json` met de feiten, de registry en de herkomst. De site\nverifieert het fragment daarmee bij elke build opnieuw (abovebeyond, dezelfde dag) en weigert\nte bouwen als \u00e9\u00e9n claim niet meer klopt.\n\nGeen ander bestand verandert: het fragment en de opmaak komen met proveml 0.9.0 byte voor\nbyte gelijk uit, alleen de datum in de json beweegt.\n\n## Bewijs\n\n- `node site/build-live-paper.mjs --out <site>/src/generated`: 41/41 claims verified, vier bestanden geschreven\n- in de site: `npm test` 16 geslaagd, en een opzettelijk verkeerd feit (`queryRuns` 341) laat de build weigeren met `40/41 ... %[queryRuns]{342} in study:frontier: should be 341`\n",
+            "branch": "workbench/de-store-reist-mee",
+            "title": "De store reist mee met het fragment"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260915050019-9baf44"
+}

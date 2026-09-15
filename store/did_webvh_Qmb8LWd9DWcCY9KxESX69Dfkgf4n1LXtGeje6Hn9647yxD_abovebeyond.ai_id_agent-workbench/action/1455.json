@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1c7f4dbeee5f59f4d5be5351fcfa17d7affff7d1",
+            "branch": "workbench/onze-eigen-workflow-is-geen-rechter",
+            "files_sha256": "eef1e9c6c2d571cf34e3349f5cdab7e9a675b760f8e5d9d751724875ce8d920c",
+            "message": "Onze eigen workflow is geen rechter"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914213724-03955e"
+}

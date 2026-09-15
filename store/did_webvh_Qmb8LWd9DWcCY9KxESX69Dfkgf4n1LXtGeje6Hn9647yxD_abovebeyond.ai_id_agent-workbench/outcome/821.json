@@ -1,0 +1,15 @@
+{
+    "action": "9b2205853e49b19fc3073d312603cca7",
+    "effect": {
+        "detail": {
+            "base": "e78ff28a7875126988442e434602167f23e255e1",
+            "branch": "workbench/ui/page-heads-v2b",
+            "commit": "119914d78ce0aec397cf7cf39c0224671fad2a4c",
+            "files": 22
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 819,
+    "verdict": "ALLOW"
+}

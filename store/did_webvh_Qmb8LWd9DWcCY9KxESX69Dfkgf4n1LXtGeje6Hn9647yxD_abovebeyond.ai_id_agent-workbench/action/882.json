@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2cb0bb1caedfb01823871d3edc750bd2a7f45ff2",
+            "branch": "workbench/agents-say-what-they-may-touch",
+            "files_sha256": "0549dcb763d355c8190c1f228ec9ed1382ec683069f7e36d93d0d5c787b9a46a",
+            "message": "Agents say what they may touch, as a digest\n\nA gateway carries the configuration it was given until an operator carries\nover a new one, and nothing told the hands which version that was. On\n14 September a new project sat in the configuration on the box while the VM\nstill served the grant from before it, and the only sign was a hand refused\nwith \"resource not in grant\": correct, and unreadable.\n\n/v1/agents now names each grant by a digest of its kinds and its resources,\nsorted and newline-joined, so anyone holding the same list computes the\nsame value and a difference is a real difference. The lists themselves stay\nout of the answer."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260914082624-d4fab3"
+}

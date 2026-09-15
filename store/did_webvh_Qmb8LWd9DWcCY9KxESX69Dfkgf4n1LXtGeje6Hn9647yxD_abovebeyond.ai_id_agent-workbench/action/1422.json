@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "08a3ff66f8e28803c4627897f9ac67bf628895ab",
+            "branch": "workbench/ui/bid-note-label-2",
+            "files_sha256": "730fc36f62214d9d7fe2fb916613d4494e707744c8ae608b7cb3cabfbbc03d19",
+            "message": "A placeholder is not a label"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914212138-26d9de"
+}

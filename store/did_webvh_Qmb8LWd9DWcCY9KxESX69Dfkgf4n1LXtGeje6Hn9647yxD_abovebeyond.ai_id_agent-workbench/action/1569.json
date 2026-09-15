@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fce46549f119a5bba79de12faac40935ecbb9eaa",
+            "branch": "workbench/de-pagina-verifieert-zichzelf",
+            "files_sha256": "69b7a3b79bdf57ec408cefd24663f1c5e03e498cf5be4b395145ddca69cb7fec",
+            "message": "De paperpagina verifieert zichzelf bij elke build"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260915045706-3ff2f3"
+}

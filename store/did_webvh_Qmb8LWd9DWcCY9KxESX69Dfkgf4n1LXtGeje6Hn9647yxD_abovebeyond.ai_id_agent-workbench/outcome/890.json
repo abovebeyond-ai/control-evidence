@@ -1,0 +1,15 @@
+{
+    "action": "1f2c4ae5d6cd3c6f0af4f63e16819ddf",
+    "effect": {
+        "detail": {
+            "base": "d999cf103b0bd6fe4804a3b37abf1e9cd16bcb7e",
+            "branch": "workbench/the-vm-carries-an-older-grant",
+            "commit": "84eb36b1ad50a1e492cf7732ec9ad50c42de60b8",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 888,
+    "verdict": "ALLOW"
+}

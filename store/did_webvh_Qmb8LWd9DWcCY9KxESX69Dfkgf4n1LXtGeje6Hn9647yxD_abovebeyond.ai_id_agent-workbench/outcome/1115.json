@@ -1,0 +1,15 @@
+{
+    "action": "ed6a8f36695277a2b8447a78d79b63fa",
+    "effect": {
+        "detail": {
+            "base": "eedfa48070f62778253f32d94f85083cebacdd3b",
+            "branch": "workbench/follow-the-venues",
+            "commit": "ed3429406932236d6ffebc8ddb55f93142b5bc00",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1113,
+    "verdict": "ALLOW"
+}

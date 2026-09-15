@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "89bca51afcfa80d5145ae5cb5bccd7214c49f9d6",
+            "branch": "workbench/proof-on-the-page",
+            "files_sha256": "d3f09291d404cf0e35909b32c72d59c5ccb637bce6f53a003341ac1ab4952fb4",
+            "message": "Het bewijs op de pagina, en het paneel eindigt waar het eindigt"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260915044820-df62b9"
+}

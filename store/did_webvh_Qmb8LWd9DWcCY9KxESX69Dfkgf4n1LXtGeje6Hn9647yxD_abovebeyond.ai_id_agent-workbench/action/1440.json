@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "08a3ff66f8e28803c4627897f9ac67bf628895ab",
+            "branch": "workbench/ui/tools-menu-affordance",
+            "files_sha256": "1c6748610ba47f29d268a073dabb1a161ac26d1dfff8aee78a2cdd2a0be7bf1d",
+            "message": "A menu button should look like one"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914212347-8100b6"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "03ae55a64c77ae6a887ab84cd7ceae9c",
+    "effect": {
+        "detail": {
+            "base": "8da6215b8947b2c6d2d8ca23d45a7d241ee04721",
+            "branch": "workbench/test/publishing-characterization",
+            "commit": "22cf28d027412edd4703d985a5ce36778dc8288b",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1182,
+    "verdict": "ALLOW"
+}

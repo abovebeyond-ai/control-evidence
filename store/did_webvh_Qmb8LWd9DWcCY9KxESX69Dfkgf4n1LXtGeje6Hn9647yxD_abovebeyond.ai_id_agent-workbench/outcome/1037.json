@@ -1,0 +1,15 @@
+{
+    "action": "ef397f56b353d8a6d626b1f8e9379c2e",
+    "effect": {
+        "detail": {
+            "base": "7c0faee22d70c51f34a548e7b602afbd4be8143b",
+            "branch": "workbench/the-record-to-paste",
+            "commit": "009873d5160a59f7e026388bbcc1a530f9102d5e",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1035,
+    "verdict": "ALLOW"
+}

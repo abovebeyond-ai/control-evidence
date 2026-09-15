@@ -1,0 +1,15 @@
+{
+    "action": "7694c058eccab4e1f52df05f3f25f23d",
+    "effect": {
+        "detail": {
+            "base": "f04221e8c70d9d04e41f42321d9aa86c3a70cab6",
+            "branch": "workbench/feat/average-price-facet-counts",
+            "commit": "97756deb3c97eab76f51497ff1ace662ad1c39df",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1575,
+    "verdict": "ALLOW"
+}

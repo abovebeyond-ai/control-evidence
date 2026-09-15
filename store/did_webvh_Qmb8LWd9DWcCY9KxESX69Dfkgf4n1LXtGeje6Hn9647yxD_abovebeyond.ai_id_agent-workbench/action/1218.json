@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d35770dc8399648c91e3352b26ac9efc0e426c88",
+            "branch": "workbench/earned-with-evidence",
+            "files_sha256": "6e7375ddaa6a6a541e9f7be4e72889343135e44917abe9b9fc9ad67776b22099",
+            "message": "Verdiend met bewijs, niet met een teller\n\n\"Autonomie is geen instelling, het is een staat van dienst\" stond er als de\novertuiging onder PAC, en de helft ervan klopt: geen instelling. De andere\nhelft leest als een teller, en het framework zelf zegt iets preciezer. De\nlat hangt aan de blast radius en aan wat eromheen staat, niet aan hoe vaak\nhet eerder goed ging.\n\nTien keer goed op iets kleins bewijst niets over iets groots; tien keer\ngoed zonder foutmarge zegt, streng gerekend, \"faalt minder dan een kwart\nvan de tijd\"; en wie de mens uit de lus haalt om die autonomie te geven,\nverandert precies de verdeling waaruit die tien kwamen. Een smalle ingreep\ndie een onafhankelijke controle kan weerleggen is veilig bij de eerste run;\neen onomkeerbare ingreep blijft dat niet worden, hoe lang de lijst ook is.\n\nDrie plekken waar het als criterium stond zeggen nu \"verdiend met bewijs\".\nDe blogpost blijft staan zoals hij geschreven is, en de regels die\nbeschrijven wat Elixir vandaag d\u00f3\u00e9t ook: die tellen echt, en dat is de\nvolgende die verandert."
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260914171503-c688da"
+}

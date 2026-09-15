@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The withheld answer counted both numbers in one expression where a dot meets a plus. PHP 8 binds the plus tighter, so the sum was right, but a count in a product about what you can prove should be obvious rather than depend on the reader knowing a precedence rule. It is a sprintf now, and the empty case says how many sources there are rather than only that none is withheld.\n\nTwo numbers, both tested.\n",
+            "branch": "workbench/a-count-is-obvious",
+            "title": "Een telling is duidelijk, niet slim"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914095932-4aa00d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Restack of #359 (`workbench/fix/unblur-keeps-the-photo`; replaces #379, which went CONFLICTING after main moved) on the one-file-per-finding layout. **Merge order: #368, #369, #370 (the layout), #374, #376, then this one.** The gateway pushes each PR as a snapshot of its own files on top of main, so this diff shows only this PR's files.\n\nSame change as #359, with two differences:\n\n- The finding it added as X-127 is a file in `docs/bedrijfsregels/bevindingen/`: `2026-09-15-mislukte-verwerking-houdt-de-foto.md` (opgelost). The comments in `ProcessImage`, `ImageController`, `PlatformPhotoService`, `Photo`, `PhotoFailure` and the test docblock refer to it by slug.\n- **Rule renumbered: R S1-6.27 becomes R S1-6.29.** Main took S1-6.27 and S1-6.28 for the damage step on a phone (#364) after #359 was written; the `@rule` tags in `ProcessImageKeepsPhotoTest` and the two blade comments follow.\n\nChecked locally on top of #370, #374 and #376: `RulesIdentityTest`, `RulesDocsBuildTest`, `RulesCoverageTest`, `ProcessImageKeepsPhotoTest`, `DamageTabTest` (25 tests, 228 assertions, OK). Shane closes the original.\n",
+            "branch": "workbench/fix/unblur-keeps-the-photo-3",
+            "title": "Removing the blur left an empty tile (restacked)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915061726-a868b1"
+}

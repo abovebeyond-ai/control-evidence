@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two presentation items, no behaviour change.\n\n## Notifications panel uses the screen\n\nThe bell panel had a fixed 380px list on every screen: at 1440px it showed four notifications and a scrollbar, with half the viewport still free below it. The panel is now a flex column with a height cap that follows the viewport (`calc(100vh - 90px)`, wide screens only), the header and \"Bekijk alle\" pinned, and the list taking the rest and scrolling only when the screen runs out. It is 380px wide instead of 340px and the rows are two pixels tighter. On a 900px screen all eight recent notifications are in view; on a 700px screen the list scrolls inside the panel with the footer still pinned. The phone sheet (full width, from under the bar to the bottom edge) is unchanged; the cap is scoped to `min-width: 768px` so it cannot leak into it.\n\n## The own dealer name stops shouting\n\nIn \"Bestelbonnen dealertransacties\" the dealer's own company was bold and near-black in a row of regular, muted cells. It is now regular weight with a small tinted \"jij\" label (`ui-list-own` on the cell, `ui-list-own-mark` on the label), the same language as the status pills. On the phone card layout the name may wrap, the label may not. Translation key `ui.you` in nl/en/de/fr.\n\n## Test\n\n`tests/Feature/OrderHistoryOwnSideTest.php`: with one transaction where the logged-in dealer is the seller, exactly one cell carries `ui-list-own`, it wraps the own name and the \"jij\" label, the counterparty cell is plain, and `font-weight-bold` is gone.\n\nVerified: `vendor/bin/phpunit --filter='Notification|Order|StylesheetSyntax|AlpineExpression|RulesCoverage|RulesIdentity'` OK (71 tests, 895 assertions), after a rebase on main. Screenshots at 1440px and 390px for both screens.\n",
+            "branch": "workbench/ui/notifications-and-own-name",
+            "title": "Notifications panel uses the screen; the own dealer name stops shouting"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915060046-df2a3d"
+}

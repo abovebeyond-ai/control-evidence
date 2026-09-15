@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6bc0884234837b25c12a57660c1065cf6e299cb1",
+            "branch": "workbench/a-page-that-sells",
+            "files_sha256": "01e089510f93daaa6a26b02d319a1e7e1035a198795351726db1aac2d56dcb71",
+            "message": "Een pagina die verkoopt"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914194725-41da3b"
+}

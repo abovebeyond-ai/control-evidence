@@ -1,0 +1,15 @@
+{
+    "action": "510e3e046aac5b6d11e381215f8b4283",
+    "effect": {
+        "detail": {
+            "base": "291ae5f44d1006585893de55efdc8b3cd615c66a",
+            "branch": "workbench/docs/one-file-per-finding",
+            "commit": "f8ce155780d8a9fe5efe67549913673e924da56a",
+            "files": 57
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1695,
+    "verdict": "ALLOW"
+}

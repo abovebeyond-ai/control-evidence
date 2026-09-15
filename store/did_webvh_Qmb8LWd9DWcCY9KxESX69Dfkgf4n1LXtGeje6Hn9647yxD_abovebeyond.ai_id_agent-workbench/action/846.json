@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Yesterday's house-style change put the faces behind a `<link>` to Google, and Elixir's consent measurement answered the same morning: two third-party assets load before consent. On a page where people drop confidential drafts and judge what may be said about them, asking a stranger for the letters is the wrong trade, and it is one this house does not make: the site self-hosts the same faces through `@fontsource`.\n\n- The same files the site ships, in `public/fonts`: Lato 400, 700 and 900, Spline Sans Mono 400 and 500, latin, 104 kB in total. Both are OFL-1.1 and the licences travel with them.\n- Two `@font-face` blocks and a preload for the two faces actually used above the fold. No preconnect to anyone.\n- Lato has no 800. The mast and the front door's headline asked for a weight that does not exist, so the browser synthesised one; they now ask for 900, which is what the site uses and what the file contains.\n\nThe page renders the same, the wordmark's green to blue reads better at 900 than it did faked, and the only outbound links left on the door are to abovebeyond.ai and to GitHub, both of which a reader clicks on purpose. Suite 32/32.\n",
+            "branch": "workbench/faces-of-our-own",
+            "title": "Eigen letters: geen derde partij voor de letters van een pagina over bewijs"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914075845-0d7c93"
+}

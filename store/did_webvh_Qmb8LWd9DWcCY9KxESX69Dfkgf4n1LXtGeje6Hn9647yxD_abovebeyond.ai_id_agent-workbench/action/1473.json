@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "repo"
+        },
+        "resource": "portal:naviskore-webapp"
+    },
+    "run": "workbench-20260914220046-f29a41"
+}

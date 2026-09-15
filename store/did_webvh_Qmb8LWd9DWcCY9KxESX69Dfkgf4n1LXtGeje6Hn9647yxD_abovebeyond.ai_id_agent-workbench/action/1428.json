@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "08a3ff66f8e28803c4627897f9ac67bf628895ab",
+            "branch": "workbench/fix/select-popup-position-2",
+            "files_sha256": "874687bb309b952ba5d97cdc25c5019e023cebcd0b93561640f1badeb6f6cec2",
+            "message": "A dropdown opens at its own field"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914212219-31a89d"
+}

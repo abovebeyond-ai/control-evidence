@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "69517c896165ce42f4a2101d9bfcd749195ff4ae",
+            "branch": "workbench/ui/portals-panel-honest-2",
+            "files_sha256": "0149838053104e213f91d9486acd2c800793fe18f752d85c641e483373b76746",
+            "message": "The portals panel shows what is, and links to where it changes"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915061252-b2c865"
+}

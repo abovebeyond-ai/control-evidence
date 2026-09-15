@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f102188639a554c63588e7c3e1709cbe8e774511",
+            "branch": "workbench/test/form-to-partner",
+            "files_sha256": "cd080fb67594829ebc94a6229554099845678565a05ec111c2b6a704c372f0d2",
+            "message": "What the dealer types is what the partner receives"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914214702-e2e0ea"
+}

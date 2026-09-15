@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f64f1004e1cc8f949381ebe29399ca1a8ad8b87a",
+            "branch": "workbench/proof-in-the-writing",
+            "files_sha256": "8f8cf7c8f931895c76823ef7cac930488ab93039967e51dbd5e9a8575cea65a1",
+            "message": "Proof in the writing, not only in the apparatus"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260915044712-ef3e4b"
+}

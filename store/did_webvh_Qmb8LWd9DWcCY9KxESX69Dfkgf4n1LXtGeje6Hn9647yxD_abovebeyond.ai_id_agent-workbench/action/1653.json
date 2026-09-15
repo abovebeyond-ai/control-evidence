@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3d768c3212e02d3e3e8014ea71e3ad3e88d8c791",
+            "branch": "workbench/chore/maintenance-exempt-webhooks-2",
+            "files_sha256": "a5d323ee7457b0fbcf7cfe09c4aa627b2d10b2b8b6ae0137eb2f048d7c8fb1be",
+            "message": "Maintenance mode keeps the machine doors open"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915052551-6dd445"
+}

@@ -1,0 +1,14 @@
+{
+    "action": "932c73566b31d108ccaee922dbe81570",
+    "effect": {
+        "detail": {
+            "only": "repo",
+            "project": "trustedagentic",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1476,
+    "verdict": "ALLOW"
+}

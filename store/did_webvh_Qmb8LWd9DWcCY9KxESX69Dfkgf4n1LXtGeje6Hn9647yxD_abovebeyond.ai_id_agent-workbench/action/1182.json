@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8da6215b8947b2c6d2d8ca23d45a7d241ee04721",
+            "branch": "workbench/test/publishing-characterization",
+            "files_sha256": "fd53277131a8eab09eaf18083ee0f1c76799497d253f9b066d1abae64d36072a",
+            "message": "Pin what publishing to the portals does today"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914154132-6f0593"
+}

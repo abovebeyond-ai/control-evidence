@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De pagina die beweert dat ProveML zichzelf verifieert, kon zichzelf niet verifi\u00ebren. In\n`src/generated` stonden drie bevroren bestanden uit proveml-research: het fragment, de opmaak\nen een json die zei \"41 van 41\". Waar op het moment van genereren, met de proveml van d\u00e1t\nmoment, in een andere repo. Deze site importeerde het fragment en bouwde er ook mee door als\nhet verouderd was; de opmerking in de pagina zei dat zelf al (\"This page would refuse to build\"\nstond er en was net niet waar).\n\n## Wat er verandert\n\n- `proveml-paper-live.store.json` reist mee (proveml-research, dezelfde dag): de feiten, de\n  registry en de herkomst waartegen het fragment geverifieerd is.\n- De frontmatter van `/proveml/paper` verifieert de opmaak bij elke build opnieuw tegen die\n  store, met de proveml die de site zelf meelevert (nu 0.7.2). Klopt \u00e9\u00e9n claim niet, dan gooit\n  de pagina en bouwt de site niet.\n- De banner zegt beide: \"41/41 claims verified when this fragment was generated (2026-09-15),\n  and 41/41 again by this build with proveml 0.7.2\".\n- `test/paper.test.mjs` doet hetzelfde en noemt bij een mismatch welke claim het was; en pint\n  dat elk oordeel in de opmaak in de registry staat.\n\nTwee poorten, \u00e9\u00e9n aan elke kant van de overdracht. De tweede is de enige die merkt wanneer\nhet p\u00e1kket van oordeel verandert, en dat is precies wat er sinds 0.2.0 vier keer gebeurd is\nzonder dat deze pagina het kon zien.\n\n## Bewijs\n\n- `npm test`: build compleet, 16 tests geslaagd (2 nieuw)\n- negatief: `queryRuns` in de store op 341 gezet, build weigert met\n  `the paper's claims no longer verify with proveml 0.7.2: 40/41 (the generator said 41/41); %[queryRuns]{342} in study:frontier: should be 341`\n- het fragment en de opmaak zijn met proveml 0.9.0 opnieuw gegenereerd en byte voor byte gelijk; alleen de datum in de json bewoog\n",
+            "branch": "workbench/de-pagina-verifieert-zichzelf",
+            "title": "De paperpagina verifieert zichzelf bij elke build"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260915045706-3ff2f3"
+}

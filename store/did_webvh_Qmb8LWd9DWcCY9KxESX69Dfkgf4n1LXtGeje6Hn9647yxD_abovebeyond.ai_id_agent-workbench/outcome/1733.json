@@ -1,0 +1,15 @@
+{
+    "action": "f4bba4de2c42cb0151cf6dc068905e78",
+    "effect": {
+        "detail": {
+            "base": "ac41b766d03e2ea137a64649371584ab0e31d705",
+            "branch": "workbench/ui/relation-picker-4",
+            "commit": "98b2199c574145696718ca7aa2fc89371de23b0d",
+            "files": 9
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1731,
+    "verdict": "ALLOW"
+}

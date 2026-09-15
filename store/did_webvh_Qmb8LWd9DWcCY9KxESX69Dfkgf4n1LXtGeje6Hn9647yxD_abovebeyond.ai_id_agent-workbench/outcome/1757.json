@@ -1,0 +1,15 @@
+{
+    "action": "e24ff3121bba2e45fcdb6a1ea56a5785",
+    "effect": {
+        "detail": {
+            "base": "1de48e4779e89bea307d8ee11e5b21eb651c18fe",
+            "branch": "workbench/ui/maintenance-page-3",
+            "commit": "58f7b682493d43b7febe0f0326469cae244d4a75",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1755,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vervangt #35, dat dezelfde regel aanraakt maar het halve probleem oploste.\nSluit die en neem deze.\n\n**Rood was fout.** Het cijfer dat in geen enkele bron staat, stond in het\nrood. Rood zegt \"dit is onwaar\", en dat zegt ze nooit: ze zegt dat ze het\nniet vindt. Dat is het derde merk van het huis, onbekend, amber. Het\nverschil is niet cosmetisch: \"niet gevonden\" is een opdracht om te kijken,\n\"fout\" is een beschuldiging die zij niet mag uitspreken.\n\n**De vraag stond op de verkeerde plek.** *Did it read this right?* met een\ngroene *yes, fair* stond boven het enige stuk dat nog openstond, dus je gaf\ntoestemming voor een regel voor iemand naar het open punt had gekeken. Die\nrij is weg. De regel eronder stelt nu vast wat er aan de hand is\n(*\u20ac14,000 is in none of your 14 sources*), zonder knoppen, want dat is geen\noordeel maar een vaststelling.\n\n**E\u00e9n beslissing, op het moment waar ze hoort.** Zij heeft haar werk in\njouw bestanden gedaan, twee stappen, afgevinkt. Wat ze niet alleen mag\nbeslissen is of ze b\u00faiten je bestanden gaat kijken, en daar wacht ze op je,\nmet het kloppende stipje dat zegt dat er nu iemand aan zet is. Daaronder de\nzegel.\n\nMeteen ook een tegenspraak eruit: ze kon niet tegelijk \"looking for a later\nversion\" zijn en vragen of ze mag zoeken. Die stap is geschrapt.\n\nDe lus in het paneel leest nu in \u00e9\u00e9n richting: wat staat er, wat draagt het,\nwat staat nergens, wat vraag je, wat deed ze, waar wacht ze op, wie tekende.\n\nTests: 52 groen.\n",
+            "branch": "workbench/not-found-is-not-wrong",
+            "title": "Niet gevonden is niet fout, en de vraag stond op de verkeerde plek"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914195739-6b7455"
+}

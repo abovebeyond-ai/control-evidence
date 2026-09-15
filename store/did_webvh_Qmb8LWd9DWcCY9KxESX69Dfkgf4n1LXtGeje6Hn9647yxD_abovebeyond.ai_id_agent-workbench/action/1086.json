@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b285fda66e490ab824024d352b00d990e9ac01a2",
+            "branch": "workbench/measured-fields",
+            "files_sha256": "43895288684a7fde679854428892288a20b7aca7cee59fa5ca32e34ebd19c29d",
+            "message": "The fields are measured from the desk's own record, not chosen"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914133210-e9cc26"
+}

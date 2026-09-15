@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "69517c896165ce42f4a2101d9bfcd749195ff4ae",
+            "branch": "workbench/ui/relation-picker-5",
+            "files_sha256": "f800243d20bb3b47cf39ab5c24b55799b53b6aa325dd765d877caf9fff6adeca",
+            "message": "The relation picker opens clean and fits a phone"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915060815-cc2fef"
+}

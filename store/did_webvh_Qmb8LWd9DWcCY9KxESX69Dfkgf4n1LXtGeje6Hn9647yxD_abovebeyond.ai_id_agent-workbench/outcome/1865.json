@@ -1,0 +1,15 @@
+{
+    "action": "c94a0d8054fe74a8a0761535bda66c3c",
+    "effect": {
+        "detail": {
+            "base": "7fde4dfbd159776b716bbadffe71c4e39f76c439",
+            "branch": "workbench/ui/image-editor-phone",
+            "commit": "aeb013143a11b491a4f545181ed84fc9e5ca41df",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1863,
+    "verdict": "ALLOW"
+}

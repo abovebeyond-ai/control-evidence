@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first hard question the agent answered came back with exactly the right lists and two wrong counts: 68 sources judged only by the machine where the record says 70, and 58 references where it says 60. The lists came from the tools. The counts the agent worked out itself, by counting a map the tool had handed it.\n\nIn a product whose argument is that a figure must trace to a source, a fluent sentence with a wrong count is the worst thing that can be on the page, and it took a deterministic check to catch, which no reader will run.\n\nTwo changes, and they are the same two the house already makes elsewhere.\n\n**The tool counts, never the reader.** `vera_judgements` now returns `judgedOnlyByMachine`, `judgedOnlyByPeople` and `judgedByBoth`, each with its count and its sources, beside the per-source grouping. A tool that hands over a grouping without its totals invites exactly the mistake that was made.\n\n**A figure the tools did not give does not go out.** `numbersAreGrounded()` checks every number in the answer against what the tools returned; a sentence that fails is dropped, the page says so plainly, and the rows stand on their own. This is `Report\\Gate` from Elixir, where a sentence may not carry a number that is not in the store, applied to an agent's prose.\n\nThe test pins the real case: the true sentence with 70 and 570 passes, the sentence with 68 and 58 fails and names both figures. Ids that contain digits (`ref-rao2026`, `table1`) pass, and a full stop after a number is punctuation rather than part of it.\n\nSuite 50/50 in the app, 3/3 on the gate. Note for later: the skill's `npm test` hangs in `mcp.test.mjs`, which predates this and needs its own look.\n",
+            "branch": "workbench/a-number-comes-from-a-tool",
+            "title": "Een getal komt van het gereedschap"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914133007-57428b"
+}

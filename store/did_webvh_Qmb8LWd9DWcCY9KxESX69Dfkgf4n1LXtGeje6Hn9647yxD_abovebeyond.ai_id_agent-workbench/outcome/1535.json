@@ -1,0 +1,10 @@
+{
+    "action": "e54c7831f94512525751c4a0d9e5203b",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on Trendwolves/gentells-studio",
+    "step": 1533,
+    "verdict": "DENY"
+}

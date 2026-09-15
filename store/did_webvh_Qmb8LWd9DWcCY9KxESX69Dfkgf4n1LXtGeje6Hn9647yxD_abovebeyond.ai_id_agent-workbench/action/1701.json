@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "291ae5f44d1006585893de55efdc8b3cd615c66a",
+            "branch": "workbench/ui/worklist-phone",
+            "files_sha256": "b0d43c7cf7b9db033859137bda34fe7e3f79cace5b9bfcfd586f51765d866905",
+            "message": "Worklists open folded on a phone"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915054432-0fd091"
+}

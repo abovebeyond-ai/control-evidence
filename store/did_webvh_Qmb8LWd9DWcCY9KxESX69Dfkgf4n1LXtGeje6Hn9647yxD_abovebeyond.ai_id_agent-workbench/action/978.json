@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b5e319d072e6f255c9b200a9c5a2e0b38199d8fa",
+            "branch": "workbench/fold-the-twins",
+            "files_sha256": "636ca8a9eec3a1d96762e179f42c7d2d638d499adeb34a8af221cd2a5a48c9cf",
+            "message": "Two names for one thing: the fold"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914102726-5c08ed"
+}

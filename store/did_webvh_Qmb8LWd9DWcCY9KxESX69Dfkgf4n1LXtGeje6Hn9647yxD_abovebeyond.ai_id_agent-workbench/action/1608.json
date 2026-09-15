@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "edb2ae7eee6a7e45c9a869e07f61b0976925b2af",
+            "branch": "workbench/fix/mail-logo-and-address-3",
+            "files_sha256": "fd4ab505a27358a47c35a462406ec9a81fb21b70699895d5a2e1f60b14d63767",
+            "message": "An address is composed, not glued"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915050519-c3b50e"
+}

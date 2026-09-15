@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a44135350c65cdf57048ee8d4bf5ba231a38bf19",
+            "branch": "workbench/de-store-reist-mee",
+            "files_sha256": "7e910a6007ead37494b20a8e7fdc788603038a67b08d71b3710479502ae592e7",
+            "message": "De store reist mee met het fragment"
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20260915050019-9baf44"
+}

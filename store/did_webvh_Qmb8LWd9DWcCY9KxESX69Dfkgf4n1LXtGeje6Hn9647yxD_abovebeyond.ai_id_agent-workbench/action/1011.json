@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fce859373a3780c4620d6bdf455b096e8663e2ef",
+            "branch": "workbench/fix/seal-lets-mollie-through",
+            "files_sha256": "190a7384ba33b8982732657ecbbdb8f7f49daa88ca1cce3907b749f3b94014ac",
+            "message": "A service named in the seal needs the addresses it talks to"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914105047-331c17"
+}

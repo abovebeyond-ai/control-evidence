@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a2847e3adf719157a6b6e49f6be9d8cdb4caa3b8",
+            "branch": "workbench/pin-v0-23-0",
+            "files_sha256": "37f577653ce3c85453a6f7224d37e9b9299711a7eef60bc29f72133d2f582fd4",
+            "message": "De VM op v0.23.0: een vergunning met een naam"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260914095603-da2303"
+}

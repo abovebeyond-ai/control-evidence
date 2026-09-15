@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "38bb556ba4002362faaf1b126cd5d969e4a77819",
+            "branch": "workbench/fix/excel-export-signature",
+            "files_sha256": "28315c035386167d97ed55e78fbfb2ae8b898ad1d8afa7181ce76a166ec3b372",
+            "message": "The export must match the interface it implements"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914215648-0e75a8"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Step four of `docs/agent-doors.md`: the page may now ask for the two acts on a review that cannot be taken back, and it still cannot perform either.\n\nInviting a person sends mail; sealing a root is anchored. Neither happens in this application. `App\\Control\\Hand` runs the skill's client, which signs a proposal with `#agent-vera`, whose seed lives on this machine and nowhere else; the sealed machine judges it against the grant and the operator's word, writes the record, and performs it with a token this application does not hold. A person on the page can therefore ask for an act and can never carry one out, which is what makes the button safe to show at all.\n\n- **The invitation form now proposes** instead of writing. The app's own `people` route stays, because that is the door the gateway itself knocks on.\n- **The seal is a new panel**, with the root the build pushed (`sources/roots.json`), the two counts, and a button that is disabled while a reading is unjudged. The gateway would refuse it anyway; showing the refusal before the press is politeness, not policy.\n- **What the hand said reaches the page whole.** Since both kinds need a word that names the act, the usual answer to a first press is not \"done\" but the exact line to sign on the machine holding the key. It is printed as the client wrote it: a refusal that gets rephrased is a refusal that eventually gets softened.\n\nTests bind a hand that records what it was asked and answers as the real one does, so nothing in the suite reaches a gateway, a key or a mailbox: the invitation's refusal arrives unchanged, an address that is not one never reaches the gateway, a seal without a pushed root is refused before it, and a seal carries the tagged root with both counts. Suite 46/46.\n",
+            "branch": "workbench/act-from-the-page",
+            "title": "Vanaf de pagina vragen, nooit zelf doen"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914103230-c2df1a"
+}

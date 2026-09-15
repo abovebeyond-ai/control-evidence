@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5ef056d9b5de07fb4b260f3ff952ddad7fa8052e",
+            "branch": "workbench/checked-by-whom",
+            "files_sha256": "3916022a16c32d10a966334817b02d16ac1aab5adcf462e15ffbf4bf1f0d8dd1",
+            "message": "Landing: written faster than ever, checked by whom"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914184646-c281de"
+}

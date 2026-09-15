@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What this changes\n\nThe six fields a sale writes were spelled out eight times across five files:\n\n- `OrderController` (four call sites)\n- `OwnStockController::update_sold`\n- `OwnStockList::markSold`\n- `VehicleApiController::markAsSold`\n- `App\\Http\\Helpers\\Vehicle::buy_over`, twice: once on the vehicle being sold and once on the copy that goes to the buyer\n\nNobody owned the notion \"sold\". That is the soil X-97 grew in: `VehicleObserver` had to INFER that a vehicle was sold from which fields happened to be filled, because nowhere was it written down what a sale is.\n\n`App\\Support\\Sale::sold($price, $extra = [])` is now that one place, with `Sale::unsold()` as its counterpart (the partner API can undo a sale, and the observer reads the transition between those two states, so they belong next to each other).\n\n## Behaviour is identical\n\nThis is a move, not a redesign. Every call site writes the same fields, with the same values, through the same repository, so the model events keep firing exactly as they did and `VehicleObserver` sees the same transitions. The two shapes that differed keep their difference through `$extra`:\n\n- the buy-over adds `send_to_modix => 0`\n- one order path adds `expected_delivery_date`\n\nThe copy in `buy_over` still has `location_id` unset rather than written as null, as before: it is set from the shared definition and then unset on the line that always unset it, so a takeover copy gets no stock location.\n\n## The tripwire\n\n`SaleFieldsTest::test_no_other_place_writes_a_sale_by_hand` scans `app/` for a `sold_at` set to now next to a `sold` of 1, and fails if it finds one outside `Sale`. Without it this clean-up is a good intention that survives one PR. Checked by mutation: putting an inline sale back into `OwnStockList` makes it fail and names the file.\n\nThe other three tests pin what a sale writes (the six fields and no more), that a path may add and override fields, and that undoing a sale touches only the three sale fields and leaves the stock flags alone, since those may have been set by hand since.\n\n## Scope\n\nNothing about the publishing path, the webhooks or the seal is touched. X-98 and X-99 stay open.\n\n## Tests\n\nFull suite: 709 tests, 2929 assertions, 1 skipped, the only failure `BuildStampTest`, a worktree artifact (`.git` is a file there, not a directory).\n",
+            "branch": "workbench/refactor/one-place-marks-sold",
+            "title": "One place knows what selling a vehicle means"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914164904-8a0470"
+}

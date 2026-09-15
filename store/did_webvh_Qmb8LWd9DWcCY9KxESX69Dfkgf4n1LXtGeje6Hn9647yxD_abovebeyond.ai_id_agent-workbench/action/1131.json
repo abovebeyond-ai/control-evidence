@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "domain:expiry",
+            "note": "paid at the registrar; waiting for Key-Systems to push the new date to the registry, the measurement closes this by itself",
+            "state": "parked"
+        },
+        "resource": "portal:kubo-it-lab"
+    },
+    "run": "workbench-20260914142055-40450c"
+}

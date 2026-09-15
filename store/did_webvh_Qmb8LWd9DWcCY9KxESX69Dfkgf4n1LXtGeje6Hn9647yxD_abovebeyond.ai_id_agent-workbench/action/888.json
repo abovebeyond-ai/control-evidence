@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d999cf103b0bd6fe4804a3b37abf1e9cd16bcb7e",
+            "branch": "workbench/the-vm-carries-an-older-grant",
+            "files_sha256": "8aed5cd0e48817bb2dde363c8c1354153aca9e42614a0a2c2cb3e6cc828d09ba",
+            "message": "De job zegt het als de VM een oudere vergunning bedient\n\nEen gateway houdt de configuratie die hij meekreeg tot een operator er een\nnieuwe naar toe draagt, en dat is met opzet: het beleid van een Tier 3\ngateway herschrijft geen client. Maar het verschil was onzichtbaar. Vera\nstond een uur in de configuratie op de box terwijl de VM de vergunning van\ndaarvoor bediende, en het enige teken was een hand die geweigerd werd met\n\"resource not in grant\": juist, en onleesbaar.\n\nelixir:control-service vergelijkt nu per hand wat hij schrijft met de\ndigest die de dienst publiceert (control#66), en zet het verschil in de\nnote van de job, met wat je eraan doet. Een gateway die geen digests\npubliceert levert geen vals alarm, en dezelfde lijst in een andere volgorde\nis geen verschil."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914083309-e8a368"
+}

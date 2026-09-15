@@ -1,0 +1,15 @@
+{
+    "action": "3ca5717853aa690230b305a344c30aec",
+    "effect": {
+        "detail": {
+            "base": "92edbb6154a021df8302f7d3cc9693159253112d",
+            "branch": "workbench/feat/heic-uploads",
+            "commit": "6ff9e41d1edcf4c074deed8524ce5b28dd00e818",
+            "files": 24
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 924,
+    "verdict": "ALLOW"
+}

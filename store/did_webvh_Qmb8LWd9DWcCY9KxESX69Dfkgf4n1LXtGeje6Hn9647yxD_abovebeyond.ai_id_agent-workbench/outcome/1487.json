@@ -1,0 +1,15 @@
+{
+    "action": "a0fb194bcce43f6499da27e4e8977d6d",
+    "effect": {
+        "detail": {
+            "base": "fef758249a494f07cd3f3f9c08327e54412d9044",
+            "branch": "workbench/ui/form-controls-legible-on-phone",
+            "commit": "74060c5522e2b42380969ce51ed52b5ecea37abb",
+            "files": 15
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1485,
+    "verdict": "ALLOW"
+}

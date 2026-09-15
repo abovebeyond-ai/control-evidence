@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e82ea2fb0e93a7a0823d1bd675c3de9a36625a4a",
+            "branch": "workbench/fix/carpass-request-feedback",
+            "files_sha256": "ab0e471cf34192ec29d5813bb72b7a1e1d63cef2c4c1003f7a5b7d1167e6affa",
+            "message": "Show the outcome of a Car-Pass request"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914112816-85502a"
+}

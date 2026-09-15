@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5adbc49d11eef5d82e26579aa1d6ee017e87aaa7",
+            "branch": "workbench/an-agent-in-the-ask",
+            "files_sha256": "847f72a2b48f7aaa0727f5ebec432e1bb65430e3c5a83ef8529638e6a3b78d9c",
+            "message": "Een agent in de vraag, met Vera's eigen gereedschap en niets meer"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914111708-ba2c39"
+}

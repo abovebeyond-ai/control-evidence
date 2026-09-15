@@ -1,0 +1,14 @@
+{
+    "action": "01275e1d05d9f96167a57170a8c56650",
+    "effect": {
+        "detail": {
+            "only": "repo",
+            "project": "naviskore-webapp",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1473,
+    "verdict": "ALLOW"
+}

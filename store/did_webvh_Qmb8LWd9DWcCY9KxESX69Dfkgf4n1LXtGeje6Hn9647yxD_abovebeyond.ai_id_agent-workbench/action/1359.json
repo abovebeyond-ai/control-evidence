@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "In het paneel stond de vraag *did it read this right?* met **yes, fair**\nonder een zin waarin \u00e9\u00e9n cijfer rood staat. Dat leest als toestemming geven\nvoor een fout getal, en dat is precies het omgekeerde van wat er gebeurt.\n\nDe vraag ging nooit over het cijfer. Ze gaat over haar lezing: klopt het\ndat die zin op pagina 2 dit zegt. Dus zegt ze nu welke passage ze bedoelt\n(*did she read page 2 right?*), en het cijfer dat geen enkele bron draagt\nkrijgt zijn eigen regel eronder, met een rode rand en zonder knoppen:\n\n> \u20ac14,000 is in none of your 14 sources\n\nDaar hoort het thuis: het is geen oordeel dat jij moet vellen maar een\nvaststelling, en ze is meteen de aanleiding voor het gesprek dat eronder\nvolgt (\"where does the \u20ac14,000 come from?\"). De lus van het paneel leest nu\nin de goede volgorde: wat staat er, klopt haar lezing, wat staat nergens,\nwat doen we eraan, en wie tekende.\n\nTests: 52 groen.\n",
+            "branch": "workbench/what-the-question-asks",
+            "title": "De vraag gaat over haar lezing, niet over het foute cijfer"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914195423-710530"
+}

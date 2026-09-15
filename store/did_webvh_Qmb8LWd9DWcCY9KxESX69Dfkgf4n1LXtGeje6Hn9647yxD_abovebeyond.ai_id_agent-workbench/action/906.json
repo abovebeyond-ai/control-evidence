@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ec16cf5b2b4085f633cac565ce745c774ee14df9",
+            "branch": "workbench/ui/clearer-labels",
+            "files_sha256": "bd2272830596cb7d62c3f0491c8918de58c0d398507e936128f159a984537e61",
+            "message": "Labels say what the dealer does, not what the system calls it"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914083458-b35860"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4fb4412d82bafdcb208e5de9f86474dc58321672",
+            "branch": "workbench/say-what-holds-the-draft-back",
+            "files_sha256": "7ecb0bce6195c40b4fdb108626682d9e5b2683c9e8d38785de7fad9aa2d8d338",
+            "message": "Twijfel naast het voorstel, in plaats van zwijgen\n\nDe eerste ronde met echte namen liet de regel meteen zien: gentells en de\nObservatory versturen via Resend en ontvangen op inbound-smtp van Amazon.\nDie MX hoort bij geen enkele herkende afzender, dus gaf de meting geen\nSPF-regel, terwijl de regel die ze had kunnen geven klopt. Post die\nAANKOMT bij een vreemde naam zegt niet dat die naam ook verstuurt.\n\nNu staat de regel er, met de twijfel ernaast: waar de post aankomt, dat we\ndie naam niet als afzender kennen, en wat te doen als hij toch verstuurt.\nWie het domein beheert weet dat, en die leest deze zin; wij weten het van\nbuitenaf niet en doen niet alsof."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914131335-63b105"
+}

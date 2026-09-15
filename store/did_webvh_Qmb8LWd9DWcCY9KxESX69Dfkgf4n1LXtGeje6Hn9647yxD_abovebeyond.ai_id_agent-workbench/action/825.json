@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e4bcecbd068aff91c38509c3eddfe3a526f087b3",
+            "branch": "workbench/fix/empty-step-rules",
+            "files_sha256": "fdc9e830dd3439aab60a2a080ef16ba073cd0580a726aaeff6ecf257665065d5",
+            "message": "A step without rules saves instead of throwing"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914074253-6ea15a"
+}

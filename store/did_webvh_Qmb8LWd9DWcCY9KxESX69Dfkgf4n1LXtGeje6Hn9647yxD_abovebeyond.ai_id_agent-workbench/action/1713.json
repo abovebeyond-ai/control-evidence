@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "291ae5f44d1006585893de55efdc8b3cd615c66a",
+            "branch": "workbench/fix/rating-screen",
+            "files_sha256": "a2e526e027d13332e8e2b1f619fa89407c844823c59b335c7e2c6800b5e54f63",
+            "message": "A rating says whom and what it rates"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915054806-011aa2"
+}

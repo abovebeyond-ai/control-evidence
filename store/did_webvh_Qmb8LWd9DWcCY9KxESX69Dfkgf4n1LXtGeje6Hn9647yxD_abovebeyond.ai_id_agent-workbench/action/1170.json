@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c9b9d64749f851a75d411799653f2bdac0966a06",
+            "branch": "workbench/chore/schedule-carpass-resume-2",
+            "files_sha256": "7820268c65ecec9e148827c41ee7be3f99f5baed91241966d54bda54948f8c97",
+            "message": "Let the scheduler finish a Car-Pass request"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914150829-425ac0"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "cc692ca19fc8e636164a2fda313b01cd",
+    "effect": {
+        "detail": {
+            "base": "ec16cf5b2b4085f633cac565ce745c774ee14df9",
+            "branch": "workbench/ui/segmented-corners-2",
+            "commit": "d947cf520ebccc4164c4aaf2089bffad646c784e",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 894,
+    "verdict": "ALLOW"
+}

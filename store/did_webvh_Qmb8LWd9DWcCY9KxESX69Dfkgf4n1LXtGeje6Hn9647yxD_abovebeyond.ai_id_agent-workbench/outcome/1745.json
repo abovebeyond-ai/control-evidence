@@ -1,0 +1,15 @@
+{
+    "action": "d853fd7411e88f1a065efeea5e1a8c9f",
+    "effect": {
+        "detail": {
+            "base": "ac41b766d03e2ea137a64649371584ab0e31d705",
+            "branch": "workbench/fix/three-crashes-from-sweep",
+            "commit": "fc619e0bd47aedb4371ba41ec008fd8983142db3",
+            "files": 18
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1743,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ac48e2a056f6182f03f02b232372bfb58e3ed57a",
+            "branch": "workbench/ui/notifications-and-own-name",
+            "files_sha256": "03b41054e08bf82e263a1e0e121c6364b759ba207f17eaa839a59dd3d544b577",
+            "message": "A taller notifications panel and a quieter own name"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915060046-df2a3d"
+}

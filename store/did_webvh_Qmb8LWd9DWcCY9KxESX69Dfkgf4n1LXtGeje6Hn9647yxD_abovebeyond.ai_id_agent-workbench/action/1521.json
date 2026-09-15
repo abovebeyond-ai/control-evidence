@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "32e2f234cd2465459a5a86f30104e40fc3fc932a",
+            "branch": "workbench/test/rules-identity-guard",
+            "files_sha256": "24227b61453c227ea76804cefac8f47a5da9f0d5a81e34d41ee488792b344eaa",
+            "message": "A finding or rule number that repeats fails the build"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915044639-f3074a"
+}

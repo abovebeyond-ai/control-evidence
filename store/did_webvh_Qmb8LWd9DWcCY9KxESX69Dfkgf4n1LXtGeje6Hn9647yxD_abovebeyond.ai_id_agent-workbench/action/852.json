@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "23b9603ffbb50b0fd950cac432d96099f50d2a99",
+            "branch": "workbench/fix/own-dealer-not-in-hide-list-2",
+            "files_sha256": "3610b9ccaa27d7cf43b6e93f9fb6ad58d4d88fe50fbea8d3fa373d136b568b10",
+            "message": "A dealer cannot hide a vehicle from itself"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914080503-47c3a0"
+}

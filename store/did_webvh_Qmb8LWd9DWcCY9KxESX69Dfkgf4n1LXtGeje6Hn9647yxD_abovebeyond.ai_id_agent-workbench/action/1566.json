@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\n`RulesIdentityTest` (PR 353) fails on `main`: `R S4-4.14` is defined twice in `docs/bedrijfsregels/14-s4-verkopen-aan-een-klant.md`. PR 338 (a relation is picked the same way everywhere, display name and takeover list) and PR 340 (a select list in a modal opens at its own field) both took the next free number without seeing each other.\n\n## What changed\n\n- **S4-4.14 stays** with the first definition (line 75, PR 338, merged first): picking a relation fills id, display name and the takeover list. `RelationDisplayNameTest` (`@rule S4-4.14`) and finding X-111 keep pointing at it; untouched.\n- **The second definition moves to S4-4.15** (line 80): the order and quote modals scroll themselves, the header stays sticky, no transform on an open modal, so a `<select>` opens at its own field. S4-4 ran to .14, so .15 was the next free code; `grep -rn S4-4.15` found no prior use.\n- Every reference to the moved rule updated:\n  - `docs/bedrijfsregels/90-x-bevindingen.md`: finding X-113, rule column `R S4-4.14` -> `R S4-4.15`.\n  - `tests/Feature/ModalDropdownAnchorTest.php`: `@rule S4-4.14` -> `@rule S4-4.15`.\n  - Nothing else in `docs/` or `tests/` referred to the dropdown rule (`docs/hernummering-2026-09-11.md` only maps the old V codes up to S4-4.13).\n\n## X-124\n\nRow X-124 in `90-x-bevindingen.md` (the rental document that gave a 500 once the vehicle was soft-deleted) had 4 cells while its neighbours X-122, X-123 and X-125 carry the 7-column shape (Nr, Ernst, Regel, Wat de regel zegt, Wat de code doet, Beslist, Waar). It now has all seven: severity **deze week** (a dealer notices it, no money, law or other dealer's data at stake by the file's own definition, and it is already closed), decided by Shane, location `Rental::vehicle()`, `RentalController::show`, `offertes/_tabs_bruikleen/general.blade.php`, `offerte.blade.php`, `bestelbon.blade.php`. No other row in that file was touched.\n\n## Verified\n\n- `RulesIdentityTest` from PR 353's branch, copied in temporarily (not committed), passes against this tree; on `main` it reports the S4-4.14 duplicate.\n- `bin/rules-coverage` exit 0.\n- `vendor/bin/phpunit --filter='ModalDropdownAnchor|RulesCoverage'`: OK. `RelationDisplayNameTest` needs the MySQL test database and is left to CI; it is not changed here.\n",
+            "branch": "workbench/docs/rule-s4-4-14-duplicate",
+            "title": "Rule S4-4.14 was defined twice"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915045527-edd2b4"
+}

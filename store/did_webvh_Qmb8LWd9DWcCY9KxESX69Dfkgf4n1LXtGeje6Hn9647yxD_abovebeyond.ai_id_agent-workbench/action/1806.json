@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Restack of #362 (`workbench/ui/vehicle-sheet-header-phone`) on the one-file-per-finding layout. **Merge order: #368, #369, #370 (the layout), #374, #384, #379, #385, #386, then this one.** The gateway pushes each PR as a snapshot of its own files on top of main, so this diff shows only this PR's files.\n\nSame change as #362, with one difference: the three findings it added as X-127 to X-129 are files in `docs/bedrijfsregels/bevindingen/` (no number, named by slug), all opgelost:\n\n- `2026-09-15-kop-van-de-wagenfiche-op-telefoon.md`\n- `2026-09-15-invulvelden-fiche-een-lettergrootte.md`\n- `2026-09-15-getalvelden-met-eenheid-op-telefoon.md`\n\nThe rule texts of R S1-3.20 and R S1-9.18, the comments in `refresh.css` and the docblock of `VehicleSheetHeaderTest` refer to them by slug. R S1-3.20, R S1-3.21 and R S1-9.18 are new and free on main (S1-3 ends at .19, S1-9 at .17); no rule renumbered.\n\nChecked locally on top of the stack: `RulesIdentityTest`, `RulesDocsBuildTest`, `RulesCoverageTest`, `VehicleSheetHeaderTest`, `StylesheetSyntaxTest` (18 tests, 778 assertions, OK). Shane closes the original.\n",
+            "branch": "workbench/ui/vehicle-sheet-header-phone-2",
+            "title": "The vehicle sheet's header and fields fit a phone (restacked)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915061042-a9d233"
+}

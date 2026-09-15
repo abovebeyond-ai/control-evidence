@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e5994250b3de6386825053a0e91455ca3f4b04c2",
+            "branch": "workbench/fix/propose-outcome",
+            "files_sha256": "854bd2f629def5301f976d07c539937e19e10f8e75a0d88825e6e65ae79cfd58",
+            "message": "Proposing a vehicle says that it was sent"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915054915-ba43f4"
+}

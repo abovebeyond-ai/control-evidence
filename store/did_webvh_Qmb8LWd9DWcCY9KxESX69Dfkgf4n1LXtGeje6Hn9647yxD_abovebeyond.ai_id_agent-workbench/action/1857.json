@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a1c8944601f417f0a645aa2f33db1ad62a2b6fb3",
+            "branch": "workbench/docs/findings-one-paragraph",
+            "files_sha256": "3b27815f165c0fa4a334fddf73e3af6e2b51fccf26b254a6be7ba8e04d06afcf",
+            "message": "A finding may be one paragraph"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915063522-abaca7"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "8f8d9cbd3930e6013b199c48a50e86a6",
+    "effect": {
+        "detail": {
+            "base": "cd3d17491db232e14f9a3e6e5c3b2f2bbdc2ada5",
+            "branch": "workbench/feat/carpass-url-from-env",
+            "commit": "a357bda27d4926de0e421c4a56e03f58003ddc37",
+            "files": 15
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 966,
+    "verdict": "ALLOW"
+}

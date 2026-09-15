@@ -1,0 +1,43 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "Repo",
+                    "url": "https://github.com/Trendwolves/gentells-pipeline"
+                },
+                {
+                    "kind": "repo",
+                    "label": "Dashboard",
+                    "url": "https://github.com/Trendwolves/gentells-dashboard"
+                },
+                {
+                    "kind": "repo",
+                    "label": "Studio",
+                    "url": "https://github.com/Trendwolves/gentells-studio"
+                },
+                {
+                    "kind": "cms",
+                    "label": "Sanity (beheer)",
+                    "url": "https://www.sanity.io/manage/project/6ek2v6y1"
+                },
+                {
+                    "kind": "hetzner",
+                    "label": "Hetzner",
+                    "url": "https://console.hetzner.cloud"
+                },
+                {
+                    "kind": "production",
+                    "label": "Website",
+                    "url": "https://observatory.gentells.com"
+                }
+            ],
+            "replaceLinks": true
+        },
+        "resource": "portal:signal-observatory-gentells"
+    },
+    "run": "workbench-20260915045405-ee17c8"
+}

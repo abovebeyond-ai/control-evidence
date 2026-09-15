@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Restack of #361 (`workbench/fix/platform-copy-count`) on the one-file-per-finding layout. **Merge order: #368, #369, #370 (the layout), #374, #384, #379, #385, then this one.** The gateway pushes each PR as a snapshot of its own files on top of main, so this diff shows only this PR's files.\n\nSame change as #361, with one difference: the finding it added as X-127 is a file in `docs/bedrijfsregels/bevindingen/`: `2026-09-15-platformkopie-telling-en-kopieerknop.md` (opgelost). The rule text of R S1-10.2 and R S2-1.16, `OwnStockController`, `PlatformPhotoService` and `PlatformPhotosOnShareTest` refer to it by slug. R S2-1.17 is new and free on main (S2-1 ends at .16); no rule renumbered.\n\nChecked locally on top of the stack: `RulesIdentityTest`, `RulesDocsBuildTest`, `RulesCoverageTest`, `PlatformPhotosOnShareTest` (25 tests, 80 assertions, OK). Shane closes the original.\n",
+            "branch": "workbench/fix/platform-copy-count-2",
+            "title": "The platform-copy warning counted wrong and offered no way out (restacked)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915060917-70e9ea"
+}

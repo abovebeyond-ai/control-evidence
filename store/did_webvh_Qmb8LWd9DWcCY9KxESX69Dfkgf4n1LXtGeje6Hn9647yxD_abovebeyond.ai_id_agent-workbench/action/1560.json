@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "62f578e4dae68726fabe4d29c80d8f8a1958ffbb",
+            "branch": "workbench/proof-under-the-draft",
+            "files_sha256": "5ba3977036b7a1fb4eb5cdfd77dc1a9689a7b9675b9b72f9e518d322fd1268b4",
+            "message": "The draft says what was checked, and stops saying it when you type"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20260915045448-8e6933"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "e6268714dbb4d4e0213f941ba2bd40fb",
+    "effect": {
+        "detail": {
+            "base": "30427871179f4aea50b76c1ac829023d765f041c",
+            "branch": "workbench/faces-of-our-own",
+            "commit": "029e98668b34b08e7921e6979a496ee190ea1a9e",
+            "files": 9
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 843,
+    "verdict": "ALLOW"
+}

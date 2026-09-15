@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a1c8944601f417f0a645aa2f33db1ad62a2b6fb3",
+            "branch": "workbench/ui/relation-picker-7",
+            "files_sha256": "9d04f525ae3cb92f4aae27d322f48a8a03d5320d1620ac656ad73c473f749b4b",
+            "message": "The relations page emits its list class without a trailing space"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915063329-d8625b"
+}

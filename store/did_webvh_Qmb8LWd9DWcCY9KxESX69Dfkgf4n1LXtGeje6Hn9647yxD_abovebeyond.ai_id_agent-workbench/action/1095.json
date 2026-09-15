@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c99cb5b30143e41acc6444709f5a206e85be3715",
+            "branch": "workbench/the-record-on-the-card-again",
+            "files_sha256": "147e8dbe87ea680760b5ca0c982e1c474f67e7516d5ef59fd027a90490ac38a5",
+            "message": "Het werk staat op de kaart, niet in een rapport"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914133303-3fbf92"
+}

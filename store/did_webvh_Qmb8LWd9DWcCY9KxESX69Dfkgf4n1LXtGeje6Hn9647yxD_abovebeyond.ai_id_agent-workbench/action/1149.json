@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Every project calls this workflow at `@v1`, so a commit on `main` reaches the whole fleet the moment the tag moves. Moving it was a manual step, and it went wrong twice in one day: after the file plan and after the npm-cache fix, `v1` stayed on the commit before, and the fleet kept running a runner whose bug was already fixed. Both times the fix was merged and only the tag was waiting.\n\n`tag.yml` moves it on a green test run on `main` (`workflow_run`, `conclusion == success`), idempotently, and logs which commit it moved from and to.\n\nThis is only safe because of elixir-fix#8 earlier today: without tests on this repo, an automatic moving tag would be the opposite of a gate \u2014 it would push every merge straight to every project unverified. With them, the gate is the thing that releases.\n",
+            "branch": "workbench/v1-moves-when-the-tests-say-so",
+            "title": "v1 verzet zichzelf, en alleen als de tests groen zijn"
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260914143815-1a3b14"
+}

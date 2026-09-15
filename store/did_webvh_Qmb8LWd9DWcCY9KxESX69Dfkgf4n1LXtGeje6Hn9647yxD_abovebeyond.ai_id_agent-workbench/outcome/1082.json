@@ -1,0 +1,15 @@
+{
+    "action": "878faf7fc693605fa29b4779f469414d",
+    "effect": {
+        "detail": {
+            "base": "cea9a76d1f24ec751e9e411ea3a0e667c36620d0",
+            "branch": "workbench/a-number-comes-from-a-tool",
+            "commit": "e3a169ad691d4b5ba8a7dd33396c4edbd3782899",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1080,
+    "verdict": "ALLOW"
+}

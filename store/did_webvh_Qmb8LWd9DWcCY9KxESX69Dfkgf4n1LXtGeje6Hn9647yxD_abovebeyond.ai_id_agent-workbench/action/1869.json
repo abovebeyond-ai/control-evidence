@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7fde4dfbd159776b716bbadffe71c4e39f76c439",
+            "branch": "workbench/ui/settings-phone",
+            "files_sha256": "3c47c64a1bd9a90fe699a98e8b8f03bfbc5c4c1b7b84bfa8392e25b1659076a5",
+            "message": "The settings screen reads on a phone"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915070124-7f0e1b"
+}

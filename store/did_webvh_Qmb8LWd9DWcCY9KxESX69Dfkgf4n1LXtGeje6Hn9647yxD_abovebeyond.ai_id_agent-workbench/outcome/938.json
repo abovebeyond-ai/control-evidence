@@ -1,0 +1,15 @@
+{
+    "action": "b5557503a458226a261a31ee3bb5aa77",
+    "effect": {
+        "detail": {
+            "base": "083e930654d8706902ef6a2d30f40aa8e7f2ea80",
+            "branch": "workbench/ask-the-record",
+            "commit": "e95f6fa8cf71c2fe4375c911a376d01c8f92f2c9",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 936,
+    "verdict": "ALLOW"
+}

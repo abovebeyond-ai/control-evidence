@@ -1,0 +1,15 @@
+{
+    "action": "11d6a7354b238b80ae008a9fe5acbdc1",
+    "effect": {
+        "detail": {
+            "base": "23b9603ffbb50b0fd950cac432d96099f50d2a99",
+            "branch": "workbench/ui/house-checkbox-2",
+            "commit": "d8d7eb48fde545b4c7bff33156c88b6cbb30f3b0",
+            "files": 29
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 858,
+    "verdict": "ALLOW"
+}

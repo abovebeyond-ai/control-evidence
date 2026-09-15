@@ -1,0 +1,15 @@
+{
+    "action": "d95826a2ce9e3a7ecb2cab0a456a89b7",
+    "effect": {
+        "detail": {
+            "base": "7dd027c383e0082239391a905704de7a5f1dde96",
+            "branch": "workbench/ui/photos-one-per-cell-3",
+            "commit": "1706f11f13dc34c39d9de94c56bb539f4b39fe2a",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1314,
+    "verdict": "ALLOW"
+}

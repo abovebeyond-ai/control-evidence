@@ -1,0 +1,15 @@
+{
+    "action": "dc3c9005d6bc5c5100c8fa22f413a6b2",
+    "effect": {
+        "detail": {
+            "base": "e65e31679086449e04bf746c13c79b37461d5a2d",
+            "branch": "workbench/a-count-is-obvious",
+            "commit": "b878a2308610818214147027ebe8d603cf5533b1",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 954,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "291ae5f44d1006585893de55efdc8b3cd615c66a",
+            "branch": "workbench/docs/findings-files-2",
+            "files_sha256": "7432bd6fd9019702451365ac0843564090bc7095a722937750f6f73490b90bd1",
+            "message": "Findings as files, part 2 of 3: rows 56 to 110 of the 127"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915054238-ecd60c"
+}

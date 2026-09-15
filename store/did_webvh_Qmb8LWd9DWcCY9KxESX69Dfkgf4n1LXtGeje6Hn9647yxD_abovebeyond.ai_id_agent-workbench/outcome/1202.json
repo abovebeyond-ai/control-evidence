@@ -1,0 +1,15 @@
+{
+    "action": "1cce3c21a3b3531a8da15bb92aabbaf4",
+    "effect": {
+        "detail": {
+            "base": "11aa0713551b35e129ced649dc7cd653fb82645b",
+            "branch": "workbench/her-own-hue",
+            "commit": "2f0025196175eb0c600f7f0a6f229721cdaa9f5a",
+            "files": 10
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1200,
+    "verdict": "ALLOW"
+}

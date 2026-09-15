@@ -1,0 +1,15 @@
+{
+    "action": "6805780aed8f90092eca665b115df118",
+    "effect": {
+        "detail": {
+            "base": "a44135350c65cdf57048ee8d4bf5ba231a38bf19",
+            "branch": "workbench/de-store-reist-mee",
+            "commit": "67346cb664aa9fa4a5d32291b22f55d13d2b280e",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1587,
+    "verdict": "ALLOW"
+}

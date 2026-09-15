@@ -1,0 +1,15 @@
+{
+    "action": "a50ea671cb2a55198c40ff45fc6ad94a",
+    "effect": {
+        "detail": {
+            "base": "23b9603ffbb50b0fd950cac432d96099f50d2a99",
+            "branch": "workbench/feat/mail-always-to-list-2",
+            "commit": "c75f200dfec3e5c46b36ec62ae5722b7a69d7aab",
+            "files": 9
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 864,
+    "verdict": "ALLOW"
+}

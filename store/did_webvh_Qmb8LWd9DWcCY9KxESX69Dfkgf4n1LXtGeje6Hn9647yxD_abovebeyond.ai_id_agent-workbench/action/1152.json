@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d087c2169e94d776ae50c390c5055c4b49cf436f",
+            "branch": "workbench/never-carry-an-older-pin",
+            "files_sha256": "97c4534fe037698c95fda2241bf1967fd97571413e1c41aadc538d3c8592ba96",
+            "message": "Nooit een oudere pin dragen dan de repo heeft\n\nDe pin voor v0.23.0 werd gemerged terwijl `git pull && rehearse.sh upgrade`\nal liep. De pull bracht de commit ervoor, de upgrade droeg v0.22.0 naar de\nVM, en die kwam terug op de release die hij al had. Er faalde niets en\nniets zei het; het verschil bleek een uur later uit een record.\n\nEen deploy die stil een oudere versie installeert dan de repo houdt, is\nerger dan een die weigert. Dus vergelijkt upgrade de pin in deze checkout\nmet die op origin/main en stopt als ze verschillen, met de twee versies\nerbij. Wie het toch wil (een oudere release terugzetten is een geldige\nzet) zegt dat met CONTROL_PIN_ANYWAY=1."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260914143936-c40413"
+}

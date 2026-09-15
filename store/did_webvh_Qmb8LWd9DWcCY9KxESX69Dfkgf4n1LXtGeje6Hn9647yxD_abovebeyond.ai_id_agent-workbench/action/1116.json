@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane asked how the industry actually searches for papers. The answer is not what we built, and it is worth saying plainly: a trend desk follows VENUES, follows AUTHORS, and chains CITATIONS from a paper that mattered. Keyword search comes last, and when it is used it is a structured boolean with population terms, not a four-word compound noun lifted from our own vocabulary.\n\nSo this follows the journals. Eleven of them: New Media & Society, Information Communication & Society, Convergence, Poetics, Journal of Youth Studies, European Journal of Cultural Studies, Social Media + Society, Journal of Adolescent Research, Cultural Sociology, Journal of Consumer Culture, Journal of Children and Media.\n\n**Following a journal has a property no query can match.** Its editors decided relevance before we ever saw it. There is nothing to write, nothing to approve one by one, and the vocabulary problem cannot occur: New Media & Society does not publish drone logistics, which is what \"multi platform gaming efficiency\" found. That is why a venue carries a higher trust weight than a query.\n\n**Ids, never names, and this is measured rather than cautious.** Resolving these titles by search today: \"Convergence\" returns Nano Convergence, \"Poetics\" returns Poetics Today, and \"Young\" returns Cardiology in the Young. Each id is pinned in the job with the name it answered to and the works count on the day it was checked, so a wrong id is visible in the file rather than discovered in the corpus. A test asserts the job never resolves a name at run time.\n\nYoung (Nordic Journal of Youth Research) is deliberately absent, with the reason written down: its title is a word, the index offers a cardiology journal first, and finding its id is a person's job.\n\n**Read live while building it.** The three newest papers in New Media & Society: a study of TikTok recommendation published two days ago, one on perceived virtue-signalling, one on cross-platform media curation. No query written, nothing to judge.\n\nLike everything else a hand offers here, venues are proposed inactive and wait on the Sources page. Weekly in `ops/crontab`, five minutes after the concept queries.\n\nFive tests, suite 687 green.\n\nStill ahead, if this proves out: citation chaining from the papers we already hold, which is how most literature is actually found and which we have never done.\n",
+            "branch": "workbench/follow-the-venues",
+            "title": "Follow the journals, not the phrases"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914140033-8415fb"
+}

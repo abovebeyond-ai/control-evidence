@@ -1,0 +1,14 @@
+{
+    "action": "ee97f2dd5a451a3382cdb906d267f65f",
+    "effect": {
+        "detail": {
+            "playbook": "elixir-fix",
+            "project": "naviskore-webapp",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1410,
+    "verdict": "ALLOW"
+}

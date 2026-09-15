@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5bc350aa51318deb6f14ce145247511b2c46e775",
+            "branch": "workbench/fix/relation-display-name",
+            "files_sha256": "d9babb0ba58d65d6c4170e85ee214fc7420eb9c89048909c1305fe67f6664c4b",
+            "message": "A relation without a name is still called something"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914210523-e45ecc"
+}

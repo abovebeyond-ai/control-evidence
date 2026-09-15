@@ -1,0 +1,22 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "Studio (repo)",
+                    "url": "https://github.com/Trendwolves/gentells-studio"
+                },
+                {
+                    "kind": "repo",
+                    "label": "Dashboard (repo)",
+                    "url": "https://github.com/Trendwolves/gentells-dashboard"
+                }
+            ]
+        },
+        "resource": "portal:signal-observatory-gentells"
+    },
+    "run": "workbench-20260915045333-9b466a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "effac0fa96e40311a0460e3f50ddd618b89ccc61",
+            "branch": "workbench/the-profile-decides",
+            "files_sha256": "374ad920511f9465a6bd82270f36a284909613b162ed27ce1a3c533e01e2a27f",
+            "message": "De trede volgt het profiel, en de lat komt uit de catalogus\n\nTien bevestigde runs en nul weerlegde: dat was de vergunning. Het is\nrekenkunde zonder foutmarge, en het eigen framework noemt dat onzin. Zeven\nvan de bevestigingen van de kopregelhand waren vier regels middleware op\neen statische site; tien schone runs dekken streng gerekend niet meer dan\n\"faalt minder dan een kwart van de tijd\"; en elke beoordeelde run is er een\ndie een mens koos te mergen, dus de mens uit de lus halen verandert de\nverdeling waaruit die tien kwamen.\n\nApp\\Support\\Pac velt het oordeel nu op het profiel: de blast radius en de\nlat die daarbij hoort (uit de catalogus van Elixir, per hand: floor en\nminimum), de meting die haar claims beslecht, de guardrails zoals het\nbewijs van de laatste run ze toont, en de betrouwbaarheid MET haar marge.\nPortal rekent en verzint niets: die lat staat in Elixir, en twee meningen\nover hoeveel staat van dienst genoeg is, is \u00e9\u00e9n te veel.\n\nWat het in de praktijk verandert: een ingreep zonder weg terug wordt nooit\nlosgelaten (B5 heeft geen lat), een hand die geen enkele meting beslecht\nevenmin, en de kopregelhand staat op zeven van de twintig die haar blast\nradius vraagt. Dat is strenger dan de teller op \u00e9\u00e9n punt en losser op een\nander, en het zegt in beide gevallen waarom."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914180208-f0920e"
+}

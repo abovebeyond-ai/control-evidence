@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "852c08515bfccf12fd5b1ceabc46c78381be817e",
+            "branch": "workbench/v1-moves-when-the-tests-say-so",
+            "files_sha256": "4d1f5072385f98ea2386aaaa480d82dfcf62aed0b4964dceb748f5899a31f607",
+            "message": "v1 verzet zichzelf, en alleen als de tests groen zijn\n\nElk project roept deze workflow aan op @v1, dus een commit op main bereikt\nde hele vloot zodra de tag verschuift. Dat verschuiven ging met de hand, en\ndat ging op \u00e9\u00e9n dag twee keer mis: na het bestandenplan en na de cache-fix\nbleef v1 op de oude commit staan en draaide de vloot een runner waarvan de\nfout al hersteld was. Beide keren wachtte alleen de tag.\n\nAutomatisch mag het nu omdat deze repo sinds vandaag zijn eigen poorten\nhaalt: de tag beweegt pas als de tests op main groen zijn. Zonder die tests\nzou dit precies het tegenovergestelde van een poort zijn."
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260914143815-1a3b14"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e4bcecbd068aff91c38509c3eddfe3a526f087b3",
+            "branch": "workbench/ui/admin-only-label",
+            "files_sha256": "25fef48a06a61630706508482cddcae9d6638f55637e4c6263b373d5777d5c6f",
+            "message": "Settings say which values are the platform's and which are the dealer's"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914074845-197096"
+}

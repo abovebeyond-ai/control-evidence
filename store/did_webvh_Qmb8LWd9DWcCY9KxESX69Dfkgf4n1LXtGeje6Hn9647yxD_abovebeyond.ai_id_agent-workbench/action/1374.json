@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "93d8ce52265d4f50759e5f28b85c8ace238265d5",
+            "branch": "workbench/test/price-characterization",
+            "files_sha256": "a967b9487fdff75b7dcd76bf31e2e59eeadb120b035916af45bfc91ebb285946",
+            "message": "Pin the price every screen shows today"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914202145-c38aaf"
+}

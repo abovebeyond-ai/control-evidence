@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8cfcb48425f238c5a15fb0444d1fcd4dd6f0a136",
+            "branch": "workbench/fix/blade-directive-in-comment",
+            "files_sha256": "4adaa574fe0d40ce38d91753dd95520d0607360717aa0ce208861ab51cd73b25",
+            "message": "A directive name in a Blade comment is live"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915044157-adfe47"
+}

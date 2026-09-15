@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "consent"
+        },
+        "resource": "portal:vera"
+    },
+    "run": "workbench-20260914080310-11eda5"
+}

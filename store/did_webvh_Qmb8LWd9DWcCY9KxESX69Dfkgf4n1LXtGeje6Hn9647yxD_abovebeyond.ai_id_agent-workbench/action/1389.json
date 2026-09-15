@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De runner test v\u00f3\u00f3r en na de wijziging, en tot nu vertelde hij dat aan niemand. De uitslag\ndraagt het plan, de tak en de bestanden; wat de rechter deed stond er niet in. De hand die\nhet voorstel opent wist dus niet d\u00e1t er getest was, en beweerde het toch: elk voorstel van\nde kopregelhand zei \"the tests were green before the change, and again after\", ook waar\ndeze kant de tests nooit zag draaien. Die zin was waar. Ze was nergens op gebaseerd, en dat\nis dezelfde vorm als de drie defecten van 13 september: een bewering die verder reikt dan\nhaar bewijs, en niets dat ertussen staat.\n\nWat erbij komt: de twee teststappen krijgen een id, en de bewaarstap schrijft `judge` in de\nuitslag met het commando en de uitkomst van de run ervoor en die erna.\n\n```json\n\"judge\": { \"command\": \"php artisan test\", \"before\": \"success\", \"after\": \"success\" }\n```\n\nDat is niet dezelfde vraag als \"is de run geslaagd\". Een uitslag bestaat ook bij een rode\ntest achteraf (de bewaarstap draait op `always()`), en dan zegt dit veld `failure` in plaats\nvan te zwijgen. Elixir maakt er aan de andere kant een claim van met een drempel eronder\n(`PROPOSAL_UNDER_TESTS`); ontbreekt het veld, dan zegt het voorstel dat het de rechter niet\ngekregen heeft in plaats van iets over de tests te beweren.\n\n## Waarom de test in deze repo erbij hoort\n\nDe bewaarstap leest `steps.baseline.outcome` en `steps.judge.outcome`. Verdwijnt een van die\ntwee ids, dan leest hij een leeg veld, en dan zwijgt elk voorstel van de vloot over de tests\nzonder dat er iets rood wordt. Een stille degradatie is erger dan een gefaalde stap, dus de\nworkflow-controle in `test.yml` pint nu de twee ids, de drie env-namen en dat de uitslag de\nrechter draagt.\n\n## Bewijs\n\n- `node --test \"test/*.test.mjs\"`: 5 geslaagd\n- de workflow-controle van `test.yml` lokaal nagespeeld: de twaalf invoerwaarden staan er, en de rechter staat in de uitslag\n",
+            "branch": "workbench/de-rechter-in-de-uitslag-2",
+            "title": "De rechter staat in de uitslag"
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260914202845-25b3ff"
+}

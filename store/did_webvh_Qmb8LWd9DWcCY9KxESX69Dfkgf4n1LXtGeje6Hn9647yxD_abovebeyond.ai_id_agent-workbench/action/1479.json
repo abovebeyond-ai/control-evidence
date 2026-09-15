@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fef758249a494f07cd3f3f9c08327e54412d9044",
+            "branch": "workbench/fix/rental-document-without-vehicle-2",
+            "files_sha256": "8a809cca391535b3c4fe37a926e5ee686c6396091c1a8a456c6b86b6f4e98f5f",
+            "message": "A document without its vehicle still renders"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914221101-0ab27a"
+}

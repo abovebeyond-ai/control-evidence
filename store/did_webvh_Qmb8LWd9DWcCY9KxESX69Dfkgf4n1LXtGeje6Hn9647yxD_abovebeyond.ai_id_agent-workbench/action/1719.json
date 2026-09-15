@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e5994250b3de6386825053a0e91455ca3f4b04c2",
+            "branch": "workbench/feat/average-price-facet-counts-2",
+            "files_sha256": "2b4fa239294bf101f4444684ba6cecb1450fcd10a8954cfce098e64205a22b5c",
+            "message": "Every filter says how many it leaves, and the calculation is pinned"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915054906-4b405e"
+}

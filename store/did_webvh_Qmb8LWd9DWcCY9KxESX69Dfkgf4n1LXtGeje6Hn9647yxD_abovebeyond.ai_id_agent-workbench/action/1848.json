@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #391 (and the class fix it carried). #384 landed the relation picker on main with `<table class=\"ui-list ui-list-titled @if($isModal) ui-picker @endif\">`, which leaves a trailing space in the class attribute of the relations page itself; `ListPageHeadersTest` (from #381) asserts the literal `<table class=\"ui-list ui-list-titled\">` and fails on main because of it.\n\nOne line: the conditional becomes `{{ $isModal ? ' ui-picker' : '' }}`, so the page emits exactly the attribute the test expects and the picker in the modal still gets `ui-picker`. The test is unchanged.\n\nChecked on current main: `ListPageHeadersTest`, `RelationPickerTest`, `StylesheetSyntaxTest` (21 tests, 748 assertions, OK). Everything else from #358 is already on main through #384; nothing to close but #391.\n",
+            "branch": "workbench/ui/relation-picker-7",
+            "title": "The relations page emits its list class without a trailing space (fixes ListPageHeadersTest on main)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915063329-d8625b"
+}

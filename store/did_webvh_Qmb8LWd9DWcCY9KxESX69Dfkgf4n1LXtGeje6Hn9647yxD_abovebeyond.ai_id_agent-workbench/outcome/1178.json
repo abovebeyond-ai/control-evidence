@@ -1,0 +1,15 @@
+{
+    "action": "479176b24842173591f5d17e3a8d90ad",
+    "effect": {
+        "detail": {
+            "base": "2dc2229da6ce62e498a2ca2bb8eeabbb197a8281",
+            "branch": "workbench/fix/carpass-chip-attribute",
+            "commit": "73347162dfc8ec5bfe9226f1bfce6b00e1b0fc1d",
+            "files": 7
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1176,
+    "verdict": "ALLOW"
+}

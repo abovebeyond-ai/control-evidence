@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "08044c86870dddfb1435a265c43da6bd8bdef0e6",
+            "branch": "workbench/because-of-ai",
+            "files_sha256": "fa823ed4d10193d517b657784ddca3846f606463c5a0cbe07dc790f949c18e1c",
+            "message": "De oorzaak noemen, en achter de login dezelfde woorden"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914185214-32bd7b"
+}

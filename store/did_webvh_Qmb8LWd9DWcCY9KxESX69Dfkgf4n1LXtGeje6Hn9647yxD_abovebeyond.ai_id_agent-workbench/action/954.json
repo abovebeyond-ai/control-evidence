@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e65e31679086449e04bf746c13c79b37461d5a2d",
+            "branch": "workbench/a-count-is-obvious",
+            "files_sha256": "2636e0e7910bbfa3ed3f90fca66d5d970a9993489c021e4d9818e26bc9c473dc",
+            "message": "Een telling is duidelijk, niet slim"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914095932-4aa00d"
+}

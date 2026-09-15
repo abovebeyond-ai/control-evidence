@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "32e2f234cd2465459a5a86f30104e40fc3fc932a",
+            "branch": "workbench/docs/rule-s4-4-14-duplicate",
+            "files_sha256": "8214f1dd18a4374bd86f9fc723694fc16a4864126b2333928bee58c9cec41f87",
+            "message": "One rule code, one rule"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915045527-edd2b4"
+}

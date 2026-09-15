@@ -1,0 +1,15 @@
+{
+    "action": "0e3046d1aa0cad65c7d683fa614652d3",
+    "effect": {
+        "detail": {
+            "base": "08044c86870dddfb1435a265c43da6bd8bdef0e6",
+            "branch": "workbench/what-it-unlocks",
+            "commit": "c3dd80c23e97fce11f6e0486a0501e53087594e9",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1332,
+    "verdict": "ALLOW"
+}

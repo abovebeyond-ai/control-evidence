@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cf2b0986fb8518f9bd49f0cf72d52dc23deaea16",
+            "branch": "workbench/act-from-the-page",
+            "files_sha256": "fc37dc92fe41def983ab7c0a22fa471429f12f250509c904707e543251898b29",
+            "message": "Vanaf de pagina vragen, nooit zelf doen: uitnodigen en zegelen via de gateway"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914103230-c2df1a"
+}

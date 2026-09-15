@@ -1,0 +1,15 @@
+{
+    "action": "88ee57822c916d4640dbe498543b84d6",
+    "effect": {
+        "detail": {
+            "base": "69517c896165ce42f4a2101d9bfcd749195ff4ae",
+            "branch": "workbench/ui/maintenance-copy",
+            "commit": "104e907f6a901a5112ea0a3387c70c53184d5e6c",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1815,
+    "verdict": "ALLOW"
+}

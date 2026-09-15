@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5cab0ee684ed8ee20d3df99579bbb543b5fd5e31",
+            "branch": "workbench/chore/generated-docs-out-of-git-2",
+            "files_sha256": "2ef1f96fd6e795f90084b617da482787d74b181946fdaf2cea48213677f6e779",
+            "message": "Generated documentation is built, not committed"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914180506-c0e125"
+}

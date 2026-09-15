@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Step two of `docs/agent-doors.md` (portal#318): a window on the record, on the record page, and deliberately without a model in it.\n\nVera exists so that what a machine says can be checked against a source. A chat on that page that answered from a model's memory would be the one thing this product argues against, so the first pass answers only out of what is written beside the review, and refuses the rest in those words: \"I cannot see that in the record.\"\n\n`App\\Review\\Ask` is a pure function from a question and the record to an answer. It knows the questions people ask while judging: what is left, what was flagged and on which source, which readings rest on a source, who judged how many, which sources are withheld, where a source came from, and what happened lately. Every line it prints is a row that exists: a field, a source id, a rung, a root, an event with its time and its author.\n\nTwo details that carry the discipline:\n\n- A source is recognised by id or by title, longest id first, so `residuals2` is never read as `residuals`. The test pins that.\n- Provenance says only what the row says. If the record does not carry a timestamp authority, the answer does not mention one, and the test asserts the absence rather than the presence.\n\nThe panel is a plain form on the record page, so it works without JavaScript and a question survives in the URL. Where a model belongs is the next pass, and only to phrase what this retrieval already found: the rows stay the authority, the sentence is the decoration.\n\nSuite 40/40, of which eight are new.\n",
+            "branch": "workbench/ask-the-record",
+            "title": "Vraag het aan het record"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914095400-3ef458"
+}

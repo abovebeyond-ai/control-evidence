@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "176413894c5197f227ed0fbc95f6291d58ade21b",
+            "branch": "workbench/ui/carpass-confirm-facts",
+            "files_sha256": "4855161d024659cfd11e529234b4e73eae3a31589ba61ceb8223cbc665bec9f6",
+            "message": "Say which car and which mileage before a Car-Pass request"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914133303-924028"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eedfa48070f62778253f32d94f85083cebacdd3b",
+            "branch": "workbench/follow-the-venues",
+            "files_sha256": "6ddecef20858a9db65cb0208e5df997b8dbfe042c7401c48c06b7a5e64b19dda",
+            "message": "Follow the journals, not the phrases"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914140033-8415fb"
+}

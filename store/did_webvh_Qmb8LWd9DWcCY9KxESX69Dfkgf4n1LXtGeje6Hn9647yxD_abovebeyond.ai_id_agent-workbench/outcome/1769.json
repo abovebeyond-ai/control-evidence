@@ -1,0 +1,15 @@
+{
+    "action": "e2fc54ea0a0d5ba9f24af92acdc683a0",
+    "effect": {
+        "detail": {
+            "base": "1de48e4779e89bea307d8ee11e5b21eb651c18fe",
+            "branch": "workbench/fix/mail-logo-and-address-4",
+            "commit": "4954c39278b7a485ba737237a9e44ef68a0bb8ed",
+            "files": 13
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1767,
+    "verdict": "ALLOW"
+}

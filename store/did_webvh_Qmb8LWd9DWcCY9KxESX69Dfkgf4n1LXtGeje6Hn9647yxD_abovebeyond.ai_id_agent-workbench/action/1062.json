@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane on the forty academic queries: \"it feels a bit random to just approve those terms\". He was right, and it was my fault. I handed over a list and an opinion and no criterion, having told him that no automatic test separates a concept name from a research question. I had tested the wrong things.\n\n**The criterion is in the answers, not in the question.** Asked of OpenAlex, \"multi platform gaming efficiency\" returns 50,371 papers whose fields are Computer Science, Engineering and Energy: a real literature, about machines. \"omnichannel digital infrastructure expectation\" lands in Business and Management. The ones worth asking come back from Social Sciences, Arts and Humanities and Psychology, where somebody studies what people do.\n\nSo `academic-fit.mjs` reads the FIELD of each recent paper a query returns, and a query is offered only when at least half of what comes back is a literature about people. Business and economics count, because youth spending and labour are studied there, but not alone: a query landing only in business is usually ours in the wrong words.\n\n**This is the test that works where the others do not.** Volume says nothing, since the bad queries return more. A stricter field search still lands on ride-pooling. Anchoring the words in \"youth\" silences the good ones, taking \"brainrot gaming vernacular\" from eight papers to none.\n\n**And a rate limit is not a verdict.** The index throttles anonymous search under load and says so; an unanswered candidate is left for next week rather than condemned on an answer we never received.\n\nWhat a person now approves is a measurement, not a name: each proposal carries its own line, \"of 10 recent papers: Social Sciences 6, Arts and Humanities 2, Computer Science 2\".\n\nThree tests on the criterion, including the business-alone case and the rate limit. Suite 682 green.\n\nWorth doing when convenient: OpenAlex offers a free API key for uninterrupted access, and the anonymous pool throttled hard while I was measuring. `OPENALEX_MAILTO` is already read from the environment; a key would make the weekly run reliable.\n",
+            "branch": "workbench/academic-queries-are-tested",
+            "title": "A question is judged by where its answers land"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914131948-81f415"
+}

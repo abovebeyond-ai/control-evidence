@@ -1,0 +1,15 @@
+{
+    "action": "abfa6bfd6dfb26f3098f5013a91e15a9",
+    "effect": {
+        "detail": {
+            "base": "10a0e19f20dbd15708ba2067e2108edd1e8d50d4",
+            "branch": "workbench/refactor/vehicle-publisher",
+            "commit": "1dd056ee28966e7b0ff4568eeaad385753abbe1f",
+            "files": 12
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1230,
+    "verdict": "ALLOW"
+}

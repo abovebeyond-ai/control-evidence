@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ec16cf5b2b4085f633cac565ce745c774ee14df9",
+            "branch": "workbench/docs/rules-up-to-date-2",
+            "files_sha256": "099c5061b44605bb787b3d36dd06e224860499a0da667fa2c6d2e98d1fc58baa",
+            "message": "The rules follow what the platform now does"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914083344-e0dbc5"
+}

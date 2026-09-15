@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "92edbb6154a021df8302f7d3cc9693159253112d",
+            "branch": "workbench/feat/heic-uploads",
+            "files_sha256": "9e306d36796ff5d13788c024b071d0bcc33d814fc6e3061dda0167dec6ee8eda",
+            "message": "Photos from an iPhone are accepted and converted"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914085519-6df68e"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "eca882e5c872b737336aa23d27246f7e",
+    "effect": {
+        "detail": {
+            "base": "6a15523640ddbd10d409129426d7df502340c436",
+            "branch": "workbench/ui/confirm-names-the-vehicle-2",
+            "commit": "c8413cfac0e4be53da1aa5ad5a74d84c12e81611",
+            "files": 13
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 870,
+    "verdict": "ALLOW"
+}

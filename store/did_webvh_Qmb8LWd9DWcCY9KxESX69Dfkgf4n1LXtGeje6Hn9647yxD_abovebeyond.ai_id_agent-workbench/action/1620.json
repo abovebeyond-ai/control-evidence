@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "edb2ae7eee6a7e45c9a869e07f61b0976925b2af",
+            "branch": "workbench/ui/vehicle-sheet-header-phone",
+            "files_sha256": "109ce6903aea61452d3c8e76193decaaf4faf430a3a70a90fc9bed1cf06e31b5",
+            "message": "The vehicle sheet's header and fields fit a phone"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915050559-0c5b69"
+}

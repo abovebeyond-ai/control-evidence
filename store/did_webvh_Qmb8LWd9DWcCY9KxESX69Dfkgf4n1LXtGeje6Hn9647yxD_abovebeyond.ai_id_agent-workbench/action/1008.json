@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Five projects sat on the worklist with a `tests-and-ci` row reading `cabrio-eyewear-mirror \u00b7 ? \u00b7 ? \u00b7` at term **week**. Nobody could act on that, and none of it was measured.\n\nA repository with a pipeline and no finished run measures as `runs: 0`, and Elixir judges nothing there on purpose (\"no CI\" would be a verdict about work that may well exist). The card filled that silence itself: a row without a `conclusion` is not `\"success\"`, so it read as failing, called the card **CI red** at week, and printed three question marks where the facts go.\n\n- `runs: 0` and no conclusion now renders as `no finished run yet`, background, with `nothing to judge until a run finishes` where the Judged line goes.\n- The per-repo detail line prints what is known and `not run yet` when nothing is, never a question mark: a question mark is a card inventing a fact.\n- That line's severity comes from Elixir's `run` facet instead of a rule in the card, which is the last threshold rule that was still living in this file.\n\nA test pins all three, including that no line of that card may contain a question mark. Suite green but `BuildStampTest` (worktree only).\n",
+            "branch": "workbench/nothing-ran-is-not-a-red-ci",
+            "title": "Niets gedraaid is geen rode CI"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914104720-633143"
+}

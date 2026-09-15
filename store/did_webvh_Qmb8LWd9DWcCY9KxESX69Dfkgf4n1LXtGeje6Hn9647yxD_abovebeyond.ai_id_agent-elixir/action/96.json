@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"guzzlehttp\\/guzzle\",\"to\":\"7.15.2\",\"lock\":\"composer.lock\"},{\"pkg\":\"league\\/commonmark\",\"to\":\"2.10.0\",\"lock\":\"composer.lock\"},{\"pkg\":\"axios\",\"to\":\"1.18.0\",\"lock\":\"package-lock.json\"},{\"pkg\":\"form-data\",\"to\":\"4.0.6\",\"lock\":\"package-lock.json\"},{\"pkg\":\"nanoid\",\"to\":\"3.3.18\",\"lock\":\"package-lock.json\"},{\"pkg\":\"postcss\",\"to\":\"8.5.23\",\"lock\":\"package-lock.json\"},{\"pkg\":\"dompdf\\/dompdf\",\"to\":\"3.1.6\",\"lock\":\"composer.lock\"},{\"pkg\":\"guzzlehttp\\/psr7\",\"to\":\"2.12.3\",\"lock\":\"composer.lock\"},{\"pkg\":\"livewire\\/livewire\",\"to\":\"3.8.3\",\"lock\":\"composer.lock\"},{\"pkg\":\"phpseclib\\/phpseclib\",\"to\":\"3.0.54\",\"lock\":\"composer.lock\"},{\"pkg\":\"brace-expansion\",\"to\":\"1.1.18\",\"lock\":\"package-lock.json\"},{\"pkg\":\"browserslist\",\"to\":\"4.28.7\",\"lock\":\"package-lock.json\"},{\"pkg\":\"fast-uri\",\"to\":\"3.1.6\",\"lock\":\"package-lock.json\"},{\"pkg\":\"shell-quote\",\"to\":\"1.9.0\",\"lock\":\"package-lock.json\"},{\"pkg\":\"svgo\",\"to\":\"2.8.4\",\"lock\":\"package-lock.json\"},{\"pkg\":\"baseline-browser-mapping\",\"to\":\"2.11.0\",\"lock\":\"package-lock.json\"},{\"pkg\":\"colord\",\"to\":\"2.9.4\",\"lock\":\"package-lock.json\"},{\"pkg\":\"http-proxy-middleware\",\"to\":\"2.0.10\",\"lock\":\"package-lock.json\"},{\"pkg\":\"qs\",\"to\":\"6.16.0\",\"lock\":\"package-lock.json\"},{\"pkg\":\"body-parser\",\"to\":\"1.20.6\",\"lock\":\"package-lock.json\"},{\"pkg\":\"webpack\",\"to\":\"5.104.1\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 21,
+            "plan_sha256": "fd1f9fdf9fe5eef4f2021039b0f3821e005874e7d59933fef9fe6a7e2f657acc",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "01M2GVBMZV5HK0CSW0NEKSYMNR"
+}

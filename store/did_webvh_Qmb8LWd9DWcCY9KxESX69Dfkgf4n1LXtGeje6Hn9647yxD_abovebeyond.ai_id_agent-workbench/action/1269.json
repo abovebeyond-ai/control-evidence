@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "An open point, no behaviour change. Shane approved recording it; nothing here implements it.\n\n## O-26: the two generated documentation files should leave git\n\n`docs/bedrijfsregels.html` and `docs/bedrijfsregels/92-testdekking.md` are produced by `bin/rules-page` and `bin/rules-coverage --write`. Because they are committed, every pull request that adds or changes a rule regenerates them, and two such pull requests always collide: four times on 14 September 2026 alone, and each collision costs a whole new pull request because the control gateway cannot update an existing branch.\n\nThe repository already solved exactly this shape for `public/build`, the vendor copies in `public/js` and the purged theme CSS, which left git on 12 September 2026 because Forge runs `npm ci && npm run build` on every deploy and CI builds before the tests. The same shape fits here: generate them in CI and in the deploy, keep the sources (`docs/bedrijfsregels/*.md` and the `@rule` tags) under version control, and let the published page be built rather than committed.\n\nOne thing to settle first: the business-rules page is published as an artifact and read straight from the repository today, so whoever does this has to say where the built file lands and how it gets published.\n\nOwner Shane, and explicitly **after the cutover**: it touches the deploy script and the CI workflow, the two things that must work on the day itself.\n\n## Verification\n\nO-26 is the next free number on current main (O-01 to O-25 are taken, O-10 has been missing since before this branch, no duplicates). `docs/bedrijfsregels.html` regenerated with `bin/rules-coverage --write` and `bin/rules-page`, not hand-edited; it now counts 25 open points instead of 24, and `92-testdekking.md` is unchanged because an open point is not a rule.\n\n`vendor/bin/phpunit --filter='RulesCoverage|StylesheetSyntax'`: 3 tests, 616 assertions, green.\n",
+            "branch": "workbench/docs/open-point-generated-docs",
+            "title": "Open point: the generated rule documents should leave git"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914180445-21fb74"
+}

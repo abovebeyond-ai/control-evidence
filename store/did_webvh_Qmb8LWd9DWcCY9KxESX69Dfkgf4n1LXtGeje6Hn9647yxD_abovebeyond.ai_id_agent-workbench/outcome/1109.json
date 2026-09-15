@@ -1,0 +1,15 @@
+{
+    "action": "9828e2ad6a8505cac2687a266b6656c3",
+    "effect": {
+        "detail": {
+            "base": "7408c891bb397c3b95ed8b421ee90b729a9c2653",
+            "branch": "workbench/a-grouping-is-of-the-whole",
+            "commit": "bcfab40951a0ef04882f7ff51d9cd720e03eeea4",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1107,
+    "verdict": "ALLOW"
+}

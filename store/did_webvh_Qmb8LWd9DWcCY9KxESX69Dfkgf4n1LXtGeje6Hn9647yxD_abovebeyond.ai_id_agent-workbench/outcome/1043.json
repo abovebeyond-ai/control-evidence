@@ -1,0 +1,15 @@
+{
+    "action": "ab62e8046d7f974a92d7daae955395c0",
+    "effect": {
+        "detail": {
+            "base": "627c6c2499c7d68d919037b7320ccde8fb74e262",
+            "branch": "workbench/fix/carpass-request-feedback-2",
+            "commit": "50143b75de8d99877a02d9109b6c6256942b37cb",
+            "files": 13
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1041,
+    "verdict": "ALLOW"
+}

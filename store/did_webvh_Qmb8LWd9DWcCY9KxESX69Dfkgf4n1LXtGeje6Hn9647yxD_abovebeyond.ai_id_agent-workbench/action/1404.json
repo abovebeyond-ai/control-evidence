@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8710e41cb9a60d3315a3b29f2f84ad7efae98b13",
+            "branch": "workbench/fix/photo-toolbar-handlers",
+            "files_sha256": "6ca42f73da2a9176267aa85ac51d868f25b4fa0eb0993bddc756cddb6a1460a7",
+            "message": "A method must call its sibling, not the constructor"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914205224-a86268"
+}

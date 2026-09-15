@@ -1,0 +1,15 @@
+{
+    "action": "498593f15cdef8694f23cf2a49dea08d",
+    "effect": {
+        "detail": {
+            "base": "b5a311b6527dada51905912873ba1fcfc5aa4f6d",
+            "branch": "workbench/ui/carpass-dialog-wording-2",
+            "commit": "06973722ecb01473b63c5b7a6330ae5f1325c8e8",
+            "files": 14
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1242,
+    "verdict": "ALLOW"
+}

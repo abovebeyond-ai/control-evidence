@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e74d714b262c997efacebe2809379527cd0ca4a0",
+            "branch": "workbench/een-voorstel-dat-standhoudt",
+            "files_sha256": "19c2cbcd9771852bbf892045ae92b1c4626e06901dd4b1d6ff9315c1dbe509bb",
+            "message": "Een voorstel dat standhoudt, of het gaat niet open"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914202915-9b5738"
+}

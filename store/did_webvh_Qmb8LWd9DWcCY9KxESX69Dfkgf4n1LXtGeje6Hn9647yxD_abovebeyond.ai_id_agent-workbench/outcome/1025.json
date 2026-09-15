@@ -1,0 +1,15 @@
+{
+    "action": "7672a82642601554121a3731f7259f60",
+    "effect": {
+        "detail": {
+            "base": "e82ea2fb0e93a7a0823d1bd675c3de9a36625a4a",
+            "branch": "workbench/diag/duplicate-chassis",
+            "commit": "eb4ac87bdc4a46a42651d1b5f9ac5aaaa1cccd82",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1023,
+    "verdict": "ALLOW"
+}

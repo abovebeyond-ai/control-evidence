@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Eight sites carry a `exposure:csp` task, and for a person that task is a blank page: a content security policy says which scripts may run, and nobody knows that from outside. What **is** measurable is what the page loads today, and this scan already saw it while parsing the page. It threw that away and kept a count.\n\nIt now publishes the sources the way a policy is written:\n\n- `sources`: per third-party host the kinds it is referenced as (`script`, `style`, `image`, `frame`), sorted; the own host left out because `'self'` covers it, and a host that appears only inside script code left out because nobody can see from outside whether it is ever fetched.\n- `inlineScripts` and `inlineStyles`: what no host list can cover. A policy without `'unsafe-inline'` breaks exactly those, so whoever writes one has to know they are there first.\n\nNo hand and no judgement: this is the evidence a person writes a policy from. A hand can follow once this list has proven itself on a few sites \u2014 that order is the point, after a day in which two mechanisms were proposed before anyone had checked they could work.\n\n662 tests, PHPStan, Pint.\n",
+            "branch": "workbench/what-a-page-loads",
+            "title": "Wat een pagina laadt, en waarvandaan"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914103056-39824e"
+}

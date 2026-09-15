@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Part 1 of 3 of \"one file per finding\". Background and the full change are in part 3 (docs/one-file-per-finding); this part only adds the first 55 of the 127 rows of `docs/bedrijfsregels/90-x-bevindingen.md` as files under `docs/bedrijfsregels/bevindingen/`, `YYYY-MM-DD-<slug>.md` with frontmatter (`id: X-nn` kept for every migrated row) and the two prose cells as paragraphs.\n\nNothing reads that directory yet: the tables stay, `bin/rules-page` and `RulesIdentityTest` keep reading them, so main stays green in between. Part 2 (docs/findings-files-2) adds rows 56 to 110 and is independent of this one (both branch from main, different files). Part 3 adds the last rows, the open points, the READMEs, the generator and the test, and deletes the two tables.\n\nWhy three: one push of 170 files exceeds the control gateway's 60-second budget for a GitHub effect (four attempts, each reaching the tree or the commit step and then timing out). Merge order: 1, 2, then 3 (3 shows the files of 1 and 2 in its diff until they merge).\n",
+            "branch": "workbench/docs/findings-files-1",
+            "title": "Findings as files, part 1 of 3: the first 55 rows"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915054121-b4aa39"
+}

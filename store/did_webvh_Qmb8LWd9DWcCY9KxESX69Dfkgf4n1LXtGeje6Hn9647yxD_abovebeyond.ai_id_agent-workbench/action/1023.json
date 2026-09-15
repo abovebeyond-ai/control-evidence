@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e82ea2fb0e93a7a0823d1bd675c3de9a36625a4a",
+            "branch": "workbench/diag/duplicate-chassis",
+            "files_sha256": "6ff301d3e50eb481053d17e8b4ecd77eedd21d155e3a7c41286861e0d01a4f37",
+            "message": "A command that counts vehicles sharing a chassis number"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914111917-496fca"
+}

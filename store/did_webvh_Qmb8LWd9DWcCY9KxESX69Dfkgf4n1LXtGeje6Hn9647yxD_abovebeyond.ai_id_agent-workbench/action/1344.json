@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "64e62f7e6afd7d078fc3337cbc0e7344eb4df86b",
+            "branch": "workbench/feat/platform-photos-on-share",
+            "files_sha256": "a3b3d6a583f59b20a4a4a1abce9afda098a66ed53f7659a788923ffb040418a6",
+            "message": "Sharing a vehicle makes its platform photos"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914192857-c02cfc"
+}

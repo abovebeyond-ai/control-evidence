@@ -1,0 +1,15 @@
+{
+    "action": "47c3f18292ffdac29b365ca05b9f0349",
+    "effect": {
+        "detail": {
+            "base": "fc4468edf9b93e14aeb4de775447705ce7a08e81",
+            "branch": "workbench/where-the-model-stands",
+            "commit": "a051989821cca82bc23474774230866424bc3cdc",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 960,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "69517c896165ce42f4a2101d9bfcd749195ff4ae",
+            "branch": "workbench/docs/one-file-per-finding-2",
+            "files_sha256": "b15c323ef618945f902d7f987bd2c17da7fddc2a0fa8e36251d700962ae210a6",
+            "message": "One file per finding: a new finding never conflicts"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915062249-0459c8"
+}

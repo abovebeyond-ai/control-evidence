@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "17805722c7f139bfcffbe52191517254d786f8b0",
+            "branch": "workbench/ui/maintenance-page-embed",
+            "files_sha256": "f86490412cd27da6bf8cbd7d5c86c86b50e80efdfa10bb1e1b011f701ec7795b",
+            "message": "The maintenance page inside a dealer's website stays neutral"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915073203-dda19a"
+}

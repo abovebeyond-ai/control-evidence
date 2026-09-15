@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "69517c896165ce42f4a2101d9bfcd749195ff4ae",
+            "branch": "workbench/fix/unblur-keeps-the-photo-3",
+            "files_sha256": "036e59ab122763b123ccb054aee885b08b84a6b6ce000eae0d0827a04044cab2",
+            "message": "A reprocess that fails keeps the photo it had"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915061726-a868b1"
+}

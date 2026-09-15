@@ -1,0 +1,15 @@
+{
+    "action": "2a52a1243a4c4876bea16ef48e7a7ee7",
+    "effect": {
+        "detail": {
+            "base": "6bc0884234837b25c12a57660c1065cf6e299cb1",
+            "branch": "workbench/a-page-that-sells",
+            "commit": "b7d3f8c9e22119102fc7ee82fab6ad6510df90c1",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1350,
+    "verdict": "ALLOW"
+}

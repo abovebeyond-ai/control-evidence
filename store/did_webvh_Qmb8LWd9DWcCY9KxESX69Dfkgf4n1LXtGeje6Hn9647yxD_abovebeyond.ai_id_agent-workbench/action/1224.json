@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "619cdcad288a2343c0fca69bff9a85e75deba247",
+            "branch": "workbench/framework-only-not-not-yet",
+            "files_sha256": "3d30d34e5ce8332e2e2d6d35137a2b0062052b815cb000f7b976dc5aef92a18b",
+            "message": "Alleen framework, en niet \"nog niet\"\n\n\"Candidate\" leest als \"komt eraan\", en dat zou een belofte zijn die\nniemand van plan is te houden: de profiler blijft met opzet zes assen\nverbeelden, want zeven assen in een figuur die van drie dimensies leeft is\ngeen figuur meer. Verifieerbaarheid hoort bij het framework en niet bij\nhet beeld. Dat is een stand, geen achterstand, en de pagina zegt het nu zo."
+        },
+        "resource": "abovebeyond-ai/trustedagentic.ai"
+    },
+    "run": "workbench-20260914172115-274af0"
+}

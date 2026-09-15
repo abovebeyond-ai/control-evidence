@@ -1,0 +1,15 @@
+{
+    "action": "f1357cff52a5dd8a6a2448f34cdd0d2e",
+    "effect": {
+        "detail": {
+            "base": "8ac954ee370e5d17a190b7939417538243fba449",
+            "branch": "workbench/ui/maintenance-contact-mail",
+            "commit": "1f783644ee0eee9d0f11f8c2180894266c17307e",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1875,
+    "verdict": "ALLOW"
+}

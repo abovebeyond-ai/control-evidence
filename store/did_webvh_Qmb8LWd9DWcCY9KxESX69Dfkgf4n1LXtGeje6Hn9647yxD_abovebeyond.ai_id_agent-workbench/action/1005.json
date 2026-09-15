@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f73e3714cb9168cedda19054d820fd5551e013c9",
+            "branch": "workbench/nothing-ran-is-not-a-red-ci",
+            "files_sha256": "b17dff547a470ce45c14baaa2482626a7c733c6514a70178cc90176c08d7e5a8",
+            "message": "Niets gedraaid is geen rode CI\n\nEen repo met een pipeline en nog geen afgeronde run meet als runs: 0, en\nElixir velt daar met opzet geen oordeel: \"geen CI\" zou een uitspraak zijn\nover werk dat er wel kan staan. De kaart vulde die stilte zelf in. Een rij\nzonder conclusion is niet \"success\", dus las ze als falend, noemde de\nkaart CI red op termijn week, en drukte de detailregel af als\n\"cabrio-eyewear-mirror \u00b7 ? \u00b7 ? \u00b7 \".\n\nVijf projecten stonden zo op de werkvoorraad, met een regel waar niemand\niets mee kon: drie vraagtekens waar de feiten horen, en een termijn die\nniet gemeten was. Nu zegt de kaart wat ze niet weet, op achtergrond, en de\nernst van de detailregel komt van het oordeel van Elixir in plaats van een\nregel hier."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914104720-633143"
+}

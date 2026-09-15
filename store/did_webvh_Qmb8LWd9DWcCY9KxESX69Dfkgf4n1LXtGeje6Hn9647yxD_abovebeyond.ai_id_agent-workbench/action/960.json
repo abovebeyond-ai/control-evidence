@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fc4468edf9b93e14aeb4de775447705ce7a08e81",
+            "branch": "workbench/where-the-model-stands",
+            "files_sha256": "14a577b1e962cd46aee2aab22f308c30fbec71edde6d0be2d254f747c7d7924c",
+            "message": "Waar het model mag staan, en wat het mag zeggen"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914100810-180a4f"
+}

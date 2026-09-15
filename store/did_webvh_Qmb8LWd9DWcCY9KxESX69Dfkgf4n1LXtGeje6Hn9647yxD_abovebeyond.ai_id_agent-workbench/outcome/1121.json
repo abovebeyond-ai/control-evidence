@@ -1,0 +1,15 @@
+{
+    "action": "524713037202ce592a0af0de2c3b7e0e",
+    "effect": {
+        "detail": {
+            "base": "2915c86b8ab21fa557680ce5df143ac23a770917",
+            "branch": "workbench/the-door-asks-who-you-are",
+            "commit": "ed056df9e129998982871a88f5800328907f4bc7",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1119,
+    "verdict": "ALLOW"
+}

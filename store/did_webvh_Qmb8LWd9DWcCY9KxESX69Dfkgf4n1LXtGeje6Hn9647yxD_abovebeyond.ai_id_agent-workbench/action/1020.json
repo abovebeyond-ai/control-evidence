@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Agent-first, so the ask gets an agent, and it holds Vera's own tools rather than a second path of its own.\n\nThe window on the record page now asks twice. The record answers plainly, here and now, as it did since this morning. Beside it, an agent on this machine is asked the same question through the same door an outside agent uses (`mcp-http.mjs` on the loopback), holding the three reading tools and nothing else. Publishing, inviting and sealing are not in its hands, and the gateway would demand the operator's word for them even if they were.\n\nWhat keeps it honest is the layout as much as the prompt: the agent's sentence stands above the rows the record produced, with a line saying which lookups it made. Whoever distrusts the sentence checks it in place, without asking anyone. This is a product about telling proven from plausible, so a paragraph nobody can check would be the one thing it argues against.\n\n- The plain answer is never held back waiting for the agent. It is on the page immediately; the agent's arrives beside it.\n- One question is asked once. An answer costs a model call, so a reload does not buy another.\n- With no agent token configured, the page is exactly what it was this morning, and the tests pin that.\n- The agent is told it may use only what a tool returned in that conversation, that it must say \"I cannot see that in the record\" when the tools do not hold the answer, and that it never judges a reading.\n\nThree tests: the question reaches the agent once while the record answers at once, the sentence shows above the rows it rests on, and without an agent nothing is dispatched. Suite 50/50.\n\nNot yet exercised against a live model: that account is out of weekly budget until 13:00 UTC. The wiring is proven with a fake, the prompt and the tool scope are not.\n",
+            "branch": "workbench/an-agent-in-the-ask",
+            "title": "Een agent in de vraag"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914111708-ba2c39"
+}

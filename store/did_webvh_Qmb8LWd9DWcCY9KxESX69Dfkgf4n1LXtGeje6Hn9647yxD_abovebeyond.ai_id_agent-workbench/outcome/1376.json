@@ -1,0 +1,15 @@
+{
+    "action": "95be695c2b5afad541072cfab13d4715",
+    "effect": {
+        "detail": {
+            "base": "93d8ce52265d4f50759e5f28b85c8ace238265d5",
+            "branch": "workbench/test/price-characterization",
+            "commit": "143e26ee8adc11630d50fce5085532c0e515af7d",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1374,
+    "verdict": "ALLOW"
+}

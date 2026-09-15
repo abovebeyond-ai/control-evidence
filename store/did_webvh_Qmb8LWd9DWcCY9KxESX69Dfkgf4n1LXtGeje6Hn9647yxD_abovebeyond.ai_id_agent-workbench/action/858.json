@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "23b9603ffbb50b0fd950cac432d96099f50d2a99",
+            "branch": "workbench/ui/house-checkbox-2",
+            "files_sha256": "6edf362f709eb58efe59d6fda8f38e94d6afd67e95dd3361cbf46f9dff282a8e",
+            "message": "A checkbox in the house style, applied where the screens already are"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914080845-944aa2"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "e37d8dbdd7ee1cdc7bce201ede6c9aee",
+    "effect": {
+        "detail": {
+            "base": "ea522d463d4f891aa4ca1da9e2dd7ce5a083ab48",
+            "branch": "workbench/refactor/one-place-marks-sold",
+            "commit": "1a91bf3c621fa7b4048fa4fa4d853fe577c6188c",
+            "files": 7
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1206,
+    "verdict": "ALLOW"
+}

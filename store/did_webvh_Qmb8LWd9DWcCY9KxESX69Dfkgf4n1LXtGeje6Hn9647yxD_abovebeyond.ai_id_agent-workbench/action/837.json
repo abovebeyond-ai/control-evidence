@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1c99aa9b4ef3db38c215ef06173116167ae3bfd8",
+            "branch": "workbench/ui/mileage-thousands",
+            "files_sha256": "cd27083b5c102d0e6ffd6c5bc26d4f47c23615ed139a79f885b6e29be40b2123",
+            "message": "Whole numbers on the sheet read as thousands, and are stored plain"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914075807-fda39f"
+}

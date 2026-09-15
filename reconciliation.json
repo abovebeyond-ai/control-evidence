@@ -1,5 +1,5 @@
 {
-    "computed_at": "2026-09-14T07:33:49+00:00",
+    "computed_at": "2026-09-15T07:33:51+00:00",
     "window": {
         "since": "2026-09-10T14:20:00+00:00",
         "days": 7,
@@ -70,8 +70,8 @@
         },
         "ShaneDeconinck/naviskore": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             },
             "pulls": {
                 "github": 0,
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 12,
-                "gateway": 10
+                "github": 18,
+                "gateway": 16
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 10,
-                "gateway": 5
+                "github": 11,
+                "gateway": 6
             }
         },
         "Trendwolves/glk-transferor": {
@@ -135,8 +135,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 10,
-                "gateway": 1
+                "github": 13,
+                "gateway": 4
             }
         },
         "abovebeyond-ai/portal": {
@@ -145,8 +145,8 @@
                 "gateway": 2
             },
             "pulls": {
-                "github": 60,
-                "gateway": 16
+                "github": 67,
+                "gateway": 23
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -156,8 +156,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/vera": {
@@ -166,8 +166,8 @@
                 "gateway": 2
             },
             "pulls": {
-                "github": 16,
-                "gateway": 9
+                "github": 35,
+                "gateway": 28
             }
         },
         "kubo-global/afrodidact-website": {
@@ -207,7 +207,7 @@
             },
             "pulls": {
                 "github": 100,
-                "gateway": 38
+                "gateway": 153
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -276,6 +276,17 @@
                 "gateway": 2
             }
         },
+        "Trendwolves/gentells-studio": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
         "abovebeyond-ai/control": {
             "dispatches": {
                 "github": 0,
@@ -283,8 +294,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 46,
-                "gateway": 10
+                "github": 49,
+                "gateway": 13
             }
         },
         "abovebeyond-ai/elixir": {
@@ -294,8 +305,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 43,
-                "gateway": 16
+                "github": 51,
+                "gateway": 24
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -305,8 +316,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 7,
+                "gateway": 7
             }
         },
         "abovebeyond-ai/proveml": {
@@ -327,8 +338,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 6,
-                "gateway": 3
+                "github": 7,
+                "gateway": 4
             }
         },
         "abovebeyond-ai/verify-abovebeyond": {
@@ -582,18 +593,18 @@
         }
     },
     "unexplained": [
-        "Trendwolves/gentells-pipeline: 12 pulls on GitHub, 10 performed by the gateway",
-        "Trendwolves/gentells-site: 10 pulls on GitHub, 5 performed by the gateway",
-        "abovebeyond-ai/abovebeyond: 10 pulls on GitHub, 1 performed by the gateway",
-        "abovebeyond-ai/portal: 60 pulls on GitHub, 16 performed by the gateway",
-        "abovebeyond-ai/vera: 16 pulls on GitHub, 9 performed by the gateway",
+        "Trendwolves/gentells-pipeline: 18 pulls on GitHub, 16 performed by the gateway",
+        "Trendwolves/gentells-site: 11 pulls on GitHub, 6 performed by the gateway",
+        "abovebeyond-ai/abovebeyond: 13 pulls on GitHub, 4 performed by the gateway",
+        "abovebeyond-ai/portal: 67 pulls on GitHub, 23 performed by the gateway",
+        "abovebeyond-ai/vera: 35 pulls on GitHub, 28 performed by the gateway",
         "kubo-global/afrodidact-website: 2 pulls on GitHub, 1 performed by the gateway",
         "stocklistdealer-eu/stocklistdealer: 5 dispatches on GitHub, 0 performed by the gateway",
-        "stocklistdealer-eu/stocklistdealer: 100 pulls on GitHub, 38 performed by the gateway",
-        "abovebeyond-ai/control: 46 pulls on GitHub, 10 performed by the gateway",
-        "abovebeyond-ai/elixir: 43 pulls on GitHub, 16 performed by the gateway",
+        "stocklistdealer-eu/stocklistdealer: 100 pulls on GitHub, 153 performed by the gateway",
+        "abovebeyond-ai/control: 49 pulls on GitHub, 13 performed by the gateway",
+        "abovebeyond-ai/elixir: 51 pulls on GitHub, 24 performed by the gateway",
         "abovebeyond-ai/proveml: 2 pulls on GitHub, 0 performed by the gateway",
-        "abovebeyond-ai/proveml-research: 6 pulls on GitHub, 3 performed by the gateway",
+        "abovebeyond-ai/proveml-research: 7 pulls on GitHub, 4 performed by the gateway",
         "abovebeyond-ai/verify-abovebeyond: 6 pulls on GitHub, 0 performed by the gateway"
     ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind (rows 10.3.2, 10.3.4)"

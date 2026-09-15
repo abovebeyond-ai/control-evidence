@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fef758249a494f07cd3f3f9c08327e54412d9044",
+            "branch": "workbench/ui/form-controls-legible-on-phone",
+            "files_sha256": "2ed5eb0a9359ace4968f429c1e7ede2cff6756f4b76037a73cd415d3ec5ecd4d",
+            "message": "A form control on a phone is at least sixteen pixels"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914221132-c961bc"
+}

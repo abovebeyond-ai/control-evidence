@@ -1,0 +1,10 @@
+{
+    "action": "486c13a1c5ac6c480f6ea997dbd04e5b",
+    "effect": {
+        "error": "Post \"https://api.github.com/repos/stocklistdealer-eu/stocklistdealer/git/trees\": context deadline exceeded",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 1656,
+    "verdict": "ALLOW"
+}

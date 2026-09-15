@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "repo"
+        },
+        "resource": "portal:hoet-eyewear-mirror"
+    },
+    "run": "workbench-20260915052523-cd1f00"
+}

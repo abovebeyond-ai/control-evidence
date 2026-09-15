@@ -1,0 +1,15 @@
+{
+    "action": "82ee9c78ca326577b13a58a32a692977",
+    "effect": {
+        "detail": {
+            "base": "cf2b0986fb8518f9bd49f0cf72d52dc23deaea16",
+            "branch": "workbench/act-from-the-page",
+            "commit": "84579cf7bc773eda8eb25303ed1e38929a78e985",
+            "files": 7
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 990,
+    "verdict": "ALLOW"
+}

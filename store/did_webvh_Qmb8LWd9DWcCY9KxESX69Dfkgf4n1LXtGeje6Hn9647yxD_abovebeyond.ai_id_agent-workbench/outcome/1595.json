@@ -1,0 +1,14 @@
+{
+    "action": "bb9a59f21ade4cef79303f45bee36564",
+    "effect": {
+        "detail": {
+            "only": "repo",
+            "project": "cabrio-eyewear",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1593,
+    "verdict": "ALLOW"
+}

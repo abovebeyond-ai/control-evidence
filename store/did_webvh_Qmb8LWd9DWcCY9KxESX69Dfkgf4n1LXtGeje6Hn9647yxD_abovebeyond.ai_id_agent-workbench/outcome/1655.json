@@ -1,0 +1,15 @@
+{
+    "action": "ac3212c88cb92f338c849ffc18ec48b5",
+    "effect": {
+        "detail": {
+            "base": "3d768c3212e02d3e3e8014ea71e3ad3e88d8c791",
+            "branch": "workbench/chore/maintenance-exempt-webhooks-2",
+            "commit": "337c666404fa3e5b7ea1f863ccabf1f756305322",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1653,
+    "verdict": "ALLOW"
+}

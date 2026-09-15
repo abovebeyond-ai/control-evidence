@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6a15523640ddbd10d409129426d7df502340c436",
+            "branch": "workbench/ui/confirm-names-the-vehicle-2",
+            "files_sha256": "bade977cd6858416f9d72333b33bfeb1c82e39d20fbdb782ea3871d8a3994ed7",
+            "message": "A delete question names the vehicle and counts it right"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914082051-7aea15"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ac954ee370e5d17a190b7939417538243fba449",
+            "branch": "workbench/ui/maintenance-contact-mail",
+            "files_sha256": "2a3c32bf01b7690b0beea7ea1052228bfc8703d6b2e0ed8fbf6ae3c5e896977e",
+            "message": "Link to a mail address instead of the site's contact anchor on the maintenance page"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915071650-c65ba3"
+}

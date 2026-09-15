@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "69517c896165ce42f4a2101d9bfcd749195ff4ae",
+            "branch": "workbench/feat/transport-proven",
+            "files_sha256": "37745acd564cf4e8039b17f2dbf185aa7f2bbdde3b7421af6f67778829681a3a",
+            "message": "Transport with payment, walked end to end and pinned"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915060926-64c66c"
+}

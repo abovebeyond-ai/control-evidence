@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vervangt #32, dat dezelfde vier bestanden raakt. Sluit die en neem deze.\n\n**De pagina dreigde.** *Written faster than ever, checked by whom* zet een\nbezoeker met zijn rug tegen de muur: er gaat iets mis en het komt op jouw\nnaam. Angst verkoopt \u00e9\u00e9n keer, en op een pagina die over zorgvuldigheid\ngaat leest ze als een verwijt. Wat Vera werkelijk oplevert is het\nomgekeerde: je mag de snelheid houden, en er bewijs bij leggen.\n\n> **Write at AI speed. Send the proof with it.**\n> Vera looks up every number, date and quote in the sources your draft\n> rests on, shows the passage behind each one, and names what is in none.\n> What goes out can be rechecked by whoever gets it.\n\n**Dezelfde draai in de drie regels eronder.** Ze zeiden wat ze niet doet\n(niet het web, nooit tekenen); ze zeggen nu wat je eraan hebt: elk cijfer\nlandt op een passage, jouw oordeel is wat telt, het bewijs reist mee. De\ngrens is niet weg, ze staat waar ze hoort: als reden onder de regel, niet\nals kop erboven. Het paneel besluit ook met de winst in plaats van met de\nfout: *two of the three stand, and that is the list you read: three lines,\nnot three hundred.*\n\n**Achter de login stond nog de pagina van voor de herschrijving** (dit deel\nkomt uit #32): een tweede titel, dezelfde belofte nog eens in vier zinnen,\nen \"the files it rests on\" waar de voorkant \"sources\" zegt. De deur\nverkoopt nu niets meer, ze zegt wat te doen: *Drop the draft and its\nsources*, met \u00e9\u00e9n zin over wat er dan gebeurt. Paginatitel en\nog-omschrijving volgen diezelfde woorden, zodat een gedeelde link niet de\noude belofte draagt.\n\nTests: 52 groen. E\u00e9n assertion in `FrontDoorTest` noemde de oude kop en\nnoemt nu de nieuwe.\n",
+            "branch": "workbench/what-it-unlocks",
+            "title": "Wat het oplevert, niet wat er misgaat"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914185456-62a21e"
+}

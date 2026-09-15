@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fae060558220da1f2a52bb408b03262864826084",
+            "branch": "workbench/ui/photos-one-per-cell",
+            "files_sha256": "b7c5b7b6cd8f6f3821da4cd8c52a6d3cd80a1cc12cf07906a7f7f40dfb5c3687",
+            "message": "Own photos above, platform photos below"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914182520-e37adb"
+}

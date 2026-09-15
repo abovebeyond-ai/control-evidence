@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7c0faee22d70c51f34a548e7b602afbd4be8143b",
+            "branch": "workbench/the-record-to-paste",
+            "files_sha256": "f3924ca0a4f4688b067ef225ae7219afec030dbd305ab5d9835ec8d631713cb8",
+            "message": "De regel om te plakken, als we hem kunnen weten\n\nZes taken in de vloot zeggen \"set DNS records\" en houden daar op. Het werk\nis \u00e9\u00e9n regel tekst in het paneel van een registrar, en deze meting weet al\nwat die regel nodig heeft: welke providers in deze naam versturen, waar de\nMX naar wijst, wat er ontbreekt. Dat in ons hoofd houden laat een mens\ntwee keer uitzoeken wat \u00e9\u00e9n keer gemeten is.\n\nEen voorstel, nooit een hand: DNS is de ene plek waar een verkeerde regel\nde post van een heel bedrijf stilzet, en geen vergunning hier reikt tot een\nregistrar. Dus zijn de voorstellen voorzichtig. DMARC begint op p=none,\ndat niets tegenhoudt en alleen laat zien wat er verstuurd wordt. SPF\neindigt op ~all en komt er alleen als elke afzender die we zien er een is\ndie we herkennen; wijst de MX ergens anders heen, dan geven we geen regel,\nwant een SPF die een echte afzender mist zet diens post in de spam."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914124836-7edd43"
+}

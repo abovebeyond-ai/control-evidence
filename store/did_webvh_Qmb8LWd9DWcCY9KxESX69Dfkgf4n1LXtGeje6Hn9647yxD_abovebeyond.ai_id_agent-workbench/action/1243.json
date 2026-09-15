@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b5a311b6527dada51905912873ba1fcfc5aa4f6d",
+            "branch": "workbench/ui/price-warning-links",
+            "files_sha256": "fc630f77a61ce71d809fe53ecb0be1d0053687b0b60b9119916216fd25d38481",
+            "message": "A warning that names a field should reach it"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914175302-127a63"
+}

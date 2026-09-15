@@ -1,0 +1,15 @@
+{
+    "action": "a787a189e189b67bfa10f68957685bb5",
+    "effect": {
+        "detail": {
+            "base": "0858af6980c5d2b6975887fbab8a8408c4da0ea5",
+            "branch": "workbench/the-agent-is-there-or-not",
+            "commit": "0413deb9c6f171dee8fd0105e71208a0091b9a4a",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 999,
+    "verdict": "ALLOW"
+}

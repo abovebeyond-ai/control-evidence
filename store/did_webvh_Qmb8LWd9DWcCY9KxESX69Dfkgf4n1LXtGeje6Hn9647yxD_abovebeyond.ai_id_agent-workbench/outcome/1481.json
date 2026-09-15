@@ -1,0 +1,15 @@
+{
+    "action": "e386149588e1ce2d5bd1488a52d88504",
+    "effect": {
+        "detail": {
+            "base": "fef758249a494f07cd3f3f9c08327e54412d9044",
+            "branch": "workbench/fix/rental-document-without-vehicle-2",
+            "commit": "1f5d2d37016bfdd43e92a6bd67057f7a0c1f6771",
+            "files": 14
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1479,
+    "verdict": "ALLOW"
+}

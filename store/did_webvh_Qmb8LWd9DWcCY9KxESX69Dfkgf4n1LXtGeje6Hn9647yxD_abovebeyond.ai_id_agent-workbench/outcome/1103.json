@@ -1,0 +1,15 @@
+{
+    "action": "77d31499ff9713ce35e034b53218c639",
+    "effect": {
+        "detail": {
+            "base": "176413894c5197f227ed0fbc95f6291d58ade21b",
+            "branch": "workbench/ui/carpass-confirm-facts",
+            "commit": "72492996e9ad4f00573ac3982b2c0ce9a759dc13",
+            "files": 21
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1101,
+    "verdict": "ALLOW"
+}

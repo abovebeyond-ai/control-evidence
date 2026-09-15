@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vera was a public upload tool. Anyone who found the address could post a draft and the files it rests on, with a rate limit as the only door, and this morning I made that page easier to find by giving it a description and a canonical tag.\n\nWhat arrives at that door is somebody's unpublished work. It lands on this machine, it is read by a model on our account, and it stays in `vera-data` afterwards. A tool that holds drafts does not take them from strangers.\n\n- **The drop asks who you are.** `Access::knows()` admits an owner or anyone invited to a review on this Vera, so a client who was invited to their own review can bring the next one without waiting for us. Anyone else gets a plain refusal with a reason.\n- **A visitor still learns what Vera is.** The front page keeps its promise and its explanation, and where the form was there is now a short paragraph: not open to the public, sign in if you are one of the people on it, or read what she does on the site. The skill is named there too, since that path never sends files anywhere.\n- **A drop belongs to whoever dropped it.** Because every drop is now signed in, a review is claimed as it is made, and the link alone no longer opens it. The \"open to the link until someone keeps it\" flow stays for reviews made under the old rule; it can serve no new one, and whether to remove it is a decision for later rather than a change to slip in here.\n- **Only the front page may be indexed.** `robots.txt` allows `/` and disallows the reviews, the sign-in, the keys, the PDPP surface, the API and the agent door; every page but the front one carries `noindex` as well, so the rule holds whether or not a crawler reads that file first.\n\nTests: a stranger cannot drop, a signed-in stranger cannot either, the front page shows no upload to a visitor and is the only page without `noindex`, a drop belongs to its dropper, and a review that was open to its link still keeps the old flow. Suite 51/51.\n",
+            "branch": "workbench/the-door-asks-who-you-are",
+            "title": "De deur vraagt wie je bent"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914140615-7a03ba"
+}

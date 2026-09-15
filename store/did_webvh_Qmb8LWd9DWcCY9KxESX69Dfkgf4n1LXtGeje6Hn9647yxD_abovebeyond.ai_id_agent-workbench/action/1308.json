@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5ef056d9b5de07fb4b260f3ff952ddad7fa8052e",
+            "branch": "workbench/where-it-hurts",
+            "files_sha256": "f3dc6fc8769dae096b7c8be742315239b16dbbc86a2d91114d72b78550986244",
+            "message": "Landing: one reading, three claims, one door"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914183440-e0fec8"
+}

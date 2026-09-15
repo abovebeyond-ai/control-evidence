@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ac41b766d03e2ea137a64649371584ab0e31d705",
+            "branch": "workbench/ui/maintenance-page-2",
+            "files_sha256": "c0b70e7538f30349dfe1b0323e6858408887f8d6891fdfa6676308dcb9adb442",
+            "message": "The maintenance page speaks to the visitor"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915055157-8ee1b9"
+}

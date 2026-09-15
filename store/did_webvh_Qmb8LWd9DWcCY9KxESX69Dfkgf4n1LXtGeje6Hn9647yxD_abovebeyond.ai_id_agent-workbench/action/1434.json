@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "08a3ff66f8e28803c4627897f9ac67bf628895ab",
+            "branch": "workbench/test/outgoing-request-shape-2",
+            "files_sha256": "4a3e4a30b7507304c5b5ce7366b01acf14fd425e100335f3769e930df02762cf",
+            "message": "Pin what we send to the partners"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914212238-90d092"
+}

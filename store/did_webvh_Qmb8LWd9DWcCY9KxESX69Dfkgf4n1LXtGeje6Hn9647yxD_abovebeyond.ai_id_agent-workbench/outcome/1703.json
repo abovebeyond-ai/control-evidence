@@ -1,0 +1,15 @@
+{
+    "action": "d6eb88b5fd03f07694e123db4e2a425d",
+    "effect": {
+        "detail": {
+            "base": "291ae5f44d1006585893de55efdc8b3cd615c66a",
+            "branch": "workbench/ui/worklist-phone",
+            "commit": "dc6f8feedd2ae00b77bc67d6c89e66652378aef0",
+            "files": 24
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1701,
+    "verdict": "ALLOW"
+}

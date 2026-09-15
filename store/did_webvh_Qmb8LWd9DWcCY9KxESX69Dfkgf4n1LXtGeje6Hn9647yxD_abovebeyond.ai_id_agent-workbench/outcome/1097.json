@@ -1,0 +1,15 @@
+{
+    "action": "69f0ef2e13a4913baead318c7c30d5ac",
+    "effect": {
+        "detail": {
+            "base": "c99cb5b30143e41acc6444709f5a206e85be3715",
+            "branch": "workbench/the-record-on-the-card-again",
+            "commit": "86a66fdcc80c4eee3de87aa81cb84d2949aaf915",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1095,
+    "verdict": "ALLOW"
+}

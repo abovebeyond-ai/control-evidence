@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c827382097cf67b008e869ae7c7c1e3d41124a91",
+            "branch": "workbench/ui/carpass-unknown-vin-two-steps",
+            "files_sha256": "ef55be7f4fcc606c4c6ce29b5c10fdb413b40f59d9199446bdd79ef78b02ffac",
+            "message": "Ask first, then edit: the unknown chassis number in two steps"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914145602-301233"
+}

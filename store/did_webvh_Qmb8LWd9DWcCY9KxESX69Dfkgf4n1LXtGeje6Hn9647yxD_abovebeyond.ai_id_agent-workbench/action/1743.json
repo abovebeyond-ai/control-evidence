@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ac41b766d03e2ea137a64649371584ab0e31d705",
+            "branch": "workbench/fix/three-crashes-from-sweep",
+            "files_sha256": "f1a59fe036d771b680e43dbf19fba46d265f1c3e84a5f5899d93fda27e7e1277",
+            "message": "Three pages that crashed now open"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915055322-bfc7a7"
+}

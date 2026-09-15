@@ -1,0 +1,15 @@
+{
+    "action": "667873555d861c0e6bc261918f84d2df",
+    "effect": {
+        "detail": {
+            "base": "a1c8944601f417f0a645aa2f33db1ad62a2b6fb3",
+            "branch": "workbench/docs/findings-one-paragraph",
+            "commit": "448ebd8dc0848d2fac2ffaabc73cfdc447edfd9d",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1857,
+    "verdict": "ALLOW"
+}

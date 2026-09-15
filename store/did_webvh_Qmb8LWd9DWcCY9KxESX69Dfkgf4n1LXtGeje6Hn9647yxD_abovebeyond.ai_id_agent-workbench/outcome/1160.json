@@ -1,0 +1,15 @@
+{
+    "action": "a25a8e1fd46efdde0961756ead5cc706",
+    "effect": {
+        "detail": {
+            "base": "c827382097cf67b008e869ae7c7c1e3d41124a91",
+            "branch": "workbench/chore/schedule-carpass-resume",
+            "commit": "dd11bcb5b61fd0a9d211a4854bbb2fa5b1dacd30",
+            "files": 9
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1158,
+    "verdict": "ALLOW"
+}

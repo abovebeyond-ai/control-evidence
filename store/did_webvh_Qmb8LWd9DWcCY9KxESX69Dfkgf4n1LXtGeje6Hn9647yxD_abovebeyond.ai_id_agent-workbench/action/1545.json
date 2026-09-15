@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "**Het bewijs stond in een repo en niet op de pagina die erom vraagt.** De\ngeplante-foutenproef op het ProveML-paper staat nu op twee plekken: \u00e9\u00e9n\nmono-regel onder de knop, en een eigen blok met drie getallen. De cijfers\nkomen uit `paper/review/plant/out/score.json` in proveml-research, niet uit\niemands geheugen: 43 geplant, 42 gevangen, S5 gemist, 242 ongeplante\nlezingen nagekeken, 56 wijzigingen voorgesteld waarvan geen enkele\nweerlegbaar en 42 echte gebreken van de paper. De gemiste staat er met\nnaam bij: 42 van 43 met de miss genoemd wordt geloofd, 43 van 43 niet.\n\n**Het paneel eindigt waar het eindigt.** De zegel stond onder een open\nvraag: een review die getekend was terwijl zij nog op antwoord wachtte,\nprecies het ene waar deze pagina nooit slordig in mag zijn. De zegelstrook\nis weg; wat de handtekening betekent staat als bijschrift onder het paneel,\nin de kolom van het paneel zelf. In haar eigen bubbel spreekt ze in de\neerste persoon en vraagt ze het zoals iedereen het zou vragen: *shall I look\nfor it online?* (\"outside your files\" was ons onderscheid, niet dat van een\nbezoeker).\n\n**Twee woorden voor wie ze kent.** *Grounding* staat \u00e9\u00e9n keer, bij het stuk\nvoor wie zelf een systeem draait, en in de meta-omschrijving; niet boven de\nvouw, waar het meer kost dan het opbrengt. En bij *out the door* heet de\nhandtekening wat ze wordt: een verifiable credential met een tijdstip\nbuiten ons bereik.\n\n**Zeven vragen in plaats van vier** (wat kan ik sturen, hoe lang duurt het,\nkan het op mijn machine), gerenderd uit \u00e9\u00e9n lijst die ook het\n`FAQPage`-schema voedt, zodat wat een zoekmachine leest nooit kan afwijken\nvan wat een mens leest. Bij de vraag om een uitnodiging: geen kaart, geen\ncontract, en je houdt je reviews.\n\n**Erbij: `docs/grounding-and-credentials.md`**, een ontwerpnota (0.1) over\nwat ze als bewijs aanneemt (bestand, credential, ledger-record, levend\nsysteem, webpagina, met per soort hoe een passage vastgepind wordt), wat ze\nteruggeeft (de sign-off als W3C Verifiable Credential met status list en\nanker), en de ladder van zekerheid over twee assen. Per sectie staat wat\nvandaag draait en wat alleen ontworpen is. Auteurschap is daarin verklaard\nof vastgelegd, nooit gedetecteerd.\n\nTests: 52 groen.\n",
+            "branch": "workbench/proof-on-the-page",
+            "title": "Het bewijs op de pagina, en het paneel eindigt waar het eindigt"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260915044820-df62b9"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "10a0e19f20dbd15708ba2067e2108edd1e8d50d4",
+            "branch": "workbench/ui/carpass-dialog-wording",
+            "files_sha256": "0e4cff6c1dc19c1c8ad5b0ac05d67ba9f6aac0d31473f8f75b345bb4817dcfea",
+            "message": "Ask about the data, not about the number"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914174136-448a43"
+}

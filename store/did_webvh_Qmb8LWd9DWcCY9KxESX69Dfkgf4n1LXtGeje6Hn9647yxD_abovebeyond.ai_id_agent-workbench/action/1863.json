@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7fde4dfbd159776b716bbadffe71c4e39f76c439",
+            "branch": "workbench/ui/image-editor-phone",
+            "files_sha256": "1af8586c4b78a6a307b44b605f97562707e4b9ea97f7d766cd1c2b4cf65d3081",
+            "message": "The photo editor can save on a phone"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915065926-84f59a"
+}

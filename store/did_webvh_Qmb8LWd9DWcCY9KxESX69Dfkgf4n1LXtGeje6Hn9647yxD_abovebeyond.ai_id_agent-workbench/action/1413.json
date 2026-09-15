@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "vuln:runtime",
+            "note": "main heeft geen CI-workflow en 272 van de 631 tests falen er, dus er is geen rechter: de runner stopt bij de nulmeting (derde keer, 9 en 14 september). De CI en het werk staan op de tak upgrade/summer-2026. Zolang die niet op main staat, kan geen enkele hand hier voorstellen doen.",
+            "state": "parked"
+        },
+        "resource": "portal:naviskore-webapp"
+    },
+    "run": "workbench-20260914210349-d17a0e"
+}

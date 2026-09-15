@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cd3d17491db232e14f9a3e6e5c3b2f2bbdc2ada5",
+            "branch": "workbench/feat/carpass-url-from-env",
+            "files_sha256": "89e4b33d61a288aea07a36bcc4fe3114addb46a81c0b64e73f6155c58c15a368",
+            "message": "The Car-Pass endpoint comes from the environment"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914101444-2ea9ce"
+}

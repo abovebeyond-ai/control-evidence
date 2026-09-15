@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0858af6980c5d2b6975887fbab8a8408c4da0ea5",
+            "branch": "workbench/the-agent-is-there-or-not",
+            "files_sha256": "05d568b4395bdb274f92c8cee59207c4c1a8be1e73562c319bba792d4622a805",
+            "message": "Vera zegt zelf of de pas die een model nodig heeft kon lopen"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914104505-7af258"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "5ef5e9e8a8e06bdba3145f2135a48f9d",
+    "effect": {
+        "detail": {
+            "base": "5adbc49d11eef5d82e26579aa1d6ee017e87aaa7",
+            "branch": "workbench/an-agent-in-the-ask",
+            "commit": "eaf67b648d7f43eb18726da1060ba514fe904e39",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1017,
+    "verdict": "ALLOW"
+}

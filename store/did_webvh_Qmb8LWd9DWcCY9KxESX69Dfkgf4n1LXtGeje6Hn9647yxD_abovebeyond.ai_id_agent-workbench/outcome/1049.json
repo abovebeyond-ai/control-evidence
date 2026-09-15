@@ -1,0 +1,15 @@
+{
+    "action": "f2747cdda0b72bdaf0abad29a59edde4",
+    "effect": {
+        "detail": {
+            "base": "db14a6cafb2137563cd6fc16a26b83e1300af7df",
+            "branch": "workbench/tools-a-caller-can-use",
+            "commit": "2548078f784029029bacffeb3ff0269fe99957f3",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1047,
+    "verdict": "ALLOW"
+}

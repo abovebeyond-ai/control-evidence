@@ -1,0 +1,14 @@
+{
+    "action": "e4af1345e6708336cd100d65a71e570f",
+    "effect": {
+        "detail": {
+            "only": "repo",
+            "project": "hoet-eyewear-mirror",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1647,
+    "verdict": "ALLOW"
+}

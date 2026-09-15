@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The pin for v0.23.0 was merged while `git pull \\&\\& rehearse.sh upgrade` was already running. The pull brought the commit before it, the upgrade carried v0.22.0 to the VM, and the VM came back on the release it already had. Nothing failed and nothing said so; the difference showed an hour later in a record.\n\nA deploy that silently installs an older version than the repository holds is worse than one that refuses. `upgrade` now compares the pin in the checkout with the pin on `origin/main` and stops when they differ, naming both versions. Rolling a release **back** is a legitimate move, so it is a refusal and not a prohibition: `CONTROL_PIN_ANYWAY=1` carries it on purpose.\n\nChecked both ways: the mismatch exits 1 before touching gcloud, and a matching pin proceeds as before.\n",
+            "branch": "workbench/never-carry-an-older-pin",
+            "title": "Nooit een oudere pin dragen dan de repo heeft"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260914143936-c40413"
+}

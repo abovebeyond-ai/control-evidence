@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "11e58bf40aa6c23c713dc4cafcce086267a17cb4",
+            "branch": "workbench/fix/damage-delete-handler",
+            "files_sha256": "b6eb24d7f37c82d809e70965730893b5e6055eae74825c425e6b829c96c33cf7",
+            "message": "A JSON string ended the onclick attribute"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914182830-47d376"
+}

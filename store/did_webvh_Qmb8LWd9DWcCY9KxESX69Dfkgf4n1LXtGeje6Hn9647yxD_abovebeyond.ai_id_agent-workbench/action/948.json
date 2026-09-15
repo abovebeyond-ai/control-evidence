@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9887fddf07d0d11dd8451c112e8d1bee21da9174",
+            "branch": "workbench/ui/showroom-original-design-v2",
+            "files_sha256": "adc2d374222c99f546887f875b8436a067aadc89a77cc9ebc620a1c98632175d",
+            "message": "The showroom slide returns to its original design"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914095711-f46f91"
+}

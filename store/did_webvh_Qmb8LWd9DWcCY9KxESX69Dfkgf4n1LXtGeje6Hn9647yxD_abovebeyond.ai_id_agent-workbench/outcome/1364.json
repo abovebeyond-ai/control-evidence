@@ -1,0 +1,15 @@
+{
+    "action": "e298452eb8a01e933686350944187844",
+    "effect": {
+        "detail": {
+            "base": "23cc55c8f9516191355e84751e32389dab4b1914",
+            "branch": "workbench/not-found-is-not-wrong",
+            "commit": "544943b25f8db47a93315346a5d9237c477f44f2",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1362,
+    "verdict": "ALLOW"
+}

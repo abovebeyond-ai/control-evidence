@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The holding page had one shared token. A forwardable link is also a link that\ngets forwarded, and with one value for everyone the only way to take one back\nwas to take them all back: the cookie carries the hash of that value, so\nchanging it puts everyone outside at once, yourself included.\n\n`PRELAUNCH_TOKENS` is now a list of `name:token`, comma separated:\n\n```\nPRELAUNCH_TOKENS=\"maarten:b1e5\u2026,shane:ad1c\u2026\"\n```\n\nThe name is for whoever reads the environment file and wants to know whose link\nit is; the door only knows the value. The cookie keeps carrying the hash of the\ntoken that opened it, which is what makes one line removable: delete it, run\n`php artisan config:cache`, and that link and that cookie stop opening while the\nothers never notice.\n\n`PRELAUNCH_TOKEN` is still read as a single unnamed token. A deploy lands before\nthe environment file is edited, and a site that locks itself out between those\ntwo moments is worse than an old link that lives an hour longer.\n\nTwo new tests pin the reason: every person has their own link (and the name\nbefore the colon is not a token), and revoking one leaves the other standing,\ncookie included.\n\nFull suite: 274 of 275. The one failure is `BuildStampTest`, which wants a\ndeploy-time stamp and already fails the same way on `main` in a fresh checkout.\n",
+            "branch": "workbench/prelaunch-named-tokens",
+            "title": "One preview token per person"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260914142917-7028d9"
+}

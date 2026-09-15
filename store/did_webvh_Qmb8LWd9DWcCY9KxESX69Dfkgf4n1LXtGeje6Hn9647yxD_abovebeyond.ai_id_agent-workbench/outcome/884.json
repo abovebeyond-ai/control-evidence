@@ -1,0 +1,15 @@
+{
+    "action": "c0fc87c272449da615232105d5561ba8",
+    "effect": {
+        "detail": {
+            "base": "2cb0bb1caedfb01823871d3edc750bd2a7f45ff2",
+            "branch": "workbench/agents-say-what-they-may-touch",
+            "commit": "cd3d7a33414da258dd5e862b61c86bebe20756b0",
+            "files": 3
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 882,
+    "verdict": "ALLOW"
+}

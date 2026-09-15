@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5fae47c0d8c44637c6e36e4ece91824dd7d17b8a",
+            "branch": "workbench/ui/damage-step-phone",
+            "files_sha256": "fc319856771470ba43ebad46adf0f4b6dbcf22e5eb86c7cb332f60b774303dd2",
+            "message": "On a phone, damage is a list of parts you can tap, and a dialog scrolls itself"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915051342-cc92f2"
+}

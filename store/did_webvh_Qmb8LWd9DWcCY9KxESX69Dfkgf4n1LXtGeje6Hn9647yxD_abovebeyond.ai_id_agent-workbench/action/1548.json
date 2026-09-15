@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "76ccd258003e9a1d0b99f223d3910acb5c8ce789",
+            "branch": "workbench/een-percentage-is-een-getal",
+            "files_sha256": "a4564f9be15f0f296ee48f08b96389e503d5fe4a4956269397395e4541198c21",
+            "message": "Een percentage is een getal"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260915045206-d2b7a8"
+}

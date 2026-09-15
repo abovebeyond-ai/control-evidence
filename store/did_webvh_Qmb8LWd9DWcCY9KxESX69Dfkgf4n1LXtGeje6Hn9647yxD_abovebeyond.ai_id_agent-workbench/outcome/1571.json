@@ -1,0 +1,15 @@
+{
+    "action": "b020dc1726ee356beda62b902bc562f3",
+    "effect": {
+        "detail": {
+            "base": "fce46549f119a5bba79de12faac40935ecbb9eaa",
+            "branch": "workbench/de-pagina-verifieert-zichzelf",
+            "commit": "af5fe0a64fed9898e419069229d58868f7bf1f0c",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1569,
+    "verdict": "ALLOW"
+}

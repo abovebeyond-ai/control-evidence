@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f64ae541da07f31187c3623e2cde02f2e7529dd1",
+            "branch": "workbench/what-a-page-loads",
+            "files_sha256": "19b330bec9ecb1490b370285829638d31906cf0a4525b5a3a047939389b7715e",
+            "message": "Wat een pagina laadt, en waarvandaan\n\nAcht sites dragen een csp-taak, en die taak is voor een mens een blanco\nblad: een content security policy zegt welke scripts mogen draaien, en dat\nweet niemand van buitenaf. Wat wel te meten is, is wat de pagina vandaag\nlaadt, en deze meting zag het al terwijl ze de pagina las. Ze gooide het\nweg en hield er een telling van over.\n\nNu publiceert ze de bronnen zoals een policy geschreven wordt: per host de\nsoorten (script, style, image, frame), gesorteerd, de eigen host eruit\nomdat 'self' die dekt, en een host die alleen in scriptcode staat eruit\nomdat niemand van buitenaf ziet of hij ooit opgehaald wordt. Plus wat geen\nhostlijst kan dekken: hoeveel script en style in de pagina zelf staan, want\neen policy zonder 'unsafe-inline' breekt precies die.\n\nGeen hand en geen oordeel: dit is het bewijs waarmee een mens er een\nschrijft. Een hand kan pas volgen als deze lijst zich op een paar sites\nbewezen heeft."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914103056-39824e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "562676f6054da8d3421224daa5b863580ae19e85",
+            "branch": "workbench/a-chip-does-not-promise-a-hand",
+            "files_sha256": "d4e551fb608c068c939aedfc6fba877bf2d5769decce334b1c8f0cf6e6a4ed73",
+            "message": "Een chip belooft geen hand\n\nseo-agent, link-herstel en triage via MCP stonden op de trede\n\"voorstellen\" en bestaan nergens: geen verzoektype, geen capability, geen\nrunner. Dat waren veertien van de vierenvijftig taken van de vloot, en op\ndie trede leest een chip als \"druk en het gebeurt\".\n\nEen belofte die niets kan waarmaken is hetzelfde defect als een bestand\ndat beweert een kopregel te zetten en het niet doet; alleen de lezer\nverschilt. Ze zeggen nu wat het werk is, op de trede die waar is, tot er\neen hand bestaat. Een test loopt de taken af en vraagt van elke trede\nboven handmatig of dat playbook gevraagd k\u00e1n worden."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914102649-4f469f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The review gate judges the sources a piece **cites**. It says nothing about the\nsentences. Until now a body written by the assistant went model \u2192 editor \u2192\nclient without one deterministic check, while `suggest.mjs` next door had been\nwriting insights in ProveML against the fact store for a week. The body was the\nlast place in the chain where a claim reached a client unopposed, and the worst\nplace for it, because the body is the part the client actually reads.\n\n`packages/pipeline/article-writer.mjs`:\n\n- `writerStoreFor(article)` \u2014 the facts of the sources this piece cites, under\n  the key shape the bridge already uses.\n- `writerInstructionsFor(article)` \u2014 generated with `promptFor`, never a\n  hand-written field list.\n- `gateBody(text, article)` \u2014 verify, strip, and one verdict.\n- `draftWithProof(...)` \u2014 write, gate, one retry with the verifier's errors as\n  the feedback, kept only if it verifies at least as well as the first.\n\nWired into `/articles/assist/draft` (mode `draft` only: a rewrite keeps the\nmeaning of a passage the editor already has, and angles are headlines) and\n`/articles/:id/draft-full`. The verdict travels with the draft; the Studio shows\nit (Trendwolves/gentells-studio).\n\n**The one judgement worth arguing with: not strict.** Strict makes every figure\noutside a claim an error, which is right for four short insight fields where\nnearly every number is a claim about the store, and wrong for a 600-word body\nfull of ordinary editorial numbers. Failing those would send the retry out to\nrewrite sound prose and hand the editor a verdict that reads as failure on a\npiece with nothing wrong in it. So the two questions are asked separately:\nclaims the store contradicts gate the retry, figures no claim covers are counted\nand shown. Nothing is hidden either way, which is what strict was protecting.\n\nThe verdict is never written to the piece. It describes the text the model just\nreturned and the editor is expected to rewrite it; what survives an edit is the\ncitation review, keyed to the evidence itself.\n\nSeven new tests on the part no model is in: which facts a writer may reach for\n(a stronger uncited pattern in the same table stays out of the store), a wrong\nnumber failing with the field named, no markup counting as a refusal and not a\npass, a figure outside every claim counted and not gated. The model call is not\ntested: a test that fakes a writer copies the writer and proves nothing.\n\nFull suite: 694 of 694.\n",
+            "branch": "workbench/proof-in-the-writing",
+            "title": "Proof in the writing, not only in the apparatus"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260915044712-ef3e4b"
+}

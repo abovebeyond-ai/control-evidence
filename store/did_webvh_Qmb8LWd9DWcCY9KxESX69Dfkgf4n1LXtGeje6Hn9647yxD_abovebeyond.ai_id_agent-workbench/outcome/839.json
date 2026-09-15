@@ -1,0 +1,15 @@
+{
+    "action": "4a5ec22fbd7039a26eb54847fca00c47",
+    "effect": {
+        "detail": {
+            "base": "1c99aa9b4ef3db38c215ef06173116167ae3bfd8",
+            "branch": "workbench/ui/mileage-thousands",
+            "commit": "09ed9a8f94c3268067202a1f3cb1d3e257faa6da",
+            "files": 16
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 837,
+    "verdict": "ALLOW"
+}

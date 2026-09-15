@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane asked how I arrived at the six fields in the previous change. I picked them out of my head, which is the same failing that change was written to fix. So they are measured now.\n\n**From the desk's own record:** the 148 papers that the six hand-written academic queries actually returned, looked up in OpenAlex by field.\n\n| field | papers |\n| --- | --- |\n| Social Sciences | 80 |\n| Business, Management and Accounting | 21 |\n| Psychology | 16 |\n| Computer Science | 8 |\n| Decision Sciences | 6 |\n| Arts and Humanities | 5 |\n| Health Professions, Medicine | 4 each |\n\nThat corrected three things. Economics was mine and appears nowhere, so it is gone. Decision Sciences is real and I had missed it. Arts and Humanities is 3%, far less than I assumed when I put it second.\n\n**And it changed a rule.** Medicine holds youth mental health and also cosmetic surgery, which is exactly where \"aesthetic identity curation\" lands. So medicine and health now count only alongside another human field, as business already did. The same field can be right or wrong depending on the question, and no count settles that; requiring company is the honest compromise.\n\n**The limit is stated in the code.** These are papers our queries COLLECTED, not papers an editor used. Checking further: not one OpenAlex paper has ever been cited by a published reading. There is no gold set to calibrate against, so this is the best available evidence rather than a settled answer.\n\nThat last number deserves its own look, separately from this change: the academic layer has produced 328 papers and none of them have reached a published trend.\n\nSuite 682 green.\n",
+            "branch": "workbench/fields-are-measured",
+            "title": "The fields are measured, not chosen"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260914132432-568b79"
+}

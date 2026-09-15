@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De derde regel van de poort zegt: elk getal in de zin staat tussen de feiten die ze zelf\naandroeg. De regex die de getallen las, sloot een cijfer met een procentteken erachter uit.\nDus \"80 pages\" werd geweigerd en \"risk down 80%\" liep door, en dat gat zat precies waar een\nstem het liefst overdrijft: in het percentage.\n\n## Wat er verandert\n\nE\u00e9n teken uit de lookahead: `(?![\\w%]|\\.\\d)` wordt `(?!\\w|\\.\\d)`. Een percentage is een getal\nen moet zijn feit aandragen.\n\n## Wie er last van heeft\n\nNiemand die nu al eerlijk schrijft. De vaste stem (`Voice`) schrijft nergens een\nprocentteken, de premissencertificaten evenmin, en de dekkingsregel in het voorstel van de\nmajor-hand (#213) rendert haar datum en houdt dus stand. De enige die dit kan raken is de\nAI-stem, en die krijgt de weigering als feedback voor haar herkansing en valt anders terug op\nde kale zinnen. Een percentage dat nergens gemeten is hoort niet in een rapport, dus dat is\ngeen verlies.\n\nDit stond als \"wat nog niet dichtstaat\" in #213; het bleek geen ronde langs de woordenschat\nmaar \u00e9\u00e9n teken, omdat geen enkele vaste zin een percentage schreef.\n\n## Bewijs\n\n- `php artisan test`: 678 geslaagd (1 nieuw: \"Coverage sits at 80%\" met coverage 71 geweigerd, met 71 aanvaard)\n- `vendor/bin/phpstan analyse`: 0 fouten\n- `vendor/bin/pint`: schoon\n",
+            "branch": "workbench/een-percentage-is-een-getal",
+            "title": "Een percentage is een getal"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260915045206-d2b7a8"
+}

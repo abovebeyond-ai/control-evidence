@@ -1,0 +1,15 @@
+{
+    "action": "5b9d6c867cc894e10bae6d9220eaff41",
+    "effect": {
+        "detail": {
+            "base": "c59bb7f047a6e480717ab700c0d28dd6bd0cc59b",
+            "branch": "workbench/fix/sold-notifies-once",
+            "commit": "01cce0b23c5ee11c0f83fce95b23f3790c7bdbb2",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1194,
+    "verdict": "ALLOW"
+}

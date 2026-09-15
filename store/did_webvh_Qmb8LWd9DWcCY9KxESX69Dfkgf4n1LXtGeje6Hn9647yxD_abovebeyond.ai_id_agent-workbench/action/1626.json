@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5fae47c0d8c44637c6e36e4ece91824dd7d17b8a",
+            "branch": "workbench/test/every-page-opens",
+            "files_sha256": "4a8974e9d461e1eb1f863764551f92e1ef1be43a7b0f1a48d9e60a644f4d2a72",
+            "message": "Open every page and keep opening them"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915050917-5b19ad"
+}

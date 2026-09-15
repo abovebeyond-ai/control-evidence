@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vera's front page was an application with a sign on it. It is a landing page now, on her own ground, and it leads with what she takes off your desk rather than with how she works.\n\n**Her ground.** The site declares a hue for her (`.night-page[data-hue='vera']`, the plum with its three washes) and the app never used it. The page now stands on it, and the working pages stay on paper, because the house's rule is that night is a declared exception and a page you read for an hour is not a poster. The washes had to be lifted too: they are a `background-image`, not a custom property, so the generator now takes the whole rule rather than only its variables.\n\n**Problem first.** A wrong number in a report is not a typo; it is the sentence someone quotes back to you in a meeting. Then what it takes off your desk (the checking you keep postponing, what a model wrote and nobody verified, the question that comes months later), then what you get instead (a page you can go through in twenty minutes, the short list of what could not be backed, receipts you never open unless someone asks), and only then the mechanism.\n\n**A way in.** The one thing a visitor may do is ask. `POST /invitation` records the address in `storage/app/private/invitations.jsonl` before it mails anyone, because an ask lost to a mailer that is down is an ask nobody knows was made, and a hidden field catches what fills forms nobody guards. It promises nothing: the answer is a person's.\n\n**Fewer lines.** The sign-in page had three hairlines in one glance on four sentences of text, which the guide rules out. Every page now carries the mast's line and the footer's; the landing adds one above the ask, and the record page's grant form uses space instead.\n\n**The second way in is text that behaves**, mono and quiet, rather than a blue underlined link standing next to a filled button pretending to be the same kind of thing.\n\nSuite 52/52. Rendered and looked at in both states before proposing: signed out, signed in, and a working page to check the paper and night split.\n",
+            "branch": "workbench/her-own-hue",
+            "title": "Vera's landingspagina, op haar eigen grond"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914164054-904930"
+}

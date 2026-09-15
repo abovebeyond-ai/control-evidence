@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c59bb7f047a6e480717ab700c0d28dd6bd0cc59b",
+            "branch": "workbench/fix/sold-notifies-once",
+            "files_sha256": "50cf6321f7234a19938f40767b005e9fc8a925ce3d5e129eb159ba2fa72e75e9",
+            "message": "Tell the partners once that a vehicle is sold"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914161536-cbf017"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Elixir section on the homepage stood in white text on a cream ground: unreadable, and live.\n\nTwo different things were called `.instrument`. The homepage has called its Elixir section that for as long as it has existed, where it means \"this section is an instrument panel\" and sets a layout and nothing else; the ground comes from `.night-page`, once, as the comment beside it says. The app layer added on 10 September calls a surface in a dashboard the same thing, and gives it `color: var(--ink); background: var(--sky)`. It sits later in the file, so it won, and it painted the night section with paper. `.night { color: var(--sky) }` then did its job faithfully: white on cream.\n\nThe whole layer now lives under `.instrumentlaag`. Scoping it rather than renaming the homepage's class is the fix that lasts, because the collision was not bad luck: the app layer claims ordinary words, and `.label` (eleven uses in the site) and `.veld` (five) were waiting to go the same way.\n\n- Every rule between the markers is prefixed, inside media queries too. The `:root` tokens stay free: a value collides with nobody, and the pages that read them keep working.\n- Nothing consumes the layer yet, so nothing breaks: Portal copies the values into its own stylesheet and the review page does not use these names. Whoever uses it puts `.instrumentlaag` on the shell, which the comment in the block now says.\n- Built and looked at: the section is on the night ground again, with its panel and its own light.\n\nThe lesson is in the block's comment, because the next layer will want the obvious word too.\n",
+            "branch": "workbench/one-name-one-thing",
+            "title": "E\u00e9n naam, \u00e9\u00e9n ding: de app-laag onder .instrumentlaag"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260914161452-9f321a"
+}

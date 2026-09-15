@@ -1,0 +1,15 @@
+{
+    "action": "941fa2c23a67f4ecbb3e8f1a6ac0e4d0",
+    "effect": {
+        "detail": {
+            "base": "f102188639a554c63588e7c3e1709cbe8e774511",
+            "branch": "workbench/test/form-to-partner",
+            "commit": "2b0c9f414160aad4514fbe5b2f2d0d42c9b96c86",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1461,
+    "verdict": "ALLOW"
+}

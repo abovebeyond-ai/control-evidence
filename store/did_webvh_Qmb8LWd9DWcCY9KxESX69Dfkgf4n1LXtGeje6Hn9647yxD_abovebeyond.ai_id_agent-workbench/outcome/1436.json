@@ -1,0 +1,15 @@
+{
+    "action": "2459d549f67df1e1da36ae90a067e2d9",
+    "effect": {
+        "detail": {
+            "base": "08a3ff66f8e28803c4627897f9ac67bf628895ab",
+            "branch": "workbench/test/outgoing-request-shape-2",
+            "commit": "607ab82c013f5ad499582f68000adbaf548a77b9",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1434,
+    "verdict": "ALLOW"
+}

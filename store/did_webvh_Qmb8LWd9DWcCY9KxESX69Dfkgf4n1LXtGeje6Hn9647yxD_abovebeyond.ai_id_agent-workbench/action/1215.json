@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Four changes, all four from applying PAC to a real fleet for a day.\n\n**Observed, decided, follows.** Six axes on one list lets a reader set autonomy directly and believe they profiled. They are grouped now: what you observe (reliability, blast radius, business value, infrastructure, verifiability), what you decide (governance thresholds), and what follows from those (autonomy). The grouping lives in `pac.json`, so the spec and the page cannot drift apart.\n\n**Blast radius asked two questions and said one.** The profiler already weighs \"reversible (money, contracts, safety)\"; the framework text only said \"what happens when it is wrong\". A wrong header is public and undoable; a sent mail is invisible and permanent. The definition now carries both, and the level meanings say which is which.\n\n**Verifiability was missing, and it is the axis that decided every real case.** Whether something other than the agent can tell it was wrong, soon enough to matter, is what makes a narrow action safe on its first run with no track record at all, and what no track record replaces when it is absent. `K1 Unchecked` to `K5 Refutable`, marked **candidate**: in the framework, not yet in the profiler, and the page says so rather than implying the tool asks it.\n\n**The scales had names but no meanings**, so nobody could apply the framework without our tool, which works against adoption being the whole point. Every level now says what it means, in both languages. The spec stays English because that is what an adopter reads; the site translates.\n\nAlso: three pillars, **19** questions. `pac.json` has had nineteen since 6 September; the homepage, the framework page and both descriptions said eighteen.\n\nSpec version bumped to 2026-09-14. Built and read in both languages; the new blocks follow the brand guide (mono eyebrow with a rule above, no em dashes, no third line).\n\n**Not in this PR, deliberately:** the profiler tool still asks six axes and lives in another repo, and `abovebeyond.ai/pac-framework` still says \"autonomy is not a setting, it is a track record\". That sentence is the one I would change next: your own body text says the bar depends on blast radius and infrastructure, not history. Something like \"autonomy is earned with evidence, not set in a config\" keeps the stance without implying a counter.\n",
+            "branch": "workbench/inputs-outputs-and-what-was-missing",
+            "title": "Vastgesteld, beslist, volgt; en de as die ontbrak"
+        },
+        "resource": "abovebeyond-ai/trustedagentic.ai"
+    },
+    "run": "workbench-20260914171154-68aecb"
+}

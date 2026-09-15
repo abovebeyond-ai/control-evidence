@@ -1,0 +1,15 @@
+{
+    "action": "d489fa670a805e3073f2db8ac6d96d16",
+    "effect": {
+        "detail": {
+            "base": "f04221e8c70d9d04e41f42321d9aa86c3a70cab6",
+            "branch": "workbench/fix/unblur-keeps-the-photo",
+            "commit": "c09a5917933d82f8eaa4a36714d4ca358c9ccf99",
+            "files": 15
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1602,
+    "verdict": "ALLOW"
+}

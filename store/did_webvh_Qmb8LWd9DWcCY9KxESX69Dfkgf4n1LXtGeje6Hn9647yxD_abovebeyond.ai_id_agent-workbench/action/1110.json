@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The same question, a second wrong answer, and this time the gate passed it.\n\nAsked again which sources only the machine judged, the agent said all 77 were, and that none had been checked by a person. The record says 70 only the machine, 7 both, 37 only people. Every figure in that sentence came from a tool, so the check on its numbers was satisfied.\n\nThe fault was in the tool I added an hour ago. The grouping was computed over the rows the filter had already chosen, and the agent had filtered on `by: machine`. \"No source was judged by people\" was true of a set with no people in it, and false of the review. The agent reported it faithfully.\n\nTwo things follow, and the second is the one to remember.\n\n- `whoJudged()` is computed over every judgement, never over the filter, and the answer now comes in two named halves: `ofTheWholeReview` and `ofWhatYouAskedFor`. A grouping that quietly means \"of what you asked for\" is worse than no grouping at all. The agent is told which half answers a question about the review.\n- **Grounding checks where a figure came from, not whether it means anything.** The gate did its job and the answer was still wrong. A tool that reports a true statement about the wrong set defeats every check downstream of it, which is an argument for keeping tools narrow and their names honest, not for adding another check.\n\nTests: the grouping is of the whole review whatever was asked for, the filtered version is shown to say the opposite, every source lands in exactly one of the three, and an empty review counts to zero.\n\nSkill tests 5/5 on the two modules. The app is untouched.\n",
+            "branch": "workbench/a-grouping-is-of-the-whole",
+            "title": "Een groepering gaat over de hele review"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914133331-173044"
+}

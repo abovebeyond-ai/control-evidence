@@ -1,0 +1,15 @@
+{
+    "action": "0a240411fa926465bf970a3e89c21525",
+    "effect": {
+        "detail": {
+            "base": "8ac954ee370e5d17a190b7939417538243fba449",
+            "branch": "workbench/ui/photo-tab-toolbar",
+            "commit": "8abdec136e9056e94393f2685148cf2094857faa",
+            "files": 14
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1881,
+    "verdict": "ALLOW"
+}

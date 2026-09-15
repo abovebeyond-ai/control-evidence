@@ -1,0 +1,14 @@
+{
+    "action": "f3f13b1341acf6b38811b305b0312786",
+    "effect": {
+        "detail": {
+            "key": "vuln:runtime",
+            "project": "naviskore-webapp",
+            "state": "parked"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1413,
+    "verdict": "ALLOW"
+}

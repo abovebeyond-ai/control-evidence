@@ -1,0 +1,15 @@
+{
+    "action": "91982dd6033caf9baae2373a19e4f575",
+    "effect": {
+        "detail": {
+            "base": "b5e319d072e6f255c9b200a9c5a2e0b38199d8fa",
+            "branch": "workbench/fold-the-twins",
+            "commit": "c6adcf6d6510ef181d119e3bdfa0f2d5d60990bd",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 978,
+    "verdict": "ALLOW"
+}

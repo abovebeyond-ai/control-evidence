@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "13ff538264233faceb4a1e57c3e2b155159dd8fe",
+            "branch": "workbench/the-brief-carries-the-profile",
+            "files_sha256": "35666d81f4d5b104135a091cb37c823647905a1884c20bed7bf3a5cde28af1d3",
+            "message": "De brief draagt de reden, niet alleen de trede (versie 5)\n\nHet profiel was er wel en kwam nergens aan: FleetBrief exporteerde `rung`\nen liet `pac` vallen, dus las een agent \"propose\" zonder te weten waarom,\nen vraagt die morgen weer om iets wat vandaag geweigerd is. Ik bouwde de\nreden en verstopte ze.\n\n`autonomy` reist nu mee per taak: het niveau in de woorden van PAC (A1 tot\nA5), hoe ver de ingreep reikt en of ze terug te draaien is, welke meting\nhaar claims beslecht, wat het bewijs over de guardrails zegt, de\nbetrouwbaarheid met haar marge, en de lat die de blast radius vraagt.\n`rung` houdt zijn drie woorden, zodat de deur niet verandert."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914190447-14d46a"
+}

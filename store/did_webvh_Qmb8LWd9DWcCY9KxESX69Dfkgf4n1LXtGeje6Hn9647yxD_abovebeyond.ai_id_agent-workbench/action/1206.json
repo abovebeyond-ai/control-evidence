@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea522d463d4f891aa4ca1da9e2dd7ce5a083ab48",
+            "branch": "workbench/refactor/one-place-marks-sold",
+            "files_sha256": "ec1d3f4d5b2ef09ac92e087ba5fd885a3115f48d973e8f29501114e21ee456da",
+            "message": "One place knows what selling a vehicle means"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914164904-8a0470"
+}

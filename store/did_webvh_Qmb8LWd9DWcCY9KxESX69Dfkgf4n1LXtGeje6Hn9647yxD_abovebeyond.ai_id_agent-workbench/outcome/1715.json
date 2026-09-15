@@ -1,0 +1,15 @@
+{
+    "action": "14329756d1b7fb2d9d9c8cb6eb43e3a8",
+    "effect": {
+        "detail": {
+            "base": "291ae5f44d1006585893de55efdc8b3cd615c66a",
+            "branch": "workbench/fix/rating-screen",
+            "commit": "62c0472035a299996a55ca1cf8f62a2937af55fa",
+            "files": 17
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1713,
+    "verdict": "ALLOW"
+}

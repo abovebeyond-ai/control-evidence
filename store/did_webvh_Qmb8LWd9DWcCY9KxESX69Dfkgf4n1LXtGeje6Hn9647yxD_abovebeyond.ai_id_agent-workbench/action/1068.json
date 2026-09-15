@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c99cb5b30143e41acc6444709f5a206e85be3715",
+            "branch": "workbench/the-record-on-the-card",
+            "files_sha256": "1d8b2f3cd2e5d9fbe515d57ff1619005fbbaf95d8c16456ced5e84569344b090",
+            "message": "Het werk staat op de kaart, niet in een rapport\n\nZes taken zeggen \"set DNS records\" en acht \"write a content security\npolicy\". Elixir leidt de eerste regel inmiddels af (elixir#210, #211) en\nmeet wat een policy zou moeten toelaten (elixir#209), en dat stond allemaal\nin een JSON-rapport dat niemand opent.\n\nDe mailkaart draagt nu de regel om te plakken, met de twijfel eronder waar\ndie er is: waar de post aankomt, dat we die naam niet als afzender kennen,\nen wat te doen als hij toch verstuurt. De blootstellingskaart draagt, zolang\nde policy ontbreekt, wat de pagina vandaag laadt: per host de soorten, plus\nhoeveel script en style in de pagina zelf staan, want een policy zonder\n'unsafe-inline' breekt precies die.\n\nGeen van die regels draagt ernst: een voorstel is geen oordeel, en wie het\npubliceert beslist zelf."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914132316-465142"
+}

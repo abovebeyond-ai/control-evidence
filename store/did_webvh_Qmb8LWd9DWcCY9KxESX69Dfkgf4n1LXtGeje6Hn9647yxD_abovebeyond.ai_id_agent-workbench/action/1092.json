@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c99cb5b30143e41acc6444709f5a206e85be3715",
+            "branch": "workbench/the-record-on-the-card",
+            "files_sha256": "b4e3ecfd735505f57c6c6ad43d219b99a749e8ed4dcc8955a8736ac70f669e45",
+            "message": "De knop krijgt namen, geen halve meting\n\nPHPStan van Portal viel op de helper die ik uit de CI-kaart trok: hij nam\nde rijen van de meting aan, en die rijen hebben per project een andere\nvorm. Namen zijn wat de knop nodig heeft.\n\nZelf gemist omdat ik hier Pint en de tests draaide en de statische analyse\nniet; de CI van het project ving het, en dat is precies waarvoor die poort\ner staat."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914133241-02f639"
+}

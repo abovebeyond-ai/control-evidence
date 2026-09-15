@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "69517c896165ce42f4a2101d9bfcd749195ff4ae",
+            "branch": "workbench/fix/platform-copy-count-2",
+            "files_sha256": "fdbf39052bb59b8f67d2792ef4dbb151542ac08b49b91361ce1afd2ad3761e24",
+            "message": "A copied vehicle knows its own platform photos"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915060917-70e9ea"
+}

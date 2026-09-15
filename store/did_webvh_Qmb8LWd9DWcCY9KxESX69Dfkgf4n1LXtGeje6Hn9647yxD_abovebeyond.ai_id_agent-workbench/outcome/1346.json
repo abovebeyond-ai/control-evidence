@@ -1,0 +1,15 @@
+{
+    "action": "a3444fdb12e3e22882f72a5484ba1f6e",
+    "effect": {
+        "detail": {
+            "base": "64e62f7e6afd7d078fc3337cbc0e7344eb4df86b",
+            "branch": "workbench/feat/platform-photos-on-share",
+            "commit": "1d1d275a51c0b9bd690d74c96a563cbbc818b735",
+            "files": 13
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1344,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Restack of #358 (`workbench/ui/relation-picker-3`) on the one-file-per-finding layout. **Merge order: #368, #369, #370 (the layout), then #374 (average price), then this one.** The gateway pushes each PR as a snapshot of its own files on top of main, so this diff shows only this PR's files; there is no overlap with #374.\n\nSame change as #358, with these differences:\n\n- The two findings it added as X-128 and X-129 are files in `docs/bedrijfsregels/bevindingen/` (no number, named by slug): `2026-09-14-relatiekiezer-begint-schoon.md` and `2026-09-14-relatiekiezer-op-een-telefoon.md`, both opgelost. `RelationPickerTest` refers to them by slug.\n- Its copy of X-127 and of R P1-1.15 / R S5-3.11 (the phone rules) is dropped: they landed on main with the mobile PR and are identical. R P2-5.9 and R P2-5.10 are new and free on main (P2-5 ends at .8 there).\n\nNo rule renumbered. Checked locally on top of #370 and #374: `RulesIdentityTest`, `RulesDocsBuildTest`, `RulesCoverageTest`, `RelationPickerTest`, `StylesheetSyntaxTest` (19 tests, 681 assertions, OK). Shane closes the original.\n",
+            "branch": "workbench/ui/relation-picker-4",
+            "title": "The relation picker opens clean and fits a phone (restacked)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915055119-319b49"
+}

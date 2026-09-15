@@ -1,0 +1,15 @@
+{
+    "action": "9274cd704c17227ae011fe4f971e9b3a",
+    "effect": {
+        "detail": {
+            "base": "291ae5f44d1006585893de55efdc8b3cd615c66a",
+            "branch": "workbench/ui/list-headers-phone-2",
+            "commit": "88590cf86dfe94f1dd434b3276ea169ecf17f46c",
+            "files": 29
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1707,
+    "verdict": "ALLOW"
+}

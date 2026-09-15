@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Rewords the 503 maintenance page so it reads as ordinary maintenance instead of a server move that reassures visitors about their data: the heading becomes \"Stocklist Dealer is even in onderhoud\", the body drops the \"Je gegevens zijn veilig; je hoeft niets te doen\" line entirely and states only \"Zodra het onderhoud klaar is, verschijnt Stocklist Dealer hier weer vanzelf\", the page title and footer label switch from \"verhuis\"/\"server\" to \"onderhoud\", `MaintenanceModeTest` asserts on the new copy and that the page never contains \"veilig\", \"verhuist\", \"server\" or \"hoeft niets\", and rule R P3-12.1 in the business-rules doc is updated to match.\n",
+            "branch": "workbench/ui/maintenance-copy",
+            "title": "The maintenance page stops saying the data is safe"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915061305-1d8db4"
+}

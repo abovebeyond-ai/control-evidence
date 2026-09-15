@@ -1,0 +1,15 @@
+{
+    "action": "da12b7971060e4671bb37fff6d9369d5",
+    "effect": {
+        "detail": {
+            "base": "32e2f234cd2465459a5a86f30104e40fc3fc932a",
+            "branch": "workbench/fix/buy-over-outcome-2",
+            "commit": "ba01b4a703b814454472c9349d326922ceae7725",
+            "files": 10
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1536,
+    "verdict": "ALLOW"
+}

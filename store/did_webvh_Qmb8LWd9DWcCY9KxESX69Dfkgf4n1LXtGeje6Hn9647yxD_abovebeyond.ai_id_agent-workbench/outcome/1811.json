@@ -1,0 +1,15 @@
+{
+    "action": "aceb04bda2e1116e7c0204fe06ee7306",
+    "effect": {
+        "detail": {
+            "base": "69517c896165ce42f4a2101d9bfcd749195ff4ae",
+            "branch": "workbench/ui/portals-panel-honest-2",
+            "commit": "2d016c81ba7176b3324ba35f14411aadde640684",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1809,
+    "verdict": "ALLOW"
+}

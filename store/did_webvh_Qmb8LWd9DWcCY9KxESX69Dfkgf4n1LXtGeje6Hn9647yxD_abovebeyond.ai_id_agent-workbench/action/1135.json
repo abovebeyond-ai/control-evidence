@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "505dbd462eec441af014d9a680b449dc2bcccccc",
+            "branch": "workbench/docs/carpass-questions",
+            "files_sha256": "38aeff931af0068c329ca480ff4a9f4991d6d617bf955a0f50e3a900417fda07",
+            "message": "Only ask what the code cannot answer"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914142922-a4de9a"
+}

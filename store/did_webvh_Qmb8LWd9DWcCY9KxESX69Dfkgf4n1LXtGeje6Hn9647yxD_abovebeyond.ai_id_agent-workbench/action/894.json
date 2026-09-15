@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ec16cf5b2b4085f633cac565ce745c774ee14df9",
+            "branch": "workbench/ui/segmented-corners-2",
+            "files_sha256": "d6b5b26c0b7a85ab819175c7dcbc46175bd2e8c297fbcee2460707b294ba2c3b",
+            "message": "The segmented control keeps its shape whichever segment is active"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914083347-6dfb68"
+}

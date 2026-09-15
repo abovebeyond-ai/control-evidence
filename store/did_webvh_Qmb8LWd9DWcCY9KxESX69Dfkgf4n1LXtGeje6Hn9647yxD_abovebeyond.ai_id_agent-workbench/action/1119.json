@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2915c86b8ab21fa557680ce5df143ac23a770917",
+            "branch": "workbench/the-door-asks-who-you-are",
+            "files_sha256": "bb193f9a8792bad2944f0a8ceaf0637dd2c5d39a0bb16271f87c5b3cba3efe54",
+            "message": "De deur vraagt wie je bent: geen drafts van vreemden"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914140615-7a03ba"
+}

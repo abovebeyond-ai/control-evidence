@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Restack of #360 (`workbench/fix/mail-logo-and-address-3`; replaces #382, #385 and #393) on the one-file-per-finding layout. **Stands alone on current main (#394 and #374 are merged); merged by hand with #387, which rewrote R S4-8.12 in 14-s4: main's text kept, R S4-8.13 (still free) added after it.** #385 carried the picker's edit of R S4-4.14 (which names R P2-5.9 and R P2-5.10, rules that live in #391) in its snapshot of 14-s4 and so failed `RulesIdentityTest` on its own; this branch is rebased past the picker, so 14-s4 here holds only main's text plus R S4-8.13. Merged by hand with #378: the mail templates keep main's `filled(optional($dealer)->image)` guard and take this PR's `width`/`style` on the logo. #360 carried the relation picker (#358) along; here that part lives in #391, and this PR holds only the mail and address change. The gateway pushes each PR as a snapshot of its own files on top of main, so this diff shows only this PR's files.\n\nSame change as #360, with one difference: the finding it added as X-130 is a file in `docs/bedrijfsregels/bevindingen/`: `2026-09-15-mail-logo-zonder-maat-en-geplakt-adres.md` (opgelost). `CustomAddressTest`, `MailDealerBlockTest` and `MailPreview` refer to it by slug. **Rules renumbered: R P1-2.17 (address composed) becomes R P1-2.18 and R P1-2.18 (image size in mail) becomes R P1-2.19**, because main took P1-2.17 for the worklists on a phone (#371) after #360 was written; the `@rule` tags in `CustomAddressTest` and `MailDealerBlockTest` and the reference in R S4-8.13 follow. R S4-8.13 is new and free on main.\n\nChecked locally on top of the stack: `RulesIdentityTest`, `RulesDocsBuildTest`, `RulesCoverageTest`, `MailDealerBlockTest`, `CustomAddressTest`, `RelationPickerTest` plus `WorklistPageTest` (33 tests, 139 assertions, OK). Shane closes the original.\n",
+            "branch": "workbench/fix/mail-logo-and-address-7",
+            "title": "Mail: the dealer logo has a size and the address is composed (restacked)"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915063358-e34437"
+}

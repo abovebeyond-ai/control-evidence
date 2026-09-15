@@ -1,0 +1,16 @@
+{
+    "action": "e6df36725d4f7f764414d64ce442bb1e",
+    "effect": {
+        "detail": {
+            "fields": [
+                "links",
+                "replaceLinks"
+            ],
+            "project": "signal-observatory-gentells"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1557,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n- The maintenance page's \"Vragen? Neem contact op.\" linked to `https://stocklistdealer.eu/#contact`. Replaced it with a direct `mailto:contact@stocklistdealer.eu` link, with the address itself as the visible text (\"Vragen? Mail naar contact@stocklistdealer.eu.\") so it still works when read on paper or from a screenshot.\n- Updated `MaintenanceModeTest`'s content assertions to check for the new mailto link and address.\n- Updated the R P3-12.1 rule text in `docs/bedrijfsregels/33-p3-integraties.md` to describe the mailto link instead of the old contact link.\n\n## Test plan\n- [x] `vendor/bin/phpunit --filter='Maintenance|RulesCoverage|RulesIdentity'` \u2014 16 tests, 49 assertions, OK\n- [x] Screenshot of the maintenance page at 390px confirms the mailto link renders as expected\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/ui/maintenance-contact-mail",
+            "title": "The maintenance page links to the contact address"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915071650-c65ba3"
+}

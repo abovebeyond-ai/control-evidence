@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De laatste hand die zijn eigen tekst schreef. `MajorUpgrade` bouwde `draftBody` en\n`majorBody` als string en ging daarmee niet door de poort van #212, en dat is precies de\nverkeerde hand om over te slaan: hier heeft een model de code aangeraakt, dus is de kans het\ngrootst dat de tekst en de run uit elkaar lopen.\n\n## Wat er verandert\n\nBeide teksten zijn nu een `Proposal`, en het verschil tussen de twee zegt wat de laag doet.\n\n**Het concept claimt niets.** Dat is de eerlijke vorm voor een draft: er is nog geen drempel\ngehaald. Wat de controle er wel oplevert, is dat de versie, de poging en de bestandenlijst uit\nde run komen en niet uit het sjabloon.\n\n**Het voorstel claimt \u00e9\u00e9n zin**, en dat is de enige die iets over de wereld beweert:\n\n> **Judged by your own CI.** Run 34893231108 on this branch ended green. Main was green before the change.\n\nDie zin draagt nu `MAJOR_UNDER_TESTS`, dezelfde drempel die het premissencertificaat van deze\nhand al aanvoert, plus het runnummer als feit, zodat de tekst geen run kan noemen die deze\nhand nooit zag. Kwam de CI niet groen terug, dan zegt het voorstel dat er niets geoordeeld\nheeft in plaats van over de tests te zwijgen. Die tak is vandaag onbereikbaar (de run keert\neerder om), en staat er omdat structureel onbereikbaar precies het soort garantie is dat deze\nhele laag niet vertrouwt.\n\nDe run-url staat op haar eigen regel in plaats van tussen haakjes in de claim: een url draagt\ngetallen, en die horen bij de datum waar ze uit komen, niet bij de bewering.\n\n## Wat nog niet dichtstaat\n\nDe poort haalt getallen met dezelfde regex als `Gate`, en die slaat een getal met een\nprocentteken erachter over. De dekkingsregel (\"Coverage on main: 71%\") wordt dus niet\nnageteld. Ze rendert wel haar datum, dus als de regex ooit strenger wordt houdt de regel nog\nstand. Strenger maken is een eigen wijziging: elke bestaande claim in de rapporten die een\npercentage noemt zou dan haar feit moeten aandragen, en dat is een ronde langs de hele\nwoordenschat, geen regel erbij.\n\n## Bewijs\n\n- `php artisan test`: 675 geslaagd (2 nieuw)\n- `vendor/bin/phpstan analyse`: 0 fouten\n- `vendor/bin/pint`: schoon\n",
+            "branch": "workbench/de-laatste-hand-door-dezelfde-poort",
+            "title": "De laatste hand door dezelfde poort"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260914204230-a1d11c"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Six tasks say \"set DNS records\" and eight say \"write a content security policy\". Elixir derives the first line now (elixir#210, #211) and measures what a policy would have to allow (elixir#209) \u2014 and all of it sat in a JSON report nobody opens.\n\n- **Mail authentication** carries the record to paste (`v=spf1 include:\u2026 ~all`, `v=DMARC1; p=none`) and, where there is one, the doubt underneath it: where the mail arrives, that we do not know that name as a sender, and what to do if it does send.\n- **Exposure**, while the policy is missing, carries what the page loads today: per third-party host the kinds it is referenced as, plus how much inline script and style the page carries, because a policy without `'unsafe-inline'` breaks exactly those. A site that already sends a policy gets none of this: there is nothing left to weigh.\n\nNone of these lines carries severity. A draft is not a verdict, and whoever publishes it decides.\n\nTests: the record and its doubt on the mail card, the sources and the inline count on the exposure card, and silence where a policy already exists. Suite green but `BuildStampTest` (worktree only).\n",
+            "branch": "workbench/the-record-on-the-card",
+            "title": "Het werk staat op de kaart, niet in een rapport"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914132316-465142"
+}

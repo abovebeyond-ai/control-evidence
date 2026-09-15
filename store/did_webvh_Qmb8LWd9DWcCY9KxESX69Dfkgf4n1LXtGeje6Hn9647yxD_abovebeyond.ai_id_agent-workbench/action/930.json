@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "47d9480141acc03e6b56e35e26580425ead34d54",
+            "branch": "workbench/refactor/one-customer-price",
+            "files_sha256": "7e6d6ecea21ead38951d77f46a0bada9f83e5dedc536b33c29d6a94031df9c22",
+            "message": "One formula computes the customer price, at the moment a screen shows it"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914094046-b49884"
+}

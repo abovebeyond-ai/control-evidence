@@ -1,0 +1,15 @@
+{
+    "action": "d868b159a91d33c78066cd74b29e2105",
+    "effect": {
+        "detail": {
+            "base": "5fae47c0d8c44637c6e36e4ece91824dd7d17b8a",
+            "branch": "workbench/ui/damage-step-phone",
+            "commit": "5d3546153362df87513a1841cca90de0d63eadf9",
+            "files": 7
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1632,
+    "verdict": "ALLOW"
+}

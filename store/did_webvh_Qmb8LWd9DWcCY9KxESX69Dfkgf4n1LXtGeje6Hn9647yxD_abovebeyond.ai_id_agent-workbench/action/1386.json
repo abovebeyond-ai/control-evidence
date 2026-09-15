@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "55c69299d4fc8b393d0a5c8ffdf9ebc4d5e3b4b2",
+            "branch": "workbench/de-rechter-in-de-uitslag-2",
+            "files_sha256": "8c5ae5e682a39ba08937d1308d3b4a911f684d2b1bbfdc9268bdfd2025c27357",
+            "message": "De rechter staat in de uitslag"
+        },
+        "resource": "abovebeyond-ai/elixir-fix"
+    },
+    "run": "workbench-20260914202845-25b3ff"
+}

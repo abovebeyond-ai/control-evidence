@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ec16cf5b2b4085f633cac565ce745c774ee14df9",
+            "branch": "workbench/fix/nox-from-lookup",
+            "files_sha256": "20ecc87d53788e060eb3a197a5e548548a87e8b54e34a1340d65e79ee4763b7d",
+            "message": "The fetched NOx value lands where the Energy Card reads it"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914083528-7f990a"
+}

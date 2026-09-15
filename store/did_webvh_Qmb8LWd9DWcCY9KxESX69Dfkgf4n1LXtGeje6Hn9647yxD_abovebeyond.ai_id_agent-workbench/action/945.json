@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "v0.23.0: `/v1/agents` names each grant by a digest (control#66), so Elixir's supervisor can see that the VM serves an older grant than the box writes and say so in its job note (elixir#208) instead of a hand finding out as \"resource not in grant\".\n\nGateway sha256 from the release's `SHA256SUMS`: `de79b9d087580e0fb2eba6aa2b6f076be37cf590df4be9e7826562cc3508eda2`.\n\nAfter merge: `rehearse.sh upgrade`, then `rehearse.sh config` with this box's current `config.json` (which also carries the vera grant the VM is still missing) and a restart.\n",
+            "branch": "workbench/pin-v0-23-0",
+            "title": "De VM op v0.23.0: een vergunning met een naam"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260914095603-da2303"
+}

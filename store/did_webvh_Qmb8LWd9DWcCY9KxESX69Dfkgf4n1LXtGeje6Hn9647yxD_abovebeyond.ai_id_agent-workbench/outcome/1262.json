@@ -1,0 +1,15 @@
+{
+    "action": "8f724030e243b15caad602f239c2b2ab",
+    "effect": {
+        "detail": {
+            "base": "5cab0ee684ed8ee20d3df99579bbb543b5fd5e31",
+            "branch": "workbench/ui/price-warning-links-2",
+            "commit": "c60a68cee46b6a19e4b3d457caea2e7e539ff3b0",
+            "files": 11
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1260,
+    "verdict": "ALLOW"
+}

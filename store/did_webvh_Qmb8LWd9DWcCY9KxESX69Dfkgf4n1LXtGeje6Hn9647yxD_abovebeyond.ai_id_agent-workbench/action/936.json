@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "083e930654d8706902ef6a2d30f40aa8e7f2ea80",
+            "branch": "workbench/ask-the-record",
+            "files_sha256": "5774bacaa073745cb3fef97635ba0803f643a20cabc8b4e9c0c35db0c1526a77",
+            "message": "Vraag het aan het record: antwoorden uit wat er staat, en anders een weigering"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914095400-3ef458"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "c84c048b4dd327ede41af0cff3b4ac33",
+    "effect": {
+        "detail": {
+            "base": "8710e41cb9a60d3315a3b29f2f84ad7efae98b13",
+            "branch": "workbench/fix/photo-toolbar-handlers",
+            "commit": "8af61ea1cf381daa8f63bfcfcab15d9d2180710b",
+            "files": 12
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1404,
+    "verdict": "ALLOW"
+}

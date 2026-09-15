@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "23b9603ffbb50b0fd950cac432d96099f50d2a99",
+            "branch": "workbench/feat/mail-always-to-list-2",
+            "files_sha256": "7ec2ec54ecac17002944b1a42ca94b7e5f9a6d742bbe75cd0c2885ef34ad86e4",
+            "message": "The mail redirect takes a list of addresses"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914081054-452f09"
+}

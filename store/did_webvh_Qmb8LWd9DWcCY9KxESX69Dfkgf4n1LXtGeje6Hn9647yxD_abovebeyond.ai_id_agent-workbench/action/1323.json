@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vervangt #30, dat dezelfde pagina draagt met de oude titel. Sluit die en\nneem deze.\n\nDe publieke pagina zei alles wat waar is over Vera, en wie er aankwam las\ndaardoor niets. Dit snijdt ze terug tot 229 woorden en zet de vraag van de\nlezer bovenaan in plaats van de eigenschap van het product.\n\n**Het eerste scherm.** Een stille regel zegt waarvoor ze is, niet voor welk\nberoep: *een rapport, een thesis, een offerte, een paper*. Een beroepstitel\nsluit altijd iemand uit, het document niemand. Daaronder de vraag zelf,\n*written faster than ever, checked by whom*, en in \u00e9\u00e9n zin wat ze doet:\nelk cijfer, elke datum en elk citaat opzoeken in de bronnen waar het stuk\nop rust, en benoemen wat in geen ervan staat, voor jouw naam eronder gaat.\n\n**Ernaast het product, niet een plaatje ervan.** E\u00e9n echte lezing: een\nclaim met drie gemarkeerde cijfers, de bronregel eronder die er twee van\ndraagt en de derde tegenspreekt, en de vraag die de lezer krijgt.\n\n**Wat eronder blijft.** Drie regels: ze leest je bronnen en niet het web;\njij velt het oordeel, zij tekent nooit; het bewijs reist mee naar wie het\nkrijgt. Plus \u00e9\u00e9n zin voor wie in Claude Code, Codex, Cursor of Gemini CLI\nwerkt, met het installatiecommando.\n\n**Wat weg is.** De kostenscenario's, de drie stappen, de alinea over de\ngrens van wat ze kan, en de lange privacy-sectie. Waar is niet hetzelfde\nals leesbaar.\n\n**De regel over de stylesheet** staat op de nachtgrond nu in een\nHTML-commentaar. Welke `globals.css` de pagina aankleedde is iets waard\nwaar een maker het leest en ruis waar een klant het leest; op de\nwerkschermen blijft ze zichtbaar.\n\nTests: 52 groen. Twee assertions in `FrontDoorTest` noemden koppen die deze\npagina niet meer draagt en wijzen nu naar wat er wel staat (\"You judge, she\nnever signs\", \"Not open to the public yet\"); dezelfde test bewaakt nog\nsteeds dat er geen drop op de voorpagina staat en dat alleen de voorpagina\nindexeerbaar is.\n",
+            "branch": "workbench/checked-by-whom",
+            "title": "Landing: written faster than ever, checked by whom"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914184646-c281de"
+}

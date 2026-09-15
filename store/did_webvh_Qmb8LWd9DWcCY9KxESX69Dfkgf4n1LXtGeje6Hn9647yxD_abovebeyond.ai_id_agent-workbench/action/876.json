@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b12e7f1e359c9d01cb031d79bcadf85bdb4f2e76",
+            "branch": "workbench/ui/warn-before-leaving",
+            "files_sha256": "642cfd30a5474a3e69d0d733279cc6acb40babd9a32d2da50efaec5610d21ff2",
+            "message": "Leaving the vehicle sheet with unsaved changes asks first"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260914082333-171607"
+}

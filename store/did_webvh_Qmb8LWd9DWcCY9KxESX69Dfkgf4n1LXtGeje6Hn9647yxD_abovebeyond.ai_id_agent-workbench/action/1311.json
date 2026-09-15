@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De publieke pagina zei alles wat waar is over Vera, en wie er aankwam las\ndaardoor niets. Dit snijdt ze terug tot 229 woorden.\n\n**Wat het eerste scherm nu doet.** Links de zin en \u00e9\u00e9n deur (vragen om een\nuitnodiging; inloggen staat er stil naast). Rechts \u00e9\u00e9n echte lezing: een\nclaim met drie gemarkeerde cijfers, de bronregel eronder die twee ervan\ndraagt en de derde tegenspreekt, en de vraag die de lezer krijgt. Dat is\nwat het product doet, in het beeld zelf, in plaats van in een belofte.\n\n**Wat eronder blijft.** Drie regels: ze leest je bestanden en niet het web;\njij velt het oordeel, zij tekent nooit; het bewijs reist mee naar wie het\nkrijgt. Daarnaast \u00e9\u00e9n zin voor wie in Claude Code, Codex, Cursor of Gemini\nCLI werkt, met het installatiecommando.\n\n**Wat weg is.** De kostenscenario's, de drie stappen, de alinea over de\ngrens van wat ze kan, en de lange privacy-sectie. Waar is niet hetzelfde\nals leesbaar.\n\n**De regel over de stylesheet** staat op de nachtgrond nu in een\nHTML-commentaar. Welke `globals.css` de pagina aankleedde is iets waard\nwaar een maker het leest en ruis waar een klant het leest; op de\nwerkschermen blijft ze zichtbaar.\n\nTests: 52 groen. Twee assertions in `FrontDoorTest` noemden koppen die\ndeze pagina niet meer draagt en wijzen nu naar wat er wel staat\n(\"You judge, she never signs\", \"Not open to the public yet\"); de deur\nblijft in dezelfde test dicht (geen drop, geen noindex op de voorpagina).\n",
+            "branch": "workbench/where-it-hurts",
+            "title": "Landing: \u00e9\u00e9n lezing, drie regels, \u00e9\u00e9n deur"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914183440-e0fec8"
+}

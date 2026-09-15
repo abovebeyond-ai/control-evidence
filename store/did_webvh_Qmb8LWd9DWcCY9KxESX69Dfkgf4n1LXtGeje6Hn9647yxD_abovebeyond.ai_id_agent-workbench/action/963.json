@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Steps one and two are done, so the page says so, and one rule in it was wrong and is corrected.\n\nI wrote that the model must never run on a product box. Vera has run one on her own box since before that page existed: the look-further pass needs the dropped files, and those live there and nowhere else. The line that actually holds is narrower and harder to satisfy: a model proposes, never judges, and never holds a credential that outlives its own step. The sealed machine remains the one place a model may not stand.\n\nStep three is now written out rather than left as a word: a model may phrase what the retrieval found, the rows stay on screen beneath the sentence and remain the authority, every number and id in the sentence must appear in the rows it was given or the sentence is dropped, and a refusal is never phrased at all. It runs where the review already is, with the agent token and nothing else.\n\nWorth saying plainly in the page: this buys readability and no capability, and it is the only feature here whose failure mode is worse than not having it.\n",
+            "branch": "workbench/where-the-model-stands",
+            "title": "Agent doors: waar het model staat, en stap drie uitgeschreven"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260914100810-180a4f"
+}

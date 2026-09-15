@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7408c891bb397c3b95ed8b421ee90b729a9c2653",
+            "branch": "workbench/a-grouping-is-of-the-whole",
+            "files_sha256": "ae888ee7b8494abac7786cbeea2dedf8d0166c562a23fcb8f42140b6147cd2ef",
+            "message": "Een groepering gaat over de hele review, niet over wat je vroeg"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "workbench-20260914133331-173044"
+}

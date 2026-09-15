@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8cfcb48425f238c5a15fb0444d1fcd4dd6f0a136",
+            "branch": "workbench/fix/buy-over-outcome",
+            "files_sha256": "f35de6d56c20b35fc6a7d658bc5825d1d890bd053a8bc1368d6f7f63aab24788",
+            "message": "Buying a vehicle says that it happened"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915044025-58fae4"
+}
