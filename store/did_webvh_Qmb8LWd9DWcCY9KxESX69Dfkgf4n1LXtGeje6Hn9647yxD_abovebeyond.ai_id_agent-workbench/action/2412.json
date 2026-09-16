@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "42f11277b8fdfa4bb6124bddee9a8d4c7e77cc50",
+            "branch": "workbench/docs/readme-forge-badge",
+            "files_sha256": "ce9d3b4283e07662a2553d9846bef607a86f56f5a8e6cb0b094d29055893ee03",
+            "message": "README says what the platform is, with the Forge and CI badges"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916031534-bc3742"
+}

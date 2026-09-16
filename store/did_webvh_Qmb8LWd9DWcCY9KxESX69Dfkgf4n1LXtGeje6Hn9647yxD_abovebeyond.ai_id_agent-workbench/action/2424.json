@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a572e69b6255b749b5f96e456ced65e40007d60d",
+            "branch": "workbench/de-eigenaar-als-reviewer",
+            "files_sha256": "7432d2e54bcab45190c887805a4024b64c722e263bfa0b111e516473a9b8f344",
+            "message": "De eigenaar als reviewer van wat de gateway opent"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916031823-9fc7cd"
+}

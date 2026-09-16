@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "91361a6ba360119d4fb638a795a5f316939482e8",
+            "branch": "workbench/de-gateway-als-eigen-github-app",
+            "files_sha256": "75266e2d98c9dd8cbea9b6cecb97e18d0d652be90a6f26c2776effdbd752d2d5",
+            "message": "De gateway als eigen GitHub App"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916024826-7a2342"
+}

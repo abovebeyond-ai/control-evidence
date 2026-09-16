@@ -1,0 +1,15 @@
+{
+    "action": "ed878519aa206bec68b4bdf730828634",
+    "effect": {
+        "detail": {
+            "base": "1027a3e653eaff7faa640f1eaaad5332bbe091f9",
+            "branch": "workbench/fix/validation-messages-dutch",
+            "commit": "ffbc41a9ed43abe9dfa84bf2f1ca1aca6fea338f",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2001,
+    "verdict": "ALLOW"
+}

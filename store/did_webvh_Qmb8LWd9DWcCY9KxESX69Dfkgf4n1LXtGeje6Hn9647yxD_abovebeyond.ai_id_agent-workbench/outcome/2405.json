@@ -1,0 +1,10 @@
+{
+    "action": "8112843f8e3b6d2167f74e2b0bb2172d",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on stocklistdealer-eu/website",
+    "step": 2403,
+    "verdict": "DENY"
+}

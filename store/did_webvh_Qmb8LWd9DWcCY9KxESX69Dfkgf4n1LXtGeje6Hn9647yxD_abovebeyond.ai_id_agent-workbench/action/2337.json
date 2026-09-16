@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What changed for the user\n\nOn every classic list (Beheer > Dealers, users, roles, locations, options, requirements, useful links, release notes, merchants, exports, orders/contracts/rentals/history, transports), a filter now belongs to the list on screen:\n\n- Filter, leave, come back: the full list, filter panel closed and empty. Until now the filter stayed in the session and the panel was closed, so the list was short with no sign why.\n- The next page and a sort of the same list keep the filter (pagination and sort links are `?page=` / `?sortby=` GETs; the session bridges only those).\n- While a filter is active the panel is open and the Filteren button says **Gefilterd (n)**.\n- Sorting is a preference and stays remembered. \"Filters wissen\" keeps working.\n\nLivewire lists (own stock, relations, offers, biddings) have their own state and are untouched.\n\n## How\n\n`App\\Http\\Helpers\\Search::zoek`: request `search` wins; without it the stored filter is only reused when the request carries a continuation parameter (`Search::CONTINUATION_PARAMS`: page, sortby, sortorder, paginate); otherwise the stored filter is forgotten. New `Search::activeCount($zoek)` drives `filtersOpen` and the count chip in the 17 views (replaces `request()->has('search')`, which a POST or the AJAX autofilter never satisfied). One CSS rule `.ui-filter-count`.\n\nRule R P1-1.18 in `31-p1-dagelijks-werk.md`; finding `bevindingen/2026-09-15-lijstfilter-bleef-in-de-sessie.md` (opgelost, beslist Shane).\n\n## Tests\n\n`tests/Feature/ListFilterSessionTest.php` (5 tests): filtered visit shows the filtered list with the panel open and the count; a fresh visit shows the full list with the panel closed, no count, no stored filter; a pagination link keeps the filter; a sort link keeps the filter and the sort outlives a fresh visit; clearing shows the full list.\n\nFilter run `Dealer|Search|Filter|ListPageHeaders|Autofilter|RulesCoverage|RulesIdentity|CompiledViews|AlpineExpression|StylesheetSyntax|HandlerWiring`: 199 tests, 198 pass, 1 skipped-by-environment failure (`PhotoSelectAllTest`, missing `public/js/vehicle/create.js` in the worktree, unrelated).\n\n## Screenshots (1440)\n\nVerified in the browser: filter \"Garage\" -> 3 rows, `?page=1` -> 3 rows with the panel open and \"Gefilterd (1)\"; plain `/dealers` afterwards -> 6 rows, panel closed.\n\n- `.playwright-mcp/list-filter-session/dealers-filtered-1440.png`\n- `.playwright-mcp/list-filter-session/dealers-return-visit-1440.png`\n",
+            "branch": "workbench/fix/list-filters-not-remembered-2",
+            "title": "Classic list filters are not remembered between visits"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915181837-eb053b"
+}

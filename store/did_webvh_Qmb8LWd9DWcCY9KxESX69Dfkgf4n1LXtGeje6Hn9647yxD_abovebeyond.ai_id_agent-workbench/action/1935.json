@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c0ef73270886a8b7f79bb8c149c4a1dcc3cb3c70",
+            "branch": "workbench/fix/stocklist-count-vs-list",
+            "files_sha256": "3e8aaa52e9e9bc8370cd75bc75f764502d13d65cc40f10eb1ad573de402f29cd",
+            "message": "The stocklist count and the list answer the same question"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915092041-7aafd0"
+}

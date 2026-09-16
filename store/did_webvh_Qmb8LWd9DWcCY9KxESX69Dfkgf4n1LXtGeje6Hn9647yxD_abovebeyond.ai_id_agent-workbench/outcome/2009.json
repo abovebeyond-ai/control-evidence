@@ -1,0 +1,15 @@
+{
+    "action": "69d6f0ee869cbec64669b61292eb5088",
+    "effect": {
+        "detail": {
+            "base": "1027a3e653eaff7faa640f1eaaad5332bbe091f9",
+            "branch": "workbench/fix/sold-dialog-and-order-relation-picker",
+            "commit": "ceaadec6a52e64c004ae0afd08aab7beaff78c04",
+            "files": 12
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2007,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "1afad112b3d5290e9faf83ee188a9e3d",
+    "effect": {
+        "detail": {
+            "base": "0fe7a06b90e297b35aa547467b4ea0a312de64f4",
+            "branch": "workbench/fix/pdf-images-without-http-loopback-3",
+            "commit": "c96d203e36f60a711f2aaf26fdc51156038cfa35",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2055,
+    "verdict": "ALLOW"
+}

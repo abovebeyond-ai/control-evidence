@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d9ff7b447981da8d396f1f638950d939ca8720c2",
+            "branch": "workbench/deploy-keys-in-plaats-van-een-token",
+            "files_sha256": "d8e9db6e344581d87322dea40e12924f98937e63b26c58d05abc669b02b61c18",
+            "message": "Deploy keys in plaats van een persoonlijk token"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260916043040-80141a"
+}

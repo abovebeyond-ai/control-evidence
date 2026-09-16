@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8e7d9ce51d6ca260c0136606d34a8dd62d4dc479",
+            "branch": "workbench/feat/relation-proposals-for-admins",
+            "files_sha256": "7005575ee4c2e1d792a9fe504f208a1d26c632c67ddfdb5b2757503762aed0e3",
+            "message": "Keep relation proposals on for platform admins"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915144045-051180"
+}

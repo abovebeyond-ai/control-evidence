@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e79402fee98605fe3225693df2676049e7430750",
+            "branch": "workbench/fix/list-filters-not-remembered-2",
+            "files_sha256": "a98ac14755470b4e5978c9d5c9291cbf3787c3ee470f9bad82aa2f184f45487e",
+            "message": "Classic list filters are not remembered between visits"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915181837-eb053b"
+}

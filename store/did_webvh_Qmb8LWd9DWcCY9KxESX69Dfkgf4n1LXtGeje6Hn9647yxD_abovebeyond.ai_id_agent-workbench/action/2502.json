@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0fbf187530deaf5c99bd29790c8873f85dbc3f99",
+            "branch": "workbench/feat/demo-screens-seeder",
+            "files_sha256": "47f1c27ab002da86e5402a14be11e19f59255ebe5debc18d3051c812cfa183d6",
+            "message": "Demo dataset for screenshots and demos: stocklist:demo-screens"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916051317-64d085"
+}

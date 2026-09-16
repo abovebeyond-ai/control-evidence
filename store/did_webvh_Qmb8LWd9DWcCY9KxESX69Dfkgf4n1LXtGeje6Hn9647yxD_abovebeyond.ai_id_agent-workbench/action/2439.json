@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ffc3aa041eee7e613f97354cde7e973a5579027b",
+            "branch": "workbench/een-403-is-ook-weg",
+            "files_sha256": "e9b1787cc23d8fafd14a7833f5fc0c55288583d141062f86eb5684201b9710d5",
+            "message": "Een 403 van Secret Manager is ook weg"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916032536-c03d9f"
+}

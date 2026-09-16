@@ -1,0 +1,15 @@
+{
+    "action": "d2e167e380979fa9c8d1c6bd57b0d06a",
+    "effect": {
+        "detail": {
+            "base": "02c66a5e65346b9ef372ff9390774e2a7615ceed",
+            "branch": "workbench/feat/propose-to-relation-price-2",
+            "commit": "96d898fd8fad9fbed95c4b08c4f1b36a797e8626",
+            "files": 10
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1983,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\n- The RealGarant shield icon on the orders and contracts action buttons rendered empty. It used a background image that is a pure white silhouette (`light-shield-warranty.png`, verified pixel-by-pixel); on the plain white `.ui-action-button` variant (no RealGarant flow started yet, the state most dealers see) that made a white icon disappear on a white button. Replaced with the Font Awesome shield already loaded elsewhere (`fa-shield-alt`), which inherits the button's own color the same way its neighbours (edit, preview) already do, and removed the now-dead `.user-warranty-shield` CSS rule.\n- The profile menu dropdown (top right) opened off-screen on a phone. It was a Bootstrap `dropdown-menu-right` anchored to its toggle button, which does not sit at the screen edge (the bell and hamburger sit to its right); at 390px the near-full-width mobile version of the menu started 41px past the left edge. It now reuses the bottom-sheet pattern already used for the other `ui-menu` dropdowns on mobile (PR #381), including the `@click.self` binding to close it by tapping the dimmed layer behind it, which the existing markup was missing.\n- Two finding files under `docs/bedrijfsregels/bevindingen/` document both defects (status: opgelost).\n\n## Test plan\n\n- [x] `vendor/bin/phpunit --filter='HandlerWiringTest|AlpineExpressionTest|StylesheetSyntaxTest|CompiledViewsTest|Order|RulesCoverage|RulesIdentity'` \u2014 79 tests, 1 pre-existing unrelated failure (`TransportChainTest::test_a_cross_border_transport_has_no_price_and_is_asked_to_the_office`, 419 CSRF; reproduced identically on unmodified `origin/main`, untouched by this change).\n- [x] Screenshots (Playwright, seeded dealer with four orders covering all four RealGarant button states):\n  - Shield icon at 1440px, before and after.\n  - Profile menu at 390px, before (off-screen, `x: -41.25`) and after (bottom sheet, `x: 0`, closes on backdrop tap).\n  - Profile menu at 1440px, confirmed unchanged (still a plain right-aligned dropdown; the media query stays under 768px).\n",
+            "branch": "workbench/ui/shield-icon-and-profile-menu",
+            "title": "The warranty shield shows again and the profile menu fits a phone"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915080431-b9d1b0"
+}

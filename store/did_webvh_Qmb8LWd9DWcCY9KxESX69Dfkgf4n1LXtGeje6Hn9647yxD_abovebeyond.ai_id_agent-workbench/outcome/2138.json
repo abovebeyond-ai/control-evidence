@@ -1,0 +1,15 @@
+{
+    "action": "0ca1a3715a3353964189d6e2cbb2c426",
+    "effect": {
+        "detail": {
+            "base": "fb873b8362c1d52dae42590a3b2b2d50871d252f",
+            "branch": "workbench/fix/dealer-logo-pdf-and-card",
+            "commit": "0d549ae13f84025d577831955b1aad7e14a9e193",
+            "files": 20
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2136,
+    "verdict": "ALLOW"
+}

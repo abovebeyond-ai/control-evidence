@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`startup.sh` pint v0.25.0 met de sha256 uit de release:\n\n```\n38418a24cfc68d08081f7368b04957b25a92ca5e6315f6e09534c00392bb05aa  control-gateway-linux-amd64\n```\n\nIn deze release: `GET /v1/github/read-token` (#78), de weg waarlangs de box GitHub leest zonder eigen tokens.\n",
+            "branch": "workbench/de-vm-op-v0-25-0",
+            "title": "De VM op v0.25.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916035005-947b55"
+}

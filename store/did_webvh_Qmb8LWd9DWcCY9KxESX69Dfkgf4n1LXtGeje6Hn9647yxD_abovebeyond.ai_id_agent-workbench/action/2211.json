@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "270a3a5cfaf470fc2dff6a162c9ec6cab6dcc2bb",
+            "branch": "workbench/fix/ui-locale-everywhere-3",
+            "files_sha256": "6527006b442f041826acf869bd2e812258dc926d6bbcbacd94feae331a8f5140",
+            "message": "The UI language wins everywhere, the sheet keeps its step on refresh, and the fleet description speaks four languages"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915152644-c1e482"
+}

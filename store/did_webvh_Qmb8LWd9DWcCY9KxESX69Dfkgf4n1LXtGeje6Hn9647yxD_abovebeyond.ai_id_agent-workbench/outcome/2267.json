@@ -1,0 +1,15 @@
+{
+    "action": "3437544e21d1078df501c50014a9806a",
+    "effect": {
+        "detail": {
+            "base": "32c965611499b39e9bf738049399a87ab3dbf47f",
+            "branch": "workbench/fix/photo-drag-grip",
+            "commit": "aa4ac3e5d72bf394c2152310fe14a91393bdfbdd",
+            "files": 22
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2265,
+    "verdict": "ALLOW"
+}

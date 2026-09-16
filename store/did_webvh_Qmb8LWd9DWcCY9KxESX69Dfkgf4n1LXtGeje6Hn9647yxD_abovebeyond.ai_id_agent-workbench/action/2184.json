@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7d2b5ed55a6a4e069f65583ce039b0abce45d070",
+            "branch": "workbench/ui/proposal-page-house-style",
+            "files_sha256": "64bcc75d97dd084d1e6ba46d0641407285d4cb7daa2cf0ad9cc724e773abd375",
+            "message": "The proposal page wears the Stocklist house style"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915151801-ea8d38"
+}

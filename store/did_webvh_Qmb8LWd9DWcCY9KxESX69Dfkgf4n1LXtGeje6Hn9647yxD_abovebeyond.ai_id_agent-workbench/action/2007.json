@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1027a3e653eaff7faa640f1eaaad5332bbe091f9",
+            "branch": "workbench/fix/sold-dialog-and-order-relation-picker",
+            "files_sha256": "66311efe86a32ac388d5ec9391a1c92afbf567adbcb1ab47f7431a377883246a",
+            "message": "The sold dialog lines up its buttons and the order form's relation picker opens from the own stock"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915101754-407262"
+}

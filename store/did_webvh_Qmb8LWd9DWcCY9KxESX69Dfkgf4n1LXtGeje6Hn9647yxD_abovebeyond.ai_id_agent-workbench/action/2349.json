@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\n- Production incident: after the cutover, Forge's default nginx site config adds `add_header X-Frame-Options \"SAMEORIGIN\"`, which blocked every dealer's own website embed (`<iframe src=\".../website/{dealer_hash}...\">`). Shane removed the nginx line by hand to stop the bleeding.\n- This PR makes the app own the header so it cannot silently come back from a webserver config nobody in this repo reviews: `App\\Http\\Middleware\\FrameHeaders`, added to the `web` middleware group in `App\\Http\\Kernel`, sets `X-Frame-Options: SAMEORIGIN` and `Content-Security-Policy: frame-ancestors 'self'` on every response, except the paths a dealer legitimately embeds cross-origin or that are themselves a bare screen: `website/*`, `voorstel/*` (the public proposal page), `showroom/*` (the public showroom slideshow + slide fragments) and `singleshowroom/*` (the single-vehicle screenshot page).\n- Added `R P3-3.11` in `docs/bedrijfsregels/33-p3-integraties.md` and a checklist item in `CUTOVER.md` section 3 (\"Domein en TLS\") so the next Forge site creation removes the nginx `X-Frame-Options` line and verifies it with `curl`.\n\n## Test plan\n\n- [x] `vendor/bin/phpunit --filter \"Frame|Website|Maintenance|Proposal|Showroom|RulesCoverage|RulesIdentity\"` \u2192 111 tests, 520 assertions, OK.\n- [x] New `tests/Feature/FrameHeadersTest.php`: `/login` and an authenticated page carry `SAMEORIGIN` + the CSP header; `website.index`, the public showroom page, its slides endpoint, the single-showroom screenshot page, and an unknown `/voorstel/*` token (404) all carry no frame header at all.\n- No visual change (headers only, nothing rendered differently), so no screenshots.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/frame-header-embed-exempt",
+            "title": "The app decides who may frame it; dealer embeds work again"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915191755-b47f7b"
+}

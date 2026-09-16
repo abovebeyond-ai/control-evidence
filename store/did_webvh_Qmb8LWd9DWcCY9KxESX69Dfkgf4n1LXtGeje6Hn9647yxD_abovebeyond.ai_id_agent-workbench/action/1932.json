@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\n- Records what the 2026-09-15 go-live cutover taught, folded into the existing Dagkaart and its matching sections in `CUTOVER.md`.\n- New sections `1b` (media: full `rsync -a`, not new-folders-only, plus the fail2ban block from Delta's sync) and `1c` (drop tables that exist on the box but not in the dump, before `migrate --force`, with the `grep -a` pitfall and a restore recipe).\n- Section 1: the exact `mysql --binary-mode=1 --max_allowed_packet=1G` flags needed because the dump carries PDF blobs with NUL bytes, and the password-from-`.env` one-liner.\n- Section 0: the Passport oauth-key mismatch (Delta's 2023 keys vs. the box's 2026-07-01 keys) and the proof command.\n- Section 3: DNS-01 needed for the first Let's Encrypt certificate while DNS still points at Delta, plus local DNS-cache flush commands.\n- Section 4: the queue worker needs `--queue=default,webhook` (webhook dispatch otherwise silently never fires) and the Nightwatch daemon needs the site's PHP.\n- Section 5: new production `.env` keys (`CHATBOT_ENABLED`/`CHATBOT_AUTO_REPLY`, `LIVEWIRE_VEHICLE_FORM`, `FAKE_IMAGE_PROCESSING`, drop `MAIL_REPLY_TO_ADDRESS`), the Car-Pass smoke message fix (PR 405), and a reminder to re-run `optimize` after every `.env` edit.\n- Section 6: remove the fail2ban `ignoreip` whitelist for the migration IP after cutover.\n\nDocs-only change, no application code touched.\n\n## Test plan\n\n- [x] `vendor/bin/phpunit --filter='RulesIdentity|RulesDocsBuild'` \u2014 8/8 passed.\n",
+            "branch": "workbench/docs/cutover-day-notes",
+            "title": "CUTOVER.md: what the cutover day taught"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915090028-195518"
+}

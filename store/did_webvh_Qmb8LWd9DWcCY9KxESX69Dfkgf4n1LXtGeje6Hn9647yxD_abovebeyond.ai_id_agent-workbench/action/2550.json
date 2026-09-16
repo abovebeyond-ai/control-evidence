@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3f5e9a7446dd57b2ce1831f50235b922cf75bc2d",
+            "branch": "workbench/docs/release-badge",
+            "files_sha256": "e7c94eaddd824e482270f68e670949f589880b39b6d7c51ed1dc72ee6db9bd59",
+            "message": "README: a release badge that a workflow moves on every published release"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916061354-36e8bf"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\nOn the vehicle detail page (wide screens) the right-hand action column (price, buy over, offer, order, test drive) sometimes could not be scrolled to its last button: the column reached its own scroll end while the page stayed put, and \"Bestelbon zonder schade\" / \"Aanvraag testrit\" hung under the bottom edge.\n\n## Why\nThe column is `position: sticky; top: 92px` with `max-height: calc(100vh - 108px)`. That height is right once the column is stuck, but it only sticks after the page has scrolled ~80px; before that its bottom sits 63px below the viewport. `overscroll-behavior: contain` on the column then blocked the wheel from handing over to the page when the column hit its end. Reproduced at 1440x800 and 1440x900 (last button cut off by 38px); \"sometimes\" was simply whether the user had first scrolled the page with the pointer over the photos.\n\n## Fix\n- `resources/css/refresh.css`: drop `overscroll-behavior: contain` on `.ui-buy-sidebar`; the max-height and sticky offset stay as they were. Phones were already non-sticky (the `lg:` classes only).\n- `tests/Feature/BuyboxSidebarScrollTest.php`: guards that the column scrolls inside itself, that the sticky offset (92) and the max-height (108) still belong together, that no overscroll containment comes back, and that it is sticky on `lg` only.\n- Rule R S5-3.14 in `docs/bedrijfsregels/15-s5-kopen-bij-een-collega.md`; finding `2026-09-15-koopkolom-laatste-knop-onbereikbaar.md` (opgelost).\n\n## Verified\nPlaywright, wheel with the pointer over the column until nothing moves any more (main column padded to the height of a real photo gallery):\n- before, 1440x800: column at its end, page at 0, last button bottom 838 > 800 (cut off 38px); 1440x900: same, 938 > 900.\n- after, 1440x800: page scrolls on, column sticks at 92, last button bottom 656 (visible); 1440x900: 756 (visible).\n- 390: unchanged, the column flows under the photos.\n",
+            "branch": "workbench/fix/buybox-sidebar-scroll",
+            "title": "The detail page's action column scrolls to its last button"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915110244-d1b7d0"
+}

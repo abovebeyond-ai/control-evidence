@@ -1,0 +1,15 @@
+{
+    "action": "b19152d3f7e3fb995fa0ecddc8ec48e0",
+    "effect": {
+        "detail": {
+            "base": "993e6953a592d9d74409fcc2a1dc0afca23a7bd7",
+            "branch": "workbench/feat/proposal-public-page",
+            "commit": "525a1c7b4f444adb1380a5136da22384033583d9",
+            "files": 20
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2094,
+    "verdict": "ALLOW"
+}

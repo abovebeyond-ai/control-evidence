@@ -1,0 +1,10 @@
+{
+    "action": "d3966285e50d65087e9dfa85be13cc52",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "out of schema: parameter \"milestones\"[0].clientVisible must be a string",
+    "step": 2397,
+    "verdict": "DENY"
+}

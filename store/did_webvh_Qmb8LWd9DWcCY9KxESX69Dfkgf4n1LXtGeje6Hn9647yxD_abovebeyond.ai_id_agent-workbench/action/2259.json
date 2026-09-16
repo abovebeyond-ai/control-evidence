@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "32c965611499b39e9bf738049399a87ab3dbf47f",
+            "branch": "workbench/fix/restore-ui-locale-after-snapshot-overwrite",
+            "files_sha256": "406b3fe76faac7764f94d6f12ed59ce19857346d3c4ba083cffe2e6a4bed87ae",
+            "message": "Restore the UI-language changes that later snapshots overwrote"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915161821-a2f788"
+}

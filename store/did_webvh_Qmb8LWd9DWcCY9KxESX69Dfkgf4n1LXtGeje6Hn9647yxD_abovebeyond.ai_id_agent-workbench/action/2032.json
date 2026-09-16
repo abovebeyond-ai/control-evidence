@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d4b8e9b9082c62d57040221c272f3a2a229e7259",
+            "branch": "workbench/ui/photo-tab-warning-and-progress-2",
+            "files_sha256": "5d88ea785f445458a5493e0e90e275952c05b2e6ff2c09642ff215a3a2c892d3",
+            "message": "Photo tab: a quiet platform-copy notice, visible copy progress, drag to reorder, own photos for every vehicle type"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915102253-95638f"
+}

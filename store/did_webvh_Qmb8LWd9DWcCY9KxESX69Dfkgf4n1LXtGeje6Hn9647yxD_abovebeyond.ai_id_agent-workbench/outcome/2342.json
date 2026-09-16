@@ -1,0 +1,15 @@
+{
+    "action": "afff0a05cce32804fc1444686828285c",
+    "effect": {
+        "detail": {
+            "base": "fddf3ee244b7f3ce8db9fbce56985affe1aa5879",
+            "branch": "workbench/ui/list-actions-in-toolbar",
+            "commit": "087bed20bd1d1fca298412f19f67ccbaaaa7d25f",
+            "files": 28
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2340,
+    "verdict": "ALLOW"
+}

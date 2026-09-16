@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "42f11277b8fdfa4bb6124bddee9a8d4c7e77cc50",
+            "branch": "workbench/docs/readme-forge-badge",
+            "files_sha256": "b4d7c0e2cbc0517b7497857381a681bbf8db65acf317aa31bdd5b79a228c7bfe",
+            "message": "README: deploy and test badges, production since the cutover, sibling repos by their new names"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916034814-c5f6bd"
+}

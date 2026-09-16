@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n- PR #437 put \"Voorstellen aan relatie\" behind `config('features.relation_proposals')` (env `RELATION_PROPOSALS`, default off): entry points hidden, `GET/POST /vehicles/{id}/propose` \u2192 404.\n- Shane's decision now: keep it off for dealers, but on for platform admins, who already use every function of the app.\n- Adds one gate, `App\\Support\\Features::relationProposals(?User $user)` (config flag OR `User::isAdmin()`, role BEHEERDER), and uses it everywhere PR #437 checked the flag directly: the controller's 404 guard, the own-stock row `\u22ef`-menu entry, and the buybox button. The `proposePrice` Alpine registration in `layouts/app.blade.php` was already unconditional, so nothing changes there.\n- Updates the open point `docs/bedrijfsregels/open-punten/2026-09-15-voorstellen-aan-relatie-nieuwe-formule.md` and rule R S4-2.19 to note admins already have it.\n\n## Test plan\n- [x] `vendor/bin/phpunit --filter 'Proposal|Propose|OwnStockRowMarkup|Buybox|RulesCoverage|RulesIdentity'` \u2014 54 tests, 262 assertions, green. Extends `VehicleProposalTest` and `ProposalPublicPageTest` with: flag off + dealer \u2192 hidden/404, flag off + admin \u2192 visible/200, flag on \u2192 visible for all (existing coverage, untouched).\n- [x] `vendor/bin/phpunit --filter 'AlpineExpressionTest|HandlerWiringTest|CompiledViewsTest|StylesheetSyntaxTest'` \u2014 12 tests, 739 assertions, green.\n",
+            "branch": "workbench/feat/relation-proposals-for-admins",
+            "title": "Relation proposals: on for admins, still off for dealers"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915144045-051180"
+}

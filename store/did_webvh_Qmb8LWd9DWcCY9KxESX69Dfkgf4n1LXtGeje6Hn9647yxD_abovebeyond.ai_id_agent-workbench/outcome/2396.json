@@ -1,0 +1,14 @@
+{
+    "action": "2c8628e27ab96397823fd5bbcdad0ead",
+    "effect": {
+        "detail": {
+            "clientVisible": false,
+            "project": "stocklistplatform-eu",
+            "title": "Cutover uitgevoerd: Stocklist Dealer draait op traders.stocklistdealer.eu"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2394,
+    "verdict": "ALLOW"
+}

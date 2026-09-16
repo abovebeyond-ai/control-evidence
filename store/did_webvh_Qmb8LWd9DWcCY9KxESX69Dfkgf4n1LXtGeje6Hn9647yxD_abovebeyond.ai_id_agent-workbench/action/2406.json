@@ -1,0 +1,22 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "repo website",
+                    "url": "https://github.com/stocklistdealer-eu/website"
+                },
+                {
+                    "kind": "production",
+                    "label": "marketingsite",
+                    "url": "https://stocklistdealer.eu"
+                }
+            ]
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20260916031433-6a3234"
+}

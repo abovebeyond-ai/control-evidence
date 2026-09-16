@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1027a3e653eaff7faa640f1eaaad5332bbe091f9",
+            "branch": "workbench/ui/prices-step-spacing",
+            "files_sha256": "bceeadf637e57852d2ab95a71d82199412fa3776aabf56ce0b98f50669f74417",
+            "message": "The prices step keeps its fields apart on a phone"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915101823-416f0d"
+}

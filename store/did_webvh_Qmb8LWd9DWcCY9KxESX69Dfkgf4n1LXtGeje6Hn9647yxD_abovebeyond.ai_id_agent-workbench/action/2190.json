@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7d2b5ed55a6a4e069f65583ce039b0abce45d070",
+            "branch": "workbench/ui/bidding-and-sold-lists-2",
+            "files_sha256": "0daa0231d8e4349152eabc904c948e631d96ec82c1a4fe53a62b39ec1fa1f022",
+            "message": "Bidding list: two visible actions per row, how long a bidding still runs, wider page lead"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915152146-e8715f"
+}

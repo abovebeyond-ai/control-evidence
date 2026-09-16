@@ -1,0 +1,15 @@
+{
+    "action": "e4a3ba184083a0672a39a99edcabdbd6",
+    "effect": {
+        "detail": {
+            "base": "1e5dcf057584960c1a39a3a38f388049ce551dba",
+            "branch": "workbench/de-vm-op-v0-24-1",
+            "commit": "4316639a7f1e31b7924a7e093a28bb744bd6102d",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2430,
+    "verdict": "ALLOW"
+}

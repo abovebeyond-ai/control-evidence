@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #449 on the public proposal page (`/voorstel/{token}`). Shane on staging: \"nog niet responsive\" and \"mss nog wat meer styling met de icoontjes\".\n\n## Icons\n\n- The page loads the app's own Font Awesome 5 (`public/template/icons/font-awesome/css/all.min.css`, the same file `layouts/modalApp` loads; the webfonts resolve next to it). No CDN.\n- \"Kenmerken\" uses the icons of the Stocklist card (`stocklist/_grid_card`): calendar for the year, road for the mileage, gas pump, cog, palette, tachometer for the power. Icon left of the label, `--brand-faint` ink. The icon travels with the fact from `ProposalPage::facts()`.\n- Phone and envelope on \"Bel\" and \"Mail\" (also on the expired page), a chat bubble on \"Stel uw vraag over deze wagen\", a small car in the accent colour next to \"Een wagen voor u\".\n\n## Responsive\n\nAudited at 320, 390, 768, 1024, 1280 and 1440 (no element wider than the viewport at any of them, `scrollWidth == innerWidth`). Fixed:\n\n- facts grid was fixed at two columns on the narrowest phones: one column below 360px, two from 360px, three from 600px;\n- buttons take the full width below 640px and sit side by side above it;\n- long words (a dealer e-mail address, a package name) wrap with `overflow-wrap: anywhere` instead of pushing the card out;\n- the header logo no longer shrinks when the name is long; the main photo is capped at its frame.\n\nAlready in place from #449 and verified: viewport meta, one column below 900px with the aside dissolved into reading order, horizontally scrolling thumbnails.\n\n## Placeholder\n\nA vehicle without photos shows the app's `default_vehicle.png` (contained, on the field grey) instead of a broken `<img alt>`. A photo that is on file but does not load (a file missing in the bucket) falls back to the same placeholder, also after tapping a thumbnail.\n\n## Tests\n\n`ProposalPublicPageTest::test_the_page_carries_the_apps_icons_and_a_placeholder_for_a_missing_photo` covers the stylesheet, the icon classes per fact and button, the collapse rules, the placeholder with and without photos, and the expired page. Filter `Proposal|CompiledViews|StylesheetSyntax|RulesCoverage`: OK (36 tests, 928 assertions).\n\nScreenshots in `.playwright-mcp/proposal-polish/` (before-390, after-320/390/768/1024/1280/1440).\n",
+            "branch": "workbench/ui/proposal-page-responsive-icons-2",
+            "title": "The proposal page fits every screen and carries the app's icons"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915155349-3f06ba"
+}

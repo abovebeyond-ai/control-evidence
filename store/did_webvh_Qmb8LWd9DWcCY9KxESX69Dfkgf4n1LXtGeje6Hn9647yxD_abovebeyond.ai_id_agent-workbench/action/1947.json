@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c0ef73270886a8b7f79bb8c149c4a1dcc3cb3c70",
+            "branch": "workbench/ui/exports-page-trash-icon-damage-card",
+            "files_sha256": "f990befe15d43791c975053dfa62296f43a38e697b1970866ee32a28dbd6c9c8",
+            "message": "Exports page compact, delete icon visible, damage card honest about photos"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915092959-9d7131"
+}

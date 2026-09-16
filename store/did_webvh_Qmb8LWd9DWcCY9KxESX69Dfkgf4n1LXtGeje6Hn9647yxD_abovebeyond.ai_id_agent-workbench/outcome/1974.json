@@ -1,0 +1,15 @@
+{
+    "action": "8d78c61c33aa7835da02a758d2619447",
+    "effect": {
+        "detail": {
+            "base": "02c66a5e65346b9ef372ff9390774e2a7615ceed",
+            "branch": "workbench/fix/portal-publish-switch",
+            "commit": "15c3d447162ddcb6083064bd19a1079ee3c4ddd0",
+            "files": 9
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1971,
+    "verdict": "ALLOW"
+}

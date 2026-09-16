@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "993e6953a592d9d74409fcc2a1dc0afca23a7bd7",
+            "branch": "workbench/fix/bidding-window-inclusive-last-day",
+            "files_sha256": "523744c3f8fd282f2ea658d2ba2944bd7d653371b38cc4c5f41dca0e80a92e43",
+            "message": "Bidding stays open through the last day it announces"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915130258-36ca86"
+}

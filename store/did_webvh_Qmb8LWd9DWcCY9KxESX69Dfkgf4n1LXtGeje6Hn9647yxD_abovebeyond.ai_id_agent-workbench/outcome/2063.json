@@ -1,0 +1,15 @@
+{
+    "action": "3f07c5672350b9159221664c01374613",
+    "effect": {
+        "detail": {
+            "base": "d9226a13bf6b0c8e95f142d9c2ba80cd61ec667d",
+            "branch": "workbench/fix/buybox-sidebar-scroll",
+            "commit": "75d44bf70cb693e62a3a3262276370e04ac35e06",
+            "files": 4
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2061,
+    "verdict": "ALLOW"
+}

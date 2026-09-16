@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1e06d210065dfd524c9e90b235e201b52bb5a411",
+            "branch": "workbench/fix/average-price-blank-option",
+            "files_sha256": "0537dd35bc0dc5068ef33ce8f9be829c0e6a94a4fa537c468778ca3d1d573b24",
+            "message": "The average-price search starts on \"Alle\", not on a blank option"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915085307-7bed5e"
+}

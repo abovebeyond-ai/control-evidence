@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e67aebc7d391fbcddc493356b7994348c9854456",
+            "branch": "workbench/fix/french-translations-frederik-2",
+            "files_sha256": "060c0e7d7a7a6e0f0ce769348bb64d219545ce6d32e0a52496fb06968bddd9a5",
+            "message": "French strings the client listed, and the bidding detail speaks French"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915140549-02ecbd"
+}

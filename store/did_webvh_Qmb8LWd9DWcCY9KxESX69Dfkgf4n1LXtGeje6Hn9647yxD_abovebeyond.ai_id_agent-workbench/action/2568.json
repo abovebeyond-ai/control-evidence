@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3344d10564e81da771469e3d36b3eff07e4bf6ce",
+            "branch": "workbench/ui/leads-widget-collapsed",
+            "files_sha256": "ebcc878a84482b676b30f0fadb89ad9b773b92a2b0d2d8ee1e11e81c9e4e766b",
+            "message": "Worklists: leads collapse to one line each, open on tap"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916072404-d4615f"
+}

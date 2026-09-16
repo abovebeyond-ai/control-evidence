@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c43153b2e5a30cc3313e32d5795c5d4f08f217b1",
+            "branch": "workbench/fix/sheet-scroll-nox-carpass-warning-offer-relation-2",
+            "files_sha256": "ee0ee09385a2c0cbedef5239955993fa502053a22cb9d7e107f77c3cfb5d2ee7",
+            "message": "Sheet scrolls to the step, NoX persists, Car-Pass warning on publishing, offer shows its relation"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915135305-bedac6"
+}

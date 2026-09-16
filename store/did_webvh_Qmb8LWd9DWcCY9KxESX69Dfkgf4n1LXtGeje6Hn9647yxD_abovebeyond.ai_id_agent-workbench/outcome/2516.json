@@ -1,0 +1,16 @@
+{
+    "action": "3cb50497cfc158c5377ac354e35c1720",
+    "effect": {
+        "detail": {
+            "base": "9d25c7c02834330251c947b61861f47cf279cdce",
+            "branch": "workbench/turnstile-guard",
+            "commit": "338bed648fd25b1ae84e577028d9a88e2e317417",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2514,
+    "verdict": "ALLOW"
+}

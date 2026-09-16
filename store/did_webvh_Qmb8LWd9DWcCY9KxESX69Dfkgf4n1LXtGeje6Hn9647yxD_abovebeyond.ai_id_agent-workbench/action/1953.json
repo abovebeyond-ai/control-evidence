@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d483b0398cffb294d86e84de5ed75b722ec030f5",
+            "branch": "workbench/fix/nederland-mobiel-image-base-url",
+            "files_sha256": "b3c7641b8fbdcc3ebf5aecbc3fd54488146d5045b7eff076a1368142e6484ea7",
+            "message": "Nederland Mobiel: the image base URL builds again and a partner error no longer blocks the save"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915093407-4f2b15"
+}

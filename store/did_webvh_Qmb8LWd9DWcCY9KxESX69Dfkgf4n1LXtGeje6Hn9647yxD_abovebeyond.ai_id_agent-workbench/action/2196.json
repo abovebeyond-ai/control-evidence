@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7d2b5ed55a6a4e069f65583ce039b0abce45d070",
+            "branch": "workbench/chore/derived-photos-schedule-all-vehicles",
+            "files_sha256": "6cb6ed02ab2d72fa48f4446e481e245b07e2d1652f0b2f73b2cbc092f9f93386",
+            "message": "The derived-photo sweeper covers every vehicle"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915152210-5584cf"
+}

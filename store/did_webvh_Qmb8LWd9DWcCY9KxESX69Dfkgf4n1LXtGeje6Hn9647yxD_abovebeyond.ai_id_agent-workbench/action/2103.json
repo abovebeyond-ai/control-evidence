@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\nFrederik, on the bidding offer (Mercedes A180): \"the bids run until 15/09/2026 but no bid can be placed any more.\" The detail header said \"Loopt tot 15/09\", the bid box under it said \"de biedingen zijn afgerond\", on the one day a trader still wants to bid.\n\n## Why\nThe header, the card in the offer and the offer query (`end_date >= CURDATE()`) all treat the announced end day as part of the bidding. The bid box (`BiddingBox::open`) still carried Delta's original check from `stocklist/_tabs/general.blade.php`: `now()->diffInDays(end_date, false) >= 0`. `end_date` is a `date` column (midnight). Carbon 2 returned an integer truncated toward zero, so on the end day that read 0 and the box was open, as intended. Carbon 3 (Laravel 12) returns a float: -0.6 at 14:00 on the end day, and `-0.6 >= 0` is false. The box closed at midnight at the *start* of the last day while everything around it said \"loopt tot\".\n\n## Fix\n- `app/Livewire/BiddingBox.php`: `open()` asks `ExportVehicle::isBiddingOpen()`, the same helper as the header and the card. Open through 23:59:59 Europe/Brussels of the announced day, closed from midnight after it; the fifteen-day winner window starts after that day, as before.\n- `resources/views/export/biddingDetails.blade.php` + `resources/css/refresh.css`: the amount in the list of received bids (\"\u20ac 12 345,00 excl. BTW\") wrapped onto two lines between ten other columns; the cell now carries `ui-list-amount` (nowrap, tabular figures). Phone cards unchanged (the cell was already one line there).\n- Tests: `ExportVehicleWindowsTest` (00:00:01, 14:00 and 23:00 on the end day open; 00:01 the day after closed), `BiddingLastDayTest` (header and box agree on the end day and the day after; a bid is accepted at 14:00 on the last day and refused at 00:01 the day after).\n- Rule R B1-4.2 now names the shared helper and the boundary; finding `docs/bedrijfsregels/bevindingen/2026-09-15-bieden-op-de-laatste-dag.md` (opgelost, ernst nu).\n\n## Verified\nLocal, 1440 and 390, `export/biddingDetails` with two bids on a VAT vehicle: before, the price cell was 76px wide with \"\u20ac 12\" / \"345,00\" / \"excl. BTW\" on three lines; after, one line (\"\u20ac 12 345,00 excl. BTW\"). `vendor/bin/phpunit --filter 'Bidding|Export|Bid|RulesCoverage|RulesIdentity|StylesheetSyntax|AlpineExpression|HandlerWiring|CompiledViews'`: OK (71 tests, 878 assertions).\n",
+            "branch": "workbench/fix/bidding-window-inclusive-last-day",
+            "title": "Bidding stays open through the last day it announces"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915130258-36ca86"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Main is red since #459 merged: `FrenchTranslationsTest`, `LanguageParityTest`, `OwnFleetTextTest` and `StylesheetSyntaxTest` fail because the additions of #456 (\"The UI language wins everywhere\u2026\") are gone from six shared files.\n\n**Why.** The control gateway pushes each PR as a snapshot of the agent's files, not as a merge. #457 and #459 were snapshotted from a main that predates #456 and merged after it, so their copies of `resources/css/refresh.css`, `resources/lang/{nl,fr,en,de}/ui.php` and `resources/views/layouts/app.blade.php` silently replaced what #456 had added there.\n\n**What this PR does.** Re-applies exactly the hunks of #456 on those six files (three-way, on `32c96561`): the twelve `ui.*` keys per language (`step`, `not_published`, `management`, `vehicle_data`, `taxes`, `warranty`, `location`, `description`, `description_stocklist`, `open`, `display`, `fill_in_trade_price`), the `ownFleetText` Alpine component and the three `ui-lang-*` rules. Nothing from #457 or #459 is dropped: the `biddingStep` component, their `bidding_*` keys and their bidding CSS stay. The reverse check (did #456 overwrite #454?) is clean: #456 was built on top of #454 and its rewrite of the `name_nl` lookups in the stocklist browser is intentional. `.ui-bid-row-actions` was replaced by #459 on purpose (a `td`-specific rule), not lost.\n\nGuard set run locally against a fresh test database: `LanguageParity|FrenchTranslations|FrenchLeftovers|UiLocale|OwnFleetText|StylesheetSyntax|AlpineExpression|HandlerWiring|CompiledViews|RulesIdentity|RulesCoverage|Bidding|Proposal|Transport|Showroom`: 195 tests, 2007 assertions, all green (1 incomplete, pre-existing).\n\n**For the memory.** Two PRs that touch the same file must land sequentially, each one rebased after the other has merged: a snapshot proposed before the other PR merged carries the older copy of the shared file and silently reverts that PR when it lands. Rebase (or re-worktree on the new main) and re-propose on a fresh branch before merging the second one.\n",
+            "branch": "workbench/fix/restore-ui-locale-after-snapshot-overwrite",
+            "title": "Restore the UI-language changes that later snapshots overwrote"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915161821-a2f788"
+}

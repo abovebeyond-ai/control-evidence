@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7ab646e5519ce6b7068f8503a6c4a36d0c468e17",
+            "branch": "workbench/fix/lang-parity-fr-en-de",
+            "files_sha256": "f35af65ed0da9912f32e79b882635c0de1ca248401060d6ebf505e75c2dbbda9",
+            "message": "Every Dutch key exists in French, English and German, and a test keeps it so"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915144723-e471eb"
+}

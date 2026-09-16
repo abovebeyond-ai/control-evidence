@@ -1,0 +1,15 @@
+{
+    "action": "30c2873d91b6a424fee7e889a737d26b",
+    "effect": {
+        "detail": {
+            "base": "4a378dee2345ab7a12abfd4c54b4e4ed17aba553",
+            "branch": "workbench/fix/frame-header-embed-exempt",
+            "commit": "c021d7e4944c0a63404fbcbab9a6c9c4449d3461",
+            "files": 5
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2346,
+    "verdict": "ALLOW"
+}

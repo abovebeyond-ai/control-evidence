@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nOn 2026-09-16 `stocklistplatform-eu` was admitted until midnight while it named one repository (`stocklistdealer-eu/platform`). A second repository link (`stocklistdealer-eu/website`) was added afterwards. The gateway refused `branch.push on stocklistdealer-eu/website`, correctly: the capability lists the project's repositories at issue time (ae94440). But the werkbank page disabled the row's checkbox while an admission stood, so the owner had no way to admit again.\n\n## What changes\n\n- **Re-admit while valid.** The checkbox is never disabled. Selecting an admitted project and touching the key issues a fresh capability; the earlier workbench admissions for that project are ended (`expires_at = now`), so the newest is the one in force for `WorkbenchAdmission::current()`, the werkbank page and `POST ingest/capability/workbench/{slug}`. `current()` and `forAct()` break a tie on `expires_at` by `id`, because two admissions for the rest of the day end at the same midnight. Vera's words are not touched.\n- **Coverage and staleness.** `WorkbenchAdmission::claims()` reads the capability (verified under Portal's key; as written for a word signed on the operator token, which `OperatorKeys` checked on arrival), `repos()` lists the repositories it names, `missingRepos(Project)` and `coversProject(Project)` compare them with `Capability::reposOf($project)` now. A stale row says, under \"until 23:59, passkey\", a second line: \"covers platform only, website was added since\" (plural and no-repository variants; Dutch in `lang/nl.json`). Stale rows are pre-checked like rows with a knock and sorted right after them. The project page shows the same line with a link to the werkbank.\n- No revoke feature; withdrawing is unchanged.\n\n## Tests\n\n`tests/Feature/WorkbenchAdmittedByPasskeyTest.php`, two new tests: a project with a valid admission can be admitted again through both doors and the newest wins (one valid row, the read token fetches the newest); an admission issued when the project named one repository is not stale, becomes stale once a second link exists (page text, `data-state=\"stale\"`, pre-checked, sorted before a not-admitted project), and admitting again covers both.\n\nPint and PHPStan pass. `php artisan test`: 573 of 574 pass; the one failure is `BuildStampTest`, which fails on any linked git worktree because `BuildStamp::sha()` looks for the branch ref in the worktree's gitdir while a linked worktree keeps refs in its `commondir`. Not touched here.\n",
+            "branch": "workbench/readmit-while-valid",
+            "title": "Workbench: re-admit a project while its admission is valid, and say when it no longer covers the project"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260916034223-9af871"
+}

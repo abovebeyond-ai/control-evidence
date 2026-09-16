@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9e547735c0d54bbb67a203108db1758d21e68123",
+            "branch": "workbench/content/port-stocklistdealer-eu-2026-09",
+            "files_sha256": "79e1854a83732042cc1eba431739b20578bbbba17807670ef22374f876bf72e6",
+            "message": "Port the current stocklistdealer.eu content and list the screenshots to shoot"
+        },
+        "resource": "stocklistdealer-eu/website"
+    },
+    "run": "workbench-20260916034455-4a48d1"
+}

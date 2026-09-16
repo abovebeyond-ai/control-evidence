@@ -1,0 +1,22 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.update",
+        "params": {
+            "body": [
+                "Op 15 september is de applicatie omgeschakeld van de server van Delta Solutions naar de eigen Hetzner-server via Forge. Verse databankdump geladen, migraties gedraaid, 1,79 miljoen mediabestanden gecontroleerd in de bucket (0 verschillen), Passport-sleutels van Delta overgenomen zodat de partner-API zonder onderbreking werkt.",
+                "Tijdens de acceptatietest van Ilse en Frederik zijn ruim 160 pull requests gemerged (308 tot 475): fotoflow, publiceren naar portalen, biedingsopvolging, transport met Mollie, gedelegeerde toegang voor beheerders, vertalingen fr/en/de, en de bevindingen als losse bestanden in de bedrijfsregelscatalogus.",
+                "## Nazorg",
+                "- Secrets roteren en de tijdelijke migratiegebruiker verwijderen",
+                "- Platformfoto's aanvullen voor 99 gedeelde wagens (1.332 remove.bg-credits, beslissing met Ilse)",
+                "- 2FA en passkeys volgens het plan in de open punten",
+                "- Repo hernoemd naar stocklistdealer-eu/platform; marketingsite naar website, dealersite naar stockcars-website"
+            ],
+            "clientVisible": false,
+            "date": "2026-09-16",
+            "title": "Cutover uitgevoerd: Stocklist Dealer draait op traders.stocklistdealer.eu"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20260916031342-95de50"
+}

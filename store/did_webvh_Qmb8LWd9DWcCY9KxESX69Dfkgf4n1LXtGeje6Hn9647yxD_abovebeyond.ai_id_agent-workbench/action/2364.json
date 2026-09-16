@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f64ab057eb886e1e4a4de9412d5be42deb07b188",
+            "branch": "workbench/de-vm-op-v0-24-0",
+            "files_sha256": "7cdcf6706fb79af92a0eb5f8873203055ea2ca94095ffd97ed1d183f1abdaaca",
+            "message": "De VM op v0.24.0: de gateway als eigen GitHub App"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916025344-323f75"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "72422d97b92dbe327e943e3dfebe85c6ca022381",
+            "branch": "workbench/ui/photo-drag-feel",
+            "files_sha256": "64ad87d0066921827021a871ab75401d77db5ca0a3398cf87f76ab0c9a8b4f50",
+            "message": "Photo reorder that says how it works, and copies that delete cleanly"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915181342-31e028"
+}

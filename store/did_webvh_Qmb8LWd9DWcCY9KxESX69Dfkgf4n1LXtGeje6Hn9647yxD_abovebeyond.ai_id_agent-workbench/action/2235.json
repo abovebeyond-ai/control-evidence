@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "08f044feb4da9839dd91029502af73f55174026b",
+            "branch": "workbench/ui/proposal-page-responsive-icons-2",
+            "files_sha256": "86343dc5ab08bd565e496832172065f193d47bdbe67db59fba632099489358af",
+            "message": "The proposal page fits every screen and carries the app's icons"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915155349-3f06ba"
+}

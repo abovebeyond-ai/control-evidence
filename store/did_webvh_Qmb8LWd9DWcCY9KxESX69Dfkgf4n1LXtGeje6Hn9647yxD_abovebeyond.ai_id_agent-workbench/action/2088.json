@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "993e6953a592d9d74409fcc2a1dc0afca23a7bd7",
+            "branch": "workbench/fix/order-takeover-returns-to-order",
+            "files_sha256": "46700204ced8ceefc1f5c7a3753ac1d788f33a22b175160a4f9fa71e7894513e",
+            "message": "Saving a takeover vehicle returns to the order form"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915125007-ae0a2b"
+}

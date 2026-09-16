@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7595068585757633c1a0ea36dc8dd849a3c43f56",
+            "branch": "workbench/fix/smoke-seal-wording",
+            "files_sha256": "4970619cf0efe6a5925272b1a4910a1138ab4f894be7293741451782b1ae5e1b",
+            "message": "The smoke test stops blaming OUTBOUND_IMPACT in production"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915082304-58601b"
+}

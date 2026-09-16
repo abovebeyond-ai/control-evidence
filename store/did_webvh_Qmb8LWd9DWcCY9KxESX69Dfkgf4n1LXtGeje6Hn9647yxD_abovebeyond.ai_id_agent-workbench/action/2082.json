@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a772356a97a4a2ac7f68aaf2f02381d5dbe00eef",
+            "branch": "workbench/docs/cutover-media-folders",
+            "files_sha256": "3a7ea6d034ec6f0ae0f0482d23a406a2de4fd32610cbb2121dda4b30fc1e48f9",
+            "message": "Document syncing every media folder, not just vehicles/"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915113809-47c561"
+}

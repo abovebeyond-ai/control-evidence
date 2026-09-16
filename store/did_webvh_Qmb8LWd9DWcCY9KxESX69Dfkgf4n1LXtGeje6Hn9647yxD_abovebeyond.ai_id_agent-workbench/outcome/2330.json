@@ -1,0 +1,15 @@
+{
+    "action": "ab89cea827743a1c453c3d5d739ddce4",
+    "effect": {
+        "detail": {
+            "base": "72422d97b92dbe327e943e3dfebe85c6ca022381",
+            "branch": "workbench/ui/photo-drag-feel",
+            "commit": "f0507f85ed4f8861af8cee5364df0954669da6c7",
+            "files": 19
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2328,
+    "verdict": "ALLOW"
+}

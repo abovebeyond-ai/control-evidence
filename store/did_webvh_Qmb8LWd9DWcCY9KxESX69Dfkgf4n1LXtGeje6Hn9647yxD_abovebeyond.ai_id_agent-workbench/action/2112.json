@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d155a63e03b27173d5332fa2bb489071c88851cb",
+            "branch": "workbench/feat/proposal-public-page-2",
+            "files_sha256": "9061d7634cbca434c1a71db489fc915b26b502cd77ba03fdfb1252c6542be542",
+            "message": "A proposal opens a public page for the customer instead of the dealer login"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915132612-1e4836"
+}

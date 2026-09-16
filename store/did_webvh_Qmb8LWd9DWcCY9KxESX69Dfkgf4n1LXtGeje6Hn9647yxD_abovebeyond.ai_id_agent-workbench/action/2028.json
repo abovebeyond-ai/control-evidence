@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\n- Add a fourth sort group to the own-stock list's \"Sorteer op\" menu: intern nummer, ascending and descending. The column is text but sorts numerically (`CAST AS UNSIGNED`), with empty values always sorted last regardless of direction.\n- Remove the unused manual XML import: the \"Hulpmiddelen\" menu entry, the two header buttons (classic create/edit page), the modal and confirmation views, both routes and both controller methods. `ImportVehicle::doImport` stays \u2014 the Modix API import (R P3-6.2) still uses it. Logged as a finding (`docs/bedrijfsregels/bevindingen/2026-09-15-xml-import-uit-eigen-wagenpark.md`).\n- Replace the five tri-state Alle/Ja/Nee segmented filters (In optie, Op stock, Klaar voor keuring, Gepubliceerd, Car-Pass) with plain selects so they stack cleanly on a phone; same Livewire property names and values.\n- Fix the \"duplicate vehicle\" confirmation: it read \"Item kopi\u00ebren\" with an unfilled `:item` placeholder and \"Export \" glued in front of the brand. It now names the vehicle (brand, model, year) and states accurately what carries over \u2014 options and photos are copied, Car-Pass and portal assignments are not (verified against `OwnStockController::duplicateVehicle`, not guessed). Added a busy state to the duplicate buttons (`wire:loading`) so the confirm-to-redirect gap reads as working rather than frozen.\n- Turn the \"In optie\" status chip into a button that releases the option on the spot, reusing the existing guarded action (`OwnStockList::setNotInOption`, dealer-owned only) instead of requiring the row's \u22ef menu first; confirms, then notifies, then the row re-renders.\n\n## Test plan\n\n- [x] `vendor/bin/phpunit --filter 'OwnStockListTest|OwnStockHeaderMenusTest|StylesheetSyntaxTest|AlpineExpressionTest|RulesCoverageTest|RulesIdentityTest'` \u2014 green.\n- [x] Full `vendor/bin/phpunit` \u2014 no new failures (pre-existing failures in unrelated suites, same before and after this branch).\n- [x] Manual pass in a running instance: sort by intern nummer (asc/desc, empty last), Hulpmiddelen menu without XML import, filter panel selects, duplicate confirm + redirect to the new concept's edit sheet, release the option from the chip.\n- [x] Screenshots at 1440px and 390px (sort menu, tools menu, filter panel, duplicate confirm, option-release confirm).\n",
+            "branch": "workbench/feat/ownstock-sort-internal-number",
+            "title": "Own stock: sort by internal number, drop the XML import, filters as selects"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915101846-95227a"
+}

@@ -1,0 +1,78 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "milestones": [
+                {
+                    "_key": "k1",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Overname codebase van Delta naar eigen private repo"
+                },
+                {
+                    "_key": "k2",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Migratie naar eigen infrastructuur (Hetzner via Laravel Forge, Ubuntu 24.04)"
+                },
+                {
+                    "_key": "k3",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Data en media overgezet (MariaDB 10.11, PostgreSQL 17, ongeveer 177 GB naar Object Storage)"
+                },
+                {
+                    "_key": "k4",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Framework-upgrade Laravel 8 naar 12, PHP 8.1 naar 8.4"
+                },
+                {
+                    "_key": "k5",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Formulierenbibliotheek vervangen door eigen Blade-componenten (156 views)"
+                },
+                {
+                    "_key": "k6",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Performance-optimalisatie (database-index, wagenlijst ongeveer 7 keer sneller)"
+                },
+                {
+                    "_key": "k7",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Testsuite en CI (GitHub Actions) en databaseschema in de repo"
+                },
+                {
+                    "_key": "k8",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Productie-deploy via Forge geverifieerd"
+                },
+                {
+                    "_key": "k9",
+                    "clientVisible": true,
+                    "status": "doing",
+                    "title": "Testsuite uitbreiden met integratietests"
+                },
+                {
+                    "_key": "k10",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Testen tegen de live site"
+                },
+                {
+                    "_key": "k11",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Go-live cutover (DNS, TLS, finale sync, secrets roteren, queue en cron)"
+                }
+            ]
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20260916031320-5572da"
+}

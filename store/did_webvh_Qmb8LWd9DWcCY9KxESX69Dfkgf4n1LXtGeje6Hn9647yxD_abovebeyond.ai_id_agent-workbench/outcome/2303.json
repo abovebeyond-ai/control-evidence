@@ -1,0 +1,14 @@
+{
+    "action": "9a2f975285edfa69963f39fe6b2bbc54",
+    "effect": {
+        "detail": {
+            "only": "app",
+            "project": "stocklistplatform-eu",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2301,
+    "verdict": "ALLOW"
+}

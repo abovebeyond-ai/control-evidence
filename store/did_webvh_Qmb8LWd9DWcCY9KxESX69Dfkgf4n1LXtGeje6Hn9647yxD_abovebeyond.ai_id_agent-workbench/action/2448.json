@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`startup.sh` pint v0.24.2 met de sha256 uit de release:\n\n```\n10e23bae6422388a0875e2a0c057c89f7ed211022f8bd60f7eedf44832343fc5  control-gateway-linux-amd64\n```\n\nIn deze release: een 403 van Secret Manager telt als weg (#76), dus de boot ruimt de zes owner-tokens op de VM nu echt op.\n",
+            "branch": "workbench/de-vm-op-v0-24-2",
+            "title": "De VM op v0.24.2"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916033028-501d89"
+}

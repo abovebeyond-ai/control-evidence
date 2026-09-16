@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1027a3e653eaff7faa640f1eaaad5332bbe091f9",
+            "branch": "workbench/fix/validation-messages-dutch",
+            "files_sha256": "35f6623c2ec2befa7f58a76af249dd3ba5b3548df376192632566de5eeae8c60",
+            "message": "Add full Dutch/French/German validation messages and attribute labels"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915101620-88590d"
+}

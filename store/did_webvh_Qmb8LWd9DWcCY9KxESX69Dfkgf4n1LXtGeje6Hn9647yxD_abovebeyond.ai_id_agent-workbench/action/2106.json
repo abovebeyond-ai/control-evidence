@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "993e6953a592d9d74409fcc2a1dc0afca23a7bd7",
+            "branch": "workbench/ui/publish-switch-render",
+            "files_sha256": "41c3e23b2f8bed0bd42eacb07b202b4b507203977fa2a308402eec2b73196177",
+            "message": "Fix publish switch rendering as a native checkbox on top of the track\n\n#cars_table input[type=checkbox] is an ID selector that outranked the\nsingle-class .ui-switch-input rule hiding the native checkbox, so the\nswitch added in #415 showed a visible 15x15 checkbox layered on the\ndrawn track (square left edge, knob overlapping the pill). Excluded\n.ui-switch-input from the row-selection checkbox styling."
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915130340-e1d856"
+}

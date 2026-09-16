@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "E\u00e9n alinea in `docs/rebuild.md`: sinds v0.24.0 reist de GitHub App mee met een herbouw via\ndezelfde weg als de tokens (twee geheimen in Secret Manager die de bootscript ophaalt), en\naan de kant van GitHub verandert er bij een herbouw niets, want de App staat op de eigenaars\nen niet op de machine.\n\nDit is meteen de eerste ingreep van de gateway als App. Als het klopt, staat de commit op\ndeze tak op naam van `abovebeyond-control[bot]`.\n",
+            "branch": "workbench/de-app-in-de-herbouw",
+            "title": "De App in de herbouw"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916025732-25ce16"
+}

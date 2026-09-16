@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n- Settings > Website gets a \"Publieke API\" block below the Iframe url field (`v1/public/*`, `dealers.public_api_token`, previously only settable via `tinker`): no token shows one sentence plus a \"Token aanmaken\" button; a token shows it masked (`\u2022\u2022\u2022\u2022 ` + last 4 chars, with a green \"ingesteld\" chip matching the rest of the tab) with Tonen / Kopi\u00ebren / Vernieuwen, the API base url, and a link to `/docs` when Scribe's static docs are published.\n- Two new POST routes, `settings.api_token.reveal` and `settings.api_token.rotate`, both gated on the `website.index` right (the same right that shows the tab) and both logged (`[PublicApiToken] revealed|rotated`, dealer + user id). Rotate always generates a fresh `Str::random(64)` token; the old one stops authenticating immediately since `AuthenticatePublicApi` looks the token up by value. \"Vernieuwen\" asks for confirmation first, naming that the old token stops working at once.\n- `SettingsController::maskApiToken()` is the one place that formats the masked display, used both server-side (initial render) and returned in the rotate response (so the field updates without a reload).\n- `.ui-copy-link-actions` gets `flex-wrap: wrap` (base + mobile) so a third action button (this block has three: Tonen/Kopi\u00ebren/Vernieuwen, versus the existing two-button iframe-url pattern) drops to its own row on a phone instead of running past the edge of the screen; the existing two-button case is unaffected.\n\n## Test plan\n- [x] `vendor/bin/phpunit --filter \"Settings|PublicApi|Api|RulesCoverage|RulesIdentity|CompiledViews|AlpineExpression|HandlerWiring|StylesheetSyntax\"` \u2014 136 passed, including the new `SettingsApiTokenTest` (rotate/reveal require the right, rotate returns a 64-char token with the correct mask, rotate invalidates the old token on the public API and the new one works).\n- [x] Manually exercised the full flow in the browser at 1440px and 390px: create, reveal, copy, the \"Vernieuwen\" confirm dialog, and the mobile button wrap.\n",
+            "branch": "workbench/feat/public-api-token-in-settings",
+            "title": "The public API token is managed on the Website tab"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915195551-659c6a"
+}

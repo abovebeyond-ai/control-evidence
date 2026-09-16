@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\n- On 2026-09-15 the media sync `rclone copy`'d only `vehicles/`, missing `dealers/`, `dealer_attachments/`, `dealer_backgrounds/`, `default/`, `requirements/` and `usefullinks/`, which also live on the migration volume and each map to their own disk root in `config/filesystems.php`. The StockCars dealer logo sat on the volume but never reached the bucket, so the poster and offer PDFs had no logo and `ImageController` logged \"Image source not readable\".\n- `CUTOVER.md` now has the loop over all folders, using the rclone flags (`--size-only --fast-list --checkers 32`) that brought a ~700k-file compare down from 1h46 to 3m42, with an explanation of why `--size-only` is safe here and what \"Transferred: 0 B\" means.\n- Added a warning to run the derived-photo backfill (`stocklist:fotos-afgeleid`) only after all media folders have synced, both in the dagkaart and in section 2.\n- Docs only, no code changes.\n\n## Test plan\n\n- [x] `vendor/bin/phpunit --filter 'RulesIdentity|RulesDocsBuild'` (8 tests, 15 assertions, OK)\n",
+            "branch": "workbench/docs/cutover-media-folders",
+            "title": "CUTOVER.md: every media folder, and rclone that finishes in minutes"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915113809-47c561"
+}

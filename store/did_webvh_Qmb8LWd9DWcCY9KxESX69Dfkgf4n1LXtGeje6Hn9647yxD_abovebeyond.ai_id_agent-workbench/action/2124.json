@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e67aebc7d391fbcddc493356b7994348c9854456",
+            "branch": "workbench/fix/iframe-realgarant-calculator-2",
+            "files_sha256": "47b90f5c305f48fb1ba3d35d6c37a8ad408e37fc8f4217dec48d0b24a43ace69",
+            "message": "The iframe detail shows the Real Garant calculator again"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915140438-f019aa"
+}

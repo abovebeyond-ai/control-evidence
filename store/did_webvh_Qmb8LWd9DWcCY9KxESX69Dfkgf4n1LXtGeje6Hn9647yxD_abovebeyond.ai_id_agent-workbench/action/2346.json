@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4a378dee2345ab7a12abfd4c54b4e4ed17aba553",
+            "branch": "workbench/fix/frame-header-embed-exempt",
+            "files_sha256": "456470102785cd190c9d04d96bea2592659d6dec77022dc1be7f177c86bdc3e0",
+            "message": "The app decides who may frame it; dealer embeds work again"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915191755-b47f7b"
+}

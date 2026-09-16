@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fddf3ee244b7f3ce8db9fbce56985affe1aa5879",
+            "branch": "workbench/ui/list-actions-in-toolbar",
+            "files_sha256": "fc66eea6ec4c782d1ff26fc95345816682ff7744e7dc6a2ed46d54001b37ec24",
+            "message": "List actions live in the toolbar, and a dealer row can be entered directly"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915183601-5028c9"
+}

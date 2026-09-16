@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3f4207d8f0d9a6825e95895fd0eb8efe3fd7f789",
+            "branch": "workbench/het-record-zegt-welke-weg",
+            "files_sha256": "0cf229b0a85bf2d94caaa5811d60fffb74461f722b50cbee785137092c305268",
+            "message": "Het record zegt welke weg de ingreep nam"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916030528-fc9ed7"
+}

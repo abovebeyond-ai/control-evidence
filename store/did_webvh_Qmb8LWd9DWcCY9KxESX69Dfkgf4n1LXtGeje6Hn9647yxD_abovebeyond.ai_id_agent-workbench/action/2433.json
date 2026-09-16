@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`startup.sh` pint v0.24.1 met de sha256 van `control-gateway-linux-amd64` uit de release:\n\n```\nda2efc936eb3f1869bbc3a44a8a3b54623ce7b5af2c1447ec2aa5427c0066f01  control-gateway-linux-amd64\n```\n\nIn deze release: het record zegt welke weg een ingreep nam (#72), een verwijderd geheim\nverdwijnt bij de boot ook van de schijf (#73), en de gateway vraagt de eigenaar om review\nop elk voorstel (#74; het attribuut `control-reviewer` staat al op de instance). Na\n`rehearse.sh upgrade` ruimt de boot de zes owner-tokens op de VM op en zegt dat in de log.\n",
+            "branch": "workbench/de-vm-op-v0-24-1",
+            "title": "De VM op v0.24.1"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916032153-4d36b7"
+}

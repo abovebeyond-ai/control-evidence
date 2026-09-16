@@ -1,0 +1,15 @@
+{
+    "action": "67321f5f741e03ee9456c6b66b1c9452",
+    "effect": {
+        "detail": {
+            "base": "e67aebc7d391fbcddc493356b7994348c9854456",
+            "branch": "workbench/fix/french-translations-frederik-2",
+            "commit": "dd3dd84f69a9197600358197471021e05f14f62f",
+            "files": 32
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2130,
+    "verdict": "ALLOW"
+}

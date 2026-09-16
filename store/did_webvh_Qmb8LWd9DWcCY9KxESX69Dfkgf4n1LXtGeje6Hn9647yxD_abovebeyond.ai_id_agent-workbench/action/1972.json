@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "02c66a5e65346b9ef372ff9390774e2a7615ceed",
+            "branch": "workbench/fix/showroom-poster-modal",
+            "files_sha256": "d6a2efb4c9417e55adcaf23d5622bed57a84a0679106f4d8ceacb31e58ca015a",
+            "message": "The poster warning's buttons work again"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915100543-b0cacd"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "646e8f852fdc0e62e85f4cc7f1a13438",
+    "effect": {
+        "detail": {
+            "base": "3f5e9a7446dd57b2ce1831f50235b922cf75bc2d",
+            "branch": "workbench/docs/release-badge",
+            "commit": "bbd50fd517953695c5e0f13f1dcb943ef06ab672",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2550,
+    "verdict": "ALLOW"
+}

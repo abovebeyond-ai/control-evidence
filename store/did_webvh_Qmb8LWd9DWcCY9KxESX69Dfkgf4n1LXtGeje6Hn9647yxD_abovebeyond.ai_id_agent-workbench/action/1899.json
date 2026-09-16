@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "66260bb78a295a156265d952ca3e817ec5a4e2f3",
+            "branch": "workbench/staging-is-productie-geworden",
+            "files_sha256": "d3f70ed658b3bc84efe8307c68db2398a40bb5a7d9ad4e6dc2489dccc28683b1",
+            "message": "Staging is productie geworden: \u00e9\u00e9n omgeving"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915080836-e777d7"
+}

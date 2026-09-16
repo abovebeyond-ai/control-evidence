@@ -1,0 +1,15 @@
+{
+    "action": "4489879ed91ef958a8b1a69b8eeed56a",
+    "effect": {
+        "detail": {
+            "base": "2e5a6f7fbea0577f6752d1b3e3820e146cf3821e",
+            "branch": "workbench/fix/lang-parity-fr-en-de-2",
+            "commit": "d0a617bbf71f3ecb4b387b8dfb31f38cb3e4d153",
+            "files": 73
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2166,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7ab646e5519ce6b7068f8503a6c4a36d0c468e17",
+            "branch": "workbench/fix/removebg-background-as-bytes-2",
+            "files_sha256": "aff83cfa7ccd3ff47e43c3939cfd3d9a7689013524bc735179579e575d34105d",
+            "message": "remove.bg gets the background as bytes; the photo poller stops 419ing and shows failures"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915144959-a13580"
+}

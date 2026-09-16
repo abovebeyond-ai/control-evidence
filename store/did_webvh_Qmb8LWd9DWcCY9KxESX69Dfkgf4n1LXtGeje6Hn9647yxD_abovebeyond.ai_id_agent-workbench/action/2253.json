@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "32c965611499b39e9bf738049399a87ab3dbf47f",
+            "branch": "workbench/ui/action-icons-consistent",
+            "files_sha256": "f23a53cb468894349059dcecb30cc1a96358be395d918efa79ddc0ce900ce85f",
+            "message": "Row action icons share one ink"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915160049-1a73c2"
+}

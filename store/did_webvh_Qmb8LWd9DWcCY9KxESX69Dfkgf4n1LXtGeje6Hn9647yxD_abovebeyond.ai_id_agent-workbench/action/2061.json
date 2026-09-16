@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d9226a13bf6b0c8e95f142d9c2ba80cd61ec667d",
+            "branch": "workbench/fix/buybox-sidebar-scroll",
+            "files_sha256": "379317436b328442652dc48e2f3e9386797b977c4746db179243ab0dc37ad9b9",
+            "message": "The detail page's action column scrolls to its last button"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915110244-d1b7d0"
+}

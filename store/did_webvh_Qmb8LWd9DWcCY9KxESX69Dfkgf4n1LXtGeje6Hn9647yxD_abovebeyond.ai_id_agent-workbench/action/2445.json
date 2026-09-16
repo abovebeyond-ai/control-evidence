@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7bfb31680ffb288749530e58d65c94b733bf12c0",
+            "branch": "workbench/de-vm-op-v0-24-2",
+            "files_sha256": "35e8394c463992fd0d904668a0586b80d36265ce48b0f81d9f64f1e5eb645535",
+            "message": "De VM op v0.24.2: een 403 is ook weg"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916033028-501d89"
+}

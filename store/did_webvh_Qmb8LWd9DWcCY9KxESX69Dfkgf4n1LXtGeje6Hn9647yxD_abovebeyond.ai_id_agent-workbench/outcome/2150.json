@@ -1,0 +1,15 @@
+{
+    "action": "fa458e034035be608717cbda2d48a77a",
+    "effect": {
+        "detail": {
+            "base": "8e7d9ce51d6ca260c0136606d34a8dd62d4dc479",
+            "branch": "workbench/ui/bidding-and-sold-lists",
+            "commit": "f7971db1f6c65222c0272d0133b2551c1a695d35",
+            "files": 21
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2148,
+    "verdict": "ALLOW"
+}

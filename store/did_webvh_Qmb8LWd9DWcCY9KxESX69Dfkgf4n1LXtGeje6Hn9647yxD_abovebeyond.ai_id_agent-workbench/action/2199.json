@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n- The full media sync landed today (cutover), so the derived-photo sweeper no longer needs to skip vehicles above the folder Delta's earlier migration stopped at.\n- Remove `--tot-wagen=20710` from the scheduled `stocklist:fotos-afgeleid` command in `routes/console.php` and rewrite the comment: what the sweeper does, that it now covers every vehicle, and that the one-off backlog run is the four shards from `CUTOVER.md` step 6.\n- Mark the `--tot-wagen=20710` removal as done in `CUTOVER.md` (both the day-card step 6 line and the detailed checklist item); the one-off `--opnieuw` backfill of the pre-cutover backlog stays open.\n\n## Test plan\n- [x] `vendor/bin/phpunit --filter 'Schedule|RulesCoverage|RulesIdentity'` \u2014 9 tests, 9 passed.\n",
+            "branch": "workbench/chore/derived-photos-schedule-all-vehicles",
+            "title": "The derived-photo sweeper covers every vehicle"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915152210-5584cf"
+}

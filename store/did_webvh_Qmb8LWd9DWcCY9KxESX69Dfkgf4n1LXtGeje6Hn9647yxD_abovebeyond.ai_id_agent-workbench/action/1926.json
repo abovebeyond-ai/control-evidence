@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What changed for the dealer\n\n- The **Merk** select in \"Zoek gemiddelde verkoopprijs eindklant\" opened on a blank option labelled \"(0)\", under \"Alle (n)\". It now opens on \"Alle (n)\", and every select in the modal has exactly one empty-valued option, \"Alle\", first and selected.\n- The result footer is a small block: \"Gemiddelde verkoopprijs\" quietly above, the amount alone on its line in large tabular figures rounded to the euro (`\u20ac 23.638`, exact value in the title), and one quiet line under it: \"185 verkochte wagens in de laatste 12 maanden, van \u20ac 1.750 tot \u20ac 90.000\" (exact bounds in the title).\n\n## Why\n\n`Enumeration::getManufacturers()` prepends an empty pair (`with_empty_pair`). Since PR 374 counted every option, that pair became a real `<option value=\"\">(0)</option>` next to the view's own `<option value=\"\">Alle (n)</option>`; two options with the same empty value, and the browser kept the second as the selection. Transmission, fuel and category already went through `withoutEmpty()`; make did not. `options()` now strips the empty pair itself, for every select.\n\nThe calculation receives the same empty string for \"Alle\" as before; the pinned calculation tests from PR 374 are unchanged and green (the exact figures are still in the markup, in the `title` attributes).\n\n## Tests\n\n- `AveragePriceSearchTest::test_every_select_starts_on_all_and_has_no_blank_option`: for each of the six selects, before and after choosing a make and a category, the first option is \"Alle (\", it carries the empty value, no other option has an empty value, and no option has an empty label. Fails on origin/main (\"make: a second option with an empty value would take the selection\").\n- `AveragePriceSearchTest::test_the_result_shows_the_rounded_amount_with_the_exact_figure_in_the_title`.\n- `vendor/bin/phpunit --filter='Average|Price|HandlerWiring|AlpineExpression|RulesCoverage|RulesIdentity|StylesheetSyntax|CompiledViews'`: OK (123 tests, 1348 assertions).\n\nFinding (opgelost): `docs/bedrijfsregels/bevindingen/2026-09-15-gemiddelde-prijs-merk-startte-leeg.md`. Translations added in nl/en/fr/de/es (`avg_from_to`, `sold_price_average`, `bid_average`; `avg_between` was nl-only).\n\nScreenshots (1440 with the Merk list expanded, 390): `.playwright-mcp/avgprice-blank/before-1440-merk-open.png`, `after-1440-merk-open.png`, `after-390.png`.\n",
+            "branch": "workbench/fix/average-price-blank-option",
+            "title": "The average-price search starts on 'Alle', not on a blank option"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915085307-7bed5e"
+}

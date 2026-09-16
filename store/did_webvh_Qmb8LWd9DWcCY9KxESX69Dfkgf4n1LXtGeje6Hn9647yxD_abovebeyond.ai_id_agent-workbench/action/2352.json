@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4a378dee2345ab7a12abfd4c54b4e4ed17aba553",
+            "branch": "workbench/feat/public-api-token-in-settings",
+            "files_sha256": "f6b0811902435146626b985912c4aa0b260b74f39ddc887360c5525b9e923484",
+            "message": "Manage the public API token from Settings > Website"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915195551-659c6a"
+}

@@ -1,0 +1,24 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "repo",
+                    "url": "https://github.com/stocklistdealer-eu/platform"
+                },
+                {
+                    "kind": "production",
+                    "label": "productie",
+                    "url": "https://traders.stocklistdealer.eu"
+                }
+            ],
+            "nextAction": "Nazorg cutover: secrets roteren, migration-user weg, platformfoto's aanvullen (1.332 credits), 2FA-plan",
+            "status": "active"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20260916031318-50843e"
+}

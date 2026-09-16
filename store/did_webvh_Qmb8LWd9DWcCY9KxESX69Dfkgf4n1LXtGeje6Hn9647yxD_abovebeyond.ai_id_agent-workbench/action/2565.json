@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Drie dingen op het contactformulier, alle drie uit een screenshot van vanmorgen:\n\n- **Vinkje en radiostip zaten linksboven in hun vakje.** Het thema centreert ze met een regel op `i.fa`; sinds de svg-wissel greep die niet meer. Nu absoluut gecentreerd, zoals het thema het bedoelde.\n- **\"Ik ben een\" stond te ver uit elkaar en de gekozen optie kreeg een grijs vak.** Het thema maakt van elke optie een knop (1em rondom, 4em inspringing) met een grijze achtergrond bij keuze. Nu dezelfde inspringing als het toestemmingsvinkje, en de keuze is de stip.\n- **De bevestiging na verzenden (en `.form__error` / `.form__success` / `.form__note`) verliezen hun gekleurde linkerrand en tint.** Dat is de meldingsbalk van elk dashboard; hier is een melding een zin met een teken ervoor, en het teken draagt de kleur.\n\nAlleen `custom.css`. Nagekeken op een lokale server met Playwright (formulier met keuze en vinkje, en de bevestiging).\n\nPlus de Pint-fout die #54 op `main` achterliet (`frame-src` in dubbele quotes waar niets ze nodig had); daarom faalde de CI van #55. Dit vervangt #55.\n",
+            "branch": "workbench/form-marks-pint",
+            "title": "Vinkje en stip gecentreerd, keuzerondjes compact, geen gekleurde balken (vervangt #55)"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260916062533-342976"
+}

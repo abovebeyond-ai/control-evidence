@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n- Settings > Website > \"Iframe url\" now has a language dropdown (nl/fr/en/de) next to it, defaulting to the language the owner currently sees the UI in. Changing it updates the readonly URL field, the \"Openen\" link and the \"Kopieer\" button live, appending `?lang=` \u2014 the parameter `WebsiteController::setLanguage()` already reads on `index`, `detail` and `search`.\n- Fixed a bug found while verifying that mechanism: `WebsiteController::setLanguage()`'s \"the session already holds a language\" branch compared a string code (`'fr'`) against an int-keyed array, so it was always false \u2014 any request that didn't repeat `?lang=` (the search form, a second visit to `index`) silently reset the visitor's chosen language back to the dealer's own default. Fixed and covered by a regression test.\n- Filed a finding (`docs/bedrijfsregels/bevindingen/2026-09-15-iframe-taal-overleeft-contact-niet.md`) for a related, still-open gap: `WebsiteController::contact()` never calls `setLanguage()` at all and relies solely on `SetLangMiddleware`, which carries the same kind of string/int mismatch in its own fallback \u2014 so the contact modal still renders in Dutch regardless of the chosen language. Left unfixed here (different file, out of this PR's scope).\n- Extended rule P2-10 with R P2-10.22 describing the new picker.\n\n## Test plan\n- `vendor/bin/phpunit --filter 'Settings|Website|CompiledViews|AlpineExpression|RulesCoverage|RulesIdentity'` \u2192 100 tests, 427 assertions, all green (includes the new `SettingsWebsiteIframeLanguageTest`, 4 tests: the tab renders all four languages with the current locale pre-selected, a request to the embed with `?lang=fr` renders in French, the detail link already forwards the language, and the language now survives a follow-up search request).\n- Manual verification in the browser (Playwright) at 1440px and 390px: changing the dropdown updates the URL/Openen/Kopieer live; screenshots attached.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/feat/iframe-url-language-picker",
+            "title": "The iframe URL comes with a language picker"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915155446-8637d7"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Tweede helft van wat in abovebeyond-ai/portal#329 begon.\n\n**Waarom.** Wat Forge over een site las (staat er een scheduler, is de\nlaatste deploy gelukt, staat er een health check) vroeg een token dat elke\n`.env` van elke site opent, welke scopes je ook kiest: gemeten op 16\nseptember met alleen `organization:view` en `server:view`, en de\nenvironment kwam gewoon terug. Zo'n token hoort nergens, ook niet op de box,\nen dus kan de meting die hem nodig had niet blijven.\n\n**Wat.** Van de drie feiten blijft er \u00e9\u00e9n die alleen de gebeurtenis kan\ngeven: of de laatste deploy slaagde. Forge stuurt na elke deploy een webhook\nnaar Portal en Portal bewaart die sinds #329 (rapport `elixirDeploys`, per\nsite de laatste dertig). De nieuwe meting **`deploys`** leest dat rapport op\nhet fabric-token dat ze al had (`GET ingest/reports/elixirDeploys/{slug}`),\nvuurt op dezelfde trigger (deploy) en oordeelt `DEPLOY_FAILED` (nu) of\n`DEPLOY_OK`. Een uitkomst die Forge niet noemt is `unknown` en telt nooit als\nmislukt; de test pint dat vast.\n\n**Wat niet vervangen is, met reden.** Of een scheduler draait zegt de\nhartslag van de app zelf (`elixir:beat`, elke minuut) beter dan een\ninstelling: die vangt ook een scheduler die er w\u00e9l staat en toch stilvalt,\nwat Forge niet kon zien. En een health check staat op elke site en krijgt\neen nieuwe site op de dag dat ze gemaakt wordt; dat is \u00e9\u00e9n veld in Forge,\ngeen meting. De wet die hieruit volgt: Elixir meet wat er gebeurt, niet wat\ner ingesteld staat. De Forge-meting was de enige die dat omdraaide.\n\n**Weg:** `Scans\\Forge`, `ForgeScanTest`, de zeven `FORGE_*`-drempels. Portal's\nkaart Forge rendert alleen wat er is en verdwijnt zodra deze sectie niet\nmeer komt; de kaart Deploys uit #329 neemt over. **Na de merge:**\n`elixir-secrets/forge-token` van de box (Shane), en dan is er in Forge nog\nprecies \u00e9\u00e9n token, en dat ligt daar.\n\nTests: 671 groen, PHPStan 0, Pint schoon.\n",
+            "branch": "workbench/what-happens-not-what-is-set",
+            "title": "De Forge-meting eruit: het feit komt van de deploy zelf, zonder token"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260916054821-22f1a9"
+}

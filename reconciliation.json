@@ -1,5 +1,5 @@
 {
-    "computed_at": "2026-09-15T07:33:51+00:00",
+    "computed_at": "2026-09-16T07:34:08+00:00",
     "window": {
         "since": "2026-09-10T14:20:00+00:00",
         "days": 7,
@@ -33,8 +33,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 3,
+                "gateway": 3
             }
         },
         "Hoet-design/hoet-eyewear-mirror": {
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 18,
-                "gateway": 16
+                "github": 19,
+                "gateway": 17
             }
         },
         "Trendwolves/gentells-site": {
@@ -145,8 +145,8 @@
                 "gateway": 2
             },
             "pulls": {
-                "github": 67,
-                "gateway": 23
+                "github": 70,
+                "gateway": 26
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -200,14 +200,14 @@
                 "gateway": 1
             }
         },
-        "stocklistdealer-eu/stocklistdealer": {
+        "stocklistdealer-eu/platform": {
             "dispatches": {
                 "github": 5,
                 "gateway": 0
             },
             "pulls": {
                 "github": 100,
-                "gateway": 153
+                "gateway": 6
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -294,8 +294,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 49,
-                "gateway": 13
+                "github": 60,
+                "gateway": 24
             }
         },
         "abovebeyond-ai/elixir": {
@@ -305,8 +305,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 51,
-                "gateway": 24
+                "github": 53,
+                "gateway": 26
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -479,8 +479,19 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
+                "github": 1,
                 "gateway": 0
+            }
+        },
+        "stocklistdealer-eu/website": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 1,
+                "gateway": 1
             }
         },
         "vera/abovebeyond/*": {
@@ -593,19 +604,20 @@
         }
     },
     "unexplained": [
-        "Trendwolves/gentells-pipeline: 18 pulls on GitHub, 16 performed by the gateway",
+        "Trendwolves/gentells-pipeline: 19 pulls on GitHub, 17 performed by the gateway",
         "Trendwolves/gentells-site: 11 pulls on GitHub, 6 performed by the gateway",
         "abovebeyond-ai/abovebeyond: 13 pulls on GitHub, 4 performed by the gateway",
-        "abovebeyond-ai/portal: 67 pulls on GitHub, 23 performed by the gateway",
+        "abovebeyond-ai/portal: 70 pulls on GitHub, 26 performed by the gateway",
         "abovebeyond-ai/vera: 35 pulls on GitHub, 28 performed by the gateway",
         "kubo-global/afrodidact-website: 2 pulls on GitHub, 1 performed by the gateway",
-        "stocklistdealer-eu/stocklistdealer: 5 dispatches on GitHub, 0 performed by the gateway",
-        "stocklistdealer-eu/stocklistdealer: 100 pulls on GitHub, 153 performed by the gateway",
-        "abovebeyond-ai/control: 49 pulls on GitHub, 13 performed by the gateway",
-        "abovebeyond-ai/elixir: 51 pulls on GitHub, 24 performed by the gateway",
+        "stocklistdealer-eu/platform: 5 dispatches on GitHub, 0 performed by the gateway",
+        "stocklistdealer-eu/platform: 100 pulls on GitHub, 6 performed by the gateway",
+        "abovebeyond-ai/control: 60 pulls on GitHub, 24 performed by the gateway",
+        "abovebeyond-ai/elixir: 53 pulls on GitHub, 26 performed by the gateway",
         "abovebeyond-ai/proveml: 2 pulls on GitHub, 0 performed by the gateway",
         "abovebeyond-ai/proveml-research: 7 pulls on GitHub, 4 performed by the gateway",
-        "abovebeyond-ai/verify-abovebeyond: 6 pulls on GitHub, 0 performed by the gateway"
+        "abovebeyond-ai/verify-abovebeyond: 6 pulls on GitHub, 0 performed by the gateway",
+        "stocklistdealer-eu/landing: 1 pulls on GitHub, 0 performed by the gateway"
     ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind (rows 10.3.2, 10.3.4)"
 }

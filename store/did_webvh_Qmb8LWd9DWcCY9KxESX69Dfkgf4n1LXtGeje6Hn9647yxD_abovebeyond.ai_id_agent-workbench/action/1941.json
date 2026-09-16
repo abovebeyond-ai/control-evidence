@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c0ef73270886a8b7f79bb8c149c4a1dcc3cb3c70",
+            "branch": "workbench/ui/location-form",
+            "files_sha256": "59a907af535d831335db153a5d504505f0f394d58e328c6deacd07893529da84",
+            "message": "The location form reads as a form"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915092051-f63dc0"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n- On the vehicle sheet's \"Prijzen\" step, \"BTW-wagen\" and \"Aankoopprijs\" sat with almost no gap on a phone (390px). Root cause: the two `.ui-form-grid` blocks on this step have `margin-bottom: 0`, so the only thing separating them was the BTW note's own `margin: 8px 0 4px` \u2014 and that margin disappears entirely once the note gets `d-none` (BTW-wagen answered \"nee\", or not yet answered).\n- Wrapped the BTW fields, the note, and the price fields in one `.ui-price-step` flex column with a steady `gap: 20px`. A flex `gap` is skipped around a `display:none` child instead of shrinking to nothing, so the rhythm between field groups stays the same whether the note renders or not, at every width.\n- Verified at 390px with BTW-wagen = \"nee\" (the reported case) and 1440px. At 1440 the fix adds a small, deliberate gap (~20px) where a 3-column grid row previously left an incidental ~13px of stretch space; visually it reads the same, just slightly more even.\n\n## Screenshots\n- `.playwright-mcp/prices-spacing/before-390.png` / `after-390.png` \u2014 phone, BTW-wagen \"nee\"\n- `.playwright-mcp/prices-spacing/before-1440.png` / `after-1440.png` \u2014 desktop\n\n## Test plan\n- [x] `vendor/bin/phpunit --filter='VehicleForm|Price|StylesheetSyntax|AlpineExpression|CompiledViews|RulesCoverage|RulesIdentity'` \u2014 140 tests, 1452 assertions, green\n- [x] Screenshots at 390px and 1440px, before and after\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/ui/prices-step-spacing",
+            "title": "The prices step keeps its fields apart on a phone"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915101823-416f0d"
+}

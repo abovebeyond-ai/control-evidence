@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\n- `stocklist:smoke` printed `zegel OPEN (carpass staat in OUTBOUND_IMPACT)` for the Car-Pass check whenever `Outbound::impact('carpass')` was true. In production that's always true (`Outbound::allowed()` short-circuits `Outbound::impact()` to `true` regardless of the env var), so the line named a setting that was never consulted. On the production box, with no `OUTBOUND_IMPACT` set at all, it printed exactly that sentence and read as a leftover staging setting.\n- `IntegrationSmoke::checkCarpass()` now checks `Outbound::allowed()` first: on production it prints `zegel niet van toepassing (productie)`; outside production the two existing sentences (`OPEN (carpass staat in OUTBOUND_IMPACT)` / `dicht (carpass staat niet in OUTBOUND_IMPACT)`) are unchanged.\n- Checked the other two `OUTBOUND_IMPACT` mentions in the same file (Mollie, WhatsApp): both only print that text inside a `!Outbound::impact($service)` branch, which is unreachable on production since `Outbound::impact()` also returns `true` unconditionally there. So there was no equivalent wording bug to fix \u2014 added a test that pins this down so a future refactor of `Outbound::impact()` doesn't quietly reopen it.\n\n## Test plan\n\n- [x] `vendor/bin/phpunit --filter='Smoke|Outbound|RulesCoverage|RulesIdentity'` \u2014 279 tests, 546 assertions, all green (local MySQL DB from `database/schema/mysql-schema.sql` + migrations after 2026-07-28, no real HTTP calls, `Http::fake()` throughout).\n",
+            "branch": "workbench/fix/smoke-seal-wording",
+            "title": "The smoke test stops blaming OUTBOUND_IMPACT in production"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915082304-58601b"
+}

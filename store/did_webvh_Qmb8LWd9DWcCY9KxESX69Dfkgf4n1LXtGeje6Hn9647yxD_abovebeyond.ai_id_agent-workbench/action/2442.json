@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Secret Manager antwoordt 403 en niet 404 voor een geheim dat niet meer bestaat, zodra de\naanroeper geen projectbreed leesrecht heeft; de VM heeft dat niet, met opzet. De boot van\nv0.24.1 las de zes verwijderde owner-tokens dus als \"whatever is on disk stays\" en liet ze\nliggen, precies wat die release moest opruimen.\n\n403 en 404 gaan nu dezelfde weg: de kopie op schijf verdwijnt en de log zegt het, met de\ncode. Een credential die de machine niet meer kan ophalen, kan de operator niet meer\nroteren of intrekken langs de gewone weg; een kopie waar het besturingsvlak niets van weet\nis dan erger dan een luide fout. Was het een IAM-vergissing, dan faalt de eerstvolgende\ningreep met de naam van het ontbrekende token, en brengt de binding plus een herstart het\nterug.\n\nDit is ook het eerste voorstel na v0.24.1: als het klopt, staat er een review-aanvraag op.\n\n## Bewijs\n\n- `bash -n deploy/gcp/startup.sh`\n- de seri\u00eble log van de boot van v0.24.1: zes keer `403; whatever is on disk stays`\n",
+            "branch": "workbench/een-403-is-ook-weg",
+            "title": "Een 403 van Secret Manager is ook weg"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916032536-c03d9f"
+}

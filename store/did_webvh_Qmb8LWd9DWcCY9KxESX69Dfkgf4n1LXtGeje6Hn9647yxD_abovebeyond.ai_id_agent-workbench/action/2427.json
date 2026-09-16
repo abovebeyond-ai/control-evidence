@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Met de App als auteur staat een pull request van de gateway niet meer onder de eigen pull\nrequests van de eigenaar. Op 16 september 2026 bleven er zo twee onopgemerkt (#72 en #73).\nEen review-aanvraag zet ze waar de eigenaar kijkt, en het is de vorm die GitHub aan de mens\nin de lus geeft.\n\n## Wat er verandert\n\n- `reviewer` in de configuratie van de gateway: een GitHub-login. Leeg is niemand vragen.\n- De GitHub-adapter vraagt die login om review bij elke `pull.open`, en opnieuw wanneer een\n  concept met `pull.ready` klaar wordt gezet. Een aanvraag, geen vergunning: het verandert\n  wie er bericht krijgt, niets aan wat er mag. Mislukt de aanvraag (een login die geen\n  medewerker is), dan staat dat in de uitkomst (`review_requested: false`,\n  `review_problem`) en blijft het voorstel staan.\n- `startup.sh` leest de login uit het instance-attribuut `control-reviewer` en schrijft hem\n  in `config.json`. E\u00e9n keer zetten:\n\n```\ngcloud compute instances add-metadata control-gateway --zone europe-west4-a --project elixir-508105 --metadata control-reviewer=ShaneDeconinck\n```\n\n## Bewijs\n\n- `go test ./...`: alles groen; nieuw: de reviewer wordt gevraagd en staat in het record, en\n  zonder reviewer wordt niemand gevraagd en zegt het record niets\n- `go vet`, `gofmt`, `bash -n deploy/gcp/startup.sh`: schoon\n",
+            "branch": "workbench/de-eigenaar-als-reviewer",
+            "title": "De eigenaar als reviewer van wat de gateway opent"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916031823-9fc7cd"
+}

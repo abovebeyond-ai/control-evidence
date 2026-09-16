@@ -1,0 +1,15 @@
+{
+    "action": "03d6c05cb92026e573ae8d883f11bc36",
+    "effect": {
+        "detail": {
+            "base": "02c66a5e65346b9ef372ff9390774e2a7615ceed",
+            "branch": "workbench/ui/settings-background-attachment-support",
+            "commit": "4f163a530964d5d5428c7f1a86f3291eed675f32",
+            "files": 27
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1965,
+    "verdict": "ALLOW"
+}

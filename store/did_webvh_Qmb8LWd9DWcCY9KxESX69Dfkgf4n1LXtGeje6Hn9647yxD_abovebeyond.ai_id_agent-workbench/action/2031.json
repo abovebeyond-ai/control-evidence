@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d4b8e9b9082c62d57040221c272f3a2a229e7259",
+            "branch": "workbench/ui/settings-background-attachment-support-2",
+            "files_sha256": "89d5412d6fb769f5e024df5378b126976ac835e5e040d3040dd6578e65874cf6",
+            "message": "Settings: download a background, see the chosen attachment, read the support address"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915102245-949942"
+}

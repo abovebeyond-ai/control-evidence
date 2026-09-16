@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0f180d6f907f9f8f1862654b823be8a8e628c988",
+            "branch": "workbench/the-webhook-is-the-record-2",
+            "files_sha256": "0720c3ca1053120c75076f69bbeebe97420d8cae7e19c0b063104e47983439d7",
+            "message": "De deploy-webhook is het record"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260916054955-024202"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ddcfda8652cb024cbf4c16e18cca462e95c8f9b4",
+            "branch": "workbench/een-verdwenen-geheim-verdwijnt-ook-van-de-schijf",
+            "files_sha256": "377a469ae99d69964e510895f2313738aa68d92ce30aed97ddeccd938b924a40",
+            "message": "Een verdwenen geheim verdwijnt ook van de schijf"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916030835-f1f481"
+}

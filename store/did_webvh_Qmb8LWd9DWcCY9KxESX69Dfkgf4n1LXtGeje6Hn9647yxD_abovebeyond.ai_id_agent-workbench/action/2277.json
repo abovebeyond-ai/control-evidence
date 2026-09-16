@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8078e054efb5746c6b29b4825a6b56f4a1f3cb44",
+            "branch": "workbench/fix/photo-drag-grip-2",
+            "files_sha256": "02a59df2b996e604ada19d3ed5a944501973b3e861872b082d50312ae6aac9ae",
+            "message": "Photo tab: drag saves, copies appear when done, and carry the dealer background"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915163509-070e47"
+}

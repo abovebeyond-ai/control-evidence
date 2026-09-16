@@ -1,0 +1,15 @@
+{
+    "action": "3ba2e4d0a8391ca0fb769bb6e574b0c3",
+    "effect": {
+        "detail": {
+            "base": "7d2b5ed55a6a4e069f65583ce039b0abce45d070",
+            "branch": "workbench/chore/derived-photos-schedule-all-vehicles",
+            "commit": "a250263f14f333860eb298fad0efc8fe307fa501",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2196,
+    "verdict": "ALLOW"
+}

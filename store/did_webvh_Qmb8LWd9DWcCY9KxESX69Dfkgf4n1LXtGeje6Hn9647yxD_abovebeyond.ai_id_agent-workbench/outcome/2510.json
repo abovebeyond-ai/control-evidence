@@ -1,0 +1,16 @@
+{
+    "action": "ab7208662eba12a5a66ab2c534aa44bf",
+    "effect": {
+        "detail": {
+            "base": "9d25c7c02834330251c947b61861f47cf279cdce",
+            "branch": "workbench/turnstile",
+            "commit": "80535a29f4709d7b7c172697b3332e39e03c69fa",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2508,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\n- The order row's action icons (`resources/views/offertes/indexOrders.blade.php`) render the transport truck lighter than its neighbours. The truck link always carries a `ui-action-button--solid-*` colour modifier, including `ui-action-button--solid-grey` for \"no transport requested yet\" \u2014 the most common state \u2014 which sets `--ui-action-ink: var(--brand-faint)` (`#98a2b3`). The shield, preview and edit icons use the plain `ui-action-button` (no modifier) for their own \"nothing started yet\" state, which resolves to `--brand-gray` (`#475467`), visibly darker.\n- Dropped the `--solid-grey` fallback for \"no transport yet\" so the truck uses the same plain `ui-action-button` ink as the other three in that state. The truck is not disabled in this state (`ShowTransport` already gates whether it renders at all; when it renders it always opens the transport modal), so it should read the same as an available action, not a paler one. The colour-coded modifier is kept once a transport actually exists (warning/danger/success/grey by `Transport::StateColorClass`), which is meaningful status colour, not a contrast bug.\n- Normalised all four icons to the `fas` Font Awesome style (`fa fa-truck` \u2192 `fas fa-truck`, `fa fa-eye` \u2192 `fas fa-eye`, `fa fa-edit` \u2192 `fas fa-edit`; the shield was already `fas`). The app ships a v4-shims stylesheet so `fa`/`fas` render identically today, but this keeps the row's markup consistent with itself.\n\n## Test plan\n\n- [x] `vendor/bin/phpunit --filter='OwnStockRowMarkup|StylesheetSyntax|CompiledViews'` \u2014 15 tests, 800 assertions, all green.\n- [x] Screenshots (seeded dealer/order with a transport-eligible vehicle), before/after, 1440px and 390px: the truck's ink matches preview/edit after the change. Confirmed programmatically too \u2014 before: truck `rgb(152,162,179)` vs preview/edit `rgb(71,84,103)`; after: all three `rgb(71,84,103)`.\n",
+            "branch": "workbench/ui/action-icons-consistent-2",
+            "title": "Row action icons share one ink"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915163653-952d58"
+}

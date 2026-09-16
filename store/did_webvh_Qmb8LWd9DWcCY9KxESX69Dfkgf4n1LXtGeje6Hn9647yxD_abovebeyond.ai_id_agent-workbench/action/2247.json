@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c60ae29b59793613b2c3eb24eb84a38bb6cfcfe7",
+            "branch": "workbench/feat/bidding-funnel-on-overview",
+            "files_sha256": "3301c0d767232f45777c29a87597a383b1827948a6f90a5a8a123478e96c6473",
+            "message": "Bidding follow-up happens from the overview, one step at a time"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915155744-264638"
+}

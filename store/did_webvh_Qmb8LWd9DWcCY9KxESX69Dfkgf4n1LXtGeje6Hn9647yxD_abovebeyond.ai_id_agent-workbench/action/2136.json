@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fb873b8362c1d52dae42590a3b2b2d50871d252f",
+            "branch": "workbench/fix/dealer-logo-pdf-and-card",
+            "files_sha256": "b9180ea0f8db33bc6b7303c2a530e8141a9c8749b9db0db9cace5d3aa0b8f86f",
+            "message": "The dealer logo prints on the order, sizes right on the card, and the iframe question form aligns"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915143201-fd565d"
+}

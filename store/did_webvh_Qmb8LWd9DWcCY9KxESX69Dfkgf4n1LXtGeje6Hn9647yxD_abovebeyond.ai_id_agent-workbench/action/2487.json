@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De gateway schrijft sinds v0.24.0 als zijn eigen GitHub App; de box las nog met zes\npersoonlijke tokens zonder vervaldatum, dezelfde waarden die de gateway net had afgelegd.\nZes nieuwe voor alleen lezen zou door dezelfde deur terug naar binnen zijn geweest.\n\n## Wat er verandert\n\n- `GitHub::token($owner)` vraagt in service-modus eerst de gateway om een leestoken\n  (`GET /v1/github/read-token`, control#78): door de App gemunt, alleen leesrechten, een uur\n  geldig, in geheugen en in een klein bestand per eigenaar gecachet tot vijf minuten voor\n  het verloopt (een ronde vraagt per repo, niet per eigenaar). Het bestand\n  `github-token-<owner>` blijft de tweede weg, voor een machine zonder service (local, de\n  tests) of een eigenaar waar de App niet op staat.\n- `Protection` leest langs dezelfde functie in plaats van rechtstreeks het bestand.\n- De credentials-meting meet de nieuwe weg: het gemunte token wordt bewezen door de ene\n  aanroep waar het voor is (`/installation/repositories`), heeft een vervaldatum om te tonen\n  en geen om te bewaken (`renews`), en het facet `gateway` (de kopie van het token die de\n  gateway had, weg by design) wordt het facet `app`: `APP_MINTS` ok, `APP_NOT_MINTING`\n  week, want dan gaat voor die eigenaar lezen \u00e9n schrijven stil.\n- De meldingen \"put a read-only fine-grained token in \u2026\" zeggen nu wat er echt mist: de\n  gateway muntte niets (staat de App op deze eigenaar?) en er is geen terugval.\n\nNa de merge van control#78 en de uitrol ervan kunnen de bestanden `github-token-<owner>`\nop de box weg en de zeven `control-gateway-*`-tokens op GitHub ingetrokken. Dan staat er in\nhet hele systeem nog \u00e9\u00e9n GitHub-credential.\n\n## Bewijs\n\n- `php artisan test`: 678 geslaagd; de credentials-tests herschreven voor de twee wegen\n  (App bewezen door openen, gateway die niet munt is week, het persoonlijke token als\n  terugval; de tests die de gateway-kopie pinden zijn weg, want die kopie is weg)\n- `vendor/bin/phpstan analyse`: 0 fouten; `vendor/bin/pint`: schoon\n",
+            "branch": "workbench/lezen-langs-de-gateway",
+            "title": "Lezen langs de gateway: geen GitHub-tokens meer op de box"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260916035021-f3f08f"
+}

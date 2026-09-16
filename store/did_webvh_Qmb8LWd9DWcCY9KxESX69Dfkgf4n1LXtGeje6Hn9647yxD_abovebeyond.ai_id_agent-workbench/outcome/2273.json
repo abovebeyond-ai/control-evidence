@@ -1,0 +1,15 @@
+{
+    "action": "a769778abeb04c5bba69edc8c186e325",
+    "effect": {
+        "detail": {
+            "base": "8078e054efb5746c6b29b4825a6b56f4a1f3cb44",
+            "branch": "workbench/feature/delegated-access-2",
+            "commit": "5af5ffface832e8a661a7a60b2b3e908d7883655",
+            "files": 30
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2271,
+    "verdict": "ALLOW"
+}

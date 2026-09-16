@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #418 (the agreement print). Shane: \"scherm aanmaak borderel is ook niet ideaal\". At 1440 the \"Maak borderel\" dialog took the theme's `full-modal` width (a 1500px sheet): three full-width inputs with the value far right, seven checkbox rows with the box at the far end of a hairline, a 300px textarea and the button in a footer below the fold.\n\n**What changed** (`resources/views/export/showBorderelModal.blade.php`, `resources/css/refresh.css`):\n\n- The dialog is 640px wide (`#borderel-modal .modal-dialog`), same card treatment as the merchant modal.\n- Overnameprijs, Huidige kilometerstand and Aantal sleutels share one row (`ui-form-grid ui-form-grid--3 ui-form-grid--numbers`), each with its unit in front (\u20ac, km, key icon) and tabular figures; on a phone they stack.\n- The seven documents are a two-column checklist (`ui-check-grid`) of `x-ui.checkbox` rows: box left of its label, label and box one target, 44px rows, no hairlines; one column on a phone. Group label reuses `borderel.documents_recieved`.\n- Omschrijving is an auto-growing textarea (min 4 rows, the existing `autogrow` of `x-ui.textarea`).\n- The action sits in `ui-form-actions` at the end of the form; the `modal-footer` is gone.\n\nNo field names, values or controller changes: the form posts `takeover_price`, `actual_millage`, `keys`, `check[...]` and `description` exactly as before (`BorderelFormTest`, `@rule B1-6.2`).\n\n**Screenshots** (worktree `.playwright-mcp/agreement-borderel/`): `borderel-1440-before.png`, `borderel-1440-after.png`, `borderel-390-before.png`, `borderel-390-after.png`.\n\nFilter run: `Agreement|Borderel|Export|Bidding|Option|StylesheetSyntax|AlpineExpression|HandlerWiring|CompiledViews|RulesCoverage|RulesIdentity`: OK (102 tests, 999 assertions).\n",
+            "branch": "workbench/ui/borderel-form",
+            "title": "The borderel form reads as a form"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915101855-f1c7ea"
+}

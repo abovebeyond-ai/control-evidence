@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8078e054efb5746c6b29b4825a6b56f4a1f3cb44",
+            "branch": "workbench/feature/delegated-access-2",
+            "files_sha256": "6b95d92da1dc81037d1dd74082b619e5553a8b65a931d29aa33b3b089a82d5e4",
+            "message": "Delegated access: an admin can help inside a dealer's account, with consent and a trail"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915163355-41768e"
+}

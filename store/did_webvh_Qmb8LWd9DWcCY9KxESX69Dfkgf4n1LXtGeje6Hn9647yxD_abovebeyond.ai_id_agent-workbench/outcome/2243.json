@@ -1,0 +1,15 @@
+{
+    "action": "78cb4941edfa7606234a8809b760944e",
+    "effect": {
+        "detail": {
+            "base": "08f044feb4da9839dd91029502af73f55174026b",
+            "branch": "workbench/feat/iframe-url-language-picker",
+            "commit": "8d0b52acbfdbeb13c50a762f66672b871ce90257",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2241,
+    "verdict": "ALLOW"
+}

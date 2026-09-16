@@ -1,0 +1,16 @@
+{
+    "action": "d4bb64fadf0b8e9168d6221e9c9a5251",
+    "effect": {
+        "detail": {
+            "base": "42f11277b8fdfa4bb6124bddee9a8d4c7e77cc50",
+            "branch": "workbench/docs/readme-forge-badge",
+            "commit": "2455ae4cca0f8640bc7264b85d2556be020b4169",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2472,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e13892c03b3bebb27024098df1532ba981b12ae4",
+            "branch": "workbench/de-vm-op-v0-25-0",
+            "files_sha256": "271e77c23644fe9e5950c3a5e33c0dfdc7fc346c939592ab50488759fef05100",
+            "message": "De VM op v0.25.0: een leestoken van de App"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260916035005-947b55"
+}

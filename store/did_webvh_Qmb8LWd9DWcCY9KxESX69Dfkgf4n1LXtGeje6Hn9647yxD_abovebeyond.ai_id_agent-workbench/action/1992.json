@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Printing the takeover agreement (\"overeenkomst van overname\") from the bidding screen 500ed on production since ee6a5438 (2026-09-13):\n\n```\nSQLSTATE[42S22]: Unknown column 'name' in 'SELECT' \u2026 select name, id from option_values where id in (\u2026)\n```\n\n`Vehicle::agreementOptionLines()` plucked `name` from the query builder, but `option_values` has no `name` column: it is an accessor over `name_nl`/`name_fr`/\u2026 by locale. The old template called `OptionValues::find($id)->name` per option and went through the accessor.\n\n**Fix** (`app/Models/Vehicle/Vehicle.php`): load the models (`->get()`, still one query) and map through the accessor. Only integer-like `option_value`s are looked up as ids; free text and decimals such as the `4.6` seen in the production query print as their own text, exactly what `find()` returning null gave before. `VehicleOptions::agreementLines` is unchanged.\n\n**Tests**: `tests/Feature/AgreementOptionLinesTest.php` (`@rule B1-6.2`): dropdown value prints its localized name (nl and en), a decimal passes through, checkbox options are left out, and the full `export.print.agreement_print` template renders for such a vehicle. Fails on main with the production error, green here.\n\n**Finding**: `docs/bedrijfsregels/bevindingen/2026-09-15-overeenkomst-van-overname-afdrukken-gaf-500.md` (opgelost, ernst nu).\n\nFilter run: `Agreement|Export|Bidding|Option|RulesCoverage|RulesIdentity`: OK (90 tests, 270 assertions).\n\nThe borderel form redesign from the same brief follows in a second PR.\n",
+            "branch": "workbench/fix/agreement-print-and-borderel-form",
+            "title": "The takeover agreement prints again"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915100727-de1515"
+}

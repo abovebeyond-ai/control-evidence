@@ -1,0 +1,15 @@
+{
+    "action": "f06a5b1e1c324806b3b10e19fb65a58d",
+    "effect": {
+        "detail": {
+            "base": "7ab646e5519ce6b7068f8503a6c4a36d0c468e17",
+            "branch": "workbench/fix/removebg-background-as-bytes-2",
+            "commit": "26b688e6022a04f4499a8a25eb766b51779811f7",
+            "files": 17
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2160,
+    "verdict": "ALLOW"
+}

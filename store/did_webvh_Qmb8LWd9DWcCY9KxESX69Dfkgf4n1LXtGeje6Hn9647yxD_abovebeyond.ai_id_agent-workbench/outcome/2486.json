@@ -1,0 +1,16 @@
+{
+    "action": "cb2b0cc3149bc98f60ce108d5bc20a8a",
+    "effect": {
+        "detail": {
+            "base": "7371f03d63d91189a3971cd66501d96a0e457dd6",
+            "branch": "workbench/lezen-langs-de-gateway",
+            "commit": "6ff3fdce94efedd729ef33330f9d7a0724e91f01",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2484,
+    "verdict": "ALLOW"
+}

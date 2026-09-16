@@ -1,0 +1,15 @@
+{
+    "action": "aa2c9c4d403a4c56187427b0b3080005",
+    "effect": {
+        "detail": {
+            "base": "66260bb78a295a156265d952ca3e817ec5a4e2f3",
+            "branch": "workbench/staging-is-productie-geworden",
+            "commit": "620f69717a97b1f18154351ab5e9ec521a12e668",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1899,
+    "verdict": "ALLOW"
+}

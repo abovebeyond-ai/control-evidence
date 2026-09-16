@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up on #443 after Shane looked at the deployed list.\n\n## Actions always visible\n- **Bidding rows**: \"Toon aan klant\" (secondary) and \"Biedingen\" (primary) side by side on desktop; on the phone card \"Bekijk biedingen\" full width first, \"Toon aan klant\" under it next to the \u22ef button. \"Toon aan klant\" is no longer buried in the \u22ef menu.\n- **\"Enkel overnamedocumenten\" rows**: the price is agreed and printing is the work, so the two prints are the buttons (\"Overeenkomst\", \"Borderel\" primary) and \"Toon aan klant\" is not offered. Kopi\u00ebren / Aanpassen / Verwijderen stay in \u22ef (plus the prints on bidding rows).\n\n## How long it still runs\nNext to the status badge in Looptijd (and as the line under the title on the phone card): open \u2192 \"nog 5 dagen\", \"laatste dag\" on the end day; closed within the assignment window \u2192 \"nog 10 dagen om toe te wijzen\" (`winnerDaysLeft`, inclusive as of PR 435); assigned or past the window \u2192 the badge alone. `ExportVehicle::windowHint()`, keys in nl/fr/en/de/es (`ui.bidding_days_to_go`, `ui.bidding_last_day`, `ui.bidding_days_to_assign`, `ui.bidding_agreement`, `ui.bidding_borderel`). Dates stay as the quiet second line.\n\n## Page lead\n`.ui-page-lead` gets `max-width: 90ch` from 1024 px (70ch stays below): the two sentences under \"Mijn aangeboden wagens\" now take two lines at 1440 instead of three. The other two users of the class (settings/location and release_notes headers) use it as the flex wrapper of way-back + title; a wider cap changes nothing there.\n\nAlso: the primary button in the row had invisible text (the list paints links blue on blue); fixed with a scoped colour.\n\n## Tests\n`ExportListPhoneCardTest` (5 tests, 65 assertions): both button sets on row and card, the order Biedingen-first on the card, the hints for open / last day / closed-in-window / past-window / assigned. Filter `Export|Bidding|StylesheetSyntax|AlpineExpression|HandlerWiring|CompiledViews|RulesCoverage|RulesIdentity`: 76 tests, 975 assertions, green. Rule B1-1.17 updated.\n\nScreenshots (`scratchpad/shots-bidding-lists-2/`): `exports-after2-nl-1440.png`, `exports-after2-fr-1440.png`, `exports-after-390.png`, `exports-after-390-menu.png`.\n",
+            "branch": "workbench/ui/bidding-and-sold-lists-2",
+            "title": "Bidding list: two visible actions per row, how long a bidding still runs, wider page lead"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915152146-e8715f"
+}

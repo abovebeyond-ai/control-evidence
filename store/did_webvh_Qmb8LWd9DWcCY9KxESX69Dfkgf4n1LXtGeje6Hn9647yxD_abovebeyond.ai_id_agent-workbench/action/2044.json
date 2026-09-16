@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4e931cb102bc20f23397ede2eb11e08c7fb5979f",
+            "branch": "workbench/fix/pdf-images-without-http-loopback-2",
+            "files_sha256": "534638eb659e59a7d2a063fc254b864a6ebe4daf26a08d371bb955c64e91ca4e",
+            "message": "PDFs read their photos directly instead of calling the site"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915102713-7bcb3a"
+}

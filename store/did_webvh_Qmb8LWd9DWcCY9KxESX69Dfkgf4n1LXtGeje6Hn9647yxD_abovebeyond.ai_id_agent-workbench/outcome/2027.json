@@ -1,0 +1,15 @@
+{
+    "action": "eab30934d0d2738e2c761c072494ae50",
+    "effect": {
+        "detail": {
+            "base": "1027a3e653eaff7faa640f1eaaad5332bbe091f9",
+            "branch": "workbench/feat/ownstock-sort-internal-number",
+            "commit": "ca87303af7e70e27efc4e4bd69c8c67993e827b5",
+            "files": 31
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2025,
+    "verdict": "ALLOW"
+}

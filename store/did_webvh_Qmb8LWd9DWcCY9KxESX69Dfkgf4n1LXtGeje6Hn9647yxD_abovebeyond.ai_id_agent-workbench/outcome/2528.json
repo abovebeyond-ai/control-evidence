@@ -1,0 +1,16 @@
+{
+    "action": "4eef661f1260eee7f2515882218fa01a",
+    "effect": {
+        "detail": {
+            "base": "416087a3c52a895832558b14bd4ecbede542c0f3",
+            "branch": "workbench/what-happens-not-what-is-set",
+            "commit": "3cabb592d268ef4fec07c2ce07f75f93a3cb6a08",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2526,
+    "verdict": "ALLOW"
+}

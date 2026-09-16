@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2e5a6f7fbea0577f6752d1b3e3820e146cf3821e",
+            "branch": "workbench/ui/damage-extra-button-position-2",
+            "files_sha256": "e7def3522b11d07491dd940c5fea56162c8ec10f13cce3454d18b7c439fb0590",
+            "message": "The extra-damage button leaves the diagram"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915151134-d114c0"
+}

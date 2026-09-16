@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "08f044feb4da9839dd91029502af73f55174026b",
+            "branch": "workbench/feat/iframe-url-language-picker",
+            "files_sha256": "d4885dd2492d9e25e067fe87dd66f39ae8cef9284776b0d274aa8c39f64012ff",
+            "message": "The iframe URL comes with a language picker"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915155446-8637d7"
+}

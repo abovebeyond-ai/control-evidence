@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "**Waarom.** \"De laatste deploy mislukte\" kwam tot vandaag uit de API van Forge,\nen die lezing vroeg een token dat elke `.env` van elke site opent, welke\nscopes je ook kiest: gemeten op 16 september met een token dat alleen\n`organization:view` en `server:view` had, en dat de environment van een site\ngewoon teruggaf (1.307 bytes, `APP_KEY=` erin). Alle Forge-tokens buiten de\nElixir-box zijn diezelfde dag ingetrokken, en de volgende stap is dat ook\ndie ene verdwijnt. Forge's deploylijst kende bovendien de quick deploys\nniet: ze zei \"laatste deploy 8 juli\" voor een site die die ochtend main\ndraaide.\n\n**Wat.** De webhook die Forge na elke deploy stuurt heeft allebei wat de\nlijst miste: hij vuurt bij elke deploy, en het token zit bij Forge, niet bij\nons. Dus:\n\n- `App\\Support\\Deploys` bewaart wat de webhook zegt (status, commit,\n  bericht, auteur, tijd) in het rapport `elixirDeploys` per project, per site\n  de laatste dertig, nieuwste eerst. Een uitkomst die Forge niet noemt is\n  `unknown` en telt nooit als mislukt.\n- `WebhookController::forge` bewaart eerst en vraagt dan de meting aan, zoals\n  voorheen. Het record bestaat dus ook als Elixir uitstaat.\n- Een kaart **Deploys** naast Deployed. Ze rendert Elixirs oordeel (sleutel\n  `deploys`, facet `deploy`) en houdt zelf geen regel: een mislukte deploy\n  zonder oordeel staat op achtergrond, nooit op ok, en een project dat nooit\n  via Forge deployde heeft geen kaart.\n\n**Wat volgt** (elixir): de Forge-meting eruit, een meting `deploys` die dit\nrapport leest via `GET ingest/reports/elixirDeploys/{slug}` op het\nfabric-token en `DEPLOY_FAILED` oordeelt, en dan het laatste Forge-token van\nde box. De kaart Forge hier blijft staan tot Elixir die sectie niet meer\nstuurt; ze rendert alleen wat er is en verdwijnt dan vanzelf.\n\nTests: 578 groen (twee nieuw: het bewaren, en de kaart in drie standen).\n",
+            "branch": "workbench/the-webhook-is-the-record",
+            "title": "De deploy-webhook is het record: geen Forge-token voor de laatste deploy"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260916054150-3df5c3"
+}

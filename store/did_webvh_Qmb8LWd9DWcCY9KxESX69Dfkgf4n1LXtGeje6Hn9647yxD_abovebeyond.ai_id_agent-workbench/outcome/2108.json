@@ -1,0 +1,15 @@
+{
+    "action": "239206bd14b002dcce7d331502f28a40",
+    "effect": {
+        "detail": {
+            "base": "993e6953a592d9d74409fcc2a1dc0afca23a7bd7",
+            "branch": "workbench/ui/publish-switch-render",
+            "commit": "cbc0fbb8a62f748c89ece8a75e783850ce29920f",
+            "files": 1
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2106,
+    "verdict": "ALLOW"
+}

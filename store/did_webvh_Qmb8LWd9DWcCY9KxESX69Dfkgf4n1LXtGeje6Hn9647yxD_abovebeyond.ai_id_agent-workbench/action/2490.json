@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c2c3336904f06e9c7020fa708e0e7353104c9ead",
+            "branch": "workbench/chore/require-php-85",
+            "files_sha256": "7365f5fa0f7652e8bf0077e9d969bcc88499357a7915ae4aedd42afc3f24c478",
+            "message": "Require PHP 8.5: nothing below it is tested or deployed"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916035142-530798"
+}

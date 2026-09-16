@@ -1,0 +1,16 @@
+{
+    "action": "199092b2b4f6ad13b19a1b5e2284f973",
+    "effect": {
+        "detail": {
+            "base": "d9ff7b447981da8d396f1f638950d939ca8720c2",
+            "branch": "workbench/deploy-keys-in-plaats-van-een-token",
+            "commit": "ac0609ac430b9eb4efc827514ad928b60206ed21",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2496,
+    "verdict": "ALLOW"
+}

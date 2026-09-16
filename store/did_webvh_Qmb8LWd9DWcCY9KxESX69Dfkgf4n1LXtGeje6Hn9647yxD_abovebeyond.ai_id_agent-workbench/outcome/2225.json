@@ -1,0 +1,15 @@
+{
+    "action": "67a17af6e0f9b3b30bc04b517cacde91",
+    "effect": {
+        "detail": {
+            "base": "37781de8c38954e8d050e59ea0763125b4e5bf31",
+            "branch": "workbench/fix/ui-locale-everywhere-4",
+            "commit": "a1a2414aa6fe8df71517828b1fced5c2ba57f85a",
+            "files": 49
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2223,
+    "verdict": "ALLOW"
+}

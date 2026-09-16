@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "02c66a5e65346b9ef372ff9390774e2a7615ceed",
+            "branch": "workbench/fix/portal-publish-switch",
+            "files_sha256": "29035a8eb7cb22cca99bf5610c71303c21a678ce48c5be8a67b65bc015bdd9fa",
+            "message": "Bring the publish switch back on the own-stock row"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915100537-81e883"
+}

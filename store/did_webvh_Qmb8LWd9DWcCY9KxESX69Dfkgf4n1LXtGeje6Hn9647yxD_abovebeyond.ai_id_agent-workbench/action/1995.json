@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1027a3e653eaff7faa640f1eaaad5332bbe091f9",
+            "branch": "workbench/fix/new-vehicle-defaults-stocklist-portals",
+            "files_sha256": "e634c9fea7153cef35b74d0b34bb6de1a370ff2a75c71f1bb42045a9076958c0",
+            "message": "A new vehicle starts on the stocklist and on the dealer's portals again"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915101421-6faea6"
+}

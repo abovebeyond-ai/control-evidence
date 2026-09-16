@@ -1,0 +1,15 @@
+{
+    "action": "15e90cd1c0177cf82f26170cb4a0644b",
+    "effect": {
+        "detail": {
+            "base": "72422d97b92dbe327e943e3dfebe85c6ca022381",
+            "branch": "workbench/ui/phone-stepper-and-editor-scripts-2",
+            "commit": "62d0f27fe5bf5bcce87544bfe2eb6918ecaee7fd",
+            "files": 6
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2316,
+    "verdict": "ALLOW"
+}

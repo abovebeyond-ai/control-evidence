@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8e7d9ce51d6ca260c0136606d34a8dd62d4dc479",
+            "branch": "workbench/ui/bidding-and-sold-lists",
+            "files_sha256": "aecbb6f482f5e911d41fc787aac74e922974ff6fe2b8920f32d1c0071ff687f2",
+            "message": "Sold list newest first, bidding cards for a phone, clearer lead links, damage first on a bidding"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915144641-8c6256"
+}

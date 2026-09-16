@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "02c66a5e65346b9ef372ff9390774e2a7615ceed",
+            "branch": "workbench/fix/agreement-print-and-borderel-form",
+            "files_sha256": "cb451464c91c046fec41c165db094539b1a396625ada206de260fb873ae844b6",
+            "message": "Print the takeover agreement again: option value names through the accessor, not a column"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915100727-de1515"
+}

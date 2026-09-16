@@ -1,0 +1,16 @@
+{
+    "action": "d641519779541a0545ad6a29022b9a69",
+    "effect": {
+        "detail": {
+            "base": "0fbf187530deaf5c99bd29790c8873f85dbc3f99",
+            "branch": "workbench/feat/demo-screens-seeder",
+            "commit": "407bb2b094678711007ec7e8763e058581b95757",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2502,
+    "verdict": "ALLOW"
+}

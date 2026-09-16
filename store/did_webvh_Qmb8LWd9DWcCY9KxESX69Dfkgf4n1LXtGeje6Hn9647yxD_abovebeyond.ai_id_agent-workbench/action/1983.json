@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "02c66a5e65346b9ef372ff9390774e2a7615ceed",
+            "branch": "workbench/feat/propose-to-relation-price-2",
+            "files_sha256": "aa2de4ad653b2734f8326f6e172a0d3dde37a0baf58b08ada48de0255f36e79f",
+            "message": "Proposing a vehicle carries a price: own retail price, or trade price plus margin"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915100712-5c8655"
+}

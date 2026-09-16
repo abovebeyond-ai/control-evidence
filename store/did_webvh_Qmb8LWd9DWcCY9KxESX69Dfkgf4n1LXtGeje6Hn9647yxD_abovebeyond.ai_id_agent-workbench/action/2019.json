@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1027a3e653eaff7faa640f1eaaad5332bbe091f9",
+            "branch": "workbench/ui/borderel-form",
+            "files_sha256": "adfe00f6b15c93aff58e83eed93273c46d20f3d1c1dce8df51527070ca6de5e4",
+            "message": "Borderel form: a 640px dialog, numbers on one row, documents as a two-column checklist"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915101855-f1c7ea"
+}

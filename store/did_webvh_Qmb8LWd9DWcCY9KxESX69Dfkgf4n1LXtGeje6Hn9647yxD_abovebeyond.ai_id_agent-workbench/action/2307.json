@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "productionTheirs": false
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20260915173859-a5f4f4"
+}

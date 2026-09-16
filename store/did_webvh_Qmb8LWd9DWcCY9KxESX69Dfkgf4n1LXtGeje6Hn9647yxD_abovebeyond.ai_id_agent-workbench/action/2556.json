@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3f5e9a7446dd57b2ce1831f50235b922cf75bc2d",
+            "branch": "workbench/ui/leads-widget-readable",
+            "files_sha256": "b2c0d8595836d6d7d799e0c8b61bcd0b60aacd8585703fc2fb6e389a25a28337",
+            "message": "Worklists: the leads widget reads as cards, the question first"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916061423-3b68e3"
+}

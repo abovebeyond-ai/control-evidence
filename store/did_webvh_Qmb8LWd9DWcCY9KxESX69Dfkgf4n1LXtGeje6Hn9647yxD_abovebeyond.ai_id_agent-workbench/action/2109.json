@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n- Fixes the \"Publiceren op portalen\" switch (added in #415) rendering with a square left edge and an overlapping knob on the own-stock row.\n- Root cause: `#cars_table input[type=checkbox]` (the row-selection checkbox styling) is an ID selector, which outranks the single-class `.ui-switch-input` rule that hides the native checkbox (`opacity: 0; width: 0; height: 0;`). The switch's `<input type=\"checkbox\">` lives inside `#cars_table` too, so it inherited `opacity: .85; width: 15px; height: 15px;` from that rule and rendered as a visible native checkbox layered on top of the custom `.ui-switch-track` pill.\n- Scoped the row-selection rule with `:not(.ui-switch-input)` so it only targets the actual selection checkboxes; the switch's input stays hidden and only the drawn track/knob show, matching the settings-page `ui-toggle-row` switch.\n\n## Test plan\n- [x] `vendor/bin/phpunit --filter \"OwnStockRowMarkup|StylesheetSyntax|AlpineExpression\"` \u2014 17 tests, 794 assertions, green.\n- [x] `vendor/bin/phpunit --filter \"RulesCoverage|RulesIdentity\"` \u2014 7 tests, 12 assertions, green.\n- [x] Rendered the row directly (`view('ownstock._wagen_rij', ...)`) with a dealer that has the portal link, wrapped it in the real theme CSS, and screenshotted the open portals panel at 1440 and 390 before/after the fix (switch on and off). The track is now a clean rounded pill on both ends with the knob fully inside it, matching the settings switch.\n",
+            "branch": "workbench/ui/publish-switch-render",
+            "title": "The publish switch looks like every other switch"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915130340-e1d856"
+}

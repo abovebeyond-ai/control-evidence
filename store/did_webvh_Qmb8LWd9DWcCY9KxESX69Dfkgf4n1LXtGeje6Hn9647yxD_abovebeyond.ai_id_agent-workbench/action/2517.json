@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op 2026-09-09 kwam er alsnog \u00e9\u00e9n bericht door de vier vallen van SpamGuard: een echte browser, die wacht, het lokaas laat staan en \u00e9\u00e9n loterijlink stuurt. De vallen meten gedrag en dit gedrag is dat van een mens. Wat overblijft is de browser zelf laten toetsen: Cloudflare Turnstile op het contact- en het nieuwsbriefformulier, onzichtbaar voor bijna iedereen (`interaction-only`), server-side geverifieerd in SpamGuard na de goedkope vallen en v\u00f3\u00f3r de teller.\n\nDe vallen blijven staan: in de vier dagen v\u00f3\u00f3r deze wijziging hielden ze op hoet.be 265 inzendingen tegen (221 te snel, 44 lokaas) zonder dat iemand een script laadde.\n\n**Gedrag**\n- Zonder `TURNSTILE_SITE_KEY`/`TURNSTILE_SECRET_KEY` staat de wachter uit en verandert er niets.\n- Met sleutel: geen token of afgekeurd token = dezelfde stille bevestiging als de andere weigeringen, met een regel in het log.\n- Cloudflare onbereikbaar = geen oordeel, bericht gaat door (een storing bij hen mag geen klant zijn bericht kosten).\n- CSP: `script-src` en `frame-src` laten `challenges.cloudflare.com` toe.\n\n**Tests**: zeven nieuwe (uit/aan, token ontbreekt, afgekeurd, goedgekeurd, Cloudflare onbereikbaar, widget \u00e9\u00e9n keer per pagina, CSP). Lokaal 335 groen; de vier die in de worktree falen (BuildStamp, EnvCheck \u00d72, SchemaMarkup) hangen aan `.env` en de build-stempel die de worktree niet heeft en falen daar ook zonder deze wijziging.\n\n**Na de merge**: widget \"hoet.be\" aanmaken in Cloudflare (account accounts@abovebeyond.ai, Turnstile, modus Managed, hostnames hoet.be en www.hoet.be) en de twee sleutels in de omgeving van de site zetten in Forge. Tot dan staat de wachter uit. Let op bij het aanzetten: wie de contactpagina al open had v\u00f3\u00f3r de deploy verstuurt zonder token en wordt geweigerd; dat is het deployvenster en niet meer.\n\n**Privacy**: de cookielijst (`[cookielijst]`, banner en privacypagina) krijgt een regel over Turnstile in vier talen, alleen als de sleutel staat. Let op: de live privacypagina toont nog altijd de handgeschreven lijst met PHPSESSID; het teken `[cookielijst]` staat blijkbaar nog niet in het Sanity-document. Daarnaast hoort Cloudflare bij artikel 5 (verwerkers) in de tekst zelf; dat is een CMS-wijziging en zit niet in deze PR.\n",
+            "branch": "workbench/turnstile-guard",
+            "title": "Turnstile als wachter achter de vier gratis vallen"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260916053548-f37483"
+}

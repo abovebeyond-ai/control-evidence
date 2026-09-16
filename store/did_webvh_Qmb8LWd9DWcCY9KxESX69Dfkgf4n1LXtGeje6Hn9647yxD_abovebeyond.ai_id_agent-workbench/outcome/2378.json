@@ -1,0 +1,15 @@
+{
+    "action": "8f495190a3eb4f3dc77dfb44e02ea3e9",
+    "effect": {
+        "detail": {
+            "base": "3f4207d8f0d9a6825e95895fd0eb8efe3fd7f789",
+            "branch": "workbench/het-record-zegt-welke-weg",
+            "commit": "cf759788b23399169f7de775750b2b155d8f603a",
+            "files": 2
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2376,
+    "verdict": "ALLOW"
+}

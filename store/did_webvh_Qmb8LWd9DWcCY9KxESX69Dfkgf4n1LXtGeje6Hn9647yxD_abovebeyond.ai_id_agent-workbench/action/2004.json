@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n- `resources/lang/nl/validation.php` only had the 21 custom keys the app itself introduced (`form-has-errors`, `verplicht`, `tussen`, ...); none of Laravel's standard rule keys existed, so any field not covered by a `FormRequest::messages()` override fell back to the framework's English default even with `app.locale` on `nl`. `VehicleForm::save()` (the vehicle sheet) never overrides `messages()` at all, so every field on it was affected \u2014 e.g. an empty mileage rendered \"The mileage field is required.\"\n- Added the full Laravel 12 standard rule set to `nl`, `fr`, `de` and `en` (the English default file was itself missing several newer rules like `enum`, `prohibited_if`, `multiple_of`). The 21 pre-existing short keys (`max`, `min`, `numeric`, ...) are left untouched \u2014 those are called directly from `messages()` overrides elsewhere and changing them would touch already-working screens.\n- Added an `attributes` array to each locale so `:attribute` renders a real field name instead of the raw column: derived from `VehicleForm::fieldLabels()` for the vehicle sheet, and from the `rules()` of the order/offer/relation/settings requests for the rest.\n- `es` ships as a language file for the rest of the app, but `SetLangMiddleware` never lists `es` among its supported locales, so a dealer can never actually select it \u2014 left out of this pass; noted in the finding file.\n\n## Test plan\n- [x] New `tests/Feature/ValidationLanguageTest.php`: `VehicleForm::save()` with an empty mileage now renders \"Het veld kilometerstand is verplicht.\"; an uncovered `in:` rule on the order form renders \"Het geselecteerde garantietype is ongeldig.\"; `fr`/`de` also render in their own language.\n- [x] `vendor/bin/phpunit --filter \"Validation|VehicleForm|Order|RulesCoverage|RulesIdentity\"` \u2014 89 tests, all green.\n- [x] `vendor/bin/phpunit --filter \"AlpineExpressionTest|HandlerWiringTest|CompiledViewsTest|StylesheetSyntaxTest\"` \u2014 11 tests, all green.\n- [x] Finding logged: `docs/bedrijfsregels/bevindingen/2026-09-15-validatiefouten-in-het-engels.md` (opgelost).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/validation-messages-dutch",
+            "title": "Validation speaks Dutch"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915101620-88590d"
+}

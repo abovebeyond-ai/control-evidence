@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7595068585757633c1a0ea36dc8dd849a3c43f56",
+            "branch": "workbench/ui/showroom-slide-specs",
+            "files_sha256": "5cecc3f0b98553fa2d894441b7810ade1439e595f9dce3d0879a835d9524237b",
+            "message": "Keep each showroom slide spec on one line"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915084517-29c415"
+}

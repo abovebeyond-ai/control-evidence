@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "72422d97b92dbe327e943e3dfebe85c6ca022381",
+            "branch": "workbench/feat/admin-integrations-status",
+            "files_sha256": "918bb46b92608937196998ec8e0a4ec6c7b074b26ab846e132ab105c66d15343",
+            "message": "Koppelingen: the admin sees the live state of every integration"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915181113-0fe4ec"
+}

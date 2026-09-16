@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "12a912402891c30694cb5a98b6b9904bace744e6",
+            "branch": "workbench/ui/profile-dropdown-desktop-align",
+            "files_sha256": "96ba112f69686606c0b1790b0e17b6ade85b676a826eb178f58a14b660b77299",
+            "message": "Right-anchor the profile dropdown menu independent of stylesheet load order"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915174543-bab57a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n- The profile dropdown (`.ui-user-menu`, opened from \"Shane\" top-right) relied entirely on the Bootstrap `dropdown-menu-right` class to right-align itself against `.dropdown-menu`'s default `left: 0`. Both classes have equal specificity, so which one wins is a matter of source order between two separately built stylesheets (the purchased theme CSS and `refresh.css`), not something guaranteed by any single file.\n- `.ui-user-menu` now sets `right: 0; left: auto;` directly, so the alignment no longer depends on load order between those two stylesheets, plus a `max-width: calc(100vw - 24px)` safety net so it can never run past the viewport edge.\n- The `.ui-language-menu` (\"NL\") already set `right: 0; left: auto;` directly (not via the Bootstrap class) and needed no change.\n- The mobile bottom-sheet behaviour for `.u-pro .dropdown-menu.show` under 768px (from a recent PR) is untouched and still verified working.\n\n## Test plan\n- [x] `vendor/bin/phpunit --filter='HandlerWiring|AlpineExpression|StylesheetSyntax|CompiledViews|RulesCoverage|RulesIdentity'` \u2014 19 tests, 769 assertions, all green.\n- [x] Manual screenshot check at 1440px (desktop) and 390px (mobile) confirming the menu stays right-anchored, fully on-screen, and the mobile bottom sheet still opens correctly.\n",
+            "branch": "workbench/ui/profile-dropdown-desktop-align",
+            "title": "The profile menu opens inside the screen on desktop"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915174543-bab57a"
+}

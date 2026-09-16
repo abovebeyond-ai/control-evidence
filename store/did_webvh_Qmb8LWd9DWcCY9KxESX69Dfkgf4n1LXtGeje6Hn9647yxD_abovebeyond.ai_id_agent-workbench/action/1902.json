@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De staging op `stocklistdealer-um9ljxus.on-forge.com` is naar productie gegaan als\n`traders.stocklistdealer.eu`. Er is nu \u00e9\u00e9n omgeving, en de verklaring zegt dat.\n\nZolang de regel bleef staan, mat Elixir een adres dat niemand meer onderhoudt en meldde het\neen geweigerd app-token op staging als achtergrondruis. Wat weg is, hoort niet gemeten.\n",
+            "branch": "workbench/staging-is-productie-geworden",
+            "title": "Staging is productie geworden: \u00e9\u00e9n omgeving"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915080836-e777d7"
+}

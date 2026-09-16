@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d483b0398cffb294d86e84de5ed75b722ec030f5",
+            "branch": "workbench/ui/stocklist-filter-toggle-spacing",
+            "files_sha256": "59a8d3d066fd033992a0caaeb222bd6da059f57e1c2d666f452bc289383a8fea",
+            "message": "Stocklist filter panel: switch spacing, price steps, and per-value counts"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915093557-563b15"
+}

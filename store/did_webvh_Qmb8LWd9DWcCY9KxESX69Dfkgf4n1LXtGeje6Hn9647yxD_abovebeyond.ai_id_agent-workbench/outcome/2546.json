@@ -1,0 +1,16 @@
+{
+    "action": "8fcd07b5df12167598362df30a84c809",
+    "effect": {
+        "detail": {
+            "base": "837f3e810fb091ec3122723700e2625f82a44ef2",
+            "branch": "workbench/form-marks",
+            "commit": "d47694477aa3732a755c414cc53298b65bb026d0",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2544,
+    "verdict": "ALLOW"
+}

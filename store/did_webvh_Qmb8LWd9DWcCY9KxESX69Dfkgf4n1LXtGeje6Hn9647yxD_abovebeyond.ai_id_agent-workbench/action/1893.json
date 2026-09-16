@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "66260bb78a295a156265d952ca3e817ec5a4e2f3",
+            "branch": "workbench/ui/shield-icon-and-profile-menu",
+            "files_sha256": "f4ae6b14d4c2f12d9db5e18f39e474e16efb4692d154fe2904ef0ba19612e5c6",
+            "message": "The warranty shield shows again and the profile menu fits a phone"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915080431-b9d1b0"
+}

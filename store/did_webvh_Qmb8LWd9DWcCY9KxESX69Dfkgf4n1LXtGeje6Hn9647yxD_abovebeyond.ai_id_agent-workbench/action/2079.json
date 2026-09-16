@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n- Buttons mixed capitalisation (\"annuleren\" next to \"Voorstellen\", \"aanpassen\" next to \"Toch afdrukken\") because the `global.*` lang keys behind most buttons were lowercase action verbs, and only some of the ~30 call sites per key wrapped the result in `ucfirst()`.\n- Fixed at the root instead of at each call site: the action-verb values in `resources/lang/{nl,fr,en,de,es}/global.php` (`cancel`, `add`, `edit`/`aanpassen`, `save`/`opslaan`, `delete`, `close`, `confirm`, `download`, `duplicate`, `logout`, `next`, `previous`, `print_anyway`, `reset`, `select`, `send`, `view`, `yes`, `no`, `zoek`) are sentence case now, so every `.ui-button` / `.ui-action-button` / dialog / modal footer reads the same without a per-call-site wrapper. `es/global.php` only defined 4 of these keys, all already capitalised, so it needed no change.\n- Removed the now-redundant `ucfirst(trans('global.<key>'))` wrappers (~90 call sites across `resources/views/**`). Left two mid-sentence usages alone on purpose (`ownstock/_tabs/photos.blade.php` \"Foto's toevoegen\", `ownstock/_tabs/damage.blade.php` \"Schade opslaan\") since those continue a sentence rather than start a label.\n- Did **not** use `text-transform` in CSS: it would also shout-case brand names like \"RealGarant\" and \"Car-Pass\" that appear inside button labels elsewhere.\n- Updated one existing test (`SettingsPhoneLayoutTest::test_the_showroom_download_label_starts_with_a_capital`) whose second assertion compared against a live `trans('global.download')` call that is now itself capitalised, making the old differential check meaningless.\n- New test `ButtonLabelCapitalizationTest`: a static guard that every action-verb key in every shipped language starts with a capital, plus rendered-page checks for the confirm component, the dialog labels (via their `global.*` source keys), the propose modal footer, the order modal footer, and a settings save button.\n- Finding filed and resolved: `docs/bedrijfsregels/bevindingen/2026-09-15-button-labels-niet-overal-een-hoofdletter.md`.\n\n## Test plan\n- [x] `vendor/bin/phpunit --filter 'Dialog|Confirm|Propose|Order|Settings|CompiledViews|RulesCoverage|RulesIdentity|ButtonLabelCapitalization'` \u2014 172 tests, 977 assertions, all green.\n- [x] Screenshot: own-vehicles list showing the \"Aanpassen\" button (was lowercase \"aanpassen\" before this fix).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/ui/button-labels-capitalised",
+            "title": "Button labels start with a capital everywhere"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915112915-c5711c"
+}

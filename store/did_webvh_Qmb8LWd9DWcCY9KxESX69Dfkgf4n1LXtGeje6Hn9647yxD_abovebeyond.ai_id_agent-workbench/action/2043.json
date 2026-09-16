@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4e931cb102bc20f23397ede2eb11e08c7fb5979f",
+            "branch": "workbench/feat/ownstock-sort-internal-number-2",
+            "files_sha256": "42fe0bf36cddfd8495da16b5ed361696ad01b01ec78e457d91ff84c2c5abf85a",
+            "message": "Own stock: sort by internal number, drop the XML import, filters as selects"
+        },
+        "resource": "stocklistdealer-eu/stocklistdealer"
+    },
+    "run": "workbench-20260915102652-bd4ff1"
+}
