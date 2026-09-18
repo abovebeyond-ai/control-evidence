@@ -1,0 +1,16 @@
+{
+    "action": "83e40358215045bc9ac4a1868e60afa4",
+    "effect": {
+        "detail": {
+            "base": "f0f2f5a0ad7bd8a0dd79e321fc1d5ed29ddabf92",
+            "branch": "workbench/van-oordeel-naar-hand",
+            "commit": "7d7aa34ba0567ef7dca80aa6b98e9432e28efa86",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2820,
+    "verdict": "ALLOW"
+}

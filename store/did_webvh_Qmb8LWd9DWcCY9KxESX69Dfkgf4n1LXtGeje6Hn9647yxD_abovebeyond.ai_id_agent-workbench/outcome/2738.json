@@ -1,0 +1,16 @@
+{
+    "action": "c566fa509959f4edf0078b1ac1ff3496",
+    "effect": {
+        "detail": {
+            "base": "ddbbaaee8aad7f6b22b04244d0aec08a713ad557",
+            "branch": "workbench/fix/functies-under-beheer",
+            "commit": "8cc9f9a29297db7f5afc4bbff2b29809189ccf0d",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2736,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De notitie boven de explainers liep over de volle breedte en was kaal: ze stond buiten de\nkolom van het kruimelpad, en de linkerlijn gebruikte een token dat de pagina wel kent maar\ndat op zichzelf niets zegt.\n\nNu in de taal van de pagina zelf: het kleine kapitaallabel dat de explainer-kop ook gebruikt\n(\"About these explainers\"), op het zachte vlak van de kaarten (`--surface`, \u00e9\u00e9n lijn\n`--border`, afgerond), in de kolom van het kruimelpad op een explainer (`wrap`) en gewoon in\nde tekstkolom op het overzicht. Zelfde tekst, zelfde partial.\n\n## Bewijs\n\n- `npm test`: 11 geslaagd; de test kijkt nu naar `class=\"explainer-note\u2026\"` met de\n  kolomklassen erachter\n- gerenderd op een explainer en op het overzicht: in de kolom, gecentreerd\n",
+            "branch": "workbench/de-notitie-in-de-kolom",
+            "title": "De notitie in de kolom, in de taal van de pagina"
+        },
+        "resource": "ShaneDeconinck/shanedeconinck.be"
+    },
+    "run": "workbench-20260916174424-2345fe"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "3e0158a6935330647814c557661608cb",
+    "effect": {
+        "detail": {
+            "base": "9624bee006951583c96eecc9bc0b31721ebedef4",
+            "branch": "workbench/fix/embed-settings-translations",
+            "commit": "6fccf0e564e2b85481bfd23cf87af0f43331461c",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2640,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #489, rebased on main after #490.\n\n## Why\n\nThe partner API (Passport, `routes/api.php`) writes every call to `api_log` with the caller's ip, but not its User-Agent, and Forge has the nginx access log switched off. On 2026-09-16 three unknown readers were hitting the API and nothing on the box could say which platform sat behind each ip. The public website API (`/api/v1/public/*`) did not log at all, so its use was not measurable either.\n\n## What\n\n- Migration `2026_09_16_130000_add_user_agent_to_api_log`: nullable `user_agent` varchar(255) after `ip`. Plain `ADD COLUMN`, no default, no index; the table holds millions of rows. Forge runs `migrate --force` on deploy.\n- `ApiLogRepository::addLog` takes an optional `$user_agent` and stores `substr(..., 0, 255)`; both partner API call sites (`BaseApiController::addLog`, `VehicleRequest::failedValidation`) pass `request()->userAgent()` next to `request()->ip()`.\n- `AuthenticatePublicApi` writes one `api_log` row per authenticated public API call: action = route name (`api.public.vehicles.index`, ...), dealer from the token, ip, user agent, response status, and the query string without `api_key`. No request body (leads carry personal data) and no response body: one insert per request. `user_id` stays `''` because the column is NOT NULL and there is no user. Rejected calls (401) are not logged. A failing insert is reported, never a reason to refuse the request.\n- Rule R P3-1.9 in `33-p3-integraties.md`; four tests tagged with it.\n\nThe day after the deploy this answers the question:\n\n```sql\nselect user_agent, ip, count(*) from api_log where created_at > now() - interval 1 day group by 1, 2 order by 3 desc;\n```\n\nNote: `stocklist:daily` still deletes `api_log` rows older than 5 days, so the answer is available for a week at a time, which is enough to identify the readers.\n\n## Tests\n\n`vendor/bin/phpunit --filter 'PartnerApiTest|PublicVehicleApiTest|PublicLeadApiTest|RulesCoverageTest|RulesIdentityTest|UiApiUsageTest'`: 41 tests, 149 assertions, OK. New: `test_every_call_is_logged_with_ip_and_user_agent`, `test_a_long_user_agent_is_cut_to_the_column_width` (PartnerApiTest), `test_elke_oproep_wordt_gelogd_met_dealer_ip_en_user_agent`, `test_een_afgewezen_oproep_wordt_niet_gelogd` (PublicVehicleApiTest).\n",
+            "branch": "workbench/feat/api-log-user-agent-2",
+            "title": "API log records the caller's user agent, for the partner API and the public API (rebased, replaces #489)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916130246-17e98b"
+}

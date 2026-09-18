@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d6691ebfebecca51c2727a61df6533a0a9357a1d",
+            "branch": "elixir/security-2026-09-17-2116",
+            "files_sha256": "acfeeaf1ef62a5bbab0962acb541e8487d81cefb72c0e77a64c6a6e52d3aebf5",
+            "message": "Beveiligingsupdates",
+            "packages": 1
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "01M2RKJNGS7EV6EG43KVM84KBG"
+}

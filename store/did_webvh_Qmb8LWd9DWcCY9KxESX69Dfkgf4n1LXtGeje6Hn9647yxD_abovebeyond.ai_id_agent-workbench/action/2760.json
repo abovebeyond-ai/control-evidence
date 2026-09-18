@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "129b9c2884b49f758dd10dda1e4a88322b3f9820",
+            "branch": "workbench/de-notitie-in-de-kolom",
+            "files_sha256": "4f27cfe3c22babb5857eddf5b2c96b0ec80ece32da885e8ab5b31817d4f34704",
+            "message": "De notitie in de kolom, in de taal van de pagina"
+        },
+        "resource": "ShaneDeconinck/shanedeconinck.be"
+    },
+    "run": "workbench-20260916174424-2345fe"
+}

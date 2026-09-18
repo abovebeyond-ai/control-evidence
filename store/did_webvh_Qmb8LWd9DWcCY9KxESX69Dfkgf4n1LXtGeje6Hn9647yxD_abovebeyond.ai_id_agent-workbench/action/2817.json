@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Elixir deployt zichzelf sinds gisteren niet meer. `bin/auto-deploy` haalde main op met\n`github-token-<eigenaar>`, en dat bestand is met de opkuis van 16 september van de box\nverdwenen (de gateway schrijft en leest sindsdien als GitHub App). De checkout staat op #216;\n#218 en alles ervoor sinds de opkuis is nooit uitgerold. De job meldde het aan Portal, en\nniemand zag het.\n\n## Wat er verandert\n\nDezelfde weg als de metingen: de gateway munt een leestoken van de App voor de eigenaar\n(`GET /v1/github/read-token`, achter het client-token, een uur geldig, alleen lezen), en de\nuitrol haalt daarmee op via `git-askpass` zoals voorheen met het bestand. Geen bestand met\neen GitHub-token meer op deze box; wat er is, verloopt vanzelf.\n\nEen gateway die niets munt (tunnel plat, App niet op de eigenaar) is een luide melding aan\nPortal, met de reden, net als voorheen een ontbrekend bestand.\n\n## Wat de andere sessie voorstelde, en waarom niet\n\nEen nieuw fine-grained token, alleen lezen op deze repo. Dat is een persoonlijk token\nzonder vervaldatum op een machine: precies wat er gisteren uit de hele vloot gehaald is. De\nweg die er al ligt is beter.\n\n## Eerste keer\n\nDe box kan dit voorstel niet zelf ophalen, want het oude script heeft geen token. E\u00e9n keer\nmet de hand, als `elixir`: een leestoken vragen aan de gateway en `git fetch` plus `./deploy`\ndraaien. Daarna houdt het script zichzelf bij.\n",
+            "branch": "workbench/de-uitrol-leest-langs-de-gateway",
+            "title": "De uitrol leest langs de gateway"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260917074102-3b5d3e"
+}

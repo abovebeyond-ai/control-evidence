@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0c65ebc5e2ee9457e5b1fe89b7b45df5923b2d27",
+            "branch": "workbench/feat/showroom-slides-imagick",
+            "files_sha256": "30654bf7e9d5c227c338f67a2e32cbbacb3bd869c556ce2fe4066fc27a8e3204",
+            "message": "Showroom download draws the slides in PHP; no browser on the server any more\n\nThe download (Settings, Showroom) photographed one slide page per vehicle in a\nheadless Chrome via Browsershot and puppeteer. That Chrome lived on the server,\nnot in the code: Delta hard-coded Plesk's node path, and the Forge deploy removes\nnode_modules after the asset build, so every press of the button was a 500\n(Ilse, 2026-09-16). Decision: no browser on the server.\n\nApp\\Support\\ShowroomSlide draws the slide with Intervention Image on Imagick (GD\nwhen Imagick is absent), from the same data and in the layout of the web slide:\nblack band with make, model and the dealer's name, address and logo; photo left,\nyear, fuel and mileage right; the skewed white blocks with price, warranty and\nlease banner. Inter (two static instances cut from the woff2 the app ships) and\nthe Font Awesome TTF of the theme, so rendering does not depend on server fonts.\nSame file shape for the TV players: 1920x1080 JPEG, image_{id}.jpeg,\nshowroom_fotos.zip. A vehicle without a price gets no price block; a missing\nphoto gets a neutral placeholder panel; a long name shrinks then gets an ellipsis.\n\nThe controller skips a vehicle whose slide fails and names it in the notice;\nwhen nothing can be drawn the dealer gets one sentence and nothing is left\nbehind. Browsershot, puppeteer, the BROWSERSHOT_* config and the Screenshot\nclasses are gone; the Koppelingen check becomes \"Showroom slides (Imagick)\".\nRule S2-7.16 and the finding are rewritten; the CUTOVER.md aftercare item is\nclosed.\n\nDocs: preview.md gets the storage/ subfolders step and the first-copy-before-\nfirst-deploy order for a new Forge site."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916113030-da6651"
+}

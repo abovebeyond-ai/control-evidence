@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "preview.push",
+        "params": {
+            "base": "adcd0fb4371efa1790d42a9c1eb021701c6ef963",
+            "branch": "preview",
+            "head": "workbench/fix/showroom-zip-without-worker-2",
+            "pull": 517,
+            "sha": "6411141f295a0849e9bb1617d7760cd82e20ab49"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917090347-689537"
+}

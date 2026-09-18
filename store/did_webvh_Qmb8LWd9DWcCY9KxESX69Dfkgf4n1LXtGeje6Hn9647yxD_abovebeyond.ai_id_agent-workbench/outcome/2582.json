@@ -1,0 +1,16 @@
+{
+    "action": "24e3c359bd2b31dc602d28aa345df872",
+    "effect": {
+        "detail": {
+            "base": "8309082e2ee3e5e05b08f28d73d1afeb709fae0b",
+            "branch": "workbench/ui/leads-widget-collapsed-2",
+            "commit": "77c4afd4a1d8b2110b9a3c8fc9b08ba5a477c0b0",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2580,
+    "verdict": "ALLOW"
+}

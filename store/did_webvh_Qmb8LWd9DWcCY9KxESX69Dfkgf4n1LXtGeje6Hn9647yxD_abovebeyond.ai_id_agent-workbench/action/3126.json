@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "446393862b183f5905f34ccc8317ed5a82a4b612",
+            "branch": "workbench/carpass/issue-chip-and-new-registration",
+            "files_sha256": "78412179a615030a257957cb4caaff3291d445ba345e0bcbd8b0bd0cd4a0359d",
+            "message": "Car-Pass: issue chip on the row and a new registration from the sheet"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917154222-a3b11d"
+}

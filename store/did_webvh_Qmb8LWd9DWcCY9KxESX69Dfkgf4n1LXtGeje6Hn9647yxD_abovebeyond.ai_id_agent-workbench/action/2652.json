@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9624bee006951583c96eecc9bc0b31721ebedef4",
+            "branch": "workbench/fix/bids-viewable-in-every-phase",
+            "files_sha256": "9f2e52c8f0f59ed1c24419516621c7bdb75dec8b1a352258be041479e9a09557",
+            "message": "Bidding: received bids stay viewable after assignment"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916103858-6a488e"
+}

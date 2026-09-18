@@ -1,0 +1,16 @@
+{
+    "action": "c98875c28333bcbdf9eae52a8f53b272",
+    "effect": {
+        "detail": {
+            "base": "79d9e5dc37638e2e829c92cb8866399e2eac70d5",
+            "branch": "workbench/fix/one-active-sheet-per-chassis-3",
+            "commit": "4a243eb897a6ae0852f6f34c1c28d21a3d9ba1b8",
+            "files": 21,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2991,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Ilse's mail of 2026-09-17 17:01 (\"Issues Stocklist Dealer\") was implemented today in #541, #542, #543, #544 and #546. Those rules cited `klant:beslissingen#lijsten-2026-09-17`, the anchor of the morning list, because the decisions file was being split (#545) at the time.\n\nThis adds the mail as its own decision file, `bronnen/beslissingen/2026-09-17-issues-mail-17u.md` (the questions quoted, plus Shane's choices on the open points: showroom toggle independent of the website integration, bidding sort as a per-user preference, API-created vehicle without VIN opens on Type, lookup fills empty fields only), and repoints the nine rules (R S1-2.19, S1-9.24, S2-5.23, S2-7.17, S3-3.9, S3-7.1, S3-7.6, B1-2.9, P3-2.11) to it.\n\n`bin/rules-sources`: 874 rules, no problems (105 client-sourced, up from 97).\n",
+            "branch": "workbench/docs/decisions-2026-09-17-afternoon",
+            "title": "Business rules: Ilse's third list of 17 September as its own decision file"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917155907-4697c3"
+}

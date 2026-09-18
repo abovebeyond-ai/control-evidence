@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-09-16T07:34:08+00:00",
+    "computed_at": "2026-09-18T07:34:15+00:00",
     "window": {
-        "since": "2026-09-10T14:20:00+00:00",
+        "since": "2026-09-11T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -84,8 +84,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 4,
+                "gateway": 4
             }
         },
         "ShaneDeconinck/vlamingdam-frituur": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 11,
-                "gateway": 6
+                "github": 17,
+                "gateway": 12
             }
         },
         "Trendwolves/glk-transferor": {
@@ -145,8 +145,8 @@
                 "gateway": 2
             },
             "pulls": {
-                "github": 70,
-                "gateway": 26
+                "github": 72,
+                "gateway": 28
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -182,12 +182,12 @@
         },
         "kubo-global/kubo-website": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 2,
+                "gateway": 2
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 2,
+                "gateway": 2
             }
         },
         "stocklistdealer-eu/peugeot-de-backer": {
@@ -202,12 +202,12 @@
         },
         "stocklistdealer-eu/platform": {
             "dispatches": {
-                "github": 5,
+                "github": 0,
                 "gateway": 0
             },
             "pulls": {
                 "github": 100,
-                "gateway": 6
+                "gateway": 72
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -294,8 +294,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 60,
-                "gateway": 24
+                "github": 65,
+                "gateway": 29
             }
         },
         "abovebeyond-ai/elixir": {
@@ -305,8 +305,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 53,
-                "gateway": 26
+                "github": 57,
+                "gateway": 30
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -352,6 +352,114 @@
                 "github": 6,
                 "gateway": 0
             }
+        },
+        "forge:abovebeyond": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:afrodidact-website": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:axa-dare-to-call": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:cabrio-eyewear": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:cabrio-eyewear-mirror": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:cafe-t-hoekske-website": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:cides-portfolio": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:control": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:dbc-webapplicatie": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:elixir": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:elixir-fix": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:find-your-voice": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:garage-de-backer-website": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:gentells": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:glk-transferor": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:hoet": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:hoet-design-web": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:hoet-eyewear-mirror": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:kubo-it-lab": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:kubo-platform": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:menukaart-webapp": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:naviskore-viz": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:naviskore-webapp": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:portal": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:proveml": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:proveml-research": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:schoutteet": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:shanedeconinck-be": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:she-cosmetics-website": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:signal-observatory-gentells": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:sportbusinessgame": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:stocklist-dealer-landing": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:stocklistplatform-eu": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:trustedagentic": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:vera": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:verify-abovebeyond": {
+            "skipped": "no token to read GitHub"
         },
         "kubo-global/kubo-school-platform": {
             "dispatches": {
@@ -605,15 +713,14 @@
     },
     "unexplained": [
         "Trendwolves/gentells-pipeline: 19 pulls on GitHub, 17 performed by the gateway",
-        "Trendwolves/gentells-site: 11 pulls on GitHub, 6 performed by the gateway",
+        "Trendwolves/gentells-site: 17 pulls on GitHub, 12 performed by the gateway",
         "abovebeyond-ai/abovebeyond: 13 pulls on GitHub, 4 performed by the gateway",
-        "abovebeyond-ai/portal: 70 pulls on GitHub, 26 performed by the gateway",
+        "abovebeyond-ai/portal: 72 pulls on GitHub, 28 performed by the gateway",
         "abovebeyond-ai/vera: 35 pulls on GitHub, 28 performed by the gateway",
         "kubo-global/afrodidact-website: 2 pulls on GitHub, 1 performed by the gateway",
-        "stocklistdealer-eu/platform: 5 dispatches on GitHub, 0 performed by the gateway",
-        "stocklistdealer-eu/platform: 100 pulls on GitHub, 6 performed by the gateway",
-        "abovebeyond-ai/control: 60 pulls on GitHub, 24 performed by the gateway",
-        "abovebeyond-ai/elixir: 53 pulls on GitHub, 26 performed by the gateway",
+        "stocklistdealer-eu/platform: 100 pulls on GitHub, 72 performed by the gateway",
+        "abovebeyond-ai/control: 65 pulls on GitHub, 29 performed by the gateway",
+        "abovebeyond-ai/elixir: 57 pulls on GitHub, 30 performed by the gateway",
         "abovebeyond-ai/proveml: 2 pulls on GitHub, 0 performed by the gateway",
         "abovebeyond-ai/proveml-research: 7 pulls on GitHub, 4 performed by the gateway",
         "abovebeyond-ai/verify-abovebeyond: 6 pulls on GitHub, 0 performed by the gateway",

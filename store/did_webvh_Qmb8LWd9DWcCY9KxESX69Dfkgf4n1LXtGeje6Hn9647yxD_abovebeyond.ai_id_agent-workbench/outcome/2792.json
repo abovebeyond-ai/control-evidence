@@ -1,0 +1,16 @@
+{
+    "action": "f82af1c381055630d7deeeb07d842fb7",
+    "effect": {
+        "detail": {
+            "base": "fd1623c0786080a1d74171ef435f9299e36c723d",
+            "branch": "workbench/preview-kinds-in-the-grant",
+            "commit": "16ec2bb4f7ef7fff4b0e838a44e20439b9622fc3",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2790,
+    "verdict": "ALLOW"
+}

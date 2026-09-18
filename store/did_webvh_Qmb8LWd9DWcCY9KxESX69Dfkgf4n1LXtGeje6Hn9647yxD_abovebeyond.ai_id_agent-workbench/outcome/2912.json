@@ -1,0 +1,16 @@
+{
+    "action": "42c213a420328a98bb4f35fbdc21350b",
+    "effect": {
+        "detail": {
+            "accepted": true,
+            "commit": "6411141f295a0849e9bb1617d7760cd82e20ab49",
+            "project": "stocklistplatform-eu",
+            "pull": 517,
+            "status": 200
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2910,
+    "verdict": "ALLOW"
+}

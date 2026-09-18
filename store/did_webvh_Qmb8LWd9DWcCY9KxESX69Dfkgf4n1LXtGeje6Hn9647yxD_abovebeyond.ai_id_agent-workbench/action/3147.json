@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The collage strip on the prelaunch screen was still in full colour. It gets the treatment the home page hero has since #120 and #121: black and white, with the round spot of colour drifting over it at rest and following the pointer. Same css (`.hero-reveal`), same script (`hero-reveal.js`); the component just carries the second layer now.\n\n276 tests, Pint and the Tailwind lint clean.\n",
+            "branch": "workbench/prelaunch-drift",
+            "title": "The prelaunch strip gets the same drifting spot of colour"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260917160735-9299b4"
+}

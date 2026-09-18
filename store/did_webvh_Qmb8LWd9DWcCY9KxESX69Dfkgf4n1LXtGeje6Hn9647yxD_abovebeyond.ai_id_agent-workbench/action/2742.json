@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "50fa0edb317abf26be2558e6e0874d0bbdb2dd7a",
+            "branch": "workbench/feat/showroom-zip-queued",
+            "files_sha256": "f487dcd54a813c4a5ad5dcc80147d03e6d41cc4c9fd828c3c1996062514ca9b1",
+            "message": "Showroom download runs in the queue with progress; no more gateway time-out"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916172647-8e6ad9"
+}

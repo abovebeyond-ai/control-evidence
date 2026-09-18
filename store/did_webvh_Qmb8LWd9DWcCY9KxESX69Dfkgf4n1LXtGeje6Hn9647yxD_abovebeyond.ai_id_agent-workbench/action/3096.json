@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8de1ac04e79c952a69ac1e77dfc48aab6ceba813",
+            "branch": "workbench/import/hexon-sheet-start-and-description",
+            "files_sha256": "5a5d6e7c51c69e20d1009346d4b3eb840e373c1b07fb79637af92eda3bdd23cc",
+            "message": "Hexon import: open on Type, lookup fills empty fields only, clean descriptions"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917152628-7dc1dd"
+}

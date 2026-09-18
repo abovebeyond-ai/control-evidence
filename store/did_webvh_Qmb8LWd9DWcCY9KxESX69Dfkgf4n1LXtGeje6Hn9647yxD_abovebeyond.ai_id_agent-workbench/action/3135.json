@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up on #120: when nobody points, the round spot of colour wanders slowly over the black-and-white collage (a 28-second keyframe loop on the mask position); a pointer takes it over and leaving hands it back. A phone gets the drift; reduced motion keeps the image grey.\n\nThe mask moved from a gradient centred on a variable to a fixed-size mask whose position is animated, which is what makes the idle drift a pure css loop; `hero-reveal.js` now sets the mask corner instead of the centre.\n\n276 tests, Pint, ESLint and the Tailwind lint clean. BRAND.md carries the reason.\n",
+            "branch": "workbench/drift",
+            "title": "The colour drifts over the collage when nobody points"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260917154445-c792cf"
+}

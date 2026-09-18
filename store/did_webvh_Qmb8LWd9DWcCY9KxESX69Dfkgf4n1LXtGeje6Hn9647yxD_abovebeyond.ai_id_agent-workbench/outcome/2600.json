@@ -1,0 +1,16 @@
+{
+    "action": "126bea159fe281b55cc3666d6ab6112f",
+    "effect": {
+        "detail": {
+            "base": "a03cd0f2bd5e9a67e2de2ac8b2d97f87a9daebda",
+            "branch": "workbench/explainers-dragen-hun-datum-2",
+            "commit": "47aa8a2091420a74e9864d824108ea4521720402",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2598,
+    "verdict": "ALLOW"
+}

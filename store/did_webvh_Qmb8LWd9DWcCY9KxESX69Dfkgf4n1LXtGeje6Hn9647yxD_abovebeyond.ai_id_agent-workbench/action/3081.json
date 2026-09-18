@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "60e982f9bea4f321f79f69be041b6c7d88f6a855",
+            "branch": "workbench/redesign-newsreader",
+            "files_sha256": "bb13602a3df65a00f1b0b1c7edf096ba634dd351bbf598c503f566f3f5ca3bd2",
+            "message": "The preload check no longer assumes localhost"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260917152015-61587c"
+}

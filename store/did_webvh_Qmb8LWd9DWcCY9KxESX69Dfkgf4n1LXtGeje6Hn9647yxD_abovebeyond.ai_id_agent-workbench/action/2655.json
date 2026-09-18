@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nOn Biedingen > Mijn aangeboden wagens the step button replaced the old hammer icon. The hammer always opened the received bids; the step button only does so while the bidding runs or a winner still has to be assigned. Once a bidding is assigned (\"Vrijgeven voor afhaling\"), released (\"Afgehaald & beoordelen\") or delivered, the dealer could no longer see who bid what from the list. Reported by Ilse (dealer team), 2026-09-16: the bids must stay viewable in every phase.\n\n## What\n\n- The more-menu of the row (`export/_row`) and of the phone card (`export/_card`) gets \"Bekijk biedingen\" (existing key `ui.bidding_view_bids`, present in nl/fr/en/de/es) for every bidding with at least one bid. It opens `export.show.biedingen`, the same page the step button opens in the assign phase.\n- A bidding without bids does not get the item.\n- The step button is untouched.\n- Rule R B1-5.14 added to `docs/bedrijfsregels/21-b1-biedingen.md`; `BiddingFunnelTest::test_the_received_bids_stay_viewable_from_the_menu_in_every_phase_and_only_with_a_bid` pins it (assigned and released biddings expose the bids route in row and card, a bidding without bids does not).\n\nThe item is a button that navigates, like its neighbour \"Aanpassen\": as an anchor it picked up the `.ui-list a` link colour and stood out from the rest of the menu, and the alternative was a line in `refresh.css`.\n\n## Tests\n\n`BiddingFunnelTest`, `ExportListPhoneCardTest`, `BiddingTest`, `BiddingLastDayTest`, `ExportListAccessTest`, `ExportVehicleWindowsTest`, `BiddingBoxLabelTest`, `BiddingDetailDamageOrderTest`, `DemoScreensCommandTest`, `ExportDocumentsFromModelTest`, `SmokeTest` (export routes), `CompiledViewsTest`, `AlpineExpressionTest`, `RulesCoverageTest`, `RulesIdentityTest`, `HandlerWiringTest`, `StylesheetSyntaxTest`: green.\n\n## Screenshots\n\nRow in the \"Afgehaald & beoordelen\" phase with the menu open, desktop 1440 and phone 390 (demo dataset from `stocklist:demo-screens`, the closed bidding set to released); clicking the item lands on `/exports/{id}/biedingen`.\n",
+            "branch": "workbench/fix/bids-viewable-in-every-phase",
+            "title": "Bidding: received bids stay viewable after assignment"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916103858-6a488e"
+}

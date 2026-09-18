@@ -1,0 +1,16 @@
+{
+    "action": "df5780b2532bf339c2e134b78966c86b",
+    "effect": {
+        "detail": {
+            "base": "1cb8c95074fe8d547f101ad3e40c149fdab9081f",
+            "branch": "workbench/fix/lists-filters-sorting-preview-2",
+            "commit": "e4c881dba5b0645a02a435eb8c32d05f29de2641",
+            "files": 27,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3045,
+    "verdict": "ALLOW"
+}

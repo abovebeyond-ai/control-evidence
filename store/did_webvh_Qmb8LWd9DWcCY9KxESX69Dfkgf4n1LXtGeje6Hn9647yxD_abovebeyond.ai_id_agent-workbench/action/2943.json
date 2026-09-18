@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "87f65ddd15718881c0d6d46491333865c5aa3e89",
+            "branch": "workbench/fix/carpass-renewal-worklist-every-time",
+            "files_sha256": "cee85868bfe2c21fe0cc156f68db624f218439c3a77ed37f5f6f5a383b8aed56",
+            "message": "Car-Pass renewal: reset the checked flag when a new report lands, so the vehicle re-enters the work list at every expiry"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917103019-744a85"
+}

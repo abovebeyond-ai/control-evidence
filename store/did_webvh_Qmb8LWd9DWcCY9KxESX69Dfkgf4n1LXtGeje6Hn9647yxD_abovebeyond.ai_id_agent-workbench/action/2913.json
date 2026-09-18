@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d07a4a5fa0c99dbbbf787ee8cb84c7dc5660ab9f",
+            "branch": "workbench/vm-on-v0.27.0",
+            "files_sha256": "a8ffd583d0c27efc61bd027a09e3850d3b94e6e70efeb67a98a107f3266f475c",
+            "message": "The VM on v0.27.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260917090425-f2701e"
+}

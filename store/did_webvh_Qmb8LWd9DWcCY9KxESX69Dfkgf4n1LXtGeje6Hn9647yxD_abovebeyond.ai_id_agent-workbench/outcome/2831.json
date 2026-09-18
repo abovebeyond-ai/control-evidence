@@ -1,0 +1,10 @@
+{
+    "action": "a1d0a58d06261e4235e16c1fef06bab5",
+    "effect": {
+        "error": "the Forge deploy trigger for stocklistplatform-eu is not a URL under https://forge.laravel.com/",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 2829,
+    "verdict": "ALLOW"
+}

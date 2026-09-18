@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9624bee006951583c96eecc9bc0b31721ebedef4",
+            "branch": "workbench/fix/terms-modal-confirm",
+            "files_sha256": "09f27cf8ced1f0ce1cb9efa6039c0330d197c41170fe6308feb97566516de7c1",
+            "message": "Terms modal: confirm works again, and delegation does not accept terms on a dealer's behalf"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916104015-0019c8"
+}

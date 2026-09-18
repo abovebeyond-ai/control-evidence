@@ -1,0 +1,16 @@
+{
+    "action": "07ea219279b9bfd0956c61ae4dc9c02d",
+    "effect": {
+        "detail": {
+            "base": "95c2dfa366b4ebb7d5fe833267251ae8e826200e",
+            "branch": "workbench/ui/open-points-2026-09-17-2",
+            "commit": "619413e0fc735bece2bf6679985e27cf452fe4e4",
+            "files": 37,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3057,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "79d9e5dc37638e2e829c92cb8866399e2eac70d5",
+            "branch": "workbench/fix/livewire-expired-page",
+            "files_sha256": "aa2b583003106ce75b8b8bee4943214d1d49269b79ccaf1fcf7eca0799f19636",
+            "message": "Saving a sheet never shows 'This page has expired': the token is refreshed and the request retried"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917122217-11e06c"
+}

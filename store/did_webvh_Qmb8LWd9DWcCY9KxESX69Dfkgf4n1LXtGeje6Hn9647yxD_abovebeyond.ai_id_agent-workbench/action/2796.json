@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f0f2f5a0ad7bd8a0dd79e321fc1d5ed29ddabf92",
+            "branch": "workbench/preview-kinds-in-the-capability",
+            "files_sha256": "b4a13457033e348050add29865e6b72ff12a0f9f9b018e6cc70d23c81b84d634",
+            "message": "The workbench capability names the preview kinds and forge:<slug>"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260917071845-6df62b"
+}

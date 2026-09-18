@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0c65ebc5e2ee9457e5b1fe89b7b45df5923b2d27",
+            "branch": "workbench/fix/preview-refresh-mariadb",
+            "files_sha256": "893de0465d1fc79e79896f5da27002f69d04e0c26f005ec8ff284928a5c94bb6",
+            "message": "Preview refresh: mysqldump flags that MariaDB knows"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916112926-8e26a7"
+}

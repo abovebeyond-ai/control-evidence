@@ -1,0 +1,17 @@
+{
+    "action": "fc991113b16bed12cb95ac52949c1f0b",
+    "effect": {
+        "detail": {
+            "branch": "preview",
+            "commit": "37c904d2e2689a31fb1eeac8351ba53c1a77e2ab",
+            "created": true,
+            "head": "workbench/feat/showroom-slides-cached",
+            "pull": 512,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2826,
+    "verdict": "ALLOW"
+}

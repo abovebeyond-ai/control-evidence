@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d3d7d01539cce8837eeebb3ab566c146e5852e1c",
+            "branch": "workbench/feat/feature-flags-admin-2",
+            "files_sha256": "bea3251c00867a799067b7ae12a58707f96bae2ac3aad0f3c4b2d27319f3c4a5",
+            "message": "Feature flags with four stages, switchable by administrators"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916082830-7b5de4"
+}

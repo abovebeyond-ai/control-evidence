@@ -1,0 +1,16 @@
+{
+    "action": "3ba9d1e2a55ed244795a6e26361f8083",
+    "effect": {
+        "detail": {
+            "base": "8de1ac04e79c952a69ac1e77dfc48aab6ceba813",
+            "branch": "workbench/showroom/selection-follows-the-checkbox",
+            "commit": "75066fb9558a015c407a9c327ec778bb79831fb4",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3069,
+    "verdict": "ALLOW"
+}

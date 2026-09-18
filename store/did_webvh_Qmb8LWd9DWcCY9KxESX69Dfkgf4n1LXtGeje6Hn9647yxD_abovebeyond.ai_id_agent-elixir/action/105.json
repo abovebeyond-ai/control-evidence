@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Bijgewerkt binnen semver, dus de aanroepen blijven werken:\n\n- devalue to 5.9.2\n\n## Bewijs\n\n- the project's own tests were green before the change, and again after\n- the judge was `npm run test:coverage`\n- de lockfiles zijn teruggelezen: wat hierboven staat, staat er ook echt in\n\nVoorgesteld door Elixir. Mergen doet een mens.",
+            "branch": "elixir/security-2026-09-17-2116",
+            "packages": 1,
+            "title": "Security: update 1 package(s)"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "01M2RKJNGS7EV6EG43KVM84KBG"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"devalue\",\"to\":\"5.9.2\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 1,
+            "plan_sha256": "9575a776f729992c7ab4f5d5a5fffd072927abdf2a4743513870a77dd89879a2",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "01M2RKJNGS7EV6EG43KVM84KBG"
+}

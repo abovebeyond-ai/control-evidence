@@ -1,0 +1,16 @@
+{
+    "action": "294bf0dc00e644aa1f2e31b4c75d6ed6",
+    "effect": {
+        "detail": {
+            "base": "8de1ac04e79c952a69ac1e77dfc48aab6ceba813",
+            "branch": "workbench/bidding/newest-first-and-remembered-sort",
+            "commit": "a5ad00f70826729e6ffa21687238cccb8182c5ff",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3090,
+    "verdict": "ALLOW"
+}

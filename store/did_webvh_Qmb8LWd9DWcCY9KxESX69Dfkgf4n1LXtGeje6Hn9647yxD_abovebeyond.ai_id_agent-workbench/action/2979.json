@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7aa8708a3d4c6931020287f0f2d1558135862122",
+            "branch": "workbench/ui/showroom-helper-while-building",
+            "files_sha256": "17dfe7f5406a4d59022cf433f42db54055bc47cf4867aa0ddc0fc06705b39967",
+            "message": "Showroom tab: the background sentence shows only while the zip is being built"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917110421-f2de10"
+}

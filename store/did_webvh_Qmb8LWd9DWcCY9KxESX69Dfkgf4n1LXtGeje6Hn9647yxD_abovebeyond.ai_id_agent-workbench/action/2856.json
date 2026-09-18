@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b0a9d63c49c237e9afb20ce620deaa867daf9d24",
+            "branch": "workbench/feat/showroom-slides-cached-2",
+            "files_sha256": "7740874e479238c224711995fdbf8def758d4bce508255abcc7e07b2d6e04cb8",
+            "message": "Showroom slides are cached by content hash; a rebuild draws only what changed"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917082337-a06b8a"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "7b46a74619f9ef8b1a30c5422d57314e",
+    "effect": {
+        "detail": {
+            "base": "87f65ddd15718881c0d6d46491333865c5aa3e89",
+            "branch": "workbench/fix/carpass-renewal-worklist-every-time",
+            "commit": "ed7e53d5f6cf24acbc425e91535bcf60bf921bf5",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2943,
+    "verdict": "ALLOW"
+}

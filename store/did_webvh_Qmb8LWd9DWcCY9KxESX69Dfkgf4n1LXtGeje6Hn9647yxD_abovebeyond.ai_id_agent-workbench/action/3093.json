@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Bidding offer: newly added first, and the sort is remembered per user\n\nIlse (2026-09-17, third list, task 4): the bidding offer should open on the newest vehicles so a dealer sees at once what is new, and it should keep the sort a user picks.\n\n### What changes for the user\n\n- **Default sort is \"Nieuw toegevoegd eerst\"** for everyone. \"Added\" is the moment the bidding entered the offer, `export_vehicles.created_at` (descending; `id` descending as the tie-break, the same second key the list already had). Until now the list opened on end date ascending.\n- **The chosen sort is remembered per user**, on every device and across visits: it is stored on the user (`users.preferences`, key `bidding_offer_sort`, via `User::rememberPreference`, the mechanism R P1-1.20 introduced this morning), not in the session or a cookie. Another user is not affected. A remembered value that is no longer an option falls back to the default.\n- The six sort labels are translated in nl, en, fr and de (`lang/*/orderby.php`, `bidding_*`); they were hard-coded Dutch. The filters of this list are still not remembered (R P1-1.18 stays as it is).\n\n### Rules\n\n- R B1-2.9 rewritten: default, column, tie-break, option list, per-user preference, filters not remembered; source `klant:beslissingen#lijsten-2026-09-17`, stand `klant`. `bin/rules-sources`: Geen problemen.\n\n### Tests (`BiddingFunnelTest`, all `@rule B1-2.9`)\n\n- a fresh user has no preference, opens on `added`, and the repository returns newest-created first (also when the newest ends last);\n- \"Nieuw toegevoegd eerst\" is the first option and every option has a translation in the four languages;\n- a chosen sort is stored on the user and a fresh component for that user starts on it; another user starts on the default;\n- a remembered value that is not an option (`created`, the old key) and a posted nonsense value fall back to `added`;\n- end date ascending still lists the soonest end first and the oldest bidding first on the same day.\n\n### Screenshots\n\n`.playwright-mcp/bidding-sort/{before,after}-{1440,390}.png` in the worktree (demo dataset, three open biddings). Before: Golf (ends 21/09), Peugeot, BMW. After: Peugeot (added today 17:15), BMW (today 14:00), Golf (15/09).\n\n### Open point (not in this PR)\n\nOn 390 px the sort `<select>` is narrow and truncates every label (\"Nieuw toegevoeg\u2026\", before: \"Einddatum (eers\u2026\"); pre-existing, lives in `refresh.css` (hot file).\n\nNo hot files touched.\n",
+            "branch": "workbench/bidding/newest-first-and-remembered-sort",
+            "title": "Bidding offer: newly added first by default, sort remembered per user"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917152353-c94537"
+}

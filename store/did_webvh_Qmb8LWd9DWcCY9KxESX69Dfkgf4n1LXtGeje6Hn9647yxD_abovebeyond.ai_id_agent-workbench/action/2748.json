@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "50fa0edb317abf26be2558e6e0874d0bbdb2dd7a",
+            "branch": "workbench/docs/own-integration-docs",
+            "files_sha256": "a86807a296fbafa86cd138737727a0635bbfce113734f6e772a895339cabc55f",
+            "message": "Integration docs served by the app at /docs; Scribe removed\n\nThe generated Scribe site under public/docs was off brand and from the previous developer.\nThe app now renders its own documentation at /docs from markdown in the repository: a hub,\nthe website embed guide (/docs/website, one screen; /embed/handleiding redirects 301), the\npublic website API (/docs/api, written from the code) and the partner API (/docs/partner,\nported from the Scribe descriptions and checked against the code). DocsMatchRoutesTest keeps\nthe endpoint tables and routes/api.php one list. knuckleswtf/scribe removed from composer,\nfakerphp/faker kept as a dev dependency for the factory. Rule S2-5.22, finding\npartner-api-gebruikers and two open points for Frederik."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916173117-dcd10d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ec814bf439b947c3db534dab18eb44d3843dfff9",
+            "branch": "workbench/fix/login-as-picks-a-user-2",
+            "files_sha256": "fd2ada52fd55e012ae9f6ca307a83438423e5d3b583c494ffffa4974244891a2",
+            "message": "Working as a dealer: the button picks a user who accepted the terms"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917144336-07ee50"
+}

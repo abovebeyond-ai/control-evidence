@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b5e066a6f60f086ede98126e420bcaead31eb042",
+            "branch": "workbench/ui/detail-hides-empty-fields",
+            "files_sha256": "a7ac215bffcb2216a60af7fc80b12f32d7ffc55a9a82250aa5771c81329268c2",
+            "message": "Vehicle detail: empty fields and empty groups are not shown"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916201026-72af7f"
+}

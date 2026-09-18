@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4e601bd066083dac81dfa414dc372039533f4ff4",
+            "branch": "workbench/fix/user-modal-closes-after-save",
+            "files_sha256": "635049bfa62cf777e2e8d1c2a961510db40043539c23cf5f8c0a456a10f557ea",
+            "message": "User modal closes after saving, also when an API access code was just generated"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916104707-113554"
+}

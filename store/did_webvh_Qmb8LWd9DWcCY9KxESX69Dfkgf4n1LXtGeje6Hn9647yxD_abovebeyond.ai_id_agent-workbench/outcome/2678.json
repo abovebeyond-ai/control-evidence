@@ -1,0 +1,16 @@
+{
+    "action": "7521a50010b35a785593a0cbe32b6a85",
+    "effect": {
+        "detail": {
+            "base": "5be271aa4583e5a48e5ad0de3cc09f083b28e178",
+            "branch": "workbench/fix/showroom-download-chrome",
+            "commit": "7fee6020f5cf09a9bb30c6de9147405caa16937b",
+            "files": 18,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2676,
+    "verdict": "ALLOW"
+}

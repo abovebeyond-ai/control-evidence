@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "025b0128765bd75b23a1192a6235d95e1b50541c",
+            "branch": "workbench/feat/showroom-slides-incremental",
+            "files_sha256": "284991f374d042a7d79fd93176f7249fb9d8e9fca2d228bac80fcd12bb869685",
+            "message": "Showroom slides: lighter files, room for the fuel name, and a zip that is updated instead of rebuilt"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917100423-b883d0"
+}

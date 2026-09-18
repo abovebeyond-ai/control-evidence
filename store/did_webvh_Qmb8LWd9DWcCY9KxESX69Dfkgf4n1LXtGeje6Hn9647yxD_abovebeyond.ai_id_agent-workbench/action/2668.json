@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What Ilse saw\n\nOn Eigen wagenpark, the \"Gepubliceerd\" column read **\"Al 0 dagen\"** for a vehicle she had published that morning.\n\n## Why\n\n`available_on_stocklist_date` is a date without a time. The row compared it with the current moment: at noon that is a negative fraction of a day, so the sign chose \"al\" (already) and the rounded count was 0. The `fromToday` branch only fired at exactly midnight.\n\n## Change\n\n- `Vehicle::stocklistDaysDelta()` counts **whole calendar days** (start of day to start of day) and returns an int; `stocklistDays()` is its absolute value. The row partial reads the model instead of its own inline Carbon copy (93-logica item 21, now done).\n- Today reads **\"Vanaf vandaag\"**; one day is singular: **\"Al 1 dag\"**, **\"Binnen 1 dag\"**; otherwise \"Al N dagen\" / \"Binnen N dagen\". New `trans_choice` keys `global.on_stocklist_since_days` and `global.on_stocklist_in_days` in nl, fr, en, de (`LanguageParityTest` green).\n- Unpublished vehicles are untouched: they keep the funnel button (publish, stock, inspection, trade price) or \"Niet op stocklist\" (in option / sold).\n- Rule S2-2.5 updated with the calendar-day and singular wording.\n\n## Test\n\n`tests/Feature/OwnStockRowPublishedDaysTest.php` renders the row at a fixed 14:30 for a vehicle published today, yesterday, five days ago, tomorrow, in three days, and unpublished (button and \"Niet op stocklist\"). It fails on the previous partial with \"Al 0 dagen\".\n\nRan: OwnStockRowPublishedDaysTest, LanguageParityTest, OwnFleetTextTest, CompiledViewsTest, OwnStockRowMarkupTest, FrenchTranslationsTest, ViewLogicHelpersTest, RulesCoverageTest, RulesIdentityTest, StylesheetSyntaxTest, AlpineExpressionTest, HandlerWiringTest (55 tests, 1062 assertions, 1 pre-existing incomplete); SmokeTest filtered on ownvehicle (38 tests).\n\nVerified in the browser at 1440 and 390 px: \"Vanaf vandaag\", \"Al 1 dag\", \"Al 5 dagen\".\n\nNote for merge sequencing: this touches the shared row partial `resources/views/ownstock/_wagen_rij.blade.php` (the days cell only).\n",
+            "branch": "workbench/ui/published-since-today",
+            "title": "Own fleet: a vehicle published today says 'vanaf vandaag' instead of 'al 0 dagen'"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916104013-59bc6a"
+}

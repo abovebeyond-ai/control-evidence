@@ -1,0 +1,16 @@
+{
+    "action": "366c142a67cd9a7277dc45ac8611c2fb",
+    "effect": {
+        "detail": {
+            "base": "afc091cbe27bdab0beaa07683592bb53ef5ee3a5",
+            "branch": "workbench/fix/terms-modal-confirm-2",
+            "commit": "4503dfee04f117697ac9142da2969da9b050ec12",
+            "files": 16,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2730,
+    "verdict": "ALLOW"
+}

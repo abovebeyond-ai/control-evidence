@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1cd0a2a83d74a28b2c8c63b9783c0d691e0832b0",
+            "branch": "workbench/preview-through-the-gateway",
+            "files_sha256": "3324b06b35756be36e2bee52b3fcda736676e6eba931f44e9810e8e451394771",
+            "message": "A pull request on the preview through the gateway: preview.push and forge.deploy"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260917071456-14e407"
+}

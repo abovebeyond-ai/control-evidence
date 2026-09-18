@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "preview.push",
+        "params": {
+            "base": "7aa8708a3d4c6931020287f0f2d1558135862122",
+            "branch": "preview",
+            "head": "workbench/ui/showroom-helper-while-building",
+            "pull": 527,
+            "sha": "65abfc968adc4a08bcedf82f23a65820c9fc14f9"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917110455-218a5c"
+}

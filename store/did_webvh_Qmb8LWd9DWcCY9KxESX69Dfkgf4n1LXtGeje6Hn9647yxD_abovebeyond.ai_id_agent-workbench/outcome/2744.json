@@ -1,0 +1,16 @@
+{
+    "action": "1b97f2f1dce5830e4a855fe8675faf85",
+    "effect": {
+        "detail": {
+            "base": "50fa0edb317abf26be2558e6e0874d0bbdb2dd7a",
+            "branch": "workbench/feat/showroom-zip-queued",
+            "commit": "6ae75f29286b7f9ae0595a5432bca8186d087aea",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2742,
+    "verdict": "ALLOW"
+}

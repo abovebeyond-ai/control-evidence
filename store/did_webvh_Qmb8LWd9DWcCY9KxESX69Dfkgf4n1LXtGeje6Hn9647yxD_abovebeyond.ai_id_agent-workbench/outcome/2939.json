@@ -1,0 +1,16 @@
+{
+    "action": "58bd9d8e90048665a039bc5ae2e86219",
+    "effect": {
+        "detail": {
+            "base": "87f65ddd15718881c0d6d46491333865c5aa3e89",
+            "branch": "workbench/docs/rules-sources-proveml-2",
+            "commit": "59824debb902934dd35343e811d94d1862b917f0",
+            "files": 23,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2937,
+    "verdict": "ALLOW"
+}

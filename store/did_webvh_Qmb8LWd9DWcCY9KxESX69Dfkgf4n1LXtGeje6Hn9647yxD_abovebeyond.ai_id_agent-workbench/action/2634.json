@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c346de3fe5e054c46b412f509b8ca89782d60c53",
+            "branch": "workbench/feat/api-log-user-agent",
+            "files_sha256": "8e91889d46316806b83afb0788a2206af6607d6a27c3bc62ab08e98283fa1882",
+            "message": "API log records the caller's user agent, for the partner API and the public API"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916100923-4aeee4"
+}

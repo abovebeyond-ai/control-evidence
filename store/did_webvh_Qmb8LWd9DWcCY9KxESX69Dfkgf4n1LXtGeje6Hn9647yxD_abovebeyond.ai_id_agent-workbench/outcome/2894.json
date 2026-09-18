@@ -1,0 +1,16 @@
+{
+    "action": "a63f540ec4d2177efdf18953d77b9a06",
+    "effect": {
+        "detail": {
+            "base": "b0a9d63c49c237e9afb20ce620deaa867daf9d24",
+            "branch": "workbench/docs/preview-merge-result",
+            "commit": "19a45d8cdcaf83611691da0f671711104dcfea4f",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2892,
+    "verdict": "ALLOW"
+}

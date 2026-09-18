@@ -1,0 +1,16 @@
+{
+    "action": "84b7d47be87f2dd0ea43fa8244dad609",
+    "effect": {
+        "detail": {
+            "base": "4e601bd066083dac81dfa414dc372039533f4ff4",
+            "branch": "workbench/ui/brand-chips-select",
+            "commit": "64ace9dbc40754c3cfeb98519a85c94eb0954bcb",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2688,
+    "verdict": "ALLOW"
+}

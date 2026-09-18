@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c346de3fe5e054c46b412f509b8ca89782d60c53",
+            "branch": "workbench/feat/preview-environment",
+            "files_sha256": "0eff7403938a6cdf7278fe77f2030ca19bcd0e0113e3bdf557fc3f63f417bde0",
+            "message": "A preview site for looking at a pull request with real data before it merges"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916092850-a95a5d"
+}

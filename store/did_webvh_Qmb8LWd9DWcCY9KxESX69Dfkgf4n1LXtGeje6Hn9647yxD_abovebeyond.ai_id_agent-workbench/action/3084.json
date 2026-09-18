@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "60e982f9bea4f321f79f69be041b6c7d88f6a855",
+            "branch": "workbench/redesign-newsreader-2",
+            "files_sha256": "f00fca70092f95f818f24db0474fe49ef1dbec9c4af750d75eae2ff08818d8f4",
+            "message": "The site in the designer's second delivery: Newsreader, Array, the split hero"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260917152033-55f050"
+}

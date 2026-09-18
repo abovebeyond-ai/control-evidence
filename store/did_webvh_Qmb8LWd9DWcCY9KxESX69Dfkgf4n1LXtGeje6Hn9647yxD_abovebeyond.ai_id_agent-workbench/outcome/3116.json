@@ -1,0 +1,16 @@
+{
+    "action": "aecce3f6301fd5cce6fe66ff5574e8b1",
+    "effect": {
+        "detail": {
+            "base": "a59206099e5e83654d8100eeaff50e989f1416d0",
+            "branch": "workbench/panel-and-reveal",
+            "commit": "604e22238169c8dedb4deb0cfc6a61f915ad1d1a",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3114,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "79d9e5dc37638e2e829c92cb8866399e2eac70d5",
+            "branch": "workbench/fix/one-active-sheet-per-chassis-4",
+            "files_sha256": "407e9777f68d723de3aee6a810e21d28acef35bc349f26680d555e11f8c55e30",
+            "message": "One active sheet per chassis number per dealer: a warning with a link, and an index"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917112711-e807ce"
+}

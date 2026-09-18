@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Bug\n\nPR 486 (feature flags) added the menu item **Functies** as a top-level item. The migration looked for the settings menu as \"the top-level row whose route is `setting.index`\"; the production tree does not answer to that description (the navigation itself recognises the settings branch by its children, not by the parent's route), so the lookup returned 0. On a 1440 px screen the language switch and the account menu were pushed off the right edge (owner, 2026-09-16).\n\n## Fix\n\n- `2026_09_16_150000_move_features_menu_under_beheer`: finds the settings menu the way the navigation does (parent of the `setting.index`, `location.index` or `user.index` child; fallback: the top-level row named `settings`), moves the existing Functies row under it as the last item of the Beheer dropdown, and grants the administrator role the view right there if missing. Idempotent: already under Beheer is a no-op; a missing row is inserted there; a database without any settings tree (CI, built from the schema alone) gets the settings menu created first, as the seeder would. The old migration is left as it ran in production.\n- `MenuFeaturesUnderBeheerTest`: (1) the migration re-parents Functies on a tree whose settings row has an unhelpful route and lands it last, twice without change; (2) the rendered top bar for an administrator has no Functies item and the Beheer dropdown links to `features.index`; (3) guard: every top-level `menus` row is in the known set (worklists, ownvehicle, stocklist, exportmenu, admin, settings, insights, links) and the rendered top bar shows nothing outside that set plus Beheer. A future migration that inserts a top-level item fails in CI with a message pointing to the Beheer dropdown.\n- Rule P2-12.3 says the screen is the last item of the Beheer dropdown and that the top bar has a fixed set.\n\n## Tests\n\n`MenuFeaturesUnderBeheerTest`, `FeatureFlagsScreenTest`, `CompiledViewsTest`, `RulesCoverageTest`, `RulesIdentityTest`: 17 tests, 63 assertions, OK, on a CI-shaped database (schema plus migrations) and on a database with the seeder's tree. `SmokeTest` filtered on features/setting/home: 10 tests OK.\n\n## Screenshot\n\n1440 px as administrator, Beheer open, Functies inside it, bar ends at 1176 px with the language switch and account visible: `scratchpad/menu-functies/after-1440-beheer-open.png`.\n",
+            "branch": "workbench/fix/functies-under-beheer",
+            "title": "Menu: Functies moves into the Beheer dropdown; the top bar fits again"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916135407-f8439e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The workbench preview is moving from the pull request's head to GitHub's test merge of the pull request onto the current base (`merge_commit_sha`): what you see on the preview site is what you get after merging. The client (`hand.mjs preview`) then wants the record to say onto which base that merge was made.\n\nThis adds `base` (hex40) as an optional parameter of `preview.push`, beside `pull` and `head`. Nothing about the policy changes: still the branch named `preview` and no other, once per run, deploy after push. A schema test covers a full id accepted and a branch name refused; `docs/preview.md` names the field.\n\nUntil the VM runs this release the client sends `base` and falls back to the old parameter set when the gateway refuses it as out of schema.\n",
+            "branch": "workbench/preview-base",
+            "title": "preview.push: optional base parameter"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260917085415-ffae05"
+}

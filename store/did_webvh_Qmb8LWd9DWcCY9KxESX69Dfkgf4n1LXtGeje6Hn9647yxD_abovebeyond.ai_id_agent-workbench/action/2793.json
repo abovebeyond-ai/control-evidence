@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`App\\Control\\Workbench` (the grant of `#agent-workbench`) gains the two preview kinds of control v0.26.0 and a resource per project:\n\n- kinds: `preview.push` (set the branch named `preview` to a pull request's head) and `forge.deploy` (call the preview site's Forge deploy trigger held in the gateway's secrets). Merge, dispatch, `branch.delete` and `pull.ready` stay out.\n- resources: `forge:<slug>` beside `portal:<slug>` for every project, one constant (`FORGE_RESOURCE`), like `PORTAL_RESOURCE`. The VM's boot script derives `control-forge-deploy-<slug>` from `forge:<slug>` in the carried grant, so the resource is what makes the secret fetched; a project without a preview site has no secret and the kind fails there naming the missing file.\n\nThe branch constraint is not expressed here: the grant has no per-kind parameter constraints, and the gateway's policy carries it (`preview.push` only on `preview`, once per run; `forge.deploy` only after a `preview.push` in the same run).\n\n## Tests\n\n`php artisan test --filter=\"Control|Workbench|Capability\"`: 73 passed. `WorkbenchGrantTest` gains a test that the kinds are named and never a merge, and that the resources are `forge:`, `owner/repo`, `portal:`; `ControlClientTest::test_the_workbench_is_configured_only_with_its_key` is updated for the two kinds and the `forge:` resources. Full suite: 671 of 672, the one failure `ExampleTest` on a missing `APP_KEY` in the fresh worktree (environment).\n\n## Order\n\nMerge after control v0.26.0 is on the VM, or at least before carrying the new `config.json` (`rehearse.sh config`); a gateway that does not know a kind refuses it with \"no parameter schema is registered\", which is a record and not a hazard. Companion PRs: control (the kinds), portal (`WORKBENCH_KINDS` and the `forge:` resource in the capability), platform (docs), `hand.mjs preview` on the Mac.\n",
+            "branch": "workbench/preview-kinds-in-the-grant",
+            "title": "The workbench grant names the preview kinds and a forge:<slug> resource per project"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260917071835-87d007"
+}

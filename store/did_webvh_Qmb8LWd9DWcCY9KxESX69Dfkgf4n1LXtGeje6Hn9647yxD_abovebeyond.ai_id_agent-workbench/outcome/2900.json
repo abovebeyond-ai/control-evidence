@@ -1,0 +1,16 @@
+{
+    "action": "3e5e6941904f9ee02c1dcd278730cda0",
+    "effect": {
+        "detail": {
+            "base": "adcd0fb4371efa1790d42a9c1eb021701c6ef963",
+            "branch": "workbench/fix/showroom-zip-without-worker-2",
+            "commit": "87791c7d81e92011753aa221b6c9e915b116ec6d",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2898,
+    "verdict": "ALLOW"
+}

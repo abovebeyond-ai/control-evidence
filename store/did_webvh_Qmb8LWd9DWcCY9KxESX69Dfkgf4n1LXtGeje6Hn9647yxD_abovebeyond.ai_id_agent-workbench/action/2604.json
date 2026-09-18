@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dc29ffa83eabb6de2d876d7c711c92659cbd0e27",
+            "branch": "workbench/feat/hosted-embed-script",
+            "files_sha256": "4f94a98bd77cb8a7d25ef72c3cf331605577a46229f0d5f7f44259be57085428",
+            "message": "Website embed: one hosted script instead of a pasted listener"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916080128-5a4f38"
+}

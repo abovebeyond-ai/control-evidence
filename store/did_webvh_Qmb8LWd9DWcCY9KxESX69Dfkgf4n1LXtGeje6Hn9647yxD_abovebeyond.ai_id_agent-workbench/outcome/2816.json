@@ -1,0 +1,16 @@
+{
+    "action": "1ce4b1ac7cf85d0d3c7c248beddb6f52",
+    "effect": {
+        "detail": {
+            "base": "c86aa15192833644e4c892805f5203d092de3d80",
+            "branch": "workbench/de-uitrol-leest-langs-de-gateway",
+            "commit": "f3f2fef791927643c1415046c41067d4b61721cb",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2814,
+    "verdict": "ALLOW"
+}

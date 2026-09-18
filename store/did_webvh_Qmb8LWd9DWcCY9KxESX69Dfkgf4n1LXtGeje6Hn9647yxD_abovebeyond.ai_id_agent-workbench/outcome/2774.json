@@ -1,0 +1,16 @@
+{
+    "action": "0061001f1caf32fca408b973da81a5d1",
+    "effect": {
+        "detail": {
+            "base": "1cd0a2a83d74a28b2c8c63b9783c0d691e0832b0",
+            "branch": "workbench/preview-through-the-gateway",
+            "commit": "1d29c37a95b890c0168e2647309efe1534a66764",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2772,
+    "verdict": "ALLOW"
+}

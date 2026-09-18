@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8de1ac04e79c952a69ac1e77dfc48aab6ceba813",
+            "branch": "workbench/showroom/selection-follows-the-checkbox",
+            "files_sha256": "a34e7310ebd19f02a553510dd1c8c59ef6e4430ea8d04ab95fe22f1e3d5c5194",
+            "message": "Showroom: own vehicles follow the showroom checkbox, shared stock follows the showroom toggle alone"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917151640-86a38d"
+}

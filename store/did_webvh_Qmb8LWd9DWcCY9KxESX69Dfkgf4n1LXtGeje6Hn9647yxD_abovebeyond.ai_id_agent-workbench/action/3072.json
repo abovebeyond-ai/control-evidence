@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Task 2 of Ilse's third list of 2026-09-17 (mail 17:01): which vehicles the showroom presentation shows.\n\n## What was wrong\n\nWith \"integratie stocklist\" on, `DealerController::showroomSelection` and `ShowroomZip::vehicleIds` both fell back to `getForWebsite`, the website module's selection. That has two consequences that Ilse saw:\n\n- **Own vehicles were selected by `on_website`, not by the showroom checkbox.** A vehicle with \"plaatsen op de showroom slides\" off but \"publiceren op website\" on kept playing in the showroom.\n- **The shared stock in that selection is gated by `website_stocklist_integration`** (Settings, Website). Garage Alain had the showroom toggle on and the website toggle off, so no colleague vehicles appeared.\n\n## What changes\n\n- `VehicleRepository::forShowroomQuery` / `getForShowroom`: one query behind the presentation, the slide batches, the quarter-hour check, the slide zip and the count on the Showroom tab. Own vehicles: unsold, showroom tick on, not up for bidding. Colleagues: only when the showroom toggle is on, under the website module's filter settings (countries, range, makes, fuels, mileage, year, damage) where they exist and no filter otherwise. The website toggle is not read.\n- The shared-stock clause of `forWebsiteQuery` is extracted into `sharedStockClause`, used by both the website module and the showroom, so the two cannot drift. `getForWebsite` behaves as before (pinned by a test).\n- Ordering unchanged: newest change first without the integration, website order (own first) with it.\n- The dead `getForShowroom($dealer_id)` (keyed on the never-set `showroom_use_iframe_filter`) is removed.\n- Rules: R S2-7.17 added, R S2-7.1 and R S2-7.2 updated, source `klant:beslissingen#lijsten-2026-09-17`.\n\n## Tests\n\n`ShowroomSelectionTest` (5 tests): the unticked own vehicle is out and the ticked-but-offline one is in with the integration on; own-only mode; the showroom toggle alone brings colleagues with no website setting and with it explicitly off; the make filter applies to colleagues only; the website module still reads its own toggle. Each case checks that the page's embedded id list and `ShowroomZip::vehicleIds` agree.\n\nNo screens or hot files touched. The tab label \"integratie stocklist (zelfde filter als website module)\" is still accurate.\n",
+            "branch": "workbench/showroom/selection-follows-the-checkbox",
+            "title": "Showroom: own vehicles follow the showroom checkbox, shared stock follows the showroom toggle alone"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917151640-86a38d"
+}

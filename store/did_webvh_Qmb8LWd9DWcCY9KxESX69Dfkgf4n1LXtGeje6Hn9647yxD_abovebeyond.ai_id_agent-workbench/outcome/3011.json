@@ -1,0 +1,16 @@
+{
+    "action": "478bcb01831d1e672576d317167a2cdc",
+    "effect": {
+        "detail": {
+            "base": "79d9e5dc37638e2e829c92cb8866399e2eac70d5",
+            "branch": "workbench/fix/login-as-picks-a-user",
+            "commit": "89a5e871db4d3591d2b4b97eab252e3fa5299374",
+            "files": 13,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3009,
+    "verdict": "ALLOW"
+}

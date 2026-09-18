@@ -1,0 +1,16 @@
+{
+    "action": "c2ef4df8672ecde0f3e991c3be9342d4",
+    "effect": {
+        "detail": {
+            "base": "93a753fb8dff966d4801457133ed9783a08052f8",
+            "branch": "workbench/ci/pr-up-to-date",
+            "commit": "b2e0e0f471368d723c397691298368e50263c2ed",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2919,
+    "verdict": "ALLOW"
+}

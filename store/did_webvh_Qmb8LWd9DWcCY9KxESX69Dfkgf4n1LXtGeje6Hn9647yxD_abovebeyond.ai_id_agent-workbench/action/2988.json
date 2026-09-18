@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "forge.deploy",
+        "params": {
+            "pull": 527,
+            "sha": "65abfc968adc4a08bcedf82f23a65820c9fc14f9"
+        },
+        "resource": "forge:stocklistplatform-eu"
+    },
+    "run": "workbench-20260917110455-218a5c"
+}

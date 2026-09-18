@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4e601bd066083dac81dfa414dc372039533f4ff4",
+            "branch": "workbench/ui/brand-chips-select",
+            "files_sha256": "3fe98ba4007e714fde8ab05b6ac8f8dfdbf9fa7247f3bb257301217b4befe4b0",
+            "message": "Website settings: brands are picked by typing, shown as chips"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916104929-40142a"
+}

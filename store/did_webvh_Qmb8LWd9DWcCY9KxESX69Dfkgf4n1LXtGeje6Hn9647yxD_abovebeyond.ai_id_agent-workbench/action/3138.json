@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2e9ca2d3522b3348957ac53460e1fe6a0eee414e",
+            "branch": "workbench/docs/decisions-2026-09-17-afternoon",
+            "files_sha256": "94b7ef3c116f476f2e02fe123f45c0018fe83fc83b3743e26f79c6e7375eec4d",
+            "message": "Business rules: Ilse's third list of 17 September as its own decision file"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917155907-4697c3"
+}

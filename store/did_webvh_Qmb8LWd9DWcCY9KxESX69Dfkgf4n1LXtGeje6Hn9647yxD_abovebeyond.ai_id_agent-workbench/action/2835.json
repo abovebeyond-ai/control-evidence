@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "shanedeconinck.be kwam drie maanden leeg op voor wie een Nederlandstalige browser had (15\njuni tot 16 september 2026): een volledige kop en voet rond een lege `<main>`. Op de woorden\nvan de pagina was ze niet dun, elke serverkant zag een 200 met een titel, en alleen een\nbezoeker zag niets. Geen enkele meting stelde de vraag \"toont de voordeur iets\".\n\n## Wat er verandert\n\nDe pagina-meting kent een facet `home`:\n\n- per pagina: `home` (de root of een taalroot: `/`, `/nl/`, `/en-us/`; daar stuurt een\n  taalomleiding mensen heen) en `mainWords`, de zichtbare woorden in `<main>`, anders in\n  `role=\"main\"`, anders in het eerste `<article>`; null als de pagina geen van drie heeft\n- als aggregaat: `homes` en `emptyHomes`, het aantal voordeuren met minder dan twintig\n  woorden waar de inhoud hoort (`HOME_MAIN_WORDS`)\n- als oordeel: `HOME_EMPTY` (week: het eerste dat een bezoeker ziet is niets) en\n  `HOMES_SHOW` (ok)\n\nEen voordeur zonder main wordt er niet op beoordeeld: niets te tellen is niet \"leeg\". De\ndrempel van twintig woorden ligt ver onder alles wat een echte home toont en ver boven een\nleeg element met een kop erin.\n\n## Bewijs\n\n- `php artisan test`: 674 geslaagd; nieuw: een voordeur met lege main is week en op de eigen\n  woorden niet dun (dat is het hele punt), de root en de taalroot tellen als voordeur en een\n  gewone pagina niet, een home zonder main wordt niet als leeg geteld; de facettenlijst van\n  een gezonde site draagt `home`\n- `vendor/bin/phpstan analyse`: 0 fouten; `vendor/bin/pint`: schoon\n",
+            "branch": "workbench/de-voordeur-toont-iets",
+            "title": "De voordeur toont iets"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260917081053-316169"
+}

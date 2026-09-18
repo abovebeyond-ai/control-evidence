@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7aa8708a3d4c6931020287f0f2d1558135862122",
+            "branch": "workbench/ui/open-points-2026-09-17",
+            "files_sha256": "3a9eeef88d6649173b082b670f58972ddb8e28fc1fee80a970418c89904ee881",
+            "message": "Open points: showroom switch on the Data tab, button capitalisation, tokens as text, chassis-first hint"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917105910-5e5d0c"
+}

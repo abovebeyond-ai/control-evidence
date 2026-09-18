@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8309082e2ee3e5e05b08f28d73d1afeb709fae0b",
+            "branch": "workbench/fix/iframe-height-follows-content",
+            "files_sha256": "193b4b5bc89306771cead2a6ff2011d56080843f80c1be711be5737f67c741cb",
+            "message": "Website embed: report the iframe height on every change and load more without the filter form"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916073757-a547b9"
+}

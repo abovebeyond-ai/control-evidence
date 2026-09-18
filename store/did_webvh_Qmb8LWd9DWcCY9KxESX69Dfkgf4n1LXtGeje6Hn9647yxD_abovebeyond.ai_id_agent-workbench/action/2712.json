@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "afc091cbe27bdab0beaa07683592bb53ef5ee3a5",
+            "branch": "workbench/fix/own-vehicles-first-2",
+            "files_sha256": "8930f50c4bc184f60f18b2edd82c0defbe9c975a00cfd9bd4d88de71ad3e8f97",
+            "message": "Website and public API: the dealer's own vehicles come before the shared stock"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916130438-985b62"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "cabd858e8d930a9dac3596be4826b983",
+    "effect": {
+        "detail": {
+            "base": "5035a3ad495beab1e46f85483394e38c0720fea9",
+            "branch": "workbench/prelaunch-drift",
+            "commit": "4855c49a0bb329c7f99109b0bf68cb95f382d068",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3144,
+    "verdict": "ALLOW"
+}

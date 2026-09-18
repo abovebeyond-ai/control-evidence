@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "79d9e5dc37638e2e829c92cb8866399e2eac70d5",
+            "branch": "workbench/fix/lists-filters-sorting-preview",
+            "files_sha256": "fb1f72aec1e56d4a5d2efed5e6997372725a9eb20e14b4a46575e317f40e7708",
+            "message": "Lists: filters survive a detour to a vehicle, sort applies with a filter, brand sort orders models too, filter panel can stay open, photo hover preview is back"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917123832-1cfbc1"
+}

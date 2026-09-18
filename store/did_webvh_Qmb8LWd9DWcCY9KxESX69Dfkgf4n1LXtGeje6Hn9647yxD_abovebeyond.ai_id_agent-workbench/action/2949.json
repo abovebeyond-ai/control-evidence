@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "87f65ddd15718881c0d6d46491333865c5aa3e89",
+            "branch": "workbench/fix/carpass-once-a-day-and-refusals",
+            "files_sha256": "890f323fd538578fead3b06713bf5b798155a4e1cf2a6e211d93a9d908314c97",
+            "message": "Car-Pass: count one request per vehicle per day on the platform and show it on the row"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917103505-11bb5d"
+}

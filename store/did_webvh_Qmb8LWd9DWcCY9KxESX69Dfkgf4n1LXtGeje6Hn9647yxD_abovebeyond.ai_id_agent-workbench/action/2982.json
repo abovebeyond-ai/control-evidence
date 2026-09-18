@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nOn Instellingen \u2192 Showroom the helper text under the Download button always read \"De zip wordt op de achtergrond gemaakt; je mag dit scherm sluiten, hij blijft een dag beschikbaar\", also when nothing was being built (Ilse, 2026-09-17). The helper now follows the state of the build:\n\n- **idle**: only the count and the format (\"630 slides: eigen wagenpark plus gedeelde stock. E\u00e9n zip met een JPEG (1920 x 1080) per showroomwagen.\");\n- **running**: the background sentence is added, but only once the build has been going for more than five seconds in this tab, or when the server says it was already running on page load (a build that finishes in three seconds never asks anyone to leave the screen);\n- **ready**: \"Klaar; de zip blijft een dag beschikbaar.\"\n\n## How\n\n- The helper moved from the `:help` prop of the field into the Alpine scope of the `showroomZip` component (same `ui-field-help` element, same place). The three sentences are in the markup; Alpine gates the running and ready ones (`x-cloak x-show`).\n- `startedAt` is set on the click; `now` is refreshed by every poll and once at the five-second mark so the sentence appears without a click. A build that was already running on page load has `startedAt === null` and shows the sentence at once.\n- The lang key `showroom.download_time` is split into `download_time` (idle), `download_time_running` and `download_time_ready` in nl, fr, en and de.\n\n## Tests\n\n- `ShowroomDownloadTest::test_the_helper_says_the_background_sentence_only_while_the_zip_is_being_built` (new): the three sentences in nl and present in fr/en/de; for idle, running and ready the helper is inside the Alpine scope, the idle sentence is plain text, the two others carry their `x-show` condition, and no second helper is rendered under the field; the gate (`startedAt === null || now - startedAt > 5000`) is in the page.\n- Run locally: `ShowroomDownloadTest`, `SettingsPhoneLayoutTest`, `AlpineExpressionTest`, `LanguageParityTest`, `CompiledViewsTest`, `StylesheetSyntaxTest`, `HandlerWiringTest`, `RulesCoverageTest`, `RulesIdentityTest`: 57 tests, 1112 assertions, OK (one pre-existing incomplete: the Spanish gaps report).\n\nVerified in the browser at 1440: idle shows only the format sentence; after a click the helper stays unchanged for the first five seconds, then adds the background sentence; ready shows the ready sentence.\n\nNo hot shared files touched.\n",
+            "branch": "workbench/ui/showroom-helper-while-building",
+            "title": "Showroom tab: the background sentence shows only while the zip is being built"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917110421-f2de10"
+}

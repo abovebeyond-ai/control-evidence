@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "446393862b183f5905f34ccc8317ed5a82a4b612",
+            "branch": "workbench/docs/one-file-per-decision",
+            "files_sha256": "14681e1484e42047f45a1c7069c873973d3f78aa1b8a6ceffe3b599809d1e99f",
+            "message": "Business rules: one file per decision, so proposals stop colliding"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917154155-1aeb40"
+}

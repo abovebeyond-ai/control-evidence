@@ -1,0 +1,16 @@
+{
+    "action": "f1bd91d6a68afb43e652d10b49272dc8",
+    "effect": {
+        "detail": {
+            "base": "afc091cbe27bdab0beaa07683592bb53ef5ee3a5",
+            "branch": "workbench/fix/own-vehicles-first-2",
+            "commit": "910207bbd62a010a61bb63c1680a22d98606737b",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2712,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "93a753fb8dff966d4801457133ed9783a08052f8",
+            "branch": "workbench/ci/pr-up-to-date",
+            "files_sha256": "edae3bedb3ff4257cf7c39bc5163dde828bcaf701e87089ba2f7e835097e1521",
+            "message": "CI: a pull request behind main is a red X"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917093128-c7490e"
+}

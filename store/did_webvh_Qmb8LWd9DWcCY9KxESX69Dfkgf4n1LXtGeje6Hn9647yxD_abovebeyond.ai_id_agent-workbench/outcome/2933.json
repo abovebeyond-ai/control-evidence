@@ -1,0 +1,18 @@
+{
+    "action": "e6dc74f9cd51aa94e7dabc57f00d6b4e",
+    "effect": {
+        "detail": {
+            "branch": "preview",
+            "commit": "e0c2287e9ae84c767d66cad4d22730d9cb1f0a42",
+            "created": false,
+            "head": "workbench/feat/showroom-slides-incremental",
+            "previous": "6411141f295a0849e9bb1617d7760cd82e20ab49",
+            "pull": 519,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2931,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two follow-ups on #118 from looking at the live home page. Replaces #119 (same first change; the gateway does not push onto an existing branch).\n\n**Sign in leaves the stack of calls.** Three lines in three sizes and three colours under the logo was not a stack any more. The two calls stay as page 4 draws them, the same size, dark green then white; the door for a member sits small in the top corner of the mint panel. The serif menu gets the width for two rows (it broke into three at 1440).\n\n**The hero is grey in rest and colours under the cursor.** Page 2 of the maquette shows the collage in black and white, page 4 in colour. Both: two layers of the same image, the coloured one under a round mask that follows the pointer (`hero-reveal.js` sets `--x` and `--y`, the mask and the fade are css). On a phone it stays grey; reduced motion drops the fade.\n\n276 tests, Pint, ESLint and the Tailwind lint clean. BRAND.md carries both reasons.",
+            "branch": "workbench/panel-and-reveal",
+            "title": "Sign in leaves the stack of calls; the hero colours under the cursor"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260917153218-2a79e7"
+}

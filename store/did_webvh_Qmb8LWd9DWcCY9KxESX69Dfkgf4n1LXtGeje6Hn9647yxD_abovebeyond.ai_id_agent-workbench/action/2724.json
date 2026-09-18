@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "afc091cbe27bdab0beaa07683592bb53ef5ee3a5",
+            "branch": "workbench/fix/dealer-portals-tab-2",
+            "files_sha256": "24bd64d344632fb3f1a1361b8968cfacb4fe98270a472399611aac5acb0c55f2",
+            "message": "Dealer edit: the Portals tab is back"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916130738-67b2dd"
+}

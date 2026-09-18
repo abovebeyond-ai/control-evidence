@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b0a9d63c49c237e9afb20ce620deaa867daf9d24",
+            "branch": "workbench/fix/showroom-zip-without-worker",
+            "files_sha256": "767c13a2529655ecc6fb859265fe072d434d7510ade71a9bf335b291f89e72d4",
+            "message": "Showroom download also builds without a queue worker; the button always finds its way back"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917084717-d1c749"
+}

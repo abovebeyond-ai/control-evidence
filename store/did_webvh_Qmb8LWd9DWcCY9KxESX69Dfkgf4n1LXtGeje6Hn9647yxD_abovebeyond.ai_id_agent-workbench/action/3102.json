@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8de1ac04e79c952a69ac1e77dfc48aab6ceba813",
+            "branch": "workbench/website/filter-bar-make-model-transmission-fuel",
+            "files_sha256": "5e85e1276fa3fdd150c7c0c0f2a37d30a4912e0a186b1a378e2e9b77c3e618ca",
+            "message": "Website module: bar shows make, model, transmission, fuel; price and km behind \"More filters\""
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917152705-c8d11f"
+}

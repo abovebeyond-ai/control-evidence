@@ -1,0 +1,16 @@
+{
+    "action": "c6afadc6c67f1796f33fe6f2cbfa263b",
+    "effect": {
+        "detail": {
+            "base": "a59206099e5e83654d8100eeaff50e989f1416d0",
+            "branch": "workbench/panel-calls",
+            "commit": "0f69cbde348d954040bada4244fbf693b4e5eafa",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3108,
+    "verdict": "ALLOW"
+}

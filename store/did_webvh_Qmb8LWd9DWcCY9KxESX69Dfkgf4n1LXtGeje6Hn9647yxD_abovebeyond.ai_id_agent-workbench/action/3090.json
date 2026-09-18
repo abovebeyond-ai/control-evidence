@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8de1ac04e79c952a69ac1e77dfc48aab6ceba813",
+            "branch": "workbench/bidding/newest-first-and-remembered-sort",
+            "files_sha256": "511c33982523104624a1a30c0a94fb0c1004710db30edfeea1af101de2f53f0f",
+            "message": "Bidding offer: newly added first by default, sort remembered per user"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917152353-c94537"
+}

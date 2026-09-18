@@ -1,0 +1,16 @@
+{
+    "action": "deb254a87d298895cfac7b7a2cf1bb40",
+    "effect": {
+        "detail": {
+            "base": "87f65ddd15718881c0d6d46491333865c5aa3e89",
+            "branch": "workbench/fix/carpass-once-a-day-and-refusals",
+            "commit": "8aa6277afb145e083b7957a23a46388b222a9e0f",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2949,
+    "verdict": "ALLOW"
+}

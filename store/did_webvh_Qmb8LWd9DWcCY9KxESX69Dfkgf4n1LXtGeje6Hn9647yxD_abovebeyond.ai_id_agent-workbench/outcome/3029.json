@@ -1,0 +1,16 @@
+{
+    "action": "0dd12c864e2eef3062b86e2325609331",
+    "effect": {
+        "detail": {
+            "base": "79d9e5dc37638e2e829c92cb8866399e2eac70d5",
+            "branch": "workbench/fix/takeover-docs-original-owner",
+            "commit": "c2e03cd4030010270938b8517e9a735d13e9d58b",
+            "files": 16,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3022,
+    "verdict": "ALLOW"
+}

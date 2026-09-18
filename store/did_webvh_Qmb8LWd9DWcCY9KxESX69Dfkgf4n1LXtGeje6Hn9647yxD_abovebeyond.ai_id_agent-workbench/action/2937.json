@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "87f65ddd15718881c0d6d46491333865c5aa3e89",
+            "branch": "workbench/docs/rules-sources-proveml-2",
+            "files_sha256": "d30be1b633728390b7b2cb4aebbb125be6c9c0c998683a597f0419367c03f155",
+            "message": "Business rules carry their sources; the status is derived, S3 Car-Pass as the pilot"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917102129-de585c"
+}

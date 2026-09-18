@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b06d99e76b71e2e6924114f1079181912ed51bf7",
+            "branch": "workbench/fix/iframe-dealer-theme",
+            "files_sha256": "3764d5a1b64bab9e4fa4c71c79258da240dadd6c435a7725f1070b9447aa9eca",
+            "message": "Website embed: the dealer's theme, font and colours apply again"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916081020-c8e215"
+}

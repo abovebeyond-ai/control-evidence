@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b0a9d63c49c237e9afb20ce620deaa867daf9d24",
+            "branch": "workbench/docs/preview-merge-result",
+            "files_sha256": "034be8f0ade3c9480417e46b606c51650160b7a3bf6383bac9efa0fa3c7360a7",
+            "message": "docs/preview: the preview shows the pull request merged onto main, not its head"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917085817-14f04b"
+}

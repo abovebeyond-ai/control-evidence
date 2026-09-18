@@ -1,0 +1,16 @@
+{
+    "action": "a408aee11b1274a91af2745345e38ac8",
+    "effect": {
+        "detail": {
+            "base": "4e601bd066083dac81dfa414dc372039533f4ff4",
+            "branch": "workbench/fix/user-modal-closes-after-save",
+            "commit": "71779b577bfa8566fa03063996395574671d1041",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2682,
+    "verdict": "ALLOW"
+}

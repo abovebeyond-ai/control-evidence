@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3d89d11531e9a4154596d0c4ba5635b8fc4ef43a",
+            "branch": "workbench/revert/rating-with-count",
+            "files_sha256": "8b2f95d6bab0280c5021f3d80d8388dda9d6311f949483101614b3ba98239e40",
+            "message": "Revert \"Ratings: no stars without reviews, then the average with the count\""
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917135612-5101e1"
+}

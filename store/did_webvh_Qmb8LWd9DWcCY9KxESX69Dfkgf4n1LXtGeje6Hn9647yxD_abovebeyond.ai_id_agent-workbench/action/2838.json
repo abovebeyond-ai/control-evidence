@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "preview.push",
+        "params": {
+            "branch": "preview",
+            "head": "workbench/feat/showroom-slides-cached",
+            "pull": 512,
+            "sha": "37c904d2e2689a31fb1eeac8351ba53c1a77e2ab"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917081625-22fb1d"
+}

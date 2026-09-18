@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d3d7d01539cce8837eeebb3ab566c146e5852e1c",
+            "branch": "workbench/feat/embed-settings-one-place",
+            "files_sha256": "aa651fd07972d9878e67a32357fccea89f97e7737cace036f619670997fbc051",
+            "message": "Website settings: preview, builder guide and a mail to the web builder next to the embed code"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916083329-c64cf3"
+}

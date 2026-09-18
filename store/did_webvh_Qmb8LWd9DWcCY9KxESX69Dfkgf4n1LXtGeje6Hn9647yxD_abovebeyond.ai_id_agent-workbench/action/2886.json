@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8a898b6f345dc0224c482627e5891d3f05db5c23",
+            "branch": "workbench/preview-base-2",
+            "files_sha256": "facff12d6f0eb46c7deec57beefea0665cbe34d631cfaaa2f3116a029f747eea",
+            "message": "preview.push: optional base, the commit the previewed merge was made onto"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260917085459-613746"
+}

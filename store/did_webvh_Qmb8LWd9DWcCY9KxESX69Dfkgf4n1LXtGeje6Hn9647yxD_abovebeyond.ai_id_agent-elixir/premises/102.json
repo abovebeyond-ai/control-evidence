@@ -1,0 +1,48 @@
+{
+    "certificate": "@[package:devalue]{devalue} moves from %[from]{5.8.1} to %[to]{5.9.2}, closing %[advisories]{1} advisory, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:devalue.advisories": "inferred",
+        "package:devalue.from": "inferred",
+        "package:devalue.name": "inferred",
+        "package:devalue.semverSafe": "gateway",
+        "package:devalue.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "attempt": "gateway",
+        "ciRun": "inferred",
+        "coverage": "inferred",
+        "filesChanged": "inferred",
+        "from": "inferred",
+        "headersToSet": "gateway",
+        "heavyHeadersMissing": "inferred",
+        "missingHeaders": "inferred",
+        "model": "inferred",
+        "safeHeaders": "gateway",
+        "semverSafe": "gateway",
+        "testsAfter": "inferred",
+        "testsBefore": "inferred",
+        "to": "inferred",
+        "underTests": "gateway"
+    },
+    "store": {
+        "package:devalue.advisories": 1,
+        "package:devalue.from": "5.8.1",
+        "package:devalue.name": "devalue",
+        "package:devalue.semverSafe": 1,
+        "package:devalue.to": "5.9.2"
+    },
+    "verified": true
+}

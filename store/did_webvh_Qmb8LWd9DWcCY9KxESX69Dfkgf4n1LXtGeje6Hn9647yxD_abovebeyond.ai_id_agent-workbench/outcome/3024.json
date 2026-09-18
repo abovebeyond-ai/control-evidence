@@ -1,0 +1,16 @@
+{
+    "action": "727534d633416f0e004639ceb1d098ae",
+    "effect": {
+        "detail": {
+            "base": "79d9e5dc37638e2e829c92cb8866399e2eac70d5",
+            "branch": "workbench/fix/livewire-expired-page",
+            "commit": "61cde87c6c154e05defb53f3d0eecbed5a65f76f",
+            "files": 13,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3021,
+    "verdict": "ALLOW"
+}

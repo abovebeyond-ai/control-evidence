@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`shanedeconinck.be` kwam leeg op voor wie een Nederlandstalige browser heeft, sinds 15 juni\n2026. De home lijst `site.RegularPages`, en op het Nederlandse deel van de site zijn dat\nalleen Nederlandse pagina's: de posts zijn Engels, dus de lijst was leeg. En het eerste\nscript op de home stuurt elke browser met een `nl`-taal precies daarheen. Elke server-meting\nzag een 200 met een titel en 5.000 tekens tekst (de navigatie, de voettekst); alleen een\nbezoeker zag niets.\n\n## Wat er verandert\n\n- `layouts/index.html`: heeft de huidige taal geen eigen posts, dan toont de home die van\n  de standaardtaal. Wie hier komt, komt voor het schrijven; dat het Engels is, staat erbij\n  in elke titel.\n- `test/site.test.mjs`: op elke home (`/` en `/nl/`) staat minstens \u00e9\u00e9n artikel in\n  `<main>`. Zonder de fix faalt hij op `/nl/ toont geen enkel artikel`; met de fix niet.\n\n## Bewijs\n\n- `npm test`: 10 geslaagd (de bouw, de dode links, de handtekeningen, en de nieuwe)\n- in headless Chrome rendert `/nl/` nu de lijst; v\u00f3\u00f3r de fix alleen de kop\n",
+            "branch": "workbench/de-nederlandse-voordeur-was-leeg",
+            "title": "De Nederlandse voordeur was leeg"
+        },
+        "resource": "ShaneDeconinck/shanedeconinck.be"
+    },
+    "run": "workbench-20260916074741-1ac373"
+}

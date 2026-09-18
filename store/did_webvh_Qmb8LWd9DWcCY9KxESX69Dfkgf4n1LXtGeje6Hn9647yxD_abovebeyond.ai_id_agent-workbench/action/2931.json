@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "preview.push",
+        "params": {
+            "base": "025b0128765bd75b23a1192a6235d95e1b50541c",
+            "branch": "preview",
+            "head": "workbench/feat/showroom-slides-incremental",
+            "pull": 519,
+            "sha": "e0c2287e9ae84c767d66cad4d22730d9cb1f0a42"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917100456-6961d9"
+}

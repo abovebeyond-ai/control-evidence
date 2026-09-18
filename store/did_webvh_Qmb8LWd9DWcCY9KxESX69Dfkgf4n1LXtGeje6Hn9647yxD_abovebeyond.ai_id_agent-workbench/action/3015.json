@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "79d9e5dc37638e2e829c92cb8866399e2eac70d5",
+            "branch": "workbench/ui/rating-with-count",
+            "files_sha256": "85b0c47b24b9ad46b63bd58f3836c3d530d5822cec015222e673516d645b3655",
+            "message": "Ratings: no stars without reviews, then the average with the count"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917122005-4beffa"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7aa8708a3d4c6931020287f0f2d1558135862122",
+            "branch": "workbench/feat/bidding-type-choice-back",
+            "files_sha256": "f7cf68761261d35097fb0845e613fef13e4f3cbda1c16b3cbe0dca27aeb6f61f",
+            "message": "Bidding: 'Wie mag bieden' is back on the bidding vehicle form"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260917104630-bd2539"
+}

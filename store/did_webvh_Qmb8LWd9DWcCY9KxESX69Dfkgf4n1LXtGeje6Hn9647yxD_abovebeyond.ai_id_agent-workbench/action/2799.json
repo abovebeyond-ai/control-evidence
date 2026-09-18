@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n- `Capability::WORKBENCH_KINDS` gains `preview.push` and `forge.deploy` (control v0.26.0): a session puts a pull request on a project's preview site through the gateway, which holds the site's Forge deploy trigger as `forge-deploy-<slug>`; nothing on the session's machine can deploy.\n- The workbench capability names `forge:<slug>` beside `portal:<slug>` for every project, from one constant (`FORGE_RESOURCE`), like `PORTAL_RESOURCE`. Playbook capabilities are unchanged.\n- `WorkbenchAdmission::repos()` leaves `forge:` out as it leaves `portal:` out, so the stale-admission check keeps comparing repositories only.\n\nThe gateway requires kind and resource in both the grant (elixir, companion PR) and this capability; `hand.mjs admit` on the Mac names the same list on the YubiKey.\n\n## Tests\n\n`php artisan test --filter=\"Capability|Admission|Workbench|FourTokens\"`: 31 passed (`IngestCapabilityTest` and `CapabilityKmsTest` updated for the kinds and the `forge:` resource). Full suite in a fresh worktree: 577 of 578; the one failure is `BuildStampTest`, which reads the checkout's `.git` and meets a worktree's `.git` file (environment).\n\n## Order\n\nIndependent of the others in effect: a capability naming a kind the gateway does not yet know is simply not used for it. Companion PRs: control (the kinds), elixir (the grant), platform (docs), `hand.mjs preview` on the Mac.\n",
+            "branch": "workbench/preview-kinds-in-the-capability",
+            "title": "The workbench capability names the preview kinds and forge:<slug>"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260917071845-6df62b"
+}

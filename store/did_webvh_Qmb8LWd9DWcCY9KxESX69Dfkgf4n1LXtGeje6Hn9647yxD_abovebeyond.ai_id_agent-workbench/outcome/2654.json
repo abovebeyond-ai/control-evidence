@@ -1,0 +1,16 @@
+{
+    "action": "5e3edba5a514c318a663eed8d7c8a418",
+    "effect": {
+        "detail": {
+            "base": "9624bee006951583c96eecc9bc0b31721ebedef4",
+            "branch": "workbench/fix/bids-viewable-in-every-phase",
+            "commit": "8ef4891dfd7e25a726b1606531932e3c0eb75786",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2652,
+    "verdict": "ALLOW"
+}

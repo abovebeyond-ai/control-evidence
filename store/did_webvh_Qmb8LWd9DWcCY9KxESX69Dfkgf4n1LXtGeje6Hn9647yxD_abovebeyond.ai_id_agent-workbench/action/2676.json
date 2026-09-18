@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5be271aa4583e5a48e5ad0de3cc09f083b28e178",
+            "branch": "workbench/fix/showroom-download-chrome",
+            "files_sha256": "b0b5242c28925af8b987cc13b432d5cc3a6d9c21a671d0d0af05e5ddd9145b73",
+            "message": "Showroom download: honest error and a status check for Chrome, with the server checklist"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260916104325-6ea0b7"
+}

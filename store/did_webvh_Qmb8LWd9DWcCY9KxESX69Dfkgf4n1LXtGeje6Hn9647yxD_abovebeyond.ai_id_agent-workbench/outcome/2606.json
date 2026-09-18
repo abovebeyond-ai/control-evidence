@@ -1,0 +1,16 @@
+{
+    "action": "4b6266d6c77854c502892405ab04eaa4",
+    "effect": {
+        "detail": {
+            "base": "dc29ffa83eabb6de2d876d7c711c92659cbd0e27",
+            "branch": "workbench/feat/hosted-embed-script",
+            "commit": "124364cf3d57e5655523127cb0f16b9797e170ff",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2604,
+    "verdict": "ALLOW"
+}

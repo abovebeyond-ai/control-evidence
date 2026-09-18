@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fd1623c0786080a1d74171ef435f9299e36c723d",
+            "branch": "workbench/preview-kinds-in-the-grant",
+            "files_sha256": "9c0ef21db593f196a5237e3f65a086253820b2d4a1e913b6bc32dc4778ccdb15",
+            "message": "The workbench grant names the preview kinds and a forge:<slug> resource per project"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260917071835-87d007"
+}

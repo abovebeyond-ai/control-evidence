@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f0f2f5a0ad7bd8a0dd79e321fc1d5ed29ddabf92",
+            "branch": "workbench/van-oordeel-naar-hand",
+            "files_sha256": "cb86b9d10506ace3afcfaa99e4ec45fd8f251c3cf5ea1e1d8f2edfabca869b24",
+            "message": "Het oordeel vraagt de hand"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260917075737-05fc20"
+}

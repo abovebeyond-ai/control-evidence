@@ -1,0 +1,16 @@
+{
+    "action": "4d416b7abe702a89a237176a30520a23",
+    "effect": {
+        "detail": {
+            "base": "afc091cbe27bdab0beaa07683592bb53ef5ee3a5",
+            "branch": "workbench/feat/api-log-user-agent-2",
+            "commit": "130b5209dab8e7f94d37538996d6177340eb9ccc",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2706,
+    "verdict": "ALLOW"
+}
