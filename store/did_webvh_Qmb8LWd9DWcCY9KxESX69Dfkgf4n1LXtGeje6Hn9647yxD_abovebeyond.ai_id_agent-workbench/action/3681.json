@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Font en accentkleur zet Stocklist zelf.\n\nFont, kopkleur en knopkleur zijn dealerinstellingen in het websitetabblad en worden door de website gelezen.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S2-6.4 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `UpdateWebsiteRequest::rules``, `settings/setting/_tabs/website.blade.php``, `WebsiteController::index`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-font-en-accentkleur-zet-stocklist-zelf.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-font-en-accentkleur-zet-stocklist-zelf.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Font en accentkleur zet Stocklist zelf"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092429-bf199e"
+}

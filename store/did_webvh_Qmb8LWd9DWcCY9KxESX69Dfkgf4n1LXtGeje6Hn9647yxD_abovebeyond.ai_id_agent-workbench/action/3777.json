@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\n`phpunit` is red on main since midnight, and on every branch opened from it. Not a regression in behaviour: `BiddingMailsTest::the daily mail holds the biddings of the past day` sets the clock to 18 September with `Carbon::setTestNow` and puts its vehicles on the 17th, but the query behind the daily mail reads `date('Y-m-d', strtotime('- 1 day'))`, the machine's clock, which Carbon cannot move. The test passed on the day it was written (PR #556) and fails every day after.\n\n## What changed\n\n`ExportVehicleRepository`: `now()->subDay()->toDateString()` and `now()->toDateString()` instead of `date()`. In production the two clocks are the same, so the mail keeps sending exactly what it sent; what changes is that a test can hold the day still.\n\nFinding `2026-09-19-dagmail-query-las-de-machineklok` records the class of defect: a query a test must be able to pin does not read the machine's clock.\n\n## Tests\n\n`BiddingMailsTest|BiddingFunnelTest|BiddingTest|ScheduleTest`: 31 tests, 223 assertions, green (the daily-mail test was the failing one). Guards `Rules*|FindingsIssues`: 20 tests. `php bin/rules-sources`: Geen problemen.\n",
+            "branch": "workbench/fix/daily-export-uses-the-app-clock",
+            "title": "The daily export reads the application clock (main is red without it)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919095240-0d5d79"
+}

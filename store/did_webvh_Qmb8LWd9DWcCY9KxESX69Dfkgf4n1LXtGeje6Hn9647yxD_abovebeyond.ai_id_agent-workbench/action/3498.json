@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`bin/findings-to-issues --ernst=nu --apply` opened the three findings of severity `nu` as issues #570, #571 and #572, through the gateway (`issue.open`, control v0.28.1, one record each). This writes the numbers back into the files, so the repository and GitHub say the same thing.\n\nThe three: the bidding window on its last day (#570), the Car-Pass renewal seven days before it expires (#571), and \"This page has expired\" when changing a price (#572).\n\n## Worth knowing\n\nOpening them took three attempts, and each failure was a missing link in the chain rather than a bug in the mirror: the kind was not in the grant (the VM still carried the previous configuration), then the adapter did not claim the kind it answered (fixed and guarded in abovebeyond-ai/control#87), then the GitHub App lacked the `Issues: read and write` permission, which an organisation accepts per installation, the same dance as the Workflows permission on 16 September.\n\n## Next\n\n`--ernst=\"deze week\"` mirrors about thirty more, `--ernst=later` the rest; `bin/findings-to-issues` without arguments says what it would open.\n",
+            "branch": "workbench/docs/first-mirrored-issues",
+            "title": "The first three findings carry their issue"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092057-e42a2a"
+}

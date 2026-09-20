@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "25167ad43c8ac79eb4ded6f832882dcc8998cede",
+            "branch": "workbench/de-ci-in-jobs",
+            "files_sha256": "19c06aee0656df153166cc237daf05127f933bf9285f9200d29c84f2cad07c92",
+            "message": "De CI in jobs, \u00e9\u00e9n per oordeel\n\nZes jobs in plaats van \u00e9\u00e9n van tien stappen: up-to-date, tests (parallel op\nsqlite), tests-mariadb (adviserend), frontend, static en audit. Onderweg:\nnpm ci kan weer (lockfile met de wasm-fallback), en config/cache.php leest\nCACHE_STORE naast CACHE_DRIVER, want de tests draaiden op de bestandscache."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919123415-4a41b8"
+}

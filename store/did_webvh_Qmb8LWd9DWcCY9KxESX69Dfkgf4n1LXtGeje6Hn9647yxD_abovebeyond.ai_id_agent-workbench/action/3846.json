@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "01c5d7910774cd71ebfddb6708bd104ebbf8bff0",
+            "branch": "workbench/tests/parallel-after-all",
+            "files_sha256": "bfc904a17757df2d5c147a537f17a55fb4e200c969eeca7ef0fb5ec9e7b2e1df",
+            "message": "Back to parallel in the CI"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919114615-3edca6"
+}

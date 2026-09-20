@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Werklijsten bundelen: Car-Pass die vervalt, leads, en handelaren te beoordelen.\n\nEr is geen werklijst \"handelaren te beoordelen\"; de werklijsten zijn onvolledige voertuigen, Car-Pass, release notes, leads en transport. Beoordelen van een handelaar loopt via de biedingsflow (B1-4).\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P1-2.1 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `WidgetService::get1Data``, `VotingController::addDealerVote`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-werklijsten-bundelen-car-pass-die-vervalt-leads.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-werklijsten-bundelen-car-pass-die-vervalt-leads.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Werklijsten bundelen: Car-Pass die vervalt, leads, en handelaren te beoordelen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092451-188d64"
+}

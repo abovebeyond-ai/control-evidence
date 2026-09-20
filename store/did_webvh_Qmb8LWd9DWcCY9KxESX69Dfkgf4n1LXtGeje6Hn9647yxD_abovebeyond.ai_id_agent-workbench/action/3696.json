@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Kopi\u00ebren zonder nieuwe upload; data-tab en Car-Pass opnieuw open.\n\nPortals worden inderdaad niet gekopieerd en Car-Pass-velden gewist, maar de stocklist-vlaggen (available_on_stocklist, on_stock, technical_ready) en de planningsdatums worden overgenomen zoals ze staan (bij een verkochte wagen zijn die al 0).\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S1-10.2 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `OwnStockController::duplicateVehicle` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-kopieren-zonder-nieuwe-upload-data-tab-en.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-kopieren-zonder-nieuwe-upload-data-tab-en.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Kopi\u00ebren zonder nieuwe upload; data-tab en Car-Pass opnieuw open"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092436-cd1bba"
+}

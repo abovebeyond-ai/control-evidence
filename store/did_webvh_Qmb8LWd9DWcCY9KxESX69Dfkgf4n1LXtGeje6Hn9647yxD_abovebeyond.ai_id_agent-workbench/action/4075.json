@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Alain Vandevelde reported on 17 September, through the \"iets werkt niet\" button: *\"Het is gelukt\nvoor de display modus, maar ik zie geen foto enkel gegevens\"*. His message sat unread in `anomaly`\nfor two days; Beheer > Werking showed it.\n\n**His data is fine.** All four of his showroom vehicles have photos, a primary one, and a\n`media_version` on every row, and the path the slide reads gives bytes back today. It is the stored\nslide that was wrong.\n\n**Why.** `drawPhoto` falls back to the silhouette the moment the derived size cannot be read, and\nthe cache stores that slide under the vehicle's fingerprint. A fingerprint says *which* photo was\nmeant to be drawn, not whether it was \u2014 and it has to stay that way: it must be computable without\nreading the photo, or every lookup costs a read from the bucket and a zip of two hundred vehicles\ntwo hundred of them. So a silhouette drawn while the photo mill was still catching up stayed under\na fingerprint that never changes again. The same fingerprint goes into the zip manifest, so the\nnext zip read \"unchanged\" and kept the silhouette too.\n\n**What it does now.** The slide says whether it missed a photo the vehicle actually has, and such a\nslide is handed out but not kept: not in the cache, and its vehicle is left out of the manifest so\nthe next build draws it again. A vehicle with no photo row at all changes nothing \u2014 there the\nsilhouette *is* the slide, and it is stored like any other.\n\nRule R S2-7.18, finding\n`2026-09-19-showroomslide-zonder-foto-blijft-eeuwig-in-de-cache`, two tests. Both checked by\nremoving the fix again: the first fails, which is the point of writing it.\n\n**While I was in there**, the other report on that screen is already answered. Randy Heuten's\nerror 500 on a BMW 118i (18 September, 11:26) is\n`PathPrefixer::prefixPath(): $path must be of type string, null given` \u2014 a Hexon photo row without\na file, finding `2026-09-18-hexon-wagen-500-bij-opslaan`, fixed in #557 the same afternoon. The\nproduction log carries that error 52 times and the last one is 18 September at 13:52. Nothing\nsince.\n\nReplaces #676, which was green on every check but built on a main from before #674 and #675.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/slide-without-photo-is-not-cached-2",
+            "title": "A showroom slide that missed its photo is not kept (replaces #676)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920064055-531473"
+}

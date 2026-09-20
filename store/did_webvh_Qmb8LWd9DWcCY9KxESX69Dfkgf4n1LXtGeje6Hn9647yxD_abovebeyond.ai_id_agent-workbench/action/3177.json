@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "493b4b2b5387a282f60e569a447996e6a61d622c",
+            "branch": "workbench/upgrade/laravel-13",
+            "files_sha256": "7110dc7e5a4e344d30e18050a340a73d491dc6565a4e38b8b062895b28623905",
+            "message": "Upgrade to Laravel 13, Passport 13, Mollie 4 and PHPUnit 12"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918101906-90cdb7"
+}

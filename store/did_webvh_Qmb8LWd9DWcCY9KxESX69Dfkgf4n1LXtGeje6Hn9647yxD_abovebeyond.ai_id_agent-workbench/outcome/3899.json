@@ -1,0 +1,16 @@
+{
+    "action": "e34a38d5e3930ca84947e3bd8147e142",
+    "effect": {
+        "detail": {
+            "base": "25167ad43c8ac79eb4ded6f832882dcc8998cede",
+            "branch": "workbench/de-ci-in-jobs-2",
+            "commit": "87b2c4192e155ad3c4c34c19a2bb2eac63a218b9",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3891,
+    "verdict": "ALLOW"
+}

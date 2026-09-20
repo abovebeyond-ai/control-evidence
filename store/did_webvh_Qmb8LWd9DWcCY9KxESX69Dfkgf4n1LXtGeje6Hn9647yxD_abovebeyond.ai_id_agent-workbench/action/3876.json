@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Phase 1, step 1 of `docs/design/sources-before-more-sources.md`.\n\nThe old adapter result could say two things, a count and a list of errors, so\n\"0 signals, 0 errors\" was one answer for five different states. TikTok's actor\nreturned nothing from 12 May and took Instagram and Reddit search with it; every\nround logged that same line for four months. It was not a TikTok bug. It was a\ntype that could not tell the truth.\n\n## The type\n\nA closed list in `base.mjs`: `delivered`, `nothing-new`, `empty`, `failed`,\n`skipped`, `unknown`. `outcomeOf()` **derives** the outcome in one place from what\nthe adapter measured; an adapter never names its own. Fetched against fresh is\nthe whole point: \"40 fetched, 0 new\" is a quiet day, \"0 fetched\" is 12 May, and\nuntil now they were one number.\n\n`adapterResult()` takes an optional fourth argument (`{fetched, skipped}`), so an\nuntouched adapter keeps working. When such an adapter comes back with nothing it\nreports `unknown`: we will not call a silence healthy on behalf of an adapter\nthat never said what it fetched. `unknown` is a debt that shrinks adapter by\nadapter.\n\n## Four adapters migrated, where the truth matters now\n\n- `tiktok-trends` passes what the actor handed over before our dedup.\n- `instagram-search` and `reddit-search` say *skipped: no recent trend terms from\n  tiktok-trends* where they said nothing.\n- A missing credential (Apify, Twitch) is a skip with a reason, no longer an\n  error that keeps the counter red for ever.\n\n## The summary line says it\n\n```\ntiktok-trends: EMPTY, upstream returned nothing\ninstagram-search: skipped (no recent trend terms from tiktok-trends to search for)\nyoutube: nothing, and this adapter does not say what it fetched\n```\n\n729 tests pass, 13 new. Next, each its own PR: the `meta` declaration and its\ntest, `adapter_runs`, the Apify helper, the measurement, the Sources section.\n",
+            "branch": "workbench/adapter-outcome",
+            "title": "An adapter says what happened, not just how many"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919123103-6ba060"
+}

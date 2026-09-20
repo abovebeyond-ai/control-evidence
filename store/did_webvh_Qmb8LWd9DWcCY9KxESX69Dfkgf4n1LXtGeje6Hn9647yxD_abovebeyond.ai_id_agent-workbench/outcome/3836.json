@@ -1,0 +1,16 @@
+{
+    "action": "d7f5a4d11ef9df8b455350c3ddb40224",
+    "effect": {
+        "detail": {
+            "base": "7983e2921aa82312041058212175a9adc3cefe7c",
+            "branch": "workbench/tests/run-in-parallel-2",
+            "commit": "c39ad17dd532cb60b9f6261ef1390212f990df03",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3834,
+    "verdict": "ALLOW"
+}

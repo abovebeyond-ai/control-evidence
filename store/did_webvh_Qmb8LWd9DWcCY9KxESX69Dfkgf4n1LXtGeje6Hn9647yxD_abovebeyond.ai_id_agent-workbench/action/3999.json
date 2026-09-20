@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "56dedca9db64109407deaf943f02c7df9b4ae4c2",
+            "branch": "workbench/klasprogressie-varianten",
+            "files_sha256": "116ccceb171ea513711c35743ebe3ead908c8e858588fa746fb325b433faed14",
+            "message": "Klasprogressie met het cijfer voorop, meters op primary-400, paginering in het Nederlands\n\nDe dashboardkaarten met het percentage als kerncijfer en een dunne meter\nop primary-400 (een meter is geen knop); projectnamen lichter; de\npagineringsweergave in het Nederlands via resources/lang/nl.json."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919141802-fc9fd7"
+}

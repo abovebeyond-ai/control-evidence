@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De API-update start een registratie na een meegegeven Car-Pass-URL.\n\nBij een update wordt de wagen-id in plaats van de wagen doorgegeven, zodat de voorwaarden op `$vehicle->chassis_number` nooit slagen en er bij een API-update geen registratie start.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R P3-2.6 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `VehicleApiController::update``, `VehicleApiService::updateCarpassInit`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-de-api-update-start-een-registratie-na.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-de-api-update-start-een-registratie-na.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "De API-update start een registratie na een meegegeven Car-Pass-URL"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092121-4ca644"
+}

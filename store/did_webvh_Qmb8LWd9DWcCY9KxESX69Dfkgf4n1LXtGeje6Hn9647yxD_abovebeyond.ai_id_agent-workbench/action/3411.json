@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3690484c07a966a6add1e36eef8f71c6a0d9247a",
+            "branch": "workbench/docs/findings-to-issues",
+            "files_sha256": "f26f5e8fcfbe19030bef1caa5a959ec11077eece59bf5900c070279e15d390df",
+            "message": "From a finding to the pull request that ended it, and a mirror on GitHub"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919073407-175c86"
+}

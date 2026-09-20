@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2a2905c150c1cff47b32c4810fa0b254ae40e93e",
+            "branch": "workbench/adapter-outcome",
+            "files_sha256": "c9f986aa69d6ec9a9ed42424bbb9432cc3c0a34a59aa25bbbd05ef420b63c5ba",
+            "message": "An adapter says what happened, not just how many"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919123103-6ba060"
+}

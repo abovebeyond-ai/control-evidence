@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bf715985526174f79d07856c4d902b28f970159b",
+            "branch": "workbench/fix/slide-without-photo-is-not-cached-2",
+            "files_sha256": "56be9e8700a1a573627e2a33945fba476e0d8fb08943a7baa33f0630166d9e89",
+            "message": "A showroom slide that missed its photo is not kept"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920064055-531473"
+}

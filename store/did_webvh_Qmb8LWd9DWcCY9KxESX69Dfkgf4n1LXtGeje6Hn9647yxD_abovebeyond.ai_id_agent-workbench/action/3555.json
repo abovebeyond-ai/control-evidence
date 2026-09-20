@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Excl. btw is incl. gedeeld door (1 + btw-percentage van de ingelogde dealer).\n\nHet percentage kwam van de ingelogde gebruiker op het moment van afdrukken en stond nergens op het document: dezelfde offerte of bestelbon toonde later, of voor een andere gebruiker, andere excl.-bedragen. Sinds 13 september bewaart het platform het percentage bij het aanmaken (`vat_percentage` op offers en orders) en rekent `OfferPricing` daarmee; oudere documenten vallen terug op het dealerpercentage. Vraag V-9: mag een oud document het percentage van vandaag tonen, of moet het worden ingevuld met wat toen gold?\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S4-3.10 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `OfferPricing`, `OfferController::create`, `OrderController::create`, `price_calulation.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-excl-btw-is-incl-gedeeld-door-1.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-excl-btw-is-incl-gedeeld-door-1.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: ilse"
+            ],
+            "title": "Excl. btw is incl. gedeeld door (1 + btw-percentage van de ingelogde dealer)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092141-309293"
+}

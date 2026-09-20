@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "102ddba863ddd1a56e663923c14864d76998649b",
+            "branch": "workbench/fix/imported-photos-save-and-api",
+            "files_sha256": "0dae81b320123fc5e94dc2638d203072d0577c3042aab8570f146775fd211840",
+            "message": "Imported photos: a row without a file no longer breaks saving or the partner API"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918115318-f0fa5d"
+}

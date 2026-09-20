@@ -1,0 +1,14 @@
+{
+    "action": "b6ffdf89bf2ed3fcc7c352697960a243",
+    "effect": {
+        "detail": {
+            "only": "protection",
+            "project": "vera",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3867,
+    "verdict": "ALLOW"
+}

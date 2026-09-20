@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3b653e6bdc4adb4f87572e182579647411e32424",
+            "branch": "workbench/de-suite-op-mariadb",
+            "files_sha256": "b2ac53805bc073553f943cb093ec600fa8d15d74df57e29d2d434e14cffac7d5",
+            "message": "De suite op MariaDB: wat sqlite verborg\n\nDe 36 tests die op MariaDB faalden, dicht: het graad-id in terms.grade van\neen testhelper, attainmentLevel als [id => true], de schooljaargrens als\ndatabank-id (nu Schoolyear::scoresFollowTheData), de stroom van het scenario\nbuiten het StreamId-enum, en snapshots die aan de kolomvolgorde hingen."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919131611-e14f4d"
+}

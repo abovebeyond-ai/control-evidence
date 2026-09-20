@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Tijdens het herstellen van de overlap tussen marker 16 en de \"Extra schade\"-knop (zie\n2026-09-15-damage-extra-btn) viel op dat twee vertaalsleutels in `damage.php` een testwaarde\ndragen in plaats van een echte vertaling:\n\n- `fr` \u2192 `'Extra' => 'Extra fr'` en `'extra_damage' => 'Dommages suppl\u00e9mentaires'` (deze laatste\n  is w\u00e9l correct; enkel `Extra` draagt de teststaart).\n- `en` \u2192 `'Extra' => 'Extra eng'` en `'extra_damage' => 'extra_damage eng'` (hier dragen BEIDE\n  sleutels de teststaart; `extra_damage` is de knoptekst zelf en zou letterlijk\n  \"extra_damage eng\" tonen aan een Engelstalige dealer).\n\n`de` en `nl` dragen geen teststaart (`Extra` staat er gewoon als `'Extra'`/`'Zus\u00e4tzliche Sch\u00e4den'`\nen `extra_damage` als `'Zus\u00e4tzliche Sch\u00e4den'`/`'Extra schade'`).\n\nNiet meegenomen in deze PR: de opdracht ging over de positie van de knop en de hoofdletter/lidwoord-\nconsistentie van vier met naam genoemde onderdelen (Voorbumper/Bonnet/Linker_voorportier/Achterklep),\nniet over deze twee sleutels. Huisregel is bovendien om bestaand gedrag te pinnen en niet stilzwijgend\nbij te sturen buiten de gevraagde scope. `Extra` wordt gebruikt als de titel boven de kaart met\n\"extra\"-schades (niet zichtbaar in de schade-tab zelf, wel elders); `extra_damage` is wel degelijk de\nzichtbare knoptekst en de tekst op de rij \"18. Extra\" in de mobiele lijst.\n\nVoorstel: `fr.Extra` \u2192 `'Extra'`, `en.Extra` \u2192 `'Extra'`, `en.extra_damage` \u2192 `'Extra damage'`\n(consistent met de andere Engelse onderdeelnamen, die allemaal met een hoofdletter beginnen sinds\ndeze PR).\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S1-6.16 |\n| Beslist | Shane |\n| Gevonden | 2026-09-15 |\n| Waar | \"resources/lang/{fr,en}/damage.php (sleutels `Extra`, `extra_damage`)\" |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-15-schade-extra-label-testwaarden.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-15-schade-extra-label-testwaarden.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "\"Plaats 18 toont testwaarden in fr/en: 'Extra fr', 'extra_damage eng'\""
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092455-0b8074"
+}

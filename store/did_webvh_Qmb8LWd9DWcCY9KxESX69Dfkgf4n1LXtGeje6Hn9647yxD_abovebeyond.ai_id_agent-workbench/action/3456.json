@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nv0.28.0 added `issue.open` to the schema, to the GitHub adapter's switch and to the evidence footer, and the first real attempt answered \"no effect adapter for this kind\" on an action the grant allowed. The registry maps kinds to adapters through `Kinds()`, and that list did not name the new one: the case in the switch was unreachable.\n\n## What\n\n- `GitHub.Kinds()` names `issue.open`.\n- `TestEveryHandledKindIsClaimed` reads `github.go`, takes every `case \"<kind>\":` of the switch and fails when the adapter does not claim it. Checked by removing the kind again: the test fails, and passes when it is back.\n\nThat guard is the point of this pull request. A kind that is judged, recorded and then performed by nobody is the worst of the three outcomes: the record says a thing was allowed, and nothing happened.\n",
+            "branch": "workbench/issue-open-adapter",
+            "title": "issue.open: the adapter names the kind it answers"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260919074606-dc9724"
+}

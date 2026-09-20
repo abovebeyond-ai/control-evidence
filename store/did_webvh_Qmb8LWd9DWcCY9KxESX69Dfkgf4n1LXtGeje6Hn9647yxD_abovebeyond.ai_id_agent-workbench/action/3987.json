@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "An app can now say where its collector's adapters stand\n(Trendwolves/gentells-pipeline#185). This is the side that gives a silence its\nweight.\n\nGentells' TikTok adapter returned nothing from 12 May and took Instagram and\nReddit search with it; every round logged \"0 signals, 0 errors\" for four months\nand no layer said a word, because a collector that fetches nothing raises no\nerror.\n\n## How overdue is measured\n\n- Against each adapter's **own declared expectation** (\"at least one per 7d\"),\n  with the half-again grace a late job already gets, so a weekly source is not\n  called late on day eight.\n- **Two witnesses, the later one wins**: the app's run history and its signals\n  table. The run history is young and the sources that matter died before it\n  began.\n- An adapter neither witness has heard from is judged only once its history is\n  older than its own grace. Absent stays absent until then; after that \"never\n  delivered\" is a finding with that name.\n- **Root causes only are counted.** A dependent of a dead upstream is named, with\n  what it waits on, and kept out of the count. A count that doubles itself\n  teaches people to halve it.\n\n## Two facets\n\n| facet | threshold | level |\n|---|---|---|\n| `collection` | `ADAPTERS_OVERDUE` | week: a dead source starves a product slowly, it is not a fire |\n| `orphans` | `SOURCES_ORPHANED` | month: a row switched on that nothing collects harms nothing, it only says something untrue |\n\nAn app that reports no collection is not judged on it.\n\n687 tests pass, 8 new. Pint and PHPStan clean.\n",
+            "branch": "workbench/judge-collection",
+            "title": "Judge what an app collects, and whether it still does"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260919140002-4d6028"
+}

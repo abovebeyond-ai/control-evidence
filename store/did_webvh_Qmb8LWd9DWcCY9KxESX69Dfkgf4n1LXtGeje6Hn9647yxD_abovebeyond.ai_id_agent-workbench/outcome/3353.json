@@ -1,0 +1,16 @@
+{
+    "action": "f048d6bf8811e5360e7012bf07da8517",
+    "effect": {
+        "detail": {
+            "base": "7626076abe37cc6a528da4b2ec121bbc29ed7bef",
+            "branch": "workbench/de-readme-na-de-upgrade",
+            "commit": "c21860c20e3adc7791fcff326d6f717fc6705330",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3351,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "07630c561b661e20aad4a7fac1a911d613ba3a61",
+            "branch": "workbench/ui/staff-link-2",
+            "files_sha256": "d27ecd7999b0a508bd79f3fdc43656e6a6f1419642369596055c876796ecd4c8",
+            "message": "The staff list is a destination: a link from the profile and an addressable tab"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918212630-a0e035"
+}

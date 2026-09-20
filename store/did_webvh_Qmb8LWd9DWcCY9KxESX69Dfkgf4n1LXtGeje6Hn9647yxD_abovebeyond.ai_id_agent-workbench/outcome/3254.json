@@ -1,0 +1,16 @@
+{
+    "action": "e8f470e42fe43e34a6f8b71232c9138a",
+    "effect": {
+        "detail": {
+            "base": "158d1aed38f36f84b274b021c72aa3fa38869026",
+            "branch": "workbench/feat/webhook-streaks-in-app-health",
+            "commit": "6aabfea1dcbf0242265a2ed84519dd1cfeb57a45",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3252,
+    "verdict": "ALLOW"
+}

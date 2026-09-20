@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Everything else this machine needs sits in a manifest: npm packages in\n`package.json`, models in `store/model-config.json`, secrets in\n`declaredCredentials()`. The command-line programs were the exception, and they\nare the ones no installer puts back. They arrived by hand on a box nobody has\nrebuilt yet, and a dependency written down nowhere does not exist: a rebuilt box\nlearns about it at the moment the work fails.\n\nNot hypothetical. Gentells' public site did this with poppler: the command to\npublish a report stopped on `pdftoppm ontbreekt` on a machine with no sudo to\nfix it. Here the same poppler tools have been assumed present for months, and\n`claude` has twice gone quiet without a word.\n\n## What this adds\n\n`GET /api/elixir` now carries `extra.binaries`: what this app calls, whether it\ncan see it, **who calls it** and **what stops working without it**.\n\n```json\n{\"name\": \"pdftoppm\", \"required\": true, \"found\": true, \"path\": \"/usr/bin/pdftoppm\",\n \"where\": \"packages/core/report-render.mjs\",\n \"why\": \"rasterising the open pages of a report; without it no report can be published\"}\n```\n\nIt does not judge. How bad an absence is depends on what leans on it, and that\nbelongs with Elixir like every other threshold (abovebeyond-ai/elixir#223).\n\n## The list is kept honest by a test\n\n`test/binaries.test.mjs` reads the source and fails when a program is called\nthat is not declared. A hand-kept declaration that falls behind is worse than\nnone: it is a measurement that says everything is present while something is\nmissing.\n\nWriting it turned up one nobody would have named from memory: **curl**, which\n`ingest-drive.mjs` shells out to. The reverse check also holds, so the list\ncannot grow entries nothing calls.\n\nFourteen programs declared, nine required. All fourteen are present on the\nObservatory box today, so this raises nothing now; it makes the dependency\nvisible before the next rebuild does.\n\n716 tests pass, 4 new.\n",
+            "branch": "workbench/declare-binaries",
+            "title": "Declare the programs this app shells out to"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919095930-88b16d"
+}

@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Aantal slides en seconden per slide zijn instelbaar.\n\nEnkel de seconden per slide (`showroom_interval`) en de integratie zijn instelbaar; een aantal-slides-instelling bestaat niet.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S2-7.1 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `SettingsController::updateShowroom``, `settings/setting/_tabs/showroom.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-aantal-slides-en-seconden-per-slide-zijn.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-aantal-slides-en-seconden-per-slide-zijn.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Aantal slides en seconden per slide zijn instelbaar"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092405-9f4f3f"
+}

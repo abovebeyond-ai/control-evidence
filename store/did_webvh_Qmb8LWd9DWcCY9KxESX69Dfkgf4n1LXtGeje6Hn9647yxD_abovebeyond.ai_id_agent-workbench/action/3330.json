@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nShane on production: opening \"Mijn profiel\" puts the whole security section behind \"Bevestig eerst je wachtwoord\", before the user has asked for anything. That is a wall in front of a page he only wanted to read.\n\n## What changed\n\n- The section shows its state straight away: whether the code via the telephone is on, which devices are registered, and the remembered-devices block. Nothing is asked on arrival.\n- The password is asked **at the change**: pressing \"Instellen\", \"Uitzetten\", \"Nieuwe reservecodes\", \"Toestel toevoegen\" or \"Overal anders afmelden\" goes through Fortify's RequirePassword, which brings the user back to the profile with the confirmation form in place and the state still visible.\n- **Secrets stay behind the confirmation**: the QR code, the key and the recovery codes are only rendered with a fresh password confirmation. A half-finished setup shows \"Verdergaan met instellen\" instead of the QR, so a walk-up at an open screen reads nothing.\n\n## A note on the test setup of #565\n\nWhile writing this I found that a worktree with a **symlinked `vendor`** makes Laravel infer its base path from the real path of `vendor/autoload.php`, so the tests ran against the files of the other worktree instead of the branch under test. #565 was verified that way; I re-ran its suites against a real `composer install` afterwards: `ProfileOwnDetailsTest|TwoFactorTest|CompiledViewsTest|StylesheetSyntaxTest|AlpineExpressionTest` \u2192 OK (32 tests, 945 assertions). The brief for agents already says to install vendor in the worktree; the symlink shortcut has to go.\n\n## Tests\n\n`TwoFactorTest` gained \"the state is readable without a password and the secrets are not\" and its old opposite expectation is rewritten; run of `TwoFactorTest|ProfileOwnDetailsTest|UserInvitationTest|CompiledViewsTest|LanguageParityTest|StylesheetSyntaxTest|AlpineExpressionTest|RulesSourcesTest`: 50 tests, 1030 assertions, one pre-existing incomplete. `php bin/rules-sources`: Geen problemen.\n",
+            "branch": "workbench/ui/security-visible-before-password",
+            "title": "Profile: the security state is readable, the password is asked at the change"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918211522-c9be69"
+}

@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Komt de wagen in aanmerking, dan verschijnt de FlexLease-knop.\n\nExtra voorwaarde: de dealer moet show_lease aan hebben.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S4-7.3 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `offertemodal.blade.php`; `bestelbonModal.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-komt-de-wagen-in-aanmerking-dan-verschijnt.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-komt-de-wagen-in-aanmerking-dan-verschijnt.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Komt de wagen in aanmerking, dan verschijnt de FlexLease-knop"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092435-373bf9"
+}

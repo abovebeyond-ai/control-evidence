@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Het platform stuurt chassisnummer, btw-nummer, eerste inschrijving en kilometerstand.\n\nDe eerste inschrijving wordt niet meegestuurd; wel de datum van vandaag als meetdatum en de gebruikersnaam als registrerende organisatie. Car-Pass kent de eerste inschrijving uit zijn eigen register.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S3-2.4 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `CarpassController::carpassRequest`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-het-platform-stuurt-chassisnummer-btw-nummer-eerste.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-het-platform-stuurt-chassisnummer-btw-nummer-eerste.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Het platform stuurt chassisnummer, btw-nummer, eerste inschrijving en kilometerstand"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092430-6a06f6"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1dd4f2d35884a02f6a1539c4163f9d42d641cff8",
+            "branch": "workbench/de-inlogpagina-op-het-design-system",
+            "files_sha256": "6531542ef934fe0b26d877dfd79b0dd87cb7cee6ea9bcc1d4187c41d3678a54d",
+            "message": "De inlogpagina op het design system"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919080512-c22e81"
+}

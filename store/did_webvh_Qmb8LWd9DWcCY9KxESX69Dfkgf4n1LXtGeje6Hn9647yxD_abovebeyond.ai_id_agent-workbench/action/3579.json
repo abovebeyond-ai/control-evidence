@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "(nieuw) postcode numeriek\n\nNederlandse postcodes (1234 AB) worden geweigerd terwijl Nederland Mobiel en Nederlandse dealers ondersteund worden.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R P2-6.1 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `DealerLocationRequest::rules`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-postcode-numeriek.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-postcode-numeriek.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "postcode numeriek"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092152-29786f"
+}

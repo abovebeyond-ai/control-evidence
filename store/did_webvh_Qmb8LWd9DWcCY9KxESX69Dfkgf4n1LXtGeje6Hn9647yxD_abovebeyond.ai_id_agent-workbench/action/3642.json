@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Biedingswagen: foto's ongewijzigd, met de mogelijkheid om manueel te blurren (te verifi\u00ebren).\n\nDeels bevestigd: achtergrond verwijderen, dupliceren naar platformkopie en de achtergrondkeuze zijn uitgeschakeld bij for_export. Een manuele blur-knop voor een biedingswagen is niet teruggevonden (de blur-acties zitten in de platformsectie die `own_vehicle_only` is).\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S1-6.11 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `image.blade.php`, `photos.blade.php`, `stocklist.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-biedingswagen-fotos-ongewijzigd-met-de-mogelijkheid-om.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-biedingswagen-fotos-ongewijzigd-met-de-mogelijkheid-om.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Biedingswagen: foto's ongewijzigd, met de mogelijkheid om manueel te blurren (te verifi\u00ebren)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092410-135ff2"
+}

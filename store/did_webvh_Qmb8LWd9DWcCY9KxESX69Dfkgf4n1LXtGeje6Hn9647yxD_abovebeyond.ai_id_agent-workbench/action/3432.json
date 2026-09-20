@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "62f578e4dae68726fabe4d29c80d8f8a1958ffbb",
+            "branch": "workbench/reports-shelf",
+            "files_sha256": "94423ccc73b0f68987bec12da241709a6a5f9bec7ab1fac66bbe4cda27fb5106",
+            "message": "A reports shelf: the year, and which of it has landed"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20260919074130-6070fd"
+}

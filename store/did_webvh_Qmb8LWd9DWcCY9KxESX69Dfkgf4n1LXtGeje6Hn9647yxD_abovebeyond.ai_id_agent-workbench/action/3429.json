@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Reports were the one kind of content that never passed editorial. The calendar\nlived in a seeder on the public site and the PDF arrived through\n`php artisan gentells:report` run over ssh, so publishing one needed a\ndeveloper, which is exactly what that command's own docblock says it wanted to\navoid.\n\nIt also put the rasterising on the wrong machine. The public site holds a copy\nof what editorial released and shows it; turning 24MB of PDF into preview\nimages is work, and work belongs on the side that does the work. Because it sat\nover there it needed poppler on a box Forge does not provision, and that only\nsurfaced when a report had to go out: the command stopped on `pdftoppm\nontbreekt` and the machine has no sudo to fix it.\n\n## What moves here\n\n- **`reports` table + `reports-store`** \u2014 the calendar, plus the fingerprint of\n  whatever file is on disk. Availability is deliberately **not** stored:\n  `status` carries Maarten's announcement and runs ahead of reality, so the far\n  side derives what it can actually deliver from the file it holds. R2 stood at\n  \"available, with preview\" for weeks with no PDF and no pages.\n- **`report-render`** \u2014 `pdftoppm` to jpeg, `sharp` to webp. Only the released\n  pages are rendered, because what is never rendered can never be served by\n  accident.\n- **Studio routes** \u2014 list, amend, upload, drop, and preview a page.\n- **Projection endpoints** \u2014 `/internal/projection/reports` plus `/file` and\n  `/preview/:n`, so the site can pull metadata and binaries and skip a 24MB\n  download it already has.\n- **`multipart.mjs`** \u2014 the parser the cover upload had inline, now in one\n  place. Two copies is how one of them keeps a bug the other fixed, and this one\n  has a trailing-CRLF subtlety worth having once.\n\n## Dependencies are declared, not assumed\n\n`sharp` ships its own binary and goes in `package.json`. `poppler-utils` cannot,\nso CI installs it and the render test **fails** without it rather than skipping.\nThat gap is what caused this in the first place.\n\n## Migration\n\n`bin/seed-reports.mjs` moves the seven calendar rows across once and leaves\nalone anything already here: the script is the move, not the truth.\n\nFollow-ups in their own PRs: the Studio gains a Reports section, and the site\npulls reports through the projection and drops `IngestReport`.\n\n## Tests\n\n712 pass (was 698). 14 new across `reports-store` and `report-render`, the\nlatter against a PDF the test builds itself rather than a binary fixture nobody\ncan read.\n",
+            "branch": "workbench/reports-in-studio",
+            "title": "Reports belong in the Studio, not in an artisan command"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919074056-c966c6"
+}

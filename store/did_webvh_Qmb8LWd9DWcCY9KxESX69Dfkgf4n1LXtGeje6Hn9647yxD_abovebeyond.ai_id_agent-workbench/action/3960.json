@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8d0bf5cd0b050a64259feb8457bb94030bf3604b",
+            "branch": "workbench/de-kolommen-van-het-rapport",
+            "files_sha256": "50e76163025bf4c219a3b55c644402320ddedb5e69248ded1295ebd2150ebd84",
+            "message": "De sectierij spant de echte kolommen, en de filterbalk op \u00e9\u00e9n lijn\n\nEen vaste colspan van zes maakte spookkolommen zodra er geen examenkolom\nwas; in productie stond het rapport daardoor smal. De rij spant nu het\nechte aantal kolommen. En de filterbalk van de projecten staat op \u00e9\u00e9n\nmiddellijn."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919132931-436919"
+}

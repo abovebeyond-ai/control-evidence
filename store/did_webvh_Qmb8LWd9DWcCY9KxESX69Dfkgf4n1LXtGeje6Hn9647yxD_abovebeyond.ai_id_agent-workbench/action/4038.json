@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Drie dingen uit productie op het dashboard.\n\n- **Per vak, gegroepeerd**: het openklappen zet basis en specifiek apart, met een stil kopje boven elke groep, en de rijen zijn compacter. Het paneel is niet hoger dan een stuk of acht rijen; daarboven scrolt het (schuifbalk zichtbaar) in plaats van de kaart een muur te maken.\n- **Het jaar in het keuzemenu**: het menu toont nu het jaar dat de pagina toont (\"Graad 1, jaar 1\") in plaats van \"Selecteer jaar\" naast een pagina vol jaar 1; de controller geeft graad en jaar door.\n- **Iconen op het klas statusrapport**: een stil icoon (`ink-400`) naast Leerlingen, Basis eindtermen en Specifieke eindtermen, zonder gekleurde tegel.\n\nNagekeken: index en detail lokaal gerenderd, openklappen en scrollen getest; volledige suite parallel groen op `BuildStampTest` na (worktree); PHPStan en Pint groen. Na de merge: `npm run build` op Ploi.\n",
+            "branch": "workbench/per-vak-gegroepeerd",
+            "title": "Per vak gegroepeerd en gekapt, het jaar in het keuzemenu, iconen op het detail"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919144653-d06b7d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1ca966fc94c39291abf9e8bf0a5f1554cec5f7e2",
+            "branch": "workbench/fix/daily-export-uses-the-app-clock",
+            "files_sha256": "b6346ac6712b360261881500d135d61281e5cec011990c2c4ee9c8f35b121530",
+            "message": "The daily export reads the application clock"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919095240-0d5d79"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "b70a6c21762ef59164a0d8e256af223c",
+    "effect": {
+        "detail": {
+            "base": "0d0e549518031f722e3150f6e055ca6438e9634f",
+            "branch": "workbench/popupvoet-en-lijnen",
+            "commit": "9fbd9d54805615a5c3176ea4dd04bf07d6f85c09",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3966,
+    "verdict": "ALLOW"
+}

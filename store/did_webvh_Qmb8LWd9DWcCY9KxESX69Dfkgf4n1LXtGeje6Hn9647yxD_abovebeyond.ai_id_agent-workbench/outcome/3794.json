@@ -1,0 +1,16 @@
+{
+    "action": "f907b78800189d7d8dc6baf11f46d4f2",
+    "effect": {
+        "detail": {
+            "base": "ce566dff152e6efae7788f8ff6d539d0148537e9",
+            "branch": "workbench/de-tijdelijke-route-weg",
+            "commit": "4726515e30901671a7354cf0f14bf4bfca710a53",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3792,
+    "verdict": "ALLOW"
+}

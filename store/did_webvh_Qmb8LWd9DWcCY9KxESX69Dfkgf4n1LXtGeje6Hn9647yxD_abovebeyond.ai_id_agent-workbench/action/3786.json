@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "198151cfad1ab4bdc73e20eb2efc2707425323e8",
+            "branch": "workbench/judge-binaries",
+            "files_sha256": "f46a94bbc0bd3b0f47afb1c0a7d54123ecae104f509985bc3885ceef70750e17",
+            "message": "Judge the programs an app says it needs"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260919100002-74db6b"
+}

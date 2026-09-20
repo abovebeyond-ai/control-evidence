@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Phase 1, step 4 of `docs/design/sources-before-more-sources.md`.\n\nFour adapters each carried their own copy of \"start the run, wait, fetch the\ndataset\", and each copy believed the vendor's status. That belief is what kept\nTikTok silent from 12 May: the actor ended every run `SUCCEEDED` with the message\n\"Total 2 requests: 0 succeeded, 2 failed\", and `SUCCEEDED` was all anybody read.\n\n## `packages/adapters/apify.mjs`, the one place\n\n- Reads the actor's own status message and **throws when a run \"succeeded\" with\n  every request failed**.\n- **Out of time is an error.** One copy polled thirty times and then fetched the\n  dataset anyway, so a run of sixty-four seconds was read at sixty.\n- A refusal at the start carries its type (`actor-is-not-rented`), the part a\n  person can act on.\n- **A contract per adapter.** A required field absent from *every* item is a\n  changed output and throws; absent from some is ordinary data.\n- Takes a fixed build and a per-run charge ceiling, and returns what Apify says\n  the run cost. `adapter_runs` records that bill when there is one: a bill is a\n  fact, a declared price is a guess.\n\n`tiktok-trends`, `instagram-search`, `pinterest-trends` and `china-hotrank` run on\nit. A test fails if an active adapter talks to Apify by itself again.\n\n## On pinning: a refinement of rule 5\n\n`china-hotrank` is pinned to `0.0.9`. It has not changed since February and\ncarries six platforms that deliver daily, so `latest` could only take something\naway. The Instagram and TikTok actors ship builds weekly against sites that keep\nmoving (TikTok's latest build is three days old); there the maintainer's fixes\nare the value and the contract is the protection, so they stay on `latest`.\n\n## Proven live before proposing\n\nRun from the box against Apify with this exact file:\n\n```\nhot-rank: 50 items | build 0.0.9 | $0.00029 | fields: hot_word, hot_value, label, url, desc\ntiktok:   THROWN -> the run ended SUCCEEDED but every request failed (Total 1 requests: 0 succeeded, 1 failed.)\n```\n\n763 tests pass, 13 new. Next: the measurement in `/api/elixir` and its judgement\nin Elixir.\n",
+            "branch": "workbench/apify-helper",
+            "title": "One way to run an Apify actor, and it does not believe the vendor"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919132706-8651e7"
+}

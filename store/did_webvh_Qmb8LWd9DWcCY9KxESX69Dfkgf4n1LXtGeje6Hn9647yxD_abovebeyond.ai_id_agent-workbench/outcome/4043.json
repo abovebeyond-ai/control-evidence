@@ -1,0 +1,16 @@
+{
+    "action": "5c4aefd62334cef5032d4e27da51862e",
+    "effect": {
+        "detail": {
+            "base": "06f360f45a0d981bc49b0d23f3d617e8f43b3170",
+            "branch": "workbench/rustiger-detail",
+            "commit": "16c682da1d64ff2b74dacc64bb6a28fd9a492598",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4041,
+    "verdict": "ALLOW"
+}

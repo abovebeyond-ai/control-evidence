@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nShane on preview: the garage screen (Instellingen, and \"Mijn garage\" for a dealer) takes a lot of room: a card inside a card, the theme's page-titles row, every pane padded twice, and the title reading \"Dealer Aanpassen: StockCars\" on the dealer's own garage.\n\n## What changed (layout only; same fields, same names, same PUT)\n\n- The theme's `page-titles` row becomes the app's `ui-page-head`. On the dealer's own sheet the title is \"Garage: <naam>\" with one quiet line under it; on the administrator's dealer sheet the title stays what it was, with the way back to the overview left of it.\n- One card (`ui-form-card--wide`) instead of a card inside a card; the tab bar sits on the card's top edge and the panes start straight under it, so every pane loses its second padding.\n- Save moved to the bottom right of the card behind a hairline (`ui-form-actions`), full width on a phone.\n- Four language files gained the garage title, the lead sentence and the section labels.\n\n## Not in this PR\n\nThe fields inside the Bedrijf pane keep their current two-column grid; regrouping them into Adres / Contact / Logo sections is the next step and touches `_tabs/form.blade.php` only.\n\n## Tests\n\n`CompiledViewsTest`, `AlpineExpressionTest`, `StylesheetSyntaxTest`, `HandlerWiringTest`, `LanguageParityTest`, `SmokeTest`, `RulesSourcesTest`: 291 tests, 1322 assertions (1 pre-existing incomplete). `php bin/rules-sources`: Geen problemen.\n",
+            "branch": "workbench/ui/garage-edit-compact",
+            "title": "Garage screen: one card, page head, tab bar on the card edge"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918143549-0749a2"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "398f91a622d40378f3d6d53de9ec0e4e",
+    "effect": {
+        "detail": {
+            "base": "1a10ce78f48ac089841e0ec9d46ab1cab6f36eaf",
+            "branch": "workbench/declare-binaries",
+            "commit": "c671e40f1f4d3d1f8adfb969880fee5ed6ca6b49",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3780,
+    "verdict": "ALLOW"
+}

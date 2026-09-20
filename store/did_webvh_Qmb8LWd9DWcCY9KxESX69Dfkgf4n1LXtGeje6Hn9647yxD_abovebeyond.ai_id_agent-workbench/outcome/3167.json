@@ -1,0 +1,16 @@
+{
+    "action": "041e9014cf72032828e38d1e9d184f24",
+    "effect": {
+        "detail": {
+            "base": "83431155d3bb34b83ac161a343f1b699072e2a4c",
+            "branch": "workbench/auth/long-sessions-and-remember-me",
+            "commit": "9ba9e49ebfa43c09f7a453dbc21ad26521101746",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3165,
+    "verdict": "ALLOW"
+}

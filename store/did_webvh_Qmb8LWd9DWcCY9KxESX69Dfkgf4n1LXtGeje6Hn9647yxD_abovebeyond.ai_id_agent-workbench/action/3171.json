@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8d0157f30bf57472b2f8d8082a8cf8b871c7e993",
+            "branch": "workbench/tests-on-github-actions",
+            "files_sha256": "b3c8c80f75f36b48ebc8796c52ab1276aeea7d2cc90ddb069acd9f6b6f105777",
+            "message": "CI: run the tests on GitHub Actions instead of CircleCI"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20260918100954-5a0125"
+}

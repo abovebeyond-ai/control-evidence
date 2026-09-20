@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ce566dff152e6efae7788f8ff6d539d0148537e9",
+            "branch": "workbench/de-tijdelijke-route-weg",
+            "files_sha256": "57474cf2e61a546acd02ed557f37a0f1f3164caaea16423e2b152e5f9948fcc5",
+            "message": "Een tijdelijke route die met het design system meekwam, weg"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919101521-a50d07"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "80e8a9bc1fd52f1db7f1c63307955cefbd764d72",
+            "branch": "workbench/fix/menu-name-for-operations",
+            "files_sha256": "9992a0624e3e1da116cdc50dbeca2d21880898fa5c6a11e981c79ccf9321f9c2",
+            "message": "Werking has a name in the menu"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919213519-890569"
+}

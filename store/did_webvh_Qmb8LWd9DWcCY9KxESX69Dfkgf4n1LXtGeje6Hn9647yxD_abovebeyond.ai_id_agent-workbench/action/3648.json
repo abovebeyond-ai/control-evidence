@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De Car-Pass-URL gaat mee naar Hexon.\n\nIn de code bestaat geen Hexon-export; de URL gaat als optie 354 in de Modix-XML en naar Nederland Mobiel. Hexon komt enkel voor als merk/model-import en in API-validatieregels.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S3-4.4 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `XML::getXML``, `HexonImportModels`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-de-car-pass-url-gaat-mee-naar.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-de-car-pass-url-gaat-mee-naar.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "De Car-Pass-URL gaat mee naar Hexon"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092413-72c30e"
+}

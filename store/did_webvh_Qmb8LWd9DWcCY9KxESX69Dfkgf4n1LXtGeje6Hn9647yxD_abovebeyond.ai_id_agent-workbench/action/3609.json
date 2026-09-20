@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De kopregel naar RealGarant (`X-User-Data`) droeg een vaste `{\"locale\":\"nl_NL\"}`, bij het aanmaken\nvan de polis \u00e9n bij het ophalen van de pdf. Een bestelbon in het Frans (`orders.lang` = fr) kreeg\ndus een Nederlandse polis, wat ook de dealer in zijn instellingen had staan.\n\nSinds deze wijziging kiest de code de taal zoals Shane het wil: de taal van de bestelbon wint, dan\nde taal waarin de dealer op dat moment werkt, dan Nederlands. De codes die naar RealGarant gaan\nstaan in `RealGarantService::LOCALES`: nl_NL (ongewijzigd, bewezen), fr_BE, en_GB, de_DE.\n\nWat Shane beslist: fr_BE, en_GB en de_DE zijn niet tegen de RealGarant-API geprobeerd (geen echte\ncalls vanaf deze machine). Aanvaardt RealGarant een van die codes niet, dan is het \u00e9\u00e9n regel in\n`LOCALES` (bijvoorbeeld fr_FR in plaats van fr_BE). E\u00e9n Franse polis op staging met\n`OUTBOUND_IMPACT=realgarant` beantwoordt dat.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S4-6.21 |\n| Beslist | Shane |\n| Gevonden | 2026-09-15 |\n| Waar | app/Services/RealGarantService.php (getHeader), OrderRealGarantService::createContract, OrderController::getContractPdf |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-15-polis-taal-altijd-nederlands.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-15-polis-taal-altijd-nederlands.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "De RealGarant-polis ging altijd als nl_NL de deur uit"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092208-ce6edc"
+}

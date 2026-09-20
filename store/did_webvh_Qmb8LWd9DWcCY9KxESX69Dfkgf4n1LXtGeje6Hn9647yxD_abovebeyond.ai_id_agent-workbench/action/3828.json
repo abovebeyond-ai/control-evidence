@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e8de2fe868b7ccc385aa32de33806e3132ae6c02",
+            "branch": "workbench/sources-note-rules",
+            "files_sha256": "47206fd818a047529fe3d2ddbd2abed900d9f571cb9c93526847a2f36a0c900f",
+            "message": "The note gains its rules, its abstraction and its face"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919112202-9ddd9d"
+}

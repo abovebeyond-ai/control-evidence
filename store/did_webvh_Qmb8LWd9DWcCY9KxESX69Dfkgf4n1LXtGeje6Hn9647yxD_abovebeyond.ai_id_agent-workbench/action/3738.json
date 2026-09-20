@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Gemeld door Shane op het tabblad Transport bij 390 pixels: het basistarief toont `138.00` en de berekende kolommen toonden `\u20ac213.00`, waar de rest van de toepassing `\u20ac 27 420,00` schrijft. De berekende kolommen zijn op 15 september 2026 in het huisformaat gezet (`Custom::formatNumber`). De invoer is gebleven: `updateTransport` schrijft de gepostte waarde rechtstreeks naar `price` (double) zonder een komma om te zetten; `138,00` zou in strict mode een databankfout geven. Dat vraagt een parseerstap in de controller (niet het gebied van het transportwerk van 15 september) en een test.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P2-8.5 |\n| Beslist | Shane |\n| Gevonden | 2026-09-15 |\n| Waar | `SettingsController::updateTransport`, `settings/setting/_tabs/transport.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-15-transport-tarief-invoer-enkel-punt.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-15-transport-tarief-invoer-enkel-punt.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "Het basistarief op het tabblad Transport aanvaardt enkel een punt als decimaalteken"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092458-469f3e"
+}

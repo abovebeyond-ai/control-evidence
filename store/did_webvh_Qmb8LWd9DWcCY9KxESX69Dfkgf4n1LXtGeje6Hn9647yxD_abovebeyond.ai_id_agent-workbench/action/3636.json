@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Algemene verkoopvoorwaarden NL en FR.\n\nDe code voegt \u00e9\u00e9n bijlage toe (dealer of standaard) zonder naar de taal te kijken; de vaste \"bestelbon.pdf\"-tak is onbereikbaar (`1 == 1`).\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S4-5.1 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `OrderController::show` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-algemene-verkoopvoorwaarden-nl-en-fr.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-algemene-verkoopvoorwaarden-nl-en-fr.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Algemene verkoopvoorwaarden NL en FR"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092407-ccbd81"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Phase 1, step 2 of `docs/design/sources-before-more-sources.md`.\n\nAn adapter's `meta` was a name, a platform, a vendor and a sentence. Everything\nthat decides whether it can be trusted sat in heads and in comments, so the table\nand the collector could disagree in silence:\n\n- **Spotify Charts** stood in `sources` from 9 March, active and tier a, and was\n  never collected once. The collector runs a list in code and Spotify was never\n  on it.\n- **Instagram** wrote its signals under `instagram-search` while its row is\n  called `src-instagram`, so counting per source showed \"never delivered\" for an\n  adapter that had brought 860.\n\n## What changes\n\n- **`meta` declares** `kind` (api, feed, scraper: the most fragile road the\n  adapter takes), `needs`, `dependsOn`, `expects`, `cost` and `sources` (the rows\n  it claims, by id, by pattern such as `tiktok-cc-*`, or by type).\n- **`adapters/registry.mjs`** holds the list that lived in `collect.mjs`, a\n  script that collects on import and that nothing else could read. It also holds\n  **`OFF`, with a reason per adapter**: commented-out imports were a decision\n  nobody could read from outside the file. Google Scholar turned out to be off\n  since 26 August with no note anywhere; its reason came from the commit that\n  removed it.\n- **One truth for cost.** The budget reads `meta.cost.perRun`; the separate\n  `APIFY_COST_PER_CALL` table is gone.\n- **Every collect round names the orphans**: active rows no adapter claims.\n  Run against the real table today that is exactly one row, `src-spotify`.\n\n## Kept honest by a test that reads the source\n\nA key in `needs` must really be read by the code; a token the code reads must be\nin `needs`; a source id the adapter writes must be one it claims; every file in\n`src/` is on, off with a reason, or declared not an adapter. A hand-kept\ndeclaration that falls behind is worse than none.\n\nNothing here judges. An adapter declares its nature; how bad a silence is\nbelongs with Elixir.\n\n742 tests pass, 13 new. Next: `adapter_runs`.\n",
+            "branch": "workbench/adapter-declarations",
+            "title": "An adapter declares what it is, and a test keeps it true"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919123909-63fddf"
+}

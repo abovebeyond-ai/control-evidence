@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "An app can now declare the command-line programs it shells out to\n(Trendwolves/gentells-pipeline#178). This is the side that decides what an\nabsence is worth.\n\nA command-line program is the one dependency npm and composer cannot carry, so\nit arrives by hand and is written down nowhere. A rebuilt box discovers it when\nthe work fails. Gentells' public site did exactly that with poppler: the command\nto publish a report stopped on `pdftoppm ontbreekt` on a machine with no sudo to\nfix it, and the same programs had been assumed present on the Observatory for\nmonths.\n\n## What this reads\n\n`extra.binaries` from the health contract, flattened to `binariesDeclared`,\n`binariesMissing` and `binariesMissingNames`. The names travel because \"one\nprogram is missing\" sends you looking and the name ends the search; each carries\nwhat stops working without it, which is the part worth getting up for.\n\n## What it judges\n\nNew facet `binaries`:\n\n| threshold | field | level |\n|---|---|---|\n| `BINARIES_MISSING` | `binariesMissing >= 1` | now |\n| `BINARIES_PRESENT` | `binariesMissing == 0` | ok |\n\n**Required only.** An optional program that is absent by design (Docling on a\nsmall box) would otherwise sit amber for ever, and a layer that is always amber\nstops being read.\n\n**An app that declares nothing is not judged on it.** Absent stays absent;\nseventeen apps do not send this field and a zero would read as a measurement.\n\n679 tests pass, 4 new. Pint and PHPStan clean.\n",
+            "branch": "workbench/judge-binaries",
+            "title": "Judge the programs an app says it needs"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260919100002-74db6b"
+}

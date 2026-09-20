@@ -1,0 +1,16 @@
+{
+    "action": "47e30b3f5d5f13672726fc6c10d3205c",
+    "effect": {
+        "detail": {
+            "base": "8ab63c69de3213c8e490eb4d9c62a59e14787505",
+            "branch": "workbench/ui/features-screen-compact",
+            "commit": "4f10335db0a981dcc9434c36a81b8b0b1355d6a0",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3288,
+    "verdict": "ALLOW"
+}

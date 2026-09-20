@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ab63c69de3213c8e490eb4d9c62a59e14787505",
+            "branch": "workbench/ui/garage-edit-compact",
+            "files_sha256": "429fbc102214f5b9249f6ba9a29c83f1262990fd209245c73a83521942850257",
+            "message": "Garage screen: one card, page head, tab bar on the card edge"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918143549-0749a2"
+}

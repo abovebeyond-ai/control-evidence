@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Een teller \"te beoordelen\" blijft staan tot er een beoordeling is.\n\nNiet teruggevonden: geen werklijstitem of teller op onbeoordeelde afleveringen; wel blijft de schakelaar \"Afgehaald & beoordeling\" open tot de dealer beoordeelt.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R B1-5.10 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `WorklistController.php` (geen verwijzing), `export/biddingDetails.blade.php`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-een-teller-te-beoordelen-blijft-staan-tot.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-een-teller-te-beoordelen-blijft-staan-tot.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Een teller \"te beoordelen\" blijft staan tot er een beoordeling is"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092421-4f0574"
+}

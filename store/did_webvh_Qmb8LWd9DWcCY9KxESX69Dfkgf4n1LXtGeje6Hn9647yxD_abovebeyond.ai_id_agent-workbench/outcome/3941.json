@@ -1,0 +1,16 @@
+{
+    "action": "72877df877ebe50dcf654d57aa84d8e8",
+    "effect": {
+        "detail": {
+            "base": "3b653e6bdc4adb4f87572e182579647411e32424",
+            "branch": "workbench/de-suite-op-mariadb",
+            "commit": "8eef5f200c0643e1cf9d74ab236ffe41bce7dbf7",
+            "files": 32,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3939,
+    "verdict": "ALLOW"
+}

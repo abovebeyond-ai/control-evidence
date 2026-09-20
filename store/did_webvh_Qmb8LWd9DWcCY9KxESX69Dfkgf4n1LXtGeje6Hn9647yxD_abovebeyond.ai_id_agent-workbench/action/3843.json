@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "#665 made the CI slower, not faster, and this puts that right.\n\n**What the measurement said.** The runner of this job reports two usable cores, so `--parallel`\nstarts two test processes which then share those two cores with MariaDB. The `Run tests` step went\nfrom 225s to 264s. On a development machine with six cores the same suite goes from 209s to 97s, so\nthe parallel machinery is worth having: `php artisan test --parallel` stays the local command, the\nper-process database and the per-process storage stay, and the workflow now carries the number and\nthe condition under which the flag belongs there again (more cores).\n\n**What does pay on both.** The most expensive thing in the suite is the demo seeder: 23 vehicles\ntimes two photos, each encoded to three sizes plus the derived ones, about sixteen seconds a run.\nTwo tests ran it three times to ask two questions. They are one test now that runs it twice, and\nthe second run is exactly the repeat the idempotence test needed:\n\n| | |\n|---|---|\n| `DemoScreensCommandTest` | 49s to 31s |\n\nNothing is pinned less: the same 96 assertions, the whole dataset and the repeat.\n\nThat is 18s off every run, everywhere. The step should land around 245s here, and the suite around\n191s on a development machine serially, 80s in parallel.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/tests/ci-runs-serially",
+            "title": "The CI runs the suite serially, and the demo seeder runs twice instead of three times"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919113159-93da1d"
+}

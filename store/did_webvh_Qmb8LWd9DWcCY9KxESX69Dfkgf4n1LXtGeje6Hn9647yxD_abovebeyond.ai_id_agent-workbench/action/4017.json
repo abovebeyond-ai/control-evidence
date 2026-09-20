@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "056b4af83816d634e210201ab3033669fd52a210",
+            "branch": "workbench/klasprogressie-openklappen",
+            "files_sha256": "cea9c836b9430ebbeadaec3b1b1fe140a20935b57e1959403f27ecadb15923aa",
+            "message": "Klasprogressie klapt open per vak, en het klas statusrapport op het design system\n\nElke kaart klapt open naar de vakken op wat de index al berekend heeft;\nhet detail krijgt dezelfde kaarten zonder gekleurde tegels en secties met\neen rustige kop."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919143042-2ffe74"
+}

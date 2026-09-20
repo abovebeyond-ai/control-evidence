@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De website toont enkel gepubliceerde, onverkochte wagens.\n\nDe iframe-embed eist voor eigen wagens niet dat ze volledig zijn (is_complete), de API wel; een onvolledige wagen met websitevinkje kan dus wel in de iframe en niet in de API staan.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S2-5.2 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `VehicleRepository::forWebsiteQuery``, `PublicVehicleController::baseQuery`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-de-website-toont-enkel-gepubliceerde-onverkochte-wagens.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-de-website-toont-enkel-gepubliceerde-onverkochte-wagens.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "De website toont enkel gepubliceerde, onverkochte wagens"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092131-66796f"
+}

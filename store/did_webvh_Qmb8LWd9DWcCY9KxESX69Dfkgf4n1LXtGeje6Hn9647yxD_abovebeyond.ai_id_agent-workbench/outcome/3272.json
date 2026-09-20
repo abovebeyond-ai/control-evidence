@@ -1,0 +1,18 @@
+{
+    "action": "cde9a95621dfd81705e72145ed0717af",
+    "effect": {
+        "detail": {
+            "branch": "preview",
+            "commit": "c65116c1bd25279e95a07b68ac73993c0379bcf6",
+            "created": false,
+            "head": "workbench/auth/two-factor-and-passkeys",
+            "previous": "af4dafd1d2d4e921166abbad8fec84eb36b92ca5",
+            "pull": 560,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3270,
+    "verdict": "ALLOW"
+}

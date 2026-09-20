@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De pdf bevat logo en klantgegevens.\n\nHet klantblok (naam, adres, mail, bestelbonnummer) staat binnen de logo-voorwaarde: een dealer zonder logo krijgt geen klantgegevens op de bestelbon.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S4-5.1 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `dealer_client_info.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-de-pdf-bevat-logo-en-klantgegevens.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-de-pdf-bevat-logo-en-klantgegevens.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "De pdf bevat logo en klantgegevens"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092126-9f04c8"
+}

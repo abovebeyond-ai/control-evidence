@@ -1,0 +1,16 @@
+{
+    "action": "adc4bae92d140dbbfc6e123cd13ba769",
+    "effect": {
+        "detail": {
+            "base": "4f10c864b64f672453cdf302d46a9f0dcb6a8519",
+            "branch": "workbench/reports-through-projection",
+            "commit": "cb774736d29045fe11d097e395053fdf12027836",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3438,
+    "verdict": "ALLOW"
+}

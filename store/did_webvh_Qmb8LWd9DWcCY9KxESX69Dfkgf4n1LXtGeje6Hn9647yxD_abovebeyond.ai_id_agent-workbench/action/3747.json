@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Wat de regel zei.** \"De volgorde kan gesleept worden in het venster, maar wordt niet bewaard.\"\n\n**Wat de code doet.** De dialoog roept `$(\".widgets\").sortable({...})` aan (jQuery UI Sortable), maar\ngeen enkele layout laadt jQuery UI: in `app.blade.php` staat alleen het commentaar `<!-- jQuery-ui -->`\nzonder script, en `typeof jQuery.fn.sortable` is `undefined` in de browser. De aanroep gooit\n`sortable is not a function`, de greep is decor, en op een telefoon zou jQuery UI Sortable zonder\n`jquery-ui-touch-punch` sowieso geen aanraking verstaan. De bewaarstap (`updateUserWidgetsOrder`)\nis bovendien leeg, dus ook een werkende sleep zou niets veranderen. Hetzelfde `.sortable()` staat in\n`ownstock/edit.blade.php` (fotovolgorde) en `settings/setting/_tabs/options.blade.php`: die vallen\nbuiten deze bevinding maar verdienen dezelfde blik.\n\n**Gedaan.** De regel zegt nu wat er is (niet te slepen). De rij houdt de greep zodat de dialoog niet\nverandert van vorm; de bibliotheek wordt niet vanavond vervangen.\n\n**Te beslissen (Shane, met Ilse).** Wil een dealer de volgorde kiezen? Dan een sleepbibliotheek die\naanraking verstaat (of pijltjes omhoog/omlaag, die op een telefoon eerlijker zijn) plus een\nbewaarstap. Wil hij dat niet, dan kan de greep weg.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P1-2.4 |\n| Beslist | Shane |\n| Gevonden | 2026-09-15 |\n| Waar | `resources/views/worklist/editModal.blade.php` (`$(\".widgets\").sortable(...)`), `resources/views/layouts/app.blade.php` (commentaar \"jQuery-ui\" zonder script), `WidgetService::updateUserWidgetsOrder` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-15-werklijsten-volgorde-niet-te-slepen.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-15-werklijsten-volgorde-niet-te-slepen.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "De volgorde van de werklijsten is niet te slepen, op geen enkel scherm, want jQuery UI wordt niet geladen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092502-87f8c6"
+}

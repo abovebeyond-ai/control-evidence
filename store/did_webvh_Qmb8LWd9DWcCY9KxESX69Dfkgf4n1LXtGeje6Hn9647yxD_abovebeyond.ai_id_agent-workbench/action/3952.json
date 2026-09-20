@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Main went red on the three tests of `VehicleSheetVatChoiceTest`, and not on the five runs before\nit. This is the cause, reproduced on demand rather than guessed.\n\n`App\\Support\\Features` reads the flag table once and keeps it in a static for the rest of the\nrequest, which is right: in production a request is a process. In the suite a process is hundreds\nof tests. So a test that writes a flag row hands its answer to every test after it in that process,\nlong after the transaction that made the row rolled back.\n\n`FeaturesTest` writes rows. `VehicleSheetVatChoiceTest` asks for the classic sheet with\n`config(['features.livewire_vehicle_form' => false])`, and got the Livewire one instead, which does\nnot carry the field it looks for. Hence a page that renders fine and an element that is not on it.\n\n```\nphpunit tests/Unit/FeaturesTest.php tests/Feature/VehicleSheetVatChoiceTest.php   3 failures, every time\nphpunit tests/Feature/TwoFactorTest.php tests/Feature/VehicleSheetVatChoiceTest.php   green\n```\n\nWhich tests share a process is a matter of how the parallel runner divides the files, which is why\nit came and went and why it always took the whole class with it. `Features::flush()` in\n`TestCase::setUp` makes every test start from the same truth. The suite in parallel is green again.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/feature-flags-between-tests",
+            "title": "Every test starts from the same feature flags (main is red)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919132712-902feb"
+}

@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Een dagelijkse mail meldt open items, enkel op productie.\n\nDe mail gaat per gebruiker (niet per dealer) en de taak controleert zelf niet op productie; buiten productie komt ze niet aan omdat alle mail naar het log gaat.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P1-2.1 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `DealerHasOpenWorklistItemsCommand::handle``, `Outbound::seal`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-een-dagelijkse-mail-meldt-open-items-enkel.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-een-dagelijkse-mail-meldt-open-items-enkel.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Een dagelijkse mail meldt open items, enkel op productie"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092420-a87560"
+}

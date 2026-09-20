@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7626076abe37cc6a528da4b2ec121bbc29ed7bef",
+            "branch": "workbench/de-schoollijst-zegt-wat-ze-meet",
+            "files_sha256": "ede9029cbbe07177329850064c84f23d9c27c342159c94f913ab790d15c32be3",
+            "message": "De schoollijst zegt wat ze meet, niet wat het vlaggetje zegt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918213904-063123"
+}

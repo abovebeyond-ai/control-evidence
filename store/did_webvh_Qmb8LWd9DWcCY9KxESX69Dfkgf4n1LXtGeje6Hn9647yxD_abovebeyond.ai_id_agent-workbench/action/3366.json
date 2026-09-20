@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The only public page of Naviskore, tidied up. No new behaviour: the same routes,\nthe same gate (`DenyPasswordLoginOnSsoHosts`), the same list straight out of the\ndatabase.\n\nWhat was off, in order of how much space it took:\n\n- **The logo stood 200px tall** and filled the screen above the card. It is the\n  name of the product, not the page; it is now `h-24 sm:h-28`.\n- **Every school button started with the word \"Smartschool\"**, four times, so\n  the word that distinguishes them came second. \"Aanmelden met Smartschool\" is\n  now said once, as the heading over the group, and each row carries only the\n  school's name.\n- **The rows were bordered rectangles with no affordance.** They are rows now,\n  with a hover state and a chevron, so they read as something you go through.\n- **The Microsoft button was a loose image under a list**, with nothing saying\n  it is an alternative rather than a fifth item. There is an \"of\" divider above\n  it, and the official lockup sits in a frame that matches the rows. The image\n  itself is unchanged: their brand guidelines ask for that file and not for a\n  button we draw ourselves.\n- **Nothing told a student what to do when it fails.** One line now does.\n- The card is narrower (`max-w-sm`), sits on `bg-zinc-50`, and carries\n  `ring-1 ring-zinc-950/5` with a soft shadow rather than `shadow-md`.\n- The password form, which only shows off the SSO hosts, got real labels\n  (\"E-mailadres\", \"Wachtwoord\"), `autocomplete` attributes it was missing, and a\n  full-width dark button instead of a pill floating in whitespace.\n\n`PasswordLoginHostTest` asserted on the sentence \"Kies een methode om in te\nloggen\", which the page no longer says. It now asserts what that test is about:\nthe provider is offered and no password field is rendered. The other login\nassertions are untouched, including the one h1 and `alt='Naviskore'`.\n\nRendered and looked at, at 560px wide, against the real built stylesheet.\n\n## Checks\n\n- `php artisan test`: 196 passed, 1 failed (`BuildStampTest`, which needs a full\n  clone rather than a worktree). `LoginPageTest` and `PasswordLoginHostTest`\n  both green.\n- `vendor/bin/pint --test`: passed. `npm run build`: fine.\n",
+            "branch": "workbench/de-inlogpagina-krijgt-lucht",
+            "title": "De inlogpagina krijgt lucht"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918213822-791810"
+}

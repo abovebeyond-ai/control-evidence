@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "158d1aed38f36f84b274b021c72aa3fa38869026",
+            "branch": "workbench/feat/webhook-streaks-in-app-health",
+            "files_sha256": "3142e48c2cc17864d19a9b263889a70d1924f2145da7bc3bd8374cb383b48e28",
+            "message": "Count failed webhook streaks per receiver, show them on the pane and report them to Elixir"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918124605-5e3cb9"
+}

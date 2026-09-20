@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Een verkochte wagen zou een melding \"verkocht\" krijgen bij het openen.\n\nDe tak die naar het overzicht stuurt met de melding \"verkocht\" is onbereikbaar: een verkochte wagen valt al onder de eerste voorwaarde en toont gewoon zijn detail.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S2-1.9 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `StockListController::detail``, `:246-248` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-een-verkochte-wagen-zou-een-melding-verkocht.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-een-verkochte-wagen-zou-een-melding-verkocht.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "Een verkochte wagen zou een melding \"verkocht\" krijgen bij het openen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092423-41fac2"
+}

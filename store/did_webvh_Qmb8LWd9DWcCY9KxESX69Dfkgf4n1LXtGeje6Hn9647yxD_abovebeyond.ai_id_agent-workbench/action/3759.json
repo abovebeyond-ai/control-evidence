@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "R P3-1.1 zegt dat een partner een token krijgt via `POST api/token` met client-id, client-secret en\nhet wachtwoord van een gebruiker (de OAuth password grant), en daarbij zijn `user_indentifier`.\n\nPassport 12 (`composer.json` vroeg `^12.0`) zet de password grant standaard uit; alleen\n`Passport::enablePasswordGrant()` in een serviceprovider zet hem aan, en dat staat nergens. Elke\naanvraag op `api/token` met `grant_type=password` eindigt dus in \"The authorization grant type is\nnot supported by the authorization server\", door onze controller vertaald naar een 400 \"Something\nwent wrong\". Nagekeken op 2026-09-18 tijdens de upgrade naar Laravel 13 / Passport 13, op de\ncode v\u00f3\u00f3r en na de upgrade: dezelfde uitkomst. In de praktijk gebruiken de partners het token uit\nhet gebruikersscherm (Instellingen > Gebruikers, \"Nieuw token\"), zoals `docs/api/partner-api.md`\nook aanraadt; dat pad werkt, ook met Passport 13 en v\u00f3\u00f3r `passport:hash`.\n\nTe beslissen: de route en de regel schrappen (dan verdwijnt ook de `user_indentifier`-toevoeging),\nof de grant aanzetten met `Passport::enablePasswordGrant()` en dan eerst `php artisan passport:hash`\ndraaien, want Passport 13 vergelijkt het meegestuurde secret met een hash. Zolang dat niet beslist\nis blijft het gedrag zoals het was: 400.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P3-1.1 |\n| Beslist | Shane |\n| Gevonden | 2026-09-18 |\n| Waar | `AccessTokenController::issueToken`, `AuthServiceProvider::boot`, `docs/api/partner-api.md` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-18-api-token-wachtwoordgrant-uit.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-18-api-token-wachtwoordgrant-uit.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "POST api/token geeft altijd 400 omdat de wachtwoord-grant sinds Passport 12 uitstaat"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092509-00275f"
+}

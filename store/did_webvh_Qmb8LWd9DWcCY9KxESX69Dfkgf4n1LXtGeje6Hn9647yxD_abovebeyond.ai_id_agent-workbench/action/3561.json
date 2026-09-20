@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Herinneringen tijdens de toewijstermijn.\n\nDe taken \"bijna vervallen\" en \"vervallen\" zoeken biedingen met einddatum gelijk aan vandaag plus tien en vandaag plus veertien, dus in de toekomst. Bij een looptijd van zeven dagen bestaat zo'n bieding nooit: die twee mails vertrekken in de praktijk niet.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R B1-3.6 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `Daily::doAlmostExpiredExports`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-herinneringen-tijdens-de-toewijstermijn.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-herinneringen-tijdens-de-toewijstermijn.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "Herinneringen tijdens de toewijstermijn"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092144-ca3b76"
+}

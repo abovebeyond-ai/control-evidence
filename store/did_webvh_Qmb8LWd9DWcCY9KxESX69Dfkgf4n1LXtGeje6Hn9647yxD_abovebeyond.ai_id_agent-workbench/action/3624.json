@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d9d3930b36d48608729a8a00d3dfb61bb2a35789",
+            "branch": "workbench/docs/first-mirrored-issues-2",
+            "files_sha256": "ea5f5dafca2239b79556da77e5f598d910d02fa6164e0e39dce57d516e46f7d6",
+            "message": "The findings of severity nu and deze week carry their issue"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092247-860ddb"
+}

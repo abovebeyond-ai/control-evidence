@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De regel sprak van \"verkochte collega-wagens\".\n\nDe code telt de verkopen van alle niet-demodealers, de eigen verkopen inbegrepen (`extendedSearch` zonder stocklist-tak legt geen dealervoorwaarde op). Voor een marktreferentie is dat verdedigbaar (wat een eindklant betaalde is wat hij betaalde, ook bij jou), maar het staat haaks op de woordkeuze van de regel, dus ofwel wordt de regel \"alle dealers\" (nu zo herschreven), ofwel hoort de eigen dealer eruit. Vastgepind zoals het is in `AveragePriceSearchTest::test_own_and_colleagues_sales_count_demo_and_bidding_vehicles_do_not`. Daarnaast leest het bestand de kolom `sold` niet: de verkoopdatum in de periode is het criterium (elke verkoopweg schrijft de drie velden samen, dus in de praktijk hetzelfde).\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S1-5.14 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-15 |\n| Waar | `AveragePriceSearch::population`, `VehicleRepository::extendedSearch` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-15-gemiddelde-prijs-telt-eigen-verkopen-mee.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-15-gemiddelde-prijs-telt-eigen-verkopen-mee.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "De regel sprak van \"verkochte collega-wagens\""
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092453-795464"
+}

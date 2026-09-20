@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d50d0ca0aa9c6c31a50dee60dadc0bf9954f0cb6",
+            "branch": "workbench/ui/operations-under-insights",
+            "files_sha256": "cee0294d6903ddaca9943c538e92580783795bde6d900985e3b273c1f63d9caa",
+            "message": "Werking hangs under Inzichten"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919152326-dcb413"
+}

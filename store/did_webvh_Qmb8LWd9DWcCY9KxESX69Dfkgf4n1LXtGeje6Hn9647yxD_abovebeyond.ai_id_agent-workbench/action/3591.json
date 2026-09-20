@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De testsuite draait op een cache die per test leeg is (`phpunit.xml` zet `CACHE_STORE=array`).\n\n`config/cache.php` leest `CACHE_DRIVER`, niet `CACHE_STORE`, dus de sleutel in `phpunit.xml` doet niets en de hele suite draait op de BESTANDScache in `storage/framework/cache`. Gevonden op 14 september 2026 bij het vastpinnen van de RealGarant-oproepen: het sessietoken van RealGarant (sinds kort vijftien minuten bewaard, sleutel = vestigingsnummer plus gebruikersnaam) bleef tussen testklassen en tussen testruns staan, waardoor de login die getoetst werd nooit vertrok. De testen hier zetten daarom zelf `cache.default` op `array`. Twee wegen: de sleutel in `phpunit.xml` gelijkzetten met wat de configuratie leest, of de configuratie op Laravels huidige naam brengen. Zolang dit staat kan elke gecachete waarde van de ene test in de andere blijven hangen.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R P3-8.1 |\n| Beslist | Shane |\n| Gevonden | 2026-09-14 |\n| Waar | `phpunit.xml:29`, `config/cache.php:21`, `RealGarantService::getToken` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-14-de-testsuite-draait-op-een-cache-die.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-14-de-testsuite-draait-op-een-cache-die.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "De testsuite draait op een cache die per test leeg is (`phpunit.xml` zet `CACHE_STORE=array`)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092158-cb10a3"
+}

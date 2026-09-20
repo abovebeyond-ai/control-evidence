@@ -1,0 +1,16 @@
+{
+    "action": "0e600aa193b9204e414521780a013d80",
+    "effect": {
+        "detail": {
+            "base": "1ca966fc94c39291abf9e8bf0a5f1554cec5f7e2",
+            "branch": "workbench/fix/daily-export-uses-the-app-clock",
+            "commit": "b571b96df2aa4d7d3997627146f91e6f0861667e",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3774,
+    "verdict": "ALLOW"
+}

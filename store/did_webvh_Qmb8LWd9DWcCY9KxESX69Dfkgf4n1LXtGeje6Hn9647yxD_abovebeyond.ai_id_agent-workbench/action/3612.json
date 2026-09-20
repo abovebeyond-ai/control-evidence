@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Het gemiddelde is het gemiddelde van de verkoopprijzen van de verkochte wagens.\n\nEen wagen met een verkoopdatum maar zonder verkoopprijs (sold_price leeg of 0) zit in het bestand en telt als 0: hij trekt het gemiddelde omlaag en wordt het minimum (\"tussen \u20ac 0,00 en ...\"). Een dealer die een verkoop registreert zonder prijs in te vullen verlaagt zo de marktreferentie van iedereen. Wat het hoort te zijn: zo'n verkoop niet meetellen (het bestand is dan \"verkopen met een prijs\"), of de prijs verplicht maken bij het registreren van een verkoop. Vastgepind zoals het vandaag is in `AveragePriceSearchTest::test_a_sale_without_a_price_counts_as_zero`, zodat de keuze bewust gebeurt en niet per ongeluk.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S1-5.14 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-15 |\n| Waar | `AveragePriceSearch::render` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-15-verkoop-zonder-prijs-telt-als-nul.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-15-verkoop-zonder-prijs-telt-als-nul.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: ilse"
+            ],
+            "title": "Het gemiddelde is het gemiddelde van de verkoopprijzen van de verkochte wagens"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092210-750e67"
+}

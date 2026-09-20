@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3864e03392472a568f81b8743dcccb635bd27cb7",
+            "branch": "workbench/adapter-declarations",
+            "files_sha256": "6be33df6930b4bbc1fb48e98d5ec229c1cb5b9001896e9b1c19ba3eae1c3903f",
+            "message": "An adapter declares what it is, and a test keeps it true"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919123909-63fddf"
+}

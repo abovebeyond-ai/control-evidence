@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e45c73fd09ed170df31e067f478b2abe902d7136",
+            "branch": "workbench/read-token-administration",
+            "files_sha256": "839f28958086fa8971a1cccd82bea30fcb29dbd13214a1515bea1c6b6686b008",
+            "message": "A read token may see a repository's configuration"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260919123936-2cce41"
+}

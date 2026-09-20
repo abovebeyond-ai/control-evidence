@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`protection` answered 403 on 20 of the 24 measured projects, across all six owners:\n\n```\nprotection: GitHub answered 403 for the protection of abovebeyond-ai/vera:\nResource not accessible by integration\n```\n\nThe cause is not the App's rights but the token's. `ReadToken` downscopes at mint time to\n`contents`, `metadata`, `actions`, `pull_requests`. Branch protection sits behind\n`administration`, which the token never asked for. Granting the App that right was\nnecessary and not sufficient: a downscoped token cannot exceed the installation, but it\nalso never reaches it.\n\nGitHub has no narrower right for branch protection, so the whole bundle comes along:\ncollaborators and teams, the webhook list, the public half of deploy keys, runner and\nActions settings. All read-only.\n\n**The weighing**, written into the comment so the next cleanup round does not undo it:\nthis same token already carries `contents`, so a leak hands over the source of the whole\nfleet. A repository's configuration is small next to that. One item is worth naming\nanyway: a Forge deploy hook keeps its secret in the URL, so the hook list exposes a\ndeploy trigger. Those URLs are worth rotating on their own schedule; they were exposed to\nevery repo admin before this change.\n\nThe cost of leaving it: twenty projects silently blind on one dimension of maturity,\nprinted as `not measured` in every brief, which reads as a fault rather than as a choice.\n\n**Test.** The existing loop walks `ReadPermissions`, so a new entry passes it unnoticed. A\nsecond loop pins the line that does not move: every right is `read`. Verified by mutation\n(`administration: write` fails with `a read token carries read rights only`).\n\nAfter merge the gateway needs a tag and `rehearse.sh upgrade`; the cached read tokens on\nthe box live an hour, so the fleet clears on the next round or sooner if they are removed.\n",
+            "branch": "workbench/read-token-administration",
+            "title": "A read token may see a repository's configuration"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260919123936-2cce41"
+}

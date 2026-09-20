@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up on #175 (merged).\n\nFrom PDF to draft is one path, so it lives in one repo. `bin/posts-to-json.py <folder>` reads Guilherme's PDFs and writes a json beside each one; `bin/import-articles.mjs <that folder>` puts them in as drafts. A converter on somebody's laptop and an importer on the box drift apart the moment the source changes shape, and nobody notices until half a post shows up in the Studio looking finished.\n\n**What the converter reads and what it refuses to guess.** The PDFs are all built the same way: title, then Signal / Why It Matters / Examples / How To Activate It, and at the end \"What doesn't exist yet: <name>\" with the opportunity. That structure is the source. Hard line breaks inside a paragraph are joined again, because leaving them gives markdown that starts a new line mid-sentence. A title that wraps over two lines is taken whole (the first version published \"Your fandom does not need your\").\n\nTags are guessed, and only loosely: at least three hits, at most two topics, nothing when in doubt. Checked against the five pieces editorial had tagged by hand: four of five come out exactly, the fifth misses one (Mental Health) and invents none. An empty field is honest; a wrong label travels to the filters on the site and says something nobody claimed.\n\nNeeds `pdftotext` (poppler-utils), as the report import on the site does. Tried on all 68 posts: 68 converted, 0 skipped, no title truncated. Suite: 698 pass.\n",
+            "branch": "workbench/posts-to-json",
+            "title": "The converter lives next to the importer"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260918165613-8936c4"
+}

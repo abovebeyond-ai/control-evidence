@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "This side no longer ingests a report; it receives one. The Studio holds the\ncalendar and the file, and `gentells:reconcile` pulls both.\n\nNeeds Trendwolves/gentells-pipeline#177 (the shelf and the projection endpoints)\nand Trendwolves/gentells-studio#19 (the screen).\n\n## What goes away\n\n- **`gentells:report`**, the artisan command that took a PDF over ssh and\n  rasterised it here. Its own docblock wanted publishing a report to be possible\n  without a developer, and it was the reason it was not: it needs poppler on a\n  box Forge does not provision, and there is no sudo here to add it.\n- **`ReportCalendarSeeder`**. A calendar in a seeder cannot be changed without a\n  commit and a deploy, so a new date needed a developer too. The two tests that\n  leaned on it now lay the rows down themselves, which is what the reconcile\n  writes anyway.\n\n## What arrives\n\n- **`reconcileReports()`**, with the three rules of this class intact. Rule 3\n  has teeth here because there are files: a report weighs 24MB, a failed fetch\n  must not make a deliverable report undeliverable, and the fingerprint keeps a\n  scheduled job from moving the whole shelf every time a timestamp moves.\n- **`Report::forgetFile()`**. Taking a report off the site in the Studio has to\n  remove the PDF here too; clearing the column alone leaves it on disk for\n  anyone who ever saw the name.\n- **`file_sha256`** on reports.\n\n## Two bugs the tests caught first\n\nA refetch wrote straight over the live file, so a 503 halfway through deleted a\nreport that had been fine a minute earlier. Downloads now land beside the target\nand move into place only once they are whole.\n\nThe preview staging area sat inside the directory the cleanup wipes, so the new\npages were deleted before they could be moved in. It is now a sibling.\n\n283 tests pass, 7 of them new.\n",
+            "branch": "workbench/reports-through-projection",
+            "title": "Reports arrive through the projection, like everything else"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260919074155-2684ee"
+}

@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Ilse beschrijft op 2026-09-17 een keuzelijst \"type bieding\" (iedereen mag bieden, eigen handelaars, alleen dealers) op het aanmaakformulier van een biedingswagen, zoals de dealers die in augustus en september 2026 nog in de live app van Delta gebruikten. In de export van 2026-06-12 waarop dit platform gebouwd is bestond die keuzelijst enkel in een dode modal (`export/form.blade.php`, knop uitgecommentarieerd, opslagroute zonder bieding); het productiecijfer bevestigt Ilse (16 biedingen op \"eigen handelaars\", 4 op \"alleen dealers\", alle van v\u00f3\u00f3r de cutover). Delta heeft dus na 12 juni nog aan de app gewerkt zonder dat die code in onze export zat, en wat er nog meer in dat verschil zit weten we niet. Vraag aan Shane, Ilse en Frederik: welke andere dingen \"werkten vroeger\" die sinds de cutover van 2026-09-15 ontbreken, en is er van Delta een latere stand van de code te krijgen om het verschil te lezen in plaats van het per melding te ontdekken?\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R B1-1.8 |\n| Beslist | Shane|Ilse|Frederik |\n| Gevonden | 2026-09-17 |\n| Waar | de export van 2026-06-12 tegenover de app die Delta tot september 2026 live had |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-17-delta-productiecode-nieuwer-dan-export.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-17-delta-productiecode-nieuwer-dan-export.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane|ilse|frederik"
+            ],
+            "title": "Delta's productiecode was nieuwer dan de export waarop wij bouwden"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092506-d55a52"
+}

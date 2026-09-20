@@ -1,0 +1,16 @@
+{
+    "action": "0ae79c31ae5b36773f9df6533907d9d4",
+    "effect": {
+        "detail": {
+            "base": "1319208a08ac12a5aea574d0c2b7776f98cc122f",
+            "branch": "workbench/de-tests-op-mariadb-blokkerend",
+            "commit": "5f859fe80bec6bccb9efdf3b90d4f1622790d4be",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3993,
+    "verdict": "ALLOW"
+}

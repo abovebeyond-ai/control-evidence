@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Gemeld door Shane bij 390 pixels: de tarieftabel klapt in tot label/waarde-regels met het invoerveld op 60% van de breedte en de klasseomschrijving over drie regels. Het is een kantoorscherm dat \u00e9\u00e9n keer aan een bureau gebruikt wordt; genoteerd, niet gemaakt.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P2-8.5 |\n| Beslist | Shane |\n| Gevonden | 2026-09-15 |\n| Waar | `settings/setting/_tabs/transport.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-15-transport-tarieftabel-op-een-telefoon.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-15-transport-tarieftabel-op-een-telefoon.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "De tarieftabel op het tabblad Transport valt op een telefoon uit elkaar"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092459-54a092"
+}

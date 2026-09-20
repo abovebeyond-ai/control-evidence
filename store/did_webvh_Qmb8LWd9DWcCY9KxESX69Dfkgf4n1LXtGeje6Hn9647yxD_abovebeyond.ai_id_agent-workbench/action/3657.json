@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "(nieuw)\n\nDe opslag van 9,25% voor btw-wagens (`VATNeeded_select == 1`) is dode code: vehicles heeft geen kolom of accessor met die naam (enkel `VATNeeded`).\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S4-6.4 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `VehicleRealGarantService::getPrograms`; `OrderRealGarantService::getOrderContractOffer`; `RealGarantController::calculate`; database/schema/mysql-schema.sql:2176 |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-de-opslag-van-9-25-voor-btw.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-de-opslag-van-9-25-voor-btw.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "De opslag van 9,25% voor btw-wagens (`VATNeeded_select == 1`) is dode code"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092417-a1dc86"
+}

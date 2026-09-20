@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Gevonden bij het nakijken van de demodataset (`stocklist:demo-screens`): een wagen met 48.500 km\nen 1.300 kg stond na \u00e9\u00e9n keer openen van `own-vehicles/create/{id}` in de databank met\n`mileage = 48.5` en `weight = 1.3`. De lijst toonde daarna \"49 km\".\n\nWat er gebeurt. De klassieke aanmaakpagina (`create.blade.php`) doet bij het laden, zolang er\ngeen `?v=` in de url staat, \u00e9\u00e9n POST naar `ownvehicle.create.tempupdate` met de geserialiseerde\ninhoud van `#vehicle-create-form`, en herlaadt dan met `?v=`. De Livewire-fiche in dat formulier\ntoont de kilometerstand en het gewicht Nederlands (\"48.500\", \"1.300\", `Custom::wholeNumberInput`).\n`OwnStockService::tempupdate` schrijft die waarden ongewijzigd weg; MySQL leest \"48.500\" in een\ndouble-kolom als 48,5. De normalisatie die de twee bewaarpaden wel hebben\n(`normaliseWholeNumbers`, `normaliseDecimals` in `normaliseAmounts`) ontbreekt op dit derde pad.\n\nWie het raakt: een dealer die een concept (nog niet volledig) sluit en later via de lijst weer\nopent, of die na een chassisopvraging herlaadt. Voor een volledige wagen gaat de lijst naar\n`own-vehicles/{id}/edit`, dat deze POST niet doet; daar is het niet te reproduceren.\n\nVoorstel: `tempUpdate` dezelfde `OwnStockService::normaliseAmounts()` laten toepassen als de\nbewaarpaden, en de POST bij het laden schrappen zodra de Livewire-fiche haar concept zelf bewaart\n(`saveStep`); een bewaring die niets mag veranderen hoort niet bij het openen van een pagina.\nNiet aangepast in de PR van de demodataset: het is bestaand gedrag in een pad dat de demo niet\ngebruikt.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S1-1.1 |\n| Beslist | Shane |\n| Gevonden | 2026-09-16 |\n| Waar | `resources/views/ownstock/create.blade.php` (`tempUpdateVehicle` bij het laden), `OwnStockController::tempUpdate`, `OwnStockService::tempupdate` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-16-conceptfiche-herladen-schrijft-48500-als-48-5.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-16-conceptfiche-herladen-schrijft-48500-als-48-5.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "Een conceptfiche openen schrijft \"48.500\" km terug als 48,5"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092211-57e7a7"
+}

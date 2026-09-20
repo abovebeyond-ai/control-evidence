@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De remove.bg-sleutel is een platforminstelling, te zetten met het recht `removebgkey.index`.\n\n`RemoveBgKey::resolve()` neemt de eerste rij `settings.api_key` die hij vindt, zonder dealerfilter: staat er \u00e9\u00e9n dealerrij, dan betaalt die dealer de credits voor de foto's van alle andere. De fotoverwerking draait in een wachtrij zonder ingelogde gebruiker, dus er is daar geen dealer om op te filteren; `RemoveBgKey::forDealer()` bestaat wel en wordt enkel door de rooktest gebruikt. Het gedrag is ouder dan de versleuteling van 13 september en bewust ongewijzigd gelaten. Vraag V-13: \u00e9\u00e9n platformaccount, of een sleutel per dealer.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R P2-10.3 |\n| Beslist | Frederik |\n| Gevonden | 2026-09-11 |\n| Waar | `RemoveBgKey::resolve`, `RemoveBgKey::forDealer`, `Photo::removeBg`, `ProcessImage::handle` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-de-remove-bg-sleutel-is-een-platforminstelling.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-de-remove-bg-sleutel-is-een-platforminstelling.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: frederik"
+            ],
+            "title": "De remove.bg-sleutel is een platforminstelling, te zetten met het recht `removebgkey.index`"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092129-fe1721"
+}

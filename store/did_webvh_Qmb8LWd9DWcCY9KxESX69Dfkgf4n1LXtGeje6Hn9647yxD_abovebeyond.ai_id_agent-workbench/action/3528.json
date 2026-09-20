@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De poort (op stock, technisch klaar, dealerprijs) bepaalt of een wagen in de gedeelde stock kan.\n\nDe poort zit enkel in de fiche (VehicleForm) en in de knoppenreeks van de wagenlijst. De listactie en de zoekquery controleren on_stock, technical_ready en trade_price niet; een wagen met available_on_stocklist = 1 verschijnt ook zonder die drie.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S2-1.1 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `OwnStockList::putOnStocklist``, `OwnStockController::put_on_stocklist``, `VehicleRepository::extendedSearch`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-de-poort-op-stock-technisch-klaar-dealerprijs.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-de-poort-op-stock-technisch-klaar-dealerprijs.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "De poort (op stock, technisch klaar, dealerprijs) bepaalt of een wagen in de gedeelde stock kan"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092128-ce0ff2"
+}

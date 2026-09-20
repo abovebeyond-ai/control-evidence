@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Vanuit de lead: bekijken op de traders-site (niet de website van de dealer) of op Stocklist Dealer, met klantmodus.\n\nDe eerste knop opent de detailpagina van de websitemodule van de dealer (`settings.index.websitedetail`, de iframe-pagina die Stocklist voor de dealer serveert), de tweede de Stocklist-detailpagina. Geen van beide links zet klantmodus aan; die volgt uit de sessie (S5-4).\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P1-3.12 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `resources/views/worklist/widgets/4.blade.php`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-vanuit-de-lead-bekijken-op-de-traders.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-vanuit-de-lead-bekijken-op-de-traders.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Vanuit de lead: bekijken op de traders-site (niet de website van de dealer) of op Stocklist Dealer, met klantmodus"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092446-8a7322"
+}

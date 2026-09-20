@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "`odometerReading` is de kilometerstand van de wagen.\n\nHet veld vertrekt met wisselende typering. Komt de stand van de wagenrij, dan gaat ze als kommagetal mee (`120000.0`, het model cast ze); typt de dealer een correctie in de dialoog, dan gaat ze mee zoals de aanroeper ze doorgeeft (een geheel getal langs de Livewire-weg, een tekenreeks langs de klassieke route, die nog steeds het verzoek leest). Hetzelfde veld, drie vormen op de lijn. Car-Pass aanvaardt ze vandaag alle drie (nagespeeld tegen hun testomgeving op 14 september 2026) en de overgenomen Delta-code deed hetzelfde, dus dit is geen storing maar een losse eindje: \u00e9\u00e9n omzetting naar een geheel getal vlak voor het bericht zou het dichten. Vastgepind zoals het vandaag is in `CarpassWireShapeTest`.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P3-9.1 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `CarpassController::carpassRequest` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-odometerreading-is-de-kilometerstand-van-de-wagen.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-odometerreading-is-de-kilometerstand-van-de-wagen.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "`odometerReading` is de kilometerstand van de wagen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092439-c14819"
+}

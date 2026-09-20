@@ -1,0 +1,16 @@
+{
+    "action": "d1aa574117deefc7284dd13b2492d7ca",
+    "effect": {
+        "detail": {
+            "base": "1dd4f2d35884a02f6a1539c4163f9d42d641cff8",
+            "branch": "workbench/design-system",
+            "commit": "dd8f66c6a1010631833654ca53be749f60733b32",
+            "files": 153,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3459,
+    "verdict": "ALLOW"
+}

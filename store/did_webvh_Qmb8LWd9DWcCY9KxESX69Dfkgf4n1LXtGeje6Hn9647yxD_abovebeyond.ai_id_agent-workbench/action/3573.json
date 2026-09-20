@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Marges enkel voor de beheerder: 50 euro, +50%, 25 euro.\n\nDe marges zijn instellingen, bewerkbaar door iedere rol met `setting_transport.update`; de bedragen staan niet in de code. Er is bovendien een derde toeslag \"elektrische wagen\" die het document niet noemt.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R P2-8.3 |\n| Beslist | Frederik |\n| Gevonden | 2026-09-11 |\n| Waar | `SettingsController::updateTransport``, `settings/setting/_tabs/transport.blade.php`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-marges-enkel-voor-de-beheerder-50-euro.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-marges-enkel-voor-de-beheerder-50-euro.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: frederik"
+            ],
+            "title": "Marges enkel voor de beheerder: 50 euro, +50%, 25 euro"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092150-935f70"
+}

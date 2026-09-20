@@ -1,0 +1,16 @@
+{
+    "action": "13c899fe947f5c645a8cc8d5ee09cea7",
+    "effect": {
+        "detail": {
+            "base": "56dedca9db64109407deaf943f02c7df9b4ae4c2",
+            "branch": "workbench/klasprogressie-varianten",
+            "commit": "056b4af83816d634e210201ab3033669fd52a210",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3999,
+    "verdict": "ALLOW"
+}

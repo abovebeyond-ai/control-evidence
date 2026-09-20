@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb06f6824c2e36f65c023ba177805326af365fe4",
+            "branch": "workbench/papier",
+            "files_sha256": "2cd70abcae54fa88a2257549765bc7b19f8425f9df717344f757b8ac4d09582d",
+            "message": "De app op papier, het grijs met een tint\n\nE\u00e9n off-white grond (token paper) voor pagina, zijbalk en bovenbalk; wit\nalleen voor inhoud; de lichte ink-stappen met dezelfde tint; het actieve\nmenu-item op primary-100."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919214347-77032d"
+}

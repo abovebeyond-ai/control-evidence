@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "preview.push",
+        "params": {
+            "base": "493b4b2b5387a282f60e569a447996e6a61d622c",
+            "branch": "preview",
+            "head": "workbench/upgrade/laravel-13",
+            "pull": 549,
+            "sha": "af4dafd1d2d4e921166abbad8fec84eb36b92ca5"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918102619-817cd2"
+}

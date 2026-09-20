@@ -1,0 +1,16 @@
+{
+    "action": "a500e3b1ac690df04d3f0241e670b013",
+    "effect": {
+        "detail": {
+            "base": "b9940817dac42530731f56b169a058548cacdd0b",
+            "branch": "workbench/feat/operations-screen",
+            "commit": "253436baabeccab60f1bc011c9face842c54fe39",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4023,
+    "verdict": "ALLOW"
+}

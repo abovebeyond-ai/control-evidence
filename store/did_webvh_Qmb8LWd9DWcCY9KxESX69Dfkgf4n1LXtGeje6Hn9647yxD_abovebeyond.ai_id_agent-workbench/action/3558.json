@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Garantie overgenomen van de wagen en overschrijfbaar.\n\nBevestigd; maar de Spoticar-bestelbon drukt de garantie van de wagen, niet die van de bestelbon.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S4-2.7 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `Custom.php`; `OrderController::fill_in_spoticar_page1` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-garantie-overgenomen-van-de-wagen-en-overschrijfbaar.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-garantie-overgenomen-van-de-wagen-en-overschrijfbaar.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "Garantie overgenomen van de wagen en overschrijfbaar"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092142-defb59"
+}

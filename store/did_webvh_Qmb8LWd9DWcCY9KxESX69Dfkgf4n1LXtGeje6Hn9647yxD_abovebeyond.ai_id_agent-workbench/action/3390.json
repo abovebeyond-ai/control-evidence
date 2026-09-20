@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nA project's findings live as files in its own repository, tied to the rules they contradict. That is the right place for the truth and a poor place for triage, so the plan (Shane, 19 September 2026) is to mirror open findings as GitHub issues: the file stays the source, the issue is the workbench, the pull request that fixes it closes the issue and the number travels back into the file.\n\nThe gateway learned the verb in abovebeyond-ai/control#85 (`issue.open`, v0.28.0). It demands that a kind stand in the grant as well as in Portal's capability, so this is the grant's half.\n\n## What\n\n`issue.open` added to `Workbench::KINDS`, with the reason in the docblock. Nothing else changes: the same resources, still one act per kind per run, still never a merge and never a workflow.\n\n## Tests\n\n`WorkbenchGrantTest` and `ControlClientTest` name the new kind in the two places that pin the list: 12 tests, 80 assertions, green.\n",
+            "branch": "workbench/issue-open-kind",
+            "title": "The workbench may open an issue (control v0.28.0)"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260919065346-69be8e"
+}

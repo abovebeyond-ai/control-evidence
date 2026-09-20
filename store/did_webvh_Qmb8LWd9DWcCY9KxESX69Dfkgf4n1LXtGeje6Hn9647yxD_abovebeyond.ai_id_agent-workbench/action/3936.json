@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "v0.29.0 carries the read token's `administration: read` (#89), so the VM has to move before\nany of it reaches a measurement.\n\n```\nRELEASE     v0.28.1 -> v0.29.0\nGATEWAY_SHA f46d8bb3\u2026 -> 45562a23\u2026\n```\n\nThe sha is `control-gateway-linux-amd64` from the release's `SHA256SUMS`, and the asset was\ndownloaded and hashed again before this was written: both read\n`45562a231f6bdcb92801dfc79f47ecb54abe41e2df85d355e3eb86747ace54bd`. `bash -n` on the script\nis clean.\n\nAfter merge: `rehearse.sh upgrade`, then the cached read tokens on the box\n(`elixir-app/storage/app/private/control/read-tokens/`) are the last thing in the way. They\nlive an hour and carry the rights of the moment they were minted, so until they expire or\nare removed, protection keeps answering 403 on all 20 projects even with the new gateway\nrunning. That hour is why this looked like a failed permission change earlier today.\n",
+            "branch": "workbench/vm-on-v0.29.0",
+            "title": "De VM op v0.29.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260919131334-f65610"
+}

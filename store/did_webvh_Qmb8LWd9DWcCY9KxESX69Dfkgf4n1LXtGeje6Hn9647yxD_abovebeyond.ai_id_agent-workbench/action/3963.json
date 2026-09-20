@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee dingen uit productie na de deploy van vandaag.\n\n## Het rapport stond smal\n\nDe sectierij (\"Deel 1 - Basisvorming\") had een vaste `colspan=\"6\"`. Met examens, evaluaties en stage zijn dat precies de zes kolommen (vak, drie scores, twee tussenkolommen), en zo zag de demo eruit. Zonder examens zijn het er vier, en dan maakt een colspan van zes twee spookkolommen aan; `table-fixed` gaf de vakkolom daardoor een derde van de breedte en de rest aan niets. De rij spant nu het echte aantal kolommen (`columnCount` in `TableSection.vue`: vak plus getoonde scores plus tussenkolommen; twee op het vooruitgangsrapport).\n\n## De filterbalk van projecten\n\nHet vinkje \"Mijn projecten\" hing aan de bovenrand terwijl de scheidingslijn zo hoog was als het keuzemenu. Nu staat alles op \u00e9\u00e9n middellijn (`items-center`), de lijn op `ink-200` zoals de andere lijnen, en het label wijst naar het juiste veld.\n\n## Nagekeken\n\nKale tabel op de gebouwde CSS met vier kolommen, colspan 6 tegenover 4: met 6 eindigt de kop op de helft en staat het vak smal, met 4 vult de kop de kaart en neemt het vak wat overblijft. ESLint binnen de cap, build groen. Na de merge: `npm run build` op Ploi.\n",
+            "branch": "workbench/de-kolommen-van-het-rapport",
+            "title": "De sectierij spant de echte kolommen, en de filterbalk op \u00e9\u00e9n lijn"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919132931-436919"
+}

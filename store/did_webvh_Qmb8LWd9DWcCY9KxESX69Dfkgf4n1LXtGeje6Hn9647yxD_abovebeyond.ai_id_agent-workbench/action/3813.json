@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The gateway never merges, so a proposal that nobody is told about waits. Today the\noperator found his own agent's pull requests by opening the repository, because none of\nthem ever asked him to review.\n\nThe cause is a config key that was never written. In control, `requestReview(...)` returns\nimmediately when `Reviewer` is empty, and the config `ControlService::config()` writes to\n`/home/elixir/control/config.json` has no `reviewer` key at all.\n\nThis adds it:\n\n- `config/elixir.php`: `control_reviewer`, from `ELIXIR_CONTROL_REVIEWER`, default `ShaneDeconinck`.\n- `ControlService::config()` writes it as `reviewer`.\n- `ControlClientTest` pins that the written config names a reviewer, so the key cannot\n  quietly disappear again.\n\nAfter this merges the box redeploys within two minutes, but the VM carries its own copy of\nthe config, so it takes `scp elixir@167.233.221.164:control/config.json ~/control-config.json`,\nthen `rehearse.sh config ~/control-config.json` and `rehearse.sh reboot` to take effect.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/gateway-asks-for-review",
+            "title": "Ask the operator to review what a hand proposes"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260919103320-86dc6b"
+}

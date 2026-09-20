@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Drie dingen uit productie.\n\n## Eindtermenclusters\n\n- De naam van een cluster stond in `ink-500` tot je eroverheen ging, alsof hij uitgeschakeld was, terwijl de rest van de rij `ink-900` had. Nu `ink-800` met `primary-700` bij hover, zoals de projectnamen; de naam breekt op een woordgrens, niet meer midden in een woord (\"en o / mgaan\").\n- Werkbalk zoals bij de projecten, in twee rijen voor zeven filters: zoeken en de drie vinkjes op de eerste, de vier keuzemenu's (`x-form.select`) op de tweede, alles op \u00e9\u00e9n middellijn en geen label dat over twee regels breekt.\n- \"Graad 1\" en \"A-stroom\" breken niet meer; paginering alleen als er pagina's zijn.\n\n## Menu: hover in de familie van het actieve item\n\nHover was `ink-100` (grijs) naast een actief item op `primary-100` (blauw): twee families. Hover is nu `primary-50`, een stap onder het actieve item, zodat beide als \u00e9\u00e9n ding lezen.\n\n## Eindtermen: de uitleg\n\nDe kaart met twee alinea's boven de lijst is \u00e9\u00e9n stille regel onder de titel geworden: \"Offici\u00eble eindtermen zijn van alle scholen samen en kun je niet wijzigen; kies afwijken en er komt een eigen versie naast.\" Wie hier komt weet wat eindtermen zijn; de ene regel die ertoe doet is die over afwijken.\n\nNagekeken op de gerenderde lijst; suite groen op `BuildStampTest` na (worktree). Na de merge: `npm run build` op Ploi.\n",
+            "branch": "workbench/lijsten-en-hover-2",
+            "title": "Clusterlijst opgeruimd, hover in de familie van het actieve item, de uitleg \u00e9\u00e9n regel"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920073537-b8f31f"
+}

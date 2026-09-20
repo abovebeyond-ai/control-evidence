@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0118e07dcdc2c0b6e6dc3cef4a1524a092d5a99e",
+            "branch": "workbench/judge-collection",
+            "files_sha256": "4b205a290c8666eac92874645b90d4ae7218195b9952421cffba6027b83dcd2b",
+            "message": "Judge what an app collects, and whether it still does"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260919140002-4d6028"
+}

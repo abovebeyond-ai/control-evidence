@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Een schadevoertuig wordt naar de portals gestuurd onder de categorie \"Schadevoertuig\".\n\nHet vinkje \"Deze wagen doorsturen naar portals onder categorie 'Schadevoertuig'\" (`is_accident_vehicle`) stuurt geen categorie en geen enkele vlag naar een portal: het komt in de hele feed niet voor. Het wordt enkel als filter gelezen op de gedeelde stock, haar telling en facetten, de website-integratie en de showroomslides, en verbergt de wagen daar. Het element `<accident>` in de portalfeed volgt `has_damage`: waar zodra \u00e9\u00e9n van de 18 schadeplaatsen een opmerking of een foto heeft. Een wagen met \u00e9\u00e9n gefotografeerde kras vertrekt dus als schadevoertuig, en het vinkje dat dat lijkt te sturen doet iets anders. Het vinkje staat bovendien middenin het portalblok van de fiche, wat het label als een belofte over portals laat lezen. Gedrag en label zijn allebei overgenomen uit de vorige versie (`cutover-baseline`), niets hiervan is nieuw. Vraag V-17.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S2-4.4 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `VehicleRepository::extendedSearch`` (`:395`), `::extendedSearchCount`` (`:666`), `::forWebsiteQuery`` (`:808`), `::getForShowroom`` (`:1136`), `StockListController::getOverview``, `XML::getXML`` (`:120`), `Vehicle::getHasDamageAttribute``, `lang/nl/vehicle.php:138` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-een-schadevoertuig-wordt-naar-de-portals-gestuurd.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-een-schadevoertuig-wordt-naar-de-portals-gestuurd.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: ilse"
+            ],
+            "title": "Een schadevoertuig wordt naar de portals gestuurd onder de categorie \"Schadevoertuig\""
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092134-4e3c42"
+}

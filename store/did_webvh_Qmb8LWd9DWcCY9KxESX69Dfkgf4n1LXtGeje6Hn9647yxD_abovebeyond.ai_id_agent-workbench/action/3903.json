@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "25167ad43c8ac79eb4ded6f832882dcc8998cede",
+            "branch": "workbench/de-ci-in-jobs-3",
+            "files_sha256": "f814095cc9a27925845d88103c9c6241c165a96ea9369a592887077c61c88a30",
+            "message": "De CI in jobs, \u00e9\u00e9n per oordeel\n\nZes jobs in plaats van \u00e9\u00e9n van tien stappen: up-to-date, tests (parallel op\nsqlite), tests-mariadb (adviserend: groen met een waarschuwing en de telling\nin de samenvatting), frontend, static en audit. Onderweg: npm ci kan weer (de\nwasm-fallback van @tailwindcss/oxide als devDependencies), en config/cache.php\nleest CACHE_STORE naast CACHE_DRIVER, want de tests draaiden op de bestandscache."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919124353-8eef1d"
+}

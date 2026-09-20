@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Gevonden bij het herwerken van de werklijst leads tot kaarten. In de vier taalbestanden staat\n`contact_by_phone` op \"via e-mail\" en `contact_by_email` op \"via telefoon\" (zo overgenomen uit\nde databank bij de export van 2026-08-05, dus ouder dan dat). Het contactformulier op de website\nhangt het label `contact_by_phone` aan het vakje `by_phone`: een bezoeker die \"via e-mail\" aanvinkt\nzet dus `by_phone = 1`. De werklijst toonde tot vandaag hetzelfde gewisselde label bij hetzelfde\nveld, zodat de dealer las wat de klant aanvinkte; de kaart doet dat nog steeds (chip met de\nbestaande sleutel, zonder telefoon- of mailicoon, want dat icoon zou het veld volgen en niet de\ntekst).\n\nWat wel scheef zit: de leads via de publieke API (`PublicLeadController`, `by_phone`/`by_email`\nals booleans) en via een prijsvoorstel (`ProposalPublicController`, `by_phone` = telefoon\ningevuld) gebruiken de veldnamen letterlijk. Voor die leads leest de dealer dus het omgekeerde\nkanaal.\n\nBeslissing die nodig is: de labels in `website.php` omdraaien (dan kloppen formulier, API en\nwerklijst op de veldnaam, maar de bestaande website-leads in de databank dragen de oude,\ngewisselde betekenis) of het formulier op de veldnaam zetten en de historiek laten. Tot dan geen\nkanaalicoon op de chip.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P1-3.10 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-16 |\n| Waar | `resources/lang/{nl,fr,en,de}/website.php` (`contact_by_phone`, `contact_by_email`), `resources/views/website/contact.blade.php`, `resources/views/worklist/widgets/4.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-16-lead-contactvoorkeur-labels-gewisseld.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-16-lead-contactvoorkeur-labels-gewisseld.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "De labels \"via telefoon\" en \"via e-mail\" van een lead staan gewisseld op hun sleutel"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092504-4fc18e"
+}

@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "In optie: geen bestelbon mogelijk (te verifi\u00ebren).\n\nNiet teruggevonden in W-code: de verkocht-actie en `openSold` controleren `is_in_option` niet; enkel de funnelknop \"publiceren\" verdwijnt. Order-controller niet gelezen.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S4-1.4 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `OwnStockList::openSold`, _`wagen_rij.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-in-optie-geen-bestelbon-mogelijk-te-verifieren.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-in-optie-geen-bestelbon-mogelijk-te-verifieren.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: ilse"
+            ],
+            "title": "In optie: geen bestelbon mogelijk (te verifi\u00ebren)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092147-1e5fd5"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Reports were the one kind of content the Studio never saw. The calendar lived in\na seeder on the public site and the PDF arrived through an artisan command over\nssh, so the two decisions that are actually editorial (when a report goes out,\nand how much anyone may read without paying) both needed a developer.\n\nNeeds Trendwolves/gentells-pipeline#177, which holds the shelf and does the\nrendering.\n\n## The shelf\n\nMaarten's year as he writes it, and per row what has really landed. That second\nlabel is **derived, never typed**: the announced status runs ahead of reality on\npurpose, and R2 stood at \"available, with preview\" for weeks with no PDF and no\npages. A row reads `announced` until a file is actually there.\n\nOpening a row gives the calendar fields, an upload with a count of pages to\nleave open, and the rendered pages themselves. Only those pages are turned into\nimages on the far side, so a preview here is a picture and never the PDF with a\nlid on it.\n\n## Two details worth knowing\n\nThe preview images are fetched as blobs rather than dropped in an `img src`:\nthat route is behind staff auth and an image request carries no `Authorization`\nheader. Opening it up would be simpler and is exactly what must not happen,\nbecause a report that is not out yet is not out yet.\n\nThe palette, eyebrow and button moved to `style.js` rather than being copied. A\nsecond copy of a palette is how two screens of one product drift apart a hex at\na time. The report hooks sit in `hooks.js` next to the article ones.\n",
+            "branch": "workbench/reports-shelf",
+            "title": "A reports shelf: the year, and which of it has landed"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20260919074130-6070fd"
+}

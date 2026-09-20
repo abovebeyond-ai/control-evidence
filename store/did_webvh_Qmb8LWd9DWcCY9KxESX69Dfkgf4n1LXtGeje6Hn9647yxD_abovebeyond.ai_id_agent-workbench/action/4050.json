@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two things, and the second is why the first was invisible.\n\n**Werking belongs with Inzichten.** Both are about the platform itself and about nobody's\nvehicles; Beheer is the settings of somebody's garage, which is a different question. Clicking\nInzichten still opens the figures, exactly as it did when that was the only screen there, and\nWerking hangs under it. The parent stays a link the same way Biedingen does.\n\n**And it was invisible anyway, which is the real find.** The rights of a user are written into the\nsession when he signs in, and nothing ever revisits them. So a menu added today reaches somebody\nonly when he signs out and signs in again \u2014 which is why a brand new screen was invisible to the\nadministrator who had just added it.\n\nThe session now carries which generation of the rights tables it came from: the youngest change to\na menu or to a role's access, asked at most once a minute for the whole platform. When that no\nlonger matches, the rights are rebuilt. A session from before this carries no generation and is\nleft alone \u2014 it keeps working exactly as it did and heals itself at the next sign-in \u2014 so nobody\nis logged out by this and no existing test changes meaning.\n\nThat is not only about a new screen. Every time a dealer is given a right and phones to say it did\nnot work, this was the reason, and the answer was \"log out and back in\".\n\nRules R P2-4.2 (rewritten) and R P2-4.9 (new), two tests on top of the existing ones for the\nrights check.\n\n**Note for after the deploy:** your own session predates the change, so it carries no generation\nand is left alone by design. Sign out and in once, and from then on it keeps up by itself.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/ui/operations-under-insights",
+            "title": "Werking hangs under Inzichten, and a granted right no longer waits for the next sign-in"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919152326-dcb413"
+}

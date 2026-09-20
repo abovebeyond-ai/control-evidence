@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "59a56c352cd5c146a776344ddb518a91c2266238",
+            "branch": "workbench/drie-hofsteden-heet-anders-in-de-config",
+            "files_sha256": "b8be7ca3837ff665e358d742979a748ab9f885753598e036428a401f5db32e1c",
+            "message": "Drie Hofsteden heet anders in de config"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918120156-6e181f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fb9eae03f5e0a172b6ac07bfdd70dc85434d927c",
+            "branch": "workbench/issue-open",
+            "files_sha256": "9c5e4fbeff2a9b21dcbff480ed8d27abc4ac9c6a21f3efd64b62f229a40f3a5a",
+            "message": "issue.open: the gateway may mirror a finding as a GitHub issue"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260919064600-203027"
+}

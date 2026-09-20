@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De MariaDB-job stond na #29 op nul en blijft dat sinds; hij wordt nu de ene testjob en sqlite gaat uit de CI.\n\n- `tests` draait op MariaDB 10.11 (de database van productie), parallel, met coverage, junit en het kwaliteitsrapport, zoals de sqlite-job deed.\n- De adviserende job en de sqlite-job zijn weg; vijf jobs blijven: up-to-date, tests, frontend, static, audit.\n- `phpunit.xml` houdt sqlite `:memory:` voor een snelle lokale run; de job-env wint daarvan. Een test die lokaal slaagt en op MariaDB faalt, is rood, en dat is de bedoeling: op 19 september waren dat er 36, allemaal regels aan een databank-id.\n- README aangepast.\n\nLokaal op MariaDB nagekeken in #29 (970 tests, 1 overgeslagen); hier verandert alleen welke job telt.\n",
+            "branch": "workbench/de-tests-op-mariadb-blokkerend",
+            "title": "De tests op MariaDB, en alleen daar"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919140633-58f136"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The designer's notes on the first live version (18 September). Three of her four asks; the fourth, her blue for the home page, waits for her file.\n\n- **The menu was too big.** The serif menu in the mint panel, the phone menu and the footer: 23, 24 and 19 pixels now (was 32, 32 and 28). Her new maquette may move these again.\n- **The bar stays on the page.** On the home page the sub-pages' bar slides in once the numbers band is scrolled past and stays fixed at the top (`sticky-bar.js`, `.home-bar`; one passive scroll listener, no transition under reduced motion). The panel remains the navigation above the fold; `HeroCollageTest` pins that the bar comes after the panel and once.\n- **No square around Create a free account.** In the bar it is green text next to Sign in; the green block stays where it is a real button (pricing, forms).\n\n276 tests, Pint, ESLint and the Tailwind lint clean. BRAND.md carries her notes.\n",
+            "branch": "workbench/designer-notes",
+            "title": "The designer's notes on the first live version"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260918090922-05fe2e"
+}

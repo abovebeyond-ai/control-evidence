@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Builds on the design system pull request (merge that first: this one reads the\n`ink` and `primary` tokens it adds, and the two derived images of the mark).\n\nThe only public page of Naviskore, redone on the new tokens. Left: the mark as\na surface, not a picture in a corner. The panel runs from the red side of what\nathena and xplora share to the blue side, at chroma 0.008 to 0.016, which is\nfifteen to thirty times weaker than either group's own colours; the compass\nsits large and faint bottom right, cut off before the wordmark. Right: the\nchoice, and nothing else.\n\nWhat changed against the previous version of this page:\n\n- No tagline, no top bar, no card frame around Microsoft's lockup (it draws its\n  own; a border around it put a box in a box).\n- The mark is `naviskore-inkt.png` as a mask in `ink-900`, not pure black,\n  which was hard on a light ground. On a phone the panel is a short band and\n  the big compass is hidden, because it would sit behind the wordmark.\n- Each school row carries the school's own mark (`athena-beeldmerk.png`, the\n  300px icon from athena-school.be). With one school group it repeats; with a\n  second it starts to distinguish. The rows hover to `primary`.\n- The footer reads \"Lukt aanmelden niet? Neem contact op met de beheerder van\n  je school.\" instead of a sentence that read like an instruction to a machine.\n- The password form (off the SSO hosts only) got real labels, autocomplete\n  attributes and a full-width `primary` button.\n\n`LoginPageTest::the_logo_carries_alt_text` became\n`the_logo_carries_an_accessible_name`: the mark is a `role=\"img\"` box with an\n`aria-label`, not an `<img>`, so the promise is the same and the markup moved.\nThe other login assertions (one h1, canonical, og tags, robots, sitemap, the\nSSO host offering only the providers) are untouched and green.\n\nRendered and looked at, desktop and 390px, against the built stylesheet.\n\n## Checks\n\n- `php artisan test`: 196 passed, 1 failed (`BuildStampTest`, worktree only).\n- `vendor/bin/pint --test`: passed. `npm run build`: fine.\n",
+            "branch": "workbench/de-inlogpagina-op-het-design-system",
+            "title": "De inlogpagina op het design system"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919080512-c22e81"
+}

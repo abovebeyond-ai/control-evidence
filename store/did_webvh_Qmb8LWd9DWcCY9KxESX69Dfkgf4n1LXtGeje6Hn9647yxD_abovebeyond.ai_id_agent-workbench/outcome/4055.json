@@ -1,0 +1,16 @@
+{
+    "action": "7fff4f0edf6dfaedbc17423cf787cb4d",
+    "effect": {
+        "detail": {
+            "base": "80e8a9bc1fd52f1db7f1c63307955cefbd764d72",
+            "branch": "workbench/fix/menu-name-for-operations",
+            "commit": "92c83aeaa0a50d20ac992a178526dea5cef9090a",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4053,
+    "verdict": "ALLOW"
+}

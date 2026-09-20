@@ -1,0 +1,16 @@
+{
+    "action": "12fbdbf1166724942542b00f3c130c89",
+    "effect": {
+        "detail": {
+            "base": "37cb4282e7628a1e26e3014d2022afe4767443e8",
+            "branch": "workbench/apify-helper",
+            "commit": "41d8690b7bd40c80779d5a03172c1452d0010422",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3948,
+    "verdict": "ALLOW"
+}

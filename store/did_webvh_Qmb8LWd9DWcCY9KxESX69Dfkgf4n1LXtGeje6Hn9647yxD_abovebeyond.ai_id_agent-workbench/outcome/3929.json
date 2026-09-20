@@ -1,0 +1,16 @@
+{
+    "action": "b5d675840b452437d65a5af3364bfb95",
+    "effect": {
+        "detail": {
+            "base": "e89df6d4685940a3d4a95f99dbdbe923a80a4341",
+            "branch": "workbench/adapter-runs",
+            "commit": "f83867b135e32c471caf34e7edf4d68187243e48",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3927,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "100a47e2c6a3d3a53509641b32c3a318",
+    "effect": {
+        "detail": {
+            "base": "149cc55a1e4d056a22184239eaf7ee3793d29d42",
+            "branch": "workbench/website/modal-at-click-height-2",
+            "commit": "fab456a5fe0378543b5cef3e9ee013740e8c4c7f",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3210,
+    "verdict": "ALLOW"
+}

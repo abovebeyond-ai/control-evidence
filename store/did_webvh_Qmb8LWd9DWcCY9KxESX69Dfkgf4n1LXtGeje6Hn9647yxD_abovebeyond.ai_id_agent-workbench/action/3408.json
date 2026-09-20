@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dd11e08aaf81422b76ecfe5d88b15ed4b5c712da",
+            "branch": "workbench/reports-in-studio",
+            "files_sha256": "06281701493ece2353415e1343178edf7ff2f5883a64d9a51107c703228e80e3",
+            "message": "Reports belong in the Studio, not in an artisan command"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919072929-a0a47b"
+}

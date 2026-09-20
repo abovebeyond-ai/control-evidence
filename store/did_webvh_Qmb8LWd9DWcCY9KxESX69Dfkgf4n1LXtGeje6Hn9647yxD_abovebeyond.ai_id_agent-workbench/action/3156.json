@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "09d73b970a8b600868f0d5cee2509c131c852ed1",
+            "branch": "workbench/results-analysis-command",
+            "files_sha256": "a88f9291c046f2b0bd397a56a7a3372b973fbd1361cd38fc3585b530a05a8b25",
+            "message": "Result analysis: full-term PDFs and results:analysis for every class"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20260918094915-d70242"
+}

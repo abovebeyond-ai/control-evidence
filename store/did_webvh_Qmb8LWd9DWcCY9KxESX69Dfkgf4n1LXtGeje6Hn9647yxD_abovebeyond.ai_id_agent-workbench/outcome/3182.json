@@ -1,0 +1,17 @@
+{
+    "action": "de1dacdbdf42df17388a7b8f122c8dca",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 549,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/549",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3180,
+    "verdict": "ALLOW"
+}

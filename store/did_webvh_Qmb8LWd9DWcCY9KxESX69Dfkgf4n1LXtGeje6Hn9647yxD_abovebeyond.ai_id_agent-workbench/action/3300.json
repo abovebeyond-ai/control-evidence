@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4fabdf7309ebb7077641d9ffc1d01cc63d791f10",
+            "branch": "workbench/import-articles",
+            "files_sha256": "d6aa9e0958511ba888aa172e5845dd64da9cd1cb6299dc5b4b0cb519e6f254e1",
+            "message": "Guilherme's posts come in as drafts, not as published work"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260918155533-72eeb3"
+}

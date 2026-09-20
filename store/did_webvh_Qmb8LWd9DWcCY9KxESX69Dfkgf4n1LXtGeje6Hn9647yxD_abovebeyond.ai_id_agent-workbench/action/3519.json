@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De code wil bij \"AUTHENTICATION_ERROR\" de Car-Pass van de wagen wissen en \"authenticatie_error\" melden.\n\nDie tak is onbereikbaar: elke status die niet \"PROCESSED\" is, verlaat de functie eerder met \"carpass niet gekoppeld!\". Een fout wachtwoord leest voor de dealer dus als een gewone mislukking.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S3-2.8 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `CarpassController::handleVhrResult``, `:352-355` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-de-code-wil-bij-authentication-error-de.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-de-code-wil-bij-authentication-error-de.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "De code wil bij \"AUTHENTICATION_ERROR\" de Car-Pass van de wagen wissen en \"authenticatie_error\" melden"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092124-eba7c7"
+}

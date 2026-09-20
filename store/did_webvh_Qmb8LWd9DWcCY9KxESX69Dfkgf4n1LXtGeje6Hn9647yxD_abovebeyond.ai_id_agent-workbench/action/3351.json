@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7626076abe37cc6a528da4b2ec121bbc29ed7bef",
+            "branch": "workbench/de-readme-na-de-upgrade",
+            "files_sha256": "b1bac4c1cde7ed25b2633837cd8163bf9ccd9a01c9d257c7c17bc0d03770e4b0",
+            "message": "De README na de upgrade: 8.5, 13, Vite"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918213631-868507"
+}

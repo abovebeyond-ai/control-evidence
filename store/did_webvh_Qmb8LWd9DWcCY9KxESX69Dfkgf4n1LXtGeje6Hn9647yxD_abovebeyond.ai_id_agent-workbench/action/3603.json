@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Zonder ingestelde marge toont het platform geen klantprijs.\n\nDe website van de dealer zegt dan \"op aanvraag\" en toont geen bedrag; het showroomblad van diezelfde dealer toont dan de DEALERPRIJS van de collega, aan de straat. Allebei publiek, allebei zonder ingelogde gebruiker, tegengesteld antwoord. Het staat zo beschreven in `CustomerModePrice::showroomPrice` (\"as it has always shown\"), dus het is geen regressie, maar het is wel de handelsprijs van een andere garage in een etalage. Gevonden op 14 september 2026 bij het vastpinnen; `PriceOnScreenTest::without_a_margin_setting_the_slide_shows_the_trade_price` en `::the_website_card_shows_the_customer_price_or_says_on_demand` pinnen beide kanten. Keuze: het blad zwijgt zoals de website, of het toont de verkoopprijs van de collega in plaats van de dealerprijs.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S5-4.4 |\n| Beslist | Frederik |\n| Gevonden | 2026-09-14 |\n| Waar | `CustomerModePrice::showroomPrice`, `ownstock/showroom_vehicle.blade.php`, `website/_wcard.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-14-zonder-ingestelde-marge-toont-het-platform-geen.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-14-zonder-ingestelde-marge-toont-het-platform-geen.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: frederik"
+            ],
+            "title": "Zonder ingestelde marge toont het platform geen klantprijs"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092205-0ad1e1"
+}

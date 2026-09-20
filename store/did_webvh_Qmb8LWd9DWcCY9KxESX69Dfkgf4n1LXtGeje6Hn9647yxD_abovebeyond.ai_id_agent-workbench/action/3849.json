@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "#666 set this line back to serial because the step had gone from 225s to 264s. That was wrong, and\nthe reason is worth writing down: 225s was the fastest of a very noisy set, and I compared against\nit as if it were the baseline.\n\nThe eight runs of this suite in this repository, oldest first:\n\n| | |\n|---|---|\n| serial | 353s, 369s, 225s, 284s, 323s |\n| parallel | 264s, 264s |\n\nA single serial run says anything between 225s and 369s. Both parallel runs landed on 264s, and\nthat is the finding: two saturated processes are less at the mercy of whoever else is on the host\nthan one process waiting on it. That steadiness is worth more here than the factor of two that two\ncores could never give anyway.\n\nSo `--parallel` comes back, and the comment above the line carries the table, so that the next\nperson reads the spread instead of one run. Everything the flag needs was already merged in #665\nand stays as it is; the demo seeder trim from #666 stays too.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/tests/parallel-after-all",
+            "title": "Back to parallel in the CI: one run is not a measurement"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919114615-3edca6"
+}

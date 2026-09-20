@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nShane on preview: the screen Beheer \u2192 Functies reads as a wall. Every flag was a full form (four radio buttons each with a help line, a note field, a save button and the whole history), so three flags already filled two screens.\n\n## What changed\n\n- **One row per flag**: name and one-line description on the left, a segmented control (Uit \u00b7 Beheerders \u00b7 Gekozen dealers \u00b7 Iedereen) on the right that saves on click, with `ui.notify`. No save button per flag. Under the name the last change in one grey line.\n- The four stages are explained once at the top; the per-radio help lines are gone.\n- **Details** behind a text link per row: the note, the dealer picker (opened by itself when the stage is \"Gekozen dealers\" and nobody is picked yet) and the history.\n- The internal texts are gone from the screen, and the English seed note \"Taken over from the environment at the first deploy of the flag screen.\" becomes Dutch, in the code and in the existing rows (migration).\n- The flag `livewire_vehicle_form` is marked internal and no longer listed: the Livewire sheet is the sheet since the cutover, the classic one is only a fallback. Removing that fallback is its own teardown.\n\n## Tests\n\n`FeatureFlagsScreenTest` adapted and extended (segmented control saves, details expand, internal flag hidden, Dutch seed note); guards and `LanguageParityTest` green: 35 tests, 882 assertions (1 pre-existing incomplete). `php bin/rules-sources`: Geen problemen.\n",
+            "branch": "workbench/ui/features-screen-compact",
+            "title": "Features screen: one row per flag, saved on the spot"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918143317-499320"
+}

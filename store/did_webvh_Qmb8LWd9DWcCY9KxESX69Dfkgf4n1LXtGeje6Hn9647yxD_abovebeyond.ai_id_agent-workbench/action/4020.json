@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "workbench/klasprogressie-varianten",
+            "body": "Bovenop #34.\n\n## Klasprogressie op het dashboard\n\n- **Per vak openklappen** zonder naar het detail te gaan: onderaan elke kaart een \"Per vak\" die de vakken toont met \"5 van 24\" en een kleine meter. Het kost geen extra verzoek: de index berekende de hele progressie per klas al; `AdminOfferingDTO` draagt nu de som per cluster (`clusters`, uit `StudentGroupStatisticsService::summariseClusters`).\n- Het grote cijfer zonder `tabular-nums`: die maakte het mono-achtig.\n- \"geen eindtermen\" staat op de regel van het cijfer, met een lege groef eronder, zodat de kaarten naast elkaar op dezelfde lijnen blijven.\n\n## Klas statusrapport (detail)\n\n- De drie kaarten zoals op het dashboard: geen gekleurde tegels (indigo, rood, geel) en geen \"0 / 0\" onder een meter van 100%; \"Aantal studenten\" heet \"Leerlingen\".\n- \"Basisvorming\" en \"Specifiek gedeelte\" als kaart met een rustige kop (\"Toon de eindtermen\") in plaats van \"Klik om te openen\"; de clusters als band zoals in het rapport, de eindtermen met het voorvoegsel in monospace, het aantal evaluaties rechts (nul in `ink-400`).\n- De link in de evaluatie-popup zonder onderstreping, op de primaire kleur bij hover.\n\n## Nagekeken\n\nIndex en detail lokaal gerenderd, openklappen getest; `AdminOfferingDTOTest` en `StudentGroupStatsTest` aangepast aan het nieuwe veld en de nieuwe tekst; volledige suite parallel groen op `BuildStampTest` na (worktree); PHPStan en Pint groen. Na de merge: `npm run build` op Ploi.\n",
+            "branch": "workbench/klasprogressie-openklappen",
+            "title": "Klasprogressie klapt open per vak, en het klas statusrapport op het design system"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919143042-2ffe74"
+}

@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De eerste 21 opties komen op de affiche.\n\nDe code neemt er 20 en zet de vlag \"meer\" bij meer dan 20.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S2-8.6 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `AfficheController::getVehicleOptions``, `:541` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-de-eerste-21-opties-komen-op-de.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-de-eerste-21-opties-komen-op-de.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "De eerste 21 opties komen op de affiche"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092414-e7db29"
+}

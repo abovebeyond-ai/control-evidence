@@ -1,0 +1,16 @@
+{
+    "action": "7ec6732356965b34ea153b9378b6feb5",
+    "effect": {
+        "detail": {
+            "base": "770b20d01d06297e2c2fbf9001ca664153f02a3e",
+            "branch": "workbench/ui/staff-link",
+            "commit": "71f5c075afa7109b865618fbb3bf24a07c9a458d",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3333,
+    "verdict": "ALLOW"
+}

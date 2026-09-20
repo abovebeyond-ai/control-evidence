@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`storage/logs/laravel.log` on production stood at **2,330,128,131 bytes**: one\nfile, written since its first line on 10 May 2022. Nobody reads a file that\nsize, and the tail is the only part anyone ever wants.\n\nThe `stack` channel wrote to `single`. It now writes to `daily`, with `bugsnag`\nnext to it exactly as before: rotation is about the file on disk, not about where\nan exception gets reported. `LOG_CHANNEL` is already `stack` on production, so\nthis arrives with the deploy and needs no change to the environment. Retention is\n`LOG_DAILY_DAYS`, default 14, so it can be turned up per environment without\ntouching this file.\n\n## Already done on the box\n\nThe old file has been moved aside, not deleted: it is\n`storage/logs/laravel-2022-05-10-to-2026-09-18.log.gz` (four years of history,\ncompressed), and `laravel.log` starts empty. So the first rotation begins from\nnothing rather than from 2,3 GB.\n\n## What was in it, since the question comes up\n\nAbout 60% of the sampled volume is one thing: a per-step trace of the Smartschool\nOAuth flow, thirteen INFO lines per login (\"redirect START\", \"Config loaded\",\n\"Building provider\", \"Config set\", \"Redirect response created\", and the same\nagain for the callback). Those log calls are not in `app/` any more and the last\none in the file is dated 9 September, so this is history, not a flood that is\nstill running. Today's growth was about 450 kB.\n",
+            "branch": "workbench/het-log-rolt",
+            "title": "Het log rolt: daily in plaats van \u00e9\u00e9n bestand van 2,3 GB"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918213940-702d89"
+}

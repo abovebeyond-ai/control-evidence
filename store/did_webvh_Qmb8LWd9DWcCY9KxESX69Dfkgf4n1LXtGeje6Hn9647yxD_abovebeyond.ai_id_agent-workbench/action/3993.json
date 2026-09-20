@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1319208a08ac12a5aea574d0c2b7776f98cc122f",
+            "branch": "workbench/de-tests-op-mariadb-blokkerend",
+            "files_sha256": "4371c25acddb325583215d6584d343ca6076df9a30ce4ac7f7a021bd44bbdbe3",
+            "message": "De tests op MariaDB, en alleen daar\n\nDe adviserende MariaDB-job stond op nul en is nu de ene testjob; de\nsqlite-job is weg. phpunit.xml houdt sqlite voor een snelle lokale run."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919140633-58f136"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "89e9114846d9818b46eec2e86a8464c9",
+    "effect": {
+        "detail": {
+            "base": "102ddba863ddd1a56e663923c14864d76998649b",
+            "branch": "workbench/fix/imported-photos-save-and-api",
+            "commit": "092ae1f605b2198bb2dfe86b01602736cdf61416",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3234,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A route I used to render login variants locally came along with #21:\n\n```php\nRoute::get('/tmp-login/{v}', function (string $v) { ... return view(\"tmp-login.$v\", ...); });\n```\n\nThe `tmp-login.*` views were never committed, so on production any URL under\n`/tmp-login/` renders the error page. Nothing else reads it. Removed; the file\nis otherwise identical to `main`.\n\nFound while carving the next pull request, where the diff against `main` showed\nthe route as a removal. Sorry for the noise.\n",
+            "branch": "workbench/de-tijdelijke-route-weg",
+            "title": "Een tijdelijke route die met #21 meekwam, weg"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919101521-a50d07"
+}

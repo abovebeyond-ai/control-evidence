@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`EvaluationDTO::fromArray()` passed `$data['creator']` straight into\n`UserDTO::fromArray()`, which takes an `array`. When the teacher who created the\nevaluation has been deleted the value is `null`, PHP throws a `TypeError`, and\nthe failure is not scoped to that one evaluation: the whole progress report and\nthe whole deliberation report of that student return a 500.\n\nMeasured on production data while rehearsing the Laravel 13 upgrade: two\nstudents in 2024-2025 and eleven in 2023-2024 cannot open their report for this\nreason. It has been that way since the DTO layer was introduced; the upgrade did\nnot cause it and did not fix it.\n\n## What changed\n\n- `EvaluationDTO::$creator` is `?UserDTO`. `fromArray()` passes `null` when the\n  key is absent or null, and `toArray()` emits `null` for it.\n- The three screens that render the creator ask with `?->`. The JavaScript in\n  `reporting/dashboard/projects/show.blade.php` already guarded\n  (`fullName(person) => person ? ... : ''`), so it needed nothing.\n- A test that pins it: a payload with `'creator' => null` builds, and round\n  trips as `null` rather than throwing.\n\nA report that shows one evaluation without a teacher's name is readable. A\nreport that 500s is not.\n\n## Checks\n\n- `php artisan test`: 196 passed, 1 failed (`BuildStampTest`, which reads the\n  build stamp out of the checkout and only passes in a full clone, not a\n  worktree).\n- `vendor/bin/phpstan analyse`: no errors.\n- `vendor/bin/pint --test`: passed.\n",
+            "branch": "workbench/een-verwijderde-maker-breekt-geen-rapport",
+            "title": "Een verwijderde maker breekt geen rapport meer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918213544-694db4"
+}

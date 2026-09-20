@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Expres = basisprijs maal instelling (standaard 50%), toeslag elektrische wagen en marge erbij.\n\nDe voorbeeldkolommen op het tabblad Transport van de instellingen zijn geen transportprijs: ze tellen de toeslag voor een elektrische wagen altijd mee (op een aanvraag enkel bij een elektrische wagen), staan excl. btw waar een aanvraag met 21% rekent, en \"normaal\" gebruikt de marge zoals bewaard bij de laatste prijsopslag terwijl \"expres\" de huidige instelling neemt; wie enkel de marge wijzigt zonder de prijzen op te slaan ziet twee marges naast elkaar. Ongewijzigd, nu als `TransportService::settingsPreview()` naast `calculatePrice()` en vastgepind in `TransportSettingsPreviewTest`.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S4-10.6 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `TransportService::settingsPreview`, `settings/setting/_tabs/transport.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-expres-basisprijs-maal-instelling-standaard-50-toeslag.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-expres-basisprijs-maal-instelling-standaard-50-toeslag.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "Expres = basisprijs maal instelling (standaard 50%), toeslag elektrische wagen en marge erbij"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092427-16aef1"
+}

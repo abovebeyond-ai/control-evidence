@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "upgrade/summer-2026",
+            "body": "Gevonden op de repetitie van de migratie (18 september 2026) tegen een kopie van productie:\n`move_smartschool_settings_from_config_to_a_table` leverde nul verbindingen op, en \u00e9\u00e9n van de\nredenen gaat \u00f3\u00f3k op productie op.\n\nDe lijst in de migratie noemt Drie Hofsteden `athena_drie_hofsteden`, zoals `services.php`,\nde routes en de slug. `config/smartschool.php` schrijft `athena_driehofsteden`. De lookup\ngebruikte de sleutel van de lijst, las dus `null`, en sloeg de school stil over. Na de\noverstap had school 3 geen Smartschool-verbinding gehad: geen login, geen synchronisatie, en\nniets in het log.\n\nDe test zag het niet omdat hij de config zelf opbouwde met de spelling van de migratie.\n\n## Wat er verandert\n\n- de migratie: een platform mag zeggen onder welke sleutel het in `config/smartschool.php`\n  staat (`config`), en de lookup gebruikt die; alleen Drie Hofsteden heeft er een nodig\n- de test: bouwt de config met de spelling van het echte configbestand. Zonder de fix faalt\n  hij nu op drie van zijn gevallen, met de fix slaagt hij\n\n## Uit dezelfde repetitie, ter info voor de overstap\n\n- alle zeven migraties lopen op echte data; samen 2m03s, waarvan 2m02s de hash-migratie\n  (7.780 gebruikers, cpu-gebonden). Die is idempotent en kan vooraf, dan blijft er bij de\n  overstap een seconde over\n- de andere drie platforms werden op staging \u00f3\u00f3k overgeslagen, maar om een andere reden: de\n  `SMARTSCHOOL_PLATFORM_*`-waarden zijn daar leeg. Op productie staan ze, dus daar komen ze\n  wel. Wie de Smartschool-stap echt wil repeteren, zet die waarden tijdelijk op de repetitie\n\n## Bewijs\n\n- `SmartschoolMigrationTest`: 10 geslaagd met de fix; zonder de fix falen er drie\n- de hele suite: 195 geslaagd, 1 gefaald (`LoginPageTest` vraagt `npm run build`, faalt ook\n  op de tak zonder deze wijziging)\n- `pint --test` op beide bestanden: schoon\n",
+            "branch": "workbench/drie-hofsteden-heet-anders-in-de-config",
+            "title": "Drie Hofsteden heet anders in de config"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918120156-6e181f"
+}

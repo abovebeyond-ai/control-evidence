@@ -1,0 +1,16 @@
+{
+    "action": "df5c8efdc1cc01e6a44a74cc63c0c210",
+    "effect": {
+        "detail": {
+            "base": "8ab63c69de3213c8e490eb4d9c62a59e14787505",
+            "branch": "workbench/ui/garage-edit-compact",
+            "commit": "1a0ab4ae18f4f0e9084668761d7774b7dbfbda32",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3294,
+    "verdict": "ALLOW"
+}

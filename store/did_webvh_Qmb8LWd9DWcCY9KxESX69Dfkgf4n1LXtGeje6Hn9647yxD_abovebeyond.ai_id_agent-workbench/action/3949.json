@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5c5ebc7ea4395a2d03135212ab8372c56befec8e",
+            "branch": "workbench/fix/feature-flags-between-tests",
+            "files_sha256": "d2f612f0764ef90282adae8f13b4174707ec9dfdfa40fe3ba4b563361e7b29cf",
+            "message": "Every test starts from the same feature flags"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919132712-902feb"
+}

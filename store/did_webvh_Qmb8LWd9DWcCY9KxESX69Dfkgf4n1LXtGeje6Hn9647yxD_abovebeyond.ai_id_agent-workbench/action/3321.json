@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "86d09853dc3b5f8262595ce55a8a9a9a1085ee7c",
+            "branch": "workbench/ui/profile-spacing",
+            "files_sha256": "9e010c38d62cb2c9db33232296d7f042b5de0bdc63d6054a68595694dfe1bf33",
+            "message": "Profile: the two new cards keep the rhythm of the security section"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918210322-583224"
+}

@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "ci"
+        },
+        "resource": "portal:kubo-platform"
+    },
+    "run": "workbench-20260918102230-dfa495"
+}

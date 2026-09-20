@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b9940817dac42530731f56b169a058548cacdd0b",
+            "branch": "workbench/feat/operations-screen",
+            "files_sha256": "55d6e3869a50ec036753989a79499cb4c522bf54931e6c5a413e2bf5e28419d8",
+            "message": "Beheer > Werking: does the machine run"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919143337-b23188"
+}

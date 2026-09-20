@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9af5b32d4ce8115f876fbd3ae094d881bcb3b74d",
+            "branch": "workbench/sources-note",
+            "files_sha256": "bafec529a4700afdc2fe7e40ff4c3d696a4cdabfbb3269ff8a8831ed61a84c74",
+            "message": "Sources before more sources: a design note"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919103710-6b4d2b"
+}

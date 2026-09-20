@@ -1,0 +1,16 @@
+{
+    "action": "46edd941acbd27a746cb73da7c1bc61a",
+    "effect": {
+        "detail": {
+            "base": "dd11e08aaf81422b76ecfe5d88b15ed4b5c712da",
+            "branch": "workbench/reports-in-studio",
+            "commit": "1f12e6c6b5958e3aeb6255b0560a6b150fbc7a17",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3426,
+    "verdict": "ALLOW"
+}

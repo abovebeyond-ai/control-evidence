@@ -1,0 +1,10 @@
+{
+    "action": "3e9bcb0f31d59c66b3f68a720c3f120c",
+    "effect": {
+        "error": "GitHub answered 403: Resource not accessible by integration",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 3483,
+    "verdict": "ALLOW"
+}

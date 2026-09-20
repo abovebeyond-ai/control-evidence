@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Veertien extra dagen om toe te wijzen, teller start op 21.\n\nDe code geeft vijftien dagen (teller \"bevestigd\" is einddatum plus vijftien, toewijsknop gaat uit na einddatum plus vijftien), dus de teller start op 22, en de infotekst zegt veertien. Verder bevestigd.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R B1-3.6 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `export/index.blade.php``, `export/biddingDetails.blade.php``, `ExportVehicleRepository::getOngoingOverview``, `lang/nl/export.php`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-veertien-extra-dagen-om-toe-te-wijzen.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-veertien-extra-dagen-om-toe-te-wijzen.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: ilse"
+            ],
+            "title": "Veertien extra dagen om toe te wijzen, teller start op 21"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092154-99284b"
+}

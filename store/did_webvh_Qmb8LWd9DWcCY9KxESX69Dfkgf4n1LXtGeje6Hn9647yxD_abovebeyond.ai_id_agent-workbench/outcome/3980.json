@@ -1,0 +1,16 @@
+{
+    "action": "ed7116de8dec5f638cf93e7fb21f6421",
+    "effect": {
+        "detail": {
+            "base": "f6fc21de4047889ad709078105eadd4c36e8e02c",
+            "branch": "workbench/projecten-dashboard-zijbalk",
+            "commit": "df2a0bfb3eebdfde77151547d1b7fcc76ae0e305",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3978,
+    "verdict": "ALLOW"
+}

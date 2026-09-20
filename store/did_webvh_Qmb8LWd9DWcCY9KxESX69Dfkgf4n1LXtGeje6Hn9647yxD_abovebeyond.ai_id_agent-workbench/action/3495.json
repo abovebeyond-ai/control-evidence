@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d9d3930b36d48608729a8a00d3dfb61bb2a35789",
+            "branch": "workbench/docs/first-mirrored-issues",
+            "files_sha256": "2f0dd29fe41f064d0d20b3f6a4e118d1aec780fdf218e49dce07ebbfe5c301f8",
+            "message": "The first three findings carry their issue"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092057-e42a2a"
+}

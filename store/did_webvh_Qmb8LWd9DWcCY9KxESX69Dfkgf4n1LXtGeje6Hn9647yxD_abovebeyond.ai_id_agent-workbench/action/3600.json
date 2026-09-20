@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "In klantmodus is de dealerprijs nergens zichtbaar.\n\nIn de prijsblokken klopt dat, maar de detailpagina draagt de dealerprijs in klantmodus nog twee keer in haar BRONCODE: de klantmodusmodal draagt hem als hint van R S5-4.6 (\"Aankoopprijs: \u20ac 10 000,00\") en de bevestigingstekst van overkopen (\"wil overkopen voor \u20ac 10 000,00\") wordt in de pagina gezet los van de vraag of de knop getoond wordt (R S5-4.10 zegt dat overkopen in klantmodus nooit zichtbaar is). Geen van beide staat op het scherm; allebei staan ze \u00e9\u00e9n \"paginabron tonen\" of \u00e9\u00e9n per ongeluk geopende modal verderop. Gevonden op 14 september 2026 bij het vastpinnen van de prijzen per scherm, niet op staging: `PriceOnScreenTest::in_customer_mode_the_trade_price_is_off_the_screen_but_still_in_the_page` pint het zoals het vandaag is. Twee wegen: de hint pas ophalen wanneer de modal opent, of aanvaarden dat de bron hem draagt en R S5-4.3 bijstellen tot \"niet op het scherm\".\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S5-4.3 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-14 |\n| Waar | `stocklist/klantenmodusmodal.blade.php`, `stocklist/detail.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-14-in-klantmodus-is-de-dealerprijs-nergens-zichtbaar.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-14-in-klantmodus-is-de-dealerprijs-nergens-zichtbaar.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: ilse"
+            ],
+            "title": "In klantmodus is de dealerprijs nergens zichtbaar"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092204-a1199d"
+}

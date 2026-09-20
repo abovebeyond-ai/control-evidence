@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb06f6824c2e36f65c023ba177805326af365fe4",
+            "branch": "workbench/stripe-linear",
+            "files_sha256": "43ac8190fd181d16d7ea82a1345b3be72a476548e4e0dac13706e89336c385a8",
+            "message": "De schil zoals Stripe en Linear: wit, grijs als lijn, kleur op wat klikt\n\nZijbalk op wit met een lijn, kaarten met een ring en geen schaduw, ink-200\neen stap firmer, het actieve menu-item op primary-100."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920064059-a9bfdc"
+}

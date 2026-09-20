@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b735df001a9ec215a9c32171c1e99983624597a",
+            "branch": "workbench/de-scorepopup-en-de-schil-op-het-design-system",
+            "files_sha256": "c7bfad454a290269ef7252b0af080d6349e50d4b794c75463bbc28c048e528a8",
+            "message": "De scorepopup naast de cel en het design system over de schil van de app\n\nDe popup met de scores achter een eindterm staat altijd links naast de cel\nen schuift alleen omhoog om binnen het venster te blijven; een vaste voet\ntelt wat er nog onder zit. De zijbalk klapt in tot een rail van iconen met\neen eigen icoon per item; ink-400 is geen tekstkleur meer; de primaire knop\nstaat op primary-600; de paginakop kreeg een eyebrow; logo en favicon zijn\nhet kompas in ink-900. docs/design-system.md beschrijft elke regel."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919120417-047008"
+}

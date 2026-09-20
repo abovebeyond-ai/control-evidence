@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Een bericht dat niet aankomt wordt drie keer geprobeerd.\n\nEnkel een verbindingsfout telt als mislukking. Antwoordt de ontvanger met 4xx of 5xx, dan werpt de oproep niets (er staat geen `throw()` op), wordt het antwoord in `webhook_logs` geschreven alsof het geslaagd is, en probeert de wachtrij niets opnieuw. Een partner die een week lang 500 antwoordt, ziet er van hier uit hetzelfde uit als een partner die alles netjes verwerkt. Vastgepind in `VehiclePublishingTest`.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S2-10.11 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `WebhookHelper::deliver` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-een-bericht-dat-niet-aankomt-wordt-drie.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-een-bericht-dat-niet-aankomt-wordt-drie.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "Een bericht dat niet aankomt wordt drie keer geprobeerd"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092132-d9b45d"
+}

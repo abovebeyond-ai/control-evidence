@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De identificatoren in het bericht zijn versleuteld (`webhook_fields.encrypted`).\n\n`ApiHelper::encrypt` is `(waarde * 3) + 5` en `decrypt` is de omkering ervan. Dat is verhulling, geen versleuteling: wie twee berichten naast elkaar legt, leest elk id. De schade blijft beperkt omdat het id alleen niets opent (de partner-API vraagt een Passport-token van de dealer), maar de kolomnaam belooft iets anders dan er staat, en dat is precies hoe zo'n veld ooit ergens gebruikt wordt waar het wel telt. Vastgepind in `VehiclePublishingTest`.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S2-10.8 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `ApiHelper::encrypt`, `WebhookHelper::mapDataForWebhook` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-de-identificatoren-in-het-bericht-zijn-versleuteld.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-de-identificatoren-in-het-bericht-zijn-versleuteld.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "De identificatoren in het bericht zijn versleuteld (`webhook_fields.encrypted`)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092416-179d46"
+}

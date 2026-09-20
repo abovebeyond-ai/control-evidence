@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7983e2921aa82312041058212175a9adc3cefe7c",
+            "branch": "workbench/tests/run-in-parallel",
+            "files_sha256": "1b1a69c61ca866135430b22356ecbb95601c3d73804139b574b79a10d44efb3f",
+            "message": "Run the test suite in parallel"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919110853-a5e515"
+}

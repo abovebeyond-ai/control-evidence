@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Phase 1, step 3 of `docs/design/sources-before-more-sources.md`.\n\nThe outcome of a run went to a log file and nowhere else, so \"silent since when\"\ncould be asked of nothing. TikTok's actor stopped returning anything on 12 May;\nfinding that date in September meant reading the signals table backwards,\nbecause no row anywhere said \"this adapter ran and got nothing\".\n\n## `adapter_runs`\n\nOne row per adapter per collect round: outcome, `fetched` and `fresh` kept apart\n(NULL when the adapter does not say, since a zero would read as a measurement),\nthe reason, the duration and the declared cost. Cost is charged only when the\nadapter actually tried: a skipped run called nobody.\n\nEvery way out of the collector's loop now goes through one `finish()`, so the\nrun that delivered, the one that crashed and the one that never got its turn are\nall on record. Writing it down may never cost the round itself: a full disk\nloses a row, not the signals.\n\n## `adapterStanding()`\n\nLast run, last delivery, and the streak of non-deliveries with the date it\nbegan. The test that matters pins 12 May as `silentSince` for a TikTok history\nreplayed from the real one.\n\nA streak is broken by `nothing-new` as well as by `delivered`. An upstream that\nanswers with items we already know is alive; calling that silence would make a\nweekly source read as broken six days out of seven.\n\n`recordsSince` travels along, so \"never delivered\" reads as \"not since\" and not\nas a fact about all time. Rows are kept 120 days.\n\nNo judgement here. The adapter declares what it expects, Elixir judges.\n\n750 tests pass, 8 new. Next: the Apify helper.\n",
+            "branch": "workbench/adapter-runs",
+            "title": "Every adapter run is written down"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919130858-28e9ce"
+}

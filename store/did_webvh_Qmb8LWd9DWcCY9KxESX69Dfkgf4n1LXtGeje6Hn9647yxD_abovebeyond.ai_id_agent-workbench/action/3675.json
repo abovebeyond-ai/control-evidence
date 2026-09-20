@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Enkel actieve laktypes zijn kiesbaar; de lijst beschrijft het laktype van de wagen.\n\nDe lijst `vehicle_paint_types` bevat naast \"Mica\" en \"Mica tweekleurig\" ook \"Pica\", wat als tikfout van Mica leest, en \"Aangepast\", wat geen laktype benoemt maar een restcategorie. Beide hangen aan bestaande wagens, dus samenvoegen of hernoemen betekent die wagens herwijzen. De code kiest niets: de lijst is data. Vraag V-11 (Pica) en V-12 (Aangepast).\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S1-3.2 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `vehicle_paint_types`, `PaintType`, `VehicleForm::render` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-enkel-actieve-laktypes-zijn-kiesbaar-de-lijst.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-enkel-actieve-laktypes-zijn-kiesbaar-de-lijst.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Enkel actieve laktypes zijn kiesbaar; de lijst beschrijft het laktype van de wagen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092425-22506d"
+}

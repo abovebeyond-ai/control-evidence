@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "50 euro per transport, expres +50%, overdrachtsrapport 25 euro.\n\nMarge komt per klasse en land uit de tabel, expres uit de instelling (standaard 50%), de toeslag is de \"elektrische wagen\"-instelling (standaard 23,5) en wordt altijd aangerekend; een overdrachtsrapport van 25 euro staat niet in de code.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P2-8.3 |\n| Beslist | Frederik |\n| Gevonden | 2026-09-11 |\n| Waar | `TransportService::store`, `TransportService::calculatePrice` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-50-euro-per-transport-expres-50-overdrachtsrapport.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-50-euro-per-transport-expres-50-overdrachtsrapport.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: frederik"
+            ],
+            "title": "50 euro per transport, expres +50%, overdrachtsrapport 25 euro"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092403-78547f"
+}

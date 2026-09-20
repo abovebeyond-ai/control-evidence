@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\n`composer audit` reported 23 advisories in four packages, all with a fix inside the current version constraints, and `npm audit` two high ones (transitive). The Pi sits on a hotspot LAN so exposure is limited, but dompdf renders every report card and all of it is a semver-safe update, so there is no reason to carry it.\n\n## What\n\n`composer update --with-all-dependencies` and `npm audit fix`, nothing else.\n\n| Package | Was | Now | Cleared |\n|---|---|---|---|\n| guzzlehttp/guzzle | 7.13.1 | 7.15.5 | 6 (high: noncanonical host bypass, cookie domain scope) |\n| league/commonmark | 2.8.2 | 2.10.1 | 10 (high: DoS in Attributes/SmartPunct, XSS via `on*` filter bypass) |\n| dompdf/dompdf | 3.1.5 | 3.1.6 | 6 (medium: file-existence leak via embedded SVG, oversized-image DoS) |\n| livewire/livewire | 3.8.2 | 3.8.9 | 1 (medium: DOM XSS in client-side state) |\n| nanoid, postcss (npm, transitive) | | | 2 high |\n\nAlong for the ride: laravel/framework 13.18.1 \u2192 13.32.0, symfony 8.1.x patches, monolog, carbon, phpunit 12.5.35. No major crossed: livewire 4, phpunit 13 and spatie/permission 8 stay where they are.\n\n`public/build` is not in this PR on purpose: the build-assets workflow rebuilds and commits it on main once `package-lock.json` changes.\n\n## Checked\n\n- Baseline before the update: 523 tests green. After: 523 tests green, 1761 assertions.\n- `composer audit`: no advisories. `npm audit`: 0 vulnerabilities.\n- `npm run build` succeeds on the updated lock (CSS hash changes, JS identical).\n",
+            "branch": "workbench/maintenance-2026-09-18",
+            "title": "Maintenance: dependencies within semver, 23 advisories cleared"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20260918135131-b2a845"
+}

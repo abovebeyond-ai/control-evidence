@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b2307007e2b40709ff23d23ecfb823cff6d70f57",
+            "branch": "workbench/collection-route",
+            "files_sha256": "053dbbe73e6c06f0306e3996bc50739a0bd47501c596da0ac62057fc467a68d5",
+            "message": "The Observatory can ask where the adapters stand"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919142037-cc103c"
+}

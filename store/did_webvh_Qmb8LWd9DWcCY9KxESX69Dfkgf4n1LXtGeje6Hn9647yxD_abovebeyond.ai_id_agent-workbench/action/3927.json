@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e89df6d4685940a3d4a95f99dbdbe923a80a4341",
+            "branch": "workbench/adapter-runs",
+            "files_sha256": "a5feb3d063c4992acf02c6ceb699f80f72143f8495821e1a40379e2c112fbd5e",
+            "message": "Every adapter run is written down"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919130858-28e9ce"
+}

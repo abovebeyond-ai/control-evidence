@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe findings of a project live in its repository (`docs/bedrijfsregels/bevindingen/`, one file each, tied to the rules they contradict). That is the right place for the truth, but it is a poor place to triage: nobody assigns a markdown file, and a person who wants to see what is still open has to open the repository.\n\nThe plan (Shane, 19 September 2026) is to mirror open findings as GitHub issues: the file stays the source, the issue is the workbench, and the pull request that fixes it closes the issue and writes its number back into the file. A session may already push a branch and open a pull request through the gateway; opening the issue was the missing verb, and doing it with a personal token from a laptop is exactly what this gateway exists to prevent.\n\n## What\n\n- `issue.open` on `owner/repo`: `title` required; `body`, `labels` (at most ten short words) and `finding` (the path of the file it mirrors) optional.\n- The GitHub adapter posts it and returns the number and the url, like `pull.open` does.\n- The body carries the evidence footer, so a mirrored finding is distinguishable from an issue a person wrote.\n- A new parameter type `[]string` in the schema: every element a word, the list bounded, because a parameter that can grow without end is a parameter nobody reads.\n\n## Tests\n\n`TestIssueOpenSchema` (a complete issue passes, no title is refused, a label that is not a word is refused, eleven labels are refused) plus the existing suites: `go test ./...` green, `gofmt` clean.\n\n## After this\n\nThe kind also has to stand in the grant (`App\\Control\\Workbench` in elixir) and in `Capability::WORKBENCH_KINDS` (portal); the gateway demands both. Then a release and `rehearse.sh upgrade`.\n",
+            "branch": "workbench/issue-open",
+            "title": "issue.open: the gateway may mirror a finding as a GitHub issue"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260919064600-203027"
+}

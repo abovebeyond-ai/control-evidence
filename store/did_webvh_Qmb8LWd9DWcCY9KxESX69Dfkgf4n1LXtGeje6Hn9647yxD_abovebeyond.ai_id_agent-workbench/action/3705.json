@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Pechhulp: RealGarant-prijs plus marge per jaar.\n\nDe code kent voor pechhulp \u00e9\u00e9n ingesteld bedrag; er is geen RealGarant-prijs en geen marge voor pechhulp.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P2-7.4 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `RealGarantService::getAssistance` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-pechhulp-realgarant-prijs-plus-marge-per-jaar.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-pechhulp-realgarant-prijs-plus-marge-per-jaar.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Pechhulp: RealGarant-prijs plus marge per jaar"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092441-8e9a82"
+}

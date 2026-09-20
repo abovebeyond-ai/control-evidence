@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1f4304999228b89e50eb53f04ed208d927aef1e7",
+            "branch": "workbench/issue-open-kind",
+            "files_sha256": "3b3adcca49a5174d6ca6cf092de14d11569e7dbc53ea1fd041308f148ed78b25",
+            "message": "The workbench may open an issue (control v0.28.0)"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260919065346-69be8e"
+}

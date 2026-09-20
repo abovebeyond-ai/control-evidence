@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Dezelfde regel op elk scherm: elke wagen krijgt dezelfde prijs.\n\nOp \u00e9\u00e9n detailpagina niet, bij \u00e9\u00e9n sessievorm. De buybox leest klantmodus streng (`client_mode === 'true'`), het leaseblok eronder leest enkel of de sleutel bestaat. Een sessie die `client_mode = 'false'` draagt met een marge die nog niet gewist is (die vorm bestaat in het veld, zie de klassendocumentatie van `CustomerModePrice`) geeft dus 10 000 in de buybox en 10 500 in het leaseveld, op hetzelfde scherm en voor dezelfde wagen. Ook zonder die sessie rekent het leaseblok altijd op de verkoopprijs terwijl de buybox de dealerprijs toont, wat bedoeld is. Gevonden op 14 september 2026 bij het vastpinnen; `PriceOnScreenTest::on_a_false_session_the_buybox_and_the_lease_block_disagree` pint beide bedragen. De opkuis die na de overzet gepland staat moet kiezen welke lezing wint, niet per ongeluk \u00e9\u00e9n kant opvallen.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S5-4.11 |\n| Beslist | Shane |\n| Gevonden | 2026-09-14 |\n| Waar | `CustomerModePrice::detailPrice`, `CustomerModePrice::leaseBase`, `stocklist/_tabs/flexlease.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-14-dezelfde-regel-op-elk-scherm-elke-wagen.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-14-dezelfde-regel-op-elk-scherm-elke-wagen.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "Dezelfde regel op elk scherm: elke wagen krijgt dezelfde prijs"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092159-1cb70d"
+}

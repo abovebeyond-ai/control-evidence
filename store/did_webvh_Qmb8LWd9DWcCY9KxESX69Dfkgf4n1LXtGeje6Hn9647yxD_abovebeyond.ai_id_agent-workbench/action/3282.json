@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ab63c69de3213c8e490eb4d9c62a59e14787505",
+            "branch": "workbench/auth/profile-polish",
+            "files_sha256": "33aa857f580a26cfbd7db6fc3981e8142c567e0e774b0bf63d55fc60bd547887",
+            "message": "Profile page: regular weights and plain cards"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918141837-96445c"
+}

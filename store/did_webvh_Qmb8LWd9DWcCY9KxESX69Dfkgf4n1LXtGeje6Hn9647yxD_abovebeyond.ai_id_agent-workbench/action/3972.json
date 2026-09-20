@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "93e29f40b6b8f174f812fef23b6a434b16aae9df",
+            "branch": "workbench/collection-standing",
+            "files_sha256": "96a272abad66e34773d2f29b3f8c087351b7e42cbf62f217cee01f071bc7cc82",
+            "message": "The app says where its adapters stand"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919135624-99f6e1"
+}

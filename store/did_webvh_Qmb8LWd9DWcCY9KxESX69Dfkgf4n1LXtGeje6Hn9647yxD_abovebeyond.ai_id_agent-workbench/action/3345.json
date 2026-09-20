@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7626076abe37cc6a528da4b2ec121bbc29ed7bef",
+            "branch": "workbench/een-verwijderde-maker-breekt-geen-rapport",
+            "files_sha256": "553ca792609bf0d7ad294dc3254221c91ffa4f81be97e303aa0ae62eb05b62c4",
+            "message": "Een verwijderde maker breekt geen rapport meer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918213544-694db4"
+}

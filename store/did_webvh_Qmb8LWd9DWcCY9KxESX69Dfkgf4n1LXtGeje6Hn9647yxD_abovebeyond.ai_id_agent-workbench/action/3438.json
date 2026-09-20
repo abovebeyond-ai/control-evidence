@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4f10c864b64f672453cdf302d46a9f0dcb6a8519",
+            "branch": "workbench/reports-through-projection",
+            "files_sha256": "ecabce102ef2fa2938792db6389245645139d427d33dc3be6e79ca873e281ea2",
+            "message": "Reports arrive through the projection, like everything else"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260919074155-2684ee"
+}

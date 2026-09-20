@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nA dealer types 48.500 km in \"wagen toevoegen\", closes the draft, opens it again from the list and finds **49 km**. Same for a weight: 1.300 kg becomes 1,3.\n\n`OwnStockService::tempupdate` is the third way into the vehicle table, beside `finalizeCreate` and `finalizeEdit`, and it was the only one without their normalisation. The classic create page posts the form as the dealer reads it (\"48.500\", `Custom::wholeNumberInput`), and MySQL reads \"48.500\" into a double column as 48,5. The two save paths have run everything through `normaliseAmounts()` since the number boxes were made Dutch; the draft save never did.\n\nFinding `2026-09-16-conceptfiche-herladen-schrijft-48500-als-48-5`, issue #612.\n\n## What changed\n\n`tempupdate()` applies the same `OwnStockService::normaliseAmounts()`: the kilometre boxes to whole numbers, the weights and taxes to plain floats, an empty amount box to `0.00`. Three doors, one way of writing a number. Nothing else moves: the POST the create page fires while loading stays as it is; it disappears with that page, once the Livewire sheet saves its draft everywhere (noted in the finding).\n\n## Tests\n\n`TempUpdateNormalisesAmountsTest` (3, `@rule S1-1.1`): a grouped reading survives the draft save, a typed decimal and a plain number both survive, and a box the form did not send is untouched. Mutation-checked: without the one line, two of the three fail with exactly the reported symptom (48500 \u2192 48).\n\nRun: `OwnStock|Vehicle|Temp` \u2192 414 tests, 2168 assertions, one pre-existing skip. `php bin/rules-sources`: Geen problemen. R S1-3.18 now says every door reads the numbers this way, and the finding is resolved with its pull request.\n",
+            "branch": "workbench/fix/tempupdate-normalises-amounts",
+            "title": "The draft save writes the numbers like the other two doors"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919093929-bf9ca3"
+}

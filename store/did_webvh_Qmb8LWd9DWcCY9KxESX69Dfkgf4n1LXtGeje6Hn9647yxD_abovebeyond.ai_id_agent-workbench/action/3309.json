@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "346628f161a87bf24ef9bfad37ff1e763ac19c47",
+            "branch": "workbench/posts-to-json",
+            "files_sha256": "7f98e4283b1f9df62f850a351e6b14476c076aa7e19d6bd770bdcf8ea576f678",
+            "message": "The converter lives next to the importer"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260918165613-8936c4"
+}

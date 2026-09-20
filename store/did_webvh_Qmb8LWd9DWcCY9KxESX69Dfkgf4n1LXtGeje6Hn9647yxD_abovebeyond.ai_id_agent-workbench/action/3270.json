@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "preview.push",
+        "params": {
+            "base": "3aee9de0daad8122bd5ff8972fd3f160435ca525",
+            "branch": "preview",
+            "head": "workbench/auth/two-factor-and-passkeys",
+            "pull": 560,
+            "sha": "c65116c1bd25279e95a07b68ac73993c0379bcf6"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918132048-9bcb85"
+}

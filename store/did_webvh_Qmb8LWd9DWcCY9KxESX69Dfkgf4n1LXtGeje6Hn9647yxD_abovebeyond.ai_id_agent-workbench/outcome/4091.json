@@ -1,0 +1,16 @@
+{
+    "action": "e9e19b6cd502060a8096c95cd013052d",
+    "effect": {
+        "detail": {
+            "base": "9a7eea9e65ac998d6cbc4c85aaaf044a28b5df7c",
+            "branch": "workbench/lijsten-en-hover-2",
+            "commit": "0e456cd46243dac6972d68971a7f96086d6664c2",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4089,
+    "verdict": "ALLOW"
+}

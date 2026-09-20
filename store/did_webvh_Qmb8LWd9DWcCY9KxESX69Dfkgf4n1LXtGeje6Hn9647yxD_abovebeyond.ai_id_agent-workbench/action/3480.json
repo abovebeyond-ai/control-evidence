@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Zeven dagen v\u00f3\u00f3r het vervallen komt de wagen in de werklijst; de dealer bevestigt of corrigeert en het platform registreert opnieuw.\n\nDe werklijst (6 maanden min 7 dagen) en de hernieuwing (6 maanden) staan los van elkaar: de dagelijkse taak registreert opnieuw voor elke vervallen wagen, of de dealer nu iets bevestigde of niet, en met de kilometerstand zoals ze op de wagen staat. \"km stand OK\" verbergt de wagen enkel uit de werklijst. Bovendien wordt de vlag \"gecontroleerd\" nooit teruggezet, dus de wagen komt maar \u00e9\u00e9n keer in de werklijst.\n\nBeslist door Ilse op 17 september 2026 (optie A, `klant:beslissingen#v-5`): de hernieuwing blijft automatisch met de kilometerstand van de fiche, en de wagen hoort bij elke vervaldatum opnieuw in de werklijst te komen. R S3-5.1 zegt dat nu en is `klant`. Deze bevinding blijft open voor het codedeel: de vlag \"gecontroleerd\" terugzetten zodat de wagen opnieuw binnenkomt, in een aparte pull request.\n\n| | |\n|---|---|\n| Ernst | nu |\n| Regel | R S3-5.1 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `Daily::doUpdateOldCarpasses``, `VehicleRepository::getExpiredCarpasses``, `:941`, `CarpassController::markAsOk`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-zeven-dagen-voor-het-vervallen-komt-de.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-zeven-dagen-voor-het-vervallen-komt-de.md",
+            "labels": [
+                "bevinding",
+                "nu",
+                "beslist: ilse"
+            ],
+            "title": "Zeven dagen v\u00f3\u00f3r het vervallen komt de wagen in de werklijst; de dealer bevestigt of corrigeert en het platform registreert opnieuw"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919090418-f24a60"
+}

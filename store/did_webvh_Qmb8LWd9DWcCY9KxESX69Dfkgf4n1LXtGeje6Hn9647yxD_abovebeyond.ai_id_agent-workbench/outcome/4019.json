@@ -1,0 +1,16 @@
+{
+    "action": "2f3185927bfd68d83439043313490175",
+    "effect": {
+        "detail": {
+            "base": "056b4af83816d634e210201ab3033669fd52a210",
+            "branch": "workbench/klasprogressie-openklappen",
+            "commit": "b74b07991f7fdfeb6146cdd9607ac4d676bb1694",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4017,
+    "verdict": "ALLOW"
+}

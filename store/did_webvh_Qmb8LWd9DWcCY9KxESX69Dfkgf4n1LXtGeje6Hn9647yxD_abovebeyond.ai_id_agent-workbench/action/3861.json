@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The coverage of this suite is read in two places, and both of them are main: Elixir reads the\nquality report of the last finished run on the main branch, and the clover artifact is opened when\nsomeone asks which paths are uncovered, not which paths one branch changed. A pull request produces\nboth and nobody looks at either, while pcov instruments every line of all 1800 tests to make them.\n\nSo a pull request now runs the suite with no coverage driver loaded and no report; a push to main\ndoes both exactly as before, so nothing downstream changes.\n\n**What it saves is not known yet, and I am not going to guess.** The pull request run of this very\nchange is the first sample of the new shape; the runs after it fill in the rest. For reference, the\nparallel runs so far landed on 264s, 264s and 272s with coverage, against a serial spread of 225s to\n369s. If the difference turns out to sit inside that noise, this line should go back and the comment\nin the workflow should say so.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/tests/coverage-on-main",
+            "title": "Measure coverage where it is read: on main, not on every pull request"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919121207-dc30f0"
+}

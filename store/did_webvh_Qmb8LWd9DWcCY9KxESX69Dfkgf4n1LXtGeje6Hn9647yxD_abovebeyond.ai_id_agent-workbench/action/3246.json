@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a0c8b6b83f8143439f7d39c968486a2d6420e97",
+            "branch": "workbench/link-spacing",
+            "files_sha256": "e620922d4c1476840e683336d3a6e42f5d81f0e1163958a70efa650acd6bf27b",
+            "message": "Spatie voor een link na een regeleinde: de squiggle-credit en drie andere plekken"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20260918120219-5f0113"
+}

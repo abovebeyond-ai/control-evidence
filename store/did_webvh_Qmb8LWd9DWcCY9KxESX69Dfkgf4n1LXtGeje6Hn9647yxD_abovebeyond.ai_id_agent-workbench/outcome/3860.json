@@ -1,0 +1,16 @@
+{
+    "action": "27a1d6f86fbc8ee33d36ab8cbd4efaaf",
+    "effect": {
+        "detail": {
+            "base": "3a8b4472245856af4403e0b2190803e832963c0d",
+            "branch": "workbench/tests/coverage-on-main",
+            "commit": "f3b21ba374cc4d39f347de9e6be8ca83404c7a1d",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3858,
+    "verdict": "ALLOW"
+}

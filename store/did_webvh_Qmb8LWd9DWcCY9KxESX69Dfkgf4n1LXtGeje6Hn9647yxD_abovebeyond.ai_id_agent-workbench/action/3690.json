@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Klantmodus is aan of uit.\n\nEr zijn drie lezingen van \"aan\" (streng `=== 'true'`, los `!= 'false'`, en enkel of de sleutel bestaat) en ze lopen uiteen zodra `client_mode` iets anders draagt dan `'true'` of `'false'` \u2014 een oude `'0'` of `'1'`. Dan toont de kaart en de buybox de dealerprijs van 10 000 terwijl allebei de modals 10 500 voorinvullen en het leaseblok op 10 500 rekent. De drie lezingen staan met reden beschreven in `CustomerModePrice` en worden bewust niet samengetrokken zolang de vorm van de sessies in het veld niet gekend is; wat ontbrak was een test die zegt wat elk scherm in dat geval doet. `PriceScreenMatrixTest::test_a_client_mode_key_that_is_neither_true_nor_false` en `PriceOnScreenTest::the_card_reads_a_client_mode_key_of_zero_as_off` pinnen het nu. Opruimen kan pas als geteld is welke waarden `client_mode` in productie draagt.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S5-4.1 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `CustomerModeState::fromSession`, `CustomerModePrice::isEnabled`, `::isEnabledLoose`, `::hasModeKey` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-klantmodus-is-aan-of-uit.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-klantmodus-is-aan-of-uit.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "Klantmodus is aan of uit"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092433-7e0c39"
+}

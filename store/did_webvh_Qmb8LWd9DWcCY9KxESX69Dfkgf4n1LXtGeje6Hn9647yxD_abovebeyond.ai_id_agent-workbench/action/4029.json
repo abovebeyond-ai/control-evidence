@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eef53857379b34075b63df8d8c387b8ba1e15c91",
+            "branch": "workbench/sources-collection-2",
+            "files_sha256": "4c8da49604d5718663be248930dac4cb40e9c6effe8d313115ba47c4a8340611",
+            "message": "Sources: where the collector's adapters stand"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260919143845-d7aa5a"
+}

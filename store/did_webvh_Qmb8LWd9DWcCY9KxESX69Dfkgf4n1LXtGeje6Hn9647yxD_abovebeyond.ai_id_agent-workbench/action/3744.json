@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Gevonden in de veeg van 15 september 2026.\n\n`OrderController::show` gooit `Illuminate\\Validation\\UnauthorizedException('Wrong dealer')` voor een bestelbon van een andere dealer. Dat is geen HTTP-uitzondering, dus de gebruiker krijgt een 500 in plaats van een 403, en het log ziet een fout die geen fout is. Idem `UserController::image`: een onbestaand bestandspad geeft `FileNotFoundException` (500) waar een 404 hoort.\n\nBeide gedragen zich correct voor een geldig id; alleen het foutpad is luid. `abort(403)` en `abort(404)` volstaan.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S1-9.9 |\n| Beslist | Shane |\n| Gevonden | 2026-09-15 |\n| Waar | `OrderController::show:445`, `UserController::image:208` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-15-verkeerd-id-geeft-500.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-15-verkeerd-id-geeft-500.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "Een bestelbon van een andere dealer of een onbestaand bestand geeft 500 in plaats van 403 of 404"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092500-ba8800"
+}

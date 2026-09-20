@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What Ilse saw\n\nOpening \"Nieuwe gebruiker\" on a dealer sheet showed the label \"Herhaal paswoord\" above nothing, and the user could not be saved (the confirmation is required, R P2-2.2).\n\n## Cause\n\nThe Tailwind rebuild of the user form (2026-09-13) wrote the confirmation field as `<x-ui.password ... @if(!is_null($user->id)) disabled @endif ...>`. Blade compiles component tags before directives, and the ComponentTagCompiler does not match a tag with a directive between its attributes: the tag stayed in the HTML as `<x-ui.password ...>`, an element no browser draws. No error, no 500, just a gap under a label, on the create modal, the create page and the edit modal alike.\n\n## Fix\n\n- `settings/user/_tabs/form.blade.php`: `disabled` is a bound attribute (`:disabled=\"!is_null($user->id)\"`), written only when true.\n- The same class of error sat in the rights matrix (`settings/access/edit.blade.php`, `child.blade.php`) since 2026-09-14: a single quote inside a single-quoted `onchange` and a bare `{{ $disabled }}` in the checkbox tag meant every editable row rendered without checkboxes. The `onchange` is now double-quoted with single-quoted JavaScript strings, `disabled` is bound. Verified locally: 40 checkboxes with a working `onchange`, zero leftover tags.\n- `CompiledViewsTest::test_no_component_tag_survives_compilation_as_text`: any compiled view that still carries a `<x-` tag as text fails the build. `php -l` and the directive test both passed on these views. This is what found the rights matrix.\n- `UserPasswordFieldsTest` (R P2-2.12, R P2-2.2): both fields present on the create modal, the create page and the edit modal (disabled until Reset); a new user with matching passwords is saved from the modal route; a mismatch and a missing confirmation are a 422 on the field.\n- Rule R P2-2.12 in `32-p2-mijn-garage.md`; finding `bevindingen/2026-09-18-nieuwe-gebruiker-herhaal-paswoord-veld-ontbreekt.md` (ernst nu, opgelost).\n\nReproduced and verified in the browser at 1440 and 390: mismatch shows \"bevestigen\" under the password field, a match saves the user and reloads the sheet as before. No hot shared files touched; `refresh.css` is not involved.\n",
+            "branch": "workbench/fix/new-user-repeat-password-field",
+            "title": "User form: bring back the repeat-password field; guard against component tags left as text"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918103413-4a6c2f"
+}

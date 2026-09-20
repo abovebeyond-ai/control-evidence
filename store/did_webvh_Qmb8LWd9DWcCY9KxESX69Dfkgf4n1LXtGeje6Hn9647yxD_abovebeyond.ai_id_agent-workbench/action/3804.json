@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4922a2b70c11e143748367e9e85ea77bc16c0fda",
+            "branch": "workbench/fix/tempupdate-normalises-amounts-2",
+            "files_sha256": "ebd7c7f45970751100ecc1366152a82622aaeb7998d3e1a79cb126b746a3ad67",
+            "message": "The draft save writes the numbers like the other two doors"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919101946-62b0b9"
+}

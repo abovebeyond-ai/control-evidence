@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cbb276778252eca1103237e64c26e951ff5f13ce",
+            "branch": "workbench/issue-open-adapter",
+            "files_sha256": "bfbc44ff8803e2dfaad61e8870bce46f4e6496d7f463383b7bb326d4e8519ab8",
+            "message": "issue.open: the adapter names the kind it answers"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260919074606-dc9724"
+}

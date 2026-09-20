@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2604b5d5882d8668b2a3ce286520b7479e30d3f0",
+            "branch": "workbench/tests/ci-runs-serially",
+            "files_sha256": "08b25fb8a6d993f4cb20cc7e22eda93cd6a75dbfd0c48395d3ec14d1119f9c04",
+            "message": "The CI runs the suite serially"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919113159-93da1d"
+}

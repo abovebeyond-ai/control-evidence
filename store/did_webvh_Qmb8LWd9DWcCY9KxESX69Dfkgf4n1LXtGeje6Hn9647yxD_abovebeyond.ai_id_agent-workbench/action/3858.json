@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3a8b4472245856af4403e0b2190803e832963c0d",
+            "branch": "workbench/tests/coverage-on-main",
+            "files_sha256": "1b58157a02c153b7fd8583f0448040a2b3f9ae57fde6571b6e6dd313a8a161bf",
+            "message": "Measure coverage where it is read"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919121207-dc30f0"
+}

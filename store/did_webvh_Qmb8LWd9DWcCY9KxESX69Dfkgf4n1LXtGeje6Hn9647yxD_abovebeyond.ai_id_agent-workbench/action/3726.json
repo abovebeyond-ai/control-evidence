@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Gevonden in de browserronde van 15 september 2026.\n\n`settings/setting/index.blade.php:126` bouwt de Google-fontkiezer op elke instellingenpagina, ook als het tabblad Website niet getoond wordt (geen recht `website.index`). De kiezer gooit dan `Missing div with id=\"font-picker\"`. Zonder ingesteld lettertype vraagt hij bovendien `fonts.googleapis.com/css?family=%3Aregular` op, een leeg lettertype, wat de browser met een CORS-fout beantwoordt (`Response has status code 0`).\n\nGeen scherm breekt erdoor (elk `<script>`-blok staat los), maar elke dealer zonder websitemodule ziet twee rode regels in de console van Instellingen. Guard: de kiezer alleen bouwen als `#font-picker` bestaat, en Google niet vragen naar een leeg lettertype.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S2-6.4 |\n| Beslist | Shane |\n| Gevonden | 2026-09-15 |\n| Waar | `resources/views/settings/setting/index.blade.php:124-135` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-15-fontkiezer-zonder-websitetab.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-15-fontkiezer-zonder-websitetab.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "De instellingenpagina logt fouten voor de fontkiezer als het tabblad Website er niet is"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092452-38fd6f"
+}

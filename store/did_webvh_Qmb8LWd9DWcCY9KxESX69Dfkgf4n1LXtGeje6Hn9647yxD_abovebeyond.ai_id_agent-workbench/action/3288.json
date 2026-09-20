@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ab63c69de3213c8e490eb4d9c62a59e14787505",
+            "branch": "workbench/ui/features-screen-compact",
+            "files_sha256": "b4e549bdf7f5738ac71a11a0cfe93589ec98d4a42b645aaf88c6f72fed071093",
+            "message": "Features screen: one row per flag, saved on the spot"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918143317-499320"
+}

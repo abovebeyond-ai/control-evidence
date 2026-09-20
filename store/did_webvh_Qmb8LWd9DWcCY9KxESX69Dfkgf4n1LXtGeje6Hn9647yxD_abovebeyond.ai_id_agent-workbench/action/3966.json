@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d0e549518031f722e3150f6e055ca6438e9634f",
+            "branch": "workbench/popupvoet-en-lijnen",
+            "files_sha256": "aae50a5fc94a0b47225986cb65bec56b85c33f7cd54d4e21d665423d0e4e547c",
+            "message": "Popupvoet alleen bij scrollen, geen geleider, en de projectenpagina opgeruimd\n\nDe voet van de scorepopup alleen als er iets te scrollen valt; de geleider\nnaast de eindtermen weg; de projectenpagina met \u00e9\u00e9n werkbalk en een lege\nstaat die zegt wat er niet is; tabellen als kaart, zoals het rapport."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919134056-6fd05a"
+}

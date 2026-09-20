@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Beheerdersinstellingen zijn afgeschermd.\n\nDe platformbrede bijlage (`updateAttachment`) en de achtergronden (`updateBackground`) controleren in de controller geen recht; enkel de sleutel van remove.bg vraagt `removebgkey.index`. De afscherming hangt volledig aan het menurecht `settings.update` in de middleware.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R P2-10.1 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `SettingsController::updateBackground`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-beheerdersinstellingen-zijn-afgeschermd.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-beheerdersinstellingen-zijn-afgeschermd.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "Beheerdersinstellingen zijn afgeschermd"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092115-6706fb"
+}

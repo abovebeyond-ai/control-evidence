@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7626076abe37cc6a528da4b2ec121bbc29ed7bef",
+            "branch": "workbench/de-inlogpagina-krijgt-lucht",
+            "files_sha256": "dac2a79fbd13d04238ab832b8ed92102c3bed5fdc0073158249042ac611619df",
+            "message": "De inlogpagina krijgt lucht"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918213822-791810"
+}

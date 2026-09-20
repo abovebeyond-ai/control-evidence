@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "493b4b2b5387a282f60e569a447996e6a61d622c",
+            "branch": "workbench/fix/vehicle-type-survives-chassis-lookup",
+            "files_sha256": "3e46b4647ed5de7e8c89744b6ca6cb414006e85f960f3d903ff48e18cde4aaee",
+            "message": "Vehicle type survives the chassis lookup; documents-only is listed under My offered vehicles"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918105006-5baa25"
+}

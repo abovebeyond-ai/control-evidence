@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De kring van een bieding volgt uit \"wie mag bieden\" (R B1-1.8): bij \"iedereen\" de Stocklist-dealers \u00e9n de\neigen handelaren van de dealer, bij \"enkel eigen handelaars\" alleen die handelaren. De mail bij het\naanmaken houdt zich daaraan: een handelaar krijgt enkel de biedingen van de dealer waar hij aan hangt.\n\nDe dagmail (`stocklist:dailyexport`, sinds 2026-09-18 weer gepland om 07:45) doet dat niet. Voor een\nhandelaar met \"\u00e9\u00e9n mail per dag\" leest `getBiddingOfferOverview(..., merchant_id, is_daily)` alle lopende\nbiedingen van het platform die bij zijn voorkeuren passen, zonder `vehicles.dealer_id` te vergelijken met\nzijn eigen dealer, en zonder per wagen naar het type bieding te kijken: de code controleert enkel of er\nminstens \u00e9\u00e9n wagen niet \"enkel community\" is en mailt dan de hele lijst, ook de wagens die dat wel zijn.\nVoor een dealer geldt het spiegelbeeld: hij krijgt bij minstens \u00e9\u00e9n niet-\"enkel eigen handelaars\"-wagen\nde hele lijst, ook de wagens \"enkel eigen handelaars\" van andere dealers. De knop in de mail leidt naar het\ndetail, waar de biedbox de kring wel bewaakt, dus bieden kan hij niet; zien wel.\n\nVraag voor Ilse: hoort de dagmail voor een handelaar enkel de biedingen van zijn eigen dealer te bevatten\n(zoals de mail bij het aanmaken), en horen wagens buiten zijn kring uit de lijst? Tot dat antwoord er is\nblijft het gedrag zoals het al jaren draaide; `BiddingMailsTest` pint enkel het venster van een dag.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R B1-2.4, R B1-1.8 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-18 |\n| Waar | `DailyExports::doDailyExports`, `ExportVehicleRepository::getBiddingOfferOverview`, `MailHelper::sendMails` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-18-dagmail-handelaren-hele-platform.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-18-dagmail-handelaren-hele-platform.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: ilse"
+            ],
+            "title": "De dagmail toont een handelaar de biedingen van het hele platform, de mail bij het aanmaken enkel die van zijn eigen dealer"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092214-fb8532"
+}

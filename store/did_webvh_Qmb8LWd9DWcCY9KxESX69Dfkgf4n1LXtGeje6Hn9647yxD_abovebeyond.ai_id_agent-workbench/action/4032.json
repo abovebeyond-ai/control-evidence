@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #50, which failed the lint ratchet. The ratchet was right.\n\nPhase 1, step 6b of `docs/design/sources-before-more-sources.md`. The\n`/collection` route it reads is merged (Trendwolves/gentells-pipeline#186).\n\n## What failed, and the fix\n\nThe component called `Date.now()` during render: one new error over the ceiling\nof 49. A component that asks the clock gives a different answer every time it is\ndrawn.\n\nAges are now counted from the payload's `asOf`. That is also the honest\nreference: the header says \"as read 16:22\", so \"130 days ago\" means as of then.\n\n## Now it has a test\n\nA stable number can be asserted. The e2e test replays the shape of 19 September\n(TikTok silent since 12 May, Instagram seeding from it, YouTube alive, Spotify an\norphan, Twitter off) and checks the dates, the reason of the failed run, the\ndependency line, and that the dead adapter is read before the living one.\n\n## The section itself, unchanged from #50\n\nThe Sources page lists what *should* be collected. Above it now stands what *is*:\nper adapter the road it takes, when it last delivered, what it said it would\ndeliver, what its last run was, and what thirty days brought and cost. Below: the\nrows switched on that nothing collects, and the adapters switched off with their\nreasons.\n\nIt states facts and does not judge. No row is coloured late or on time: how long\nis too long is decided in one place, Elixir. The one colour belongs to the run\nitself, a run that failed says so.\n\nRan what the CI runs before proposing this time: ratchet at its ceiling (49\nerrors, 26 warnings), build, all 17 Playwright tests green.\n",
+            "branch": "workbench/sources-collection-2",
+            "title": "Sources: where the collector's adapters stand (replaces #50)"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260919143845-d7aa5a"
+}

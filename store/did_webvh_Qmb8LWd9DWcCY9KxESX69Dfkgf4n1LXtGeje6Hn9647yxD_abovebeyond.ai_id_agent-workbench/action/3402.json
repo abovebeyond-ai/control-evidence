@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`deploy/gcp/startup.sh` pins v0.28.0 and the sha256 of `control-gateway-linux-amd64` from that release's `SHA256SUMS` (`3364424...99823b`), so the VM boots the binary this tag built and nothing else.\n\nv0.28.0 is #85: `issue.open`, the verb that lets a session mirror a project's findings as GitHub issues with a record, instead of opening them with a personal token from a laptop.\n\n## After the merge\n\n`export CONTROL_GCP_PROJECT=elixir-508105 && cd ~/Projects/control && deploy/gcp/rehearse.sh upgrade`, then `cmd/verify --did-log` reads the running release from the records.\n",
+            "branch": "workbench/vm-on-v0.28.0",
+            "title": "The VM on v0.28.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260919070559-9f73b2"
+}

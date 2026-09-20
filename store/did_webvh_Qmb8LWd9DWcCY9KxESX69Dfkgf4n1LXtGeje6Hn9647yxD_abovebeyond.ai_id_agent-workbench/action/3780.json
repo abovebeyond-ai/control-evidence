@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a10ce78f48ac089841e0ec9d46ab1cab6f36eaf",
+            "branch": "workbench/declare-binaries",
+            "files_sha256": "cb88eb76c51f094b38473b93f6c259c248e9ddd28080490ce030d0eb77c7fb58",
+            "message": "Declare the programs this app shells out to"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919095930-88b16d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2492146567c5d1e0f5c7b26fc021a7740af6c1ea",
+            "branch": "workbench/issue-open-kind",
+            "files_sha256": "68c2683ecaee731be981ec01cd5f4207ab7383a4115d2ae71b881700e6992c38",
+            "message": "The workbench capability carries issue.open"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260919065410-51fed6"
+}

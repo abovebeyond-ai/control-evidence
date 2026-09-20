@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "493b4b2b5387a282f60e569a447996e6a61d622c",
+            "branch": "workbench/fix/new-user-repeat-password-field",
+            "files_sha256": "5c2a25336a9986a01398a76e686c6ac8e3d6e74c4a89b03858a6602741564675",
+            "message": "User form: bring back the repeat-password field; no component tag may survive compilation as text"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918103413-4a6c2f"
+}

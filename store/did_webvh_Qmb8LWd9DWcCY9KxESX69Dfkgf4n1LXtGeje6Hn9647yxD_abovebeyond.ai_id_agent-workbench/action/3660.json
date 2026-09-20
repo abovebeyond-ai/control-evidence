@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Documenten beschikbaar na toewijzing.\n\nDe overeenkomst en het borderel zijn altijd beschikbaar, ook v\u00f3\u00f3r er een bod of winnaar is; alleen de afdruk van de winnaarsgegevens vereist een winnaar.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R B1-6.4 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-11 |\n| Waar | `export/index.blade.php``, `ExportController::printWinner`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-documenten-beschikbaar-na-toewijzing.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-documenten-beschikbaar-na-toewijzing.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "Documenten beschikbaar na toewijzing"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092418-6ccf0f"
+}

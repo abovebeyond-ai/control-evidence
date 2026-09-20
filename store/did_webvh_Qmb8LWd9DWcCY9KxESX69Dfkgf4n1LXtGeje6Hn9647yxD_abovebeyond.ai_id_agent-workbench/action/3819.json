@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A design note, nothing built. Maarten sent fourteen public datasets to take into\nGentells; looking at where they would land turned up something larger than the\nlist.\n\n**Nine platform adapters deliver nothing, most without an error.** TikTok's\nApify actor has ended `SUCCEEDED` with \"0 succeeded, 2 failed\" since 12 May and\nsilently took Instagram and Reddit search with it (both seed from TikTok terms).\nReddit subs 403 since 19 August. Pinterest's actor trial expired. Twitch never\nhad credentials. Spotify Charts is an active tier-a source row with no adapter,\nbecause `collect.mjs` runs a hardcoded list and not the table. What arrives\ntoday is web/RSS, six Chinese hot-ranks and YouTube; the Peer layer has not\nexisted for Western platforms for four months.\n\nThe note fixes an order of work:\n\n1. **Make silence visible.** Adapters declare what they should deliver; weeks of\n   nothing becomes a finding in `/api/elixir`, the road credentials and binaries\n   already took. Empty is not failed; a dependent adapter names its dead\n   upstream; a source row without an adapter cannot be active.\n2. **Restore the Peer layer or strike it honestly**, platform by platform, with\n   the decisions that cost money named by owner.\n3. **A reference layer for the datasets.** Indicators that back a claim through\n   ProveML, never signals. Eurostat is the pilot (commercial reuse allowed).\n   **ESS is CC BY-NC-SA and cannot go into a paid product without permission.**\n\nIt also says what is deliberately not done: no dataset as signals, no new\nadapter before phase 1, no quiet single-adapter fixes that leave the hole open.\n",
+            "branch": "workbench/sources-note",
+            "title": "Sources before more sources: a design note"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919103710-6b4d2b"
+}

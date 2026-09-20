@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Portals aanvinken zonder Car-Pass geeft een waarschuwing.\n\nDe waarschuwingstekst bestaat, maar in de Livewire-fiche is er geen Car-Pass-controle bij de portalvinkjes; de waarschuwing zit wel bij \"publiceren op stocklist\" in de wagenlijst (R S2-1.7).\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S2-4.3 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `lang/nl/vehicle.php``, `vehicle-form.blade.php``, `_`wagen_rij.blade.php`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-portals-aanvinken-zonder-car-pass-geeft-een.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-portals-aanvinken-zonder-car-pass-geeft-een.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "Portals aanvinken zonder Car-Pass geeft een waarschuwing"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092151-089063"
+}

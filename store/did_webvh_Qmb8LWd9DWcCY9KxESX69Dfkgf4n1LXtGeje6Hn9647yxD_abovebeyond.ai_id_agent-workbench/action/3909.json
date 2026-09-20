@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "35c18f9e68f2640dc4ba2bbdffb7d1c88eb73932",
+            "branch": "workbench/ci/quality-jobs",
+            "files_sha256": "1d4de42ae3acf767cf0b480d212f935b1ca3b5f43225c71e92b70c0f8062ddd7",
+            "message": "Four checks beside the tests, and a weekly mutation run"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919124536-b67b79"
+}

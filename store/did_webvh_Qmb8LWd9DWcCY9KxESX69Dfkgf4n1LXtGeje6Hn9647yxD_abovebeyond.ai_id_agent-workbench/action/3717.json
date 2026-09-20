@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "(nieuw) voorwaarden bij eerste login\n\nDe kolom \"voorwaarden aanvaard\" toont in het gebruikersoverzicht een vinkje als `is_first_login` waar is, in de dealerfiche als het onwaar is: \u00e9\u00e9n van beide is omgekeerd.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R P2-3.3 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `settings/user/index.blade.php``, `settings/dealer/_tabs/user/index.blade.php`` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-voorwaarden-bij-eerste-login.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-voorwaarden-bij-eerste-login.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: shane"
+            ],
+            "title": "voorwaarden bij eerste login"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092448-ae4cd8"
+}

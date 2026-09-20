@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vier dingen uit productie.\n\n## Projecten\n\n- Lege staat zegt nu wat je te zien krijgt: \"Nog geen eigen projecten in 2026-2027. **Toon die van alle leerkrachten**\" (zet het vinkje uit, het jaar blijft). Zonder vinkje: \"Nog geen projecten in 2026-2027. **Project aanmaken**\".\n- Rijen: de naam als `font-medium`-link, klasgroepen en coaches links uitgelijnd in kolommen met een vaste breedte (coaches `w-56`, dus geen namen meer die over twee regels breken), coaches in `ink-600`.\n\n## Zijbalk\n\nVan 288 naar 256 px, binnenmarge van 24 naar 16 px; de knop blijft op de lijn van de items. `docs/design-system.md` aangepast.\n\n## Dashboard: klasprogressie\n\n- Kaarten zoals de rest (`rounded-xl`, `ring-1 ring-ink-200`, `shadow-sm`), kop met de klas en een stille \"Details\"-link zonder onderstreping.\n- De meter is een groef (`ink-100`) met het bewegende deel in `primary-500` in plaats van het felle blauw dat aan de scorekleur raakt; het percentage staat ernaast, niet erin (in een smalle balk werd \"7%\" afgeknipt), en de telling (\"12 van 172\") stil ernaast.\n- Zonder eindtermen in het curriculum: geen meter en geen \"100% van 0 / 0\", maar \"geen eindtermen in het curriculum\".\n- \"Aantal studenten\" heet \"Leerlingen\", zoals overal in de app; sectiekop \"Klasprogressie\" op de sectiegrootte van het design system; tooltip in `ink-900`.\n\n## Nagekeken\n\nProjectenpagina met drie projecten en het dashboard lokaal gerenderd; volledige suite parallel groen op `BuildStampTest` na (worktree); build groen. Na de merge: `npm run build` op Ploi.\n",
+            "branch": "workbench/projecten-dashboard-zijbalk",
+            "title": "Projectenlijst en klasprogressie op het design system, zijbalk smaller"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919135643-79fd89"
+}

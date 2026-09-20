@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De app op papier in plaats van op wit, en het grijs met een tint erin.\n\nHoe Stripe en Shopify een data-app opbouwen: \u00e9\u00e9n off-white grond voor alles wat geen inhoud is, wit alleen voor wat inhoud draagt, de navigatie op dezelfde grond als de pagina en niet als grijs blok, merkkleur enkel op wat je kunt aanklikken. Dat is nu ook hier.\n\n- Nieuw token `paper` (`oklch(97.5% 0.008 255)`): de grond van de pagina, de zijbalk en de bovenbalk. Kaarten, tabellen en velden blijven wit en liften daardoor vanzelf.\n- De lichte `ink`-stappen (50 tot 300) dragen dezelfde tint (chroma 0,006 tot 0,018 in plaats van 0,002 tot 0,011), zodat tabelkoppen, lijnen en groeven als hetzelfde papier lezen en niet als grijs erop.\n- Het actieve menu-item op `primary-100`: `primary-50` zat op dezelfde lichtheid als de grond en was onzichtbaar, ook in productie.\n- De bovenbalk zonder eigen schaduw; de lijn volstaat op papier.\n- `docs/design-system.md`: tokens en de regel \"\u00e9\u00e9n grond, wit voor inhoud\".\n\nGeen enkel element verandert van plaats of vorm; alleen de vier tokens en drie klassen in de layout. Nagekeken op het dashboard; suite groen op `BuildStampTest` na (worktree). Na de merge: `npm run build` op Ploi.\n",
+            "branch": "workbench/papier",
+            "title": "De app op papier, het grijs met een tint"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919214347-77032d"
+}

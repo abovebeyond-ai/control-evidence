@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "493b4b2b5387a282f60e569a447996e6a61d622c",
+            "branch": "workbench/website/modal-at-click-height",
+            "files_sha256": "bf0e9bc8f4fd66a567db5dc4fb6ddfc5d08888e03c55ebd240454dd5fae43def",
+            "message": "Website module: open the dialogs at the height of the click inside the iframe"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918110046-58a359"
+}

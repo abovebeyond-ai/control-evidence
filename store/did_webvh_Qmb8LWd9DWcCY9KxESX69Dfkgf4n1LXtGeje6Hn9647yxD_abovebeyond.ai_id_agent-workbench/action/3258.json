@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "158d1aed38f36f84b274b021c72aa3fa38869026",
+            "branch": "workbench/fix/photo-row-only-with-file",
+            "files_sha256": "1fc79d555c0e0b70959f6bc95c296cb7288c6eab0df771b9ddd35ebf223430ef",
+            "message": "Photo rows only with a file: failed upload job removes its row, API writes in one statement, weekly sweep"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918125046-643c39"
+}

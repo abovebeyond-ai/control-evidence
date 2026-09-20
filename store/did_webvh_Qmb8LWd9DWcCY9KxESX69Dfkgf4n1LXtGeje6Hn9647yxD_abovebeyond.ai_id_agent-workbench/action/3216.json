@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "149cc55a1e4d056a22184239eaf7ee3793d29d42",
+            "branch": "workbench/test/whatsapp-never-leaves-tests",
+            "files_sha256": "8ea0bfa01914f92ab8463cec8ccd54fa2cdb6468e57412fa2039ed9bbbd95560",
+            "message": "Pin that a test run never reaches Meta: the 400 in the log was the fake"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918111019-bf5abb"
+}

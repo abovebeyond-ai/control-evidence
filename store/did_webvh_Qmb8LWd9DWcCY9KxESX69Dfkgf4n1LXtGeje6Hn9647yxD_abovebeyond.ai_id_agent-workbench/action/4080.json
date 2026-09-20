@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vervangt #38 (die mag dicht).\n\nDe schil zoals Stripe en Linear ze bouwen: **alles wit, grijs alleen als lijn, kleur enkel in wat je kunt aanklikken of wat beweegt.**\n\n- Zijbalk op wit met alleen een rechterlijn, geen `ink-50`-blok meer; bovenbalk zonder eigen schaduw.\n- Kaarten en tabellen dragen een ring en geen schaduw (`shadow-sm` weg op de tien plekken waar hij naast `ring-ink-200` stond); `ink-200` een stap firmer (92,8% \u2192 91,5%) omdat de lijn nu het werk van de schaduw doet. Schaduw blijft voor wat zweeft: menu's, popovers, modals.\n- Actief menu-item op `primary-100` (`primary-50` viel op wit weg).\n- `docs/design-system.md`: \"Space and depth\" herschreven, tokentabel aangepast, en het waarom erbij: een getint vlak leest als kleur, een grijs vlak als dood; wit met lijnen is de uitweg.\n\nGeen element verandert van plaats of vorm. Nagekeken op dashboard en projectenlijst; suite groen op `BuildStampTest` na (worktree). Na de merge: `npm run build` op Ploi.\n",
+            "branch": "workbench/stripe-linear",
+            "title": "De schil zoals Stripe en Linear: wit, grijs als lijn, kleur op wat klikt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920064059-a9bfdc"
+}

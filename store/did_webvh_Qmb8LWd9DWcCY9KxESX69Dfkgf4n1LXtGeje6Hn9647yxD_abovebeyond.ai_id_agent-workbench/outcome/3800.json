@@ -1,0 +1,16 @@
+{
+    "action": "6a4bab8e56cd2019267ddf24090751ba",
+    "effect": {
+        "detail": {
+            "base": "bb61fa2177977f24d30a66db11ec6f0bacb6038a",
+            "branch": "workbench/het-rapport-op-het-design-system",
+            "commit": "9b735df001a9ec215a9c32171c1e99983624597a",
+            "files": 32,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3798,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The new item stood in the bar as **Menu.operations**. The navigation prints `trans('menu.<naam>')`\nand a key without a translation prints itself.\n\nThe cause: its migration wrote the name into `language_lines`, exactly the way every menu item\nbefore it did (Inzichten, Functies), and in the meantime the menu names had moved to\n`resources/lang/<taal>/menu.php`. The row went into a table nothing reads any more. The five files\ncarry the name now: Werking, Fonctionnement, Operations, Betrieb, Funcionamiento.\n\n**And the answer to \"are the others all right\": yes.** `MenuNamesTest` asks the question the screen\nasks \u2014 for every menu row in the database, in every language, is there a word to show \u2014 and every\nother item passes. Only this one was missing.\n\nTwo things about that test worth naming. It asks with the **fallback off** (`Lang::has($key,\n$taal, false)`), because `trans()` in German quietly hands back the Dutch text when the German key\nis missing, and a test that accepts that proves nothing beyond \"the Dutch exists\". And I checked it\nbites by removing the German key again: it fails and names `de: menu.operations`.\n\nThe dead `language_lines` row from the earlier migration is left where it is. It is inert, and\nrewriting a migration that has already run on production buys nothing.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/menu-name-for-operations",
+            "title": "Werking has a name in the menu, and every menu item is asked for one"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919213519-890569"
+}

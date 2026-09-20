@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dddb74bb6976f7631e4ebbfb5e9c304352b330bf",
+            "branch": "workbench/ui/profile-own-details",
+            "files_sha256": "0f797ce6adac26519cb2d72973f99ce4d7c10980576bdc7ce2fb97345032be07",
+            "message": "Invitation instead of a password typed by an administrator, and own details on the profile"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918204143-21c16e"
+}

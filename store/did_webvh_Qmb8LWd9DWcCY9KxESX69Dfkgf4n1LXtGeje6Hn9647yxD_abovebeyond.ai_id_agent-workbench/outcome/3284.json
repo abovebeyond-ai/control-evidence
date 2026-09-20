@@ -1,0 +1,16 @@
+{
+    "action": "87f3c000f0e31960fb3cdc85ce1ffb9e",
+    "effect": {
+        "detail": {
+            "base": "8ab63c69de3213c8e490eb4d9c62a59e14787505",
+            "branch": "workbench/auth/profile-polish",
+            "commit": "09f726bfeb4a613012c757fd9081aa62391466bb",
+            "files": 19,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3282,
+    "verdict": "ALLOW"
+}

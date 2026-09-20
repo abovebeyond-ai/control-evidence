@@ -1,0 +1,16 @@
+{
+    "action": "80686f61a2a5917f67b86ab3d549bbb3",
+    "effect": {
+        "detail": {
+            "base": "d9d3930b36d48608729a8a00d3dfb61bb2a35789",
+            "branch": "workbench/docs/first-mirrored-issues",
+            "commit": "0f1348a22b3b5ad0e133bd728e262804e6246668",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3495,
+    "verdict": "ALLOW"
+}

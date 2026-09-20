@@ -1,0 +1,16 @@
+{
+    "action": "516e421ed6e4148f936d56c33e2d2945",
+    "effect": {
+        "detail": {
+            "base": "149cc55a1e4d056a22184239eaf7ee3793d29d42",
+            "branch": "workbench/test/whatsapp-never-leaves-tests",
+            "commit": "c8b2642656a5eb0d4c170e999de24d4faaa20945",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3216,
+    "verdict": "ALLOW"
+}

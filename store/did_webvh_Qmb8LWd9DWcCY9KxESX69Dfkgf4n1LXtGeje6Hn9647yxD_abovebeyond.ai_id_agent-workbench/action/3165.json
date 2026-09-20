@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "83431155d3bb34b83ac161a343f1b699072e2a4c",
+            "branch": "workbench/auth/long-sessions-and-remember-me",
+            "files_sha256": "9a9d2246b1c843ec80d3c0fe1933ca37e0cbbcdd0c6046b2e23ad9dfa1fd8818",
+            "message": "Login: honour \"Aangemeld blijven\", default it on, sessions of 30 days in the database"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918095526-ed2b78"
+}

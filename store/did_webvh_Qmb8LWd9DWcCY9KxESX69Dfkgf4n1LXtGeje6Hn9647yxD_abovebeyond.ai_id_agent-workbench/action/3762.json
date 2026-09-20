@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d9d3930b36d48608729a8a00d3dfb61bb2a35789",
+            "branch": "workbench/docs/mirrored-issues",
+            "files_sha256": "ea3956aa5d4d051ebb4c02b1ac68fe2bee14c7d0bdbd3bd014fd29d6b7323781",
+            "message": "Every open finding carries its issue"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092538-60ec61"
+}

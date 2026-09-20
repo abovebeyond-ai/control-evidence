@@ -1,0 +1,16 @@
+{
+    "action": "f9f3ae4407805f5d16f4611e28a395b2",
+    "effect": {
+        "detail": {
+            "base": "198151cfad1ab4bdc73e20eb2efc2707425323e8",
+            "branch": "workbench/judge-binaries",
+            "commit": "dac4d983fa39ef284becd143e87d5364ca79fb8d",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3786,
+    "verdict": "ALLOW"
+}

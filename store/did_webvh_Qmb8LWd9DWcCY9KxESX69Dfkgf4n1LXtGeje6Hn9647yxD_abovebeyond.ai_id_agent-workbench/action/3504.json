@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "(nieuw)\n\nBij wijzigen geldt de oude fout nog: alle extra's weghalen slaat niet op, en de verwijdering geeft de hele collectie mee in plaats van het id.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S4-4.10 |\n| Beslist | Shane |\n| Gevonden | 2026-09-11 |\n| Waar | `OrderController::update` (vgl. 272-287) |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-11-bij-wijzigen-geldt-de-oude-fout-nog.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-11-bij-wijzigen-geldt-de-oude-fout-nog.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: shane"
+            ],
+            "title": "Bij wijzigen geldt de oude fout nog"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092117-7c9d44"
+}

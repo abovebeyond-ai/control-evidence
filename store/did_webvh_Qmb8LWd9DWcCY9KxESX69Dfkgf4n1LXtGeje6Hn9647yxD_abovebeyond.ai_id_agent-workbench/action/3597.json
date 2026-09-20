@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Een eigen wagen toont in klantmodus de verkoopprijs.\n\nDe bestelbonmodal toont voor \u00e9\u00e9n eigen wagen twee bedragen tegelijk: het prijsveld start een nieuwe bestelbon op de verkoopprijs (12 000, zoals de regel zegt) en de leaseregel eronder in dezelfde modal op de klantprijs (10 500), want die roept `documentPrefill` aan, dat niet vraagt van wie de wagen is. De offertemodal ernaast zet om diezelfde reden 10 500 in haar prijsveld: daar geldt de uitzondering van R S5-4.5 dus helemaal niet. Gevonden op 14 september 2026 bij het vastpinnen; `PriceOnScreenTest::the_order_modal_shows_two_amounts_for_one_own_vehicle` en `PriceScreenMatrixTest::test_mode_on_own_vehicle_and_the_two_amounts_of_the_order_modal` pinnen beide bedragen.\n\n| | |\n|---|---|\n| Ernst | deze week |\n| Regel | R S5-4.5 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-14 |\n| Waar | `CustomerModePrice::orderPrefill`, `CustomerModePrice::documentPrefill`, `stocklist/_tabs/bestelbonModal.blade.php`, `stocklist/_tabs/offertemodal.blade.php` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-14-een-eigen-wagen-toont-in-klantmodus-de.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-14-een-eigen-wagen-toont-in-klantmodus-de.md",
+            "labels": [
+                "bevinding",
+                "deze week",
+                "beslist: ilse"
+            ],
+            "title": "Een eigen wagen toont in klantmodus de verkoopprijs"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092201-10f707"
+}

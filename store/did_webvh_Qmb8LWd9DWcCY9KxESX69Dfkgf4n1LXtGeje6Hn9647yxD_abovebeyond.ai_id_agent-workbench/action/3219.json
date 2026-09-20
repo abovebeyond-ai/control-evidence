@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nOn 2026-09-18 12:37 a local run of `vendor/bin/phpunit --filter 'OwnStock|Vehicle|Export|Bidding|Order|Takeover|Rules|Smoke'` left this in the log: `WhatsApp send failed {\"to\":\"32400000000\",\"status\":400,\"body\":\"{\\\"error\\\":{\\\"message\\\":\\\"(#131030) Recipient phone number not in allowed list\\\"...`. Read as a request that had reached Meta with a valid token.\n\n## What it was\n\nNothing left the machine. The line is the faked Meta answer of `IntegrationSmokeTest::test_whatsapp_fails_when_meta_refuses` (`Smoke` matches the filter): the test lists `whatsapp` in `OUTBOUND_IMPACT`, fakes `graph.facebook.com/*` with exactly that 400 body, and runs `stocklist:smoke --whatsapp-to=+32400000000`. `WhatsAppService::send` logs every non-2xx answer, faked or not. The log channel was `testing`, the number is the test number, and the empty `WHATSAPP_TOKEN` of phpunit.xml would have earned 401 (#190) from Meta, never 131030.\n\nChecked with a tripwire right before the `Http::post` over the same filter (740 tests): the service reaches a request three times, all in `IntegrationSmokeTest`, all faked, token `test-token`, env `testing`, seal patterns empty. The service goes through Laravel's Http client and asks `Outbound::impact('whatsapp')` first. The two raw cURL calls (Nederland Mobiel, VIN lookup) sit behind `Outbound::impact`/`allows`; `ErrorApi` behind `Outbound::allowed()`. No hole.\n\n## What changes\n\n- `WhatsAppServiceTest::test_in_testing_a_send_without_a_fake_is_stopped_before_it_leaves`: whatsapp in `OUTBOUND_IMPACT`, no fake, the send throws `StrayRequestException` naming graph.facebook.com before a socket opens.\n- `IntegrationSmokeTest::test_whatsapp_runs_only_with_an_explicit_number_and_respects_the_seal` ends with `Http::assertNothingSent()`.\n- The 400 test documents that its log line belongs to a test run.\n- Finding `docs/bedrijfsregels/bevindingen/2026-09-18-whatsapp-bereikt-meta-vanuit-tests.md` (opgelost) records what was checked.\n\nNo application code changed. `@rule P3-7.2`, `P3-7.7`, `P1-5.12`.\n",
+            "branch": "workbench/test/whatsapp-never-leaves-tests",
+            "title": "Pin that a test run never reaches Meta: the 400 in the log was the fake"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260918111019-bf5abb"
+}

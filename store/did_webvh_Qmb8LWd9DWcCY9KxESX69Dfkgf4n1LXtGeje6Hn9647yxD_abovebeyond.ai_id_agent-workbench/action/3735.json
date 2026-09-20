@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "De regel zegt dat de richtprijs getoond wordt als het ophaalland het land van de dealer is. De detailpagina van een wagen toont de regel \"Transport vanaf \u20ac ... excl. BTW\" enkel als de ingelogde gebruiker beheerder is (`isAdmin()`); een dealer die overweegt te bestellen ziet nooit een richtprijs. Of dat een bewuste keuze is (de prijs is een schatting zonder expres en zonder btw) of een vergeten voorwaarde, kan alleen Ilse zeggen: V-25.\n\n| | |\n|---|---|\n| Ernst | later |\n| Regel | R S4-10.2 |\n| Beslist | Ilse |\n| Gevonden | 2026-09-15 |\n| Waar | `stocklist/_tabs/specs.blade.php`, `TransportService::getVehiclePrice` |\n\nDe bevinding zelf staat in de repository, en die is de bron: `docs/bedrijfsregels/bevindingen/2026-09-15-transport-richtprijs-enkel-voor-beheerder.md`.\nDeze issue is haar spiegel voor de opvolging. Wie haar oplost zet in het bestand `status: opgelost`\nen `opgelost_in: #<pull request>`; de pull request sluit deze issue.",
+            "finding": "docs/bedrijfsregels/bevindingen/2026-09-15-transport-richtprijs-enkel-voor-beheerder.md",
+            "labels": [
+                "bevinding",
+                "later",
+                "beslist: ilse"
+            ],
+            "title": "De richtprijs van een transport staat enkel op de detailpagina van de beheerder"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260919092456-455e87"
+}

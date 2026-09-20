@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7626076abe37cc6a528da4b2ec121bbc29ed7bef",
+            "branch": "workbench/de-donkere-modus-liet-kapotte-klassen-achter",
+            "files_sha256": "534217ac0500a603dcc74b6696a8c05419d5946c3db0d60e47f54590ff1579a7",
+            "message": "De opkuis van de donkere modus liet kapotte klassenamen achter"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918213725-b65075"
+}

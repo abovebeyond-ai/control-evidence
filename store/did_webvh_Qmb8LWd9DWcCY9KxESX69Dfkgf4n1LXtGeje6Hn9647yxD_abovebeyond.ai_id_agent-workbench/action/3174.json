@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nEvery other repo runs its tests on GitHub Actions; KUBO was the one on CircleCI. Beyond consistency there is a measurable cost: Elixir's `ci` measurement reads the last completed **GitHub Actions** run on main as the project's CI, so on CircleCI the tests were invisible to Portal, and the `ci` gate of the automation ceiling could never open for this project. The README badge also still pointed at the old repo name `kubo-global/kubo`.\n\n## What\n\n- `.github/workflows/tests.yml`: the same steps CircleCI ran (clone the `kubo-kolibri` sibling, `composer install`, `.env` + key, `vendor/bin/phpunit`) on PHP 8.5 via `shivammathur/setup-php`, on every push and pull request, with a Composer cache and cancel-in-progress per ref.\n- `.circleci/config.yml` removed. Disconnect the project on the CircleCI side when this is merged, otherwise it keeps reporting a missing config.\n- README badge and the CI line in CLAUDE.md updated.\n\n## Checked\n\nThe workflow runs on this PR itself: the **Tests** check below is the proof. Nothing in the application changes.\n",
+            "branch": "workbench/tests-on-github-actions",
+            "title": "CI: run the tests on GitHub Actions instead of CircleCI"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20260918100954-5a0125"
+}

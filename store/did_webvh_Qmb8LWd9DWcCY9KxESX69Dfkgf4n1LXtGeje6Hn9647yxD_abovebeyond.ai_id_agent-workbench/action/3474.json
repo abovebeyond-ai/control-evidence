@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`deploy/gcp/startup.sh` pins v0.28.1 and its sha256, the release that carries #87: the GitHub adapter names `issue.open` among the kinds it answers, so the registry routes it instead of answering \"no effect adapter for this kind\", and a test refuses any future case in the switch that nothing claims.\n\n## After the merge\n\n`export CONTROL_GCP_PROJECT=elixir-508105 && cd ~/Projects/control && deploy/gcp/rehearse.sh upgrade`\n",
+            "branch": "workbench/vm-on-v0.28.1",
+            "title": "The VM on v0.28.1"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260919082751-ea5170"
+}

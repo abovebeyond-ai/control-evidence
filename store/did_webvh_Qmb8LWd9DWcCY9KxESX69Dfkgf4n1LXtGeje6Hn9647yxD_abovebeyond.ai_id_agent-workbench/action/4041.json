@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "06f360f45a0d981bc49b0d23f3d617e8f43b3170",
+            "branch": "workbench/rustiger-detail",
+            "files_sha256": "26890e85d7f226ce601ac82db5da2a878e095f4b5f138949dfd0f60cc3d6154c",
+            "message": "Het klas statusrapport zonder drie koprijen\n\nDe kolomkop is weg (het getal zegt zelf \"3 evaluaties\"), de cluster is\neen rustige tussenkop in plaats van een band in kapitaal."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919145728-0b41ca"
+}

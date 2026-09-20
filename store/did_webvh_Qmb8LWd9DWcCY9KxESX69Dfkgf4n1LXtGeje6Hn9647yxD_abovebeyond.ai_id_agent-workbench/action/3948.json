@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "37cb4282e7628a1e26e3014d2022afe4767443e8",
+            "branch": "workbench/apify-helper",
+            "files_sha256": "c6002e62ccc127df8412e49b80e26e0f82f0a6c2dced0599452963216d354190",
+            "message": "One way to run an Apify actor, and it does not believe the vendor"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260919132706-8651e7"
+}

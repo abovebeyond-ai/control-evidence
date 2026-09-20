@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9a7eea9e65ac998d6cbc4c85aaaf044a28b5df7c",
+            "branch": "workbench/lijsten-en-hover-2",
+            "files_sha256": "ab02cd41d6ca121d9a3fcc755dde3e3f7dd8a97365d94dcebbbbe7d06d82b007",
+            "message": "Clusterlijst opgeruimd, hover in de familie van het actieve item, de uitleg \u00e9\u00e9n regel\n\nDe clusternaam in ink-800 in plaats van grijs tot hover; werkbalk in twee\nrijen; hover in het menu op primary-50 onder het actieve primary-100; de\nuitleg boven de eindtermen als \u00e9\u00e9n regel onder de titel."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920073537-b8f31f"
+}

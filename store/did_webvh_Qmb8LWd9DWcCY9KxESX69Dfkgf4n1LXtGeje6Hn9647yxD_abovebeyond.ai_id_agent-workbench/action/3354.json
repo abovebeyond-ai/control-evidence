@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The README was rewritten in English on 12 September (#13), a week before the\nLaravel 13 upgrade merged, so its Stack section describes the app as it was\nbefore tonight. Every figure below was read out of the manifests on `main`\nafter the merge, not carried over.\n\n| the README said | the repo says |\n| --- | --- |\n| PHP 8.4 | `\"php\": \"^8.5\"` |\n| Laravel 12 | `\"laravel/framework\": \"^13.0\"` |\n| Livewire 3 | `\"livewire/livewire\": \"^4.0\"` |\n| built with Laravel Mix | `\"vite\": \"^8.1.3\"`, `npm run build` is `vite build` |\n| spatie/laravel-permission | `\"spatie/laravel-permission\": \"^8.0\"` |\n| Larastan at level 3 | `level: 5` in `phpstan.neon`, over `phpstan-baseline.neon` |\n\nWhat stays: Tailwind CSS 4 (`\"tailwindcss\": \"^4.1.17\"`), Alpine 3, Vue 3, and\nthe clause about the Laravel 10 file layout, because `app/Console/Kernel.php`\ndoes still exist.\n\nThree other things it got wrong, all in the same spirit:\n\n- `npm run watch` and `npm run prod` do not exist. `package.json` has `dev`,\n  `build`, `lint` and `lint:fix`. The checks block now also names Pint and\n  ESLint, which CI runs and the README did not mention.\n- The command table missed `naviskore:smartschool-check`,\n  `naviskore:report-snapshot` and `naviskore:report-snapshot-diff`, and still\n  listed `wiskunde:herkoppel-doelen`, which is not in `app/Console/Commands`\n  any more. The two snapshot commands get a sentence on why they exist, because\n  a command whose purpose is \"prove the reports did not change across an\n  upgrade\" is useless if nobody knows to reach for it.\n- It described `elixir-fix.yml` and `evidence.yml` and said nothing about\n  `ci.yml` or `mutation.yml`, which are the two that actually run on a push.\n\nNo code changed.\n",
+            "branch": "workbench/de-readme-na-de-upgrade",
+            "title": "De README na de upgrade: PHP 8.5, Laravel 13, Vite 8"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260918213631-868507"
+}

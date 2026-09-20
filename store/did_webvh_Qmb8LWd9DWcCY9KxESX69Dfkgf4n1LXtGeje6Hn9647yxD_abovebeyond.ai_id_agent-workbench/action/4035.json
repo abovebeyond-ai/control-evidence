@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "944d91da81b675e20489dd105568558d9dc8f7af",
+            "branch": "workbench/per-vak-gegroepeerd",
+            "files_sha256": "93cadfd1c258bdbe35bf1e8790a441b49671bc89fb754bdd33a5f76bf93acf14",
+            "message": "Per vak gegroepeerd en gekapt, het jaar in het keuzemenu, iconen op het detail\n\nHet openklappen zet basis en specifiek apart en scrolt boven acht rijen;\nhet keuzemenu toont het jaar dat de pagina toont; het klas statusrapport\nkrijgt een stil icoon naast elk cijfer."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260919144653-d06b7d"
+}
