@@ -1,0 +1,16 @@
+{
+    "action": "9483dcc5edb16bcdcb6b622109ead415",
+    "effect": {
+        "detail": {
+            "base": "0d381ca7c2269b788402d6f0d6109a633d653fbe",
+            "branch": "workbench/verouderd-verborgen",
+            "commit": "84a006efffc6914158622da2c8cb6bcec42d2297",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4452,
+    "verdict": "ALLOW"
+}

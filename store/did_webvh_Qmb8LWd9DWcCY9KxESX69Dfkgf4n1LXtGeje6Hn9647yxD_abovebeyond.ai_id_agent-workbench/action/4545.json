@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op een telefoon nam het merkvlak bijna de helft van het scherm en begon \"Kies je school\" onder de vouw. Het vlak is lager en het merk kleiner onder `sm`; vanaf `sm` verandert er niets. Het Microsoft-lockup blijft het beeld dat hun richtlijnen vragen, ongewijzigd, maar staat op een telefoon gecentreerd in plaats van links, waar het als een losse knop las.\n",
+            "branch": "workbench/inloggen-mobiel",
+            "title": "Inlogscherm op een telefoon: een lager merkvlak, het Microsoft-lockup gecentreerd"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921062142-6346b8"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b4dd1bd67de83047acd4a7ffb78ac207c1469c46",
+            "branch": "workbench/fix/a-wrong-link-is-not-a-crash",
+            "files_sha256": "2739276e87c12670f0f43835186ce468b80d8e5b3f739c06690823edb6840373",
+            "message": "A wrong website link is a 404, not a crash"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920190611-632f53"
+}

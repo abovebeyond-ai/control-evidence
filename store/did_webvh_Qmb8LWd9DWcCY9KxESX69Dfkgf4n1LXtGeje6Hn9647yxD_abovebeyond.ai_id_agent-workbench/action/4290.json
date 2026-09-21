@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Acht pagina's gaven hun titel als `title=\"{{ ... }}\"` aan `x-layout.page`, dat de titel zelf nog eens ontsnapt: een leerling die O'Connell heet werd `O&amp;#039;Connell`. De CI van #57 ving het met een gegenereerde naam. Nu gaat de titel als expressie mee (`:title=\"...\"`) op de leerlingpagina, de fiche, de rapportvoorbereiding, de clusterpagina's, de evaluatiepagina's en de leerlingengroep. De test van de leerlingpagina gebruikt voortaan een naam met apostrof.\n",
+            "branch": "workbench/titel-een-keer-ontsnapt",
+            "title": "Een titel met een apostrof: \u00e9\u00e9n keer ontsnappen, niet twee keer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920142156-12bfc6"
+}

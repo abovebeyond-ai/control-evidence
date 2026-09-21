@@ -1,0 +1,16 @@
+{
+    "action": "a0a2e2e417ce0f280fc212c71697c9b5",
+    "effect": {
+        "detail": {
+            "base": "e43d86e9b115ebaf13d6801a69b6c9cfdc06c837",
+            "branch": "workbench/jaren-onder-vooruitgang",
+            "commit": "f95c378bbe727e18bf0696c9c6fdc3dddcd76876",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4263,
+    "verdict": "ALLOW"
+}

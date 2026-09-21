@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na #50: \"Dit schooljaar\" toonde in september de scores van juni. Het vooruitgangsrapport kijkt over alle niet-zittenblijvende jaren van de graad (zo staat het in de clusterscope), en de pagina las het ongefilterd.\n\n- `ReportService::generateProgressReport` neemt nu een optioneel schooljaar als filter en geeft het door aan de vier delen; de vier mappers kenden dat argument al. Zonder filter blijft het rapport wat het was.\n- De leerlingpagina geeft voor \"Dit schooljaar\" het lopende schooljaar mee; \"Hele graad\" is het rapport zoals het is. Beide lezen dus hetzelfde rapport, alleen de deliberatie is niet meer nodig voor de graad.\n- De regel onderaan zegt bij \"Dit schooljaar\" dat het rapport de hele graad toont, zodat niemand verrast is als het rapport meer bevat dan de kaart.\n\nTest: `ProgressReportTest` krijgt een score uit een vorig jaar in dezelfde graad en pint dat die zonder filter meetelt en met filter niet. Volledige suite lokaal groen op de bekende `BuildStampTest` na, Pint en PHPStan schoon.\n",
+            "branch": "workbench/dit-schooljaar",
+            "title": "Dit schooljaar op de leerlingpagina is het vooruitgangsrapport gefilterd op het lopende jaar"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920120052-970675"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "f24f92c816a8aaf27a4e0d18f1964b07",
+    "effect": {
+        "detail": {
+            "base": "0318b11bd2be0ca8868b20ce9767684ee7ec1549",
+            "branch": "workbench/ci/cheaper-runs",
+            "commit": "80a760e11f39deed05e179ac64af78307ee999c9",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4095,
+    "verdict": "ALLOW"
+}

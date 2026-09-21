@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9050bc6ef2b7b3982edd3d8d23750e7f0492ec33",
+            "branch": "workbench/paginering",
+            "files_sha256": "cd691b760ec47c2333374dbccac183933e01548719ec6c703a88fec1d9c04e44",
+            "message": "De paginering op de tokens: geen dark-varianten meer, Nederlandse tekst, \u00e9\u00e9n stille regel en de pagina's als tekst"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920192559-23d449"
+}

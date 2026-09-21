@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-09-20T07:34:13+00:00",
+    "computed_at": "2026-09-21T07:34:19+00:00",
     "window": {
-        "since": "2026-09-13T07:33:02+00:00",
+        "since": "2026-09-14T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -60,12 +60,12 @@
         },
         "ShaneDeconinck/good-governance": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 0,
+                "gateway": 0
             }
         },
         "ShaneDeconinck/naviskore": {
@@ -74,8 +74,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 27,
-                "gateway": 27
+                "github": 70,
+                "gateway": 70
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -90,12 +90,12 @@
         },
         "ShaneDeconinck/vlamingdam-frituur": {
             "dispatches": {
-                "github": 2,
-                "gateway": 2
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 0,
+                "gateway": 0
             }
         },
         "Trendwolves/gentells-pipeline": {
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 31,
-                "gateway": 29
+                "github": 24,
+                "gateway": 24
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 19,
-                "gateway": 14
+                "github": 9,
+                "gateway": 9
             }
         },
         "Trendwolves/glk-transferor": {
@@ -131,22 +131,22 @@
         },
         "abovebeyond-ai/abovebeyond": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 10,
-                "gateway": 5
+                "github": 4,
+                "gateway": 4
             }
         },
         "abovebeyond-ai/portal": {
             "dispatches": {
-                "github": 2,
-                "gateway": 2
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 53,
-                "gateway": 29
+                "github": 13,
+                "gateway": 13
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -162,42 +162,42 @@
         },
         "abovebeyond-ai/vera": {
             "dispatches": {
-                "github": 2,
-                "gateway": 2
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 35,
-                "gateway": 28
+                "github": 19,
+                "gateway": 19
             }
         },
         "kubo-global/afrodidact-website": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "kubo-global/kubo-website": {
             "dispatches": {
-                "github": 2,
-                "gateway": 2
+                "github": 1,
+                "gateway": 1
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 1,
+                "gateway": 1
             }
         },
         "stocklistdealer-eu/peugeot-de-backer": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "stocklistdealer-eu/platform": {
@@ -207,7 +207,7 @@
             },
             "pulls": {
                 "github": 100,
-                "gateway": 114
+                "gateway": 141
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -272,8 +272,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 2,
+                "gateway": 2
             }
         },
         "Trendwolves/gentells-studio": {
@@ -294,8 +294,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 52,
-                "gateway": 35
+                "github": 25,
+                "gateway": 25
             }
         },
         "abovebeyond-ai/elixir": {
@@ -305,8 +305,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 43,
-                "gateway": 34
+                "github": 18,
+                "gateway": 18
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -316,8 +316,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 7,
-                "gateway": 7
+                "github": 3,
+                "gateway": 3
             }
         },
         "abovebeyond-ai/proveml": {
@@ -338,8 +338,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 5,
-                "gateway": 4
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/verify-abovebeyond": {
@@ -350,7 +350,7 @@
             },
             "pulls": {
                 "github": 1,
-                "gateway": 0
+                "gateway": 1
             }
         },
         "forge:abovebeyond": {
@@ -712,16 +712,7 @@
         }
     },
     "unexplained": [
-        "Trendwolves/gentells-pipeline: 31 pulls on GitHub, 29 performed by the gateway",
-        "Trendwolves/gentells-site: 19 pulls on GitHub, 14 performed by the gateway",
-        "abovebeyond-ai/abovebeyond: 10 pulls on GitHub, 5 performed by the gateway",
-        "abovebeyond-ai/portal: 53 pulls on GitHub, 29 performed by the gateway",
-        "abovebeyond-ai/vera: 35 pulls on GitHub, 28 performed by the gateway",
-        "stocklistdealer-eu/platform: 100 pulls on GitHub, 114 performed by the gateway",
-        "abovebeyond-ai/control: 52 pulls on GitHub, 35 performed by the gateway",
-        "abovebeyond-ai/elixir: 43 pulls on GitHub, 34 performed by the gateway",
-        "abovebeyond-ai/proveml-research: 5 pulls on GitHub, 4 performed by the gateway",
-        "abovebeyond-ai/verify-abovebeyond: 1 pulls on GitHub, 0 performed by the gateway",
+        "stocklistdealer-eu/platform: 100 pulls on GitHub, 141 performed by the gateway",
         "stocklistdealer-eu/landing: 1 pulls on GitHub, 0 performed by the gateway"
     ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind (rows 10.3.2, 10.3.4)"

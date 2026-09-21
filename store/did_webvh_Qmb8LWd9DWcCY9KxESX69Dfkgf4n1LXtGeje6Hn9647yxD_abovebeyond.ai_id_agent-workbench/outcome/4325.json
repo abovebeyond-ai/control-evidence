@@ -1,0 +1,16 @@
+{
+    "action": "121b4d8fc10cde726ce46dd865ab68a4",
+    "effect": {
+        "detail": {
+            "base": "f64fef5c00565309499f57cc84469b8169731bd3",
+            "branch": "workbench/every-adapter-says-what-it-fetched",
+            "commit": "6a3e280f0994d5604b6f10ecc008e4aa2d3ddb43",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4323,
+    "verdict": "ALLOW"
+}

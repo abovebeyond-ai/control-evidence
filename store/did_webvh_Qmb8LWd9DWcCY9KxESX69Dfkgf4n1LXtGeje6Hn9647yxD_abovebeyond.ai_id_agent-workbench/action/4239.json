@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2404bf4b8ede125d026b8581bed8986ff837ccb6",
+            "branch": "workbench/kuis/resources",
+            "files_sha256": "e1e74182433f6a91d396d554dfaf0f5349b0a5f26716682c0d56f7a6170b7ed5",
+            "message": "The API resources say which model they wrap"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920124320-e9c8c8"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "35c76145e975179796b64fd41abb90c97bd5bc5c",
+            "branch": "workbench/fix/bidding-runs-through-the-end-date",
+            "files_sha256": "93784f28de8479b1c88857fbc61790c96e429af2750bb5879ab10742e012def7",
+            "message": "A bidding runs through its end date"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920143657-facc6c"
+}

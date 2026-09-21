@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1fca6289d173359a061351fad814abb3773af124",
+            "branch": "workbench/fix/handler-checks-that-never-match",
+            "files_sha256": "fec846faf5f321dfd420b85cf77780354eef17bc10d6a9d4469241e623c6cdaa",
+            "message": "Two checks in the error handler that never matched"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920111627-19eff6"
+}

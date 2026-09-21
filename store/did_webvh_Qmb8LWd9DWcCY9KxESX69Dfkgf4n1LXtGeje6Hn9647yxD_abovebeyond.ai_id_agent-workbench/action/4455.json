@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op vraag van de directeur van campus Heule en CLW: \"alles staat er nog in, dat is verwarrend.\"\n\nEen eindterm draagt twee vlaggen, nieuw en oud; \"uitdovend\" is wat alleen het oude leerplan had. Die status bestond al, maar niets verborg ze. Nu:\n\n- **Eindtermenlijst:** uitdovende eindtermen staan er niet meer in, tenzij je \"Toon ook uitdovende eindtermen\" aanvinkt. Nieuwe scope `AttainmentLevel::notLegacy()`; wie geen vlag heeft, blijft zichtbaar.\n- **De twee kiezers** (eindterm aan een cluster koppelen, eindtermen aan een project koppelen): de standaardkeuze heet nu \"Nieuw en blijvend\" en laat de uitdovende weg; de keuze \"Uitdovend\" toont ze zoals voorheen.\n- **Clusterlijst:** gearchiveerde clusters staan er niet meer in, tenzij \"Toon ook gearchiveerde\" aan staat.\n- Wat al gekoppeld is aan een project of cluster blijft gekoppeld en zichtbaar; dit gaat over wat je nieuw kiest.\n\nTests: een uitdovende eindterm in de lijst en in de kiezer, een gearchiveerde cluster in de lijst, telkens verborgen tot erom gevraagd. Pint en PHPStan schoon.\n",
+            "branch": "workbench/verouderd-verborgen",
+            "title": "Uitdovende eindtermen en gearchiveerde clusters standaard verborgen, met een vinkje om ze toch te tonen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920194146-334021"
+}

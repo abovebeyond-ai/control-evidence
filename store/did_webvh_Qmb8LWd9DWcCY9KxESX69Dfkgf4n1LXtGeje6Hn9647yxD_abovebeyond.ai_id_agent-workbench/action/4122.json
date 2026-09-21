@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De zeven filters op Periodes waren kale `<select>`-elementen met `px-3`, dus de pijl van de browser viel over \"Alle\". Ze staan nu op `x-form.select`, dat rechts ruimte reserveert en zijn eigen pijl tekent, zoals de filters op het dashboard en de clusterlijst.\n\nHet component krijgt er `disabled:opacity-50 disabled:cursor-not-allowed` bij, zodat Stroom en Graad er uitgeschakeld ook zo uitzien als het schooljaar dat vraagt.\n\n`TermIndexTest` groen met `APP_DEBUG=true`; lokaal gerenderd en nagekeken.\n",
+            "branch": "workbench/periodes-selects",
+            "title": "De filters van Periodes op het select-component, met ruimte voor de pijl"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920085355-7a30ba"
+}

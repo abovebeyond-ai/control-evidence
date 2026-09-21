@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Elke pagina eindigt nu met een stille voet: \"Naviskore 1.0.0, build a1b2c3d\". Het nummer komt uit `VERSION` in de root, de build uit de checkout zoals `/.well-known/build.json` die al gaf; dat bestand draagt het nummer nu ook mee, dus Elixir en de voet zeggen hetzelfde.\n\n**Afspraak** (staat in `docs/deploy.md`): semantisch nummeren, `VERSION` ophogen in de pull request die de release maakt (patch voor een fix, minor voor iets nieuws, major als er iets wegvalt), en na de merge de merge-commit taggen als `vX.Y.Z`. De app leest het bestand, niet de tag, dus een vergeten tag maakt de voet niet fout. Dit is 1.0.0: het punt waarop de app de PoC-fase achter zich laat.\n\nTests: `VersionFooterTest` (het bestand is een releasenummer, de voet staat op een pagina, een bestand zonder nummer geeft geen versie); `BuildStampTest` verwacht het veld. Pint en PHPStan schoon.\n",
+            "branch": "workbench/versienummer",
+            "title": "Naviskore 1.0.0: een versienummer in VERSION, in de voet van elke pagina en in build.json"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920142618-aa4f6d"
+}

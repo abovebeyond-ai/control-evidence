@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e43d86e9b115ebaf13d6801a69b6c9cfdc06c837",
+            "branch": "workbench/prefix-streepje",
+            "files_sha256": "4ff009ccc5f46352a1a5c12efecf74dd13728a0b805e271463f37d880ab8225d",
+            "message": "Geen streepje voor een eindterm zonder prefix op de rapportvoorbereiding"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920141336-0a7e24"
+}

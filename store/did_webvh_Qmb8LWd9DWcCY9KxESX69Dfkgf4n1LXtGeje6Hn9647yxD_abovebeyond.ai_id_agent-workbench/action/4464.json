@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d381ca7c2269b788402d6f0d6109a633d653fbe",
+            "branch": "workbench/leerkrachtfotos",
+            "files_sha256": "41638f2e3debc0303e56729db9760daba9b24b23c396f35cba19dc30912bdf76",
+            "message": "De sync nummert ook de leerkrachten van de school, en de fotolader haalt hun foto op"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920194428-643681"
+}

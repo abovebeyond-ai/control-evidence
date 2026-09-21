@@ -1,0 +1,16 @@
+{
+    "action": "17d8c017d7845822fb25279572b451d1",
+    "effect": {
+        "detail": {
+            "base": "1fca6289d173359a061351fad814abb3773af124",
+            "branch": "workbench/fix/handler-checks-that-never-match",
+            "commit": "4e1e72a568956e254285330f1569c946599efbd8",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4179,
+    "verdict": "ALLOW"
+}

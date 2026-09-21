@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "992481eadf057fcc8de24163df4888f911fad371",
+            "branch": "workbench/leerkrachten-van-de-school",
+            "files_sha256": "bcd8ff3ca6b2d6ecef4b8d5b235fc6b47ab2b9062c3cd026ba847878feb13f48",
+            "message": "De leerkrachtenlijst is die van de gekozen school, zoals elke lijst"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920193200-193930"
+}

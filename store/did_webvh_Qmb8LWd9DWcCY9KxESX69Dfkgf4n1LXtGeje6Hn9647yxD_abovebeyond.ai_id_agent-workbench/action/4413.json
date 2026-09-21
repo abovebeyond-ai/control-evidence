@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vervangt #68, dat dicht mag. Een opengeklapt schooljaar toonde alleen projectnamen. Elke rij krijgt een stille tweede regel: het aantal evaluaties, het aantal teamleden en de klasgroepen. De periode van het project staat er niet: dat veld is verplicht bij het aanmaken maar zegt weinig. De controller telt evaluaties en team mee en laadt de klasgroepen over de jaren heen vooraf, dus geen query per rij. Test uitgebreid.\n",
+            "branch": "workbench/leerkracht-projectrijen-2",
+            "title": "Leerkrachtpagina: elke projectrij zegt hoeveel evaluaties, hoeveel teamleden en voor welke klasgroepen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920185713-275ebb"
+}

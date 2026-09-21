@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vervangt #77 en #78 (statische analyse rood: PHPStan kende het pivot-veld niet, en Pint wilde de klasse ge\u00efmporteerd). Na #75, en de uitkomst van de eerste run: Drie Hofsteden gaf \"Deze gebruiker bestaat niet\" voor precies de vier leerkrachten. Een leerkracht werkt op meer scholen en elk platform heeft eigen nummers; #75 bewaarde \u00e9\u00e9n nummer per persoon, dus Delphine kreeg het nummer van Heule en werd op Drie Hofsteden gevraagd.\n\n- Migratie: `school_staff.smartschool_number`, het nummer op de koppeling leerkracht-school.\n- De sync schrijft het daar; de fotolader leest het daar en vraagt een leerkracht alleen op de platforms die haar genummerd hebben.\n- Leerlingen houden hun nummer op het account: die horen bij \u00e9\u00e9n school.\n- Het oude nummer op `users` van leerkrachten blijft staan maar wordt niet meer gebruikt of geschreven.\n\nTests: de sync zet het nummer op de koppeling en niet op het account; de lader vraagt een leerkracht nooit met het nummer van een andere school. Volledige suite lokaal groen op de bekende `BuildStampTest` na.\n\nNa merge en deploy: eerst de sync, dan de foto's, zoals bij #47.\n",
+            "branch": "workbench/leerkrachtnummer-per-school-3",
+            "title": "Het Smartschool-nummer van een leerkracht per school, niet per persoon"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920200853-ffef5d"
+}

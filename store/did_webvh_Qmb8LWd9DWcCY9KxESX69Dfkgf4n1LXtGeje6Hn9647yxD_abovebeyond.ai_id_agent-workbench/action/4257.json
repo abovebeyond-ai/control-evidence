@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fbeaa813d9b98f4c6ce1cad4d3e63e2a05b094b6",
+            "branch": "workbench/fix/interface-defaults",
+            "files_sha256": "d418782a88171604182cd12b0bdaf1e6904d7d587c4c0823d82cc565c6d129be",
+            "message": "Two signatures that PHP has been complaining about"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920130128-3099d9"
+}

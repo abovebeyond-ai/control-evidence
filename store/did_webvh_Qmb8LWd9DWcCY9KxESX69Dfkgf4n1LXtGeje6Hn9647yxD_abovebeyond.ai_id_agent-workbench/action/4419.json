@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "From Nightwatch (issue 19, this afternoon): Amazonbot asked for `/website/detail/ODM2OQ==` and got a 500.\n\nThat address is missing the `&` the detail route expects, so it falls through to `website/{dealer_hash}/{params?}` with the word \"detail\" as the hash. `Crypt::decryptString` throws on anything that is not a valid encrypted value, nobody caught it, and the visitor got a 500 while the log got an error that is not an error. The same held for a valid hash of a dealer who no longer exists: `find` returned `null` and the next line read a field off it.\n\nThese pages are public and followed by search engines, so an old, truncated or invented address is an ordinary event, not an incident. A 500 says the fault is ours; a wrong link is the visitor's.\n\nOne place now turns a hash into a dealer \u2014 `dealerIdFromHash` catches `DecryptException` as a 404, `websiteDealer` answers 404 when the dealer is gone \u2014 and every public entry point of the website module goes through it: the catalogue, the detail page, the search, the model and body-style lists behind the search bar, and the lead form. The two encryption shapes stay side by side because the blades make both: `Crypt::encryptString` for the detail page and the mode button, `Crypt::encrypt` for the search form and the dropdown lists. The colon case (a hash that carries more than the id) moved into the helper unchanged.\n\nNew rule R S2-5.24, and `AWrongWebsiteLinkIsNotACrashTest` pins it with Amazonbot's own address as the first case, plus a hash that is not an encrypted value, a truncated one, a valid hash of a deleted dealer, the detail page, the model list, and a real hash that still opens the site. Checked against the unfixed code: six of the seven failed.\n\nFixes bevinding een-oud-website-adres-geeft-500.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/a-wrong-link-is-not-a-crash",
+            "title": "A wrong website link is a 404, not a crash"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920190611-632f53"
+}

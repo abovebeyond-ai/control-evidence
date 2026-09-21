@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Finding #613 said the vehicles Hexon imports for Garage Heuten stand on the sheet without a chassis number, and named `api_log` on production as the way to find out which key Hexon actually sends. Read it, and the question answers itself.\n\n**Nine `store` calls for that dealer are still inside the five-day window.** Eight carry no `vin` key at all in the `main` group; one does (18 September, `wauzzzgy8sa095429`). So Hexon uses exactly the key we document and leaves it out when the AutoScout listing has no chassis number. There is no mapping on our side dropping anything, and there is nothing to ask Hexon: what AutoScout does not carry, Hexon cannot forward. For those vehicles the road is the chassis lookup on the sheet (R S1-9.24, R S1-2.19).\n\nThe complaint itself is gone: all six Heuten vehicles have a chassis number today, and the five from 17 September are in capitals, so they were filled in afterwards.\n\n**What did come out of it.** The one vehicle Hexon sent *with* a number is the only one of the six stored in lowercase, and that turns out to be the rule rather than an accident: **521 of the 3,472** vehicles with a chassis number carry lowercase letters. The platform stored the number exactly as it arrived, and that differs per road \u2014 typed on the sheet it is capitals, through the partner API it is whatever the partner wrote. A VIN is capitals by norm, and the letters I, O and Q are deliberately excluded from it so it cannot be confused with 1 and 0.\n\nSeven places write this field (the sheet, the partner API, the Modix import, the Car-Pass correction and three lookup paths), so the normalisation sits on the model where every Eloquent write passes through it. The one road that would bypass a mutator is a raw `DB::table()->update()`, and the only one of those in the codebase does not touch this field.\n\n`stocklist:chassisnummers` brings the rows that were already there into the same shape. It prints what it would change and only writes with `--apply`, in chunks of a hundred, and it writes past the model on purpose: the shape of the number changes, the vehicle does not, so no observer fires and no webhook, portal or Nederland Mobiel call goes out. **Running it on production is yours to do.**\n\nNew rule R S1-2.21. `AChassisNumberIsWrittenTheSameWayTest` pins the capitals, the trimming, a number that is already right, empty and null, an update going through the same door, and the command in both its modes.\n\nFixes bevinding hexon-chassisnummer-leeg-na-import.\nFixes #613\n",
+            "branch": "workbench/fix/a-chassis-number-is-written-the-same-way-everywhere",
+            "title": "A chassis number is written the same way everywhere"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921060328-6e553b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1c6d24957f45563524316abf7b1b01971d81f6b3",
+            "branch": "workbench/versienummer",
+            "files_sha256": "8d3d9e9b2750dc331559c89f78505d34900776ac3b0226e4b921cdfc66e3a5fc",
+            "message": "Naviskore 1.0.0: een versienummer in VERSION, in de voet van elke pagina en in build.json"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920142618-aa4f6d"
+}

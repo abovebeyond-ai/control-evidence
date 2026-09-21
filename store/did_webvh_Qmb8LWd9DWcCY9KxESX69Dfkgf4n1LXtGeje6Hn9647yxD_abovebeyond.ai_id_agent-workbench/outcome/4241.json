@@ -1,0 +1,16 @@
+{
+    "action": "4b64bf4f69617e97cf0802faa50f7662",
+    "effect": {
+        "detail": {
+            "base": "2404bf4b8ede125d026b8581bed8986ff837ccb6",
+            "branch": "workbench/kuis/resources",
+            "commit": "c2f64b5e5430804d68523d94921bf7099ac7b474",
+            "files": 26,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4239,
+    "verdict": "ALLOW"
+}

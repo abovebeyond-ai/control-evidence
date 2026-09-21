@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5b2d32a864f3828ce376d4ebef2911c28b46a958",
+            "branch": "workbench/fix/one-route-cache-for-six-processes",
+            "files_sha256": "77e111b7393913dff5f8a9c1d34aaad04598e0844ce831f28ce8714b8fac4a60",
+            "message": "One route cache for six processes"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920194800-1a317f"
+}

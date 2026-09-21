@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ed76c85875a06bd53afa52e92da8dd4bb8511276",
+            "branch": "workbench/fix/three-settings-that-quietly-did-nothing",
+            "files_sha256": "cf1327e59351c5af1965ff78948d8452fcf48538d4e56ad3ed234693d7871a40",
+            "message": "Three settings that quietly did nothing"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920152217-2b45fa"
+}

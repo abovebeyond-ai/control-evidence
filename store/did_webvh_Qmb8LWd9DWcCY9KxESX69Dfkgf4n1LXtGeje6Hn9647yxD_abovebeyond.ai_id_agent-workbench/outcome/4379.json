@@ -1,0 +1,16 @@
+{
+    "action": "b9b784944fe321b678a4770c734a2d2a",
+    "effect": {
+        "detail": {
+            "base": "df46f81b37a79d329dbc0d7d3e497ce386a5a870",
+            "branch": "workbench/curriculum-scopes",
+            "commit": "591fdec28c58c51f0590d323ab4735983548d092",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4377,
+    "verdict": "ALLOW"
+}

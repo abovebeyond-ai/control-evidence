@@ -1,0 +1,16 @@
+{
+    "action": "771b43d057c03afa6ffc2e2f9e0a5cd6",
+    "effect": {
+        "detail": {
+            "base": "ba3ec54ba397dd2079362b77c6f072ecb95096d3",
+            "branch": "workbench/projectenlijst-mobiel",
+            "commit": "e8af085b1c6177ab9ed2c31f2853ab23f2296d02",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4476,
+    "verdict": "ALLOW"
+}

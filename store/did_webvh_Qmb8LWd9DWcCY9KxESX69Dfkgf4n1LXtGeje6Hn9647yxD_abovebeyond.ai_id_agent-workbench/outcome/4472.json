@@ -1,0 +1,16 @@
+{
+    "action": "c4592d1467aa776bdabad06bf3e84724",
+    "effect": {
+        "detail": {
+            "base": "5b2d32a864f3828ce376d4ebef2911c28b46a958",
+            "branch": "workbench/fix/one-route-cache-for-six-processes",
+            "commit": "fa12a65834c5495a17f29e8520affc06ab8daacb",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4470,
+    "verdict": "ALLOW"
+}

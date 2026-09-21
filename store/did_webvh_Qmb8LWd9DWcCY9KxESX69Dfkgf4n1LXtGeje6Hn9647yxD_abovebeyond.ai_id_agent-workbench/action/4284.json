@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "In Laatste scores stond \"groen\" als woord; nu staat een kleurwaarde in haar kleur, met dezelfde klassen als de scorelijsten (score-green, score-red, ...). Een evaluatie zonder titel toonde alleen een datum; die heet nu \"Evaluatie\".\n",
+            "branch": "workbench/kleurwaarden",
+            "title": "Laatste scores: een kleurwaarde in haar kleur, en een evaluatie zonder titel heet Evaluatie"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920141348-0bcf38"
+}

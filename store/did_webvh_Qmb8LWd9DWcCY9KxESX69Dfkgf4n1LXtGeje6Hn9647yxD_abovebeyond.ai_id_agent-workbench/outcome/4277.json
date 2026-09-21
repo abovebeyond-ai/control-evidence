@@ -1,0 +1,16 @@
+{
+    "action": "17484a8ca497a0207f85a2330305768b",
+    "effect": {
+        "detail": {
+            "base": "e43d86e9b115ebaf13d6801a69b6c9cfdc06c837",
+            "branch": "workbench/prefix-streepje",
+            "commit": "bb1149be3aa81bc58a7eebce56d3fa68ccacc27a",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4275,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "011221b246b968ad81bd6622de3cddad",
+    "effect": {
+        "detail": {
+            "base": "eba718023a469a1aeac30e391b9bab26a6521d1a",
+            "branch": "workbench/rapporten-mobiel",
+            "commit": "8e4c4a481ab6bf0d67a0d11d2b17f0b96108ee84",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4548,
+    "verdict": "ALLOW"
+}

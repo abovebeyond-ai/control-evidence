@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ebd3dd8497e33c633f9551fc7ba57ae70be63087",
+            "branch": "workbench/leerkrachtnummer-per-school",
+            "files_sha256": "bf1c93006096f791696b39affbfb49901290428f0cbbde5ceab24a94c5460d01",
+            "message": "Het Smartschool-nummer van een leerkracht per school, niet per persoon"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920195745-013eb3"
+}

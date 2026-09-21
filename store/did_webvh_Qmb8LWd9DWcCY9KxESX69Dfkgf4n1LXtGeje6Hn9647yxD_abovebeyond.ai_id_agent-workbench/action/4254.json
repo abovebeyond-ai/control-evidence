@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na #54. In Rapporten staat elke klasgroep nu als rij met een pijltje: dit schooljaar open, de vorige jaren ingeklapt met het aantal rapporten ernaast. Een leerling in het vierde jaar heeft er twintig, en de oude zijn zo \u00e9\u00e9n klik weg zonder de kaart te vullen.\n",
+            "branch": "workbench/rapporten-ingeklapt",
+            "title": "Rapporten van vorige jaren ingeklapt, dit jaar open"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920125731-e4b9e9"
+}

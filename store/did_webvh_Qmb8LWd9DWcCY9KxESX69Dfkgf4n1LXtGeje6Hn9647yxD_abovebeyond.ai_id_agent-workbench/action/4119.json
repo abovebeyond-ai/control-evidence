@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "df010ca8206cb7ac93fde994f49ba1f4eac79a7f",
+            "branch": "workbench/periodes-selects",
+            "files_sha256": "018dd6cceda1c75a358a05724ce340399513c9ada18cb4b41973c084caee0733",
+            "message": "De filters van Periodes op het select-component, met ruimte voor de pijl"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920085355-7a30ba"
+}

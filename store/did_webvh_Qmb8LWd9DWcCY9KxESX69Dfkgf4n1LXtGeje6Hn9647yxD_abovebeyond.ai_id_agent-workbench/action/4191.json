@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1fca6289d173359a061351fad814abb3773af124",
+            "branch": "workbench/ui-kop",
+            "files_sha256": "755068af11caffcbf649e55a019168fb8c4bd86af39c1aa281258fea1945474b",
+            "message": "One list shouted its column headers in blue"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920113314-23d55f"
+}

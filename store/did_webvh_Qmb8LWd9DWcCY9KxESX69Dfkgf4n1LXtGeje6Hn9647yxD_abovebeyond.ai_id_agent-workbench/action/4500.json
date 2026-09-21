@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "136be7b13bb809348a827af2033c10b9a0df6f8c",
+            "branch": "workbench/feat/a-refusal-from-a-partner-is-visible",
+            "files_sha256": "6108821e62abaa7c986bbda296cb95ac51237404ee042520a97cc228db33beb1",
+            "message": "A refusal from a partner is visible"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920201356-72012f"
+}

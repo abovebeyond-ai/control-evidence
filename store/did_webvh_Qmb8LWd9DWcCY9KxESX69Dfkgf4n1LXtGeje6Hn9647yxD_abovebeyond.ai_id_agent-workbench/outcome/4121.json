@@ -1,0 +1,16 @@
+{
+    "action": "332364560367a55171187e6f7281771e",
+    "effect": {
+        "detail": {
+            "base": "df010ca8206cb7ac93fde994f49ba1f4eac79a7f",
+            "branch": "workbench/periodes-selects",
+            "commit": "5d7e2347f88719300617d636e7e3b74503871d43",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4119,
+    "verdict": "ALLOW"
+}

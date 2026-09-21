@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7bf5322886b3b38009fb3af6880392d468b83683",
+            "branch": "workbench/leerkracht-projectrijen-2",
+            "files_sha256": "444f2c6dc32a202453da0f2d4ec427228167f10b26de315293d076840073a1a3",
+            "message": "Leerkrachtpagina: elke projectrij zegt hoeveel evaluaties, hoeveel teamleden en voor welke klasgroepen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920185713-275ebb"
+}

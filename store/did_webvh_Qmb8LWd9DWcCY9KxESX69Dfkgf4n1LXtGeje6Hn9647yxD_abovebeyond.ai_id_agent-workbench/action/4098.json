@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Measured first. A run costs **eleven billed minutes**:\n\n| job | min/run |\n|---|---|\n| phpunit | 5,1 |\n| Static analysis | 1,9 |\n| the five small ones | 1 each |\n\nThe five small ones cost five minutes for about two minutes of work, because GitHub rounds every\njob up to a whole minute. At about thirty-two runs a day this week that is some seven thousand\nminutes a month against three thousand included, and every minute above that is billed.\n\n**Two changes, and not one test fewer.**\n\n**A superseded run is cancelled.** Push twice to the same branch and the first run is about code\nthat no longer exists. On pull requests only: every commit on main stays measured, because the\ncoverage report Elixir reads and the build Forge deploys both hang on it. The concurrency group\ncarries the event, so a pull request run can never cancel the main run of the commit it was merged\ninto.\n\n**The four quality jobs run on the pull request and not again on main.** `up-to-date` already says\na pull request was built on the current main, so repeating them on main measures the same code\ntwice.\n\nWhat that gives up, named plainly: the one case where it is *not* the same code \u2014 two pull requests\nmerged in quick succession, the second one current when it ran and no longer when it landed. That\nhappened yesterday (671 went in while it was behind 668). The answer is to re-propose a pull request\nwhose `up-to-date` is red, which costs me a minute, rather than to buy four checks twice on every\nmerge forever. phpunit and assets do stay on main: the first because Elixir reads its report from\nthere, the second because main is what Forge deploys and a red build here is a failed deploy there.\n\n| | before | after |\n|---|---|---|\n| pull request | 11 min | 11 min |\n| main after the merge | 11 min | 6 min |\n| a superseded push | runs out | cancelled |\n\nTwenty-two billed minutes per change becomes seventeen. If the pace stays this high, the next step\nis a runner of our own on a small VM (about five euro a month, minutes free), and that one is worth\nits own conversation rather than a pull request.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/ci/cheaper-runs",
+            "title": "A run costs eleven billed minutes, and every change was paying twice"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920074309-03cafc"
+}

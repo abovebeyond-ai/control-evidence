@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Tweede mobiele reeks: de beheerlijsten met drie tot acht kolommen. Op een telefoon blijven de naam en de actie over, de andere kolommen verschijnen vanaf `md` (klasgroepen vanaf `lg`, scholen en de herkomst van eindtermen vanaf `sm`). Zeven lijsten: klasgroepen, curricula, leerlingengroepen, schooljaren, scholen, eindtermen, clusters. Het patroon van de projectenlijst in #76; kop en cellen per kolom samen aangepast, de tests van de lijsten groen.\n",
+            "branch": "workbench/mobiel-lijsten",
+            "title": "Beheerlijsten op een telefoon: de naam blijft, de andere kolommen verschijnen vanaf md"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921061321-fe19de"
+}

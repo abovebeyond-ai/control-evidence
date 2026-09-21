@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cf1c01acd92b1346700607d75de66e9dd0141564",
+            "branch": "workbench/een-lezer-van-de-school",
+            "files_sha256": "623aca6c737d1ef525eadcbc34a3084f8151a3ae87a43c6721f20bfaaa081942",
+            "message": "E\u00e9n lezer van de gekozen school: SchoolService, ook waar geen school mag ontbreken"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920145537-b238cd"
+}

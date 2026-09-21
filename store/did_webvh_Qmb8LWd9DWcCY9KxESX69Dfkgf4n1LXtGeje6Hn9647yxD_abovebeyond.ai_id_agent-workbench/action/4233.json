@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0f58ebe7fe40e8b23a64dc662381aa4de495672a",
+            "branch": "workbench/twee-percentages",
+            "files_sha256": "4f66e9dd806079dea23b76f001bb474799ff8a5082f81308f1a41ee03c10bcf9",
+            "message": "Twee percentages naast elkaar, niet groter dan nodig: van de aangereikte eindtermen en van alle"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920123553-7d5294"
+}

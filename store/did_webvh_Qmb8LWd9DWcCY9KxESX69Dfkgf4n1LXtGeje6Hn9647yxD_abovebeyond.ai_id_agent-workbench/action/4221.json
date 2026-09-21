@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "93dd075d60b8df5857a8bb396052c97115cbd965",
+            "branch": "workbench/zonder-bereik",
+            "files_sha256": "bc2b3f0997073e2c122476125140ea7fb83f3437811f6369ddd634a7e6303142",
+            "message": "De leerlingpagina leest het vooruitgangsrapport zoals het is, en telt eindtermen, geen scores"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920121655-41a115"
+}

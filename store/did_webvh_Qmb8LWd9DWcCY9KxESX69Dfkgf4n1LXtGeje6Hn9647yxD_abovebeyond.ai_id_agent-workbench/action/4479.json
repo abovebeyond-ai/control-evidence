@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op een telefoon viel de kolom Coaches van de projectenlijst buiten beeld. Onder `md` is de tabel nu \u00e9\u00e9n kolom: de klasgroepen als badges en de coaches als stille regel onder de projectnaam, de twee andere kolommen verborgen. Boven `md` verandert er niets. Dit is het patroon voor de andere lijsten; een audit van alle pagina's op een telefoon loopt.\n",
+            "branch": "workbench/projectenlijst-mobiel",
+            "title": "Projectenlijst op een telefoon: \u00e9\u00e9n kolom, klasgroepen en coaches onder de naam"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920195003-7fd0b3"
+}

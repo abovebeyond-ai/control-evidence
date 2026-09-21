@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1fca6289d173359a061351fad814abb3773af124",
+            "branch": "workbench/fix/catch-blocks-that-cannot-catch",
+            "files_sha256": "23ca7eece4279b05621866373ac7967266817e8e16d4d09bec1a3a25c357cafc",
+            "message": "Fifty-six catch blocks that could never catch anything"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920103024-2f15fa"
+}

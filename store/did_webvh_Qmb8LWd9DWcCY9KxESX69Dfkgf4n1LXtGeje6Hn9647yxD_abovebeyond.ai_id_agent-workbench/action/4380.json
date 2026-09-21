@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Tenancy, stap drie en de laatste `withoutGlobalScopes()` (na #66).\n\n`CurriculumService` haalde op vijf plekken elke scope van de clusters weg in de rapportweg: basisvorming, specifiek gedeelte, levensbeschouwing, complementaire vakken en basisgeletterdheid. De schoolscope op clusters is \"van deze school of officieel\"; zonder die scope kwam een cluster die een andere school voor zichzelf maakte, met dezelfde stroom en graad, op een rapport van deze school.\n\n- De vijf aanroepen zijn weg; de scope blijft staan. Hij verdraagt een run zonder gekozen school (sinds #62 via `selectedId()`), dus `ReportSnapshot` en de commando's lopen onveranderd.\n- Het rapportsnapshot en de volledige suite blijven groen: voor de eigen school verandert er niets.\n- Nieuwe test in `ProgressReportTest`: een cluster van een andere school, zelfde stroom en graad, staat niet op het rapport. Zonder de wijziging faalt hij op precies dat vak.\n\nDaarmee staat er geen `withoutGlobalScopes()` meer in `app/`. Wat er van scopes weggaat, heet nu overal: `acrossSchoolyears()`, `acrossSchools()`, `acrossEverySchool()`. Volgende stap in het tenancy-werk: policies voor project, evaluatie en leerling.\n",
+            "branch": "workbench/curriculum-scopes",
+            "title": "De rapportweg houdt de schoolscope op clusters: wat een andere school voor zichzelf maakte blijft uit het rapport"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920180845-a11d7b"
+}

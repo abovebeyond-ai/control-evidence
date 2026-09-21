@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e32bab48c92f69ee4ad3f57deced8853cc97eaba",
+            "branch": "workbench/rapporten-ingeklapt",
+            "files_sha256": "a0a2f67011d1dc16d513c5ef7abdfd7dc344ce07a9894853ef62fee29365fdac",
+            "message": "Rapporten van vorige jaren ingeklapt, dit jaar open"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920125731-e4b9e9"
+}

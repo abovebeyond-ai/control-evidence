@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Ninety-one Eloquent models carried no `@property` annotations, so the analysis knew none of their\ncolumns and wrote nine hundred findings about it. They are generated now, from the schema\n(`ide-helper:models`), and that is what makes the analysis worth reading: from here on a typo in a\ncolumn name is caught instead of silently reading null.\n\n**The harvest was smaller than that number suggests, and I would rather say so.** The annotations\nsurfaced fourteen new findings and not one of them was a bug:\n\n- a tautology in a ternary in `ProcessImage` (the second branch re-tested what the first had already\n  settled) \u2014 simplified, same behaviour;\n- six `?->` on something that cannot be null \u2014 plain `->` now, which also says what the author knew;\n- a pivot the analyser could not see from the other side of a `belongsToMany` \u2014 annotated on `Option`\n  with the columns the relation carries.\n\nAll of them cleaned up here rather than written into the baseline, because a baseline that grows\nwhen you look at it stops being a baseline:\n\n| | |\n|---|---|\n| findings | 2.056 \u2192 **1.825** |\n| entries | 76 removed, **0 added** (I diffed the two) |\n\n**One generated line could not stand.** A column whose name begins with a digit\n(`2ehandsbepremium_value`) cannot be a PHP property, so the generator wrote invalid PHPDoc that no\nparser can read. A sentence in its place says where that column does live.\n\n**What is left of that family is not about our models**, and it is worth naming so the next person\ndoes not go looking: `auth()->user()` is an `Authenticatable` to the analyser (66 findings; this\nLarastan has no setting to say otherwise), and the API resources reach their model through\n`__get` (about a hundred). The second is the one to do next \u2014 a typo in a resource is a silent\nnull in what a partner receives, which is exactly the kind of thing nobody reports.\n\n1.826 tests green.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/kuis",
+            "title": "The models say which columns they have"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920122352-8e4d15"
+}

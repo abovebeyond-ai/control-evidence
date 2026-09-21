@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Phase 2 of `docs/design/sources-before-more-sources.md`, second platform. No cost,\nno account, no decision needed: this one was ours.\n\n## Silent since 12 March, and nothing ever broke\n\nThe feed answered 200 with ten items per country the whole time. But Google puts\n**the same `<link>` in every item**, the address of the feed itself, and this\nadapter used the link as the signal's url. The url is the dedup key. So the first\nitem ever seen for a country claimed it, and every trend after was \"already\nknown\". Six signals in total, one per country, all from the first day.\n\nA healthy feed and a collector that threw all of it away, with no error and no\nempty answer to notice. `adapter_runs` had it as `unknown` every round, which is\nexactly the outcome that says \"this adapter does not tell us what it fetched\".\n\n## The fix\n\n- **The key is built from what makes a trend this trend**: the term and the\n  country. A feed may not be trusted to hand out identities. Case and stray\n  spaces do not make a new trend.\n- **The `ht:` fields were never parsed**, because rss-parser drops what it is not\n  told about. Traffic, picture and the news items under a term are read now.\n  \"brigitte macron\" alone says nothing; the headline under it is what lets the\n  classifier tell a youth signal from the weather.\n- It reports what it fetched, so its outcome stops reading `unknown`.\n\nThis is also **the one platform source that still speaks for Belgium and the\nNetherlands**: TikTok stopped publishing trends for both.\n\nThe test uses the feed as Google gave it on 20 September and asserts the bug in\none line: both items carry the same link, and must get two keys.\n\n788 tests pass, 5 new.\n",
+            "branch": "workbench/google-trends-identity",
+            "title": "Google Trends: a feed may not hand out identities"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260920110047-406723"
+}

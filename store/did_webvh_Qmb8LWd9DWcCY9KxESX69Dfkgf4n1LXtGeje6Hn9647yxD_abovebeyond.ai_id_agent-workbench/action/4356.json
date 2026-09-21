@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De leerkrachtpagina, in dezelfde vorm als de leerlingfiche. Kop met foto, opschrift \"Leerkracht\", de naam en de scholen eronder; \"Bewerken\" voor beheerders. Hoofdkolom: de projecten per schooljaar, dit jaar open en de vorige ingeklapt met het aantal ernaast, \u00e9\u00e9n project per rij die opent. Zijkolom: e-mailadres, Microsoft e-mail, rollen als stille badges, scholen. Geen hard blauw, geen onderstreping, geen komma-lijn meer. De controller laadt scholen, rollen en projecten met hun schooljaar vooraf en groepeert ze, in plaats van closures in de view. Nieuw: `StaffShowTest`.\n",
+            "branch": "workbench/leerkrachtpagina",
+            "title": "De leerkrachtpagina in de vorm van de fiche: projecten per schooljaar als rijen, de basics ernaast"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920151533-969a8b"
+}

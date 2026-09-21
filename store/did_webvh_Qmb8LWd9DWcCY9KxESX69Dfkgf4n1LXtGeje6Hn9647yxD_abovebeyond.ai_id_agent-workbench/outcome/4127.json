@@ -1,0 +1,16 @@
+{
+    "action": "977aeac00292939f1a20d8ad1474c7e1",
+    "effect": {
+        "detail": {
+            "base": "df010ca8206cb7ac93fde994f49ba1f4eac79a7f",
+            "branch": "workbench/fotos-op-gebruikersnaam",
+            "commit": "a331753aa879db726ff7aad5b961ec2fd55c4501",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4125,
+    "verdict": "ALLOW"
+}

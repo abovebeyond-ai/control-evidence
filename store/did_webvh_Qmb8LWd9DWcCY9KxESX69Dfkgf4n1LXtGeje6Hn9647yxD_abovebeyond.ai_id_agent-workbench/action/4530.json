@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e1fea36448ac7f39ba96c2e885dd6ea97145f358",
+            "branch": "workbench/mobiel-lijsten",
+            "files_sha256": "244a584091bedaa8935861afd9b9be4e1def91678c394960fbe390a0192f67f4",
+            "message": "Beheerlijsten op een telefoon: de naam blijft, de andere kolommen verschijnen vanaf md"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921061321-fe19de"
+}

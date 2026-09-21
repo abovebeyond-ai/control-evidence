@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "df010ca8206cb7ac93fde994f49ba1f4eac79a7f",
+            "branch": "workbench/fotos-op-gebruikersnaam",
+            "files_sha256": "7e9fa146f68b44d0bf9cad19dbf6d1a6daf7e6bf60c6b44533a80190ff8601f0",
+            "message": "De fotolader vraagt Smartschool op gebruikersnaam"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920085458-212321"
+}

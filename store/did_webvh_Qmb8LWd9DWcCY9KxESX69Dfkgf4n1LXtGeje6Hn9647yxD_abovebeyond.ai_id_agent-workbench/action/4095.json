@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0318b11bd2be0ca8868b20ce9767684ee7ec1549",
+            "branch": "workbench/ci/cheaper-runs",
+            "files_sha256": "b8b49803184be5317e2da9e249eaf4c0e1acfc787becdf34de1b1010f3f139ad",
+            "message": "A run costs eleven billed minutes, and every change was paying twice"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920074309-03cafc"
+}

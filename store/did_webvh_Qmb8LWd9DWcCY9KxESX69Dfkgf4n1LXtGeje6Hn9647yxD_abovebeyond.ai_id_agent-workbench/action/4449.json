@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De leerkrachtenlijst toonde elke leerkracht van de installatie, over scholen heen, met een badge per school om ze uit elkaar te houden. Nu is het de lijst van de gekozen school, zoals leerlingen, projecten en klasgroepen; de scholen van een leerkracht worden vooraf geladen. De titel heet \"Leerkrachten\" met hoofdletter. Test: een leerkracht van een andere school staat er niet in.\n",
+            "branch": "workbench/leerkrachten-van-de-school",
+            "title": "De leerkrachtenlijst is die van de gekozen school, zoals elke lijst"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920193200-193930"
+}

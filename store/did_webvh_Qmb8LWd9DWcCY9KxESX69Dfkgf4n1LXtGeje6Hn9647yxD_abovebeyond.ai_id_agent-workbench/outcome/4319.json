@@ -1,0 +1,16 @@
+{
+    "action": "99b69810268889942f4558a8d97d4ae0",
+    "effect": {
+        "detail": {
+            "base": "ab11724f3df336b1de780b9ca7d8d0c45a01b753",
+            "branch": "workbench/feat/webhook-only-on-change",
+            "commit": "86aba70950ea9cea1bf514e04cd3a8ca1053b050",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4317,
+    "verdict": "ALLOW"
+}

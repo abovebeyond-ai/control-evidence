@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na #51, dat intussen gemerged is: de jaarfilter op het rapport blijft bestaan en getest, maar de pagina gebruikt hem niet meer.\n\nHet vooruitgangsrapport kijkt over alle niet-zittenblijvende jaren van de graad en heeft zelf geen jaarfilter; die zit op de deliberatie. De schakelaar \"Dit schooljaar / Hele graad\" op de leerlingpagina deed alsof het rapport dat wel had en toonde in september de scores van juni onder \"Dit schooljaar\". De kaart leest het rapport nu zoals het is, zonder schakelaar, en zegt in de ondertitel welke jaren het beslaat als dat er meer dan \u00e9\u00e9n zijn (\"Hele graad, 2024-2025 en 2025-2026\").\n\nDe kop las als een score: \"97% behaald op 67% afgenomen evaluaties\". Het gaat om eindtermen, dus: **97%** \"van de aangereikte eindtermen behaald\", eronder \"106 van 109 aangereikte eindtermen behaald, 52 van 161 nog niet aangereikt\", en per vak \"behaald / aangereikt / totaal\".\n\nTests groen, Pint en PHPStan schoon; volledige suite lokaal op de bekende `BuildStampTest` na.\n",
+            "branch": "workbench/zonder-bereik",
+            "title": "De leerlingpagina leest het vooruitgangsrapport zoals het is, en telt eindtermen, geen scores"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920121655-41a115"
+}

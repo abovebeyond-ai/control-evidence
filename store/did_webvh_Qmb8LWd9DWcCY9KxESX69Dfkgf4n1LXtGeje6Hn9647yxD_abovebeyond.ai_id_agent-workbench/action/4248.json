@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De leerlingpagina (#50, #52) toont sinds vandaag alleen nog hoe het gaat en stuurt voor de rest naar \"Leerlingfiche\"; die knop ging naar het bewerkformulier, dat alleen beheerders zien. Nu is er een fiche die toont, voor iedereen die de leerling mag zien. Lokaal gerenderd en nagekeken.\n\n**Route en pagina:** `students.fiche` op `/leerlingen/{student}/fiche`, in de leerkrachtroutes; kop met foto, opschrift \"Leerlingfiche\", naam en waar de leerling dit jaar zit. Beheerders zien \"Bewerken\" naar het bestaande formulier.\n\n**Wat er staat**, nagekeken tegen wat de databank over een leerling bewaart:\n- **Basisinformatie:** voornaam, familienaam, stamboeknummer, school, in Naviskore sinds.\n- **Accounts:** Smartschool gebruikersnaam, e-mail en nummer, Microsoft e-mail, en de samengevoegde accounts (de aliassen die de sync overslaat).\n- **Loopbaan:** per schooljaar de klasgroep, zittenblijven als badge, en het attest van dat jaar.\n- Een niet-actieve leerling krijgt dezelfde melding als op de leerlingpagina.\n\n**Wat er bewust niet staat:** leerlingengroepen en projecten (dat zijn lijsten die elders hun pagina hebben), rollen en technische velden (wachtwoord, tokens, e-mailverificatie). Meer bewaart Naviskore niet over een leerling.\n\n**Leerlingpagina:** de knop \"Leerlingfiche\" gaat nu naar de fiche en staat er voor iedereen, ook leerkrachten zonder beheerrecht, die sinds #50 het stamboeknummer nergens meer zagen.\n\nTests: `StudentFicheTest` (leerkracht ziet velden, accounts, loopbaan en attest, geen Bewerken; beheerder wel), `StudentShowTest` bijgewerkt. Volledige suite lokaal groen op de bekende `BuildStampTest` na, Pint en PHPStan schoon.\n",
+            "branch": "workbench/leerlingfiche",
+            "title": "De leerlingfiche: wat Naviskore over een leerling bewaart, om te lezen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920125009-eb6312"
+}

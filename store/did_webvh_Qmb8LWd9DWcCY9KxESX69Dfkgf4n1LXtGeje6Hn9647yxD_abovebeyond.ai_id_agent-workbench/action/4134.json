@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "This watch has published `broken` every day since 14 September, six verdicts in a row, on a\nsingle line:\n\n```\nBROKEN gateway: the measured binary is not the release asset (315c4e8ca125bdd4\u2026)\n```\n\nNothing is wrong with the evidence. The checker was too old to read it.\n\n`CONTROL_TAG` stood at v0.16.4 while the gateway moved through v0.17 to v0.29.0. The same\nstore, the same identity log, the same anchors, checked with `cmd/verify` built from\nv0.29.0, gives:\n\n```\nholds  gateway: the records name release v0.29.0, whose asset matches its published sha256\nholds  gateway: the measured binary is the release asset\nexit code 0 \u00b7 35 holds \u00b7 0 broken\n```\n\nSo the pin moves to v0.29.0.\n\nThe comment above the check said the checker's tag \"need not match the machine\". That was\nthe sentence that let this run for six days, so it is replaced by what actually holds: the\nchecker need not be the reference, but it does have to be able to read what the machine\nwrites, and the tag has to move with the gateway's releases.\n\n**What this does not fix.** Nobody was told. This repository is where an outsider looks to\nsee whether the Proof-of-Control claim stands, and it said `broken` to the world for six\ndays with no alarm anywhere. It surfaced by accident, in a mail filter. A watch that fails\nsilently is the thing this whole design exists to prevent, and that part is still open.\n",
+            "branch": "workbench/verifier-on-v0.29.0",
+            "title": "De checker op v0.29.0"
+        },
+        "resource": "abovebeyond-ai/verify-abovebeyond"
+    },
+    "run": "workbench-20260920090040-4217eb"
+}

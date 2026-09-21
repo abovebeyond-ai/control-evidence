@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1c6d24957f45563524316abf7b1b01971d81f6b3",
+            "branch": "workbench/schoolkeuze-cache",
+            "files_sha256": "2bfb46fb0444d796b8fe746143a4796cb58df5d23f5fc407f664fbce0a49a5f2",
+            "message": "De gekozen school in de cache onder een sleutel met de school erin"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920143606-011341"
+}

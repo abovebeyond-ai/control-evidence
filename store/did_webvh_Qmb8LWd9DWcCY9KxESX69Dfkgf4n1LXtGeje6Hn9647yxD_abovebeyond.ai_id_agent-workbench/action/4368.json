@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Tenancy, stap twee (na #62): geen `withoutGlobalScopes()` meer buiten de curriculumservice.\n\nDe global scopes zijn de autorisatie van de app; `withoutGlobalScopes()` haalde ze op dertig plekken allemaal weg waar er \u00e9\u00e9n bedoeld was. Nu zeggen de aanroepers wat er gaat:\n\n- **`Offering`, `StudentGroup` en `Project`** krijgen `acrossSchoolyears()` (het jaar gaat, de school blijft: een rapport of groep van vroeger) en `acrossSchools()` (de school gaat: een consolerun die haar school zelf noemt, een overzet tussen campussen). Elk een regel, met het waarom erbij.\n- **Rapport, login, routebinding, evaluatie, cluster:** telkens de ene scope die bedoeld was. Bij de login is nog geen school gekozen, dus daar gaat de school; bij een rapport van een vroeger jaar gaat het jaar; bij \"hoort dit project bij een andere school\" gaat de school, met naam.\n- **`StudentGroup::offering()`** is \u00e9\u00e9n rij op id; de relatie draagt geen van beide scopes meer, en de drie aanroepers die ze weghaalden zijn gewone relatietoegang geworden.\n- **`Student::getEnrollmentsWithOfferings()`** had een try/catch die bij elke uitzondering alles weghaalde; nu gaat het jaar altijd en de school alleen als er geen gekozen is (`hasSelected()` uit #62).\n- **Console en campusoverzet:** `acrossSchools()->acrossSchoolyears()` plus de expliciete `where school_id`, zoals ze al hadden; `Enrollment` heeft geen global scopes, dus de aanroepen erop zijn weg.\n- `Project::studentGroups()` is getypeerd; \u00e9\u00e9n baseline-regel vervalt daardoor.\n\nWat overblijft: de vijf `withoutGlobalScopes()` in `CurriculumService`, die de schoolscope van clusters weghalen in de rapportweg. Dat verandert mogelijk wat een rapport toont, dus apart, met `ReportSnapshotTest` als rechter.\n\nVolledige suite lokaal groen op de bekende `BuildStampTest` na, Pint en PHPStan schoon.\n",
+            "branch": "workbench/genoemde-scopes",
+            "title": "Elke scope die weggaat heet: acrossSchoolyears en acrossSchools in plaats van withoutGlobalScopes()"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920152333-05adaa"
+}

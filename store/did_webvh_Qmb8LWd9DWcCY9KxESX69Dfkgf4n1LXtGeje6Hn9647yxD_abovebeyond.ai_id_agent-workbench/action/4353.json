@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5110f4e627ccdbb1fc556ea067f4d56b216d592d",
+            "branch": "workbench/leerkrachtpagina",
+            "files_sha256": "444f2c6dc32a202453da0f2d4ec427228167f10b26de315293d076840073a1a3",
+            "message": "De leerkrachtpagina in de vorm van de fiche: projecten per schooljaar als rijen, de basics ernaast"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920151533-969a8b"
+}

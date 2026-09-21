@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na #52 is Vooruitgang altijd de hele graad, dus \"Hele graad, 2025-2026 en 2026-2027\" zei het twee keer. Nu staan alleen de jaren onder de titel, en niets als het er \u00e9\u00e9n is.\n",
+            "branch": "workbench/jaren-onder-vooruitgang",
+            "title": "Onder Vooruitgang alleen de jaren: het is altijd de hele graad"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920141217-481a7f"
+}

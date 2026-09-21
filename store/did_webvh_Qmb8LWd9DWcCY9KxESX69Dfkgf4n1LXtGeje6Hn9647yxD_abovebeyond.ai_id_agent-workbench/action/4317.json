@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ab11724f3df336b1de780b9ca7d8d0c45a01b753",
+            "branch": "workbench/feat/webhook-only-on-change",
+            "files_sha256": "0c7b1a861cba300506d66dfb03d63d15e4a42dfa300415e91f430d4d489a8a04",
+            "message": "A partner hears about a vehicle when something in the message changed"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920144808-b0b882"
+}

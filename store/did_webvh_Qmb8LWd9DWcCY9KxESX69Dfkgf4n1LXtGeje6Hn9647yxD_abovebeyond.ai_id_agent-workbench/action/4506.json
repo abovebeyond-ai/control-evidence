@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f809a27feb90a7ec4fc580d927c15e5c9ff395b6",
+            "branch": "workbench/fix/the-carpass-finding-was-closed-in-code-not-on-paper",
+            "files_sha256": "7b0c40d6986c53bd8cf2b462cf2016e3ddfc2fc554ec950aef37823c3ae5de54",
+            "message": "The Car-Pass finding was closed in code, not on paper"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921055449-b1eefd"
+}

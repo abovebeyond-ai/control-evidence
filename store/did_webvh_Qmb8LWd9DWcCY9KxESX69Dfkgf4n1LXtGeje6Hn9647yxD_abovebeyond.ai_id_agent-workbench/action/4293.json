@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "35c76145e975179796b64fd41abb90c97bd5bc5c",
+            "branch": "workbench/docs/findings-bookkeeping",
+            "files_sha256": "a8b60ebfa255032715f238fa5906d574a0024508b9dae7db93950fe27b5161af",
+            "message": "Bevinding 48.500 wijst naar de pull request die haar oploste"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920142233-888264"
+}

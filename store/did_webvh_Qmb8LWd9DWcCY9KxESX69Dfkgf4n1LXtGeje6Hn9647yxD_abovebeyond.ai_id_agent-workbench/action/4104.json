@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De eindtermenlijst, na de projecten- en clusterlijst, in dezelfde taal als de rest.\n\n- E\u00e9n kolom **Eindterm**: mono prefix in stil grijs, naam in ink-800, de categorie als tweede regel eronder.\n- **Herkomst** als badge (grijs \"officieel\", primair \"van onze school\") in plaats van een tekstkolom.\n- De actie (\"Afwijken\" of \"Bewerken\") als stille link rechts, zonder eigen kop.\n- Zoekveld en het vinkje \"Alleen wat wij zelf hebben aangepast\" op \u00e9\u00e9n rij.\n- Lege staat met woorden; paginering alleen als er pagina's zijn.\n\nTests van de eindtermen draaien groen met `APP_DEBUG=true`.\n",
+            "branch": "workbench/eindtermenlijst-2",
+            "title": "De eindtermenlijst: \u00e9\u00e9n kolom, een badge en een stille actie"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920074645-483438"
+}

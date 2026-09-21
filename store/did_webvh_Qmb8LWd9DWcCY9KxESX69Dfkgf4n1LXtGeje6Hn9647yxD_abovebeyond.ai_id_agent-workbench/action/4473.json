@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`RouteSlugTest` went red on #696 with `require(bootstrap/cache/routes-v7.php): Failed to open stream`, in a test that has nothing to do with route caching and on a branch that only touched `WebsiteController`. The same tree passed all 1869 tests locally.\n\nThe cause is one file shared by six processes. The suite runs with `--parallel`, and `bootstrap/cache/routes-v7.php` is the same path for every one of them. `RouteCacheTest` writes it and deletes it again; while it did, another process booted its app, `routesAreCached()` saw the file and memoised \"yes\", and by the time `RouteServiceProvider` required it the file was gone. Whichever test happened to be booting in that window is the one that fails, which is why it reads as random.\n\nLaravel has a key for exactly this: `APP_ROUTES_CACHE`. The test now points it at `storage/framework/testing/routes-<TEST_TOKEN>.php`, so each process writes its own file and no process can see another's. It asserts the path it is about to use, so the test fails loudly rather than silently going back to the shared file if that key ever stops being honoured, and it asserts the cache was actually written \u2014 which the old version never checked.\n\nNothing else in the suite touches a shared cache: `route:cache` is the only such command in `tests/`.\n\nNo rule or finding: this is test infrastructure, not behaviour a dealer or the operator can observe.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/one-route-cache-for-six-processes",
+            "title": "One route cache for six processes"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920194800-1a317f"
+}

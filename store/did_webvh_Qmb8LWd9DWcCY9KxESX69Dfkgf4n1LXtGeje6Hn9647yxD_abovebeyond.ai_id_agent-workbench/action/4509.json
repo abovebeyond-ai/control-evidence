@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Bookkeeping only, no code.\n\nFinding X-05 (#571) was one of two still marked `ernst: nu`, so it sat at the top of the list of what to do next. Its code part was already done \u2014 in PR #521, on 17 September, the same day Ilse decided it. `handleVhrResult` resets `carpass_data_checked` when a new report lands, so the vehicle returns to the work list seven days before *that* report expires, and so on at every cycle. `CarpassRenewalCycleTest` pins three sides of it: the vehicle re-enters at every expiry, a manual renewal resets the flag too, and a failed renewal keeps it (otherwise a vehicle would drop out of the list because of an attempt that achieved nothing).\n\nOnly the finding file stayed behind, and an open finding that is actually closed is worse than no finding: it is what the next person reads to decide what matters.\n\nI checked the rest of the open list for the same shape \u2014 a finding whose own text says the work is done, or that points at a later pull request \u2014 and this was the only one. The other 77 are genuinely open.\n\nWorth knowing about the second `nu` finding, #572 (the \"This page has expired\" report from Autobedrijf Gielkens): its code is also finished, and it is open for a different and correct reason \u2014 it waits for Gielkens to confirm that saving after a long pause now works. That is a question for Ilse, not a task for the repository.\n\nFixes bevinding zeven-dagen-voor-het-vervallen-komt-de.\nFixes #571\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/the-carpass-finding-was-closed-in-code-not-on-paper",
+            "title": "The Car-Pass finding was closed in code, not on paper"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921055449-b1eefd"
+}

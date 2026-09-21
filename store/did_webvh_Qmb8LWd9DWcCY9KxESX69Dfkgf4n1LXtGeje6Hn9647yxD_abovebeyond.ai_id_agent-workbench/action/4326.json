@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe outcome type of phase 1 has `unknown` for an adapter that does not say what upstream handed over. Three adapters said it (tiktok-trends, google-trends, china-hotrank), ten did not. On 2026-09-20 every round on the box therefore read `unknown` six times: a quiet day and an upstream that gave nothing were one answer again, which is what the type was written to end.\n\n## How\n\n- The ten now count `fetched` where the items come in, before our own dedup and filters: rss, youtube, startups, memes, openalex, openalex-venues, semantic-scholar, twitch-trends, web-browse, instagram-search.\n- The three academic adapters had a second reason for `unknown`: every query had been asked within twenty hours, so they tried nothing. That is now `skipped`, with the reason (`all 14 academic queries asked within 20h`). Same for a round with no active sources, for rss and web-browse too.\n- Health is unchanged: `adapter_runs` counts only `delivered` and `nothing-new` as healthy, so a skip between two asks neither helps nor hurts what Elixir judges.\n- `test/adapter-fetched.test.mjs`: no running adapter may call `adapterResult` without `fetched` (read from the source, checked by mutation), and the academic adapters skip with a reason in both cases.\n\n## The note\n\nTwo corrections in `docs/design/sources-before-more-sources.md`:\n\n- Rule 5 was \"pin the version\". It becomes \"pin what is stable, hold a contract for what moves\": `china-hotrank` runs a fixed build, while `tiktok-trends` runs unpinned under a field contract, because a pinned build of a scraper for a site that keeps changing is a scraper frozen on the day it last worked.\n- The second \"reading to repeat\" was a grep on `~/logs/collect.log`, a file last written on 17 August. It is now a query on `adapter_runs`, and the note says why.\n\n## After the merge\n\nA round on the box should show no `unknown` any more: `nothing-new` with a count, or `skipped` with a reason.\n",
+            "branch": "workbench/every-adapter-says-what-it-fetched",
+            "title": "Every running adapter says what it fetched, and not trying is a skip"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260920145328-680041"
+}

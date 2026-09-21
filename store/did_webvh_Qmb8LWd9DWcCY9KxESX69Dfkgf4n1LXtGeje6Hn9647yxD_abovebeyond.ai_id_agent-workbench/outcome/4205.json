@@ -1,0 +1,16 @@
+{
+    "action": "2fcfc067172e396c1e638185ed9f4f65",
+    "effect": {
+        "detail": {
+            "base": "7888563acd17ae477954e25d09679325a3788f59",
+            "branch": "workbench/leerling-momentopname",
+            "commit": "9baa49b6c20caac4941b23c737241afd9a45a088",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4203,
+    "verdict": "ALLOW"
+}

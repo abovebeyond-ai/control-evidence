@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "34d7dd8a43c08fb285a307ad03e386b506395957",
+            "branch": "workbench/who-posted-is-not-kept",
+            "files_sha256": "6f9ba85c9f9e4ad8cc78b5157356f6803a94f10e241344fe99d366604be66724",
+            "message": "Who posted is not kept: the account and the place leave the signal meta"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260920114707-242d14"
+}

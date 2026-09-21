@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d381ca7c2269b788402d6f0d6109a633d653fbe",
+            "branch": "workbench/verouderd-verborgen",
+            "files_sha256": "9dd48cdcd2d3abd6ae5bdf6e20f84bb7483eae0b4638ba73f1175e2a5a406d0c",
+            "message": "Uitdovende eindtermen en gearchiveerde clusters standaard verborgen, met een vinkje om ze toch te tonen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920194146-334021"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "40baed5cd8d4de0b153a63ae1cf7b554",
+    "effect": {
+        "detail": {
+            "base": "e43d86e9b115ebaf13d6801a69b6c9cfdc06c837",
+            "branch": "workbench/kleurwaarden",
+            "commit": "1c8abcf090816fc2bddc3a25d790f6cc21e118ca",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4281,
+    "verdict": "ALLOW"
+}

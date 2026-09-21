@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f64fef5c00565309499f57cc84469b8169731bd3",
+            "branch": "workbench/every-adapter-says-what-it-fetched",
+            "files_sha256": "70c12eecc4ad61df83b8cb83d7677e3c68471330cc8a9f307f7ad6bd02c8f43d",
+            "message": "Every running adapter says what it fetched, and not trying is a skip"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260920145328-680041"
+}

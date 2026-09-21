@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e685dc3f8a94626b0a39977e439f2f51985ce73b",
+            "branch": "workbench/fix/a-silence-is-not-a-yes-2",
+            "files_sha256": "d6cdb3eceeb27fe946251d08b3aba43e0ac38b635e2d42e296b94d4964c96c73",
+            "message": "A silence is not a yes"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920181657-e704e9"
+}

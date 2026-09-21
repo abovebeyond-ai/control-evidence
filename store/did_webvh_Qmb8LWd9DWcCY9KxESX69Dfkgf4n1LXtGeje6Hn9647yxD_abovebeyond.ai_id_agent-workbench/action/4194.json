@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "One list had blue column headers where every other one has quiet grey ones. It turned out to be a\nsingle screen and a single rule.\n\nThe contracts list carried `<thead class=\"orange\">`, and this sat in `app.scss`:\n\n```scss\ntable thead.orange {\n    tr th, tr td { color: $bootstrap-primary-color; }\n}\n```\n\n`$bootstrap-primary-color` is `#009DE0` \u2014 **a blue**. The bought theme calls its accent \"orange\" and\nsomebody set it to the client's blue years ago, so a class named after one colour paints another.\nNothing in the blade told you that; you had to follow the name into the sass to find out it lies.\n\nIt was the only view using the class and the only rule using it. Both are gone, and the list now\nlooks like its neighbours: `.ui-list thead th`, grey, 12.5px, one line underneath. Which also\nanswers the second half of the question \u2014 yes, blue headers are too much: the colour is the accent\nfor things you can act on, and a column name is not one of those.\n\n`TableHeadersTest` keeps it that way. A `thead` may carry behaviour (`sticky-top` is the one that\nexists) and never paint. A list that needs its own look says so on the table, in `refresh.css`,\nwhere the whole family can be read in one place instead of hiding in a sass partial.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/ui-kop",
+            "title": "One list shouted its column headers in blue"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920113314-23d55f"
+}

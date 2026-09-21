@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three settings that looked like they did something. In all three the screen, the form or the config file said one thing and the code underneath did another, without ever complaining.\n\n**The rights cascade ran with an empty role id (finding `cascade-naar-submenus`, #577, R P2-4.3).** Turning off \"view\" on a main menu looks up the submenus with `$access->rol_id`. That field does not exist; it is called `role_id`. A typo in a dynamic property is not an error in PHP, it is `null`, so the cascade asked for the submenus of an empty role, found none, and left the submenu rights standing while the administrator watched the main tick disappear. This has been failing silently the whole time.\n\n**A postcode is not a number (finding `postcode-numeriek`, #600, R P2-6.1).** `DealerLocationRequest` required `numeric`, while Dutch dealers write `1234 AB` and both Dutch dealers and Nederland Mobiel are supported. It is now text of at most twelve characters, starting on a letter or digit and otherwise letters, digits, a space or a hyphen: `9000`, `1234 AB`, `1234AB` and `SW1A 1AA` pass, empty still passes, junk does not. The house number stays numeric \u2014 that is what `street_no_addition` is for.\n\n**The suite did not run on the cache `phpunit.xml` names (finding `de-testsuite-draait-op-een-cache-die`, #604).** `phpunit.xml` sets `CACHE_STORE=array`, `config/cache.php` read only `CACHE_DRIVER`, so the key did nothing and the whole suite ran on the file cache in `storage/framework/cache` \u2014 a cached value survived from one test class to the next and from one run to the next. That is how it was found on 14 September: RealGarant's session token kept a login that was under test from ever leaving. The config now reads `CACHE_STORE` and falls back to `CACHE_DRIVER`, so it carries the name Laravel has used since version 11 and a server that still sets the old one (production and preview both do) changes nothing.\n\n`ThreeSettingsThatQuietlyDidNothingTest` covers all three: a main menu switched off really takes its submenu with it, eight postcode shapes judged one by one, and the suite's cache store is the one `phpunit.xml` asked for. All three were checked against the unfixed code; the mutation run failed seven of the ten.\n\nFixes bevinding cascade-naar-submenus, bevinding postcode-numeriek, bevinding de-testsuite-draait-op-een-cache-die.\nFixes #577\nFixes #600\nFixes #604\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/three-settings-that-quietly-did-nothing",
+            "title": "Three settings that quietly did nothing"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920152217-2b45fa"
+}

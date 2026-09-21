@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "94e1d8a3f74989af983c6fcab414ae3a218c5604",
+            "branch": "workbench/fix/carpass-echo",
+            "files_sha256": "0c093924a86dc68135938890c1f9827c913d67b5e9c46aa2bd49f2a892c3ed8d",
+            "message": "The Car-Pass pdf comes back as an answer"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920141237-13430b"
+}

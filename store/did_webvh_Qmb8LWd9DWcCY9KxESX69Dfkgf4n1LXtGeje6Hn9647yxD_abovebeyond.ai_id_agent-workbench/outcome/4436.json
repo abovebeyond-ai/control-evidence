@@ -1,0 +1,16 @@
+{
+    "action": "908645ff5ff29be60faec4225968a844",
+    "effect": {
+        "detail": {
+            "base": "9050bc6ef2b7b3982edd3d8d23750e7f0492ec33",
+            "branch": "workbench/paginering",
+            "commit": "a706883758d1181d05086370b90fdd4d3d390858",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4434,
+    "verdict": "ALLOW"
+}

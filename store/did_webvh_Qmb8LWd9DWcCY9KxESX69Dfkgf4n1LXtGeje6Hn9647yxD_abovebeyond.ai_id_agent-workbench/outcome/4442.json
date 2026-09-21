@@ -1,0 +1,16 @@
+{
+    "action": "5845d841bbd3b1dc0a4745528e0343b8",
+    "effect": {
+        "detail": {
+            "base": "b4dd1bd67de83047acd4a7ffb78ac207c1469c46",
+            "branch": "workbench/fix/the-showroom-screen-is-not-a-price-list",
+            "commit": "609ca95ed705b6555e884687cf59fcf6664295fa",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4440,
+    "verdict": "ALLOW"
+}

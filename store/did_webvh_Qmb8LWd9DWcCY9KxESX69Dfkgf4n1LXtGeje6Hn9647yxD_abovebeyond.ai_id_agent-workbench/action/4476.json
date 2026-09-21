@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ba3ec54ba397dd2079362b77c6f072ecb95096d3",
+            "branch": "workbench/projectenlijst-mobiel",
+            "files_sha256": "7e8a45a0a3936c9f10061bd90fefda035573dbc7a31c5183f411a525a7b978ae",
+            "message": "Projectenlijst op een telefoon: \u00e9\u00e9n kolom, klasgroepen en coaches onder de naam"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920195003-7fd0b3"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "49fd1e20a1f7615c1a966b13e0a5dc2f",
+    "effect": {
+        "detail": {
+            "base": "3dca17b6eaa342d4b594c96c4e2ef70816f5654a",
+            "branch": "workbench/fix/a-chassis-number-is-written-the-same-way-everywhere",
+            "commit": "370426abab5ea5346bbff90d98f6d7f21de358c4",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4512,
+    "verdict": "ALLOW"
+}

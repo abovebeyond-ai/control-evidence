@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5110f4e627ccdbb1fc556ea067f4d56b216d592d",
+            "branch": "workbench/genoemde-scopes",
+            "files_sha256": "64a1253a4e6ac0221cd2e34db9476a81a90c2512094ac8e36cfe23afcdb15e3f",
+            "message": "Elke scope die weggaat heet: acrossSchoolyears en acrossSchools in plaats van withoutGlobalScopes()"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920152333-05adaa"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na #68. De periode op de projectrij is weg: een verplicht veld dat weinig zegt. In de plaats het aantal teamleden, meegeteld in dezelfde query als de evaluaties. De rij leest nu \"6 evaluaties, 3 teamleden, 2AA, 2AB\". #69 was per ongeluk leeg en mag dicht.\n",
+            "branch": "workbench/teamleden",
+            "title": "Leerkrachtpagina: teamleden in plaats van de periode op de projectrij"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920191318-d342ca"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "0bbd9abae321c7f9dbd02a2d1bf91eeb",
+    "effect": {
+        "detail": {
+            "base": "ed76c85875a06bd53afa52e92da8dd4bb8511276",
+            "branch": "workbench/fix/a-silence-is-not-a-yes",
+            "commit": "328c521b6cc50e9bcc6c679ce89920af936ca71d",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4371,
+    "verdict": "ALLOW"
+}

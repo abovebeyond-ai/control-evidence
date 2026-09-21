@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eba718023a469a1aeac30e391b9bab26a6521d1a",
+            "branch": "workbench/rapporten-mobiel",
+            "files_sha256": "13de880e367256c9553ad92acee148cc48357e007c27f59e9b180553a831f6ef",
+            "message": "Rapporten op een telefoon: het vooruitgangsrapport past, het periodiek rapport schuift alleen bij meer dan \u00e9\u00e9n scorekolom, scores openen op een tik"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921063107-c835ce"
+}

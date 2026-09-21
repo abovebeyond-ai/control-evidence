@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5b2d32a864f3828ce376d4ebef2911c28b46a958",
+            "branch": "workbench/fix/a-photo-the-bucket-cannot-answer-for",
+            "files_sha256": "df759bd3d7a72b414c548e54dd923b3225fdfdd5b7786123525ea6020f6932e1",
+            "message": "A photo the bucket cannot answer for"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920194412-c93164"
+}

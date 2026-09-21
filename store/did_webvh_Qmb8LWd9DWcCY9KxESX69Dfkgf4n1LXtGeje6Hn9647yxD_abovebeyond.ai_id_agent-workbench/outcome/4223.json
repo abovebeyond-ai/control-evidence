@@ -1,0 +1,16 @@
+{
+    "action": "98db588d67c0df425716869ca0fe7730",
+    "effect": {
+        "detail": {
+            "base": "93dd075d60b8df5857a8bb396052c97115cbd965",
+            "branch": "workbench/zonder-bereik",
+            "commit": "70b1c63f92c9e9ba173209de388946443c6e0fcb",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4221,
+    "verdict": "ALLOW"
+}

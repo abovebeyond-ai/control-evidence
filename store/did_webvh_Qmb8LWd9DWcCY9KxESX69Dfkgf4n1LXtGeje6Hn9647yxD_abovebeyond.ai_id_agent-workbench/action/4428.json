@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9050bc6ef2b7b3982edd3d8d23750e7f0492ec33",
+            "branch": "workbench/coaches-klikbaar",
+            "files_sha256": "d56ed0818a1f6444d55ac5ab09b9c190f09ef9a33ecfa8c79be67433f024ee46",
+            "message": "Projectenlijst: een coach opent als persoon voor wie de medewerkerspagina's mag zien"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920192345-0564dc"
+}

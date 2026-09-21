@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4da36df79c2c4f0c236ea97155dd3350bb4efa18",
+            "branch": "workbench/inloggen-mobiel",
+            "files_sha256": "f9f6eb74fd08677e8d901298185134160d49bb138eb7c55bddd8a519244dfe63",
+            "message": "Inlogscherm op een telefoon: een lager merkvlak, het Microsoft-lockup gecentreerd"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921062142-6346b8"
+}

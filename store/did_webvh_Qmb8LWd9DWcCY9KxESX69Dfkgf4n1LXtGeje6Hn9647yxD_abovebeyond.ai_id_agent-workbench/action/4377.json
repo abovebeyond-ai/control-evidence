@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "df46f81b37a79d329dbc0d7d3e497ce386a5a870",
+            "branch": "workbench/curriculum-scopes",
+            "files_sha256": "76ff3270ef9b55a9615609e2d5fd5d498d2413e1de60fc185f6d9ea3be081df2",
+            "message": "De rapportweg houdt de schoolscope op clusters: wat een andere school voor zichzelf maakte blijft uit het rapport"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920180845-a11d7b"
+}

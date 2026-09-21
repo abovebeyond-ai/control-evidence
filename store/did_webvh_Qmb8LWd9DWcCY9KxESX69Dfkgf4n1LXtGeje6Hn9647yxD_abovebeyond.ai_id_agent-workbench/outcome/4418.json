@@ -1,0 +1,16 @@
+{
+    "action": "b6b753aba6b6eee57437d58d04ee09c7",
+    "effect": {
+        "detail": {
+            "base": "b4dd1bd67de83047acd4a7ffb78ac207c1469c46",
+            "branch": "workbench/fix/a-wrong-link-is-not-a-crash",
+            "commit": "1aad1a0629a8601dc92d688b72fb044707225484",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4416,
+    "verdict": "ALLOW"
+}

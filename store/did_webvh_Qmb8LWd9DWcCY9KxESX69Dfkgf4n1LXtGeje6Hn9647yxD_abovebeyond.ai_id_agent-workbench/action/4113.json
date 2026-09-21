@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e0cbce32fdabeea47217f79c790bb04ae3e69cd9",
+            "branch": "workbench/scheduler",
+            "files_sha256": "e94b2332e74384d8a8e9cd769f8a817945957a4b57ccf927b97d644a15dba838",
+            "message": "De Smartschool-sync en de foto's in de scheduler van Laravel"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920083130-bb4d7a"
+}

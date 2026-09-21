@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d7f77345c2c356e0f1e9dc8d30bf008093ee8aa8",
+            "branch": "workbench/commandos-uitvoer",
+            "files_sha256": "e00b2ee8212934273a93a9dcfa5fde349bd7d73e3f451ab79b045caf562aa331",
+            "message": "De fotolader leest de inschrijvingen zelf, en beide commando's zeggen in \u00e9\u00e9n regel wat ze deden"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920090553-520187"
+}

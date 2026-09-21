@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`?lang=fr` chose the language for the page that set it, but not for the contact form after it: \"Stel een vraag\" always came back in Dutch, however the visitor opened the iframe.\n\nTwo causes, and both are the same mistake. The choice is stored as a code (`'fr'`), but it was looked up in an array keyed `1, 2, 3, 4` \u2014 a string key on an int-keyed array never hits, so every such request fell through to the default. `WebsiteController::setLanguage` had that half repaired already; `SetLangMiddleware` carried the identical bug and still does the language for every page that does not ask for it itself. And `contact()` was the only public entry point that never asked: it relied entirely on that middleware.\n\nThe middleware now recognises the form the controller actually writes. The old numeric form stays as its own branch, for a session written before that change. The order is untouched, which matters: a signed-in dealer keeps the language of his own account, and the public session only counts after that, so an iframe can never override what a dealer set for himself.\n\n`contact()` asks for the language itself now, the way `detail()` already did, and it resolves its dealer through the same helper as the other public entry points \u2014 so a broken hash there answers 404 instead of 500 (R S2-5.24), which it did not before.\n\n`TheChosenLanguageSurvivesTheContactFormTest` covers the four cases: the language the visitor chose, `?lang=` on the contact URL itself, no choice at all (then the dealer's own language), and a broken hash. Three of the four fail against the unfixed code.\n\nFixes bevinding iframe-taal-overleeft-contact-niet.\nFixes #609\n",
+            "branch": "workbench/fix/the-chosen-language-survives-the-contact-form",
+            "title": "The chosen language survives the contact form"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921062123-fe87f6"
+}

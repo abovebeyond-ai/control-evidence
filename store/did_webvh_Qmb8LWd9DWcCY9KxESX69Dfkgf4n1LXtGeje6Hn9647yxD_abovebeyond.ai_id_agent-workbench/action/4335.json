@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5110f4e627ccdbb1fc556ea067f4d56b216d592d",
+            "branch": "workbench/statistiek-filter",
+            "files_sha256": "3818937b13dafef40ab8e021342baf6b1c1eb5e7dc124872b1516fe6319aacee",
+            "message": "Klasprogressie: toon alle eindtermen, alleen de ge\u00ebvalueerde, of alleen wat nog open staat"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920150608-379537"
+}

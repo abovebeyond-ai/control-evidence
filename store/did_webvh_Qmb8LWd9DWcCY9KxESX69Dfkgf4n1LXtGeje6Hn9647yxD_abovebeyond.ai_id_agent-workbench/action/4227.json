@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "112d99d49843598c0b915ff54419fba26e049987",
+            "branch": "workbench/kuis",
+            "files_sha256": "7f533a326c6140b64d7c7c2802912bda6c45f5b6ce994cb3362223d89643d6fb",
+            "message": "The models say which columns they have"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920122352-8e4d15"
+}

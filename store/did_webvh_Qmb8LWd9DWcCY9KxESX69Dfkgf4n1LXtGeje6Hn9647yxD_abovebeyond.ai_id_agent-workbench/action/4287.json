@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1c6d24957f45563524316abf7b1b01971d81f6b3",
+            "branch": "workbench/titel-een-keer-ontsnapt",
+            "files_sha256": "5766b37f8b6ea0e4c49f3cdb348132512714337ba0a8c6ca4c53d31ef2d6bfcc",
+            "message": "Een titel met een apostrof: \u00e9\u00e9n keer ontsnappen, niet twee keer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920142156-12bfc6"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Phase 2 of `docs/design/sources-before-more-sources.md`.\n\n## Reddit is struck\n\nReddit closed self-service API access in November 2025 (Responsible Builder\nPolicy): every new token needs prior approval, and **commercial use needs\nReddit's written permission**. Gentells is a paid product. The 403 on all fifteen\nsubreddits since August was that policy, not an outage.\n\nThere were three roads: ask Reddit for commercial access (a decision for\nTrendwolves, with money and an uncertain answer), read around it through a\nscraper (an explicit no from the platform, for a product that sells trust), or\nstrike it. Shane chose to strike it.\n\n- `reddit-subs` and `reddit-search` move to `OFF` with that reason.\n- The memes adapter loses its Reddit block, six errors a round. **That block also\n  stored `post.author`, a username**, which this system should never have held:\n  it keeps trend-level data only.\n- A test fails if an active adapter fetches from a Reddit host again. The 28\n  Reddit RSS rows in the table were already switched off.\n\n## The rows nothing collected\n\nThe collector runs the registry, not the `sources` table, so a row can say\n\"active\" for ever while nothing reads it. Spotify Charts did for six months. It\nand the two Reddit rows are switched off in a recorded migration, **with the\nreason written into the row** and an existing note left standing, so the Sources\npage shows a source that is off and says why.\n\nNamed rows and not a rule. Switching off \"whatever no adapter claims\" at startup\nwould also switch off a row whose adapter made a typo in its claim, silently. The\norphan line in every collect round and Elixir's `SOURCES_ORPHANED` catch the next\none in the open.\n\n794 tests pass, 6 new.\n",
+            "branch": "workbench/reddit-struck",
+            "title": "Reddit is struck, and the rows nothing collected say so"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260920113019-46c149"
+}

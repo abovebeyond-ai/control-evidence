@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two methods on `IDbRepository` carry a required parameter behind one that has a default.\n\n```php\npublic function wherein($fields = ['*'], $key, $value = [], ...);\npublic function paginate($fields = ['*'], $params = [], $with = [], $order = null, $paginate = 20, $request);\n```\n\nPHP treats `$key` and `$request` as required anyway, and says so: **twenty deprecation notices every\ntime these two files are loaded**, in the log of every environment, on main today. In PHP 9 that is\nan error rather than a notice.\n\nThe order stays exactly as every caller knows it \u2014 the trailing parameters simply carry a default of\ntheir own now, in the interface and in the implementation. Zero notices after.\n\n**And while in there, the contract was lying twice.** The interface declared `get()` with five\nrequired parameters while `DbRepository::get()` gives `$with_trashed` a default, and `update()` with\ntwo while the implementation takes three. By the contract, seventy-five calls in this codebase were\nwrong. Nobody noticed, because PHP checks a call against the concrete class and not against the\ninterface \u2014 but anyone implementing `IDbRepository` fresh would have been forced to require all\nfive, and would have had no way to know that was a mistake rather than the design.\n\nBaseline 1.617 \u2192 1.600, 17 entries gone, none added. 1.826 tests green.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/interface-defaults",
+            "title": "Two signatures that PHP has been complaining about twenty times a load"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920130128-3099d9"
+}

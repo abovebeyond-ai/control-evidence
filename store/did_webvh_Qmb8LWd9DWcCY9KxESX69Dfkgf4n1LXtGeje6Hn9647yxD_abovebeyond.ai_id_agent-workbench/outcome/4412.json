@@ -1,0 +1,16 @@
+{
+    "action": "afb53d95269eb6cce1c58d0733445e75",
+    "effect": {
+        "detail": {
+            "base": "7bf5322886b3b38009fb3af6880392d468b83683",
+            "branch": "workbench/leerkracht-projectrijen-2",
+            "commit": "5ae7703451112e8deabe69d53b8b1d19dec31131",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4410,
+    "verdict": "ALLOW"
+}

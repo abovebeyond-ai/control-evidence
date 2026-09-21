@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "72a4ace61c6dac48296b50dfb0a5c7b8c5aebf4a",
+            "branch": "workbench/leerlingfiche",
+            "files_sha256": "ded552807197ba6d55b0d2686562ef0aacdec515b6b9e43d465ae695e0ed3279",
+            "message": "De leerlingfiche: wat Naviskore over een leerling bewaart, om te lezen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920125009-eb6312"
+}

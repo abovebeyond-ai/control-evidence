@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e5130fb1aa8896a3d43ddf03225843258ec180d1",
+            "branch": "workbench/eindtermenlijst-2",
+            "files_sha256": "07da11e9de8e12ba135112276c073fb148c7bd94edbef4c57bc1199e7c309ed1",
+            "message": "De eindtermenlijst: \u00e9\u00e9n kolom, een badge en een stille actie"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920074645-483438"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee dingen uit de eerste ronde van `naviskore:load-user-photos` zonder slug.\n\n**De tweede school zag niets.** Drie Hofsteden gaf 13 leerlingen, Heule, CLW en OV4 nul, terwijl Heule met slug een uur eerder 323 gaf. `SchoolService::selected()` bewaart de gekozen school vijf minuten in de cache onder `no-user-selectedSchool`, dezelfde sleutel voor elk consoleproces, en de leerlingenquery liep via de sessiegebonden relatie. De lader leest nu de inschrijvingen van het lopende schooljaar rechtstreeks en raakt de sessie niet meer aan. Een test met twee scholen in \u00e9\u00e9n run pint dit vast.\n\n**De uitvoer zegt nu iets.** Per school \u00e9\u00e9n regel:\n\n```\nathena Heule: 323 leerlingen, 310 foto's bewaard, zonder foto: 9 \u00d7 Deze gebruiker bestaat niet, 4 \u00d7 Er is een onbekende fout opgetreden tijdens de verwerking.\nathena Heule: 14 klasgroepen, 402 accounts op Smartschool: 3 aangemaakt, 7 ingeschreven, 390 al in orde, 2 zonder stamboeknummer\n```\n\nDe betekenis van een foutcode komt van het platform zelf (`returnJsonErrorCodes`, geen toegangscode nodig). De sync schreef drie regels per leerling; die staan nu onder `-v`, de samenvatting altijd. De voortgangsbalk van de fotolader wist zichzelf na afloop.\n\nTests: fotolader (foto bewaard, foutcode overgeslagen met reden in de regel, alle scholen zonder slug, tweede school ziet zijn eigen leerlingen, \u00e9\u00e9n faalt en de rest loopt door), sync (de samenvattende regel), de bestaande tests groen. Pint en PHPStan schoon.\n",
+            "branch": "workbench/commandos-uitvoer",
+            "title": "De fotolader leest de inschrijvingen zelf, en beide commando's zeggen in \u00e9\u00e9n regel wat ze deden"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920090553-520187"
+}

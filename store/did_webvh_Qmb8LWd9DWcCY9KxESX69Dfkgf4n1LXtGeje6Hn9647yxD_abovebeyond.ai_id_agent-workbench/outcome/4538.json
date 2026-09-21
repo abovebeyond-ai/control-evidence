@@ -1,0 +1,16 @@
+{
+    "action": "11728d7bce3afd2feea9517527a63151",
+    "effect": {
+        "detail": {
+            "base": "0878c04e79361f3878426f4a8663b0cd914a5cf7",
+            "branch": "workbench/fix/the-chosen-language-survives-the-contact-form",
+            "commit": "0c4a2f57b57dfba7c9fe880af15043c8d99db23c",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4536,
+    "verdict": "ALLOW"
+}

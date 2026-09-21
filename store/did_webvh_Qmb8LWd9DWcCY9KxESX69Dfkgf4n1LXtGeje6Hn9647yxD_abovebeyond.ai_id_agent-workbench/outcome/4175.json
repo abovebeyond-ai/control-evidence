@@ -1,0 +1,16 @@
+{
+    "action": "d05f7dcd90783b3632ff5c6cf1b7a8af",
+    "effect": {
+        "detail": {
+            "base": "da08daf3c1eb4ae8b831d2c693c013c9f814971f",
+            "branch": "workbench/google-trends-identity",
+            "commit": "b1c6a6fe34488b05b77987bd4bd77216f705252f",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4173,
+    "verdict": "ALLOW"
+}

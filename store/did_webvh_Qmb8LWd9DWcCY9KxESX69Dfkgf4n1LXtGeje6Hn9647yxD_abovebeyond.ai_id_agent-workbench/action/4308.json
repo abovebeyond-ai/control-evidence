@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Eerste punt uit de audit, en een echte fout.\n\n`SchoolService::selected()` bewaart de gekozen school vijf minuten in de cache onder `{user}-selectedSchool`. Twee van de drie plekken die de sessie wijzigen (de middleware die een standaardschool kiest of de keuze wist, en de wissel in het keuzecomponent) maakten die cache niet leeg, dus wie van school wisselde hield tot vijf minuten de vorige school, en `SelectedSchoolScope` bouwt elke tenant-query daarop. In een consolerun deelden alle scholen de sleutel `no-user`; dat is hoe de fotolader vanmorgen de klassen van Drie Hofsteden zag voor Heule, CLW en OV4.\n\n- De sleutel draagt nu de school: `{user}-selectedSchool-{school}`. Een wissel van school is een wissel van sleutel; er valt niets meer leeg te maken.\n- Het keuzecomponent schreef de cache met de hand met een eigen kopie van sleutel en duur; weg. `ReportSnapshot` gooide de cache per school weg; weg.\n- `getCacheKey()` vraagt nu het school-id; niets anders riep het aan.\n\nTests: `SchoolServiceTest` (wisselen in de sessie geeft meteen de andere school, zonder cache te wissen; een run zonder gebruiker houdt scholen uit elkaar; de cache wordt binnen \u00e9\u00e9n school hergebruikt; geen school is een uitzondering, geen standaard). Volledige suite lokaal groen op de bekende `BuildStampTest` na, Pint en PHPStan schoon.\n",
+            "branch": "workbench/schoolkeuze-cache",
+            "title": "De gekozen school in de cache onder een sleutel met de school erin"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920143606-011341"
+}

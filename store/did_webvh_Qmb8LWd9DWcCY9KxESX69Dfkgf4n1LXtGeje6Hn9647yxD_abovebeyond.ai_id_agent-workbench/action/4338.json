@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op de klasprogressie staat boven Basisvorming een schakelaar: alle eindtermen, ge\u00ebvalueerd, nog niet ge\u00ebvalueerd. De tellers en meters bovenaan blijven over alles gaan; het filter leest de lijst. Een cluster zonder overblijvende eindtermen valt weg, en een sectie die leeg wordt zegt \"Alles is al ge\u00ebvalueerd.\" of \"Nog niets ge\u00ebvalueerd.\". Test in `StudentGroupStatsTest`.\n",
+            "branch": "workbench/statistiek-filter",
+            "title": "Klasprogressie: toon alle eindtermen, alleen de ge\u00ebvalueerde, of alleen wat nog open staat"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920150608-379537"
+}

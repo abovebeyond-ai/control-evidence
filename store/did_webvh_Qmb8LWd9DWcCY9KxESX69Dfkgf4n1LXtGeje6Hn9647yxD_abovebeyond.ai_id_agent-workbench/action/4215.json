@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9bc1eb9b97005a4ebd2ed4052df9b2e07b411035",
+            "branch": "workbench/dit-schooljaar",
+            "files_sha256": "e9eaf937e8d1980d80225a85b05d123c395fc4d02485977eeff4efbc4d59b967",
+            "message": "Dit schooljaar op de leerlingpagina is het vooruitgangsrapport gefilterd op het lopende jaar"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920120052-970675"
+}

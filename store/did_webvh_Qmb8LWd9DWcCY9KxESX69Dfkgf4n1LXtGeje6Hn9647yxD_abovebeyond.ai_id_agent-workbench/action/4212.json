@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe design note has a rule: trend-level data only, nothing about individuals. The store disagreed with it.\n\n| platform | key | signals |\n| --- | --- | --- |\n| instagram | `ownerUsername` | 296 |\n| instagram | `locationName` | 91 |\n| reddit | `author` | 2463 |\n\nMeasured on the Observatory box on 2026-09-20. Nothing in the pipeline, the dashboard, the Studio or the site ever read these fields. They were kept because the upstream item had them. Reddit's `post.author` left `memes.mjs` in #189 and TikTok's \"Top Creators\" was never read in #187; this closes the same gap where it was still open.\n\n## How\n\n- `packages/core/personal-meta.mjs`: one map, per platform, of the keys we do not keep. Per platform because `author` on a press article or a paper is the byline of published work and stays, while `author` on a Reddit post is a private account.\n- `makeSignal()` drops those keys, so no single adapter has to remember to.\n- `instagram-search`, `reddit-subs` and `reddit-search` stop reading them. The two Reddit adapters are off, and should not come back with the field.\n- One-time migration `personal-meta-forgotten-2026-09-20`: `json_remove` on the rows that carry a key. The rest of the meta is untouched, a row without the keys is not rewritten, and meta that is not valid JSON is stepped over.\n- `test/personal-meta.test.mjs` pins all of it, including a scan of the adapter sources: an adapter of these platforms that mentions one of the keys again fails. Checked by mutation (putting `ownerUsername` back turns it red).\n\n## Not in here\n\n- Bilibili uploaders and Twitch streamers above ten thousand viewers. Those are broadcasters with an audience, closer to a YouTube channel than to someone who posted a photo. Both adapters are off or skipping today. A decision for a person.\n- The caption of a post stays in `raw_content`; it is what the trend is read from.\n- Backups of the store made before this merge still hold the old values until they age out.\n\n## After the merge\n\nThe engine log on the box should say once: `[db] personal fields removed from 296 instagram, 2463 reddit signals` (the counts may have moved by a round).\n",
+            "branch": "workbench/who-posted-is-not-kept",
+            "title": "Who posted is not kept: the account and the place leave the signal meta"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260920114707-242d14"
+}

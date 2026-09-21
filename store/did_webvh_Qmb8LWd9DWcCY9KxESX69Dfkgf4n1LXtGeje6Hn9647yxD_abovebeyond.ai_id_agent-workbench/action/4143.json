@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "168f976f902337c831a245f77372641c414f9df7",
+            "branch": "workbench/smartschool-nummer",
+            "files_sha256": "70eae0c19fe675b03992d5e18ca825254fe06adfe538fa4cad983906e5be4c4c",
+            "message": "Het interne nummer van Smartschool op het account, want alleen daarop geeft het platform een foto"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920091459-cb413a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bfcc4f8651e7c2e8e05963a13f32f6732d119a2d",
+            "branch": "workbench/docs/readme-preview",
+            "files_sha256": "261394a9d347dbaec2e66828f78bab83df6215a358f16ba1a0dd85c003dbaf13",
+            "message": "The README says what is true again"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920082953-0eaa4c"
+}

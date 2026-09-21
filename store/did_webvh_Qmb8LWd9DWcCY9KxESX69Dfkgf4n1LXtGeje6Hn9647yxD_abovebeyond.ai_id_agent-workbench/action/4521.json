@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Eerste reeks uit de audit van alle pagina's op 390 pixels: de gedeelde stukken, dus elke pagina die ze gebruikt gaat mee. Nagekeken op een telefoonviewport voor de projectenlijst en de leerlingpagina.\n\n- **Bovenbalk:** de naam van de gebruiker was `hidden lg:flex`, en daarmee was het menu met \"Uitloggen\" op een telefoon een onzichtbare knop. Onder `lg` staat er nu de avatar; het menu blijft hetzelfde. Het streepje naast de schoolkeuze verschijnt vanaf `sm`.\n- **Paginakop:** de knoppen wrappen (`flex-wrap gap-2`) en een lange titel breekt (`break-words`) in plaats van de knop van het scherm te duwen.\n- **Zoekveld:** neemt op een telefoon de hele rij en gaat pas vanaf `sm` naast zijn filters; ervoor kromp het tot 120 pixels naast \"Mijn projecten\".\n- **Lijstitem (leerlingen, leerkrachten, beheerders):** de badges met klasgroep, school of rol stonden `hidden sm:flex`; op een telefoon staan ze nu onder de naam.\n- **Kaartkop** wrapt, zodat een lange titel en een actie de rij delen.\n- **Tabelcellen:** `px-4 sm:px-6`; twee keer 24 pixels marge was 12% van een telefoonbreedte.\n- **Formulierknoppen** wrappen.\n- **Leerlingpagina:** de vakken in \u00e9\u00e9n kolom onder `sm`, drie erboven.\n\nVolgende reeksen: de beheerlijsten met vijf tot acht kolommen (kolommen verbergen onder `md`, zoals de projectenlijst in #76), de rapporten die 480 pixels afdwingen, en apart het scoren zelf, dat onder `sm` nu uitgeschakeld is.\n",
+            "branch": "workbench/mobiel-gedeeld",
+            "title": "Mobiel, de gedeelde stukken: bovenbalk, paginakop, zoekveld, lijstitem, kaartkop, tabelmarge, formulierknoppen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921060633-c32ea9"
+}

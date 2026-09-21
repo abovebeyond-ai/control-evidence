@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7888563acd17ae477954e25d09679325a3788f59",
+            "branch": "workbench/leerling-momentopname",
+            "files_sha256": "594ede40e5b0f65118439ffb2bd4c1c5bd694b4d65845c4722a885d24b0ed381",
+            "message": "De leerlingpagina als momentopname: hoe gaat het, per vak, en wat er recent gebeurde"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920114538-387a7a"
+}

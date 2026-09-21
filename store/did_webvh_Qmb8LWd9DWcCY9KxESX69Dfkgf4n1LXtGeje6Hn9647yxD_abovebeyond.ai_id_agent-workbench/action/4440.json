@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b4dd1bd67de83047acd4a7ffb78ac207c1469c46",
+            "branch": "workbench/fix/the-showroom-screen-is-not-a-price-list",
+            "files_sha256": "645355884771f345b24ec40e1539153e50b9592e672743c6c3bfd08d18d906df",
+            "message": "The showroom screen is not a price list"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920193110-907470"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5110f4e627ccdbb1fc556ea067f4d56b216d592d",
+            "branch": "workbench/projectlinks",
+            "files_sha256": "6b667b8a254a1d2e8bb1f1cb9e7c3b98e4dbead31af932d6b46fa939ff3327d1",
+            "message": "Projectpagina: links en typebadges op de tokens, geen hard blauw en geen onderstreping"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920151246-8f0e8f"
+}

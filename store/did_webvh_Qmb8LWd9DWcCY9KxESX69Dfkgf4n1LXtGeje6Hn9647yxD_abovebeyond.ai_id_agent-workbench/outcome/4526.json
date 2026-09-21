@@ -1,0 +1,16 @@
+{
+    "action": "5ae50609d78fd836b19cddf498c0e0f7",
+    "effect": {
+        "detail": {
+            "base": "3dca17b6eaa342d4b594c96c4e2ef70816f5654a",
+            "branch": "workbench/fix/the-third-attempt-stops-quietly",
+            "commit": "527d0d2cafcda6e372f3ac74dc4155ea6ff14d1e",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4524,
+    "verdict": "ALLOW"
+}

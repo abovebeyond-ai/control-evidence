@@ -1,0 +1,16 @@
+{
+    "action": "7f668d00287264308a004cdfb1624cd1",
+    "effect": {
+        "detail": {
+            "base": "d7f77345c2c356e0f1e9dc8d30bf008093ee8aa8",
+            "branch": "workbench/commandos-uitvoer",
+            "commit": "9d54a0a506cbf10e6934a22d2b4c4b961be2d32f",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4137,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De leerlingpagina, na de lijsten. Lokaal gerenderd met een foto en twee klasgroepen.\n\n- **Kop:** de foto uit Smartschool (nu die er zijn), het opschrift \"Leerling\", de naam, en eronder waar de leerling dit jaar zit: klasgroep, schooljaar, school.\n- **Hoofdkolom, Rapporten:** per klasgroep en schooljaar, nieuwste eerst, met \"zittenblijven\" als stille badge. Elke periode is \u00e9\u00e9n rij die het rapport opent, met in woorden wat erin zit (dagelijks werk, examens, stage) in plaats van DW en EX in groen en blauw. Het vooruitgangsrapport is de stille actie in de kaartkop, geen kaart van \u00e9\u00e9n regel meer.\n- **Zijkolom, Basisinformatie:** e-mailadres, school-e-mailadres, gebruikersnaam en stamboeknummer als lijst; wat leeg is zegt \"niet ingevuld\".\n- **Controller in plaats van view:** de inschrijvingen, de open periodes per klasgroep en de huidige klas komen uit `StudentController::show`, eager geladen; de view riep de termservice in closures aan.\n- **Het kaartcomponent** (`x-card.card`) droeg nog `shadow` en `sm:rounded-lg`; het staat nu op `rounded-xl ring-1 ring-ink-200` zoals `docs/design-system.md` zegt. Dat raakt de 32 pagina's die het gebruiken, allemaal in de goede richting.\n- De inactieve-leerling-melding blijft, rustiger, met \"Leerling verwijderen\" als link voor de superadmin.\n\nNieuw: `StudentShowTest` (admin ziet naam, klasgroep, schooljaar, periode, de links naar rapport en vooruitgangsrapport en de knop; leerkracht ziet de knop niet). Volledige suite lokaal groen op de bekende `BuildStampTest` na, Pint en PHPStan schoon.\n\n\n(Vervangt #48, waar de static-analysejob rood ging: de getypeerde `enrollments`-relatie maakte drie baseline-regels van PHPStan overbodig, en een ongebruikte regel is daar zelf een fout. Die drie zijn weg.)\n",
+            "branch": "workbench/leerlingpagina-2",
+            "title": "De leerlingpagina: foto en klas in de kop, de rapporten als hoofdkolom, de kaart op een ring"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920093425-688384"
+}

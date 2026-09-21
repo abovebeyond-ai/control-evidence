@@ -1,0 +1,16 @@
+{
+    "action": "bb7b96c94c220322a1a6f1d3616bd267",
+    "effect": {
+        "detail": {
+            "base": "136be7b13bb809348a827af2033c10b9a0df6f8c",
+            "branch": "workbench/feat/a-refusal-from-a-partner-is-visible",
+            "commit": "0826a068404091b00eeb2c526b157694f84be119",
+            "files": 17,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4500,
+    "verdict": "ALLOW"
+}

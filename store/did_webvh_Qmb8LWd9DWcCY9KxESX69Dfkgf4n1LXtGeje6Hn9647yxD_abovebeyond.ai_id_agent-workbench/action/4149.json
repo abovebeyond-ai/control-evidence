@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e9306229ea566b66d03072cda5bf921208d47a59",
+            "branch": "workbench/leerlingpagina",
+            "files_sha256": "274c19d77e4c36033e394d16970c00ad6357aade0e80c0404cd9b4f116e5349e",
+            "message": "De leerlingpagina: foto en klas in de kop, de rapporten als hoofdkolom, de kaart op een ring"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920093341-0bc927"
+}

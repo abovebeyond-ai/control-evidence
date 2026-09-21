@@ -1,0 +1,16 @@
+{
+    "action": "1bf4b150650fb137366a9e1bbf551684",
+    "effect": {
+        "detail": {
+            "base": "cf1c01acd92b1346700607d75de66e9dd0141564",
+            "branch": "workbench/een-lezer-van-de-school",
+            "commit": "eb746900ff2b14775d9d1a5ad18e460991abfef0",
+            "files": 17,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4329,
+    "verdict": "ALLOW"
+}

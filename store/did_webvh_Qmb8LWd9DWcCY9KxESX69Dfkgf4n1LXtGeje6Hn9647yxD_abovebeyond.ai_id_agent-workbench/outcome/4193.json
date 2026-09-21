@@ -1,0 +1,16 @@
+{
+    "action": "d1e91ae362a2bab057d5485ee58b8281",
+    "effect": {
+        "detail": {
+            "base": "1fca6289d173359a061351fad814abb3773af124",
+            "branch": "workbench/ui-kop",
+            "commit": "f1efe9e3a7ccb46533caa42c5ef51dc605975f00",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4191,
+    "verdict": "ALLOW"
+}

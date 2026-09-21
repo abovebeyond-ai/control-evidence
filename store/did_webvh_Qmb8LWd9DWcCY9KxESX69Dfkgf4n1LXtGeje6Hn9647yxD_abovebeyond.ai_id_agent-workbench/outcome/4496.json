@@ -1,0 +1,16 @@
+{
+    "action": "6db59d6609f214fb9ded75bd448e4ca1",
+    "effect": {
+        "detail": {
+            "base": "ef13e279b6769af202e001065232303bbd8f9756",
+            "branch": "workbench/leerkrachtnummer-per-school-3",
+            "commit": "dc1d9a08e98aa62037d0cb7d7d3fe56f9320b1d6",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4494,
+    "verdict": "ALLOW"
+}

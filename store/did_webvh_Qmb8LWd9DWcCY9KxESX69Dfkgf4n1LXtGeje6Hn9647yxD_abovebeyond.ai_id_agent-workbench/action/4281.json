@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e43d86e9b115ebaf13d6801a69b6c9cfdc06c837",
+            "branch": "workbench/kleurwaarden",
+            "files_sha256": "ab25721f75a443cb48aa75ddbb5a2efe577785bcfa5a6ae5138183b0687546f9",
+            "message": "Laatste scores: een kleurwaarde in haar kleur, en een evaluatie zonder titel heet Evaluatie"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920141348-0bcf38"
+}

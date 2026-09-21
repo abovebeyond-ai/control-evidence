@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The preview has existed since 16 September and the README still described a single environment and a\nstaging that does not exist.\n\n**Environments** now carries both Forge sites, with what the preview actually is: one pull request at\na time on last night's copy of production, on the fixed branch `preview`, put there by the control\ngateway rather than by a key on a laptop. Plus why it exists at all \u2014 a screen you have to judge is\nworth nothing on invented data, and on production it is already merged \u2014 and why its seal is not a\nconvenience but the thing that makes the copy safe to hold: it carries the real addresses of 542\ndealers and the Car-Pass and Modix credentials of 393 of them, and `stocklist:preview-refresh`\nrefuses to run unless the seal is closed.\n\nFour other things had gone stale in the same weeks, all of them actively misleading to read:\n\n- \"There is no Pint or PHPStan configuration in the repo. Code style is handled by StyleCI.\" There is\n  now Pint, Larastan at level 5 with a baseline, and ESLint with a warning ceiling; StyleCI stopped\n  reporting somewhere before the takeover.\n- The CI was described as two jobs. It is seven, spread over pull request and main because a run\n  costs eleven billed minutes, and a superseded push is cancelled.\n- The mail redirect was described as \"whenever `APP_DEBUG` is true\". It hangs on `MAIL_ALWAYS_TO`\n  now, and the line says what that means for production, because the failure mode is silent.\n- The schema date to move when the dump is regenerated is in `ParallelTests::SCHEMA_DUMP_DATE`, not\n  in the workflow.\n\nAnd one addition next to the routes Elixir reads: **Beheer > Werking**, because it answers the same\nquestion from the inside.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/docs/readme-preview",
+            "title": "The README says what is true again"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920082953-0eaa4c"
+}

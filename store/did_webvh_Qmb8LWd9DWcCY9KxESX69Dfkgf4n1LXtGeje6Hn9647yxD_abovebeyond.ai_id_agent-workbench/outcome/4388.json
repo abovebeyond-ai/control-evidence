@@ -1,0 +1,16 @@
+{
+    "action": "d32be1d21cb259afb338b267c4c45003",
+    "effect": {
+        "detail": {
+            "base": "e685dc3f8a94626b0a39977e439f2f51985ce73b",
+            "branch": "workbench/fix/three-settings-that-quietly-did-nothing-2",
+            "commit": "447f4ef8ea23fc6890f294d08f0fba1de14faf00",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4386,
+    "verdict": "ALLOW"
+}

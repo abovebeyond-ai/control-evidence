@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "My own regression from #695, found within the hour of it going live: Nightwatch 25, twice, at 06:02 and 06:03 this morning.\n\n#695 repaired the retry. Until then `deliver` swallowed every error and returned nothing, so the job always ended successfully and `$tries = 3` was never once used. Since then the job hands itself back to the queue when a message did not arrive, and that part works.\n\nWhat I did not think through is that the *third* attempt handed itself back too. The queue picks the job up a fourth time, sees the maximum is passed, and throws `MaxAttemptsExceededException` \u2014 into `failed_jobs` and into Nightwatch. R S2-10.11 says in so many words that after three attempts there is no notification. The old silence was a lie, because nothing was ever retried; this was the opposite mistake, the right number of attempts with an error the rule forbids.\n\nHanding back now happens only while an attempt is left (`$this->attempts() < $this->tries`). Three attempts, then the job simply stops. What went wrong stays where it belongs and where it is actually visible: the reason on the delivery in `webhook_deliveries`, and the count on Beheer > Werking.\n\n`SilenceIsNotAYesTest::test_the_last_attempt_stops_without_a_sound` pins it and fails without the condition; the existing retry test now states the attempt number it is standing on, rather than leaving it implicit.\n\nFixes bevinding de-derde-poging-maakte-alsnog-lawaai.\n",
+            "branch": "workbench/fix/the-third-attempt-stops-quietly",
+            "title": "The third attempt stops quietly"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921060838-49511d"
+}

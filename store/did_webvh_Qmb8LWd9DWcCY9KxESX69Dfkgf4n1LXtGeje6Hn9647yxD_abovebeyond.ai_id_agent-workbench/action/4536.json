@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0878c04e79361f3878426f4a8663b0cd914a5cf7",
+            "branch": "workbench/fix/the-chosen-language-survives-the-contact-form",
+            "files_sha256": "ef8a2eab1a713f6b3a1cb47dac65129d0baeb898c5f0c29ca9e93bb9cbec3e55",
+            "message": "The chosen language survives the contact form"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921062123-fe87f6"
+}

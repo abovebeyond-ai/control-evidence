@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Looking for what was worth refactoring, this is what the measurement found, and it is not \"the big\nfiles are big\".\n\n`catch (Exception $e)` in a namespaced file without `use Exception;` resolves to\n`App\\Http\\Controllers\\Settings\\Exception` \u2014 a class that does not exist \u2014 so the catch never matches\nand the exception walks straight past it. **Fifty-nine of them stood in this codebase**, in sixteen\nfiles, almost all of them the settings controllers. Six other `catch (Exception)` elsewhere do have\nthe import and work fine.\n\n**And repairing them would have been worse than removing them.** This is what those bodies hold:\n\n| | |\n|---|---|\n| 45x | `echo 'Caught exception: ', $e->getMessage()` \u2014 the internal message in the page, and a blank one after it |\n| 10x | empty |\n| 2x | `return 400;` |\n| 1x | `throw $e;` |\n| 1x | a real answer (see below) |\n\nAdd the missing import and a dealer starts reading our exception messages on his screen. So they go:\nwhat happens today \u2014 Laravel catches it, logs it, shows its error page \u2014 is what should happen, and\nnow the code says so instead of pretending otherwise. Fifty-six removed, no behaviour changed, 212\nlines fewer.\n\n**Three are left standing**, with a finding rather than a change, because they meant something and\ntouching them changes what the browser sees: `UserController::update` wants to answer the user modal\nwith JSON and a 500 (there is a dated comment above it explaining exactly why), and two AJAX\nendpoints in `OwnStockController` carry `return 400` \u2014 which would not even return a 400 status,\nbut the string \"400\" with a 200. What those two should answer depends on what the JavaScript on the\nother side expects, and that is a decision, not a cleanup. Until then a 500 is at least honest.\n\n**PHPStan's baseline shrinks from 2.058 to 1.959.** Twenty-six of its entries were about exactly\nthis \u2014 the analyser had been pointing at it the whole time, and the first thing we did with it was\nwrite those findings into a baseline. Nothing new went in with the regeneration; I diffed the two\nbaselines to be sure (26 gone, 0 added).\n\n1.821 tests green, and `php -l` on every touched file: the removal is mechanical, so the risk was\nindentation, not behaviour.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/fix/catch-blocks-that-cannot-catch",
+            "title": "Fifty-six catch blocks that could never catch anything"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260920103024-2f15fa"
+}

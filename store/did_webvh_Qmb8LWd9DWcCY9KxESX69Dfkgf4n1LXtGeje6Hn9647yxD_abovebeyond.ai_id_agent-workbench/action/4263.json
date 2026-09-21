@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e43d86e9b115ebaf13d6801a69b6c9cfdc06c837",
+            "branch": "workbench/jaren-onder-vooruitgang",
+            "files_sha256": "764f720e36f15a71f52cc0aaef14d9370019ddab9215f48a6d8c75d275c50b55",
+            "message": "Onder Vooruitgang alleen de jaren: het is altijd de hele graad"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920141217-481a7f"
+}

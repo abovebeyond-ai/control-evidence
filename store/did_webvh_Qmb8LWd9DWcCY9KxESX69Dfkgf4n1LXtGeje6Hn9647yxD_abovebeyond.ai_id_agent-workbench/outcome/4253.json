@@ -1,0 +1,16 @@
+{
+    "action": "692eb8063324b1b267a1e119bbd6eaee",
+    "effect": {
+        "detail": {
+            "base": "e32bab48c92f69ee4ad3f57deced8853cc97eaba",
+            "branch": "workbench/rapporten-ingeklapt",
+            "commit": "429e33b37b2e86e5050cc83a5c83454bd42278e2",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4251,
+    "verdict": "ALLOW"
+}

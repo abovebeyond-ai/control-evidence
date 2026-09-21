@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Tweede punt uit de audit, eerste stap van het tenancy-werk: \u00e9\u00e9n lezer van de gekozen school.\n\nZestien plekken lazen `session('school_id')` rauw naast `SchoolService::selected()`: de scopes op `AttainmentLevel` en `AttainmentLevelCluster`, zes Livewire-componenten, de middleware en het keuzecomponent. Wie rauw leest omzeilt de uitzondering bij een ontbrekende school en filtert dan stil op `school_id is null`.\n\n- `SchoolService` krijgt `selectedId(): ?int` en `hasSelected(): bool` voor wat zonder school moet blijven werken: de twee scopes en een commando. `selected()` blijft de weg voor de rest en gooit als er geen school is.\n- De zes Livewire-componenten vragen `selected()->id`: in een verzoek is er altijd een school, en ontbreekt die, dan hoort dat een fout te zijn en geen lege lijst.\n- De middleware en het keuzecomponent lezen via `hasSelected()` en `selectedId()`.\n- Geen rauwe lezing meer buiten de service; `grep session('school_id') app` geeft alleen de service.\n\nDe vijf tests die de service mocken kennen de twee nieuwe lezers. `SchoolServiceTest` pint ze. Volledige suite lokaal groen op de bekende `BuildStampTest` na, Pint en PHPStan schoon.\n\nVolgende stap in dit werk: de 54 `withoutGlobalScopes()` vervangen door de ene scope die telkens bedoeld is, en policies voor project, evaluatie en leerling.\n",
+            "branch": "workbench/een-lezer-van-de-school",
+            "title": "E\u00e9n lezer van de gekozen school: SchoolService, ook waar geen school mag ontbreken"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260920145537-b238cd"
+}

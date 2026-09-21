@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Derde mobiele reeks: de rapporten.\n\n- **Vooruitgangsrapport:** twee kolommen dwongen 480 pixels af en scrolden zijwaarts; nu neemt het vak wat de scorekolom laat en past het op een telefoon.\n- **Periodiek rapport:** de 480 pixels blijven alleen bij twee of drie scorekolommen; met \u00e9\u00e9n kolom past het. Het vak krijgt onder `md` een vaste breedte alleen als er te schuiven valt.\n- **De rijen** (Vue, `TableSection`) hebben onder `sm` de helft van de marge.\n- **De scores achter een cel** openden alleen op hover, dus op een telefoon nooit; een tik opent en sluit ze nu ook. Onder `sm` verschijnt de lijst als een blad onderaan het scherm in plaats van links van de cel, waar hij door de scrollcontainer werd afgesneden.\n\nRapporttests en het snapshot groen, ESLint op de bestaande twaalf waarschuwingen, volledige suite lokaal groen op de bekende `BuildStampTest` na.\n",
+            "branch": "workbench/rapporten-mobiel",
+            "title": "Rapporten op een telefoon: het vooruitgangsrapport past, het periodiek rapport schuift alleen bij meer dan \u00e9\u00e9n scorekolom, scores openen op een tik"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921063107-c835ce"
+}

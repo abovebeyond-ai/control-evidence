@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e1fea36448ac7f39ba96c2e885dd6ea97145f358",
+            "branch": "workbench/mobiel-gedeeld",
+            "files_sha256": "c7c3b6b1a9bf7dd06e880c509c76c803f9db384331ffce0fa88c7cb36dd8b40c",
+            "message": "Mobiel, de gedeelde stukken: bovenbalk, paginakop, zoekveld, lijstitem, kaartkop, tabelmarge, formulierknoppen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921060633-c32ea9"
+}
