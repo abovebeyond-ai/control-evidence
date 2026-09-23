@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De matrix wordt op een smal scherm niet meer aangeboden, en de lege pagina die je zag is weg.\n\n**Wat er misging.** Ik had de matrix onzichtbaar gemaakt zolang de automatische omschakeling liep, met een Alpine-vlag. Wie daarna zelf op Matrix tikte, kreeg die vlag niet weg: de matrix werd gerenderd en bleef onzichtbaar. Een lege pagina onder de schakelaar, precies wat je zag.\n\n**Wat er nu staat.** Geen vlag meer. Onder 640 px staan de schakelaar en de tabel niet in beeld, met CSS, dus er is niets te kiezen wat toch niet werkt: een tabel van elke leerling maal elke eindterm heeft op een telefoon niets te geven, en dat is waarom de weergave per leerling bestaat. Wie met de matrix in zijn sessie op een telefoon binnenkomt, wordt \u00e9\u00e9n keer omgeschakeld, zoals voorheen.\n\n**En als dat niet lukt**, bijvoorbeeld omdat je een venster smaller trekt na het laden, dan staat er \"De matrix past niet op een smal scherm\" met een knop \"Toon per leerling\". Nooit meer een leeg vlak.\n\nOp een breed scherm is er niets veranderd: de schakelaar staat er, de matrix ook.\n\nEen test erbij die vastlegt dat de matrix pas vanaf sm in beeld komt en dat de uitweg ernaast staat. Suite en PHPStan groen; nagekeken op 430 px en 1280 px.\n",
+            "branch": "workbench/geen-matrix-op-telefoon",
+            "title": "Geen matrix op een smal scherm, en geen lege pagina meer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921155616-a94aa3"
+}

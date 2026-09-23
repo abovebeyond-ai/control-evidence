@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "91db74b570c29e627e329a18349ab01ba6491c7a",
+            "branch": "workbench/de-regel-over-deel-4-uit-de-template",
+            "files_sha256": "769dea68ad15ac1502fb0997f85a52aba1a10fe907d83539385b6e6a0ee37de3",
+            "message": "De regel over Deel 4 uit de template"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922164623-72e582"
+}

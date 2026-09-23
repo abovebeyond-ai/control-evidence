@@ -1,0 +1,10 @@
+{
+    "action": "b350203f10c80a0f858b217d6239e5c7",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on abovebeyond-ai/control-verify-action",
+    "step": 4926,
+    "verdict": "DENY"
+}

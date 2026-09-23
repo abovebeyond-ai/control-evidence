@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"In optie\", \"uit optie\" and the anomaly notice all render `mails/default.blade.php`, which held nothing but the sentence. A dealer reading \"Peugeot 3008 (2021) werd in optie gezet voor 2 dagen\" on his phone has no way to tell which of his three 3008s it is.\n\nSo the mail now carries the car: the first photo that actually exists, with make, model, year and mileage, and both the picture and the name link to the sheet. It uses `MailPhoto::first()`, the helper the daily mail got this morning, rather than the four-branch cascade that still sits in `sold_email` and threw on a car without a derived file name.\n\nTwo things are pinned by the test because both have cost a mail before. The markup has to arrive as markup: a blank line, a Blade comment or an `@php` block inside the table ends the raw-HTML block and markdown escapes the rest, which is how a mail once went out with its tags visible. And the anomaly notice hands `DefaultMessage` an empty `new Vehicle`, so the row may only appear when there is a car.\n\nR S4-1.2 already promised the mail; it now says what is in it, and notes that R S4-1.5 and R S4-1.6 share the template.\n",
+            "branch": "workbench/feat/a-car-in-a-mail-shows-its-photo",
+            "title": "A car in a mail shows its photo"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921095631-600732"
+}

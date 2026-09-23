@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "146084aa6dfa4b602c17f86b95f770baae12c8b3",
+            "branch": "workbench/maximum-vragen",
+            "files_sha256": "fbbefb4ee5746ad20117fb849bcc542ba92d19287f62ee7ccf766fb7eebbe777",
+            "message": "Eerst het maximum, dan de score, en de melding zegt dat ook"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921131826-36f537"
+}

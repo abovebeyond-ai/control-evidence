@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4dbb148af060b98a79545f3db774cbb6535f30ce",
+            "branch": "workbench/fix/the-chassis-modal-posts-the-id-the-route-expects",
+            "files_sha256": "841649764953cfcbe35c7b26483cb89d6170a49e342a24eb55b4828b39e4e112",
+            "message": "The chassis modal posts the id the route expects"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922132119-4cf833"
+}

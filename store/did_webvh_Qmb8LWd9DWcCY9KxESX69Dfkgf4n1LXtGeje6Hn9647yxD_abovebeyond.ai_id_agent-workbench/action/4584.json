@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "18abe83086e8f40ee2b42ddf91916ebcff35e715",
+            "branch": "workbench/leerling-lijntjes",
+            "files_sha256": "bde63bf91eb6d62afcf3e48af27a0ed9f9a27ecd201802dec26ceebbc8997b70",
+            "message": "Leerlingdashboard: minder lijntjes"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921083519-d25431"
+}

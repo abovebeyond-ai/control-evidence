@@ -1,0 +1,16 @@
+{
+    "action": "a2d7434e07b785856ccedd3209abe911",
+    "effect": {
+        "detail": {
+            "base": "053d34cff382c4af0f134e75c42230a8ae2dd90d",
+            "branch": "workbench/fix/own-vehicle-never-gets-a-margin-2",
+            "commit": "b3cf6ff13475b715b54012af60941af8dd119e64",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5442,
+    "verdict": "ALLOW"
+}

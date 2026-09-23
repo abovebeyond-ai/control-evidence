@@ -1,0 +1,16 @@
+{
+    "action": "45720f0e620490b7129659682fa4d080",
+    "effect": {
+        "detail": {
+            "base": "143777da92f309fb65acd5840391ba8e1a91971f",
+            "branch": "workbench/fix/the-reset-covers-every-second-factor",
+            "commit": "7daa57cc6319fc2b7d34dfcd8358203efb5aa504",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5010,
+    "verdict": "ALLOW"
+}

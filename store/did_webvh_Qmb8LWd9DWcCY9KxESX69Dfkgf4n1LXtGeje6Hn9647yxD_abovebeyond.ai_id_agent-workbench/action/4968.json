@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3c55561b5c79fd6c0642810447c745339880be64",
+            "branch": "workbench/de-pin-mag-weg",
+            "files_sha256": "0896f8b50ca6e26d68f8c42894635024128831b5184eb3e25f3cee09c3e44225",
+            "message": "De pin op het DID-document mag weg: de fout zat in het ophalen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921181346-e6e851"
+}

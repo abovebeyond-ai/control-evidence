@@ -1,0 +1,16 @@
+{
+    "action": "5ffe95800ef3aac34b832cdbd6273ebe",
+    "effect": {
+        "detail": {
+            "fields": [
+                "links",
+                "replaceLinks"
+            ],
+            "project": "hoet"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4863,
+    "verdict": "ALLOW"
+}

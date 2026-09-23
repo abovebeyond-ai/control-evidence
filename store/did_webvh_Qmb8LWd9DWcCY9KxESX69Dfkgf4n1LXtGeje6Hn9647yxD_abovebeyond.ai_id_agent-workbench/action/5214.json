@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5c473fbaa74ed59db5f2fa0008173644c8829a70",
+            "branch": "workbench/security/the-embed-is-module-one",
+            "files_sha256": "a6bef6fb5f4df95de384a877ed1d519daa2a0db4a02fde2da28c3edec137db92",
+            "message": "The embed on a dealer's own site is part of module 1"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922105116-50e284"
+}

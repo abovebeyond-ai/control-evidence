@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Every merge to main currently produces TWO Forge deploys: the merge itself, and the commit\n`release.yml` pushes back to main to rewrite a version badge in the README. Each of those is a full\n`composer install`, `npm ci` and vite build, and each opens a window in which `current` still runs\nthe old code against the freshly written shared manifest (R P1-1.22). That is what a badge costs.\n\nSo the workflow now pushes a tag and nothing else. What it drops:\n\n- the badge-rewriting step and its push to main,\n- the `if:` guard that existed only to stop the workflow re-triggering on its own badge commit,\n- `release-badge.yml`, which wrote the same commit and, since releases published with the default\n  `GITHUB_TOKEN` do not start other workflows, had never once run.\n\nThe version is still handed out on every merge and still published as a release; it is simply read\nfrom the releases page instead of from a badge. Which code actually runs remains the question\n`/.well-known/build.json` answers, and it carries the commit.\n\n`EveryDeployIsAVersionTest` is rewritten rather than trimmed: two of its cases pinned the badge\ncommit and the guard against it, so they are replaced by one that pins the opposite, that the\nrelease pushes nothing to main. R P1-1.23 is updated with the reason.\n",
+            "branch": "workbench/ci/one-deploy-per-merge",
+            "title": "One merge is one deploy: the release stops pushing a badge to main"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922100216-596ebc"
+}

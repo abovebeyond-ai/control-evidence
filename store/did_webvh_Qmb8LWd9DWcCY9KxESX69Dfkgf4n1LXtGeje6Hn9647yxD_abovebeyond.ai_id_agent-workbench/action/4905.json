@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nightwatch meldde vandaag twee 500's op productie, bij dezelfde leraar in hetzelfde half uur. Beide zijn hier opgelost, met een test die zonder de fix dezelfde fout geeft als het log.\n\n**Het feedbackrapport, vier keer** ([issue #3](https://nightwatch.laravel.com/us/environments/a2caaf2a-7091-4c56-a70f-55518facaf77/issues/3), `Undefined array key \"testAverageColorPrint\"`). Het scherm rapporten voorbereiden vroeg de eindtermenclusters op en kreeg een 500. `addEvaluationType` berekent de printkleur alleen voor een termrapport, want dat is het enige dat als pdf naar huis gaat, maar de DTO van het feedbackrapport vraagt de drie printkleuren verplicht op. De tak voor een niet-lopende periode zette de sleutel al op een lege string; de tak die w\u00e9l iets te berekenen had, zette hem helemaal niet. Zo lag het rapport om zodra er een periode met dagelijks werk liep. De sleutel staat er nu altijd, met de lege string als er niets te printen valt.\n\n**Het scoreformulier, \u00e9\u00e9n keer** ([issue #2](https://nightwatch.laravel.com/us/environments/a2caaf2a-7091-4c56-a70f-55518facaf77/issues/2), `Undefined array key 1`). `updatedScores` las de eindterm en de leerling uit het pad dat Livewire meegeeft. Dat pad noemt niet altijd een cel: de browser kan de hele scores-array sturen (dan is er geen pad) of de rij van \u00e9\u00e9n eindterm (dan alleen de eindterm). Er is dan geen score om op te slaan, dus zo'n bericht wordt nu overgeslagen.\n\nGeen van de twee is een regressie van het werk van vandaag: de printkleur zit zo sinds de drie identieke blokken samengetrokken werden, en het pad las de leraar al sinds november 2025 uit. Nightwatch draait pas sinds vanavond mee, dus dit is de eerste keer dat we ze zien.\n\n**Getoetst.** `php artisan test --parallel`: 1031 groen (alleen BuildStampTest faalt, en die faalt in elke worktree zonder Vite-build). `vendor/bin/phpstan analyse`: geen fouten. Pint schoon. Beide nieuwe tests falen zonder hun fix met de fout uit het log.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/twee-fouten-uit-nightwatch",
+            "title": "Twee fouten uit Nightwatch: de printkleur van het feedbackrapport en een scorepad zonder leerling"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921171231-96891d"
+}

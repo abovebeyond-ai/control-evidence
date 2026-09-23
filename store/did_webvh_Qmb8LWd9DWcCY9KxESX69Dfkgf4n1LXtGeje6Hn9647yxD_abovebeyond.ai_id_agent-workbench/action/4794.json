@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee kleine dingen aan het project.\n\n**Standaarddatums bij aanmaken.** Startdatum vandaag, einddatum het einde van het lopende schooljaar. De velden waren leeg, en Safari toont in een leeg datumveld de dag van vandaag, in beide vakken; een project van \u00e9\u00e9n dag is nooit bedoeld. Test: het aanmaakscherm draagt vandaag en de einddatum van het schooljaar.\n\n**De projectpagina.** De eindtermen staan nu v\u00f3\u00f3r de evaluaties: eerst wat beoordeeld wordt, dan de beoordelingen. En tussen alle kaarten staat dezelfde 24 px; op een telefoon telden de kolomkloof van het raster en de marge van de kaarten op tot 40 px tussen Leerlingen en Evaluaties, waar de rest 16 had.\n\nScoringtests groen, PHPStan zonder fouten.\n",
+            "branch": "workbench/project-einddatum",
+            "title": "Project: standaarddatums en de kaarten in volgorde met \u00e9\u00e9n tussenruimte"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921115238-9e2646"
+}

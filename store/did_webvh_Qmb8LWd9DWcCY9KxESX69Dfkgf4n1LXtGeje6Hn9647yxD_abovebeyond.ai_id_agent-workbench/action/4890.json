@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "efc423c77096ce7eecc32be3bd5a930d9e9c0c5a",
+            "branch": "workbench/fix/a-photo-without-a-foreground-is-not-a-fault",
+            "files_sha256": "7b17f99654ae0694163f6193a23c602d7439be9bf5b30b1a7f6b089bb461f5cd",
+            "message": "A photo without a foreground is not a fault"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921170132-27b4d0"
+}

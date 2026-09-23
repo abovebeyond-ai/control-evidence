@@ -1,0 +1,16 @@
+{
+    "action": "ac2f634cdf893d44738852d5fcb8655e",
+    "effect": {
+        "detail": {
+            "base": "91db74b570c29e627e329a18349ab01ba6491c7a",
+            "branch": "workbench/de-regel-over-deel-4-uit-de-template",
+            "commit": "d19829f1b259b7e88a919e002903f1fbf920512d",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5382,
+    "verdict": "ALLOW"
+}

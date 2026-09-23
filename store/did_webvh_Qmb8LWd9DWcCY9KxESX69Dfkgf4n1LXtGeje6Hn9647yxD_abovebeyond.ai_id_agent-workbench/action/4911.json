@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nightwatch #19 and #13, `DecryptException: The payload is invalid.` Looking at it settled two things at once.\n\n**The one that was reported is already fixed.** #19 was Amazonbot asking `GET /website/detail/ODM2OQ==` on 20 September. `ODM2OQ==` is plain base64 of a dealer id, from an older style of link that a crawler still has in its index, and `Crypt::decryptString` throws on it. `WebsiteController` has had `dealerIdFromHash` with a 404 since then, and its docblock names that very request. Zero occurrences in the last 24 hours. So that issue can be resolved rather than fixed again.\n\n**The same gap was still open next door.** `DealerController` decrypts the hash straight in three public showroom routes: the screen itself, its slides, and the car-set check the screen polls. Those are exactly the routes a crawler follows and a kiosk asks for, so the same garbled address gives the same 500 \u2014 it simply has not been asked yet.\n\nThey now go through one gate that answers 404. A wrong link is not a fault of ours.\n\nThe test asks with what actually arrives: the old base64 address, a piece of path (`detail`, which is how #19 reached `website/{dealer_hash}` in the first place), and plain junk. It also asserts a proper hash still gets through, because a 404 on everything would pass just as well. Verified to bite: with the gate removed, two of the three fail.\n\nNew rule R S2-7.19.\n",
+            "branch": "workbench/fix/a-garbled-showroom-link-is-not-found",
+            "title": "A garbled showroom link is not found"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921172048-423dc5"
+}

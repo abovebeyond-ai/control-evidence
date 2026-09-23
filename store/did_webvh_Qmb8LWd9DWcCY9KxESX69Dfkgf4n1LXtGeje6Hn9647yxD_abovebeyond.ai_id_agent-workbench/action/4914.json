@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0984238b9f41c27b8548206f6b154584dd0d396c",
+            "branch": "workbench/geen-schooljaar-is-een-uitleg",
+            "files_sha256": "929fecf6c654a8f27bc29eeb25c4b18a7bd4df924b6fc935c72950b4b824c11c",
+            "message": "Geen schooljaar voor vandaag is een uitleg, niet een 500"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921173227-fa53d0"
+}

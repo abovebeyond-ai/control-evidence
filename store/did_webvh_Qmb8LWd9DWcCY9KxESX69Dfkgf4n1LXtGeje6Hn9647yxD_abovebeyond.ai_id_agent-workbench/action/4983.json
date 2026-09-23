@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het staartje van #112. Die zette de Blade-helft van de app om en liet de Vue-helft staan: de deliberatietabel van \u00e9\u00e9n leerling, de tabel van rapporten voorbereiden en `TableSection` riepen nog in gespatieerd kapitaal. Dat zijn precies de schermen waar een leerkracht in werkt, dus half omgezet was hier ook zichtbaar half.\n\nDezelfde regel als in het component: `text-sm font-medium text-ink-500`, geen caps en geen spati\u00ebring. `TableSection` stond op `font-semibold text-ink-600` en volgt nu ook de gedeelde regel, want een kolomkop hoort er overal hetzelfde uit te zien.\n\n**En een test die de volgende tegenhoudt.** Die loopt elk zelfgeschreven `<th>` na in `resources/views` en `resources/js`. De helft die zijn eigen `th` schrijft is de helft die bij deze omzetting bijna bleef staan, en dat vindt niemand terug met het oog; de test noemt bestand en regelnummer. Nagekeken dat ze bijt door \u00e9\u00e9n kop weer te laten roepen: `Kolomkop in gespatieerd kapitaal: DeliberationSection.vue:4`.\n\nNu roept er in de hele app niets meer, op `errors::minimal` na. Dat frame draagt een bevroren stijlblad van het framework waarin geen van onze klassen bestaat, en het is de pagina die je te zien krijgt als er niets anders meer werkt.\n\n**Getoetst.** `php artisan test --parallel`: 1041 groen, alleen BuildStampTest faalt zoals in elke worktree zonder Vite-build. PHPStan schoon, Pint schoon, `npm run build` en `npm run lint` zonder nieuwe klachten.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/de-vue-koppen-ook",
+            "title": "De Vue-koppen ook, en een test die de volgende tegenhoudt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921184524-44f9f8"
+}

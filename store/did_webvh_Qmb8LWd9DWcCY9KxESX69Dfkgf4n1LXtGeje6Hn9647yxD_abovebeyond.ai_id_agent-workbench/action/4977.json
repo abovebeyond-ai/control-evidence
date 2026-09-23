@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Jouw keuze van net: normale letters, klein.\n\nElke tabel in de app riep in gespatieerd kapitaal (`text-xs uppercase tracking-wide`). Dat is het ene wat de huisgids met naam verbiedt als standaardlabel, en de paginakop verloor het vandaag om dezelfde reden. De kleur scheidt de kop al van de rijen eronder, dus de kleine letter en het kapitaal deden geen werk.\n\n```\nvoor:    STUDENT        BEOORDELING     FEEDBACK\nna:      Leerling       Beoordeling     Feedback\n```\n\nE\u00e9n regel in `components/table/header-cell` draagt de gedeelde tabellen. De zeven schermen die hun eigen `<th>` schrijven gingen in dezelfde pas mee, want half omgezet is erger dan niet omgezet: het termrapport, het vooruitgangsrapport, de eindtermenkiezer, de evaluatietabel, de matrix van het scoreformulier, de leerlingfiche en de deliberatie-export. Plus het losse label \"Feedback\" boven het termrapport, dat dezelfde klassen droeg.\n\nDe foutpagina's van het framework (`errors::minimal`) blijven zoals ze zijn: die dragen hun eigen bevroren stijlblad en geen enkele klasse daarvan bestaat in de bouw.\n\n**Getoetst.** Een test op de klasse van het component, want het is \u00e9\u00e9n regel in \u00e9\u00e9n bestand en zoiets glijdt er bij een volgende wijziging zo weer in. `php artisan test --parallel`: 1040 groen, alleen BuildStampTest faalt zoals in elke worktree zonder Vite-build. PHPStan schoon, Pint schoon. Nagekeken in de browser op de deliberatietabel.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/kolomkoppen-in-normale-letters",
+            "title": "Kolomkoppen in normale letters, in elke tabel"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921183052-d08c4d"
+}

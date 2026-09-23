@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "88f221ebaac5d39ff1253526efdb751aabdedfc3",
+            "branch": "workbench/nightwatch-eigen-wacht",
+            "files_sha256": "cca6bd670ac24b7c59fd39b6b34842b79f0d5f5d3365500b08abb42e613c7f65",
+            "message": "Onze eigen wacht niet aan Nightwatch melden"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922085644-dce2c7"
+}

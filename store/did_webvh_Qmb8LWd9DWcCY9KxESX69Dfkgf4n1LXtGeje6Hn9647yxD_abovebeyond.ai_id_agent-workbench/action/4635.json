@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "59a2b36ab00115d9771c25d23d0d8fff37a9988e",
+            "branch": "workbench/the-mix-readable-2",
+            "files_sha256": "ebf0fa08e0c40b49d6cbfc40e163e33c7ebda60243820315285bf1af2d5e7953",
+            "message": "The mix of what comes in, readable along one axis at a time"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260921093555-38e927"
+}

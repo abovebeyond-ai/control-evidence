@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "27bf7ebceaf73e371d54448ff6ad37db21b0f705",
+            "branch": "workbench/filters-mobiel",
+            "files_sha256": "dd6ae5fa3a4835df916f34efab1d1a5923293f0e809ec8cd1718bb38acdd9927",
+            "message": "Mobiel: filters van de clusterlijst inklapbaar, kiezers die passen op een telefoon"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921074805-78f62d"
+}

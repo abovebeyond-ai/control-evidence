@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "What you asked for: scrolling the left side to the bottom should end with the right side at its bottom too.\n\nThe action column stuck by its top (92px) and scrolled inside itself when taller than the viewport. That worked only with the mouse over that column. Reading the vehicle sheet on the left brought you to the bottom of the page while the last actions on the right were still under the edge, and two scrollable areas side by side leave you guessing which one you are moving.\n\nNow its **bottom** sticks instead of its top. `buybox-scroll.js` measures: if the column is taller than the window it sets a `top` of `window height \u2212 column height \u2212 16`, so the column's bottom edge lines up with the bottom of the screen. Scrolling the page therefore carries the column along until its end is in view, and only there does it stay. If it fits, nothing changes: it sticks under the header as before.\n\nMeasured rather than guessed, because CSS cannot ask \"am I taller than the window\". Same shape as `menu-flip.js`: measure in the next frame, because height is unknown before paint. Re-measured on resize and through a `ResizeObserver`, because the height also changes without a resize (the warranty block arrives after a call).\n\nThe internal scrollbar is gone with `max-height` and `overflow-y`, so there is no second scroll area on the page.\n\n**The reason the old design existed still holds** and is still tested: the last buttons (order, test drive) must be reachable (the 2026-09-15 finding, 1440x800 and 1440x900). This reaches them by a route that does not depend on where the pointer is.\n\nR S5-3.14 rewritten. `BuyboxSidebarScrollTest` rewritten with it: no scroll area of its own, the sticky point measured for both cases, re-measured on height change, sticky only from 1024px, and the script actually loaded.\n\nFull suite green, build green, eslint clean.\n",
+            "branch": "workbench/ui/the-buybox-reaches-its-bottom",
+            "title": "The buybox reaches its bottom"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922064631-166228"
+}

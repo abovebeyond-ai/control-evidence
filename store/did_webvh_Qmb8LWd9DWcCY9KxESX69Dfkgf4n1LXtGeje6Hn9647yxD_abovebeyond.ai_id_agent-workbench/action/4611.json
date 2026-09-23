@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Autobedrijf Gielkens meldt sinds 17 september dat een prijswijziging afketst met \"This page has expired\". The explanation we had (the session expiring) was refuted on 21 September: `SESSION_LIFETIME` is 43,200 minutes on production, thirty days. Four conversations long, five explanations stayed equally likely, because a 419 left no trace at all: it is deliberately not mailed (`doWeWantAMail` excludes `TokenMismatchException`) and the page catches it.\n\nSo `report()` now writes one line: who it happened to, on which screen, which Livewire method was called, whether a delegation was active, and how many input fields arrived next to what PHP accepts. That last pair is the point. PHP truncates a POST above `max_input_vars` (1000 here) without a word and drops the rest, the CSRF field included: same message, different cause. Reads 1000 of 1000 and the cause is found, and it is not about sessions.\n\nNothing changes for the visitor. The next time it happens it is a measurement instead of a guess.\n\nFixes bevinding een-419-liet-geen-spoor-na\n",
+            "branch": "workbench/feat/a-page-that-expires-says-who-it-happened-to",
+            "title": "A page that expires says who it happened to"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921085723-36a578"
+}

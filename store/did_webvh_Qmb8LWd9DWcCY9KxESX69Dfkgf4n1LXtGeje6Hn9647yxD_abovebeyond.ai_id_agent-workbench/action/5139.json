@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b37e0b5996e91a6addbccf13edd70536d480796e",
+            "branch": "workbench/ui/the-price-stays-in-view",
+            "files_sha256": "87fd71f548ba16ddbe00615bb880166a5be27867d0b617a226fd81828dbdf6fd",
+            "message": "The price stays in view"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922072757-cb973e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane, 21 September 2026: \"bij een auto in optie kan je inderdaad geen bestelbon maken, momenteel is dat visueel opgelost, maar mag dus ook in de code aangepast worden.\"\n\nR S4-1.4 has promised this for as long as the rule document exists, and stood at `betwist` because nobody could find where it was enforced. It was not. The offer list replaces the button with an explanation when the car is in option, and that is where it ended: an old tab, a copied URL or the modal straight away reached `create` and `createFromOffer`, which only checked that the relation belonged to the dealer who is logged in.\n\nBoth save paths now refuse, with the same sentence the button shows (`ui.no_order_in_option`). One private gate, `refuseWhenInOption`, so the two paths cannot drift apart the way the styling and the rule did.\n\nThe rule moves from `betwist` to `code` and says what holds it, which takes the count of disputed rules from 39 to 38.\n\nFixes bevinding in-optie-geen-bestelbon-mogelijk-te-verifieren\nFixes #596\n",
+            "branch": "workbench/fix/no-order-form-for-a-car-in-option",
+            "title": "No order form for a car in option"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921102547-9bfd4d"
+}

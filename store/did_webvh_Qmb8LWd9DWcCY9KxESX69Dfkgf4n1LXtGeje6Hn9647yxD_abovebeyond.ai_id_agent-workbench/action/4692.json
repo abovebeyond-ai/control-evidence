@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three documents, no code.\n\n**Blurring a bidding vehicle (Shane, 21 September 2026: \"blurren is in geheel niet nodig voor biedingswagen\").** R S1-6.11 promised \"photos unchanged, with the possibility of blurring manually\". The first half holds; the second was never built, and the finding had been looking for a button that should not exist. The rule now says what it is: at a bidding vehicle the photo stays as it is, not blurred automatically and not by hand. A bidding goes to professionals who want to see the car as it is. The rule leaves `betwist`.\n\n**And one cause corrected.** The finding on \"This page has expired\" from 17 September reasoned its way to an expiring session, and built a heartbeat, a fresh-token retry and our own dialogue on that reading. Its own last paragraph allowed for another cause, and it was right. The 419 logging that went live this morning wrote no line for Gielkens at all \u2014 only for a showroom screen \u2014 while the complaint continued. What was in the log, since 16 September 16:32 and sixty-two times, was a 500 from `addMonths` on a string. That is why the operator could never reproduce it: not the pace and not the admin account, but the car. Fixed in #708; the finding now records what it actually was, and what was built on the wrong reading stays, because it is good on its own.\n\nFixes bevinding biedingswagen-fotos-ongewijzigd-met-de-mogelijkheid-om\nFixes bevinding prijs-wijzigen-page-expired\nFixes #620\nFixes #572\n",
+            "branch": "workbench/docs/two-decisions-written-down",
+            "title": "Two decisions written down, and one cause corrected"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921102800-8f23bc"
+}

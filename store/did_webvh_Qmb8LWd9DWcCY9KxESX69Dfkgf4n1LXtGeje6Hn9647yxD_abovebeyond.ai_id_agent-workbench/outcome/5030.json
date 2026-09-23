@@ -1,0 +1,16 @@
+{
+    "action": "59a86c36e6f10d2c7003e28ecd933b29",
+    "effect": {
+        "detail": {
+            "base": "8b668cf4b7cca5838eb03809f631647e7ba10bd8",
+            "branch": "workbench/stilte-wordt-een-logregel",
+            "commit": "405fa08b9bef4ce8e7c4723bb5b385d35a9c7052",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5028,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8f0384ff9dd47a6cd9aac42bd5524dbbd83c6085",
+            "branch": "workbench/docs/the-carpass-url-and-the-parked-delete",
+            "files_sha256": "946b401eae6e7f0fe65dd68e973339be81edbe3c0d7f70957c33669acbd673b2",
+            "message": "Three open points: the parked delete door and what an imported Car-Pass URL does not carry"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922122410-bef81c"
+}

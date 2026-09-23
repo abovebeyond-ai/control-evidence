@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Naviskore verstuurt geen enkele mail: geen `app/Mail`, geen notificaties, geen wachtwoord-reset of e-mailverificatie. Inloggen loopt via Microsoft, Smartschool of een wachtwoord dat de beheerder zet.\n\n**Weg:** zes controllers uit Breeze zonder route en zonder aanroeper (`ConfirmablePassword`, `EmailVerificationNotification`, `EmailVerificationPrompt`, `PasswordResetLink`, `RegisteredUser`, `VerifyEmail`), en hun vijf regels in de PHPStan-baseline.\n\n**`.env.example`:** `MAIL_MAILER=log` en alleen nog de afzender; de SMTP-regels (`MAIL_HOST`, `MAIL_PORT`, `MAIL_USERNAME`, `MAIL_PASSWORD`, `MAIL_ENCRYPTION`) mogen ook uit de `.env` op Ploi.\n\nAuth-tests en routetest groen, PHPStan zonder fouten.\n",
+            "branch": "workbench/breeze-rest",
+            "title": "De Breeze-restanten zonder route weg; de mail is een log"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921110153-ba27c3"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "33c7e54f5c33fcb45b8557d2ed90ad2d87023927",
+            "branch": "workbench/de-readme-op-trede-3",
+            "files_sha256": "f77a0453cd697d5d5753926186e049b39c53417e9558b772bd743cecdf25ece1",
+            "message": "De README zegt wat er draait, niet wat er wachtte"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260922111804-70934e"
+}

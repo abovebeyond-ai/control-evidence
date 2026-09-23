@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding een-ingetikte-klantprijs-deed-niets-bij-een-eigen-wagen.\n\nTick customer mode on your own vehicle's detail page, the modal asks for a price, you type it, you\nsave, and nothing changes. No message, no explanation: the buybox keeps showing the retail price.\n\nR S5-4.6 already says the typed price replaces the margin price **\"op elk scherm\"**. In five of the\nsix price methods the own-vehicle branch came first, so on an own vehicle the typed price was never\nreached: `detailPrice`, `listPrice`, `indexCardPrice`, `orderPrefill` and `leaseBase`. Only\n`documentPrefill` had the order right. So this is not a new decision, it is a rule the code did not\nkeep.\n\nThe check moves above the ownership branch in all five. Nothing else changes: with no typed price an\nown vehicle still shows its retail price, which is R S5-4.5, and a second test pins that so one fix\ndoes not eat the other rule.\n\nAgainst the class on main the first test fails with \"Failed asserting that 9500.0 is identical to\n7250.0\": the retail price where the dealer had typed something else.\n\n**What stays open.** That same difference between `documentPrefill` and the rest is why one order\nmodal shows two amounts for a single vehicle (bevinding\n`eigen-wagen-toont-in-klantmodus-de-verkoopprijs`). That case is about the **margin** price, not a\ntyped one, so it is untouched here and still waits on Ilse. The finding is updated to say which half\nis done and which is not, rather than being closed on a half answer.\n",
+            "branch": "workbench/fix/a-typed-price-wins-on-every-screen",
+            "title": "A typed customer price wins on every screen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922143041-adb5d9"
+}

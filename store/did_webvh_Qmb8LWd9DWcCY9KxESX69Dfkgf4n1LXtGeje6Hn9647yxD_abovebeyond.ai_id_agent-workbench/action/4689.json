@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cf83d70ede63ad0b71eec57f1d474884899b99c7",
+            "branch": "workbench/docs/two-decisions-written-down",
+            "files_sha256": "f38ef16eb3ad624bcfbcb6efb52fd4cefd3ba739d82ee4f046d9e278cadf1a6a",
+            "message": "Two decisions written down, and one cause corrected"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921102800-8f23bc"
+}

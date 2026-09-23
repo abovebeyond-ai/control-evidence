@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dde81a144e1a1fadc7a7a4ec1b89e290f769d7ea",
+            "branch": "workbench/een-zuivere-rekenkern",
+            "files_sha256": "d3934a9b47c4f69708e57e33bc7466025d43b3105a11d23304365a7809124f6d",
+            "message": "Een zuivere rekenkern voor het gemiddelde"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923062544-b2388f"
+}

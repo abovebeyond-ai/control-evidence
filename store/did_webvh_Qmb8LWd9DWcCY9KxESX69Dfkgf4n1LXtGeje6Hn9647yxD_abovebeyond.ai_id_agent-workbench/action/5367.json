@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding een-blur-fout-zei-niet-wat-er-terugkwam. Nightwatch #37.\n\nA `ProcessImage` job failed for a dealer at 14:33 today and the whole message was:\n\n```\nBlur error:\n```\n\n`BluritService` threw `'... error: ' . $response->json()` in four places. `json()` returns an array,\nso at best the message read \"Blur error: Array\"; when the answer was not JSON it returned null and\nthe message was that bare prefix. No status code, no body, nothing to go on. The photo stays\nunprocessed and the only way to learn anything is a trip to production.\n\nAll four now carry the status and a readable piece of what came back, through one small helper. Same\ntreatment as the Nederland Mobiel answer earlier today, for the same reason: an error that throws the\nevidence away is worse than no error.\n\nThe tests fake a refusal and an empty answer; both fail against the service on main, the first on\n\"de statuscode hoort erin\".\n\n**Noted, not changed:** these calls carry no timeout of their own. The failing job took six seconds\nand Laravel's default is thirty, so a silent Blurit would hold a queue worker for half a minute per\nphoto. That is a separate call and it is written into the finding rather than folded in here.\n",
+            "branch": "workbench/fix/a-blur-error-says-what-came-back-2",
+            "title": "A blur error says what came back"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922144431-b46658"
+}

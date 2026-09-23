@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het tweede hoofdstuk van het regelboek, en het legde meteen iets bloot.\n\n**S3 gaat over het scherm waar een leerkracht het meeste tijd doorbrengt**: een raster van leerlingen maal eindtermen, waar alles meteen opslaat zonder bewaarknop. Dertig regels beschrijven wat het weigert en wat het aanvaardt: het maximum dat per eindterm geldt en niet per leerling, een score die daarboven gaat, een maximum dat onder een bestaande score gezet wordt, een afwezigheid die een score wist, feedback die zonder score kan bestaan, en wanneer een evaluatie op slot gaat.\n\n**Wat het blootlegde.** Er stonden elf tests op dat scherm, en die dekten bijna allemaal de schermkant: welke weergave er staat, wat er zichtbaar is. Wat er in de databank belandt, stond er nauwelijks in, terwijl dat de kant is die een cijfer bepaalt. Die elf dragen nu hun tag; er zijn er veertien bijgekomen voor de logica en de rechten.\n\n| | voor | na |\n|---|---|---|\n| regels met een test (S3) | 2 van 21 | 18 van 21 |\n| samen met S4 | 17 van 45 | 35 van 45 |\n\nDat is het punt van dit document: niet een getal halen, maar zien waar de tests over gaan. Elf tests op een scherm klinkt als gedekt, tot je naast elke regel zet welke test haar vastpint.\n\n**Wat nog geen test heeft** staat in `bin/rules-coverage --missing` en met naam in `99-testdekking.md`. Drie regels in S3: dat het maximum per eindterm staat, dat een waardegebaseerde evaluatie haar maximum zelf op 4 zet, en dat een evaluatie zonder bepaalbare periode als vergrendeld geldt.\n\nAlle 54 regels staan nog op `code`. De aanwezigheidsdrempel en de kleurgrenzen blijven de twee waar een bevestiging van een school het meest waard zou zijn.\n\n**Getoetst.** `php artisan test --parallel`: 1072 groen, alleen BuildStampTest faalt zoals in elke worktree zonder Vite-build. PHPStan schoon, Pint schoon. De veertien nieuwe tests draaien tegen het echte Livewire-component, niet tegen een nabootsing.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/hoofdstuk-scores-invoeren",
+            "title": "Hoofdstuk S3, scores invoeren, en de veertien tests die het blootlegde"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922052721-ff8666"
+}

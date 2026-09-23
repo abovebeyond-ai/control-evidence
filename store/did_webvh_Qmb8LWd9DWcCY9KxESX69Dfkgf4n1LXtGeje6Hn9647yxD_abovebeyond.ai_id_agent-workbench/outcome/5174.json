@@ -1,0 +1,16 @@
+{
+    "action": "0a95edb3ce8949d4d19797c8f23c87f9",
+    "effect": {
+        "detail": {
+            "base": "88f221ebaac5d39ff1253526efdb751aabdedfc3",
+            "branch": "workbench/nightwatch-eigen-wacht",
+            "commit": "9574918a6985ad02159c8a11049999fa68c94b17",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5172,
+    "verdict": "ALLOW"
+}

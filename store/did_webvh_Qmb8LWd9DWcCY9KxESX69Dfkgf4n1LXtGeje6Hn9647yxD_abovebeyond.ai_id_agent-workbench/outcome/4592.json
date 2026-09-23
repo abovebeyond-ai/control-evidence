@@ -1,0 +1,16 @@
+{
+    "action": "3d5f7e07a430e5d2c2f1f38b54755585",
+    "effect": {
+        "detail": {
+            "base": "70220ecf1f8a51dbf71ca929404296481dcfaac3",
+            "branch": "workbench/instagram-rests-and-the-bill",
+            "commit": "ab5c4b9317e81d27561d4d1ed7cd7fa675a08eee",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4590,
+    "verdict": "ALLOW"
+}

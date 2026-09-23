@@ -1,0 +1,16 @@
+{
+    "action": "8aa81fb66a4f2403ac027c9801dc01d1",
+    "effect": {
+        "detail": {
+            "base": "7854230bd364b6ab56db814c531d414aac98a4e8",
+            "branch": "workbench/fix/a-garbled-showroom-link-is-not-found",
+            "commit": "82454e5441c9ffc663cfa78461ae230d8910046e",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4908,
+    "verdict": "ALLOW"
+}

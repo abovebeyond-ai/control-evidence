@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8d2c758b0c86b3c2b958dd6bb0dca0f367fe4df2",
+            "branch": "workbench/fix/the-embed-and-the-api-agree-on-drafts",
+            "files_sha256": "ed1eaf633cfb269732f41344e573766ac849a4d28d20d4192dddfb422ecf9946",
+            "message": "The embed and the API agree on drafts"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921204059-0f3477"
+}

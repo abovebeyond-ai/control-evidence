@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The price stays where it is while the rest of the column scrolls under it.\n\nAfter #743 the whole column moved up with the page until its bottom stuck, so the price left the screen on the way down. It is the one thing on that column you want in view the whole time: it is what the conversation at the counter is about.\n\nThe price header is now sticky itself, at 92px, the same height the column sticks at. The column no longer scrolls internally, so this sticks to the window: while the column travels up, the price holds its place and the actions below slide under it; once the column's bottom is stuck, everything stands still with the price at the top and the last buttons at the bottom.\n\nIt carries its own background, because without one the buttons show straight through it. The card around it is white, so it matches.\n\n`R S5-3.14` extended and `BuyboxSidebarScrollTest` with it: sticky, at the same 92px as the column, with a background, and the class actually on the price block.\n\nFull suite green, build green.\n\n**One thing I cannot check from here**: how it behaves in the browser. A sticky element inside a sticky parent is correct per the spec and this is the ordinary way to do it, but it is the kind of thing that wants one look on a real screen. Merge it and scroll a detail page; if the price sits too high or the sliding under looks wrong, the offset or the background is one line.\n",
+            "branch": "workbench/ui/the-price-stays-in-view",
+            "title": "The price stays in view"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922072757-cb973e"
+}

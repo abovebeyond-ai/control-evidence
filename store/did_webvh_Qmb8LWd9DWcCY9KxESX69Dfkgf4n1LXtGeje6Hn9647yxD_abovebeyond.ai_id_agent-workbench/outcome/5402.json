@@ -1,0 +1,16 @@
+{
+    "action": "51614a635cf95ad271ad62003b7c0c43",
+    "effect": {
+        "detail": {
+            "base": "4fb5d9c47df58d8f5d4d219c24c799ff1ff118f1",
+            "branch": "workbench/ui/stocklist-text-says-where-it-travels",
+            "commit": "e90dcfa80bc8be7a0bc15cb4bd71fb8209a50535",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5400,
+    "verdict": "ALLOW"
+}

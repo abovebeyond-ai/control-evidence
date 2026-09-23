@@ -1,0 +1,16 @@
+{
+    "action": "57524670e75e2552743fff79c616d269",
+    "effect": {
+        "detail": {
+            "base": "5ee0926d2332603e618902ae54d589502a07217d",
+            "branch": "workbench/fix/every-catch-can-catch",
+            "commit": "c285c1a296abb04362a4651884ec3eeab87558c2",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5040,
+    "verdict": "ALLOW"
+}

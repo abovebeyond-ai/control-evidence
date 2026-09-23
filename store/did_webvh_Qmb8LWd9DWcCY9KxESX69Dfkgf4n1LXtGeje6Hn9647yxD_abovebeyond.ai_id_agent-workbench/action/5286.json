@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding nederland-mobiel-is-uit-de-livewire-fiche-gevallen.\n\nIlse, 22 September 2026: \"Belgi\u00eb/Nederland Mobiel is verdwenen uit de portals.\" It had, and it was\nworse than a missing checkbox.\n\n`VehicleObserver` decides on `request()->nederland_mobiel_allowed` and on nothing else. The classic\nsheet posts that field, a hidden `0` next to the switch. The Livewire sheet never did, because\nLivewire does not post a form, so `isset(...)` was false on every save. That froze the switch in both\ndirections: a vehicle already listed could not be taken off, and one that was not listed could not be\nput on. R P3-5.1 says a vehicle goes to Nederland Mobiel when the dealer has the link **and the\nvehicle is allowed for it**; that second half was unreachable from the new sheet.\n\nMeasured on production while fixing: **128 dealers** have the link switched on and **909 vehicles**\nare listed.\n\nThe checkbox is back in the portals block, where Ilse went looking for it. Nederland Mobiel is not a\nrow in `portals`, it is its own link on the dealer with its own flag on the vehicle, so the block now\nrenders for a dealer who has the link even when he has no portals at all.\n\nThe wish is written into the request just before the save that wakes the observer, exactly as the\nclassic sheet posts it. That the observer hangs on a form field rather than on the vehicle is the\nreal weakness, and it is deliberately left alone here: the same contract carries the classic sheet\nand the API, and widening this fix into that would put 909 listings at risk for a tidier shape. It is\nnamed in the finding and in a comment at both ends.\n\nTwo of the three tests fail against the component as it stands on main, with \"Failed asserting that\nnull matches expected true\": the property does not exist there.\n",
+            "branch": "workbench/fix/the-sheet-can-still-reach-nederland-mobiel",
+            "title": "The sheet can still reach Nederland Mobiel"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922130816-5696da"
+}

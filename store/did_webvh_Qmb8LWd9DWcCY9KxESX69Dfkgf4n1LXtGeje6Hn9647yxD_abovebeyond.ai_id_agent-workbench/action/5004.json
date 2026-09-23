@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d5a760b34a3604d2e5457071cac39bdc6f18063b",
+            "branch": "workbench/de-vraag-in-een-venster",
+            "files_sha256": "acef58c6b8288786ffe4f671a745f55f1f261885ae2f014c3749cdd1115d13c0",
+            "message": "De vraag voor verwijderen staat in een venster van de app"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921191447-4f1402"
+}

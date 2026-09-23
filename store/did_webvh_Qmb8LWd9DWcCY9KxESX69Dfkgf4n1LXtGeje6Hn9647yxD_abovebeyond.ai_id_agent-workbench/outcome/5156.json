@@ -1,0 +1,16 @@
+{
+    "action": "d7186f90d11ea04268b3ae79bb15a476",
+    "effect": {
+        "detail": {
+            "base": "64d3369035894a09915c51cac0adac9481750a53",
+            "branch": "workbench/fix/a-filtered-row-keeps-its-switches",
+            "commit": "71adac9eabd9410538a06dd8e9219d1dfd1ce50c",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5154,
+    "verdict": "ALLOW"
+}

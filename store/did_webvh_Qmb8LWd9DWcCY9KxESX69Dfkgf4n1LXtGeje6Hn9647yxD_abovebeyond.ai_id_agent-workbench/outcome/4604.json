@@ -1,0 +1,16 @@
+{
+    "action": "97cc06897e90865b8acbd39b34cee487",
+    "effect": {
+        "detail": {
+            "base": "df5287f4521a1a7151ce1df7ada1e7efac7e64cf",
+            "branch": "workbench/fix/the-button-goes-to-the-biddings",
+            "commit": "4fdef62816a673a2b29c5db869f3368a99eca16f",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4602,
+    "verdict": "ALLOW"
+}

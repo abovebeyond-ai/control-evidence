@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "From Nightwatch 33, half an hour after it happened: `cURL error 28: Operation timed out after 30002 milliseconds with 0 bytes received` on `services/multicontract/offer`. The requester was **Googlebot**, on the public warranty route (`real-garant.show?view=website`), so this stood as a 500 on a dealer's own website.\n\nNot caused by today's changes: the seal guard from #729 sits above it and passed through, as it should on production. RealGarant was simply silent, for the second time today (#21 was an empty reply).\n\nTwo things made it worse than one slow call. **There was no time limit anywhere** in `RealGarantService`, so the default of thirty seconds applied. And `getPrograms` calls once per programme *and* per period while the page renders, so a silent partner did not hold a visitor for thirty seconds but for thirty seconds times the number of programmes.\n\nThe controller already knew the right answer. For a failed login it returns an empty 204, with the comment: *\"an empty answer tells the page to take the block away.\"* It just did not know it for a partner that cannot be reached.\n\n- Every call now carries a limit: 5 s to connect, 10 s in total.\n- A `ConnectionException` gives that same 204, so the block disappears instead of the page. The first silence ends the loop, so the wait is one limit rather than one per programme.\n- Only \"cannot reach\" is caught. A real refusal from RealGarant still comes through as a failure: silence and rejection are different news.\n\n`R P2-7.9` extended; finding `een-trage-partner-werd-onze-foutbladzijde`.\n\n**What this does not fix**, and the finding says so: that this block calls a partner during a render at all, and that a search engine triggers those calls on a public page. That is work of a different order.\n\nFull suite green, PHPStan clean.\n",
+            "branch": "workbench/fix/a-slow-partner-is-not-our-error-page",
+            "title": "A slow partner is not our error page"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921205226-455eac"
+}

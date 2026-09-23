@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De laatste stap van de tenancy-reeks (#61, #62, #66, #67): policies voor project en evaluatie.\n\n**Wat er al was.** De routebinding stuurt wie een project of evaluatie van een andere school opvraagt naar zijn eigen dashboard met een waarschuwing. Dat blijft. Wat ontbrak was de regel voor wie er w\u00e9l voorbij komt: een collega van dezelfde school kon elk project bewerken, klonen en verwijderen, en elke evaluatie bijwerken of verwijderen, want `ProjectController` had geen enkele controle en `EvaluationController` alleen op create, edit en edit_scores.\n\n**Wat er nu is.**\n- `ProjectPolicy`: kijken mag wie aan de school werkt; wijzigen en verwijderen mag wie het project noemt (maker, team, beheerder van de school), via de bestaande `isAdmin`.\n- `EvaluationPolicy`: idem, met het project over scholen heen gelezen, want de geselecteerde school is niet altijd die van de evaluatie. Een beheerder van een andere school is geen beheerder van deze evaluatie (dat was `Evaluation::isAdmin` wel: elke `admin` telde).\n- De controllers roepen de policies aan (`view` op show en print, `update` op edit en clone, `delete` op destroy); de form requests beslissen `authorize()` v\u00f3\u00f3r de validatie, zodat een vreemde een 403 krijgt en geen lijst met verplichte velden.\n- De bestaande redirects met foutmelding (create, edit) blijven, nu op de policy gebaseerd.\n\n**Tests.** Een collega van dezelfde school mag kijken maar niet wijzigen (project en evaluatie, elke route); maker, teamlid en beheerder mogen wel; een vreemde wordt naar huis gestuurd door de binding; en de policy zelf weigert een vreemde en een beheerder van een andere school. PHPStan zonder fouten, de suite groen.\n\nLeerling heeft geen policy nodig: de leerlingroutes zijn al op school gescopet in de binding en het model, en een leerling ziet alleen zichzelf.\n",
+            "branch": "workbench/policies",
+            "title": "Policies voor project en evaluatie: kijken mag de school, wijzigen mag wie het project noemt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921092401-730f4d"
+}

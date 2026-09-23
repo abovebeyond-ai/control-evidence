@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e806a3494ab323f798a875d332d28b3c61a59138",
+            "branch": "workbench/policies",
+            "files_sha256": "af2ad6e219c74b8f751d73882134c9ef306402e400e739c274b35fc9e46e2a41",
+            "message": "Policies voor project en evaluatie: kijken mag de school, wijzigen mag wie het project noemt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921092401-730f4d"
+}

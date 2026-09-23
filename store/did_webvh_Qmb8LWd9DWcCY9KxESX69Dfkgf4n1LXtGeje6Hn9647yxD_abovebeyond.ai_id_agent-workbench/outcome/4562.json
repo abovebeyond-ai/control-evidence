@@ -1,0 +1,16 @@
+{
+    "action": "51c84189fa3d8e1e8fad25757c442583",
+    "effect": {
+        "detail": {
+            "base": "27bf7ebceaf73e371d54448ff6ad37db21b0f705",
+            "branch": "workbench/filters-mobiel",
+            "commit": "096702101f90ef0b2ace29974f4d5b0561703994",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4560,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "6ad53ce8ca8c0e0276e4002fee115c50",
+    "effect": {
+        "detail": {
+            "base": "d8eb770bc80a0940d31488ab4d5d4b1807aa894f",
+            "branch": "workbench/fix/the-sheet-can-still-reach-nederland-mobiel",
+            "commit": "f60a3f364cb54b99b50d6fdd48d23531a26c249a",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5283,
+    "verdict": "ALLOW"
+}

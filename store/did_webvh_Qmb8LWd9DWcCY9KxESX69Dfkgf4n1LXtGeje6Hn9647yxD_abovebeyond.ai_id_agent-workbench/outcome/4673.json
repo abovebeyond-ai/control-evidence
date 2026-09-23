@@ -1,0 +1,16 @@
+{
+    "action": "d33e4d63fd7f685f4f27780308e1c355",
+    "effect": {
+        "detail": {
+            "base": "abed169bf14e06754656f16060a21c2fbab401ff",
+            "branch": "workbench/fix/a-merchant-bids-only-in-his-own-garage",
+            "commit": "84edb834952532fda739d2450ba66fe2bdb19df3",
+            "files": 16,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4671,
+    "verdict": "ALLOW"
+}

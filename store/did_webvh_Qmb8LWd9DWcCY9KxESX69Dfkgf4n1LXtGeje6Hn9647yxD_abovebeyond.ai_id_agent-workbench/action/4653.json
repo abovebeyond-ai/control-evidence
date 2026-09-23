@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "881bf804b1aed89ec2aa67b3adc521a6aaed578e",
+            "branch": "workbench/audit-rest",
+            "files_sha256": "286330257d77c52370696a31572462c821da2f33f50dbf1506df995183344226",
+            "message": "Audit: geen gebruiker 3927, de laatste school-id een regel, \u00e9\u00e9n mapping voor vijf rapportdelen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921100608-36d0db"
+}

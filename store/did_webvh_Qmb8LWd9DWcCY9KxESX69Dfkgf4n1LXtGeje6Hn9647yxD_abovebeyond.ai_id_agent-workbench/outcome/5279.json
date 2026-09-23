@@ -1,0 +1,16 @@
+{
+    "action": "b676570d70dd07e844407732c17cdcd8",
+    "effect": {
+        "detail": {
+            "base": "8f0384ff9dd47a6cd9aac42bd5524dbbd83c6085",
+            "branch": "workbench/docs/the-carpass-url-and-the-parked-delete",
+            "commit": "5796accf1e1f90fd9119fb418b82f809813a7a3a",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5277,
+    "verdict": "ALLOW"
+}

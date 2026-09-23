@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e483d17e3ca7142d8b383d081c7cc6e1660c49cc",
+            "branch": "workbench/scoren-mobiel",
+            "files_sha256": "77cf1fe5d24b098903e9a278a48c5ecc9acb837ee4b069f704a2baef0e619efa",
+            "message": "Scoren op een telefoon: de matrix of \u00e9\u00e9n leerling tegelijk"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921073729-ae3e11"
+}

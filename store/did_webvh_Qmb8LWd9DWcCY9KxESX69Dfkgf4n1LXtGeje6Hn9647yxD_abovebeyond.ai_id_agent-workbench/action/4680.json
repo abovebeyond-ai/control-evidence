@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The 419 logging that went live this morning wrote the same line five times within six minutes: the POST of the showroom screen, refused on the CSRF check. One device, a Chrome 56 kiosk on ARM, and the encrypted dealer id in the URL decrypts to **Garage Engels**.\n\nThat screen has never picked up a single change. It asks whether the car set changed, gets a refusal, and `done` never fires. Nobody was going to notice: a screen on the wall of someone else's showroom has no one watching it, and until today a 419 left no trace at all.\n\nThe showroom page is public (only `setLang`, no login) and the device hangs there for days, so it carries no usable session; our cookie is `SameSite=None` platform-wide on top of that, which a browser of that generation does not reliably keep. The question does not belong behind a CSRF check: nothing changes, the answer is \"same set or not\", and the dealer id is encrypted. `showroom/*` now sits in the exemptions next to `website/*`, which is there for the same reason \u2014 a form on a dealer's own domain does not carry our session either.\n\nWhile in there, the older half of the same finding is closed. `check_cars()` scheduled the next check ONLY when something had changed, so after the first \"no change\" the screen stopped looking until the four-hourly reload. The rescheduling now hangs on `always` rather than `done`, so the watch also survives a request that never arrives \u2014 which is exactly what had been happening.\n\nFixes bevinding het-showroomscherm-volgt-wijzigingen-in-de-wagenset\nFixes #595\n",
+            "branch": "workbench/fix/the-showroom-screen-may-ask",
+            "title": "The showroom screen may ask"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921101929-7cd771"
+}

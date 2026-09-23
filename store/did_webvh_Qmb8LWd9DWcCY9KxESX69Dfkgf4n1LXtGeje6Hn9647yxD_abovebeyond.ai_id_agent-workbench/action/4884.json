@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b6d0b4a95d86b2c5f84fa08501ebbb26963d1100",
+            "branch": "workbench/kop-en-meter",
+            "files_sha256": "ebb4dd4616f5e9a3e467025f936cc964ea1537a30a778dfd00fea797742d40e4",
+            "message": "Geen gespatieerd kapitaal boven een titel, en \u00e9\u00e9n meterkleur die op wit standhoudt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921165245-c28b3c"
+}

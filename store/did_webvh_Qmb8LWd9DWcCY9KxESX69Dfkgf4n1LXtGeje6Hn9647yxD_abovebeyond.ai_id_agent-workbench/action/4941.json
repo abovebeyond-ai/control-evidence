@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Opening an order with warranty outside production gave a 500 (Nightwatch 14): `StrayRequestException: Attempted request to [rest/auth] without a matching fake`, halfway through rendering the PDF. `Outbound::seal()` puts `Http::preventStrayRequests()` on the client, so a call nobody allowed does not go nowhere quietly, it throws.\n\nThe guard sat at the wrong height. `isConnected` and `isConfigured` asked the seal already, but those are the doors of the screen. `OrderRealGarantService::getOrderContractOffer` calls `init()` and then asks its read straight away, which passes neither, and nine places in `RealGarantService` reached for the network directly.\n\nTwo things underneath. The message named `rest/auth` without a leading slash, which is the second fault visible: `init()` leaves `$this->url` empty for a dealer whose connection is not finished, and `null . '/rest/auth'` becomes a request to a relative path. On production that arrives nowhere; on a sealed environment no allowed pattern covers it, so the seal throws even for a service that *is* allowed.\n\n- One gate in the service (`sealed()`), asked at each of the nine places that reach the wire, plus an empty url that is no longer a call.\n- The refusal has the shape of a failed call and names `OUTBOUND_ALLOW`, deliberately not `Outbound::explanation()`, which names `OUTBOUND_IMPACT`: that second lock belongs to creating a policy (R S4-6.11), and a hint at the wrong lock costs an hour.\n- The order sheet gets no warranty line, an answer it already knew from an order without warranty, and prints.\n- `R P2-7.9` extended; finding `bestelbon-met-garantie-achter-de-zegel`, resolved here.\n- `RealGarantUnderTheSealTest` uses the real `Outbound::seal()`, with a boundary proving an allowed environment does ask. Verified to bite: without the guards two tests fail with the exact `StrayRequestException`.\n- `ContractLanguageTest` stubs `init()` and goes straight to the wire, so it now says which environment it stands in; otherwise it would be testing the refusal instead of the header.\n\nFull suite green, PHPStan clean.\n",
+            "branch": "workbench/fix/realgarant-under-the-seal",
+            "title": "RealGarant is not asked outside production, and not asking is not an error"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921175456-c1bb90"
+}

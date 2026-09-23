@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5ee0926d2332603e618902ae54d589502a07217d",
+            "branch": "workbench/fix/every-catch-can-catch",
+            "files_sha256": "30809d081fa40b6fa02a68253a9ff12d214af7a10a77217715d8a5ccf46d11db",
+            "message": "Every catch can catch"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921202443-6b954f"
+}

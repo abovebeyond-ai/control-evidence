@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bea7835975c57a3afee38c414f2a4329f8bbe081",
+            "branch": "workbench/fix/a-deploy-does-not-break-an-open-page",
+            "files_sha256": "9fff406aaa41886df3102d9d61814ace7fa0d592d47ac4d422ee69dd5186fe27",
+            "message": "A deploy does not break an open page"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921144936-3ef6bf"
+}

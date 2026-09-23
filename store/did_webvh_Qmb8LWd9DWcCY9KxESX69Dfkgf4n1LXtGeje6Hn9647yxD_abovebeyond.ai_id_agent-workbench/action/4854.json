@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De evidence-check staat sinds #102 rood, twee keer met een andere reden: eerst `tls: certificate is valid for *.netlify.app`, daarna `EOF`. Beide bij het ophalen van `https://abovebeyond.ai/.well-known/did.json`, de standaardwaarde van `control-verify-action`.\n\n**Wat ik nagekeken heb.** Vanaf deze machine antwoordt die url met 200 en het juiste certificaat (SAN abovebeyond.ai, geldig tot 20 december 2026), op beide A-records (99.83.231.61 en 75.2.60.5). Geen redirect op `/.well-known/` in `netlify.toml`. Dus het is de weg van de runner naar die ene url, niet de inhoud.\n\n**Wat wel opvalt.** De gateway ondertekent als `did:webvh:Qmb8LWd9DW\u2026:abovebeyond.ai:id#agent-workbench`. Dat `:id` op het eind betekent dat het document op `/id/` staat, niet op `/.well-known/`. Die twee zijn verschillende logs: `/.well-known/` staat op SCID `QmdUpq\u2026` (versie 14), `/id/` op `Qmb8LW\u2026`. De sleutels van de gateway, de opdrachtgever en de handen zijn in beide identiek; `/id/` heeft er twee bij (vera). De check keek dus naar een document dat dezelfde sleutels heeft, maar niet het document dat het token noemt.\n\nDeze wijziging zet `did: https://abovebeyond.ai/id/did.json`. Dat is het document dat bij de ondertekenaar hoort, en het wordt aan de rand gecachet (de standaard-url gaat bij elke aanvraag naar de oorsprong, `must-revalidate`, wat het EOF-verhaal verklaart).\n\n**Wat dit niet oplost.** Als de oorzaak toch bij de host ligt, faalt `/id/` even goed, en dan hoort de standaard in de actie zelf te veranderen, want elke repo met deze workflow heeft hetzelfde. Zeg het als je wil dat ik daar kijk; die repo is jouw kant.\n",
+            "branch": "workbench/evidence-did",
+            "title": "De evidence-check kijkt naar de identiteit die de tokens noemen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921154111-421428"
+}

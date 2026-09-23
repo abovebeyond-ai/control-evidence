@@ -1,0 +1,16 @@
+{
+    "action": "31c1a25c688f6405e8642fd95cd5d67b",
+    "effect": {
+        "detail": {
+            "base": "97e85e62f48635924e7ef7c921b16ae574def240",
+            "branch": "workbench/chore/sass-out",
+            "commit": "5cc55bffde6455655f51fd0785b4d510834df135",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5109,
+    "verdict": "ALLOW"
+}

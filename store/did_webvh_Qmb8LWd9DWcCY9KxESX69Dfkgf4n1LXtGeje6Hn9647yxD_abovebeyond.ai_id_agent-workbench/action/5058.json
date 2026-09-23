@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee stukken dood hout uit de opruimronde, en een test die het volgende geval tegenhoudt.\n\n**Een view van 203 regels die niets rendert.** `resources/views/livewire/attainment-level-cluster/show.blade.php` wordt door niets aangeroepen: de levende versie van dat scherm staat onder `curriculum/attainment_level_clusters/livewire/`, en dat is wat de Livewire-klasse teruggeeft. Ze staat er sinds de herordening van de viewbestanden in november 2025.\n\nDat is erger dan dood gewicht, want ze lijkt op het echte scherm. **De ontwerpronde van 19 september heeft ze twee keer opgemaakt**, en niemand heeft die opmaak ooit gezien. Ze bevatte ook een van de elf `confirm()`-aanroepen die gisteren als bekende schuld opgeschreven zijn, dus die lijst is nu \u00e9\u00e9n korter dan hij zelf zegt.\n\n**Een knopsoort die niemand meegeeft.** De paginakop behandelde `'type' => 'post'`, en geen enkele view gebruikt dat. De knop erin droeg `border` zonder randkleur, dus wie die tak ooit had aangesproken, kreeg een knop zonder rand.\n\n**De test die dit had gevonden.** Ze loopt elke view onder `resources/views/livewire` na: noemt een `render()` of een `<livewire:>`-tag haar? Alleen die map, want een view kan op tien manieren gerenderd worden en dat allemaal natrekken geeft vals alarm; deze map heeft vier bestanden en volgt \u00e9\u00e9n afspraak. Nagekeken dat ze bijt door een losse view neer te zetten.\n\n**Getoetst.** `php artisan test --parallel`: 1047 groen, alleen BuildStampTest faalt zoals in elke worktree zonder Vite-build. PHPStan schoon, Pint schoon. De view die blijft, is ongemoeid.\n\nNog open uit die ronde: twaalf inline `@php(...)` in zes views tegen de huisregel, de twee controllers die ruwe uitzonderingstekst aan de gebruiker tonen, en de gekopieerde formulieren voor aanmaken en bewerken waarvan er twee hetzelfde dubbele aanhalingsteken in `type=\"date\"\"` dragen.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/dood-hout",
+            "title": "Dood hout: een view die niets rendert en een knopsoort die niemand meegeeft"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921203542-836b60"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fe53ad6e65fdfe76878697484861702862751b5e",
+            "branch": "workbench/kaart-review",
+            "files_sha256": "330751c1b0650522db15d1e62e2c36592b021aaec7710a362283999e19645833",
+            "message": "Scoren per leerling nagelopen: \u00e9\u00e9n woordenschat, minder lijnen, en een terugweg die eruitziet als een link"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921151543-5ac7b0"
+}

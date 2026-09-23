@@ -1,0 +1,16 @@
+{
+    "action": "ebe15739cfa58890e82d0139f7fead8b",
+    "effect": {
+        "detail": {
+            "base": "b6d0b4a95d86b2c5f84fa08501ebbb26963d1100",
+            "branch": "workbench/kop-en-meter",
+            "commit": "78c44cad16b360f0e9579fefeb8d53bafa30f061",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4884,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "#722 worked and its last step did not, which only showed once it ran for real.\n\nTag `v2026.09.21` was created and the release \"Stocklist Dealer v2026.09.21\" was published, in sixteen seconds. The badge in the README stayed at v2.0.0, and `release-badge.yml` had not run at all.\n\nThe cause is a documented GitHub behaviour I should have carried into the design: **an event created with the default `GITHUB_TOKEN` does not start other workflows.** That exists to stop runaway chains, and it quietly broke the last link \u2014 the release is published, and the workflow waiting for a published release never hears it.\n\nSo the badge is written by `release.yml` itself, right after publishing, instead of by a second workflow that has to be woken. `release-badge.yml` stays for a release published by hand, and now says so in its own header.\n\nOne thing worth noting: that push makes the loop guard load-bearing. Until now the `if` that skips a badge commit was belt-and-braces, because with `GITHUB_TOKEN` no cascade could happen anyway. Now it is the thing that stops release.yml from handing itself another version every time it writes a badge. The test pins it.\n\nR P1-1.23 says where the badge is written and why it is not the other workflow.\n",
+            "branch": "workbench/fix/the-badge-follows-the-release",
+            "title": "The badge follows the release"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921155250-7ab737"
+}

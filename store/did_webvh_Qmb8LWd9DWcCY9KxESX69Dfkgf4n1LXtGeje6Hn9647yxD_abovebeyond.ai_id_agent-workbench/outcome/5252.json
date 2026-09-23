@@ -1,0 +1,14 @@
+{
+    "action": "f45586dd8c8993733e8c78a12a5b9fd8",
+    "effect": {
+        "detail": {
+            "only": "app",
+            "project": "naviskore-webapp",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5250,
+    "verdict": "ALLOW"
+}

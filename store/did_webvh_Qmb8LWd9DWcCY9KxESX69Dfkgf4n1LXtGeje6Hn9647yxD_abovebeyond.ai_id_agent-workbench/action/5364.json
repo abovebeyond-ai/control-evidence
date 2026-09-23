@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a5eb741bd003a9adcb2eb27b008f805ad6b1b4e4",
+            "branch": "workbench/fix/a-blur-error-says-what-came-back-2",
+            "files_sha256": "8022968c256362f1663b06f89cdc4fd77c23cfb70a4e8cfbd16558f58e48b485",
+            "message": "A blur error says what came back"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922144431-b46658"
+}

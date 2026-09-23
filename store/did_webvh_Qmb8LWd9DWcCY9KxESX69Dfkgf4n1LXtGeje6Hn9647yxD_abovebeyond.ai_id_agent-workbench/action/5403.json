@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A vehicle carries two descriptions (R S1-4.1), and the website widget picks between them on ownership: an own vehicle shows `description_ownstock`, a colleague's vehicle shows his `description`. That split is right, and it is what keeps a dealer's own sales copy off other dealers' sites.\n\nWhat the dealer could not know is how far the second field reaches. Under \"Beschrijving Stocklist\" stood:\n\n> Verschijnt op de Stocklist-marktplaats.\n\nMarketplace reads as traders among themselves, a professional audience. The text also appears on the public website of every dealer who shows the shared stock in his widget. Counted on 22 September 2026: **85 dealers**, 73 of them on an active package, and **15 of those show the shared stock without the visitor clicking anything**.\n\nSomeone writing for colleagues writes differently from someone who knows consumers are reading. A dealer who puts \"bel ons op 0497\u2026\" or his domain in that field puts it on 73 websites at once.\n\n## The requirement underneath\n\nA visitor to garage A's website must not learn that the vehicle he is looking at belongs to garage B. The widget already does well on that front: the cards name no dealer, and a shared vehicle shows the platform copies of the photos rather than the owner's own. The toggle label was corrected the same day for the same reason (#770). The description was the gap that remained, and the only one the dealer types himself.\n\n## What changes\n\nOne line, in four languages:\n\n> Verschijnt op de Stocklist-marktplaats en op de websites van collega-dealers. Dus geen reclame, contactgegevens of prijzen.\n\nR S1-4.2 has forbidden advertising in that field for a long time and named \"tekst bij het veld\" as its evidence. The text did not say it. Now it does, and `TheStocklistTextSaysWhereItTravelsTest` keeps it saying it.\n\n## Measured, not assumed\n\nOver the 798 shared vehicles: 242 carry a stocklist description, one of those contains a web address and none a phone number. 145 mention an amount in the running text, which ends up next to the price the showing dealer calculated. So this is not a leak yet; what was missing is the sentence that prevents one.\n\nDeliberately not done: filtering urls and phone numbers out of the description before it reaches another dealer's site. That is worth building if the sentence turns out not to be enough, and not before.\n\nVerified locally: `TheStocklistTextSaysWhereItTravelsTest` plus `RulesIdentityTest`, `RulesCoverageTest` and `RulesDocsBuildTest`, 12 tests green.\n",
+            "branch": "workbench/ui/stocklist-text-says-where-it-travels",
+            "title": "The stocklist description says where it travels"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922181824-37de28"
+}

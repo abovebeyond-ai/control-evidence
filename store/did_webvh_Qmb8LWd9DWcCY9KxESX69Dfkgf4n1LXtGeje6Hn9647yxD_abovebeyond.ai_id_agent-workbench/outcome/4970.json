@@ -1,0 +1,16 @@
+{
+    "action": "576982ca29275e394a99c10163c6996f",
+    "effect": {
+        "detail": {
+            "base": "3c55561b5c79fd6c0642810447c745339880be64",
+            "branch": "workbench/de-pin-mag-weg",
+            "commit": "a544fb3e01e8dff927abe1abc82172c478062f87",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4968,
+    "verdict": "ALLOW"
+}

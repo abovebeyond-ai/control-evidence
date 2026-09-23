@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"Maar hoe kan het ondertussen opnieuw werken?\" was the right question, and the answer is a defect.\n\nEvery build gives the assets a new hash, and `public/build` lives inside a release. The moment `current` moves, the JS file an already-open page points at is gone. Measured today: release 11:36 served `app-G3PCP_B3.js`, release 11:57 served `app-C35yYWMv.js`, and the first no longer exists under `current`. The browser asks for it, gets a 404, and the screen loses its JavaScript without a word \u2014 a switch then does nothing at all, with no message to explain it. A reload fixes it, which is why it \"works again by itself\".\n\nWe deployed twelve times today. At one deploy a week nobody notices; at twelve in a day the operator walks into it repeatedly, and that is what Ilse reported twice.\n\nTwo halves, and the second is useless without the first:\n\n- `emptyOutDir: false`, so a build adds to the output directory instead of sweeping it. The manifest is still written fresh, so a new page gets the new hashes and an old page still finds its own. **This needs `public/build` added as a linked (shared) directory in Forge** \u2014 that part is outside the repo and is Shane's to set. Until then this flag changes nothing and breaks nothing.\n- A guard that says it. The page carries the build it was loaded with and asks `/.well-known/build.json` every quarter of an hour and whenever the tab regains focus. If the running build differs it says so once, with `ui.notify`. It never reloads by itself: the dealer may be halfway through a sheet, and a reload we choose throws that work away.\n\nWhile in there, a permanently red test turned green. `BuildStamp` claimed in its own docblock to handle a git worktree, and did not: a worktree keeps HEAD in its own gitdir but its refs in the shared one, so the ref was never found and the stamp was null. `BuildStampTest` therefore failed in every worktree run, and today that red line was waved away as known noise all day long. A test that is always red teaches you to ignore tests.\n\nNew rule R P1-1.22.\n",
+            "branch": "workbench/fix/a-deploy-does-not-break-an-open-page",
+            "title": "A deploy does not break an open page"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921144936-3ef6bf"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5f8b6a755c02888e4a456499326187993c817703",
+            "branch": "workbench/what-we-have",
+            "files_sha256": "4177dde0c82356089a503a64ed3f5875b4d20af8599fc461c46352d10d0f86be",
+            "message": "What we have: the inventory, measured, with the right word on each layer"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260922083443-918464"
+}

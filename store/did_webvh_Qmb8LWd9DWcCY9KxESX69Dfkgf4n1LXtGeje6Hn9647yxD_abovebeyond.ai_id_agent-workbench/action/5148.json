@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De halt uit #91 zit in het binary, dus hij draait pas na een boot op deze release.\n\nDe sha256 komt uit `SHA256SUMS` van release v0.30.0 zelf, niet uit een eigen build: de MRTD dekt wat er ge\u00efnstalleerd wordt, dus het getal moet dat van de publieke asset zijn.\n\n```\ncontrol-gateway-linux-amd64  e0106215f9ef8919a2d51980b876ee21c96aa263e2d22aa73952c7c15accf044\n```\n\nNa de merge: `git pull` in de checkout, dan `deploy/gcp/rehearse.sh upgrade`. Die weigert als de checkout niet de nieuwste pin draagt, want op 14 september rolde een upgrade tijdens een lopende merge stil de oude versie uit en zei niets.\n\nTe zien dat het gelukt is: het eerstvolgende record noemt `v0.30.0` met deze sha in `control_gateway`, en vanaf dan houdt de gateway de staart van haar log tegen de kop die ze draagt voor elk oordeel.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/de-vm-op-v0.30.0",
+            "title": "De VM op v0.30.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260922075914-a0e4e6"
+}

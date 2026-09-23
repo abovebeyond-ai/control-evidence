@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fb8bf88b6664b9033c5de2c27d1ab4cf5f1f3cdf",
+            "branch": "workbench/fix/an-unreadable-webhook-id-2",
+            "files_sha256": "af65a94abe5531fe77f5c83fc2cb4e7bd0386aa1951e4f499afe18fa6f1ad14c",
+            "message": "An unreadable id on the photo webhook is not found"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921180957-777ce9"
+}

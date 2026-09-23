@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "ci"
+        },
+        "resource": "portal:control"
+    },
+    "run": "workbench-20260922080501-0f3bd9"
+}

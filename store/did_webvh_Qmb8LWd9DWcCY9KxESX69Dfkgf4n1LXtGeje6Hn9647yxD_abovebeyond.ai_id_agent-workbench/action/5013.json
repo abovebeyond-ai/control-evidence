@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A defect from yesterday's #731, made and found the same day, closed before anyone can walk into it.\n\nThe code by mail (R P2-3.23) arrived as a third second factor, but the only way back for someone locked out, the \"Tweede factor uitzetten\" button of R P2-3.22, still looked at the app alone. Two things wrong at once, and they compound:\n\n- The button appeared only on `two_factor_confirmed_at`, so a user who turned on **only** the code by mail had no button at all.\n- The action itself cleared only the three app columns. Called anyway, it left `two_factor_email` standing, so the user was sent straight back to the mail challenge on his next sign-in. Exactly the thing he could not reach.\n\nTogether: whoever turned on the code by mail and then lost access to that mailbox (address gone, mail not arriving, the inbox of a colleague who left) was locked out, and support was told that user had no second factor. That is the conversation the button exists for.\n\nBoth doors now read \"everything that can ask for a code\": the app, the choice for the mail, and the code in flight. That last one goes because a switched-off route would otherwise keep signing people in for ten more minutes. Passkeys stay, for the reason already written there: they sit behind the fingerprint or PIN of their own device.\n\n**Why it did not surface earlier.** The flag `two_factor` stands on stage `dealers` with only StockCars in it, so no customer could hit this. It came up because Shane asked which account he would test the new path with, and that account was his own.\n\n`R P2-3.22` extended; finding `herstel-dekt-de-code-per-mail-niet`, resolved here. Two cases added to `StaffCanResetASecondFactorTest` (only the mail, and both at once); verified to bite by restoring the old behaviour, which fails exactly those two.\n\nFull suite green, PHPStan clean.\n",
+            "branch": "workbench/fix/the-reset-covers-every-second-factor",
+            "title": "The reset covers every second factor"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921192956-ac97f3"
+}

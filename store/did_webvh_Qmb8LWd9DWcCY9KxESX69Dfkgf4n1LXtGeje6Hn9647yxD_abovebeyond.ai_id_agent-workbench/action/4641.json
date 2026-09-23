@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9359ffc7af99a885706da621b89803895dfcd03c",
+            "branch": "workbench/mix-page",
+            "files_sha256": "03086b26ccad74aec6e68948623e378a5873776870ad7392aeb16cdfd4cd8ea6",
+            "message": "Mix: what came in, along one axis, for someone at the desk"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260921094043-759584"
+}

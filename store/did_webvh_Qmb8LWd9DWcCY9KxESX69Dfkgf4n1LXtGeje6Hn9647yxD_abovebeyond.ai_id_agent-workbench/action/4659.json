@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abed169bf14e06754656f16060a21c2fbab401ff",
+            "branch": "workbench/fix/the-security-section-keeps-its-place",
+            "files_sha256": "e33413012a6cccfc39869071daed8600f55128f8965f2dd9977daaaebf3e4839",
+            "message": "The security section keeps its place"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921100741-416331"
+}

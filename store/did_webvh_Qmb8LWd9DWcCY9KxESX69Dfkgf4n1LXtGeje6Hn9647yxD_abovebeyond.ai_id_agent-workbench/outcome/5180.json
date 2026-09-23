@@ -1,0 +1,16 @@
+{
+    "action": "f31caa213af448b3b499ed932ad614a9",
+    "effect": {
+        "detail": {
+            "base": "4f02b8aa0356d864da51eaad84af977bc85e67b9",
+            "branch": "workbench/refactor/dealer-switches-as-a-module",
+            "commit": "afaee0d9e97283e4a6fa95e4dffdb05c599056c5",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5178,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,33 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "production",
+                    "label": "Website",
+                    "url": "https://hoet.be"
+                },
+                {
+                    "kind": "repo",
+                    "label": "Repository",
+                    "url": "https://github.com/Hoet-design/hoet-eyewear"
+                },
+                {
+                    "kind": "repo",
+                    "label": "Studio (repo)",
+                    "url": "https://github.com/Hoet-design/hoet-sanity"
+                },
+                {
+                    "kind": "cms",
+                    "label": "Sanity Studio",
+                    "url": "https://hoet-design.sanity.studio"
+                }
+            ],
+            "replaceLinks": true
+        },
+        "resource": "portal:hoet"
+    },
+    "run": "workbench-20260921155421-c2fde0"
+}

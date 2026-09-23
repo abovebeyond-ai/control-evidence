@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The second half of R P1-1.22, and deliberately not as a line in a manual.\n\n`emptyOutDir: false` (#720) says \"do not throw the old files away\", but with releases every deploy is a fresh checkout and `public/build` is gitignored, so the folder starts empty and there is nothing to keep. It only works once all releases use the *same* folder.\n\nThat needed a folder created by hand on the server and two lines in Forge's deploy script. A step you perform by hand is a step you forget on the next server, and this one fails silently: the dealer presses F5, it works again, and he never mentions it.\n\nSo the app does it:\n\n- **`php artisan stocklist:build-link`** \u2014 one line in the deploy script, before `npm run build`. It derives where the folder belongs instead of being told: `storage` already sits in a place that survives a release and is linked into each one, so the build folder goes next to it. It creates it, carries over whatever was already built in this release (exactly the set an open page may still ask for), and is idempotent. On a machine without releases it does nothing and does not fail, so the line is safe everywhere.\n- **`stocklist:smoke build`** \u2014 an environment that is missing the link says so, on the command and on the administrator's Koppelingen panel. It sits next to the showroom check, which is there for the same reason: not a third party, but a per-server condition that never reports itself.\n\nThe `rm -rf` before linking is not tidiness: `ln -s target dir/` puts the link *inside* an existing directory rather than over it, and then everything looks right until a visitor gets a blank screen.\n\n`TheBuildFolderOutlivesADeployTest` builds the real Forge layout in a temp folder (releases beside a base, storage symlinked in) and pins all of it: where the folder lands, the failure before linking, the link after, that running twice changes nothing, that existing files are carried over, and that a laptop is left alone.\n\nR P1-1.22 extended. Full suite green, PHPStan clean.\n\nStill yours afterwards: the one line in the deploy script. That is the piece this cannot remove, only make loud when it is missing.\n",
+            "branch": "workbench/feat/the-build-folder-links-itself",
+            "title": "The build folder links itself"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922053424-100076"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eb893eb56ec913e54c3d086f03af0feea9d77e28",
+            "branch": "workbench/web-browse-rhythm",
+            "files_sha256": "e94c7a6035fed50fada4c0ee123ed6930f2704ee3faaf9e29114ab90217d0d3f",
+            "message": "web-browse reads its pages four times a day, and keeps what it read"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260921110552-a5cd5a"
+}

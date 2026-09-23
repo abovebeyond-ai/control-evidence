@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nStep 2 of three for the Mix page: the saying. It needs gentells-pipeline#195 (merge that one first; until then saying a wish answers with an error on the row, and the rest of the page works as before).\n\nA last column on every row, **The desk says**:\n\n- Three words as quiet text: too much, fine, too little.\n- \"Fine\" is kept at once. \"Too much\" and \"too little\" open one field, \"what would you want different?\", and \"say it\" stays disabled until there is a sentence. Without the sentence the word is a mood; the sentence is what a dial will one day answer to.\n- The wish that stands shows with its sentence, who said it and when. The word that stands is not offered again, the other two are, so changing your mind is one click.\n- A refusal from the pipeline (not signed in as a person, no sentence) is shown on the row in its own words.\n- The note under the table now says that what the desk says is kept with a name and a date and changes nothing by itself.\n\nThe colour of a wish (warm for too much, cool for too little) is the desk's own judgement. The page itself still judges nothing.\n\n## Checked\n\nWhat CI runs: the lint ratchet stays at its ceiling (49 errors, 26 warnings), the build passes, all 21 Playwright tests pass. The new one reads the standing wish on Toutiao, says \"too little\" on TikTok, checks the sentence is required, and sees the wish stand under the signed-in name.\n",
+            "branch": "workbench/mix-wishes-2",
+            "title": "Mix: the desk says too much, fine or too little, in a sentence"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260921111133-9b0b36"
+}

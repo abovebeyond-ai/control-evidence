@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5c3ca915a14a4e47b04d1278d50911241ef25336",
+            "branch": "workbench/hoofdstuk-scores-invoeren",
+            "files_sha256": "0bb19ded81fc8a9777eec44e0a612c85b5968159392d63d228e0595ecd15ca53",
+            "message": "Hoofdstuk S3, scores invoeren, en de veertien tests die het blootlegde"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922052721-ff8666"
+}

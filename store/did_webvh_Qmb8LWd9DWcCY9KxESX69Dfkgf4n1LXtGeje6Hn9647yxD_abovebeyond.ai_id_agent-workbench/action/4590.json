@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "70220ecf1f8a51dbf71ca929404296481dcfaac3",
+            "branch": "workbench/instagram-rests-and-the-bill",
+            "files_sha256": "65c36fe0b852e97cd2fc34919ae12c911f7cbd4b85e7398feaf380acf3b960e0",
+            "message": "Instagram search rests six hours, and the record carries the bill Apify settled"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260921083617-833ab2"
+}

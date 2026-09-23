@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8f11a6c159f11df1809a01835c875fbf6e3a61e4",
+            "branch": "workbench/breeze-rest",
+            "files_sha256": "9f8eae91292096a33a084582da63e6a0790e49083060e10a7cbdee76496fcdd6",
+            "message": "De Breeze-restanten zonder route weg; de mail is een log"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921110153-ba27c3"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "f17a2bc65f75dd331d0df71e918c3cd4",
+    "effect": {
+        "detail": {
+            "base": "697b2d38fc864e6ed40c471743ca891a25c2ccbd",
+            "branch": "workbench/fix/the-api-update-hands-over-the-car",
+            "commit": "046e6948fc1a5684a5d4bd808c65039a3e596a38",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5226,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "97e512148d57b0e04b6b07358900f66972d78c04",
+            "branch": "workbench/feat/staff-can-reset-a-second-factor",
+            "files_sha256": "ca8349ce9618c8f8d3212e33fd85cb5f2d712f0bdb583b216b81715b47102f54",
+            "message": "Staff can reset a second factor"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921114745-a5116f"
+}

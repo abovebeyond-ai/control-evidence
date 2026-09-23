@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes finding X-23 (`de-code-wil-bij-authentication-error-de`), one of the disputed rules.\n\n`handleVhrResult` carried a branch for `AUTHENTICATION_ERROR` *behind* the gate that lets only `PROCESSED` through, so it could never run. A dealer whose Car-Pass password was wrong read \"carpass niet gekoppeld!\", which sends him nowhere. The message written for him, \"Ongeldige combinatie afzender en/of wachtwoord\", sends him straight to his settings.\n\nThe branch now sits before that gate, and the dead copy below it is gone.\n\n**One half was deliberately not carried over.** The old branch also cleared the vehicle's `carpass_init` and `carpass_id`. That is wrong twice: the password of the *dealer* says nothing about the report of the *vehicle*, and a vehicle coming through here for its six-month renewal (R S3-2.8) would lose a valid report over one mistyped letter. Handled before anything is written, there is also nothing left to clear. If you do want that wipe, it is one line \u2014 but as a decision, not as a leftover of code that never ran.\n\n**PHPStan had already found it.** `phpstan-baseline.neon` carried `Strict comparison using === between 'PROCESSED' and 'AUTHENTICATION_ERROR' will always evaluate to false` \u2014 the finding itself, silenced. That entry is gone; the baseline goes from 925 to 924.\n\n`AWrongCarpassPasswordSaysSoTest`: the message, the report that stays put, and the boundary that any other failed status keeps the general message. Verified to bite by putting the branch back behind the gate.\n\nR S3-2.8 moves from `betwist` to `code`; disputed rules 36 \u2192 35. Full suite green, PHPStan clean.\n",
+            "branch": "workbench/fix/a-wrong-carpass-password-says-so",
+            "title": "A wrong Car-Pass password says so"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921211303-e91ea0"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Stap twee naar tier 4, en ze begon met uitzoeken in plaats van coderen.\n\nDe reconciliatie telde de pull requests van de handen aan de GitHub-kant op **\u00e9\u00e9n pagina van honderd**. Op `stocklistdealer-eu/platform` zat ze daarmee op exact honderd terwijl de gateway honderdeenenveertig effecten had vastgelegd, en dat verschil werd gemeld als een onverklaard dekkingsgat. Het was de paginagrootte.\n\nNagemeten op 22 september 2026, zelfde venster van zeven dagen:\n\n| | pull requests van `elixir/*` en `workbench/*` |\n|---|---|\n| \u00e9\u00e9n pagina | 100 |\n| gepagineerd | 257 |\n\nRij 10.3.2 vraagt nul onverklaard verschil. Zolang de teller zelf afkapt, is dat niet te zeggen, en dan is de alarmering ruis.\n\n**Wat er verandert.** Beide kanten, de dispatches en de pull requests, lopen nu door de pagina's. De lijsten komen nieuwste eerst, dus de wandeling stopt bij het eerste item dat v\u00f3\u00f3r het venster valt: daarachter staat niets dat er nog bij hoort. Een venster dat meer dan veertig pagina's nodig heeft, geeft `null` terug, wat leest als \"GitHub kon niet gelezen worden\". Een teller die stil ophoudt te tellen is erger dan geen teller, en dat is precies de fout die dit herstelt.\n\n**Getoetst.** Twee tests, en de fake antwoordt nu per pagina: een venster van 141 over twee pagina's wordt 141, en een pagina die terugreikt tot v\u00f3\u00f3r het venster sluit de wandeling zonder de volgende te lezen. Nagekeken dat ze bijten door de paginering eruit te halen, waar de eerste op `null` uitkomt. De volle suite is groen, 689 tests.\n\n**Wat dit blootlegt en niet oplost.** Met de juiste telling wordt het verschil op dat project groter, niet kleiner. Van die 257 pull requests staan er 179 op naam van `abovebeyond-control[bot]`, en die 179 vind ik precies terug als `pull.open`-effect in de keten van `#agent-workbench`. De andere 78 staan op naam van de eigenaar en komen van v\u00f3\u00f3r de overstap naar de GitHub App op 16 september, toen de gateway nog met het eigenaarstoken pushte. Of die 78 records hebben in een keten die de meting niet meeneemt, is de volgende vraag; dit voorstel maakt alleen de teller betrouwbaar genoeg om ze te stellen.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/de-dekkingsmeter-kapt-niet-af",
+            "title": "De dekkingsmeter stopte bij honderd, en dat las als een gat"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260922071122-215fcf"
+}

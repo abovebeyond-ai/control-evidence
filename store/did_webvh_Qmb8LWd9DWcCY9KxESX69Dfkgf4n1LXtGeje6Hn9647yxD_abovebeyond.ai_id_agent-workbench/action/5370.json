@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c73626abe03a3ead392be2b2620915bd7dcc9a2a",
+            "branch": "workbench/vet-op-papier-is-vet",
+            "files_sha256": "5915c368ee30a08b80fe7b66b3ef243d64e67cf901e606723eb3d0ff0abe7a3b",
+            "message": "Vet op papier is vet, geen serif"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922144756-70015c"
+}

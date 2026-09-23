@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "611081ddd88788c3be3114212fbfbd570c7bb810",
+            "branch": "workbench/test/the-challenge-knows-who-is-halfway",
+            "files_sha256": "ddeae3becd74e19f8ed7c2d6da268d0524913cef9e98d90b39c36661cbf7bc33",
+            "message": "The challenge knows who is halfway"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921190805-0b0dd8"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding een-zwijgende-partner-neemt-de-pagina-mee. Nightwatch #34, and #21 with it.\n\n`WebsiteController::index` asks `RealGarantService::isConnected()`, and that is a real login at\nRealGarant. The seal rule at the top of `isConnected` covers an environment that may **not** call\nout; it does not cover one that may and gets no answer. The `ConnectionException` then came straight\nup and the **public stock list on a dealer's own website** answered 500.\n\n22 September 2026 at 01:08: `cURL error 28: Operation timed out after 10002 milliseconds` on\n`rg-wms.com/rest/auth`, and the request came from **Googlebot**. So ten seconds of silence at a third\nparty decided whether our customer's site worked, and what Google saw of it.\n\nThe exception is caught where the answer is read. No token means \"not connected\", the warranty UI\ndisappears and the page renders, which is exactly what the comment above `isConnected` already\npromised for the sealed case.\n\nThe failure is remembered for a minute, like a refused login one line below. Without that every page\nview pays the full ten-second timeout again, and a slow partner becomes a slow site for everyone.\nThe second test pins that: two calls, one attempt.\n\nBoth tests fail against the service on main, with the ConnectionException escaping.\n\n#21 (`cURL error 52: Empty reply from server`, 21 September, same host) is the same family and is\ncovered by the same catch.\n",
+            "branch": "workbench/fix/a-silent-partner-does-not-take-the-page-with-it",
+            "title": "A silent partner does not take the public page with it"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922134038-1732dd"
+}

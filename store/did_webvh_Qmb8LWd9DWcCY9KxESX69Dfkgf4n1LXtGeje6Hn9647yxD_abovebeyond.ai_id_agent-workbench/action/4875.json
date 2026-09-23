@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two of the three things Ilse reported on 21 September about Garage Pieters Marc. The third, whether the traders received their assignment mails, needed no code: both went out for the Opel Corsa, the winner mail on 16 September at 14:30 and the collection mail on 17 September at 15:11.\n\n**\"Verwijderen\" was hidden under the screen.** `.ui-menu-panel` always opens below the button, so on the last row of a table its bottom item falls past the edge and you cannot see that anything is there. The panel now flips up when it does not fit below. It measures rather than guesses \u2014 the height is only known once the panel is drawn, so the measurement happens in the frame after \u2014 and if it fits nowhere it stays put, because pushing it up would clip it at the top instead, which is not better.\n\nOne delegated listener for the whole app, not a fix for one screen: there are several screens with such a menu, and a panel can sit in a modal that arrives later over AJAX. Same shape as R P2-11.8, where a menu was clipped inside the table's scroll container and the click seemed to do nothing.\n\n**When was it assigned?** Hovering \"Toegewezen\" now says the date and time. There is no column for it: the moment is when the winning bid's row last changed, which is the ticking of `winner`. For this very Corsa that holds to the second \u2014 the bid was updated at 14:30:50 and the winner mail left at 14:30:52. So it is a derivation, and the rule says so plainly: if anything ever touches a bid row after assignment the date moves with it, and then a real `assigned_at` belongs there. Nothing does that today.\n\nNew rules R B1-5.15 and R B1-5.16.\n",
+            "branch": "workbench/fix/the-more-menu-stays-on-screen",
+            "title": "The more menu stays on screen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921165142-51f13d"
+}

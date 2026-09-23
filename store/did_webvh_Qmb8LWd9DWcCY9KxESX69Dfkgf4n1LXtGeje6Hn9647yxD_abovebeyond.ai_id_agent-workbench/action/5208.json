@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5c473fbaa74ed59db5f2fa0008173644c8829a70",
+            "branch": "workbench/security/the-embed-follows-the-package",
+            "files_sha256": "104cbe3e0a59b4fec822ab769a83bdf897a0a417f3abfc6d2e22afc830d0b280",
+            "message": "The embed on a dealer's own site follows his package"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922103326-7b74ef"
+}

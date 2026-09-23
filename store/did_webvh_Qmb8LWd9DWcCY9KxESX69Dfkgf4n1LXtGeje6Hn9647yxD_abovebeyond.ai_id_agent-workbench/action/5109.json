@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "97e85e62f48635924e7ef7c921b16ae574def240",
+            "branch": "workbench/chore/sass-out",
+            "files_sha256": "90af75d77f80ca310077229b17e5c55eab737facf549dd29c5056a1ae78eb4e2",
+            "message": "x"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922062439-845837"
+}

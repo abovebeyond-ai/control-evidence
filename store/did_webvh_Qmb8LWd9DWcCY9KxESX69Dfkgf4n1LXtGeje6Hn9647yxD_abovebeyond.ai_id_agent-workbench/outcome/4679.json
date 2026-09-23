@@ -1,0 +1,16 @@
+{
+    "action": "462c8155f320ab8af1a018f622d3b9f1",
+    "effect": {
+        "detail": {
+            "base": "abed169bf14e06754656f16060a21c2fbab401ff",
+            "branch": "workbench/fix/the-showroom-screen-may-ask",
+            "commit": "b479913957baea20b6bb83f6e89cf4665c48f763",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4677,
+    "verdict": "ALLOW"
+}

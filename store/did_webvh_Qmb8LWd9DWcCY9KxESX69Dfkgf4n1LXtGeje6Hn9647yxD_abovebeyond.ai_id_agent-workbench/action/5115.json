@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "97e85e62f48635924e7ef7c921b16ae574def240",
+            "branch": "workbench/chore/sass-out-2",
+            "files_sha256": "20cadb03084f2aab7450218d80ff75ff4754bb4d74f8833fe414db64e497f1f2",
+            "message": "The stylesheets need no preprocessor"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922062616-837916"
+}

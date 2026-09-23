@@ -1,0 +1,16 @@
+{
+    "action": "58cb51ba38425408aa205a80b88ecbac",
+    "effect": {
+        "detail": {
+            "base": "b8959db43487a09e69191f417bf744aa1dc26a3a",
+            "branch": "workbench/fix/the-more-menu-stays-on-screen",
+            "commit": "6cbf4ab33ac7a3b9cb05f7c2e7b7c5f63d09e7cd",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4872,
+    "verdict": "ALLOW"
+}

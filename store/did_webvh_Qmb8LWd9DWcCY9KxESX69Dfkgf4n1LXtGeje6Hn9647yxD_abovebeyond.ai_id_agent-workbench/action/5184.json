@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2cd82e12f5bf756559a483841c98505ef17797dd",
+            "branch": "workbench/fix/the-switches-bind-before-their-data",
+            "files_sha256": "b15c68862a2f02083e6e9a9891abe9b876990331ce4cd579cc5bc0e23a9c5a5d",
+            "message": "The switches bind before their data is on the page"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922092044-b45c96"
+}

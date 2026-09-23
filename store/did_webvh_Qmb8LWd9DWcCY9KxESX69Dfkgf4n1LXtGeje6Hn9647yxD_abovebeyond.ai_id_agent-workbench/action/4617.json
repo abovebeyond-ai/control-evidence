@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na #89 stond de versie onderaan het menu, en bij een beheerder is dat menu langer dan het scherm: de regel zat onder de vouw en was nergens te zien.\n\nNu is de inhoudskolom zo hoog als het venster (`flex min-h-screen flex-col`, `main` neemt de rest), met de versie als kleine voetregel onderaan: aan de onderrand van het venster op een korte pagina, na de inhoud op een lange. Dezelfde 11 px in ink-500, de build als tooltip. Het menucomponent is weg; `x-layout.version` komt ervoor in de plaats.\n\n`docs/deploy.md` en de test zijn mee.\n",
+            "branch": "workbench/versie-voet",
+            "title": "De versie als voetregel aan de onderrand van het venster"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921090844-d2782f"
+}

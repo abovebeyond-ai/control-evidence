@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het laatste zware punt uit de opruimronde, en het bleek breder dan een logregel erbij.\n\nDrie controllers gaven **elke** opgevangen boodschap door aan de browser, om die ene bedoelde melding te kunnen tonen. Bij een databankfout las een leerkracht dus de tekst van die fout, met kolomnamen erin, en stond er in het log niets. Alles doorgeven of niets doorgeven waren beide fout: \"het subvak hangt nog aan drie curricula\" hoort hij w\u00e9l te lezen, want dat zegt wat hij eraan kan doen.\n\n**Dat onderscheid staat nu in de code**, niet in het hoofd van wie de vangst schreef. Een uitzondering die voor de gebruiker geschreven is, draagt de interface `ShowsItsMessageToTheUser`, en haar tekst gaat naar het scherm. Al het andere gaat naar het log, en de gebruiker leest een gewone zin met wat hij kan doen.\n\nDrie boodschappen werden als een gewone `\\Exception` geworpen terwijl ze voor de gebruiker bedoeld waren, en kregen een eigen soort: geen evaluatieperiode ingesteld, en de twee redenen waarom een subvak of complementair vak niet weg kan. De overige vangsten in die controllers vingen al een eigen soort en blijven zoals ze waren; ik heb alle acht plekken die `getMessage()` doorgaven nagelezen, en de twee loginpaden deden het al goed (log met detail, gewone zin op het scherm).\n\n**Getoetst.** Twee tests: de bedoelde melding bereikt de gebruiker, en een databankfout doet dat niet maar staat wel in het log. Nagekeken dat ze bijten door de oude doorgeefregel terug te zetten. `php artisan test --parallel`: 1058 groen, alleen BuildStampTest faalt zoals in elke worktree zonder Vite-build. PHPStan schoon, Pint schoon.\n\nDaarmee is de lijst van de opruimronde leeg op \u00e9\u00e9n punt: de gekopieerde formulieren voor aanmaken en bewerken. Dat is een refactor per scherm, geen fout meer.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/de-fout-die-de-gebruiker-leest",
+            "title": "Een foutmelding is voor de gebruiker of voor het log, niet voor beide"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921210709-fe6662"
+}

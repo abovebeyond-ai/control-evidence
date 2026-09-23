@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vier restjes uit de audit van 20 september, in \u00e9\u00e9n voorstel. De opruiming van `config/smartschool.php` komt apart, in het volgende voorstel, omdat de deploynotitie die pas na een geslaagde Smartschool-login op productie toelaat.\n\n**Geen gebruiker 3927 meer.** De synchronisatie zette elke nieuwe leerlingengroep op naam van gebruiker 3927, \u00e9\u00e9n beheerder van \u00e9\u00e9n school, voor elke school. Nu is de maker een beheerder van de school zelf (de eerste op id), en een superbeheerder als de school er geen heeft; is er ook die niet, dan zegt de run dat in plaats van een vreemde sleutel te schrijven. Test: de groep hoort aan een beheerder van de school.\n\n**De laatste vertakking op een school-id is een regel.** Zes views vroegen `SchoolId::Clw->is(...)` om het veld \"Evaluatietype\" te tonen; ze vragen nu `SchoolRules::hasCompanyEvaluations()`, zoals het aanmaakscherm al deed. En `Evaluation::isLocked()` had \"behalve bij CLW\" als uitzondering; dat is nu de vijfde regel, `keeps_evaluations_editable_after_term`, aan te zetten op het instellingenscherm van de school. De migratie zet hem aan voor CLW (het id staat alleen daar nog, om te verhuizen wat productie al deed). Tests: de regel op zich, en een school met de regel houdt de scores open na de periode.\n\n**Vijf keer dezelfde mapping.** `ReportService` had vijf `getAndMap*`-methodes die elk dezelfde twintig regels herhaalden na een andere curriculumvraag. E\u00e9n `mapClusters()` doet het mappen; de vijf zijn nu een vraag plus een aanroep. Signaturen ongewijzigd, de rapporttests groen.\n\n`docs/school-specific-rules.md` noteert de twee verhuizingen. PHPStan zonder fouten, de suite groen.\n",
+            "branch": "workbench/audit-rest",
+            "title": "Audit: geen gebruiker 3927, de laatste school-id een regel, \u00e9\u00e9n mapping voor vijf rapportdelen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921100608-36d0db"
+}

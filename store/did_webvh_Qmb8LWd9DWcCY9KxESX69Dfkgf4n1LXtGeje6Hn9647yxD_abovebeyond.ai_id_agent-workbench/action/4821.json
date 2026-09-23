@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bea7835975c57a3afee38c414f2a4329f8bbe081",
+            "branch": "workbench/fix/an-affiche-without-a-photo-still-prints",
+            "files_sha256": "b7115fb5f951ca1658b0cb0602f86d68d73966bc01c1994ea6893b04238abd73",
+            "message": "An affiche without a photo still prints"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921150120-151e44"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Derde mobiele batch: lijsten met veel filters en de kiezers in een venster.\n\n**Eindtermclusters.** Zeven filters onder elkaar vulden op een telefoon een halve pagina voor de lijst begon. Op een telefoon blijft alleen het zoekveld staan, met \"Filters tonen\" eronder; open staan de vinkjes en de keuzemenu's zoals voorheen. Vanaf 640 px staat alles zoals het stond, in twee rijen.\n\n**Kiezers voor leerlingen en teamleden.** De resultatenlijst had een vaste hoogte van 572 px in een venster dat zelf al scrolt. Op een telefoon is de lijst nu maximaal 60 procent van het scherm; vanaf een tablet blijft de vaste hoogte. De filterrij van de leerlingkiezer (zoekterm, type, studierichting) stapelt op een telefoon.\n\n**Eindtermkiezer.** Achter vier `@endforeach` stond een losse `>`, die letterlijk in de pagina terechtkwam. Weg.\n\nAlleen Blade; geen PHP gewijzigd. De tests voor curriculum en schoolbeheer blijven groen.\n",
+            "branch": "workbench/filters-mobiel",
+            "title": "Mobiel: filters van de clusterlijst inklapbaar, kiezers die passen op een telefoon"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921074805-78f62d"
+}

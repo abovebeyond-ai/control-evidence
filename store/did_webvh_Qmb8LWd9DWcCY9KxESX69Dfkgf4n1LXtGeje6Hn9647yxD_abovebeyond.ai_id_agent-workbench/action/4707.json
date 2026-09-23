@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e4dac3e29f57e58fb5ef46742bc428785484cc54",
+            "branch": "workbench/env-kritisch",
+            "files_sha256": "8061d9f83774ad3cf85d0ea1d14b2c32642d6949b3503720c44b87823dd61abf",
+            "message": "Bugsnag, twee feature flags en drie driver-sleutels weg: de .env zegt alleen nog wat afwijkt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921104654-54dd9a"
+}

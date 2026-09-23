@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a3f1ee7048515bab0e6f43598a88634aec9c7c05",
+            "branch": "workbench/schoolkiezer",
+            "files_sha256": "f137b5bc97abe4ee09a60f623a2cdb60e3964367ddf63a14717f814c883cbce9",
+            "message": "De schoolkiezer als eigen menu, zoals het profielmenu ernaast"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921111448-a2bb4f"
+}

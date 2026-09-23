@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fdc9b8c77f887406df6041d80d2cc79d103ecab7",
+            "branch": "workbench/ci/one-deploy-per-merge",
+            "files_sha256": "f8830736b787a5b1f82edbb9965b3672712bbefe73b317ef707fc6bfe982d91e",
+            "message": "One merge is one deploy: the release stops pushing a badge to main"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922100216-596ebc"
+}

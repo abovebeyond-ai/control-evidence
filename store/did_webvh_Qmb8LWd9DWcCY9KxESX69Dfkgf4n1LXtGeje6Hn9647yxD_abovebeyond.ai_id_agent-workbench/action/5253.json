@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "697b2d38fc864e6ed40c471743ca891a25c2ccbd",
+            "branch": "workbench/fix/we-do-not-offer-what-we-do-not-do",
+            "files_sha256": "c61da2d29b7f7733b56b01ff688c117e6aed4a06cbc5849fc4a345041c963353",
+            "message": "We do not offer what we do not do: the API delete is gone"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922114534-1e5f13"
+}

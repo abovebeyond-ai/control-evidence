@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Editing a vehicle that no longer exists gave a 500 (Nightwatch 27, twice this morning, one dealer). `/own-vehicles/MTAxMTI=/edit`: vehicle 10112 is that dealer's own car, deleted on 15 October 2024, reached from a two year old bookmark.\n\n`OwnStockController::edit` asked `$vehicle?->is_complete` and then read `$vehicle->id` on the next line to open the create screen. The `?->` looks like the guard that belongs there, and covers exactly one of the two dereferences; a vehicle that is gone is also never complete, so it always walked into the second one.\n\nA vehicle that is not there now sends the dealer back to his own list with \"Voertuig niet gevonden\", the same place a vehicle of another dealer already went further down the same method. The message is a different one on purpose: \"your vehicle is gone\" and \"this one is not yours\" are different news, and the deleted car is almost always his own.\n\n- `R S1-9.9` extended with the gone-vehicle case.\n- Finding `bewerken-van-een-gewiste-wagen`, resolved in this pull request.\n- `EditingADeletedVehicleTest` pins the three doors side by side: deleted, never existed, another dealer's. Verified to bite: without the guard the first two fail with the exact production exception.\n\nFull suite green, PHPStan clean.\n",
+            "branch": "workbench/fix/editing-a-deleted-vehicle",
+            "title": "Editing a vehicle that is gone is the list, not a 500"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921173903-ad9975"
+}

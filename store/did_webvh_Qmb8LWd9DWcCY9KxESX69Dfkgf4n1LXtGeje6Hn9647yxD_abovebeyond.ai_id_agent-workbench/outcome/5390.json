@@ -1,0 +1,16 @@
+{
+    "action": "efd0322a56587a1fbad97021027856f0",
+    "effect": {
+        "detail": {
+            "base": "147b03f74fb065dd192a20fe80559ffbc12feb8c",
+            "branch": "workbench/hetzelfde-schooljaar-niet-181-keer",
+            "commit": "0ad6ac423361c22d1f67ec57d99a9c6315e20cb2",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5388,
+    "verdict": "ALLOW"
+}

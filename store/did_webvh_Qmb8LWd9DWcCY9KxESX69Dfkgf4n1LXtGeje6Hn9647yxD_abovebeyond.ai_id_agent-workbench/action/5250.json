@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "app"
+        },
+        "resource": "portal:naviskore-webapp"
+    },
+    "run": "workbench-20260922114007-9a45aa"
+}

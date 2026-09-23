@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Sass out. `resources/sass/` (1886 lines, 23 files) becomes `resources/css/legacy/`, plain CSS, and `sass-loader` leaves package.json.\n\n**The check that mattered: the compiled CSS is byte-identical.** Same content hash, `app-Ba3izBc8.css`, 23524 bytes, before and after. Since the hash is derived from the content, that is the proof \u2014 not one rule moved.\n\nThat check earned its place. My first comparison said \"identical\" and was wrong: `emptyOutDir: false` (#720, mine) leaves the previous file in place, and picking `app-*.css` found the *baseline*, not the new build. Comparing properly showed one real regression: `explosietekening.png` had stopped being processed by Vite and was left as an unresolved path \u2014 a broken background on the create-vehicle screen. The converted files sit one directory deeper, so `../../../` no longer reached the project root. Fixed, then identical.\n\n**What Sass was actually used for**, after measuring rather than guessing: six variables for fixed theme colours (now their values), nesting in 48 places, and 69 `//` comments. No mixins, no `@extend`, no colour functions.\n\n**Nesting is the part that could have shipped broken.** PostCSS here had only tailwindcss and autoprefixer, so native CSS nesting would have gone to the browser as written: fine on a laptop, ignored by the showroom screen at Garage Engels, which runs Chrome 56. `tailwindcss/nesting` (which Tailwind already ships) now turns it into plain rules at build time, so nothing changes for any browser.\n\n**Why now.** `@import` is removed in Dart Sass 3.0. Today a warning on every deploy; on that release, a build that stops on a morning nobody picked.\n\n**A side effect worth having.** Dropping `sass-loader@8` took the install from 792 packages to 468 and with it the deprecation warnings every deploy printed \u2014 axios 0.19.2, request, tar, node-pre-gyp all came in through it. Build output now prints none.\n\n`sass` itself may still be installed: Vite lists it as an optional peer. That is Vite's choice, not ours; verified that the build produces the same bytes with `node_modules/sass` removed.\n\n`TheStylesheetsNeedNoPreprocessorTest` pins it: no .scss left, nothing asking for sass, the nesting plugin present (the one that fails silently), and the layouts and the build pointing at the same stylesheet. Four existing tests and one rule that referenced the old paths are updated.\n\nFull suite green, PHPStan clean.\n",
+            "branch": "workbench/chore/sass-out",
+            "title": "x"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922062439-845837"
+}

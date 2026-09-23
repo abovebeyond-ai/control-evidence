@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane, 21 September 2026, asked whether own vehicles should always come first: \"ja eigen wagens altijd bovenaan!\"\n\nNothing to build. That is what the code does, and has done since 16 September (commit `910207bb`, PR #502), five days after this finding was written. `applyWebsiteVehicleDefaultOrder` applies `ownFirstSql` before the branch that sorts on internal number, so the grouping also holds for a dealer who does not use internal numbers, and `PublicVehicleController` applies the same expression on `scope=all`, on by default, with `own_first=0` for whoever wants one continuous list.\n\nSo the finding is closed on the code that already answered it, with the decision recorded.\n\nWhat it shows is that a finding can go stale itself. This one described behaviour that had not existed for five days and was still standing as a question for the customer. A finding deserves a re-read at the moment it is decided, not only at the moment it is written.\n\nFixes bevinding eigen-wagens-staan-altijd-bovenaan-op-de\nFixes #590\n",
+            "branch": "workbench/docs/own-vehicles-first-already-holds-5",
+            "title": "Own vehicles first already holds"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921105639-49f9ec"
+}

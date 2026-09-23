@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De schoolkiezer in de bovenbalk was een `<select>`, en die laat zich niet stylen zodra hij opent: de lijst tekent macOS of Windows zelf. Nu is het een menu van de app, dezelfde opbouw als het profielmenu ernaast (`el-dropdown`), met de gekozen school aangevinkt en de naam in de knop.\n\nDe lijst blijft: de actieve scholen waar de gebruiker werkt, op naam gesorteerd. Een school die stopt zet je uit op haar instellingenscherm (\"actief\"), en dan verdwijnt ze ook hier. Kiezen is een sessiewissel; een school waar de gebruiker niet werkt wordt geweigerd.\n\n**Voor de lijst op productie**: alle negen scholen staan nog op actief, ook de vijf zonder inschrijvingen dit schooljaar (Futura, ZOOM Kortrijk, MSKA Roeselare, Atheneum Bellevue Izegem, athena Pottelberg). Die uitzetten op hun instellingenscherm maakt de kiezer vier scholen lang. Let op: een uitgezette school geeft op haar rapporten de uitleg \"deze school rapporteert niet meer\" (410), dus alleen uitzetten wat echt gestopt is.\n\nDrie tests voor de kiezer; suite en PHPStan groen.\n",
+            "branch": "workbench/schoolkiezer",
+            "title": "De schoolkiezer als eigen menu, zoals het profielmenu ernaast"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921111448-a2bb4f"
+}

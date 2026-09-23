@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "92ed13435efb8c4c40580f68a1b46b8dbfeced56",
+            "branch": "workbench/leerlingformulier",
+            "files_sha256": "0b5aff779bc5c6a1a021b951858a82c0a66c29b2da67d8c13fa0a3ba9ecf3995",
+            "message": "Leerlingformulier: de adressen heten wat ze zijn, het extra adres is optioneel"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921113306-031db3"
+}

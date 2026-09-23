@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "723d2b4415ea2e63130617c121741ef62e731b95",
+            "branch": "workbench/geen-inline-php",
+            "files_sha256": "e600d2516b211a6232a31eb3e4064e6a80e7f0201be48309c10a579c933371ed",
+            "message": "Geen inline @php meer, en een test die de volgende tegenhoudt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921204856-c7a536"
+}

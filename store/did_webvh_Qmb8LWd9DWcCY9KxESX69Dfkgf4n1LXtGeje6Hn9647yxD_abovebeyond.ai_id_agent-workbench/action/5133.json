@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "65a5492b23fc34faf2eb09fae395a1f176520422",
+            "branch": "workbench/de-dekkingsmeter-kapt-niet-af",
+            "files_sha256": "1828f8bfa3225012dafb12e178a8dfdc58d4b1841b405357e16307f9167e5f28",
+            "message": "De dekkingsmeter stopte bij honderd, en dat las als een gat"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20260922071122-215fcf"
+}

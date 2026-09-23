@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d88c08fcec66eb58808a1a1292c9ebfdb262fabd",
+            "branch": "workbench/fix/a-wrong-carpass-password-says-so",
+            "files_sha256": "6b27252d01f8a8af9d349e1e33441c181d718d59485d80580cfbe336f21c86f2",
+            "message": "A wrong Car-Pass password says so"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921211303-e91ea0"
+}

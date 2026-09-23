@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "64d3369035894a09915c51cac0adac9481750a53",
+            "branch": "workbench/fix/a-filtered-row-keeps-its-switches",
+            "files_sha256": "cf901d264af330940697e9b3c64c7d2871c0c6f5b9dd959e19bc14a2bb56ecd2",
+            "message": "A filtered row keeps its switches"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922082708-be9bf2"
+}

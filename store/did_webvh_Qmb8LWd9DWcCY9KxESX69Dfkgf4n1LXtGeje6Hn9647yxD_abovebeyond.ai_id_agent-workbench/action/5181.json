@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Step one of the testing question: get the logic out of the view, so a cheap test can reach it.\n\nThe switches in the dealer list lived as an inline `<script>` in `settings/dealer/index.blade.php`. That is the real reason this morning's failure was carried by nothing: **a script in a view cannot be called by any test**, so the only options were reading the source or opening a browser. The source-level guard from #745 catches a return to direct binding, but it clicks nothing.\n\nNow `resources/js/dealer-switches.js` holds the behaviour and the blade carries only what Blade knows \u2014 the route and the translations, on one `data-dealer-switches` element.\n\n**The test does what the autofilter does.** It builds the table, initialises, then throws the rows away and appends new nodes exactly as `x-ui.autofilter` does, and only then flips the switch. Six cases: a row from the first load, a row that arrived after a search, \"no\" at the confirmation saving nothing, a failed save putting the tick back with a message, the CSRF token read at call time rather than at load, and the demo flag never asking.\n\nVerified to bite: putting the direct binding back fails exactly one test \u2014 *\"bewaart ook een module van een rij die na een zoekopdracht binnenkwam\"*. This morning's bug, caught in one second.\n\n**Along the way, no jQuery on this path.** `fetch` reads the CSRF token at the moment of the call, which is the token the session guard refreshes (R S1-9.23); `$.ajaxSetup` copied it once at load.\n\n**New: a JS test layer.** vitest + jsdom, `npm run test:js`, and a CI job next to the lint (`The front-end modules behave`). jsdom rather than a real browser on purpose: what is tested here is DOM behaviour, and that needs no browser. Real browser tests belong at the top of the pyramid for a handful of paths; this is the cheap layer under it. Lint stays at 31 warnings \u2014 the new files add none.\n\n`R P2-1.10` extended; the PHP guard from #745 now checks that the blade does *not* get its own script back.\n\nFull PHP suite green except `ListPageHeadersTest` (`requirement.index`, `links.index`), which fails the same way on this branch's base with my changes stashed, and which passed CI on #745 and #746. It looks like local database state; CI is the judge.\n",
+            "branch": "workbench/refactor/dealer-switches-as-a-module",
+            "title": "The dealer switches are a module with a test"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922090603-c7d321"
+}

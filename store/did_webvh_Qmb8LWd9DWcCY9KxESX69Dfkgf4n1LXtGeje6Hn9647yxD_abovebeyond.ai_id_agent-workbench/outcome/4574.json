@@ -1,0 +1,16 @@
+{
+    "action": "a1ca3a144e0773464983675372cbf92e",
+    "effect": {
+        "detail": {
+            "base": "187d686f26a5db1da3b48ff6d09865ef64c27e8a",
+            "branch": "workbench/dashboard-mobiel-2",
+            "commit": "39a9fe381aa43efadfb37c8880c888960757a7d1",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4572,
+    "verdict": "ALLOW"
+}

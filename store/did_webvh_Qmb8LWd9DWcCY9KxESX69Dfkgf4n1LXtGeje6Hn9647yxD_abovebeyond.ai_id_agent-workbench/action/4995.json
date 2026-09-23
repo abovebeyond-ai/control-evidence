@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op jouw schermafdruk van het schooljarenscherm viel op wat in gespatieerd kapitaal niet opviel.\n\n**De koppen.** Ze lazen \"Loopt van\" en dan \"tot\", met een kleine letter. Nu \"Van\" en \"Tot\".\n\n**Dezelfde rij zei twee keer hetzelfde.** Een groen plaatje \"loopt nu\" naast de naam, en het woord \"loopt nu\" in de laatste kolom. Die kolom legt uit waarom er geen verwijderknop staat, en voor het lopende jaar zegt het plaatje dat al. Ze zwijgt daar nu, en blijft \"in gebruik\" zeggen voor een jaar waar periodes of inschrijvingen aan hangen.\n\n**En de bladwijzerbalk, in de hele app.** Van de 23 tabellen vroegen er vier of er te bladeren valt. De andere 19 zetten onder elke lijst een witte strook met een streep erboven, ook als alles op \u00e9\u00e9n bladzijde staat, en dat leest als een rij die is afgekapt. Dezelfde fout als de lege knoppenrij uit #103 en de balk uit #110, nu overal weg: leerlingen, leerkrachten, beheerders, klasgroepen, scholen, schooljaren, curricula, subvakken, complementaire vakken, levensbeschouwing, aanbod, de deliberatielijst, rapporten voorbereiden en de vier zoekvensters.\n\n**Twee tests erbij**, want dit zijn regels die je met het oog niet terugvindt: geen zelfgeschreven `<th>` in gespatieerd kapitaal, en geen bladwijzerbalk zonder `hasPages`. Beide noemen bestand en regel als er een terugkomt.\n\n**Getoetst.** Elke gewijzigde view is door Blade gecompileerd en met `php -l` nagekeken, want een ingevoegde `@if` die \u00e9\u00e9n bestand stukmaakt zou pas op het scherm blijken. `php artisan test --parallel`: 1042 groen, alleen BuildStampTest faalt zoals in elke worktree zonder Vite-build. PHPStan schoon, Pint schoon. Het schooljarenscherm is in de browser nagekeken: koppen, geen dubbel label, geen balk.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/van-en-tot",
+            "title": "Van en Tot, en geen bladwijzerbalk onder een lijst die past"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921190139-3bc387"
+}

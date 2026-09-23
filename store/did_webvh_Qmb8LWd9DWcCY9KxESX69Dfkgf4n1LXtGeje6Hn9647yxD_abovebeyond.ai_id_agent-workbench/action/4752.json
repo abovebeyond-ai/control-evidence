@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "87ef6378857a01facc5f66f23e2e711065b41b5c",
+            "branch": "workbench/mix-wishes",
+            "files_sha256": "d72f34bcc4f9931c0f9d4bc7f8e283d55c1c75a8de0108e812a71f722ef47eed",
+            "message": "Mix: the desk says too much, fine or too little, in a sentence"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260921111104-e34d2a"
+}

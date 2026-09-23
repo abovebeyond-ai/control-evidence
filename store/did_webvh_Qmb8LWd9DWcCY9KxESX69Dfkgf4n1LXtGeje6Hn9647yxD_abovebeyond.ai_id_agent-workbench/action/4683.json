@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cf83d70ede63ad0b71eec57f1d474884899b99c7",
+            "branch": "workbench/fix/no-order-form-for-a-car-in-option",
+            "files_sha256": "29958b9035b7a8a34d3ef2bef0fc52aeb2e7791f40091565921a7ddfe9785119",
+            "message": "No order form for a car in option"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921102547-9bfd4d"
+}

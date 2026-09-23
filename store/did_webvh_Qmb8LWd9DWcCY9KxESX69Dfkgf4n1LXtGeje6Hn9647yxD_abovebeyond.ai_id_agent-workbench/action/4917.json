@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Bij het uitzoeken van het derde Nightwatch-issue kwam dit bovendrijven, en het is het oudste risico van de drie.\n\n`Schoolyear::current()` werpt wanneer geen enkele rij vandaag omvat. Dat raakt niet \u00e9\u00e9n scherm: de globale scope `CurrentSchoolyearScope` hangt onder `Offering` en `StudentGroup`, dus onder zowat elke query. Er zijn 42 aanroepen in 29 bestanden en precies \u00e9\u00e9n vangt de fout op. In die toestand valt bijna de hele applicatie stil, en tot nu met een kale 500 waarin nergens stond wat eraan scheelde.\n\n**Wat er nu gebeurt.** Een pagina met een 503: er is niets stuk, er ontbreekt een rij, en tot dan is de app niet te bedienen. Ze zegt wat er mist, en een superadmin krijgt de link naar Schooljaren. Dat scherm blijft in die toestand werken, want onder `Schoolyear`, `Term` en `Enrollment` hangt de scope niet, en inloggen raakt ze ook niet. De uitweg staat dus open zonder query op de databank, en de derde test pint dat vast tot en met het aanmaken.\n\n**Twee dingen die onderweg bleken.** De keten van de uitzondering wordt afgelopen in plaats van op het type gematcht: komt de fout uit een view of uit een Livewire-component, dan levert het framework haar verpakt af als `ViewException` en zou een renderable op het type niets doen. En de pagina draagt haar eigen stijl in plaats van `errors::minimal` te volgen, want dat frame zet zijn hele boodschap in gespatieerd kapitaal en levert een vast klein stijlblad mee waarin `normal-case` niet bestaat. Een lopende zin hoort in lopende letters.\n\n**De datum die dit spannend maakt.** Op productie lopen de schooljaren aaneen van 2021-09-01 tot 2027-08-31. De eerstvolgende grens is 1 september 2027. Dat staat nu ook in `docs/deploy.md`, samen met waarom het scherm Schooljaren de uitweg blijft.\n\nAanleiding was [Nightwatch #1](https://nightwatch.laravel.com/us/environments/a28b7595-4723-4c4d-8493-880aafdd9a0e/issues/1): \u00e9\u00e9n voorval op de stagingkopie van 6 september 2026, vijf dagen na 1 september op een databank waarvan het nieuwste schooljaar op 31 augustus eindigde. Op productie is deze fout nooit gevallen.\n\n**Getoetst.** `php artisan test --parallel`: 1034 groen (alleen BuildStampTest faalt, en die faalt in elke worktree zonder Vite-build). `vendor/bin/phpstan analyse`: geen fouten. Pint schoon. De pagina is in de browser nagekeken, in beide varianten.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/geen-schooljaar-is-een-uitleg",
+            "title": "Geen schooljaar voor vandaag is een uitleg, niet een 500"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921173227-fa53d0"
+}

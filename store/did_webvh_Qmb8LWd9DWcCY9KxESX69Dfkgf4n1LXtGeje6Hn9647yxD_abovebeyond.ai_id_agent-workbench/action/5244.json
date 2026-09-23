@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cc395ad699e88b3ab6b1bbeaafea215b2da0cbcc",
+            "branch": "workbench/the-surfaces",
+            "files_sha256": "4474eedb96acbd6e9632dcc654a0ba0347753a35bdd3c436b6336f918063a603",
+            "message": "The surfaces: one ladder, six depths, and what each costs to open"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260922113848-2e3ef8"
+}

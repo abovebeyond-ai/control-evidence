@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "697b2d38fc864e6ed40c471743ca891a25c2ccbd",
+            "branch": "workbench/fix/the-api-update-hands-over-the-car-2",
+            "files_sha256": "ec097fdb0615e44c0c1018329f6b8e6e19a9d796c52dbd759fd710dc0172b533",
+            "message": "The API update hands over the car, not its id"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922113044-cc692c"
+}

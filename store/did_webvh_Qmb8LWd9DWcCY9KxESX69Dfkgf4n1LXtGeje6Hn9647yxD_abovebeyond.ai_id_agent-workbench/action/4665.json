@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "881bf804b1aed89ec2aa67b3adc521a6aaed578e",
+            "branch": "workbench/smartschool-config",
+            "files_sha256": "4ca4c6f01b2a665a962bac559f453890178b42edc9354f8a3a0a9b0ccb6a6971",
+            "message": "De Smartschool-config uit augustus is weg: de tabel is de bron"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921101134-99a71c"
+}

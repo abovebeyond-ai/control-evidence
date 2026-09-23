@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "011df59b63d75913bdab9a1d9e5302d4d460ffe7",
+            "branch": "workbench/fix/a-slow-partner-is-not-our-error-page",
+            "files_sha256": "a02221d4c5f6585328c246a7130aaa800994d5c9d5b2fb180f90d0164fbe27bf",
+            "message": "A slow partner is not our error page"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921205226-455eac"
+}

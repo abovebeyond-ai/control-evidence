@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "053d34cff382c4af0f134e75c42230a8ae2dd90d",
+            "branch": "workbench/fix/own-vehicle-never-gets-a-margin",
+            "files_sha256": "c5ff9f1a9be35c5facefde6f7e672f1d53bf266f893e4d50e38eeace720a1bc3",
+            "message": "An own vehicle never gets a margin on top"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923071700-ee251a"
+}

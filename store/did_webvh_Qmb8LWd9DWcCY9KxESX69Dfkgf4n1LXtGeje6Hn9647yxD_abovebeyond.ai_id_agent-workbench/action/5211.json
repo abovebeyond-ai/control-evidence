@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Ilse switched both modules off for M.I. Cars, removed his vehicles and his login, and the iframe on\nmicars.be/catalogus still served our catalogue from traders.stocklistdealer.eu. It answered 200.\n\n`website/{dealer_hash}` decrypted the hash, found the dealer and rendered. It checked nothing else,\nso the embed kept working for as long as a former customer left the snippet in his page.\n\nHis was empty, which is the mild version. The widget can show the shared stocklist instead of the\ndealer's own stock (`default_all_vehicles`, or the visitor flipping the toggle), and then a former\ncustomer keeps publishing other dealers' cars on his own website. Nothing in the code stopped that,\nand nothing would have reported it, because the page answered 200 either way.\n\nSo the embed now follows the package: with `module_1` and `module_2` both off, every public entry\npoint answers 410 with one neutral sentence, no branding and no logo, because that page renders\ninside somebody else's site and putting our mark there is worse than the empty list it replaces.\n\nTwo choices worth naming:\n\n- The check is middleware on the whole route group, not a guard in the controller. There are ten\n  public entry points into `WebsiteController` and the eleventh would be added without it.\n- It refuses only what it is sure about. A hash that will not decrypt, or one that points at no\n  dealer, is passed through exactly as before: this is a gate on a package, not a second opinion on\n  everything that can be wrong with a URL. A test pins that.\n\nRun against the routes currently on main, the new test reports the live situation: \"Expected\nresponse status code [410] but received 200.\"\n\nNote for the merge: this takes effect for every dealer with both modules off, not only M.I. Cars.\n",
+            "branch": "workbench/security/the-embed-follows-the-package",
+            "title": "The embed on a dealer's own site follows his package"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922103326-7b74ef"
+}

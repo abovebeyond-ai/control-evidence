@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nightwatch #30, half an hour old: `UnableToListContents` on `_afgeleid/showroom/19489`, because `ListObjectsV2` timed out after fifteen seconds. It happened inside `BuildShowroomZip` for Autobedrijf Gielkens, a zip of thirty-eight vehicles.\n\nNothing broke. The call sits in a try/catch that says the cache is a shortcut and never a reason to lose the slide that was just drawn, so the slide went into the zip and the build carried on. What was lost is fifteen seconds, and on a cold cache that listing happens once per redrawn vehicle while somebody waits for a download.\n\nThe listing existed to find this vehicle's older fingerprints and delete them. It does not need the bucket for that: the mirror is local, is written on every path, and knows which fingerprints the vehicle had. So `keepOnly` now returns what it dropped from the mirror, and the same names are deleted from the bucket. Paths are removed, not searched for.\n\nWhat is given up, written into the rule: if the mirror loses a path (it is trimmed at `MIRROR_MAX_BYTES`), the matching file stays in the bucket until the vehicle is sold or gone and `pruneSold` removes the whole folder. That costs storage and nothing else \u2014 a slide is always read by its exact fingerprint, so an orphan is never served.\n\nThe test uses a disk that throws on `files()`, which is exactly a bucket in timeout, and asserts the older fingerprint disappears anyway. Before this change it would have stayed: the throw was caught and the cleanup silently skipped.\n",
+            "branch": "workbench/fix/the-slide-cache-stops-listing",
+            "title": "The slide cache stops listing the bucket"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921112417-c7e10f"
+}

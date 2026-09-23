@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b6d0b4a95d86b2c5f84fa08501ebbb26963d1100",
+            "branch": "workbench/afwezig-venster",
+            "files_sha256": "6c5a3be599f590d828cef5c06fcb99e883ddbbe7cac0d4bfc6bff24e20eb46b6",
+            "message": "Overal afwezig vraagt in een venster van de app, en de leerlingfiche is voor beheerders"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921165208-ee8f30"
+}

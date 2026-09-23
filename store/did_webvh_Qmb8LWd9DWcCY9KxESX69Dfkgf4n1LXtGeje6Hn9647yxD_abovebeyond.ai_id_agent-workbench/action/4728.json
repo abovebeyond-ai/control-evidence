@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "73bfaab1f5a683058782cf7fec2bfe36ee22b9b5",
+            "branch": "workbench/docs/own-vehicles-first-already-holds-5",
+            "files_sha256": "6e878299868b62076f55675cc988f7f6dfb94ad3559b9ecbc22f346443655c92",
+            "message": "Own vehicles first already holds"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921105639-49f9ec"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "97b566607938ef8a4365183c156ca1bc",
+    "effect": {
+        "detail": {
+            "base": "f70b7d1387013db5ded0eb38d59c751b7bafc1c0",
+            "branch": "workbench/feat/a-car-in-a-mail-shows-its-photo",
+            "commit": "2249487aefe1e2c5c9b4498dfef658bdd4fc78c6",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4647,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0984238b9f41c27b8548206f6b154584dd0d396c",
+            "branch": "workbench/delibereren-op-een-telefoon",
+            "files_sha256": "bfbf147dad1e00e3bbad9c5b2b5f09e05c1184690a7a5ec1302fc5738a51c278",
+            "message": "Delibereren op een telefoon: een lijst in plaats van een tabel die je niet ziet"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921175557-4e3f00"
+}

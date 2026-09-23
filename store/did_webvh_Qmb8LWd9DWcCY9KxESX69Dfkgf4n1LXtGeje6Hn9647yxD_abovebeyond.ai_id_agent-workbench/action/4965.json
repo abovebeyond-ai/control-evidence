@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "One `curl -I` on `/webhook/image/1/processed` was an error page (Nightwatch 13, 31 August 2026): `DecryptException: The payload is invalid`. The first line of `processed` does `decrypt($image_id)`, outside the `try` underneath it, and `decrypt` throws on anything that is not a valid encrypted value.\n\nThis is the door Blurit reports back through, so it is open to the world and stays open during maintenance (R P3-12.1). An open door answers what knocks on it; what it may not do is fall over. The encrypted id is not a lock here but a reference: something that cannot be read points at no photo, so 404.\n\nSame shape as the garbled showroom link of 20 September: a bare `decrypt()` on an address that comes from outside. That one was on `DealerController`, this one on the webhook.\n\n- `R S1-6.9` extended; finding `onleesbaar-id-op-de-fotowebhook`, resolved here.\n- `AnUnreadableWebhookIdIsNotFoundTest` with the boundary (a readable id still gets through, even when no photo carries it) and the real thing (the photo comes out of \"processing\"). Verified to bite: without the guard it fails with the exact production exception.\n\nFull suite green, PHPStan clean.\n",
+            "branch": "workbench/fix/an-unreadable-webhook-id-2",
+            "title": "An unreadable id on the photo webhook is not found"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921180957-777ce9"
+}

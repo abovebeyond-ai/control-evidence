@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a5eb741bd003a9adcb2eb27b008f805ad6b1b4e4",
+            "branch": "workbench/fix/a-typed-price-wins-on-every-screen",
+            "files_sha256": "0ba74b614215edd01c165f9afcee5020a1903ae75b5e20b6ee5a8789dea21268",
+            "message": "A typed customer price wins on every screen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922143041-adb5d9"
+}

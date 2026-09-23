@@ -1,0 +1,16 @@
+{
+    "action": "c0ed437a1eeb6f611b65ca56a27b1c63",
+    "effect": {
+        "detail": {
+            "base": "0984238b9f41c27b8548206f6b154584dd0d396c",
+            "branch": "workbench/geen-schooljaar-is-een-uitleg",
+            "commit": "330ca31023b9a0347364c834d5c5e40343abfa7b",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4914,
+    "verdict": "ALLOW"
+}

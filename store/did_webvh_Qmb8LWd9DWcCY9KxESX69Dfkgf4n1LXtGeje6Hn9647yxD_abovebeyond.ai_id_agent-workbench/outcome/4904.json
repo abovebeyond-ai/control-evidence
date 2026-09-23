@@ -1,0 +1,16 @@
+{
+    "action": "2d64dd9875010dcd7aebd6262adc88f3",
+    "effect": {
+        "detail": {
+            "base": "b6d0b4a95d86b2c5f84fa08501ebbb26963d1100",
+            "branch": "workbench/twee-fouten-uit-nightwatch",
+            "commit": "b7fe54217b51132db53f59906fe4cb1e0778366e",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4902,
+    "verdict": "ALLOW"
+}

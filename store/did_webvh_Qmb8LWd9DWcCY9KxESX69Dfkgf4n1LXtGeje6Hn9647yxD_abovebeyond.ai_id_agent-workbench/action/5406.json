@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4fb5d9c47df58d8f5d4d219c24c799ff1ff118f1",
+            "branch": "workbench/ui/website-toggle-says-where-it-goes-2",
+            "files_sha256": "98b269e31397cc29ff1c556df09f7d2d49350e3aca223c9280d2a755462ee516",
+            "message": "The widget toggle names its destination, never its owner"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922181954-f0d8a1"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "5c5e505a3b100bafd5699fa29677c069",
+    "effect": {
+        "detail": {
+            "base": "4dbb148af060b98a79545f3db774cbb6535f30ce",
+            "branch": "workbench/fix/the-chassis-modal-posts-the-id-the-route-expects",
+            "commit": "28e2ee76434a2ec7c9890f61da0306b33b195a01",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5289,
+    "verdict": "ALLOW"
+}

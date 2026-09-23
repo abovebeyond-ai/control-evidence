@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De sectie \"What it is, no larger than the evidence supports\" beweerde nog software-attestatie\nen trede 2, met de stap naar trede 3 die \"wacht op een machine\". Die machine draait sinds\n10 september. Dit is de eerste tekst die een buitenstaander over de claim leest, en ze\nonderschatte hem met een hele trede.\n\nWat er nu staat, met de waarden van vandaag erin:\n\n```\nrelease     v0.30.0 sha256:e0106215f9ef8919a2d51980b876ee21c96aa263e2d22aa73952c7c15accf044\nplatform    INTEL_TDX (configfs-tsm)\nmrtd        c1ee9c16e3afc506cfe042c5b846a368...\nrtmr3       28e1098712a03dade4878ed2ad2970f0...\n  input     control-gateway-linux-amd64  sha-384:02694066e9075eb5...\n  input     carried-config               sha-384:3e1db14d33738dd2...\n```\n\nDrie dingen zijn erbij gekomen die er niet stonden.\n\n**De measurement is de MRTD en dus niet de binary.** Dat leest iedereen verkeerd, ik vanmorgen\nook: ik dacht dat een ongewijzigde measurement na de v0.30.0-upgrade betekende dat de nieuwe\nbinary niet draaide. Het omgekeerde is waar. De MRTD is de initi\u00eble inhoud van de trust domain\nen beweegt niet met de gepinde release, en dat is precies wat een keten een upgrade laat\noverleven in plaats van een rotatie te eisen. De binary en de gedragen configuratie zitten in\nRTMR3, het record noemt ze met hun digest, en `verify --release-sha384` houdt RTMR3 tegen de\ngepubliceerde asset. Op het record hierboven klopt die digest exact met de\n`control-gateway-linux-amd64` van v0.30.0.\n\n**Twee Tier 4-rijen staan er ook, sinds v0.30.0.** De gateway houdt de staart van haar eigen log\ntegen de kop die ze draagt en toetst elk record onder haar eigen sleutel; klopt dat niet, dan\nantwoordt ze FAIL_CLOSED. Dat is C7.6.3 en C8.3.3, met `docs/the-halt.md` ernaast en zonder\noverride-vlag.\n\n**En eerlijk wat de claim nog aftopt.** C8.3.2 beoordeelt een keten op de zwakste interactie die\nze deelt, en dat is de admission: een capability wordt normaal getekend door `#portal`, een\nsleutel in de omgeving van een gewone server. Tekenen op de token (`hand.mjs admit`) tilt die\ninteractie, en tot dat de regel is in plaats van het alternatief staat een claim over een hele\nrun op trede 2 terwijl de records trede 3 zijn. Wat verder ontbreekt voor trede 4: de\ninteraction inventory van C8.3.1, handhaving aan de andere kant in C8.3.5, de per-record\nvalidator van C10.3.3 en de herbeoordeling door een derde van C10.3.5.\n",
+            "branch": "workbench/de-readme-op-trede-3",
+            "title": "De README zegt wat er draait, niet wat er wachtte"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260922111804-70934e"
+}

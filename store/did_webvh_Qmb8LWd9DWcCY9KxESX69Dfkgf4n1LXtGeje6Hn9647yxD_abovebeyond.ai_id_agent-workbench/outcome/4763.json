@@ -1,0 +1,16 @@
+{
+    "action": "4066b191ce3c75f08908d1c8123160c9",
+    "effect": {
+        "detail": {
+            "base": "a3f1ee7048515bab0e6f43598a88634aec9c7c05",
+            "branch": "workbench/schoolkiezer",
+            "commit": "7e1b4a20cb3b835c55c5132b3e2de842fc7d8298",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4761,
+    "verdict": "ALLOW"
+}

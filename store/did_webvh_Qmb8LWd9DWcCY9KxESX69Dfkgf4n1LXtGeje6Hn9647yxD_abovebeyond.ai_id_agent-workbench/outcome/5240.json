@@ -1,0 +1,16 @@
+{
+    "action": "d2f2c57a137dec3bc5e0a273ccec0905",
+    "effect": {
+        "detail": {
+            "base": "697b2d38fc864e6ed40c471743ca891a25c2ccbd",
+            "branch": "workbench/fix/the-delete-endpoint-says-what-it-does",
+            "commit": "cba68641ade1ea3d60889b54e494cb8152d6d4e8",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5238,
+    "verdict": "ALLOW"
+}

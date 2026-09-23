@@ -1,0 +1,16 @@
+{
+    "action": "fd4f6e24948ee006a02a685b0b3d43cb",
+    "effect": {
+        "detail": {
+            "base": "e4dac3e29f57e58fb5ef46742bc428785484cc54",
+            "branch": "workbench/env-kritisch",
+            "commit": "e9a9b399573d58c4deaec2a6355363ddf60523dc",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4707,
+    "verdict": "ALLOW"
+}

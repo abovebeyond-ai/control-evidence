@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two runs went red on `ShaneDeconinck/naviskore` on 21 September 2026 while nothing was wrong with the evidence. The logs say it plainly:\n\n```\nREFUSE Get \"https://abovebeyond.ai/.well-known/did.json\": tls: failed to verify\ncertificate: x509: certificate is valid for *.netlify.app, netlify.app, not abovebeyond.ai\n\nREFUSE Get \"https://abovebeyond.ai/.well-known/did.json\": EOF\n```\n\nThe host had a bad few minutes; the records themselves hold, and still do when replayed today against both published documents. But the check reported a refusal, which reads as \"the control check caught something\". That is the worst way for this particular check to fail: a gate that cries wolf is a gate people learn to click past, and it was the far end of a chain whose whole point is that it cannot be talked round.\n\n**What changes.** A refusal that names the fetch is retried four times over half a minute. If the document stays out of reach the step still fails, because an unreachable document must never read as a pass, but it now says it could not judge rather than that the evidence was rejected. A verdict the verifier actually reached is final on the first try, in either direction: nothing that holds, and nothing that does not, is ever retried away.\n\n**Verified** by exercising the wrapper with three doubles: a holding record passes through unchanged, a DENY fails immediately with no retry, an unreachable document retries four times and then reports that it was never judged.\n\nTwo things left alone on purpose. The default document stays `/.well-known/did.json`: both it and `/id/did.json` verify the current records, so there was nothing to fix there, and an earlier reading of this failure as a wrong-document problem was mistaken. And the real remedy for a single point of failure is a second address for the document; that is worth doing and is not done here.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/out-of-reach-is-not-rejected",
+            "title": "Out of reach is not the same as rejected"
+        },
+        "resource": "abovebeyond-ai/control-verify-action"
+    },
+    "run": "workbench-20260921180914-489332"
+}

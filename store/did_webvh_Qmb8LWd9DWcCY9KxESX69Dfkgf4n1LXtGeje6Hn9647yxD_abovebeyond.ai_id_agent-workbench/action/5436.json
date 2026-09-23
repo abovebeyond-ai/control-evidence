@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1108c5725eb779a5be464d43661974144764ec6c",
+            "branch": "workbench/het-schooljaar-dat-al-geladen-was",
+            "files_sha256": "178d96ef953b34f2f9bc63650dac8f14af450098d33b7e6208688914aa992562",
+            "message": "Het schooljaar dat al geladen was"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923072027-9d03e0"
+}

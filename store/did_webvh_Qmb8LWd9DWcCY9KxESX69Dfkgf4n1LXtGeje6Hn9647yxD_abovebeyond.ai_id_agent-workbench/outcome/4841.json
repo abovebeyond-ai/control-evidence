@@ -1,0 +1,16 @@
+{
+    "action": "b7de40b69fd132379d7cac8b9c9e2c5d",
+    "effect": {
+        "detail": {
+            "base": "d75bb7275c963633e7922f7190e9c216b52d62a6",
+            "branch": "workbench/lege-knoprij",
+            "commit": "f7a42c1d2a1862551b7499414c104bd5c15a6f86",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4839,
+    "verdict": "ALLOW"
+}

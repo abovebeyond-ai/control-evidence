@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee van de vijf beslissingen.\n\n**Overal afwezig vraagt in een venster van de app.** Vier keer stond er `confirm()`: het venster van de browser, dat de pagina blokkeert en op niets in Naviskore lijkt. Nu vraagt de component het zelf: de titel zegt wat er gebeurt, de tekst noemt de leerling, en er staat bij dat ingevulde scores blijven staan. Annuleren verandert niets; pas de bevestiging schrijft. In de matrix waren die twee bovendien links met `href=\"#\"` en `id=\"confirm\"`, \u00e9\u00e9n per leerlingkolom, dus vier keer hetzelfde id op \u00e9\u00e9n pagina; nu knoppen, want ze gaan nergens naartoe.\n\n**De leerlingfiche blijft bij de beheerders.** Ze stond in de leerkrachtengroep van de routes, dus een leerkracht kon ze openen. De route verhuist naar de beheerdersgroep, de knop op de leerlingpagina staat er alleen voor wie ze mag openen, en wie de url zelf bouwt krijgt een 403. De twee tests die het oude gedrag vastlegden zijn omgedraaid; in het fichebestand staat wat een volgende beslissing moet verzetten om het te verbreden.\n\nE\u00e9n test erbij voor het vragen: vragen schrijft nog niets, annuleren laat alles staan, bevestigen zet alle eindtermen op afwezig. Suite en PHPStan groen.\n\nDe andere drie beslissingen komen apart: de paginakop en de meterkleur in \u00e9\u00e9n voorstel, en `control-verify-action` in die repo zelf.\n",
+            "branch": "workbench/afwezig-venster",
+            "title": "Overal afwezig vraagt in een venster van de app, en de leerlingfiche is voor beheerders"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921165208-ee8f30"
+}

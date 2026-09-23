@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding verwijderen-via-de-api. Fixes #602. Replaces #756, which made the answer truthful\nwhile keeping the door; Shane's call is the other one: if we do not delete, we should not offer the\nendpoint either.\n\nDeleting through the partner API was switched off on 6 February 2025 at the customer's request, and\nthe line that did it is still in the file as a comment. The answer was never changed with it, so the\ncall kept returning \"the vehicle is succesfully deleted\" while the vehicle stayed exactly where it\nwas. A partner reading that believes a car is gone from Stocklist when it is still published.\n\nThe route is gone, and the controller method with it. `vehicle/{id}` still matches the GET catch-all\nat the end of the group, so a DELETE now answers **405 Method Not Allowed** rather than 404. That is\nwhat \"we do not offer this\" looks like over HTTP, and it needs no code of its own. Removing vehicles\nhappens in Stocklist itself.\n\n**Who this breaks, measured rather than assumed.** Over 17 to 22 September 2026 this was the\nmost-called action of the whole partner API: 4323 calls, 4301 answered \"already deleted\" (true) and\n22 with the sentence that was not. All of them come from a single IP, 82.148.219.135, which reverse\nresolves to `outbound.dcb.hexon-is.nl`, user agent \"Doorlinken Voorraad\". So this is one integration,\nHexon, acting for twelve dealers, and telling them is one message rather than twelve. The 4301 honest\nanswers break too, and that is the part worth saying out loud before this merges.\n\nThe baseline loses four entries that described the removed method, 924 to 920.\n\nRun against the routes as they stand on main, the test fails on \"De partner-API hoort geen\nverwijderdeur meer te hebben.\"\n",
+            "branch": "workbench/fix/we-do-not-offer-what-we-do-not-do",
+            "title": "We do not offer what we do not do: the API delete is gone"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922114534-1e5f13"
+}

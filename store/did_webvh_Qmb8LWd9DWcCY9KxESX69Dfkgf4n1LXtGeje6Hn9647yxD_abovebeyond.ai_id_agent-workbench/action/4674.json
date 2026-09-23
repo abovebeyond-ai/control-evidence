@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane, 21 September 2026: \"handelaar gekoppeld aan dealer, mag enkel bieden op wagens van garage waar ze aan gekoppeld zijn, dus die moeten ook geen dagmail hebben van andere dealers.\"\n\n`bidding_type` has been written on every bidding since the beginning and read by nothing that decides who may bid. The daily mail put all running biddings of the platform in front of a merchant, and \u2014 contrary to what the earlier finding claimed \u2014 **neither way of placing a bid compared the bidder with the selling dealer**. The bidding link is an open page carrying bidder and type in the URL, so a merchant of garage A could bid on a car of garage B. That second half was written down without being checked; it is corrected here and carries its own finding.\n\nThe circle now lives in one place, `ExportVehicle::openTo`, and is asked in three: the selection that feeds the screen and the daily mail, the form on the vehicle, and the open link. \"Everyone\" keeps the meaning R B1-1.8 gives it \u2014 the platform's dealers plus the **selling** dealer's own merchants \u2014 and the selling dealer always reaches his own car. Whoever falls outside still sees the car and reads one line saying why no bid can be placed: an old link from an earlier mail should not land on an error page.\n\nThe daily mail follows from the decision. What would be left for a merchant is his own garage's biddings, and those already reach him in his dealer's creation mail, so he gets no daily mail at all. That is why \"one mail per day\" no longer applies to a merchant: the creation mail skips whoever carries that flag, so without this second half the three merchants who had it on would have fallen silent. The switch also leaves the merchant form, because a control that does nothing is worse than one that is not there. Dealers with the bidding module keep the daily mail unchanged; in everyday speech they are traders too, but on the platform they are dealers and they follow the whole offer.\n\nThe mirror half is closed as well: what another dealer opened only for his own merchants no longer shows in a dealer's list, his own car does.\n\nNothing says whether this was ever used. Six of the 710 biddings carry a type other than \"everyone\" and all six have ended, so the damage is probably nil; the reason the hole stayed open is that nobody looked, not that it was small.\n\nFixes bevinding bieden-buiten-de-eigen-garage\nFixes bevinding dagmail-handelaren-hele-platform\nFixes #614\n",
+            "branch": "workbench/fix/a-merchant-bids-only-in-his-own-garage",
+            "title": "A merchant bids only in his own garage"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921101246-56c199"
+}

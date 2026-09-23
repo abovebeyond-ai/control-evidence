@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The dealer switches stopped saving again after the extraction in #747, and the reason is the\nload order, not the logic.\n\n`app.js` is loaded as a plain script halfway down the layout; the data element the module reads\nsits in `@section('scripts')`, which the layout yields more than a hundred lines lower. So at the\nmoment `initDealerSwitches()` runs, `document.querySelector('[data-dealer-switches]')` returns\nnull. The function read that element once, up front, and returned early on null: no handler was\nattached at all, for any row, filtered or not.\n\nThe fix is to look the element up per event instead of once at binding time. The listeners are now\nattached unconditionally, and the url template, the two questions and the failure message are read\nwhen somebody actually flips a switch.\n\nThe test suite added in #747 did not catch this because every case built the page first and called\n`initDealerSwitches()` after. The new case does it in the real order: init on an empty document,\nthen render the page, then flip. It fails against the code currently on main and passes here.\n",
+            "branch": "workbench/fix/the-switches-bind-before-their-data",
+            "title": "The switches bind before their data is on the page"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922092044-b45c96"
+}

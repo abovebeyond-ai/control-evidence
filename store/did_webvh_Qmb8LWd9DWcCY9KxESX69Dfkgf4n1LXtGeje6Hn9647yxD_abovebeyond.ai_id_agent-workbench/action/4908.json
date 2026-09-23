@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7854230bd364b6ab56db814c531d414aac98a4e8",
+            "branch": "workbench/fix/a-garbled-showroom-link-is-not-found",
+            "files_sha256": "2fce66344c63f44cf965ab61d634051c43694d3a9ee286c9d01146fb6b0abc37",
+            "message": "A garbled showroom link is not found"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921172048-423dc5"
+}

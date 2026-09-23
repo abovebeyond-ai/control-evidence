@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b6d0b4a95d86b2c5f84fa08501ebbb26963d1100",
+            "branch": "workbench/twee-fouten-uit-nightwatch",
+            "files_sha256": "3f729de14805901f9b4e1b445103f5c2dd7f7f515cf9ecb85aaa1657268e9151",
+            "message": "Twee fouten uit Nightwatch: de printkleur van het feedbackrapport en een scorepad zonder leerling"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921171231-96891d"
+}

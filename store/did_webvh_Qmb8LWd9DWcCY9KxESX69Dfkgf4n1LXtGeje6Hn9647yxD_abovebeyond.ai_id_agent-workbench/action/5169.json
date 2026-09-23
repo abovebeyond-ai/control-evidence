@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The other half of the module switch: the endpoint itself was carried by no test at all.\n\n`DealerAuthorizationTest` proves a dealer cannot grant himself the paid module flags through his own sheet. Nothing proved that the administrator's route actually sets them, or that somebody without the rights is turned away \u2014 and that is what an onboarding depends on.\n\nFour cases: support turns both modules on; off again, with one switch touching one flag and leaving the other alone; a user without the rights writes nothing; and an id that points at no dealer changes nothing and does not fall over (this route takes its id from a base64 in the URL, so rubbish arrives sooner or later).\n\nVerified to bite: removing the `module_1` branch from the controller fails two of the four.\n\n**To be clear about what this does not do.** It would not have caught what Ilse ran into on 21 and 22 September. That lived entirely in the browser \u2014 a switch on a filtered row had lost its handler (#745) \u2014 and the endpoint was fine the whole time. These are two halves and each needs its own guard, which is also why the docblock says so.\n\nAlso honest about the guard in #745: it reads the source, not the browser. It catches a return to direct binding on any autofilter screen, which is the regression that caused this, but it clicks nothing. A real browser test would cover what neither of these does; there is none.\n\n`R P2-1.10` extended. Full suite green.\n",
+            "branch": "workbench/test/the-module-switch-is-an-admin-door",
+            "title": "The module switch is an admin door"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922084550-0b3fc0"
+}

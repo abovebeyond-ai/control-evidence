@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Ilse could not switch a dealer's modules on. Twice, two days running, at the start of an onboarding: Garage Verbeke on 21 September, Garage Du Centre on 22 September. She ticks module 1 and 2 and nothing is saved. No confirmation dialog, no request in the network tab, nothing in the console, nothing in Nightwatch, nothing in the log.\n\n`x-ui.autofilter` fetches the filtered list and **replaces the rows in the table** with new nodes. The switches were bound with `$(\".module_1_switch\").on('change', ...)` to the elements that existed at page load. After a search those are gone, so there is no handler at all.\n\n**Why it looked random.** The search term is kept in the session, so a plain refresh makes the server render the filtered rows itself and the binding does work. That is Ilse's \"it worked in the end\" of the 21st: nothing had been repaired, she had reloaded.\n\n**What it took to find.** Five explanations were ruled out by reading: the URL (`route()` keeps `::id`, the replace works), the controller (it just writes), `custom.ask` and `_confirm` (signature and callbacks are correct), an expired CSRF token (Shane had it straight after loading), and a separate phone rendering (there is none). What turned it was not more code but one observation from Shane \u2014 no dialog *and* no request \u2014 which put it before the send, and then it was visible that both he and Ilse had searched first.\n\nThe three switches now hang delegated on the document. A failed save puts the tick back and says \"Opslaan is mislukt\": a tick that stays on while nothing was stored is exactly how you believe you gave a dealer access he does not have.\n\n**The guard found a second one.** `AFilteredRowKeepsItsSwitchesTest` checks every screen with an autofilter, not just the one where it bit, and immediately turned up the \"delivered\" switch on the won biddings \u2014 the same latent bug, never reported. Fixed with it (and a stray `console.log('loaded')` removed).\n\nNew rule `R P2-1.10`; finding `een-gefilterde-rij-verloor-haar-schakelaars`.\n\nFull suite green, build green.\n\n**Already done, outside this PR**: Garage Du Centre (id 576) has module 1 and 2 set directly in the database, at Shane's request, so this morning's onboarding was not blocked.\n",
+            "branch": "workbench/fix/a-filtered-row-keeps-its-switches",
+            "title": "A filtered row keeps its switches"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922082708-be9bf2"
+}

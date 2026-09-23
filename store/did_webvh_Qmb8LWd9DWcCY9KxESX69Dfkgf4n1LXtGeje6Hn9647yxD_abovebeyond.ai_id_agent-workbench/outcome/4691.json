@@ -1,0 +1,16 @@
+{
+    "action": "53e32129b292aa407496cf2a04d12580",
+    "effect": {
+        "detail": {
+            "base": "cf83d70ede63ad0b71eec57f1d474884899b99c7",
+            "branch": "workbench/docs/two-decisions-written-down",
+            "commit": "917c05633c81d9ac112868a9ef3feb27aacabf2f",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4689,
+    "verdict": "ALLOW"
+}

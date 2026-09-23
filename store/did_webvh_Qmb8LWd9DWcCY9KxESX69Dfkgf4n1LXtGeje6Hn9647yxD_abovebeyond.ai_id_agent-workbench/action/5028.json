@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8b668cf4b7cca5838eb03809f631647e7ba10bd8",
+            "branch": "workbench/stilte-wordt-een-logregel",
+            "files_sha256": "60f40b0a6a635d2aea226d48ab498eb010fbfa4e9c75258d325a0c29c801a66f",
+            "message": "Stilte wordt een logregel: zeven plekken waar een fout onzichtbaar bleef"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921195054-f96449"
+}

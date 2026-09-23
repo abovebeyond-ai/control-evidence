@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e4e9e23a6ab3238270897cc6c02dd6c28347f09c",
+            "branch": "workbench/de-legende-op-het-rapport",
+            "files_sha256": "df49fda1ec7624ac2e215cf5dde368c4778ce1575ed91f602c9f0eeb3c0c0229",
+            "message": "De legende op het rapport dat naar huis gaat"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922115712-9620ec"
+}

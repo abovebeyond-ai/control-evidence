@@ -1,0 +1,16 @@
+{
+    "action": "426698d06cce9752e384e0d51af44fd2",
+    "effect": {
+        "detail": {
+            "base": "a5eb741bd003a9adcb2eb27b008f805ad6b1b4e4",
+            "branch": "workbench/fix/a-typed-price-wins-on-every-screen",
+            "commit": "12d04ba0f21464215222f35149d6d5549b5b1bcb",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5346,
+    "verdict": "ALLOW"
+}

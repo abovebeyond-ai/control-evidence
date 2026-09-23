@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2d775927f8d3601bfb0bc47349e79b2f37d71d80",
+            "branch": "workbench/de-fout-die-de-gebruiker-leest",
+            "files_sha256": "f1a01a655ffb49e07341be6a3af608c8b5f1bb1b2aabad33d70e57a029e72f38",
+            "message": "Een foutmelding is voor de gebruiker of voor het log, niet voor beide"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921210709-fe6662"
+}

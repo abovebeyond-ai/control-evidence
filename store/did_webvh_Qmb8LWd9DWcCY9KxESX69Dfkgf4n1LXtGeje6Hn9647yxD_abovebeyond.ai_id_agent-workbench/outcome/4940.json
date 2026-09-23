@@ -1,0 +1,16 @@
+{
+    "action": "0656901e0788672d06bf29ce803250c0",
+    "effect": {
+        "detail": {
+            "base": "fdadbac301c35ca9af80b734aec7914f452ca35d",
+            "branch": "workbench/fix/realgarant-under-the-seal",
+            "commit": "5d00f4160b0641f7cc1c320fe1414d834bbc6407",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4938,
+    "verdict": "ALLOW"
+}

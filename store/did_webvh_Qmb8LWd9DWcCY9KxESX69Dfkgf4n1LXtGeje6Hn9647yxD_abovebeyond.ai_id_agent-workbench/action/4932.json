@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "Verify action",
+                    "url": "https://github.com/abovebeyond-ai/control-verify-action"
+                }
+            ]
+        },
+        "resource": "portal:control"
+    },
+    "run": "workbench-20260921174651-fc17fc"
+}

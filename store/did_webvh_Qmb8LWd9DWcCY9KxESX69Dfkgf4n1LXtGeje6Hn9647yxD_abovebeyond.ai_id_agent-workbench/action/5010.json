@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "143777da92f309fb65acd5840391ba8e1a91971f",
+            "branch": "workbench/fix/the-reset-covers-every-second-factor",
+            "files_sha256": "587e545129468b742d7c93f38c3d131c61aab07c2f57faebe696f975db7d8190",
+            "message": "The reset covers every second factor"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921192956-ac97f3"
+}

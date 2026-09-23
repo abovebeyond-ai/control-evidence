@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee beslissingen uit dezelfde ronde, allebei app-breed en zonder gedrag.\n\n**Geen gespatieerd kapitaal boven een titel.** De bovenregel van elke pagina stond in `text-xs uppercase tracking-wide` (\"EVALUATIE BEWERKEN, 21/09/2026\"). De huisgids noemt gespatieerd kapitaal met naam als wat een standaardlabel niet moet zijn. Nu stille kleine letters (`text-sm ink-500`), dezelfde stijl als de regel onder de titel.\n\n**E\u00e9n meterkleur.** De dashboards tekenden de bewegende balk in `primary-400`, de ringen op de leerlingpagina in `primary-500`, omdat 400 op wit 2,9:1 haalt en WCAG AA 3:1 vraagt van een grafiek die betekenis draagt. Zes plekken naar 500; de tabel in `docs/design-system.md` zegt nu 500, met de reden erbij.\n\n**Meegenomen.** De bewaarknop op het leerlingformulier stond op `bg-primary-500 hover:bg-primary-400`, dus lichter bij hover in plaats van donkerder. Nu 600 en 700, zoals elke andere knop.\n\nWat ik niet meenam: de kolomkoppen van de tabellen staan ook in gespatieerd kapitaal. Dat is elke tabel in de app en een eigen beslissing; zeg het als je die ook wil.\n\nSuite en PHPStan groen.\n",
+            "branch": "workbench/kop-en-meter",
+            "title": "Geen gespatieerd kapitaal boven een titel, en \u00e9\u00e9n meterkleur die op wit standhoudt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921165245-c28b3c"
+}

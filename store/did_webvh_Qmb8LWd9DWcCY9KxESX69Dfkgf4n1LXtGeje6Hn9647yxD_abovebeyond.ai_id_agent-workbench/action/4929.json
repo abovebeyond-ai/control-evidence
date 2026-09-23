@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "29e9e0e7761a514b4be9f764b775045891fed91e",
+            "branch": "workbench/lockfile",
+            "files_sha256": "ad479a5e200f4cc49c2e15acc80a610b409d4f3cd353159a30dd143e2e87feca",
+            "message": "Make npm ci work again, and let react and react-dom move together"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20260921174636-e1ab73"
+}

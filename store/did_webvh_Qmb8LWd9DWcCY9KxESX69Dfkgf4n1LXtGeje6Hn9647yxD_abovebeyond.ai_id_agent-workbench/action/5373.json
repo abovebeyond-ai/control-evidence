@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op het gedrukte rapport stond alles wat vet is in een **serif**, naast een sans voor de rest: de naam van de leerling, en de titel van elk onderdeel. Niets in de opmaak vroeg daarom.\n\n## Waarom\n\ndompdf herleidt precies twee gewichten, 400 en 700. Elk ander getal vindt geen gezicht in de familie en valt door naar het standaardlettertype in vet, en dat is Times. Gemeten:\n\n```\nfont-weight: normal  -> Helvetica\nfont-weight: 400     -> Helvetica\nfont-weight: 500     -> Times-Bold\nfont-weight: 600     -> Times-Bold\nfont-weight: 700     -> Helvetica-Bold\nfont-weight: bold    -> Helvetica-Bold\nfont-weight: 800     -> Times-Bold\n```\n\nDe herwerking van het rapport zette de naam op 18pt/600 en de onderdeeltitel op 10.5pt/600. Bedoeld als semibold, geleverd als Times Bold. Het viel niet op omdat de opmaak nergens over een serif spreekt en dompdf niets meldt; de terugval is stil.\n\nHet verklaart ook een eerdere reactie dat de onderdeeltitel te vet en te donker stond tegenover de rest. Dat was dit, niet de grootte.\n\n## De wijziging\n\nTwee waarden, `600` naar `bold`, in `header.blade.php` en `div-section.blade.php`. Het resultaat is lichter dan wat er stond, niet zwaarder, want Times Bold is zwarter dan Helvetica Bold.\n\n## De test\n\n`test_the_printed_report_carries_no_font_nobody_asked_for` rendert het rapport en kijkt in de PDF zelf: `/Helvetica` moet erin staan, `/Times` niet. Dat is de opmaak niet op zijn woord geloven maar nakijken wat er werkelijk ingebed wordt, dus een toekomstige stylesheet die opnieuw een getal kiest valt hier om. Nagekeken met een mutatie dat de test bijt: met `600` terug op de naam faalt hij met de reden erin.\n\nEn in `docs/design-system.md` onder Type staat nu dat er op papier twee gewichten zijn en geen getallen.\n",
+            "branch": "workbench/vet-op-papier-is-vet",
+            "title": "Vet op papier is vet, geen serif"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922144756-70015c"
+}

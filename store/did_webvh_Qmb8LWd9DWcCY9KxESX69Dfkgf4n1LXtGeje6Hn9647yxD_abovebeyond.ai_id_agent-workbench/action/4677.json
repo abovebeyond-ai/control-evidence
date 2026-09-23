@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abed169bf14e06754656f16060a21c2fbab401ff",
+            "branch": "workbench/fix/the-showroom-screen-may-ask",
+            "files_sha256": "2db1f47357e2a6c322749ccb2b9033016806da004147094267b838d721704249",
+            "message": "The showroom screen may ask"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921101929-7cd771"
+}

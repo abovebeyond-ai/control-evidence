@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "18abe83086e8f40ee2b42ddf91916ebcff35e715",
+            "branch": "workbench/versie-datum",
+            "files_sha256": "6c7578ae3a9b26b51e2c8b17751cd086c45099b3cac8104f071a444d241495eb",
+            "message": "De versie is een datum, onderaan het menu"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921084317-a27dda"
+}

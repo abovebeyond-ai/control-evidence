@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding verwijderen-via-de-api. Fixes #602.\n\nDeleting through the partner API was switched off on 6 February 2025 at the customer's request, and\nthe line that did it is still in the file as a comment. The answer was not changed with it: the call\nkept returning \"the vehicle is succesfully deleted\" while the vehicle stayed exactly where it was. A\npartner reading that believes a car is gone from Stocklist when it is still published.\n\nThis makes the answer true rather than switching deletion back on. That was deliberately disabled and\nis not ours to reverse. The status stays 200, because that was never the lie: 200 says the request was\nhandled, not that a vehicle was removed. Only the sentence changes, to \"deleting through the API is\ndisabled; the vehicle is unchanged\". \"not found\" and \"already deleted\" were both true and are\nuntouched.\n\nThe apidoc above the endpoint promised the opposite of what happens, including a warning that images\nand options would be deleted as well, so it moves with the code.\n\n**How much this was costing, measured rather than assumed.** Over 17 to 22 September 2026 this is the\nmost-called action of the whole partner API:\n\n| answer | calls |\n|---|---|\n| `the vehicle is already deleted` | 4301 |\n| `the vehicle is succesfully deleted` | 22 |\n\nSo roughly four or five vehicles a day were reported as deleted to a partner while they stayed in\nStocklist. The other 4301 were vehicles a dealer had already removed in the application itself, where\nthe answer was correct.\n\nRemoving the route was the other option and it is not free: that feed calls it 4323 times in five\ndays, so it would turn into a wall of 404s for twelve dealers. Worth doing one day, with the partner\ntold first, not as a side effect of a correctness fix.\n\nRun against the controller as it stands on main, the test fails on \"Het eindpunt verwijdert niets en\nmag dat niet beweren.\"\n",
+            "branch": "workbench/fix/the-delete-endpoint-says-what-it-does",
+            "title": "The delete endpoint says what it does"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922113500-27a9d6"
+}

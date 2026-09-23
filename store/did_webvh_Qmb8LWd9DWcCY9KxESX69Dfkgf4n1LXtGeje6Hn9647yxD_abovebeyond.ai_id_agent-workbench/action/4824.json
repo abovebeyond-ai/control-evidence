@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Live on production while this was written: one dealer, five times between 15:17 and 15:23.\n\n```\nTypeError: League\\Flysystem\\Filesystem::has(): Argument #1 ($location) must be of type string, null given\nFlexLeaseService.php:181  ->  AfficheController.php:177  ->  getFlexleasePdfPricelist()\n```\n\nThe poster looks its photo up with `exists($path)`, where `$path` comes from `stocklist_photo?->first()?->trans_path ?? ...->path`. A vehicle without a platform photo makes that null, Flysystem wants a string, and the TypeError comes out of `AfficheController` and takes the whole poster with it. Nothing reaches the printer. The branch right below it, the one that falls back to the sheet photo, had its `filled()` check already; this one was forgotten.\n\nThe lookup is now one method, `photoFor`: candidates in order, empty ones skipped instead of handed over, and a bucket that cannot answer is reported rather than fatal. A missing photo is not a reason to refuse a poster \u2014 it goes without a picture.\n\nThe same shape sat in `IntegrationChecks`: `$photo->trans_path ?: $photo->path` on two columns that may both be empty. Not seen in the field, but waiting.\n\n**Third time today for the same defect.** This morning it was the daily mail, where four candidates were walked and one null stopped the round for every dealer (`MailPhoto::first`). A path to a photo is nullable by default in this platform, so every `Storage::exists()` on one has to assume it. The finding says plainly that one shared gate would enforce that and twenty hand-checked call sites do not; that is the next sensible step, not this PR.\n\nThe test pins the rule rather than the symptom: the bucket counts what it was asked, and for a vehicle without photos that has to be nothing. Verified to bite \u2014 with the guard removed it fails on exactly that assertion.\n\nThe PHPStan baseline shrank with it: one entry gone, one count from 6 to 2.\n\nFixes bevinding een-affiche-zonder-foto-brak\n",
+            "branch": "workbench/fix/an-affiche-without-a-photo-still-prints",
+            "title": "An affiche without a photo still prints"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921150120-151e44"
+}

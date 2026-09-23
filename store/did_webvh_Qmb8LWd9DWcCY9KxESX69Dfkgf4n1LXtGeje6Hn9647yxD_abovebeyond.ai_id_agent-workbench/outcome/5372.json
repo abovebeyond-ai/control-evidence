@@ -1,0 +1,16 @@
+{
+    "action": "06c440a20f1b7a8991cdacd12e1999e3",
+    "effect": {
+        "detail": {
+            "base": "c73626abe03a3ead392be2b2620915bd7dcc9a2a",
+            "branch": "workbench/vet-op-papier-is-vet",
+            "commit": "70ddd48e145a5002962c452ea9cedfa49078b438",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5370,
+    "verdict": "ALLOW"
+}

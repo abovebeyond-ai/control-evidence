@@ -1,0 +1,16 @@
+{
+    "action": "ac66ff522f6f3a79ce4b51c1fa2cdeca",
+    "effect": {
+        "detail": {
+            "base": "77319b7d25dc2cc0d46431c1821f9195ef8b8cca",
+            "branch": "workbench/ui/the-buybox-reaches-its-bottom",
+            "commit": "3b4bbda76db321e1c97135746b6682c440dd6f27",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5121,
+    "verdict": "ALLOW"
+}

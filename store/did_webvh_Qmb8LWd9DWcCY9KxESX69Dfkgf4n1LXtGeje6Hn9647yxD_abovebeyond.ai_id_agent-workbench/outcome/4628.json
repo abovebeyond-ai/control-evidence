@@ -1,0 +1,16 @@
+{
+    "action": "1519a8fbf36226412c4b047a9d54a42c",
+    "effect": {
+        "detail": {
+            "base": "735b3bff5a427c3ef82ebcae0e7780366170e18e",
+            "branch": "workbench/fix/saving-a-car-available-in-months",
+            "commit": "a7ac00f980aecb1e6caac80ebdfa892b836da120",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4626,
+    "verdict": "ALLOW"
+}

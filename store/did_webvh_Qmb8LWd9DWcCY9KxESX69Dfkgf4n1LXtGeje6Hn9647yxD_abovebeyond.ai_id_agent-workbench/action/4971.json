@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De opvolger van #104, dat de verkeerde oorzaak vastlegde.\n\nDeze check stond vandaag twee keer rood en de pin naar `/id/did.json` was toen de oplossing, op de lezing dat de standaard het verkeerde document was. Het log van die twee runs zegt iets anders:\n\n```\nREFUSE Get \".../.well-known/did.json\": tls: failed to verify certificate:\nx509: certificate is valid for *.netlify.app, netlify.app, not abovebeyond.ai\nREFUSE Get \".../.well-known/did.json\": EOF\n```\n\nTwee transportfouten. Beide documenten verifi\u00ebren dezelfde records, nagespeeld met `relying` v0.20.1 tegen de evidence van #109: allebei `holds ... ALLOW by ...#agent-workbench`.\n\nDe verifier probeert een mislukte ophaalactie nu vier keer over een halve minuut in plaats van ze meteen een weigering te noemen ([control-verify-action#1](https://github.com/abovebeyond-ai/control-verify-action/pull/1), `v1` verzet naar 2a58d0d). Er blijft dus niets over om met een pin omheen te werken, en een pin die een oorzaak noemt die het nooit was is erger dan geen pin: de volgende lezer vertrouwt hem. Het commentaar in de workflow vertelt nu wat er echt gebeurde.\n\n**Getoetst waar het over gaat.** De evidence-check op deze pull request draait met de nieuwe `v1` en met het standaarddocument. Groen hier is het bewijs; rood zou zeggen dat ik het opnieuw mis heb.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/de-pin-mag-weg",
+            "title": "De pin op het DID-document mag weg: de fout zat in het ophalen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921181346-e6e851"
+}

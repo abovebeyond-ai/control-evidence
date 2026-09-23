@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "df5287f4521a1a7151ce1df7ada1e7efac7e64cf",
+            "branch": "workbench/feat/a-page-that-expires-says-who-it-happened-to",
+            "files_sha256": "1a5a1695cc8546e9eede767606a9832f73c673f9cb55c22c5fc7d227f6a8aef8",
+            "message": "A page that expires says who it happened to"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921085723-36a578"
+}

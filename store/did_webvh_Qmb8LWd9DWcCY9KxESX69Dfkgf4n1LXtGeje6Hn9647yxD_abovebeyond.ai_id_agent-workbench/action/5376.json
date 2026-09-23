@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fd4c82dc79e5fa6c5dc7b11e2e557520c7862e1d",
+            "branch": "workbench/wat-niet-per-leerling-verandert",
+            "files_sha256": "76ad6c3e3c685cacb67e5ffbe4716954bd14d873f5bbdcc2d14451ca7c192864",
+            "message": "Niet per leerling vragen wat voor de hele klas hetzelfde is"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922152245-fcf356"
+}

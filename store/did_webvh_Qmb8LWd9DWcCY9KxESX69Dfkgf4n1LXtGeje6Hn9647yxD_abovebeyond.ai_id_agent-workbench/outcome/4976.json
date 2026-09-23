@@ -1,0 +1,16 @@
+{
+    "action": "34e3b1d07a536e89be8b116bc12cd6d8",
+    "effect": {
+        "detail": {
+            "base": "ba9bdbab24a6902e7c87b7f310eb12bf7cd8e925",
+            "branch": "workbench/kolomkoppen-in-normale-letters",
+            "commit": "fa23e0697ff106b7f13382b1e70fc9b11bab93e3",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4974,
+    "verdict": "ALLOW"
+}

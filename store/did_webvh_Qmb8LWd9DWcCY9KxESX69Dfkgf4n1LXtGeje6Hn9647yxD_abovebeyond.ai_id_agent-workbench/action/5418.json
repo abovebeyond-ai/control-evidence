@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dde81a144e1a1fadc7a7a4ec1b89e290f769d7ea",
+            "branch": "workbench/de-oude-jaren-vastleggen",
+            "files_sha256": "451d5d3a24b2d4c4963e78e6abb992a07d99051a8675e67e2d917697fb5780a3",
+            "message": "De oude jaren vastleggen zolang de oude code er is"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923060908-53bbf9"
+}

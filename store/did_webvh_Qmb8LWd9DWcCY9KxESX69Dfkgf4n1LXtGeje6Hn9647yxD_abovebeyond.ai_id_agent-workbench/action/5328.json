@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e598ecfc260289bf1bc15835813bd129b39a3eca",
+            "branch": "workbench/fix/a-sale-without-a-price-is-no-reference",
+            "files_sha256": "5ffe1c365797e593152b8c73e3f51e03e34f9bc6e859b0451238f310c5778bd6",
+            "message": "A sale without a price is no market reference"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922141836-1a49f1"
+}

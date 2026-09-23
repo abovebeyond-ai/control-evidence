@@ -1,0 +1,16 @@
+{
+    "action": "1f44a31cbddeb80b756cc50440f62fce",
+    "effect": {
+        "detail": {
+            "base": "578242aa89a07723aa521b7001628ebe3192ec89",
+            "branch": "workbench/fix/the-badge-follows-the-release",
+            "commit": "538fe4b2c3783999af4291e84ee381c29e2794a6",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4857,
+    "verdict": "ALLOW"
+}

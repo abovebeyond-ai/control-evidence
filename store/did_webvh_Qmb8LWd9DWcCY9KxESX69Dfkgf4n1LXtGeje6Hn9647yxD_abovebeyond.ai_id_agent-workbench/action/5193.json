@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Second attempt at the fix from #748. That pull request was merged but changed no files at all, so\nthe switches on production still ran the old code. This one carries the change as a commit.\n\nThe bug itself: `app.js` is loaded as a plain script halfway down the layout, while the data\nelement the module reads sits in `@section('scripts')`, which the layout yields more than a\nhundred lines lower. At the moment `initDealerSwitches()` runs,\n`document.querySelector('[data-dealer-switches]')` returns null. The function read that element\nonce, up front, and returned early on null, so no handler was attached at all, for any row.\n\nThe fix looks the element up per event instead of once at binding time. The listeners are now\nattached unconditionally, and the url template, the two questions and the failure message are read\nwhen somebody actually flips a switch.\n\nThe suite added in #747 did not catch this because every case built the page first and called\n`initDealerSwitches()` after. The new case does it in the real order: init on an empty document,\nthen render the page, then flip. Run against the code currently on main it fails with\n\"expected vi.fn() to be called at least once\".\n",
+            "branch": "workbench/fix/the-switches-bind-before-their-data-2",
+            "title": "The switches bind before their data is on the page"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922093132-45b15e"
+}

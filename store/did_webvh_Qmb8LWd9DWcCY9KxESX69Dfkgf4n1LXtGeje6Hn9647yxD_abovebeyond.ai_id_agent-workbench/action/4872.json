@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b8959db43487a09e69191f417bf744aa1dc26a3a",
+            "branch": "workbench/fix/the-more-menu-stays-on-screen",
+            "files_sha256": "63b8c5b94a80125c29ba3d00c5a0ed18ab6c715ac125e82b2aebd8c66f45c330",
+            "message": "The more menu stays on screen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921165142-51f13d"
+}

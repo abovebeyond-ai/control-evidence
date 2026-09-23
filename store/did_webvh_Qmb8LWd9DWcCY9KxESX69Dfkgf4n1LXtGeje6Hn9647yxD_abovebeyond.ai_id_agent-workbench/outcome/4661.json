@@ -1,0 +1,16 @@
+{
+    "action": "eec4630ce2754f2ca33b833099b871d3",
+    "effect": {
+        "detail": {
+            "base": "abed169bf14e06754656f16060a21c2fbab401ff",
+            "branch": "workbench/fix/the-security-section-keeps-its-place",
+            "commit": "4570736d8c381def0ffe8fc3faf20b23dcf5298c",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4659,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane: \"we zitten nog steeds op 2.0.0, zo gaan onze versies nooit evolueren.\" Measured: between 15 and 21 September 2026 there were **99 merges** and one tag, `v2.0.0`, published on 16 September. The badge in the README is honest about the last release; nothing ever makes a release.\n\nHalf of the machinery already existed. `release-badge.yml` rewrites that badge the moment a release is published, and has been waiting since it was written. The missing half is this workflow.\n\nMerging to main **is** deploying here \u2014 Forge pulls within minutes and there is no separate release step \u2014 so the honest moment to hand out a version is the merge, and the honest scheme is the date. CalVer, not semver: semver promises something about compatibility, and a closed web app with one deployment has nobody to promise it to, while a date cannot drift from reality. Several deploys on one day get a counter (`v2026.09.21`, `v2026.09.21.2`).\n\nThe release notes list the pull requests since the previous version with their titles, taken from the merge commits: `- #721 An affiche without a photo still prints`.\n\nTwo things the test pins, because both are the kind of mistake noticed late:\n\n- The badge workflow pushes to main, which would trigger this one, which would publish a release, which would trigger the badge workflow. A badge commit is therefore skipped here. Without that guard the two hand each other versions until someone looks.\n- `concurrency` with `cancel-in-progress: false`: two merges within a minute would otherwise both count today's tags, see the same number and push the same tag. The second waits rather than being thrown away.\n\nThis does not replace `/.well-known/build.json` (R P1-1.22), which carries the exact commit and answers \"what is running\". The tag is the readable handle beside it, a number a person can say out loud.\n\nNew rule R P1-1.23.\n",
+            "branch": "workbench/feat/every-deploy-is-a-version",
+            "title": "Every deploy is a version"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921153425-b39a3c"
+}

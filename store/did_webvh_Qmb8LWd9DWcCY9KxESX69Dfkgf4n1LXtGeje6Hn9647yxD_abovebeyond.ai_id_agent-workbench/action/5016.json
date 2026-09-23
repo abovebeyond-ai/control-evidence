@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d3a345a1ec19c70b955e79d57613dbdf8d8229b1",
+            "branch": "workbench/de-evaluatietabel-in-twee-queries",
+            "files_sha256": "3875ee1c8c8da63df4b0616cb647885cb251ea294b983d90aef518f9fe81d113",
+            "message": "De evaluatietabel vraagt haar scores in \u00e9\u00e9n keer op"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921193706-306310"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "764b7f240667f097fb2ee01efe60bebb",
+    "effect": {
+        "detail": {
+            "base": "2cd82e12f5bf756559a483841c98505ef17797dd",
+            "branch": "workbench/fix/the-switches-bind-before-their-data",
+            "commit": "310d1e7ee164e33620dddee7100dbaf610fba098",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5184,
+    "verdict": "ALLOW"
+}

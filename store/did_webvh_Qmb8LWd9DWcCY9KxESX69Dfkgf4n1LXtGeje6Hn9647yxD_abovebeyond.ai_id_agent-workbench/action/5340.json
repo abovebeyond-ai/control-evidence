@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e598ecfc260289bf1bc15835813bd129b39a3eca",
+            "branch": "workbench/fix/the-damage-choice-arrives-2",
+            "files_sha256": "e741a31268521971a8b7044a28a8a66006969e65b082b8038cf35e1515b1faa7",
+            "message": "The damage choice arrives, and does not undo the one from the overview"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922142511-db93e9"
+}

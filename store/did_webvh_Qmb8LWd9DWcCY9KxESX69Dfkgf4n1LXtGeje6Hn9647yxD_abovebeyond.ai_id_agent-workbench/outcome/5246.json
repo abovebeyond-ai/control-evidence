@@ -1,0 +1,16 @@
+{
+    "action": "fcc87c90a896b2235acca94178cb6287",
+    "effect": {
+        "detail": {
+            "base": "cc395ad699e88b3ab6b1bbeaafea215b2da0cbcc",
+            "branch": "workbench/the-surfaces",
+            "commit": "42481141ea391870f55c6dd2b0db6ba4547b8949",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5244,
+    "verdict": "ALLOW"
+}

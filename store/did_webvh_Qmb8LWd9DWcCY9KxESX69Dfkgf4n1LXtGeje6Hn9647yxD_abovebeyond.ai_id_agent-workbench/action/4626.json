@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "735b3bff5a427c3ef82ebcae0e7780366170e18e",
+            "branch": "workbench/fix/saving-a-car-available-in-months",
+            "files_sha256": "fd32e98085f472c15a2c737b12d3e307e8216c0d7ac0fcb3555226778d8b2f20",
+            "message": "Saving a car available in months"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921093242-fa3938"
+}

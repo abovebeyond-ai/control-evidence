@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Aan de verwijderknop van de paginakop hing een `confirm()` van de browser. Die staat buiten de pagina: hij negeert de huisstijl, is op een telefoon een systeemvenster zonder context, en met een verdwaalde Enter is hij weggeklikt zonder dat je las wat er stond. Voor de ene handeling die je niet terug kunt draaien is dat de verkeerde deur.\n\nNu een venster van de app. De vraag is de titel, de rode knop herhaalt het werkwoord, en Annuleren staat er stil naast: onder elkaar op een telefoon, naast elkaar zodra het past, met de handeling rechts.\n\n**E\u00e9n plek, zeven schermen.** De knop komt uit `components/layout/page`, dus dit venster geldt meteen voor project, evaluatie, periode, leerlingengroep, eindtermencluster, complementair vak en levensbeschouwing. Dat was de reden om hier te beginnen in plaats van bij een van de losse knoppen.\n\n**Elf andere confirms blijven staan**, elk met hun eigen formulier in plaats van de gedeelde knop: de eindterm bewerken, een subvak of complementair vak ontkoppelen van een curriculum, een eindterm uit een cluster halen (twee views), een aanbod verwijderen, zijn klascoach, een rij van een leerlingengroep, een schooljaar, een schoolregel, en in Vue een feedbackregel op rapporten voorbereiden. Die staan nu met naam in `docs/design-system.md` als bekende schuld, zodat er niets vergeten wordt.\n\n**Getoetst.** Een test die op het periodescherm nakijkt dat er geen `confirm(` meer in de pagina staat en dat de vraag met haar venster er wel staat. `php artisan test --parallel`: 1042 groen, alleen BuildStampTest faalt zoals in elke worktree zonder Vite-build. PHPStan schoon, Pint schoon. In de browser nagekeken met het venster open, op 390 px en op 1280 px.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/de-vraag-in-een-venster",
+            "title": "De vraag voor verwijderen staat in een venster van de app"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921191447-4f1402"
+}

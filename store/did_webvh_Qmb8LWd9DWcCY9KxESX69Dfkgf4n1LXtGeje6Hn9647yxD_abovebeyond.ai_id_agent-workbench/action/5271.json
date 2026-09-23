@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e4e9e23a6ab3238270897cc6c02dd6c28347f09c",
+            "branch": "workbench/het-rapport-als-blad",
+            "files_sha256": "213f7d76dffe60e5d530b9d0efa9d9caa46368dec84731aafc292503b950339c",
+            "message": "Het rapport als blad, niet als raster van dozen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922120858-de8e41"
+}

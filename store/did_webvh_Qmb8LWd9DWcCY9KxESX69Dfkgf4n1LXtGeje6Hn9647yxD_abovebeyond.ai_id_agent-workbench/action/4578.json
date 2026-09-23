@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "63c24900acbcdc5c18c77076b8010525237b16ae",
+            "branch": "workbench/fix/one-vehicle-without-a-photo-stopped-every-daily-mail",
+            "files_sha256": "41fb30cd156869e21060daf2b3f4f158e582ea260ae514b13240c69fc048e30d",
+            "message": "One vehicle without a photo name stopped every daily mail"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921082519-da825c"
+}

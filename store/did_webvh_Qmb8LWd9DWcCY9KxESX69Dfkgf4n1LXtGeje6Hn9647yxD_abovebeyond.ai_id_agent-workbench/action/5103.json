@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "89d0cd21799ce50f288227a171a659cbc6dca52b",
+            "branch": "workbench/feat/deploy-steps-as-code",
+            "files_sha256": "cd7a5709ed6be6bab6264acd2cfc3e28a4ff7d35fa813654d8e1833cc57a4429",
+            "message": "The deploy steps are code"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922054644-b7f088"
+}

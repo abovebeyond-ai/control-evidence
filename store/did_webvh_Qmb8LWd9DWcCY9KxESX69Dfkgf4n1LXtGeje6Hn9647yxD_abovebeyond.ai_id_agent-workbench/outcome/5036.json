@@ -1,0 +1,16 @@
+{
+    "action": "b969079d77065ee0d3f7f1ff965da11c",
+    "effect": {
+        "detail": {
+            "base": "0e51ffae63df07c4b60ef60118adbcdf76b323e8",
+            "branch": "workbench/het-regelboek-begint",
+            "commit": "c5e85cefd967ab2c21a61dea1e311e91ccd58f1b",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5034,
+    "verdict": "ALLOW"
+}

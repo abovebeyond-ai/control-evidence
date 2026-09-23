@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6ef3c75642c213fba93e3379206da8cb3a2208d9",
+            "branch": "workbench/project-einddatum",
+            "files_sha256": "39405249124eb6650c3f2e7622224baa19a05c3c5810309d73b088ebb4a95b89",
+            "message": "Project: standaarddatums en de kaarten in volgorde met \u00e9\u00e9n tussenruimte"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921115238-9e2646"
+}

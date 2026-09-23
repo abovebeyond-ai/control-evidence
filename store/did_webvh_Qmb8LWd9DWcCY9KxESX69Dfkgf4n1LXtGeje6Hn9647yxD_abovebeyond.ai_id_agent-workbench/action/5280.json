@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three open points, so today's decisions and Ilse's explanation live in the rule document instead of\nin WhatsApp.\n\n**The parked delete door.** `DELETE /api/vehicle/{id}` no longer deletes and, since #756, no longer\nclaims to. Removing the endpoint was built twice (#757, #758) and deliberately not merged: it is the\nmost-called action of the whole partner API, 4323 calls between 17 and 22 September 2026, all from\none IP that reverse resolves to `outbound.dcb.hexon-is.nl`. Hexon has to be told before, not after.\nThe point carries the measurement and the three-line recipe, so picking it up later is not archaeology.\n\n**Two Car-Pass points from Ilse, 22 September 2026.** A vehicle imported with a Car-Pass URL counts as\nhaving a Car-Pass: the chip is there, the URL goes to the dealer's site and the classifieds, and the\ndealer sees nothing missing. But the PDF cannot be fetched with that URL, which surfaces only when the\nshowroom poster prints without it. And because there is no stored request, there is no registration\ndate, so the vehicle never reaches the Car-Pass worklist and its report expires silently.\n\nBoth are open points rather than findings, and that distinction is the reason to write them down\ncarefully. The code does exactly what the rules describe: R S3-2.9 says in so many words that a report\nwith a public URL but no PDF file also counts as successful, and R S3-5.2 builds the worklist from the\nlast successful report. Nothing disagrees. The outcome is simply not what a dealer expects, and that\nbelongs in open-punten, where a decision is pending, not in bevindingen, where code and description\nhave drifted apart.\n\nWhat is left to decide is named in the point: whether the platform may start a registration itself on\nimport, and whether that should be per dealer. A request costs nothing, Ilse confirmed, but it is a\nvisible new registration in the dealer's name and not everyone wants that.\n\nNo code changes. `RulesIdentityTest` and the docs tests pass.\n",
+            "branch": "workbench/docs/the-carpass-url-and-the-parked-delete",
+            "title": "Three open points: the parked delete door and what an imported Car-Pass URL does not carry"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922122410-bef81c"
+}

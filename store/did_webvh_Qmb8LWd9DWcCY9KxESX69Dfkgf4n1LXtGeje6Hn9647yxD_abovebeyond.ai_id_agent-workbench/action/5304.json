@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nightwatch #35: `Unable to locate file in Vite manifest: resources/sass/app.scss.` on the bidding\npage of an export vehicle, 22 September 2026 at 06:33, one dealer, a 500.\n\nNothing to repair in the code, and that is the interesting part. The commit that removed the\nreference, `7fcb8241` \"The stylesheets need no preprocessor\", landed at 06:26, **seven minutes\nbefore** the error. The view was already right.\n\nWhat broke is the deploy window, and it is a consequence of the shared build folder added the day\nbefore:\n\n- `deploy/build.sh` runs `npm run build` inside the **new** release, writing into the **shared**\n  `public/build` that `stocklist:build-link` points at.\n- Forge only flips `current` afterwards.\n- So between those two moments the **old** release serves its **old** views against the **new**\n  manifest.\n\nThe shared folder was introduced to stop an open page from 404ing on a hashed file, and it does\nthat: the old files stay (`emptyOutDir: false`). But it catches a missing **hash**, not a missing\n**key**. Remove an entry from the Vite input and the old view's `@vite(...)` finds nothing in the\nfresh manifest, which is a 500 rather than a page without styling.\n\nTwo things come out of that, and both are here:\n\n- A guard that bites **before** a deploy instead of after: every asset a view asks for has to appear\n  in the input list of `vite.config.js`. Added to the test that already carries R P1-1.22. Injecting\n  the old reference into a view makes it fail by name: \"resources/sass/app.scss (huisstijl.blade.php)\".\n- R P1-1.22 now says why, and says the operational consequence: **removing an input takes two\n  deploys**. First stop the views asking for it, deploy; then drop the input, deploy.\n\nThe bidding page answers normally again (302 to the login for an anonymous request, no 500).\n",
+            "branch": "workbench/fix/no-view-asks-for-a-stylesheet-that-moved",
+            "title": "No view asks for a stylesheet that is not built"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922133143-b7098e"
+}

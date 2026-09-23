@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De scorepagina zei op een telefoon \"niet beschikbaar op mobiele apparaten\". Nu kiest de component aan de serverkant tussen twee weergaven: **Matrix** (alles in \u00e9\u00e9n tabel, zoals vandaag) of **Per leerling**, met vorige en volgende, een leerlingkeuze en per eindterm een kaart met score, afwezig en feedback. Overal afwezig of aanwezig zetten kan ook per leerling.\n\nAlleen de gekozen weergave wordt gerenderd. De grootste evaluatie in productie telt 2800 cellen (Drie Hofsteden); een telefoon draagt de matrix niet, laat staan twee keer. Een telefoon (smaller dan 640 px) opent \u00e9\u00e9n keer per leerling en kan daarna nog altijd wisselen; op een groter scherm blijft de matrix de standaard.\n\nDe modals voor feedback en subdoelen staan nu naast de twee weergaven zodat ze in beide werken. Twee losse sluittags uit de oude tabel zijn weg.\n\nTests: matrix is de standaard zonder leerlingkaarten; per leerling toont \u00e9\u00e9n leerling en stapt vooruit en terug binnen de grenzen; een onbekende weergave valt terug op de matrix. Het aantal queries verandert niet.\n",
+            "branch": "workbench/scoren-mobiel",
+            "title": "Scoren op een telefoon: de matrix of \u00e9\u00e9n leerling tegelijk"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921073729-ae3e11"
+}

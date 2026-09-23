@@ -1,0 +1,16 @@
+{
+    "action": "11b4279be25718665eb283dc0c956269",
+    "effect": {
+        "detail": {
+            "base": "611081ddd88788c3be3114212fbfbd570c7bb810",
+            "branch": "workbench/test/the-challenge-knows-who-is-halfway",
+            "commit": "22adf1b3f7f88dbd36e0190997ff67112f38b408",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4998,
+    "verdict": "ALLOW"
+}

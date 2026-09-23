@@ -1,0 +1,16 @@
+{
+    "action": "2a597f2646d61e446d6e33e18ffca42d",
+    "effect": {
+        "detail": {
+            "base": "881bf804b1aed89ec2aa67b3adc521a6aaed578e",
+            "branch": "workbench/audit-rest",
+            "commit": "d77abd82a5ae0932f7474666e3e238977164a3ed",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4653,
+    "verdict": "ALLOW"
+}

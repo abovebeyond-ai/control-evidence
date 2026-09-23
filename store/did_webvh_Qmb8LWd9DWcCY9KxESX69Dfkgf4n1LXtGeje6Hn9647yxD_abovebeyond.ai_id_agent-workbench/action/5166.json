@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "71ae278f9ab6220f1d4654bf67e586c390510af4",
+            "branch": "workbench/test/the-module-switch-is-an-admin-door",
+            "files_sha256": "a42e880830a7eac7c6e35470116e1a8f25cf761cd4088c40cce810d89c551ffc",
+            "message": "The module switch is an admin door"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922084550-0b3fc0"
+}

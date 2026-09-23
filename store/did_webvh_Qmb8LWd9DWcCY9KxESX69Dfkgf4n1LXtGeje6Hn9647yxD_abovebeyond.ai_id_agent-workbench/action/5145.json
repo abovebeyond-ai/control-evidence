@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c2224f747c968bee4fbcca77b6454f147d263c66",
+            "branch": "workbench/de-vm-op-v0.30.0",
+            "files_sha256": "b7b234dfaf37f15aa96d46a19fff83269c19a508f59199591f7c9855ce1c52d0",
+            "message": "De VM op v0.30.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260922075914-a0e4e6"
+}

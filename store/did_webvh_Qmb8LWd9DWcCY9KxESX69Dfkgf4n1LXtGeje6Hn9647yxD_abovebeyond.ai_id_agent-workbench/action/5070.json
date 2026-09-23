@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De huisregel die vandaag drie keer een pagina omgooide, staat nu in een test.\n\nDe inline vorm `@php(...)` breekt Blades verwerking van directives vanaf die regel: alles erna blijft ongecompileerd staan en de pagina sterft met `syntax error, unexpected token endforeach` op een regel die je niet hebt aangeraakt. Dat is het vervelendste soort fout, want ze wijst waar ze niet zit. Vandaag gebeurde het drie keer, in het leerlingdashboard, in de scoreweergave per leerling en bij het maximumveld.\n\n**Veertien plekken in zes views** staan nu in de blokvorm. Elke gewijzigde view is door Blade gecompileerd en met `php -l` nagekeken, want een fout in deze omzetting zou pas op het scherm blijken.\n\n**De test** loopt de hele viewmap na en noemt bestand en regelnummer. Ze kost niets en had alle drie de gevallen van vandaag meteen gevonden. Nagekeken dat ze bijt door \u00e9\u00e9n inline directive neer te zetten.\n\n**Meegenomen onderweg**: een dubbel aanhalingsteken in `type=\"date\"\"` op het scherm om een schooljaar te bewerken, twee keer. Het komt uit een gekopieerd formulier, want de aanmaakversie heeft het niet, en de browser slikte het. Dat is ook het argument voor het punt dat nog openstaat: die twee formulieren zijn een kopie van elkaar, en een kopie draagt een fout over.\n\n**Getoetst.** `php artisan test --parallel`: 1056 groen, alleen BuildStampTest faalt zoals in elke worktree zonder Vite-build. PHPStan schoon, Pint schoon.\n\nNog open uit de opruimronde: de twee controllers die ruwe uitzonderingstekst aan de gebruiker tonen, en de gekopieerde formulieren voor aanmaken en bewerken.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/geen-inline-php",
+            "title": "Geen inline @php meer, en een test die de volgende tegenhoudt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921204856-c7a536"
+}

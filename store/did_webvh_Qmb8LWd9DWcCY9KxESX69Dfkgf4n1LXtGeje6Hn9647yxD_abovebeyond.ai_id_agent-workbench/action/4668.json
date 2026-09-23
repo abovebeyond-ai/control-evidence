@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het laatste restje van de audit, apart omdat de deploynotitie van augustus het pas toeliet na een geslaagde synchronisatie \u00e9n een geslaagde Smartschool-login op productie via de tabel `smartschool_connections`.\n\nWeg zijn `config/smartschool.php` (las niemand meer), de vier `smartschool_*`-blokken in `config/services.php` en de bijbehorende regels in `.env.example`. Alleen `services.smartschool.redirect` blijft: de callback-url hoort bij de host, niet bij een school.\n\nDe migratie van 5 augustus las die config om de tabel te vullen; op een omgeving zonder de config doet ze niets, en haar test bouwt de config zelf, dus die blijft groen. Na de merge mogen op Ploi de `SMARTSCHOOL_PLATFORM_*`, `_WACHTWOORD_*`, `_PASSWORD_*`, `_CLIENT_ID_*` en `_CLIENT_SECRET_*`-regels uit de `.env`; `docs/deploy.md` zegt dat ook.\n\nNiet mergen als de Smartschool-login op productie nog niet via de tabel gelopen heeft: dan is de `.env` nog de terugvalkopie.\n",
+            "branch": "workbench/smartschool-config",
+            "title": "De Smartschool-config uit augustus is weg: de tabel is de bron"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921101134-99a71c"
+}

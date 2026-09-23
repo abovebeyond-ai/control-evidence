@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Autobedrijf Gielkens has been reporting since 17 September that saving the vehicle sheet bounces with a message about an expired session. Four conversations went looking for the session: `SESSION_LIFETIME` (thirty days), delegation, a shared login, the cookie, `max_input_vars`. No session had ever expired.\n\nWhat actually happened has been in the log since **16 September 16:32, sixty-two times**, and nobody read it:\n\n```\nCarbon\\Carbon::rawAddUnit(): Argument #3 ($value) must be of type int|float, string given\nVehicleForm::finalizeEdit \u2192 OwnStockService\n```\n\nA form field arrives as text. Carbon 2 converted it, Carbon 3 refuses it, so `addMonths('6')` throws. Six places in `OwnStockService` handed the value straight over. The save ended in a 500, the Livewire roundtrip broke, and what the dealer was left with was a message about sessions.\n\nIt also explains what the five theories could not: why it happened to the operator on *his* cars and never on her own. That branch only runs for an own car with \"available within X months\" filled in, and almost nobody uses that field. It was never a property of the person or the device; it was a property of the car.\n\nAll six places now go through one gate, `OwnStockService::monthsGiven`. Anything not countable is zero months rather than a crash: the classic form requires the term (`required|numeric`), but the Livewire sheet, the partner API and a copied car have no such guarantee, and two of the six were not even behind a `filled()`.\n\nWhile checking the rest of the code for the same shape, one more site turned up: the vehicle list filtered six times on `subMonths($request['months'])`, straight from the query string. The same crash was waiting there for whoever filtered on \"sold in the last X months\". Cast along with it. Every other Carbon `add*`/`sub*` in `app/` works on a constant or an already-cast integer, and the Livewire sheet cast it itself on both of its sites.\n\nWhy no test caught it is in the neighbouring test: `VehicleSheetWholeNumberTest` posts `'available_within_months' => 0`, an integer, where a browser always sends text. The new test posts the value the way the form does.\n\nFixes bevinding opslaan-van-een-wagen-met-beschikbaarheid\n",
+            "branch": "workbench/fix/saving-a-car-available-in-months",
+            "title": "Saving a car available in months"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921093242-fa3938"
+}

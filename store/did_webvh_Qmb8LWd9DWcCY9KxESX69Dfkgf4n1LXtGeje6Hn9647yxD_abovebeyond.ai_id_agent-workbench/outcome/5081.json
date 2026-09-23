@@ -1,0 +1,16 @@
+{
+    "action": "6c2e33392a419d3afcba4d3a0eeed6b1",
+    "effect": {
+        "detail": {
+            "base": "2d775927f8d3601bfb0bc47349e79b2f37d71d80",
+            "branch": "workbench/de-fout-die-de-gebruiker-leest",
+            "commit": "6bc316336e8777283f612d42d7464dfd553ef03d",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5079,
+    "verdict": "ALLOW"
+}

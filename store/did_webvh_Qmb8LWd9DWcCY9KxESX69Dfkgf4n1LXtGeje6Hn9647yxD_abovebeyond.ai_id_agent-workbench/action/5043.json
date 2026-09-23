@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes the finding `drie-catch-blokken-bedoelden-iets-en-doen-niets`, and there were four.\n\nThe finding left one question open: two of the blocks return `400` and it asked what the JavaScript on the other side expects. Answer, from looking rather than guessing: **there is no JavaScript**. `ownvehicle.create.duplicate` is a GET link the dealer clicks and `ownvehicle.index.extendedSearch` is an ordinary form with a submit button; both return a `redirect()` on success. Nobody reads a status code there, so `return 400` was doubly wrong: it never ran (the block catches nothing), and it would have sent the *text* \"400\" with status 200. Both now report the exception and send the dealer back to his own list with a message.\n\n`UserController::update` keeps the JSON with status 500 the author wrote. What also had to go is the `echo` under it: it printed the exception message on an otherwise empty page with status 200, so the administrator saw the inside of the platform and the browser read it as success.\n\n**The fourth.** `EveryCatchCanCatchTest`, added here, found one nobody had listed: `fetchRequiredFieldsByChassisNumber` caught `\\Exception | TypeErrorException`, and that second name resolved through an IDE import to `Psy\\Exception\\TypeErrorException` \u2014 a tinker class that does not exist outside a tinker session. What was meant is PHP's `\\TypeError`, which `\\Exception` does not cover and which the same method names correctly a few lines further down. Now `\\Throwable`, with the error printed instead of an empty block, and the \"updated\" line moved inside the `try` because it was printed even when the lookup had just failed.\n\n**PHPStan knew.** All three of the original defects sat in `phpstan-baseline.neon` as ignored `class.notFound` patterns. Those three blocks are gone, so the baseline shrinks from 928 to 925.\n\nThe lasting part is the test: PHP does not complain about a catch naming a class that does not exist in that namespace, so this checks every file under `app/` and says which class it resolved to.\n\n`R P2-2.11` extended. Full suite green, PHPStan clean.\n",
+            "branch": "workbench/fix/every-catch-can-catch",
+            "title": "Every catch can catch"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921202443-6b954f"
+}

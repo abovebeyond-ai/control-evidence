@@ -1,0 +1,10 @@
+{
+    "action": "609902640b129631c7257658c57a38f7",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on Hoet-design/hoet-sanity",
+    "step": 4827,
+    "verdict": "DENY"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7801d4fa43b20178da64748893c84227abc52a5b",
+            "branch": "workbench/fix/a-page-load-is-not-a-code-attempt",
+            "files_sha256": "af3b3bf5f9f040faf466a0a13dcb5ec2691979673725fa5de27e567a25ca82ad",
+            "message": "A page load is not a code attempt"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921195028-de93a9"
+}

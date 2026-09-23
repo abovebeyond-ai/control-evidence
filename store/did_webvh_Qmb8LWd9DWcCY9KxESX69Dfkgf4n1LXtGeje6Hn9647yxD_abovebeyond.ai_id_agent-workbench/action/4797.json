@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "015dcbf934f60bb67a9bb4827e109e1217682be8",
+            "branch": "workbench/eindtermkiezer-mobiel",
+            "files_sha256": "964af139823b87088594795b1740ef0cac816e2777630dcd88c356eb8fb2b882",
+            "message": "Eindtermkiezer op een telefoon, en het maximum per eindterm per leerling"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921120640-ace252"
+}

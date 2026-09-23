@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "578242aa89a07723aa521b7001628ebe3192ec89",
+            "branch": "workbench/fix/the-badge-follows-the-release",
+            "files_sha256": "d762c657093dc107889f45f568d16be5c8da2d21ecb1cdeadf8c719caac5447c",
+            "message": "The badge follows the release"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921155250-7ab737"
+}

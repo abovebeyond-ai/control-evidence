@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f70b7d1387013db5ded0eb38d59c751b7bafc1c0",
+            "branch": "workbench/feat/a-car-in-a-mail-shows-its-photo",
+            "files_sha256": "4325d5586da572cda129f9f5b1db020e6927cdcad3cf9d43750c3973a92122b1",
+            "message": "A car in a mail shows its photo"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921095631-600732"
+}

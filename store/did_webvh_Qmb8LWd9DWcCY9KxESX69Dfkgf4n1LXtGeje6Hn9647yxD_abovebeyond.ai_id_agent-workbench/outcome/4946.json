@@ -1,0 +1,16 @@
+{
+    "action": "c80bab75220f3cebcf4a729dc78db6b7",
+    "effect": {
+        "detail": {
+            "base": "0984238b9f41c27b8548206f6b154584dd0d396c",
+            "branch": "workbench/delibereren-op-een-telefoon",
+            "commit": "1722e39de5dcb0200b5078538f0df7a9ea39a890",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4944,
+    "verdict": "ALLOW"
+}

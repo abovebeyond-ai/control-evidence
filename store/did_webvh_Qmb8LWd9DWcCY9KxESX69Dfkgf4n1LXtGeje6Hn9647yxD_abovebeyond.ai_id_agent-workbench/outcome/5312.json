@@ -1,0 +1,16 @@
+{
+    "action": "2ab71c770d5faea53fac4c005404c041",
+    "effect": {
+        "detail": {
+            "base": "c0ef93d50498e7931ecb53ddcc3a85f7ebb1fca1",
+            "branch": "workbench/fix/a-silent-partner-does-not-take-the-page-with-it",
+            "commit": "8b528d77ba2072c2ef777a4cf401c0ad9e1cc01f",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5310,
+    "verdict": "ALLOW"
+}

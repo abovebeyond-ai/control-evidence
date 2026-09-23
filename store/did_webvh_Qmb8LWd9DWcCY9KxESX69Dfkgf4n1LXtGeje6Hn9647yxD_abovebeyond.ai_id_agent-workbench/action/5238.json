@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "697b2d38fc864e6ed40c471743ca891a25c2ccbd",
+            "branch": "workbench/fix/the-delete-endpoint-says-what-it-does",
+            "files_sha256": "ab92e5ce78b7f1cb940620da97d423593f87191e92cb2151f138cb1d8f928342",
+            "message": "The delete endpoint says what it does"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922113500-27a9d6"
+}

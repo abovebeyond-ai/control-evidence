@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "29a9327db8962777bc8d2756f9a36d1425e70969",
+            "branch": "workbench/fix/the-slide-cache-stops-listing",
+            "files_sha256": "6db3c87e3a3ababb5bf70a4b8a5ee021f44c469b1a3fc107167b2c5e99a9f5f7",
+            "message": "The slide cache stops listing the bucket"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921112417-c7e10f"
+}

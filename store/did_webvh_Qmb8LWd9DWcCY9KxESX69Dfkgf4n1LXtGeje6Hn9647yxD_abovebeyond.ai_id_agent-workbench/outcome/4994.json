@@ -1,0 +1,16 @@
+{
+    "action": "90bca616eb026ae68d956a46710a69aa",
+    "effect": {
+        "detail": {
+            "base": "d5a760b34a3604d2e5457071cac39bdc6f18063b",
+            "branch": "workbench/van-en-tot",
+            "commit": "1bbf98a8d94e4d4a64791509a15f7cbea5699756",
+            "files": 20,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4992,
+    "verdict": "ALLOW"
+}

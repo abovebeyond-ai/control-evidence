@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e4e9e23a6ab3238270897cc6c02dd6c28347f09c",
+            "branch": "workbench/het-rapport-op-het-ontwerpsysteem",
+            "files_sha256": "79e000e7d013eaa423daf75199ab771c8ebc629e7f31e9ce7ce4d101b6e8dc33",
+            "message": "Het rapport op het ontwerpsysteem"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922132257-e751d0"
+}

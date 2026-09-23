@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nightwatch #31: a scanner knocked on `GET /oauth/authorize` with curl and got a 500. Zero users affected, one occurrence \u2014 but it is a route that exists and cannot work, which is worth a few minutes.\n\nPassport registers its whole route set, so `oauth/authorize` and the device flow are there, while this platform only uses `oauth/token`, for the partner API. The views of those flows were never published, so their response contracts were bound nowhere and the framework could not even build the controller.\n\nThe contracts now point at one small response. What came out of it is more interesting than what I set out to do: a bare `GET /oauth/authorize` now answers **400**, not the 404 I expected, because Passport rejects a request without a `client_id` itself before it ever needs a view \u2014 and \"invalid request\" is exactly what OAuth prescribes there. The binding matters for a well-formed request, which does reach the view. So the test asserts the boundary that actually matters: a client error and not a server error. Somebody knocking gets an answer, not a fault of ours.\n\nThe routing is deliberately untouched. Every partner integration signs in through `oauth/token`, and rearranging Passport's routes to tidy up a status code is a bad trade for seventeen live integrations. A test pins that `passport.token` is still there, so a later cleanup cannot quietly take it along.\n\nNew rule R P3-1.10.\n",
+            "branch": "workbench/fix/a-flow-we-do-not-offer-says-so",
+            "title": "A flow we do not offer says so"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921171118-c83a01"
+}

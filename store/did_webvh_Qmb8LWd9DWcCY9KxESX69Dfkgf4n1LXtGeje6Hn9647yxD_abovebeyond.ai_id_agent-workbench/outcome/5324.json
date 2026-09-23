@@ -1,0 +1,16 @@
+{
+    "action": "f966d8a4fffcf77c2afd72f2024dbbff",
+    "effect": {
+        "detail": {
+            "base": "e598ecfc260289bf1bc15835813bd129b39a3eca",
+            "branch": "workbench/fix/the-damage-choice-arrives",
+            "commit": "0d2ecdf9d3bd9f5a7c61df02cad99ecdc0cff7e8",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5322,
+    "verdict": "ALLOW"
+}

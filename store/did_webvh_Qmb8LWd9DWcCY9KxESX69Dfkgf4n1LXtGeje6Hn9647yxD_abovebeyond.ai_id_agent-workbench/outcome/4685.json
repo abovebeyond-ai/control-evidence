@@ -1,0 +1,16 @@
+{
+    "action": "8f9a6044709243796bacbb4678bb6524",
+    "effect": {
+        "detail": {
+            "base": "cf83d70ede63ad0b71eec57f1d474884899b99c7",
+            "branch": "workbench/fix/no-order-form-for-a-car-in-option",
+            "commit": "ef817d755370a8f8803e6d8f7b77fe1a8d3e530d",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4683,
+    "verdict": "ALLOW"
+}

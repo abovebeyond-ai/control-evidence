@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "61debefc468db9df813112dad482d38cd2df2b3a",
+            "branch": "workbench/de-halt-is-mechanisch",
+            "files_sha256": "f2ceb7bf5509b10195f0e4f676e343845c3956f360016eb60e2066837fd72599",
+            "message": "The halt is mechanical: hold the chain to itself before every judgement"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20260922071045-faee3d"
+}

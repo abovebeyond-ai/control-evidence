@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "efc423c77096ce7eecc32be3bd5a930d9e9c0c5a",
+            "branch": "workbench/fix/a-flow-we-do-not-offer-says-so",
+            "files_sha256": "2b2ec2bc52d08f7e2ee0666e3365b192c1dd7cbacdbb3c5d80b671be80c9175e",
+            "message": "A flow we do not offer says so"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921171118-c83a01"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "08c9d91d50ffc92b0025279598b2c1f7c64d09c6",
+            "branch": "workbench/fix/no-view-asks-for-a-stylesheet-that-moved",
+            "files_sha256": "7080b91d451c603a3e7e51937e66d7152fb195913ccc54b83d6861c596b76f6d",
+            "message": "No view asks for a stylesheet that is not built"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922133143-b7098e"
+}

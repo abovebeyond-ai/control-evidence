@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eb893eb56ec913e54c3d086f03af0feea9d77e28",
+            "branch": "workbench/mix-wishes",
+            "files_sha256": "cf4a242f0977a9b00b8239217cc1363d971732f7f1046349f382bd0c2ca6c49b",
+            "message": "A wish on a row of the mix: too much, fine, too little, in a sentence"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260921110814-20d41f"
+}

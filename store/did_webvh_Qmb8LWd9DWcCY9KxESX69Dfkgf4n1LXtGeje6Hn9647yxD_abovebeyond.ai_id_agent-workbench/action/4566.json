@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "187d686f26a5db1da3b48ff6d09865ef64c27e8a",
+            "branch": "workbench/dashboard-mobiel",
+            "files_sha256": "3ad0d4602adc8dc748d746de114a8be15e1dfc85f19e5defd65e6ef51cb6c7e3",
+            "message": "Mobiel: de dashboards, met uitleg op een tik en lijsten in plaats van geneste tabellen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921081112-91b4ae"
+}

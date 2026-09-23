@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0e51ffae63df07c4b60ef60118adbcdf76b323e8",
+            "branch": "workbench/het-regelboek-begint",
+            "files_sha256": "e66009dfa1cad3165725b60a3437c70b87190d35d56c5b309251e4fb990e5746",
+            "message": "Het regelboek begint: de mechaniek en het hoofdstuk dat een cijfer bepaalt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921201315-b446d5"
+}

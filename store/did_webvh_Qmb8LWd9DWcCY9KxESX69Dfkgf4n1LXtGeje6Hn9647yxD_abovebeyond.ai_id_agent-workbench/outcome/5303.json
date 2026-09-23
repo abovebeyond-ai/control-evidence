@@ -1,0 +1,16 @@
+{
+    "action": "b8386b8c485c399f4136897e3be12af6",
+    "effect": {
+        "detail": {
+            "base": "08c9d91d50ffc92b0025279598b2c1f7c64d09c6",
+            "branch": "workbench/fix/no-view-asks-for-a-stylesheet-that-moved",
+            "commit": "5c9d0e3809c8ca8730f50d99c65e564c92e4dbf6",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5301,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "f7e871fab61747768e32719abf57247d",
+    "effect": {
+        "detail": {
+            "base": "bea7835975c57a3afee38c414f2a4329f8bbe081",
+            "branch": "workbench/fix/an-affiche-without-a-photo-still-prints",
+            "commit": "86210b6fd66e4adcecf24e5e144b5e8480e8b798",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4821,
+    "verdict": "ALLOW"
+}

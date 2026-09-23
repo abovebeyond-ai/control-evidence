@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bdca31e0942861ce6db37c596142f8a3bbcdb832",
+            "branch": "workbench/feat/every-deploy-is-a-version",
+            "files_sha256": "5655fbc75b04357624805dd938b4f09d22f3a0de0e53df2d27338107234a6679",
+            "message": "Every deploy is a version"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921153425-b39a3c"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c0ef93d50498e7931ecb53ddcc3a85f7ebb1fca1",
+            "branch": "workbench/fix/a-silent-partner-does-not-take-the-page-with-it",
+            "files_sha256": "81362a0bb9df6666b4ce73c761d522f24d9e744ecb2609f8046c2895b754bc13",
+            "message": "A silent partner does not take the public page with it"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922134038-1732dd"
+}

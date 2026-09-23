@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0e51ffae63df07c4b60ef60118adbcdf76b323e8",
+            "branch": "workbench/het-regelboek-begint-2",
+            "files_sha256": "8276faf2e6ce828ac56a4d428984a437b2c5ac43584f49a4e6568afd0dc9969a",
+            "message": "Het regelboek begint: de mechaniek, het hoofdstuk dat een cijfer bepaalt, en de 60/40-weging exact"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921202556-399a3b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding verkoop-zonder-prijs-telt-als-nul.\n\n\"Zoek gemiddelde prijs eindklant\" counted a sale with a date but no amount as a sale of **zero**:\n`(float) null` is 0.0, and that 0 went into the count, became the minimum and pulled the average\ndown. The screen then read \"tussen \u20ac 0,00 en ...\". One dealer registering a sale without filling in\nthe amount lowered the number every other dealer reads.\n\nShane's call, 22 September 2026: those do not count. Prices are filtered to greater than zero before\nanything is counted, averaged or bounded.\n\nThe filter applies to both sides, the end-customer sales and the traders' bids, because a bid of\nnothing says as little about the market as a sale of nothing.\n\n`AveragePriceSearchTest` already had a test for this, pinning the **old** behaviour under the name\n`test_a_sale_without_a_price_counts_as_zero`. It is rewritten rather than deleted, so the change of\nmind stays visible in the file: same three vehicles, now two sales, average 15 000 between 10 000 and\n20 000. It fails against the component on main.\n\nR S1-5.14 now says a filled-in sale price is part of what qualifies, with the reason.\n",
+            "branch": "workbench/fix/a-sale-without-a-price-is-no-reference",
+            "title": "A sale without a price is no market reference"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922141836-1a49f1"
+}

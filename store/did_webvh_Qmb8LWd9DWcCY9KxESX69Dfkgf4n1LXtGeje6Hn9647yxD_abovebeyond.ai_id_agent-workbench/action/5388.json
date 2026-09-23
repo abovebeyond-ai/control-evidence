@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "147b03f74fb065dd192a20fe80559ffbc12feb8c",
+            "branch": "workbench/hetzelfde-schooljaar-niet-181-keer",
+            "files_sha256": "67d46092dceb035fc3d00b2125c7a4478fc3459254d21bb4c7406b4474fe11ae",
+            "message": "Hetzelfde schooljaar niet 181 keer ophalen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922174451-0e8d96"
+}

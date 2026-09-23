@@ -1,0 +1,16 @@
+{
+    "action": "3ca66bb935e23290f9be9f48c48172fa",
+    "effect": {
+        "detail": {
+            "base": "5c473fbaa74ed59db5f2fa0008173644c8829a70",
+            "branch": "workbench/security/the-embed-is-module-one",
+            "commit": "b620d7472202b468cbad91b8591353804dc9a529",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5214,
+    "verdict": "ALLOW"
+}

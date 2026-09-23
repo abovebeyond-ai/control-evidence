@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "505aab5dcdf2d2921f10797cca446fee4df37bcb",
+            "branch": "workbench/docs/notification-preferences",
+            "files_sha256": "e0619760a4d59bff9e6c9c124b7f00993892e206737b55ffbd07f03230cadd6b",
+            "message": "Notification preferences as an open point"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921104258-6df65f"
+}

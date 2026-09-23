@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "In customer mode an own vehicle shows the retail price rather than the trade price plus a margin: we know what we ask an end customer for it, and the vehicle is advertised at that price (R S5-4.5).\n\nFive screens did that. Two did not, because `documentPrefill()` never asked whose vehicle it was. On an own vehicle with a margin and no typed price:\n\n| screen | before | after |\n| --- | --- | --- |\n| card, index card, buybox, lease block | 12 000 | 12 000 |\n| order modal, price field | 12 000 | 12 000 |\n| order modal, lease row below it | **10 500** | 12 000 |\n| offer modal, price field | **10 500** | 12 000 |\n\nSo one order modal carried two amounts on the same screen, and an offer for the same vehicle in front of the same customer started 1500 euro below the order.\n\n## The decision\n\nIlse, 23 September 2026:\n\n> voor een wagen van je eigen wagenpark gaan we geen marge meer bijtellen want we weten de verkoopprijs eindklant. De wagen staat bij ons geadverteerd dus we gebruiken die prijs om te tonen. Ook stel dat we in de gedeelde stock staan en we overlopen in klantenmodus een lijst van voertuigen, gaat ons eigen voertuig getoond worden met de verkoopprijs eindklant en dus niet aan dealerprijs plus marge.\n\n`documentPrefill()` now asks the ownership question, after a typed price and before the margin. One function, three lines.\n\n## One choice she did not make\n\nA document that already has a price keeps it. Until now the customer price of 10 500 won there over a saved 9 000, so a formula overwrote an agreed amount. `orderPrefill()` already expressed exactly that case through its `$newDocument` flag; both methods now behave the same. If that is ever wanted differently it is one line, and the finding says so.\n\n## Tests\n\n`PriceScreenMatrixTest` and `PriceOnScreenTest` pinned the old split as intended behaviour, with X-106 in their names and comments. Both are rewritten against the decision rather than removed, and the matrix now asserts that the order modal's price field and its lease row agree instead of asserting that they differ.\n\nVerified locally with assets built: 68 tests, 351 assertions green across `PriceScreenMatrixTest`, `CustomerModePriceTest`, `ATypedPriceWinsOnEveryScreenTest`, `KlantmodusTest`, `CustomerModeSessionPriceTest`, `TheDamageChoiceArrivesTest` and `PriceOnScreenTest`, plus the rule-catalogue tests.\n",
+            "branch": "workbench/fix/own-vehicle-never-gets-a-margin",
+            "title": "An own vehicle never gets a margin on top"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923071700-ee251a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two small things on the daily bidding mail, both from reading it with Shane after #705 went out.\n\n**The button went to the front page.** \"Bekijk in Stocklist Dealer\" linked to `https://traders.stocklistdealer.eu`, so a dealer who had just read about twelve biddings landed on his dashboard and had to find them himself. It points at `/bidding-offers` now, which is what the mail is about.\n\n**The recipient's own bidding stays in the list, and that is now a decision instead of a leftover.** The query carried this line, commented out, for years:\n\n```php\n//vehicles.dealer_id != '.$dealer_id.' and\n```\n\nIt reads like something that still had to be switched on \u2014 the mail on creation does skip the owner, and `BiddingMailsTest` pins that. Shane decided on 21 September that the daily mail is a different thing: it is an overview, and a dealer wants to see his own vehicle in it to be sure it is running. So the line is replaced by a comment saying that, R B1-2.4 says it, and a test holds it in place, so a later clean-up cannot quietly remove what looks like dead code.\n\nFixes nothing new; refines R B1-2.4 and the mail from #705.\n",
+            "branch": "workbench/fix/the-button-goes-to-the-biddings",
+            "title": "The button goes to the biddings, and your own car stays in the list"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921084934-47ea00"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na de blik op het leerlingdashboard: \"veel lijntjes\". De scorelijst had een eigen ring en een lijn tussen elke score, binnen een kaart die zelf al een rand heeft. Nu alleen ruimte tussen de rijen; de lijn tussen twee evaluaties blijft.\n\nMeegenomen: een eindterm zonder score zei \"0 / 10\" (een lege decimal las als nul); nu \"nog geen score\", zonder kleur.\n\nAlleen de Blade-view; de tests van het leerlingdashboard blijven groen.\n",
+            "branch": "workbench/leerling-lijntjes",
+            "title": "Leerlingdashboard: minder lijntjes"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921083519-d25431"
+}

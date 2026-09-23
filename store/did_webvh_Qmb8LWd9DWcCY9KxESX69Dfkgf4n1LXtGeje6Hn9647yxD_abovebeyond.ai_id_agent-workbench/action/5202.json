@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "929428d1da24dca45a3755904012c9aff2fd815a",
+            "branch": "workbench/ui/a-parent-keeps-its-own-page",
+            "files_sha256": "e1d034d9b860a62b76df11bc1832cbecd63d6be6d984b9f78c6faddd87d21a98",
+            "message": "A menu item with its own page keeps it when it gains a child"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922102303-cfa2a2"
+}

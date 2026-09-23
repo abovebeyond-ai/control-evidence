@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nStep 2 of three for the Mix page. Step 1 (#193, dashboard#52) was the looking. This is the saying: on a row of the mix someone at the desk says **too much**, **fine** or **too little**, in one sentence, and it is kept with who and when.\n\nA wish is not a setting. Nothing reads it to change what is collected. That is the reason to do this before any dial exists: first learn what the desk actually wants, then build the dials they ask for, and have every dial answer to a sentence somebody wrote.\n\n## How\n\n- `packages/core/mix-wishes.mjs`: table `mix_wishes`, append-only. The latest wish per (axis, row) stands, earlier ones stay: \"too little\" followed three weeks later by \"fine\" is the record that something was done.\n- \"Too much\" and \"too little\" need a sentence; \"fine\" does not. Without the sentence it is a mood, and the sentence is what a dial will answer to.\n- `POST /mix/wishes {axis, key, wish, note}` in a new `routes-mix.mjs`. Only a signed-in person: the static API token is refused here, and a probe token cannot write anywhere.\n- `GET /mix/wishes?axis=` gives everything said, latest first.\n- `GET /mix` now carries `wishes`, the standing wish per row. The counts stay cached for five minutes; the wishes are read fresh, so a wish is on the page the moment it is written.\n\n`test/mix-wishes.test.mjs` pins the refusals, who said it, latest-stands-and-history-stays, and the route.\n\n## Next\n\nThe dashboard side (three words per row and the sentence) follows in its own PR. Step 3, the dials, only after people have used this.\n",
+            "branch": "workbench/mix-wishes",
+            "title": "A wish on a row of the mix: too much, fine, too little, in a sentence"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260921110814-20d41f"
+}

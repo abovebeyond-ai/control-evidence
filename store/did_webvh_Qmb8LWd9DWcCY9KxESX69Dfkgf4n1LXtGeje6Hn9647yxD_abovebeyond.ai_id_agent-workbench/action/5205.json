@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Inzichten carries its own route, `insights.index`. When Operations was added underneath it, the\nnavigation turned the title into a dropdown toggle (`javascript:void(0)`) and listed only the\nchildren, so the insights screen itself was no longer reachable from the menu. Nothing failed and\nnothing was logged; the page simply stopped being in the menu.\n\nA parent with its own page now keeps it: that page is the first entry of the dropdown, before the\nchildren, in the top bar and in the sidebar. `exportmenu` had already run into this and was given\nits own exception in the view, which is what a rule looks like before anybody writes it down; that\nexception stays and the general rule covers the rest. A parent without its own route (Administratie,\nInstellingen) is unchanged, so the only menu that moves today is Inzichten, which now holds two\nentries: Inzichten and Operations.\n\nThe new test renders the real navigation with the tree this describes and asserts both links are\nthere, once for the top bar and once for the sidebar, because the sidebar is a second rendering of\nthe same tree and fixing only the top bar leaves it broken on a phone. Both cases fail against the\nview currently on main, with \"De Inzichten-pagina zelf staat niet in haar eigen menu\" and \"De\nzijbalk laat de Inzichten-pagina vallen\".\n\n`menus` and `role_access` are MyISAM, so the test removes the rows it adds by id and puts a row it\nhad to re-parent back where it was.\n\nR P1-1.24 is new; P2-12 is about feature flags and was the wrong home for this.\n",
+            "branch": "workbench/ui/a-parent-keeps-its-own-page",
+            "title": "A menu item with its own page keeps it when it gains a child"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922102303-cfa2a2"
+}

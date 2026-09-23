@@ -1,0 +1,16 @@
+{
+    "action": "76fd693e516f39e7583f7b2601239b53",
+    "effect": {
+        "detail": {
+            "base": "8d2c758b0c86b3c2b958dd6bb0dca0f367fe4df2",
+            "branch": "workbench/fix/the-embed-and-the-api-agree-on-drafts",
+            "commit": "54fc5282fef0d5b075085395773b80b3360dcfc5",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5061,
+    "verdict": "ALLOW"
+}

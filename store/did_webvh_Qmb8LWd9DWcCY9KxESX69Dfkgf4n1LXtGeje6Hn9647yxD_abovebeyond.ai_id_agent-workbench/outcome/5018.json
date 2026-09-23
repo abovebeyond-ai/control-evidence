@@ -1,0 +1,16 @@
+{
+    "action": "9467aaf90333686b66c3b430a205c6b3",
+    "effect": {
+        "detail": {
+            "base": "d3a345a1ec19c70b955e79d57613dbdf8d8229b1",
+            "branch": "workbench/de-evaluatietabel-in-twee-queries",
+            "commit": "146f01832614a733f1a360e17038326af0a391c0",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5016,
+    "verdict": "ALLOW"
+}

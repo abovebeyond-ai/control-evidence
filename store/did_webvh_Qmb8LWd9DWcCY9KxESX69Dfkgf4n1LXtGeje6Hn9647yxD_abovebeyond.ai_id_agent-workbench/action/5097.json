@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "89d0cd21799ce50f288227a171a659cbc6dca52b",
+            "branch": "workbench/feat/the-build-folder-links-itself",
+            "files_sha256": "baf02c82f54c6026510fd0285cb2211e7f438fbb3d19f0c218319c0bdfa5e811",
+            "message": "The build folder links itself"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922053424-100076"
+}

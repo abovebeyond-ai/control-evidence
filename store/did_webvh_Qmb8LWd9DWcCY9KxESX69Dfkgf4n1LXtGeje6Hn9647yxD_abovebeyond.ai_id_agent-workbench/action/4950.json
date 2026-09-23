@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7f73fcd6eaf83a00be787c79b42acb99c5976669",
+            "branch": "workbench/out-of-reach-is-not-rejected",
+            "files_sha256": "636f945149138de4e5b9384d2b5f245ae2881359da0a7d383295bc7015d0e5a9",
+            "message": "Out of reach is not the same as rejected"
+        },
+        "resource": "abovebeyond-ai/control-verify-action"
+    },
+    "run": "workbench-20260921180513-9f63f9"
+}

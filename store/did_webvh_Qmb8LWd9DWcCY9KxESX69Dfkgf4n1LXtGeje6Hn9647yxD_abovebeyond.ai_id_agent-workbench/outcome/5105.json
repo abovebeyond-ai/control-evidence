@@ -1,0 +1,16 @@
+{
+    "action": "d84a5b8bdd1c4bcb50a2b5f8ba9725a9",
+    "effect": {
+        "detail": {
+            "base": "89d0cd21799ce50f288227a171a659cbc6dca52b",
+            "branch": "workbench/feat/deploy-steps-as-code",
+            "commit": "69c97222b85c8083d82440c1fdc5aa104e1ef6c9",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5103,
+    "verdict": "ALLOW"
+}

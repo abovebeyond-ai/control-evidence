@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ae1630bf566b1ba2d852a0f4faf6cfd2a352c74",
+            "branch": "workbench/klaslijsten-in-het-juiste-schooljaar",
+            "files_sha256": "ee41e897db9ce390945a5eab0ef0b90dfb55020f75c93a9d902aff82260f74ca",
+            "message": "Klaslijsten in het schooljaar waar ze over gaan"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922141204-ea6dc1"
+}

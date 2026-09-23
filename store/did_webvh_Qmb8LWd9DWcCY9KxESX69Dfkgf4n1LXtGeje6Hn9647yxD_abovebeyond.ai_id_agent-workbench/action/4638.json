@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nStep 1 of three towards a screen where someone at the desk can look at what comes in and say \"that is too much, that is too little\". This is the read side only: `GET /mix?by=platform&days=7`. The dashboard page follows in its own PR; wishes and dials come after that, once the effect of a dial can be seen on the same screen.\n\nThe reason: the mix was never shown anywhere. In the week to 2026-09-21 a third of the intake was six Chinese platforms, Toutiao alone brought 2,278 signals of which a fifth was kept, and TikTok, the source kept most often (70%), brought 77.\n\n## How\n\n- `packages/core/mix.mjs`, `signalMix({by, days})`. Per row: `in`, `kept` (not archived by classification), `waiting`, `cited` (an insight names it among its signals), `before` (the intake of the window just before), `share`, and `keptRate` over what has been judged, so a signal that still waits is not counted as dropped.\n- Axes: platform, kind of evidence (the same four kinds the evidence line of a reading uses), language, region, sector, cohort. A tag axis counts a signal under every tag it carries and reports `untagged`; the total stays the number of signals.\n- Windows 1, 7, 30 and 90 days, a closed list. Anything else is a 400.\n- Not used, on purpose: status `promoted` as a mark of quality. A Google Trends row of relevance 28 carries it.\n- Behind the staff gate like every non-public route (`every-route-gated` covers it). Cached five minutes per axis and window; on the live database the query takes 0.6 s for 7 days and 0.8 s for 90.\n- It reports and does not judge, like `/collection`.\n\n`test/mix.test.mjs` pins the counts by hand-countable fixtures.\n",
+            "branch": "workbench/the-mix-readable-2",
+            "title": "The mix of what comes in, readable along one axis at a time"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260921093555-38e927"
+}

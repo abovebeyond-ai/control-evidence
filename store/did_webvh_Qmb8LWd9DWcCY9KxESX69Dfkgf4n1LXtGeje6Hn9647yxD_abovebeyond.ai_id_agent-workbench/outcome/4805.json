@@ -1,0 +1,16 @@
+{
+    "action": "019c1c9754153a15861fe1b4cb92575e",
+    "effect": {
+        "detail": {
+            "base": "5da4e5fafcc5b0e582068e3f6b2845ea166a14d9",
+            "branch": "workbench/feat/a-page-that-is-not-there-says-which",
+            "commit": "f89f1d63c6c446fb9fbc4ae2b51d027dbbf774c2",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4803,
+    "verdict": "ALLOW"
+}

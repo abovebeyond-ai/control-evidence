@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3977e44b226bdb427d7c47582555b2efcbec8a36",
+            "branch": "workbench/versie-voet",
+            "files_sha256": "8e44d852a90552932104edd3158f2fb66697c3a31440d4d6374975eaa22e43c0",
+            "message": "De versie als voetregel aan de onderrand van het venster"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921090844-d2782f"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "20b8c36f636e841ba9c2163497d4580c",
+    "effect": {
+        "detail": {
+            "base": "92ed13435efb8c4c40580f68a1b46b8dbfeced56",
+            "branch": "workbench/leerlingformulier",
+            "commit": "e4df357e1afaf31736e05a65854da4feb9650228",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4773,
+    "verdict": "ALLOW"
+}

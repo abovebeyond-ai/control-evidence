@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding de-schadekeuze-per-wagen-komt-niet-aan. Replaces #764, which failed phpunit on a\ntest that carried the same typo: `CustomerModeSessionPriceTest` posted `width_damage` and therefore\nconfirmed the bug instead of catching it. It posts what the form posts now. Worth saying plainly:\nthe guard was written against the defect, so nothing was ever going to report it.\n\nThe per-vehicle customer-mode modal posts `with_damage`. The controller read `width_damage`, a field\nthat does not exist, so `intval(null)` gave 0. Worse, that 0 was written over the session key\n`stocklist_client_mode_marge_damage`: choosing \"met schade\" on the overview and then saving this\nmodal for one vehicle switched damage back off without anyone asking.\n\nThat is visible, not cosmetic. `CustomerModePrice::showsDamage()` drives two things: the damage block\non the detail page, and the two \"met schade\" buttons in the action column (offer and order). They\ndisappeared after saving, in front of a customer.\n\nThe other modal, `client_vehicle_index_mode`, read the field correctly the whole time, which is why\nthe overview behaved and only the per-vehicle save undid it.\n\nTwo of the three tests fail against the controller on main with \"Failed asserting that 0 is identical\nto 1\", the second one on the sentence that matters: the choice from the overview has to survive.\n\n**Found through a different report, and the other half is still open.** Shane said a price changed in\ncustomer mode did not change the price on the detail page. That is a separate thing and it is not in\nhere: on an **own** vehicle `detailPrice()` returns the retail price before it ever looks at the typed\nprice, so R S5-4.5 quietly beats R S5-4.6. Whether that is right is a question for Ilse, and it is\nnamed in the finding rather than decided here.\n",
+            "branch": "workbench/fix/the-damage-choice-arrives-2",
+            "title": "The damage choice arrives, and does not undo the one from the overview"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922142511-db93e9"
+}

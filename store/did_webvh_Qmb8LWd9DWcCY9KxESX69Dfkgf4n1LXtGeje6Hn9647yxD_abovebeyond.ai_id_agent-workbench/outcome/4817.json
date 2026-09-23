@@ -1,0 +1,16 @@
+{
+    "action": "52fd32cec2e05fbcda4795b66f1e81b9",
+    "effect": {
+        "detail": {
+            "base": "bea7835975c57a3afee38c414f2a4329f8bbe081",
+            "branch": "workbench/fix/a-deploy-does-not-break-an-open-page",
+            "commit": "8db1de92a3081a7de6c85b8f3177b39f6392b76c",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4815,
+    "verdict": "ALLOW"
+}

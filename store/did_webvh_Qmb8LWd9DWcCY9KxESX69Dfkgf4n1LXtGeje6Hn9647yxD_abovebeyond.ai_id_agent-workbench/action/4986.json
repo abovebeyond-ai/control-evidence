@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "712de8fe904e522d9e6e3444211715a7ba06dc33",
+            "branch": "workbench/feat/a-code-by-mail-is-a-second-factor",
+            "files_sha256": "7f974ccaa6869dc142aee1f0f67f5fd7e5e331807bde81b5aac71ccff9dcff99",
+            "message": "A code by mail is a second factor"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921185335-aefb30"
+}

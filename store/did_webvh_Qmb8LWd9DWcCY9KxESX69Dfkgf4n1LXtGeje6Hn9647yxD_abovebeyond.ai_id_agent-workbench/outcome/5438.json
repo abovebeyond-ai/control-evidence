@@ -1,0 +1,16 @@
+{
+    "action": "470cba30596af4626f0b4fe5d09bb0f3",
+    "effect": {
+        "detail": {
+            "base": "1108c5725eb779a5be464d43661974144764ec6c",
+            "branch": "workbench/het-schooljaar-dat-al-geladen-was",
+            "commit": "c9f21fe1661697496191106ddf7f9aa25031ee7e",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5436,
+    "verdict": "ALLOW"
+}

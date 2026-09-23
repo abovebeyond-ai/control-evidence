@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding de-api-update-start-een-registratie-na. Fixes #578.\n\n`VehicleApiService::updateCarpassInit()` took an untyped parameter, and `VehicleApiController::update()`\nhanded it `$decrypted_id` instead of the vehicle. PHP reads a property on an int as null with no more\nthan a warning, so `filled($vehicle->chassis_number)` was false and the guard never passed: an API\nupdate carrying a Car-Pass URL started no registration. The create path passes a real vehicle and has\nworked the whole time, which is why this survived.\n\nThe parameter is typed now. That is the actual repair: the same slip is a TypeError instead of\nsilence, for this caller and the next one. The caller passes the vehicle, refreshed, because the\nguard reads `mileage` and `carpass_id` and those were written a line earlier.\n\n**How far this reaches, measured on production rather than assumed.** `update()` refuses anyone whose\nrole does not carry `type = 1`. Exactly one role does (\"Premium trader\"), with one user. All 37 update\ncalls in the log, 17 to 22 September, came from other roles and were answered\n`{\"error\":\"update-method temporary unavailable\",\"status\":200}`. So the defect is real and reachable,\nbut by one partner, and that is worth saying out loud next to a fix.\n\nTwo things found while measuring, neither touched here:\n\n- `ApiLogRepository` prunes with `->where('created_at', '<', now()->subDays(14))->orWhere('action',\n  'api.update.vehicle')->delete()`. The `orWhere` is not grouped, so every `api.update.vehicle` row is\n  deleted on every prune regardless of age. That is why the log holds five days of update calls and\n  months of everything else, and it removes exactly the evidence this kind of question needs.\n- The update endpoint has answered \"temporary unavailable\" to twelve dealers' feed (\"Doorlinken\n  Voorraad\") for as long as the log reaches, with HTTP 200. If that is deliberate it is fine; if it\n  is not, nobody would have noticed.\n\nThe second test pins the guard rather than the symptom: handing an id is refused out loud. Run against\n`VehicleApiService` as it stands on main it fails with `Attempt to read property \"chassis_number\" on int`.\n",
+            "branch": "workbench/fix/the-api-update-hands-over-the-car",
+            "title": "The API update hands over the car, not its id"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922112344-f48f86"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "b329a84324495e17e3f3d261bc4e50e0",
+    "effect": {
+        "detail": {
+            "base": "723d2b4415ea2e63130617c121741ef62e731b95",
+            "branch": "workbench/geen-inline-php",
+            "commit": "8fd8cf8416924824ff66713da3b9d2dc29c71153",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5067,
+    "verdict": "ALLOW"
+}

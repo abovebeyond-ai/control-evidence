@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De zwaarste bevinding uit de opruimronde die je vroeg, en de enige met productierisico.\n\nDe evaluatietabel is leerlingen maal eindtermen, en elke cel vroeg haar eigen gegevens op. `scoreForStudent()` doet een query en werd tot vijf keer per cel aangeroepen; het maximum kwam uit een eigen query op de pivot; en de scoringservice werd per cel opnieuw gemaakt.\n\nGemeten, met acht leerlingen en zes eindtermen:\n\n| | queries voor 48 cellen |\n|---|---|\n| voor | 308 |\n| na | 19 |\n\nEen klas van twintig met vijftien eindtermen loopt daarmee naar de tweeduizend queries voor \u00e9\u00e9n pagina. Dat is het soort pagina dat op een drukke ochtend omvalt, en het viel nog niet op omdat de klassen in de proefjaren klein waren.\n\n**Wat er verandert.** De controller haalt de scores in \u00e9\u00e9n keer op en zet ze in een array op eindterm en leerling, leest de maxima rechtstreeks uit `att_level_evaluation`, en levert de leerlingen mee in plaats van ze twee keer in de view te laten berekenen. De view leest alleen nog uit die arrays. De scoreweergave ernaast (`livewire/edit`) deed dit al zo; deze view was de achterblijver.\n\n**De weergave is onveranderd, en dat is nagemeten**, niet aangenomen: de pagina is voor en na gerenderd voor een gewone toets en een waardegebaseerde, met een afwezige leerling en met feedback erbij. De tekst is identiek op de naam van de testleerkracht na, die de factory elke run anders maakt. E\u00e9n verdwaalde `</span>` zonder opening is onderweg meegegaan.\n\n**Getoetst.** Een test die de queries telt en onder de zestig blijft voor achtenveertig cellen, dus een volgende per-cel-query valt meteen door de mand. `php artisan test --parallel`: 1044 groen, alleen BuildStampTest faalt zoals in elke worktree zonder Vite-build. PHPStan schoon, Pint schoon.\n\nEr kwamen meer punten uit die ronde (een dode view van 203 regels, een dode tak in de paginakop, twaalf inline `@php(...)`, en acht plekken waar een uitzondering stil wordt ingeslikt). Die volgen apart; dit is de enige die vandaag iets kon breken.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/de-evaluatietabel-in-twee-queries",
+            "title": "De evaluatietabel vraagt haar scores in \u00e9\u00e9n keer op"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921193706-306310"
+}

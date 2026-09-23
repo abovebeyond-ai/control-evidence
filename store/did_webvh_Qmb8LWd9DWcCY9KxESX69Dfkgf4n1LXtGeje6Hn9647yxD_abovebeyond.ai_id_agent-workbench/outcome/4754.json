@@ -1,0 +1,16 @@
+{
+    "action": "762a370ce133704a2e11184fb6caaf2e",
+    "effect": {
+        "detail": {
+            "base": "87ef6378857a01facc5f66f23e2e711065b41b5c",
+            "branch": "workbench/mix-wishes",
+            "commit": "ee0a5e0e97507818b72baabef8570ad7540f67cf",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4752,
+    "verdict": "ALLOW"
+}

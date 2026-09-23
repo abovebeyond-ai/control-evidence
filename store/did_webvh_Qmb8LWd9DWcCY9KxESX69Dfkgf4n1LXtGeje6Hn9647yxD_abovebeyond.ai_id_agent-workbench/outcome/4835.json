@@ -1,0 +1,16 @@
+{
+    "action": "d2652bcc96690275b5246c97982e0c7e",
+    "effect": {
+        "detail": {
+            "base": "fe53ad6e65fdfe76878697484861702862751b5e",
+            "branch": "workbench/kaart-review",
+            "commit": "56ddaf2bde017e2794d598c90dfbb1ddf366729a",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4833,
+    "verdict": "ALLOW"
+}

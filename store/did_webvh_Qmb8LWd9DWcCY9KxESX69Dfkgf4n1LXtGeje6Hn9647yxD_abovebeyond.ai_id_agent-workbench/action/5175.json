@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De uptime-wacht vraagt `naviskore.be` elke minuut op, Forge controleert `/up` en de\napp-health-meting leest elk uur `/api/elixir`. Dat is ongeveer 44.000 requests per maand\ndie naar Nightwatch gaan en niets toevoegen: het uptime-oordeel komt van de wacht zelf,\nen of de scheduler nog loopt staat in `/api/elixir` (`elixir:beat`), niet in Nightwatch.\n\nEen globale middleware zet voor precies die requests `Nightwatch::dontSample()`. Nightwatch\nprepend zijn eigen middleware aan de globale stack, dus de geconfigureerde rate staat al\nwanneer deze draait en onze beslissing is de laatste.\n\nWat er dropt:\n\n- elke request met een user agent die met `Elixir` begint (de wacht op de voorpagina)\n- `/up` en `/api/elixir`\n\nWat blijft: alles van een mens, ook op dezelfde pagina, en een user agent die `Elixir`\nalleen verderop vermeldt.\n\n**Bewust geen sample rate op requests.** `NIGHTWATCH_REQUEST_SAMPLE_RATE` gooit een\nwillekeurig deel van echte gebruikers weg om plaats te maken voor verkeer dat per\nconstructie waardeloos is. Dit is precies, niet willekeurig.\n\n**Nog in `.env` te zetten, niet in deze PR** (scheduled tasks zijn het tweede grote deel,\nook ongeveer 43.000 per maand door `elixir:beat` elke minuut):\n\n```\nNIGHTWATCH_SCHEDULED_TASK_SAMPLE_RATE=0.02\nNIGHTWATCH_IGNORE_CACHE_EVENTS=true\n```\n\nDat kost niets: niemand leest Nightwatch voor de hartslag, en cache-events zijn veel en\nzeggen weinig. `NIGHTWATCH_EXCEPTION_SAMPLE_RATE` blijft op `1.0`, want daarvoor hangt de\nkoppeling er: exceptions worden issues, en die komen via de webhook op de projectpagina.\n\nVier tests, met mutaties nagekeken dat ze bijten.\n",
+            "branch": "workbench/nightwatch-eigen-wacht",
+            "title": "Onze eigen wacht niet aan Nightwatch melden"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922085644-dce2c7"
+}

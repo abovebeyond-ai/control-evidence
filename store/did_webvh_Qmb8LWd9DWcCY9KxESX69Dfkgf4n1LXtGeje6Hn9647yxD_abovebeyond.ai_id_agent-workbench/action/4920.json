@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fdadbac301c35ca9af80b734aec7914f452ca35d",
+            "branch": "workbench/fix/editing-a-deleted-vehicle",
+            "files_sha256": "6ba203efc471c511e70eb35df37b2e9cbbdf69d844656d751b680ff1b8787663",
+            "message": "Editing a vehicle that is gone is the list, not a 500"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921173903-ad9975"
+}

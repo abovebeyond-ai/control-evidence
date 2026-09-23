@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4fb5d9c47df58d8f5d4d219c24c799ff1ff118f1",
+            "branch": "workbench/ui/stocklist-text-says-where-it-travels",
+            "files_sha256": "d3dabfc64871c772f2e3242f4df09bcb13a6252e45b454dc6bd4d28405b8c0d2",
+            "message": "The stocklist description says where it travels"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922181824-37de28"
+}

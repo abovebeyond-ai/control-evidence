@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het laatste scherm van de mobiele ronde. De tabel van Delibereren heeft vier kolommen waarvan er \u00e9\u00e9n vrije tekst draagt, en die combinatie past niet op een telefoon: op 390 px viel de kolom Feedback buiten het scherm, wikkelde de tekst in een breedte die niemand zag, en werd elke rij driehonderd pixels hoog met een lege helft. Niets wees erop dat er nog een kolom was.\n\n**Vanaf sm blijft de tabel zoals ze was.** Daaronder staat dezelfde inhoud als lijst: per leerling \u00e9\u00e9n regel met een kleine avatar en de naam, het attest als grijs plaatje aan het eind, en de feedback eronder afgekort op twee regels. De hele regel is de link, niet de naam erin. Dezelfde kaart als overal: wit, `ring-1 ink-200`, rijen gescheiden met `divide-ink-100`.\n\nEen tabel met korte waarden mag wel zijwaarts schuiven in zijn kaart; het is de vrije tekst die het onmogelijk maakt. Die grens staat nu in `docs/design-system.md`, zodat de volgende tabel niet opnieuw geknepen wordt.\n\n**Drie dingen die meekwamen.**\n\n- Het attest werd per rij met een nieuwe `StudentProgressService` berekend. Nu \u00e9\u00e9n dienst voor de pagina en \u00e9\u00e9n berekening per leerling, want de tabel en de lijst tonen hetzelfde.\n- De bladwijzerbalk wordt alleen gerenderd als er te bladeren valt. E\u00e9n bladzijde gaf een witte balk met een streep erboven, en dat leest als een rij die is afgekapt: dezelfde fout als de lege knoppenrij uit #103.\n- De kolom heette \"Student\" terwijl het scherm er verder \"leerling\" van maakt.\n\nHet andere scherm van deze ronde, rapporten voorbereiden, is nagekeken en heeft niets nodig: \u00e9\u00e9n kolom, en die past.\n\n**Getoetst.** Drie tests erbij (de tabel wacht op een breed scherm, de feedback wordt afgekort, geen balk bij \u00e9\u00e9n bladzijde). `php artisan test --parallel`: 1036 groen, alleen BuildStampTest faalt zoals in elke worktree zonder Vite-build. PHPStan schoon, Pint schoon. Nagekeken op 390 px en op 1280 px, waar de tabel pixel voor pixel hetzelfde rendert als voor deze wijziging.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/delibereren-op-een-telefoon",
+            "title": "Delibereren op een telefoon: een lijst in plaats van een tabel die je niet ziet"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921175557-4e3f00"
+}

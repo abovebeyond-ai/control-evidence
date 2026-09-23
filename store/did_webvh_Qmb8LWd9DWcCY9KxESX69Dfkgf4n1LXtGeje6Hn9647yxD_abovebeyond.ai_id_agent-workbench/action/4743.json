@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`web-browse` had no rhythm, like `instagram-search` until #192. In the day to 2026-09-21 it ran on 70 collect rounds, made 1,308 model calls (more than classify, the largest consumer in the pipeline), took about six minutes of every round, and brought one new signal; about ten in the week. 21 of the 70 rounds were cut off mid-list, and a cut-off round loses the pages it had already read.\n\n## How\n\n- `cadence: {everyHours: 6}`. Nineteen front pages do not change by the quarter hour; four times a day reads each one morning, noon, evening and night. The existing rule holds: it rests only after a round that did its work, and is tried again next round after a failure.\n- The collector now tells every adapter when it will be cut off (`ctx.cutOffAt`). `web-browse` starts no new page in the last 80 seconds before that (a page is at most a 15 s fetch and a 60 s model call), keeps what it has, and logs which pages it did not read.\n- `rotated()`: the list turns one place per six hours, so the pages at the end today are not at the end every time.\n- `test/web-browse-rhythm.test.mjs` pins the rest, the rotation, the early stop and the collector's side of it.\n\nNot in here: the `crawl_cadence` column on the source rows (five say `daily`, fourteen say nothing). Honouring it per source needs a per-source stamp; today the collector stamps all rows of a type at once.\n\n## After the merge\n\nOne more `web-browse` round, then the log says `resting until \u2026` for six hours, and a collect round takes about ninety seconds instead of seven minutes.\n",
+            "branch": "workbench/web-browse-rhythm",
+            "title": "web-browse reads its pages four times a day, and keeps what it read"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260921110552-a5cd5a"
+}

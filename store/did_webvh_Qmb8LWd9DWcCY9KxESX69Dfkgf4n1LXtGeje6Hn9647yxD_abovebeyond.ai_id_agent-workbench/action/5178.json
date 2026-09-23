@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4f02b8aa0356d864da51eaad84af977bc85e67b9",
+            "branch": "workbench/refactor/dealer-switches-as-a-module",
+            "files_sha256": "52a2c82dbc7883b0f3a91015a3ee62e282e64327a113da1e564f720fd74b515d",
+            "message": "The dealer switches are a module with a test"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922090603-c7d321"
+}

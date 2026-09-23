@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "df5287f4521a1a7151ce1df7ada1e7efac7e64cf",
+            "branch": "workbench/fix/the-button-goes-to-the-biddings",
+            "files_sha256": "d636788c89dd6c9d62de948880875394597aca9e4d9481375de07be4c3fc2942",
+            "message": "The button goes to the biddings, and your own car stays in the list"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921084934-47ea00"
+}

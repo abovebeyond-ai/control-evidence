@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3e06e48e3219320b896be844037b1efefb6d152c",
+            "branch": "workbench/de-hand-op-alles-wat-klikt",
+            "files_sha256": "be94603df7ec0e4aba857f2a482678bcbd5ebd0237e2b5948eb0aeb7db5ba89e",
+            "message": "Een hand op alles wat klikt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260922143137-66d90a"
+}

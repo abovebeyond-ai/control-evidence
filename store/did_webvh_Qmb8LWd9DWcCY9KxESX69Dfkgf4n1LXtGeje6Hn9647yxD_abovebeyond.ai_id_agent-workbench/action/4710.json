@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vervangt #94 (mag dicht): dezelfde ordening van `.env.example`, maar met een kritische blik op wat er in de `.env` hoort.\n\n**Weg, en waarom.**\n- **Bugsnag.** Het hing aan het `stack`-logkanaal en meldde dezelfde uitzonderingen als Nightwatch, dat sinds vorige week alles ziet. Pakket (`bugsnag/bugsnag-laravel`), provider, logkanaal en `BUGSNAG_API_KEY` zijn weg. Het Bugsnag-account mag daarna dicht.\n- **De twee feature flags.** `RAPPORTEN_VOORBEREIDEN_ACTIVATED` en `DELIBERATIE_ACTIVATED` verborgen alleen een menu-item en staan voor iedereen al meer dan een jaar aan. De items staan er nu gewoon; de config-sleutels en de `@if`'s in het menu zijn weg.\n- **Drie driver-sleutels.** `BROADCAST_DRIVER`, `FILESYSTEM_DRIVER` en `QUEUE_CONNECTION` herhaalden hun standaardwaarde: er wordt niets uitgezonden, er is geen queue worker (`docs/deploy.md` zegt dat al) en alleen de lokale schijf wordt gebruikt.\n- **Dode sleutels** uit #94: `APP_DOMAIN`, `DB_DATABASE_TESTING`, `SCOUT_DRIVER`, `MEILISEARCH_*`, `EMAIL_BUGS`.\n\n**Wat blijft**, in deze volgorde: app, logging, database, cache en sessie, mail, Microsoft, Smartschool (callback-url en de schakelaar), Nightwatch, Elixir.\n\nNa de merge: op Ploi `BUGSNAG_API_KEY`, de twee flags en de drie driver-sleutels uit de `.env`, dan `composer install` loopt in het deployscript, `php artisan optimize` en de FPM-reload. PHPStan zonder fouten, suite groen.\n",
+            "branch": "workbench/env-kritisch",
+            "title": "Bugsnag, twee feature flags en drie driver-sleutels weg: de .env zegt alleen nog wat afwijkt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921104654-54dd9a"
+}

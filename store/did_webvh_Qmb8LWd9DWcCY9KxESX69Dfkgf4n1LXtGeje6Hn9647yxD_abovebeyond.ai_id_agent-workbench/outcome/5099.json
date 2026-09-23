@@ -1,0 +1,16 @@
+{
+    "action": "148670350ba60f1d5fbd101192f29c2c",
+    "effect": {
+        "detail": {
+            "base": "89d0cd21799ce50f288227a171a659cbc6dca52b",
+            "branch": "workbench/feat/the-build-folder-links-itself",
+            "commit": "9de03db48617d200a6e3c4911cb5152f359886bf",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5097,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fdadbac301c35ca9af80b734aec7914f452ca35d",
+            "branch": "workbench/fix/realgarant-under-the-seal",
+            "files_sha256": "1f9c2b5766ef17d6639a195e0ec19d565806048928bb260f9601e7232e06eadf",
+            "message": "RealGarant is not asked outside production, and not asking is not an error"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921175456-c1bb90"
+}

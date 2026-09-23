@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee dingen die op een telefoon niet werkten.\n\n**De eindtermkiezer.** Zeven filters met elk hun eigen minimumbreedte en een tabel met vijf kolommen: op een telefoon werd dat een lappendeken die uit het venster liep. Nu staan de filters twee per rij, even breed, met de keuze eindtermen of clusters en het zoekveld elk op een eigen rij; vanaf lg vloeien ze zoals ze deden. De tabel toont op een telefoon alleen de naam, met type en vak eronder in het klein; vanaf md komen de kolommen terug. Niets veranderd aan wat er staat, alleen aan waar.\n\n**De totalen per eindterm.** In de matrix staat het maximum in de eerste kolom; in de weergave per leerling stond er alleen \"op ?\" en was het dus niet te zetten. Nu staat er naast het scoreveld een tweede veld met de placeholder \"max\": hetzelfde `maxima`-veld als in de matrix, dus dezelfde validatie en dezelfde waarschuwing als er al hogere scores staan.\n\nAlleen Blade. Suite en PHPStan groen; nagekeken op 390 px en op 1280 px.\n",
+            "branch": "workbench/eindtermkiezer-mobiel",
+            "title": "Eindtermkiezer op een telefoon, en het maximum per eindterm per leerling"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921120640-ace252"
+}

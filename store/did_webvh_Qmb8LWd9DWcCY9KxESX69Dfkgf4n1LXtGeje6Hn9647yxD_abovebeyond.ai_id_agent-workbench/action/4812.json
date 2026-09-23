@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Vervolg op #100, dat het maximum naast de score zette: dat leest als iets van deze leerling, terwijl het voor de hele eindterm geldt en \u00e9\u00e9n keer gezet wordt.\n\n**Eerst het maximum, dan de score.** Een score zonder maximum kan niet bewaard worden, dus zolang het maximum ontbreekt biedt de kaart geen scoreveld aan: er staat \"maximum instellen\", naast Afwezig en Feedback. Afwezig zetten kan zonder maximum, een score niet. Staat het maximum er wel, dan komt het scoreveld erbij met \"op 10\" ernaast in stil grijs; \u00e9\u00e9n tik op dat cijfer en het wordt een invulveld met het woord maximum ervoor, bij het verlaten weer tekst. Hetzelfde `maxima`-veld als de eerste kolom van de matrix, dus dezelfde validatie.\n\n**De melding was verkeerd.** Een score zonder maximum gaf \"Score too high\", omdat een leeg maximum lager is dan elke score: `$maxima` krijgt in mount de pivotwaarde, dus de sleutel bestaat met `null` en de eerste controle sloeg over. Nu zegt hij \"Stel eerst het maximum in voor deze eindterm\". De drie meldingen van dit scherm waren Engels (\"No maximum set\", \"Score too high\", \"There are scores higher than this maximum\") en zijn nu Nederlands.\n\n**Uitlijning op een bureaublad.** De kolom stond gecentreerd terwijl de titel links staat; nu lijnen de schakelaar, de leerlingkeuze en de kaarten uit onder de titel. En een eindterm zonder prefix sprong in door een lege marge.\n\nTwee tests erbij: de melding zonder maximum, en de weergave die geen scoreveld aanbiedt zolang het maximum ontbreekt. Nagekeken op 390 px en 1280 px; suite en PHPStan groen.\n",
+            "branch": "workbench/maximum-vragen",
+            "title": "Eerst het maximum, dan de score, en de melding zegt dat ook"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260921131826-36f537"
+}

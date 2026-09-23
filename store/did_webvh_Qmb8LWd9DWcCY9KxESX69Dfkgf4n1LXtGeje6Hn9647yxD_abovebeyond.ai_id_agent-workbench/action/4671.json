@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abed169bf14e06754656f16060a21c2fbab401ff",
+            "branch": "workbench/fix/a-merchant-bids-only-in-his-own-garage",
+            "files_sha256": "0c66101992dc575d654f97e6e5785bf29f114073a2036834d231e358fbec129a",
+            "message": "A merchant bids only in his own garage"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921101246-56c199"
+}

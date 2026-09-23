@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding de-chassis-modal-post-een-rauw-id. Nightwatch #36.\n\nA dealer opened a sheet on 22 September 2026, used \"toevoegen via chassisnummer\", and got a 500.\n\n`createFromVIN` reads its parameter with `base64_decode`, because every other link to it is built\nwith `LinkHelper::route`, which encodes. This one modal built its form action with the plain\n`route()` helper and the raw id, so `base64_decode('22992')` produced three random bytes. Those are\nnot empty, so `filled($vehicle_id)` waved them through, and the vehicle was only looked up much\nlater, inside `OwnStockService::except_dealers`, where `null->except_dealers()` ended the request.\nThe modal is included in both classic sheets, so this is an ordinary action, not an odd corner.\n\nTwo halves:\n\n- The modal encodes, like its three siblings.\n- The id is checked first, before the Outbound gate, because recognising a broken id costs nothing\n  and carrying it does. An id that points at no vehicle is a 404 now, the same treatment bevinding\n  `verkeerd-id-geeft-500` gave other screens.\n\nPutting the check first made two later defences provably dead, and both are gone rather than left as\ndecoration: a nullsafe on a vehicle that cannot be null any more, and an `is_null($vehicle)` two\nlines after that same vehicle was already dereferenced. Static analysis is clean without adding a\nbaseline entry.\n\n**What the tests can and cannot show.** They pin the two halves: the modal encodes, and a raw id\nanswers 404 instead of reaching a service. They cannot reproduce the 500 itself, because outside\nproduction `Outbound::allows('vwe')` refuses the lookup first and the request ends at 422. Against\nthe code on main the raw id gives that 422, not a crash; the 500 belongs to an environment where the\nlookup is allowed. That is written into the finding too, so the next reader does not chase it.\n",
+            "branch": "workbench/fix/the-chassis-modal-posts-the-id-the-route-expects",
+            "title": "The chassis modal posts the id the route expects"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260922132119-4cf833"
+}

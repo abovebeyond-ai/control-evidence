@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"Kunnen we er niks aan doen of niet beter behandelen?\" \u2014 for this one the handling was already right and the reporting was wrong.\n\nremove.bg answering \"Could not identify foreground in image\" is not a failure. It is a valid answer to a hard photo, and R S1-6.8 has said so for a while: the original is written as the \"cut out\" version, the sheet keeps a picture and the job carries on. That branch does exactly that.\n\nIt ended with `report($e)`. So a thing that worked as designed was filed as an exception, and on 21 September the error list showed **23 occurrences affecting five dealers** for it \u2014 in the very list used to spot what is actually broken. That is the second time today a list cried wolf: five already-fixed issues were still standing open this afternoon for the same reason.\n\nIt is now an ordinary log line with the photo and the file. Any **other** answer from remove.bg stays a fault, keeps its `report()` and keeps logging `errors[0].title` \u2014 the test pins that line, because without it this would not be tidying up but hiding.\n\nR S1-6.8 now says what happens, why it is not a fault, and what the count was that made it visible.\n",
+            "branch": "workbench/fix/a-photo-without-a-foreground-is-not-a-fault",
+            "title": "A photo without a foreground is not a fault"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260921170132-27b4d0"
+}
