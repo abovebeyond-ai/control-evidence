@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6f4e451a1666aff5d9259dc5f6e26404acdd2486",
+            "branch": "workbench/ui/label-names-the-basis",
+            "files_sha256": "7228707a57e17f7ded0db04aec4f3d81755780ab593d77ae3a9724682cb6b143",
+            "message": "The label names the basis on a margin vehicle too"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923102057-7774a0"
+}

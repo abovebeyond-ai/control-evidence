@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0e968a087e0d95d97deffe7f5e4aa674e05e6737",
+            "branch": "workbench/prune-orders",
+            "files_sha256": "f13130a8d86bc26a2492a08ef3acf9c3816562ea18c8d321c314283203f6554f",
+            "message": "A flag for the orders nothing reads any more"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923135320-06edc7"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "3cfb0edec2855b717beb49e2952af2ec",
+    "effect": {
+        "detail": {
+            "base": "1e3a488b7e250c9f2e0a147e5ade413ee65a8dbf",
+            "branch": "workbench/fix/photos-missing-in-the-bucket",
+            "commit": "f1428115fd4c70d831c28c4165362c1ac11c267f",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5844,
+    "verdict": "ALLOW"
+}

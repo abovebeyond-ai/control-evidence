@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "00b3edfbd17bc9827737a45cfd1c3c462cc22a94",
+            "branch": "workbench/montuur-slug",
+            "files_sha256": "64254d10f08640a8d472caf9bb636759c206efadedb783c4d111b9f1a7c37373",
+            "message": "A frame lives at its slug, and its old address keeps working"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923121504-decd98"
+}

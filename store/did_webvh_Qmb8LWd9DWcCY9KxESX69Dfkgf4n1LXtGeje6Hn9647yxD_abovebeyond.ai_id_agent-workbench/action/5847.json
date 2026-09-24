@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Beheer > Werking counts eleven photo rows without a file and names `stocklist:photos-without-file` as the next step. Running it on production answers:\n\n```\nNo photo rows without a file.\n```\n\nNil rows, while the screen keeps counting eleven. I wrote that line an hour earlier the same day and did not check that the command could reach the rows standing next to it.\n\n## Two different sets\n\nThe command matches rows with an **empty path** and `processing = 0`: what the partner API left behind until 18 September when the download at the partner failed.\n\nThe eleven on production are the other case. They carry a name, the file never arrived in the bucket, and `processing` is still 1 from a job that gave up. That is exactly what R S1-6.36 has made impossible since 18 September, but the rows from before it (February through August, all of them platform copies) are still there.\n\nA next step that does nothing is worse than no next step: you run it, you read \"nil rows\", and after that you stop believing the number beside it.\n\n## The second pass\n\n`--check-bucket` asks the same question of the bucket, one HEAD per row (`fileExists`, R S1-6.38, so it is not a directory listing). Three things keep it safe:\n\n- it requires `--older-than`, because a row of a few minutes may still have its file on the way;\n- a bucket that does not answer counts as \"file present\", so doubt never leads to deleting;\n- the delete runs on the ids just judged, not on the query again \u2014 in this pass the query is the candidate list, not the result, and confusing the two would wipe every row that does have a file.\n\nThe line in the fold now names the full command.\n\n## Verified\n\n`TheCleanUpReachesTheRowsItNamesTest`: a row with a path and no file is reached, a row whose file is there survives, a fresh row is left alone, and the pass refuses without an age.\n\n190 tests and 1.202 assertions across the rule catalogue, the photo commands and the operations screen; `phpstan` green over the whole project; `pint` green on the added file.\n\nFixes bevinding het-opruimcommando-raakte-de-rijen-niet.\n",
+            "branch": "workbench/fix/photos-missing-in-the-bucket",
+            "title": "The clean-up reaches the rows the screen points it at"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923160443-500209"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e7c1be2d0466183d37526e4a5dc059431aebb2d3",
+            "branch": "workbench/fix/downloads-are-responses",
+            "files_sha256": "97a8ce55d84961f2c0c764428f83802323603f8d93c46099d30f6dfaa15d8c61",
+            "message": "A download is an answer, not output written straight out"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923142014-b57264"
+}

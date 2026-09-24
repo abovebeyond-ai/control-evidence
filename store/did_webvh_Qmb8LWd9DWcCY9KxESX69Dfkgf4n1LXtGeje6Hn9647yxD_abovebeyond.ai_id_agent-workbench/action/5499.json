@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A follow-up on #778 and #779, both merged. Frederik's complaint was answered; the shape of the answer was wrong twice.\n\n## What went wrong twice\n\nFirst version: the sentence in a bordered block, `font-semibold` on near-black ink. Shane: \"wel heel erg zwart/vet, ok met huisstijl?\"\n\nSecond version (#779): a notice in the status colour amber, following the pattern `/huisstijl` documents for messages. Shane again: \"maar da's toch niet de huisstijl\". He is right, and the reason is worth keeping. Amber reads as a warning, and nothing is wrong: **that a vehicle carries VAT is a property of the vehicle, not a status.** The block was also the only warm colour on a panel that is otherwise ink, grey and blue.\n\nBoth versions added volume where the problem was placement.\n\n## What it actually needed\n\nThat sentence is the amount field's own `<label>`. It always was; it just sat *under* the field, as small grey text beside an amount the trader had already typed. `/huisstijl` puts a label above its field, in ink at medium weight:\n\n```blade\n<label class=\"mb-1.5 block text-sm font-medium text-brand-ink\">Tekstveld</label>\n```\n\nSo the label moved from below to above and now carries label weight. That is the whole change. No new sentence, no colour, no icon, and `bid_excl_vat_notice`, the key the two intermediate versions needed, is removed from the four language files again.\n\nThe confirmation keeps its VAT sentence from #778: it is the last screen before a bid that cannot be withdrawn.\n\n## The test now pins the lesson\n\nRewritten to hold the place and the absence of volume rather than the wording, because that is what went wrong twice:\n\n- the label stands **above** the amount field;\n- there is exactly **one** label for that field (two labels confuse a screen reader);\n- it names the VAT only on a VAT vehicle, and the confirmation follows the same condition;\n- it carries **no status colour**, and does carry ink at medium weight.\n\nVerified locally: 28 tests, 857 assertions across the bidding tests, the rule-catalogue tests and the stylesheet test.\n",
+            "branch": "workbench/ui/vat-line-is-the-fields-label",
+            "title": "The VAT line is the field's label, above the field"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923094915-1d2eac"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e683e9a1d36c52245c61a5c64b4e54c3349fda42",
+            "branch": "workbench/superseded-since",
+            "files_sha256": "971879de7ddaa6ad7d993661919472a76499e056e34dd81b66f3c54ad6317b98",
+            "message": "A superseded reading says since when, and its card says what it absorbed"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260923131407-0ae3f3"
+}

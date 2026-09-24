@@ -1,0 +1,16 @@
+{
+    "action": "aa550fb8d2376075e851b40bba14938f",
+    "effect": {
+        "detail": {
+            "base": "e48a5e801eae47ccb708242bdb01a746b761dc63",
+            "branch": "workbench/prune-personal",
+            "commit": "063a7cde0db0f00fca07cfb7b757066d272ea2cb",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5706,
+    "verdict": "ALLOW"
+}

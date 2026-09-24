@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dd425b05173d823ac727e9616a0a67d2599adcd7",
+            "branch": "workbench/scholengroepen-en-een-logo-per-school",
+            "files_sha256": "3da0ac2e7dfdfb66dd8b170174cfa261b9ff98ed064ca55033634e9b3a4a957a",
+            "message": "Scholengroepen via een scherm, en het logo per school"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923135808-7eda47"
+}

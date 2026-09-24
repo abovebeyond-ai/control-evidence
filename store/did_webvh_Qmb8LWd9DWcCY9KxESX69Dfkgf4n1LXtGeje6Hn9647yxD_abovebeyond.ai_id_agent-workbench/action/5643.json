@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een sectie die op een volgende pagina doorloopt zegt daar \"vervolg\" naast haar titel.\n\n## Wat er gebeurde\n\nElke sectie van het afgedrukte rapport is een tabel met de sectietitel in de kop, en dompdf herhaalt die kop op elke pagina waar de tabel op doorloopt. De lezer zag op pagina twee \"Deel 1 - Basisvorming\" boven de laatste feedback van een leerkracht en kon niet zien dat het een vervolg was. De templatecommentaar van 22 september zei dat \"vervolg\" niet kon: dezelfde markup wordt op de eerste pagina en op de rest getekend, en een template weet niets van pagina's.\n\n## De wijziging\n\nDe renderer weet het wel. dompdf roept v\u00f3\u00f3r elk frame dat hij tekent een callback aan (`begin_frame`), met het canvas op de pagina van dat moment. `App\\Support\\Reporting\\ContinuedSections::attach($pdf)` hangt die callback aan de PDF: de titelcel is gemarkeerd met `data-section-title` in de view, en de tweede en elke latere keer dat die cel getekend wordt schrijft de klasse \"vervolg\" ernaast op het canvas (9pt, in de tint van de kolomlabels), na de reflow en zonder die te raken. Beide PDF-controllers roepen het aan v\u00f3\u00f3r `PageNumbers::stamp`, want dat rendert.\n\nTwee dingen die dompdf onderweg leerde: de stijl van een frame geeft het lettertype al opgelost als bestandspad (`Helvetica-Bold`) terug, en daarmee meet je, want `getFont(pad, 'bold')` vindt niets en meet een terugval die een tiende te smal is (het woord plakte tegen de titel); en de tekst in de cel begint op de positie van het tekstframe, niet van de cel.\n\n## De rechter\n\n`ContinuedSectionsTest` laat dompdf een sectie van veertig vakken over een echte paginagrens tekenen en leest terug op welke pagina's het woord geschreven is: `[2, 3]` en niet pagina 1; een sectie van vier vakken krijgt niets; en beide controllers hangen de markering aan v\u00f3\u00f3r de paginanummers renderen. Drie mutaties: pagina 1 mee gemarkeerd (2 rood), de markering uit de view (1 rood), attach na stamp in een controller (1 rood). De teller registreert alleen wat er werkelijk geschreven is, want een teller die het uit alle tekeningen afleidde liet de eerste mutatie door.\n\nVolledige suite groen op MariaDB, op de twee bekende worktree-artefacten na. Nagekeken op een proefblad van 26 vakken: pagina 1 zonder, pagina 2 met \"vervolg\" op 6pt van de titel.\n",
+            "branch": "workbench/vervolg-op-de-herhaalde-sectiekop",
+            "title": "Vervolg naast de herhaalde sectiekop"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923123738-de8f89"
+}

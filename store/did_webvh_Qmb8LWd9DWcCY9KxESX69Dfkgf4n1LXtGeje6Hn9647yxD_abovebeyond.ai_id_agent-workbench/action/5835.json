@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De checklist van een nieuwe school kent de scholengroep, het personeel en de kopie.\n\n## Wat er gebeurde\n\n`School::whatIsStillMissing()` op de schoolpagina zei sinds augustus wat een verse school nog nodig had: periodes, clusters, aanbod, een Smartschool-koppeling. Twee dingen die het onboarden vandaag ook vraagt stonden er niet: bij welke scholengroep ze hoort (zonder ziet alleen een superbeheerder haar) en of er al iemand werkt (zonder personeel kan niemand er in). En de tekst eronder zei dat de eindtermenstructuur niet van een bestaande school over te nemen is, wat sinds #159 niet meer klopt. Stap 5 van het onboardingplan, klein omdat het meeste er al stond.\n\n## De wijziging\n\n- Twee regels erbij, in de volgorde waarin een school ingericht wordt: eerst de groep, dan periodes, clusters, aanbod, dan personeel (`school_staff`), dan Smartschool.\n- De schoolpagina noemt `php artisan naviskore:copy-curriculum <van> <slug>` bij de eindtermenstructuur.\n\n## De rechter\n\n`CreatingASchoolTest`: een verse school mist zes dingen in die volgorde; een school in een groep met een beheerder mist de groep en het personeel niet meer maar wel haar periodes; een school die alles heeft mist niets (de bestaande test, ongewijzigd groen omdat de thuisschool van het scenario al een groep en een superbeheerder heeft). Volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n",
+            "branch": "workbench/de-checklist-kent-de-groep-het-personeel-en-de-kopie",
+            "title": "De checklist kent de groep, het personeel en de kopie"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923153635-85c4b0"
+}

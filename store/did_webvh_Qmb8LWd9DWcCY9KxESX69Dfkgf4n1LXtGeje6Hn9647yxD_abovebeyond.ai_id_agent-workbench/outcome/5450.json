@@ -1,0 +1,16 @@
+{
+    "action": "fbf3df51374cf9b5b44f27dbad339a23",
+    "effect": {
+        "detail": {
+            "base": "053d34cff382c4af0f134e75c42230a8ae2dd90d",
+            "branch": "workbench/fix/widget-speaks-the-visitors-language",
+            "commit": "5a4bec3424d61bc82c8de180acfcf956e7d3bc2c",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5448,
+    "verdict": "ALLOW"
+}

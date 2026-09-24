@@ -1,0 +1,16 @@
+{
+    "action": "d9be82b683fc3a6eb3b21bcddbc1538c",
+    "effect": {
+        "detail": {
+            "base": "7cfee7e5b2d4a7ae00e1e671d8f2340af979ce13",
+            "branch": "workbench/het-grijs-van-het-blad-zelf",
+            "commit": "6bc148f204060ba304954ae553c5bb4106aa5df8",
+            "files": 30,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5622,
+    "verdict": "ALLOW"
+}

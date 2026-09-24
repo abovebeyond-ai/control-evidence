@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De Studio draagt al een slug per taal op een montuur (`localeSlug`), maar de site las hem niet: het adres was het document-id. Shane vulde `f8` en `h8` in en er veranderde niets, en dat klopt, want er was niets dat ernaar keek.\n\nDe veertig gemigreerde monturen hebben een sprekende id uit de overname (`frame-couture-h6`), maar wat sindsdien in de Studio bijkomt krijgt de willekeurige id van Sanity. Zo stond de F8 op:\n\n```\n/nl/montuur/5ac81fd5-ffa6-48e0-98f8-c32b5e69fd35\n```\n\nEen adres dat niets zegt, niet te delen is zonder uitleg en geen woord achterlaat in een zoekresultaat. Elk montuur dat erbij komt erfde dat.\n\n## De regel\n\n- De slug wint zodra hij ingevuld is; de id blijft de terugval. Niemand hoeft dus veertig monturen tegelijk van een slug te voorzien.\n- Een adres op de id, of op de slug van een andere taal, stuurt met 301 door naar het adres van deze taal. Bestaande links blijven werken en geven hun waarde door. Dat is dezelfde regel als bij de pagina's.\n- De sitemap en de monturenrasters op een collectiepagina noemen het adres dat de pagina zelf draagt (`Content::frameUrl`). Anders staat er in de sitemap een adres dat meteen omleidt naar een ander.\n\n## E\u00e9n ding dat de test ving\n\nBinnen de montuurpagina telde het stuk uit het adres als de id van het montuur. Dat is sinds de slug niet meer hetzelfde, en het label en de Couture\u00b2-paren zoeken op id: zonder die wijziging bleef de titel leeg op precies de pagina's die een slug hebben. De eerste test van de reeks viel daarop om.\n\n## Nagekeken\n\n`tests/Feature/MontuurSlugTest.php`, zeven tests: een montuur met slug staat op zijn slug, het oude id-adres stuurt door, de slug van een andere taal stuurt door naar die van deze taal, een montuur zonder slug houdt zijn id-adres, de sitemap noemt het adres dat de pagina draagt (en niet het omleidende), de collectiepagina linkt naar de slug, en een onbekend adres blijft een 404.\n\n370 van 374 tests groen, pint schoon, phpstan zonder fouten. De vier die falen, falen ook zonder deze wijziging: die willen een `.env` in de checkout.\n",
+            "branch": "workbench/montuur-slug",
+            "title": "Een montuur staat op zijn slug, en zijn oude adres blijft werken"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923121504-decd98"
+}

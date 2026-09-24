@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a37bb4a304e813c9bc769605d9c9d77a70b15ee3",
+            "branch": "workbench/de-linkerrandtest-krijgt-een-databank",
+            "files_sha256": "5bf057280281694d1693d7410c051f3116df3b4fe7b6b2e17da8cc6da4305dfe",
+            "message": "De linkerrandtest krijgt een databank"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923135107-f4c7e3"
+}

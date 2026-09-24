@@ -1,0 +1,16 @@
+{
+    "action": "8776312c514e47af6234043450989f72",
+    "effect": {
+        "detail": {
+            "base": "009ca45181f32d4a2d0eb188544a705e9a56e2c2",
+            "branch": "workbench/ui/werking-is-om-te-scannen",
+            "commit": "1cd267eac964c732304fcdd0c90a77fe8bcd89f8",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5700,
+    "verdict": "ALLOW"
+}

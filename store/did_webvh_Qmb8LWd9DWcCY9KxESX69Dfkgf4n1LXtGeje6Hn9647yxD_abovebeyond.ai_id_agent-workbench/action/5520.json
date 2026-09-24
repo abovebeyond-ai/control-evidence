@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ba3e13ce989e5a25af146f486e02a1eaf43d5581",
+            "branch": "workbench/feat/two-details-frederik-asked-for-2",
+            "files_sha256": "b4317c140739998ab470092b4ceb3cb55c645ce5a09cbfcc3a879f5e118a85d4",
+            "message": "Two details Frederik asked for"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923105025-de0685"
+}

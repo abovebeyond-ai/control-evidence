@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "709533260c07ba693ab102b90b91a7a3741cc35c",
+            "branch": "workbench/het-blad-uit-chromium",
+            "files_sha256": "9f554ab08281da35beea186caacdff2497f6dd3fb7919ee95319327352382691",
+            "message": "Het blad uit Chromium"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924060624-effa9e"
+}

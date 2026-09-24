@@ -1,0 +1,16 @@
+{
+    "action": "af240a723ffec31a7dce5cf9d02818ce",
+    "effect": {
+        "detail": {
+            "base": "1f56e8447bb03374b8446912109a8bb7486b8392",
+            "branch": "workbench/foutpagina-merk",
+            "commit": "935a401200582b2ca3ff7e22aa87975fb6420d8e",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5553,
+    "verdict": "ALLOW"
+}

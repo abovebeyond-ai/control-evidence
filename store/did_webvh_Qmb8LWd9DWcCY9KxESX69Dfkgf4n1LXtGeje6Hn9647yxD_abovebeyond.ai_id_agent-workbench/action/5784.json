@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abf8b111bd398650557dd273a1289e71855e4da9",
+            "branch": "workbench/prune-orders",
+            "files_sha256": "f13130a8d86bc26a2492a08ef3acf9c3816562ea18c8d321c314283203f6554f",
+            "message": "A flag for the orders nothing reads any more"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260923135405-324c61"
+}

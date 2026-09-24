@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f55d779b6e3a09e781479383e7d79b9358842387",
+            "branch": "workbench/nieuwsbrief-weg",
+            "files_sha256": "f275d6b6b7773b04142fc2581b4c6fc905ad0c2d9f611f1336dbfc2e6f363613",
+            "message": "The newsletter list leaves the Studio"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20260923131434-bb1557"
+}

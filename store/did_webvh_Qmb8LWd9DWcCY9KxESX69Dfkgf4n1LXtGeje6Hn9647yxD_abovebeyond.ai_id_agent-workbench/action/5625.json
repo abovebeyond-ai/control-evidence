@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het grijze blok op papier krijgt het grijs van het blad zelf, en zijn eigen inkt.\n\n## Wat er gebeurde\n\nGrijs was op papier `#cccccc`, een neutraal grijs, naast koppen en inkt die blauwgrijs zijn (`#697380`, `#0d1928`). Het viel uit de toon, precies wat de stylesheet van het web in 2026-09 al zei over de Tailwind-pastels naast ink, en waarom het scherm zijn banden in oklch op \u00e9\u00e9n tint zette. Shane: \"qua kleur nog niet perfect\".\n\n## De wijziging\n\n- `ValueColor::hexColor()`: grijs wordt `#cdd1d8`, het grijs van het scherm (`oklch(86% 0.010 255)`) in hex. De vier oordeelkleuren blijven de printkleuren van de school: \"papier houdt hexColor()\" gaat over het oordeel, en grijs is geen oordeel (S4-4.8, geen letter).\n- `ValueColor::printInk()`: de inkt voor een getal op de kleur. Ink op de vier printkleuren; op grijs de donkere stap van dezelfde tint (`#2e3947`), zoals op het scherm, zodat het blok als \u00e9\u00e9n ding leest.\n- `div-section.blade.php` schrijft `$band->printInk()` in plaats van \u00e9\u00e9n vaste inkt.\n\n## De rechters\n\nDe 28 snapshots die een grijze band bevatten werden rood en zijn bijgewerkt; de diff is 88 regels en elk daarvan is `#cccccc` \u2192 `#cdd1d8` op een `*ColorPrint`-veld, niets anders (geteld met `git diff | sort | uniq -c`). `TheNumberSitsOnTheColourTest`, de PDF-controllertest, PHPStan en Pint groen. Nagekeken op een proefblad op 288 dpi naast de vier oordeelkleuren.\n",
+            "branch": "workbench/het-grijs-van-het-blad-zelf",
+            "title": "Het grijs van het blad zelf"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923122401-4a0d4b"
+}

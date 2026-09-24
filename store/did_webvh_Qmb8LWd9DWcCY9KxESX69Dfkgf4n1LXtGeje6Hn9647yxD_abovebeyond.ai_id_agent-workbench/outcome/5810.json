@@ -1,0 +1,16 @@
+{
+    "action": "9c40c65d7ad8178e26e1697b304b78c8",
+    "effect": {
+        "detail": {
+            "base": "dd425b05173d823ac727e9616a0a67d2599adcd7",
+            "branch": "workbench/scholengroepen-en-een-logo-per-school",
+            "commit": "1938b02594ac61fbf666e419e3413dc2b5b11203",
+            "files": 19,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5808,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`stocklist:smoke --all` has been exiting 1 every morning at 06:30 since 21 September, and Nightwatch #22 alerted with it. The failing line:\n\n```\n\u2717 realgarant  token in 2048 ms; formules voor wagen #23037: Warranty programs not found for Real Garant\n```\n\n(The issue's title still says `stocklist:dailyexport`, from its first occurrence; Nightwatch groups on the message and `ScheduleRunCommand.php:215` says the same thing for every scheduled command that exits non-zero.)\n\n## Nothing was wrong\n\nVehicle #23037 is an Opel Corsa from 2002 with 94.928 km, and the one below it a Citro\u00ebn C3 from 2004 with 108.908 km. No warranty programme exists for either, and \"Warranty programs not found\" is the correct answer. Measured on production the same morning, the three vehicles under those two each returned two programmes:\n\n```\n#23037  Opel Corsa C  2002  94.928 km  => FAIL: Warranty programs not found\n#23035  Citroen C3    2004 108.908 km  => FAIL: Warranty programs not found\n#23017  Audi A1       2024  20.031 km  => 2 formules\n#23014  Smart fortwo  2019  78.980 km  => 2 formules\n#22955  Peugeot 3008  2021  57.703 km  => 2 formules\n```\n\nThe check took `orderByDesc('id')->first()`, the newest vehicle carrying RealGarant codes, as the measure of the whole integration. Put an old car at the top of the stock and the integration reads red for as long as it sits there. The verdict hung on what happened to be in the stock rather than on what it was meant to measure.\n\nThat costs more than one red line: a watchman that cries wolf stops being read, and this one had a daily alert and a failing exit code on a scheduled task attached to it.\n\n## What it does now\n\nIt asks at most three vehicles, newest first, and stops at the first one with programmes \u2014 so on an ordinary morning that is still one call. The verdict is separated from the answer: programmes found is ok with the count, none of the three eligible is **also** ok with the reason named, because the partner answered. Only a throw (timeout, no answer) is a failure.\n\n`realgarantVerdict()` holds that judgement away from the database and the network, so `TheSmokeTestJudgesTheConnectionTest` pins it without touching RealGarant. Rule R P3-13.8.\n\n## Verified\n\n318 tests and 751 assertions over the rule catalogue and the integration checks; `phpstan` green over the whole project; `pint` green on the added file.\n\nFixes bevinding de-rooktest-beoordeelde-de-wagen-en-niet-de-koppeling.\n",
+            "branch": "workbench/fix/realgarant-probe-vehicle",
+            "title": "The smoke test judges the connection, not the vehicle it picked"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924051521-0fde64"
+}

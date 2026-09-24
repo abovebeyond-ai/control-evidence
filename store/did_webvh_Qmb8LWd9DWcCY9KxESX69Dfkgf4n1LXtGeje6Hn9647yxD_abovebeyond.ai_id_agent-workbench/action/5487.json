@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Frederik, through Ilse, 23 September 2026:\n\n> Zou het mogelijk zijn om bij de biedingswagens als het over een BTW voertuig gaat, dit nog duidelijker te vermelden bij het plaatsen van het bod aub? We hebben daar in het verleden al problemen mee gehad met handelaren die 'het niet gezien hadden'. Hun bod die ze plaatsen is exclusief BTW.\n\n## Why it was missed\n\nThe sentence was already there. It sat under the \"Plaats bod\" button, as `text-xs text-brand-gray`, beside an amount the trader had by then already typed. Anyone working down the form reads it after the decision, or not at all.\n\n## What changes\n\nIt is said twice, in the two places where it still changes something:\n\n1. **Above the amount field**, before the amount is typed, as a bordered line with a percent mark rather than grey fine print.\n2. **In the confirmation**, the last screen before a bid that cannot be withdrawn, and the one thing a trader certainly reads. That confirmation already warned that a bid is final; on a VAT vehicle the VAT sentence comes first and the rest stays word for word, which the test checks.\n\nA margin vehicle gets neither. There is no VAT to add there, and a notice standing on every vehicle stops being read within a week. The label in the bidding overview is untouched, as Frederik asked.\n\nThe existing small label under the field stays as well: it is the field's real `<label>`, so a screen reader names the field by it, and removing it would cost accessibility to fix a reading order.\n\n## Pinned\n\n`ABidOnAVatVehicleSaysExclVatTest` holds the two things that caused the complaint: the notice stands **above** the amount field, and both it and the confirmation hang on the VAT condition. Plus the two sentences existing in the four languages, and the VAT confirmation still carrying the \"a bid is final\" warning in full.\n\nR B1-4.3 now also carries the decision it rests on, kept verbatim in `bronnen/beslissingen/2026-09-23-btw-bij-het-bieden.md`.\n\nVerified locally: 24 tests, 103 assertions across the new test, the bidding tests and the rule-catalogue tests.\n",
+            "branch": "workbench/ui/bid-says-excluding-vat",
+            "title": "A bid on a VAT vehicle says excluding VAT before the amount and again at the confirmation"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923083603-a23df2"
+}

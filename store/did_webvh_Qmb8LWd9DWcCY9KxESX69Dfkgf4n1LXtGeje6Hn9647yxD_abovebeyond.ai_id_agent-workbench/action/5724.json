@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d3357533524ff1b0b6d13c4a0c31c2391c7c5c5e",
+            "branch": "workbench/folded-trends-keep-their-address",
+            "files_sha256": "7e0f928ddbbb8196efcd1d1de5c2bda27132c61a53615a681738e467e3e96d90",
+            "message": "A trend folded into another keeps its address, and the door says what happened"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260923131811-375bd8"
+}

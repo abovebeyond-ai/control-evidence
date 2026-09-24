@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "62c5862243d162aa172f06a3a85609664a258969",
+            "branch": "workbench/one-trend-per-idea",
+            "files_sha256": "92360394aa53ea7981c81f338516d84e7cd999e56f44aa7c04f6024a1ba42f3f",
+            "message": "One trend per idea: twins linked to their head, refinements linked both ways"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260923124032-38017f"
+}

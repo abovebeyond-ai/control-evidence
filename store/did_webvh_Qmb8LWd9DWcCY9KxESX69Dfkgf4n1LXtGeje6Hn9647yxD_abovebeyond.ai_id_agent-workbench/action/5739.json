@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De nieuwsbriefadressen verhuisden naar de databank omdat de Sanity-dataset publiek leesbaar is, en het documenttype verdween uit de Studio ([hoet-sanity#8](https://github.com/Hoet-design/hoet-sanity/pull/8)). Daarmee verliest de redactie haar enige zicht op de lijst, en dat is precies het argument waarmee ze ooit in de Studio zichtbaar gemaakt werd. Het staat er nog in `structure.ts`: toen Cabrio er 354 had die niemand kon zien, bestond die lijst voor de redactie niet.\n\nZe komt dus terug in het bestelportaal, achter de beheerdersrol, naast Gebruikers. Dat is ook de plek waar toegang al geregeld is: in de Studio kon iedereen met studiotoegang de adressen lezen, zonder dat dat ooit een aparte beslissing was.\n\n## Wat het scherm doet\n\n- De lijst met adres, naam, taal, datum van inschrijving en status, doorzoekbaar op adres, naam en bedrijf, vijftig per pagina.\n- Drie statussen in plaats van een vinkje, want ze betekenen verschillende dingen: **bevestigd**, **wacht op bevestiging** (nooit geklikt) en **uitgeschreven** (wel geklikt, daarna ingetrokken).\n- Een export naar CSV die de filter van het scherm volgt, gestreamd.\n\n## Wat het bewust niet doet\n\nUitschrijven of adressen bewerken. Dat doet de inschrijver zelf of de mailinglijst; een knop waarmee een beheerder iemand anders zijn toestemming omzet, hoort hier niet.\n\n## Nagekeken\n\n`tests/Feature/NieuwsbriefSchermTest.php`, acht tests: een dealer krijgt 403, wie niet ingelogd is gaat naar de login, een beheerder ziet de lijst, de filters scheiden wachten van uitschrijven, zoeken werkt, de export geeft een CSV met dezelfde filter, de export is niet voor een dealer, en het andere merk in dezelfde tabel komt er niet in.\n\nDe taalbestanden zijn aangevuld, want de test die elke vertaalbare string in alle vier de talen wil zien ving de negen nieuwe meteen.\n\n387 van 391 tests groen, pint schoon, phpstan zonder fouten. De vier die falen, falen ook zonder deze wijziging.\n\n## Volgorde\n\nDit hoort live te staan v\u00f3\u00f3r `npx sanity deploy` in hoet-sanity, anders zit er een gat waarin Herlinde de lijst nergens kan bekijken.\n",
+            "branch": "workbench/nieuwsbrief-scherm",
+            "title": "De nieuwsbrieflijst komt terug waar toegang geregeld is"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923132118-b84cd2"
+}

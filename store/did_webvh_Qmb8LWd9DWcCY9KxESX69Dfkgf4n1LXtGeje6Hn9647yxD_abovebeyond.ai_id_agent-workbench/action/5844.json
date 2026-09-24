@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1e3a488b7e250c9f2e0a147e5ade413ee65a8dbf",
+            "branch": "workbench/fix/photos-missing-in-the-bucket",
+            "files_sha256": "ec223e8adf3c7f0ab48637da85be0244f9618da971fa56a4847e4a6b0c39271e",
+            "message": "The clean-up reaches the rows the screen points it at"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923160443-500209"
+}

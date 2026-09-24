@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0aa85418466e7947f747d433c24f0af182b501cf",
+            "branch": "workbench/een-curriculum-kopieren",
+            "files_sha256": "7a701f933602850ff20d2396094fb2ec66831a9db1de853391d3b6a33ea3316a",
+            "message": "Het curriculum van een school kopi\u00ebren naar een nieuwe"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923141637-840a39"
+}

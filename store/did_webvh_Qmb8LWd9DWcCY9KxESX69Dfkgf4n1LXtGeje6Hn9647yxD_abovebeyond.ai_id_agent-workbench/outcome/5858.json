@@ -1,0 +1,16 @@
+{
+    "action": "54e326d72057fb68550efcba77965ab3",
+    "effect": {
+        "detail": {
+            "base": "0d3a46c9e86c8f06fd181ccaaf18e7ab8345bfac",
+            "branch": "workbench/beheerder-op-een-knoop",
+            "commit": "898e6a90a226ba540badadf0e43253f13da82b0d",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5856,
+    "verdict": "ALLOW"
+}

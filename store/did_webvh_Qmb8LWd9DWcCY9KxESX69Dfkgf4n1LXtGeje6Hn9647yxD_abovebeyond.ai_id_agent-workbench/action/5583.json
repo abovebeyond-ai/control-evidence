@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3744796b99e72330e670fe794be8c1884f572ff7",
+            "branch": "workbench/sitemap-lastmod",
+            "files_sha256": "d2f6f74312b823a3087c0c52dc38158f18469d67c1fdf40b33a8539ea3dd0ae6",
+            "message": "The sitemap says when something was published, and stays quiet when it cannot"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923115258-ecaf2e"
+}

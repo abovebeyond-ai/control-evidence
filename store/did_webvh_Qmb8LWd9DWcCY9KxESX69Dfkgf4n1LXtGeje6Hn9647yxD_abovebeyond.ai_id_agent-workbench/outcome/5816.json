@@ -1,0 +1,16 @@
+{
+    "action": "7556b119843ab3e17470bcdf31ea0880",
+    "effect": {
+        "detail": {
+            "base": "0aa85418466e7947f747d433c24f0af182b501cf",
+            "branch": "workbench/een-curriculum-kopieren",
+            "commit": "5b5a9472ce446ecd0eb638fa04ebe4ce5ea7cd01",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5814,
+    "verdict": "ALLOW"
+}

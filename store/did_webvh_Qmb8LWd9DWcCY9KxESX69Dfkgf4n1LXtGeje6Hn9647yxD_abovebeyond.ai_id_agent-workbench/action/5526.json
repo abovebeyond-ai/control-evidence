@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e714478a26b3b2ea43e110facf0956953856fde6",
+            "branch": "workbench/de-klas-in-een-keer-verzameld",
+            "files_sha256": "c70db7bdb255354938633bb74722ae33e66b4a0891f10076ccbdcfec9351e63d",
+            "message": "De klas in een keer verzameld"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923110617-176c7a"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "60d71376a408095ea5be7a65b0a71b91",
+    "effect": {
+        "detail": {
+            "base": "47735f19b0897bce0566b748bf9450a1e3908c88",
+            "branch": "workbench/hero-23-september",
+            "commit": "de3bffe90c26c6656be751c1b64bbaa8831722e7",
+            "files": 30,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5571,
+    "verdict": "ALLOW"
+}

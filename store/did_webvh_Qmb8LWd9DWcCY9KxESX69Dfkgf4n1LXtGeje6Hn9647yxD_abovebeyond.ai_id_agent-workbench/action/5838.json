@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d0b997e755503d45f93bbc0f4e7d858672c9f1ea",
+            "branch": "workbench/een-beheerder-van-een-scholengroep",
+            "files_sha256": "46706606ac937ecfd7e19443e44bea515a4d19c3b26d31b83bbd7fcb110a2136",
+            "message": "Een beheerder van een scholengroep"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923160330-38cdb5"
+}

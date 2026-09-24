@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d0b997e755503d45f93bbc0f4e7d858672c9f1ea",
+            "branch": "workbench/de-checklist-kent-de-groep-het-personeel-en-de-kopie",
+            "files_sha256": "67f4341fa753edb193553bb9f3746baac4a21db42408bbe7b9d51edb91b4b445",
+            "message": "De checklist van een nieuwe school kent de groep, het personeel en de kopie"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923153635-85c4b0"
+}

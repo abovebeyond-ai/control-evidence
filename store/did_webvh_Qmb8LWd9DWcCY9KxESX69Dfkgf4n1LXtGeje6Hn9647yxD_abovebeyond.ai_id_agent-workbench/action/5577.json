@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3744796b99e72330e670fe794be8c1884f572ff7",
+            "branch": "workbench/structured-data",
+            "files_sha256": "25611e38c24d186ecfafb5d4a1767f92c2a2ca1cf0feaf76600fbe607c1873e2",
+            "message": "One entity, a place in the site, and the FAQ as questions"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923115106-1cff14"
+}

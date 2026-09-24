@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7a9f17bda265ff7624f4e86fcece5e8bd2cacb1c",
+            "branch": "workbench/fix/a-handled-timeout-is-not-an-alarm",
+            "files_sha256": "eb256d76db7466a3390184e42444133a1ece4bb7d5c3552f5a7fa9daa6d1d211",
+            "message": "A handled timeout is not an alarm"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924055906-f0c408"
+}

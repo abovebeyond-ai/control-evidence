@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3695e30cbfed8987256eae51bfb480b7c95e210e",
+            "branch": "workbench/oude-links",
+            "files_sha256": "68c564f85fe44c29ab27a9c6aec4fe8762c19a96a94e2f1131d7197c7b961504",
+            "message": "Old links arrive, and an alias domain forwards them even without a route"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923111526-e45164"
+}

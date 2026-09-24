@@ -1,0 +1,16 @@
+{
+    "action": "208f65bc17b66ad6db39d88eb45d4389",
+    "effect": {
+        "detail": {
+            "base": "1f56e8447bb03374b8446912109a8bb7486b8392",
+            "branch": "workbench/lcp",
+            "commit": "3cbc8cacebb79646b18023df2180c3cbe550da18",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5559,
+    "verdict": "ALLOW"
+}

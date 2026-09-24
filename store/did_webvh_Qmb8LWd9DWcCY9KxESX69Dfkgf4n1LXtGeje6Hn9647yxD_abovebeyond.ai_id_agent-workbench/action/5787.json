@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`sanity:prune-personal` liet de bestellingsdocumenten staan die hier geen rij meer hebben, en benoemde ze. Dat bleken er bij Hoet twaalf en bij Cabrio elf, en geen enkele heeft hier nog een tegenhanger:\n\n```\norder-tmp-6a70a75...   7x, alle zeven 3 augustus 14:36   nachtelijke bestelpadcontrole\norder-hoet26-0000x     3x, 8 augustus                    bestellingen uit het portaal\norder-5, order-6       2x                                van daarvoor\n```\n\nDe `order-tmp-*` zijn het bewijs van het gedrag waarom het spiegelen gestopt is: de controle plaatst een bestelling, wist ze weer, en de spiegel in het CMS bleef staan.\n\nDe drie portaalbestellingen staan hier niet meer (nagekeken op hun id, want de kolom `number` is in augustus weggehaald). Ze bestaan dus alleen nog als document in Sanity. De eigenaar zegt dat de bestellingen in het programma van de klant leven en dat niets deze documenten nog leest.\n\nDat is kennis die dit commando niet kan hebben. Dus blijft de poort de standaard, en zegt `--orders` dat iemand ze bewust opendoet:\n\n```\nphp artisan sanity:prune-personal --force --orders\n```\n\nZonder die vlag gedraagt het commando zich zoals het deed: het benoemt wat het niet kan thuisbrengen en laat het staan.\n\nVerder haalt dit een dood veld uit de testopzet. Die maakte een bestelling aan met een `number`, en die kolom is in augustus verwijderd (ze werd verzonnen uit het databank-id en zag eruit als een administratienummer). Het veld staat niet in `fillable`, dus het werd stil genegeerd; in een fixture leest zoiets als iets dat ertoe doet.\n\n## Nagekeken\n\nZes tests, waaronder de nieuwe: met `--orders` gaan ook de onbekende mee, en zonder blijft alles bij het oude.\n",
+            "branch": "workbench/prune-orders",
+            "title": "Een vlag voor de bestellingen die niemand nog leest"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260923135405-324c61"
+}

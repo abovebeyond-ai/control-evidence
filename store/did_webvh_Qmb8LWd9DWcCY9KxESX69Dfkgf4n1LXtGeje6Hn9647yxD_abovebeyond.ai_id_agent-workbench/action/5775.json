@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De linkerrandtest krijgt een databank.\n\n`TheLeftEdgeIsOneLineTest` rendert het afgedrukte rapport zonder rijen aan te maken en had daarom geen `RefreshDatabase`. Sinds #156 zoekt de printkop de school van het rapport op voor het logo van haar groep, en op CI bestond de tabel `schools` op dat moment nog niet (lokaal wel, want de MariaDB-testdatabank blijft staan tussen runs): de enige rode test in de run van #156. De trait erbij; de opzoeking vindt niets en er komt geen logo, zoals bedoeld.\n\nEerst mergen, dan #156 bijwerken op main (`gh pr update-branch 156`) en zijn CI gaat groen.\n",
+            "branch": "workbench/de-linkerrandtest-krijgt-een-databank",
+            "title": "De linkerrandtest krijgt een databank"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923135107-f4c7e3"
+}

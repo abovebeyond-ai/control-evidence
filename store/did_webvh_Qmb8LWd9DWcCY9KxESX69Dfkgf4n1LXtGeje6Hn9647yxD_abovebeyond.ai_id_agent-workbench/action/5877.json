@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Measured on production tonight, over 799 shared vehicles (`available_on_stocklist`, not sold, not export, complete):\n\n```\nWagens met ontbrekende kopie\u00ebn:  73   ->  1.058 foto's\n  waarvan NUL kopie\u00ebn:           19   ->    443 foto's\n  waarvan er enkele missen:      54   ->    615 foto's\nOvergeslagen (kopie\u00ebn zonder koppeling naar hun origineel): 140\n```\n\nThose two groups are not the same problem. A colleague sees **only** the platform copies of a shared vehicle, so a vehicle with zero copies stands on the marketplace where nobody can see it. A vehicle missing a few simply shows with fewer photos than the dealer uploaded.\n\nEvery copy costs a remove.bg credit, so that distinction is the spending decision itself: 443 credits buy back nineteen invisible vehicles, the other 615 buy extra photos on vehicles that already show.\n\nThe command could not express it. `--dealer` and `--limit` were the only bounds, and `--limit=19` takes the first nineteen by id, which are mostly the wrong ones; running per dealer drags their half-covered vehicles along and spends more.\n\nSo `--without-copies` keeps only the vehicles with zero copies, and the closing line says which question was asked (\"Wagens zonder enige kopie (onzichtbaar voor een collega)\"). The dry run stays the default, as before.\n\n`PlatformPhotosOnShareTest` pins it with two vehicles side by side: the one without copies is queued, the one that already shows is left alone and therefore costs nothing.\n\n39 tests and 174 assertions over the rule catalogue and the platform-photo path; `phpstan` green over the whole project.\n\nRule R S2-1.15 extended with the distinction and tonight's numbers.\n",
+            "branch": "workbench/feat/platform-photos-without-copies",
+            "title": "Invisible is not the same as thin: --without-copies"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924052622-8e7102"
+}

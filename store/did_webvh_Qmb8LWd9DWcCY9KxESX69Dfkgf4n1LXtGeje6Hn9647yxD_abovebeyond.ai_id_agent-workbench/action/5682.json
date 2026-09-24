@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "681077e538ddf1f061f413bfcea87f44c45de651",
+            "branch": "workbench/het-grijs-van-het-blad-zelf-2",
+            "files_sha256": "19950ada2e8cc36ceb9357f1e08a64eb9774dc69f5f55d64986add57d1c3540b",
+            "message": "Het grijs van het blad zelf, met zijn eigen inkt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923125519-4104d2"
+}

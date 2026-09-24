@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "de92066c07e0911274469e19fe0947a07e45499b",
+            "branch": "workbench/het-vooruitgangsrapport-als-leerling",
+            "files_sha256": "9820582df73ea9f0b8558d58f1bac80133919a29b88f325e160ca78d93c6078b",
+            "message": "Het vooruitgangsrapport zoals de leerling het ziet"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923083307-59a7ad"
+}

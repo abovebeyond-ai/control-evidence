@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e48a5e801eae47ccb708242bdb01a746b761dc63",
+            "branch": "workbench/prune-personal",
+            "files_sha256": "64421765177ed7f27874d008798b9e91a897dca3cc7bfec6d8897ed9ae2fe6d9",
+            "message": "Remove from the CMS what it no longer needs to hold"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260923131314-d022a5"
+}

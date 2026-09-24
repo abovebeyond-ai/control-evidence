@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "57e3646a060e1bfa641ec07a953405303de50c20",
+            "branch": "workbench/de-tweede-regel-raakt-de-rand-niet",
+            "files_sha256": "36cef0e0c6d6d01469dec4b0fba85fdaa5f176078f66247fd78a7e97f070002f",
+            "message": "De tweede regel van het aanwezigheidsblok raakt de onderrand niet"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923121229-358826"
+}

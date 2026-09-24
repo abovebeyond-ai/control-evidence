@@ -1,0 +1,16 @@
+{
+    "action": "b9dea49887b096dd825d40500f24655d",
+    "effect": {
+        "detail": {
+            "base": "962e7b4598283b7eadc2d782ebe3e11b0dbe632c",
+            "branch": "workbench/de-klas-van-de-leerling-in-een-keer",
+            "commit": "6158c21ff32633a8cee8be7507fa85e45108c136",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5454,
+    "verdict": "ALLOW"
+}

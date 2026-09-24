@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e7c1be2d0466183d37526e4a5dc059431aebb2d3",
+            "branch": "workbench/fix/vin-fill-without-a-vehicle",
+            "files_sha256": "8aa55f7efbad944853e3079f3b63a7981018d79d9e218d6a1f66af420edeb685",
+            "message": "A chassis lookup without a vehicle is a message, not a 500"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923152305-f1c05a"
+}

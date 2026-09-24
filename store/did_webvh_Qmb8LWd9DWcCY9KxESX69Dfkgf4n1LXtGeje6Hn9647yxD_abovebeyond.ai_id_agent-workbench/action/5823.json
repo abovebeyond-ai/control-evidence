@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nightwatch #18 came back this morning at 08:15, for Ilse, twice in a day:\n\n```\nCannot modify header information - headers already sent by\n  app/Http/Controllers/Settings/RequirementsController.php:78\n```\n\nThe title still says `CarpassController`, because Nightwatch groups on the message and the message is identical. So the second fault arrived carrying my \"resolved\" comment from the first one, written on 20 September.\n\n## What it is\n\n```php\nheader('Content-Type: application/octet-stream');\nheader(\"Content-disposition: attachment; filename=...\");\necho Storage::disk('requirements')->get(base64_decode($url));\n```\n\nThe bytes leave before Laravel builds its own response, and that response then tries to set headers on a body that is already gone. Worse than it sounds: anything that throws after the first byte lands there too, and `Storage::get()` throws on a file that is not in the bucket. So a missing file became a broken page instead of \"this file is gone\".\n\nThis is exactly the Car-Pass pdf fault of 20 September (R S3-4.2), in a different file.\n\n## So this fixes the shape\n\nThree places still answered that way: the requirements, the useful links, and the XML export of the own stock. All three return a response now, and the two file downloads answer 404 when the file is not in the bucket.\n\n`ADownloadIsAnAnswerTest` reads every controller and fails on a bare `header()`, `echo`, `print`, `readfile` or `fpassthru`, with a second test that the three methods do return something, so the first one cannot go green because a method stopped doing anything at all.\n\n## Verified\n\n294 tests and 611 assertions across the rule catalogue, the smoke tests and the two new ones; `phpstan` green over the whole project; `pint` green on the added file.\n\nFixes bevinding een-download-is-een-antwoord.\n",
+            "branch": "workbench/fix/downloads-are-responses",
+            "title": "A download is an answer, not output written straight out"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923142014-b57264"
+}

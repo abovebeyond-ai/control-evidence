@@ -1,0 +1,16 @@
+{
+    "action": "57741c8afa564bfff32263ddd3794cee",
+    "effect": {
+        "detail": {
+            "base": "7cfee7e5b2d4a7ae00e1e671d8f2340af979ce13",
+            "branch": "workbench/het-ontwerpsysteem-kent-het-scoreblok-op-papier",
+            "commit": "8c6121d696c568edaa3ffc8d4a04bb404d6a2a36",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5628,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "b93b9adcdfa46da4334e5d17d96bd917",
+    "effect": {
+        "detail": {
+            "base": "d0b997e755503d45f93bbc0f4e7d858672c9f1ea",
+            "branch": "workbench/een-beheerder-van-een-scholengroep",
+            "commit": "d8665bf28762ef6bc0d94d287b0c810f97634b9b",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5838,
+    "verdict": "ALLOW"
+}

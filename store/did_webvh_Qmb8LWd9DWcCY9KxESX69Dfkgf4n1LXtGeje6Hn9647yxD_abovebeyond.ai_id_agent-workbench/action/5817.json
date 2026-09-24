@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het curriculum van een school kopi\u00ebren naar een nieuwe: stap 3 van het onboardingplan, het grootste gat uit `docs/wat-een-product-nog-mist.md`.\n\n## Wat er gebeurde\n\nEen school heeft clusters en eindtermen nodig voor er \u00e9\u00e9n score ingevoerd kan worden, en een tweede school in dezelfde onderwijsvorm begon van nul terwijl haar structuur grotendeels die van een bestaande is. De basisvorming en de levensbeschouwelijke vakken zijn al gedeeld (`school_id` null, de schoolscope laat ze voor elke school door); wat een school zelf bezit zijn haar specifieke en complementaire vakken en haar eigen eindtermen.\n\n## De wijziging\n\n- **`CurriculumCopy::between($van, $naar)->run()`**: elke cluster die de bronschool bezit en niet archiveerde wordt in de doelschool aangemaakt met haar velden (schooljaar: het lopende, `official` false); een offici\u00eble eindterm eronder wordt gedeeld, een eigen eindterm gekopieerd in de laag van de doelschool, ouders eerst, zoals `deviateFrom` er \u00e9\u00e9n kopieert. Wat blijft: klassen, feedback, projecten, scores. Twee keer draaien voegt niets toe (naam, categorie, graad en stroom als sleutel). `--dry-run` telt en schrijft niets.\n- **`php artisan naviskore:copy-curriculum <van> <naar> [--dry-run]`**, op slug, met een telling als uitkomst.\n- `docs/wat-een-product-nog-mist.md` noteert het bij gap 3.\n\n## De rechter\n\n`CopyingACurriculumTest`: de twee eigen clusters komen aan zonder de gearchiveerde, de offici\u00eble eindterm is gedeeld (zelfde rij), de eigen eindterm gekopieerd (nieuwe rij, school 950) met haar kind onder de gekopieerde ouder, de klaskoppeling reist niet mee, de bron verandert niet; twee keer draaien voegt niets toe; een dry run schrijft niets; het commando werkt op slug en weigert een onbekende school en een school naar zichzelf. Mutatie (eigen eindtermen gekoppeld in plaats van gekopieerd): rood. Volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n\n## Onderweg gevonden\n\n`AttainmentLevelCluster::teachers()` (en `User` aan de andere kant) wijst naar een pivot `att_level_cluster_teacher` die geen enkele migratie aanmaakt: een dode relatie. Niet in deze PR.\n",
+            "branch": "workbench/een-curriculum-kopieren",
+            "title": "Een curriculum kopi\u00ebren"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923141637-840a39"
+}

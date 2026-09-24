@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "402cc59d23f2f64da21ffcc8bc60ca09ee953f58",
+            "branch": "workbench/nieuwsbrief-scherm",
+            "files_sha256": "449024c49ce821d6d9c2a905b00d1be34f4d36f056298410af9127cde3c3bcf1",
+            "message": "The newsletter list comes back where access is arranged"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260923133638-c37305"
+}

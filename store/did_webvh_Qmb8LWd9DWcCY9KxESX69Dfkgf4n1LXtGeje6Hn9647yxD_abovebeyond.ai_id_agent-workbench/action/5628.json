@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7cfee7e5b2d4a7ae00e1e671d8f2340af979ce13",
+            "branch": "workbench/het-ontwerpsysteem-kent-het-scoreblok-op-papier",
+            "files_sha256": "7911c16f3b3188bde66e87cc41466766864b08aed2a671d60fd9b9e9bd139a90",
+            "message": "Het ontwerpsysteem kent het scoreblok op papier"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923122606-586ce0"
+}

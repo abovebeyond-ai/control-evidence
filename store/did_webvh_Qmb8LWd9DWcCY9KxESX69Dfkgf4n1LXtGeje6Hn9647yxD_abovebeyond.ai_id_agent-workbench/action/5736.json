@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7ac51ba74b100b479953cb3450da657865475252",
+            "branch": "workbench/nieuwsbrief-scherm",
+            "files_sha256": "604d8a2afc65a85932496698f80eb2e718ef78606537866c09cd37aa17ae8c21",
+            "message": "The newsletter list comes back where access is arranged"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923132118-b84cd2"
+}

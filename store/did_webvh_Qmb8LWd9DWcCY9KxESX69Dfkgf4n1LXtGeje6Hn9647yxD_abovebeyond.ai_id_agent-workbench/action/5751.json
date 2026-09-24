@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Main is red. #785 was merged with a failing `phpunit`, and this is what it said:\n\n```\nParseError: syntax error, unexpected identifier \"heure\", expecting \"]\"\n  resources/lang/fr/operations.php:75\n```\n\nThree French strings in that pull request were written as `'... \u00e0 l'heure ...'`: an apostrophe inside single quotes, unescaped. The file stopped being PHP.\n\n## Why it read as two unrelated failures\n\nLaravel's loader `include`s the table when someone asks for the first key, so the `ParseError` comes out of whatever screen asked, in whatever language. In CI it surfaced as errors in `ButtonLabelCapitalizationTest` and `LanguageParityTest`, neither of which is about French. The file's own name appeared only in the stack.\n\nSo `LanguageParityTest` now runs one test before the others: every file under `resources/lang` must parse, and the failure names the file.\n\n## A second thing the same pull request did\n\n`col_calls` and `col_last_call` were added to `operations.php` in all four languages while they were already there. PHP keeps the last one without a word, so since that merge the partner-API column header read \"Laatste\" instead of \"Laatste oproep\". Nothing uses either key any more, so both later copies are gone.\n\nFour older doubles were sitting there too: `de/global.or`, `order.add_extra` in de, fr and en, and `de/vehicle.waranty_till`. Only `en/order.add_extra` had two different values, and there the line that already lost (\"Add an extra\") is the one removed, so no text changes.\n\nThe second new test walks the tokens per array scope and fails on a key that is defined twice in the same table.\n\n## Verified\n\nFull suite locally: 2.102 tests, 12.242 assertions, and the only two failures are `ListPageHeadersTest` on `requirement.index` and `links.index`, which fail the same way on a checkout without this change because those tables are empty in my local database. `phpstan analyse` green over the whole project.\n\nFixes bevinding frans-vertaalbestand-las-niet-meer.\n",
+            "branch": "workbench/fix/fr-operations-parses",
+            "title": "A translation file is PHP, and names each key once"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923133347-d4b5a1"
+}

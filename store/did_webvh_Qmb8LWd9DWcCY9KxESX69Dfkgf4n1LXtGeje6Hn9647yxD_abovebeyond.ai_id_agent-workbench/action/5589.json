@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "887c3325da25f2754c258b750fb4e144dc69eeb6",
+            "branch": "workbench/twee-regels-zonder-klantbron",
+            "files_sha256": "794c396b24b086c3b46e760224d0748a4302a33b053881e22b234a5a91021b93",
+            "message": "Twee regels zonder klantbron: de 60/40-weging en de vier waardepercentages"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923120159-f88aaa"
+}

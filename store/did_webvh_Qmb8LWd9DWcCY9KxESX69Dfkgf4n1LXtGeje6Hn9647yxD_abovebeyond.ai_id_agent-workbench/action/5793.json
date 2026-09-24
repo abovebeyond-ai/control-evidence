@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe reason of a failed adapter round was `String(errors[0])`, and six adapters pass an object (`{source, error}`, `{feed, error}`, `{region, error}`, `{domain, error}`). From 19 to 23 September every failed round of openalex, semantic-scholar and web-browse read `[object Object]` in `adapter_runs`, on the Collection screen and in what Elixir reads, so a rate limit could not be told from a dead feed.\n\n## How\n\n- `errorText()` in `packages/adapters/src/base.mjs` reads every shape an adapter passes (string, `Error`, object naming what failed), and never returns `[object Object]`: an unknown object becomes short JSON.\n- `failureReason()` is the first error plus how many more (\"src-academic-3: HTTP 429 (and 2 more)\"), since one of fifteen failing is not all fifteen.\n- Fixed in the one place that builds the reason, so no adapter has to change.\n\n## Tests\n\n`test/failure-reason.test.mjs` pins every shape and that nothing becomes `[object Object]`. `adapter-outcome.test.mjs` pinned \"the first error only\"; it now expects the count of the rest.\n",
+            "branch": "workbench/failed-round-says-why",
+            "title": "A failed round says why, not [object Object]"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260923135427-72f636"
+}

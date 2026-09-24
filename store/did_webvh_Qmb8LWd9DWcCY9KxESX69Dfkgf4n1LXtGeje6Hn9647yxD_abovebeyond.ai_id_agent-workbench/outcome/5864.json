@@ -1,0 +1,16 @@
+{
+    "action": "b2496410408b5cef6608a10b0d718353",
+    "effect": {
+        "detail": {
+            "base": "720d50771b7645821dc66d9081dc3ff7a6e8c141",
+            "branch": "workbench/fix/realgarant-probe-vehicle",
+            "commit": "5d65342e5062e0040d057f9b5a4d7a40c4791956",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5862,
+    "verdict": "ALLOW"
+}

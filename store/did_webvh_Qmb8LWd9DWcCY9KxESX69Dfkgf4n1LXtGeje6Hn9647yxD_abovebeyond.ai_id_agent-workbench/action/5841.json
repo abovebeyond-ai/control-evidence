@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een beheerder van een scholengroep: de rol tussen de beheerder van \u00e9\u00e9n school en de superbeheerder van alles. Stap 4 van het onboardingplan; gap 1b uit `docs/wat-een-product-nog-mist.md`.\n\n## Wat er gebeurde\n\nScholen horen sinds augustus bij een scholengroep, en die is de klant (Xplora). Een school aanmaken of inrichten kon alleen een superbeheerder: zodra een groep zichzelf wil beheren is dat een blokkade.\n\n## De wijziging\n\n- **Rol `groupadmin`** (op het scherm: groepsbeheerder), aangemaakt door een migratie en in de seeder. Wie ze draagt beheert de scholen van de groepen waar hij via zijn eigen scholen in zit: lijst, aanmaken, tonen, wijzigen, de checklist.\n- **`App\\Policies\\SchoolPolicy`**: `viewAny`, `view`, `create`, `update` en `assign` (in welke groep een school mag). Een superbeheerder mag alles via `Gate::before`; de policy is voor de groepsbeheerder, en een school zonder groep is van niemand, dus die kan hij niet maken en daar kan hij zijn school niet naartoe schuiven.\n- **Routes**: `schools` uit de groep `role:superadmin` naar `role:superadmin|groupadmin`, zelfde prefix, dus geen adres verandert. Scholengroepen, Smartschool-koppelingen, schooljaren en levensbeschouwelijke vakken blijven achter `superadmin`.\n- **`SchoolController`** autoriseert per actie en biedt in het formulier alleen de groepen die deze gebruiker mag kiezen; **navigatie**: een groepsbeheerder ziet \"Scholen\" en niet de drie deuren ernaast.\n- Toekennen van de rol is nog een hand van een superbeheerder (databank of tinker); dat staat zo in de doc.\n\n## De rechter\n\n`AGroupAdminTest`: ziet de scholen van zijn groep en geen andere; maakt een school aan in zijn groep, niet in een andere en niet zonder groep (403); wijzigt zijn eigen school, niet die van een andere groep, en kan zijn school niet uit zijn groep schuiven; de deuren van een superbeheerder blijven dicht (403 op groepen, koppelingen, schooljaren) en de navigatie toont ze niet; een beheerder van \u00e9\u00e9n school is geen groepsbeheerder. Mutatie (de policy kijkt niet naar de groep): rood. De bestaande school-, groep- en scheidingstests en de volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n",
+            "branch": "workbench/een-beheerder-van-een-scholengroep",
+            "title": "Een beheerder van een scholengroep"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923160330-38cdb5"
+}

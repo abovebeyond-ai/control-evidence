@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De eindterm die al in de hand was gaat mee naar de DTO van de score, in plaats van per score opnieuw uit de databank te komen. Vier van de 7,5 queries per leerling in de klasexport.\n\n## Wat er gebeurde\n\n`EvaluationStudentScoreDTO::fromArray` doet `AttainmentLevel::find($data['attainment_level_id'])` zodra de eindterm niet in de gegevens zit. Het rapport mapt elke score vanuit `HydratedAttainmentLevelDTO`, die de eindterm net beschreven had (id, prefix, naam, niveau) maar het model zelf niet meer bijhad. Dus per score dezelfde rij opnieuw.\n\n## De wijziging\n\n- **`HydratedAttainmentLevelDTO` draagt het model** waaruit hij gemaakt is (`?AttainmentLevel $model`, null als hij uit een array komt). Gezet in `fromAttainmentLevel` (los rapport) en in `ReportService::hydrateFor` (klasexport).\n- **`mapEvaluationStudentScore` krijgt de eindterm mee** en zet ze in `$data['attainmentLevel']`, als kopie met alleen haar kolommen: de rij komt via een pivot binnen en draagt die relatie mee, en die hoort niet in het rapport. `fromArray` vindt de eindterm dan al aanwezig en vraagt niets meer.\n\nGeen wijziging aan de DTO van de score zelf; de terugval naar `find()` blijft voor wie hem zonder eindterm aanroept.\n\n## De maat\n\n`ClassReportQueryBudgetTest`: budget van 8 naar **4**, meting 3,5 (3 leerlingen 46 queries, 9 leerlingen 67). Van 47 op 22 september naar 3,5 vandaag. Wat overblijft per leerling: de lopende periode, de algemene feedback, de Deel 4-regel en de clusterfeedback.\n\n## De rechters\n\n`ClassReportSnapshotTest`, de maat, `ReportSnapshotTest`, `LegacyReportSnapshotTest`, de routetest en de leerlingweergave: 61 tests, **geen enkele snapshot gewijzigd**. De kopie draagt dus precies wat `find()` teruggaf. Volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n\n## Bewezen met mutatie\n\n| ingebouwde fout | maat | klasrechter |\n| --- | --- | --- |\n| de eindterm niet doorgegeven (`attainmentLevel: null` op beide aanroepen) | **rood**: terug op 7,5 per leerling (54, 99) | groen |\n\nDe klasrechter blijft terecht groen: het rapport zegt hetzelfde, het kost alleen vier queries per leerling meer. Precies daarvoor is de maat er.\n",
+            "branch": "workbench/de-eindterm-die-al-in-de-hand-was",
+            "title": "De eindterm die al in de hand was"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923112013-83380a"
+}

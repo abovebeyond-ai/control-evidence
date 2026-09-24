@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee regels uit S4 die een cijfer op het rapport bepalen en waarvan alleen de code getuige is, als bevinding vastgelegd, zoals de drie datumregels van vanmorgen.\n\n- **De 60/40-weging** (S4-1.4, S4-1.5): examens 60 tegen 40 bij athena Drie Hofsteden, alleen in de A-stroom. Sinds 5 augustus een schoolregel in de tabel, daarvoor een school-id in de code; nergens een bron die zegt wie dat afsprak, sinds wanneer, en waarom alleen de A-stroom.\n- **De vier waardepercentages** (S4-2.2, S4-2.3): 1 \u2192 18,75, 2 \u2192 43,75, 3 \u2192 68,75, 4 \u2192 93,75, het midden van elk kwart, gewicht 4. Een keuze die een ander cijfer geeft dan de banden van de numerieke schaal, en die alleen in de code staat.\n\nBeide met wat er zou moeten gebeuren en wie dat zegt (athena, een bron onder `bronnen/` met `soort: klant`). Alleen documentatie; de regelboek-tests en `bin/rules-coverage` blijven groen, want bevindingen zijn geen regels.\n",
+            "branch": "workbench/twee-regels-zonder-klantbron",
+            "title": "Twee regels zonder klantbron"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923120159-f88aaa"
+}

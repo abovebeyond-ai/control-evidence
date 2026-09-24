@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een rechter voor het vooruitgangsrapport zoals de leerling het ziet. Alleen tests.\n\n## Waarom\n\nEen leerling mag een examen dat nog niet vrijgegeven is niet zien, en het mag zijn kleur niet bepalen: een examen in de lopende periode telt voor de leerling pas vanaf `active_from_for_pupil` van die periode. Leerkrachten en beheerders zien het volledige beeld. Tot vandaag keek geen enkele test naar het rapport als leerling. De acht bestaande snapshots leggen het volledige beeld vast, en de lopende examenperiode waar de filter van afhangt reist sinds #140 als parameter door de motor. Dat is precies het moment om de filtering zelf vast te leggen.\n\n## De test\n\n`ProgressReportAsPupilTest`, op het scenario van Heule. De examens van het scenario vallen op 10 januari 2026, in de lopende periode, die pas op 30 juni vrijgegeven wordt. Voor de leerling tellen dus alleen de evaluaties:\n\n| eindterm | beheerder | leerling v\u00f3\u00f3r vrijgave | leerling na vrijgave (`active_from_for_pupil` op 5 januari) |\n| --- | --- | --- | --- |\n| NE-1.1 | (8 + 6) / 20 = **0,7** | 6 / 10 = **0,6** | 0,7 |\n| NE-1.2 | (5 + 9) / 20 = **0,7** | 9 / 10 = **0,9** | 0,7 |\n\nDaarnaast een snapshot van het rapport als leerling (`progress-report-as-pupil-5.json`, aantoonbaar verschillend van de beheerderssnapshot), en het scherm zelf via `student.my-progress`, zodat ook de weg van route tot filter gedekt is.\n\n## Bewezen met een mutatie\n\n`canBeShownOnProgressReport` altijd waar laten teruggeven: **10 rood**. De twee leerlingtests, \u00e9n de acht bestaande vooruitgangssnapshots, want het veld `visibleOnProgressReport` zit in de DTO. De waarde was dus al bewaakt; de filtering voor de leerling niet, en dat is wat deze PR toevoegt. De test die als beheerder kijkt blijft groen, zoals het hoort.\n",
+            "branch": "workbench/het-vooruitgangsrapport-als-leerling",
+            "title": "Het vooruitgangsrapport zoals de leerling het ziet"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923083307-59a7ad"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "96303dd006294562873d6f25d8f01be62d0d2c79",
+            "branch": "workbench/een-vijfde-school-van-nul",
+            "files_sha256": "44308ad301df1dd4c56120779aec0aaa316625551ac94ed89fe9f53e84688f51",
+            "message": "Een vijfde school van nul, en de stroom die de enum niet kende"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923133338-185c84"
+}

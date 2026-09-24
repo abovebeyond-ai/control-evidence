@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "58b88701b527ab57d96d4e91a665c5467011cc64",
+            "branch": "workbench/een-rapport-archiveren",
+            "files_sha256": "d0054fccf529006fde2e55ec6b56b201e3e86ea309ba95edf64c186644f53ada",
+            "message": "Het archief: een rapport van een afgesloten periode als document"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924052019-47aee4"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d67a5ac1829b86c4eebb25ed05dbdb093bd0f549",
+            "branch": "workbench/fix/photo-paths-are-repaired",
+            "files_sha256": "225413782b8d34f737dfd733afe2b02bb9d7f79149e758c5afdbc6740b6d0b94",
+            "message": "A photo whose file is in the bucket gets its path back"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923123212-fc4a26"
+}

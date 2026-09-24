@@ -1,0 +1,16 @@
+{
+    "action": "e93a1d75c7211b9d7d4983e3c84c02f5",
+    "effect": {
+        "detail": {
+            "base": "083967a16df77088cea2a855a55202e531b8b0db",
+            "branch": "workbench/de-eindterm-die-al-in-de-hand-was",
+            "commit": "c28f629480d0238e5205b6671fa0c216e87a4828",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5544,
+    "verdict": "ALLOW"
+}

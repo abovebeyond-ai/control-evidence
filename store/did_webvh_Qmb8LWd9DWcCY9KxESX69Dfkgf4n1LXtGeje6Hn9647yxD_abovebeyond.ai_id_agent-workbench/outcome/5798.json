@@ -1,0 +1,16 @@
+{
+    "action": "f61aea4005c3a933d08aaf4889eb7c67",
+    "effect": {
+        "detail": {
+            "base": "ff7128f209c986e326b66eeeb59f37cbb54d5652",
+            "branch": "workbench/ui/werking-lines-carry-a-verdict",
+            "commit": "b3677e416193473307b26267bf2c43c6b6ecc13a",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5796,
+    "verdict": "ALLOW"
+}

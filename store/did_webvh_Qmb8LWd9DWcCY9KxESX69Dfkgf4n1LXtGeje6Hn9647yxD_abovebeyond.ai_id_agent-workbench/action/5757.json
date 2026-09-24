@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Hetzelfde scherm als [hoet-eyewear#66](https://github.com/Hoet-design/hoet-eyewear/pull/66), en hier is het geen extraatje.\n\nDe Studio is gedeeld: hoet-sanity bedient allebei de merken. Het `subscriber`-type is daar verwijderd, dus zodra die Studio uitgerold wordt, verdwijnt ook Cabrio's nieuwsbrieflijst uit beeld. Zonder dit scherm heeft de redactie van dit merk 427 inschrijvingen die nergens te openen zijn, en dat is precies de toestand die het commentaar in `structure.ts` ooit beschreef.\n\n## Wat het scherm doet\n\n- De lijst met adres, naam, taal, datum van inschrijving en status, doorzoekbaar, vijftig per pagina.\n- Drie statussen in plaats van een vinkje: **bevestigd**, **wacht op bevestiging** (nooit geklikt) en **uitgeschreven** (wel geklikt, daarna ingetrokken).\n- Een export naar CSV die de filter van het scherm volgt, gestreamd.\n\nKijken en exporteren, verder niets. Uitschrijven doet de inschrijver zelf of de mailinglijst.\n\n## Nagekeken\n\n`NieuwsbriefSchermTest`, acht tests: een dealer krijgt 403, uitgelogd gaat naar de login, een beheerder ziet de lijst, de filters scheiden wachten van uitschrijven, zoeken werkt, de export volgt de filter, de export is niet voor een dealer, en het andere merk in dezelfde tabel komt er niet in.\n\n334 van 337 tests groen, pint schoon, phpstan zonder fouten. De drie die falen, falen ook zonder deze wijziging.\n\n## Volgorde\n\nDit en hoet-eyewear#66 horen allebei live te staan v\u00f3\u00f3r `npx sanity deploy` in hoet-sanity.\n",
+            "branch": "workbench/nieuwsbrief-scherm",
+            "title": "De nieuwsbrieflijst komt terug waar toegang geregeld is"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260923133638-c37305"
+}

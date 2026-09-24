@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een vijfde school van nul, als rechter, en de eerste id-regel die hij vond.\n\n## De rechter\n\n`AFifthSchoolFromScratchTest`: een nieuwe scholengroep (id 900) en school (id 950) met id's ver van de vier waar de code mee opgroeide, en een stroom (id 700) die het platform nooit had. Vier tests: een superbeheerder maakt de school aan via het scherm en ze blijft binnen haar groep (`VisibleSchools`); het rapport van die school opent en drukt af als elk ander (200, PDF, Helvetica, geen Times); een waardegebaseerde regel op de nieuwe stroom past; en een superbeheerder kan zo'n regel schrijven. De id's zijn gekozen, niet geteld: op MariaDB tellen ze door over tests en een test die \"het volgende id\" neemt bewijst elke run iets anders.\n\nDaarnaast staat school 950 nu in de schoollijst van de snapshots: **het product zoals het verkocht wordt**, zonder \u00e9\u00e9n regel van een klant. Tien nieuwe golden masters (term, vooruitgang, deliberatie, elk kaal en vol; de klasexport; de drie legacy-jaren), geen bestaand snapshot gewijzigd.\n\n## Wat rood was\n\nDe groep, de school en het rapport waren al groen: daar is sinds augustus genoeg verhuisd. Rood was de stroom. `ValueBasedScoring::applies` liet elke stroom door `App\\Enums\\StreamId` gaan en gaf `false` terug voor een stroom buiten de enum: een regel op een stroom die een nieuwe school meebrengt paste nooit, stil. En `ValueBasedRuleRequest` valideerde `streams.*` tegen de enumwaarden, dus zo'n regel was ook niet in te voeren.\n\n## De wijziging\n\n- `ValueBasedRule::matches` vergelijkt op het stroom-id uit de tabel; `ValueBasedScoring` geeft `$stream->id` door en kent de enum niet meer.\n- `ValueBasedRuleRequest`: `streams.*` moet bestaan in `streams`, meer niet.\n- `StreamId` blijft wat het is: een woordenboek voor labels, de scenario's en de migratie van augustus.\n\nMutatie (de enum-poort terug in `applies`): de stroomtest rood. `ValueBasedScoringTest` (de 35 combinaties van Heule, Drie Hofsteden en CLW), `ValueBasedRuleSettingsTest`, de 92 rechters en de volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n\n## Wat de rechter nog niet raakt\n\nEen scholengroep aanmaken kan alleen via de databank: er is geen scherm en geen route (de test maakt hem met een factory en zegt dat). Het logo op `school['id'] === 3 || 5` in de printkop raakt hij niet, want school 950 heeft er terecht geen. Allebei volgende PR's uit het plan.\n",
+            "branch": "workbench/een-vijfde-school-van-nul",
+            "title": "Een vijfde school van nul"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923133338-185c84"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "90c78611872695855d2c8861d58e8a9b",
+    "effect": {
+        "detail": {
+            "base": "a37bb4a304e813c9bc769605d9c9d77a70b15ee3",
+            "branch": "workbench/scholengroepen-met-een-logo",
+            "commit": "c18a1a5c4afa491741c01da2a75bb96a93e22b37",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5760,
+    "verdict": "ALLOW"
+}

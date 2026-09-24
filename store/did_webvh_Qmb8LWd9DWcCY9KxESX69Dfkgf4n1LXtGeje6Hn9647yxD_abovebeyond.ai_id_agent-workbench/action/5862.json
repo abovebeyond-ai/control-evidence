@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "720d50771b7645821dc66d9081dc3ff7a6e8c141",
+            "branch": "workbench/fix/realgarant-probe-vehicle",
+            "files_sha256": "4e2c8ef0c02d2ca7a50ed201f2cbe43f47534ea2f5ee1a462b75b17b7badf18d",
+            "message": "The smoke test judges the connection, not the vehicle it picked"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924051521-0fde64"
+}

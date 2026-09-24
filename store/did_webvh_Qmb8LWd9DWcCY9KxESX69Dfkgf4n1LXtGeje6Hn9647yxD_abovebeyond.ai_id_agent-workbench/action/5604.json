@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De tweede regel van het aanwezigheidsblok raakt de onderrand niet meer.\n\n## Wat er gebeurde\n\nNa #147 vulden de twee regels van \"67% aanwezig\" het blok van 22pt precies (twee keer 11pt), dus het woord stond op de rand. Shane: \"still padding not ok\".\n\n## De wijziging\n\n`div-section.blade.php`, alleen de maten: het tweeregelige blok krijgt 2pt boven, twee regels van 9pt, en 2pt onder (hoogte 20pt plus 2pt bovenmarge, samen nog altijd de 22pt van een blok met \u00e9\u00e9n getal). De regelhoogte is voor beide gevallen 9pt.\n\n## De rechter\n\n`TheNumberSitsOnTheColourTest` ongewijzigd en groen: de vierde test telt hoogte en bovenmarge op en eist dat beide blokken op hetzelfde uitkomen, dus een maat die het blok weer ongelijk maakt valt daar. PDF-controllertest groen. Nagekeken op een proefblad op 288 dpi: het getal in het midden, het woord vrij van de rand.\n",
+            "branch": "workbench/de-tweede-regel-raakt-de-rand-niet",
+            "title": "De tweede regel raakt de rand niet"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923121229-358826"
+}

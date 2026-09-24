@@ -1,0 +1,16 @@
+{
+    "action": "faad1330de0f0934ea88b34e8f6881dd",
+    "effect": {
+        "detail": {
+            "base": "d0b997e755503d45f93bbc0f4e7d858672c9f1ea",
+            "branch": "workbench/de-checklist-kent-de-groep-het-personeel-en-de-kopie",
+            "commit": "ace5ba4f5d6487a0caf66bceff6199be9371490b",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5832,
+    "verdict": "ALLOW"
+}

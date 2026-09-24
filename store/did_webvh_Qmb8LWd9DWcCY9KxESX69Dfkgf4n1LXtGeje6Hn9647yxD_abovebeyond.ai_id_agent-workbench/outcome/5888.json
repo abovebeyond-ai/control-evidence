@@ -1,0 +1,16 @@
+{
+    "action": "adfd432e2e9ff86b4a03542d33559e6c",
+    "effect": {
+        "detail": {
+            "base": "709533260c07ba693ab102b90b91a7a3741cc35c",
+            "branch": "workbench/het-blad-uit-chromium",
+            "commit": "bc58db95553d25597ff830141ab6c656e78db1dc",
+            "files": 24,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5886,
+    "verdict": "ALLOW"
+}

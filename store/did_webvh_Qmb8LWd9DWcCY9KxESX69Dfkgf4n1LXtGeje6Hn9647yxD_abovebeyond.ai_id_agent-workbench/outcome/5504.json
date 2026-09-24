@@ -1,0 +1,16 @@
+{
+    "action": "7ca99215a557164df717659f0d350c42",
+    "effect": {
+        "detail": {
+            "base": "6f4e451a1666aff5d9259dc5f6e26404acdd2486",
+            "branch": "workbench/ui/label-names-the-basis",
+            "commit": "cf6abc36c142f162a20517540f6948dd7a51cb33",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5502,
+    "verdict": "ALLOW"
+}

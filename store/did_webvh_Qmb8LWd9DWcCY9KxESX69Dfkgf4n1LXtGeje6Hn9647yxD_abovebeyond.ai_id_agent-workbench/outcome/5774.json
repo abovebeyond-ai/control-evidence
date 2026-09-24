@@ -1,0 +1,16 @@
+{
+    "action": "bb3ead77ec0e5914a097492b73afc425",
+    "effect": {
+        "detail": {
+            "base": "a37bb4a304e813c9bc769605d9c9d77a70b15ee3",
+            "branch": "workbench/de-linkerrandtest-krijgt-een-databank",
+            "commit": "b6a336b3423051cfd8f936611c28a51174fdc482",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5772,
+    "verdict": "ALLOW"
+}

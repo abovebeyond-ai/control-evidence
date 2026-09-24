@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane, on #780: \"maar wat zeg je bij niet-btw wagen?\"\n\nNothing. That was the gap.\n\nThe label read `Bedrag in \u20ac (excl. BTW)` on a VAT vehicle and plain `Bedrag in \u20ac` on a margin vehicle. Meanwhile the bid list a few lines above, in the same block, has always shown `incl. BTW` on every placed bid for a margin vehicle, and R B1-4.3 states in so many words that a bid on a margin vehicle is inclusive. The input contradicted its own list.\n\nIt matters beyond consistency. A label that mentions VAT only when it counts asks the trader to notice an **absence**, and failing to notice is exactly what Frederik reported. Stating the basis every time removes the judgement:\n\n| | label |\n| --- | --- |\n| VAT vehicle | Bedrag in \u20ac (excl. BTW) |\n| margin vehicle | Bedrag in \u20ac (incl. BTW) |\n\nBoth wordings already existed in the four languages (`vehicle.excl_VAT`, `vehicle.incl_vat`) and are the ones the bid list uses, so nothing new is invented.\n\nThe confirmation is unchanged: only a VAT vehicle gets the extra sentence there, because that one is a warning about a consequence rather than a definition of the field.\n\nThe test now requires the label to name the basis in both cases, and checks both wordings exist in the four languages, since they now appear on every bid rather than on some.\n\nVerified locally: 26 tests, 109 assertions across the bidding tests and the rule-catalogue tests.\n",
+            "branch": "workbench/ui/label-names-the-basis",
+            "title": "The label names the basis on a margin vehicle too"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923102057-7774a0"
+}

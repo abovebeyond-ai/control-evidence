@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The `--check-bucket` pass from #793 dropped every narrowing filter in order to reach the eleven rows that do carry a path. That made the candidate list the whole table: on production **127.035 rows** older than a day, one HEAD each, to find **eleven**.\n\nThe dry run on production therefore ran for minutes without printing anything (the command prints its table only at the end) and was stopped. Nothing changed: a dry run deletes nothing, and the `--apply` that would have followed never ran.\n\n## The bound that was missing is the definition of the problem\n\nThis command cleans up what a **writer** left behind, and that is exactly what `processing = 1` says (R S1-6.36): the job started and never finished.\n\nA row with the flag on 0 and a path was finished by its job. If the file is missing there, that is loss in the bucket rather than a writer's leftovers, and deleting the row would hide it instead of showing it. So the pass now asks only about rows with the flag on 1 or with no path at all: eleven on production instead of 127.035.\n\n## Measured, not asserted\n\n`TheCleanUpReachesTheRowsItNamesTest` now counts **which paths the bucket is shown**, not only which rows disappear: two finished rows and one suspect, and the bucket may hear about exactly one of them. A bound you do not measure drifts.\n\n167 tests and 1.136 assertions over the rule catalogue and the photo commands; `phpstan` green over the whole project.\n\nFixes bevinding de-emmer-pas-vroeg-het-aan-de-hele-tabel.\n",
+            "branch": "workbench/fix/bucket-pass-asks-only-suspects",
+            "title": "The bucket pass asks about suspects, not about the whole table"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923175131-548546"
+}

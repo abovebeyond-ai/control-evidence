@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "681077e538ddf1f061f413bfcea87f44c45de651",
+            "branch": "workbench/afdrukken-opent-de-viewer",
+            "files_sha256": "5b17d0babe7f071ee0705ff25e74fbd43533db4ba2d312430b7f564e795eccc4",
+            "message": "Afdrukken opent de viewer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923125404-8dee52"
+}

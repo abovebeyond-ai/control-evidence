@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f148472feea8c722c2765ab462cced7a35401811",
+            "branch": "workbench/failed-round-says-why",
+            "files_sha256": "ecf678862c1d5df30442265ec2174e16c26dae746159ab561a840b4437a52055",
+            "message": "A failed round says why, not [object Object]"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260923135427-72f636"
+}

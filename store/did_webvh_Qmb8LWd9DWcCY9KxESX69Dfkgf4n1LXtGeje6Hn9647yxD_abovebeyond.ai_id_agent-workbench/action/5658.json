@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb814794dfc5cd3a9a8513e9853b378468e741f8",
+            "branch": "workbench/no-white-under-black",
+            "files_sha256": "5a50df5cef50b9946be1bbebb86943862475c907c9a3df17d89d28845618ae36",
+            "message": "No white under the black: the page ground is her black and the bounce is off"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260923124424-3aea19"
+}

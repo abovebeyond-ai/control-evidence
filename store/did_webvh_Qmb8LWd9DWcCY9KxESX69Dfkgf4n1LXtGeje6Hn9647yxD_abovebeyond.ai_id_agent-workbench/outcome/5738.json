@@ -1,0 +1,16 @@
+{
+    "action": "6e57dd44141eb87e289f88dabc52887d",
+    "effect": {
+        "detail": {
+            "base": "7ac51ba74b100b479953cb3450da657865475252",
+            "branch": "workbench/nieuwsbrief-scherm",
+            "commit": "63bb46c2fa49bd2608c565b7e03a0e911fd8ecd4",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5736,
+    "verdict": "ALLOW"
+}

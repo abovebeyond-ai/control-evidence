@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De sitemap droeg geen enkele `lastmod`, terwijl Sanity het tijdstip van publiceren gewoon bijhoudt. Een crawler die 236 adressen ziet zonder \u00e9\u00e9n datum moet zelf raden wat hij opnieuw moet ophalen.\n\nDe datum komt uit `_updatedAt` van het gespiegelde document en **niet** uit `updated_at` van onze eigen rij. Die tweede zegt wanneer wij gesynchroniseerd hebben en loopt bij elke sync mee, ook als er niets gewijzigd is: een sitemap die elke dag beweert dat alles vernieuwd is, leert een crawler binnen de week dat hij haar niet moet geloven. Dat is dezelfde reden waarom `MirrorFreshness` dat veld leest en niet de kolom.\n\nDe vaste adressen (contact, faq) hangen aan geen enkel document en krijgen dus geen datum. Liever geen `lastmod` dan een verzonnen `lastmod`.\n\nDe opbouw gaat nu over een adres-naar-datum-lijst in plaats van een lijst adressen met een `unique()` erachter, zodat elk adres \u00e9\u00e9n keer voorkomt met de datum van de inhoud die erachter zit.\n\n## Nagekeken\n\n`tests/Feature/SitemapLastmodTest.php`, vier tests: een montuur draagt de dag van zijn laatste publicatie, een pagina draagt haar eigen datum en niet die van een andere, een adres zonder document krijgt geen verzonnen datum, en alle vier de talen blijven gedekt.\n\n357 van 361 tests groen, pint schoon, phpstan zonder fouten. De vier die falen, falen ook zonder deze wijziging.\n",
+            "branch": "workbench/sitemap-lastmod",
+            "title": "De sitemap zegt wanneer iets gepubliceerd is, en zwijgt als ze het niet weet"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923115258-ecaf2e"
+}

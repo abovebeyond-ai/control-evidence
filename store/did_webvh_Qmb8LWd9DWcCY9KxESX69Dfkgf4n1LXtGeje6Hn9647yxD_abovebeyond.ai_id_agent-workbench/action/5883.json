@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nightwatch #39 reported a `ConnectionException` on `https://www.rg-wms.com/rest/auth` three times in seven days, a ten second timeout.\n\nThe request it happened in returned **status 200**. The visitor got their page.\n\nThat is what is supposed to happen since 22 September. `isConnected` is called by `WebsiteController::index`, the public stock list on a dealer's own site, so a silent RealGarant counts there as \"not connected\": the warranty block disappears, the page renders, and the failure is remembered for a minute so the next visitor does not pay the timeout again.\n\nOnly that catch called `report($e)` on every attempt. A handled failure declaring itself an exception. Nobody acts on it, and noise in an alarm layer is what makes the layer go unread \u2014 the same mistake as the smoke test firing on an old car, found the same day.\n\n## Reporting stays, once an hour\n\nDropping the report is the other extreme: then a partner down for half a day is silent too. `App\\Support\\Quiet::report($key, $e)` reports at most once per hour per key, keyed per dealer here.\n\nThe gate is `Cache::add` rather than `has` plus `put`: it only writes when the key does not exist, in one step, so two requests failing at the same moment produce one report between them.\n\nThe same shape sat in `FlexLeaseService`, where a bucket that does not answer must not drop the poster but did raise an alarm on every poster; it now reports quietly too, per path.\n\n## Verified\n\n`AHandledFailureIsNotAnAlarmTest`: the second failure inside the window stays quiet, another key has its own window, the window ends, and both catches use it.\n\n85 tests and 388 assertions over the rule catalogue, RealGarant, FlexLease and the poster; `phpstan` green over the whole project; `pint` green on the added files.\n\nRule R P3-13.9. Fixes bevinding een-afgehandelde-time-out-stond-in-de-alarmlaag.\n",
+            "branch": "workbench/fix/a-handled-timeout-is-not-an-alarm",
+            "title": "A handled timeout is not an alarm"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924055906-f0c408"
+}

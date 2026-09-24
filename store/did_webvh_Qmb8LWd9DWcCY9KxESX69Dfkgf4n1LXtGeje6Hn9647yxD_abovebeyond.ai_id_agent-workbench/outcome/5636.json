@@ -1,0 +1,16 @@
+{
+    "action": "a58844876cb9c845f54ec99722265545",
+    "effect": {
+        "detail": {
+            "base": "d67a5ac1829b86c4eebb25ed05dbdb093bd0f549",
+            "branch": "workbench/fix/photo-paths-are-repaired",
+            "commit": "e4830a79aa3568535be8396bed09566db06f6b9a",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5634,
+    "verdict": "ALLOW"
+}

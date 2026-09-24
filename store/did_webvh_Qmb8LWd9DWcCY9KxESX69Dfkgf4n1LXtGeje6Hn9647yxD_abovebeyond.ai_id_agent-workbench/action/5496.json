@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "64a84500694a800481a1aab8b6fd96eec64dc315",
+            "branch": "workbench/ui/vat-line-is-the-fields-label",
+            "files_sha256": "65fda62f18c7831a29f060f5f468b2e30a59831d1440fd6f067592de5e299124",
+            "message": "The VAT line is the field's label, above the field"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923094915-1d2eac"
+}

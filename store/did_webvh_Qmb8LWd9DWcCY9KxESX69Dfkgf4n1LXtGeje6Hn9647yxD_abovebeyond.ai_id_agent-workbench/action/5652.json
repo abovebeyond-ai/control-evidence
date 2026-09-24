@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1fef84d2570702887d707b1216d82ee2d8e39640",
+            "branch": "workbench/nieuwsbrief-db",
+            "files_sha256": "19afb743707db10cafaaf7f35d5893f0052f9d98820507087a7b559c4a476e3e",
+            "message": "Newsletter addresses live in our own database"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923124344-0503f4"
+}

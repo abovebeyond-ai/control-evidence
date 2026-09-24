@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een scholengroep komt tot stand via een scherm, en haar logo is wat het afgedrukte rapport toont.\n\n## Wat er gebeurde\n\nEen scholengroep was een rij die iemand met de hand schreef: het schoolscherm bood een keuzelijst van groepen waar niemand iets aan kon toevoegen. En de printkop toonde het athena-logo voor `school['id'] === 3 || === 5`, een regel die geen vijfde school ooit kon halen (en die als flakiness opdook zodra een testschool id 5 kreeg). Tweede stap van het onboardingplan.\n\n## De wijziging\n\n- **`/superadmin/scholengroepen`**: lijst, aanmaken, wijzigen (naam, slug, logo, actief), alleen voor een superbeheerder; in de navigatie naast Scholen. `SchoolGroupRequest` eist dat het logo een bestand onder `public/` is, anders staat er straks een kapotte afbeelding op een rapport.\n- **`school_groups.logo`** (migratie): een pad onder `public/`. De backfill geeft het athena-logo aan de groep die school 3 of 5 bevat, en dat is de laatste keer dat die twee id's iets beslissen.\n- **`SchoolGroup::logoPath()`**: het absolute pad als het bestand bestaat, anders null.\n- **`header.blade.php`** leest het logo van de groep van de school; geen groep of geen logo is geen logo.\n- `AFifthSchoolFromScratchTest` maakt de groep nu ook via het scherm (de rechter groeit mee met het plan), en `docs/wat-een-product-nog-mist.md` noteert de stap.\n\n## De rechters\n\n`SchoolGroupsTest`: aanmaken via het scherm, wijzigen, een logo dat geen bestand is wordt geweigerd, een gewone beheerder krijgt 403, de printkop toont het logo van de groep en niets voor een groep zonder of een school zonder groep, en de backfill van de migratie geeft het logo alleen aan de groep die het per id toonde. Mutatie (de kop leest weer school 3 of 5): de logotest rood. De vijfde-schoolrechter, de snapshots (ongewijzigd), de PDF-tests, de navigatiepariteit en de volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n\nHet logo is een pad naar een bestand dat op de server staat, geen upload: dat is een bewuste kleine stap, en ze staat zo in de doc.\n",
+            "branch": "workbench/scholengroepen-met-een-logo",
+            "title": "Scholengroepen met een logo"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923134240-a155d5"
+}

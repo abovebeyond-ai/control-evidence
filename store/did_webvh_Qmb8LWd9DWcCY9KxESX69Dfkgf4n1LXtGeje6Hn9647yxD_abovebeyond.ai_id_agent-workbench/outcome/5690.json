@@ -1,0 +1,16 @@
+{
+    "action": "b8b9c94d240333cd7ffbaa571b8c1561",
+    "effect": {
+        "detail": {
+            "base": "099809ca652c7981035555775a7cff92dc9bb6ee",
+            "branch": "workbench/de-linkerkant-op-een-lijn",
+            "commit": "f9385fdc6b70f5b5465b0913a40dd8019ba3093e",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5688,
+    "verdict": "ALLOW"
+}

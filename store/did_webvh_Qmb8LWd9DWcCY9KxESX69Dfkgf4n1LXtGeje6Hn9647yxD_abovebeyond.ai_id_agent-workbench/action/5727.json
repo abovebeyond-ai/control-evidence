@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nAfter the fold of 23 September (144 public trends became 59) the 85 absorbed trends lost their cards here, and with them their addresses. `/trends/<old-slug>`, `/api/v1/trends/<old>` and `get_trend` in the agent door all answered 404, and the door tells agents to cite a trend by its url. This site already has the rule for such a case in `TrendController` (\"a 404 on what worked yesterday is the most expensive way to improve an address\").\n\nNeeds gentells-pipeline#199, which puts `absorbed` (id, headline, date) on every projected trend. Without it the alias table simply stays empty and everything behaves as before.\n\n## How\n\n- `trend_aliases`: old id, old slug, the card that absorbed it, the old headline, the date. **Only ever added to**: an address that was public once does not disappear because the source leaves it out for a round. If an absorbing trend is later absorbed itself, the next reconcile points the alias at the new one.\n- `Projection::reconcileTrends` fills it from each card's `absorbed`. The old slug is rebuilt with the same rule that made it (`TrendCard::basisSlug`, split out of `slugVoor` without the collision loop, which needs the old row).\n- `TrendAlias::resolve()` is the one lookup for all three doors: a live card first (by slug or id), then an alias, following a chain up to five hops to a card that still exists.\n- The page answers an old address with a **301** to the absorbing trend. The API and `get_trend` answer with that trend plus a `superseded` block: which trend it replaced, into what, on which day, and a sentence saying so. The door's own instructions now tell agents what that block means.\n\n## Checked\n\nPint, the Tailwind check and the whole PHP suite pass. `TrendAliasTest`: the reconcile stores the alias with slug and date, an old slug and an old id both 301 (checked by mutation: without the redirect it fails), a live card wins over an old slug, a chain is followed, an alias survives a round without it, and the API returns the new trend with the `superseded` block while a live trend carries none.\n",
+            "branch": "workbench/folded-trends-keep-their-address",
+            "title": "A trend folded into another keeps its address, and the door says what happened"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260923131811-375bd8"
+}

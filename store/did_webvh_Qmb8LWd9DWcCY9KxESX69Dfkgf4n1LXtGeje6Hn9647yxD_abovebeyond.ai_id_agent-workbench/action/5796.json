@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ff7128f209c986e326b66eeeb59f37cbb54d5652",
+            "branch": "workbench/ui/werking-lines-carry-a-verdict",
+            "files_sha256": "04b98a385bb88a0f2fd11c88d18fe3a6da43f6229ccd6972884c718e16270a1f",
+            "message": "Every line on Werking carries a verdict, and the verdict is true"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923135504-2c0b50"
+}

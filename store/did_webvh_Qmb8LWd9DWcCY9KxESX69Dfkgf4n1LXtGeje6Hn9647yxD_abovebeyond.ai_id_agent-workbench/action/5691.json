@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De kop en de sectietitels van het afgedrukte rapport beginnen op de marge, net als de vaknamen en de woorden van een leerkracht.\n\n## Wat er gebeurde\n\nZe stonden 7,5pt naar rechts. De PDF-layout had een globale regel `td { padding: 2px 10px; }` uit het oude rapport, en elke cel die niet alle vier de zijden zelf zette (de kopcel, de sectietitel, de kolomlabels) kreeg zo 10px links; de vakcellen zetten de hele shorthand en stonden w\u00e9l op de marge. Shane: \"text on top starts a bit more to the right\".\n\n## De wijziging\n\n- `layout/pdf.blade.php`: de globale celpadding weg. Alleen de twee rapport-PDF's gebruiken deze layout.\n- `header.blade.php` en `div-section.blade.php`: de kopcellen zetten hun padding zelf (`0`, en `0 0 4pt 0` voor de titel en de kolomlabels). Een cel zegt haar eigen padding; niets erft er nog een.\n\n## De rechter\n\n`TheLeftEdgeIsOneLineTest` rendert `pdf_single` met een rapport van \u00e9\u00e9n vak met feedback, leest via de render-callback van dompdf de x van het eerste woord van de kop (\"Periodiek\"), de sectietitel (\"Deel\"), het vak (\"Frans\") en de leerkracht (\"An\"), en eist dat elk op de linkermarge van `@page` staat (1,6 cm = 45,35pt, op 0,1pt). Twee mutaties, elk rood met het woord dat verschoof erbij: 10px links op de titelcel (\"Deel\"), en de kopcel zonder eigen padding met de globale regel terug (\"Periodiek\"). PDF-controllertest, de drie andere printrechters en de volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n",
+            "branch": "workbench/de-linkerkant-op-een-lijn",
+            "title": "De linkerkant van het rapport op \u00e9\u00e9n lijn"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923131037-0112c2"
+}

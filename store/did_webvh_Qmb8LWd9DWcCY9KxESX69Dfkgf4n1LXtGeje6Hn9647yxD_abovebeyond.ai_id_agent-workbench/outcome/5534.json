@@ -1,0 +1,16 @@
+{
+    "action": "c57d51fd6e526f4acecdc71d0d4c6748",
+    "effect": {
+        "detail": {
+            "base": "ef4a7e03f836ca76c695c83e73baea1d12328bf5",
+            "branch": "workbench/taalwissel",
+            "commit": "3695e30cbfed8987256eae51bfb480b7c95e210e",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5532,
+    "verdict": "ALLOW"
+}

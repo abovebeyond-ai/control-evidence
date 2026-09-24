@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het ontwerpsysteem bijgewerkt met wat het afgedrukte rapport vandaag leerde. Hoort na #149.\n\n- **De bandtabel** noemt grijs nu `#cdd1d8` met tint 255 en \"absent, no judgement\". De zin \"those hex values do not move\" gold voor alle vijf en spreekt #149 tegen; nu geldt hij voor de vier oordeelkleuren, met de reden waarom grijs wel mocht bewegen (geen oordeel, geen letter, het grijs van het blad zelf) en wat dat betekent voor een herdruk van een oud rapport.\n- **Nieuwe component \"The score block on paper\"**: het getal op de kleur, de maat van de kolom (22pt, tweede regel voor \"aanwezig\", een los getal in het midden), `printInk()` per band, en twee lessen van vandaag: dompdf centreert niet via `line-height`, en Blade leest `@elseif` niet direct achter een woordteken.\n\nAlleen documentatie.\n",
+            "branch": "workbench/het-ontwerpsysteem-kent-het-scoreblok-op-papier",
+            "title": "Het ontwerpsysteem kent het scoreblok op papier"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923122606-586ce0"
+}

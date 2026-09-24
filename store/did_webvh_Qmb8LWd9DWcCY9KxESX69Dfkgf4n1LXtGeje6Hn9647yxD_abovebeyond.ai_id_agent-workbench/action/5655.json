@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De dataset in Sanity is publiek leesbaar. Met het project-id uit de paginabron (het staat in elke afbeeldings-URL) leest iedereen de inhoud, en daar horen **722 nieuwsbriefadressen** bij. Het publieke formulier op de site schreef ze daar zelf naartoe: een formulier dat persoonsgegevens opslaat in een publiek leesbare plek.\n\nPrivaat zetten kan, maar dat is bij Sanity een betaald plan (Growth, 15 dollar per seat per maand). En het is niet het eerste antwoord: deze applicatie heeft een databank, met de bestellingen en de dealers erin. Sanity is er voor inhoud die getoond wordt.\n\n## Wat er verandert\n\n- Tabel `subscribers`, met de velden die de documenten droegen, ook die uit de oude YMLP-import (naam, bedrijf, groepen, bron), zodat de overname niets laat vallen. Uniek op merk en adres: dezelfde regel die de document-id in Sanity afdwong (`subscriber-<merk>-<hash>`).\n- Het formulier schrijft naar die tabel. De twee stappen blijven: pas na de klik in de bevestigingsmail staat een inschrijving op actief, met het tijdstip van de klik als bewijs van toestemming.\n- `php artisan subscribers:import` haalt wat er al stond \u00e9\u00e9n keer op. Alleen lezen, idempotent, met `--dry` om eerst te tellen.\n\n## Wat dit bewust niet doet\n\nDe documenten in Sanity wissen. Dat hoort een aparte, bewuste stap te zijn, en pas nadat iemand geteld heeft dat hier evenveel adressen staan. Let op: Cabrio schrijft nog wel naar dezelfde dataset, dus die documenten wissen kan pas als daar hetzelfde gebeurd is.\n\nHet raakt ook de bestelaccounts niet (214 documenten met naam, e-mail en telefoon). Die worden in de Studio beheerd en zijn zakelijke contactgegevens; dat is een aparte afweging.\n\n## Nagekeken\n\n`SubscribersImportTest` (4) en de bestaande `NieuwsbriefTest` (7, nu tegen de tabel): de velden komen mee, opnieuw draaien maakt geen tweede regel, een onbruikbaar adres wordt overgeslagen zonder de rest te laten vallen, `--dry` schrijft niets, en een inschrijving telt nog steeds pas na de klik.\n\nDie test hield een dubbel voor de Sanity-client omdat het schrijven ervan ooit \"iemand@voorbeeld.be\" in de echte dataset zette, bij beide merken. Die reden is nu weg.\n\n374 van 378 tests groen, pint schoon, phpstan zonder fouten. De vier die falen, falen ook zonder deze wijziging.\n\n## Na de merge\n\n```\nphp artisan migrate\nphp artisan subscribers:import --dry     # tellen\nphp artisan subscribers:import           # overhalen\n```\n",
+            "branch": "workbench/nieuwsbrief-db",
+            "title": "Nieuwsbriefadressen staan in onze eigen databank"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923124344-0503f4"
+}

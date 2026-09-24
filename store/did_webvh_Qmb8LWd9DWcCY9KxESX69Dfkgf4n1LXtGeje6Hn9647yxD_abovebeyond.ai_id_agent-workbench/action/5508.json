@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d9654fe41bb1d909e0cd5e71e421f34dfb591be",
+            "branch": "workbench/de-datumregels-worden-data",
+            "files_sha256": "1fa2968a27b77c14b19807f30114296845ab3516345719c87560a8b179aa1cb6",
+            "message": "De datumregels worden data"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923102131-5de935"
+}

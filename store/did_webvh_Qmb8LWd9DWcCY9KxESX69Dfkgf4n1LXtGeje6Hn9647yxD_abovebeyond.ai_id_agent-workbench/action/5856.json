@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d3a46c9e86c8f06fd181ccaaf18e7ab8345bfac",
+            "branch": "workbench/beheerder-op-een-knoop",
+            "files_sha256": "f82c5d3ef9e0ea76e9b370fa769cf8bc6fab3e4275654241fd50979ef4c82d8b",
+            "message": "Beheerder op een knoop, en \u00e9\u00e9n installatie per koepel"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923181251-e72b1a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "083967a16df77088cea2a855a55202e531b8b0db",
+            "branch": "workbench/de-eindterm-die-al-in-de-hand-was",
+            "files_sha256": "352e1fd081f9a948b0866acbd2db9d3881e80ac2be8604ac47eec11c75bfeecb",
+            "message": "De eindterm die al in de hand was gaat mee naar de DTO van de score"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923112013-83380a"
+}

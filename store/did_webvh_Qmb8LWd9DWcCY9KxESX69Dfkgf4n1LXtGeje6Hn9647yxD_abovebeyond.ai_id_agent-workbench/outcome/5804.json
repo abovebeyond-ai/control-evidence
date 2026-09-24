@@ -1,0 +1,16 @@
+{
+    "action": "03692435617cee095926a626613352e1",
+    "effect": {
+        "detail": {
+            "base": "47fe6680dfb38bf9048f5464f123573db0776cbe",
+            "branch": "workbench/ui/menu-items-breathe",
+            "commit": "27270474d51bda551784d1c65a7f14e4f4e30b83",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5802,
+    "verdict": "ALLOW"
+}

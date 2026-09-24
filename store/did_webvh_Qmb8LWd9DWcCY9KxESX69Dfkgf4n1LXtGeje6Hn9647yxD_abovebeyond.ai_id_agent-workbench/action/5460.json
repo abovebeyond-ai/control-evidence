@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b666c5cdd28841427739c0e3b45efb8dc799977",
+            "branch": "workbench/fix/card-never-shows-the-dealer-price",
+            "files_sha256": "b84571cb1314aba7c9ece33d4a66427beb338d5279ba20d62239eeaec86eda8e",
+            "message": "The card never shows the dealer price in customer mode, and a margin of zero is refused"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923082200-cd55ed"
+}

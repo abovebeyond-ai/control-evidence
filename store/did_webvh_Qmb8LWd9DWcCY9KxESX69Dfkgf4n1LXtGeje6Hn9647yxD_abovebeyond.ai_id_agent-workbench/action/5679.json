@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"Afdrukken\" opent het rapport als PDF in een nieuw tabblad, in de viewer van de browser, in plaats van het stil te downloaden.\n\n## Wat er gebeurde\n\nDe knop deed `->download()`. Een rapport maken duurt ruim een seconde, een klas een halve minuut, en al die tijd veranderde er niets op het scherm; daarna moest het bestand nog geopend en afgedrukt worden. Shane: \"klikken op afdrukken betekent eigenlijk pdf genereren; moet dat niet met een spinner, of een print slimmer\".\n\n## De wijziging\n\n- De twee PDF-controllers geven de PDF **inline** terug (`->stream()`); dezelfde bytes, andere `Content-Disposition`.\n- De kopknoppen van `x-layout.page` kennen `'newTab' => true` (`target=\"_blank\" rel=\"noopener\"`), voor een enkele knop en voor alle items van een dropdown. Het rapportscherm zet het op \"Afdrukken\", de klaspagina op de dropdown \"Print rapport\".\n\nHet tabblad toont zelf het laden, de viewer van de browser toont het blad met afdrukken en opslaan onder handbereik, en het scherm blijft staan. Een spinner op de knop had JavaScript gevraagd dat het einde van een download bewaakt, en had het tweede probleem niet opgelost. Het printvenster automatisch openen (verborgen iframe) werkt in Chrome maar niet betrouwbaar in Safari, dus niet.\n\n## De rechter\n\n`PrintOpensInTheViewerTest`: de PDF-route antwoordt `inline` met `application/pdf`; de afdrukknop op het rapport draagt `target=\"_blank\"`; de print van een klas in de dropdown ook (echte pagina uit het scenario). Drie mutaties, elk \u00e9\u00e9n test rood: weer `download()`, `newTab` weg op het rapportscherm, `newTab` weg op de klaspagina. Volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n\n## Onderweg gevonden, niet in deze PR\n\nDraait `PrintOpensInTheViewerTest` v\u00f3\u00f3r `TermReportPDFControllerTest` in \u00e9\u00e9n proces, dan wordt de lettertype-test daar rood: de vijfde testschool van het proces krijgt id 5, `header.blade.php:21` toont het athena-logo voor `school['id'] === 3 || === 5`, het `<img>` naar `asset()` laadt in een test niet, en dompdf tekent zijn plaatsvervanger voor een kapotte afbeelding in Times. Een id-regel in een template, zichtbaar als flakiness; komt apart.\n",
+            "branch": "workbench/afdrukken-opent-de-viewer",
+            "title": "Afdrukken opent de viewer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923125404-8dee52"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "962e7b4598283b7eadc2d782ebe3e11b0dbe632c",
+            "branch": "workbench/de-klas-van-de-leerling-in-een-keer",
+            "files_sha256": "570c881e0d1a2890375b4bd871969f067bb08ce073bb9434ccaee05bb5fe5e0e",
+            "message": "De klas van de leerling in een keer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923080305-8312bc"
+}

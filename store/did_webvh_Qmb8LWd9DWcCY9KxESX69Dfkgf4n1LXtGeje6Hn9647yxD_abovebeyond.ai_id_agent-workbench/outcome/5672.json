@@ -1,0 +1,16 @@
+{
+    "action": "5ce5a1ca77241a7a6fbce33f885f0d79",
+    "effect": {
+        "detail": {
+            "base": "eb5a9006ecb5b2ef9ab34bec33e1d05b650fa673",
+            "branch": "workbench/nieuwsbrief-db",
+            "commit": "d7550db84d7a4d114bf5ac2056b8b594ad58edcd",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5670,
+    "verdict": "ALLOW"
+}

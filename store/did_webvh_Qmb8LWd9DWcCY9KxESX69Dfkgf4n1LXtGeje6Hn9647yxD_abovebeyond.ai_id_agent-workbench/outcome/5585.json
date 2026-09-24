@@ -1,0 +1,16 @@
+{
+    "action": "734f5d58bca1e8b68ead254e0d1fa798",
+    "effect": {
+        "detail": {
+            "base": "3744796b99e72330e670fe794be8c1884f572ff7",
+            "branch": "workbench/sitemap-lastmod",
+            "commit": "ed1efb3091f7716e068e7a437ebff21ef031a65f",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5583,
+    "verdict": "ALLOW"
+}

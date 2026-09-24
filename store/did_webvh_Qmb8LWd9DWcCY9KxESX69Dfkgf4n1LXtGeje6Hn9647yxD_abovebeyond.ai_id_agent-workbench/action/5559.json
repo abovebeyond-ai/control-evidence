@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1f56e8447bb03374b8446912109a8bb7486b8392",
+            "branch": "workbench/lcp",
+            "files_sha256": "6b517ef187459bad4bdf23fe044741d840d68709363897bee7436886984c90cc",
+            "message": "Announce the image that decides LCP, and only that one"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923114144-de2cc6"
+}

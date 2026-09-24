@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Dezelfde wijziging als [hoet-eyewear#64](https://github.com/Hoet-design/hoet-eyewear/pull/64), en om dezelfde reden.\n\nDe dataset in Sanity is publiek leesbaar. Met het project-id uit de paginabron (het staat in elke afbeeldings-URL) leest iedereen de inhoud, en daar horen 722 nieuwsbriefadressen bij: 427 van Cabrio, 295 van Hoet. Het publieke formulier op de site schreef ze daar zelf naartoe.\n\nPrivaat zetten kan, maar dat is bij Sanity een betaald plan (Growth, 15 dollar per seat per maand). En het is niet het eerste antwoord: deze applicatie heeft een databank, met de bestellingen en de dealers erin. Sanity is er voor inhoud die getoond wordt.\n\n## Wat er verandert\n\n- Tabel `subscribers`, met de velden die de documenten droegen, ook die uit de oude YMLP-import (naam, bedrijf, groepen, bron). Uniek op merk en adres: dezelfde regel die de document-id in Sanity afdwong.\n- Het formulier schrijft naar die tabel. De twee stappen blijven: pas na de klik in de bevestigingsmail staat een inschrijving op actief, met het tijdstip van de klik als bewijs van toestemming.\n- `php artisan subscribers:import` haalt wat er al stond \u00e9\u00e9n keer op. Alleen lezen, idempotent, met `--dry` om eerst te tellen.\n\n## Volgorde\n\nDe documenten in Sanity wissen kan pas nu beide merken over zijn, en pas nadat de aantallen aan beide kanten geteld zijn. Bij Hoet is dat gebeurd: 295 gevonden, 295 overgehaald.\n\n## Nagekeken\n\n`SubscribersImportTest` (4) en de bestaande `NieuwsbriefTest` (7, nu tegen de tabel). 321 van 324 tests groen, pint schoon, phpstan zonder fouten. De drie die falen, falen ook zonder deze wijziging: die willen een `.env` in de checkout.\n\n## Na de merge\n\n```\nphp artisan migrate --force\nphp artisan subscribers:import --dry     # verwacht: 427\nphp artisan subscribers:import\n```\n",
+            "branch": "workbench/nieuwsbrief-db",
+            "title": "Nieuwsbriefadressen staan in onze eigen databank"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260923125148-6759b4"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ff7128f209c986e326b66eeeb59f37cbb54d5652",
+            "branch": "workbench/fix/bucket-file-exists-rebased",
+            "files_sha256": "83c3a0138559481610dc03c5c30ccd37a709568df952a567018573683a92078f",
+            "message": "Asking the bucket for a file is a HEAD, not a listing"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923134243-443dd5"
+}

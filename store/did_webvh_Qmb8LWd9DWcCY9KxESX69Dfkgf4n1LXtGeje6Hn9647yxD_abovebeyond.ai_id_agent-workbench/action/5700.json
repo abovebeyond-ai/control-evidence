@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "009ca45181f32d4a2d0eb188544a705e9a56e2c2",
+            "branch": "workbench/ui/werking-is-om-te-scannen",
+            "files_sha256": "c289049880664fa67f14939201588d0d46fb83dcd358d42e449eab4bb6a664cb",
+            "message": "Werking is a screen you scan, not a log you scroll"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923131243-b1dcb8"
+}

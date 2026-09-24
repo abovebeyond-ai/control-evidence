@@ -1,0 +1,16 @@
+{
+    "action": "d24650255d714d82a33de989233739af",
+    "effect": {
+        "detail": {
+            "base": "e7c1be2d0466183d37526e4a5dc059431aebb2d3",
+            "branch": "workbench/fix/downloads-are-responses",
+            "commit": "e75740aa1563e5a4f37ee151d786000b183eed00",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5820,
+    "verdict": "ALLOW"
+}

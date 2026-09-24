@@ -1,0 +1,16 @@
+{
+    "action": "43b2981982ccdeed50a47d3d395bfb2c",
+    "effect": {
+        "detail": {
+            "base": "3695e30cbfed8987256eae51bfb480b7c95e210e",
+            "branch": "workbench/oude-links",
+            "commit": "3edcc587ac8f2d864bb9de84e6db3a58ab884897",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5538,
+    "verdict": "ALLOW"
+}

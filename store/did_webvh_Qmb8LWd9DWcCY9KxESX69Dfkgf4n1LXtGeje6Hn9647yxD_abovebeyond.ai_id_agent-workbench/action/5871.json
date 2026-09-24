@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een rapport van een afgesloten periode wordt een document: het archief, stap 1 van vier.\n\n## Waarom\n\nWat een rapport van 2022 zegt, rust vandaag op code die elke regel van 2022 in leven houdt (gescheiden scoren, gearchiveerde clusters, de datumregels die vandaag data zijn). Shane: \"eerst oude rapporten berekenen, dan die logica eruit, en als een rapport niet gevonden kan worden: kan niet meer geopend worden\". En: \"ik wil scores bewaren voor future intelligence\", dus niet alleen een PDF.\n\n## De wijziging\n\n- **`archived_reports`**: per leerling en periode \u00e9\u00e9n rij die zegt waar het document staat (JSON en PDF), met de sha256 van de JSON en het moment van archiveren.\n- **`ReportArchive::archive($student, $term)`** berekent het rapport \u00e9\u00e9n keer (met de school van de periode in de sessie, want de scopes lezen die) en schrijft twee bestanden op de `local`-schijf onder `private/reports/<schooljaar>/term-<id>/student-<id>.{json,pdf}`: de JSON is `TermReportDTO::toArray()`, dezelfde vorm die de snapshots beoordelen; de PDF is dezelfde die de knop \"Afdrukken\" geeft. Opnieuw archiveren overschrijft (een heropende periode zegt wat het rapport het laatst zei). `read()` decodeert de JSON zonder \u00e9\u00e9n regel van dat jaar te hoeven kennen, en weigert een bestand dat weg is of niet bij zijn checksum past: stil herberekenen zou precies de fout zijn die dit moet voorkomen. `pdf()` geeft de bytes.\n- **`TermReportPdf`**: de ene manier waarop een blad gemaakt wordt (view, \"vervolg\", paginanummers); de controller streamt het, het archief bewaart het.\n\nNog niet in deze PR: de route die het archief toont (stap 2), de bulkopdracht per periode (stap 3), het opruimen van de legacy-logica (stap 4).\n\n## De rechter\n\n`ArchivingAReportTest`: op de vier momenten van de snapshots (nu, 2023-2024, 2022-2023, tot 12 december 2023) zegt het teruggelezen archief exact wat het berekende rapport zei, de PDF staat er en de checksum klopt; verandert een score na het archiveren, dan verandert het rapport wel en het archief niet; twee keer archiveren laat \u00e9\u00e9n rij met een nieuwe checksum; nooit gearchiveerd leest als niets, een gemanipuleerd bestand als een fout; en de PDF van de controller is byte voor byte die van het archief (op de aanmaakdatum en het `/ID` van dompdf na). Mutatie (lezen herberekent eerst): de scorewijzigingstest rood. `ContinuedSectionsTest` kent `TermReportPdf` als de ene plek. Volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n",
+            "branch": "workbench/een-rapport-archiveren",
+            "title": "Het archief"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924052019-47aee4"
+}

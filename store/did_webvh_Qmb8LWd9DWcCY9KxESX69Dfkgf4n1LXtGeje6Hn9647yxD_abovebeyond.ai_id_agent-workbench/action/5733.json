@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nightwatch #40, today at 13:06, while a dealer was duplicating a photo:\n\n```\nLeague\\Flysystem\\UnableToCheckDirectoryExistence\nUnable to check existence for: 23024/stocklist_car_image_8.jpeg\n  app/Jobs/ProcessImage.php:366  ->  Storage::disk('vehicles')->exists($baseName)\n```\n\nThe job hung for thirty seconds and gave up.\n\n## What the call really does\n\nThe stack names it: `exists()` goes through `Filesystem->has()` to **`AwsS3V3Adapter->directoryExists()`**. `Storage::exists()` means \"as a file **or** as a directory\", and that second half is a `ListObjectsV2` over the prefix. For one photo that is a directory listing, and it takes as long as the folder is big.\n\n`fileExists()` asks the one question we ever mean, and costs a HEAD.\n\n## Three times is a shape\n\n- The showroom slides listed a folder per redrawn slide until that ran into a fifteen-second timeout on 21 September (R S2-7.16).\n- The daily mail broke the same day on `exists()` with a null path, and the exception took the whole round with it, so no dealer got their mail (R B1-2.16).\n- Today, the photo mill.\n\nSo this is about the form and not the incident: on this disk we ask for a file. All **31** calls on the `vehicles` disk are converted, across eleven files. Comments that mention the old form stay as they are, because that is the history and not code.\n\n`TheBucketIsNotAskedForADirectoryTest` reads every PHP line in `app/`, skips comments, and fails on `exists(` or `missing(` on that disk. There is no fourth time.\n\n## One existing test rewritten\n\n`AnAfficheWithoutAPhotoStillPrintsTest` pinned the old call as a literal string. Its point is the `filled()` guard in front of it, because an empty path makes the bucket throw a `TypeError`; that point is unchanged and the assertion now holds it, rather than holding the method name.\n\n## Honestly\n\nI ran hundreds of `exists()` calls against that bucket myself this afternoon while working out the photo paths, all in the expensive form. The timestamps do not line up with this incident, but I cannot rule out that those scans warmed the bucket up.\n\nVerified locally: 401 tests, 2.249 assertions across everything touching photos, images, mail, integrations, leases and orders, plus the rule-catalogue tests; `phpstan analyse` green on the whole project.\n",
+            "branch": "workbench/fix/bucket-file-exists",
+            "title": "Asking the bucket for a file is a HEAD, not a listing"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923131905-89340a"
+}

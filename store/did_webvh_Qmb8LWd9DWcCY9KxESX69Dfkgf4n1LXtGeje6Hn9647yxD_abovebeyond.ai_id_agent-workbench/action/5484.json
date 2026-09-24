@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f446a41adfde334ad93d64a75f507dcae50de90c",
+            "branch": "workbench/ui/bid-says-excluding-vat",
+            "files_sha256": "242edd19faeaeba70f5dc38c2d3a7b6353dd8eae8c1ab4db33afe21a3a346bd4",
+            "message": "A bid on a VAT vehicle says excluding VAT before the amount and again at the confirmation"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923083603-a23df2"
+}

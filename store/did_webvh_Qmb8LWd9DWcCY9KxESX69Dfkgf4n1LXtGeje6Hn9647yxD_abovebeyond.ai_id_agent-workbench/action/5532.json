@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ef4a7e03f836ca76c695c83e73baea1d12328bf5",
+            "branch": "workbench/taalwissel",
+            "files_sha256": "f73ca1c4b7cf543f470f9c6c0e6cf2594731922cd4b3a3bbf3ad00edc7c3fb56",
+            "message": "One address per page per language, and a language switch that lands on it"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923111502-7de3f2"
+}

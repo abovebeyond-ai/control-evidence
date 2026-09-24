@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "720d50771b7645821dc66d9081dc3ff7a6e8c141",
+            "branch": "workbench/feat/platform-photos-without-copies",
+            "files_sha256": "81012bc65e22c8a3e928594f5d19e4b86044e799a303ce468303d827224553ab",
+            "message": "Invisible is not the same as thin: --without-copies"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924052622-8e7102"
+}

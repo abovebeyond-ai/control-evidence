@@ -1,0 +1,16 @@
+{
+    "action": "7d29c290232f18f57b5015f2536d80d7",
+    "effect": {
+        "detail": {
+            "base": "e7c1be2d0466183d37526e4a5dc059431aebb2d3",
+            "branch": "workbench/fix/vin-fill-without-a-vehicle",
+            "commit": "82731e5768d2b8e52d8efb482f330f1b874db99f",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5826,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "f56b83d2cc51faa0da99bad5c1c1ba09",
+    "effect": {
+        "detail": {
+            "base": "f446a41adfde334ad93d64a75f507dcae50de90c",
+            "branch": "workbench/ui/bid-says-excluding-vat",
+            "commit": "e9c54710a9162907fd8ac73987209cfe43029347",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5484,
+    "verdict": "ALLOW"
+}

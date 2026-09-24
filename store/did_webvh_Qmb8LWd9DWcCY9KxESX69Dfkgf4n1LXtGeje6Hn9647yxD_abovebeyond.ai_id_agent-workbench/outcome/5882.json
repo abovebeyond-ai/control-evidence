@@ -1,0 +1,16 @@
+{
+    "action": "c49b0b69dc3ea4d4befa542ac0538611",
+    "effect": {
+        "detail": {
+            "base": "7a9f17bda265ff7624f4e86fcece5e8bd2cacb1c",
+            "branch": "workbench/fix/a-handled-timeout-is-not-an-alarm",
+            "commit": "af1181781bdc9912e6865cddecbe262d2d222d7d",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5880,
+    "verdict": "ALLOW"
+}

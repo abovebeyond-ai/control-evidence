@@ -1,0 +1,16 @@
+{
+    "action": "5e4da12011343882095d46ede2303769",
+    "effect": {
+        "detail": {
+            "base": "ff7128f209c986e326b66eeeb59f37cbb54d5652",
+            "branch": "workbench/fix/bucket-file-exists-rebased",
+            "commit": "da2a502ca3688263a5e51a13c08aa537e812361a",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5761,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "16b242a44979f935860b79fea8636f6dee426f0e",
+            "branch": "workbench/holding-page-hero",
+            "files_sha256": "faa1feaca5af3e17ea6a247e71c725e50721528c77b9b84b3463eb429ce489b4",
+            "message": "The holding page wears the same hero, and the mother house is visible on black"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260923121924-dc49cc"
+}

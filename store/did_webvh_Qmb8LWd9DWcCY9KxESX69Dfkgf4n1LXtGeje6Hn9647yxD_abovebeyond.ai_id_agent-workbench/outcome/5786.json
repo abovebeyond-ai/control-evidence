@@ -1,0 +1,16 @@
+{
+    "action": "287ca2324d383c7071066885c21449d3",
+    "effect": {
+        "detail": {
+            "base": "abf8b111bd398650557dd273a1289e71855e4da9",
+            "branch": "workbench/prune-orders",
+            "commit": "f8363e354fc7b89c4845a248cd690bac83020735",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5784,
+    "verdict": "ALLOW"
+}

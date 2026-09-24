@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "31b106d693d85e454b7437d6267f5b8525b69a06",
+            "branch": "workbench/fix/fr-operations-parses",
+            "files_sha256": "9af57c074261e0b8b90017068a7e90aab52399ea83a0a170d6414dcacf11d147",
+            "message": "A translation file is PHP, and names each key once"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923133347-d4b5a1"
+}

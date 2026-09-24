@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f446a41adfde334ad93d64a75f507dcae50de90c",
+            "branch": "workbench/fix/sheet-keeps-the-spoticar-warranty",
+            "files_sha256": "94637c927bec6e1eb6e8f8c412021b557616337ee5be48a30ef0e3eed08f97f7",
+            "message": "The sheet keeps the Spoticar warranty, and a test keeps every other field"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923083118-0bac88"
+}

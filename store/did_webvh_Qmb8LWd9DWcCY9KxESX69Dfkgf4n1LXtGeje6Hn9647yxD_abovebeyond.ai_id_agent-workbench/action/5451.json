@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The widget picks its language from the dealer's setting or from `?lang=`, and the filter labels followed. Seven strings did not, because they were typed straight into the blade.\n\nA French dealer reported it through Ilse on 23 September 2026, with a screenshot in which MARQUE, MOD\u00c8LE, TYPE DE TRANSMISSION and TYPE DE CARBURANT sit next to **Meer filters**, above **0 wagens** and **Geen wagens gevonden met deze filters.**\n\n| what | where |\n| --- | --- |\n| \"Filters\" / \"Meer filters\" | `search.blade.php` |\n| the result count, \"wagen\" / \"wagens\" | `vehicles.blade.php` |\n| \"laden\u2026\" on the infinite-scroll sentinel | `vehicles.blade.php` |\n| \"Geen wagens gevonden met deze filters.\" | `vehicles.blade.php` |\n| \"Uitgebreide waarborg\" and its sentence | `detail.blade.php` |\n| the page title \"Tweedehandswagens\" | `index.blade.php` |\n\nAll of them now live in `resources/lang/{nl,fr,en,de}/website.php`. The count goes through `trans_choice`, because singular and plural differ per language and zero has to read as a plural (\"0 wagens\", \"0 v\u00e9hicules\", not \"0 wagen\").\n\n## The test is the other half\n\n`TheWidgetSpeaksTheVisitorsLanguageTest` reads every blade of the widget, strips the comments, the expressions and the directives, and fails on any remaining visible text node that carries a word only Dutch has. Four pairs of eyes do not catch this reliably; this does, and it immediately found two places the screenshot did not show.\n\n`gone.blade.php` stays outside that scan, with the reason in the method: it is the 410 answer of R S2-5.26 and leaves the middleware before `WebsiteController` picks a language, so `?lang=` is never read on that path. Translating it would change nothing a visitor sees; moving the language choice into the middleware would, and that one neutral sentence does not justify it.\n\n## Verified\n\n`TheWidgetSpeaksTheVisitorsLanguageTest` plus the neighbouring widget tests (`WebsiteThemeTest`, `WebsiteOwnVehiclesFirstTest`, `WebsiteModalPositionTest`, `TheEmbedFollowsThePackageTest`, `WebsiteEmbedSettingsTest`, `ChipsSelectTest`): 32 tests, 269 assertions. The rule-catalogue tests (`RulesIdentityTest`, `RulesCoverageTest`, `RulesSourcesTest`, `RulesDocsBuildTest`): 20 tests green.\n\nThe full local suite could not be run before proposing: a safety hook in the session started failing closed on the command. CI runs all 2049 tests here.\n",
+            "branch": "workbench/fix/widget-speaks-the-visitors-language",
+            "title": "The widget speaks the visitor's language, everywhere"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923075153-0c0b12"
+}

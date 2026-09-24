@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "887c3325da25f2754c258b750fb4e144dc69eeb6",
+            "branch": "workbench/de-aanwezigheidsregel-past-in-haar-blok",
+            "files_sha256": "8e68417396e15eee51922a7352ef6ef8fc27a9cd1b25b8867472b3421cc6cc01",
+            "message": "Elk blok op papier heeft de maat van zijn kolom"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923120451-b383fa"
+}

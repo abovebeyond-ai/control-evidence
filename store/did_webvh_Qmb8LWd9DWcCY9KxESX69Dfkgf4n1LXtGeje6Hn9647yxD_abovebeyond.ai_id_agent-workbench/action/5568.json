@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op papier staat het percentage weer \u00f3p de kleur, zoals op het scherm.\n\n## Wat er gebeurde\n\nHet herontwerp van 22 september (\"Het rapport op het ontwerpsysteem\") tekende per vak een kleurblok en zette het percentage eronder in grijs. Op het scherm staat het getal \u00edn de gekleurde cel (`TableSection.vue:341`). Onder het blok las het getal als een onderschrift bij de kleur in plaats van als de score, en wie het rapport op het scherm kende herkende zijn afdruk niet. Shane: \"web is het juiste\".\n\n## De wijziging\n\n`div-section.blade.php`: \u00e9\u00e9n blok dat beide zegt. Het percentage (of de regel \"62% aanwezig\") staat in het element dat de bandkleur draagt, in inkt (`#0d1928`) en niet in wit: de printkleuren zijn de verzadigde `hexColor()`, en wit op de groene band haalt geen 2,2:1. Een blok zonder getal houdt zijn kleur en zijn hoogte.\n\nOnderweg \u00e9\u00e9n Blade-les: `aanwezig@elseif` is geen directive (een `@` na een woordteken telt niet), dus de compilatie viel stil terug op `@else` en drukte \"if ($shows)82%\" af. De directives staan nu op eigen regels; de witruimte valt in de cel toch weg.\n\n## De rechter\n\n`TheNumberSitsOnTheColourTest` rendert de printcomponent met \u00e9\u00e9n cluster en leest de inhoud van het element met de bandkleur: het percentage staat erin, de aanwezigheidsregel staat erin (en verdringt dan de score), en een blok zonder getal houdt zijn kleur. Mutatie (getal terug onder het blok): **2 rood**. `TermReportPDFControllerTest`, `ComplementaryPartOfTheReportTest` en de volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na; geen snapshot gewijzigd (er verandert niets aan wat berekend wordt).\n\nNagekeken op een proefblad via dompdf: vier banden met getal, de aanwezigheidsregel in de oranje band, een leeg grijs blok.\n",
+            "branch": "workbench/het-getal-op-de-kleur-ook-op-papier",
+            "title": "Het getal op de kleur, ook op papier"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923114803-e701b2"
+}

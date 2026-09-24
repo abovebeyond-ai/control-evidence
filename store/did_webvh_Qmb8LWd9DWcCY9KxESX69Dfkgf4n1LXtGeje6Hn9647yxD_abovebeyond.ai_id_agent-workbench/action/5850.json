@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7ddc67336e52f6a5ac8b61ca8ba64a673c12d047",
+            "branch": "workbench/fix/bucket-pass-asks-only-suspects",
+            "files_sha256": "825a949c9fe3e227bfec39d18c7921efb1e8ee81f316bf9d8d0d5fd692a533f8",
+            "message": "The bucket pass asks about suspects, not about the whole table"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923175131-548546"
+}

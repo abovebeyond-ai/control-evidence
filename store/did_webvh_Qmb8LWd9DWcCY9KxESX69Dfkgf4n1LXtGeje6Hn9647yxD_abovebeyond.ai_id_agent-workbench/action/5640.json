@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "27f6dc3ddd3a718f68e65879f9001033c9373579",
+            "branch": "workbench/vervolg-op-de-herhaalde-sectiekop",
+            "files_sha256": "9bedfabef3f147c1a5f2af48ef6e7d3f8f9b0dae3934953e70d691100012cc6a",
+            "message": "Vervolg naast de herhaalde sectiekop op papier"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923123738-de8f89"
+}

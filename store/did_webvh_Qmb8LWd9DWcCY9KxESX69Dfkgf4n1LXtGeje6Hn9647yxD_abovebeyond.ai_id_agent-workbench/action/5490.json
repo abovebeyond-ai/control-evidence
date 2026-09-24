@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8e27fda552000b4c1756df49a4d1a8dfa696b5a7",
+            "branch": "workbench/ui/vat-notice-house-pattern",
+            "files_sha256": "1349615443552985f1845e7277f2609cb2d1e424980fed8b28c5874de78db9f3",
+            "message": "The VAT notice wears the house pattern for a notice"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923094129-06a16b"
+}

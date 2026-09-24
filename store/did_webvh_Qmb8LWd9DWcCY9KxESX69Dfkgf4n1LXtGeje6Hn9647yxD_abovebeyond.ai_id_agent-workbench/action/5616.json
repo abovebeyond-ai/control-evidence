@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\ngentells.com still shows the holding page, and after #125 it was the only page left in the old design: the strip on white, the headline in ink, \"Youth culture.\" in coral.\n\nIt now carries **the same hero as the home**: the normal header with the logo in her black and \"Launching soon\", her collage in grey with the colour under the cursor, and the black band with *Read,* understand, *activate* in mint and \"Youth culture.\" in the dot letter. The two calls on the right become the newsletter signup (\"Be there when it opens\"), because there is nothing to go into yet. The Trendwolves line sits at the foot of the black page.\n\n## How\n\n- `<x-hero-band>` takes an optional `aside` slot. Without it (the home) nothing changes. With it, the slot replaces the two calls and the introduction moves directly under the headline, because a signup is taller than two calls and would otherwise push the introduction a row down.\n- `<x-newsletter-form :dark=\"true\">` keeps its confirmation and small print readable on black.\n- The bare layout preloads the hero image, as the site layout already did.\n- The old strip (`<x-hero-collage>` and its six images) is gone; nothing else used it.\n\n## A fix from #125\n\nThe Trendwolves mark is a black image, so since the footer turned black it was invisible there. It gets a white variant (`trendwolves-mark-light.svg`, only the fill differs) and `<x-trendwolves-mark :light=\"true\">` on the footer and the holding page.\n\n## Checked\n\nThe build, ESLint, the Tailwind check, Pint and the PHP suite pass. `HeroCollageTest` now pins that the holding page uses the same hero with the signup instead of the calls, preloads the image, draws no picture of its own, and that the footer carries the white mark.\n",
+            "branch": "workbench/holding-page-hero",
+            "title": "The holding page wears the same hero, and the mother house is visible on black"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260923121924-dc49cc"
+}

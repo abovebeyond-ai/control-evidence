@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "34cce048de608e5b76e4539d67bdf0dc162fb572",
+            "branch": "workbench/de-lopende-periode-een-keer",
+            "files_sha256": "9460ea5ca14ca562b7d4715b54ebe28a1cacbd1fc4fb2bcfc0dbf28641899468",
+            "message": "De lopende periode een keer per rapport"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260923082210-3e8f20"
+}

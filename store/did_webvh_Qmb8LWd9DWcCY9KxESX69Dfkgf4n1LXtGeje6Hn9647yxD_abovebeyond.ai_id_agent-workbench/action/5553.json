@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1f56e8447bb03374b8446912109a8bb7486b8392",
+            "branch": "workbench/foutpagina-merk",
+            "files_sha256": "c15c4f2b8a3211dcb5d0bba374b2953e11feb9e775ec1add1516e09b1cc95f67",
+            "message": "The error page carries the brand, not the company name"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923113148-3b18c4"
+}

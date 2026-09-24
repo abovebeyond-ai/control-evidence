@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nightwatch #36: a 500 on `ownvehicle/22992/createFromVIN` for a dealer using \"aanvullen via chassisnummer\", 22 September at 12:50.\n\n```\nError: Call to a member function except_dealers() on null\n  app/Services/OwnStockService.php:603\n```\n\nThe id in that request did not exist at the time. On production, vehicle 22992 was created at 14:50, two hours later.\n\n## Two things had to go wrong together\n\n`tempupdate` looked the vehicle up, did not check the result, and broke three steps further on a null reference.\n\nAnd the `try { \u2026 } catch (\\Exception $e)` around it, which exists to show a failed lookup as a field error next to the chassis number, does not catch an `\\Error`. So the dealer got a white page where \"Het gezochte voertuig werd niet gevonden\" belonged.\n\nBoth are fixed: the lookup stops at the front with that message, and the three lookup paths catch `\\Throwable`. Two of those three calls were outside any `try` at all, so a vanished vehicle became a 500 there anyway, right after the first path had produced the polite message.\n\n## And a dead branch removed\n\n```php\nif (isset($afterUpdateData['portal_ids']) && is_null($afterUpdateData['portal_ids'])) {\n    $vehicle->portals()->sync(...);\n}\n```\n\nThose two can never both be true: `isset()` is false for null. That sync has never run. PHPStan knew \u2014 the entry was sitting in the baseline as \"Right side of && is always false\" \u2014 and the baseline entry goes with the code.\n\nIt is removed, not repaired. Making it run would mean a chassis lookup starts setting portals from today, and that is a decision for Ilse, not a clean-up. The two live paths, `finalizeCreate` and `finalizeEdit`, do sync portals, with the VAT filter of R S2-4.9.\n\n## Verified\n\n`AVinLookupWithoutAVehicleIsAMessageTest` holds both halves: the service throws a readable message instead of an `Error`, and no call to `tempupdate` sits without a `catch (\\Throwable)` near it.\n\nFull suite locally: 2.111 tests, 12.277 assertions, with only the two known `ListPageHeadersTest` cases failing, which fail the same way without this change because those tables are empty in my local database. `phpstan` green over the whole project with one baseline entry fewer; `pint` green on the added file.\n\nFixes bevinding aanvullen-via-chassis-zonder-wagen.\n",
+            "branch": "workbench/fix/vin-fill-without-a-vehicle",
+            "title": "A chassis lookup without a vehicle is a message, not a 500"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923152305-f1c05a"
+}

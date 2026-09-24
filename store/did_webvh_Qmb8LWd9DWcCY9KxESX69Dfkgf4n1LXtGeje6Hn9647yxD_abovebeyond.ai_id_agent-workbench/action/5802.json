@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "47fe6680dfb38bf9048f5464f123573db0776cbe",
+            "branch": "workbench/ui/menu-items-breathe",
+            "files_sha256": "9033878300bfdee21c185547c041933f6757b9683d30fa6a4913a67200ac47e4",
+            "message": "A hovered menu item has its own shape"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260923135619-8dcbab"
+}

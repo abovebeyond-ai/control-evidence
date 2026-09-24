@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee fouten uit de meting van 22 september, elkaars spiegelbeeld.\n\n**De montuurpagina's kondigden hun hoofdfoto niet aan.** Geen `rel=\"preload\"`, geen `fetchpriority`, terwijl die foto het grootste element boven de vouw is en dus het element waarop LCP gemeten wordt. De browser ontdekte haar pas toen de parser er middenin de body op stuitte. De startpagina en de collectiepagina's doen dit wel; dat verschil kostte 42 pagina's maal vier talen laadtijd zonder reden.\n\n**De collectiepagina deed het omgekeerde.** Vier herosecties duwden alle vier hun poster in de kop: 8 preloads en 12 keer `fetchpriority=\"high\"` op \u00e9\u00e9n pagina, terwijl alleen de eerste bij het laden zichtbaar is. Vier dingen de hoogste prioriteit geven is hetzelfde als geen prioriteit geven.\n\n## Wat er verandert\n\n- `frame.blade.php` kondigt de hoofdfoto aan en geeft haar `fetchpriority=\"high\"`.\n- De hoofdfoto wordt niet meer uitvergroot: ze werd opgevraagd als 1200x900 met `fit=crop` terwijl de bron 950x633 is, dus de CDN blies haar op. Met `fit=min` blijft dezelfde 4:3-tegel staan en krijg je hoogstens de eigen resolutie.\n- `pages/show.blade.php` wijst de eerste hero van een pagina aan; alleen die preloadt en krijgt voorrang, de andere laden lui.\n- De heroposter gebruikt de alt-tekst uit de Studio. Die werd opgehaald en daarna overschreven met `alt=\"\"`, dus wie hem invulde zag niets gebeuren. Leeg blijft leeg, want een poster die niets toevoegt hoort niet voorgelezen te worden.\n\n## Nagekeken\n\n`tests/Feature/LcpTest.php`, vier tests: de hoofdfoto wordt aangekondigd en draagt voorrang, ze wordt niet uitvergroot (`fit=min`, geen `fit=crop`), geen enkele andere afbeelding op die pagina draagt voorrang, en op een pagina met twee hero's is er \u00e9\u00e9n preload, \u00e9\u00e9n keer voorrang en \u00e9\u00e9n lui geladen poster.\n\n353 van 357 tests groen, pint schoon, phpstan zonder fouten. De vier die falen, falen ook zonder deze wijziging: die willen een `.env` in de checkout.\n\nWat dit niet doet: er is nog steeds geen veldmeting (geen Search Console, geen CrUX), dus de winst is beredeneerd uit de bron en niet gemeten bij bezoekers.\n",
+            "branch": "workbench/lcp",
+            "title": "Het beeld dat de LCP bepaalt wordt aangekondigd, en alleen dat beeld"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260923114144-de2cc6"
+}
