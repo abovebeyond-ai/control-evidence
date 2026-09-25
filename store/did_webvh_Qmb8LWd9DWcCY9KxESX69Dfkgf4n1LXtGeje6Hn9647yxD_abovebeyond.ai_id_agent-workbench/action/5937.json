@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "67cd796db94c73b7c18f1c8d4de6d204320e49bd",
+            "branch": "workbench/gebruik-telt-in-sql",
+            "files_sha256": "1cd2670c5156c0cb884567b9152fac0d6aec38925d353b034b34ecfbfb319f91",
+            "message": "Gebruik: de databank telt de weken, en een index op de tijdstempels"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924083551-36b2c5"
+}

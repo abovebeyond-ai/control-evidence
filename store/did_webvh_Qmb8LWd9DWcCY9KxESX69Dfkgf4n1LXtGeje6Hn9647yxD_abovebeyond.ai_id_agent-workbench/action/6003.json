@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The three screens #798 deliberately left alone, now that Shane confirmed the surface: show the copy in progress on the dealer's own editing tab, not when someone views the vehicle.\n\n- `website/_wcard.blade.php` \u2014 the card on a dealer's own website, which also carries shared vehicles of colleagues\n- `ownstock/showroom_vehicle.blade.php` \u2014 the showroom slides\n- `export/print/print_partials/photos.blade.php` \u2014 the print sheet of a bidding vehicle\n\nTheir eager loads follow, so the ready relation is preloaded rather than lazily fetched per vehicle.\n\n## The list is now a test\n\n`AnUnfinishedCopyIsNotShownTest` reads all nine screens that show a copy to someone other than the owner and fails on a plain `stocklist_photo` or `primary_stocklist_photo`. Writing it immediately found three reads I had missed in the two files I was editing: the card's carousel set and two lines in the print sheet. That is exactly why the list belongs in a test rather than in a message: the next screen that reads the plain relation has to be a decision, not an oversight.\n\nThe owner's own screens and the bookkeeping are untouched and stay out of the list.\n\n## And a decision written down\n\nShane, on the files of deleted vehicles: \"die foto's van verwijderde wagens houden we\".\n\nSo R S1-6.40 records the split as it stands: deleting a **vehicle** soft-deletes its photo rows and keeps the files in the bucket (the deletion is commented out in `VehicleObserver::deleted`), while deleting a single **photo** does remove the original, the processed version, the thumbnails and the derived sizes. The consequences are named rather than implied: that storage is paid for, and a photo of a deleted vehicle stays retrievable to whoever knows the path, though the URLs are signed so nothing can be browsed.\n\n## Verified\n\nFull suite: 2.133 tests, with only the two known `ListPageHeadersTest` cases failing, which fail the same way without this change because those tables are empty in my local database. `phpstan` green over the whole project; `pint` green.\n",
+            "branch": "workbench/fix/ready-copy-on-the-last-three",
+            "title": "The last three screens of another ask for the ready set"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924092242-54019e"
+}

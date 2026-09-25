@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4b6a540550454eb0cfbe5794ff7aa7c4065516de",
+            "branch": "workbench/oude-links",
+            "files_sha256": "7276fe4843cfeb718e4f7ffbcd8cc1e3070a87f2d0a0fcc87aa944dde045b250",
+            "message": "Old links arrive, and an alias domain forwards them even without a route"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260924104913-a63302"
+}

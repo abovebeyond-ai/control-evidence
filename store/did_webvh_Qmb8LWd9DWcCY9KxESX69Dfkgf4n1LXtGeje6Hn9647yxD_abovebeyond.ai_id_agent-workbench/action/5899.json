@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9da7951d89b0481adcb6afa128479054b532f2fc",
+            "branch": "workbench/print-check",
+            "files_sha256": "f4018ea8f50cc6eb7fac67d6c9143f7f279a1cf7f07b1aa2bf95b50d1a0159b1",
+            "message": "naviskore:print-check: zegt of Chrome hier kan starten, en wat anders"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924074135-6ce584"
+}

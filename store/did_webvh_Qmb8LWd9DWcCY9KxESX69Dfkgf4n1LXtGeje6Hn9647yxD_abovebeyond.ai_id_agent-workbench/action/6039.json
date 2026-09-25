@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Every dry run of `stocklist:platformfotos` ended with:\n\n```\nKost bij uitvoeren: 443 remove.bg-credits (\u00e9\u00e9n per foto).\n```\n\nThat is wrong, and wrong in the expensive direction. remove.bg bills in **fractions** and per subscription, and the platform asks for `size=preview`. Their account endpoint says so plainly:\n\n```json\n\"credits\": { \"subscription\": 1355.5, \"payg\": 197, \"total\": 1552.5 }\n```\n\nMeasured tonight: 1.674,25 before the run of 443 photos, 1.584,25 after. Roughly ninety, and even that figure is muddied by ordinary dealer traffic in the same hours.\n\n## Why it matters more than a wrong number\n\nEstimating five times too high is not caution, it is paralysis. The full backlog of 1.058 photos read as \"1.058 credits\", so it sat untouched, and nineteen vehicles stood invisible on the marketplace because the price looked too steep. The wrong number is what kept the clean-up from happening.\n\n## What it says now\n\n```\nBij uitvoeren: 443 oproep(en) naar remove.bg, size=preview.\nWat die kosten hangt van je abonnement af; het saldo staat in `stocklist:smoke removebg`.\n```\n\nWhat the round does, not what it costs. The price of a third party is not a figure we hold; the balance is, and the smoke test reads it straight from remove.bg.\n\n`PlatformPhotosOnShareTest` asserted the old sentence and now asserts the new one, on the call count rather than on a price.\n\n39 tests and 174 assertions over the rule catalogue and the platform-photo path; `phpstan` green over the whole project.\n\nRule R S2-1.15. Fixes bevinding de-kostregel-beweerde-een-prijs.\n",
+            "branch": "workbench/fix/the-cost-line-tells-the-truth",
+            "title": "The cost line says what the round does, not what it costs"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924094830-82766f"
+}

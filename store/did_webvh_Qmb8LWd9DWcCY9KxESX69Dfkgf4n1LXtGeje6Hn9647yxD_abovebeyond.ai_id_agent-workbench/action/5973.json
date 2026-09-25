@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ad6e16add75124532fa682fa23badd4352484a9c",
+            "branch": "workbench/de-presentatie-uit-de-rapportdienst",
+            "files_sha256": "8fd6a5a1ffac2ebe2b727b5f4454b18a468f27deeb517238454f10768bb0adfc",
+            "message": "De band is \u00e9\u00e9n oordeel, drie weergaven"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924091007-a24fab"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De band is \u00e9\u00e9n oordeel, drie weergaven. Eerste snede van de presentatie uit `ReportService`.\n\n## Wat er gebeurde\n\nOp vijf plekken vroeg `ReportService` per eindterm en evaluatietype drie keer \"welke kleur?\" aan `ScoringService::getColorForScore`, met een mediumvlag (print, web, naam) en telkens dezelfde argumenten. Het oordeel (grijs onder 70 procent aanwezigheid, niets zonder gemiddelde, de numerieke of de waardeschaal) werd zo per rendering opnieuw geveld, en de service droeg presentatie die niet van haar is.\n\n## De wijziging\n\n- **`ScoringService::bandFor(score, scoredWithValues, percentagePresent): ?ValueColor`**: het oordeel, \u00e9\u00e9n keer, met de regels S4-3.1, S4-4.1 tot S4-4.4 in de docblock. `getColorForScore` is nu een weergave ervan (hex, klassen of naam, of leeg zonder band) en blijft bestaan voor wie ze aanroept.\n- **`ReportService`** vraagt op elk van de vijf plekken \u00e9\u00e9n band en leest er `dutchName()`, `hexColor()` en `tailwindClasses()` van af; het kent geen mediumvlag meer. Zelfde sleutels, zelfde waarden.\n\n## De rechter\n\nDe 34 snapshots (term, vooruitgang, deliberatie, kaal en vol, vijf scholen), de klasexport en de drie legacy-jaren: **geen enkele gewijzigd**, plus de maat van de klasexport. `OneBandThreeRenderingsTest`: over 135 combinaties van gemiddelde, aanwezigheid en schaal is elke weergave van `getColorForScore` gelijk aan de weergave van de band. `ColourScalesTest` ongewijzigd groen. Mutatie (de band negeert de aanwezigheid): de volle snapshots rood, want daar zit een altijd afwezige leerling in. Volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n\nVolgende snede: `percentagePresent`, `showPercentage` en de `allScoresAreValues`-afleiding uit `addEvaluationType` en `calculateMetrics` naar \u00e9\u00e9n waardeobject per evaluatietype, zodat de DTO's uit een berekend resultaat gebouwd worden en niet uit een array die onderweg groeit.\n",
+            "branch": "workbench/de-presentatie-uit-de-rapportdienst",
+            "title": "De band is \u00e9\u00e9n oordeel, drie weergaven"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924091007-a24fab"
+}

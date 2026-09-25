@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Waarom\n\nDe post `signing-blog-posts-verifiable-credentials` linkte naar de oude DID, die nooit resolvede (zie #17), en beweerde in de run van februari dat de identiteit bevestigd was.\n\n## Wat er verandert\n\n- De link naar de DID en het `vc.json`-voorbeeld tonen `did:webvh:QmU9zwaq\u2026:shanedeconinck.be` en `#key-1`.\n- Een noot \"Update, 24 September 2026\" onder het experiment. De agent las de sleutel rechtstreeks uit het log en controleerde het log zelf niet. Dat log was ongeldig vanaf versie 1. Er is nu een nieuwe DID op twee hardwaretokens.\n- De terminalrun van februari blijft ongewijzigd: dat is wat er toen gebeurde.\n- De post is opnieuw ondertekend.\n- `token.mjs`: \"No slots\" wordt \"\u2026 is not plugged in; check with: ykman list\".\n\n## Nagekeken\n\n- `verify-posts`: 40 van 40.\n- `npm test`: 17 van 17 groen.\n",
+            "branch": "workbench/de-post-over-ondertekenen",
+            "title": "De post over ondertekenen zegt wat er misliep"
+        },
+        "resource": "ShaneDeconinck/shanedeconinck.be"
+    },
+    "run": "workbench-20260924102630-0d6528"
+}

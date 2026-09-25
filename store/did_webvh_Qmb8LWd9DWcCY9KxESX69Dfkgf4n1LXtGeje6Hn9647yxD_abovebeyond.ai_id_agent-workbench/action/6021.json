@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"Gebruik\" is een analysescherm: een schooljaar tegelijk, \u00e9\u00e9n school of alle, en elk jaar naast elkaar.\n\n## Wat er gebeurde\n\nShane over de eerste versie: \"goede start, maar ik wil nog meer analytics, een professioneel scherm, met histogrammen, ook doorheen vorige schooljaren.\"\n\n## De wijziging\n\n- **Kiezen als tekst**: het schooljaar (elk jaar in de tabel) en de school (alle, of \u00e9\u00e9n). Zonder schooljaar in de kalender vallen de cijfers terug op de laatste dertig dagen; het scherm antwoordt nooit 503.\n- **Kerncijfers** met wat ze meten en waarvan: leerkrachten actief van wie een account heeft, leerlingen met scores van wie ingeschreven is (een groefmeter in `primary-500`), scores (met het aantal afwezig), evaluaties.\n- **Scores per week** over het schooljaar, als staafhistogram (SVG, \u00e9\u00e9n kleur, het getal bij aanwijzen, maandlabels), geteld door de databank per ISO-week.\n- **Verdeling van de scores**: score op maximum in banden van tien procent; afwezig en zonder maximum niet meegeteld, en zo genoemd, want een losse score is een verhouding en de kleur van een vak is een regel op gemiddelden.\n- **Wanneer wordt er gewerkt**: weekdag maal uur van invoer, de inkt als enige intensiteit.\n- **Door de jaren**: per schooljaar scores, evaluaties, leerkrachten actief, leerlingen met scores, klassenraadfeedback en gearchiveerde rapporten; het gekozen jaar gemarkeerd, elk jaar aanklikbaar.\n- **Laatste 30 dagen per school** blijft, met ingelogd sinds 24 september.\n- `App\\Services\\Usage\\UsageAnalytics`: elk cijfer \u00e9\u00e9n gegroepeerde query, op de indexen van #170; niets wordt apart bijgehouden.\n\n## De rechter\n\n`UsageAnalyticsTest`: de weken, het weekdagraster en de verdeling tellen op tot de scores van het jaar (de verdeling min afwezig en zonder maximum), een school die niet gekozen is telt nul, de jaren staan oudste eerst en zeggen hetzelfde als het jaaroverzicht, en het scherm toont het gekozen jaar en de school aan een superbeheerder en weigert een beheerder. `UsageOverviewTest` aangepast aan het nieuwe scherm. Volledige suite groen op MariaDB (219 geslaagd; alleen het bekende worktree-artefact van de build stamp). Nagekeken op een render met scenario-data, met de zijbalk van #173.\n",
+            "branch": "workbench/gebruik-als-analysescherm",
+            "title": "Gebruik als analysescherm"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924092828-1b5349"
+}

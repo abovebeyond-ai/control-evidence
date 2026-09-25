@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0964e67abd101b2adc516455f0a9285b17c1831d",
+            "branch": "workbench/de-lopende-kop",
+            "files_sha256": "d021da799a637b6a43e95b15afa4999c20a2b024cb7f4ecb92189d437cbdc508",
+            "message": "Elke vervolgpagina van het blad draagt een lopende kop"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924112758-90d83a"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "ee6ed223338d7b571d191d1aa9cea7b1",
+    "effect": {
+        "detail": {
+            "base": "e88866ab715adb5d11a0fad265702fcdd534a6f5",
+            "branch": "workbench/refactor/ready-copy-in-english",
+            "commit": "1f9853c4c9b1f2db6109be2033b56e3b6745dd48",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5955,
+    "verdict": "ALLOW"
+}

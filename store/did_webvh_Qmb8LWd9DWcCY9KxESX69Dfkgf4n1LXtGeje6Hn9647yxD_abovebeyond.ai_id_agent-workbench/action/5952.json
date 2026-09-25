@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De bulk: `naviskore:archive` archiveert de rapporten van afgesloten schooljaren. Stap 3 van het archief.\n\n## De wijziging\n\n- **`php artisan naviskore:archive`**: elk schooljaar dat v\u00f3\u00f3r vandaag eindigde; per school haar periodes van dat jaar; per klas de periodes die erop van toepassing zijn (graad en stroom, zoals het rapport zelf beslist via `Term::findByOfferingHierarchy`); per leerling \u00e9\u00e9n archief via `ReportArchive::archive`. Wat al gearchiveerd is wordt overgeslagen (`--force` voor een heropende periode), dus de opdracht is herstartbaar; een rapport dat faalt staat als `MISLUKT` in de uitvoer en houdt de rest niet tegen. `--schoolyear`, `--school` en `--dry-run` om te richten en te tellen. Geen queue op de box, dus de eerste ronde over alles draait met `nohup` (in `docs/deploy.md`, met het tellen van ruim twintigduizend rapporten \u00e0 ruim een seconde).\n- **De klassen van een afgesloten jaar zijn zichtbaar voor de ronde**: `Offering` heeft een globale scope op het lopende schooljaar; de opdracht gebruikt `acrossSchoolyears()`, en `ReportArchive::archive` laat die scope los op `offeringsForSchoolyear`, anders vond het de klas van een leerling in een afgesloten jaar niet.\n- De tellers worden per run op nul gezet: de container geeft \u00e9\u00e9n commando-instantie per proces, en twee runs in \u00e9\u00e9n proces (de tests) telden anders door.\n\n## De rechter\n\n`ArchivingATermTest`: een afgesloten schooljaar wordt \u00e9\u00e9n keer gearchiveerd (rij, PDF), een tweede run slaat het over, `--force` overschrijft zonder tweede rij; het lopende schooljaar is geen afgesloten jaar en wordt niet geraakt; `--dry-run` telt en schrijft niets; `--schoolyear` en `--school` richten de ronde. De archief- en routetests en de volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n\nNa de merge en deploy: `nohup php artisan naviskore:archive > storage/logs/archive.log 2>&1 &` op de box, en de volgende dag `grep -c MISLUKT storage/logs/archive.log`. Daarna is stap 4 aan de beurt: de legacy-logica eruit.\n",
+            "branch": "workbench/de-periodes-archiveren",
+            "title": "De bulk: afgesloten schooljaren archiveren"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924084434-62e0d4"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e88866ab715adb5d11a0fad265702fcdd534a6f5",
+            "branch": "workbench/ui/the-verdict-knows-when",
+            "files_sha256": "b4fa13b8443b656206bf4e0ae1b2e280e779f278c0ecdb25087cf621d0f5781f",
+            "message": "The verdict says when, not only how many"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924090255-4e11f6"
+}

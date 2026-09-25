@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een score waarvan het project verdwenen is, stopt het rapport niet meer.\n\n## Wat er gebeurde\n\nE\u00e9n rapport uit de archiefronde (#171), het jaarrapport van een CLW-leerling van 2022-2023, viel om op \"Attempt to read property schoolyear_id on null\". `ScoringService` leest het schooljaar van een reeks scores als het hoogste schooljaar van hun projecten; een score zonder geladen project vraagt de databank opnieuw, en als het project ook daar niet meer bestaat, leest ze `schoolyear_id` van null.\n\n## De wijziging\n\nDe drie scorerelaties van een eindterm (`examScores`, `testScores`, `internshipScores`) vragen een evaluatie die haar project nog heeft: een score zonder project hoort bij geen klas en geen jaar en kan niet getoond, gemiddeld of beoordeeld worden. Het voortgangsrapport eiste dat al in zijn eigen laadblok; nu geldt het overal waar die relaties gelezen worden, ook op het dashboard. Daarnaast leest `ScoringService` het schooljaar van de scores nul-veilig: een score waarvan de evaluatie of het project verdwenen is, telt niet mee in die lezing. Valt er uit geen enkele score een schooljaar te lezen, dan is er geen gemiddelde (met een waarschuwing in het log welke scores dat waren): welke regels gelden is een vraag over het jaar, en een gemiddelde onder geraden regels is erger dan geen.\n\n## De rechter\n\n`AScoreWithoutAProjectTest`: het project van de evaluatie met de scores van de leerling wordt verwijderd, en het rapport komt nog als PDF terug. Zonder de fix valt de test om op precies de fout uit het archieflog. Volledige suite op MariaDB.\n",
+            "branch": "workbench/een-score-zonder-project",
+            "title": "Een score zonder project stopt het rapport niet"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924141623-2d0738"
+}

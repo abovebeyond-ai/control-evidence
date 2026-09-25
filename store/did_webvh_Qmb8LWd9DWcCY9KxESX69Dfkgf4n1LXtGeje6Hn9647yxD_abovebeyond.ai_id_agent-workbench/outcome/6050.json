@@ -1,0 +1,16 @@
+{
+    "action": "cfc9ab02250b3c33643a5fbf00f9d570",
+    "effect": {
+        "detail": {
+            "base": "968e7495003f51c86aca8e4a37fe2be89c2b7866",
+            "branch": "workbench/taalwissel-slugs",
+            "commit": "ca14794ff4b19ff72a50df3969de72bf0c0efad6",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6048,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e88866ab715adb5d11a0fad265702fcdd534a6f5",
+            "branch": "workbench/refactor/ready-copy-in-english",
+            "files_sha256": "2dae24fb8a688104b93dd641068beed45569c45b0957a1210a8015d076866ac3",
+            "message": "Rename the ready-copy relations to English"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924084438-07e8b5"
+}

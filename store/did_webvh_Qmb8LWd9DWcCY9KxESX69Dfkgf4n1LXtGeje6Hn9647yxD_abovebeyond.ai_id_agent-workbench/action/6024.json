@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ef17fdc9105176a40018b813d605f5722521ce96",
+            "branch": "workbench/de-did-van-above-beyond",
+            "files_sha256": "ed19d4f6919273d65406bfd9f732addd6dd447686309f0f3030f1f6cfabccd15",
+            "message": "De DID van trustedagentic.ai wijst naar Above Beyond"
+        },
+        "resource": "abovebeyond-ai/trustedagentic.ai"
+    },
+    "run": "workbench-20260924094016-be6425"
+}

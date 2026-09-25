@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ddb6008875ea413da7997436968316ec72cd59ad",
+            "branch": "workbench/de-zijbalk-zonder-javascript",
+            "files_sha256": "a0dde7e3a78afe8c7dbad08832c0782eefd1a404083c131cc488461b222195fa",
+            "message": "De pagina staat naast de zijbalk, ook zonder JavaScript"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924092139-d4ee39"
+}

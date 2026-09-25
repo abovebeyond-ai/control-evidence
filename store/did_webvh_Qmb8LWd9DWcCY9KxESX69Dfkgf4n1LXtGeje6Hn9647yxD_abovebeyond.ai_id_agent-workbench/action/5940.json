@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De pagina \"Gebruik\" laat de databank tellen.\n\n## Wat er gebeurde\n\nShane: \"page gebruik takes long to load\". Twee oorzaken. Het weekoverzicht haalde elke score van twaalf weken als rij naar PHP en telde daar, en op productie zijn dat honderdduizenden rijen. En de vensterquery's filteren op `created_at` van de scoretabel, de grootste tabel, zonder index: een volledige scan bij elk bezoek.\n\n## De wijziging\n\n- `UsageOverview::marksPerWeek` telt in SQL, per school en ISO-week (`YEARWEEK(created_at, 3)`), \u00e9\u00e9n gegroepeerde query; PHP zet alleen de twaalf cellen op hun plaats.\n- Een migratie zet een index op `created_at` van scores, evaluaties en clusterfeedback, en op `users.last_login_at`.\n\n## De rechter\n\n`UsageOverviewTest` krijgt een test op de vorm van de query: de scoretabel wordt voor het weekoverzicht precies \u00e9\u00e9n keer gelezen, gegroepeerd, met `YEARWEEK`; een versie die rij per rij ophaalt is rood. De bestaande test dat de weektabel optelt tot het venster blijft groen, dus de telling zegt hetzelfde als eerst.\n",
+            "branch": "workbench/gebruik-telt-in-sql",
+            "title": "Gebruik telt in SQL"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924083551-36b2c5"
+}

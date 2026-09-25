@@ -1,0 +1,16 @@
+{
+    "action": "fb8300a70107589efa3d2506568eb53b",
+    "effect": {
+        "detail": {
+            "base": "c451bd4ca7e3d36efffb875bfc9d4947c53f2a63",
+            "branch": "workbench/het-archief-op-de-route",
+            "commit": "daa86e95853f948bdd5ff059727175542ba3a0c8",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5922,
+    "verdict": "ALLOW"
+}

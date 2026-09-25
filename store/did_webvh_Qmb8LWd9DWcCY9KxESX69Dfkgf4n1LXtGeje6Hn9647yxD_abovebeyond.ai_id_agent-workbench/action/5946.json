@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De eerste stap naar werven uit Bouwsoft en de export ernaartoe: toegang krijgen, en eerst alleen lezen.\n\n## Wat erin zit\n\n- `php artisan bouwsoft:connect` doorloopt Bouwsofts eigen OAuth: een aanvraag met de app key, iemand van GLK geeft toegang als `gebruiker@klantnr` voor een benoemd toestel, en de app haalt klantnummer, server en refresh token op. Achteraf zegt het als wie de koppeling staat, met welke rechten (en waarschuwt bij een beheerder), en welke `TG_Koppeling`-modules er al aanstaan.\n- `php artisan bouwsoft:explore` leest werven, materieel, artikels, personeel, uren en nacalculatie, en schrijft niets.\n- Tabel `bouwsoft_connections`, tokens versleuteld (`encrypted`-cast).\n\n## Waarom zo voorzichtig\n\nBouwsoft geeft de refresh token maar een keer, en zolang de app niet goedgekeurd is mag ze er maar drie hebben. Daarom: meteen bewaren, opnieuw koppelen alleen met `--force` (en zonder dat wordt niets naar Bouwsoft gestuurd), en lukt het bewaren niet, dan komt de token in de terminal in plaats van verloren te gaan.\n\nEerst lezen, omdat GeoFleet (Geotracer) via een eigen koppeling uren per werf in Bouwsoft kan zetten. Staan die er al, dan boekt een werkfiche die ook uren schrijft ze dubbel.\n\n## Na de merge\n\n1. `BOUWSOFT_APP_KEY` in de Forge-omgeving van staging.\n2. `php artisan migrate --force` als het deployscript het niet doet.\n3. Op staging: `php artisan bouwsoft:connect`, dan `php artisan bouwsoft:explore`.\n\n## Getest\n\n8 tests met een nagebootste Bouwsoft: de aanvraag draagt de app key, een toekenning wordt versleuteld bewaard, \"nog geen toegang\" bewaart niets en mag opnieuw, een verlopen access token wordt vernieuwd met de refresh token, een geweigerd token wordt een keer vernieuwd, connect verbruikt niets als er al een koppeling is, en weigert zonder app key. Tegen de echte Bouwsoft is nog niets gedraaid.\n",
+            "branch": "workbench/bouwsoft-connect",
+            "title": "De koppeling met Bouwsoft: een keer toegang, en eerst alleen lezen"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260924083816-5fbba2"
+}

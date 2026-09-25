@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a4942cc4024cb18fd4be47895b3bfde8f7bcb628",
+            "branch": "workbench/beeld-en-entiteit",
+            "files_sha256": "196c63c41c8b3bd27c1674731d29c6295de2f56faefb3e2c687d4e684fec3b4f",
+            "message": "Real images on the slider, and one entity behind the site"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260924092311-56c603"
+}

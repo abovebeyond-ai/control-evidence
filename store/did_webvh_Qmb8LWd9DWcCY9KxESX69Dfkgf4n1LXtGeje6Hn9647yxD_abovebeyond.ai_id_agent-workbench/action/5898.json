@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d9d36a6055d67cde0db64cf00666ec65d743db35",
+            "branch": "workbench/mix-by-source",
+            "files_sha256": "68435c151a6dc0a426abd0b0e476afc1ff0b741b9933d50861eb1a9db8ed31ad",
+            "message": "The mix by source: one feed can carry a whole region"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260924074133-c55a85"
+}

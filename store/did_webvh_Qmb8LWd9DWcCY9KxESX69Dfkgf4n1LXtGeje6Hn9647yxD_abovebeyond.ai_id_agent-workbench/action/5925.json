@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het archief op de route: stap 2 van vier.\n\n## De wijziging\n\n- **`TermReportController::show`** leest het archief als het er is (`ReportArchive::read`) en berekent anders zoals voorheen; het scherm zegt dan \"Gearchiveerd op 24 september 2026 om 08:12. Dit is het rapport zoals het toen was.\" Een score die daarna verandert bereikt het scherm niet.\n- **`TermReportPDFController::show`** geeft de gearchiveerde PDF terug (`ReportArchive::pdf`), het document dat naar huis ging, en rendert alleen zonder archief.\n- De klasexport blijft berekenen: die bundelt meerdere leerlingen in \u00e9\u00e9n document en het samenvoegen van gearchiveerde PDF's is werk voor stap 3, samen met de bulkopdracht.\n\n## De rechter\n\n`ReadingAnArchivedReportTest`: het scherm toont v\u00f3\u00f3r het archiveren geen markering en daarna wel, en de clusters die het aan Vue geeft blijven gelijk als een score daarna op nul gaat; de PDF-route geeft byte voor byte het gearchiveerde bestand; zonder archief volgt het rapport de scores zoals voorheen. Mutatie (de route berekent altijd): rood. De bestaande route-, controller- en archieftests en de volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n",
+            "branch": "workbench/het-archief-op-de-route",
+            "title": "Het archief op de route"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924080837-3b70a2"
+}

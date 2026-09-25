@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "98518e66ed5302607bebc7f0be4a72f8d4a7c8eb",
+            "branch": "workbench/duimpje-fit",
+            "files_sha256": "a2869280be5097c750ff9d314b87c991d56f3f835959192bc44cadcca1887ada",
+            "message": "The thumbnail swap stops enlarging too"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260924104734-ae776a"
+}

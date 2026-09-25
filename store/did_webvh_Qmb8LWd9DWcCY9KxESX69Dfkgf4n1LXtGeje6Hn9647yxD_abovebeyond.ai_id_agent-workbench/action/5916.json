@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5662a3ff86900685a33802f19de5ba7079e952e9",
+            "branch": "workbench/fix/an-unprocessed-copy-is-not-shown",
+            "files_sha256": "af3b0714f6c683bdd7dc5ab6290e62d68f81aa250c81f9b250cbd74f2c839929",
+            "message": "A copy that is still being made is not shown to a colleague"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924075528-7e4616"
+}

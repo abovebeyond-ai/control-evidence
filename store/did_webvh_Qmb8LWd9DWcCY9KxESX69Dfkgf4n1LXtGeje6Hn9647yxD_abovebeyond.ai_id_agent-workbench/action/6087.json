@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De hoek \"Eindterm\" van de scoretabel blijft boven de namen als de tabel opzij scrolt.\n\n## Wat er gebeurde\n\nShane, met een schermafbeelding: \"evaluatie bij naar links scrollen gaat het over de th van eindterm\". De kop van elke leerling was een eigen sticky cel (`top: 0; z-index: 2`) naast de hoekcel (`left: 0; top: 0; z-index: 3`); bij het scrollen schoven de namen over de hoek heen. Sticky cellen naast elkaar met wedijverende z-indexen: dat vraagt van de browser een tekenvolgorde die niet elke engine geeft.\n\n## De wijziging\n\nDe kop plakt als \u00e9\u00e9n rij aan de bovenkant (`<thead class=\"sticky top-0 z-20\">`) en de hoekcel is de enige gepositioneerde cel erin (`sticky left-0 z-10`). Een gepositioneerde cel tekent boven haar niet-gepositioneerde buren, in elke engine, zonder z-index-wedloop. De eerste kolom van de body plakt links (`sticky left-0 z-10`) en valt onder de kop (`z-20`). De inline `position: -webkit-sticky`-stijlen zijn weg; alles staat in klassen die de build al kent. Nagekeken in een replica van de tabel in Chrome, opzij en omlaag gescrold: kop boven, hoek boven de namen, eerste kolom boven de scores.\n\n## De rechter\n\n`EvaluationScoresEditTest`: de kop plakt als \u00e9\u00e9n rij, precies \u00e9\u00e9n cel van de kop is gepositioneerd en dat is \"Eindterm\", er staan geen inline sticky-stijlen meer, en de eerste kolom van de body plakt links. Volledige suite op MariaDB.\n",
+            "branch": "workbench/de-hoek-van-de-scoretabel",
+            "title": "De hoek van de scoretabel blijft boven de namen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924113241-8a89f2"
+}

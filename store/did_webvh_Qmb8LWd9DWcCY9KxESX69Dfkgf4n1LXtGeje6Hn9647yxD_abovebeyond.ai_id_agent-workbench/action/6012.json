@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "64aa8608a8782ea713cfac4daeac620b205f83db",
+            "branch": "workbench/bouwsoft-survey",
+            "files_sha256": "e16b70a9f4a242f6795ec81ab1b4e8c71d637e8d1703a8a5ebe53c25417a27ee",
+            "message": "Bouwsoft: meten welke delen GLK gebruikt, zonder waarden te bewaren"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260924092709-b2b561"
+}

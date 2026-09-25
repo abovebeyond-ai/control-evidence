@@ -1,0 +1,16 @@
+{
+    "action": "763477b62a2f27e55894ab50f65de365",
+    "effect": {
+        "detail": {
+            "base": "ddb6008875ea413da7997436968316ec72cd59ad",
+            "branch": "workbench/gebruik-als-analysescherm",
+            "commit": "5eff089d86829adf7cd5b6cb233d74ab5636d5cf",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6018,
+    "verdict": "ALLOW"
+}

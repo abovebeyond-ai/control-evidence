@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De pagina staat naast de zijbalk, ook zonder JavaScript.\n\n## Wat er gebeurde\n\nEen leerkracht (Chrome, profiel \"School\") zag op `/projecten/22118` de inhoud achter de zijbalk staan. De breedte van de zijbalk (`xl:w-64`) en de inspringing van de pagina (`xl:pl-64`) hingen allebei aan \u00e9\u00e9n Alpine-binding op `$store.sidebar.open`. Faalt die store (de registratie las `localStorage`, en een beheerd browserprofiel dat sitegegevens blokkeert gooit daar een fout), dan krijgt de zijbalk geen breedte en de pagina geen inspringing: precies het beeld. Een render zonder JavaScript reproduceert het \u00e9\u00e9n op \u00e9\u00e9n.\n\n## De wijziging\n\n- De open layout staat in de statische klassen: `xl:w-64` op de zijbalk, `xl:pl-64` op de pagina. Alpine voegt alleen nog `is-rail` en `beside-rail` toe als de zijbalk ingeklapt is; die twee zijn regels in `app.css` buiten de lagen van Tailwind, want `xl:w-16` zou het van `xl:w-64` verliezen.\n- `localStorage` wordt achter een try/catch gelezen en geschreven; zonder opslag staat de zijbalk open en werkt inklappen voor de duur van de pagina.\n- De drie bindingen gaan uit van een store die er misschien niet is (`$store.sidebar?.open ?? true`).\n\n## De rechter\n\n`TheSidebarWithoutJavascriptTest`: de open layout staat in de statische klassen en geen binding beslist nog de hele layout; de railregels staan in de stylesheet en de opslag is afgeschermd. Nagekeken met een render zonder JavaScript: op 1440 pixels staat de pagina naast de zijbalk, op 1000 pixels (onder xl) staat de zijbalk dicht met de menuknop, zoals voorheen. `NavigationParityTest` groen; de assets bouwen.\n",
+            "branch": "workbench/de-zijbalk-zonder-javascript",
+            "title": "De pagina staat naast de zijbalk, ook zonder JavaScript"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924092139-d4ee39"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Voor we een sync bouwen: welke van de ruim honderd onderdelen van de Bouwsoft-API gebruikt GLK echt, en welke velden vullen ze in?\n\n## Wat erin zit\n\n`php artisan bouwsoft:survey [--fields]` leest elke lijst die de API zonder parameter geeft (96 onderdelen), bladert tot 2.000 rijen per onderdeel, en meet:\n\n- hoeveel rijen er zijn (met `+` als het plafond geraakt is);\n- het datumbereik van `date`, `date_created`, `date_approved`, `date_completed` en `ts_lastupdate`;\n- per veld hoe vaak het gevuld is, en hoeveel verschillende waarden het heeft (tot 50), om \"altijd hetzelfde\" te onderscheiden van \"varieert\".\n\nHet rapport komt in de terminal en in `storage/app/private/bouwsoft/survey.json`.\n\n## Wat het niet bewaart\n\nGeen enkele waarde. Het leest ook personeel, lonen en facturen, dus het rapport houdt alleen tellingen bij. Verschillende waarden worden geteld via een hash die meteen weer weg is, en datumbereiken komen alleen van velden die zeggen wanneer er gewerkt werd, niet van `date_birth`. Een test zet dat vast: naam, rijksregisternummer, geboortedatum en locatie komen niet in het rapport.\n\nAlles loopt door de GET-only client van #39.\n\n## Getest\n\n- Tellingen en vulgraad kloppen, en er zit geen enkele waarde in het rapport.\n- Bladeren stopt bij een korte pagina (500 + 120 = 620 rijen, niet afgekapt).\n",
+            "branch": "workbench/bouwsoft-survey",
+            "title": "Bouwsoft: meten welke delen GLK gebruikt, zonder waarden te bewaren"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260924092709-b2b561"
+}

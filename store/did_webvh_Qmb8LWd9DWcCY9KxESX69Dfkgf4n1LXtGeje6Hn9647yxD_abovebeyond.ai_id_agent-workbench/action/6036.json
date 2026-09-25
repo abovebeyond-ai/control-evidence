@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "432c1c4943235fedfe447964ca93afcf7baffec3",
+            "branch": "workbench/fix/the-cost-line-tells-the-truth",
+            "files_sha256": "c9afd89df6bf7c64e9e7d10c24ef809d4d8073898dd98c90c012411f60502772",
+            "message": "The cost line says what the round does, not what it costs"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924094830-82766f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Elke vervolgpagina van het blad draagt een lopende kop: de leerling, de contextregel en het logo klein, en daaronder het deel dat ze voortzet.\n\n## Wat er gebeurde\n\nShane, na de eerste bladen uit Chrome op productie: \"vanaf pagina 2 weinig marge, en mss toch hoofding bewaren met klein logo ofzo?\" Het woord \"vervolg\" stond alleen in de bovenmarge geplakt en de tabel begon vlak eronder.\n\n## De wijziging\n\n- **Een blad is een benoemde pagina** (`.sheet { page: sheet }`): de eerste pagina van elk blad houdt de volledige kop in de inhoud en de bovenmarge van 15 mm; elke pagina erna krijgt 32 mm bovenmarge met de lopende kop erin. Paged.js kent `@page sheet:first` per blad, dus in een klassenbundel begint elke leerling opnieuw met de volle kop.\n- **De lopende kop** (`paged-handlers.js`, `.running`): naam vet, contextregel stil, het logo van de school op 22 pt rechts, een lijn eronder; daaronder \"Deel 1 - Basisvorming, vervolg\" als het deel doorloopt, en niets als de pagina een nieuw deel begint. Gebouwd uit de eigen kop van het blad, dus een school zonder logo krijgt er ook geen.\n- De kolomkop komt terug op een doorgesneden tabel, zoals al.\n\n## De rechter\n\n`TheSheetFromChromiumTest`: pagina 2 begint met de leerling, de contextregel, de vervolgregel en dan de kolomkop, en draagt precies \u00e9\u00e9n afbeelding (het logo, via `pdfimages`); pagina 1 begint met \"Periodiek rapport\" en zegt nergens vervolg; een pagina waarop deel 2 begint draagt de lopende kop zonder vervolg. Nagekeken op de render (pagina 2 van veertig vakken, met het athena-logo). Volledige suite op MariaDB.\n",
+            "branch": "workbench/de-lopende-kop",
+            "title": "Elke vervolgpagina van het blad draagt een lopende kop"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924112758-90d83a"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "509f0147ae52677f4b5e6df4b91b427e",
+    "effect": {
+        "detail": {
+            "base": "abacb60dd2f6a7a3e4ba58d52ce7d46896dde063",
+            "branch": "workbench/een-score-zonder-project",
+            "commit": "3435b8128d4ba40c4204e0cf835743178087a50d",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6108,
+    "verdict": "ALLOW"
+}

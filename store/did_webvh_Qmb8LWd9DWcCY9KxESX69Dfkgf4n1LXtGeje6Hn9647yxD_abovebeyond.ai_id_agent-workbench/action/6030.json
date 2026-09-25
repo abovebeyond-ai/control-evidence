@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "964ba3c0bb327865860381c46a839c87dcc8415d",
+            "branch": "workbench/explainer",
+            "files_sha256": "4b0cc92fbdf83d5f28e13e36f321f4a5154172dd93bf39485c0b048255d7d6b3",
+            "message": "De explainer als repo: index.html, de foto, README en de controle"
+        },
+        "resource": "abovebeyond-ai/proof-of-control"
+    },
+    "run": "workbench-20260924094155-ff3208"
+}

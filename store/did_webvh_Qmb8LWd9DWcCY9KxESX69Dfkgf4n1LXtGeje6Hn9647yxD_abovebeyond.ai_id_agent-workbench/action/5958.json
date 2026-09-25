@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Shane, on the names #798 introduced: \"primary klaar is 2 talen door elkaar\".\n\nHe is right, and it is the worst kind of mixed naming: half English, half Dutch inside one identifier, on a public relation of the model. The house rule is identifiers in English; comments and UI copy stay Dutch.\n\nRenamed:\n\n| was | is |\n|---|---|\n| `stocklist_photo_klaar` | `stocklist_photo_ready` |\n| `primary_stocklist_photo_klaar` | `primary_stocklist_photo_ready` |\n| `Vehicle::afgewerkteKopie()` | `Vehicle::readyCopy()` |\n| `readyCopy(..., string $tabel)` | `readyCopy(..., string $table)` |\n\nNothing else changes: same relations, same condition, same call sites. The comments that referred to `_klaar` now say `_ready`, and the rule text follows.\n\nThe relation was one day old and nothing outside this repository uses it, so a rename now costs nothing and a rename later costs a migration of habits.\n\nVerified: full suite, 2.129 tests and 12.343 assertions, with only the two known `ListPageHeadersTest` cases failing, which fail the same way without this change because those tables are empty in my local database. `phpstan` green over the whole project.\n",
+            "branch": "workbench/refactor/ready-copy-in-english",
+            "title": "Rename the ready-copy relations to English"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924084438-07e8b5"
+}

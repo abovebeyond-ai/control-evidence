@@ -1,0 +1,16 @@
+{
+    "action": "ca85ebe492570208d7573eb1cb17ae9d",
+    "effect": {
+        "detail": {
+            "base": "98518e66ed5302607bebc7f0be4a72f8d4a7c8eb",
+            "branch": "workbench/duimpje-fit",
+            "commit": "d2753462709773438bfb60342232406e39702a7c",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6060,
+    "verdict": "ALLOW"
+}

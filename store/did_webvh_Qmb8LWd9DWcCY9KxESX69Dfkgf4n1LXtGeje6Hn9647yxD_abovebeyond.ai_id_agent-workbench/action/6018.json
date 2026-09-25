@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ddb6008875ea413da7997436968316ec72cd59ad",
+            "branch": "workbench/gebruik-als-analysescherm",
+            "files_sha256": "3e6d5d527ea732759a22db82ccca8b8b6dff48891dc1f6698eb119147ed05a4e",
+            "message": "Gebruik als analysescherm: per schooljaar, per school, en door de jaren"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924092828-1b5349"
+}

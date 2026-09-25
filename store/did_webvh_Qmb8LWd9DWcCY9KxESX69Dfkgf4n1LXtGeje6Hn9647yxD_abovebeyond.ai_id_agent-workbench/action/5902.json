@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nA **Source** axis on the Mix page. The page takes its axes from `GET /mix`, so it appears without a dashboard change.\n\nWhy: on 2026-09-24 a third of the European intake turned out to be one feed, Zeit Online's general news (2,401 signals in a week, 11% kept, average relevance 14: Iran, the G20, handball). By platform and by region the page read that as \"DACH is large\"; only a source axis makes it visible. That feed has since been switched off with its reason on the row and replaced by ZEIT Campus, the youth section.\n\n## How\n\n`AXES.source` in `packages/core/mix.mjs`: the signal's `source_name`, falling back on `source_id`. About 102 rows for a week, biggest first; 0.25 s on the live table.\n\n`test/mix.test.mjs` pins the axis and the fallback.\n",
+            "branch": "workbench/mix-by-source",
+            "title": "The mix by source: one feed can carry a whole region"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260924074133-c55a85"
+}

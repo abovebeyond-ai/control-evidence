@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "111d44cfc09c6c84cdf42a0785299827033ca41c",
+            "branch": "workbench/de-periodes-archiveren",
+            "files_sha256": "0306d20b7012a72cb6a8ea46f485a678406098f7804a9cd327b0a424e19c05f3",
+            "message": "naviskore:archive: de rapporten van afgesloten schooljaren archiveren"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924084434-62e0d4"
+}

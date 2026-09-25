@@ -1,0 +1,16 @@
+{
+    "action": "d4e0f580d392f85dc3e3f28785d58e2d",
+    "effect": {
+        "detail": {
+            "base": "5662a3ff86900685a33802f19de5ba7079e952e9",
+            "branch": "workbench/fix/an-unprocessed-copy-is-not-shown",
+            "commit": "12029f222d3a628dc88ab6e0e0c41400b686ba85",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5916,
+    "verdict": "ALLOW"
+}

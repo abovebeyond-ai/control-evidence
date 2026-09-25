@@ -1,0 +1,16 @@
+{
+    "action": "4d7a0dbd5c44880e2ae61d92e67ea018",
+    "effect": {
+        "detail": {
+            "base": "a4942cc4024cb18fd4be47895b3bfde8f7bcb628",
+            "branch": "workbench/beeld-en-entiteit",
+            "commit": "78d3d54e1852bea458260331986f56c9235301bb",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6006,
+    "verdict": "ALLOW"
+}

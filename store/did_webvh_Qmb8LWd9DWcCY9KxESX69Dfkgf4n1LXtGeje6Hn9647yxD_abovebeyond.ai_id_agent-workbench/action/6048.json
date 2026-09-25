@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "968e7495003f51c86aca8e4a37fe2be89c2b7866",
+            "branch": "workbench/taalwissel-slugs",
+            "files_sha256": "99cf04aafa6683665382293a246c2dc25b9fb3e7ec61ca65dc54ba53d47adc7d",
+            "message": "One address per page and per frame, in every language"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260924103435-777828"
+}

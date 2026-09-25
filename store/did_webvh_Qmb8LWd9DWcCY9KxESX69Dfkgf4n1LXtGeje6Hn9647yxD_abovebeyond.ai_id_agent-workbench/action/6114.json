@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cf1a5f35c776a650df8fcf1db72b73be7006a3e7",
+            "branch": "workbench/home-hero-stockcars",
+            "files_sha256": "268128b23788de5db32160ed85e44a4e73f7399ae9b3e81d4217aa3cd2cfb6b5",
+            "message": "Beginscherm StockCars: gevel, \"Meer keuze.\" en de drie beloftes uit de flyer; main in de rebranding"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260924145734-cde478"
+}

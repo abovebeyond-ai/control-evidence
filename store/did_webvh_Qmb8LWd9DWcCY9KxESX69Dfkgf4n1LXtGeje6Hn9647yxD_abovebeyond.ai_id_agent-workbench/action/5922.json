@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c451bd4ca7e3d36efffb875bfc9d4947c53f2a63",
+            "branch": "workbench/het-archief-op-de-route",
+            "files_sha256": "1848116cc379835c649b7baaa05a5a3dedef227000cb704c41d59de2bc745374",
+            "message": "Het archief op de route"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924080837-3b70a2"
+}

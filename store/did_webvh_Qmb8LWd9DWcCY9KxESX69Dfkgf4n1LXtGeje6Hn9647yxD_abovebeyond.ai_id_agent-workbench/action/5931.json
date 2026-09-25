@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c6833cc000d407d4d62aa5dee97e362929b0c851",
+            "branch": "workbench/gebruik",
+            "files_sha256": "de1e23a5865e03759c244874625ccb99076d93fc2e38eae430bfe8b1e8f2e43c",
+            "message": "Gebruik: hoe de installatie gebruikt wordt, per school"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924082059-ffd6dd"
+}

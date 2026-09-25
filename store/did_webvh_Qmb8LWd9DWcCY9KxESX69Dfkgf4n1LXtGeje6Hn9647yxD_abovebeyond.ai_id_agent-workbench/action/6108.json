@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abacb60dd2f6a7a3e4ba58d52ce7d46896dde063",
+            "branch": "workbench/een-score-zonder-project",
+            "files_sha256": "3e80b11627d69773285f8b485846e124d4d69aef94aecc6bd5eea6ab6064ede2",
+            "message": "Een score zonder project stopt het rapport niet"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924141623-2d0738"
+}

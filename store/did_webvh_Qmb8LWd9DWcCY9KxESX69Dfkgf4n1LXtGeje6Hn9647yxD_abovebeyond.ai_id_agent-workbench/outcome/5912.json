@@ -1,0 +1,16 @@
+{
+    "action": "672371e853bb401774cb87ff29d78a7f",
+    "effect": {
+        "detail": {
+            "base": "9da7951d89b0481adcb6afa128479054b532f2fc",
+            "branch": "workbench/print-check-2",
+            "commit": "a43f4e43ba4f859cdd02b08b2ecd35a0584bbd2a",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5910,
+    "verdict": "ALLOW"
+}

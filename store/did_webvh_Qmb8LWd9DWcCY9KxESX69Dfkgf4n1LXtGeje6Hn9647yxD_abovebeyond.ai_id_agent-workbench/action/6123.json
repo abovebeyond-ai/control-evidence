@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nightwatch #41, tonight at 19:51:\n\n```\nErrorException: Attempt to read property \"catalogType\" on false\n  app/Services/VehicleRealGarantService.php:244\n```\n\nA **500 on the public warranty route**, requested by Googlebot from a vehicle page on a dealer's own website. Not an admin screen: a page our customer's customers see, and one that gets indexed.\n\n## Every link looks reasonable on its own\n\n```php\n$vehicles = $this->getVehicleSearch(...);   // returns whatever the body decodes to\nif (filled($vehicles)):                      // filled(false) is TRUE\n    $item = collect($vehicles)->first();     // collect(false)->first() gives false back\n    ...\n    \"catalogType\" => $item->catalogType      // reading a property on false\n```\n\n`blank()` is true for `null`, `''` and `[]`, but **not** for `false`. That is exactly the value that arrived, so the gate let it through, and `collect(false)->first()` turned it into `false` again. It only broke three steps later, while building the contract request, which is why the error names a field that has nothing to do with the cause.\n\n## The gate now asks what it means\n\nIs this a vehicle. Anything that is not an object, including the `['success' => false, ...]` array that `getVehicleSearch` returns on a failed call, leads to the outcome the code already had a place for: \"Vehicle not found for Real Garant\". A message, not a failure.\n\nThe same shape sat twice in this file, in `getOffer` and in `getPrograms`; both now go through one helper.\n\n## Deliberately not fixed here\n\n`getVehicleSearch` returns an object on success and an array with `success: false` on failure. Two shapes from one method is the underlying reason callers have to guess. Straightening that out touches more places than this finding, so it stays on the list rather than riding along.\n\n## Verified\n\n`AFalseAnswerIsNotAVehicleTest`: seven shapes that are not a vehicle (`false`, null, empty string, empty list, zero, the failure array, a list holding `false`) all come back as nothing, and a real vehicle still passes, first one winning as before.\n\nFull suite: 2.148 tests, with only the two known `ListPageHeadersTest` cases failing, which fail the same way without this change because those tables are empty in my local database. `phpstan` green over the whole project; `pint` green.\n\nRule R S4-6.22. Fixes bevinding een-fout-antwoord-glipte-door-de-poort.\n",
+            "branch": "workbench/fix/a-false-answer-is-not-a-vehicle",
+            "title": "A false answer is not a vehicle"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924201016-ce260f"
+}

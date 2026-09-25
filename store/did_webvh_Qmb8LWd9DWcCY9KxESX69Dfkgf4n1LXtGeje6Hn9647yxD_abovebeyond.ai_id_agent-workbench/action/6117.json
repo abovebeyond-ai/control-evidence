@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "feature/rebrand-stockcars",
+            "body": "Het nieuwe beginscherm van StockCars, naar het ontwerp dat de klant op 24-09-2026 doorstuurde. Deze PR mikt op `feature/rebrand-stockcars` (PR #2) zodat de rebranding in \u00e9\u00e9n keer live kan.\n\n## Beginscherm\n- Herofoto is de echte gevel (STOCKCARS_0032), met een versie van 1200px voor telefoons (110 kB in plaats van 230 kB).\n- Titel \"Zelfde team. / Zelfde service. / Meer keuze.\" met de laatste regel in `--sc-red-light` (rood op donker volgens de gids).\n- Multimerken, Grote voorraad en Snel leverbaar met hun iconen. Die zijn als vectoren uit de A5-flyer gehaald (`src/assets/usp/`) en kleuren mee met `currentColor`.\n- E\u00e9n knop: \"Bekijk onze wagens\" naar `/aanbod/`.\n- Hero kreeg twee velden, `accent` en `highlights`, in `src/lib/types.ts` en in het Sanity-schema.\n- `src/lib/hero.ts`: alleen gekende herobeelden krijgen een srcset. Een pad uit Sanity zonder `-1200.webp` laat de hero dus niet leeg op een telefoon.\n\n## Menu\nWagens, Services, Over ons, Contact, Velgen (was: Ons aanbod, ..., Webshop). URL's ongewijzigd. Vanaf 1200px staat \"Maak afspraak\" naast het menu.\n\n## Ook in deze PR: main in de rebranding\nDe tak liep 24 commits achter op `main` (spamfilter op de formulieren, security headers, knoppen op de wagendetailpagina). Twee conflicten opgelost:\n- `src/lib/content.ts`: de seed vult aan wat Sanity mist (uit main), en `stockSlug()` draait op het geheel (uit de rebranding).\n- `VehicleDetail.astro`: de CTA's en de deelrij van de rebranding, met de gelijke knopmaten uit main.\n\n## Na de merge\nDe preview haalt haar teksten uit het dataset `staging`. Het nieuwe beginscherm verschijnt daar pas na `npm run seed:staging` in `studio/`.\n\n## Getoetst\n`npm test` 17/17, `npm run build` groen. `astro check` geeft 19 fouten die al op de basis stonden, geen in de gewijzigde bestanden. Bekeken op 1774, 1280 en 390px breed.\n",
+            "branch": "workbench/home-hero-stockcars",
+            "title": "Beginscherm StockCars: gevel, Meer keuze en de drie beloftes"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260924145734-cde478"
+}

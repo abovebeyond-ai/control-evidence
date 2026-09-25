@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Every member who signed in through Claude Code (or any MCP client using OAuth) was refused every depth, whatever their plan.\n\n## Why\n\nThe MCP door advertises one scope, `mcp:use` (`scopes_supported` in `/.well-known/oauth-protected-resource`), so that is what the client asks for and what the token carries. `Reader::grantedTo()` kept only the scopes that name an ability; `mcp:use` names none, so the grant became `[]`, and an empty grant refused everything.\n\nSeen on 2026-09-24 on an Intelligence account: `whoami` returned `\"abilities\":[]` with every ability under `not_in_plan`, and `list_reports` answered `\"needs\":\"decode\"`.\n\n## The change\n\nA token whose scopes name no ability no longer narrows the plan, the same as a key from the account page. A token that names abilities still gets only those, and a grant still never opens more than the plan.\n\n## Tests\n\n- `DoorLockTest::test_a_token_carrying_only_mcp_use_reads_the_whole_plan`: the REST door with `['mcp:use']` (sources included) and with `['mcp:use', 'latest']` (still narrowed).\n- `McpDoorTest::test_a_member_signed_in_through_oauth_reads_their_whole_plan`: the MCP door with the token Claude Code holds; `whoami` lists the abilities and `get_trend` carries the sources.\n\nBoth failed before the fix. Full suite locally: 297 of 298 pass. The one failure is `BuildStampTest`, which cannot resolve a branch ref from a git worktree (the refs live in the common dir) and does not touch this change. Pint is clean.\n\nExisting tokens work as soon as this is deployed; nobody has to sign in again.\n",
+            "branch": "workbench/mcp-use-scope",
+            "title": "A member signed in through Claude Code reads their whole plan"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260924114856-119010"
+}

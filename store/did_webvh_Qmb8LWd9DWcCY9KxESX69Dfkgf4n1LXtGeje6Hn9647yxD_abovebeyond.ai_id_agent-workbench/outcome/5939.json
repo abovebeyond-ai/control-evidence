@@ -1,0 +1,16 @@
+{
+    "action": "58a135a7456d07f1684a359aa499431e",
+    "effect": {
+        "detail": {
+            "base": "67cd796db94c73b7c18f1c8d4de6d204320e49bd",
+            "branch": "workbench/gebruik-telt-in-sql",
+            "commit": "d2cd7cad3014f67fc6692bc0fb94dab4bf49044c",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5937,
+    "verdict": "ALLOW"
+}

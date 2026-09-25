@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het laatste stuk van de overzetting uit hoet-eyewear, hier kleiner dan daar.\n\n**Acht adressen van de vorige site lopen dood**, gemeten op 24 september: `imprint` en `privacy`, in de vier talen. Hun opvolgers bestaan gewoon, en het zijn net de adressen waar een register of een partner naar linkt. Ze gaan nu in \u00e9\u00e9n sprong naar de slug van hun eigen taal, dus `/de/imprint` komt op `/de/impressum` uit en niet eerst op de Nederlandse slug die vervolgens opnieuw omleidt.\n\nBij Hoet waren het er 32, met hele boomstructuren eronder. Hier is het deze twee; de rest van het archief antwoordt gewoon.\n\n**Het aliasdomein stuurde niet door zonder route.** De middleware zat in de `web`-groep, en middleware van een groep draait pas als er een route geraakt is. Dus:\n\n```\ncabrio-eyewear.com/nl/contact      301 -> cabrio-eyewear.be   goed\ncabrio-eyewear.com/nl/een/twee     404, blijft op .com\n```\n\nNu globaal, net als in hoet-eyewear.\n\n## Nagekeken\n\n`OudeLinksTest`, vier tests: een oud adres landt op de slug van zijn eigen taal, een adres dat nergens op slaat blijft een 404, een aliasdomein stuurt ook door zonder route, en het canonieke domein stuurt zichzelf niet weg.\n\n350 van 353 tests groen, pint schoon, phpstan zonder fouten.",
+            "branch": "workbench/oude-links",
+            "title": "Oude links komen aan, en een aliasdomein stuurt ze door ook zonder route"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20260924104913-a63302"
+}

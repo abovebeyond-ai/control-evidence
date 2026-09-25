@@ -1,0 +1,16 @@
+{
+    "action": "a864e728a264032ea2cfa3c47805284f",
+    "effect": {
+        "detail": {
+            "base": "90207f92b811a188c28824d5ad294e765ba26f36",
+            "branch": "workbench/fix/ready-copy-on-the-last-three",
+            "commit": "9513cc96497fd94b1e10c09fb317c2baf48e1bcc",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6000,
+    "verdict": "ALLOW"
+}

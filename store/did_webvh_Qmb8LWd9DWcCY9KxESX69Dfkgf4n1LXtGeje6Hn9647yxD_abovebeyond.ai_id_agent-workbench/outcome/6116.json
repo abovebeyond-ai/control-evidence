@@ -1,0 +1,16 @@
+{
+    "action": "9c7c7a8b5e15a09a8507b2b267d613de",
+    "effect": {
+        "detail": {
+            "base": "cf1a5f35c776a650df8fcf1db72b73be7006a3e7",
+            "branch": "workbench/home-hero-stockcars",
+            "commit": "eb6367f7398e2fc7f65ac5b36fd19ba74600a3fa",
+            "files": 38,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6114,
+    "verdict": "ALLOW"
+}

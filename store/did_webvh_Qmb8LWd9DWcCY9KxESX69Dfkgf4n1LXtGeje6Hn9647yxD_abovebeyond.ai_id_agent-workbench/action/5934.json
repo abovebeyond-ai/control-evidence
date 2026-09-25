@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een pagina \"Gebruik\" voor de eigenaar van de installatie: hoe wordt Naviskore gebruikt, per school.\n\n## Wat er gebeurde\n\nShane: \"can we have an admin analytics page, i want to see how it's used\". De tabellen dragen al bijna alles wat daarvoor nodig is: evaluaties met hun maker, scores, de woorden van een leerkracht, projecten, gearchiveerde rapporten, elk met een tijdstempel. Wat ontbrak was wie er inlogt.\n\n## De wijziging\n\n- **`/superadmin/gebruik`**, alleen voor een superbeheerder, in de navigatie onder Schooljaren. Per school over de laatste 7, 30 of 90 dagen (tekst die zich gedraagt, geen widgetbalk): ingelogde gebruikers, leerkrachten actief (wie evaluaties maakte of feedback schreef), evaluaties, scores, feedback, projecten, gearchiveerde rapporten, laatste activiteit; een totaalrij; en daaronder scores per week over de laatste twaalf weken per school. Scholen met het meeste werk bovenaan. Elk cijfer komt uit een tabel die er al was; niets wordt apart bijgehouden voor deze pagina.\n- **`users.last_login_at`**, gezet door `App\\Listeners\\RecordLogin` op de login-gebeurtenis van Laravel, geregistreerd in `EventServiceProvider` (deze app ontdekt listeners niet zelf), dus ook de Smartschool-login. Een query en geen model-save: een login mag nooit falen op een observer die er niets mee te maken heeft.\n- `App\\Services\\Usage\\UsageOverview` doet het tellen: per bron \u00e9\u00e9n gegroepeerde query, per school samengevoegd; scores per week uit \u00e9\u00e9n query over het venster.\n\n## De rechter\n\n`UsageOverviewTest`: de scores en evaluaties van een scenario worden geteld in een venster dat ze bevat en niet in een venster van een jaar eerder, een stille school telt nul en heeft geen laatste activiteit, en de weektabel telt op tot het venster; een login zet het moment op de gebruiker en telt voor zijn scholen; de pagina toont elke school aan een superbeheerder en weigert een gewone beheerder (403). Volledige suite groen op MariaDB, op de twee bekende worktree-artefacten na.\n\nWat het nog niet zegt: wie een rapport bekeek of afdrukte (daar is geen spoor van; de gearchiveerde rapporten zijn de dichtste maat), en wat leerlingen doen. Beide vragen een klein logboek; dat komt als je het wil.\n",
+            "branch": "workbench/gebruik",
+            "title": "Gebruik"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924082059-ffd6dd"
+}

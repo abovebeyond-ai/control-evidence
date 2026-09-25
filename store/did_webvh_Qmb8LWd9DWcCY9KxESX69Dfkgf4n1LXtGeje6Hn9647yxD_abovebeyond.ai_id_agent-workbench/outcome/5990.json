@@ -1,0 +1,16 @@
+{
+    "action": "df0e7ff3c6b38ebfaafd1cf43211e0ec",
+    "effect": {
+        "detail": {
+            "base": "68d6cdae82a0623d60fcc1658fbf34c6e8286c1e",
+            "branch": "workbench/een-did-die-resolvet",
+            "commit": "7bd02b7c0a3ccac8c6d8a3bc6f3c04e2d6fcb433",
+            "files": 96,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5982,
+    "verdict": "ALLOW"
+}

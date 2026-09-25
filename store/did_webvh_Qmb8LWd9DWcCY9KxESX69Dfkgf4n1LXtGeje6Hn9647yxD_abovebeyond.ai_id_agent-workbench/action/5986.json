@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De API van Bouwsoft kan schrijven (POST, PUT en DELETE op nacalculatie, projecten, personeel), en het token dat GLK gaf draagt ReadWrite op bijna alles. Tot nu rustte \"de app leest alleen\" op het feit dat de client toevallig alleen `get()` had. Nu zit het slot in de code zelf.\n\n## Wat er verandert\n\n- Elke call naar Bouwsoft, ook die naar de authenticatieserver, vertrekt uit een bouwsteen in `Bouwsoft::http()`, en die weigert alles behalve GET met `WriteRefused` voor er iets vertrekt.\n- README: de app is een hulpmiddel voor het bureau om nadien in te geven, geen tweede registratie. De uren komen al uit GeoFleet.\n\n## Getest\n\n- POST, PUT, PATCH en DELETE via de bouwsteen worden geweigerd en er gaat niets de deur uit. Gecontroleerd dat de test faalt als het slot weg is.\n- `bouwsoft:connect` en `bouwsoft:explore` samen sturen alleen GET.\n- Er is geen ander bestand in `app/` dat met `Http::` naar Bouwsoft praat, zodat het slot niet te omzeilen is door een tweede deur.\n\nHet echte slot blijft een aparte Bouwsoft-gebruiker met alleen leesrechten: dan kan het token zelf niet schrijven.\n",
+            "branch": "workbench/bouwsoft-read-only",
+            "title": "Bouwsoft: alleen lezen, in de code en niet enkel beloofd"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260924091429-cde8e6"
+}

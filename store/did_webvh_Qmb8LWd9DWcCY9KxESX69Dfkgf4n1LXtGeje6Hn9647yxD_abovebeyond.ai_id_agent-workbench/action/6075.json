@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De pagina Gebruik antwoordt uit het geheugen, en de scores worden in de goede richting gejoind.\n\n## Wat er gebeurde\n\nShane: \"de pagina gebruik laadt heel lang.\" Gemeten op productie: 170 seconden, waarvan 33 seconden per schooljaar in de tabel \"Door de jaren\". `evaluation_student_scores` telt bijna drie miljoen rijen. De index op `created_at` (#170) staat er, maar MariaDB begon bij de projecten, ging naar de evaluaties en las dan elke score van elk jaar; de datumbereik-voorwaarde alleen kost 141 ms.\n\n## De wijziging\n\n- **De join in de goede richting.** Zonder schoolfilter is er geen join: de scoretabel antwoordt alleen, op haar index. Met een school staat er `STRAIGHT_JOIN` vanuit de scores naar evaluaties en projecten. Zelfde cijfers, \u00e9\u00e9n plan.\n- **Onthouden.** Een afgesloten schooljaar (einddatum voor vandaag) wordt voorgoed onthouden, want daar komt niets meer bij; het lopende jaar en de laatste dertig dagen een kwartier. Elk van de vier antwoorden (kerncijfers, weken, verdeling, raster) heeft zijn eigen sleutel.\n- **`naviskore:usage-warm`** neemt de eerste, trage blik vooraf, per schooljaar en per school; `--fresh` vergeet en telt opnieuw. E\u00e9n keer draaien na deze deploy (`docs/deploy.md`); daarna is elke blik op een oud jaar uit het geheugen en telt alleen het lopende jaar nog live, een kwartier lang.\n\n## De rechter\n\n`UsageIsRememberedTest`: een afgesloten jaar wordt \u00e9\u00e9n keer geteld en na twee dagen nog steeds niet opnieuw; het lopende jaar niet binnen het kwartier en wel erna; de laatste dertig dagen zijn nooit \"over\"; vergeten laat de volgende blik tellen; de schoolfilter houdt met de nieuwe join stand (\u00e9\u00e9n school draagt alle scores van het scenario, een andere nul) en de weken tellen nog op tot de kerncijfers; het warmcommando onthoudt ook per school. Mutatie: zonder de cache falen beide tests. Volledige suite op MariaDB.\n",
+            "branch": "workbench/gebruik-uit-de-cache",
+            "title": "Gebruik antwoordt uit het geheugen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924112302-ae0335"
+}

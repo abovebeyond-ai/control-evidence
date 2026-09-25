@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Waarom\n\nHet log van `did:webvh:QmfFkci\u2026:shanedeconinck.be` (februari 2026) schreef zijn updatesleutel als `did:key:z6Mk\u2026#z6Mk\u2026`, waar did:webvh 1.0 de kale multikey verwacht. Geen enkele resolver aanvaardde het: de Universal Resolver antwoordde \"not authorized to update\", de Python-implementatie `invalidDid`. De tests bleven zeven maanden groen, omdat `verify-posts.mjs` de publieke sleutel hardgecodeerd had en het log nooit las. Een log met een kapotte eerste regel is niet te herstellen (de identifier is er de hash van), dus komt er een nieuwe identifier.\n\nNieuwe identiteit: `did:webvh:QmU9zwaqP4EuZ1BJdxQF3UbfjZjgf74dhvPaJnrRqoBxuH:shanedeconinck.be`, met `alsoKnownAs` naar de oude.\n\n## Wat er verandert\n\n- `scripts/did-webvh.mjs`, `scripts/token.mjs`: het log op twee YubiKeys, in retired PIV-slots (82 tot 84), zodat de slots van abovebeyond.ai onaangeroerd blijven. Pre-rotatie met twee opvolgers vanaf versie 1: de volgende sleutel op het andere token, en een reserve op het token dat tekende. Een slot met iets anders dan een verbruikte sleutel van dit log wordt geweigerd.\n- De postsleutel (`#key-1`) staat op #39780281 en kan alleen assertions tekenen. Hij kan de identiteit niet veranderen en staat niet meer in de Keychain.\n- `verify-posts.mjs` resolvet eerst het log en haalt de sleutel daaruit.\n- De DID staat enkel nog in het log: `content-doc.mjs`, `head.html` en `single.html` lezen hem daar, en het script schrijft hem in `llms.txt`.\n- `test/did.test.mjs` pint de fout van februari en de sleutelscheiding vast. `docs/did-ceremony.md` beschrijft de ceremonie, rotaties en wat te doen bij een verloren token.\n- De 40 posts zijn opnieuw ondertekend met `#key-1`.\n\n## Nagekeken\n\n- `npm test`: 17 van 17 groen.\n- `verify-posts`: 40 van 40.\n- Het log resolvet in `didwebvh-ts` \u00e9n in de Python-implementatie `did-webvh`.\n- De hele levensloop is vooraf gerepeteerd op SoftHSM-tokens met de echte labels: ceremonie, twee rotaties, een verloren token hersteld via de reserve, en zes weigeringen.\n\n## Na de merge\n\n- Nakijken met `curl \"https://dev.uniresolver.io/1.0/identifiers/did:webvh:QmU9zwaqP4EuZ1BJdxQF3UbfjZjgf74dhvPaJnrRqoBxuH:shanedeconinck.be\"`.\n- De GitHub-bio bijwerken.\n- De post `signing-blog-posts-verifiable-credentials` toont nog de oude DID en sleutel.\n",
+            "branch": "workbench/een-did-die-resolvet",
+            "title": "Een identiteit die resolvet, op de YubiKeys"
+        },
+        "resource": "ShaneDeconinck/shanedeconinck.be"
+    },
+    "run": "workbench-20260924091323-73a082"
+}

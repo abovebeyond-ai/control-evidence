@@ -1,0 +1,16 @@
+{
+    "action": "fed7e6a5d469a6293aef8df21faacdda",
+    "effect": {
+        "detail": {
+            "base": "210d1a3a7de15651e72faacc87decaaf384940a4",
+            "branch": "workbench/logo-en-beeld",
+            "commit": "00b85264dca72eba107e4fddccd55c034a58adba",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5961,
+    "verdict": "ALLOW"
+}

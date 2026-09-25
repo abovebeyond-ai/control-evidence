@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abacb60dd2f6a7a3e4ba58d52ce7d46896dde063",
+            "branch": "workbench/feedback-zonder-leerkracht",
+            "files_sha256": "064f7389f56e19ebcaa183ade136d1c05020c703114af507e7f7011dd9311600",
+            "message": "Feedback overleeft het account van de leerkracht"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924140327-c9fe28"
+}

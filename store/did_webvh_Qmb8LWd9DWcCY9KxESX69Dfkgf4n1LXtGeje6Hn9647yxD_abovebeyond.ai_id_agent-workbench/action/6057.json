@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nTwo of Maarten's points of 18 September, before today's meeting:\n\n- **Decode is \"Most popular\"**, with the filled button (it was Signal).\n- **Decode and Intelligence are annual subscriptions billed monthly**, and the page now says so under both prices (\"Annual plan, billed monthly\"), plus a question in the FAQ. Signal stays month by month.\n\n## How\n\n`popular` and `annual` are fields of the offer (`App\\Plans\\Offer`), not of the page, read through `Plan::isPopular()` and `Plan::billedAnnually()`. The Observatory does not send them yet; the offer already keeps a default for any field a projected row lacks, so they hold until the Plans settings take them over like the price.\n\nNot in here: his \"maybe a month free for a year\" is a pricing decision, and it waits for Stripe anyway.\n\n## Tests\n\n`PricingTermsTest`: Decode is the one popular plan and sits where the badge is, both annual plans carry the line and Signal does not, and a projected row without these fields leaves the defaults standing. Whole suite, Pint and the Tailwind check pass.\n",
+            "branch": "workbench/decode-popular-annual",
+            "title": "Decode is the plan to point at, and the two dearest plans say they are annual"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260924104403-06020a"
+}

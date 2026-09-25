@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "seo-deep"
+        },
+        "resource": "portal:hoet"
+    },
+    "run": "workbench-20260924081247-cd59a6"
+}

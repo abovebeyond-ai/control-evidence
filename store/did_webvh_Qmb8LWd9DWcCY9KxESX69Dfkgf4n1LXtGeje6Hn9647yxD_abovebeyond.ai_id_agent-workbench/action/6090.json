@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f052c3ff522d970a7bc716f5c9c9dfca115f9833",
+            "branch": "workbench/mcp-use-scope",
+            "files_sha256": "f35e60b21e3aefe943fa4242072c141cccc2752890b52f60c78bb9c70b6c55e1",
+            "message": "A member signed in through Claude Code reads their whole plan"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260924114856-119010"
+}

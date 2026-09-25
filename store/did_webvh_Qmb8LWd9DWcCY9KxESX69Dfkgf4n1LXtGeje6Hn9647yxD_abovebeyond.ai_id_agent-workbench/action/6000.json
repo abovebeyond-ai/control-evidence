@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "90207f92b811a188c28824d5ad294e765ba26f36",
+            "branch": "workbench/fix/ready-copy-on-the-last-three",
+            "files_sha256": "9c0b7cdea6bdcef46f0d2884c0f27bf75cf1671e43157082552d4ac8978fa755",
+            "message": "The last three screens of another ask for the ready set"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924092242-54019e"
+}

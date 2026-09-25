@@ -1,0 +1,16 @@
+{
+    "action": "0914329631ca3b78e82c88ad1ab55876",
+    "effect": {
+        "detail": {
+            "base": "0964e67abd101b2adc516455f0a9285b17c1831d",
+            "branch": "workbench/de-lopende-kop",
+            "commit": "4742139a3c3d0b3dd801b3d85428842fa4be089c",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6078,
+    "verdict": "ALLOW"
+}

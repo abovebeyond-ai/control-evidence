@@ -1,0 +1,16 @@
+{
+    "action": "bd8c647f85e407345b4778fcd1291f80",
+    "effect": {
+        "detail": {
+            "base": "64aa8608a8782ea713cfac4daeac620b205f83db",
+            "branch": "workbench/bouwsoft-survey",
+            "commit": "54691639bc87f07c18975d7643153908c7e74f45",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6012,
+    "verdict": "ALLOW"
+}

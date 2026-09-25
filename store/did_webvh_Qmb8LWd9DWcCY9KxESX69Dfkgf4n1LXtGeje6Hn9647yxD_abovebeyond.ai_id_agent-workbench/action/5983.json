@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "57885b8b4762c9813e3bc497e37bb4c8c670889d",
+            "branch": "workbench/bouwsoft-read-only",
+            "files_sha256": "d5686faebcda6a250e6ac8e105b518a372b0e6828e1c5f510de204a0a2c63152",
+            "message": "Bouwsoft: alleen lezen, in de code en niet enkel beloofd"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260924091429-cde8e6"
+}

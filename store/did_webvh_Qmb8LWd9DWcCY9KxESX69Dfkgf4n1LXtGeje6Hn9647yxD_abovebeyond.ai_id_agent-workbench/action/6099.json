@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Found while tracing a question from Ilse about Hexon. Deliveries per receiver over seven days on production:\n\n```\nwebhook 1 (yourdailydrive)       577 deliveries, 577 succeeded\nwebhook 2 (Hexon)                650 deliveries, 525 succeeded\nwebhook 3 (FlexLease)          1.933 deliveries,   0 succeeded\nwebhook 4, 5, 7, 8, 9, 10        249 deliveries,   0 succeeded   <- deleted on 23-03-2026\n```\n\nEight receivers carry `deleted_at = 2026-03-23 15:35:51` and were still being called every day, half a year later, every call failing.\n\n## A column that said the opposite of what it meant\n\n`webhooks.deleted_at` was `datetime NOT NULL DEFAULT current_timestamp()`, with the zero date standing for \"not deleted\". Those are two traps pointing in opposite directions. `SoftDeletes` checks `IS NULL` and would have hidden every receiver at once, including the three that must work. Filtering on \"has a date\" fails the other way, because that default stamps a **new** receiver as deleted the moment it is written. So nobody filtered, which worked fine until somebody deleted something.\n\nThis was already written down as open point O-24 on 11 September, with a test that would fail the moment the trait was added. That test earned its keep today: my first attempt was a global scope on \"has a date\", and it pointed straight at a fresh receiver becoming invisible.\n\n## Fixed at the root\n\nThe migration makes the column nullable with `null` as the default and converts the zero dates, in `webhooks` and in `webhook_fields`, which carries the same column. `Webhook` then uses `SoftDeletes` and all four readers follow one rule: the repository that picks receivers, the job that fetches one, the Koppelingen panel and the Elixir probe. `WebhookField` does not get the trait, so nothing changes there; its column simply stops lying.\n\nThe old tripwire test now holds the other side: a fresh receiver carries no deletion date, and the trait is present.\n\n## Not fixed, because it is a conversation and not code\n\nFlexLease receives 1.933 deliveries in seven days on `backend.flexlease.rent/api/v1/stocklistdealer/webhook` and answers 404 to every one of them.\n\n## Verified\n\nFull suite: 2.140 tests, with only the two known `ListPageHeadersTest` cases failing, which fail the same way without this change because those tables are empty in my local database. `phpstan` green over the whole project; `pint` green. Migration ran locally.\n\nRule R S2-10.13. Fixes bevinding een-verwijderde-ontvanger-werd-nog-gebeld, closes open point O-24.\n",
+            "branch": "workbench/fix/a-deleted-receiver-is-not-called",
+            "title": "A deleted receiver is not called again"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924134255-84d3ba"
+}

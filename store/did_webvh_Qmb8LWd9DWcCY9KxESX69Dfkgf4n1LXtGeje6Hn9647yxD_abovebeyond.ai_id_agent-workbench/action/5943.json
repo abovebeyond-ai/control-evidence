@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d752f6ef5da2343cd52d619484b840f87f351fda",
+            "branch": "workbench/bouwsoft-connect",
+            "files_sha256": "f71bdd5040cce55d9488da01b1bfa9f70446eef06f031db32071bd270b3e80ed",
+            "message": "De koppeling met Bouwsoft: een keer toegang, en eerst alleen lezen"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260924083816-5fbba2"
+}

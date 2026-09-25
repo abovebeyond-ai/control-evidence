@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Feedback overleeft het account van de leerkracht die ze schreef.\n\n## Wat er gebeurde\n\nDe archiefronde over 2021-2026 (#171) archiveerde 17.870 rapporten en liet er 3.247 liggen. 3.055 daarvan zijn scholen die Naviskore niet meer gebruiken (`StoppedSchool`, met opzet). 192 rapporten van athena Heule, Bellevue, CLW en OV4 uit 2021-2023 vielen om op \"Trying to access array offset on null\": de leerkracht van een stuk feedback bestaat niet meer, `ReportService` geeft dan `teacher => null`, en vijf views lazen de naam alsof hij er moest zijn. Op het scherm valt zo'n rapport om dezelfde reden om.\n\n## De wijziging\n\n`App\\Support\\Reporting\\Author`: `name(?array)` geeft de naam of null, `classCouncil(?array)` geeft \"Klassenraad, An Peeters\" of \"Klassenraad\". De vijf views (print en blad, kop en deel, en het webscherm) tekenen de regel alleen als er iemand te noemen is; de woorden blijven altijd staan.\n\n## De rechter\n\n`FeedbackWithoutAnAuthorTest`: klassenraadfeedback en vakfeedback van een leerkracht wiens account daarna verdwijnt; de PDF komt terug als PDF, het webscherm toont de woorden, het blad voor Chrome zegt \"Klassenraad\" zonder komma en draagt de vakfeedback. Plus de twee regels van `Author` als eenheid. Volledige suite op MariaDB. Daarna `naviskore:archive --schoolyear=2021-2022`, `2022-2023` en `2023-2024` opnieuw: wat er staat wordt overgeslagen, de 192 komen erbij.\n",
+            "branch": "workbench/feedback-zonder-leerkracht",
+            "title": "Feedback overleeft het account van de leerkracht"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924140327-c9fe28"
+}

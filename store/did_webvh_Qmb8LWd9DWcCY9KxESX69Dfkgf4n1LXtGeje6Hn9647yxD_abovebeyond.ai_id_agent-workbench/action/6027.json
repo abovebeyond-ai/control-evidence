@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Waarom\n\nHet did:webvh-log van trustedagentic.ai (`did:webvh:QmQXf9\u2026:trustedagentic.ai`, februari 2026) schreef zijn updatesleutel als `did:key:z6Mk\u2026#z6Mk\u2026`, waar did:webvh 1.0 de kale multikey verwacht. De Universal Resolver weigert het (\"not authorized to update\"). Omdat de identifier een hash van de eerste regel is, valt het log niet te herstellen. shanedeconinck.be had dezelfde fout en kreeg vandaag een nieuwe identiteit (ShaneDeconinck/shanedeconinck.be#17).\n\ntrustedagentic.ai ondertekent zelf niets en is een site van Above Beyond. Daarom komt er geen nieuwe identiteit met een eigen ceremonie.\n\n## Wat er verandert\n\n- `static/.well-known/did.jsonl` verdwijnt.\n- `static/.well-known/did.json` (`did:web:trustedagentic.ai`) heeft geen eigen sleutel meer. Het noemt `did:webvh:Qmb8LWd9DWcCY9KxESX69Dfkgf4n1LXtGeje6Hn9647yxD:abovebeyond.ai:id` als `controller` en in `alsoKnownAs`.\n- De README zegt waarom.\n\n## Na de merge\n\n- De oude sleutel `z6Mkr36\u2026` staat nog in de Keychain (`did-key` / `trustedagentic.ai`) en wordt nergens meer gebruikt.\n- Het log van abovebeyond.ai noemt trustedagentic.ai nog niet. De link in de andere richting kan bij de volgende rotatie mee.\n",
+            "branch": "workbench/de-did-van-above-beyond",
+            "title": "De DID van trustedagentic.ai wijst naar Above Beyond"
+        },
+        "resource": "abovebeyond-ai/trustedagentic.ai"
+    },
+    "run": "workbench-20260924094016-be6425"
+}

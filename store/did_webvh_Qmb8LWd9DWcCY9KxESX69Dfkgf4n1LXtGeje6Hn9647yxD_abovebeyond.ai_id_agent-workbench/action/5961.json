@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "210d1a3a7de15651e72faacc87decaaf384940a4",
+            "branch": "workbench/logo-en-beeld",
+            "files_sha256": "797f2b5dbf0565a402d5575022d43f4775bbaa6e9ae1e2e450c5198eaa5b4b36",
+            "message": "The logo as an ImageObject, and the story photo as a real image"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20260924084801-ec3c8a"
+}

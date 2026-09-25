@@ -1,0 +1,16 @@
+{
+    "action": "26466ba4b8abd0f456cd651ac1d8c8a6",
+    "effect": {
+        "detail": {
+            "base": "ad6e16add75124532fa682fa23badd4352484a9c",
+            "branch": "workbench/de-presentatie-uit-de-rapportdienst",
+            "commit": "43d56e2286945f422f407d86819dab71db425b5d",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5973,
+    "verdict": "ALLOW"
+}

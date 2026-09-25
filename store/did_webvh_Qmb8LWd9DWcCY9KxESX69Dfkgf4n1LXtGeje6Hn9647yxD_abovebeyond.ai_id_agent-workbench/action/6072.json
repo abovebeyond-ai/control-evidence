@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0964e67abd101b2adc516455f0a9285b17c1831d",
+            "branch": "workbench/gebruik-uit-de-cache",
+            "files_sha256": "951819eb421bf8a98224137259ae6e5dd519a72c7253188520fc816b0ba6d01f",
+            "message": "Gebruik antwoordt uit het geheugen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260924112302-ae0335"
+}

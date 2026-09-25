@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7aee9545adeb0459ebf9d7365df0a91cad82624b",
+            "branch": "workbench/fix/a-deleted-receiver-is-not-called",
+            "files_sha256": "32efabc3f1d749712b7a3977d410a72a68fcb2f03ff426c72f29265685749556",
+            "message": "A deleted receiver is not called again"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924134255-84d3ba"
+}

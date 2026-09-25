@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5a0424899c7bb1fe1194131a6eb7a7dcd40effb9",
+            "branch": "workbench/fix/a-false-answer-is-not-a-vehicle",
+            "files_sha256": "8baccc2cecc8393bcf6001a2483d60a97cbc441b9d9ef171b0bcb7198ef34cf8",
+            "message": "A false answer is not a vehicle"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260924201016-ce260f"
+}

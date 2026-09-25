@@ -1,0 +1,16 @@
+{
+    "action": "aaab73d7252ad11d0aef66bf2624cac6",
+    "effect": {
+        "detail": {
+            "base": "e88866ab715adb5d11a0fad265702fcdd534a6f5",
+            "branch": "workbench/ui/the-verdict-knows-when",
+            "commit": "4200ce185186eb98ab321d07ac3123c4849d2818",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5967,
+    "verdict": "ALLOW"
+}
