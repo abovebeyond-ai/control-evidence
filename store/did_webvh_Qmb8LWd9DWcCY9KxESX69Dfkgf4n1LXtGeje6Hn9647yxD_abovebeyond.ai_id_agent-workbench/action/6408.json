@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b9eaa27f658285792124d3f8f20c1342362e764d",
+            "branch": "workbench/regions-tree",
+            "files_sha256": "7d10ab366faceef3ace3492e233981919595e3cec998a70b8b36302f27620ba9",
+            "message": "Regions are a tree, and one id on every table"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260926035534-7dcd3b"
+}

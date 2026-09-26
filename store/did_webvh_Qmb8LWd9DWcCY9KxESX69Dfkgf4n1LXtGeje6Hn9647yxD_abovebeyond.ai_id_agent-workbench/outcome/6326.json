@@ -1,0 +1,16 @@
+{
+    "action": "532d7bf2a8f8d42b4893ed1445846b24",
+    "effect": {
+        "detail": {
+            "base": "082238225402e1fc49e2b189305a1ffd715f68d5",
+            "branch": "workbench/feat/one-measure-sliced-many-ways",
+            "commit": "df5406fbefb7b26ebdc72c407f6321b8af0bc5a1",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6324,
+    "verdict": "ALLOW"
+}

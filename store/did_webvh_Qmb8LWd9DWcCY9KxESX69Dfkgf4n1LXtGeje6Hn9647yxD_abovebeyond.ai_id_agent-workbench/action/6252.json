@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "gentells-standard",
+                    "url": "https://github.com/Trendwolves/gentells-standard"
+                }
+            ]
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20260926015044-8c421c"
+}

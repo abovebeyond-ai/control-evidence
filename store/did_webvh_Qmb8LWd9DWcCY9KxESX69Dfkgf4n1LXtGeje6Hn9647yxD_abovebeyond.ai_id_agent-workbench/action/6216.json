@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ace880fd2ee480e69f39926dbeb6750b180d9dc9",
+            "branch": "workbench/feat/an-event-log-for-what-leaves-no-trace",
+            "files_sha256": "4844054feebf9035356ba6f4385400db84cfdaf61b977fa01eb9d536be2aee43",
+            "message": "An event log for what leaves no trace: edits and sign-ins"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260925150137-e61fdb"
+}

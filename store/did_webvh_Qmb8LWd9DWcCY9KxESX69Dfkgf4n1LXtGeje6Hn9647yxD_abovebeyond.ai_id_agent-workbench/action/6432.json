@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5946a336747db1f5f4f40fb5695512b2a573509b",
+            "branch": "workbench/eindterm-ontdubbelen",
+            "files_sha256": "336c3831cbbcfe2461c9d786b61f8dee6966d7c5c433ada8e73ebe4b6b8d8d4b",
+            "message": "Een eindterm in clusters van twee stromen krijgt een rij per stroom"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926042158-2c1a6f"
+}

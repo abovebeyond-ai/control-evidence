@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0ed00f586189ce7b253ced89ea962e6558d7463e",
+            "branch": "workbench/groepsbeheerder-op-het-personeelsscherm",
+            "files_sha256": "43ad9df42c114270936a69b8bf84a5ed0f7ec421a29b75239d9b4b460d12554a",
+            "message": "Beheerder van een scholengroep wordt uitgedeeld op het personeelsscherm"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925155304-b3f144"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Curriculum overnemen kan vanaf het schoolscherm, in twee stappen.\n\n## Wat er gebeurde\n\nDe onboarding-hand voor een nieuwe school (#161, `naviskore:copy-curriculum`) bestond alleen als commando over ssh; het schoolscherm verwees ernaar met een `php artisan`-regel. Stond op de lijst sinds 23 september.\n\n## De wijziging\n\n- **Kaart \"Curriculum overnemen\"** op het schoolscherm, voor wie de school mag beheren (`SchoolPolicy::update`: de beheerder van het knooppunt, of een superbeheerder): hoeveel eigen clusters de school heeft, een keuze uit de scholen die deze gebruiker ziet (minus deze), en de knop \"Wat zou er meekomen?\".\n- **Twee stappen**: de eerste is een proefronde die niets schrijft en de zin van het commando toont (\"2 clusters van Bestaande school naar De Nieuwe School (0 staan er al), 2 offici\u00eble eindtermen gedeeld, 2 eigen eindtermen gekopieerd\"); dan pas \"Kopieer nu\". Een kopie is geen klik die je ongedaan maakt, dus eerst bewijzen, dan doen.\n- `CurriculumCopyController` op `POST superadmin/schools/{school}/curriculum`: dezelfde `CurriculumCopy` als het commando, een bron die niet zichtbaar is of de school zelf wordt geweigerd.\n- De verwijzing naar het commando op de kaart \"Deze school staat uit\" wijst nu naar de kaart.\n\n## De rechter\n\n`CopyingACurriculumTest`: een beheerder van het knooppunt ziet de kaart met de bron, de proefronde toont de zin en kopieert niets, de bevestiging kopieert de twee clusters, en de school naar zichzelf wordt geweigerd; een beheerder van een ander knooppunt krijgt 403 en er komt niets over. Volledige suite op MariaDB.\n",
+            "branch": "workbench/curriculum-kopieren-vanuit-het-scherm",
+            "title": "Curriculum overnemen vanaf het schoolscherm"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925164521-66348a"
+}

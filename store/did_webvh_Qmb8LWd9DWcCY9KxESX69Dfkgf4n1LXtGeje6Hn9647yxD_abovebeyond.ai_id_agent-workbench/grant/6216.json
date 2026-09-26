@@ -1,0 +1,319 @@
+{
+    "expiry": "none: a standing grant, replaced by a new bundle when it changes",
+    "judgements": [],
+    "kinds": [
+        "branch.push",
+        "forge.deploy",
+        "issue.open",
+        "portal.expense",
+        "portal.measure",
+        "portal.playbook",
+        "portal.project.patch",
+        "portal.task",
+        "portal.time_entry",
+        "portal.update",
+        "preview.push",
+        "pull.open"
+    ],
+    "max_per_kind": 1,
+    "path_aware": true,
+    "premises_for": [],
+    "principal": "did:webvh:Qmb8LWd9DWcCY9KxESX69Dfkgf4n1LXtGeje6Hn9647yxD:abovebeyond.ai:id",
+    "principal_key": "d72ed1a3cffb003bd6ea966699bced6ae322ddb912a90dd35579e117951dd843",
+    "principal_keys": {
+        "did:webvh:Qmb8LWd9DWcCY9KxESX69Dfkgf4n1LXtGeje6Hn9647yxD:abovebeyond.ai:id#operator": "6c37561521bfb1840cbf3212df056a3cdc529449becfaf434a703be1a907882f",
+        "did:webvh:Qmb8LWd9DWcCY9KxESX69Dfkgf4n1LXtGeje6Hn9647yxD:abovebeyond.ai:id#operator-2": "323954f05ee091ef53f19674cb437457a272e0d057780e6566c22f50b9bac0df"
+    },
+    "resources": [
+        "Hoet-design/cabrio-eyewear",
+        "Hoet-design/cabrio-eyewear-mirror",
+        "Hoet-design/hoet-design-web",
+        "Hoet-design/hoet-eyewear",
+        "Hoet-design/hoet-eyewear-mirror",
+        "Hoet-design/hoet-sanity",
+        "ShaneDeconinck/cafe-t-hoekske",
+        "ShaneDeconinck/cides",
+        "ShaneDeconinck/dbc-subsidieportaal",
+        "ShaneDeconinck/good-governance",
+        "ShaneDeconinck/naviskore",
+        "ShaneDeconinck/naviskore-viz",
+        "ShaneDeconinck/shanedeconinck.be",
+        "ShaneDeconinck/trendwolves-call-agents",
+        "ShaneDeconinck/vlamingdam-frituur",
+        "Trendwolves/gentells-dashboard",
+        "Trendwolves/gentells-pipeline",
+        "Trendwolves/gentells-site",
+        "Trendwolves/gentells-studio",
+        "Trendwolves/glk-transferor",
+        "abovebeyond-ai/abovebeyond",
+        "abovebeyond-ai/control",
+        "abovebeyond-ai/control-verify-action",
+        "abovebeyond-ai/elixir",
+        "abovebeyond-ai/elixir-fix",
+        "abovebeyond-ai/portal",
+        "abovebeyond-ai/proof-of-control",
+        "abovebeyond-ai/proveml",
+        "abovebeyond-ai/proveml-research",
+        "abovebeyond-ai/trustedagentic.ai",
+        "abovebeyond-ai/vera",
+        "abovebeyond-ai/verify-abovebeyond",
+        "forge:abovebeyond",
+        "forge:afrodidact-website",
+        "forge:axa-dare-to-call",
+        "forge:cabrio-eyewear",
+        "forge:cabrio-eyewear-mirror",
+        "forge:cafe-t-hoekske-website",
+        "forge:cides-portfolio",
+        "forge:control",
+        "forge:dbc-webapplicatie",
+        "forge:elixir",
+        "forge:elixir-fix",
+        "forge:find-your-voice",
+        "forge:garage-de-backer-website",
+        "forge:gentells",
+        "forge:glk-transferor",
+        "forge:hoet",
+        "forge:hoet-design-web",
+        "forge:hoet-eyewear-mirror",
+        "forge:kubo-it-lab",
+        "forge:kubo-platform",
+        "forge:menukaart-webapp",
+        "forge:naviskore-viz",
+        "forge:naviskore-webapp",
+        "forge:portal",
+        "forge:proof-of-control",
+        "forge:proveml",
+        "forge:proveml-research",
+        "forge:schoutteet",
+        "forge:shanedeconinck-be",
+        "forge:she-cosmetics-website",
+        "forge:signal-observatory-gentells",
+        "forge:sportbusinessgame",
+        "forge:stocklist-dealer-landing",
+        "forge:stocklistplatform-eu",
+        "forge:trustedagentic",
+        "forge:vera",
+        "forge:verify-abovebeyond",
+        "kubo-global/afrodidact-website",
+        "kubo-global/kubo-school-platform",
+        "kubo-global/kubo-website",
+        "portal:abovebeyond",
+        "portal:afrodidact-website",
+        "portal:axa-dare-to-call",
+        "portal:cabrio-eyewear",
+        "portal:cabrio-eyewear-mirror",
+        "portal:cafe-t-hoekske-website",
+        "portal:cides-portfolio",
+        "portal:control",
+        "portal:dbc-webapplicatie",
+        "portal:elixir",
+        "portal:elixir-fix",
+        "portal:find-your-voice",
+        "portal:garage-de-backer-website",
+        "portal:gentells",
+        "portal:glk-transferor",
+        "portal:hoet",
+        "portal:hoet-design-web",
+        "portal:hoet-eyewear-mirror",
+        "portal:kubo-it-lab",
+        "portal:kubo-platform",
+        "portal:menukaart-webapp",
+        "portal:naviskore-viz",
+        "portal:naviskore-webapp",
+        "portal:portal",
+        "portal:proof-of-control",
+        "portal:proveml",
+        "portal:proveml-research",
+        "portal:schoutteet",
+        "portal:shanedeconinck-be",
+        "portal:she-cosmetics-website",
+        "portal:signal-observatory-gentells",
+        "portal:sportbusinessgame",
+        "portal:stocklist-dealer-landing",
+        "portal:stocklistplatform-eu",
+        "portal:trustedagentic",
+        "portal:vera",
+        "portal:verify-abovebeyond",
+        "stocklistdealer-eu/landing",
+        "stocklistdealer-eu/peugeot-de-backer",
+        "stocklistdealer-eu/platform",
+        "stocklistdealer-eu/website"
+    ],
+    "schemas": {
+        "branch.delete": {
+            "optional": {
+                "reason": "string"
+            },
+            "required": {
+                "branch": "string"
+            }
+        },
+        "branch.push": {
+            "optional": {
+                "base_sha": "string",
+                "files_sha256": "hex64",
+                "message": "string",
+                "packages": "int"
+            },
+            "required": {
+                "branch": "string"
+            }
+        },
+        "forge.deploy": {
+            "optional": {
+                "pull": "int",
+                "sha": "hex40"
+            },
+            "required": []
+        },
+        "issue.open": {
+            "optional": {
+                "body": "string",
+                "finding": "string",
+                "labels": "[]string"
+            },
+            "required": {
+                "title": "string"
+            }
+        },
+        "portal.expense": {
+            "optional": {
+                "currency": "string",
+                "date": "string",
+                "description": "string",
+                "files_sha256": "hex64",
+                "invoiceNumber": "string",
+                "rebillable": "bool"
+            },
+            "required": {
+                "amount": "number",
+                "vendor": "string"
+            }
+        },
+        "portal.measure": {
+            "optional": {
+                "only": "string"
+            },
+            "required": []
+        },
+        "portal.playbook": {
+            "optional": [],
+            "required": {
+                "playbook": "string"
+            }
+        },
+        "portal.project.patch": {
+            "optional": {
+                "clearNextAction": "bool",
+                "elixir": "bool",
+                "links": "records",
+                "milestones": "records",
+                "nextAction": "string",
+                "productionTheirs": "bool",
+                "replaceLinks": "bool",
+                "stack": "list",
+                "status": "string",
+                "summary": "string"
+            },
+            "required": []
+        },
+        "portal.task": {
+            "optional": {
+                "note": "string",
+                "url": "string"
+            },
+            "required": {
+                "key": "string",
+                "state": "string"
+            }
+        },
+        "portal.time_entry": {
+            "optional": {
+                "billable": "bool",
+                "date": "string",
+                "note": "string"
+            },
+            "required": {
+                "hours": "number"
+            }
+        },
+        "portal.update": {
+            "optional": {
+                "body": "list",
+                "clientVisible": "bool",
+                "date": "string"
+            },
+            "required": {
+                "title": "string"
+            }
+        },
+        "preview.push": {
+            "optional": {
+                "base": "hex40",
+                "head": "string",
+                "pull": "int"
+            },
+            "required": {
+                "branch": "string",
+                "sha": "hex40"
+            }
+        },
+        "pull.open": {
+            "optional": {
+                "body": "string",
+                "draft": "bool",
+                "packages": "int",
+                "title": "string"
+            },
+            "required": {
+                "base": "string",
+                "branch": "string"
+            }
+        },
+        "pull.ready": {
+            "optional": {
+                "body": "string"
+            },
+            "required": {
+                "number": "int"
+            }
+        },
+        "review.invite": {
+            "optional": [],
+            "required": {
+                "email": "string"
+            }
+        },
+        "review.publish": {
+            "optional": {
+                "by": "string",
+                "title": "string"
+            },
+            "required": {
+                "page_sha256": "hex64"
+            }
+        },
+        "review.sign": {
+            "optional": {
+                "judged": "int",
+                "readings": "int"
+            },
+            "required": {
+                "root": "string"
+            }
+        },
+        "workflow.dispatch": {
+            "optional": {
+                "inputs": "strings",
+                "packages": "int",
+                "plan_sha256": "hex64"
+            },
+            "required": {
+                "ref": "string",
+                "workflow": "string"
+            }
+        }
+    },
+    "submitter_key": "ae22b6bebd8a2c8194f1b519c3f809fa2ffd334845ff12d5f5beaa41d4cde6dd",
+    "version": "control-1"
+}

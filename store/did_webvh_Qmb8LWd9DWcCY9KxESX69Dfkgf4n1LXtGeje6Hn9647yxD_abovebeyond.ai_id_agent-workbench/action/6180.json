@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2817872f5ad2ea7814b77a69734030c556bb1bfa",
+            "branch": "workbench/de-oude-regels-weg",
+            "files_sha256": "9262ffa52cd957d557001c1768f6d865add1fdc1a4289e7c529eb89a42e17c81",
+            "message": "De twee takken voor een periodiek rapport van de oude jaren zijn weg"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925132337-b24702"
+}

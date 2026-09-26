@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "630dd3cce7bc3eb7b82e617a6a689dae164aa98e",
+            "branch": "workbench/de-webp-avatar",
+            "files_sha256": "7a3a7c785d28e1ee69840d6a1b5387cb794bd95b10065aa0747d99e5736b1eee",
+            "message": "Elke foto krijgt een WebP-avatar van 128 px, en wat geen afbeelding is wordt geweigerd"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925104401-f2baeb"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe first engine to read the rules, the Gentells pipeline, found two things.\n\n- **The co-occurrence ladder was in the wrong order.** 0.1.0 put a trusted source before a report, so a report from a trusted source weighed 1.5. The pipeline weighs it 1.0: a report is one voice, however well argued. The order now matches what runs.\n- **Both ladders were sentences.** A step is now a condition on a named field (`{\"field\": \"voice\", \"op\": \"eq\", \"value\": \"peer\"}`), read top to bottom, first match decides, a missing field never matches. The check refuses a step written in words, so the pipeline can execute the ladders instead of copying them.\n\n## Tests\n\n36 tests, two new: eight signals through both ladders, and a ladder step in words is refused. The eight cases were checked against the pipeline itself: the detection weights by running its SQL `CASE` in SQLite, the co-occurrence worth by running its `signalWorth`. All eight agree.\n\nAfter merge: tag `v0.1.1`, then the pipeline syncs to it.\n",
+            "branch": "workbench/standard-0-1-1",
+            "title": "0.1.1: both signal ladders executable, and the co-occurrence one in the order that runs"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20260926021821-db44fb"
+}

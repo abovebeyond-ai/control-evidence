@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fd6de534d21efd7e97e339537bd58816c54883df",
+            "branch": "workbench/leerplan-vergelijken",
+            "files_sha256": "abcbeac70a3ec7aeb611fbdfd397f85de59b37a14b6957dda8334466ee6ef473",
+            "message": "Een cluster naast het GO!-leerplan: per eindterm wat een herstel zou doen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926022700-6f343d"
+}

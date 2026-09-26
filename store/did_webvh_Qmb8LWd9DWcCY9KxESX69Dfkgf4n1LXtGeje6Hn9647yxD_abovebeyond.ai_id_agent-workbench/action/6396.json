@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c90f87993d4637e3f3ef103b54d64f77d34a60b0",
+            "branch": "workbench/phpunit-notices",
+            "files_sha256": "600e99f542fcbc77c110e064ae9eeda75d717b88177631c360b61989bcfd09a3",
+            "message": "Negen mocks zonder verwachting worden stubs"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926033214-e67e51"
+}

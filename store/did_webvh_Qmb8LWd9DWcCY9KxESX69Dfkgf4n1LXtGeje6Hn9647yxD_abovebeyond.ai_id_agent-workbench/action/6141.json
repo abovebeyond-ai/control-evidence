@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A dealer at Garage Du Centre ticked \"Portalen\" off and on again, which is the ordinary way to make a vehicle go out to the partners once more. Hexon never got it. This is what they heard about that vehicle:\n\n```\nvehicle 22976, receiver 2 (stocklistdealer.doorlinkenvoorraad.nl)\n  22/09 10:31  create  200\n  22/09 10:51  update  200\n  24/09 12:19  delete  200\n  24/09 12:20  delete  200\n  24/09 13:26  delete  200\n```\n\nThree times \"remove this vehicle\", and then nothing. The log of the same minute says why:\n\n```\n[2026-09-24 13:27:00] production.INFO: [Webhook] niet verstuurd: hetzelfde bericht ging al de deur uit\n  {\"webhook\":2,\"vehicle\":22976,\"type\":\"create\"}\n```\n\n## The gate asked the wrong question\n\nTicking the box off sends `delete`, which always goes through. Ticking it on sends `create`, and that create was word for word the same as the create of 22 September. `alreadyDelivered()` asked \"did we ever send this message before?\" and the answer was correctly yes.\n\nBut what counts is what the receiver heard **last**, and that was \"remove\". The comparison filtered on type (`where('type', $type)`), so the `delete` in between was invisible to it: it saw the create of the 22nd next to the create of the 24th and decided there was no news. There was, because at Hexon the vehicle was gone at that moment.\n\nThe comparison now runs against the most recent successful delivery, whatever type it was. If that is a `delete`, every `create` or `update` after it is new news and leaves.\n\n## Ours, and how far it reaches\n\nThe type filter came in with `86aba7095` of 20 September, together with the fingerprint itself. On the day this was found, nine vehicles across six dealers sat in that state: published here, known as removed at the partner, at both real receivers (`admin.yourdailydrive.com` and `stocklistdealer.doorlinkenvoorraad.nl`).\n\nThe fix does not heal those nine by itself, because nothing leaves until something about the vehicle changes. They are re-offered once after the deploy, by hand.\n\n## Verified\n\n`WebhookOnlyOnChangeTest` gained two cases: a create, a delete and a create in a row leave three messages with `create` as the last, and the same create twice in a row still leaves once. The suite: 2,146 tests, only the two known `ListPageHeadersTest` cases failing, which fail the same way without this change because those tables are empty in my local database. `phpstan` green; `pint` green.\n\nRule R S2-10.12. Fixes bevinding een-delete-brak-de-keten-niet.\n",
+            "branch": "workbench/fix/a-delete-breaks-the-chain",
+            "title": "A delete breaks the chain"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260925092509-29639d"
+}

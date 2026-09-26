@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het rijksregisternummer verdwijnt uit de databank en kan nergens meer serialiseren.\n\n## Wat er gebeurde\n\nBij #180 bleek dat `users.rijksregisternummer` in de HTML van het evaluatiescherm stond, meegedragen in de Livewire-snapshot van de leerlingen. De kolom bestaat op productie zonder dat een migratie ze kent (schemadrift), is gevuld voor 59 gebruikers, en niets in de code leest of schrijft ze: geen model, geen view, geen sync, geen test. Shane: \"die rijksregisternummer dingen moeten we oplossen.\"\n\n## De wijziging\n\n- **Migratie**: de kolom wordt verwijderd, met een `hasColumn`-poort omdat een verse installatie ze nooit had. Dat is 59 waarden weg, en dat is de bedoeling: een gegeven dat nergens voor dient is alleen een risico. `down()` zet een lege kolom terug, de waarden niet.\n- **`User::$hidden`** noemt het attribuut alsnog, zodat een installatie die de kolom nog draagt het nooit serialiseert, niet in JSON en niet in een snapshot.\n\n## De rechter\n\n`TheNationalRegisterNumberNeverSerialisesTest`: na de migraties bestaat de kolom niet meer, en een leerling met het attribuut in het geheugen laat het niet in `toArray`, `toJson` of een collectie-JSON. Volledige suite op MariaDB.\n\n## Wat dit niet doet\n\nDe schemadrift is breder dan deze ene kolom. Op productie staan zonder migratie: de tabel `att_level_cluster_teacher`, `system_calculations`, `degree_programme_offering`, de kolommen `value_based` op eindtermen en clusters, `grade_id` en `stream_id` op eindtermen, en `is_zoom` op leerlingengroepen. Omgekeerd kennen de migraties tabellen die productie niet heeft (`reports`, `student_reports`, `evaluation_attainment_level_maxes`, `attainment_levels.type`). Dat vraagt een eigen ronde: per verschil beslissen of het een migratie wordt of weg mag.\n",
+            "branch": "workbench/het-rijksregisternummer-weg",
+            "title": "Het rijksregisternummer verdwijnt uit de databank"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925091122-718c80"
+}

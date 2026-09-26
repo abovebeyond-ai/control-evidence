@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1316ef6105e40d744dca23ac59e5e9ac39e07e5a",
+            "branch": "workbench/de-presentatie-per-evaluatietype",
+            "files_sha256": "c75fb2cede780980335293132570ebdc8c504c9361efbf66b447918d8c077df6",
+            "message": "Wat een rapport over \u00e9\u00e9n gemiddelde zegt staat in \u00e9\u00e9n object: Reading"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925140957-ce302f"
+}

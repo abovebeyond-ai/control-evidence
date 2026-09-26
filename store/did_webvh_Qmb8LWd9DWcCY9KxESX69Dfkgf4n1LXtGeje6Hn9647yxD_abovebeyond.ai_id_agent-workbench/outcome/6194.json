@@ -1,0 +1,16 @@
+{
+    "action": "93f3cad1509356da150d269dc5ea86c9",
+    "effect": {
+        "detail": {
+            "base": "1316ef6105e40d744dca23ac59e5e9ac39e07e5a",
+            "branch": "workbench/de-presentatie-per-evaluatietype",
+            "commit": "ce1bbebad58bc925cf48e639414da9f52416d7ad",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6192,
+    "verdict": "ALLOW"
+}

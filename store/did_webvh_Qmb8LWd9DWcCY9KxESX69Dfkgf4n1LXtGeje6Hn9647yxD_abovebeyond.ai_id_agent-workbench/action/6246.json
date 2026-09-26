@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "da66089f99dd15512f0201d912aa17ec716dae39",
+            "branch": "workbench/workbench-per-client-types",
+            "files_sha256": "fc0dcfc177ee482938c7ed8bf892cf8e7823c08ef0b709d357cfcc660c34ab22",
+            "message": "Workbench per client passes PHPStan"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260926014552-0407f1"
+}

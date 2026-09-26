@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "adf66f2ba729e3c78e11b81dd29f0e72e989d369",
+            "branch": "workbench/go-leerplan-lezen",
+            "files_sha256": "a38dcf7a795fb179bc4dec4eae2dfc9cc334c74e426d3602813337ebd21cafff",
+            "message": "Naviskore leest een GO!-leerplan uit zijn PDF"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926020421-01767e"
+}

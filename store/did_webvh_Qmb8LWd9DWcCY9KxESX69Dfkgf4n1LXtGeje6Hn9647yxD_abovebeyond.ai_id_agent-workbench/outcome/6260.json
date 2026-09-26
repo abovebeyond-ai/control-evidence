@@ -1,0 +1,16 @@
+{
+    "action": "187c06ec5b10436c1325f3ddba645597",
+    "effect": {
+        "detail": {
+            "base": "fc9902d10716f39f27fac320424de34bd3fd3509",
+            "branch": "workbench/refactor/insights-out-of-one-file",
+            "commit": "312ce31ba4a50b366776a88634630b14cfb2e1cf",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6258,
+    "verdict": "ALLOW"
+}

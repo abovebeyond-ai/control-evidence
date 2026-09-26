@@ -1,0 +1,16 @@
+{
+    "action": "5b2222372078cb64639c3ec6797a40f5",
+    "effect": {
+        "detail": {
+            "base": "89ba4efcacb74c8cacecd2ef3f8f4a1a7e66aa24",
+            "branch": "workbench/fix/the-theme-overrules-every-spacing-class",
+            "commit": "c6d3a003e9af434171ec074e528c4ba057712265",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6384,
+    "verdict": "ALLOW"
+}

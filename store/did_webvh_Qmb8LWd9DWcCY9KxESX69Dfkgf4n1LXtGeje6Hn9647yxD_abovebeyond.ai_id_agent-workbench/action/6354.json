@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8d3e9c38a1f3c629284b78e2770ed4020db4393f",
+            "branch": "workbench/leerplan-herstel",
+            "files_sha256": "95100a38965d1f6482f8c1ee95b8ace047f8f1a509ee28ba7f59909ff9d1a874",
+            "message": "Het herstel schrijft alleen een code waar de vergelijking zeker is"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926030212-e10b6a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Elke foto krijgt een WebP-avatar van 128 px, en wat geen afbeelding is wordt geweigerd.\n\n## Wat er gebeurde\n\nShane, bij #183: \"waar het op aankomt is ze in verschillende formaten op te slaan.\" Gemeten op productie: alle echte foto's zijn 256 \u00d7 256 JPEG van 8 tot 30 KB, en de schermen tekenen een gezicht nergens groter dan 64 CSS-pixels. En 1.418 van de 3.816 rijen in de oude kolom bevatten geen foto maar een opgeslagen Smartschool-foutcode (\"12\"); #183 sloeg die over op lengte, dit maakt er een regel van.\n\n## De wijziging\n\n- **`Photos::avatar`**: een WebP van 128 \u00d7 128 (twee keer de grootste schermmaat, voor dichte schermen) naast het origineel, via GD; `Photos::webpSupported()` zegt of deze PHP dat kan, en zonder blijft alles bij het origineel.\n- **`Photos::store` weigert wat geen afbeelding is**: geen bestand, geen `photo_at`, en het commando telt het als geweigerd.\n- **De route** geeft de avatar aan een browser die `image/webp` noemt (zoals browsers voor afbeeldingen doen; een kale `*/*` is geen belofte) en het origineel aan de rest, met `Vary: Accept`; de ETag draagt de variant.\n- **Migratie** `2026_09_25_120000`: maakt de avatar voor elke foto die al op schijf staat, overslaand wat er al is; de migratie van #183 blijft zoals ze is en heeft op productie gelopen of loopt in dezelfde deploy, in die volgorde.\n\n## De rechter\n\n`PhotosOnDiskTest`, nu met een echte 256 \u00d7 256 JPEG uit GD: de route geeft het origineel aan wie geen WebP noemt en een WebP van 128 \u00d7 128 die kleiner is dan het origineel aan wie het wel noemt; een foutcode of tekst wordt geweigerd en zet geen `photo_at`; na de twee migraties staat naast het origineel de avatar. `LoadUserPhotosTest` antwoordt met echte JPEG-bytes in plaats van woorden. Volledige suite op MariaDB.\n",
+            "branch": "workbench/de-webp-avatar",
+            "title": "Een WebP-avatar per foto"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925104401-f2baeb"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "e640a4b290d090241ec588ced4fe348d",
+    "effect": {
+        "detail": {
+            "base": "4f6031f8b366b9b271a50731bff4e26e6e475edb",
+            "branch": "workbench/de-archiefrechter-en-de-tellers",
+            "commit": "4b6d84c62e6cf2cc55cc8157c9010c9b7ec68613",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6210,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e8cb299179bea53015464aada59de483823d2567",
+            "branch": "workbench/pipeline-reads-standard",
+            "files_sha256": "6ba6be5147d660f78fa312626e5fa6695a5daef192137bac3e829b57ea24b821",
+            "message": "The pipeline reads the Gentells Standard"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260926022610-fc3c74"
+}

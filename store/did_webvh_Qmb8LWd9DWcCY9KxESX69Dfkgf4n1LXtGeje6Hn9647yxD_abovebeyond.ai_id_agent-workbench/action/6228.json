@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e72cc459212388f6d5ecb5825eb852102199e5f7",
+            "branch": "workbench/curriculum-kopieren-vanuit-het-scherm",
+            "files_sha256": "6cc8ad514e82406ef93a0dd7be4db183d77e71674f17d98b308ac941dee6eb0f",
+            "message": "Curriculum overnemen kan vanaf het schoolscherm, in twee stappen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925164521-66348a"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "fe74b579b01fb0b2e49bd51eb37ad2d8",
+    "effect": {
+        "detail": {
+            "base": "aad659c68feb85249553c4416de27745621f4492",
+            "branch": "workbench/fix/a-silent-partner-is-not-a-broken-button",
+            "commit": "9500b2c9896af4d842df9ab1a131a19bdb67dd88",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6198,
+    "verdict": "ALLOW"
+}

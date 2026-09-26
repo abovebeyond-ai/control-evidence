@@ -1,0 +1,16 @@
+{
+    "action": "aedc802f321065e9b0d870c779b3167c",
+    "effect": {
+        "detail": {
+            "base": "2817872f5ad2ea7814b77a69734030c556bb1bfa",
+            "branch": "workbench/de-oude-regels-weg",
+            "commit": "ec6bb889de03b46bb1e1679e8b11f68ee4326798",
+            "files": 27,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6180,
+    "verdict": "ALLOW"
+}

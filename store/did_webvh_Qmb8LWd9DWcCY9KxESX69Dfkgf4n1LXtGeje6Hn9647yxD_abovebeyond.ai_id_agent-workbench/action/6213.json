@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De archiefrechter vergelijkt het blad, niet de tellers van dompdf.\n\n## Wat er gebeurde\n\nDe CI op main werd rood na de merge van #187, op `ArchivingAReportTest::the_controller_and_the_archive_make_the_same_sheet`: het blad dat de controller streamt en het blad dat het archief bewaart verschilden op `/ID (node00000093)` tegen `node00000094`. dompdf nummert elk element van zijn structuurboom met een teller die doortelt op wat het proces eerder tekende; een nieuw testbestand veranderde de volgorde waarin de suite tekent, en de twee renders kregen andere nummers. Op de tak was de CI groen; op main niet. De code van het rapport is niet veranderd.\n\n## De wijziging\n\nDe rechter haalt, naast de aanmaakdatum en de daarvan afgeleide `/ID`, ook de nodenummers van de structuurboom uit beide bladen voor hij ze vergelijkt. Dat zijn de drie legitieme verschillen tussen twee renders van \u00e9\u00e9n blad; al het andere blijft byte voor byte gelijk.\n\n## De rechter\n\nDezelfde test, nu onafhankelijk van de volgorde van de suite. Volledige suite op MariaDB.\n",
+            "branch": "workbench/de-archiefrechter-en-de-tellers",
+            "title": "De archiefrechter vergelijkt het blad, niet de tellers van dompdf"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925142949-2ab673"
+}

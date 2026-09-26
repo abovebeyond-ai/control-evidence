@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8accea0f0a625ee0ff748ff5c4607ca1dc084508",
+            "branch": "workbench/schemadrift",
+            "files_sha256": "9ce754a9789be5bee2a918d37a566614f873754904a141fd69b5d8e9d33acc44",
+            "message": "De migraties zijn het schema: productie en een verse databank zijn weer hetzelfde"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925112527-342996"
+}

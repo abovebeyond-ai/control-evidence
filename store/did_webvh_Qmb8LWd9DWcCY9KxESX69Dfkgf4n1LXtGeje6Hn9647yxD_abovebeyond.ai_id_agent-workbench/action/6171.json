@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Insights is the screen the platform is steered by, and until today no test touched a single number it produces. The three existing tests check who is allowed in, nothing else. A query that quietly starts counting the wrong thing would have looked exactly like a query that works.\n\nThis adds seven tests. They measure in a year that is otherwise empty (2027), so every assertion is an absolute number rather than a difference against whatever happens to sit in the database.\n\n## Two numbers that deliberately count differently\n\nBoth were undocumented, and both are the kind of decision that drifts back the first time someone \"tidies up\" a query:\n\n- **Lead time knows no price.** A vehicle booked without a sale price still stood for sale that long, so it counts. A vehicle whose sale date precedes its entry date is a booking error and drops out, because one such row drags a whole year's average down.\n- **Turnover counts only sales that carry an amount.** A sale without a price is an unknown, not a sale of nothing; as a zero it would lower the average as if the car went cheap.\n\nThe tests pin both directions, so removing either filter fails: without the date guard the count goes from 1 to 2, without the price guard from 3 to 4.\n\n## The refresh has to clear everything\n\n`flush()` walks a hardcoded `KEYS` list. Add a cached chart and forget to list it, and \"vernieuwen\" keeps serving its old number for an hour without anything looking wrong. One test reads the repository source for every `remember('\u2026')` and requires each key to be in `KEYS`; another fills every key and asserts `flush()` leaves nothing behind.\n\n## The rest\n\nThe profile window (6, 12 or 24 months, anything else falls back to 12) is now checked across seven inputs including a word instead of a number, and the data response is checked to carry all fourteen keys the charts read \u2014 a renamed key currently blanks a chart in silence.\n\n## Deliberately not in here\n\nThe numbers themselves are now pinned for lead time and turnover only. The other eleven metrics, and the demo-data exclusion of R P2-10.10, are still untested. Those need fixture data per metric and are worth their own pass.\n\n## Verified\n\nNew rule R P2-10.25 describes the two counting decisions. Full suite: 2,153 tests, with only the two known `ListPageHeadersTest` cases failing, which fail the same way without this change because those tables are empty in my local database. `pint` green on the added file.\n",
+            "branch": "workbench/test/insights-counts-what-it-says",
+            "title": "Pin what Insights counts"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260925113954-0d4dda"
+}

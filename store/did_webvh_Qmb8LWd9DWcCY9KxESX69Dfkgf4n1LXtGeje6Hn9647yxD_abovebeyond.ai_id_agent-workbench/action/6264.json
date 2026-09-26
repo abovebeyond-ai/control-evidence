@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fc9902d10716f39f27fac320424de34bd3fd3509",
+            "branch": "workbench/refactor/insights-out-of-one-file-v2",
+            "files_sha256": "e782903ca9c9797b61cbc75d222f163bf8f0fc1efdb64891b1d03a2510b4e447",
+            "message": "Insights out of one file: the styling and the charts get a build step"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926020327-0fa15f"
+}

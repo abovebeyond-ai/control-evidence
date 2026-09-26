@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c33b147f1b4209428e3b40ddc6c315a7ac939167",
+            "branch": "workbench/one-jaccard",
+            "files_sha256": "f9b2157f8ea7427b7cb762cddcf1e8d8bb23a074b648f9e081d637a09c8bdc37",
+            "message": "One Jaccard, and the evidence labels from the standard"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260926041223-aecda5"
+}

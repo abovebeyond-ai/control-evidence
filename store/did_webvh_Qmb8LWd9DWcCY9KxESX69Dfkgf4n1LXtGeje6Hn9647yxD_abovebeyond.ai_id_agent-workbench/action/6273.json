@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe first version of the Gentells Standard: the taxonomy and the ontology of youth culture intelligence, with the rules as data, versioned. A client graph and the Gentells graph follow the same shape, so Gentells can place a client's material on its record and answer across both, while each graph stays its owner's. The proposal behind it is the doc \"Gentells Standard: proposal\".\n\n## What is in 0.1.0\n\n- **Taxonomy, nine schemes.** Generation and lifestage are separate axes, as in Maarten's own filter (sector, then generation, then lifestage). Gen Alpha and ZAlpha are added. The lifestages that sat in the generation list are retired and resolve to their new ids, so data tagged before keeps its meaning. Regions are nested under four continents, with Global apart. The drivers and the eleven reading layers from the reading frame of 18 September are in as terms.\n- **Ontology.** Eight classes, fifteen relations and six state machines. Every relation says whether its weight is measured or asserted.\n- **Rules as data.** Every threshold the pipeline runs on, written as it runs on 24 September.\n- **Two graphs.** A client graph may read the Gentells graph through named relations and never the other way round. The validator refuses both.\n- **Exports.** The taxonomy as SKOS and the ontology as OWL, JSON-LD, generated from the source and checked for staleness. Both load as valid RDF.\n\n## Tests\n\n`npm test`: 34 tests. The standard checks itself, the exports must be fresh, and nine tests prove the checks refuse the edits they exist to stop (a reused id, a cycle, a relation to an unknown class, and so on). The twenty name-matching cases were answered by the pipeline's own `concept-match.mjs`, so the rules are held against what runs, not against themselves. Twelve whole graphs carry the verdict the validator must give.\n\nNo CI workflow is in this pull request, because the gateway does not write workflow files. One step running `npm test` on push is worth adding by hand.\n\n## Open\n\nThe decisions for Maarten (birth years, Young Families, Gaming, Retail, the open and licensed line) become 0.1.1. For 0.2: the pipeline reads its vocabulary from here, signals get a lifestage tag, the \"Europe\" alias stops meaning Benelux, and one weighting of reports against sightings.\n",
+            "branch": "workbench/standard-0-1-0-b",
+            "title": "The Gentells Standard 0.1.0: taxonomy, ontology and rules, versioned"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20260926020324-42b27e"
+}

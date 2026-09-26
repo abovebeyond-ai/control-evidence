@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nWhat a model, an import or an editor writes is rarely an id: \"US\", \"UK/Ireland\", \"APAC\", \"gen-teenagers\". Until now only the Gentells pipeline knew how to map those, in its own code. From 0.3.0 the standard carries it, so every engine maps a spelling the same way.\n\n- **`hiddenLabels` on terms.** These are spellings for matching, never shown, as in SKOS `hiddenLabel`. The regions carry the 89 spellings the pipeline mapped: country codes, old ids, \"APAC\", \"Southern Europe\", and \"Central Europe\" to Europe. The lifestages carry \"gen-teenagers\", \"gen-teen\" and \"gen-families\".\n- **`tools/match.mjs` is the rule.**\n    - Lowercase, drop a leading scheme prefix (`region-`, `gen-`, `ls-`), and keep a-z and 0-9.\n    - Look in each term's id, its labels and its hidden labels, and follow a retired term to its replacement.\n    - Nothing else is guessed. The old market tiers and \"East Asia excluded\" match nothing.\n- **The check refuses a spelling that leads to two terms.** Generations and lifestages are checked together, because they are matched together.\n\n## Held against the pipeline\n\nI ran 189 region spellings through the pipeline's `canonicalRegion` and through the standard's matcher. They agree on every one, and those answers are the conformance cases.\n\nOn 42 cohort spellings they agree except on plain labels (\"Kids\", \"Gen Alpha\"). The pipeline did not recognise those; the standard does. The cases take the standard's answer, and the pipeline follows when it switches to this matcher.\n\n## Tests\n\n50 pass, and the release is compatible with v0.1.0, v0.1.1 and v0.2.0. New:\n\n- both sets of spelling cases;\n- an ambiguous spelling is refused;\n- an exclusion is never matched to what it excludes.\n\nAfter merge: tag `v0.3.0`. The pipeline then reads its aliases from here and drops `REGION_ALIAS` and `COHORT_ALIAS`.\n",
+            "branch": "workbench/standard-0-3-0",
+            "title": "0.3.0: spellings are part of the standard"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20260926041737-fe0b3e"
+}

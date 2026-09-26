@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4f6031f8b366b9b271a50731bff4e26e6e475edb",
+            "branch": "workbench/de-archiefrechter-en-de-tellers",
+            "files_sha256": "1739085cd66bfc2d1737be1eb4540b5c94cafb9d55c5d3be9416eccef3338839",
+            "message": "De archiefrechter vergelijkt het blad, niet de tellers van dompdf"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925142949-2ab673"
+}

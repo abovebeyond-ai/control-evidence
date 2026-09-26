@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "07a8a1cd95462c517d9bfc5d32dd8654e1098278",
+            "branch": "workbench/de-leerlingen-niet-in-de-snapshot",
+            "files_sha256": "d721be99145fa423df8b92495d4495f3fba4dff10d1ec0a292b5ec77fc704e09",
+            "message": "Het evaluatiescherm draagt de leerlingen niet meer mee als toestand"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925084810-70acf3"
+}

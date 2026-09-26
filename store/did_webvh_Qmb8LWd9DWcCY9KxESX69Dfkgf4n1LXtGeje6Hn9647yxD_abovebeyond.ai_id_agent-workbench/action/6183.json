@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De twee takken die een periodiek rapport van de oude jaren anders berekenden zijn weg; die rapporten zijn documenten in het archief.\n\n## Wat er gebeurde\n\nStap 4 van het archief (na #163, #168, #171 en de bulk van 24 september): zodra elke afgesloten periode een document is, hoeft het platform de regels van toen niet meer live na te spelen. Voorwaarde nagekeken met het archiefcommando zelf: `naviskore:archive --dry-run` op productie zegt 18.142 gearchiveerd en 3.055 te doen, en die 3.055 zijn precies de gestopte scholen, die de motor sowieso weigert.\n\n## Wat weg is\n\n- **Waarden en punten apart** (S4-2.6): een periodiek rapport van 2021-2022 of 2022-2023 hield ze apart; elk live rapport mengt nu, tenzij alle scores waarden zijn. `ScoringService::isMixedScoringSystem` is \u00e9\u00e9n regel.\n- **De gearchiveerde clusters op een oude periode** (S4-6.1): een periode die v\u00f3\u00f3r 13 december 2023 afliep toonde het oude curriculum; een live rapport toont nooit meer een gearchiveerde cluster. De vlag `terms.includes_archived_clusters` (geschreven op 23 september) valt met een migratie.\n- `LegacyReportSnapshotTest` en de vijftien `legacy-term-report-*`-snapshots: geschreven op 22 september om de overgang van datums naar data te bewijzen, \"zolang de oude code er nog is\". Die is er niet meer.\n\n## Wat blijft, met opzet\n\nHet feit `schoolyears.scoring_system` en `Schoolyear::scoresFollowTheData` (S4-2.1): zo leest het voortgangsrapport een score van 2022 vandaag nog juist, en zo staat het in de gearchiveerde JSON. Een score bewaren zonder de sleutel om ze te lezen is geen bewaren.\n\n## De rechter\n\n`TheOldReportRulesAreGoneTest`: de vlag op de periode bestaat niet meer en het feit op het schooljaar wel; een live rapport van 2022-2023 mengt het gemengd gescoorde niveau zoals elk ander jaar; een periode die op 12 december 2023 eindigt toont de gearchiveerde cluster niet. `DateRulesBecomeDataTest` houdt de backfill van het schooljaar, niet meer die van de periode. De 36 snapshots van de huidige rapporten zijn onaangeroerd. Rule book S4-2.6 en S4-6 herschreven, de bevinding van 23 september aangevuld. Volledige suite op MariaDB.\n",
+            "branch": "workbench/de-oude-regels-weg",
+            "title": "De oude rapportregels zijn weg: het archief is het rapport"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925132337-b24702"
+}

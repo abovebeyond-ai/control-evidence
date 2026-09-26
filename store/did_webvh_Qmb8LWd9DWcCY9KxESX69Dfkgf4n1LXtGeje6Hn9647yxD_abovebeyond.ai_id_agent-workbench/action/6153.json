@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De foto's van leerlingen en personeel staan op schijf en komen \u00e9\u00e9n keer per persoon naar de browser.\n\n## Wat er gebeurde\n\nOp productie staan 3.816 foto's als base64 in `users.image`: 30 MB, gemiddeld 8 KB, de users-tabel is er 43 MB door. Elke `select *` op gebruikers sleept ze mee (de 84 leerlingen van een project zijn 1 MB uit de databank), en de avatar zette elke foto inline als data-URI, zodat de projectpagina van dat project 1,2 MB HTML was en elke Livewire-hertekening een DOM van die grootte moest morphen. Shane: \"dat moet veel effici\u00ebnter met die afbeeldingen.\"\n\n## De wijziging\n\n- **`App\\Support\\Photos`**: een foto is een bestand op de private schijf, `private/photos/<id>.jpg`; `users.photo_at` zegt dat er een is. `naviskore:load-user-photos` schrijft daarheen.\n- **Migratie**: zet de bestaande foto's op schijf tijdens de deploy (seconden), slaat de opgeslagen foutcodes van Smartschool over, en laat de kolom `image` vallen. Geen pagina zit dus zonder gezichten.\n- **`/gebruikers/{id}/foto`** (`UserPhotoController`, `UserPolicy::viewPhoto`): de persoon zelf, het personeel van een school waar de persoon toe behoort, en superbeheerders; 404 zonder foto. Met `Cache-Control: private, max-age=86400`, ETag en Last-Modified, dus de browser haalt een gezicht \u00e9\u00e9n keer per dag en krijgt daarna 304.\n- **`x-icon.user-avatar`** wijst naar die route, `loading=\"lazy\"`, en tekent niets als data-URI meer.\n\nVoor de projectpagina van 84 leerlingen: van 1,2 MB HTML naar de tekst plus 84 kleine verzoeken die na de eerste keer uit de browsercache komen.\n\n## De rechter\n\n`PhotosOnDiskTest`: de avatar wijst naar de route en bevat geen data-URI; de route geeft de bytes als `image/jpeg` met een dag cache en een ETag, en 304 bij `If-None-Match`; alleen de persoon, het personeel van zijn school en een superbeheerder mogen kijken (een leerkracht van een andere school en een medeleerling niet), zonder foto 404; de migratie zet een foto op schijf, slaat een foutcode over en laat de kolom vallen. `LoadUserPhotosTest` aangepast aan de schijf. Volledige suite op MariaDB.\n\n## Voor de deploy\n\nDe migratie schrijft 30 MB onder `storage/app/private/photos/`; die map hoort in de backup (`docs/deploy.md`).\n",
+            "branch": "workbench/de-fotos-op-schijf",
+            "title": "De foto's staan op schijf"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925102336-afe763"
+}

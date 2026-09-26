@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nEvery object the pipeline writes now says which version of the Gentells Standard wrote it. That is the standard's new `standardVersion` (0.2.0): the version under which an object's tags and state were last written.\n\n- **A column `standard_version`** on signals, concepts, patterns, tensions, insights and articles. SQLite adds it without rewriting the table.\n- **Triggers do the stamping, not the writers.** A row is stamped when it is minted, and again when its tags or state change (for a signal: classification; for a concept, a pattern or a trend: a move of status, a merge, a supersede). It happens whatever code writes, including code added later by someone who never saw `standard-stamp.mjs`. A stamp each writer must remember is a stamp that gets forgotten.\n- **The triggers are recreated at every start** with the pinned version, so a deploy that brings a new standard stamps with it from the next write on.\n- **Rows from before the standard keep `NULL`**, which is what they are, until they are re-tagged or move.\n- **The sync to `v0.2.0`.** The standard now also guarantees that every version reads everything every earlier release wrote, checked against its tags in CI, so a stamped row keeps its meaning as the standard evolves.\n\n## Tests\n\n`test/standard-stamp.test.mjs`, 8 cases, through the real paths:\n\n- A signal from `insertSignals`.\n- A concept, a pattern, a tension and a trend through the store.\n- A post from `createArticle`.\n- A pre-standard signal that stays `NULL` on an edit that touches no tag, then is stamped by `classifySignal`.\n- A concept confirmed by `runConceptLifecycle`.\n- A trend superseded by its twin.\n- The triggers exist once per table after a second install.\n\nProved to bite: with the trigger bodies emptied, 6 of the 8 fail. Whole suite: 914 pass, three consecutive runs.\n\nOne earlier run of the whole suite had a single failure that did not come back in the next four runs. I could not tell which test it was.\n",
+            "branch": "workbench/standard-version-stamp",
+            "title": "Every object says which version of the standard wrote it"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260926024554-2e325b"
+}

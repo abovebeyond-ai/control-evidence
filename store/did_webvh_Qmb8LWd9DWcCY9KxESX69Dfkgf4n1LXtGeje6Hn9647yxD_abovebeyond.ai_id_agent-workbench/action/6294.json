@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "30f2f2b8386a91a69e8f4e62bf3bd3e60986b7ec",
+            "branch": "workbench/feat/activity-as-a-tab-in-insights",
+            "files_sha256": "ed889fb7947177a4c1f95eceb4e487cf378d7a9ede600c65daea73aa9fbc733e",
+            "message": "Activity as a tab in Insights, not a second place for numbers"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926022030-ec1afb"
+}

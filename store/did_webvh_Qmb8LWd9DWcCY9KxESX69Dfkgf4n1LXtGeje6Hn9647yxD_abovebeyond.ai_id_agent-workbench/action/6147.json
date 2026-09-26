@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De zoekvensters achter \"Koppelen / Ontkoppelen\" op de projectpagina laden mee met de pagina, in \u00e9\u00e9n antwoord.\n\n## Wat er gebeurde\n\nJelle Diels stuurde twee schermafbeeldingen van dezelfde projectpagina, enkele seconden na elkaar: op de ene staan Eindtermen en Evaluaties rechts, op de andere is de rechterkolom weg en ontbreekt \"Koppelen / Ontkoppelen\" bij Leerlingen. Shane: \"het kwam vroeger ook al voor, soms was refresh de oplossing; het had te maken met het laden van de componenten achter de knoppen.\" Die twee componenten (leerlingen zoeken, eindtermen zoeken) laadden lui: de pagina kwam met twee lege plaatshouders en haalde ze in een tweede ronde op. Het venster van het team laadt eager en heeft dit nooit gedaan.\n\n## De wijziging\n\n`lazy` weg op de twee vensters. Gemeten op productie voor het grootste project (84 leerlingen): het leerlingenvenster kost 35 ms en 17 queries, het eindtermenvenster 97 ms en 15 queries. Dat is niets wat een tweede aanvraag moet sparen, en zonder tweede ronde is er geen moment waarop de pagina half is.\n\nLokaal kon ik het wegvallen van de kolom niet naspelen (acht herlaadbeurten, een venster drie seconden te laat, een venster dat met 500 of 419 faalt, een hertekening tijdens het laden); de fix neemt het mechanisme weg waar het zich voordeed.\n\n## De rechter\n\n`ProjectControllerTest`: de projectpagina komt in \u00e9\u00e9n antwoord zonder `__lazyLoad`, met drie keer \"Koppelen / Ontkoppelen\" (team, leerlingen, eindtermen) en met Eindtermen en Evaluaties erin. Zonder de fix rood. Volledige suite op MariaDB.\n",
+            "branch": "workbench/de-zoekvensters-laden-mee",
+            "title": "De zoekvensters op de projectpagina laden mee met de pagina"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925092528-eafb97"
+}

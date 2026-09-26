@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het herstel na de vergelijking: de prefix van een eindterm wordt de code van haar doel, alleen waar de vergelijking zeker is. Toont eerst; schrijft enkel met `--apply`, en nooit een zin.\n\n## Waarom zo smal\n\nScholen herverwoorden doelen op eigen vraag en splitsen ze op (wiskunde, Frans, Engels). Dat zijn keuzes, geen fouten, en de scores hangen aan die rijen. Een herstel dat zinnen terugzet naar het leerplan zou werk van de school wissen. Wat w\u00e9l zonder oordeel van een mens kan: een code die al in de prefix staat maar met vuil eromheen (\"BK2_02.01.01\u23ceSubdoel 1\"), en een oud nummer (2.5) op een zin die het leerplan of zijn samenhangtabel kent.\n\n## De wijziging\n\n- **`LeerplanHerstel::plan`**: uit de oordelen van de vergelijking alleen *hercoderen* en *oude nummering*, en alleen als de prefix nog niet de code is. Een wijziging draagt id, van, naar, de zin en het aantal scores; nooit een zin om te schrijven.\n- **`naviskore:leerplan:herstel {leerplan} --school= | --cluster=* [--apply]`**: per cluster wat er te herstellen valt en wat blijft staan (herformuleren, uitgesplitst, bullet, onbekend, wat ontbreekt). Per wijziging het aantal scores en, als de eindterm in meer clusters zit, in hoeveel. Zonder `--apply` schrijft het niets; ermee alleen `prefix`, via het model, zodat `updated_at` meegaat.\n- **`PicksClustersForACurriculum`**: de clusterkeuze en het lezen van de eindtermen, gedeeld door vergelijking en herstel zodat beide dezelfde rijen zien. De vergelijking toont nu ook de telling *uitgesplitst*.\n\n## De rechter\n\n`LeerplanHerstelTest` op het echte leerplan Bouw: acht eindtermen, twee wijzigingen. Zonder het oordeelsfilter zouden ook een bullet met een oud nummer en een uitgesplitst stuk zonder code herschreven worden (mutatie: twee extra ids). `RepairingAClusterFromTheCurriculumTest`: zonder vlag verandert niets, met vlag worden twee prefixen codes, de zinnen blijven, de herverwoording blijft, en een tweede run heeft niets meer te doen. Volledige suite op MariaDB.\n\n## Wat volgt\n\nBullets zonder scores archiveren, en wat ontbreekt uit het leerplan aanmaken op vraag van de school; los van dit herstel, want dat zijn andere ingrepen. Op productie eerst zonder `--apply` per school, met de PDF's die `naviskore:leerplan:haal` binnenhaalde.\n",
+            "branch": "workbench/leerplan-herstel",
+            "title": "Het herstel schrijft alleen een code waar de vergelijking zeker is"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926030212-e10b6a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "21a719b1533e1a5c65706b42c530a91aaebb960c",
+            "branch": "workbench/standard-0-2-0",
+            "files_sha256": "dc7b5c369e6f8b84fbd7bbd1c8cdab68aa509e335a66c5902b4322fd9ec09478",
+            "message": "0.2.0: every object says which version wrote it, and every version reads every earlier one"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20260926023045-44f171"
+}

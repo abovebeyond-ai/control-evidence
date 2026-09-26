@@ -1,0 +1,16 @@
+{
+    "action": "50466f150f12a343c3dc790bda426d70",
+    "effect": {
+        "detail": {
+            "base": "7037abca880cc7ac46ef8e0f7c7ba09ad397c5c9",
+            "branch": "workbench/fix/a-delete-breaks-the-chain",
+            "commit": "a3ff62eba3ec96249e3378a11cc9d72031b6735c",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6138,
+    "verdict": "ALLOW"
+}

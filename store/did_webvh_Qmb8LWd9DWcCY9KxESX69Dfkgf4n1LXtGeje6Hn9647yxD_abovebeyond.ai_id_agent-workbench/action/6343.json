@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een leerplandoel dat een school in stukken knipte krijgt in de vergelijking een eigen oordeel, *uitgesplitst*, in plaats van *onbekend* of *herformuleren*.\n\n## Wat er gebeurde\n\nNa #192 zei Shane: \"sommige zaken zijn wel op wens van school herverwoord, of uitgesplitst (zoals wiskunde, en frans en engels)\". In productie staat dat als sub-nummers (`14.1` tot `14.6` bij Frans) of als eigen zinnen onder de code van het doel. De vergelijking noemde het tweede *herformuleren* of *onbekend*, en dan zou een herstel het als fout lezen. Het is een keuze van de school.\n\n## De wijziging\n\n- **`uitgesplitst`**: elk zeggend woord van de eindterm staat in de zin van \u00e9\u00e9n doel, en het doel zegt meer. Onder een bekende code telt dat doel; zonder code moet het stuk bij precies \u00e9\u00e9n doel passen, anders zegt het niets (*onbekend*). Stopwoorden en \"de leerlingen\" tellen niet mee, en er zijn minstens drie woorden nodig.\n- De volgorde van de oordelen zegt nu ook wat het herstel mag: *gelijk*, *hercoderen*, *bullet*, *uitgesplitst*, *herformuleren*, *oude nummering*, *onbekend*. Uitgesplitst en herformuleren zijn keuzes van de school en komen enkel in het verslag, met de leerplanzin ernaast.\n- Een doel dat in stukken gedragen wordt telt niet als ontbrekend.\n\n## De rechter\n\n`LeerplanVergelijkingTest::a_goal_cut_in_pieces_is_split_not_wrong` op het echte leerplan Bouw: een stuk onder zijn code, een stuk zonder code dat bij \u00e9\u00e9n doel past, een stuk dat bij veel doelen past (blijft onbekend), en een tikfout die een herverwoording blijft. Zonder de code: twee van de vier oordelen fout. Het commando ongewijzigd, zijn test groen.\n",
+            "branch": "workbench/uitgesplitst",
+            "title": "Een in stukken geknipt doel heet uitgesplitst, geen fout"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926024559-66bb24"
+}

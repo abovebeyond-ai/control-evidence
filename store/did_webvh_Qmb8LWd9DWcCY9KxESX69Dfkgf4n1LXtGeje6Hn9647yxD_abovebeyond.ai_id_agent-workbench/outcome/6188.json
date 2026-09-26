@@ -1,0 +1,16 @@
+{
+    "action": "ef1cd7a11e0f9b74c475c07cd92d7fa3",
+    "effect": {
+        "detail": {
+            "base": "2cc262bcfbd2ed8d2eeb25f7d4502d92b143daa4",
+            "branch": "workbench/feat/activity-screen-under-inzichten",
+            "commit": "d918c31ded8ad7e3a421699c2d3fcc3e8a29b1af",
+            "files": 17,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6186,
+    "verdict": "ALLOW"
+}

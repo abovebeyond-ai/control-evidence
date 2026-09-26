@@ -1,0 +1,16 @@
+{
+    "action": "8590543fd86af9c79eed6e860eedf7d8",
+    "effect": {
+        "detail": {
+            "base": "2f8d2c025286e18afddee20e0cb94e6072c1340c",
+            "branch": "workbench/generation-and-lifestage",
+            "commit": "8357844c247fb394af6bccac1ebbd2e66ba75bc4",
+            "files": 26,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6361,
+    "verdict": "ALLOW"
+}

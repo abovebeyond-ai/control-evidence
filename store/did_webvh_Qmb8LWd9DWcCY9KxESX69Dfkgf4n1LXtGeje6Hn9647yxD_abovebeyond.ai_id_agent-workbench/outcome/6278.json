@@ -1,0 +1,16 @@
+{
+    "action": "ac05d7c774cdd6fcdb1e7fb2ea6478fb",
+    "effect": {
+        "detail": {
+            "base": "adf66f2ba729e3c78e11b81dd29f0e72e989d369",
+            "branch": "workbench/go-leerplan-lezen",
+            "commit": "311f9265d9e208b0e6a499453ebdafd202cb5f24",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6276,
+    "verdict": "ALLOW"
+}

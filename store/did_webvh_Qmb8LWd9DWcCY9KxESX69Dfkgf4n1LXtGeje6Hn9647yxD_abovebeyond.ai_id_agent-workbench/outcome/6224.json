@@ -1,0 +1,16 @@
+{
+    "action": "2d2d4ccd21f7008012b6243f22c1184e",
+    "effect": {
+        "detail": {
+            "base": "0ed00f586189ce7b253ced89ea962e6558d7463e",
+            "branch": "workbench/groepsbeheerder-op-het-personeelsscherm",
+            "commit": "bc61c36e68a77bf91ee9946e253b6c2e79f3893a",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6222,
+    "verdict": "ALLOW"
+}

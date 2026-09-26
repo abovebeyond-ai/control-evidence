@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9ab0bb632a87a80d591e92a4ab83614fe1f03b81",
+            "branch": "workbench/het-rijksregisternummer-weg",
+            "files_sha256": "cf07194ca004f0ec1cea75eac3bc8998f517e8e02a8042e581043625dc2e80e9",
+            "message": "Het rijksregisternummer verdwijnt uit de databank en serialiseert nergens meer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925091122-718c80"
+}

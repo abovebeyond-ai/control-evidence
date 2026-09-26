@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "082238225402e1fc49e2b189305a1ffd715f68d5",
+            "branch": "workbench/feat/one-measure-sliced-many-ways",
+            "files_sha256": "ce61aeac5bf2df74c051aaf82daede4c48dfc6f1717e612640f91384f66feaab",
+            "message": "One measure sliced many ways: the Activity tab becomes analytics"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926023502-7c6f71"
+}

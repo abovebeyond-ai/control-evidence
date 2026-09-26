@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe standard can now keep evolving without anything written under it changing meaning.\n\n- **Every object records the version it was written under.** A common property `standardVersion` on every class: set when an object is minted, and again when an engine re-tags it or moves its state by a rule. Absent means written before the standard existed.\n- **Every version reads everything every earlier release wrote.** `tools/compat.mjs` loads each earlier release from its git tag and fails on anything that can no longer be read: a term gone without a `replacedBy`, a retired id that comes back live, a class, property, tag, relation or state that disappeared, a rule a record may cite that vanished, or a version that is not newer. Values may change (a label, a threshold); names may not disappear.\n\nIt runs in `npm test`, and CI now checks out the full history (`fetch-depth: 0`) so it sees the tags.\n\n## Tests\n\n46, all passing. New:\n\n- The current version is compatible with v0.1.0 and v0.1.1.\n- Six tests prove the check bites. It refuses a term that disappears, a retired id that comes back live, a vanished rule, a vanished state, and a version that is not newer. It allows a term retired with a replacement.\n- Three graph cases for the stamp: an older version is read as written, a newer one is flagged, and a non-version is refused.\n\nAfter merge: tag `v0.2.0`. The pipeline then stamps every object it mints with it.\n",
+            "branch": "workbench/standard-0-2-0",
+            "title": "0.2.0: every object says which version wrote it, and every version reads every earlier one"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20260926023045-44f171"
+}

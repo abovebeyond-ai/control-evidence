@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8f9c59693c7356e8764b7036869474f1199327e9",
+            "branch": "workbench/feat/activity-over-longer-windows",
+            "files_sha256": "34dd4335015cee0a15bce6350a67a33eb26b1f40c7a536659cddc4f3f7910d50",
+            "message": "Activity over longer windows: 30 days, 90 days, 12 months or everything"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260925142906-08e909"
+}

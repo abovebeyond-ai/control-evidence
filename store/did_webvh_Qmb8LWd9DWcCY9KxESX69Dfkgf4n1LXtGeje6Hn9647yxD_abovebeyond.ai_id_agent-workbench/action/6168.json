@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7719deb8e5c2c300dd07143dbeb984dc11f4942d",
+            "branch": "workbench/test/insights-counts-what-it-says",
+            "files_sha256": "5729216ba40ee3d392a985607fe4aa770b86ba08e46599f446e4a67a0f796db2",
+            "message": "Pin what Insights counts: lead time, turnover and the refresh"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260925113954-0d4dda"
+}

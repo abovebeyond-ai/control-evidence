@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2f8d2c025286e18afddee20e0cb94e6072c1340c",
+            "branch": "workbench/generation-and-lifestage",
+            "files_sha256": "50b782bfcc0468e5a208dc0320091f84131bbeb1909f6c8ebd9e63cec603f189",
+            "message": "Generation and lifestage are two axes"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260926030435-b628d9"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f8799549eaa6ad718f3202ee2923b9a02eb07369",
+            "branch": "workbench/origin-from-region-tree",
+            "files_sha256": "4704bf9dafbbb8df526e804bb7884c2f324c042a30ef022bf4153d9bc4b4a8e2",
+            "message": "A card's origin reads Europe from the region tree"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260926035701-c66915"
+}

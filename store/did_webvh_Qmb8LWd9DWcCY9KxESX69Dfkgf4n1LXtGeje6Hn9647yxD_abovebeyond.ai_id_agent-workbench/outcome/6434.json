@@ -1,0 +1,16 @@
+{
+    "action": "9ec565cc4116c768fae9db6ba44b2345",
+    "effect": {
+        "detail": {
+            "base": "5946a336747db1f5f4f40fb5695512b2a573509b",
+            "branch": "workbench/eindterm-ontdubbelen",
+            "commit": "a4cefc07781104d0f715318729c4ad5e7db595c6",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6432,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dfd655e8993920557003cd98f43723ac7f444d88",
+            "branch": "workbench/feat/everything-on-one-screen",
+            "files_sha256": "4ed9a739ac279bd3d5f673d18338a103719af5427d5c88c338dea0a22728f0f1",
+            "message": "Everything on one screen: four measures, a weekday by hour grid, every garage"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926034908-c51333"
+}

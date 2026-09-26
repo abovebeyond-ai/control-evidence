@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fd6de534d21efd7e97e339537bd58816c54883df",
+            "branch": "workbench/leerplannen-ophalen",
+            "files_sha256": "2471353d644fdbe0372863de195a69e6fbf79a75baf370db3cdbeedade493e06",
+            "message": "De GO!-leerplannen komen naar de private schijf, \u00e9\u00e9n PDF per leerplan, met een index"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926023136-a795d0"
+}

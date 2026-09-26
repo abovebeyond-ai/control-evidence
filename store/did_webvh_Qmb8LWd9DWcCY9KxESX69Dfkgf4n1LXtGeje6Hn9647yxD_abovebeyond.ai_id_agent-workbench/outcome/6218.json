@@ -1,0 +1,16 @@
+{
+    "action": "b58a48a70c0fd89cc75da2df04174a7b",
+    "effect": {
+        "detail": {
+            "base": "ace880fd2ee480e69f39926dbeb6750b180d9dc9",
+            "branch": "workbench/feat/an-event-log-for-what-leaves-no-trace",
+            "commit": "b1d81efe5759c03fb9ed20a8553ff8c545a60756",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6216,
+    "verdict": "ALLOW"
+}

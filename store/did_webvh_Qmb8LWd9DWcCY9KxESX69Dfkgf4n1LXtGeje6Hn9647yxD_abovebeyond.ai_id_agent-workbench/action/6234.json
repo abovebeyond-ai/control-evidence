@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d4e1cc32f2ca5141f1d30dddb18fc000071d77ea",
+            "branch": "workbench/feat/counting-pages-without-counting-people",
+            "files_sha256": "7e3f8cf835b2799d6f6cda7c5bfeac684cc041945f9915414ddc36b8a3790ca4",
+            "message": "Counting pages without counting people"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260925172730-8f9be8"
+}

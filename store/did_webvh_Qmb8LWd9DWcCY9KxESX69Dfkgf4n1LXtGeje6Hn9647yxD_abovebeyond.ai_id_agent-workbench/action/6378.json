@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b12b24e1f8b2d7640788ddb13ba2dc171471d3fe",
+            "branch": "workbench/tests-never-open-production",
+            "files_sha256": "b619da885fef1c8bf711682bd104f6c9dbbcc903e5345e3eff6f5f0c4d87c9d4",
+            "message": "A test never opens the real database"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260926031746-aa46ae"
+}

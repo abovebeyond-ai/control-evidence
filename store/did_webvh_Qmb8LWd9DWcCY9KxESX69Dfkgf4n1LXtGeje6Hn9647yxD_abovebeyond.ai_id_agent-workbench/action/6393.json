@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The graph around a trend becomes its own read. MCP contract 1.6.0.\n\n## Why\n\nOn 26 September one trend's answer through `get_trend` was 90,619 characters, 88,883 of them the graph (222 nodes, 268 edges). That is more than a Claude Code tool result holds, so an agent that only wanted the reading and the evidence lost the whole answer to a file. Every member from Decode up got the graph on every read.\n\n## The change\n\n- `get_trend_graph` (new): the graph alone, behind the same doors as `get_trend` (the day's reads, folded addresses, the archive window). A plan without the graph gets the refusal that names Decode, and the read is written down as `refused:graph`.\n- `get_trend` takes `include_graph` (boolean, default true).\n- **Deprecated:** the graph inside `get_trend`. From 2.0.0 `include_graph` defaults to false. The changelog says so a version ahead, as its rules require.\n- The server's instructions tell agents to pass `include_graph: false` unless they need the graph.\n- The graph's nodes carry source names, so `get_trend_graph` is under the same daily sources brake, and a trend read with and without its graph counts as one trend.\n\n## The contract\n\n`Contract::VERSION` 1.6.0, entry in `docs/mcp-changelog.md`, snapshot updated. The contract test now also pins refusals as part of the contract (that a call is a refusal, not its wording), calls the new tool and parameter, and says plainly when the version is already raised and only the snapshot waits.\n\n## Tests\n\n`TrendGraphTest` (4): the graph left out on request and kept by default; the graph read alone on Decode with its source names; the refusal on Signal with its outcome; one deep read for one trend across both tools. Full suite locally: 315 of 316; the one failure is `BuildStampTest`, which cannot resolve a branch ref from a git worktree. Pint is clean.\n\n2.0.0 (the default flips to false) is a separate pull request, later.\n",
+            "branch": "workbench/trend-graph-tool",
+            "title": "The graph around a trend is its own read (MCP 1.6.0)"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260926033136-59a336"
+}

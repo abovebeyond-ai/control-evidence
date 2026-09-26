@@ -1,0 +1,16 @@
+{
+    "action": "841a7df24344a524ad2b3845f5529c78",
+    "effect": {
+        "detail": {
+            "base": "630dd3cce7bc3eb7b82e617a6a689dae164aa98e",
+            "branch": "workbench/de-webp-avatar",
+            "commit": "51487cd8216d458fbe8a7e502156232ba3222ab3",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6156,
+    "verdict": "ALLOW"
+}

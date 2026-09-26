@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nTwo small pieces of the cleanup after the pipeline started reading the Gentells Standard.\n\n- **One Jaccard.** The overlap measure lived three times, in `concept-match` (names), `concept-fold` (folding duplicate concepts) and `insight-economy` (twins and overlap). It is one module now, `packages/core/jaccard.mjs`, taking Sets or lists. A test fails if a module in `packages/` defines its own again.\n- **Evidence labels from the standard.** The Mix named the four kinds of evidence in its own words. It takes them from the standard now, as the trends and the agent door do. On the Mix screen that means \"Reports by others\" becomes \"From reports\", \"Press and the open web\" becomes \"From press\", and \"Academic work\" becomes \"From research\".\n\n## Tests\n\n938 pass. The conformance cases of the standard (names, twins) run through the new module, which shows its behaviour is unchanged.\n",
+            "branch": "workbench/one-jaccard",
+            "title": "One Jaccard, and the evidence labels from the standard"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260926041223-aecda5"
+}

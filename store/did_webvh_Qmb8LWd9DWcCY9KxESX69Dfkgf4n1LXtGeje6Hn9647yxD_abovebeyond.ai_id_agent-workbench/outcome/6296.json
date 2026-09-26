@@ -1,0 +1,16 @@
+{
+    "action": "e59ac7b41c9541878388b1662753d6e5",
+    "effect": {
+        "detail": {
+            "base": "30f2f2b8386a91a69e8f4e62bf3bd3e60986b7ec",
+            "branch": "workbench/feat/activity-as-a-tab-in-insights",
+            "commit": "13ee8c824ff478d3705ffcf6387c1d5f003d5d6a",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6294,
+    "verdict": "ALLOW"
+}

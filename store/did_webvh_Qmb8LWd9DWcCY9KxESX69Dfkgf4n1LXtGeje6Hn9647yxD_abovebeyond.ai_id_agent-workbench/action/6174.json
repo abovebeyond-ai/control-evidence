@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2cc262bcfbd2ed8d2eeb25f7d4502d92b143daa4",
+            "branch": "workbench/feat/activity-screen",
+            "files_sha256": "286f677c153301c4d12122cafb8dd3a723d0ecbdad28b00aca8b76f67abd61c2",
+            "message": "Activity: a third screen for how much work goes through the platform"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260925131515-e803c4"
+}

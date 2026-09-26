@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "#334 was merged while its CI was still running, and the PHPStan step failed with three errors, so `main` is red now:\n\n- `client?->name ?? ''`: a nullsafe access on the left side of `??` is unnecessary, so it's now `client->name ?? ''`\n- two errors from the closure type in `mapWithKeys`: the grouping is now a plain loop into an array\n\nSame behaviour: clients in alphabetical order, Internal last, asks first within a client.\n\nRun locally: Pint passed, PHPStan 0 errors, tests 584/585 (the one failure is `BuildStampTest`, which only fails in a worktree and passes in CI).\n",
+            "branch": "workbench/workbench-per-client-types",
+            "title": "Workbench per client passes PHPStan"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20260926014552-0407f1"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Naviskore leest een GO!-leerplan uit zijn PDF: de leerplandoelen met hun codes, zoals een school ze anders overtypt.\n\n## Wat er gebeurde\n\nShane, over de vijftien eindtermen die met hun cluster in conflict leken: \"ik denk dat ze wel behoorlijk letterlijk overnemen van de PDFs van GO?\" Nagekeken: ja. De GO!-leerplannen dragen per leerplandoel een code (`BK2_02.01`, subdoel `BK2_02.01.01`; `BV2_` voor de basisvorming, `WD2_` voor cesuurdoelen), de zin, het beheersingsniveau, de kennis in bullets en de herkomst (het nummer in het curriculumdossier, het minimumdoel of het cesuurdoel). Dat zijn precies de prefixen in Naviskore: het leerplan Bouw, tweede graad arbeidsmarkt, telt 16 doelen en 62 subdoelen, en de cluster \"Bouw\" die een school ervan overtypte telt exact 78 eindtermen. De oude clusters met \"1.1\" en \"2.1\" zijn een vorige nummering. Overtypen laat sporen na: prefixen met een regeleinde en \"Subdoel 1\" erin, kennisbullets die als subdoel bewaard staan. GO! werkte aan een API, maar die is er nog niet; de PDF is wat er is.\n\n## De wijziging\n\n- **`App\\Support\\Curriculum\\GoLeerplan`**: leest de tekst van `pdftotext -layout` (dezelfde weg als Chrome voor het blad: een extern programma, geen PDF-bibliotheek) en geeft de kaft (leerplannummer, versiedatum, graad, finaliteit, studierichting uit de voettekst), de doelen met subdoelen, en de tabel \"Samenhang\" met de beroepskwalificatie. Drie lay-outs: doelen naar een beroepskwalificatie, cesuurdoelen onder een thema (zonder eigen zin), basisvorming met het minimumdoel als herkomst. Een zin over twee regels is \u00e9\u00e9n zin, een bullet die omslaat \u00e9\u00e9n bullet, een voetnootnummer na de punt hoort niet bij de zin.\n- **`naviskore:leerplan:lees {pdf} {--json=}`**: toont de doelen en schrijft de structuur weg voor wat erop volgt: een import die de eindtermen niet meer laat overtypen, en een vergelijking met de clusters die er al zijn.\n\n## De rechter\n\n`GoLeerplanTest` op de tekst van drie echte leerplannen (Bouw volledig, uittreksels van Bouwtechnieken en van de basisvorming): 16 doelen en 62 subdoelen en 31 rijen samenhang voor Bouw, de kaft, de zin en de kennis van BK2_02.01, de herkomst, het niveau, de voetnoot die wegvalt, de cesuurdoelen onder hun thema met het cesuurdoel als herkomst, en het minimumdoel op de basisvorming. Het commando gedraaid op de drie PDF's. Volledige suite op MariaDB.\n\n## Wat dit nog niet doet\n\nNiets importeren. Dat is de volgende stap, en die vraagt eerst de vergelijking: wat een school al heeft tegenover wat het leerplan zegt.\n",
+            "branch": "workbench/go-leerplan-lezen",
+            "title": "Een GO!-leerplan lezen uit zijn PDF"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926020421-01767e"
+}

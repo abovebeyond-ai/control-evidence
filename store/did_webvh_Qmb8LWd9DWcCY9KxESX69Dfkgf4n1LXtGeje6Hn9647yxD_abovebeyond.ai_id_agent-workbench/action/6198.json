@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "aad659c68feb85249553c4416de27745621f4492",
+            "branch": "workbench/fix/a-silent-partner-is-not-a-broken-button",
+            "files_sha256": "d9f7bc5baaf4dcb926a20e149667bb436e4575e055958b8ba129608bab93e3c8",
+            "message": "A silent RealGarant is a failed call, not a broken button"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260925141339-bd0ed5"
+}

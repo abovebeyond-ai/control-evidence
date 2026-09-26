@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe site follows the pipeline's split of generation and lifestage (gentells-pipeline #204), as the Gentells Standard and Maarten's filter have them: sector, then generation, then lifestage.\n\n- **The taxonomy knows the lifestages.** It adds `lifestages()`, `lifestageLabel()` and `lifestagesWithContent()`. The cold-start snapshot is regenerated from the pipeline. It had also missed topics 15 to 17 since 23 August, which this regeneration fixes too.\n- **Trends and posts filter on the lifestage** as the third axis. They only offer lifestages that have something behind them, and the canonical URL carries the axis. The posts page calls the cohort row \"Generation\" now.\n- **Cards fall back to the lifestage.** A card without a generation shows its lifestage, so a trend about tweens still says \"Tweens\". Trend detail shows both.\n- **Old links still work.** An old link such as `?generation=gen-teens` is sent on to `?lifestage=ls-teens` with a 301, keeping the rest of the query, instead of landing on an empty page. A real generation (`gen-genz`, `gen-alpha`) and an unknown one are left alone.\n- **The API and the MCP carry `lifestage_tags`** on trends and posts. This is MCP contract 1.5.0, additive, with an entry in `docs/mcp-changelog.md`. The server's instructions name both lists, and a test fails when they miss a term.\n\n## Order\n\nSafe to merge before or after the pipeline change:\n\n- **Before the pipeline deploys:** the live taxonomy has no lifestages yet, so the new rows stay empty and nothing redirects.\n- **After:** both axes appear.\n\n## Tests\n\nAll 312 pass, with PHPUnit run directly; `php artisan test` in this local environment printed its results as warnings. Pint, the Tailwind check and ESLint pass. The new `CohortAxesTest` covers:\n\n- the lifestage filter and its facets;\n- a card's fallback to the lifestage;\n- the 301 for old links, keeping the rest of the query;\n- that real and unknown generations are not moved;\n- the lifestage chips on posts;\n- the MCP instructions naming every term.\n\n`LifestageAxisTest` now uses the standard's `ls-*` ids.\n",
+            "branch": "workbench/generation-and-lifestage",
+            "title": "Generation and lifestage, two axes on the site too"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260926031037-cda927"
+}

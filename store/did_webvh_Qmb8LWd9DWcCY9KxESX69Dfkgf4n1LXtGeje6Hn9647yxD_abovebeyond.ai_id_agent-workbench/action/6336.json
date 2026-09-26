@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abdf3c0ec1efba532182fb46b9aa3468bc6c741b",
+            "branch": "workbench/standard-version-stamp",
+            "files_sha256": "f278394b430567f07400ffde8cb7883ae4345b724175833d09a1a745af4bb120",
+            "message": "Every object says which version of the standard wrote it"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260926024554-2e325b"
+}

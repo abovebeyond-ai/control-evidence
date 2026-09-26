@@ -1,0 +1,16 @@
+{
+    "action": "8f504a80c63de7fc1d8e9dd07ced6732",
+    "effect": {
+        "detail": {
+            "base": "8accea0f0a625ee0ff748ff5c4607ca1dc084508",
+            "branch": "workbench/schemadrift",
+            "commit": "cbe90d5b1fc492e02054ae82d60522f2e1fb2441",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6162,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0e7e588ea9dd509432544259c05578bc1c3f097d",
+            "branch": "workbench/mcp-contract-version",
+            "files_sha256": "9562a330e126f353abc5d2d072ebc92e259aeecad159d2bbcf1371d7d3037698",
+            "message": "The MCP contract has a version (1.4.1), not_in_plan is always an object, and a read says how it ended"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260926024646-52107c"
+}

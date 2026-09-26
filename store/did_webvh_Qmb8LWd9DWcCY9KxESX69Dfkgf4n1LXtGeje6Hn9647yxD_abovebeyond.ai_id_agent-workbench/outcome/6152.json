@@ -1,0 +1,16 @@
+{
+    "action": "4b529b59196b11f2955fae27a58df511",
+    "effect": {
+        "detail": {
+            "base": "4220f09a6220154029174fcc6da1f32508e7ce4c",
+            "branch": "workbench/de-fotos-op-schijf",
+            "commit": "e119cce1175bd8d988e33433559c999684a99b41",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6150,
+    "verdict": "ALLOW"
+}

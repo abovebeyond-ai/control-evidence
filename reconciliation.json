@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-09-25T07:34:23+00:00",
+    "computed_at": "2026-09-26T07:34:20+00:00",
     "window": {
-        "since": "2026-09-18T07:33:02+00:00",
+        "since": "2026-09-19T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -74,8 +74,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 166,
-                "gateway": 166
+                "github": 178,
+                "gateway": 178
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 27,
-                "gateway": 27
+                "github": 31,
+                "gateway": 31
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 9,
-                "gateway": 9
+                "github": 12,
+                "gateway": 12
             }
         },
         "Trendwolves/glk-transferor": {
@@ -135,8 +135,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "abovebeyond-ai/portal": {
@@ -145,8 +145,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 2,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -196,8 +196,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 2,
+                "gateway": 2
             }
         },
         "stocklistdealer-eu/platform": {
@@ -206,8 +206,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 169,
-                "gateway": 169
+                "github": 162,
+                "gateway": 162
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -287,6 +287,17 @@
                 "gateway": 4
             }
         },
+        "Trendwolves/gentells-standard": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 5,
+                "gateway": 5
+            }
+        },
         "Trendwolves/gentells-studio": {
             "dispatches": {
                 "github": 0,
@@ -305,8 +316,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 9,
-                "gateway": 9
+                "github": 7,
+                "gateway": 7
             }
         },
         "abovebeyond-ai/control-verify-action": {
@@ -327,8 +338,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 5,
-                "gateway": 5
+                "github": 4,
+                "gateway": 4
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -504,8 +515,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 0,
+                "gateway": 0
             }
         },
         "portal:abovebeyond": {

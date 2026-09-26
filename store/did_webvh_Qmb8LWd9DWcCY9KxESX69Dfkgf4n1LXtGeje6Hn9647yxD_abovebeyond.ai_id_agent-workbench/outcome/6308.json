@@ -1,0 +1,16 @@
+{
+    "action": "84ec8cb8288a6cc413596734fb6a8e0d",
+    "effect": {
+        "detail": {
+            "base": "fd6de534d21efd7e97e339537bd58816c54883df",
+            "branch": "workbench/leerplan-vergelijken",
+            "commit": "42069b5802e615266841bfc43a7dfab11896963e",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6306,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "89ba4efcacb74c8cacecd2ef3f8f4a1a7e66aa24",
+            "branch": "workbench/fix/the-theme-overrules-every-spacing-class",
+            "files_sha256": "52444704d090607e95674a87d8262fd98ab36ae63e76d626f9f05b218d9eefa9",
+            "message": "The theme overrules every spacing class Tailwind shares a name with"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926032124-87b2ab"
+}

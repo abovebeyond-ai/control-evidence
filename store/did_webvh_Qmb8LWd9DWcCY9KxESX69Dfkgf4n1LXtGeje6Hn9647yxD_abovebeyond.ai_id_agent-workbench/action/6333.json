@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een cluster naast het GO!-leerplan leggen: per eindterm wat een herstel zou doen, zonder iets te schrijven.\n\n## Wat er gebeurde\n\nNa #191 (de lezer van het leerplan) vroeg Shane: \"kunnen we met behulp hiervan fiksen?\" Ja, maar eerst zien. Wat scholen overtypen laat sporen na: prefixen met een regeleinde en \"Subdoel 1\" erin, kennisbullets bewaard als eindterm, oude clusters met de nummering 1.1 en 2.1 van een vorig leerplan, tikfouten in zinnen. Een herstel dat schrijft zonder eerst te tonen wat het doet, is precies hoe drift ontstaat.\n\n## De wijziging\n\n- **`LeerplanVergelijking`**: houdt de eindtermen van een cluster tegen het leerplan en velt per eindterm \u00e9\u00e9n van zes oordelen, van zeker naar onzeker: *gelijk* (code en zin als in het leerplan), *hercoderen* (de code staat in de prefix met vuil eromheen), *herformuleren* (code bekend, zin anders), *bullet* (de zin is een kennisbullet van een doel), *oude nummering* (geen code, maar de zin is een doel of een rij van de samenhangtabel, dus de code is bekend), *onbekend*. Plus wat het leerplan heeft en de cluster niet. Zinnen worden vergeleken zonder hoofdletters, spaties, de slotpunt en typografische aanhalingstekens.\n- **`naviskore:leerplan:vergelijk {leerplan} --school= | --cluster=`**: leest de PDF (of de tekst ervan, wat de tests doen), toont per cluster de aantallen en de eindtermen die niet gelijk zijn, met hun scores erbij zodat je het gewicht van een ingreep ziet; `--json` schrijft alles weg. Schrijft niets.\n\n## De rechter\n\n`LeerplanVergelijkingTest` op het echte leerplan Bouw: elk van de zes oordelen uit wat een school typt, de code die de samenhangtabel aan een oude zin geeft, de bullet die bij zijn subdoel hoort, de voetnoot en de slotpunt die geen verschil zijn, en de telling van wat ontbreekt. `ComparingAClusterWithTheCurriculumTest`: het commando meldt per eindterm en laat de rijen ongemoeid. Volledige suite op MariaDB.\n\n## Wat volgt\n\nHet herstel als commando met `--dry-run`, op de oordelen hercoderen, herformuleren en oude nummering (de rij blijft, de scores blijven eraan hangen); bullets archiveren als er geen scores op staan; wat ontbreekt melden, niet aanmaken.\n",
+            "branch": "workbench/leerplan-vergelijken",
+            "title": "Een cluster naast het GO!-leerplan: per eindterm wat een herstel zou doen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926024026-7d98e2"
+}

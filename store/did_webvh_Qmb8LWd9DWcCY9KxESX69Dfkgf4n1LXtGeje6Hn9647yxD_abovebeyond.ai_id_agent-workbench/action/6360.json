@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c31bcf2cb5b1e39a3e803bfdff079a18c618e4ee",
+            "branch": "workbench/home-wagens-services",
+            "files_sha256": "051cc22815d62adbe14b95be18904752557cc9788665eb4316768d4a27705a5f",
+            "message": "Home, Wagens en Services in de nieuwe stijl"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260926030345-7ced12"
+}

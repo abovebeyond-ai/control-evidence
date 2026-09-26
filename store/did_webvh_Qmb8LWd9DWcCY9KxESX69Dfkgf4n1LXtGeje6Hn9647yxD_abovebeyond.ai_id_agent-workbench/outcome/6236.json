@@ -1,0 +1,16 @@
+{
+    "action": "cbc640c9f1ac014a17473c9a3d85bb76",
+    "effect": {
+        "detail": {
+            "base": "d4e1cc32f2ca5141f1d30dddb18fc000071d77ea",
+            "branch": "workbench/feat/counting-pages-without-counting-people",
+            "commit": "3f38706301b32eaf1c2fe6e57284e51ec725d969",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6234,
+    "verdict": "ALLOW"
+}

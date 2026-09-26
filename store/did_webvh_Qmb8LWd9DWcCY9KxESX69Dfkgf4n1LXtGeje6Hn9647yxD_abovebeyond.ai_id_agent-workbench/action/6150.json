@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4220f09a6220154029174fcc6da1f32508e7ce4c",
+            "branch": "workbench/de-fotos-op-schijf",
+            "files_sha256": "03a0c35cd9cb80185a367773c422588a8f963608473e551a7d5173e0fdd13e81",
+            "message": "De foto's staan op schijf en komen \u00e9\u00e9n keer per persoon naar de browser"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925102336-afe763"
+}

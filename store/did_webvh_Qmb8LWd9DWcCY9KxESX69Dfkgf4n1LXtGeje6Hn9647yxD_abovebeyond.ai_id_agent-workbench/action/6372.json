@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d5be5e2a56b362deeb60ba0b741eeaf2354682a5",
+            "branch": "workbench/generation-and-lifestage",
+            "files_sha256": "188e52a71e2f253b87af77e70a897e57d7a35713d521fe814a7652f247f0bc0b",
+            "message": "Generation and lifestage, two axes on the site too"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260926031037-cda927"
+}

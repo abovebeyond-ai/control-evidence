@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7037abca880cc7ac46ef8e0f7c7ba09ad397c5c9",
+            "branch": "workbench/fix/a-delete-breaks-the-chain",
+            "files_sha256": "6f9eb6e384afe391accf1dccd817873a882cf9ab205d848ac94997d7737b2633",
+            "message": "A delete breaks the chain: compare with the last delivery, not the last of the same type"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260925092509-29639d"
+}

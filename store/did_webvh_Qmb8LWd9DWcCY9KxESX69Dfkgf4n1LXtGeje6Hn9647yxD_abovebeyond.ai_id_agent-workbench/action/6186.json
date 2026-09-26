@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2cc262bcfbd2ed8d2eeb25f7d4502d92b143daa4",
+            "branch": "workbench/feat/activity-screen-under-inzichten",
+            "files_sha256": "ce4c200a5331186bbcfdae691cfe0ceb3f1c48c7c5c1725fb8b3d647b1c3206e",
+            "message": "Activity: a third screen for how much work goes through the platform"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260925132750-79fea0"
+}

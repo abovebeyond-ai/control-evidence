@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het evaluatiescherm draagt de leerlingen niet meer mee als toestand van de component.\n\n## Wat er gebeurde\n\nJelle Diels (athena Heule): een leerkracht maakt een project en evaluaties aan, en zodra ze bij een evaluatie een maximum ingeeft krijgt ze een foutmelding. In het log: `Livewire request payload is too large (1205KB). Maximum allowed size is 1024KB`, 39 keer sinds gisteravond, drie gebruikers. Het project (2de graad thema 1: games) telt 84 leerlingen. `Edit` hield `$students` als publieke eigenschap, een gewone Collection van leerlingmodellen, en Livewire schrijft die bij elke aanvraag volledig in de snapshot: alle kolommen, de foto van 12 KB per leerling en het rijksregisternummer. Op productie is dat 1,17 MB per toetsaanslag. Het rijksregisternummer van elke leerling stond zo ook in de HTML van de pagina.\n\n## De wijziging\n\n`$students` is een berekende eigenschap (`#[Computed]`), per aanvraag gelezen uit de evaluatie of het project, en `render()` geeft ze aan de view door; de view verandert niet. De snapshot draagt nog de evaluatie (als verwijzing), de scores en de maxima. Geen limiet verhoogd: een groter plafond had het lek gelaten.\n\n## De rechter\n\n`EvaluationScoresEditTest`: de leerling staat op het scherm, maar zijn rijksregisternummer en zijn foto bereiken de browser niet en `students` staat niet in de snapshot; een maximum dat ingetikt wordt landt nog in de databank. Volledige suite op MariaDB.\n",
+            "branch": "workbench/de-leerlingen-niet-in-de-snapshot",
+            "title": "Het evaluatiescherm draagt de leerlingen niet meer mee als toestand"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925084810-70acf3"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "5e6474e7ad66fd487a292f876c794f77",
+    "effect": {
+        "detail": {
+            "base": "fd6de534d21efd7e97e339537bd58816c54883df",
+            "branch": "workbench/leerplannen-ophalen",
+            "commit": "ff4c422f37e5409b5836fc4a6d05186551c2ad94",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6318,
+    "verdict": "ALLOW"
+}

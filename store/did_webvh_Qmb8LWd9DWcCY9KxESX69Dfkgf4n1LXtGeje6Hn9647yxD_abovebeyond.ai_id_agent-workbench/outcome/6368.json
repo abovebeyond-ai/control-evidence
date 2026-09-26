@@ -1,0 +1,16 @@
+{
+    "action": "9660eec3130777f86f385784b94a9af5",
+    "effect": {
+        "detail": {
+            "base": "c31bcf2cb5b1e39a3e803bfdff079a18c618e4ee",
+            "branch": "workbench/home-wagens-services",
+            "commit": "84fe320caf05b74bc9df3395f8c9f4fc9a61c7ff",
+            "files": 58,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6360,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "09e8fdb7174658b8cc1c430f225c3299",
+    "effect": {
+        "detail": {
+            "base": "dfd655e8993920557003cd98f43723ac7f444d88",
+            "branch": "workbench/feat/everything-on-one-screen",
+            "commit": "48c71d0fe331361e8f29186a733e96c5f09b46c3",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6402,
+    "verdict": "ALLOW"
+}

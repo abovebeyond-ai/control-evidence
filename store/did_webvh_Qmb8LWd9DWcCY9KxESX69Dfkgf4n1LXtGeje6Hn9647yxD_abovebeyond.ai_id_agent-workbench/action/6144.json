@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "908dbf4736df6502e7eefd9dab3a3b08dbfb26b3",
+            "branch": "workbench/de-zoekvensters-laden-mee",
+            "files_sha256": "b2965294670f268a207a3c583f60797a04777daba7a65165309aec718fc4c9ca",
+            "message": "De zoekvensters op de projectpagina laden mee met de pagina"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925092528-eafb97"
+}

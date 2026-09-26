@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Wat een rapport over \u00e9\u00e9n gemiddelde zegt, staat in \u00e9\u00e9n object: `Reading`.\n\n## Wat er gebeurde\n\nDe volgende slice van de opkuis van `ReportService`, na de kleurband van #172. Dezelfde zes regels stonden vijf keer: op een eindterm voor het geheel, op een eindterm per evaluatietype, en op een cluster per evaluatietype. Elke plek besliste zelf of de schaal de waardeschaal is (de regel van S4-2.1, in drie spellingen: `=== true`, de ruwe waarde, een aparte variabele) en vroeg de rechter per medium opnieuw om dezelfde band.\n\n## De wijziging\n\n- **`Schoolyear::scoredWithValues(?bool $allScoresAreValues, bool $isValueBased)`**: de regel van S4-2.1 op \u00e9\u00e9n plek, op het schooljaar waar ze bij hoort.\n- **`App\\Support\\Reporting\\Reading`**: gemiddelde, alles-waarden, aanwezigheid, de schaal en de band van de rechter, met `colorPrint()`, `colorWeb()`, `colorName()` en `showsPercentage()`. De rechter blijft `ScoringService::bandFor`; het object draagt alleen zijn antwoord.\n- De vijf plekken in `ReportService` bouwen \u00e9\u00e9n `Reading` en lezen de sleutels eruit; de sleutels zelf (`examAverageColorPrint`, `showTestPercentageOnCluster`, `averageColorName`, ...) zijn ongewijzigd.\n\n## De rechter\n\n`ReadingTest`: de schaal volgt het schooljaar in beide regimes (met \"onbekend is niet alles waarden\"); een lezing draagt de band van de rechter in elk medium, waarden geven de waardeschaal en geen percentage, onder 70 procent aanwezig grijs, en zonder gemiddelde geen band en lege kleuren. De 36 snapshots van alle rapporten zijn de rechter voor de gelijkheid: nul gewijzigd. Volledige suite op MariaDB.\n",
+            "branch": "workbench/de-presentatie-per-evaluatietype",
+            "title": "Reading: wat een rapport over \u00e9\u00e9n gemiddelde zegt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260925140957-ce302f"
+}

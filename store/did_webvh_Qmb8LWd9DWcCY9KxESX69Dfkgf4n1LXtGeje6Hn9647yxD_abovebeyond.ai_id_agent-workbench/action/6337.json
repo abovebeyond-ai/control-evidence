@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "63721ee6603a81e03c41d6669fd23af133919a94",
+            "branch": "workbench/uitgesplitst",
+            "files_sha256": "da094e4a06b4980ec7a88526e30f06f5f281da6fafb712209862d0963c541538",
+            "message": "Een in stukken geknipt doel heet uitgesplitst, geen fout"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926024559-66bb24"
+}
