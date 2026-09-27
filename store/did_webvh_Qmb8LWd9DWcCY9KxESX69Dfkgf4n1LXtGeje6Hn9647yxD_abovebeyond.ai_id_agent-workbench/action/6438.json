@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1bf509b64c9fa3d85c8e9aa4077752ef77592d3a",
+            "branch": "workbench/feat/a-price-has-a-history",
+            "files_sha256": "0d76af65fc85dee990d4a0dcd61e0eb325b04cafddc9e39bb4d0e7606576221d",
+            "message": "A price has a history"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926080520-49bce9"
+}

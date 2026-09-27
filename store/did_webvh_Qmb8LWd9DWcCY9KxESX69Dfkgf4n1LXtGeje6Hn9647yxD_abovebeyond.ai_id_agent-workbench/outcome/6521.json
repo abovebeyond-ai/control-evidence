@@ -1,0 +1,16 @@
+{
+    "action": "3bd188c39da0e89edfd7482b01e8326d",
+    "effect": {
+        "detail": {
+            "base": "58d33a9f8c89c5631d627cfc8c2812f1d87cb514",
+            "branch": "workbench/remove-what-nothing-uses-e",
+            "commit": "684cfeec2324da77ac36f61c14e5ecc6071d4cc8",
+            "files": 61,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6519,
+    "verdict": "ALLOW"
+}

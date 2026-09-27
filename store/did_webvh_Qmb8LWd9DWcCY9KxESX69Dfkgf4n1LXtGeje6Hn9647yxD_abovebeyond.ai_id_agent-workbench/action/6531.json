@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "58d33a9f8c89c5631d627cfc8c2812f1d87cb514",
+            "branch": "workbench/scout-stores-proposals",
+            "files_sha256": "aafe0374266fc6590d0d286755d0b804c88955698577da7fbb4e6f4559e68351",
+            "message": "The scout can store what it finds"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260927064031-e4c9fc"
+}

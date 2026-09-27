@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nEverything removed here is used by nothing. I checked each item with `git grep` over app, resources, routes, config, tests and bin.\n\n- **Two collage components** nobody includes (`collage`, `collage-rule`), and the `.cutout` rules only they used.\n- **Four CSS classes** no view, script or component uses: `.btn-ink`, `.btn-coral`, `.btn-lg`, `.stretch-over`.\n- **Five images (268 KB)** nothing references:\n    - the green logo and wordmark, and the light wordmark;\n    - the tall hero JPGs. The hero serves the tall versions only as AVIF and WebP; its JPG fallback is the desktop image.\n- **The Inter font**, built through `bunny('Inter')` on every deploy and linked nowhere. The design uses Archivo, and `IconsTest` already records that Inter never reached a visitor.\n- **Methods nothing calls:**\n    - `Projection::reconcile()`, since the command calls each section on its own;\n    - `TrendCard::featured()`;\n    - `PipelineClient::reachable()`, whose docblock said \"used by the health endpoint\", but no health endpoint calls it; only one test assertion did;\n    - `Plan::purchasable()` and `Plan::priceEur()`;\n    - `Taxonomy::topics()`, `regionLabel()` and `elementLabel()`, with their unused branches in `labels()`.\n- **View data no template reads.** This includes `related` on the trend page, a query that ran on every trend view for three cards nothing showed. It also covers `featured` on the homepage, and the three facet totals and `active` on `/trends`.\n- **Dead props:** `featured` on `trend-card` (no caller passes it), `tone` on `collage-band` (no caller passes it), and `$noNav` in the site layout, left from the removed mint-panel homepage.\n- **Unused variables and tests:** `$locked` in the REST post endpoint, and the skeleton's `tests/Unit/ExampleTest.php` (`assertTrue(true)`).\n\nAbout 140 lines, 5 images and one font build.\n\n## Checked\n\n- All 316 tests pass. The one assertion on `reachable()` is gone with it; the timeout it guards is still asserted.\n- Pint, the Tailwind check, ESLint and the build pass.\n\n## Deliberately left\n\n- **`concurrently`** is unused, but removing it made npm rewrite 5,000 lines of lockfile.\n- **The pre-launch layer** stays until launch.\n- **Still to come:** the duplicates, and stale docs and comments, in their own pull requests.\n",
+            "branch": "workbench/remove-what-nothing-uses",
+            "title": "Remove what nothing uses"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260926201935-734f7d"
+}

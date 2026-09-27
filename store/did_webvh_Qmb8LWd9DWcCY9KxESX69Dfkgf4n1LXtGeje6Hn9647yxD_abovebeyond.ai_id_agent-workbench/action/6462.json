@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e7a3e9fc05d93ec7c39e54f73ae6ad20b48c1852",
+            "branch": "workbench/paper-facts-from-standard",
+            "files_sha256": "fd3e09af8b90ccd108d9aee4bd4378cc82579bf5b55fe6b963efbcee5e1be922",
+            "message": "The paper takes its thresholds from the standard"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260926193931-574ca0"
+}

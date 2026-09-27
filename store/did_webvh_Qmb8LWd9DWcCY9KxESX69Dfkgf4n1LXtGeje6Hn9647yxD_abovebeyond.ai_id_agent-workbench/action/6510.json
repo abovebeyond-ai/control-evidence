@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "647b18767962ee689db7a24ebfde5a6df197380c",
+            "branch": "workbench/vier-niveaus-2",
+            "files_sha256": "70f8affb4d9288141b0f2253f6c0b9d6d67d79afaace76d059789f51b87a5da1",
+            "message": "Een GO!-code heeft twee tot vier segmenten"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260926203203-0c05d9"
+}

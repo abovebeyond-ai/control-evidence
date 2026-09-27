@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nEverything removed here is used by nothing. I checked each item with `git grep` before deleting it: no import, no route, no link, no reference from the e2e specs.\n\n- **Dead code:**\n    - Seven components nothing imports: `ConceptGraph`, `SignalFeed`, `PatternLifecycle`, `PipelineStatus`, `SourceLandscape`, `TopicGrid`, `StatRow`.\n    - The orphaned `pages/Signals.jsx`, which the router replaced with `Buffer` for `/signals`.\n- **Unused files:** `public/signal-graph.json` (12.4 MB; `signal3d.html` loads `/api/pipeline/graph-data` instead), and `vite.svg`, `react.svg` and `trendwolves-icon.svg`.\n- **Unused hooks in `useData.js`:**\n    - The article hooks, copied from the Studio before it became its own repo.\n    - `useOverviewLite`, with its query key and its mock.\n    - `useConceptsList`.\n    - `useSignal`, which sent a raw GROQ string the server would have answered with the wrong data.\n- **Small leftovers:**\n    - Unused imports in `Buffer`, `PipelineFlow`, `Pipeline` and `Reports`.\n    - The unused `TOPICS`, `TOPIC_LABEL` and `GENERATION_LABEL` in `taxonomy.js`.\n    - The default export of `Skeleton`.\n- **Dependencies:** `d3-scale` (never imported) and `d3-force` (only the dead `ConceptGraph` used it).\n- **Docs:**\n    - The README's Deploying section said the build still happened through `deploy.sh` in `signal-observatory`. It now describes the auto-deploy.\n    - Two stale comments are fixed.\n\nAbout 2,300 lines and 12.4 MB.\n\n## Checked\n\n- `npm run build` passes.\n- All 21 e2e tests pass.\n- The lint ratchet drops from 49 errors to 42, and its ceiling is lowered to match (`bin/lint-ratchet.mjs --write`).\n\n## Not in here\n\nThese need a decision rather than a deletion:\n- the `.pop-card` class, which BRAND.md prescribes;\n- the unlinked `/chat` route;\n- the hardcoded ISO map in `GeoHeatMap`;\n- the `/sanity/*` endpoint names.\n\nThe copied helpers (the region map, `TimelineChart`, `PHASE_META`) come in a separate pull request.\n",
+            "branch": "workbench/remove-what-nothing-uses",
+            "title": "Remove what nothing uses"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260926201638-b9b31f"
+}

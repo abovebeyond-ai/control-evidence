@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb2b258e3f376c30a72075b79ce4c7d66ef2ca79",
+            "branch": "workbench/prices-in-one-place",
+            "files_sha256": "15b77c2d6aa8f6e7d72ae0189424aca268634448766b18ecac4198f35061f63d",
+            "message": "A price lives in one place"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260926201339-e23f9d"
+}

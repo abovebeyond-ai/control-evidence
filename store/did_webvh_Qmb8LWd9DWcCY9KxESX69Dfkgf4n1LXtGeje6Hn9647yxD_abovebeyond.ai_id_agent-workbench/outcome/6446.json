@@ -1,0 +1,16 @@
+{
+    "action": "fbc0b1b3a65eaa98b0d0f58ca254d705",
+    "effect": {
+        "detail": {
+            "base": "57d2c9054396f5f4f8205de7f9336c29340ce865",
+            "branch": "workbench/spellings-from-standard",
+            "commit": "75205de9ddc51404084db680e9ce0e9d415143e9",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6444,
+    "verdict": "ALLOW"
+}

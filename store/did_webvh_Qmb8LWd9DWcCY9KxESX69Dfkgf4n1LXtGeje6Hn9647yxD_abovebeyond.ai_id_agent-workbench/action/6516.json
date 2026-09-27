@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "58d33a9f8c89c5631d627cfc8c2812f1d87cb514",
+            "branch": "workbench/remove-what-nothing-uses-b",
+            "files_sha256": "56a2f57d180775072476af0a383372f177380c35c4209f57880ef4382dae97db",
+            "message": "Remove what nothing uses"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260926212509-af7eac"
+}

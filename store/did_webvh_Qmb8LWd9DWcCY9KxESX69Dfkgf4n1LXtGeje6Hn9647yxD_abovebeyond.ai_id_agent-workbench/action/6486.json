@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a3eeddd2db8a502d238e8e00fb2af01c138b0e75",
+            "branch": "workbench/fix/the-groove-has-to-fill-the-row",
+            "files_sha256": "8536bfc51d82cd9aec94ce1665b09669436bbdc8ae87498a83c7cb9762fe0eb3",
+            "message": "Let the groove fill its row, and name the tabs after their question"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926201638-c06fb7"
+}

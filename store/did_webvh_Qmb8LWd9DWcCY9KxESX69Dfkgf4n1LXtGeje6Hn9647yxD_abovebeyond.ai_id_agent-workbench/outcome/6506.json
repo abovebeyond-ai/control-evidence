@@ -1,0 +1,16 @@
+{
+    "action": "0d7540ab97a050602e9b3fd1ac4fb0d4",
+    "effect": {
+        "detail": {
+            "base": "647b18767962ee689db7a24ebfde5a6df197380c",
+            "branch": "workbench/vier-niveaus",
+            "commit": "831ec8019e97565674e33f57fa98f1cea6d79edc",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6504,
+    "verdict": "ALLOW"
+}

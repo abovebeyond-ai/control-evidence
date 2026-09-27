@@ -1,0 +1,16 @@
+{
+    "action": "5fdcc0280c6f146d0f410bbf7c99549e",
+    "effect": {
+        "detail": {
+            "base": "a3eeddd2db8a502d238e8e00fb2af01c138b0e75",
+            "branch": "workbench/fix/the-groove-has-to-fill-the-row",
+            "commit": "5ed9c697ee03651d8bed4be5ea5fa20b8ed26d27",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6486,
+    "verdict": "ALLOW"
+}

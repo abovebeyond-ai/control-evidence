@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nWith its queries working again (#210), the scout ran on 26 September at 22:09, its first run since March. It searched two rounds and logged its judgements, turning down WSJ, FT and The Economist for their paywalls and Axios as aggregation. It stored no proposal.\n\nThe step that stores proposals called `client.transaction()`. The store's Sanity shim never had that method: `client` offers `createOrReplace`, `create`, `createIfNotExists`, `patch`, `delete` and `fetch`. So from the removal of Sanity onwards, any run that found a source scoring 70 or more would crash at that line with a `TypeError`. The review of pending proposals used the same call.\n\n- **Proposals** are now written one by one with `client.createIfNotExists`, which stores the score and the reason (`writeDoc`).\n- **Review** actions are collected and carried out only when it is not a dry run. A dry run used to be the one path that never crashed.\n- **The review may only touch pending, inactive proposals** (`source-proposed-*`). The ids come from the model's answer, so a made-up or mistyped id must never reach an active source. Before, such an id went straight to `delete`.\n\n## Tests\n\n927 pass. A new test in `scout-sources-query.test.mjs` checks two things: `discover.mjs` no longer calls `client.transaction(`, and a proposal written the way the scout writes it comes back inactive, with its score and reason.\n\nThe review guard is not covered by a test, because that path needs a model call. ESLint `no-undef` finds nothing in `discover.mjs`.\n\nMerges cleanly next to #211: that pull request only touches the imports at the top of `discover.mjs`.\n",
+            "branch": "workbench/scout-stores-proposals",
+            "title": "The scout can store what it finds"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260927064031-e4c9fc"
+}

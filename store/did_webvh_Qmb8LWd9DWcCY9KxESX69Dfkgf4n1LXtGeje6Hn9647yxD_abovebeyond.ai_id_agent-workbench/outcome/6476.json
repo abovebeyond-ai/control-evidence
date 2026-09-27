@@ -1,0 +1,16 @@
+{
+    "action": "d39d7dec7698256472be6d49802f5255",
+    "effect": {
+        "detail": {
+            "base": "3d0e63286bd335f3a7c5586442f8b17e6cb57c1f",
+            "branch": "workbench/scout-and-fresh-db",
+            "commit": "0f1af7741d54db54f1f61dd52807bb8617af52a3",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6474,
+    "verdict": "ALLOW"
+}

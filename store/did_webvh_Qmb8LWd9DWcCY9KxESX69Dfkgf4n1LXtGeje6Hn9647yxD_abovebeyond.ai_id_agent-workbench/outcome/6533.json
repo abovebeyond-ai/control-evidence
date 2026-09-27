@@ -1,0 +1,16 @@
+{
+    "action": "5e9374c7b7a602ce33d8dc277edbca99",
+    "effect": {
+        "detail": {
+            "base": "58d33a9f8c89c5631d627cfc8c2812f1d87cb514",
+            "branch": "workbench/scout-stores-proposals",
+            "commit": "ce3240a5cba0c27cd7340750936a33fd5082dec5",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6531,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "778b009d9f8a8783d88a11e5ffa174b61f83c59d",
+            "branch": "workbench/fix/a-readout-that-reads-well",
+            "files_sha256": "13787cc4845f6e9a263b8d7798ad890cbefaf2ad8414159b01fe9856e3a2e9d2",
+            "message": "A readout that reads well: single brackets and no window falling off the card"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926193510-8fe553"
+}

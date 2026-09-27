@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The panel was capped at `max-width: 880px` \u2014 a reading width, meant for prose, applied to a data screen. On a wide desktop that throws half the screen away, and width is exactly what this screen needs: a series of thirty-one bars gets readable as a bar gets wider, and a grid of twenty-four hours just as much.\n\n## What changes\n\nThe cap moves to 1600 px. Not removed altogether: a table row three metres wide makes the eye wander from the name to the number.\n\nAbove 1280 px the measures table and the series stand side by side. That table is four lines tall and was leaving half a screen width blank next to it. The grid and the garage table stay full width, because those two need every pixel.\n\nBelow 1280 px nothing changes: one column, as it was.\n\n## Verified\n\nA case in `ABarYouCanReadANumberOffTest` pins the decision: the reading-width cap is gone from the `.act` declaration, an upper bound is still there, the wide layout exists, and the grid and the garage table are named as full-width. It matches the declaration rather than the text, because the comment above it names the old value on purpose and the first version of this test tripped over its own documentation.\n\n`npm run build` green, `pint` green. New rule R P3-16.15. Local suite: the same nine failures as on a clean `main` in my environment; CI runs on a fresh database.\n",
+            "branch": "workbench/feat/the-width-is-there-to-be-used",
+            "title": "The width is there to be used"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926194256-42dcd4"
+}

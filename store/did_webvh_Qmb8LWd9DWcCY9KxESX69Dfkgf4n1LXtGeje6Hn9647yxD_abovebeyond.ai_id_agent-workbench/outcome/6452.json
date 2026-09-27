@@ -1,0 +1,16 @@
+{
+    "action": "6c4a4670e7186cc103b23a74abcbbc9b",
+    "effect": {
+        "detail": {
+            "base": "6e46ac90cfb7187a969303a17903677c22b72169",
+            "branch": "workbench/feat/a-bar-you-can-read-a-number-off",
+            "commit": "04488f4af9f709bbeab867eb5d03cafc5ee1dcb8",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6450,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cf5a5c1ab6c14e87ebe2dff66f6ed53f2263dca8",
+            "branch": "workbench/feat/a-view-is-a-car-being-looked-at",
+            "files_sha256": "34f4cd2e6da516c0e8ea76ccd841c2175032f3bfdd6ea17df0b6990550bcef01",
+            "message": "Count a car being looked at, on both sides"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260927063806-0f8915"
+}

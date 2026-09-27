@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two small things on the readout that #820 introduced.\n\n**`((lopend))`.** The translation `activity.running` already carries its own brackets and the bar wrapped it in a second pair, so the last bar read `za. 26 sep. 52 ((lopend))`. The blade adds the word now and leaves the punctuation to the translation, which is where it belongs: a French or German version may want none.\n\n**A window that falls off the card.** The readout is centred over its bar, so on the last bars it hung past the right edge of the card. The last three bars and the last four grid cells anchor their window to the right instead. A readout you can only half read is not a readout.\n\n## Verified\n\n`ABarYouCanReadANumberOffTest` gained a case: no readout carries double brackets, and exactly one bar says it is still running. It reads the `data-tip` values rather than scanning the page, because `((` appears in the theme's own scripts and the first version of this test failed on that.\n\n`npm run build` green, `pint` green. Local suite: the same nine failures as on a clean `main` in my environment; CI runs on a fresh database.\n\n## Not a change: the axes\n\nThe axes and the dates were reported as not rendering. Source, compiled view and served stylesheet on production all carry them \u2014 `.act-plot{...display:flex}` and `.act-yas{...display:flex}` are in the stylesheet the site hands out \u2014 so that screenshot was taken between the merge and the end of the deploy, with the new markup and the previous stylesheet. Nothing to fix there; a hard reload shows it.\n",
+            "branch": "workbench/fix/a-readout-that-reads-well",
+            "title": "A readout that reads well"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926193510-8fe553"
+}

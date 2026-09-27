@@ -1,0 +1,16 @@
+{
+    "action": "e224dd26fb252356a444c524ea005f19",
+    "effect": {
+        "detail": {
+            "base": "cf5a5c1ab6c14e87ebe2dff66f6ed53f2263dca8",
+            "branch": "workbench/feat/a-view-is-a-car-being-looked-at",
+            "commit": "26bfd6ee425b7d853f4306295f46580975b06114",
+            "files": 18,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6525,
+    "verdict": "ALLOW"
+}

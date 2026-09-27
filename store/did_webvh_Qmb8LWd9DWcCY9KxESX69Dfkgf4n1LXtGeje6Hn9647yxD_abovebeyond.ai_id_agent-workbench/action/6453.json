@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The series had no vertical axis, so the height of a bar meant nothing. It had no horizontal axis, so you could not tell which day you were looking at. And what passed for hover was the `title` attribute \u2014 the browser's own tooltip, which waits about a second and cannot be styled.\n\nA bar you cannot read a number off is decoration.\n\n## What it has now\n\n**A vertical axis** with the highest value, half of it and zero, so height is a quantity rather than a shape.\n\n**Two guide lines, not three.** The floor of the groove is the third one that is already there, and the house guide refuses three lines on top of each other.\n\n**Dates under the groove**, at intervals. Every step would be a wall of numbers; none at all leaves the reader guessing.\n\n**A readout that appears at once**, on every bar and on every one of the 168 grid cells: the day and the number. CSS only, no chart library, consistent with the rest of the screen.\n\n**Weekends in a quieter tint**, so the rhythm is visible without a legend. Only in a daily series: a month is not a weekend.\n\n## And one wording fix\n\nThe garage table's column head said \"Wie het draagt\" with the count in brackets behind it, which read as half a sentence. A column head says what stands in the column: \"Garage\", with the count beside it in grey. That was prose in a place where a label belongs.\n\n## Verified\n\n`ABarYouCanReadANumberOffTest` pins the six things that fall away first in a hurried change: the axis carries its values, there are exactly two guide lines, the dates stand under the groove, every bar and every cell carries its own readout, the blade does not fall back on `title` anywhere, and the weekends are marked \u2014 counted against the actual number of weekend days in the window rather than a fixed number.\n\nNew rule R P3-16.14. `npm run build` green, `phpstan` green, `pint` green on the added file. Local suite: the same nine failures as on a clean `main` in my environment; CI runs on a fresh database.\n\n## Still missing\n\nDrill-down. A dark Thursday at 16:00 in the grid now shows its number on hover, which makes wanting to open it worse rather than better.\n",
+            "branch": "workbench/feat/a-bar-you-can-read-a-number-off",
+            "title": "A bar you can read a number off"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926192021-cf3627"
+}

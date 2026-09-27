@@ -1,0 +1,16 @@
+{
+    "action": "8e7dd25fee1c2b550bd5fb9f158bb513",
+    "effect": {
+        "detail": {
+            "base": "cb2b258e3f376c30a72075b79ce4c7d66ef2ca79",
+            "branch": "workbench/prices-in-one-place",
+            "commit": "15299237a81c2ebc06693366dee2772a83cede2d",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6480,
+    "verdict": "ALLOW"
+}

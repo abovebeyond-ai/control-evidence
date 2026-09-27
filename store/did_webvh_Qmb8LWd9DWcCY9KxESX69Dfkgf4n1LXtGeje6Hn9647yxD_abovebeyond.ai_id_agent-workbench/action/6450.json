@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6e46ac90cfb7187a969303a17903677c22b72169",
+            "branch": "workbench/feat/a-bar-you-can-read-a-number-off",
+            "files_sha256": "a68882c795348bee82fdc1c417387f7eb4cc5696805f32fabae6a2575224e02a",
+            "message": "A bar you can read a number off: axes, a readout and a plain column head"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260926192021-cf3627"
+}
