@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three fixes.\n\n**One definition of a live insight**\n- `packages/core/live-insight.mjs` holds the rule the insight economy already used: not superseded (`superseded_by` empty) and a status of `draft`, `reviewed` or `published`.\n- The Studio's \"active\" stat, the story starters and the system map excluded only `archived`, a status no row has. So they counted the 6,530 lapsed insights as live too: **10,396, where the economy counts 3,866**.\n  - That figure reaches the site's homepage as \"live trends\" via the projection. From the next projection it drops to about 3,866. A separate site PR proposes counting what a visitor can open instead.\n- The citation picker and the evidence search had their own list (`NOT IN ('lapsed', 'archived', 'superseded')`). It gave the same result, and they now use the same rule.\n- `test/live-insight.test.mjs` checks that SQL and JS agree, and fails if a file writes its own version of the rule again (checked against main: it fails there).\n\n**Quality snapshot for pattern-driven insights**\n`suggest.mjs` declared `critique` inside the `try` that set it. The quality snapshot further down therefore threw a ReferenceError into its own empty `catch`. Since 2 April no pattern-driven insight got a snapshot.\n\n**A classify log that says what happens**\nThe log said \"Injecting 10 feedback examples\", but the prompt includes nothing. It now says the examples are available and are not sent. Sending them is a separate decision:\n- the 23 editor corrections date from 16 to 18 March and carry retired generation ids (`gen-tweens`, `gen-students`);\n- the 9 newer rows are self-improve's own reclassification disagreements, not an editor's correction.\n\nChecks: 937 tests, 0 failures.\n",
+            "branch": "workbench/cleanup/one-live-insight-3",
+            "title": "One live insight; pattern-lane quality snapshots; an honest classify log"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260927123612-01b74f"
+}

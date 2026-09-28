@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abe91705bddb75b6c6c3b44913add46c34076782",
+            "branch": "workbench/mobiel-hero-scherp",
+            "files_sha256": "2cc11808864dd64f12ca486eb134cdeb00c92489ba5e9feac0c987b98108677f",
+            "message": "Home op telefoon scherp, Wagens-hero hoger, runt Hendrik"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260927150724-52e494"
+}

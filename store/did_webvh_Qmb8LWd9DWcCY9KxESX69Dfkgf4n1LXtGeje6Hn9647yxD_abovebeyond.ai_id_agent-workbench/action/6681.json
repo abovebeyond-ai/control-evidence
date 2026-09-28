@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f5311f1f28ec98396a0bd569f0d35099a8e26497",
+            "branch": "workbench/mobiel-hero-indeling",
+            "files_sha256": "fe560a1696bc6991369f45f140030fd85ba0bcf520f309965135bce529344199",
+            "message": "Home op telefoon: titel bovenaan, beloftes en knop onderaan"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260927151014-c38a76"
+}

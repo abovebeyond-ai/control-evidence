@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e714fb907768effbb2fcaa4082aed59e6a0641c3",
+            "branch": "workbench/stockcars-apex",
+            "files_sha256": "e39c0379ea31d1230ecd2fc0eb41e09b47005caffeaaec1c8ddfb3816468b4ea",
+            "message": "Primaire domeinnaam stockcars.be (zonder www), zoals in Netlify"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260927144303-1a22af"
+}

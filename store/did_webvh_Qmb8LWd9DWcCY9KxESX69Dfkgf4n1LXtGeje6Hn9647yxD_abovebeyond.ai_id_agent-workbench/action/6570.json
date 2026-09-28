@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Makes classify, the model benchmark and the model eval send the same classifier prompt.\n\nUntil now each of the three kept its own copy of the prompt:\n- `classify.mjs`: the prompt production actually sends.\n- `self-improve.mjs` (the model experiment and the benchmark): an older copy, without the geography tiers, without the rule for Asian platforms, and without `entities`.\n- `eval-models.mjs` (the gold-set eval): a shortened rubric.\n\nSo a model that won an eval had won on a prompt production never sends.\n\n**Now**\n- The prompt lives in `packages/pipeline/classify-prompt.mjs` (`classifySystemPrompt(taxonomy)`, `classifySignals(signals, label)`).\n- **Production's text does not change.** It is byte-identical, checked against the old template with the same taxonomy, so the prompt hash in the classify log stays the same.\n- The evals number their samples by position and match each answer on `index` or `id`. The reclassification check in self-improve keeps its own short prompt, because it asks for a different format.\n- `test/classify-prompt.test.mjs` pins it: no file other than `classify-prompt.mjs` may write a classifier prompt.\n\n**What changes:** eval and benchmark scores from now on are measured on the production prompt. They are therefore not directly comparable with earlier rows in `model_evals`.\n\nChecks: 935 tests, 0 failures.\n",
+            "branch": "workbench/cleanup/one-classify-prompt",
+            "title": "One classifier prompt, sent by production and judged by the evals"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260927120500-7e64a3"
+}

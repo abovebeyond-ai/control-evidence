@@ -1,0 +1,16 @@
+{
+    "action": "507af9031f8d1c8dec06611f56aae978",
+    "effect": {
+        "detail": {
+            "base": "36c586369f99812c77ea081f23baf2adf2276396",
+            "branch": "workbench/cleanup/stale-docs-and-reset",
+            "commit": "626323e8d908b7344d5e04afa9cc6884b89a3f00",
+            "files": 18,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6555,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b1d41fad8fa9c32fe7ce6c87117cd1f7e920eab0",
+            "branch": "workbench/cleanup/live-trends-count-2",
+            "files_sha256": "aff94a4dcff3df3d8c469ba867a7123b48f91e2c08ed4970fb98d3f8ff64919a",
+            "message": "Live trends counts the trends a visitor can open\n\nThe homepage band took 'live trends' from the pipeline's stat, which counts its live\nreadings, drafts included: 10,396 until the pipeline stopped counting lapsed ones,\n3,866 after, against 59 on the trends page. It now counts the trend cards the site\nholds, and shows nothing when there are none."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260927123627-c0426f"
+}

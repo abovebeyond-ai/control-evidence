@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "27bd11bc992fe1236f30caf587656255fbc21619",
+            "branch": "workbench/elixir-json",
+            "files_sha256": "4c277e76d279eb7466813ef6428b5b1da7758f86bcf6d679a5a0a794b5b1af3f",
+            "message": "elixir.json: staging weg"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260927155514-2f4785"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De duale leerplannen (OK2/\u2026, 3A duaal) zetten voetnootcijfers achter de kop van de doelen: \"Leerplandoelen 1 2\". De lezer liet \u00e9\u00e9n cijfer toe (het paginanummer in de inhoudstafel) en vond de sectie dus niet: nul doelen. In de leesronde matchten de duale clusters daardoor op het verkeerde leerplan (bakkerij op Hulpkelner), via de generieke doelen die alle duale leerplannen delen.\n\n## De wijziging\n\nDe kop mag meer dan \u00e9\u00e9n cijfer dragen. De inhoudstafelregel draagt er ook \u00e9\u00e9n, en de afstand tot de eerste code houdt ze uit elkaar, zoals voorheen. Twee regels in `GoLeerplan`, verder niets.\n\n## De rechter\n\n`GoLeerplanTest`: een uittreksel van Medewerker (banket)bakkerij duaal (OK2/MEDEWERKER/BAKKERIJ) met de kop \"Leerplandoelen 1 2\" leest zijn doelen, te beginnen bij `BK2_01.01` met subdoel `BK2_01.01.01`. Zonder de wijziging leest het nul doelen. De volledige pdf leest 30 doelen en 118 subdoelen waar het er nul waren; Bouw en Wetenschappen-wiskunde ongewijzigd. Volledige suite op MariaDB.\n",
+            "branch": "workbench/leerplandoelen-kop",
+            "title": "De kop van de leerplandoelen mag voetnootcijfers dragen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260927085652-3c4f3f"
+}

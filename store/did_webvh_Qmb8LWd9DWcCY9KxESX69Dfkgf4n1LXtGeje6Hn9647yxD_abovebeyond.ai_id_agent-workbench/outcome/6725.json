@@ -1,0 +1,16 @@
+{
+    "action": "c700519aebac154cad87d00d6dfcfac5",
+    "effect": {
+        "detail": {
+            "base": "20f11a2bc18186e1655226f84a427cc5e92915a8",
+            "branch": "workbench/vaste-cijfers",
+            "commit": "7ec457165f0735814fc7ca33239fb1cc29938a93",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6723,
+    "verdict": "ALLOW"
+}

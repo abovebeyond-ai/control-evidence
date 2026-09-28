@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na #20 en #21, op `main`:\n\n- **Toegankelijkheid** (Lighthouse): `role=\"button\"` op de label-knoppen (menu, chatbel), `role=\"tab\"` op de voorraadtabs, footertitels als h2 in plaats van h6 (koppenvolgorde), jaartallen in de tijdlijn in het rood dat de gids voor kleine tekst op donker voorschrijft (contrast).\n- **Mobiele homefoto** lichter (188 naar 165 kB).\n- **Home desktop**: de knop Bekijk onze wagens nog wat lager, los van de beloftes.\n\nTests 26/26, build groen.\n",
+            "branch": "workbench/lighthouse-a11y",
+            "title": "Toegankelijkheid (Lighthouse), lichtere mobiele homefoto, homeknop lager"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260927151456-f6f28e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "36c586369f99812c77ea081f23baf2adf2276396",
+            "branch": "workbench/cleanup/stale-docs-and-reset",
+            "files_sha256": "d7c924c6acaf0383eabf8a0ae7b4bc187aa1f871e572b6306790440707f998c0",
+            "message": "Docs that describe the code as it is; the reset phase goes\n\nCLAUDE.md listed sixteen adapters (bilibili, douyin and patents gone, twitter off,\nchina-hotrank and the academic ones missing) and described account-balance.mjs, which\nno longer exists. It now points at the adapter register and describes accountsToTry.\nUsage lines in eight scripts still said node workflow/<x>.mjs; they give the real path.\ndocs/server-setup.sh and server-remaining.sh set up a box with crontab lines for\nworkflow/*.mjs, which has not been how the server runs for months. The LaTeX .aux and\n.out files next to the architecture paper are build output and are ignored now.\n\nThe Reset phase (POST /run/reset) ran workflow/reset.mjs, which deletes every signal,\nhashtag, correction and scout log row. It could not run, because it imported a path\nthat does not exist; the danger was that someone would fix the import. Nothing calls\nit, so the phase, the script and resetDB are removed."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260927115723-af64fb"
+}

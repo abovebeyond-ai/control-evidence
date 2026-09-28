@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Updates stale documentation and removes one dangerous dead end.\n\n**Docs**\n- CLAUDE.md listed sixteen adapters. Bilibili, Douyin and patents are gone, Twitter is off, and china-hotrank and the academic adapters were missing. The section now points to `packages/adapters/registry.mjs` (`ACTIVE`/`OFF`) instead of copying it.\n- The \"Account Balancing\" section described `account-balance.mjs`, which no longer exists. It now describes `accountsToTry()` and `getAccountState()` in models.mjs.\n- The usage lines in eight scripts still said `node workflow/<x>.mjs`. They now give the real path.\n- Removed `docs/server-setup.sh` and `docs/server-remaining.sh`. They set up a box with crontab lines for `workflow/*.mjs`, which is not how the server runs any more.\n- Removed the LaTeX build files `.aux` and `.out` and added them to `.gitignore`.\n\n**The Reset phase is gone**\n`POST /run/reset` ran `workflow/reset.mjs`, which deletes every signal, hashtag, correction and scout-log row. It never worked, because its import (`../store/db.mjs`) points to a file that doesn't exist. The risk was that someone would fix the import. Nothing calls it (no dashboard button, nothing in the logs). Removed: the phase, the script and `resetDB` with its test.\n\nChecks: 926 tests, 0 failures.\n",
+            "branch": "workbench/cleanup/stale-docs-and-reset",
+            "title": "Docs that describe the code as it is; the reset phase goes"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260927115723-af64fb"
+}

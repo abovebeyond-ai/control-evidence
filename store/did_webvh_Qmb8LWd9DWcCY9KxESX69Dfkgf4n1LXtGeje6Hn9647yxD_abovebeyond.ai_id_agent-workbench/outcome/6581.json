@@ -1,0 +1,16 @@
+{
+    "action": "731aae69bd1509ff705df1bc3f389504",
+    "effect": {
+        "detail": {
+            "base": "54b03b11de2089f1dbea55fbc5c841e64b554c75",
+            "branch": "workbench/cleanup/one-live-insight-3",
+            "commit": "4c6dc5057294b6f2f1db72976678a6f908eda155",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6579,
+    "verdict": "ALLOW"
+}

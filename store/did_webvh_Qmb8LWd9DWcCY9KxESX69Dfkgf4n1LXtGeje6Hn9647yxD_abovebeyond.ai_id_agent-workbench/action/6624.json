@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "99919ff3d58ab195da9839780065458ea62e454a",
+            "branch": "workbench/stockcars-opruim",
+            "files_sha256": "80a86433e45d792cce2dd575c4273a14a96125ffb52d7616ba3dc7a09f72b964",
+            "message": "Verwijderingen die in #15 ontbraken: services-detail.json en ongebruikte beelden"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260927142937-1ac727"
+}

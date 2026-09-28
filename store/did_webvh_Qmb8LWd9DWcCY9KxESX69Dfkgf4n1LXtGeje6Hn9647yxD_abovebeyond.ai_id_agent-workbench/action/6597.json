@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4284a4fb124634d767e4acdb293ef8acac756e3f",
+            "branch": "workbench/feat/a-dealer-sees-who-looked",
+            "files_sha256": "2230ceaa84cb16dccedb3b6cddb6cac74fff605b131cd9a7f6c13bbe5d47d80d",
+            "message": "A dealer sees how often his own cars are looked at"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260927140216-64fc0a"
+}

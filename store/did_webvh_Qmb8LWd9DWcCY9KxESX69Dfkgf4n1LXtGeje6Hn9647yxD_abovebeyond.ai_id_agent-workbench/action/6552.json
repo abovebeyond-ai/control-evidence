@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Removes duplicates. Two small behaviour changes, both fixes:\n\n- **Analytics shows the model name for Opus 5 and Fable 5.** It showed \"?\" for them. `PHASE_META` and `MODEL_LABELS` existed in both Analytics and ModelRouting, and the Analytics copy had fallen behind. Both now come from `src/models.js`, and both use `labelFor`.\n- **The review queue now stays put when a save fails.** ReviewQueue had its own `storePatch` that never checked the response, so a failed save moved on to the next insight as if it had been saved. It now uses the one in `useData`, which throws. The queue stays on the item and the console logs the error.\n\nMoved without changes:\n- The country-to-region map and its counting loop (Insights and Patterns) are now `countByRegion` in `taxonomy.js`.\n- `classifyPlatform` (Insights and SourceDistribution) is now `src/platforms.js`.\n- `PLATFORM_COLORS` in Insights was unused and is removed.\n\nChecks: the lint ratchet is at its ceiling (42), the build passes, and all 21 Playwright tests pass.\n",
+            "branch": "workbench/cleanup/one-of-each",
+            "title": "One of each: labels, region counting, source kind, save"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260927115338-7e71cf"
+}

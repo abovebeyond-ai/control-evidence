@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c1c55a67ab9e2ed62ba6c1c3ae3355f44f2cdfe5",
+            "branch": "workbench/derde-graad-arbeidsmarkt",
+            "files_sha256": "e3ae26334154fce74da5c71d074fd3dadf93856fbcca5f5601431d7d19961592",
+            "message": "De derde graad arbeidsmarkt leest: geplakte kop, kale voettekst, geplakt voetnootcijfer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260927141258-d6a87e"
+}

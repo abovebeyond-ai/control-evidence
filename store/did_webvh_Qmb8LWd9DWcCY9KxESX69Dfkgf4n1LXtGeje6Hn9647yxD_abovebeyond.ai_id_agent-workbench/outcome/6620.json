@@ -1,0 +1,16 @@
+{
+    "action": "ab5215b3fcb73d10b497ba1766fe5111",
+    "effect": {
+        "detail": {
+            "base": "ec7cf316450e0c9c7f97b21103a87e1cc2f15ca7",
+            "branch": "workbench/stockcars-afwerking",
+            "commit": "99919ff3d58ab195da9839780065458ea62e454a",
+            "files": 90,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6618,
+    "verdict": "ALLOW"
+}

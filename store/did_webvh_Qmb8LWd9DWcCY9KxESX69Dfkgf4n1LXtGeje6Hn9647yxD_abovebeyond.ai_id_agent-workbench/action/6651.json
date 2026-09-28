@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee verfijningen na de livegang, op `main`:\n\n- **Binnenpagina-hero rustiger**: titel kleiner (max ~62px in plaats van 77px, niet meer in drie regels tot in de wagens), ondertitel in gewoon gewicht, smallere tekstkolom, sterker verloop van links; de menubalk heeft een vaste hoogte zodat de foto er precies onder begint (er zat een strook grijs tussen).\n- **Maak nu je afspraak als lichte band**: wit links met de foto rechts die erin vervaagt, donkere tekst en een omlijnde tweede knop, zoals in de mockup. Zo onderscheidt hij zich van de donkere band Vervangend vervoer erboven. Nieuw veld `tone: 'light'` op een callout, ook in Sanity.\n\nNa de merge: `npm run seed` in `studio/` voor de nieuwe tone op de Services-pagina (anders blijft de band donker tot de volgende seed).\n\nTests 26/26, build groen.\n",
+            "branch": "workbench/hero-en-afspraakband",
+            "title": "Binnenpagina-hero rustiger en Maak nu je afspraak als lichte band"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260927145042-b21a4f"
+}

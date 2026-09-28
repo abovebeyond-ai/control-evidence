@@ -1,0 +1,24 @@
+{
+ "backend": "hedera",
+ "checkpoint": {
+  "agent": "did:webvh:Qmb8LWd9DWcCY9KxESX69Dfkgf4n1LXtGeje6Hn9647yxD:abovebeyond.ai:id#agent-workbench",
+  "tree_size": 6735,
+  "root": "sha-256:5290cbd3754ad146b8996c9d0e6fd9f58dab02ecea86f127c1419e5137345c45",
+  "chain_head": "sha-256:82f926556778c1a01d810a05b799ae5dc3d1f3bf2e00fe6520d1d357479b61ff",
+  "attestation": "sha-256:55ba7f8806bbc002ab8f3be9725a1a1f9ac461657500592aa98ea5c9ec71a22c",
+  "signature": "10503b80d5bef4312db260a327545c71d00d2d13158eac68d4ee2fad4ef1232780d6cbc07e7b318291e5b7100d0e7f6639ec063973ea6d5a06d1cc5382df8904"
+ },
+ "message_sha256": "3b2544aba2d42c2fc7eb1a151b303db8dc91b5a1d31aab37c463948716e3fb18",
+ "anchored_at": "2026-09-28T07:25:46Z",
+ "hedera": {
+  "network": "mainnet",
+  "topicId": "0.0.10856156",
+  "sequenceNumber": 36,
+  "consensusTimestamp": "1790580346.166402273",
+  "runningHash": "N51enfqnnYVpkvEaetzvZ7mVHz4T82oLQeIwRhDw1BzOIYKAwv52dvbyaF07NzoY",
+  "payerAccountId": "0.0.10856096",
+  "transactionId": "0.0.10856096-1790580333-416587403",
+  "mirror": "https://mainnet-public.mirrornode.hedera.com/api/v1/topics/0.0.10856156/messages/36",
+  "hashscanTopic": "https://hashscan.io/mainnet/topic/0.0.10856156"
+ }
+}

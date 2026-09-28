@@ -1,0 +1,16 @@
+{
+    "action": "e862980f5d5654281ee84c88d1059b5f",
+    "effect": {
+        "detail": {
+            "base": "9b29974399089c8e4c84aad1c2d6f4e7661bdba5",
+            "branch": "workbench/feat/a-period-you-choose-yourself",
+            "commit": "70bcd60d87c82b4dc0bc855ad9c4fc822e10ef80",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6636,
+    "verdict": "ALLOW"
+}

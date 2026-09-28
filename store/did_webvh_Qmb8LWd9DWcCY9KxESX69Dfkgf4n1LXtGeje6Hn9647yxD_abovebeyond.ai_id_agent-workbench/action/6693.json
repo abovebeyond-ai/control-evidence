@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b84a79d8b34ec35bd315ed633779d0243d94c192",
+            "branch": "workbench/feat/werking-is-the-third-tab",
+            "files_sha256": "63c2f2c9ae2a045b7a3f73329a18897d50a04b87f45325fafa825b829e8cc488",
+            "message": "Werking becomes the third tab of Inzichten"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260927154443-a0f6b8"
+}

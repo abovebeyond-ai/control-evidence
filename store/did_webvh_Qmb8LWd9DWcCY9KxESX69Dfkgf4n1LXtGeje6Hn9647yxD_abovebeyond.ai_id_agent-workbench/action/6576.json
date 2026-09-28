@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Since 26 September the Activiteit screen hangs inside Inzichten as a tab, and its own row stayed in the menu beside Werking. So the dropdown offered Inzichten, Werking and Activiteit, and the third one only redirected into the first: two doors to one screen, which is the duplication the tab was meant to end.\n\n## Hidden, not deleted\n\nThat difference is the whole change, and it is not obvious.\n\n`Access` derives the right from the first part of the route name \u2014 `activity` out of `activity.index` \u2014 and looks it up in the rights built from `menus` and `role_access`. Delete the row and the right goes with it, and `/activity`, the address in bookmarks and in older links, would bounce to the home page instead of opening the tab.\n\n`visible = 0` takes it out of `Menu::childsWithAccess` while the right stays exactly where it was.\n\n## Verified\n\n`test_the_tab_is_not_also_a_menu_item` asserts the row survives and is invisible. It has two halves on purpose: a database that carries the menu tree is checked as it stands, and a database built from the schema plus the seeder (which is what CI has, and where the row was never created) gets the row inserted so the migration itself is exercised. `menus` is MyISAM and ignores transactions, so that insert is removed in a `finally` rather than left to the test case to roll back \u2014 checked afterwards that the table is unchanged.\n\nWithout that test, a later cleanup that tidies away an invisible row would pass everything else and quietly break the bookmark.\n\nR P3-16.10 updated: it said the old url stays because the item is in the menu, and that reason is now gone, replaced by the one that actually holds.\n\n`phpstan` green, `pint` green on the added file. Local suite: the same nine failures as on a clean `main` in my environment.\n",
+            "branch": "workbench/fix/activity-is-a-tab-not-a-menu-item",
+            "title": "Activiteit is a tab, so it leaves the menu"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260927122200-3ef9c6"
+}

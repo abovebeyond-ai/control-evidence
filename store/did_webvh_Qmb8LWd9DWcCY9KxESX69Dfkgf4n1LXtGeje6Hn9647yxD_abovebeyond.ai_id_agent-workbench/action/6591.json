@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "65ce79fa51ab4176429f3831f6240753e47d2672",
+            "branch": "workbench/taalmarkering",
+            "files_sha256": "fdb8df6f434a9fb04ae76ca6028baf99c71853782aa54189b604bdbe0d10b298",
+            "message": "Een taalmarkering v\u00f3\u00f3r de code is van de school, geen vuil"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260927134516-a1375c"
+}

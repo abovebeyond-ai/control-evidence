@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d88acb3a9145d1beb6d3dcfd628ff53d31ec0821",
+            "branch": "workbench/hero-en-afspraakband",
+            "files_sha256": "ee446b803e9594245fe56599108bb18b85bd6fbeca3efb2450d1baf2222a2598",
+            "message": "Binnenpagina-hero rustiger en Maak nu je afspraak als lichte band"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260927145042-b21a4f"
+}

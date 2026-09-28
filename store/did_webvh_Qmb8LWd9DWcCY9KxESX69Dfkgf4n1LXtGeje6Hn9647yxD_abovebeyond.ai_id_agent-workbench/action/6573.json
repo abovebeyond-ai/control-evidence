@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0ce5f048e887f73d7170a2612bcdb76f0d478661",
+            "branch": "workbench/fix/activity-is-a-tab-not-a-menu-item",
+            "files_sha256": "bf41d943a60fc2bb704bc7182b635575558e75c1c05b9b94094e23b8c1ed66a4",
+            "message": "Activiteit is a tab, so it leaves the menu"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260927122200-3ef9c6"
+}

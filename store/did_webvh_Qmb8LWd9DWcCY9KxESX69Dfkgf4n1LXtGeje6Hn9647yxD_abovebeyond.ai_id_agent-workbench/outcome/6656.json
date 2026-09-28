@@ -1,0 +1,16 @@
+{
+    "action": "688432d4536d0e8b635bd00e45c1dbde",
+    "effect": {
+        "detail": {
+            "base": "adb036f5b43d6b49c192f4c74b6ef8e51bd225cf",
+            "branch": "workbench/fix/the-readout-needs-room",
+            "commit": "cf24e97649fc8c0f3cf528e861004a16279318a4",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6654,
+    "verdict": "ALLOW"
+}

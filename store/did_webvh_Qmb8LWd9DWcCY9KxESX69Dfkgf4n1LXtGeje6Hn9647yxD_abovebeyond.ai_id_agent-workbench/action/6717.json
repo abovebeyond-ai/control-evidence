@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "74664d9db18f1f899fc8105621c10fae932c02fb",
+            "branch": "workbench/voorraad-live",
+            "files_sha256": "0a3fb0b7110c38f8b5bed0d541554bc61ca8200cfcfb69bfde3d46c7ad78eda6",
+            "message": "Voorraadcijfers live, Net binnen, boodschappagina's zonder lege hero"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260927160657-8d7738"
+}

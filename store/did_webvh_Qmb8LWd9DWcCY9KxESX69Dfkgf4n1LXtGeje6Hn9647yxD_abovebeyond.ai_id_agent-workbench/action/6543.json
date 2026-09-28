@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "36c586369f99812c77ea081f23baf2adf2276396",
+            "branch": "workbench/cleanup/one-llm-json-parser",
+            "files_sha256": "53aaa168b71b0f1d968d8e1b26d3202223f2c695e17a2790134430fdfe5814b1",
+            "message": "One parser for model JSON, one reader for reference ids\n\nparseLLMJson lived in classify, discover, enrich and suggest as four copies that\ndiffered only in which salvaged objects they kept. It is now core/llm-json.mjs with\nthat choice as a parameter; ingest-report asks for an object and keeps its own.\nThe tag-column reader (tagIds three times, a local ids() once) is refIds in\nconcept-id.mjs, and query-endpoint uses unwrapRef instead of its own conceptRefId."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260927114732-2b7e08"
+}

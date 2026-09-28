@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "857a483184c2322e3e4ab8a02334dcc38c43cd7f",
+            "branch": "workbench/lighthouse-a11y",
+            "files_sha256": "bc03ae4f720a9fc06673e276f1d8442398d1fcf3ea2bce0847308ee44b562963",
+            "message": "Lighthouse: toegankelijkheid, lichtere mobiele homefoto, knop lager"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260927151456-f6f28e"
+}

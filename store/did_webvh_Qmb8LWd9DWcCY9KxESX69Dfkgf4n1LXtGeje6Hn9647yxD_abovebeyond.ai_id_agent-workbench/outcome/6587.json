@@ -1,0 +1,16 @@
+{
+    "action": "4fcbf9927b9bc38f05c401393704dfc3",
+    "effect": {
+        "detail": {
+            "base": "b1d41fad8fa9c32fe7ce6c87117cd1f7e920eab0",
+            "branch": "workbench/cleanup/live-trends-count-2",
+            "commit": "8bb4a0a55532f778bd0bdf969448c6018ea37eb2",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6585,
+    "verdict": "ALLOW"
+}

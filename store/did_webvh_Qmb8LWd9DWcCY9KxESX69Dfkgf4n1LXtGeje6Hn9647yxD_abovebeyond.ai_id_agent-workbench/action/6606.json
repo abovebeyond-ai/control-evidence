@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A second pass on the top dropdown. The previous one went from 12px corners with a solid blue block to 6px with a marker; this goes the rest of the way.\n\nRound corners on a panel that hangs off a straight bar make it float, and a rounded block inside a margin turns a menu line into a little button. The house guide asks for text that behaves, not pills.\n\nSo: no corners, no inner padding, rows edge to edge. The highlight becomes a band across the full width, which is what a menu line is.\n\n## And a real defect alongside it\n\nHover was blue at 9% and \"you are here\" blue at 12%. Those are not separable by eye: under the cursor every item read as the current one, and only the 2px marker still carried the difference \u2014 on a screenshot with the mouse over *Werking*, both rows looked selected.\n\nHover is now grey (`#f2f4f7`, ink-coloured text). Grey says \"the mouse is here\", blue says \"you are here\".\n\n## What changed\n\n| | before | after |\n|---|---|---|\n| panel corners | 6px | 0 |\n| panel padding | 5px | 0 |\n| row corners | 4px | 0 |\n| row padding | 7px 11px | 8px 14px |\n| gap between rows | 2px | 0, bands touch |\n| active marker | 2px, inset 5px top and bottom | 3px, full height, flush left |\n| hover | blue 9% | grey |\n\nThe gap between rows existed because rounded blocks stuck to their neighbour and read as one continuous smear. With straight edges touching is the point, so it goes.\n\n`overflow: hidden` on the panel, so a full-bleed band cannot sit outside the border.\n\n## Verified\n\nCSS only, no markup and no rule change (styling changes nothing in the rule catalogue). `npm run build` green \u2014 lightningcss parses and minifies it, which is what rejects a broken selector. `StylesheetSyntaxTest` green.\n",
+            "branch": "workbench/fix/a-menu-is-not-a-card",
+            "title": "A menu is not a card: square panel, full-bleed rows"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260927141116-f02d85"
+}

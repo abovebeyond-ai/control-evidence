@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "868123f680cfce447b2a471c0ca26b3ed0be6918",
+            "branch": "workbench/graad-poort",
+            "files_sha256": "5b94b44bdcbede51b5123cc393637d92363267d10e118a82703596b86d5a0a87",
+            "message": "Het herstel weigert een leerplan van een andere graad dan de cluster"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260927143227-1e4c38"
+}

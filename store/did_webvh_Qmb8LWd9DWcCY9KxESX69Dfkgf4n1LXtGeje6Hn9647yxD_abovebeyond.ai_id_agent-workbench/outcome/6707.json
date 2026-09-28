@@ -1,0 +1,17 @@
+{
+    "action": "c9757714444122389f3a1d9f097f29bc",
+    "effect": {
+        "detail": {
+            "fields": [
+                "nextAction",
+                "links",
+                "replaceLinks"
+            ],
+            "project": "garage-de-backer-website"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6705,
+    "verdict": "ALLOW"
+}

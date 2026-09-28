@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Removes duplicates. Behaviour stays the same.\n\n- `parseLLMJson` existed four times (classify, discover, enrich, suggest). The copies differed only in which objects they keep when repairing broken output. It now lives in `packages/core/llm-json.mjs`, with that choice as a parameter (`isAnswer` per caller). ingest-report expects an object rather than an array and keeps its own parser.\n  - One small difference: every caller now also tries parsing from the first `[` when a sentence precedes the array. Only suggest did that before; the others recovered in the repair step anyway.\n- `tagIds` (three times) and the local `ids()` in query-endpoint are replaced by `refIds` in `core/concept-id.mjs`. `conceptRefId` was the same function as `unwrapRef` and is gone.\n- New: `test/llm-json.test.mjs` with 6 tests. The full suite passes: 939 tests, no undefined names.\n",
+            "branch": "workbench/cleanup/one-llm-json-parser",
+            "title": "One parser for model JSON, one reader for reference ids"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260927114732-2b7e08"
+}

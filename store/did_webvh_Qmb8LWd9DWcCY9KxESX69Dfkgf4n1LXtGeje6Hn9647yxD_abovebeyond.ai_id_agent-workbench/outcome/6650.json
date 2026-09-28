@@ -1,0 +1,16 @@
+{
+    "action": "7f61e309ffd153176f82f953febf5b27",
+    "effect": {
+        "detail": {
+            "base": "d88acb3a9145d1beb6d3dcfd628ff53d31ec0821",
+            "branch": "workbench/hero-en-afspraakband",
+            "commit": "cd70a0cab21f0fdbbec08f066d3b6f36910475df",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6648,
+    "verdict": "ALLOW"
+}

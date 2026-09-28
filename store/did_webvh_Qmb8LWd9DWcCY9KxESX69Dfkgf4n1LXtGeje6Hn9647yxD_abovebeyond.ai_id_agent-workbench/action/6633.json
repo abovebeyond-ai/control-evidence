@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een leerplan mag alleen een cluster van zijn eigen graad beoordelen. De zinnen van de generieke doelen (teamwerk, kwaliteit, veiligheid) zijn in elke graad dezelfde; een cluster van de derde graad naast een leerplan van de tweede leest daardoor als \"oude nummering\", en een herstel zou `BK3_`-codes tot `BK2_` herschrijven. Dat stond in een droge ronde van 2026-09-27 (Schilderen 3de graad naast Schilderen en decoratie 2A). Er is niets geschreven, en met deze poort kan dat ook niet meer.\n\n## De wijziging\n\n- **`GoLeerplan::graadNummer`**: de graad van de kaft als getal.\n- **`GradeGate::refusal`**: de reden waarom leerplan en cluster niet samengaan (andere graad, cluster zonder graad, leerplan zonder graad op de kaft), of niets.\n- **`naviskore:leerplan:herstel`** toetst alle clusters v\u00f3\u00f3r het eerste woord en is alles of niets: \u00e9\u00e9n weigering en er wordt niets geschreven, ook niet voor de clusters die w\u00e9l pasten.\n- **`naviskore:leerplan:vergelijk`** blijft lezen en zet er een waarschuwing bij: lezen is geen ingreep.\n\n## De rechter\n\n`GradeGateTest`: dezelfde graad passeert, een andere graad en een cluster zonder graad worden geweigerd met een reden die zegt welke cluster en welk leerplan. `RepairingAClusterFromTheCurriculumTest`: een cluster van graad 3 in dezelfde run als een cluster van graad 2 tegen 2A/BOUW, met `--apply`, en geen van beide wordt geschreven; een cluster zonder graad idem. De vergelijking toont de waarschuwing. Mutatie: zonder de poort schrijft de run gewoon. Volledige suite op MariaDB.\n",
+            "branch": "workbench/graad-poort",
+            "title": "Het herstel weigert een leerplan van een andere graad dan de cluster"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260927143227-1e4c38"
+}

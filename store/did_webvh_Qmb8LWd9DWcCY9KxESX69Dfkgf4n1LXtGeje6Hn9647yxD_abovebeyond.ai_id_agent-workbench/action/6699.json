@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7e0a62031a80a5d18ae100b8fa1bbe20f53ec4fe",
+            "branch": "workbench/sitemap-lus",
+            "files_sha256": "dd55e7fd70931090de889c8a52ebfcaca49f4d3e08530ac612c87b3e32aa4d87",
+            "message": "Sitemap: doorstuurlus weg"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260927154724-374d0a"
+}

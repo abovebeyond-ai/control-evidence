@@ -1,0 +1,16 @@
+{
+    "action": "2ffc558c35e41d711ae1d6aae200e1eb",
+    "effect": {
+        "detail": {
+            "base": "e714fb907768effbb2fcaa4082aed59e6a0641c3",
+            "branch": "workbench/stockcars-apex",
+            "commit": "14d72361e3e88041969148b2a05a0280b5f21a16",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6642,
+    "verdict": "ALLOW"
+}

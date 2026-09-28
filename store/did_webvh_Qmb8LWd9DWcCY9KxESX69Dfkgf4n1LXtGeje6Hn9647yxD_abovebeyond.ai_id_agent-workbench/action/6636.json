@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b29974399089c8e4c84aad1c2d6f4e7661bdba5",
+            "branch": "workbench/feat/a-period-you-choose-yourself",
+            "files_sha256": "fa3bed9ca1aabb9e8d4dcfac744317bb48bf35f2b55acd40b9f7dbb106227e5d",
+            "message": "A period you choose yourself"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260927143926-36de62"
+}

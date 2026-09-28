@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b233b5ec57a6c39db00269f9b700a018c0caa89d",
+            "branch": "workbench/cleanup/one-cohort-redirect",
+            "files_sha256": "a64b2ef4dc0905ff778d98575457c66e5188e615916cdf0c712558c7474ad222",
+            "message": "One redirect for old cohort links, one query for tags in use\n\nTrends and Posts each moved ?generation=gen-teens to its lifestage in their own\nwords; both now ask Taxonomy::movedCohortQuery. The three *WithContent methods ran\nthe same pluck-and-flatten on a different column; that is publishedTags() now."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260927115909-e3c63e"
+}

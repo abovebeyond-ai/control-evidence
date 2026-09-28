@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "**Kritiek voor SEO**: https://stockcars.be/sitemap-index.xml/ antwoordt met een 301 naar zichzelf, een doorstuurlus. Google kan de sitemap dus niet lezen (en robots.txt wijst ernaar).\n\nOorzaak: de regel `/sitemap-index.xml` \u2192 `/sitemap-index.xml/` in `netlify.toml`. Netlify negeert de slash bij het vergelijken van regels, dus hij past ook op de bestemming. Weg ermee; de adapter serveert de sitemap zelf. De oude Yoast- en WordPress-sitemapadressen sturen nu rechtstreeks naar de vorm met slash.\n\nNa te kijken op de deploy preview: `/sitemap-index.xml/` geeft 200 met XML.\n",
+            "branch": "workbench/sitemap-lus",
+            "title": "Sitemap: doorstuurlus weg (Google kon de sitemap niet lezen)"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260927154724-374d0a"
+}

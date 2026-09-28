@@ -1,0 +1,16 @@
+{
+    "action": "0993a90f10a15de5ea5461064aea4bee",
+    "effect": {
+        "detail": {
+            "base": "7e0a62031a80a5d18ae100b8fa1bbe20f53ec4fe",
+            "branch": "workbench/sitemap-lus",
+            "commit": "fe78f792279beeaaed0b5a3e621d3775bbaf03d4",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6699,
+    "verdict": "ALLOW"
+}

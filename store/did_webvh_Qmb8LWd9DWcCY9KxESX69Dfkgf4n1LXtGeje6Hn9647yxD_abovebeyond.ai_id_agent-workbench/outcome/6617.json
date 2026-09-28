@@ -1,0 +1,10 @@
+{
+    "action": "000506a2b8135d1703d9f778bc05fd67",
+    "effect": {
+        "error": "Post \"https://api.github.com/repositories/1272371532/git/trees\": context deadline exceeded",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 6615,
+    "verdict": "ALLOW"
+}

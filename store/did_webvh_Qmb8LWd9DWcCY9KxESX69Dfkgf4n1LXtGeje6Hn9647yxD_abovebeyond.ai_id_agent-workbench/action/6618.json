@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ec7cf316450e0c9c7f97b21103a87e1cc2f15ca7",
+            "branch": "workbench/stockcars-afwerking",
+            "files_sha256": "3d0e330f95e6a2ffcda9e4b6ac27583d01dd5ffbf42314678ce27d4df8a22004",
+            "message": "StockCars: alle input van de klant, designsysteem, mobiel en livegang op www.stockcars.be"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260927142532-7f48a0"
+}

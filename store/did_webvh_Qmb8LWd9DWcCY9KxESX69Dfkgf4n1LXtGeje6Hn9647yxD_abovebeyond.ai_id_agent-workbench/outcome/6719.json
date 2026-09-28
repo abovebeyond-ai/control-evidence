@@ -1,0 +1,16 @@
+{
+    "action": "f396440d091928680fbd9f5c32090cbe",
+    "effect": {
+        "detail": {
+            "base": "74664d9db18f1f899fc8105621c10fae932c02fb",
+            "branch": "workbench/voorraad-live",
+            "commit": "1b3c632c303c8312615d6276cc71b3594f308fc6",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6717,
+    "verdict": "ALLOW"
+}

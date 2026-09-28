@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The number next to \"live trends\" in the homepage band now counts the trends a visitor can open.\n\n**Why:** the band took the number from the pipeline's `active` stat. That stat counts the pipeline's live readings, drafts included, which are not the trends on the site:\n- 10,396 today, because it also counted lapsed insights;\n- about 3,866 after pipeline \"One live insight\";\n- against 59 on the trends page.\n\n**Now:** `TrendCard::count()`, so the site counts what it holds itself. With no trends the band shows no number and no label (`?: null`), as the rest of the band already does without a measurement. The pipeline stat is still stored in `ProjectionState` and used as the fallback for signals in the reading room.\n\n`LiveNumbersTest` puts 38 cards in the database and 4,000 in the stat, and checks that the page shows 38 and not 4,000. Without trends, \"live trends\" does not appear.\n\nChecks: Pint passes; PHPUnit runs 317 tests with 0 failures.\n",
+            "branch": "workbench/cleanup/live-trends-count-2",
+            "title": "Live trends counts the trends a visitor can open"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260927123627-c0426f"
+}

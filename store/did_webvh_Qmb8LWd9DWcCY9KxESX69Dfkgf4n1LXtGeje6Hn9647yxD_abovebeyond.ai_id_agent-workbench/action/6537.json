@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c959566bc97ca8d0dbfcc52f334eefb652c38c72",
+            "branch": "workbench/leerplandoelen-kop",
+            "files_sha256": "bd94574795db3fa9e34810ff0a8201ae58dd2b85e9ff0d3dee1d92b112698b33",
+            "message": "De kop van de leerplandoelen mag voetnootcijfers dragen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260927085652-3c4f3f"
+}

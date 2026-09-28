@@ -1,0 +1,16 @@
+{
+    "action": "db469074de855d2dde8f20ddb0ccbff1",
+    "effect": {
+        "detail": {
+            "base": "dabac66441a04985eacafb434ecfd824aa9bc7a6",
+            "branch": "workbench/verfijningen-na-livegang",
+            "commit": "a79ca0dc7035259b9009f3fae607ff5d2777e458",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6669,
+    "verdict": "ALLOW"
+}

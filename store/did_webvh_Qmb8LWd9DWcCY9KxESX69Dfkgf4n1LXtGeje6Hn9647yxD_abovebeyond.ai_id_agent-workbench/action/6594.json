@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Frans en Engels delen de codes van de basisvorming (BV2_03.xx, moderne vreemde talen). De sjablonen houden ze uit elkaar met een markering v\u00f3\u00f3r de code: `FR BV2_03.01` naast `EN BV2_03.01`. De vergelijking las die markering als vuil en zei \"hercoderen\" naar de blote code; een herstel zou 101 rijen met 112.910 scores tot dezelfde prefix hebben gebracht en de taal eruit gehaald.\n\n## De wijziging\n\nEen markering van twee of drie hoofdletters v\u00f3\u00f3r de code is de keuze van de school en geen vuil. Achter de markering geldt dezelfde regel als zonder: is de code schoon en de zin gelijk, dan *gelijk*; is de zin anders, *herformuleren*; staat er een regeleinde of \"Subdoel n\" achter, dan blijft dat *hercoderen* (naar de code zonder dat vuil; de markering wordt daarbij niet aangeraakt, want het herstel schrijft alleen de code waar de vergelijking zeker is, en dat is hier het geval met vuil zonder markering).\n\n## De rechter\n\n`LeerplanVergelijkingTest`: `EN BK2_02.06` en `FR BK2_02.06` met dezelfde zin zijn beide gelijk; `FR BK2_02.05` met een andere zin is herformuleren; `FR BK2_02.01.01\u23ceSubdoel 1` blijft hercoderen. Mutatie: zonder de markeringsregel worden de eerste twee \"hercoderen\". Volledige suite op MariaDB.\n",
+            "branch": "workbench/taalmarkering",
+            "title": "Een taalmarkering v\u00f3\u00f3r de code is van de school, geen vuil"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260927134516-a1375c"
+}

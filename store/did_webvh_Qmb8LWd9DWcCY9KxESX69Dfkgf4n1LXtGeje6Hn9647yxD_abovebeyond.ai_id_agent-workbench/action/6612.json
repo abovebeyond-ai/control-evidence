@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De leerplannen van de derde graad arbeidsmarkt (Onderhoudsmechanica auto, Elektrische installaties, Datacommunicatie en netwerkinstallaties, Decoratie en schilderwerken, Podiuminstallaties, Printmedia, Ruwbouw) lazen nul doelen. Drie oorzaken in dezelfde reeks pdf's, alle drie zetwerk:\n\n- de kop staat als \"Leerplandoelen1 2\": de voetnootcijfers plakken aan het woord;\n- de tweede voettekstregel (de naam van de studierichting in kapitalen) draagt geen paginanummer, dus de lezer nam ze voor een thema;\n- het voetnootcijfer plakt aan de slotpunt van de zin (\"procedures.3\"), waardoor de zin niet als af gold en het cijfer erin bleef.\n\n## De wijziging\n\nDe kop mag cijfers dragen met of zonder spatie. Een regel in kapitalen die direct op de graadregel volgt is een voettekst, ook zonder paginanummer. Een cijfer na de slotpunt, met of zonder spatie, hoort niet bij de zin.\n\n## De rechter\n\n`GoLeerplanTest`: een uittreksel van Onderhoudsmechanica auto (3A) leest zijn doelen vanaf `BK3_01.01`, met de zin zonder voetnootcijfer, het beheersingsniveau, het eerste subdoel, en zonder de voettekst als thema. Zonder de kopregel leest het nul doelen. De volledige pdf leest 32 doelen en 74 subdoelen; Bouw, Wetenschappen-wiskunde en het duale bakkerijleerplan lezen ongewijzigd. Volledige suite op MariaDB.\n",
+            "branch": "workbench/derde-graad-arbeidsmarkt",
+            "title": "De derde graad arbeidsmarkt leest: geplakte kop, kale voettekst, geplakt voetnootcijfer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260927141258-d6a87e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "workbench/stockcars-afwerking",
+            "body": "Vervolg op #15: de gateway nam de verwijderingen niet mee. Deze PR haalt ze alsnog weg:\n\n- `src/content/pages/services-detail.json` (de pagina stuurt door naar /services/; zonder deze verwijdering faalt de test op #15)\n- ongebruikte beelden: `public/theme/hero/{gevel,showroom,werkplaats}.jpg` (de site laadt alleen WebP), `public/theme/foto/frederik-evelien.webp`, `public/theme/kaart/stockcars-adegem.webp` (de oude statische kaart)\n\nEerst deze in `workbench/stockcars-afwerking` mergen, dan #15.\n",
+            "branch": "workbench/stockcars-opruim",
+            "title": "Opruimen bij #15: services-detail en ongebruikte beelden"
+        },
+        "resource": "stocklistdealer-eu/peugeot-de-backer"
+    },
+    "run": "workbench-20260927142937-1ac727"
+}

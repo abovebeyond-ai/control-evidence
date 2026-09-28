@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "667ff7882c96ac74588841464ddefd0f018c6b43",
+            "branch": "workbench/fix/a-menu-is-not-a-card",
+            "files_sha256": "3bba6e411f93441b49b4ed410ccfe8de6a71b409bd2051b7520ae5051a4c3f0e",
+            "message": "A menu is not a card: square panel, full-bleed rows"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260927141116-f02d85"
+}

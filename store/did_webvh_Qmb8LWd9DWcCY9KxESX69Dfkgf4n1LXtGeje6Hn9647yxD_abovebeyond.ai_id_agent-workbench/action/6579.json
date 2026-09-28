@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "54b03b11de2089f1dbea55fbc5c841e64b554c75",
+            "branch": "workbench/cleanup/one-live-insight-3",
+            "files_sha256": "e3d561fd2cca6cc7194249aac247056ab1096899c1c4511a811cf04cb52a58e4",
+            "message": "One live insight; pattern-lane quality snapshots; an honest classify log\n\nlive-insight.mjs holds the rule the economy already used: not superseded, and draft,\nreviewed or published. The Studio's stat, its story starters and the system map\nexcluded only 'archived', a status no row has, and counted 6,530 lapsed insights as\nlive (10,396 against 3,866). The citation picker and the evidence search now use the\nsame rule instead of their own list.\n\nsuggest declared critique inside the try that set it, so the quality snapshot after\nit threw into an empty catch: no pattern-driven insight got a snapshot since 2 April.\n\nclassify logged 'Injecting N feedback examples' while nothing was injected; it now\nsays the examples are available and not injected, and why."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260927123612-01b74f"
+}

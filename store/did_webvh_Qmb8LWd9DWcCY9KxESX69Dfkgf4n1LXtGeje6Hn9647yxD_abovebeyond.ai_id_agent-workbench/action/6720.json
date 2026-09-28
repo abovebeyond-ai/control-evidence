@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Wat\n\n- **Voorraadcijfers live** op /aanbod/: de beloftestrook toont het echte aantal wagens op voorraad (`{aantal}`) en online (`{online}`), per aanvraag uit de Stocklist-API. \"+40\" en \"+700\" verouderden stil (vandaag 31 en 597). Valt de API weg, dan verdwijnt het getal en blijft de belofte staan (\"Wagens op voorraad\").\n- **\"Net binnen\"** in plaats van \"Actuele voorraad\" op de home: het blok toont de nieuwste wagens.\n- **\"Alles geregeld\"** past op elke breedte op twee regels (titel hier max. 40px; bij de gewone sectiemaat liep hij op brede schermen over drie \u00e0 vier regels). Lange woorden in de items breken met een koppelteken.\n- **Bedankt- en 404-pagina's** zonder grote lege hero: enkel de balk, dan vinkje, titel, tekst en twee knoppen. Ook de grijze verloopschaduw onder de compacte balk op telefoon is weg.\n- Dev: zonder Stocklist-sleutel leest ook de server-side voorraad de publieke proxy van stockcars.be (bestond al voor `/api/voorraad`, wees nog naar peugeotdebacker.be).\n\n## Na de merge\n\nTitels van de beloftestrook en het blok \"Net binnen\" staan in Sanity: seed vanaf main en een productiedeploy op Netlify.\n\n## Getoetst\n\n`npm test` 26/26; lokaal nagekeken op 390, 1200 en 1440 px.\n",
+            "branch": "workbench/voorraad-live",
+            "title": "Voorraadcijfers live, Net binnen, bedankpagina zonder lege hero"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260927160657-8d7738"
+}

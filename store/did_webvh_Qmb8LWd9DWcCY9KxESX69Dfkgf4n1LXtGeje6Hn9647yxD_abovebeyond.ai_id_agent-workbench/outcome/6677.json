@@ -1,0 +1,16 @@
+{
+    "action": "96b0d118505ba937b6d263050f3561c0",
+    "effect": {
+        "detail": {
+            "base": "abe91705bddb75b6c6c3b44913add46c34076782",
+            "branch": "workbench/mobiel-hero-scherp",
+            "commit": "f5311f1f28ec98396a0bd569f0d35099a8e26497",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6675,
+    "verdict": "ALLOW"
+}

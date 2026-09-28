@@ -1,0 +1,16 @@
+{
+    "action": "4f1a686f6871b95a434651d48376f6f8",
+    "effect": {
+        "detail": {
+            "base": "c959566bc97ca8d0dbfcc52f334eefb652c38c72",
+            "branch": "workbench/leerplandoelen-kop",
+            "commit": "7cdeb6e06883f7f34071ae91e153c78aeaea7ac1",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6537,
+    "verdict": "ALLOW"
+}

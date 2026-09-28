@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6d68a37cfebaf74904beb98fa210792491b43951",
+            "branch": "workbench/cleanup/one-classify-prompt",
+            "files_sha256": "8ef0a19fe5ee2a88be07d8682f1e9194c4d8577ac77b91d765e0e19529510fde",
+            "message": "One classifier prompt, sent by production and judged by the evals\n\nclassify.mjs, the model experiment and benchmark in self-improve.mjs and the gold-set\neval in eval-models.mjs each wrote their own copy of the classifier prompt, and the two\neval copies had drifted (no geography tiers, no Asian-platform exception, a shorter\nrubric). A model that won an eval had won on a prompt production never sends. The\nprompt is now classify-prompt.mjs; production's text is byte-identical, so the prompt\nhash in the classify log does not move. The evals label samples by position and match\non index or id."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260927120500-7e64a3"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na #19, op `main`:\n\n- **Home op telefoon scherp**: de hero was wazig omdat de liggende foto op een staand scherm sterk ingezoomd werd. Nu een staande uitsnede uit het originele bestand (1100 x 1774, 188 kB), via `<picture>` alleen op telefoon en tablet, met een eigen preload per apparaat (desktop laadt de telefoonversie niet en omgekeerd).\n- **Wagens-hero op telefoon** even hoog als bij Services.\n- **Over ons**: \"Vanaf 1 januari 1995 runt Hendrik in Middelburg voltijds zijn garage.\" Na de merge: `npm run seed` in `studio/`, want die tekst komt uit Sanity.\n\nTests 26/26, build groen.\n",
+            "branch": "workbench/mobiel-hero-scherp",
+            "title": "Scherpe homehero op telefoon, Wagens-hero hoger op telefoon, runt Hendrik"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260927150724-52e494"
+}

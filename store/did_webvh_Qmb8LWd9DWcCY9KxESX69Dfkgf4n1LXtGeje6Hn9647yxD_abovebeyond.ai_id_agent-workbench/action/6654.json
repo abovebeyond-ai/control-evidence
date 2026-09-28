@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "adb036f5b43d6b49c192f4c74b6ef8e51bd225cf",
+            "branch": "workbench/fix/the-readout-needs-room",
+            "files_sha256": "6e6be10ef2be09d08841f87e67168e7c25eb7c1616b1af07ce83677453164500",
+            "message": "The readout needs room above the bars"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260927145355-2b5f61"
+}
