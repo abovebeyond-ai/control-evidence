@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The trend readings in plain words: for new trends through the writer, for the public ones through an edit pass with a fixed check.\n\n**Why**\n- The site shows four fields per trend: \"Signal\", \"Why it matters\", \"The semiotic read\" and \"How to activate it\". They read as long abstract sentences, for example: \"youth are unbundling the linear life script and re-scaling each domain strategically\".\n- The house voice (`voice.mjs`) reached the trend writer only for headlines. The rules for the body never got there.\n\n**Changes**\n- **`READING_VOICE`** in `voice.mjs` sets the rules for the four fields: plain words, short sentences, concrete actors, show before you explain, no academic or consulting words, no dashes or bold, and a length per field. `suggest.mjs` puts them in both writing paths. The field lengths in the prompt become 2 to 3 sentences where it said 3 to 4.\n- **`plain-edit.mjs`** rewrites the public readings (the showcase set) with the deepen model (Opus 5.5), meaning unchanged.\n  - **The check decides, not the model.** `checkPlainEdit` in `plain-check.mjs` refuses an edit that:\n    - adds a number that isn't in the original reading (moving one between fields is allowed);\n    - uses a banned word, a dash or bold;\n    - makes a field or the whole reading longer.\n  - A refused edit gets one retry with its problems named. If that fails too, the reading stays as it was.\n  - It is **dry by default**; `--apply` writes. Every write keeps the old four fields in `plain_edit_undo`, and `--undo id,...` puts them back.\n  - The semiotic field is written back as one paragraph. It was stored in three layers, of which the site showed only one (the connotation). `readSemiotic` already reads prose, so nothing changes on the site side.\n- **`fable-polish.mjs` goes.** It asked for a \"deeper\" reading and wrote it without any check.\n\n**Trial on the box** (read-only, 3 public trends, Opus 5.5, $0.27 each)\n- **Shorter:** \"Youth Turn to Friends, Not Clinics, to Heal\" went from 571 to 300 words, and \"Gen Z Built Their Own Banking System\" from 490 to 286.\n- **Shorter sentences:** the average went from about 30 words to about 24.\n- **Nothing lost:** every number and source stays (OECD 52%, Ofcom 64%, 210% on TikTok, 1.3M views).\n\n**Not in this PR:** running the edit on the 46 public trends. That comes after a dry run over all of them and review of the result.\n\nChecks: new `test/plain-check.test.mjs` (4 tests); 947 tests, 0 failures.\n",
+            "branch": "workbench/readings/plain-words",
+            "title": "Readings in plain words: the writer gets the body rules, plain-edit replaces fable-polish"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928132954-28ab54"
+}

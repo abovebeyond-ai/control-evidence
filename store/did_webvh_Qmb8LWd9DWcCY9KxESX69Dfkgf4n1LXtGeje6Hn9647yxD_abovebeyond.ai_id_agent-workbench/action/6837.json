@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "23b04d1ca850aa695f596dad3c6b0e9f2dc54914",
+            "branch": "workbench/fix/the-bell-rings-before-the-partner-rebased",
+            "files_sha256": "8d08aefd2290d658dfcb73a4e4c6c96a7fbf06ea6ea7a35a32cfd331a86301a3",
+            "message": "The bell rings before the partner is spoken to"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928155120-5be651"
+}

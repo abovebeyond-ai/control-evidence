@@ -1,0 +1,16 @@
+{
+    "action": "2afe5876d27452c9cb4a9d4621694bf7",
+    "effect": {
+        "detail": {
+            "base": "f5935b59ea5295f76c4eae1ee042b8bdf15bb535",
+            "branch": "workbench/fix/a-webhook-without-a-session",
+            "commit": "ba9752d6e84831c11f2cb0b299cd0252eb7e8300",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6825,
+    "verdict": "ALLOW"
+}

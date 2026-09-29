@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "MCP contract **2.0.0**: `get_trend` leaves the graph out unless an agent asks for it.\n\n**Why:** the graph around a trend is almost all of the answer. On 2026-09-29 it was 82,402 of the 89,472 characters for one trend (\"Junior Designers Direct AI\u2026\"). That is more than many agents' tool results hold, and the reading, the evidence, the need and the links (together about 7,000 characters) were buried under it.\n\n**Changes**\n- `include_graph` defaults to `false`. `include_graph: true` gives the old answer; `get_trend_graph` (since 1.6.0) reads the graph on its own.\n- The tool description, the parameter and the server instructions say so. `needs.graph` still names the plan that includes the graph, for plans without it.\n- A changed default is something an agent may rely on, so this is a major version. It was announced as deprecated in 1.6.0 (26 September), and the old behaviour lasted two versions (1.6, 1.7, 1.8). The changelog explains why.\n- Tests: `TrendGraphTest` checks the new default (no graph) and `include_graph: true` (with graph). Two tests in `McpDoorTest` that read the graph in `get_trend` now ask for it explicitly. The contract fixture is at 2.0.0.\n\nWho it affects: MCP use is 35 reads so far, from two accounts. An agent fetches the tool list at the start of every session and sees the new default there.\n\nChecks: Pint passes; PHPUnit runs 325 tests with 0 failures.\n",
+            "branch": "workbench/mcp/2.0.0",
+            "title": "MCP 2.0.0: get_trend leaves the graph out unless asked"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260929073343-7895b7"
+}

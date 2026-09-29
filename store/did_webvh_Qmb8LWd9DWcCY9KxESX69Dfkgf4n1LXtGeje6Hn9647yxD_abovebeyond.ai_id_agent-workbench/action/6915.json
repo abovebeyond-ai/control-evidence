@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3e37df061f00792b142ac3b02e7efe8e30c2ac2f",
+            "branch": "workbench/trends/needs-in-taxonomy",
+            "files_sha256": "6f1317495330f77715c76c89a00fd387a993200401913b974ebd1f1b89ffef6e",
+            "message": "The taxonomy the site reads carries the needs\n\n/internal/taxonomy adds drivers and driver_label from the Standard, so the site can\nname a trend's need without a hand-written list."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928194316-f88bf1"
+}

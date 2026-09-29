@@ -1,0 +1,16 @@
+{
+    "action": "76bbaf2f39d647aa9c3a22328aa8d183",
+    "effect": {
+        "detail": {
+            "base": "09bffe3bcd2025a42010972be1cd28c270ee683a",
+            "branch": "workbench/fix/a-damage-photo-keeps-its-transaction",
+            "commit": "6c4cbdf9ce1d44468fda69c597a8e1321632e7ff",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6879,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "42127729b67c7949c9613e7db28d5a8b",
+    "effect": {
+        "detail": {
+            "base": "386a40e329211afd7a34282b912e1412298b3ae2",
+            "branch": "workbench/fix/a-bidding-car-is-not-own-stock",
+            "commit": "b84b2fee61968137f9069841db0932f0919b03b3",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6801,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "3cb53cffbe0b18d9c3feedd88c769ca8",
+    "effect": {
+        "detail": {
+            "base": "1d4bf36cf502c629d2e8347dbcea75e56e24bd63",
+            "branch": "workbench/models/opus-5-5-fable-5-1-b",
+            "commit": "53cb5a8d5e46db0c89879bd4d0f036f2d0a567d8",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6747,
+    "verdict": "ALLOW"
+}

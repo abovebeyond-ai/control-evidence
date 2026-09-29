@@ -1,0 +1,16 @@
+{
+    "action": "f33b4304a1d3fd27a11623a7b89f963c",
+    "effect": {
+        "detail": {
+            "base": "e6699ffdd03b931cc518ae9660bc02f8fb3289fd",
+            "branch": "workbench/group-guards",
+            "commit": "4c5d72e492fb009dc0ab55d7efcf47d2bfa55c1f",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6873,
+    "verdict": "ALLOW"
+}

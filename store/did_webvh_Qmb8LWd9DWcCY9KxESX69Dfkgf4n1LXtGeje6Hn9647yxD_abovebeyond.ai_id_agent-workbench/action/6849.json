@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "42d5f10e5bcc05892f6c1302f8232b9cd5262e57",
+            "branch": "workbench/readings/trend-headlines",
+            "files_sha256": "6a3c753a822f25f5d77f2245e0350f69667f983d55ed1f57c377b92a8bbc9e18",
+            "message": "Trend headlines say what the trend shows, and plain-edit applies chosen ones\n\nThe trend writer used the post-title voice: a coined name, a colon shape and a\nmemorable contrast, which gave 'Gen Z Builds Identity From Streaming, Not Family'\nover evidence about trips, hobbies and style. TREND_HEADLINE asks for one plain\nsentence at the size of the evidence; the Studio keeps HEADLINE_VOICE for posts.\ncheckHeadline holds the form (5 to 12 words, 70 characters, no colon, dash or\nquestion mark, no sociology words) and a failing headline joins the one rewrite.\nplain-edit --apply --headlines writes chosen headlines while the trend still carries\nthe old one, kept for --undo, which now walks back one kept row at a time."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928160208-cc0e9a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "09bffe3bcd2025a42010972be1cd28c270ee683a",
+            "branch": "workbench/fix/a-damage-photo-keeps-its-transaction",
+            "files_sha256": "d147ef29e6e1f036848357934481964b78916191fcb8bc65cf3cca05060f7937",
+            "message": "A damage photo no longer takes the transaction with it"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928171654-9c1464"
+}

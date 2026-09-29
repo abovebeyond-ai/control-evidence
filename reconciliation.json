@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-09-28T07:35:04+00:00",
+    "computed_at": "2026-09-29T07:35:02+00:00",
     "window": {
-        "since": "2026-09-21T07:33:43+00:00",
+        "since": "2026-09-22T07:33:43+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -74,8 +74,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 121,
-                "gateway": 121
+                "github": 87,
+                "gateway": 87
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 25,
-                "gateway": 25
+                "github": 32,
+                "gateway": 32
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 15,
-                "gateway": 15
+                "github": 19,
+                "gateway": 18
             }
         },
         "Trendwolves/glk-transferor": {
@@ -196,8 +196,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 126,
-                "gateway": 126
+                "github": 100,
+                "gateway": 100
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -206,8 +206,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 14,
-                "gateway": 8
+                "github": 15,
+                "gateway": 9
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -283,8 +283,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 5,
+                "gateway": 5
             }
         },
         "Trendwolves/gentells-standard": {
@@ -294,8 +294,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 5,
-                "gateway": 5
+                "github": 6,
+                "gateway": 6
             }
         },
         "Trendwolves/gentells-studio": {
@@ -316,8 +316,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 2,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/control-verify-action": {
@@ -327,8 +327,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "abovebeyond-ai/elixir": {
@@ -338,8 +338,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -765,7 +765,8 @@
         }
     },
     "unexplained": [
-        "stocklistdealer-eu/stockcars-website: 14 pulls on GitHub, 8 performed by the gateway"
+        "Trendwolves/gentells-site: 19 pulls on GitHub, 18 performed by the gateway",
+        "stocklistdealer-eu/stockcars-website: 15 pulls on GitHub, 9 performed by the gateway"
     ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind, counted across pages until the window closes (rows 10.3.2, 10.3.4)"
 }

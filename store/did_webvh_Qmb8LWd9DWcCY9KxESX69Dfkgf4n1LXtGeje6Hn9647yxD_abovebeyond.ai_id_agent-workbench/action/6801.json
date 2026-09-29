@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "386a40e329211afd7a34282b912e1412298b3ae2",
+            "branch": "workbench/fix/a-bidding-car-is-not-own-stock",
+            "files_sha256": "2660fb491ba4281109fdb5584676873f3d2774c31b4b9614df2887cfd9725ea1",
+            "message": "A bidding car is not a car from your own stock"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928134257-d33e4e"
+}

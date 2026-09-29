@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ff663747447ba233348df4a8473e248fb66c38c0",
+            "branch": "workbench/mutation-mariadb",
+            "files_sha256": "cd159adbb1553f172085b0b351918aeeca0d65773230e7d2b084209e8d663a35",
+            "message": "De wekelijkse mutatietest draait op MariaDB, zoals de suite"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260928175031-87eb53"
+}

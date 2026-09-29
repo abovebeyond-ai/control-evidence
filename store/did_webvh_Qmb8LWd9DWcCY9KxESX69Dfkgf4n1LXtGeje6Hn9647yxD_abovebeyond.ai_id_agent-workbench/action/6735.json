@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bf6e9461c863eae12016fd944740303ae834b66b",
+            "branch": "workbench/fix/the-view-count-sits-with-the-car",
+            "files_sha256": "7f4692e28ad3be7f26764a493f6bea21235685d6a7d303724c071cd5d6f5ac4a",
+            "message": "The view count stands with the car, not among the status chips"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928115133-196184"
+}

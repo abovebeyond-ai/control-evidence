@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Settings, Machine tab: a \"Claude accounts\" panel above the model routing.\n\nEach account gets one row with:\n- the slot (a1, a2) and the email logged in there;\n- the pipeline's state in a word (Working, Unproven, Limited, Login refused, No login), coloured on the word only, and the sentence the pipeline gives with it;\n- today's calls, output tokens and cost at list price;\n- **Test:** one tiny call on exactly that account. The answer, or the reason there was none, appears under the row.\n- When a login is refused or missing, the steps to log in again (`CLAUDE_CONFIG_DIR=\u2026 claude`, `/logout`, `/login`), with the slot's own path.\n\nThe panel refreshes every minute.\n\nDepends on pipeline \"Each Claude login says who it is\". Without it, `/accounts` returns the old shape and the panel shows no email and no state.\n\nChecks: the lint ratchet is at its ceiling (42), the build passes, and Playwright runs 23 of 23, including 2 new tests: the rows and state words, and the repair text appearing only for the refused slot, plus the Test result.\n",
+            "branch": "workbench/accounts/settings-panel",
+            "title": "Settings shows the Claude accounts: who, how they are doing, a test"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260928131352-1df222"
+}

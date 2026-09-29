@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8118bb27149d9c7364401a9f0e63fd27379ab038",
+            "branch": "workbench/accounts/status-per-login",
+            "files_sha256": "ffa64f8527b9fb5ff504f467b8772c5ceb3e04fd8d652c4cf95834205c57e8dc",
+            "message": "Each Claude login says who it is, how it is doing, and what it did today\n\n/accounts reported whether a login file existed per slot, and no call said which\naccount made it. It now reads the slot's own account record (email, organisation;\nnever the token), gives one state in order (no login, refused, limited, working,\nunproven) with a sentence, and counts today's calls per account from token_usage,\nwhich records the account from now on. POST /accounts/probe makes one tiny Haiku call\non one account to turn unproven into an answer; it never writes the halt marker."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928131336-324f1b"
+}

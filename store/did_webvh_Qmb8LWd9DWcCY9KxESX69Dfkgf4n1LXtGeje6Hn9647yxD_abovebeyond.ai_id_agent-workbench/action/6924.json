@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A trend says which need it serves: on its page, in the API and in the MCP.\n\n**Changes**\n- **Migration:** `trend_cards.driver_tags` (json), one or two driver ids from the Gentells Standard, the main one first. `Projection::reconcileTrends` stores what the pipeline sends (`driver_tags`, pipeline #223).\n- **Labels:** `Taxonomy::driverLabel` and `driverDefinition` read name and definition from the pipeline's taxonomy (`drivers`, `driver_label`, pipeline #224), like every other label on the site. There is no hand-written list.\n- **Trend page:** under the chips, \"What they are after: **Autonomy**, and belonging. Choosing for yourself, not being defined, going your own way.\" A trend without a need shows no empty line.\n- **API and MCP (contract 1.7.0):** every trend carries `drivers: [{id, label}]`.\n  - The field is called `drivers`, not `needs`, because `needs` already says which plan opens a depth.\n  - The server instructions tell agents that trends serving the same need can be read together.\n  - The changelog and the contract fixture are updated.\n\n**Order:** pipeline #223 and #224 first. Without them `driver_tags` stays empty, and no need is shown.\n\nChecks: new `TrendNeedTest` (projection stores it; the page shows name and definition; no line without a need; the API gives `drivers` with a name). The `McpContractTest` fixture is at 1.7.0. Pint and lint-tailwind pass; PHPUnit runs 322 tests with 0 failures.\n",
+            "branch": "workbench/trends/needs-2",
+            "title": "A trend says the need it serves, on its page and at the agent door"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260928194644-5cfec5"
+}

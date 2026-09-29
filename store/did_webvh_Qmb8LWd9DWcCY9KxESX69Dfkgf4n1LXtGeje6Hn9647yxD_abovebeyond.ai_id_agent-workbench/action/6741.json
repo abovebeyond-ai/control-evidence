@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e866a598eb3b3ffbda884f06cc9f40ad9af6bd95",
+            "branch": "workbench/fix/a-bought-over-car-carries-its-transaction",
+            "files_sha256": "7509714fd6174dc456e7593d5ab5d963863fbe68cfc9859944afd6f38adc894e",
+            "message": "A bought-over car carries its transaction, or says so"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928124452-ef879c"
+}

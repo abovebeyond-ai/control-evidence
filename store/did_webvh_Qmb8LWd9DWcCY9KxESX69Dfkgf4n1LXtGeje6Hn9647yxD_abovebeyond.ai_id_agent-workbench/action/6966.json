@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pins Gentells Standard **0.4.0** (`bin/sync-standard.mjs --ref v0.4.0`, digest-checked, from the tag).\n\n0.4.0 adds only:\n- `Trend.tags.drivers`, the need, which the pipeline writes since #223;\n- the relations `reinforces` and `pullsAgainst` between trends, which the pipeline writes since #226.\n\nWhat the pipeline already did now stands in the Standard it declares, and new objects are stamped `standard_version` 0.4.0.\n\nChecks: 959 tests, 0 failures.\n",
+            "branch": "workbench/standard/0.4.0-b",
+            "title": "The pipeline reads Gentells Standard 0.4.0"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929072050-a7882b"
+}

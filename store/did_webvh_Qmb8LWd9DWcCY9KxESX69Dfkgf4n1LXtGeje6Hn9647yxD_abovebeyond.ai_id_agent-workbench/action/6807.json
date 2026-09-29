@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "423ada19124053a4b8b08c91e265255d0ec62e40",
+            "branch": "workbench/readings/semiotic-prose",
+            "files_sha256": "965a6f38b65f58f30d796d71a76de325b228fb94b2f533c399388ab88555cd77",
+            "message": "Insights shows a semiotic read stored as one paragraph\n\nplain-edit writes the semiotic read of an edited trend as prose instead of three\nlayers; the page looked only for the layers and would have shown nothing."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260928134516-ea15cc"
+}

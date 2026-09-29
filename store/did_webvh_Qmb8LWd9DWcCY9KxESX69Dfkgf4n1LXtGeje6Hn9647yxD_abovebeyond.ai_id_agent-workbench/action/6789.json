@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0aea22af7f2e460cd2d8c3d66581aa0df6b7b6bd",
+            "branch": "workbench/readings/plain-words",
+            "files_sha256": "09265f084472b16a8d25c647be27712a99c5c4ac90c4ee93cfe691cf586ba7ff",
+            "message": "Readings in plain words: the writer gets the body rules, plain-edit replaces fable-polish\n\nThe house voice reached the trend writer for headlines only, so the four reading\nfields came out as long abstract sentences. READING_VOICE (voice.mjs) now goes to\nboth writing paths in suggest.mjs. plain-edit.mjs rewrites the public readings with\nthe deepen model, meaning unchanged; checkPlainEdit (plain-check.mjs) refuses an edit\nthat adds a number, uses a banned word, a dash or bold, or grows. Dry by default,\nevery write kept in plain_edit_undo, --undo puts it back. fable-polish.mjs asked for\na deeper reading and wrote it unchecked; it goes."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928132954-28ab54"
+}

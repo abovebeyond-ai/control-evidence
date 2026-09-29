@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6094abdab1761b2b91a57c7b6f5b31ddbf66f88a",
+            "branch": "workbench/feat/a-partner-proposes-the-dealer-decides",
+            "files_sha256": "cba352b4886546e6551fc82a6ad7afe81d77b253ca47e2e6fd6160803fd7ac03",
+            "message": "Keep what a partner wanted to change, as a proposal for the dealer"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928132627-4f10c1"
+}

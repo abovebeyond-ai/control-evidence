@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "When a trend is folded, its old address now keeps working, including after its headline changed.\n\n**What went wrong (2026-09-28)**\n- A slug is set once and stays when the headline changes, so shared links keep working.\n- `reconcileTrends` still wrote the old address of a folded trend as `basisSlug($old['headline'])`, and recomputed it every round.\n- That afternoon 50 public trends got a new headline and then 6 were folded. The 6 aliases got slugs that had never existed (`students-shop-abroad-\u2026`). The real addresses (`gen-z-exits-broken-systems-\u2026`, as they appear in `api_reads`) gave a 404.\n\n**Now**\n- The reconcile reads the live slugs (`TrendCard::pluck('slug', 'id')`) before any card disappears, and records that as the old address.\n- An address that is already recorded is never recomputed: the next round no longer knows the card and would otherwise fall back to the headline.\n- Only when neither exists (an absorbed trend that never had a card) does it derive the slug from the headline, as before.\n\n**After the deploy** I'll correct the 6 recorded aliases to their real slugs. Before the deploy that isn't possible, because every round would overwrite the correction.\n\nChecks: new test in `TrendAliasTest`: after a headline change and a fold, the alias has the live slug, a second round doesn't change it, and the old address gives a 301. It fails on the old code. Pint passes; PHPUnit runs 318 tests with 0 failures.\n",
+            "branch": "workbench/fix/alias-real-slug",
+            "title": "A folded trend's old address is the slug that was live, and it stays"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260928180741-e36d81"
+}

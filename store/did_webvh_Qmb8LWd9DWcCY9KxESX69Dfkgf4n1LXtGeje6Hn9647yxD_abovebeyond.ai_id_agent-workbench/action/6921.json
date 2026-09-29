@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6020d3871d743ee5e54e51608401f50a20637952",
+            "branch": "workbench/trends/needs-2",
+            "files_sha256": "1a4cfc1a4ecfb9db6db58fd630100e604a1d25c74f7c1410850e9569f0ba71e1",
+            "message": "A trend says the need it serves, on its page and at the agent door\n\ndriver_tags on trend cards (one or two of the Standard's drivers, main one first),\nstored from the projection. The trend page says what they are after, with the\nStandard's definition; the API and MCP carry drivers [{id, label}] on every trend\n(contract 1.7.0). Named drivers, not needs: that key already says which plan\nopens a depth."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260928194644-5cfec5"
+}

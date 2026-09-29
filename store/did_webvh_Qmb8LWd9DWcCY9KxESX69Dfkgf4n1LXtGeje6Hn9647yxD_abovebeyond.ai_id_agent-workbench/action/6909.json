@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3e37df061f00792b142ac3b02e7efe8e30c2ac2f",
+            "branch": "workbench/trends/needs",
+            "files_sha256": "b91d5f63b3655824701274a0ae189a776651912f5fffe057667e2dc098f06420",
+            "message": "A trend names the need it serves\n\ndriver_tags on insights: one or two of the Standard's six drivers (security,\nbelonging, status, autonomy, mastery, meaning), the first the main need. The writer\nnames it for new trends (needsPrompt), writeInsight keeps only ids the Standard\nknows, the showcase projection carries it to the site, and bin/assign-needs.mjs\nwrites a reviewed list for the trends written before the field existed."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928194205-49dd7e"
+}

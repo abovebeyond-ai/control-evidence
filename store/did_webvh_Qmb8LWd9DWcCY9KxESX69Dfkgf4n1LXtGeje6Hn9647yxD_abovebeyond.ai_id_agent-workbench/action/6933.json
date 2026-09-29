@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8b2b9f7c54b81085b19c98e0f1d7426a9cf7cf44",
+            "branch": "workbench/fix/a-menu-label-is-one-phrase",
+            "files_sha256": "66614c1785eac82ca586114da47f962e9de9a35fc8ab3794e1ac1c7cdb7c2567",
+            "message": "A menu label is one phrase"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928200530-ea6a28"
+}

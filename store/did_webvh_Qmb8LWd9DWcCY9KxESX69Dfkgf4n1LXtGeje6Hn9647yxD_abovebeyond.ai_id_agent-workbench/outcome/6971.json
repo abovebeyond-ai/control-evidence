@@ -1,0 +1,16 @@
+{
+    "action": "d59946421287504b288283ac7f3baf10",
+    "effect": {
+        "detail": {
+            "base": "d2f8e4653b0209e19182bbbcba15ecdb4e365fe8",
+            "branch": "workbench/mcp/2.0.0",
+            "commit": "282e7b95768d34aea805fe867a53056f29ec7f23",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6969,
+    "verdict": "ALLOW"
+}

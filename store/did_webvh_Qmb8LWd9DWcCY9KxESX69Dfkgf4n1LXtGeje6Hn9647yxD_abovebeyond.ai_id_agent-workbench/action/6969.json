@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d2f8e4653b0209e19182bbbcba15ecdb4e365fe8",
+            "branch": "workbench/mcp/2.0.0",
+            "files_sha256": "4cfb875b34b68689ba796eb2c7ed36a809d715d87e23dabbc9b51bb6c4f0a5a2",
+            "message": "MCP 2.0.0: get_trend leaves the graph out unless asked\n\ninclude_graph defaults to false. The graph was 82,402 of the 89,472 characters of\none trend; get_trend_graph has read it on its own since 1.6.0, where the graph\ninside get_trend was announced as deprecated."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260929073343-7895b7"
+}

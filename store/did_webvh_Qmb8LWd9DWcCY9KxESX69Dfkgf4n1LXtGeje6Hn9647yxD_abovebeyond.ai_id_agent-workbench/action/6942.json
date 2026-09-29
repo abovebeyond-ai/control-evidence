@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The vehicle list fits a laptop screen\n\nThe row actions were unreachable. Measured on production at a 1084px window: the\ntable asks 1433px inside a 992px container, and html and body carry\noverflow-x: hidden, so those 441px are cut off with no scrollbar at all. The cell\nholding view, duplicate, edit and delete sat at 1305 to 1475, entirely off-screen,\nreachable by nothing. The card layout only starts at 767px, so every window\nbetween 768px and roughly 1525px was affected, which is most laptops.\n\nWidening the container was not available: an overflow container breaks the\nquick-actions menu and the sticky header, both documented in this file from\nearlier attempts. So the table itself had to shrink.\n\nA table never renders below its min-content width and max-width cannot force it,\nso every rule here works by lowering that minimum. They were measured together\nrather than one at a time, because hiding a column lets the others expand: on its\nown, hiding \"gepubliceerd\" appeared to make the table 133px WIDER, and four hides\ntogether were worse than one.\n\nWhat buys the 441px: the vehicle and price sub-lines may wrap, the status cell\nloses width: 100%, the photo goes to 60px, the fixed width of the button column is\nreleased, and the portal icons ride over each other like stacked avatars, which\nturns 152px of icons into 97px with a white ring keeping each readable.\n\nThat leaves the four buttons of the last column, worth 146px, which is the one\nthing that does not fit. Below 1550px they give way to the same four actions in\nthe quick-actions menu beside them, so nothing is lost, only moved. Above it the\nbuttons stay and the menu does not repeat them.\n\nVerified in the browser against production at 1084px, with these rules exactly as\nwritten and no !important: 1433 to 992, the actions column back in view at 1014,\nand no sideways page scroll. The row grows from 76px to 104px, which is the price\nof keeping every column.\n",
+            "branch": "workbench/fix/the-vehicle-list-fits-a-laptop",
+            "title": "The vehicle list fits a laptop screen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928201625-5d90fa"
+}

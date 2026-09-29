@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three simplifications in the trend writer, plus a way to apply the reviewed plain edit exactly as it was read.\n\n**The critic loop goes**\n- After every draft, a Llama 3.3 model (Together) scored five dimensions and asked for a rewrite whenever any score was below 3. That almost always happened: 2,314 times in the logs, mostly over the headline (1,373) and specificity (609).\n- Every rewrite was a second suggest-write call on the expensive writer. That is about 13 of the roughly 50 suggest-write calls a day, a quarter of $15 to $25 a day.\n- A weaker model was judging a stronger one. With the writer on Opus 5.5 that gets worse.\n- The house voice is now in the writer's own instructions (`READING_VOICE`, #219), and the ProveML gate still checks every claim.\n- Removed: `critiqueInsight`, `improveInsight`, the `insight-critic` phase, the second gate after the critic, and the verify-tier test that checked the critic's model family.\n- The quality snapshot of a new trend now records the verified claims (`claims_verified`/`claims_total`) instead of critic scores. The score becomes strength \u00d7 0.6 + 0.4 when at least three signals carry it.\n\n**The semiotic read as one paragraph**\n- The writer returns `semiotic` as 2 to 3 sentences instead of `{denotation, connotation, myth}`. The site only ever showed the connotation. Both writing paths and the fallback prompt ask for it the same way.\n- `writeInsight` stores a string as it is. `JSON.stringify` would have put quotes around it.\n- `readSemiotic` also reads a JSON string. The dashboard handles prose since #58.\n\n**`plain-edit --apply --from-dry`**\n- It writes what the last dry run produced (`store/plain-edit-dry.json`), so exactly the 59 edits reviewed on 2026-09-28 land, not a fresh draw from the model.\n- Each edit is checked again with `checkPlainEdit`. A trend whose text changed since the dry run is left alone.\n- `--undo` works as before.\n\nChecks: 946 tests, 0 failures; no undefined names.\n",
+            "branch": "workbench/readings/simpler-writer",
+            "title": "No critic pass, one-paragraph semiotic read, apply the reviewed plain edit"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928141216-99b430"
+}

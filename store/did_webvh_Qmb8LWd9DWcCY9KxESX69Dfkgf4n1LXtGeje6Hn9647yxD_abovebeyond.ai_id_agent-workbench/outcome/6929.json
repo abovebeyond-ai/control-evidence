@@ -1,0 +1,16 @@
+{
+    "action": "b975d4072c5cb0b428c1df417ceb19c8",
+    "effect": {
+        "detail": {
+            "base": "8a64e896dec4510b78eee42c51d2a69601a11283",
+            "branch": "workbench/fix/signal-dates",
+            "commit": "f5accb46052b8dd94e3b6e68138cd680ef7e3213",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6927,
+    "verdict": "ALLOW"
+}

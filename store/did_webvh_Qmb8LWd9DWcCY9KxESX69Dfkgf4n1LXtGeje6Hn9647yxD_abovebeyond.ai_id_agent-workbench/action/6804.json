@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two things a bidding car said about itself that were not true. Both reported by Ilse on 28 September.\n\n## The customer-mode switch does not belong there\n\nThe detail of a bidding car offered the Stocklist customer-mode toggle. A bidding already has its own way of showing something to a customer: **\"toon aan klant\"** on the bidding screen, with a reduction entered per time, and R B1-7.2 says in as many words that it does *not* use the Stocklist margin.\n\nSo the toggle was a second door to the same goal, with different rules, on a screen where dealers trade with each other. That is how a dealer picks the wrong one.\n\nBound to `$export_vehicle`, the same flag the rest of that screen already uses to recognise a bidding. The switch itself stays where it belongs \u2014 the rule is \"not on a bidding\", not \"gone\".\n\n## The photo set claimed a destination it does not have\n\nOn the photo tab of a bidding car the set was headed **\"Eigen website en zoekertjes\"**. That car is going to a bidding, not to this dealer's website, and on a phone the heading reads as the sheet of a car from your own fleet \u2014 which is exactly what Ilse said happened to her.\n\nIt now reads **\"Foto's van de wagen\"** for a bidding car, in four languages. The set itself stays: a dealer puts the photos with the takeover documents there, and that was deliberate (see the comment above it). Only its name promised something untrue.\n\n## Verified\n\n`ABiddingCarIsNotOwnStockTest`, three tests: the switch hangs off the bidding flag, the switch has not simply disappeared, the heading chooses on the type of car, and both headings exist and differ in all four languages.\n\nNew rules R B1-7.3 and R B1-1.18, each in the section that already owned its subject.\n\nPinned on the markup rather than on a rendered screen, deliberately: both are conditions in a blade, and rendering a real bidding needs an export, an invitation and a bidder first. What can actually go wrong is somebody removing the condition, and that is what these read.\n\n`phpstan` green, `npm run build` green, `pint` green on the added file. Local suite: the same nine failures as on a clean `main` in my environment.\n\n## Not in here\n\nThe duplicate models (3008 versus 3008 GT). That one needs a decision per entry before any cleanup: 3008 GT is a trim, 308 SW is a real model, and getting it wrong deletes models that belong there. It is a data decision for Ilse, not a code change.\n",
+            "branch": "workbench/fix/a-bidding-car-is-not-own-stock",
+            "title": "A bidding car is not a car from your own stock"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928134257-d33e4e"
+}

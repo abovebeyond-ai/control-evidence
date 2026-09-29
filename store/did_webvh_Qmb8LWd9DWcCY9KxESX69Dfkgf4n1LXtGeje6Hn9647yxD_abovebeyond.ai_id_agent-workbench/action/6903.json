@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ed811239254de4f3dce163d6c871a71ea44ca6e2",
+            "branch": "workbench/mutation-no-skips",
+            "files_sha256": "e101c61b8ea47a7fbe1868f85a4af8ae21a7a91881ba09956751561675771f02",
+            "message": "De mutatietest slaat geen mutant meer over"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260928184742-dac33a"
+}

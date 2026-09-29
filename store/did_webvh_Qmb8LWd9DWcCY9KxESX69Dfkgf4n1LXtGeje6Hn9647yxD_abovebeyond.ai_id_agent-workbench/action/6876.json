@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het bewaren van een leerlingengroep toetste niets. Het bewerkscherm vroeg bij het openen wie de groep mocht wijzigen, en verwijderen deed dat ook, maar de PUT die het formulier bewaart niet. Een leerkracht van dezelfde school kon zo de groep van een collega hernoemen of aan een andere klas koppelen, en daarmee veranderen welke leerlingen in de projecten zitten die de groep gebruiken. Gevonden bij het meten voor het architectuurplan van 28 september.\n\n## De wijziging\n\n- **`StudentGroupController::update` stelt dezelfde vraag als `edit`**: de maker, een beheerder van de school of een superadmin. Anders 401, zoals bewerken en verwijderen al deden.\n- **De groep in de leerlingenlijst is vergrendeld** (`#[Locked]`). Toevoegen en weghalen toetsten al op de groep zelf (`StudentGroup::addStudent` en `removeStudent`); het slot zorgt dat de browser de lijst niet naar een andere groep verzet.\n- **Regelboek**: nieuw hoofdstuk B3 Leerlingengroepen, met twee rechtenregels.\n\n## Wat verandert voor gebruikers\n\nNiets voor de maker of een beheerder. Een andere leerkracht kon het bewerkscherm al niet openen, en kan de groep nu ook niet meer wijzigen door het verzoek zelf te sturen.\n\n## De rechter\n\n`WhoMayChangeAStudentGroupTest`, drie gevallen met `@rule B3-1.x`: een collega hernoemt de groep niet en koppelt ze niet los van haar klas; de maker en een beheerder wijzigen ze wel; de browser kan de leerlingenlijst niet naar een andere groep verzetten. De test kijkt naar de opgeslagen rij en niet naar de naam op het scherm, want een groep die een klas volgt toont de naam van die klas. Mutaties: de toets in `update` weg, of het slot weg, en telkens valt een test om. Volledige suite op MariaDB.\n\n## Samen met drie andere\n\nDit is een van vier pull requests met dezelfde soort toets op de server: clusters, projecten, scores en leerlingengroepen. Ze raken elk andere bestanden en kunnen in elke volgorde gemerged worden.\n",
+            "branch": "workbench/group-guards",
+            "title": "Het bewaren van een leerlingengroep toetst wie haar mag wijzigen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260928170551-5be1f6"
+}

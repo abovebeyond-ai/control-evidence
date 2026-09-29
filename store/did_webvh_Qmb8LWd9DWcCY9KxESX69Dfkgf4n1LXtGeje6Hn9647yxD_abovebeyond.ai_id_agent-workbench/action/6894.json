@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`bin/fold-twins.mjs` comes back, with `--plan`.\n\n**Why:** I removed the script as a one-off in #211. A day later it's needed again: the 59 public trends contain 10 groups of twins under the fold rule (patterns or signals overlapping by half). Twins arise whenever readings are approved in batches, so this is a recurring tool.\n\n**`--plan plan.json`** applies an editor's decision as data: per group the trend that stays (`head`) and the ones that fold into it (`fold`). The choices are made on a choice page.\n- The groups are not recomputed, so a member the editor kept apart stays apart.\n- A step is only carried out while every trend in it is still live, not replaced and public.\n- It is dry by default; `--apply` links. It uses the same `linkTwins` as on 2026-09-23: `superseded_by` plus `superseded_at`, the folded trend's signals go to the one that stays, and the site sends the old address there (`trend_aliases`, 301).\n\nAlso fixed: the import of `db` (`{db}`).\n\nChecks: a plan dry run on an empty database (0 folds); the full suite, 948 tests, 0 failures.\n",
+            "branch": "workbench/readings/fold-plan",
+            "title": "fold-twins back, with a plan an editor made"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928175633-178faa"
+}

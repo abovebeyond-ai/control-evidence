@@ -1,0 +1,16 @@
+{
+    "action": "f4e8b16d52120a81f482c4e8c3c0803e",
+    "effect": {
+        "detail": {
+            "base": "6094abdab1761b2b91a57c7b6f5b31ddbf66f88a",
+            "branch": "workbench/feat/a-partner-proposes-the-dealer-decides",
+            "commit": "66ac19acf35ebba64dac9fc89d3203b554d49e91",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6783,
+    "verdict": "ALLOW"
+}

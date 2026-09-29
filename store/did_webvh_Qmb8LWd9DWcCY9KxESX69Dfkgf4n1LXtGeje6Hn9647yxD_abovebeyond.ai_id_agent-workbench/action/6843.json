@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3fe4542e7eebb197d4a280732cfc4874d8e28355",
+            "branch": "workbench/fix/the-mutation-run-passes-a-dead-option",
+            "files_sha256": "74762b91b2f779258e79fb27b8776ca5f42aff3864913a4c6fc8f32003fb5102",
+            "message": "The weekly mutation run passes an option that does not exist"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928160136-3a5b49"
+}

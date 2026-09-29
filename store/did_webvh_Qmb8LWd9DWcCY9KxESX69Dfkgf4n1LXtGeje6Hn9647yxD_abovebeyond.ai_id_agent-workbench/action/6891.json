@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b4b477b516349164195fc95394d9033cd60703d",
+            "branch": "workbench/readings/fold-plan",
+            "files_sha256": "a50bb856ca50acc21697b5f4b7f3dfbc2e632009d292786afe5381fffc6be9ea",
+            "message": "fold-twins back, with a plan an editor made\n\nRemoved as a one-off on 2026-09-27 and needed again the day after: 59 public trends\nhold 10 groups of twins by the fold rule. --plan applies an editor's decision as\ndata ([{head, fold}]) without recomputing the groups, and only while every trend in\na step is still live and public."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928175633-178faa"
+}

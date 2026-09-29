@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "#209 zette de wekelijkse mutatietest op MariaDB. Een proefrun vanaf die tak slaagde in 28 minuten, maar liet 475 van de 994 mutanten ongetest: de kern van `ReportService`, `ScoringService`, `StudentProgressService` en `AverageCalculator`. Infection slaat een mutant over als de testklassen die zijn regel dekken in de eerste run samen al langer duurden dan de timeout per mutant, 30 seconden. Zo'n mutant valt dan weg uit de score, en de job blijft groen. De MSI van 89 procent ging dus over 519 mutanten. Op sqlite liepen dezelfde tests sneller, en op 21 september werd niets overgeslagen.\n\n## De wijziging\n\n- **Timeout per mutant van 30 naar 90 seconden**, in `infection.json5`.\n- **Een overgeslagen mutant maakt de job rood.** Een nieuwe stap leest `Skipped:` uit het samenvattingslog en faalt als dat geen 0 is. Het rapport wordt nog steeds bewaard.\n\n## Waarom 90\n\nInfection kan een droge run doen (`--dry-run`): alle beslissingen, ook het overslaan, zonder tests te draaien. Hieronder op de dekking en de tijden van een lokale run op MariaDB. Die is trager dan de runner: de eerste run duurde er 5:47, op de runner 4:45.\n\n| Timeout | Overgeslagen |\n|---|---|\n| 30 s | 437, op de runner 475 |\n| 40 s | 323 |\n| 45 s | 20 |\n| 50 s | 11 |\n| 60 s | 0 |\n| 90 s | 0 |\n\nMet 90 blijft er ruim de helft marge boven de traagste mutant. Wat het kost: een mutant die echt blijft hangen, doet er nu 90 seconden over in plaats van 30.\n\n## Looptijd\n\nDe proefrun deed 28 minuten over de 519 mutanten die hij draaide. Per mutant kost MariaDB op de runner nauwelijks meer dan sqlite: een gedode mutant deed er mediaan 4,5 seconden over, tegen 4,4 op 21 september. De 475 die erbij komen, hebben zwaardere testsets. Geschat komt de hele run op 50 tot 90 minuten; de jobtimeout blijft 150.\n\n## De rechter\n\nEen workflow start niet vanaf de werkbank. Nagekeken met de droge runs hierboven, en de nieuwe stap op twee samenvattingen: die met `Skipped: 475` faalt, die met `Skipped: 0` slaagt. De echte proef is een run vanaf deze tak:\n\n```\ngh workflow run \"Mutation testing\" -R ShaneDeconinck/naviskore --ref workbench/mutation-no-skips\n```\n",
+            "branch": "workbench/mutation-no-skips",
+            "title": "De mutatietest slaat geen mutant meer over"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260928184742-dac33a"
+}

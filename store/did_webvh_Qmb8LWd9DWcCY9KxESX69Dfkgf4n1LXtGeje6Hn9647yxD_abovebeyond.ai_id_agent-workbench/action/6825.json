@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f5935b59ea5295f76c4eae1ee042b8bdf15bb535",
+            "branch": "workbench/fix/a-webhook-without-a-session",
+            "files_sha256": "03c0febc3e125839a2f7400e831d8ac5aadabd54457d72ba1bae77153dd51307",
+            "message": "A missing dealer is an empty collection, not null"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928144521-192f0f"
+}

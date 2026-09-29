@@ -1,0 +1,16 @@
+{
+    "action": "fc933bbc1f85770af8ff4035d8e6ec75",
+    "effect": {
+        "detail": {
+            "base": "8b2b9f7c54b81085b19c98e0f1d7426a9cf7cf44",
+            "branch": "workbench/fix/a-menu-label-is-one-phrase",
+            "commit": "6345e4476ca77400e7507711f4a24f360ef0e275",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6933,
+    "verdict": "ALLOW"
+}

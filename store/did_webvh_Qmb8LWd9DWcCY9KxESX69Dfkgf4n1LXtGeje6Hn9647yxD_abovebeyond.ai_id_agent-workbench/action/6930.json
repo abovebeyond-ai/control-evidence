@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Dates from feeds become ISO at intake, and one unreadable date no longer blanks a trend's strength.\n\n**What went wrong**\n- 1,073 signals, all from web feeds, carry a date like `Tue, 21 Jul 2026 14:47:02 BST`. JavaScript can't read \"BST\" and gives `NaN`.\n- `strengthOf` sums age weights over a trend's signals, so a single such date made the whole strength `NaN`, and it was stored as empty.\n- Five trends never had a strength, three of them public. On the site and in the MCP they show `strength: null`, and there is no momentum on their page.\n\n**Changes**\n- **`core/dates.mjs`, `normalizeDate`:** turns a date into ISO. Time zone abbreviations with one meaning (BST, CEST, EST, JST, \u2026) become their offset. Ambiguous ones (IST, CST) and non-dates give `null`, never a guess.\n- **`makeSignal`** normalises `published_at` at intake. What can't be read falls back to the intake time, as before.\n- **`strengthOf`:** a date it can't read counts as the intake date, then as one half-life. One bad date no longer spoils the sum.\n- **`bin/fix-signal-dates.mjs`:** a one-time pass over the existing signals. It's dry by default, `--apply` rewrites, and the old value goes into `signal_date_undo`.\n\n**After merge:** run `fix-signal-dates --apply`, then recompute strength for the five trends without one.\n\nChecks: new `test/dates.test.mjs` (BST, CEST, GMT; IST and nonsense give null; `makeSignal` delivers a readable date). `insight-economy.test.mjs` gets a test that fails on the old formula (\"strength NaN\"). 955 tests, 0 failures.\n",
+            "branch": "workbench/fix/signal-dates",
+            "title": "Dates from feeds become ISO at intake, and one bad date no longer blanks a strength"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928200324-60f6af"
+}

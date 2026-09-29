@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het projectscherm en zijn keuzelijsten schreven zonder \u00e9\u00e9n toets. Wie het scherm kon openen, kon het project wijzigen, en drie keuzelijsten bewaarden het id van het project in een eigenschap die de browser kan aanpassen. Een leerkracht kon zo zichzelf in het team van een project van een collega zetten, en daarna diens evaluaties en scores bewerken. Gevonden bij het meten voor het architectuurplan van 28 september.\n\n## De wijziging\n\n- **Elke schrijfactie vraagt `ProjectPolicy::update`**: eindtermen en clusters toevoegen of weghalen (`SearchDropdownAttainmentLevelAndAttainmentLevelCluster`, `Project\\Show`), leerlingen en groepen toevoegen of weghalen (`Student\\SearchDropdownStudent`), het team samenstellen (`SearchDropdownTeacher`). De regel bestond al (de maker, het team, een beheerder van de school); alleen de bewerkroute vroeg ernaar.\n- **Het project-id in de drie keuzelijsten is vergrendeld** (`#[Locked]`); het projectscherm had dat al.\n- **`SearchDropdownStudentGroup` weg**: geen enkel scherm gebruikte hem, hij schreef zonder toets, en PHPStan wist al dat hij een User doorgaf waar een Student hoort. De baseline krimpt met die regel.\n- **Regelboek**: nieuw hoofdstuk S1 Een project, met drie rechtenregels.\n\n## Wat verandert voor gebruikers\n\nNiets voor wie in het project zit. Een leerkracht die het project niet maakte, niet in het team zit en geen beheerder is, kan het niet meer wijzigen, ook niet door het verzoek zelf te sturen.\n\n## De rechter\n\n`WhoMayChangeAProjectTest`, vier gevallen met `@rule S1-1.x`: een collega buiten het project voegt geen eindterm, cluster, groep of leerling toe en haalt geen eindterm weg; een collega zet zichzelf niet in het team; de maker, een teamlid en een beheerder wijzigen het wel; de browser kan geen keuzelijst naar een ander project verzetten. Mutaties: elke toets apart weggehaald (eindtermen, leerlingen, team, projectscherm, het slot op de teamlijst), en telkens valt de test om. De bestaande tests van de keuzelijsten, die als maker werken, blijven groen. Volledige suite op MariaDB.\n\n## Samen met drie andere\n\nDit is een van vier pull requests met dezelfde soort toets op de server: clusters, projecten, scores en leerlingengroepen. Ze raken elk andere bestanden en kunnen in elke volgorde gemerged worden.\n",
+            "branch": "workbench/project-guards",
+            "title": "Het projectscherm toetst op de server wie een project mag wijzigen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260928170524-244b60"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2179ce03405e15a3c829d8a9e43d63d23f21dad8",
+            "branch": "workbench/fix/alias-real-slug",
+            "files_sha256": "bc12a2db44973bb089e4c0afe960ea1bb8e8143634567b6f2411fedc5793ff8a",
+            "message": "A folded trend's old address is the slug that was live, and it stays\n\nThe projection wrote a folded trend's old address as a slug derived from its latest\nheadline, and rewrote it every round. A slug is set once and stays while the\nheadline changes, so after a round of new headlines six folded trends pointed from\naddresses that had never existed and their real addresses gave a 404. The reconcile\nnow reads the live slugs before any card goes, and never recomputes an address it\nalready recorded."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260928180741-e36d81"
+}

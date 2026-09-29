@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "27711cc03a9e72104e10e590040781043ce1643f",
+            "branch": "workbench/models/opus-5-5-fable-5-1-b",
+            "files_sha256": "3f88c4fea56c81d988f90eea6b6942efaa9750aa1eaadd5583b6ff427001b040",
+            "message": "Settings offers the models the pipeline has, Opus 5.5 and Fable 5.1 included\n\nThe routing panel offered three hardcoded ids with Opus 5 as the top; it now shows\nthe pipeline's four tiers from /config/models, Fable included, and a phase still on a\nprevious model shows that model ticked. Labels for Opus 5.5 and Fable 5.1, and a\nfallback that reads claude-opus-6-5 as Opus 6.5. Chat's Deep is Opus 5.5."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260928125551-8c9ac0"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e6699ffdd03b931cc518ae9660bc02f8fb3289fd",
+            "branch": "workbench/evaluation-guards",
+            "files_sha256": "8e9ec65b59f46d16ceaa05b4a0c22fe4d80f8ec94dc96deffaf9d2478f814952",
+            "message": "Het scorescherm toetst bij elke wijziging wie schrijft, en waarvoor"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260928170538-b9d47f"
+}

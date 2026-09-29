@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8a64e896dec4510b78eee42c51d2a69601a11283",
+            "branch": "workbench/fix/signal-dates",
+            "files_sha256": "ace1863a8ee7a9792bb1b7db01d6b2d33a17715bc7617c6f58be60703e205bca",
+            "message": "Dates from feeds become ISO at intake, and one bad date no longer blanks a strength\n\n1,073 web signals carried dates like 'Tue, 21 Jul 2026 14:47:02 BST', which\nJavaScript reads as NaN; one of them in a trend's evidence made strengthOf NaN, and\nfive trends had no strength from the day they were written. normalizeDate (core/\ndates.mjs) turns zone abbreviations with one meaning into offsets and gives null for\nthe rest; makeSignal uses it. strengthOf falls back to the ingest date for a date it\ncannot read. bin/fix-signal-dates.mjs rewrites the existing ones, kept for undo."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928200324-60f6af"
+}

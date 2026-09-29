@@ -1,0 +1,16 @@
+{
+    "action": "9f0aff1c19059fa1651677eed94d463a",
+    "effect": {
+        "detail": {
+            "base": "631748573e0995e9e3b80c50c6d0b67b7501fefd",
+            "branch": "workbench/v0.4/trend-relations",
+            "commit": "4e0c40376bf48d26d8df07d80822f5c1d8d1809c",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6957,
+    "verdict": "ALLOW"
+}

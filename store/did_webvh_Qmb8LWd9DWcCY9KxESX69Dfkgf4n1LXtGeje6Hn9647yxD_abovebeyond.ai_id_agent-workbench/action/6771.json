@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cf00870533d3d85d2e6c7a62f48c7ef17571cf30",
+            "branch": "workbench/accounts/settings-panel",
+            "files_sha256": "d2aa1755d85ee17e235bc87bca2f0c3a7fab8d305cec22d72f567918c5ab3500",
+            "message": "Settings shows the Claude accounts: who, how they are doing, a test\n\nA panel above the model routing: per slot the email, the pipeline's state in a word\nand a sentence, today's calls and cost, and a Test button that makes one tiny call on\nthat account. A refused login shows the steps to log in again. Refreshes every minute."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260928131352-1df222"
+}

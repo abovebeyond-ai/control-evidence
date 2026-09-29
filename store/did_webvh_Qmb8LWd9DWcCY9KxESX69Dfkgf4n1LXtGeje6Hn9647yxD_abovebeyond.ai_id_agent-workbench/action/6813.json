@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6a6bb25a306d32b08a50b9ebb45a99e89f6388bf",
+            "branch": "workbench/feat/the-bell-says-a-car-changed-hands",
+            "files_sha256": "d8bafeac860fa4d83cc3c62af9cea7d0fd4554f25e487053f6b22900ff39dd5b",
+            "message": "The bell says a car changed hands"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928135344-ee25e2"
+}

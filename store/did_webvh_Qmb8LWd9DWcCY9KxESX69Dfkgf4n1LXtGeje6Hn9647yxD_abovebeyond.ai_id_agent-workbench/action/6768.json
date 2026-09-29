@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Each Claude login says who it is, how it is doing and what it did today.\n\n**Why it was fragile**\n- `/accounts` said \"logged in\" as soon as a login file existed on disk. On 2026-09-11 it said so for nine hours about a login whose refresh had died.\n- Which email sat in which slot was nowhere in the system. The notes that described it were wrong by 2026-09-28: a1 is now `shane.deconinck@gmail.com` and a2 is `hello@shanedeconinck.be`.\n- No call recorded which account made it, so \"how is a2 doing\" had no answer except a file's timestamp.\n\n**Now**\n- **Identity:** `getAccountState()` reads the email and organisation from the CLI's own account record in the slot (`<configDir>/.claude.json`, `oauthAccount`). It never reads the token.\n- **One state per slot, with a sentence (`accountVerdict`).** The states are checked in this order:\n  - `no-login`: there is no login in the slot.\n  - `refused`: the halt marker is set for this account.\n  - `limited`: the account is out of room until a given time.\n  - `working`: it produced real output within 3 hours.\n  - `unproven`: anything else. This is not an alarm by itself, since a slot can be idle while the other one works, but it is where a dead refresh hides, so the sentence says how long ago it last answered.\n- **Calls per account:** `token_usage` gets an `account` column, filled by the CLI calls and the streamed calls. `accountUsage(24)` counts calls, output tokens and list-price cost per account. Rows from before this change carry no account and are left out.\n- **`POST /accounts/probe?name=a1`** (behind auth) makes one Haiku call of a single word on exactly that account. It records the call and marks the account proven when it answers. It **never** writes the halt marker, so a probe of an idle slot cannot stop the other account's work.\n\nThe dashboard shows this in Settings: dashboard PR \"Settings shows the Claude accounts\".\n\nChecks: new `test/account-status.test.mjs` (state order, the 09-11 case, counting per account); 943 tests, 0 failures.\n",
+            "branch": "workbench/accounts/status-per-login",
+            "title": "Each Claude login says who it is, how it is doing, and what it did today"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928131336-324f1b"
+}

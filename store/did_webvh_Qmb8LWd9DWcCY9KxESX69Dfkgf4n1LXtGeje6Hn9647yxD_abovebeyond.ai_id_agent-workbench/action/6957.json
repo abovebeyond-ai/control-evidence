@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "631748573e0995e9e3b80c50c6d0b67b7501fefd",
+            "branch": "workbench/v0.4/trend-relations",
+            "files_sha256": "5cbe22fffec7f65b09eb7f12f35c61167ff83e0fe4e9499024857c8c5e47232c",
+            "message": "0.4.0: trends name the need they serve, and reinforce or pull against each other\n\nTrend is tagged with drivers (one or two, main first). Two symmetric, asserted\nrelations between trends, reinforces and pullsAgainst, each carrying a sentence on\nwhat the two show together. Added only; compat reads every earlier release."
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20260928202505-a670d2"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "986f2b7e087092018ed8cf58e9f93bdeaa0c512c",
+            "branch": "workbench/mail-assets",
+            "files_sha256": "2be3f6371863da14f14d716562819aff943e1a28fdb6cabaed7e03eb8370af0c",
+            "message": "Afbeeldingen voor de mailhandtekening"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260928133631-352665"
+}

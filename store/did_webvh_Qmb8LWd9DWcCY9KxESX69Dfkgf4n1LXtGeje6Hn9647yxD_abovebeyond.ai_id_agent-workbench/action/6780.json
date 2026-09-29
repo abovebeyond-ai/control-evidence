@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`main` went red after #833 merged, and the failing test is one I dismissed this morning as an unexplained flake. It was not a flake.\n\n`OperationsScreenTest::test_a_refusal_from_a_partner_is_on_the_screen_with_its_reason` writes a row with `created_at => now()` and then asserts the screen says `Facts::humanSeconds(0)` \u2014 \"0 seconds ago\". Between the write and the render the real clock keeps going. One second is enough: the screen says 1, the test expects 0.\n\nThat explains every observation, including the ones that made it look random:\n\n| where | step | duration | outcome |\n|---|---|---|---|\n| in isolation | \u2014 | under a second | passes |\n| PR branch | `Run tests` | 4m35s | passes |\n| `main` | `Run tests and measure coverage` | 6m15s | **fails** |\n\n`main` runs a different step. Coverage instrumentation makes every render slower, so the clock ticks over between the insert and the assertion. The one local failure I saw this morning was a full-suite run, which is slow for the same reason; it then passed twice in isolation and I wrote it off.\n\n## The fix\n\n`$this->freezeTime()` in both clock-dependent tests. The second one asserts \"60 min\" against an hour-old timestamp, so it survives a second of drift by flooring \u2014 but it is the same class of bug and one line to close.\n\nNo production code changes: these tests were racing the clock, not reporting a defect in the screen.\n\n## What I got wrong\n\nI called this a flake twice today, once in the #826 description and once out loud, on the grounds that it did not reproduce. \"Did not reproduce in a fast run\" was never evidence for a bug that only appears in a slow one, and the PR branch never runs the step that catches it.\n\n`pint` green. Local suite: the same nine failures as on a clean `main` in my environment.\n",
+            "branch": "workbench/fix/a-test-that-races-the-clock",
+            "title": "A test that races the clock"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928131742-e25566"
+}

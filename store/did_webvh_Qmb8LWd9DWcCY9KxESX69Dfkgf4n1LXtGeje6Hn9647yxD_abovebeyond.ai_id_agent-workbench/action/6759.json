@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e866a598eb3b3ffbda884f06cc9f40ad9af6bd95",
+            "branch": "workbench/fix/a-transaction-says-so-or-is-seen",
+            "files_sha256": "d13449456f78875cd5039d9f21daaa22dd160e568c1726920677188a7f422afe",
+            "message": "A bought-over car carries its transaction, or says so"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928130414-fb4b19"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A trend shows which trends to read it with, and which pull against it.\n\n**Changes**\n- **Migration:** `trend_cards.links` (json). `Projection::reconcileTrends` stores what the pipeline sends (#226), and only the known kinds (`reinforces`, `pulls`) with an id.\n- **`TrendCard::linkedCards()`:** the linked cards in the pipeline's order (pull-against first). A link to a card that is gone is left out.\n- **Trend page:** a new block \"Read it together with\" under the reading. Per link it shows \"Pulls against it\" or \"Reinforces it\", the linked trend (clickable) and the sentence on what the two show together. There is no block without links.\n- **API and MCP (contract 1.8.0):** `get_trend` carries `links: [{id, url, headline, link: \"reinforces\" | \"pulls_against\", why}]`, on every plan. The server instructions say how to use them when combining trends. The changelog and the contract fixture are updated.\n\n**Order:** pipeline #226 first, then write the 49 reviewed links there. Without that the field stays empty and no block appears.\n\nChecks: new `TrendLinksTest` (projection filters unknown kinds; the page shows both kinds with their sentence and link; the API gives `pulls_against` first and leaves out gone cards). The `McpContractTest` fixture is at 1.8.0. Pint and lint-tailwind pass; PHPUnit runs 325 tests with 0 failures.\n",
+            "branch": "workbench/trends/links",
+            "title": "A trend shows what to read it with, and what pulls against it"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260928202321-8d7700"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "237cb9518cf3da0f0197c7e140a1d5224c1d2dd9",
+            "branch": "workbench/trends/links",
+            "files_sha256": "6e9c0dd7568538635e94576706b4a8f7111343b243c0f5a995d064467c990b6c",
+            "message": "Trends that belong together, and trends that pull against each other\n\ntrend_links holds judged links between trends: reinforces or pulls, with one\nsentence saying what the two show together. linksOf reads them from either side,\nonly to trends the reader can open, and follows a folded trend to the one that took\nit over. The showcase projection carries each trend's links to the site;\nbin/assign-links.mjs writes a reviewed list."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928202147-af1ed7"
+}

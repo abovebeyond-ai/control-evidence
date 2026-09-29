@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Opus 5.5 and Fable 5.1 become the current models, and the list prices match what is published.\n\n**Models**\n- `MODELS.OPUS` is now `claude-opus-5-5` and `MODELS.FABLE` is `claude-fable-5-1`.\n- Opus 5 and Fable 5 stay in the catalog, marked `previous: true`. `getModelConfig` drops any saved model the catalog doesn't know, so without them the four phases saved on Opus 5 (deepen, consolidate, pull-insights, content-write) would quietly fall back to their default. They keep Opus 5 until someone moves them in Settings.\n- `/chat` takes its allowed models from the catalog (`HAIKU`, `SONNET`, `OPUS`) instead of a hand-written list that still named Opus 4.8.\n- The Fable gauges (`/llm-health` and the system map) count every Fable generation (`LIKE 'claude-fable-5%'`).\n\n**Prices** (platform.claude.com/docs pricing, read 2026-09-28)\n- Sonnet 5: $2/$10. The $3/$15 in the catalog was the increase planned for 1 September, which was cancelled.\n- Opus 5.5: $4/$20. Fable 5.1: $10/$50.\n- These prices only apply to API calls and to the estimated rows of streamed calls (chat, Studio). CLI calls carry the CLI's own `total_cost_usd`.\n\n**Precondition, done:** the box runs Claude Code 2.1.283. Version 2.1.86 refused Opus 5.5 (it needs 2.1.280 or newer). Opus 5.5 and Fable 5.1 were tested through `callLLM` on the box: they answer, and the output has the shape the pipeline reads.\n\nChecks: new `test/model-catalog.test.mjs`; 940 tests, 0 failures.\n",
+            "branch": "workbench/models/opus-5-5-fable-5-1-b",
+            "title": "Opus 5.5 and Fable 5.1 in the catalog, list prices as published"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928125535-a7d404"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The `Run Infection` step died on `The \"--only-covered\" option does not exist.` before mutating a single line.\n\nInfection 0.35 has no such flag. Only covered code is mutated by default, and `--with-uncovered` is the opt-in for the other direction. The flag went in together with the workflow and the dependency itself, in one commit on 19 September 2026, and was never run against the pinned version \u2014 so both scheduled runs failed identically, on 21 and on 28 September. **This never worked; it is not a regression**, which is also why there is no earlier green run to compare against.\n\n## The change\n\nDropping the flag keeps the intent exactly, because what it asked for is now the default. The comment above the step keeps the reasoning and now states the direction that still matters: we do not pass `--with-uncovered`, because coverage here is about a quarter and mutating the rest would make thousands of mutants nobody can kill and a percentage that says nothing about the tests that do exist.\n\n## How far this is verified\n\nWith the flag gone the command parses and Infection proceeds to the coverage stage, where it stops on this machine for want of a coverage driver:\n\n```\nCoverage needs to be generated but no code coverage generator (pcov, phpdbg or xdebug) has been detected.\n```\n\nThat is the step it could never reach before. CI sets `coverage: pcov`, so that blocker does not apply there.\n\nWhat I have **not** verified is the mutation run itself end to end, and I cannot from here without installing a coverage extension. The workflow is `workflow_dispatch` plus a Monday 04:00 schedule, so it can be started by hand to confirm; starting a workflow is outside the agent grant, so that is a button on your side. Given the run has a 120-minute budget against a 2288-test suite, the first real run is also the first measurement of what it costs.\n",
+            "branch": "workbench/fix/the-mutation-run-passes-a-dead-option",
+            "title": "The weekly mutation run passes an option that does not exist"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928160136-3a5b49"
+}

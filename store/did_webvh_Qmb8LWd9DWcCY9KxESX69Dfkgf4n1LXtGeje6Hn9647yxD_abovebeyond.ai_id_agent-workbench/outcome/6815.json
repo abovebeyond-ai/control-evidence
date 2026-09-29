@@ -1,0 +1,16 @@
+{
+    "action": "7359fbd578c9fc9ef2928c53f8ecc06f",
+    "effect": {
+        "detail": {
+            "base": "6a6bb25a306d32b08a50b9ebb45a99e89f6388bf",
+            "branch": "workbench/feat/the-bell-says-a-car-changed-hands",
+            "commit": "72b282be942bcfea72c3bc8356849908633cabf3",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6813,
+    "verdict": "ALLOW"
+}

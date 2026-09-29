@@ -1,0 +1,16 @@
+{
+    "action": "e515be8f57efa1014cd6d3621dd0fdfa",
+    "effect": {
+        "detail": {
+            "base": "bf6e9461c863eae12016fd944740303ae834b66b",
+            "branch": "workbench/fix/the-view-count-sits-with-the-car",
+            "commit": "a95718ce77504227b9d394004cc044e023502fb1",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6735,
+    "verdict": "ALLOW"
+}

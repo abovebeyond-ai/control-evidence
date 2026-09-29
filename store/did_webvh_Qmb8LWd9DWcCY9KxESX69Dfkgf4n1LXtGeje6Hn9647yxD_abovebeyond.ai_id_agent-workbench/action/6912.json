@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A trend names the need it serves: one of the Gentells Standard's six drivers.\n\n**Why:** a trend says what young people do. The need says what they are trying to get or protect by doing it. Trends that serve the same need can be read and used together, and the spread over the six is itself a finding. On 2026-09-28, 21 of the 53 public trends served autonomy and 2 served meaning (read-only trial with Opus 5.5, reviewed on a page).\n\n**Changes**\n- **`packages/core/needs.mjs`:** `DRIVERS` comes from the pinned Standard, never from a list in this repo. `canonicalNeeds` keeps at most two known ids, the main one first. `needsPrompt()` is the prompt section.\n- **`insights.driver_tags`** is a new column (JSON list of driver ids). `writeInsight` stores it, known ids only.\n- **`suggest.mjs`:** both writing paths ask for `driverTags` and get the list of needs.\n- **`listShowcaseInsights`** carries `driver_tags`, so the site receives it with the rest of each trend's data.\n- **`bin/assign-needs.mjs --from <list> [--apply]`** writes a reviewed list `[{id, primary, secondary}]` for trends from before this field existed. It is dry by default, and only touches live trends and known needs.\n\n**After merge:** assign the 53 public trends from the reviewed list. The site gets its own PR to store the need, show it and pass it through the API/MCP.\n\nChecks: new `test/needs.test.mjs` (the six from the Standard, canonicalisation, `writeInsight` keeps only known ids); 951 tests, 0 failures.\n",
+            "branch": "workbench/trends/needs",
+            "title": "A trend names the need it serves"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928194205-49dd7e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1d4bf36cf502c629d2e8347dbcea75e56e24bd63",
+            "branch": "workbench/models/opus-5-5-fable-5-1-b",
+            "files_sha256": "e69268b127bdfd6d47f359ef341a5c16a63f4a544f33f67577728cc2d453e8a0",
+            "message": "Opus 5.5 and Fable 5.1 in the catalog, list prices as published\n\nThe catalog knew Opus 5 and Fable 5 as the newest models. OPUS and FABLE are now\nOpus 5.5 and Fable 5.1; Opus 5 and Fable 5 stay as previous and callable, so the\nphases saved on Opus 5 keep it until someone moves them in Settings. Sonnet 5 was\npriced at the $3/$15 increase that was cancelled; it is $2/$10. Opus 5.5 is $4/$20.\nThe chat's allowed models come from the catalog instead of a hand list with Opus 4.8,\nand the Fable gauge counts every Fable generation."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928125535-a7d404"
+}

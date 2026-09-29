@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Trend headlines say what the trend shows. `plain-edit` can apply chosen headlines.\n\n**Why**\n- The trend writer used the headline voice meant for post titles: \"coin the trend\", the shape \"Coined Name: What It Rewrites\", and \"contrast makes it memorable\".\n- For a trend that produced drama. \"Gen Z Builds Identity From Streaming, Not Family\" sat over evidence about trips, hobbies and style, with nothing about family.\n- Asked to repair it under the same voice, the model produced labels instead: \"Maker Money: \u2026\", \"Global Moves, Local Roots: \u2026\".\n\n**Changes**\n- **`TREND_HEADLINE` in `voice.mjs`:** one plain sentence, who does what, at the size of the evidence. A contrast only when the evidence shows something being dropped. No coined name or colon construction, concrete actors, no sociology words. `suggest.mjs` (both paths) and `pull-harvest.mjs` use it. The Studio keeps `HEADLINE_VOICE` for post titles.\n- **`checkHeadline` in `plain-check.mjs`:** 5 to 12 words, at most 70 characters, no colon or semicolon construction, no dash or question mark, no banned words (\"identity\", \"every\", \"institutions\", \u2026). A headline that fails is added to the writer's single rewrite, alongside any claims that didn't verify. If it still fails after that, the trend stays and the log says why. The headline is not the only reason to throw away a paid and verified reading.\n- **`plain-edit --apply --headlines <file>`** writes chosen headlines from a list of `{id, old, headline}`:\n  - only while the trend still carries `old`, and only when the new one passes `checkHeadline`;\n  - the old headline goes to `plain_edit_undo`;\n  - `--undo` now walks back one kept row at a time: first the headline, then the reading;\n  - the site keeps a trend's address when its headline changes (the slug is only filled when it's empty).\n\n**After merge:** the choices from the headline page (artifact) go into `store/headline-choices.json` and are applied with `--headlines`.\n\nChecks: `test/plain-check.test.mjs` gains 2 tests: plain sentences pass; labels, colons, \"identity\" and \"every\" do not. 948 tests, 0 failures.\n",
+            "branch": "workbench/readings/trend-headlines",
+            "title": "Trend headlines say what the trend shows, and plain-edit applies chosen ones"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260928160208-cc0e9a"
+}

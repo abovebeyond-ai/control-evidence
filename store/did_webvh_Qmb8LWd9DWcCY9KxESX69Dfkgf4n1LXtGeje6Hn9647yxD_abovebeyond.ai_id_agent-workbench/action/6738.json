@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The view count sat among the status chips, first in the row, and it looked misplaced because it was.\n\nTwo reasons, and the second one explains the odd spacing.\n\n**It is not a status.** The chips beside it say what the car *is*: sold, draft, on the marketplace, in option, Car-Pass. The count says what other people did. I wrote exactly that in the comment above its CSS and then put it in the most prominent position in that group anyway.\n\n**`.ui-chips` is a two-column grid**, not a flowing row. So the count took a whole grid cell of its own, which pushed \"Op Stocklist\" to the far side of the cell and shoved Car-Pass onto the next line. The wide gap in the middle was the grid doing what it was told.\n\n## Where it goes instead\n\nOnto the line that already carries the facts about this car, behind year, kilometres and body style:\n\n```\nBMW 320d Touring\n2020 \u00b7 145.000 km \u00b7 Break \u00b7 \ud83d\udc41 3\n```\n\nThat line is where quiet facts about a car belong, it flows as text instead of occupying a grid cell, and the count stops competing with the lifecycle badge. The readout with the split between website and platform still appears on hover.\n\n## Verified\n\n`test_the_count_stands_with_the_car_and_not_among_the_status_chips` asserts the old class is gone and that the count now appears before the status cell in the markup. Putting it back among the chips is the obvious tidy-up for somebody who did not see this, so it is named rather than left to comments.\n\nThe class moves from `ui-chip-viewed` to `ui-viewed`, since it is no longer a chip. `StylesheetSyntaxTest` checks that every `ui-` class in a view is defined and every one in the stylesheet is used, so the rename had to happen on both sides at once.\n\n`npm run build` green. Local suite: the same nine failures as on a clean `main` in my environment.\n",
+            "branch": "workbench/fix/the-view-count-sits-with-the-car",
+            "title": "The view count stands with the car, not among the status chips"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928115133-196184"
+}

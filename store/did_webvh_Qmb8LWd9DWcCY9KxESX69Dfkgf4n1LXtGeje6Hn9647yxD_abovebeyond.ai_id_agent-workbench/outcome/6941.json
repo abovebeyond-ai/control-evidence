@@ -1,0 +1,16 @@
+{
+    "action": "c8471aaa357f4959fcc895382726712a",
+    "effect": {
+        "detail": {
+            "base": "1300a50c27b376654acd3e8dcb9a806394502d75",
+            "branch": "workbench/fix/the-vehicle-list-fits-a-laptop",
+            "commit": "9b37fee5c40ec53e655858264841f3368a1839d8",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6939,
+    "verdict": "ALLOW"
+}

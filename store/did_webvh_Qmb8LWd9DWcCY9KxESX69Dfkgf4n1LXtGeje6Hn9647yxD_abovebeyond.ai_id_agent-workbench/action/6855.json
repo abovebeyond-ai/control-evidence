@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e6699ffdd03b931cc518ae9660bc02f8fb3289fd",
+            "branch": "workbench/cluster-guards",
+            "files_sha256": "f9a111f5bfc1a37a5920da751f35ea1cdfc1afdb3b0f750680cd4c1c259c258a",
+            "message": "De server beslist wie een cluster mag wijzigen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260928170504-f64030"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Settings now shows the models the pipeline has, Opus 5.5 and Fable 5.1 included.\n\n- **Model routing:** it offered three hardcoded ids, with Opus 5 at the top. It now takes the four tiers (Haiku, Sonnet, Opus, Fable) from `/config/models`, so a new generation in the pipeline's catalog shows up here without an edit. The guide below the buttons is keyed by tier as well, and Fable has its own line.\n- **Previous model stays visible:** a phase still on a previous model (Opus 5) shows that model as an extra, ticked button, so the edit starts from what actually runs.\n- **Labels:** `models.js` knows Opus 5.5 and Fable 5.1. The fallback now reads `claude-opus-6-5` as \"Opus 6.5\" instead of \"Opus 6 5\".\n- **Chat:** \"Deep\" becomes Opus 5.5 (it was Opus 4.8).\n\nDepends on pipeline \"Opus 5.5 and Fable 5.1 in the catalog\". Merge that one first, or Settings keeps showing the old catalog until it lands.\n\nChecks: the lint ratchet is at its ceiling (42), the build passes, and all 21 Playwright tests pass.\n",
+            "branch": "workbench/models/opus-5-5-fable-5-1-b",
+            "title": "Settings offers the models the pipeline has, Opus 5.5 and Fable 5.1 included"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260928125551-8c9ac0"
+}

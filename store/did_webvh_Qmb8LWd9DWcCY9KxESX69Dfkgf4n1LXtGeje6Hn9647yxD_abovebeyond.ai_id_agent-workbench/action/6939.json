@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1300a50c27b376654acd3e8dcb9a806394502d75",
+            "branch": "workbench/fix/the-vehicle-list-fits-a-laptop",
+            "files_sha256": "cf53412994a53259234525dccf84d179a43395f6cd19f1be5b0f3eb85cf03e02",
+            "message": "The vehicle list fits a laptop screen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928201625-5d90fa"
+}

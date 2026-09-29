@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0a8e4c4b4261e139bbf7bba44e89281f95215f75",
+            "branch": "workbench/fix/a-test-that-races-the-clock",
+            "files_sha256": "2bb2bd4ed47c083e8bf4758deb2e1c2719fe0760a72cfaa3e8712312c2133c1d",
+            "message": "A test that races the clock"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260928131742-e25566"
+}

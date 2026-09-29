@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Version 0.4.0: a trend names the need it serves, and trends can reinforce or pull against each other.\n\n- **`Trend.tags.drivers`** (`many`): the need a trend serves, one or two of the six drivers, the main one first. The Gentells pipeline writes it since 2026-09-28 (all 53 public trends), and the site shows it (\"What they are after\").\n- **Two relations between trends,** symmetric, weight `asserted`:\n  - `reinforces`: different behaviours, one larger movement, clearer together.\n  - `pullsAgainst`: opposite directions on something that matters, a tension to build on.\n\n  Both carry one sentence on what the two show together. They are judged, not counted: the pipeline keeps a link only when the judgement holds from both sides (49 of 105 proposed pairs on 2026-09-28). The concept-level `opposing` edges proved no substitute, because automatically named tensions tie unrelated trends together.\n- **Added only,** so `tools/compat.mjs` reads every earlier release. The exports (SKOS/OWL) are regenerated. `CHANGELOG`, `package.json` and `VERSION.json` are at 0.4.0.\n\nAfter merge: tag `v0.4.0`, then the pipeline pins it with `bin/sync-standard.mjs --ref v0.4.0`.\n\nChecks: `npm test`, 50 of 50.\n",
+            "branch": "workbench/v0.4/trend-relations",
+            "title": "0.4.0: trends name the need they serve, and reinforce or pull against each other"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20260928202505-a670d2"
+}

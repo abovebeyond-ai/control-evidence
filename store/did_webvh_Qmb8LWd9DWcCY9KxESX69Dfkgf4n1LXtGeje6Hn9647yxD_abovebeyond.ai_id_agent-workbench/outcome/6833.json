@@ -1,0 +1,16 @@
+{
+    "action": "3c119758c07eb6ec4d8a071a56856a88",
+    "effect": {
+        "detail": {
+            "base": "f5935b59ea5295f76c4eae1ee042b8bdf15bb535",
+            "branch": "workbench/fix/the-bell-rings-before-the-partner",
+            "commit": "37a556679e917b5e8d3e930d80004fb55cc79df8",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6831,
+    "verdict": "ALLOW"
+}

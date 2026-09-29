@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Insights page shows a semiotic read that is stored as one paragraph.\n\n`plain-edit` (pipeline #219) writes the semiotic read of an edited trend as prose instead of `{denotation, connotation, myth}`. The page only looked for those three keys, so for an edited trend it would have shown nothing. A string now renders as one paragraph, \"The semiotic read\". The three columns stay for everything that still has layers.\n\nNeeds to be live before `plain-edit --apply` runs on the public set.\n\nChecks: the lint ratchet is at its ceiling (42), the build passes, and all 23 Playwright tests pass.\n",
+            "branch": "workbench/readings/semiotic-prose",
+            "title": "Insights shows a semiotic read stored as one paragraph"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260928134516-ea15cc"
+}

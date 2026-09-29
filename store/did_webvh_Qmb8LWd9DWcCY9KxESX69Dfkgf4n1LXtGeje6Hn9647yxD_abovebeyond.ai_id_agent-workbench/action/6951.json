@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8137e4eec4f325e4086b5beaf7fcaf6b90476675",
+            "branch": "workbench/trends/links",
+            "files_sha256": "f4724eb08da5e78b59d99b4878d077221e75e4f61895c93b38c43d7ef54f4c3a",
+            "message": "A trend shows what to read it with, and what pulls against it\n\nlinks on trend cards (reinforces or pulls, with a sentence), stored from the\nprojection with only the known kinds. The trend page adds 'Read it together with',\npull-against first; get_trend carries links with id, url, headline and why on every\nplan (contract 1.8.0)."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260928202321-8d7700"
+}
