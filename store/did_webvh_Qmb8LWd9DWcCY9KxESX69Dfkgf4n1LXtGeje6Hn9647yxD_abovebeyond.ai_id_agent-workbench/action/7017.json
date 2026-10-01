@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6442e99e50dae02d63a8768d6d38c8a5062a89c8",
+            "branch": "workbench/fix/a-sale-does-not-wait-for-the-photos-2",
+            "files_sha256": "839c30200b4cd81e7ca979effbbb1597069828f6d377bce25f3ff427caa2318a",
+            "message": "A sale does not wait for the photos"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929080142-187403"
+}

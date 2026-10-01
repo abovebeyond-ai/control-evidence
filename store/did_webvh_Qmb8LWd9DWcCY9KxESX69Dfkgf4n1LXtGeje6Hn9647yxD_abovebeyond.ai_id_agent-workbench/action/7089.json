@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8f1f0ba735fe56cd3638740b9498cfaeb795c9b9",
+            "branch": "workbench/year-summary-judges",
+            "files_sha256": "1dd2e5e7a526782181f175842475f987e17ecc751a64686303a215776a92ff69",
+            "message": "De samenvatting van een leerling getest op wat ze leest"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929094003-1318ba"
+}

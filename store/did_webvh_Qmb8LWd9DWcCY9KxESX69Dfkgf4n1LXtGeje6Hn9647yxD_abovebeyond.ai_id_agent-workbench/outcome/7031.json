@@ -1,0 +1,16 @@
+{
+    "action": "4dc1c5f07866b0b2ce784893e177e8c7",
+    "effect": {
+        "detail": {
+            "base": "6442e99e50dae02d63a8768d6d38c8a5062a89c8",
+            "branch": "workbench/fix/one-model-per-name-per-make-2",
+            "commit": "03ab6c5141908e8944d9099b3968c7525218371e",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7029,
+    "verdict": "ALLOW"
+}

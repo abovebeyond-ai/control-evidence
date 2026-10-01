@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f7dc61f12c4ad39d80501b2824d3a4c9366f5986",
+            "branch": "workbench/attainment-level-names-in-full",
+            "files_sha256": "464dbbb5f3179d3a902a18c48dfdd4ac853bb12df1084b799d7b9c602d63c64a",
+            "message": "De naam van een eindterm staat volledig in de lijst om te koppelen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001050422-fda94e"
+}

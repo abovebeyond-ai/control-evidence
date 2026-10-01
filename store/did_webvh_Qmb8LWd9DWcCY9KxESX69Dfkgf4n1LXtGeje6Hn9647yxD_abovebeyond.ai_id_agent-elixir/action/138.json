@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "128969df95d3427b7ec692dcc81596a316094af3",
+            "branch": "elixir/security-2026-09-30-1624",
+            "files_sha256": "b73766087eadf7de2cbbcdc19b8dbe7380cbc90d88361365bc755d705d690eda",
+            "message": "Beveiligingsupdates",
+            "packages": 2
+        },
+        "resource": "ShaneDeconinck/good-governance"
+    },
+    "run": "01M3SJ121ZNVVQ4KARCX536AEN"
+}

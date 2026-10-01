@@ -1,0 +1,16 @@
+{
+    "action": "c2f25bec3d5caa19e9610f0de82e26f1",
+    "effect": {
+        "detail": {
+            "base": "42395b21a4661699aca5cd7adeb2e09cc080d04b",
+            "branch": "workbench/fix/no-dd-and-quality-ratchets",
+            "commit": "b97c4ed69ff7c9e77f5f7de9b207d0a608f393f3",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7101,
+    "verdict": "ALLOW"
+}

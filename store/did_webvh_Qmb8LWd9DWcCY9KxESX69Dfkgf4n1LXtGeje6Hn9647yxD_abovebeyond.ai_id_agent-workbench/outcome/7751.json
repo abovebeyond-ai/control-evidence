@@ -1,0 +1,16 @@
+{
+    "action": "06c8accb94f7fe639acb3db8a3024974",
+    "effect": {
+        "detail": {
+            "base": "357bcf468e46e9568aef25dee5a4b5531c629c89",
+            "branch": "workbench/a-chevron-only-when-cut",
+            "commit": "73e9c2c12650bb20995b1aa7f8b90386bec26cae",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7749,
+    "verdict": "ALLOW"
+}

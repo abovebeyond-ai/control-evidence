@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De velgenconfigurator van Alcar (`portal.alcar-wheels.com/wheelsportal/82826/start`) stond sinds 4eccee8 nergens meer op de site. De URL bleef in `site.ts` staan, maar er linkte niets meer naar, dus een klant die velgen wilde bekijken vond de webshop niet meer.\n\nVelgen komt terug waar het tot 26 september stond: achteraan in het mobiele menu en in de footer. Het hoofdmenu op desktop blijft zoals in het ontwerp van de klant. Nieuw is dat de link in een nieuw tabblad opent (`external: true`), omdat het een webshop buiten de site is.\n\nNagekeken: de Alcar-portal antwoordt nog met 200; `vitest` 26/26 groen; in de build staat de link twee keer op de home, met `target=\"_blank\" rel=\"noopener\"`.\n",
+            "branch": "workbench/velgen-terug",
+            "title": "Velgen terug in het mobiele menu en de footer"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260930051055-713626"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "5ff4f6b6eef5edbaa986904caf0e95b1",
+    "effect": {
+        "detail": {
+            "base": "fae39d4e64adeab2b6a88c29dd514252b1dfdcdf",
+            "branch": "workbench/feat/transport-is-a-garage-switch",
+            "commit": "1607afb291c9a4b62fa9971803aa0aff89681059",
+            "files": 34,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7305,
+    "verdict": "ALLOW"
+}

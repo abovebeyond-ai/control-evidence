@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Boven het raster van acht wagens op de home sloeg de titel \"NET BINNEN\" in kapitalen en gewicht 800 harder dan de foto's eronder.\n\nAlleen in dit blok (`StockTeaser.astro`) staat de titel nu in gewone kast, halfvet (600) en een maat kleiner (tot 2rem in plaats van 2.9rem). De gedeelde regel `.sc-title` in `blocks.css` blijft ongewijzigd, dus de andere sectietitels staan nog in kapitalen.\n",
+            "branch": "workbench/net-binnen-titel",
+            "title": "Net binnen: titel in gewone kast en halfvet"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260929073838-bbc557"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9236ebd408e9a0a9f7b9d6f31c177add387bcf27",
+            "branch": "workbench/fix/small-things-seen-in-the-screens",
+            "files_sha256": "bd0477d6c81bdb71fa043e1ed5ca12d5fb0c390ad2e2fdeaec9e2ec6aab4d511",
+            "message": "Small things seen in the screens: showroom photo, one action menu, demo photos, wording"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929120953-cb7cfb"
+}

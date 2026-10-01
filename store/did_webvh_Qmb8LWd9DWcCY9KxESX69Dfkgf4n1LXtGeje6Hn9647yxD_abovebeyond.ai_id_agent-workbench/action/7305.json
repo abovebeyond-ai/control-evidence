@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fae39d4e64adeab2b6a88c29dd514252b1dfdcdf",
+            "branch": "workbench/feat/transport-is-a-garage-switch",
+            "files_sha256": "2c79fa0bc30fe3eb6c55f60e39fbd662013a86fbc1622944868dd47132f23f74",
+            "message": "Transport is a garage switch behind one Gate"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930051209-13499e"
+}

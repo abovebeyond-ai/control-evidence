@@ -1,0 +1,16 @@
+{
+    "action": "4c6924d50f07ab8c3ba051357a711bfd",
+    "effect": {
+        "detail": {
+            "base": "47dada00d220a6531eaebb1187a0360a80bf65dd",
+            "branch": "workbench/fix/commonmark-2-10-3",
+            "commit": "9526a0f11f05c25ea0df99e8174b7bd1beec64a0",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7599,
+    "verdict": "ALLOW"
+}

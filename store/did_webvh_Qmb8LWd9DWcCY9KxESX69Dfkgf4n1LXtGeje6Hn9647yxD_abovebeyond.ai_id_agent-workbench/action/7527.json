@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0a52f6fb7d187a1ff1bc18e2076e3d883436042d",
+            "branch": "workbench/feat/rights-dry-run",
+            "files_sha256": "6899d972576847ea5b25c73989e57aef843aba60007b9806c22028954a72c3a7",
+            "message": "A rights dry run: what the modules would give each garage instead of its roles"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930143555-a7c797"
+}

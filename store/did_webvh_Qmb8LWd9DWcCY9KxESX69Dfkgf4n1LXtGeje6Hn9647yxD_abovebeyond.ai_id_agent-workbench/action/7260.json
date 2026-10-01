@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3980ea8c196a9d6eff33457e08f87cde042c6b9e",
+            "branch": "workbench/fix/a-print-without-a-colour",
+            "files_sha256": "425e00bdcc4db3bdbf24a6830402e24e1631bda70fa01a8648b0aa5f6ad7aa3f",
+            "message": "A print without a colour: order form and offer print when a vehicle lookup is missing"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929163947-d0acdc"
+}

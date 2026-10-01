@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b649ee5f45d78d97beaab32f609005463b7d62e9",
+            "branch": "workbench/cleanup/no-register",
+            "files_sha256": "a37e807a879ea0eb1a1da1aacb4f9887ee5401de18112856944c255b90124b9a",
+            "message": "Signups are the site's: the pipeline's public register route and clay.mjs go"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930120929-876533"
+}

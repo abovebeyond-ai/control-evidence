@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na het aanmelden stuurt Laravel je naar de pagina die het onthouden had, en anders naar de startpagina. Die startpagina stuurt elke rol door naar zijn dashboard. Twee wegen liepen daarbij dood:\n\n- **De startpagina gaf een superbeheerder niets terug.** `dashboard.general` stuurde een leerling, een beheerder en een leerkracht door. Een superbeheerder zonder andere rol kwam langs alle drie en kreeg een lege pagina. Op staging gebeurde dat met een account dat alleen superbeheerder is.\n- **Mijn vooruitgang viel om voor wie geen leerling is.** `/mijn-vooruitgang` is de vooruitgang van de aangemelde leerling. De route laat ook leerkrachten en beheerders door, en voor hen gaf `Student::find()` `null`, wat een fout 500 opleverde. Je komt er als niet-leerling terecht via een pagina die de browser onthield, bijvoorbeeld na een eerdere aanmelding als leerling in dezelfde browser. Op staging gebeurde dat op 1 oktober 2026 (`StudentProgressReportController.php:18`).\n\n## Wat verandert\n\n- Een superbeheerder gaat van de startpagina naar het dashboard van de beheerder, net als een beheerder. Die route staat al open voor beide rollen.\n- Wie geen leerling is en op `/mijn-vooruitgang` komt, gaat naar de startpagina, en zo naar zijn eigen dashboard.\n\n## Nagekeken\n\n- `EveryoneLandsOnTheirDashboardTest`: een superbeheerder gaat van de startpagina naar het dashboard van de beheerder, en dat dashboard opent voor hem. Een superbeheerder, een beheerder en een leerkracht gaan van `/mijn-vooruitgang` naar de startpagina.\n- De test kwam eerst. Hij faalde op precies de twee plekken van hierboven: geen doorverwijzing, en de fout uit de log van staging.\n- De volledige suite lokaal op MariaDB, met `APP_DEBUG` aan zoals de CI: 1358 van 1359 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/my-progress-for-pupils-only",
+            "title": "Wie geen leerling is, landt op zijn dashboard"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001045701-bdc5fe"
+}

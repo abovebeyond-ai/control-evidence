@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Four things seen on gentells.com behind the cover.\n\n## The graph section was an empty dark frame\nThe pre-launch cover answers `graph.json` and `sitemap.xml` with a 404 for everyone, and that check came *before* the preview-link check. So the homepage's graph section, which fetches `graph.json` from the browser, stayed empty for exactly the people reviewing the site. Now a valid preview cookie lets those two through; anonymous visitors and machines still get the 404. Test: without a link the cover answers, with one the controller does. It fails without the change.\n\n## A lone \"A\" under the first paragraph of a locked post\n`Article::teaser()` took three paragraphs and then cut at 700 characters wherever that fell. On \"Human is becoming a label\" the first paragraph runs to about 690, so the teaser ended on the \"A\" of \"At the same time\", printed as a paragraph. Now:\n- a paragraph is in or out;\n- a heading counts as a paragraph but not against the length;\n- only a first paragraph longer than the whole budget is cut, at a word, with \"\u2026\".\n\nTwo tests; the existing \"One, Two, Three\" test holds.\n\n## The posts row did not line up\nThe first card spans two rows (`lg:row-span-2`) and the row was aligned on its bottom edge (`items-end`). With three posts the second and third card sat in half the height, and the tops jumped as soon as one dek was longer. On the homepage the three cards are now one row of equal height, with the black bars on one line. The archive keeps its layout (`<x-post-card :span=\"false\">` opts out).\n\n## Posts above trends\n\"Latest Posts\" now comes before \"Latest Trends\" on the homepage.\n\n## The collage band read as black and white\nOne patch of colour, radius 190px, drifted over the grey every 28 seconds. Now:\n- two patches, larger and softer, each on its own course (18s);\n- a light wash of colour (30%) over the whole band;\n- the cursor still pulls the large patch along.\n\nAll in the mask, no new images. With reduced motion the wash and the patches stand still. Checked in a browser at two moments six seconds apart.\n\n332 tests pass.\n",
+            "branch": "workbench/home/four-fixes",
+            "title": "Home: the graph behind the cover, no lone letter in a teaser, posts first, more colour"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001044905-726f94"
+}

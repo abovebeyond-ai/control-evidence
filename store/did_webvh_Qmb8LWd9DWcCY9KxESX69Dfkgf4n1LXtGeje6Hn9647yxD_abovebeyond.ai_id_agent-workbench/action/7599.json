@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "47dada00d220a6531eaebb1187a0360a80bf65dd",
+            "branch": "workbench/fix/commonmark-2-10-3",
+            "files_sha256": "187c94517b492e0f81dee569d1feb9838408bc05cd1e8259350d7656ee916749",
+            "message": "Bump league/commonmark to 2.10.3 for two advisories"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930171920-b58205"
+}

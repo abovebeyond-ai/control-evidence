@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f88f2eb29e71f516346bd30e871fd9c98b20b8fb",
+            "branch": "workbench/mail/house-style",
+            "files_sha256": "5bc7930016d02e68987ff82f8847c655175b3942e96cbb886b208212f3f3da24",
+            "message": "Mails in the house style: the green square button, the wordmark, no orange pill"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930172816-0636f8"
+}

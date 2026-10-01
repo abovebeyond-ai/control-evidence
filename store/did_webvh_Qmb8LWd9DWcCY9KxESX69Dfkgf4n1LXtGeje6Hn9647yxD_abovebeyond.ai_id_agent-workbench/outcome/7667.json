@@ -1,0 +1,16 @@
+{
+    "action": "5a47c4a2014d95faad2f1f8db35ec500",
+    "effect": {
+        "detail": {
+            "base": "80521d99ff61764b4a6fbc1b7af4ee1ad3d663bc",
+            "branch": "workbench/fix/rights-dry-run-reads-the-view-right",
+            "commit": "1da91ec4b73ff3eb3e701536f135a540e22692ca",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7665,
+    "verdict": "ALLOW"
+}

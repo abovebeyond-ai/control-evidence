@@ -1,0 +1,16 @@
+{
+    "action": "da7f6fd2a9accf2663655f7b49c9d319",
+    "effect": {
+        "detail": {
+            "base": "3ff733ce483b3c0aa4ee5925eec39d1a1c3e43f4",
+            "branch": "workbench/cleanup/store-routes",
+            "commit": "7b3e652fc2b85f3124c184a68a59ace320687ec3",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7149,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "88159c1de9c8ff4219006c4281b16555",
+    "effect": {
+        "detail": {
+            "base": "8c0edfe45d42288757ef75fd86b7d0b5e16d6319",
+            "branch": "workbench/usage-per-teacher",
+            "commit": "ff81e893e39f2ac0cfa9637ca7d1e7d9ef4a0f3c",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7617,
+    "verdict": "ALLOW"
+}

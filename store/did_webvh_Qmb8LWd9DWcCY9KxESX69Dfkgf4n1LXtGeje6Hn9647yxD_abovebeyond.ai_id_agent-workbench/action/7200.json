@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een vervolg op #43. De nieuwe controle tegen `Content-Range` sloeg bij de eerste droge run op staging meteen aan: \"Bouwsoft gaf 8944 van 8945 rijen voor Projects\". Uitgezocht met enkel GET-calls:\n\n- **Het is geen ontbrekend project, het is erger.** Bouwsoft telt sommige projecten dubbel: project 8877 staat op offset 8162 en op 8163 als je een rij per keer leest, vermoedelijk door een join. In een pagina komt het maar een keer terug. Elke pagina daarna verschuift, en projecten vallen tussen twee pagina's.\n- **Gemeten:** offsets gaven 8.944 projecten, `Content-Range` zei 8.945, lezen op id vond **8.948**. De sync van #42 miste er dus stil vier, en het totaal is geen maatstaf.\n- **Pagina's komen midden in een lijst kort terug** (`limit 5` gaf 4 id's), dus ook \"een korte pagina is het einde\" klopt niet.\n\n## Wat er verandert\n\n- `BouwsoftReferenceSource::pages()` leest op id: `id gt <laatste id>`, gesorteerd op id, tot een lege pagina. Voor de boekingen wordt dat `(date gt '...') and id gt <n>`; beide vormen nagekeken op staging.\n- Een pagina die niet voorbij het laatste id komt geeft een fout, in plaats van dezelfde pagina eindeloos opnieuw te lezen. Bovengrens 200 pagina's.\n- `Bouwsoft::total()` is weg: niets gebruikt het nog, en een totaal dat dubbels meetelt nodigt uit tot een controle die niet klopt.\n\n## Getest\n\n- Lezen op id tot een lege pagina, door een korte pagina heen, met de filters `id gt 0`, `id gt 7`, `id gt 9`.\n- Een pagina die niet vooruitgaat wordt geweigerd.\n- De bestaande test op \"geboekt of recent aangemaakt\" draait nu op pagina's die eindigen zoals bij Bouwsoft.\n\nBeide nieuwe regels gecontroleerd: stoppen bij een korte pagina, of de vooruitgangscontrole weghalen, laat de bijbehorende test falen. Volledige suite groen op `BuildStampTest` na (alleen in een worktree).\n",
+            "branch": "workbench/keyset-paging",
+            "title": "Bouwsoft lezen op id, want offsets verliezen projecten"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260929104632-e05ace"
+}

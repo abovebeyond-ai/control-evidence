@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "40ad8bbced7cf86ee2435ec7ea5b55f18226e672",
+            "branch": "workbench/cleanup/store-routes",
+            "files_sha256": "0d8554c099222c96d555e43274749da01813fe06f7d9f08ed8e227936cb0ea51",
+            "message": "Name the store's doors /store/*, keep /sanity/* for one deploy"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929101606-847600"
+}

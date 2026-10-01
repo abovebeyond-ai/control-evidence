@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "815228d85b2c4c40074e3eb2c3d8d6dc92b36aca",
+            "branch": "workbench/write-path",
+            "files_sha256": "08eccb9f6db5c6b0d19fa9e0096b77148c61d3eea0adba4289f6beec11c19555",
+            "message": "De schrijfweg: geen afronding zonder zijn ja, geen gewiste fiche, geen stille weigering"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260930123638-b0a347"
+}

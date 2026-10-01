@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a898aefb6f59494e88247ddaa988950dea048dd7",
+            "branch": "workbench/fix/map-table-fits-its-card",
+            "files_sha256": "4de2046060b5e7340a8f39525eb24d0bc0bb8bac449229851fac53aa0b2903d7",
+            "message": "The province table on the map tab fits its card"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930130009-e084b2"
+}

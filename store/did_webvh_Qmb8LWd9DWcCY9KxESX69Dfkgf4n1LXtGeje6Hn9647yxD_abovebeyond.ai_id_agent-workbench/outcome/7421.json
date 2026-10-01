@@ -1,0 +1,16 @@
+{
+    "action": "e6c0feb2257ddee126d84f46899ba4de",
+    "effect": {
+        "detail": {
+            "base": "6fb46707dd5f60897074bfe6e5ac6f33cebbe889",
+            "branch": "workbench/sources/off-s2-twitch",
+            "commit": "78afc1a4da1aa253e5b3dd9051edd0a0b2a91bd3",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7419,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De dependency-audit staat rood op elke pull request en op main. Op 30 september 2026 kwamen er twee meldingen voor `league/commonmark` tot en met 2.10.1:\n\n- GHSA-3q6v-r5mr-hxv8 (hoog): de tabelextensie van GitHub Flavored Markdown kan in kwadratische tijd vastlopen, een denial of service.\n- GHSA-97jj-33gv-5xf9 (middel): `DisallowedRawHtml` laat een verboden tag door wanneer de tagnaam het einde van de ruwe HTML is.\n\n## Wat verandert\n\n- `league/commonmark` gaat van 2.10.1 naar 2.10.3, alleen in `composer.lock`. Het pakket komt binnen via `laravel/framework` (`^2.8.1`), dus `composer.json` verandert niet.\n- `composer update league/commonmark` raakte geen ander pakket aan.\n\n## Nagekeken\n\n- `composer audit`: geen meldingen meer.\n- De volledige suite lokaal op MariaDB: 1333 van 1334 groen. BuildStampTest faalt enkel in een worktree.\n",
+            "branch": "workbench/commonmark-2-10-3",
+            "title": "league/commonmark naar 2.10.3"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930164712-450e14"
+}

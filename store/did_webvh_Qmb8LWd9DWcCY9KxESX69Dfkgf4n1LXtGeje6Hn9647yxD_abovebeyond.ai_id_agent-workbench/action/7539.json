@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8a9522fee50ead9603918d98d568f23af527c33f",
+            "branch": "workbench/auth/password-reset",
+            "files_sha256": "9a378345162cbf0e3054581af6bd13da9d398a0eb055eda1c502dffe5e9d39dd",
+            "message": "Staff can reset a forgotten password: a signed link that works once, for an hour"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930163523-f86ece"
+}

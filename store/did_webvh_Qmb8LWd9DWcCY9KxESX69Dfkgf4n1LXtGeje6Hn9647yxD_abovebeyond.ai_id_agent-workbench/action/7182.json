@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`Projection::tagIds()` flattened Sanity reference objects (`{_ref}`) as well as plain ids, because the pipeline data held both. It no longer does: #232 and the `plain-ids` run rewrote every stored value on 2026-09-29, and a sweep of every text column in production finds `_ref` only in the two undo tables. gentells-pipeline#234 makes the store refuse the old shape.\n\nTags are now a list of plain ids, and anything else (an object, an empty string) is dropped. The test that fed the reference shape now feeds one and asserts it is dropped.\n\n325 tests pass. Merge with gentells-pipeline#234, in any order.\n",
+            "branch": "workbench/sanity/plain-tags",
+            "title": "Tags are plain ids; the Sanity reference fallback goes"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260929103638-512daa"
+}

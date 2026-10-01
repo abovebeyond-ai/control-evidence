@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e156506cf0b1e27d60f42302e15fc05b23001945",
+            "branch": "workbench/usage-per-class",
+            "files_sha256": "d20f27c78d24de31256ada347a1170a85d614f94cd4e1407764351377da9778f",
+            "message": "Gebruik toont per klas wat haar leerlingen kregen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930163641-4e3184"
+}

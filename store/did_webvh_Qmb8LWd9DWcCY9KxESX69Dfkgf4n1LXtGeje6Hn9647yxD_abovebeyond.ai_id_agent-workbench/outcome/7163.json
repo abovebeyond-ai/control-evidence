@@ -1,0 +1,16 @@
+{
+    "action": "d69aadadbc2e386e6c599d4570456b4c",
+    "effect": {
+        "detail": {
+            "base": "e7128fa3e7d1b6835fb5274647d6e738f149d822",
+            "branch": "workbench/sanity/plain-everywhere",
+            "commit": "6bfbebb04b75e0be8e112a7c5565d52bedc574a1",
+            "files": 41,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7161,
+    "verdict": "ALLOW"
+}

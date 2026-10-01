@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Phase 2 of the sources plan (`docs/design/sources-before-more-sources.md`): the academic indexes.\n\n## What the week shows\nFrom `adapter_runs`, 23 to 30 September:\n- Semantic Scholar delivered **0 new papers**: every round that asked was refused with a rate limit.\n- OpenAlex delivered 8, and was refused (HTTP 429) 10 times.\n\nOne request from the box on 2026-09-30 says why, in both APIs' own words:\n- OpenAlex: \"Anonymous search is temporarily rate-limited while the search cluster is under elevated load. Please retry in 38s, or use a free API key for uninterrupted access\". The `mailto` no longer buys the polite pool.\n- Semantic Scholar: \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits\". The keyless bulk endpoint the adapter was built on is closed too.\n\n## What this changes\n- **OpenAlex reads `OPENALEX_API_KEY`** and sends it as `api_key` when set. Semantic Scholar already read `SEMANTIC_SCHOLAR_API_KEY`. Both stay optional in the adapter declaration test.\n- **A refusal ends the round.** Both adapters stop at the first rate limit instead of asking the other fourteen queries. The queries not asked keep no mark and stay due for the next round.\n- **OpenAlex's 429 is named \"rate limit\"**, so collect counts it as ours (the `OURS` rule) and never parks a healthy query for it. Until now it read \"OpenAlex HTTP 429\", which the rule did not match. No query was parked yet, because the same rows also get successful runs.\n- **Both keys are declared to Elixir** in `/api/elixir` when set, like the Together key: proven by the adapter's last delivery, refused by a rate limit after it, never the value. Tested.\n- Two comments that described the old situation (the polite pool; the open bulk endpoint) say what is true now.\n\n## What it needs\nTwo free keys, requested by a person:\n- OpenAlex, via https://openalex.org/rest-api\n- Semantic Scholar, via https://www.semanticscholar.org/product/api#api-key-form\n\nEach goes into the pipeline's environment settings on the box, under the two names above. Without them nothing breaks: OpenAlex keeps getting through part of the time, and Semantic Scholar stays silent, which the Collection screen shows.\n\nTests: 959 pass. Lint: 0 undefined names, unused unchanged.\n",
+            "branch": "workbench/sources/academic-keys",
+            "title": "The academic indexes take a key, stop at the first refusal, and never park a query for it"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930104204-400465"
+}

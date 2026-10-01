@@ -1,0 +1,16 @@
+{
+    "action": "cfb271ea1675abb5b65fd76a25756833",
+    "effect": {
+        "detail": {
+            "base": "5b710efdf36d4aca4d9115726535a7e12ab89feb",
+            "branch": "workbench/cleanup/legacy-after-sanity",
+            "commit": "8e7bf26efbad8fbd666d62f64839ba63ee7b5eb0",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7281,
+    "verdict": "ALLOW"
+}

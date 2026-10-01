@@ -1,0 +1,16 @@
+{
+    "action": "6a28a4a08ee5b7e99a83ce25c7001add",
+    "effect": {
+        "detail": {
+            "base": "09d103b2f645558af3e3100fff0e9cf0be9a0e13",
+            "branch": "workbench/fix/a-print-without-a-colour-2",
+            "commit": "f1379b99bb891d900e46c0cee3d491db11b9a461",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7275,
+    "verdict": "ALLOW"
+}

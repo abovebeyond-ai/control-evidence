@@ -1,0 +1,16 @@
+{
+    "action": "f046cf41783848188e9f8e96cd0b8be1",
+    "effect": {
+        "detail": {
+            "base": "6345e7e09864b9e16108589689814dac4ff61bcd",
+            "branch": "workbench/keyset-paging",
+            "commit": "4853fc58dabaebfb8cc457314033a6ac405066e7",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7197,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Step 3b, the last one in removing the Sanity layer.\n\n## The Sanity client imitation goes\n`store.client` imitated the Sanity client. It had createOrReplace, createIfNotExists, `patch(id).set().commit()`, delete, and `fetch()` with a GROQ string matched by substring (`query.includes('_type == \"source\"')`), and it routed writes by Sanity document types (`dailyInsight`, `culturalConcept`, `culturalTension`). Every caller was writing or listing sources, or editing one record from the dashboard. They now call functions named for that:\n\n| was | now |\n|---|---|\n| `client.createOrReplace({_type: 'source', ...})` | `saveSource(doc)` |\n| `client.createIfNotExists({_type: 'source', ...})` | `addSource(doc)` |\n| `client.fetch('*[_type == \"source\" && active == false] ... order(_createdAt desc)[0..50]')` | `listSources({active: false, newestFirst: true, limit: 51})` |\n| `client.patch(id).set(fields).commit()` | `updateRecord(id, fields)` |\n| `client.delete(id)` | `deleteRecord(id)` |\n\n- Callers moved: discover, ingest-drive, ingest-report, academic-follow, academic-venues and the server's `/store/patch|create|delete`.\n- `/store/create` adds a source (the Sources page is its one caller), whatever `_type` it is sent.\n- Gone: `writeDoc`, `tableForDoc`, `createDocIfNotExists`, `fetchQuery`, and the no-op `writeSignal`.\n\n## Names\n- `sourceToSanity` is now `sourceFromRow`, and a source has `createdAt` instead of `_createdAt`; the `reports` query answers the same way (the dashboard reads it in gentells-dashboard, linked below).\n- `handleSanityQuery` is now `handleStoreQuery`.\n- `promoteToSanity` is now `promoteSignals`: it flips a status in SQLite, and has pushed nothing anywhere since April.\n- Log lines and comments that said something is written to or read from Sanity now say what happens.\n\nWhat still mentions Sanity is history: comments that explain a past bug, and `bin/plain-ids.mjs`.\n\nTests: 953 pass. The source tests call the new functions, and the standard-stamp test calls `writeConcept`, `writePattern`, `writeTension` and `writeInsight` directly. Lint: 0 undefined names, and the unused count is unchanged.\n\nMerge together with the dashboard PR (`createdAt` on the Reports page, no `_type` on create).\n",
+            "branch": "workbench/sanity/store-functions",
+            "title": "The Sanity client imitation goes; store functions named for what they do"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929105454-6cd13b"
+}

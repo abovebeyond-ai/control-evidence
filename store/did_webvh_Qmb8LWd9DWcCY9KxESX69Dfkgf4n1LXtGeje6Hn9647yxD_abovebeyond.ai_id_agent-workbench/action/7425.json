@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "266cd988d5a501db8b6eba999413e054fabab570",
+            "branch": "workbench/feat/track-lead-source-and-site-views",
+            "files_sha256": "6c0d9fd4f81bf2f3e2c68782b6a1af6cfa5d0d62714e39c0b149486793ab7197",
+            "message": "Track where views and leads come from, and show views per channel"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930123324-06a674"
+}

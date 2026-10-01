@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De scores van een evaluatie stonden tot nu alleen op het scherm: wie ze buiten Naviskore wilde verwerken, moest ze overnemen. Dit zet ze in een Excel-bestand.\n\n## Wat verandert\n\n- Op de pagina van een evaluatie staat \"Exporteren naar Excel\", voor iedereen die de evaluatie mag zien. Het bestand heet naar de evaluatie en haar datum, bijvoorbeeld `toets-breuken-2026-01-10.xlsx`.\n- Blad \"Scores\": een leerling per rij, een eindterm per kolom (code en naam), met het maximum onder de namen. Een score staat als getal, afwezig als \"afwezig\", een cel zonder score blijft leeg; bij een evaluatie met waarden staat de naam van de waarde, zoals op de pagina.\n- Blad \"Feedback\": leerling, eindterm en feedback, voor elke score die feedback heeft.\n- `ScoreSheet` houdt wat de pagina en het bestand samen lezen: welke leerlingen (bij een stage-evaluatie die van de evaluatie zelf), de scores en de maxima, in twee queries, en de eindtermen in de volgorde van de pagina. De logica kwam uit `EvaluationController::show`, dat nu hetzelfde blad leest; de test op het aantal queries van de pagina blijft groen.\n- Nieuwe afhankelijkheid `openspout/openspout` (^5.12, MIT): een kleine schrijver voor xlsx zonder verdere afhankelijkheden. Een CSV opent in een Belgische Excel met een puntkomma en een decimale komma, en in andere instellingen in \u00e9\u00e9n kolom; een xlsx-bestand niet. De audit geeft geen meldingen.\n\n## Regels\n\nNieuwe sectie S3-8 \"Exporteren\" met R S3-8.1 en drie tests.\n\n## Nagekeken\n\n- `EvaluationExportTest`: het bestand gelezen met de lezer van openspout, blad per blad: namen en maxima, een score, afwezig, een lege cel, de feedback; de naam van een waarde bij een evaluatie met waarden; een leerkracht van een andere school krijgt geen bestand, en de pagina toont de knop.\n- Vijf mutanten, vier opgevangen: afwezig leeg, waarden als getallen, geen feedback, de knop weg. De vijfde, de `authorize` weg, overleeft: de binding van de route stuurt een leerkracht van een andere school al terug, zoals bij de pagina zelf; de controle staat er als tweede slot.\n- De volledige suite lokaal op MariaDB: 1326 van 1327 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/evaluation-to-excel",
+            "title": "De resultaten van een evaluatie gaan naar Excel"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930142509-320351"
+}

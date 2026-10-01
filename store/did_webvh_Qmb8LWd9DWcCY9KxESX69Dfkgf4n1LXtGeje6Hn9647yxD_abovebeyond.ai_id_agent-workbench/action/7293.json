@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "82ac9431748e3bf3f0be15d1650560dd9d515132",
+            "branch": "workbench/cleanup/flow-as-is",
+            "files_sha256": "b21dd60e082d163fa51ec56bae72ceaf95137447114a86bca4c423545ab112a4",
+            "message": "The pipeline diagram draws what is there: no skills box, no reader-notes loop, the taxonomy as the standard has it"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260930051016-957d58"
+}

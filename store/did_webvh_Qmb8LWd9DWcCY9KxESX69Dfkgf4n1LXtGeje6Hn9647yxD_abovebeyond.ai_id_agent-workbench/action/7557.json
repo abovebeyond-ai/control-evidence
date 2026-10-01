@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e156506cf0b1e27d60f42302e15fc05b23001945",
+            "branch": "workbench/class-group-as-a-select",
+            "files_sha256": "30b0c994b73bdbff128bdb87fdfb7e5acf44b4717731a844bfb36d65b165688f",
+            "message": "Klasgroep kiezen in een keuzelijst"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930163622-d95810"
+}

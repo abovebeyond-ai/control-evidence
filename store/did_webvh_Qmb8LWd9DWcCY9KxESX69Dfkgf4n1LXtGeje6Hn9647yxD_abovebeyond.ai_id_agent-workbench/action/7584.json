@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De dependency-audits staan rood op elke pull request en op main. Op 30 september 2026 kwamen er nieuwe meldingen, in beide pakketbeheerders. Vervangt #237: die zette alleen Composer recht, waarna de audit op npm viel.\n\n## Composer: `league/commonmark` van 2.10.1 naar 2.10.3\n\n- GHSA-3q6v-r5mr-hxv8 (hoog): de tabelextensie van GitHub Flavored Markdown kan in kwadratische tijd vastlopen, een denial of service.\n- GHSA-97jj-33gv-5xf9 (middel): `DisallowedRawHtml` laat een verboden tag door wanneer de tagnaam het einde van de ruwe HTML is.\n\nHet pakket komt binnen via `laravel/framework` (`^2.8.1`), dus alleen `composer.lock` verandert. `composer update league/commonmark` raakte geen ander pakket aan.\n\n## npm: `axios` van 1.19.0 naar 1.20.0\n\nZeven meldingen voor 1.0.0 tot en met 1.19.0, de hoogste van niveau \"hoog\", onder meer GHSA-vh66-26gq-q6x8 (prototype pollution in de fetch-adapter), GHSA-mghh-pgcx-3jjj (ReDoS bij het normaliseren van een host) en GHSA-3pq3-5fj3-cg6v (de HTTP/2-adapter omzeilt de ingestelde DNS en proxy). 1.20.0 valt binnen `^1.11.0` uit `package.json`, dus alleen `package-lock.json` verandert, en alleen voor axios.\n\n## Nagekeken\n\n- `composer audit`: geen meldingen. `npm audit --audit-level=high`: 0 kwetsbaarheden.\n- `npm run build` slaagt. `npm run lint` geeft 0 fouten en dezelfde 12 waarschuwingen als op main.\n- De volledige suite lokaal op MariaDB met commonmark 2.10.3: 1333 van 1334 groen. BuildStampTest faalt enkel in een worktree.\n",
+            "branch": "workbench/dependency-audits-green",
+            "title": "De dependency-audits weer groen: league/commonmark 2.10.3 en axios 1.20.0"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930164916-35757c"
+}

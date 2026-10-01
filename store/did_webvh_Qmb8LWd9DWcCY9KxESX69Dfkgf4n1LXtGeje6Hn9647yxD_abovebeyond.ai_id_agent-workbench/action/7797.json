@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a7158720516430603ea2c109712c18c07c08553d",
+            "branch": "workbench/fix/worklist-mail-links-where-it-is",
+            "files_sha256": "26e5c248c8ff721e37eca24395d61976258bb8cf9e7ad0819a96e23262f8d945",
+            "message": "Worklist mail: link each line to where it is listed, for that user"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001073339-e0f3bd"
+}

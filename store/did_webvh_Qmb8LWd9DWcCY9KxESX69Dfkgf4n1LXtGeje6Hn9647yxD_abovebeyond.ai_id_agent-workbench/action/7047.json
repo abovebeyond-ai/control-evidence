@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7767c0e4a4193188829cb2b1e133a2cc52ce2216",
+            "branch": "workbench/fix/a-404-on-a-removal-means-gone",
+            "files_sha256": "a8df42782c5bb0f29c1c634bb530a1b6d3c415d59c6ad79e53ee65d2fd751277",
+            "message": "A 404 on a removal means the car is gone"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929085837-c028da"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6fb46707dd5f60897074bfe6e5ac6f33cebbe889",
+            "branch": "workbench/sources/off-s2-twitch",
+            "files_sha256": "b779656dda764a56d703f9e3cd5cdd8e08c7a0e62bbbf1432c0b62182ea52045",
+            "message": "Semantic Scholar and Twitch go on the off list, each with its reason"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930122050-2bdef4"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"league\\/commonmark\",\"to\":\"2.10.2\",\"lock\":\"composer.lock\"},{\"pkg\":\"shell-quote\",\"to\":\"1.9.0\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 2,
+            "plan_sha256": "b09f9d80ec8986cf075ed6898328eac0bd61ad42f3f93f84831e1f5e76f113ff",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "01M3SHKHATEQ3T7KXAG1QDEAKC"
+}

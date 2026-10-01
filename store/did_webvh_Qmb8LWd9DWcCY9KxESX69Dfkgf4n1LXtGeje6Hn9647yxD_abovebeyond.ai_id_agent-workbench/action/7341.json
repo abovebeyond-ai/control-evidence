@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a81bb44f1fc9da5d9e88f26aba6d94dbef24e828",
+            "branch": "workbench/engine/weekly-minimum",
+            "files_sha256": "86b1ec81186914885b6ee673b7dbe0978c20ba3fc1184cafdfa178226aa164bc",
+            "message": "A weekly job cannot starve: two days late, it runs next"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930103638-908e55"
+}

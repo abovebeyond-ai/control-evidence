@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "42395b21a4661699aca5cd7adeb2e09cc080d04b",
+            "branch": "workbench/fix/a-bought-copy-gets-its-own-sizes",
+            "files_sha256": "28b6fdb16c9d54acbe3fc0acce61fcf94c5f70f929d1c70dad633411f9fbf267",
+            "message": "A bought copy gets its own photo sizes"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929100337-24f0f4"
+}

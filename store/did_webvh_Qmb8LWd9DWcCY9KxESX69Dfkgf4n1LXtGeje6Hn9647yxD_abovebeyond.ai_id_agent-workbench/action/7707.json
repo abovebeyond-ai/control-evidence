@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5cb5ba88c57c0808e4ab645c139c79dedbf525bb",
+            "branch": "workbench/fix/most-viewed-cars-heading",
+            "files_sha256": "7c626f4f828644940a0664dd52f0070d232b72d6b4563696d6281cc072a3f48a",
+            "message": "Call the insights block what it shows: most viewed cars"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930190154-b7f2fa"
+}

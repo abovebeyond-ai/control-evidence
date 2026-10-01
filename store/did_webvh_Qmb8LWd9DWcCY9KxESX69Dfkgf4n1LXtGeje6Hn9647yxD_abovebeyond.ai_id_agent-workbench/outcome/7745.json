@@ -1,0 +1,16 @@
+{
+    "action": "5e62e07d3e371d92f9d01e7031224f4d",
+    "effect": {
+        "detail": {
+            "base": "f7dc61f12c4ad39d80501b2824d3a4c9366f5986",
+            "branch": "workbench/attainment-level-names-in-full",
+            "commit": "cebf377dd99eb365fffa4b0c7380dc911f79c25b",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7743,
+    "verdict": "ALLOW"
+}

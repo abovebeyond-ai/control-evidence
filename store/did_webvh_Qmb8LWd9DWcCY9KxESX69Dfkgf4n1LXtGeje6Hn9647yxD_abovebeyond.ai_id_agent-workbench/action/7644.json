@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Observatory's text was small everywhere because it had no type scale: every component chose its own size. There were 713 sizes over 36 files, most between 8 and 13px:\n- 0.65rem (10.4px), 161 times;\n- 0.7rem (11.2px), 120 times;\n- 0.75rem (12px), 139 times;\n- 0.8rem (12.8px), 108 times;\n- 58 sizes under 10px.\n\n## The scale\nSix steps, as tokens in `src/index.css`, with nothing below 12px:\n\n| token | size | for | was |\n|---|---|---|---|\n| `--text-xs` | 12px | labels, captions, table heads | 0.5 to 0.68rem |\n| `--text-sm` | 14px | secondary text, most of a card | 0.7 to 0.8rem |\n| `--text-base` | 15px | body text (and `body`, was 14px) | 0.82 to 0.9rem |\n| `--text-md` | 17px | lead text, card titles | 0.92 to 1.05rem |\n| `--text-lg` | 20px | page titles | 1.1 to 1.3rem |\n| `--text-xl` | 24px | large figures | 1.5rem and up |\n\nEvery `fontSize` in `src/` (707) and every `font-size` in `index.css` now names a token; one relative `0.9em` stays. A size is a step on the scale from now on, and a new step is a decision made in `index.css`.\n\n## Checked\n- Screenshots of 13 pages before and after at 1440px: Overview, Signals, Patterns, Insights, an insight, Mix, Sources, Pipeline, Reports, Settings, Analytics, Evals, sign-in.\n- Layouts hold. Two visible consequences:\n  - \"TikTok Creative Center\" truncates in its Sources tier tile.\n  - The classify worker line on Overview wraps.\n- Lint at the ceiling (24), build ok, Playwright 26 of 26.\n\n## Not in this PR\n27 SVG chart labels (7 to 13px) sit at pixel offsets computed for their size (`y={14}`, `y={28}`), so larger text needs a pass per chart: the treemaps on Insights, Patterns and Buffer, the Buffer flow, the timelines, and the Overview axis.\n",
+            "branch": "workbench/design/type-scale",
+            "title": "A type scale for the Observatory: six steps, nothing under 12px"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260930175111-cec89b"
+}

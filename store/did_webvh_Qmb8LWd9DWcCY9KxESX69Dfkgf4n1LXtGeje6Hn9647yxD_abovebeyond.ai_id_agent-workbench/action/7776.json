@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`naviskore:pseudonimize` maakt van een kopie die productie verlaat een kopie zonder de mensen erin. Het draait waar de kopie terechtkomt, op staging. Maar het haalde zijn namen uit `fake()`, en dat komt van Faker, een pakket dat alleen voor ontwikkeling ge\u00efnstalleerd wordt. Staging installeert, net als productie, zonder die pakketten.\n\nOp 1 oktober 2026 stopte het commando daardoor op staging, terwijl de verse kopie van productie al geladen was. Staging stond nog in onderhoudsmodus, dus niemand zag de echte namen. Om toch te pseudonimiseren, moesten de ontwikkelpakketten even op staging ge\u00efnstalleerd worden.\n\n## Wat verandert\n\n- De pseudoniemen komen uit een korte eigen lijst van voor- en achternamen in het commando, niet meer uit Faker.\n- Gebruikersnaam, e-mailadressen en intern nummer krijgen het id van de gebruiker. Zo heeft elk adres een eigen waarde; drie willekeurige cijfers gaven bij ruim 7.600 gebruikers dubbels.\n- Het commando kreeg een omschrijving in plaats van \"Command description\".\n\n## Nagekeken\n\n- `PseudonymisingACopyTest`, de eerste test voor dit commando: naam, gebruikersnaam, e-mailadres en intern nummer worden vervangen, de oude voornaam verdwijnt uit de feedback over de leerling en de nieuwe staat er in de plaats, en twee gebruikers delen geen e-mailadres. Een tweede test kijkt naar de code zonder commentaar en vindt er geen `fake(` of Faker in. Met het oude commando faalde die tweede test.\n- De volledige suite lokaal op MariaDB, met `APP_DEBUG` aan zoals de CI: 1363 van 1364 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/pseudonymise-without-faker",
+            "title": "Pseudonimiseren zonder Faker, waar de kopie landt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001061221-355055"
+}

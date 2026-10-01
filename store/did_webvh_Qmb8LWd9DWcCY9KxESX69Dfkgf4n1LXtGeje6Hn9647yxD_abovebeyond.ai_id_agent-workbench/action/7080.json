@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The REST API follows MCP 2.0.0 on the graph, and unused assets and stale docs go.\n\n**REST: `/api/v1/trends/{slug}` leaves the graph out unless asked**\n- MCP 2.0.0 stopped sending the graph by default in `get_trend`. The REST read of the same trend still always sent it: 82,402 of 89,472 characters for one trend.\n- It now takes `?include_graph=1`, off by default, the same as `include_graph` at `/mcp`.\n- `needs.graph` still names the plan that includes the graph.\n- Use of this API is small (the agent door is 35 reads so far, from two accounts).\n- `AgentDoorTest` checks the default (no graph) and the request (with graph).\n\n**Removed because nothing uses it**\n- `public/collage/parts/part-1.webp` and `part-3.webp`: no page used them. The fallback of `<x-collage-band>` without `part` moves from 3 to 2, so it can't point at a missing file.\n- `public/brand/gentells-wordmark@2x.png`: no reference.\n- The npm dependency `concurrently`: no script uses it.\n\n**Docs that described things that no longer exist**\n- `docs/design/agent-door.md`:\n  - \"Nothing here is built yet\" becomes phases 1 and 2 built on 13 September;\n  - `get_graph` becomes `get_trend_graph` (1.6.0);\n  - `/api/v1/me/usage` becomes `/api/v1/me`;\n  - `api_usage` becomes `api_reads`;\n  - ETag is marked as not built;\n  - \"six tools\" becomes six at the time, plus `get_trend_graph`.\n- `BRAND.md`: `<x-hero-collage>` doesn't \"still carry the waiting screen\"; it's gone.\n- `public/collage/README.md` described `<x-collage>` and `hero-1..3`, which don't exist. It now describes `<x-collage-band>` and the parts that remain.\n\n**Left alone on purpose:** the `elements` block in `config/taxonomy.php`. That is a generated file (`bin/taxonomy-snapshot.mjs`), so it's not for hand edits.\n\nChecks: Pint passes, lint-tailwind passes, the build passes; PHPUnit runs 325 tests with 0 failures.\n",
+            "branch": "workbench/cleanup/unused-3",
+            "title": "The REST trend read leaves the graph out unless asked; unused assets and stale docs go"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260929092159-05fa3b"
+}

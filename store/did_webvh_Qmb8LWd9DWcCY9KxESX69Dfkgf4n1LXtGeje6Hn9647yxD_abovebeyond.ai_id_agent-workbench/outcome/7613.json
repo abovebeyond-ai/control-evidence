@@ -1,0 +1,16 @@
+{
+    "action": "9714a0bb4a9f026c744e2978df3d1ed0",
+    "effect": {
+        "detail": {
+            "base": "f88f2eb29e71f516346bd30e871fd9c98b20b8fb",
+            "branch": "workbench/mail/house-style",
+            "commit": "16158985c977ea03999971a822e73c1e993f8d51",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7611,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "657d201ea2567ea68fed26112454f8f1",
+    "effect": {
+        "detail": {
+            "base": "756af28c15658cf5ca4206bf9e01bf0fac5f989b",
+            "branch": "workbench/tidy",
+            "commit": "b928fcb0f4d3a7e9cebebf923c9c196a41b5b081",
+            "files": 17,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7461,
+    "verdict": "ALLOW"
+}

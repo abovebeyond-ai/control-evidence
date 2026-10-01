@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f75d1c78ae6acd076a14ba8029bcd18112b67170",
+            "branch": "workbench/mail/wordmark-png",
+            "files_sha256": "d0bad1ca76f367aeb243727977d0f5cd87076a5c0e1b28d6d951c5a10d81b6f4",
+            "message": "The mail wordmark exists: every gentells.com mail showed a broken logo"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260930182224-46e03a"
+}

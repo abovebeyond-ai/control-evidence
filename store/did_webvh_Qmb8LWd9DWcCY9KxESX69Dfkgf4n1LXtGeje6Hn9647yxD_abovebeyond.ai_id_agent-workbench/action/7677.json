@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dab229632f698580b5b130c06a588107f975c1f3",
+            "branch": "workbench/questions-and-their-sum",
+            "files_sha256": "df3e05af62390555275783cfff8156ae3c1cab2021f604fd092caae0b7f0f538",
+            "message": "Een toets per vraag: vragen, lijnen en de som per eindterm"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930182736-3397f7"
+}

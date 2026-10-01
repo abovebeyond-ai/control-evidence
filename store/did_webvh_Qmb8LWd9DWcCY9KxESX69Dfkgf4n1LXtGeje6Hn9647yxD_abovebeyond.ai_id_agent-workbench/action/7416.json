@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Sinds 2025-2026 volgt geen enkele klas nog het oude curriculum. Op productie waren er in 2024-2025 nog 56 klassen op het oude (eerste graad in athena Drie Hofsteden, Heule en OV4, en het zevende jaar); in 2025-2026 zijn alle 250 klassen nieuw, in 2026-2027 alle 129. Toch vroeg het formulier van een klas nog altijd \"nieuw of oud\", en bood het projectvenster uitdovende eindtermen aan die op geen enkel rapport van nu nog tellen.\n\n## Wat verandert\n\n- **Een klas is nieuw.** Het formulier vraagt het niet meer, bij aanmaken noch bij bewerken. Een nieuwe klas krijgt het nieuwe curriculum vanzelf: het model en de tabel staan er standaard op. De tabel stond op `0`, oud, zodat een klas die ooit langs een andere weg dan het formulier zou ontstaan, zonder \u00e9\u00e9n woord oud werd en haar rapport de nieuwe eindtermen liet vallen.\n- **Een bestaande klas houdt wat ze heeft.** De klassen van 2024-2025 op het oude curriculum blijven dat, en hun rapporten tellen dezelfde eindtermen als voordien. De kolom blijft daarom bestaan.\n- **Het projectvenster biedt geen uitdovende eindtermen meer aan.** De keuze heet nu Nieuw/Blijvend, met \"Nieuw en blijvend\" (standaard), \"Blijvend\" en \"Nieuw\". Een browser die toch \"old\" stuurt, krijgt wat geen keuze geeft.\n\n## Regels\n\nNieuw hoofdstuk B9 \"Een klas\": R B9-1.1 (een klas is nieuw), R B9-1.2 (een bestaande klas houdt haar curriculum) en R B9-1.3 (het rapport telt de eindtermen van het curriculum van de klas; de twee tests die dat al deden, dragen nu de regel). R S1-2.1 en R S1-2.2 zeggen dat uitdovend geen keuze meer is.\n\n## Nagekeken\n\n- `OfferingControllerTest`: een klas die het formulier als oud doorstuurt, wordt toch nieuw; bewerken laat een nieuwe klas nieuw en een oude oud; een klas zonder curriculum is nieuw, in het model en in de tabel.\n- `SearchDropdownAttainmentLevelTest`: de keuzes van het filter, en een cluster onder elke keuze, ook onder \"old\".\n- Vijf mutanten, alle vijf opgevangen: het model of de tabel weer standaard op oud, het formulier dat weer een curriculum aanneemt, uitdovend weer kiesbaar, de optie weer aangeboden.\n- De volledige suite lokaal op MariaDB, met de migratie: 1318 van 1319 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/the-old-curriculum-is-over",
+            "title": "Het oude curriculum is voorbij"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930121853-0a94e4"
+}

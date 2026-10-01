@@ -1,0 +1,16 @@
+{
+    "action": "03caf4b3b990130eb9f3ff1cae35e163",
+    "effect": {
+        "detail": {
+            "base": "b649ee5f45d78d97beaab32f609005463b7d62e9",
+            "branch": "workbench/cleanup/no-register",
+            "commit": "6be2bb1d49a353b728816307329cc7c7ae469cae",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7407,
+    "verdict": "ALLOW"
+}

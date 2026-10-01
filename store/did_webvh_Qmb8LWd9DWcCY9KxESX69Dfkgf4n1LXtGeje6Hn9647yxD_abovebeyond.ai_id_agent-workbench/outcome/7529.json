@@ -1,0 +1,16 @@
+{
+    "action": "bf0816a3091e3761608659f142ec5f9f",
+    "effect": {
+        "detail": {
+            "base": "0a52f6fb7d187a1ff1bc18e2076e3d883436042d",
+            "branch": "workbench/feat/rights-dry-run",
+            "commit": "f8aae5d781f1b33e42c011498986ba60bfd11ae8",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7527,
+    "verdict": "ALLOW"
+}

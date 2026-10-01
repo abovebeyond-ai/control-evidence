@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Bij het koppelen van eindtermen aan een project kwam bij een cluster elke eindterm mee, ook de oude. De cluster \"Basisoptie/specifiek gedeelte, Sport, graad 1, B-stroom\" houdt de doelen uit het leerplan van 2019 (4.1 tot 4.12, aangeduid als blijvend) naast de nieuwe (BO1_04.01 tot BO1_04.09, nieuw). Wie de cluster koppelde, kreeg ze allebei in het project, en de keuze Nieuw/Uitdovend bestond bij clusters niet. Gemeld vanuit campus Drie Hofsteden (OV4).\n\n## Wat verandert\n\n- De keuze Nieuw/Uitdovend staat nu ook bij de clusters, en een cluster koppelen koppelt alleen de eindtermen die dezelfde keuze in de lijst toont. Met \"Nieuw\" komen bij basisoptie sport alleen de BO1_04-doelen mee.\n- Zonder keuze blijft het zoals de lijst sinds september werkt: nieuw en blijvend. Een cluster brengt dus geen eindtermen meer mee die alleen het oude curriculum had.\n- Twee labels stonden verwisseld: de lege keuze van Graad heette \"Nieuw en blijvend\", die van Nieuw/Uitdovend \"Alle\". Nu heet de eerste \"Alle\" en de tweede \"Nieuw en blijvend\", wat ze ook doen.\n\nDe aanduiding van de doelen zelf verandert niet. Of de doelen van 2019 voor basisoptie sport uitdovend zijn, is een keuze over de gegevens en niet over de code; de GO-export van september 2025 heeft voor de basisopties in de B-stroom nog het leerplan van 2019.\n\n## Regels\n\nNieuwe sectie S1-2, \"De eindtermen van een project\": R S1-2.1 (wat de lege keuzes doen) en R S1-2.2 (een cluster brengt wat de keuze toont), elk met een test.\n\n## Nagekeken\n\n- `SearchDropdownAttainmentLevelTest`: een cluster met een nieuwe, een blijvende en een uitdovende eindterm, gekoppeld onder elke keuze; en de lege optie van elk filter, in beide weergaven.\n- Zes mutanten, alle zes opgevangen: de cluster negeert de keuze, zonder keuze komt het oude mee, \"Nieuw\" laat blijvend door, het model negeert de beperking, de keuze staat alleen bij eindtermen, het oude label bij Graad.\n- De volledige suite lokaal op MariaDB: 1316 van 1317 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/cluster-follows-new-old",
+            "title": "Een cluster brengt de eindtermen die de keuze Nieuw/Uitdovend toont"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930113616-dd2cfa"
+}

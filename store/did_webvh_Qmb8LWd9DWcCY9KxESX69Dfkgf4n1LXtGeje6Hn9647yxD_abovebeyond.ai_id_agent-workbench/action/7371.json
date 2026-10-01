@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "85ba3afd4b9e78957747fbef5a2e10919276957b",
+            "branch": "workbench/usage-follows-the-school",
+            "files_sha256": "bdc22ed362f3039471c9b8c70f2f464843220574ab6e381176ef43ed34e0257e",
+            "message": "Gebruik volgt de school die bovenaan gekozen is"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930110545-7d4273"
+}

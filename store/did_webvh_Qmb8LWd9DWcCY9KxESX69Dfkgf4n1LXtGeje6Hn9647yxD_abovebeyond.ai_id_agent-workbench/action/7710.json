@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The block on the dealer insights page (`/my-insights`, #874) lists the ten cars of the garage with the most views in the period. Its heading used an idiom (\"Wagens die trekken\", \"Cars that attract\", \"V\u00e9hicules qui attirent\", \"Fahrzeuge, die ziehen\") that does not say that.\n\n## Change\n\n- `dealer_insights.cars_title` in the four languages:\n  - nl: Meest bekeken wagens\n  - fr: V\u00e9hicules les plus consult\u00e9s\n  - en: Most viewed cars\n  - de: Meistgesehene Fahrzeuge\n- The feature description of the page (`features.php`, four languages) used the same idiom (\"which cars attract\") and now says \"which cars are viewed most\".\n- Business rules: R P2-13.4 quoted the heading, R P2-13.9 and the P2-13 intro used the idiom; all three follow. No rule changes meaning.\n- Two code comments (`DealerInsights`, the block in `dealer_insights/index.blade.php`) follow.\n\nNo test asserted the old text.\n\n## Checks\n\nLocally: `AGarageSeesItsOwnFiguresTest`, `LanguageParityTest`, `RulesCoverageTest`, `RulesIdentityTest`, `RulesDocsBuildTest`: 27 tests green (one incomplete: the existing Spanish gap report).\n",
+            "branch": "workbench/fix/most-viewed-cars-heading",
+            "title": "Call the insights block what it shows: most viewed cars"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930190154-b7f2fa"
+}

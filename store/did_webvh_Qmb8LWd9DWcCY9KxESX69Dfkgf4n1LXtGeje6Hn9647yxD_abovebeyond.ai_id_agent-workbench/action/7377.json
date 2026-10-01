@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e7509d16767f7e68accfc575f915e5e4eca412b4",
+            "branch": "workbench/docs/own-vehicle-pickup-stays-at-dealer-address",
+            "files_sha256": "4370af7bfeff56f4db6367be56b56b00ce04887c52c78930a2e2bfac19eac3b8",
+            "message": "Own vehicle pickup stays at the dealer address"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930111748-e2b45d"
+}

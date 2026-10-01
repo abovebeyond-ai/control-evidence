@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "47dada00d220a6531eaebb1187a0360a80bf65dd",
+            "branch": "workbench/fix/garage-admin-screens-are-for-admins",
+            "files_sha256": "82b3fdfc9a9643d325b1d95fd01f5b46153a66726ee0295eb9fdf88a28dfbf0d",
+            "message": "Garage administration screens are for administrators"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930170629-b9277c"
+}

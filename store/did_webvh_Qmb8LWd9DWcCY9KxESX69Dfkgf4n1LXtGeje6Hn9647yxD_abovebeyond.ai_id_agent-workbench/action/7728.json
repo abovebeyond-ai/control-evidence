@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A public page, `/connect`, that gets a reader's AI tool onto Gentells in a minute. The agent door (the MCP server at `/mcp` with OAuth, and the Claude Code plugin) has existed since 13 September. How to use it was only on the account page, as text, for signed-in readers.\n\nYPulse's MCP page is a sales page that ends in \"Book a demo\", with no install path. This one installs.\n\n## One card per tool\n| tool | how |\n|---|---|\n| Claude Code | the plugin (`claude plugin marketplace add Trendwolves/gentells-plugin`, `claude plugin install gentells@gentells`), and `claude mcp add --transport http gentells \u2026/mcp` without it |\n| Claude (claude.ai, desktop) | the address, and Settings, then Connectors, then Add custom connector |\n| ChatGPT | the address, as a connector in developer mode with OAuth |\n| Codex | `codex mcp add gentells --url \u2026/mcp`, then `codex mcp login gentells` |\n| Cursor | an \"Add to Cursor\" button: `cursor://anysphere.cursor-deeplink/mcp/install?name=gentells&config=<base64 of {\"url\": \u2026/mcp}>` |\n\n- Every command and address has a copy button, on its own bar so it never covers the end of a line.\n- The sign-in is always the reader's own Gentells account in the browser.\n\n## Checked against each tool's documentation\n- Claude Code: against the installed CLI's help.\n- Codex: against OpenAI's MCP page.\n- Cursor: against its install-link page.\n\nVS Code is left out: its documentation did not confirm an install-link format, and a wrong link is worse than none.\n\n## Links to it\n- The pricing page: \"Every plan also reads in your AI tool\".\n- The account page's \"Your agent\" section.\n\n## Tests\n- Each exact command and the server address appear on the page.\n- The Cursor link decodes to `{\"url\": \"<site>/mcp\"}`.\n- Pricing links to the page.\n\nChecked in a browser at 1440px. 332 pass.\n",
+            "branch": "workbench/connect/ai-tools",
+            "title": "Connect: Gentells in Claude, ChatGPT, Codex and Cursor in a minute"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001045258-4ceb95"
+}

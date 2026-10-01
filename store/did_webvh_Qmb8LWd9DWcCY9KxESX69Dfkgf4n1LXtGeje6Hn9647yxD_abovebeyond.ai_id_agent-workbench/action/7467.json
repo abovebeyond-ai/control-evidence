@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0fd4f9caaa2c02b54f2d6a6ce9b974434224f194",
+            "branch": "workbench/feat/stock-and-prices-in-insights",
+            "files_sha256": "28ab398525e619c4dff0de5f3f3a017d6d5b24a139ac011de192037e3b87b56f",
+            "message": "Inzichten: stock age, days to sell and price drops on the business tab"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930131205-19d280"
+}

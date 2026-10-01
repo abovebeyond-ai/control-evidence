@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Na de vorige pull requests bleven er in de rapportmotor 35 ontsnapte mutanten over, verspreid over zes bestanden. Drie daarvan zijn echte gaten, en deze pull request dicht ze met tests. De rest is gelijkwaardig: de code doet met of zonder de mutatie hetzelfde.\n\n## De wijziging\n\nAlleen tests.\n\n- **Een leerling die ook lesgeeft** ziet op het vooruitgangsrapport het examen dat nog niet vrijgegeven is, zoals een beheerder (`ProgressReportAsPupilTest`). De code zegt dat een personeelsrol voorgaat, maar geen test zei het.\n- **Een waardegebaseerde score zonder waarde of zonder maximum** krijgt geen kleurnaam, ook geen vraagteken (`ValueScaleTest`).\n- **De deliberatie-export** laat de inspringing en de lege regels van Blade weg, en draagt het stylesheet van de build mee (`TheDeliberationExportTest`). De basistest schakelt Vite voor elke test uit; deze test zet het echte terug.\n\n## Wat gelijkwaardig blijft\n\n- **`ReportService`**: de ids in het deliberatierapport die niets leest; een nullsafe-oproep op een klas die de regel ervoor al gebruikt; twee catch-blokken rond een functie die niet gooit; een `isValueBased` die de score-DTO niet leest; een waarde die de volgende regel overschrijft; een cast op een kolom die al een boolean is.\n- **`ScoringService`**: een match-arm die nooit bereikt wordt, en een standaardwaarde die elke aanroeper zelf invult.\n- **`AverageCalculator`**: twee casts op een maximum dat al een getal is.\n- **`ReportArchive`**: de vlaggen en de diepte van de JSON, en het wisselen van de school in de sessie. Dat laatste krijgt een eigen pull request: het archief zoekt de klas v\u00f3\u00f3r het de school wisselt, dus het wisselen verandert vandaag niets.\n- **`DeliberationStudentExportService::getGeneralFeedback`** is publiek maar wordt alleen binnen de klasse gebruikt.\n\n## De rechter\n\nElke nieuwe test faalt op de mutant die ze moet vangen: de rol leraar weg uit de personeelsrollen, `&&` in plaats van `||`, en Infection op de export met alleen de nieuwe testklasse doodt zes van de zes.\n",
+            "branch": "workbench/last-engine-gaps",
+            "title": "De laatste gaten in de rapportmotor"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929103307-7d7a01"
+}

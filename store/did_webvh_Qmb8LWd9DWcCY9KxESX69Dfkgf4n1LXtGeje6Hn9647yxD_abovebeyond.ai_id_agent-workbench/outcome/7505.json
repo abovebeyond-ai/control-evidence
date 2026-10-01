@@ -1,0 +1,16 @@
+{
+    "action": "d0632d5c928cae70f3d05e58bc511308",
+    "effect": {
+        "detail": {
+            "base": "7031a9daad07caf5d170730bd171766a2613fa40",
+            "branch": "workbench/feat/dealer-insights-page",
+            "commit": "de4cbd9ac4efaf98826afc5beb238f459477ceb3",
+            "files": 27,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7503,
+    "verdict": "ALLOW"
+}

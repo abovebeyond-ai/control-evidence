@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8db94eda69ab36b651f600534404bb0ca86d4639",
+            "branch": "workbench/usage-for-admins",
+            "files_sha256": "d2af52be5266c1b2bc124914079d05e5ed36374b7727baa16a52684ce5044605",
+            "message": "Een beheerder ziet het gebruik van zijn school"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930102827-19b3d5"
+}

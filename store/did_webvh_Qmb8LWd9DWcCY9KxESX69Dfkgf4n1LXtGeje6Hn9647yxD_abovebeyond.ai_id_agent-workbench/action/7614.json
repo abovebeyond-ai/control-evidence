@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The invite, the password reset, the curation proposals and the `/curate` page still wore the look from before the September redesign: an orange eyebrow and an orange round pill button. The design system has one real button, a green block with white text and square corners (\"the round pill of the previous site is gone\"), and gentells.com's own mails already use it.\n\n`packages/server/mail-style.mjs` holds the site's mail theme values (ink, body, muted, line, ground, green, coral), the wordmark image, one `mailButton`, one `mailLink` and one `mailLayout`: the ground, the wordmark, and a white card with a hairline and square corners. All four places use it now:\n- **Invite and reset:** a heading, text, the green button. The reset's \"if it was not you\" moves under the button, in the caption colour.\n- **Proposals:** each proposal separated by a hairline instead of a boxed card; Approve is the green button, Skip is plain text; the erroring-sources line is in coral, the one thing that asks for attention.\n- **`/curate` page:** the same colours and button.\n\nNo orange (`#E8400C`), no pill (`999px`) and no old teal (`#0FA3B1`) is left in the server.\n\nThe wordmark is the PNG gentells.com's mails load; that file lands with the gentells-site PR \"The mail wordmark exists\". Until then the alt text \"Gentells\" shows.\n\n954 tests pass.\n",
+            "branch": "workbench/mail/house-style",
+            "title": "Mails in the house style: the green square button, the wordmark, no orange pill"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930172816-0636f8"
+}

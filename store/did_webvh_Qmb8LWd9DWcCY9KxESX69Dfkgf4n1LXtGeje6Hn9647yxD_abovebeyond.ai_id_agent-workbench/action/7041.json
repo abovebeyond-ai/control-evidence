@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3a338af45954acb3e57712a6bc248b8889f89d37",
+            "branch": "workbench/rule-tags",
+            "files_sha256": "0d69a0b5c3cfc2454188f8cc26858caaa884d7a6cbd09dc867a091e60586f08e",
+            "message": "De regeltelling leest elke tag van een docblock"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929084444-b3ee1d"
+}

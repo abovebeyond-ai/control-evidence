@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Launch blocker: once the pre-launch screen goes off, anyone with an account could give themselves a paid plan.\n\nWhile no payment driver is live (Stripe was never finished, Mollie is not built yet), the stand-in `FakeBilling` sends \"Choose Signal/Decode\" to `/billing/pretend/{plan}`. Its confirm sets the plan with the flash \"No payment was taken\". That is a development shortcut; on the public site it is a free upgrade to Signal (EUR 14.99/month) or Decode (EUR 299/month).\n\n**In production**\n- The stand-in's checkout sends a paid plan to the contact form with the plan as its topic (`/contact?topic=signal`). A paid plan is a conversation until a real driver is live.\n- `/billing/pretend/{plan}` and its POST answer 404. Locally they stay, for development.\n\n**The contact form**\n- The topics named plans that no longer exist (\"Starter subscription\", \"Pro subscription\"). They are now Signal, Decode and Intelligence; the key `pro` stays for Intelligence, because the pricing page already links to it.\n- The form now opens on the topic in the link. Until now `?topic=pro` from the pricing page landed on an empty choice.\n\n**Tests**\n- A production run: checkout redirects to the contact form, both pretend routes answer 404, and the plan stays unchanged.\n- The contact form preselects the plan it was sent for.\n- Both fail without this change. 328 pass.\n\nMust be merged before `PRELAUNCH` goes off.\n",
+            "branch": "workbench/billing/no-free-plans",
+            "title": "Launch blocker: in production a paid plan is a conversation, never a free upgrade"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260930185015-dbb834"
+}

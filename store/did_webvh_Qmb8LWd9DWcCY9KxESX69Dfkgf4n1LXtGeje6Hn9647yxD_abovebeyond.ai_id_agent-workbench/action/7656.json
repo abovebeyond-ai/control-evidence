@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "#244 put the Observatory's mails in gentells.com's style: the site's green button, its wordmark, its ground. They come from the Observatory, so they now wear the Observatory, as its sign-in does:\n- its lockup \"GENTELLS | OBSERVATORY\" on a white band with the 2px aqua rule under it;\n- the ground `#F9FBFB`, ink `#1A1A1A` and body `#353233` from `src/index.css` in gentells-dashboard;\n- the one action in crimson `#D62839` with 6px corners and uppercase tracked text, like \"Send me a link\";\n- links and the strength figure in the aqua `#0B7C87`;\n- the erroring-sources line in hot crimson.\n\nThis covers the invite, the password reset, the curation proposals, and the `/curate` page, whose header now carries the same band.\n\n`mail-style.mjs` keeps its shape (`HOUSE`, `mailButton`, `mailLink`, `mailLayout`) with the Observatory's values and a `LOCKUP` image in place of the site's wordmark. The lockup is served by the Observatory (gentells-dashboard \"The Observatory's lockup as an image for its mails\"); merge that one first, or the mails show the alt text \"Gentells Observatory\" until it is deployed.\n\n954 tests pass. Checked in a rendered preview of the reset mail and a proposal mail.\n",
+            "branch": "workbench/mail/observatory-style",
+            "title": "The Observatory's mails wear the Observatory"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930181408-a5a8cc"
+}

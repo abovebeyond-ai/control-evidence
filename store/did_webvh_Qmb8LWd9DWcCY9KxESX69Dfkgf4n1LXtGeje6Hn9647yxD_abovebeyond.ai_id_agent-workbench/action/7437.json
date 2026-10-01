@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8a9522fee50ead9603918d98d568f23af527c33f",
+            "branch": "workbench/sources/phase3-design",
+            "files_sha256": "602a0a15384d28c27bf37e51f4c1ed3fb5b2b994f7962cc78909bd423dcfbc59",
+            "message": "Sources plan: phase 2 where it stands, phase 3 measured against the code"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930123657-06ba70"
+}

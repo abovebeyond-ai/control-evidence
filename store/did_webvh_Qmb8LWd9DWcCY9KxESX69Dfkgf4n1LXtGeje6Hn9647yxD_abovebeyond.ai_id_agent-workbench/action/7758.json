@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three things that read as templated or flat.\n\n**Contact sidebar.** The four stone blocks were all the same shape: an icon in a square, a heading, a line, an arrow. The first one still promised a free account that no longer exists. Now there is one list (\"Or find it yourself\": a sample report and the plans), a short paragraph on custom research and workshops with the link to trendwolves.com, then the social links. A line separates it from the form. A link to /connect follows once #150 is merged.\n\n**Newsletter title.** \"This Week.\" was set in the dot-matrix face. That face works in the hero but looks broken at section size. It is now \"Gen Tells this week\" in Newsreader with the second part in green, on the contact page and in the shared newsletter band.\n\n**Collage band** (trends and the other pages that use it). It was a grey cutting under a green-black scrim, so it read as green. It now works like the home hero: the same cutting in colour, shown through the two drifting patches and the 30% wash of `.hero-reveal-colour`. The scrim is neutral ink and gets lighter towards the right, so the colour shows there and the heading stays readable on the left. With reduced motion, the patches stand still.\n\nTests: 332 passing.\n",
+            "branch": "workbench/site/contact-newsletter-band",
+            "title": "Contact, newsletter and collage band: one list, a plain title, colour in the band"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001051327-fc064e"
+}

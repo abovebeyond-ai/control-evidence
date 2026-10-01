@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f6e3d94fa787b4fca31061263f2c055a3a961c2d",
+            "branch": "workbench/sanity/plain-ids",
+            "files_sha256": "afddc8c01599d9b995fb6f1494e4b50b33b5132b36fdd3cdf4578b32a3437206",
+            "message": "Store plain ids, not Sanity references\n\nWriters stored topic tags as the caller passed them, and callers still build\n{_ref, _type} objects: 77,192 concepts and 6,143 patterns carried them on\n2026-09-29, written every day. plainIds (concept-id.mjs) now normalises every list\nthe store writes: writeConcept, writePattern, the source writer and the generic\npatch path the dashboard edits through. bin/plain-ids.mjs rewrites what was stored\nbefore, dry by default, in one transaction, every previous value in plain_ids_undo."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929101309-eeca6c"
+}

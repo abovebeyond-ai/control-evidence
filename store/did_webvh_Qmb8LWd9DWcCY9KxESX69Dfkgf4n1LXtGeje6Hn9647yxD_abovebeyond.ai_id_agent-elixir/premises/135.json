@@ -1,0 +1,58 @@
+{
+    "certificate": "@[package:league_commonmark]{league/commonmark} moves from %[from]{2.10.0} to %[to]{2.10.2}, closing %[advisories]{2} advisories, ?[safe: FIX_WITHIN_SEMVER]{within semver}.\n@[package:laravel_framework]{laravel/framework} moves from %[from]{13.29.0} to %[to]{13.30.0}, closing %[advisories]{1} advisory, ?[safe: FIX_WITHIN_SEMVER]{within semver}.",
+    "errors": null,
+    "provenance": {
+        "package:laravel_framework.advisories": "inferred",
+        "package:laravel_framework.from": "inferred",
+        "package:laravel_framework.name": "inferred",
+        "package:laravel_framework.semverSafe": "gateway",
+        "package:laravel_framework.to": "inferred",
+        "package:league_commonmark.advisories": "inferred",
+        "package:league_commonmark.from": "inferred",
+        "package:league_commonmark.name": "inferred",
+        "package:league_commonmark.semverSafe": "gateway",
+        "package:league_commonmark.to": "inferred"
+    },
+    "registry": {
+        "FIX_WITHIN_SEMVER": {
+            "field": "semverSafe",
+            "label": "the update stays within semver",
+            "op": "eq",
+            "value": 1
+        }
+    },
+    "requiredControls": [
+        "FIX_WITHIN_SEMVER"
+    ],
+    "requiredGrades": {
+        "advisories": "inferred",
+        "attempt": "gateway",
+        "ciRun": "inferred",
+        "coverage": "inferred",
+        "filesChanged": "inferred",
+        "from": "inferred",
+        "headersToSet": "gateway",
+        "heavyHeadersMissing": "inferred",
+        "missingHeaders": "inferred",
+        "model": "inferred",
+        "safeHeaders": "gateway",
+        "semverSafe": "gateway",
+        "testsAfter": "inferred",
+        "testsBefore": "inferred",
+        "to": "inferred",
+        "underTests": "gateway"
+    },
+    "store": {
+        "package:laravel_framework.advisories": 1,
+        "package:laravel_framework.from": "13.29.0",
+        "package:laravel_framework.name": "laravel/framework",
+        "package:laravel_framework.semverSafe": 1,
+        "package:laravel_framework.to": "13.30.0",
+        "package:league_commonmark.advisories": 2,
+        "package:league_commonmark.from": "2.10.0",
+        "package:league_commonmark.name": "league/commonmark",
+        "package:league_commonmark.semverSafe": 1,
+        "package:league_commonmark.to": "2.10.2"
+    },
+    "verified": true
+}

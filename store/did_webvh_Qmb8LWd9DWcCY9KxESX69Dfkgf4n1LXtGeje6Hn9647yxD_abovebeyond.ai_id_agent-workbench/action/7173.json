@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fec26b4fadbbc377d9b94886bc96d74e6631d5e4",
+            "branch": "workbench/sanity/plain-ids",
+            "files_sha256": "8e67e2bc47b904408e375b74b2dbe24d01d337febf87c2d5292ac5e4c3cfb66d",
+            "message": "Read ids through one helper; an insight's page names its patterns again"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260929103459-71ed1c"
+}

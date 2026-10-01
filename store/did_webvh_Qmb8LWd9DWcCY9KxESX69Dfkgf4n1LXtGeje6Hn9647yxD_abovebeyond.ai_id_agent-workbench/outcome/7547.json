@@ -1,0 +1,16 @@
+{
+    "action": "5afabf1536da0bf5200854c80ed7051c",
+    "effect": {
+        "detail": {
+            "base": "66f3c500049fde5cbe756a127815dbbff6a914df",
+            "branch": "workbench/auth/password-reset",
+            "commit": "257e2e39175c76d9f9da4c183102ecf60d1945f4",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7545,
+    "verdict": "ALLOW"
+}

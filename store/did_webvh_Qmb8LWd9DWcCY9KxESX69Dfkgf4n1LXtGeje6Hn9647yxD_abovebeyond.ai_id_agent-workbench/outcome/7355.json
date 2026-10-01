@@ -1,0 +1,16 @@
+{
+    "action": "1b393c999ee33e850af0b42e4947d885",
+    "effect": {
+        "detail": {
+            "base": "a81bb44f1fc9da5d9e88f26aba6d94dbef24e828",
+            "branch": "workbench/sources/academic-keys",
+            "commit": "d7b5bf390ad6ce84decaf211c3d8fe4e0e527e24",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7353,
+    "verdict": "ALLOW"
+}

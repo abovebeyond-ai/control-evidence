@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"Forgot your password?\" under the Studio's sign-in was 0.75rem in a light grey. It is now 0.82rem in the body colour, with a little more room above it.\n\nBuild ok.\n",
+            "branch": "workbench/auth/link-size",
+            "title": "Forgot your password is big enough to find"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20260930174254-a1b2ad"
+}

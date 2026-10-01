@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The homepage after #152, with the parts that still read as empty or as a template.\n\n## Reports\n- **No dark strip above the report.** \"The Reports\" now sits inside the feature block, above the title. Before, it was a band with only a heading in it. `x-report-feature` takes it as `kicker`.\n- **The cover is never cut off.** The feature splits 3:2, and the text side is tighter, so the cover keeps its full width and height.\n- **More reports** replaces two large, empty title boxes. Each next report is a small version of the feature: the cover big enough to read, and the same cover blurred behind its status and title. \"See the calendar\" sits on the same line as the row's label.\n- **Status in plain words.** \"available, with preview\" left open whether the report itself was out. It now reads:\n  - \"Out now\" when the full report is there;\n  - \"Preview out now\" when only the preview is;\n  - \"coming soon\" or a date, as before.\n\n  A new test covers the preview-only case.\n\n## Four sections in their own form\n\"How we read\", \"Why Gentells?\" and \"Built for people who need to get it right\" were three times the same row of grey cards with an icon.\n- **How we read:** a chain of four steps, each under a rule, with its number in coral.\n- **Why Gentells?:** the heading and the lead on the left; the comparison as a list of three rows on the right.\n- **Built for:** one stone band, three audiences side by side in large green italics, separated by a thin line.\n\n## Prices as orientation\nThe four price cards repeated `/pricing`, without \"a month\", and without saying that Decode and Intelligence are annual plans. They are now one band:\n- \"Start free\", what the free account gives, and the starting price;\n- the recommended plan with what it opens, its price and \"billed annually\";\n- \"See the plans\" and \"Talk to us\".\n\nThe amounts come from the same source as `/pricing` (`Plan`, projected from the Observatory).\n\nTests: 333 passing. Checked locally at 1440 px with the real covers of the three reports that are out.\n",
+            "branch": "workbench/site/home-polish",
+            "title": "Home: reports band, sections in their own form, prices as orientation"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001070738-cd31ac"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5135fbf91499fb45415aafd80b972cc6ed531187",
+            "branch": "workbench/fix/published-since-days",
+            "files_sha256": "5da4b2c05486f6a07d029b6775f28c268ba01573eb076d56c1def475f23bac90",
+            "message": "Published column: \"Sinds N dagen\" instead of \"Al N dagen\""
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001071648-58e64f"
+}

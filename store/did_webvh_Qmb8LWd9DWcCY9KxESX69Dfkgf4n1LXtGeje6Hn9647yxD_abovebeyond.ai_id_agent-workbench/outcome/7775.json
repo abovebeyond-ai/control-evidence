@@ -1,0 +1,16 @@
+{
+    "action": "c77db0fa8a6cc4df92a453b0669efb73",
+    "effect": {
+        "detail": {
+            "base": "fe69ed25990d573dd9c7b5e112ff830b51595c82",
+            "branch": "workbench/pseudonymise-without-faker",
+            "commit": "af7c48968e4a22bfdf83864075d0f97ffeb5f647",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7773,
+    "verdict": "ALLOW"
+}

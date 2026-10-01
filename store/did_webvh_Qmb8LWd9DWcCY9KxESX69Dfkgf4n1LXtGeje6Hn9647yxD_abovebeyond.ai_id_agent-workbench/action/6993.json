@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c650db34bc13d7ab91237ef75d735570fa8e25ab",
+            "branch": "workbench/progress-judges",
+            "files_sha256": "ad8518e75b4ccea54c6cdbf71872fb6727a0af7160c1991b837bf45ca908563a",
+            "message": "Rechters op de grenzen van bereikt en geslaagd"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929075139-e8ea6e"
+}

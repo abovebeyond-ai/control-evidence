@@ -1,0 +1,14 @@
+{
+    "action": "99a2cbf0d0f8af0424cb875fd2b34266",
+    "effect": {
+        "detail": {
+            "evidence_carried": true,
+            "status": 204,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 126,
+    "verdict": "ALLOW"
+}

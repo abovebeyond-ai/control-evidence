@@ -1,0 +1,16 @@
+{
+    "action": "fdc931db9efd04fd161b92fedb8539cf",
+    "effect": {
+        "detail": {
+            "base": "9236ebd408e9a0a9f7b9d6f31c177add387bcf27",
+            "branch": "workbench/fix/small-things-seen-in-the-screens",
+            "commit": "abd581e392ce2403f681585ede0457f0b6f1ce76",
+            "files": 22,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7248,
+    "verdict": "ALLOW"
+}

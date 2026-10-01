@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7031a9daad07caf5d170730bd171766a2613fa40",
+            "branch": "workbench/feat/error-pages-speak-the-visitors-language",
+            "files_sha256": "d81410c91f40fadde3e6e456c56da279cde2a0adeca46c2f54b72b3eecf426e5",
+            "message": "Error pages speak the visitor's language"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930141452-38341b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Staff can now reset a forgotten password themselves, instead of asking for a new invite.\n\n- **`POST /auth/forgot`** `{email}` mails a link to `observatory.gentells.com/#reset=<token>`, but only to an active staff account that has a password. It always answers the same, account or no account, so the form cannot be used to find out who has one. At most one mail per address per five minutes, so the public form cannot flood an inbox. Every request is logged as mailed or NOT mailed.\n- **`POST /auth/reset`** `{token, password}` sets the new password (minimum 8 characters) and signs the person in.\n\nThe token is the invite's stateless pattern (email + expiry + HMAC), with two differences:\n- **Its purpose is in the signature** (`reset:` against `invite:`), so neither link opens the other door.\n- **It signs a fingerprint of the password it replaces.** Once the new password is set, the fingerprint no longer matches, so a link works exactly once without a table of used tokens. It expires after an hour, and a disabled account or a reader cannot use it.\n\nBoth routes are on the gating test's pre-gate list, each with its reason.\n\nTests (`test/auth-reset.test.mjs`):\n- the answer is the same with and without an account;\n- the mail throttle;\n- a reset signs in, the old password stops working, and the link dies after use;\n- an expired, tampered or invite token is refused, and so is a short password;\n- a disabled account is refused.\n\n954 tests pass. Lint: 0 undefined names, unused unchanged.\n\nGoes with gentells-dashboard (the forms) and gentells-studio (a link from its sign-in).\n",
+            "branch": "workbench/auth/password-reset",
+            "title": "Password reset for the Studio and Observatory"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930163523-f86ece"
+}

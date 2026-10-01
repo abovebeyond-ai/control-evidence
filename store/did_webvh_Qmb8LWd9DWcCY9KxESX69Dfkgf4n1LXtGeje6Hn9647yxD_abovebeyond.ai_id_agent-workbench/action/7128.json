@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De mutatietest liet in `ProjectStatisticsService` 9 mutanten ontsnappen: wat als ge\u00ebvalueerd telt en de afronding van het percentage waren niet getest.\n\nEen van de nieuwe tests vond een fout. Het percentage werd op twee decimalen afgerond en dan in `ProjectProgressionDTO` gestoken, waarvan het veld een `int` is. PHP kapt dan af, met een deprecatie bij elke keer: twee van drie eindtermen stond op het dashboard van de leerkracht als 66 procent. Nu wordt het afgerond op een heel procent, zoals bij de voortgang van een klas: 67.\n\n## De wijziging\n\n- **`ProjectStatisticsService::calculateProgression`** rondt het percentage af op een heel procent. Dat is de enige wijziging in de code.\n- **Drie nieuwe tests** in `ProjectStatisticsServiceTest`: een lege score of een score in een ander project telt niet; het percentage wordt afgerond, \u00e9\u00e9n van drie is 33 en twee van drie is 67; per eindterm tellen alleen de evaluaties en de leerlingen van dit project.\n- **De zes bestaande tests** krijgen hun regelcode.\n- **Regelboek**: nieuw hoofdstuk B6 De voortgang van een project, met drie regels.\n\n## Wat verandert voor gebruikers\n\nOp het dashboard van een leerkracht staat het percentage van een project nu afgerond in plaats van afgekapt: waar 66 stond, staat 67. Een percentage dat al een geheel getal was, verandert niet.\n\n## De rechter\n\nInfection op de dienst, met alleen deze testklasse als rechter: 33 van de 34 mutanten gedood. De ene die ontsnapt, laat de nieuwe cast naar een geheel getal weg; het veld van de DTO doet dan hetzelfde. Volledige suite op MariaDB, PHPStan zonder fouten.\n",
+            "branch": "workbench/project-progress-judges",
+            "title": "De voortgang van een project: wat telt, en een afronding die afkapte"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929100715-b53485"
+}

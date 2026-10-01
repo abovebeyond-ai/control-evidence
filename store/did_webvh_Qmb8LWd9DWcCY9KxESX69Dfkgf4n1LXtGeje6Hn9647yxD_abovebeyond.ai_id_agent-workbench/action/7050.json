@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\n`stocklist:resend-removals` (#849) lists removed portal vehicles whose `delete` never reached a receiver. On production its first dry run listed 133 cars instead of about 30. The reason: a receiver that answers a removal with 404 was counted as \"not delivered\". Since 15 September Hexon (#2) answered deletes with 200 x321, 404 x55 and 500 x78.\n\nFor a removal, 404 (\"I do not know this car\") or 410 (\"it is gone\") is the outcome the removal wants: the car is not there. Sending those deletes again would only produce another 404.\n\n## What changes\n\nThe receiver's last word about a car is now:\n\n- a successful (2xx) delivery of any type, or\n- a `delete` or `sold` answered with 404 or 410.\n\nThe car is listed for a receiver when that last word is not a `delete` or `sold`. Everything else stays: a 5xx, any other 4xx, or a delivery without an answer (timeout, null status) still counts as not arrived, and a successful `create`/`update` after the delete still means the receiver's last word is that the car is there. Output format and flags are unchanged.\n\n## What does not change\n\n`WebhookHelper::alreadyDelivered` (R S2-10.12) is left alone. It never skips a `delete` or `sold`, so the 404 question does not arise on the sending side. Treating a delete-404 as a last word there would change which later `create` goes out and would also touch the retry behaviour of R S2-10.11 (a 404 is still a failed delivery that the queue retries); that is a separate decision, not the same rule.\n\n## Rule\n\nR S2-10.14 in `docs/bedrijfsregels/12-s2-eigen-wagenpark-publiceren.md` now states the 404/410 rule and why.\n\n## Tests\n\n`ResendRemovalsCommandTest::test_a_removal_answered_with_404_or_410_arrived_and_a_5xx_or_timeout_did_not` (`@rule S2-10.14`): a delete answered 404 or 410 and a sold answered 404 are not listed; a delete answered 500, 422 or without a status is listed; a successful create after a delete-404 is listed. The test fails against the old rule.\n\nLocally: ResendRemovals, WebhookOnlyOnChange, Rules*, ADeletedReceiver and VehiclePublishing tests green (47 tests), Pint clean, PHPStan no errors.\n",
+            "branch": "workbench/fix/a-404-on-a-removal-means-gone",
+            "title": "A 404 on a removal means the car is gone"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929085837-c028da"
+}

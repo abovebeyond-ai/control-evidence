@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The two daily self-improve routines go. One wrote nothing anyone read; the other has been steering the classifier away from verified answers.\n\n## The classifier self-correction taught against the gold set\n`runClassifierSelfCorrection` re-classified ten **gold-set** signals, which are verified answers. Where the model now disagreed by more than 25 points, it wrote a correction *from the verified score to the model's new guess* into `corrections`, the editors' table.\n\nClassify reads that table as its few-shot examples (`buildFeedbackExamples`, last 30 days). The editors' 23 corrections are from March, outside that window. So from 22 September **every correction example classify saw was one of these nine**, mostly telling it to score higher than the gold set: 10 became 64, 12 became 50, 22 became 48.\n\n- The routine is removed.\n- `bin/drop-synthetic-corrections.mjs` exports the nine to `store/archive/synthetic-corrections.json` and deletes them. It is a dry run by default, is tested, and leaves editor corrections alone.\n\n## The model experiment had no reader\n`runModelExperiment` scored one cheaper model a day on ten gold-set signals, against a baseline hard-coded at 100%, and wrote the score to `prompt_variants`, which nothing reads. `eval-models.mjs` is the real model comparison on the gold set.\n\n- The routine, `insertPromptVariant` and the table's CREATE go.\n- `prompt_variants` joins the list in `bin/drop-legacy-tables.mjs` (5 rows, exported before the drop).\n\n## Scheduling\n`self-improve-daily` leaves the scorer, the worker and the engine state. The weekly pass (source trust, graph drain) stays as it was. It runs at the lowest priority, so it waits for an idle engine: its last run was 22 September.\n\nTests: 956 pass (one new). Lint: 0 undefined names, unused unchanged.\n\nNot touched: the architecture paper still counts fourteen scheduler actions, including the client pull removed in #231 and a second self-improvement pass. It is generated and verified in its own loop, so it is flagged rather than edited here.\n",
+            "branch": "workbench/cleanup/self-improve-daily",
+            "title": "Stop teaching the classifier against the gold set; the daily self-improve routines go"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930050810-10335d"
+}

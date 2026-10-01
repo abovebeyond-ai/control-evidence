@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Phase 2 of the sources plan ends on one rule: every active source delivers, or is off. Two adapters were active and delivered nothing, so they move to `OFF` in `adapters/registry.mjs`, each with its reason. The Collection screen and `/api/elixir` show that list.\n\n- **semantic-scholar**: it has refused every request without a key since September 2026, the bulk endpoint included (\"apply for a key for higher rate limits\"). In the week to 30 September it brought 0 new papers, and a key cannot be had for now. OpenAlex covers the academic layer meanwhile (with its key since today). It comes back on once `SEMANTIC_SCHOLAR_API_KEY` exists: the adapter, the key declaration to Elixir and the source rows (shared with OpenAlex) stay.\n- **twitch-trends**: skipped all 557 rounds of that week (missing `TWITCH_CLIENT_ID`/`SECRET`). There is no Twitch app. Switching it on or striking it waits on a decision by Shane and Maarten; an app at dev.twitch.tv puts it back.\n\nBoth adapter files stay, like the other adapters on the off list. The academic test now expects the two academic adapters that run.\n\nTests: 949 pass (fewer than before because some tests are generated per active adapter).\n",
+            "branch": "workbench/sources/off-s2-twitch",
+            "title": "Semantic Scholar and Twitch go on the off list, each with its reason"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930122050-2bdef4"
+}

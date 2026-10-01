@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0560689370c0ee4aeb2802719ab81a1603010ecc",
+            "branch": "workbench/projects-filter-and-group",
+            "files_sha256": "a28dd7bc4ebf4a80efd43f986b8df7dca79b9cc5fe06e1153559cc50269e35be",
+            "message": "De lijst van projecten filtert en groepeert op graad, stroom, klas en vak"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930135723-4ec7b7"
+}

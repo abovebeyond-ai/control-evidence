@@ -1,0 +1,16 @@
+{
+    "action": "07ca32e7b370f0db4c354fb076a960f1",
+    "effect": {
+        "detail": {
+            "base": "ba8cb77db16a13974c92161a06939b10ea92d9bb",
+            "branch": "workbench/feat/insights-round-two",
+            "commit": "44d754dcd253e7ef0ac4ce05ba44959e2d426b77",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7737,
+    "verdict": "ALLOW"
+}

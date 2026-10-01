@@ -1,0 +1,16 @@
+{
+    "action": "65a4174f83108119912c2f77649f29b8",
+    "effect": {
+        "detail": {
+            "base": "266cd988d5a501db8b6eba999413e054fabab570",
+            "branch": "workbench/feat/dealer-map-in-insights",
+            "commit": "99d6544599aa8bc3a71374fb8714ef8d729edd20",
+            "files": 27,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7443,
+    "verdict": "ALLOW"
+}

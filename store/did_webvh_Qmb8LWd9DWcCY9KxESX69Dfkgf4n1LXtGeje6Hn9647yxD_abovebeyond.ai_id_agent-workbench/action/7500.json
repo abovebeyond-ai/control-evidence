@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Drie dingen op de pagina Gebruik, na het eerste gebruik ervan.\n\n## Alleen de schooljaren die begonnen zijn\n\nHet volgende schooljaar wordt vooraf aangemaakt, zodat de overgang op de eerste schooldag niet hapert: 2027-2028 bestaat al. De pagina bood het aan als keuze, zette het in door de jaren als een rij nullen, en rekende het vooraf uit. Een scope `Schoolyear::begun()` is nu de ene definitie voor de keuze, door de jaren (`UsageAnalytics::acrossTheYears`) en het vooraf rekenen (`naviskore:usage-warm`). Een url die om zo'n jaar vraagt, krijgt het lopende.\n\n## De tabel per school is weg\n\nDe tabel \"Laatste 30 dagen, per school\" zette elke school naast elkaar. Sinds #223 volgt de pagina de school die bovenaan gekozen is, en een beheerder zag in de tabel al alleen de zijne. `UsageOverview`, dat alleen die tabel voedde, gaat mee weg met zijn tests. Een login laat nog altijd zijn moment achter (`users.last_login_at`); de test daarvan staat nu apart.\n\n## Door de jaren onderaan, dichtgeklapt\n\nDoor de jaren stond midden op de pagina, terwijl het een vergelijking is voor af en toe. Het staat nu onderaan, in een `<details>` dat dicht begint, en dat deel laadt lui in plaats van uitgesteld: een dicht element komt niet in beeld, dus de telling (het traagste deel, tien seconden zonder cache) gebeurt pas wanneer iemand het openklapt.\n\n## Regels\n\nNieuw: R B8-4.1 (alleen begonnen schooljaren) en R B8-3.3 (door de jaren onderaan en dicht). R B8-1.1, B8-1.2 en B8-3.1 zeggen niets meer over de tabel; R B8-2.2, over Ingelogd in de tabel, vervalt met de tabel.\n\n## Nagekeken\n\n- `TheUsagePageKnowsTheYearsThatBeganTest`: een jaar dat nog moet beginnen, staat niet in de keuze en niet op de pagina, een url die erom vraagt krijgt het lopende jaar, door de jaren telt het niet, en het vooraf rekenen slaat het over.\n- `TheUsagePageLoadsInPartsTest`: door de jaren komt na de rest, in een details dat niet open begint, en laadt bij zicht (`x-intersect`), de andere delen meteen (`x-init`); de pagina zelf raakt geen score meer aan.\n- Mutanten, alle opgevangen: de scope die elk jaar doorlaat en elk van de drie plaatsen die haar niet gebruikt; door de jaren weer uitgesteld; door de jaren open bij het laden.\n- De volledige suite lokaal op MariaDB: 1321 van 1322 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/usage-years-at-the-end",
+            "title": "Gebruik: alleen begonnen schooljaren, geen tabel per school, door de jaren onderaan"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930140437-21ec87"
+}

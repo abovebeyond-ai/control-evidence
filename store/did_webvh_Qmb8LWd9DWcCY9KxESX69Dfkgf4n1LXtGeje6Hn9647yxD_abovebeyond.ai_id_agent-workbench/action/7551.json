@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7354fd8cf322ef0254fbd69ee41455c157c5ab3b",
+            "branch": "workbench/auth/password-reset",
+            "files_sha256": "3c027446404298a2ed8ac4c91fb0e0ed4134099a8353ae19f7dd4408fb3bad27",
+            "message": "The Studio sign-in links to the password reset"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20260930163543-dd332f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Every mail from gentells.com went out with a broken logo. The mail header (`resources/views/vendor/mail/html/header.blade.php`) loads `brand/gentells-wordmark@2x.png`, and only `gentells-wordmark.svg` was in the repo; `https://gentells.com/brand/gentells-wordmark@2x.png` answers 404.\n\n- **The PNG:** rendered from the SVG at twice its display width (320 \u00d7 41 px, transparent), as the header's comment describes.\n- **`MailAssetsTest`:** every `asset('\u2026')` a mail view names must exist in `public/`. Without the PNG it fails and names the file.\n\n326 tests pass.\n",
+            "branch": "workbench/mail/wordmark-png",
+            "title": "The mail wordmark exists: every gentells.com mail showed a broken logo"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260930182224-46e03a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op de pagina Gebruik koos een superbeheerder de school nog eens op de pagina zelf, naast de school die hij bovenaan elke pagina al gekozen had, en de pagina opende op \"Alle scholen\". Nu volgt de pagina voor iedereen de school van bovenaan, zoals elk ander scherm.\n\n## Wat verandert\n\n- De rij \"Alle scholen, athena Drie Hofsteden, athena Heule, \u2026\" is weg. Onder het schooljaar staat de naam van de gekozen school; een andere school kies je in de schoolkeuze bovenaan, zoals overal.\n- Een school in de url verandert niets meer, ook niet voor een superbeheerder.\n- De superbeheerder houdt de tabel \"Laatste 30 dagen, per school\" met elke school naast elkaar. Een beheerder ziet daarin alleen zijn eigen school, zoals sinds #221.\n- Een keuze voor wie geen school gekozen heeft, is er ook niet: niemand is aangemeld zonder school, want `SchoolSelectMiddleware` kiest er een of meldt af. Zo'n keuze zou nooit getoond worden.\n- `naviskore:usage-warm` rekent \"alle scholen samen\" niet meer vooraf uit. Niemand leest die cijfers nog, en het was de zwaarste blik van de ronde.\n\n## Regels\n\nR B8-1.1 zegt nu dat ook de superbeheerder de school van bovenaan ziet, en dat de url daar niets aan verandert.\n\n## Nagekeken\n\n- `AnAdminSeesTheUsageOfTheirSchoolTest`: een superbeheerder die via de url een andere school vraagt, ziet de school van bovenaan, en elke school in de tabel.\n- `UsageIsRememberedTest`: het vooraf rekenen noemt de school, en niet meer \"alle scholen\".\n- Drie mutanten, alle drie opgevangen: de url die voor een superbeheerder beslist, een superbeheerder met maar \u00e9\u00e9n rij in de tabel, en het vooraf rekenen van alle scholen samen.\n- De volledige suite lokaal op MariaDB: 1307 van 1308 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/usage-follows-the-school",
+            "title": "Gebruik volgt de school die bovenaan gekozen is"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930110545-7d4273"
+}

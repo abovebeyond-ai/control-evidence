@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De check \"Dependency audits\" staat sinds gisteravond rood op elke pull request, los van wat die verandert. Drie meldingen raken de composer-lockfile, en achter de composer-audit wacht een vierde in npm die pas zichtbaar wordt zodra de eerste slaagt: de job stopt bij de eerste rode stap.\n\n| Pakket | Was | Nu | Melding |\n|---|---|---|---|\n| laravel/framework | 13.24.0 | 13.30.1 | GHSA-jh5r-qr3c-85q8, XSS in de debugpagina (laag) |\n| league/flysystem | 3.35.2 | 3.35.3 | GHSA-cxf4-7mrp-vvpr, padcontrole te omzeilen met misvormde UTF-8 (laag) |\n| phpseclib/phpseclib | 3.0.56 | 3.0.57 | GHSA-q97c-8qh3-fpc6, X25519 niet in constante tijd (middel) |\n| brace-expansion (npm) | 5.0.9 | 5.0.12 | GHSA-q2hr-2g5m-vwhr, GHSA-qhr7-859c-m2p7, GHSA-6j4f-fj2g-mc7p, DoS (hoog) |\n\nTelkens de kleinste versie die de melding oplost: Laravel 13.30.1 en niet 13.34.0, flysystem 3.35.3 en niet 3.36.0. De rest van de weg binnen semver is gewoon onderhoud en hoort niet in een veiligheidsfix.\n\nAlleen de lockfiles veranderen; composer.json en package.json blijven zoals ze zijn. npm ruimde bij het bijwerken ook de losse vermelding van undici-types op, waar niets in de boom nog naar verwijst.\n\n## Nagekeken\n\n- `composer audit --locked` en `npm audit --audit-level=high`: geen meldingen meer.\n- De volledige suite lokaal op MariaDB: 1302 van 1303 groen. BuildStampTest faalt enkel in een worktree, zoals altijd. De tests die het rapport door Chrome halen en de printcheck (8 tests) slagen na `npm ci` uit de nieuwe lockfile.\n- PHPStan: geen fouten.\n",
+            "branch": "workbench/three-advisories",
+            "title": "Vier pakketten met een bekend lek bijgewerkt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930102700-3a96ef"
+}

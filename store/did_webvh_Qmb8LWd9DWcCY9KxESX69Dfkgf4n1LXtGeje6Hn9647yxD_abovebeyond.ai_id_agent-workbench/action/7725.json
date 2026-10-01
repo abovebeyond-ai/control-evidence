@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "40860d9c7be0d30a110849a78b6d59cc2f0abc0d",
+            "branch": "workbench/connect/ai-tools",
+            "files_sha256": "5166bb70ce11aa85d6dedbe9eba0a5982a60dcfb2bc2900cb2c116d54c386e2f",
+            "message": "Connect: Gentells in Claude, ChatGPT, Codex and Cursor in a minute"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001045258-4ceb95"
+}

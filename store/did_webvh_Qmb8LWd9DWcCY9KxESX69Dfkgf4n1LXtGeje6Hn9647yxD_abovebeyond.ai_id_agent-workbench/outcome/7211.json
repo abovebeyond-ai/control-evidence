@@ -1,0 +1,16 @@
+{
+    "action": "82cd1b8b072ccbddc5f3aa93fb604e7a",
+    "effect": {
+        "detail": {
+            "base": "9e547735c0d54bbb67a203108db1758d21e68123",
+            "branch": "workbench/feat/the-vision",
+            "commit": "14e5ac1e993a09c8022fe79223f699e53607c02e",
+            "files": 19,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7209,
+    "verdict": "ALLOW"
+}

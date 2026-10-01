@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b6849631cf28597f00988cfefe64c8b1d8e55c33",
+            "branch": "workbench/fix/st-and-gts-are-body-styles",
+            "files_sha256": "d115b6ce397c33aafcdc1ea8794d1fb4e7bdc51cf7c57711a0c6ca483b9c7c91",
+            "message": "ST and GTS are not trims; a bucket that cannot answer is a failed file"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929093753-09fd17"
+}

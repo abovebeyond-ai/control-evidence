@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The client layer goes: companies, projects, pull-insights and chat sessions.\n\n**Why**\n- This layer served the client app that left with gentells.com (#230). The site has its own accounts and plans.\n- In production: 16 companies, and the last client insight dates from **2026-04-08**. Projects and chat sessions are empty.\n- The `pull-harvest` phase could not even run: scoring reads `state.companiesDue`, which nothing sets.\n\n**Removed** (about 1,380 lines)\n- **Routes in `server.mjs`:** `/companies`, `/projects` (+ `/:id`), `/project-setup`, `/company-insights/:id`, `/pull-insights`, `/chat-sessions` (+ `/:id`, `/:id/messages`), 571 lines in total.\n- **Files:** `pipeline/pull-harvest.mjs`, `core/clients-store.mjs`, and `verifyClientInsights` in `consensus.mjs`.\n- **The phase and its trigger:** the `pull-harvest` phase in `worker.mjs`, its scoring in `scoring.mjs`, and the chat-session functions in `users-store.mjs`.\n- **In `/chat`:** the project context. No client sends `projectId`, and the projects table is empty.\n- **`core/tenant-boundary.mjs` and its test.** The rule they guarded (nothing a client brings enters the shared graph) is in the Gentells Standard as the two-graph rule, and applies when a tenant layer comes back.\n- The tests for these routes (`client-profiles-rest.test.mjs`).\n\n**Kept:** the tables (`client_companies`, `client_insights`, `projects`, `chat_sessions`) and their rows. Removing code is reversible through git; removing data is not.\n\n**Two additions**\n- **`test/imports-resolve.test.mjs`:** every relative import in the repo must point to a file that exists. Removing `clients-store.mjs` left 15 imports in `server.mjs` pointing at nothing. No test imports `server.mjs`, so the suite stayed green, and the server would not have started on the box. This test would have caught it (checked with a probe file).\n- **`scan_log` keeps 30 days** (`pruneScanLog`, after every collect round, deleting by id). Nothing in the code reads the table, but people do: it shows per source what came back in one round, and which error. It had grown to 559,000 rows.\n\nChecks: 951 tests, 0 failures. A working no-undef lint finds 0 undefined names. Locally the server starts (`Pipeline API running on http://localhost:3100`).\n",
+            "branch": "workbench/cleanup/remove-client-layer",
+            "title": "The client product goes: companies, projects, pull-insights, chat sessions"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929100640-5100b0"
+}

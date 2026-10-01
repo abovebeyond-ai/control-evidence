@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nFollow-up to #869. On the Kaart tab of Inzichten the province table was cut off by its card on desktop: at 1440 the share column read \"AANDEEI\" with its values clipped at the right edge, and the used-car registrations column was not visible at all. The table did scroll, but nothing showed that it did.\n\n## Why\n\nThe table has eight columns and needs about 660px. The row was split with fixed fractions (`1.15fr` map, `1fr` table), which left the table 520px at 1280 and 594px at 1440.\n\n## Change (styling only, one blade)\n\n- The row is `minmax(0,1fr)` for the map and `minmax(0,max-content)` for the table: the table column takes the width of the table, the map takes what is left. Side by side from `xl` (1280), stacked below that.\n- The notes under the table are `w-[0px] min-w-full`, so their long lines wrap to the table instead of widening the card.\n- The table cells on this tab use 6px instead of 10px horizontal padding (`[&_th]:px-[6px] [&_td]:px-[6px]`), which brings the table from 719px to 655px.\n- On a phone the table still scrolls inside its card (`overflow-x-auto`), and the page does not scroll sideways.\n\nTailwind classes in the blade only. `insights.css` and `refresh.css` are not touched, and no business rule changes.\n\n## Measured\n\nRendered the partial with the built CSS and JS and sample data (548 accounts), table width against the width available to it:\n\n| viewport | before | after |\n|---|---|---|\n| 1280 | 719 in 520 (clipped) | 655 in 655 |\n| 1440 | 719 in 594 (clipped) | 655 in 655 |\n| 390 | 719 in 318, scrolls in the card | 655 in 318, scrolls in the card; page 390 wide |\n\nThe map is 513px wide at 1280 and 673px at 1440.\n\n## Tests\n\n`npm ci && npm run build`, then the Insights tests, `TheMapTabShowsWhereTheNetworkIsTest`, `BuildContractTest`, `StylesheetSyntaxTest`, `QualityRatchetTest` and `LanguageParityTest` locally: 42 tests pass. The one incomplete test is the existing report of missing Spanish keys.\n",
+            "branch": "workbench/fix/map-table-fits-its-card",
+            "title": "Inzichten map tab: the province table fits its card"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930130009-e084b2"
+}

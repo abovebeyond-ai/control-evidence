@@ -1,0 +1,16 @@
+{
+    "action": "6f18ee291f7a10763c190f726afea5ee",
+    "effect": {
+        "detail": {
+            "base": "7c300da33fc861093d54471acaaae558c1ceecae",
+            "branch": "workbench/cleanup/dead-routes-and-tmp",
+            "commit": "d8655c43557067e774430f7037511b669e8482aa",
+            "files": 26,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7053,
+    "verdict": "ALLOW"
+}

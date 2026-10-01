@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "In een gedeeld project geven meerdere leerkrachten scores in op dezelfde evaluatie, elk voor de eigen klasgroep. Het ingavescherm toonde altijd alle leerlingen van het project, dus wie 1B scoorde, zocht die leerlingen tussen die van 1A.\n\n## Wat verandert\n\n- Heeft het project meer dan \u00e9\u00e9n klasgroep, dan staat boven het blad een regel woorden: \"Klasgroep alle, 1A, 1B\". De woorden zijn de keuze, de gekozen klasgroep staat in inkt, zoals bij het groeperen op de lijst van projecten.\n- De matrix en het blad per leerling tonen dan alleen de leerlingen van die klasgroep. Vorige en volgende stappen binnen de klasgroep; staat de leerling op het scherm niet in de gekozen klasgroep, dan begint het blad bij haar eerste leerling.\n- De keuze staat in de url (`?klasgroep=`), zodat een herlaadbeurt of een gedeelde link ze houdt. Een klasgroep die niet bij het project hoort, toont iedereen.\n- Wie gescoord mag worden, verandert niet: de controle kijkt nog altijd naar alle leerlingen van de evaluatie. De filter toont minder en verbiedt niets.\n- `Project::students()` laadt van elke klasgroep de klas en haar leerlingen in \u00e9\u00e9n keer mee. Een project met twee of meer klasgroepen laadde ze tot nu per klasgroep apart; in de tests is dat een fout over lazy loading, in productie een extra query per klasgroep.\n\n## Regels\n\nR S3-6.6 zegt het zo.\n\n## Nagekeken\n\n- `ScoreEntryByClassGroupTest`, vijf tests: de gekozen klasgroep toont alleen haar leerlingen en staat in inkt; het blad per leerling stapt alleen door de klasgroep en springt bij een nieuwe klasgroep naar haar eerste leerling; de keuze uit de url kiest meteen de juiste leerling, en een vreemde klasgroep toont iedereen; met \u00e9\u00e9n klasgroep is er geen keuze; een leerling buiten de gekozen klasgroep kan nog altijd een score krijgen.\n- Elf mutanten, alle elf opgevangen: de filter die de klasgroep negeert, stappen door alle leerlingen, geen sprong bij een nieuwe klasgroep, een keuze bij \u00e9\u00e9n klasgroep, de keuze niet in de url, een vreemde klasgroep die niemand toont, scoren alleen voor wie getoond wordt, de weergave met alle leerlingen, de kiezer op een leerling buiten de klasgroep, de gekozen klasgroep als knop, en `Project::students()` zonder het meeladen.\n- De volledige suite lokaal op MariaDB: 1333 van 1334 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/entry-by-class-group",
+            "title": "Scores ingeven per klasgroep in een gedeeld project"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930144201-b4e640"
+}

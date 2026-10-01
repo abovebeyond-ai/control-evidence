@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1bdaf2aa02488bd3f25c08caf8954af96decbf71",
+            "branch": "workbench/archive-session",
+            "files_sha256": "4515d93d3ec019a4d1c6558966d79b5ef58e77a7a64c90cd520d011b7af9ee64",
+            "message": "Het archief zoekt de klas in de school van de periode"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929104019-64bb55"
+}

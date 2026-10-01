@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dd37927683ec77b2cdf19b27c1c3741ae6999086",
+            "branch": "workbench/worker-door",
+            "files_sha256": "0974a28da13a3e2347c77e3ac7960bdd9a6a1d568d912e8d0e07767d94c69d40",
+            "message": "De deur van de werknemer: geen codes op de pagina, geen raden, geen oude sessie"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260929105343-b27752"
+}

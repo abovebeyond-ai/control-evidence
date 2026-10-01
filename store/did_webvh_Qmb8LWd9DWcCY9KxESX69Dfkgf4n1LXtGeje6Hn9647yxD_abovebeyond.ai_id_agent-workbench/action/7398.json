@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`EvaluationScoresEditTest::the_pupils_are_not_part_of_the_component_state` faalde op #224 zonder dat die pull request iets aan het scoreblad veranderde. De test zocht de achternaam van de leerling letterlijk in de html, en die naam kiest Faker willekeurig. Deze keer was het \"O'Conner\", en de pagina schrijft die naam terecht als `O&#039;Conner`. De test faalde dus telkens de gekozen naam een apostrof had.\n\n## Wat verandert\n\n- De leerling in die test heet nu vast \"D'Hondt\": een gewone naam die het geval altijd toetst in plaats van af en toe.\n- De test zoekt de naam zoals de pagina hem schrijft, met `e()`, zoals `assertSee` al doet in de andere tests van hetzelfde bestand.\n\n## Nagekeken\n\n- De oude bewering faalt met \"D'Hondt\", zoals ze op #224 faalde met \"O'Conner\"; de nieuwe slaagt.\n- `EvaluationScoresEditTest`: 26 tests groen. Pint: geen fouten.\n- Elders zoekt geen test een naam van Faker letterlijk in de html: de andere gebruiken `assertSee`, dat zelf ontsnapt.\n",
+            "branch": "workbench/a-name-with-an-apostrophe",
+            "title": "Een naam met een apostrof breekt de test van het scoreblad niet meer"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930113723-aa5a1c"
+}

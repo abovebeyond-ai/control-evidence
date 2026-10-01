@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "756af28c15658cf5ca4206bf9e01bf0fac5f989b",
+            "branch": "workbench/tidy",
+            "files_sha256": "eeea3ff1e6e264d373a6795d0ad68dc8473d0a13a247dc2fe942628bfff22825",
+            "message": "Opruimen: wat dood is weg, wat niet meer klopt rechtgezet"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260930130259-e32481"
+}

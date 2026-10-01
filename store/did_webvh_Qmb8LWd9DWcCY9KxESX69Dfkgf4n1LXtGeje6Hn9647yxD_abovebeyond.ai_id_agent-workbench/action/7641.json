@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1f02a41473577be876412450b89ad818ba7bff99",
+            "branch": "workbench/design/type-scale",
+            "files_sha256": "09624f47d3c807efcd51bcb32cae5ab2a75e69ba1500c80524eb9a62873555fe",
+            "message": "A type scale for the Observatory: six steps, nothing under 12px"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260930175111-cec89b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "80521d99ff61764b4a6fbc1b7af4ee1ad3d663bc",
+            "branch": "workbench/fix/rights-dry-run-reads-the-view-right",
+            "files_sha256": "8184846915f404be4377c47972bde4ad633f8b1308c2fddf01633fb5182df7db",
+            "message": "The rights dry run reads the view right the way AccessRights does"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930182120-2f9db5"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d2335b5e32bf52705a79f257a641cad8a749bc14",
+            "branch": "workbench/net-binnen-titel",
+            "files_sha256": "2ecab6da1cb6d7566de2c60db12dc84afd500710a61195c2541cd60e94f23b07",
+            "message": "Net binnen: titel in gewone kast en halfvet"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260929073838-bbc557"
+}

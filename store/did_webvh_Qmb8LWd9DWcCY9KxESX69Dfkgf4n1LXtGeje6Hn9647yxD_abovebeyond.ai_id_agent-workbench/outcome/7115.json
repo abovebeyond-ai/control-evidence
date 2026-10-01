@@ -1,0 +1,16 @@
+{
+    "action": "83f655aad3d7f62aefca925f2ad0ee05",
+    "effect": {
+        "detail": {
+            "base": "42395b21a4661699aca5cd7adeb2e09cc080d04b",
+            "branch": "workbench/fix/a-bought-copy-gets-its-own-sizes",
+            "commit": "96920eafb8053717bf985824a1e7809a6e96f3fd",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7113,
+    "verdict": "ALLOW"
+}

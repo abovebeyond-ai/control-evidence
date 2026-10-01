@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"league\\/commonmark\",\"to\":\"2.10.2\",\"lock\":\"composer.lock\"},{\"pkg\":\"fast-uri\",\"to\":\"3.1.8\",\"lock\":\"skill\\/package-lock.json\"},{\"pkg\":\"ip-address\",\"to\":\"10.7.1\",\"lock\":\"skill\\/package-lock.json\"}]"
+            },
+            "packages": 3,
+            "plan_sha256": "4ce676942c7315dd85ebc141681774dd893edc4058d35c3936358018197b8279",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "01M3SJ4W2C7AJ557C2V414DFYK"
+}

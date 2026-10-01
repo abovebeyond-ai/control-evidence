@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1904397c0b748e6d79db9e9ef6183df829a3c0a2",
+            "branch": "workbench/cleanup/store-routes",
+            "files_sha256": "3da1fae0937c97581f9080425b2b49284b6a10652c9ad7e921908671ed20c72a",
+            "message": "Call the store as /store/*"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260929101658-dc22d4"
+}

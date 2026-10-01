@@ -1,0 +1,16 @@
+{
+    "action": "ba740d750214c70b32fce3ef916442dd",
+    "effect": {
+        "detail": {
+            "base": "b6849631cf28597f00988cfefe64c8b1d8e55c33",
+            "branch": "workbench/fix/st-and-gts-are-body-styles",
+            "commit": "6839c5d7bde81b9b7ac48f434faaa95fdfc1ce7b",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7083,
+    "verdict": "ALLOW"
+}

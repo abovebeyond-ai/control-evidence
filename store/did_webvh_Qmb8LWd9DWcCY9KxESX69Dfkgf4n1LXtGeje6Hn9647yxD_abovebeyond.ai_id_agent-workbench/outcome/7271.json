@@ -1,0 +1,16 @@
+{
+    "action": "21e0449527877f071f61143d6c48c988",
+    "effect": {
+        "detail": {
+            "base": "09d103b2f645558af3e3100fff0e9cf0be9a0e13",
+            "branch": "workbench/fix/four-points-from-the-shop-floor",
+            "commit": "ca6b31926cc6b043e0b6e9eaddad605d68f81f8e",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7269,
+    "verdict": "ALLOW"
+}

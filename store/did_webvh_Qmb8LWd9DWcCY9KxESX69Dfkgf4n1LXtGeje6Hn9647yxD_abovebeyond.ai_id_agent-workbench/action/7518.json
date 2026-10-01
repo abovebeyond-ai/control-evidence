@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twee dingen aan de lijst van projecten, na het eerste gebruik van #229.\n\n## Graad, stroom en klas vragen naar \u00e9\u00e9n klas\n\nIn Naviskore hoort een stroom bij een graad: \"Doorstroom 2de graad\", \"Dubbel 3de graad\". De keuzelijst Stroom zette zo de stromen van elke graad door elkaar, ook met graad 1 gekozen, en graad 1 met de B-stroom vond een project met een klas in graad 1 en een andere in de B-stroom.\n\n- `ProjectFacets` geeft per project zijn klassen, elk met haar graad en stroom samen, in plaats van losse lijsten van graden en stromen.\n- Graad, stroom en klas vragen samen naar \u00e9\u00e9n klas van het project; het vak vraagt het project.\n- Elke filter biedt alleen aan wat bij de andere keuzes past: met graad 2 gekozen staan bij Stroom alleen de stromen van graad 2 en bij Klas alleen de klassen van graad 2.\n- Groeperen per graad, stroom of klas groepeert op de klassen die bij de keuze passen: binnen graad 2 staat een project met een klas in graad 1 en een in graad 2 alleen onder die van graad 2.\n\n## Groeperen in woorden\n\n\"Groeperen per: Niet\" in een keuzelijst las vreemd. Het is nu een regel woorden, zoals de schooljaren op de pagina Gebruik: \"Groeperen per graad, stroom, klas of vak\". De woorden zijn de keuze, het gekozen woord staat in inkt, en \"Niet groeperen\" verschijnt zodra er gegroepeerd is.\n\n## Regels\n\nR S1-3.1 en R S1-3.2 zeggen het zo.\n\n## Nagekeken\n\n- `TheProjectListFiltersAndGroupsTest`: graad 1 met de B-stroom vindt niets, met graad 2 gekozen biedt elke filter alleen wat bij graad 2 hoort, en groeperen per klas binnen graad 2 toont alleen 2B; groeperen is een regel woorden met \"Niet groeperen\" enkel tijdens het groeperen.\n- Zes mutanten, alle zes opgevangen: een klas die de stroom niet hoeft te hebben, filters weer per project, keuzes die de andere filters negeren, groepen die de gekozen klassen negeren, het gekozen woord dat een link blijft, \"Niet groeperen\" altijd zichtbaar.\n- De volledige suite lokaal op MariaDB: 1325 van 1326 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/group-by-as-text",
+            "title": "De lijst van projecten: graad, stroom en klas samen, groeperen in woorden"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930142219-65c42c"
+}

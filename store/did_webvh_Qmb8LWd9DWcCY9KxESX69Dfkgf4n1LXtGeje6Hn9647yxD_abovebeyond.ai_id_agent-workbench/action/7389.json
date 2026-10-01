@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "05ae0c81765426e71cb739d4f781e13bacfcad7d",
+            "branch": "workbench/cluster-follows-new-old",
+            "files_sha256": "423742dce6075386b84dcab72d50c132dcbaad3da8b1a0a75a942a2e0c407149",
+            "message": "Een cluster brengt de eindtermen die de keuze Nieuw/Uitdovend toont"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930113616-dd2cfa"
+}

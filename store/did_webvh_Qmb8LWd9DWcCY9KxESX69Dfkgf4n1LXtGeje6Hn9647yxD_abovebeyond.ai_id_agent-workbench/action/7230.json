@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De gebruikspagina onthoudt wat ze telde: een voorbij schooljaar voor altijd, het lopende een kwartier, want een schooljaar tellen kost enkele seconden. Maar het deployscript doet `php artisan optimize:clear`, en dat leegt de cache. De eerste blik na elke deploy telde daardoor alle voorbije schooljaren opnieuw. Op 29 september, na de deploy van 12:47, kwamen ze tussen 12:48:34 en 12:48:43 opnieuw in de cache: twee seconden per jaar.\n\n## De wijziging\n\n- **Een eigen cachestore `usage`** in `config/cache.php`: een file store in `storage/framework/cache/usage`. `optimize:clear` leegt alleen de standaardstore, dus deze blijft staan.\n- **`UsageAnalytics`** onthoudt en vergeet in die store.\n- **In de tests** is de store een array, via `USAGE_CACHE_STORE` in `phpunit.xml`, zodat geen test een bestand schrijft.\n\nHet deployscript hoeft niet te veranderen. Wie de cijfers bewust opnieuw wil tellen, doet `php artisan naviskore:usage-warm --fresh`.\n\n## Wat verandert voor gebruikers\n\nNa een deploy laadt de gebruikspagina meteen. Alleen de eerste blik na deze deploy telt nog alles, want de nieuwe store begint leeg.\n\n## De rechter\n\n`UsageIsRememberedTest::clearing_the_cache_leaves_a_counted_year_alone`: een voorbij jaar tellen, `cache:clear`, en de volgende blik stelt geen enkele query. Met de voorbije jaren terug in de standaardstore faalt de test. Volledige suite op MariaDB, PHPStan zonder fouten.\n",
+            "branch": "workbench/usage-survives-deploys",
+            "title": "De gebruikscijfers overleven een deploy"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929110037-e63839"
+}

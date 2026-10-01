@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0916144ff2a42cfbfb28bf1bd5a1370dc3779eb0",
+            "branch": "workbench/mail/observatory-style",
+            "files_sha256": "9387768b22078133bf2250800a1af441165308afac87ff3a08f7e54723e16a6d",
+            "message": "The Observatory's mails wear the Observatory: its lockup, aqua rule and crimson action"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930181408-a5a8cc"
+}

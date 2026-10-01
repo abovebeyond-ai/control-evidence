@@ -1,0 +1,16 @@
+{
+    "action": "e52f3f9fb6167b44b1f6d074db124e35",
+    "effect": {
+        "detail": {
+            "base": "6442e99e50dae02d63a8768d6d38c8a5062a89c8",
+            "branch": "workbench/fix/a-sale-does-not-wait-for-the-photos",
+            "commit": "17f0a9bef574a348ca8f4d9d5b0630844c16861f",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6999,
+    "verdict": "ALLOW"
+}

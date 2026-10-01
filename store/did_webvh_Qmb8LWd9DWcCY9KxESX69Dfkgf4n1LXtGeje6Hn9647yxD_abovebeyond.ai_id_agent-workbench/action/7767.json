@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a33a9bfc43a18abdcb6848da0de3c95e6d102de2",
+            "branch": "workbench/site/report-band",
+            "files_sha256": "34bebd93080187a0f2e8a6597464098322b73c42e5ff4e770f2cb4a33c38e729",
+            "message": "The featured report fills its band: the cover edge to edge, the same cover blurred behind the text"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001060705-1ad8fd"
+}

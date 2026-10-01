@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "09d103b2f645558af3e3100fff0e9cf0be9a0e13",
+            "branch": "workbench/fix/four-points-from-the-shop-floor",
+            "files_sha256": "aed1d86e904dab44953631e10bd2cdb3fb600a480bf0463d78858f0231b6ef4c",
+            "message": "Four points from the shop floor: showroom tick, body style lock, Nederland Mobiel default, customer mode keeps the list"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929175422-37cb4d"
+}

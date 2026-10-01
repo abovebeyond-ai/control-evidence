@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8db94eda69ab36b651f600534404bb0ca86d4639",
+            "branch": "workbench/three-advisories",
+            "files_sha256": "547098e562579aee380a7b8da58fda9477af2d067fa36837c7999d366df33085",
+            "message": "Vier pakketten met een bekend lek bijgewerkt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930102700-3a96ef"
+}

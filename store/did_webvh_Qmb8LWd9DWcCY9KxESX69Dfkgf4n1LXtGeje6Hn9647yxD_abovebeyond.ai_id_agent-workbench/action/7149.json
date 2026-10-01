@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3ff733ce483b3c0aa4ee5925eec39d1a1c3e43f4",
+            "branch": "workbench/cleanup/store-routes",
+            "files_sha256": "d05ed5c338a7670c11c72bc1af6020b5382aa8bf2e4cc1b77713b0f966946b67",
+            "message": "Call the store as /store/*"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20260929101709-948f3e"
+}

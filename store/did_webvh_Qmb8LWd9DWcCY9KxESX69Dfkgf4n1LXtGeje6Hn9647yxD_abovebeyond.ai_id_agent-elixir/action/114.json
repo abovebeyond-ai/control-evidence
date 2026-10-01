@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Bijgewerkt binnen semver, dus de aanroepen blijven werken:\n\n- league/commonmark to 2.10.2\n- shell-quote to 1.9.0\n\n## Bewijs\n\n- the project's own tests were green before the change, and again after\n- the judge was `php artisan test`\n- de lockfiles zijn teruggelezen: wat hierboven staat, staat er ook echt in\n\nVoorgesteld door Elixir. Mergen doet een mens.",
+            "branch": "elixir/security-2026-09-30-1617",
+            "packages": 2,
+            "title": "Security: update 2 package(s)"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "01M3SHKHATEQ3T7KXAG1QDEAKC"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "36e81bb3b0c127b5fb26cba8e2f346753343b33b",
+            "branch": "workbench/architecture",
+            "files_sha256": "76a7715d1f673a072f6b437a4430c433c6a6a5ff9b8217860093797c142a9644",
+            "message": "Architectuur: een kern en een pakket per bedrijf"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260929095724-8cf25f"
+}

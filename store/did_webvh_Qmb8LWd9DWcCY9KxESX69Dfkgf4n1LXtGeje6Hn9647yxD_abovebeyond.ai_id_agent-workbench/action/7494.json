@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Leerkrachten vroegen om de lijst van projecten te kunnen filteren op graad, stroom, klas en vak, of ze daarop te groeperen en de groepen open te klappen. Een project houdt geen van die vier zelf bij, dus de lijst leidt ze af.\n\n## Wat verandert\n\n- `ProjectFacets` rekent per project uit waar het zit, in drie queries voor alle projecten samen:\n  - de klassen: die van zijn klasgroepen, en die waarin zijn eigen leerlingen in het schooljaar van het project ingeschreven zijn;\n  - de graden en stromen: die van die klassen;\n  - de vakken: de clusters waar zijn eindtermen uit komen, met de studierichting erbij als de cluster er een heeft, zoals \"Basisoptie/specifiek gedeelte (Sport)\". Die clusternaam draagt elke basisoptie.\n- Onder de zoekbalk staan Graad, Stroom, Klas en Vak, die alleen aanbieden wat in de projecten van dat schooljaar voorkomt, en \"Groeperen per\". Filters samen vragen allebei; \"Filters wissen\" zet ze terug. Een nieuwe keuze begint op de eerste pagina.\n- Gegroepeerd staat elk project onder elke waarde die het heeft, op naam, in een groep die openklapt en zegt hoeveel projecten ze telt. Wat geen waarde heeft, staat achteraan (\"Zonder klas\"). Gegroepeerd zijn er geen pagina's.\n- De klas van een klasgroep wordt mee geladen: een klasgroep draagt de naam van haar klas, en die werd per groep apart opgehaald.\n\n## Regels\n\nNieuwe sectie S1-3 \"De lijst van projecten\": R S1-3.1 (filteren) en R S1-3.2 (groeperen), elk met tests.\n\n## Nagekeken\n\n- `TheProjectListFiltersAndGroupsTest`: twee klassen in een andere graad en stroom, een klas van vorig jaar waarin de leerling toen zat, drie vakken, vijf projecten. Elke filter, filters samen, wissen, de aangeboden keuzes, en groeperen per klas en per vak, ook met een filter erbij.\n- Acht mutanten, alle acht opgevangen: een leerling die geen klas meebrengt, de klas van een leerling uit een ander jaar, een vak zonder zijn studierichting, filters die \"of\" vragen, geen groep voor wie niets heeft, groepen niet op naam, wissen dat het vak laat staan, geen graad uit een klas.\n- Pint en PHPStan: geen fouten.\n- De volledige suite lokaal op MariaDB: 1323 van 1324 groen. BuildStampTest faalt enkel in een worktree.\n",
+            "branch": "workbench/projects-filter-and-group",
+            "title": "De lijst van projecten filtert en groepeert op graad, stroom, klas en vak"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930135723-4ec7b7"
+}

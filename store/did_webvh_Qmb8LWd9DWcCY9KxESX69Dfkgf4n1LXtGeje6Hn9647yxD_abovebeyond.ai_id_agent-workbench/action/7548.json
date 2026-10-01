@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Observatory's sign-in gets \"Forgot your password?\", backed by `POST /auth/forgot` and `POST /auth/reset` in gentells-pipeline.\n\nThe one form now has four modes:\n- **sign in;**\n- **invite** (`#invite=`), as before;\n- **forgot** (`#forgot`, or the link under sign-in): an address, then the message that a link is on its way;\n- **reset** (`#reset=`, from the mail): a new password, then signed in.\n\nAs with invites, the token is read from the hash and wiped from the address bar. Each mode has a way back to sign-in, and a dead reset link offers to ask for a new one.\n\nTwo Playwright tests cover the flow:\n- the forgot form sends only the address and shows the message;\n- the reset link posts the token and the new password, signs in, and clears the hash.\n\nLint at the ceiling (24), build ok, Playwright 26 of 26.\n",
+            "branch": "workbench/auth/password-reset",
+            "title": "Forgot your password on the Observatory sign-in"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260930163534-d42010"
+}

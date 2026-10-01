@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9236ebd408e9a0a9f7b9d6f31c177add387bcf27",
+            "branch": "workbench/fix/a-transport-keeps-its-dimensions",
+            "files_sha256": "412bee46dbd4b48a358f4ba71c2fd0acb4851d0ca2e1fdcb066c8367382bf8d9",
+            "message": "A transport request keeps the dimensions typed when it is changed"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929120331-cbf824"
+}

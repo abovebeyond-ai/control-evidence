@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "36e81bb3b0c127b5fb26cba8e2f346753343b33b",
+            "branch": "workbench/sites-from-bouwsoft",
+            "files_sha256": "9ec41ddce045a55a0b936d671d55e7b66d4feaea1f8b8a52ecc659fe152fe1ba",
+            "message": "De werven komen uit Bouwsoft, langs de eerste naad"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260929095744-280fd7"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De pagina Gebruik stond tot nu toe alleen open voor de superbeheerder. Een beheerder ziet ze nu ook, voor de school waarin hij werkt en voor geen andere.\n\n## Wat verandert\n\n- De route verhuist naar de groep die beheerders met superbeheerders delen, met hetzelfde voorvoegsel als de scholenpagina's: het adres blijft `/superadmin/gebruik`.\n- `UsageController` beslist per rol. Een superbeheerder ziet alle scholen en kiest er een; een beheerder krijgt de school uit zijn sessie. Een school in de url verandert voor hem niets, en de tabel van de laatste dertig dagen toont alleen zijn rij.\n- Op de pagina is de schoolregel voor een beheerder de naam van zijn school, zonder \"Alle scholen\" en zonder de andere scholen.\n- De link staat in het beheermenu dat beheerders en superbeheerders delen, en niet meer in het blok dat alleen de superbeheerder ziet.\n\nDe pagina telt en noemt niemand bij naam, dus een beheerder leert er niets uit over een collega afzonderlijk. `WarmUsage` vult de cache al per school, dus de pagina is voor een beheerder even snel als voor de superbeheerder.\n\n## Regels\n\nNieuw hoofdstuk B8 met drie regels over wie welke school ziet, elk met een test. Twee bestaande tests legden de oude regel vast, dat een beheerder een 403 krijgt; die zeggen nu wat de nieuwe regel is.\n\n## Nagekeken\n\n- `AnAdminSeesTheUsageOfTheirSchoolTest`: een beheerder, een beheerder die via de url een andere school vraagt, een superbeheerder, en een leerkracht en een leerling (de pagina en de link).\n- Zeven mutanten, alle zeven opgevangen: een beheerder die alle scholen ziet, via de url kiest, alle rijen krijgt of de keuze ziet; de route terug enkel voor superbeheerders; leerkrachten binnengelaten; de link weg uit het beheermenu.\n- De volledige suite lokaal op MariaDB: 1306 van 1307 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/usage-for-admins",
+            "title": "Een beheerder ziet het gebruik van zijn school"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930102827-19b3d5"
+}

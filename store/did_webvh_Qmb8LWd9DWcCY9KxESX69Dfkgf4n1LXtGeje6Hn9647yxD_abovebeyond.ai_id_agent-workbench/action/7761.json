@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fe69ed25990d573dd9c7b5e112ff830b51595c82",
+            "branch": "workbench/by-question-is-a-switch-when-entering",
+            "files_sha256": "49687a3d21fa819dfca8eef5dcd1a61d01c125fce8b15c569c2f0ddaae77e63d",
+            "message": "Per vraag is een schakelaar bij het ingeven, geen vraag op het formulier"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001055230-c5650f"
+}

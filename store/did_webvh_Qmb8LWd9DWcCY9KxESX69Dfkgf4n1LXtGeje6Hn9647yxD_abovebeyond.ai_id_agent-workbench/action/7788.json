@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The \"Gepubliceerd\" column in the own-stock list shows how long a published car has been on the stocklist. The wording was \"Al 5 dagen\" (en \"Already\", fr \"D\u00e9j\u00e0\", de \"Schon\"), which reads as a reproach that the car has been standing too long. The column only states a duration, so it now reads:\n\n| | before | after |\n|---|---|---|\n| nl | Al :count dag/dagen | Sinds :count dag/dagen |\n| fr | D\u00e9j\u00e0 :count jour(s) | Depuis :count jour(s) |\n| en | Already :count day(s) | For :count day(s) |\n| de | Schon :count Tag/Tage | Seit :count Tag/Tagen |\n\nSpanish has no translation for `global.on_stocklist_since_days`, so nothing changes there. Rule S2-2.5 already describes the column as \"sinds N dagen\", so the business rules need no edit; this brings the screen in line with it.\n\n## Changes\n- `resources/lang/{nl,fr,en,de}/global.php`: `on_stocklist_since_days`.\n- `tests/Feature/OwnStockRowPublishedDaysTest.php`: asserts \"Sinds 1 dag\" and \"Sinds 5 dagen\".\n\nThe key has one user (`ownstock/_wagen_rij.blade.php`). Other \"D\u00e9j\u00e0\"/\"Already\"/\"Schon\" strings (already sold, already requested) mean something else and stay.\n\n## Tests\n`OwnStockRowPublishedDaysTest` and `LanguageParityTest` pass locally (the Spanish-gaps report is the existing incomplete notice).\n",
+            "branch": "workbench/fix/published-since-days",
+            "title": "Published column: \"Sinds N dagen\" instead of \"Al N dagen\""
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001071648-58e64f"
+}

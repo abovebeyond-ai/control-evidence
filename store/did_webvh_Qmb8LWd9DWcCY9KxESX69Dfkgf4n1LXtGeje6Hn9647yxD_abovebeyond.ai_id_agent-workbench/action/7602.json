@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nTwo advisories were published on 2026-09-30 for `league/commonmark` <= 2.10.1, the version in our lock:\n\n- [GHSA-97jj-33gv-5xf9](https://github.com/advisories/GHSA-97jj-33gv-5xf9) (medium): bypass of the `DisallowedRawHtml` extension.\n- [GHSA-3q6v-r5mr-hxv8](https://github.com/advisories/GHSA-3q6v-r5mr-hxv8) (high): quadratic-time denial of service in the GFM table extension.\n\nSince then the CI job \"Dependencies carry no new advisory\" (`composer audit --locked`) fails on every pull request.\n\n## What\n\n`league/commonmark` 2.10.1 to 2.10.3 in `composer.lock`, nothing else. It is a transitive dependency (through `laravel/framework`), so `composer.json` does not change. The update was run as `composer update league/commonmark` without `--with-dependencies`; with that flag `symfony/polyfill-php80` would also have moved (1.37.0 to 1.43.0), which 2.10.3 does not need (`^1.16`), so it stays.\n\nWhere commonmark runs in the platform: the markdown mailables (`$this->markdown(...)` in `app/Mail/*`, whose Laravel renderer enables the table extension) and `Str::markdown` in `DocsController` for the pages under `docs/`.\n\n## Checks\n\n- `composer audit --locked`: no advisories.\n- Related tests (docs pages, docs vs routes, LYRA's doc chatbot, compiled views, invitation, bidding, error and second-factor mails): 45 tests, 166 assertions, green.\n- Full suite locally: 2508 tests, 18225 assertions, green (1 skipped, 1 incomplete).\n- PHPStan: no errors.\n\nNo business rule changes.\n",
+            "branch": "workbench/fix/commonmark-2-10-3",
+            "title": "Bump league/commonmark to 2.10.3 for two advisories"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930171920-b58205"
+}

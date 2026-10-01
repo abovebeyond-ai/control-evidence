@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Wat we bouwen, en hoe het deel kan worden van een transferor-toolkit die we ook aan andere bedrijven aanbieden, zonder die toolkit nu al te bouwen.\n\n## Wat erin staat\n\n`docs/architecture.md`:\n\n- **Kern tegenover pakket.** Het gesprek, het bord, de opzoeking door code, de backoffice en de meting tegen echte boekingen zijn overal hetzelfde. Per bedrijf verschillen de fiche, de referentiegegevens, de koppeling met hun systeem, de boekingsregels, de profielen en het vakjargon.\n- **Vier naden:** `RecordDefinition` (de fiche als gegevens, waaruit prompt, schema en bord gegenereerd worden), `ReferenceSource`, `SystemOfRecord` en `BookingRules`.\n- **Waar de code nu GLK is:** de met de hand geschreven prompt en het schema, de vaste tabellen en rollen.\n- **Hoe het soepel blijft:** de naden komen langs het GLK-werk dat toch moet gebeuren; een pakket afsplitsen pas bij de tweede klant; een installatie per bedrijf met een gedeelde kern.\n\nPlus een verwijzing ernaar bovenaan de README.\n\nDe eerste naad, werven uit Bouwsoft via `ReferenceSource`, volgt in een aparte PR.\n",
+            "branch": "workbench/architecture",
+            "title": "Architectuur: een kern en een pakket per bedrijf"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260929095724-8cf25f"
+}

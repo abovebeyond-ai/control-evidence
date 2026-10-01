@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0560689370c0ee4aeb2802719ab81a1603010ecc",
+            "branch": "workbench/usage-years-at-the-end",
+            "files_sha256": "1fab22a534bd3de812d669b6fd7f7f48e019d7f341f5136a94ecad0d95f34a3e",
+            "message": "Gebruik: alleen begonnen schooljaren, geen tabel per school, door de jaren onderaan"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930140437-21ec87"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "032e4c022eebbc0b59ec6c0765269f29ae5b3725",
+            "branch": "workbench/cleanup/unused-3",
+            "files_sha256": "d7bba3ea587b26cdaef898a608f721f0832938e0eb4af4a1fa545770c85bef9d",
+            "message": "The REST trend read leaves the graph out unless asked; unused assets and stale docs go\n\n/api/v1/trends/{slug} still always carried the graph, which /mcp stopped doing in\n2.0.0; it takes include_graph now, off by default. Collage parts 1 and 3 and the\nwordmark PNG were used by no page; concurrently by no script. The agent-door design,\nBRAND.md and the collage README described things that no longer exist."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260929092159-05fa3b"
+}

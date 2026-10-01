@@ -1,0 +1,16 @@
+{
+    "action": "acedb1f89ffd2a65c65a85428c35ccb1",
+    "effect": {
+        "detail": {
+            "base": "0fd4f9caaa2c02b54f2d6a6ce9b974434224f194",
+            "branch": "workbench/feat/views-per-channel-stacked",
+            "commit": "7b6ac701543908d6fd395964985a3eb2d606ac42",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7473,
+    "verdict": "ALLOW"
+}

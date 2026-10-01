@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9814c4a50aa2ec862d3f4403953c824893799eba",
+            "branch": "workbench/the-old-curriculum-is-over",
+            "files_sha256": "60c6be76c65751f1f2163d6587e98fcaeb7caffc1f849ea4bf40dfd788733c63",
+            "message": "Het oude curriculum is voorbij"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930121853-0a94e4"
+}

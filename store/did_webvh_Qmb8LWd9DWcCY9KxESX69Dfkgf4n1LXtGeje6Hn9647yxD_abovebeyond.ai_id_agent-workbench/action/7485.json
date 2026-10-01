@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ff5d165282ca64d1409f8af652fd78f27e231655",
+            "branch": "workbench/chore/remove-legacy-statistics-page",
+            "files_sha256": "3e49a5ad4760855b3f3cc9441a007be64804331cc2997339accd957f37ff9011",
+            "message": "Remove the legacy /statistics page"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930134949-50bde2"
+}

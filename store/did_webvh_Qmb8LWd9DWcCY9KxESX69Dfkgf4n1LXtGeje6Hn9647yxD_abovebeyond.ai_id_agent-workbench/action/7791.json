@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "93d2de9d70f9a9b2aabb1c7e224b92e76db8cdd7",
+            "branch": "workbench/by-question-for-scores-only",
+            "files_sha256": "e6302b296880b04eced49510312ac7e1c715404a7793e2f021b1ae23badb031b",
+            "message": "Per vraag gaat alleen met scores"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001073009-2fabc6"
+}

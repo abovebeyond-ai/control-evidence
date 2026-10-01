@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0e526ed4bbe8b7ff6ac6aa9cdae32668c572d230",
+            "branch": "workbench/cleanup/unused-3",
+            "files_sha256": "bf95bb5b8c519f799772f69cf49520d183bbd91cb15515fbb40af9b35032373e",
+            "message": "Remove an unused list; the README names no element count\n\nSTARTERS was never read. The README said twelve elements where there are thirteen;\nit now says they are fetched, so no count in it can go stale."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20260929091946-61042b"
+}

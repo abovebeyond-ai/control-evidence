@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`bin/rules-coverage` las per docblock alleen de eerste `@rule`-tag. De regex begon bij die tag en slokte de rest op tot aan de naam van de methode. Wie `@rule S4-7.1 @rule S4-3.2` schreef, kreeg alleen S4-7.1 geteld. `RulesCoverageTest` gebruikt hetzelfde script, dus een tikfout in een tweede tag viel nooit op.\n\nIn de suite stonden elf zulke tags, in acht docblocks. Geen enkele verwijst naar een regel die niet bestaat; ze telden gewoon niet mee.\n\n## De wijziging\n\n- **`rules_tags_parse()`** in `bin/rules-sources.php` geeft de tags van een testbestand per methode, zowel meerdere tags in \u00e9\u00e9n docblock als \u00e9\u00e9n tag met een lijst.\n- **`bin/rules-coverage`** gebruikt die functie.\n- **`RulesCoverageTest::every_tag_of_a_docblock_counts`** toetst de drie vormen. De fixture is uit stukken opgebouwd, anders leest de teller ze als tags van het testbestand zelf.\n\n## Wat verandert\n\nDe dekking stijgt waar een regel alleen als tweede tag stond. In S4 gaat ze van 32 naar 36 geteste regels.\n\n## De rechter\n\nDe nieuwe test faalt als alleen de eerste tag gelezen wordt, en slaagt met de wijziging. De regeltests zijn groen.\n",
+            "branch": "workbench/rule-tags",
+            "title": "De regeltelling leest elke tag van een docblock"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929084444-b3ee1d"
+}

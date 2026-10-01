@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "14f1e35d4fed0a8638d805a1c17190b311f2f1f4",
+            "branch": "workbench/cleanup/unused-3",
+            "files_sha256": "a37e5ee87519196b32951c2f07544b8264ee041857c21fb74c98b90091c6a921",
+            "message": "Remove what nothing uses; the Buffer page draws the shared timeline\n\nThe Buffer page kept its own copy of the timeline chart; it uses SignalTimeline's\nnow. Patterns fetched /pipeline-stats on every visit and Buffer fetched it twice,\nfor values nothing showed. Unused phase lists, a button, two hooks, a query name,\nleftover variables and the TypeScript type packages go. Lint ceiling 42 to 24."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260929091924-337a6b"
+}

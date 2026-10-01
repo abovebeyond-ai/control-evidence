@@ -1,0 +1,16 @@
+{
+    "action": "2767a187bfd08f068f98d02712ade38f",
+    "effect": {
+        "detail": {
+            "base": "1ed5e8fbb1e3e2e2c43790ae1c6a2fe3533ef284",
+            "branch": "workbench/design/type-scale",
+            "commit": "fa79e26110fcf85678ebacbf91b9d925df5fac8c",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7659,
+    "verdict": "ALLOW"
+}

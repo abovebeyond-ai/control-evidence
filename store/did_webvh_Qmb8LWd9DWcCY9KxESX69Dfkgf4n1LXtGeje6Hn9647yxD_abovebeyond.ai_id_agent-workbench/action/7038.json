@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De mutatietest liet in `StudentGroupStatisticsService` 23 van de 47 mutanten ontsnappen. De tests van die dienst keken alleen of er een getal of een lijst uitkwam, nooit welk: een percentage van 101 of een lege telling bleef even groen.\n\n## De wijziging\n\n- **`HowFarAClassIsTest`**, vier gevallen met verwachte getallen: een eindterm telt \u00e9\u00e9n keer en het percentage wordt afgerond, twee op drie is 67 en \u00e9\u00e9n op drie is 33; een soort vakken zonder eindtermen staat op 100 procent; het overzicht voor de beheerder toont eerst elk basisvak en dan elk specifiek vak, elk met de eigen telling; de voortgang van een klas telt haar eigen clusters.\n- **`generateMatrix` weg**, met haar twee tests. Niets in de app roept die methode aan, en haar tests keken alleen de vorm na. De oude testklasse verdwijnt daarmee; haar derde test, ook alleen de vorm, is vervangen.\n- **Regelboek**: nieuw hoofdstuk B4 De voortgang van een klas, met vijf regels.\n\n## Een vraag\n\nHeeft een klas geen eindtermen van een soort, dan staat die soort op 100 procent (R B4-1.4). Het totaal van het voortgangsobject zegt dan 0 procent (`OfferingProgressionDTO::getTotalPercentage`). Een van de twee klopt niet; welke, is een keuze.\n\n## De rechter\n\nInfection lokaal op de dienst: van 23 ontsnapte mutanten naar 0, met 7 timeouts. Die komen van deze Mac: vier threads vertragen elkaar daar bij het opbouwen van hun databank, dus liep de controle op \u00e9\u00e9n thread. Volledige suite op MariaDB.\n",
+            "branch": "workbench/class-progress-judges",
+            "title": "De voortgang van een klas getest op haar getallen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929084234-34ceae"
+}

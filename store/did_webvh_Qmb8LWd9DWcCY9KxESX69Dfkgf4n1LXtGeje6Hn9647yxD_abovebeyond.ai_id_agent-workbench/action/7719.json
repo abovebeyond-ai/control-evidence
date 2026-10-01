@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "40860d9c7be0d30a110849a78b6d59cc2f0abc0d",
+            "branch": "workbench/home/four-fixes",
+            "files_sha256": "3fe17f2ed4bd5e6b214486be83a42414611049d3b4df0bc517df5c37bf549332",
+            "message": "Home: the graph shows behind the cover, no lone letter in a teaser, posts first and in one row, more colour in the band"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001044905-726f94"
+}

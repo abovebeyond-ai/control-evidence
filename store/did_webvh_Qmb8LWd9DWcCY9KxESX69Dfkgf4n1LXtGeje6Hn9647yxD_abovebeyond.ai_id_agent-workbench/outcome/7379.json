@@ -1,0 +1,16 @@
+{
+    "action": "273fb0f47b38e3771a1bada0fb6a17d4",
+    "effect": {
+        "detail": {
+            "base": "e7509d16767f7e68accfc575f915e5e4eca412b4",
+            "branch": "workbench/docs/own-vehicle-pickup-stays-at-dealer-address",
+            "commit": "18bae11997d7caa329f62e464972f872c40a6756",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7377,
+    "verdict": "ALLOW"
+}

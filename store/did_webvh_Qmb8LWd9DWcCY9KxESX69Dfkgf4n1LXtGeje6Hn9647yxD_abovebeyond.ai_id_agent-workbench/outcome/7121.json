@@ -1,0 +1,16 @@
+{
+    "action": "4b89690bc49ffa64835999c6235c0ea1",
+    "effect": {
+        "detail": {
+            "base": "2e8f31caf7bf2ac2352b960beed526b311d81bef",
+            "branch": "workbench/cleanup/remove-client-layer",
+            "commit": "f9a8e3d8376675de3289e8b6c50f7450ca4f9d92",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7119,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f7dc61f12c4ad39d80501b2824d3a4c9366f5986",
+            "branch": "workbench/my-progress-for-pupils-only",
+            "files_sha256": "db558a5a5f6d1e74797796437a0e0a88486cd16a479d2ce12df29b558dde52f0",
+            "message": "Wie geen leerling is, landt op zijn dashboard"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001045701-bdc5fe"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "85ba3afd4b9e78957747fbef5a2e10919276957b",
+            "branch": "workbench/course-goals",
+            "files_sha256": "6534ebdef3dde8710bd9acf327db6fb6daa3b81fc66ca69c18d61ee732281d2b",
+            "message": "De eindtermen van een levensbeschouwelijk vak zijn te beheren"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930105331-f7e1cf"
+}

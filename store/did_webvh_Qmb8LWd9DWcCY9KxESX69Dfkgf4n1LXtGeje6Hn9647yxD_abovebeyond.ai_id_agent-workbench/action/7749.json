@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "357bcf468e46e9568aef25dee5a4b5531c629c89",
+            "branch": "workbench/a-chevron-only-when-cut",
+            "files_sha256": "7e91f271dab19ec5c289ea3a54ae85941eb05893bc7bf1786fac7fdd35b2284c",
+            "message": "Het pijltje bij een eindterm alleen als haar naam echt afgekapt is"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001051247-7cd47b"
+}

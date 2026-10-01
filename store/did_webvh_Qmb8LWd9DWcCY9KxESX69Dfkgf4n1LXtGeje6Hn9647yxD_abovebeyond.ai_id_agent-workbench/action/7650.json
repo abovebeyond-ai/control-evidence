@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Observatory's lockup as a PNG, `public/brand/observatory-lockup@2x.png` (546 \u00d7 36, transparent), captured from the sign-in page's own `Lockup` at twice its size.\n\nMail clients strip SVG and web fonts, so the Observatory's mails (invite, password reset, curation proposals, in gentells-pipeline) need the mark as an image. It is served from here, next to `gentells-wordmark.svg`, at `https://observatory.gentells.com/brand/observatory-lockup@2x.png`.\n\nMerge before the pipeline PR \"The Observatory's mails wear the Observatory\".\n",
+            "branch": "workbench/mail/observatory-lockup",
+            "title": "The Observatory's lockup as an image for its mails"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260930181359-d8ad4c"
+}

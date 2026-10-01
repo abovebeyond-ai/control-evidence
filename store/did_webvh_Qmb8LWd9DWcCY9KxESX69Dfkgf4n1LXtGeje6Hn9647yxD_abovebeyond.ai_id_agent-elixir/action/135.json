@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"league\\/commonmark\",\"to\":\"2.10.2\",\"lock\":\"composer.lock\"},{\"pkg\":\"laravel\\/framework\",\"to\":\"13.30.0\",\"lock\":\"composer.lock\"}]"
+            },
+            "packages": 2,
+            "plan_sha256": "e432b07a8888f15d33777389a03ff1385ef6597547c7d56215ba735a445a8239",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "ShaneDeconinck/good-governance"
+    },
+    "run": "01M3SJ121ZNVVQ4KARCX536AEN"
+}

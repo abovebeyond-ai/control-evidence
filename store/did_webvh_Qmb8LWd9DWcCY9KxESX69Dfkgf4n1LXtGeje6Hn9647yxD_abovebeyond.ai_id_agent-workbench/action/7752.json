@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op het ingavescherm en op de pagina van een evaluatie staat de naam van een eindterm in een smalle kolom, afgekapt op \u00e9\u00e9n regel, met een pijltje om ze open te klappen. Dat pijltje stond op elke rij, ook waar de naam past en het niets deed.\n\n## Wat verandert\n\n- Een nieuw component `x-truncated-text`. De tekst wordt afgekapt zoals voordien, maar het pijltje verschijnt pas als de browser meet dat de tekst echt afgekapt is. Wordt het venster groter of kleiner, dan meet het opnieuw. Open je een naam, dan staat ze volledig, en klap je ze dicht, dan meet het opnieuw.\n- De volledige naam staat als tooltip (`title`), voor wie even wil lezen zonder te klikken.\n- Het pijltje is nu een knop met `aria-expanded` en een label, in plaats van een svg die je kunt aanklikken. Zolang er iets te openen is, kun je ook op de tekst zelf klikken.\n- Het geldt voor het ingavescherm en voor de pagina van een evaluatie op een breed scherm. Op een telefoon klapt een pijltje de rij van een eindterm open en dicht; dat doet altijd iets en blijft.\n- In de lijst om eindtermen aan een project te koppelen staat de naam volledig (#245). Daar kies je op die naam, dus daar hoort geen afkapping.\n\n## Nagekeken\n\n- `AChevronOnlyWhenTheNameIsCutTest`, op het ingavescherm en op de pagina van een evaluatie: de tooltip met de volledige naam staat er, het pijltje wacht op de meting, en het oude pijltje dat altijd zichtbaar was, is weg. Zonder de wijziging faalden beide tests.\n- In een browser nagekeken met het echte component, Alpine en de stylesheet, in een kolom van 256 pixels breed. Bij \"NE-1 Lezen\" staat er geen pijltje, bij de lange naam van BO1_04 wel, en een klik toont de volledige naam en draait het pijltje om.\n- De volledige suite lokaal op MariaDB, met `APP_DEBUG` aan zoals de CI: 1358 van 1359 groen. BuildStampTest faalt enkel in een worktree.\n- Pint: geen fouten.\n",
+            "branch": "workbench/a-chevron-only-when-cut",
+            "title": "Het pijltje bij een eindterm alleen als haar naam echt afgekapt is"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001051247-7cd47b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## A print without a colour\n\nPrinting an order form in production returned a 500: `Attempt to read property \"name\" on null` at `offertes/_tabs_bestelbon/general.blade.php:43` (`{{$order->vehicle->color->name}}`), and earlier the same day the same error from `offertes/offerte.blade.php`. `vehicles.color_id`, `fuel_type_id` and `transmission_type_id` are `NOT NULL DEFAULT 0`: a vehicle saved without a choice holds 0, and an id can also point at a row that was removed. Either way the lookup is null and the print crashed.\n\nFixes bevinding een-afdruk-zonder-kleur.\n\n### What changed\n\nOne approach everywhere: the nullsafe operator, with `?: $unknown` where the cell is a vehicle value (so it reads \"unknown\", as the rental document already does, R S4-9.7) and nothing where an empty address line reads better than a label.\n\n- `_tabs_bestelbon/general.blade.php`, `_tabs_offerte/general.blade.php`: colour, fuel type and transmission read `trans('global.unknown')` when missing; the sale point and its email and phone go through `$order->relation?->dealer`.\n- `_tabs_bestelbon`, `_tabs_offerte`, `_tabs_bruikleen` `/dealer_client_info.blade.php`: the logo condition is `!is_null($x->relation?->dealer?->image)` (same meaning as before, no crash without a dealer).\n- `_tabs_bruikleen/general.blade.php`: the sale point through `$rental->relation?->dealer`.\n- `handtekening.blade.php`: the dealer address on the signature page.\n- `_tabs_bestelbon/price_calulation.blade.php`: make and model of the takeover vehicle (both places).\n- `_tabs_spoticar/seller.blade.php`, `buyer.blade.php`: the Spoticar order form, same pattern.\n- `OrderController::show`, `OfferController::show`: the PDF title (`SetTitle`) read `->manufacturer->name` the same way.\n\n### Tests\n\n`tests/Feature/PrintWithoutAColourTest.php` (new; the existing print tests are about the logo and the rental):\n- the order form and the offer over their routes for a vehicle with colour, fuel type and transmission at 0: 200 and a PDF;\n- the general tab of both documents for a missing (0) and a dangling id: the rest of the description is there and \"unknown\" appears for the three values;\n- the order form blocks (header, general tab, signature page) with the customer's dealer gone.\n\nAll five fail on main with the production error and pass here. `RentalDocumentTest`, `DealerLogoTest`, the `Rules*` tests and `QualityRatchetTest` pass; PHPStan reports no errors.\n",
+            "branch": "workbench/fix/a-print-without-a-colour-2",
+            "title": "A print without a colour: order form and offer print when a vehicle lookup is missing"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929175559-3fd2d5"
+}

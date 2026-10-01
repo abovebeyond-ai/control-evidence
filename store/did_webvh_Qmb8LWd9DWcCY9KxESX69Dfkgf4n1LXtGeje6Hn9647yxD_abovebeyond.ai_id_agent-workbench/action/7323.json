@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8db94eda69ab36b651f600534404bb0ca86d4639",
+            "branch": "workbench/course-shape",
+            "files_sha256": "9a69fa0eea5219ce1fe610f7bd33417243b69683a16d4afffd1bcaf06f3c959d",
+            "message": "Een nieuw levensbeschouwelijk vak komt op het rapport"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930070058-783ab0"
+}

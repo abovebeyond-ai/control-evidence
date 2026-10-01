@@ -1,0 +1,16 @@
+{
+    "action": "a2c2ba21a4fc86200e1f3e95f4b425c7",
+    "effect": {
+        "detail": {
+            "base": "fd110ae0bb09bb547bd2e3774d7b99ba857aebdf",
+            "branch": "workbench/ask-shane-for-review",
+            "commit": "d4374ddec49de3cd0696be08f394551049f9c034",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7605,
+    "verdict": "ALLOW"
+}

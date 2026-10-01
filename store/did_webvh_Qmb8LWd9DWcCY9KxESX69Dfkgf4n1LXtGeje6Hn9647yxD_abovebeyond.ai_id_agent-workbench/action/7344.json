@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The two weekly jobs could starve. `self-improve-weekly` (score 4) runs the graph drain and the source trust calibration; `eval-weekly` (score 6) records coverage gaps and consolidation effectiveness. At those scores they lose to any other work, so they ran only when the engine was idle. Neither has run since 22 September.\n\nNow a weekly job keeps its low score while it is merely due, and takes 95 once it is two days late (nine days since the last run). That is above suggest's daily minimum (90), so it runs at the next pick. Both jobs are cheap (SQL, at most one small model call), so the floor costs no real time. The reason line says so: \"weekly self-improvement: 9 days since the last run, weekly minimum\".\n\nTwo scheduler tests, against a busy queue: at eight days the jobs are offered and wait; at nine they win. The second fails without this change. 958 tests pass.\n\nBoth jobs are eight days late now, so after this deploys they will run within a day.\n",
+            "branch": "workbench/engine/weekly-minimum",
+            "title": "A weekly job cannot starve: two days late, it runs next"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930103638-908e55"
+}

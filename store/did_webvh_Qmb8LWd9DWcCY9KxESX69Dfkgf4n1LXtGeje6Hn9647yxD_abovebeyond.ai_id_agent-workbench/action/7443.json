@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "266cd988d5a501db8b6eba999413e054fabab570",
+            "branch": "workbench/feat/dealer-map-in-insights",
+            "files_sha256": "8fabdec8097bcdbdca8391bfc4545c48bedb8cf62d524c5e49f5659749763725",
+            "message": "Inzichten: a map tab with the dealers per province against the market"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930124015-5b9c6c"
+}

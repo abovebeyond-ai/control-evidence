@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De eerste van vijf PR's uit de kwaliteitsreview: wat de review vond in de werven-sync (#42) en de Bouwsoft-client, v\u00f3\u00f3r de echte sync draait.\n\n## Wat er verandert\n\n- **Volledig wordt nagerekend.** De sync las \"klaar\" af aan een korte pagina. Een server die zijn pagina's lager aftopt dan onze limiet zag er dan na de eerste pagina klaar uit, en de sync had elke werf op de rest uitgezet. Nu wordt geteld tegen `Content-Range` (Bouwsoft zet dat in elk lijstantwoord, nagekeken op staging), gesorteerd op id, en een lijst zonder totaal of met te weinig rijen geeft een fout.\n- **Elixir beoordeelt de sync.** `sites:sync` staat in `config/elixir.php` (86400 s). Daarvoor werd een mislukte run wel genoteerd maar niet beoordeeld, en klopte het commentaar \"Elixir ziet de mislukte run\" niet.\n- **`findSite` gokt niet meer op gesloten of dubbele werven.** Alleen lopende werven, en alleen als er precies \u00e9\u00e9n antwoordt, op nummer of op exacte naam.\n- **Tokens:**\n  - Geen redirects: de tokens zitten in eigen headers, die Guzzle niet schrapt bij een sprong naar een andere host of naar http.\n  - De servernaam uit de koppeling moet een hostnaam zijn, geen pad of poort.\n  - Vernieuwen gebeurt onder een slot en leest daarna opnieuw, zodat twee processen niet allebei met dezelfde refresh token vernieuwen.\n  - Een geroteerde refresh token die niet bewaard raakt, komt terug zoals bij het koppelen.\n- Een onbekende `REFERENCE_SOURCE` zegt wat er mis is in plaats van een `UnhandledMatchError`.\n- README en DEPLOY.md: twee geplande taken, niet \u00e9\u00e9n.\n\n## Niet in deze PR\n\n`.env.example` mist nog `REFERENCE_SOURCE`, `SITES_*` en `BOUWSOFT_AUTH_SERVER`: dat bestand kon ik vanuit deze sessie niet aanpassen.\n\n## Getest\n\n9 nieuwe tests: bladeren tot het totaal met offsets 0 en 500 en `sort=id`, een korte pagina voor het totaal geweigerd, een lijst zonder totaal geweigerd, een redirect niet gevolgd, een servernaam met pad geweigerd, een geroteerde refresh token bewaard, een token dat een ander proces net vernieuwde gebruikt in plaats van opnieuw vernieuwd, een gesloten werf niet gekoppeld, twee werven met dezelfde naam geen van beide. Elk ervan gecontroleerd: zonder de bijbehorende regel faalt de test. Volledige suite groen op `BuildStampTest` na, die alleen in een worktree faalt (staat in PR 5).\n",
+            "branch": "workbench/harden-site-sync",
+            "title": "De werven-sync dichtgetimmerd voor ze echt draait"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260929102701-97e1a7"
+}

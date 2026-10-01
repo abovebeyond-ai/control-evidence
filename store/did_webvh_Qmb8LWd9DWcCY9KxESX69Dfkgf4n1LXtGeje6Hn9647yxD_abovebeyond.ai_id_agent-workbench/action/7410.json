@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Signups moved to the site with the move to Laravel (`AuthController::register`, `ClayLeads.php` in gentells-site). The pipeline kept its own:\n\n- **`POST /auth/register`** is public (the `/auth/*` routes are handled before the staff gate), and the Observatory's basic auth does not cover `/api/pipeline`: an empty POST from outside answers 400 \"Missing email, password, or name\". Anyone could create reader accounts in the pipeline's `users` table, and each one went to Clay as a `trial_signup` lead. No client calls it: not the site, the dashboard or the Studio. The two reader accounts in the table are from before 13 August.\n- **`clay.mjs`**, whose only caller was that route, and its backfill (the site has its own, `gentells:clay-backfill`).\n\nBoth go, with the Clay setting blanked in the auto-deploy test run and the paragraph in `CLAUDE.md`, which now points to the site.\n\nThe gating test gains a check that every route on its pre-gate list exists, so the list cannot keep a door that is gone. It found two more stale entries, now corrected:\n- `/api/elixir`: the server's path is `/elixir`; nginx adds the prefix.\n- `/auth/logout`: no such route.\n\nStray comments announcing routes that went with the React site (`/trends/public`, `/articles/published`) are removed, and a `POST /chat` comment moves back above its route.\n\nTests: 953 pass (the Clay tests went with the file). Lint: 0 undefined names, unused unchanged.\n\nChecked and clean, so not in this PR:\n- every route the Studio calls exists;\n- every pipeline route has a caller, apart from the curation mail links and Elixir's health reads, which live outside the repos;\n- gentells.com has no class, view, command or package that nothing uses.\n",
+            "branch": "workbench/cleanup/no-register",
+            "title": "Signups are the site's: the pipeline's public register route and clay.mjs go"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930120929-876533"
+}

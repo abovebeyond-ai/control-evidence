@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een levensbeschouwelijk vak is een cluster, en tot nu toe ging alles ervan uit dat het precies \u00e9\u00e9n eindterm houdt, met de naam van het vak. De pagina van een vak toonde die eindterm niet, en er was geen manier om er een bij te zetten. Nu beheert de superbeheerder de eindtermen van een vak op de pagina van dat vak.\n\n## Wat verandert\n\n- Op de pagina van een vak staat een kaart \"Eindtermen\": elke eindterm met zijn code, zijn tekst en het aantal scores erop. Een eindterm erbij zetten, de code of de tekst aanpassen, en weghalen wat nergens gebruikt wordt.\n- Een eindterm die erbij komt, heeft de vorm van de eindterm van een nieuw vak: type vakinhoud, voor het oude en het nieuwe curriculum. Anders neemt het rapport hem niet mee.\n- Een eindterm gaat niet weg zolang er een score, een evaluatie of een project aan hangt, en de laatste eindterm van een vak nooit: daarop wordt gescoord.\n- De lijst van de vakken toont per vak hoeveel eindtermen het houdt.\n- Twee oude aannames zijn weg. Een vak hernoemen hernoemde altijd de eerste eindterm; nu enkel als het vak \u00e9\u00e9n eindterm houdt die nog de oude naam droeg. Een vak verwijderen keek alleen of de eerste eindterm scores had; nu kijkt het naar alle, en een eindterm die ook in een andere cluster zit, blijft staan.\n\nOp het rapportblad blijft een vak \u00e9\u00e9n lijn, zoals elk ander vak.\n\n## Rechten\n\nHet scherm is een Livewire-component, en zo'n verzoek gaat niet door de middleware van de route. Elke actie vraagt daarom zelf aan het beleid of deze gebruiker de cluster mag wijzigen; voor een gedeelde cluster is dat alleen de superbeheerder (R B2-1.1). Het vak en de eindterm in bewerking kan de browser niet verzetten (`#[Locked]`), en de dienst weigert een eindterm die niet bij het vak hoort.\n\n## Regels\n\nIn hoofdstuk B7 komen R B7-1.2 (hernoemen) en R B7-1.3 (verwijderen) bij, en een nieuwe sectie B7-2 met vijf regels over de eindtermen van een vak. Elke regel heeft een test.\n\n## Nagekeken\n\n- `ACourseAndItsGoalsTest`: zeven tests, waaronder een beheerder die de acties probeert op een pagina die de superbeheerder opende.\n- 35 mutanten op de dienst, de component, de lijst en de pagina: alle 35 opgevangen.\n- De volledige suite lokaal op MariaDB: 1310 van 1311 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/course-goals",
+            "title": "De eindtermen van een levensbeschouwelijk vak zijn te beheren"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930105331-f7e1cf"
+}

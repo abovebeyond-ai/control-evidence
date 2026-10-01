@@ -1,0 +1,16 @@
+{
+    "action": "382e5fac0e6c59f439829e381de486c0",
+    "effect": {
+        "detail": {
+            "base": "f75d1c78ae6acd076a14ba8029bcd18112b67170",
+            "branch": "workbench/mail/wordmark-png",
+            "commit": "bf71b2c28d903d3a04e432e4c40c41d9449a54e1",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7671,
+    "verdict": "ALLOW"
+}

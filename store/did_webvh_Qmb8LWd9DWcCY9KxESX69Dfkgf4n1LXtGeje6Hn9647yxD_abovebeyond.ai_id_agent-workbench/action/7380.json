@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Docs only. Records a decision about the pickup address of a transport request and closes the open point that asked for it.\n\n## The decision\n\nOn 30 September 2026 the platform operator (Ilse) decided: a transport request for a dealer's **own** vehicle is always picked up at the dealer's main address, even when the vehicle carries its own pick-up location (`pick_up_location_id`). Incoming transport requests are checked by the operator herself.\n\nThis is today's behaviour: `TransportService::pickUpLocationId` returns 0 for an own vehicle and `TransportService::setLocation` then fills in the dealer address. No code changes.\n\nThe rule for a vehicle bought from a colleague (pickup at the seller's pick-up location, R S4-10.3) is outside this decision and stays as it is.\n\n## Changes\n\n- `docs/bedrijfsregels/14-s4-verkopen-aan-een-klant.md`: new rule **R S4-10.20** (next free number in S4-10) stating the pickup address for an own vehicle plainly, sourced by the decision and the two code members; stand `klant`.\n- `docs/bedrijfsregels/bronnen/beslissingen/2026-09-30-eigen-wagen-ophalen-op-het-dealeradres.md`: the decision, per the folder's format (anchor, title, date, by, source, quote block, what the platform does with it).\n- `docs/bedrijfsregels/open-punten/2026-09-29-eigen-wagen-ophalen-op-zijn-ophaallocatie.md`: `status: opgelost`, `opgelost: 2026-09-30`, and a closing paragraph with the decision.\n\n## Checks\n\n- `bin/rules-sources`: no problems (985 rules, stand 130 klant).\n- `RulesCoverageTest`, `RulesDocsBuildTest`, `RulesIdentityTest`, `RulesSourcesTest`: 17 tests, OK.\n",
+            "branch": "workbench/docs/own-vehicle-pickup-stays-at-dealer-address",
+            "title": "Own vehicle pickup stays at the dealer address"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930111748-e2b45d"
+}

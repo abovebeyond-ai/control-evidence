@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9ddc066a6e5a017dd34c533a6102e20aa0e845b2",
+            "branch": "workbench/mail/observatory-lockup",
+            "files_sha256": "655dc8ef645eecabfe570c5fafe2c439bf119259021c1a44c0c8472731809d5f",
+            "message": "The Observatory's lockup as an image for its mails"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260930181359-d8ad4c"
+}

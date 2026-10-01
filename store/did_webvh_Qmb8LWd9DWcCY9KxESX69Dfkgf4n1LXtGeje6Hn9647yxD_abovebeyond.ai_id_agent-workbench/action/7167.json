@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ed499ad22ab70541b8bc04e0dd3870c4a526444d",
+            "branch": "workbench/last-engine-gaps",
+            "files_sha256": "46dc3188f3231210305d8c8d70f00f59e787a6447b5ddc8506f749b3ed5e2897",
+            "message": "De laatste gaten in de rapportmotor"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929103307-7d7a01"
+}

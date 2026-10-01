@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6c37547c6bd384d5b08a0970192fa473f9183ac7",
+            "branch": "elixir/security-2026-09-30-1626",
+            "files_sha256": "d639e309b3c652d0454e28bf834483abb25acf5630ce99a1dbba154936a6e64a",
+            "message": "Beveiligingsupdates",
+            "packages": 3
+        },
+        "resource": "abovebeyond-ai/vera"
+    },
+    "run": "01M3SJ4W2C7AJ557C2V414DFYK"
+}

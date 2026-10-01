@@ -1,0 +1,16 @@
+{
+    "action": "79d43a9f43c9783127f3e3246257df8f",
+    "effect": {
+        "detail": {
+            "base": "8e04cf8e429583d666a4e4852ca4af82370c1995",
+            "branch": "workbench/fix/transport-is-between-garages",
+            "commit": "45d163950a7f4c89da784010f4fd2feeea1a0025",
+            "files": 17,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7254,
+    "verdict": "ALLOW"
+}

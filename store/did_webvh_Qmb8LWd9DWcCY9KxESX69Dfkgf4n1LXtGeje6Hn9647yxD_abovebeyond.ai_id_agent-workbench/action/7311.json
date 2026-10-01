@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "85483daacc4c3aeaadc048c5f9513746287c817b",
+            "branch": "workbench/velgen-in-menu",
+            "files_sha256": "f7ac01f9bb687df71bcdf4c1a6bc6179f1c5920b0a5d41366e200e2dbf8bb7a7",
+            "message": "Velgen (webshop van Alcar) terug in het mobiele menu en de footer"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260930051615-b60f82"
+}

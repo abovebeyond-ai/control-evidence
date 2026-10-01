@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Step 1 of removing the Sanity layer: the database stores plain ids, no `{_ref, _type}` objects.\n\n**What was going on**\n- Gentells left Sanity long ago, but callers still build Sanity references (`[{\"_ref\": \"topic-07\", \"_type\": \"reference\"}]`), and some store writers kept them as-is.\n- On 2026-09-29 (an exact scan over all columns):\n\n| column | rows with `_ref` | newest |\n|---|---|---|\n| concepts.topic_tags | 77,192 | today |\n| patterns.topic_tags | 6,143 | today |\n| insights.signals, insights.concepts | 363 each | March |\n| sources.topic_hints | 62 | March |\n\n- So every reader has to unwrap: `refIds`, `unwrapRef`, and `CASE WHEN json_type(...) = 'object'` in SQL.\n\n**Changes**\n- **`plainIds` in `core/concept-id.mjs`:** a list of ids as it should be stored, whatever the caller passed.\n- **Every writer uses it:**\n  - `writeConcept` (topicTags);\n  - `writePattern`, on insert and update (topicTags, regionTags; concepts already did);\n  - the source writer (topic and region hints);\n  - `updateDoc`, the generic patch path the dashboard edits through (`/sanity/patch`), which turns a list of references into plain ids.\n\n  `writeInsight` was already correct.\n- **`bin/plain-ids.mjs`** rewrites what was stored before:\n  - it is dry by default and shows the count per column;\n  - `--apply` rewrites in one transaction and keeps every previous value in `plain_ids_undo`;\n  - `--undo` puts it all back;\n  - a value that isn't a JSON list, or holds no reference, stays untouched.\n\n**Readers change nothing:** they already read both shapes. The API shape towards the dashboard (which still wraps in `{_ref}`) and the `/sanity/*` names are step 2.\n\n**After merge:** a dry run on production, then `--apply` (about 84,000 values, previous values kept).\n\nChecks: new `test/plain-ids.test.mjs` (writers store plain ids, updates too; the migration does a dry run, `--apply` and `--undo`, and leaves plain rows untouched); 953 tests, 0 failures, 0 undefined names.\n",
+            "branch": "workbench/sanity/plain-ids",
+            "title": "Store plain ids, not Sanity references"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929101309-eeca6c"
+}

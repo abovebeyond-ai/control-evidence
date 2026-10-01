@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een score kende haar evaluatie, haar leerling en haar eindterm, maar niet wie ze gaf. Daardoor kan de pagina Gebruik niet tonen wat een leerkracht zelf ingaf. In een gedeeld project geven meerdere leerkrachten in \u00e9\u00e9n evaluatie in, en daar stond een leerkracht die alleen scoorde in de evaluatie van een collega op nul.\n\n## Wat verandert\n\n- Een nieuwe kolom `creator_id` op `evaluation_student_scores` onthoudt wie aangemeld was toen de score ontstond, door een score, een afwezigheid of feedback. Een haak bij het aanmaken van het model zet ze, zodat elke weg die een score maakt meedoet.\n- Wie een score later wijzigt, neemt ze niet over.\n- Een score die tussen campussen verhuist, houdt de naam van wie ze ingaf, ook als die er niet is. De beheerder die de score verhuist, komt er niet op.\n- Een score die ontstaat zonder dat iemand aangemeld is (een commando), heeft geen naam. Oudere scores hebben er ook geen: wie ze gaf, is nergens bewaard.\n\n## De migratie\n\nEen nullable kolom achteraan, zonder index en zonder foreign key. MySQL 8 (staging draait 8.4) en MariaDB voegen zo'n kolom meteen toe, zonder de tabel van miljoenen rijen te herbouwen. Niets zoekt een score op wie ze ingaf: de pagina Gebruik telt de scores van een periode en groepeert ze.\n\n## Waarom apart\n\nDeze PR onthoudt alleen. Gebruik per leerkracht volgt in een eigen PR. Hoe eerder dit draait, hoe meer scores een naam hebben wanneer dat scherm er is.\n\n## Regels\n\nR S3-7.4 is nieuw.\n\n## Nagekeken\n\n- `AScoreRemembersWhoEnteredItTest`: de leerkracht die een score ingeeft, wordt onthouden, en een collega van het team die ze daarna wijzigt, niet. Een afwezigheid en feedback onthouden wie ze gaf. Een score die ontstaat zonder dat iemand aangemeld is, heeft geen naam.\n- `CampusScoreTransferServiceTest`: een verhuisde score houdt de naam van wie ze ingaf, en een score zonder naam blijft zonder, ook al is er een beheerder aangemeld.\n- Vier mutanten, alle vier opgevangen: niemand onthouden, de naam van een kopie overschreven, wie wijzigt neemt over, en een verhuisde score met de naam van wie ze verhuist.\n- De volledige suite lokaal op MariaDB: 1337 van 1338 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/a-score-remembers-who-entered-it",
+            "title": "Een score onthoudt wie ze ingaf"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930163704-4605d6"
+}

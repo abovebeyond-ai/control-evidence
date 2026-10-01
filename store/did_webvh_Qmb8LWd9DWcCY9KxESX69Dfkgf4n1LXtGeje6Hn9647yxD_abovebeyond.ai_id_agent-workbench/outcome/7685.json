@@ -1,0 +1,16 @@
+{
+    "action": "c1aeb7dacc42eb737b7d1d0b2b10a6d8",
+    "effect": {
+        "detail": {
+            "base": "1a91304b27985471c15f54e2d7acc815753af695",
+            "branch": "workbench/feat/rights-follow-the-garage-modules",
+            "commit": "21cd41a5f0c29bb0cac60cce3f40ab1c003eb3d0",
+            "files": 23,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7683,
+    "verdict": "ALLOW"
+}

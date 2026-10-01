@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "75c48e87670843a534c78ba613046da532ff9152",
+            "branch": "workbench/usage-loads-in-parts",
+            "files_sha256": "92c0d7c9bbdcd6f0bf5426551160568be759ba853fe7a0ed38627012daace655",
+            "message": "Gebruik toont zich meteen en laadt zijn cijfers deel per deel"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930133145-e7073e"
+}

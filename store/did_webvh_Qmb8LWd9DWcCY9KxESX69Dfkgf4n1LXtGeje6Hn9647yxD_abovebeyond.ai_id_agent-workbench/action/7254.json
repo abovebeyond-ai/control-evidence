@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8e04cf8e429583d666a4e4852ca4af82370c1995",
+            "branch": "workbench/fix/transport-is-between-garages",
+            "files_sha256": "ee86490469bafc3f8517ebd62120c7dda98cf02b132febfd6b209698670abe4c",
+            "message": "Transport is between garages; transport screens write numbers like the rest of the platform"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929123145-1df3d3"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De pull requests van de hand (en van de Elixir-handen) worden geopend door `abovebeyond-control[bot]`, zonder dat iemand als reviewer gevraagd wordt. Ze verschijnen daardoor niet in de lijst met gevraagde reviews, alleen in de repository zelf.\n\n## Wat verandert\n\n- `.github/CODEOWNERS` met `* @ShaneDeconinck`: GitHub vraagt bij elke nieuwe pull request vanzelf een review aan de eigenaar, wie ze ook opent.\n\n## Nagekeken\n\n- Branch protection is beschikbaar op deze priv\u00e9repository (de API antwoordt \"Branch not protected\" en niet dat er een upgrade nodig is), dus code owners werken hier ook.\n- Het geldt voor pull requests die geopend worden nadat dit gemerged is; lopende pull requests krijgen geen vraag achteraf.\n",
+            "branch": "workbench/ask-shane-for-review",
+            "title": "Elke pull request vraagt een review"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930172717-c4468a"
+}

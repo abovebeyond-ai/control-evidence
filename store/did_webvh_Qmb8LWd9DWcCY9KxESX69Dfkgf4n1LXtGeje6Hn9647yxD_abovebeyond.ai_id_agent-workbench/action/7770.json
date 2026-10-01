@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The featured report sat as a framed picture in a black block: a white border around the cover on the left, and plain black on the right. It now fills the band.\n\n- **Left:** the cover runs edge to edge, with no border, at its own height, so the title and the wordmark on the cover are never cut off.\n- **Right:** the same cover again, enlarged and heavily blurred, under a dark veil. The colours of the report carry into the text side, and the text stays readable.\n- **One component,** `x-report-feature`, now used by both the homepage and `/reports`. The two copies had already drifted apart: only `/reports` showed the note for a report without a preview. Both pages now show it.\n\nOn the homepage the band runs the full width of the screen. The heading \"The Reports\" and the list of upcoming reports keep their usual margins.\n\nTests: 332 passing. Checked locally with the real cover of \"Going to School in Phone-Free Europe\", at 1440 px and at 400 px.\n",
+            "branch": "workbench/site/report-band",
+            "title": "The featured report fills its band"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001060705-1ad8fd"
+}

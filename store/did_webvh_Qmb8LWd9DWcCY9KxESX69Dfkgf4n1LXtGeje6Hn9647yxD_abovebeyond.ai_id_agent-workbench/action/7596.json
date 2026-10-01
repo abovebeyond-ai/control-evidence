@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "After \"Send me a link\" the confirmation was one grey sentence under the same box and button. It read as more instructions, and nothing looked sent.\n\nThe form now gives way to a confirmation of its own:\n- the heading \"Check your mail\";\n- the address in bold (\"If \u2026 has an account, a link to choose a new password is on its way. It works once, for an hour.\");\n- what to do when nothing arrives (look in spam, or ask again in five minutes, the server's limit per address);\n- \"Back to sign in\".\n\nThe address box and the button are gone, so there is nothing to click twice. The Playwright test checks the heading, the address, and that the button is gone.\n\nLint at the ceiling (24), build ok, auth tests 6 of 6.\n",
+            "branch": "workbench/auth/reset-sent",
+            "title": "After a reset request: \"Check your mail\""
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260930171806-9df14b"
+}

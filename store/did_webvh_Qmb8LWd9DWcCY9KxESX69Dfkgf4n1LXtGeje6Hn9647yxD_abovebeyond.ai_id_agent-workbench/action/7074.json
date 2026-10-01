@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Removes one unused list and fixes the README.\n\n- `STARTERS` in `Studio.jsx` was never read.\n- The README said \"the twelve elements\". There are thirteen, and it now says they are fetched, so a count there cannot go stale.\n\nChecks: the build passes.\n",
+            "branch": "workbench/cleanup/unused-3",
+            "title": "Remove an unused list; the README names no element count"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20260929091946-61042b"
+}

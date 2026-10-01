@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a95f0f5b74385531085d8953fbf22590c532deb6",
+            "branch": "workbench/feat/transport-from-a-dealer-transaction",
+            "files_sha256": "268051a92e7385ee18820b2f6c3ac5fff61f5293a5a808f1a651b570e1101647",
+            "message": "Transport from a dealer transaction: the buyer's row carries the truck"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929103748-6108fe"
+}

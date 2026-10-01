@@ -1,0 +1,16 @@
+{
+    "action": "f43c0be8159085ffd40ed9676f5042b3",
+    "effect": {
+        "detail": {
+            "base": "24c78b497bc0726a43e6c6646e31433b51f0ab37",
+            "branch": "workbench/auth/reset-sent",
+            "commit": "7df83de7da4acd4ac0732c1a37fba22a46dac278",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7593,
+    "verdict": "ALLOW"
+}

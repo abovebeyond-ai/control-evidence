@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nRemoves the legacy `/statistics/{year?}` page (`home.statistics`).\n\nIt showed platform-wide yearly counts (vehicles created, sold and put on the stocklist, buy-overs, export vehicles, bidding winners, new dealers) to every user of dealer 4 and a 404 to everyone else. Nothing linked to it. The administrator's Insights screen now carries these figures, for the administrator only, so this page only exposed platform-wide numbers to every StockCars account.\n\n## Removed\n\n- the route in `routes/web.php`\n- `HomeController::statistics()` and the imports only it used (`Dealer`, `Vehicle`, `Request`, `Carbon`)\n- `resources/views/dashboard/statistics.blade.php` (no partials, JS, CSS or translation keys of its own)\n- its PHPStan baseline entry (`$dealer_id` on `Authenticatable` in `HomeController`)\n- its case in `SmokeTest`; two comments there used the route as the example of an optional parameter and now use `/access/{access?}`\n\nNo menu row, role access, seeder or business rule referred to the page, so no migration and no docs change. The quality ratchet budgets are unaffected.\n\n## Test\n\n`LegacyStatisticsPageRemovedTest`: the route name no longer exists, and `/statistics` and `/statistics/2026` return 404 for a user of dealer 4.\n\nFull suite green locally (2469 tests), PHPStan clean.\n",
+            "branch": "workbench/chore/remove-legacy-statistics-page",
+            "title": "Remove the legacy /statistics page"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930134949-50bde2"
+}

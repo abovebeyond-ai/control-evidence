@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8b624911eee4bfd0d4fda3b7bc77c99cfb753c05",
+            "branch": "workbench/site/contact-newsletter-band",
+            "files_sha256": "c2610fd999b7f98d7af39537645c20edbcfb6fab299b961534742c1c32e2cde6",
+            "message": "Contact, newsletter and collage band: one list, a plain title, colour in the band"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001051327-fc064e"
+}

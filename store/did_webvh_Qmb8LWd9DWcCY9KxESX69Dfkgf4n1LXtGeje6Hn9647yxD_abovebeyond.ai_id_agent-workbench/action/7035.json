@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3a338af45954acb3e57712a6bc248b8889f89d37",
+            "branch": "workbench/class-progress-judges",
+            "files_sha256": "4fd5984ad3fa9c127893e93bdc2cfc4b26f4c7694de1963b7b4ce16a9228144b",
+            "message": "De voortgang van een klas getest op haar getallen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929084234-34ceae"
+}

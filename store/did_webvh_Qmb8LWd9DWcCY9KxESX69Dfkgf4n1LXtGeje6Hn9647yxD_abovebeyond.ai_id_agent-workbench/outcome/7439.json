@@ -1,0 +1,16 @@
+{
+    "action": "7b9f2a20e9a30f5fc5f91d0eab8b0a1f",
+    "effect": {
+        "detail": {
+            "base": "8a9522fee50ead9603918d98d568f23af527c33f",
+            "branch": "workbench/sources/phase3-design",
+            "commit": "85d0e47eb5a76a2d6511aee433269767fd58e3ac",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7437,
+    "verdict": "ALLOW"
+}

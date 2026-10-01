@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7882d3572b2f292e84323af555121320fdade337",
+            "branch": "workbench/sanity/store-functions",
+            "files_sha256": "18af8f7fdd17a5d4260ddab3a6220a90560ebd81144a1b7a153fad7eeee46665",
+            "message": "The store's functions are named for what they do; the Sanity client imitation goes"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929105454-6cd13b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3980ea8c196a9d6eff33457e08f87cde042c6b9e",
+            "branch": "workbench/fix/french-screens-speak-french",
+            "files_sha256": "7758d0aa83e63519eee11e9f84f54eb37e82793d2dd0942dc285447231d7de4b",
+            "message": "French screens speak French: bidding offers, relations, website settings, notifications, portal label"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929165137-632081"
+}

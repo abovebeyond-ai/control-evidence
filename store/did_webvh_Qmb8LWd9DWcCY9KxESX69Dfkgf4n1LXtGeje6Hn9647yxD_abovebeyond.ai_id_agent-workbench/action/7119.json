@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2e8f31caf7bf2ac2352b960beed526b311d81bef",
+            "branch": "workbench/cleanup/remove-client-layer",
+            "files_sha256": "3d5653563512ffe07bd46fdc842c4aa000970f52f7cc800556560ddca41b96ee",
+            "message": "The client product goes: companies, projects, pull-insights, chat sessions\n\nThe pipeline's client layer (about 1,380 lines: the routes for companies, projects,\nproject setup, company insights, pull-insights and chat sessions; pull-harvest.mjs;\nclients-store.mjs; verifyClientInsights) served the client app that left with\ngentells.com. Its last client insight is from 2026-04-08, projects and chat sessions\nare empty, and the pull-harvest phase could not be scheduled: scoring read\nstate.companiesDue, which nothing set. The tables and their rows stay.\n\ntenant-boundary.mjs goes with it; the rule it held (nothing a client brings enters\nthe shared graph) is the Gentells Standard's two-graph rule. The chat loses its\nunused project context.\n\nA new test resolves every relative import in the repo: removing clients-store left\nfifteen imports in server.mjs pointing at nothing, and no test imports server.mjs.\nThe scan log keeps thirty days, pruned after every collect round."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929100640-5100b0"
+}

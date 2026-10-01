@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Sinds #233 kies je op het ingavescherm een klasgroep uit een rij woorden: \"Klasgroep alle, 2Aa Gra & Med, 2Aa Mec & Ele, ...\". Met de namen van echte klasgroepen werkte dat niet. Ze zijn lang, er staat een & in, en in \u00e9\u00e9n graad zijn het er al snel zeven. De komma's ertussen waren lichtgrijs en stonden los van de woorden, zodat je niet zag waar de ene naam stopte en de volgende begon.\n\n## Wat verandert\n\n- De rij woorden wordt \u00e9\u00e9n keuzelijst met het label Klasgroep, zoals de keuzelijst van de leerling in de weergave per leerling. De eerste keuze is \"Alle klasgroepen\", en de gekozen klasgroep staat in het veld.\n- Op een telefoon vult de lijst de breedte naast het label.\n- De rest blijft zoals in #233: de lijst verschijnt alleen bij meer dan \u00e9\u00e9n klasgroep, de keuze staat in de url, en wie gescoord mag worden verandert niet.\n\n## Nagekeken\n\n- `ScoreEntryByClassGroupTest`: de lijst stuurt haar keuze meteen door (`wire:model.live`), heeft \"Alle klasgroepen\" als eerste keuze, en de gekozen klasgroep staat geselecteerd in de html.\n- Vier mutanten, alle vier opgevangen: een lijst bij \u00e9\u00e9n klasgroep, de gekozen klasgroep niet geselecteerd, een keuze die pas met het volgende verzoek vertrekt, en geen weg terug naar alle klasgroepen.\n- Bekeken op 1280 en 390 pixels breed, met de namen van zes klasgroepen uit een tweede graad.\n- De volledige suite lokaal op MariaDB: 1334 van 1334 groen.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/class-group-as-a-select",
+            "title": "Klasgroep kiezen in een keuzelijst"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930163622-d95810"
+}

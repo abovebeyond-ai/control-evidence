@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fd110ae0bb09bb547bd2e3774d7b99ba857aebdf",
+            "branch": "workbench/ask-shane-for-review",
+            "files_sha256": "c206bd1c568d85c2da7ea2428097267c8a3df0d51cc1be4e37bcaa89a7c0602e",
+            "message": "Elke pull request vraagt een review"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930172717-c4468a"
+}

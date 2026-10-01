@@ -1,0 +1,16 @@
+{
+    "action": "d03fb3a1a445e817f99820fdb379c77a",
+    "effect": {
+        "detail": {
+            "base": "36e81bb3b0c127b5fb26cba8e2f346753343b33b",
+            "branch": "workbench/sites-from-bouwsoft",
+            "commit": "3424b4ebdcc1878e8b510f899e0ac9add7513187",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7102,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The sources plan gains two things: where phase 2 stands, and phase 3 measured against the code before anything is built.\n\n## Phase 3 changes shape\nThe plan said: \"one published reading cites a Eurostat indicator and its ProveML certificate verifies the number\". Reading the code (pipeline, Studio, site) shows:\n\n- **An article has no stored certificate.** The Studio's draft check (`gateBody`) verifies the body against the cited evidence, but its result is only streamed to the editor. What is saved is the signed review. The site has no ProveML at all.\n- **Evidence rows point at graph nodes** (`article_evidence.ref_type, ref_id`). An indicator fits as a sixth `ref_type` pointing at a row of its own.\n- **The site's evidence kinds are signal-only and belong to the Gentells Standard.** A \"statistic\" kind would be a standard change, and the pilot does not need it.\n- **Eurostat's API answers without a key** (JSON-stat 2.0 with the last update and a DOI).\n\nSo the pilot is an article, in four PRs:\n1. The pipeline stores and fetches an indicator.\n2. The indicator as evidence (labels, the writer's fact store, the review's quote).\n3. The Studio's picker.\n4. The site's evidence card with the Eurostat attribution.\n\nThe done-condition is restated so each part points at something that exists. Saving the proof as a certificate is a separate decision after the pilot, because it touches every article.\n\n## Also\n- Phase 2's status as of 30 September: what delivers, what is off and why (#239, #241).\n- The open decisions, updated: Twitter/X and Twitch remain, plus a new one, which Eurostat tables the pilot article leans on.\n\nDocumentation only.\n",
+            "branch": "workbench/sources/phase3-design",
+            "title": "Sources plan: phase 2 where it stands, phase 3 measured against the code"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260930123657-06ba70"
+}

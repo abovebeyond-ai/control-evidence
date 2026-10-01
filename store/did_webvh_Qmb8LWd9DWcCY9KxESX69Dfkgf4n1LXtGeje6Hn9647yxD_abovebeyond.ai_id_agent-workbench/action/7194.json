@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`ReportArchive::archive` wisselt de school in de sessie naar die van de periode, want de scopes lezen de school uit de sessie, \"en een commando heeft er geen\". Maar het zocht de klas van de leerling v\u00f3\u00f3r die wissel. Zonder school in de sessie gooide die opzoeking al een fout, en met een andere school vond ze de klas niet. De wissel zelf veranderde daardoor nooit iets: de enige aanroeper, het commando `ArchiveReports`, zet de school al in de sessie voor het archiveert. De mutatietest zag het als drie ontsnapte mutanten, want het wisselen weglaten of het terugzetten weglaten maakte geen verschil.\n\n## De wijziging\n\n- **`ReportArchive::archive`** zoekt de klas binnen de wissel, dus in de school van de periode. Na afloop, ook als het rapport faalt, krijgt de sessie terug wat ze had.\n- **`ArchivingAReportTest`**: het archief werkt zonder school in de sessie, zoals in een commando, en met een andere school, zoals op een scherm. Een ReportService die de sessie noteert en dan faalt, toont dat het rapport in de school van de periode gemaakt wordt en dat de sessie teruggezet wordt.\n\n## Wat verandert voor gebruikers\n\nNiets. Het commando zette de school al zelf; het archief werkt nu ook als iemand het anders aanroept.\n\n## De rechter\n\nDe nieuwe test faalt zonder de wissel, zonder het terugzetten, en als het terugzetten alleen na succes gebeurt. Volledige suite op MariaDB, PHPStan zonder fouten.\n",
+            "branch": "workbench/archive-session",
+            "title": "Het archief zoekt de klas in de school van de periode"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929104019-64bb55"
+}

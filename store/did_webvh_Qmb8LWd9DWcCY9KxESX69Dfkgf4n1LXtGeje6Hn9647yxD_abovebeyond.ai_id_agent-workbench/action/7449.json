@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7653083ba1e76b571cddc86701b65fd3dbc93728",
+            "branch": "workbench/stable-rows",
+            "files_sha256": "1667b5f7802a3074a65ebf922716bc3fcf2b228e83fd2a9fca6bfaabbc719cc1",
+            "message": "Rijen die blijven: zijn correctie houdt stand in elk geval, niet in een"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260930125124-83fd39"
+}

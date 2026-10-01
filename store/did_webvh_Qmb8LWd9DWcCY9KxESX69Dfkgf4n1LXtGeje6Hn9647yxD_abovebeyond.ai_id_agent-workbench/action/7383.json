@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "05ae0c81765426e71cb739d4f781e13bacfcad7d",
+            "branch": "workbench/usage-counts-teachers",
+            "files_sha256": "70cd3132b1429761b7f1113e0a6d7ed0a2990547f37a335de6b0b16ba9eec611",
+            "message": "Gebruik telt leerkrachten zoals het scherm Leerkrachten"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930111840-edea94"
+}

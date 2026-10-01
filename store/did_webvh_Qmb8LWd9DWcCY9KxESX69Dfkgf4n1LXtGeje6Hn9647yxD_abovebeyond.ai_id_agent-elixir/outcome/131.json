@@ -1,0 +1,16 @@
+{
+    "action": "bbe5691ab92e5b6ff2b42e9de5820dc9",
+    "effect": {
+        "detail": {
+            "base": "6fa8aa6e05de908e4a9d3c2a2c4669e419a7f998",
+            "branch": "elixir/security-2026-09-30-1622",
+            "commit": "2e862623a425da5c74f9f2eb041340f18fb25c5f",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 129,
+    "verdict": "ALLOW"
+}

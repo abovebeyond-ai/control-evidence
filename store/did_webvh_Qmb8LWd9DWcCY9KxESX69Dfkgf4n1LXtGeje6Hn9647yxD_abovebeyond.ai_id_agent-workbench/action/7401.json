@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bd9e4e5724519969ac68710bab1eacc1fdd2ef19",
+            "branch": "workbench/fix/nederland-mobiel-once-per-change",
+            "files_sha256": "b391511933185ea013348eddb1e2f1382513e15b8e77afda1b8bf961bb4d904d",
+            "message": "Nederland Mobiel: one change of a vehicle is one send\n\nBookkeeping about the partner is written without model events, the\nobserver ignores updates that change only bookkeeping columns, writes\nfrom outside the sheet are collapsed into one delayed unique job per\nvehicle that a delete wins over, and the observer no longer saves its\nstale copy of the vehicle over what the send wrote.\n\nFixes bevinding 2026-09-30-nederland-mobiel-dubbel-verstuurd"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930115029-ec8133"
+}

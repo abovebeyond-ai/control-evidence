@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The store has not been Sanity for months, but its four doors still carried the name: `/sanity/query`, `/sanity/patch`, `/sanity/create`, `/sanity/delete`. They are now `/store/*`.\n\n- The server rewrites an incoming `/sanity/*` path to `/store/*` in one line at the top of the handler, so an open dashboard or studio tab keeps working through this deploy. That line and the second name in `isReadRequest` go in the follow-up, once dashboard and studio call `/store/*`.\n- The probe token's one allowed POST is `/store/query` (and the old name for now); the tests pin both, and that `/store/query/../patch` is not a read.\n- `bin/probe.mjs` calls `/store/query`.\n\nStep 2 of 3 in removing the Sanity layer. Tests: 953 pass.\n",
+            "branch": "workbench/cleanup/store-routes",
+            "title": "Name the store's doors /store/*"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929101606-847600"
+}

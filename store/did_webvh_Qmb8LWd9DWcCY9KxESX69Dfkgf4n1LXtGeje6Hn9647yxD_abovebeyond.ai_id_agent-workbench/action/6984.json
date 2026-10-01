@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een gewone sectietitel stond overal in kapitalen, gewicht 800 en tot 45px: \"NEEM CONTACT OP\" en \"BERICHT\" in de contactstrook op elke pagina, \"ALLES GEREGELD\", \"DE MENSEN ACHTER STOCKCARS\", \"WAGENS DIE BIJ JE PASSEN\". Daardoor sloeg elke sectie even hard, en naast een formulier of een raster foto's harder dan de inhoud zelf.\n\n## Wat verandert\n\n- `.sc-title` zonder accent: gewone kast, halfvet (600), tot 2rem. Dezelfde stijl als \"Net binnen\" in #28.\n- `.sc-title--display` (een titel met rood accent, op Services en Over ons) blijft in kapitalen en 800, zoals in de mockups.\n- De tussenkoppen van de privacyverklaring (`.block-content h2`) gingen van 46px in 800 naar halfvet, 1.25 tot 1.6rem. Ze waren groter dan de sectietitels.\n- De maatbegrenzing van de titel naast de items (`.feature-aside-intro`) geldt alleen nog voor een kapitalentitel. Een gewone titel blijft er al onder.\n\nNagekeken op de dev-server op 1440px: home, services, over-ons, aanbod en gegevensbescherming. Alle gewone titels komen op 32px en 600, de accenttitels op 44.72px en 800 in kapitalen.\n\nNa #28 is de afwijking in `StockTeaser.astro` overbodig, want de gedeelde regel geeft nu hetzelfde. Ze kan in een latere opkuis weg.\n",
+            "branch": "workbench/rustiger-titels",
+            "title": "Sectietitels in gewone kast, kapitalen alleen met rood accent"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260929074116-b5dffb"
+}

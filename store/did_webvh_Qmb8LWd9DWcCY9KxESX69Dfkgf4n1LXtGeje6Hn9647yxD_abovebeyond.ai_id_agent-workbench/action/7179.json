@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7fab91e6384b3978414e25330a40c405c6016ae0",
+            "branch": "workbench/sanity/plain-tags",
+            "files_sha256": "4e9e610331dd7c9df978634cc85d19e15850551138cf19e9d6fc2289297e743b",
+            "message": "Tags are plain ids; the Sanity reference fallback goes"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260929103638-512daa"
+}

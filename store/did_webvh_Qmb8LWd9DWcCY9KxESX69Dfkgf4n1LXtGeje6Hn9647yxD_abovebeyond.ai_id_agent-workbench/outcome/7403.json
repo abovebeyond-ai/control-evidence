@@ -1,0 +1,16 @@
+{
+    "action": "ffa545b0c547eca145ca1ecc6fbd8a57",
+    "effect": {
+        "detail": {
+            "base": "bd9e4e5724519969ac68710bab1eacc1fdd2ef19",
+            "branch": "workbench/fix/nederland-mobiel-once-per-change",
+            "commit": "5f1ae1f3fa9ee3fd02743f6701ef4c4ba0a26009",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7401,
+    "verdict": "ALLOW"
+}

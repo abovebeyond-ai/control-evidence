@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`packages/app` goes: the old React version of gentells.com.\n\n**Why:** CLAUDE.md said \"delete both at cutover\". gentells.com now points to the site box (142.132.191.187, Laravel). The pipeline box no longer serves it; only a stale nginx config still points at `packages/app/dist`.\n\n**Removed**\n- **`packages/app`:** 24 files, 8,857 lines.\n- **The routes only it called** (checked against site, dashboard and studio):\n  - `/trends/public` and `/trends/public/:id`;\n  - `/articles/published` and `/articles/published/:id`;\n  - `/newsletter/subscribe`, `/contact`, `/feedback`.\n\n  The Laravel site has its own forms and newsletter.\n- **The allow-list:** those routes come off the public allow-list (`public-routes.mjs`), and the test that pins the list follows.\n- **`deploy.sh`:** the `build_frontend` step and the function behind it; nothing else built with it.\n- **`fable-emphasize.mjs`:** only the old site read its output.\n- **Clean-ups:** the now-unused imports in `routes-studio.mjs` and `server.mjs`; `.gitignore` lines; CLAUDE.md and README.\n\n**After merge, on the box (needs root):** the nginx config `/etc/nginx/sites-enabled/gentells` and the untracked `packages/app/dist` can go. Nothing breaks if they stay, since no traffic reaches them.\n\nChecks: 958 tests, 0 failures. A working no-undef lint over `packages`, `bin` and `test` finds 0 undefined names.\n",
+            "branch": "workbench/cleanup/remove-packages-app",
+            "title": "packages/app goes: gentells.com moved to the Laravel site"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929091554-5f6cee"
+}

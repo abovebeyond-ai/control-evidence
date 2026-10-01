@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9236ebd408e9a0a9f7b9d6f31c177add387bcf27",
+            "branch": "workbench/fix/a-model-is-chosen-not-assumed",
+            "files_sha256": "54036d6eef6e5709d2f178445b58855446f569f69b7be5ae190892392fc9e2f0",
+            "message": "A model is chosen, not assumed: empty first option and an honest chassis lookup"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929120359-4b7562"
+}

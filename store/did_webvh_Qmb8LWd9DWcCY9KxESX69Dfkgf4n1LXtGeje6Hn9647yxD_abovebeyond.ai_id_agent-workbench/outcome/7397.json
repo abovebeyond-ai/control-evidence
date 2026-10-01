@@ -1,0 +1,16 @@
+{
+    "action": "e153d0a113e41700c49940eeb4feb496",
+    "effect": {
+        "detail": {
+            "base": "05ae0c81765426e71cb739d4f781e13bacfcad7d",
+            "branch": "workbench/a-name-with-an-apostrophe",
+            "commit": "242c8113222ea32461443cfe20a80e5003535d8a",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7395,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "d719ce3f2f4961c1968c85495e56bb9f",
+    "effect": {
+        "detail": {
+            "base": "6ce6c2e7b170f04bb216cfd5145b299f4246e3e8",
+            "branch": "workbench/sanity/store-names",
+            "commit": "83fec7a578ef6c96995981b1f412701e5acd4d76",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7221,
+    "verdict": "ALLOW"
+}

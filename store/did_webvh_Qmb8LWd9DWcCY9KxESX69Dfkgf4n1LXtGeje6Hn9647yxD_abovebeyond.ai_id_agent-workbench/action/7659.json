@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1ed5e8fbb1e3e2e2c43790ae1c6a2fe3533ef284",
+            "branch": "workbench/design/type-scale",
+            "files_sha256": "870617fccaa75e4c570326668bd80cdb2c12fb3e2be0048e14b401bee94e890b",
+            "message": "A type scale for the Studio: the Observatory's six steps"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20260930181537-eec944"
+}

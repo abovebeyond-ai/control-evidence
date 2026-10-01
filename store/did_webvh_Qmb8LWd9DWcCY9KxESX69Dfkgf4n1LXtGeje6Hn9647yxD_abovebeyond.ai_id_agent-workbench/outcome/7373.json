@@ -1,0 +1,16 @@
+{
+    "action": "9b23d361d23676a1a5c65786c28892f2",
+    "effect": {
+        "detail": {
+            "base": "85ba3afd4b9e78957747fbef5a2e10919276957b",
+            "branch": "workbench/usage-follows-the-school",
+            "commit": "a59a3e9236caa54d476ec2e15458e35428a02338",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7371,
+    "verdict": "ALLOW"
+}

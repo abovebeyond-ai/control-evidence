@@ -1,0 +1,16 @@
+{
+    "action": "f833abf55d276b8165afffc2d80685ee",
+    "effect": {
+        "detail": {
+            "base": "9ddc066a6e5a017dd34c533a6102e20aa0e845b2",
+            "branch": "workbench/mail/observatory-lockup",
+            "commit": "bd34f8b32f93ce2ad442dc0a425b046a4586bce7",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7647,
+    "verdict": "ALLOW"
+}

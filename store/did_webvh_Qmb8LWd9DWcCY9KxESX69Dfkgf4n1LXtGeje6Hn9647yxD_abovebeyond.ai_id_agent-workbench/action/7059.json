@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7c300da33fc861093d54471acaaae558c1ceecae",
+            "branch": "workbench/cleanup/remove-packages-app",
+            "files_sha256": "2015c95abf75e6a89a10c10ddbc665f58c2df180596f35f27db391fe12de3c91",
+            "message": "packages/app goes: gentells.com moved to the Laravel site\n\nThe React predecessor of gentells.com (24 files, 8,857 lines) was kept 'until DNS\nmoves'; gentells.com points to the site box now. With it go the five routes only it\ncalled (/trends/public, /articles/published and their detail routes,\n/newsletter/subscribe, /contact, /feedback), their place on the public allow-list,\nthe build step in deploy.sh, and fable-emphasize.mjs, which only it read."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929091554-5f6cee"
+}

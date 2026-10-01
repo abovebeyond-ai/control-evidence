@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ba8cb77db16a13974c92161a06939b10ea92d9bb",
+            "branch": "workbench/feat/insights-round-two",
+            "files_sha256": "9eb867cda9afc4e33d84c2c8733ce0c14a27279c62ccafcf488920bb7ffd6308",
+            "message": "Insights, round two: compact registers that show more on request, and the sell-time spread"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001045738-40e30e"
+}

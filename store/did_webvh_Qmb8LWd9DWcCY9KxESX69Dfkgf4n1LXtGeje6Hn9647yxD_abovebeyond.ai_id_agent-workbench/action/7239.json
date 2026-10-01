@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was wrong\n\nThe transport request modal shows a field for every dimension the vehicle lacks, also when it reopens an open request (the truck on the transport overview, or \"back\" in the modal). That form posts the request's `uuid`, and `TransportService::store` only handled dimensions on the path without a `uuid`. On a change of an open request the typed width, height and length were dropped: the vehicle kept 0, the request kept NULL in its dimension columns, the class stayed \"in aanvraag\" and the confirmation showed \"0 mm\". The controller's R S4-10.1 check did count the typed values, so the request went through as if it were complete.\n\nSeen on a local demo instance, where the seeded transport is written without dimensions.\n\n## What changes\n\n- `TransportService::store` writes typed dimensions onto a vehicle without them on both paths (R S4-10.4, unchanged rule: never overwrite existing dimensions).\n- An open request without dimensions takes the vehicle's on a change, so class and price are computed on them. A request that already carries dimensions keeps them.\n- R S4-10.4 in `14-s4-verkopen-aan-een-klant.md` says so; new finding `bevinding: transport-wijziging-vergat-de-afmetingen` (opgelost).\n\n## Delivery address: no behaviour change\n\nR S4-10.3 states that the delivery address must be one of the dealer's own locations with the delivery flag (validated), and the code does exactly that, so for a vehicle sold to a customer pick-up and delivery are both at the dealer unless he has a separate delivery location. The S4-10 introduction speaks of delivering \"bij een klant\", and the demo dataset writes a transport to a customer address directly into the table, which the form cannot do. That tension is recorded as `open punt: transport-leveradres-enkel-eigen-locaties` rather than changed here.\n\n## Tests\n\n- `test_dimensions_typed_in_a_new_request_are_stored_on_the_request_and_shown_in_the_confirmation`\n- `test_dimensions_typed_when_changing_an_open_request_are_stored_on_the_request_and_the_vehicle` (fails on main: dimensions stay 0)\n- `test_changing_an_open_request_keeps_the_dimensions_it_already_has`\n\nLocal: full suite 2362 tests green, Rules* and QualityRatchetTest green, PHPStan no errors.\n",
+            "branch": "workbench/fix/a-transport-keeps-its-dimensions",
+            "title": "A transport request keeps the dimensions typed when it is changed"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929120331-cbf824"
+}

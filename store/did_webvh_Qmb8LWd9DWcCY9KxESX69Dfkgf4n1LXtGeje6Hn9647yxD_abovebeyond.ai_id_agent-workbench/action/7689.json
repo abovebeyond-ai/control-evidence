@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "819d248ff3f3bbda76bafd728e1dcbc9ce66f042",
+            "branch": "workbench/billing/no-free-plans",
+            "files_sha256": "ac006526c93ea3757b1cb46c524cdeaab0fb5e442082b9b55f26ec842675560d",
+            "message": "In production a paid plan is a conversation, never a free upgrade"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20260930185015-dbb834"
+}

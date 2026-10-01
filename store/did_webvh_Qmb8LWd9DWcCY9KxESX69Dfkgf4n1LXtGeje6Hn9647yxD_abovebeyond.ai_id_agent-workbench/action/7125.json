@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "45ca3cfb5e245f60c82112bb9d1fc5ddb440d0c7",
+            "branch": "workbench/project-progress-judges",
+            "files_sha256": "05de18050519e7a408452e32008de7e8d75879e2e09d57c7d5fd3ea39a0b90c5",
+            "message": "De voortgang van een project: wat telt, en een afronding die afkapte"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929100715-b53485"
+}

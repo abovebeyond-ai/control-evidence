@@ -1,0 +1,16 @@
+{
+    "action": "657a79e734d26c751eff84d915ea266a",
+    "effect": {
+        "detail": {
+            "base": "8b624911eee4bfd0d4fda3b7bc77c99cfb753c05",
+            "branch": "workbench/site/contact-newsletter-band",
+            "commit": "e1df0295a3610686f5868ed3bf50ddbd6879d418",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7755,
+    "verdict": "ALLOW"
+}

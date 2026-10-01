@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f9bac8ad0cfae9c1b2e19b880d14cbdfbd355857",
+            "branch": "workbench/evaluation-to-excel",
+            "files_sha256": "bc2b6bae5f64fb9e2cae10efb6914c9d29dbe42ab81f616f7e96ded826bcc13f",
+            "message": "De resultaten van een evaluatie gaan naar Excel"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930142509-320351"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5b710efdf36d4aca4d9115726535a7e12ab89feb",
+            "branch": "workbench/cleanup/legacy-after-sanity",
+            "files_sha256": "886e1b194e419d28ff0051161796db27ea11e9ff66f8568d08275a7415c685af",
+            "message": "Legacy after Sanity: Ollama, the client and catalog tables, snapshot retention with an archive, stale docs"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929175742-7f40dd"
+}

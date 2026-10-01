@@ -1,0 +1,16 @@
+{
+    "action": "c090c20819512a85fe8707d22ab3fb8c",
+    "effect": {
+        "detail": {
+            "base": "349a737fa23bf5062792e824c9ee0fa40f3a29a8",
+            "branch": "workbench/auth/link-size",
+            "commit": "0f60db0f290bdf80f9700d1f0d9805df12b6e2ac",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7629,
+    "verdict": "ALLOW"
+}

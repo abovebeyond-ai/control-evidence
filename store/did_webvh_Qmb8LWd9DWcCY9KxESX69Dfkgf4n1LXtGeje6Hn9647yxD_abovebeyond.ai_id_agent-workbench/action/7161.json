@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e7128fa3e7d1b6835fb5274647d6e738f149d822",
+            "branch": "workbench/sanity/plain-everywhere",
+            "files_sha256": "68a0dba3763fdf9b8d1c1451aff8e4c5760d5d06c94d0ab1996a74c05d1bcc6a",
+            "message": "Ids are plain strings in and out of the store; the unwrap code and the /sanity alias go"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929103013-f49154"
+}

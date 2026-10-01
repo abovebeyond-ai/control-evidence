@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Removes what nothing uses. Two fetches that nobody read go as well.\n\n- **Two fetches that nobody read:**\n  - Patterns called `/pipeline-stats` on every visit (a heavy endpoint) and never used the answer.\n  - Buffer called it twice, the second time for an `insightCount` it never showed.\n- **The timeline chart once:** Buffer had its own copy of `TimelineChart`, identical to the one in `SignalTimeline.jsx` apart from an unused parameter and the label. It now imports the shared one (`export function TimelineChart`).\n- **Removed:**\n  - the unused phase lists and `PhaseButton` in `Pipeline.jsx`, and `runScout`;\n  - the hooks `useSignalsRecent` and `useUpdateSignal`, and the query name `signalsRecent`;\n  - leftover variables (`processedCount`, `pendingPromote`, `workerBreakdown`, `allTopics`, `topicFilter`, `cov`, `setTopics`/`setRegions`, \u2026).\n- **`@types/react` and `@types/react-dom`:** the project is plain JS.\n- **README:** \"the twelve elements\" becomes \"the elements are fetched\": there are thirteen, and a count there would go stale.\n\nChecks: the lint ratchet goes from 42 to **24** errors (ceiling lowered), the build passes, and all 23 Playwright tests pass.\n",
+            "branch": "workbench/cleanup/unused-3",
+            "title": "Remove what nothing uses; the Buffer page draws the shared timeline"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260929091924-337a6b"
+}

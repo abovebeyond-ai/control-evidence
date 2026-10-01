@@ -1,0 +1,16 @@
+{
+    "action": "e9de9ef45f42c7588d9ba18d131a18dd",
+    "effect": {
+        "detail": {
+            "base": "ff5d165282ca64d1409f8af652fd78f27e231655",
+            "branch": "workbench/chore/remove-legacy-statistics-page",
+            "commit": "10d2c59fd066fb8595c23c37830b0a683e487184",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7485,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "d7e4d2f857e532db9a7ac21894379b43",
+    "effect": {
+        "detail": {
+            "base": "05ae0c81765426e71cb739d4f781e13bacfcad7d",
+            "branch": "workbench/cluster-follows-new-old",
+            "commit": "b7cc29c623bc949bd8b2b1d19413db793675355b",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7389,
+    "verdict": "ALLOW"
+}

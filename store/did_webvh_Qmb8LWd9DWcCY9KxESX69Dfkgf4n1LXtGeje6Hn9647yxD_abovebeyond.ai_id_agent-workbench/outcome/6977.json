@@ -1,0 +1,16 @@
+{
+    "action": "ccb853184ef4125a42b269af1a2f9cc7",
+    "effect": {
+        "detail": {
+            "base": "d2335b5e32bf52705a79f257a641cad8a749bc14",
+            "branch": "workbench/net-binnen-titel",
+            "commit": "df5764c7965c9ab3dad649195171e1c14b8ef5e9",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6975,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "e381d9699730dc8685f627a6b0fbfb6d",
+    "effect": {
+        "detail": {
+            "base": "7c300da33fc861093d54471acaaae558c1ceecae",
+            "branch": "workbench/cleanup/remove-packages-app",
+            "commit": "f3a678c11ca818863728f025c978be74151be934",
+            "files": 35,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7059,
+    "verdict": "ALLOW"
+}

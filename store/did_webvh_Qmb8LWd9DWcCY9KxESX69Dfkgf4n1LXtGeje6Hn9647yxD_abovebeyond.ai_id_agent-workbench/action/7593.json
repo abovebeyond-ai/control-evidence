@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "24c78b497bc0726a43e6c6646e31433b51f0ab37",
+            "branch": "workbench/auth/reset-sent",
+            "files_sha256": "737a8c6303263c77288f9d37451dc32f6e01e769d7b4212b116cfe98cdf4964d",
+            "message": "After a reset request, a confirmation that reads as one: check your mail"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260930171806-9df14b"
+}

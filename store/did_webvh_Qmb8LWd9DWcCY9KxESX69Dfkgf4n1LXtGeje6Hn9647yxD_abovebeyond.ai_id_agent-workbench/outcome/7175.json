@@ -1,0 +1,16 @@
+{
+    "action": "ce82e916f501d344b531e85ebfed5ac6",
+    "effect": {
+        "detail": {
+            "base": "fec26b4fadbbc377d9b94886bc96d74e6631d5e4",
+            "branch": "workbench/sanity/plain-ids",
+            "commit": "adbb044e86ce0c21ed56fd56e186e8cacac2ddec",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7173,
+    "verdict": "ALLOW"
+}

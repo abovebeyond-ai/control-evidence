@@ -1,0 +1,16 @@
+{
+    "action": "fe7cd2d71e76614354b67cf198e58bd1",
+    "effect": {
+        "detail": {
+            "base": "8f1f0ba735fe56cd3638740b9498cfaeb795c9b9",
+            "branch": "workbench/year-summary-judges",
+            "commit": "cff06c5424ffb32cebb8c89dac943f3cb5301ae3",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7089,
+    "verdict": "ALLOW"
+}

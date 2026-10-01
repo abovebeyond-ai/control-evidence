@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9e547735c0d54bbb67a203108db1758d21e68123",
+            "branch": "workbench/feat/the-vision",
+            "files_sha256": "85f164591269f37d6dcd88aa7aedfff5027680fafe06b06e1ab6df7647c1f59d",
+            "message": "The vision: the network, the garage's own site as front door, and Plus"
+        },
+        "resource": "stocklistdealer-eu/website"
+    },
+    "run": "workbench-20260929105353-b61832"
+}

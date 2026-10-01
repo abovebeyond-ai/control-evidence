@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "PR 5a uit de kwaliteitsreview: opruimen. Niets verandert aan wat de app doet voor de ploeg of het bureau.\n\n## Weg\n\n- `resources/views/welcome.blade.php` (Laravel-standaard, geen route) en `partials/corrected-mark.blade.php` (nergens ingevoegd).\n- `CheckDeployment::toMegabytes` (niet gebruikt).\n- `anthropic-ai/sdk`, en daarmee `php-http/discovery` en `standard-webhooks/standard-webhooks`. Niets roept het nog aan sinds de opnameweg weg is.\n\n## Verhuisd\n\n- `laravel/pint`, `mockery/mockery` en `laravel/pao` naar `require-dev`. Het zijn testgereedschappen en ze gingen mee naar productie. Versies ongewijzigd, op een patch van pint na (1.32.0 naar 1.32.1).\n\n## Rechtgezet\n\n- **`BuildStamp` in een worktree.** In een gekoppelde worktree staat `HEAD` in een eigen git-map en de takken in de gedeelde (`commondir`); die wordt nu mee gelezen. `builtAt` komt van de ref die bewoog, want `git pull` raakt `HEAD` niet aan. `ElixirController` valt voor de commit terug op dezelfde lezer, in plaats van een tweede, zwakkere. Dit is een kopie van `elixir-laravel`, dus dezelfde fix hoort daar ook.\n- **Commentaar en uitvoer die nog een terugval op opnemen beloofden:** `RecordDay`, `ConversationController`, `conversation.js`, `CatalogueLookup` (er is geen queue-worker meer), `WorksheetPrompt`, en een test die een `WorksheetReader` noemde. Geschiedenis (\"verdween met de opnameweg\") is blijven staan; enkel wat als huidig gedrag gelezen werd, is aangepast.\n- **`werkfiches:check`** noemt een uitgeschakeld gesprek nu een probleem in plaats van \"alles loopt via opnemen\".\n- **DEPLOY.md:**\n  - PHP 8.4 in plaats van 8.3 (`composer.json` vraagt `^8.4`).\n  - Een stap om Bouwsoft te koppelen.\n  - De meting heet `conversation`, niet `gesprek`.\n  - Het token van Elixir staat in `/home/elixir/elixir-secrets/app-tokens/` op de box van Elixir, niet op de hub-box die er niet meer is.\n- **CI:** de testworkflow krijgt enkel leesrechten. Commentaar over audio in `test.yml` en `phpunit.xml` is aangepast.\n\n## Getest\n\n2 nieuwe tests voor `BuildStamp` (een worktree gelezen via zijn gedeelde git-map, en packed refs met de tijd van de ref). **De volledige suite is 160 van 160 groen, voor het eerst ook in een worktree.** De frontend bouwt en de 10 JS-tests slagen.\n\n## Niet in deze PR\n\n`.env.example` noemt nog de oude hub-box en mist `REFERENCE_SOURCE`, `SITES_*` en `BOUWSOFT_AUTH_SERVER`: dat bestand kon ik vanuit deze sessie niet aanpassen.\n",
+            "branch": "workbench/tidy",
+            "title": "Opruimen: wat dood is weg, wat niet meer klopt rechtgezet"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260930130259-e32481"
+}

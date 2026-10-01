@@ -1,0 +1,16 @@
+{
+    "action": "710d4fabdc0cd2e2c006abde2fdc4a87",
+    "effect": {
+        "detail": {
+            "base": "3a338af45954acb3e57712a6bc248b8889f89d37",
+            "branch": "workbench/class-progress-judges",
+            "commit": "37917617f8a4491e0b66a3e807a58abdb4e2a4c0",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7035,
+    "verdict": "ALLOW"
+}

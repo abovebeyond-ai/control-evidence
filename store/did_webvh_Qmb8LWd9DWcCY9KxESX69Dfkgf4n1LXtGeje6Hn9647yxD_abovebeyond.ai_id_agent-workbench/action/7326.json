@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Een levensbeschouwelijk vak dat de superbeheerder maakte via `/superadmin/levensbeschouwelijke-vakken`, kwam nooit op een rapport. `PhilosophyOfLifeCourseService::create` gaf alleen een naam mee. De cluster kreeg zo `official` 0, en haar eindterm kreeg geen type en geen curriculum: `attainment_level_type_id`, `new` en `old` bleven leeg. Het rapport houdt een eindterm alleen bij als ze gemarkeerd is voor het curriculum van de klas, en telt alleen de types die het aanvaardt.\n\nDe zeven vakken die er al waren, zijn ooit rechtstreeks in de databank gezet, en die hebben die velden wel. Het vak Interlevensbeschouwelijke dialoog is op 30 september om die reden met een script aangemaakt, in dezelfde vorm als niet-confessionele zedenleer, en niet via het scherm.\n\n## De wijziging\n\n- **`PhilosophyOfLifeCourseService::create`** maakt een offici\u00eble cluster, met een eindterm van type vakinhoud, niveau 1, voor het oude en het nieuwe curriculum.\n- **`PhilosophyOfLifeCourseControllerTest::a_course_made_here_is_shaped_like_the_existing_ones`** maakt een vak via het scherm en legt het naast die vorm.\n- **Regelboek**: nieuw hoofdstuk B7 Levensbeschouwelijke vakken, met \u00e9\u00e9n regel.\n\n## De rechter\n\nZonder de curriculumvlaggen faalt de nieuwe test. Volledige suite op MariaDB, PHPStan zonder fouten.\n",
+            "branch": "workbench/course-shape",
+            "title": "Een nieuw levensbeschouwelijk vak komt op het rapport"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930070058-783ab0"
+}

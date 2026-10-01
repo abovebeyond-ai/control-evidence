@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "De pagina Gebruik laadde traag: ze rekende alles uit voor ze iets toonde. Gemeten op de kopie van 19 augustus 2026, zonder cache, voor \u00e9\u00e9n school en een schooljaar: de vier cijfers bovenaan 2,2 tot 2,5 s, de scores per week 2,1 tot 2,3 s, de verdeling 2,5 tot 2,9 s, de uren 2,4 tot 3,0 s en door de jaren 9,6 tot 10,7 s. Samen tot twintig seconden voor er iets op het scherm stond. De tabel per school duurde 0,07 s.\n\n## Wat verandert\n\n- De pagina toont meteen het schooljaar, de school, de koppen en de tabel per school, en rekent zelf geen cijfers meer uit.\n- De vijf delen (de vier cijfers, de scores per week, de verdeling, de uren, door de jaren) zijn elk een Livewire-component `Usage\\Part` met `#[Defer]`: ze laden na de pagina, elk in een eigen verzoek en dus tegelijk. Tot een deel er is, staat de lege vorm ervan in dezelfde kaart, zodat de pagina niet verspringt; de vier cijfers tonen al hun titel.\n- Een verzoek voor een deel gaat niet door de middleware van de route. Elk deel vraagt daarom zelf of een beheerder of superbeheerder kijkt, en rekent voor de school die bovenaan gekozen is, zoals de pagina zelf (R B8-1).\n\nMet een warme cache laadt elk deel in een oogwenk; zonder, zie je de delen binnenkomen in plaats van een witte pagina.\n\n## Regels\n\nNieuwe sectie B8-3, \"Hoe de pagina laadt\": R B8-3.1 (de pagina toont zich meteen, elk deel laadt apart) en R B8-3.2 (elk deel vraagt zelf wie kijkt), elk met een test. De tests die de cijfers van de pagina lazen, lezen ze nu uit de delen.\n\n## Nagekeken\n\n- `TheUsagePageLoadsInPartsTest`: de pagina toont de vijf lege vormen en rekent niets (geen query per week, niets in de cache); elk deel laadt zijn cijfers, ook zonder schooljaar; een leerkracht en een leerling krijgen 403, een onbekend deel 404.\n- Zes mutanten, alle zes opgevangen: de pagina die weer rekent, de delen die mee met de pagina laden, een deel dat niemand vraagt, een deel dat voor een andere school rekent, geen lege vorm, elke naam als deel.\n- De volledige suite lokaal op MariaDB: 1319 van 1320 groen. BuildStampTest faalt enkel in een worktree.\n- Pint en PHPStan: geen fouten.\n",
+            "branch": "workbench/usage-loads-in-parts",
+            "title": "Gebruik toont zich meteen en laadt zijn cijfers deel per deel"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930133145-e7073e"
+}

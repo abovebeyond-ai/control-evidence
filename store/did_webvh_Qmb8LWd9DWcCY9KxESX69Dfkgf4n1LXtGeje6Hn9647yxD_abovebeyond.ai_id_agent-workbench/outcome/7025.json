@@ -1,0 +1,16 @@
+{
+    "action": "8bf7aaf83307f79d606ab7161e37ed19",
+    "effect": {
+        "detail": {
+            "base": "6442e99e50dae02d63a8768d6d38c8a5062a89c8",
+            "branch": "workbench/fix/withdraw-the-cars-the-portals-never-heard-about-2",
+            "commit": "4d17289c72907adb58d594d3ec16958ea849b736",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7023,
+    "verdict": "ALLOW"
+}

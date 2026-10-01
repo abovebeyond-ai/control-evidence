@@ -1,0 +1,16 @@
+{
+    "action": "bd67081eb6fdfb818a2294825b9c361a",
+    "effect": {
+        "detail": {
+            "base": "40860d9c7be0d30a110849a78b6d59cc2f0abc0d",
+            "branch": "workbench/home/four-fixes",
+            "commit": "847f6f1953c75f28a92f8afd1154dd0eab0928f5",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7719,
+    "verdict": "ALLOW"
+}

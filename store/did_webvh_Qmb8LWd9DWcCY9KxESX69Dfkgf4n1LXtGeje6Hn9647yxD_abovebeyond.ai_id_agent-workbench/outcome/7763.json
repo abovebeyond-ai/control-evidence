@@ -1,0 +1,16 @@
+{
+    "action": "fbef73319907e0ad5c3a196e0061efd5",
+    "effect": {
+        "detail": {
+            "base": "fe69ed25990d573dd9c7b5e112ff830b51595c82",
+            "branch": "workbench/by-question-is-a-switch-when-entering",
+            "commit": "e46d0543c96e48d81d30100384bc45de0bf06c17",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7761,
+    "verdict": "ALLOW"
+}

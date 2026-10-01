@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "In de lijst waarin je eindtermen of clusters aan een project koppelt, stond naast elke naam een pijltje. Het haalde de begrenzing op twee regels (`line-clamp-2`) van de naam weg. Bij een naam die al op \u00e9\u00e9n of twee regels past, en dat zijn de meeste, deed het pijltje niets, maar het stond er wel op elke rij. Begrenzen hielp ook niet om de rij laag te houden: de cluster ernaast loopt vrij over vijf tot zeven regels.\n\n## Wat verandert\n\n- De naam staat volledig, zonder begrenzing en zonder pijltje. Een klik op de naam koppelt of ontkoppelt nog altijd, zoals voordien.\n\n## Nagekeken\n\n- `SearchDropdownAttainmentLevelTest`: een rij toont de volledige naam, zonder `line-clamp-2` en zonder het pijltje. De test kwam eerst en faalde op de begrenzing. De andere tien tests van de lijst blijven groen.\n- De volledige suite lokaal op MariaDB, met `APP_DEBUG` aan zoals de CI: 1357 van 1358 groen. BuildStampTest faalt enkel in een worktree.\n- Pint: geen fouten.\n",
+            "branch": "workbench/attainment-level-names-in-full",
+            "title": "De naam van een eindterm staat volledig in de lijst om te koppelen"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001050422-fda94e"
+}

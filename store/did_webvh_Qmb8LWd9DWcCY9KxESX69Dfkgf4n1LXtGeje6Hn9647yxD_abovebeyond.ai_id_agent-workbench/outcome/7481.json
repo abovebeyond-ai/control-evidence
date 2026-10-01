@@ -1,0 +1,16 @@
+{
+    "action": "9cbcfbd017c12b7c00680ae90eb5c5e7",
+    "effect": {
+        "detail": {
+            "base": "75c48e87670843a534c78ba613046da532ff9152",
+            "branch": "workbench/usage-loads-in-parts",
+            "commit": "d80d3a30f7f656c8ebeb32a542baaa613ddc45c2",
+            "files": 16,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7479,
+    "verdict": "ALLOW"
+}

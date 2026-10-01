@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fe69ed25990d573dd9c7b5e112ff830b51595c82",
+            "branch": "workbench/pseudonymise-without-faker",
+            "files_sha256": "e959a4f12c4d00881daaece2ed4a838c806bd06b9c1b1c3d50dfefce030735c7",
+            "message": "Pseudonimiseren zonder Faker, waar de kopie landt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001061221-355055"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "New public trends get their links automatically, judged the same way as the 49 of 2026-09-28.\n\n**How**\n- `packages/pipeline/link-trends.mjs` takes each public trend without a run in `trend_link_runs`, at most ten per run.\n- For each one: its ten nearest neighbours by shared concepts. Twins (half the signals shared) are not neighbours.\n- The deepen model (Opus 5.5) judges the neighbours from the new trend's side.\n- Every proposed link is judged again from the other trend's side, with only the new trend as neighbour.\n- Only a verdict both sides give is written (`setLink`). A trend is judged once, so a run only pays for what is new.\n- `linksFor` takes the judge as a parameter, so the agreement rule can be tested without a model.\n\n**Schedule:** daily at 08:30 UTC in `ops/crontab`, after the writer (07:00), guarded against overlapping itself.\n\n**After merge:**\n1. `node packages/pipeline/link-trends.mjs --mark-judged` records the current 53 public trends as judged. They were on 2026-09-28, so they aren't paid for again.\n2. `bin/crontab-install --apply` installs the new line.\n\n**Cost:** one call per new trend plus one small call per proposed link, about $0.20 to $0.60 per new trend at list price.\n\nChecks: new `test/link-trends.test.mjs` (neighbours without twins and strangers; only agreement is written; a different kind from the other side is no link either); 962 tests, 0 failures.\n",
+            "branch": "workbench/trends/auto-links",
+            "title": "New public trends get their links once a day, judged from both sides"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929074131-acf449"
+}

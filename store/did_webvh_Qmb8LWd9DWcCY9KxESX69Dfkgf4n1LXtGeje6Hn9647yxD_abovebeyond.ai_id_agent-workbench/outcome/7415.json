@@ -1,0 +1,16 @@
+{
+    "action": "9fe7133a0e9523c9c4d0ec53a45b340c",
+    "effect": {
+        "detail": {
+            "base": "9814c4a50aa2ec862d3f4403953c824893799eba",
+            "branch": "workbench/the-old-curriculum-is-over",
+            "commit": "6c58e009359de366e49284f9450300fcf9a9526f",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7413,
+    "verdict": "ALLOW"
+}

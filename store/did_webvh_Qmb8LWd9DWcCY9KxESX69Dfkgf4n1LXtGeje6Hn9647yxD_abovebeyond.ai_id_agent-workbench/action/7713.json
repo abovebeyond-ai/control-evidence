@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "027a236e7f3880b6234dabd6312905edb0824b10",
+            "branch": "workbench/feat/insights-design-system",
+            "files_sha256": "df83dcc7ba04ffd655d9b9b6ea6be2423f250f45422f794fa3746cab975132e3",
+            "message": "A design system for insights screens, and the garage's Inzichten redrawn with it"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930192724-ce66f0"
+}

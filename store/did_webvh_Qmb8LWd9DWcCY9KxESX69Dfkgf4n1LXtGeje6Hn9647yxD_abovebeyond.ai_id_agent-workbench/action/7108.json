@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Het open doel \"werven uit Bouwsoft\", en de eerste naad uit `docs/architecture.md` (#41): de werven komen binnen via `App\\Reference\\ReferenceSource`, en wat daarvoor zit weet niet dat het Bouwsoft is.\n\n## Wat erin zit\n\n- `ReferenceSource` (koppelvlak), `BouwsoftReferenceSource`, `SiteSync`, en `php artisan sites:sync [--dry]`, dagelijks om 05:15.\n- Migratie: `sites.external_id` (uniek, `bouwsoft:<id>`) en `sites.client`.\n- De opdrachtgever komt mee in de werflijst van de prompt en in de spellinghint: een werf wordt vaak bij de klant genoemd (\"bij Stabil\").\n- De seeder laat de werven met rust zodra er een gesynchroniseerd is.\n\n## Welke werven\n\nLopend is niet af te lezen uit het project: GLK sluit er geen af (`completed`, `active` en `date_completed` worden niet bijgehouden). Dus: geboekt in de nacalculatie (uren, machines of materiaal) in de laatste 60 dagen, of aangemaakt in de laatste 30 dagen. Gemeten op 29 september: 161 geboekt, 65 aangemaakt, samen rond de tweehonderd. De vensters staan in `config/worksheets.php`.\n\n## Wat het niet mag breken\n\n- De vier werven van de weegbrieven staan in Bouwsoft onder hetzelfde nummer (`P-20250310` hier, `20250310` daar). Ze worden de eerste keer op nummer herkend en houden hun rij, dus elke fiche die ernaar wijst ook.\n- Wat niet meer loopt gaat uit, nooit weg.\n- Een bron die niets teruggeeft of een pagina weigert verandert niets.\n- Alleen werven die de sync zelf binnenbracht worden uitgezet; andere worden gemeld.\n\n## Om op te letten\n\nDe werflijst gaat mee in elk gesprek. Van vier naar zo'n tweehonderd werven wordt ze rond de 15.000 tekens. De sync print de lengte na elke run; is dat te veel, dan worden de vensters kleiner.\n\n## Na de merge\n\n`php artisan migrate --force` als het deployscript het niet doet, dan `php artisan sites:sync --dry` om te kijken, en `php artisan sites:sync`.\n\n## Getest\n\n10 tests: een geseede werf houdt haar rij en neemt de Bouwsoft-naam, een hernoemd project wordt op id herkend, een werf gaat uit en weer aan, een werf die de sync niet binnenbracht blijft staan, een lege bron en een droge run veranderen niets, het commando slaat een installatie zonder bron over, Bouwsoft telt geboekt of recent aangemaakt (en niet zonder projectnummer), en een geweigerde pagina geeft een fout in plaats van een halve lijst. Volledige suite groen op `BuildStampTest` na, die alleen in een worktree faalt.\n",
+            "branch": "workbench/sites-from-bouwsoft",
+            "title": "De werven komen uit Bouwsoft, langs de eerste naad"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20260929095744-280fd7"
+}

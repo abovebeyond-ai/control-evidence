@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The pipeline diagram (`PipelineFlow.jsx`) drew three things that are not there.\n\n- **A \"Skills + Prompts\" box** with dashed arrows into process and suggest. It counted `data.skills`, which the pipeline has not sent since Sanity, so it always showed 0; the table behind it was dropped on 2026-09-29. The prompts are code (`classify-prompt.mjs`, the Gentells Standard), and the taxonomy box already stands for that.\n- **A \"reader notes\" arrow** from publish back to suggest. Readers' feedback is stored by the site in its own database, and nothing carries it to the pipeline; the pipeline's own `reader_feedback` table held one row and had no reader.\n- **\"topics \u00d7 7 gens \u00d7 13 regions\"** under the taxonomy. Since the Gentells Standard it is 3 generations and 6 lifestages: the box now says \"topics \u00d7 3 generations \u00d7 6 lifestages \u00d7 13 regions\".\n\nThe \"your edits improve the classifier\" arc stays: editor corrections do reach classify (gentells-pipeline#237 removes the self-made ones that were crowding them out).\n\nLint at the ceiling (24), build ok, Playwright 24 of 24.\n",
+            "branch": "workbench/cleanup/flow-as-is",
+            "title": "The pipeline diagram draws what is there"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20260930051016-957d58"
+}

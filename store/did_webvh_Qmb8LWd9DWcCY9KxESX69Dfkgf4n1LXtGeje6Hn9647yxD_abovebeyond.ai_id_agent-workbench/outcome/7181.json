@@ -1,0 +1,16 @@
+{
+    "action": "6e70e0b77d4c736f75999557ea99c418",
+    "effect": {
+        "detail": {
+            "base": "7fab91e6384b3978414e25330a40c405c6016ae0",
+            "branch": "workbench/sanity/plain-tags",
+            "commit": "2b516e1b690652579993a5ab03900ea09eae9c26",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7179,
+    "verdict": "ALLOW"
+}

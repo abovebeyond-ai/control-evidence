@@ -1,0 +1,16 @@
+{
+    "action": "f998a6a52e8ae0ef92a665513c0c86b5",
+    "effect": {
+        "detail": {
+            "base": "9236ebd408e9a0a9f7b9d6f31c177add387bcf27",
+            "branch": "workbench/fix/a-transport-keeps-its-dimensions",
+            "commit": "b94de48df21ed74074707a788cbb5fbc997d7a85",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7236,
+    "verdict": "ALLOW"
+}

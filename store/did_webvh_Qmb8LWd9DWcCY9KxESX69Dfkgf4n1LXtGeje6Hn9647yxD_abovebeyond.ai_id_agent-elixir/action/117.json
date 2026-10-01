@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"league\\/commonmark\",\"to\":\"2.10.2\",\"lock\":\"composer.lock\"}]"
+            },
+            "packages": 1,
+            "plan_sha256": "bc8b3c2682ca1e4f1a5c473cc24bcb490812852bb3a2057079ae79f137304eb3",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "01M3SHRFT60JH36764BGGEV439"
+}

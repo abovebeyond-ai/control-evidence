@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7c300da33fc861093d54471acaaae558c1ceecae",
+            "branch": "workbench/cleanup/dead-routes-and-tmp",
+            "files_sha256": "92fdc9421c76446964079129fe6fb20d4a94efb266fa921cefa0e1cd28cc9573",
+            "message": "Remove what nothing calls or reads; test databases clean up after themselves\n\nEvery test run on the box left its temporary databases in /tmp (4,655 by 2026-09-29,\n2.2 GB): most test files never call cleanup(), and the db-path fallback never removed\nits own. Both now go when the process exits, and auto-deploy sweeps what a timed-out\nrun leaves.\n\nGone because nothing calls or reads them: twelve server routes (/graph-data,\n/system-map with system-map.mjs, /source-analytics, /apify-usage, /explain, /phases,\n/drive-ingest, /report-audit, four /quality routes), eight one-off scripts, eleven\nexports, and in self-improve the prompt optimisation (it promoted variants nothing\nread), the benchmark, agent benchmark and debate (nothing ran them)."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20260929091307-c29d44"
+}

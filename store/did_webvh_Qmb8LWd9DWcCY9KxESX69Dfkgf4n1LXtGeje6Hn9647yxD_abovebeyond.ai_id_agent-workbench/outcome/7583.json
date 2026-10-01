@@ -1,0 +1,16 @@
+{
+    "action": "f9cfe0cfedc8e317d91c4cb512d96ac9",
+    "effect": {
+        "detail": {
+            "base": "e156506cf0b1e27d60f42302e15fc05b23001945",
+            "branch": "workbench/dependency-audits-green",
+            "commit": "75471f225756e0a9d9644430a4406e18de237fb2",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7581,
+    "verdict": "ALLOW"
+}

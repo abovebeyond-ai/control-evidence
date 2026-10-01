@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6442e99e50dae02d63a8768d6d38c8a5062a89c8",
+            "branch": "workbench/fix/one-model-per-name-per-make",
+            "files_sha256": "58567e8b34e3f8d62e50ea57a87f8545636c902513c9ed98d90fc5cd9b8eb295",
+            "message": "One model per name per make, and a trim is not a model"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260929075415-1c13f3"
+}

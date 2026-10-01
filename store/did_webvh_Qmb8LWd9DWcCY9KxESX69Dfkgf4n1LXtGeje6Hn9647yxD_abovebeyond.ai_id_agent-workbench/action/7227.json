@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "437fcfd661b68fbbe21c5e1556753014d0efdc87",
+            "branch": "workbench/usage-survives-deploys",
+            "files_sha256": "69a53760004b4e5665e0e14c069f75b71fbe6cafc41510bd82124c5abd578404",
+            "message": "De gebruikscijfers overleven een deploy"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260929110037-e63839"
+}

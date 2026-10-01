@@ -1,0 +1,16 @@
+{
+    "action": "254eefedb0f907330830c466cbc93dcb",
+    "effect": {
+        "detail": {
+            "base": "842f5c70b20aa9eb3080c01aafb7b4513f30c76c",
+            "branch": "workbench/feat/withdraw-orphaned-nederland-mobiel-adverts",
+            "commit": "76b613c65fc160bc739542a66da15b0389860aed",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7359,
+    "verdict": "ALLOW"
+}

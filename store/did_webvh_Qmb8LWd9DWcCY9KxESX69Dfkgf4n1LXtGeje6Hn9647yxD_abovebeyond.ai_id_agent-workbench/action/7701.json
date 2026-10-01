@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6b0fb18fc7458fd6c54078c2d0c77f25e7d2c8eb",
+            "branch": "workbench/a-test-by-question-on-screen",
+            "files_sha256": "8a44030a384780b97d6a98594cd5e3c02b2484caa6a6e1fc3a2d79791f92404c",
+            "message": "Een toets per vraag opzetten en ingeven, eerst op staging"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930185515-a7b608"
+}

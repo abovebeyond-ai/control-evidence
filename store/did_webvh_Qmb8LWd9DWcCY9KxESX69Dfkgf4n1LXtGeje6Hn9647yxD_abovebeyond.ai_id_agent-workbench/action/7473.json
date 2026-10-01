@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0fd4f9caaa2c02b54f2d6a6ce9b974434224f194",
+            "branch": "workbench/feat/views-per-channel-stacked",
+            "files_sha256": "4110c395d5a0e19df4b25c9aa088642d7d133d04552fb2efb2f8c608ef210afa",
+            "message": "Views per channel: the three car-view channels stacked, the other two as strips under them"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930132433-6caf14"
+}

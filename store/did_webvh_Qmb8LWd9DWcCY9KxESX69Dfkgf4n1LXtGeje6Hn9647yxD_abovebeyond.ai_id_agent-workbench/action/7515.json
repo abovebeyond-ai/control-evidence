@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f9bac8ad0cfae9c1b2e19b880d14cbdfbd355857",
+            "branch": "workbench/group-by-as-text",
+            "files_sha256": "07fcbdd1626b3450a3f151b3f8d699c00b71b79d235c5a2f08e4735f617328da",
+            "message": "De lijst van projecten: graad, stroom en klas samen, groeperen in woorden"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930142219-65c42c"
+}

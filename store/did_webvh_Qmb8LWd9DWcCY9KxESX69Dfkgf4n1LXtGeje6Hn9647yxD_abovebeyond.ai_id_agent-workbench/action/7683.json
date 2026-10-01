@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a91304b27985471c15f54e2d7acc815753af695",
+            "branch": "workbench/feat/rights-follow-the-garage-modules",
+            "files_sha256": "ccabdba3b91277038a90c139c738964514bb202ea30c0ddada0b3576fae3d74b",
+            "message": "Rights follow the garage's modules, behind a staged flag"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20260930184724-097db9"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d2335b5e32bf52705a79f257a641cad8a749bc14",
+            "branch": "workbench/rustiger-titels",
+            "files_sha256": "10e3a58b7f40cb906e4682846002e3b77a68aa6e8bd5175ad58cd1c0b8182f24",
+            "message": "Sectietitels in gewone kast, kapitalen alleen met rood accent"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20260929074116-b5dffb"
+}

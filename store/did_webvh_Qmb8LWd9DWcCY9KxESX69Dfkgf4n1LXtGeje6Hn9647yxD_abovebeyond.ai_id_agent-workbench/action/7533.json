@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d5766966273b3886e8d598bb71d128e07cc7c3ef",
+            "branch": "workbench/entry-by-class-group",
+            "files_sha256": "0ce1ec20ecfd7cda0514458b29fa0e7815e5287a527bdd831e983074a323f64f",
+            "message": "Scores ingeven per klasgroep in een gedeeld project"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20260930144201-b4e640"
+}

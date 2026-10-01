@@ -1,0 +1,16 @@
+{
+    "action": "d847d729004f25ca27c83c53d719c746",
+    "effect": {
+        "detail": {
+            "base": "3980ea8c196a9d6eff33457e08f87cde042c6b9e",
+            "branch": "workbench/fix/french-screens-speak-french",
+            "commit": "71c11fd37cc76a90ca2d40cfdcd166491f30b799",
+            "files": 48,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7263,
+    "verdict": "ALLOW"
+}
