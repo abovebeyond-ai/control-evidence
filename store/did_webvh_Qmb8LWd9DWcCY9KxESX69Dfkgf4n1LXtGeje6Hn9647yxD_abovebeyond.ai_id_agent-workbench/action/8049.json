@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d2452c6979070a73adc5fc14c8a4becb8b33532",
+            "branch": "workbench/feat/transport-paid-by-bank-transfer",
+            "files_sha256": "f72d9d856ae667b3ad3cfc0198414085d2032d80a19503ffaeb1a99ac9d87dd9",
+            "message": "Record a transport paid by bank transfer, outside Mollie"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002053439-dcec61"
+}

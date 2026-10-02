@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6b1d698158d3e21239c67f6879e55d3d9a6c7061",
+            "branch": "workbench/fix/transport-conditions-follow-the-switch",
+            "files_sha256": "c8a509aeb673dc99a2692d3f845951d964301b047b2bbfe97734e73bbca77bee",
+            "message": "Transport conditions tab follows the garage's transport switch"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001090236-0116ee"
+}

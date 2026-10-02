@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b2ec7f7ed70e12bcad3364443bb0a85496884be4",
+            "branch": "workbench/fix/planning-steps-are-ours",
+            "files_sha256": "0150f0065f5984fb19eb07a80f962f934b911933662b352e82ab671fab9f1538",
+            "message": "Planning steps of a paid transport are set by a platform administrator only"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001113916-2624a9"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "99f0440db5d15974d8a1cd1b46f5fa31",
+    "effect": {
+        "detail": {
+            "base": "b970e02034a7a8ab68c1ab19d19bc1ed169c894c",
+            "branch": "workbench/build-stamp-dates-the-branch",
+            "commit": "8aede5c6aa14aa8249acb82fcb5b687dc247aa3c",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8079,
+    "verdict": "ALLOW"
+}

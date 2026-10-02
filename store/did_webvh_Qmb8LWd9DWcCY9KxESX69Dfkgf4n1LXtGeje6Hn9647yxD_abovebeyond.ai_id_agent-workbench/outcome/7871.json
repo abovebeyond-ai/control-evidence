@@ -1,0 +1,16 @@
+{
+    "action": "44d2ddde75340e7b48239f87a69b64e9",
+    "effect": {
+        "detail": {
+            "base": "81b06e384cb3891859dc1e969873de3851d005a3",
+            "branch": "workbench/fix/cut-out-gets-its-sizes",
+            "commit": "351f5ae0733b2fd0478f5ed34e49db807a6d84e0",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7869,
+    "verdict": "ALLOW"
+}

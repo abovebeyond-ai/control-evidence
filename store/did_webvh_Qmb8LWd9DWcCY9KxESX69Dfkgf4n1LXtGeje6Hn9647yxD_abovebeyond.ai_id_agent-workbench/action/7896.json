@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Privacy policy\n`/privacy` renders `resources/legal/privacy-en.md` through `LegalController`, like the Terms.\n- **What it is based on:** what the site actually stores and who receives it. That is the account, the subscription references, the newsletter (with the double opt-in of #155), contact messages, leads to Clay, usage records, connected assistants and API keys, feedback, sessions, the necessary cookies, and the processors (Hetzner, Resend, Clay, Mollie once live, Nightwatch).\n- **Status:** it carries the same \"Version 1.0, draft for legal review\" line as the Terms.\n\n**Where it is linked:**\n- the footer, next to the Terms;\n- the cover, next to the Terms;\n- the consent line on the contact form, which pointed to section 13 of the Terms until now;\n- every newsletter form, under the field.\n\nIt is open behind the cover, because the cover asks for an email address and should say what happens to it. `TermsPageTest` expected no privacy link in the footer, \"until the page exists\". It now expects the link, and expects it to open.\n\n## The colour in the hero arrives with the page\nThe colour layer of the hero was `loading=\"lazy\"`, so the grey loaded first and the colour faded in noticeably later. Now:\n- the colour layer is eager and preloaded with the same priority as the grey one, on the home page and the cover (`$preloadColour`);\n- the colour layer of `collage-band` is eager too.\n\nTests: 340 passing. `/privacy` checked locally.\n",
+            "branch": "workbench/site/privacy-policy",
+            "title": "A privacy policy at /privacy; the hero's colour loads with the page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001101027-8d30b9"
+}

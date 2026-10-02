@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a56955d2fc4646949897d1736a94ff39315e92b",
+            "branch": "workbench/site/prerender-pages",
+            "files_sha256": "98bd6bb684fbab96a6d49be374cd69eaf6401db01d8ed631d0f94eede9f3d32d",
+            "message": "Report pages are ready before the first reader opens them"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002053109-19e19c"
+}

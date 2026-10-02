@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Wat er mis was\n\nOp 1 oktober gaf `/.well-known/build.json` op naviskore.be de commit van die dag (`b970e020`), maar als `builtAt` 2025-11-04T09:53:22. `BuildStamp` nam de wijzigingsdatum van `.git/HEAD`. Bij een verse release, zoals op Forge (staging), wordt dat bestand bij elke deploy geschreven. Een `git pull` ter plaatse, zoals de deploy op Ploi, verzet alleen de tak (`refs/heads/main`). HEAD blijft `ref: refs/heads/main` en houdt de datum van de eerste checkout. Elixir leest deze stempel.\n\n## De oplossing\n\n`builtAt` is nu de laatste van twee datums: die van HEAD, en die van het bestand waaruit de commit gelezen wordt. Dat bestand is de tak (los, of in `packed-refs`), of HEAD zelf als die los staat. Wat dat per geval geeft:\n\n- Ter plaatse gepulled: de datum van de tak.\n- Verse clone: wat het laatst geschreven werd.\n- Losse HEAD: HEAD.\n\n## Tests\n\n- `test_a_pull_in_place_is_dated_by_the_branch`: HEAD van 2025-11-04 en een tak van 2026-10-01 geven 2026-10-01. Op main faalt ze met precies de datum die productie toonde.\n- `test_a_fresh_clone_is_dated_by_what_moved_last` en `test_a_detached_head_is_dated_by_head` leggen de andere twee gevallen vast.\n- Mutanten, allebei gedood:\n  - alleen de datum van de tak: faalt op de verse clone\n  - alleen de datum van HEAD, zoals main: faalt op de pull ter plaatse\n- Volledige suite met `APP_DEBUG=true`: 1373 tests, alleen `test_it_publishes_the_build_stamp_from_the_checkout` rood, en die faalt enkel in een worktree. PHPStan en Pint zonder fouten.\n\nNa een deploy op Ploi hoort `builtAt` op naviskore.be het moment van die pull te tonen.\n\n## Ook elders\n\nDe kopieermodule `abovebeyond-ai/elixir-laravel` heeft dezelfde regel (`filemtime($git.'/HEAD')`), en dus dezelfde verkeerde datum bij elke app die ter plaatse pullt. Die repo zit niet in de grant van deze werkbank, maar dezelfde wijziging past er.\n",
+            "branch": "workbench/build-stamp-dates-the-branch",
+            "title": "De build-stempel dateert een pull ter plaatse naar de tak, niet naar HEAD"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261002064808-39e17f"
+}

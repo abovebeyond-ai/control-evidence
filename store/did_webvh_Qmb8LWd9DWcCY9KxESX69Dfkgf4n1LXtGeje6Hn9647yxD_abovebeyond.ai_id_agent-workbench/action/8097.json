@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "96d275149c56ae0818461263ae91f80d6d0f4c8a",
+            "branch": "workbench/ui/inter-and-three-weights",
+            "files_sha256": "4350cfa0dda3221fe30be98142391e770ed21bc64906c1046801be890dabb20d",
+            "message": "One typeface from our own build: Inter in three weights"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002070054-f68dd2"
+}

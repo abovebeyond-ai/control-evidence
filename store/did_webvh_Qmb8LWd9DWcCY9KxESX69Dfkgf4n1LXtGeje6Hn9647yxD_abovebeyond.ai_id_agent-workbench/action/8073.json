@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3e99e887367af8d9fe1b3d8a328b6d865528849c",
+            "branch": "workbench/pipeline/crons-shape",
+            "files_sha256": "5c1659d9339411ab2f1c151ee518ee068ba824767d43880ef85955a252a50ba1",
+            "message": "The pipeline page reads the crons answer with drift; a calm error page"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002060832-1df23c"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "479d4c11b62dbd782c91ea483cdd7fb38087a8f7",
+            "branch": "workbench/feat/bidding-card-quiet-footer",
+            "files_sha256": "a43f0b04d263187965388694485106f6b8c1808f2248a04eea34447da037959f",
+            "message": "The bidding card invites: a quiet footer with the deadline beside the button, and the toolbar of the other lists"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001105842-357fa3"
+}

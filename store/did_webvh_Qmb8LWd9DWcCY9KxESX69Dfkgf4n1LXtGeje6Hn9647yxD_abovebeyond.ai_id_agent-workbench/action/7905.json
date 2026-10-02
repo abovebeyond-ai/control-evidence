@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2dc4c3f3307b17bf8c6beaa6876528d280c5f42c",
+            "branch": "workbench/site/pricing-monthly",
+            "files_sha256": "371cd28e5258125c652d91ceb8968aa5445e11faf7aada8e07a38a86f61bc0a7",
+            "message": "Pricing and services say one thing, a report every month, and the confirm link lands on its own page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001104604-7b42a1"
+}

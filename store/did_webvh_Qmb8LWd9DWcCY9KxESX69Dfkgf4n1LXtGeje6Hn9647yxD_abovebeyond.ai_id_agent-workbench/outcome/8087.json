@@ -1,0 +1,16 @@
+{
+    "action": "adfba80a071175c3785c67070e3f1ac8",
+    "effect": {
+        "detail": {
+            "base": "b970e02034a7a8ab68c1ab19d19bc1ed169c894c",
+            "branch": "workbench/every-livewire-root-outside-if",
+            "commit": "729cb988bd183c870e5822ca63b6a9621b326b81",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8085,
+    "verdict": "ALLOW"
+}

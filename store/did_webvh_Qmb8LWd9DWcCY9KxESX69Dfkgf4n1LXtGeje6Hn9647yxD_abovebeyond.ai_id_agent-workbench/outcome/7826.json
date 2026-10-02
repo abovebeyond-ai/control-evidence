@@ -1,0 +1,17 @@
+{
+    "action": "5aa39cf74a668d0c9e604b8e7db2257a",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 155,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/Trendwolves/gentells-site/pull/155",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7824,
+    "verdict": "ALLOW"
+}

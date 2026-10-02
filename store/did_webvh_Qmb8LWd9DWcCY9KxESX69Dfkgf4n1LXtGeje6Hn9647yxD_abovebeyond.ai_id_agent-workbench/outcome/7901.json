@@ -1,0 +1,16 @@
+{
+    "action": "80e430bf26a5706ee5b600d1c124b05f",
+    "effect": {
+        "detail": {
+            "base": "9f794bf26394b8233d4e252f02e713f73a48be5c",
+            "branch": "workbench/fix/dutch-says-je-not-u",
+            "commit": "bddf000afa060f67ecd46818355b84373103769d",
+            "files": 37,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7899,
+    "verdict": "ALLOW"
+}

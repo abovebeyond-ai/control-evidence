@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f6083a21ed3b8b7e9e82bf6b34521c1e3d317ff5",
+            "branch": "workbench/chore/remove-the-demo-environment",
+            "files_sha256": "afb15818744f97723ac60668037cad7bc6f49f04c00fd5e5d90c1a26d1e34593",
+            "message": "The demo environment is gone: no second lock on the seal, no reset screen, no flag columns"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001125152-467778"
+}

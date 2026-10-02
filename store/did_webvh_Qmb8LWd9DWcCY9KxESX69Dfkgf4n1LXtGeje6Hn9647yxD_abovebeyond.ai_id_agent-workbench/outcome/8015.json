@@ -1,0 +1,16 @@
+{
+    "action": "ae5249063183fa9a9bc7f8edfa180d5d",
+    "effect": {
+        "detail": {
+            "base": "a15687b41a7f443a6c73376775cef4a5f013445c",
+            "branch": "workbench/fix/one-tooltip-per-bar",
+            "commit": "6199516c8c74fdf5d563a5c30ecfb861f5069b54",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8013,
+    "verdict": "ALLOW"
+}

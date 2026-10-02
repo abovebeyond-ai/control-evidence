@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d7868d65a7ec1773871926d173fca4e60803332a",
+            "branch": "workbench/chore/no-mail-when-we-help-in-an-account",
+            "files_sha256": "02d2ff892b4670fa0b27b22b27008b595499eb6a534747506e2946725849702e",
+            "message": "No mail when we help inside a garage's account"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001105127-5880b2"
+}

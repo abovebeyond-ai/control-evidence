@@ -1,0 +1,16 @@
+{
+    "action": "de28785c7a30ef9f0fdcd8d537f410a8",
+    "effect": {
+        "detail": {
+            "base": "6ffab555dc0ad38bcc273d7b835bfebfcdf8f398",
+            "branch": "workbench/feat/insights-cars-per-portal",
+            "commit": "c9fe3eb744ba7d3c9a9b317a211b7ddc5a1a1032",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7833,
+    "verdict": "ALLOW"
+}

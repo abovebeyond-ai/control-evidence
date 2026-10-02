@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nRemoves the notification mail a garage's administrators received when a platform administrator started working inside its account (\"Stocklist-beheer is ingelogd in jouw account om te helpen\").\n\nThe mail only left with the `delegation_opt_in` flag on. It is not needed: the record of a delegated session is the trail (`delegation_logs`, `delegation_actions`) and the delegation log screen, and those do not depend on the flag.\n\n## Removed\n\n- `App\\Mail\\DelegationStartedMail` and its view `mails/delegation_started.blade.php`\n- `Delegation::notifyDealer()` and its call in `Delegation::start()`, with the try/catch around it\n- `Delegation::dealerAdmins()`: the mail was its only caller\n- the five `delegation.mail_*` translation keys, in nl, en, fr and de\n- the PHPStan baseline entry of the removed Mailable\n\n## Reworded, because the text promised the mail\n\n- `delegation.settings_help` (the help under the consent switch) no longer says \"you receive an e-mail the moment they start\", in the four languages\n- the description of the `delegation_opt_in` flag on Beheer > Functies no longer says whoever looks in is reported to the administrators, in the four languages\n- docblocks in `Delegation.php`, the comment in `config/features.php`, and a comment in `DealerController` that pointed at `dealerAdmins()`\n\n## Unchanged\n\nEverything else of delegated access: the trail, the bar and the way back, the five refusals, the dealer-level button and its choice of user, and the consent mechanism (`allow_delegated_access` with the `delegation_opt_in` flag). `Delegation::isDealerAdmin()` stays; it decides who may switch the consent and ranks the candidates.\n\n`stocklist:mail-preview` had no entry for this mail.\n\n## Business rules\n\n- R P2-11.6 (the mail) is set to `vervallen`; the number stays reserved.\n- R P2-11.4 (the trail) now says that the trail is the only notice: nobody is mailed, with the flag on or off.\n- The introduction of P2-11 no longer says the dealer hears about it at once.\n- The open point `meekijken-opt-in-zichtbaar-maken` drops the mail from its title and its to-do.\n\n## Tests\n\nThe two tests that asserted the mail are replaced by:\n\n- `test_starting_a_delegation_mails_nobody`, with the flag on and with the flag off: the delegation runs, the trail is written, nothing is sent or queued\n- `test_a_dealer_without_an_administrator_is_not_mailed_on_its_general_address`\n\nBoth carry `@rule P2-11.4`.\n",
+            "branch": "workbench/chore/no-mail-when-we-help-in-an-account",
+            "title": "No mail when we help inside a garage's account"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001105127-5880b2"
+}

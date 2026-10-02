@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Reports\nThe next reports now run edge to edge under the feature, like the feature itself. There is a narrow gap between them, and no margin or heading around them. They used to sit in a padded frame under a band that ran to the edge. One line below the reports now reads \"All reports and what comes next\".\n\n## Numbers\nWhat grows is now shown as a lower bound: rounded down to two significant digits, with a plus.\n- Signals: 230,517 becomes 230,000+.\n- Active sources: 100+.\n- Platforms: 16+.\n\nThe count of live trends stays exact, because a visitor can open and count those.\n\nThe caption was \"Read from TikTok, Douyin and Bilibili ... Counted from the live graph, not from a deck.\" The second sentence read as defensive. Douyin and Bilibili are also off now (their past signals are still in the data). It now names kinds of sources and regions: \"Social video, search, forums, news media, research and trend reports, read across Europe, the Americas and Asia.\"\n\n## Why Gentells?\nAs a list on white, this section read flat. It now sits on the colour collage, under an even veil (`collage-band` gets `even`, so text on the right stays readable). Each comparison is a contrast:\n- what others do, small and struck through;\n- what we do, large, with one word in mint.\n\n## The cover says who is behind it\nFortiGuard (Fortinet) classes gentells.com as Phishing, and a company network blocked it on 1 October. The domain belonged to someone else in 2023 and 2024: an AutoSMTP bulk-mail server and a `/linkedin/` page (urlscan.io history). Trendwolves registered it in March 2026.\n\nOn top of that history, the cover showed one thing: an email field with no sender. It now shows:\n- \"\u00a9 Trendwolves, Vlasgaardstraat 52, 9000 Ghent, Belgium\";\n- a link to the Terms and Conditions.\n\n`/terms` is open behind the cover, so a filter or a visitor can read it. A test pins both.\n\n## Contact\n- The LinkedIn, X and Instagram buttons all pointed to `#`. They are removed until there are real accounts.\n- The consent line linked \"Privacy Policy\" to `#`. It now points to section 13 of the Terms, the part about personal data, until a privacy policy exists.\n\nTests: 337 passing. Checked locally at 1440 px.\n",
+            "branch": "workbench/site/home-trust",
+            "title": "Home and cover: reports edge to edge, numbers as a floor, Why Gentells on the collage, a sender on the cover"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001074338-c99bbf"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "316587118243de27a3e5b5ef073afeb8",
+    "effect": {
+        "detail": {
+            "base": "7db09ba7c8528eef87c8cdf9061cc1ba85684ce3",
+            "branch": "workbench/feat/remove-background-on-own-photos",
+            "commit": "e1f2f1d584140bf16a1986863d894c09cbbe520b",
+            "files": 21,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7827,
+    "verdict": "ALLOW"
+}

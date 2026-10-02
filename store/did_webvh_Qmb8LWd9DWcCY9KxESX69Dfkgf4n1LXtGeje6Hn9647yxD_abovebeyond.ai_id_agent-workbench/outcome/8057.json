@@ -1,0 +1,16 @@
+{
+    "action": "c391c3f8d00b8ffd3520436f96949651",
+    "effect": {
+        "detail": {
+            "base": "0d2452c6979070a73adc5fc14c8a4becb8b33532",
+            "branch": "workbench/fix/poster-options-can-be-put-anywhere",
+            "commit": "2e273a285fe0e238ad87d51b603c801cf7fe9943",
+            "files": 22,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8055,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "fd2904cda57f1ce2cd87eafe8ab9935e",
+    "effect": {
+        "detail": {
+            "base": "d7868d65a7ec1773871926d173fca4e60803332a",
+            "branch": "workbench/chore/no-mail-when-we-help-in-an-account",
+            "commit": "0006621dbcf811689a790cae45272e9df2edc6dd",
+            "files": 17,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7914,
+    "verdict": "ALLOW"
+}

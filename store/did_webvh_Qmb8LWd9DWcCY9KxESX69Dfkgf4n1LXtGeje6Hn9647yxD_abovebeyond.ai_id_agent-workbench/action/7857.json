@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6b1d698158d3e21239c67f6879e55d3d9a6c7061",
+            "branch": "workbench/feat/retire-demo-accounts",
+            "files_sha256": "5b58d9161a29a48d7f86bf9213a61839d92ae841cf6c6c14d8484efd69baadf7",
+            "message": "Retire the demo garages: stocklist:retire-demo-accounts"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001090458-a8a18e"
+}

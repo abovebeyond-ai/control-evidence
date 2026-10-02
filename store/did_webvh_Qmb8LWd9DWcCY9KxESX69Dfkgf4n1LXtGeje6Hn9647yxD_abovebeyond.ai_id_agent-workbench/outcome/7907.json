@@ -1,0 +1,16 @@
+{
+    "action": "639fa6bc9e77f56be6d606e3e13a88c4",
+    "effect": {
+        "detail": {
+            "base": "2dc4c3f3307b17bf8c6beaa6876528d280c5f42c",
+            "branch": "workbench/site/pricing-monthly",
+            "commit": "9c83042152de7c0c26fe7918850391c4f1612b78",
+            "files": 13,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7905,
+    "verdict": "ALLOW"
+}

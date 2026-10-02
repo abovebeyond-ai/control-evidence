@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d2452c6979070a73adc5fc14c8a4becb8b33532",
+            "branch": "workbench/feat/activity-separates-doing-from-reach",
+            "files_sha256": "4867611489359003c808d815d83129086fb1cd813fa3a258a479f47e0dc3e7ed",
+            "message": "Activity separates what a garage does from the reach of its cars"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002055426-921288"
+}

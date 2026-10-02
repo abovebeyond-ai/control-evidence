@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b2ec7f7ed70e12bcad3364443bb0a85496884be4",
+            "branch": "workbench/chore/fixtures-no-longer-set-the-demo-flag-1",
+            "files_sha256": "ebddc009b0e065b91e470d58e823e61d8d7ea174136f5b13aef319ff4cb2cdee",
+            "message": "Fixtures no longer set the demo flag (1 of 2)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001114321-8d5b61"
+}

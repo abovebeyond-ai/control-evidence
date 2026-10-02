@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a15687b41a7f443a6c73376775cef4a5f013445c",
+            "branch": "workbench/fix/one-tooltip-per-bar",
+            "files_sha256": "b5b6f934e43ed895834d8acc1f5a19e6b26484662377d2d55574f3d8a3d3979c",
+            "message": "One bubble per bar on the activity charts"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001133212-ca8c9b"
+}

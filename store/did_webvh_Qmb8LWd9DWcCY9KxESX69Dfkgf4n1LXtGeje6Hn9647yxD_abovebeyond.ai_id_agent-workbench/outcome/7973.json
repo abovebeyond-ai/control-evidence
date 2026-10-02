@@ -1,0 +1,16 @@
+{
+    "action": "4072e133d6492d383f72bcaefe440c59",
+    "effect": {
+        "detail": {
+            "base": "b2ec7f7ed70e12bcad3364443bb0a85496884be4",
+            "branch": "workbench/chore/fixtures-no-longer-set-the-demo-flag-1",
+            "commit": "09554f39bd5590d3bd674a6dd3403fc551df1739",
+            "files": 71,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7971,
+    "verdict": "ALLOW"
+}

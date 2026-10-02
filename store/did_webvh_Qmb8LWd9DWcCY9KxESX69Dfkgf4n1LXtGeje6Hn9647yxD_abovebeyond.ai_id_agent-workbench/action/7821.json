@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fa1d5b6141abc34be18eee8a5d1316c2e132c539",
+            "branch": "workbench/site/newsletter-opt-in",
+            "files_sha256": "8d7a849ee14cd4056c16d8481045addb1083e9fa8c08054d5ad9a85774c3d35a",
+            "message": "Newsletter: double opt-in, as the page already promised"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001075032-e7a648"
+}

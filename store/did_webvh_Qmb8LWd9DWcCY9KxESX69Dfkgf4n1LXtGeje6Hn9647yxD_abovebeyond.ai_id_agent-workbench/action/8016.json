@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was wrong\n\nOn Insights > Activity, hovering a bar showed two dark bubbles with the same text, one slightly offset behind the other (for example \"do. 1 okt. 52 (lopend)\" twice).\n\nThe bars carried their readout in `data-tip`, and `insights.css` drew the chart's own bubble from it (`::after { content: attr(data-tip) }`). `data-tip` is also the attribute the app-wide tooltip (`components/ui/tip.blade.php`) listens to through event delegation on the document, so it added a second bubble on `<body>` for the same element.\n\nFixes bevinding twee-leesvensters-op-een-staaf.\n\n## What changes\n\n- The readout of a bar now lives in `data-reading`, which only the chart's CSS reads. The app-wide tooltip no longer answers a bar.\n- Every bar and grid cell gets `role=\"img\"` and an `aria-label` with the same reading, so the value has an accessible name without a second bubble.\n- The chart bubble also answers `:focus-visible` for the plain bars and grid cells, as it already did for the stacked bars (which stay focusable with `tabindex=\"0\"`).\n\n## Which charts\n\nChecked each chart type in a browser (hover a mark, count visible bubbles):\n\n| Chart | Before | After |\n|---|---|---|\n| Activity: daily/monthly bars of the chosen measure | 2 | 1 |\n| Activity: stacked bars per channel (hover and keyboard focus) | 2 | 1 |\n| Activity: reference strips per channel | 2 (same markup) | 1 |\n| Activity: weekday by hour grid | 2 | 1 |\n| Overview: lines, bars, stacked bars, sell-time distribution, stocklist size (SVG, `.ins-tip`) | 1 | 1 |\n| My insights: stacked bars (readout line under the chart) | no bubble of its own | unchanged |\n\n## Tests\n\n- `ABarYouCanReadANumberOffTest::test_a_bar_shows_one_bubble_and_not_two`: no mark with a readout carries `data-tip`, each has an `aria-label`, and the stylesheet draws no bubble from `data-tip`.\n- `resources/js/insights-one-bubble.test.js` (vitest): runs the real app-wide tooltip script in jsdom; it answers `data-tip`, and leaves a bar with `data-reading` alone on hover and on focus. Also pins that none of the insights chart sources hands a mark to the app-wide tooltip or a `title`.\n- Full PHP suite (2656 tests), vitest, eslint and PHPStan pass locally.\n",
+            "branch": "workbench/fix/one-tooltip-per-bar",
+            "title": "One bubble per bar on the activity charts"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001133212-ca8c9b"
+}

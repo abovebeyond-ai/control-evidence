@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Second half of the fixture sweep that prepares the drop of `dealers.is_demo_user` (step 2b of removing the demo flag; first half in #904).\n\nThe remaining 71 files that still write `'is_demo_user' => 0` when they create a dealer: `tests/Feature` from `ProcessImageKeepsPhotoTest` on, and `tests/PageSeed.php`. Nothing reads the value and 0 is the column's default. After this pull request no fixture names the column, so the migration that drops it can follow.\n\n## What changes\n\nOnly the `'is_demo_user' => 0` pair is removed from each fixture array. No assertion, no test name and no other value changes.\n\n## Tests\n\nFull suite locally on a private database with the schema of main: 2652 tests, green. PHPStan: no errors.\n",
+            "branch": "workbench/chore/fixtures-no-longer-set-the-demo-flag-2",
+            "title": "Fixtures no longer set the demo flag (2 of 2)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001123814-ceb8ab"
+}

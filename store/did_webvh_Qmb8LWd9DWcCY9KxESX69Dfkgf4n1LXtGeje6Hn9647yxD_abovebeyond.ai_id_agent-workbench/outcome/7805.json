@@ -1,0 +1,16 @@
+{
+    "action": "3114d119bfb5c2fe6aab34b4b2ddef60",
+    "effect": {
+        "detail": {
+            "base": "a7158720516430603ea2c109712c18c07c08553d",
+            "branch": "workbench/fix/insights-lighter-and-icons",
+            "commit": "af58d797c0c1af5f4b0f346034426fdecef4400c",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7803,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Op de pagina van een project stonden in de rechterkolom eerst de eindtermen en dan de evaluaties. Een leerkracht opent een project vooral om in de evaluaties te werken; de eindtermen zet je \u00e9\u00e9n keer op.\n\n## Wat verandert\n\n- De kaart Evaluaties staat boven de kaart Eindtermen. Inhoud en knoppen blijven zoals ze waren.\n\n## Nagekeken\n\n- `ProjectControllerTest`: de kaarttitels van de pagina in volgorde, met Evaluaties voor Eindtermen. De test kwam eerst en faalde op de oude volgorde. De andere tests van de projectpagina blijven groen.\n- De volledige suite lokaal op MariaDB, met `APP_DEBUG` aan zoals de CI: 1368 van 1369 groen. BuildStampTest faalt enkel in een worktree.\n- Pint: geen fouten.\n",
+            "branch": "workbench/evaluations-above-attainment-levels",
+            "title": "Evaluaties boven eindtermen op de pagina van een project"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001105920-cf11f7"
+}

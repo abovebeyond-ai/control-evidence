@@ -1,0 +1,16 @@
+{
+    "action": "043597388ed46ca6045a9ce72c036f96",
+    "effect": {
+        "detail": {
+            "base": "810c0bc3a8549c415ac9b13362964e52ab560e8a",
+            "branch": "workbench/site/pricing-lines",
+            "commit": "de79fc1a263a1fb36004ca98f01ae3640307f447",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8001,
+    "verdict": "ALLOW"
+}

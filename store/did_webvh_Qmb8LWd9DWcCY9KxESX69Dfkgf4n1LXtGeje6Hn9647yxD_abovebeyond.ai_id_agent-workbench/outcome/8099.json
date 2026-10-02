@@ -1,0 +1,16 @@
+{
+    "action": "ee96813c8116a7de87d0f835f73f9b8b",
+    "effect": {
+        "detail": {
+            "base": "96d275149c56ae0818461263ae91f80d6d0f4c8a",
+            "branch": "workbench/ui/inter-and-three-weights",
+            "commit": "8f047e227813a013272962617c4d832d0f286259",
+            "files": 37,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8097,
+    "verdict": "ALLOW"
+}

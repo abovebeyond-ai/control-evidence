@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "85d4ba770b9f13e61b17c25e73df230f2b6a3df7",
+            "branch": "workbench/feat/stocklist-size-over-time",
+            "files_sha256": "9961b40de80f7ea9ede319427c9328e47c99407e66f5b4263e01e0583282ad82",
+            "message": "The size of the stocklist over time: counted every evening, drawn on both Inzichten pages"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001094618-d171ee"
+}

@@ -1,0 +1,17 @@
+{
+    "action": "0b88ccdd45c2763f97623ab94977b7fc",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 255,
+            "review_problem": "GitHub answered 422: Validation Failed",
+            "review_requested": false,
+            "url": "https://github.com/ShaneDeconinck/naviskore/pull/255",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8088,
+    "verdict": "ALLOW"
+}

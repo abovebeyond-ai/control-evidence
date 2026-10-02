@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "/pipeline crashed with the router's \"Something went wrong!\".\n\n**Cause.** Since the pipeline compares the box's crontab with `ops/crontab`, `GET /crons` answers `{jobs, drift}` instead of a bare list whenever that file is present. The page did `crons.map(...)` on the object.\n\n**Fix**\n- The page reads both shapes.\n- When the box runs a different schedule than the repository declares, it now says so under Scheduled Jobs, with how many jobs exist only on the box or only in `ops/crontab`.\n\n**Error page**\n- `RouteError` is the router's `defaultErrorComponent`. Where the router's default showed \"Something went wrong!\" on a blank page, it shows a calm page in the app's own type: which page broke, that the rest of the Observatory runs, \"Try again\", \"Back to the overview\", and the error details behind a toggle.\n\n**Test.** `e2e/pipeline.spec.js` answers `/crons` with `{jobs, drift}` and expects Scheduled Jobs and the drift line. It fails without the fix. Build ok, 27 e2e tests pass.\n",
+            "branch": "workbench/pipeline/crons-shape",
+            "title": "The pipeline page reads the crons answer with drift; a calm error page"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002060832-1df23c"
+}

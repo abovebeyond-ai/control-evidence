@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "479d4c11b62dbd782c91ea483cdd7fb38087a8f7",
+            "branch": "workbench/chore/demo-flag-is-read-nowhere",
+            "files_sha256": "4db76b3ba1f93642a50e91cd90316562855f99aafb8374c9ef3c6617ea7bc4f8",
+            "message": "The demo flag is read nowhere: filters, login gates, demo Car-Pass and the admin switch are gone"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001110201-84e75d"
+}

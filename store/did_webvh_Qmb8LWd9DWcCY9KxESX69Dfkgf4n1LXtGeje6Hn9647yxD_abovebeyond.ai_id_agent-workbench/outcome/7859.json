@@ -1,0 +1,16 @@
+{
+    "action": "90b09f16788c17ea68d5c7df1eb8741b",
+    "effect": {
+        "detail": {
+            "base": "6b1d698158d3e21239c67f6879e55d3d9a6c7061",
+            "branch": "workbench/feat/retire-demo-accounts",
+            "commit": "fb94068621c2553750789919e1fcb215168c9f6b",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7857,
+    "verdict": "ALLOW"
+}

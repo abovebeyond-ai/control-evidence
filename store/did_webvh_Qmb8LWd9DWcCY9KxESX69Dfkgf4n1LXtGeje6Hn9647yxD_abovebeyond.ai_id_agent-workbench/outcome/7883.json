@@ -1,0 +1,16 @@
+{
+    "action": "703d7482ad57f99e607145e04ca3376e",
+    "effect": {
+        "detail": {
+            "base": "85d4ba770b9f13e61b17c25e73df230f2b6a3df7",
+            "branch": "workbench/feat/transport-modal-answer-first",
+            "commit": "c8130ae96a07151d1071095573da11767c133657",
+            "files": 34,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7881,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "d48a95c0925ad7b61c9ae886a9bc7bdb",
+    "effect": {
+        "detail": {
+            "base": "5548867e8830e985c305219d6892f3011c99e592",
+            "branch": "workbench/fix/bidding-card-reads-at-a-glance",
+            "commit": "b9f749086aafd98cd639ed4aefb6791c2eca9ef5",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7863,
+    "verdict": "ALLOW"
+}

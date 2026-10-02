@@ -1,0 +1,16 @@
+{
+    "action": "67c66f34bf9d54dc82efdac4bd6fe08c",
+    "effect": {
+        "detail": {
+            "base": "00a7bfed03f786f0a185b1e81163651fb4b51b17",
+            "branch": "workbench/site/home-about-pass",
+            "commit": "5b958066a39aee9804d2645f0fdb82f0efcc368c",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8091,
+    "verdict": "ALLOW"
+}

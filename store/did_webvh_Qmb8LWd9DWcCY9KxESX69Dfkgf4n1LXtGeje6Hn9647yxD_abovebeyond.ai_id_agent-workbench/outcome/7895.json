@@ -1,0 +1,16 @@
+{
+    "action": "b5f79342ff27dc16eed56d3ba1d9e5ed",
+    "effect": {
+        "detail": {
+            "base": "87de617dc799ee4b45e1564d175c831aedc2e0c9",
+            "branch": "workbench/site/privacy-policy",
+            "commit": "6e88a6d6bde818b16be125de7e530fa30479be4a",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7893,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7db09ba7c8528eef87c8cdf9061cc1ba85684ce3",
+            "branch": "workbench/feat/remove-background-on-own-photos",
+            "files_sha256": "b5831cb50000e4f36508807f85381ac43664ea6f4225d29a0fc6da649010b11f",
+            "message": "Remove the background of selected own photos, and put the original back"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001082753-63f39d"
+}

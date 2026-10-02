@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4c01963ca3bca0677b43f101a3631a410b7bc32a",
+            "branch": "workbench/site/full-report-reader",
+            "files_sha256": "316f42f35ca388430e6e5ea748d46e00b202c65a90efd575d3749a03f6e168c6",
+            "message": "Full report in the reading room for subscribers"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001124815-49adea"
+}

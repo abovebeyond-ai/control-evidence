@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Subscribers now read the full report in the same full-screen reading room as the preview (#160), instead of only the PDF download.\n\n## How\n- **`/reports/{slug}`:** for whoever the report is deliverable to (Decode, Intelligence), the reader gets every page, `/reports/{slug}/page/{n}` for 1 to `page_count`. Everyone else still gets the preview.\n- **`/reports/{slug}/page/{n}`:** behind `auth`, and 404 unless `isDeliverableTo` the user, the same rule as the download.\n  - A guessed page number beyond the report is 404 too.\n  - It serves a JPEG with `Cache-Control: private`.\n- **`App\\Reports\\PageRenderer`:** renders one page with Ghostscript (already on the server, no PHP extension needed) the first time someone opens it, and keeps it under `storage/app/private/report-pages/{slug}/{pdf mtime}/`. A new PDF therefore re-renders by itself. Locally a page takes about 250 ms the first time.\n- **The PDF never reaches the browser.** Only page images do, one at a time.\n\n## In the reader\n- It fetches the next page while you read, so turning a page does not wait on a render.\n- **On the page:** for a subscriber the button reads \"Read the report\" and the line \"The full report, 25 pages, full screen\". For everyone else it reads \"Preview, 4 pages of 25\".\n- **The last page** for a subscriber reads \"End of the report. Keep it for the deck\", with the PDF download.\n\n## Tests\n`FullReportReaderTest`, with a stand-in renderer:\n- a subscriber sees every page link and gets a page;\n- a guest is sent to sign in;\n- a Signal user gets 404;\n- the page after the last one is 404.\n\n343 passing. Checked locally with the real 25-page PDF of \"Going to School in Phone-Free Europe\" and a local Decode test account.\n",
+            "branch": "workbench/site/full-report-reader",
+            "title": "Subscribers read the full report in the reading room"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001124815-49adea"
+}

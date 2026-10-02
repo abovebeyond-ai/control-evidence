@@ -1,0 +1,16 @@
+{
+    "action": "6cec58526c6fd20c00c85c3778f7ae04",
+    "effect": {
+        "detail": {
+            "base": "5ab2c9def6d0acd737227ef87c69b974c190888e",
+            "branch": "workbench/who-works-in-a-class",
+            "commit": "036f6c4ae804300977f3c2bcf4bac1d12025ad39",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7989,
+    "verdict": "ALLOW"
+}

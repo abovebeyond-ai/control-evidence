@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Preparation for dropping `dealers.is_demo_user` (step 2b of removing the demo flag; #892 retired the demo garages, #901 removed every read of the flag).\n\nAbout 140 test fixtures and one seeder still write `'is_demo_user' => 0` when they create a dealer. Nothing reads the value, and 0 is the column's default, so the pair says nothing. It has to go before the column can: once the column is dropped, every one of these inserts would fail on an unknown column.\n\nThis is the first half of that sweep: 71 files: `DemoScreensSeeder` and `tests/Feature` in alphabetical order up to `PrintWithoutAColourTest`. The second half follows in its own pull request, and the migration with the code removal after that. The change was split because a single snapshot of all files was too large to propose.\n\n## What changes\n\nOnly the `'is_demo_user' => 0` pair is removed from each fixture array. No assertion, no test name and no other value changes; the diff removes 77 lines and rewrites 60 that carried the pair among other keys.\n\n## Tests\n\nFull suite locally on a private database with the schema of main: 2649 tests, green. PHPStan: no errors.\n",
+            "branch": "workbench/chore/fixtures-no-longer-set-the-demo-flag-1",
+            "title": "Fixtures no longer set the demo flag (1 of 2)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001114321-8d5b61"
+}

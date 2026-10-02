@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "93d2de9d70f9a9b2aabb1c7e224b92e76db8cdd7",
+            "branch": "workbench/staging-copy-as-a-procedure",
+            "files_sha256": "c8121f95520666a890e962555ccbc0de1f69332465e054d5d078ac71cea16c12",
+            "message": "Staging verversen als vaste procedure, en pseudonimiseren nooit op productie"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001074903-08cb81"
+}

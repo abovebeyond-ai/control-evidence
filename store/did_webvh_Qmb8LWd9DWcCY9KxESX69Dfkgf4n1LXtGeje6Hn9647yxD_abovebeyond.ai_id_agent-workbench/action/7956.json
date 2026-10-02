@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A post without its own cover gets a piece of the collage, picked from its title. The pick ran over parts 1 to 8, but parts 1 and 3 were removed on 29 September (see `collage-band`). Every post that landed on 1 or 3 showed a broken image, as seen on the posts grid on 1 October: two premium cards with only a broken-image icon.\n\nThe pick now uses the parts that exist in `public/collage/parts`, so removing a part can never leave a gap again. `CoverFallbackTest` renders 200 titles and checks that each picked file exists. Without this change it fails.\n\nOf the 63 posts, 24 have no cover of their own. The 39 that do all load (checked, all 200).\n",
+            "branch": "workbench/site/cover-parts",
+            "title": "Fallback covers only use collage parts that exist"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001111531-500fd3"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5ab2c9def6d0acd737227ef87c69b974c190888e",
+            "branch": "workbench/who-works-in-a-class",
+            "files_sha256": "c088bd5a650751363317f1b93af2f06c669ccd6d29ca3f9993d0e2302e73e519",
+            "message": "Wie in een klas werkt, pas als je die klas openklikt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001124929-e46635"
+}

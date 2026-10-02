@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The pricing page had a rule almost everywhere: under each section, under each table row, and above and below each question.\n\n- **Sections:** no rule between them. Space, and a change of ground for the questions, do the work.\n- **Comparison table:** a thin, soft line between the rows (`border-line/60`), and nothing above or below the table. The striped backgrounds and the hover tint are gone.\n- **Questions:**\n  - stone blocks on white, in place of a line per question;\n  - the answer in the body colour at normal size, where it was small and light grey and hard to read;\n  - a dark plus;\n  - a green keyboard focus ring in place of the browser's blue one.\n\nChecked locally at 1440 px. All tests pass.\n",
+            "branch": "workbench/site/pricing-lines",
+            "title": "Pricing: fewer lines, soft row rules, readable questions"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001131430-412e11"
+}

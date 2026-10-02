@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "00a7bfed03f786f0a185b1e81163651fb4b51b17",
+            "branch": "workbench/site/home-about-pass",
+            "files_sha256": "0b01faf432fa2f96415dc6282638922c80900c32296b8e988498b03c3a38e471",
+            "message": "Home, About and Services: a scroll scene for how we read, calmer sections, an About page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002065947-742d96"
+}

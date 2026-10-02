@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "87de617dc799ee4b45e1564d175c831aedc2e0c9",
+            "branch": "workbench/site/privacy-policy",
+            "files_sha256": "20787629fa3742f1b2ed63b049bbfb3988be381364b15851477a3ccdc20ac174",
+            "message": "A privacy policy at /privacy; the hero's colour loads with the page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001101027-8d30b9"
+}

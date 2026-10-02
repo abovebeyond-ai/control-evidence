@@ -1,0 +1,16 @@
+{
+    "action": "bb5b68d54c67ff90ff78679f31a16ee0",
+    "effect": {
+        "detail": {
+            "base": "7a3fa3be216d8fe6fe549d4eca560b8e4f282ffa",
+            "branch": "workbench/site/faq-component",
+            "commit": "ee096195b94c1a9231950ca6d00280ff817b5743",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8031,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e1bfafcdbe4d0f0894c6b869bc13bc867d057e9f",
+            "branch": "workbench/class-part-one-root",
+            "files_sha256": "a6dbcc3dbad109988e187340ae2dbb49dff1ec539059c5389dfd537df92d0804",
+            "message": "Per klas houdt \u00e9\u00e9n wortel, zodat een klik op een klas weer aankomt"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001135109-49904d"
+}

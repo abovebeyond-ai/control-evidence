@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d7868d65a7ec1773871926d173fca4e60803332a",
+            "branch": "workbench/fix/transport-needs-two-addresses",
+            "files_sha256": "ea45d25c297b30c70b970d6d864d7a7acad19e5edb87d4952a64b14682e32332",
+            "message": "A transport needs two addresses; the window says its state in the title and reads as a table"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001105727-bd9c08"
+}

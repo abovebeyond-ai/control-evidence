@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Hero\nThe text under the collage was four blocks that each asked for attention: the headline, two calls to action in spaced capitals, the intro, and \"Youth culture.\" in the dot face. It is now two lines.\n- **Top:** \"Read, understand, activate\" and \"Youth culture.\" on one baseline.\n- **Below, after a thin rule:** the intro, and the two ways in as plain text links (\"Create a free account\" in mint, \"Explore all trends\" in white). A member sees \"Reading room\". The cover keeps its signup form on the right.\n\n## Numbers band\n- **The ground:** it was a blurred collage under dot-face numbers, directly under a hero that already has a collage and the dot face. It is now a flat mint band with no image.\n- **The figures:** large Newsreader in ink, labels in deep green, the caption in body colour. Everything is larger than before: the figures and labels were small, and the caption was `text-xs`.\n- **Count-up:** the figures count up from zero once when the band comes into view (`countUp` in `app.js`, 1.4 s, easing out). The server renders the final value, so without JavaScript, for crawlers, or with reduced motion the number is simply there.\n\nAll tests pass. Checked locally at 1440 px and 400 px.\n",
+            "branch": "workbench/site/hero-two-lines",
+            "title": "Hero in two lines, the numbers band on mint, figures that count up"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001220435-cd469a"
+}

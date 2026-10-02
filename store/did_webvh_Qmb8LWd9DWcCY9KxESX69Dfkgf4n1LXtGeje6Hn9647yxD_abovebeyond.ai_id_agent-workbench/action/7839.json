@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6b1d698158d3e21239c67f6879e55d3d9a6c7061",
+            "branch": "workbench/fix/transport-list-columns-line-up",
+            "files_sha256": "7f5b5f0ad83aba64fa053e273832b049aac83e7f453071d37578a5f30ed8fa3e",
+            "message": "Transport overview: columns that line up, actions on the row, a bulk menu only when it can act"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001085829-9ce2cb"
+}

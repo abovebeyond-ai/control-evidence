@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d2452c6979070a73adc5fc14c8a4becb8b33532",
+            "branch": "workbench/fix/poster-options-can-be-put-anywhere",
+            "files_sha256": "58431eec6c2ce62e719705559a699e7f6e68489f20bc890a99094029c106d9c3",
+            "message": "Poster options can be put anywhere: the floating row no longer answers its own hit test"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002054924-d62b55"
+}

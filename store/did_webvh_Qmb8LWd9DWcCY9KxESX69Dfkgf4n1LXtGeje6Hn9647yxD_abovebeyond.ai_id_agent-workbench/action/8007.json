@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b579d5ccac198dfc53529d4b693a7cd57f63f5c4",
+            "branch": "workbench/feat/bidding-detail-says-how-long",
+            "files_sha256": "28eb9f7005472c76694bff3b305434fc8884c9cf790724a09d4e2eb88c4b9a0b",
+            "message": "The bidding detail says how long is left, in the words of the card"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001132048-34c96a"
+}

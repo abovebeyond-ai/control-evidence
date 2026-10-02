@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a7158720516430603ea2c109712c18c07c08553d",
+            "branch": "workbench/fix/insights-lighter-and-icons",
+            "files_sha256": "e1afb22c3fda2e333297ea1e01bcbcd404fd59b29fb9488eacd5252e9763dadb",
+            "message": "Insights: lighter weights, and icons that survive a stale theme"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001074313-b166d7"
+}

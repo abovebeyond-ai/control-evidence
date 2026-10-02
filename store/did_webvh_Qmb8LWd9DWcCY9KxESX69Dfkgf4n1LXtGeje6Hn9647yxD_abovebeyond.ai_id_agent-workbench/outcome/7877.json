@@ -1,0 +1,16 @@
+{
+    "action": "06da86e0549c5bcce61e611434824ada",
+    "effect": {
+        "detail": {
+            "base": "85d4ba770b9f13e61b17c25e73df230f2b6a3df7",
+            "branch": "workbench/feat/stocklist-size-over-time",
+            "commit": "68bc754b20c1dc46c592e11a101408379511c3ad",
+            "files": 26,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7875,
+    "verdict": "ALLOW"
+}

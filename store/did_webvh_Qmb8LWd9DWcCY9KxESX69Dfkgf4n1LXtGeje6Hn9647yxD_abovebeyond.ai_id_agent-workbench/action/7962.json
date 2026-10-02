@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Until now a report page stacked its preview pages as images in a white column. It now opens a reading room.\n\n## On the page\nThe page is calm, on ink:\n- **Left:** status, title, summary, one button (\"Read the preview\", or \"Read the report\" for subscribers), and the line \"4 pages of 24, full screen\".\n- **Right:** the cover, clean. It is also a way in.\n\n## The reading room\nClicking the button or the cover opens `x-report-reader`. The site disappears, and the browser is asked for full screen. If it declines, the room still fills the window.\n- **The page:** one page at a time on black, as large as the screen allows. Pages are landscape (2200 by 1248), so there are no two-page spreads, which would halve them.\n- **Around it:** the title at the top left, the counter and a close button at the top right, round arrows on the sides, and a thin mint progress bar at the bottom.\n- **Navigation:** arrows, arrow keys or swipe. Esc, the close button or leaving full screen closes the room, and page scroll is restored.\n- **The last page** is where the browser's share ends. For a preview it reads \"The rest comes with Decode\", with how many pages remain, \"a new report every month\", and \"See the plans\". For a subscriber it offers the PDF download.\n\n## Also\n- Two icons were added to the subset (`arrow-left`, `expand`) with `bin/icons.mjs`. `IconsTest` guards this.\n- `ReportPreviewTest` now checks the new wording of the end page (\"The rest comes with Decode\") and the remaining page count.\n\nOnly the preview pages exist as images. Reading the full report in this room would need the server to render all pages behind the subscription. That is possible as a next step; for now the full report remains the PDF.\n\nTests: 340 passing. Checked locally at 1440 px and 400 px with the real preview of \"Going to School in Phone-Free Europe\".\n",
+            "branch": "workbench/site/report-reader",
+            "title": "Reports read full screen: a reading room opened from the cover"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001113117-37f341"
+}

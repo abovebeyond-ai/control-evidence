@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b9f7396692c894c8ad5c6b826402b936683ce473",
+            "branch": "workbench/evaluations-above-attainment-levels",
+            "files_sha256": "81355bd40808cc1f0e1ddce0e5cdb197d9e974745e4fca4594462238dc102ea9",
+            "message": "Evaluaties boven eindtermen op de pagina van een project"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001105920-cf11f7"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b970e02034a7a8ab68c1ab19d19bc1ed169c894c",
+            "branch": "workbench/build-stamp-dates-the-branch",
+            "files_sha256": "8f0b1cb513d8a43d8103947e32621b513a295b72373768ac07c3e4738632abab",
+            "message": "De build-stempel dateert een pull ter plaatse naar de tak, niet naar HEAD"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261002064808-39e17f"
+}

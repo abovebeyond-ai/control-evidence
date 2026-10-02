@@ -1,0 +1,16 @@
+{
+    "action": "3467e9570568e6289e220332d5dc2a88",
+    "effect": {
+        "detail": {
+            "base": "b579d5ccac198dfc53529d4b693a7cd57f63f5c4",
+            "branch": "workbench/feat/bidding-detail-says-how-long",
+            "commit": "11d5a307e8d763b3c84474f33d27bad392c58e9b",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8007,
+    "verdict": "ALLOW"
+}

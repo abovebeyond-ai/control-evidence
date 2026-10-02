@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The questions on /services were a narrow list on the left of a 1440 px page, ending halfway across the screen. /pricing already set them out differently.\n\nBoth pages now use `x-faq`:\n- the heading on the left;\n- the questions on the right, running to the page's right edge, so they align with the rest of the page;\n- each question a stone block with no rules;\n- the answer in the body colour, a dark plus and a green focus ring.\n\nThis is one component, so the two pages cannot drift apart again.\n\nAll tests pass. Checked locally at 1440 px.\n",
+            "branch": "workbench/site/faq-component",
+            "title": "One FAQ for the site: heading left, questions across the page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001174910-0a4dbd"
+}

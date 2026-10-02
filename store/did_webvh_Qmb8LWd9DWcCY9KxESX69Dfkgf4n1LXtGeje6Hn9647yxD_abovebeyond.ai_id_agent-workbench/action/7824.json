@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The newsletter form promised \"GDPR compliant. Double opt-in.\" and \"We will send a confirmation email\". Neither was true: an address was on the list immediately, went to Clay immediately, and no mail was sent.\n\n## Now\n- **Subscribing** stores the address and sends a confirmation mail (`ConfirmNewsletter`, in the same mail theme as the reset mail). The visitor sees \"Almost there. Check your inbox and confirm your address.\"\n- **The link** (`/newsletter/confirm/{token}`) confirms the address, and only then sends the lead to Clay. The page then says \"You are on the list\", with the pre-launch wording while the cover is on.\n  - The link works once.\n  - Only a sha256 of the token is stored, so whoever reads the database cannot confirm anyone.\n  - It works behind the cover, so people who subscribe there can confirm.\n- **An address that is already confirmed** gets no second mail: \"You are already on the list.\"\n- **Who receives the letter:** `NewsletterSubscriber::receiving()`, meaning confirmed and not unsubscribed. The subscriber export and the Clay backfill use it.\n- **The copy** now says what happens: \"Double opt-in: you confirm by email.\" and \"We send a confirmation email first.\"\n\n## The existing addresses\nThere are four in production, none confirmed. They stay unconfirmed and get no letter until they confirm. `php artisan gentells:newsletter-confirm` (use `--dry` first) sends them the confirmation mail once. Whether and when to run it is a call for Trendwolves.\n\n## Why it matters beyond honesty\nConsent you can show is what the GDPR asks for. It also keeps other people's addresses off the list, and the domain away from spam traps. That matters more than usual here: gentells.com carries a bad reputation from a previous owner, and FortiGuard classes it as Phishing.\n\nTests: 339 passing. Six new confirmation tests:\n- the mail comes first and only the hash is stored;\n- the wording after launch;\n- the link works behind the cover;\n- a made-up link and a used link answer 404;\n- no second mail to a confirmed address;\n- the one-off command.\n\nThe Clay tests now confirm before they expect a lead, and the backfill skips unconfirmed addresses.\n",
+            "branch": "workbench/site/newsletter-opt-in",
+            "title": "Newsletter: double opt-in, as the page already promised"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001075032-e7a648"
+}

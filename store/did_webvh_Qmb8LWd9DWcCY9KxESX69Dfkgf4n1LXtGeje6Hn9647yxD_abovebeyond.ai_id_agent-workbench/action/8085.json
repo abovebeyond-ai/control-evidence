@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b970e02034a7a8ab68c1ab19d19bc1ed169c894c",
+            "branch": "workbench/every-livewire-root-outside-if",
+            "files_sha256": "a0bf20f480603c146947768b9cf2cc8fb7b1c13862c5f577d0a009b79ba4c9e8",
+            "message": "Geen Livewire-view begint haar wortel in een if-blok"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261002064819-effc9a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6b1d698158d3e21239c67f6879e55d3d9a6c7061",
+            "branch": "workbench/fix/garage-sheet-uses-the-width",
+            "files_sha256": "7e63682465e404ad4768c80fcc3ab785c12fecadd6b31bccd4ca15613dc39dda",
+            "message": "The garage sheet uses the width: sections, one type scale, and the bidding maximum as a number"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001085843-65812d"
+}

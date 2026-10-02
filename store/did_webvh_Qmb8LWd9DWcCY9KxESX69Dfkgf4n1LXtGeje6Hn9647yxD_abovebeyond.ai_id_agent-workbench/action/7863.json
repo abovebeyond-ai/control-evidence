@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5548867e8830e985c305219d6892f3011c99e592",
+            "branch": "workbench/fix/bidding-card-reads-at-a-glance",
+            "files_sha256": "bd807ae83d9c5abc42a325abb366b9eab0165514b9e37f074bde03a0d5d022bc",
+            "message": "The bidding card says how long it still runs, in words"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001092702-ad42b0"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "810c0bc3a8549c415ac9b13362964e52ab560e8a",
+            "branch": "workbench/site/pricing-lines",
+            "files_sha256": "b1c1e5d2eebe8609c195a6752eaa492e5a5226e24dde5cede361f24d1a6949e3",
+            "message": "Pricing: fewer lines, soft row rules, readable questions"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261001131430-412e11"
+}

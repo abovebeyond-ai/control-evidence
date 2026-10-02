@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "899163f5a6e47cdbab8c2ff0a0e6798497f55ada",
+            "branch": "workbench/feat/hexon-import-per-make",
+            "files_sha256": "94e09a76112a681b24f0db6303e7c23a3f553788654176be4ebe118124b4ec0a",
+            "message": "The Hexon import fetches its list, reports first and matches names as people read them"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002060440-cecfd8"
+}

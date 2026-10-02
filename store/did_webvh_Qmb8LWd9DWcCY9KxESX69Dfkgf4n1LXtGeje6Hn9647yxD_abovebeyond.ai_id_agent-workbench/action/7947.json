@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c5a36856116843fb2f2627b626bb126cf8136e97",
+            "branch": "workbench/feat/transport-overview-per-role",
+            "files_sha256": "8fa2c20626fe718271c8420705415a8b6f656e09ea9ef81f8a4dc8c1b51b6204",
+            "message": "Transport overview per role: a quiet table for the garage, the work in sections for the administrator"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001110929-466cd8"
+}

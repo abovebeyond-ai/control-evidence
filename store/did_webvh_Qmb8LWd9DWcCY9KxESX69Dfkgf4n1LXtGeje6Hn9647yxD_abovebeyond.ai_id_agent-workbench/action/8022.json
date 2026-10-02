@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Wat er mis was\n\nOp de pagina Gebruik klapte een klas in **Per klas** niet open (#252): een klik verstuurde niets. Livewire hangt zijn `wire:id` aan de eerste tag die een regel begint in de HTML van een component. De view van Per klas begon met een `@if ($classes === [])` rond de buitenste `<div>`, en Livewire zet bij elke `@if` een markeercommentaar (`<!--[if BLOCK]><![endif]-->`) v\u00f3\u00f3r de inhoud, op dezelfde regel als die `<div>`. Het `wire:id` kwam daardoor op de `<table>` terecht. Na het laden kende de browser het deel niet meer: `Livewire.all()` noemde de vijf andere delen, maar Per klas niet. Een klik vond dan geen component om naar te sturen.\n\nDie opbouw stond er al sinds Per klas er kwam (#235), maar tot #252 viel er in dat deel niets te klikken.\n\n## De oplossing\n\nDe buitenste `<div class=\"mt-3\">` staat nu altijd, buiten elk if-blok, en de keuze tussen \"geen klassen\" en de tabel zit erin. Wat je ziet, blijft gelijk: de marge staat nu op die buitenste `<div>`.\n\n## Waarom de tests dit niet zagen\n\nEen Livewire-test roept `toggleClass` rechtstreeks op de server aan. Aan welke tag het `wire:id` hangt, maakt daar niet uit: alleen de browser gebruikt het.\n\n## Tests\n\n- Nieuw: `livewire_knows_every_part_by_its_root` (@rule B8-3.1). Ze rendert elk deel van de pagina en eist dat de eerste tag het `wire:id` draagt. Met de view van main faalt ze (\"Livewire does not know the part classes by its root.\"), terwijl alle andere tests van de pagina dan groen blijven. Dat is de blinde vlek die hier dicht gaat.\n- In een browser nagespeeld (Playwright, lokaal, met het scenario van `TheUsageShowsWhoWorksInAClassTest`). Op main gaat er bij een klik geen verzoek uit en zit het `wire:id` op de `<table>`. Met deze wijziging zit het op de `<div>`. Dan opent 2A met \"Wie werkt in 2A\", wisselt een klik op 1A naar 1A, en sluit een tweede klik de klas weer.\n- Een scan van de 47 views die Livewire-componenten renderen, vond geen ander component waarvan de wortel in een if-blok begint.\n- Volledige suite met `APP_DEBUG=true`: 1370 tests, alleen `BuildStampTest` rood, en die faalt enkel in een worktree (daar is geen build-stempel). PHPStan en Pint zonder fouten.\n",
+            "branch": "workbench/class-part-one-root",
+            "title": "Per klas: een klik op een klas komt weer aan"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261001135109-49904d"
+}

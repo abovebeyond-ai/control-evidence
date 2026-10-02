@@ -1,0 +1,16 @@
+{
+    "action": "54cbc11a166f9665d0635acee7cb9c90",
+    "effect": {
+        "detail": {
+            "base": "899163f5a6e47cdbab8c2ff0a0e6798497f55ada",
+            "branch": "workbench/feat/hexon-import-per-make",
+            "commit": "b5850915565607f030641631fe6e68f8bdf37c1f",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8067,
+    "verdict": "ALLOW"
+}

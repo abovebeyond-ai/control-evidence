@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "81b06e384cb3891859dc1e969873de3851d005a3",
+            "branch": "workbench/fix/cut-out-gets-its-sizes",
+            "files_sha256": "a7d1f6c70ec7a4f41c2ce341542eefc2f8b7841c7af50eaf32a0abd71461048b",
+            "message": "A cut-out keeps its derived sizes when the platform copy is made"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261001093008-2b0716"
+}

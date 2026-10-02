@@ -1,0 +1,16 @@
+{
+    "action": "93d2ed27908ec8ac28d5cba4984c3ba9",
+    "effect": {
+        "detail": {
+            "base": "d7868d65a7ec1773871926d173fca4e60803332a",
+            "branch": "workbench/fix/transport-needs-two-addresses",
+            "commit": "fdb0a0f2888a77cd44465cf2bdaa171f8243206c",
+            "files": 31,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7923,
+    "verdict": "ALLOW"
+}
