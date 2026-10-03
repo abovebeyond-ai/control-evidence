@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a4c1379271337a47e1148cded2eb666d318c86cc",
+            "branch": "workbench/site/report-end-copy",
+            "files_sha256": "f5efb97b8bb45247c1ae1e43eeb27143bdf9ff587d65a13e18d36e48d7ddfc76",
+            "message": "Report end: Download the report, the full PDF with its page count"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002112156-39409d"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "e5ffadd0bbae82c67e4aa32a1e01a417",
+    "effect": {
+        "detail": {
+            "base": "5334ed289a39fd73f92e0215400ace1cbc0bd674",
+            "branch": "workbench/studio-home",
+            "commit": "296dfcb99f4c8320bcbb9a8d5ff8f03ff4c856cc",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8121,
+    "verdict": "ALLOW"
+}

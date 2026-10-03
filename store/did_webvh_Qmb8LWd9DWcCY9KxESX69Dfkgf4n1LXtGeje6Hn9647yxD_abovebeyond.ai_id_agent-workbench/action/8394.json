@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The arrows next to Data and System were a small \u25be glyph at 70% size and 60% opacity, barely visible.\n\nThey are now a drawn chevron in the text colour, which turns when the menu is open.\n\nChecked: build, lint at its ceiling, e2e passing.\n",
+            "branch": "workbench/obs/dropdown-chevron",
+            "title": "Header: a visible chevron on the Data and System menus"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002165100-11dfb7"
+}

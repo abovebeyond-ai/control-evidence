@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The last page of the full report said \"Keep it for the deck\" and \"All 25 pages as a PDF, yours to keep.\" That read as written to sound like something rather than to say it.\n\nIt now says **Download the report** and **The full PDF, 25 pages.**, with the same Download the PDF button.\n\nTests: 355 passing.\n",
+            "branch": "workbench/site/report-end-copy",
+            "title": "Report end: plain wording for the download"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002112156-39409d"
+}

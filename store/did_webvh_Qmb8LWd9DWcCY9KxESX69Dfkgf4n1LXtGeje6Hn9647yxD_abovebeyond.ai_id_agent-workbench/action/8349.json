@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f50289c9ac9d8f1c0ef6ff18195353e56a52c8ac",
+            "branch": "workbench/obs/sources-review",
+            "files_sha256": "b1ac258c5b64e640d4891fbdbcd89ca6a00b1680650f0149dce460a15c8cf5fa",
+            "message": "Sources: suggested journals wait for review; Reports: open an uploaded PDF"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002162348-f411a4"
+}

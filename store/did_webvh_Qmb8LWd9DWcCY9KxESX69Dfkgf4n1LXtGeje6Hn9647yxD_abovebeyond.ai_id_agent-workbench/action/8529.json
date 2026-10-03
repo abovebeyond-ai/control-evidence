@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5580d042ecd91b0e8ba4dc7c8318fdc25f9e1858",
+            "branch": "workbench/feat/chart-hover-shows-the-figures-at-the-bar",
+            "files_sha256": "dadec98dc07b605070409faf6c7f0a8a27cc1aaf4417c4de8eceabef7d6e7a9b",
+            "message": "Chart hover shows the figures at the bar"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002190039-9283fd"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Patterns timeline showed 875 patterns on 2 October against around 300 the days before. Only 16 patterns were found that day.\n\nThe page counted each pattern on the day of its last signal, so every pattern that received a signal today moved onto today and the newest bar was always the tallest. The list now carries `createdAt` (when the machine found the pattern), and the dashboard counts new patterns per day from it.\n\nMeasured on production: by last signal, 875 / 281 / 317 for 2 Oct / 1 Oct / 30 Sep; by creation, 16 / 8 / 13.\n\n984 tests pass.\n",
+            "branch": "workbench/api/pattern-created",
+            "title": "Patterns list carries createdAt"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002175435-9d6a6e"
+}

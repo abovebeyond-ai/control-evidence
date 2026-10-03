@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The desk listed every draft of every editor. A draft is half-thought work, and it is nobody else's business until its author sends it to review.\n\n**The rule** (`visibleTo` in `articles-store.mjs`, applied in the list query and on every route under `/articles/:id`)\n- A draft with an author is visible to that author only.\n- A draft without an author (the imported pieces) stays shared.\n- Anything in review or published is the team's.\n\n**What another editor sees**\n- The desk list and its total leave the other editor's drafts out.\n- `/articles/:id` and every route under it answer 404, for reading and for writing: chat, evidence, draft-full, delete.\n- The review page and its submit run on their own signed link, so they keep working for the reviewer it was sent to.\n- The static API token is a machine, not an editor, so nothing is restricted for it. The projection and imports are not affected.\n\nOn production today: 11 drafts carry an author, 15 imported drafts have none, and 63 posts are published.\n\nTests: `test/private-drafts.test.mjs`, 4 cases (desk, no viewer, list route, 404 on read, chat and delete). Full suite 961 passing.\n",
+            "branch": "workbench/studio-private-drafts",
+            "title": "Studio: a draft is its author's"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002114216-53c538"
+}

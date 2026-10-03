@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bb3f817314975e108efb14741b44dcfb195a58e9",
+            "branch": "workbench/ui/working-tab-compact-head-honest-clock",
+            "files_sha256": "dd8271b15e3944015694873bdf05da74cb590e2dc7d4ef72e9687268d81929b2",
+            "message": "Werking: the verdict first on one compact surface, and a clock that says what it knows"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002205802-b8eab6"
+}

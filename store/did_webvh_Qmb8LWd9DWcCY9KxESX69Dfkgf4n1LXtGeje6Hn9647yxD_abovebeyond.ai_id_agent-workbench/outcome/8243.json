@@ -1,0 +1,16 @@
+{
+    "action": "853a950a830d9e5ca8e8c7e3c35bfc01",
+    "effect": {
+        "detail": {
+            "base": "19db50dd75a07c0007351f49083c2d7f2c1497f7",
+            "branch": "workbench/studio-desk-polish",
+            "commit": "9f42fb99c06f61380746261a69927c08fa588992",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8241,
+    "verdict": "ALLOW"
+}

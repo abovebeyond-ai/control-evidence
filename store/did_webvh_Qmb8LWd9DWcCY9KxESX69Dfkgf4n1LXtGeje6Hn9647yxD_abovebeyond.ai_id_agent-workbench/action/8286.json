@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The AI tools page showed six cards of equal weight, each with a command to copy. A reader had to find their tool in a grid of commands, and the people most likely to want Gentells (brand and strategy teams on Claude or ChatGPT) are not the ones who copy commands.\n\n**One tab per tool, with one button that does it**\n- **Tabs:** Claude, ChatGPT, Claude Code, Cursor, VS Code, Codex. The chat apps come first. The open tab sits in the URL hash, so `/connect#chatgpt` links straight to it.\n- **Add to Claude:** opens claude.ai's \"Add custom connector\" form with Gentells and the address filled in. Other MCP servers use the same link (`?modal=add-custom-connector&connectorName=\u2026&connectorUrl=\u2026`), but Anthropic has not documented it. The address to paste therefore stays beside the button, with the manual step.\n- **Add to VS Code** (`vscode:mcp/install?\u2026`) is new. **Add to Cursor** stays.\n- **ChatGPT** still needs developer mode for a server outside its app directory. Its tab says so and points business users to their admin.\n\n**For your IT team** (`/connect#it`)\n\nOn Claude Team and Enterprise only an owner can add a connector. On ChatGPT Business and Enterprise an admin publishes apps for the workspace. A new section gives each of them three steps, plus the facts an admin asks for: a remote MCP server with OAuth, read-only, and each person signs in with their own account. A reader can forward it.\n\n**Not tested end to end:** the Claude link against claude.ai, and the VS Code link in VS Code. Both are built to their documented or observed formats. The copy fallback covers both.\n\nTests: 366 passing. Screenshots taken locally.\n\nNext: submission to the Claude Connectors Directory and the ChatGPT App Directory, which is the real one-click path for non-technical users.\n",
+            "branch": "workbench/site/connect-tabs",
+            "title": "AI tools: one tab per tool with one button, and the steps for IT"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002151431-51b84e"
+}

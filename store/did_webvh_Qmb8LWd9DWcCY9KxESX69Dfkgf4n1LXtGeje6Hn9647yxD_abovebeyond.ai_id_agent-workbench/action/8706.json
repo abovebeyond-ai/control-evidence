@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was off\n\nOn Inzichten > Werking the verdict said \"Alles draait.\" while two lines right under it stood in amber (refusals from partners over seven days, errors on the partner API). The verdict only names what wants attention now; a refusal older than a day and API errors are deliberately not in it. But a coloured line under \"everything runs\" reads as a contradiction.\n\n## What changes\n\nWhen nothing is in the verdict and one or more lines below carry a colour, the verdict adds how many: \"Alles draait. 2 regels om in het oog te houden.\" What counts as attention does not change, and with attention items the verdict reads as before.\n\n- `resources/views/livewire/admin/operations.blade.php`: counts the lines that carry a tone.\n- `resources/lang/{nl,fr,en,de}/operations.php`: `verdict_watch`.\n- R P3-14.11 says it; `OperationsScreenTest` pins it (`@rule P3-14.11`).\n\n## Checked\n\n`OperationsScreenTest`, `TheOperationsScreenIsScannableTest`, `EveryLineOfWerkingCarriesAVerdictTest`, `EveryInsightsTabStandsOnOnePatternTest` and the rules and language tests pass locally. Not run: the full suite and PHPStan (no PHP outside a test and language lines changed); not looked at in a browser.\n",
+            "branch": "workbench/ui/working-verdict-names-what-to-watch",
+            "title": "Werking: the verdict counts the coloured lines it does not name"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002215612-be6acc"
+}

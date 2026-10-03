@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "63d697d17e71c62b82c26f6644a7230141b158b4",
+            "branch": "workbench/site/report-cta",
+            "files_sha256": "e96cca435c5dd00ce4e4a63ea0e98bc55f19948569f4283f36a6e47533539d83",
+            "message": "Reports: one way in from the band, Get access on the report page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002104425-caec1a"
+}

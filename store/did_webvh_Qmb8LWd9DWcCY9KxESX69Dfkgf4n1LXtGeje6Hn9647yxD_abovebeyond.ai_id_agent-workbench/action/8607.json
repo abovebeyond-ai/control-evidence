@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ef4e1234e07f96392ae037ebd858243663bee231",
+            "branch": "workbench/accounts/delete",
+            "files_sha256": "d088ce001d0f1ebca99127d77139c7b2b4200f90a7ec4b8198571075798df270",
+            "message": "Accounts: relay a deletion to the site, admins only"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002200906-5be277"
+}

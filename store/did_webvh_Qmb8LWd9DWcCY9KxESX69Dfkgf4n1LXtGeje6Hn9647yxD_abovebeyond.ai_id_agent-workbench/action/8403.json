@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "649bbf6e7dd58d8a44a012379ce1c58c758ebf4c",
+            "branch": "workbench/fix/heic-is-probed-by-decoding",
+            "files_sha256": "c2eb0fb5f0c83fc76225bf84c0d99036f8b313db8fd6b51d7b2ffde61328e9c2",
+            "message": "HEIC is probed by decoding a sample, not by asking whether a driver knows the format"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002165349-c7450e"
+}

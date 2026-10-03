@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ec7816f2c8bc658eb2bcf44db6cae0b8e958c2c1",
+            "branch": "workbench/obs/people",
+            "files_sha256": "aecc5301c43a31a00d0596ca6fdba2833e84d4785dd24286d7a96f2a16d392a3",
+            "message": "People: the site accounts and the team in one list, changed in a panel per person"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002164722-12f09d"
+}

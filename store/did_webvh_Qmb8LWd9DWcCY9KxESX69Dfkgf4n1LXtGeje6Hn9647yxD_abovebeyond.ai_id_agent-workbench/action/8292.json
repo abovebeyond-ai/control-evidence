@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The account page hid \"Change plan\" from team accounts, because they already have the top plan. A team member who signs in with their Observatory account then had no way from their account to the plans.\n\nEvery account now gets the link. For a team account it reads **Compare the plans**; for the others it stays **Change plan**.\n\nTests: 366 passing.\n",
+            "branch": "workbench/site/change-plan-team",
+            "title": "Account: a team account can compare the plans too"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002154935-4f2b6a"
+}

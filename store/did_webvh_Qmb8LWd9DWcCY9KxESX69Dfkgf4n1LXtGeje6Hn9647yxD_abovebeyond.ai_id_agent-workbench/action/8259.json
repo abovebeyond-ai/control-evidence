@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9a8f6c381572552587ec3471a98c43f6f8a0e2d9",
+            "branch": "workbench/fix/activity-leaves-platform-staff-out",
+            "files_sha256": "a6f2434ecf087b7173ce0c498c166af7b152613f517f9487b68659f1aa5e3361",
+            "message": "Platform staff are not a garage: their work leaves the activity figures"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002135421-43799f"
+}

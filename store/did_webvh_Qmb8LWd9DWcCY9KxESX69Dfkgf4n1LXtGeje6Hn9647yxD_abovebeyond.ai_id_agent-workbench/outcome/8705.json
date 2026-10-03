@@ -1,0 +1,16 @@
+{
+    "action": "13aebd3c4a89315d97d8e98a6a635053",
+    "effect": {
+        "detail": {
+            "base": "1977889d02fa88929cc7ce21690fca1ed995b7bc",
+            "branch": "workbench/ui/working-verdict-names-what-to-watch",
+            "commit": "57801a3843e3d72a2de4689e591db7d5a2e1bb17",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8703,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "254d56cf371255065f71c6d2de2c64af",
+    "effect": {
+        "detail": {
+            "base": "5580d042ecd91b0e8ba4dc7c8318fdc25f9e1858",
+            "branch": "workbench/feat/chart-hover-shows-the-figures-at-the-bar",
+            "commit": "a3ccd2c1ac09790e899617cb8dc28e2bc04cf424",
+            "files": 16,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8529,
+    "verdict": "ALLOW"
+}

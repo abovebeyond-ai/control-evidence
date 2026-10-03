@@ -1,0 +1,16 @@
+{
+    "action": "f764298770e7c53151e62f88fc97ec52",
+    "effect": {
+        "detail": {
+            "base": "5add7870a58f841bda7002d0a896ee4c3638db8d",
+            "branch": "workbench/studio-clearer",
+            "commit": "66bba2a7a8fcc788d883713e291aca1cdc73c5de",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8385,
+    "verdict": "ALLOW"
+}

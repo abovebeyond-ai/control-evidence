@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b055cf5b064485808c0b876fdb0db24abf5dff89",
+            "branch": "workbench/engine/heartbeat-while-resting",
+            "files_sha256": "5eb2dd229771112fd16e959fcfc00de585a9efd0833605b09b1ca7dcea9c8dbf",
+            "message": "Engine: a resting worker is alive, so a cooldown no longer reads as the engine off"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002172159-f7e964"
+}

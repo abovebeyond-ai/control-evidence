@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A page **Accounts** under System, for the accounts of gentells.com.\n\n- **Per account:** name, address, since when, plan, trial, reads in the last 30 days, last seen, and newsletter status.\n- **Actions:**\n  - the plan is a select;\n  - **More** gives: a 14-day trial, end the trial, block or unblock.\n  - team accounts show their plan as team and are managed under Team.\n- **Summary and log:** a line counts the accounts per plan, and **Recent changes** lists who changed what.\n- **Navigation:** System now holds Pipeline, Analytics, **Accounts**, **Team** (its own address, `/team`, instead of three clicks under Settings) and Settings.\n\nNeeds gentells-pipeline (relay) and gentells-site (internal routes) merged first.\n\nChecked: build, lint at its ceiling, e2e 28 passing (new `accounts.spec.js`: the list renders and a plan change posts).\n",
+            "branch": "workbench/obs/accounts",
+            "title": "Accounts page; Accounts and Team in the System menu"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002163418-4dabba"
+}

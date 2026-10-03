@@ -1,0 +1,16 @@
+{
+    "action": "ce0cfd07119e5aa9b2aa374a9f0e18c9",
+    "effect": {
+        "detail": {
+            "base": "b347e705a1b6553fdd66270a2d62763dc4a765f2",
+            "branch": "workbench/site/change-plan-all-2",
+            "commit": "6db2e17ab3f4675e699155cc0982122270b7bf7c",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8307,
+    "verdict": "ALLOW"
+}

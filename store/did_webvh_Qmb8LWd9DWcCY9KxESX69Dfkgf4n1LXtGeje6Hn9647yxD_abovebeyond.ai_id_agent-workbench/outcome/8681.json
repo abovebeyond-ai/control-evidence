@@ -1,0 +1,16 @@
+{
+    "action": "f861645e30b721a6f63bfa5ead45cfd5",
+    "effect": {
+        "detail": {
+            "base": "bb3f817314975e108efb14741b44dcfb195a58e9",
+            "branch": "workbench/ui/working-tab-compact-head-honest-clock",
+            "commit": "a8d5783435bf3acb5c4fcfa1ee83b95f876c921c",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8679,
+    "verdict": "ALLOW"
+}

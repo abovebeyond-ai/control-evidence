@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Overview opened with the machine's own numbers: four stage cards, then \"1 of 1 workers active \u00b7 flow time 0.2h \u00b7 concepts: 123 in, 639 out, 9 confirmed \u00b7 101541 calls today \u00b7 27 calls/h \u00b7 $53.50/24h\", the vocabulary line, the supervisor (\"a1\u00d71 a1:100% a2:100% budget\u00d70.7 peak hours \u2026\") and a worker row. All of it was real, but none of it told the reader whether they had to do anything, and most of it meant something only to whoever built it.\n\n**The page now answers in this order**\n\n1. **Needs you.** One line per thing that waits for a person, each with the way to it:\n   - proposed trends waiting (to Curate in the Studio);\n   - sources not collecting;\n   - reports that did not finish reading;\n   - the engine off;\n   - the model accounts rate-limited.\n\n   With nothing waiting it says \"Nothing needs you right now\".\n2. **The machine in one sentence.** \"The machine is running: N signals, N new today, $N in model costs over the last 24 hours.\" It opens to the old detail: stage cards, the engine line, vocabulary, supervisor and workers.\n3. **What is moving.** The insight drafts and the strongest movers, as before, now under a heading.\n4. **The corpus, folded.** Topics, coverage gaps, geography and live activity.\n\n**Foresight moves under Data.** It shows nothing until the tagging catches up (46,712 signals still wait to be tagged), so it is no longer a top-level item.\n\nChecked: build, lint at its ceiling, e2e 28 passing, and a screenshot against the mocked API.\n",
+            "branch": "workbench/obs/index",
+            "title": "Overview: what needs you first, the machine folded under one sentence"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002170538-52f7fe"
+}

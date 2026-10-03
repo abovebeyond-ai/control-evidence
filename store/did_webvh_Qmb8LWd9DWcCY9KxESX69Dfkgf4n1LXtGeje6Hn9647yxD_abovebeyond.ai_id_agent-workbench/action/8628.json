@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Four things in the Studio.\n\n- **The Curate count stays current.** It said 250 after the queue had dropped to none, until the Trends tab refetched. The header's query now asks again every minute, on return to the browser tab and on mount.\n- **Edit instead of Hide.** A live trend's row links to its page in the Observatory (Edit \u2197), where its headline and reading are edited and where it is taken off or put back on the site (dashboard PR alongside). The hidden list keeps Put back.\n- **Delete this piece** leaves the line under Saved, which every edit passes, and sits quietly at the end of the margin rail.\n- **Suggestions come by themselves.** A written piece (600 characters or more) without elements gets them read once per piece and session, as a proposal to confirm or adjust. With fewer than three sources, the source suggestions open on the piece's own claim and run once. Both still have their buttons.\n\nBuild ok.\n",
+            "branch": "workbench/studio/curate-fixes",
+            "title": "Studio: current count, Edit, quiet delete, suggestions by themselves"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002201433-e447ca"
+}

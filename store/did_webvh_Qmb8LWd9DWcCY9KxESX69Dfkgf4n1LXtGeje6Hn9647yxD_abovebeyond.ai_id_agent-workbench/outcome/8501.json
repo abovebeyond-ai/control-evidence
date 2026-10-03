@@ -1,0 +1,16 @@
+{
+    "action": "9b0d05feb8746c9f5bae72d203225440",
+    "effect": {
+        "detail": {
+            "base": "76b1aa7449740331376acf166340eda17becf8a7",
+            "branch": "workbench/ui/text-roles-and-the-design-system",
+            "commit": "5bcd8502ff4d41a59badf4737a44806e8cac00fb",
+            "files": 93,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8499,
+    "verdict": "ALLOW"
+}

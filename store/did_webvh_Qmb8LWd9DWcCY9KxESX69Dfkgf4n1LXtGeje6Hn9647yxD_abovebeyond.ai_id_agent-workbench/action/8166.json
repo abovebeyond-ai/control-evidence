@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Editors and admins have an account on the pipeline for the Observatory and the Studio, and until now they needed a second account to read gentells.com. This lets them sign in to the site with the account they already have. The password stays on the pipeline only.\n\n**Signing in.** The site tries the local account first, exactly as before. Only when that fails does it ask the pipeline (`POST /auth/login`) whether the credentials belong to a team member.\n- On success the site finds the account that stands for that member, by pipeline id, else by email (an existing reader account is linked, not doubled), else creates one. It marks it `role: team`, `source_user_id` and the top plan (Intelligence), and signs them in.\n- The Observatory password is never stored or hashed here. A new team account gets a random local password nobody knows, so the only way in stays the pipeline's.\n- Every doubt is a refusal: a wrong password, a member removed from the team (403), a pipeline reader, a pipeline that is down or answers something unexpected.\n- Local readers never reach the pipeline, and they still sign in when it is down.\n- The error message is the same for every failure, so the form still cannot be used to find out who has an account.\n\n**Forgot password.** Besides the site's own reset, the request goes to the pipeline's `/auth/forgot`, which mails its own reset link to team members only. The page says the same sentence whatever the address.\n\n**Account page.** A team member sees that they read with their Observatory account and where to change the password.\n\n**Checked**\n- 9 new tests in `TeamLoginTest`: sign in, the same account on a second sign-in, linking a reader account, a wrong password, a removed member, a pipeline reader, a pipeline that is down, a local reader that never calls the pipeline, and the reset request. Full suite 354 passing.\n- From the site box, the configured pipeline URL answers `/auth/login` with 401 for a made-up address.\n\n**Known edge.** A team member who also had their own reader password keeps the Intelligence plan on that account after leaving the team, because the local password still works. All other members lose access when the pipeline removes them.\n",
+            "branch": "workbench/site/team-login",
+            "title": "Team members sign in to gentells.com with their Observatory account"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002110544-a0bab6"
+}

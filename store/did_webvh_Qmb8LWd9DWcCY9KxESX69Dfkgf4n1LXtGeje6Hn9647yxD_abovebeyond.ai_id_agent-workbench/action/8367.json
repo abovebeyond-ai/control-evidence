@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0497b7e0ed53e35b13c10781d3860e16c8a1384b",
+            "branch": "workbench/obs/accounts",
+            "files_sha256": "d151f6fa3e4c07d33d4e5e95070125a0da5b3aea3826f535f0630be8bbefdeb5",
+            "message": "Accounts page; Accounts and Team in the System menu"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002163418-4dabba"
+}

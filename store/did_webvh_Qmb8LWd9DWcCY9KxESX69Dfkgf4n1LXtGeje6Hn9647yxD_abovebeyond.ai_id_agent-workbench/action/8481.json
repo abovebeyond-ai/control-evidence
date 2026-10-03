@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f4d27eb6aafaa945fd26f94259faa70d0c9d5983",
+            "branch": "workbench/engine/collect-own-clock",
+            "files_sha256": "278ec9ddc86c917fce8921b2d4117084cac672ad2b03d44db9fae17bb482f8b4",
+            "message": "Collect has its own clock: cron every 30 minutes, the engine as fallback, one shared record"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002175244-ce1c0c"
+}

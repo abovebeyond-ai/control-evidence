@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On the index the last row of \"Needs you\" looked taller than the others.\n\nThe rows have a top border each and the list had 28px of space under it before the machine line's own top border, so the last row ran on into that space. The machine line now sits right under the list and closes it with its border, at the same 10px padding as the rows.\n\nClicking the machine line also left the browser's focus ring round the whole sentence. `summary:focus:not(:focus-visible)` drops the ring for the mouse and keeps it for the keyboard.\n\nBuild ok, lint ratchet at its ceiling.\n",
+            "branch": "workbench/obs/needs-you-rows",
+            "title": "Index: Needs-you rows of one height"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002175043-034f78"
+}

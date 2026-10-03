@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Four places in the Studio that were hard to read.\n\n**The desk: what is draft and what is live**\n- Each row now starts with one label in the colour of where the piece stands: **Own work**, **Draft for the site**, **In review** or **Live on gentells.com**. Before, the state was one spaced-capital word among four (\"OWN WORK \u00b7 0 SOURCES\").\n- The rows are compact: the title at reading size, with sources, premium and the last edit on one line under it, and the author on the right. The empty cover placeholder is gone.\n\n**The line above a piece**\n- \"This piece is [for gentells.com], [draft], [free].\" was a sentence of selects dressed as text, so nobody could see which words were controls.\n- It is now three labelled switches: **Goes to** (Own work, gentells.com), **Stage** (Draft, In review, Live; Live is blocked with the reason while the review is not ready) and **Read by** (Everyone, Paying readers).\n- After them come the citation check as a link, and a quiet **Delete**.\n\n**The rail**\n- Elements, Sources and Cover share one pattern: a heading with its count, one line on what it is for, and the actions as quiet links (\"Tag elements\"; \"Suggest from the graph\", \"Add by hand\"; \"Upload\", \"From the sources\", \"Paste a link\").\n- The red button and the two rows of boxed buttons are gone.\n- The image-link field opens only when asked.\n\n**Curate, Posts**\n- Titles at text size, with sources and date on the same line, and tighter rows, so 63 posts read as a list.\n- The Trends list uses the same type.\n\nChecked with `npm run build` and screenshots of the desk, the editor and Curate against mocked data.\n",
+            "branch": "workbench/studio-clearer",
+            "title": "Studio: where a piece stands at a glance, labelled switches, a calmer rail, a compact posts list"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002165002-96a66e"
+}

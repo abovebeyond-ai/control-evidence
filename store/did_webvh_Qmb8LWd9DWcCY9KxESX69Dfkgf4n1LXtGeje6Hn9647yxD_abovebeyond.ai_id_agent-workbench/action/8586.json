@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Gentells Standard gets a place in the Observatory where the people who own the vocabulary can read it and propose a change, and the step after a new version is one command instead of a migration written by hand.\n\n## What the page reads (`GET /standard`)\n- The pinned version (`packages/core/standard.mjs`), every scheme with its terms (labels in English and Dutch, definition, status, since, how many spellings it is recognised by) and its retired terms with their replacement.\n- The history: the standard's CHANGELOG.md, now carried in the pinned copy as `STANDARD_CHANGELOG` by `bin/sync-standard.mjs` (outside the digest; the digest of v0.4.0 is unchanged). The sync's default ref is v0.4.0 instead of v0.1.0.\n- The data: per table, how many objects carry each `standard_version` (cached ten minutes).\n- The last migration check (see below), with its time.\n\n## Proposals (`/standard/proposals`)\nA table `standard_proposals`: add, rename, define, spelling, retire, other, about one scheme and (except add and other) one term, with a note in words and who sent it. Any signed-in staff member proposes; only an admin accepts or declines (`PATCH`, 403 otherwise). A retirement can only point at a term in the same scheme. Accepted proposals go into the next version, which is still made in the standard's repository and tagged.\n\n## After a new version (`bin/standard-migrate.mjs`)\nThe standard never deletes a term; reading already follows retired ids and spellings. This rewrites the stored tags themselves to the live term (regions, generations and lifestages, on signals, insights, patterns and articles), keeps every previous value in `standard_migrate_undo` under the version, and leaves a tag that matches no term where it is.\n- `node bin/standard-migrate.mjs` dry, `--apply` writes, `--undo <version>` puts back.\n- `--check` writes the dry count to `store/standard-check.json`. The page shows that result; when it is a day old or from another version, the route starts a check in its own process. Counting reads every signal (8 seconds on a copy of production on 2 October), and inside a request it would stop the one-threaded server for that long.\n\nMeasured on a copy of production: no stored tag needs to move under 0.4.0, so the September migrations left the data clean.\n\n`test/standard-page.test.mjs` (5): retag cases, plan/apply/undo under a version, the view, proposals and who may decide. 991 tests pass.\n",
+            "branch": "workbench/standard/page",
+            "title": "Standard: the vocabulary in the Observatory, proposals, and the step after a version"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002195349-b1383d"
+}

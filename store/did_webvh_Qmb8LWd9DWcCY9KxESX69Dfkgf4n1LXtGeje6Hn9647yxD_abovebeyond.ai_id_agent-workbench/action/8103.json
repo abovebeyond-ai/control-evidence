@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c7ab427e4efcb28b7dca0e4bd0f465b63c618a9b",
+            "branch": "workbench/site-trends",
+            "files_sha256": "cd1cb070d77c7e1684f0e79278b98a4e7016995e7b8016c8e7f9ad848e433bd8",
+            "message": "Studio: what is on gentells.com, and why"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002074550-64ccf5"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "27f054f7e7ccaf69c4aef1b62f21ce24",
+    "effect": {
+        "detail": {
+            "base": "b43b9a5ed70db7a470f5df9ff4c89affc777cd38",
+            "branch": "workbench/fix/platform-staff-are-not-a-garage",
+            "commit": "fd6ce3f01009a78484ebb775c061eace7e269b95",
+            "files": 17,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8265,
+    "verdict": "ALLOW"
+}

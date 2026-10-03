@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The academic proposals on the Sources page were forty of the machine's own concept labels at once (\"ai authenticity disclosure paradox creator economy\", \"academic prestige prioritization\"). A literature does not use those words, so the searches land anywhere, and forty lines at once is a wall: 32 have been waiting since 14 and 21 September.\n\n- Only names a researcher could have written are proposed: four words at most, none of the machine's abstractions (paradox, normalization, optimization, prioritization, curation, infrastructure, economy and the like). \"brainrot gaming vernacular\" still qualifies; the compounds above do not.\n- At most ten new proposals a run (`TW_ACADEMIC_PER_RUN`), instead of all forty.\n- The line under a proposal says what a search finds now: \"Seen in 258 signals. A search finds 10 recent papers; 8 of them study people (\u2026)\". The fit check from academic-fit.mjs was already there; this words it for the person approving.\n- Test: `askable()` keeps short concrete names and drops the compounds. 986 tests pass.\n\nThe 32 proposals already waiting are not touched by the job (it never withdraws); they are to be dismissed on the Sources page.\n",
+            "branch": "workbench/academic/fewer-sharper",
+            "title": "Academic follow: ten askable proposals a week"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002191843-7003c0"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c4f72c95cf0903ca16192d7b16768a20d34d55e9",
+            "branch": "workbench/obs/needs-you-rows",
+            "files_sha256": "715f56e99def4085064bfca8224d95bbb538599cb13787c48c0da8a430130cbe",
+            "message": "Index: the machine line closes the Needs-you list, and no focus ring after a click"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002175043-034f78"
+}

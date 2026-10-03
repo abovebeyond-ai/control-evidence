@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "76b1aa7449740331376acf166340eda17becf8a7",
+            "branch": "workbench/ui/text-roles-and-the-design-system",
+            "files_sha256": "4cd2f445dc6b7f6797b3ef983f7e7cdd0c31714a6361b50a3cb923acc55d490f",
+            "message": "Text roles and the design system: a ladder of six sizes, twelve roles, shared page pieces and a test that holds them"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002182907-f552bf"
+}

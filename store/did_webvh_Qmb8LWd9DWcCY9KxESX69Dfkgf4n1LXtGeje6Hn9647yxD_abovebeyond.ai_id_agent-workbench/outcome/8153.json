@@ -1,0 +1,16 @@
+{
+    "action": "a02f28d04f398f78d6d70f9cda73e173",
+    "effect": {
+        "detail": {
+            "base": "926ff8becef38205af75c1eb00ead896d5ac16bd",
+            "branch": "workbench/fix/row-thumbnail-keeps-its-height",
+            "commit": "7d31bc901e398f7412a488bbde66ab08f6ec5fb2",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8151,
+    "verdict": "ALLOW"
+}

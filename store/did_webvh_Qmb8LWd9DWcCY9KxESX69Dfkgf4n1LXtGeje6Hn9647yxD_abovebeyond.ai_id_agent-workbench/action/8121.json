@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5334ed289a39fd73f92e0215400ace1cbc0bd674",
+            "branch": "workbench/studio-home",
+            "files_sha256": "eb16a814a07bc120754124e91e5292840563bae2cdd7281b7e08a35822710bfa",
+            "message": "Studio: open on both modes, Write and Curate"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002100811-a5107b"
+}

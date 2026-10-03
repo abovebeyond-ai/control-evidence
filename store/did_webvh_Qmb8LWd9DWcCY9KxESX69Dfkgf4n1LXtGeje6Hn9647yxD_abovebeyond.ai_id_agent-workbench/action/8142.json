@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The report band on the home page offered two ways in, \"Get the report\" and \"Read the preview\", before the reader had seen anything. The way to get the whole report only appeared on the last page of the preview.\n\n- **Report band (home):** one link, \"Read the preview\" (or \"See the report\" before a preview exists).\n- **Report page:** \"Get access\" now sits next to \"Read the preview\", for anyone who cannot read the full report yet.\n- **End of the preview:** the button \"See the plans\" is now \"Get access\", so it matches.\n- **Back links:** \"All posts\" and \"All trends\" are a size larger, in ink and medium weight. They were small and muted, and hard to find.\n\nTests: 345 passing. Checked locally on the home page and the report page.\n",
+            "branch": "workbench/site/report-cta",
+            "title": "Reports: one way in from the band, Get access on the report page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002104425-caec1a"
+}

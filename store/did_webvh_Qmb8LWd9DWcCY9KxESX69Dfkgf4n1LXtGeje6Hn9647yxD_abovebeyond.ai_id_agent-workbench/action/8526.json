@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was wrong\n\nThe Garages tab of Beheer > Inzichten did not finish loading on production (or took very long).\n\n`GarageHealth` reads the sales of every garage and leaves out the ones that went to a colleague. It asked that per sold car, with a correlated `NOT EXISTS` on `vehicles.seller_vehicle_id`, a column without an index: the whole vehicles table was read once for every sold car, and twice over (the first-and-last query and the per-day query). On the demo data that is invisible; on production it is millions of row reads. The Momentum tab had the same pattern and was fixed before it merged; this one was missed.\n\n## What changes\n\n- The set of bought-over cars is read once and joined against (`LEFT JOIN \u2026 IS NULL`), so the result is the same and the cost is one pass.\n- A migration adds an index on `vehicles.seller_vehicle_id`, guarded so it can run twice. The column is asked about in several places (buy-overs, platform copies); every one of them was a table scan.\n\n## Checked\n\n- `GarageHealthTest`, `MomentumTest`, `EveryInsightsTabStandsOnOnePatternTest`, `PlatformStaffAreNotAGarageTest`: 31 tests green on a database built from the dump plus this migration.\n- Not timed on production-sized data: there is no such copy locally. After the deploy the first load of the Garages tab is the check; the result is cached for an hour.\n- The full suite was not run locally for this two-file change; CI is the judge.\n\n## Deploy\n\nOne migration: an index on the vehicles table. It is a short lock on a table of some tens of thousands of rows.\n",
+            "branch": "workbench/fix/garages-tab-reads-buy-overs-once",
+            "title": "Insights: the Garages tab loads (buy-overs read once, index on seller_vehicle_id)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002185728-601ae6"
+}

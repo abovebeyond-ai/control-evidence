@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The \"How we read\" scene on the home page showed three invented signals, and one of them (\"Friends keep the group chat on a detox\") said nothing.\n\nIt now shows three signals that really sit under the live trend \"Young People Pay for Offline Time but Keep Their Group Chats\", each with its source where the card said \"Signal\":\n\n- Le Monde: Gen Z picks up analog puzzles\n- Future Consumer 2027: Digital detox turns into everyday self-care\n- Brasil 2026, Eco dos Tempos: 72% say they seek solitude\n\nThe three pattern names are three of the trend's real patterns in plain words (offline experience as premium status, digital detox mainstream normalization, platform life infrastructure).\n",
+            "branch": "workbench/site/real-reading-example",
+            "title": "Home: a real reading example"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002183606-b5147a"
+}

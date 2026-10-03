@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "23b77c54e9db0f9663be6444c415a56febe788f8",
+            "branch": "workbench/fix/activity-one-plain-list",
+            "files_sha256": "38a73860c5630abc57e75e5ad350ed59ef0c4b8d006db1767d5eea85e56344ba",
+            "message": "Activity: one plain list of measures, and a garage table that scrolls in its card"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002102235-d38b50"
+}

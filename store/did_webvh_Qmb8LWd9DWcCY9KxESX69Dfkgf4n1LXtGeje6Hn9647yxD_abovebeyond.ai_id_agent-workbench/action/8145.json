@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "170d4843da33c7eb005bc89541adeb03cd3135bf",
+            "branch": "workbench/studio-calmer-colour",
+            "files_sha256": "05d5a46054387ea1c0877a2fde03e720b9a3a26c1b4b3ddc4e3df77959d947c8",
+            "message": "Studio: crimson stays the Studio's colour; the desk drops its kind filter"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002104436-80d95f"
+}

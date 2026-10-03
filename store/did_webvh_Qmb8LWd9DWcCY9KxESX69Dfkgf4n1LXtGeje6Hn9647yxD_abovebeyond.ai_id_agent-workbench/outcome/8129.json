@@ -1,0 +1,16 @@
+{
+    "action": "a42b95d265a0fae3cdcaddb088a7fb00",
+    "effect": {
+        "detail": {
+            "base": "23b77c54e9db0f9663be6444c415a56febe788f8",
+            "branch": "workbench/fix/activity-one-plain-list",
+            "commit": "2ff75f150e1702146c91b127f2ee7b1cd9f22cc0",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8127,
+    "verdict": "ALLOW"
+}

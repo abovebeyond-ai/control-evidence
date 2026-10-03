@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0eb26d1c3365250c62a3b125788a022d6c9ac9a7",
+            "branch": "workbench/fix/an-empty-damage-row-is-no-damage",
+            "files_sha256": "a3d31fbfe923e798d716dab29f60d64edd8eba002b8d64b9f4185c158441b25d",
+            "message": "An empty damage row is no damage: one rule for the section, the markers, the documents and the feeds"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002192655-b6dc49"
+}

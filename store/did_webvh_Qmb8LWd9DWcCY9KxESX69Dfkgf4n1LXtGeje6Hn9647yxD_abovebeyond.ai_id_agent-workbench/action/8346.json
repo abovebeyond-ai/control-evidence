@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two things the Observatory showed as broken.\n\n**The 3D atlas hung on \"Fetching graph data...\"**\n- d8655c4 (29 Sept) removed `/graph-data` and `/explain` as \"nothing calls or reads them\". The caller is `public/signal3d.html` in gentells-dashboard, a static page the server-side search could not see. Since then the atlas has received a 404 and never drawn.\n- Both routes are back, behind staff auth as before.\n- **Lighter:** 4,000 signal nodes instead of 15,000. The database took about 0.6s; building the scene in the browser was the slow part.\n- **Cached:** the full build is kept for five minutes (`X-Atlas-Cache: hit`), since the graph moves slowly.\n- **`/explain`** now runs on the configured model (`callModel`) instead of a model name hard-coded in the route.\n- `test/graph-endpoint.test.mjs` again pins the route and its auth.\n\n**Reports page: \"1 processing\"**\n- The China Mega Report has sat on \"analyzing section 4/14\" since 31 August.\n- The sweep that releases a stalled extraction runs only inside an ingest run, and the engine schedules an ingest run only for queued or retryable reports (`countReportsOwedAttempt`). A stalled one was never counted, so the sweep never ran.\n- Stalled extractions now count as owed an attempt. The next tick schedules the sweep, which closes the report as done if it produced signals, or queues it again if it did not.\n- New test in `report-reconciliation.test.mjs`.\n\n**Not code, left for the owner:**\n- ACTIVATE's file on the box is a 5-byte placeholder, and KARMA's is a Google Drive watermark page. Both need the real PDF.\n- AA fails because the name \"AA\" is too short for the file matcher; renaming the report fixes it.\n\nTests: 963 passing.\n",
+            "branch": "workbench/ops/restore-atlas",
+            "title": "Restore the 3D atlas routes, lighter and cached; stalled reports are owed an attempt"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002162228-3a5639"
+}

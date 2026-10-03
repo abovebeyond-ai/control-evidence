@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d23575f06f832053ec44e1f1785c3b99dbbc3132",
+            "branch": "workbench/evidence/min-observed",
+            "files_sha256": "101345252d0b327999da1d6b09ad3e89b476e663af7a47e7fa8afb0fd31c3ad0",
+            "message": "Showcase: a trend goes on gentells.com with at least five observations of its own"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002205432-59a2df"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "#182 labelled the account page link \"Compare the plans\" for team accounts. It now reads **Change plan** for every account.\n\nThis replaces #184, which conflicted with #182 once that was merged: same change, rebased on main.\n\nTests: 367 passing.\n",
+            "branch": "workbench/site/change-plan-all-2",
+            "title": "Account: Change plan for every account, the team's included"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002155558-03909f"
+}

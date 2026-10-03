@@ -1,0 +1,16 @@
+{
+    "action": "9d9ec19d3daab57ecece27f89932e66e",
+    "effect": {
+        "detail": {
+            "base": "e5022fafbbdd642d51b02f13a2dd4d07876c31c6",
+            "branch": "workbench/ops/restore-atlas",
+            "commit": "adc13e97749ef41c5bb68b43bc3ab94ef1004a96",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8343,
+    "verdict": "ALLOW"
+}

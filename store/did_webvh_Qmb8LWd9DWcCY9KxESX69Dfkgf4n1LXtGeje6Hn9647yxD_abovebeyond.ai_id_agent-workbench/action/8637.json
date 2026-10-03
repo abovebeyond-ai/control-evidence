@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5add7870a58f841bda7002d0a896ee4c3638db8d",
+            "branch": "workbench/studio/edit-rights",
+            "files_sha256": "93f0ed39cf2968b83b8ba721f1f8f8fff7ce20c7ea47bbd3d35847c1c27541e5",
+            "message": "Studio: team pieces read-only for others, the byline in the piece line"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002202532-d55994"
+}

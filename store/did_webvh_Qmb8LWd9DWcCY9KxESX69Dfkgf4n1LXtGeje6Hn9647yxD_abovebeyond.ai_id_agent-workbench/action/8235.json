@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3fa3e4c55851981df2f32ef72d94c268c08833c4",
+            "branch": "workbench/site/fair-use",
+            "files_sha256": "1472f9b2db44f55e4f8ce28b8192c8482bb2b7bab7e684d25a56bb02a5e170fa",
+            "message": "Fair use: the sources brake grows with the plan, and the AI tools page explains every limit"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002114630-a9e4ba"
+}

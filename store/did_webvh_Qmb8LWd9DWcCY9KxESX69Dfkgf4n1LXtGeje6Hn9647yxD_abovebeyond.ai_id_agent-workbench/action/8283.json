@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "57d7dbe81f5646d16c919b6d6d2871282ef90dce",
+            "branch": "workbench/site/connect-tabs",
+            "files_sha256": "9e864f19b7db1cc514ab260fff07e5e64eb7f0c0368782cff3bd8ae3c4ca04ab",
+            "message": "AI tools: one tab per tool with one button, Add to Claude and Add to VS Code, and the steps for IT"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002151431-51b84e"
+}

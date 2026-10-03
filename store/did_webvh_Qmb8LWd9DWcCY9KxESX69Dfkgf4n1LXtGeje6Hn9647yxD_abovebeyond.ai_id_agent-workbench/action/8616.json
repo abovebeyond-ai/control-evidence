@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Studio's Review tab showed {\"error\":\"Unauthorized\"}.\n\nThe review page and its submit run in an iframe, which carries no bearer header, so they check their own token (scope review, bound to one piece, two hours). The server's gate refuses every route that is not on the public list before any handler runs, and these two were not on it, so the gate answered 401 before their own check ran. Reproduced on production: the link is minted (200), the page answers 401.\n\npublic-routes.mjs gets a pattern for exactly `/articles/:id/review/page` and `/articles/:id/review/submit`; the gate test pins that those two pass and that the link, the review summary and the article itself stay behind the staff token. 993 tests pass.\n",
+            "branch": "workbench/studio/review-gate",
+            "title": "Review: the Studio's Review tab answered Unauthorized"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002201119-d07ba2"
+}

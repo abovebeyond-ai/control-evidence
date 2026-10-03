@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three fixes in the Studio.\n\n- **Save sits beside the piece.** The editor bar spanned the window with Save at its far edge, a long way from the text on a wide screen. The bar still spans the window, but its contents now sit in the 1180px column of the piece.\n- **Yours | Team on the desk.**\n  - The single word that flipped between \"mine\" and \"everyone\" read as a label, not a switch. It is now a two-part switch with both choices named.\n  - The desk opens on **Yours**.\n  - Drafts stay private to their author through the pipeline (gentells-pipeline #247), not through this filter. \"Team\" shows what the team shares: shared drafts, pieces in review and published pieces.\n- **Stronger mode icons on the home page:** a solid tile in the mode colour (crimson for Write, aqua for Curate) with a white mark, instead of a faint tint.\n\nChecked with `npm run build` and screenshots of the home page, the desk and the editor against mocked data.\n",
+            "branch": "workbench/studio-desk-polish",
+            "title": "Studio: Save beside the piece, Yours or Team on the desk, solid mode icons"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002114817-f95971"
+}

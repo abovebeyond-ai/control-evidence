@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0eb26d1c3365250c62a3b125788a022d6c9ac9a7",
+            "branch": "workbench/ui/top-menu-dropdown-groups-2",
+            "files_sha256": "ec033a4fca32098ac3359b061d890fa84be457c182b8fbc08a8baa509431c567",
+            "message": "The top bar's dropdown reads as groups: one left edge, quiet group names, regular items"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002192932-3a7682"
+}

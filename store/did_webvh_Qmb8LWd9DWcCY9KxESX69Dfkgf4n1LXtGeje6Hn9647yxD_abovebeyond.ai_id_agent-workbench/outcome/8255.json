@@ -1,0 +1,16 @@
+{
+    "action": "5053ed91a6941bde2eff9fe8304bc465",
+    "effect": {
+        "detail": {
+            "base": "9a8f6c381572552587ec3471a98c43f6f8a0e2d9",
+            "branch": "workbench/fix/activity-says-what-each-measure-is",
+            "commit": "e1a7fd6c7b3f63df2cc77c90ccc7642d7c603c60",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8253,
+    "verdict": "ALLOW"
+}

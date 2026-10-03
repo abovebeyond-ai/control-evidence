@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "An account on gentells.com could be blocked from the Observatory but not deleted.\n\n`POST /internal/accounts/{user}/delete`, signed like the other internal account routes (the pipeline relays it for admins):\n- The account's address has to be typed back (`confirm`), case-insensitive; otherwise 422 and nothing happens.\n- An account that still pays is refused (409): deleting it would not stop the Mollie payments, so the plan is cancelled first.\n- Deleted with it: sessions, API keys and connected tools (access and refresh tokens, auth and device codes), its reads, and its history (account_changes and plan_changes cascade). Feedback keeps its text without the user (nullOnDelete, as before). The newsletter is a consent of its own and stays; an address unsubscribes there.\n- One line remains in `account_deletions`: the account number, who deleted it, when and the note. No name and no address, since deleting is also how someone's data is erased.\n\nTest in InternalAccountsTest. 381 tests pass, Pint clean.\n",
+            "branch": "workbench/site/delete-account",
+            "title": "Accounts: delete an account"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002200854-783f1b"
+}

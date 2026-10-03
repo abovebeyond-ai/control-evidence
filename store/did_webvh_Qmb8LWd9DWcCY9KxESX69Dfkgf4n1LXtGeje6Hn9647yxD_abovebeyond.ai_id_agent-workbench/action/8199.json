@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "20333675e56c64b1df66e14d746dba7400ff72fb",
+            "branch": "workbench/ui/look-balans-2",
+            "files_sha256": "b7ece957f8bd3c2f31e585c919c2940efd2db3232d1361f2998bff833dbb11f7",
+            "message": "The look in one piece: calm neutrals, quiet heads, small corners, less bold, a lower top bar"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002112415-d71766"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f4d27eb6aafaa945fd26f94259faa70d0c9d5983",
+            "branch": "workbench/engine/collect-clock",
+            "files_sha256": "10fbe028f57877b25381f8fa460831f55d5e5c64a16d57381a39c0a9c4af1c06",
+            "message": "Collect keeps its clock in the database, so a run of deploys no longer stops collection"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002174502-a4cd7f"
+}

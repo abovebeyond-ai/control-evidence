@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5add7870a58f841bda7002d0a896ee4c3638db8d",
+            "branch": "workbench/studio-clearer",
+            "files_sha256": "bddcd478773e09cfaefe7c4e2921dd427ae0118630d39121d0de03ce1d8dcaf3",
+            "message": "Studio: where a piece stands at a glance, labelled switches, a calmer rail, a compact posts list"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002165002-96a66e"
+}

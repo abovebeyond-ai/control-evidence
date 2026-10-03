@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9c1340276914cc27ac3a4cb5f406a2cfb59dae4d",
+            "branch": "workbench/obs/people-panel",
+            "files_sha256": "0a9d7355ebe5b998ca41a7c5ec014d863d5b4eb82858cdd9e639b7b8a303ebfa",
+            "message": "People: a plain panel with selects and sentences; no trial for the team"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002170323-562aac"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A pass over the pages the owner walked through, each item from a screenshot of what was unclear.\n\n**Overview**\n- **Collect:** the day's count is neutral. Broken sources get their own line in amber, in the right number (\"1 source is not collecting\"), instead of the whole line in red.\n- **Suggest:** \"12 born, 25 folded, 87 lapsed in 24h. Budget shut: 12 born today, the budget is 12\" is now \"Last 24 hours: 12 new, 25 merged into existing ones, 87 expired. Today's limit of new drafts is reached.\" The count reads \"draft trends\".\n- **Vocabulary line:** \"Of the 980 new concepts named in week 37, 11.3% were used again later. The higher, the more the system reuses its words instead of inventing new ones.\" The pale bars are explained as recent weeks.\n- **Live activity:** \"Listening for pipeline activity...\" now says what the strip is and that nothing new has come in since the page opened.\n\n**Geography**\n- Subject regions are grouped under their wider region from the Standard's region tree (Europe, Americas, Asia-Pacific, Africa and Middle East). A group opens on a click; Global stays on its own.\n- Each panel says what it counts: subject is where what a signal is about happens, source is where the reporting source is based.\n\n**Foresight**\n- The title and the intro now say what an element is and what is compared.\n- \"Tag health\" becomes \"How the tagging is going\", with its numbers in a sentence. The empty state says why nothing shows yet.\n\n**Mix**\n- The intro and the footnote use the full width.\n- Changes against the period before are bold, green when up and amber when down. The kept share and the cited count are bold.\n\n**Settings**\n- The spaced-capital subtitles are plain sentences, here and on Analytics, Graph, Chat, Evals and Earned autonomy. The tab-level line that repeated each section's own subtitle is gone.\n- Team rows sit on a fixed grid, so \"admin\" lines up whether or not the row can be removed. The team text names gentells.com.\n- \"Probe token\" becomes \"Read-only access key\", with what it is for, what it cannot do and that it expires. The button is \"Make a key\", no longer red.\n\n**Everywhere**\n- Underline tabs and header buttons are square, so underlines no longer curve at the ends.\n- The current page in every pager is ink with white text. Reports used a colour token that does not exist, so its number was invisible.\n- The items on the right of the header share one box, so they line up.\n\nChecked: `npm run build`, e2e 27 passing.\n",
+            "branch": "workbench/obs/plain-words",
+            "title": "Observatory: plain words and straight lines across overview, geography, foresight, mix, settings"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002161543-2b6643"
+}

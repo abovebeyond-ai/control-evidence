@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5421399e0f2cd479fb0307755e6fcb21fbf27a5f",
+            "branch": "workbench/auth-mail-gentells",
+            "files_sha256": "14b21e2dd49a9a88129683783d9f9f8f9c875e6b0ca786dce27c9a166b81f834",
+            "message": "Invite and reset mails: the account opens gentells.com too"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002160701-ce3c00"
+}

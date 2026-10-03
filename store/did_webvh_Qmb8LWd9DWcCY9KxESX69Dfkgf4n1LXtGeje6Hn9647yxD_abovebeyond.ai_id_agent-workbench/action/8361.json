@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a00363903e62ccf45b153bd6fc09e7f74768973a",
+            "branch": "workbench/site/accounts-proxy",
+            "files_sha256": "64ef0276c6f97e5737cc3edc0abc150c0bbb5d22479a91aae6b87bd8289cbe91",
+            "message": "Accounts: an admin-only relay to the site's account routes"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002163407-c88c0f"
+}

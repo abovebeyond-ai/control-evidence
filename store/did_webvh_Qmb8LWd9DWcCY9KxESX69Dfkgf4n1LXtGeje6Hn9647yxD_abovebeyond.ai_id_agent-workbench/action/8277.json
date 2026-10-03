@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bd4eac68cb943d2bb6b783bc64885a4859c164df",
+            "branch": "workbench/site/gates",
+            "files_sha256": "98b08cbaffbe3dee718c898a1e4427bae9b51f8c26d25f8ca3855a04a9d225a4",
+            "message": "Gates: one rule per ability across the page, the API and MCP"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002141521-53d04b"
+}

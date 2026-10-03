@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "80d6bc61b31a5e26332eaab3ff9ee8ce450701b1",
+            "branch": "workbench/obs/trend-edit",
+            "files_sha256": "5854a669639ceac365180d7ef00b183b87b1ff62a5ea54196712b11edcc7a197",
+            "message": "Trend page: edit the headline and reading, and decide whether it shows on gentells.com"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002201413-f28bd5"
+}

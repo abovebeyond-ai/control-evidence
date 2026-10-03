@@ -1,0 +1,16 @@
+{
+    "action": "d884ade2fdad26a022869c23eda960bd",
+    "effect": {
+        "detail": {
+            "base": "5add7870a58f841bda7002d0a896ee4c3638db8d",
+            "branch": "workbench/studio/curate-fixes",
+            "commit": "209b4843eb209544aba4b44e25359410c8c4f853",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8625,
+    "verdict": "ALLOW"
+}

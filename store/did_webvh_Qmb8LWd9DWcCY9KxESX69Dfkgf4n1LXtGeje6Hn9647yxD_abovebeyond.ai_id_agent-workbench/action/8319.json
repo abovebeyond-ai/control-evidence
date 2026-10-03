@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bf2e104df13b04e2efd6f7dd3b2cdb80486118ec",
+            "branch": "workbench/site/real-example",
+            "files_sha256": "083491862f164ec2758333b17fab46b8b579612203ff0178cee25842971f0f2e",
+            "message": "How we read: a real example, the trend Young people pay for offline time"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002160316-300d3f"
+}

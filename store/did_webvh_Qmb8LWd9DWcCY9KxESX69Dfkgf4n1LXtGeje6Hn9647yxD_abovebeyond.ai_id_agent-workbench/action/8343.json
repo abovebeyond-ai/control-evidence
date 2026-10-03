@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e5022fafbbdd642d51b02f13a2dd4d07876c31c6",
+            "branch": "workbench/ops/restore-atlas",
+            "files_sha256": "4cf1b6b5a1c4f42f697bf39efccb7eb7fe0e6db387257d08947209282525ca68",
+            "message": "Restore the 3D atlas routes, lighter and cached; stalled reports are owed an attempt"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002162228-3a5639"
+}

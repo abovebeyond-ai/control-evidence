@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5580d042ecd91b0e8ba4dc7c8318fdc25f9e1858",
+            "branch": "workbench/ci/coverage-merge-gets-its-memory",
+            "files_sha256": "041b6c2a93adc6b1071af2b12e562994a6e9786a55763348f600728f14162b61",
+            "message": "CI: the coverage merge on main gets 2G of memory"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002190252-5cdc76"
+}

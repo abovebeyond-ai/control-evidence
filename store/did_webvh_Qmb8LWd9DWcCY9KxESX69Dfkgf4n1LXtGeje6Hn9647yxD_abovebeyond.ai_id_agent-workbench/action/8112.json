@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The desk showed what was being written; what gentells.com carried, and why, was nowhere to be seen.\n\nThe Studio now opens with two modes:\n- **Write**: the desk as it was.\n- **gentells.com**: three tabs.\n  - Posts: live on the site (with a link to each), in review, drafts headed for the site.\n  - Trends: waiting for a decision (put on the site, skip), live with the reason each is there (view, hide), hidden (put back).\n  - Reports: the existing shelf.\n\nMode and tab live in the URL (`?mode=site&tab=trends`). The switch hides while a piece is open in the editor.\n\nNeeds the pipeline PR with `/site/trends` merged first. Checked locally with `npm run build` and a Playwright run against mocked API responses.\n",
+            "branch": "workbench/site-mode",
+            "title": "Studio: a gentells.com mode with posts, trends and reports"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002074612-c0392c"
+}

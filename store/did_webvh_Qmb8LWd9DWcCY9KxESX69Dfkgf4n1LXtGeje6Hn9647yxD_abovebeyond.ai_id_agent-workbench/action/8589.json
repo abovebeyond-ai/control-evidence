@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7cd66afe17efda197554e122b775f6ec8c571fb2",
+            "branch": "workbench/obs/standard",
+            "files_sha256": "4434db26eb8b60d0c0f6b82d97806d8535e80c620b9f7ab48a3adc04e7ccfca3",
+            "message": "Standard: the vocabulary, its versions, and proposals to change it"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002195404-b26a1b"
+}

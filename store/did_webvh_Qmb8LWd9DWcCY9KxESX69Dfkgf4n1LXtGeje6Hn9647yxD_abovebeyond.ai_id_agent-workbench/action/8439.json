@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f3584e54b3cd209d9f7b23050e679846bbc90478",
+            "branch": "workbench/obs/live",
+            "files_sha256": "eec7d90c483ded4e055f12d5c31753cf0848c2bb4c39544b27bf5503688bfc9d",
+            "message": "Live: what the pipeline is doing now, in three streams"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002172210-568d1b"
+}

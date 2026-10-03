@@ -1,0 +1,16 @@
+{
+    "action": "62a8faf03af674f840661f6f8833aa49",
+    "effect": {
+        "detail": {
+            "base": "ede0788456afe6057965283c8c649f09ae2c438b",
+            "branch": "workbench/feat/insights-momentum-garages-one-pattern",
+            "commit": "2ccc48352b677d9b12b42d70d74e9f976edb216f",
+            "files": 68,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8517,
+    "verdict": "ALLOW"
+}

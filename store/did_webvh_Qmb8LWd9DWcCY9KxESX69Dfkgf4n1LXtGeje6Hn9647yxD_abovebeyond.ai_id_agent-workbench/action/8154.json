@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was wrong\n\nIn the own stock list, on screens narrower than 1550px, the photo of a row showed as a flat strip: the top of the photo, 60px wide and about 28px high.\n\nThe rule for that width set the thumbnail frame to `width: 60px; height: auto`. The frame holds an absolutely positioned photo over a placeholder, so `auto` made the frame as high as the placeholder icon (26px) and not as high as a photo. The same rule also set `height: auto` on the photo itself, which overruled the `height: 100%` that makes it fill its frame.\n\n## What changes\n\n- The frame gets a photo's proportions below 1550px: 66 by 44px (it is 74 by 50px above that width, unchanged).\n- The `height: auto` no longer applies to the photo inside a frame (`.ui-photo-img`), so the photo fills the frame and is cropped by `object-fit: cover` as it is on wide screens.\n\nTwo lines in `resources/css/refresh.css`; the file does not grow. Rows become about 16px higher on those screens, which is the height the photo needs.\n\n## Not checked\n\nNot rendered locally with real photos (the local demo data has none); the same frame size was checked on a local branch with the placeholder. CI is the judge for the stylesheet tests.\n",
+            "branch": "workbench/fix/row-thumbnail-keeps-its-height",
+            "title": "The row thumbnail keeps a photo's height below 1550px"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002105914-441bb8"
+}

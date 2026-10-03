@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "68b3f81ea93acb08c3abc3bfa2bf466112d8d383",
+            "branch": "workbench/site/readable-reads",
+            "files_sha256": "d2c7482b3241139c9b760bbb8107b76bb90c8a9b07dbf9bc14c9ab88e8263f72",
+            "message": "Account: the last reads in words, by title, in a box that scrolls"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002155144-06060a"
+}

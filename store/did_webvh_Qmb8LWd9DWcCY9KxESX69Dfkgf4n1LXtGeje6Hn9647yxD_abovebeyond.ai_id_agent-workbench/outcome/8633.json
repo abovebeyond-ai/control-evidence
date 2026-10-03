@@ -1,0 +1,16 @@
+{
+    "action": "b310d244bf51e454c9198af2ff49390b",
+    "effect": {
+        "detail": {
+            "base": "f5583baf336cca4711bf7e403226d2cd9c33a72d",
+            "branch": "workbench/studio/edit-rights",
+            "commit": "1af82beb8f5d37359baa2a7a9e6c72f70d801a2f",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8631,
+    "verdict": "ALLOW"
+}

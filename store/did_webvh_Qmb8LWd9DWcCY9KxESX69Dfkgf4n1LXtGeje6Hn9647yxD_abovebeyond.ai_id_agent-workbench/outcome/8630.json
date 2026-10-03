@@ -1,0 +1,17 @@
+{
+    "action": "048a68ea5aaff7fe48ea76ff04092b00",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 30,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/Trendwolves/gentells-studio/pull/30",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8628,
+    "verdict": "ALLOW"
+}

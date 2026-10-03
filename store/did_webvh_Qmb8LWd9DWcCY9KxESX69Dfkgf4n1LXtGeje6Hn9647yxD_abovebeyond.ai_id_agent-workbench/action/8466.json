@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Nothing came in from 16:33 UTC on 2 October for more than an hour, while collection normally brings 100 to 170 signals an hour.\n\nThe collect clock was the one phase clock still kept in memory. At start the worker set it to \"just collected\" (whether or not it collected), and collect waits 30 minutes after that. Five deploys came less than 30 minutes apart (16:36, 16:51, 16:57, 17:09, 17:22), each restarting the worker, so collect was never due. The other time-gated phases moved to `phase_runs` on 2026-09-13 for the same reason; collect was left out.\n\n- `lastCollect` is read from `phase_runs` at start, and both places that run collect mark it after.\n- The startup block is gone: it skipped collect whenever the backlog was 10 or more (it is ~60,000 enriched signals, so always) and then pretended a collect had just run. The loop now collects when the real clock says it is due.\n- `test/phase-clocks.test.mjs` holds the worker to this. 985 tests pass.\n\nThe first start after this deploy has no `collect` row yet, so it collects at once.\n",
+            "branch": "workbench/engine/collect-clock",
+            "title": "Collect keeps its clock in the database"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002174502-a4cd7f"
+}

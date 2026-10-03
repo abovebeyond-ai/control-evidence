@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bf2e104df13b04e2efd6f7dd3b2cdb80486118ec",
+            "branch": "workbench/site/survey-year",
+            "files_sha256": "c431b958f731bd816415819e3c0692437bde6390d33726974b522fb7a36b0eb9",
+            "message": "How we read: the survey in the example is from this year"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002160110-9f3d75"
+}

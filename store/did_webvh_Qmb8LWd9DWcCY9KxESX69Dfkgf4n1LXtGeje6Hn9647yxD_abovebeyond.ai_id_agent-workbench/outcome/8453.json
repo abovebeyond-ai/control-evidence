@@ -1,0 +1,16 @@
+{
+    "action": "5a913b4e6431869bc5670d46e8fca697",
+    "effect": {
+        "detail": {
+            "base": "1ceabd1500b129e73c9f5aaa54695b1df2d31dc9",
+            "branch": "workbench/ops/cron-guards",
+            "commit": "34adc0aaad3696985c7ecf9292a4ee9fd06092d1",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8451,
+    "verdict": "ALLOW"
+}

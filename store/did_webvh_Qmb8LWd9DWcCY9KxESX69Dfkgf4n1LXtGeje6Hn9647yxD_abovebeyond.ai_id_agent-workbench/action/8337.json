@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ff5926bb812217ffb4b367b5130a3bf6a6b55b00",
+            "branch": "workbench/obs/plain-words-2",
+            "files_sha256": "e1539b81831e28ec371603341e2c0c6959ede34cbf6171140855e195e262955d",
+            "message": "Observatory: plain words and straight lines across overview, geography, foresight, mix, settings"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002161907-10bed3"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A set of changes for members and a few site-wide fixes, each checked locally (screenshots logged out and logged in as a local test reader).\n\n**For members (logged in)**\n- **Menu:** \"Services\" and \"Pricing\" make way for **Your plan**, which leads to the account page. Both are the sales half of the site and say much the same thing to someone who already has a plan.\n- **Reading room:**\n  - no rule under the welcome;\n  - the newest post and six more instead of the whole archive, with \"All posts \u2192\";\n  - the current report in the same band as on the public home page.\n- **Contact:**\n  - says which plan the member is on;\n  - fills in name and email;\n  - offers topics about the plan (\"A question about my plan\", \"Changing my plan\");\n  - links to Your plan and the reports.\n\n**Site-wide**\n- **\"How we read\" scroll scene:** it pins below the 96px header instead of under it, so the heading and the first step no longer slide behind the menu. The scene is a quarter shorter (320vh).\n- **Trend graph:** the trend layer sits at y 68 instead of 76. It floated a floor too high above the patterns.\n- **Footer:** the two page columns are as wide as their words, closer together, and start on the column line like Sectors.\n- **Mails:** the header carries the full logo with \"Decoding youth culture\", as a PNG (`brand/gentells-logo-full@2x.png`, rendered from the SVG) because mail clients strip SVG.\n- **Sign-in card:** white with a hairline on the green-tinted ground, instead of warm stone on cool green.\n\nTests: 345 passing.\n",
+            "branch": "workbench/site/members-pass",
+            "title": "Members: Your plan, a plan-aware contact page, a shorter reading room; footer, mail logo, scroll scene"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002110226-ae6c5d"
+}

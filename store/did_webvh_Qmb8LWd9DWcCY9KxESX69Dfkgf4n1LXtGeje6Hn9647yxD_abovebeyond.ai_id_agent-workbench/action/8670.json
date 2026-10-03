@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A trend goes on gentells.com when it has seen it: at least five observations of its own.\n\nOn 2 October 21 of the 61 trends on the site rested on fewer than five things anyone posted, four on none: other people's reports, read back. Gentells sells what it saw.\n\n- `decideShowcase(id, 'approved')` refuses a trend with fewer than `TW_SITE_MIN_OBSERVED` (default 5) observed signals (the Standard's evidence kind `observed`, i.e. platform signals), with the count in the reason: \"Seen on platforms 1 time; a trend goes on gentells.com with at least 5 observations of its own.\" Both doors use it: the Studio's Curate and the curation mail. Skipping and hiding are always possible.\n- The Curate queue (`/site/trends` pending) carries `observed` per trend, so the Studio can show it before anyone presses Approve.\n- Trends already on the site are not touched: a search for their own observations runs first (widen-evidence, separate PR), and what stays empty after it is a decision for later.\n\n`test/site-min-observed.test.mjs`; the older showcase tests, whose fixtures carry no signals, set the minimum to 0. 997 tests pass.\n",
+            "branch": "workbench/evidence/min-observed",
+            "title": "Showcase: at least five observations of its own"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002205432-59a2df"
+}

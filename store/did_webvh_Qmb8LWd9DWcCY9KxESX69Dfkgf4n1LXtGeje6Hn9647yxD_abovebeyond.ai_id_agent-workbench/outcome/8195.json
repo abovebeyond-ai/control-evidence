@@ -1,0 +1,16 @@
+{
+    "action": "f1c2d5344dde03154f827ff0e0fe8edd",
+    "effect": {
+        "detail": {
+            "base": "a4c1379271337a47e1148cded2eb666d318c86cc",
+            "branch": "workbench/site/report-end-copy",
+            "commit": "7cd6b9e01a5cb5cd70c2559bc8c9943ec3b43f6b",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8193,
+    "verdict": "ALLOW"
+}

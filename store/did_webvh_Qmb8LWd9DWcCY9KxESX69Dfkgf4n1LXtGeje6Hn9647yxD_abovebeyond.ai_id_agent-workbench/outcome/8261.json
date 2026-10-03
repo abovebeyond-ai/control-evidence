@@ -1,0 +1,16 @@
+{
+    "action": "b68ca49e90f2125c323fbb5243e47203",
+    "effect": {
+        "detail": {
+            "base": "9a8f6c381572552587ec3471a98c43f6f8a0e2d9",
+            "branch": "workbench/fix/activity-leaves-platform-staff-out",
+            "commit": "e204dfa74ab9f01da996dbfb98f83864df60d91e",
+            "files": 19,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8259,
+    "verdict": "ALLOW"
+}

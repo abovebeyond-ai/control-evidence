@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was off\n\nIn the dropdowns of the top bar (the bidding menu with its two groups, and the plain ones) the group name and the items under it did not share a left edge (the name sat at 10px, the items at 14px, because an `!important` on the item padding overruled the mega menu's own), the items were set at weight 500 in the second ink so every line read as a heading, and the last item sat close to the bottom edge.\n\n## What changes\n\n`resources/css/refresh.css`, values on existing lines only (the file does not grow):\n\n- Group name and items share one left edge (16px); the group name is a quiet note (weight 400, third ink) with a little air above it.\n- Items are regular weight in the full ink: they are what you click. The active item keeps its blue bar and weight 500.\n- The menu has 8px of room at top and bottom; the mega menu's groups are 210px wide and separated by the existing hairline only.\n\n## Checked\n\nRendered locally on demo data at 1440: the bidding menu open (two groups, the highlighted first item) and aligned. The Beheer menu (two-column `ui-mega-left`) was not changed. Not checked on a phone: the top menu is desktop only (from 1200px).\n",
+            "branch": "workbench/ui/top-menu-dropdown-reads-as-groups",
+            "title": "Top bar dropdown: one left edge, quiet group names, regular items"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002192056-16d678"
+}

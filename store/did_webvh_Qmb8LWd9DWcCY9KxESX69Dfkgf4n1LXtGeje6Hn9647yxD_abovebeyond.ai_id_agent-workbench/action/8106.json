@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Studio gets a gentells.com mode (gentells-studio, a separate PR) that shows what the public site carries and why. This is its pipeline side.\n\n- `GET /site/trends`: the trends on the site, each with the reason it is there (a published post cites it, followed through supersede chains, or an editor approved it), the proposals that wait for a decision, and the trends an editor hid.\n- `POST /site/trends/:id` with `{action: approve | skip | hide}`: maps to the showcase statuses approved, rejected and the new `hidden`, then refreshes the trends projection.\n- `hidden` keeps a trend out of `listShowcaseInsights` even when a post cites it; approving it again brings it back.\n\nTests: three new cases in `test/showcase.test.mjs` (reason post, reason approved, hide and put back). Full suite 957 passing.\n\nMerge this one before the Studio PR, which calls these routes.\n",
+            "branch": "workbench/site-trends",
+            "title": "Studio: what is on gentells.com, and why"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002074550-64ccf5"
+}

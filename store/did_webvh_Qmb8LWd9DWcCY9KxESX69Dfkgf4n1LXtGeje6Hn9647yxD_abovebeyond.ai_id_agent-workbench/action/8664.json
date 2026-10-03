@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was off\n\nOn \"Mijn aangeboden wagens\" the state label is a tinted box with its own padding, so its text stood 8px to the right of the column head above it and of the term below it (\"termijn voorbij\", \"nog 3 dagen\"): three left edges in one column.\n\n## What changes\n\n`resources/css/ui.css`: the label is pulled left by its own padding, so its text, the column head and the term share one edge; the tint extends into the row's margin. On the phone card, where label and term sit side by side, the label keeps its normal place.\n\n## Checked\n\nMeasured locally at 1440 on demo data: head, label text and term all start at the same x on every row (20 rows). Looked at the screenshot. Not rerun: the test suite (a two-line CSS change; `StylesheetSyntaxTest` and the ratchets run in CI).\n",
+            "branch": "workbench/ui/offer-state-label-on-the-column-edge",
+            "title": "Offered cars: state label, column head and term share one left edge"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002203551-4548c8"
+}

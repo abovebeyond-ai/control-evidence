@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Collecting gets its own clock, so it no longer waits for the engine.\n\nThis branch builds on #256 (the collect clock in `phase_runs`) and contains its commit; merging this one makes #256 redundant.\n\nUntil now collect was one of the engine's phases, chosen when its score won, at most every 30 minutes, and in the same process as everything else. A run of deploys (2 October, nothing in from 16:33 for over an hour) or a long phase meant nothing came in.\n\n- `ops/crontab`: collect runs at :05 and :35, whatever the engine does. It replaces the two-hourly line that only fired when the engine was down. The guard `^(/usr/bin/)?node packages/pipeline/collect.mjs` sees a collect started by cron or by the engine.\n- `collect.mjs` marks the clock itself (`collect-started` at start, `collect` at the end), so a run by either counts. With `--if-due=25` it steps aside when the last run is under 25 minutes old or a run started in the last 15 minutes is still going.\n- The engine keeps collect as a fallback: it reads the shared clock every loop and calls collect with `--if-due=25`, so it only collects when cron did not.\n- `test/phase-clocks.test.mjs` and `test/cron-guards.test.mjs` cover it. 985 tests pass.\n\nAfter merge the crontab needs `bin/crontab-install --apply` on the box (as for #255).\n",
+            "branch": "workbench/engine/collect-own-clock",
+            "title": "Collect has its own clock"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002175244-ce1c0c"
+}

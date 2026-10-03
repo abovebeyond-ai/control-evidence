@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The **Last reads** list on the account page printed the route and the raw subject, for example `mcp.get_trend \u00b7 insight-2026-08-27-07403419`. That said nothing to a member, and twenty rows pushed the rest of the page down.\n\n**Each read is now a sentence**\n- What was done: \"Opened a trend\", \"Searched the trends\", \"Read a post\", \"Listed the reports\", \"Checked the plan\".\n- What it was about: the trend's headline or the post's title, linked; a search shows its words.\n- Which tool did it: the key name, or the OAuth client's name.\n- \"(needs Decode)\" when the plan held something back.\n- Aliased and superseded trends resolve to the trend they are now.\n\n**The list scrolls** in its own box, about eight rows high.\n\nTests: `ReadableReadsTest` (no route names, the headline shown). 367 passing. Pint clean. Checked locally with seeded reads.\n",
+            "branch": "workbench/site/readable-reads",
+            "title": "Account: the last reads in words, by title, in a box that scrolls"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002155144-06060a"
+}

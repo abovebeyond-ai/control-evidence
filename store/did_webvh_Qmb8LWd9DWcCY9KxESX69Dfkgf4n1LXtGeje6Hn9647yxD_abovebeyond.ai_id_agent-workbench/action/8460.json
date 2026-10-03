@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Foresight said \"Nothing has moved in this window yet\" while the tagger had not run since July (pipeline PR alongside). The page also explained itself in terms only its builder could follow.\n\n- The question first, in one sentence: which of the twelve elements is gaining ground in a region. Then how a card answers it: one element in one region, its share of that region's signals now, next to the share in the period before (the tick).\n- When the newest tagged signal is older than two days: a framed notice that tagging has stopped, with the date.\n- The empty state says what there was to compare (\"0 tagged signals in the last 30 days, 0 in the 30 days before\") or that nothing gained ground across N tagged signals.\n- Tagging box: tagged, newest tag date, and waiting (with what \"waiting\" counts). The \"balanced\" label is gone; only a drifting element is named.\n- Window buttons read \"Last 30 days\" etc.; card lines read \"18% to 29% of the region's signals: 88 of 301, was 51 of 280\".\n- No spaced capitals; Emerging in the brand teal instead of red.\n\nUses `newestTagged` and `tagged` from the pipeline PR; without them the page falls back to the old wording. Build ok, lint ratchet at its ceiling, 28 e2e pass.\n",
+            "branch": "workbench/obs/foresight-plain",
+            "title": "Foresight: say what it asks, and when tagging stopped"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002173513-b85424"
+}

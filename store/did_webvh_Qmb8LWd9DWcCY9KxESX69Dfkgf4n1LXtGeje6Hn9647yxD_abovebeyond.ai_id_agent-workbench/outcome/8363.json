@@ -1,0 +1,16 @@
+{
+    "action": "322cd153b3dda977c7dac9850e9d02f3",
+    "effect": {
+        "detail": {
+            "base": "a00363903e62ccf45b153bd6fc09e7f74768973a",
+            "branch": "workbench/site/accounts-proxy",
+            "commit": "807f6048c16e7022d894724ab1b1f73ed2f0a4bf",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8361,
+    "verdict": "ALLOW"
+}

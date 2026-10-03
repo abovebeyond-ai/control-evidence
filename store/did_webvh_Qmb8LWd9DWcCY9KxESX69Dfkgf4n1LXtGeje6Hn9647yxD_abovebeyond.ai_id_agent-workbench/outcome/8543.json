@@ -1,0 +1,16 @@
+{
+    "action": "86ec4bec118b10c112f42e97e9d8730a",
+    "effect": {
+        "detail": {
+            "base": "2997dfa75415de7b6237a7f35a74289d22425a1f",
+            "branch": "workbench/obs/menu-baseline",
+            "commit": "13f20aa8fb8e8ff7c106c9ba6d32b2340a0c7386",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8541,
+    "verdict": "ALLOW"
+}

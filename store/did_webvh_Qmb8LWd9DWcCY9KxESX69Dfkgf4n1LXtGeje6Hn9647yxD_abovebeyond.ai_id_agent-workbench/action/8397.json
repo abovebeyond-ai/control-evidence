@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c509ce1b6ba0dd50ff888f87caeb97ccb8e3cb24",
+            "branch": "workbench/obs/people-toggles",
+            "files_sha256": "19aecb42af0b2ab7056849173f8597b478964a9f7c2f172256f7d39e3b38e688",
+            "message": "People: a picked option looks picked, not like a button; the invitation on its own line"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002165247-549c47"
+}

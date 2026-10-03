@@ -1,0 +1,16 @@
+{
+    "action": "c3d63f3c3f69a67f240c6b30569172e4",
+    "effect": {
+        "detail": {
+            "base": "7b35f32c06869344da5163272524c029bf97ac7b",
+            "branch": "workbench/feat/resend-cars-whose-damage-cleared",
+            "commit": "412e000eec8ac2385856122bb142ce9f3dc43119",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8727,
+    "verdict": "ALLOW"
+}

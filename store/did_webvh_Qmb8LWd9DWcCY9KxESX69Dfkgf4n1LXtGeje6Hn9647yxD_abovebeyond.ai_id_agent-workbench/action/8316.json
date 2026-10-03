@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first signal in the \"How we read\" scene said \"A pitch deck quotes a 2023 survey\", which read as a page left behind.\n\nIt now names the current year (`now()->year`), so it stays current without an edit.\n\nTests: 367 passing. Checked locally: \"A pitch deck quotes a 2026 survey\".\n",
+            "branch": "workbench/site/survey-year",
+            "title": "How we read: the survey in the example is from this year"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002160110-9f3d75"
+}

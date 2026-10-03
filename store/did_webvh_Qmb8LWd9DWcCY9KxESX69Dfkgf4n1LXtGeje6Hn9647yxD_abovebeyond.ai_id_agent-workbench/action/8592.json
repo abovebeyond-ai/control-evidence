@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A page for the Gentells Standard under Data (needs the pipeline PR that adds `/standard`).\n\n- The version the pipeline runs on, with one paragraph on what the standard is and how it changes (never deletes a term; every object records its version), and the four steps of a change.\n- One tab per scheme (straight underlines): its definition and source, every term with its English and Dutch label, what it means, since which version, and how many other spellings it is recognised by. Nested schemes (regions, reading layers) list each term under the one above it. Retired terms say what they now read as.\n- **Propose a change** on any term (rename, change what it means, add a spelling, retire it with what old tags should read as, something else) and **Propose a new term** per scheme, each with a note in words. The proposals list shows who and when; an admin accepts or declines.\n- **In the data**: whether every stored tag already reads as a term of this version (the last migration check, with its date), and per table how many objects carry each version.\n- **How it changed**: the standard's changelog, one fold per version, the newest open.\n\n`e2e/standard.spec.js` covers the page and sending a proposal. Build ok, lint ratchet at its ceiling, 30 e2e pass.\n",
+            "branch": "workbench/obs/standard",
+            "title": "Standard: a page for the vocabulary and its versions"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002195404-b26a1b"
+}

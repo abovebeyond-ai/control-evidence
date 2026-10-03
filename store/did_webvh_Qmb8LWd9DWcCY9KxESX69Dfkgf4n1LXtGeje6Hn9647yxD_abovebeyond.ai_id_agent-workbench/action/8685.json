@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2c117e8bf578d7440d84884877f7b6307451b70c",
+            "branch": "workbench/ci/coverage-merge-memory-on-the-command",
+            "files_sha256": "536afa897b0163c43bb24f7f6860b67ed39d5bba5c6a04f8676547fecbfb11e8",
+            "message": "The coverage merge gets its memory where PHPUnit reads it"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002210244-4630e8"
+}

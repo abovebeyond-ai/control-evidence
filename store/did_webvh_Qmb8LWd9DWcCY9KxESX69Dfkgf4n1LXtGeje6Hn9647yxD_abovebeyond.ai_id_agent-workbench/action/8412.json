@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The panel on People was a grid of toggles that all looked alike. It now uses plain controls, each saying what it does.\n\n- **Plan on gentells.com:** a select. For a team member it is a sentence instead (\"Intelligence, because Ellen is on the team. It goes back when they leave.\"), since it cannot be changed there.\n- **Trial:** a select (\"Start a trial of 7, 14 or 30 days\", \"End the trial now\"). It is not shown for team members, who already have the top plan.\n- **Observatory and Studio:** a select: Remove from the team, Member (reads and writes), Admin (also runs settings and people). For someone not on the team it reads Invite as member or Invite as admin. A pending invitation can be sent again.\n- **Account:** \"Active since \u2026\" with a quiet **Block this account**, which asks first and says what blocking does. A blocked account shows it in red, with Unblock.\n\n**Fixes**\n- The table cells now have padding on both sides, so a name no longer touches the tinted edge of an open row.\n- A stray \"0\" next to the team controls is gone: React rendered `pending = 0`.\n\nChecked: build, lint at its ceiling, e2e 28 passing.\n",
+            "branch": "workbench/obs/people-panel",
+            "title": "People: a plain panel with selects and sentences; no trial for the team"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002170323-562aac"
+}

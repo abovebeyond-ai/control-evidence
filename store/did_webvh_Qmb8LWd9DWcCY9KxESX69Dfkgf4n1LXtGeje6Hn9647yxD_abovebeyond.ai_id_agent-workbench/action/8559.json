@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0eb26d1c3365250c62a3b125788a022d6c9ac9a7",
+            "branch": "workbench/feat/garages-info-and-module-filter",
+            "files_sha256": "314198e6da41caad89e71cbacdb5cb882fa530996941118a4a8801150e5858fc",
+            "message": "Garages: an info mark at the acts, a module filter, and a running month that does not say who stopped"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002192503-38ab5e"
+}

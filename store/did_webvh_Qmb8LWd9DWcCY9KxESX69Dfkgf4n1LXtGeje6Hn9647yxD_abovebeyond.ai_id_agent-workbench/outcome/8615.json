@@ -1,0 +1,16 @@
+{
+    "action": "ca974e636ac41dd24bbfd73bda7f244c",
+    "effect": {
+        "detail": {
+            "base": "ef4e1234e07f96392ae037ebd858243663bee231",
+            "branch": "workbench/studio/review-gate",
+            "commit": "d2e4dc8368129709b8df4c2b1b31dc41e3dc7015",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8613,
+    "verdict": "ALLOW"
+}

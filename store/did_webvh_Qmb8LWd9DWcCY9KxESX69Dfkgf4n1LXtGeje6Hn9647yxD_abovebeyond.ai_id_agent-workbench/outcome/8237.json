@@ -1,0 +1,16 @@
+{
+    "action": "03cf236e7e100b3d3a144a39cce8fe77",
+    "effect": {
+        "detail": {
+            "base": "3fa3e4c55851981df2f32ef72d94c268c08833c4",
+            "branch": "workbench/site/fair-use",
+            "commit": "d77856a5a4991bfef2978588c13b498bf322e515",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8235,
+    "verdict": "ALLOW"
+}

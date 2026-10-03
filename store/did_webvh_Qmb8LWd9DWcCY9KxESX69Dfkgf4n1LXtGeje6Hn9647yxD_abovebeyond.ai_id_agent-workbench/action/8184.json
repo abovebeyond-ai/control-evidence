@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "More follow-ups for members.\n\n- **Reading room heading:** the greeting is now the page title (\"Welcome back, Shane.\", in the section-title size), and the posts follow it directly. Before, \"The reading\" stacked a second display heading under a smaller greeting, and the two competed. The top \"All posts\" link goes too: \"More posts\" under the cards already leads there.\n- **Report band:** a member whose plan opens the report sees **Read the report**, not \"Read the preview\". This uses the same `isDeliverableTo` check as the report page.\n- **AI tools page:** a member sees **Your plan and keys** instead of \"See what each plan opens\". \"Create a free account\" was already guest-only.\n\nTests: 355 passing, one new test for the band label.\n",
+            "branch": "workbench/site/member-labels",
+            "title": "Members: one heading in the reading room, Read the report when the plan opens it"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002111602-40fe1b"
+}

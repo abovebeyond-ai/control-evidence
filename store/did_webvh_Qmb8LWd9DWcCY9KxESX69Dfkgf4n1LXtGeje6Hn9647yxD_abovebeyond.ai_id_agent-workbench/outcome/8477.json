@@ -1,0 +1,16 @@
+{
+    "action": "e34240ab65ce929fa675e6f266c979fd",
+    "effect": {
+        "detail": {
+            "base": "c4f72c95cf0903ca16192d7b16768a20d34d55e9",
+            "branch": "workbench/obs/needs-you-rows",
+            "commit": "da272490e88dc60abff63e475514762473a3ac2e",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8475,
+    "verdict": "ALLOW"
+}

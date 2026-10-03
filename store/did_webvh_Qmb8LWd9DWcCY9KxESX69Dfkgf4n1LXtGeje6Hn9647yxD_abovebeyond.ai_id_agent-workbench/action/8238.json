@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The site side of fair use (pipeline #248 sets Decode and Intelligence to 2,000 reads a day per key).\n\n**The sources brake grows with the plan** (`Meter::deepAllowance`)\n- Before, every plan could open the sources of a quarter of the catalogue a day: 14 of 53 trends. A Decode reader and a four-agent Intelligence team sat under the same 14.\n- Now Signal keeps a quarter, Decode gets half, and Intelligence the whole catalogue. The test pins all three.\n\n**Every limit explained on the AI tools page** (`/connect#reads`)\n- A new block, **How much it reads**, explains:\n  - what a read is;\n  - per key and per account;\n  - why sources have a limit of their own, counted in different trends;\n  - that the counts reset at midnight UTC;\n  - what happens at a limit.\n- A table per plan gives the reads a day per key and the trends with sources a day (\"27 of 53\", \"all 53\"). It is built from the plans and the catalogue, so it cannot say what the door does not do. A member's own plan is marked.\n- The account page links to it from the usage line: **How reads are counted**.\n\n**Other changes**\n- **Home:** \"More posts\" is the same quiet underlined link as \"More reports\", not a filled button.\n- **Pricing:**\n  - the line \"Paid plans open at launch; ask us for early access\" is gone;\n  - so is the FAQ \"Can I start a paid plan today?\".\n\n  The site stays behind its cover until payment works, so those lines were only ever read after launch, where they said the opposite of what was true. While payment is not live, the FAQ simply has no billing question.\n\nTests: 355 passing. Pint clean.\n",
+            "branch": "workbench/site/fair-use",
+            "title": "Fair use: the sources brake grows with the plan, and the AI tools page explains every limit"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002114630-a9e4ba"
+}

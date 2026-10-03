@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5add7870a58f841bda7002d0a896ee4c3638db8d",
+            "branch": "workbench/studio/curate-fixes",
+            "files_sha256": "14047ea174f78926c2a1b8032e6a258ead8df179236e82e23148016bb31a4114",
+            "message": "Studio: a current Curate count, Edit in the Observatory, a quiet delete, suggestions that run by themselves"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002201433-e447ca"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "fae05cbe7ca611818ce6f1907e82fc55",
+    "effect": {
+        "detail": {
+            "base": "b055cf5b064485808c0b876fdb0db24abf5dff89",
+            "branch": "workbench/engine/heartbeat-while-resting",
+            "commit": "da5201de66cb57e20c5f0a35353e5c4762ca39d5",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8433,
+    "verdict": "ALLOW"
+}

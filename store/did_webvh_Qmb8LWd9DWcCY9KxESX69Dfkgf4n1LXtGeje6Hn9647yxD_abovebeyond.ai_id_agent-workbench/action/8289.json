@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "68b3f81ea93acb08c3abc3bfa2bf466112d8d383",
+            "branch": "workbench/site/change-plan-team",
+            "files_sha256": "502087bd43388dc6c66b7af3bd9e30fc2625774b377f9ac5daf9f0f940b82084",
+            "message": "Account: a team account can compare the plans too"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002154935-4f2b6a"
+}

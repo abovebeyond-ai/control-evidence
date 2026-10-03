@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d23575f06f832053ec44e1f1785c3b99dbbc3132",
+            "branch": "workbench/evidence/widen",
+            "files_sha256": "b90f6d2d942aafef076e832ecc7d7a633f5de16126d332707c687204dbf1d7a0",
+            "message": "Evidence: search the signals for what a live trend describes, judged, folded on review"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002213254-32eb33"
+}

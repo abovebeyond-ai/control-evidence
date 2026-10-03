@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2997dfa75415de7b6237a7f35a74289d22425a1f",
+            "branch": "workbench/obs/menu-baseline",
+            "files_sha256": "5126d6c2416120f91490b032adedd9745e682784c7e7667a0fc6b84898fc276c",
+            "message": "Observatory: the bar on one line with icons beside the words, Accounts, opened detail in a panel"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002190750-0f7fe7"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Observatory said \"The engine is off\" while the engine was running.\n\nHeartbeats came only from phases. After `deepen` the worker rests five minutes (`deepenCooldown`), and the scout cooldown is five minutes too; in that time nothing wrote `heartbeat_at`. After three minutes `getWorkerStatuses` marks the worker stale, the index shows \"The engine is off: nothing is being read\", and after five it deletes the row of a living worker.\n\nSeen on the box on 2 October: heartbeat 17:15:08, the worker resting after deepen, next heartbeat 17:20:18.\n\n- `workerAlive(workerId)` in `core/db.mjs`: moves only `heartbeat_at`, leaves phase and status as the last real heartbeat set them, and does not recreate a row after shutdown.\n- The worker calls it every 60 seconds from start (`unref`, errors swallowed). A blocked event loop still goes stale, which is the silence that should show.\n- `test/worker-alive.test.mjs`. 969 tests pass.\n",
+            "branch": "workbench/engine/heartbeat-while-resting",
+            "title": "Engine: a resting worker is alive"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002172159-f7e964"
+}

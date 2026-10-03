@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f26003fa94b0124a90f0d9600798d1d9997e8d5c",
+            "branch": "workbench/site/agent-door-terms",
+            "files_sha256": "1a5b735b2867117562d19b9b25892cdfc1aef07a969f38a6eda565466e03644e",
+            "message": "Agent door: none on Explore, a little on Signal, sources from Decode, copying slowed down"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261003071128-5fa3f1"
+}

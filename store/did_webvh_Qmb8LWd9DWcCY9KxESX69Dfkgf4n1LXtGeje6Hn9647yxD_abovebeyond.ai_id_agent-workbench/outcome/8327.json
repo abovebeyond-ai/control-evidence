@@ -1,0 +1,16 @@
+{
+    "action": "0a768fc6d3cc3bdb981075c7bc43fcef",
+    "effect": {
+        "detail": {
+            "base": "5421399e0f2cd479fb0307755e6fcb21fbf27a5f",
+            "branch": "workbench/auth-mail-gentells",
+            "commit": "c132f49923d8c0145119a5827c105eb5e8be807f",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8325,
+    "verdict": "ALLOW"
+}

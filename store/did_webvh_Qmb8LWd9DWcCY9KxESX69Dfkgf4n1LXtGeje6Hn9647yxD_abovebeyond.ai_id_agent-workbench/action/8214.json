@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two things on the Observatory.\n\n**Timeline tooltip** (insights, patterns, signals, buffer)\n- It drew its own near-black box in both themes. In the light theme the date was dark on dark, and only the kind and a bare number showed.\n- It now uses the surface and border tokens and says:\n  - the day (\"Wed 1 Apr 2026\");\n  - how many (\"12 insights\", \"1 insight\");\n  - per kind with its count;\n  - \"Click to show only this day\" where a click filters.\n- Each chart passes its unit (`insights`, `patterns`; signals by default).\n- The axis printed year and month (\"26/09\"). That read as a day and repeated the same label within one month. It now prints day and month (\"25 Aug\").\n\n**Header**\n- **Three columns:** the lockup on the left, the pages centred in the bar, the tools and the session on the right. Before, the pages hung off the end of the lockup and its breadcrumb, so they sat off centre.\n- **One type style on the right:** Refresh was a bordered button in spaced capitals and Sign out a smaller capitalised label, three type styles on one line. Both are now plain text in the page size. The time drops the monospace for tabular figures.\n- **Dropdown arrows:** a small, lighter \u25be instead of a heavy \u25bc.\n\nChecked: `npm run build`, the e2e suite (27 passing), and screenshots of the header and a hovered bar against the mocked API.\n",
+            "branch": "workbench/obs/timeline-and-header",
+            "title": "Observatory: a timeline tooltip that says something, a header in three columns"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002113506-3bef88"
+}

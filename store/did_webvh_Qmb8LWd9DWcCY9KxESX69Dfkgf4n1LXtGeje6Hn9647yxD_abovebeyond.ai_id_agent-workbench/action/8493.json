@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c4f72c95cf0903ca16192d7b16768a20d34d55e9",
+            "branch": "workbench/obs/pattern-tooltip",
+            "files_sha256": "0c4e527c438ad22266f04f09f5b600566c2b92671b32fef10cd65139701781e5",
+            "message": "Timelines: the tooltip stays on screen, and Patterns counts new patterns per day"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002175444-2c7680"
+}

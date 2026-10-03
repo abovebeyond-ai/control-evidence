@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Observatory's bar and index, after a round of looking.\n\n- **Data and System sat 1px lower than the links.** The dropdown triggers had no bottom edge while the links keep a 2px transparent one for their underline. Same box now; measured: every item in the row 34px tall, text at the same top.\n- **Icons beside the words**: a line icon (16px, the text colour) next to each item in the bar and in both menus. Next to the words, never instead of them.\n- **People is now Accounts**: the page manages the accounts on gentells.com and access to the Observatory.\n- **Index: opened detail reads as detail.** Open, the machine's detail and the corpus sit in a tinted panel under the sentence that opened them, and the sentence says \"Hide the detail\". Before, the opened content looked like the next section.\n- Numbers on the index get thousands separators (3,133 classified; 10,367 of 10,367 patterns), and a worker row no longer breaks \"5 done\" over two lines.\n\nBuild ok, lint ratchet at its ceiling, e2e pass.\n",
+            "branch": "workbench/obs/menu-baseline",
+            "title": "Observatory: bar, icons, Accounts, folded detail"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002190750-0f7fe7"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "e3b52e8c7765ceac14ff2d900c5a4c24",
+    "effect": {
+        "detail": {
+            "base": "bd4eac68cb943d2bb6b783bc64885a4859c164df",
+            "branch": "workbench/site/gates",
+            "commit": "b3db4205e74dba5b3e9f85f7750e7bb5fd27943a",
+            "files": 17,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8277,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "9df493552e36f8e36fdc67ff196d931d",
+    "effect": {
+        "detail": {
+            "base": "1a49923ff2cec272c2c4d40377d64724ece532f9",
+            "branch": "workbench/site/delete-account",
+            "commit": "d481ee16bc4649d071d159a301bdd2142c95fa83",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8601,
+    "verdict": "ALLOW"
+}

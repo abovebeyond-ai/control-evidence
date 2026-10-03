@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The data behind a new **Live** page in the Observatory (gentells-dashboard follows): what is happening in the pipeline now.\n\n**`GET /live?since=<ISO>`** (staff auth) returns three streams, read from the database:\n- **in:** signals arriving, with platform, source, regions and a snippet;\n- **read:** signals classified, with their status;\n- **out:** new trend drafts, trends merged into another, posts published.\n\nIt also returns:\n- the ingest rhythm of the last hour, per minute;\n- the regions of the last hour;\n- the day's totals (in, read, new trends), cached for a minute;\n- the active sources with 3 or more errors in a row.\n\n**Why from the database.** The existing activity strip matched lines in the worker's log, so a reworded log line made an event vanish without anyone noticing.\n\n**Indexes:** new on `signals.classified_at`, `insights.created_at` and `insights.superseded_at`, each created after its column exists.\n- Measured on a copy of the production database: a first load takes 4 ms and a poll 1 ms. Without the indexes both took over 500 ms.\n- Building the indexes on deploy takes a moment, once.\n\nThe two timestamp spellings in the database (ISO with a Z for `ingested_at`, SQLite's `YYYY-MM-DD HH:MM:SS` for the rest) are each compared in their own form, so the indexes are used.\n\nTests: `test/live.test.mjs` (the streams, the rhythm, regions, auth). 967 passing.\n",
+            "branch": "workbench/ops/live",
+            "title": "Live: what came in, was read and came out, from the database"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002171217-6a7eee"
+}

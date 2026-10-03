@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A round of fixes for members and for choosing a plan, each checked locally (screenshots logged out and logged in as a test reader).\n\n**Menu (members)**\n- **Reading room** opens the menu, so getting back there does not depend on knowing the logo is a link.\n- **Your plan** moves to the right, by Sign out, in place of the member's name. The account page is the plan page. With Your plan among the page links on the left, seven items and the centred logo did not fit, and the labels wrapped.\n\n**Pricing for members**\n- The member's own plan is marked **Your plan** and its button reads **Your current plan**. The other plans say **Switch to \u2026**. \"Change plan\" on the account page lands here, so a member sees their plan next to the others.\n\n**Choosing a plan at signup**\n- The register form has a plan choice: Explore, Signal, Decode. Intelligence stays a conversation on the contact form.\n- The pricing buttons pass the plan along (`/register?plan=signal`).\n- With a paid plan chosen, the title and the button change (\"Create account and continue to payment\"). After the account is made, the reader goes to `billing.checkout` for that plan.\n- The form never grants a plan by itself; billing does. A test pins that.\n\n**Other changes**\n- **Sign-in pages:** register, sign in and password reset now carry the site footer, instead of \"Back to Gentells\" and the Trendwolves line.\n- **Plan table:** a second group, **In your AI tool**, lists what an AI tool reads on each plan: trends with evidence, sources, concepts and patterns, reports, and reads a day. It is built from the plans' own abilities and allowances, so it cannot drift from what the door does.\n- **Evidence teaser:** a reader whose plan opens the sources is told where the rest of the signals are (\"under the trends above\") instead of \"The full set comes with Signal\".\n- **Post dates:** posts show their publication date instead of \"Seen \u2026\", which read as \"you already read this\".\n- **AI tools page:** the block \"What it reads\" becomes **Into your own work**: what Gentells does inside a brief, a deck or a strategy, rather than what Gentells is.\n\nTests: 358 passing, three new. Pint clean. This replaces #176, whose only failure was a Pint style issue in AuthTest.\n",
+            "branch": "workbench/site/plans-for-members-2",
+            "title": "Members: Reading room and Your plan in the menu, plan-aware pricing, a plan choice at signup"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002113818-868791"
+}

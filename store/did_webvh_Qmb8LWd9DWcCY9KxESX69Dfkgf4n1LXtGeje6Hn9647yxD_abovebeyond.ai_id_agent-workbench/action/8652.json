@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The report editor in Curate, calmer, with the release date as a real choice.\n\n- **Comes out**: a month (a month picker) or no date yet. The site already showed a date typed into \"Announced as\" (\"December 2026\") as the date; now the editor asks for it that way. A status typed before in other words stays, shown as \"as written: \u2026\". One line says what the site shows until a file is on the shelf.\n- Title and summary first, then when it comes out and its code, then Save with the slug beside it: one column instead of a grid of four with long hints.\n- The file: one line on what is there, the previews, then choose, pages open to anyone, upload. \"Take the file off the site\" is a quiet link at the far end instead of a red button beside Upload, and the long italic note is one short line.\n- The Reports tab sat up under the tab band (a negative margin pulled it there); it sits in the tab's own padding now. Labels lose their spaced capitals.\n\nChecked locally with example rows. Build ok.\n",
+            "branch": "workbench/studio/report-editor",
+            "title": "Reports: release month, calmer editor"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002203003-be4c3f"
+}

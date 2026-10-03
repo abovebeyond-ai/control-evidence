@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c5ec31bd735d785c02db0be5e08de61470b2c731",
+            "branch": "workbench/plans/agent-terms",
+            "files_sha256": "6a90646dcd6ff17884cf2fe5a643df00984081b41cc94b1195a1436a5da779bc",
+            "message": "Plans: agent door defaults, none on Explore and ten a day on Signal"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261003070634-b9e3e7"
+}

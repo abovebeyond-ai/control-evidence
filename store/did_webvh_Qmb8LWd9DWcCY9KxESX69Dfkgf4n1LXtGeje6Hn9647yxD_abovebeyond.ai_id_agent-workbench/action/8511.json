@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "24056b74da5aa455f7ada486df2994cbf52c5ebe",
+            "branch": "workbench/site/real-reading-example",
+            "files_sha256": "d6599bfcce47a8a5bc6ee44346b93b68505e649d8dae1c202316e8144568ddfc",
+            "message": "Home: the reading example shows three real signals with their sources"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002183606-b5147a"
+}

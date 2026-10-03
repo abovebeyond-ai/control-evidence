@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The \"How we read\" scene told our own story: a marketer asks ChatGPT about Gen Z, a deck quotes an old survey, and those patterns lead to \"Teams want culture already read\". It read as an abstract pitch rather than as the work itself.\n\nIt now shows a real reading, a trend that is on gentells.com (\"Young People Pay for Offline Time but Keep Their Group Chats\"):\n\n- **Signals:**\n  - A club seals phones at the door\n  - Students buy a dumbphone for exams\n  - Friends keep the group chat on a detox\n- **Patterns:**\n  - Offline is a ticket\n  - Dumb on purpose\n  - The chat stays on\n- **Direction:** Young people pay for offline time\n\nAs before, there are no brand names or figures, because the scene is an illustration and not a measurement.\n\nThis replaces #186: its \"2023 survey\" signal is gone.\n\nTests: 367 passing. Checked locally at three points of the scroll; the pattern labels fit side by side.\n",
+            "branch": "workbench/site/real-example",
+            "title": "How we read: a real example, the trend Young people pay for offline time"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002160316-300d3f"
+}

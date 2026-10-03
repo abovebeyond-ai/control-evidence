@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`POST /site/accounts/:id/delete` relays an account deletion to gentells.com, signed like the other account routes, admins only, with the caller as `by`. The site requires the account's address typed back and refuses an account that still pays (site PR alongside). Test: only an admin can delete. 992 tests pass.\n",
+            "branch": "workbench/accounts/delete",
+            "title": "Accounts: relay a deletion"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002200906-5be277"
+}

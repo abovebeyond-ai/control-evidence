@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b43b9a5ed70db7a470f5df9ff4c89affc777cd38",
+            "branch": "workbench/fix/platform-staff-are-not-a-garage",
+            "files_sha256": "b8a8c05f37cd78d875bf9716a4a5e704948ed16f5c2302ee7c43532853ffbba7",
+            "message": "Platform staff are not a garage: their work leaves the activity figures"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002141253-637ef9"
+}

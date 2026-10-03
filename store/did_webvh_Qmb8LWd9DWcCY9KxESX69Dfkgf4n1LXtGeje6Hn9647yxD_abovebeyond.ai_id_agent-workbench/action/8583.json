@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6ec505ec9a257e69553990215803afc3f0be4ba4",
+            "branch": "workbench/standard/page",
+            "files_sha256": "1477db97ba18d2ad6eef0638f6e830c600edb3dca006cb71f5c9144f795e2a3d",
+            "message": "Standard: a page for the vocabulary, proposals in words, and one step after a new version"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002195349-b1383d"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "488eacaba2aa77c65bce3e7041f004b1",
+    "effect": {
+        "detail": {
+            "base": "d2a0710cf6561b511c5d17ce91843ac205dc0608",
+            "branch": "workbench/ui/my-offered-cars-one-calm-list",
+            "commit": "a799730caa6f5018d98415c595e813081f1ea6f6",
+            "files": 29,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8655,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "33471797d087b6ae28a408eef0b0e607f6390add",
+            "branch": "workbench/obs/delete-account",
+            "files_sha256": "0f511b0dc106ff6a3ae0f593aa9719abbb96b8005074450cf0bc8275fd0c9d8a",
+            "message": "Accounts: delete an account, with its address typed back"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002202638-a87622"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c17e76031145762c2c385c66beaee71085877c89",
+            "branch": "workbench/obs/foresight-plain",
+            "files_sha256": "0fdbf5a693c391221079dbd123c70b4e6ea9ba388e178a40116def6c5ab8e7b0",
+            "message": "Foresight: say what it asks, and say when tagging stopped"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002173513-b85424"
+}

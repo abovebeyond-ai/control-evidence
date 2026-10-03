@@ -1,0 +1,16 @@
+{
+    "action": "32f8702a0a4f8dc172a142e1216eb485",
+    "effect": {
+        "detail": {
+            "base": "c6499d5ccf86edf491994fa548dc1af6c582c12d",
+            "branch": "workbench/site/account-connect",
+            "commit": "9a8168cc65c885ba2d6ff5435f60de41bb9e38f8",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8175,
+    "verdict": "ALLOW"
+}

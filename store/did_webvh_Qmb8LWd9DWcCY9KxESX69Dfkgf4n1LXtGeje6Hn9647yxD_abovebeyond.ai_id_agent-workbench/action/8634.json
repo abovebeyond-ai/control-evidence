@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Who changes a piece, and with whose name on it.\n\n- **A piece is changed by its author or an admin.** Saving, deleting, and adding or removing a citation answer 403 for anyone else (\"Only the author or an admin changes this piece. You can read it and comment in Discuss.\"). Pieces without an author (the 78 imported posts) are the team's: only an admin changes them. This is how editorial tools handle it (Ghost, WordPress): an author edits their own work, an editor edits everyone's.\n- **Every save says who.** `article_edits` gets one line per save (who, which fields) and `articles.last_edited_by` the last name.\n- **The byline can be set.** `authorName` is now an editable field: the name shown on the piece (the author's own name or \"Trendwolves Editorial Team\"). The owner stays `author_id`, so rights and the private-draft rule do not move with the byline.\n\n`test/edit-rights.test.mjs`. 995 tests pass.\n",
+            "branch": "workbench/studio/edit-rights",
+            "title": "Pieces: who may change them, and the byline"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002202520-a7f453"
+}

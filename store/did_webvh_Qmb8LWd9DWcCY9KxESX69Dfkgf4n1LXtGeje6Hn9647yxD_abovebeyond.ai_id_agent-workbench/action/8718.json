@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The pipeline's plan defaults follow the agent door's new terms (site PR alongside): Explore 0 reads a day (no agent door), Signal 10 (of which one whole reading on the site's side, no sources).\n\nThese are the fallback for a store without a saved offer. The live values are the Observatory's (Settings, Plans) and are set there after the site PR merges. 999 tests pass.\n",
+            "branch": "workbench/plans/agent-terms",
+            "title": "Plans: agent door defaults"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261003070634-b9e3e7"
+}

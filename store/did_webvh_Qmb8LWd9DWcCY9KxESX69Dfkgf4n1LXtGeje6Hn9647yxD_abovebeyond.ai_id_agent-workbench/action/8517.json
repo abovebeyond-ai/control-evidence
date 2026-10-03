@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ede0788456afe6057965283c8c649f09ae2c438b",
+            "branch": "workbench/feat/insights-momentum-garages-one-pattern",
+            "files_sha256": "f590ca4747c319cbffeaa5e7506047ea7399b0d7d48e55d3b8f86801b4da4d7a",
+            "message": "Insights: Momentum and Garages, every tab and the garage's page on one pattern, one chart palette"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002183958-d021b1"
+}

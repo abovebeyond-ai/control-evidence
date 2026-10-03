@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-ups for members after #169 and #170.\n\n**Account page**\n- **Change plan \u2192** under the plan name, linking to the plans. Team members do not see it, since they already have the top plan.\n- **Your agent** was two code blocks and a paragraph. It is now **In your AI tool**: one sentence and **Connect your AI tool \u2192**, which opens `/connect`. That page already has a card per tool (Claude Code, Claude, ChatGPT, Codex, Cursor) with copy buttons and the steps in order.\n- **Keys** is renamed **Keys for scripts**, which is what keys are for now that an AI tool signs in by itself.\n\n**Menu (members)**\n- **AI tools** opens `/connect`, next to Your plan.\n- **Reading room** is gone from the top right. It linked to the page the logo already opens, and for a member that page is the reading room.\n\n**Footer**\n- The page links follow the same rule as the menu. Members see Your plan and AI tools instead of Services and Pricing.\n- The two link columns are centred in the middle third of the footer.\n\nTests: 354 passing. Screenshots taken locally, logged out and logged in as a test reader.\n",
+            "branch": "workbench/site/account-connect",
+            "title": "Account: Change plan, AI tools on their own page; menu and footer follow the member"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002111207-16f433"
+}

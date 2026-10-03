@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2e29b204e926f0af413092331fab57ca90602fe4",
+            "branch": "workbench/obs/coverage-light",
+            "files_sha256": "7e23984a786a5a1626aab6a1e71595228429621e57e62ecd8f392180dd700da1",
+            "message": "Coverage: one light ramp for the map and the topic blocks"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002200631-efa6bf"
+}

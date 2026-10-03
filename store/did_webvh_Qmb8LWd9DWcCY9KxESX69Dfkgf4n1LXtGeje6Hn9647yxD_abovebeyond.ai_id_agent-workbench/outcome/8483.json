@@ -1,0 +1,16 @@
+{
+    "action": "c39711370d6a3d273ed267f7c9b78506",
+    "effect": {
+        "detail": {
+            "base": "f4d27eb6aafaa945fd26f94259faa70d0c9d5983",
+            "branch": "workbench/engine/collect-own-clock",
+            "commit": "2da927d4cd114d49d6dc095742774d54c624abc6",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8481,
+    "verdict": "ALLOW"
+}

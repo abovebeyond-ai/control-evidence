@@ -1,0 +1,16 @@
+{
+    "action": "65f25ecf6aec691e1bca483bad461921",
+    "effect": {
+        "detail": {
+            "base": "847939ff6098d9abf8c3d0e06df034c1504a71d5",
+            "branch": "workbench/studio-private-drafts",
+            "commit": "b5d9ebdb653f34577c62e8d8a437ba5af6d4638b",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8223,
+    "verdict": "ALLOW"
+}

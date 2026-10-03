@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f5583baf336cca4711bf7e403226d2cd9c33a72d",
+            "branch": "workbench/studio/edit-rights",
+            "files_sha256": "b82219fcd5e27588bef6e23c42dde6cf04304c2efe1e1bad21eb5f08c099a513",
+            "message": "Pieces: changed by their author or an admin, every save named, the byline editable"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002202520-a7f453"
+}

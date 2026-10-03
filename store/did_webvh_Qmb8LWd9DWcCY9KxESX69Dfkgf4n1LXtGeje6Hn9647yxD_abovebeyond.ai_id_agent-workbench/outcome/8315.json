@@ -1,0 +1,16 @@
+{
+    "action": "d4b84340902e0eb54bf0ddd1f89ac89d",
+    "effect": {
+        "detail": {
+            "base": "bf2e104df13b04e2efd6f7dd3b2cdb80486118ec",
+            "branch": "workbench/site/survey-year",
+            "commit": "4b2ee5621438e8622ade907043fa684d423573fd",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8313,
+    "verdict": "ALLOW"
+}

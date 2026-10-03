@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f4d27eb6aafaa945fd26f94259faa70d0c9d5983",
+            "branch": "workbench/api/pattern-created",
+            "files_sha256": "9375bea963314ae1b4bbab7e6d7ae7da47a730faca18a55e24e83b4ddb75908d",
+            "message": "Patterns list carries createdAt, so the timeline can count new patterns"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002175435-9d6a6e"
+}

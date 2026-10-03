@@ -1,0 +1,16 @@
+{
+    "action": "48b6a1b3da1357ee090bae4fb4aa1bbd",
+    "effect": {
+        "detail": {
+            "base": "189664ce8e1066ec0304b6cdfc89ffaca2383874",
+            "branch": "workbench/site/footer-vcenter",
+            "commit": "b7ac23422cfed0db6c38ee534225571cb2cae6a7",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8247,
+    "verdict": "ALLOW"
+}

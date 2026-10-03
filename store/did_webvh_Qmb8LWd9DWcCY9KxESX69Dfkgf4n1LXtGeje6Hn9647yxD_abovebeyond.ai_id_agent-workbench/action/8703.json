@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1977889d02fa88929cc7ce21690fca1ed995b7bc",
+            "branch": "workbench/ui/working-verdict-names-what-to-watch",
+            "files_sha256": "d71d5a4608fd48bbb188f038a6ab452345f61a6251a0452c4d1118eb70f5cae2",
+            "message": "Werking: the verdict counts the coloured lines it does not name"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002215612-be6acc"
+}

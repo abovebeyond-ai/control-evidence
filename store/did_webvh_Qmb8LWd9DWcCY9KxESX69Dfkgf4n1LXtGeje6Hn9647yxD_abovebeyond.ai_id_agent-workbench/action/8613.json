@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ef4e1234e07f96392ae037ebd858243663bee231",
+            "branch": "workbench/studio/review-gate",
+            "files_sha256": "e76312a4500c7dcb6825d193a57d2f30e7ae8545441ec8e4df8cd94d82a73957",
+            "message": "Review: the page and its submit pass the gate to their own token check"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002201119-d07ba2"
+}

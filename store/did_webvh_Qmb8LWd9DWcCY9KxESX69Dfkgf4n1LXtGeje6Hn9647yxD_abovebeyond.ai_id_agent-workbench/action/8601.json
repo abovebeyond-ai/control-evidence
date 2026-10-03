@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a49923ff2cec272c2c4d40377d64724ece532f9",
+            "branch": "workbench/site/delete-account",
+            "files_sha256": "f46888864a55a687db9b52a8297f29bd389937c35f3b5be55bb03bd5c00b5bc4",
+            "message": "Accounts: delete an account from the Observatory, with the address typed back"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002200854-783f1b"
+}

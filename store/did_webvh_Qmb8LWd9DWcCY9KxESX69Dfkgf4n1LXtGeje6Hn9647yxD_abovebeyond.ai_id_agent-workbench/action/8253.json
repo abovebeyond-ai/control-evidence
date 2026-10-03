@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9a8f6c381572552587ec3471a98c43f6f8a0e2d9",
+            "branch": "workbench/fix/activity-says-what-each-measure-is",
+            "files_sha256": "8c057d9f0b39cee582e71d8d1a80318f367f1a3f013a665e94135f70f2b9a66a",
+            "message": "The measure list says under each name what it counts"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002135342-3d9ed4"
+}

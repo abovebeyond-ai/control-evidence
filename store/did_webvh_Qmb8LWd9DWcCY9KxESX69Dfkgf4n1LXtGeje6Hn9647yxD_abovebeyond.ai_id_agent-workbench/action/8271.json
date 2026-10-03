@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f3cc3aad1fcf4e603160bdc4a224687cf6ed5d71",
+            "branch": "workbench/plans-signal-archive",
+            "files_sha256": "807b72539840d4a86977c6a2fe80f3c0ea2912f7b19a2091e0a1551c66f308c0",
+            "message": "Plans: Signal opens the whole archive"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002141449-6a8678"
+}

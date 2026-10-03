@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two things on the timeline charts (Patterns, Insights, Buffer).\n\n- The tooltip opened to the right of the pointer, so on a chart at the right of a row the newest day's numbers fell off the screen. Within 240px of the right edge it now opens to the left.\n- The Patterns chart counted each pattern on the day of its last signal: every pattern touched today piled onto today (875 on 2 October, of which 16 were new). It now counts by `createdAt` from pipeline PR alongside, labelled \"New patterns per day\", and falls back to the old date until that is deployed.\n- The chart label is sentence case instead of spaced capitals.\n\nBuild ok, lint ratchet at its ceiling, e2e pass.\n",
+            "branch": "workbench/obs/pattern-tooltip",
+            "title": "Timelines: tooltip on screen, new patterns per day"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002175444-2c7680"
+}

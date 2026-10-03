@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three open Western sources, free and allowed for commercial use, while Reddit stays off by its own policy and TikTok and Instagram stay rented.\n\n- **YouTube, wider and with comments.** Most popular videos in ten countries instead of six (ES, IT, PL and SE added; Europe first). For videos in the categories where young audiences talk back (music, gaming, people & blogs, comedy, entertainment, howto & style), up to four per country, the five most relevant comments go into the signal as text: what a video meant to the people watching it. No names, no channel ids. Same key, within the free quota.\n- **Bluesky trending** (`bluesky-trends`): the public trending topics, no account. Topic level only: name, description, category, post count; the accounts are not kept. Searching posts needs a signed-in account (403), so it does not search.\n- **Wikipedia spikes** (`wikipedia-spikes`): per language (nl, fr, de, es, it, pl, sv, en), articles that jumped into yesterday's top 200 and were not in the top 1000 a week earlier, ten per language. Wikimedia pageviews API with a descriptive User-Agent.\n\nTried live on 2 October: Bluesky 25 topics (mostly US politics and tech), Wikipedia 175 jumps before the cap (mostly television and news names). Both are weak for youth culture on their own; the classifier's relevance filter decides what stays. Both count as observed evidence under the Standard (`otherwise: observed`).\n\nThe two source rows are seeded on the first collect (INSERT OR IGNORE, so a row switched off by hand stays off). 997 tests pass.\n",
+            "branch": "workbench/sources/western-open",
+            "title": "Sources: three open Western sources"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002213112-a5f55b"
+}

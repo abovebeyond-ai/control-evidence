@@ -1,0 +1,16 @@
+{
+    "action": "db984c7d3e0ee64f3a90d48d047a6a92",
+    "effect": {
+        "detail": {
+            "base": "20333675e56c64b1df66e14d746dba7400ff72fb",
+            "branch": "workbench/ui/look-balans-2",
+            "commit": "1838228af8c93e79676441b63a9dbbcfec8ba81b",
+            "files": 95,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8199,
+    "verdict": "ALLOW"
+}

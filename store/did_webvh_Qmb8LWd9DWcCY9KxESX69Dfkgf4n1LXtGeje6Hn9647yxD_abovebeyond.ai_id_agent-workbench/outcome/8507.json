@@ -1,0 +1,16 @@
+{
+    "action": "4134420380e23a25bd51fa3e760032c8",
+    "effect": {
+        "detail": {
+            "base": "24056b74da5aa455f7ada486df2994cbf52c5ebe",
+            "branch": "workbench/billing/mollie",
+            "commit": "01d11098619e6cd04647535676f7ae0434cf0766",
+            "files": 18,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8505,
+    "verdict": "ALLOW"
+}

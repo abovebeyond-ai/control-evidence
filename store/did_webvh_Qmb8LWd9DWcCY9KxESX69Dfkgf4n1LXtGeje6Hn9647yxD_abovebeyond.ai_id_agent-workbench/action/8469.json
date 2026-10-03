@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4a0e9fb1e4d72458da0b989279dc5984555c0471",
+            "branch": "workbench/obs/studio-baseline",
+            "files_sha256": "6022027693ce19268fd88595f0e07f8a3395754ae49e32c411c180d64c07754a",
+            "message": "Header: Ask keeps its bottom edge, so it lines up with Studio"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002174512-39fab4"
+}

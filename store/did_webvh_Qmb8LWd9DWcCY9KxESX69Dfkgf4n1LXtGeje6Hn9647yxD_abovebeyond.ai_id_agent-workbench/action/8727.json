@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7b35f32c06869344da5163272524c029bf97ac7b",
+            "branch": "workbench/feat/resend-cars-whose-damage-cleared",
+            "files_sha256": "184904d90b75caa5e893f4700706cc41ba74f7d7fad8d50009c1dbeb13725f7a",
+            "message": "Resend to Nederland Mobiel the cars whose only damage rows were empty"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261003071406-d50a35"
+}

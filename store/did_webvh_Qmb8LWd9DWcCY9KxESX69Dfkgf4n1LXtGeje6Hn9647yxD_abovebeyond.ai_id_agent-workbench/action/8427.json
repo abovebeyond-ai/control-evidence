@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ca4096ab8995f7615bf1365bd172702b65f52eaa",
+            "branch": "workbench/fix/no-foreground-is-an-answer-not-an-error",
+            "files_sha256": "08ef9b5e00e27eff0229edf790f6bbabc7ada98001a838730adf67566aba2786",
+            "message": "No foreground is an answer, not an error: image-level refusals of remove.bg are told to the dealer and not reported"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002171737-3184c8"
+}

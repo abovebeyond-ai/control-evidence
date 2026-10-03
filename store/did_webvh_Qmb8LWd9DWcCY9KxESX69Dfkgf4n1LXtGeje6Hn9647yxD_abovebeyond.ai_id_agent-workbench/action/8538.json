@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What happened\n\nThe `tests` run on main after #926 (run 2409) is red, but no test failed: 2828 tests passed, and then the step died with\n\n`PHP Fatal error: Allowed memory size of 536870912 bytes exhausted \u2026 worker_02_stdout_\u2026_coverage`\n\nOn a push to main the suite runs with pcov and the coverage of the parallel workers is merged into one clover report in a single PHP process. With the code and tests added over the last days that merge no longer fits in the default 512M. Pull requests do not measure coverage, which is why the same commit was green as a pull request.\n\n## What changes\n\n`setup-php` gets `ini-values: memory_limit=2G` in the phpunit job. Nothing else: same tests, same coverage report, same contract with the quality action.\n\n## Checked\n\nCannot be run locally: it only happens on the runner with pcov. The proof is the first run on main after this merges (the pull-request run does not measure coverage).\n",
+            "branch": "workbench/ci/coverage-merge-gets-its-memory",
+            "title": "CI: the coverage merge on main gets its memory"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002190252-5cdc76"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Accounts (gentells.com) and Team (Observatory and Studio access) were two lists of the same people, with different controls on different pages. They are now one page, **People**, under System.\n\n**One list**\n- People are joined by email address. Each row shows the plan on gentells.com (with \"(team)\", a trial or \"blocked\"), Observatory access (Admin, Member, Removed or none, plus \"invited, not accepted\"), reads in the last 30 days, last seen and newsletter status.\n- The team comes first, then the rest by name. A line counts the people and the team.\n\n**A panel per person instead of \"More\" and loose buttons**\n- A click on a row opens a panel under it, with one labelled line per thing you can change:\n  - **Plan:** a segmented choice. It is fixed while someone is on the team.\n  - **Trial:** None, 7, 14 or 30 days.\n  - **Account:** Active or Blocked.\n  - **Observatory and Studio:** Member or Admin, remove from or put back on the team, send the invitation again; for someone not on the team, an invitation.\n- **Add someone to the team** sits next to the search.\n- Every action says in one line what happened.\n\n**Navigation**\n- System holds Pipeline, Analytics, **People** and Settings.\n- `/team` leads to People.\n- Settings keeps Machine and Plans; the read-only access key moves to Machine.\n\nChecked: build, lint at its ceiling, e2e 28 passing (the panel changes a plan).\n",
+            "branch": "workbench/obs/people",
+            "title": "People: the site accounts and the team in one list, changed in a panel per person"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002164722-12f09d"
+}

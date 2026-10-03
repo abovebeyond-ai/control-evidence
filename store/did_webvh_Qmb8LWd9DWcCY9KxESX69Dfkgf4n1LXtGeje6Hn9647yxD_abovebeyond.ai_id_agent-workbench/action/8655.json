@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d2a0710cf6561b511c5d17ce91843ac205dc0608",
+            "branch": "workbench/ui/my-offered-cars-one-calm-list",
+            "files_sha256": "0ceb1bc11637fb338dbadf8232429083b283fb958d53d6f8b600d96483ad4a15",
+            "message": "My offered cars: one calm list that answers first and keeps every one-tap action"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002203223-81a5b5"
+}

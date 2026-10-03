@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb153a33fcf523143fd83e3e4210177216ba57c4",
+            "branch": "workbench/academic/fewer-sharper",
+            "files_sha256": "f8249b310a58e6c9c5ba63c7fab60c0885a0c2c785eb0aa9b4eb33affb5641e2",
+            "message": "Academic follow: fewer, askable proposals with what a search finds"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002191843-7003c0"
+}

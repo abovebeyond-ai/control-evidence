@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "847939ff6098d9abf8c3d0e06df034c1504a71d5",
+            "branch": "workbench/plans-fair-use",
+            "files_sha256": "b320c9250bd127ed1ca46f22a665f76ea9e36ba1631f613f2b6edf4988effa6a",
+            "message": "Plans: Decode and Intelligence read 2,000 a day per key"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002114226-60e754"
+}

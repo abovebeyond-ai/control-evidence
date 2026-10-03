@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Five cron jobs never started, element tagging among them. Foresight has compared two empty periods since July.\n\ncron runs a line as `/bin/sh -c '<command>'`, and `pgrep -f` matches every process's full command line, that shell included. The guard `pgrep -f \"[t]ag-elements.mjs\"` hides only the pgrep: its parent shell's command line also contains `packages/pipeline/tag-elements.mjs`, so the guard always found \"a copy already running\" and skipped. Reproduced on the box with a harmless line: the bracket guard sees itself, an anchored guard does not.\n\nOn production: 2,599 signals tagged in May, 3,420 in June, 4 in July, none since. `logs/tag-elements.log` and `logs/link-trends.log` do not exist.\n\n- `ops/crontab`: the five guards (discover, collect, classify, link-trends, tag-elements) are anchored on the node process, `^/usr/bin/node packages/pipeline/<script>.mjs`, as the china worker line already was. The comment above them says why.\n- `test/cron-guards.test.mjs`: every guarded line must not match its own `sh -c` command line and must match the node process it guards. Fails 5 on the old file.\n- `countTaggedElements` reports `newestTagged`, and `getElementShifts` reports how many tagged signals each period holds, so Foresight can say that the tagger stopped instead of \"nothing has moved\" (dashboard PR alongside).\n- `test/foresight-coverage.test.mjs`. 982 tests pass.\n\nAfter merge the crontab on the box needs `bin/crontab-install --apply`; a deploy does not install it. Once tagging runs (150 signals an hour), the 46,712 waiting signals from the last 120 days take about 13 days; the last 30 days fill much sooner because the tagger picks at random. link-trends will also run for the first time at 08:30 the next morning (at most ten new trends, agreed links only).\n",
+            "branch": "workbench/ops/cron-guards",
+            "title": "Cron guards: five jobs never started, element tagging among them"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002173502-91493c"
+}

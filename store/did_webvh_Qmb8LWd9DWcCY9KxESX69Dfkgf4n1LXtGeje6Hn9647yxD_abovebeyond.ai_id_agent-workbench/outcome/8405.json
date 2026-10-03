@@ -1,0 +1,16 @@
+{
+    "action": "8d11768704ef2f6b3304bdc12de0399d",
+    "effect": {
+        "detail": {
+            "base": "649bbf6e7dd58d8a44a012379ce1c58c758ebf4c",
+            "branch": "workbench/fix/heic-is-probed-by-decoding",
+            "commit": "ddfab9072b1d79c136f95904a76dea1f4aa7420a",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8403,
+    "verdict": "ALLOW"
+}

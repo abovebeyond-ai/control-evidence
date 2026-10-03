@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "847939ff6098d9abf8c3d0e06df034c1504a71d5",
+            "branch": "workbench/studio-private-drafts",
+            "files_sha256": "1c7a4a57d74861ef823516e267be1f9536095e13e5e0c424d6da54cc9399b2ae",
+            "message": "Studio: a draft is its author's"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002114216-53c538"
+}

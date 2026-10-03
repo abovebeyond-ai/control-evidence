@@ -1,0 +1,16 @@
+{
+    "action": "3554ee0b4129faac2d96a9e004c0f286",
+    "effect": {
+        "detail": {
+            "base": "f26003fa94b0124a90f0d9600798d1d9997e8d5c",
+            "branch": "workbench/site/agent-door-limits",
+            "commit": "b272c240db949175d03449ade96786dc837cf4dd",
+            "files": 29,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8709,
+    "verdict": "ALLOW"
+}

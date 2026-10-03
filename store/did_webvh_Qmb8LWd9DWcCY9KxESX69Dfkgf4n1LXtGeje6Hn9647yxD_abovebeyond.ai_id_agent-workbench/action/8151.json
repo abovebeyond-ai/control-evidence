@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "926ff8becef38205af75c1eb00ead896d5ac16bd",
+            "branch": "workbench/fix/row-thumbnail-keeps-its-height",
+            "files_sha256": "14e3a0da4f2e15cc1501635aa16ebe45412c8fb614a46e69a0424282108909cb",
+            "message": "The row thumbnail keeps a photo's height below 1550px"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002105914-441bb8"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The topic blocks on Insights, Patterns and the Buffer were a dark slab: a near-black ramp left over from the dark theme, with the biggest topic the lightest, next to a map that runs from paper to blue.\n\n- One ramp for counts in `components/heat.js`, the map's: light to dark as the count grows. The blocks use its light steps and never the darkest, so the biggest topic is the strongest blue and nothing is black.\n- Text on a block reads on its fill: ink on the light steps, white on the dark ones.\n- The section labels on those pages and the map's title lose their spaced capitals (\"By topic\", \"Coverage by region\").\n\nBuild ok, lint ratchet at its ceiling.\n",
+            "branch": "workbench/obs/coverage-light",
+            "title": "Coverage: lighter topic blocks, one ramp with the map"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002200631-efa6bf"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A trend is edited where it is read in full: the Studio's Curate tab links here (Edit \u2197) instead of offering Hide beside every live trend.\n\n- **Edit** beside the headline turns the headline and the three readings into fields; Save writes the changed ones through `/store/patch` (with `updated_at`), and gentells.com follows at its next reconcile.\n- Under the headline, whether it is on gentells.com, taken off, or waiting, with **Take it off the site** or **Put it on the site** (the same `/site/trends/:id` decision the Studio used).\n- The section labels on this page lose their spaced capitals.\n\nBuild ok, lint ratchet at its ceiling, e2e pass.\n",
+            "branch": "workbench/obs/trend-edit",
+            "title": "Trend page: edit, and on or off gentells.com"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002201413-f28bd5"
+}

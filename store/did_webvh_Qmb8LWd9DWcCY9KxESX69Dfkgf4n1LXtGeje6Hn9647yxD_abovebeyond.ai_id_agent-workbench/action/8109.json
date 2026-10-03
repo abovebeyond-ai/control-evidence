@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "76ae41ca61e729c2a12bd5c9ac70eb8f7a751bb8",
+            "branch": "workbench/site-mode",
+            "files_sha256": "06098e76081c09aa57ba688ba22d1db394bb7144005bba50f61f3d127d1da904",
+            "message": "Studio: a gentells.com mode with posts, trends and reports"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261002074612-c0392c"
+}

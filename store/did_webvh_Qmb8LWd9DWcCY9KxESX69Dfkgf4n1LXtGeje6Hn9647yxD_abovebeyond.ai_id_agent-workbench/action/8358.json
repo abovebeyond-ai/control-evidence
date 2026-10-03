@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "gentells.com had no way to manage its accounts: changing a plan, giving a trial or blocking someone meant editing the database on the server, and nothing recorded who did it. This is the site side of an **Accounts** page in the Observatory (gentells-pipeline and gentells-dashboard PRs follow).\n\n**Two internal routes**\n- `GET /internal/accounts`: every account with plan, team flag, trial, blocked, created, last seen, reads in the last 30 days and newsletter status. It also returns the plans and the last 50 changes.\n- `POST /internal/accounts/{id}`: `{by, plan?, trial_days?, disabled?, note?}`.\n- Both are signed with the secret the pipeline already shares with the site (`GENTELLS_WEBHOOK_SECRET`), so nothing new has to be set. The signature is HMAC-SHA256 over method, path, a timestamp and the body. A request older than five minutes is refused, so a captured call cannot be replayed.\n- Both are open behind the prelaunch cover, CSRF-exempt and throttled, like the projection webhook.\n\n**Every change is logged**\n- New table `account_changes`: who (the admin's address), which field, before, after, an optional note, and when.\n\n**Blocking**\n- New column `users.disabled_at`.\n- A blocked account cannot sign in; it gets the same answer as a wrong password.\n- `Reader::for` treats it as anonymous, whatever session or key it still holds.\n- A block also ends its sessions and revokes its keys.\n\nTests: `InternalAccountsTest` (signature and freshness, plan, trial and block with the log, a blocked sign-in). 370 passing, Pint clean. A migration runs on deploy.\n",
+            "branch": "workbench/site/accounts-api",
+            "title": "Accounts: managed from the Observatory, through two signed internal routes"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261002163353-91366a"
+}

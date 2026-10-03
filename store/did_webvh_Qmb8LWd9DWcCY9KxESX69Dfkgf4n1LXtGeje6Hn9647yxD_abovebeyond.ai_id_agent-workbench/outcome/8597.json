@@ -1,0 +1,16 @@
+{
+    "action": "72b3b2f9725e4da876e99906de55b822",
+    "effect": {
+        "detail": {
+            "base": "2e29b204e926f0af413092331fab57ca90602fe4",
+            "branch": "workbench/obs/coverage-light",
+            "commit": "d70ba0b2f5307787c729c67906c1b7dcda9a8584",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8595,
+    "verdict": "ALLOW"
+}

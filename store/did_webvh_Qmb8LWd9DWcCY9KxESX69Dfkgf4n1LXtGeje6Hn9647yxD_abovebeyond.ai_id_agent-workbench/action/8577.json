@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0df93e0d8ab6124585446a3c0d936dd2b27c7c3e",
+            "branch": "workbench/obs/accounts-line",
+            "files_sha256": "01c7fb04717b1a09ba1c4ec13ebf15af3ee1e04dfdd59951faedfcec5febe2d0",
+            "message": "Accounts: one line between an open row and its panel"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261002193159-17ab93"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "adf27a3daba31371f912e2c5fc69d748",
+    "effect": {
+        "detail": {
+            "base": "63d697d17e71c62b82c26f6644a7230141b158b4",
+            "branch": "workbench/site/report-cta",
+            "commit": "267471ed4baa9a0eb092c9c191b30d1142889c48",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 8139,
+    "verdict": "ALLOW"
+}

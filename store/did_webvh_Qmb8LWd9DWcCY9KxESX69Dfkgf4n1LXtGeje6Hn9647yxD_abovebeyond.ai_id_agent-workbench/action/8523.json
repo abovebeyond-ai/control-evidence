@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "20d097a39126bf9b155c9d8f3baaa7ee114bbfb5",
+            "branch": "workbench/fix/garages-tab-reads-buy-overs-once",
+            "files_sha256": "cd59c5dea5d82e820321124535f7fad6dfb93c9508a2150aa1f70bb15ca20a1b",
+            "message": "The Garages tab reads who bought over once, and the column gets its index"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261002185728-601ae6"
+}

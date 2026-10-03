@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d23575f06f832053ec44e1f1785c3b99dbbc3132",
+            "branch": "workbench/sources/western-open",
+            "files_sha256": "3eaa6da234178bf6efa1bb7468e4e3c99044730f266556b8d186c91dc36c2686",
+            "message": "Sources: YouTube in ten countries with comments, Bluesky trending, Wikipedia spikes"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261002213112-a5f55b"
+}
