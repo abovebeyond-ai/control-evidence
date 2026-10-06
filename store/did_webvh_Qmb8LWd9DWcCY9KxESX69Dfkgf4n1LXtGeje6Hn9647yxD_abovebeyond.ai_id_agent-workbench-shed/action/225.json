@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The site's side of Gentells Standard 0.8.0 (Trendwolves/gentells-standard#12): lifestages are shown with their age range, Young Families is settled, and agents get the birth years.\n\n- **`config/taxonomy.php`** is regenerated with `bin/taxonomy-snapshot.mjs` from the pipeline on 0.8.0. Lifestage labels carry their range, \"Teens (11\u201317)\", and Young Families is no longer marked proposed, so it appears among the filters. This is the cold-start fallback only: live, the labels come from the pipeline's projection, which carries the same labels once the pipeline is on 0.8.0.\n- **MCP instructions** (`GentellsServer.php`):\n  - the birth years of the generations;\n  - ZAlpha as a lens over the border between Gen Z and Gen Alpha, never added to them;\n  - every lifestage with its range;\n  - Teens starts at 11, with the own smartphone, not at 13.\n- **MCP contract 3.2.1** is a patch: the shape of every answer stays and only label values change. The entry is in `docs/mcp-changelog.md`. The contract snapshot stays at 3.2.0 because the shape did not move.\n\nTests: `vendor/bin/phpunit` passes 402 of 402, and `pint --test` passes. `CohortAxesTest` checks that the instructions name every label, ranges included.\n\nOrder: merge either before or after the pipeline change. Until the pipeline runs 0.8.0, the projection keeps serving the labels without ranges.\n",
+            "branch": "workbench/site/standard-0.8",
+            "title": "Gentells Standard 0.8.0: lifestages with their ages, birth years for agents"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261006072228-1710ff"
+}

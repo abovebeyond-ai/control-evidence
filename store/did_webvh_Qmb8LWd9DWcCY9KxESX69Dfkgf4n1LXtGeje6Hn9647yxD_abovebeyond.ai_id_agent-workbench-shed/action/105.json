@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0cac83312a92f0cafa3a1f4829d7c8fa83ddde9c",
+            "branch": "workbench/pipeline/verify-reserve",
+            "files_sha256": "6bc9c55aaf1bac654bc1afcf5561604df7b86049581fc5bb0c60127cfde96136",
+            "message": "Verify reserves what it asks for, and counts CJK at a token a character\n\nThe fit check before classify-verify reserved 1,024 answer tokens while the\ncall sent the default max_tokens of 8,192, so a prompt within 7k tokens of\nLlama's 131k context passed the check and Together refused it with 400\n\"Input validation error\" (four times on 2026-10-05). The check and the call\nnow use the same number.\n\nThe estimate also counted four characters to a token for everything. Text\nfrom the China adapters is close to one token per character, so a batch of\nit read as a quarter of its size. CJK characters now count one each."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261005211248-66b005"
+}

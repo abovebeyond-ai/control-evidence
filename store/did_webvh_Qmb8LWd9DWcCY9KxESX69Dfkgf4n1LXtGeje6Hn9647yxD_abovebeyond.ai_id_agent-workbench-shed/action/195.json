@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0847c444f3e578e0d5288dc2265af80f36d50d1b",
+            "branch": "workbench/fix/a-cover-turns-to-fit-a-slanted-plate",
+            "files_sha256": "4af641f58c9e423b6b69b9647183458b954839ffcb5c5aa10548c402cd1c5af6",
+            "message": "A cover in the photo editor turns by a knob above it, to fit a plate photographed at an angle"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261006071546-30bb83"
+}

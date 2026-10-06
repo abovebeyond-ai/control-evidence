@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2f1ac017e8ba2d37057bd6a698323a0f13fd7464",
+            "branch": "workbench/fix/questions-about-shared-cars-reach-the-worklist",
+            "files_sha256": "e7951fd3155a2bc64d7ebe2911926f33eb1d504442c81d1ebc5014e6b4c473e1",
+            "message": "Questions about shared cars on a dealer website reach the worklist"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261005150318-4285ef"
+}

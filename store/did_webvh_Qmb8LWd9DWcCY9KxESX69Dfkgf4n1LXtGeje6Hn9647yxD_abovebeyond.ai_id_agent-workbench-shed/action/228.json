@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8905b4ed925e1c61768e0ef6da4e368ec75ebcf0",
+            "branch": "workbench/npm-advisory-ceiling",
+            "files_sha256": "0cbdb136c550ee9826fa927f0fd66ff5b58d4148d45aa1914be022130b4139df",
+            "message": "npm advisories back under the ceiling: 8 to 6\n\nsource-map-js 1.2.1 got a high advisory (GHSA-68fv-2mgg-jv7q), which put\nthe audit at 8 against a ceiling of 7 and turned the advisory job red on\nevery pull request. 1.2.2 fixes it. http-cache-semantics, until now\nwithout a fixed release, has one in 4.3.0 (GHSA-ch52-4w7c-c8xp).\n\nBoth are lock-file bumps of a transitive dependency, nothing else in the\ntree moves. The ceiling goes down to 6 so neither can come back."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261006072430-c4ec36"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "6d9eaf666bc38b968c7a8ebc247377d5",
+    "effect": {
+        "detail": {
+            "base": "81d1706b3544d8f9ab64ad0a65ef6e019c9f480a",
+            "branch": "workbench/forwarded-mail",
+            "commit": "62522ee811947dc42aac9188cfeef2d3c4028a20",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 120,
+    "verdict": "ALLOW"
+}

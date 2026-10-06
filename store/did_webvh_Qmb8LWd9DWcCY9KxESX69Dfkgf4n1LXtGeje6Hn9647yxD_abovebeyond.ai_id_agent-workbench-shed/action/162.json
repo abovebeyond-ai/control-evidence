@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:3",
+            "note": "Shared-car questions fixed in platform #959 (merged); back link keeps the selection proposed as stockcars-website #33; Frederik still answers the visitor about car 22695 by hand",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/stockcars-website/pull/33"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261006071038-08719f"
+}

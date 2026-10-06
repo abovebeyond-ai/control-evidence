@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Since version 4 of the `/id` log went live on 5 October 2026 (key-1 moved onto a hardware token, abovebeyond-ai/abovebeyond#141), the evidence check has refused every pull request from the hands:\n\n```\nREFUSE the record's agent did:webvh:Qmb8L\u2026:abovebeyond.ai:id#agent-workbench-shed is not under the DID did:web:abovebeyond.ai or its aliases, nor under a successor that carries its #key-1\n```\n\nThe action resolves `https://abovebeyond.ai/.well-known/did.json` by default. That is the document of the first log, final at version 14, so its key-1 can never change. `relying` accepts the successor identity (`\u2026:abovebeyond.ai:id`) only while it carries the same `#key-1`, and since version 4 it doesn't. The successor link was the old key-1, and that key moved.\n\nThe default is now the identity in force: `https://abovebeyond.ai/id/did.json`. It names the gateway's key, `#portal`, the operator keys and every agent, and lists both did:webvh identifiers as aliases. Records under either identifier therefore hold, with no successor rule needed.\n\n## Checked with `relying` v0.20.1, the version this action pins, on real pull request bodies\n\n| Pull request | `/.well-known/did.json` | `/id/did.json` |\n|---|---|---|\n| Trendwolves/gentells-pipeline#292 (shed, 6 Oct) | REFUSE | holds |\n| abovebeyond-ai/portal#336 (Elixir, 30 Sep) | REFUSE | holds |\n| stocklistdealer-eu/platform#959 (shed, 5 Oct) | REFUSE | holds |\n| Hoet-design/hoet-eyewear#70 (workbench, 28 Sep) | REFUSE | holds |\n\nThe same result with `relying` built from control's `main`.\n\n## After merging (operator)\n\nEvery repository uses `@v1`, so the tag has to move to the merge commit:\n\n```bash\ncd ~/Projects/control-verify-action && git pull\ngit tag -f v1 && git push -f origin v1\n```\n\nThen re-run the failed `evidence` jobs (for example gentells-pipeline#292).\n\n`relying`'s own `--did` default in control (`cmd/relying/main.go`) still names `/.well-known`. It matters only when relying is run by hand without `--did`; a follow-up in control.\n",
+            "branch": "workbench/verify-against-the-identity-in-force",
+            "title": "Verify against the identity in force (/id/did.json)"
+        },
+        "resource": "abovebeyond-ai/control-verify-action"
+    },
+    "run": "workbench-20261006052640-b0ed7e"
+}

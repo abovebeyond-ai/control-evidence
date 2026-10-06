@@ -1,0 +1,16 @@
+{
+    "action": "0f1b0c7164733ae2ca7fa73fcca1ed13",
+    "effect": {
+        "detail": {
+            "base": "50171010c5b8052f880a2f7ae99239848fd1fae2",
+            "branch": "workbench/records-of-this-hand",
+            "commit": "73577565aa435bb34b86aa31a91303287b6b20e3",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6,
+    "verdict": "ALLOW"
+}

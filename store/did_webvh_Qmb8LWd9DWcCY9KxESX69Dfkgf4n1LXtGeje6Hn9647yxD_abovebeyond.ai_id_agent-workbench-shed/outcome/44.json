@@ -1,0 +1,16 @@
+{
+    "action": "0027519814ba83ca528d6568cdbdf0dd",
+    "effect": {
+        "detail": {
+            "base": "7869ea1b7489de8531779e52080214a9a2b3941e",
+            "branch": "workbench/key1-on-token",
+            "commit": "0d0ae324bb14e3863f1579954bf49e34aeec7038",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 42,
+    "verdict": "ALLOW"
+}

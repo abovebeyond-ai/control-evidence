@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The DID log's ceremonies were written down as the story of one day each. Nothing said what to check before and after **any** change to the log. That is the step that was missing on 5 October 2026: key-1 moved, the evidence check recognised the successor by key-1, and from the deploy on it refused every hand's pull request until control-verify-action#2.\n\n`scripts/README.md` gets two sections, in Dutch like the rest of it:\n\n- **Elke wijziging van het log**, a checklist for every ceremony.\n  - **Who reads what:** a table per role (gateway, Portal, `relying`, the signing scripts), extended whenever a new reader appears.\n  - **Before:** the state of the log and the tokens; a rehearsal; the commands written out in the code PR.\n  - **Between the ceremony and the merge:** `relying pull` against a recent hand PR, with the new `did.json` served locally from the log PR's branch on the workbench. Without `holds`, no merge. For key-1, also the probe.\n  - **After the deploy:** check live, re-run one evidence check, only then install the descriptor, then clean up the text that describes the old state.\n- **Zo ging het op 5 oktober 2026:** key-1 to token A slot 9E (#140, #141), the slots now holding each role, the evidence break and its fix, and the old key-1 that stays valid under `did:web:abovebeyond.ai`.\n\nDocs only. `npm test`: 22 pass, 1 skipped.\n",
+            "branch": "workbench/ceremony-checklist",
+            "title": "The DID log: what to check before and after every change"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261006055426-ae8bee"
+}

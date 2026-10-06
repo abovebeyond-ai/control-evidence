@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "key-1 moved onto YubiKey A on 5 October 2026 (abovebeyond-ai/abovebeyond#141), and `abovebeyond-signing.jwk` no longer exists. Until this change, `sign-mapping.mjs` read that file, so it cannot sign.\n\n- **`sign-mapping.mjs`** opens key-1 through `scripts/key-1.mjs` in the sibling abovebeyond checkout (`ABOVEBEYOND` to point elsewhere): a PIN, then a touch per mapping. It signs as `did:web:abovebeyond.ai:id`, the successor identity, which is the only place a new key-1 is published. `did:web:abovebeyond.ai` keeps the old key-1 for good, so the mappings already in the repo still verify. The `PROVEML_CLERK_KEY` path (did:jwk, for CI) is unchanged.\n- **`lib.mjs` `resolveDid`** now follows did:web paths: `did:web:host:a:b` resolves `https://host/a/b/did.json`, as the did:web spec says. Before, it always fetched `/.well-known/did.json`, so a mapping signed as `did:web:abovebeyond.ai:id` would have been checked against the old key and failed.\n- **`lib.mjs` `signerFor`** also accepts an opened key with `sign(bytes)`, and gives the same base64url Ed25519 bytes as it does for a private JWK.\n\nChecked on the workbench:\n- The three committed mappings still verify through `check.mjs`.\n- `did:web:abovebeyond.ai:id` resolves to the live token key; `did:web:abovebeyond.ai` still resolves to the old one.\n- With one software key and a pinned clock, `issuer(privateJwk)` and `issuer(openKey(...))` produce byte-identical SD-JWTs.\n- `sign-mapping.mjs` runs end to end through `key-1.mjs`, and the CI path signs and verifies as did:jwk.\n- `adapters/*.test.mjs`: 23 passed.\n- `npm test` points at a `test.mjs` that does not exist on `main`; that is unrelated to this change.\n",
+            "branch": "workbench/key1-on-token",
+            "title": "Sign mappings with key-1 on the token"
+        },
+        "resource": "abovebeyond-ai/proveml-demos"
+    },
+    "run": "workbench-20261005203109-92b4cd"
+}

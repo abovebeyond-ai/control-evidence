@@ -1,0 +1,16 @@
+{
+    "action": "4829ed4c80bdffbad3d199845fa9281d",
+    "effect": {
+        "detail": {
+            "base": "0847c444f3e578e0d5288dc2265af80f36d50d1b",
+            "branch": "workbench/kopie-fotos-afgeleid",
+            "commit": "4a22149a4d5115057db1587f3da2763e6e60af0d",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 207,
+    "verdict": "ALLOW"
+}

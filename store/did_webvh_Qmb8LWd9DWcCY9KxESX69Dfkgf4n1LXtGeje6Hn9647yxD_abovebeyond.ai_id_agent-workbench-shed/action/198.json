@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The photo editor that replaced Toast UI (#950) lost the handle that turned a cover. A plate photographed at an angle could only be covered by a level rectangle, which either leaves the plate's ends readable or covers much more of the car than needed. This came up on 5 October 2026 while blurring a plate on a car of Garage Palermo.\n\n## What changes\n\n- A selected cover shows a knob on a short stick above its top edge. Dragging the knob turns the cover around its centre. Within 3 degrees of level (or of a quarter turn) it snaps straight, and a straight cover stores no angle at all, so existing state and undo snapshots are unchanged.\n- A turned cover is hit on its turned shape, moves as before, and resizes along its own sides with the opposite corner fixed.\n- Fill and outline are drawn in a frame turned around the centre. Blur works out the upright box around the turned cover, keeps the blur strength of the cover's own sides, and clips to the turned shape.\n- Save goes through the same `drawScene`, so the saved photo holds the turned cover.\n- Only covers turn. Circles and pen lines are unchanged.\n- R S1-6.45 now describes the knob.\n\n## Tests\n\n`npm run test:js`: 103 passed, including new tests for the snap, the bounding box, turning by the knob (plus undo and snapping back), hitting and resizing a turned cover, a turned black cover read back pixel by pixel, and a turned blur that blurs the slant and leaves the corners of its upright box sharp. `eslint` is clean, `npm run build` passes, and `bin/rules-sources` reports no problems.\n\nNot yet tried by hand on a phone or with a mouse in a browser.\n",
+            "branch": "workbench/fix/a-cover-turns-to-fit-a-slanted-plate",
+            "title": "A cover in the photo editor turns to fit a slanted plate"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261006071546-30bb83"
+}

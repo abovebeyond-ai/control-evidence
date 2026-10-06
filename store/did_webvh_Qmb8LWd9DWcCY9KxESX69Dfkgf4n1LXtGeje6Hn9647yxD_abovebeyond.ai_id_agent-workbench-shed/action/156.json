@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9d9ccd6d6a80c084e0ff5a8c7e99ea422801d730",
+            "branch": "workbench/back-keeps-selection",
+            "files_sha256": "e6f80a62eba22bb80ecf0a0daffc7c382296dc36e03a4765811dfe1a53c46bcd",
+            "message": "Back to the stock list keeps the selection and the scroll position"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261006071016-f52a88"
+}

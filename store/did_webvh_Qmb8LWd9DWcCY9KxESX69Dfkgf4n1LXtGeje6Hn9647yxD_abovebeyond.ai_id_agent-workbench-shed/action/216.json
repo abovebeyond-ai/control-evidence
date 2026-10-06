@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fb33875d34ed31b416715039eabf5e84c613424f",
+            "branch": "workbench/online-keeps-position",
+            "files_sha256": "87d6087dca386706015bf4f04d79adba98a630d68168656066d3fae6c2fa93d6",
+            "message": "Showing the online stock keeps the visitor where they are"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261006072033-14fcba"
+}

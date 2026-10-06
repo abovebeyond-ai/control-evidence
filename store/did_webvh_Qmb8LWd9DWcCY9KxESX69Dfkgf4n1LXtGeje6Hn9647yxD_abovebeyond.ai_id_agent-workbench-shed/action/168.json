@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bcbcced7e0fe22fdc4abdb485bcb77f03e1a8dc2",
+            "branch": "workbench/fix/assign-within-14-days",
+            "files_sha256": "dedb041eb580fa8c14f1bb7e302255f77bcbc737177174f05d9777f87b59a3ad",
+            "message": "Assign a bid through day 21, greet a garage by its name, purchase price in the bought mail\n\nThe assignment window was already day 8 through day 21; the code counted it as\nfifteen days from the end date and the late-assignment message said \"15 days\nafter the end date\". ASSIGN_DAYS names the fourteen, the message and the\ninsights note say fourteen, and a test pins the day 21 boundary. A mail to the\ngeneral address of a garage that no user signs in with now greets the garage\nby its name instead of a bare \"Dag,\". The bought mail labels the buyer's price\n\"Aankoopprijs\". The Hexon import notes that Mercedes-AMG stays under\nMercedes-Benz. The four decisions are recorded and finding X-19 is closed.\n\nPortal: Toewijzen tot en met dag 21 bevestigd, mails naar het algemene adres van een garage noemen de garage, en de gekocht-mail spreekt van aankoopprijs."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261006071019-821f14"
+}

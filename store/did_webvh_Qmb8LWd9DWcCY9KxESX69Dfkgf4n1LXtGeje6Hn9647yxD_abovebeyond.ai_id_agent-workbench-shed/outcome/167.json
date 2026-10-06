@@ -1,0 +1,16 @@
+{
+    "action": "782fb74f83606c19e1a3288a1f5bc8c1",
+    "effect": {
+        "detail": {
+            "base": "3293a38fd2efb465bcef4a5f9b7fd5dec8701e28",
+            "branch": "workbench/mail-intake-counts-working",
+            "commit": "8691b7ca22f4d5f35afd76348fefe7f72fa1d930",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 165,
+    "verdict": "ALLOW"
+}

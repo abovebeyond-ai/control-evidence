@@ -1,0 +1,16 @@
+{
+    "action": "d620f721191ce87b9801ce7297cf2e30",
+    "effect": {
+        "detail": {
+            "base": "04c43928f2d47988cab8461f9c05ad5593f12d92",
+            "branch": "workbench/lost-laptop-hardened",
+            "commit": "6d7f92b2fe4f5e4897a0cb2e3a27cdcea6daaf88",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 54,
+    "verdict": "ALLOW"
+}

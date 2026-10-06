@@ -1,0 +1,16 @@
+{
+    "action": "a58424ec2ada7a4591d8e51263a31559",
+    "effect": {
+        "detail": {
+            "base": "a29cf7ac440bf93d064bd74e6781506a6957f44c",
+            "branch": "workbench/mail-alias",
+            "commit": "e8943b82afec369b71974a2876741b457185ad56",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 138,
+    "verdict": "ALLOW"
+}

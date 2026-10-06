@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5c7be77b9fdd4649ee0cc9027fa5e7a6d3849737",
+            "branch": "workbench/key1-on-token",
+            "files_sha256": "3bdad71a5eb83f2f70129c07d9329263d019470d0bf7100c114f0296801eac4a",
+            "message": "Sign reviews with key-1 wherever it lives, as did:web:abovebeyond.ai:id\n\nsign-review.mjs opens key-1 through abovebeyond's scripts/key-1.mjs (the YubiKey named\nby the descriptor, or a JWK file) and assembles the same credential issueReviewCredential\nmade, byte for byte. New sign-offs name the successor's did:web, whose key-1 can change;\nbuild.mjs names the latest signer."
+        },
+        "resource": "abovebeyond-ai/proveml-research"
+    },
+    "run": "workbench-20261005201153-f9a4e3"
+}

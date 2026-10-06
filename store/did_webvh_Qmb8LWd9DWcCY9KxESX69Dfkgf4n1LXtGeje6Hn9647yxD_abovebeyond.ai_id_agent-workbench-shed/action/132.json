@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "969cde92896e5d22df11c50a0d39bae2a57a5826",
+            "branch": "workbench/ceremony-checklist",
+            "files_sha256": "b50215f7399b979bddc39004d2a254110f9095f4cdbac8230ceda996784fcdf9",
+            "message": "The DID log: what to check before and after every change\n\nA checklist for every ceremony (who reads each role, relying against the new did.json\nbefore the merge, the descriptor only after the deploy) and what happened on 5 October 2026."
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261006055426-ae8bee"
+}

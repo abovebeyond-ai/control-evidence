@@ -1,0 +1,16 @@
+{
+    "action": "6656a7a1df54f832d0fe483259129a57",
+    "effect": {
+        "detail": {
+            "base": "fb33875d34ed31b416715039eabf5e84c613424f",
+            "branch": "workbench/online-keeps-position",
+            "commit": "953b1f0613d9f1895ca3183ba95db9d17feef4b5",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 216,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "50171010c5b8052f880a2f7ae99239848fd1fae2",
+            "branch": "workbench/readme-paths",
+            "files_sha256": "76a976d762171d6fa9eda7ddbe7ba1930d2ad57454826b94901770540b77e0e6",
+            "message": "README: the examples use ~/Projects/portal-cli, the path on every workbench\n\nThe repo is cloned to ~/Projects/portal-cli on both workbenches; ~/Projects/.portal was the\nMacBook-only folder it grew in."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261005084210-dddc89"
+}

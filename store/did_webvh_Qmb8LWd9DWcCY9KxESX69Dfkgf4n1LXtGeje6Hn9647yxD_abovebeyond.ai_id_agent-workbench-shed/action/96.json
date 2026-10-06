@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0cac83312a92f0cafa3a1f4829d7c8fa83ddde9c",
+            "branch": "workbench/pipeline/verify-fit",
+            "files_sha256": "34b60cbc9b62a6a989c8091fb1034a68c549e3c64ed82dafe3e66ff7814cc5c7",
+            "message": "Merge pull request #291 from Trendwolves/workbench/pipeline/signal-count\n\nProjection: the signal count on its own endpoint"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261005211143-8f69b6"
+}

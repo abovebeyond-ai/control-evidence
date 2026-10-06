@@ -1,0 +1,16 @@
+{
+    "action": "4199889d41eeb2846b60da52b706d063",
+    "effect": {
+        "detail": {
+            "base": "0cac83312a92f0cafa3a1f4829d7c8fa83ddde9c",
+            "branch": "workbench/pipeline/verify-reserve",
+            "commit": "4b7a250d033e4d90e44d6c38f2192c93aec9aa66",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 105,
+    "verdict": "ALLOW"
+}

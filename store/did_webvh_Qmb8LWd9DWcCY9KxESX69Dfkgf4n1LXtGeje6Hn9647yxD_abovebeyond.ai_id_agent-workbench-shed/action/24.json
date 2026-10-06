@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a54de276461bc9937aadb92eb8fcd32f30a5151f",
+            "branch": "workbench/sessions-from-the-phone",
+            "files_sha256": "c67cae31f523c1e5f783ce19fe4ca32de559d372b1d8ce5a028d98ef574828e4",
+            "message": "Sessions from the phone: a Remote Control server per project\n\nOn the workbench at home each project gets a user service, claude-rc@<folder>, running\nclaude remote-control in worktree mode with at most four sessions. A new session started from\nthe Claude app gets its own worktree, so sessions never share a checkout."
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005091902-33b32d"
+}

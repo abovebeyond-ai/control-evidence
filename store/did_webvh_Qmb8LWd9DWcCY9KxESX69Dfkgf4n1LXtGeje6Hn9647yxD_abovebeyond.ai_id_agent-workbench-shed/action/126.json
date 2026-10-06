@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c2423df873cfbe3a299982e62bbbca2971ed2caf",
+            "branch": "workbench/key-1-on-the-token",
+            "files_sha256": "b815ae078e3aab049992f22d4f2523173cc0adb716a9142ec077540c7678037a",
+            "message": "Key custody: key-1 is on token A since 5 October 2026\n\nThe identity's own key gets its section (custody, residual, the successor link it no longer\ncarries), and the update keys name their slots at version 4."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006053635-3e649b"
+}

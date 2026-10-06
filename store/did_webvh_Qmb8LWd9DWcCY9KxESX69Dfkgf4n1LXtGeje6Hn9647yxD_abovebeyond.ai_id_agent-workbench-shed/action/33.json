@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces the per-project Remote Control servers with one entry point in `~/Projects` (`claude-rc-workspace`), and `projects-sync` (hourly) keeps all 42 repositories Portal links cloned and fetched, writing `PROJECTS.md`. The core says how a session there finds its project and that it works in its own worktree. Proposed from the workbench at home.\n",
+            "branch": "workbench/one-entry-point",
+            "title": "One entry point: a session in ~/Projects finds its project first"
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005093057-3387cb"
+}

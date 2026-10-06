@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:1",
+            "note": "Rotate handle proposed as #961. Question: 'Mijn aangeboden wagens' default order was deliberately set to 'what has to happen first' (#934, R B1-1.17); Ilse asks for newest first, less whitespace and a more visible Biedingen button. Switch the default back to newest first (start date desc) and make Biedingen a filled button, or keep the design and explain the sort menu to her?",
+            "state": "parked",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/961"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261006071613-1f80fe"
+}

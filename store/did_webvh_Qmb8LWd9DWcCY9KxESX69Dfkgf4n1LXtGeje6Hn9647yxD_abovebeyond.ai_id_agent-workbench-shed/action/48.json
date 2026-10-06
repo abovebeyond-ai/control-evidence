@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d88ef30b9d2aa66cf45640fcc7debc84e54e929b",
+            "branch": "workbench/key-1-on-token-a",
+            "files_sha256": "d8e342c38a9bc24bffc4c24461e89b930ff0812bbd87264654ddd3a25ad410e5",
+            "message": "Version 4 of the log: key-1 moves onto a hardware token\n\nkey-1 was a file on the MacBook; a lost laptop meant a lost signing key. Its new key was made\non token A (39780281, slot 9E, PIN once and a touch per signature) and replaces the file key\nin version 4, signed by the next key on token A; the fresh next key is on token B (39780275,\nslot 9E) with the spare committed beside it. Everything the file key signed before version 4\nstill verifies through the log's history. The trust page says so."
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261005185133-d81a67"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e3ad29bc3b75aeb58ae2858e44c7ae0da46f7a24",
+            "branch": "workbench/the-workbench-reads-portal",
+            "files_sha256": "1b4103d6aa4a2c581529d1a539c029e472804ebf9d9864a859ef4a2b3eeda9f3",
+            "message": "The workbench at home reads Portal with its own key\n\nIt signs its reads (scope hand-read, ten GET routes) and never gets the access codes, admitted\nor not. The item leaves the to-do list; the token section says how the workbench reads."
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005090537-12c478"
+}

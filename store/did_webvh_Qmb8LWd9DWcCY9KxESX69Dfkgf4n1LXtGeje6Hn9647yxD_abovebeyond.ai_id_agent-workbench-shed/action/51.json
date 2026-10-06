@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Version 4 of the did:webvh log under `/id`: **key-1 moves onto a hardware token.**\n\nkey-1 was a file on the MacBook, so a lost laptop meant a lost signing key. Its new key was made on token A (39780281, slot 9E, PIN once and a touch per signature) and replaces the file key in version 4, signed by the next key on token A; the fresh next key is on token B (39780275, slot 9E) with the spare committed beside it. Done with the module and ceremony of #140.\n\n- `did-webvh.mjs verify` holds on version 4; key-1 `x` = `Em18TsOM\u2026LieVbE`, equal to the token key.\n- Everything the file key signed before version 4 still verifies through the log history. Whether `/.well-known/did.json` should drop the old key-1 is a separate decision (it would stop did:web verification of what was issued as `did:web:abovebeyond.ai`).\n- The trust page says key-1 is now on a token.\n- After deploy: write `~/.config/proveml/abovebeyond-key-1.key.json` on the Mac and delete the file key.\n\nThe ceremony ran on the MacBook; proposed from the workbench, since the MacBook is no longer a hand.\n",
+            "branch": "workbench/key-1-on-token-a",
+            "title": "Version 4 of the log: key-1 moves onto a hardware token"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261005185133-d81a67"
+}

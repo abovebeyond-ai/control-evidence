@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "81d1706b3544d8f9ab64ad0a65ef6e019c9f480a",
+            "branch": "workbench/mail-intake",
+            "files_sha256": "a3a605167147a8497e36cb8d7b1c4efc9bb2688aba3d7fda468203f7a704cf7f",
+            "message": "Forwarded mail for the workbench\n\nMail forwarded to <slug>@in.abovebeyond.ai arrives through Resend's signed webhook, is kept\nonly from an owner address with DMARC passing, and is split into the owner's instruction and\nthe forwarded mail as data. The shed reads it (read, hand-read) and moves it through the task\nroute under mail:<id>, the gateway's existing portal.task kind."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261005204123-8f7377"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9a748192cfef9aad9766b0511bc2b16a731311c7",
+            "branch": "workbench/mail-same-forward-once",
+            "files_sha256": "65db2eeeea54ea2e978225fb516aac785864be4dc4c9f9660bb7e1da1f4b105f",
+            "message": "The same forward twice is one mail\n\nA fingerprint of sender, subject, instruction and forwarded text: a second delivery within a\nday is answered with the mail already kept. A migration closes the copy already stored\n(mail:4, the same forward as mail:1)."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006071346-ff8081"
+}

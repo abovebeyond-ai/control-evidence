@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Problem\n\n\"Toon online voorraad\" sits at the end of the stock list. Clicking it replaced the list with the first page of the combined stock and scrolled smoothly back up to the filters. A visitor who had scrolled through all own cars and wanted to continue into the online stock landed at the top instead, and had to scroll down through the same cars again.\n\n## Change\n\n- **The view stays where it is.** The toggle no longer scrolls. It reloads as many pages as are on screen (page 1 first, then the rest in parallel) and draws them in one go, so the list keeps its length and the page does not jump while it loads.\n- This works because the public API puts the dealer's own cars first when `scope=all` (`own_first`, default on), in the same sort order. The cards above the button stay the same, and the online cars continue right below them, where the button was.\n- **Hiding the online stock** shortens the list back to the own cars. The scroll position is kept, so the browser stops at the end of the list, with the button in view, instead of at the top.\n- `search()` takes an optional page count (`keep`, default 1); every other caller is unchanged.\n\nThe counter at the top of the list still shows the new total; it is just no longer scrolled into view.\n\n## Checks\n\n- `npm test`: 35 passed. `npm run build`: complete.\n- Browser check (Playwright, Chromium 1280x900, dev server against a local stand-in API serving the live public stock): scroll through the whole own stock (41 cars), click the button.\n\n  | | main | this branch |\n  |---|---|---|\n  | scroll position before / after \"Toon online voorraad\" | 5254 px / 990 px | 5254 px / 5254 px |\n  | first 41 cards after the toggle | the own cars | the own cars |\n  | scrolling on from there | | online cars |\n  | after \"Verberg online voorraad\": button position in the window | 4374 px down (out of view) | 110 px (where it was) |\n\n## To try on the deploy preview\n\nOn `/aanbod/`, scroll to the end, click \"Toon online voorraad\": you stay at the same place and the online cars appear below. Click \"Verberg online voorraad\": you stay at the end of the list.\n",
+            "branch": "workbench/online-keeps-position",
+            "title": "Showing the online stock keeps the visitor where they are"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261006072033-14fcba"
+}

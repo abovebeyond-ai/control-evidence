@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe job \"Dependencies carry no new advisory\" went red on #962 (and will on every pull request from now on): `source-map-js` 1.2.1 got a high advisory today ([GHSA-68fv-2mgg-jv7q](https://github.com/advisories/GHSA-68fv-2mgg-jv7q)), so `npm audit` counts 8 high packages against a ceiling of 7. Nothing in #962 touches dependencies.\n\n## What\n\n- `source-map-js` 1.2.1 \u2192 1.2.2 (under PostCSS and jsdom): fixes the new advisory.\n- `http-cache-semantics` 4.2.0 \u2192 4.3.0 (under ably \u2192 got \u2192 cacheable-request): the workflow comment said \"no fixed release yet\"; 4.3.0 is that release ([GHSA-ch52-4w7c-c8xp](https://github.com/advisories/GHSA-ch52-4w7c-c8xp)).\n- Ceiling 7 \u2192 6 and the comment above the job updated.\n\nOnly those two entries in `package-lock.json` change (version, resolved, integrity); neither version adds a dependency. A plain `npm update` with the local npm also pruned the optional sass/terser entries, so the bump was made by hand to keep the diff to what it says.\n\n## Checked\n\n`npm ci`, `node .github/scripts/npm-audit-ceiling.mjs 6` (6, passes), `npm run build`, `vitest` (103 passed), `eslint` (0 errors).\n\nAfter merging, re-run the failed audit job on #962: it audits the merge ref, so it picks up this lock file.\n",
+            "branch": "workbench/npm-advisory-ceiling",
+            "title": "npm advisories back under the ceiling: 8 to 6"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261006072430-c4ec36"
+}

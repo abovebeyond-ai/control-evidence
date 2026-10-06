@@ -1,0 +1,16 @@
+{
+    "action": "d07a2cf0d30bd6d9a53dd0d7814ec0c1",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 2,
+            "review_requested": "ShaneDeconinck",
+            "url": "https://github.com/abovebeyond-ai/control-verify-action/pull/2",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 114,
+    "verdict": "ALLOW"
+}

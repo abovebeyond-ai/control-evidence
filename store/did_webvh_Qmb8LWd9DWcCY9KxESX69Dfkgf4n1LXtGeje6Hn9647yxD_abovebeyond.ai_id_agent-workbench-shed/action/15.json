@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The workbench at home now has `gh` (2.102.0, checksum verified) behind a wrapper that asks the gateway for a one-hour, read-only token for the owner a call names. `hand.mjs propose` needed it to check that main has not moved. The core instructions say so, and the item leaves the to-do list. Proposed from the workbench at home.\n",
+            "branch": "workbench/gh-on-the-workbench",
+            "title": "gh reads on the workbench too, with an hour token from the gateway"
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005084345-9cddef"
+}

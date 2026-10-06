@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3293a38fd2efb465bcef4a5f9b7fd5dec8701e28",
+            "branch": "workbench/mail-intake-counts-working",
+            "files_sha256": "8df6734f6538b8382134d2fdc898b71bd6933c69a632551cfb44408b57da5be3",
+            "message": "Mail intake: count only the agents at work; attachments inside ~/Projects\n\nA done or waiting mail agent no longer holds a place, so new mail starts; an attachment saved\nunder ~/Projects/.mail is no read outside the session's working directories."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006071043-4219c6"
+}

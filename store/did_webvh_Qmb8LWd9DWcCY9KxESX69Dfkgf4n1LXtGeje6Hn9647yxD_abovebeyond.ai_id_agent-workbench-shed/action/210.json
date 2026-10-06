@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What broke\n\nAfter copying a vehicle (e.g. to turn a mistaken order form back into a listing, R S1-10.1), the photo tabs of the copy showed grey tiles. Clicking a tile opened the photo fine.\n\n`OwnStockController::copyPhotos` copies the original, cut-out and thumbnail files into the copy's folder and rewrites the row's paths, but kept `media_version` and `media_set` from the original. `VehicleImageService::url` treats those as \"derived sizes exist for this path\" and points md, sm and thumb at `_afgeleid/{copy path}/{version}-{size}`, which nobody ever wrote. The lightbox asks for the plain file, which does exist. A photo whose cut-out was not in the bucket kept pointing at the original's cut-out (whose sizes exist), which is why one tile out of seventeen did show.\n\n## The fix\n\nA copied row whose shown file (cut-out if any, else original, as `url()` picks it) moves to the copy's folder gets `media_version` and `media_set` null, like a fresh upload and like the bought-over copy already does (R S5-3.17). The URL falls back to the plain file at once and the five-minute sweep (`stocklist:fotos-afgeleid`) writes the copy's own sizes. A row that still shows the original's file keeps its version.\n\n- New rule R S1-10.4, finding `2026-10-06-een-gekopieerde-wagen-toonde-lege-fototegels`.\n- `ACopiedVehicleGetsItsOwnPhotoSizesTest`: fails on main, passes here.\n- Full suite green locally (2996 tests), PHPStan clean, Pint on the new file.\n\n## After deploy\n\nCopies made before this have rows that still claim the original's sizes. Repair one car (dry run first):\n\n```\nphp artisan stocklist:fotos-afgeleid --missing --wagen=<id>\nphp artisan stocklist:fotos-afgeleid --missing --wagen=<id> --apply\n```\n\nThe Fiat 500 copy reported today is most likely vehicle 23312 (from the screenshot's status bar; check the id on its sheet). `--missing` without `--wagen` counts every affected photo across all copies.\n",
+            "branch": "workbench/kopie-fotos-afgeleid",
+            "title": "A copied vehicle shows its photos instead of grey tiles"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261006071903-59c839"
+}

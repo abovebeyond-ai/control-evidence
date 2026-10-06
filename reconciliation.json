@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-03T07:34:21+00:00",
+    "computed_at": "2026-10-06T07:34:19+00:00",
     "window": {
-        "since": "2026-09-26T07:33:02+00:00",
+        "since": "2026-09-29T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -33,8 +33,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 1,
+                "gateway": 1
             }
         },
         "Hoet-design/hoet-eyewear-mirror": {
@@ -74,8 +74,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 58,
-                "gateway": 58
+                "github": 46,
+                "gateway": 0
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -84,7 +84,7 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
+                "github": 1,
                 "gateway": 0
             }
         },
@@ -100,12 +100,12 @@
         },
         "Trendwolves/gentells-pipeline": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             },
             "pulls": {
-                "github": 60,
-                "gateway": 60
+                "github": 66,
+                "gateway": 2
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 58,
-                "gateway": 58
+                "github": 65,
+                "gateway": 1
             }
         },
         "Trendwolves/glk-transferor": {
@@ -126,7 +126,7 @@
             },
             "pulls": {
                 "github": 8,
-                "gateway": 8
+                "gateway": 0
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -135,8 +135,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 4,
+                "gateway": 3
             }
         },
         "abovebeyond-ai/portal": {
@@ -145,8 +145,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 8,
+                "gateway": 6
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -196,8 +196,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 121,
-                "gateway": 121
+                "github": 119,
+                "gateway": 5
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -206,8 +206,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 18,
-                "gateway": 14
+                "github": 7,
+                "gateway": 2
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -283,8 +283,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 37,
-                "gateway": 37
+                "github": 39,
+                "gateway": 0
             }
         },
         "Trendwolves/gentells-standard": {
@@ -294,7 +294,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
+                "github": 6,
                 "gateway": 1
             }
         },
@@ -305,8 +305,19 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 14,
-                "gateway": 14
+                "github": 18,
+                "gateway": 0
+            }
+        },
+        "abovebeyond-ai/bextrust": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 2,
+                "gateway": 0
             }
         },
         "abovebeyond-ai/control": {
@@ -316,8 +327,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/control-verify-action": {
@@ -327,8 +338,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/elixir": {
@@ -338,7 +349,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
+                "github": 4,
                 "gateway": 0
             }
         },
@@ -351,6 +362,17 @@
             "pulls": {
                 "github": 0,
                 "gateway": 0
+            }
+        },
+        "abovebeyond-ai/portal-cli": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 10,
+                "gateway": 4
             }
         },
         "abovebeyond-ai/proof-of-control": {
@@ -375,6 +397,17 @@
                 "gateway": 0
             }
         },
+        "abovebeyond-ai/proveml-demos": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 1,
+                "gateway": 1
+            }
+        },
         "abovebeyond-ai/proveml-research": {
             "dispatches": {
                 "github": 0,
@@ -382,8 +415,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/verify-abovebeyond": {
@@ -397,6 +430,17 @@
                 "gateway": 0
             }
         },
+        "abovebeyond-ai/workspace": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 8,
+                "gateway": 6
+            }
+        },
         "forge:abovebeyond": {
             "skipped": "no token to read GitHub"
         },
@@ -404,6 +448,9 @@
             "skipped": "no token to read GitHub"
         },
         "forge:axa-dare-to-call": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:bextrust": {
             "skipped": "no token to read GitHub"
         },
         "forge:cabrio-eyewear": {
@@ -528,6 +575,9 @@
         "portal:axa-dare-to-call": {
             "skipped": "no token to read GitHub"
         },
+        "portal:bextrust": {
+            "skipped": "no token to read GitHub"
+        },
         "portal:cabrio-eyewear": {
             "skipped": "no token to read GitHub"
         },
@@ -649,124 +699,29 @@
             },
             "pulls": {
                 "github": 1,
-                "gateway": 1
+                "gateway": 0
             }
-        },
-        "vera/abovebeyond/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/afrodidact-website/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/axa-dare-to-call/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/cabrio-eyewear-mirror/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/cabrio-eyewear/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/cafe-t-hoekske-website/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/cides-portfolio/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/control/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/dbc-webapplicatie/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/elixir-fix/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/elixir/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/find-your-voice/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/garage-de-backer-website/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/gentells/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/glk-transferor/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/hoet-design-web/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/hoet-eyewear-mirror/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/hoet/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/kubo-it-lab/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/kubo-platform/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/menukaart-webapp/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/naviskore-viz/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/naviskore-webapp/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/portal/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/proof-of-control/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/proveml-research/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/proveml/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/schoutteet/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/shanedeconinck-be/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/she-cosmetics-website/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/signal-observatory-gentells/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/sportbusinessgame/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/stocklist-dealer-landing/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/stocklistplatform-eu/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/trustedagentic/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/vera/*": {
-            "skipped": "no token to read GitHub"
-        },
-        "vera/verify-abovebeyond/*": {
-            "skipped": "no token to read GitHub"
         }
     },
     "unexplained": [
-        "stocklistdealer-eu/stockcars-website: 18 pulls on GitHub, 14 performed by the gateway",
-        "stocklistdealer-eu/landing: 1 pulls on GitHub, 0 performed by the gateway"
+        "ShaneDeconinck/naviskore: 46 pulls on GitHub, 0 performed by the gateway",
+        "ShaneDeconinck/shanedeconinck.be: 1 pulls on GitHub, 0 performed by the gateway",
+        "Trendwolves/gentells-pipeline: 66 pulls on GitHub, 2 performed by the gateway",
+        "Trendwolves/gentells-site: 65 pulls on GitHub, 1 performed by the gateway",
+        "Trendwolves/glk-transferor: 8 pulls on GitHub, 0 performed by the gateway",
+        "abovebeyond-ai/abovebeyond: 4 pulls on GitHub, 3 performed by the gateway",
+        "abovebeyond-ai/portal: 8 pulls on GitHub, 6 performed by the gateway",
+        "stocklistdealer-eu/platform: 119 pulls on GitHub, 5 performed by the gateway",
+        "stocklistdealer-eu/stockcars-website: 7 pulls on GitHub, 2 performed by the gateway",
+        "Trendwolves/gentells-dashboard: 39 pulls on GitHub, 0 performed by the gateway",
+        "Trendwolves/gentells-standard: 6 pulls on GitHub, 1 performed by the gateway",
+        "Trendwolves/gentells-studio: 18 pulls on GitHub, 0 performed by the gateway",
+        "abovebeyond-ai/bextrust: 2 pulls on GitHub, 0 performed by the gateway",
+        "abovebeyond-ai/elixir: 4 pulls on GitHub, 0 performed by the gateway",
+        "abovebeyond-ai/portal-cli: 10 pulls on GitHub, 4 performed by the gateway",
+        "abovebeyond-ai/workspace: 8 pulls on GitHub, 6 performed by the gateway",
+        "stocklistdealer-eu/landing: 1 pulls on GitHub, 0 performed by the gateway",
+        "stocklistdealer-eu/website: 1 pulls on GitHub, 0 performed by the gateway"
     ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind, counted across pages until the window closes (rows 10.3.2, 10.3.4)"
 }

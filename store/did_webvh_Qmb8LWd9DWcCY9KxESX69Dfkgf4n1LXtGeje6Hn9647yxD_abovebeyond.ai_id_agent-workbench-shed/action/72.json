@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "proveml-demos",
+                    "url": "https://github.com/abovebeyond-ai/proveml-demos"
+                }
+            ]
+        },
+        "resource": "portal:proveml"
+    },
+    "run": "workbench-20261005201651-4a4ea6"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first forwarded mails to `stocklist@in.abovebeyond.ai` were dropped with `inbound mail for no project`: the project's slug is `stocklistplatform-eu`, and a mail finds its project by the part before the `@`. A slug is too long to forward to, and it can't be renamed: it is in Elixir, in every report and in every link.\n\n- **A project can have a short mail address of its own** (`data.mailAlias`), set by the owner on the project's settings page under \"Mail address\". Incoming mail finds the project by slug first, then by that address, so the slug keeps working beside it.\n- **One address, one project.** The field is validated: lowercase letters, digits and hyphens, at most 40 characters, case-insensitive. It is refused when it is another project's slug or short address. An empty field means the slug.\n- **The project page** names the short address when there is one.\n\nTests: `ForwardedMailTest` grows by 2 (mail arrives at the short address and at the slug; the owner sets it; another project's slug or address is refused; empty restores the slug). Full suite 609 of 610 (`BuildStampTest` fails in a worktree, also on `main`), Pint and PHPStan pass.\n\nAfter the deploy: set `stocklist` as the mail address of Stocklistplatform.eu, then send the three dropped deliveries again from Resend (Webhooks, the endpoint, each delivery).\n",
+            "branch": "workbench/mail-alias",
+            "title": "A project takes forwarded mail at a short address of its own"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006061117-ad1e97"
+}

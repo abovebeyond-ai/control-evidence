@@ -1,0 +1,16 @@
+{
+    "action": "9dfb6656bcf83ecec60eb089fb005318",
+    "effect": {
+        "detail": {
+            "base": "2a58d0d87da6b96ec9c77df70f92c3cb4fc83485",
+            "branch": "workbench/verify-against-the-identity-in-force",
+            "commit": "26a944629eecdf37bbd459eba5fdf9ad1a9a9a10",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 111,
+    "verdict": "ALLOW"
+}

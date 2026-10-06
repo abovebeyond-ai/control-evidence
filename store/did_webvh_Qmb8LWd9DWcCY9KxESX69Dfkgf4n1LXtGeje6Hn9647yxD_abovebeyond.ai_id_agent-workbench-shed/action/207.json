@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0847c444f3e578e0d5288dc2265af80f36d50d1b",
+            "branch": "workbench/kopie-fotos-afgeleid",
+            "files_sha256": "f99bf601ad83fecece18dbf4643771f10883a737dfe5a6b2eda5091e3876ad1a",
+            "message": "A copied vehicle shows its photos instead of grey tiles\n\nCopying a vehicle moved each photo's files to the copy's folder but kept\nthe original's media_version and media_set. The photo URL builder reads\nthose as \"derived sizes exist for this path\" and pointed md, sm and the\nthumbnail at _afgeleid/{copy path}/... files that were never written, so\nevery tile on both photo tabs stayed grey while the lightbox (the plain\nfile) opened fine.\n\nA copied row whose shown file moves now carries no version, like a fresh\nupload: the URL falls back to the plain file and the five-minute sweep\nderives the copy's own sizes. A row that still shows the original's file\nkeeps its version. Same rule as the bought-over copy (R S5-3.17).\n\nExisting copies are repaired with\nphp artisan stocklist:fotos-afgeleid --missing --wagen=<id> --apply.\n\nPortal: Foto's van een gekopieerde wagen tonen opnieuw meteen in de tegels."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261006071903-59c839"
+}

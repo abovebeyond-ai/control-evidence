@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"proxy-addr\",\"to\":\"2.0.8\",\"lock\":\"package-lock.json\"},{\"pkg\":\"fast-uri\",\"to\":\"3.1.8\",\"lock\":\"package-lock.json\"},{\"pkg\":\"ip-address\",\"to\":\"10.7.1\",\"lock\":\"package-lock.json\"},{\"pkg\":\"markdown-it\",\"to\":\"14.3.1\",\"lock\":\"package-lock.json\"},{\"pkg\":\"@ai-sdk\\/provider-utils\",\"to\":\"4.0.33\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 5,
+            "plan_sha256": "8b45f23796283e7852f668d87d76e5ab0d08d4c47f8ccb7795fea74fccef0626",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "01M4791EDM2GMTPQF14AE0P0PD"
+}

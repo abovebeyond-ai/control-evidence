@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5a4c088966d2656e841d2240b9f400f9d3b003c5",
+            "branch": "workbench/mail-signatures",
+            "files_sha256": "72be20692cf2f3b1b34ebcca0168c9f1f09ee0200b5d159201bcd847e778bf30",
+            "message": "A mail client's own line is not an instruction\n\nProton's \"Verzonden met Proton Mail\" above a forward was read as the owner's instruction.\nsplit() leaves out the lines mail clients add and a -- signature; a migration splits the\nstored mails again."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006062141-7fad5c"
+}

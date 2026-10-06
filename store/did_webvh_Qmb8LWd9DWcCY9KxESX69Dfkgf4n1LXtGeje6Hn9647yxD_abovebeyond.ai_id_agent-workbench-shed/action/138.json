@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a29cf7ac440bf93d064bd74e6781506a6957f44c",
+            "branch": "workbench/mail-alias",
+            "files_sha256": "6b9d4d1716c3f01e35630fdc77ec8a4d3b351a2254e0dc02e6e6d0c3703f1547",
+            "message": "A project takes forwarded mail at a short address of its own\n\nMail to stocklist@in.abovebeyond.ai was dropped: the slug is stocklistplatform-eu. The owner\nsets a short mail address per project on its settings page; incoming mail finds the project\nby slug, then by that address. One address belongs to one project."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006061117-ad1e97"
+}

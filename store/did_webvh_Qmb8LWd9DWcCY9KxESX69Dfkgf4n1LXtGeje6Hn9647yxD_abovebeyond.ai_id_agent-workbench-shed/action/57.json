@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Since 5 October 2026 the MacBook holds no private keys, no tokens and no `gh` or `gcloud` login. SSH to the 17 server accounts and to GitHub works only with YubiKey A or B plugged in and a touch. The list now says that at the top.\n\n- **The same day:** the four items that rotated something stored on the laptop are removed: the workbench seed, Portal's read token, key-1 and the Hedera operator file. The \"Not needed\" section now names them, so the reason they are gone is still written down. What remains is signing out the browser sessions.\n- **Right away:** unchanged.\n",
+            "branch": "workbench/lost-laptop-hardened",
+            "title": "Lost laptop: no keys or tokens on it since 5 October"
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005193653-24a4b5"
+}

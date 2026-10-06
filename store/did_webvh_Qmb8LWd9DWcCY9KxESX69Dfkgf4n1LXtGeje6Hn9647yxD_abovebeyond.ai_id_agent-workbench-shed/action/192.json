@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The same forward was kept twice. mail:4 (received 05:59) and mail:1 (06:06) are one forwarded mail: the first attempt, made before receiving was configured, was delivered later by Resend's retry under another id. Each became a mail, and the workbench would have taken both up.\n\n- **Each mail now carries a fingerprint:** sender, subject, the owner's instruction and the forwarded text. A forward with the same fingerprint on the same project within a day is the mail already kept, and Portal answers with that mail (`duplicate: true`). The same mail forwarded with **another instruction** is another request, and another mail.\n- **A migration** gives the stored mails their fingerprint. A later copy of an earlier one, if still `new`, is closed as `done` with the note \"the same forward as mail:N\". It keeps the first one **stored** (the lowest id), not the one with the earliest time, because a session may already be working on it. Here that closes mail:4 and keeps mail:1.\n\n## Tests\n\n- `ForwardedMailTest` grows by 1: a second delivery of the same forward is the first mail; another instruction makes a new one.\n- The migration was run by hand on SQLite with three mails: two copies of one forward, the later-stored one carrying the earlier time, and a third mail. It kept id 1, closed id 2 with the note, and left id 3 alone.\n- Full suite 611 of 612 (`BuildStampTest` fails in a worktree, also on `main`), Pint and PHPStan pass.\n",
+            "branch": "workbench/mail-same-forward-once",
+            "title": "The same forward twice is one mail"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006071346-ff8081"
+}

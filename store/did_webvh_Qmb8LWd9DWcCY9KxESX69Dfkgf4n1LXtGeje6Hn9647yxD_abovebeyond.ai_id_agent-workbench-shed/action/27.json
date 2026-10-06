@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Each project on the workbench at home gets a Remote Control server as a user service (`claude-rc@<folder>`, worktree mode, at most four sessions), so a new session can be started from the Claude app on the phone, each in its own worktree. The core instructions say how to add a project. Running now for `platform`. Proposed from the workbench at home.\n",
+            "branch": "workbench/sessions-from-the-phone",
+            "title": "Sessions from the phone: a Remote Control server per project"
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005091902-33b32d"
+}

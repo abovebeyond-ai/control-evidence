@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "65c3fda7f28b60a4853755043daf97c566343b23",
+            "branch": "workbench/lost-laptop-yubikey-steps",
+            "files_sha256": "5ca52c1e63608eaba95358ab00303616cd8bba3bdc9508e4caefdb9fa86a61eb",
+            "message": "LOST-LAPTOP: SSH steps only for a lost YubiKey; key-1 is on token A\n\nThe laptop's SSH keys no longer exist; the SSH steps apply only to a YubiKey lost along\nwith it, named by fingerprint. key-1 is on YubiKey A slot 9E since version 4 of the /id\nlog, and abovebeyond-signing.jwk is deleted."
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005194320-148041"
+}

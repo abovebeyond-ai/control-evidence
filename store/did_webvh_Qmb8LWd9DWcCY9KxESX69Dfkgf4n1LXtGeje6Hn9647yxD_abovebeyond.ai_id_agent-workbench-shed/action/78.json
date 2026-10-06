@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1fb1475d545b721051ab1d05c415aa45b2047a01",
+            "branch": "workbench/key1-on-token",
+            "files_sha256": "e9ef7b8c269bd536ad28431be10f15cab159eee5e0ed45c3465ff36edda24fbe",
+            "message": "proof-of-control: sign mappings with key-1 on the token, as did:web:abovebeyond.ai:id\n\nsign-mapping.mjs opens key-1 through abovebeyond's scripts/key-1.mjs; lib.mjs resolves\ndid:web paths and accepts an opened key as signer, with the same bytes as a JWK."
+        },
+        "resource": "abovebeyond-ai/proveml-demos"
+    },
+    "run": "workbench-20261005202959-793067"
+}

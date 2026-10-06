@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Elixir's app reading showed 4 failed jobs on 2026-10-05: all four were Together answering `classify-verify` with `400 Input validation error` between 01:44 and 05:02 UTC. Each one leaves a batch with Model A's verdicts unverified.\n\nTwo ways a prompt could pass the fit check in `consensus.mjs` and still be refused:\n\n- **The check and the call reserved different answer sizes.** `fitsContext` reserved 1,024 tokens, but `callModel` passed no `maxTokens`, so `callOpenAICompat` sent its default of 8,192. Any prompt between about 122k and 130k estimated tokens passed and was refused. The default is now `DEFAULT_MAX_TOKENS`, exported, and the verify check and call both use it.\n- **The estimate undercounted Chinese, Japanese and Korean text.** `approxTokens` counted four characters to a token. Text from the China adapters is close to one token per character, so such a batch read as a quarter of its real size. CJK characters now count one each. The same estimate feeds the usage rows of streamed calls, which get more accurate too.\n\nThe refusal rows carry the request size, but the part Elixir shows is cut off before it, so which of the two caused today's four is not confirmed. Both are real gaps either way.\n\nTests: two new cases in `test/prompt-fits.test.mjs`. The full suite has the same 6 failures with and without this change, all in `report-render` (the PDF tools are not installed where it ran).\n",
+            "branch": "workbench/pipeline/verify-fit",
+            "title": "Verify reserves what it asks for, and counts CJK at a token a character"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261005211143-8f69b6"
+}

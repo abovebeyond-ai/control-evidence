@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9d115bca0261c0e439b9c6b66613fe7bf5746e34",
+            "branch": "workbench/standard/cohorts-0.8",
+            "files_sha256": "71140bec95f994ce83a5824bfb24d282070e87d033341d3d3f580bbf2c3d8bad",
+            "message": "0.8.0 (proposed): generations and lifestages as Trendwolves defines them"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261006071052-b0629c"
+}

@@ -1,0 +1,10 @@
+{
+    "action": "bcef83ef38f1a12b3cb24bfdd0e33990",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on abovebeyond-ai/proveml-demos",
+    "step": 75,
+    "verdict": "DENY"
+}

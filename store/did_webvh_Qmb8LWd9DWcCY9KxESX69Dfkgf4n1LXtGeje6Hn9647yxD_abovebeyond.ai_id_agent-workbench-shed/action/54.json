@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "04c43928f2d47988cab8461f9c05ad5593f12d92",
+            "branch": "workbench/lost-laptop-hardened",
+            "files_sha256": "42ca1114441e515fc61aa3fa2ae4ec1d84a7a035fdb53df71c8a457238624d86",
+            "message": "LOST-LAPTOP: the laptop holds no keys or tokens since 5 October 2026\n\nSSH to the server accounts and GitHub needs YubiKey A or B and a touch. The same-day\nitems that rotated a credential stored on the laptop are struck; the right-away list stays."
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005193653-24a4b5"
+}

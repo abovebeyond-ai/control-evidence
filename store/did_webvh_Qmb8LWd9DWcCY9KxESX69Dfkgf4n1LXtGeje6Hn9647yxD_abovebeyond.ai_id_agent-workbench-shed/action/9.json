@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`hand.mjs records` asked for `#agent-workbench` on every machine. On the workbench at home it now asks for its own hand (`handFragment()`, from `hand.json`), and the ssh calls to the box allow 256 MB instead of 16, since the Mac's chain is past 9,000 steps. Tested on the workbench: 6 records, all `#agent-workbench-shed`. Proposed from the workbench at home.\n",
+            "branch": "workbench/records-of-this-hand",
+            "title": "hand.mjs records: the records of this machine's hand"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261005084312-94d269"
+}

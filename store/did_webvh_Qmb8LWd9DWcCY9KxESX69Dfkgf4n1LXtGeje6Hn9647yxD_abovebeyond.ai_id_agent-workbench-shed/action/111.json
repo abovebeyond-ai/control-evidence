@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2a58d0d87da6b96ec9c77df70f92c3cb4fc83485",
+            "branch": "workbench/verify-against-the-identity-in-force",
+            "files_sha256": "0b6091f06ba8f7db0ab9309815106a1b4774958472bd9f039ae26631c4c35e36",
+            "message": "Verify against the identity in force\n\nThe default DID document is now https://abovebeyond.ai/id/did.json. /.well-known holds the\nfinal first log, whose key-1 never changes; since key-1 moved onto a token the successor no\nlonger carries it, so every hand's record was refused as not under a successor."
+        },
+        "resource": "abovebeyond-ai/control-verify-action"
+    },
+    "run": "workbench-20261006052640-b0ed7e"
+}

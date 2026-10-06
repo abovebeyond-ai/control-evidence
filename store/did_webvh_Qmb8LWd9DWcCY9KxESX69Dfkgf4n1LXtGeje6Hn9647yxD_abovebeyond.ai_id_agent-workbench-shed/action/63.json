@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #7, which merged with the first version. The runbook is corrected in two places: the SSH steps now apply only to a lost YubiKey, and key-1 is on a token.\n\nSince 5 October 2026 the MacBook holds no private keys, no tokens and no `gh` or `gcloud` login. SSH to the 17 server accounts and to GitHub works only with YubiKey A or B plugged in and a touch. The laptop's own SSH keys no longer exist. The runbook now says that at the top.\n\n- **Right away, step 3** (it replaces the old steps 3 to 5): only if a YubiKey was lost along with the laptop. Remove that YubiKey's sk key from GitHub, the 17 server accounts and the workbench, using the other YubiKey, which keeps access. The step gives both fingerprints:\n  - A: `SHA256:UXpojgY9yc1fofuWUwZI8EUX6fGfbSzq5bhMv75Gk/Q`\n  - B: `SHA256:fhz3iBQVIaEJAqgiqUVDxKuQS/zISfTTNHX4ThpOTcs`\n\n  Both match the two ED25519-SK keys GitHub lists for the account. The old steps revoked a `gh` login and laptop keys that no longer exist. Signing out the GitHub browser session moved to the same-day list.\n- **The same day:** the items that rotated something stored on the laptop are gone: the workbench seed, Portal's read token, key-1 and the Hedera operator file. What remains is signing out the browser sessions, with GitHub added to that list.\n- **Not needed:** names what left the laptop. It also records that key-1 is on YubiKey A, slot 9E, since version 4 of the `/id` log (abovebeyond#141, live; the live document's key-1 is checked), and that `abovebeyond-signing.jwk` was deleted from the Mac and was never on the workbench.\n",
+            "branch": "workbench/lost-laptop-yubikey-steps",
+            "title": "Lost laptop: SSH steps only for a lost YubiKey, key-1 on token A"
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005194320-148041"
+}

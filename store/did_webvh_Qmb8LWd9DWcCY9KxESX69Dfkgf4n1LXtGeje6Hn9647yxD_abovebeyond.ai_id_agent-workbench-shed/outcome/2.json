@@ -1,0 +1,16 @@
+{
+    "action": "8c56b768fece018a18c36f64302bd1d2",
+    "effect": {
+        "detail": {
+            "base": "50171010c5b8052f880a2f7ae99239848fd1fae2",
+            "branch": "workbench/readme-paths",
+            "commit": "748f50f0c29848b7e3c786a9c94ad94515d25a02",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 0,
+    "verdict": "ALLOW"
+}

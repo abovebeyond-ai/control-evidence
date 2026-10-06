@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first day of mail intake showed two faults:\n\n- **New mail waited behind finished agents.** The limit of three counted every live `mail-*` agent. An agent that is done, or waits for the owner (an approval, an admission, a question), stays in its tab, so after three mails nothing new started: mail:5 waited behind three agents that were done or blocked. Now only agents in state `working` count.\n- **A saved attachment stopped the session.** `mail.mjs attachment` saved to `/tmp/mail-<id>/`, outside the session's working directories, and reading it asked for permission (mail-1 waited there). Attachments now go to `~/Projects/.mail/<id>/`, inside `~/Projects`, where mail sessions work.\n\nREADME updated. `node --check` passes on both scripts.\n",
+            "branch": "workbench/mail-intake-counts-working",
+            "title": "Mail intake: count only agents at work, attachments inside ~/Projects"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006071043-4219c6"
+}

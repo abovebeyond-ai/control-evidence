@@ -1,0 +1,16 @@
+{
+    "action": "385f6de246b43490388e6e35dda0237d",
+    "effect": {
+        "detail": {
+            "base": "9d9ccd6d6a80c084e0ff5a8c7e99ea422801d730",
+            "branch": "workbench/back-keeps-selection",
+            "commit": "fa951c1b5c2b793a81e8c3ac6970b59f1a171263",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 156,
+    "verdict": "ALLOW"
+}

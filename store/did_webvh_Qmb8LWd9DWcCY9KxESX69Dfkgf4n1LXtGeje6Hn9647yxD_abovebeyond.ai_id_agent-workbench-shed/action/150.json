@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "422cba8c190fa8367817af48e29cd47717b190df",
+            "branch": "workbench/mail-intake",
+            "files_sha256": "00e4cb99744689d943995a1b2d5e810655c33c6926eeec2f456ac0057f7ece45",
+            "message": "Forwarded mail: read it, and take it up in herdr\n\nmail.mjs reads forwarded mail and moves its state through the gateway (portal.task under\nmail:<id>); mail-intake.mjs, on a user timer, starts a Claude session in herdr per new mail\nand notifies; the forwarded mail is data, the owner's lines are the instruction."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006062456-d9c530"
+}

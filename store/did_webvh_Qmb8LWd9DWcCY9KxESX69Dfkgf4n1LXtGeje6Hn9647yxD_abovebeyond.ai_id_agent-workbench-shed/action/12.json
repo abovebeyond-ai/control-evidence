@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2dc4c8b93ab2a2da56e1d2f0e67c028f349c1715",
+            "branch": "workbench/gh-on-the-workbench",
+            "files_sha256": "95e5ab7310b15870b5906b34015fc2f906bfb552de24ad73e232f912aa4dfdae",
+            "message": "gh reads on the workbench too, with an hour token from the gateway\n\ngh on the workbench at home is a wrapper that mints a one-hour, read-only token for the owner\na call names, through the door on the box. It never writes. The item is off the to-do list."
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005084345-9cddef"
+}
