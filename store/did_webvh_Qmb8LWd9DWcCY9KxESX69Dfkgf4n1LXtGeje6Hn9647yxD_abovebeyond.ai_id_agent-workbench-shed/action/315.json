@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Step 1 of control `docs/mandates.md` in Elixir: the gateway's grant and configuration know the running systems.\n\n- **`Workbench::SYSTEMS`** maps a running system to its kinds (`stocklist:platform` \u2192 `stocklist.photos_repair`), the same table as Portal's `Capability::SYSTEMS`.\n- **The grant names a system only when a project in Portal names it** (Portal's `systems`, portal#344), the known ones only, and adds that system's kinds. Without such a project no system kind is granted. Which layer a session may use stays the owner's admission; the grant only says what can ever be judged.\n- **The gateway configuration gets `systems`,** the base URL per system that control's `effects.System` (control#98) carries an action to. `config('elixir.control_systems')`: `stocklist:platform` \u2192 `https://traders.stocklistdealer.eu/api` (`ELIXIR_CONTROL_SYSTEM_STOCKLIST`). An address, not a secret.\n\n**Tests:**\n- `WorkbenchGrantTest` gets a test: a named system and its kind join the grant, and an unknown one does not.\n- The preview test now also asserts that no system kind is granted when no project names a system.\n- Full suite 697 of 697. Pint passes.\n\n**After merging:** this changes the grant and the configuration, so the configuration has to be carried over (`rehearse.sh config` and `reboot`), together with the control release that contains control#98.\n",
+            "branch": "workbench/systems-in-the-grant",
+            "title": "The grant and the gateway configuration know the running systems"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261006145758-dd4f9c"
+}

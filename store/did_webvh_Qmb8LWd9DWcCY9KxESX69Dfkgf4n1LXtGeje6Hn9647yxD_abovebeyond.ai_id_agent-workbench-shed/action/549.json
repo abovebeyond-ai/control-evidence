@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Portal's voice screen (`/mobile/voice`, abovebeyond-ai/portal) holds the conversation from `portal.abovebeyond.ai`, so the bridge now lets that page in.\n\n- The bridge answers the browser's preflight from an origin named in `VOICE_ORIGINS` (default `https://portal.abovebeyond.ai`), with `Access-Control-Allow-Private-Network: true`, which a public page needs to reach an address on the tailnet.\n- Requests from that origin get `Access-Control-Allow-Origin` back; a POST from any other origin is still refused, so another site open in the owner's browser cannot start a task.\n- The Tailscale login still decides who talks: no login in `VOICE_LOGINS`, no answer, preflight included.\n\nTested on a spare port: Portal's preflight 204 with the headers, another origin's preflight 403, Portal's POST 200 with the allow-origin header, another origin's POST 403, no login 403.\n",
+            "branch": "workbench/voice-from-portal",
+            "title": "Voice bridge: let Portal's voice screen hold the conversation"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007055523-2c24c2"
+}

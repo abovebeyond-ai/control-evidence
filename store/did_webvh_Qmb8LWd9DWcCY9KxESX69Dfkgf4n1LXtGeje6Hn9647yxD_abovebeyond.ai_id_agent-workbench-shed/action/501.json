@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb5419501b9d6feb80625568cae41428d37ccd1f",
+            "branch": "workbench/working-set-no-token",
+            "files_sha256": "41ddf5a957ace8a32a6a9c0c725f5677a0172cdf4fe6b5d7dce2ad1193a86af9",
+            "message": "A working set needs no token: the signature is the proof, forward only\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006190524-db3266"
+}

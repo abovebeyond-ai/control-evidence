@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cdbe56a1d700bd85933f82ca87cd96136db663ce",
+            "branch": "workbench/mandated-reads",
+            "files_sha256": "ec11b06f587c6b1c37adce1dfa210a4e717ed2bdfb6a2e9ce03a9197b2df7b42",
+            "message": "Reads on the owner's mandate, checked against his DID document\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261006173002-da54f4"
+}

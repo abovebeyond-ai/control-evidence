@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0a044eedc3ddad286d23ffe523e44290c481e2e3",
+            "branch": "workbench/grants-overview",
+            "files_sha256": "f9e62609f2458df7218b2065613b775c797de91c395fbe097221abbcefa14598",
+            "message": "Satisfy PHPStan on the grants overview\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006155935-42d81b"
+}

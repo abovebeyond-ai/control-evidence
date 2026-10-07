@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The gateway runs v0.33.0: the release that reads its policy (#102).\n\n`startup.sh` pins v0.33.0 with the sha256 of `control-gateway-linux-amd64`, `525a8ecd5d8bd5abf3f893ea4bec7dace5218a8bf9a3f4814cc105f2946ab5b3`, checked against the release's `SHA256SUMS` and the downloaded asset. The boot script now also installs the `control-policy` timer (#102); it does nothing until the carried configuration has a `policy_log`, which Elixir writes since #234.\n\nAfter merging, from the laptop: `deploy/gcp/rehearse.sh upgrade` carries the boot script and reboots into v0.33.0; then one carry-over of the configuration (`rehearse.sh config`) brings `policy_log` with the signers. From then on a grant change reaches the gateway as a signed version, without a carry-over.\n",
+            "branch": "workbench/pin-v0.33.0",
+            "title": "The gateway runs v0.33.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007061522-c27b7a"
+}

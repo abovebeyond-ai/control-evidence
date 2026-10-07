@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "01ffe0f0575720ac90e2de3ae000a6ce41e1338f",
+            "branch": "workbench/working-set",
+            "files_sha256": "7da9edd8ab7d7d2727d598017cda1bdac0d6780efe21ce09e7f156aef9b7a066",
+            "message": "hand.mjs workingset: sign the working set on the YubiKey\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006184821-d276b6"
+}

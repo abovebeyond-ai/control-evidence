@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a842f4c82987882d13c93d052cd0bd6d63d9c2d5",
+            "branch": "workbench/grants-per-project",
+            "files_sha256": "c52ac810cba30477d129ed7c81a03ca752e7864fe18210ce71cfbd5020ceb157",
+            "message": "Grants per project: which hand may do what there, and what is admitted now\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006164446-3883c3"
+}

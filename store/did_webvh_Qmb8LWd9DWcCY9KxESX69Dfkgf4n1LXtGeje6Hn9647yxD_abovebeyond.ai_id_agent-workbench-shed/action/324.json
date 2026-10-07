@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea25dc49701398226ff611d0e22ce39aac315296",
+            "branch": "workbench/gateway-v0.32.0",
+            "files_sha256": "1536e6b9bf741104ccf7f17fc1d762406eccd90362e3923ebf038a54f7b1f0f5",
+            "message": "The gateway runs v0.32.0\n\nstartup.sh pins v0.32.0 (effects.System, stocklist.photos_repair) with its sha256, checked\nagainst the release digest, SHA256SUMS and the downloaded asset."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006152740-babf57"
+}

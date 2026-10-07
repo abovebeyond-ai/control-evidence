@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "vuln:runtime",
+            "state": "open"
+        },
+        "resource": "portal:garage-de-backer-website"
+    },
+    "run": "workbench-20261006163614-da4724"
+}

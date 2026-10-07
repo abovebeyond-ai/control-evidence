@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "77da93112f3ba15404b34ff9f80710363680f526",
+            "branch": "workbench/read-sign-system-path",
+            "files_sha256": "5aa74117f04ddbb151d53f0898019014f735708615e2023581d8151767a2b97d",
+            "message": "Sign a system read over the path the system sees\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006181805-abe287"
+}

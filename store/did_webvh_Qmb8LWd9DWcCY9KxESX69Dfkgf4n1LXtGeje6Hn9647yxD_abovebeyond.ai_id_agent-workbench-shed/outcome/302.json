@@ -1,0 +1,16 @@
+{
+    "action": "3917f414923b52300959e38a74149ac4",
+    "effect": {
+        "detail": {
+            "base": "fabd1ff5fee817b760521f057abc8892cd7d1911",
+            "branch": "workbench/control-act",
+            "commit": "07cfe16d39ec0228c250cdcf4f18f040a7048dce",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 300,
+    "verdict": "ALLOW"
+}

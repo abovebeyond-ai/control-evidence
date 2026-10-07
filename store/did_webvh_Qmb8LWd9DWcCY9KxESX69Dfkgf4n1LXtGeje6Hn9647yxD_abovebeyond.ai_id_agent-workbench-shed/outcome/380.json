@@ -1,0 +1,17 @@
+{
+    "action": "e92401516e15998fc6d2357d715ff030",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 9,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/abovebeyond-ai/workspace/pull/9",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 378,
+    "verdict": "ALLOW"
+}

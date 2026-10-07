@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The voice's instructions described the owner as away from his screen (\"onderweg, wandelend, als passagier in de auto\") and told it he sometimes drives, so it spoke about waiting until he had stopped. He talks to it from his desk and at home as much as on the road.\n\n- **Who he is:** the colleague he speaks to by voice, wherever he is.\n- **The rule:** do not assume where he is and do not bring it up. Whatever needs his eyes or a touch (a passkey, a pull request) is named as waiting in Portal or the Claude app, without asking him to do it now.\n\nVoice memory held no driving assumption, so nothing to correct there.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/voice-not-the-car",
+            "title": "The voice does not assume where the owner is"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006183045-ef71d1"
+}

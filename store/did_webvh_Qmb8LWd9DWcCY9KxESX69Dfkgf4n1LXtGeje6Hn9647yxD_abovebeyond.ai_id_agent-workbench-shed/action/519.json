@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "portal-android",
+                    "url": "https://github.com/abovebeyond-ai/portal-android"
+                }
+            ]
+        },
+        "resource": "portal:portal"
+    },
+    "run": "workbench-20261006192307-6ce6c7"
+}

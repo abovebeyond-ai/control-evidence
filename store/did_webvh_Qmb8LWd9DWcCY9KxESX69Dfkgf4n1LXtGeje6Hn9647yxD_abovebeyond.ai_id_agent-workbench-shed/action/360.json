@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #347, which failed PHPStan; the gateway does not push onto an existing branch, so the fix comes as a new pull request.\n\nA new owner page, `/portal/grants` (\"Vergunningen\" in the menu), shows every grant across every project on one page:\n\n- **Hands.** What each hand (Elixir, the workbench on the laptop, the workbench at home, Vera) may ever do on the control gateway: its kinds, with labels for the system kinds; its number of resources; the per-run limit; and which operator keys may sign its word. Each hand shows whether the gateway serves its grant.\n- **Projects.** What the workbench may touch per project (repos, Portal, Forge, systems), what Elixir and Vera cover, and the admissions in force beside it: proposals, a layer such as repair (B2), or one act, each with its expiry and its hand.\n  - A workbench hand whose grant misses a resource the project names is marked; that is the case where a push is refused with \"not in grant\".\n  - An admission that no longer covers a repo the project gained is marked too.\n- **Drift.** When the gateway serves an older grant than Elixir wrote, the page names the hands affected and gives the four commands to carry the configuration over. An old report (over 2.5 hours) says so.\n\nThe grants come from Elixir's new `controlGrants` report (abovebeyond-ai/elixir, separate PR), because the gateway publishes only digests. Until that report arrives, the page says Elixir has not reported yet. The admissions are Portal's own rows.\n\nTests:\n\n- `GrantsOverviewTest` is new.\n- The full suite passes 619 of 620. The one failure, `BuildStampTest`, also fails without this change; it reads the git checkout, and in a worktree `.git` is a file rather than a directory.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/grants-overview-2",
+            "title": "Grants overview: every hand's grant beside the admissions, with drift"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006160100-80a0b4"
+}

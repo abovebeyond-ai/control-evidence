@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ef2cc70aaae2f29b867112636d4a1e521c2258ae",
+            "branch": "workbench/policy-log",
+            "files_sha256": "c0002f4aa1c85b47db6840d6a6c22df1abceb5cdb67b81f7af716fa85bbad16e",
+            "message": "Keep the control gateway's policy log and show a draft in words"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007060536-77ec21"
+}

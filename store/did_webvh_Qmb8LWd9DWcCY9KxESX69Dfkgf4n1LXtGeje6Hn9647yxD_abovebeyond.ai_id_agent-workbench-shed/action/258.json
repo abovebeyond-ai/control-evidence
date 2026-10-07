@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "preview.push",
+        "params": {
+            "branch": "preview",
+            "head": "main",
+            "sha": "fabd1ff5fee817b760521f057abc8892cd7d1911"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261006083726-ff1b1b"
+}

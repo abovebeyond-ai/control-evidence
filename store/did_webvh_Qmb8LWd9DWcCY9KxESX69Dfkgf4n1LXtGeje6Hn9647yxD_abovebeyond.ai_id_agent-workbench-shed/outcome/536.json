@@ -1,0 +1,16 @@
+{
+    "action": "c00bfc60a9a1c536367411f4ae6251ec",
+    "effect": {
+        "detail": {
+            "base": "0ba666de06fc1407c347538dd39fea2526bcd824",
+            "branch": "workbench/stale-only-proposals",
+            "commit": "aa3f84f03761618cc51ab24a798d6f323ccdcb06",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 534,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "aeed2e644d94f5879db97594caf85ec448b754b5",
+            "branch": "workbench/two-layers-on-the-page",
+            "files_sha256": "a51d1439031cf7965ee96834bcf9914a2d61ac3fe838ca40e764916c2244a218",
+            "message": "The workbench block names its layers, and each is withdrawn on its own\n\nPropose (code and Portal) and repair (on a running system) each get a heading, a sentence on\nwhat they cover, their state and their own withdraw."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006153811-97956d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Step 1 of control `docs/mandates.md` on the session's side: a session acts on a running system through the gateway, in the layer the owner admitted.\n\n- **`lib/hand.mjs`:**\n  - `askPortal` and `capabilityFor` take a `layer`, which the shed sends in its signed request (portal#344). The capability cache is keyed per layer.\n  - A layer is only ever Portal's word for that layer: never a period on disk, and never the Mac (which reads with a token, so it is refused by name).\n  - New `systemAct({slug, kind, resource, params, layer = 'B2'})`: one action on a system through the gateway. It returns the system's outcome, and throws with the gateway's or the system's reason.\n- **`stocklist.mjs photos <vehicle> [--apply]`:** the agents' command for `stocklist.photos_repair`, as a dry run by default, with `--apply` as a separate action the gateway judges again. It prints the platform's report (stocklistdealer-eu/platform#965).\n- **README:** the command in the usage list, and a section on acting on a running system.\n\n`node --check` passes. Not run against the live chain yet: that needs portal#344, elixir#231, a control release with control#98, and the configuration carried over. The first real run comes after those, with the owner's admission of the repair layer.\n",
+            "branch": "workbench/system-actions",
+            "title": "Act on a running system in the admitted layer (stocklist.mjs photos)"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006145906-bb5f6b"
+}

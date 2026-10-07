@@ -1,0 +1,16 @@
+{
+    "action": "7e42863c2228c7a90910e4daa9db9e1d",
+    "effect": {
+        "detail": {
+            "base": "d3509235c963a9fb528dbd9925e1bce76800fba7",
+            "branch": "workbench/observatory-reads",
+            "commit": "bf3c332a23ed6fc5c81dd98b163891e0a8ce3714",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 447,
+    "verdict": "ALLOW"
+}

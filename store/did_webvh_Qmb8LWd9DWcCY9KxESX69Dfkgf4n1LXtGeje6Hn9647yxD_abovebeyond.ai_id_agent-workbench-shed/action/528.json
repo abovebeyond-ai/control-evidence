@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5292f735e4f2f93aac4a496b739f7d9c7f129cf3",
+            "branch": "workbench/voice-owner-state",
+            "files_sha256": "13024e8fa5bfc976e4764fd59c7c7a35e05542db058ebed794ea634c7765c131",
+            "message": "Voice bridge: say whether it is safe and what waits for the owner"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006192532-33c1a4"
+}

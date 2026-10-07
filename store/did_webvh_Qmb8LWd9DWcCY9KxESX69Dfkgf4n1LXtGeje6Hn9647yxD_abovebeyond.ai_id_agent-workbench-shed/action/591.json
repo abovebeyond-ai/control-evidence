@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The conformance statement brought up to date for v0.33.0, now that the gateway reads its policy (#102, pinned in #103, carried over with `policy_log` on 7 October 2026; the gateway reports policy version 0).\n\n- **The disclosed gap closes.** \"The grant the gateway serves can lag\" becomes what runs now: the grant moves only forward through signed policy versions, a narrowing within the minute without the operator, a widening on the operator's token with the change shown in words first, each version measured into RTMR3 and a fresh quote taken before the first action under it.\n- **Authorization rows.** 4.1.8 and 4.2.3: only the operator's token raises the grant; Elixir's key may only narrow, checked by the gateway. 4.1.1: every record names the version it was judged under (`control_policy`). 4.1.6: the approval of a policy change is the signed version itself, the exact change in the words shown, the issuer's key and the time, kept whole in the attestation record that measured it.\n- **What remains, disclosed:** a refused version blocks later ones until one that follows arrives; when Portal does not answer the gateway keeps its last verified version; a widening by passkey inside a working set is not offered, since the set names Portal projects and the repository-to-project mapping is Portal's own data.\n- **Trust table, the grant row:** the carried configuration and each applied version, all in RTMR3; a widening rests on the operator's token, a narrowing on the gateway's own check and on the carried configuration naming Elixir's key.\n- **Attestation refresh:** daily, and on every applied policy version (6.1.3).\n- `statement.json`: v0.33.0, updated 2026-10-07. `register.json`: the attestation claim's RTMR3 inputs and refresh include the policy versions.\n\n`go vet` and `go test ./...` pass; both JSON files parse.\n",
+            "branch": "workbench/statement-policy-log",
+            "title": "Conformance statement for v0.33.0: the grant moves by signed versions"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007063255-554a3d"
+}

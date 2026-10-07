@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a814d7ca6823a6faa63654e0e9ce05aeb8b513fa",
+            "branch": "workbench/statement-policy-log",
+            "files_sha256": "792e7127dbc9939ccce0be51034d53a42b278549df802fe0fa4263b871e48b75",
+            "message": "The conformance statement for v0.33.0: the grant moves by signed versions, measured on arrival"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007063255-554a3d"
+}

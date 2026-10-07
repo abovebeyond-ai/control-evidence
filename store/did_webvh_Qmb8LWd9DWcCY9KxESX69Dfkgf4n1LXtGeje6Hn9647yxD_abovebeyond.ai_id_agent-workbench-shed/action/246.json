@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ee76227efcab25ac334a58d866e0ed52a18605a",
+            "branch": "workbench/read-token-reads-issues",
+            "files_sha256": "acbf4b86714235dc134f1565558f42a222ec0666405abd5e9fb89e8039968fbf",
+            "message": "A read token reads issues\n\nThe workbench's mail sessions open an issue per request and have to see the open issues\nfirst; the read token answered 403 on issues. Every permission stays read."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006082409-010368"
+}

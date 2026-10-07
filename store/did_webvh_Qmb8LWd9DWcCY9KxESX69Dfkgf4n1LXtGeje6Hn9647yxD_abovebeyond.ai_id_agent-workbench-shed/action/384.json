@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The conformance statement still described the system as of 13 September 2026. This brings it up to date for control v0.32.0, without changing the claim date or the stage (Self-Declared).\n\n**Changes a claim**\n- The row \"every workbench action was admitted by the operator in person\" (Tier 3) only holds for admissions signed on the YubiKey. It now covers those alone. A new row, at Tier 2, covers admissions by passkey and every capability carried to the shed: Portal verifies the WebAuthn assertion and signs with `#portal`, and the gateway does not repeat that check. Since 5 October that is the usual route, not the fallback.\n- `register.json`, `task-authorized`: the mechanism now names `task.layer`, and the trust analysis names Portal's passkey check.\n\n**Disclosed as it is now** (new section *Since 13 September 2026*)\n- Four hands, including `#agent-workbench-shed`. On 6 October only `#agent-elixir` and the shed have a key on the box, so only they hold a grant.\n- New action classes:\n  - the workbench's `issue.open`, `preview.push` and `forge.deploy`;\n  - the `portal.*` writes;\n  - `stocklist.photos_repair`, the first action on a running system. The Stocklist platform is named outside the boundary as a party that verifies the record and the capability itself.\n- Blast-radius layers: a layer is admitted apart from proposals, and it is part of the signed capability.\n- **A disclosed gap.** The gateway serves the grant last carried over. When a project or repo is removed, that grant is wider than the one Elixir writes until the next carry-over. The capability still narrows each action, but the grant alone no longer bounds it. `/portal/grants` shows that a hand's grant differs, but not in which direction.\n\n**Trust table and pointers**\n- `#key-1` is on a token since 5 October.\n- New rows for the operator's word by passkey and for the grant itself; the effect row now names the system's own verification.\n- The key link points to `/id/did.jsonl`.\n- `statement.json`: updated date, current DID, v0.32.0 in service mode, agents, all in-scope classes, Stocklist outside the boundary.\n\nThe claims review sign-off stays the operator's.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/statement-october",
+            "title": "Conformance statement: up to date for v0.32.0, the passkey route at Tier 2, the grant lag disclosed"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006161320-80cc6a"
+}

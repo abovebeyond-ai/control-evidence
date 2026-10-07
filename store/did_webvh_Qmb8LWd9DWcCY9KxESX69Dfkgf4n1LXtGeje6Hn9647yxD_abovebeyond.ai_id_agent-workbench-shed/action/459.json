@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "817c83d0bcf7dbbd44778e6196a78b4d4b6691d6",
+            "branch": "workbench/systems-per-project",
+            "files_sha256": "8bcb2e8d0db0e5459bd31632e9c10029ebe89251a97e75f73a361841dfde54db",
+            "message": "Offer a running system only on its own project, in plain words\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006173905-4780c3"
+}

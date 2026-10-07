@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9da22222c1f5dd7518e1f2c41e27ef9c78593dca",
+            "branch": "workbench/policy-log",
+            "files_sha256": "4b7f6e7c435e871da693b0a94fcf69a0a09c097e26c696968de0a61e41ca7a36",
+            "message": "Elixir drafts the gateway's next policy version, and signs a narrowing"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261007055603-ed8017"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The voice bridge serves the Android app's first screen, and the voice can say the same.\n\n- `GET /state` on the bridge relays Portal's `GET /api/ingest/owner/state` (abovebeyond-ai/portal, the owner-state read): the grants' verdict and what waits for the owner's passkey. While Portal has no such route, the bridge answers 404, which the app reads as \"not said yet\" rather than an error.\n- `lib/doors.mjs` gets `ownerState()`, asking in Dutch; `call()` takes extra headers for that.\n- The voice gets `what_waits`, a read-only action with the same answer, so \"what waits for me?\" is answered from Portal instead of guessed.\n\nReached the same way as the rest of the bridge: only over the tailnet, only for the logins in `VOICE_LOGINS`. Portal is read with the workbench's own signature; nothing is written.\n",
+            "branch": "workbench/voice-owner-state",
+            "title": "Voice bridge: is it safe, what waits"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006192532-33c1a4"
+}

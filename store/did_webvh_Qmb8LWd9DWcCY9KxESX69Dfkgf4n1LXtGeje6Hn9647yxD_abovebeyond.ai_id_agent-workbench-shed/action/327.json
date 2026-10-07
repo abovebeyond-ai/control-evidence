@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pins the gateway VM to v0.32.0, the release with `effects.System` and `stocklist.photos_repair` (#98).\n\n- `RELEASE` v0.31.0 \u2192 v0.32.0\n- `GATEWAY_SHA` \u2192 `b652cf668ce20a645d9e9083be17b67bb3a0686ecbb0d3f18f0748845e02d101`\n\nThe sha256 was checked three ways and they agree: the release asset's digest on GitHub, its line in `SHA256SUMS`, and `sha256sum` of the downloaded `control-gateway-linux-amd64`. The tag's tree contains `effects/system.go`.\n\n## After merging (operator, on the Mac)\n\nThe configuration Elixir now writes carries `systems` and the grant with `stocklist:platform` (elixir#231, Stocklist named in Portal), so it goes over first, then the upgrade:\n\n```bash\ngcloud auth login shane@abovebeyond.ai\nscp elixir@167.233.221.164:control/config.json ~/control-config.json\ncd ~/Projects/control && git pull\nCONTROL_GCP_PROJECT=elixir-508105 deploy/gcp/rehearse.sh config ~/control-config.json\nCONTROL_GCP_PROJECT=elixir-508105 deploy/gcp/rehearse.sh upgrade\ngcloud auth revoke --all && rm ~/control-config.json\n```\n",
+            "branch": "workbench/gateway-v0.32.0",
+            "title": "The gateway runs v0.32.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006152740-babf57"
+}

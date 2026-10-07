@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`hand.mjs workingset` signed the set on the YubiKey, then could not hand it over: since 5 October 2026 the laptop holds no Portal token, and the door (`/api/ingest/workbench/working-set`) required the read scope.\n\nA working set needs no token. The owner's signature is the proof, and `OperatorKeys::checkWorkingSet` checks it against the DID document, so it does not matter who delivers it.\n\n- **The door moves to `POST /api/ingest/working-set`,** outside the token group, throttled to 10 per minute. The same pattern is used for the shed's signed capability requests and Resend's signed webhook.\n- **Forward only:** a set signed (`iat`) no later than the newest one kept is refused with \"a newer working set is already kept\". Replaying an older, still valid set cannot bring back a set the owner replaced. `WorkingSet::signedAt()` reads the `iat` from the stored token.\n\nTests: `AdmissionSignedOnTheTokenTest` now delivers without a token and refuses a replayed older set. The full suite passes 628 of 629; the one failure, `BuildStampTest`, also fails without this change because it reads the git checkout. PHPStan reports 0 errors.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/working-set-no-token",
+            "title": "A working set needs no token: the signature is the proof, forward only"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006190524-db3266"
+}

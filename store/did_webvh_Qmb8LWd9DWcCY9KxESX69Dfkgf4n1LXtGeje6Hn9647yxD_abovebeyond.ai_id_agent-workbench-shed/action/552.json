@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9bfbfe9759f55e8afc20890407b403ff732b673f",
+            "branch": "workbench/policy-log",
+            "files_sha256": "b29d6b165ff2ea1b615bb7a15f780869c1a2d277aeec07f3ad722ea42db8a4b8",
+            "message": "The gateway reads its policy: signed versions, forward only, measured on arrival"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007055535-f555bd"
+}

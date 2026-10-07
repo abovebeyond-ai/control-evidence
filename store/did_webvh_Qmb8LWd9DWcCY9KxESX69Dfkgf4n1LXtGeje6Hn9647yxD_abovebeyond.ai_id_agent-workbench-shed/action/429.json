@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f82816572f43503d75666b462f76bef748278784",
+            "branch": "workbench/grants-safe",
+            "files_sha256": "0bafca14ad4acc11abf24abfa1b4026b938e83fcae26a68c38eaaaa2f6580c9f",
+            "message": "Grants open with one sentence: is it safe\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006165219-c38c56"
+}

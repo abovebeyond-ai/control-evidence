@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4f6af6dca7dc228a3838d4f9f2e4d4c480596983",
+            "branch": "workbench/working-set",
+            "files_sha256": "884cfa9c72b59adf7ab835824960c8175a95859b0350e795b7749df90e4d18f8",
+            "message": "The working set: signed once on the YubiKey, one passkey touch inside it\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006184745-a71e2f"
+}

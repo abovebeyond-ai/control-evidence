@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fabd1ff5fee817b760521f057abc8892cd7d1911",
+            "branch": "workbench/control-act",
+            "files_sha256": "6f33cfb1019de99315fa0db1de14c7db81e40585dfcf5d1d0c0604c3a4b2cedc",
+            "message": "The owner's agents act through the control gateway: photos_repair, verified on the platform\n\nPOST /api/control/act verifies the owner's signed mandate and the gateway's signed record\nagainst the DID document before anything runs (R P3-17); the first kind repairs one car's\nphotos, dry run unless apply was judged."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261006125637-d446c6"
+}

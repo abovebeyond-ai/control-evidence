@@ -1,0 +1,16 @@
+{
+    "action": "4b82e1a53a19bccf36d666f195537b0e",
+    "effect": {
+        "detail": {
+            "base": "c04e26e361db88eeb39eb78389c9e2e7ca9ba16d",
+            "branch": "workbench/repair-by-project-name",
+            "commit": "a753e9c47f3085e798bf79c92172a2196d13dbc3",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 339,
+    "verdict": "ALLOW"
+}

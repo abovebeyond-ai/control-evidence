@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2e7ea34d66efacddb2e15c27b78f5a4a1daa4788",
+            "branch": "workbench/read-mandate",
+            "files_sha256": "16489e35f0e2d92ed64549339a90eb1678a80a37ad0a9821fdbf88da794600f9",
+            "message": "A read layer (B1, 30 days) for running systems, first the Gentells pipeline\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006173023-caa96d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pins the gateway VM to v0.31.0, the release with `issues: read` on the read token (#95).\n\n- `RELEASE` v0.30.0 \u2192 v0.31.0\n- `GATEWAY_SHA` \u2192 `ca9146465539e2537aa35fa267e1826f8648895f95c403f0eb76eeae1db88212`\n\nThe sha256 was checked three ways and they agree: the release asset's digest on GitHub, its line in the release's `SHA256SUMS`, and `sha256sum` of the downloaded `control-gateway-linux-amd64`.\n\nThe README keeps its measured record of v0.30.0 (22 September 2026): that is what RTMR3 held then, and rewriting it without a new measurement would claim one. A fresh record after the upgrade can replace it.\n\n## After merging (operator, on the Mac)\n\n```bash\ngcloud auth login shane@abovebeyond.ai\ncd ~/Projects/control && git pull && CONTROL_GCP_PROJECT=elixir-508105 deploy/gcp/rehearse.sh upgrade\ngcloud auth revoke --all\n```\n\n`upgrade` carries this startup script and reboots (stop and start). The gateway is back within about two minutes.\n",
+            "branch": "workbench/gateway-v0.31.0",
+            "title": "The gateway runs v0.31.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006084107-398bca"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c96425195b8562a7d80a1e626fe32f916958a9d2",
+            "branch": "workbench/mail-becomes-issues",
+            "files_sha256": "a390de567bcef9183fc0dfa04a9935332405d053727bc8f89537c2207bf9ef53",
+            "message": "Forwarded mail: each request an issue, each pull request closes one\n\nThe mail session opens one issue per request (hand.mjs issue, label mail, no personal data;\nthe mail stays in Portal) and names it with Closes #n in its pull request."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006082433-9d39b1"
+}

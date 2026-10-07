@@ -1,0 +1,16 @@
+{
+    "action": "06d6a1267ca48f44209a16ab62b3dc12",
+    "effect": {
+        "detail": {
+            "fields": [
+                "replaceLinks",
+                "links"
+            ],
+            "project": "stocklistplatform-eu"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 345,
+    "verdict": "ALLOW"
+}

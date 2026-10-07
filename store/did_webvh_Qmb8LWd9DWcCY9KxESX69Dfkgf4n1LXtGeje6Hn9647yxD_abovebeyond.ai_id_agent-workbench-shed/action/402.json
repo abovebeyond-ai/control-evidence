@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On the grants page each hand's permissions are now grouped by type of action, each with an icon:\n\n| Type | Icon |\n|---|---|\n| proposes code | repo |\n| runs a repair in CI | gear |\n| shows a preview | globe |\n| records in Portal | clock |\n| steers in Portal | sliders |\n| reviews in Vera | search |\n| repairs a live system | wrench |\n\nGrouping by type makes the icon say what kind of action it is, rather than where it lands.\n\n**Colour, only where it codes something**\n- Amber marks the one type that changes a running system at once. Everything else is a proposal that waits for a merge, or a note in Portal.\n- A hand's state against the gateway is green when the gateway serves its grant and red when it lags or does not know the hand.\n\nThe tokens are `--warn`, `--amber`, `--ok`, `--bad` and `--muted`; no new colours.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/grants-icons",
+            "title": "Grants by type of action, with an icon each and colour where it codes"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006163153-e72316"
+}

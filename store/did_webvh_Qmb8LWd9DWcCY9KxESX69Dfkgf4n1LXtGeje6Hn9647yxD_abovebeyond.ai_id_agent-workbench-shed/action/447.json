@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d3509235c963a9fb528dbd9925e1bce76800fba7",
+            "branch": "workbench/observatory-reads",
+            "files_sha256": "1e3b51ff811fbc50c6471a9c68f1283029971faff940334b1ab8d7482fcb2c94",
+            "message": "Read the Gentells pipeline and Portal from the workbench and the voice\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006173047-2de134"
+}

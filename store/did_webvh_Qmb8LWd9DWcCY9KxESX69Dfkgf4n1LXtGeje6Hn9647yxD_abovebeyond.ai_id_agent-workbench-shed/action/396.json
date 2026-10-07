@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #350 (same change, with Grants kept as a menu item); close #350 unmerged.\n\nThe grants page listed each hand's permissions by their technical names (`portal.time_entry`, `preview.push`), with the operator keys as full DIDs. You had to know the gateway to read it.\n\n**Hands, in plain words**\n- Each hand's permissions are grouped by where they land, as one sentence per place: \"In code: push a branch, open a pull request or an issue, \u2026\", \"In Portal: \u2026\", \"On Stocklist: \u2026\". Each kind's wording lives in one table, `Grants::KIND_WORDS`; a new kind shows by its technical name under \"Other\", so it is never hidden.\n- The resources become a count by sort: \"Reaches 98 repositories, 11 projects in Portal, \u2026\".\n- Who gives the word becomes \"YubiKey A and B, and your passkey through Portal\". That also fixes an omission: the page used to show only the two YubiKeys, while most admissions are signed by Portal after a passkey.\n- The technical names are still there, folded away.\n\n**Menu**\n- Grants keeps its own menu item; the Workbench page also links to it (\"What each hand may ever do\").\n- The owner's first menu item was called \"Elixir\", while every page in that menu is Elixir's. It now reads \"Overview\", as it already did for clients.\n\nTests: `GrantsOverviewTest` is extended, including the menu. PHPStan reports 0 errors.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/grants-readable-2",
+            "title": "Grants in plain words; the first menu item reads Overview"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006162610-180425"
+}

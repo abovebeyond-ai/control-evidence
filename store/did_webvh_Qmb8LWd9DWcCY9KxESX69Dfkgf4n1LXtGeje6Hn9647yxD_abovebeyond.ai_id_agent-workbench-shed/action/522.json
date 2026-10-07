@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "25e0297c6ea6b18b5e30c16f97c3e39ce365b022",
+            "branch": "workbench/owner-state",
+            "files_sha256": "44cb0a2f1fb9b663c60c49482846b9a88ee0a687cbe7571a51252ded83120b73",
+            "message": "Add the owner's state read for the phone: safe verdict and what waits"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006192504-45c40c"
+}

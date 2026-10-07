@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a07a05363ae83d21a5fa179eec70b1ffd26e89bd",
+            "branch": "workbench/statement-october",
+            "files_sha256": "36f8ebbb91d9d3a958b7528364e906b634df4c08a9716bb06cc2ef48b94bf695",
+            "message": "Bring the conformance statement up to 6 October 2026\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006161320-80cc6a"
+}

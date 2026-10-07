@@ -1,0 +1,14 @@
+{
+    "action": "1be612670315b802148f1bf4ebce561d",
+    "effect": {
+        "detail": {
+            "key": "vuln:runtime",
+            "project": "garage-de-backer-website",
+            "state": "open"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 411,
+    "verdict": "ALLOW"
+}

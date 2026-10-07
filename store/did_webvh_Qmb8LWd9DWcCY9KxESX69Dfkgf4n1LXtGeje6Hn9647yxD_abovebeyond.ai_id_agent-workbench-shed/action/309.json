@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Step 1 of control `docs/mandates.md` in Portal: acting on a running system is a word of its own, admitted apart from the period for proposals.\n\n- **A project names its running systems** (`data.systems`), chosen on the settings page from the ones Portal knows (`Capability::SYSTEMS`). Today that is only `stocklist:platform`, with B2 `stocklist.photos_repair`. Naming a system admits nothing.\n- **The repair layer (B2).** On the project page, beside the period for proposals, comes **\"Herstellen op stocklist:platform\"**, with one button: admit repairs for today, with your passkey.\n  - The capability carries `task.layer: \"B2\"`, only that layer's kinds and only the project's systems, and it ends at midnight.\n  - The layer lives in the capability, not in a column, like `act()`.\n  - A new admission supersedes only the same layer, so admitting a repair leaves the proposals standing, and the other way round.\n- **The shed asks for a layer:** `POST ingest/hand/capability/{slug}` takes an optional `\"layer\": \"B2\"`.\n  - Without an admission for that layer it knocks, naming `[repair]`, and refuses with a reason that names the layer.\n  - **A period for proposals never answers a request for repairs, and a repair never answers one without a layer.**\n- **`ingest/projects` carries `systems`,** so Elixir can name the systems and their kinds in the grant (next PR, in elixir).\n\n**Tests:** `RepairLayerTest`, 4 tests and 30 assertions:\n- the layer's kinds and resources, and none of them in a period for proposals;\n- no layer for a project without a system, or for an unknown layer;\n- the shed knocks for the layer, gets the layer it asks for, and neither word stands in for the other;\n- the settings and the feed;\n- the page offers the layer only where a system is named.\n\nFull suite 615 of 616 (`BuildStampTest` fails in a worktree, also on `main`). Pint and PHPStan pass.\n",
+            "branch": "workbench/repair-layer",
+            "title": "Repairing on a running system: a layer admitted on its own"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006145531-2646ec"
+}

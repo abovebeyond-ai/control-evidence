@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5ab129a320a9065c070c6a77495ca9479a600a92",
+            "branch": "workbench/voice-app",
+            "files_sha256": "09dfc956708530b55b419475c0ca437f8192898b587d815fecb404b0acb37a31",
+            "message": "The voice page installs as an app\n\nA manifest, a service worker that keeps only the page, and an icon drawn by the bridge."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006104143-3abb09"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The workbench's mail sessions turn each request in a forwarded mail into a GitHub issue (`issue.open`, a judged write through the gateway; portal-cli `mail-intake.mjs`). To see whether a request is already tracked, a session reads the open issues with its hourly read token, and that token gets 403 on issues: it can open an issue it cannot read.\n\n`ReadPermissions` gains `\"issues\": \"read\"`. Every value stays `read`; the test that no read token asks for anything but `read` still holds, and a new assertion pins `issues`. Reading issues reaches no further than the pull requests the token already reads, which carry the same discussions. The App itself already has issues permission, since it opens them.\n\n`go test ./...` passes.\n\n## To roll out (operator)\n\n1. Merge, then tag the release on the Mac (YubiKey):\n   ```bash\n   git clone --filter=blob:none git@github.com:abovebeyond-ai/control.git /tmp/ctl && cd /tmp/ctl\n   git tag v0.31.0 && git push origin v0.31.0 && cd && rm -rf /tmp/ctl\n   ```\n2. The release workflow builds `control-gateway-linux-amd64`. A follow-up pull request moves `deploy/gcp/startup.sh` and the README to v0.31.0 with its sha256.\n3. After that one is merged, on the Mac:\n   ```bash\n   gcloud auth login shane@abovebeyond.ai\n   cd ~/Projects/control && git pull && CONTROL_GCP_PROJECT=elixir-508105 deploy/gcp/rehearse.sh upgrade\n   gcloud auth revoke --all\n   ```\n",
+            "branch": "workbench/read-token-reads-issues",
+            "title": "A read token reads issues"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006082409-010368"
+}

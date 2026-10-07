@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3be6f8be2d8cfd7d532667f135abdd0209a4f806",
+            "branch": "workbench/voice",
+            "files_sha256": "2dbd87c5088bc7d94530b8e580794d86b7269a2f81c6c4da0ef8e478b1a63fbe",
+            "message": "Talking to the workbench: a realtime voice, sessions in herdr, and a memory\n\nvoice/bridge.mjs serves a page on the tailnet where a realtime speech model talks with the\nowner and hands work to Claude Code sessions in herdr; voice/memory.mjs keeps transcripts on\nthe machine and consolidates them into ~/Projects/.memory with a headless Claude."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006103346-23196c"
+}

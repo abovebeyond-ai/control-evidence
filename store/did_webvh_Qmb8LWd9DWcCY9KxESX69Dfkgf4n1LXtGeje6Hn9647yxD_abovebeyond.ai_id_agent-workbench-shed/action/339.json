@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c04e26e361db88eeb39eb78389c9e2e7ca9ba16d",
+            "branch": "workbench/repair-by-project-name",
+            "files_sha256": "496c7e769b5f901513818afb1e9dee6bf18ca6c58ec79576d192a3e689281a1c",
+            "message": "The repair layer is headed by the project's own name\n\nNot the resource (stocklist:platform), which follows in small muted text."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006154237-63a6f7"
+}

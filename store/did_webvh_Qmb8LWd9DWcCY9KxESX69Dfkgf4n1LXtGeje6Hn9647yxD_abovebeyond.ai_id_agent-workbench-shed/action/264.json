@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "edd7837f731a3b302ef004994d06b93f75f325b7",
+            "branch": "workbench/gateway-v0.31.0",
+            "files_sha256": "43da53a10c7a0aebe718ab0225b924737e8a3657054bfcecb4f2484b51c796ab",
+            "message": "The gateway runs v0.31.0\n\nstartup.sh pins v0.31.0 (issues: read on the read token) with its sha256, checked against\nthe release digest, SHA256SUMS and the downloaded asset."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006084107-398bca"
+}

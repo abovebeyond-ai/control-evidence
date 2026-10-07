@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Portal's side of the gateway's policy log (abovebeyond-ai/control #102, Elixir #234, portal-cli #23): it keeps the signed versions, serves them to the gateway, and shows a draft in words before the owner signs it.\n\n**Routes** (under `/api/ingest`):\n- `GET control/policy?after=N`, the hand token only: `{\"versions\": [token, \u2026]}`, the versions above N on the chain the gateway is on, oldest first. The gateway asks this every minute.\n- `POST control/policy`, fabric (Elixir's narrowings) or read (the laptop's owner-signed versions): `{\"token\"}`. Kept only when it is a policy version, its signature holds against the DID log key of its issuer (operator keys as `OperatorKeys` checks them, `#agent-elixir` as an assertion key), and it is the next number naming the previous hash, so junk never blocks the chain the gateway reads. An unapplied version may be replaced by one on the owner's key with the same number (the gateway may have refused it); an applied one never. Answers `{\"kept\", \"version\", \"hash\"}` or `422 {\"refused\"}`.\n- `POST|GET control/policy/draft`: the one draft Elixir writes (fabric), read by the laptop (read) and the workbench (hand-read). Kept exactly as Elixir sent it, since PHP would turn `{}` into `[]` and the gateway's strict decoder would then refuse the signed version.\n\n**Chains.** Versions are numbered within a chain named after the v0 hash, so a new carry-over starts a new chain and the old one stays on record without being served. Elixir's `controlGrants` report names the version served; that version and every earlier one on its chain are marked applied.\n\n**Shown.** `/portal/grants` gains a Policy section: the version served, signed versions still waiting for the gateway with who signed them and their words, and a waiting draft as its change lines word for word with `hand.mjs policy sign`. The owner's state lists a widening draft as kind `policy`, and the phone's workbench (and its JSON for the app) says it in one sentence, so the watch's count matches that screen. A narrowing never waits for the owner.\n\nTests: `PolicyLogTest` (the gateway's read, keeping with each refusal, replacing, chains, the draft, applied marking, the pages); `HandsReadWithTheirKeyTest` lists the draft route. 663 of 664 pass; `BuildStampTest` fails in a worktree checkout without this change as well. PHPStan and Pint pass.\n",
+            "branch": "workbench/policy-log",
+            "title": "The gateway's policy log: kept, served to the gateway, a draft shown in words"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007060536-77ec21"
+}

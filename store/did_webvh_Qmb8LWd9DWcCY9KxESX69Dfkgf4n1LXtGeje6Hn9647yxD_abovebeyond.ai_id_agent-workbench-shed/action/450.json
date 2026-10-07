@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Reading is lane 1: no approval each time, from the car too. Until now the voice could not read Portal (\"I can't read Portal live\"), and nothing on the workbench could read the Gentells pipeline, whose server only the owner reaches by ssh.\n\n**`lib/hand.mjs`, `systemRead()`:** a read on a running system with no gateway in between, because nothing changes. It fetches the owner's B1 mandate from Portal (`capabilityFor` with layer B1), signs method, path with query, time and nonce with this hand's key, and returns the system's JSON. On a refusal it throws the system's reason.\n\n**`observatory.mjs`:** `status`, `mix [by] [days]`, `cost`, `tools`, `ask <tool> '<json>'`, against `https://observatory.gentells.com/api/pipeline`. Output is JSON on stdout, written nowhere else.\n\n**`voice/bridge.mjs`, two tools**\n- `portal_status`: the fleet summary, or a project's brief. `accessInfo` is dropped even though Portal already withholds it from this machine, because the voice speaks through a third party.\n- `read_system`: the observatory commands above.\n\nThe persona says reading is always allowed, numbers come with their window, and nothing about people is read or said.\n\n**Depends on**\n- gentells-pipeline (`mandate.mjs`) and Portal (the B1 layer), both separate PRs.\n- Signal Observatory naming `observatory:pipeline`, and reading admitted for 30 days.\n- Until then, `observatory.mjs` answers with the reason it is refused.\n\n**Checked**\n- The shed's signature from `signHex` verifies under the pipeline's check, against the live DID document.\n- `fleet()` and `brief()` answer from the shed.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/observatory-reads",
+            "title": "Read the Gentells pipeline and Portal from the workbench and the voice"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006173047-2de134"
+}

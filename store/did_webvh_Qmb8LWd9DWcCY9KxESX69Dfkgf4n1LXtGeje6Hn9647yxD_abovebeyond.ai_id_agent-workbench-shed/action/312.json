@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "396a345a1342be15092331b34e3bf6ae52ff9d1e",
+            "branch": "workbench/systems-in-the-grant",
+            "files_sha256": "e76c956ac6f4c99800c4029557ba12ff12c39d83667cf1973c147eff5b384fc2",
+            "message": "The grant and the gateway configuration know the running systems\n\nA system a Portal project names joins the workbench grant with its kinds; the gateway\nconfiguration gets the systems' base URLs for effects.System."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261006145758-dd4f9c"
+}

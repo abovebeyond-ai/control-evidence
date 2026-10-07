@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "be562f6e6d68cdc5867afbc63e08a569dd2e5169",
+            "branch": "workbench/working-set-preselect",
+            "files_sha256": "5eaeaba3afe7b001fd23fdf6f6c332f34e9b3574b5956e292109a8de2dd03091",
+            "message": "Tick every project in the working set whose admission ends before the set\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006191423-4abe4f"
+}

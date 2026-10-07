@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "de8ddac6cd8a82b78c06e77636fddd810813c9c6",
+            "branch": "workbench/mandates-by-blast-radius",
+            "files_sha256": "3ec530f73ee970bdaa0acf378be6adde636a9ef0c2658db2768c8d5e75cc5089",
+            "message": "Mandates by blast radius: a design note\n\nHow agents act on running systems: one kind per action, one mandate per blast-radius layer,\nautonomy earned per kind, and the system verifying the owner's mandate itself."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006123430-f5d8cb"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9053be5effcb68acc6b9954fbd43a4fb52880862",
+            "branch": "workbench/read-capability-fix",
+            "files_sha256": "46d3f51086d5268eae77f676be1f7f5b0bac41a2095548868066231046fde85c",
+            "message": "Send only the signed capability on a system read\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006173853-00f22e"
+}

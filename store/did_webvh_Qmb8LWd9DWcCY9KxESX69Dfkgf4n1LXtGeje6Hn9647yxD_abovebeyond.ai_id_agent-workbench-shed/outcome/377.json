@@ -1,0 +1,16 @@
+{
+    "action": "ccec842f4d0c843aba2c1316dba6c7fe",
+    "effect": {
+        "detail": {
+            "base": "b1f918d7237dfe55045418de701efb7cf17bb396",
+            "branch": "workbench/carry-over-commands",
+            "commit": "00ae2ac3ccf02a826b4c0df5c662973aea199972",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 375,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first version of Portal for Android: Portal's phone screens drawn natively, the workbench's voice held as a call, and the passkey in Android's own sheet.\n\n**Screens.** Watch, Work, Fleet, Systems, a project, the workbench and the voice, in Compose. What each screen says comes from Portal's `/app` routes (abovebeyond-ai/portal #364, #365): the sentences, tones, counts and order are Portal's, the drawing is the app's, so the app decides no verdict itself. A native tab bar and head; each screen opens on its last answer and then shows Portal's, with the time of what it shows (amber after ten minutes). Fleet finds a project by name. The workbench says per project what the workbench may do there and what the touch does given the working set, says what was admitted after the touch, and names a policy draft waiting for the token.\n\n**Signing in and admitting.** The passkey through Credential Manager over Portal's own WebAuthn options; Portal accepts the app's origin (`android:apk-key-hash:\u2026`) because `assetlinks.json` names the package and certificate (`ANDROID_APPS`). The session is the owner's Portal session in the app's private storage, as a browser keeps it; no token.\n\n**The voice.** A foreground service of the microphone type: it keeps listening with the screen off or another app in front, and plays through a headset when there is one (Bluetooth LE audio, classic Bluetooth, wire, USB), else the loudspeaker. WebRTC to OpenAI realtime with the key the voice bridge on the workbench mints for one conversation; the bridge carries out every action, as for the web page. The screen reads as a conversation, with a light that grows when the microphone hears you. Never approving by voice: a touch admits, a key signs.\n\n**House.** Portal's night palette, Lato and Spline Sans Mono, the sun as the app's mark (icon, splash, notification, sign-in, the head of each tab), Portal's line icons, an accent outline for the one primary action. English only.\n\n**Build.** `./gradlew assemblePreview` makes a minified build signed with the debug key of the machine that built it (`ai.abovebeyond.portal.preview`, about 17 MB), to sideload until a release key is decided; the README says how and why. Android 12 or later, arm64.\n\nChecks: lint without errors; screenshot tests render every screen from Portal's own example answers (Robolectric and Roborazzi), and mockups of each screen in its frame.\n",
+            "branch": "workbench/first-version",
+            "title": "Portal for Android, first version"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007061248-914027"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`hand.mjs workingset --projects <slug,slug> [--layer B1|B2] [--days 1-7]` signs the owner's working set on the YubiKey (operator slot, PIN and touch, like `admit`) and hands it to Portal, which keeps it after checking the signature against the DID document. Inside the set, a passkey touch on Portal's Workbench page admits until the set ends.\n\nThe signed payload is canonical JSON:\n\n```json\n{\"type\": \"working-set\", \"iss\": \"<DID>#operator\", \"sub\": \"<DID>\", \"projects\": [\"...\"], \"layer\": \"B2\", \"iat\": 0, \"exp\": 0, \"jti\": \"ws-...\"}\n```\n\nIt is refused before signing when it names no projects, reaches beyond B2, or stands longer than 7 days.\n\nDepends on the Portal side (the working-set door).\n\nNot tested with a real token here: the YubiKey is on the laptop. The arguments and refusals were checked on the workbench.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/working-set",
+            "title": "hand.mjs workingset: sign the working set on the YubiKey"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006184821-d276b6"
+}

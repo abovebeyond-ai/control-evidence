@@ -1,0 +1,16 @@
+{
+    "action": "de8c370e3c86a19bd936e8dac8a37345",
+    "effect": {
+        "detail": {
+            "base": "a842f4c82987882d13c93d052cd0bd6d63d9c2d5",
+            "branch": "workbench/task-state-former-keys",
+            "commit": "e38538878de7a285e717609c63502790862cd9e1",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 417,
+    "verdict": "ALLOW"
+}

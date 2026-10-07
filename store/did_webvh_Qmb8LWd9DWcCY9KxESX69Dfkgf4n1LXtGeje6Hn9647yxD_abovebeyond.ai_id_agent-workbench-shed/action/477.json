@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a3d0e406249e2bd84abd91876140744c2945ead5",
+            "branch": "workbench/voice-not-the-car",
+            "files_sha256": "c513f9361e8211531b7ba255e39a0569d2995175ce7673aa1515a6097a6eb7a1",
+            "message": "The voice does not assume where the owner is\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006183045-ef71d1"
+}

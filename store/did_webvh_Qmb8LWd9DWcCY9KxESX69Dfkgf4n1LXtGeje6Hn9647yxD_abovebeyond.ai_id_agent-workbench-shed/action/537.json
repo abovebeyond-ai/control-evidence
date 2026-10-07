@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The werkbank page and the owner's state (#362) pick one admission per project, the one that stands longest, and call it stale when it does not name every repository the project links. Since the read layer (B1) exists, that admission can be a read for 30 days: it stands longer than any period for proposals and is never the word that covers repositories. A project with a read admission then asks again forever, however often it is admitted.\n\nOn Signal Observatory (Gentells) today, the page and the phone both said three repositories were linked after the admission, while a fresh period for proposals covered them.\n\nBoth places now only consider the periods for proposals (no layer, no act): that is what the row's checkbox admits, and the only admission that names repositories. The page's \"until\" on that row now shows the period for proposals too, not the end of the read.\n\n`OwnerStateTest` gains a case with a 30-day read, a repository linked after it, and a fresh period for proposals: nothing waits. It fails without the change. The suite passes 632 of 633; `BuildStampTest` fails in a worktree checkout without this change as well. PHPStan and Pint pass.\n",
+            "branch": "workbench/stale-only-proposals",
+            "title": "Only a period for proposals can ask again for a repository"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006193608-4c30b6"
+}

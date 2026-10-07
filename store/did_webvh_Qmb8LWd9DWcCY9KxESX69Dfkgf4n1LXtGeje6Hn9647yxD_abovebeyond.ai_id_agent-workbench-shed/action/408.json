@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A hand that opens a pull request sets its task to \"in progress\" with the link (`Werkstatus::inProgress`), and the security-fix playbook keeps that link on the card (\"PR open, tests green, since \u2026\"). Neither is ever taken back. The playbook only rewrites its section when it runs again, and it does not run while the only fixes left are major versions.\n\nOn the De Backer website, a critical astro advisory has shown as \"in progress\" since 9 September. It points at PR #5, which was merged three minutes after it opened and never touched astro: the fixer skipped astro because it is a major version. The risk looked owned for four weeks while no one was on it.\n\n`elixir:release-stale-work` runs hourly (at :40). For every in-progress task and every fix-section link that points at a GitHub pull request, it asks GitHub what became of that pull request.\n\n- **Merged or closed:** the task goes back to open (removed from `werkstatus`, as Portal's own `setState('open')` does), and the card's link goes. It is kept as `facts.prClosed` with its state and merge time, so the history stays.\n- **Open, not a pull request link, no token, or GitHub silent:** nothing changes.\n- It closes nothing; the measurement still decides what is done.\n\nThe job is listed in `Jobs::LIST` (hourly, rerun allowed).\n\nTests: `ReleaseStaleWorkTest` is new (merged, open, closed unmerged; other tasks untouched). The full suite passes 703 of 703, and PHPStan reports 0 errors.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/release-stale-work",
+            "title": "Release tasks whose pull request was merged or closed"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261006163537-f5eb92"
+}

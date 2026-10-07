@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A design note, `docs/mandates.md`: how agents get to act on running systems (the Stocklist platform, the Gentells Observatory), not only propose code, without weakening what holds today. Nothing is built yet. Once the design is agreed, the work follows in control, Portal, Elixir and the systems.\n\n**The core:** the mandate follows the **blast radius**, not the project, applying PAC to actions as it is already applied to playbooks.\n\n- **One kind per action,** with bounded parameters. Never a generic \"run a command\".\n- **One mandate per layer:**\n  - B1 reads, for 30 days;\n  - B2 recoverable actions, for the day;\n  - B3 signed per action, with the parameters shown.\n  - B5 is not mandated.\n- **Autonomy is earned per kind,** on Elixir's existing thresholds. Every kind starts at A2.\n- **No credential anywhere.** The system verifies the owner's mandate and the gateway's record itself, the way the evidence check verifies a pull request. Neither the hand nor the gateway holds an API key.\n\n**First sets:**\n- **Stocklist:** insights (B1), `photos_repair` per car (B2), and later `transport_price` (B3, per action).\n- **Observatory:** reads (B1), `retry_report` and cron on or off (B2).\n\n**Four open questions** are listed in the note: where price bounds live, native verification or the `relying` binary, revocation before expiry, and the client as owner.\n\n**One inconsistency found on the way:** the comment on `Blast::threshold()` in Elixir names 16, 22, 45 and 93 runs, while the code uses 10, 20, 40 and 80. The note follows the code.\n",
+            "branch": "workbench/mandates-by-blast-radius",
+            "title": "Mandates by blast radius (design note)"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006123430-f5d8cb"
+}

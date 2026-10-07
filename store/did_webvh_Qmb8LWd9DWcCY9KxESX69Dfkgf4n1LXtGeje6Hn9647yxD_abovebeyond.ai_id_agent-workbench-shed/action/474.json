@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A project could name any known system. The settings offered every system on every project until #357, so Signal Observatory had `stocklist:platform` switched on, and its page offered to repair Stocklist's photos.\n\n`Capability::systemsOf()` now returns only the systems the project names and whose repository it links (`SYSTEM_INFO`). A system switched on by mistake on another project grants nothing there: no layer kinds, no block on the page. The settings still show it, so it can be unticked.\n\nThe repair block's header names the systems by their names (\"the Stocklist platform\") instead of their ids, and only those with a repair layer.\n\nTests:\n\n- One new case in `ReadLayerTest`.\n- Two cases in `RepairLayerTest` follow the rule: the feed test gives the project its repository, and the page test expects the name.\n- The full suite passes 626 of 627. The one failure, `BuildStampTest`, also fails without this change because it reads the git checkout.\n- PHPStan reports 0 errors.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/systems-own-repo",
+            "title": "A system counts only on the project that links its repository"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006181818-77a7cf"
+}

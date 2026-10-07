@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "efcafe171ab650e8e39a867b00ee4cac5c703a42",
+            "branch": "workbench/pipeline/standard-0.8",
+            "files_sha256": "bb45be0b5c6fa244877260e5a1e7b49a0d4b4e5fee5629564a074eda61578d94",
+            "message": "Gentells Standard 0.8.0: ages read at the signal's year, generations from birth years"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261006085541-be3b0a"
+}

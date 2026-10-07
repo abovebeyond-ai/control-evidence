@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Workbench page pre-ticked a project in the working set only when it had no admission at all. On 6 October the owner admitted the set's two projects with one touch; Stocklist already had an admission for that day, so it was not ticked and stayed admitted until midnight instead of until the set's end.\n\nA project in the set is now ticked whenever its current admission ends before the set does.\n\nTests: `WorkbenchAdmittedByPasskeyTest` covers a set project with an admission for today being ticked. The Workbench tests pass.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/working-set-preselect",
+            "title": "Tick every project in the working set whose admission ends before the set"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006191423-4abe4f"
+}

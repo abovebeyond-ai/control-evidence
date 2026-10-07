@@ -1,0 +1,16 @@
+{
+    "action": "01f61dc1d74a7706dc94c56c96cf1ede",
+    "effect": {
+        "detail": {
+            "base": "04a8c18cca6c9548c440a1e7b0bf4717ee5cd379",
+            "branch": "workbench/fix/offered-cars-newest-first-and-blue-bids",
+            "commit": "7cc6a3d3833ce1f9202a219472942fb135c765ef",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 237,
+    "verdict": "ALLOW"
+}

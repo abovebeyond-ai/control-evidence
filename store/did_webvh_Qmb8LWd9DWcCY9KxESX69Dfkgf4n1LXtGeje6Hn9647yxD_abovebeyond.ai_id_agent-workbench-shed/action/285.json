@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Makes the voice page an app the phone installs: \"Werkbank\" on the home screen, standalone, with no address bar.\n\n- **`voice/app.mjs`:**\n  - **The manifest:** name Werkbank, `display: standalone`, portrait, ink theme.\n  - **A service worker** that keeps the page itself for when the workbench is out of reach. It fetches everything else from the network: a session, an action or a notice is never served from a cache.\n  - **The icon,** drawn as a PNG by the bridge: a paper ring and dot on ink, inside the safe zone of a maskable icon, at 192 and 512 px. No image file lives in the repository.\n- **`bridge.mjs`** serves `/manifest.webmanifest`, `/sw.js`, `/icon-192.png` and `/icon-512.png`, behind the same login check as the page.\n- **`page.html`** links the manifest and the icon, and registers the service worker.\n\nChecked on a test port: all four answer 200 with the right content type, and the 512 px icon is a valid PNG (looked at).\n\nInstalling needs HTTPS on the tailnet (`tailscale serve`), and the tailnet needs HTTPS certificates switched on first.\n",
+            "branch": "workbench/voice-app",
+            "title": "The voice page installs as an app"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006104143-3abb09"
+}

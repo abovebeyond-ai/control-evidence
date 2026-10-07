@@ -1,0 +1,17 @@
+{
+    "action": "47b39a98d3199e34bf875f7ba0db6ae5",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 19,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/abovebeyond-ai/portal-cli/pull/19",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 498,
+    "verdict": "ALLOW"
+}

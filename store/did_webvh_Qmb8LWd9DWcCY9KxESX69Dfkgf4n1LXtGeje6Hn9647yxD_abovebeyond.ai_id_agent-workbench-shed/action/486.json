@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two design notes on how the owner's agents get work done without approval paralysis. These are notes only; nothing here changes code.\n\n**`docs/mandates.md`, \"Commands, modelled on blast radius\"**\n\nAn agent uses commands rather than screens. Each command has a name, typed parameters, the system's own business logic behind it, and a blast radius that decides the approval:\n\n| Layer | Approval |\n|---|---|\n| B1 | 30-day mandate |\n| B2 | per day |\n| B3 | per action |\n| B4 | after a dry run |\n| B5 | never mandated |\n\nRules for keeping a command's radius low:\n\n- narrow scope;\n- a dry run by default;\n- reversible where it can be;\n- reading kept apart from writing;\n- through the app's own logic rather than raw SQL;\n- personal data as a command of its own;\n- no outbound channel in a run that read customer data.\n\nThe note catalogues both systems from an inventory of what they offer today:\n\n- **Stocklist:** insights, measures, stock and checks as B1; photo repair and module switch as B2; resends and transport price as B3. A list names what is never mandated.\n- **The Gentells pipeline:** status, mix, cost and the Observatory tools as B1, now built; retry, cron, stop, run and the undo-backed edits as B2; a patch without undo as B3.\n\n**`docs/working-set.md`, new**\n\n- The owner signs a working set once on the YubiKey: projects, the highest layer, and an end date.\n- Inside it, every approval is a passkey touch, wherever he is; outside it, the YubiKey again. A compromised Portal can do at most what the set allows, and the chain ends at a person's key.\n- The gateway reads a signed, forward-only policy log every minute instead of being carried a configuration and rebooted. A narrowing applies itself, and every record names the policy version it was judged under. The documents are served through Portal; their hashes are public and anchored.\n- Four questions stay open: the strong key over NFC from the phone, the longest a set may stand, B3 inside a set, and revocation.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/commands-by-blast-radius",
+            "title": "Design notes: commands modelled on blast radius, and the working set"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006183059-72cb86"
+}

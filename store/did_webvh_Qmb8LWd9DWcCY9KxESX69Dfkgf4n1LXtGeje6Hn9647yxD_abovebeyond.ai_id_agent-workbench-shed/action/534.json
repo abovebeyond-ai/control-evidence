@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0ba666de06fc1407c347538dd39fea2526bcd824",
+            "branch": "workbench/stale-only-proposals",
+            "files_sha256": "cba15336beca95061b9798576687273ded8250ac90c2fc7c5d61cb02f0407aae",
+            "message": "Only a period for proposals can ask again for a repository"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006193608-4c30b6"
+}

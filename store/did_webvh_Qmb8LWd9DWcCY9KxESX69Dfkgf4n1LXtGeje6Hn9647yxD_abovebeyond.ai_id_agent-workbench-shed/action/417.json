@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a842f4c82987882d13c93d052cd0bd6d63d9c2d5",
+            "branch": "workbench/task-state-former-keys",
+            "files_sha256": "a278572bb024b7e331d75f89b6690eae23b93bc41043fa2176f84a13071d76a6",
+            "message": "Clear a task's state under its former keys too\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006163842-bec2ca"
+}

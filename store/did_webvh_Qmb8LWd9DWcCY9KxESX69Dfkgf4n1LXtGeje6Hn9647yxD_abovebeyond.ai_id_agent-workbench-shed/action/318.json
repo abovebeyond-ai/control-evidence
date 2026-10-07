@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d963e434867842f0d996cf711f4357af9e0a28ed",
+            "branch": "workbench/system-actions",
+            "files_sha256": "249cb2677789fda80ca77eb707f929bff8dcd93e226dfdd0965403d9639bc83f",
+            "message": "Act on a running system in the admitted layer: systemAct, stocklist.mjs photos\n\nThe shed asks Portal for the capability of a layer; systemAct carries one action on a system\nthrough the gateway; stocklist.mjs repairs one car's photos, dry run unless --apply."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006145906-bb5f6b"
+}

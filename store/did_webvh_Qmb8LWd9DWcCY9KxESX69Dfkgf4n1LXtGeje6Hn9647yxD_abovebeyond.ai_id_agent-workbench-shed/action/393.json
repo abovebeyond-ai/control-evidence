@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8cd989855d48ba53b5e207820f4ca68672277930",
+            "branch": "workbench/grants-readable-2",
+            "files_sha256": "54ea77b9d0af8dee1a1af2bd2af4112f189a54de0d44aad25b7496e932784e6f",
+            "message": "Grants in plain words; the overview is called Overview\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006162610-180425"
+}

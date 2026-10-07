@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`hand.mjs policy` and `hand.mjs policy sign`: the owner signs a widening of the gateway's policy on his token, the way he signs a working set (abovebeyond-ai/control `docs/working-set.md`).\n\n- `hand.mjs policy` shows the version the gateway serves and the draft that waits in Portal, line by line.\n- `hand.mjs policy sign` takes the draft Elixir wrote, refuses what the gateway would refuse anyway (a field it does not know, another type, a number that does not follow, another predecessor, no hands, no words) and a narrowing Elixir signs itself (unless `--anyway`), prints the version it becomes, the version and hash it builds on and every line of the change, then asks for the PIN and the touch. It signs the JCS payload on the token with `iss` the token's DID URL and `iat` now, keeps a copy in `~/.config/control/policy-<version>.json` and hands it to Portal. `--resend` delivers a kept copy again without a second touch.\n\nTests: `node --test lib/policy.test.mjs`, 5 of 5, with a software key in place of the token: the token's form, the payload kept exactly but for `iss` and `iat`, each refusal, the two Portal calls. A token made this way was checked with control's own `ParseVersion` and `Next`: accepted as the next version from a widen key, and refused from a narrow key.\n",
+            "branch": "workbench/policy-sign",
+            "title": "hand.mjs policy sign: a widening of the gateway's policy, on the token"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007055624-ac09ed"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b30796650f82cbbd3f7ffbaadc93af45c9519046",
+            "branch": "workbench/policy-sign",
+            "files_sha256": "ba59fd0e75546c2711a3908c13c926c1ecf9becf70bf83b0eabe66e18cfc6cf1",
+            "message": "hand.mjs policy sign: a widening of the gateway's policy, on the token"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007055624-ac09ed"
+}

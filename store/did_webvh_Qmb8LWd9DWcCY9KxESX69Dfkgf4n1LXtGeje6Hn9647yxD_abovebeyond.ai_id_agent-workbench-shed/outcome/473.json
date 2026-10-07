@@ -1,0 +1,16 @@
+{
+    "action": "eccfd7f3de5b106ce8795c8c4fe1cfe3",
+    "effect": {
+        "detail": {
+            "base": "f6217e66b9dd6d971e3bb99d3f13fd698eeeac51",
+            "branch": "workbench/systems-own-repo",
+            "commit": "8f7aa312af0d5fc93776d31fb617a2b30f44198c",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 471,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9bfbc634181b3e6d1d38439e6d4122fabb158748",
+            "branch": "workbench/commands-by-blast-radius",
+            "files_sha256": "7d65174e2377c179112ff0bf172d73a111d6c465bd230337114c88550d13dedf",
+            "message": "Commands modelled on blast radius, and the working set\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006183059-72cb86"
+}

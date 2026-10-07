@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #354; close #354 unmerged.\n\nThe page now opens with one sentence on whether it is safe, and everything else folds under \"Details\".\n\n| Verdict | Colour | When | Example sentence |\n|---|---|---|---|\n| safe | green | otherwise | \"Safe. Nothing can change a live system; code waits for your merge.\" |\n| live | amber | an admission for the repair layer is in force | \"The workbench, on the laptop and at home may repair on Stocklistdealer.eu platform until 23:59.\" |\n| unsafe | red | the page cannot vouch for what the gateway allows | \"The gateway runs an older permission for the workbench at home than Elixir wrote; carry it over.\" |\n\nThe live verdict covers the one kind of admission that changes a system without a merge in between. The unsafe verdict covers:\n\n- no report from Elixir;\n- a report older than 2.5 hours;\n- a gateway that did not answer;\n- a gateway serving another grant than Elixir wrote. Such a grant can be wider, so this counts as unsafe.\n\nWhen the verdict is unsafe, the details open by themselves; they carry the carry-over commands.\n\nInside the details is the per-project view from #354: which hand may do what on each project, dark when admitted now, grey when it waits for the owner's word. Below it come the hands and a legend of the action types.\n\nTests: `GrantsOverviewTest` covers the three verdicts. The full suite passes 621 of 622; the one failure, `BuildStampTest`, also fails without this change because it reads the git checkout. PHPStan reports 0 errors.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/grants-safe",
+            "title": "Grants open with one sentence: is it safe"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006165219-c38c56"
+}

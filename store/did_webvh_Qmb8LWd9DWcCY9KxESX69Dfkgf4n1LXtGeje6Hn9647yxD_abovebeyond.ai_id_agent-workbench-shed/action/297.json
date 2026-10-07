@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first step of `docs/mandates.md`: the gateway can carry an action to a running system, with no credential involved.\n\n- **The kind `stocklist.photos_repair`**, schema `{vehicle: int}` plus optional `{apply: bool}`. One car per call. Without `apply` it only reports what it would write (B2). Anything outside the schema is refused before the grant is read.\n- **`effects.System`**, a generic adapter for actions on a running system:\n  - it POSTs `{kind, resource, params}` to `<base>/control/act`, with the signed request record and the capability in the `Control-Evidence` and `Control-Capability` headers, as on a Portal write;\n  - only the kind's own parameters go in the body;\n  - a refusal comes back in the system's own words;\n  - an unknown system is refused by name;\n  - it holds **no secret**: the system verifies the owner's capability and the gateway's record itself.\n- **The configuration** gets `systems`, a map from resource to base URL (`\"stocklist:platform\": \"https://traders.stocklistdealer.eu\"`). It's an address, not a secret.\n- **`withEvidence`** attaches the evidence to system kinds as it does to `portal.*`.\n\n**Tests:**\n- the body and the headers of an action;\n- a refusal and an unknown system;\n- every system kind has a schema, and the schema's bounds hold;\n- `withEvidence` on a system kind leaves the hand's own parameters untouched.\n\n`go vet` and `go test ./...` pass.\n\n**Not in this PR:**\n- the grant (Elixir writes it, with the resource `stocklist:platform` once Portal links it);\n- the `systems` entry in the carried configuration;\n- the platform's endpoint, which comes next in stocklistdealer-eu/platform.\n\nThe kind only acts after all of those and a release.\n",
+            "branch": "workbench/system-actions",
+            "title": "Actions on a running system: stocklist.photos_repair"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006124138-4110f2"
+}

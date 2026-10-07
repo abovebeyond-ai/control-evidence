@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cd5a0cd95cdfde1e9303831016ebc947ad90a635",
+            "branch": "workbench/release-stale-work",
+            "files_sha256": "1bf9052cf39ddba775f9f22ef8f2af8f7e08c52bc7c18f1d612a6a3c870267ba",
+            "message": "Release tasks whose pull request was merged or closed\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261006163537-f5eb92"
+}

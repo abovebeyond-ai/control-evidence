@@ -1,0 +1,16 @@
+{
+    "action": "71dc36f318f3bc71e27da0451c106d58",
+    "effect": {
+        "detail": {
+            "base": "c96425195b8562a7d80a1e626fe32f916958a9d2",
+            "branch": "workbench/mail-becomes-issues",
+            "commit": "171895d2bde89deccd8def737c75e02a002a2c04",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 252,
+    "verdict": "ALLOW"
+}

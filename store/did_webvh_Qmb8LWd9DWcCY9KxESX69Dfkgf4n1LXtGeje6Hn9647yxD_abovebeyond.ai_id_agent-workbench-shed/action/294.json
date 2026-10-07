@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "900fe91187780007b125661fb7ef430a1ffc78f1",
+            "branch": "workbench/system-actions",
+            "files_sha256": "04615845834016e28d29ecc54d6449eb5d6a2cd7ac97475c9cf5228af46eaaff",
+            "message": "Actions on a running system: stocklist.photos_repair through effects.System\n\nA generic adapter carries an action to a system's control endpoint with the evidence in the\nheaders and no credential; the first kind repairs one car's photos on Stocklist (B2)."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261006124138-4110f2"
+}

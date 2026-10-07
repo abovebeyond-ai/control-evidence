@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "stocklist.photos_repair",
+        "params": {
+            "apply": false,
+            "vehicle": 23312
+        },
+        "resource": "stocklist:platform"
+    },
+    "run": "workbench-20261006153558-d84696"
+}

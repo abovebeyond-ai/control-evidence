@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A read for the owner's phone: whether it is safe, and what waits for a passkey touch. The Android app (abovebeyond-ai/portal-android) shows these two things before the voice; it reads them through the voice bridge on the workbench, which signs its reads with the workbench's key, so the route is on `read` and `hand-read`.\n\n`GET /api/ingest/owner/state` answers:\n\n```json\n{\n  \"verdict\": {\"level\": \"safe|live|unsafe\", \"lines\": [\"Safe. Nothing can change a live system; code waits for your merge.\"]},\n  \"waiting\": [\n    {\"kind\": \"knock\", \"project\": \"stocklist\", \"title\": \"Stocklist\", \"sentence\": \"knocks from home: fix the lead form, 18:12.\", \"url\": \"https://portal.abovebeyond.ai/portal/werkbank\"},\n    {\"kind\": \"stale\", \"project\": \"gentells\", \"title\": \"Gentells\", \"sentence\": \"asks again: a repository was linked after you admitted it.\", \"url\": \"https://portal.abovebeyond.ai/portal/werkbank\"}\n  ]\n}\n```\n\n- **The verdict** is `Grants::verdict()` from #355, ported onto the current grants: unsafe when the page cannot vouch for what the gateway allows (no report, an old one, a gateway that did not answer or serves an older grant), live when a repair layer (B2) is admitted, safe otherwise. A read admission (B1) changes nothing and stays safe. `overview()` returns it too; the grants page itself is unchanged.\n- **What waits** comes from the same queries as `/portal/werkbank`: knocks of the last day, newest first, and admissions that no longer cover their project because a repository was linked since.\n- **Language:** API routes have no locale, so the route reads `Accept-Language` (en or nl) itself; the Dutch strings are in `lang/nl.json`. Times are in Europe/Brussels.\n- **What it carries:** slugs, titles, sentences and the page's address. No access codes, no e-mail addresses; the test checks both.\n\nTests: `OwnerStateTest` covers who may read, the three verdicts (with a B1 admission staying safe), a knock and a stale admission, a knock older than a day dropping out, and the Dutch. `HandsReadWithTheirKeyTest` lists the new route and signs a read of it. The suite passes 631 of 632; `BuildStampTest` fails in a worktree checkout without this change as well. PHPStan and Pint pass.\n",
+            "branch": "workbench/owner-state",
+            "title": "The owner's state for the phone: is it safe, what waits"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006192504-45c40c"
+}

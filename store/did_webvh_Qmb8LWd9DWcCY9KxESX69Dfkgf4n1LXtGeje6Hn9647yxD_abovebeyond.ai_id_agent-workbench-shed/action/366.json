@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The gateway publishes only digests of each grant, so the full grant (kinds, resources, who may sign) can only be read on the box that writes `config.json`. Until now nothing outside this box could show which hand may do what on which project, and drift between the written grant and the one the gateway serves showed up only as a job note.\n\nThe control service now sends a `controlGrants` report to Portal (global, no slug). For each hand it carries:\n\n- its kinds and resources as written;\n- `max_per_kind`;\n- the names of the operator keys (not the keys themselves);\n- a state against the gateway: `served`, `behind` (with the fields that differ), `unknown` (the gateway does not know the hand) or `unchecked`.\n\nThe report is sent when it changes and at least hourly, so Portal can tell how old it is. A Portal that does not answer costs the job nothing; the next minute tries again. Submitter keys never leave the box.\n\nPortal's new `/portal/grants` page (separate PR) shows this report next to the admissions.\n\nTests: `ControlGrantsReportTest` (new); `--filter 'Control|Workbench'` 86/86 green.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/grants-report",
+            "title": "Report the grants in full to Portal, with drift per hand"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261006160307-3200cd"
+}

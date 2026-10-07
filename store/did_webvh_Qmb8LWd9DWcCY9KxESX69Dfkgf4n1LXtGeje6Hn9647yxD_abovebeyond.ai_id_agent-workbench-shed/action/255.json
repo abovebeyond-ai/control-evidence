@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Each request in a forwarded mail now becomes a GitHub issue, and the pull request that solves it closes it. The repository's history then shows why a change was made, not only what changed.\n\nThe task `mail-intake.mjs` gives a session says:\n- **One issue per request,** not one per mail: a mail with two requests gets two issues. It is opened with `hand.mjs issue --labels mail` in the repository the request concerns, before anything is built.\n- **The body** is the request in the session's own words, why it matters, and `Portal mail:<id>` as the source. **No personal data** of the sender or of anyone the mail mentions: names, addresses and phone numbers stay in Portal.\n- **A request that is already an open issue** gets no second one. Reading issues needs control#95 (`issues: read` on the read token); until that is rolled out, the session cannot see existing issues.\n- **Each pull request says `Closes #<n>`.** The mail goes to done with the issue numbers in its note.\n\nThe README section on forwarded mail says the same. `node --check` passes.\n",
+            "branch": "workbench/mail-becomes-issues",
+            "title": "Forwarded mail: each request an issue, each pull request closes one"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006082433-9d39b1"
+}

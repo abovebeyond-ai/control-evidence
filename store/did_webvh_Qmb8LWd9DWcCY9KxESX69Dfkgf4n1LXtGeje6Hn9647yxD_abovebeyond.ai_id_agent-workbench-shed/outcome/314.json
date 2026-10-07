@@ -1,0 +1,16 @@
+{
+    "action": "918695d7d4daa4e5fad1c13530b8701c",
+    "effect": {
+        "detail": {
+            "base": "396a345a1342be15092331b34e3bf6ae52ff9d1e",
+            "branch": "workbench/systems-in-the-grant",
+            "commit": "9875e05af7a14f6e3f0a033bc3c8ab1d115ac612",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 312,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c04e26e361db88eeb39eb78389c9e2e7ca9ba16d",
+            "branch": "workbench/grants-overview",
+            "files_sha256": "b68fb20095b40e185a322add4101e66095bb6f2338abb7afa984042f7f081821",
+            "message": "Add an overview of every grant across every project\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261006155545-54d771"
+}

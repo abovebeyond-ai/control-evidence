@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eeb4b286fe49d83718517bf769eb421ff2d6b8e8",
+            "branch": "workbench/grants-report",
+            "files_sha256": "7f82123a8eb30ccff06fadf2fb2a8d5713364f6534c8d5a6e9efd09f5c8b6d9b",
+            "message": "Report every hand's grant and its state on the gateway to Portal\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261006160307-3200cd"
+}

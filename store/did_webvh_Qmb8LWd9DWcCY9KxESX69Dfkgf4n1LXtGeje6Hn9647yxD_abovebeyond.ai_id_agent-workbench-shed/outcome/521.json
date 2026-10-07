@@ -1,0 +1,15 @@
+{
+    "action": "bef326851a88163eef4c983a9fd63b53",
+    "effect": {
+        "detail": {
+            "fields": [
+                "links"
+            ],
+            "project": "portal"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 519,
+    "verdict": "ALLOW"
+}

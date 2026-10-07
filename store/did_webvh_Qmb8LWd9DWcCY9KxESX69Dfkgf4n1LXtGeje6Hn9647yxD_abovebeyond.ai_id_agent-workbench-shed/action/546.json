@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b30796650f82cbbd3f7ffbaadc93af45c9519046",
+            "branch": "workbench/voice-from-portal",
+            "files_sha256": "cc1d1e8e3fb5170b83d83fc59d8dc2ceaf13c8b63c78642c51172683d29cc309",
+            "message": "Voice bridge: let Portal's voice screen hold the conversation"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007055523-2c24c2"
+}

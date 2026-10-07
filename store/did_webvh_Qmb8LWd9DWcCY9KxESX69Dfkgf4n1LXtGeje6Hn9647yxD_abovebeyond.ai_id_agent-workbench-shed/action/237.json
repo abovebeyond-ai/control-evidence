@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "04a8c18cca6c9548c440a1e7b0bf4717ee5cd379",
+            "branch": "workbench/fix/offered-cars-newest-first-and-blue-bids",
+            "files_sha256": "2dc547fc72ef960708378f45976f0aa157333161c12d5e20863812d8778c9595",
+            "message": "My offered cars: newest first again, Biedingen filled blue, car, bid and term side by side"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261006074928-db7548"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The pipeline is served under `/api/pipeline/` by nginx, which strips that prefix before the server checks the request. `systemRead()` signed the public path (`/api/pipeline/mix`) while the pipeline verified `/mix`, so every read was refused with \"the request's signature does not hold under #agent-workbench-shed\", although the mandate itself was accepted.\n\nThe signature now covers the path as the system sees it: the route passed in, normalised the way the server parses it. The system cannot know a proxy's prefix; the caller can.\n\nTried against production with the admitted 30-day read: `observatory.mjs mix source 7` answers (23,431 in, 6,223 kept, 86 cited over 7 days).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/read-sign-system-path",
+            "title": "Sign a system read over the path the system sees"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261006181805-abe287"
+}
