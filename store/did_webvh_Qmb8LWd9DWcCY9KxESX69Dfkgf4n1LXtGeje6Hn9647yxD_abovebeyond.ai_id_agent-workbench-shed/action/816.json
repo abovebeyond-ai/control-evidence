@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2  Area: site\nSummary: Create an Infrastructure page that explains regulated blockchains (what they are and why they differ), how ISBE and EBSI work, and what Bextrust does with them, positioning Bextrust as the way in. It replaces Networks and the ISBE NSP page.\n\n## What is asked\n- Opener: the current landing-page story (\"we are the gateway...\").\n- Then: regulated blockchains, then ISBE and EBSI, then Bextrust's role (\"what we solve\").\n- The technology Bextrust offers clients, including the trust model the team discussed.\n- The four current service types (node hosting, trust registry, BaaS, QEL) are folded in here as capabilities instead of being sold as services (see the Services issue).\n\n## Notes\n- ISBE is not qualified yet: no EU trust mark, careful wording on legal effect.\n- \"The only path\" needs care: say what is true about Bextrust's role as Belgian network service provider for ISBE, nothing broader.\n- Describe Bextrust's software as a public verifier and documented format, never as open source.\n- The trust-model content does not exist on the site yet; it needs input from the team.\n\nSource: Portal mail:6 (feedback on the website content, forwarded by the owner). The client asks for the owner's view first, so this is a proposal to agree on before building.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2",
+                "area:site"
+            ],
+            "title": "New Infrastructure page: regulated blockchains, ISBE and EBSI, and Bextrust's role"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261007123921-0e1c2b"
+}

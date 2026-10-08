@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5a2193550b3f326241d9ff391696ece864354d01",
+            "branch": "workbench/research-draft-kind",
+            "files_sha256": "1ded14eab5fea6f51282c462bb47d59a9c2f136b213aea920e4990ee1392b337",
+            "message": "studio.research_draft: a research brief on the Gentells pipeline, B2\n\nThe second action on a running system. One brief for Studio \u203a Write, ready for review:\ntitle and description required, context, sources (records) and status optional. The\npipeline verifies the record and the capability itself on /control/act and refuses a\ndraft that says approved."
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007084954-3c32b8"
+}

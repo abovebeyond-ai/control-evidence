@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`hand.mjs policy sign` signs the next version of the gateway's policy log on the owner's YubiKey, on the laptop, and hands it to Portal. Portal kept it only on `POST /api/ingest/control/policy`, which sits behind the ingest token. The laptop holds no Portal token since 5 October 2026, so the signed version could not be delivered: the same gap the working set had (#360).\n\n**`POST /api/ingest/policy-version` (new, no token, throttled 10 per minute)** goes to the same `PolicyLogController::store`. The token adds nothing:\n\n- `PolicyLog::check` verifies the signature against the owner's or Elixir's key in the DID document.\n- `keep` holds the chain to one direction: a version must name the hash before it, and an applied version stays.\n\nA delivery is recorded as via `laptop`, like a read-token delivery was. Elixir keeps using the fabric route.\n\nTests: `PolicyLogTest` passes 9 of 9. The new case: an owner-signed version is kept without a token, and a version signed by another key is refused.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/policy-no-token",
+            "title": "A policy version signed on the token is kept without a Portal token"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261008062458-0c0e86"
+}

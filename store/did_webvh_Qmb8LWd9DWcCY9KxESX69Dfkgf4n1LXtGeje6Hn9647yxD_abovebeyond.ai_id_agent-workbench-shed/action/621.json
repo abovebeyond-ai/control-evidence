@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What this does\n\nResearch drafts in Write. A research draft is a brief: what to find out, the context it came from, the sources mentioned. One of the owner's agents can set one out during a conversation (through the control gateway, see Trendwolves/gentells-pipeline#296), or an editor sets one out here. It waits on the desk until someone reviews it.\n\n- **On the desk** (`src/Research.jsx`, `ResearchShelf`): a Research section above the pieces, with what is ready for review first, then drafts, then what was approved and not yet started. Each row says where it came from (\"From a conversation\", or the editor) and when. \"Set out research\" starts one by hand. The list is asked again every minute and on return to the tab, so a brief set out while the Studio stands open shows up without a reload.\n- **One brief** (`ResearchEditor`, at `?mode=write&brief=<id>`): title, what to find out, context and sources, all editable; who set it out and when, who approved it, and the gateway run for an agent's draft. \"Approve\" (or \"Save and approve\" with unsaved edits, so the approval is for the words on screen), \"Dismiss\" and \"Reopen\", \"Take the approval back\", and on an approved brief \"Start a piece\", which opens the new piece.\n- **The piece it starts** opens on Discuss with the brief as its first message, and the desk partner says it starts from a research brief instead of from Ask (`greetingFor`). A user message in that chat now keeps its line breaks (`white-space: pre-wrap`), which also helps anything typed on several lines.\n- **Home**: the Write card notes how many briefs are ready for review.\n- Hooks in `src/hooks.js`: `useResearchDrafts`, `useResearchDraft`, `useResearchAction`.\n\nNothing here reaches gentells.com, and nothing is deleted.\n\n## Testing\n\n- `npm run build` passes (what CI checks).\n- Run against the pipeline branch on a local server with a temporary database, in a headless browser: signed in, three briefs set out through a simulated gateway call, each shown on the desk as ready for review, opened, edited, saved and approved in one step, a piece started from it (the brief as the first Discuss message, its graph source in Sources). No console errors.\n- This repo has no test suite; the behaviour is covered by the pipeline tests on the routes it calls.\n\nNeeds gentells-pipeline#296 merged first: without `/research-drafts` the section shows \"No research waiting\" and the home note stays away.\n",
+            "branch": "workbench/studio/research-drafts",
+            "title": "Research drafts in Write: review, edit, approve, start a piece"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261007083745-fe555d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two tests in `mcp/server.test.mjs` failed on main, on every machine, before and after the dependency round in #28.\n\n## Why they failed\n- `measure`, `playbook` and `task` stopped calling Portal directly when the writing doors moved to the control gateway (`lib/doors.mjs` `proposed()` calls `act` in `lib/hand.mjs`). The tests still faked `POST measure/hoet` and friends on Portal, so the real hand ran: it asked Portal for a capability through the fake `fetch`, got a 404, and the tools answered with that refusal instead of `\"queued\": true`.\n- The task test passed `state: 'bezig'`, which the tool's enum (`open`, `in-progress`, `parked`) rejects, so the answer was an MCP validation error rather than JSON.\n\n## The change\n- `lib/hand.mjs` is replaced in this test by a hand that records `{slug, kind, params}` and answers in the gateway's shape (`effect.detail`, or a thrown refusal). The tests now assert what reaches the gateway: `portal.measure` with `{only: 'site'}`, `portal.playbook` with `{playbook: 'elixir-fix'}`, `portal.task` with key, state and url.\n- The stub also means a test can never reach the real gateway, and it passes the same with or without `~/.config/control/hand.json` (it used to sign reads with the workbench key).\n- The Portal write routes left in the fake `fetch` are gone; the read routes stay.\n- `npm test` passes `--experimental-test-module-mocks` (Node 22.3 or later) for `mock.module`.\n\n## Checks\n- `npm test` in `mcp`: 12 of 12. `node --test lib/*.test.mjs`: 20 of 20.\n",
+            "branch": "workbench/test-mock-hand",
+            "title": "MCP tests: stub the gateway hand, two failing tests green"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007155008-02f1c4"
+}

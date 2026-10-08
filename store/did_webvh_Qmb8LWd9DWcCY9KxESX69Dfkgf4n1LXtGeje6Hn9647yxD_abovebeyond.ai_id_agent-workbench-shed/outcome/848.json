@@ -1,0 +1,16 @@
+{
+    "action": "806ffc134679c6c3480f51d0dc633a64",
+    "effect": {
+        "detail": {
+            "base": "f210b3b2d9d51d4fec194a54a23aaaf642e9cc71",
+            "branch": "workbench/evrim-structure",
+            "commit": "179d8e1c7dd8f6e21dd8103ab50e4dff4f9622c6",
+            "files": 21,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 846,
+    "verdict": "ALLOW"
+}

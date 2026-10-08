@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Dependency round of 2026-10-07: security fixes first, then the test runner to the same major as Portal.\n\n## Security\n- `laravel/framework` 13.25.0 to 13.35.0: closes the XSS in the debug page (fixed in 13.30.0). The constraint floor goes to `^13.35.0` so the lock can not fall back into that range.\n- `league/commonmark` 2.10.1 to 2.10.3: two high DoS advisories (GFM table scan, Attributes extension) and a `DisallowedRawHtml` bypass.\n- `league/flysystem` to 3.36.0: path normalizer bypass (low).\n- The Hiero SDK chain behind `control/anchor.mjs`: `@hiero-ledger/sdk` 2.87.0 to 2.89.1, plus `overrides`, because the SDK pins vulnerable versions exactly:\n  - `@grpc/grpc-js` to `^1.14.5` (high, unauthorized certificates reported as authorized),\n  - `ws` to `^8.22.0` (high, memory exhaustion; reached through `ethers`),\n  - `protobufjs` under `@hiero-ledger/proto` to `^8.6.6` (eleven advisories, code injection among them; the SDK itself already uses 8.6.6).\n  `npm audit` suggests going back to SDK 2.72.0 instead; that would be a downgrade, so it is not taken.\n- `shell-quote` (critical) and `source-map-js` (high) as in Portal: dev-only, `overrides` for `shell-quote`.\n- `composer audit` and `npm audit` now report nothing.\n\n## Updated\n- `phpunit/phpunit` 12.5 to 13.4 (major). Portal runs 13 already; no test or config change was needed and the run shows no deprecations.\n- `larastan` 3.12.3, `pint` 1.32.1, `mockery` 1.6.15, `pao` 1.1.5, `vite` 8.3.3, `concurrently` 10.\n\n## Checks run in the worktree\n- `pint --test`, `phpstan analyse`: pass. `php artisan test`: 720 of 720 pass. `npm run build`: pass.\n- Offline smoke test of the SDK with the overrides: build, freeze and sign a `TopicMessageSubmitTransaction`, then `Transaction.fromBytes` round-trip. It decodes to the same topic and message. Nothing was sent to Hedera.\n\n## Follow-up after merge\n- The first anchor run after deploy is the real test of the overridden gRPC and protobuf versions; check its record on the mirror node.\n- The box needs `npm ci --omit=dev` in `elixir-app` if the deploy does not run it.\n",
+            "branch": "workbench/dependency-updates",
+            "title": "Dependency round: security fixes, Hiero chain overrides, PHPUnit 13"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261007092757-8ec9ee"
+}

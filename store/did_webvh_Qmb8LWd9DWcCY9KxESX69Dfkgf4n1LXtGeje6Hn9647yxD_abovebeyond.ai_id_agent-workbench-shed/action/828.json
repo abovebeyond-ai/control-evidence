@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:6",
+            "note": "Issues #3-#10 filed in abovebeyond-ai/bextrust. The mail proposes a site restructure and asks for the owner's view: agree on the direction (5 sections, 3Vs, questionnaire CTA) and the starting point before any PR; billing framing, trust model and assessment owner need input from the team.",
+            "state": "parked"
+        },
+        "resource": "portal:bextrust"
+    },
+    "run": "workbench-20261007123937-12fac3"
+}

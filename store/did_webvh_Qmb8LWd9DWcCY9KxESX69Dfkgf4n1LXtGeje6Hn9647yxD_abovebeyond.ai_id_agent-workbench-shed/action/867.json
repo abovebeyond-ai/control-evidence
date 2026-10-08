@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "54606323f1e1a15b658efcb630f54cab31e28541",
+            "branch": "workbench/pipeline/studio-writing",
+            "files_sha256": "67708665470ffaa8ecc0a74854b650ef9fe3f70e4d2580a70fde0bc5b7852db3",
+            "message": "Studio chat writes in the piece: suggestions with checked sources, choices, formats, Sonnet 5.5\n\nPortal: The Studio's assistant now writes suggestions straight into the piece, with their sources, and a piece can be a post, an article or a pitch deck."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007150620-9d89c1"
+}

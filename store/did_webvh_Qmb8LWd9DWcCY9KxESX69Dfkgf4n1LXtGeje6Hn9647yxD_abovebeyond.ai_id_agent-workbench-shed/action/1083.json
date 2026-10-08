@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Stocklist's usage figures become readable for every agent on this machine, on the owner's read mandate (B1, 30 days): a session through the `systems` MCP server, the voice through `read_system`, and the shell through `stocklist.mjs read`.\n\n- `lib/stocklist-read.mjs`: asks the platform's own read tools (`/api/control/tools`, stocklistdealer-eu/platform), signed with `systemRead`. Keeps the last menu the platform served in `~/.cache/portal-cli/stocklist-tools.json`, with `mcp/stocklist-tools.json` as the bundled first menu.\n- `mcp/systems.mjs`: the platform's tools appear as `stocklist_usage`, `stocklist_measure`, `stocklist_traffic`, `stocklist_listings`, `stocklist_errors`, each saying it is a B1 read with aggregates only.\n- `voice/bridge.mjs`: `read_system` takes `system: \"stocklist\"` with the tool as command, and the instructions name what it reads and that searches are not counted.\n- `stocklist.mjs tools` and `stocklist.mjs read <tool> '<json>'`.\n- README: the tools, their arguments, and what a voice agent may be asked with the call behind it.\n\n## When something is out of reach\n\n- The menu is asked fresh at most fifteen seconds when the server starts; when the platform or the door to Portal does not answer, the kept menu stands in, so the tool names stay the same.\n- A call that cannot reach the box or the platform answers with what happened and that nothing was read or changed. A refusal (not admitted, an expired mandate, an unknown measure) is passed on as the platform or Portal said it.\n- Every own tool in `systems.mjs` now names its system, so that sentence says which one.\n\n## Tests\n\n`lib/stocklist-read.test.mjs` (the signed path, the kept menu, the snapshot, a hanging platform, out of reach told apart from refused) and four new cases in `mcp/systems.test.mjs`; all portal-cli tests pass. Checked by hand against the running server: the six Stocklist tools are listed, and a read before admission returns Portal's refusal as is.\n\nNeeds the platform PR (the read routes) and the Portal PR (`stocklist.read` for B1) to answer anything.\n",
+            "branch": "workbench/stocklist-reads",
+            "title": "Stocklist usage reads for sessions, the voice and the shell"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007170925-ad0c86"
+}

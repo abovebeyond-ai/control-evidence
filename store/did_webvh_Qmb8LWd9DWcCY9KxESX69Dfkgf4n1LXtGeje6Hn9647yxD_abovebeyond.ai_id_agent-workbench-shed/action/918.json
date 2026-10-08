@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The next part of the writing view: claims without a source in the margin, select to ask, and the version arrows.\n\n- **Claims without a source.** A sentence that states a quantity and has no source under it gets a wavy red underline, the only red on the sheet, and a note in the margin: the line, where it stands, and three ways to close it: look for evidence (asked in the conversation), mark as our view, cut it. The line under the piece says when publishing waits for one.\n- **Select to ask.** Select words in a paragraph or on a slide and an ask box opens there. The question goes to the conversation bound to that paragraph, shows in the chat as asked on it, and the answer lands as a suggestion on that paragraph, marked \"Asked here\".\n- **Version arrows.** Every suggestion carries \u2039 n of m \u203a: back to an earlier version, or, past the last one, a new version written for the same place. Each keeps its own sources; Accept takes the one shown.\n\n## Needs the pipeline, safe without it\n\nThe matching pipeline pull request serves the claims, the marking as our view, and the versions. Without it: no claims show (the summary has none), and the version arrows answer with an error toast instead of changing anything.\n\n## Checks\n\n`npm run build` and `npm test` on a fresh worktree from main. Tried in a browser against a local pipeline: a selected paragraph asked \"sharper, and less China-only\", answered as a suggestion with three sources; a second version; a claim underlined with its note.\n",
+            "branch": "workbench/studio/claims-ask-versions",
+            "title": "Studio: claims without a source in the margin, select to ask, version arrows"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261007152752-a4046d"
+}

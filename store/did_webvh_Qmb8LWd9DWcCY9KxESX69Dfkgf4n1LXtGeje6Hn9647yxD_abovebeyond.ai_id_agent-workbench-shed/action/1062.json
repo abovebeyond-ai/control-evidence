@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dd4601cd6465c19292eed3573f62c0ef95718308",
+            "branch": "workbench/control-reads",
+            "files_sha256": "a864e18d32be6ab2bb4d6687d380cb78a08aa1d87b984185688ca668f14720e5",
+            "message": "Let the owner's agents read usage figures on a read mandate"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261007170833-e82c00"
+}

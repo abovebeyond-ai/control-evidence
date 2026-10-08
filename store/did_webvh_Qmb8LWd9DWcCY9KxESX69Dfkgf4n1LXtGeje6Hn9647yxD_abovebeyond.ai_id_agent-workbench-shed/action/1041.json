@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d23265614b1a5f3d90911a937639bcc9e16ac882",
+            "branch": "workbench/trend-kinds",
+            "files_sha256": "20b59f6e82edfcad7d3a76e288b3e395fa9587314409786b5e9a3efabe11c3f7",
+            "message": "The workbench's grant names the two trend actions on the Gentells pipeline\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261007170336-95c4ca"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:6",
+            "note": "Issues #3-#10 filed; PR #11 restructures the site per Evrim (closes #3 #4 #7 #8 #9 #10, part of #5; #6 open)",
+            "state": "done",
+            "url": "https://github.com/abovebeyond-ai/bextrust/pull/11"
+        },
+        "resource": "portal:bextrust"
+    },
+    "run": "workbench-20261007125514-18d22d"
+}

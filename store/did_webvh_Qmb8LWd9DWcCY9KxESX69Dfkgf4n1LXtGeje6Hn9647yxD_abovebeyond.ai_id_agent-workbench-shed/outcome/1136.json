@@ -1,0 +1,16 @@
+{
+    "action": "692c2d87320e9a9e873be951bcbe2f0e",
+    "effect": {
+        "detail": {
+            "base": "6188ef3b2c658aefb488f425e0ea77d59d7687db",
+            "branch": "workbench/admit-on-yubikey",
+            "commit": "049278c034e1a5657494a166099c02019fe7f734",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1134,
+    "verdict": "ALLOW"
+}

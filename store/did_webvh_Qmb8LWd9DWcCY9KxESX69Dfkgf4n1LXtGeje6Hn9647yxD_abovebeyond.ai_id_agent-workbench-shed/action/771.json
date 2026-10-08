@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The monitor reported \"Curation proposals are piling up: 223 waiting for a human\", while the curation queue (`listShowcasePending`, now also the `curate_queue` tool) held none.\n\nCause: the monitor counted every insight with `showcase_status = 'proposed'`, including trends folded into another since then (`superseded_by` set). Most likely these date from the twin fold of 23 September 2026, when 144 trends turned out to be 48 ideas. A proposal on a folded trend waits for nobody, and the queue already leaves those out.\n\nThe monitor now counts what the queue shows: `superseded_by IS NULL`. The false alarm goes, and a real backlog still raises it at the same threshold.\n\nTests: `test/monitor*.test.mjs` passes 35 of 35. `assess` takes the count as input, so its cases are unchanged.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/monitor-live-proposals",
+            "title": "The monitor counts the proposals the queue shows, not those on folded trends"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007121751-2bb42d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The app could already sign a working set and a policy widening on the YubiKey over NFC (#373). Admitting a workbench on a project, including the 30-day read layer (B1), still meant a passkey (Portal signs) or `hand.mjs admit` at the laptop (the key signs). This adds the key-signed admission to the phone.\n\n**What changes**\n- `SignOnKey` offers a third thing to sign: `{\"what\": \"admission\", \"project\", \"for\": \"2h|today|read-30d|repair-today\", \"hand\": \"workbench-shed|workbench\"}`. The payload is the claims Portal would sign itself for that word (`Capability::claims`, split out of `issue()`), with `task.admission = {\"by\": \"yubikey\", \"via\": \"app\"}` and no `iss`.\n- On submit the token must be the offer exactly plus an operator `iss` (unchanged), then `OperatorKeys::check` and `WorkbenchAdmit::keepSigned`, the door `hand.mjs admit` already uses (moved out of `IngestController::workbenchAdmitted`). The workbench fetches the key's own signature, so the chain for that word ends at the YubiKey, not at Portal's key.\n- `GET /app/sign` names per project what it `admits` (reading and repairing only where the project names a running system with that layer) and the `hands`.\n- An offer is now kept for the session that asked for it: another session holding the id keeps nothing.\n- `not_what_was_asked` joins the names the app can report: the app refused an offer that differed from what the owner chose, before the PIN (portal-android, same branch name).\n- `WorkbenchAdmit::LAYER_FOR` and `seconds()` give the project page and the app one rule for how long a word stands.\n\n**Gateway:** no change. Operator issuers are verified through `principal_keys` (control v0.19.0); the Stocklist platform and the Gentells pipeline accept `#operator`/`#operator-2` on a read mandate.\n\n**Tests:** `AppAdmitOnKeyTest` (reading for 30 days kept as signed and for the chosen hand only; a period names what Portal would name; reading refused where no system is named; a widened word, a stranger key and another session keep nothing). Pint, PHPStan and the full suite pass locally (699/700; `BuildStampTest` fails only in a worktree).\n\nMerge before the app PR; the app hides the section until Portal names `hands`.\n",
+            "branch": "workbench/admit-on-yubikey",
+            "title": "Admit a workbench on the YubiKey from the app, reading for 30 days included"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261008062703-82438e"
+}

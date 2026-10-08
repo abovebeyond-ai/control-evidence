@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d219cd13c10d9e4f6790c16a8dab59844d5ca3cf",
+            "branch": "workbench/pipeline/research-drafts",
+            "files_sha256": "ed5edf00302022a790099ce06b7669f4d01d08a38ae628dbb1b735f169acd8db",
+            "message": "Research drafts: briefs an agent sets out through the gateway, reviewed in Studio\n\nA research draft holds a title, what to find out, context, sources and a status. The owner's\nagents set one out through the control gateway (POST /control/act, kind studio.research_draft,\nB2), verified here against the DID document like Stocklist's control endpoint; editors list,\nedit, approve, dismiss and start a piece from it on /research-drafts."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007083713-e83a8f"
+}

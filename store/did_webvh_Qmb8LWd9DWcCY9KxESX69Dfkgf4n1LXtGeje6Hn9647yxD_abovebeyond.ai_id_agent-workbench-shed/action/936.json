@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Text replies on the app's voice screen, and agent notices taken from the shared conversation.\n\n- **Text replies:** a switch under the call controls. The voice keeps listening but answers in writing, without sound (`session.update` to `output_modalities: ['text']`). It can be switched mid-call and is remembered by the app for the next call. Written answers show as \"written\" and are written down with `via: typed`. With it on, the typing box no longer promises an answer out loud.\n- **Notices:** \"Task started\" and the done or waiting lines come from the bridge's conversation, so every device shows them. The session no longer adds its own copy. The call notification still shows them.\n\nChecked: `assembleDebug` and `testDebugUnitTest` pass. The voice mockup shows the switch.\n\nGoes with portal-cli and Portal on `workbench/text-replies`.\n",
+            "branch": "workbench/text-replies",
+            "title": "Voice screen: text replies, notices from the shared conversation"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007152903-148cb7"
+}

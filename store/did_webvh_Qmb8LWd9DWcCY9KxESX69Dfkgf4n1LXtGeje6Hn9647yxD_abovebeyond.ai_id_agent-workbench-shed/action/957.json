@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1cd37be94139d0d08e6f91469986b0a6e5e51538",
+            "branch": "workbench/thread-extras",
+            "files_sha256": "626886f0485c9f2c5c8fa6f7d02222299d732f6f39d47d5701797a7eb9d2a934",
+            "message": "Voice: the conversation further back on request, the bridge's own page gone"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007154214-0e2a7e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "604688e1ae923963523397dc9fe584b59294c64c",
+            "branch": "workbench/admission-watch",
+            "files_sha256": "846a017b508fd85598bcc226a477bd13be943a823bef231140f7c034ed888cba",
+            "message": "Tell the agent that knocked when the owner admitted its project\n\nA knock carries the session's herdr name; admission-watch.mjs, on a 30-second user\ntimer, reads Portal's answered knocks and tells a free agent in herdr which project was\nadmitted, until when, and to carry on. A busy agent is told later, a gone one dropped."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007122249-82f096"
+}

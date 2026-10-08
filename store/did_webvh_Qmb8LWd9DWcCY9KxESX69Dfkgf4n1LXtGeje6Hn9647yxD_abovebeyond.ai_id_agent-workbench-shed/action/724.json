@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Security-only dependency update for the open `vuln:runtime` task (VULN_RUNTIME_CRITICAL). No application code changes.\n\n## What the critical advisory is\n\n`npm audit` on `main` reports three critical advisories in the root lockfile:\n\n| Package | Advisory | Runs on the site? | Fixed in |\n|---|---|---|---|\n| `astro` 4.16.19 | GHSA-26w7-cxv4-gfx2, RCE through AVIF image optimization (libheif in sharp) | yes, SSR function | astro 7.2.8 (three majors) |\n| `vitest` 2.1.9, `tinypool` 1.1.1 | GHSA-5xrq-8626-4rwp, GHSA-82fw-gwwq-j7x9, GHSA-5gmw-xhrv-c9v3, GHSA-85c8-ppgw-ccpr | no, test runner only | vitest 5 (major) |\n\n`studio/` has one more critical (`decompress`, via `@sanity/cli`), which is build tooling for the Sanity Studio and never deployed with the site.\n\nThe only runtime critical is the Astro one, and its vulnerable code is sharp's bundled libheif. The site uses no `astro:assets` images, but the build still injects Astro's `/_image` endpoint into the Netlify SSR function and ships sharp alongside it. No remote image domains are allowed and nobody can place an AVIF on the site's origin, so the path is hard to reach today; the library is deployed all the same.\n\n## What this changes\n\n- `overrides.sharp: 0.35.5`: sharp 0.33.5 to 0.35.5, libheif 1.23.5, which closes GHSA-rgj7-g3m4-5g8c (the libheif advisories behind GHSA-26w7) and GHSA-f88m-g3jw-g9cj / GHSA-wq5f-xc86-pv6w in libvips and librsvg.\n- In-range patches from `npm audit fix` (no `--force`): devalue 5.8.1 to 5.9.4, http-cache-semantics 4.2.0 to 4.3.0, js-yaml 4.2.0 to 4.3.2 and 3.14.2 to 3.15.2, source-map-js 1.2.1 to 1.2.2.\n\n## Checked\n\n- `npm test`: 35 tests pass.\n- `npm run check`: 0 errors, 0 warnings.\n- `npm run build`: passes; the prerendered `dist/` is byte-identical to a build of `main`. The SSR function now bundles sharp 0.35.5.\n- Astro 4's sharp service transforms a PNG and an AVIF to WebP with sharp 0.35.5 (sharp 0.35 needs Node 20.9 or newer; `netlify.toml` pins Node 20).\n\n## What this does not clear\n\nElixir judges by the installed `astro` version, so the `vuln:runtime` verdict will stay critical after this merges: only astro 7.2.8 or later carries the advisory's fix. That is a three-major upgrade (`output: 'hybrid'` is gone from Astro 5, the Netlify adapter moves to 8.x), which changes how the site renders and belongs in its own pull request with a visual check. The vitest and Studio criticals are dev tooling and also need majors.\n",
+            "branch": "workbench/vuln-runtime",
+            "title": "Patch sharp's libheif and the semver-safe advisories in the site's runtime"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261007120105-b72a32"
+}

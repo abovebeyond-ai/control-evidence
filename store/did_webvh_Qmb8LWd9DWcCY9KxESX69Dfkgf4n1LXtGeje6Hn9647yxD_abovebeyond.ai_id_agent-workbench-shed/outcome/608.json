@@ -1,0 +1,16 @@
+{
+    "action": "4af5496561f542f336e4dd7d48e53a8f",
+    "effect": {
+        "detail": {
+            "base": "c1fb4f0a62c30e626b3a9e104d1c16916bbb8963",
+            "branch": "workbench/mail-triage",
+            "commit": "afe8a97944b69d534b527e3937cb3ec3e1deda23",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 606,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Dependency round of 2026-10-07 for the MCP server.\n\n## Security\n- `@modelcontextprotocol/sdk` 1.30.0 to 1.32.1: high, the OAuth client could send credentials to an authorization server chosen by the MCP server (GHSA-6qxp-vccf-f47h).\n- Transitive, through the SDK's HTTP side: `proxy-addr` (critical, IP spoofing via IPv4-mapped IPv6), `ip-address` and `fast-uri` (moderate). `npm audit` now reports nothing.\n\n## Updated\n- `zod` 3.25 to 4.6 (major). The SDK accepts `^3.25 || ^4.0`, and the server only uses `z.string`, `z.enum`, `z.boolean` and `.optional()`, which did not change.\n- One visible difference: the tool input schemas no longer carry `\"additionalProperties\": false`. Validation of the arguments did not change (unknown keys were stripped before and still are); only the advertised JSON schema is looser.\n\n## Checks run in the worktree\n- Listed the tools over stdio before and after: same nine tools, same fields, only the line above differs.\n- `node --test lib/*.test.mjs`: 15 of 15 pass.\n- `mcp/server.test.mjs`: 10 of 12 pass. The two failures happen on main with the old dependencies too: the fetch mock returns no `json()` method, so `brief/measure/playbook` and `task` answer `r.json is not a function`. Not part of this change.\n\n## After merge\n- Run `npm ci` in `~/Projects/portal-cli/mcp` on both workbenches; the MCP server runs from that checkout.\n",
+            "branch": "workbench/dependency-updates",
+            "title": "MCP server: SDK 1.32.1 for its OAuth advisory, zod 4"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007092814-bfc510"
+}

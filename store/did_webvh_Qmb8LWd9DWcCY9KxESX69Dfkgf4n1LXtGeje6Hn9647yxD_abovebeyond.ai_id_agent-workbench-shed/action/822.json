@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: landing-feedback  Priority: P2  Area: site\nSummary: How we work is fine as it stands, but the billing lines for production services may mislead (now: \"A platform subscription with tiered writes and reads\" and \"A monthly operations retainer and a fee per verification\"). The client framed this differently in a dashboard document; align the page with that framing.\n\n## Open\n- The dashboard document is not in the repo; the wording has to come from it or from the team.\n\nSource: Portal mail:6 (feedback on the website content, forwarded by the owner). The client asks for the owner's view first, so this is a proposal to agree on before building.\n",
+            "labels": [
+                "mail",
+                "landing",
+                "priority:P2",
+                "area:site"
+            ],
+            "title": "How we work: reframe the billing lines for production services"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261007123927-eb6d72"
+}

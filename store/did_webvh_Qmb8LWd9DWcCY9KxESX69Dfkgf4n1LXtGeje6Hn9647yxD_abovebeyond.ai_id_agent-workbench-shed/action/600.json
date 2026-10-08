@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bcbcdd93b7e3b04e105ebafae39ceed17c6e1175",
+            "branch": "workbench/systems-mcp",
+            "files_sha256": "43dbcfe574b37e89679885c926b35b407a437112e407197f63fb81112aadce27",
+            "message": "The systems MCP: the owner's running systems as tools, each with its blast radius\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007074422-28db6d"
+}

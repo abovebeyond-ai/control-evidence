@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "62ef8420ecadeaebf6c3ac12d399fd6faeb3be03",
+            "branch": "workbench/scale-audit",
+            "files_sha256": "73d4edd16b3e49f59b36f063e6c564129103a3085ffa12dac8ec69f8e2d63b62",
+            "message": "Scale audit: per-client API limits and geocode cache behind flags, portal pivot index, bounded cURL calls"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261008063329-342726"
+}

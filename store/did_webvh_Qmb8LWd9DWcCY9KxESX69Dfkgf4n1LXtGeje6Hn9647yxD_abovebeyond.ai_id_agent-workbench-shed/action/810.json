@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2  Area: site\nSummary: Give the landing page one call to action that leads to a short self-assessment page: a few questions about the visitor's sector and how they verify claims today, answered with low-to-high sliders that work on a phone, ending in an offer to book a free 30-minute assessment.\n\n## What is asked\n- Questions, in the client's words: \"what is your sector\", \"how often do you need to verify the authenticity of a claim?\", \"How far do you trust your current way of verifying?\", \"how fast can you verify a claim\", \"how costly is that verification\", \"how would your business be affected if verification fails\". Possibly a few more about the type of business.\n- A slider from low to high under each question.\n- Closing offer, client's words: \"Book a free assessment. In 30 minutes, we map your current verification process and identify where you lose time, money or trust\".\n- The answers are kept so Bextrust can see which sectors respond most.\n\n## Open (needs a decision before building)\n- Where the answers are stored and who reads them; the privacy page has to say so.\n- How a booking reaches the team (calendar link, mail, form) and who takes the assessments.\n\nSource: Portal mail:6 (feedback on the website content, forwarded by the owner). The client asks for the owner's view first, so this is a proposal to agree on before building.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2",
+                "area:site"
+            ],
+            "title": "One call to action: a sector self-assessment with sliders, ending in a free 30-minute assessment"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261007123915-12514c"
+}

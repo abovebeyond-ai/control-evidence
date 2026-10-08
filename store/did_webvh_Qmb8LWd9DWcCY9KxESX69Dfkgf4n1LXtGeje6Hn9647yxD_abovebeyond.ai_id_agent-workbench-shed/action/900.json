@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The workbench runs several agents at once. On 7 October 2026 a Gradle build beside them helped bring it down.\n\nThis adds one rule to the workspace CLAUDE.md: a heavy job (a Gradle or Android build, a full test suite, `npm ci`, `composer install`) asks for its memory first, through `agents.mjs run --mb <MB> -- <command>` (portal-cli, separate PR).\n\n- No `-Xmx` of the agent's own for Gradle: `~/.gradle/gradle.properties` is the boundary.\n- During work, run the tests a change touches; the full suite once, before the proposal.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/heavy-jobs-lease",
+            "title": "Heavy jobs ask for memory first"
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261007152443-508d1a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The \"Claude (subscription)\" preset under Settings, Studio AI provider, set the Studio's writing chat (`content-chat`) to Haiku 4.5. The pipeline's default for that phase is now Sonnet 5.5 (pipeline #300), but a phase saved in Settings outranks the default, so a chat saved on Haiku stayed on Haiku with no way to move it: Sonnet 5.5 is not one of the per-tier buttons in the model list, and pressing the preset that was already selected did nothing.\n\n- The preset sets `content-chat` to `claude-sonnet-5-5` (headless, on the subscription, as before). Writing stays on Sonnet 5; tagging and evidence stay on Haiku 4.5.\n- A preset counts as selected only when everything it sets matches what is saved; otherwise pressing it applies it, even when its provider is already the current one. So pressing \"Claude (subscription)\" once moves a Haiku-saved chat to Sonnet 5.5.\n\nWhy Sonnet 5.5 for the chat: measured side by side on 7 October 2026 against a local copy of the Studio, it answered in 7 to 18 s against 10 to 38 s for Haiku 4.5, wrote with its sources when asked, offered picks as buttons every time, and kept to what the signals say where Haiku and Sonnet 5 both added details.\n\nChecks: `node bin/lint-ratchet.mjs` (level with the ceiling), `npm run build`, `npx playwright test` (30 passed) on a fresh worktree from main.\n",
+            "branch": "workbench/dash/studio-chat-sonnet-55",
+            "title": "Settings: the Claude preset puts the Studio chat on Sonnet 5.5, and can be pressed again to apply it"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261008053022-fec6cb"
+}

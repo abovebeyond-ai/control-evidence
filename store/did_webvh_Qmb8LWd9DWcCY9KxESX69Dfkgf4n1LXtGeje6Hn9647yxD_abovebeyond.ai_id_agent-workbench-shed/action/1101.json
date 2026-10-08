@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A source belongs to a piece once a sentence of it uses one, not before. Pieces with no text showed a column of sources, from three places that cited up front:\n\n- **A piece started from Ask** cited everything the conversation looked at (the tools' trail and quoted headlines). It now keeps them as material at hand: one line in the piece's chat says how many, with the list in `meta.material`. `POST /articles` answers `citedFromAsk: 0` and a new `materialFromAsk` count.\n- **A piece started from a research brief** cited the brief's graph sources. Same change: material at hand, in a chat line after the brief.\n- **The writing chat** gets that material in its context, with ids and a line on each (\"At hand, not cited yet\"), and cites one when a suggested sentence uses it, so it lands under its sentence on accept. A source the writer names in a message, as the Studio's starters now do (\"(insight ins-\u2026)\"), counts the same way.\n\n**Existing pieces, once, at deploy:** a piece with no text at all that already cites sources gets them back as material at hand (with the same chat line), never a published piece or a piece with any text. Every removed row is kept first in `article_evidence_moved_undo`, so the step can be read back or reversed row by row. It runs once (`runMigrationOnce('empty-pieces-sources-to-material-2026-10-08')`) and is guarded so a failure there cannot stop the server.\n\nSame trail, quotes and caps as before (`materialOf` in `ask-citations.mjs`; `citeConversation` stays for anything that still wants to cite).\n\n## Safe to merge alone\n\nThe Studio's matching change only stops its starters from citing; without it, a tapped starter still cites at once, as now.\n\n## Tests\n\n`node --test test/*.test.mjs`: 1087 of 1093 on a fresh worktree from main; the six that fail are `report-render`, which needs `pdftoppm` on the machine that ran them, and fail the same on main there. Changed: the research brief test (no evidence, material in the chat). New: a piece from Ask cites nothing and hands its material to the chat; the one-off move (empty piece moved and undoable, a piece with text and a published one untouched). Tried live against a local server: a starter named in the message, \"write the opening\", the suggestion arrived with the signals behind that insight and the piece cited nothing until it was accepted.\n",
+            "branch": "workbench/pipeline/sources-when-used",
+            "title": "A source belongs to a piece once a sentence uses it: Ask and briefs hand material, not citations"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261008054157-6f8117"
+}

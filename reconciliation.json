@@ -1,19 +1,19 @@
 {
-    "computed_at": "2026-10-07T07:34:19+00:00",
+    "computed_at": "2026-10-08T07:34:19+00:00",
     "window": {
-        "since": "2026-09-30T07:33:02+00:00",
+        "since": "2026-10-01T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
     "repositories": {
         "Hoet-design/cabrio-eyewear": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "Hoet-design/cabrio-eyewear-mirror": {
@@ -29,8 +29,8 @@
         },
         "Hoet-design/hoet-eyewear": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
                 "github": 1,
@@ -60,12 +60,12 @@
         },
         "ShaneDeconinck/good-governance": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "ShaneDeconinck/naviskore": {
@@ -74,7 +74,7 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 37,
+                "github": 7,
                 "gateway": 0
             }
         },
@@ -104,8 +104,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 58,
-                "gateway": 4
+                "github": 60,
+                "gateway": 14
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,7 +115,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 62,
+                "github": 54,
                 "gateway": 1
             }
         },
@@ -125,7 +125,7 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 3,
+                "github": 0,
                 "gateway": 0
             }
         },
@@ -135,18 +135,18 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 4,
-                "gateway": 3
+                "github": 6,
+                "gateway": 5
             }
         },
         "abovebeyond-ai/portal": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 30,
-                "gateway": 28
+                "github": 47,
+                "gateway": 45
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -156,18 +156,18 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/vera": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "kubo-global/afrodidact-website": {
@@ -196,8 +196,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 102,
-                "gateway": 7
+                "github": 83,
+                "gateway": 9
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -206,8 +206,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 3,
+                "gateway": 3
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -283,8 +283,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 34,
-                "gateway": 0
+                "github": 30,
+                "gateway": 1
             }
         },
         "Trendwolves/gentells-standard": {
@@ -305,8 +305,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 16,
-                "gateway": 0
+                "github": 19,
+                "gateway": 6
             }
         },
         "abovebeyond-ai/bextrust": {
@@ -316,8 +316,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 0
+                "github": 3,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/control": {
@@ -327,8 +327,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 11,
-                "gateway": 11
+                "github": 17,
+                "gateway": 17
             }
         },
         "abovebeyond-ai/control-verify-action": {
@@ -349,8 +349,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 8,
-                "gateway": 4
+                "github": 13,
+                "gateway": 9
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -371,8 +371,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 10,
+                "gateway": 10
             }
         },
         "abovebeyond-ai/portal-cli": {
@@ -382,8 +382,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 23,
-                "gateway": 17
+                "github": 43,
+                "gateway": 37
             }
         },
         "abovebeyond-ai/proof-of-control": {
@@ -448,8 +448,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 9,
-                "gateway": 7
+                "github": 10,
+                "gateway": 8
             }
         },
         "forge:abovebeyond": {
@@ -576,6 +576,9 @@
                 "github": 0,
                 "gateway": 0
             }
+        },
+        "observatory:pipeline": {
+            "skipped": "no token to read GitHub"
         },
         "portal:abovebeyond": {
             "skipped": "no token to read GitHub"
@@ -707,21 +710,20 @@
         }
     },
     "unexplained": [
-        "ShaneDeconinck/naviskore: 37 pulls on GitHub, 0 performed by the gateway",
+        "ShaneDeconinck/naviskore: 7 pulls on GitHub, 0 performed by the gateway",
         "ShaneDeconinck/shanedeconinck.be: 1 pulls on GitHub, 0 performed by the gateway",
-        "Trendwolves/gentells-pipeline: 58 pulls on GitHub, 4 performed by the gateway",
-        "Trendwolves/gentells-site: 62 pulls on GitHub, 1 performed by the gateway",
-        "Trendwolves/glk-transferor: 3 pulls on GitHub, 0 performed by the gateway",
-        "abovebeyond-ai/abovebeyond: 4 pulls on GitHub, 3 performed by the gateway",
-        "abovebeyond-ai/portal: 30 pulls on GitHub, 28 performed by the gateway",
-        "stocklistdealer-eu/platform: 102 pulls on GitHub, 7 performed by the gateway",
-        "Trendwolves/gentells-dashboard: 34 pulls on GitHub, 0 performed by the gateway",
+        "Trendwolves/gentells-pipeline: 60 pulls on GitHub, 14 performed by the gateway",
+        "Trendwolves/gentells-site: 54 pulls on GitHub, 1 performed by the gateway",
+        "abovebeyond-ai/abovebeyond: 6 pulls on GitHub, 5 performed by the gateway",
+        "abovebeyond-ai/portal: 47 pulls on GitHub, 45 performed by the gateway",
+        "stocklistdealer-eu/platform: 83 pulls on GitHub, 9 performed by the gateway",
+        "Trendwolves/gentells-dashboard: 30 pulls on GitHub, 1 performed by the gateway",
         "Trendwolves/gentells-standard: 6 pulls on GitHub, 1 performed by the gateway",
-        "Trendwolves/gentells-studio: 16 pulls on GitHub, 0 performed by the gateway",
-        "abovebeyond-ai/bextrust: 2 pulls on GitHub, 0 performed by the gateway",
-        "abovebeyond-ai/elixir: 8 pulls on GitHub, 4 performed by the gateway",
-        "abovebeyond-ai/portal-cli: 23 pulls on GitHub, 17 performed by the gateway",
-        "abovebeyond-ai/workspace: 9 pulls on GitHub, 7 performed by the gateway"
+        "Trendwolves/gentells-studio: 19 pulls on GitHub, 6 performed by the gateway",
+        "abovebeyond-ai/bextrust: 3 pulls on GitHub, 1 performed by the gateway",
+        "abovebeyond-ai/elixir: 13 pulls on GitHub, 9 performed by the gateway",
+        "abovebeyond-ai/portal-cli: 43 pulls on GitHub, 37 performed by the gateway",
+        "abovebeyond-ai/workspace: 10 pulls on GitHub, 8 performed by the gateway"
     ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind, counted across pages until the window closes (rows 10.3.2, 10.3.4)"
 }

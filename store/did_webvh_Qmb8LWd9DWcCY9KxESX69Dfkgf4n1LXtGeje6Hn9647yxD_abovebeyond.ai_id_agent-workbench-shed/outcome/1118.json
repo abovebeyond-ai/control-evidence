@@ -1,0 +1,16 @@
+{
+    "action": "a32c697d03b20f03ea44bf0d9df75057",
+    "effect": {
+        "detail": {
+            "base": "41b0562fd07928f0ba774eccbf138c13036c0d74",
+            "branch": "workbench/policy-no-token",
+            "commit": "d26d97cea7c32b5b7738ad2b7a6ee2a787d11582",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1116,
+    "verdict": "ALLOW"
+}

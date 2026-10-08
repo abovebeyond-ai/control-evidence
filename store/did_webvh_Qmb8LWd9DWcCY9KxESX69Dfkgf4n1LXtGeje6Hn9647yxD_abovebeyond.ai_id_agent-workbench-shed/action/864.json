@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The framework page still described reliability and governance thresholds the way the Agent Profiler did in February: a headline percentage, and bars of 80% for contained work up to 99%+ for irreversible work. The systems built on the framework since then work differently, and the page now says what they do.\n\n- **Reliability**: counted over judged outcomes only, and read as the lower bound of the confidence interval. Ten out of ten is a lower bound near 72% (`elixir-app/app/Elixir/Blast.php`, Wilson 95%).\n- **Governance thresholds**: a lower bound over a minimum of judged runs, rising with the blast radius. Above Beyond's own bars are given as an example (0.80 over ten for contained work up to 0.96 over eighty for regulated work, `Blast::threshold()`), with the note that each organisation sets its own. Irreversible work has no bar: no record earns it, so the action is made reversible first.\n- **Blast radius**: before anything acts alone, the undo has to be known: who reverses it, how and how long it takes (`Reversal::usable()`).\n- **Autonomy**: lost the way it is earned; one refuted outcome sends it back to approval (`Autonomy::earned()`).\n- **Control**: one new line, approval that scales with the blast radius (a read for a month, a repair for a day, per action above that, never for irreversible acts), from `control/docs/mandates.md`.\n- `data/pac.json`: version 2026-10-07, and the two `measure` fields follow the texts.\n\n`/framework/pac.json` now also carries each axis's `status`, so a reader such as the pac plugin can tell that Verifiability is framework-only.\n\nEnglish and Dutch both. Built with Hugo 0.155.2: `/framework/` shows the new line under Control, and `/framework/pac.json` carries the new version and measures.\n\nNot in this change: the 365-day window Elixir defines (Portal does not apply it yet, so the page does not claim it), and the B3 and B4 wording in `control/docs/mandates.md`, which differs from this scale and is a question for control.\n",
+            "branch": "workbench/pac-where-we-are",
+            "title": "Framework: reliability as a lower bound, bars per blast radius"
+        },
+        "resource": "abovebeyond-ai/trustedagentic.ai"
+    },
+    "run": "workbench-20261007131125-c4608b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two fixes for the Android app (abovebeyond-ai/portal-android), found on the owner's phone.\n\n**The passkey in the app.** Signing in from the app failed with Android's \"RP ID cannot be validated\": Play Services could not confirm that Portal trusts the app. `assetlinks.json` named the app under `delegate_permission/common.get_login_creds` only; Google's passkey guide gives `delegate_permission/common.handle_all_urls` beside it. `AndroidApps::assetLinks()` now names both, and `AndroidAppsTest` holds that.\n\n**Every list the app reads is a list.** `MobileScreens` handed some lists over as they came out of a sort or a filter, with their old keys (a project's measurements and its setup items, the systems' jobs, the workbench's other projects, among others); `json_encode` writes such a list as an object keyed \"3\", \"7\", which a reader of lists cannot take. Every list now leaves renumbered (`values()`). The app (portal-android 0.3.2) also reads such an object as a list and never crashes on an answer it cannot read, so this is the server keeping its side of the contract.\n\nTests: 663 of 664 pass; `BuildStampTest` fails in a worktree checkout without this change as well. PHPStan and Pint pass.\n",
+            "branch": "workbench/app-lists-renumbered",
+            "title": "Android app: both asset-link relations for the passkey, every list renumbered"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007073830-c3b0c6"
+}

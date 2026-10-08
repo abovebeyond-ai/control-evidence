@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c7ea5ac26129d750f3b5141b7cb26d03feabc612",
+            "branch": "workbench/app-workbench-refusals",
+            "files_sha256": "7dd05ecb7c3e970a5693095dd81e7bc382f9ebf447489e2d3b52a92972fac0c1",
+            "message": "App workbench: named refusals, ending the workbench on a project, ending the working set"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007091030-e83b99"
+}

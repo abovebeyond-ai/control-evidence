@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A scalability and code health audit of `main`, with the four fixes that were safe to make now. The full report, with the ranked list of what is not changed here, is in `docs/scalability-audit-2026-10.md`.\n\n## What changes\n\n1. **One API rate-limit bucket for everybody, split per client** (flag `api_limit_per_client`, off). The `api` limiter is `Limit::perMinute(500)` without `by()`, so every partner, every garage website on the public API, the control tools and every inbound `/webhook` share 500 requests a minute. With the flag on: 500 per credential (bearer token or public API key, hashed), a ceiling of 1500 per address, `/webhook` counted apart. Off is byte-for-byte the old behaviour.\n2. **Geocoding remembered** (flag `geocode_cache`, off). The website widget of a garage with a range filter asks Google for its own postcode on every page view. With the flag on, a found place is kept 30 days and an unknown one 10 minutes.\n3. **Index on `vehicle_portals`**, which has had no index or primary key since the original schema and is eager-loaded on every list page and in the partner API. Additive migration with `down()`.\n4. **Time limits on two cURL calls** that had none: the VWE VIN lookup (`CURLOPT_TIMEOUT => 0`) and `ErrorApi` in the exception path. A guard test keeps every cURL handle in `app/` bounded.\n\n## Measured (locally; production was not readable from the workbench)\n\n| | Before | After |\n|---|---|---|\n| Second API client after one website spent the minute | 50 of 50 refused | 0 of 50 refused (flag on) |\n| Widget, 30 page views, Google simulated at 150 ms | 30 Google calls, median 160 ms | 1 call, median 7 ms (flag on) |\n| Portal pivot read for one page, 600k rows | 61.6 ms, full scan of 599k rows | 0.1 ms, range of 75 rows |\n| Same at 60k rows | 5.9 ms | 0.1 ms |\n\n## Tests\n\nNew: `ApiLimitPerClientTest` (6), `GeocodeIsRememberedTest` (4, including the widget end to end), `EveryCurlCallHasATimeLimitTest` (fails on main with 2 offenders). Full suite locally: 3023 tests green, PHPStan clean, Pint clean on the new files.\n\n## After merging\n\nThe indexes build on deploy. On staging, set both flags to Everyone in Beheer > Functies and repeat the checks in the report; then production, `geocode_cache` first.\n\nStyling, refactors and performance work: no business rule changes, so `docs/bedrijfsregels` is untouched.\n",
+            "branch": "workbench/scale-audit",
+            "title": "Scale audit: per-client API limits and geocode cache behind flags, portal pivot index, bounded cURL calls"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261008063329-342726"
+}

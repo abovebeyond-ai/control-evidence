@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pins the gateway to v0.35.0, the release built from the tag on main after control#107: the gateway reads Portal's list of capabilities the owner ended before they expired, and refuses an action under one.\n\n`GATEWAY_SHA` is `control-gateway-linux-amd64` from the release's `SHA256SUMS`, checked against the downloaded binary.\n\nTo apply, after the merge: `git pull`, then `deploy/gcp/rehearse.sh upgrade`. The refusal only switches on once the carried configuration has the `revocations` block (elixir#237), carried over with `rehearse.sh config` and a reboot.\n",
+            "branch": "workbench/pin-v0.35.0",
+            "title": "The gateway runs v0.35.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007125325-f4fc47"
+}

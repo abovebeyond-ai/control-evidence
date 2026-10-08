@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A test from #300 read the model this machine's saved Settings pick for `content-chat`, not the default the code ships. On the pipeline box, a phase saved in Settings (`store/model-config.json`) outranks the default, so with the chat saved on Haiku there the test fails, and `bin/auto-deploy` keeps the previous commit and holds the round back. That would leave the box on the pipeline from before #300: the Studio then sends `format: deck` and nothing changes, which is what was seen live.\n\nThe test now checks `PHASE_DEFAULTS['content-chat']` (exported already), which is what #300 meant to pin. Checked both ways with a saved Haiku setting in `store/model-config.json`: the test on main fails, this one passes.\n\nAfter this lands and deploys: if Settings still saves Haiku for the Studio chat, the live chat keeps running on Haiku. Setting it to Sonnet 5.5 in the Observatory's Settings is what moves it.\n",
+            "branch": "workbench/pipeline/model-test-default",
+            "title": "Fix: the chat-model test read the box's saved Settings and held every deploy back"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007170933-1831ef"
+}

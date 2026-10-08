@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f204fdb49e9ba87381f00452200bf1e1b83e839b",
+            "branch": "workbench/dependency-updates",
+            "files_sha256": "1248bce98566ea6eb4c02b2b615b05d58a1d7eee66ce1d3568e98e9edd44f7fc",
+            "message": "Update the MCP SDK for its OAuth advisory, zod 4"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007092814-bfc510"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b7ab76dc3dfeea70f8c3bfae75d0e9f80a093342",
+            "branch": "workbench/dealeredge-acquisition-memo",
+            "files_sha256": "0bdd57669bc5d389b6c870362e2c63d8fd93a1cfdc3fafb95bf24fea22d77ce3",
+            "message": "Add the DealerEdge acquisition memo and its diligence checklist\n\nAn internal memo that turns the DealerEdge thesis into a plan for a possible\nacquisition of Stocklist Dealer: the core model, testable assumptions, risks,\ndata needs, phased diligence with gates, and an operating model that keeps\nthe deal apart from the existing Stocklist delivery work. It lives under\nstrategy/, outside src/ and public/, so the site never builds it."
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261007170356-d8236e"
+}

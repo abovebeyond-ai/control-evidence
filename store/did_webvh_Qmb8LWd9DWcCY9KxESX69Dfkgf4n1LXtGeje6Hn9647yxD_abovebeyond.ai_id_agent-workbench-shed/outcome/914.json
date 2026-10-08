@@ -1,0 +1,17 @@
+{
+    "action": "31067460c42cdb428b1fefd86ea8fe4e",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 301,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/301",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 912,
+    "verdict": "ALLOW"
+}

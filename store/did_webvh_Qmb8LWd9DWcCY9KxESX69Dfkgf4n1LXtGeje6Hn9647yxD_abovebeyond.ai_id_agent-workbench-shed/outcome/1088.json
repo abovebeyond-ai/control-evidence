@@ -1,0 +1,16 @@
+{
+    "action": "f4db2f9fe75f3cd0a5d77cdb4d4889f7",
+    "effect": {
+        "detail": {
+            "base": "3f96a68829b6d2baff55dbab5e88fd190e8b071d",
+            "branch": "workbench/profiler-illustration",
+            "commit": "75e43a5c6773f88dc9f995acce11b128951ca41d",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1086,
+    "verdict": "ALLOW"
+}

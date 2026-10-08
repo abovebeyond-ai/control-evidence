@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nAn internal strategy memo under `strategy/dealeredge/`, independent of any delivery project:\n\n- `README.md`: the DealerEdge model on one page, nine assumptions each with a test and a phase, eight risks, data needs with their source, an operating model with three separated roles (delivery, venture, transaction), a recommended deal shape, and diligence in five phases with a gate after each. Four Mermaid diagrams (levels, separation of roles, structure after closing, phases and gates).\n- `checklist.md`: one box per diligence item, by phase and workstream (commercial, legal, technical, product).\n- One line in the repo `README.md` pointing at `strategy/`.\n\n## Why it is shaped this way\n\nThe builder of Stocklist would also be the buyer, so the buyer knows the code and data better than the seller. The memo therefore sets one rule above the rest: every Stocklist figure in the diligence comes from the seller through a data room, and nothing known from delivery work is used or quoted. The memo contains no Stocklist revenue or usage figures for that reason. The technical review goes to an independent reviewer who reports to both sides.\n\n## Safety\n\nConfidential. `strategy/` sits outside `src/` and `public/`; `npm test` builds the site and nothing from it appears in `dist/`. Brand lint on the new files: 0 findings.\n\n## Checks\n\n- `npm test`: 22 pass, 0 fail, 1 skipped\n- `node scripts/brand-lint.mjs strategy README.md`: 0 findings\n",
+            "branch": "workbench/dealeredge-acquisition-memo",
+            "title": "DealerEdge acquisition memo and diligence checklist"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261007170356-d8236e"
+}

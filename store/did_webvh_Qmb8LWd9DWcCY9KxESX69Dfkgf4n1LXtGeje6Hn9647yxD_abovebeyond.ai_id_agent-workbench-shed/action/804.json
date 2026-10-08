@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: landing-feedback  Priority: P2  Area: site\nSummary: Reorder the site into five sections: landing page, Infrastructure, Services, How we work, News and insights. The current nav (Services, Verifiable AI, Networks, How we work, Blog) mixes product, technology and content, and a visitor cannot see the path from \"what is this\" to \"what can I buy\".\n\n## What is asked\n- Main sections in this order: landing page, Infrastructure, Services, How we work, News and insights.\n- \"Networks\" and the ISBE network service provider page become Infrastructure (see the Infrastructure issue).\n- \"Verifiable AI\" moves under Services (it becomes the volition example, see the Services issue).\n- \"Blog\" becomes News and insights.\n\n## Open\n- Whether the existing URLs stay (networks.html, blog.html) or get redirects.\n\nSource: Portal mail:6 (feedback on the website content, forwarded by the owner). The client asks for the owner's view first, so this is a proposal to agree on before building.\n",
+            "labels": [
+                "mail",
+                "landing",
+                "priority:P2",
+                "area:site"
+            ],
+            "title": "Reorder the site into landing, Infrastructure, Services, How we work, News and insights"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261007123903-440ca8"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The workbench screen now handles refusals, ending a word, and a session that ends in the middle of a touch. It reads Portal's new fields as optional, so it also runs against the Portal that is live now. The paired Portal proposal (same branch name) adds the routes and names.\n\n**A way out per refusal.** `PortalApi` raises `Refused(status, reason, message)` from Portal's `{\"message\", \"refused\"}`, and `Unreachable` when there is no answer at all. `api/WayOut.kt` maps each to one action that is shown under the sentence:\n\n| refusal | offered |\n|---|---|\n| `ask_again`, `signature` | Touch again |\n| `outside_working_set` | Admit for the rest of the day instead |\n| `working_set_ended` | Look again |\n| `no_passkey`, `key_unknown` | Open your keys in Portal |\n| `key_not_yours`, 401 | Sign in again |\n| `no_working_set` | a note: it needs the YubiKey, at the laptop for now |\n| no answer, 5xx | Try again (the same action) |\n\nA screen that fails to load gets a Retry action next to the pull-down.\n\n**Ending without a key.** A project with a word in force shows \"end now\", and a standing working set shows \"end the working set now\". Each asks once in place before it posts to `/app/workbench/revoke` or `/app/workbench/working-set/end`.\n\n**Kept across signing in.** If the session ends during a touch, the app keeps the duration and the selection. After the passkey sign-in, the workbench opens with the same projects ticked and says so. It does not repeat the touch on its own.\n\n**docs/protocol.md** documents the routes, the refusal names, what ending does and does not reach (a capability the hand already holds stands at the gateway until it expires, plus a sketch of a revocation list the gateway pulls the way it pulls its policy log), and the planned YubiKey-over-NFC signing (PIV Ed25519 through yubikit-android). Nothing of the NFC part is built.\n\nTests: `./gradlew testDebugUnitTest` passes. It now includes `WayOutTest` (refusal parsing and every mapping) and a screenshot of a refusal with its way out. `screens/workbench.json` is regenerated from Portal's `AppApiTest`.\n",
+            "branch": "workbench/gateway-flows",
+            "title": "Workbench: a way out of every refusal, ending a word, the touch kept across signing in"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007091105-db44cc"
+}

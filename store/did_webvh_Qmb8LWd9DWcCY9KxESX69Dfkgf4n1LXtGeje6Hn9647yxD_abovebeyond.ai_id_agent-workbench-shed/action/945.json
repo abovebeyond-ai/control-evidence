@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4e8ac1029135ef4c033e91e460f594c95f6bea6b",
+            "branch": "workbench/codeowners",
+            "files_sha256": "1db1041da9167c853bd82ce9e7e0abef246840492092fc78c15037c276343de8",
+            "message": "Ask the owner to review every pull request"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007153359-317e82"
+}

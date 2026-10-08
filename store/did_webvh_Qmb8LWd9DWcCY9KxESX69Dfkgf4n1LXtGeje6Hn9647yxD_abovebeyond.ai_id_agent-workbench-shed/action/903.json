@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e163731ca8b4170a465e3a608e34495223f375a4",
+            "branch": "workbench/memory-lease",
+            "files_sha256": "95073186fb0a93f1e61d186eae9bec4eaa2c7ab169030b6e06c8ec0fd812cbdd",
+            "message": "A heavy job takes a memory lease: it waits for room, runs, and gives it back\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007152515-c15ff5"
+}

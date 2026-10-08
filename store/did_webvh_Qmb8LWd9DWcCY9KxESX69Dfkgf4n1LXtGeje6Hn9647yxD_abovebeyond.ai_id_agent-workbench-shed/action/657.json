@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Android app's workbench screen could admit, but any refusal reached it as a bare sentence, and it had no way to withdraw a word. This gives the `/app` workbench routes what the app needs to offer a way out and to narrow.\n\n**Named refusals.** `App\\Support\\Refusal` is an `HttpException` that renders as `{\"message\", \"refused\"}` for JSON requests. The message is the same sentence as before, so `passkey.js` and the pages read it unchanged. Names used: `no_working_set`, `outside_working_set`, `working_set_ended`, `no_passkey`, `ask_again` (challenge gone), `key_unknown`, `key_not_yours`, `signature`. They replace the `abort` calls in `WorkbenchAdmit` and `PasskeyAssertion`, so the login gets them too.\n\n**Ending without a key.** Narrowing needs no key, the same as ending the working set:\n- `POST /app/workbench/revoke` `{\"projects\": [...]}` ends every word in force for both workbench hands on those projects (period, layer, single act). Vera's words are left alone. The sentence says that a capability the hand already fetched stands until it expires, because the gateway does not read revocations yet (see the app's `docs/protocol.md`).\n- `POST /app/workbench/working-set/end` is the JSON twin of `/portal/werkbank/working-set/end`. Both now call `WorkbenchAdmit::endSet()`.\n- `/app/workbench` rows carry `live`, plus `revoke` (only when some row is live) and `endSet` (only when a set stands). `/mobile/workbench` shows the same words, with `POST /portal/werkbank/revoke` behind its \"end now\", so the page and the app stay in step (the parity test holds).\n\n**Admit says what it did not do.** A project Portal could not issue a capability for is now named in `skipped` and no longer dropped silently, and `ok` is false when nothing was admitted.\n\nTests: `AppApiTest` covers every named refusal, revoke (both hands ended, another project and another hand untouched, 422 on an unknown slug, 401 without an owner) and ending the set (admissions under it end, a day admission stands). The full suite passes except `BuildStampTest`, which fails in a git worktree on main too. Pint is clean.\n\nPairs with the app proposal on abovebeyond-ai/portal-android (same branch name). The app keeps working against the current Portal: it reads the new fields as optional.\n",
+            "branch": "workbench/app-workbench-refusals",
+            "title": "App workbench: named refusals and ending a word without a key"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007091030-e83b99"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The owner's running systems as MCP tools for every agent on the workbench: step 1 of the command model in control `docs/mandates.md`, \"Commands, modelled on blast radius\".\n\n`mcp/systems.mjs` sits beside the Portal MCP and uses the same SDK. It is thin on purpose: the logic stays in the systems, and the permission stays in the owner's mandates and the gateway.\n\n**Reads (B1)** go straight to the system, on the owner's 30-day read mandate, signed with this machine's key (`systemRead`):\n\n- `observatory_status`, `observatory_mix` and `observatory_cost` are defined here.\n- `observatory_cohorts`, `observatory_signals` and `observatory_query` come from the pipeline itself (`/observatory/tools`), listed at start. A tool added on the pipeline appears here without a change on this side: the menu comes from the system, the permission does not.\n\n**A write (B2)** goes through the gateway (`systemAct`): `stocklist_photos_repair`, a dry run unless `apply`, and only while repairing is admitted for the day.\n\nEvery tool's description names its blast radius, so an agent knows beforehand whether the owner's word is needed. A refusal comes back as the system's or the gateway's own reason.\n\nTo register it after merge: `claude mcp add -s user systems -- node ~/Projects/portal-cli/mcp/systems.mjs`.\n\n**Tests**\n\n- `mcp/systems.test.mjs` (new) passes 2 of 2: every tool names its radius; an answer passes through, and a refusal comes back as its reason.\n- Tried live through an MCP client: seven tools listed. The pipeline answered \"Everything under control\" and counted 11,183 Gen Z signals over 30 days.\n- `mcp/server.test.mjs` (the Portal MCP) fails 2 cases on main already, unrelated to this change.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/systems-mcp",
+            "title": "The systems MCP: the owner's running systems as tools, each with its blast radius"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007074422-28db6d"
+}

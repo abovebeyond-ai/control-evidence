@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4e8ac1029135ef4c033e91e460f594c95f6bea6b",
+            "branch": "workbench/memory-watch",
+            "files_sha256": "38b797d0c040212741534c23483a295254d9c6acdaf9e8fb4ee22f73be79ffe8",
+            "message": "A memory watchdog: warn when the workbench runs low, stop the biggest heavy job when it runs out\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007153944-0643bb"
+}

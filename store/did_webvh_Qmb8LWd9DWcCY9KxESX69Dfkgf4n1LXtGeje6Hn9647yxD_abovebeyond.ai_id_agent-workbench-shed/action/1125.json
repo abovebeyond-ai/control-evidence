@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`keepPolicyVersion` posts the signed version to Portal's tokenless `POST /api/ingest/policy-version` (Portal, separate PR) instead of the ingest route that needs a token the laptop no longer holds. The signature is the proof; Portal checks it and the chain.\n\nThe same shape as `keepWorkingSet`. `hand.mjs policy sign` and `--resend` then work from the laptop.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/policy-no-token",
+            "title": "Deliver a signed policy version without a Portal token"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261008062513-ba1157"
+}

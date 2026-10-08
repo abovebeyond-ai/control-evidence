@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three parts of the writing view, merged on top of the deck work in #41.\n\n- **Versions.** A \"Versions\" link in the editor's bar opens the steps of the piece, newest first: the time, what happened, what changed in the sources and who, with Restore, which asks once and says when unsaved changes would go. \"Now\" on top says how many suggestions wait.\n- **The plan of a bigger step.** While the assistant looks into the Observatory, a small card says what is done, what is running and what comes next, with Stop, which ends the answer and changes nothing in the piece. Afterwards one quiet line under the answer says what it looked at.\n- **A calmer Write index.** One row on top (Yours / Team, Set out research, Start a piece). The research shelf shows only when a brief waits. The pieces are one list: the title, one line on what it is and how far it got (\"Draft for gentells.com, 7 sources\", \"Deck, Trendwolves\"), the date, and the author under Team only. A piece nobody wrote in says \"Nothing written yet\", and Start a piece reopens your blank one instead of adding another.\n- **The header at phone width** takes two rows, and the links out step aside, so the Write / Curate switch is no longer cut off.\n\nThe voice, the deck start and the slide controls from #41 are kept as they are.\n\n## Needs the pipeline, safe without it\n\nThe matching pipeline pull request serves the versions, the plan's steps and the desk's format column. Without it: Versions says there are none yet, no plan card shows (the answer streams as before), and the desk reads \"Untitled\" where it would say \"Nothing written yet\".\n\n## Checks\n\n`npm run build` and `npm test` (11 tests) on a fresh worktree from main. Tried in a browser against a local pipeline: Versions on a piece with two steps, a plan while the assistant compared two cohorts and searched the signals, the desk at desktop and phone width, and a deck with the microphone from #41.\n",
+            "branch": "workbench/studio/versions-plan-desk",
+            "title": "Studio: versions with Restore, the plan of a bigger step with Stop, a calmer Write index"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261007154827-091512"
+}

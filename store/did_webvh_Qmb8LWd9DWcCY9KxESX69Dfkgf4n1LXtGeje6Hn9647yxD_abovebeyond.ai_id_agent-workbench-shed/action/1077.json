@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0dcde666d3d00677379117a72d86e90e95672072",
+            "branch": "workbench/stocklist-reads",
+            "files_sha256": "8659e8a299636287bd09bd295e0ac6de260ac4010b204ea80496f619752faf48",
+            "message": "Read Stocklist's usage figures from a session, the voice and the shell"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007170925-ad0c86"
+}

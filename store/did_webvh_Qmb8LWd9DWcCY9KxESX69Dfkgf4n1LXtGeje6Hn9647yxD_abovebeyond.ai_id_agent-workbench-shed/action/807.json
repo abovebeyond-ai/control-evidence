@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: landing-feedback  Priority: P2  Area: site\nSummary: The landing page carries too much. It should state one easy message about what Bextrust does, with a sense of urgency and of what is lost without it, keep every other message short and point to the section that explains it, and stay simple on a phone.\n\n## What is asked\n- One central message. The proposal is to reuse the client's own text that now opens Services, verbatim: \"Your access point to trusted issuance, verification and records. We are the trust-enablement layer for our clients: the access point to regulated blockchain networks, the support to configure and assess your use case, and the tools to test it before production...\"\n- The rest of the current landing content (the \"we are the gateway\" story) moves to the Infrastructure page as its opener.\n- Short blocks with signposts to Infrastructure, Services, How we work.\n- A mobile-first, simple layout.\n- Reach beyond Belgium while keeping Belgium visible as the home base.\n\n## Notes\n- Copy written by the client stays verbatim; any new connecting lines are flagged as new copy in the PR.\n- ISBE is not qualified yet: the landing page makes no claim of an EU trust mark or of legal presumption.\n\nSource: Portal mail:6 (feedback on the website content, forwarded by the owner). The client asks for the owner's view first, so this is a proposal to agree on before building.\n",
+            "labels": [
+                "mail",
+                "landing",
+                "priority:P2",
+                "area:site"
+            ],
+            "title": "Landing page: one short central message with signposts, mobile-first"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261007123912-b3cd8b"
+}

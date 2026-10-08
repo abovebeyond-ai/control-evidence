@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On 7 October 2026 the workbench (16 threads, 11.4 GB for Linux) ran twenty Claude processes at once, and its load reached eighteen. They came from agents the voice started, agents for forwarded mail, sessions from the phone and by hand, and test runs beside them. The owner killed processes by hand. Each entrance had its own limit or none, while what matters is the total.\n\n**`lib/agents.mjs`, one governor for every entrance**\n\nRoom for a new agent is three things at once:\n\n- at most 6 agents working in herdr;\n- at most 16 Claude processes alive, whatever started them (a backstop);\n- at least 2 GB available after one more agent (700 MB per agent).\n\nAll three can be set: `AGENTS_WORKING`, `AGENTS_ALIVE`, `AGENTS_FREE_MB`, `AGENTS_PER_AGENT_MB`.\n\n`startOrQueue` starts an agent when there is room. Otherwise the task goes into one queue (`~/.local/state/workbench/queue.json`). Urgent tasks go first; a new task does not jump the queue otherwise.\n\n`tick`, run every minute by `systemd/agents-tick.timer`:\n\n- starts what waits while there is room, with a herdr notification;\n- closes finished agents that an entrance started (`voice-`, `mail-`, `queue-`) when places are short. Their conversation stays on disk (`claude --resume`).\n- never closes agents started by hand, or ones waiting for the owner.\n\n**Entrances**\n\n- `mail-intake.mjs` goes through the governor; its own `--max 3` is gone.\n- The voice's `start_task` goes through it too, with an `urgent` flag. The new `agent_queue` tool answers \"what waits?\". The persona tells the owner a task is queued in one sentence and carries on; an idea that is not a task yet is remembered as an idea.\n- `agents.mjs` shows what runs and what waits. `agents.mjs add \"<task>\" [--project] [--urgent]` adds a task by hand, and `agents.mjs tick` runs the step the timer runs.\n\n**After merge, on the workbench**\n\n```\nsystemctl --user enable --now agents-tick.timer\nsystemctl --user restart voice-bridge\n```\n\nThe timer and service unit files are linked like the others.\n\n**Tests**\n\n- `test/agents.test.mjs` passes 4 of 4: room is the smallest of the three; queue order puts urgent first, then the oldest; no queue jumping; sweep closes only finished governed agents.\n- Live: `agents.mjs` reads 2 working, 12 processes, 7.3 GB free, room for more.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/agent-governor",
+            "title": "One governor for every agent on the machine, and one queue for the rest"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007151752-efd9c9"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "95d609ef287ea9164cfe769e7c0ac598e0bd8cf2",
+            "branch": "workbench/pipeline/sources-when-used",
+            "files_sha256": "ab702143b7928b95808daa1e8619b4bc5086015a2281839b837d76a922a3c62f",
+            "message": "A source belongs to a piece once a sentence uses it, not before\n\nPortal: In the Studio a piece no longer starts with sources it does not use yet; they are cited as soon as the text uses them."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261008054157-6f8117"
+}

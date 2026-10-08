@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Documentation only: `docs/workbench-architecture/` describes how work travels from the workbench to a pull request, as it runs today, read from the code of control, portal, portal-cli, elixir and the Stocklist platform.\n\n## What is in it\n\n- `diagrams/01-overview.mmd`: every component, drawn inside its trust boundary (owner devices, the workbench, the Portal and Elixir box, the TDX gateway, GitHub, public identity and anchors, Stocklist on its own Forge server). Rendered as SVG and PNG.\n- `diagrams/02-propose.mmd`: one task becomes one run of two signed actions (`branch.push`, `pull.open`) and one pull request, including the knock and passkey admission when a project is not admitted.\n- `diagrams/03-failure-modes.mmd`: every place a proposal stops (stale base, Portal unreachable, not admitted, box or tunnel down, gateway halted with 503 FAIL_CLOSED, DENY, evidence check unable to fetch the DID) and what the agent sees. All stops are fail-closed; nothing falls back to a direct push or queues silently.\n- `diagrams/04-voice-task.mmd`: from a spoken request through `start_task`, the agent, admission-watch and the proposal, back to the `SPOKEN:` line and the memory consolidation.\n- `README.md`: the narrative per task (starting work, reading, proposing, admission, voice), the boundaries, a failure table with what to do, and a short Dutch read-aloud summary.\n- `examples/`: the propose command, the signed knock body, the evidence footer and what the check concludes from it, and the voice agent brief. Values are placeholders.\n\nThe page names one ambiguity explicitly: \"the box\" means the Portal and Elixir server in the workspace notes and `hand.mjs`, but Stocklist's own Forge server in the Stocklist notes. The overview draws them as separate boundaries.\n\nLeft out on purpose: IP addresses, token serials and key slots beyond the role names already in `scripts/README.md`, the topic id, mail intake and the Android NFC signing.\n\n## Checks\n\n`npm test` passes (22 pass, 1 skipped); the docs are not part of the build. Diagrams rendered with Mermaid 12 in headless Chromium on the paper ground of `globals.css`; the README gives the mermaid-cli command to regenerate them.\n",
+            "branch": "workbench/workbench-architecture",
+            "title": "Document the workbench workflow: diagrams, boundaries, failure modes"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261007170339-f4386a"
+}

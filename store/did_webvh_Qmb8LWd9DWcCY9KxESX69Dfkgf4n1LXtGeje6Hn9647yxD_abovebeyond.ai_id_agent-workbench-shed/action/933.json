@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "981a3f847d57f12f9a1d3a0894f5f379c6cee4e8",
+            "branch": "workbench/text-replies",
+            "files_sha256": "37af5ce2acec085588ef16d219f138afed6ee604a116c43c90ddea39ce57397c",
+            "message": "Voice screen: text replies, notices from the shared conversation"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007152903-148cb7"
+}

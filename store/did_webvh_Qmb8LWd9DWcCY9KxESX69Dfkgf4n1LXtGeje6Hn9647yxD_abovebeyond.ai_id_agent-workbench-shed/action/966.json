@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"Show earlier\" in the conversation (desk and phone): the turns before the last day, a page at a time, as far back as the workbench keeps transcripts (30 days). It is a quiet mono text action at the top of the list. Fetched turns stay through the regular refresh, the scroll position holds when they are added, and the action hides when there is nothing older.\n\nChecked: the suite (only the worktree-only `BuildStampTest` fails), Pint, PHPStan, one new test. In headless Chromium against a test bridge holding a conversation from three days ago: the action shows, a click adds the older turns under their own conversation heading, they stay after a refresh, and the action then hides.\n\nNeeds portal-cli's `/thread?before=` on the same branch name.\n",
+            "branch": "workbench/thread-extras",
+            "title": "Conversation: show earlier, a page at a time"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007154232-b4bfbe"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5d6393d63540803a87c130edf929925988f51ff5",
+            "branch": "workbench/studio/claims-ask-versions",
+            "files_sha256": "b7c6b759df9f3e5ada018c9c0a903aa583f2d1df105f3f52e402801bb215a4a1",
+            "message": "Studio: claims without a source in the margin, select to ask, version arrows\n\nPortal: In the Studio you can now select a paragraph and ask about it right there, flip between versions of a suggestion, and see which lines still need a source."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261007152752-a4046d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Elixir writes the gateway's configuration, which is carried over to the gateway. This adds one block to it:\n\n```json\n\"revocations\": {\"url\": \"https://portal.abovebeyond.ai/api/ingest/control/revoked\"}\n```\n\nWith it, the gateway reads Portal's list of capabilities the owner ended before they expired, and refuses an action under one (control#107, `cmd/gateway/revoked.go`; Portal serves the list since portal#375). Without the block, a gateway on v0.35.0 behaves as before. The block is always written: unlike `policy_log`, it needs nothing from the DID document, and it only takes away.\n\nIt takes effect at the next carry-over, together with the upgrade to v0.35.0.\n\nTest: `ControlPolicyLogTest` asserts the block in the written configuration. The full suite passes, 720 tests.\n",
+            "branch": "workbench/gateway-reads-revocations",
+            "title": "Gateway configuration: read the revoked capabilities from Portal"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261007125254-48ef78"
+}

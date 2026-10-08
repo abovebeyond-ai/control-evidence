@@ -1,0 +1,16 @@
+{
+    "action": "f606894f32e6ba4b209bf3d385f73ac4",
+    "effect": {
+        "detail": {
+            "base": "d24eaae13a8b883f06535d3212884343ef3d2226",
+            "branch": "workbench/policy-draft-via-box",
+            "commit": "22ecf47ac48d797c6e0b5a3f58d0249f549c1ee8",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1137,
+    "verdict": "ALLOW"
+}

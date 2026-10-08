@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "55ad2b5175145eaf03d19fed05a0cd5d83a322d9",
+            "branch": "workbench/heavy-jobs-lease",
+            "files_sha256": "5c915289d27108d13ec1b506de6ce26b7b47713b066f6ef4f3b6704ad8c1488b",
+            "message": "Heavy jobs ask for memory first\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261007152443-508d1a"
+}

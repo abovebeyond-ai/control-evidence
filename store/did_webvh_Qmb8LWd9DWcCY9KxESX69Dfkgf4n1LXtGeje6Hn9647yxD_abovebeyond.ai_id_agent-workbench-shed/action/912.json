@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two parts of the Studio's writing view on the server side: claims without a source, and versions of a suggestion.\n\n## Claims without a source\n\nA sentence that states a quantity (a number or a share, \"7 in 10\", \"half\", \"most\", \"nobody\") and has no source anchored under it is an open claim (`packages/core/claims.mjs`). Deterministic on purpose: interpretation is not flagged, because a margin full of notes on every sentence gets ignored. Bare years (\"since 2024\") are dates, not quantities.\n\n- The review summary (`reviewSummaryFor`) lists the open claims, so the Studio shows them in the margin while the piece is written.\n- The publish gate waits on open claims, but only for pieces that anchor their sources at all. Every piece written before anchoring existed has none, and would otherwise stop at once; those publish exactly as before.\n- `POST /articles/:id/claims/view {sentence, undo}` marks a sentence as the desk's own view, which closes it. Stored as `articles.views` (JSON, additive column). Author or admin only.\n\n## Versions of a suggestion\n\n- `POST /articles/:id/suggestions/:sid/version {n}` flips a pending suggestion to one of its versions.\n- `POST /articles/:id/suggestions/:sid/another {body}` writes a new version for the same paragraph or slide, a real alternative to the earlier ones, with its own sources checked as before. One `content-chat` call, about 13 s locally on Sonnet 5.5.\n- Accept takes the version shown, with that version's sources only.\n\n## Safe to merge alone\n\nEverything is additive. The Studio build now on the box does not call the new routes; it ignores the new `claims` fields in the summary. The matching Studio change is a separate pull request.\n\n## Tests\n\n`node --test test/*.test.mjs`: 1079 of 1085 on a fresh worktree from main; the six that fail are `report-render`, which needs `pdftoppm` on the machine that ran them, and fail the same on main there. New: `test/claims.test.mjs` (what counts as a claim, closing by anchor or by view, decks line by line, the gate for anchored and unanchored pieces) and version tests in `test/suggestions.test.mjs`. Tried end to end against a local server: a question asked on a selected paragraph, answered as a suggestion; a new version written for it; a claim marked as our view.\n",
+            "branch": "workbench/pipeline/claims-and-versions",
+            "title": "Claims without a source in the review and the gate; versions of a suggestion"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007152721-76d4db"
+}

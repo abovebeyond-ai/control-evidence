@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two curation actions an owner's agent can now ask for through the control gateway, on the existing `POST /control/act` (control-act.mjs: the gateway's record and the owner's mandate are checked here before anything runs). Both are B2: one trend, undone in one step.\n\n- **`observatory.trend_edit` {trend, field: headline|reading, text}** rewrites one trend's text through `updateRecord`.\n  - The text before is kept in `record_edits` (#299), and the answer names the edit to undo.\n  - It is refused for a trend folded into another, or for a text out of bounds (headline 160, reading 4000 characters).\n  - The edit is recorded as by `agent <hand> (<run>)`.\n- **`observatory.trend_site` {trend, action: approve|skip|hide}** goes through `decideShowcase`.\n  - The decision is logged in `showcase_decisions` (#297) as via `gateway`, with the status it had before.\n  - Approval still needs the trend's minimum of own observations.\n\nBoth notify the projection, so gentells.com follows.\n\nAlso needed: the gateway kinds (abovebeyond-ai/control), the repair layer in Portal, and the workbench grant in Elixir, each in a separate PR.\n\nTests: `test/control-act.test.mjs` passes 6 of 6. The new case covers a judged edit (with its trail and the agent named), a refused field, and a judged hide (logged via gateway). Related: `showcase` and `record-edits` pass 16 of 16.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/trend-actions",
+            "title": "Two actions through the gateway: edit a trend's text, put a trend on or off the site"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007155223-286767"
+}

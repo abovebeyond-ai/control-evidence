@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A cap on agents does not see what one agent starts. On 7 October 2026 an Android build was part of what brought the workbench down: a Gradle JVM of 2 GB, with a Kotlin daemon of 1 GB beside it.\n\n**`agents.mjs run --mb <MB> -- <command>`** (`lib/agents.mjs`, `runLeased`) runs a heavy job under a memory lease:\n\n- Before it starts, it waits until the memory Linux has available, minus what other leases reserved and have not yet taken, still leaves `LIMITS.freeMb` (2 GB) after its own share. It says why it waits, every few seconds, for up to 30 minutes.\n- Then it runs with the terminal attached.\n- The lease ends when the process exits, a crash included. A lease whose process is gone no longer counts.\n- A fresh lease counts against the room for 90 seconds. After that its memory shows in Linux's own figure, and counting it again would count it twice.\n\nTwo builds therefore never start into the same memory. The workspace CLAUDE.md asks every agent to run heavy jobs this way (separate PR in workspace). `~/.gradle/gradle.properties` on the workbench now caps Gradle at 1.5 GB, runs Kotlin in-process, and stops an idle daemon after 10 minutes.\n\n**Tests**\n\n- `test/agents.test.mjs` passes 5 of 5. The new case: a lease that has not settled counts, and a settled one does not.\n- Live: a small job runs under a lease; a job asking for more than exists waits and says why.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/memory-lease",
+            "title": "A heavy job takes a memory lease: it waits for room, runs, and gives it back"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007152515-c15ff5"
+}

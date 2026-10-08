@@ -1,0 +1,16 @@
+{
+    "action": "17bc3be3a3aa4422004e21904e7bbf32",
+    "effect": {
+        "detail": {
+            "base": "d3ea56dc15a6b4d553d0bc6828dfc3df563820b1",
+            "branch": "workbench/app-lists-renumbered",
+            "commit": "480ded29546499e9046924c3577b00c904c60555",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 594,
+    "verdict": "ALLOW"
+}

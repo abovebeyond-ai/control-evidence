@@ -1,0 +1,16 @@
+{
+    "action": "31dd7db8cfc4a2c8b283d481344bce7c",
+    "effect": {
+        "detail": {
+            "base": "aee590b72ac7994bf99aacede4fe97f42732b3e3",
+            "branch": "workbench/voice-activity",
+            "commit": "badf77dfe8c491c178356c2014b731c80ea03cc8",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 702,
+    "verdict": "ALLOW"
+}

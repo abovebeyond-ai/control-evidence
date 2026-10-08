@@ -1,0 +1,16 @@
+{
+    "action": "3066ebef789e042812cbb71b0dbc3731",
+    "effect": {
+        "detail": {
+            "base": "f745e5294184596f244de2016abdb9552c1652e2",
+            "branch": "workbench/app-sign-on-the-key",
+            "commit": "a6fa75bbe9de2ec4958fd749fb573f7afc4ddd82",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 684,
+    "verdict": "ALLOW"
+}

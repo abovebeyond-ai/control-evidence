@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Adds **Admit on the key** to *Sign on the YubiKey*: one workbench (at home or the laptop) on one project, for two hours, today, reading for 30 days, or repairing today, signed over NFC with the operator key in slot 9c. Needs Portal's matching PR (same branch name); until then the section stays hidden.\n\n**The offer is checked on the phone before the PIN** (`key/OfferCheck.kt`). A PIV slot signs any bytes and binds no origin, so the app holds Portal's offer against what the owner tapped: for an admission the project, the hand, the layer, an end no later than chosen, no `act`, read verbs only (`*.read`) on running systems only for a read word, and `aud` equal to the gateway under the app's own Portal (`PORTAL_URL` + `/elixir/control`); for a working set its projects, layer and days; for a policy its type. An offer that differs ends there, is said in words, and is reported as `not_what_was_asked`. A broken-into Portal can no longer put a wider word under the sentence on the screen.\n\nThe sentence for an admission is drawn from the payload: hand from `sub`, layer from `task.layer`, the end, and the verbs.\n\n**Docs:** `docs/yubikey.md` gains the admission exchange, a table of every check and what it stops (origin binding, phishing, step-up by PIN and tap), and the fallback (passkey, laptop, resend).\n\n**Tests:** `OfferCheckTest` (every widening refused by name), `SignFlowTest` (a differing offer never reaches the PIN; a read admission signed end to end; another Portal's gateway refused), screenshots for the choose screen, the admission PIN step and the refusal. 52 unit tests and lint pass. Not yet tried on a phone with a real key.\n",
+            "branch": "workbench/admit-on-yubikey",
+            "title": "Admit on the YubiKey over NFC, and check every offer before the PIN"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261008062734-d24c27"
+}

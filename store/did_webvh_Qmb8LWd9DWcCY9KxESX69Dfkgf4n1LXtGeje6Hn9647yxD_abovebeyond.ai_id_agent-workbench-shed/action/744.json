@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4dab642aeb1eba0acc876800bd8a247a14c251fd",
+            "branch": "workbench/typed-thread",
+            "files_sha256": "3b1fe39f72b2bbd7b691fe33c0a7e354bd6db99fc066ebe3ed9faa9e88b029ef",
+            "message": "Type to the workbench on the voice screen, one conversation with the voice"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007120632-5068d9"
+}

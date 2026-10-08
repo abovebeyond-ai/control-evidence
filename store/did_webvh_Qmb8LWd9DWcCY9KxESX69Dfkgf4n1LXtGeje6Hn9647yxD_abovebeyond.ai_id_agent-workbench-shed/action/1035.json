@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "835c5864676fee660cca6adbba9526a7f41f7410",
+            "branch": "workbench/trend-kinds-2",
+            "files_sha256": "eed79f37ff5fdb0da79fde9e5ecd40f125274867fd269f9449b624698e60dbd2",
+            "message": "Two kinds on the Gentells pipeline: a trend's text, a trend on the site\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007155639-843b62"
+}

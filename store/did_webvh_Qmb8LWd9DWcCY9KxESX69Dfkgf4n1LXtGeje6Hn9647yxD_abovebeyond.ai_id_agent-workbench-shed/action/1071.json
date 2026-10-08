@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Admitting \"read it, for 30 days\" on the Stocklist project now issues a read mandate for the platform: kind `stocklist.read` on `stocklist:platform`, layer B1, beside the existing photo repair (B2, for the day).\n\n- `Capability::SYSTEMS` gives `stocklist:platform` a B1 layer with `stocklist.read`; `KIND_LABELS` and `Grants::KIND_WORDS` say what it allows: the platform's usage figures and error rates, never a garage's name or anything about people.\n- The platform checks the mandate and the agent's signature itself (stocklistdealer-eu/platform, `ReadMandate`, separate PR); the gateway is not involved, so Elixir's grant does not change.\n- `ReadLayerTest` pins it: B1 on Stocklist names only `stocklist.read`, for 30 days, B2 only the repair, and the project page offers both.\n",
+            "branch": "workbench/stocklist-read-layer",
+            "title": "Stocklist: a read layer (B1) beside the photo repair"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007170904-b0fd90"
+}

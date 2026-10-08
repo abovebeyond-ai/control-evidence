@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Ending a word at Portal now reaches the gateway. A capability is a signed token that the gateway checks on its own (signature, audience, subject, expiry). So when the owner ended an admission at Portal (the app's \"end now\", ending the working set early, a newer word superseding an older one), only new tokens stopped. A token the hand already held kept acting until its expiry, which can be the end of a working set, up to a week. This closes open question 4 in `docs/working-set.md`.\n\n**How.** With `revocations.url` in the carried configuration, the gateway reads Portal's list of capabilities ended before they expired (`GET /api/ingest/control/revoked`, with the Portal token it already holds for the policy log). It reads the list once before serving and then every 30 seconds, in memory (`cmd/gateway/revoked.go`). After a capability verifies, `gateway.Config.Revoked` is asked about its `jti`. If the jti is listed, the action is refused and recorded: \"the owner ended this capability at <when>, before it expired\".\n\n**Why no signature on the list.** The list only takes away. A Portal that lies in it can stop work, which it can already do by issuing nothing, the same reason a narrowing of the policy needs no owner signature. A failed read keeps the last list, and an entry leaves only at its capability's own expiry, never because Portal was unreachable or left it out.\n\n**No restart, no new timer.** The list is not policy, so nothing is measured into RTMR3 and nothing restarts. Without `revocations` in the configuration, the gateway behaves exactly as before.\n\n**Limits.** Between the end at Portal and the next read, the token still acts: at most 30 seconds, or longer while Portal cannot be reached. After a restart the list is empty until the first read, which happens before the gateway serves.\n\nTests: `TestACapabilityTheOwnerEndedIsRefused` covers an ended capability refused and recorded while another under the same grant acts. `TestTheRevokedListHoldsUntilExpiry` covers the token, a failed read keeping the list, a list that leaves an entry out not restoring it, and expiry dropping it. `go test ./...` passes.\n\nNeeds abovebeyond-ai/portal (branch `workbench/revoked-capabilities`), which serves the list and names carried tokens after the word they carry. To take effect: a release with this change, and `\"revocations\": {\"url\": \"https://portal.abovebeyond.ai/api/ingest/control/revoked\"}` in the carried configuration, carried over as usual.\n",
+            "branch": "workbench/revoked-capabilities",
+            "title": "Refuse a capability the owner ended at Portal before it expired"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007122350-91a4ae"
+}

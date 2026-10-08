@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The voice could answer one turn more than once, and three agents finishing in the same look were said as three separate replies. This adds one turn lock that every side of the conversation answers through.\n\n## What changes\n\n- `voice/turn.mjs`: a small state machine. A turn opens on an owner line or on workbench notices (an agent done, an agent waiting for approval). While a turn is open nothing else asks the model for a reply; its final is accepted once, and a second final for the same turn (or for a stale turn) is refused. Then the next turn opens with everything that waited.\n- Notices are debounced (1.5 s window, restarted by each notice) and coalesced into one summary: one line per agent in its latest state, what waits for the owner first. An owner line that opens a turn takes waiting notices along, so they are answered in one reply.\n- Noise: a transcript with no letters or digits, only fillers (eh, uhm, hmm), or a stock subtitle line the recogniser writes on silence opens no turn, and `/transcript` no longer keeps it as something the owner said.\n- Bridge: written answers go through the lock (replaces the `writing`/`again` sets); `/changes` returns one entry per agent plus a `summary`; the timeline gets one event line per look instead of one per agent; `GET /turn.mjs` serves the module so Portal's voice page can use the same lock instead of a copy.\n\n`/changes` keeps its `changes` array, so Portal's page and the Android app work unchanged; they only stop receiving duplicates of the same agent within one look. Saying the summary in one reply on the phone needs the page and the app to use the lock; that follows in Portal (`resources/views/mobile/voice.blade.php`) once this is merged and the bridge restarted (`systemctl --user restart voice-bridge`).\n\n## Checks\n\n- `node --test voice/*.test.mjs`: 26 pass, 10 new in `voice/turn.test.mjs` (duplicate final refused, concurrent events, the coalesced summary text, debounce window, owner line taking notices along, release after failure, noise, reset).\n- Bridge started on a spare port with a scratch state dir: `/turn.mjs` served, `/changes` returns `{changes, summary, typed}`, a subtitle-credit transcript was dropped and \"doe maar\" kept.\n",
+            "branch": "workbench/voice-single-reply",
+            "title": "Voice: one reply per turn, notices said as one summary"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261008061354-1971a5"
+}

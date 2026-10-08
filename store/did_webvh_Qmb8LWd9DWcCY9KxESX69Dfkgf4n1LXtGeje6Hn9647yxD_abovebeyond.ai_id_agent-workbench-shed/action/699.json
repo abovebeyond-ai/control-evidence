@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The gateway runs v0.34.0: the release that knows `studio.research_draft` (#105), a research brief carried to the Gentells pipeline's `/control/act`.\n\n`startup.sh` pins v0.34.0 with the sha256 of `control-gateway-linux-amd64`, `50fe42c0dc88fcb8aeacbaf50abe1e3836374ef6e7a15fcbbcd896154e3cb669`. Checked against the release's `SHA256SUMS` and the downloaded asset; the binary carries the kind's name.\n\nAfter merging, from the laptop: `git pull`, then `deploy/gcp/rehearse.sh config <config.json>` with the configuration Elixir writes now (the grant with `observatory:pipeline` and its kind, and the pipeline's address under `systems`, elixir#235), then `deploy/gcp/rehearse.sh upgrade`, which carries the boot script and does the stop-and-start. `hand.mjs policy` should then show no draft waiting. If one waits, it is the same widening, to sign with `hand.mjs policy sign`.\n",
+            "branch": "workbench/pin-v0.34.0",
+            "title": "The gateway runs v0.34.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007103015-b3767d"
+}

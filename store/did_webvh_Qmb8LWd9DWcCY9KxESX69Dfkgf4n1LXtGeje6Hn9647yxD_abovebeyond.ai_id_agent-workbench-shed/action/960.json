@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two extras for the conversation the voice and typing share.\n\n- **Further back on request:** `GET /thread` now also says whether there is anything before the last day (`earlier`). `GET /thread?before=<ISO time>` returns the 60 turns before that time from the transcripts still kept (30 days), plus `more`. The day's timeline now holds only the last day's turns, even of a conversation whose file was touched today.\n- **The bridge's own page is gone:** `page.html` and `app.mjs` (manifest, service worker, icons) are removed. `/` redirects to Portal's voice screen (`VOICE_ORIGINS`' first origin plus `/mobile/voice`), so an old bookmark or home-screen icon still lands somewhere useful. The README says where to open the voice now.\n\nChecked: `node --test voice/*.test.mjs` (16 pass, 2 new; one test is now pinned to a fixed time). On a second bridge with a conversation from three days ago: `earlier` is true, `?before=` returns it, and `/` answers 302 to `/mobile/voice`.\n\nTakes effect after a restart of `voice-bridge.service`. Goes with Portal and portal-android on `workbench/thread-extras`.\n",
+            "branch": "workbench/thread-extras",
+            "title": "Voice: the conversation further back on request, the bridge's own page gone"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007154214-0e2a7e"
+}

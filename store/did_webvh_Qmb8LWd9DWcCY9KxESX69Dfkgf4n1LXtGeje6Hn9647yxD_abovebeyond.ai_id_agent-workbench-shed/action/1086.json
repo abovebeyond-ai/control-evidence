@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3f96a68829b6d2baff55dbab5e88fd190e8b071d",
+            "branch": "workbench/profiler-illustration",
+            "files_sha256": "5a1563cef5ab956fe2a0eeb61b21ca2e0243d4a0ca9080a439ac28088d65c7b6",
+            "message": "Agent Profiler 0.2.0: the framework as of 2026-10-07, for illustration only"
+        },
+        "resource": "abovebeyond-ai/trustedagentic.ai"
+    },
+    "run": "workbench-20261008052823-c25a1b"
+}

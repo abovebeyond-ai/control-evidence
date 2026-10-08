@@ -1,0 +1,16 @@
+{
+    "action": "db8a459c96ee13ccc5b7a843b3c472af",
+    "effect": {
+        "detail": {
+            "base": "cb77ce300ea68f2a33744a48b42fafcc934fd6de",
+            "branch": "workbench/studio/writing-in-conversation",
+            "commit": "2eb5bf552a7dee3d768382b2a6187a41c528aab9",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 885,
+    "verdict": "ALLOW"
+}

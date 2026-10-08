@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f4b792a33ad285a85a72f95c680a2dfacc6f3a4e",
+            "branch": "workbench/codeowners",
+            "files_sha256": "1db1041da9167c853bd82ce9e7e0abef246840492092fc78c15037c276343de8",
+            "message": "Ask the owner to review every pull request"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007153346-cac15e"
+}

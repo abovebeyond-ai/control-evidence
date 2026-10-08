@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "What the first install on the owner's phone found, fixed, and the plan for approvals.\n\n**Sign-in.** Every Credential Manager error is said under the button, never a crash (\"RP ID cannot be validated\" crashed the app until Portal named both asset-link relations, portal #366).\n\n**Reading Portal.** An answer the app cannot read is said on the screen and not kept, never a crash; PHP's numbered objects are read as the lists they are (portal #366 renumbers on its side too).\n\n**The voice.** It crashed every time it began connecting. Three causes, found from the phone's own crash reports:\n- WebRTC's network monitor needs `ACCESS_NETWORK_STATE` (and reads `ACCESS_WIFI_STATE`); without it the monitor threw on WebRTC's network thread, which aborts the process.\n- The audio module was released again after the factory had taken it, tearing the microphone down under its recording thread.\n- A WebRTC callback that let an error through (Kotlin's own check on an empty argument) aborts the process: every callback now takes empty arguments and runs guarded, and the conversation's coroutines end the conversation in words on an unexpected error.\n\n**Finding the next fault without a cable.** A crash leaves a note shown once on the next start: the Java exception, or Android's exit record for a native crash with the tombstone's telling lines and the app's own log lines (WebRTC's reason for an abort is there), with Copy.\n\n**Build.** The preview is unminified while the voice is confirmed on the phone (about 43 MB); minification returns with WebRTC's keep rules after. Version 0.3.8.\n\n**The plan for approvals** (`docs/approvals.md`): what works, what is missing, and four steps (layers and withdrawing; push with approval from a notification; one irreversible act with its parameters; the YubiKey over NFC), under control's rules: nothing approved by voice, every admission at a passkey or the token, withdrawing without a key, B2 never in a batch, B3 one act at a time.\n",
+            "branch": "workbench/read-numbered-lists",
+            "title": "First install: the voice connects, nothing crashes, and the plan for approvals"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007115854-77c128"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "8fff9923a82cbf3120121493d633d75f",
+    "effect": {
+        "detail": {
+            "base": "0a3f1a4cf7248f3a29c577807ef827c9c0846977",
+            "branch": "workbench/trend-kinds",
+            "commit": "f2f157d323f90026ee8315336136f00804c4bc09",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1023,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b238266ccddaa8405f7b5bec4100d20f9e5d9b77",
+            "branch": "workbench/dependency-updates",
+            "files_sha256": "001c90e6272f7aaaff77ea1e83d1e0f3672918cf732ed7c783e1bf8d70427695",
+            "message": "Update dependencies and close the open npm advisories"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007092735-7054f6"
+}

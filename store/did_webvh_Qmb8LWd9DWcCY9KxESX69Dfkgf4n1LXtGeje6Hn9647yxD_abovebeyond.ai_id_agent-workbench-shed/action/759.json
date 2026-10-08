@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Approving, skipping or hiding a trend for gentells.com is the most frequent curation act, and the queue is 223 deep. A decision overwrote `insights.showcase_status` and left no trace: nobody could say who took a trend off the site, or what it was before.\n\n**`showcase_decisions` (new table)**\n\n- Every `decideShowcase` writes one row: the trend, from status, to status, `by` and `via`. The update and its row commit together.\n- The curation mail records `by: 'curation mail', via: 'mail'`. The Studio's site mode records the signed-in person's email, `via: 'studio'`.\n- A refused decision (an invalid action, or approval with too few own observations) leaves no row.\n- `showcaseHistory(id)` reads it back. Deciding again is the undo; the history says what to go back to.\n\n**`curate_queue` (Observatory tool, read only)**\n\n- What waits for a yes: headline, the start of the reading, strength, own observations, `ready` (enough to approve under `siteMinObserved`), and earlier decisions.\n- It is in `TOOLS`/`HANDLERS`, so it reaches the Ask panel, the stdio MCP, and the owner's agents on their read mandate through `GET /observatory/tools`.\n- Deciding from an agent comes later, as a write through the control gateway.\n\n**`bin/observatory-mcp.mjs`** now awaits a tool's result. It stringified a promise before.\n\n**Tests**\n\n- New: the decision trace (from, to, by, via; a refused decision leaves none), and `curate_queue` (lists, flags `ready`, writes nothing).\n- `node --test test/*.test.mjs`: 1047 pass. The 6 report-render tests fail on the workbench only, because `pdftoppm` is missing there; the box and CI have it.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/curation-log",
+            "title": "Every showcase decision leaves a trace, and the queue is a read tool"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007121013-dfe425"
+}

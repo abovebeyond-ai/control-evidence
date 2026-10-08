@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What this does\n\nGives the Gentells pipeline a day layer (B2) beside its 30-day reads, with one kind: `studio.research_draft`, a research brief for Studio \u203a Write.\n\n- `Capability::SYSTEMS`: `observatory:pipeline` => `['B1' => ['observatory.read'], 'B2' => ['studio.research_draft']]`. A B2 capability on Signal Observatory names only that kind and that resource; the B1 one still names only the read.\n- `Capability::KIND_LABELS` and `Grants`: the sentence on the project page and in the grants overview (\"Writes to a live system\").\n\nOn the Signal Observatory project page the owner now sees the day admission next to reading, with the brief's sentence under it. The heading and the button still use the layer's generic word, \"Repair on \u2026 / admit repairs for today\". It reads oddly for a brief. Renaming the B2 layer's word is a separate choice and is not made here.\n\n## Testing\n\n- `php artisan test`: 665 passed. `RepairLayerTest` gains a test for the pipeline's two layers. Three `ReadLayerTest` assertions said the Observatory has no B2 layer; they now say what is true: the day layer holds the brief only, the read layer holds no write, and Stocklist's repair never appears on the Observatory's page.\n- Pint and PHPStan pass.\n## The chain, and the order to merge it\n\nA research brief set out by voice runs: voice bridge \u2192 `research.mjs` (portal-cli) \u2192 Portal capability for the B2 layer \u2192 gateway (control) judges it against the grant (Elixir) \u2192 `POST /control/act` on the pipeline \u2192 Studio \u203a Write.\n\n1. Trendwolves/gentells-pipeline#296: the receiving end, `/control/act` and the store.\n2. Trendwolves/gentells-studio#38: the desk where the brief is reviewed.\n3. abovebeyond-ai/control#105: the kind and its schema. Then a release (`v0.34.0` tag), the pin in `deploy/gcp/startup.sh` (a follow-up PR once the release digest exists), and a stop-and-start of the VM.\n4. abovebeyond-ai/elixir#235: the system and its kind in the grant, and the pipeline's address. Then the gateway configuration handover (`scp` config.json, `rehearse.sh config`, `rehearse.sh reboot`), which can go together with step 3's restart.\n5. abovebeyond-ai/portal: the B2 layer on the Gentells pipeline, so it can be admitted for the day.\n6. abovebeyond-ai/portal-cli: the voice tool, the systems tool and the CLI. Restart `voice-bridge.service` on the workbench after it lands.\n\nEach step is harmless on its own: until the next one is in, a call is refused with a reason, and nothing is written.\n",
+            "branch": "workbench/observatory-day-layer",
+            "title": "The Gentells pipeline's day layer: one research brief for the Studio"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007085041-86ed22"
+}

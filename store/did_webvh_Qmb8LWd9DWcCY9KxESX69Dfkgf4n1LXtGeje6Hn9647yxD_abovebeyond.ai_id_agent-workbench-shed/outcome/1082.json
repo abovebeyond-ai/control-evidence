@@ -1,0 +1,16 @@
+{
+    "action": "d9707733b046e23c43cbf16785ca5e4f",
+    "effect": {
+        "detail": {
+            "base": "0dcde666d3d00677379117a72d86e90e95672072",
+            "branch": "workbench/stocklist-reads",
+            "commit": "106aef153ecbb4d8bc2ac3ba0a587e87a1aa19c7",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1077,
+    "verdict": "ALLOW"
+}

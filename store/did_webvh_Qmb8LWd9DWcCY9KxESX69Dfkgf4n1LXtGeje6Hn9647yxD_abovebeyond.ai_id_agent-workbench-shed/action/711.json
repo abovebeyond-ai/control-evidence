@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A thread started by voice on the road could not be found at the desk: Portal had no view of the voice's conversations or of the agents they started, and the voice had no view of what was continued by typing.\n\nThis adds **Activity**: a page in the wide navigation (`/portal/activity`) and the same list under the phone's voice screen (`/mobile/voice`). Both render `partials/activity.blade.php`, which fetches the list from the voice bridge on the workbench (`GET /activity`, see the portal-cli PR) in the owner's browser over the tailnet, the same way the voice page already talks to the bridge. Portal serves the page and stores none of it: conversation summaries and agent transcripts stay on the workbench.\n\nEach row: what it is (a conversation, an agent, a task, a mail, something waiting), its status, project and last update. Opening a row shows the summary or the agent's last spoken line and task, what is still open, the link to continue the session in the Claude app and the proposed pull requests (the newest three, the rest counted). A conversation links to the agents it started and each agent back to its conversation. What waits for the owner comes first with a warm edge; work in progress has the accent edge. Refreshes every 30 seconds while visible, at once when the page comes back into view, and when the voice on the same screen hears an agent finish. If the workbench is out of reach the page says so instead of showing an empty list.\n\nEverything from the workbench is drawn with `textContent`; only `https:` links are made clickable. English source, Dutch in `lang/nl.json`.\n\n**Checks:** Pint, PHPStan and the suite pass (674 tests; only `BuildStampTest` fails, as always in a worktree). Rendered both pages in headless Chromium at 1280 and 400 px against the live list from a bridge on this branch: 24 rows, no console errors, following a conversation to its agent opens that row.\n\nThe Android app can read the same `GET /activity` from the bridge it already knows from `/app/voice`; that screen is not part of this change.\n",
+            "branch": "workbench/voice-activity",
+            "title": "Activity: voice conversations and agent work in one list, desk and phone"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007114438-36f74c"
+}

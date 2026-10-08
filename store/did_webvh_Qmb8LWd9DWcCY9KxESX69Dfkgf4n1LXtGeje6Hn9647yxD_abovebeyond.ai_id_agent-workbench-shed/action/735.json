@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Typing joins the voice's conversation. Portal (desk and phone) and the Android app can now type to the workbench, and spoken and typed lines end up in one transcript and one timeline.\n\n- `POST /say {text, conversation?, held?}` adds a typed line (`via: typed`) to the open conversation, which is the newest one that is not summarised and has not been quiet for ten minutes. A voice that starts joins that same conversation, and its instructions carry what has been said so far.\n- While a voice is live (it calls `/changes?conversation=` every eight seconds), a line typed elsewhere is handed to it there and it answers out loud. `held` means the sender holds that voice and passes the line on itself. If the voice stops checking in, the bridge answers in writing after 20 seconds, so a line is never lost.\n- With no voice live, the bridge answers in writing. It uses the same realtime model, persona and actions, over a text-only realtime WebSocket (`voice/thread.mjs`, `answer()`). The workbench key is scoped to realtime: it gets `Missing scopes: api.responses.write` on the Responses API, so the realtime model is the one it can use.\n- `GET /thread` returns the timeline every device shows: the last day's turns across conversations, and whether a voice is live or a written answer is coming.\n- The consolidation marks typed turns `(getypt)`.\n- Online only: nothing is queued on a device.\n\nChecked: `node --test voice/*.test.mjs` (14 pass, 6 new). On a second bridge on the workbench with its own state folder: a typed line got a written answer that called `list_projects`; a line typed while a voice was live came back in that voice's `/changes`; a POST from another origin was refused.\n\nGoes with the Portal and portal-android pull requests on branch `workbench/typed-thread`. Takes effect after a restart of `voice-bridge.service`.\n",
+            "branch": "workbench/typed-thread",
+            "title": "Voice: typed lines join the conversation, one timeline for every device"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007120539-e31621"
+}

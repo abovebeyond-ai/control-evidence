@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c1fb4f0a62c30e626b3a9e104d1c16916bbb8963",
+            "branch": "workbench/mail-triage",
+            "files_sha256": "3b47b7e2e56ebf32157b159564abe8a83d791a32ebe736330ef12b5d65cce0e8",
+            "message": "Mail triage: a category, priority, labels and summary on every issue from forwarded mail\n\nmail-triage.json holds a default and per project what differs; bextrust is the first\nentry, with its repository, landing feedback as a category and the site's areas.\nmail-intake puts the rule into the session's task and the labels on hand.mjs issue."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007082550-1577cf"
+}

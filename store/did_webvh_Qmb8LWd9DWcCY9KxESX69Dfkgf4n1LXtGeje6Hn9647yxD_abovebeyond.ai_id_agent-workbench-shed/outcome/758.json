@@ -1,0 +1,16 @@
+{
+    "action": "b03108e3daa0d6040eafdbb9a9756755",
+    "effect": {
+        "detail": {
+            "base": "054013b28d8f45d4351d9545b8b0ff36f12aecb7",
+            "branch": "workbench/curation-log",
+            "commit": "d542e62848b5e1ed77cf51057b4646fdf8501745",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 756,
+    "verdict": "ALLOW"
+}

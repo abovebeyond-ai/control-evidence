@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #42. `hand.mjs policy sign` on the laptop first reads the draft from Portal, and that read needs a Portal token too. On 8 October it stopped with \"No way to Portal: no token\" before anything was signed.\n\n`policyDraft()` now reads the draft through the box when this machine holds no token and is not a hand that signs its own reads. That is the laptop's case. It goes the way the laptop already reaches the gateway: over ssh with the owner's key, running curl on the box with Elixir's Portal token (`/home/elixir/elixir-secrets/portal-token`). The draft route admits fabric. The token is read on the box and never leaves it.\n\nThe workbench (token-less, but a hand that signs its reads) and any machine with a token keep the Portal route.\n\n**Not tested end to end:** from the workbench the box offers only the door, not a shell, so the token path follows Elixir's config (`elixir.portal_token_file` in the secrets directory) and is not observed. If it differs, the error names what the box answered.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/policy-draft-via-box",
+            "title": "Read the policy draft through the box when the laptop holds no token"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261008062755-f29708"
+}

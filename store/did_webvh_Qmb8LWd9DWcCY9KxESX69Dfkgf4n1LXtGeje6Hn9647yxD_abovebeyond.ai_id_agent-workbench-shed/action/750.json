@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3c321ef2370f21d8ad4bc7ee1bd1c06acbe97a2c",
+            "branch": "workbench/app-sign-on-the-key-2",
+            "files_sha256": "7b110727f9fe6d07c7cc0aa8c96f665f2400716f6752793b31328911a46e82e4",
+            "message": "Sign on the YubiKey from the app: offer, check, keep, and a trail of every step"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007120939-16dd7d"
+}

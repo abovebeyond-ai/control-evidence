@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "20be926ee6d44c9b218bccafd9c3cb1b60210f32",
+            "branch": "workbench/pipeline/model-test-default",
+            "files_sha256": "49e9637359c6e145820ed387526f22c0ce159d1ab2c6d32669291565e15f1930",
+            "message": "The chat-model test checks the shipped default, not this machine's saved Settings"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007170933-1831ef"
+}

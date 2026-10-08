@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d24eaae13a8b883f06535d3212884343ef3d2226",
+            "branch": "workbench/policy-draft-via-box",
+            "files_sha256": "d4587036f8c032433d8296c4da879f16f29e83461a37af0c24a7865b845a85bd",
+            "message": "Read the policy draft through the box when the laptop holds no token\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261008062755-f29708"
+}

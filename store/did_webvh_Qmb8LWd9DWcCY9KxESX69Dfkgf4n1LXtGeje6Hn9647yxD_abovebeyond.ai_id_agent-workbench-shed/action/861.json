@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2afa6264466b67ddb75f1a591b15115ddcdccc31",
+            "branch": "workbench/pac-where-we-are",
+            "files_sha256": "64b4ad7aa7bd4c4150791026eb24d559103d1fbc64ebcc552d64309759414c8e",
+            "message": "Framework: reliability as a lower bound, bars per blast radius, approval that scales with it"
+        },
+        "resource": "abovebeyond-ai/trustedagentic.ai"
+    },
+    "run": "workbench-20261007131125-c4608b"
+}

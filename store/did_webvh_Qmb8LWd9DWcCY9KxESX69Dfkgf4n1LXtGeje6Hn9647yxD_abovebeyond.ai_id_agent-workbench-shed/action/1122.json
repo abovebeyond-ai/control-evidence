@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d393b6e4e7dc16c207cbf0b2b02600467c6d571f",
+            "branch": "workbench/policy-no-token",
+            "files_sha256": "a21cfcdd89be36f1207a97334a9262bc91170d3bfee575327ce37a556dc3777d",
+            "message": "Deliver a signed policy version without a Portal token\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261008062513-ba1157"
+}

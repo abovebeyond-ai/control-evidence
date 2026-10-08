@@ -1,0 +1,16 @@
+{
+    "action": "64eb9672b2bb5757f5c677881da6fdb3",
+    "effect": {
+        "detail": {
+            "base": "4e8ac1029135ef4c033e91e460f594c95f6bea6b",
+            "branch": "workbench/memory-watch",
+            "commit": "a7d2e88cb96c9b446331470967fedaccbbc58546",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 951,
+    "verdict": "ALLOW"
+}

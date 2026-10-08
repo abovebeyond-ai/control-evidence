@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "054013b28d8f45d4351d9545b8b0ff36f12aecb7",
+            "branch": "workbench/curation-log",
+            "files_sha256": "78941702f0b58f07a3ea36cd700c4527be19086488d6aad0302461567f4dc71c",
+            "message": "Every showcase decision leaves a trace, and the queue is a read tool\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007121013-dfe425"
+}

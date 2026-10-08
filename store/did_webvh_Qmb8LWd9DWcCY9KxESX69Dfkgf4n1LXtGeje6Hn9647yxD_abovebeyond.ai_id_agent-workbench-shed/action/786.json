@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2850b6993828f915288a9bb9cb2af3579304ba20",
+            "branch": "workbench/revoked-capabilities",
+            "files_sha256": "03ac4e33ada32cbb72690b3e8e6c59cf34339efb4b0fddc87b6148202f24f2e4",
+            "message": "The gateway refuses a capability the owner ended at Portal before it expired"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007122350-91a4ae"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "6d89615a68b1eba14ca022390e82b225",
+    "effect": {
+        "detail": {
+            "base": "cb4fef6946926663bcdcd8a5e6448861b9794e0d",
+            "branch": "workbench/gateway-flows",
+            "commit": "0ae5c7a4e84bb30f5867dde700ea4fc3264ac43d",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 660,
+    "verdict": "ALLOW"
+}

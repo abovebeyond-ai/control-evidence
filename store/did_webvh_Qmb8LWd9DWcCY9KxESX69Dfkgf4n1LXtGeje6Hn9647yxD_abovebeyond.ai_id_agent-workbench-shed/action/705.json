@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Work started by voice and work continued by typing lived in separate places: the voice journal on the workbench, the agent sessions in herdr and the Claude app, and Portal's tasks and forwarded mail. Picking up a thread on another device meant reconstructing it by hand.\n\nThis adds `voice/activity.mjs`, which builds one list:\n\n- **conversations** of the last two weeks: the journal summary, the line of what is still open, and the agents each one started (from the transcript's `started` events and the journal text); a conversation without a journal yet shows as going on or being summarised\n- **agents**: every named agent in herdr, also the ones started by hand, with its task, state, last update (its session transcript's mtime), last `SPOKEN:` line, the Claude app link to continue it (Remote Control) and the pull requests it proposed (only the addresses `hand.mjs propose` printed, not PRs it merely read)\n- **Portal**: measured tasks in progress, forwarded mail that is not done, and what waits for the owner's touch (`owner/state`)\n\nWhat waits for the owner comes first, then the most recent. The bridge serves it as `GET /activity` (same Tailscale login check and origin list as the other routes), the voice gets an `activity` tool, and the conversation context now starts with the same list instead of the bare agent list and mail list.\n\nPortal's part is cached for a minute and refreshed in the background, because the fleet brief takes Portal about 13 seconds. Session transcripts (up to 20 MB) are read incrementally from the last offset.\n\nGoes with the Portal PR that adds the Activity page and the list under the phone's voice screen.\n\n**Tests:** `node --test voice/*.test.mjs lib/*.test.mjs`, 23 passing (8 new). Ran the bridge from this branch on a spare port against live data: 24 items, 0.2 s once warm, 403 without the Tailscale login, and the `activity` tool answered through `/act`.\n\n**After merge:** `systemctl --user restart voice-bridge.service` on the workbench (projects-sync pulls the code).\n",
+            "branch": "workbench/voice-activity",
+            "title": "Voice: one activity list of conversations, agents and Portal tasks"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007114413-319735"
+}

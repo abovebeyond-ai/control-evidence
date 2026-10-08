@@ -1,0 +1,16 @@
+{
+    "action": "8dcefb789f3b741f4c04eb77221f10a8",
+    "effect": {
+        "detail": {
+            "base": "54606323f1e1a15b658efcb630f54cab31e28541",
+            "branch": "workbench/pipeline/studio-writing-3",
+            "commit": "63a4a94b3a45358c34df960612c2580b4a583f92",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 891,
+    "verdict": "ALLOW"
+}

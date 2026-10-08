@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "060dce9713ca96eb4f68200f33f5c39c2c8d7c86",
+            "branch": "workbench/vuln-runtime",
+            "files_sha256": "c4e333208cfbea150cb553c6065cdc1129f6a986cb8a1549dfe3e0e851497152",
+            "message": "Patch sharp's libheif and the semver-safe advisories in the site's runtime\n\nThe critical runtime advisory on this site is GHSA-26w7-cxv4-gfx2: remote\ncode execution through a crafted AVIF image, via libheif inside sharp.\nAstro only ships the fix in 7.2.8, three majors ahead of the 4.16.19 this\nsite runs. The vulnerable code is sharp's bundled libheif, and the SSR\nfunction deploys sharp because Astro injects its /_image endpoint.\n\nPin sharp to 0.35.5 through an override (libheif 1.23.5, which carries the\nlibheif fixes) and take the in-range patches npm audit offers for devalue,\nhttp-cache-semantics, js-yaml and source-map-js. No application code\nchanges; the prerendered output is byte-identical before and after."
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261007120105-b72a32"
+}

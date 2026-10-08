@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "853d8a16f35a1acbcdd97c778c961d79fddac6ed",
+            "branch": "workbench/studio/versions-plan-desk",
+            "files_sha256": "1bd625567f1b3fa9a78df16ad075328166ccdaefe1da048fd69b29d2b504f16a",
+            "message": "Studio: versions with Restore, the plan of a bigger step with Stop, a calmer Write index\n\nPortal: The Studio keeps every version of a piece to go back to, shows what the assistant looks up while it works, and has a calmer list of pieces."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261007154827-091512"
+}

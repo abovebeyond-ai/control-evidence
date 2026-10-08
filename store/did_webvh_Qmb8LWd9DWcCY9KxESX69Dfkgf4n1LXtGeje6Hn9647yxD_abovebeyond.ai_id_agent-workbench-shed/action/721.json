@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "319a2c8799c1e2803f847d5c76636d83db04158f",
+            "branch": "workbench/journal-proposal",
+            "files_sha256": "8466cdeb481250c25a4099824d780b9fb4cd0d56d051b053842424902465f77c",
+            "message": "Propose a Sanity-backed journal for hoet.be\n\nAdds docs/journal-voorstel.md: SEO and AI-discoverability practices that\napply to this site, information architecture, content and metadata\nguidelines, BlogPosting structured data, the publishing workflow, the\nSanity schemas and Laravel changes needed, a test plan, and a phased\nroadmap with risks. No code changes."
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261007120112-fc0f4c"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f007e39d4da1a9008ebc38277405a4b4a13fb2e6",
+            "branch": "workbench/observatory-day-layer",
+            "files_sha256": "b145ad19e72d486c1356a463e8c94b6a4caec6d1971699476eea63e50dc4d518",
+            "message": "The Gentells pipeline's day layer: one research brief for the Studio\n\nobservatory:pipeline gets a B2 layer with studio.research_draft beside its B1 reads, so\nthe owner admits it for the day on the project page and the shed's capability names it;\nlabels for the project page and the grants overview."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007085041-86ed22"
+}

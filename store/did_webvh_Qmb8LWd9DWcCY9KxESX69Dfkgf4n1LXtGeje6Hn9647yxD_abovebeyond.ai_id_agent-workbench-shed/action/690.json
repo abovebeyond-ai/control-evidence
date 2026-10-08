@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb4fef6946926663bcdcd8a5e6448861b9794e0d",
+            "branch": "workbench/yubikey-nfc",
+            "files_sha256": "923e8206532fa455de942909e466f9318b51edadb049eb568deec3e42dc9a6a6",
+            "message": "Sign a working set or a policy widening on the YubiKey over NFC"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007093648-666415"
+}

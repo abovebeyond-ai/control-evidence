@@ -1,0 +1,16 @@
+{
+    "action": "47191b1f35fb69052c578ab68c89b739",
+    "effect": {
+        "detail": {
+            "base": "e8eda79100c1e52587975c33fa9d221827160962",
+            "branch": "workbench/read-numbered-lists-2",
+            "commit": "b40a5baea2d44638a58dcfdffa292499ba412ac8",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 855,
+    "verdict": "ALLOW"
+}

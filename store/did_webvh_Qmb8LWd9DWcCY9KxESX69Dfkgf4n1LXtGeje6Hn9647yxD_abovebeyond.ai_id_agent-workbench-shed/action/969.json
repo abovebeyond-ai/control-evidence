@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ddd731463320c40f32a7a2dc650be1a8108bb1a4",
+            "branch": "workbench/studio/deck-mixed",
+            "files_sha256": "b9dc775b161c633f8f2696e3615249485ab142f61eba10af38607c5e35c29589",
+            "message": "Studio decks: speak a slide, edit by hand, a start slide that names both"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261007154252-fe16f2"
+}

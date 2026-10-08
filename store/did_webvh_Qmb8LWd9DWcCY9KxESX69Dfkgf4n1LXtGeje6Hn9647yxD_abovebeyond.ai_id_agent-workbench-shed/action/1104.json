@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fe416bbfd5eda249ddaa62cc6651d89dde706faf",
+            "branch": "workbench/studio/starter-names-source",
+            "files_sha256": "749d662030e4609cad5eb7bc42923afc30a54ecde92a0a9c84edbd7eb7c17b35",
+            "message": "Studio: tapping one of this week's signals names it, it does not cite it"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261008054222-4753f8"
+}

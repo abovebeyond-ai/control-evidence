@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A deck in Write could already get slides from the conversation (they arrive as suggestions) and take a slide written by hand. But the hand route was hidden behind a faint link and a click on the slide, and the deck could not be spoken. This change keeps how slides arrive and makes the mix visible. It only touches the Deck format.\n\n**Start slide.** An empty deck now shows a dashed 16:9 slide under the cover that names the three ways in: ask on the left, speak a slide, write one yourself. It has a \"Write the first slide\" link. Posts and articles keep their old empty state.\n\n**By hand.** Under each slide: Edit, Add a slide after, Remove (click twice, like Clear in the conversation). The end-of-deck \"Add a slide at the end\" is now in aqua instead of the faint grey. Clicking a slide still edits it, and selecting words still opens the ask box.\n\n**Voice.** A microphone in the conversation box, decks only, using the browser's own speech recognition (`src/voice.js`, no new dependency). The words land in the box and are never sent by themselves: recognition mishears names and numbers, so the writer reads them first and sends them like typed text. The slide then arrives as a suggestion, as before. A status line above the box shows listening, heard, or the error in plain words (microphone blocked, no microphone, nothing heard, no connection, language not supported). In Firefox, which has no recognition, the line says to type instead and the microphone is hidden. The recognition language follows the browser.\n\nPipeline untouched: the chat request is the same as for a typed message.\n\nTests: `npm test` (11 pass, three new for the voice helpers), `vite build` clean. Not yet clicked through in a running Studio.\n",
+            "branch": "workbench/studio/deck-mixed",
+            "title": "Studio decks: speak a slide, edit by hand, a start slide that names both"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261007154252-fe16f2"
+}

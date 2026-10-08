@@ -1,0 +1,16 @@
+{
+    "action": "419ef82d9949e6eb59ec29eb213a9821",
+    "effect": {
+        "detail": {
+            "base": "e21902709d7ebd98655619aba54c82111f56d772",
+            "branch": "workbench/gateway-reads-revocations",
+            "commit": "7dfb2bb35bbf569400067d2074365e1605d4ad66",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 834,
+    "verdict": "ALLOW"
+}

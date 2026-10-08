@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a803614c38185fd17ee5539397758533344b7471",
+            "branch": "workbench/monitor-live-proposals",
+            "files_sha256": "75f670a74441a493714d35f585b48a19f41dc2db0196efde539c25537dbcc3e0",
+            "message": "The monitor counts the proposals the queue shows, not those on folded trends\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007121751-2bb42d"
+}

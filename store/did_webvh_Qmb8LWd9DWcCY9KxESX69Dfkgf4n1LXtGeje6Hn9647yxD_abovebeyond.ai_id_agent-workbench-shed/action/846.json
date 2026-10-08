@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f210b3b2d9d51d4fec194a54a23aaaf642e9cc71",
+            "branch": "workbench/evrim-structure",
+            "files_sha256": "2777981821eb0ff4c2859744ada2522a442793113671af2d7d4b4c48ba57c8a6",
+            "message": "Restructure the site into landing, Infrastructure, Services, How we work, News and insights\n\nThe landing page keeps one message and points onward. Its gateway story,\nthe regulated-blockchain features, the ISBE layers and the four\ninfrastructure services move to a new Infrastructure page, which replaces\nNetworks (networks.html now forwards there). Services is rebuilt around\nverification, validation and volition, each with an example. How we work\nfollows the setup-plus-monthly pricing logic of the service description.\nThe blog becomes News and insights and takes the FAQ. A self-assessment\npage with sliders ends in a request for a free 30-minute assessment,\nsent by the visitor's own e-mail.\n\nMoved copy that claimed a legal presumption today now says it applies\nonce ISBE holds qualified ledger status."
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261007125412-f821e8"
+}

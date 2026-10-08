@@ -1,0 +1,16 @@
+{
+    "action": "c83fc6a179867610689b05c4cb67c35f",
+    "effect": {
+        "detail": {
+            "base": "ddd731463320c40f32a7a2dc650be1a8108bb1a4",
+            "branch": "workbench/studio/deck-mixed",
+            "commit": "f69567bfb7e9210cb255d7ba788cb1288fc56d9c",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 969,
+    "verdict": "ALLOW"
+}

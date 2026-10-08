@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4eb1a9ac78003c239412a7b0cc2bd88c7f7ba728",
+            "branch": "workbench/vulnerability-reads",
+            "files_sha256": "57bc3181f3d510a24fc6e68b4f82fcfbb836f73912e7b19f15a6d4dbaf8ae511",
+            "message": "Read what a vulnerability scan found: each package, version and fix"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007085238-1d3e79"
+}

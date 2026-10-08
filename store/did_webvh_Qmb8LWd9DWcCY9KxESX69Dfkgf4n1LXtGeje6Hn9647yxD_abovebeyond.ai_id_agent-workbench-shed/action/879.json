@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dd077c16e1426da58c16bafa6af7f180957b2191",
+            "branch": "workbench/agent-governor",
+            "files_sha256": "a073a3e00a6e86e5ed73ea33825cc1c949c0b1d936216bac060ee93975dd7bfe",
+            "message": "One governor for every agent on the machine, and one queue for the rest\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007151752-efd9c9"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb77ce300ea68f2a33744a48b42fafcc934fd6de",
+            "branch": "workbench/studio/writing-in-conversation",
+            "files_sha256": "e4b8c1c27d27c446b2e7d064fca305081534c3d897252f2d1e8c1df87ea087ac",
+            "message": "Studio: writing in conversation, the piece beside it with its sources\n\nPortal: The Studio's writing view is rebuilt: a conversation beside the piece, suggestions with their sources in the text, and posts, articles and pitch decks."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261007151806-b6627a"
+}

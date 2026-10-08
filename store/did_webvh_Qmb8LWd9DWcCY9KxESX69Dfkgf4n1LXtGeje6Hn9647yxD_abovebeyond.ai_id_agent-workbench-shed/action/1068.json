@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7f3aa989cd71f2febd03913dc2ca413b8e9f23a6",
+            "branch": "workbench/stocklist-read-layer",
+            "files_sha256": "3c23324654770a1ea3cf6478352afefccba62c7a49ae6ec4725e42aaa4c9e9f6",
+            "message": "Admit reading Stocklist's usage figures for 30 days"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007170904-b0fd90"
+}

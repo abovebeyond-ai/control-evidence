@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #109, which failed the gateway test: the two kinds lacked an empty Optional map, so the grant bundle beside a record no longer matched the hash the claims name. Close #109 unmerged.\n\nTwo kinds on the Gentells pipeline (`observatory:pipeline`), both B2 and carried by `effects.System` to the pipeline's `/control/act`, which checks the record and the mandate itself:\n\n- `observatory.trend_edit` {trend, field, text}: one trend's headline or reading. The pipeline keeps the text before, and one step undoes it.\n- `observatory.trend_site` {trend, action}: one trend on gentells.com or off it. It is logged, and deciding again reverses it.\n\nChanges:\n\n- `policy/schema.go`: the two schemas.\n- `effects/system.go`: `SystemKinds`.\n- `docs/mandates.md`: two rows, built.\n\nTests: `go vet ./...` and `go test ./...` pass, the gateway package included. `effects/system_test.go` checks that a trend edit validates and that a site decision without an action is refused. `go test ./effects ./policy` passes.\n\nAfter merge, a release (tag) and the gateway upgraded to it.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/trend-kinds-2",
+            "title": "Two kinds on the Gentells pipeline: a trend's text, a trend on the site"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261007155639-843b62"
+}

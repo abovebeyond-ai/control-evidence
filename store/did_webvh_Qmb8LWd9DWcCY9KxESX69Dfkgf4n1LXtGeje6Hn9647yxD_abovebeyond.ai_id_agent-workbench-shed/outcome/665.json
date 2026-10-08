@@ -1,0 +1,17 @@
+{
+    "action": "5afd0c89826f14990ab16303011317c8",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 2,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/abovebeyond-ai/portal-android/pull/2",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 663,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e1397350dd217a22edcef6003003da73d7d160e0",
+            "branch": "workbench/pipeline/claims-and-versions",
+            "files_sha256": "230ffd3e30b87b6ed12e7cb548d73ad5f79aacdce1056e665dd2399727494958",
+            "message": "Claims without a source hold back publishing; suggestions keep versions\n\nPortal: In the Studio, a claim without a source is now marked in the margin, and a suggestion can be asked again for another version."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007152721-76d4db"
+}

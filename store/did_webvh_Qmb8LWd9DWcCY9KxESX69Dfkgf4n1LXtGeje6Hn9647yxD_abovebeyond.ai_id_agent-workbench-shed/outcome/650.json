@@ -1,0 +1,16 @@
+{
+    "action": "287eb35fa82a896c25014e8ad374581b",
+    "effect": {
+        "detail": {
+            "base": "4eb1a9ac78003c239412a7b0cc2bd88c7f7ba728",
+            "branch": "workbench/vulnerability-reads",
+            "commit": "e98e8fa1c9196ec2090dc1793258d1818ebf0a16",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 648,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The desk and the phone can type to the workbench, in the same conversation the voice holds.\n\n- `partials/thread`: the conversation as one timeline, with a composer under it. Each line says who said it and how (\"You, typed\", \"You, spoken\", \"Voice, written\", \"Voice, spoken\"). The owner's lines sit on the right, the voice's on the left, and a new conversation is marked. It fetches `GET /thread` from the bridge in the owner's browser every four seconds, or every 1.5 seconds while an answer is coming, so a line said or typed on another device appears without a reload. Nothing is stored on this server.\n- Desk: the Activity page shows the conversation above the list, which is now headed \"Going on\".\n- Phone (`/mobile/voice`): the voice's own log is replaced by the same thread. While this page holds the voice, a typed line goes straight into the live session and is answered out loud. A line typed on another device reaches that voice through `/changes?conversation=`. Spoken turns are written down with `via: voice`.\n- Online only: without a connection, or with the workbench out of reach, the composer is off and says why. A line that was not taken stays in the box; nothing is queued.\n- Enter sends at a keyboard and Shift+Enter starts a new line. On a touch screen the button sends.\n- Dutch strings are in `lang/nl.json`.\n\nChecked: Pint, PHPStan and the suite. The only failures were the known worktree-only `BuildStampTest` and a minute-boundary flake in `AppApiTest`, which passes on its own. In headless Chromium against a test bridge: a line typed at the desk got a written answer, the phone page showed it without a reload, and going offline turned the composer off.\n\nNeeds the portal-cli pull request on the same branch name (the bridge's `/thread` and `/say`). Until that is live, the composer says the workbench is out of reach.\n",
+            "branch": "workbench/typed-thread",
+            "title": "Type to the workbench beside the voice, on the desk and the phone"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007120605-9dd32a"
+}

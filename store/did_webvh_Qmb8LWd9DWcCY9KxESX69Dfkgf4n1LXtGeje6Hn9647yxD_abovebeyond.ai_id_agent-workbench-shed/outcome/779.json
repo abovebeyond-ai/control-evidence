@@ -1,0 +1,17 @@
+{
+    "action": "bfc5d7af5ccf038736c975db2c8977f6",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 374,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/abovebeyond-ai/portal/pull/374",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 777,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:6",
+            "note": "Owner: follow Evrim's structure. Building the restructure (#3 #4 #7 #8 #9 #10)",
+            "state": "in-progress"
+        },
+        "resource": "portal:bextrust"
+    },
+    "run": "workbench-20261007124736-4dd720"
+}

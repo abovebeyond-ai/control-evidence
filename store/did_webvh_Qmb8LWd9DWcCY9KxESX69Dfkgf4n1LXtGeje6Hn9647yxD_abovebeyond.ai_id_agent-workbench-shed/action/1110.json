@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b4813a68790922f54be72491243650c3be37f415",
+            "branch": "workbench/voice-single-reply",
+            "files_sha256": "1f220a485150899668d0c9106c10d5a653354220b3e39aaf9bedcbb463f35c87",
+            "message": "Voice: one reply per turn, notices said as one summary, noise dropped"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261008061354-1971a5"
+}

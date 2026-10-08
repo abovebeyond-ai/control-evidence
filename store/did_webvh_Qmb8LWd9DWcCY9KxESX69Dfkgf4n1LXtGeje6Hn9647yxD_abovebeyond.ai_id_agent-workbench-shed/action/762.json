@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "efe41e28ef805a58de84e0f73490ac77643193ea",
+            "branch": "workbench/gateway-flows-2",
+            "files_sha256": "17f7da9c0ce3d0d2f14b40ae03a5cbe7b3e8e9c940b9b1ac3b03f432016b04a9",
+            "message": "Workbench in the app: named refusals with a way out, ending a word, the touch kept across signing in"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007121648-08d4dc"
+}

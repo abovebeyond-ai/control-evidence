@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What this does\n\nThe agent that knocked is told when the owner admits its project.\n\n- **The knock names the session.** `askPortal` adds `agent`, this session's name in herdr (looked up from `HERDR_PANE_ID` in `herdr agent list`, once per process). Outside herdr, or when herdr does not answer, the knock goes without a name, as before.\n- **`admission-watch.mjs`** runs on a user timer every 30 seconds (`systemd/admission-watch.*`). It reads Portal's answered knocks (`GET ingest/workbench/answers`, signed with the workbench key) and, for each one whose agent is idle or done, sends that agent a message in herdr: which project was admitted, for what, until when, and to do again what was refused. An agent that is working, or waits at a prompt, is told on a later round and never interrupted. One that no longer exists is dropped, with the reason in the log. A voice session (`voice-N`) is also asked for its SPOKEN line.\n- It holds no capability and writes nothing to Portal. What it saw and what still waits is in `~/.local/state/admission-watch/state.json`.\n- The logic is pure (`lib/admission.mjs`) and tested apart from herdr and Portal.\n- README: *When a knock is answered*, with the install lines.\n\n## Testing\n\n- `node --test lib/*.test.mjs`: 20 passed, 5 of them new (the herdr name from the pane, told once, a busy agent told later, a gone agent dropped, the message).\n- On the workbench: the lookup found this session's own name (`voice-1`). `admission-watch.mjs --dry-run` against the live Portal, where the route doesn't exist yet, says so and exits without writing anything.\n\nNeeds abovebeyond-ai/portal#374 first. After both are merged, on the workbench: copy the two unit files and `systemctl --user enable --now admission-watch.timer`.\n",
+            "branch": "workbench/admission-watch",
+            "title": "Tell the agent that knocked when the owner admitted its project"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007122249-82f096"
+}

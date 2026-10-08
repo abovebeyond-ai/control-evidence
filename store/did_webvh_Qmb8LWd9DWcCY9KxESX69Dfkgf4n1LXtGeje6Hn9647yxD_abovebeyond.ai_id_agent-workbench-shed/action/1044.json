@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The workbench's grant on the Gentells pipeline (`Workbench::SYSTEMS`) now names `observatory.trend_edit` and `observatory.trend_site` beside `studio.research_draft`. The policy log's labels (`PolicyLog`) say what each does, for the difference the owner signs.\n\nTests: `WorkbenchGrantTest` asserts both. `--filter 'Workbench|PolicyLog|Control'` passes 103 of 103. PHPStan reports 0 errors.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY\n",
+            "branch": "workbench/trend-kinds",
+            "title": "The workbench's grant names the two trend actions on the Gentells pipeline"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261007170336-95c4ca"
+}

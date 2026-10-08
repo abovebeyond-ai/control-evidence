@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4eb1a9ac78003c239412a7b0cc2bd88c7f7ba728",
+            "branch": "workbench/voice-research",
+            "files_sha256": "34ae6f7431f77355b0c8fc7afd743740a39c6d24c666d2ae1f497491368faf1f",
+            "message": "Research briefs for the Gentells desk, from the voice and from sessions\n\nset_out_research in the voice bridge, studio_research_draft in the systems MCP and\nresearch.mjs on the command line, all through one researchParams so the gateway judges\nthe same parameters whoever asks. A write (B2, kind studio.research_draft on\nobservatory:pipeline): the owner's admission for today, the gateway, and the pipeline's\nown check; the brief waits in Studio \u203a Write, ready for review."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007085103-86faf2"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ec348ba18ecf52c0fdb7ea2c6ffbae9a484ecf57",
+            "branch": "workbench/pipeline/versions-and-plan",
+            "files_sha256": "29f7095230332661d46a8ce604f58d16b2ffb004121e690efd02cb2547a9495a",
+            "message": "Versions of a piece on the server, the plan of a bigger step, the desk list's format\n\nPortal: In the Studio every change to a piece is now kept as a version that can be put back, and you can see what the assistant looks up while it works."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261007154751-6cc442"
+}

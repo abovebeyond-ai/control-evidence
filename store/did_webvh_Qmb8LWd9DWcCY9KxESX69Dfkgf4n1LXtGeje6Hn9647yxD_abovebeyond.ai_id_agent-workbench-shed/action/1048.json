@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b7ab76dc3dfeea70f8c3bfae75d0e9f80a093342",
+            "branch": "workbench/workbench-architecture",
+            "files_sha256": "fe523bcbcc6573d2eae3521017e2845c5e3d79452c9f3c5e3008aa1af6f5e4fd",
+            "message": "Document the workbench workflow: diagrams, trust boundaries, failure modes\n\nFour Mermaid diagrams (overview, propose sequence, failure tree, voice task)\nwith rendered SVGs and an overview PNG, a narrative per task, and example\npayloads for the propose command, the signed knock, the PR evidence footer\nand the voice brief."
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261007170339-f4386a"
+}

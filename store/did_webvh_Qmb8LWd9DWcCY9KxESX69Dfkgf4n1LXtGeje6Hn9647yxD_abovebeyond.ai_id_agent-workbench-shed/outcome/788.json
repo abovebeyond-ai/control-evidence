@@ -1,0 +1,16 @@
+{
+    "action": "150952d6dbc2ed4f67a2597a55c55cf9",
+    "effect": {
+        "detail": {
+            "base": "2850b6993828f915288a9bb9cb2af3579304ba20",
+            "branch": "workbench/revoked-capabilities",
+            "commit": "4a665fb9ef1d1440020634c8d33e9ded21ff6c21",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 786,
+    "verdict": "ALLOW"
+}

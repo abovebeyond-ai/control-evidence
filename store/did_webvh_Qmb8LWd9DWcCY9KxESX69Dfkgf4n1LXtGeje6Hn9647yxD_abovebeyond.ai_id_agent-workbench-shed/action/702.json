@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "aee590b72ac7994bf99aacede4fe97f42732b3e3",
+            "branch": "workbench/voice-activity",
+            "files_sha256": "c11fd20b8548e2f5991c4297611d6e4b16d789f244c46179210bd22091063161",
+            "message": "Voice: one activity list of conversations, agents and Portal tasks"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007114413-319735"
+}

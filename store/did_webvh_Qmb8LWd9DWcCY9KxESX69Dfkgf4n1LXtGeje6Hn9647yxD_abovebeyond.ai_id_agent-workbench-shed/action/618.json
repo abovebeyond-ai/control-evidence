@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d71f831ffde1d548abc1dd8d5edf20bf5b29dbf1",
+            "branch": "workbench/studio/research-drafts",
+            "files_sha256": "64683b022068b0c8917b4fcd120a9731a39516d4be4ca69bd105ccdc43f75603",
+            "message": "Research drafts in Write: review, edit, approve, start a piece\n\nA Research section on the desk lists the briefs set out during a conversation or by hand, ready\nfor review first. One brief opens to edit its title, question, context and sources, to approve\nor dismiss it, and once approved to start a piece that opens on the brief."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261007083745-fe555d"
+}

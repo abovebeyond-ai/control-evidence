@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: landing-feedback  Priority: P2  Area: site\nSummary: Rebuild Services around three categories, verification, validation and volition, each with a sector example showing how the technologies combine and why it is more trustworthy, faster and cheaper. Drop the current service types (node hosting, trust registry, BaaS, QEL), which overlap and read as features.\n\n## What is asked\n- Verification: an entity or citizen uses a digital wallet, verifiable credentials and presentations.\n- Validation: a business uses a digital product passport and a supply-chain record that traces changes, with a clear benefit over today's alternatives.\n- Volition: the current Verifiable AI content, showing how to get trusted AI behaviour with a better user experience.\n- The definitions of the three Vs come from a draft handbook chapter attached to the mail (kept in Portal mail:6, not in this repo).\n- The four current service types move into Infrastructure.\n\n## Notes\n- This rewrites existing service copy; the PR will mark which lines are the client's and which are new.\n- Agents and AI stay one example among three, not the core of the offer.\n\nSource: Portal mail:6 (feedback on the website content, forwarded by the owner). The client asks for the owner's view first, so this is a proposal to agree on before building.\n",
+            "labels": [
+                "mail",
+                "landing",
+                "priority:P2",
+                "area:site"
+            ],
+            "title": "Services around verification, validation and volition, replacing the four service types"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261007123923-3b2560"
+}

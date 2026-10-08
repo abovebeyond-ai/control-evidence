@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "497442a1a6ba54dc33133fb7c65804f7b02c4564",
+            "branch": "workbench/dependency-updates",
+            "files_sha256": "245dd77518d7aac472b08f69f4f224c4aaa4ea16881f9e9da5751a61a53ed6d4",
+            "message": "Update dependencies, close the advisories in the Hiero chain, PHPUnit 13"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261007092757-8ec9ee"
+}

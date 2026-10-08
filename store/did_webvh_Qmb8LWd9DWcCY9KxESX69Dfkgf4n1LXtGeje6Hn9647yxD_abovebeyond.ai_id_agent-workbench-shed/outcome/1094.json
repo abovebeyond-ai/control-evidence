@@ -1,0 +1,16 @@
+{
+    "action": "0675beb1a9ec3316905cb6e250bf25f3",
+    "effect": {
+        "detail": {
+            "base": "bcc2f30d666a106216687c325ff2b0e34fd361ff",
+            "branch": "workbench/dash/studio-chat-sonnet-55",
+            "commit": "4ec5090f005baac345031f16ea2d2182dbc91e10",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1092,
+    "verdict": "ALLOW"
+}

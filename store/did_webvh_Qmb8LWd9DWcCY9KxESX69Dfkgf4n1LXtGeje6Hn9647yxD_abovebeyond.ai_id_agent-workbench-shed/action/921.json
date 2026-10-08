@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e163731ca8b4170a465e3a608e34495223f375a4",
+            "branch": "workbench/text-replies",
+            "files_sha256": "7a91bc0e910d8591e2b2c0036e68ff128bd632284047da3133b7e2b1b82f27a3",
+            "message": "Voice: agent notices in the shared conversation, typed instructions said as typed"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261007152832-9f0fce"
+}

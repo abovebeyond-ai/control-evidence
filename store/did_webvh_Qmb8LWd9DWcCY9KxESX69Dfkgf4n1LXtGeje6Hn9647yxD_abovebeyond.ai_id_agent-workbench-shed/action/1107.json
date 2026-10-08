@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Tapping one of this week's signals in the opening cited it on the piece at once, so a piece with no words in it already showed a source. It now names the signal in the message with its id (\"(insight ins-\u2026)\"); the writing chat treats it as at hand and cites it when a sentence of its suggestion uses it.\n\nPairs with the pipeline change that does the same for pieces started from Ask or from a research brief. Safe in either order.\n\nChecks: `npm run build` and `npm test` (11 tests) on a fresh worktree from main.\n",
+            "branch": "workbench/studio/starter-names-source",
+            "title": "Studio: a tapped starter names its source instead of citing it"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261008054222-4753f8"
+}

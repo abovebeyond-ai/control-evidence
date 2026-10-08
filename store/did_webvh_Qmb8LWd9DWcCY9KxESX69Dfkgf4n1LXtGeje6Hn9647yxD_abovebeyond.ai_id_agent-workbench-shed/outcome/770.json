@@ -1,0 +1,16 @@
+{
+    "action": "88184ef6950cdc59bbe76b9fbe6b4b09",
+    "effect": {
+        "detail": {
+            "base": "a803614c38185fd17ee5539397758533344b7471",
+            "branch": "workbench/monitor-live-proposals",
+            "commit": "26cd0a11d6f2f19d10bda8cb331a0e1964a123fc",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 768,
+    "verdict": "ALLOW"
+}

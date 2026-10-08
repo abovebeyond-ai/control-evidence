@@ -1,0 +1,16 @@
+{
+    "action": "5e0cf6de6630ec2d8a9c00635ad859cf",
+    "effect": {
+        "detail": {
+            "base": "95d609ef287ea9164cfe769e7c0ac598e0bd8cf2",
+            "branch": "workbench/pipeline/sources-when-used",
+            "commit": "c6f40d81d42030ef1fda2428c18f373268272810",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1098,
+    "verdict": "ALLOW"
+}

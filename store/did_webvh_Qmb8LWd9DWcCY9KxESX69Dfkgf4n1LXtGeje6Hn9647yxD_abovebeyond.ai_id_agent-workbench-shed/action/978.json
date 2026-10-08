@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three extras on the app's voice screen.\n\n- **An alert for a written answer when the app is out of view:** if you leave the app while a typed line still waits for its written answer (no voice on), `AnswerService` starts as a short foreground service. It shows \"Waiting for the workbench's answer\", polls the bridge for up to four minutes, and posts the answer as a notification (\"The voice answered\"). It starts in `onPause`, while the activity is still visible, which Android allows, and stops in `onResume`, where the screen shows the answer itself. It has type `dataSync` and the new `FOREGROUND_SERVICE_DATA_SYNC` permission. It does nothing when a voice answers out loud.\n- **Show earlier:** at the top of the conversation, a page at a time from the bridge (`/thread?before=`), as far back as transcripts are kept (30 days). A pause's time shows the day for lines from before today.\n- **Numbered builds:** `versionCode` is 1000 plus the commit count, and `versionName` is `0.4.<count>`. Each build from main is newer than the last, and the number shows under Settings, Apps, Portal. The hand-set numbers had reached 10.\n\nChecked: `assembleDebug` and `testDebugUnitTest` pass. The build reads `versionCode='1013' versionName='0.4.13'` on this branch. Not checked on a phone: the alert, which needs a real background and notification.\n\nNeeds portal-cli's `/thread?before=` on the same branch name.\n",
+            "branch": "workbench/thread-extras",
+            "title": "Voice screen: an alert for a written answer, show earlier, numbered builds"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007154251-8759df"
+}

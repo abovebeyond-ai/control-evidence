@@ -1,0 +1,16 @@
+{
+    "action": "15116dd9e68215316370af90bdf71652",
+    "effect": {
+        "detail": {
+            "base": "c3c735e341b306880975f2b3066da06104121d72",
+            "branch": "workbench/test-mock-hand",
+            "commit": "534cd2c63cd6eb64adfe08e7e3456f7495afe3eb",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 993,
+    "verdict": "ALLOW"
+}

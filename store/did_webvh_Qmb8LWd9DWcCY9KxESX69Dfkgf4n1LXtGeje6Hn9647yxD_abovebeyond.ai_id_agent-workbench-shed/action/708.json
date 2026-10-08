@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f745e5294184596f244de2016abdb9552c1652e2",
+            "branch": "workbench/voice-activity",
+            "files_sha256": "e52357e5f9aa8f534129e0163992b65d601fe6c7d0545dc2ab68067db507fc3c",
+            "message": "Activity: voice conversations and agent work in one list, desk and phone"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007114438-36f74c"
+}

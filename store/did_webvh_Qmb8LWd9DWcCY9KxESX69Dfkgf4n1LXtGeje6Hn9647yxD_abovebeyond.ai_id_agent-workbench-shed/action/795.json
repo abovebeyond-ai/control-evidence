@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Serves the control gateway the capabilities the owner ended before they expired, so that ending a word at Portal stops a token the hand already holds, not only new ones. The gateway side is abovebeyond-ai/control (branch `workbench/revoked-capabilities`).\n\n**The list.** `GET /api/ingest/control/revoked` (the hand token, which is the gateway's, like the policy log) returns `{\"revoked\": [{\"jti\", \"exp\", \"since\"}]}`. An entry is every workbench admission whose `expires_at` was moved before the `exp` its capability carries, until that `exp` passes. That covers `WorkbenchAdmit::revoke` (the app's \"end now\"), ending the working set early, and a newer word superseding an older one. An admission that simply ran out is not listed, because its token refuses itself. The lookback is eight days: no admission outlives a working set.\n\n**Carried tokens.** `Capability::carry` gave the shed's token a fresh ULID on every request, so no list could name it. It is now named after the word it carries, `<admission jti>.<hand>`, and the list names the word plus its carried form for each workbench hand. The same admission carried for the same hand is the same capability. Per-act words are never carried (carry drops `act`), so a repeated jti does not meet the gateway's spending of a word.\n\n**Not changed yet.** The sentence after \"end now\" still says a capability the hand holds stands until it expires. That stays true until the gateway release and the configuration with `revocations` are carried over; change it after that.\n\nTests: `RevokedCapabilitiesTest` covers an ended word listed with its carried forms until its exp and then gone, a standing one and a run-out one not listed, a carried token's jti matching the list, and only the hand token reading it. The full suite passes except `BuildStampTest`, which fails in a git worktree on main too. Pint is clean.\n",
+            "branch": "workbench/revoked-capabilities",
+            "title": "Serve the gateway the capabilities the owner ended before they expired"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007122411-0741e4"
+}

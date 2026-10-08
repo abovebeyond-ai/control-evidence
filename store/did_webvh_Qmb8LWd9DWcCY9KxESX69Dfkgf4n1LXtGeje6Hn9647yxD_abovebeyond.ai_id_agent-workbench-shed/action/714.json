@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4dab642aeb1eba0acc876800bd8a247a14c251fd",
+            "branch": "workbench/read-numbered-lists",
+            "files_sha256": "d587314603b225d60ccdc7820ed428102e5414f61ba097756cab7bea52f98983",
+            "message": "What the first install found: the voice's crash, sign-in and reading Portal made safe, crash reports on the phone, and the plan for approvals"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007115854-77c128"
+}

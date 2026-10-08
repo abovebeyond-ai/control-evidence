@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a3c98d3e36e4e13b37be277bb5de2645806248fd",
+            "branch": "workbench/revoked-capabilities",
+            "files_sha256": "273104ec34a5af7e3c2662ca1b1bcabc00764f34f4a75244ffd3ae1f3f38583b",
+            "message": "Serve the gateway the capabilities ended before they expired"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007122411-0741e4"
+}

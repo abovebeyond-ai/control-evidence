@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What this does\n\nA knock is answered, not deleted, so the session that knocked can be told it may carry on.\n\nUntil now an admission deleted the project's knocks, and nothing told the waiting session: it sat until someone sent it a message by hand. Now:\n\n- **The knock names its agent and its layer.** `POST ingest/hand/capability/{slug}` takes an optional `agent` in the signed body (the session's herdr name, `[A-Za-z0-9._-]{1,64}`), and the knock keeps it with the layer it asked for. `WorkbenchRequest::knock()` keeps one open knock per project, reason, agent and layer.\n- **An admission answers its own layer.** The three places that deleted knocks (`WorkbenchAdmit`, the project page's layer admission, the operator-signed `workbench/admitted`) now call `WorkbenchRequest::answer()`, which marks the open knocks for that layer answered, with when and by whom. A knock for another layer stays open: an agent is never told to carry on with a word it did not get.\n- **The screens show only open knocks** (`/portal/werkbank`, `OwnerState::waiting`, so the phone as well).\n- **`GET ingest/workbench/answers?after=<id>`** (scopes `read`, `hand-read`): the answered knocks of the last day that named an agent, oldest first, with project, agent, layer, reason, when, and until when the admission stands. Never the capability: the agent asks for its own again, with its own signature.\n\nDeleting a project still deletes its knocks.\n\n## Testing\n\n- `php artisan test`: 690 passed. `WorkbenchAnswersTest` is new: a knock names its agent and layer once and refuses a malformed name; an admission answers only its own layer and the route lists it once; an answered knock leaves the owner's screen; only the read token and signing hands read the route.\n- Changed on purpose: `HandsReadWithTheirKeyTest` lists the new hand-read route, and two tests now count the open knocks after an admission instead of all of them.\n- Pint and PHPStan pass.\n\nIts other half is abovebeyond-ai/portal-cli (the knock with the herdr name, and `admission-watch`). Merge this one first: the watcher waits quietly while the route is missing.\n",
+            "branch": "workbench/knock-answered",
+            "title": "A knock names its agent and is answered, not deleted"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007122209-3ab8d5"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e21902709d7ebd98655619aba54c82111f56d772",
+            "branch": "workbench/gateway-reads-revocations",
+            "files_sha256": "e9bbf99bfb6837291c83a4ccba960b68df07f860dd7fc7767731380432258286",
+            "message": "Write the gateway's revocations block into its configuration"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261007125254-48ef78"
+}

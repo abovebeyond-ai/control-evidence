@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a3c98d3e36e4e13b37be277bb5de2645806248fd",
+            "branch": "workbench/knock-answered",
+            "files_sha256": "d4d05fb7418b1709f79e457166bee657f40b77c2e6021bd430b1f657c79b332c",
+            "message": "A knock names its agent and is answered, not deleted\n\nThe workbench's knock carries the agent's name and its layer; an admission marks the\nknocks for its own layer answered instead of deleting them; GET ingest/workbench/answers\nlists the answered knocks of the last day, so the workbench can tell that agent it may\ncarry on."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261007122209-3ab8d5"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "87f387f70475356e98ae4fb554e1330a",
+    "effect": {
+        "detail": {
+            "base": "f204fdb49e9ba87381f00452200bf1e1b83e839b",
+            "branch": "workbench/dependency-updates",
+            "commit": "b168b02183626406e6c7706fb263f1def81316ba",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 678,
+    "verdict": "ALLOW"
+}

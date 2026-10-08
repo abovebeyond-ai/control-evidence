@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The app's voice screen can type to the workbench as well. Spoken and typed lines are one conversation, the same one Portal shows on the desk and the phone.\n\n- The screen draws the bridge's timeline (`GET /thread`). It reads every four seconds while the screen is shown, and every 1.5 seconds while an answer is coming. Lines said a moment ago and the workbench's notices stay until the bridge has them.\n- Each line says how it came: spoken, typed (by you) or written (by the voice). Spoken lines are a shade quieter, as they are transcripts.\n- A composer sits above the call controls, with or without the voice on. While this phone holds the live voice, a typed line goes into that session and the voice answers it out loud (`held`). A line typed on another device reaches it through `/changes?conversation=`. Without a voice, the bridge answers in writing.\n- Online only: without a network, or with the workbench out of reach, the box is off and says why. A line that was not taken stays in the box.\n- New: `voice/Conversation.kt`. `Bridge` gets `thread()` and `say()`, and `changes()` now takes the conversation. Strings are English only.\n\nChecked: `assembleDebug` and `testDebugUnitTest` pass. The voice mockup (`build/mockups/7-voice.png`) now shows spoken and typed lines with the composer.\n\nNeeds the portal-cli pull request on the same branch name.\n",
+            "branch": "workbench/typed-thread",
+            "title": "Type to the workbench on the voice screen, one conversation with the voice"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261007120632-5068d9"
+}

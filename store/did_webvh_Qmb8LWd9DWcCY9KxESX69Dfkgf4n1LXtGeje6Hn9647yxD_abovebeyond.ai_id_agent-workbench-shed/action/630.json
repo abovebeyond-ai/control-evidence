@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ebf2580c7b427f4c09480440dea644f2fce0ccec",
+            "branch": "workbench/observatory-system",
+            "files_sha256": "0e38d0456f00720319828424f5f3a21b5322dcf133181f617b02803f2c95b294",
+            "message": "The Gentells pipeline as a running system: studio.research_draft in the grant\n\nWorkbench::SYSTEMS names observatory:pipeline with its one write, the research brief\n(B2), so the grant carries it when the project names the system; control_systems gives\nthe gateway its address, the pipeline's /api/pipeline."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261007085019-e002a2"
+}

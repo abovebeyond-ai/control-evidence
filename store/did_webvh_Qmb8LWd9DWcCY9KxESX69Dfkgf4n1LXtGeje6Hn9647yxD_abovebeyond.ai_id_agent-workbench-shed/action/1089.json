@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Agent Profiler on `/profiler/` still ran the February model: reliability as a headline percentage, bars of 80% up to 99% per blast radius with an extra step per autonomy level, and B5 climbable like any other level. This brings it to the framework as published on `/framework/`, and marks it as an illustration rather than an assessment.\n\n**What the profiler now does**\n- Reliability is read as the lower bound over judged runs. The examples keep their public benchmark rates, and the panel says these are read as if they were lower bounds, which they are not.\n- One bar per blast radius for acting alone (A3 and A4): 0.80, 0.85, 0.92 and 0.96, Above Beyond's own bars from `Blast::threshold()`, adjustable in the settings. The minimum of judged runs per bar is shown but not modelled.\n- B5 has no bar. An irreversible act stays at approval.\n- A case also needs a known undo and no refuted run before it may act alone. Both are new fields on a case; the examples have an undo except the B5 ones.\n- Infrastructure stays a gate: I3 allows A3, I4 allows A4. A5 is never earned.\n- The sales outreach example sends mail itself and moves from B3 to B5, as the framework lists \"mail sent\" under B5.\n- Level texts (B, A, I, V) follow `/framework/pac.json`.\n\n**For illustration only**: stated on the intro, above the case list, and in the help.\n\nThe bundles in `static/js` and `static/css` are built (`npm run build:lib`) from pac-agent-profiler 0.2.0, commit ead0a8b on `workbench/illustration-2026-10-07`. That source change is not pushed yet: the repository is not linked to a Portal project, so the gateway has no grant for it.\n\nChecked in a headless browser against a local Hugo 0.155.2 build: the intro, the 2D and 3D views and the settings render, with no console errors. Saved settings from the old model are ignored rather than mixed in (config version 2).\n",
+            "branch": "workbench/profiler-illustration",
+            "title": "Agent Profiler: the framework as of today, for illustration only"
+        },
+        "resource": "abovebeyond-ai/trustedagentic.ai"
+    },
+    "run": "workbench-20261008052823-c25a1b"
+}

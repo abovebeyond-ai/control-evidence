@@ -1,0 +1,16 @@
+{
+    "action": "fe1eab2f5b4302594e2300bbb48d9e05",
+    "effect": {
+        "detail": {
+            "base": "dd077c16e1426da58c16bafa6af7f180957b2191",
+            "branch": "workbench/agent-governor",
+            "commit": "998c2cd207a1f066d504cb31eb4b42fcb2a2c1c0",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 879,
+    "verdict": "ALLOW"
+}

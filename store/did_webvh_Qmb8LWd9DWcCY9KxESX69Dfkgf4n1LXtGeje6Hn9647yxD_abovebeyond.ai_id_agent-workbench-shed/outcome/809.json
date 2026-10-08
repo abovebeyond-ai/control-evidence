@@ -1,0 +1,14 @@
+{
+    "action": "42bb7f79782f45f6ecd20b4492ecc800",
+    "effect": {
+        "detail": {
+            "number": 4,
+            "url": "https://github.com/abovebeyond-ai/bextrust/issues/4",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 807,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "91dde6d9e392ea408840293cb8f7ec8910bb5911",
+            "branch": "workbench/admit-on-yubikey",
+            "files_sha256": "d944eba2dc9e04451167b0002a04a893e920a1bce387593c07b9432a8bd1e2ba",
+            "message": "Admit a workbench on the YubiKey from the app, reading for 30 days included"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261008062703-82438e"
+}
