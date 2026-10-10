@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "80b910bf709b380e75484d2cea948051b7f0f541",
+            "branch": "workbench/docs/partner-tokens-as-they-are",
+            "files_sha256": "4f6b92eca8cf6f1437d4b4e414f0edd03d0722335143ab2312a48f7d063dde14",
+            "message": "R P3-1.1 says how a partner gets a token: from the user screen, renewed through api/token\n\nThe rule promised a token on a user's password through POST api/token, a grant that has been\noff since Passport 12. Partners use the personal access token from the user screen. The route\nstays because Passport renews a token there with a refresh token; the password grant stays off.\nRecorded as a decision; finding api-token-wachtwoordgrant-uit solved."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009140615-27577f"
+}

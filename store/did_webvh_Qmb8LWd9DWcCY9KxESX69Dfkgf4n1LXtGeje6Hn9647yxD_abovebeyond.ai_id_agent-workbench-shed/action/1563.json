@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "86e72f24979693d6924a314eb71d28bff40e16c2",
+            "branch": "workbench/dashboard/model-presets",
+            "files_sha256": "6fcae4058155e271a4fe76619329a7b8347b6260e39ff14e3df3a61c3fa83293",
+            "message": "Remove the Studio's Together preset: its model left Together, so the button changed nothing\n\nThe preset put all four Studio phases on DeepSeek V4 Pro, which Together took off\nserverless on 2026-08-27. The pipeline's catalog dropped it, so a saved choice was\ndiscarded on the next load and pressing the button kept Claude without saying so.\nThe note under it named Llama 3.3 and Qwen 2.5 72B, neither of which the preset used.\nA second preset comes back once a model has been measured against the house voice."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261010072920-1df811"
+}

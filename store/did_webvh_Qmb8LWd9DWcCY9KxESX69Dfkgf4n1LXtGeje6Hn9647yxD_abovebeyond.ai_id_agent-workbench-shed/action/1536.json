@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Merge after Trendwolves/gentells-pipeline (images in a piece's text): without it an image still works in the Studio, but shows a false \"No source for this line\" and reaches gentells.com with a relative address.\n\n**Images in a piece**\nFor posts and articles, not decks:\n- Paste or drop an image into the paragraph being written: it goes in right after that paragraph. Drop it on the piece, or use **Add an image**, and it goes at the end.\n- Each image is a paragraph of its own, one markdown line with the same relative upload address a cover gets (`/articles/upload-cover`). Under the picture: its caption, which is the alt text, editable in place, and Remove.\n- It is saved like every other change, with Save. `imageOf`, `imageLine` and `insertAfter` in `piece.js`, with tests.\n\n**Smaller**\n- While the conversation waits for an answer: three pulsing aqua dots instead of a static ellipsis (still with reduced motion).\n- The Write half of the mode switch is ink instead of red; red on the half you work in read as a warning.\n- Curate's overview: \"On gentells.com\" takes two fifths of the width (it was a fixed 340 px), five items per kind instead of three.\n- Curate's Posts tab: in review first, then live. Every row has **Edit**, which opens it in Write. In review shows whether the post can go live (`GET /articles/:id/review`) and **Put live** when it can, otherwise why not (\"not ready: no sources cited\"). Live has View and **Take offline**, confirmed, back to review. The pipeline enforces the same gate on publish.\n\n**Checked**\n- Against a local pipeline: an image pasted into a paragraph and one added at the end, saved, captions edited; a PDF post imported with three images in place; Posts tab with a not-ready post in review (Put live hidden, reason shown) and live posts with Take offline.\n- `npm test`: 13 passed (2 new). `vite build` passes.\n",
+            "branch": "workbench/studio/images-and-posts",
+            "title": "Studio: images in a piece, posts decided from Curate's list, Write in ink"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261009144810-d85dff"
+}

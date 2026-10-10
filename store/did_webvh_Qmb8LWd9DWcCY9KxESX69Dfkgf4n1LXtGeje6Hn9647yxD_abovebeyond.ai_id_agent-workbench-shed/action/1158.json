@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0658be8982f7c651fcd9cc050a7fcb3ec81de0aa",
+            "branch": "workbench/site/tagging-gate",
+            "files_sha256": "facfcd8d4e72b72690b650a61b9508c640ea34ca90acd2a1df04c3ac892ac085",
+            "message": "Tagging gate: nothing published with tags outside the Gentells Standard\n\nEvery post and trend the projection writes passes App\\Standard\\TaggingGate,\nwhich reads a pinned copy of Gentells Standard 0.8.0 (resources/standard/,\nwritten by bin/sync-standard.mjs from the tag, sha256-checked by a test).\n\n- Corrected: a retired id followed to its replacement (gen-teens to ls-teens,\n  into the lifestage column) and a spelling the standard's match rule maps to\n  one term (APAC, Gen Z, an element label). Ported from tools/load.mjs and\n  tools/match.mjs; the standard's 234 spelling cases run against the port.\n- Held: a tag that is not a term, a reserved term (gen-genbeta), a term of a\n  scheme the class is not tagged with, an element fingerprint outside\n  rules/elements.json. A held item that was public comes down through the\n  existing full-set delete, under the existing brake.\n- tagging_records keeps every decision with the standard version, the tags\n  before and after, and the last public row of anything taken down. The same\n  decision is written once; a fixed item is recorded as released.\n- gentells:tagging-audit is the backfill over what is already published:\n  dry run by default, --apply to correct in place and hold, a Markdown report\n  per run, the same brake per kind.\n- docs/design/tagging-gate.md and a README section describe the rule."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261008112849-631da6"
+}

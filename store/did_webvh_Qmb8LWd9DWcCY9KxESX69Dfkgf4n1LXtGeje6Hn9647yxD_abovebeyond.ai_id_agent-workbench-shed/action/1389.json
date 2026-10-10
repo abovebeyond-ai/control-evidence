@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ad0097d0de041a3f2281cf147f669833eddb049a",
+            "branch": "workbench/repair-signer",
+            "files_sha256": "b02c030b67eedee60d3076bccc2a7212435908be39fbc604da47ef15b356c8b2",
+            "message": "hand.mjs policy: say when a draft can be approved by passkey in Portal"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261009133048-0e3283"
+}

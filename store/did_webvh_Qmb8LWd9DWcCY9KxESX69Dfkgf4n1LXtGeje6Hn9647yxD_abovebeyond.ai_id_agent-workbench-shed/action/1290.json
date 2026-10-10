@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "09a6ad0fd6cd17bd989614ddfcd25847a38ccfcc",
+            "branch": "workbench/gateway-incident-2026-10-09",
+            "files_sha256": "4138f7cc5c71eaacab351fe7633d7b7e553e33532bff37f900ce01b5ffbf24f8",
+            "message": "Document the 2026-10-09 control gateway tunnel outage, its cause and recovery"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261009105019-e2557e"
+}

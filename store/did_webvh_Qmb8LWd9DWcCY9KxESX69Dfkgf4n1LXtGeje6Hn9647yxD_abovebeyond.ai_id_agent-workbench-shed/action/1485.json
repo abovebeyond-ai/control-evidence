@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "97a423907e673d86210d46748f1c20a9ddd0136f",
+            "branch": "workbench/repair-in-working-set",
+            "files_sha256": "6f3b973b1a6e6a4a3f6b6db645a7a7d4d2834501429ef2e537df4bad64ace77b",
+            "message": "Policy log: send what each hand gains with a repair-only draft"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261009142248-05e2d1"
+}

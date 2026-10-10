@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`hand.mjs policy` says when the waiting draft only adds reversible actions (Elixir marked it `repairOnly`): it can then be approved with the passkey on Portal's Grants page, as well as signed on the token. README updated.\n\n`node --check hand.mjs` passes. `node --test` fails one test, `the draft and the version go through Portal's doors` (`r.json is not a function`), the same way on main; this change does not touch it.\n\nCompanion PRs: control, elixir, portal (`workbench/repair-signer`).\n",
+            "branch": "workbench/repair-signer",
+            "title": "hand.mjs policy: say when a draft can be approved by passkey"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261009133048-0e3283"
+}

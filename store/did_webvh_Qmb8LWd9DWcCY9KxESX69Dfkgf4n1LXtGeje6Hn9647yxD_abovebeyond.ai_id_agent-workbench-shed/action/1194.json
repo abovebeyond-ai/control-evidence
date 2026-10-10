@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "629d3b340b132ebd7d3d368c88b6bf64d2ba5079",
+            "branch": "workbench/stocklist-start-date-repair",
+            "files_sha256": "4a7648b0141e2e5d0cafd2d435c1156ffe9b0ec59bee38da2e46394648243165",
+            "message": "Give existing vehicles back the Stocklist start date that was chosen\n\nVehicles created 'on Stocklist within N months' before #971 still carry a start\ndate shifted by N months, and once saved again a publication date shifted by 2N.\nA migration recognises both from the dates and sets publication = the stored\nstart date, start = that minus N months.\n\nRefs #969"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009042903-772839"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e0c85777b6ce15f066232f072b20043b642de859",
+            "branch": "workbench/ov4-cluster-list",
+            "files_sha256": "68a4fb1e3dd077e9a0918fd8a7ebf59a7fa5e32cbc45c758f170bdea6f3b3129",
+            "message": "The project goal dropdown offers only clusters a new project can use\n\nChoosing a class no longer switches off the search term, category, grade\nand stream; the stream finds a cluster by its own stream like the grade\ndoes; a cluster is offered only when it holds a level the new/staying\nchoice shows, and never when archived.\n\nPortal: Bij het koppelen van eindtermen aan een project toont de lijst geen oude of gearchiveerde clusters meer, en de filters werken samen."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261009112322-969327"
+}

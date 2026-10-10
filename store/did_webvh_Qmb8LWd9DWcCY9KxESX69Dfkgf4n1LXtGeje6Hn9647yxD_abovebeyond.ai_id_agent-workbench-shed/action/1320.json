@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Adds `docs/owner-workflow-audit/README.md`, a critical read of the owner-facing side of the workbench, written from the code of portal, control, portal-cli, elixir and portal-android as of 9 October 2026.\n\nWhat it finds:\n- No single place lists what waits for the owner; pull requests are not in Portal at all.\n- The gateway's review request is best effort, configured in two places, and its failure is recorded but never shown.\n- Admitting a project while the gateway is down makes the knock disappear although nothing can happen; an agent that is gone loses its admission silently.\n- The tunnel restarts but cannot repair a corrupt gcloud settings database (4 and 9 October, written up in the incident document merged as #145); reads on the workbench fail with misleading errors when the gateway is down.\n\nIt recommends a computed *Waiting for you* list in Portal built on `OwnerState`, a four-state vocabulary, a prioritised list of ten fixes and a rollout of one small pull request per step. Documentation only: nothing here changes behaviour.\n\nTests: `npm test` (astro build and node tests) passes.\n",
+            "branch": "workbench/owner-workflow-audit",
+            "title": "Audit what waits for the owner and why it stays waiting"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261009110630-e6246e"
+}

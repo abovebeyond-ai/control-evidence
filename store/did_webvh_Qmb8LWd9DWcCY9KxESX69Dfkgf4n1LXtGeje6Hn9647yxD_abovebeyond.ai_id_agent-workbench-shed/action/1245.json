@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "10cc6c49bb428a1e046d5ba631598ed165bd07e5",
+            "branch": "workbench/range-uses-stored-coordinates",
+            "files_sha256": "93090c11b33a4559bfbeb126c8090dd4690153ead2ea7f013a51040b30ff96b8",
+            "message": "The website range starts at the garage's stored place, not at a Google lookup per view"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009060754-0c64e4"
+}

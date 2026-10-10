@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The four steps of \"How we read.\" on the home page now carry the method artwork instead of the drawn signal graph.\n\n**What changes**\n- Wide screens: the scroll scene stays. Each step opens as its starburst on the green ground and turns into its full collage halfway through the step, then hands over to the next starburst. The step copy is unchanged.\n- Phone: a plain list with each step's collage above its words.\n- No JavaScript, or reduced motion: the last collage stands (reduced motion steps instead of fading).\n\n**Images**\n- The originals are 2193 x 2246 PNGs of 5.6 to 9.4 MB with transparency; they stay out of the repo.\n- `public/img/how-we-read/` holds AVIF and WebP at 480, 800 and 1100 wide: 48 files, 3.4 MB. All lazy loaded; a phone fetches four collages (about 310 KB), a desktop all eight layers (about 500 KB).\n- The starbursts are rendered from the PDF at 4x, where they are vector masks over image tiles, rather than blown up from the 281-pixel covers. `bin/how-we-read-images.mjs` records the crop and the encoding; BRAND.md has a short section on it.\n\n**Checked**\n- Rendered locally at 1440 x 900, 1280 x 720 and 390 wide.\n- `php artisan test`: 424 passed. ESLint, `bin/lint-tailwind` and Pint pass.\n\nKnown and unchanged: at 1280 x 720 the step list touches the nav once the scene sticks; that list is the same as on main.\n",
+            "branch": "workbench/how-we-read-method",
+            "title": "How we read: the method artwork, a starburst that turns into its collage per step"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261009043839-527bcd"
+}

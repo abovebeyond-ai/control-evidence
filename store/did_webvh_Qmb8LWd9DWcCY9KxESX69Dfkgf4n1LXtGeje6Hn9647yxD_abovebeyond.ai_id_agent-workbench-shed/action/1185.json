@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #969\n\n## What was wrong\n\nA vehicle created with \"on Stocklist within N months\" stored its **start date** as start + N months. `OwnStockService::finalizeCreate` called `addMonths()` on the mutable `Carbon` it then also saved as `available_start_date`. The publication date written on creation was right, but the sheet showed \"Op Stocklist vanaf\" as start + 2N, and the next save of the sheet (`finalizeEdit`) recomputed the publication date from the shifted start, so the car went on Stocklist N months later than chosen.\n\n`finalizeEdit` already used `->copy()`; this does the same in `finalizeCreate`. The favourite-date comparison right below now also compares against the real start date.\n\n## Test\n\n`VehicleFormSaveTest::test_a_new_vehicle_with_a_delay_keeps_its_start_date_and_adds_the_months_once` creates a vehicle with a 2-month delay through the sheet, checks the stored start and publication dates, the \"on Stocklist from\" line, and that a second save does not move the date. It fails on `main`, passes here. Full suite: 3024 tests OK; PHPStan clean on the changed file.\n\n## Not in this PR\n\nVehicles already created this way still carry a shifted `available_start_date` (and, once saved again, a shifted publication date). Correcting them is a data decision and is left out on purpose.\n",
+            "branch": "workbench/stocklist-from-date",
+            "title": "Keep a new vehicle's Stocklist start date instead of saving it with the delay added"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261008150009-ef3bde"
+}

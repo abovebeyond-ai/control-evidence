@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:7",
+            "note": "Nothing to build: transport from dealer transactions live since 29/09 (da256e4b); missed mails already sent by Shane, issue #968 can be closed. Follow-up (cancel after a closed payment): fixed locally in e8ca459d, waiting for a go",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/issues/968"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261009042903-4c945b"
+}

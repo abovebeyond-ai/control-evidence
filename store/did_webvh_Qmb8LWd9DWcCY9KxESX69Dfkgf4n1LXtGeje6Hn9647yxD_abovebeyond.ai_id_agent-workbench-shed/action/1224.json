@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Twelve open issues describe findings that are already solved on main. This PR closes them on merge and brings the three finding files that still said `status: open` up to date.\n\n## Findings marked solved here\n- X-20, `herinneringen-tijdens-de-toewijstermijn` (#594): solved in #944. `Daily::doAlmostExpiredExports` looks up bids through `ExportVehicle::reminderEndDate()`, an end date in the past inside the assign window.\n- X-106, `een-eigen-wagen-toont-in-klantmodus-de` (#606): solved in #774. `CustomerModePrice::documentPrefill` checks for an own vehicle, so the offer modal and the lease row start at the retail price like the order price field.\n- X-51, `werklijst-car-pass-telt-mee-in-de` (#646): solved in #885. The worklist mail takes its lines from `WorklistDigest`, with its own Car-Pass line (`email.worklist_mail_line_carpasses`).\n\n## Already marked solved in their finding, issue never closed\n#570 and #576 (#688), #580 (#738), #585 (#736), #588 (#689), #601 (#960), #611 (#765), #612 (#663).\n\n## Answered, no change asked\n#970: the Car-Pass password field shows a fixed placeholder by design; the issue carries the answer.\n\nEach one was checked against the code on main. Full suite locally: 3029 tests OK (2 skipped, 1 incomplete).\n\nCloses #570\nCloses #576\nCloses #580\nCloses #585\nCloses #588\nCloses #594\nCloses #601\nCloses #606\nCloses #611\nCloses #612\nCloses #646\nCloses #970\n",
+            "branch": "workbench/docs/findings-solved-since-september",
+            "title": "Close twelve issues whose findings are solved; mark three stale findings solved"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009051950-c7f9dc"
+}

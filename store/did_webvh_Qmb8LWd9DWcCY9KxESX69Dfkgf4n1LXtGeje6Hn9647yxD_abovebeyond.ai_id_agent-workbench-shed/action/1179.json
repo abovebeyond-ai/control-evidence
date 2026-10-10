@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P3\nSummary: After changing a garage's Car-Pass password, the field shows fewer dots than the password has characters; the user asks whether the password was saved.\n\nSource: Portal mail:8.\n\n## The question\n\nA user updated the Car-Pass password in a garage's settings (Car-Pass tab). Afterwards a Car-Pass was successfully created for that garage, so the new password works, but the field shows fewer dots than the password has characters, which made them doubt it was saved.\n\n## Answer\n\nThis is by design. Since 2026-09-13 the password is stored encrypted and never sent back to the browser (`resources/views/settings/dealer/_tabs/carpass.blade.php`): the input is always empty, and the eight dots are a fixed placeholder that only says *a* password is stored, together with the \"Wachtwoord ingesteld\" marker. Leaving the field empty on save keeps the stored password.\n\nPossible follow-up, only if wanted: make the hint say explicitly that the dots do not reflect the length of the password.\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P3"
+            ],
+            "title": "Car-Pass password field shows fewer dots than the password has characters: is it saved?"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261008145524-31f6c2"
+}

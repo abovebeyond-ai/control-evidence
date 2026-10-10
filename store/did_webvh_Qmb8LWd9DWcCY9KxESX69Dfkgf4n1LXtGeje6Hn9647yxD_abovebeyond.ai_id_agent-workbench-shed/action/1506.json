@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #45: an empty piece shows only what starting needs, and the type in the Studio is one family.\n\n**An empty piece**\nA title counted as \"started\", and a piece started from a voice question has a title from the first moment. So an empty sheet came with every field of a finished post: the settings row (Goes to, Stage, Read by, By), the standfirst, the Opportunity section, Sources with its explanation, Elements, Cover, Versions and the sources line under the sheet. Now \"started\" means something is written (text, a source, a suggestion or a standfirst). Until then the editor shows the headline, the start line, the conversation, the bar with format, Share and Saved, and a quiet \"Delete this piece\" under the sheet.\n\n**Type**\n- The headline field is medium weight instead of bold; it was the one heavy thing on an empty sheet.\n- The start line under it (\"Start on the left, from wherever you are.\") was bold and outweighed the title; it is regular and a size smaller.\n- One typeface in the Studio: the welcome line on the home was the only text in Newsreader and is now Archivo, like everything else.\n\n**Checked**\n- Rendered against a local pipeline: a piece started from a question, before and after writing a first paragraph.\n- `npm test`: 11 passed. `vite build` passes.\n",
+            "branch": "workbench/studio/calm-empty-piece",
+            "title": "Studio: an empty piece shows only what starting needs; one typeface"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261009142604-fee4aa"
+}

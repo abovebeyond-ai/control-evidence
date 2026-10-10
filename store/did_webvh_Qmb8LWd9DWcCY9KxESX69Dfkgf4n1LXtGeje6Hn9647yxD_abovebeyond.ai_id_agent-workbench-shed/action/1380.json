@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Elixir's half of a policy widening approved by passkey (control `policy/repair.go`, *A widening by passkey* in control's `docs/working-set.md`).\n\n## What changes\n\n- **`PolicyLog::repairOnly`**: control's `policy.RepairOnly` ported line for line next to the ported `narrower`, with `REPAIR_KINDS` copied from `policy.RepairKinds`. A draft may add kinds from that list (to a hand or one of its tasks) and resources for hands that exist and hold only repair kinds, and nothing else.\n- **The draft is sent as `repairOnly`** only when the rule holds *and* the running gateway names Portal's key under its repair signers (`/v1/policy`, `Client::policy()` now returns `signers`). Before the carry-over the gateway would refuse Portal's signature, and a refused version blocks every later one.\n- **The configuration names `signers.repair`**: Portal's key (`#portal`) from the DID document.\n\n## Checked\n\n- The repair rule on the same cases as control's `policy/repair_test.go`; the draft marked only with a repair signer on the gateway; a widening beyond a repair never marked; the written configuration carrying `repair`.\n- `php artisan test`: 728 passed. PHPStan: no errors. Pint clean. Rebased on main after #240 (no overlap).\n\nCompanion PRs: control, portal, portal-cli (`workbench/repair-signer`).\n",
+            "branch": "workbench/repair-signer",
+            "title": "Policy log: mark a repair-only draft, name Portal's repair key"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261009132957-a5ffe9"
+}

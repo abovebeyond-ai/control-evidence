@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #209: \"How we read.\" laid out like the mockup in `THEMETHOD.pdf` (pages 3 to 10), and a scroll that is easier to follow.\n\n**Layout**\n- The heading on its own row; the artwork and the steps below it side by side, top-aligned, so step 01 sits level with the top of the picture.\n- The artwork takes 44% of the content width and the steps start at 58%. The picture is capped by the screen height, so on a 900 px tall screen it is a little narrower.\n- Each collage stands in the footprint of its starburst with its own margin around it, as the mockup places it.\n\n**Scroll**\n- The first starburst fades in as the section arrives; circle 01 lights up once it is there. Until now it was already present, and turned into its collage before the scene had stuck.\n- Within a step the starburst flows into its collage with the scroll. Between steps the collage holds, then tips over into the next starburst, and the next step lights up on that tip.\n- Progress counts from the moment the section sticks; the section is four screens tall instead of 3.2.\n- The eight layers are composited (`will-change`), decoded before the scene arrives, and their opacity is written only when it changes.\n\n**Images**\n- The collages lose their faintest halo (alpha below 40, the rest rescaled without a step); on white it read as grey smudges. The canvas stays whole. 48 files, 3.2 MB.\n- Image URLs carry `?v=3`, so browsers that cached the #209 cut fetch the new one.\n\n**Checked**\n- Rendered locally at 1440 x 900, 1512 x 860 and 1600 x 880; the order of states sampled every 75 px through the scene.\n- `php artisan test`: 424 passed. ESLint, `bin/lint-tailwind` and Pint pass.\n",
+            "branch": "workbench/how-we-read-layout",
+            "title": "How we read: laid out like the mockup, a flow within each step and a bump between steps"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261009054437-ecc330"
+}

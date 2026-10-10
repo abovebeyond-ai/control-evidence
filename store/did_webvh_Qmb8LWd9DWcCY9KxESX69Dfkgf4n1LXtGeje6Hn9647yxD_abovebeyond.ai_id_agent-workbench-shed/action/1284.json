@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "22ad275ee41e0b23ac7fddea3b28b3e616c32c56",
+            "branch": "workbench/netlify",
+            "files_sha256": "91e8d50df5a4a59c937b0c11a88373fcb5adc778d399811fdc9e3e4d28ed3ba3",
+            "message": "Serve site/build on Netlify as committed\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_019VC99egbCqFPVeBHdPd9HY"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261009070031-20a3ff"
+}

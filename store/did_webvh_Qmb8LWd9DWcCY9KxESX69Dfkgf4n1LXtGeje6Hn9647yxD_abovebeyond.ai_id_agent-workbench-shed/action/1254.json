@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #652\n\nOn the Transport tab, `SettingsController::updateTransport` wrote the posted text straight to the tariff table (`price`, `marge`, `total`) and to the platform settings. An administrator who typed `138,00`, the way the platform writes amounts everywhere else, got \"A non-numeric value encountered\" instead of a saved tariff.\n\n## Changes\n- The base price per class, the margin, the express percentage and the electric-car surcharge are read through `Custom::parseAmount`, the parser the vehicle sheet already uses: `138,00`, `138.00`, `1.380,00`, `1 380,00` and `1.380` all mean what a reader means.\n- A box with nothing numeric in it changes nothing (it used to store an empty string).\n- The box keeps showing `138.00`, like every amount box on the platform.\n- Rule R P2-8.5 describes the input; finding `transport-tarief-invoer-enkel-punt` marked solved.\n\n## Tests\n- `TransportConditionsFollowTheSwitchTest::test_the_administrator_types_a_tariff_with_a_comma_or_a_point`: comma, point, thousands separators, an empty box. On the old controller it fails with the non-numeric error.\n- Full suite locally: 3030 tests OK (2 skipped, 1 incomplete). PHPStan: no errors.\n",
+            "branch": "workbench/fix/transport-tariff-takes-a-comma",
+            "title": "The transport tariffs take an amount with a comma"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009061016-cfa046"
+}

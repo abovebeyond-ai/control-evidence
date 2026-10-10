@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pins the gateway to v0.37.0: `startup.sh` installs that release and checks the binary against `b7ae3573\u2026c3c5a5`, the sha256 the release's `SHA256SUMS` publishes, which also matches the downloaded `control-gateway-linux-amd64`.\n\nv0.37.0 is `main` at 13891ff. Since v0.35.0, the version that runs now, it adds:\n- the repair signer: `signers.repair` and `policy.RepairOnly` (#113)\n- `/v1/policy` naming the signers the gateway takes (#113)\n- conformance as facts and crosswalks (#112)\n- the working-set status doc (#114)\n\nv0.36.0 (#111) was never pinned; this skips it.\n\nAfter merge, the operator upgrades the gateway (`deploy/gcp/rehearse.sh upgrade`), then carries the configuration over once so the gateway learns `signers.repair` (Elixir #241 already writes it).\n",
+            "branch": "workbench/pin-v0.37.0",
+            "title": "The gateway runs v0.37.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261009135951-5e77dc"
+}

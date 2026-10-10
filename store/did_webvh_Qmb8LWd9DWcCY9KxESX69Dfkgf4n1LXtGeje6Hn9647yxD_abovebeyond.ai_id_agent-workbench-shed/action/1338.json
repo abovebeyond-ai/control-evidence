@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:9",
+            "note": "Already handled: issue #257, PR #258 merged 2026-10-09. What remains is data: the screenshot shows the old basisoptie sport goals (4.1, 4.7, 4.8, 4.9, 4.12, graad 1 B-stroom) without a badge, so on production they are flagged as staying (new=1, old=1), and the list offers them by design. Question: are these pre-reform goals that should be phasing out (new=0)? If so, change the flag on production after checking which current projects still have scores on them.",
+            "state": "parked"
+        },
+        "resource": "portal:naviskore-webapp"
+    },
+    "run": "workbench-20261009121611-50ae52"
+}

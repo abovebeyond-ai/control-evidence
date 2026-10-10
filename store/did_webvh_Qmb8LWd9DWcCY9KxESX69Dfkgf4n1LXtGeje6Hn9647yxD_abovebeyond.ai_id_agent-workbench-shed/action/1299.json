@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3b8047b765865f54aa6279a76061df32f10b0254",
+            "branch": "workbench/studio/write-lanes-curate-queue",
+            "files_sha256": "3793abdf336c018c0566fcf594936af6d95cd7b7fe11e1293ee978f8d0a36214",
+            "message": "Studio: Write as the path a piece travels, Curate as one decision queue"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261009105344-42ee64"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A policy draft that only adds reversible actions (portal #384) is now approved by passkey only inside the working set the owner signed on the token. The passkey's word is bounded by the set, as it is for an admission.\n\n## The rule (`PolicyApproval::outsideSet`)\n\n- A working set must be in force.\n- Every kind the draft adds is at or below the set's layer: B1 or B2, with the layer as Elixir sends it.\n- Everything the draft newly reaches belongs to a project in the set (`Grants::resourcesOf`):\n  - the resources it adds;\n  - the hand's resources an added kind acts on (`Grants::targetOf`). A new `portal.*` kind on a hand that names fifteen projects reaches all fifteen, so it needs the token unless all fifteen are in the set.\n- A repair-only draft without `adds` (an Elixir from before elixir's companion PR) is not offered to the passkey.\n\nIt is checked on the options and again on the touch, so a set that ended in between approves nothing. The approval kept beside the version names the set's `jti` and issuer. When the passkey may not approve, the Grants page says why and shows the token command.\n\n## Checked\n\n- New tests: no set; a kind above the set's layer; a resource outside the set; a new kind that reaches a project outside the set, and the same kind inside it; a draft without `adds`; a set that ends between the challenge and the touch.\n- With the set check disabled, those 5 tests fail.\n- `php artisan test`: 711 of 712 pass. `BuildStampTest` needs a build stamp that a worktree lacks; it passes in CI. PHPStan: no errors. Pint clean.\n\nThe gateway does not see the set: it bounds a `#portal` version by its own rule (control `policy/repair.go`), and the set is Portal's check.\n\nCompanion PRs: elixir and control (`workbench/repair-in-working-set`).\n",
+            "branch": "workbench/repair-in-working-set",
+            "title": "Approve a repair by passkey only inside the working set"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261009142303-b04a79"
+}

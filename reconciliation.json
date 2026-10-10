@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-08T07:34:19+00:00",
+    "computed_at": "2026-10-10T07:34:18+00:00",
     "window": {
-        "since": "2026-10-01T07:33:02+00:00",
+        "since": "2026-10-03T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -74,8 +74,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 7,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -104,8 +104,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 60,
-                "gateway": 14
+                "github": 44,
+                "gateway": 20
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 54,
-                "gateway": 1
+                "github": 18,
+                "gateway": 5
             }
         },
         "Trendwolves/glk-transferor": {
@@ -135,8 +135,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 6,
-                "gateway": 5
+                "github": 11,
+                "gateway": 10
             }
         },
         "abovebeyond-ai/portal": {
@@ -145,8 +145,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 47,
-                "gateway": 45
+                "github": 55,
+                "gateway": 53
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -196,8 +196,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 83,
-                "gateway": 9
+                "github": 37,
+                "gateway": 18
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -206,8 +206,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 4,
+                "gateway": 4
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -283,8 +283,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 30,
-                "gateway": 1
+                "github": 10,
+                "gateway": 3
             }
         },
         "Trendwolves/gentells-standard": {
@@ -294,8 +294,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 6,
-                "gateway": 1
+                "github": 7,
+                "gateway": 2
             }
         },
         "Trendwolves/gentells-studio": {
@@ -305,8 +305,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 19,
-                "gateway": 6
+                "github": 15,
+                "gateway": 11
             }
         },
         "abovebeyond-ai/bextrust": {
@@ -316,8 +316,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 1
+                "github": 4,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/control": {
@@ -327,8 +327,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 17,
-                "gateway": 17
+                "github": 23,
+                "gateway": 23
             }
         },
         "abovebeyond-ai/control-verify-action": {
@@ -349,8 +349,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 13,
-                "gateway": 9
+                "github": 18,
+                "gateway": 14
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -382,8 +382,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 43,
-                "gateway": 37
+                "github": 47,
+                "gateway": 41
             }
         },
         "abovebeyond-ai/proof-of-control": {
@@ -710,19 +710,18 @@
         }
     },
     "unexplained": [
-        "ShaneDeconinck/naviskore: 7 pulls on GitHub, 0 performed by the gateway",
         "ShaneDeconinck/shanedeconinck.be: 1 pulls on GitHub, 0 performed by the gateway",
-        "Trendwolves/gentells-pipeline: 60 pulls on GitHub, 14 performed by the gateway",
-        "Trendwolves/gentells-site: 54 pulls on GitHub, 1 performed by the gateway",
-        "abovebeyond-ai/abovebeyond: 6 pulls on GitHub, 5 performed by the gateway",
-        "abovebeyond-ai/portal: 47 pulls on GitHub, 45 performed by the gateway",
-        "stocklistdealer-eu/platform: 83 pulls on GitHub, 9 performed by the gateway",
-        "Trendwolves/gentells-dashboard: 30 pulls on GitHub, 1 performed by the gateway",
-        "Trendwolves/gentells-standard: 6 pulls on GitHub, 1 performed by the gateway",
-        "Trendwolves/gentells-studio: 19 pulls on GitHub, 6 performed by the gateway",
-        "abovebeyond-ai/bextrust: 3 pulls on GitHub, 1 performed by the gateway",
-        "abovebeyond-ai/elixir: 13 pulls on GitHub, 9 performed by the gateway",
-        "abovebeyond-ai/portal-cli: 43 pulls on GitHub, 37 performed by the gateway",
+        "Trendwolves/gentells-pipeline: 44 pulls on GitHub, 20 performed by the gateway",
+        "Trendwolves/gentells-site: 18 pulls on GitHub, 5 performed by the gateway",
+        "abovebeyond-ai/abovebeyond: 11 pulls on GitHub, 10 performed by the gateway",
+        "abovebeyond-ai/portal: 55 pulls on GitHub, 53 performed by the gateway",
+        "stocklistdealer-eu/platform: 37 pulls on GitHub, 18 performed by the gateway",
+        "Trendwolves/gentells-dashboard: 10 pulls on GitHub, 3 performed by the gateway",
+        "Trendwolves/gentells-standard: 7 pulls on GitHub, 2 performed by the gateway",
+        "Trendwolves/gentells-studio: 15 pulls on GitHub, 11 performed by the gateway",
+        "abovebeyond-ai/bextrust: 4 pulls on GitHub, 2 performed by the gateway",
+        "abovebeyond-ai/elixir: 18 pulls on GitHub, 14 performed by the gateway",
+        "abovebeyond-ai/portal-cli: 47 pulls on GitHub, 41 performed by the gateway",
         "abovebeyond-ai/workspace: 10 pulls on GitHub, 8 performed by the gateway"
     ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind, counted across pages until the window closes (rows 10.3.2, 10.3.4)"

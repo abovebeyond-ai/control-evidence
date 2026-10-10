@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Correction to #146. The follow-up section said that `ELIXIR_CONTROL_PRINCIPAL_KEY` in the box's crontab was exposed and should be rotated. It is Portal's public key, the same value the DID log publishes as `#portal` (the Ed25519 `x` decodes to the same hex), so it is not a secret and needs no rotation.\n\nAlso records the rest of the follow-up as done: elixir #240 merged and active since the tunnel restart, and the gcloud SDK on the box updated from 583.0.0 to 588.0.0.\n\nDocumentation only.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_017kEkAkYfjRDyJQUaAAfDu5\n",
+            "branch": "workbench/gateway-incident-key-correction",
+            "title": "Incident 2026-10-09: the crontab key is public, follow-up done"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261009131743-5fcb26"
+}

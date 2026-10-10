@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "99957562000cfdccb16c1e5ca69ca499e504b8a6",
+            "branch": "workbench/how-we-read-method",
+            "files_sha256": "608b958b654fcd7de170b72d426c745e1b66c07308324f4715f62f983b07695f",
+            "message": "How we read: the method artwork, a starburst that turns into its collage per step"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261009043839-527bcd"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "8fb0ee9eebf515d9324df3adbf8ad916",
+    "effect": {
+        "detail": {
+            "base": "99957562000cfdccb16c1e5ca69ca499e504b8a6",
+            "branch": "workbench/how-we-read-method",
+            "commit": "b2967283d9b8fd08f1204df9b4b741abb662da97",
+            "files": 52,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1215,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #971, refs #969.\n\n## What this repairs\n\n#971 stopped new vehicles from getting a shifted start date. Vehicles created before it, including those from the legacy site (the same line was in the old `OwnStockController`), still carry the shift:\n\n| state | start date | on Stocklist from (stored) | sheet shows \"Op Stocklist vanaf\" |\n|---|---|---|---|\n| chosen | S | S + N | S + N |\n| never saved since creation | S + N | S + N | S + 2N |\n| saved again (sheet or Publiceren) | S + N | **S + 2N** | S + 2N |\n\nIn both broken states the stored start date is the date the car should go on Stocklist, so the migration sets `available_on_stocklist_date` = stored start date and `available_start_date` = stored start date minus N months. After it, the sheet shows the chosen start date and the chosen publication date again.\n\n## How a shifted row is recognised\n\nThere is no history of these columns, so it reads the dates:\n\n- **never saved since creation**: start date = publication date with N > 0. A correctly saved vehicle cannot look like that.\n- **saved again**: publication = start + N, and start \u2212 N falls on the creation day or within 7 days after it (a draft is finalized later). A correct vehicle only matches if someone picked a start date N months ahead by hand; such a row would be moved back N months.\n\nOnly unsold, undeleted, complete own vehicles (`for_export = 0`) with N > 0. Every changed row is logged (`stocklist start date repaired`, with old and new dates) and the total at the end. No `down()`: once repaired, the shifted rows cannot be told apart.\n\n## What changes for users on deploy\n\nFor vehicles in the \"saved again\" state whose corrected publication date is already past, the car **appears on Stocklist at deploy**. That is the date the dealer chose, but it is earlier than what their sheet showed until now. No mail or job is tied to the date; visibility is only the `available_on_stocklist_date <= today` query.\n\n## Test\n\n`StocklistStartDateRepairTest`: both shifted states and the late-finalized draft are repaired; a correct vehicle, a hand-picked later start, a \"direct\" vehicle, and sold or deleted vehicles keep their dates; a second run changes nothing. Full suite: 3026 tests OK; PHPStan clean on the new files.\n",
+            "branch": "workbench/stocklist-start-date-repair",
+            "title": "Give existing vehicles back the Stocklist start date that was chosen"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009042903-772839"
+}

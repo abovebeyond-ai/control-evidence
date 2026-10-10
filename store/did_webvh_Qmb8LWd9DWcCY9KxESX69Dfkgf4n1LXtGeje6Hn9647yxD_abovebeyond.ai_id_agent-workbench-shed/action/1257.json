@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "10cc6c49bb428a1e046d5ba631598ed165bd07e5",
+            "branch": "workbench/fix/order-keeps-its-options-switch",
+            "files_sha256": "3a6f3bf9f2bffeebb8f75d1bf13526c274e58b87a02bb70baae3c04b3e996f77",
+            "message": "An edited order shows its \"Eigenschappen weergeven\" as it was saved\n\nThe switch was always on in the order form, so saving an edited order without looking turned\nthe options back on. It now starts on for a new order and shows the stored with_options\notherwise."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009061637-ced8e1"
+}

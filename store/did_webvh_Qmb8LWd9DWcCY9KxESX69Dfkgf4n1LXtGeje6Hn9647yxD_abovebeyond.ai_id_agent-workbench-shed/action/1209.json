@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #973\n\nA garage closed a Mollie payment without paying, cancelled the transport in the transport window, and was then told \"Een betaald transport kan hier niet meer geannuleerd worden\", while the transport was cancelled and nothing was paid.\n\nThe window's cancel only hid the window. The list behind it still offered \"Aanvraag annuleren\", and a second cancel from there hit `TransportController::cancel` for a cancelled transport, whose only refusal is the paid-transport message.\n\n## Changes\n- `TransportController::cancel`: a transport that is already cancelled answers `success: true` (no second call to Mollie).\n- `_modal/show_footer.blade.php`: after a cancel the page reloads, as the row actions already do; a refused cancel shows its message instead of doing nothing.\n- `TransportController::returned`: a cancelled transport redirects to the overview with \"Dit transport is geannuleerd. Er is niets aangerekend.\" (nl, en, fr, de) instead of `?processing=`, which polled and came back every three seconds.\n- Rules R S4-10.12 and R S4-10.15 describe both.\n\n## Tests\n- Three new tests in `TransportChainTest`: cancelling twice, the window reload and error notice, back from Mollie for a cancelled transport.\n- Full suite locally: 3027 tests OK (2 skipped, 1 incomplete). PHPStan: no errors.\n\nPortal: Annuleren van een transport na een afgebroken betaling geeft geen foute melding meer\n",
+            "branch": "workbench/fix/transport-cancel-after-closed-payment",
+            "title": "Cancelling a cancelled transport is a yes, and the window shows the page after a cancel"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009043500-e31f18"
+}

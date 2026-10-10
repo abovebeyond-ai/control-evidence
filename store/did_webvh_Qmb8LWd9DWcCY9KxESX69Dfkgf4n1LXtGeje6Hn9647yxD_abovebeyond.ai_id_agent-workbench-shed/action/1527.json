@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "de8d3aa6e9235a0619c14105e79a3a5604e9f97e",
+            "branch": "workbench/pipeline/body-images",
+            "files_sha256": "8f3df90e3196fc65015082703e65e1467aca6b12e4cc8586e447269921c0e106",
+            "message": "Images in a piece's text: not claims, and absolute for gentells.com"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261009144752-2e9a80"
+}

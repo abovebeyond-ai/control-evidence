@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bbe71ae0ae49eb19588e5ac6122a0e2942ac82eb",
+            "branch": "workbench/portal/repair-asks",
+            "files_sha256": "3751b6378bd088debe4ad12ef524b529d165857e0e5a68a746f6bb9f3cc24591",
+            "message": "A knock to repair or read says so and links to the button that answers it\n\nA knock for a layer (B2 repair, B1 read) is answered only by that layer's own\nadmission on the project page; WorkbenchRequest::answer closes the knocks of the\nlayer admitted and no others. The werkbank page listed such a knock under a\ncheckbox it ticked, and that checkbox admits proposals. Admitting the selection\nanswered the proposal knock beside it and left the repair knock standing for its\nwhole day, so the approval looked as if it had not taken.\n\n- workbench page: a layered knock reads \"asks to repair\" (or \"asks to read\"),\n  without the \"[repair]\" tag in its reason, with a link to the project page where\n  its button is, and no longer ticks the proposals checkbox on its own\n- owner state (the phone and the overview): the same sentence, and its link goes\n  to the project page instead of /portal/werkbank\n- WorkbenchRequest::answeredOnProjectPage, layerWord and plainReason\n- Dutch translations for the new strings"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261010073404-56a273"
+}

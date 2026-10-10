@@ -1,0 +1,16 @@
+{
+    "action": "de89b4a779b6b13a73ceb668f3e597c2",
+    "effect": {
+        "detail": {
+            "base": "fb72f01655271dc1668a128c7c5716579c11d22b",
+            "branch": "workbench/docs/findings-solved-since-september",
+            "commit": "e0970e3f21f8240e99d8e8d0a910d2fd94ff8563",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1221,
+    "verdict": "ALLOW"
+}

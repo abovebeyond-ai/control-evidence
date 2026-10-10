@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dd6fa3e393fd10888ef0c28630a64204b923c599",
+            "branch": "workbench/voice-page-one-reply",
+            "files_sha256": "f197983b84842d4f19ecb53065ce7983f70f52211242734b86b3d42be8b7ab87",
+            "message": "Voice screen: one reply per turn through the bridge's turn lock"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261009134657-04400e"
+}

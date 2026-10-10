@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "75875e80f44d28753a26b56253435dd4b748f76e",
+            "branch": "workbench/studio/calm-empty-piece",
+            "files_sha256": "a01f0fb11921b2d07e34478e30ce0e95b6e61d63128a555e59b831437ce7c6f5",
+            "message": "Studio: an empty piece shows only what starting needs; one typeface"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261009142604-fee4aa"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f77f3585d6f58ac67b4aaf43d581845334b66a21",
+            "branch": "workbench/pipeline/shared-drafts",
+            "files_sha256": "67dcd7e7dad77eefab358e3c9ceb940b600bcc7198118f13f73dee43fdc74f81",
+            "message": "Drafts can be shared with colleagues; starting to write approves a research question"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261009140921-7ec919"
+}

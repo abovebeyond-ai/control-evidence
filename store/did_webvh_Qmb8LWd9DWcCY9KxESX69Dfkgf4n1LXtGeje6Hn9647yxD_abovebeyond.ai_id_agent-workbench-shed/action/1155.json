@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Records in `docs/working-set.md` that everything the token signs at the laptop can now be signed on the phone over NFC: a working set, a policy widening, and an admission (reading for 30 days included). It covers why the gateway needed no change, the two checks that stand in for the origin binding PIV lacks (the app's check of the offer against the owner's choice, Portal's check of the token against its offer), the step-up, the fallback, and what is still open: PIV attestation of slot 9c beside each operator key, and a run with a real key.\n\nThe code is in abovebeyond-ai/portal and abovebeyond-ai/portal-android, branch `workbench/admit-on-yubikey`.\n",
+            "branch": "workbench/phone-signing-doc",
+            "title": "Working set: the owner's key on the phone, as built"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261008112843-a058bb"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`npm audit --audit-level=high` in the Dependency audits job started failing on 2026-10-09 on advisories published after the last green run on main (2026-10-02), which blocks every open PR, #258 among them:\n\n- GHSA-g2v6-rqmx-r4w6 (high): `@vue/server-renderer` < 3.5.42, XSS via a missing CR in the attribute-name blacklist\n- GHSA-68fv-2mgg-jv7q (high): `source-map-js` 1.0.0 to 1.2.1, event-loop denial of service\n- GHSA-rj75-hqrm-r3gf (moderate): `postcss-selector-parser` < 7.1.6, quadratic selector parsing\n\n`npm audit fix`, lockfile only, patch versions within the ranges `package.json` already allows: vue and its `@vue/*` packages 3.5.41 to 3.5.43, source-map-js 1.2.2, postcss-selector-parser 7.1.6, postcss 8.5.29, nanoid 3.3.20, `@babel/*` 7.29.9. `package.json` is unchanged.\n\nChecked locally: `npm audit` finds 0 vulnerabilities, `npm run build` builds, `npm run lint` gives 0 errors and 12 warnings (the CI limit is 12).\n",
+            "branch": "workbench/npm-audit-oct",
+            "title": "Lockfile: patch vue, source-map-js and postcss-selector-parser for new advisories"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261009111221-c342dc"
+}

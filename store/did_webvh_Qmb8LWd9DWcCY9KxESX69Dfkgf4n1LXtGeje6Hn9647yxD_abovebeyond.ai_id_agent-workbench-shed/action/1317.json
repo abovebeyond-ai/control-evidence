@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0b78496ef8d37fc42fd45d2993011370573267bd",
+            "branch": "workbench/owner-workflow-audit",
+            "files_sha256": "2173431ad0bd2b273a122dde921a76c093a57560f6339696b8306aaff1a3d2b0",
+            "message": "Audit what waits for the owner and why it stays waiting"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261009110630-e6246e"
+}

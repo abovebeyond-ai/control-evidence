@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:8",
+            "note": "Issues #969 (bug P1, fixed by merged PR #971; existing vehicles repaired by migration in PR #972) and #970 (question P3, Car-Pass dots are a fixed placeholder)",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/972"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261009042921-f34b57"
+}

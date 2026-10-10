@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Documentation only. Adds a short paragraph to the README on what `elixir:control-service` does when the IAP tunnel does not open, and what to do when that is not enough.\n\nThe code side of this was already merged as #240: the tunnel runs with its own `CLOUDSDK_CONFIG` under the control directory, a corrupt `.db` there is set aside (never deleted), and the last `ERROR` line of `tunnel.log` reaches the job note in Portal. What was missing is the runbook pointer: `tail -n 40 tunnel.log`, `php artisan elixir:control-service --status`, then the recovery plan in abovebeyond `docs/incidents/2026-10-09-control-gateway-tunnel.md`.\n\nNo behaviour changes; merging deploys only the README.\n",
+            "branch": "workbench/tunnel-own-gcloud-config",
+            "title": "README: what to do when the control tunnel does not open"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261009133419-267bdd"
+}

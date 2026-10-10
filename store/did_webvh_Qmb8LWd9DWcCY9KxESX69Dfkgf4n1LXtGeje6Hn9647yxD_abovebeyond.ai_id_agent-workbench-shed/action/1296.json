@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Reported from athena OV4 (school 10): when a teacher builds a new project and links goals in the \"Eindtermen koppelen en ontkoppelen\" dropdown, the goals of basisoptie sport from before the reform still turn up, the new eindtermen are hard to single out, and linking an attainment cluster leaves the old basisoptie goals in the project.\n\nProduction runs 2be639d (2026-10-02), so the fix of 2026-09-30 (b7cc29c: a cluster brings only the levels the Nieuw/Blijvend choice shows) is live. What that fix left open is the cluster list itself, `SearchDropdownAttainmentLevelAndAttainmentLevelCluster::getAttainmentLevelClusters`:\n\n1. **Choosing a class switches the other filters off.** The class filter ends in a loose `orWhere(grade, stream, no degree programme)`, so every cluster of the grade and stream of the class comes through whatever the search term, the category or the grade says.\n2. **The stream filter hides a basisoptie.** It only matches through the degree programme, while a basisoptie cluster hangs on a grade and a stream without one (the grade filter already checks both).\n3. **A cluster that holds only goals from before the reform is still offered**, and so is an archived cluster. Linking the old one brings nothing (since 2026-09-30), but it sits next to the cluster that replaced it, and before 2026-09-30 it brought every goal it held.\n\nOpen question for the data: in the existing test the 2019 goals of basisoptie sport (B-stream) are modelled as *staying* (new and old both set). If the old basisoptie sport goals for OV4 carry that flag on production, the list offers them by design and the flag is what needs changing, not the code.\n\nExisting projects keep their goals; this is about what a new project is offered and brings.\n",
+            "title": "OV4: the goal dropdown of a project still offers the old basisoptie sport goals"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261009105254-0b93ef"
+}

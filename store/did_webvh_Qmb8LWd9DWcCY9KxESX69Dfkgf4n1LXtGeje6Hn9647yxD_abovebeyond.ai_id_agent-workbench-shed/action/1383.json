@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d748136704673a610c763b5aa7e536bce50f940d",
+            "branch": "workbench/repair-signer",
+            "files_sha256": "b05dc4030879b662e19fd84550d7715d09416711acda7324f60c058969dff9a1",
+            "message": "Approve a repair-only policy draft by passkey; Portal signs it with #portal"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261009133014-5d31d9"
+}

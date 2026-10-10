@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #257.\n\nProduction runs 2be639d, so b7cc29c (a cluster brings only the levels the Nieuw/Blijvend choice shows) is live. The cluster list in the project goal dropdown still had three gaps, all in `getAttainmentLevelClusters`:\n\n- **Choosing a class switched the other filters off.** The class filter ended in a loose `orWhere(grade, stream, no degree programme)`, so every cluster of that grade and stream came through whatever the search term, category or grade said. It is now grouped.\n- **The stream filter hid a basisoptie.** It matched only through the degree programme; a basisoptie cluster hangs on a grade and stream without one. It now matches the cluster's own stream too, as the grade filter already did.\n- **A cluster of only pre-reform goals, or an archived one, was still offered.** The list now offers a cluster only when it holds a level the Nieuw/Blijvend choice shows, the same levels linking it brings, and never an archived one.\n\nExisting projects keep their goals; this changes only what the dropdown offers.\n\nNew rules R S1-2.3 and S1-2.4 in `docs/bedrijfsregels/11-s1-een-project.md`, pinned by three new tests in `SearchDropdownAttainmentLevelTest` that fail on main and pass here.\n\n**Tests.** Full suite on MariaDB 10.11: 1352 passed, 21 failed, 7 skipped. The same 21 fail on a clean main in that environment: they need a Vite build and Chrome (LoginPage, BuildStamp, report archive and print tests). Pint and PHPStan clean on the changed file.\n\n**Data question, left open.** The existing test models the 2019 basisoptie sport goals as *staying* (new and old both set). If the old OV4 basisoptie goals carry that flag on production, the list still offers them by design, and the flag needs changing rather than the code.\n",
+            "branch": "workbench/ov4-cluster-list",
+            "title": "Project goal dropdown: filters hold, no pre-reform or archived clusters"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261009110956-1bc558"
+}

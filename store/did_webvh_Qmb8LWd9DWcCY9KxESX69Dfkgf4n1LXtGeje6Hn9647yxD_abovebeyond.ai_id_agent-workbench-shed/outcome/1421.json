@@ -1,0 +1,16 @@
+{
+    "action": "4b542d1e8ec172a426989ba867a542ed",
+    "effect": {
+        "detail": {
+            "base": "d748136704673a610c763b5aa7e536bce50f940d",
+            "branch": "workbench/verdict-says-what-to-do",
+            "commit": "0d46a58dbac5650387c8786a938c8f039c16cd9a",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1419,
+    "verdict": "ALLOW"
+}

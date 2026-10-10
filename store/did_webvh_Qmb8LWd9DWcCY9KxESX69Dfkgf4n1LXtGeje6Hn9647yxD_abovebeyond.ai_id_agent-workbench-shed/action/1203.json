@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: After closing a Mollie payment without paying and cancelling the transport, a garage was told that \"a paid transport can no longer be cancelled\", while the transport was in fact cancelled and nothing was paid. The message is wrong and alarming for a garage trying transport for the first time.\n\nSource: Portal mail:7 (follow-up from the platform on 9 October 2026).\n\nWhat the garage did: requested a transport, went to the payment screen, closed the payment without paying, and cancelled. It got the \"paid transport\" refusal, yet the transport shows as cancelled.\n\nCause, from the code:\n- A cancel in the transport window (`_modal/show_footer.blade.php`) only hides the window. The list behind it keeps offering \"Aanvraag annuleren\" for the request that was just cancelled.\n- Cancelling again from there reaches `TransportController::cancel` for a cancelled transport. `isCancellable()` is false, and the only refusal message is `transport.cannot_cancel_after_payment`.\n- The first cancel did ask Mollie first and only cancelled because the payment was not paid, so the state is right; only the answer and the stale screen are wrong.\n\nRelated, same path: `TransportController::returned` sends a cancelled transport back to \"being processed\" (`?processing=`), and the overview then polls and comes back every three seconds.\n\nExpected: cancelling a cancelled transport answers yes; the page shows the new state after a cancel in the window; a refused cancel says why; back from Mollie, a cancelled transport says it is cancelled and nothing was charged.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Cancelling a transport after a closed payment says it was paid"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009043448-7b4a48"
+}

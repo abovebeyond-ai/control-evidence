@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7fe995eff566a988c39c8c1883d3c2aec4a8ada4",
+            "branch": "workbench/open-pulls-to-portal",
+            "files_sha256": "977d859cfb71228dfd18fbe5a8a1264d6ec923815915687cb36e5a489fad8912",
+            "message": "Report the open pull requests on the granted repositories to Portal"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261009143458-abb273"
+}

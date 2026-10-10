@@ -1,0 +1,16 @@
+{
+    "action": "80354914bca55911184ce660b1369e6f",
+    "effect": {
+        "detail": {
+            "base": "22ad275ee41e0b23ac7fddea3b28b3e616c32c56",
+            "branch": "workbench/netlify",
+            "commit": "e8f6e28332a4a1e1f293e632a3b8b4753a268480",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1284,
+    "verdict": "ALLOW"
+}

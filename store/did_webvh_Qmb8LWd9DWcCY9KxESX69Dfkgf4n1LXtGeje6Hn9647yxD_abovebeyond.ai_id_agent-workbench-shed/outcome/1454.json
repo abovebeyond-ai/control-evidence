@@ -1,0 +1,10 @@
+{
+    "action": "4ad36b3a4c67df567a2ae88e0d731085",
+    "effect": {
+        "error": "GitHub answered 422 for the tree: tree.sha 24acddff7702bcc239d801d7e9e603efac15feec is not a valid blob",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 1452,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "9327ea9cc66d4b0b67a2a0de6b94a4b5",
+    "effect": {
+        "detail": {
+            "base": "c6e406f84818ff3cedeb7351f22d68325e60c1f2",
+            "branch": "workbench/gateway-incident-key-correction",
+            "commit": "b2b4bdfaff091e0145e3832c444ecafd29304435",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1350,
+    "verdict": "ALLOW"
+}

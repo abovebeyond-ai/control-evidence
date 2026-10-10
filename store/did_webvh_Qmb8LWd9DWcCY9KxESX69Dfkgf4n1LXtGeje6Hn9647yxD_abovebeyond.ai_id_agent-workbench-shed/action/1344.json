@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:9",
+            "note": "Issue #257, PR #258 merged. Data: old basisoptie sport goals 4.1-4.12 (ids 508-519, Sport graad 1 B) set to phasing out on prod by Shane on 2026-10-09; old reports keep them (their classes are new_or_old=0).",
+            "state": "done",
+            "url": "https://github.com/ShaneDeconinck/naviskore/pull/258"
+        },
+        "resource": "portal:naviskore-webapp"
+    },
+    "run": "workbench-20261009125510-2eb73e"
+}

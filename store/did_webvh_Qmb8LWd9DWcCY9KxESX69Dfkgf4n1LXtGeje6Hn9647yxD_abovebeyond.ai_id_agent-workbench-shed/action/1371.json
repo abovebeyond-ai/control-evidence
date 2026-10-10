@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b4355c3141741e5e577d340c4f16df1bcdc1282",
+            "branch": "workbench/repair-signer",
+            "files_sha256": "d1cf0b5a2976aba52fc6984dde8e7c342cb0cebaa914877562f8fbee7d896414",
+            "message": "Policy log: a repair signer adds reversible kinds and resources, nothing else"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261009132932-1f9bf2"
+}

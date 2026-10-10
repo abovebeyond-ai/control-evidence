@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The IAP tunnel to the control gateway went down three times in ten days (30 September, 4 and 9 October 2026), each time the same way: `~/.config/gcloud/default_configs.db` on the box stopped being SQLite, every gcloud call crashed with `DatabaseError: file is not a database`, and every hand was closed until the file was moved by hand.\n\nAll three broken files carry the same fingerprint: `SQLit`, then 24 bytes at offset 5 that are one encrypted TLS record (`17 03 03 00 13` plus 19 bytes), then the original header again. A TLS record was written to a file descriptor that had been a socket. The only gcloud process on the box is the tunnel itself, and each time it broke between 07:45 and 07:55 UTC, right after the daily control jobs (07:20 to 07:35) send their traffic through it.\n\nThis change, in `elixir:control-service` (remote mode):\n\n- **Its own gcloud directory.** The tunnel runs with `CLOUDSDK_CONFIG=~/control/gcloud`, so its caches are no longer shared with any other use of gcloud on the box. The daily update check is off for it (`CLOUDSDK_COMPONENT_MANAGER_DISABLE_UPDATE_CHECK=1`).\n- **Self-repair.** Before a new tunnel starts, every `*.db` in that directory that does not begin with the SQLite header is renamed to `<name>.broken-<UTC time>`. These are caches gcloud rebuilds. The check runs only while no tunnel runs, so nothing is writing them. The note in Portal then says which file was set aside, instead of only `NOT reachable`.\n\nWith the existing three-minute heal, a corrupted cache now costs a few minutes instead of hours. It does not fix the underlying gcloud race; updating the SDK on the box is a separate operator step.\n\nThe running tunnel keeps its old directory until it restarts; the next start uses the new one.\n\nTests: two new cases in `ControlTunnelHealTest` (the 9 October fingerprint is set aside, a healthy cache is left alone); the full suite passes (722 tests).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_017kEkAkYfjRDyJQUaAAfDu5\n",
+            "branch": "workbench/tunnel-gcloud-cache",
+            "title": "Control tunnel: own gcloud directory, set a corrupt cache aside"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261009110618-c619bf"
+}

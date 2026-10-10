@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "99856d3cf527e42b3a37c54716436448325ac7f4",
+            "branch": "workbench/gateway-as-a-service",
+            "files_sha256": "527ce0a45462d8ffd46f83c57c47a3c5dd417228a40354a4959b054bb29667a6",
+            "message": "Draft the gateway as a service: data classes, routing, workshop"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261009162948-3da2ec"
+}

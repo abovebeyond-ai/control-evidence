@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A draft, for reading: how the gateway could be offered to other companies, and the framework a company uses to decide what its agents may see, keep, say and do.\n\n## What is in it\n\n- `docs/gateway-as-a-service/README.md`: the offer, what the company keeps and what we cannot do, the architecture (one confidential gateway per company from one measured image; a shared control plane that holds no company authority), uptime (B1 reads bypass the gateway, no shared tunnel box in front, a warm standby behind a lease on the chain head), a rollout for one company, and seven implementation steps as follow-up pull requests.\n- `docs/gateway-as-a-service/classification.md`: five data classes; what may be learned and where it may be said per class; what an MCP server shows and hides (allow-listed fields, no personal rows, no secrets, no writes); layers B1 to B5; roads (direct, gateway, person); approvals, with every B3 and B4 action signed on the YubiKey (NFC on the phone or at the laptop) and never by passkey alone.\n- `docs/gateway-as-a-service/workshop.md`: a one-day format with four worksheets that map one-to-one onto the system map.\n- `scripts/gateway-routing.mjs` and `test/gateway-routing.test.mjs`: the rules as code. A company's map in, the layer, road, approval and handling per command out. A command with a field left open is refused. The test pins each rule and fails if the worked example in the doc drifts from what the code decides.\n\n## Choices worth a look\n\n- One VM per company instead of a shared multi-tenant gateway, because the confidential VM is what bounds who reaches a company's GitHub credential.\n- Settles open question 3 of control's `working-set.md` in the proposal: irreversible actions on the token, always.\n- A write on personal data is B3 even when reversible. The example's `crm.note_add` shows the cost.\n- No prices or machine costs: none has a source yet.\n\n## Tests\n\n`npm test`: 33 pass, 1 skipped (as on main). `scripts/brand-lint.mjs` on the new files: 0 findings.\n",
+            "branch": "workbench/gateway-as-a-service",
+            "title": "Draft the gateway as a service: data classes, routing, workshop"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261009162948-3da2ec"
+}

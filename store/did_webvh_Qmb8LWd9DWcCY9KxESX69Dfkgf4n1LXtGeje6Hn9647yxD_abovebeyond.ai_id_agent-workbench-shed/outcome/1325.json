@@ -1,0 +1,16 @@
+{
+    "action": "42db99e89110be74fcb3ebce01f0bade",
+    "effect": {
+        "detail": {
+            "base": "2be639d27090c5ebeecad49b6d76a76b2895af68",
+            "branch": "workbench/ov4-cluster-list",
+            "commit": "a231c7cae7e24ee09064382dde205d721d38429b",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1323,
+    "verdict": "ALLOW"
+}

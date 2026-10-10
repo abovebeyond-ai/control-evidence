@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes bevinding een-geweigerde-google-sleutel-leegde-de-gedeelde-stock.\n\n## What was wrong\n\nA garage with a range limit in its website settings shows colleagues' vehicles within that range on its website widget, showroom and public API. `VehicleRepository::sharedStockClause` asked Google for the garage's own postcode on every call. In production Google answered `REQUEST_DENIED` (\"The provided API key is invalid\"); a refused lookup returns no coordinates, `sprintf('%f')` turned them into 0,0, every colleague was thousands of km away, and the shared stock of those garages was empty without any message. On 9 October 2026 that was 11 garages. The key has been replaced on the server; this change makes the range independent of it.\n\n## What changes\n\n- The centre of the range is the garage's own stored `latitude`/`longitude` (set when its address is saved; on 9 October 2026, 549 of 551 garages had them and the other 2 were being filled in). A page view no longer calls Google.\n- Only a garage without stored coordinates (or with a stored 0,0) is looked up, as before.\n- When nobody knows where the garage is, the range is skipped and a warning is logged, instead of hiding every colleague. This is a choice: the alternative is to keep hiding them. A wider list was judged better than an empty one for a dealer's website; it is one line to flip.\n- New rule R S2-5.28 and the finding, solved here.\n\n## Tests\n\n`WebsiteRangeStartsAtTheGarageTest` (4): the range from the stored place without any Google call while Google refuses; a garage without a stored place is looked up; a garage nobody can place gets no range (fails on main: the colleague cars disappear); a stored 0,0 is not a place. Full suite locally: 3033 tests green, PHPStan clean.\n",
+            "branch": "workbench/range-uses-stored-coordinates",
+            "title": "The website range starts at the garage's stored place, not at a Google lookup per view"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009060754-0c64e4"
+}

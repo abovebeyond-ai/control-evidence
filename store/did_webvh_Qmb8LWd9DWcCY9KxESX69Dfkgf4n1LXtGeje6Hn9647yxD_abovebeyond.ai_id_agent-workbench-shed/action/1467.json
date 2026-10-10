@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ac88e3abf11ac138bea7d656cc66ad0859ac323a",
+            "branch": "workbench/studio/write-desk-share",
+            "files_sha256": "d93794017931e4a6f2e7beeacb912d7919682135176d3bfb0d6aa548312a3a1d",
+            "message": "Studio: Write is where pieces are made, Curate is the backend of gentells.com; share a draft"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261009141001-1d0df7"
+}

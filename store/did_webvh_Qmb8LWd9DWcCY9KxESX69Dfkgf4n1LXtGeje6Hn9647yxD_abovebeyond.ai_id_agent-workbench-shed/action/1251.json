@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "10cc6c49bb428a1e046d5ba631598ed165bd07e5",
+            "branch": "workbench/fix/transport-tariff-takes-a-comma",
+            "files_sha256": "01ec21daab067667aac2a553500c826108a01ec1de3e86df9b1d34bc5f5fc2f2",
+            "message": "The transport tariffs take an amount with a comma\n\nupdateTransport wrote the posted text straight to the tariff table and the platform settings,\nso \"138,00\" failed with a non-numeric value. Every amount on the tab now goes through\nCustom::parseAmount, and a box with nothing numeric in it changes nothing."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009061016-cfa046"
+}

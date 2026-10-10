@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "aeddec010642c81ad272c554e2ce3c217ac3909b",
+            "branch": "workbench/pipeline/mistral-provider",
+            "files_sha256": "7d0fbcfda931013b501ad74275b797c8e9cc39a05958f4a5ae500f8c359cac12",
+            "message": "Catalog Mistral (EU endpoint) and Haiku 5.5 so the verify tier can be measured on a European third family\n\nThe verify tier lost its third model family on 2026-08-27 when Together took\nDeepSeek off serverless; the judge has sat on Sonnet since, with a known lean\ntoward Model A (documented in DEFAULTS). Mistral is an EU\nprovider under commercial terms with a DPA and an EU-only endpoint, and its\nAPI is OpenAI-compatible, so it fits callOpenAICompat as it is.\n\n- provider mistral on api.eu.mistral.ai (1.1x list price), key MISTRAL_API_KEY\n- Mistral Small 4 (reasoning off, a verdict must not think out loud) and\n  Mistral Large 3, priced at list x 1.1 from docs.mistral.ai, read 2026-10-09\n- Claude Haiku 5.5 in both Claude catalogs at $0.10/$0.50 so eval-models\n  can measure it against the gold set before classify moves\n- the Mistral key is declared to Elixir like the Together key, with its\n  proof and its refusals\n- no phase default changes: nothing runs on Mistral or Haiku 5.5 until it\n  has passed eval-models"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261009164413-3020f8"
+}

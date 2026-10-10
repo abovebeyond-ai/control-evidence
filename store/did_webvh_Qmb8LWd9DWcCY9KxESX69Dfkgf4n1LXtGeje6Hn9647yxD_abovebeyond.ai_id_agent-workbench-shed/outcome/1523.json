@@ -1,0 +1,16 @@
+{
+    "action": "7c2b9dd18df2aee7d39d04ac1377eab1",
+    "effect": {
+        "detail": {
+            "base": "8a8d6b4e92c3af64e11e9bd63e34ee3210f1a756",
+            "branch": "workbench/open-pulls-wait-for-you",
+            "commit": "d51c5f4b7859420a8a97ffb3d309338e37297bdd",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1521,
+    "verdict": "ALLOW"
+}

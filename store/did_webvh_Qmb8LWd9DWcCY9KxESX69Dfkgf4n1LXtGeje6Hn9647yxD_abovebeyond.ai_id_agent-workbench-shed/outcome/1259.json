@@ -1,0 +1,16 @@
+{
+    "action": "1ea8e09ceed423b9cb6488b45ab33e87",
+    "effect": {
+        "detail": {
+            "base": "10cc6c49bb428a1e046d5ba631598ed165bd07e5",
+            "branch": "workbench/fix/order-keeps-its-options-switch",
+            "commit": "f48df23b36bd6acb6debb26190da24d6f299307d",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1257,
+    "verdict": "ALLOW"
+}

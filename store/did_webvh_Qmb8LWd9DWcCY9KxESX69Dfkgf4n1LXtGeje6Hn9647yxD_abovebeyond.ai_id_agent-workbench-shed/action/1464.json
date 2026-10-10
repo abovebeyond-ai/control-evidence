@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two changes for the Studio's Write desk. The Studio pull request that uses them follows; merge this one first, because its Share button calls these routes.\n\n**Sharing a draft**\nA draft was visible only to its author until it went to review. An author can now bring chosen colleagues onto a draft:\n- `article_shares` (article, user, who shared it, when).\n- `visibleTo` and the list filter include drafts shared with the viewer; everyone else still gets the 404 they got before.\n- `mayEdit` lets a co-author write; every save still records who made it (`article_edits`).\n- `mayShare`: only the author or an admin brings people on or takes them off; a co-author can take themself off.\n- `GET /articles/:id/shares` (who is on it, the team to choose from as names only, and whether the caller may share), `POST` `{userId}`, `DELETE /:userId`. They sit behind the existing guard, so someone who cannot see a piece cannot see who is on it either. Only active team members can be added, never the author.\n- List rows carry `shared_with` (names), so the desk can say \"shared with Bo\".\n- Deleting a piece deletes its shares.\n\n**Research questions**\n- Starting a piece from a question (`POST /research-drafts/:id/piece`) approves it in the same step, with the editor's name. A dismissed question is refused with 409. Until now the Studio needed an approve click before writing could start.\n- In the brief's notes a graph source reads by name, \"Resale as identity (pattern)\", instead of its id.\n\n**Checked**\n- New `test/shared-drafts.test.mjs` (7 tests): before and after sharing, editing, who may share, team-only targets, a co-author leaving, deletion. `research-drafts.test.mjs` updated: the old \"approve before a piece\" rule is replaced by \"starting approves\", plus a dismissed question is refused.\n- Full suite: 1097 of 1103 pass. The 6 failures are `report-render`, which needs `pdftoppm`; the workbench has no poppler, they fail the same way on main, and CI installs it.\n- Run against a local pipeline with a seeded database and the Studio on top: Ann shares with Bo, Bo edits (200), Bo's request for Ann's unshared draft is a 404, Bo adding Cy is a 403.\n",
+            "branch": "workbench/pipeline/shared-drafts",
+            "title": "Drafts can be shared with colleagues; starting to write approves a research question"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261009140921-7ec919"
+}

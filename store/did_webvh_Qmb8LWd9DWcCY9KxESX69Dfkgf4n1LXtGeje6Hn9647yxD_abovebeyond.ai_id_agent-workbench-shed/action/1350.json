@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c6e406f84818ff3cedeb7351f22d68325e60c1f2",
+            "branch": "workbench/gateway-incident-key-correction",
+            "files_sha256": "6de0d319bf294c49d14630267b431cb527faf8af8f80fe30e6913a27e96e836f",
+            "message": "Incident 2026-10-09: the crontab key is public; record the follow-up as done"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261009131743-5fcb26"
+}

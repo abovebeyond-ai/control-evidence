@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d748136704673a610c763b5aa7e536bce50f940d",
+            "branch": "workbench/admit-test-real-clock",
+            "files_sha256": "79fca07f3df14f798aead8647e34559f28c89ffc0904654f2808456608c34ca4",
+            "message": "AppAdmitOnKeyTest: freeze the real minute, not a fixed date"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261009133507-995e11"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The two first screens of the Studio, restructured around what each is for.\n\n**Write: the path a piece travels**\nThe desk was one list sorted by date, a 760 px column on any screen. In production it is mostly live posts, which Curate already manages, so the work in progress was buried in it. It is now three lanes, side by side on a wide screen and stacked on a phone:\n- **Research**: questions waiting to be looked into, ready-for-review first. \"Set out research\" is now \"New research question\" and sits in this lane.\n- **Writing**: your drafts, decks and own work first; under them the team's drafts without an author (the imported pieces).\n- **In review**: everyone's, yours marked.\n\nEach lane shows its count, loads more within itself, and says so when it is empty. There is no Live lane: Curate's Posts tab is that same set. The Yours/Team switch is gone: the pipeline already shows a draft only to its author until review (`visibleTo` in `articles-store.mjs`), so each lane has one natural owner. Each piece says its format (post, article, deck with brand) and where it is headed (gentells.com or own work), with its opening line, sources and date.\n\n**Curate: one decision queue**\nCurate opens on a new Overview tab: \"Waiting for you\", one queue across kinds, ordered by what blocks most:\n1. a report whose month has come without a file (Upload in The year);\n2. posts in review, oldest first (Open the piece);\n3. trend proposals, strongest first, five at a time (Put on the site / Skip).\n\nProposals seen fewer than five times cannot go on the site (the pipeline refuses them), so they are counted with a link to All trends instead of queued. Beside the queue, \"On gentells.com\": posts, trends and reports with the latest few and a way into each full list. The Posts, Trends and Reports tabs are unchanged. The header badge now counts only the proposals that can be decided.\n\n**Checked**\n- Rendered locally at 1512 x 860 and 390 wide against a mock of the routes the two screens call (articles with the pipeline's draft visibility rule, research drafts, site trends, reports), shaped like production: about 60 live posts, a desk of drafts, three in review, about 250 proposals.\n- `npm test`: 11 passed. `vite build` passes.\n- Not checked against the live pipeline: opening a piece, creating one, and the trend decisions use the existing endpoints unchanged.\n",
+            "branch": "workbench/studio/write-lanes-curate-queue",
+            "title": "Studio: Write as the path a piece travels, Curate as one decision queue"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261009105344-42ee64"
+}

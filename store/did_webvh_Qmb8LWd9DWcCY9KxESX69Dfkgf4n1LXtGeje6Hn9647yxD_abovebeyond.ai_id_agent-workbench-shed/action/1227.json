@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b463cab121945a4d86acc8e861fda4630fd6b288",
+            "branch": "workbench/how-we-read-layout",
+            "files_sha256": "de612381fbb646ef1d049b77b6ce7bddea2a8e8f6f5ec33ec1a7ea5a04f92978",
+            "message": "How we read: laid out like the mockup, a flow within each step and a bump between steps"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261009054437-ecc330"
+}

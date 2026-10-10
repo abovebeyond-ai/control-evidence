@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dd6fa3e393fd10888ef0c28630a64204b923c599",
+            "branch": "workbench/verdict-says-what-to-do-2",
+            "files_sha256": "c5dd9423768bc0603aa6c7af6e3a9d74a3982976b8167b4d3f41a41748b195ca",
+            "message": "Say what closes a grant gap, and show the verdict before the touch"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261009134139-cbea84"
+}

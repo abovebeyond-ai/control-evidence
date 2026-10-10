@@ -1,0 +1,17 @@
+{
+    "action": "10e986f9de7828b75c2847a3bfa3942d",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 243,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/abovebeyond-ai/elixir/pull/243",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1488,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d2ae62634eb521b33c8955e32eb32e34fbea324a",
+            "branch": "workbench/repair-in-working-set",
+            "files_sha256": "8ed750d22537d05305ca987ac8f9c8cca2002efe393084add07c85f746b91684",
+            "message": "Approve a repair by passkey only inside the working set"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261009142303-b04a79"
+}

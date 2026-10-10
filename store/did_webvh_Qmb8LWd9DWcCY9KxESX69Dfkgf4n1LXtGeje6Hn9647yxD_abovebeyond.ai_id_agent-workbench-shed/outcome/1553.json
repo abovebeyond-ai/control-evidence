@@ -1,0 +1,16 @@
+{
+    "action": "dc6bdd8c2339a9e9fd64abd84c0be7a9",
+    "effect": {
+        "detail": {
+            "base": "aeddec010642c81ad272c554e2ce3c217ac3909b",
+            "branch": "workbench/pipeline/mistral-provider",
+            "commit": "b03ef5b83d138b7526c57d3371547d03e9d6d8d0",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1551,
+    "verdict": "ALLOW"
+}

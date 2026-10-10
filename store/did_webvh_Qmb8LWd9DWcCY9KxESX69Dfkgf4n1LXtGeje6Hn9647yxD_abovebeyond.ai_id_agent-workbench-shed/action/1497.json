@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "defbea4425850041c865d05961e42147eb94897c",
+            "branch": "workbench/repair-in-working-set",
+            "files_sha256": "13339f4158c022084975f7edf7df732a2d62792e1a5b9c5415ebfb1201a0aada",
+            "message": "Working set: a repair by passkey falls inside the set, as built"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261009142329-ed3d57"
+}

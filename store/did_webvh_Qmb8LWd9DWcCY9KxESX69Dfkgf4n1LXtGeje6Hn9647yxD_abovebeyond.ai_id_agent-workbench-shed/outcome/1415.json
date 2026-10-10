@@ -1,0 +1,16 @@
+{
+    "action": "d1c2e857469f5a8406ade6c09a92bf51",
+    "effect": {
+        "detail": {
+            "base": "d748136704673a610c763b5aa7e536bce50f940d",
+            "branch": "workbench/admit-test-real-clock",
+            "commit": "75b1816362269831c50b360605e14f553cf24930",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1411,
+    "verdict": "ALLOW"
+}

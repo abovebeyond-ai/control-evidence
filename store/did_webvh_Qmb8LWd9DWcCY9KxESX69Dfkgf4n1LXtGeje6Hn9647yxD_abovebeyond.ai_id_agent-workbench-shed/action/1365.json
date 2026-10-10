@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b4355c3141741e5e577d340c4f16df1bcdc1282",
+            "branch": "workbench/conformance-facts",
+            "files_sha256": "2c7af9a9f452b01b428fb9e79622aa2a5468752f3cbcc1b4a2d549472971e5a0",
+            "message": "Conformance as facts and crosswalks: tiers computed per standard version"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261009132701-3d04e7"
+}

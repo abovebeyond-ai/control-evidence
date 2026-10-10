@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b43feb75140de75a3ca31a0247ddb5c4314b6aa1",
+            "branch": "workbench/sweep-idle-age",
+            "files_sha256": "303aef28d20694aa31ff8300dd57aef7d6c63e502bc495930ff1900f16e73b0e",
+            "message": "Close a finished agent only after its conversation has been quiet for 12 hours"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261009131908-53f518"
+}

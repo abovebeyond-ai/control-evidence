@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "With a repair-only draft, Elixir now also sends what each hand gains (`adds`): the kinds it newly holds, to the grant or to one of its tasks, each with its layer from `REPAIR_KINDS`, and the resources it newly reaches. Portal needs this to hold a passkey approval to the owner's working set, because it holds the draft but not the grants the gateway serves (version 0 is the carried configuration).\n\n`PolicyLog::additions()` sits beside `repairOnly()`. Hands that gain nothing are left out; a version that only takes away adds nothing.\n\nEither deploy order is safe. Portal ignores `adds` until portal's companion PR lands, and without `adds` Portal refuses the passkey and leaves the version to the token.\n\nTests: `additions` on new kinds with their layers, new resources, a kind added to a task, and taking away; the repair draft carries `adds`. `php artisan test`: 731 passed. PHPStan: no errors. Pint clean.\n\nCompanion PRs: portal and control (`workbench/repair-in-working-set`).\n",
+            "branch": "workbench/repair-in-working-set",
+            "title": "Policy log: send what each hand gains with a repair-only draft"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261009142248-05e2d1"
+}

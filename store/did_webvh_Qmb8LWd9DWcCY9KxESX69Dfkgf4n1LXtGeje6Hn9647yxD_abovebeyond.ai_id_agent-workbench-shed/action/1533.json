@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2beb2d3fcc0e93d9d468bc322629325e01b73681",
+            "branch": "workbench/studio/images-and-posts",
+            "files_sha256": "eb6095fd1ee34ce7b7d21824442d2ebe8668b799bf1473e6b259edee488934f2",
+            "message": "Studio: images in a piece, posts decided from Curate's list, Write in ink"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261009144810-d85dff"
+}

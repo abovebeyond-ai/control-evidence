@@ -1,0 +1,16 @@
+{
+    "action": "99602dab2bc30ca574bac7a9beb72fc3",
+    "effect": {
+        "detail": {
+            "base": "488f72aa1319f704ae341f086a194f034ee6a367",
+            "branch": "workbench/tunnel-gcloud-cache",
+            "commit": "519c0fa01003f2d084049403e25b09292cd61ffd",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1311,
+    "verdict": "ALLOW"
+}

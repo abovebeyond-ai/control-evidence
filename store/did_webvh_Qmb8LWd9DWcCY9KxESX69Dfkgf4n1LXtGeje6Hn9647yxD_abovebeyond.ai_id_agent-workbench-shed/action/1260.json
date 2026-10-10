@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #591\n\nThe switch \"Eigenschappen weergeven\" in the order form (`stocklist/_tabs/bestelbonModal.blade.php`) was rendered with `:checked=\"true\"`, whatever the order carried. A dealer who had turned the options off and later edited the order saw the switch on, and saving without looking put the options back on the printed order.\n\n## Changes\n- The switch is on for a new order (R S4-4.7) and, otherwise, shows the stored `with_options`. The same expression covers a form that comes back half filled in after creating a relation, and the order made from an offer (no `with_options` yet, so on).\n- Rule R S4-4.7 says so; finding `eigenschappen-weergeven-staat-standaard-aan-en-kan` marked solved.\n\n## Tests\n- `OrderKeepsItsOptionsSwitchTest`: a new order starts on; an edited order shows off and on as saved. The second test fails on the old view.\n- Full suite locally: 3031 tests OK (2 skipped, 1 incomplete). PHPStan: no errors.\n",
+            "branch": "workbench/fix/order-keeps-its-options-switch",
+            "title": "An edited order shows its \"Eigenschappen weergeven\" as it was saved"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009061637-ced8e1"
+}

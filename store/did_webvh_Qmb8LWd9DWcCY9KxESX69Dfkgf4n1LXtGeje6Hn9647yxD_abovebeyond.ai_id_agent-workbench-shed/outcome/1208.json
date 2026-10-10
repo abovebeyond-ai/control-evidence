@@ -1,0 +1,16 @@
+{
+    "action": "dc36e60dc24f6e6635f7994ad1d1743e",
+    "effect": {
+        "detail": {
+            "base": "9dcc997297bec7cd7e83860cbda5fec7fafb064b",
+            "branch": "workbench/fix/transport-cancel-after-closed-payment",
+            "commit": "66680aaac9cc103cfac5bb7f3719be4d7346e70f",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1206,
+    "verdict": "ALLOW"
+}

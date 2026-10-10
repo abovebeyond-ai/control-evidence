@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2be639d27090c5ebeecad49b6d76a76b2895af68",
+            "branch": "workbench/npm-audit-oct",
+            "files_sha256": "b8b17e0f0b007a1e5d2b86adc948ac57a2f7e363f622ccca4fa413aad491399a",
+            "message": "Patch vue, source-map-js and postcss-selector-parser for new advisories\n\nGHSA-g2v6-rqmx-r4w6, GHSA-68fv-2mgg-jv7q and GHSA-rj75-hqrm-r3gf made the\ndependency audit fail. npm audit fix, lockfile only, patch versions."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261009111221-c342dc"
+}

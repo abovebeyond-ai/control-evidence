@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "When the gateway is out of reach, `hand.mjs` now says so in one line instead of a stack trace.\n\n- `lib/errors.mjs`: `plainError` maps a refused door on `127.0.0.1:8471` to \"the gateway did not answer (the tunnel on the box is down); nothing was sent\", an unreachable box to its own line, and anything else to its first line. `noReadToken` tells a gh without a token apart from a GitHub answer.\n- `hand.mjs`: an `uncaughtException` / `unhandledRejection` handler prints that line and exits 1, so every verb that goes through the door (`propose`, `records`, `agents`, `preview`, `issue`) is covered. Refusals keep their existing output.\n- `lib/hand.mjs`: the stale-base check stops with \"no read token: the gateway did not answer, so main could not be compared; nothing was sent\" instead of counting every file as moved on main.\n\nDuring the gateway outage of 9 October both cases looked like something else: a crash in `hand.mjs records`, and a propose that would have blamed a moved main.\n\nTests: `node --test lib/*.test.mjs` 28 of 29; the one failure, in `lib/policy.test.mjs` (`r.json is not a function`), fails the same way on `origin/main`. `node --test voice/*.test.mjs` 26 of 26, `test/agents.test.mjs` 7 of 7. New: `lib/errors.test.mjs`.\n\nThe workbench wrappers `~/.local/bin/git-credential-workbench` and `~/.local/bin/gh` are not kept in this repository, so their silent failure is not changed here.\n",
+            "branch": "workbench/say-why-it-failed",
+            "title": "Say in one line why the way to the gateway failed"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261009133457-76d254"
+}

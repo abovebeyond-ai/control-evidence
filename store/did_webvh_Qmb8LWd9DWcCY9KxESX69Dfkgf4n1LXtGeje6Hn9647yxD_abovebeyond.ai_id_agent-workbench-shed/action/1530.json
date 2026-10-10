@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The pipeline half of images in a piece's text. The Studio pull request that adds them follows; this one is safe to merge first and on its own.\n\nThe Studio stores an image in a post's text as a paragraph of one markdown line, `![caption](/api/pipeline/uploads/...)`, with the same relative upload address a cover gets.\n\n- **Claims:** the claim check skipped nothing, so the digits in an image address read as quantities, and the editor showed \"No source for this line\" under every image. Image lines are now skipped (`claims.mjs`).\n- **gentells.com:** the projection makes these addresses absolute towards the public media base, as it already does for `cover_image` (`absoluteMediaInMarkdown` in `routes-projection.mjs`). The site renders the body as markdown and already styles `.article-body img`; its CSP allows images from https.\n\n**Checked**\n- New test in `claims.test.mjs` (an image line with digits in its address is not a claim) and `body-images.test.mjs` (relative upload addresses become absolute; other addresses and a path inside a sentence stay as they are).\n- Full suite: 1099 of 1105 pass; the 6 failures are `report-render`, which needs `pdftoppm` (absent on the workbench, the same on main; CI installs it).\n- Against a local pipeline with the Studio on top: an image added in the editor, saved, with its caption; a PDF post converted with its three images, imported and shown in place.\n",
+            "branch": "workbench/pipeline/body-images",
+            "title": "Images in a piece's text: not claims, and absolute for gentells.com"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261009144752-2e9a80"
+}

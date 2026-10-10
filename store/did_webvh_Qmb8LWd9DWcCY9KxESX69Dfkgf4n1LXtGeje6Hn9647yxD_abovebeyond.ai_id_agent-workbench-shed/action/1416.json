@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`AppAdmitOnKeyTest::test_a_period_for_proposals_names_what_portal_would_name` fails on every run since 2026-10-08 11:00 UTC, on main and on every pull request (portal #384 among them).\n\nThe test froze Laravel's clock at 2026-10-08 09:00 and expected \"until Thu 08/10 13:00\". The token it signs expires two hours after that frozen moment, but `OperatorKeys` checks the expiry against `time()`, which `Carbon::setTestNow` does not freeze. Once the wall clock passed 11:00 UTC that day, the admission was refused and `said` came back null.\n\nBoth tests that froze that date now freeze the real current minute and compute the expected sentence from it. The 30-day reading test had the same flaw and would have started failing on 2026-11-07.\n\n`php artisan test --filter=AppAdmitOnKeyTest`: 5 passed, twice. Pint clean.\n",
+            "branch": "workbench/admit-test-real-clock",
+            "title": "AppAdmitOnKeyTest: freeze the real minute, not a fixed date"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261009133507-995e11"
+}

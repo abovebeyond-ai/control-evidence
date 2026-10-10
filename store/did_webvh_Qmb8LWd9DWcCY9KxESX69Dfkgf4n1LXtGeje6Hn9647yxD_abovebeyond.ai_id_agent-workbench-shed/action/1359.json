@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "",
+            "branch": "workbench/sweep-idle-age",
+            "title": "Close a finished agent only after 12 quiet hours"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261009131908-53f518"
+}

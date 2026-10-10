@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "77ca27c53a5f8225cac74b19e82cc3453c6e870d",
+            "branch": "workbench/phone-signing-doc",
+            "files_sha256": "d29422ac0a6031b66f8c0c8987cf422b0a4dbffd046336bd722474068431a44a",
+            "message": "Working set: the owner's key on the phone, as built"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261008112843-a058bb"
+}

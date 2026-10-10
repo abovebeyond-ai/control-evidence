@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea65d035d8a3f916209f6f30c0633288b096be88",
+            "branch": "workbench/sources-usable",
+            "files_sha256": "847be4cbafdef32dbbfb52f23f976106f7057e6dce52f7b46bb1560a26c9792e",
+            "message": "Sources page: what is broken first, every source at a glance\n\nNeeds a look puts each failing source first, with its error, its streak and\nMute beside it. Adapters are one line each with a volume bar and a single\nstatus. All sources are tiles grouped by adapter, filled by signals in 30\ndays, opening a side panel to change one. Adds a shared Button with hover,\nfocus and disabled states, and lets the header wrap on a phone.\n\nPortal: De bronnenpagina van de Observatory toont eerst welke bron stuk is, met een knop om ze stil te zetten, en alle bronnen in \u00e9\u00e9n overzicht."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261009062923-7eb88f"
+}

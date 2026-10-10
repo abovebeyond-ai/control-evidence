@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fef26ccf32b7240f2c24fb87896c09ee63cdc3eb",
+            "branch": "workbench/studio/curate-write-a-post",
+            "files_sha256": "fec5a05fbbd42977d4e39d6391e2e6c71ebab9146e2c2a1a5236e8f0eb2a5312",
+            "message": "Studio: Write a post from Curate's Posts tab; lighter list titles"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261009143113-eb3813"
+}

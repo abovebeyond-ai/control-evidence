@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3f660dc65e6524566718c084e93dfb889814e759",
+            "branch": "workbench/collection-sources",
+            "files_sha256": "6e09aab73f04c9f3770fc990cf7e2cd0e2483d12d6ada055c62eeeb220d551c6",
+            "message": "Sources screen: which rows each adapter reads, and what each source brought in\n\n/collection now passes each adapter's own sources patterns and its cadence, so\nthe Observatory can put every row in sources under the adapter that collects it,\nmatched by the same rule as claims(), and say how long an adapter rests.\n\nThe sources list carries signals30d: signals per source over the last 30 days,\none grouped count on the indexed source_id, with the same window as /mix."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261009062830-014d8c"
+}

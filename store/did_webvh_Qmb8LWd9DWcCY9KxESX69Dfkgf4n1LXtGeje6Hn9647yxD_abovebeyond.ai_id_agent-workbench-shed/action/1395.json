@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cd15c729fc4d5aa96a52fac0b0142722993e30fb",
+            "branch": "workbench/working-set-status",
+            "files_sha256": "7d668c1f2ab86740bc72f6a31f1a6a36b31faab2ad1697f9cdea9f2a24c8dd67",
+            "message": "Working set: say what is built"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261009133419-02fea0"
+}

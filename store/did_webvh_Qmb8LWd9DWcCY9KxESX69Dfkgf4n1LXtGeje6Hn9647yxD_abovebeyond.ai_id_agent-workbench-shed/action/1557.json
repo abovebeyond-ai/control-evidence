@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "44127d1a1f48838486b184bb6caa93366d2a25b4",
+            "branch": "workbench/pipeline/model-catalog-cleanup",
+            "files_sha256": "a07fb4c418752e27026754730c1d2556721bf07503cb96ba62b59d43ff494018",
+            "message": "Measure models fairly: POEM beyond the earned share, same signals per model, Medium 3.5 and GLM 5.3\n\nThe runs of 2026-10-10 ranked models by plain POEM accuracy, but the gold set is\nthree quarters 'earned' (39,860 of about 53,200 rows): a model that answers\n'earned' to everything scores 75%, above three of the four models measured. Each\nrun also drew its own 50 random rows, so part of every gap between two models was a\ngap between two samples. And the judge needs a third family once Model B may\nbecome Mistral.\n\n- eval-metrics.mjs: POEM confusion per type, balanced accuracy (mean recall per\n  type), Cohen's kappa, recall and precision per type; stored in model_evals.details\n  and printed under each run\n- leaderboard: ranked by balanced accuracy, with kappa beside it; runs from before\n  it was recorded sort below; optional since date and a signals column\n- eval-models: --n, --lang, --seed, --balanced and --since (eval-args.mjs); a\n  seeded or balanced draw picks from the ids and then reads only the chosen rows;\n  `all` covers every API provider with a key; a bad option prints a message;\n  the script loads .env itself, as the supervisor does, so a fresh shell has\n  the provider keys\n- catalog: Mistral Medium 3.5 (mistral-medium-2604) and Z.ai GLM 5.3\n  (zai-glm-5-3, served by Mistral on the EU endpoint), ids as the endpoint listed\n  them; first-run results noted next to Small 4 and Large 3\n- docs: the defaults table in CLAUDE.md (said Sonnet for classify) now points at\n  DEFAULTS; the verify-tier note and the consensus header no longer name DeepSeek\n- no phase default changes"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010072848-66e82b"
+}

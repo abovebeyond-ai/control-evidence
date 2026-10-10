@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1b63d63051ef0d747348af4dfb5f9abcb072046c",
+            "branch": "workbench/stocklist-from-date",
+            "files_sha256": "db322886a1ce4c5bba3b75a8c930a68ab8cc81ebf3aa2eabcde88dcdd40045a5",
+            "message": "Keep a new vehicle's Stocklist start date instead of saving it with the delay added\n\nfinalizeCreate called addMonths() on the start date itself, so a vehicle created\n'on Stocklist within N months' stored start + N months as its start date, and the\nsheet and every later save added the N months again.\n\nCloses #969"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261008150009-ef3bde"
+}

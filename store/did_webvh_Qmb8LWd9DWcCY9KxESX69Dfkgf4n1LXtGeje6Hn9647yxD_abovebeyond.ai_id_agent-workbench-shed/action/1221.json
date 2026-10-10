@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fb72f01655271dc1668a128c7c5716579c11d22b",
+            "branch": "workbench/docs/findings-solved-since-september",
+            "files_sha256": "b04e084a76b5ea0be7fad1db1e35fa547b2a0cdca04094d2d236209afae4f5a2",
+            "message": "Three findings solved since September are marked solved\n\nX-20 (reminders during the assign window) in #944, X-106 (own vehicle in customer mode) in #774\nand X-51 (Car-Pass line in the worklist mail) in #885 still said open."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009051950-c7f9dc"
+}

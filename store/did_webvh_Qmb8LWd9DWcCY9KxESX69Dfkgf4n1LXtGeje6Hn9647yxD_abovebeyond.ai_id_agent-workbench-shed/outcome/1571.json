@@ -1,0 +1,16 @@
+{
+    "action": "fe73fa1faf744f4dc8cf641b119864db",
+    "effect": {
+        "detail": {
+            "base": "bbe71ae0ae49eb19588e5ac6122a0e2942ac82eb",
+            "branch": "workbench/portal/repair-asks",
+            "commit": "08b044aab7bc531c2c15f18d52bc0ce10f07a4b6",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1569,
+    "verdict": "ALLOW"
+}

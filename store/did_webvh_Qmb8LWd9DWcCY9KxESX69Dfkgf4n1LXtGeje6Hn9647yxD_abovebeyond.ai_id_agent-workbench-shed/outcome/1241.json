@@ -1,0 +1,16 @@
+{
+    "action": "d8943239a2ee4e03df8b30ead1f2c97d",
+    "effect": {
+        "detail": {
+            "base": "b463cab121945a4d86acc8e861fda4630fd6b288",
+            "branch": "workbench/how-we-read-layout-2",
+            "commit": "32b4206b070092d58138d41693ecaf5a99f83017",
+            "files": 28,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1239,
+    "verdict": "ALLOW"
+}

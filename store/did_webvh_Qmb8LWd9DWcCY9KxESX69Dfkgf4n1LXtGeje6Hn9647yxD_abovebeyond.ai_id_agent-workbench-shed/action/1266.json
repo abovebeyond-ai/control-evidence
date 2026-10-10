@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nTwo additions the Observatory's Sources screen needs (Trendwolves/gentells-dashboard, proposed right after this one):\n\n- **`/collection` passes each adapter's `sources` patterns and `cadence`** (`packages/core/adapter-runs.mjs`, `standings()`). The screen puts every row in `sources` under the adapter that reads it, with the same three shapes `claims()` reads (`type:rss`, `tiktok-cc-*`, an exact id), and shows how long an adapter rests between runs.\n- **The `sources` query carries `signals30d` per source** (`packages/server/query-endpoint.mjs`): signals ingested in the last 30 days, one `GROUP BY source_id` over the indexed column, with the same window `/mix` uses. The screen shows it on each source, so the feeds that carry the corpus and the ones that say nothing can be told apart.\n\n## Why\n\nThe Sources screen held two lists that never met: an adapter table that said \"rss: BBC Three: Status code 500\", and further down every source as a card, its error on a tooltip. The redesign groups each source under its adapter and puts a broken feed first with its Mute next to it. Without the patterns the page can only guess by name. Without a count per source, there is nothing to say which of 33 feeds is worth keeping.\n\n## Order\n\nMerge this before the dashboard PR. Until it is live, the new screen shows no counts and puts every row under \"read by no adapter\".\n\n## Tests\n\n- New: `standings()` passes `sources` and `cadence`; `signals30d` counts two signals inside the window and not the one 40 days old.\n- Full suite on the workbench: 1,089 of 1,095 pass. The six that fail are `report-render`, which needs `pdftoppm`; that binary is missing on the workbench, and they fail the same way on unchanged main.\n",
+            "branch": "workbench/collection-sources",
+            "title": "Sources screen: which rows each adapter reads, and what each source brought in"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261009062638-e8b532"
+}

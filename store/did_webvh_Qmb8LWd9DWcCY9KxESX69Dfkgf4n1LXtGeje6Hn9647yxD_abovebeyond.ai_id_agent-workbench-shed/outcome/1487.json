@@ -1,0 +1,16 @@
+{
+    "action": "32c830d0138f5f346435ab7a488419d3",
+    "effect": {
+        "detail": {
+            "base": "97a423907e673d86210d46748f1c20a9ddd0136f",
+            "branch": "workbench/repair-in-working-set",
+            "commit": "9eddef5da4a6cc4e3ecac1f5961dcffb64ead795",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1485,
+    "verdict": "ALLOW"
+}

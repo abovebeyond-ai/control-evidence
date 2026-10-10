@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The status line of `docs/working-set.md` still said \"Nothing here is built yet\", while the sections below it describe the working set, the policy log, the repair signer, signing on the phone and early revocation as built. Read on its own, the header points a reader at work that is already done and away from the steps that exist (`hand.mjs workingset`, `hand.mjs policy sign`).\n\nThis replaces the header with what runs today and what does not: the gateway and the systems do not check a working set themselves, and a passkey widening is bounded by the repair rule rather than by the set. The \"Still to build\" list under the policy log becomes \"Built since\", each item checked against portal, elixir and portal-cli on 9 October 2026.\n\nDocumentation only. `go test ./...` passes.\n",
+            "branch": "workbench/working-set-status",
+            "title": "Working set: say what is built"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261009133419-02fea0"
+}

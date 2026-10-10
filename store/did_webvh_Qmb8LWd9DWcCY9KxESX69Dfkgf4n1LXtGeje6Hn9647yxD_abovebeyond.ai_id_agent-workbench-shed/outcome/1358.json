@@ -1,0 +1,16 @@
+{
+    "action": "b59c5b8ca67697abeee005a82c6d78ad",
+    "effect": {
+        "detail": {
+            "base": "b43feb75140de75a3ca31a0247ddb5c4314b6aa1",
+            "branch": "workbench/sweep-idle-age",
+            "commit": "2a2bb39ee604de697a53898433dcdc5f0718c2d0",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1356,
+    "verdict": "ALLOW"
+}

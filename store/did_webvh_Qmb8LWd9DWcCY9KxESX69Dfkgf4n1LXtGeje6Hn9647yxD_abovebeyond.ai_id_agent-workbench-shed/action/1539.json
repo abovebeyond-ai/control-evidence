@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1ad429e676088dbaeebd627262017845841c71ec",
+            "branch": "workbench/standard/source-admission",
+            "files_sha256": "9e3e96b55dd432f6702ed2b640007c76f651f3dd4d5e61309d28d0a37b08f9c1",
+            "message": "0.9.0 (proposed): a source has a lifecycle, and the criteria that move it are data"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261009161846-54256e"
+}

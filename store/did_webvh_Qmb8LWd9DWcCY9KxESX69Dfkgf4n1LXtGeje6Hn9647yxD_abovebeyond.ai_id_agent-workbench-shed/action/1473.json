@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e164a38921f80cf7a209d81cd25b7ed2c1e032d1",
+            "branch": "workbench/policy-test-doors",
+            "files_sha256": "8d812aaeae49d1bd467e207ed49c159b3bbc53f05a39434a8b1da59fd3f441c8",
+            "message": "policy.test: the signed version goes to policy-version without a token"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261009141803-eac87a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`lib/policy.test.mjs` failed on main (\"r.json is not a function\"). Since #42 the laptop hands a signed policy version to `ingest/policy-version` without a Portal token, since the signature is the proof, and reads the answer with `r.json()`. The test still faked the old token route (`control/policy`, `Authorization: Bearer`) and gave the response only a `text()`.\n\nThe test now fakes `policy-version` and a response with `ok` and `json()`, and asserts that the draft is read with the token while the version is sent without one. A stale duplicate docblock above `keepPolicyVersion` is removed.\n\n`node --test --experimental-test-module-mocks` (the flag `mcp/package.json` runs with): 78 passed, 0 failed.\n",
+            "branch": "workbench/policy-test-doors",
+            "title": "policy.test: the signed version goes to policy-version without a token"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261009141803-eac87a"
+}

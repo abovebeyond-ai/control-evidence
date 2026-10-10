@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Needs Trendwolves/gentells-pipeline#308 merged first: the Share panel calls its `/articles/:id/shares` routes, and Start writing on a voice question relies on \"starting approves\".\n\n**One rule for the two modes**\nThe home says it: \"Write is where pieces are made. Curate is the backend of gentells.com.\" Posts were in both places (a post in review showed up in Write's lane and in Curate's queue; Curate also listed drafts). Now a post for the site is in Write while it is a draft and in Curate from review on, and editing is always Write's.\n\n**Write: one desk of pieces**\n- Groups, each as sheets in columns: *Set out by the voice, waiting for you*, *Yours*, *Shared with you*, *The team's, without an author*. Empty groups disappear, except Yours, which says how to start.\n- No research lane and no brief form. Research happens in a piece's conversation. A question the voice set out is complete on its card (what was said, what was found, the sources by name, links clickable) with **Start writing** (opens the piece with the question and sources in its conversation) and **Dismiss**. A link straight to a question (`?brief=`) shows the same, read-only.\n- In review and live are gone from Write: they are Curate's.\n\n**Sharing a draft**\n- In the editor, **Share** beside Versions (drafts with an author only): who is on the piece, Remove for the author or an admin, Leave for a co-author, and a team picker.\n- A co-author can edit (`canEdit` includes them). Your own sheets say \"shared with Bo\".\n\n**Curate: the backend of gentells.com**\n- Unchanged from #44, except that the Posts tab shows live posts and posts in review, no drafts.\n- \"Open the piece\" switches to Write with that piece (`?open=\u2026&from=site:<tab>`). The editor's back link reads \"\u2190 Curate\" and returns to the tab you came from.\n\n**Checked**\n- Against a local pipeline (#308) with a seeded database, logged in as different editors: Ann shares a draft with Bo, Bo sees it under Shared with you and not her unshared one; Curate \u2192 Open the piece \u2192 editor in Write \u2192 \"\u2190 Curate\" back to the overview; Start writing on a voice question opens the piece with the brief in its conversation.\n- `npm test`: 11 passed. `vite build` passes.\n",
+            "branch": "workbench/studio/write-desk-share",
+            "title": "Studio: Write is where pieces are made, Curate is the backend of gentells.com; share a draft"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261009141001-1d0df7"
+}

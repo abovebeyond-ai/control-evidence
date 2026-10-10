@@ -1,0 +1,16 @@
+{
+    "action": "7bb7041daf29a68cb9aa349c34187864",
+    "effect": {
+        "detail": {
+            "base": "10cc6c49bb428a1e046d5ba631598ed165bd07e5",
+            "branch": "workbench/fix/transport-tariff-takes-a-comma",
+            "commit": "0bc8de8425c894c36aed0537e7116dcb9bb532b4",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1251,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "6b0df7b732063965324b291048165f4a",
+    "effect": {
+        "detail": {
+            "base": "80b910bf709b380e75484d2cea948051b7f0f541",
+            "branch": "workbench/docs/partner-tokens-as-they-are",
+            "commit": "0bc051d151782f44b4c9e0c0ba987f7cd90685e5",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1455,
+    "verdict": "ALLOW"
+}

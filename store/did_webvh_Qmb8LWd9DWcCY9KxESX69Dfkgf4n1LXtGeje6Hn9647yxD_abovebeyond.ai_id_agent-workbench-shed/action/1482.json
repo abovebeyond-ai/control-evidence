@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "When a question about a car (\"Stel een vraag\") could not be sent, the form showed the visitor whatever `/api/lead` answered: the platform's English text (`Vehicle not found.`, `The email field must be a valid email address.`, `Choose at least one contact method (by_phone or by_email).`) or the route's own codes (`upstream_unavailable`, `stocklist_not_configured`, `invalid_json`).\n\nIn the last five days 3 of the 6 questions sent through the platform's public lead endpoint were refused, so visitors do see these.\n\n## Changes\n- `src/lib/lead-error.ts`: one Dutch sentence per answer, in the site's \"u\". A car that is gone (404), the field that was refused (422: e-mail, phone, or the contact channel), too many tries (429), anything else. Where the visitor cannot fix it, the sentence gives the phone number.\n- `src/pages/api/lead.ts`: a success passes through unchanged; any other answer keeps its status, carries that sentence, and the platform's own answer goes to the function log.\n- `test/lead-error.test.ts`: five cases, including that no answer shows the platform's English or a bare code.\n\n## Checks\n- `vitest`: 40 tests pass. `astro build` succeeds. `astro check` reports the same 19 errors as `main`, none new.\n",
+            "branch": "workbench/fix/lead-errors-speak-dutch",
+            "title": "A question that cannot be sent says why in Dutch"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261009142101-79a601"
+}

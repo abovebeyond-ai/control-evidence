@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: A vehicle created with \"on Stocklist within N months\" stores its start date already shifted by N months, so the sheet shows \"Op Stocklist vanaf\" N months too late and the next save publishes the car N months later than chosen.\n\nSource: Portal mail:8.\n\n## What is wrong\n\nA user created a vehicle with \"Wanneer: 2 maanden\". On the Data tab of the sheet the **Startdatum** reads creation date + 2 months, and the line under it, **Op Stocklist vanaf**, adds the 2 months a second time (creation + 4 months). The expectation is start date = creation date, and \"on Stocklist from\" = creation + 2 months.\n\n## Cause\n\n`OwnStockService::finalizeCreate` computes:\n\n```php\n$vehicle_data[\"available_on_stocklist_date\"] = $start_date->addMonths(self::monthsGiven(...))->toDateString();\n$vehicle_data[\"available_start_date\"]        = $start_date->toDateString();\n```\n\n`$start_date` is a mutable `Carbon`, so `addMonths()` moves it, and `available_start_date` is saved as start + N months. `finalizeEdit` already uses `->copy()`. The favourite-date comparison a few lines further down compares against the shifted date as well.\n\nThe stored `available_on_stocklist_date` is right on creation, but every later save of the sheet (`finalizeEdit`, and `VehicleForm::beschikbaarVanaf` on screen) starts from the shifted start date and adds N months again.\n\n## Fix\n\nUse `$start_date->copy()` in `finalizeCreate`, with a test. Vehicles already created this way keep a shifted start date in the database; whether to correct those (start date minus `available_within_months` for vehicles created through the sheet) is a separate decision.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "A new vehicle's Stocklist start date is saved with the delay already added, so 'on Stocklist from' counts it twice"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261008145518-2fbfe9"
+}

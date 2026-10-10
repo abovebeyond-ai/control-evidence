@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A new job, `elixir:control-pulls`, every ten minutes: it reads every open pull request on the repositories the hands' grants name, with the read tokens this box already gets from the gateway, and reports them to Portal as `controlPulls`.\n\nPer pull request it sends the repository, number, title, URL, author (and whether it is the gateway's App), draft, opened at, the logins a review was requested from, whether it conflicts with its base, and the checks on its head (`passed`, `failed`, `running`, `none`; the newest run per workflow, so a passing rerun replaces the failure it repeats). Repositories it could not read are listed under `unread` rather than left out.\n\nWhy: pull requests opened by the gateway are authored by its App and appear in none of the owner's lists on GitHub unless the best-effort review request reached him, and Portal had no list of them at all (audit in abovebeyond `docs/owner-workflow-audit/`, fix 7). The Portal side that shows them is a separate pull request; either can be merged first, Portal shows nothing until the first report arrives.\n\nReading only; nothing here writes to GitHub. At about 45 repositories and a few open pull requests this is well under a hundred GitHub calls per run. Merging deploys to the box; the job starts on the next scheduler minute that matches.\n\nTests: `ControlPullsTest` (4 new). Pint, PHPStan and the full suite (735) pass.\n",
+            "branch": "workbench/open-pulls-to-portal",
+            "title": "Report the open pull requests on the granted repositories to Portal"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261009143458-abb273"
+}

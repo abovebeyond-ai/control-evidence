@@ -1,0 +1,10 @@
+{
+    "action": "9cff1407c523fd8bb3f3dc47b4ccea77",
+    "effect": {
+        "error": "GitHub answered 422 for the branch: Reference already exists",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 1269,
+    "verdict": "ALLOW"
+}

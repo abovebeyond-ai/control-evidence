@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9dcc997297bec7cd7e83860cbda5fec7fafb064b",
+            "branch": "workbench/fix/transport-cancel-after-closed-payment",
+            "files_sha256": "d169b6a12b20fb5662847b38362b496ca499a51240155090ec1bdb7cbf370700",
+            "message": "Cancelling a cancelled transport is a yes, and the window shows the page after a cancel\n\nA cancel in the transport window only closed the window: the list behind it kept offering\n\"Aanvraag annuleren\" for a request that was already cancelled. Cancelling again from there\nwas refused with \"a paid transport can no longer be cancelled\", for a transport nobody paid.\n\n- TransportController::cancel answers success for a transport that is already cancelled.\n- The window reloads the page after a cancel, like the row actions, and says why a refused\n  cancel was refused instead of doing nothing.\n- TransportController::returned says a cancelled transport is cancelled, instead of sending\n  the overview back to \"being processed\", which polled and came back every three seconds.\n- Rules R S4-10.12 and R S4-10.15 updated."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261009043500-e31f18"
+}

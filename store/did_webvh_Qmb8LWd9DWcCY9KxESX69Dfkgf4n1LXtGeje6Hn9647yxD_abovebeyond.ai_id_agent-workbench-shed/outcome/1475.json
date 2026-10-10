@@ -1,0 +1,16 @@
+{
+    "action": "b15a22caa9d55725f4cef846f2fe875a",
+    "effect": {
+        "detail": {
+            "base": "e164a38921f80cf7a209d81cd25b7ed2c1e032d1",
+            "branch": "workbench/policy-test-doors",
+            "commit": "ea6f78e032d69231004921b0806016d716ead95d",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1473,
+    "verdict": "ALLOW"
+}

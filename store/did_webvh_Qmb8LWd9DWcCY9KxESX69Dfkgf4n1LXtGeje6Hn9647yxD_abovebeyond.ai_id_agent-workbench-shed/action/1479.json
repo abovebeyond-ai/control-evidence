@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8032db11847aa6b58c278510a414bd89676068cf",
+            "branch": "workbench/fix/lead-errors-speak-dutch",
+            "files_sha256": "da6f75853c7181da6df64a343d07488de6b34728099d48077f0ef3a35d912572",
+            "message": "A question that cannot be sent says why in Dutch\n\nThe /api/lead route passed the platform's own text (\"Vehicle not found.\", Laravel's field\nmessages) and its own codes (\"upstream_unavailable\") through to the form, which showed them to\nthe visitor. Every answer that is not a success is now one Dutch sentence from leadErrorMessage,\nwith the phone number where the visitor cannot fix it; the platform's answer goes to the log."
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261009142101-79a601"
+}

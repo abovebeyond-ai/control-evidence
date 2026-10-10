@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The control gateway was unreachable through the IAP tunnel on 2026-10-09. No proposals, no gateway read tokens for the workbench, and Elixir's auto-deploy could not fetch.\n\nThis adds `docs/incidents/2026-10-09-control-gateway-tunnel.md`:\n\n- **Cause:** `~/.config/gcloud/default_configs.db` for the `elixir` user on the box was corrupted (no longer SQLite). Every gcloud call crashed with `DatabaseError: file is not a database`, so `start-iap-tunnel` never opened. The self-heal in `elixir:control-service` had no process to stop.\n- **Recovery:** only that file was moved aside (kept for the post-mortem), the tunnel was restarted, `/v1/key` answered on `INTEL_TDX`, and the record chain continued.\n- **Validation checklist:** what still needs to be checked (chain replay with `cmd/verify`, anchors, read tokens per owner, Elixir auto-deploy, one end-to-end proposal). This pull request is itself that end-to-end proposal.\n- **Open questions:** what corrupted the file; whether the job should report a gcloud crash by name instead of only `NOT reachable`; whether the tunnel should get its own `CLOUDSDK_CONFIG`.\n\nDocumentation only; no code changes. The site build does not read `docs/`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_017kEkAkYfjRDyJQUaAAfDu5\n",
+            "branch": "workbench/gateway-incident-2026-10-09",
+            "title": "Incident: control gateway unreachable through the tunnel (2026-10-09)"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261009105019-e2557e"
+}

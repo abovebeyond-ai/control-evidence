@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Send the confirmation mails that two shared-stock sales never sent, to the buying and the selling garage of each. The garages were told they would still get them.\n\nSource: Portal mail:7.\n\nBetween 15 and 28 September 2026 three purchases went through \"Overkopen\" on the shared stock. Two of them, on 26 and 27 September, made the copy of the car but wrote no row in `vehicle_history`, so neither side saw the transaction under Bestelbonnen dealertransacties and neither got the sale mail (the bought mail for the buyer, the sold mail for the seller). The rows have since been repaired, the cause is fixed, and `stocklist:check-transactions` now reports a bought-over car without a transaction every day.\n\nWhat is still open: the four mails (two sales, buyer and seller each) were never sent. The platform asked whether to send them late; the answer was yes, because the dealers were promised them. The buyer's mail also carries the button to request transport, although since da256e4b (R S4-10.17) the buyer can request it from the dealer transaction row too.\n\nTo do:\n- Check in the mail log whether these mails went out by hand after 29 September; if they did, close this.\n- Otherwise send them once for the two repaired transactions (the vehicle ids are known from the `stocklist:check-transactions` report of 28 September), with the mails `Vehicle::buy_over` sends, so the wording and links are the current ones.\n- There is no command for this today. A one-off send by hand in tinker is enough; a general resend command is not asked for.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Send the missed sale mails of the two shared-stock purchases of 26 and 27 September"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261008145510-1839a0"
+}

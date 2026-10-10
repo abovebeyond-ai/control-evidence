@@ -1,0 +1,16 @@
+{
+    "action": "e4b2dd965564624d8e896586a2e5e08d",
+    "effect": {
+        "detail": {
+            "base": "0658be8982f7c651fcd9cc050a7fcb3ec81de0aa",
+            "branch": "workbench/site/tagging-gate",
+            "commit": "bb8679e4c85b847143f57942c280ed252935b00f",
+            "files": 20,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1158,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "59f145ea9dc2e610b1f509aec9d95353",
+    "effect": {
+        "detail": {
+            "base": "2be639d27090c5ebeecad49b6d76a76b2895af68",
+            "branch": "workbench/npm-audit-oct",
+            "commit": "839231adbeacacc875e742ece0ba8212050b57f2",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1329,
+    "verdict": "ALLOW"
+}

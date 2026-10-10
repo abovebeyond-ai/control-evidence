@@ -1,0 +1,16 @@
+{
+    "action": "c2fcbefb788382b74f030a756def46a9",
+    "effect": {
+        "detail": {
+            "base": "2beb2d3fcc0e93d9d468bc322629325e01b73681",
+            "branch": "workbench/studio/images-and-posts",
+            "commit": "a140ccc914d8f5c2f938c6fc888da3adea3e9734",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1533,
+    "verdict": "ALLOW"
+}

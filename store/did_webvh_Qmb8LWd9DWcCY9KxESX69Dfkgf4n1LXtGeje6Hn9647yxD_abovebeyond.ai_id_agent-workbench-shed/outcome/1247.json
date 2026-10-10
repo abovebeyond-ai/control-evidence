@@ -1,0 +1,16 @@
+{
+    "action": "464b92330184b81cb24e695bb4410e36",
+    "effect": {
+        "detail": {
+            "base": "10cc6c49bb428a1e046d5ba631598ed165bd07e5",
+            "branch": "workbench/range-uses-stored-coordinates",
+            "commit": "79720ec8b56344783f1049a4ff958213a420778c",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1245,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A policy draft that only adds reversible actions can be approved with the owner's passkey on the Grants page; Portal then signs the version with its own key (`#portal`). The gateway takes `#portal` only for such a version and checks that itself (control `policy/repair.go`).\n\n## What changes\n\n- **Grants page**: when Elixir marks the waiting draft `repairOnly`, the change in words is followed by \"approve version N with your passkey\"; the token command stays beside it.\n- **`PolicyApproval`**: the passkey challenge binds the draft's exact bytes; on the touch the draft is re-read (refused if it changed), signed with `#portal` in canonical form (`Capability::sign`, Google KMS where configured), kept, and logged as a `SigningEvent` via `passkey`.\n- **`PolicyLog::keep`** accepts `#portal` only for a waiting `repairOnly` draft, exactly as drafted (only `iss` and `iat` added), with an approval; it refuses it otherwise. `check` verifies `#portal` against the DID document.\n- **`policy_versions.approval`** (migration): the assertion and its hash beside the version, since the version carries only the fields the gateway reads.\n- **`Jcs::encode` takes objects**: an empty map stays `{}`, so the signed version decodes into the gateway's Go maps (`systems`, `principal_keys`).\n- The draft endpoints carry `repairOnly`; Dutch translations added.\n\n## Checked\n\n- New `PolicyApprovedByPasskeyTest` with a real ES256 passkey: approve and sign as drafted (signature, canonical form, `{}` kept, served to the gateway, draft cleared); a non-repair draft not offered and a `#portal` version for it refused; a version differing from the draft or without approval refused; a draft changed after the challenge refused.\n- End to end: today's live draft signed this way is accepted by the gateway's `Next` under a repair key.\n- `php artisan test`: 704 of 706 pass. The two failures fail the same way on main: `AppAdmitOnKeyTest::test_a_period_for_proposals_names_what_portal_would_name` (time of day) and `BuildStampTest` (no build stamp in a worktree). PHPStan: no errors. Pint clean.\n\nNot yet: bounding the approval by the owner's working set (Portal does not hold the grants the gateway serves; Elixir would need to send the additions per hand).\n\nCompanion PRs: control, elixir, portal-cli (`workbench/repair-signer`).\n",
+            "branch": "workbench/repair-signer",
+            "title": "Approve a repair-only policy draft by passkey; Portal signs it with #portal"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261009133014-5d31d9"
+}

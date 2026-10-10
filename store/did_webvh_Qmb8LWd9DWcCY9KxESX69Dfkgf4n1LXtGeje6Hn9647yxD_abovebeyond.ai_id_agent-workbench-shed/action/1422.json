@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three fixes from the owner-workflow audit (abovebeyond `docs/owner-workflow-audit/`), all in Portal.\n\n**The unsafe line says what closes a grant gap.** `Grants::verdict` told the owner to carry the configuration over whenever a hand was behind. Since the gateway reads the policy log, the gap closes when the owner signs the drafted version, or by itself once a signed version is pulled. The line now depends on `PolicyLog::overview()`:\n- a widening draft waits: \"version N waits for your signature on the token\";\n- a version is signed but not yet served: \"version N is signed, and the gateway takes it up within a minute\";\n- a log but no draft yet: \"Elixir drafts the next version within a minute\";\n- no log served: the old \"carry it over\", and only then the scp/rehearse recipe on `/portal/grants`.\n\n**The verdict on `/portal/werkbank`.** The same level and lines as the grants page and the phone, above the admissions, with a note when unsafe that an admission is kept but the agent must propose again once it clears.\n\n**Every knock on the phone's workbench screen.** `MobileScreens::workbench` keyed `OwnerState::waiting()` by project, so a project that knocked eleven times showed one sentence. It now groups: `waits` (unchanged type, still a string) is the newest sentence plus \"And N more.\", and a new `waitsAll` lists them all. The app reads `waits` as before.\n\nDutch strings added to `lang/nl.json`.\n\nTests: new cases in `PolicyLogTest` and `AppApiTest`. Full suite: 702 tests, 700 pass. The two failures (`AppAdmitOnKeyTest::test_a_period_for_proposals_names_what_portal_would_name`, `BuildStampTest::test_it_publishes_the_build_stamp_from_the_checkout`) fail the same way on origin/main in this checkout: one depends on the date, the other on a git worktree checkout.\n",
+            "branch": "workbench/verdict-says-what-to-do",
+            "title": "Say what closes a grant gap, and show the verdict before the touch"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261009133727-1de9cd"
+}
