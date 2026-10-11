@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "14746520d2d594cd73f012f52610e70d37bd85f5",
+            "branch": "workbench/hold-while-gateway-down-2",
+            "files_sha256": "eec79ae29f844faaf7ec9ba8309a4b73c7255ec9e0d854f8d2f48d62e809e5a6",
+            "message": "Hold admissions while the gateway is down, keep orphans, wake each agent of a merged knock, and say why reads fail"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261010175326-a996ca"
+}

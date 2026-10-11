@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nTests read a model config of their own. `models.mjs` takes its path from `TW_MODEL_CONFIG` when set, and `setupTestDB()` points it at the test's temp dir, next to the temp database.\n\n## Why\n\nAuto-deploy runs the suite on the box, in the checkout that holds the live `store/model-config.json`. That file is what the Settings page saves. Once a phase or the consensus settings changed there, `test/second-reader.test.mjs` (which mocks Together and expects verify to call it) read the live file. It failed 2 of 3, every round, so auto-deploy rejected #312, #313 and #314 and the box stayed on #311.\n\nReproduced locally: with a `store/model-config.json` that moves `classify-verify` to another provider and switches consensus off, `main` gives pass 1, fail 2 in that file, the same count the box logs. With this change it gives pass 3, fail 0. The live file and production behaviour are untouched: without the variable, the path is the same as before.\n\n## Tests\n\nFull suite: 1124 pass, 6 fail. The 6 are the report-render tests, which need `pdftoppm`; the workbench lacks it and the box has it.\n",
+            "branch": "workbench/pipeline/second-reader-test",
+            "title": "Tests read their own model config, not the live one on the box"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010165009-7c1928"
+}

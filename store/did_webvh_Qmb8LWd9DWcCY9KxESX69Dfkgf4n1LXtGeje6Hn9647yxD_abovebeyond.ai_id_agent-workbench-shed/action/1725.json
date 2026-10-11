@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Guilherme's post PDFs arrive with their images. `bin/posts-to-json.mjs` replaces `bin/posts-to-json.py`.\n\nThe Python converter read the text with `pdftotext` and dropped every image, so a post with three pictures arrived as a wall of text. The new converter reads the PDF with pdfjs, so it knows where each line and each image sits on the page and how large the type is.\n\n**Converter**\n- **Structure by type size:**\n  - the largest line is the title, and two title lines right under each other are one title;\n  - lines clearly larger than the body text are sections (`##`), lines a little larger are subheadings (`###`, \"Monday: ...\");\n  - \"What doesn't exist yet: <name>\" is the Opportunity;\n  - the standfirst is the first sentence, as before.\n- **Paragraphs by line gaps:** lines are joined until a gap larger than the line spacing, and a paragraph cut by a page break is joined again.\n- **Images in place:** each image is taken out of the PDF at its own resolution and placed between the paragraphs where the page paints it, as `![](IMAGE:<file>)`. The PNG files are written beside the json. Images under 200 px wide (logos, icons) are left out.\n- **Tags:** ported from the Python script with the same words and thresholds.\n\n**Import**\n- `import-articles.mjs` copies the images into `store/uploads`, where uploaded covers go, and gives the body their `/api/pipeline/uploads/` address. The projection makes those absolute for gentells.com since #309.\n- A missing image stops the piece instead of leaving a broken picture. A dry run copies nothing.\n- The existing rules stay: drafts only, matched on title, and never overwriting a post someone has touched.\n\n**Dependency**\n- New: `pdfjs-dist`. Images come straight from the PDF objects, so no canvas library and no poppler are needed for this step; `sharp` was already a dependency.\n\n**Checked**\n- New `test/post-pdf.test.mjs`. It builds its own one-page PDF (Guilherme's files are his work and stay out of the repo) and checks the structure, the image in place and the Opportunity. It also covers the copy into the uploads, and that a missing image stops the piece. The three existing import tests pass.\n- Full suite: 1128 of 1134 pass. The 6 failures are `report-render`, which needs `pdftoppm`, as on main; CI installs it.\n- On the real \"The meal has a scoreboard\" against a local pipeline: imported as a draft with the standfirst, the Counterweight Opportunity, food tags and all three images in place.\n",
+            "branch": "workbench/pipeline/post-pdf-images",
+            "title": "Post PDFs arrive with their images: posts-to-json.mjs replaces posts-to-json.py"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010165058-229b7e"
+}

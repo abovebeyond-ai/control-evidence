@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe gate reads a topic id with its name glued on as that id: `topic-10-media-platforms` becomes `topic-10`. It does so only when the name after the id does not point at another topic: `topic-10-fashion-style` stays dropped, because it is ambiguous.\n\n## Why\n\nThe first audit of the gate on the box (7 days) dropped 31 concept topics. The five most frequent were all of this form: `topic-10-media-platforms`, `topic-14-technology-ai`, `topic-05-fashion-style`, `topic-11-social-relationships`, `topic-07-mental-health`. In each, the id is right there. Dropping them threw away a correct tag; now the audit counts them as corrected.\n\n## Tests\n\nOne new case in `test/conform.test.mjs`. Full suite: 1131 pass, 6 fail. The 6 are the report-render tests, which need `pdftoppm`; the workbench lacks it and the box has it.\n",
+            "branch": "workbench/pipeline/topic-slug-prefix",
+            "title": "The gate reads topic-NN-name as topic-NN"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010170708-441d56"
+}

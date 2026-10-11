@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: A garage received leads that look like spam. The website widget's \"Stel een vraag\" form (`POST website/contact`) has no spam protection at all, so any script can open leads and mail the garage.\n\n## What is wrong\n\n`website/contact` is exempt from the request-forgery check (the iframe cannot rely on our session cookie), and it has no other guard:\n\n- no honeypot, no render-time check, no limit on links;\n- no throttle;\n- no maximum length on name, phone or message;\n- the `vehicle_id` is not checked against the dealer: any vehicle id opens a lead for the dealer of the hash.\n\nA dealer hash is on every page that embeds the widget, so one POST per lead is enough.\n\n## Proposal\n\nThe same traps the StockCars site uses on its own forms: a hidden honeypot, an encrypted render moment in the form (4 seconds to 24 hours old), at most 2 links in the message and none in the name. A refused post gets the same answer as a sent one and opens nothing. Plus a per-visitor throttle, the length limits of the public API's lead endpoint, and the vehicle rule of that endpoint (own car or a car the dealer's site lists).\n\nThe public API's door is covered on the site's side in stocklistdealer-eu/stockcars-website#37.\n\nSource: Portal mail:10.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Keep spam out of the website widget's question form"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261010082348-0c339c"
+}

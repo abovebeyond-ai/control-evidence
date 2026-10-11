@@ -1,0 +1,16 @@
+{
+    "action": "31ac9e032f7d2a2ff67c9e858b12cb23",
+    "effect": {
+        "detail": {
+            "base": "6c259935b2d7c32bbf0cfc6f6e2efe4bdc7df222",
+            "branch": "workbench/lead-sources-and-widget-gate",
+            "commit": "5139b8d58a773cff1680ea65023efff245769e1a",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1602,
+    "verdict": "ALLOW"
+}

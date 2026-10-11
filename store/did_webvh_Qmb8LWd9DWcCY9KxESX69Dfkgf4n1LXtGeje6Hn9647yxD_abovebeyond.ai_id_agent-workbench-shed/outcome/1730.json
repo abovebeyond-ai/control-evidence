@@ -1,0 +1,16 @@
+{
+    "action": "d86cbf25f2d6311185c2f253dc738dde",
+    "effect": {
+        "detail": {
+            "base": "e00513ac33dda5ac45c7b6a44253883bf3bbbace",
+            "branch": "workbench/studio/editor-sources-autosave",
+            "commit": "6b90d1ca74bfeaa361251c17914e17dd13236a90",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1728,
+    "verdict": "ALLOW"
+}

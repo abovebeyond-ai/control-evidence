@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three fixes to `admission-watch` and the workbench's read wrappers, from the owner-workflow audit in abovebeyond `docs/owner-workflow-audit/` (fixes 2 and 3).\n\n**No wake-up into a gateway that does not answer.** On 9 October the owner admitted a project while the gateway was down; the watcher woke the agent, its retry failed at once, and the knock had already left the owner's list. The watcher now reads `owner/state` once per round and, when it says `gateway.reachable === false`, wakes nobody: the answers stay pending (`held: the gateway does not answer; N admissions wait`) and go out on the first round after it answers again. An older Portal without the field, or a Portal that cannot be read this round, leaves the round as it was. The field is added by a Portal pull request opened alongside this one; this change works with or without it.\n\n**An admission whose agent is gone no longer vanishes.** It was dropped with \"no such agent on the workbench\". It is now kept for a day as `orphaned` (project, agent, when answered) and shown with `admission-watch.mjs --orphans` and in `--dry-run`. The voice bridge has no way for another process to post an event into the owner's conversation (its events come from its own look at herdr), so none was invented here.\n\n**One wake-up per agent and project.** Repeated knocks answered by one admission wake the agent once.\n\n**Reads say why they fail.** `git-credential-workbench` and the `gh` wrapper lived only in `~/.local/bin` and failed silently when the door gave no token, so git said `could not read Username`. Versioned copies are now in `workbench/bin/`, identical except that they print one line on stderr (`workbench: no read token for <owner>, the gateway did not answer (<the door's first line>)`); git still gets no credential and falls through, `gh` still runs without a token. Installing them is one `install` line in the README; the copies in `~/.local/bin` are not changed by this pull request.\n\nTests: `lib/admission.test.mjs` gains the hold, orphan, explicit-field and per-agent cases (8 pass). `lib/*.test.mjs` 32 pass, `voice/*.test.mjs` 26 pass, `test/*.test.mjs` 7 pass. The credential helper was run against a fake failing and a fake answering `ssh`.\n",
+            "branch": "workbench/hold-while-gateway-down",
+            "title": "Hold admissions while the gateway is down, keep orphans, and say why reads fail"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261010174804-af9efc"
+}

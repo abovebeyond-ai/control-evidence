@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three gaps from the owner-workflow audit (abovebeyond `docs/owner-workflow-audit/`, fixes 3 and 5), all about knocks.\n\n**One knock per ask.** `WorkbenchRequest::knock` made a new row whenever the reason or the agent differed, so one read the owner admits once stood as eleven rows (Stocklist, 9 October 2026). An open knock is now unique per project and layer: a second ask updates it with the latest reason, one more in `asks`, and the agent added to `agents` (`agent` keeps the latest, for older readers). New migration adds `asks` (default 1) and `agents` (json). Rows already open are folded on read by `WorkbenchRequest::visible()`: asks summed, agents joined, nothing saved. The screens say \"Asked 3 times, by voice-1, voice-2.\" when a knock was asked more than once.\n\n**`workbench/answers` stays compatible.** Still one element per agent to wake, same fields. A knock asked by several agents gives one element per agent; they share the knock's `id` (so `after=<id>` still counts knocks) and carry a new `key` (`<id>:<agent>`), the agent that asked last coming last. A reader that keys its pending answers by `id` alone (portal-cli `admission.mjs` today) tells only that last agent until it keys by `key`.\n\n**A week, not a day.** Open knocks older than 24 hours were invisible but still open. They now show for 7 days after their last ask, with the day and hour.\n\n**Held.** Admitting writes to Portal and never asks the gateway; with the gateway down, the knock was answered, vanished, and nothing happened. While Elixir's last grants report says the gateway does not answer, a knock answered in the last day shows as kind `held` in `owner/state` (\"admitted, waits on the gateway: it does not answer, the agent proposes again once it does.\") and beside the verdict on `/portal/werkbank`. The phone's workbench screen leaves `held` (like `pull`) to the watch screen.\n\n**`owner/state` gains `gateway`**: `{reachable: bool|null, at: ISO 8601|null}`, null before Elixir ever reported, so admission-watch on the workbench can hold its prompts while it is false.\n\nTests: new cases in `WorkbenchAnswersTest` (dedupe, per-agent answers) and `OwnerStateTest` (folding legacy rows, the week window, held, the gateway field); `AppApiTest` and the day-window case adjusted. Pint and PHPStan pass; the full suite passes except `BuildStampTest`, which fails only when run from a git worktree.\n",
+            "branch": "workbench/one-knock-per-ask",
+            "title": "One knock per ask, a week on the screens, and an admission held by the gateway said"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261010174934-1e6a6a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e00513ac33dda5ac45c7b6a44253883bf3bbbace",
+            "branch": "workbench/studio/editor-sources-autosave",
+            "files_sha256": "41ce4d63d213ce6ce4a8bf2a515dd7c01b99318289931ed62a8ebf045a204dbc",
+            "message": "Studio editor: sources keep their sentence, hovering a source lights its paragraph, autosave"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261010165125-e51150"
+}

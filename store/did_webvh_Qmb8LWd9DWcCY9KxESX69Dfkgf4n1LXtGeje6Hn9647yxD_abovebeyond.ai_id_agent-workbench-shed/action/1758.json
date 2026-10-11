@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5168eca53f92a1f12e25d292358e9e89ee519e09",
+            "branch": "workbench/policy-passkey",
+            "files_sha256": "e7b246dfe8473504fa71785de19ecb868a90b871a7a745fa5a88669efe8158f9",
+            "message": "Workbench: approve a reversible policy widening with the passkey"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261010172725-38daf7"
+}

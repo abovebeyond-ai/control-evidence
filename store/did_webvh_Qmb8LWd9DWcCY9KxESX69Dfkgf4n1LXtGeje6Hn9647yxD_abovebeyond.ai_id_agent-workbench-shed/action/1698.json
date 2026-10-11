@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nPromote now takes only **enriched** signals. One condition decides both what promote takes and what the scheduler counts as promotable: the signal is enriched, and it is either over the relevance bar or converging and over the lower convergence bar. Both bars come from the Standard (`rules/signal.json#promotable`), so the hardcoded 25 in `process.mjs` is gone.\n\n## Why\n\nPromote took `classified` signals at relevance 61 or more (`getHighRelevance`), and converging ones from 25 (`getConvergenceAlerts`, which only returns raw and classified signals). Enrich only ever claims `classified` signals (`enrich.mjs:59`). So a strong signal that promote reached before enrich was never read for concepts, and never counted towards a pattern: the signals most worth reading were the ones most at risk. The Standard says the opposite order: promotable means \"may move up to enrichment\".\n\nTwo side effects:\n- **Race closed.** A signal claimed by enrich could be promoted mid-run and then set back to `enriched` when enrich finished. Promote no longer touches `classified`, so this can't happen.\n- **Converged signals get promoted.** Enriched signals that converged with relevance between 25 and 60 were promotable under the Standard but never promoted, because convergence was only looked for among raw and classified signals. They are promotable now, at most 500 per run. Promotion only flips the status; nothing downstream reads `promoted` apart from `enriched`.\n\n## How big the damage is\n\nNot measured: the workbench has no access to the production database. `bin/promoted-unenriched.mjs` is read only and counts, by month, the promoted signals that never got a concept:\n\n```\nnode bin/promoted-unenriched.mjs\n```\n\nWhether to re-read those signals is a separate decision, made on that number. The Standard's state machine has no move from promoted back to classified, so a backfill would be its own change.\n\n## Tests\n\n- `test/monitor.test.mjs`: the promotable test now checks that classified signals wait for enrich, that both bars hold, and that the count and the list are the same set.\n- `test/db.test.mjs`: `getHighRelevance` returns only enriched signals.\n- `npm test`: 1,118 pass and 6 fail. All six are `report-render` tests, failing on `spawnSync pdftoppm ENOENT` because poppler is not installed on the workbench where I ran them; they don't touch this change.\n",
+            "branch": "workbench/pipeline/enrich-before-promote",
+            "title": "Promote only enriched signals"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010125329-d85988"
+}

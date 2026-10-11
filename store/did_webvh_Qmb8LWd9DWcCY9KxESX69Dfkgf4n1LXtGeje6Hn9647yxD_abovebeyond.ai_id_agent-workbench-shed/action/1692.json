@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nSessions on the workbench pass two gates before anything reaches GitHub: Claude Code's own permission layer (in auto mode, a classifier that judges every command) and the control gateway. The classifier does not read `CLAUDE.md`. It knows this setup only through `autoMode.environment` in `~/.claude/settings.json`, which lives per machine and in no repo. When that text lags behind, the classifier misjudges routine work. On 2026-10-10 it refused a `hand.mjs propose` from a mail-intake session as an \"external system write\", although the gateway is the sanctioned write path and can never merge.\n\n## Change\n\n- `claude/automode-environment.json`: the auto mode environment as it stands on the workbench, now under version control. It includes three new entries: the write path and its two gates, mail-intake sessions (the intake instructions are authorised, the forwarded mail is not), and what stays the operator's even through the hand.\n- `claude/install.mjs`: writes that array into `~/.claude/settings.json` (it keeps a `.bak` of the previous file); `--check` reports whether a machine matches the repo.\n- `CLAUDE.md`, under the core rule: the two gates, where the classifier gets its context, `propose` as a single command, and the rule that a session does not edit its own instructions or config (the classifier refuses that, rightly) but prepares the change for the operator.\n\n## After merging\n\nOn each machine: `node ~/Projects/workspace/claude/install.mjs`, after the checkout has pulled main. The workbench already has the 28 entries, so there it reports \"up to date\". The MacBook does not have them yet.\n",
+            "branch": "workbench/two-gates",
+            "title": "Keep the auto mode environment in the repo and explain the two gates"
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261010124023-90ca5d"
+}

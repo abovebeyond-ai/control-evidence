@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`AppSignOnKeyTest::test_a_working_set_signed_on_the_key_is_kept_once_and_the_trail_shows_it` fails on main since 2026-10-10 10:00 UTC, and so on every pull request.\n\nIt is the same flaw as #385. The test froze Laravel's clock at 2026-10-07 10:00 and signs a working set for three days. `OperatorKeys` checks the set's expiry against `time()`, which `Carbon::setTestNow` does not freeze, so once the wall clock passed the frozen expiry the set was refused.\n\nThe test now freezes the real current minute and computes the expected sentence from it. No other test in the suite freezes a fixed date.\n\n`php artisan test --filter=AppSignOnKeyTest`: 8 passed, twice. Pint clean.\n",
+            "branch": "workbench/sign-test-real-clock",
+            "title": "AppSignOnKeyTest: freeze the real minute, not a fixed date"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261010170344-981324"
+}

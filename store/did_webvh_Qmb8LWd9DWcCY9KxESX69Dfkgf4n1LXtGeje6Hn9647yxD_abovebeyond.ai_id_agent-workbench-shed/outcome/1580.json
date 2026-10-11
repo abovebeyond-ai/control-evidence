@@ -1,0 +1,10 @@
+{
+    "action": "42a6fd720cc44a903394eaf7517f47f1",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover issue.open on stocklistdealer-eu/stockcars-website",
+    "step": 1578,
+    "verdict": "DENY"
+}

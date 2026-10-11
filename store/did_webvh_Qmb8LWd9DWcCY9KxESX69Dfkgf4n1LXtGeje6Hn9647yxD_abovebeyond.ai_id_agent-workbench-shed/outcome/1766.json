@@ -1,0 +1,16 @@
+{
+    "action": "d52660d3aaee383b443b3d7db268b8d0",
+    "effect": {
+        "detail": {
+            "base": "14746520d2d594cd73f012f52610e70d37bd85f5",
+            "branch": "workbench/hold-while-gateway-down",
+            "commit": "19a5ce9e8028c1a320692e3a12b4c9124d28b078",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1764,
+    "verdict": "ALLOW"
+}

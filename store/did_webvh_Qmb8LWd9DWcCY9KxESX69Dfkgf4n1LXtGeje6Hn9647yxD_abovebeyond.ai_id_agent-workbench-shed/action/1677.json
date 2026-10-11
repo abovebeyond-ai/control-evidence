@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P3\nSummary: One own photo got two platform copies that point at the same file, and copy files with a `(1)` suffix exist next to them. Two processing runs for the same copy seem to have overlapped.\n\n## What was seen\n\nWhile checking the photos of #984 on production (2026-10-10), vehicle 23436:\n\n- rows 632894 and 632928 are both `stocklist = 1` copies of the same own photo (632859), both with `path = 23436/stocklist_car_image_21.jpg`, updated four seconds apart (14:06:08 and 14:06:12 Brussels time);\n- the folder also holds `stocklist_car_image_21(1).jpg` and `stocklist_car_image_8(1).jpg` (with thumbnails); not yet checked whether any row points at them.\n\nThe `(1)` name comes from `ProcessImage::getFilename()` when the plain name is taken, so a second copy run for the same source ran while or right after the first. Two rows on one file means the photo is shown twice on the platform, and deleting one row may remove the file the other still shows.\n\n## To find out\n\nWho creates the second copy row (`PlatformPhotoService`, `Photo::...` line 262, `ImageController` 455), whether `ProcessImage` for one copy can be dispatched twice, and whether the `(1)` files are orphans.\n\nSource: Portal mail:12 (a forwarded Nightwatch notification), found during the production check.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P3"
+            ],
+            "title": "One own photo gets two platform copies on the same file"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261010123841-b0fe28"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9a46a1c714503a39b5d9c61e39328db1c9baceda",
+            "branch": "workbench/pipeline/anchors-follow-edits",
+            "files_sha256": "66025e5f3942c8487e3dd210022ce9c13183831326559e59fe5a2de589c1384c",
+            "message": "Sources follow the writer's edit: anchors move with their sentence on save"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010165026-bb724b"
+}

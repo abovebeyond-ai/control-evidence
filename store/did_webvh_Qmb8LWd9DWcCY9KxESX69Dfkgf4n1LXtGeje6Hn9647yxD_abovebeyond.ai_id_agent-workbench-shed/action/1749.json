@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nA backfill for promoted signals that never got a concept, run by hand in batches.\n\n- `bin/enrich-backfill.mjs [--since 2026-09-01] [--limit 500] [--apply]` counts the candidates; with `--apply` it sends the strongest batch back to `classified`, marked `[enrich backfill]` in their notes. `--progress` shows where the marked signals are now.\n- Candidates are promoted since `--since`, have no concept mention, and pass promote's own relevance condition. Every one of them is therefore promoted again after enrich.\n- Enrich claims fresh signals first and backfilled ones after (`promoted_at IS NOT NULL` sorts last), so the backfill does not delay new signals.\n- `markPromoted` keeps a signal's first `promoted_at`, so flow time and \"promoted in the last hour\" are not distorted by the backfill.\n- When enrich gives up on a signal that was promoted before, the signal returns to `promoted` rather than going to the archive. `recordEnrichFailure` reports only the signals it really archived.\n\n## Why\n\nOn the box, 19,848 of 38,656 promoted signals have no concept: 9,870 of 11,012 promoted in September and 5,897 of 15,582 in October. They were promoted before enrich reached them (fixed in #313), so they never counted towards a pattern. Earlier months are small and past the trend window, and `--since` leaves them alone.\n\n## How to run it\n\n```\nnode bin/enrich-backfill.mjs                      # count only\nnode bin/enrich-backfill.mjs --limit 500 --apply  # first batch\nnode bin/enrich-backfill.mjs --progress           # later: where the batch is\n```\n\nRead the enrich cost on the Observatory after the first batch before sending the next.\n\n## Tests\n\n`test/enrich-backfill.test.mjs` (4 cases: selection, claim order, re-promotion with the first `promoted_at`, give-up back to promoted). Full suite: 1134 pass, 6 fail. The 6 are the report-render tests, which need `pdftoppm`; the workbench lacks it and the box has it.\n",
+            "branch": "workbench/pipeline/enrich-backfill",
+            "title": "Send promoted signals without a concept back through enrich"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010170721-8feba8"
+}

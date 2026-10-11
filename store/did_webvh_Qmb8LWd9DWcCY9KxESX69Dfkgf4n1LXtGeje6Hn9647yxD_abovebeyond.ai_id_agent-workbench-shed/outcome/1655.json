@@ -1,0 +1,18 @@
+{
+    "action": "4b3cb16f76eefb76c0f37ed846c7b6eb",
+    "effect": {
+        "detail": {
+            "branch": "preview",
+            "commit": "6b649900a99793b74eda50998259174ae9e7e64c",
+            "created": false,
+            "head": "workbench/ten-bugs-for-preview-2",
+            "previous": "eb979015fb83a89c2655545f906ae7d8ac25e952",
+            "pull": 987,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1653,
+    "verdict": "ALLOW"
+}

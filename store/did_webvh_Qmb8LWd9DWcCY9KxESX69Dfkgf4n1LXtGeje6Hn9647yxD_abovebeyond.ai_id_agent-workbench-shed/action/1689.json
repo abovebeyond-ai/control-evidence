@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "aacdc14d438a97195afd4868f849d2c7121641be",
+            "branch": "workbench/two-gates",
+            "files_sha256": "50007b54cd4ab0fb14c9addaba4bd0a8ec93347056bfb93e046eb153fe6f5efc",
+            "message": "Keep the auto mode environment in the repo and explain the two gates"
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261010124023-90ca5d"
+}

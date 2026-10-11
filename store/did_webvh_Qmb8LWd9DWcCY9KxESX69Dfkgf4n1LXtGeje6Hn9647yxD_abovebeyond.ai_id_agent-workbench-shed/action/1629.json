@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: Background removal sends remove.bg an empty image when the photo's original is not on the disk, and the 400 that comes back (`missing_source`) is reported as a fault. The tile then says the service refused, while the real reason is that there is no original.\n\n## What happens\n\nNightwatch issue #61 (production, first and last seen 2026-10-10 10:38 UTC, once): `RequestException` 400 from remove.bg, `{\"errors\":[{\"title\":\"No image given\",\"code\":\"missing_source\",...}]}`, at `app/Http/Helpers/Photo.php:167` (the `->throw()` of the remove.bg call).\n\n`Photo::old_remove_background()` builds `image_file_b64` from `Storage::disk('vehicles')->get($fileName)` without checking that the file is there. When it is missing (or empty), `get()` gives null, the part goes out empty, and remove.bg answers `missing_source`. That code is not in `RemoveBgRefusal::IMAGE_CODES` (rightly: it is about what we sent, not about the image), so it is `report()`ed and the photo gets `SERVICE_REFUSED`.\n\nThe fake path in `ProcessImage::fakeRemoveBg()` already checks this and returns `PhotoFailure::SOURCE_MISSING`; the real path does not.\n\n## Expected\n\nThe real path checks the original first, the same way: no file (or an empty one) means no call to remove.bg (no credit, no exception), a log line with the photo id, and `SOURCE_MISSING` for the tile. Why the original was gone for this photo is a separate question; this issue is about not spending a call on it and saying the right reason.\n\nSource: Portal mail:12 (a forwarded Nightwatch notification).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Background removal calls remove.bg with an empty image when the original is missing"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261010120855-e43e37"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "a2c1c744544614787b34d3309d4563b5",
+    "effect": {
+        "detail": {
+            "base": "53df9c01ed7fd2d75e3a357577ac4039fdce2fc2",
+            "branch": "workbench/pipeline/eval-chunked-content",
+            "commit": "7fea5a1701e4eecd51ffdc6e84c0bd3e43b3878c",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1668,
+    "verdict": "ALLOW"
+}

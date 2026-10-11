@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The dealer received two leads today that look like spam and asks whether such leads can be kept out if it grows. The vehicle \"Stel een vraag\" form is the one form on the site without spam traps.\n\n## What is asked\n\nTwo leads arrived in the dealer's Stocklist worklist that look like spam. The question is whether they can be blocked before they become a stream.\n\n## Why it gets through\n\nThe contact, appointment and test-drive forms post to `/api/form-gate/`, which applies the traps in `src/lib/form-gate.ts` (honeypot, a signed token fetched with JavaScript, a 4-second-to-24-hour window, a URL count). The \"Stel een vraag\" modal on a vehicle page posts JSON to `/api/lead/`, which forwards everything straight to the platform's public lead endpoint with the dealer key. None of the traps apply there, and the platform's `throttle:20,1` counts the site's server, not the visitor, so a bot posting to `/api/lead/` opens a lead and a dealer mail for every request.\n\n## Proposal\n\nPut the same gate in front of `/api/lead/`: a `vraag` form name, the honeypot and the token in the modal, and `/api/lead/` evaluates them before it calls the platform. A rejected submission gets the same success answer as an accepted one, so a bot learns nothing, and the reason goes to the function log without the fields.\n\nNot certain the two leads came from this form (they may also have come from the platform's own website widget); this closes the gap that is certainly open.\n\nSource: Portal mail:10.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Keep spam out of the vehicle question form (Stel een vraag)"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261010074921-747375"
+}

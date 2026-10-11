@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #985\n\n## Problem\n\nNightwatch #60: `UnableToCheckFileExistence` at `app/Jobs/ProcessImage.php:174`. This is the HEAD on the original before a platform copy is made. Flysystem throws it when the bucket does not answer, not when the file is missing. The bucket has been intermittently slow since 4 October, and `App\\Support\\StorageUnavailable::retryOnce()` was added for that. The sweepers and `ProcessVehiclePhoto` use it; `ProcessImage` did not. One slow HEAD ended the attempt with an unhandled exception, and the queue retried at once because the job has no backoff.\n\n## Change\n\n- Every bucket question in `dupliceer()` goes through `StorageUnavailable::retryOnce()`: the source check, the free-name search, the check after the copy and the thumbnail check. That last one was asked inside the row update; it now runs just before the update.\n- When the bucket still does not answer, `handle()` logs a warning and releases the job for `SLOW_BUCKET_DELAY` (60 s). The row is not touched, and no \"source missing\" note goes on the tile: a slow bucket is not a missing original. The release happens before anything external runs (remove.bg and Blurit come after the copy), so a retry never pays twice. When the attempts run out, `failed()` stops the spinner and notes the reason, as before.\n- The catch is limited to the copy step on purpose. Releasing after remove.bg has run would buy a second cut-out.\n\nOne edge case remains. If the HEAD *after* a successful copy fails twice, the retry makes a new copy under the next free name, and the first copy stays in the bucket with no row pointing at it. Nothing shows it, so it costs storage only.\n\n## Tests\n\nTwo new tests in `ASlowBucketIsNotAMissingPhotoTest`. Both fail on main with the exact Nightwatch exception:\n- one slow HEAD on the original: the copy is made, nothing is released, and no reason is noted;\n- a bucket that never answers: the job is released with 60 s, the row is unchanged, `processing` stays 1, and no reason is noted.\n\nFull suite locally: 3042 tests, OK (2 skipped, 1 incomplete, as on main). PHPStan: no errors.\n\nSource: Portal mail:11.\n",
+            "branch": "workbench/processimage-slow-bucket",
+            "title": "ProcessImage: retry a slow bucket HEAD before the platform copy, release instead of crashing"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261010122244-8dc1fd"
+}

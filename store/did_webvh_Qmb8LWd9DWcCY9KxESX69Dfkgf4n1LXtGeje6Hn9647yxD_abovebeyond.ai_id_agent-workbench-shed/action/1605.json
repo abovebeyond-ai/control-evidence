@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`website/contact`, the \"Stel een vraag\" form of the website widget, is exempt from the request-forgery check because the iframe cannot rely on our session cookie. It had no other guard: any POST with a dealer hash, which is on every page that embeds the widget, opened a lead and mailed the garage, for any vehicle id, with no length limit and no throttle.\n\n## What changes\n\n- `App\\Support\\WidgetLeadGate`: the traps the StockCars site already uses on its own forms. A hidden honeypot (`bot-field`), an encrypted render moment in `form_token` that must be 4 seconds to 24 hours old (the modal is fetched on the click), at most 2 links in the message and none in the name.\n- `WebsiteController::storeLead`: a refused post gets the same JSON as a sent one, so a bot learns nothing; the log keeps only the reason. The car must be the dealer's own or one its widget lists (`PublicWebsiteStock`), the same rule as the public API's lead endpoint; anything else is a 404.\n- `LeadRequest`: the length limits of the public API (name 255, phone 60, email 255, message 5000).\n- Route: `throttle:10,1`. The visitor's browser posts directly, so this counts per visitor.\n- The `listings` read tool also returns `lead_sources`: leads per door (`public_api`, `widget`, `proposal`, `unknown`) against the period before, counts only. Spam through one door then shows on the B1 read without naming a garage or a person.\n\n## Checked\n\n- New tests: seven spam cases that answer 200 but open no lead and send no mail; another garage's car is a 404; leads are counted per source. The existing widget lead test now carries a token.\n- Full suite on the workbench: 3040 tests, no failures or errors.\n\nThe site's own door (public API) is covered in stocklistdealer-eu/stockcars-website#38.\n\nCloses #981\n",
+            "branch": "workbench/lead-sources-and-widget-gate",
+            "title": "Guard the widget's question form against spam; count leads per source"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261010082417-073fc6"
+}

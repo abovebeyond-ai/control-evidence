@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:10",
+            "note": "Spam on the vehicle question form of stockcars.be: the form skips the spam gate the other forms have; issue + fix in stockcars-website",
+            "state": "in-progress"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261010074104-4f003a"
+}

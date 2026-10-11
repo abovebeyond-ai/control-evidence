@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "44788a4b222a330424e6a5c0076a949a87bd97e6",
+            "branch": "workbench/one-knock-per-ask",
+            "files_sha256": "dde88c58b3cf6e6560f471525914d05d1c0f9c4d7f512ecbb6b047e04192014b",
+            "message": "One knock per ask, a week on the screens, and an admission held by the gateway said"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261010174934-1e6a6a"
+}

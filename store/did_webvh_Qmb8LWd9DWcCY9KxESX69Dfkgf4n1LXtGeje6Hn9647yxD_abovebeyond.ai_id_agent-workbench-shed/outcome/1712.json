@@ -1,0 +1,16 @@
+{
+    "action": "e740e37489d08fae1c4fb2223070fd38",
+    "effect": {
+        "detail": {
+            "base": "9a46a1c714503a39b5d9c61e39328db1c9baceda",
+            "branch": "workbench/pipeline/second-reader-test",
+            "commit": "16132eea54ea1b3a1da0068d863f913c510a4733",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1710,
+    "verdict": "ALLOW"
+}

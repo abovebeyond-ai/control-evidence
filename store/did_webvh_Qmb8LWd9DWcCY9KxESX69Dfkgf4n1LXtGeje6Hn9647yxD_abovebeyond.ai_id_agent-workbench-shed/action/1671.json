@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two fixes to the evaluation that came out of the balanced gold-set run of 2026-10-10.\n\n## Why\n\n- **GLM 5.3 crashed the run.** Mistral sends a reasoning model's answer as a list of chunks: a `thinking` chunk, then `text` chunks. `callOpenAICompat` passed that list on as the answer, and `eval-models` threw `(text || \"\").replace is not a function` on it.\n- **Haiku 4.5 was scored on fewer signals.** It needs up to 114 s for a batch of ten. Two of its batches were killed at the eval's 120 s limit (exit 143), so it was scored on 80 signals while every other model had 100.\n\n## What changes\n\n- **`messageText(content)` in `models.mjs`.** A string answer passes unchanged. For a list of chunks it keeps only the `text` chunks, never the thinking. Anything else becomes an empty answer instead of an object.\n- **`eval-models`.** The batch timeout goes from 120 s to 300 s. Speed stays visible in the latency column.\n\nProduction phases keep their own timeouts.\n\n## How it was tested\n\n- New `test/message-text.test.mjs` covers a plain string, chunks with thinking, and unusable input.\n- The provider, refusal and verify-tier tests still pass.\n- `npm test`: everything passes except the six known `report-render` tests, which fail because the workbench has no `pdftoppm`.\n\n## After merge\n\n```bash\nnode packages/engine/eval-models.mjs classify mistral/zai-glm-5-3 --balanced --n 100 --seed 7\nnode packages/engine/eval-models.mjs classify --balanced --n 100 --seed 7      # Haiku 4.5 again, on all 100\nnode packages/engine/eval-models.mjs leaderboard classify --since 2026-10-10\n```\n",
+            "branch": "workbench/pipeline/eval-chunked-content",
+            "title": "Read a reasoning model's chunked answer as text, and give an eval batch five minutes"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010123637-37f65e"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "a9e23a4ec419aeaad076e400ce7759dd",
+    "effect": {
+        "detail": {
+            "base": "5168eca53f92a1f12e25d292358e9e89ee519e09",
+            "branch": "workbench/policy-passkey",
+            "commit": "fef6d468d717003bb3f21314a05a12afca718166",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1758,
+    "verdict": "ALLOW"
+}

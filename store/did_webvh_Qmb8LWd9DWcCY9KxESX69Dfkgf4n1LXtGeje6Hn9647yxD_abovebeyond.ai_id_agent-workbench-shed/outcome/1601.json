@@ -1,0 +1,14 @@
+{
+    "action": "2fa9df88d2bf986f918bdfda83dcfa00",
+    "effect": {
+        "detail": {
+            "number": 981,
+            "url": "https://github.com/stocklistdealer-eu/platform/issues/981",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1599,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "48950c5b877daa054dfbb7f4011ae5e2",
+    "effect": {
+        "detail": {
+            "base": "44788a4b222a330424e6a5c0076a949a87bd97e6",
+            "branch": "workbench/one-knock-per-ask",
+            "commit": "38ff6fca02036b0b0fe0ac1b55b04396679dafc5",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1770,
+    "verdict": "ALLOW"
+}

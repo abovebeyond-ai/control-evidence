@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "46f9159b2faee45d690a5765df058c291e6ffcb9",
+            "branch": "workbench/pipeline/enrich-before-promote",
+            "files_sha256": "0267f772b57d31ea5612bda1851d928a1b1b4057ab46d41c05a6acf18ee5dc5a",
+            "message": "Promote only enriched signals"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010125329-d85988"
+}

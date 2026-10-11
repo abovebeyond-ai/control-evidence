@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a0c6ff7a4f9f17b3ff38ca52e973450b47315b3c",
+            "branch": "workbench/processimage-slow-bucket",
+            "files_sha256": "1fa4c0b0cd0e0937545a3c7f389bd365c919b48b84e1cd28f7724de31602f528",
+            "message": "A slow bucket HEAD retries the platform copy instead of crashing ProcessImage\n\nNightwatch: 60"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261010122244-8dc1fd"
+}

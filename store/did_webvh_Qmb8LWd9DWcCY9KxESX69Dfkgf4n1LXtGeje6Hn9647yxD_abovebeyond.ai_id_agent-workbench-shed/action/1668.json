@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "53df9c01ed7fd2d75e3a357577ac4039fdce2fc2",
+            "branch": "workbench/pipeline/eval-chunked-content",
+            "files_sha256": "2bc76b10be24154326aeb3e68d8a7fabe3d92b1bfd951fa015faa1b8b5852048",
+            "message": "Read a reasoning model's chunked answer as text, and give an eval batch five minutes\n\nTwo faults in the balanced gold-set run of 2026-10-10:\n\n- Mistral sends a reasoning model's answer (GLM 5.3) as a list of chunks, a\n  thinking chunk and then text chunks. callOpenAICompat passed that list on as\n  the answer, and eval-models crashed on it. messageText keeps the text chunks\n  only; a plain string is unchanged.\n- Haiku 4.5 needs up to 114 s for a batch of ten, and two of its batches were\n  killed at the eval's 120 s limit, so it was scored on 80 signals while the\n  other models had 100. The limit is now 300 s; speed stays in the latency\n  column."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010123637-37f65e"
+}

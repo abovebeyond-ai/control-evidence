@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3c78873cec51792fd8b2791c35b308695e0f7de6",
+            "branch": "workbench/remove-bg-source-missing",
+            "files_sha256": "a545c8d548935858982fbfb3aa3509565470cb30b2e2dcceeb9029269eec8383",
+            "message": "Do not send remove.bg an empty image when the original is missing\n\nA missing or empty original went out as an empty image_file_b64 and came\nback as a reported 400 missing_source. Return SOURCE_MISSING without a\ncall, as the fake path already did.\n\nNightwatch: 61"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261010121346-270cfe"
+}

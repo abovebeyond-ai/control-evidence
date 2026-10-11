@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9a46a1c714503a39b5d9c61e39328db1c9baceda",
+            "branch": "workbench/pipeline/post-pdf-images",
+            "files_sha256": "ace71ebbcb0634c9629f8dd3158403cfb3735e0acd950ee4a41f45a5d02e8531",
+            "message": "Post PDFs arrive with their images: posts-to-json.mjs replaces posts-to-json.py"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010165058-229b7e"
+}

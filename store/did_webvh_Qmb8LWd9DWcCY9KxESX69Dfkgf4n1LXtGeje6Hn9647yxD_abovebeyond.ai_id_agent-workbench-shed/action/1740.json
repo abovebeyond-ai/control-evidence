@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ead97d8244da868f8ae205428c77f8cf658344cd",
+            "branch": "workbench/pipeline/topic-slug-prefix",
+            "files_sha256": "737524819395a596a11664ffae9cd5fbf544919a0220e7b8de2d1ee2246222b1",
+            "message": "The gate reads topic-NN-name as topic-NN"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010170708-441d56"
+}

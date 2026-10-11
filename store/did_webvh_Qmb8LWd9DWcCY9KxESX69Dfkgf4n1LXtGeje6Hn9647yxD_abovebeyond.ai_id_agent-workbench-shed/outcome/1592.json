@@ -1,0 +1,16 @@
+{
+    "action": "4c6ddb7f70c9a12e310d10886e71862e",
+    "effect": {
+        "detail": {
+            "base": "af2f6cd61b3c138410d46102b2d7119acbe28a72",
+            "branch": "workbench/lead-spam-gate",
+            "commit": "e3d513fc36aa163af3a85419107aba004129394b",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1590,
+    "verdict": "ALLOW"
+}

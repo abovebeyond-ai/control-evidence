@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "83efa7126e83d4cfbc688633b3591eb410ef4055",
+            "branch": "workbench/app-policy-passkey",
+            "files_sha256": "6c133265287404d1e3a345ab987705f04264f217ee46c9a64bec1e174c516a0f",
+            "message": "The app approves a repair-only policy draft by passkey"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261010172702-f8feaa"
+}

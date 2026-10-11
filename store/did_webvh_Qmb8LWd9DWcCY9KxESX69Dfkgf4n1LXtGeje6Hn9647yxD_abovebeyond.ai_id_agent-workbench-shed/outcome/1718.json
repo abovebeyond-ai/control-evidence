@@ -1,0 +1,16 @@
+{
+    "action": "2b76e59a7b16aeefb8f6c29296483ff0",
+    "effect": {
+        "detail": {
+            "base": "9a46a1c714503a39b5d9c61e39328db1c9baceda",
+            "branch": "workbench/pipeline/anchors-follow-edits",
+            "commit": "f44934be9a001caef2ea3fb3f462b033e06da9e5",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1716,
+    "verdict": "ALLOW"
+}

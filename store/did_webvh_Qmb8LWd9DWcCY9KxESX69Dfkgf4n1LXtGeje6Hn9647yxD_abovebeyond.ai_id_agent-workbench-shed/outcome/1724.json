@@ -1,0 +1,16 @@
+{
+    "action": "e519627275556b0141771f3514891a34",
+    "effect": {
+        "detail": {
+            "base": "9a46a1c714503a39b5d9c61e39328db1c9baceda",
+            "branch": "workbench/pipeline/post-pdf-images",
+            "commit": "0b622353aeab9a9f5cc41d5d6b013940b4803ce2",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1722,
+    "verdict": "ALLOW"
+}

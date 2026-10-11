@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3c78873cec51792fd8b2791c35b308695e0f7de6",
+            "branch": "workbench/ten-bugs-for-preview-2",
+            "files_sha256": "76f5de777865d97de8f455e87d9ebe704556a62145eb6f2955e4774a0e3ab135",
+            "message": "Fix nine findings on orders, the Stocklist gate, customer mode and cleanup"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261010121721-ed1b6e"
+}

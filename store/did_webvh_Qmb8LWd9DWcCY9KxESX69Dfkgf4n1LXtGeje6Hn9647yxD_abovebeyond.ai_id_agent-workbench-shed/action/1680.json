@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3706c4f13b91793e2695df64cd512983cc33c633",
+            "branch": "workbench/remove-bg-read-retry",
+            "files_sha256": "bdfb1a25c9b9e236abcb585a5d8edd2c4b3734f94e222672a2fc7318411d54dc",
+            "message": "Read the original for remove.bg with a retry, and send nothing without bytes\n\nThe vehicles disk answers a failed read with null, which went to\nremove.bg as an empty image and came back as a reported 400\nmissing_source. Read through readSource() with one retry: a file that\nis not there is SOURCE_MISSING, one whose bytes do not come twice is a\nreported storage fault. Nothing is sent without bytes.\n\nNightwatch: 61\nPortal: A photo whose file the storage briefly did not return is no longer sent empty to the background removal service."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261010123856-e72b38"
+}

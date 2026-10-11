@@ -1,0 +1,16 @@
+{
+    "action": "d278a92a972d5c8532ea3302177daf65",
+    "effect": {
+        "detail": {
+            "base": "46f9159b2faee45d690a5765df058c291e6ffcb9",
+            "branch": "workbench/pipeline/enrich-before-promote",
+            "commit": "167a77c2ebc35574d635fb1d3239ebaed7c04152",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1695,
+    "verdict": "ALLOW"
+}

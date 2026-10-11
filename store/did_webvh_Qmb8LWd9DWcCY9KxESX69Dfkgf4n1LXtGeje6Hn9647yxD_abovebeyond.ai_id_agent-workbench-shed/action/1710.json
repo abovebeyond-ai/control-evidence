@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9a46a1c714503a39b5d9c61e39328db1c9baceda",
+            "branch": "workbench/pipeline/second-reader-test",
+            "files_sha256": "c6bdf5510eaba22c83f6a6c916df018154c75433479648fb3356821a4787ee3b",
+            "message": "Tests read their own model config, not the live one on the box"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261010165009-7c1928"
+}

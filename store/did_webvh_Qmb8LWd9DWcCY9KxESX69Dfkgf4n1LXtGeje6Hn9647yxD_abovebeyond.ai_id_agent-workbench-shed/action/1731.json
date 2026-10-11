@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three fixes in the editor. Best merged after the pipeline pull request that moves anchors on save; without it the number still stays while typing, but the stored anchor does not follow the edit.\n\n**Sources keep their sentence**\nA source is tied to its sentence by the sentence's text, so changing one word in it took the source's number away. While the writer types, the sentence sharing most of its words, at least half, now stands in (`anchorEnd` in `piece.js`, the pipeline's `anchorIn` rule). A test is added in `piece.test.js`.\n\n**Hovering a source lights its paragraph**\nHovering a source in the margin highlights the paragraph it stands in. The highlight is the Studio's highlighter yellow, so it cannot be confused with a pending suggestion, which is pale aqua.\n\n**Autosave**\nWith Save as the only way, an unsaved edit was lost without a warning when the writer left the piece. The piece now saves itself 1.5 seconds after the writer stops typing. The button stays, and says Saving and Saved as before; an autosave shows no toast.\n\n**Checked**\n- Against a local pipeline:\n  - one word changed in a sourced sentence: the number stays, and the piece saved without pressing Save;\n  - the stored anchor moved with the edit;\n  - hovering the source highlights its paragraph.\n- `npm test`: 14 passed. `vite build` passes.\n",
+            "branch": "workbench/studio/editor-sources-autosave",
+            "title": "Studio editor: sources keep their sentence, hovering a source lights its paragraph, autosave"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261010165125-e51150"
+}

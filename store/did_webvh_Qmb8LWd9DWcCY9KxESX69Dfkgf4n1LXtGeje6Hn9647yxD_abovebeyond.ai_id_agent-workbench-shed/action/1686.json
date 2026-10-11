@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:12",
+            "note": "PR #986 merged empty (uncommitted propose); real fix is PR #991 (issue #989, read with retry). Duplicate platform copies on vehicle 23436: issue #990",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/991"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261010123925-26e8e0"
+}

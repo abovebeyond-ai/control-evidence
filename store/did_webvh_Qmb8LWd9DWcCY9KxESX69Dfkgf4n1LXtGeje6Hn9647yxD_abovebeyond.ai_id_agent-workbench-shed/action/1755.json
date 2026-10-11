@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Android app can approve a repair-only policy draft with the passkey, the same way `/portal/grants` does (#384, #390).\n\n## What changes\n\n- **`/app/policy/options` and `/app/policy/approve`** (owner session, `portal.app:owner`) call `PolicyApproval::options` and `approve`. The working-set check, the challenge bound to the draft's bytes, the `#portal` signature and the stored approval are all unchanged. `PasskeyAssertion` already accepts the app's origin beside Portal's.\n- **The Workbench JSON** (`MobileScreens::workbench`, shared by `/mobile` and the app) carries `policyApproval` when a repair-only draft waits: its version, the change in words, and either the touch's label (`action`) or, outside the working set, why the token signs it (`outside`). Inside the set, the one-line `policy` sentence says to approve with the passkey rather than sign on the token.\n- Dutch translations for the new lines (the app itself asks for English).\n\n## Checked\n\n- New tests: the app sees the change and approves through `/app/policy/*` with a passkey assertion, Portal signs with `#portal`, and the block is gone afterwards; outside the set the block has no action and says why, and the options are refused with `no_working_set`; a draft that is not a repair has no block.\n- `php artisan test`: everything passes except `BuildStampTest`, which needs a build stamp a worktree lacks and passes in CI. PHPStan: no errors. Pint clean. Rebased on main after #393.\n\nCompanion PR: portal-android `workbench/policy-passkey`.\n",
+            "branch": "workbench/app-policy-passkey",
+            "title": "The app approves a repair-only policy draft by passkey"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261010172702-f8feaa"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "dc35af46bc74b81d6bd255f964f2eebe",
+    "effect": {
+        "detail": {
+            "base": "aacdc14d438a97195afd4868f849d2c7121641be",
+            "branch": "workbench/two-gates",
+            "commit": "81edb8e41eb08960500ed21f2de100222d7a582a",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1689,
+    "verdict": "ALLOW"
+}

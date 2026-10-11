@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "preview.push",
+        "params": {
+            "base": "3c78873cec51792fd8b2791c35b308695e0f7de6",
+            "branch": "preview",
+            "head": "workbench/ten-bugs-for-preview-2",
+            "pull": 987,
+            "sha": "6b649900a99793b74eda50998259174ae9e7e64c"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261010121901-0fad17"
+}

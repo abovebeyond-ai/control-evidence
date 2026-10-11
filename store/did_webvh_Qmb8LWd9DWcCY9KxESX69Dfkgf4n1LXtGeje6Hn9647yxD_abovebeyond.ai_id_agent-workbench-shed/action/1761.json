@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Workbench: a reversible widening of the gateway's policy is approved with the passkey, without the YubiKey.\n\nWhen Portal's Workbench answer carries `policyApproval` (a draft that only adds actions undone in one step), the screen shows the change in words under the policy line, then either:\n\n- **inside the working set:** one primary action, \"Approve version N with your passkey\". It opens Android's passkey sheet, posts the assertion to `/app/policy/approve`, and says what Portal kept;\n- **outside it:** the reason as a note, with no button. The Sign screen's YubiKey path is unchanged.\n\nA refusal comes back through the existing ways out (`StrongKey` opens the Sign screen). `docs/approvals.md` lists it under what works.\n\n## Checked\n\n- A new `ReadScreenTest` case reads the block with its action, with its reason, and absent.\n- `./gradlew testDebugUnitTest assembleDebug`: 53 unit tests pass, and the debug APK builds.\n- Not yet seen on a phone: the block only appears once the Portal PR is deployed and a reversible draft waits.\n\nCompanion PR: portal `workbench/app-policy-passkey`.\n",
+            "branch": "workbench/policy-passkey",
+            "title": "Workbench: approve a reversible policy widening with the passkey"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261010172725-38daf7"
+}

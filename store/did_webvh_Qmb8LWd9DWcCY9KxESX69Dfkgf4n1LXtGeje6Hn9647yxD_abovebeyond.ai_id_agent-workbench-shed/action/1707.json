@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:13",
+            "note": "Owner question answered: e2e SEA report reviewed and new site compared with the live one, delivered as a PDF; no repo linked to schoutteet, no change asked, so no issue or PR",
+            "state": "done"
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261010164726-85eec0"
+}

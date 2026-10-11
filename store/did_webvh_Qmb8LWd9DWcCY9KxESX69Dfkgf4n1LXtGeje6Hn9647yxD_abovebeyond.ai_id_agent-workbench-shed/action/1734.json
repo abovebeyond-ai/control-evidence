@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a502d067fd679a060ec12cf02c59ec761d66267",
+            "branch": "workbench/sign-test-real-clock",
+            "files_sha256": "0cef650ea4eacdc7295e96e2fc54caf7c89c658aa9bc51691ebd577e562e8905",
+            "message": "AppSignOnKeyTest: freeze the real minute, not a fixed date"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261010170344-981324"
+}
