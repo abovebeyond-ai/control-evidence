@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f60a3ca8c4a5f04ee9f4d9a9bc456f31edb0a598",
+            "branch": "workbench/pipeline/glm-reasoning-effort",
+            "files_sha256": "6705e69d751a7b09871bf8baf0e8ae5a52718eb88e4deb32e8eae4f64551b9be",
+            "message": "Send GLM 5.3 at low reasoning and say so when a model runs out of tokens before answering"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261011083643-3b39b4"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "4d8c2491bfbdbcb9344541845e6daade",
+    "effect": {
+        "detail": {
+            "base": "f60a3ca8c4a5f04ee9f4d9a9bc456f31edb0a598",
+            "branch": "workbench/pipeline/glm-reasoning-effort",
+            "commit": "8c40274ab46314803c6259bbcc919204c29befb8",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1782,
+    "verdict": "ALLOW"
+}

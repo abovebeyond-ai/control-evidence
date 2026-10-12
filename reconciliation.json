@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-11T07:34:16+00:00",
+    "computed_at": "2026-10-12T07:34:23+00:00",
     "window": {
-        "since": "2026-10-04T07:33:02+00:00",
+        "since": "2026-10-05T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -104,8 +104,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 43,
-                "gateway": 28
+                "github": 41,
+                "gateway": 29
             }
         },
         "Trendwolves/gentells-site": {
@@ -196,7 +196,7 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 35,
+                "github": 33,
                 "gateway": 24
             }
         },
@@ -349,7 +349,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 18,
+                "github": 17,
                 "gateway": 14
             }
         },
@@ -711,16 +711,16 @@
     },
     "unexplained": [
         "ShaneDeconinck/shanedeconinck.be: 1 pulls on GitHub, 0 performed by the gateway",
-        "Trendwolves/gentells-pipeline: 43 pulls on GitHub, 28 performed by the gateway",
+        "Trendwolves/gentells-pipeline: 41 pulls on GitHub, 29 performed by the gateway",
         "Trendwolves/gentells-site: 11 pulls on GitHub, 5 performed by the gateway",
         "abovebeyond-ai/abovebeyond: 11 pulls on GitHub, 10 performed by the gateway",
         "abovebeyond-ai/portal: 59 pulls on GitHub, 57 performed by the gateway",
-        "stocklistdealer-eu/platform: 35 pulls on GitHub, 24 performed by the gateway",
+        "stocklistdealer-eu/platform: 33 pulls on GitHub, 24 performed by the gateway",
         "Trendwolves/gentells-dashboard: 10 pulls on GitHub, 3 performed by the gateway",
         "Trendwolves/gentells-standard: 3 pulls on GitHub, 2 performed by the gateway",
         "Trendwolves/gentells-studio: 15 pulls on GitHub, 12 performed by the gateway",
         "abovebeyond-ai/bextrust: 4 pulls on GitHub, 2 performed by the gateway",
-        "abovebeyond-ai/elixir: 18 pulls on GitHub, 14 performed by the gateway",
+        "abovebeyond-ai/elixir: 17 pulls on GitHub, 14 performed by the gateway",
         "abovebeyond-ai/portal-cli: 49 pulls on GitHub, 43 performed by the gateway",
         "abovebeyond-ai/workspace: 11 pulls on GitHub, 9 performed by the gateway"
     ],
