@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "442a83d9641cd95fc859c3a038e00cf4d0f09526",
+            "branch": "workbench/share-current-insights",
+            "files_sha256": "13023f03bcb5491c7c54dbc92e03695c2b7fd105821e1287026cb3e275de8b5b",
+            "message": "Shares: a reading page in the serif, and a re-share of the same title updates the same link"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013084911-de8753"
+}

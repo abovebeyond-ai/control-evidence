@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "24c6c167d961333526030060ca544e341b9a7c6d",
+            "branch": "workbench/revocation-built",
+            "files_sha256": "cd2bc51735a9fb744c228f7b5a06d5503c33985e88ee37d2b3527ca667dd729e",
+            "message": "Protocol: revocation reaches the gateway"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261014072111-03f4bb"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two follow-ups to #1.\n\n**Load the next page on scroll.** The paginated links stay in the HTML with their own canonical, so Google reaches every vehicle through `?page=N` exactly as before. In the browser the script hides them and a sentinel below the grid fetches the next page (the same server-rendered page), appends the cards and sets the address bar to that page; the counter shows \"24 / 896\". After five automatic loads it only continues on the \"Toon volgende 24\" button, so the footer stays reachable. A filter or category change resets the list. Checked in a headless browser on the real stock: 24, then 144 after scrolling, 168 after the button, 48 after switching to one brand, no script errors. Same pattern as the Stocklist dealer sites.\n\n**Skip makes without a usable slug.** The scraped data carried `-` as make for nine vehicles; `Str::slug('-')` is empty and `route()` threw, which gave a 500 on `/voertuigen`, `/voertuigen/merk/{merk}` and `/sitemap.xml` on staging before the API import. A make without a usable slug is no brand: no brand page, no related link, no sitemap entry. Test added with four `-` vehicles. The API source maps `-` to no make already, so this is a guard for any future label.\n",
+            "branch": "workbench/brand-slug-fix",
+            "title": "Listing: load the next page on scroll; brand pages skip makes without a usable slug"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261012185417-3a7f93"
+}

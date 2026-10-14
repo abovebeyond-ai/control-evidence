@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fea24f5fb3a5dd9570f97691c62a228026bf9039",
+            "branch": "workbench/share-html",
+            "files_sha256": "0040d1fa0a88411afcf387cb0251224ed249d647bbc4d4320128e0ad30380c5f",
+            "message": "share.mjs: an HTML document shares like a Markdown one; the title comes from its h1"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261013092451-8b5c3e"
+}

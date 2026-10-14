@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: \"Beheer je voorkeuren\" in the footer of the daily bidding mail opens the administrator's garage sheet, which a dealer may not see: 403 \"Geen toegang\". A dealer who wants to change how often he gets bidding mails cannot get there from the mail.\n\nSource: Portal mail:15 (forwarded by the operator, 2026-10-12). A dealer clicked the link to stop the daily digest and got the 403 page.\n\n**What is wrong.** `resources/views/mails/export_daily_mail.blade.php` builds the footer link as `route('dealer.edit', $dealer_id)`. That route is the administrator's garage sheet (behind the `dealers` menu right); a dealer user is sent to the 403 page by the Access middleware.\n\n**Fix.** Point the link at the dealer's own sheet, `route('ownuser.edit', ...)`, which carries the field \"Mail samenvatting biedingswagens per dag\" and which every user of that garage may open (`DealerController::authorizeGarage`). Add a test that the link in the daily mail is a page the reader can open.\n\nRelated: #997 (an option to receive no bidding mails at all).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "\"Beheer je voorkeuren\" in the daily bidding mail is a 403 for a dealer"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012151929-164c23"
+}

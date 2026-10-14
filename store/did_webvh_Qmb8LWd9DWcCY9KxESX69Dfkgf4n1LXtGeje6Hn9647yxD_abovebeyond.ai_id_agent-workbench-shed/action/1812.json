@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "50039ecc6e2104a7805135ca07d0adbc4223914f",
+            "branch": "workbench/grey-map",
+            "files_sha256": "12a462d5d9b4326e9bbdfd2cd8bbe9ec04fcc67a1b73b79b5ebf480963665023",
+            "message": "Draw the stockists map in greyscale"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261012120604-f8208c"
+}

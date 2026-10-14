@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "51f6e7c929a12f148dc68505fd949ef39717884f",
+            "branch": "workbench/chassis-lookup-messages",
+            "files_sha256": "c812dbc0b645a2095b76c216edcc48ed6a165508c6858845dedd8f53b628bdf5",
+            "message": "The chassis lookup answers in French and English instead of a placeholder"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012103121-1012f8"
+}

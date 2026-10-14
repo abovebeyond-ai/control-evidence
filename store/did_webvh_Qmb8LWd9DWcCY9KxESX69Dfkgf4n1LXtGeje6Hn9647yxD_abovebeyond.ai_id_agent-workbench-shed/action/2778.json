@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b547327ad2e6930fe52b7e7acb960f08c46bd037",
+            "branch": "workbench/studio/trend-cards-stone",
+            "files_sha256": "4fe0d585c3e253befcda13afae4d1296943973b58f718406f9ff733911827eea",
+            "message": "Curate: trend cards in the site's stone, like the posts"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013195352-77514c"
+}

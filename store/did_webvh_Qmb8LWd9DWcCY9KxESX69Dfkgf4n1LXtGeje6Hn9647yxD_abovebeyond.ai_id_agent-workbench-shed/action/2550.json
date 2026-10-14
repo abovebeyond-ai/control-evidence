@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Costume U1, U2 and U7 to U10 come in two finishes (Mat and Glanzend), but the order form never asked which one. `Catalog::frameOptions()` already resolved `finishes`; nothing in the order flow read it, so an order for a U1 reached the workshop without a finish.\n\nWhat changes:\n\n- The order popup and the full configurator show an **Afwerking** select, required, when the frame offers more than one finish. A frame in a single finish (U3 to U6, every Couture frame) asks nothing, as before.\n- `addToCart` stores `finish` on the line and refuses a line whose finish is missing or not one of the frame's, so a stale or bypassed form cannot slip through.\n- Editing a cart line pre-selects the stored finish.\n- The finish shows on the line in the cart, the confirmation page, the order history and both order mails.\n- Labels \"Afwerking\" and \"Kies een afwerking\" in EN, FR and DE.\n\nThe value is the finish name in the dealer's language, as the colour already is.\n\nContent note, not code: in the Studio, U11 and U12 carry only Mat. If they are also sold in Glanzend, adding it to their Afwerkingen is enough; the form follows.\n\nTests: `tests/Feature/FinishChoiceTest.php` covers the select appearing only when there is a choice, the line keeping the finish into the cart, refusal of a missing or unknown finish, and editing a line.\n\nCloses #80\n\nSource: Portal mail:17.\n",
+            "branch": "workbench/costume-finish-choice",
+            "title": "Ask for the finish on frames that come in more than one"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261013111257-6f5b96"
+}

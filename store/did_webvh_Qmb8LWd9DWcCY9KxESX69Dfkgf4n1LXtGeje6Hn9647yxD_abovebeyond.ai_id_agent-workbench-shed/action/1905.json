@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "41448e141ef363863505135743685015718659f5",
+            "branch": "workbench/bidding-mail-preferences-2",
+            "files_sha256": "3a741ef57edf41623ec2e09c697d9c07c2e82982543d31d038589c51ea91aa1f",
+            "message": "A dealer can choose no mail about new biddings, and the mail's footer leads him there"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012173720-60acf5"
+}

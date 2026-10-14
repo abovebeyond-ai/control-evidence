@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nAn editor can pin one post as the lead of gentells.com. The pipeline sends `featured_at` with that post; the site stores it and puts the pinned post first where a page leads with one post:\n\n- the member home: the pinned post in the featured slot, the six newest under it\n- the visitor home: the pinned post first, then the two newest\n- `/posts`: the pinned post in the featured slot when the filter kept it\n\nWithout a pin nothing changes: the newest post leads.\n\n## Why\n\nThe lead was always the most recently published post, so the only way to put a stronger piece on top was to publish it later. Curate in the Studio now arranges the front page, and the lead is the one post placement that matters most.\n\n## How\n\n- Migration: nullable `featured_at` on `articles`, cast as a datetime.\n- `Projection::upsertArticle` stores `featured_at` from the payload, so a pin and an unpin both arrive with the article's next update.\n- `Article::scopeLeadFirst`: the pinned post first, then by publication. `scopePublished` is unchanged on purpose: the open window counts the fifteen most recent by publication, and a pin must not reopen an old post.\n\n## Tests\n\n`PinnedLeadTest`: the newest leads without a pin; the pinned post leads the member home, comes first on the visitor home and takes the featured slot on `/posts`; a pin does not reopen an old post; the projection stores and clears the pin.\n\nFull suite locally: 429 of 430 pass. The one failure is `BuildStampTest`, which reads the checkout's `.git` directory and returns 404 in a git worktree; it does not touch this change. Pint passes.\n\n## Depends on\n\nThe pipeline change that sends `featured_at` (the Curate front page). Until that is deployed every post arrives with `featured_at` null and the site behaves exactly as today, so this can merge first.\n",
+            "branch": "workbench/pinned-lead",
+            "title": "Let an editor pin the lead post"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261012194021-223e3d"
+}

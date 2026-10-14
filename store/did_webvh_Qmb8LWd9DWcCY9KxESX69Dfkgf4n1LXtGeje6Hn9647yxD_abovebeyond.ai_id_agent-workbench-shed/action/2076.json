@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "762445b120ced7cb1289fc7f24d93f4d9a111b5d",
+            "branch": "workbench/list-polish",
+            "files_sha256": "14796ea49427abdb5f56ebe205042050e3b06a417420ac6b1a3d1bd90d4d023f",
+            "message": "Vehicle list: sticky filter panel and skeleton cards while loading"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013060948-8ead79"
+}

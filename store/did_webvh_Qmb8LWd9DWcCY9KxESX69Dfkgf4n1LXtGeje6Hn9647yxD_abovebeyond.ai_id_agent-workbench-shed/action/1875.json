@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "51f6e7c929a12f148dc68505fd949ef39717884f",
+            "branch": "workbench/showroom-logo-version",
+            "files_sha256": "529119d4862e5feb7591f490655e989a44f4279cbfe700aeba54d6898a5f123f",
+            "message": "A replaced garage logo is a new file under a new name"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012154002-087a7e"
+}

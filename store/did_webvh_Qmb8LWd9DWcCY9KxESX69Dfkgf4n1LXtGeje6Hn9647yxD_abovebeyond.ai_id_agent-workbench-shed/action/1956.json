@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:16",
+            "note": "Building the own cut-out service (gate + u2net + background) and the platform driver switch for #1004; remove.bg stays the default until the service runs.",
+            "state": "in-progress"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261012190028-9b7732"
+}

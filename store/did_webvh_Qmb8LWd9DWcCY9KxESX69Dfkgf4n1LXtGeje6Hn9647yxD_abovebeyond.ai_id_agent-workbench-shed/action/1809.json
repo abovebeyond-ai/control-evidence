@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:14",
+            "note": "Testverslag: issues #992 (Acties-menu op verkochte wagen) en #993 (Franse/Engelse chassisnummerfout); PR #994 en #995 voorgesteld; punten 5, 7 (rest) en 8 (knop) in orde bevonden",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/994"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261012103148-a40a30"
+}

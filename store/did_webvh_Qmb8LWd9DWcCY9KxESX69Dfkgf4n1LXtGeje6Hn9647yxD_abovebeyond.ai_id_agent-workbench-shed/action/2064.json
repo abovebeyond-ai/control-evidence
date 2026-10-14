@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c2f8575bd5142683b4de8383a781ca17507d4021",
+            "branch": "workbench/stale-layer-word-2",
+            "files_sha256": "d84695db3b7f0d677d15c416010bd4a75e0723c86b81a98975350c1fca9a186e",
+            "message": "Say when a layer word misses a kind its layer gained since"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013053747-c28fa9"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "e83a21587ba02b6a5e17a61593f8d9bb",
+    "effect": {
+        "detail": {
+            "base": "51f6e7c929a12f148dc68505fd949ef39717884f",
+            "branch": "workbench/chassis-lookup-messages",
+            "commit": "ca106a3603f8e82d39cb4d6655d3adcdd487ca0f",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1803,
+    "verdict": "ALLOW"
+}

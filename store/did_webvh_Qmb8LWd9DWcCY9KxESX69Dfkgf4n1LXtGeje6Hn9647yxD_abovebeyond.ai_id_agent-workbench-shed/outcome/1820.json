@@ -1,0 +1,16 @@
+{
+    "action": "c22828c6f06a6961c93126dfe259cb89",
+    "effect": {
+        "detail": {
+            "base": "50039ecc6e2104a7805135ca07d0adbc4223914f",
+            "branch": "workbench/order-form-overview-photo",
+            "commit": "255fefbcf0ab396ca6438c883a9927571192062f",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1818,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Curate's front page now sets how many posts, trends and reports gentells.com shows. Until now the counts were fixed in the site and copied into the Studio's preview.\n\n## What it does\n\n- The line beside each section heading names its amount, and that amount is a dropdown, drawn as an underlined word:\n  - Posts: \"The newest leads, *six* more under it\".\n  - Trends: \"The first *six*, strongest first until you order them\".\n  - Reports: \"A member sees *one*\" or \"A visitor sees *three*\".\n- Choosing a value redraws the preview at once and keeps it while the change saves. The toast has an Undo.\n- The trend places, \"Next in line\" and the place a held proposal can take all follow the trend count.\n- A member set to no report reads \"A member's front page shows no report.\"\n- A visitor's posts stay \"the lead and the two newest\", because that row is a fixed design on the site.\n- Against a pipeline without the sizes, the line shows the amount as plain text and nothing changes.\n\n## Needs\n\n- Pipeline PR \"Front page sizes\": `POST /site/front`, and `front` and `frontChoices` on `/site/trends`.\n- Site PR \"Home pages show as many posts, trends and reports as the editors set\".\n\n## Checked\n\n- `npm test`: 42 of 42 pass. `npm run build` is clean.\n- In a local preview against a stand-in pipeline (headless Chromium), each dropdown sent one `POST /site/front` with only its own section. The trends went from six places to nine on the same frame. The posts went from six to three, and a member's report to none.\n",
+            "branch": "workbench/studio/section-count",
+            "title": "Curate: choose how many posts, trends and reports the front page shows"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013122347-9fecf3"
+}

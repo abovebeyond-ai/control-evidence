@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\nTwo things the site needs before the domain switches.\n\n- **The old URLs keep working.** A catch-all route at the end of `routes/web.php` sends the paths of the previous site to the new ones with a 301, in all five languages: the category pages (`/sales/voertuig-zoeken-{categorie}.html`, `sales.php?p=\u2026`, German `fahrzeugsuche-\u2026`), the vehicle pages (`\u2026_Detailansicht_{id}.html`; the DMS id is our `external_id`, a vehicle that is gone goes to the stock), the company and contact pages, `/aankoop` in its translations, and the legal pages. Unknown paths still give a 404. Mapping in `App\\Site\\Legacy`, with the patterns documented at the top.\n- **Privacy and cookies page** at `/privacy`: who we are (company, VAT, address), what the site stores and why (requests, the origin of a visit in the session, server logs), retention, who receives data (hosting, mail, Google only after consent), the cookie table (session, CSRF, consent choice, Google Analytics, Google Ads) with a link to reopen the cookie choice, and the rights with the Belgian authority. Linked from the footer and from the banner, in the sitemap, `noindex`. Dutch text with translated headings.\n\nRetention periods in the text (24 months for requests, 30 days for logs) are proposals for Schoutteet to confirm.\n\nTests: 4 new (category, detail, company and legal redirects; privacy page, footer and sitemap). Suite: 44 tests.\n\n## After merge\n\nDeploy; nothing else. The redirects only matter once the domain points to this site.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/launch-prep",
+            "title": "Launch prep: redirects from the old site's URLs, privacy and cookies page"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013085520-7c0277"
+}

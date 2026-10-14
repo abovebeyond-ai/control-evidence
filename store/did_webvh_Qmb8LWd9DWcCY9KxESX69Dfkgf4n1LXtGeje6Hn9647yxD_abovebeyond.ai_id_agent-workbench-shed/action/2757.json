@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`sites:sync` has failed every night since it was first scheduled. The cause is in this app, not at Bouwsoft.\n\n## The fault\n\nBouwsoft gives a token's `ValidUntil` in UTC (`2026-10-13T20:59Z`). `Bouwsoft::validUntil()` kept it as a UTC Carbon, and Eloquent stores a date as its wall-clock time without converting it. The expiry was therefore read back as Brussels time, two hours early in summer: every token was expired the moment it arrived.\n\n`accessToken()` then asked the auth server for a new token before every API call. A sync reads some 25 pages, so that is dozens of token requests within seconds, and Bouwsoft answers `429 Too many requests`.\n\nSeen on staging on 13 October: a token asked at 21:49 (Brussels) came back valid until 20:59Z, was stored as 20:59 Brussels, and the next dry sync was refused with 429.\n\n## The fix\n\nThe expiry is converted to the app's time zone before it is stored.\n\nThe test fixture now writes UTC the way Bouwsoft does (`now()->utc()`). Before, it wrote Brussels time with a `Z` behind it, which hid the fault. A new test pins that a token Bouwsoft gives in UTC stays valid until its real expiry: one token request for three API calls. It fails without the fix. Full suite: 168/168.\n\n## After merge\n\nThe next nightly run (05:15) should bring in the real site list. `glk_sites_preview` shows it before that.\n\nhttps://claude.ai/code/session_01EWy1829KawX3VL5LnrkdXD\n",
+            "branch": "workbench/token-timezone",
+            "title": "Bouwsoft: keep the token's expiry in the app's time zone, not as a UTC wall clock"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261013195232-ece5db"
+}

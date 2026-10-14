@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bf012d313b7355aa103f0e82843807c6493ba3e4",
+            "branch": "workbench/pipeline/front-sizes",
+            "files_sha256": "75c56af507f631ba295dcdb81f44e57598dbde29c5ce3e7d2ed5910f2b3919d2",
+            "message": "Front page sizes: editors set how many posts, trends and reports gentells.com shows"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013122315-420151"
+}

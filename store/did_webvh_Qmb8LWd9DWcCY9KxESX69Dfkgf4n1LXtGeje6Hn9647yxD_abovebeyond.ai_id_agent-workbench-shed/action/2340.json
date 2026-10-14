@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8740c08d1a9f1470e7d20a4be0562555b4ca8847",
+            "branch": "workbench/share-summary-weight-2",
+            "files_sha256": "1351097b989d97e84e3c6415dd9802a30ec875623506c4772104da8e5eb44c6d",
+            "message": "Shares: the accordion line regular with the key phrase bold, and a lighter aside on the line"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013095510-1c25ae"
+}

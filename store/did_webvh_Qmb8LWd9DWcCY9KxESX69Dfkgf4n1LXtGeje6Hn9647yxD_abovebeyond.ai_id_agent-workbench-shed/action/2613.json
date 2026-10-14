@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0e1f39df2abbf92fce456ce1e3ff6b4fd5f214cc",
+            "branch": "workbench/studio/section-count",
+            "files_sha256": "bbdcf1f809e6afee637758c4a2bd7e82766e8ddcce040dc3ef1cdc4925de35ff",
+            "message": "Curate: choose how many posts, trends and reports the front page shows"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013122347-9fecf3"
+}

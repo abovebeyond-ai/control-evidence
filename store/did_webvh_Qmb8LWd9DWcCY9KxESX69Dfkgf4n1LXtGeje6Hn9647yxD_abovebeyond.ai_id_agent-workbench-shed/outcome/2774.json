@@ -1,0 +1,16 @@
+{
+    "action": "14f4d9ebdc766447371157fc74fe2a66",
+    "effect": {
+        "detail": {
+            "base": "475eb8927494944b7a7631888a436536e1754dd4",
+            "branch": "workbench/policy-digest",
+            "commit": "5e2a431ca25b237d9e0e77d9fcba253b8ff8723f",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2772,
+    "verdict": "ALLOW"
+}

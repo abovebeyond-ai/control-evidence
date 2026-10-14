@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A film with sound at the foot of the home page, as a block of its own: a title, a short line, and a still with a play label. It is not a hero. The hero loops silently and fetches itself; this one waits for the visitor, which is what a one-minute production film with a soundtrack needs.\n\n## What changed\n\n- **`videoBlock`** (`resources/views/blocks/videoBlock.blade.php`): section and heading in the register of the photo-text block, the player at the width of the content, in the film's own proportions. The still comes from the Studio as webp at the player's width. `preload=\"none\"`, no autoplay, no mute: the page carries the still and the label until the visitor presses play, and nothing of the film is fetched before that. From the first press on the native controls take over (`custom.js`, delegated on the document like the lightbox). Without a file in the Studio the block renders nothing.\n- The player's box is sized by the still's proportions (from the Sanity image reference), so it does not jump from the browser's default to the film's ratio on the first press.\n- The hero audio script keeps to `.rb-hero video` and leaves this film alone.\n- One new icon (`play`); \"Afspelen\" in en, fr and de.\n\nThe Studio side (the `videoBlock` type on pages) is hoet-sanity PR #10. Cabrio shares the Studio but has no view for the block yet; a page there skips it.\n\n## Verification\n\n- `VideoBlokTest`: title, still, `preload=\"none\"`, no autoplay or mute, the label in the page's language, nothing without a file, the script on the play label, the hero script's selector.\n- Preview with a seeded home in headless Chromium at 1280px and 390px: the block under the photo-text block, no film request before the click, one after it, the film playing with controls and sound after one press, no page errors. Screenshots are in the session.\n- Pint, PHPStan and the suite pass. `BuildStampTest`, `EnvCheckTest` and `BestelpadControleTest` fail in a git worktree only (no `.env`, no checkout ref); they pass in CI.\n",
+            "branch": "workbench/home-video",
+            "title": "Add a video block for a film with sound in the page flow"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261012192203-095b3b"
+}

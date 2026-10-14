@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a90bedfdd6bbf7b6ed8eb6b3688dde720a6389d8",
+            "branch": "workbench/pipeline/one-dead-login",
+            "files_sha256": "e2a26b59fd0905265cbde4a24c8f20a73816de3f6e49da77881e860b192523f4",
+            "message": "One refused login takes its own account out, not the engine"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013201152-9a61d8"
+}

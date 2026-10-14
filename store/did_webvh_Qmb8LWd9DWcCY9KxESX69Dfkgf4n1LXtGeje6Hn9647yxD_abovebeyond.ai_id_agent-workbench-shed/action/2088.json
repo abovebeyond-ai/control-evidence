@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "762445b120ced7cb1289fc7f24d93f4d9a111b5d",
+            "branch": "workbench/deps",
+            "files_sha256": "e1c460cae566146c1db646f94d000387fd25a069992a98ee19e331a79d20e0cb",
+            "message": "Update Composer dependencies"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013061019-60ca35"
+}

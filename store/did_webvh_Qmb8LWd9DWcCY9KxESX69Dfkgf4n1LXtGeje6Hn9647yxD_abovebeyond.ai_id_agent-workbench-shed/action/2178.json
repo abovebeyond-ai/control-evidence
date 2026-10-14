@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.share",
+        "params": {
+            "days": 30,
+            "files_sha256": "9027a81ae62b6c75d5b4801a3618db0b54e3aebed41658f4e8bb0d307d57fc6d",
+            "passphrase_hash": "pbkdf2-sha256$310000$3e552BUzH6NJzGExuLQDYw==$TbOmrisFmL5OHnihlQkERn08gCSyiwNz5eAygzoWf0U=",
+            "title": "Bextrust and the KYC players: Signicat, Fourthline and the field around them"
+        },
+        "resource": "portal:bextrust"
+    },
+    "run": "workbench-20261013082244-e7b3c8"
+}

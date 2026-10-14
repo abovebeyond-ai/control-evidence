@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "762445b120ced7cb1289fc7f24d93f4d9a111b5d",
+            "branch": "workbench/brand-map",
+            "files_sha256": "bd264f22d923bd7a9991fa42c43ad16305b5a1d07625bc70292b454e320b877f",
+            "message": "Map in brand colours: grey with a petrol tint and the orange pin"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013061036-fdb8cc"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4f1908cb5ebbfccf4fcf641421f6a9e22942e931",
+            "branch": "workbench/studio/front-places",
+            "files_sha256": "2ada8c0382dff3f8acaac9a2d3e212504230063227ddc89c38596bf9e19e01c4",
+            "message": "Curate: remove a card from the front page, and an empty place with a + to add one"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013154228-ed0c9f"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "d10440de47fbc1741c431b8ca1f60271",
+    "effect": {
+        "detail": {
+            "base": "4a61e0d1381fb790b479ec54f99224cd345217c4",
+            "branch": "workbench/studio/front-page-and-pencil",
+            "commit": "b40544ae950aec5d4fe66b8d0ffa0f4d0d94873f",
+            "files": 16,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1998,
+    "verdict": "ALLOW"
+}

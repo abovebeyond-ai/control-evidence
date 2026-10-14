@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4c2df06fa8b715be41c534250595737ec1df33a9",
+            "branch": "workbench/shares-manage",
+            "files_sha256": "3a96016abde4e7ccb7a5ee175e875139382edf49dd383c046d68e03f2a006773",
+            "message": "Shares: end or delete from the list, open shares apart from ended ones"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013195406-d96feb"
+}

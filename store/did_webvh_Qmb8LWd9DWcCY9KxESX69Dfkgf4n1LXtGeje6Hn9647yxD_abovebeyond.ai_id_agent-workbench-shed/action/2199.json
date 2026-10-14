@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The share's reading page (#399) read like a settings screen: a narrow column of small type with hairline rules, and a forty-page brief in it felt cramped. This gives a document what a document gets: a measure of about eighty characters at 18px, the title and section headings in the house serif with room above them, a lead paragraph, tables ruled rather than boxed and wide enough to read a comparison across a row. Tokens from base.css only; nothing boxed, nothing new in colour. The owner's form side is unchanged.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/share-reading-page",
+            "title": "Shares: a reading page that reads like a document"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013084522-4427af"
+}

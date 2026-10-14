@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "57e5465624b431ecaf29a7313f72e45af8f5ecd1",
+            "branch": "workbench/studio/front-page-drag",
+            "files_sha256": "016c8a7561dcbed10d360a4e262b1bdf0877c866b5a181e9a36112bf405d876b",
+            "message": "Front page: trends make room while one is dragged, and glide to their new place"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013100623-203871"
+}

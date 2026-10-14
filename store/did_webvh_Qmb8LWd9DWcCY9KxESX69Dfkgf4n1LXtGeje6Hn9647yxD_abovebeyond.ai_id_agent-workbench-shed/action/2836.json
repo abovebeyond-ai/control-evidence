@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The conversation now carries every current site (199, some 20,000 characters) and the screen offers them as one list. A shorter list per worker and per site only works if the past predicts what he names, and that can be measured before it is built.\n\n`booking_patterns` is a new read tool on the B1 door. It replays the last weeks of GLK's Bouwsoft costing (`ActualCostTimeWorked`, `ActualCostMachines`, `ActualCostProducts`). For every booking in the test window it asks whether the site, machine or product was already in the list that the weeks before would have offered, and at which rank:\n\n- sites by worker;\n- machines by worker, by site, and by both;\n- products by site, with GLK-wide most booked products as the baseline.\n\nIt also reports how often a booking had no history at all (cold), the median and p90 list length, and how many sites a worker books per day. It returns rates and counts only: ids stay inside, and no names, quantities or prices come out. The raw rows are cached for six hours.\n\nThe costing is entered by the office a few days late, so the window ends at the last booked day. A product line dated 2032 is ignored.\n\n`Bouwsoft::all()` now holds the id-keyset paging that `BouwsoftReferenceSource` had privately, so the site sync and the replay read lists the same way.\n\nTests: 174/174.\n",
+            "branch": "workbench/booking-patterns",
+            "title": "Measure how well past costing predicts sites, machines and products"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261014070836-15ba68"
+}

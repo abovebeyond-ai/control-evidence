@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "06e0bce8d9dfbd6b52357cad736a8437ba005b91",
+            "branch": "workbench/photos-read-kind",
+            "files_sha256": "f93f250536f7f02a56e63fa9c2d74b56fb13413d928ba9b273cb2be6de200447",
+            "message": "Name stocklist.photos_read in the Stocklist read word"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261012194828-035fff"
+}

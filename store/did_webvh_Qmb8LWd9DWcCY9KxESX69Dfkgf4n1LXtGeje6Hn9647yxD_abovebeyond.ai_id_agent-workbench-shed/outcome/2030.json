@@ -1,0 +1,16 @@
+{
+    "action": "5f894a18f127397303058554835a6273",
+    "effect": {
+        "detail": {
+            "base": "1f61b176669636369b39ea20216f7c2d9087e254",
+            "branch": "workbench/detail-buybox",
+            "commit": "a3e465c2d40a06877230c580fd79d56a27ea2c41",
+            "files": 13,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2028,
+    "verdict": "ALLOW"
+}

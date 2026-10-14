@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\nThe site now remembers how a buyer came in and records every request with the vehicle it was about, so Google Ads, organic search, the platforms and direct visits can be compared on requests and sales. The tags and the cookie banner are ready for go-live but stay off until their ids are set.\n\n- **Origin per visitor, server side.** A middleware keeps gclid, utm fields, the referring site and the first page in the session (lifetime 30 days). A later visit with a campaign marker replaces it, so the last paid click wins. Channels: direct, organic, paid, social, platform (the truck marketplaces, list in `config/tracing.php`), referral. No third-party cookie is involved, so this works for visitors who refuse the banner.\n- **Every request is a lead.** Contact, price proposal (the form now carries the vehicle id), valuation, WhatsApp and phone. WhatsApp buttons go through `/go/whatsapp/{id}`, which notes the click and prefills the reference; phone links send a beacon from the click. The mail to Schoutteet ends with \"Herkomst\" lines and the lead number.\n- **/beheer/leads**: counts per channel with sales, the list with filters, and the outcome (verkocht, niet verkocht, anders) with a note. `/beheer` goes behind HTTP basic auth as soon as `BEHEER_PASSWORD` is set; the page shows names and phone numbers, so that is a condition for go-live.\n- **Consent banner** with three choices, Consent Mode v2 defaults to denied, GA4 and the Google Ads tag load only after consent, and only when `TRACING_GA4_ID` or `TRACING_ADS_ID` is set. Without ids there is no banner and no tag. A consented request fires one conversion on the thank-you page; the gclid in the lead allows offline conversion upload later. \"Cookies\" in the footer reopens the choice.\n\nTests: 7 new (origin per channel, lead on proposal with mail lines, WhatsApp redirect, phone beacon without CSRF token, banner gated on ids, leads page and basic auth). Suite: 40 tests, 299 assertions. Checked in a headless browser: banner before consent without any tag request, tag and cookie after acceptance.\n\n## After merge\n\n```\nphp artisan migrate --force\n```\n\nIn Forge: `SESSION_LIFETIME=43200`, `BEHEER_PASSWORD=<choose>`. At go-live: `TRACING_GA4_ID`, `TRACING_ADS_ID`, `TRACING_ADS_CONVERSION_LABEL`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/tracing",
+            "title": "Tracing: origin per visitor, every request a lead, consent banner with gated Google tags"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013082255-f9150e"
+}

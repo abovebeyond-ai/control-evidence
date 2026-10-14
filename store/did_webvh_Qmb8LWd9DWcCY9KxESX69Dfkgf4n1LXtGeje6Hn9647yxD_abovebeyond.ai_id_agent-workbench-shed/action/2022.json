@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1f61b176669636369b39ea20216f7c2d9087e254",
+            "branch": "workbench/own-stock",
+            "files_sha256": "77e94b154e2d1842fa94af0d96e03abfb65fec69cb8198a4d59f4d5139bda23d",
+            "message": "Own stock first, partner stock worded quietly"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261012195251-4eab80"
+}

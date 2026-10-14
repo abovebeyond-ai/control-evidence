@@ -1,0 +1,16 @@
+{
+    "action": "9e100ca6f8fa59695c2383b750376943",
+    "effect": {
+        "detail": {
+            "base": "d4bbc61c36ce33c700c96d625d8b6c78c515fb7c",
+            "branch": "workbench/studio/grip-and-reset",
+            "commit": "a0fbfeac9de9e75619091b57b1a81092c9a38bf2",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2718,
+    "verdict": "ALLOW"
+}

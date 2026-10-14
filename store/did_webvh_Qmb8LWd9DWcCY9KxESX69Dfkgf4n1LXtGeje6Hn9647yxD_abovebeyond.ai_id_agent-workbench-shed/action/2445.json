@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "07da52bab1be1f3dffe5b80dae1dbeb7b83f17d9",
+            "branch": "workbench/home-buttons",
+            "files_sha256": "dca53c994380041cb9bac5e8160ab7533d9adaa08167463a4a9f5a04d5eaba08",
+            "message": "Home: a 'Bekijk alle' button under every stock section"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013102053-58316d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "67287f3904a3bc925ee07ca38fd0812d6b3b5323",
+            "branch": "workbench/policy-digest",
+            "files_sha256": "a2292bbabd05d955442afbbe835a01ae29695df667873704ebfc37e8934342b8",
+            "message": "Narrowings signed on a short head once the gateway reads the digest form"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261013195312-def7a4"
+}

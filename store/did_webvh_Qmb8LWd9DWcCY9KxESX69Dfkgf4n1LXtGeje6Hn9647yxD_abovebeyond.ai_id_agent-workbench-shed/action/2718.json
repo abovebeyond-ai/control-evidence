@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d4bbc61c36ce33c700c96d625d8b6c78c515fb7c",
+            "branch": "workbench/studio/grip-and-reset",
+            "files_sha256": "202461de7168dc2df5b86ae2fa6dc48205225cd21940353fbc01ea9413067640",
+            "message": "Curate: show that front page cards can be dragged, Reset order, square tab underlines"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013190827-3c4113"
+}

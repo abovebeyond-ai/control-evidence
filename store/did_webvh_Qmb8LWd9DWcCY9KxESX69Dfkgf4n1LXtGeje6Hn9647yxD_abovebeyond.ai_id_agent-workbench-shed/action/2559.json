@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two sentences on Beheer > Inzichten read against each other.\n\n**Gebruik.** The handlings are stacked in four groups, and the one holding offers, order forms and leads was labelled \"Verkoop\". Next to the Momentum tab, which counts cars sold, \"16 verkoop op maandag\" read as sixteen cars sold where Momentum showed ten; both were right, they count different things. The group is now named after what it counts, \"Offertes en bestelbonnen\", in the four languages. Rule R P3-16.27 says why the name changed.\n\n**Momentum.** The sales sentence gives the change in percent (\"41% meer wagens verkocht dan in de 28 dagen ervoor\"); the bidding sentence gave the two numbers and left the sum to the reader (\"160 biedingen in de laatste 28 dagen, tegen 97 in de 28 dagen ervoor\"). The change now travels with the pair (`Momentum::compute`, `bidding.bids.change`, the same `change()` the sales use) and the sentence takes the same form, with the same 10% band for \"about as many\": \"160 biedingen in de laatste 28 dagen, 65% meer dan de 97 in de 28 dagen ervoor\". A window without a full 28 days before keeps the old sentence.\n\nTests: the bidding change is computed and rendered (`MomentumTest`), the stacked groups still read through their translation keys. Touched test files green; `RulesIdentityTest` green.\n",
+            "branch": "workbench/handlings-group-wording",
+            "title": "Inzichten: the handlings group named after its contents, the bidding sentence with its change"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261013111338-4ba341"
+}

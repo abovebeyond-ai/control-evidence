@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "After #52 the \"Vergroten\" label showed on cabrio-eyewear.be but a click did nothing. The server serves the new script; the browser did not ask for it. The stylesheets carry a version in their address (`?v=<mtime>`), the script did not, and with no `Cache-Control` on static files a browser keeps a file for a share of its age (heuristic caching on `Last-Modified`), so the old script stayed next to the fresh stylesheet: the lightbox markup arrived, the code that opens it did not. Hoet has no such gap because Vite hashes the script there.\n\n## What changed\n\n- The script tag carries the same version as the stylesheets: `/theme/js/custom.js?v=<mtime>`. Every deploy that touches the file changes the address, and the browser fetches it.\n- `ScriptVersieTest` checks the address on a rendered page.\n\nUntil this is deployed, a hard refresh (Ctrl+Shift+R, or clearing the site's cache on a phone) gets the new script.\n\n## Verification\n\nPint, PHPStan and the suite pass. `BuildStampTest` fails in a git worktree only; it passes in CI.\n",
+            "branch": "workbench/version-the-script",
+            "title": "Version the script address, like the stylesheets"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20261012134609-7b6b84"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ee0447340c8b82cf5f4beb1deb60cbfa795fe3e4",
+            "branch": "workbench/ci-2",
+            "files_sha256": "ac1ce9f2cef18dc4a4fdda0c3a183faa2ee094b4b48ff4f143f9bc726a6a0080",
+            "message": "Add GitHub Actions CI: Pint check and test suite on PHP 8.4 and 8.5"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013052515-c800c6"
+}

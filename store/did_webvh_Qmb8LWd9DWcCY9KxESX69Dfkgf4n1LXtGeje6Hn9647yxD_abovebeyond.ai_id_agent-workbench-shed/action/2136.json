@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2a5369dffb9f152646f68c95b08455b878e05db7",
+            "branch": "workbench/share-cli",
+            "files_sha256": "56fdc09cbf263209ebd9d7b3f1c2fe7255a9495f6435476c37350a42c3b2bf41",
+            "message": "Add portal.share: a document behind a passphrase, written to Portal through the gateway"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261013073023-64799d"
+}

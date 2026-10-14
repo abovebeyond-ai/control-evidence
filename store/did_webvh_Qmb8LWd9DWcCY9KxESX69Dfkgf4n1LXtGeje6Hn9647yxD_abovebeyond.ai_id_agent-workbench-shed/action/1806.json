@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #993\n\nIn the chassis lookup dialog a number that is too short is refused by validation. In Dutch the dealer read \"Deze waarde bevat te weinig characters\"; in French the line under the field read `createCarDNA fr`, in English `createCarDNA eng`: the placeholders in `resources/lang/{fr,en}/carDna.php` were never replaced, and `CarVweRequest::messages()` points the `min` and `max` rules at them.\n\nThe French and English `carDna.php` now carry the messages for `min`, `max`, `no_more_credits` and `resting_tokens`. The sibling `carVWE.php` had the same placeholder for `no_more_credits` in both languages, which the header button shows as a tooltip once the credits are gone; translated as well. Dutch and German were already right and are unchanged.\n\nTests: `ChassisLookupMessagesTest` validates a three-character chassis number in the four languages and reads the message back, and checks that no value in `carDna` or `carVWE` is still a placeholder or repeats its own key. Both fail on main.\n",
+            "branch": "workbench/chassis-lookup-messages",
+            "title": "The chassis lookup answers in French and English instead of a placeholder"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012103121-1012f8"
+}

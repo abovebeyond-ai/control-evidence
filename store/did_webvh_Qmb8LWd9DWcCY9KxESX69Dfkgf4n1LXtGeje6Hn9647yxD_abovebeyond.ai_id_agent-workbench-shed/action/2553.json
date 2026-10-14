@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:17",
+            "note": "Issue #80, PR #81: required finish select on frames with Mat+Glanzend; U11/U12 carry only Mat in the Studio, to check",
+            "state": "done",
+            "url": "https://github.com/Hoet-design/hoet-eyewear/pull/81"
+        },
+        "resource": "portal:hoet"
+    },
+    "run": "workbench-20261013111340-839fc2"
+}

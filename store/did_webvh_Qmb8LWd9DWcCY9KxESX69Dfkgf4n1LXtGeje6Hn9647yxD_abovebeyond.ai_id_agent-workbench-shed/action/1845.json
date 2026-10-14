@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follows #76. The close button sat at the top right of the screen, away from the photo it closed, and it was bigger than the \"Vergroten\" label that opened it.\n\n## What changed\n\n- **Close on the photo itself.** The enlarged photo sits in a figure of its own size, and the close label sits in its corner, bottom right, the same small label as \"Vergroten\" in the same spot, now with the cross and the word. Open and close mirror each other.\n- **A click on the photo closes it**, the way a click on it opened it. The dark backdrop and Escape still close too.\n- Prev/next on the public frame page gallery are untouched.\n\n## Verification\n\n- `ConfiguratorTest`: the lightbox puts the close label in the figure and closes on a click on it.\n- Preview in headless Chromium at 1280px and 390px: label on the enlarged photo, and a click on the photo closes the lightbox, on the order page and in the order window. Screenshots are in the session.\n- Pint, PHPStan and the suite pass. `BuildStampTest` fails in a git worktree only; it passes in CI.\n",
+            "branch": "workbench/lightbox-close-on-photo",
+            "title": "Close the lightbox from the photo itself"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261012132924-528412"
+}

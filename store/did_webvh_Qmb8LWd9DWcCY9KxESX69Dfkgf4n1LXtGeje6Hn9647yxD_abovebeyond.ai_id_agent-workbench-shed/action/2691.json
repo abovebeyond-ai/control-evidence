@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0aa0176f6fc322d1709ee8706d38e91ae21ccef3",
+            "branch": "workbench/studio/front-choose",
+            "files_sha256": "fb17202647036a099d90d97add4e371460ba4e18da1c1edfaf23aff697c16291",
+            "message": "Curate: a + adds an empty place to choose into, and reports can be chosen and removed one by one"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013155655-df49f0"
+}

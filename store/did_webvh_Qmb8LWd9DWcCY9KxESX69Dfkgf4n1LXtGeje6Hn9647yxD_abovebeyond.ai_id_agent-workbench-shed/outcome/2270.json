@@ -1,0 +1,16 @@
+{
+    "action": "b008d71c4f3944b70c7b85061735cdf9",
+    "effect": {
+        "detail": {
+            "base": "df89ac392716e799f41e52d9018a4c2d9a5242a8",
+            "branch": "workbench/share-rich",
+            "commit": "c60deb95316ecbf2114860976dd503050974fcc2",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2268,
+    "verdict": "ALLOW"
+}

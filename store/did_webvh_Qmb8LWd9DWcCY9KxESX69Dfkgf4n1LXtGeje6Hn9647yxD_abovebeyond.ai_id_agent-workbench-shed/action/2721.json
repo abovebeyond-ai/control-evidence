@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThree small changes to Curate's front page and the Studio's tabs.\n\n- **Cards say they can be dragged.** Trend cards and the posts under the lead could already be dragged, but nothing on them showed it apart from the cursor. Each now carries a six-dot grip, in pencil until hovered, then yellow. While a card is held the cursor is a closed hand.\n- **Reset order.** The Posts header shows Reset order while a post is pinned as the lead (the newest leads again; it replaces \"Let the newest lead again\" on the lead card), and the Trends header shows it while the trends are in an editor's order (they follow strength again, `POST /site/trends/order` with an empty list). Both end in a message with Undo. A post's \"Lead with this\" is now \"Lead\", next to Open and Take off.\n- **Straight tab underlines.** The current tab in the header, in Curate and in Write was marked by an inset shadow on a button, and the global 6px button radius bent its ends upward. The tabs now have no radius, so the bar is straight.\n\n## Tests\n\n`npm test`: 44 pass. `npm run build` passes. Not checked in a browser: the local preview data was lost with the session's scratch space.\n\nNo pipeline or site change needed.\n",
+            "branch": "workbench/studio/grip-and-reset",
+            "title": "Curate: show that cards can be dragged, Reset order, straight tab underlines"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013190827-3c4113"
+}

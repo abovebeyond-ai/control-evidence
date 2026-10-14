@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #323. Curate now edits the front page place by place: a card can be taken off, and an empty place at the end adds one. That needs two things #323 did not have.\n\n## Change\n\n- **Any amount in range.** Sizes were a short list of choices (3, 6, 9, 12). Now:\n  - posts under the lead: any whole number from 0 to 24;\n  - trends: 1 to 24;\n  - a member's reports: 0 or 1;\n  - a visitor's reports: 1 to 4.\n  - `/site/trends` adds `frontRange` (`[min, max]` per section). `frontChoices` stays, so the Studio from #54 keeps working until its follow-up lands.\n- **A post off the front page.**\n  - `articles.off_front_at` marks a live post an editor took off the front page. It stays on /posts.\n  - `setPostOnFront(id, on)` sets or clears it, through `POST /site/front/post {id, on}`, and pings the article projection.\n  - The lead cannot be taken off. Pinning a post puts it back.\n  - `off_front_at` travels in the article list and the projection payload.\n\n## Checked\n\n- `test/front-page-order.test.mjs`: any amount in range, out-of-range and non-integer values refused, and a post taken off, put back, and refused when it leads or is not live. 14 of 14 pass.\n- Full suite: 1155 of 1161 pass. The 6 failures are `report-render`, which fail the same way on main here because the workbench has no PDF tools.\n",
+            "branch": "workbench/pipeline/front-sizes-custom",
+            "title": "Front page: any amount in range, and a post can be taken off the front page"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013154208-753f66"
+}

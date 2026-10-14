@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: A dealer wants to stop receiving the daily bidding digest but keep access to the biddings. Today the only choices are \"a digest per day\" or \"a mail per new bidding\"; the only way to get no mail is to take away module 2, which also takes away the biddings themselves.\n\nSource: Portal mail:15 (forwarded by the operator, 2026-10-12).\n\n**What is asked.** A dealer with the bidding module asked to no longer receive the daily mail with new bidding cars. Switching off module 2 for that garage would do it, but then it loses the bidding offer altogether, which is not what it wants.\n\n**What exists.** `dealers.mail_once_per_day` has two states. `1`: the daily digest (`DailyExports`, R B1-2.4); `0`: a mail at every new or changed bidding (`MailHelper::sendMails`, R B1-1.11). There is no \"none\". The mails about the dealer's own bids (ended, won, lost) do not depend on this flag.\n\n**Proposal.** Make the field on the garage sheet a choice of three: a mail per new bidding, one digest per day, no mails about new biddings. The third value keeps the dealer in module 2: he still sees and bids on the offer, and still gets the mails about biddings he took part in. The field keeps its column (a third value in the same tinyint), the rule B1-2.4 / B1-1.11 names the new option, and the daily task and the per-bidding mail both leave him out.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "A dealer cannot choose to receive no mails about new biddings"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012151917-a9b022"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Elixir signs a narrowing in the digest form once the gateway reads it, and reports the forms the gateway reads to Portal.\n\nThe gateway (control, policy-digest) accepts a version signed on a short head that names its body by hash. `Client::policy` now returns the `formats` from `GET /v1/policy`; `PolicyLog::sign` makes the three-part token when the gateway lists `digest`, and the whole-payload form otherwise, since a version in a form the gateway does not read blocks the chain. `controlGrants` carries the formats from `/v1/agents`, so Portal signs a passkey repair in a form the gateway takes.\n\nTests: the existing narrowing test pins the old form for a gateway that lists no forms; a new one checks the head, the body, the hash between them and that the signature covers the head only. Full suite 736 of 736, PHPStan and Pint clean.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/policy-digest",
+            "title": "Narrowings signed on a short head once the gateway reads the digest form"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261013195312-def7a4"
+}

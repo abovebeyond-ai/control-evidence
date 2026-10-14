@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The stockists map was the one place on hoet.be that still showed colour: Google's default tiles, a red pin, satellite imagery and the Street View pegman. It is now greyscale, on desktop and on a phone, with everything else left as it was.\n\n## What changed\n\n- **Map style.** Every feature is drawn with its saturation taken out, so the tiles arrive grey from Google and the labels in them stay crisp. The loading background is a neutral grey instead of Google's beige.\n- **Pin.** The site's dark grey with a white edge, instead of Google's red marker. It still reads as a pin on a grey map.\n- **Controls.** Map type (satellite imagery) and Street View (the orange pegman) are off: those are the two things a map style cannot reach, and both bring colour back. Zoom and fullscreen stay.\n- **Guarantee.** A `grayscale(1)` filter on the map container, so whatever Google draws into it (a transit icon, the info window, a future control) leaves it grey. Grayscale is a cheap filter, so panning stays smooth on a phone.\n\nUnchanged: the markers, the info window on click, the country/city filter that zooms the map to what is left, the zoom cap for a single shop.\n\n## Verification\n\n- `VerkooppuntenScriptTest` gained two tests on the source: the style, the two controls, the grey pin and the CSS filter. The map needs a key and data to render, so the source is what a test can read, as the existing tests in that file do.\n- Preview with sample points, in headless Chromium at 1280px and 390px: the map, the pins, the info window and the controls are grey on both; zoom, fullscreen and the filter work. Note that without a key Google serves its development tiles with a dark tint, so the tint in the preview is Google's, not this change.\n- Pint, PHPStan and the suite pass. One test, `BuildStampTest`, fails in a git worktree because the branch ref lives in the common git dir and the stamp only looks in the worktree's; it passes in a normal checkout and in CI, and is unrelated to this change.\n\nCabrio has the same block; this change is Hoet only, as asked.\n",
+            "branch": "workbench/grey-map",
+            "title": "Draw the stockists map in greyscale"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261012120604-f8208c"
+}

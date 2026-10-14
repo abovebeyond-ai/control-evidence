@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ac1a4f3d00d5a099083c36f7099bafa2f27a5833",
+            "branch": "workbench/cutout-plates-text",
+            "files_sha256": "245e7000e66c79daeaba4c193533308d0adf8c0e22effa8d7c3e1ee31197bcfa",
+            "message": "Hide the garage in the own cut-out service and ground the car"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261013080050-04b557"
+}

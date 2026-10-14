@@ -1,0 +1,16 @@
+{
+    "action": "b220b564c6ec85a80d1bfdfb6876c135",
+    "effect": {
+        "detail": {
+            "base": "a62c7e61e5272c4176b3b8dbaeb4624580d6ec57",
+            "branch": "workbench/hand-kinds",
+            "commit": "4f8a278886db5867e3c4c074d2e86fafcd9ecdd9",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2817,
+    "verdict": "ALLOW"
+}

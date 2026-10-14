@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3f10f39704f79b28fcfa7d541bf34948b39f3556",
+            "branch": "workbench/contact-location",
+            "files_sha256": "752eda4771dfea8bcdb77d6be60b98e18b7535bc9f1ad2cab1535b31942e61a5",
+            "message": "Location folded into Contact; Het bedrijf becomes Over ons"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013095250-ead0c1"
+}

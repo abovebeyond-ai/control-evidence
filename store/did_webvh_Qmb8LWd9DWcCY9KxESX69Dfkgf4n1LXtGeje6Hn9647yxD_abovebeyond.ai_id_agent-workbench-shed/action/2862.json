@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A transport is requested on an own car, from Bestellingen and Historiek, so it belongs to module 1. The per-garage switch (`dealers.transport_enabled`, #863) served a trial on a few garages. On 2026-10-14 it was switched on for all 121 garages with module 1, so it only duplicated module 1, and every new customer would have started without transport until someone remembered to turn it on.\n\n## What changes\n\n- `Dealer::hasTransport()` reads `module_1`. The `use-transport` Gate, the transport button in the purchase mail (`MailRecipient::canUseTransport`) and the worklist digest ask it. Switching module 1 on or off in the dealer list now switches transport with it.\n- The switch leaves the garage sheet, `DealerController::update` and the five translation files. A migration drops `dealers.transport_enabled`; `down()` restores it, on for module 1.\n- The worklist command no longer logs open transports for a garage with the switch off. The mail only goes to garages with module 1, so that case cannot occur any more.\n- `RightsDryRun` reports transport from module 1.\n\n## Tests\n\n- Fixtures set `module_1` where they set the switch.\n- `TransportIsAGarageSwitchTest` is renamed `TransportComesWithOwnStockTest`, and `TransportConditionsFollowTheSwitchTest` is renamed `TransportConditionsFollowOwnStockTest`.\n- The two sheet-switch tests are replaced by one that toggles module 1 through `dealer.update.updateModule` and checks the Gate follows it, with no switch on the sheet.\n- The hidden-transports warning test is removed with the warning.\n\nThe full suite is green locally, apart from two sets of failures that main shows too and that this change does not touch:\n\n- `APhotoWithoutAForegroundIsNotAFaultTest` fails on a reused test database.\n- Three `ListPageHeadersTest` cases fail on a fresh one, because Role 1 is missing.\n\n## Rules\n\nR S4-10.18 (with the history of the switch), R P2-1.7, R P2-8.4 and R P1-2.12 describe the new rule. Test class references in three findings follow the rename.\n\n## Before merge\n\nProduction already has transport on for every garage with module 1. A garage without module 1 that had the switch set by hand would lose transport, so check this count on production first. It should be 0:\n\n```bash\nphp artisan tinker --execute=\"dump(DB::table('dealers')->where('module_1', 0)->where('transport_enabled', 1)->count());\"\n```\n",
+            "branch": "workbench/transport-on-by-default",
+            "title": "Transport comes with own stock: drop the per-garage switch"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261014072453-40825c"
+}

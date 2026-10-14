@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\nFollow-up on the market comparison, after a review of the result on a phone and on the desktop.\n\n- **Aanbod instead of Bedrijfswagens.** In Flemish usage bedrijfswagens means vans and light commercial vehicles; the stock here runs from tractor units to parts, and most of it is on offer rather than on the premises. The first dropdown item becomes Alle voertuigen.\n- **Main navigation.** Capitals stay (the convention of the sector), but 14 px semibold with letterspacing instead of 16 px bold; items get a taller hit area and the dropdown rows go from 30 to 40 px.\n- **Mobile menu as a full-screen overlay.** Logo and close button on top, five rows (Aanbod, Diensten, Voertuig verkopen, Het bedrijf, Contact); the three with sub-items unfold on tap into a single column with the icons; call and WhatsApp fixed at the bottom. Rows 64 px, sub-items 60 px, buttons 48 px, for thick fingers. The page behind does not scroll; Escape closes. Native details elements, no script for the folding.\n- **Rental details are provisional.** The removal-van and camper sentences on the rental page came from a directory listing, not from the company's own site, and the neighbour at number 209 runs a rental business, so a listing can mix the two up. They are marked provisional until Schoutteet confirms; trade-in stays a fact, and the lead no longer promises a removal van.\n\nSuite: 33 tests, 242 assertions. Checked in a headless browser on desktop and phone widths.\n\n## After merge\n\nDeploy; nothing else.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/rental-wording",
+            "title": "Navigation: Aanbod, full-screen mobile menu, larger tap targets; rental details provisional"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013074250-fa6bc4"
+}

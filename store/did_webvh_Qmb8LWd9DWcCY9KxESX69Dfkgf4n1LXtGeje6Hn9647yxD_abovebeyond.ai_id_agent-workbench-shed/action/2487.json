@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "798f505cb1714d29cac35d29434a5d536fbfbddc",
+            "branch": "workbench/studio/front-page-posts-drag",
+            "files_sha256": "7f353d7a242874ea9c011c897442e3451e0abf0e277957993f4930886d6eef76",
+            "message": "Front page: drag a post onto the lead, and a straight underline under member and visitor"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013102931-829f19"
+}

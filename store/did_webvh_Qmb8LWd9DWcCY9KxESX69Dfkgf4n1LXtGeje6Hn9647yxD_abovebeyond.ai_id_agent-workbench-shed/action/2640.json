@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e31ca543c02640457f62d5b3ad66f14fe50cae9d",
+            "branch": "workbench/salespoint-off-map",
+            "files_sha256": "c5afe7fbbd29e1ab4c2867215f82baff51c82a43850f11a7113755b4896a0f0b",
+            "message": "Add 'Op de kaart' to a sales point, for test shops"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261013150321-b3d1b0"
+}

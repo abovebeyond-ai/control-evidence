@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The shares list could only open a share: ending one meant opening it first, and nothing could be deleted.\n\n- Two lists: shares a reader can still reach, then ended or expired ones.\n- Each row shows the project and the version next to the state and the opens, and ends or deletes in two steps, the same `<details>` confirm as on the share's own page. Ending from the list comes back to the list.\n- `DELETE /portal/shares/{share}` removes a share and its record of opens (cascade). For a share made through the gateway, the gateway's record keeps its digest.\n- New Dutch strings; the list's heading has its own string so the existing `Open` stays a verb.\n\nShareTest: 16 pass, including the new list test (order of the two lists, end from the list, delete with its opens, a client session refused). Pint clean.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/shares-manage",
+            "title": "Shares: end or delete from the list"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013195406-d96feb"
+}

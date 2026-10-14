@@ -1,0 +1,16 @@
+{
+    "action": "46fedfbc3e993e5c67c69cf44844d28b",
+    "effect": {
+        "detail": {
+            "base": "42ad42a36193205a269dacb0a8bd72c5b6f968fe",
+            "branch": "workbench/control-architecture-audit",
+            "commit": "ad9a4d4ddb33e3a022df4f62c822a84e473c331e",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2697,
+    "verdict": "ALLOW"
+}

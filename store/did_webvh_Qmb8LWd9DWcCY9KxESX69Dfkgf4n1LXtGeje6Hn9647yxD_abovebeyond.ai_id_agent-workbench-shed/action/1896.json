@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:14",
+            "note": "Testverslag: issues #992 en #993; PR #1001 (verkochte wagen: enkel kopi\u00ebren in Acties, offerteroute geweigerd; vervangt #994) en PR #995 (Franse/Engelse chassisnummerfout) voorgesteld",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1001"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261012171733-cc2ed2"
+}

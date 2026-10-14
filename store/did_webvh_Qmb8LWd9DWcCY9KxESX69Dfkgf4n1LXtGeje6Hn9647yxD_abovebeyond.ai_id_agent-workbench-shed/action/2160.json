@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pins the gateway to v0.38.0: `startup.sh` installs that release and checks the binary against `3748ac50\u2026ec885a`, the sha256 the release's `SHA256SUMS` publishes, which also matches the downloaded `control-gateway-linux-amd64`.\n\nv0.38.0 is `main` at 90e1896. Since v0.37.0 it adds:\n- `portal.share`: a document behind a passphrase, written to Portal through the gateway, the document attached and digest bound, the passphrase as its hash (#117)\n- a repair by passkey falls inside the working set, as built (#116)\n\nAfter merge, the operator upgrades the gateway (`deploy/gcp/rehearse.sh upgrade`); the carried configuration stays.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/pin-v0.38.0",
+            "title": "The gateway runs v0.38.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261013080532-f2882c"
+}

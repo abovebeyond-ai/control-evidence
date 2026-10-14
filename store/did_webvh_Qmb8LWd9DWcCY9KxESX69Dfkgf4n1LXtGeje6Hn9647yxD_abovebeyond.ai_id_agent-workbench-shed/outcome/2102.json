@@ -1,0 +1,16 @@
+{
+    "action": "d102508a553c9e45cda497db92f8e811",
+    "effect": {
+        "detail": {
+            "base": "762445b120ced7cb1289fc7f24d93f4d9a111b5d",
+            "branch": "workbench/market-improvements",
+            "commit": "082ab387d88deaf0a68a35de1532ee5963c2c3ed",
+            "files": 18,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2100,
+    "verdict": "ALLOW"
+}

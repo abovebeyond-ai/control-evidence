@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The workbench ran out of memory on 13 October and had to be restarted. A model training run, started with `nohup` outside any lease, ran next to Immich and the Claude sessions. The watchdog saw memory run out, but it only stopped build tools it knew by name (Gradle, test runners, package installs), so it warned and left the training running.\n\n- **Any process qualifies:** below `KILL_MB` the watchdog stops the biggest process of `bench` that is at least 150 MB and is not what the owner works through. Excluded are Claude sessions (including the Remote Control `versions/` binary), herdr, the voice bridge, mail intake, the governor itself, shells, ssh and Tailscale.\n- **A process that ignores SIGTERM** and is still alive on the next round (within 5 minutes) gets SIGKILL.\n- **First in line for the kernel:** every round, those same processes get `oom_score_adj` 1000 (a user may raise it on its own processes), and so does every job started under `agents.mjs run`. When the machine is already swapping and the watchdog is too late, the kernel's own out-of-memory killer takes the runaway job, not a session.\n- **Tests:** a Python training is stopped while sessions and small processes are left alone, then killed on the next round when it does not exit. The existing watchdog test still passes.\n\nThe hard ceiling stays an operator step outside this repository: `MemoryMax` on `user-1001.slice`.\n",
+            "branch": "workbench/watch-any-runaway",
+            "title": "Watchdog: stop any runaway job, not only known builds"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261013185244-64a72b"
+}

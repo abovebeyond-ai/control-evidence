@@ -1,0 +1,16 @@
+{
+    "action": "9c37ccd64e86e4f67d9bfa8b48c8f81b",
+    "effect": {
+        "detail": {
+            "base": "3fbba141f5c68ec4bd85048a8b01092dd9b15e99",
+            "branch": "workbench/video-title-register",
+            "commit": "a881eea927589ab81cf4f58ce76d3ef8e1b82540",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2226,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P3\nSummary: the garage asks whether the platform still spends a quarter of a remove.bg credit per photo, because their monthly credits ran out. The answer is yes per call, but a photo can cost more than one call.\n\nSource: Portal mail:16 (a forwarded remove.bg \"100% of your monthly credits used\" notice).\n\n## Answer\n\n- The platform asks remove.bg for `size=preview` (`App\\Http\\Helpers\\Photo::old_remove_background`, unchanged). remove.bg bills a preview image, up to 0.25 megapixel, at 0.25 credit; the balance can carry fractions. So one call is still a quarter credit.\n- A photo is not always one call. A platform copy of a shared vehicle (`ProcessImage` with `duplicate`) is its own call, next to the dealer's own-photo background when they ask for one, and #990 shows one own photo getting two platform copies on the same file. The bulk action \"all photos that still have a background\" skips photos that already had their turn, so a refusal is not retried.\n- The 2026-09-24 finding measured 443 calls against roughly 90 credits, consistent with 0.25 per call plus normal dealer activity in the same hours.\n- The remove.bg subscription credits do not carry over month to month; pay-as-you-go credits do, but remove.bg says unused pay-as-you-go credits expire on 1 December 2026 when the service moves to Canva. Buying a large stock now is therefore not useful either way; see the migration issue #1004.\n\nNothing to change in code for this question. The exact month's spend is visible in the Koppelingen panel (remove.bg saldo from the daily smoke test) and in `stocklist:smoke removebg` on the box.\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P3"
+            ],
+            "title": "Does the platform still spend a quarter credit per remove.bg photo?"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012180355-c722d0"
+}

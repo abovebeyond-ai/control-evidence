@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f0f9f1eada5f493045023e5449e0c7a276fa2a30",
+            "branch": "workbench/order-photo-zoom-affordance",
+            "files_sha256": "0a49253ef9a72b975f27b8f5775de53e7bcfc0fe9233909f2bd139b89f34272d",
+            "message": "Say that the photo enlarges and how the lightbox closes"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261012131351-3806e7"
+}

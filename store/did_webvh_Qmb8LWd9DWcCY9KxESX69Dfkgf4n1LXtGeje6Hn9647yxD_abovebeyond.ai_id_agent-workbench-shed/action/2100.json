@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "762445b120ced7cb1289fc7f24d93f4d9a111b5d",
+            "branch": "workbench/market-improvements",
+            "files_sha256": "fe351a9e326b712d3d537c7ab90ba626c2870631237d328f7c051667e5e91de0",
+            "message": "Market comparison: sell page, mobile menu, richer cards, services pages"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013061054-6e6d1a"
+}

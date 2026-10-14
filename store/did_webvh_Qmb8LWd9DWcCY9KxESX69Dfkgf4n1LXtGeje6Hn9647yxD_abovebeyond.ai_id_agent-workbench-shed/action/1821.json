@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The order form showed the detail gallery of the public frame page: model shots, the jewel close-ups, everything flagged for the detail page. The cart then showed a different image again. A dealer picks a size and a colour on the order form; the browsing happened on the frame page before that. So the order flow now carries one photo, the same one everywhere.\n\n## What changed\n\n- **One photo in the order flow.** The full order page and the order window in the grid show the frame's order-overview photo: the photo flagged \"Tonen op besteloverzicht\" in the Studio (`showOnIndex`, at most one per frame), or the frame's first photo when none is flagged, so the form is never empty.\n- **Same photo in the cart.** The cart line snapshot goes through the same helper (`Content::orderPhoto`), so the cart, the order overview and the confirmation mail show what the form showed.\n- **Public frame page unchanged.** The detail gallery stays where it belongs. The fallback for a website frame block without a chosen photo also stays the order-overview photo, as before.\n\nThe Studio's own wording follows in hoet-sanity: the toggle \"Tonen op overzicht\" becomes \"Tonen op besteloverzicht\", since that is what it decides.\n\n## Verification\n\n- `ConfiguratorTest`: the order page and the order window show the overview photo and not the detail photo; a frame without the flag falls back to its first photo.\n- Pint, PHPStan and the suite pass. `BuildStampTest` fails in a git worktree only (the branch ref lives in the common git dir); it passes in a normal checkout and in CI.\n",
+            "branch": "workbench/order-form-overview-photo",
+            "title": "Show one photo in the order form: the order-overview photo"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261012121134-86d272"
+}

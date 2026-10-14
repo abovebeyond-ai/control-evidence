@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The photo toggle \"Tonen op overzicht\" decides which single photo of a frame the dealer sees in the order form, the cart and the order overview. \"Overzicht\" did not say that, and the description spoke of card images in overview lists, which is where the photo shows only as a fallback. The toggle is now called \"Tonen op besteloverzicht\", and its description says where the photo goes.\n\n## What changed\n\n- `framePhoto.showOnIndex`: title \"Tonen op besteloverzicht\", description naming the order form, the cart and the dealer's order overview, with the website frame block as fallback. The field name stays `showOnIndex`, so no data migration and no change for the app.\n- The same word in the frame validation message, the photo preview tag, the frame photo picker tag and its hint, the frame block description and the Couture\u00b2 pair description.\n\nGoes with the hoet-eyewear change that makes the order form show only this photo.\n\n## Verification\n\n`tsc --noEmit` passes; the sync-codes tests pass. Prettier already flagged these files before this change, so nothing was reformatted. No CI on this repo: deploy by hand with `npm run deploy` after the merge.\n",
+            "branch": "workbench/order-overview-photo-label",
+            "title": "Rename the photo toggle to \"Tonen op besteloverzicht\""
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261012121153-adcce9"
+}

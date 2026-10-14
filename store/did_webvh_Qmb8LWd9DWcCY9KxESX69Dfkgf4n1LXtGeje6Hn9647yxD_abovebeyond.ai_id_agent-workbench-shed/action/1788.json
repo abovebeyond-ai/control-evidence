@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:14",
+            "note": "Testverslag lezen; issues aanmaken voor de twee open punten (verkochte wagen: actieknop, chassisnummerfout in het Frans)",
+            "state": "in-progress"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261012102103-ed1355"
+}

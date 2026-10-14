@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A document behind a link and a passphrase, for a reader who has no Portal account and needs none.\n\n**Owner side**, behind the portal session: `/portal/shares` lists shares and makes a new one from Markdown, with a passphrase (at least 8 characters) and an end: a week, a month, three months, or until ended. The share's page shows the link, the state, and the record of opens; ending it is a two-step `<details>`, like removing a passkey.\n\n**Reader side**: `/s/{token}` shows the passphrase form, then the document, rendered from Markdown with raw HTML stripped and unsafe links refused. The unlock is per share and per session.\n\n**On record**: every attempt is a row in `share_opens`, opened, wrong passphrase, or a knock on a closed or unknown share, with the address hashed under the app key and never kept raw, plus the browser string. The passphrase is stored only as a bcrypt hash. Attempts are throttled (10 a minute). The pages carry `noindex, nofollow` as a header and a meta tag, and `cache-control: no-store`.\n\n**What is deliberately not here**: a CLI to make a share from the workbench (writes go through the gateway; a later step), file attachments, and editing a share after it is made (make a new one).\n\nTests: `tests/Feature/ShareTest.php`, eight cases. Pint and PHPStan clean; the full suite was run before proposing.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/shares",
+            "title": "Shares: a document behind a link and a passphrase, every open on record"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013070530-393a28"
+}

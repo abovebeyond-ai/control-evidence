@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.share",
+        "params": {
+            "days": 30,
+            "files_sha256": "4c70318537083629d20a8d7dc4a9ea6856db56a704b294eb481d6420deb9445b",
+            "passphrase_hash": "pbkdf2-sha256$310000$ikN90BwdEs7k4f1sn+uUaA==$p1SZCnOCuKgdzC1nVJFPsXe73lYMiuChHGPjIORt7Rw=",
+            "title": "Bextrust, from first principles"
+        },
+        "resource": "portal:bextrust"
+    },
+    "run": "workbench-20261013104024-80c95d"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "9e987ce80b20a433c23dddd9a3c2e04c",
+    "effect": {
+        "detail": {
+            "base": "46560ca11f6f2f3bb829a749bc3301c6fea866a2",
+            "branch": "workbench/pipeline/front-report-picks",
+            "commit": "3e941372592e544ccc0b7281208319800a92850e",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2679,
+    "verdict": "ALLOW"
+}

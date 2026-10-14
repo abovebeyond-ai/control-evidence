@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5d0a4cd48dc1b25f756288c75ecf935dfb397cef",
+            "branch": "workbench/rental-wording",
+            "files_sha256": "902e3b0ae7aff59edf063fc1c24bd3ea46986e32fef9dc57bf6cd8123070c5d1",
+            "message": "Navigation: Aanbod, lighter capitals, full-screen mobile menu; rental details provisional"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013074250-fa6bc4"
+}

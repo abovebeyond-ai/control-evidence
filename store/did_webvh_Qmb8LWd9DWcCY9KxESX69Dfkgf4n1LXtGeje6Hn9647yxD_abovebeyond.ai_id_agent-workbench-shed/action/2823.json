@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f24580136d64956a60a66d05b6e9c1f46867be90",
+            "branch": "workbench/pipeline/enrich-account-not-signal",
+            "files_sha256": "84ca6c757fde450db344cae9f1c4a0b4b2e8b7a0b58d772d3fa9d111081e03e9",
+            "message": "A refused or full account is not a failure of the signals in the batch"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014060416-c9bcf3"
+}

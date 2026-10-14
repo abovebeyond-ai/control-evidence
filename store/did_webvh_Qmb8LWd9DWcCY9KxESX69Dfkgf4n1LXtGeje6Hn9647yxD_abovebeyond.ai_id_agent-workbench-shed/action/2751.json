@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A policy version can now be signed on a short head that names its body by hash, so any key signs any version, whatever the grants weigh.\n\n**Why.** `verifySignature` checked an Ed25519 signature over the whole payload. A YubiKey's PIV slot signs about a kilobyte in one piece (above that pkcs11-tool switches to C_SignUpdate, which ykcs11 refuses for EdDSA with CKR_DATA_LEN_RANGE), and the first real widening was 6,611 bytes. So the owner's strong key could not sign a real version, and widenings fell back to the passkey path or to a configuration transfer and a reboot.\n\n**The digest form.** Three base64url parts, `head.body.signature`:\n- head: `type, iss, version, prev, iat, body_hash`; the signature covers these bytes exactly;\n- body: `agents, systems, change`; `body_hash` is `sha-256:` over its bytes;\n- the hash the next version names stays `sha-256:` over the whole token, and the whole token is what RTMR3 measures and the record names.\n\nBoth parts decode strictly, a body that is not the one the head names does not parse, and `Next` judges the version exactly as before (signer, number, predecessor, narrower for Elixir, repair-only for Portal).\n\n**Compatibility.** The earlier two-part form is still read, so versions kept on disk replay. `GET /v1/policy` and the `policy` object on `GET /v1/agents` now list `formats: [\"digest\", \"payload\"]`; the signers in portal, elixir and portal-cli use the digest form only once the gateway lists it, so a version in a form the gateway cannot read never reaches the chain.\n\n**Tests.** A chain mixing both forms; a 200-repository version whose signed head stays under 512 bytes; a swapped body, a forged head and a smuggled head field refused; Elixir's narrowing accepted and its widening refused in the new form; the pull test now pulls a digest version and checks the RTMR3 input carries the whole token. `go test ./...` green.\n\n**Rollout.** Needs a release (v0.40.0, which also carries the unreleased #121), a pin in `deploy/gcp/startup.sh`, and `rehearse.sh upgrade`. `docs/working-set.md` describes the new form.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/policy-digest",
+            "title": "Policy versions signed on a short head that names the body by hash"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261013195208-7a5764"
+}

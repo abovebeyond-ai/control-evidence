@@ -1,0 +1,16 @@
+{
+    "action": "76973759f90059e3c117141064e6ff75",
+    "effect": {
+        "detail": {
+            "base": "1681505bfe987face5a0517ff631ea1b684dbbf2",
+            "branch": "workbench/share-update-wording",
+            "commit": "ccb10661001e9d57945a40f73b263f7d857dad94",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2208,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "2f241589d76c3af4ff1ac2270bf31d69",
+    "effect": {
+        "detail": {
+            "base": "e9e214662b32fe7f99a5b3cab12e19112ac11907",
+            "branch": "workbench/pin-v0.40.0",
+            "commit": "6e827c791a8ca0e26fc82c5fcf15a4925cda3149",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2796,
+    "verdict": "ALLOW"
+}

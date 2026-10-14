@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d9f57eb387f855a0dbab59d055fa76f41f8f9397",
+            "branch": "workbench/share-cli",
+            "files_sha256": "8204d04ba13082c51939ad4a80347c621f51d33921f47ff11bc433faa3df4011",
+            "message": "Add share.mjs: a document behind a link and a passphrase, from the workbench"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261013072658-83e01e"
+}

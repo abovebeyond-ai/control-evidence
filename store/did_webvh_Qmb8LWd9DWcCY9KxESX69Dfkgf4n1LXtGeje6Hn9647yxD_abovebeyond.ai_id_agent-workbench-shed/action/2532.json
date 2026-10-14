@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: Dealers cannot choose a finish (Mat or Glanzend) when ordering a Costume frame that comes in both, so orders arrive without the finish and the workshop has to ask back.\n\nIn the Studio, Costume U1, U2 and U7 to U10 carry two finishes (M Mat, S Glanzend); U3 to U6 carry only Mat. The order form (the popup in the dealer grid and the full configurator page) offers size, colour and extra options, but never the finish. `Catalog::frameOptions()` already resolves `finishes`; nothing in the order flow reads it. A dealer order for a U1 came in without a finish.\n\nExpected: when a frame offers more than one finish, the order form asks for it (required), and the choice travels with the line into the cart, the confirmation page, the order history and both order mails. A frame with a single finish asks nothing, as today.\n\nAlso worth checking in the Studio: U11 and U12 currently carry only Mat, while the collection is said to offer both finishes from U7 up to U12.\n\nSource: Portal mail:17.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "Order form does not ask for the finish on frames with Mat and Glanzend"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261013103733-93510a"
+}

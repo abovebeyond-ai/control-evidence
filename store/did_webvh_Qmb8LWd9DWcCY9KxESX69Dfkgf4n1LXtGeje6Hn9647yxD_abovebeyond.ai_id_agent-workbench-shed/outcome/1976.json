@@ -1,0 +1,16 @@
+{
+    "action": "a34e3febb3ee45162bef87bcc09946d9",
+    "effect": {
+        "detail": {
+            "base": "5fbf2a243cf168401e291e58bb3f5bc0b12b482b",
+            "branch": "workbench/home-video",
+            "commit": "f61e7a249621c857a983eaa13c84edcc7eb98ac9",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1974,
+    "verdict": "ALLOW"
+}

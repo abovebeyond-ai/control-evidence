@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b5e8fc886c08b1f7218dfd800150cbc602ce8c04",
+            "branch": "workbench/salespoint-off-map",
+            "files_sha256": "a6e3d5919beb72dcd50f628368fc5f336b05bff6b7dba21cb18a041143dc7d03",
+            "message": "Leave sales points with 'Op de kaart' off out of the store locator"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261013150339-a0103b"
+}

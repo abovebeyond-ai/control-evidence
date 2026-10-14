@@ -1,0 +1,16 @@
+{
+    "action": "ed36764fb41a2b9a96286f9318226bb5",
+    "effect": {
+        "detail": {
+            "base": "b5e8fc886c08b1f7218dfd800150cbc602ce8c04",
+            "branch": "workbench/salespoint-off-map",
+            "commit": "2868724d0ef6ac933d26a12aadea14652adcf5b0",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2646,
+    "verdict": "ALLOW"
+}

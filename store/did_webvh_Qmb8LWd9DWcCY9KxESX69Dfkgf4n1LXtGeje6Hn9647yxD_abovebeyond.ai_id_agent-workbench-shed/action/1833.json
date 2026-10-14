@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follows #74, which gives the order form one photo. With one photo the form can show it large, and a click opens it full size.\n\n## What changed\n\n- **Full order page.** The photo column grows from 1.15fr to 1.5fr (the public frame page keeps its proportions, where the gallery shares the row with specs), and the photo is no longer cropped to 4:3, so the frame is shown whole. A click opens the lightbox of the public frame page.\n- **Order window in the grid.** The photo takes the whole picture column, 420px wide instead of the two-by-two 115px tiles the window had for a gallery, and opens the same lightbox. On a phone it spans the window.\n- **Lightbox listens once on the document.** It used to bind one listener per link at page load, and the order window is fetched after a click, so its photo would have done nothing. Delegation covers both, and the frame page behaves as before (the thumbnails there still feed prev/next).\n- **Thumbnail code on the order page removed.** It switched a gallery that no longer exists.\n\n## Verification\n\n- `ConfiguratorTest`: the order page photo is a lightbox link and not cropped, no thumbnails; the order window carries the single-photo class and the lightbox link; the lightbox is bound on the document.\n- Preview in headless Chromium with a seeded dealer, at 1280px and 390px: order page, lightbox, order window and its lightbox, no page errors. The screenshots are in the session.\n- Pint, PHPStan and the suite pass. `BuildStampTest` fails in a git worktree only; it passes in CI.\n",
+            "branch": "workbench/order-form-photo-large",
+            "title": "Show the order-form photo large, with the lightbox on click"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261012130113-bbeeeb"
+}

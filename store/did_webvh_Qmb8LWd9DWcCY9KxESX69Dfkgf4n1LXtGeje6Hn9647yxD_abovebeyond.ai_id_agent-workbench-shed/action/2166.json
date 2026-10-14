@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "afa1a15c8a78b74d9e6b76877ee6eeb00be9e654",
+            "branch": "workbench/share-files",
+            "files_sha256": "817bb5a09932993ae0d6e4a1ee3a94dcc6e64b6f5ed9ec8c91a9b3a40a2c9b18",
+            "message": "Bind a share's document in the handler, the way a push binds its files"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261013081552-00003d"
+}

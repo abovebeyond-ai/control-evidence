@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Trends on Curate's front page can be dragged into place since #51; posts could only be put in the lead with buttons. Now a post can be dragged onto the lead as well, with the same preview.\n\n## What it does\n\n- **A live post** under the lead can be dragged onto the lead. While it is over the lead, the page shows it leading. Whatever led before falls back into date order among the six, and those six glide to their new places. Dropping it pins it, exactly as \"Lead with this\" does, with the same undo.\n- **A post in review** that is ready to go live can be dragged from the tray onto the lead. The page previews the post coming in and the sixth post dropping out from under the lead. Dropping it puts the post live and pins it, as \"Place on the page\" then the lead already did.\n- Holding a post with \"Place on the page\" and pointing at the lead shows the same preview before the click.\n- The selected \"As a member\" / \"As a visitor\" was marked with an inset shadow on a rounded button, which drew a curved underline. It is now a straight 2 px pencil text underline, like the other links on the page.\n\n## How\n\n- `withLead(articles, post)` in `frontpage.js` returns the front page's posts with that post pinned as the lead. It has tests: a live post moving up, taking over from a pinned lead, a post from review coming in.\n- The trend grid's `TrendPlaces` became `Places`, which the posts under the lead now use too. A post dragged out of the grid stays in the document, hidden (`keep`), while it is drawn as the lead. Removing it would end the browser's drag.\n- The lead's drop target no longer flickers when the pointer crosses its child elements: `dragleave` counts only when the pointer leaves the lead.\n\n## Checked\n\n- `npm test`: 42 of 42 pass. `npm run build` is clean.\n- In a local preview against a stand-in pipeline (headless Chromium):\n  - A live post dragged onto the lead: the page showed it leading and the old lead back in date order. One `POST /site/lead` went out with its id.\n  - A post in review dropped on the lead (drag events sent directly, because the test browser stalls on any drag that starts in the tray, the trend drags already live included): the preview showed it leading with the sixth post dropped. On the drop it went live, then was pinned.\n",
+            "branch": "workbench/studio/front-page-posts-drag",
+            "title": "Front page: drag a post onto the lead, and a straight underline under member and visitor"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013102931-829f19"
+}

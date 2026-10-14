@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #992\n\nReplaces #994, which can be closed.\n\nOn the sheet of a sold vehicle the Acties menu still offered a quote, a quote without damage, an order form, an order form without damage and a test drive. A quote went through; an order form opened, could be filled in, and was refused on save because the vehicle is sold. The screen invited an action the platform then refused.\n\nTwo things change on both doors of the sheet (the Livewire host view and the classic header):\n\n- The Acties menu gets a Kopi\u00ebren item, the same copy the list row offers, with the same confirmation. On a sold vehicle that is the only item left: the quote, order form and test drive entries are gone, since every one of them makes a document for a sale that is already done. Copying a sold vehicle is how a car that comes back gets a fresh sheet, and the copy already remembers which sheet it came from.\n- The status switches \"In optie\" and \"Klaar voor keuring\" were already locked on a sold vehicle, but only their label was dimmed: the switch itself kept its full blue and looked live. The switch now dims with the label.\n\nThe quote route follows the order form: `OfferController::create` refuses a sold vehicle and sends the dealer back to the quote list with \"Voertuig werd reeds verkocht.\", the same answer the order form gives. Without it an old tab or a copied URL still made a quote for a sold car.\n\nTests: `VehicleSheetHeaderTest` renders both doors for a sold vehicle (menu with only the copy, Bekijken, the back link, the locked switch) and for an unsold one (copy next to the documents). `NoQuoteForASoldCarTest` posts a quote for a sold vehicle and reads the refusal, and checks the gate lets an unsold vehicle through. The sold-vehicle tests fail on main. Full suite, PHPStan and the compiled views checked locally.\n",
+            "branch": "workbench/sold-vehicle-copy",
+            "title": "A sold vehicle's sheet keeps only the copy, and the quote route refuses it"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012171655-9bb5b2"
+}

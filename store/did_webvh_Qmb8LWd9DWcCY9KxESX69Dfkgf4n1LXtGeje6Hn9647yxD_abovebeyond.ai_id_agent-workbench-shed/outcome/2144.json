@@ -1,0 +1,16 @@
+{
+    "action": "492faacca822af4c2b43b204545042a6",
+    "effect": {
+        "detail": {
+            "base": "5d0a4cd48dc1b25f756288c75ecf935dfb397cef",
+            "branch": "workbench/rental-wording",
+            "commit": "b7368826fbfdf1613d1aa7f8f821ddf77ac1cee4",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2142,
+    "verdict": "ALLOW"
+}

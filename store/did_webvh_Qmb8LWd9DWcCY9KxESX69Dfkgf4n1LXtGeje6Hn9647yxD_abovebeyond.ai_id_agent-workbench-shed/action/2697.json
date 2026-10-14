@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "42ad42a36193205a269dacb0a8bd72c5b6f968fe",
+            "branch": "workbench/control-architecture-audit",
+            "files_sha256": "a765ac62f0354d40438c7940ed7e2c33c1f1454b8709c3fed068485fb733b170",
+            "message": "Control architecture audit: what is essential, what is accidental, and the order to simplify"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261013160401-bafeab"
+}

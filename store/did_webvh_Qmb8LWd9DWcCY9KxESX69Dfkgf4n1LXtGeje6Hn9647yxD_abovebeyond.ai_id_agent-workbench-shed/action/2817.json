@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a62c7e61e5272c4176b3b8dbaeb4624580d6ec57",
+            "branch": "workbench/hand-kinds",
+            "files_sha256": "e1de3691eeacf769d408964baaf0a15793d1ace03a1712433312b9b7923372be",
+            "message": "The hand admits the same kinds as Portal"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261014060135-9025a0"
+}

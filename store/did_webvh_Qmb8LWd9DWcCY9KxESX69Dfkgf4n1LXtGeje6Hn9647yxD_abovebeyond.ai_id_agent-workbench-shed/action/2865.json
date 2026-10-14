@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ef501a0dfa774b0414ee6bb5fc7b99b5d7c2f77e",
+            "branch": "workbench/flow-from-history",
+            "files_sha256": "4b6889d57731f8bdcbbf0f3e3ae095de4d157bb354846e2fcbdaf42e21ab6fcf",
+            "message": "Offer each worker his recent sites and machines as tiles, from GLK's Bouwsoft staff list, catalogue and costing"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261014073250-7a53bb"
+}

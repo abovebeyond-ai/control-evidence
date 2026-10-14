@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The working set bounds what Portal will sign, not what the gateway accepts. A capability signed by Portal's key is held to that key, its audience, its hand and its expiry. Its `task.workingSet` carries only the set's `jti` and `iss`, and the gateway ignores both. So the sentence in *Why it holds* (\"someone who took over Portal can do at most what the owner already set out\") is not yet true.\n\nThis adds a design section, *The gateway checks the set*, marked not built:\n\n- **A word for a day or less** (at most 25 hours, so the day the clocks go back fits) needs no set. That is the passkey alone, as today.\n- **A longer word must carry the whole set token** under `task.workingSet.token`. The gateway checks five things:\n  1. The set is signed by a `widen` key of `policy_log.signers`, the keys already measured into RTMR3.\n  2. Its `type` is `working-set` and its `sub` is the hands' DID.\n  3. It ends no earlier than the capability and stands a week at most.\n  4. The capability's project is in the set.\n  5. Every kind has a radius in `policy.RepairKinds` at or below the set's layer.\n- **The record** gains `working_set: {jti, iss}` under `control_task`.\n- **Ending a set early needs nothing new.** `endSet` moves the set's admissions to now, and Portal's revoked list carries them to the gateway.\n- **Rollout:** Portal first, since the gateway reads `task` leniently. Then a gateway release that enforces the check.\n- **Out of scope, with reasons:** passkey-signed policy versions (the set names projects, the policy names repositories) and the systems' B1 reads (those never reach the gateway).\n\nTwo status lines are also corrected:\n- The top of the document now points to the new design section.\n- Open question 4 (revocation) now says the gateway half is built (`cmd/gateway/revoked.go`) and the systems do not read the list yet.\n\nDocs only.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/working-set-check",
+            "title": "Working set: design for the gateway checking the set"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261014072041-aa2cbd"
+}

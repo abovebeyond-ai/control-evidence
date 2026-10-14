@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A share can now be a document in HTML, not only Markdown: accordions (`details`), inline drawings (`svg`), figures, tables. The hand names the file `.html`; Portal keeps it to what a document needs and nothing that runs.\n\n- **`SafeHtml`**: an allowlist of tags and attributes, parsed with the HTML5 parser (`Dom\\HTMLDocument`) so SVG keeps its case-sensitive attributes. Scripts, event handlers, frames, forms, objects, `<use>`, `<image>`, `javascript:` links, `url()` in styles and comments never survive. Images only as `data:` URIs: a remote image would let its host see who reads a share, and when. Applied on the way in and again on render.\n- **CSP on every share page**, the second lock: `default-src 'none'`, styles from self and the fonts host, images from self and data, no frames, no forms off-site.\n- `format` on a share (`markdown` or `html`), set from the uploaded name; the owner's paste form stays Markdown.\n- Reading page: figures, drawings, and the accordion styled as text that behaves (a small bar that turns), no widget.\n\nTests: `IngestShareTest` gains the HTML case (what stays, what goes, the header). Pint and PHPStan clean; full suite run.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/share-rich",
+            "title": "Shares: a document in HTML, kept to what a document needs"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013092728-b74cac"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\n`composer audit` listed 19 security advisories on four packages: guzzlehttp/guzzle (5, one high), league/commonmark (12, several high), laravel/framework (1, low) and league/flysystem (1, low). This runs `composer update` within the existing constraints: 62 packages move, among them Guzzle 7.15 to 8.2, the framework 13.20 to 13.35, commonmark 2.8 to 2.10 and Pint 1.29 to 1.32. After the update the audit is clean.\n\nChecked locally on PHP 8.5: 23 tests and 161 assertions green, Pint passes with the newer version, and the two S API probe runs on Guzzle 8 (the HTTP client the hourly import uses).\n\nReplaces #11, which carried its own copy of the PHP 8.5 commit and conflicted once #10 was merged. This branch sits directly on main.\n\n## After merge\n\nDeploy; `composer install` is part of the Forge deploy script. Run the hourly import once by hand afterwards to see it succeed on the new client:\n\n```\nphp artisan vehicles:import --source=api --prune\n```\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/deps-2",
+            "title": "Update Composer dependencies"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013062045-e8a30d"
+}

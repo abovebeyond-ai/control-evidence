@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\nSix large cards showed little of a stock of 2.600. The home page now shows the stock the way the dealer sites in the sector do.\n\n- **Nieuw in ons aanbod**: the eight newest vehicles in four columns, in a compact card (smaller type, no button, price kept). Only vehicles with a photo, make, model and price; parts, bodies and cars stay out of this row. Sorted by first registration, so the 2025 and 2026 arrivals come first.\n- **A row per category**: the four largest categories in stock at the moment (today Vrachtwagens, Kipwagens, Aanhangwagens, Opleggers), four vehicles each with a link to the full category. A vehicle appears on the home page once. `config/home.php` holds the sizes, the exclusions and an optional fixed list of categories.\n- No \"own stock first\" on the home page: that would pin the same 35 S-numbered vehicles on top and repeat them in every row. The lists and the detail page keep own stock first.\n\nSuite: 46 tests (two new for the home stock). Checked in a headless browser on desktop and phone widths: 20 cards, no script errors.\n\n## After merge\n\nDeploy; nothing else.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/home-stock",
+            "title": "Home: eight newest vehicles in smaller cards, then a row per category"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013100643-30b753"
+}

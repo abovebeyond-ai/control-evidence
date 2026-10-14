@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\nThe home page heading \"Nieuw aangekomen bedrijfsvoertuigen\" becomes \"Nieuw in ons aanbod\", in line with the menu item Aanbod (bedrijfsvoertuigen reads as vans in Flemish usage). Translated in the four other languages.\n\n## After merge\n\nDeploy; nothing else.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/home-heading",
+            "title": "Home: Nieuw in ons aanbod"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013090513-8d8d09"
+}

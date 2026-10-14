@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #54. The dropdown in each section's line set an amount but did not let an editor work on the page itself. Removing one particular post or trend took two steps, and only the trends showed what came next. Curate now edits the front page place by place.\n\n## What it does\n\n- **\u00d7 on every card under the lead and on every trend:** takes that card off the front page, and the section gets one place shorter.\n  - A post stays on /posts. It is listed under the posts as \"Off the front page, still on /posts\", and a click puts it back.\n  - A trend stays on /trends and goes to the head of the line, so the + brings it straight back.\n- **An empty place with a + at the end of each section:** names what would fill it, and a click adds the place. This replaces the trends' \"Next in line\" line.\n- **Reports:** the \u00d7 sits on the last report shown, because reports go by their own order. The + adds the next one, up to what the layout holds (one for a member, four for a visitor).\n- Every change redraws at once, holds while it saves, and has an Undo.\n- A visitor's three posts stay fixed. The section lines say the amount in words.\n\n## Needs\n\n- Pipeline: `frontRange` and `POST /site/front/post` (the follow-up to #323).\n- The site's home pages skip `off_front_at` posts and take any amount in range (site PR \"Home pages show as many posts, trends and reports as the editors set\").\n- Against a pipeline without `frontRange`, no \u00d7 or + is shown.\n\n## Checked\n\n- `npm test`: 43 of 43 pass, including `frontPosts` skipping a post that is off the front page. `npm run build` is clean.\n- Local preview against a stand-in pipeline (headless Chromium):\n  - \u00d7 on the second post: it left the grid on the same frame and showed under \"Off the front page\". Then `POST /site/front/post` and `under: 5` were sent.\n  - \u00d7 on the third trend: the order put it first in line, `trends: 5` was sent, and the + named it. The + brought it back as trend 6.\n  - As a visitor, the + on reports went up to four, then disappeared.\n  - Putting the post back sent `on: true` and `under: 6`.\n",
+            "branch": "workbench/studio/front-places",
+            "title": "Curate: remove a card from the front page, and an empty place with a + to add one"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013154228-ed0c9f"
+}

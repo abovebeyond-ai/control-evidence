@@ -1,0 +1,16 @@
+{
+    "action": "a1a4daac052672db71d1ac21aab6a67e",
+    "effect": {
+        "detail": {
+            "base": "9ddd80ced95aaf2785c3ad85d50238abc7a318d8",
+            "branch": "workbench/pipeline/front-sizes-custom",
+            "commit": "b417ef0eaf3f6e302e7bd5382dc72a6b2a693f47",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2658,
+    "verdict": "ALLOW"
+}

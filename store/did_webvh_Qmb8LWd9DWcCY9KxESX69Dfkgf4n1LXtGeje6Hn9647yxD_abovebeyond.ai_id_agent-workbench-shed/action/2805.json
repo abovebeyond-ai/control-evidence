@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nA refused Claude login takes its own account out of the work, not the whole engine.\n\n- The down marker (`/tmp/tw-llm-down.json`) holds one entry per account. `getLlmDown()`, which the engine halts on, is set only when every configured account is down; its reason names each one.\n- `callCli` treats a refused login like a rate limit: it marks that account and asks the next one. The call only fails with an auth failure when every account has refused.\n- `accountsToTry()` skips a refused account until its re-test is due. When every account is refused, it tries them all, so the probe and a call made by hand still find a repaired login.\n- `probeDownAccounts()` gives a refused account one tiny call of its own every probe interval (5 min) while the others carry the work, and the worker runs it each cycle when the engine is not halted. Without it a refused account would never be asked again while another one answers.\n- A real answer clears only the refusal of the account that gave it.\n- Elixir's declared credentials and the dashboard's account state read each account's own refusal (`accountDown`).\n- The old marker shape (`{since, reason, account}`) still reads: an entry for that account, or for all of them when it named none.\n\n## Why\n\nOn 2026-10-13 the OAuth session of a2 expired and could not be refreshed, while a1 answered fine. Every refusal wrote the one shared marker, the engine halted, and both workers stood idle with \"LLM auth failing, fix the credentials\". There were 463 refusals in 24 hours, and promotion stalled for almost four hours with 875 signals waiting, although one working login was there the whole time.\n\n## Tests\n\nNew `test/one-dead-login.test.mjs`, with a fake CLI that refuses chosen accounts. It covers four cases:\n- the other account answers the same call, and nothing halts;\n- the refused account sits out until its re-test is due;\n- a repaired login comes back on its re-test;\n- only every account refused halts the engine.\n\n`auth-refusal` and `expired-login` now read the halt through `getLlmDown()` rather than the file's shape.\n\nFull suite: 1166 pass, 6 fail. The 6 are the report-render tests, which need `pdftoppm`; the workbench lacks it and the box has it.\n",
+            "branch": "workbench/pipeline/one-dead-login",
+            "title": "One refused login takes its own account out, not the engine"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013201152-9a61d8"
+}

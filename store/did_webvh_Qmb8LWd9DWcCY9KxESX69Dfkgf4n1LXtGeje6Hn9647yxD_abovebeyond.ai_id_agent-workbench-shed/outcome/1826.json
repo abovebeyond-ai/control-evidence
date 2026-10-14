@@ -1,0 +1,16 @@
+{
+    "action": "5132d38947d97fa697c6782e3e86cfcc",
+    "effect": {
+        "detail": {
+            "base": "508c592d6e54720dd20375c4ba881c9c9dcf2bfb",
+            "branch": "workbench/order-overview-photo-label",
+            "commit": "ac6f07da3989279e30dd26ee7daf910b5de56edd",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1824,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`portal.share` joins the workbench's kinds (`Workbench::KINDS`) and the policy log's wording: a repair kind, B2, since a share in Portal is ended there in one step. Elixir will draft the next policy version with it; the owner approves it on `/portal/grants` with a passkey.\n\nCompanions: abovebeyond-ai/control (the kind), abovebeyond-ai/portal (the door, #399 for the shares themselves), abovebeyond-ai/portal-cli (`share.mjs`).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/share-cli",
+            "title": "Grant the workbench portal.share, a repair kind"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261013072627-d71eea"
+}

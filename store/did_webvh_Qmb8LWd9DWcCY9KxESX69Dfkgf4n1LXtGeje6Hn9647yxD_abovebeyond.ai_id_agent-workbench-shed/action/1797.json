@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "51f6e7c929a12f148dc68505fd949ef39717884f",
+            "branch": "workbench/sold-vehicle-actions",
+            "files_sha256": "d6b99bbdafc774a68e18b022d75a81d13a443ceb750e86c4fea08c8b5b4855e5",
+            "message": "A sold vehicle's sheet drops the Acties menu and dims its locked switches"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012103102-ed4094"
+}

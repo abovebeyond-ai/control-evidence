@@ -1,0 +1,16 @@
+{
+    "action": "578b4115b26bd95ac91a27758106dafd",
+    "effect": {
+        "detail": {
+            "base": "b9738ff6af9936f6f6fe11fee9b986ba10dd068e",
+            "branch": "workbench/pipeline/deploy-rejections-visible",
+            "commit": "40ef7bf5efe32a6506613062cd72dbf256702081",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2790,
+    "verdict": "ALLOW"
+}

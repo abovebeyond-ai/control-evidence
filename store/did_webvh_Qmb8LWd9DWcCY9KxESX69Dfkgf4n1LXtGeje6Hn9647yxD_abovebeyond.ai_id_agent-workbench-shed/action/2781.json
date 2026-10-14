@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On Curate's front page, the trend cards had a green-grey (#EBF0EC) that gentells.com does not use. On the site, posts and trends are both cards in stone (`--color-stone`, #EFEFEC). Curate's post cards already had that colour.\n\n## Change\n\n- `.gt-card` now uses #EFEFEC, so trends and posts have the same card colour.\n- The lead stays mint and the reports stay black, as on the site (`--color-mint-light` for the featured post, `--color-night` for the report band).\n\n## Checked\n\n- `npm run build` is clean. Only the colour changes.\n",
+            "branch": "workbench/studio/trend-cards-stone",
+            "title": "Curate: trend cards in the site's stone, like the posts"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013195352-77514c"
+}

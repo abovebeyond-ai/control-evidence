@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3fbba141f5c68ec4bd85048a8b01092dd9b15e99",
+            "branch": "workbench/video-title-register",
+            "files_sha256": "3bafba2d68ec0b9e2794d143493868974ec8f34805ab7d6f86a035957329aa88",
+            "message": "Set the video title in the section-heading register, with room above the player"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261013085601-6d7af9"
+}

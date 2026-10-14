@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first `portal.share` from the workbench was judged and allowed, and the adapter found no document: `cmd/gateway` binds submitted files to the judged parameters only for `branch.push`, `review.publish` and `portal.expense`. A share always carries its document, so it joins that list: refused before any judgement when the file is missing or does not match `params.files_sha256`, handed to the adapter when it does.\n\nTest: `TestAShareBindsItsDocumentBeforeTheJudgement` in `cmd/gateway`, with a fake Portal share door. Suite clean.\n\nThis needs a release (v0.39.0) and a pin, like #118.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/share-files",
+            "title": "Bind a share's document in the handler, the way a push binds its files"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261013081552-00003d"
+}

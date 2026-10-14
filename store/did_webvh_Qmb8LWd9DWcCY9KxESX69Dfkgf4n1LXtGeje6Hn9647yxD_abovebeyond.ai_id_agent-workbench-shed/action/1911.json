@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:15",
+            "note": "Logo: #1002 (sluit #996); mailvoorkeuren: #1003 (sluit #997, #998). Vervangen #999 en #1000, die rood gingen op pint; die twee mogen dicht.",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1002"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261012173803-841405"
+}

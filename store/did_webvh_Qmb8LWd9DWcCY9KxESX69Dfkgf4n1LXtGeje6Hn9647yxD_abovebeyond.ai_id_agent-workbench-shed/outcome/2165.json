@@ -1,0 +1,10 @@
+{
+    "action": "2aa8ee1ef8d80de2f5391c5113b2d88a",
+    "effect": {
+        "error": "portal.share needs exactly one file attached, the document: <nil>",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 2163,
+    "verdict": "ALLOW"
+}

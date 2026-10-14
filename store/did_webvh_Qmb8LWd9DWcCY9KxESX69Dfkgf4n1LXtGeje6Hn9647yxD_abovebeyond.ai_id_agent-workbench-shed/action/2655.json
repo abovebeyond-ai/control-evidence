@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n- The enrich backfill only picks signals that enrich never read (`enrich_model IS NULL`, and not already marked). Before, a signal that enrich read and found no concept in was promoted without one and became a candidate again the next night.\n- `--progress` also says what the backfill bought: of the marked signals, how many carry a concept that a live pattern names, and how many an insight cites.\n- `enrich_model` gets its migration. `markEnriched` writes it, but only the box's database had the column (from an older migration), so on a fresh database the first enriched signal failed.\n\n## Why\n\nThe nightly job sends 500 a night while a count stays above zero. On the box the count went from 5,259 to 5,268 between two batches: signals enriched without a concept, promoted since #313, counted as never enriched. They would be re-enriched every night at full price, for the same empty answer, and the job would never go quiet. Signals that were enriched and promoted before #313 but found no concept are excluded for the same reason.\n\nThe pattern and insight counts are what decides whether September (about 9,500 signals) is worth its enrich cost.\n\n## Tests\n\n`test/enrich-backfill.test.mjs`: two new cases (a read signal is not a candidate, nor is a marked one; the yield counts), and the test's own column workaround is gone. Full suite: 1150 pass, 6 fail. The 6 are the report-render tests, which need `pdftoppm`; the workbench lacks it and the box has it.\n",
+            "branch": "workbench/pipeline/enrich-backfill-ends",
+            "title": "The enrich backfill ends: only signals enrich never read, and what it bought"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013152140-b7edbd"
+}

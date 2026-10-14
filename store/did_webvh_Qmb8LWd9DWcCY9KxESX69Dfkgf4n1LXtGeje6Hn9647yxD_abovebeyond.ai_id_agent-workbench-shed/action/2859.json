@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "30fd29bb04b5787f8fbe622fc42a40088074b5ab",
+            "branch": "workbench/transport-on-by-default",
+            "files_sha256": "7e2181764e3b72b9d3e71e2c92fa11a59a50745b964866f080d7a2786411d5ab",
+            "message": "Transport comes with own stock: drop the per-garage switch"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261014072453-40825c"
+}

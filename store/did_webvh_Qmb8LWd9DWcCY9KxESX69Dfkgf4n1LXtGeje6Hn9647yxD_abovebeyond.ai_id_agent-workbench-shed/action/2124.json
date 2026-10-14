@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "50c940060ae0804bc7e4c0953aef4c133e1868a9",
+            "branch": "workbench/share-cli",
+            "files_sha256": "96696549dec9c7e03f9b5ed8494429d689dcfee10ea641925b34f15af47a1d2c",
+            "message": "Grant the workbench portal.share, a repair kind: a share in Portal is ended there in one step"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261013072627-d71eea"
+}

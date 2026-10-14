@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4d78fefa855bc339374ae503c6dcc7f19fc62537",
+            "branch": "workbench/working-set-check",
+            "files_sha256": "8601212ce1b479557afd3ad34e56dd467a6a6ad9d99d76f427b03ac4cb8b3260",
+            "message": "Working set: design for the gateway checking the set"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261014072041-aa2cbd"
+}

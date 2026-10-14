@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "041d2748f57b27e5652f5f36c658c534b5bc6858",
+            "branch": "workbench/video-block",
+            "files_sha256": "1c674092636a40245b245f08de44432fca93cbee5401d28ed3d51acaa8d6d471",
+            "message": "Add the Video page block"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261012192141-9cc457"
+}

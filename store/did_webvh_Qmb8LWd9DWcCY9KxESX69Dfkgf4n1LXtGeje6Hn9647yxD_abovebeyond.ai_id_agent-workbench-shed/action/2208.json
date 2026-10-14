@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1681505bfe987face5a0517ff631ea1b684dbbf2",
+            "branch": "workbench/share-update-wording",
+            "files_sha256": "0a2e21582d491fb714e52c6566df3c7758822e9dcaa57974ea8437fd4a48e762",
+            "message": "share.mjs: say when a share was updated rather than printing a word that no longer applies"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261013084937-442209"
+}

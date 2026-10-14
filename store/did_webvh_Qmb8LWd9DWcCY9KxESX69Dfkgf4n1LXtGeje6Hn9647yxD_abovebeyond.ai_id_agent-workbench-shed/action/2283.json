@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3b312d6202f2fe9b15c57e9efc4e400afb2aa431",
+            "branch": "workbench/share-open-link",
+            "files_sha256": "5a5c9e25839e3ea60fb5d0565709b5c663af2a266f79e66fb091ce75067070ba",
+            "message": "portal.share: the passphrase is optional; without it the link is the key"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261013093706-0874d2"
+}

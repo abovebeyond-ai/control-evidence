@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe monitor (the Observatory wall, and the status the MCP tool reads) now judges the deploy, from the files `bin/auto-deploy` already leaves on the box:\n\n- **A merge is not going out** (`nu`): a commit the tests on the box turned down (`~/.auto-deploy/<dir>.rejected`). The evidence names the repo, the refused commit, how long it has been held back, the failing tests from `/tmp/tw-deploy-tests.log`, and the commit the box stays on.\n- **Auto-deploy is failing** (`deze week`): the last round ended `failed` without a refused commit (a fetch or a build).\n- **Auto-deploy has stopped running** (`deze week`): the status file is older than 30 minutes, while the cron runs every 2.\n- A machine without auto-deploy state is a blind spot named Deploy, never an all-clear.\n\n`measure()` takes the reading itself (`measureDeploy()`, overridable for tests), so the test that checks every judged measurement is produced covers it too.\n\n## Why\n\nOn 2026-10-10 one test read the live model settings and failed every round. The box stayed on #311 for hours while #312, #313 and #314 waited, merged and not live. The script wrote its refusal into a state file and a log, and the wall, the Observatory status and the monitor all stayed calm. It came out only because someone ran a script that was not on the box yet.\n\nSeverity `nu`: a refused api commit also holds back the frontends of the same round, so nothing merged goes live until a person fixes main.\n\n## Tests\n\n`test/monitor.test.mjs`: three new cases (reading a refused commit with its failing tests and the finding it makes; a failed round and a silent cron; no state is a blind spot). The healthy fixture carries a deploy reading. Full suite: 1162 pass, 6 fail. The 6 are the report-render tests, which need `pdftoppm`; the workbench lacks it and the box has it.\n",
+            "branch": "workbench/pipeline/deploy-rejections-visible",
+            "title": "The wall says when a merge is not going out"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013195509-eb60b8"
+}

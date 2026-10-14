@@ -1,0 +1,16 @@
+{
+    "action": "67621bf2b88a38bb9d2f3f5b5e2d20b5",
+    "effect": {
+        "detail": {
+            "base": "b49667858a5283765f40742d1d976b09e4affb43",
+            "branch": "workbench/nav-polish",
+            "commit": "054d9d71a55bc44bb9ed319b20100726bf4c2d52",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2070,
+    "verdict": "ALLOW"
+}

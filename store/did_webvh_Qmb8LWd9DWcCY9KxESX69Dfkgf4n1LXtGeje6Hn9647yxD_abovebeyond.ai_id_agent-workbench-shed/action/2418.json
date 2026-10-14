@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.share",
+        "params": {
+            "days": 30,
+            "files_sha256": "8f7848492b092100e5c209488e4051d4fee7917c1f1b57d8412582b635f35318",
+            "passphrase_hash": "pbkdf2-sha256$310000$ezPV5gQ6+eCcF3ch7vdCJg==$VYSj9q5jO6Ol+ws6nMbzYfN4A5RE7dMmCkj3xFzj11U=",
+            "title": "Bextrust, from first principles: who may act, what proves it, and where the market stands"
+        },
+        "resource": "portal:bextrust"
+    },
+    "run": "workbench-20261013101255-8dfe99"
+}

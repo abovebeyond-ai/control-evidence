@@ -1,0 +1,16 @@
+{
+    "action": "b81a56ed0d78576125587b1b7cb46818",
+    "effect": {
+        "detail": {
+            "base": "ef501a0dfa774b0414ee6bb5fc7b99b5d7c2f77e",
+            "branch": "workbench/flow-from-history",
+            "commit": "1c2b00034903bbbfafed226c473964fde9011129",
+            "files": 40,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2865,
+    "verdict": "ALLOW"
+}

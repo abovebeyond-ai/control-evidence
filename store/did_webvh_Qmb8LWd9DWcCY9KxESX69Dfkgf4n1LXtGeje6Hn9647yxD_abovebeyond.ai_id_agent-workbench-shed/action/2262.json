@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d699dec8136dcfb2dbe3a4d28de352dfb481acf8",
+            "branch": "workbench/services-page",
+            "files_sha256": "2004e02394d61319cbe2854b0e23ac3d829e6dde13b8dcbb54158b529faf5776",
+            "message": "Services on one full page, a section per service"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013092657-a27363"
+}

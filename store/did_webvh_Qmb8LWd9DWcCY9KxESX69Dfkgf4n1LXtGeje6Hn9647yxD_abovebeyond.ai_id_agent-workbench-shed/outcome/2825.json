@@ -1,0 +1,16 @@
+{
+    "action": "5e32f6fa058223c77e28b2a4460c7251",
+    "effect": {
+        "detail": {
+            "base": "f24580136d64956a60a66d05b6e9c1f46867be90",
+            "branch": "workbench/pipeline/enrich-account-not-signal",
+            "commit": "3350f573f02169587390194677dafef9dfca1fbf",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2823,
+    "verdict": "ALLOW"
+}

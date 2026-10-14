@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A sales point with Active off disappears from the public map and from the order flow at once. A test shop has to stay orderable, to test ordering end to end, but must not be listed as a place a visitor can go to.\n\nThis adds a separate boolean `showOnMap` (\"Op de kaart\") to `salesPoint`, on by default. Off means: not on the public map and list, still selectable as the shop on an order. The Studio list preview shows \"niet op de kaart\" for an active shop with the toggle off.\n\nExisting documents have no value; the site treats a missing value as on, so nothing disappears by itself.\n\nThe site side is in Hoet-design/hoet-eyewear (branch `workbench/salespoint-off-map`).\n\nChecked: syntax (esbuild) and Prettier on the changed lines. `tsc` and `sanity schema validate` were not run locally.\n",
+            "branch": "workbench/salespoint-off-map",
+            "title": "Add 'Op de kaart' to a sales point, for test shops"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261013150321-b3d1b0"
+}

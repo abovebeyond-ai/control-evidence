@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4c2df06fa8b715be41c534250595737ec1df33a9",
+            "branch": "workbench/policy-digest",
+            "files_sha256": "0b72e92c0498d5f892fa67fe49e697171dc77d20ae75a8954b5148c9b17a96ac",
+            "message": "Policy versions in the digest form"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013195241-8acbfc"
+}

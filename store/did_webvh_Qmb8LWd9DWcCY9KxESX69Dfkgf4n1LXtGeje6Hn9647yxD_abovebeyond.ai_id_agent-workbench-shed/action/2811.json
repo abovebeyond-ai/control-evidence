@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The monitor counted refusals over the last day and raised \"nu\" at 50. A Claude login that was refused a few hundred times and then repaired kept the wall red for up to a day after the fix, because the window only forgets a refusal once it is 24 hours old. A siren that stays on after the repair teaches the reader to stop looking.\n\n## What changes\n\n- `measure()` now also reports `refusals.quietMinutes`: minutes since the last refusal in the window.\n- `assess()`: once a day's count reaches the weekly threshold but nothing has been refused for `THRESHOLDS.refusalsQuietMinutes` (60), it files one background finding, \"An outside party refused us, and has stopped\". The finding carries the count, the top group and how long ago the last refusal came. A stream that is still running keeps its \"nu\" / \"deze week\" severity as before.\n- A reading without `quietMinutes` (an older caller) behaves as before.\n\n## Tests\n\n- `test/monitor.test.mjs`: a stream that is still running is \"nu\", the same count gone quiet for 10 hours is background with a calm verdict, and the measurement reports 0 quiet minutes for a refusal just written.\n- Full suite: 1167 pass, 6 fail. The 6 are the report-render tests, which need `pdftoppm`; the workbench does not have it.\n",
+            "branch": "workbench/pipeline/refusals-recent",
+            "title": "A refusal stream that has stopped is background, not a siren"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014055811-b45304"
+}

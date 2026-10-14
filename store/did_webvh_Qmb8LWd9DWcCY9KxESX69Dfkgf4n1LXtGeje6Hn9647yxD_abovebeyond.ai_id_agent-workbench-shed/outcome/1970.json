@@ -1,0 +1,16 @@
+{
+    "action": "7d63257c9d483538ef3523b832260193",
+    "effect": {
+        "detail": {
+            "base": "041d2748f57b27e5652f5f36c658c534b5bc6858",
+            "branch": "workbench/video-block",
+            "commit": "ac937b2b4594c31c0d1bdd52b08e1779d1b42115",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1968,
+    "verdict": "ALLOW"
+}

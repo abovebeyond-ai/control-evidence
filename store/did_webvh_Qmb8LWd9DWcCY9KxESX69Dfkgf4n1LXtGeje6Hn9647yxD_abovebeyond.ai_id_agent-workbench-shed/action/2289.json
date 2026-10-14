@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ee1a367fa4b29d52b5404d4e5bd6b896025d4485",
+            "branch": "workbench/region-wording",
+            "files_sha256": "8b60da0ef5d3e75b4587d423d1ca77f1d704f3b91b1cd790578c9c3fa8297437",
+            "message": "Place in titles: stock without, services, contact and location with 'Oudenburg, regio Brugge'"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013093701-b6f01d"
+}

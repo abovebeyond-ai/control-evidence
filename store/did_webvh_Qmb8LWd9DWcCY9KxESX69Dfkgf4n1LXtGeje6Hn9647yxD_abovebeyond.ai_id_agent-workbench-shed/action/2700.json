@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "An audit of the control stack as it runs on 13 October 2026, across control, portal, elixir and portal-cli, asking whether the architecture is more complicated than it needs to be.\n\nThe answer in one line: the security model (about 3,000 lines of Go and 1,900 of PHP) holds; the operational envelope around it is where the friction comes from, and most of that follows from the boundary between data and code sitting one notch too far into code.\n\nWhat the document holds:\n\n- The cost of one kind, measured: `portal.share` took 7 pull requests in 4 repositories, 2 releases, 1 configuration transfer and 3 reboots, with a third release still owed; 9 gateway releases in 7 days, at least 4 of them to teach the binary a kind.\n- Where a kind lives: 9 places across the 4 repositories, with file and line; the hand's copy is already stale.\n- Sizes per repository, and which part is the judgement and which the envelope.\n- The five essentials, each with the line that carries it.\n- Seven accidental pieces ranked by friction: kinds in the binary, roots and data in one boot-time file, the whole-payload policy signature, the box in the write path, Elixir between Portal and the gateway, concept inflation, the hand.\n- The shape after, and an eight-step order where each step is a pull request set that removes something measurable: sign the digest, the kind table as data in the signed version, a dry-run policy check, Portal drafts and the gateway reports, roots by version, the gateway's own front door, two instances behind a drain, housekeeping.\n- What to keep, one thing to tighten (the gateway verifying the working set), the risks, and why the simplified shape is the same as the product a customer would run.\n\nEvery number comes from the repositories at control `e2294d8`, portal `4dd46d9`, elixir `67287f3` and portal-cli `453d63b`. Nothing in the code changes with this pull request.\n",
+            "branch": "workbench/control-architecture-audit",
+            "title": "Control architecture audit: what is essential, what is accidental"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261013160401-bafeab"
+}

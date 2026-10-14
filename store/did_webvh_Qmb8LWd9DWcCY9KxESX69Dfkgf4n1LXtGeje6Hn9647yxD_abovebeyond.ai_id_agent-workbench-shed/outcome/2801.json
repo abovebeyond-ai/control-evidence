@@ -1,0 +1,16 @@
+{
+    "action": "133c022e9c50187e64a3b3a4831421fe",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 123,
+            "review_requested": "ShaneDeconinck",
+            "url": "https://github.com/abovebeyond-ai/control/pull/123",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2799,
+    "verdict": "ALLOW"
+}

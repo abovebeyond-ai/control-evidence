@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Dragging a trend to another place on Curate's front page gave no sign of where it would land: the other cards stayed put, the card under the pointer turned pale, and on the drop the cards jumped to their new order once the pipeline answered. In between they jumped back to the old order for a moment.\n\n## What it does now\n\n- **The others make room.** While a live trend is dragged, the cards move aside to where they would stand after the drop. The dragged trend waits in its new place as a dashed pencil outline.\n- **Cards glide.** A card that changes place moves there in 240 ms instead of jumping. This applies to a drag, to a proposal held over a place (which already pushed the others down, without motion) and to the reload after a change. Reduced motion turns it off.\n- **No jump back.** The dropped order stays on the page until the pipeline has saved it and the page has reloaded it. A failure puts the old order back and says so.\n\n## How\n\n- `trendSlots` in `frontpage.js` works out the six places at any moment: as they are, with a dragged trend lifted into its new place, with a held proposal pushing the rest down, or as just dropped. It has tests.\n- The cards keep one order in the document and are placed with CSS `order`. Browsers end a drag when its source element is moved in the DOM, so reordering the elements themselves would cancel the drag halfway.\n- The place under the pointer is read from each card's layout box (`offsetLeft` and `offsetTop`), not from where the card is drawn mid-glide. A card passing under the pointer therefore cannot pull the target back and forth.\n- The lifted look is applied just after the drag starts, so the browser's drag picture is the card itself and not the outline.\n\n## Checked\n\n- `npm test`: 39 of 39 pass. `npm run build` is clean.\n- In a local preview against a stand-in pipeline (headless Chromium), trend 5 was dragged onto place 2:\n  - mid-drag, the cards were gliding and the outline stood in place 2;\n  - on the drop, one `POST /site/trends/order` was sent with `t1, t5, t2, t3, t4, t6`, and the page held that order straight away;\n  - with a proposal held over place 3, the proposal stood there, the rest had moved down, and \"Moves off the front page\" named the sixth.\n",
+            "branch": "workbench/studio/front-page-drag",
+            "title": "Front page: trends make room while one is dragged, and glide to their new place"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013100623-203871"
+}

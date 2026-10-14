@@ -1,0 +1,16 @@
+{
+    "action": "9ca48a13055aa80c97471518d918fd61",
+    "effect": {
+        "detail": {
+            "base": "60d6c4b1805d8a8fb5416720d90ccf003d92e931",
+            "branch": "workbench/nederland-mobiel-refusal-quiet",
+            "commit": "c9394aa384db8264b925045dd91ea0e6b6177a21",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2274,
+    "verdict": "ALLOW"
+}

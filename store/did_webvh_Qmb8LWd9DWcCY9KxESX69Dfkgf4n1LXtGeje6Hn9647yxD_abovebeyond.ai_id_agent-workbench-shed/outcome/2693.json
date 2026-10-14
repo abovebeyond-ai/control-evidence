@@ -1,0 +1,16 @@
+{
+    "action": "2db14c072edb6f6d3566d6081796669a",
+    "effect": {
+        "detail": {
+            "base": "0aa0176f6fc322d1709ee8706d38e91ae21ccef3",
+            "branch": "workbench/studio/front-choose",
+            "commit": "9d5f1d49902e30ade20a83d265f96f285e34fbb5",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2691,
+    "verdict": "ALLOW"
+}

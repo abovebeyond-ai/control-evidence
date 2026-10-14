@@ -1,0 +1,16 @@
+{
+    "action": "de38cbd36132e43112307d801ee5d6a4",
+    "effect": {
+        "detail": {
+            "base": "26ca74d744eeb1ecbb2958269884db3dd76c7efa",
+            "branch": "workbench/handlings-group-wording",
+            "commit": "fa7bfa3fb36c515dc71fcecc59578c465fa85388",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2556,
+    "verdict": "ALLOW"
+}

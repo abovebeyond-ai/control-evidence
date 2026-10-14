@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "78c9a0c44865c16c6d7cbfa39241d3d7990a0f71",
+            "branch": "workbench/own-cutout-service",
+            "files_sha256": "deea3ce68c5da31b7a0c4180ff6fda497b1b2bde8cbd70fcd19430b095a4959b",
+            "message": "Add the own cut-out service and a driver switch in front of remove.bg"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012191744-04255e"
+}

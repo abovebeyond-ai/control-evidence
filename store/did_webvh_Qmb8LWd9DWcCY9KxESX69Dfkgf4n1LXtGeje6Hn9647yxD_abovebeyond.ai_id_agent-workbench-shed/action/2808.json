@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "00a8c03dbb107b8605b09d2773554d141c31708f",
+            "branch": "workbench/pipeline/refusals-recent",
+            "files_sha256": "dcf8fe18c344b968c7777faac18d0457c32141380a4e584e14411880f268524c",
+            "message": "A refusal stream that has stopped is background, not a siren"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014055811-b45304"
+}

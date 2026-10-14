@@ -1,0 +1,16 @@
+{
+    "action": "b59cb7aae9c2a98644012c42d1e0746d",
+    "effect": {
+        "detail": {
+            "base": "c2f8575bd5142683b4de8383a781ca17507d4021",
+            "branch": "workbench/stale-layer-word",
+            "commit": "353c067e84a786c85d4f80b9089d0cc0a9fe923a",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2049,
+    "verdict": "ALLOW"
+}

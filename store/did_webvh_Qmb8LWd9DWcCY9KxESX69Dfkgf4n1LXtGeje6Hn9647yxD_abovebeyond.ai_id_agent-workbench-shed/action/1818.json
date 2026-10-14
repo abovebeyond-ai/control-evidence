@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "50039ecc6e2104a7805135ca07d0adbc4223914f",
+            "branch": "workbench/order-form-overview-photo",
+            "files_sha256": "3c4b8b3aef4f4705cd6ae939931b81137e9c2033f3ff7586c6e9bc1a7a566941",
+            "message": "Show one photo in the order form: the order-overview photo"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261012121134-86d272"
+}

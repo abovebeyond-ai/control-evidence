@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e2294d8bc562e3550db2dbbe004f144afc5ee17b",
+            "branch": "workbench/policy-digest",
+            "files_sha256": "a694a18b7f0f1cf200d5709a17c5d129b845ea8a2b3e3fb62fe76063ef094416",
+            "message": "Policy versions signed on a short head that names the body by hash"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261013195208-7a5764"
+}

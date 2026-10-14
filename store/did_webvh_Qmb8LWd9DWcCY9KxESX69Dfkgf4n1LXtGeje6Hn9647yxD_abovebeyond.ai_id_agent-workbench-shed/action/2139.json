@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A new Portal kind, `portal.share`: a document behind a link and a passphrase (portal#399), written through the gateway from the workbench.\n\n- **Schema**: `title` (string), `passphrase_hash` (string), `files_sha256` (hex64) required; `days` (int) optional.\n- **Adapter**: the document is the one attached file, digest bound to `params.files_sha256` the way an invoice rides on an expense (v0.18.0); a mismatch or a missing file is refused before any write. One multipart POST to `/api/ingest/share` with the fields, the file, and the evidence and capability headers. The outcome names the share's id and title and never the link, because the outcome is public and the link is the reader's.\n- **Repair kind** (B2): a share is ended in Portal in one step, so a version adding it can be approved by passkey.\n- `postFile` is a generic multipart write beside the expense-specific `upload`, used by the new kind only; `upload` is untouched.\n\nTest: `TestAShareCarriesItsDocumentAndNeverTheWord` in `effects/portal_test.go`. `go vet` and `go test ./...` clean.\n\nCompanions: abovebeyond-ai/portal (the door), abovebeyond-ai/elixir (the workbench's kinds), abovebeyond-ai/portal-cli (`share.mjs`).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/share-cli",
+            "title": "portal.share: a document behind a passphrase, written to Portal through the gateway"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261013073023-64799d"
+}

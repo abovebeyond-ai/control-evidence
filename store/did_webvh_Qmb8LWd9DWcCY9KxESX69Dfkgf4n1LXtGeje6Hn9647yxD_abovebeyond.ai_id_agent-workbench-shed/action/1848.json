@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d783fc910c7faeea4ea7a6a5f620baf17df9db36",
+            "branch": "workbench/grey-map-and-order-photo",
+            "files_sha256": "fe43bcfc863921c23054870fbd199e731611a35e4773477ce410d41483ea6f20",
+            "message": "Grey stockists map and one large order photo, as on hoet.be"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20261012134058-1455a4"
+}

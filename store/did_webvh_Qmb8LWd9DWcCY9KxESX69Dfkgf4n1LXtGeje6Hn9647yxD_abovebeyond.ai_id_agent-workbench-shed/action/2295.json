@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4a31a59ed61fc57a7cb7928fef43256e344c48cb",
+            "branch": "workbench/share-accordion-sign",
+            "files_sha256": "a5b04d4bcdc4a2c1d7a415eb4e6db022884d8ba23bb4c607908d36b52408d5d7",
+            "message": "Shares: the accordion's sign is a plus that becomes a minus; a bar alone read as a bullet"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013094209-781eff"
+}

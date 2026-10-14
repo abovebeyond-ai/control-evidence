@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #325. In Curate, a + now adds an empty place and the editor chooses what goes in it. For trends and posts that works with what the pipeline already has. Reports had no way to say which ones the front page shows, and a member could get at most one.\n\n## Change\n\n- `front_page_picks` holds, per section (`memberReports`, `publicReports`), the report slugs an editor chose, in order.\n  - `getFrontPicks()` / `setFrontPicks()` refuse an unknown report, a repeat, or more than the band holds.\n  - The site shows the chosen reports first, then fills the rest of the places in the reports' own order.\n- `POST /site/front` takes `{sizes, picks}`, either one optional.\n- `frontPicks` goes out on `/site/trends` and in the projection's trend payload.\n- A member's reports now go up to 4, like a visitor's. The site gives the member home the same report band as the visitor home.\n\n## Checked\n\n- `test/front-page-order.test.mjs`: 16 of 16 pass. The new tests cover:\n  - picks: the stored order, refusals, and that they travel with the overview;\n  - the member report range.\n- Full suite: 1159 of 1165 pass. The 6 failures are `report-render`, which fail the same way on main here because the workbench has no PDF tools.\n",
+            "branch": "workbench/pipeline/front-report-picks",
+            "title": "Front page: editors choose which reports it shows, members up to four"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013155609-9f56fa"
+}

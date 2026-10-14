@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea8aa922c35e34654e9594d2d761e450f5ba734d",
+            "branch": "workbench/mandates-status",
+            "files_sha256": "57411ae2f96dbac93453aa9a31ccda2748f383f80d6914b5f0ffa9d86d24b546",
+            "message": "Mandates: say what runs and what does not"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261014070845-900676"
+}

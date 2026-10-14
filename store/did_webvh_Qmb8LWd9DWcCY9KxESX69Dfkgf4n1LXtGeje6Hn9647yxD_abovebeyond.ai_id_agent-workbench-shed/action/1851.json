@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The same changes hoet.be got today (hoet-eyewear #73 to #77), on cabrio-eyewear.be, which shares the codebase.\n\n## Stockists map in greyscale\n\n- The map style takes the saturation out of every feature, so the tiles arrive grey and the labels stay crisp; the loading background is a neutral grey.\n- A dark grey pin with a white edge replaces Google's red marker.\n- Map type (satellite imagery) and Street View (the orange pegman) are off: the two things a style cannot reach. Zoom and fullscreen stay.\n- A `grayscale(1)` filter on the map container is the guarantee for whatever Google draws into it, on desktop and on a phone.\n\nUnchanged: markers, the info window on click, the country/city filter.\n\n## One photo in the order flow, large, with the lightbox\n\n- The full order page and the order window show one photo: the frame's order-overview photo (the \"Tonen op besteloverzicht\" toggle in the shared Studio, `showOnIndex`), or its first photo when none is flagged. The cart already used this photo through `frameImage`; the new `Content::orderPhoto` names the rule.\n- The order page's photo column grows to 1.5fr and the photo is not cropped to 4:3; the order window shows one 420px photo instead of the two-by-two tiles. The public frame page keeps its gallery.\n- \"Vergroten\" with an expand icon sits in the corner of the photo (order page, order window, frame page); a click opens the lightbox. The enlarged photo carries \"Sluiten\" in the same corner, and a click on the photo closes it. The lightbox listens once on the document, so the fetched order window works too.\n- One new icon (`expand`), translations for the two words in en, fr and de.\n\n## Verification\n\n- `VerkooppuntenScriptTest`: the map style, the controls, the pin and the CSS filter. `ConfiguratorTest`: the overview photo and not the detail photo on the page and in the window, the fallback to the first photo, the lightbox link, the labels and the close on the photo.\n- Preview with a seeded dealer in headless Chromium at 1280px and 390px: order page, lightbox, order window and its lightbox; a click on the enlarged photo closes it; no page errors.\n- Pint, PHPStan and the suite pass. `BuildStampTest` fails in a git worktree only; it passes in CI.\n",
+            "branch": "workbench/grey-map-and-order-photo",
+            "title": "Grey stockists map and one large order photo, as on hoet.be"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20261012134058-1455a4"
+}

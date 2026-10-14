@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P3\nSummary: Nightwatch #65 reported one `StorageUnavailable` from the photo upload job: the bucket refused the write of an original twice in a row. The job's retry took it over and no upload was lost, so this is a transient bucket hiccup that shows up as an alarm.\n\n## What happened\n\nOn 2026-10-13 at 12:21 UTC (one occurrence, first seen = last seen) `ProcessVehiclePhoto` failed one attempt with:\n\n> App\\Support\\StorageUnavailable: Unable to write file at location: 23482/car_image_1.jpg. the bucket did not accept the write\n\nThat message comes from `ProcessVehiclePhoto::put()` (`app/Jobs/ProcessVehiclePhoto.php`): `$disk->put()` answered false, it was asked again after one second, it answered false again, and the job threw before deleting the tmp file. This is the guard added in \"A slow bucket is not a missing photo\" (d4bb70f9, 4 October 2026, R S1-6.36), working as intended.\n\n## Why no photo was lost\n\n- The production worker runs with `--tries=3` (CUTOVER.md), and the tmp file stays until all three sizes are written, so the next attempt starts from the same file.\n- The platform's failed-job count (stocklist_errors, measured 2026-10-13 14:34 CEST, 7-day window) shows 0 failed jobs today and no `ProcessVehiclePhoto` in the last 7 days. Had all three attempts failed, `failed()` would have removed the row and the job would be listed there.\n\n## What could still be better (not done, needs a decision)\n\n1. The job has no `$backoff`, so the next attempt runs right away against a bucket that just refused twice. A short backoff (e.g. 10 s, then 60 s) would make the next attempt more likely to land.\n2. Every failed attempt reaches Nightwatch as an \"Unhandled\" exception, even when a later attempt succeeds. Releasing the job on `StorageUnavailable` while attempts remain, and only throwing on the last one, would leave only real losses as alarms.\n\nSource: Portal mail:18 (a forwarded Nightwatch notification).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P3"
+            ],
+            "title": "Photo upload: a bucket write refused twice shows up as an unhandled Nightwatch alarm"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261013123501-73daa1"
+}

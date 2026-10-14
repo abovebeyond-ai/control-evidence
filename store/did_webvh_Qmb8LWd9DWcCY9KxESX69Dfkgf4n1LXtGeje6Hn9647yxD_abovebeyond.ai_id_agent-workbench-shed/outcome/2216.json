@@ -1,0 +1,16 @@
+{
+    "action": "1203091c2d078c84f2b0ebc12edf0ce7",
+    "effect": {
+        "detail": {
+            "base": "5da66db71e872b165200511fff1eff4d9206e47e",
+            "branch": "workbench/share-current-insights-2",
+            "commit": "950a1cccb5a49f2169e0ce39356feb045e39aabd",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2214,
+    "verdict": "ALLOW"
+}

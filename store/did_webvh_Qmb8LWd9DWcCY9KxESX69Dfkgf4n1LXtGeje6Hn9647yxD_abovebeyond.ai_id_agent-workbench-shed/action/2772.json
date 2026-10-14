@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "475eb8927494944b7a7631888a436536e1754dd4",
+            "branch": "workbench/policy-digest",
+            "files_sha256": "970a19ab2b970fda1e3e9966699bc1b1090b0439004501aaaa1e125760b49ca8",
+            "message": "policy sign: the token signs a short head that names the body by hash"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261013195339-73e088"
+}

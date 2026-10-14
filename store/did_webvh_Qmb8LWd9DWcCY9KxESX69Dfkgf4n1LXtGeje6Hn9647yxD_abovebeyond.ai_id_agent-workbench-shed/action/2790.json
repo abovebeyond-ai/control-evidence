@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b9738ff6af9936f6f6fe11fee9b986ba10dd068e",
+            "branch": "workbench/pipeline/deploy-rejections-visible",
+            "files_sha256": "a849a231a2e6779af0a20cff6fd9f82020aa6da63b7cb37a27c7ab02a0574cc6",
+            "message": "The wall says when a merge is not going out"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013195509-eb60b8"
+}

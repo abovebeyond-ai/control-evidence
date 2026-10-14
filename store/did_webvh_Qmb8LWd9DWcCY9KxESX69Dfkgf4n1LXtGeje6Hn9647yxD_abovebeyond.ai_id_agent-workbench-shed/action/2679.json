@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "46560ca11f6f2f3bb829a749bc3301c6fea866a2",
+            "branch": "workbench/pipeline/front-report-picks",
+            "files_sha256": "4a79b8effec09cffde663cd8220a6dcdec60eee37417448975a27b6c3a31bda7",
+            "message": "Front page: editors choose which reports it shows, members up to four"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013155609-9f56fa"
+}

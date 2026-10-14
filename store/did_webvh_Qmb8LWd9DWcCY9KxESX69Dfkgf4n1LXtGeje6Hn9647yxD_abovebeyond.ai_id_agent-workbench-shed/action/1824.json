@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "508c592d6e54720dd20375c4ba881c9c9dcf2bfb",
+            "branch": "workbench/order-overview-photo-label",
+            "files_sha256": "54990934be0c55f80843673a4b526797d670b3409d5e7b348fc1e7d15036820f",
+            "message": "Rename the photo toggle to \"Tonen op besteloverzicht\""
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261012121153-adcce9"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "21585b0b397fca489bd6aab17d2024c2754c395c",
+            "branch": "workbench/booking-patterns",
+            "files_sha256": "b2b0cac579a78ed1ecd5e92cd6644dff1898eefdf0164e6b1f62283d3e3fa12b",
+            "message": "Replay GLK's costing to measure how well the past predicts sites, machines and products"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261014070836-15ba68"
+}

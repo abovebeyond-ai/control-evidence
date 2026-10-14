@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "35fc18de3ebe79a8d52c4f3a02ae800bf88fc88c",
+            "branch": "workbench/pipeline/front-page-order",
+            "files_sha256": "0e8b94dabc0631558cd160982f3868690efcf4ecad58b98f89b99d9517974bdd",
+            "message": "Editors order the front page trends and pin the lead post; starters page and search"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261012193958-a41409"
+}

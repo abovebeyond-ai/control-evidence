@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The sheet of a sold vehicle still offers quotes, order forms and a test drive under Acties, while an order form is refused on save; the menu should not offer them, and the locked status switches should look locked.\n\nFrom the test round of 12 October 2026 (Portal mail:14, item 7).\n\nOn the sheet of a sold vehicle the Acties button still opens the full menu: quote, quote without damage, order form, order form without damage, test drive. A quote can be made; an order form opens and can be filled in, but saving it answers that the vehicle is already sold. That is confusing: the screen invites an action the platform then refuses.\n\nThe only thing the business allows on a sold vehicle is copying it, and that lives in the vehicle list, not in this menu. So the Acties menu has nothing useful to offer on a sold vehicle and should not be shown.\n\nThe same sheet shows the status switches \"In optie\" and \"Klaar voor keuring\" locked (they cannot be changed, which is right), but the switch itself keeps its full colour, so it looks live. It should read as inactive.\n\nBoth doors of the sheet (the Livewire sheet in `resources/views/ownstock/vehicle_form_preview.blade.php` and the classic header in `resources/views/ownstock/header.blade.php`) carry the same menu.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "A sold vehicle's sheet still offers quotes, order forms and a test drive under Acties"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012102351-250ea1"
+}

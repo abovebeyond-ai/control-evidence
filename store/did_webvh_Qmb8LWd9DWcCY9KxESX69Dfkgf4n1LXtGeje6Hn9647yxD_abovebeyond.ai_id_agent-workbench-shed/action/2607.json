@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "gentells.com's front page showed a fixed number of posts, trends and reports: six posts under the lead, six trends, one report for a member, three for a visitor. The numbers were written into the site, so editors who order the trends and pin the lead in the Studio could not choose how much of each section a reader gets.\n\n## Change\n\n- `front_page_sizes` holds the editors' size per section. `getFrontSizes()` returns every size, falling back to the old amounts. `setFrontSizes()` takes only the values the site's layout carries:\n  - posts under the lead: 3, 6, 9 or 12;\n  - trends: 3, 6, 9 or 12;\n  - a member's reports: 0 or 1;\n  - a visitor's reports: 1 to 4.\n- A visitor's three posts are a fixed design, so they are not a setting.\n- `POST /site/front {sizes}` sets them from the Studio and pings the site's trends projection, as the trend order does.\n- `GET /site/trends` adds `front` and `frontChoices`. The projection's trend payload adds `front`.\n\n## Order\n\nThis is safe to merge first: the site and the Studio ignore the new fields until their own PRs land.\n\n## Checked\n\n- `test/front-page-order.test.mjs`: defaults, a partial set, and a refused value changing nothing. 11 of 11 pass.\n- Full suite: 1152 of 1158 pass. The 6 failures are `report-render`, which fail the same way on main here because the workbench has no PDF tools.\n",
+            "branch": "workbench/pipeline/front-sizes",
+            "title": "Front page sizes: editors set how many posts, trends and reports gentells.com shows"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013122315-420151"
+}

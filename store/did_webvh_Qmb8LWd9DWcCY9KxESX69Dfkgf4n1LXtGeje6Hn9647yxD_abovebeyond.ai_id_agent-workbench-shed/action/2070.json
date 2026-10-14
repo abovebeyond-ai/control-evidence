@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b49667858a5283765f40742d1d976b09e4affb43",
+            "branch": "workbench/nav-polish",
+            "files_sha256": "099947b1e5e932839838ea317623d009edfacc729388f4c46a0af10af55400f5",
+            "message": "Category navigation: hide empty categories, icons in the bar and dropdown"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013054017-c1b72c"
+}

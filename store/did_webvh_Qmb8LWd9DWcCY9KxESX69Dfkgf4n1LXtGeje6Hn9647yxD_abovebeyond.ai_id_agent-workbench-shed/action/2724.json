@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1dbe069893dd109c7f52c8b8690b87667b21a5b1",
+            "branch": "workbench/pipeline/judge-sample-tenth",
+            "files_sha256": "216a77841719bbfcabc1ad1e500cef1762c089e9cbdcdfd99f6913565c84fe93",
+            "message": "The classify judge sits on a tenth of runs"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013191619-e72628"
+}

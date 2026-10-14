@@ -1,0 +1,16 @@
+{
+    "action": "3a1a68aa15a4a8a460f8103a154e01ab",
+    "effect": {
+        "detail": {
+            "base": "50039ecc6e2104a7805135ca07d0adbc4223914f",
+            "branch": "workbench/grey-map",
+            "commit": "38677b54cce3d592d127f37c2f564add5dca07d8",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1812,
+    "verdict": "ALLOW"
+}

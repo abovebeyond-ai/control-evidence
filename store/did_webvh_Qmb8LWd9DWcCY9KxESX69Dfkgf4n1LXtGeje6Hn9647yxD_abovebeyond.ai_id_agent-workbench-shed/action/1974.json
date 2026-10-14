@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5fbf2a243cf168401e291e58bb3f5bc0b12b482b",
+            "branch": "workbench/home-video",
+            "files_sha256": "113ba808241eddac63f0002806808f091d21119a5e36a2855894cdfaf6f16343",
+            "message": "Add a video block for a film with sound in the page flow"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261012192203-095b3b"
+}

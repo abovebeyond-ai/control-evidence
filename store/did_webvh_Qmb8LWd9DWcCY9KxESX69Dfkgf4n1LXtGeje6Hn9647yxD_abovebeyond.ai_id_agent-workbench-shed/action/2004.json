@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "78c9a0c44865c16c6d7cbfa39241d3d7990a0f71",
+            "branch": "workbench/control-photos-sample",
+            "files_sha256": "5c92cfbb06eda4408ccdb5be79d7550b3532492a399fadbf4aa7a7a9168f105c",
+            "message": "Add photos_sample, a read tool for the cut-out trial under its own mandate kind"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012194753-19be77"
+}

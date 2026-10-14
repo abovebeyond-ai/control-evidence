@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "13c2c6545d1ecebffb4d4fa5ef22411376632d7d",
+            "branch": "workbench/pipeline/eval-answer-position",
+            "files_sha256": "b0e6746963367fc2358f36acb4bf836f3353c2208b5f90ff4506f40b0e86e000",
+            "message": "Score a model's answer only against the gold row it names"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013100722-b00c91"
+}

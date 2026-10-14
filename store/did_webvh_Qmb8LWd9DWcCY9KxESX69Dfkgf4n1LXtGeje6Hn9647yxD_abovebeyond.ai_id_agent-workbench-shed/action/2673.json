@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The home pages showed a fixed number of posts, trends and reports, written into `HomeController`. Editors now set these amounts in the Studio. The pipeline sends them with the trends (pipeline PR \"Front page sizes\").\n\n## Change\n\n- `Projection::reconcileTrends()` stores the payload's `front` as `ProjectionState` `front`. A payload without it leaves what is stored.\n- `FrontSizes::read()` checks each value against what the layout carries and falls back to the old amount otherwise:\n  - posts under the lead and trends: rows of three;\n  - a member: one report band;\n  - a visitor: a lead report and up to three beside it.\n- `HomeController` uses the sizes for:\n  - a member's posts under the lead, trends and report (none hides the band);\n  - a visitor's trends and reports.\n- A visitor's three posts stay three, because that row is a fixed three-column design.\n- `home.blade.php` no longer takes six trends a second time.\n\n## Order\n\nThis is safe before or after the pipeline PR: without sizes the pages are as they are now.\n\n## Checked\n\n- `tests/Feature/FrontSizesTest.php`: defaults, sizes applied to both homes, out-of-range values falling back, and the reconcile storing and keeping the sizes.\n- Full suite: 430 of 434 pass. The 4 that fail need a built stylesheet or a real checkout (BuildStamp, Icons, Ticker) and fail the same way in any worktree here.\n\n## Since the first draft\n\n- The sizes take any whole number in range, not only a few choices:\n  - posts under the lead: 0 to 24;\n  - trends: 1 to 24;\n  - a member's reports: 0 to 1;\n  - a visitor's reports: 1 to 4.\n- A live post an editor took off the front page (`off_front_at`, new column, carried by the projection) is skipped on both homes (`Article::onFront`). It stays on /posts. Tests cover both, 21 of 21 in the touched files.\n",
+            "branch": "workbench/site/front-sizes",
+            "title": "Home pages show as many posts, trends and reports as the editors set"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261013154453-ccb92c"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:16",
+            "note": "Issues #1004 (migrate off remove.bg API before 1 Dec 2026 09:00 CET, P2) and #1005 (still 0.25 credit per preview call, answered). Not built: the migration needs a decision on the provider (Leonardo.Ai is where remove.bg points, USD per image, no bg_image_file) and who opens that account and holds the key. The pay-as-you-go switch is an account action for the garage; PAYG credits expire 1 Dec 2026. The mail carried the garage's remove.bg password in clear: not used, should be changed.",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261012180412-b7c2b1"
+}

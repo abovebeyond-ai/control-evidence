@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "442a83d9641cd95fc859c3a038e00cf4d0f09526",
+            "branch": "workbench/share-reading-page",
+            "files_sha256": "3083faf5df751cfb8f7310bf0addb37879cc81186e1f4ba5879f81ec395f4e88",
+            "message": "Shares: a reading page that reads like a document, not a settings screen"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013084522-4427af"
+}

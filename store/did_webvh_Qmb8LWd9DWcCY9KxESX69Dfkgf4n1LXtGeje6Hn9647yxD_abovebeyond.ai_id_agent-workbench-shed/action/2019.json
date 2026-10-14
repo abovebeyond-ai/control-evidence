@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Stocklist platform's new read `photos_sample` (stocklistdealer-eu/platform #1007) is not an aggregate: it serves real vehicle photos with remove.bg's cut-outs and the dealer backgrounds, for the trial of the own cut-out service, under its own mandate kind `stocklist.photos_read`.\n\nThe systems MCP took every Stocklist tool for a count and appended \"Aggregates only: no garage names, no people, no cars\" to its description. It now reads the `kind` the platform's menu gives each tool and describes the sample as what it is: real photos with their plates, two-hour addresses, no garage names, under `stocklist.photos_read` on the same 30-day word. The bundled menu snapshot carries the tool for a machine that never reached the platform, and the README has the row and a paragraph on the one read that is not a count.\n\nTest: a menu with `usage` and `photos_sample` yields the aggregate sentence on the one and the photo sentence on the other. `node --test mcp/systems.test.mjs`: 7 of 7.\n",
+            "branch": "workbench/photos-sample-tool",
+            "title": "Describe Stocklist's photo sample by its own kind in the systems MCP"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261012194847-2d00d7"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6a7b91bdeaf38f19271389cefb58b2bc8012af7f",
+            "branch": "workbench/photos-sample-tool",
+            "files_sha256": "18fd0faa31b50e79caccaad96be5b24b7937c69c1b6a5a53092cdc4c6f3decbf",
+            "message": "Describe Stocklist's photo sample by its own kind in the systems MCP"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261012194847-2d00d7"
+}

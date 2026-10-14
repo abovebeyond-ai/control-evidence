@@ -1,0 +1,16 @@
+{
+    "action": "a8953b996a423529f17f7c84d3bd7563",
+    "effect": {
+        "detail": {
+            "base": "a90bedfdd6bbf7b6ed8eb6b3688dde720a6389d8",
+            "branch": "workbench/pipeline/one-dead-login",
+            "commit": "550c20f0ed91f62c0681fabab48357034239cb8f",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2802,
+    "verdict": "ALLOW"
+}

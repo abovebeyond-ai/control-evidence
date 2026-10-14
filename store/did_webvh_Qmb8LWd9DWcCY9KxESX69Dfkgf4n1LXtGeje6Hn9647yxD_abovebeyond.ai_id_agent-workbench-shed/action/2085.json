@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\nForge runs the site on PHP 8.5, and the lock file already resolves packages that need 8.4.1 or newer. `composer.json` now states the version that is actually deployed (`\"php\": \"^8.5\"`), so an older server refuses the install up front instead of breaking halfway. The lock file carries the new platform requirement; no package changed. CI tests on 8.5 only.\n\nNo code change: the suite was already green on 8.5 (23 tests, 161 assertions) and 8.5 raises no deprecation notices.\n\n## After merge\n\nNothing on the server.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/php-85",
+            "title": "Require PHP 8.5"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013061001-74180d"
+}

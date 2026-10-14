@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "51f6e7c929a12f148dc68505fd949ef39717884f",
+            "branch": "workbench/sold-vehicle-copy",
+            "files_sha256": "df3d017f24a85186f3264fec7d1ca3224a10d37d0f6d5f8b5dab81d873f860dd",
+            "message": "A sold vehicle's sheet keeps only the copy, and the quote route refuses it"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261012171655-9bb5b2"
+}

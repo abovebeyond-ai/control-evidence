@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\nTwo finishing touches on the vehicle list, following the Stocklist dealer sites.\n\n- **Sticky filter panel.** On wide screens the panel stays in view while the list scrolls (`lg:sticky lg:top-6`). When the panel is taller than the viewport it scrolls within itself, with a thin scrollbar, so the lower filters stay reachable.\n- **Skeleton cards while loading.** Changing a filter or category replaces the cards with grey placeholders of the same dimensions (6 to 12, matching what was on screen); loading the next page appends one placeholder per card that is on its way. The list no longer fades and the layout does not jump. The placeholder is a `<template>` in the view, cloned by the script; `aria-busy` marks the results while a request runs, and the pulse animation respects reduced motion.\n\nChecked in a headless browser on the local stock: the panel sits at 24 px after scrolling, 12 placeholders during a brand filter, 24 during the next page, none left afterwards, no script errors.\n\n## After merge\n\nDeploy; `npm run build` is part of the Forge deploy script.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/list-polish",
+            "title": "Vehicle list: sticky filter panel and skeleton cards while loading"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013060948-8ead79"
+}

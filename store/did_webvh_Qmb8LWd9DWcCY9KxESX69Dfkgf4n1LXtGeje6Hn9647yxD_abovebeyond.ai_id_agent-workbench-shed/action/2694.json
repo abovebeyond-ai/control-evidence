@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #55. The + at the end of a section added a place and filled it with whatever came next, so the editor did not choose what went in. Reports had no + for a member, and their \u00d7 only sat on the last report.\n\n## What it does\n\n- **The + adds an empty place, outlined in pencil, listing what can go in it.** A click fills it; Cancel or Escape leaves the page as it was.\n  - **Trends:** the ten next in line, any of them.\n  - **Posts:** the next posts by date and the ones taken off the front page. The front page goes by date, so choosing an older post moves the newer posts in between off the front page. They stay on /posts, under \"Off the front page\", and the toast says how many moved.\n  - **Reports:** every report not on the page.\n- **Reports now have a + for a member too (up to four), and a \u00d7 on every report.** The order the editor builds is kept as the section's chosen reports (`frontPicks`).\n- Every change redraws at once, holds while it saves, and has an Undo.\n\n## Needs\n\n- Pipeline: `frontPicks` and `POST /site/front {sizes, picks}`.\n- Site: the chosen reports, and the member home's report band.\n\n## Checked\n\n- `npm test`: 44 of 44 pass. That includes `frontReports` putting the chosen reports first and skipping one that no longer exists. `npm run build` is clean.\n- Local preview against a stand-in pipeline (headless Chromium):\n  - + on a member's reports: the chooser listed the three not shown. Choosing the fourth filled the place on the same frame, and one `POST /site/front` went out with `memberReports: 2` and the two slugs.\n  - \u00d7 on the first report left the other.\n  - On trends, choosing the third in line placed it as trend 7.\n  - On posts, choosing a post placed it.\n  - Escape closed the chooser.\n",
+            "branch": "workbench/studio/front-choose",
+            "title": "Curate: a + adds an empty place to choose into, and reports can be chosen and removed one by one"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013155655-df49f0"
+}

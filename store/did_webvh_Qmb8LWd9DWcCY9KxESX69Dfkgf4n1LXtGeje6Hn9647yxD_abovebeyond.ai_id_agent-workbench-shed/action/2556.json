@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "26ca74d744eeb1ecbb2958269884db3dd76c7efa",
+            "branch": "workbench/handlings-group-wording",
+            "files_sha256": "5ac64cab8d57021fe9fdf3c827297cbfbe3a13a4c46c531a1aeafd877b7b47a7",
+            "message": "Name the handlings group after what it counts; give the bidding sentence its change"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261013111338-4ba341"
+}

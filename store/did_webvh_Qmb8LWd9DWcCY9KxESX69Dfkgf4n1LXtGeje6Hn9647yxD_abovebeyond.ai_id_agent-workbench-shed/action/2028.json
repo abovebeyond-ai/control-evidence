@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1f61b176669636369b39ea20216f7c2d9087e254",
+            "branch": "workbench/detail-buybox",
+            "files_sha256": "6ef9f62f08599a8c7021abf2e237586884b831f73735278d9f4254f0bdcba6be",
+            "message": "Detail page: sticky buy box, seller card, equipment list, mobile action bar"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261012195717-72b225"
+}

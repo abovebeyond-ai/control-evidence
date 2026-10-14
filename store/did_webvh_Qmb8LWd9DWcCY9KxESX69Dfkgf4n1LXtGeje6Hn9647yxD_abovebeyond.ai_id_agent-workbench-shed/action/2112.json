@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "32a0ef2e64fe821d09c5b865414e1d514706667c",
+            "branch": "workbench/shares",
+            "files_sha256": "79c444154a956e414a7039848ee5bbf88e905edc4bab228a40b4da22e111a539",
+            "message": "Add shares: a document behind a link and a passphrase, every open on record"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013070530-393a28"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d4c5593d9f44b65aabe4011a9f5e84f727e82fdf",
+            "branch": "workbench/pipeline/enrich-backfill-ends",
+            "files_sha256": "0f88954f15d31c6538a188011e7107135bfd8fd34ac55ed58b9f5d076bc7be1b",
+            "message": "The enrich backfill ends: only signals enrich never read, and what it bought"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261013152140-b7edbd"
+}

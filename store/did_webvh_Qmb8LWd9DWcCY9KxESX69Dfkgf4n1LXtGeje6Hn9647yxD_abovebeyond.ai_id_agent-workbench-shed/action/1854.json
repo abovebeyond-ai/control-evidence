@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dc4fe3833555e49831698d518943697f3a059411",
+            "branch": "workbench/version-the-script",
+            "files_sha256": "9329def3285e2fac33049edbb2acdc3ffd10c5d3af0f1fe96b4b6769d92357d6",
+            "message": "Version the script address, like the stylesheets"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20261012134609-7b6b84"
+}

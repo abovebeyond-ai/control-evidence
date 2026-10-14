@@ -1,0 +1,16 @@
+{
+    "action": "716ae2f750e11a0df220960a4b24bc66",
+    "effect": {
+        "detail": {
+            "base": "21585b0b397fca489bd6aab17d2024c2754c395c",
+            "branch": "workbench/booking-patterns",
+            "commit": "233cce90a5e0d6500f1313dd3efefc592cf2ff2c",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2829,
+    "verdict": "ALLOW"
+}

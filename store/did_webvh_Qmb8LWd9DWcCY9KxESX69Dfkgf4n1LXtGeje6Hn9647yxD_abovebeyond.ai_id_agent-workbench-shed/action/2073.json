@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\n- **Empty categories disappear from the navigation.** The category bar on the list page, the dropdown under \"Bedrijfswagens\" and the tiles on the home page offer only categories that have stock. Today that drops Auto and Brandweer, both at 0. The pages themselves stay reachable by URL, so nothing 404s. On wide screens the home tiles share the width however many remain.\n- **Category icons in the bar and the dropdown.** The icons from the home tiles now sit in front of each category in the bar (white on the active pill) and in the dropdown, so the three places look like one set.\n- The counts come from one cached query (five minutes, like the brand list) shared by the three places; the list page previously ran its own.\n\nTests: a new feature test covers the bar, the dropdown, the home tiles and the reachability of an empty category. Suite: 26 tests, 177 assertions. Checked in a headless browser on the local stock.\n\n## After merge\n\nDeploy; nothing else.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/nav-polish",
+            "title": "Category navigation: hide empty categories, icons in the bar and dropdown"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013054017-c1b72c"
+}

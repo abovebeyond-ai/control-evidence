@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #213. Editors now choose which reports the front page shows, not only how many (pipeline: `frontPicks`), and a member's home can show up to four.\n\n## Change\n\n- `Projection::reconcileTrends()` stores the payload's `frontPicks` as `ProjectionState` `front_picks`. A payload without it leaves what is stored.\n- `FrontSizes::reports($section, $size)` gives the chosen reports in their order, then the rest in the order the home page always used: what is really there before what is promised. A slug that no longer exists is skipped.\n- The visitor home's report band (a lead report full width, up to three under it) moves to `partials/report-band` and is used on both homes. The member home showed a single feature band. It now shows the same band, headed \"The report\" for one and \"The Reports\" for more.\n- A member's report count goes up to 4.\n\n## Checked\n\n- `tests/Feature/FrontSizesTest.php` covers the chosen reports first on both homes, with an unknown slug skipped.\n- Full suite: 433 of 437 pass. The 4 that fail need a built stylesheet or a real checkout (BuildStamp, Icons, Ticker), as in any worktree here.\n",
+            "branch": "workbench/site/front-report-picks",
+            "title": "Home pages: the editors' choice of reports, and a member's report band takes up to four"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261013155630-a15226"
+}

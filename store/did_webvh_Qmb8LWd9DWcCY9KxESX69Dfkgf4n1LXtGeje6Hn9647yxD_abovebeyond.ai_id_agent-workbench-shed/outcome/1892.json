@@ -1,0 +1,16 @@
+{
+    "action": "d9b1196d4ebd7f60105637d6a32d650a",
+    "effect": {
+        "detail": {
+            "base": "51f6e7c929a12f148dc68505fd949ef39717884f",
+            "branch": "workbench/sold-vehicle-copy",
+            "commit": "807cc0769ee3219876174bbd148b3307867b7668",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1890,
+    "verdict": "ALLOW"
+}

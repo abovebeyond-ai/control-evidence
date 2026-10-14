@@ -1,0 +1,27 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "Nieuwe website (Laravel)",
+                    "url": "https://github.com/ShaneDeconinck/schoutteet"
+                },
+                {
+                    "kind": "staging",
+                    "label": "Staging",
+                    "url": "https://schoutteet.on-forge.com"
+                },
+                {
+                    "kind": "production",
+                    "label": "Huidige site",
+                    "url": "https://www.trucks-schoutteet.com"
+                }
+            ]
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261012174933-14d37d"
+}

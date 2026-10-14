@@ -1,0 +1,16 @@
+{
+    "action": "4f5ef3d62507b5962c68e95ebd7626d2",
+    "effect": {
+        "detail": {
+            "base": "762445b120ced7cb1289fc7f24d93f4d9a111b5d",
+            "branch": "workbench/brand-map",
+            "commit": "745597efba302b8699f31e62f23478dbb156087e",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2094,
+    "verdict": "ALLOW"
+}

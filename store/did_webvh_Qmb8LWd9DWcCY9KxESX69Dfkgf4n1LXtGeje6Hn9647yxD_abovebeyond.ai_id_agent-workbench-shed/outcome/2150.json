@@ -1,0 +1,10 @@
+{
+    "action": "c7e7f92c8dadc345ce34469c75369d8a",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "out of schema: no parameter schema is registered for portal.share",
+    "step": 2148,
+    "verdict": "DENY"
+}

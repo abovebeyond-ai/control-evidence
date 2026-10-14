@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6d81bd979188a5b2e4bac612c8a8f1fa891cf5b0",
+            "branch": "workbench/home-stock",
+            "files_sha256": "7101a75a7620f7923513342781128d6d8ae75529dd2d10c991d3ab633b9918f5",
+            "message": "Home: eight newest vehicles in smaller cards, then a row per category"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013100643-30b753"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "717db27ed017961004c782bb32ddd21e7ea45f6e",
+            "branch": "workbench/studio/post-drag-steady",
+            "files_sha256": "36ddc44fb051e3529680a1b49d79eeb2db16e405f71d0b226a4d0400b2e500e2",
+            "message": "Front page: a post dropped on the lead stays there while it is saved"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013103601-1230a5"
+}

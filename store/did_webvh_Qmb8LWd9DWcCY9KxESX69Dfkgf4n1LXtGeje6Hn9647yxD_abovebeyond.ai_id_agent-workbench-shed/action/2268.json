@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "df89ac392716e799f41e52d9018a4c2d9a5242a8",
+            "branch": "workbench/share-rich",
+            "files_sha256": "f54967d294051a8d7b1a7c09edfdc486a8b0f8cc168c716dcf58b3cf11b18a89",
+            "message": "Shares carry a document in HTML, kept to what a document needs and nothing that runs"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013092728-b74cac"
+}

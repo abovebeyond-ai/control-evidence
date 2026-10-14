@@ -1,0 +1,16 @@
+{
+    "action": "6782abcff187cd398ede05556c9e95f4",
+    "effect": {
+        "detail": {
+            "base": "1dbe069893dd109c7f52c8b8690b87667b21a5b1",
+            "branch": "workbench/pipeline/judge-sample-tenth",
+            "commit": "39c10bb048f0711e1ef822d5e81358011f16225f",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2724,
+    "verdict": "ALLOW"
+}

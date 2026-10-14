@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3c4b4da5a3c6aa53ab31a1015c1505470254fbf4",
+            "branch": "workbench/costume-finish-choice",
+            "files_sha256": "4d4653acfeb7a3543b4cd8b40c5de5f621c6e932c112213130c34e66bfd5c98a",
+            "message": "Ask for the finish on frames that come in more than one"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261013111257-6f5b96"
+}

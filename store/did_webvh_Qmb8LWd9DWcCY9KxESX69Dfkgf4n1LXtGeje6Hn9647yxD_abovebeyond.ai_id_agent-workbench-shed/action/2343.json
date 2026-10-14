@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Supersedes #406.\n\nThe accordion line on a share's reading page was bold all through, which left the author no way to point at the key phrase. The line is regular now and the bold inside it carries the emphasis. A span with the class drop on the line is an aside in a lighter ink under it (who drops off at this layer). Stylesheet only.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/share-summary-weight-2",
+            "title": "Shares: accordion line regular, key phrase bold, a lighter aside"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013095510-1c25ae"
+}

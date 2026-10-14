@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a307edec059b7c3970179a73300be1fa531c6c0a",
+            "branch": "workbench/gate-second-question",
+            "files_sha256": "6356e3b8ff69f5fa2a97aaaaaceefe0935f8beae380e52123f308c4c412dd851",
+            "message": "Ask the gate a second, finer question before cutting"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261013053538-533895"
+}

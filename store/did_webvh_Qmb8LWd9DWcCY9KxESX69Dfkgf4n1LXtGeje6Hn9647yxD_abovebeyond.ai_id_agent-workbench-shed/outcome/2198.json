@@ -1,0 +1,16 @@
+{
+    "action": "c10f3e3f63bece3e4f9dfc17886e00e1",
+    "effect": {
+        "detail": {
+            "base": "442a83d9641cd95fc859c3a038e00cf4d0f09526",
+            "branch": "workbench/share-reading-page",
+            "commit": "78f8fd114f9403c5d0542e79a191ba30039e7c3d",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2196,
+    "verdict": "ALLOW"
+}

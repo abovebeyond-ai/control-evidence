@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The DMS feed is a shared stock: the vehicle numbers Schoutteet enters itself carry an S prefix (S100016 and up, 36 today), the rest is partner stock. This marks each vehicle as own or not and puts the own vehicles first in every list and among the similar vehicles, within the chosen sort.\n\nEverything stays presented as one stock: no label on the cards, no \"partner\" wording anywhere. The only visible difference is one line on the detail page, \"Bezichtigen: In Oudenburg-Roksem\" for own vehicles and \"Op afspraak\" for the rest, and a filter \"Meteen te bezichtigen in Oudenburg\" under the extra filters. The DMS location is the shop for every vehicle, so it is kept only for the own stock.\n\nThe S-prefix rule is a config value (`twos.own_number_pattern`); if the marker turns out to be something else, that is the one place to change.\n\nAfter merge: `php artisan migrate --force` and one `php artisan vehicles:import --source=api --prune`.\n\nTests: unit (S-number is own, keeps its location; partner stock has none), feature (own first, no label, the filter and its chip, both detail-page wordings).\n",
+            "branch": "workbench/own-stock",
+            "title": "Own stock first, partner stock worded quietly"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261012195251-4eab80"
+}

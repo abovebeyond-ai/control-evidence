@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f86d4440c1a3d470f9d92215ffd8352d95cee6d3",
+            "branch": "workbench/demo-prep",
+            "files_sha256": "0da451ea32651326e1b8bc5eb3d37808804ee8e3df677b40e077c81b91c79cab",
+            "message": "A read door for the owner's agents: health, Bouwsoft, sites, sync preview, worksheets"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261013192259-19c260"
+}

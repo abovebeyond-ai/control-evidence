@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A layer word (reading for 30 days, repairing for today) is issued with the layer's kinds of that day. When a system's layer gains a kind afterwards, the standing word does not carry it, and nothing said so: on 2026-10-13 `stocklist.photos_read` joined Stocklist's read layer (#396) and the project page kept showing reading as admitted for three more weeks, while the gateway would refuse the new read. The same gap existed for a repository linked after a period for proposals and was closed on 2026-09-16 with `missingRepos()`; this does the same for kinds.\n\n- `WorkbenchAdmission::kinds()` and `missingKinds(Project)`: the kinds the layer names today that the capability does not. `coversProject()` judges a layer word on its kinds and a period on its repositories, since a layer word names systems, never repositories; `repos()` now leaves a system resource (`stocklist:platform`) out.\n- The project page marks such a read or repair word `data-state=\"stale\"`, says which kind was added since, and offers the passkey touch again next to \"withdraw\".\n- The owner's waiting list (`OwnerState::waiting`, the mobile and app screens) names it as \"asks again to read: \u2026 was added after you admitted it\", with the project page as the door.\n- `/portal/grants` marks the word stale like a period that misses a repository.\n- Dutch strings added; test in `ReadLayerTest` covers a fresh word, an older word missing a kind, and that a period for proposals is judged on repositories only.\n\nFull suite: 726 of 727 pass; `BuildStampTest` fails in every worktree (no build stamp), unrelated.\n",
+            "branch": "workbench/stale-layer-word",
+            "title": "Say when a layer word misses a kind its layer gained since"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013053044-012d14"
+}

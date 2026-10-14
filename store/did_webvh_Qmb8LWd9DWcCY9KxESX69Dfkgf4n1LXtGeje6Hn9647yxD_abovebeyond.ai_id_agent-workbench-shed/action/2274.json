@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "60d6c4b1805d8a8fb5416720d90ccf003d92e931",
+            "branch": "workbench/nederland-mobiel-refusal-quiet",
+            "files_sha256": "1ed8eca87aa8917e7fc14de187f43ee4f80208fc104b4c9680fbf2bb7b0b2e46",
+            "message": "Keep a Nederland Mobiel refusal out of the alarm layer"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261013093009-20ce40"
+}

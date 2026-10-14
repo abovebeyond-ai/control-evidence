@@ -1,0 +1,16 @@
+{
+    "action": "01fd31403f0893ce6deadb0dd8fdceec",
+    "effect": {
+        "detail": {
+            "base": "798f505cb1714d29cac35d29434a5d536fbfbddc",
+            "branch": "workbench/studio/front-page-posts-drag",
+            "commit": "921290ef6d970967bc2ed60d19a00833dc26db9e",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2487,
+    "verdict": "ALLOW"
+}

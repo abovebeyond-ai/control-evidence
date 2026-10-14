@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Enrich archives a signal after three failed runs, so that a signal it cannot digest is not fed to it forever. Every error counted as a failed run, including the ones that had nothing to do with the signals: every account refusing its login, or every account at its usage limit. Each such run added a failure to every signal in the batch, retried three times against the same wall, and then moved on to the next batch to do the same. Usage limits come round regularly, so good signals have been archived for an account problem.\n\nThe monitor made it look larger than it is: \"enrich give-ups\" counted every signal that had ever failed a run, including those that went through on the next one, and reported them all as archived.\n\n## What changes\n\n- `isAccountRefusal(err)` in `models.mjs`: true for the `authFailure` and `rateLimited` errors `callCli` throws once every account has refused.\n- `enrich.mjs`: on such an error it stops at once, adds no failure to any signal, and leaves the rest of its claim for a later run. A run that ends with no results now releases its claim instead of waiting for it to expire.\n- `monitor.mjs`: `enrichGiveUps` counts the signals enrich actually archived (status archived, with the give-up note).\n- `bin/enrich-restore.mjs` with `countEnrichGiveUps()` and `restoreEnrichGiveUps(limit)` in `db.mjs`: returns archived give-ups to classified, strongest first, with one failure to spare, and marks them `[enrich restored]`. A signal that really is the problem is archived again after its next failed run, so a restore costs at most one run per bad signal. Each signal is restored at most once. Without `--apply` it only counts.\n\n## After merge, on the box\n\n```\nnode bin/enrich-restore.mjs                 # how many there are\nnode bin/enrich-restore.mjs --limit 100 --apply\n```\n\nStart with a small batch and read the enrich cost on the Observatory before the next one.\n\n## Tests\n\n- `test/enrich-account-refusal.test.mjs` runs `enrich.mjs` against a fake CLI that refuses every login: the seven signals stay classified, unclaimed and without a failure, and only the first batch is attempted. The same test fails on the previous `enrich.mjs`. It also covers `isAccountRefusal` and the restore (limit, one failure to spare, never twice).\n- `test/monitor.test.mjs`: a signal that failed once and went through is not counted; an archived give-up is.\n- Full suite: 1171 pass, 6 fail. The 6 are the report-render tests, which need `pdftoppm`; the workbench does not have it.\n",
+            "branch": "workbench/pipeline/enrich-account-not-signal",
+            "title": "A refused or full account is not a failure of the signals in the batch"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014060416-c9bcf3"
+}

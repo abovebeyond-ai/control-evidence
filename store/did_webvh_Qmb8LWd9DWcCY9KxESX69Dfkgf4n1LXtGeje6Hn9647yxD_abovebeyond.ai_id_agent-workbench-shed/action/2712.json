@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3c182588bb8a6714985d82fef3ecfb6de18cb3d9",
+            "branch": "workbench/studio/add-named",
+            "files_sha256": "9e98d501893f3b8b84e8c27c494ef7cd9e9299a082f9f2bbe346cbda3c7fea8c",
+            "message": "Curate: the + says what it adds"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261013190147-2b8c04"
+}

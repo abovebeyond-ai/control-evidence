@@ -1,0 +1,16 @@
+{
+    "action": "17c1fd93aa3eb0ac919928560ccd4c01",
+    "effect": {
+        "detail": {
+            "base": "0ed498fe8d703df2be24fff65dd1a0bc984bc9ec",
+            "branch": "workbench/pinned-lead",
+            "commit": "c65b639e0e6e3e01b6c39042df10a9da70260021",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1992,
+    "verdict": "ALLOW"
+}

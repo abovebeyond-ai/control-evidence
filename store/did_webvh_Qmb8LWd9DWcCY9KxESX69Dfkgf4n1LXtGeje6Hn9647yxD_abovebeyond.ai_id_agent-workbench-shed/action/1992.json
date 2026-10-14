@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0ed498fe8d703df2be24fff65dd1a0bc984bc9ec",
+            "branch": "workbench/pinned-lead",
+            "files_sha256": "0be4fa19f61736619b6fa36300cdf6a5ae8e6384486e43e6ca493efc258dd8d9",
+            "message": "Let an editor pin the lead post"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261012194021-223e3d"
+}

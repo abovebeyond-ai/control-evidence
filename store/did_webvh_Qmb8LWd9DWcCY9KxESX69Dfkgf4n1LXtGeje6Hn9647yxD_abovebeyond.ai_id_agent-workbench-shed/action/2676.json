@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.share",
+        "params": {
+            "days": 30,
+            "files_sha256": "816fbdff5cd78500e3fb61e08a728ec2de76e8ee1aeb0f9138f824b027739086",
+            "passphrase_hash": "pbkdf2-sha256$310000$+pzoR6IUpY4zuOMHcx7GbQ==$R1vF2F5S9WjYlI7mzmDHDYbIp5Pwg8bEV6CgXrVpcds=",
+            "title": "The control architecture: what is essential, what is accidental"
+        },
+        "resource": "portal:portal"
+    },
+    "run": "workbench-20261013155356-95323e"
+}

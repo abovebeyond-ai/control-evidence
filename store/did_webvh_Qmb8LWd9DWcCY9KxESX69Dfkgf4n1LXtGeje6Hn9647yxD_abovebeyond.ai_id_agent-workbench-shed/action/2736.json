@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "23c8299dd60687518ff118c09ceba6c47232b32b",
+            "branch": "workbench/glk-tools",
+            "files_sha256": "1ff0d3743eca5b2de142f9154057048dafd68a050a8b22742320e7fa35a8023f",
+            "message": "systems: GLK's worksheets app as glk_* tools, beside Stocklist's"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261013192148-c73c70"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "321fc412f02d91d70eaca4fba72ee892",
+    "effect": {
+        "detail": {
+            "base": "41448e141ef363863505135743685015718659f5",
+            "branch": "workbench/showroom-logo-version-2",
+            "commit": "9fc8c983d4f02e403857b1e38e7a33db4dc4f548",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1899,
+    "verdict": "ALLOW"
+}

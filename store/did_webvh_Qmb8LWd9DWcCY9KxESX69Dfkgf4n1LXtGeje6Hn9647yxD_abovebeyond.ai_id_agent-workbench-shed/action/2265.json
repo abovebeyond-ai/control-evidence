@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\nFive short service pages made a visitor click around and gave Google five thin pages. The services page now holds everything on one page, a full section per service: the description, \"Zo verloopt het\" in three steps, frequently asked questions, the facts in the side box, and a jump menu on top. The appointment block sits once at the end.\n\n- `/diensten/{slug}` sends a 301 to its section, so links in the menus, the footer, the home list and anywhere else land on the right place; the sitemap lists one page.\n- The provisional text (what Schoutteet still has to confirm) stays marked outside production, now also for steps, questions and facts.\n- Content is grown per service with provisional steps and questions, based on what the trade usually offers; Schoutteet corrects on staging.\n\nSuite: 44 tests, 392 assertions. Checked in a headless browser: the page is about 6.300 px high on desktop, with the side box sticky per section.\n\n## After merge\n\nDeploy; nothing else.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/services-page",
+            "title": "Services on one full page, a section per service"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013092657-a27363"
+}

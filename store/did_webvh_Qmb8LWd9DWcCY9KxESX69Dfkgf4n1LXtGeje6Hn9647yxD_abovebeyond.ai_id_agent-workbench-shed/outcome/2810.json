@@ -1,0 +1,16 @@
+{
+    "action": "4354502a16e3535120296355bdd14a8c",
+    "effect": {
+        "detail": {
+            "base": "00a8c03dbb107b8605b09d2773554d141c31708f",
+            "branch": "workbench/pipeline/refusals-recent",
+            "commit": "34dc40baa10e00776cae26a9f414d0d7207a83b5",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2808,
+    "verdict": "ALLOW"
+}

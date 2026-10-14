@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7df7ccabd32cb7eecc0254e23077f15fcf1d9e02",
+            "branch": "workbench/share-cli",
+            "files_sha256": "06c61b7a7ef68ec5924ce3ee8ac1f5a1a7ff499081d7a000f49fa5e2c260f2cc",
+            "message": "Shares through the gateway: a door for the hand, the link read back, PBKDF2 for a hash made elsewhere"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261013072557-1f5860"
+}

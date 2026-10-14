@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Summary\n\nWhere the site names its place.\n\n- **Home and stock titles without a place**, as the Flemish competitors do (Degroote, Braem, Elro, Themar put no town in their titles; a truck is bought from the whole country and abroad): \"Tweedehands vrachtwagens, trekkers en bouwmachines \u2014 Ronny Schoutteet Trucks\", and the stock meta descriptions likewise.\n- **Services, contact and location say \"in Oudenburg, regio Brugge\"**: those are local services that people search with a place name, and Oudenburg alone means little outside the region. Translated as Bruges region, Region Br\u00fcgge, r\u00e9gion de Bruges, regi\u00f3n de Brujas.\n- The address, the map and the viewing wording (\"Te bezichtigen in Oudenburg\") are unchanged.\n\nIf Schoutteet wants the place in the main title after all, that is one line in `layouts/app.blade.php` and one in `home.blade.php`.\n\nSuite: 44 tests.\n\n## After merge\n\nDeploy; nothing else.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/region-wording",
+            "title": "Place in titles: stock without, services and contact with 'Oudenburg, regio Brugge'"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261013093701-b6f01d"
+}
