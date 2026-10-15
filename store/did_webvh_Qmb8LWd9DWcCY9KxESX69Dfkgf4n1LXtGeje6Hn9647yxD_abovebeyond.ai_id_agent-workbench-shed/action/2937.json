@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8a2693d95452981047b9dfb4372da08254f22956",
+            "branch": "workbench/insight-evidence-in-chat",
+            "files_sha256": "8e8d3155930b7a6b9e75c4254794935e847fb453dcf46a7d31e60c1b5d6b54de",
+            "message": "Story starters: the writing partner starts from the insight's own signals"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014110421-6cb35e"
+}

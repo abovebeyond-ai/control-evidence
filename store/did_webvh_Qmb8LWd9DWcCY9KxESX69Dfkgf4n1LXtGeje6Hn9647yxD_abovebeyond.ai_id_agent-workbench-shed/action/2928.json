@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nIn the app, the model answered every turn on its own, including what it transcribed from a cough or a background sound. A cough while the voice was speaking also cut its answer off for good.\n\n## What changes\n\n- `voice/Noise.kt`: the bridge's noise rules (`isNoise`, `cutOff`, `RESUME` from portal-cli `voice/turn.mjs`), ported so the app and the web page drop the same things.\n- `VoiceSession`: on open, the session gets the bridge's turn detection (`turnDetection` from `/session`; semantic VAD when absent) with `create_response: false`. The app answers a spoken line itself once its transcript is in and is not noise. A noise transcript is deleted from the conversation, and when that noise cut an answer off, the voice is told to go on where it was.\n- `Bridge.Session` carries `turnDetection`.\n\nThis depends on portal-cli #58 (turn detection, noise reduction, the evaluation checklist and the limits). The app also works with an older bridge. The web page counterpart is portal #413.\n\n## Tests\n\n`./gradlew :app:testDebugUnitTest --tests ai.abovebeyond.portal.voice.NoiseTest`: 3 pass (the same cases as the bridge's tests). `:app:assembleDebug` builds. On the workbench the full unit suite, screenshot tests included, did not finish within 25 minutes, so CI checks the rest; no other test touches the voice code. It has not been tried on the phone yet: the checklist in portal-cli #58 is that test.\n\nLimit: unlike the web page, the app has no turn lock, so a line said while actions run can still get a second answer. This PR does not change that.\n",
+            "branch": "workbench/voice-noise-gate",
+            "title": "Voice: bridge's turn detection, drop noise turns, finish answers a cough cut off"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261014105748-2c2601"
+}

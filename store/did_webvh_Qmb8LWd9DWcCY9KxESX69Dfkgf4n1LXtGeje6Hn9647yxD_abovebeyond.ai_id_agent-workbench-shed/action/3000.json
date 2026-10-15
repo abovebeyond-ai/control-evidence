@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "17f478c13f96f776bb2607730be3720675490704",
+            "branch": "workbench/support-reasons",
+            "files_sha256": "d171494cea4ef44a5d5bad40ae253cfbdab6c9c3056272ec053e4d54c19bb563",
+            "message": "Support verdicts: show each verdict's reason on request, to check the judge by hand"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014155028-02b6ef"
+}

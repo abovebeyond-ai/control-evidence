@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nA cough while the voice is speaking cuts its answer off; the page then drops the noise transcript and the answer is never finished. The page also kept its own copy of the turn detection, separate from the bridge's.\n\n## What changes\n\nIn `resources/views/mobile/voice.blade.php`:\n\n- Turn detection comes from the bridge's `/session` answer (`turnDetection`), with the model's own replies off as before. Without it (an older bridge) the page uses plain semantic VAD as before.\n- When a response ends cancelled because the model heard speech (`cutOff` from the bridge's `turn.mjs`) and the transcript that follows is noise, the page calls the lock's `resume()`: the voice is told to go on where it was, in a turn of its own. A real line from the owner clears that and is answered instead.\n\nDepends on the portal-cli PR on branch `workbench/voice-noise-gate` (turn detection, noise reduction, `resume()`, `cutOff`), which has the evaluation checklist and the limits. Merge that one first; this page works with either bridge.\n\n## Tests\n\n`php vendor/bin/phpunit tests/Feature/MobileTest.php`: 21 pass. The page's inline script passes `node --check`.\n",
+            "branch": "workbench/voice-noise-gate",
+            "title": "Voice page: bridge's turn detection, finish answers a cough cut off"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261014085524-1c8031"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe pipeline moves its pinned Gentells Standard from v0.10.0 to v0.11.0.\n\n- `bin/sync-standard.mjs`: `STANDARD_REF` is now `v0.11.0`. `packages/core/standard.mjs` and `test/fixtures/standard-conformance.json` are regenerated from the tag (sha-256:ed0ef874d4f).\n- `packages/core/standard-rules.mjs`: `trendHolds` gets the new condition. A trend holds only when, besides 5 supporting signals from 3 sources, at least 3 signals support it outright, from at least 2 sources. The answer keeps its shape, so `supportOf`, the Studio's story starters and `insights-rows` need no change.\n\n## Why\n\nStandard 0.11.0 (gentells-standard #15): partial matches add up, but cannot carry a trend alone. The first trend the support judge passed under 0.10.0 held on 1 outright support and 10 partial matches out of 84 signals. A hand read of all 84 verdicts confirmed the judge was fair, so the trend was thin and the rule let it through. Under 0.11.0 it is a lead, and the Studio stops offering it as a finding.\n\n## Tests\n\n- `test/standard.test.mjs` runs the standard's conformance cases against the pipeline's port, including the three new holds cases.\n- Full suite: 1191 of 1197; the 6 failures are the known report-render tests that need Chromium, unchanged.\n",
+            "branch": "workbench/standard-0-11",
+            "title": "Standard 0.11.0: a trend holds on outright support"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015060411-c0da27"
+}

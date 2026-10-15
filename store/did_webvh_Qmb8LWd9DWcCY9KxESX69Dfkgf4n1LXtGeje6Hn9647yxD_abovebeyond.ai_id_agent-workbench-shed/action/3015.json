@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c1e798e6664378cad7d1ce846b866090c51f9d27",
+            "branch": "workbench/projection-support",
+            "files_sha256": "7264dc57f2e1914d536bdc8fa12f7dca8e19fb3708272709df47125bfaabf092",
+            "message": "Projection: send each trend's support verdicts to the site"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015060933-d0567d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`rules/trend.json#holds` gets two numbers: a trend holds only when at least 3 of its signals support it outright (`minFullSupports`), from at least 2 distinct sources (`minFullSupportSources`). The 0.10.0 bar (5 supporting, partly counted half, from 3 sources) stays.\n\n- `tools/rules.mjs`: `trendHolds` applies both; its answer keeps the same shape (`holds`, `supporting`, `sources`, `state`).\n- `tools/check.mjs`: refuses a holds rule without the two numbers, or one asking more outright supports than supporting signals.\n- `conformance/rules.json`: three new cases (one support and ten partly: lead; three supports from one source: lead; three supports from two sources plus partly: holds).\n- VERSION 0.11.0, CHANGELOG, exports regenerated.\n\n## Why\n\nThe first trends judged under 0.10.0 (14 October 2026) included one with 84 signals: 1 supports, 10 partly, 73 unrelated. Ten halves and one whole made 6 supporting from 8 sources, so it held, and the Studio would have offered it to writers as a finding. That is the thin-but-presented-as-strong case 0.10.0 was written to stop. Partial matches now add up but cannot carry a trend alone.\n\nA rule's number changed, so this is a minor version (VERSIONING.md).\n\n## Checks\n\n- `npm run check`: standard ok\n- `npm test`: 75 of 75 pass\n- `npm run compat`: compatible with v0.1.0 through v0.10.0\n\nAfter merge: tag v0.11.0 on the merge commit; the pipeline then moves its pin from v0.10.0 to v0.11.0 in its own PR.\n",
+            "branch": "workbench/holds-needs-supports",
+            "title": "0.11.0 (proposed): a trend holds on outright support, not on partial matches"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261014154912-99a30b"
+}

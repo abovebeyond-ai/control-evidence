@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Write no longer recommends what does not hold up. Builds on #333 (support verdicts).\n\n- **Story starters** (`getStoryStarters`):\n  - Recommended (`insights`) is what holds on its judged evidence (Standard 0.10.0: at least 5 supporting signals from at least 3 sources).\n  - Then what is not judged yet but rests on at least three sources, marked as not checked.\n  - Within each group: rising before steady before falling (the recurrence direction), then strength.\n  - Everything else is a lead and comes back apart, in `leads`, with the first page only.\n  - The why line says where it stands (\"Holds: 6 supporting signals from 5 sources\", \"Not checked yet: \u2026\", \"A lead, not yet a piece: \u2026\").\n  - `evidence` carries `state`, `supporting`, `supportingSources` and `direction`. `metric` (\"strength N\") is gone.\n- **The judge's queue** takes this week's live drafts, which Write offers, right after the trends on gentells.com and the reviewed and published insights.\n- **The writing partner** gets the insight's signals in the order supports, partly, then not judged, each marked. The ones judged unrelated are left out, with a count.\n\nThe Studio side is a separate PR in gentells-studio: the card shows the standing instead of the Momentum bar, and the leads sit folded away under their own name.\n\nUntil the live insights are judged, most starters read \"not checked yet\", which is what they are.\n\nTests: `test/story-starters-evidence.test.mjs` (unchecked against lead, holds first whatever the strength, judged leads apart, leads on the first page only) and `test/starting-point.test.mjs` (supports first, unrelated left out). The full suite passes except the six report-render tests that need PDF tools the workbench does not have.\n",
+            "branch": "workbench/starters-that-hold",
+            "title": "Write offers only what holds; leads come apart"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014121415-11764e"
+}

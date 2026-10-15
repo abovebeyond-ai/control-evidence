@@ -1,0 +1,10 @@
+{
+    "action": "e2192748104d13e6aa6ca3039bb61782",
+    "effect": {
+        "error": "GitHub answered 500 for blob CHANGELOG.md: <nil>",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 2943,
+    "verdict": "ALLOW"
+}

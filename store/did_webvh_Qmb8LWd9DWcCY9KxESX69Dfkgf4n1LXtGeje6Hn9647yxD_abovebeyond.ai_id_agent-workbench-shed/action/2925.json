@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d2a7f567ea6923fcb8826acd1b6bc1ea68c2ac72",
+            "branch": "workbench/voice-noise-gate",
+            "files_sha256": "bc7aeb2ccf9505f86d47a9b6cdcfd7effac5e15e6a916a9e043f52731ef70b27",
+            "message": "Voice: bridge's turn detection, drop noise turns, finish answers a cough cut off"
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261014105748-2c2601"
+}

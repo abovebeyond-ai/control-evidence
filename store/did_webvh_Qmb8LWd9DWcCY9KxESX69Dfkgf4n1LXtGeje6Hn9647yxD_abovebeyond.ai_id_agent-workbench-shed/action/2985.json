@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Every pipeline phase that defaulted to Sonnet 5 or Haiku 4.5 now defaults to the current generation of the same tier.\n\n- **Sonnet 5 \u2192 Sonnet 5.5:** enrich, chat, classify-judge, support-judge and suggest-write (the box already runs suggest-write on Opus 5.5 from Settings). Same price per token. The Studio's writing chat has run on 5.5 since 7 October. The `/chat` endpoint's default moves too.\n- **Haiku 4.5 \u2192 Haiku 5.5:** classify, suggest-cluster, discover, ingest-report, browse, eval, content-tag, content-evidence, and the rubric check in `engine/evals.mjs`. Haiku 5.5 costs a tenth of 4.5 and scored 58% against 49% on the balanced gold set. Classify already runs on it from Settings.\n- The two unreachable fallbacks in `routes-studio.mjs` name Sonnet 5.5 instead of Haiku 4.5.\n\nA phase saved on an older model in Settings (`store/model-config.json`) keeps it. The defaults change only phases that were never saved. After the deploy, the cost report shows per phase which model each one actually runs on.\n\n**Subscription:** the Claude phases run on the two Max logins. Usage before the switch was recorded on 14 October at 12:25 UTC. In the last 24 hours: Sonnet 5, 493 calls and 1.6 M output tokens; Haiku 4.5, 198 calls; no account rate-limited. Calls, output tokens and rate-limit flags per account get compared again a day or two after the deploy.\n\nThe full suite passes except the six report-render tests that need PDF tools the workbench does not have.\n",
+            "branch": "workbench/sonnet-5-5",
+            "title": "Models: every Sonnet phase on Sonnet 5.5, every Haiku phase on Haiku 5.5"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014122641-ef64b4"
+}

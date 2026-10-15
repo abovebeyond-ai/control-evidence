@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a855d0f9b9b069405676148329ae9fd4806834e2",
+            "branch": "workbench/capability-carries-set",
+            "files_sha256": "3ea325cc5975b2e2441e9ad668905671119c828228f8918917f811352b17dd83",
+            "message": "The passkey admits only inside the working set, and the word carries it"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261014074022-702d4c"
+}

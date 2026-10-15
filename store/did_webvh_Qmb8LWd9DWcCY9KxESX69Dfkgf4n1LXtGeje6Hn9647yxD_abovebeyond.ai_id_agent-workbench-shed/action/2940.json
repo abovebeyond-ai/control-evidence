@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A story starter in the Studio could be ranked among the most interesting things to write about, its card saying the piece was half-built, and then fall apart on the first answer. Two causes, both fixed here.\n\n**The writing partner never saw the insight's evidence.** The starter opens the conversation with the insight's name and id. The partner got nothing under it, so it searched all signals by keyword and came back with one or two hits for an insight the Observatory had built on sixty. It then reported the insight as thinner than it claimed, which reads as a verdict on the writer's choice.\n\n- `packages/core/starting-point.mjs`: reads the insight ids from the writer's messages and hands the model the insight's summary, its patterns by name and its own signals (newest 60, with source and date), citable by id. The listed signals count as looked up.\n- `piece-prompt.mjs`: a seventh way a writer arrives, the story starter: read those signals before any search, open with the angle they carry best and how many signals and sources stand behind it, set aside in one clause what has little behind it and offer to look. A general rule above it: the partner is on the writer's side, a gap is a next step it offers, never a verdict on their idea or the material they picked.\n\n**The ranking trusted strength alone.** `getStoryStarters` ordered by `signal_strength`, so an insight held up by one or two sources could sit at the top. Insights seen by fewer than three distinct sources now come after the broadly seen ones. Their line says so plainly (\"A lead, not yet a piece: 3 signals from 2 sources. Worth a look for more before building on it.\"), and the \"half-built\" claim is gone from the others, which now give their signals and sources.\n\nTests: `test/starting-point.test.mjs` (new) and a case in `test/story-starters-evidence.test.mjs`. The full suite passes except the six report-render tests that need PDF tools the workbench does not have.\n",
+            "branch": "workbench/insight-evidence-in-chat",
+            "title": "Story starters: the writing partner starts from the insight's own signals"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014110421-6cb35e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f371bbb5d8c14bb0f4b8b85817649345f3ffbafc",
+            "branch": "workbench/auth-disabled-subscription",
+            "files_sha256": "75bbb6a8c35f2ff968b3ce8cc3ddd5be3465cb7df45469b467080c641894e18c",
+            "message": "Models: treat a disabled subscription as a refused login"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014154146-7eaa96"
+}

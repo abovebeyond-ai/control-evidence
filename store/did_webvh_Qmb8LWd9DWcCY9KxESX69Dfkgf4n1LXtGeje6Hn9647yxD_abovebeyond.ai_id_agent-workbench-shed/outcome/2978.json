@@ -1,0 +1,16 @@
+{
+    "action": "57e7082c944cf64adbb1d0d941b7c2d1",
+    "effect": {
+        "detail": {
+            "base": "e35df6a3693e53f06186763821a53a2be88e9c43",
+            "branch": "workbench/cron-enrich-backfill",
+            "commit": "785b4045ff5e56b4b817447d7b88b227ae069677",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2976,
+    "verdict": "ALLOW"
+}

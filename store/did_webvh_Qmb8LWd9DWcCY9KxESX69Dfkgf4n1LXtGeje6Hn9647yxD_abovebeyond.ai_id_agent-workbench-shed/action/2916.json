@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pins the gateway to v0.42.0, the policy-log fix from #128: the gateway can read the log the root timer writes, and stops instead of serving the carried configuration when it cannot.\n\nThe sha256 of `control-gateway-linux-amd64` was checked against the release's `SHA256SUMS`: `3e4183bae373d3adf0a98cdbd3da201344a477d785468ed9a8a326a52c66b59b`.\n\nThe upgrade also installs the `ExecStartPre` that hands `policy-log.json` to `control`. After it, the gateway should serve v1, which already waits on disk and in Portal, with `working_set` on the workbench hand.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/pin-v0.42.0",
+            "title": "The gateway runs v0.42.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261014103404-ded88b"
+}

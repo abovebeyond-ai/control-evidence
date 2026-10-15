@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Studio side of pipeline #334: Write recommends only what holds, and says so.\n\n- **Starter card:** the bar labelled \"Momentum\" is gone. It showed the strength, which says how much evidence there is, not how fast anything moves. In its place is the standing from the pipeline: \"Holds on 6 supporting signals from 5 sources, rising\", \"Not checked yet, steady\" or \"A lead to check\" (`standingLine` in `piece.js`). The build-up graph and the signal counts stay.\n- **Leads:** under the three starters, a folded line (\"2 leads to check, not yet a piece\") opens a list with each lead's reason. A writer meets a lead only by asking for it, and knows what it is before picking it.\n- **See all:** \"best backed first\" instead of \"strongest first\".\n\nWith a pipeline from before #334 there is no standing, so the card shows the graph and the counts only.\n\nTests: `standingLine` cases in `src/piece.test.js`. `npm test` and `vite build` pass. I did not check it in a browser: the local mock was lost in a reboot.\n",
+            "branch": "workbench/starters-that-hold",
+            "title": "Write: starters say where they stand; leads folded apart"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261014121445-ce39c8"
+}

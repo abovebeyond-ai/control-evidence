@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "18d9fdb630854a24e1286d1bf327f3f44b569cbe",
+            "branch": "workbench/holds-needs-supports",
+            "files_sha256": "6c7b6809b3ab43a14ffd8baa4d9d98b6da4a238c21651320191bd84493f6ad07",
+            "message": "0.11.0 (proposed): a trend holds on outright support, not on partial matches"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261014154912-99a30b"
+}

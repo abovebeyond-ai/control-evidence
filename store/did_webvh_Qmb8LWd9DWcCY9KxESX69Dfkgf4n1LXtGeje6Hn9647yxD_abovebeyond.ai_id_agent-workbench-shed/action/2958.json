@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "45aaacf1cca188108a538dc3c8ae32453c9cf0c8",
+            "branch": "workbench/support-verdicts",
+            "files_sha256": "c134352105a233d207a5ebc1f8c88c42b7b058eb893e8c56bfeb6b38498203be",
+            "message": "Support verdicts: judge each insight's signals against its claim (Standard 0.10.0)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014115723-9530f9"
+}

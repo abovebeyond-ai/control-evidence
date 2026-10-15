@@ -1,0 +1,17 @@
+{
+    "action": "49a15e7e919bd0e408d72a9ebd2940c0",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 58,
+            "review_problem": "GitHub answered 422: Validation Failed",
+            "review_requested": false,
+            "url": "https://github.com/abovebeyond-ai/portal-cli/pull/58",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2898,
+    "verdict": "ALLOW"
+}

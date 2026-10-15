@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6225c32a86b7d137aa7c408fd1d09b2184465aa6",
+            "branch": "workbench/working-set-live",
+            "files_sha256": "0de514574ce28ea2bee8f4b010995f7e8381cea1ddca0a5070f7846610539e06",
+            "message": "Conformance: the working set is held, and the policy log was not served before v0.42.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261014115659-b6bcd8"
+}

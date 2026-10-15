@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8a96ce8493edaebc71a50bdde093d6306627ef4b",
+            "branch": "workbench/working-set-enforced",
+            "files_sha256": "48b890e6de7785e10640da529400e52308c97bf202295aec8cc810f7608b68c9",
+            "message": "The gateway holds Portal's word to the working set"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261014074048-74e90c"
+}

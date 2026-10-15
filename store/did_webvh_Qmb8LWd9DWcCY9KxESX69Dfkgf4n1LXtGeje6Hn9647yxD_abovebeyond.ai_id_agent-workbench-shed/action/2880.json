@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The design merged in #125 let a Portal word of a day or less through without a working set. That bounded nothing: `iat` and `exp` are Portal's to write, so a Portal in other hands issues a fresh day every day. This version holds every passkey word to a set.\n\n**The rule.** A grant with `working_set: true` holds every capability signed by its principal key (Portal's, after a passkey touch) to the working set it carries whole, under `task.workingSet.token`. `capability.InsideWorkingSet` refuses by name unless all five hold:\n1. The set is signed by a key the grant names under `principal_keys`, the owner's token keys. No new key list.\n2. Its `type` is `working-set` and its `sub` is the hands' DID.\n3. It ends no earlier than the capability, and stands a week at most.\n4. The capability's `task.project` is in the set.\n5. Every kind has a radius in `policy.RepairKinds` at or below the set's layer. A kind without a radius is never admitted by passkey.\n\nA capability signed by one of the `principal_keys` is the token itself and is exempt. The record's `control_task` gains `working_set: {jti, iss}`.\n\n**The policy.**\n- Setting `working_set` takes away, so Elixir may sign it as a narrowing.\n- Dropping it is a widening (`grantNarrower`): only the token may sign that, never a repair.\n- Bodies are decoded strictly, so `/v1/policy` and `/v1/agents` now serve `fields: [\"working_set\"]` (`policy.Fields`). A signer writes the field only once it is served.\n\n**Docs.**\n- `docs/working-set.md`: the design section is now *The gateway checks the set, as built*, and the status paragraph says what runs.\n- `conformance/facts.json`: `bounded-by-working-set` moves from `designed` to `built`, since v0.41.0, and stays non-enforcing until the served policy sets the field.\n\n**Order.** This release changes nothing until the policy sets `working_set`. Elixir does that by itself once it sees the field served (elixir PR). Portal must be merged first: it is what puts the set token into the capability.\n\nTests: the full suite passes. New tests: `TestAWordIsHeldToTheWorkingSetItCarries` (12 refusal cases), `TestPortalsWordIsHeldToTheWorkingSetWhenTheGrantSaysSo`, `TestHoldingPortalsWordToTheSetIsNarrowerAndDroppingItIsNot`, and the `/v1/policy` test checks `fields`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/working-set-enforced",
+            "title": "The gateway holds Portal's word to the working set"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261014074048-74e90c"
+}

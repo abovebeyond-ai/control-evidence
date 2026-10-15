@@ -1,0 +1,16 @@
+{
+    "action": "e3d45a55d748bd56e1d239d81b76a2d1",
+    "effect": {
+        "detail": {
+            "base": "f371bbb5d8c14bb0f4b8b85817649345f3ffbafc",
+            "branch": "workbench/auth-disabled-subscription",
+            "commit": "79aa96747b86c3b511a26a1bb9315c9f3a3f6766",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2988,
+    "verdict": "ALLOW"
+}

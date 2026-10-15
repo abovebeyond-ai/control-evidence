@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`AUTH_REFUSAL` in `packages/core/models.mjs` now also matches the CLI's newest refusal:\n\n> Your organization has disabled Claude subscription access for Claude Code\n\n## Why\n\nOn 14 October one of the two Max logins answered every call with that sentence. It matched none of the earlier wordings, so `parseCliResult` threw a generic `LLM error`:\n\n- the login was never marked down, so the next account was never asked;\n- no refusal was recorded, so the monitor stayed on \"Everything under control\";\n- the support judge (`judge-support.mjs`, hourly from cron) wrote no verdict from 12:45 to 15:45 UTC: three batches failed per insight, and the run stopped after three insights.\n\nWith the match, the call takes the same path as every other refused login: the account is marked down, the next one answers, the refusal shows up in the monitor, and the probe re-tests the login every five minutes until it answers again.\n\n## Tests\n\n- `test/auth-refusal.test.mjs` gets the new wording in its list of refusals.\n- The full suite gives 1190 of 1196; the 6 failures are the known report-render tests that need Chromium, unchanged.\n",
+            "branch": "workbench/auth-disabled-subscription",
+            "title": "Models: treat a disabled subscription as a refused login"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014154146-7eaa96"
+}

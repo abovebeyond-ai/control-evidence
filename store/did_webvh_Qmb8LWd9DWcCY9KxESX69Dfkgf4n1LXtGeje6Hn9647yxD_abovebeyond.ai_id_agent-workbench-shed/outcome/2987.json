@@ -1,0 +1,17 @@
+{
+    "action": "5fa24ac2e6358c793dab913ac5226a4a",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 336,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/336",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2985,
+    "verdict": "ALLOW"
+}

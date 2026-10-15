@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c078a659f8d03679def4c8749bc7b26cebe17855",
+            "branch": "workbench/starters-that-hold",
+            "files_sha256": "f0272071e0d70a3aaea91af718b46aa645b26376b368a6b22feac501c79cc7ed",
+            "message": "Write: starters say where they stand; leads folded apart"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261014121445-ce39c8"
+}

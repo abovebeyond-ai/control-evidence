@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`bin/crontab-install --apply` installs `ops/crontab` as the whole crontab. The October enrich backfill was added on the box by hand on 11 October and was not in this file, so installing the judge line from #333 removed it.\n\nThis puts that line back, word for word, with a comment saying what it does and when it goes: 500 promoted signals without a concept go back to enrich at 18:30 each evening, only when none of the previous batch is still waiting.\n\nAfter the merge, `bin/crontab-install --apply` on the box installs it again. Remove the line in a later PR when `node bin/enrich-backfill.mjs --progress` shows October done.\n",
+            "branch": "workbench/cron-enrich-backfill",
+            "title": "ops/crontab: keep the October enrich backfill"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014121941-3a4645"
+}

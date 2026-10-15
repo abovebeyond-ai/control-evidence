@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7af1476fdb29a1fc8feeb4e54497c28759ce3675",
+            "branch": "workbench/x-only",
+            "files_sha256": "d37d9b7a61de8b5940a62305c53db1b9077969d1b008886ac7550fb61d4dea17",
+            "message": "Curate: the \u00d7 is the only way off the front page"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261014104116-f24c47"
+}

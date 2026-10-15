@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f063933ed6a64eedcbb488be2dda962aceb6b363",
+            "branch": "workbench/starters-that-hold",
+            "files_sha256": "5c591a48f4e2567fd3ee72912fb860a9fcc100ca90df95d1b401485ddffe1a67",
+            "message": "Write offers only what holds; leads come apart"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014121415-11764e"
+}

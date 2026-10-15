@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "No policy version has ever been served in production. The gateway's journal shows why, at every start since the policy log arrived:\n\n```\npolicy log: open /var/lib/control/policy-log.json: permission denied\n```\n\n`control-policy.service` runs `--pull-policy` as root, and `writeAtomic` creates the file root-owned with mode 0600. The gateway runs as `control` and cannot open it. The read error was logged, and the gateway went on to serve the carried configuration.\n\nThat is worse than a stale grant. `--attest` runs as root in `ExecStartPre`, reads the same file, and extends RTMR3 with the kept versions. So the register named v1 while the gateway judged by v0. Here v1 is the narrowing that sets `working_set`, which makes v0 the wider policy. The gateway was quietly serving more than the register says.\n\n- **`startup.sh`:** before each start, `policy-log.json` is handed to `control`, as `secrets` and `store` already are. This runs after the root timer writes and before the gateway reads.\n- **Fail closed:** a kept policy log the gateway cannot read, or cannot parse, now stops it (`errPolicyState`, then `fail` in `main`). It never falls back to the carried configuration. A version that no longer holds keeps today's behaviour: serve the last version that did, and say why.\n\nTest: `TestAKeptLogTheGatewayCannotReadIsRefusedNotReplaced` covers an unreadable log and an unparseable one. The full suite passes.\n\nAfter the release and the pin, the upgrade fixes the ownership of the file that is already on disk. The gateway then serves v1, which Portal and the root-owned file both already hold, and holds passkey words to the working set.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/policy-log-readable",
+            "title": "The gateway reads its policy log, or does not start"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261014101246-4a0624"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Every card on the Curate front page had two ways off: the \u00d7 in the corner (off the front page, stays on gentells.com) and a text link next to Open (Take off on posts, Hide on trends) that took it off gentells.com altogether. The two sat side by side and read as the same thing.\n\n- Post cards: Take off removed.\n- Trend cards: Hide removed; Up and the \u00d7 stay in the top row.\n- The lead: Take off the site replaced by a \u00d7 in its top right corner. If the lead was pinned, it is unpinned first, then marked off the front page, so the next newest post leads. Undo puts it back and pins it again. The \u00d7 is not shown when the lead is the only post on the front page, so the page never runs out of a lead.\n\nTaking a post or trend off gentells.com stays where it was: Take offline in the post editor, Hide on the Trends tab.\n\nTests: `npm test` passes and `vite build` is clean. No browser check this time: the local mock was lost in a reboot.\n",
+            "branch": "workbench/x-only",
+            "title": "Curate: the \u00d7 is the only way off the front page"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261014105906-6de0e6"
+}

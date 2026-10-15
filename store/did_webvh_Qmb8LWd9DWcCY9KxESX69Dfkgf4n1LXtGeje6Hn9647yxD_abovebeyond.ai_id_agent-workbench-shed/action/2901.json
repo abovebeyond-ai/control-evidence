@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "14416eb9ec9bf8a1a2451b88f40a1f0ec5b0c1a6",
+            "branch": "workbench/voice-noise-gate",
+            "files_sha256": "bfdd8662806ec8e38b156c720d0a704cb0e5347b6c4739cc51bd142429e1690d",
+            "message": "Voice page: bridge's turn detection, finish answers a cough cut off"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261014085524-1c8031"
+}

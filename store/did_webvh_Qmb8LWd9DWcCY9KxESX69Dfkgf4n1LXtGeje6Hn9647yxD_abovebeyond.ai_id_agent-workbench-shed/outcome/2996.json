@@ -1,0 +1,16 @@
+{
+    "action": "9f9666e7bfb93a1015953e8da38b7007",
+    "effect": {
+        "detail": {
+            "base": "18d9fdb630854a24e1286d1bf327f3f44b569cbe",
+            "branch": "workbench/holds-needs-supports",
+            "commit": "b23681f3cc87086114404e4284b05a53b9fbe1f7",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2994,
+    "verdict": "ALLOW"
+}

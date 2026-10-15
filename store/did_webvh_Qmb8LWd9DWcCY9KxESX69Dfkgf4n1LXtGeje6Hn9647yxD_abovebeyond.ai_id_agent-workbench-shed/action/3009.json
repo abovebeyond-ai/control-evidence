@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c1e798e6664378cad7d1ce846b866090c51f9d27",
+            "branch": "workbench/standard-0-11",
+            "files_sha256": "c7eaecf5bf1f452c166be348b2ba79cdd0a8abd8120dea9b6fb4c7c67d72e245",
+            "message": "Standard 0.11.0: a trend holds on outright support, not on partial matches"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015060411-c0da27"
+}

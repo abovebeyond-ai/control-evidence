@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e35df6a3693e53f06186763821a53a2be88e9c43",
+            "branch": "workbench/cron-enrich-backfill",
+            "files_sha256": "ded51db152674d36f41642e928e9f5275d4c9cb7faaac63b3c59c8cfa8277874",
+            "message": "ops/crontab: keep the October enrich backfill"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014121941-3a4645"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8aa6819702b0bf1a140735aa7989ba8ee7762484",
+            "branch": "workbench/momentum-in-words",
+            "files_sha256": "a861e86760bbe26f2a59960fc582d17ac88134be3fae92275f312721a9c75721",
+            "message": "Momentum in words, and evidence that says which signals bear a trend out"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261015061007-5b2757"
+}

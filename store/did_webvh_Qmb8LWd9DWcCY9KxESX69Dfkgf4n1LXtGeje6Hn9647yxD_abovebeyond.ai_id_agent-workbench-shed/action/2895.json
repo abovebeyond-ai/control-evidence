@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eaf00b03332ee6bec07aec2eac1565126024d7e1",
+            "branch": "workbench/voice-noise-gate",
+            "files_sha256": "792a669266cdcecc13828579034283c74881da22d9a040ec912f92b446d171d9",
+            "message": "Voice: patient turn detection, noise suppression, finish answers a cough cut off"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261014083957-c9acbd"
+}

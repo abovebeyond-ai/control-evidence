@@ -1,0 +1,16 @@
+{
+    "action": "97d6087b175283f6696c0c726b5a361e",
+    "effect": {
+        "detail": {
+            "base": "8a2693d95452981047b9dfb4372da08254f22956",
+            "branch": "workbench/insight-evidence-in-chat",
+            "commit": "e3faf62dd308fa99d50a72ad90355431566bf630",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2937,
+    "verdict": "ALLOW"
+}

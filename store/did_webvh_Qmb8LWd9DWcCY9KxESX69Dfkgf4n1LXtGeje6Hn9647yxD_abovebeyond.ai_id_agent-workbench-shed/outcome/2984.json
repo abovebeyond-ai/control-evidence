@@ -1,0 +1,16 @@
+{
+    "action": "7566216666e2765a76b180ae16e37ae5",
+    "effect": {
+        "detail": {
+            "base": "0df181a7a100b8dd2023f8cd13e1e04138e82a25",
+            "branch": "workbench/sonnet-5-5",
+            "commit": "bc06327f2b10dcd45942ac5682901eddc7337477",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2982,
+    "verdict": "ALLOW"
+}

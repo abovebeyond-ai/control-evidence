@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`insights-rows` with `support: true, reasons: true` now adds `support.reasons`: every verdict on the insight's current claim, with\n\n- the signal id, verdict, the judge's reason, who judged, with which model and when;\n- the signal's source, platform, date, and its first 240 characters.\n\nSupports come first, then partly, then unrelated, at most 200 per insight. Reasons are only returned when five insights or fewer are asked, because one insight carries up to two hundred rows.\n\nThe function is `verdictsWithReasons` in `packages/core/support-store.mjs`. Verdicts on an old claim are left out, except a person's, the same rule `supportOf` uses.\n\n## Why\n\nThe support judge (Standard 0.10.0) wrote its first verdicts on 14 October: on three trends of strength 78, between 57 and 73 signals each came back unrelated. The counts were readable through the Observatory query, the reasons were not, so nobody could check by hand whether \"unrelated\" was fair before the verdicts start deciding what the Studio and gentells.com offer.\n\n## Tests\n\n- `test/support.test.mjs`: a new case for the reasons, including that a person's verdict survives a changed claim and that the field is absent unless asked.\n- Full suite: 1191 of 1197; the 6 failures are the known report-render tests that need Chromium, unchanged.\n",
+            "branch": "workbench/support-reasons",
+            "title": "Support verdicts: show each verdict's reason on request"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261014155028-02b6ef"
+}

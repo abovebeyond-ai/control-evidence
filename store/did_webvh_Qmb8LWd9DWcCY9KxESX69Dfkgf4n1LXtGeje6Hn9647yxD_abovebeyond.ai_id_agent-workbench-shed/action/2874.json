@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The gateway (control, next release) refuses Portal's word for the workbench unless the word carries the working set the owner signed on the token, whenever the grant says `working_set`. Portal therefore admits by passkey only inside the set, and puts the set into the capability.\n\n- **`WorkbenchAdmit::setFor`.** A passkey admission (2 hours, today, repair today, or the set's own period) needs a set that is in force, names the project, and reaches B2. Every kind the gateway judges for the workbench is B2. The refusals are named (`no_working_set`, `outside_working_set`), and they say to admit on the token instead.\n- **The set travels whole.** The capability carries the set's `jti`, `iss` and now its `token` (`carriedSet`), so the gateway checks the set itself rather than Portal's word for it. `within` keeps a word from outlasting its set.\n- **Both doors follow the same rule:** the multi-project door (the page and the app) and the per-project door.\n- **B1 reading stays as it was** (30 days, no set). Those words go to the system, not the gateway.\n- **The no-set hint on the workbench page** now says the passkey admits nothing without a set. The `WorkingSet` docblock says the same.\n\n**Order:** merge this before the gateway enforces. Until then the gateway ignores the extra field.\n\nTests: the full suite passes (747 of 748; BuildStampTest fails in a worktree, as known). The new `test_the_passkey_admits_only_inside_the_working_set_and_the_word_carries_it` covers:\n- refused without a set, under a B1 set, and for a project outside the set;\n- the carried token;\n- the expiry capped at the set's end.\n\nThe existing admission tests now start from a set.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/capability-carries-set",
+            "title": "The passkey admits only inside the working set, and the word carries it"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261014074022-702d4c"
+}

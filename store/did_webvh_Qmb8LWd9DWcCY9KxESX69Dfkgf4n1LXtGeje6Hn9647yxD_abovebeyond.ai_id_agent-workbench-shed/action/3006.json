@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a71e9a2a9d4dde541583051394d778d338f53158",
+            "branch": "workbench/explore",
+            "files_sha256": "983bb7586428e984b2314a4f15364a72a9faf8a0366eeb2804ed7452bc48feab",
+            "message": "A browse page for the office: everything by type, project, person and period, with a printout and a CSV"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261014162922-dfff60"
+}

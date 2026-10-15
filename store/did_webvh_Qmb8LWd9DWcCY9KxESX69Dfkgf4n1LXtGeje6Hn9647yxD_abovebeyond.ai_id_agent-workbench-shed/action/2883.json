@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "20e901d69abe82c237e1d3bad3964e00b357d92c",
+            "branch": "workbench/working-set-grant",
+            "files_sha256": "a825b257c6fbdd28968ca417b99ffe8755f49b945bd7654feb5c2978ed011860",
+            "message": "Elixir holds the workbench's passkey word to the working set once the gateway reads it"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261014074126-a2ef40"
+}

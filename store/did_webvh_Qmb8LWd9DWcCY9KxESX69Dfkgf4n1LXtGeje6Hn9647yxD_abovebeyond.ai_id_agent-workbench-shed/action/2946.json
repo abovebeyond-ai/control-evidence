@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c40ab16a348991c142559d351a0ef61f09d36aaa",
+            "branch": "workbench/standard/measures",
+            "files_sha256": "d9e761aa164ead3cbfb7f46f23e77f3b6a475f60cf09193585832aee4e7dd780",
+            "message": "0.10.0 (proposed): what a trend's numbers mean, and which signals are its evidence"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261014111538-46e9db"
+}

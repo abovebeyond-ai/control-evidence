@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`projection-trends` (packages/server/heavy.mjs) sends a `support` object with each trend on gentells.com:\n\n```json\n{\"state\": \"holds|lead\", \"outright\": 4, \"partly\": 2, \"sources\": 5, \"judged\": 60, \"unjudged\": 0}\n```\n\nIt is `null` while none of the trend's signals are judged, so the site says \"not yet checked\" and never shows a lead nobody weighed. The new `publicSupport` in `packages/core/support-store.mjs` builds it from `supportOf`, so it follows the pinned Standard (0.11.0 once #339 is merged).\n\n## Why\n\ngentells.com shows a trend's strength under the word Momentum, explained as spread velocity with \"90+\" for rapid diffusion. Strength is evidence, not speed, and on the first trends judged nine in ten signals under a trend were unrelated to its claim. The site change (gentells-site, proposed alongside) shows the direction in words and which signals bear the trend out. This is the data it needs.\n\nThe support judge already queues the trends on gentells.com first, so they are the first to have verdicts.\n\n## Tests\n\n- `test/support.test.mjs`: null before any verdict, then outright and partial support counted apart.\n- Full suite: 1192 of 1198; the 6 failures are the known report-render tests that need Chromium, unchanged.\n\nThe site reads the field when it is there and ignores it when it is not, so either side can deploy first.\n",
+            "branch": "workbench/projection-support",
+            "title": "Projection: send each trend's support verdicts to the site"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015060933-d0567d"
+}

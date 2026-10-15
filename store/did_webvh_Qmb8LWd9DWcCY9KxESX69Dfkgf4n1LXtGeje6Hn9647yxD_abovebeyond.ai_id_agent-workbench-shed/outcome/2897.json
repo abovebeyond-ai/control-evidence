@@ -1,0 +1,16 @@
+{
+    "action": "81084cc3b962d80bbfe20b469ef2ffc1",
+    "effect": {
+        "detail": {
+            "base": "eaf00b03332ee6bec07aec2eac1565126024d7e1",
+            "branch": "workbench/voice-noise-gate",
+            "commit": "127e333394551469531f8387efde19b230770eb4",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2895,
+    "verdict": "ALLOW"
+}
