@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Motion that reads as print rather than as an app. No loading screen: the page is rendered on the server and is there on the first frame, so a loader would only add a wait on every click. Two quiet moments instead.\n\n## Change\n\n- `public/js/first-paint.js`, loaded in the head before the stylesheet. It is a file because the content policy runs no inline script. Never with reduced motion, it sets:\n  - `settle`, once per visit (sessionStorage): the hero's grey collage lands, 10px and a fade over 900ms, and the colour comes in after 500ms and then drifts as before.\n  - `img-fade`: covers (`x-cover`, marked `data-fade`) and pictures in a post's body fade in over 450ms as they load. `app.js` marks each one loaded; a picture already cached shows at once.\n  - `fade-done` after three seconds, so a script that fails can never leave a picture invisible.\n- `app.css`: the two keyframes and the fade rules, before the reduced-motion block. The text never moves.\n\n## Checks\n\n- `tests/Feature/FirstPaintTest.php`: the head loads `first-paint.js` from the site, before `</head>`, and the file exists.\n- Pinned lead and front places tests unchanged and green (11/11 together); `vendor/bin/pint --test` passes on the whole repo.\n- On a local copy: the first visit gets `settle`, a reload in the same visit does not; post pictures were caught mid-fade (opacity 0.53) and all reached 1 once loaded. Recorded as a short video for review.\n",
+            "branch": "workbench/settle-motion",
+            "title": "Quiet motion: the collage lands once per visit, pictures fade in"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261015124753-16dfb3"
+}

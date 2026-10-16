@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6bcb44917ee794a2fef04b14ad06dfc094ef99f5",
+            "branch": "workbench/login-site-link",
+            "files_sha256": "b4066f81cc4d5e715d9471ff5fcaec04fe5ab5d4228cad9aa970ec19f2be9a8d",
+            "message": "Sign-in page: 'Klik hier voor de werf-app' instead of 'Arbeider? Ga naar de werf-app'"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015155851-396c73"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "84ba4d92e7289bdb4cf31d073504d629",
+    "effect": {
+        "detail": {
+            "base": "06e6324e659345fe7644a8b0f748a91a99a88b8b",
+            "branch": "workbench/title-wraps",
+            "commit": "53426399113790843c79e72ced4e40b953fc0f34",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3213,
+    "verdict": "ALLOW"
+}

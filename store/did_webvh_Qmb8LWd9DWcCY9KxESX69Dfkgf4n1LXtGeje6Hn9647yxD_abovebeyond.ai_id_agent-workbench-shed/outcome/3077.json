@@ -1,0 +1,16 @@
+{
+    "action": "9a49992c8d2261de1a79c9237f7470db",
+    "effect": {
+        "detail": {
+            "base": "4047236e2451fefe33608bcebaa84948b7467a71",
+            "branch": "workbench/monitor-test-home",
+            "commit": "467d18d90d7bcd6e99f2be4ebd1f89bcfc6793cd",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3075,
+    "verdict": "ALLOW"
+}

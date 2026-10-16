@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Elixir kept four copies of the gateway's kinds:\n- `PolicyLog::REPAIR_KINDS`;\n- `PolicyLog::KIND_WORDS`;\n- `Workbench::KINDS`;\n- `Workbench::SYSTEMS`.\n\nA copy that fell behind drafted a version the gateway refused, or none at all. Since control v0.43.0 the gateway serves its kind table on `/v1/agents` (control `docs/kinds.md`). This reads it.\n\n- **`KindTable`** keeps the last table served, refreshed with the grants report every minute. The repair test, the layers in `additions`, and the words in `change` come from it.\n- **The workbench grant follows one rule:**\n  - every kind with a radius that no running system performs;\n  - plus a system's kinds once a project names that system, including a kind the owner defined in the policy.\n  \n  For today's table this is the same thirteen kinds plus the same system kinds, now sorted. The gateway compares sorted lists, so nothing is drafted.\n- **Defined kinds travel on unchanged** in every version this box signs or drafts: `payload.kinds`, also in the digest body. This box neither defines nor changes a kind, and a version without them would drop them. A version names `kinds` only when there are some, so nothing changes before the owner defines one.\n- **No table, no grant (`NoKindTable`).** A grant built without the table would hold no kinds, and a version that drops them is only a narrowing, so this box would sign it itself. `remote()` then keeps the configuration file from before, still opens the tunnel, and says so in the summary.\n- **The table goes to Portal** on the grants report (`payload.kinds`).\n\n**Order:** after control v0.43.0 runs on the gateway. Before that the gateway serves no table, and this box writes no new configuration.\n\nTests: the full suite passes (743), with pint and phpstan clean. Tests read the table from a fixture of what v0.43.0 serves (`tests/fixtures/control-kinds.json`). New:\n- `test_the_workbench_grant_follows_the_kind_table`;\n- `test_without_a_kind_table_no_grant_is_written`;\n- `test_a_version_carries_the_kinds_the_served_version_defines`;\n- `test_a_version_without_defined_kinds_names_none`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/kinds-as-data",
+            "title": "Read the gateway's kind table instead of copies of it"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261016054434-98636f"
+}

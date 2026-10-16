@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "72af1325d14de53f2892b68c004c87ec0c8727dd",
+            "branch": "workbench/kinds-as-data",
+            "files_sha256": "b5c8024e9811fb00f9ce0c737102d8a2b820a7042f300987e820f4cd6e3e5ada",
+            "message": "One kind table: system kinds defined in the signed policy"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261016054321-c98f6b"
+}

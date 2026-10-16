@@ -1,0 +1,16 @@
+{
+    "action": "322b62d25a3675d90f45a0dc90ec8f9c",
+    "effect": {
+        "detail": {
+            "base": "c950b4cdb19c4b4c5d648512c70fed902e4403ae",
+            "branch": "workbench/explore-lenses",
+            "commit": "5b58a2048524bef4fc56bd2e5e068962e2d9b74b",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3219,
+    "verdict": "ALLOW"
+}

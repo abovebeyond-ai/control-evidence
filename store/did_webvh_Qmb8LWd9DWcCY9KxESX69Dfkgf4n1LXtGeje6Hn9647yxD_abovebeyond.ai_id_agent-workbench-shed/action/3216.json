@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "In the writing view the headline was a one-line input, so a long title ran off to the right instead of wrapping, for example \"Proof Over Polish: Fans Believe Creators Who Show Their Work\".\n\n## Change\n\n- The headline is a textarea that grows with its text, and again when the column changes width (dragging the seam beside the conversation).\n- Enter moves to the standfirst instead of adding a line; a line break in a pasted title becomes a space, since a title has none.\n- Same type, size and colour as before.\n\n## Checks\n\n- `npm test` 47/47, `vite build` clean.\n- In a local Studio, that title wraps over two lines and the field is as tall as its text (72px, scroll height 72px).\n",
+            "branch": "workbench/title-wraps",
+            "title": "Write: the headline wraps"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261015133512-462069"
+}

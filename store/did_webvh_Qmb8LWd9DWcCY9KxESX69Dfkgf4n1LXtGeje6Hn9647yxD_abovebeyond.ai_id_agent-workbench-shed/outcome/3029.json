@@ -1,0 +1,16 @@
+{
+    "action": "abd3ae7d9c65a450bec51757a894903d",
+    "effect": {
+        "detail": {
+            "base": "5a5cba9ffac0b3d28df96d03cee209a84bd60309",
+            "branch": "workbench/failover-test-isolation",
+            "commit": "30eeab7b481b98687d04754e55a276750c468d0d",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3027,
+    "verdict": "ALLOW"
+}

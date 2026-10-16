@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-15T07:34:21+00:00",
+    "computed_at": "2026-10-16T07:34:23+00:00",
     "window": {
-        "since": "2026-10-08T07:33:02+00:00",
+        "since": "2026-10-09T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -33,8 +33,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 9,
-                "gateway": 9
+                "github": 10,
+                "gateway": 10
             }
         },
         "Hoet-design/hoet-eyewear-mirror": {
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 35,
-                "gateway": 35
+                "github": 41,
+                "gateway": 41
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 8,
-                "gateway": 8
+                "github": 7,
+                "gateway": 7
             }
         },
         "Trendwolves/glk-transferor": {
@@ -125,8 +125,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 24,
+                "gateway": 24
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -145,8 +145,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 30,
-                "gateway": 30
+                "github": 33,
+                "gateway": 33
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -228,8 +228,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 4,
+                "gateway": 4
             }
         },
         "ShaneDeconinck/cafe-t-hoekske": {
@@ -294,8 +294,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 1,
+                "gateway": 1
             }
         },
         "Trendwolves/gentells-standard": {
@@ -316,8 +316,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 18,
-                "gateway": 18
+                "github": 23,
+                "gateway": 23
             }
         },
         "abovebeyond-ai/bextrust": {
@@ -327,8 +327,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "abovebeyond-ai/control": {
@@ -338,8 +338,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 20,
-                "gateway": 20
+                "github": 21,
+                "gateway": 21
             }
         },
         "abovebeyond-ai/control-verify-action": {
@@ -360,8 +360,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 8,
-                "gateway": 8
+                "github": 9,
+                "gateway": 9
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -393,8 +393,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 15,
-                "gateway": 15
+                "github": 16,
+                "gateway": 16
             }
         },
         "abovebeyond-ai/proof-of-control": {

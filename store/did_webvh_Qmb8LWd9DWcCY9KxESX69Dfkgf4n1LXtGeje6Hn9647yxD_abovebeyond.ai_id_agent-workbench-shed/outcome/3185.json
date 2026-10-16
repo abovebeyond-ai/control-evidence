@@ -1,0 +1,16 @@
+{
+    "action": "f894f27dc658395cc8ca0a9a2866e63e",
+    "effect": {
+        "detail": {
+            "base": "0d60ce3454bb17d1b618220d7ece30e60459b48c",
+            "branch": "workbench/explore-count-sentence",
+            "commit": "4b814aa883fd7ef2efe8bed65ed5e32d2be5d9ac",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3183,
+    "verdict": "ALLOW"
+}

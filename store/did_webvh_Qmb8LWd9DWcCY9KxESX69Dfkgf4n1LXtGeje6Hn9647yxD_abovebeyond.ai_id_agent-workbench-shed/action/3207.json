@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "04e590bb195fb111b1c1c8a94656fbccd81e7446",
+            "branch": "workbench/content-architecture",
+            "files_sha256": "b2dd1f6c0132c9c45109390fbf0e7852e1ba223bcccb531fef0ecbd51e296c0d",
+            "message": "Design the content architecture for articles and news from Sanity"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261015133345-8b70a9"
+}

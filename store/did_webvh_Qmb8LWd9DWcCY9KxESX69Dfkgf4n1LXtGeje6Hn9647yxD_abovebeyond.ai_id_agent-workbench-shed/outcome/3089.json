@@ -1,0 +1,16 @@
+{
+    "action": "e5d7e9e045879e63d0279e5e840509b7",
+    "effect": {
+        "detail": {
+            "base": "26b29308025364db0b9ffce5ca0726193f8a12f4",
+            "branch": "workbench/lead-gap",
+            "commit": "650097973812cc41ab593a855ee295c7d0bc5cbc",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3082,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A garage sees the wrong amounts on its Transport settings tab: the express column is lower than the normal one and reads as a surcharge, because the platform tariffs are not loaded for a garage user.\n\nSource: Portal mail:19.\n\n**What is wrong.** The tab previews a normal and an express price per vehicle class (`TransportService::settingsPreview`). It takes the express percentage, the margin and the handover report from `$settings`, but the platform-wide rows (`dealer_id` null) are only merged in for users with `removebgkey.index`, which is the administrator. For a garage the three are 0: express becomes the bare base price (lower than normal, e.g. 138 next to 238) and normal misses the handover report. The garage should see the full express price, the same total the administrator sees.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Transport settings: a garage sees the express column as a bare base price instead of the full express price"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015102620-a2b9c4"
+}

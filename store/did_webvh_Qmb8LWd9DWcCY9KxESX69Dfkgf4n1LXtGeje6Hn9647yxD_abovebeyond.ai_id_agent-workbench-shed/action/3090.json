@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nTwo things on Beheer > Portalen after #1016:\n\n- A Hexon portal added and then switched off (\"Aangeboden\" off) vanished from Hexon's list on the same screen. It was not lost: it sat folded under \"1 portaal uit het aanbod tonen\". But the place it was picked from is where an administrator looks for it again (Alfa Romeo Belgi\u00eb, 15 October 2026).\n- The lead under the page head touched the card below it, on Beheer > Portalen and on Beheer > Functies alike: `.ui-page-lead` has only a top margin.\n\n## What\n\n- Hexon's list now also shows the links whose portal is out of the offer, with \"Weer aanbieden\" instead of \"Toevoegen\". The button puts the same row back in the offer (`offered = 1`); it never creates a second row, so the garages and vehicles on it stay with it. Only offered portals are left out of the list. The code-fix picker still leaves out every code in use.\n- The two lead paragraphs get `margin-bottom: var(--ui-s-4)` on the element. Not in `refresh.css`: that file is on the quality ratchet and may only shrink.\n- Texts in nl, fr, en, de (`portals.offer_again`); rule R S2-4.10 extended.\n\n## Checks\n\n- New test: add a Hexon portal, switch it off, find it in Hexon's list with \"Weer aanbieden\", offer it again: one row, offered.\n- Full suite: 3107 tests OK (2 skipped, 1 incomplete, as on main), including `QualityRatchetTest`. PHPStan: no errors. Pint on the touched PHP.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01LxNsc16PcyyY6R9uimutn4\n",
+            "branch": "workbench/lead-gap",
+            "title": "Beheer > Portalen: offer a switched-off Hexon portal again from Hexon's list; space under the page lead"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015103703-ed1557"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: Under the transport price table a garage should only read that all prices are excl. 21% VAT, not the formula of how Stocklist builds the price from base price, margin and handover report.\n\nSource: Portal mail:19.\n\nThe line `transport.prices_explained` names the margin and the express percentage, which are Stocklist's own tariffs (R P2-8.4). Keep it for the administrator; a garage gets only the VAT sentence.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Transport settings: show a garage only the VAT line, not the price formula"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015102622-47a59e"
+}

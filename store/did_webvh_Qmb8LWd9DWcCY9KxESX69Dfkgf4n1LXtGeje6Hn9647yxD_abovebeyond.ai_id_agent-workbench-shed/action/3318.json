@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b48257785fc2adb8f215eccc27f59c1628413aa1",
+            "branch": "workbench/graph-rotate",
+            "files_sha256": "1286d8ca49c6541714a24232ed00da4374274a6d844d9ef852ae29256b7b17d3",
+            "message": "Netwerk: turn the graph, by buttons, shift-drag or two fingers"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015160151-e812c0"
+}

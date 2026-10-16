@@ -1,0 +1,16 @@
+{
+    "action": "c58a61a1296ad7c41b25fe182e5fc17b",
+    "effect": {
+        "detail": {
+            "base": "776388595b0c9951f9e6ed8b58b066341e418623",
+            "branch": "workbench/byline-menu",
+            "commit": "e3f892ba7614f60f68dee906ff140556c4f831b2",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3228,
+    "verdict": "ALLOW"
+}

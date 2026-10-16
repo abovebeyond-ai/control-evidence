@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5a5cba9ffac0b3d28df96d03cee209a84bd60309",
+            "branch": "workbench/failover-test-isolation",
+            "files_sha256": "6a8b52ee942e80bd448766d807fffeaa1abc45d097eed9300d77dea6408ed907",
+            "message": "Account failover tests own their login-down marker"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015073922-c8b46d"
+}

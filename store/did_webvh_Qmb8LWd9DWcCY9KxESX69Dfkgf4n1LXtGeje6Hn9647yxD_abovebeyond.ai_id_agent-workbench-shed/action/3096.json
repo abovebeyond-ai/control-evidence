@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "33d4d936792022cc6b643981dda0528caf5f3bf1",
+            "branch": "workbench/transport-deleted-vehicle",
+            "files_sha256": "70ff9ef6fc2b67498b45ce1cd2b0ea371ad95436454b0f09de110106b61e0620",
+            "message": "Transport truck opens for a car the garage deleted after the sale"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015110110-6e866c"
+}

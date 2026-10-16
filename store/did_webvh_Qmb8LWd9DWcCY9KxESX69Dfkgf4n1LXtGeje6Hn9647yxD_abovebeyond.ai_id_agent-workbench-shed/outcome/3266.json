@@ -1,0 +1,16 @@
+{
+    "action": "e0090a080b76c02e999b7ff178b3fe99",
+    "effect": {
+        "detail": {
+            "base": "6a0e26826c2daa341eb5ec69bafd48bd87ab68b5",
+            "branch": "workbench/graph-interactive",
+            "commit": "4834ffa44ed7e38df7f689c72c094f84b59b0e40",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3264,
+    "verdict": "ALLOW"
+}

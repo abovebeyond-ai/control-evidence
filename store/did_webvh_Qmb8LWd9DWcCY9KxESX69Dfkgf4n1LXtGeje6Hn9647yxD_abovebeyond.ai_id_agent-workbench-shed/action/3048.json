@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "05a2626f91e706dd7cb0d8d69e1fa02cf9475a81",
+            "branch": "workbench/portals-tidy",
+            "files_sha256": "2097295f3c9b13bbd9cad11abc1eea41af0f45f7d2aeb926ba02201cee68928c",
+            "message": "Portals screen: fold the portals out of the offer, one scrollable list of Hexon's links"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015101724-49327a"
+}

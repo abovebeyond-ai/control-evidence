@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "23 posts live on gentells.com have no cover. The site fills that gap with a piece of the editorial collage chosen from the title, so it did not show; the Studio's posts list now says \"No cover\" for each. The posts published on 15 October got the first picture of their own pool, which is how every chosen cover had been picked. This does the same for the rest, as a run on the box.\n\n## Change\n\n`bin/fill-covers.mjs [--run=<name>] [--dry]` and `--undo=<run>`:\n- Only a live post with an empty cover is touched; a chosen cover is never replaced, and drafts are left alone.\n- The cover is the first picture of the post's pool (`article_images`), else the first picture in its text. A post with neither keeps the collage and is named in the output.\n- `article_cover_fill_undo` keeps the run; `--undo` empties those covers again, except where someone has chosen another cover since.\n- updated_at moves, so the site fetches each post again.\n\n## Checks\n\n- `test/fill-covers.test.mjs` (3): dry run writes nothing; pool before text; chosen covers and drafts untouched; undo leaves a cover chosen since.\n- Full suite 1219/1225; the 6 are `report-render` (`pdftoppm`, installed on the box).\n- Dry run on a copy of production as it stands after the 15 October run: 23 of 23 live posts without a cover would get a picture from their text (none has a pool).\n\nNothing runs at deploy. After merge, on the box: `node bin/fill-covers.mjs --dry`, then without `--dry`.\n",
+            "branch": "workbench/fill-covers",
+            "title": "Give the 23 live posts without a cover the first picture of their own"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015122153-d5786e"
+}

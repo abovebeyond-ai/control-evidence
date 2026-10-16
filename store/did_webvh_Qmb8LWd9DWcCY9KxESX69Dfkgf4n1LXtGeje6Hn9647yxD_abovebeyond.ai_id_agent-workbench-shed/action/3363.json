@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0b760cd6bc9577459fe67ebc3a6395bd9dd45645",
+            "branch": "workbench/graph-explorer",
+            "files_sha256": "c16014cc5c5597bf8b295f263cb2e637f636bd09573931205ab54c24c3a17583",
+            "message": "Netwerk: explore the graph, click to open projects or relations, names that fit, 3D view"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016060713-670550"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The line above the list on **Verkennen** said \"3321 records, 21 dagen, 15 sep. 2026 tot 13 okt. 2026\". It did not say whether that was everything or a filtered part, the dates were those of the first and last row rather than the chosen period, and \"records\" says nothing to somebody outside the office.\n\nIt now reads as a sentence built from the filters, with a second line on what one line stands for:\n\n> 3.321 regels: alle soorten, alle projecten, iedereen, van 15 sep. 2026 tot 15 okt. 2026.\n> Een regel is \u00e9\u00e9n boeking in Bouwsoft (uren, machine of materiaal) of \u00e9\u00e9n lijn of signaal van een werkfiche. Ze vallen op 21 dagen, de laatste op 13 okt. 2026.\n\nA chosen type, project, person or search term takes its place in the first line. \"Records\" became \"Regels\" on the project card and in the printout, where the note under the table per type now says the same as the screen.\n\nTests: ExploreTest checks the sentence for the whole selection and for one project. Full suite passes, pint clean. Checked in a browser against a local database with sample data.\n",
+            "branch": "workbench/explore-count-sentence",
+            "title": "Verkennen: say what the count is a count of"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015130216-2e70f5"
+}

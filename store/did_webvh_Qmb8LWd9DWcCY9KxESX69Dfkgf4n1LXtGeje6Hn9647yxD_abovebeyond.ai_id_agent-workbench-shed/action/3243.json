@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ed9962dbb8fc4d139e2829cf1071d0b9babac03e",
+            "branch": "workbench/seller-list-cache",
+            "files_sha256": "c2444f7aeb01929db5b78ff566bc4ddd0b71828764b284492697d3d107f5e6ca",
+            "message": "The seller list shows every garage on the shared stock, whoever filled the cache"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015140943-ec00b6"
+}

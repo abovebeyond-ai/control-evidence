@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7a8b0e68f75393ea0c8df68d8159913a1b74df45",
+            "branch": "workbench/bylines",
+            "files_sha256": "1cad5e3ebd04198f5f3f2c42b275873a01364d5fcdd3615e958c15854ac82c89",
+            "message": "GET /articles/bylines: the names pieces are signed with, most used first"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015112329-37566e"
+}

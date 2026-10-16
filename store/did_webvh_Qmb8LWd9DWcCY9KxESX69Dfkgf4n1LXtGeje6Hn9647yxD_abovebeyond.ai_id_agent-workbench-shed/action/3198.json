@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three things that read wrong in the Studio.\n\n## The opening stays in the conversation\n\nA new piece opens with \"What are we writing today?\", three stories from the signals and See all. That opening was drawn only while the conversation was empty, so picking a story (in the window or in the row) made it vanish while the answer loaded, and the conversation looked as if its start had been dropped. It now stays as the first thing said; its story buttons go, since the choice was made. Not shown for pieces that start from a research brief.\n\n## New piece never reuses a piece mid-conversation\n\nNew piece reuses an untitled, empty piece of your own, so pressing it twice does not leave two blanks. It checked title, text and sources, not the conversation, so it could open in the middle of an old conversation that never got as far as a title. Blank now also means no conversation (one `GET /articles/:id/chat` before reusing).\n\n## Take offline says where to\n\nIt was a browser OK/Cancel: \"Take it off gentells.com? It goes back to review.\" It did not say the post also leaves /posts, its link stops working, and putting it back live needs the review gate (sources judged and signed), which most posts do not pass today. The row now asks, with what each does:\n- **Only off the front page**: stays on /posts with its link; Undo.\n- **Off gentells.com**: waits under In review; no Undo, because the gate would refuse putting it straight back.\nA post that leads the front page, or is already off it, says so instead of offering the first.\n\n## Checks\n\n- `npm test` 47/47, `vite build` clean.\n- In a local Studio against a copy of production, with real model calls: a typed question and a choice under the answer keep all messages; after the change the opening stays above the first message; a second New piece opens an empty conversation instead of the earlier one. The stories window itself could not be exercised locally (no recent signals in the copy).\n",
+            "branch": "workbench/take-offline-clear",
+            "title": "Studio: the opening stays, New piece starts fresh, Take offline says where to"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261015132637-47604f"
+}

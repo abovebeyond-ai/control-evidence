@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c7864d533665d3fbee83b21db52d568eea544cd6",
+            "branch": "workbench/menu-split",
+            "files_sha256": "33816ec89778c95391cf75b63cba920d5eccc323b2c33cb13f8c406bce5ad457",
+            "message": "Office menu: the app left of a bar, Verkennen and Netwerk right; no Werkfiches next to the logo"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015154558-54868b"
+}

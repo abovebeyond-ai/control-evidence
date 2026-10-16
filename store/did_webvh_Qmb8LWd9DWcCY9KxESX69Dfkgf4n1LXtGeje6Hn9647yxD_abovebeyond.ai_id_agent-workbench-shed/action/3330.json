@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b8274301e1875658ab6864ed6bba26d1080191f",
+            "branch": "workbench/kinds-as-data",
+            "files_sha256": "a08140c5fa4c40f1308d28b7e6156e3a3a2e24ff8272dd81669d34054e597742",
+            "message": "Read the gateway's kind table instead of copies of it"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261016054434-98636f"
+}

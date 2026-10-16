@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Adds `docs/content-architectuur.md`, a design for articles and news with Sanity as the source of truth and the site as a mirror. Documentation only; no code changes.\n\nWhat it covers:\n\n- **Corrections to `docs/journal-voorstel.md`** (section 0):\n  - No scheduled `sanity:sync` exists today; the webhook is the only trigger.\n  - The public Studio bundle cannot sign preview links, so preview goes through the site's admin login.\n  - Answering 410 or 301 for old slugs needs a `journal_slugs` history table.\n- **Schema** (sections 2 and 3):\n  - `journalPost`, with category, tag and author documents and an `seo` object.\n  - A per-language `articleBody` with a fixed set of block types: text, divider, figure, gallery, self-hosted video, YouTube/Vimeo embed (click-to-load), quote, frame pick and call to action.\n  - Each block type has a defined web and plain-text rendering.\n  - No raw HTML and no social embeds.\n- **Metadata and publishing** (sections 4 and 5):\n  - Structured data and Open Graph.\n  - Scheduling through `publishedAt`.\n  - IndexNow announcements.\n  - Four reliability layers: the webhook, an hourly sync, a sync on deploy, and mirror freshness.\n- **Contract** (section 6):\n  - Visibility rules in one class.\n  - A shared fixture of block types, tested on both the Studio and site side.\n  - Unknown block types are logged instead of silently dropped.\n- **Newsletter reuse** (section 7):\n  - The newsletter stays in Hoet's external mailing service.\n  - Editors flag news items for it.\n  - The site offers flagged items as cards (title, teaser, image, tagged link): a per-language feed, plus an admin page to copy each card as HTML.\n- **Migration, implementation checklist and open decisions** (sections 8 to 10).\n\nOpen decisions are listed in section 10: embed providers, preview through the admin login, which mailing service is used and whether it reads RSS, and how precise scheduling must be.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01P86UAHcDTaC3tvkUqnSPTW\n",
+            "branch": "workbench/content-architecture",
+            "title": "Content architecture for articles and news from Sanity"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261015133345-8b70a9"
+}

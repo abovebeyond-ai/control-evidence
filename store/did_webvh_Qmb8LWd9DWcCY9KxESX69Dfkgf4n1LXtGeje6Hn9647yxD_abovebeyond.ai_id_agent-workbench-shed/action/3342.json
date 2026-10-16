@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f2e1d3f743ead49b1c704d14e805569ca5626901",
+            "branch": "workbench/kinds-as-data",
+            "files_sha256": "7d783d33c380ace439d10383da41f48d2a4c8cb0d9f386f64283628fefab79e3",
+            "message": "The hand reads the gateway's kind table instead of a copy"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261016054558-7e1e3f"
+}

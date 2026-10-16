@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6a0e26826c2daa341eb5ec69bafd48bd87ab68b5",
+            "branch": "workbench/quote-outcome",
+            "files_sha256": "ca91a0bfe8ba1973c1b99c7e4c1fcc0bb9a53c7ed9ca4cde60e9fec83bb327a8",
+            "message": "Netwerk: count quotes only, and what became of them from the invoices after"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015150124-0515de"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9f395d3fbf960e430851308ad3175c8be246539f",
+            "branch": "workbench/hexon-portals",
+            "files_sha256": "fc8a4e96128c777db403ec83f353b52284ba5448845a00fc01e64d53016953df",
+            "message": "Pick portals from Hexon's links, show each portal's route, take portals out of the offer"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015100119-707312"
+}

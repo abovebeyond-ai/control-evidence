@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Studio's byline choice offered three names: the current byline, the editor's own name and the Editorial Team. An admin could not sign a piece with another writer's name, and a list of all accounts would mix clients with writers. This adds a small read the Studio uses for that choice.\n\n## Change\n\n- `listBylines()` in `articles-store.mjs`: every name a piece is signed with, trimmed, once each, most used first (ties by the most recent piece). Empty bylines are left out.\n- `GET /articles/bylines` (signed in): `{bylines: [{name, pieces, last}]}`. Placed before the `/articles/:id` match, which would otherwise read `bylines` as an id.\n- A guest writer typed once in the Studio is offered from then on, because the name is now on a piece.\n\n## Checks\n\n- `test/bylines.test.mjs`: one name per byline, most used first, spaces trimmed, empty ones left out.\n- Full suite 1210/1216; the 6 are `report-render`, which needs `pdftoppm` (installed on the box).\n\nThe Studio change that reads this is a separate PR; merge this one first. The Studio falls back to the current and own name when the route is missing, so the order only decides when the list appears.\n",
+            "branch": "workbench/bylines",
+            "title": "GET /articles/bylines: the writers to sign a piece with"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015112329-37566e"
+}

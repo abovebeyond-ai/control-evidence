@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two tests failed on runs that changed nothing they cover, both on the clock.\n\n- `HandsReadWithTheirKeyTest` signed the stale and future `iat` at `time()` minus or plus 121 seconds, against a window of 120 (`HandSignature::CLOCK_SKEW`). When the request reached the check one second later, the skew was exactly 120 and the request was accepted (main after #414). Both cases now sit a minute past the edge, written in terms of the constant.\n- `AppApiTest::test_a_working_set_admits_its_own_and_names_the_rest` made the working set with `now()->addDays(5)` and built the expected sentence from a second `now()->addDays(5)`. When a minute turned between the two, it read 08:13 against 08:14 (#415). The end is now read once and used for the set and both assertions.\n\nReplaces #415, which carries only the first fix; the gateway cannot push to an existing branch.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/clock-tests",
+            "title": "Two tests no longer fail when the clock turns during the run"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261016062722-d79cfe"
+}

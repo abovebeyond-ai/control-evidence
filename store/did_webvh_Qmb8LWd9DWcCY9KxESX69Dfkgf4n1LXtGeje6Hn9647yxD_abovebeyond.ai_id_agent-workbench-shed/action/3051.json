@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nAfter #1015 the portals screen read oddly in production: the twelve portals taken out of the offer sat expanded in the middle of the list an administrator works with, and the add card showed twelve Belgian Hexon links with \"Nog 6 andere: zoek verder\" while Hexon has 353 links.\n\n## What\n\n- The portals out of the offer are folded under one quiet line (\"12 portalen uit het aanbod tonen\") until asked for.\n- \"Portaal toevoegen\" is one scrollable box (max 440 px) with every Hexon link not yet in Stocklist: Belgian ones first under a sticky head \"Belgi\u00eb (22)\", then \"Andere landen\". The search narrows the same box. No cut-off and no \"nog N\" line.\n- A portal row is its own partial (`livewire/admin/_portal-row.blade.php`); the code-fix picker in a row lists all matches too.\n- Texts in nl, fr, en, de (`portals.group.*`, `show_out`, `hide_out`; `search_more` removed).\n\n## Checks\n\n- `AdministratorsManageThePortalsTest`: every free Hexon link is listed, Belgian first, the search narrows it; the portals out of the offer stay folded until toggled.\n- Full suite: 3106 tests OK (2 skipped, 1 incomplete, as on main). PHPStan: no errors. Pint on the touched PHP.\n- Screen rendered at 1440 px.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01LxNsc16PcyyY6R9uimutn4\n",
+            "branch": "workbench/portals-tidy",
+            "title": "Beheer > Portalen: fold portals out of the offer, one scrollable list of Hexon's links"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015101724-49327a"
+}

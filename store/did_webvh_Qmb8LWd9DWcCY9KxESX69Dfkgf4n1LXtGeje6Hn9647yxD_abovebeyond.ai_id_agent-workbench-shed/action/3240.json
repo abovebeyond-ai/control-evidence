@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: The seller filter on the shared Stocklist leaves out garages whose cars are on the shared stock (StockCars and Garage De Backer were reported missing), so a dealer cannot filter on them. Their cars do show, and \"Voertuigen van verkoper bekijken\" from a car works.\n\n## What is wrong\n\nSeen from several dealer accounts (among them Autoservice Thomas and Garage Vanhees): the \"Verkoper\" dropdown on /stocklist does not list StockCars or Garage De Backer, while their cars are in the result list and the deep link `?dealer_id=` filters on them fine.\n\n## Why, from the code\n\n1. **The list is cached for everybody, but built for one viewer.** `StocklistBrowser::render` caches `Enumeration::getDealersByGroup()` under `sl_dealers_<group>` for 15 minutes. That method removes the *viewing* garage from the list (and adds a \"favourite dealers\" entry when the viewer has favourites). Whoever fills the cache therefore disappears from the list for every other garage until it expires. After each deploy `stocklist:warm` fills it as the oldest dealer user, so that garage is missing for everyone; after expiry it is the next visitor's garage.\n2. **The list and the shared stock use different rules.** The dropdown lists garages with `module_1 = 1`; the shared stock (`Vehicle::scopeOnStocklist`) shows the cars of garages with `module_2 = 1`. A garage with module 2 and without module 1 has cars on the list but cannot be chosen as seller.\n\n## Fix\n\nCache only the part that is the same for everybody (the garages whose cars can be on the shared stock, `module_2 = 1`), and take out the viewer and add the favourites entry per request.\n\nSource: Portal mail:20.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Seller filter on the shared Stocklist misses garages whose cars are listed"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015140707-8aa274"
+}

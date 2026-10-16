@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d60ce3454bb17d1b618220d7ece30e60459b48c",
+            "branch": "workbench/explore-count-sentence",
+            "files_sha256": "88f08168ed7f705d9e66ec74b5ba79c3dec4ed52c82e0529aab2f45d56cfb255",
+            "message": "Verkennen: say what the count is a count of"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015130216-2e70f5"
+}

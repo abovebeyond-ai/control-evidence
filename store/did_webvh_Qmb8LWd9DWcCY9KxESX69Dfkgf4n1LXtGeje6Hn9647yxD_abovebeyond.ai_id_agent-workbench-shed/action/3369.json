@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "48b5f1cf5092de4cd83490219fecda007a618673",
+            "branch": "workbench/skew-flake",
+            "files_sha256": "eaf33738af71822be06ec36b0fd3578744e8af3f611bd52dd5c563baa2500159",
+            "message": "Test the clock window a minute past its edge, not one second"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261016061219-ea7d83"
+}

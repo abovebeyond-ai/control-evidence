@@ -1,0 +1,16 @@
+{
+    "action": "48e499335621d94bd63857d6f675edd8",
+    "effect": {
+        "detail": {
+            "base": "26b29308025364db0b9ffce5ca0726193f8a12f4",
+            "branch": "workbench/transport-dealer-view",
+            "commit": "358c4c59ec3870503aeaeb6fad760d1cebf7af73",
+            "files": 13,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3081,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "27fee4925020c1b7f1ec6309680e08e1",
+    "effect": {
+        "detail": {
+            "base": "d938333f7aba1c8f8cbf2a8467471a1c0fa50964",
+            "branch": "workbench/name-transferor-2",
+            "commit": "0991c58a07f99cb548b390556f9b79c03df7b0ff",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3306,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nNo screen wrote to `portals`. Every new portal (Ford.be, Okasie, and on 15 October 2026 Nissan.be for a garage moving from Carflowmanager to Hexon's direct Nissan.be link) was a row inserted by hand in the production database by someone with server access. Switching a portal on for a garage was already possible on the dealer card; adding one to the list was not.\n\n## What\n\nBeheer > Portalen (`portals.index`, menu right `portals`, administrators only), built like Beheer > Functies:\n\n- **New portal**: name (copied to `name_nl/en/fr/de`, as every existing row has it), a code that follows the name (`Nissan.be` becomes `nissanbe`, like `fordbe`, `autoscout24be`), optional website, VAT-only condition (R S2-4.9). Code: lowercase letters, digits, `-` and `_`, unique.\n- **List**: one row per portal with its code, website, VAT-only badge and how many garages have it on.\n- **Edit in place**: name, website and VAT-only. The code is fixed once the portal exists, because Hexon reads it with every vehicle (`vehiclePortalResource`) and the icon file is named after it. Nothing is deleted: garages and vehicles hang on the row.\n- The Livewire component refuses a non-administrator with 403 on mount and on every action.\n- Migration adds the menu item at the end of the Beheer dropdown (found as `2026_09_16_150000_move_features_menu_under_beheer` finds it) with the administrator right; idempotent, and a no-op on a database without a settings tree.\n- Texts in nl, fr, en, de; rule R S2-4.10 in `docs/bedrijfsregels/12-s2-eigen-wagenpark-publiceren.md`.\n\n## Checks\n\n- `AdministratorsManageThePortalsTest`: list with codes and garage counts, dealer refused by route and component, create with code from the name, typed code kept, taken and malformed codes refused, edit keeps the code.\n- Full suite locally: 3102 tests, OK (2 skipped, 1 incomplete, as on main). PHPStan: no errors. Pint on the new PHP files.\n- Migration run twice against a database with a settings tree: one menu row, one administrator right.\n- Screen rendered at 1440 px and 390 px.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01LxNsc16PcyyY6R9uimutn4\n",
+            "branch": "workbench/portal-admin",
+            "title": "Beheer > Portalen: administrators add and edit portals"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015090716-89a718"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #216, which failed CI on code style only (Pint on app/Models/Article.php); the change is otherwise the same, and `vendor/bin/pint --test` passes on the whole repo.\n\nThe front page's posts under the lead can now include posts an editor kept at a place in the Studio (pipeline: `articles.front_place`). This shows them there.\n\n## Change\n\n- Migration: `articles.front_place` (nullable). The projection maps it from the pipeline's article.\n- `Article::frontPage($under)`: the lead (as `leadFirst`), then `$under` places. A kept post stands at its place; the others fill newest first, so a new post takes the first free place and the number of posts the editors chose holds. A post kept beyond the last place takes its turn by date.\n- Both homes use it: the member home with the editors' number, the visitor home with two places after the lead.\n\n## Checks\n\n- `tests/Feature/FrontPlacesTest.php` (4): a kept post at its place with the rest by date; a new post takes the first free place and the count holds; a place beyond the count goes by date; the visitor home keeps places too.\n- `PinnedLeadTest` and `FrontSizesTest` unchanged and green (17/17 together).\n- Full suite: only `BuildStampTest` fails locally, as it does in any worktree.\n\nWithout kept places the order is exactly as before. Merge after the pipeline PR.\n",
+            "branch": "workbench/post-places-2",
+            "title": "Front page: posts kept at a place stand there, the rest fill by date"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261015120727-17abd6"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "06e6324e659345fe7644a8b0f748a91a99a88b8b",
+            "branch": "workbench/title-wraps",
+            "files_sha256": "9328b43fb05c4794198012dcce1f16f69fec1dd5ae4b0ee7607c2df81ad347cf",
+            "message": "The headline wraps"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261015133512-462069"
+}

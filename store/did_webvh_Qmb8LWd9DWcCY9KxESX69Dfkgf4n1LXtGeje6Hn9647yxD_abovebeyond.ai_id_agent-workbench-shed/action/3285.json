@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:21",
+            "note": "Issue #1026: fix 720b6e38 on workbench/transport-address-stays, tests green, not proposed; waiting for a go. Resetting the transport conditions for the garage is a prod data change for Shane.",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261015152208-a2af25"
+}

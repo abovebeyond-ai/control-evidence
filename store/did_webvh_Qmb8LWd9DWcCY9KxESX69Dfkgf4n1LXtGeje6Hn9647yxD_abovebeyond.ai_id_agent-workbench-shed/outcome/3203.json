@@ -1,0 +1,16 @@
+{
+    "action": "3f5c83ff21efd7ff4f5bf1ceba49dd11",
+    "effect": {
+        "detail": {
+            "base": "17a327c608a39975b113161ebc68e79b9b9708a4",
+            "branch": "workbench/pdf-sources",
+            "commit": "b72e8aaeeab44eb2f2587e10735ee1076ff0b583",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3201,
+    "verdict": "ALLOW"
+}

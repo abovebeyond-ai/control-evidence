@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "**Verkennen** opened on a flat list of every line: hours, machines and material bookings plus worksheet lines, newest first, a hundred at a time. Over a month that is thousands of lines, and nobody at a table can read anything from them.\n\nIt now opens on an overview, and the lines come together per day once something is opened.\n\n## The overview\n\nThree views, chosen with tabs above the table (the choice is in the URL as `per`):\n\n- **Per project** (the default): one row per project with the days worked, how many people, the count per type (icons in the header) and the last date. Most recent first. A row opens the project.\n- **Per persoon**: the same per person, with how many projects. Material has no person in Bouwsoft, so it is left out of this table, and the note under it says so. A name opens that person.\n- **Per dag**: every day, per project who was there, which machines and material, and what the worksheets and signals said.\n\n## Opened: day by day\n\nA project or a person opens day by day: each day once, with who was there (with a project), the machines and material (counted when used more than once that day), and the worksheet lines and signals. Signals are in red, and the \"fiche\" link stays office-only. With a person open there is a small header with \"Persoon sluiten\".\n\nThe project card above (who, machines, material, first and last date) is unchanged.\n\n## Printout\n\nIt follows the page: the table per project or per person, or day by day when a project or person is chosen or when `per=dag`. The old cap of 300 lines on paper is gone. The export link carries `per`. The CSV still has every line.\n\nThe side panel keeps \"Per week\". Its project and people lists went, because the table now carries them.\n\n## Note on #57\n\nThis branch is built on #57 (the sentence above the list), so it contains that change too. Merge #57 first, or merge this one alone and close #57.\n\n## Tests\n\n`ExploreTest`: the page opens on the project table and not on every line; per person and per day; a project and a person open day by day; filters narrow what is shown; `Records::overview()` and `Records::days()` count per project, per person and per day. Full suite 210/210, pint clean. Checked in a browser and as a PDF against a local database with sample data.\n",
+            "branch": "workbench/explore-overview",
+            "title": "Verkennen: an overview per project, person or day instead of every line"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015130743-e77714"
+}

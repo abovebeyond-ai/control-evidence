@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "26b29308025364db0b9ffce5ca0726193f8a12f4",
+            "branch": "workbench/transport-dealer-view",
+            "files_sha256": "8c7e1acb0a84319fd4147536fde62131d3a54e9acba156eb95d30c4fa0fd0308",
+            "message": "Transport for a garage: class names, express price, VAT line, indicative price"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015103651-ccc02c"
+}

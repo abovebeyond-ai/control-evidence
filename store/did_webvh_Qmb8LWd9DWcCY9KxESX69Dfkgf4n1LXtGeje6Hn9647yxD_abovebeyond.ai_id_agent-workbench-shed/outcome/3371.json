@@ -1,0 +1,16 @@
+{
+    "action": "5d80689fc3ecea4453ef8c9352c66e0f",
+    "effect": {
+        "detail": {
+            "base": "48b5f1cf5092de4cd83490219fecda007a618673",
+            "branch": "workbench/skew-flake",
+            "commit": "d24154099b4b26ba77814d97a4e684a2407215f1",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3369,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "83689649627d14c5d9eaaad31eeedf85",
+    "effect": {
+        "detail": {
+            "base": "aa8a6b5f493fedfd156d4b2c4460e219e2388e4d",
+            "branch": "workbench/fill-covers",
+            "commit": "b2b19bb71dc72414d385654beb05b6129874347d",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3141,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "6c9c9df995ffa0b5b7c8c1f04696bcf7",
+    "effect": {
+        "detail": {
+            "base": "8e3895e17a54769bb07256685912e8d716ccec4f",
+            "branch": "workbench/portal-admin",
+            "commit": "efe8ba8b9fe353f63d632442a2c07e1df6a11d76",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3036,
+    "verdict": "ALLOW"
+}

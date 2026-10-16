@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0d60ce3454bb17d1b618220d7ece30e60459b48c",
+            "branch": "workbench/explore-overview",
+            "files_sha256": "223c50826e9081a40c4a7cf8c7dedb4f3bbdca6da6d75736c3bf30f47ae61d9a",
+            "message": "Verkennen: a table per project, person or day first, and day by day once one is opened, instead of every line"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015130743-e77714"
+}

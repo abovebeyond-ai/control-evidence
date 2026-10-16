@@ -1,0 +1,16 @@
+{
+    "action": "1597af38034c2f55143e0a0887b658c0",
+    "effect": {
+        "detail": {
+            "base": "69dc738e7504557705ab6f6ffcc9cc280db45447",
+            "branch": "workbench/retag-posts",
+            "commit": "4f2e4b143c2881d3b8c47f8f65e1fc9e4a502943",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3153,
+    "verdict": "ALLOW"
+}

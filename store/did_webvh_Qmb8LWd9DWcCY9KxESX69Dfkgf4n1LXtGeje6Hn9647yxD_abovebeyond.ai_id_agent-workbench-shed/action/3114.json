@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two things about how a post opens in the writing view: who it is by, and its cover.\n\n## Byline under the standfirst\n\nThe byline sat at the foot of the sheet, beside Goes to, Stage and Read by, so opening a live post did not show who it is by. It now stands under the standfirst, as gentells.com shows it, with the date a post went live.\n\n- An admin chooses the Editorial Team (first), one of the writers, or Another name... for a writer without an account. The writers are every name a piece is signed with, most used first, from `GET /articles/bylines` (pipeline PR). A name typed once is offered from then on.\n- The author keeps the choice between their own name and the Editorial Team. Everyone else reads the name.\n- Only the name shown changes; the owner of the piece (`author_id`) stays.\n- Against a pipeline without the route, the list falls back to the current and own name.\n\n## Cover where the post opens\n\n- The cover stands clean at the top. Hovering shows one round control (always shown on touch screens), which opens a window to choose: the piece's own pictures, pictures from its sources, Upload, Paste a link, Remove the cover, Close. Escape and a click outside close it.\n- Without a cover, an editor sees an empty place, \"+ Add a cover\", that opens the same window. A reader of someone else's piece sees nothing there.\n- The pictures in a piece's text now count among its own. Guilherme's posts carry theirs in the body, and the pool only knew uploads, links and PDF covers.\n- The margin's cover panel stays as it was, with the text's pictures added.\n\n## Checks\n\n- `npm test` 44/44, `vite build` clean.\n- Checked in a local Studio against a copy of production: an admin changed a live post's byline to a guest writer's name and it saved (`{\"authorName\": ...}`); an editor who is neither admin nor author saw the name as text; the cover control appears on hover, the window opens and closes, and the pictures from the text appear among the choices.\n\nMerge the pipeline PR with `GET /articles/bylines` first.\n",
+            "branch": "workbench/byline-on-top",
+            "title": "Write: the byline under the standfirst, and the cover changed from the cover itself"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261015112351-83eef4"
+}

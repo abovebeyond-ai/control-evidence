@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Curate's front page: how many posts stand under the lead, and posts kept at a place while new ones arrive. Plus covers in the list of posts.\n\n## Front page\n\n- The number of posts under the lead is an underlined choice in the Posts line (\"The newest leads, then 5 under it\"), 0 to 24 within `frontRange`. It is stored: a new post takes the first free place and the oldest drops off.\n- Drop a post on a place, or press Keep here, and it stays there (`POST /site/front/place`, pipeline PR). The other places fill newest first around it, the way the site fills them (`arrangeUnder`, after the site's `Article::frontPage`). A kept card says Kept here, let go.\n- Reset order lets kept places go as well as the pinned lead. Every change has Undo, including putting back the post a keep displaced.\n- Curate now loads all live posts (up to 200), not the newest fifty: a kept post can be older than that.\n- The drop reads the post's id from the drag itself; the dragging state is set a tick after the drag starts.\n\n## Posts\n\n- Each row shows its cover, or \"No cover\". gentells.com fills a missing cover with a piece of the collage chosen from the title, which hid that 23 live posts have none.\n- The live list is all posts, newest publication first, as on gentells.com. It was a page of twenty by last change, which put a September post between two from October.\n\n## Checks\n\n- `npm test` 47/47 (three new cases for `arrangeUnder`), `vite build` clean.\n- In a local Studio against a copy of production and the pipeline PR: the count changed to 5 and showed five posts; dragging the fourth post to place 1 moved it there and the others slid down by date; Keep here held a post at place 3; Reset order put the date order back; the posts list showed all 78 newest first, 23 of them \"No cover\".\n\nMerge after the pipeline and site PRs.\n",
+            "branch": "workbench/front-places",
+            "title": "Curate: the number of posts under the lead, kept places, covers in the posts list"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261015115717-95b42c"
+}

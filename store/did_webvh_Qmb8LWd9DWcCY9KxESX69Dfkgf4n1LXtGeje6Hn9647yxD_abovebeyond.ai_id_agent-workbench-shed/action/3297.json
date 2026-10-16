@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The office menu ran nine items in one row, with the worksheet app and the pages that look at the company data mixed together.\n\n- **Left of a thin vertical bar:** the worksheet app (Dag, Inzichten, Catalogus, Ploeg, Werf-app, and Demo resetten when the demo switch is on).\n- **Right of the bar:** Verkennen and Netwerk. Then the signed-in name and Afmelden, a little further apart.\n- **\"Werkfiches\" next to the logo is gone**, and the browser tab reads \"<page> \u00b7 GLK\" instead of \"<page> \u00b7 GLK werkfiches\". The sign-in page and the guest layout are unchanged.\n\nSomebody on a shared link still sees only Verkennen and Netwerk.\n\nOne file: `resources/views/components/layouts/office.blade.php`. Full suite passes. Checked in a browser.\n",
+            "branch": "workbench/menu-split",
+            "title": "Office menu: app left, Verkennen and Netwerk right of a bar"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015154558-54868b"
+}

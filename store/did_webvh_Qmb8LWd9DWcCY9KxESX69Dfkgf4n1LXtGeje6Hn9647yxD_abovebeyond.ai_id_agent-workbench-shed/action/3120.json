@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "gentells.com's front page puts the newest posts under the lead. An editor can pin the lead and take a post off the front page, but cannot keep a post at a place while newer ones keep arriving. This stores that place; the site and the Studio read it (separate PRs).\n\n## Change\n\n- `articles.front_place` (integer, 1 is right under the lead), added at start like the other front page columns.\n- `setPostPlace(id, place|null)`: one post per place (keeping a post where another was kept lets that one go back to its date), never the lead, only a live post, 1 to 24. A kept post is on the front page by definition, so it clears `off_front_at`. Leading or going off the front page lets the place go.\n- `clearPostPlaces()`: every kept place let go.\n- `POST /site/front/place` with `{id, place}` or `{reset: true}`; every post that moved is sent to the projection, which carries `front_place` to the site with the rest of the article.\n- `LIST_COLUMNS` carries `front_place` for Curate.\n\n## Checks\n\n- `test/front-places.test.mjs` (6): one post per place, the list carries it, a kept post comes back on the front page, refusals (lead, draft, out of range), leading or going off lets it go, reset.\n- Full suite 1216/1222; the 6 are `report-render` (`pdftoppm`, installed on the box).\n\nMerge this first, then the site PR, then the Studio PR.\n",
+            "branch": "workbench/post-places",
+            "title": "Front page: keep a post at a place under the lead"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015115630-7b28bd"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "776388595b0c9951f9e6ed8b58b066341e418623",
+            "branch": "workbench/byline-menu",
+            "files_sha256": "7dd770da4f01b250c671f4357443d479b9f326888ee3e5225b018b9903764df6",
+            "message": "The byline uses the Studio's own menu, not the browser's select"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261015140537-965eee"
+}

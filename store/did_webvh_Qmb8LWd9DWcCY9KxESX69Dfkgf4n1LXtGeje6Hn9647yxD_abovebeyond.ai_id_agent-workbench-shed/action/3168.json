@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Moves **Verkennen** to the end of the office menu, after Ploeg: Dag, Inzichten, Catalogus, Ploeg, Verkennen. The daily pages stay first; browsing is for occasional use, such as a workshop.\n\nOne link moved in `resources/views/components/layouts/office.blade.php`, nothing else. Office, Verkennen and link tests pass (OfficeAccessTest, ExploreTest, ExploreLinkTest).\n",
+            "branch": "workbench/explore-after-team",
+            "title": "Office menu: Verkennen after Ploeg"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015124628-604bd3"
+}

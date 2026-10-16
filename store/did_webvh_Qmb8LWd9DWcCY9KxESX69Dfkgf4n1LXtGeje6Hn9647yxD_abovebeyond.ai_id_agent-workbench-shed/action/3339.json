@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Portal kept its own copies of the gateway's kinds:\n- `Capability::WORKBENCH_KINDS`;\n- the actions in `Capability::SYSTEMS`;\n- `Grants::KIND_WORDS`;\n- the action labels in `KIND_LABELS`.\n\nSince control v0.43.0 the gateway serves its kind table, and Elixir passes it on with the grants report. This reads it (`KindTable`).\n\n- **The workbench admission** covers every kind with a radius that no running system performs. That is the rule Elixir writes the grant by. Without the table, Portal refuses to sign an admission, by name (`no_kind_table`, a new refusal name for the app), instead of signing one that names no kinds.\n- **A system's actions (B2)** come from the table, by the systems each kind acts on. A kind the owner defines in the policy is offered on its system's layer and said in its own words, with no change here. A new system still needs its name and repository in `SYSTEM_INFO`.\n- **The reads (B1) stay Portal's** (`Capability::READS`, `Grants::READ_WORDS`, the read labels). The gateway does not carry them out. Portal signs them for the systems.\n- **A version may carry `kinds`** (`PolicyLog::FIELDS`, `BODY_FIELDS`). Without this, Portal would refuse the owner's first version that defines a kind. A malformed shape is refused here, so it never blocks the chain. The gateway judges the rest.\n- **A gap that was already there:** \"Writes to a live system\" (the Gentells writes) was missing from `Grants::PLACES`. So `/portal/grants` showed those B2 actions as not live and checked their admission as proposals. It is now live, like a repair.\n\n**Order:** after Elixir's PR is deployed and has sent one grants report with the table. Until then a workbench admission is refused with `no_kind_table`.\n\nTests: the full suite passes (751 of 752; BuildStampTest fails in a worktree, as known), and pint is clean. Tests use a fixture of the served table. New:\n- `KindTableTest` (the table arrives with the report; a kind the policy defines is offered and said; an admission waits for the table);\n- `test_a_version_that_defines_kinds_is_kept`.\n\nThe kind order in an admission is now sorted.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/kinds-as-data",
+            "title": "Read the gateway's kind table instead of copies of it"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261016054503-5d20eb"
+}

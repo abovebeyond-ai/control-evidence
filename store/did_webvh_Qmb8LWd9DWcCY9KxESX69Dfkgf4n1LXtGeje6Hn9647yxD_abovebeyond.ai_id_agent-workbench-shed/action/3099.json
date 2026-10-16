@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A dealer clicked the transport truck on a customer order and nothing happened (Portal mail:19).\n\n**Cause.** `Order::vehicle()` loads the order's vehicle `withTrashed`, so the truck shows on an order whose car the garage deleted after the sale. `TransportController::ownVehicle` did not include trashed vehicles, so the window answered 404, and `modal.get` ignored a failed load. On production the garage of the report had two orders, both on a deleted car. This is not rare: of 224 orders in the 90 days to 15 October 2026, 80 are on a deleted car, 54 deleted within 14 days of the order.\n\n**Change.**\n- `ownVehicle` accepts the garage's own deleted vehicles; a deleted car of another garage stays 404. Every transport route on a vehicle (window, conditions, request) goes through it.\n- `modal.get` shows a message (the server's, or `ui.modal_load_failed` in five languages via a meta tag in the layout) when a window does not load, for every window in the application.\n- R S4-10.17 says so.\n\nTests: new `TransportForADeletedOwnVehicleTest` (404 on main, passes here: conditions asked, accepted, request stored; another garage's deleted car refused). Full PHP suite and vitest green.\n\nCloses #1017\n",
+            "branch": "workbench/transport-deleted-vehicle",
+            "title": "Transport truck opens for a car the garage deleted after the sale"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015110110-6e866c"
+}

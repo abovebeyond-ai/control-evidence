@@ -1,0 +1,17 @@
+{
+    "action": "9919e58fb9d15ef93c8a5d3392f8a40c",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 248,
+            "review_problem": "GitHub answered 422: Validation Failed",
+            "review_requested": false,
+            "url": "https://github.com/abovebeyond-ai/elixir/pull/248",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3333,
+    "verdict": "ALLOW"
+}

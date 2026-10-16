@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The first `relations:sync` on GLK's Bouwsoft (15 October, since 1 January 2023) showed two things the field list did not:\n\n- **Bouwsoft's Orders holds invoices too.** Of 6,256 lines, 4,658 were `FAKTUUR` and 60 `CREDITNOTA`; only 1,538 were quotes (`OFFERTE`). The invoices are already counted through SalesInvoices, so they were counted twice, and \"Van offerte tot order\" treated them as quotes.\n- **GLK does not mark quotes accepted or rejected.** Of the 1,538 quotes, 5 were accepted and 1 rejected; the rest are \"open\". An acceptance rate from those flags says nothing.\n\nAlso every purchase line carries the cost category \"Volledig Project\", which says nothing about the supplier.\n\n## What changes\n\n- Lines in Orders whose type is an invoice or a credit note are skipped (`/fa[ck]tuur|invoice|credit/i`). Only quotes (and any order type that is not an invoice) remain.\n- A quote that Bouwsoft leaves open gets its outcome from the invoices: **gefactureerd** when its project got a sales invoice on or after the quote date (decided on that first invoice), **geen factuur** when nothing came within 180 days (`RelationSync::QUOTE_WAIT_DAYS`), otherwise still **open**. An explicit accepted or rejected in Bouwsoft still wins.\n- The page counts **gewonnen** (accepted or invoiced), **niet gewonnen** (rejected, or no invoice after six months) and **nog open**, and the median is now \"from quote to first invoice\". The note under the tab says how this is derived, including that a quote without a project cannot be invoiced and counts as not won after six months.\n- \"Volledig Project\" is dropped as a category, so the supplier's projects show without it.\n- The CSV column `aanvaard` becomes `gewonnen`.\n\n## Tests\n\n`NetworkTest` gains an invoice in Orders (skipped), an open quote invoiced afterwards (won), an old open quote without an invoice (not won), and a \"Volledig Project\" line (no category). Full suite 226/226, pint clean.\n\n## After merge\n\nRun the sync once more on the server, from a fresh shell in the site's `current` folder:\n\n    php artisan relations:sync\n",
+            "branch": "workbench/quote-outcome",
+            "title": "Netwerk: count quotes only, and derive won or not won from the invoices after"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015150124-0515de"
+}

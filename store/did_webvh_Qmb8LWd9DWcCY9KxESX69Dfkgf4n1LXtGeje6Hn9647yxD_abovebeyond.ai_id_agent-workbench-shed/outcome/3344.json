@@ -1,0 +1,16 @@
+{
+    "action": "3cfe5f2c341cba2c27406ad9af26e8ed",
+    "effect": {
+        "detail": {
+            "base": "f2e1d3f743ead49b1c704d14e805569ca5626901",
+            "branch": "workbench/kinds-as-data",
+            "commit": "41c43bdbedaf25d7aaa4a73feefb100d0e47ccc7",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3342,
+    "verdict": "ALLOW"
+}

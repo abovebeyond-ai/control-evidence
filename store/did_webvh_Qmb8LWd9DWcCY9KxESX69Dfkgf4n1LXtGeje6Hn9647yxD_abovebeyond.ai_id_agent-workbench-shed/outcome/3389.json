@@ -1,0 +1,16 @@
+{
+    "action": "450922ce3a8b66d3ec89a508c44deafc",
+    "effect": {
+        "detail": {
+            "base": "af31ce30c6284bfe0a1f20fcfb508173c9cb8ed7",
+            "branch": "workbench/graph-gravity",
+            "commit": "6fa08f2b9f1aeb69cf5276d875ab61bc00bd62e4",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3387,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Four things a garage met on transport, from Portal mail:19.\n\n**Class names were empty** (#1018). `SettingsController::index` selected the class name as `name_<lang> as name`, but `VehicleClass` and `VehicleClassItem` have a `name` accessor that reads `name_<lang>` and `name_nl` from the model. Those columns were not selected, so the accessor returned null and hid the alias: no class name in the price table or the dimensions matrix, for anyone. The query now selects the language columns and the accessor does the rest.\n\n**Express read as a surcharge** (#1019). The tab previews prices with the platform tariffs (margin, express percentage, handover report), which are settings rows without a dealer. They were merged into `$settings` only for users with `removebgkey.index`, so a garage got zeros: express became the bare base price (lower than normal) and normal missed the handover report. The three tariffs are now loaded for every user; the inputs to change them stay administrator-only (R P2-8.4). `TransportChainTest` pinned the old amounts for a user without that right and now asserts the full ones.\n\n**Formula hidden for a garage** (#1020). Under the table a garage reads only \"Alle prijzen excl. 21% btw.\" (the existing, unused `transport.prices_excl_vat`, shortened in five languages); the formula line stays for the administrator.\n\n**Indicative price on a car** (#651, V-25). The line \"Transport vanaf \u20ac ... excl. BTW\" on a car's detail page followed `isAdmin()`. It now follows the `use-transport` Gate, so every garage with own stock sees it. It does not wait for the transport conditions: those are asked when a transport is requested (R S4-10.19). Recorded as decision `transport-richtprijs-voor-elke-garage`, R S4-10.2 updated, finding marked resolved.\n\nNot in this PR: #1017 (the truck on a customer order that opens nothing). The request window renders fine for a garage without accepted conditions in a test, so the cause sits in that garage's data; it needs the order where it happened.\n\nTests: new `TransportTabForAGarageTest` (fails on main, passes here), the transport and rules tests, and the full suite: green except the known `APhotoWithoutAForegroundIsNotAFaultTest` cases on a reused database.\n\nCloses #1018\nCloses #1019\nCloses #1020\nCloses #651\n",
+            "branch": "workbench/transport-dealer-view",
+            "title": "Transport for a garage: class names, express price, VAT line, indicative price"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015103651-ccc02c"
+}

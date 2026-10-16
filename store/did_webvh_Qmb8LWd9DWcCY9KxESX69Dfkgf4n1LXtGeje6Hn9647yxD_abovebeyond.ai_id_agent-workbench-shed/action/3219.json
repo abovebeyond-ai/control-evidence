@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c950b4cdb19c4b4c5d648512c70fed902e4403ae",
+            "branch": "workbench/explore-lenses",
+            "files_sha256": "e0f8876de1f918082e5d274b2ba0ea3e215ec84ea75d6eac4044db652afec672",
+            "message": "Verkennen: lenses beyond the project table: what stands out, a timeline, who with whom, machines and material"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015134439-101f5e"
+}

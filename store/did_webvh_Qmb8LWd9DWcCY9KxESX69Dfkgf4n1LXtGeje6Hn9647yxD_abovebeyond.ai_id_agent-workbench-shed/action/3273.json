@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: Adding a delivery address from the transport request window throws the dealer out of the request and onto Settings > Services > Transport. The dealer has to find the order again to finish the request.\n\n## What happens\n\nA garage without a delivery address opens a transport request (Bestelbonnen > truck). The window shows \"Je hebt nog geen leveradres\" with the button \"Adres toevoegen\". The button opens the location window on top of the request. Saving it posts the form as a full page with `redirect=transport`, and `DealerLocationController::storeModal` answers with a redirect to the settings transport tab. The request window is gone.\n\nGoing back through Administratie > Bestelbonnen and opening the request again works: the new address is there and can be chosen. So the address is saved; only the way back is wrong.\n\n## Expected\n\nSaving the address from the request window closes the address window and leaves the dealer in the request, with the new delivery address selected. The same button on the settings transport tab keeps returning to that tab (R P2-6.3).\n\nSource: Portal mail:21.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Adding a delivery address from the transport request leaves the request"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015150739-9ecb6e"
+}

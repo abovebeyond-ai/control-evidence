@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8e3895e17a54769bb07256685912e8d716ccec4f",
+            "branch": "workbench/portal-admin",
+            "files_sha256": "7e43ee7e351d03b9739a1e52c6c7ef0b79e1f195f6d14de0c67f26f0036d9a55",
+            "message": "Add an administrator screen for the portals catalogue"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015090421-763c5b"
+}

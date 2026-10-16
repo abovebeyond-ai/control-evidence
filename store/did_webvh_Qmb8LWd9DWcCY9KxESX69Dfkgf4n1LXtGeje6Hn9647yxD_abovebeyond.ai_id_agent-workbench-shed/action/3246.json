@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1024\n\n## What was wrong\n\nThe \"Verkoper\" dropdown on the shared Stocklist missed garages whose cars are on the list (StockCars and Garage De Backer were reported). Two causes:\n\n1. `StocklistBrowser` cached `Enumeration::getDealersByGroup()` under `sl_dealers_<group>` for 15 minutes, but that method takes the *viewing* garage out of the list and adds a \"favourite dealers\" entry for viewers with favourites. The garage that filled the cache was missing for every other garage. After each deploy `stocklist:warm` fills it as the oldest dealer user, so that garage was missing for everyone until the key expired; after that, the next visitor's garage.\n2. The list asked for `module_1 = 1`, while the shared stock (`Vehicle::scopeOnStocklist`) shows the cars of garages with `module_2 = 1`.\n\n## Change\n\n- `Enumeration::sellersByGroup()`: the viewer-independent list (garages with `module_2 = 1`, optionally per dealer group). This is what is cached, now as `sl_sellers_<group>`.\n- `Enumeration::sellersForViewer()`: takes the viewer out and adds the favourites entry, per request.\n- `getDealersByGroup()` composes the two, so the old filter screens and the dealer-group AJAX route behave the same.\n- `stocklist:warm` checks the new key.\n\n## Tests\n\n- New `StocklistSellerListTest`: a garage that filled the cache appears on the next garage's list; a module-2-only garage is listed, a garage without module 2 is not. Both fail on `origin/main`, pass here.\n- `StocklistBrowserTest`, `WarmCachesTest` pass, except `test_model_select_shows_a_count_per_model`, which fails locally on a test database that lacks the newer `models.merged_into_id` column (unrelated; CI builds a fresh one).\n- PHPStan clean; the new test file passes Pint.\n\n## After merge\n\nThe old `sl_dealers_0` key is simply no longer read. The first page view after deploy fills `sl_sellers_0` (the deploy warm-up does too).\n\nSource: Portal mail:20.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/seller-list-cache",
+            "title": "The seller list shows every garage on the shared stock, whoever filled the cache"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015140943-ec00b6"
+}

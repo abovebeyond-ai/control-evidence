@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ed0d096a1588b237c370bff230a3a708f87c64e8",
+            "branch": "workbench/explore-link",
+            "files_sha256": "7a9e6732ce08a7651eebf30b41cc3095dcf5bbe45b29eb5d8d4c5c38a5e93977",
+            "message": "A personal link that opens the browse page without an office account, until its end date or until revoked"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015123900-a0dd41"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4047236e2451fefe33608bcebaa84948b7467a71",
+            "branch": "workbench/monitor-test-home",
+            "files_sha256": "70632d68cb629b250c3c6ba9fdac688a5ee526e081814356cb94063b0a6eeac4",
+            "message": "Monitor tests measure in a home of their own"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015103412-0a13bf"
+}

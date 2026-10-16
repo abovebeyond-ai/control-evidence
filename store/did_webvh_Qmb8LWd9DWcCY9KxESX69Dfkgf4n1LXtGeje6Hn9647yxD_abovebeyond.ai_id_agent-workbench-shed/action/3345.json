@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The hand kept `WORKBENCH_KINDS` and `REVIEW_KINDS` by hand \"until the gateway serves its kinds itself\". Since control v0.43.0 it does, on `/v1/agents` (control `docs/kinds.md`).\n\n- **`admit()`** names the kinds the table gives a word:\n  - for the workbench, every kind with a radius that no running system performs (the rule Elixir and Portal follow);\n  - for Vera, the kinds her adapter performs.\n  \n  Without a table it signs no word.\n- **A policy version may carry the kinds it defines**, in the body of the digest form, and only when there are some. `hand.mjs policy sign` signs such a draft.\n\nTests: `lib/policy.test.mjs` passes (two new tests). `lib/stocklist-read.test.mjs` already fails on main (the bundled snapshot's tool list) and is untouched.\n\n**Order:** after control v0.43.0 runs on the gateway.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01MBaSFnjUaWrtwYLjjk5ZQ8\n",
+            "branch": "workbench/kinds-as-data",
+            "title": "The hand reads the gateway's kind table instead of a copy"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261016054558-7e1e3f"
+}

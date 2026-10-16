@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d2b14333d9f64befa565d974b9347cf236420881",
+            "branch": "workbench/revenue-share",
+            "files_sha256": "00df6f22a2afa5b983459e9b4cbd20379f996fb4658d6b715a8032f6702a8a2b",
+            "message": "Netwerk: each client's share of each year's revenue, from the sales invoices"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015152200-fc5264"
+}

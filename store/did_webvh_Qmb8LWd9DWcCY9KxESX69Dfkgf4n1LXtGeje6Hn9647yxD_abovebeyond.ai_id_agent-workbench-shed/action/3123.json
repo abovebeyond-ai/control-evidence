@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e1dcb8ced92262dde4bf8b22dbc5dbe3fc59b122",
+            "branch": "workbench/post-places",
+            "files_sha256": "76cb621af95cdfeaedcb7c9bb65f1e915c1c6f34b667ff80203399af058391a4",
+            "message": "Front page: posts kept at a place under the lead stand there, the rest fill by date"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261015115651-f4ae8a"
+}

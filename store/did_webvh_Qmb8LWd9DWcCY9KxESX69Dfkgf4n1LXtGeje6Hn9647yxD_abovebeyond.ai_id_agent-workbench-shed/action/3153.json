@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "69dc738e7504557705ab6f6ffcc9cc280db45447",
+            "branch": "workbench/retag-posts",
+            "files_sha256": "578325d9e6b11ebc4370b007594b902e6e2542a6b0878e12ff4f6c03dd3731e4",
+            "message": "Set who live posts are about from a reviewed plan"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015123305-13d070"
+}

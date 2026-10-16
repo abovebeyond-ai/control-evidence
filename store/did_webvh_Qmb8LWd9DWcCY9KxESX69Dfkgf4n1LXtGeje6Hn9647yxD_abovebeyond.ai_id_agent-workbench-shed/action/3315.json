@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The link to the worksheet app under the sign-in form asked \"Arbeider? Ga naar de werf-app.\" It is not only for labourers: drivers, site leads and anybody else who records a day use it too. It now reads **Klik hier voor de werf-app**, same link, same place.\n\nOne line in `resources/views/livewire/office/login.blade.php`. OfficeAccessTest passes.\n",
+            "branch": "workbench/login-site-link",
+            "title": "Sign-in page: 'Klik hier voor de werf-app'"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015155851-396c73"
+}

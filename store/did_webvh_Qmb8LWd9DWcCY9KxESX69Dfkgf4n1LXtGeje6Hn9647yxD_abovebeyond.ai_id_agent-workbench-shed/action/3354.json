@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "48dede01e1c5036bdf5f15ad6970ba410b83babc",
+            "branch": "workbench/transport-address-stays",
+            "files_sha256": "1815b98c4d04a6848bbc7560c36622efde933654ff9ce6b272dab179ea2b5cd4",
+            "message": "Keep the dealer in the transport request after adding a delivery address"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016060650-1f6f4f"
+}

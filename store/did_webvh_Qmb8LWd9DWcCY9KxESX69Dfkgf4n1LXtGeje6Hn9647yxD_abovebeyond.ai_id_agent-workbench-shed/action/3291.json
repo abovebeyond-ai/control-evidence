@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Adds each client's **share of the year's revenue** to Netwerk, for the workshop's question which relations would hurt most if they fell away.\n\n## What changes\n\n- `relations:sync` now asks one amount of Bouwsoft: per sales invoice `amountinclvat` minus `vatamount`, so the amount excluding VAT. A client under reverse charge and a private client at 21% then weigh the same for the same work. A credit note takes revenue back, whatever sign Bouwsoft gives it. It is kept in a new nullable `relation_links.amount`, on sales invoices only. Every other amount (quotes, purchases) still stays in Bouwsoft.\n- Sales invoices are no longer folded together when two fall on the same day for the same client and project: each counts.\n- **Aandeel in omzet** is a new tab: one row per client, a column per year from the start of the period (the current year marked as running), and the share over the whole period. Sorted on the last full year. Above it, per year, what the five and the ten largest clients make together.\n- The open relation shows its share per year, and the **CSV met notities** gains a column per year.\n\nThe page shows shares, never amounts. A shared link sees the shares too.\n\n## Tests\n\n`NetworkTest`: only sales invoices carry an amount; shares per year with two invoices on one day and a credit note; the tab renders. Full suite passes, pint clean. Checked in a browser against a local database with made-up invoices.\n\n## After merge\n\nRun the sync once more, in one line so the shell is in the new release:\n\n    cd ~/glk-transferor.on-forge.com/current && php artisan relations:sync\n",
+            "branch": "workbench/revenue-share",
+            "title": "Netwerk: each client's share of the year's revenue"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015152200-fc5264"
+}

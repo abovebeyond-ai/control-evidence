@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:21",
+            "note": "Issue #1026 (address window leaves the request): fix committed 720b6e38 on workbench/transport-address-stays in /home/bench/work/mail21-address, tests green, not proposed. Waiting for a go to propose. Second request (reset transport conditions for the garage in the mail) is a prod data change for Shane.",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261015152203-17b1d6"
+}

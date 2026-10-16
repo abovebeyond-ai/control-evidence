@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ee86ed6002a0ffad32720a4237c41c5566e08dcc",
+            "branch": "workbench/journal-schemas",
+            "files_sha256": "9c042e402a1796be894410081f8e80bbc6019f29e9fe432094f70facba642b82",
+            "message": "Add the journal to the Studio: articles, categories, tags and authors"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261015140615-f953a9"
+}

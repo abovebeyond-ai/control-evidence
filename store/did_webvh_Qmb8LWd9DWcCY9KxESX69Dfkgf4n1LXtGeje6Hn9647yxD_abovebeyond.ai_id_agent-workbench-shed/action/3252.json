@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b593e29a29f37e857799099c34bdda4b2ce1e490",
+            "branch": "workbench/network",
+            "files_sha256": "e98e7d29aa86d4b605a597e9e4ba5f8845c4baa5a8e5f4ba7e61426ce62b31e9",
+            "message": "Netwerk: GLK's relations from Bouwsoft over three years, as a graph, with tags from the workshop and the road from quote to order"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015142927-7c2ac5"
+}

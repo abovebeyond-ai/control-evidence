@@ -1,0 +1,16 @@
+{
+    "action": "ddf00e36ffa150beefd4a9048e70b40e",
+    "effect": {
+        "detail": {
+            "base": "c7864d533665d3fbee83b21db52d568eea544cd6",
+            "branch": "workbench/menu-split",
+            "commit": "0af0f71903380a2598ffa6e08f1013e72937a8fa",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3294,
+    "verdict": "ALLOW"
+}

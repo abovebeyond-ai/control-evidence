@@ -1,0 +1,16 @@
+{
+    "action": "959ed1d2b71cde54ef459fe8b45fdd5a",
+    "effect": {
+        "detail": {
+            "base": "564b1df588891460b7946e618c8fa779a7ab60fe",
+            "branch": "workbench/take-offline-clear",
+            "commit": "f142af4f29cadb8e0bb1c59f35b4efb20c200153",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3195,
+    "verdict": "ALLOW"
+}

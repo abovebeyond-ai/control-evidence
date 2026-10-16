@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a2a2f1fb1bc6c95e2dd396b8b65f1e9bc297d255",
+            "branch": "workbench/explore-after-team",
+            "files_sha256": "5f10d63426e9513e35b28e283e80c1b75d76bdb1e197c3653a6b4a1af44c209e",
+            "message": "Office menu: Verkennen after Ploeg"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015124628-604bd3"
+}

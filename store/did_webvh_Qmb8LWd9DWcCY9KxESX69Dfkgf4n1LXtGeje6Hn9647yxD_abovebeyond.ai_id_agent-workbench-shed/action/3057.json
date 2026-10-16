@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b3fffa5ac5c0f50481a09d769db6884a3c85a34d",
+            "branch": "workbench/replace-posts",
+            "files_sha256": "f1392b2c693ef592abbb8426186bc147a5f488715a66b5360071e1cd91c1cd60",
+            "message": "Replace Guilherme's posts in place, re-date and publish them, relink their evidence"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015102403-8a28f2"
+}

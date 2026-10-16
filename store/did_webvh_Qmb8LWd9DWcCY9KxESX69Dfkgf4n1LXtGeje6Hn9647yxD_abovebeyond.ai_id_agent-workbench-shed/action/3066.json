@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: On Instellingen > Service & Diensten > Transport the vehicle class column of the price table and the class names in the dimensions matrix are empty, so nobody can tell which price belongs to which class.\n\nSource: Portal mail:19.\n\n**Cause.** `SettingsController::index` selects the class name as `name_<lang> as name`. `VehicleClass` and `VehicleClassItem` have a `getNameAttribute` accessor that reads `name_<lang>` and `name_nl` from the model; those columns were not selected, so the accessor returns null and hides the aliased value. Empty for every user since the accessor was added (32ecb994).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Transport settings: vehicle class names are empty in the price table and the dimensions matrix"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015102617-75a308"
+}

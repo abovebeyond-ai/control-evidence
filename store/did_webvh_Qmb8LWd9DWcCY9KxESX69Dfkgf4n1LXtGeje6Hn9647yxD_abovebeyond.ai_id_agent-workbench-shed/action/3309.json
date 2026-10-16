@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The office part of the app is called **Transferor** from now on, not \"Werkfiches\":\n\n- next to the GLK logo in the header;\n- in the browser tab (\"<page> \u00b7 Transferor\"), on the office and the sign-in layout;\n- as the title of the sign-in page;\n- as the printout heading when no project is chosen (\"Selectie uit Transferor\").\n\nThe word \"werkfiches\" stays where it means the worksheets themselves (the Werkfiches type in Verkennen, its sentences). The phone app the crew installs keeps its name (\"GLK Werkfiche\" in `public/manifest.webmanifest`): renaming it changes the label under the icon on their home screens.\n\nReplaces #66, which was built before #65 was merged and conflicted with it; this one starts from main with #65 in it.\n\nFull suite passes.\n",
+            "branch": "workbench/name-transferor-2",
+            "title": "Call the office Transferor instead of Werkfiches"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261015155133-869f98"
+}

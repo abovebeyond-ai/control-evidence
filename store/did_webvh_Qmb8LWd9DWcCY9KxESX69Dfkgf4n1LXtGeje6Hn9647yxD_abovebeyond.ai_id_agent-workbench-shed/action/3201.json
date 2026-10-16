@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "17a327c608a39975b113161ebc68e79b9b9708a4",
+            "branch": "workbench/pdf-sources",
+            "files_sha256": "5f81ab8de414834e3765e96962865b672b2a02986bd64d64167b66d3286792b9",
+            "message": "Cite the sources an author names, under the sentence that names them"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015133158-f0ca5d"
+}

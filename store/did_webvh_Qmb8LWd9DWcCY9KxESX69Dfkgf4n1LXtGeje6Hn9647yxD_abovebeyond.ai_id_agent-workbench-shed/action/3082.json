@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "26b29308025364db0b9ffce5ca0726193f8a12f4",
+            "branch": "workbench/lead-gap",
+            "files_sha256": "0d97acaec9aafa42562db5ecc88e5c4b7daeb4c56b076e1e954d6a851bd76659",
+            "message": "Portals screen: a switched-off Hexon portal can be offered again from Hexon's list; space under the page lead"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015103703-ed1557"
+}

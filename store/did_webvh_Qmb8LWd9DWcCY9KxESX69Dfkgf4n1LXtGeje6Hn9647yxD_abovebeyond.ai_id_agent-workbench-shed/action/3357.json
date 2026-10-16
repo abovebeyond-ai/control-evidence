@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1026\n\n## Problem\n\nA garage without a delivery address sees \"Adres toevoegen\" in the transport request window. That button opened the location window, which always posted as a full page with `redirect=transport`. Saving it therefore left the request and landed on Settings > Services > Transport. The address was stored, but the dealer had to go back through Bestelbonnen to finish the request.\n\n## Change\n\n- The button in the request window opens the location window with `from=request`. `DealerLocationController::create` passes that on as `$fromRequest`.\n- Opened that way, the location form posts to `location.store.modal` without `redirect`, and carries `data-from-request`.\n- The request window (`_modal/create`) handles that form's submit: it validates, saves in the background, closes the address window, fetches the request window again (`?action=back`) and replaces only its delivery field. The new address is selected, and the footer is refreshed, so \"Prijs aanvragen\" appears. Express, the comment and any dimensions typed stay as they were.\n- The handler is bound on the document under a namespace (`submit.requestAddress`) because the request view is rendered again on every reload. The fetched HTML goes through `$.parseHTML`, which drops scripts, so the handler is not bound twice. The script lives in a blade file that already used jQuery, so the jQuery ratchet stays at 70.\n- Opened from the settings transport tab, nothing changes: the post still returns to that tab.\n- R P2-6.3 now describes both paths.\n\n## Tests\n\n- New `TransportAddressFromTheRequestTest`: the request offers the window with `from=request`; that window saves in place; from the tab it still redirects; after saving in place the refreshed request has a select with the new address and the \"Prijs aanvragen\" button.\n- `Location*`, `Transport*`, `QualityRatchetTest`: 203 green. Full suite: 3120, with only the six `APhotoWithoutAForegroundIsNotAFaultTest` cases failing. They fail on a reused test database, also on main.\n- phpstan clean, pint clean on the new test.\n- Not clicked through in a browser. Worth checking on staging: request a transport for a garage with no delivery address, add one, and confirm the window stays on the request with the address selected.\n\nSource: Portal mail:21.\n",
+            "branch": "workbench/transport-address-stays",
+            "title": "Keep the dealer in the transport request after adding a delivery address"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016060650-1f6f4f"
+}

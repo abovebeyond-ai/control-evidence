@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d2148bb9f08638c230cf6431526290a0816d1adc",
+            "branch": "workbench/post-places",
+            "files_sha256": "d2a0bed88f3589d3f1a8eb5d9ceace567ed38024568d1a5efcd4bc93c104d730",
+            "message": "Keep a post at a place under the lead; the rest fills by date"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015115630-7b28bd"
+}

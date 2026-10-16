@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "af31ce30c6284bfe0a1f20fcfb508173c9cb8ed7",
+            "branch": "workbench/graph-gravity",
+            "files_sha256": "f92200d05cb643bd18fc10ff606df5eafdc57b7b13376c77f86b6104a523dd99",
+            "message": "Netwerk graph: unlinked relations on a ring outside, opened dots unfold around their parent"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016063431-bfbf18"
+}

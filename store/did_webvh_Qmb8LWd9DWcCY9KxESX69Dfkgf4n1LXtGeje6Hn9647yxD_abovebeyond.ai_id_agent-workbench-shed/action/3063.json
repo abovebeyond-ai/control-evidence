@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: A dealer who has not accepted the transport conditions yet clicks the truck on a row of Administratie > Bestelbonnen > Klanten and nothing opens, so the conditions are never asked and no transport can be requested.\n\nSource: Portal mail:19.\n\n**What is reported.** Since transport came on for every garage with own stock, a dealer's first click on the truck should open the request window with the five transport conditions (R S4-10.19). On a test account the click did nothing at all: no window, no message.\n\n**What was checked.** In a feature test, `GET transport.create` for a module-1 garage without accepted conditions and a complete own vehicle answers 200 with the conditions form. So the window renders in the plain case; the failure is in the data of that garage's order row or in the browser. `modal.get` (resources/js/modal.js) ignores a failed request, so a 403/404/500 on that URL looks exactly like \"nothing happens\". Candidates: the order's vehicle is soft-deleted (`Order::vehicle()` loads `withTrashed`, `TransportController::ownVehicle` does not, so it 404s), or the vehicle's `dealer_id` is not the garage of the logged-in user.\n\n**Needed to fix it.** The order number (or the vehicle) where it happened, or the response status of the request the truck sends (browser network tab). Separately: `modal.get` should tell the user when a window fails to load instead of staying silent.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "Transport truck on a customer order opens nothing for a dealer without accepted conditions"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261015102614-a549a6"
+}

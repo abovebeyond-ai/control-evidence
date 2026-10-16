@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "012fd824acc59ce4d94e76e687817d029c277788",
+            "branch": "workbench/front-places",
+            "files_sha256": "b07c0898d77e62e9cab78bea313e0a37fdc6513200fe16110369647ef4910f8d",
+            "message": "Curate: how many posts under the lead, kept places, covers in the list"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261015115717-95b42c"
+}

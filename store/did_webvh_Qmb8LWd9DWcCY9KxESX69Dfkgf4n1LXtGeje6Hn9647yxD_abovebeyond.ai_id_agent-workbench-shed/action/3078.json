@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Since b3fffa5 (#341) every merge to main has been refused by auto-deploy: the box stays on c0f8601, and #340, #341 and #342 are not live. The two failing tests are in `test/monitor.test.mjs`: \"a missing table is not measured, and never a zero\" and the suite \"measuring against a real database\".\n\n## Why\n\n`measure(db)` takes its deploy state from `measureDeploy()`, which reads `$HOME/.auto-deploy` unless a test passes its own. Auto-deploy runs the suite on the box as the pipeline user, so these tests read the box's real deploy state. Once one commit had been refused, `app.rejected` was there, the monitor's verdict became \"a merge is not going out\" instead of the calm verdict the tests expect, the tests went red, and the next commit was refused for the same reason. It locks itself.\n\n## Change\n\nThe test file sets `HOME` to an empty temporary folder before it imports the monitor, so these tests measure the test database only. No production code changes.\n\n## Checks\n\n- Reproduced on the workbench with a home folder holding `app.rejected`, `app.rev` and a `failed` status: 2 failures before the change, 0 after (40/40).\n- Full suite with that home: 1209/1215. The 6 are `report-render`, which needs `pdftoppm`; it is installed on the box.\n\nAfter merge, the next auto-deploy round tests this commit (it is not the refused one), rolls out #340 to #342 with it and restarts the pipeline.\n",
+            "branch": "workbench/monitor-test-home",
+            "title": "Monitor tests measure in a home of their own, so a refused deploy stops refusing every next one"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015103412-0a13bf"
+}

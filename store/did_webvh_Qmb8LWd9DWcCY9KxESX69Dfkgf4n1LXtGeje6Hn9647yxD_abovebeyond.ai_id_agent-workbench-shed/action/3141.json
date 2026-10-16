@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "aa8a6b5f493fedfd156d4b2c4460e219e2388e4d",
+            "branch": "workbench/fill-covers",
+            "files_sha256": "327a39f0f21d5d95a39a4c420decee05db6273af10798f2ef24c816124c8d800",
+            "message": "Give the live posts without a cover the first picture of their own"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015122153-d5786e"
+}

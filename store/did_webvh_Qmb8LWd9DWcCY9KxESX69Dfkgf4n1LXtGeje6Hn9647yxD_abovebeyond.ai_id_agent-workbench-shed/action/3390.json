@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On real data most of the top relations share no projects with the others drawn (clients with their own projects). Without a line they were pushed out by repulsion to a wide ring, so the fitted picture was mostly empty space and the linked cluster a tiny knot in the middle. Opened projects started on top of the dot they came from and piled up, names and all, especially in 3D.\n\n- Repulsion reaches at most 260 units. Linked dots are drawn gently to the middle (0.03).\n- Dots without a line sit on a ring just outside the linked ones (`forceRadial`, radius from the number of linked dots), instead of drifting out or being pulled into the cluster.\n- Dots that just opened start on a circle around their parent (a Fibonacci sphere in 3D) rather than at the parent, and lines to opened dots are longer (70), so they unfold.\n- In 3D opened projects carry no name until pointed at; they are many and close together, and the tooltip names them.\n\nChecked in headless Chromium on a production-size local database with 25 added clients that share no projects: the unlinked ones form a ring at radius 278 around a cluster of radius 150 (before: a wide ring with the cluster small in the middle); opening the busiest relation spreads its 25 projects around it. JS tests 13/13.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/graph-gravity",
+            "title": "Netwerk graph: a ring for unlinked relations, opened dots unfold"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016063431-bfbf18"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Guilherme's posts name their sources in the text (\"Innova reports that 61% of Gen Z...\", \"In August 2026, Shopify reported...\") but carry no links, and the Observatory's own corpus rarely holds the same facts: 64 of 78 live posts showed at most one source. Every named source was looked up, opened and checked against its sentence; this cites the ones that were verified, under the sentence that names them.\n\n## Change\n\n`bin/cite-sources.mjs <plan.json> --admitted-by=<person> [--run=<name>] [--dry]` and `--undo=<run>`. The plan: `[{article, sentence, url, publisher, page_title, date, passage}]`.\n- Every page comes in under one source, \"Cited by the author\" (type editorial). The Standard has a person admit a source, never an engine: the first run needs `--admitted-by`, which is written on the source with the date.\n- One signal per page: a page the Observatory already holds is reused by its address; a new one comes in with its title and the verified passage, and the pipeline classifies and enriches it like any other signal.\n- Each citation is anchored to the sentence that names the source, with the note \"cited by the author: <publisher>, <page title>, verified <date>\". A sentence that is not in the post refuses the whole plan before anything is written; the same page is not cited twice on one post.\n- `article_citation_undo` keeps the run; `--undo` takes the citations off and deletes the signals the run created (unless something else cites them by then).\n\n## Checks\n\n- `test/cite-sources.test.mjs` (4): refusals (no person to admit, sentence not in the post) write nothing; a dry run writes nothing; admission, signal, anchor and note; reuse of a known page; undo.\n- Full suite 1225/1231; the 6 are `report-render` (`pdftoppm`, installed on the box).\n- Dry run on a copy of production with the first plan: 101 verified citations over 48 posts, 100 new signals, 1 page already held.\n\nNothing runs at deploy. The plan file is handed over separately.\n",
+            "branch": "workbench/pdf-sources",
+            "title": "Cite the sources an author names, under the sentence that names them"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261015133158-f0ca5d"
+}
