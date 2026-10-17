@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "This PR pins the Gentells Standard at 0.12.0 (Trendwolves/gentells-standard#16, tag `v0.12.0`) and starts type checking against the types the Standard now generates.\n\n## What 0.12.0 brings here\n\n- **Statistic.** A figure from public data, a report or a company's own numbers, read from the publisher's own page. It backs a claim and never counts as a signal. The two rules are ported into `packages/core/standard-rules.mjs` and run against the Standard's own conformance cases in `test/standard.test.mjs`:\n  - `statisticCitable` says whether a figure may be cited, with every reason it may not.\n  - `statisticCohort` gives the generation of a population's age range.\n- Nothing in the pipeline stores or cites statistics yet. That is the next PR, starting with the figures the posts quote second-hand.\n- No trend number changes: a statistic never reaches `trendHolds`.\n\n## Types\n\n- `bin/sync-standard.mjs` now copies `exports/gentells-standard.d.ts` from the tag to `packages/core/standard-types.d.ts`. A test fails if those types and the pinned copy are of different versions.\n- `tsconfig.json` checks only the files it lists; for now that is `standard-rules.mjs`, under `// @ts-check`.\n  - `strictNullChecks` is on. Implicit `any` is still allowed, so typing can grow file by file.\n  - The new statistic functions take their parameter types from the Standard.\n- Type checking surfaced one real gap: an unknown lifestage id in `lifestageBorn` or `lifestageLabel` crashed on `undefined`. It now throws an error that names the id and the Standard version. Behaviour for known ids is unchanged.\n- TypeScript 5.6.3 is a pinned dev dependency, run by `npm run typecheck` and a new CI step. `deploy.sh` installs with `--omit=dev`, so the box neither gets nor runs it.\n\n## Checks\n\n- `node --test test/*.test.mjs`: 1227 pass. The 6 report-render tests fail on the workbench only, because `pdftoppm` is not installed there; CI installs poppler.\n- `npm run typecheck`: clean.\n",
+            "branch": "workbench/standard-0.12",
+            "title": "Pin Gentells Standard 0.12.0: statistics, and type checking against its types"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261016111054-6488f1"
+}

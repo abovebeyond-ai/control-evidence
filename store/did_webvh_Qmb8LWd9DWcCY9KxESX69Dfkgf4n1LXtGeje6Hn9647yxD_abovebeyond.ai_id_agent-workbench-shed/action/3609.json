@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a14430eabe087bb7812ee4f30b6808398bd9c5f",
+            "branch": "workbench/agenda-without-machines",
+            "files_sha256": "eb24415c36f4a3864902d2ac36437ccf2266f3ac3cdbef62de06a94832d8bdfc",
+            "message": "Overdracht list without machines"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016121325-7419d4"
+}

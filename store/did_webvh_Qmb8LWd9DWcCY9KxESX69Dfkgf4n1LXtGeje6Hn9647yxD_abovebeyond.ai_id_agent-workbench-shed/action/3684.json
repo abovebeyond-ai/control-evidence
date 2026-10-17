@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On the werf screen a worker could only tap what the suggestions showed. If the right site, machine or material was not among them, there was no way to find it on screen. During a call the options were also a row scrolling sideways, which is clumsy on a phone. And a worker with one site of his own saw only that one.\n\n## What changes\n\n**Search for what is not suggested.** Under each list (the board outside a call, and the step panel in a call) there is \"Meer tonen of zoeken\", or \"\u2026 zoeken\" when nothing is suggested. It opens a field:\n- **Sites:** by name, number or municipality, any current site.\n- **Machines:** by name, any current machine, the tally-sheet ones first.\n- **Material:** by name, only articles whose name the catalogue knows once, so the conversation can hand the same one back.\n\nTwo letters at least, eight answers at most. Nothing found says \"Niets gevonden. Zeg het gewoon; het bureau zoekt het op.\" A tap works as tapping a suggestion, and the search empties. The lists show even when there are no suggestions, so the search is always there for site (until one is on the sheet), machines and material (unless he said there were none).\n\n**Wrapped, not sideways.** The step panel shows its options wrapped over a few rows: the six likeliest, the rest on \"Meer tonen\". The board shows six too, the rest on \"Meer tonen\".\n\n**One site of his own is not all he sees.** `Suggestions::offeredSites()` fills his own sites up to four with the company's busiest of the last two weeks, his own first.\n\n## Tests\n\n- `FindMoreTest` covers:\n  - one own site is filled up to four with the busiest, in order;\n  - a site, a machine and a material are found by a few letters and tapped onto the sheet;\n  - an article whose name the catalogue holds twice is not offered.\n- Full suite 301/301.\n- At phone width in a call asking for machines: the options wrap; \"Meer tonen\", then \"kraan\" finds the cranes.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/werf-show-more",
+            "title": "Werf: search for what is not suggested, options wrapped instead of sideways, own sites filled up to four"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016135618-78dbfc"
+}

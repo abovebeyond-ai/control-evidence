@@ -1,0 +1,16 @@
+{
+    "action": "49e3cb525391f12f774abbdb74bf27cf",
+    "effect": {
+        "detail": {
+            "base": "0f1c187ef592719b2585337e1f81590335e892d6",
+            "branch": "workbench/lead-shows-sold",
+            "commit": "c76ca8c7f4bd3f2147ff5c31fb4b07b69b2650f0",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3522,
+    "verdict": "ALLOW"
+}

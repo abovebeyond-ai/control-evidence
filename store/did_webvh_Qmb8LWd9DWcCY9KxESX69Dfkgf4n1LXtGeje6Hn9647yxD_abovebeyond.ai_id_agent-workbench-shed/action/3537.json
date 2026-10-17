@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9caf7605445f5fe5856d24cb8b45a4ad16136128",
+            "branch": "workbench/statistics",
+            "files_sha256": "329ded4d4eb1fa103c0760d3a53502f50bc082e7c05319626817bbcb8565a390",
+            "message": "Cite figures at their origin: statistics, cite-statistics with undo, evidence label and card"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261016113502-ed6ab8"
+}

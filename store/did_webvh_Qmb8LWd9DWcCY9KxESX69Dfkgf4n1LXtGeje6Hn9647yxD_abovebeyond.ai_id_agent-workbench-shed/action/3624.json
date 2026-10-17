@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Netwerk showed only what Bouwsoft knows. Relations that matter for the handover are often not in it: the architect who sends the work, a contact person only the owner deals with. And a long section in Contacten jumped from 8 rows straight to \"all\" (up to 300 of 2,177 clients at once).\n\n## Relations added by hand\n\n- **\"Relatie toevoegen\"** next to the tabs opens a form:\n  - name, municipality and role (client, supplier, contact on a project);\n  - optionally \"Werkt met\", a relation picked by a few letters of its name.\n- **After adding:** the relation is opened at once, so its context can be noted right away.\n- **In the list and the graph:**\n  - it shows in Contacten whatever the period, marked \"zelf toegevoegd\";\n  - it is always in the graph, whatever \"Hoeveel\" is set to, with a dotted amber line to the relation it works with;\n  - its tooltip and panel say who added it, that it is not from Bouwsoft, and who it works with.\n- **\"Weghalen\"** in its panel switches it off (after a confirm). What was told about it stays on Overdracht.\n- **Tags and context** work as for any relation.\n- **Storage.** Stored in `relations` with `manual`, `manual_role`, `linked_to` and `added_by`, keyed `manual:<random>`. The sync switches off only Bouwsoft relations, so a hand-added one is never touched.\n\n## \"Meer laden\" in Contacten\n\n- A section shows 8 rows, then 25 more per \"N meer laden\", with \"Minder\" and \"N van M\".\n- This replaces \"Toon alle\", which rendered up to 300 rows at once.\n\n## Tests\n\n- `ManualRelationTest` covers:\n  - added with a linked relation and opened;\n  - listed as manual;\n  - in the graph with a `told` edge even when the limit is 1;\n  - a sync leaves it active;\n  - a section of 40 clients shows 8, 33, 40, and back to 8.\n- `NetworkTest` follows \"meer laden\".\n- Full suite 286/286, JS 15/15.\n- Walked through in headless Chromium on a copy of the production-size database:\n  - add \"Architect Vandamme\" working with a client: its panel opens, and it is in the graph with its dotted line;\n  - Klanten loads 25 more (33 of 2,177).\n\nAfter merge: `php artisan migrate`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/manual-relations",
+            "title": "Netwerk: add a relation by hand, and load more rows on demand"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016122249-3a3bf8"
+}

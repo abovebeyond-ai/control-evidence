@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a14430eabe087bb7812ee4f30b6808398bd9c5f",
+            "branch": "workbench/user-admin",
+            "files_sha256": "0ffcf4fc133f811e1dd60edf47df5f1d444a45cbda440f02b33cb645fbfde6ca",
+            "message": "Gebruikers: admins add users with a role and a one-time link"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016120927-033d85"
+}

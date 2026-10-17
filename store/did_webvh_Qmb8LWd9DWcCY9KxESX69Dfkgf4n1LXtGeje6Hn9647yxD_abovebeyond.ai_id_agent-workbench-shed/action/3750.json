@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two things a writer could not do in the editor.\n\n## The Opportunity from the conversation\n\n- A suggestion for the Opportunity (pipeline PR alongside) shows in the Opportunity section, not in the text. It reads as the heading and paragraph would, with Accept, Dismiss, and Previous / Next / Another between versions.\n- Accepting fills the Opportunity's two fields in the editor.\n- The section opens as soon as there is such a suggestion, even before the piece has grown.\n\n## Who a post is about, in the margin\n\n- Topics, generations, life stages and regions were set only by import and runs. The editor did not show them, while they drive the filters on gentells.com.\n- \"Who it is about\" sits in the margin between the sources and the elements. Each tag is text that is on (underlined) or off, and a click saves.\n- Cohorts keep the Gentells Standard's pairs (`toggleCohort` in `piece.js`): Tweens brings Kids, removing Kids removes Tweens, and ZAlpha needs Gen Z or Gen Alpha. Removing the last of those removes ZAlpha. A pairing the Standard refuses would hold a live post back from the site.\n- Proposed life stages show only when a piece already carries one.\n- The lists come from the pipeline's `/taxonomy`, which already sent them.\n\n## Checks\n\n- `npm test`: 48 pass, including the cohort pairs. `vite build` is clean.\n- Checked in a local Studio against a copy of production: an Opportunity suggestion accepted into the fields, and Tweens bringing Kids, both saved.\n",
+            "branch": "workbench/opportunity-suggestion",
+            "title": "Opportunity suggestions, and who a post is about in the margin"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261016145120-4aaff8"
+}

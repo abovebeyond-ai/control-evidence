@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8822618d8cf021301fdb8aa945f8f24f293dcd42",
+            "branch": "workbench/handover-agenda",
+            "files_sha256": "0f1ba3c984c2fda752897b6fa24acf5dd806dbc17ad42cdcba89d28d64a87c12",
+            "message": "Overdracht: a list to go through, most important first, with progress"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016120529-081940"
+}

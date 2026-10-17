@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1ccd2e331dedf3c13d8b91de8fc07439b97fd070",
+            "branch": "workbench/open-question-first",
+            "files_sha256": "bad9c9bac3404ea541e551d5a5605d7a5c32f15c36f039ef3893abe9260c5ef8",
+            "message": "Ask about the whole day first; show the asked card when it is heard"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016151338-527ed5"
+}

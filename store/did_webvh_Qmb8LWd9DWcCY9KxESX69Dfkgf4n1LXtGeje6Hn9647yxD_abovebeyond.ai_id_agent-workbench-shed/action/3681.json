@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fe11d45a877db77e0c714246da6d3bb9d51bdf9f",
+            "branch": "workbench/werf-show-more",
+            "files_sha256": "5e9731eff3f3eaa35c5cafd7a71684096d8151f7d89c3e693570b199cb742091",
+            "message": "Werf: search for what is not suggested, options wrapped, own sites filled up to four"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016135618-78dbfc"
+}

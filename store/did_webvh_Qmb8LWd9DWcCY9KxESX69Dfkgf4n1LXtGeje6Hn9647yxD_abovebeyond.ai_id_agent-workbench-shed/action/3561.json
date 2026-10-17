@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f1afa7410f971cec7da97e702de45d80e40085a9",
+            "branch": "workbench/worksheet-excel",
+            "files_sha256": "578ec3a7662239e7d65ca7bd79ab470e3a60c2cae97ad3fdba5fef412947a285",
+            "message": "Worksheets to Excel: a workbook per period, from the day overview"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016114506-1a6354"
+}

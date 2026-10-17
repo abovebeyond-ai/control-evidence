@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f5502e3254611c3311677441917a66d03487eefc",
+            "branch": "workbench/team-edit",
+            "files_sha256": "a3e153b7feed0e2eeb5418fb1edfeaa7dfe75278ae1f30a3f3bd77dcaa5e24fc",
+            "message": "Ploeg: edit a worker, his own machine or plate, a photo, a new code, archive"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016110029-34461b"
+}

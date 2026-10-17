@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4e535bbebc373977f661e05637c47d4db44221eb",
+            "branch": "workbench/purchase-share",
+            "files_sha256": "4664721d8f9b0583c8e366280885a68e0828b705143b00c344a68d2a6c7d6f93",
+            "message": "Suppliers get a share of each year's purchases, like clients of revenue"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016094636-36d9e9"
+}

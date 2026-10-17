@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Gebruikers could switch a user off but not remove one. A test account, or somebody added by mistake, stayed in the list for good.\n\n## What changes\n\n**\"Verwijderen\"** on every row but your own, after a confirm. It removes the login for good:\n- **Sessions:** every session the user has open is deleted, so they are out at once.\n- **What they wrote stays:** context notes and tags carry the name they were written with, not a link to the user.\n- **Shared links:** a link the user made keeps working, without a maker (`created_by` is nulled by its foreign key).\n- **Guards:** you cannot delete yourself, nor the last active admin.\n\n\"Uitschakelen\" stays, for somebody who may come back.\n\n## Tests\n\n`UserAdminTest`: deleting a user removes them and their sessions and nulls the maker of their shared link; deleting yourself is refused. Full suite green.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/delete-user",
+            "title": "Gebruikers: delete a user"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016123543-71c3e1"
+}

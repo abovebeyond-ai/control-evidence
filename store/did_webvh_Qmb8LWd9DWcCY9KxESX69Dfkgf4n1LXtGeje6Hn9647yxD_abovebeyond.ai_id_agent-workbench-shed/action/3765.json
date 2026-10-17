@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "13b6f3b45c286a6eacedfbbed1e6e6ede7bdd898",
+            "branch": "workbench/worker-flow",
+            "files_sha256": "884c73f7fa10eabae31f92431a457b821f58a02b6987a86b1a551bff4a819946",
+            "message": "Worker screen as one flow: question panel with taps, review before handing in"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016160208-cb8c2d"
+}

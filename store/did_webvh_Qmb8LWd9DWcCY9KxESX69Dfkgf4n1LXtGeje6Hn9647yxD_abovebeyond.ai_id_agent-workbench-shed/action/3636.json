@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A call on a sheet that already had something on it simply went on with it. The conversation took up what an earlier call that day had written, and nothing on screen said so. Somebody opening the app again had no way to tell whether he was continuing or starting over, and no way to choose.\n\n## What changes\n\n**The choice.** Tapping the microphone on a sheet that has something on it and is not handed in first shows a small panel, in place of the microphone:\n- \"Je fiche van vandaag staat al deels ingevuld.\"\n- **Verdergaan met mijn fiche** (the big green one): the call starts and goes on with what is there, as before.\n- **Opnieuw beginnen:** asks once more (\"Alles van vandaag wissen en opnieuw beginnen\"), then clears today's sheet and starts the call on an empty one.\n- **Annuleren.**\n\n**What does not ask:**\n- an empty sheet;\n- a tapped card (he wants that field, so he is going on);\n- a handed-in sheet, which is reopened by its own button first.\n\n**Clearing** (`RecordDay::startOver()`):\n- removes the lines, machines, materials and signals;\n- empties departure and return, break, plate, odometer, summary, sentiment, and the \"niet geweten\" and \"niets\" answers;\n- sets the status back to draft (\"not recorded yet\" for the office).\n\nIt keeps `last_seq`, so a late write of the previous conversation cannot land on the new start. A confirmed sheet is never cleared from here.\n\n## Tests\n\n- `ContinueOrStartOverTest`:\n  - a filled sheet asks; starting over clears everything and leaves a draft with the sequence kept;\n  - an empty sheet does not ask;\n  - a confirmed sheet is not wiped.\n- Full suite 290/290.\n- At phone width: tapping the microphone on a filled sheet shows the choice, and \"Opnieuw beginnen\" asks for confirmation.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/continue-or-start-over",
+            "title": "Werf: a call on a filled sheet asks first, go on or start over"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016122847-84bb17"
+}

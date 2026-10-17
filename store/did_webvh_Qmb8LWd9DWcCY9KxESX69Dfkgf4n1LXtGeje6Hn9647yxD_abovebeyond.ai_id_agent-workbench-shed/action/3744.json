@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A post's Opportunity (its heading for everyone, its paragraph for paying readers) is kept in its own two fields, outside the body. The writing conversation could only suggest paragraphs for the body: asked to fill in the Opportunity, it added the text as body paragraphs, and the Opportunity stayed empty.\n\n## What changes\n\n- **A suggestion can be for the Opportunity.**\n  - `article_suggestions` gets a `field` column: NULL for the body, `opportunity` for the Opportunity.\n  - The model answers with `{\"opportunity\": {\"title\", \"text\"}}`. `parseSuggestion` reads that only for a post, and keeps the text's paragraphs.\n  - Accepting fills `opportunity_title` and `opportunity_body` and does not touch the body. Either half can be the writer's own words (`title`, `text` on accept).\n  - A newer Opportunity suggestion replaces the pending one. Body suggestions and Opportunity suggestions never replace each other.\n  - \"Another\" writes a new Opportunity version.\n- **The model sees the Opportunity.** The piece context lists the current heading and paragraph under the numbered paragraphs, and the prompt says when to use the Opportunity block and that the Opportunity is never body text.\n- **An empty piece keeps its title.** The Opportunity's heading is not read as the piece's title or standfirst.\n\n## Checks\n\n- `test/suggestions.test.mjs`, three new tests:\n  - reading the block, only on a post\n  - accept fills the Opportunity and leaves the body\n  - replacing a pending one leaves body suggestions alone\n- Full suite: 1240 pass. The 6 report-render tests fail on the workbench only, because `pdftoppm` is not installed there.\n- `npm run typecheck` is clean.\n\nThe Studio PR alongside shows the suggestion in the Opportunity section. Merge this one first: a Studio without it never receives an Opportunity suggestion, and an older Studio shows one as a body paragraph.\n",
+            "branch": "workbench/opportunity-suggestion",
+            "title": "The conversation can suggest the Opportunity"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261016145056-7976cf"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f5502e3254611c3311677441917a66d03487eefc",
+            "branch": "workbench/graph-list",
+            "files_sha256": "71d134512171f89efa0dece4af3caed18b5c31c91c0a6328253bd76e0e26c7e0",
+            "message": "Netwerk: a list under the graph with one selection, and a looser first picture"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016111019-0795d6"
+}

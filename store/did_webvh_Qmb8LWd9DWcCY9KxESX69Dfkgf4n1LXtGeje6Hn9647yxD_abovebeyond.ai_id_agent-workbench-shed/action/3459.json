@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9735b723ada1a227d73ee092754daf88c30c6689",
+            "branch": "workbench/share-sort",
+            "files_sha256": "5aca72237042ce826f870ebf09b2e01f21bd92be01d201fe909fa060f0895c4f",
+            "message": "Omzet en aankoop: sort the share table on any column"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016104219-1b6c43"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On a colleague's vehicle in the shared stock, the offer modal showed \"Aankoopprijs\" with the vehicle's `purchase_price`: what the *selling* garage paid for it. That is the wrong number for the viewing dealer, and an amount the shared stock must never show to another garage. The order modal showed no purchase price at all.\n\n## Change\n\n- `CustomerModePrice::purchaseHint()`: what this dealer pays for the vehicle. For an own vehicle it is the own purchase price. For a colleague's vehicle it is the trade price (`trade_price_incl_dealer_vat`), which is the amount the buybox shows.\n- The offer modal uses it instead of `$vehicle->purchase_price`.\n- The order modal shows the same hint above the recommended retail price. The conditions are unchanged: a new document, and customer mode off.\n\n## Tests\n\n`PriceOnScreenTest`:\n- `both_modals_hint_the_trade_price_and_never_a_colleagues_purchase_price` checks a colleague's vehicle: both modals show the trade price and never the 9 000 purchase price.\n- `both_modals_hint_the_own_purchase_price_for_an_own_vehicle` checks an own vehicle: both modals show the own purchase price.\n- Both tests fail on main and pass with the change.\n- The full suite and PHPStan pass locally.\n\nCloses #1028\n",
+            "branch": "workbench/mail22-shared-stock-price",
+            "title": "Shared stock: the purchase hint in the offer and order modals is the trade price"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016101732-2f4217"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "94a1155d377516a0b0668ff1655a3e20",
+    "effect": {
+        "detail": {
+            "base": "55459da042d591f1618fc774b36262a78c473a3e",
+            "branch": "workbench/writing-calmer",
+            "commit": "57d88bacd97370a4f94e7e55632d9faa7c3a6d2b",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3795,
+    "verdict": "ALLOW"
+}

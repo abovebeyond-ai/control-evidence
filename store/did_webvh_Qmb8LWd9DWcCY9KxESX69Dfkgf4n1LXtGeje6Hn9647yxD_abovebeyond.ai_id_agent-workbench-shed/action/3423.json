@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P3\nSummary: The bell notification that a vehicle changed hands through the shared stock (\"Vehicle sold: ...\", \"Bought over by ... through the shared stock.\") appears in English for Dutch-speaking garages.\n\n## What happens\n\nAfter a buy-over through the shared stock, the selling garage's bell showed \"Vehicle sold: VW Golf VII / Bought over by <garage> through the shared stock.\" in English, while the app is in Dutch.\n\n## Cause\n\n`Helpers\\Vehicle::notifyBothSides` sets the notification locale to the garage's language shortcode as stored, `NL` in capitals. There is no `lang/NL`, so Laravel falls back to `fallback_locale` (`en`). The existing test passed a lowercase `nl` and never saw it. `Notify::localeFor` already normalises the code and prefers the user's own language over the garage's; `Notify::dealerWith` did not use it.\n\n## Expected\n\nEach user of the garage reads the message in their own language (else the garage's), like `Notify::dealerTranslated` already does.\n\nSource: Portal mail:22 (onboarding feedback, 2026-10-16).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P3"
+            ],
+            "title": "Bell notification for a shared-stock sale appears in English"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016100535-7f8436"
+}

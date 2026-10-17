@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b4480862bfb0ae429850d3865d77b9749b5f760",
+            "branch": "workbench/own-posts",
+            "files_sha256": "0f6b77a6641b38967092a64a9d4dd11351d803af64fa8227af6285c43797a6a0",
+            "message": "Give live posts their owner and keep the byline; list live pieces newest live first"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261016141508-1e503d"
+}

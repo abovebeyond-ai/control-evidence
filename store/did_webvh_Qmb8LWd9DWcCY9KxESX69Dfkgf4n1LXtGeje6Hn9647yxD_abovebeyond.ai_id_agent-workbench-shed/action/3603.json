@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a14430eabe087bb7812ee4f30b6808398bd9c5f",
+            "branch": "workbench/context-kind-buttons",
+            "files_sha256": "9e4e3dac9ed4158a0e0732b3ad6e55467dbf2a3f3b03336529b32396ade34a44",
+            "message": "Context panel: picking a kind answers at once and keeps the form open"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016121236-a31715"
+}

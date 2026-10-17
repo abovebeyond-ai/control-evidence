@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The bell message for a shared-stock sale (\"Vehicle sold: \u2026\", \"Bought over by \u2026 through the shared stock.\") appeared in English for Dutch-speaking garages.\n\n`notifyBothSides` passed the garage's language shortcode, as stored, to `->locale()`. The database stores it in capitals (`NL`). There is no `lang/NL`, so Laravel used `fallback_locale`, which is `en`. The existing test passed a lowercase `nl` and missed this.\n\n## Change\n\n- `Notify::dealerWith` now sends a clone of the notification to each user, in that user's language: `Notify::localeFor`, which falls back to the garage's language and then the app default, and normalises the code. This is what `dealerTranslated` already did.\n- `notifyBothSides` no longer sets a locale itself.\n\n## Tests\n\n- `TheBellSaysACarChangedHandsTest::test_a_garage_stored_in_capitals_reads_dutch` goes through `notifyBothSides` with a garage stored as `NL`.\n- It fails on main with `'Vehicle sold: Peugeot 3008'` and passes with the change.\n- The full suite and PHPStan pass locally.\n\nCloses #1031\n",
+            "branch": "workbench/bell-in-reader-language",
+            "title": "Bell: a shared-stock sale reaches each user in their own language"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016101756-db04cf"
+}

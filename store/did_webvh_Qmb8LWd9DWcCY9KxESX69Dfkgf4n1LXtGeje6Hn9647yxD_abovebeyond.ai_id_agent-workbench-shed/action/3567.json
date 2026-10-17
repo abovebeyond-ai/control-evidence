@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4ca4be13e343fa4e93481b3d4dc032336060cfc8",
+            "branch": "workbench/context-everywhere",
+            "files_sha256": "14865cb11ded4267ab3e5ee515ec65cd42422d9138230255da28a2da206baec2",
+            "message": "Context on every node: a project panel in Netwerk, and a mark wherever a node carries context"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016114922-c5195b"
+}

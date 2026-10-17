@@ -1,0 +1,16 @@
+{
+    "action": "fc8cfaa254fe7778db4b7e35977de26a",
+    "effect": {
+        "detail": {
+            "base": "26a45d084f8e928661a203209940b377d5a4a1d3",
+            "branch": "workbench/one-panel-carriers",
+            "commit": "f304cf3a489df988251a0c1e71f37abd351f6d9c",
+            "files": 16,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3669,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Contacten tab was one flat table of the first 300 relations by project count. On a production-size database that is 3,300 relations, so the table answered neither \"who is in our network\" nor \"how far did the table get with tagging\".\n\n## What changes\n\n- **Overview on top.** Clients, suppliers and project contacts, counted by their main role. Clicking one filters on that role. Next to it: how many relations the table has noted, and how many are of high importance.\n- **Who carries the relation.** A bar with the split between the owner alone, the owner with someone, someone else, and not noted yet. Each label filters the list. Also shows how many relations have been quiet for 12 months.\n- **Sections.** The list is ordered per role (default), group, carrier or importance. Untagged relations come last. Each section shows its first 8 rows with \"Toon alle N\", the number of relations and the projects they share.\n- **Sorting** inside a section on most projects, last active or name.\n- **Rows** carry the kind of cost or role as a second line, a bar of projects scaled to the busiest in the same section, a block per year the relation was active, its revenue share in the last full year (clients with invoices), importance, carrier with its colour, and the last date, red when quiet.\n- A **Drager** filter next to Groep in the filter bar. It also applies to the graph and the other tabs.\n- On a phone the table keeps the name, projects and last date; the overview cards sit three across.\n\n## Code\n\n- `Network` component: `overview` and `sections` computed properties, `listBy`, `sort` and `carrier` in the URL, `unfold()` per section. Unknown values for `listBy` and `sort` fall back to the default.\n- Uses the cached contacts and revenue from #71, so no extra queries.\n\n## Tests\n\n- `test_the_list_is_ordered_in_sections_with_an_overview`: sections per role and per carrier, overview counts, carrier filter, unfold toggles.\n- Full suite 231/231, JS tests green, pint clean.\n- Checked in headless Chromium on the production-size database (3,301 relations, 60 sample tags): the tab loads in about 85 ms, at 1360 px and 390 px wide with no horizontal scroll and no page errors.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/network-list",
+            "title": "Contacten: an overview by role and carrier, the list in sections"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016092342-53b9a7"
+}

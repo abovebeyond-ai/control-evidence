@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Write desk listed drafts only, so a writer's pieces disappeared from it once they went live. A post signed by the editorial team is still the writer's own work.\n\n## What changes\n\n- **\"Yours, live on gentells.com\"**: a group under the drafts with the pieces you own that are live, newest live first, 24 at a time with Show more. It appears only when you have any.\n- A live sheet says \"live on gentells.com\", the byline readers see (\"signed Trendwolves Editorial Team\"), and the day it went live.\n- A sheet's opening skips a leading heading line. The imported posts all begin with \"## Signal\", so every one of them opened with the word \"Signal\".\n\nThe pipeline PR alongside (`bin/own-posts.mjs`, live pieces ordered by `published_at`) gives the imported posts their owner. Without it the group stays empty and nothing else changes, so either may merge first; merging the pipeline first gives the right order at once.\n\n## Checks\n\n- `npm test`: 47 pass. `vite build` is clean.\n- Checked in a local Studio against a copy of production after the owner run: the writer's desk shows all 78 posts, newest first, each signed by the editorial team.\n",
+            "branch": "workbench/yours-live",
+            "title": "Write shows your live pieces"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261016141530-622f26"
+}

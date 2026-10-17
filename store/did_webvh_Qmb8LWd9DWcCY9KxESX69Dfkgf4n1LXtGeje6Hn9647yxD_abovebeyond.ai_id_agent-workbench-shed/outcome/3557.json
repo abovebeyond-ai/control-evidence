@@ -1,0 +1,16 @@
+{
+    "action": "d7e0e5eab9af952d0b44fa2b98c7041f",
+    "effect": {
+        "detail": {
+            "base": "f1afa7410f971cec7da97e702de45d80e40085a9",
+            "branch": "workbench/confirm-and-match-2",
+            "commit": "c98307515b839ee13d629554da2fab9214730dc1",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3555,
+    "verdict": "ALLOW"
+}

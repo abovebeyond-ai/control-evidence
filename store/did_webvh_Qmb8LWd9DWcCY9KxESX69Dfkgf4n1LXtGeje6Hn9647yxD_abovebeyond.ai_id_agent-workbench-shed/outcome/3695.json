@@ -1,0 +1,16 @@
+{
+    "action": "948f1ce490a332dac89af1be6db2eaf6",
+    "effect": {
+        "detail": {
+            "base": "85b5021eb7ecbbdae4b6a6ea609a44cf87f03e9d",
+            "branch": "workbench/contacts-first",
+            "commit": "47c0c3cb9e47f7d1fee6deacaf1da869b76da5b4",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3693,
+    "verdict": "ALLOW"
+}

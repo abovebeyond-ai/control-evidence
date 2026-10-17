@@ -1,0 +1,16 @@
+{
+    "action": "695bce1888992fe806a225da7111aa12",
+    "effect": {
+        "detail": {
+            "base": "4ca4be13e343fa4e93481b3d4dc032336060cfc8",
+            "branch": "workbench/context-everywhere",
+            "commit": "aef724a8e01262ab9b2878b288c5665c09dbd5a4",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3567,
+    "verdict": "ALLOW"
+}

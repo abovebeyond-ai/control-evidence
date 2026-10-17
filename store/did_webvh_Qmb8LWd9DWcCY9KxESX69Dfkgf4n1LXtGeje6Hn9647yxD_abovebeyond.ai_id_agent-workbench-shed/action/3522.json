@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0f1c187ef592719b2585337e1f81590335e892d6",
+            "branch": "workbench/lead-shows-sold",
+            "files_sha256": "e564d566433052843fea0804799bcfeeb36f4e507c47ce7be3f3110394fca765",
+            "message": "A lead on a sold vehicle says so"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016112632-a5e6af"
+}

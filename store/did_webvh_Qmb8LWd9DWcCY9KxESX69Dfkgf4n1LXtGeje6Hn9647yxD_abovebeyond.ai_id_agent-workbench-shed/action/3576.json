@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "In a call the werf screen showed everything at once:\n- the board, or the invitation on an empty day;\n- the grid of his sites;\n- ten machine buttons;\n- eight material buttons;\n- the step panel.\n\nThe call opened on all his sites before anything was asked. A man who is mostly listening had three grids of buttons competing with the one card being asked about.\n\n## What changes\n\n- **Before the call and after it.** As before: the site buttons, the \"Ik vraag naar\" overview, and on the board the machine and material buttons, for whoever would rather tap.\n- **During the call** (the Alpine `inCall`: any state but idle and finished):\n  - the grids step aside;\n  - what stays is the overview, the invitation's list of questions or the board, where the card being asked already lights up and breathes;\n  - only while the conversation asks about the site, the machines or the material does that step's options panel slide in above the microphone (fade and a small rise), and it fades out when the conversation moves on.\n- **An empty day** now has the step panel too, so in the first call the sites appear when the conversation asks where, not before.\n\n## Tests\n\n- `CalmCallScreenTest`: on an empty day the site buttons are there with `! inCall`, and the step panel is ready, shown only `inCall` while its step is asked.\n- Full suite green.\n- Checked at phone width on a copy of the production-size database in three states:\n  - before a call: the sites and the overview;\n  - in a call: the overview only;\n  - in a call asking \"waar\": the site chip turns amber and the four sites slide in above.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/calm-call-screen",
+            "title": "Werf call screen: the overview and what is at hand, step by step"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016115336-1cf4dc"
+}

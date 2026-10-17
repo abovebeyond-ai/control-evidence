@@ -1,0 +1,16 @@
+{
+    "action": "29e7cfa217fd5b209a9d552dc8db7c2a",
+    "effect": {
+        "detail": {
+            "base": "1a14430eabe087bb7812ee4f30b6808398bd9c5f",
+            "branch": "workbench/agenda-without-machines",
+            "commit": "4dab384de873261140a118a9855b28b6230542a1",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3609,
+    "verdict": "ALLOW"
+}

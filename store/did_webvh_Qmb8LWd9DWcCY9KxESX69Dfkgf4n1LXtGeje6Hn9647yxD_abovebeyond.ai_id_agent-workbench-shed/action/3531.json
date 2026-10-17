@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9a6fccc518667e0d6c4a2ada918012ac49e6db98",
+            "branch": "workbench/prompt-no-client",
+            "files_sha256": "85d71121bb74263f4b14ca6cec4fff7c0a35419890ec43c2d089481a972b4298",
+            "message": "Werf prompt: sites without client or street"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016113014-b67f95"
+}

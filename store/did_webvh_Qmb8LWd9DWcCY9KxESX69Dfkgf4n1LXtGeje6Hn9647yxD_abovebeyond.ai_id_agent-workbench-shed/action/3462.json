@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The share table on \"Omzet en aankoop\" was always sorted on the last full year. Comparing who led in an earlier year, or overall, meant reading down the whole column.\n\n- **Sortable headers.** Every header (name, each year, \"Samen\") is now a button that sorts on that column. A second click reverses the order.\n- **Default order.** Years and \"Samen\" sort largest first; the name sorts A to Z. With no choice, the table sorts on the last full year as before.\n- **Showing the sort.** The sorted column carries an arrow and `aria-sort`, and its figures are in the darker ink. The note below says what the table is sorted on.\n- The choice is kept in the URL (`op=2024`); the direction is not.\n\nTests: `test_the_share_table_sorts_on_a_clicked_column` covers name up and down, and a year down and up. Full suite green, pint clean, checked in headless Chromium.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/share-sort",
+            "title": "Omzet en aankoop: sort the share table on any column"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016104219-1b6c43"
+}

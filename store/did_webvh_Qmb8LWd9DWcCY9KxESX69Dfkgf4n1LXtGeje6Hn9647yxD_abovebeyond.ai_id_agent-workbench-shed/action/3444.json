@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:22",
+            "note": "Proposed #1032 (price, closes #1028), #1034 (&amp;, closes #1029), #1033 (English bell, closes #1031). Open: #1030 lead for a shared-stock car: the code hides the buttons and the website detail only when the vehicle id on the lead is sold (or the garage's website_stocklist_integration is off). Is the lead's vehicle record sold, e.g. bought over or re-created, and is that setting on for the garage?",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261016101837-cb07cf"
+}

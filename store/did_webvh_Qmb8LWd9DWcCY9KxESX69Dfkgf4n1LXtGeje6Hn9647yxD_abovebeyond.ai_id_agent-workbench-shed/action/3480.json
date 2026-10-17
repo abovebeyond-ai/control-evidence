@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On Ploeg the office could link a worker to Bouwsoft and add somebody from the staff list, and nothing else. A typo in a name, a changed profile, a code that went round, or a worker who left could only be fixed in the database. A crane man's own machine and a driver's own plate are read by the conversation prompt, but could not be set anywhere.\n\n## What changes on Ploeg\n\n\"Bewerken\" on a row opens a form under it with:\n\n- **Name, profile and language.**\n- **His own machine or truck:** the machine for a minikraanman or rupskraanman, the plate for a driver (stored in capitals). Changing the profile clears the one that no longer applies.\n- **A photo.** Bouwsoft's staff list has none, so the office uploads it here, also straight from a phone camera. The photo can be replaced or deleted. It is stored on the private disk (`storage/app/private/workers`) and served only to the office login (`/ploeg/foto/{worker}`). It shows as a round picture in the list, with initials when there is none.\n- **Nieuwe code:** after a confirm, a fresh 6-character code that is unique. The old one stops working at once.\n- **Archiveren:** after a confirm, he can no longer sign in, and his worksheets and history stay. Archived workers sit in a folded \"Gearchiveerd\" list with \"Terugzetten\". An archived worker who was linked does not reappear under \"nog niet in de app\".\n\n## Code\n\n- Migration: `workers.photo_path`.\n- `Team`:\n  - `edit`, `saveEdit` (validated; the photo must be jpg, png or webp, at most 6 MB);\n  - `removePhoto`, `newCode`, `archive`, `restore`;\n  - `archived` and `machines` computed properties.\n- `WorkerPhotoController`, behind `auth`.\n\n## Tests\n\n`TeamEditTest` covers:\n- editing the name and language; the plate for a driver and the machine for a crane man, with the other one cleared;\n- a photo is stored privately, served to the office and not to strangers, and deleted cleanly;\n- a PDF is refused;\n- a new code replaces the old one;\n- an archived worker cannot sign in, and restoring lets him in again.\n\nFull suite green, pint clean. Walked through in headless Chromium: edit, upload a photo, switch to Chauffeur with a plate, save.\n\nAfter merge: `php artisan migrate` (one column).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/team-edit",
+            "title": "Ploeg: edit a worker, his own machine or plate, a photo, a new code, archive"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016110029-34461b"
+}

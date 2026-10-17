@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3ceae833331d4fe5d0d90b7c2d861c41d5030159",
+            "branch": "workbench/continue-or-start-over",
+            "files_sha256": "90c07b4ca302486229eb96dffe46dc524228277c0d846d68d191c54453554cd9",
+            "message": "Werf: a call on a filled sheet asks first, go on or start over"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016122847-84bb17"
+}

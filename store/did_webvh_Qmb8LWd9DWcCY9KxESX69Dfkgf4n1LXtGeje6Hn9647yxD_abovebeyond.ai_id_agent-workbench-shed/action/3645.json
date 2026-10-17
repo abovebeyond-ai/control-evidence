@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "419d1d77f209087463f2b1a06278b925c0581439",
+            "branch": "workbench/delete-user",
+            "files_sha256": "85ad0569c85b92434c9a4c308728c052b9dea66525e44dc789b00511994750b9",
+            "message": "Gebruikers: delete a user"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016123543-71c3e1"
+}

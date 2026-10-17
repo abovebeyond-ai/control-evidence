@@ -1,0 +1,16 @@
+{
+    "action": "187de46ddf4ea4bfad26f7ee4fad958b",
+    "effect": {
+        "detail": {
+            "base": "82b2abbedd5ca0dd0e733f03aaf5c51f8edfc93c",
+            "branch": "workbench/opportunity-suggestion",
+            "commit": "d08f248cc1cf53417c0bbce2752ae8628ae9d348",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3747,
+    "verdict": "ALLOW"
+}

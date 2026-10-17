@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c41328e4a95639209f52b023f9f8271f0ef17fc2",
+            "branch": "workbench/share-summary",
+            "files_sha256": "96c24284751bf900300334c178a11c73f1cadf970539301740b072e32d540993",
+            "message": "Omzet en aankoop: the top-5 and top-10 shares as a bar per year"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016103212-8b5028"
+}

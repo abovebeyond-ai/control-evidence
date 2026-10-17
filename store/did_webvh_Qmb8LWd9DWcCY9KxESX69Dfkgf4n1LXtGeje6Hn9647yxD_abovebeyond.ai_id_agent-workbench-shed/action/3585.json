@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ff22e8deeed62416347b14cc9780f2c98778acc0",
+            "branch": "workbench/werf-fits-screen",
+            "files_sha256": "d20e70ed3d1611b244b05ea05477a09f9c3e2be4673ac4e8339ee7b68e25ab86",
+            "message": "Werf screen fits the phone: ground to the bottom, what is at hand stays in view in a call"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016120203-2793a2"
+}

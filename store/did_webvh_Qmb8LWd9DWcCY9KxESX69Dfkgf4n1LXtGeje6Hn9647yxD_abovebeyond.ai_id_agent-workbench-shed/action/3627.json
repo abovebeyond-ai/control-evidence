@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "91d8f44ebef7d6db35ffb73ed492f15831a019fc",
+            "branch": "workbench/manual-relations-2",
+            "files_sha256": "ef0cd6446431ac6da6ccf437f6585d0bea53c01858319369ae1bff150e58c120",
+            "message": "Netwerk: add a relation by hand when Bouwsoft does not have it, and load more rows on demand"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016122350-f1bb6e"
+}

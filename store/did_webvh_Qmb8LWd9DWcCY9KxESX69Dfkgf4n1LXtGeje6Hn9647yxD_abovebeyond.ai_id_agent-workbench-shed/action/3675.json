@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f0bf99940f43b17d54acdabdce39550d6ff7ebb7",
+            "branch": "workbench/handover-people",
+            "files_sha256": "01b1ab96589547720df17b8b1ee5d21fc761f7dac3a37807a1fb8a1528113cc5",
+            "message": "Two roles for a login; the people the handover names get their own group, like Ploeg"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016135101-7151c5"
+}

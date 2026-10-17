@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Netwerk graph could only be read by pointing at dots. A relation you know by name had to be found in the picture. The first picture also opened as a tight knot, close in.\n\n## A list under the graph, one selection\n\n- **Every dot as a row.** Under the graph, a scrollable list holds every dot as a row:\n  - relations busiest first, each with its colour and project count;\n  - under an opened relation, its projects indented (the same for a project's relations), so the list unfolds the way the picture does.\n- **Filter.** A search field filters the rows.\n- **Picking a row** picks the dot: it lights up and the view moves to it, and a relation also opens in the side panel (`$wire.select`), as a click in the picture does.\n- **Picking a dot** in the picture lights its row, and the list scrolls to it within itself, without moving the page. This also works when the selection comes from elsewhere (`$watch('selected')`).\n- **A project** can be picked too. It lights up in both places; the panel stays with the relation.\n- **The button on a row** (\"Projecten\", \"Wie\", \"Sluiten\") opens or closes what that dot opens, the same as clicking the dot.\n- **Hovering a row** shows the dot's neighbours, as hovering the dot does.\n- **Drawn by Alpine** from the graph's own data under `wire:ignore`, so a Livewire render does not touch it.\n\n## A looser first picture\n\n- **Forces:** charge \u2212200 for relations (was \u2212120), reaching 420 (was 260); shared-project lines 110 long (was 70); the pull to the middle 0.02 (was 0.03); collide radius r+6 (was r+3); the ring for unlinked relations wider.\n- **Fit:** the first fit and \"Passend\" leave 80 px around the picture (was 40), and the first 2D picture then steps a further 15% out.\n\nOn a copy of the production-size database (60 relations) the first picture is 370\u00d7377 px in an 811\u00d7640 frame, at zoom 0.73.\n\nThe \"N meer niet getoond\" note now sits in the graph's own frame, above the list.\n\n## Tests\n\nFull suite green, JS 14/14. Walked through in headless Chromium on a copy of the production-size database:\n- pick the fifth row: the relation is selected and the view zooms to it;\n- click a dot in the picture: its 25 projects open (60 rows become 85), and its row lights up;\n- no page errors.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/graph-list",
+            "title": "Netwerk: a list under the graph with one selection, and a looser first picture"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016111019-0795d6"
+}

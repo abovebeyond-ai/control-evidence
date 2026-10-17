@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The materials offered for a site (as buttons, and to the conversation) were the site's materials of the last six weeks, by number of booked days. Measured on GLK's costing (bookings 16 September to 15 October, eight weeks of history), the right material was in the top 5 in 35% of cases and in the top 10 in 45%. A site moves through phases, though: the sewer pipe booked often five weeks ago says less about today than the paving stones of this week. The conversation also had the lists but was told never to propose from them.\n\n## What changes\n\n- **Recent days count most.** `App\\Reference\\Recency` scores a booked day 0.5^(age / 14 days). The site's machines, materials and colleagues (`SiteOptions`) and the material buttons are ranked by it instead of by plain day counts. The same 42-day window is kept.\n- **The site at hand.** `Worksheet::currentSite()` is the site of the line written last, not the first of the morning. The material and machine buttons and the live lookup follow it, so with two sites in a day the options change with the site being talked about.\n- **The conversation proposes.** Under his sites the prompt now says the lists are likeliest first. When the conversation asks about machines or material, it proposes the two or three first as a question (\"Was het PVC 110, of steenslag?\"). What he says otherwise wins. Only what he confirms or says himself goes on the sheet. The message for a site named later says the same.\n- **Measured, not assumed.** `BookingPatterns` (the `glk_booking_patterns` read) gains three variants next to the existing ones: `productsBySiteRecent14`, `productsBySiteRecent7` and `machinesByWorkerAndSiteRecent14`. After merging, one read compares them with `productsBySite` and `machinesByWorkerAndSite` on the same bookings. If recency does not beat plain days, the half-life or the ranking goes back.\n\n## Tests\n\n`RecentFirstTest` covers:\n- the score halves every two weeks;\n- paving stones booked this week come before sewer pipe booked on four days five weeks ago, for buttons and conversation alike;\n- the options follow the site written last;\n- the prompt proposes the likeliest as a question;\n- the measurement ranks a machine of yesterday above one booked twice four weeks ago where plain days do not.\n\n`SiteOptionsTest` follows the new wording. Full suite 275/275.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/recent-materials",
+            "title": "Site options: recent days count most, the site at hand, and the conversation proposes the likeliest"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016115902-7f9300"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "During a demo an \"Unauthorized\" box appeared. The werf screen checks every 10 seconds (and on every action) that the worker is still signed in, and answers 401 when the session that carried his sign-in is gone. Livewire showed that answer as its bare error box.\n\nOne way the session went: logging out of the office in the same browser invalidated the whole session, the werf sign-in included. A session that expires, or one removed together with a deleted user, does the same.\n\n## What changes\n\n- **Back to the door, with a word why.** A Livewire request answered 401 now sends the browser back to its door instead of showing the box:\n  - on the werf app to `/werf?afgemeld=1`, which says \"Je was afgemeld. Meld opnieuw aan met je code; je fiche van vandaag staat er nog.\";\n  - elsewhere to the login.\n\n  A 419 (a page that outlived its token) reloads the page. This lives in `resources/js/signed-out.js`, loaded with the app.\n- **Office logout keeps the werf sign-in.** Logging out of the office still invalidates the session and its token, then puts back the werf sign-in of a worker on the same browser. A demo on one device no longer signs the werf app out.\n\n## Tests\n\n- `SignedOutTest` covers:\n  - office logout leaves the worker signed in and the office user out;\n  - the door shows the notice after `afgemeld=1` and not otherwise.\n- Full suite 296/296, JS 15/15.\n- In headless Chromium: sign a worker in, drop the session cookie, and within the next poll the page lands on the code screen with the notice, without an error box.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/signed-out-gracefully",
+            "title": "Signed out: back to the door with a word why, not an Unauthorized box"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016130140-c62597"
+}

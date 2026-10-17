@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n**The asked card waits for the voice.** When the model asks a question it also sends `veld`, and the matching card (Waar, Hoe laat, ...) lit up straight away. The tool call arrives before the audio, so at the start of a call the screen showed \"Werven\" before anything had been said. `conversation.js` now holds the card until `output_audio_buffer.started`. If that event never comes it falls back after 4 seconds, and it drops the card when the worker starts speaking.\n\n**The role is background, not the flow.** Each role used to come with its own way of asking (a driver: \"per werf of rit apart\"; a crane operator: machine hours first), and the opening asked \"waar heb je vandaag gewerkt?\". But one person can fill several roles in a day, for example site work in the morning and driving between sites in the afternoon. So:\n- the opening asks \"wat heb je vandaag allemaal gedaan?\";\n- the prompt says the profile is background only: first ask openly about the whole day, then go through it part by part and ask only what each part is missing;\n- the details that depend on the role still apply, but only when that part of the day comes up: plate and km reading when he drove, machine hours kept apart from his own hours when he was on the crane.\n\n## Tests\n\n- `PersonaTest`: every role gets the open first question and the background sentence, and none of them asks \"waar heb je vandaag gewerkt?\" any more.\n- JS: the card shows when the question is heard, not when it is noted.\n- Full suite: PHP 306 passed, JS 16 passed.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/open-question-first",
+            "title": "Werf call: open question about the whole day, asked card in step with the voice"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016151338-527ed5"
+}

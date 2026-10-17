@@ -1,0 +1,16 @@
+{
+    "action": "e38599d9d2d6e195300b44c63c4cb23e",
+    "effect": {
+        "detail": {
+            "base": "73636cb2501e635b9c52a794f8496adb9ade51a7",
+            "branch": "workbench/bell-in-reader-language",
+            "commit": "a9f30075a6939d0c7117707306cc439863b4b536",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3432,
+    "verdict": "ALLOW"
+}

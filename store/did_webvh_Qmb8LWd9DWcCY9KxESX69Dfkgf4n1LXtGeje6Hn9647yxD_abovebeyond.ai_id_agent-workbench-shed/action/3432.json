@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "73636cb2501e635b9c52a794f8496adb9ade51a7",
+            "branch": "workbench/bell-in-reader-language",
+            "files_sha256": "32444b13f6496ad855306c62af1b5ece720616b203c115552466b22844f1c116",
+            "message": "Bell: a shared-stock sale reaches each user in their own language"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016101756-db04cf"
+}

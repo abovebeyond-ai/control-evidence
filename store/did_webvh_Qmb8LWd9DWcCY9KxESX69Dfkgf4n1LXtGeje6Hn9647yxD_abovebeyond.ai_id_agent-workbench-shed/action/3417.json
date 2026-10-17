@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A version with an ampersand arrives on the vehicle sheet as \"Cool &amp; Connect\" instead of \"Cool & Connect\" after a chassis lookup. Every dealer has to clean the field by hand, and the wrong text travels on to the portals.\n\n## What happens\n\nWhile entering a Ford EcoSport, the field \"Uitvoering\" (`package`) was filled with `Cool &amp; Connect`.\n\n## Cause\n\nThe VWE chassis lookup (`OwnStockService::executeSOAPCall`) gets an XML answer whose content is a second XML document, escaped. The code turns `&lt;` and `&gt;` back into tags but leaves `&amp;` as it is, so an `&` in the inner document (`&amp;` there, `&amp;amp;` on the wire) comes out as the literal text `&amp;`. `convertVweJsonToVehicle` copies `SubModelName` into `package` as is. Answers are cached per chassis number in the VWE request table, so the cached ones carry the same text.\n\n## Expected\n\nThe version reads `Cool & Connect`, also for an answer that was cached before the fix. Vehicles that already carry `&amp;` in `package` are not corrected by the code change; that would be a separate one-off cleanup if wanted.\n\nSource: Portal mail:22 (onboarding feedback, 2026-10-16).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Version from the VWE chassis lookup shows &amp; instead of &"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016100529-9e2f2b"
+}

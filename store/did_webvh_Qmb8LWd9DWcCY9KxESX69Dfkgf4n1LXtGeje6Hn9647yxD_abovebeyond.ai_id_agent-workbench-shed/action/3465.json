@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cc6f3b4a1643fcbcea747548b8a3646d13677320",
+            "branch": "workbench/purchase-price-canary",
+            "files_sha256": "40b3300b9783c11fab81892e9c99da287c14ef6548793fcf8f4a0d61277366c3",
+            "message": "Guard: a garage's purchase price and repair costs never reach another garage"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016104537-61df13"
+}

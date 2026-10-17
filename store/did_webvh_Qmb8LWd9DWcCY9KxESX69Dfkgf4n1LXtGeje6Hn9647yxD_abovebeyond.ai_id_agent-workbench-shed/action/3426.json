@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "73636cb2501e635b9c52a794f8496adb9ade51a7",
+            "branch": "workbench/mail22-shared-stock-price",
+            "files_sha256": "433bb1ddf1379f6b5a248a1493709a5e49479ed4f953639a91da4ea21f4add58",
+            "message": "Shared stock: the purchase hint in the offer and order modals is the trade price"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016101732-2f4217"
+}

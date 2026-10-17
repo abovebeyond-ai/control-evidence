@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "26a45d084f8e928661a203209940b377d5a4a1d3",
+            "branch": "workbench/reset-any-time",
+            "files_sha256": "602d8817fed31ea581b40865cff75b1f8778a7e127715ae2326444479a56b34c",
+            "message": "Werf: start over at any moment, from the board"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016133045-0895ac"
+}

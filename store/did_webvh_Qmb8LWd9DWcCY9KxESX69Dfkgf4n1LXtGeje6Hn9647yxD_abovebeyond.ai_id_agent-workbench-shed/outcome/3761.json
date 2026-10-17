@@ -1,0 +1,16 @@
+{
+    "action": "b7ea97eb6708e556d4a5a9dd44316c93",
+    "effect": {
+        "detail": {
+            "base": "5fe5904de455740d7963eccde9898bbff8cf2822",
+            "branch": "workbench/day-in-parts",
+            "commit": "0048f18b1988a643df3e6c1b7c7223bd11ac9a0f",
+            "files": 16,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3759,
+    "verdict": "ALLOW"
+}

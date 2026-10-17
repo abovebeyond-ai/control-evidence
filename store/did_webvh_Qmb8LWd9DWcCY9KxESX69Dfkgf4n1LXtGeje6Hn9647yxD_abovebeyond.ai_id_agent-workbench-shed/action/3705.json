@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f367ee64bda8c61f79f91e3a8e36e7a04bae58f9",
+            "branch": "workbench/contacts-first-and-medewerkers",
+            "files_sha256": "be75fb3d19cee292b5b82ebd5ac5e3109e8f47490a0bd0c77d8133f678f3cd5b",
+            "message": "Netwerk opens on Contacten; Medewerkers in the menu"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016140519-622e4d"
+}

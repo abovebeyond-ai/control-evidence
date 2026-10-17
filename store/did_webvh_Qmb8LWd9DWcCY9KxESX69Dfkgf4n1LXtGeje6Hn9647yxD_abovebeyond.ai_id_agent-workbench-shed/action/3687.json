@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "85b5021eb7ecbbdae4b6a6ea609a44cf87f03e9d",
+            "branch": "workbench/no-acquisition-tab",
+            "files_sha256": "950e96ee037226e5689f1494cd2753a0d87e76bf8e5adebec2c61f38e96ff879",
+            "message": "Netwerk: without the quotes-to-orders tab"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016140129-797173"
+}

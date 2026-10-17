@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f8252d6d85b28a276a2af8cb2fdd4b6eb37bae68",
+            "branch": "workbench/statistic",
+            "files_sha256": "36272b5e6f9c9c0a404c295b3646834b6fccb7134a05178785f93bac80a54b63",
+            "message": "Standard 0.12.0: Statistic, a figure read at its origin, plus generated TypeScript types"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261016094528-b3fbe5"
+}

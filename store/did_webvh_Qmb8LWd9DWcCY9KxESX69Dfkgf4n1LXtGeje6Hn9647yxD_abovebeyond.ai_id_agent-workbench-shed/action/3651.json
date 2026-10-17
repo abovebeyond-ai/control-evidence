@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "419d1d77f209087463f2b1a06278b925c0581439",
+            "branch": "workbench/agenda-steps",
+            "files_sha256": "8cc748636147cce7176950081cac50c0296433d49b997923cf79abfce48696b9",
+            "message": "Overdracht: step by step, the network first, ten at a time"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016123846-01404a"
+}

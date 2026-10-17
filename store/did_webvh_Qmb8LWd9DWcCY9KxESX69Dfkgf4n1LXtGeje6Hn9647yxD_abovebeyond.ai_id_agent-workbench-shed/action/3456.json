@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On the \"Omzet en aankoop\" tab, the top-5 and top-10 shares were four sentences of plain text, one per year, flush against the table. You had to read four similar lines to compare years.\n\nThey are now a small panel, \"Hoeveel de grootste klanten wegen, per jaar\" (or leveranciers):\n- one groove per year: dark for the five largest, light for the next five;\n- the two percentages to the right;\n- a legend and the note that the current year is still running.\n\nThe table and its note below get some space.\n\nOn a phone the percentages move under the bar.\n\nTests: `NetworkTest` assertions follow the new heading. Full suite 232/232. Checked in headless Chromium.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/share-summary",
+            "title": "Omzet en aankoop: the top-5 and top-10 shares as a bar per year"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016103212-8b5028"
+}

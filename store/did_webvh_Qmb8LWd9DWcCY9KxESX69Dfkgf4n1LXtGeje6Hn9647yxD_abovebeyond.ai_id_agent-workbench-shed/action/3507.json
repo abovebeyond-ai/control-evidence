@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3aaac93622f22569d49ffc9fead85b57afe7e894",
+            "branch": "workbench/say-options",
+            "files_sha256": "484776e326d0494de1417cd1c9087454828b099479cf9480eea7b4458319d25b",
+            "message": "Werf conversation names the options when asked, and a worker without history gets the busiest sites"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016112006-8cb957"
+}

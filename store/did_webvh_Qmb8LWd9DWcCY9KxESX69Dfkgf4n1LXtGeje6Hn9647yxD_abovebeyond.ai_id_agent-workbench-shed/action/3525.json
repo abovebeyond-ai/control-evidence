@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A lead whose vehicle has been sold now says so.\n\n## Why\n\nA lead from August pointed to a car that was sold through an order in September. Opening it on Stocklist showed no customer-mode switch and no offer or order buttons, and its website link landed on the dealer's website overview. Both are correct for a sold car, but nothing in the leads list said the car was sold, so it looked like a bug (Portal mail:22).\n\nOn top of that, `WebsiteController::detail` already sends \"Deze wagen is niet meer beschikbaar.\" along when it redirects a sold or missing vehicle to the overview. Only the detail page printed that message, so the visitor arrived on the overview without a word.\n\n## Change\n\n- **Lead data.** `WidgetService::get4Data` reads whether the lead's vehicle is sold before it overwrites `vehicle` with the vehicle's name.\n- **Lead row.** It carries a \"Verkocht\" chip.\n- **Opened card.** It says the car is sold and no longer appears on any website. It drops the website link, which could only lead to the overview, and keeps the Stocklist link, because that sheet shows the sale.\n- **Website overview.** It prints the flash message, the same way the detail page does.\n- **Translations.** New keys in all four languages.\n\n## Tests\n\n- `WorklistPageTest::test_a_lead_on_a_sold_vehicle_says_so_and_drops_the_website_link` checks a lead on a sold vehicle: the row shows the chip, the card shows the note, and only the Stocklist link remains.\n- `WorklistPageTest::test_a_lead_on_an_unsold_vehicle_carries_no_sold_label` checks that an unsold vehicle shows no chip and keeps both links.\n- `AWebsiteLinkToASoldVehicleSaysSoTest` follows the redirect from a sold vehicle's website link and finds the message on the overview.\n- The first and the third fail on main. The full suite and PHPStan pass locally.\n\nCloses #1030\n",
+            "branch": "workbench/lead-shows-sold",
+            "title": "A lead on a sold vehicle says so"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016112632-a5e6af"
+}

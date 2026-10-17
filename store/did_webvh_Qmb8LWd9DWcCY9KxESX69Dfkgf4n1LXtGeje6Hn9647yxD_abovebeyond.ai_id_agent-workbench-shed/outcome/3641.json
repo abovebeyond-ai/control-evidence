@@ -1,0 +1,16 @@
+{
+    "action": "7dedbe5debaa958924a0fa4dcae89c66",
+    "effect": {
+        "detail": {
+            "base": "3ceae833331d4fe5d0d90b7c2d861c41d5030159",
+            "branch": "workbench/status-label",
+            "commit": "a6807f64a624398f75ef46f760f876f57748cea0",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3639,
+    "verdict": "ALLOW"
+}

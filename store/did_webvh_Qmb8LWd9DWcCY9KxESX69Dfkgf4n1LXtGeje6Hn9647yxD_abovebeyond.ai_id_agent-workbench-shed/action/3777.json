@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "13b6f3b45c286a6eacedfbbed1e6e6ede7bdd898",
+            "branch": "workbench/worker-flow-compact",
+            "files_sha256": "5654c4edfa20c1d9f0945fb8d33130ba119b2eb450aa6b49863918313d313658",
+            "message": "Worker flow with a compact phone screen"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016161639-8c2d1b"
+}

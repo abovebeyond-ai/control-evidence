@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e988bfc1633d9eda378cb5dc2b1b595476ef2461",
+            "branch": "workbench/network-list",
+            "files_sha256": "78f6b539c2575f673c711f835559826f7d9872a1775fdf941be9daa4fc76e20a",
+            "message": "Contacten: an overview by role and carrier, the list in sections"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016092342-53b9a7"
+}

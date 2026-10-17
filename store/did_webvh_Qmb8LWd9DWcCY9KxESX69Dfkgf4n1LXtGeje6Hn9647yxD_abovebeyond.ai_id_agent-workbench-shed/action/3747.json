@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "82b2abbedd5ca0dd0e733f03aaf5c51f8edfc93c",
+            "branch": "workbench/opportunity-suggestion",
+            "files_sha256": "725e194fd8d77e34c327a37b4f3f88c900090d1384a8c3ca9666f8abd404991d",
+            "message": "The Opportunity takes a suggestion from the conversation; the margin shows who a post is about"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261016145120-4aaff8"
+}

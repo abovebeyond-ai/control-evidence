@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a88475d10fd065215251af33dfdf664cee780863",
+            "branch": "workbench/standard-0.12",
+            "files_sha256": "256f3ac33ca2200f5162d8475b4ad360bfa0193a650ef016b897e542351db6df",
+            "message": "Pin Gentells Standard 0.12.0: statistics, and type checking against its types"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261016111054-6488f1"
+}

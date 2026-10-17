@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "This PR replaces #109 and #110: the same changes rebuilt on the current main, plus the rename. #109 had come to conflict with main once #108 merged, so its checks never ran.\n\n## What changes\n\n- **Netwerk opens on Contacten** (from #109). The tabs read Contacten, Netwerk, Omzet en aankoop, Nieuw en stil. `?tab=netwerk` still opens the graph, and an old link to a removed tab opens Contacten.\n- **\"Medewerkers\" in the menu**, right after Overdracht (from #110, renamed from \"Mensen\"):\n  - it shows in the office menu and in the menu of a shared link;\n  - the page is called Medewerkers and lives at `/medewerkers`; the old `/overdracht/mensen` redirects there;\n  - the button on Overdracht is gone;\n  - the hints in a node's panel and on Gebruikers point to \"Medewerkers in het menu\".\n\n## Tests\n\n- `NetworkTest`: an old link lands on Contacten.\n- `ContextEverywhereTest` opens the Netwerk tab before picking a project.\n- `CarrierPeopleTest`: the page is called Medewerkers, and a shared link sees it in the menu.\n- Full suite 303/303.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/contacts-first-and-medewerkers",
+            "title": "Netwerk opens on Contacten; Medewerkers in the menu (replaces #109 and #110)"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016140519-622e4d"
+}

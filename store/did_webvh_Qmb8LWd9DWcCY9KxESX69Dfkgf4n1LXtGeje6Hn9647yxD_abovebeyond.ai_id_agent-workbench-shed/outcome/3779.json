@@ -1,0 +1,16 @@
+{
+    "action": "9a46f63a96327be78fe5d7162767e3ed",
+    "effect": {
+        "detail": {
+            "base": "13b6f3b45c286a6eacedfbbed1e6e6ede7bdd898",
+            "branch": "workbench/worker-flow-compact",
+            "commit": "fa95d663998d88d38e53081d5ddee35c44811c23",
+            "files": 28,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3777,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3e8effa5dd4143c995a1b32d9df46d1095716406",
+            "branch": "workbench/context-tags",
+            "files_sha256": "d5df3010c1c4275b880c237325acf8e6c04af0409547762d8fa2eafcab9b3a76",
+            "message": "Context: one note with tags instead of either-or kinds, and the same panel in Netwerk as everywhere"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016121731-7b05e8"
+}

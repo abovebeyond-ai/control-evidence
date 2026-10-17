@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: On a colleague's vehicle in the shared stock, \"Offerte maken\" shows the selling garage's own purchase price as \"Aankoopprijs\", and \"Bestelbon maken\" shows no purchase price at all. The selling garage's purchase price must never be visible to another garage; the hint should be the dealer price (\"Samen Sterk\").\n\n## What happens\n\nA garage opens the detail page of a vehicle that belongs to another garage (shared stock). The buybox shows the dealer price (trade price) with the recommended retail price under it, which is right.\n\n- **Offer modal:** under the price field the hint reads \"Aankoopprijs: <amount>\", and that amount is `purchase_price` of the vehicle, which is what the *selling* garage paid for it. Reported example: dealer price 21 750, the offer modal showed 19 000, the seller's purchase price.\n- **Order modal:** only the recommended retail price is shown; the purchase price for the viewing dealer is missing.\n\n## Expected\n\n- In both modals, the purchase price hint is what the viewing dealer pays: for a colleague's vehicle the trade price (the amount in the buybox), for an own vehicle the own purchase price.\n- The selling garage's total purchase price never appears anywhere in the shared stock; only retail price and colleague dealer price.\n\n## Where\n\n`resources/views/stocklist/_tabs/offertemodal.blade.php` (hint uses `$vehicle->purchase_price` regardless of owner), `resources/views/stocklist/_tabs/bestelbonModal.blade.php` (no purchase hint).\n\nSource: Portal mail:22 (onboarding feedback, 2026-10-16).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "Shared stock: offer modal shows the selling garage's purchase price, order modal shows no purchase price"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016100526-7d4aee"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "85b5021eb7ecbbdae4b6a6ea609a44cf87f03e9d",
+            "branch": "workbench/contacts-first",
+            "files_sha256": "66fce81ecbb62273094f886c5aa902699e810fceaa5da976472ed4c73a1e3999",
+            "message": "Netwerk opens on Contacten, the graph second"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016140228-b7d619"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "98b2b5c68e2169720f09fca73c2b99801cf38843",
+            "branch": "workbench/writing-calmer",
+            "files_sha256": "543be874f391ac3e584e866d5dbffb20dbde13538b26f396e828bb827401a022",
+            "message": "Cite a source by its link; the writing partner talks shorter"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261016164521-392fe9"
+}

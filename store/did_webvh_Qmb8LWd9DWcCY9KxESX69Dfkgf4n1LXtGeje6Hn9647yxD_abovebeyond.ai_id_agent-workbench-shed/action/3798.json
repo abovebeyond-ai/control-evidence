@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The writing conversation felt stiff, sudden and like a lot at once: long answers landing as blocks after a silent wait, buttons that put long instructions in the writer's mouth, a trace of every search under each answer, and a stack of red cards in the margin. This makes it calmer, lets it read along, and adds two smaller things in the same files.\n\n## Reading along\n\n- When the writer pauses for six seconds after changing a paragraph, and that paragraph has claims without a source the conversation has not named yet, one note appears. For example: \"\u201cIn 2026, 62% of Dutch\u2026\u201d in paragraph 6 has no source yet. Find sources, Give feedback, Not now\".\n- `readAlongNote` in `piece.js` decides. It counts only paragraphs changed since the piece loaded, never pictures or headings, and names each claim once. A note goes away when its claims get a source.\n- Noticing costs nothing: it reads the claims the live review already returns, with no model call. The model runs only when a button is pressed.\n\n## A calmer conversation\n\n- **Short lines for buttons:** a button shows a short line (\"Find sources for paragraph 6\"), and the full instruction travels as `brief` (pipeline PR). The margin's \"look for evidence\" does the same.\n- **Reading pace:** the answer unrolls in about half a second per burst instead of landing as a block, and the buttons wait until the text has finished. Turned off under reduced motion.\n- **Gentle arrival:** new messages fade in.\n- **Searches folded:** \"Looked at 4 things\" opens on a click.\n- **Fewer cards:** the margin shows two claim notes at a time, then \"N more lines without a source\".\n\n## Also\n\n- **Add a link** under the sources: paste a page's link, optionally with the sentence it supports. The Studio says whether the page was already in Gentells or newly added (pipeline PR).\n- **A delete that fails says why.** It failed silently before: on the box a 403 left the piece open with no word.\n\n## Checks\n\n- `npm test`: 49 pass, including `readAlongNote`. `vite build` is clean.\n- Recorded in a local Studio against a copy of production: typing a figure into paragraph 6, the note after the pause, \"Find sources\" sent as a short line, the answer unrolling with its searches folded.\n\nMerge the pipeline PR first. Without it the brief is ignored, the buttons send only the short line, and Add a link answers 404.\n",
+            "branch": "workbench/writing-calmer",
+            "title": "A calmer conversation that reads along, and a source by its link"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261016164552-ecad46"
+}

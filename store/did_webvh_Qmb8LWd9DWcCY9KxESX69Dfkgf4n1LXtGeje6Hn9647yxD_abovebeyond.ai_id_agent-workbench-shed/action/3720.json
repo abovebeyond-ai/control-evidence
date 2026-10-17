@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A piece has two names: its owner (`author_id`), whose desk it sits on in the Studio and who may edit and share it, and its byline (`author_name`), the name readers see on gentells.com. The 78 posts replaced on 15 October 2026 came in by import, so they have the byline \"Trendwolves Editorial Team\" and no owner: they are on nobody's desk, and only an admin can change them. They were all written by one writer.\n\n## What changes\n\n- **`bin/own-posts.mjs <ids.json> --owner=<email> [--dry] | --undo=<run>`** gives live posts their owner.\n  - Only the owner moves. The byline, the text and `updated_at` stay, so gentells.com sees no change.\n  - The whole plan is refused, with every reason, when a post is not live, when someone else already owns it, or when the email is not a current member of the team (unknown or `disabled_at`).\n  - A post the person already owns is left alone.\n  - `article_owner_undo` keeps the owner before each change; `--undo=<run>` puts it back.\n- **`listArticles`** orders live pieces by `published_at`, newest first. Ordered by `updated_at`, a run that touches many posts at once lists them in the order of the run instead of the order of the site.\n\n## Checks\n\n- `test/own-posts.test.mjs`: refusals with every reason; a dry run writes nothing; the owner is set, the byline and `updated_at` stay; newest live first; a second run changes nothing; undo.\n- Full suite: 1237 pass. The 6 report-render tests fail on the workbench only, because `pdftoppm` is not installed there.\n- `npm run typecheck` is clean.\n- Rehearsed on a copy of production with a stand-in account: 78 of 78 posts on the writer's desk, bylines unchanged.\n\nThe Studio PR alongside shows these pieces on the owner's Write desk. After merge, the run on the box is `node bin/own-posts.mjs <ids.json> --owner=<email> --dry`, then without `--dry`. The id list is not part of this PR.\n",
+            "branch": "workbench/own-posts",
+            "title": "Give live posts their owner, keep the byline"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261016141508-1e503d"
+}

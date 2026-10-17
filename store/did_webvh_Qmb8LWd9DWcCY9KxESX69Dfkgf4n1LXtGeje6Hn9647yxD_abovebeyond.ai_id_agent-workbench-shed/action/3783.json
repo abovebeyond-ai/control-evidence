@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8929c054aeee6ab5ffef5b75886906c17ef6191e",
+            "branch": "workbench/bouwsoft-entry-2",
+            "files_sha256": "350919f2fec9cf32ba255d5cc05f0607c88074911304d14d4311230f8f4ff12c",
+            "message": "Office page to type a day's worksheets into Bouwsoft"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016164457-1ccb48"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0a3f50ef0279280fbe29ab18fda487f7b48343c9",
+            "branch": "workbench/calm-call-screen",
+            "files_sha256": "659e318514f7719adfb669e571c29249c627c69217ff7db62be6ae994b3aa725",
+            "message": "Werf call screen: the overview and what is at hand, step by step"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016115336-1cf4dc"
+}

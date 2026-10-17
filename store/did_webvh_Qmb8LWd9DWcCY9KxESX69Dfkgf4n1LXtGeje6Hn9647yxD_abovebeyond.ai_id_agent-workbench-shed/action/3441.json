@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A version with an ampersand came out of the VWE chassis lookup as `Cool &amp; Connect`.\n\nVWE returns an XML string whose content is the real answer, escaped once more. `executeSOAPCall` turned `&lt;`/`&gt;` back into tags but left `&amp;` alone. An `&` in the answer (`&amp;amp;` on the wire) therefore reached `SubModelName`, and from there `package`, as the literal text `&amp;`.\n\n## Change\n\n- `OwnStockService::unwrapVweAnswer()` is the old inline unwrapping, now with one more step. It undoes one level of escaping: `&lt;` and `&gt;` first, `&amp;` last. Text that the inner document escaped itself keeps its own escaping.\n- `convertVweJsonToVehicle` decodes entities in `SubModelName`. VWE answers are cached per chassis number, and an answer cached before this change still carries `&amp;`.\n- Vehicles already saved with `&amp;` in `package` are not touched. That would be a one-off cleanup if wanted.\n\n## Tests\n\n- `tests/Unit/VweAnswerKeepsTheAmpersandTest` checks three cases:\n  - an ampersand arrives as one;\n  - an angle bracket that the inner document escaped stays text;\n  - plain text is unchanged.\n- I reproduced the old unwrapping on the same input. It yields `Cool &amp; Connect`.\n- The full suite and PHPStan pass locally.\n\nCloses #1029\n",
+            "branch": "workbench/vwe-ampersand",
+            "title": "VWE lookup: an ampersand in the version arrives as one"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016101816-6af369"
+}

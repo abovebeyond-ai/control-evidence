@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "141e9042c9f38fc8bb6b6ef3ec1033153e261a03",
+            "branch": "workbench/statistic-card",
+            "files_sha256": "8d50ed91d02dddd0ae28e1ce696f412c071103f35af7e357af1892d6cb4d8d7a",
+            "message": "Show a cited figure as a figure: its full attribution line and its link for every reader"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261016113527-d5370b"
+}

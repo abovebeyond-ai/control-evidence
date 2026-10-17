@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The people the handover can name (#106) were reached through a \"Mensen\" button on Overdracht, which was easy to miss and sat oddly next to the CSV. They get a place in the menu.\n\n## What changes\n\n- **\"Mensen\" in the menu**, right after Overdracht: in the office menu, and in the menu of somebody on a shared link.\n- **The page lost its own back link** (\"Overdracht\" above the title) now that the menu shows where it is.\n- **Overdracht** keeps only its CSV button.\n- **The hints point to the menu:** the one in a node's panel when the group is empty, and the one on Gebruikers.\n\n## Tests\n\n`CarrierPeopleTest`: a shared link sees the menu item. Full suite green.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/people-in-menu",
+            "title": "Mensen in the menu, next to Overdracht"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016140354-301b7f"
+}

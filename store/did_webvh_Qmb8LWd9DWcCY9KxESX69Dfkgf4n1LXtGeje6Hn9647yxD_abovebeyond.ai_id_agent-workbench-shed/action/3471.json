@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "68d81379d0be92cccb3845f7df8dce76ee500f64",
+            "branch": "workbench/node-context",
+            "files_sha256": "3625663f1ffbe2c46b58a13a20b3cd53ef248f5649d45355ad285381e005a77b",
+            "message": "Context for the handover on every node, gathered on Overdracht"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016105228-d93534"
+}

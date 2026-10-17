@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "73636cb2501e635b9c52a794f8496adb9ade51a7",
+            "branch": "workbench/vwe-ampersand",
+            "files_sha256": "ba96532d0dd03c4d81b77d849fac2f83a9767d91a41f732cf5dd1f293a34621f",
+            "message": "VWE lookup: an ampersand in the version arrives as one"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261016101816-6af369"
+}

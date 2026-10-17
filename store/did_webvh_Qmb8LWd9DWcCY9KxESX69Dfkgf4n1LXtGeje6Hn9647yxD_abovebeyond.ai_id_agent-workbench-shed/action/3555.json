@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f1afa7410f971cec7da97e702de45d80e40085a9",
+            "branch": "workbench/confirm-and-match-2",
+            "files_sha256": "43da2bd4f4f17271a26617567491f3bef7056b73265cb66e18f6f1ed10b5ea89",
+            "message": "Werf conversation confirms site and hours, keeps blocks of hours apart, links a site written differently"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016114207-1d5ef9"
+}

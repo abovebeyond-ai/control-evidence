@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "55459da042d591f1618fc774b36262a78c473a3e",
+            "branch": "workbench/writing-calmer",
+            "files_sha256": "fc85e838f5988972d5131944dbac075c290459672deceeb10acb0d1a3fe343b5",
+            "message": "A calmer writing conversation that reads along; add a source by its link; a failed delete says why"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261016164552-ecad46"
+}

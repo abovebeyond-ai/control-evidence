@@ -1,0 +1,16 @@
+{
+    "action": "fa7dd7a60c584d9a0a0a4079e4d17d30",
+    "effect": {
+        "detail": {
+            "base": "7e1a50ae8fd8c078fddd985c72a158bd9bc43ae2",
+            "branch": "workbench/signed-out-gracefully",
+            "commit": "619aa61e272213a640b3ac997ba461fca51cf548",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3657,
+    "verdict": "ALLOW"
+}

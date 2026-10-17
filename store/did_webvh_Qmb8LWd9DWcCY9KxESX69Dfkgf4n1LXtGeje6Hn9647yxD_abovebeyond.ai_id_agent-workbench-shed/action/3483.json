@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f5502e3254611c3311677441917a66d03487eefc",
+            "branch": "workbench/site-options",
+            "files_sha256": "61566a86b8a195ff13455e9c483692d324f20321eaed8c415a5ba095dce50a75",
+            "message": "Werf: the conversation knows what Bouwsoft booked on a site, and each step's options can be tapped"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016110719-271471"
+}

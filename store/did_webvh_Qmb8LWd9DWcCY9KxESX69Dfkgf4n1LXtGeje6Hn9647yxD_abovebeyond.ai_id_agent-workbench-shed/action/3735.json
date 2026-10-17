@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c5229bd07da05f54250acfb591abcc7bb7bc46ac",
+            "branch": "workbench/menu-groups-2",
+            "files_sha256": "c69a3a57b007e33f9975769ccfd89d269e95dd909fae83bd9beb275bc4ea50d8",
+            "message": "Menu in two labelled groups; Gebruikers in the user menu"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016141659-9f0668"
+}

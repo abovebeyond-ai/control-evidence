@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A post can now cite a figure at its origin, a Statistic in the Gentells Standard 0.12.0 (pipeline PR alongside). This shows such a figure as a figure on the post page.\n\n- The card is labelled \"figure\", in its own colour. It links out with \"View the figure at its source\".\n- Its line wraps instead of being cut. That line names the publisher, the publication, where in it and the period, and all of it is the attribution.\n- Every reader who can read the post gets the figure's link, whatever their plan. A signal's url stays behind the Sources ability, and nothing changes there. Where a public figure comes from is not the paid part; for a publisher whose terms ask for attribution, it is the condition of using the figure at all.\n\n`publicEvidence` needed no change: statistics already fall outside the signal list that the plan trims.\n\nChecks:\n- `FigureAtItsOriginTest`: without the Sources ability, a signal loses its url and the figure keeps its own. A signed-in reader sees the card, the full line and the link.\n- `pint --test` is clean.\n",
+            "branch": "workbench/statistic-card",
+            "title": "Show a cited figure as a figure on the post page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261016113527-d5370b"
+}

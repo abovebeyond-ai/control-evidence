@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"Te bespreken\" mixed everything in two tiers: the owner's relations and the largest clients first, then suppliers, projects and people together. Projects came up before the network was through. The network is also far more than its first ten.\n\n## Step by step, ever further\n\n**Three steps, in this order:**\n1. **Netwerk:**\n   - relations only the owner carries or of high importance;\n   - relations added by hand (#98), since somebody at the table thought they mattered;\n   - then the largest clients by revenue share (up to 30);\n   - then the largest suppliers by purchase share (up to 30).\n2. **Projecten:** the busiest of the last three months (up to 40).\n3. **Mensen:** who worked most on site in the last three months (up to 30).\n\n**Ten at a time.** A step shows everything up to the batch of ten that holds its first open item. When those ten are discussed, the next ten come up by themselves. Nothing is stored for this; it follows from what has context.\n\n**A step opens** once the first ten of the step before it are discussed. Until then it shows its heading, its progress and when it opens.\n\n**Progress** shows for the whole list and per step. \"Nog te doen\" and \"Alles\" work per step. After a save, the next open item on screen opens.\n\nThe ranking's cache key moves to v3, so the new list shows at once after the deploy.\n\n## Tests\n\n`HandoverAgendaTest` covers:\n- the network first, the owner's relation before the largest client, then projects, then people;\n- 15 network items show 10, projects closed;\n- after ten are discussed, all 15 show and projects open;\n- working down the list opens the next item.\n\nFull suite green.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/agenda-steps",
+            "title": "Overdracht: step by step, the network first, ten at a time"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016123846-01404a"
+}

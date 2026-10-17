@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "26a45d084f8e928661a203209940b377d5a4a1d3",
+            "branch": "workbench/one-panel-carriers",
+            "files_sha256": "a27174e9a4d11e5868aeca1c5cb7d097865434065fcf95708a36a9bceb983356",
+            "message": "One panel per node: properties saved on a tap, and who carries it by name"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016133427-f0b23a"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two simplifications after #93 and #105.\n\n## Two roles\n\n- **The roles.** A login is Beheerder (everything, Gebruikers included) or Kantoor (everything but Gebruikers). The handover-only role is gone; users who had it become Kantoor in the migration.\n- **New users.** They default to Kantoor and land on the day overview after setting their password.\n- **Facilitators.** Their way in without a login is still the shared link from Verkennen.\n\n## The people the handover names: their own group, like Ploeg\n\nThe colleagues a node can name under \"Wie draagt het vandaag\" were picked on Gebruikers. They are not about logins, so they get their own page: **Overdracht \u203a Mensen** (`/overdracht/mensen`), made the way the crew is made on Ploeg:\n- **In de groep:** each member with \"Bouwsoft\" and its number, or \"zelf toegevoegd\", and \"Uit de groep\".\n- **Iemand die niet in Bouwsoft staat:** a name is enough. Stored with a `manual:` key and the name (`carrier_people.name`).\n- **In Bouwsoft, nog niet in de groep:** the active staff list, searchable by name or number, each with \"Toevoegen\".\n\n**Who can open it:** the page is behind the same door as Overdracht, so the office and a shared link.\n\n**Links to it:**\n- a \"Mensen\" button on Overdracht;\n- the hint in a node's panel when the group is empty.\n\nThe section on Gebruikers is gone.\n\n**Names everywhere.** People added by hand show by name in the panel and in the Netwerk CSV.\n\n## Tests\n\n- `CarrierPeopleTest`:\n  - the group is made from the staff list (search, add, remove) and by hand;\n  - a shared link opens the page.\n- `UserAdminTest`: two roles, and a new user lands on the day overview.\n- Full suite 300/300.\n- In headless Chromium: Overdracht \u203a Mensen, add two from Bouwsoft and one by hand.\n\nAfter merge: `php artisan migrate`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/handover-people",
+            "title": "Two roles for a login; the people the handover names get their own group, like Ploeg"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261016135101-7151c5"
+}
