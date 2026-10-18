@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-17T07:34:22+00:00",
+    "computed_at": "2026-10-18T07:34:20+00:00",
     "window": {
-        "since": "2026-10-10T07:33:02+00:00",
+        "since": "2026-10-11T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 42,
-                "gateway": 42
+                "github": 34,
+                "gateway": 34
             }
         },
         "Trendwolves/gentells-site": {
@@ -145,8 +145,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 25,
-                "gateway": 25
+                "github": 21,
+                "gateway": 21
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -196,8 +196,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 33,
-                "gateway": 33
+                "github": 27,
+                "gateway": 27
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -206,8 +206,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -382,8 +382,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 2,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/portal-cli": {
@@ -393,8 +393,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 12,
-                "gateway": 12
+                "github": 10,
+                "gateway": 10
             }
         },
         "abovebeyond-ai/proof-of-control": {
@@ -459,8 +459,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "forge:abovebeyond": {

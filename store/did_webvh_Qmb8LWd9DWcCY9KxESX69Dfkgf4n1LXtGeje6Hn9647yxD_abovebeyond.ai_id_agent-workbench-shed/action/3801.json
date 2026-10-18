@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5a379822014eb17ae484107d18c8b752b5638e78",
+            "branch": "workbench/loading-motion",
+            "files_sha256": "b7e646890e5872a7fce8aabdcd0b36977b3239e4f4f29e306fce9ac4a209d969",
+            "message": "Open the Studio with its header drawing and the shape of what is coming"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261017194701-c2c698"
+}
