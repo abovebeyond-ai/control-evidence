@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-18T07:34:20+00:00",
+    "computed_at": "2026-10-19T07:34:25+00:00",
     "window": {
-        "since": "2026-10-11T07:33:02+00:00",
+        "since": "2026-10-12T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 34,
-                "gateway": 34
+                "github": 33,
+                "gateway": 33
             }
         },
         "Trendwolves/gentells-site": {
