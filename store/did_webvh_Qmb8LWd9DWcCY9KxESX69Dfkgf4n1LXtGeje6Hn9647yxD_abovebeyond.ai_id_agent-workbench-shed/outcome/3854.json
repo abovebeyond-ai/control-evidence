@@ -1,0 +1,17 @@
+{
+    "action": "7f1479c4c292863b0ef97218bb2a7ff8",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 18,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/ShaneDeconinck/cides/pull/18",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3852,
+    "verdict": "ALLOW"
+}

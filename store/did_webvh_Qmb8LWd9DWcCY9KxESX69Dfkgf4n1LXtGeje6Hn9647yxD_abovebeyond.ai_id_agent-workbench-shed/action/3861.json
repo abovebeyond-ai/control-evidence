@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dd7c675fdf1bf25a86269c5ec1e10da880a2e0c4",
+            "branch": "workbench/explore-plain",
+            "files_sha256": "72052f81e96b6a0586c79da717c8ff9772fd545cca12c5a02902f5efda2e6c77",
+            "message": "Explore: drop the sentence defining a row"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261019205652-4c2723"
+}

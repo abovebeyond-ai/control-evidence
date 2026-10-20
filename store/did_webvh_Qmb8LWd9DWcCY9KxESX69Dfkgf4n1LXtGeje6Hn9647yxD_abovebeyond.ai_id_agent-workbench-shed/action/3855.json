@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d87f058ff99529aca1ee080f8f4833bd8b188c99",
+            "branch": "workbench/explore-intro",
+            "files_sha256": "edb0af2e4ab8ae11a607d075061bae10e5642b40a4b51ab111d064a9d0dfc663",
+            "message": "Explore: one-line intro instead of usage instructions"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261019193354-e88b7f"
+}

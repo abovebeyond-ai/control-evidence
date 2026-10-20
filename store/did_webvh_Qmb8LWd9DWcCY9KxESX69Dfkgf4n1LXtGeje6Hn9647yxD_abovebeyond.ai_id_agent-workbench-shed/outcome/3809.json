@@ -1,0 +1,16 @@
+{
+    "action": "a8d7d375aff246e2ba1e974293c46cf8",
+    "effect": {
+        "detail": {
+            "base": "abfebc0c301995bea0a52f13d7d2a52f45772504",
+            "branch": "workbench/network-two-tabs",
+            "commit": "41f61e8d4c936564511b814ecaef63474398faf8",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3807,
+    "verdict": "ALLOW"
+}

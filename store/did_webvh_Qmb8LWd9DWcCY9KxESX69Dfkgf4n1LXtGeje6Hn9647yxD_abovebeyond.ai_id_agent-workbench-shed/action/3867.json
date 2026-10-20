@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dd7c675fdf1bf25a86269c5ec1e10da880a2e0c4",
+            "branch": "workbench/people-intro",
+            "files_sha256": "a081c9910670522ffa4bc6658826194e2be37ea2b65a6b0ac453028f6b1785f3",
+            "message": "People: one-line intro"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261019205747-79949b"
+}

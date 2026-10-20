@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "**Replaces #125** (same change, with headings that do not assume the worker is a man). #125 can be closed.\n\n## What\n\nThe worksheet page (`/fiche/{id}`) had headings in letter-spaced capitals whose names didn't say what was under them, and several assumed a man (\"hij\", \"zijn\"). They are now plain sentence-case headings:\n\n| Was | Now |\n|---|---|\n| DE DAG | Samenvatting |\n| NOG ONVOLLEDIG | Ontbreekt nog |\n| GEVRAAGD, EN ER WAREN ER GEEN | Beantwoord met 'geen' |\n| GEVRAAGD, KON HIJ NIET ZEGGEN | Niet geweten |\n| WAT HIJ ZELF ZEI | Letterlijk gezegd |\n| RIT (departure, return, break, km for the day) | Vertrek en terug |\n| UREN, MACHINES, MATERIAAL, table headers | same words, no capitals |\n\nAlso on the worksheet page:\n- \"Letterlijk gezegd\" is left out when nothing was said. It used to read \"Niets bewaard. Fiches van voor 20 augustus dragen zijn woorden nog niet.\"\n- A 'geen' for machines, material or the site manager is no longer listed when the sheet holds one after all: a tap after the 'geen' overruled it.\n- The subtitle and the signal lines use commas instead of middle dots (\"vrijdag 16 oktober 2026, handarbeider, ingesproken in het Turks\").\n\nOn the Ploeg page, \"Zijn eigen machine\" becomes \"Eigen machine\", and the intro no longer says \"zijn code\", \"zijn scherm\" and \"hij\".\n\n## Tests\n\n- `OfficeAccessTest`: the worksheet page shows \"Letterlijk gezegd\" with the words and leaves it out without them; \"Ontbreekt nog\" is shown; an overruled 'geen' for machines is not listed while one for material is.\n- Full suite locally: 332 of 333 passed, pint clean. The one failure is `WorksheetExportTest::test_a_week_of_worksheets_comes_out_as_a_workbook`, which fails on main on a Monday under sqlite. CI runs on MySQL.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/neutral-headings",
+            "title": "Worksheet page: plain, neutral headings (replaces #125)"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261019170212-e2767a"
+}

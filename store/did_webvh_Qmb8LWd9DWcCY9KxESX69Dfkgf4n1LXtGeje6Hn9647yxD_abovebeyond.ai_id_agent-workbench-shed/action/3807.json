@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abfebc0c301995bea0a52f13d7d2a52f45772504",
+            "branch": "workbench/network-two-tabs",
+            "files_sha256": "cf9c9826dd5c437ad8f27343f63e8b6b76a75bf7e98d925b5ffccb0142c46e93",
+            "message": "Network page: two tabs, the rest folded into Contacten"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261019081049-281753"
+}

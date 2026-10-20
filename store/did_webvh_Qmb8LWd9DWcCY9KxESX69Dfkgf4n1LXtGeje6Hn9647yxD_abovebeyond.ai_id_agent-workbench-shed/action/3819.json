@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e41567f53d1778e37533d1aefcf7894aa7270d63",
+            "branch": "workbench/dagrapport",
+            "files_sha256": "27b0c02fa265737c5748755e3323a8e89ab5dcbdce90d5034e3a19cb1e82eadb",
+            "message": "Dagrapport: Dag and Invoeren as one page"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261019083751-0ef78b"
+}

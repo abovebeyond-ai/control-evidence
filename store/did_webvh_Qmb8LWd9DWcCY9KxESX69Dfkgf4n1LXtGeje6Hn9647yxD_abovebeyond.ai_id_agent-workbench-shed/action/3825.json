@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "df3bf91aa139373d3650472bdbf1b7b863765af2",
+            "branch": "workbench/dagrapport-no-instructions",
+            "files_sha256": "be752b235eebdadd03b6cba814730a912646225b2eb2b3c169933f15df3767e0",
+            "message": "Dagrapport: drop the instruction paragraph above the Bouwsoft rows"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261019163327-e227b1"
+}

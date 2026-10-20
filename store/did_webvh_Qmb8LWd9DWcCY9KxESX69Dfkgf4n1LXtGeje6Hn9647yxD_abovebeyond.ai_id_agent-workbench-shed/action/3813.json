@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "934c04920097cd4ea62ad06399c743b7a5684b16",
+            "branch": "workbench/remove-catalogue",
+            "files_sha256": "72f71f4f8add7bad0f591a74c171153aa9193292fba6f475996780d46c15ac35",
+            "message": "Remove the Catalogus page"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261019082415-639a0f"
+}

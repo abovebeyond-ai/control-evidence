@@ -1,0 +1,16 @@
+{
+    "action": "5cdf4929b2ad2fc617f7a27c48c8c0a0",
+    "effect": {
+        "detail": {
+            "base": "dd7c675fdf1bf25a86269c5ec1e10da880a2e0c4",
+            "branch": "workbench/explore-plain",
+            "commit": "c440f5bf8522280605ea702c5eaca8b75a0542b1",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3861,
+    "verdict": "ALLOW"
+}

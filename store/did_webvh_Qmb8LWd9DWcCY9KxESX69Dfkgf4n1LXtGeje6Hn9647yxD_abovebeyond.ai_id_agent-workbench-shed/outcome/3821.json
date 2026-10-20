@@ -1,0 +1,16 @@
+{
+    "action": "15f50a100e3b8ee56dc3e94dae44e97a",
+    "effect": {
+        "detail": {
+            "base": "e41567f53d1778e37533d1aefcf7894aa7270d63",
+            "branch": "workbench/dagrapport",
+            "commit": "2c3fc7c2b4e677668b342abb651a1b638b3b75a2",
+            "files": 13,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3819,
+    "verdict": "ALLOW"
+}

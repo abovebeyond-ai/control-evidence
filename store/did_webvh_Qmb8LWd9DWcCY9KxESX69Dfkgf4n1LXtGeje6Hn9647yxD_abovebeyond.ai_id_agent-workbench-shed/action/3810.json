@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nNetwerk has two tabs now: **Contacten** and **Netwerk**. What the other two tabs showed is in Contacten now:\n\n- **Nieuw en stil** becomes two tiles next to Klanten, Leveranciers and Contacten op projecten: *Nieuw sinds <maand>* and *Stilgevallen*, with the same rules as before (created in Bouwsoft in the period; on at least two projects with nothing in the last 12 months). A tap filters the list (`?wat=nieuw|stil`), and a second tap clears it. New relations carry a small \"nieuw\" mark in the list. The sort has a new option, \"Nieuwste eerst\".\n- **Omzet en aankoop** becomes a card, *Hoeveel de grootste wegen*. For clients in the revenue and suppliers in the purchases it shows the top 5 and top 10 share of the last full year as a groove, plus the top 5 per year underneath. A tap filters the list to that role and sorts it by share. The list already had the share column, and the relation panel already shows the share per year.\n- *Aan tafel genoteerd* moves into the carrier card's heading, which saves one tile.\n\nThe full year-by-year share table with sortable columns is gone. Its figures for one relation are still in that relation's panel.\n\nOld links with `?tab=omzet` open the list sorted by share. `?tab=beweging` (like `acquisitie` before it) opens the list.\n\n## Tests\n\n- `NetworkTest`: new tests for the new/quiet filter (an unknown value falls back to none) and for old tab links; the supplier share test now goes through the card and `showShares`; the sortable-table test is removed together with the table.\n- Affected suites (Network, ContextEverywhere, ManualRelation, Handover, CarrierPeople): 34 passed. Pint clean.\n- Full suite locally: 331 of 332 passed. The one failure, `WorksheetExportTest::test_a_week_of_worksheets_comes_out_as_a_workbook`, fails on main as well. On sqlite, `whereBetween` on a date column misses a one-day range, which happens on a Monday when the start of the week is today. CI uses MySQL.\n- Checked on a local copy with 3298 relations, desktop and phone width (screenshots sent separately).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/network-two-tabs",
+            "title": "Netwerk: two tabs, new/quiet and biggest share folded into Contacten"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261019081049-281753"
+}

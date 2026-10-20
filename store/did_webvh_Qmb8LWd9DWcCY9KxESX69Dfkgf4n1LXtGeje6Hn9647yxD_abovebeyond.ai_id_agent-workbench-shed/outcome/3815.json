@@ -1,0 +1,16 @@
+{
+    "action": "6f83e45819431b580713cbffa7e2f252",
+    "effect": {
+        "detail": {
+            "base": "934c04920097cd4ea62ad06399c743b7a5684b16",
+            "branch": "workbench/remove-catalogue",
+            "commit": "5d2cb3cc2a342315d8f2de29644d46f8daf4f8e6",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3813,
+    "verdict": "ALLOW"
+}
