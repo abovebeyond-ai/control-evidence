@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Schoutteet sent 20 more company photos for the new site. They need a place on the site: some fit pages that already take images in Sanity, the workshop photos fit the services page, which has no image yet.\n\nSource: Portal mail:28 (a WeTransfer with 20 photos, no text beyond \"foto's\").\n\n## What arrived\n\n20 JPEGs, roughly in four groups:\n\n- **Front and yard** (5 photos): the TRUCKS & CARS building with the sign and parking, the road side with the yard behind, the logo sign close up, the flags. Two are professional shots at 2400px, two from 2014 at full camera size, one from 2004.\n- **Workshop** (4 photos, 2400px, professional): the main hall with lifts, the tool bench, a truck cab under repair.\n- **Cranes on the yard** (11 phone photos, 2021-2022): a truck-mounted crane extended in front of the building. Six of these are only 480x640 and will look soft above a small card.\n\nWeb versions (auto-rotated, metadata stripped, WebP, at most 2400px) are ready on the workbench in `/home/bench/work/schoutteet-mail28/web/01.webp` \u2026 `20.webp`. Stripping the metadata also removes a photographer credit that sits in the EXIF of the professional set; ask the company whether a credit should appear on the site.\n\n## Proposed placement\n\n1. History page, `photos` (already in Sanity, no code): the logo sign, the flags, the 2004 yard photo.\n2. Home `story` image or contact page: the professional front photo (building + sign).\n3. Services page, *Herstellingen en onderhoud* and *Carrosserie en ombouw*: the workshop photos. This needs an optional `image: siteImage` on `service` (contract, Studio schema, Laravel view), which the site does not have yet.\n4. Crane photos: no obvious page; possibly a gallery or a crane service. Needs a decision.\n\nPoints 1 and 2 are editor work in Sanity; point 3 is a code change on both sides and gets its own pull request once the placement is decided.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Place the 20 new company photos on the site"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021065923-b3d054"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:28",
+            "note": "Issue #29. 20 photos ready as WebP in /home/bench/work/schoutteet-mail28/web. Where do they go? Advice: sign/flags in history photos, front in home story, workshop on Services (needs image field, code). Crane photos: which page?",
+            "state": "parked"
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261021065937-d1bf74"
+}

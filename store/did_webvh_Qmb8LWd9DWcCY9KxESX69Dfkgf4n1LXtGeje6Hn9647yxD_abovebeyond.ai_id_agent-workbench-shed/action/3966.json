@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: Trendwolves editorial sent eight new external reports to be read into the Observatory as report signals.\n\nThe reports (PDF):\n\n- The certainty economy: China's Gen Z (Accenture Chinese Consumer Insights), 11 pages\n- Gen Z Wallet (Dentsu), 7 pages\n- Gen Z & Gaming audience report (GFB & GWI, September 2026), 35 pages\n- Megatrends, 20 pages\n- Beauty perspectives report 2026 (IFOP group x Strategies), 19 pages\n- Connecting the dots 2026 (GWI), 17 MB\n- Does Gen Z really exist, 20 pages\n- Second-hand culture, phone-free events, 3.8 MB\n\nNo code change: they go in through the Reports page of the Observatory (POST /upload-report, then ingest-report). Before uploading, check that none is already on the shelf, and that the terms of each publisher allow use in a paid product. The download links in the mail expire on 19 November 2026; a copy is kept on the workbench.\n\nSource: Portal mail:23.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Read eight new external reports into the Observatory"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261021054000-5a9529"
+}

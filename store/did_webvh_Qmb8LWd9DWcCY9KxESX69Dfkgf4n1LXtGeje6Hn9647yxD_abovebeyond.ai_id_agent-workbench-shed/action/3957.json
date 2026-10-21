@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:23",
+            "note": "Reading the attachments (standard docx, source list xlsx, 8 reports) and checking against gentells-standard and the pipeline",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261021053652-09b95f"
+}

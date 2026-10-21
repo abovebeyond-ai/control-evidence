@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0c78e21b60e45e7369cdb2a179ec4eaeef3e4dda",
+            "branch": "workbench/dealer-usage",
+            "files_sha256": "864654e150550194cbf5572ec26ffa6fcd3e757b4d9cacba7bacecd6c228f6de",
+            "message": "Count garages per use of the platform as a control read"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261020110849-bb39d0"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:27",
+            "note": "Company film re-encoded (48 s, 9 MB) and placed on Over ons; issue and PR next",
+            "state": "in-progress"
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261021070304-3ac374"
+}

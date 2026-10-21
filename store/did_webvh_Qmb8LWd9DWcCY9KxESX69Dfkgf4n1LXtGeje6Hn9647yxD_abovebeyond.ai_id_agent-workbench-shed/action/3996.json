@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "Sanity Studio repo",
+                    "url": "https://github.com/ShaneDeconinck/schoutteet-sanity"
+                }
+            ]
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261021064235-838620"
+}

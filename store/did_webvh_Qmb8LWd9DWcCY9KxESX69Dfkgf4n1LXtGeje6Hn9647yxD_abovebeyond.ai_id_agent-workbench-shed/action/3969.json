@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "704204e9e069b6435b0032bee82077f98d80267c",
+            "branch": "workbench/overname",
+            "files_sha256": "fba281f1774e3ca3dc88f77e0224f9cd69e730fcab0f4833670c161aa4fddbb6",
+            "message": "Services: overname and trade-in instead of rental; home hero about buying, selling and service"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021054121-f8172f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "86099fda7859e659444b8bae2f0807035140d2b4",
+            "branch": "workbench/handover-focus-2",
+            "files_sha256": "9ad247fcb5ae0adc071a4abed3b92eb02d11c381d80359a60c51087cfb2cb89f",
+            "message": "Handover focus: drop the remaining analysis from Historiek and Netwerk\n\nThe office side is for handing GLK over: the network of relations and\nwhat is known about each node. Figures that read how the business runs\ndo not help anyone take it over, so they go.\n\nHistoriek: Tijdlijn and Wie met wie (with their switches), the \"Vooral\"\ndriver share on machines, \"Meestal met\" on material, and the per-week\nchart, on screen and on paper. An opened person still shows who they\noften work with; that is context for that person.\n\nNetwerk: the new and quiet tiles and filter, \"Hoeveel de grootste\nwegen\", the share and activity columns, the share sort, the red date\nfor quiet relations, and the revenue, purchase and quote figures in the\nrelation panel. Relations\\Network::movement and ::acquisition go with\nthem. The graph's legend is three short lines.\n\nKept: the graph, the list by role, group, carrier and importance, the\nrelation and project panels with their context, and the revenue share\nthat orders Bespreken's agenda.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261020110408-100986"
+}

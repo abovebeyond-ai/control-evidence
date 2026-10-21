@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "567d3454aefd5054c7ef767db6afa228702735ea",
+            "branch": "workbench/network-vs-handover",
+            "files_sha256": "17c6b4c73c435bf9b7677fddb93d9a1858a323c733b3385e5f6e17198324ef76",
+            "message": "Netwerk is the map, Bespreken the conversation\n\nBoth pages showed who carries what, with a bar and a filter: Netwerk\ncounted relations (\"Wie draagt de relatie vandaag\", with how many the\ntable had noted), Bespreken counted notes (\"Wie weet het vandaag\"), and\nthe difference did not show on screen.\n\nNetwerk keeps the graph, the list and its filters, carrier included;\nthe carrier card with the table's progress goes. Bespreken keeps the\nagenda and what was told: the progress is one line above the agenda,\nnow also saying how many relations only the owner carries, and the\nfour tiles and the carrier bar become two selects in the filter row.\n\nThe context panel stays the same wherever a relation opens.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261020112621-fe3393"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Trendwolves editorial sent a new source list per sector (spreadsheet, state of 20 October 2026) and expects the Observatory to keep it up to date by itself. The list is a snapshot; the sources in it still have to be taken in, and nothing feeds the spreadsheet back.\n\nWhat the list holds:\n\n- 785 sources in four tabs: all sources (one row each, by sector, priority and name), 370 with a working feed (ready for automatic intake), 186 newsletters and Substacks (those without a feed would need a newsletter inbox), and 50 public data sources (Eurostat, OECD, Statbel, Apenstaartjaren and the like) as a factual base layer.\n- Columns: layer, sector, also relevant for, source, URL, feed or entry point, type, region, language, access (open, partly paywalled, registration), priority A/B/C, signal value, origin, checked October 2026, latest edition. Ids run as `GT-<n>` and `GT-BL<n>`.\n\nWhat is asked, in our terms:\n\n1. Take the list in as proposed sources, with their sectors as labels (several per source) and the priority, without duplicating sources the pipeline already has.\n2. The feeds go through the source lifecycle of Standard 0.9.0 (proposed, trial, admitted by a person), not straight into the record.\n3. The public data tab belongs in the reference layer (statistics, never signals) and the newsletters need a decision on an inbox.\n4. Answer the assumption: once a source is in the Observatory its feed is read automatically, but the spreadsheet does not update, and new sources Trendwolves finds still have to be added (in the tool, not in Excel).\n\nThis overlaps with the source-mix design note (PR #354) and the earlier request for many more news sources by RSS.\n\nSource: Portal mail:23 (the spreadsheet stays there).\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Take in the new source list per sector (785 sources, 370 feeds)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261021053956-8feafd"
+}

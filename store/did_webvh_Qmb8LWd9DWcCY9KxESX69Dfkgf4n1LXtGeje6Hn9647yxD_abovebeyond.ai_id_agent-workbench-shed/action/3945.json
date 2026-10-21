@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "83f8243391b1ff76f14aa8f48b188834f00d1d66",
+            "branch": "workbench/dependency-refresh",
+            "files_sha256": "acd42c3f59ec1e724e00df3a02ab11a9491cc0d564f9c8dc2c5e9a734a8c4793",
+            "message": "Update Laravel to 13.38 and refresh Composer dependencies within constraints"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261020143032-f3b2df"
+}

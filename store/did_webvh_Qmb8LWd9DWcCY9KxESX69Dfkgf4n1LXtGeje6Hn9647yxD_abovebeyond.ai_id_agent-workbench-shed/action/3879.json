@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "47e18db3f9b2767872680b438167b1da3725df64",
+            "branch": "workbench/share-intro",
+            "files_sha256": "bf04bd4e0f1923e200abf3caf732f78480d6678fa6798cca43648526e1d98fde",
+            "message": "Office pages: one-line intros"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261020080319-acc8fc"
+}

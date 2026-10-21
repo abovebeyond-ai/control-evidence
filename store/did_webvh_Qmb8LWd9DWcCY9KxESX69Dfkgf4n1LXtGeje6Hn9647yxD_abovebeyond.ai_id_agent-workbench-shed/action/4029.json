@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:25",
+            "note": "Issue #28. Upload to Sanity needs Shane's Editor token: SANITY_TOKEN=... node /home/bench/work/schoutteet-mail25/upload-photos.mjs --apply. Then pick where the photos go (proposal in #28).",
+            "state": "parked"
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261021065910-56611a"
+}

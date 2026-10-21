@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #17\n\nTakes in the 20 October 2026 version of \"Gentells Standard: Who, What and Why\", the successor of the 5 October document that 0.8.0 took in. The full list is in CHANGELOG.md under 0.13.0; in short:\n\n- **Millennials** (1980 to 1994) become a generation, tagged as context only, beside Gen Z, Gen Alpha or Young Families. **Gen Beta** goes from reserved to tagged, always beside Young Families. A new term property `onlyWith` carries this, and the validator refuses a context generation alone.\n- **Codes** is the thirteenth element. The twelve get the document's descriptions. A weight under 0.3 is not tagged, and the highest weight is the main element.\n- **Needs on signals**: one main need, at most one secondary, in a new tag mode `ranked` (types: `[DriversId] | [DriversId, DriversId]`). Each need carries what is lost when it fails, the test question for a doubt.\n- **rules/needs.json**: the boundaries between element and need, and the rule that a need is never derived from an element.\n- **rules/reading.json**: the cell main element \u00d7 main need, read as a share and counted from 5 signals from 3 sources (`cellOf`, `cellReading`), with tribes and the five reading movements.\n- **rules/cohort.json**: Gen Z, Gen Alpha or Young Families is central on every signal (a warning in the validator, `cohortCentral`), and the European lens.\n- The document's tags (`el-*`, `drv-*`, `gen-genalpha`) match as hidden labels; ids are unchanged.\n\n**Changed in practice.** `generationsOf` now answers Millennials for 1980 to 1994 and Gen Beta from 2025, where it answered nothing. A signal stamped 0.13.0 with an element weight under 0.3 is refused; older data only warns. The pipeline's classifier has to ask for needs per signal, Codes and the 0.3 floor before it syncs and stamps 0.13.0; that is a separate pipeline change after the tag.\n\n**Open for Trendwolves.** Gaming: the document closes the list at thirteen without it, but one of its examples still reads gaming as an element. It stays `proposed` until it is retired (into which elements) or kept.\n\n**Tests.** `npm test`: 91 pass, including every conformance case, fresh exports and compatibility with every release from v0.1.0 to v0.12.0. New conformance: birth years 1979, 1980, 1994 and 2025; Millennials spellings; the 0.3 floor; main element; cells and their minimum; central; graphs for a context generation alone, three needs, and a weight under the floor. `reserved-tag` became `context-generation-alone`, since nothing is reserved any more.\n\nSource: Portal mail:23.\n",
+            "branch": "workbench/who-what-why-2026-10-20",
+            "title": "0.13.0 (proposed): who, what and why"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261021054908-fabba2"
+}

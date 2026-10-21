@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Adds the company film to the Over ons page, directly under the introduction and above the history timeline.\n\n- `public/video/bedrijfsfilm.mp4`: the 48-second cut from the transfer, re-encoded for the web (1280x720, H.264 crf 23, AAC 128k, faststart, the 4-pixel black bands cropped, timecode track dropped). 9 MB instead of 87 MB; a full decode runs clean.\n- `public/video/bedrijfsfilm.webp`: poster from the opening shot (the sign at the entrance), 45 KB.\n- Native `<video>` with controls, `preload=\"none\"` and no autoplay, so the page only loads the film when someone presses play, with sound. Square edges, 16:9, full content width on desktop and phone.\n- Translated `aria-label` in nl, de, en, fr and es.\n- `CompanyFilmTest` guards the markup and the files.\n\nChecked locally: 56 tests green; in headless Chromium the film plays (1280x720, no media error) and the layout holds at 1280 px and 390 px.\n\nThe short 24-second cut is left out; it is the social-media version.\n\nCloses #31\n",
+            "branch": "workbench/company-video",
+            "title": "Over ons: the company film under the introduction"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021070332-6772d6"
+}

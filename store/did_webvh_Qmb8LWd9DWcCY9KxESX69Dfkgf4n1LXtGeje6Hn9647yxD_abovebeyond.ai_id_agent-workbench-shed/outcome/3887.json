@@ -1,0 +1,16 @@
+{
+    "action": "39453532d4d4a2b7d5bbcce066cc164d",
+    "effect": {
+        "detail": {
+            "base": "d118d4bd1a3b886665380350d9a48adb218f432c",
+            "branch": "workbench/workingset-plan",
+            "commit": "2796672aca3c49784ef2ee090ce1c9ae149a943c",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3885,
+    "verdict": "ALLOW"
+}

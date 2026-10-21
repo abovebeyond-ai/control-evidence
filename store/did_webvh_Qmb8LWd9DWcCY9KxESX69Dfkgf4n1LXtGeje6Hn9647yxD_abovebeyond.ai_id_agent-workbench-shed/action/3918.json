@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The closing \"Got an idea? Let's make it tangible!\" band sat close under its divider: 32 px on Home, the case pages and the blog article, 16 px on About and Our approach.\n\nEvery variant with a divider now uses one value, `clamp(24px, 3.75vw, 48px)`: 48 px on desktop, 24 px at 390 px. The Cases overview, whose band has no divider, is unchanged.\n\nMeasured in a browser on six pages at 1280 and 390 px, before (live) and after (local build on the production dataset).\n",
+            "branch": "workbench/cta-spacing",
+            "title": "More room above the closing call to action"
+        },
+        "resource": "ShaneDeconinck/cides"
+    },
+    "run": "workbench-20261020095839-7396fb"
+}

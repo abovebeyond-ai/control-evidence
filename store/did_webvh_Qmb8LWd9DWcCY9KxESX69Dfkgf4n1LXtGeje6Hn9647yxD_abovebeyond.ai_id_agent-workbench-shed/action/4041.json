@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "60bd6201773987b2050788ca4168c400a2f548fe",
+            "branch": "workbench/tachograph-motorhomes",
+            "files_sha256": "1c5ad3d7d6988532438c49ab7382bec44bab4bd8cca7a1a0312bfcb977fe3948",
+            "message": "Tachograph section from Schoutteet's flyer: motorhomes over 7.5 t"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021070024-329dcb"
+}

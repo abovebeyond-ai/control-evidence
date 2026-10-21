@@ -1,0 +1,14 @@
+{
+    "action": "ab7f6e662453a4a967ef9c255051b932",
+    "effect": {
+        "detail": {
+            "key": "mail:25",
+            "project": "schoutteet",
+            "state": "parked"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4029,
+    "verdict": "ALLOW"
+}

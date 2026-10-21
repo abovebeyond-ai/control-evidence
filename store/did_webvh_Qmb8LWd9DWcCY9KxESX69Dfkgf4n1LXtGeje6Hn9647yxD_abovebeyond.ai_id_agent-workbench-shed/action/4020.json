@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:24",
+            "note": "Tachograaf-sectie herschrijven naar de flyer (mobilhomes >7,5 t); issue + PR + Sanity-import",
+            "state": "in-progress"
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261021065854-006b0f"
+}

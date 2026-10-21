@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The company sent its new company film (a tour of the site, showroom, office, workshop and paint booth) and it should be shown on the website.\n\nThe transfer held two cuts of the same film: a 48-second version and a 24-second one for social media. The full 48-second cut belongs on the site; the short one is for Facebook.\n\nThe download link expires on 23 October 2026, so the film is kept in the repository rather than linked.\n\nSource: Portal mail:27.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Show the company film on the website"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021070307-fcfd48"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Netwerk and Bespreken both showed who carries what, each with a bar and a filter: Netwerk counted relations (\"Wie draagt de relatie vandaag\", with how many the table had noted), Bespreken counted notes (\"Wie weet het vandaag\"). On screen the two looked like the same thing twice.\n\n## Netwerk: the map\n\n- Keeps the graph, the list, and the filters on role, group, carrier and importance.\n- The carrier card with the table's progress goes; `overview()` keeps only the counts per role.\n\n## Bespreken: the conversation\n\n- The agenda first; its progress line now also says how many relations only the owner carries.\n- The four tiles (all, per kind) and the \"Wie weet het vandaag\" bar become two selects next to search: Wat and Wie weet het. Same filters, same URL parameters, same CSV.\n\nThe context panel is unchanged and shared: wherever a relation opens, context is added in the same place. Step 1 of the agenda keeps its relations; that is the order they are discussed in.\n\n## Checks\n\n332 tests pass, pint clean. A new test covers the owner line; the Netwerk test now checks the progress is gone from the map.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/network-vs-handover",
+            "title": "Netwerk is the map, Bespreken the conversation"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261020112621-fe3393"
+}

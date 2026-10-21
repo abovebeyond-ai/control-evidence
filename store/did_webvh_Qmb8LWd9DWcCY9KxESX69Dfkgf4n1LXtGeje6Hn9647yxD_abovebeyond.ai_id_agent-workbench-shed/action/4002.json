@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Brings the pipeline onto Gentells Standard 0.13.0 (Trendwolves/gentells-standard#18, tag v0.13.0): who, what and why.\n\n**Generations.** Millennials and Gen Beta are tagged as context only, beside a term the standard names (`onlyWith`):\n- `splitCohorts` and `cohortTags` keep a context generation only next to one of those terms and drop it alone (`withContext`). An age range of 35 to 40 in 2026 is Millennials alone and gets no generation; 28 to 34 is Millennials and Gen Z.\n- The classifier prompt lists both, marked as context, and no longer says Gen Beta is never tagged.\n- `GENERATIONS` keeps Gen Z, ZAlpha and Gen Alpha, the generations a reader filters on. The site's filters, the projection's taxonomy and the query endpoint therefore do not grow two new choices. `CONTEXT_GENERATIONS` holds the other two and `GENERATION_LABEL` names all five.\n\n**Elements.** Codes is in the closed list. A weight under 0.3 is dropped (`normaliseFingerprint` now calls the standard's `fingerprint`), and the tagger's discipline is the standard's text plus the existing gaming line. Gaming stays `proposed`, as in the standard.\n\n**Needs per signal.** `tag-elements` asks the writer and the critic for one main need and at most one secondary, with the standard's test question and its table of where an element and a need look alike (`signalNeedsPrompt`). They are stored, main first, in a new column `signals.needs` (`ALTER TABLE` at start-up). Signals tagged before stay NULL; nothing is re-tagged.\n\n**Reading rules.** `mainElement`, `cellOf`, `cellReading` and `cohortCentral` are ported to `standard-rules.mjs` and run against the standard's conformance cases. No screen uses them yet.\n\n**Not in this PR.** No backfill of needs on signals tagged earlier. No foresight or Observatory view of cells. The European lens is not checked by code.\n\n**Tests.** The suites this PR touches pass (standard, cohort-split, cohort-tags, needs, foresight-coverage: 59/59), and `npm run typecheck` is clean. On the full suite, 1254 of 1260 pass. The 6 that fail are in `report-render` and fail because `pdftoppm` is not installed on the machine these tests ran on; this PR does not touch them.\n",
+            "branch": "workbench/standard-0.13",
+            "title": "Read Gentells Standard 0.13.0: context generations, Codes, needs per signal"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261021064255-ce8d07"
+}

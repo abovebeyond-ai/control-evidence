@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #132: same change, without \"Wat opvalt\".\n\nVerkennen held what happened per project, person, machine and material, and was where one of them opens with its days and its handover context; Netwerk and Bespreken already linked to it for that. Its name did not say so, and a second menu \"Patronen over alles heen\" listed three other ways of looking at the same data as if they were separate things.\n\n## What changes\n\n- **Historiek.** Page, menu, links (\"Openen in historiek\") and the share text use the new name. Intro: \"Wat er gebeurd is, per project, persoon, machine en materiaal, uit Bouwsoft en de fiches.\" The address is `/historiek`; `/verkennen`, its printout and CSV redirect with their query, and shared links on the old path still open.\n- **No patterns group.** Tijdlijn is a Lijst/Tijdlijn switch on Projecten, Wie met wie a Lijst/Wie met wie switch on Mensen. The drivers per machine already sit in Machines.\n- **Opvallend is gone.** The findings (vaste ploeg, kennis bij \u00e9\u00e9n persoon, stilgevallen, ritme van de week, ...) analysed the business rather than served the handover. Removed with `Lenses::findings` and its helpers; `?per=opvallend` opens Historiek on its default table.\n- **Relaties and Offertes** leave Historiek; Netwerk has both. `?per=relaties|offertes` opens Netwerk.\n- **Printout.** Findings no longer head the paper. A printout with one project or person open prints its days, as on screen.\n- Smaller: day counts in Wie met wie no longer wrap, the agenda intro on Bespreken is one line, two \"Tik op ...\" hints and a gendered \"zijn\" are gone.\n\nRoute names stay `office.explore*`, so nothing else moves. No migration.\n\n## Tests\n\nFull suite passes locally (333). New: old addresses open where things live now. Tests that asserted Relaties, Offertes, Opvallend or the old path are updated.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/historiek-2",
+            "title": "Verkennen becomes Historiek; patterns fold into their types"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261020092230-a06ca7"
+}

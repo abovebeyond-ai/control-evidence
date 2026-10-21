@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0278511854a170e63d9b3847be9bbbdd41e7188e",
+            "branch": "workbench/explore-transfer-modes",
+            "files_sha256": "eeee8cd542a29d68c65b009c541d5ca3ba14e82f1053c2ec49a505dcf502a6a5",
+            "message": "Plan: Verkennen and Overdragen as two modes on one node model"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261020120759-7562e7"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The client sent nine photos of the business to use on the new site. They should be in the Sanity media library so editors can pick them for the home, history and team sections.\n\n## What arrived\n\nSource: Portal mail:25 (the photos are attached there).\n\n- Four professional photos, 2400 to 3639 px wide: the shop front with the TRUCKS & CARS building and roadside sign (landscape and portrait), the main office, and the workshop office looking out on the workshop. The EXIF carries a photographer copyright, so they should get a credit line.\n- Five phone photos (640 to 1024 px) of crane and hook-lift trucks on the yard, one taken during a crane fitting.\n- The mail's signature logo is left out: it is 227 px wide and the site already has the logo.\n\n## Proposal\n\n1. Upload the nine photos as image assets to `o1i7w9ht/production`, with a title, a Dutch description and, for the four professional ones, the credit line. Nothing on the site changes from the upload itself.\n2. Then pick where they go. Suggestion: the wide shop front as the home hero or the history banner; the portrait with the sign and passing truck in the home story; the office photo of the owner on his team card; the workshop office with a service; the yard trucks in the history photos at the foot of the page. The phone photos are too small for a full-width hero.\n\nUploading needs a Sanity token with write access, which the workbench does not hold.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Add the client's nine photos to the Sanity media library"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021065903-58faf4"
+}

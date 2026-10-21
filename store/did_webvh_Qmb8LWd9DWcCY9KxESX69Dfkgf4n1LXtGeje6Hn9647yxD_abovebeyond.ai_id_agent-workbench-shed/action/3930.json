@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nA new control read, `dealer_usage`: for a period it counts the active garages and, per use, how many of them used it and what share of the active garages that is.\n\n| Use | A garage counts when, in the period, it... |\n|---|---|\n| `shared_stock` | had a car on the stocklist on a counted evening, opened the shared list, opened a colleague's car, or sold or bought through a buy-over (with the opens and the cars sold to a colleague) |\n| `portals` | had a car in stock that was passed on to Hexon or confirmed on Nederland Mobiel |\n| `site_or_embed` | had a visitor open a car on its own website (public API) or its widget |\n| `buy_overs` | took over a colleague's car (counted at the copy, `seller_vehicle_id`) |\n\nActive means its own work (handlings, edits, sign-ins, pages, cars looked at; staff left out) or one of the four uses, so every share uses the same denominator. Parts counted from after the period began say so in `since` (the stocklist from 1 Oct, site/widget from 27/30 Sep). The answer holds counts only and carries its definitions.\n\n## Why\n\nUsage per garage could not be answered: the existing reads count handlings and views, not garages. The question for the last three months (how many dealers use the shared stock, portals, site/widget and buy-overs, and what share) needs distinct garages per use.\n\n## How\n\n- `App\\Support\\Control\\DealerUsage` builds the sets; `Measures::dealerIds` gives the garages behind a measure from the same rows the screens count.\n- Registered in `Reads` (B1, `stocklist.read`), rule R P3-17.10, methodology and SQL in `docs/api/control-reads.md`.\n- Tests: `DealerUsageTest` (each use, the quiet garage, shares, `since`), `ControlReadTest` (listed, answers in its window, names nobody). Full suite green, PHPStan clean.\n\n## Known limits\n\nPortal ticks and the Nederland Mobiel flag are read as the car carries them today. Opens, the stocklist and site/widget only exist since late September 2026, so a 90-day answer covers only the last few weeks for those parts.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_012n9wZcuA9DLyFcJtKqZjnU\n",
+            "branch": "workbench/dealer-usage",
+            "title": "Count garages per use of the platform as a control read"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261020110849-bb39d0"
+}

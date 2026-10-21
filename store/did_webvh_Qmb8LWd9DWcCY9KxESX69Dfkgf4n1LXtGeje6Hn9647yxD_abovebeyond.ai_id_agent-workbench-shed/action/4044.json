@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Tachograaf section on /diensten was mostly provisional text. Schoutteet's own flyer for the service now fills it: the company specialises in placing and calibrating tachographs in motorhomes over 7.5 tonnes, with professional finishing and personal service.\n\n## What changes\n\n- Lead: approved installer, placing and calibrating tachographs in trucks and in motorhomes over 7.5 t (translated in en/fr/de/es, like the other leads).\n- Paragraphs: the approved-installer and COP paragraph from the old site stays; two provisional paragraphs (device types, roller test, driver card readout) give way to the flyer's points, marked `schoutteet`.\n- FAQ: a new confirmed question about motorhomes. The two remaining questions stay marked as to be confirmed.\n- Facts: the unsourced \"ISO 9001\" and \"Controle terwijl u wacht\" are gone; \"Mobilhomes van meer dan 7,5 ton\" and \"Plaatsing, ijking en afwerking\" come in.\n- Steps stay provisional, adjusted to mention motorhomes.\n- The `Services` docblock names the `schoutteet` source the Studio already uses.\n\n## Live text is in Sanity\n\nThe site reads services from Sanity once there are any, so this PR only changes the built-in fallback and the seed. The live page changes when the `service-tachograaf` document in production is replaced, either in the Studio or by importing the exported document on its own (`sanity dataset import <file> production --replace`, which touches only that `_id`), then `php artisan sanity:sync`.\n\n## Tests\n\n`php artisan test`: 55 passed. Pint clean on the changed file.\n\nCloses #27\n",
+            "branch": "workbench/tachograph-motorhomes",
+            "title": "Tachograph section from Schoutteet's flyer (motorhomes over 7.5 t)"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021070024-329dcb"
+}

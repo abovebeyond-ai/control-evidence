@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bfda2b9a8a99e00e1a36bf75af5d674409caed9c",
+            "branch": "workbench/source-mix",
+            "files_sha256": "812c50ad85e01d74330403d977e28794818b8377966b5e094ec023f9ee7aeb02",
+            "message": "Design note: the source mix over thirty days, a shortlist, and the bars a source must clear"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261020154142-b84760"
+}

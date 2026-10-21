@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The Tachograaf section on /diensten is still provisional text. Schoutteet sent its own flyer, which should replace it: the company specialises in placing and calibrating tachographs in motorhomes over 7.5 tonnes.\n\n## What is asked\n\nThe tachograph section was filled with placeholder text when the services page was built (most paragraphs, steps, FAQ and facts are marked `placeholder`, and one fact, ISO 9001, has no source at all). Schoutteet has now sent a flyer for this service. Its points:\n\n- specialised in professionally placing and calibrating (`plaatsen en ijken`) tachographs in motorhomes of more than 7.5 tonnes\n- specialised placement and calibration\n- professional finishing\n- personal service and years of craft knowledge\n\nThe section should say this, keep what the current site already confirms (approved installer, COP certificate), and drop the provisional claims the flyer does not support.\n\nThe live text comes from Sanity (`service-tachograaf` in the production dataset), so the change has to land there as well as in the built-in fallback in `app/Site/Services.php`.\n\nSide note from the same flyer: it gives the address as Brugsesteenweg 213, while the site says 211 (Google Maps also shows 213). Not part of this issue.\n\nSource: Portal mail:24.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Tachograph section: replace provisional text with Schoutteet's flyer (motorhomes over 7.5 t)"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021065901-70c136"
+}

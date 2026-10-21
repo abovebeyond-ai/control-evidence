@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:25",
+            "note": "Saving and reviewing the 10 photos for the Schoutteet Sanity media library",
+            "state": "in-progress"
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261021065747-40a3ab"
+}

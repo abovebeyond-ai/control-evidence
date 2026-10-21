@@ -1,0 +1,16 @@
+{
+    "action": "7aa1bcef7c00c8dc12ed5f4b7faa99d9",
+    "effect": {
+        "detail": {
+            "base": "60bd6201773987b2050788ca4168c400a2f548fe",
+            "branch": "workbench/tachograph-motorhomes",
+            "commit": "c7b0b2912123d90f9c1edc385ef76a9fb09e070b",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4041,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,10 @@
+{
+    "action": "1b20776ff92065ddf5d69f4394e0f580",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on ShaneDeconinck/schoutteet-sanity",
+    "step": 4005,
+    "verdict": "DENY"
+}

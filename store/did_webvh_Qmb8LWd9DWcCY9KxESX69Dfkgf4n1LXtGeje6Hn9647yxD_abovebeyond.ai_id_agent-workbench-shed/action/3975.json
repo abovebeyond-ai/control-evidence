@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:23",
+            "note": "Issues: standard #17, pipeline #355 (source list), #356 (8 reports). Standard 0.13.0 built and tested locally (branch workbench/who-what-why-2026-10-20 in /home/bench/work/mail23-standard, 91 tests green); waits for a go to propose. Question: Gaming, retire or keep? Reports: upload on the Observatory Reports page (files in /home/bench/work/mail23).",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261021054335-241c6a"
+}

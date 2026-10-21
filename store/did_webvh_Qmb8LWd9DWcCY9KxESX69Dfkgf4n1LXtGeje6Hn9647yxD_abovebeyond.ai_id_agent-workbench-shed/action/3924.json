@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #134, which conflicted after #133 merged: this is the same last commit of #134, on top of main. #132 can be closed.\n\nThe office side is for handing GLK over: the network of relations and what is known about each node. Figures that read how the business runs do not help anyone take it over.\n\n## Historiek\n\n- Tijdlijn and Wie met wie go, with their switches; old `?per=` links fall back to Projecten.\n- The \"Vooral\" driver share on machines, \"Meestal met\" on material, and the per-week chart go, on screen and in the printout.\n- An opened person still shows who they often work with: that is context for that person.\n\n## Netwerk\n\n- The new and quiet tiles and filter, \"Hoeveel de grootste wegen\", the share and activity columns, the share sort, the red date for quiet relations, and the revenue, purchase and quote figures in the relation panel go.\n- `Relations\\Network::movement` and `::acquisition` go with them.\n- The graph's legend is three short lines.\n\n## Kept\n\nThe graph, the list by role, group, carrier and importance, the relation and project panels with their context, and the revenue share that orders Bespreken's agenda.\n\n## Checks\n\n331 tests pass, pint clean.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/handover-focus-2",
+            "title": "Handover focus: drop the remaining analysis from Historiek and Netwerk"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261020110408-100986"
+}

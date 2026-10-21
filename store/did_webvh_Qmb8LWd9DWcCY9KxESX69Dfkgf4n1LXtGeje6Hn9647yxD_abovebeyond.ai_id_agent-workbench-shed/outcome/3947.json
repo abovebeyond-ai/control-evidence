@@ -1,0 +1,16 @@
+{
+    "action": "5f28a90afd4bd178a79890a0c71ab0a7",
+    "effect": {
+        "detail": {
+            "base": "83f8243391b1ff76f14aa8f48b188834f00d1d66",
+            "branch": "workbench/dependency-refresh",
+            "commit": "c304578bb2783c7a8f014ddb5b90cc4b007004a3",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3945,
+    "verdict": "ALLOW"
+}

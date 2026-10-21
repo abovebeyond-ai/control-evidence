@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:26",
+            "note": "Forwarded COP certificate COP-RW-0224-010 (SPW Wallonie, valid 16/05/2026-16/05/2028) without any text; the live site only names 'COP-attest', no PDF. Question: should the new site show it (download on the Carrosserie en ombouw section, where it belongs: scope is building and converting M1/N1-N3/O1-O4, not tachographs), or was it only sent for your files? Note: holder is Autobedrijf Ronny Schoutteet BV, Brugsesteenweg 213, Roksem.",
+            "state": "parked"
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261021065829-021da1"
+}

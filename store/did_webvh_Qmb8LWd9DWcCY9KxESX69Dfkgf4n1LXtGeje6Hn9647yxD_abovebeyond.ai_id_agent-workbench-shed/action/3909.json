@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6778a854f4b3721103deaae6b4f6d68ca867a89b",
+            "branch": "workbench/handover-focus",
+            "files_sha256": "3b92e8c7c598a4f4ad6dbe81c08cc4541c0c41a551c3a0e5eebec323b990919a",
+            "message": "Historiek and a handover focus: drop the analysis"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261020093515-f27fb4"
+}

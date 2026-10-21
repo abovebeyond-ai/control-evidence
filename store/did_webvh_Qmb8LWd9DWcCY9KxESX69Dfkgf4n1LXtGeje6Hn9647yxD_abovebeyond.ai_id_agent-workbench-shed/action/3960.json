@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Trendwolves editorial sent a revised version (20 October 2026) of the document \"Gentells Standard: Who, What and Why\" and asks for it to be integrated. The standard carries the 5 October version (0.8.0); the new one widens it from two axes to four and changes several tagging rules.\n\nWhat the new version changes compared with the standard on main (0.12.0):\n\n- **Millennials** (born 1980 to 1994) become a tagged generation, as context only: always alongside Gen Z, Gen Alpha or Young Families, never alone. Until now `rules/cohort.json` said they are not tagged.\n- **Gen Beta** (2025 to 2039) goes from reserved to tagged, and a Gen Beta signal always carries Young Families too.\n- **Elements**: a thirteenth element, **Codes** (slang, jargon, greetings, emoji, memes as language), and sharper descriptions for the twelve. A weight under 0.3 is not tagged, and the element with the highest weight is the main element. The closed list of thirteen leaves out Gaming, which is `proposed` in the standard.\n- **Needs (drivers)** become an axis on signals, not only on trends: exactly one main need and at most one secondary, chosen with a test question (what does this young person lose if it fails?). Each need gets a definition and what is lost when it fails; the frame is self-determination theory plus security, status and meaning.\n- **Element against need**: a boundary table (gathering is not belonging, success is not status, and so on). A need is never derived from an element.\n- **Combinations**: the smallest reading unit is main element \u00d7 main need (78 cells), always read as a share of the period's signals, and only counted from 5 signals from at least 3 sources. Five reading movements are named.\n- **Tagging rules**: Gen Z or Gen Alpha is central on every signal (or Young Families); a European lens for what enters the Observatory.\n- The document writes tags as `el-*`, `drv-*` and `gen-genalpha`; the standard keeps its ids and takes those as hidden labels, as it did in 0.8.0.\n\nWhat it touches after the standard: the pipeline's classifier (needs per signal, Codes, the 0.3 floor, Millennials and Gen Beta) once a release is tagged and synced.\n\nSource: Portal mail:23 (the document itself stays there).\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Adopt the 20 October 2026 version of Who, What and Why"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261021053949-e7c5f2"
+}

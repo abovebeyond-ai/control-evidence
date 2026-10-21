@@ -1,0 +1,16 @@
+{
+    "action": "dc6ce0962d129871dfb47c4215c2c912",
+    "effect": {
+        "detail": {
+            "base": "60bd6201773987b2050788ca4168c400a2f548fe",
+            "branch": "workbench/company-video",
+            "commit": "6a9bbf4c582b9c34e7958c29d34143c664482c3d",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4056,
+    "verdict": "ALLOW"
+}

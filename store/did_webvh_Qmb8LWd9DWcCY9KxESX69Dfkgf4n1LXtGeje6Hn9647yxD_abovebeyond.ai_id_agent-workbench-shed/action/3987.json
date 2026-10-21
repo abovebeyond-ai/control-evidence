@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2d69e03b7779430d77e0a44c41fb7d28a70d7161",
+            "branch": "workbench/who-what-why-2026-10-20",
+            "files_sha256": "4797acf2b8c0765f72299f8fc555f46d9f41a30920b0301eb8a48aaf02fd534f",
+            "message": "0.13.0 (proposed): who, what and why: Millennials and Gen Beta as context, Codes, needs per signal, the reading cell"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261021054908-fabba2"
+}

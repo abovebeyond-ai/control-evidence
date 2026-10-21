@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:26",
+            "note": "COP certificate COP-RW-0224-010 (valid to 16/05/2028) sent without text; live site has no PDF. Put it on the new site as a download under Carrosserie en ombouw (its scope is building/converting vehicles, not tachographs), or only for your files?",
+            "state": "parked"
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261021065834-4e3fcb"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A design note, `docs/design/source-mix-2026-10.md`. Nothing is built; each step in it is its own pull request and waits for a go.\n\n**What the thirty days to 2026-10-20 show** (from `/mix`, 96,553 in, 21% kept, 1,023 cited):\n\n- Google Trends is 28% of intake and 4% of citations (1.5 cited per 1,000 in). Wikipedia spikes are 14% of intake, 3% kept; four of its eight languages (pl, es, it, sv) gave 13 citations on 6,400 signals.\n- The six Chinese hot ranks carry 40% of all citations; East Asia 45%. Dutch is 14.5% of intake and 4% of citations: the home market has the thinnest evidence.\n- Best value per signal: uploaded reports (149 cited per 1,000), TikTok Creative Center (45), Instagram search terms (37, though 118 of 197 terms were never cited), the Chinese ranks (22 to 31).\n- General news feeds (Zeit Online, The Guardian) brought 2,249 signals and no citation; a section feed of the same paper (The Guardian Technology) yields 26 per 1,000.\n\n**What it proposes**\n\n- Trims to existing sources: a rule filter on Google Trends before classify, Wikipedia down to nl/fr/de/en, Instagram terms that stop by themselves, general feeds to review in favour of section feeds. Benelux quality press stays.\n- A shortlist per category (news, social, reference, niche), each with access checked on 2026-10-20, why, expected value and risks (bias, duplicates, terms). Apple's per-country app and music charts are the first observed source for Belgium and the Netherlands since TikTok stopped publishing there.\n- Bars on top of the Standard's trial: duplicate share at most 30%, at most 5% of daily intake, a 60-day probation after admission with at least 12.5 cited per 1,000 kept (or 3 citations in 2 insights for small sources), and review for a source that is loud and never cited. These go into the Standard's `rules/source.json`, not into pipeline code.\n- Step 0 before any new source: the pipeline does not yet read the Standard's source states, so a new source is citable the day it delivers. The trial has to exist first; that also makes every trial reversible without a trace in published insights.\n- Waves of at most six sources, a wave starting when the previous one has verdicts, and rollback per source, per trim and per Standard number.\n\nIt sits next to the ongoing work on adding news sites by RSS and uses the same lifecycle; it does not build news adapters.\n\nTests: docs only; `test/paper-claims.test.mjs` and `test/standard.test.mjs` pass (27).\n",
+            "branch": "workbench/source-mix",
+            "title": "Design note: the source mix, a shortlist of new sources, and the bars they must clear"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261020154142-b84760"
+}

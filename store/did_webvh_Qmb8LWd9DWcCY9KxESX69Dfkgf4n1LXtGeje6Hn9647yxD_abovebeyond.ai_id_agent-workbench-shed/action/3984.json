@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The site content (home hero and story, services, history, the Aankoop page head, team, opening hours) can now be edited in a Sanity Studio, images included. Vehicles, forms, the privacy text and the contact details stay where they are.\n\n## How it works\n\n- Sanity project `o1i7w9ht`, dataset `production` (private). The Studio lives in its own repo; the field names both sides share are fixed in its `CONTRACT.md`.\n- `php artisan sanity:sync` mirrors the **published** documents of six types (`siteSettings`, `homePage`, `historyPage`, `sellPage`, `service`, `person`) into a new `sanity_documents` table. Pages read from that table, never from the API during a request. The command refuses when the API returns zero documents, so a wrong token or dataset cannot empty the site.\n- `POST /sanity/webhook` runs the sync when something is published. It checks the `sanity-webhook-signature` header (HMAC-SHA256 with `SANITY_WEBHOOK_SECRET`) and ignores the body. CSRF is off for that one route only.\n- Images come from the Sanity CDN with the editor's crop and hotspot, in `srcset` sizes.\n- Every field falls back to today's built-in text, per field and per language, so the site looks the same until something is published, and also when the table does not exist yet.\n- `php artisan sanity:seed-export <file>` writes today's content and images as NDJSON for `sanity dataset import`, so editors start from what is on the site now.\n- The /diensten meta description is built from the service titles, so it follows whatever services are published.\n\n## After merge\n\n```\nphp artisan migrate --force\nphp artisan config:clear\nphp artisan sanity:seed-export storage/app/seed.ndjson   # then import it into the dataset\nphp artisan sanity:sync\n```\n\nEnv on Forge: `SANITY_PROJECT_ID`, `SANITY_DATASET`, `SANITY_TOKEN` (Viewer), `SANITY_WEBHOOK_SECRET`. The webhook in Sanity points at `/sanity/webhook` with the same secret.\n\n## Checked\n\n- `php artisan test`: 55 passed, 7 of them new: built-in content without Sanity, hero fields with per-field fallback, services (including the to-confirm mark), history/team/hours from documents, sync mirrors and refuses an empty answer, webhook signature, and a seed that holds every page with translations and existing photos.\n- `vendor/bin/pint --test`: clean.\n",
+            "branch": "workbench/sanity",
+            "title": "Content from Sanity: home, services, history, sell page, team, hours"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021054847-9f4c5f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:27",
+            "note": "Company film (48 s cut, 9 MB) on Over ons; issue #31, PR #32",
+            "state": "done",
+            "url": "https://github.com/ShaneDeconinck/schoutteet/pull/32"
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261021070410-48c1be"
+}

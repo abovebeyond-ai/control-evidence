@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d118d4bd1a3b886665380350d9a48adb218f432c",
+            "branch": "workbench/workingset-plan",
+            "files_sha256": "318a10f049abd4a65a26aa7adf560c4f820a8db8c35ba95ae769c96658a787cf",
+            "message": "workingset: explain the steps before asking for the PIN"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261020080344-94a6fe"
+}

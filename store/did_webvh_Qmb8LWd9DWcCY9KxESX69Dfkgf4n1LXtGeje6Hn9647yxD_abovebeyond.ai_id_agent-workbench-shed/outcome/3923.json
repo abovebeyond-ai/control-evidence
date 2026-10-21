@@ -1,0 +1,16 @@
+{
+    "action": "87d65f15b86c5fed3c13be502a933d5e",
+    "effect": {
+        "detail": {
+            "base": "86099fda7859e659444b8bae2f0807035140d2b4",
+            "branch": "workbench/handover-focus-2",
+            "commit": "0f1caacf698d3338c4937ddc9d1b52aba3edd3e9",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3921,
+    "verdict": "ALLOW"
+}
