@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:29",
+            "note": "4 issues filed; needs: link gate-demo-box to bextrust, source for demo figures, demo domain choice, go + missing step 5 for How we work",
+            "state": "parked"
+        },
+        "resource": "portal:bextrust"
+    },
+    "run": "workbench-20261022064528-e0c853"
+}

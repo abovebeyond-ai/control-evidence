@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The npm advisory gate in `tests` went red on #1040 with 7 high advisories against a ceiling of 6. The new one is vite: GitHub published six advisories for vite 8.3.0 to 8.3.2 (GHSA-9jrq-w75r-8gcw, GHSA-rq7h-c2jc-7f22, GHSA-vfpm-58rq-9qcg, and three in launch-editor: GHSA-r825-w8mm-5pxw, GHSA-698v-4r3x-3vcv, GHSA-587h-7wmj-h5pm). All of them concern the dev server, not the built assets, but the gate counts them. Main was green on 20 October and would go red on its next run.\n\n- `vite` from 8.3.0 to 8.3.4 (`^8.3.4` in package.json). 8.3.4 is two weeks old; 8.3.5 came out yesterday and is not taken yet.\n- The lock file loses sass, terser and @parcel/watcher. They were optional peer dependencies of vite, and nothing here uses them: there are no .scss files and no terser setting.\n- One sentence in the comment above the audit job in tests.yml.\n\nLocally: `npm ci`, `npm run build` and `npm run test:js` (103 passed); `npm-audit-ceiling.mjs 6` gives 6. The remaining six are the known braces chain under Tailwind 3 and vite-plugin-static-copy.\n",
+            "branch": "workbench/npm-advisory-vite",
+            "title": "Move vite to 8.3.4: six new advisories on 8.3.0 to 8.3.2"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261022072027-3ac49d"
+}

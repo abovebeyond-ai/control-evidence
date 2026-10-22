@@ -1,0 +1,18 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3  Area: site\nSummary: Describe how the agent-control service is delivered, from a first workshop to running and monitoring the agents; today How we work only covers the ISBE pilot and the two production models.\n\nSource: Portal mail:29 (meeting notes on the demo, 2026-10-21).\n\nThe notes describe how the service could be packaged for a company, in steps:\n\n1. An expert presents to the heads of units: a shift in how they see their processes, which parts they keep under their own control and which they delegate. The control model with its three parameters (blast radius and the others) is presented, and the parameters for their agents are set.\n2. Benchmarks are set with the C-suite, giving the engineers the context and inputs for context engineering.\n3. Agents are requested, to those criteria, from a supplier of frontier models.\n4. The agents get controllable identifiers, are integrated into the system and handed to the managers.\n5. (Step 5 is missing from the notes; the numbering jumps from 4 to 6.)\n6. The system is maintained and monitored, results are kept close to the goals set by the benchmarks and the managers' control parameters, and adjusted when needed.\n\nGo-to-market in the same notes: first test with a few early-adopter companies, then work with consultancy firms who build it into their own offers.\n\nNot built yet: whether this belongs on the public site now, or only after the first early adopters, is a decision. The current How we work page (site/src/pages.py) describes the ISBE pilot, Guided Self-Management and the Delegated model; adding the agent offer changes what the site sells, so it waits for a go and for the missing step.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3",
+                "area:site"
+            ],
+            "title": "How we work: describe how the agent-control service is delivered"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261022064525-1c27a7"
+}

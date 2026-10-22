@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`composer audit --locked` fails the \"Dependency audits\" job on every pull request since two Symfony advisories landed for versions in the lock file.\n\n| Package | From | To | Advisory |\n|---|---|---|---|\n| symfony/http-foundation | 8.1.4 | 8.1.9 | CVE-2026-108082, ReDoS in `HeaderUtils::split()` through the `Cache-Control` request header. Reachable by anyone who can send a request. |\n| symfony/yaml | 8.1.2 | 8.1.9 | CVE-2026-109413, unbounded recursion in the inline lexer. Only `laravel/roster`, a dev tool, pulls it in. |\n\n`symfony/polyfill-mbstring` and `symfony/polyfill-php80` move to 1.43.0 as their dependencies. Only `composer.lock` changes.\n\n## Checked\n\n- `composer audit --locked`: no advisories.\n- Full suite on MariaDB 10.11: 1380 tests, the same 21 failures as on `main` locally (Chrome printing without `node_modules`, Vite manifest, build stamp, report PDFs), none new.\n\nUnblocks the audit on #260.\n",
+            "branch": "workbench/symfony-advisories",
+            "title": "Symfony http-foundation and yaml past two security advisories"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261021095700-8bb419"
+}

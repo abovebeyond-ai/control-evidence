@@ -1,0 +1,17 @@
+{
+    "action": "0a12f7dd9a10db690274750e04f5ae62",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 260,
+            "review_problem": "GitHub answered 500: <nil>",
+            "review_requested": false,
+            "url": "https://github.com/ShaneDeconinck/naviskore/pull/260",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4068,
+    "verdict": "ALLOW"
+}

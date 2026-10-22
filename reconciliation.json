@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-21T07:34:29+00:00",
+    "computed_at": "2026-10-22T07:34:48+00:00",
     "window": {
-        "since": "2026-10-14T07:33:02+00:00",
+        "since": "2026-10-15T07:33:23+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -74,8 +74,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 3,
+                "gateway": 3
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 24,
-                "gateway": 24
+                "github": 18,
+                "gateway": 18
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 5,
-                "gateway": 5
+                "github": 4,
+                "gateway": 4
             }
         },
         "Trendwolves/glk-transferor": {
@@ -145,8 +145,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 5,
-                "gateway": 5
+                "github": 3,
+                "gateway": 3
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -176,7 +176,7 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 2,
+                "github": 0,
                 "gateway": 0
             }
         },
@@ -196,8 +196,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 15,
-                "gateway": 15
+                "github": 17,
+                "gateway": 17
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -272,8 +272,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 5,
+                "gateway": 5
             }
         },
         "ShaneDeconinck/schoutteet-sanity": {
@@ -283,8 +283,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             }
         },
         "ShaneDeconinck/trendwolves-call-agents": {
@@ -305,8 +305,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "Trendwolves/gentells-standard": {
@@ -316,8 +316,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 3,
+                "gateway": 3
             }
         },
         "Trendwolves/gentells-studio": {
@@ -327,8 +327,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 11,
-                "gateway": 11
+                "github": 9,
+                "gateway": 9
             }
         },
         "abovebeyond-ai/bextrust": {
@@ -349,8 +349,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 7,
-                "gateway": 7
+                "github": 2,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/control-verify-action": {
@@ -371,8 +371,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -393,8 +393,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "abovebeyond-ai/portal-cli": {
@@ -404,8 +404,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 2,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/proof-of-control": {
@@ -748,8 +748,6 @@
             }
         }
     },
-    "unexplained": [
-        "kubo-global/afrodidact-website: 2 pulls on GitHub, 0 performed by the gateway"
-    ],
+    "unexplained": [],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind, counted across pages until the window closes (rows 10.3.2, 10.3.4)"
 }

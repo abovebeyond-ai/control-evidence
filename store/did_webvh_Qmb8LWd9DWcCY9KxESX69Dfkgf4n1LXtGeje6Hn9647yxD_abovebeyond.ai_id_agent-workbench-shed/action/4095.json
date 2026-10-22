@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cc142a2c0b88bc1bf4ccd36b10e89a0f136ce612",
+            "branch": "workbench/source-list-355",
+            "files_sha256": "17408c82a1689a9357348140a9b65438a4b8deef0a7bdef824b8b4fab6e301ad",
+            "message": "Take in the source list of 20 October 2026 as proposals, behind a trial that holds"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261021132639-a239fe"
+}

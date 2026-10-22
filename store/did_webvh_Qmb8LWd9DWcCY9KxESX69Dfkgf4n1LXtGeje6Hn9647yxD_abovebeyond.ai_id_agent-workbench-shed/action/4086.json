@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Sanity Studio for the Schoutteet site (project `o1i7w9ht`, dataset `production`), so the site content and its photos can be edited without a developer.\n\n## What is in it\n\n- Six document types, the ones the site reads: `siteSettings` (opening hours), `homePage` (hero and story), `historyPage` (banner, intro, milestones, photos), `sellPage` (the Aankoop page head), `service` and `person` (team on the contact page). The first four are singletons with a fixed id; the desk structure shows them as single pages, not lists.\n- Every text field in five languages (`nl` required; `en`, `fr`, `de`, `es`), plain text only.\n- Images with hotspot and crop, and a translated alt text. The site turns the crop and hotspot into CDN URLs.\n- Paragraphs, steps and facts carry a `toConfirm` switch and a read-only source, so provisional text stays visible as provisional.\n- `CONTRACT.md` fixes the field names the site depends on; `tests/contract.test.ts` fails when a schema drifts from it.\n- `studioHost: 'schoutteet'`, so the Studio deploys to https://schoutteet.sanity.studio.\n\nThe dataset already holds the site's current content (12 documents, 11 images), imported from the site's `sanity:seed-export`, and the site mirrors it (schoutteet PR #26).\n\n## Checked\n\n- `npx tsc --noEmit`: clean.\n- `npx vitest run`: 11 passed.\n- `npx sanity schema validate`: no errors.\n",
+            "branch": "workbench/studio",
+            "title": "Schoutteet Sanity Studio: site content and photos, five languages"
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261021103026-92f3a0"
+}

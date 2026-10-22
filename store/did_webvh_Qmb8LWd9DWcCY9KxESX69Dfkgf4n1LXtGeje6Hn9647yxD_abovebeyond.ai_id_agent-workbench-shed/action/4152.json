@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1039\n\nOn 22 October 2026 at 05:49 the connection to smtp.resend.com:587 timed out while `stocklist:dailyexport` sent one dealer's digest (Nightwatch #67). The per-recipient catch (R B1-2.16) reported it and the round went on, but the task runs once a day, so that dealer had no digest until the next morning.\n\n- `DailyExports::send` wraps the send in Laravel's `retry()`: two attempts, ten seconds apart, and only for a `TransportExceptionInterface`. When the second attempt fails, the existing catch reports it and moves on as before.\n- Faults that are not the transport (a template that throws) are not retried.\n- New rule R B1-2.17 in `docs/bedrijfsregels/21-b1-biedingen.md`.\n- `DailyMailRetriesATransportFaultTest`: timeout then success (sent and recorded, one sleep, nothing reported), two timeouts (not recorded, reported, exit 0), a non-transport fault (no second try).\n\nPossible side effect: if a timeout ever lands after the server accepted the message, the dealer may get the digest twice. A duplicate costs less than a lost day.\n\nFull suite locally: 3140 tests, no failures.\n",
+            "branch": "workbench/daily-mail-transport-retry",
+            "title": "Give a daily digest one more try after a mail transport fault"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261022064530-5fdacb"
+}

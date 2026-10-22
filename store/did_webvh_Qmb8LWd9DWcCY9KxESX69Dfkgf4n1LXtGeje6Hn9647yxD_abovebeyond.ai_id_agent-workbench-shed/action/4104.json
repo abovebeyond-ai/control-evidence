@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Of the 78 posts imported on 15 October, 6 cite no source and 13 cite one. Every source their authors name was checked that day, and every one that held is cited (198). What is left is thin because the named source is missing or says less than the sentence. The Observatory's record often holds a passage that says it. For example, for \"UK youth-culture research published in 2026 describes Gen Z engagement moving towards private group chats\", which nobody could trace, the Onclusive 2026 Outlook report in the record says Gen Z is moving from public platforms to private messaging and closed groups.\n\nThis finds such passages and cites them after a person has read them.\n\n- **Find** (`node packages/pipeline/post-evidence.mjs --thin=1`): per claim paragraph of a published post (Signal, Why It Matters, Examples; never the advice of How To Activate It), search the record on its words (FTS, all kinds of evidence, two years). Only passages on the record count: kept, or a report passage, and not from a source on trial. The deepen model reads each candidate's own text and names the sentence it supports. Sharing a topic is not support, and neither is saying less than the sentence; when in doubt it is left out. At most two per sentence and eight per post, a signal once per post. The result is written to `store/post-evidence-dry.json` and nothing is cited.\n- **Review**: a person removes the rows that do not hold.\n- **Cite** (`--from=<plan.json> --apply`): each kept row is cited under its sentence with the note \"found in the Observatory: <source>, judged against the sentence and reviewed <date>\". Rows whose sentence left the post, whose signal is gone, or that are already cited are skipped and listed. `--undo=<run>` takes a run off; the signals stay.\n\nTests: `test/post-evidence.test.mjs` (which paragraphs, citing, skipping, undo). Typecheck clean. The find step needs the box's record and model access, so it was not run here.\n",
+            "branch": "workbench/post-evidence",
+            "title": "Find evidence for thin posts in the Observatory, cite it after review"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261021132721-79928e"
+}

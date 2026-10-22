@@ -1,0 +1,16 @@
+{
+    "action": "553578a0ef642d554661cbc0698e6af5",
+    "effect": {
+        "detail": {
+            "base": "07325ba803634aa6e28013024e4daa119cbc14bc",
+            "branch": "workbench/agenda-all-open",
+            "commit": "baad4d6cb61a47b11c4d3d32f927c37fd22283fd",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4107,
+    "verdict": "ALLOW"
+}

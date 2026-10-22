@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Moves the company film on Over ons from under the introduction to the foot of the page, after the history timeline. The page now opens with the story and its photos, and the film closes it as the tour of the company today.\n\n- `geschiedenis.blade.php`: the same `<video>` block, moved below the grid, with a little more room above it (`mt-14`).\n- `CompanyFilmTest`: also checks that the film comes after the last history photo.\n\nChecked locally: 56 tests green; the film plays in headless Chromium and sits under the two bottom photos at 1280 px.\n\nFollows #31 and #32.\n",
+            "branch": "workbench/company-film-bottom",
+            "title": "Over ons: the company film at the foot of the page"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021195419-14da01"
+}

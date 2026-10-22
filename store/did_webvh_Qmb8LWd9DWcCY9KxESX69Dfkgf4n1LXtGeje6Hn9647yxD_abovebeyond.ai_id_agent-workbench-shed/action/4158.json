@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "35e52883e89f98a13c68aae67ed3ead5fb37b45b",
+            "branch": "workbench/current-insights-only",
+            "files_sha256": "71b5087dc7f708f63c357dff8bf777786706985844915871a2a4f75fa9ef209d",
+            "message": "Current insights by default, superseded ones only in history mode"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261022071222-fb4793"
+}

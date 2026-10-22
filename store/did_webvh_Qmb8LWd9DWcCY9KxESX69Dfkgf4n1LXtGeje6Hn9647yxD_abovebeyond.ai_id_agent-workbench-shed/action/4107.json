@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "07325ba803634aa6e28013024e4daa119cbc14bc",
+            "branch": "workbench/agenda-all-open",
+            "files_sha256": "55dc2918b606c8c7529ce7e568a0aab69fb5639d411d00416a6a931e281ce5ab",
+            "message": "Agenda: every step and every item shown at once\n\nThe agenda held back the projects and people until ten relations were\ndiscussed, and showed ten items per step at a time. The table decides\nwhat to talk about; the order stays (network, projects, people) but\nnothing is locked any more.\n\nAgenda::BATCH, the per-step open flag and the shown slice go; a step is\nits items with how many are done.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261021194705-77c1de"
+}

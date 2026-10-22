@@ -1,0 +1,16 @@
+{
+    "action": "d3c1ebfee5b901e311546f25159968d0",
+    "effect": {
+        "detail": {
+            "base": "78b6eeec92b2d5aa6d219c594c180142a585f2ac",
+            "branch": "workbench/company-film-bottom",
+            "commit": "457cfa6538fb2f7141da286700badc6ea9980d07",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4113,
+    "verdict": "ALLOW"
+}

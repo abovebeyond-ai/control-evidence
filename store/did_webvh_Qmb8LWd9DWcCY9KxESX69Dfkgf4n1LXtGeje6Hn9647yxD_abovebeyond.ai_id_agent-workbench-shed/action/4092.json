@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Gaming was `proposed` since 0.1.0. The Who, What and Why document of 20 October 2026 lists thirteen elements without it, yet reads gaming as an element in its own example of the reading (\"gaming is belonging for Gen Alpha and mastery for Gen Z\"). This keeps it: Gaming becomes the fourteenth element, active.\n\n- `taxonomy/elements.json`: `gaming` active; the scheme says fourteen (the twelve, Codes and Gaming).\n- The reading cell now spans 14 elements by 6 needs, 84 cells.\n- Conformance: `proposed-tag` becomes `gaming-element`, a signal weighted on gaming that validates without a flag. A graph case can now name a warning it must not give (`warningsExclude`). No term is proposed any more; the validator still flags one.\n- README, CHANGELOG 0.14.0, version 0.14.0.\n\nTests: 91 pass; `tools/compat.mjs` reads every release from v0.1.0 to v0.13.0. After the tag the pipeline pins 0.14.0 and drops its line that kept gaming out.\n",
+            "branch": "workbench/gaming-stays",
+            "title": "Keep Gaming as the fourteenth element (0.14.0)"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261021132605-3e4a34"
+}

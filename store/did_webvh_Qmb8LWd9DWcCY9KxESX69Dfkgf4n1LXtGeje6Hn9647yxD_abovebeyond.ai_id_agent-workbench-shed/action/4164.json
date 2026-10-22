@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "29897922ac885093f6236115b3fd11927e766f0a",
+            "branch": "workbench/current-insights-only",
+            "files_sha256": "aed396c257bc78aa6bfcf5a4e72a2d0f60b28d175ece71fe12c2a3d399df5e4b",
+            "message": "Insights page: current insights by default, Show superseded for the history"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261022071257-ce3516"
+}

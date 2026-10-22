@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Fixes Nightwatch #6: `Attempt to modify property \"pivot\" on null` at `app/Livewire/Scoring/Evaluation/Edit.php:568`, four times in a row for one teacher on 2026-10-20.\n\n## Cause\n\nLivewire sends the whole `maxima` array, with no path, when the eindtermen on the page no longer match its snapshot or when every maximum changed at once (`diffRecursive` in livewire.js). `updatedMaxima` then received `null` as the eindterm id:\n\n- `mayWrite(null)` checks the eindterm only when it gets one, so the request passed;\n- the occurrence's last two queries ran with `attainment_level_id is null` and `att_level_id is null`;\n- the lookup returned null and line 568 wrote `->pivot->max` on it.\n\nNo insert or update ran before the error, so nothing was half-written; the maximum was simply not saved.\n\nA second hole showed up in the tests: a path like `maxima.12x` was cast to 12 by the check and matched eindterm 12 in MariaDB, which then got the new maximum.\n\n## Change\n\n- The whole array is split into its maxima after the rights and lock check. An eindterm that is not on the evaluation is dropped from `maxima` before anything is written; a maximum that differs from the stored one is saved through the same path as a single cell (`saveMaximum`).\n- A path that is not one numeric id is skipped, as `updatedScores` already does for paths that name no cell.\n- New rule R S3-1.7 in `docs/bedrijfsregels/13-s3-scores-invoeren.md`.\n\nIgnoring the whole array, as `updatedScores` does, was not enough here: the typed maximum would stay on the screen while the database kept the old one, and the next score would be checked against a maximum that was never saved.\n\n## Tests\n\n- `EvaluationScoresEditTest`: the whole array with an eindterm not on the evaluation, the whole array saving only changed maxima onto existing scores, and a `12x` path. On the old code the first two fail with the exact error at line 568, the third shows the wrong write.\n- `WhoMayWriteAScoreTest`: a colleague sending the whole array is refused.\n- Full suite on MariaDB 10.11: 1383 tests, 21 failures, the same 21 as on `origin/main` (Chrome printing without `node_modules`, Vite manifest, build stamp, report PDFs). Pint and PHPStan clean.\n\n## After merge\n\nEvaluation 102644 may hold an eindterm whose maximum did not save; once deployed, it can be entered again.\n\nNightwatch: 6\n",
+            "branch": "workbench/pivot-null",
+            "title": "A maximum for the whole sheet no longer writes to an eindterm that is not there"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261021094729-db4f15"
+}

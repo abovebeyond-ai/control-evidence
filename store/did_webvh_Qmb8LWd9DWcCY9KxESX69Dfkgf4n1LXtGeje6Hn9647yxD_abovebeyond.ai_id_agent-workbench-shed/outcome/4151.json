@@ -1,0 +1,16 @@
+{
+    "action": "8d02a240e7c1508e29792db9bc0b17ba",
+    "effect": {
+        "detail": {
+            "base": "c95fbd953d67bbc679f5079aa125a5b4b96cc380",
+            "branch": "workbench/daily-mail-transport-retry",
+            "commit": "761cd74756d28c5bb87c4fc9e6370c3132f559cd",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4149,
+    "verdict": "ALLOW"
+}

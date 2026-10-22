@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P2  Area: none (the demo and the pitch)\nSummary: Decide which business process the demo narrative follows; the current demo follows a purchase order in Odoo, and the notes are not yet sure that is the most tangible story.\n\nSource: Portal mail:29 (meeting notes on the demo, 2026-10-21).\n\nThe notes leave open which scenario narrative is the most tangible. Candidate areas listed: procurement, vendor onboarding, financial operations, insurance, compliance workflows, supply-chain operations, regulated purchasing, and later agent-to-agent commercial transactions.\n\nA candidate pitch line came with that list: \"AI agents that can act on behalf of organisations while remaining within verifiable boundaries of authority.\" Quoted verbatim as proposed copy; not yet adopted anywhere.\n\nThe live demo today runs a purchase order (procurement) through the gate on Odoo. Staying with procurement keeps everything on screen real; another domain means new demo data and flows. The question to answer: keep procurement and sharpen it (for example regulated purchasing), or move to another area.\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P2"
+            ],
+            "title": "Which business process should the demo narrative follow?"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261022064522-91f367"
+}

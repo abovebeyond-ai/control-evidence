@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cc142a2c0b88bc1bf4ccd36b10e89a0f136ce612",
+            "branch": "workbench/post-evidence",
+            "files_sha256": "087b46490b379e451f75a8e21100172af560d6bab71f9e215a5946ec6308865f",
+            "message": "Find evidence for published posts in the Observatory, cite it after review"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261021132721-79928e"
+}

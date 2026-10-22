@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6bd4927a5de25ed1bcd2b9750ceffe94238afa3a",
+            "branch": "workbench/symfony-advisories",
+            "files_sha256": "e0951ae176ce852bbcc05f7306653cf599795f670abc0926f8143a21bd01017c",
+            "message": "Symfony http-foundation and yaml past two security advisories\n\ncomposer audit fails every pull request since these advisories landed:\n- symfony/http-foundation 8.1.4 -> 8.1.9, CVE-2026-108082 (ReDoS in\n  HeaderUtils::split() through the Cache-Control request header).\n- symfony/yaml 8.1.2 -> 8.1.9, CVE-2026-109413 (unbounded recursion in\n  the inline lexer); only laravel/roster, a dev tool, pulls it in.\n\nThe polyfills mbstring and php80 move along as their dependencies."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261021095700-8bb419"
+}

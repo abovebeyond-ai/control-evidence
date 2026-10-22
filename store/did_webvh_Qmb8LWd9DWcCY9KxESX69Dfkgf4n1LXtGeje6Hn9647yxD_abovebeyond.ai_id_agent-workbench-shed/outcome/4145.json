@@ -1,0 +1,14 @@
+{
+    "action": "d0cecef170ac1c1e8b6e6b3f81b46900",
+    "effect": {
+        "detail": {
+            "key": "mail:29",
+            "project": "bextrust",
+            "state": "parked"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4143,
+    "verdict": "ALLOW"
+}

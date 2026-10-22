@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2  Area: none (the demo, not the site)\nSummary: Give each of the three demo scenarios concrete figures for time, people, cost and risk, so the audience can see the gain in money and the risk Bextrust removes, not only the mechanism.\n\nSource: Portal mail:29 (meeting notes on the demo, 2026-10-21).\n\nThe three scenarios of the live demo (without agents, naive agents, agents through Bextrust) are judged sound as they are, but they show the mechanism without figures. The notes ask for tangible numbers per scenario:\n\n- **Scenario 1, people only:** several people take an order through to the checks. State how long that takes and what it costs.\n- **Scenario 2, agents without control:** the process is faster and needs fewer human hours (lower staff cost or higher productivity), but risk goes up: less control, higher audit cost, possibly a higher insurance premium. The figures should show both sides.\n- **Scenario 3, agents through Bextrust:** the speed of scenario 2 with the control of scenario 1; the auditor collects what is needed and is done.\n\nThe cost categories the figures should cover:\n1. staff or capacity cost (scenario 1 to 3 does not need the same number of people);\n2. process cost: data entry and reconciliation;\n3. rework and compliance cost;\n4. opportunity cost: manual work in several departments moves to analysis and decisions.\n\nOpen before building: where the figures come from. A figure without a source does not go on screen, so each one needs either a cited benchmark or a clearly marked worked example with its assumptions shown. The scenarios live in the demo code (gate-demo-box, console/live), which is not yet a repository linked to this project in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Demo: concrete time, cost and risk figures for each of the three scenarios"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261022064515-4a5cec"
+}

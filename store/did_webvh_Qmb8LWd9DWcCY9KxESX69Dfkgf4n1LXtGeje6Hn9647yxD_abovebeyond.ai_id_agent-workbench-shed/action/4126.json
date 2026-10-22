@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2  Area: none (the demo, not the site)\nSummary: Rework the scenario names and the demo script, and end scenario 3 with a short summary of Bextrust's core components that invites the audience to ask how it works in practice.\n\nSource: Portal mail:29 (meeting notes on the demo, 2026-10-21).\n\nThe notes ask for better packaging of the three demo scenarios: the names, and possibly the spoken script. Scenario 3 should close, in its narrative and as the demo's conclusion, with the key concepts in a nutshell:\n\n- the distributed ledger infrastructure (ISBE);\n- compatibility with the company's own trusted server operator;\n- AI agents tuned to the company's work benchmarks, with control parameters such as blast radius;\n- the trusted execution environment (TEE) the gate runs in;\n- no complete dependency on a single vendor.\n\nThe aim is a glimpse of the depth, understandable at a glance, that makes the audience want to explore more.\n\nCare with wording: the notes describe the ledger as eIDAS compliant. ISBE is not a qualified trust service yet, so the demo must not claim qualified status or legal effect; it can say what is built and what qualification is pending. The demo also never calls the gate or the verifier open source: public verifier and documented format.\n\nDepends on the scenario choice in the related question issue (which process the narrative follows). The scenarios live in the demo code (gate-demo-box, console/live), which is not yet a repository linked to this project in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Demo: sharper scenario names and script, and a closing summary of the core components"
+        },
+        "resource": "abovebeyond-ai/bextrust"
+    },
+    "run": "workbench-20261022064519-6464aa"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6bd4927a5de25ed1bcd2b9750ceffe94238afa3a",
+            "branch": "workbench/dependency-advisories",
+            "files_sha256": "da6b50871dcd534e45bebac555695e8d39c4f060c9347ffc480fa8ad676f66a4",
+            "message": "Composer and npm locks past four security advisories\n\nThe dependency audits fail every pull request since these advisories\nlanded. Only the lock files change; every version stays within the\nranges composer.json and package.json already allow.\n\nComposer:\n- symfony/http-foundation 8.1.4 -> 8.1.9, CVE-2026-108082 (ReDoS in\n  HeaderUtils::split() through the Cache-Control request header).\n- symfony/yaml 8.1.2 -> 8.1.9, CVE-2026-109413 (unbounded recursion in\n  the inline lexer); only laravel/roster, a dev tool, pulls it in.\n- The polyfills mbstring and php80 move along as their dependencies.\n\nnpm (both build or dev-server only, neither reaches the browser bundle):\n- follow-redirects 1.16.0 -> 1.16.1, GHSA-q3jh-wrc6-jgq8 and\n  GHSA-8r9p-f939-6h3c (credential headers kept across redirects).\n- vite 8.2.x -> 8.3.5, launch-editor GHSA-698v-4r3x-3vcv,\n  GHSA-r825-w8mm-5pxw and GHSA-587h-7wmj-h5pm."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261021095931-73ad8a"
+}

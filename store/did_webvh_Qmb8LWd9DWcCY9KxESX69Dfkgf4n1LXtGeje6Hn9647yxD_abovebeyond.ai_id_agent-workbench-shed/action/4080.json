@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The \"Dependency audits\" job fails every pull request: `composer audit --locked` and `npm audit --audit-level=high` both flag versions in the lock files. Only the lock files change; every version stays within the ranges `composer.json` and `package.json` already allow. Replaces #261, which covered Composer only.\n\n| Package | From | To | Advisory |\n|---|---|---|---|\n| symfony/http-foundation | 8.1.4 | 8.1.9 | CVE-2026-108082, ReDoS in `HeaderUtils::split()` through the `Cache-Control` request header. Reachable by anyone who can send a request. |\n| symfony/yaml | 8.1.2 | 8.1.9 | CVE-2026-109413, unbounded recursion in the inline lexer. Only `laravel/roster`, a dev tool, pulls it in. |\n| follow-redirects | 1.16.0 | 1.16.1 | GHSA-q3jh-wrc6-jgq8, GHSA-8r9p-f939-6h3c: credential headers kept across cross-origin redirects. Node only, via axios; not in the browser bundle. |\n| vite | 8.2.x | 8.3.5 | launch-editor GHSA-698v-4r3x-3vcv, GHSA-r825-w8mm-5pxw, GHSA-587h-7wmj-h5pm. Dev server only. |\n\n`symfony/polyfill-mbstring` and `symfony/polyfill-php80` move to 1.43.0 as dependencies; Vite brings its own dependency updates.\n\n## Checked\n\n- `composer audit --locked` and `npm audit --audit-level=high`: nothing found.\n- The frontend job's steps: `npm ci`, `npm run lint -- --max-warnings=12` (12 warnings, 0 errors), `npm run build`, manifest present.\n- Full PHP suite on MariaDB 10.11 with the Composer change: 1380 tests, the same 21 failures as on `main` locally (Chrome printing, Vite manifest, build stamp, report PDFs), none new.\n\nUnblocks the audit on #260.\n",
+            "branch": "workbench/dependency-advisories",
+            "title": "Composer and npm locks past four security advisories"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261021095931-73ad8a"
+}

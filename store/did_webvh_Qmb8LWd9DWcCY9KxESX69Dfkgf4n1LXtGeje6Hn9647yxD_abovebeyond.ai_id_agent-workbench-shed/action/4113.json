@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "78b6eeec92b2d5aa6d219c594c180142a585f2ac",
+            "branch": "workbench/company-film-bottom",
+            "files_sha256": "0a20c712b444fc78475300b20da8a2726f25f344ec636003d8d96e529f32cd3d",
+            "message": "Over ons: the company film at the foot of the page"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261021195419-14da01"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c95fbd953d67bbc679f5079aa125a5b4b96cc380",
+            "branch": "workbench/npm-advisory-vite",
+            "files_sha256": "c2b16f78c71dde77123b98aa977d7ec9cbd8b06cfe54c3290f7bcfffe626a6ec",
+            "message": "Move vite to 8.3.4: six new advisories on 8.3.0 to 8.3.2\n\nThe npm advisory ceiling (6) was exceeded by vite 8.3.0 to 8.3.2 (dev server\nand launch-editor advisories). 8.3.4 carries the fixes; sass, terser and\n@parcel/watcher leave the lock file as unused optional peers."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261022072027-3ac49d"
+}
