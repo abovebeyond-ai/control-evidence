@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: The sources an author cites in posts and reports should be compared with the sources the pipeline already follows, and the new ones should land in a review queue of their own instead of being lost after the check.\n\nWhen the posts of the external writer are checked, each named source is traced to a publisher's page and cited under the sentence (`bin/cite-sources.mjs`, source \"Cited by the author\"; the same for \"Add a link\" in the Studio). The publishers themselves are not looked at again: a publisher the pipeline does not follow yet stays a one-off citation, and nobody decides whether it should be read every day.\n\nAsked:\n\n- deduplicate: a cited publisher that is already a source (by site address or exact name) is left alone;\n- a new one is placed automatically in a review queue, with a name of its own (the mail gives the name; it is in Portal);\n- the editors review that queue and decide.\n\nThe pipeline already has most of this. `packages/core/source-list.mjs` reads a list into `sources` as `proposed` and inactive, deduplicates by `urlKey` and name, and records where a source came from in `listing`; a person starts the trial on the Sources page and admits it later (Standard, rules.source). The likely shape: when a citation is written, its publisher's site goes through the same plan as a source list, with the queue's name as its listing, and the Sources page can filter on that listing. A first fill can come from the about 250 citations verified on 15 October.\n\nOpen before building: whether the queue is only for this writer's work or for every author's citations, and whether reports count as well as posts.\n\nSource: Portal mail:32.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Put sources cited by authors that the pipeline does not follow yet in a review queue"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023072602-7d685c"
+}

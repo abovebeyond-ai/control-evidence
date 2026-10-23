@@ -1,0 +1,16 @@
+{
+    "action": "627c82aaec005b95c3d28d8739d6d28f",
+    "effect": {
+        "detail": {
+            "base": "c14623a17f1f3ed815e459ef3e19f15229fd7f4d",
+            "branch": "workbench/relation-list-show-event",
+            "commit": "ec7d38852d2cf1e01ce661a72ca9e85f0efccd2d",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4266,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The test workflow runs on `ubuntu-latest`, which now resolves to Ubuntu 26.04. On gentells-dashboard that broke CI the same day: Playwright could not install Chromium on the new image, and the run stopped before the first test. This site runs the same `npx playwright install --with-deps chromium` step (with Playwright 1.63), so it is pinned to `ubuntu-24.04` as well, where its runs have been green. A newer image becomes a deliberate change.\n",
+            "branch": "workbench/ci-ubuntu-24",
+            "title": "CI: run on ubuntu-24.04, where Playwright can install Chromium"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023060019-a3b3e4"
+}

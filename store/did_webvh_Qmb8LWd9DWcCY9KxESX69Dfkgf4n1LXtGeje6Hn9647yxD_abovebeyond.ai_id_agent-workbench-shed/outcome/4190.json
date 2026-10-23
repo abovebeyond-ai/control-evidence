@@ -1,0 +1,16 @@
+{
+    "action": "22fed80815bf3dc2d01013312303b35a",
+    "effect": {
+        "detail": {
+            "base": "fbf130abce35d022554a129fafee5dc52634bc8f",
+            "branch": "workbench/service-photo",
+            "commit": "485c458ba861fd79a43545f0841324d8aaa1f3a4",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4188,
+    "verdict": "ALLOW"
+}

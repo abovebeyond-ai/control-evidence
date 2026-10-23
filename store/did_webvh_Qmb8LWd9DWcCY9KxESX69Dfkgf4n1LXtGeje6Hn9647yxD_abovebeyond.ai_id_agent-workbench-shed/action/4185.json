@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The test workflow ran on `ubuntu-latest`, which now resolves to Ubuntu 26.04. Playwright 1.59 cannot install Chromium's dependencies there (`Playwright does not support chromium on ubuntu26.04-x64`), so every run stopped before the first e2e test; #101 is the first PR that hit it. Build and lint passed in that run.\n\nThis pins the job to `ubuntu-24.04`, where the runs up to 10 October were green. Moving to a newer image becomes a deliberate change, made together with a Playwright that supports it.\n\nAfter merge, an open PR reruns on the pinned image once it is closed and reopened (a rerun keeps the old workflow).\n",
+            "branch": "workbench/ci-ubuntu-24",
+            "title": "CI: run on ubuntu-24.04, where Playwright can install Chromium"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261022084027-4ea9a4"
+}

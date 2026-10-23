@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What changes\n\nThe context panel (Bespreken, Netwerk, Verkennen) gave every part the same weight. The context for the handover, which is why a node gets opened, sat at the bottom as a grey line behind a \"Context toevoegen\" click.\n\n- **Two columns where there is room.** Left, about two thirds: \"Wat moet wie het overneemt weten?\" as a heading, the text field open at once, the tags and \"Wie neemt het over\" on one line, then \"Context bewaren\" and \"Niets bijzonders\". Notes already told sit below. Right: Kenmerken, compact, on a shaded column.\n- **Container query, not a breakpoint.** The panel splits on its own width, so Netwerk's narrow side panel and a phone stack it with the context first.\n- **Chosen options are filled.** Belang, Draagt and the colleagues fill in GLK green when chosen, Groep gets a green edge, and Risico fills red. Set and unset can be told apart at a glance.\n- **Row and panel as one block.** An open row and its panel share a green bar on the left and the name turns bold, in the relation list and in the agenda's later steps.\n\nNo behaviour changes beyond the form being open from the start.\n\nSaving properties on an open relation threw an error since #139; that is fixed separately in #141. The screenshots were taken with that fix in place.\n\n## Tests\n\n334 pass; pint clean. Checked in the browser at 1280 px (Bespreken and Netwerk) and 390 px.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/relation-panel",
+            "title": "Context panel in two columns, the context first"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023062945-70146e"
+}

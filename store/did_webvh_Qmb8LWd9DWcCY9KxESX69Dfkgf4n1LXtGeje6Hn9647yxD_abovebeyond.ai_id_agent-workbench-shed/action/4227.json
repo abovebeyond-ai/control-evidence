@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Hoet wants a place on the site where opticians who are not yet partners get a first introduction to the brand and can ask to become one. It turns the dealer login into a front door for new retail partners.\n\nSource: Portal mail:31 (forwarded by the owner on 2026-10-23, with a four-page mock-up as PDF; the mock-up's typography is explicitly not yet matched to the site).\n\n## What is asked\n\n1. **Entry point.** The dealer login in the header (today a person icon, \"Dealer Login\" in the mobile panel) becomes a discreet \"Professionals\" link in the same spot. A \"Professionals\" link also goes into the footer.\n2. **Professionals page.** The login page gets a second half: left, existing partners log in as today; right, \"Nog geen partner?\" with a short pitch, three points and a \"Word partner\" button.\n3. **Partner page.** A public page with its own short address (suggested: `/professionals`), meant to be linked from sales reps' mails, LinkedIn and trade-fair QR codes (Silmo, MIDO), and indexable by Google. Sections in the mock-up: hero with two calls to action, four key figures, why Hoet (two formulas: made to order per customer, or a fixed selection in store), three arguments (story for the customer, service with the repair kit, selective network), the three lines Couture / Couture\u00b2 / Costume with a lookbook PDF, four steps to partnership, a partner testimonial, and an intake form (shop name, contact, e-mail, phone, city, country, website or Instagram, \"I would like ...\", trade newsletter opt-in, privacy consent).\n4. **What stays private.** Purchase prices, conditions and ordering stay behind the login; the public page shows only what a consumer may see too.\n\n## Open before building\n\nThe mock-up still has placeholders and choices that need the client:\n\n- Content: response time in days for step 1, the regional policy sentence, the testimonial (quote, name, shop, city), the photos (hero, Couture, Couture\u00b2, Costume, partner in store), the lookbook PDF, and the options of the \"I would like ...\" select (only \"see the collection in our atelier\" is shown).\n- Figures: \"100+ partner opticians\", \"24 countries\", \"2014 first 3D-printed titanium\", \"1884 six generations\" need confirming at the source before they go live.\n- Address: one page or two. The mail calls both the login split page and the partner page \"Professionals\" and suggests `hoet.be/professionals` for the partner page.\n- Form: who receives the requests (info@?), and whether the trade-newsletter opt-in should feed the existing newsletter subscribers or a separate trade list.\n- Content home: copy and images editable in the Studio (four languages) or fixed in the templates.\n- Cabrio: whether cabrio-eyewear.be gets the same.\n\nNot built yet; this issue tracks the request.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Professionals page and partner page for opticians who want to become a Hoet partner"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261023060821-65f805"
+}

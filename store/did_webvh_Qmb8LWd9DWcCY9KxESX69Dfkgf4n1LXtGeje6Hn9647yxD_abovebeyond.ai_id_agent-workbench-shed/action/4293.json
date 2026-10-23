@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "db00d1ead7c8c68d0ea34ad4b50b7bcd816c2f82",
+            "branch": "workbench/one-save",
+            "files_sha256": "7978636f8ac31b2744006e6bb476b9530fb411a4608d33c5381547124dc936ee",
+            "message": "One save for the context and the properties\n\nThe panel saved each property the moment it was tapped and the context\nwith its own button inside the left column. Two ways of saving in one\npanel left it unclear what was kept, and the button sat under the\ncontext only.\n\n- Tapping Groep, Belang, Draagt or a colleague changes the panel; one\n  Bewaren under both columns keeps the note and the properties together.\n  \"Nog niet bewaard\" shows until then.\n- Bewaren with only properties changed keeps them and leaves the item\n  open; with a note it moves on, as before. Niets bijzonders keeps the\n  tapped properties too.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023072950-63011c"
+}

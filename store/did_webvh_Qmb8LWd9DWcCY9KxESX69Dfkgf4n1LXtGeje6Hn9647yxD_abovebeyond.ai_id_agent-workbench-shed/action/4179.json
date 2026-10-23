@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Studio is deployed at https://schoutteet.sanity.studio. The first `sanity deploy` created the application `pz0nda3ncb3xzlh4m4xlo12q`; with it in `deployment.appId`, the next deploy goes to the same Studio without asking.\n\nThe README's deploy section says so instead of describing the first deploy.\n\n## Checked\n\n- `npx tsc --noEmit`: clean.\n",
+            "branch": "workbench/app-id",
+            "title": "Record the deployed Studio's app id"
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261022081915-46c02e"
+}

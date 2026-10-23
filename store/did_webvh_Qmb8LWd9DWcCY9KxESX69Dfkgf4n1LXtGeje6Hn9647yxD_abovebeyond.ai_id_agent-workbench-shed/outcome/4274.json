@@ -1,0 +1,16 @@
+{
+    "action": "ece495dbad8503c5217b6cd4505f966e",
+    "effect": {
+        "detail": {
+            "base": "c14623a17f1f3ed815e459ef3e19f15229fd7f4d",
+            "branch": "workbench/relation-panel",
+            "commit": "ee02abcfb935823b7f13241d10851e40c0004a13",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4272,
+    "verdict": "ALLOW"
+}

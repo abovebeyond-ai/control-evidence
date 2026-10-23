@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fbf130abce35d022554a129fafee5dc52634bc8f",
+            "branch": "workbench/service-photo",
+            "files_sha256": "c3e41d92e6c157b4e56a55aaadadb084666779d8f9f51b23a10242de9e6d81fd",
+            "message": "Services: an optional photo per service from Sanity, under the lead"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261022085350-165e5d"
+}

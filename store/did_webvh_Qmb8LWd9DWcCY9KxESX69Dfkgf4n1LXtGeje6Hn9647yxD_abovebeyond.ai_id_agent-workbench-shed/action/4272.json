@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c14623a17f1f3ed815e459ef3e19f15229fd7f4d",
+            "branch": "workbench/relation-panel",
+            "files_sha256": "95c1a2af2aa23c9432fc9e3aff2df44465fc654d53103a6e63d27245b8074654",
+            "message": "Context panel in two columns, the context first\n\nThe panel gave every part the same weight: grey labels, white boxes\nstretched across the width, and the context for the handover, the\nreason to open a node, as one grey line at the bottom behind a click.\n\n- Two columns where there is room (a container query, so Netwerk's\n  narrow side panel stacks): the question as a heading with the text\n  field open at once on the left, Kenmerken compact on a shaded column\n  on the right.\n- A chosen option is filled in GLK green; Risico in red.\n- An open row and its panel carry one green bar on the left, in the\n  relation list and in the agenda's later steps.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023062945-70146e"
+}

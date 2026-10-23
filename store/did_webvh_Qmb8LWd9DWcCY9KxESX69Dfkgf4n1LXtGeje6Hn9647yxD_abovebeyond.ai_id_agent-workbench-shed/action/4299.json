@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e33097c0ecffe8d30c90b38b097d36e1b58753b5",
+            "branch": "workbench/accounts-two-lists",
+            "files_sha256": "48a44010bca29c08e5ffbc3b46a4e6fe49546eea4649d90866d1b76cc0145649",
+            "message": "Accounts: the team and the members of gentells.com as two lists, Observatory access in one click"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023073002-204765"
+}

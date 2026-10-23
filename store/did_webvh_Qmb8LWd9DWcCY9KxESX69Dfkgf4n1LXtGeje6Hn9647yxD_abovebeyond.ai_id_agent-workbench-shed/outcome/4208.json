@@ -1,0 +1,16 @@
+{
+    "action": "6aca9585b5d70751cac35744343d484f",
+    "effect": {
+        "detail": {
+            "base": "0067c3cd64d03d1d90ac65e7f1fea26edfa9e3e9",
+            "branch": "workbench/one-relation-list",
+            "commit": "bbc3e37384771d82486e0e23136317d2ae86abca",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4206,
+    "verdict": "ALLOW"
+}

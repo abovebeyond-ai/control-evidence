@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c14623a17f1f3ed815e459ef3e19f15229fd7f4d",
+            "branch": "workbench/relation-list-show-event",
+            "files_sha256": "3a976ef0baf526384bbbf85e2bc1db7fa0424c325c528b8c736eb25ee0ab755a",
+            "message": "Fix saving on an open relation in Bespreken\n\nTwo faults in the relation list on Bespreken:\n\n- Tapping a property or saving context on an open relation threw a\n  TypeError. The save updates the list and Bespreken in one request,\n  and the reactive \"show\" prop came through as null there. The list now\n  takes \"show\" at mount and follows Bespreken by event.\n- Tapping Belang or Draagt moved on to the next relation, before\n  anything was told about it. Only new context moves on now; a\n  property tap or a deleted note leaves the item open. The same holds\n  for projects and people in the later steps.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023062910-f332bf"
+}

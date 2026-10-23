@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "People outside the team are to read the Observatory with their gentells.com account, instead of a second account on the pipeline. This is the site's part (design: gentells-pipeline `docs/design/one-account.md`; the pipeline and dashboard parts are separate PRs).\n\n**A fifth plan, Observatory, not for sale.** `Ability::Observatory` and `Plan::Observatory` (Intelligence's abilities plus `observatory`, Intelligence's allowances). The offer gets a `listed` field, false for this plan, and every place a visitor or buyer sees or picks a plan uses the listed plans only: pricing, home, connect, registration (posting `plan=observatory` is refused), checkout and plan change (404), the upgrade hints (`Plan::firstWith`, `Metered`, `Reader::planFor`). An admin sets it per person through the internal Accounts routes, which keep all five. It is added last, so the billing order of the four plans for sale does not move.\n\n**The Observatory as a first-party OAuth client.** `App\\Models\\OAuthClient` skips the consent screen for one client, recognised by a fixed id written by `gentells:observatory-client {redirect}`, and only when the request asks for the `observatory` scope alone. Not by name: any MCP client registers itself under a name of its own choosing. Public PKCE client, no secret.\n\n**Who is logging in.** `GET /api/observatory/me` (bearer token with the `observatory` scope, not metered) and the signed `GET /internal/accounts/{user}/observatory` return id, email, name, plan, team, blocked, observatory. The pipeline decides the role from that.\n\nTests: `tests/Feature/ObservatoryAccessTest.php` (14), including the whole round trip from `/oauth/authorize` with PKCE, without a consent screen, to `/api/observatory/me` with the real token. Full suite 461 of 462; `BuildStampTest` fails the same way on main in a worktree. Pint clean.\n\nOn deploy: no migration, no env. Run `php artisan gentells:observatory-client https://observatory.gentells.com/auth/callback` once; it prints the client id the pipeline needs as `GENTELLS_OAUTH_CLIENT_ID`.\n",
+            "branch": "workbench/observatory-plan",
+            "title": "An unlisted Observatory plan, and the Observatory as a first-party OAuth client"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023062614-a3dd93"
+}

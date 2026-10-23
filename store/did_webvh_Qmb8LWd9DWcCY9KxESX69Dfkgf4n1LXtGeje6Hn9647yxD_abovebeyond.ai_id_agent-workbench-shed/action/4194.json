@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c0ae8f0e7f1a7c68ee26a6b045f6382a55e86fc5",
+            "branch": "workbench/service-photo",
+            "files_sha256": "26fb817ab30cdd40e0aa4cb03a1002e69984cc4ff48d55218b372ca8da7cbb13",
+            "message": "Service: optional photo, shown under the lead on /diensten"
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261022085411-f05d90"
+}

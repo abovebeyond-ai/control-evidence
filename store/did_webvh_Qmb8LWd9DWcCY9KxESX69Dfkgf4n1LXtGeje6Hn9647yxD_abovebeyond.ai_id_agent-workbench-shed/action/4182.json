@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "29897922ac885093f6236115b3fd11927e766f0a",
+            "branch": "workbench/ci-ubuntu-24",
+            "files_sha256": "4efeb15a664093c57ea94791608ab92061e72d99ab3abbc7d8e0a7cfd8abbd82",
+            "message": "CI: run on ubuntu-24.04, where Playwright can install Chromium"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261022084027-4ea9a4"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c2a9847e90610e3abb8fe06c58da85de01e5db32",
+            "branch": "workbench/app-id",
+            "files_sha256": "9475b03f4b9e17959a108e55ab9f1a7554d1589d6561fe6b1ba7e75672a5ce26",
+            "message": "Record the deployed Studio's app id"
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261022081915-46c02e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The home story block was titled \"Drie generaties vakmanschap\", and the history page's meta description repeated it. Nothing supports that: the history names two generations in the company (Ronny Schoutteet from 1970, Nancy from 1997, Heidi from 2012), and the current live site does not mention generations at all.\n\n## What changes\n\n- Home story block (built-in fallback): eyebrow \"Ons verhaal\", title \"Sinds 1970 in Oudenburg\", and a text that keeps to the history: a one-man business in 1970, today a company with its own workshop and a yard full of commercial vehicles, Nancy and Heidi Schoutteet by name, personal help with buying, selling and service.\n- The same three strings in `lang/{en,fr,de,es}.json`, replacing the old keys.\n- /geschiedenis meta description without \"familiebedrijf\" and without the generations line.\n\nThe live text of this block comes from Sanity (`homePage.story`), so the published document gets the same text in all five languages separately.\n\n## Checked\n\n- `php artisan test`: 56 passed; the built-in home test now asserts the new title and that \"generaties\" is gone.\n- `vendor/bin/pint --test`: clean.\n- No em dashes in the new copy.\n",
+            "branch": "workbench/story",
+            "title": "Home story: no generations claim"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261022091424-758d50"
+}

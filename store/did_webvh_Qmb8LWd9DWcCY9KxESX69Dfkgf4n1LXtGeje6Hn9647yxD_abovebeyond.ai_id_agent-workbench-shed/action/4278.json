@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:32",
+            "note": "Scoping: which posts/reports were already source-checked on 15 Oct, filing issues",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261023072409-11a4bd"
+}

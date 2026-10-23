@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "afb65cfe82e2046c2186050cc1771c02d8318bfa",
+            "branch": "workbench/login-gentells",
+            "files_sha256": "fe9859266cc88a23d23e255ad62e2ab41626152cd4b3ca1e345005e11cc83c04",
+            "message": "Log in with gentells.com, and a read-only Observatory for guests"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023062711-f47688"
+}

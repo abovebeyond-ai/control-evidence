@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A service gets an optional photo (`image`, a `siteImage` with hotspot, crop and alt text), so the workshop photos in the media library can go on the services page. The site shows it wide under the lead (ShaneDeconinck/schoutteet, same branch name).\n\nThe field sits right under Inleiding and says what kind of photo fits (landscape, at least 1600 px wide). `CONTRACT.md` and the contract test include it.\n\n## Checked\n\n- `npx sanity build`: succeeds.\n- `npx tsc --noEmit`: clean.\n- `npx vitest run`: 11 passed.\n\nAfter merge the Studio needs a deploy (`npm run deploy`) before editors see the field.\n",
+            "branch": "workbench/service-photo",
+            "title": "Service: an optional photo"
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261022085411-f05d90"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:31",
+            "note": "Reading the Professionals/partner page request against hoet-eyewear; filing the issue",
+            "state": "in-progress"
+        },
+        "resource": "portal:hoet"
+    },
+    "run": "workbench-20261023060803-4abe29"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The dashboard's part of reading the Observatory with a gentells.com account (design: gentells-pipeline `docs/design/one-account.md`; the site and pipeline parts are separate PRs).\n\n- **Login:** \"Log in with gentells.com\" above the password form, shown only when `/auth/site/config` answers. Authorization code with PKCE (S256) and a state, both in sessionStorage (`src/siteAuth.js`). The password form stays for the team.\n- **`/auth/callback`:** checks the state, exchanges the code through `POST /auth/site`, signs in. A mismatch, a cancelled sign-in or a refusal is said in plain words with a way back.\n- **Guest:** `useAuth()` gives `isGuest` and `canWrite`; the allowed routes are in `src/guest.js`. The menu shows Overview, Insights, Patterns and, under Data, Signals, Concepts, Foresight, Standard, Atlas; no System, Ask or Studio. Any other route sends a guest to `/`, checked on the page the router renders, so a typed `/accounts` never mounts the Accounts page. Writing controls on the allowed pages are hidden for a guest (insight edit and publish, the review queue, Standard proposals, the Overview's team sections). The server is the boundary; this keeps dead buttons out of sight.\n- **Accounts:** a guest row shows Guest.\n\nChecks: build, lint ratchet (22, at the ceiling), e2e 43 of 43, including `e2e/site-login.spec.js` (8): the authorize query, no button without config, state mismatch refused, the exchange and sign-in, a refusal shown, the guest menu, guest redirects without leaked requests.\n",
+            "branch": "workbench/login-gentells",
+            "title": "Log in with gentells.com, and a read-only Observatory for guests"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023062711-f47688"
+}

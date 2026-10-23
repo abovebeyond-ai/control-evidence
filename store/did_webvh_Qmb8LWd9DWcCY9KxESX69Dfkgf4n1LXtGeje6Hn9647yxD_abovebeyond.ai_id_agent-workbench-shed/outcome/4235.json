@@ -1,0 +1,14 @@
+{
+    "action": "55d40b99899f6a0be9d2757a5c0260fa",
+    "effect": {
+        "detail": {
+            "key": "mail:31",
+            "project": "hoet",
+            "state": "parked"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4233,
+    "verdict": "ALLOW"
+}

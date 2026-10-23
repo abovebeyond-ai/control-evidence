@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0067c3cd64d03d1d90ac65e7f1fea26edfa9e3e9",
+            "branch": "workbench/one-relation-list",
+            "files_sha256": "bd7607f431d8fa78a5b02fee14df93c753d5eef373cb75b7cdf1d6a900b08dba",
+            "message": "One list of relations, on Bespreken; Netwerk is the graph\n\nThe Contacten tab on Netwerk and step 1 of Bespreken were the same\nrelations twice: the same columns (importance, who carries it), the same\npanel, a different order.\n\nStep 1 of Bespreken, now called Relaties, is the whole list\n(Office\\RelationList): the agenda's relations first, in its order and\nwith its reason, then the rest by number of projects, 30 at first and 25\nmore at a time. Search, role, group and carrier filter it, Relatie\ntoevoegen sits above it, each row shows whether it was discussed, and a\nrow opens its context panel in place. Saving the open relation opens the\nnext one still to do.\n\nNetwerk keeps only the graph with its filters and panels. An old link to\nthe Contacten tab opens Bespreken, or the graph's panel when it names a\nrelation. The plan in docs/verkennen-en-overdragen.md records where this\ndeparts from it.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261022095458-9d4dd3"
+}

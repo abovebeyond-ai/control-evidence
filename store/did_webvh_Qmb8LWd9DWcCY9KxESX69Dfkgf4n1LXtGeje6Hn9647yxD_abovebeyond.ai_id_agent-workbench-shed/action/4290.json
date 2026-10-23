@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:32",
+            "note": "Issues pipeline #363 (check), #364 (queue). Go for the 15 Oct-style source check of 9 new posts + 3 reports? Are the 4/11 Oct posts in the Studio yet? Growing Into Money is a Drive link: send PDF? Queue: this writer only or all authors?",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261023072626-b148b8"
+}

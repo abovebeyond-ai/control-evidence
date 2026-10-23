@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "db00d1ead7c8c68d0ea34ad4b50b7bcd816c2f82",
+            "branch": "workbench/menu-bespreken-first",
+            "files_sha256": "bd0056dd7168f1c832719559d6c63092ed38bc1b310387af243c0763b21e3c3f",
+            "message": "Bespreken first in the Overdracht menu, and where handover users land\n\nBespreken is where the handover work is done; Netwerk and Historiek are\nfor looking things up. The Overdracht group now reads Bespreken,\nNetwerk, Historiek, Medewerkers, and a shared link or a login without\noffice rights opens Bespreken instead of Historiek.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023073058-7485a4"
+}

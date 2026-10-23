@@ -1,0 +1,16 @@
+{
+    "action": "b8371b65abe269a22b5b7ba6a8d06f98",
+    "effect": {
+        "detail": {
+            "base": "e33097c0ecffe8d30c90b38b097d36e1b58753b5",
+            "branch": "workbench/accounts-two-lists",
+            "commit": "1fa1acff84b634de08ec8cde56e9702b7879d769",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4299,
+    "verdict": "ALLOW"
+}

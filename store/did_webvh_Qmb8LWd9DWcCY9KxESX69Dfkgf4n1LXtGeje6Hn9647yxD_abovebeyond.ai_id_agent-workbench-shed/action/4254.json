@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "195b416876352cc9e23118e6cc70aa25d27660fd",
+            "branch": "workbench/observatory-plan",
+            "files_sha256": "fc8396523f2574042f06e943e1b820638fc29884fcc31008720868b65011f87b",
+            "message": "An unlisted Observatory plan, and the Observatory as a first-party OAuth client"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023062614-a3dd93"
+}

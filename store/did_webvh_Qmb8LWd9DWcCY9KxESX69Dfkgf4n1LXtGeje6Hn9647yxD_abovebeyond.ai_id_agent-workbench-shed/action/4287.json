@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:32",
+            "note": "Issues pipeline #363 (check 9 new posts + 3 reports; 5 posts already checked on 15 Oct) and #364 (queue for new cited sources). Questions: (1) go for the source check as on 15 Oct (research session, citation + relink plan for the box)? Are the 9 posts of 4/11 Oct already in the Studio or live? Growing Into Money is a Drive link: may I fetch it, or send the PDF. (2) Queue: only this writer or every author, reports too, first fill from the ~250 citations of 15 Oct?",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261023072619-877f9f"
+}

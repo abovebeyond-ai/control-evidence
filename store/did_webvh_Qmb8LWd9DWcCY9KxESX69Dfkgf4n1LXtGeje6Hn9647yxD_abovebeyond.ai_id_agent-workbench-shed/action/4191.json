@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The workshop photos the client sent had no place on the site: a service in Sanity had no image field. With ShaneDeconinck/schoutteet-sanity's matching Studio change, an editor can give each service one photo.\n\n## What changes\n\n- `Services::all()` carries a service's `image` from Sanity (only when it has an asset).\n- On /diensten the photo shows wide under the service's lead, 16:9, cropped to the editor's hotspot, with `srcset` 800/1200/1600 and lazy loading. Its alt text comes from the image, otherwise the service title.\n- A service without a photo, and every built-in service, renders exactly as before.\n\n## Checked\n\n- `php artisan test`: 56 passed; the Sanity services test now also asserts the CDN URL and the alt text.\n- `vendor/bin/pint --test`: clean.\n- Rendered locally with one of the uploaded workshop photos, at 1280 px and 390 px wide.\n",
+            "branch": "workbench/service-photo",
+            "title": "Services: an optional photo per service, under the lead"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261022085350-165e5d"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:31",
+            "note": "Issue hoet-eyewear #84. Before building: (1) one page or two: login split page AND partner page at /professionals? (2) placeholders from Bieke: response days, regional policy, testimonial, photos, lookbook PDF, options of 'Ik wil graag'; (3) confirm 100+ / 24 countries / 2014 / 1884; (4) who receives the form, trade newsletter separate list?; (5) copy in Studio (4 languages) or in templates; (6) Cabrio too?",
+            "state": "parked"
+        },
+        "resource": "portal:hoet"
+    },
+    "run": "workbench-20261023060829-299454"
+}

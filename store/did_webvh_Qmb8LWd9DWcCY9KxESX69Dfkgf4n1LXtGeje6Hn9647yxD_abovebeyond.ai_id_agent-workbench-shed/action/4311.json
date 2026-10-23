@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:32",
+            "note": "Go given: 9 new posts converted (bundle sent), Growing Into Money fetched, source check running (4 readers). Waiting for Shane's export + import on the box.",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261023073340-c53166"
+}

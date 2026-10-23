@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f9080675eecf0a3bd9e69c454a9483cacac40202",
+            "branch": "workbench/guest-role",
+            "files_sha256": "d0f64886c868f9a6ce83fc2cfb6bedb015b4c7a4cb7638eaef6b80ead63e3d74",
+            "message": "Observatory access through gentells.com: site login and the guest role"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023062538-66c1e5"
+}

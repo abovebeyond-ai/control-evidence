@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:31",
+            "note": "Issue hoet-eyewear #84. Open: one page or two (/professionals)?; Bieke's placeholders (days, region policy, testimonial, photos, lookbook, form options); confirm 100+/24/2014/1884; form recipient + trade list; copy in Studio or templates; Cabrio too?",
+            "state": "parked"
+        },
+        "resource": "portal:hoet"
+    },
+    "run": "workbench-20261023060834-7bc382"
+}

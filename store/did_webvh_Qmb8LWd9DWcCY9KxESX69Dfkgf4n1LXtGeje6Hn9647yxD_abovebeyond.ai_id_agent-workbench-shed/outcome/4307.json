@@ -1,0 +1,16 @@
+{
+    "action": "11c997d02a56f64dcfdf4bbf25c740d6",
+    "effect": {
+        "detail": {
+            "base": "db00d1ead7c8c68d0ea34ad4b50b7bcd816c2f82",
+            "branch": "workbench/menu-bespreken-first",
+            "commit": "5484098e26ec8fd4dcd120df105890ab30640a12",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4305,
+    "verdict": "ALLOW"
+}

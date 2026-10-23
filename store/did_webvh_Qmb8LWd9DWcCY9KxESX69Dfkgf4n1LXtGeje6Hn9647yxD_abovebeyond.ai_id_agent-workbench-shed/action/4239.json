@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What changes\n\nOn Dagrapport, the line \"x/y ingevoerd in Bouwsoft\":\n\n- **Counts what Bouwsoft already has.** A handed-in sheet counts as typed in when the office marked it, or when the nightly sync found hours for that worker on that day. The card already showed \"Bouwsoft heeft al uren op deze dag\"; the count now agrees with it.\n- **Is left out when nothing came in.** With no handed-in sheets it read 0/0. The \"fiches doorgegeven\" line stays and still shows how many of the crew are missing.\n\nThe piles below are unchanged: a sheet only moves to \"Ingevoerd\" when someone marks it.\n\n## Tests\n\n- The day report test now also asserts 1/1 for a sheet that is unmarked but found in Bouwsoft.\n- New: a day without handed-in sheets shows no typed-in count.\n- 334 pass; pint clean.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/entered-counter",
+            "title": "Dagrapport: count sheets Bouwsoft already has, hide 0/0"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023060845-82ba99"
+}

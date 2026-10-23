@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Trendwolves asks to check the posts and reports of the last three weekly deliveries for consistency with their sources and for their link to Gentells trends, and to find a source where a claim has none.\n\nThree weekly deliveries from the external writer (26 September, 4 and 11 October 2026) hold 15 posts and 3 reports. The question is the same check that ran on 15 October over the 78 earlier posts:\n\n- does each named source say what the sentence says (figure, date, place, who said it);\n- does each post rest on a live Gentells trend, and is that link right;\n- where a claim names no source, or a source that cannot be found, can one or more be found.\n\nWhat is already covered: five posts of the 26 September delivery are word for word the versions checked and cited on 15 October (You can wake up wrong, The meal has a scoreboard, Recovery became a place to go, You don't have to feel sick to become a patient, Feeling fine is no longer enough). Their findings are in the 15 October source summary.\n\nWhat is not checked yet:\n\n- 4 October: The souvenir escaped the gift shop; Knowing where to buy is part of owning it; The queue is part of the product; Taste is becoming easier to outsource; The hobby comes with a shopping list.\n- 11 October: The main account is becoming the lobby; Your old self is still in the picture; You can stop posting and still be visible; The avatar gets ready first. These carry numbered references ([1, 2, 3]) but no addresses.\n- Reports: Going Out, Staying In (21 pages, with Belgium and the Netherlands added to its figures on request); The New Status System (28 pages); Growing Into Money (shared as a Google Drive link, not yet downloaded).\n\nThe way to do it is the 15 October method: readers per post who trace each named source to the publisher's own page, a call list for the editors (verified, partly, not found, contradicted), then a citation plan run with `bin/cite-sources.mjs` and a relink plan for the trend links. The PDFs are kept on the workbench; the download links in the mail expire on 15 November 2026.\n\nSource: Portal mail:32.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Check the posts and reports of the 26 Sep, 4 Oct and 11 Oct deliveries against their sources and Gentells trends"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023072554-b9788a"
+}

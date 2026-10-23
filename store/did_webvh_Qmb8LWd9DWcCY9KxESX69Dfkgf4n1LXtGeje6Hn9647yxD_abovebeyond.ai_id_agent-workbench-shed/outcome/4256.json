@@ -1,0 +1,16 @@
+{
+    "action": "9791ace135f1ec6289eda6e516837cb4",
+    "effect": {
+        "detail": {
+            "base": "195b416876352cc9e23118e6cc70aa25d27660fd",
+            "branch": "workbench/observatory-plan",
+            "commit": "d54d2182a67266992bb8c9c163c0110e8c772187",
+            "files": 23,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4254,
+    "verdict": "ALLOW"
+}
