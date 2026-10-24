@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What changes\n\n\"Wie neemt het over\" in the context form was a single free text field. A note can go to more than one person.\n\n- **Pick one or more** colleagues from the Medewerkers group (the same group as \"Samen met\" under Draagt). They toggle in green.\n- **Anyone else** goes in the field next to them, by name or role. Several names can be typed with commas; with an empty group the field says so.\n- **Stored as one line of names** in the existing `successor` column (for example \"Jens Demeyer, Sofie Claeys, nieuwe werfleider\"). The note shows \"neemt over: \u2026\", and the Bespreken list, the \"Met wie het overneemt\" filter, the search and the CSV keep working unchanged. No migration.\n\n## Tests\n\n- Two colleagues and a typed name are kept on the note in the order picked; the selection clears after saving.\n- 337 pass; pint clean. Checked in the browser with two colleagues and a typed role.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/several-successors",
+            "title": "Several people can take a note over"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023081055-cd7151"
+}

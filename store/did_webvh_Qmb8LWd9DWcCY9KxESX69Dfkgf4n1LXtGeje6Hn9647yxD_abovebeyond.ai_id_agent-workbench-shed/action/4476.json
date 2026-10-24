@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "da710e7247dabb97885615527a2caa167e8fc87b",
+            "branch": "workbench/pattern-evidence",
+            "files_sha256": "a600aa59993d0f5bf2c52006b6fff12a5066dfdb86426bd232230ef516fb06de",
+            "message": "Patterns need two sources, and an insight rests only on patterns it shares evidence with"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023114608-f88e88"
+}

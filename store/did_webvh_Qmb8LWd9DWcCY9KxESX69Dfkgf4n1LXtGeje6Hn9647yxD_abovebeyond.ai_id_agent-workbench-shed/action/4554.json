@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0873afd1d285f52d9445431da390760e30f56e44",
+            "branch": "workbench/clearer-show-more",
+            "files_sha256": "e3af61418931f5b5d32b2744c7c15691d029aeb034683902159c10726edeba05",
+            "message": "Say what the show-more button on the relation list does\n\n\"25 meer laden\" did not say what more meant. The button now reads \"Toon de\nvolgende 25 relaties\" and the count beside it \"50 van de 180 relaties\ngetoond\".\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023142021-466adb"
+}

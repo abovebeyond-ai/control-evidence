@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The large photo on a frame page showed every photo whole (`fit=min`). That suits the product shots, which are wide (about 2:1) and must keep both temples in view. A portrait photo of a model wearing the frame (CH 1, 1867x2800) then stood three times as tall as wide, with the face near the top, and the hotspot set in the Studio only showed in the 240x190 thumbnail, the one place where the CDN crops.\n\n## What changes\n\n- `Content::framedPhoto($url, $w, $h)`: a landscape (or square) source keeps `fit=min`; a portrait source is cut to the box shape with `fit=crop`, so the CDN keeps the hotspot (`fp-x`/`fp-y`, already on the URL) in frame. The width never exceeds the source, so nothing is upscaled. The editor's crop (`rect=`) decides the orientation.\n- The frame page uses it for the first photo and for the thumbnail switch (`data-main`, built on the server), so a click shows the same framing as a first load. The lightbox still opens the whole photo.\n- The order configurator is unchanged: it shows the product photo whole.\n\nChecked on the CH 1 model photo: the 1200x900 cut centres on the face and the frame.\n\n## Tests\n\n`StaandeFotoTest` (portrait cut around the hotspot, landscape whole, no upscaling, crop decides orientation, thumbnail switch). Full suite 364/365, the one failure is `BuildStampTest`, which needs a deployed checkout and passes in CI. Pint and PHPStan clean.\n",
+            "branch": "workbench/portrait-focus",
+            "title": "Cut a portrait frame photo to the box around its hotspot"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20261023092831-fe70ae"
+}

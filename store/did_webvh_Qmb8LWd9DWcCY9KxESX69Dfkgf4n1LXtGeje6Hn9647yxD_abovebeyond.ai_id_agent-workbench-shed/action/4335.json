@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ee121aa24b2fb180f31576c3e5e1db5f2d5653e6",
+            "branch": "workbench/mail-32-converter",
+            "files_sha256": "d77c5492c1d09ff77a107c28f9b5d17e813aeda15bcad5d4f744f47deb8ea75b",
+            "message": "posts-to-json: take the source list, markers and running head out of a post"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023080907-9acad4"
+}

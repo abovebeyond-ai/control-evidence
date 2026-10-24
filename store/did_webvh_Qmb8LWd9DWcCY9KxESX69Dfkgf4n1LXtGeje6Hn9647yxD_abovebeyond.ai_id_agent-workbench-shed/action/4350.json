@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ee121aa24b2fb180f31576c3e5e1db5f2d5653e6",
+            "branch": "workbench/cited-sources-queue",
+            "files_sha256": "16212d617082e33177e8459a8fec5900c46c38b2684f5ac7eaab9bc6ffb9a9b4",
+            "message": "Queue the publishers authors cite that the pipeline does not follow yet"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023081716-1a343e"
+}

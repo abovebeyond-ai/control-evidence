@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7436eb5ed5297b5bdacb9deb9323db37ca666086",
+            "branch": "workbench/bespreken-tabs",
+            "files_sha256": "3306f5737e1d67f4d57cf0306c709fdfb318978930f515f4a53e4c1478d6d681",
+            "message": "Show the Bespreken steps as tabs\n\nThe three steps (relations, projects, people) were stacked in one long\nblock, so the projects and people sat far below a list of every relation.\nThey are now tabs at the top of Te bespreken, each with how many of its\nitems are discussed. The page opens on the first step with something left\nto do, the open tab is kept in the link (?stap=), and saving the last open\nitem of a tab opens the next item in the following tab.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023142559-694018"
+}

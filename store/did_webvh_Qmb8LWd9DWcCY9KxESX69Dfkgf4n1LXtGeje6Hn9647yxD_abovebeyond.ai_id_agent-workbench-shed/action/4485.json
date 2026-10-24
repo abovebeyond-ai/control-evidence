@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #371.\n\n`patterns.concepts` and `concept_mentions` still hold bare slugs and names written by older enrich paths (see `packages/core/concept-id.mjs`). `packages/core/pattern-evidence.mjs` and the one-source prune in `packages/engine/self-improve.mjs` compared concept ids literally, so a pattern stored as `lobby hangout` shared no evidence with signals that mention `concept-lobby-hangout`.\n\nEffect before this fix:\n- The dry run of `bin/insight-pattern-evidence.mjs` on production would take 309 patterns off 143 live insights, and leave 20 insights with none. Nothing was applied.\n- The weekly prune would archive a candidate with bare concepts as resting on fewer than two sources.\n\nChange:\n- `sharedSignals` passes both the pattern's concepts and the mention ids through `conceptId`.\n- The prune asks for every spelling of each concept (as stored, canonical id, bare slug).\n- Two tests that fail without the fix: a name in the pattern, a bare slug in the mention, and a bare-named two-source pattern that survives the prune.\n\nTests: full suite 1329/1335, the 6 failures are the known report-render tests that need pdftoppm.\n\nAfter deploy, rerun the dry run: `node bin/insight-pattern-evidence.mjs --out=/tmp/ipe.json`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/pattern-evidence-ids",
+            "title": "Pattern evidence reads bare concept slugs and names"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023133427-364fa2"
+}

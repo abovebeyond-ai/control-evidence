@@ -1,0 +1,16 @@
+{
+    "action": "798f010d6bd4f7e9a7745616dd6d926f",
+    "effect": {
+        "detail": {
+            "base": "13e893214dc7dd8ec2af55a1d3afd8b1d346fcc0",
+            "branch": "workbench/portrait-focus",
+            "commit": "639f0b14a96b300fa0029f5a1f112fd49143aa20",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4395,
+    "verdict": "ALLOW"
+}

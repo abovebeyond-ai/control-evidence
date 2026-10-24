@@ -1,0 +1,16 @@
+{
+    "action": "0b7e0213478c15a9a5454100be660d72",
+    "effect": {
+        "detail": {
+            "base": "69501b822ffebb5f459e9cb494a1cf19e8a80053",
+            "branch": "workbench/trend-signals-whole",
+            "commit": "7d82b939044d6d72b597e0e4f39572fba090b27c",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4566,
+    "verdict": "ALLOW"
+}

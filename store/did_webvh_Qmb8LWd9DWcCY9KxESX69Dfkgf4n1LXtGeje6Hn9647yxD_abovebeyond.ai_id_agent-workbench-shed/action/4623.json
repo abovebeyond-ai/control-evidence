@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Trendwolves listed the companies whose work Gentells never passes on: 18 trend and youth agencies, 2 independent forecasters and Edelman. 0.15.0 lets a person mark one *source* as read for inspiration only. That catches a YPulse signal when it comes from the YPulse source, but misses a news article that quotes YPulse, a link to wgsn.com that an author pastes into a post, or a trend whose text says \"according to Canvas8\". This release lists the companies themselves.\n\n**rules/competitors.json**\n- 21 companies, each with the names that identify it (products and former names such as The Viral List, Student Beans, Voxburner, LS:N Global; people such as Sean Monahan and Matt Klein) and its sites.\n- Matching: `names` without regard to capitals on word boundaries; `exact` only as written, for names that are ordinary words (Pion, ZINE, Young Works, Keeping Current); The People and Contagious only in longer forms (The People London, Most Contagious, Contagious Intelligence), because the plain words are ordinary English.\n- One exception: the Edelman Trust Barometer (name and `edelman.com/trust`) may be cited as a data source when a signal genuinely draws on it.\n- What stays: the team may read them in the Observatory as inspiration; an item that reached us through them is cited at its primary source. An agency that is not listed is decided by a person.\n\n**Tools:** `competitorsIn(text)` and `competitorOfLink(url)` in `tools/rules.mjs`; `validate-graph` refuses a Gentells post or trend that names one, and a citation of a signal that links to one.\n\n**Conformance:** 20 text vectors and 10 link vectors, ordinary words included (\"a pion decays\", \"a zine for teens\", \"contagious laughter\", \"keeping current with trends\" all pass), so the pipeline and the site can check their own matching against the same cases. Graphs: `competitor-named` refused, `competitor-exception` (Trust Barometer) valid.\n\n**Open:** the sites of The People (London), Young Works and 8Ball are not listed; they are matched by name until a release adds them. Mintel is listed whole; the list names it \"for their trend forecasts\", so whether its market data may be cited is a question for Trendwolves.\n\nTests 101 of 101; compatible with every earlier release. Needs a `v0.17.0` tag after merge for the pipeline and site to pin it.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/competitors",
+            "title": "Competitors are never named, cited or linked (0.17.0)"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261023175115-dc1b65"
+}

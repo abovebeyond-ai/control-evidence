@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c842a4f081e55779ca12d6c4a7f2473007b36bab",
+            "branch": "workbench/admin-role",
+            "files_sha256": "c138795103d3e42858fac82e947cede4fcbc951d6d0af9d290b1a2dd8895783d",
+            "message": "Saving your own staff record no longer takes your admin role"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261023165820-64e361"
+}

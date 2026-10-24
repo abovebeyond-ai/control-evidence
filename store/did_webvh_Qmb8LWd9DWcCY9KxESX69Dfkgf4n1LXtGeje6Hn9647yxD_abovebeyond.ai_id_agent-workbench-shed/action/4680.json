@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d73f63a2bf13bd9c9eec59244211e636d7ea49a0",
+            "branch": "workbench/competitor-sources",
+            "files_sha256": "9a390efc8e99f52c93eb72550d135701f962074ce32f648cec8dee985a705d26",
+            "message": "A report by a competitor is caught by its author, file name or id, and marked when it lands"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023202503-d1c372"
+}

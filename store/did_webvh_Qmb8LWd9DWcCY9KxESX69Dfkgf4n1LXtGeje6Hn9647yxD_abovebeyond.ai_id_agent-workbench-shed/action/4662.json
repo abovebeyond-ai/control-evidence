@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "958668619d924355ae135155880a3f38324deccc",
+            "branch": "workbench/graph-handover-state",
+            "files_sha256": "e20ccca9efb60590cc563b52bc1296a7f158b218f60461dd5aa6bfed40859dce",
+            "message": "Colour the network by where each relation's handover stands\n\nWith every relation drawn, the picture was a grey knot with a ring of\none-off relations around it, and colouring by importance repeated what\nthe size already said. The default colouring now shows the handover:\nred while the owner carries it alone, amber while it is still to discuss\n(on the Bespreken list or five projects or more), green once discussed or\ncarried by others, light grey for the small ones. A count per colour sits\nunder the picture and is its legend.\n\nClients gather on the left, suppliers on the right and contacts on\nprojects at the top, each side named. The small relations pack together\nbehind their side without pushing the others, their lines stay hidden\nand shared projects pull only lightly, so the big ones keep room for\ntheir names. Lines are faint until a dot is pointed at. High importance\nkeeps a dark ring, no longer red. The graph gets each relation's carrier\nand whether Bespreken lists it.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023195448-480246"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "afc5caa5acce4a5722810cb92606daaf31934d79",
+            "branch": "workbench/basisvorming-report-prep",
+            "files_sha256": "f1f9499985c1cd4478a68f03fc62feaf0e561c6905fec732b594d679a2217f35",
+            "message": "A removed teacher no longer takes her feedback, or Deel 1, with her\n\nRemoving a staff member marked the user DELETED for every school, and the\nUser scope then hid her as the author of her feedback. Report preparation\nread feedback.teacher.first_name on null and dropped the whole\nbasisvorming section for the pupils she had written for (athena OV4,\n2026-10-23).\n\n- Feedback and every creator relation drop User::NOT_REMOVED_SCOPE, so an\n  author stays known; EveryAuthorStaysKnownTest walks every model.\n- Vue and the student page read the author with a guard.\n- Removing a staff member detaches them from the selected school; the\n  user is DELETED only when no school is left.\n\nPortal: De rubriek basisvorming in de rapportvoorbereiding verschijnt weer, ook wanneer een leerkracht uit Naviskore verwijderd werd."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261023172018-67bf54"
+}

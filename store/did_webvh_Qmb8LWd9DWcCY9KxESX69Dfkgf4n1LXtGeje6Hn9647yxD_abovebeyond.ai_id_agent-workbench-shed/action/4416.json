@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ff3b67ea25f212702a537bb22d09e77c6add41a0",
+            "branch": "workbench/prelaunch-lets-accounts-in",
+            "files_sha256": "d19b0441cfa1c7562f8293ff66f1ebd7b056f73b592c36314838f61d9e26206e",
+            "message": "Let an account through the prelaunch cover, and tell an Observatory test account where to go"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023093535-6ddef9"
+}

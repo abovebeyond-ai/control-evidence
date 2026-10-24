@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two changes in one build: the Meta Pixel comes back behind a cookie banner, and the StockCars social profiles get linked.\n\n## Meta Pixel, only after consent\n\nThe pixel (`site.facebookPixelId`) was removed in 3d9cb91 because it was not in use, so since the launch Meta has received nothing.\n\n- `fbevents.js` is not loaded at all until the visitor agrees. This is stricter than `fbq('consent','revoke')` before init, which still fetches the script from connect.facebook.net and so sends Meta the IP address and the page before anyone said yes. The `<noscript>` image is gone because it fired without consent.\n- `ConsentBanner.astro`: \"Akkoord\" and \"Weigeren\" are identical buttons. The choice is kept for twelve months. Refusing revokes a running pixel and removes `_fbp`/`_fbc`. \"Cookie-instellingen\" in the footer opens the banner again.\n- Events (`autoConfig` off, so only these):\n  - `PageView` on every page.\n  - `ViewContent` on a car detail page, with the id, title and price in EUR.\n  - `Lead` after a form is sent. For the Netlify forms it fires on the thank-you page, once and not on a reload. The car question form fires it on success.\n- The privacy page gets a section on the pixel. It is seed content, so it goes live after `npm run seed` in `studio/`.\n- The site sets no Content-Security-Policy, so there is nothing to widen.\n\n## Social links\n\n- Facebook, Instagram, LinkedIn and TikTok appear as icons beside the contact details: in the contact block on the home and in the footer's Contact column on the other pages. They are not in the top navigation.\n- Each opens in a new tab with `rel=\"noopener\"` and has a name for screen readers.\n- The URLs live in `site.social`, and `Schema.astro` lists all four in `sameAs`. The `&` in the LinkedIn slug is encoded as `%26`.\n\n## Checked locally\n\nPlaywright against the production build:\n- Before a choice there are no requests to facebook.com or connect.facebook.net and no `_fb*` cookies.\n- After accepting, `fbevents.js` loads and `facebook.com/tr` receives PageView, ViewContent and Lead.\n- After refusing, or accepting and then refusing via the footer, nothing goes out and the cookies are gone.\n- No console errors.\n- `vitest` passes (46 tests). `test/pixel.test.ts` covers the thank-you pages and the ViewContent payload.\n\nNote: `fbevents.js` sends nothing from a HeadlessChrome user agent, so a check needs a regular Chrome UA.\n",
+            "branch": "workbench/meta-pixel-consent",
+            "title": "Meta Pixel after consent, and links to the social profiles"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261023205946-6f3b01"
+}

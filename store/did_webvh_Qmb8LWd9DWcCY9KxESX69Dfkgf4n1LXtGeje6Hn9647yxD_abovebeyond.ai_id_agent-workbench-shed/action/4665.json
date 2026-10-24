@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #152 (it carries that commit too): Netwerk draws every relation, and the picture now says where the handover stands.\n\n**Colour: where the handover stands** (new default, \"Kleur per overdracht\")\n- Red: the owner carries it alone (`carrier = eigenaar`).\n- Amber: still to discuss: on the Bespreken list, or 5 projects or more, and no note or carrier yet.\n- Green: discussed (a note) or carried by others.\n- Light grey: small, under 5 projects and not on the list.\n- Under the picture, the legend is a count: \"18 nog alleen bij Geert, 48 nog te bespreken, 33 besproken, 634 klein\". \"Kleur per rol\" and \"Kleur per groep\" stay.\n- The rule lives in `stage()` in `network-model.js`, with a Node test.\n\n**Layout**\n- Clients on the left, suppliers on the right, contacts on projects at the top, each side named in faint text above its dots. The centring force is off, so the larger side does not shift the picture.\n- Small relations pack together behind their side (tiny dots, almost no repulsion, lines hidden, no pull from their lines), so the busy ones keep room for their names.\n- Shared-project lines pull only lightly and stay faint; pointing at or opening a relation lights its own lines and fades the rest.\n- Size: projects, times 1.5 for high importance and 0.75 for low. High importance has a dark ring (red is now the colour for \"alleen bij Geert\").\n- Names: the 25 busiest, the ones carried by the owner alone, high importance, and whatever is in focus.\n\n**Server**\n- `Network::graph()` sends each relation's `carrier`; the Livewire page adds `agenda` (the relation is on the Bespreken list), read from the cached `Agenda`.\n- From #152: every relation drawn, \"Hoeveel\" removed, shared projects counted per project.\n\nChecked in the browser on a demo copy with 733 relations (700 generated, about 100 given a carrier or a note): loads in under a second, settles in a few seconds; checked colour by role, the 3D switch, focus on one relation, and phone width (small but readable, zoom works).\n\nTests: 339 PHP tests pass (new: the graph marks the relations Bespreken asks about), 5 network-model JS tests pass, pint clean.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/graph-handover-state",
+            "title": "Colour the network by where each relation's handover stands"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023195448-480246"
+}

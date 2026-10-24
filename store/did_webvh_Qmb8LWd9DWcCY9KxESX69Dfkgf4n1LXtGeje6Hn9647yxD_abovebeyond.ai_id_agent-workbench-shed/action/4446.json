@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "330ec4dbdea5199ca3b6e28d169c6c7ddc4e6e01",
+            "branch": "workbench/intelligence-reads-observatory",
+            "files_sha256": "83215a7f011312bf5e115c428b9adbe9c6bcb5832da9e6cef9ef8c0902bd6beb",
+            "message": "Accounts: an Intelligence client reads the Observatory through the plan"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023113111-e2a8cf"
+}

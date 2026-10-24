@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1019b96c588a7e0705c5e95727c373fb3828e8c6",
+            "branch": "workbench/social-login",
+            "files_sha256": "453a09e26ba8742707149b6ac4949a6ca871a9a9041562deb8a7d53ced6f5f7d",
+            "message": "Sign in with Google, LinkedIn and Microsoft"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023080012-a1e976"
+}

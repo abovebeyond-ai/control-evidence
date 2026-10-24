@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "69501b822ffebb5f459e9cb494a1cf19e8a80053",
+            "branch": "workbench/trend-signals-whole",
+            "files_sha256": "30a60579cd0b3e597a74298b4cf673d488ff80edf486cab30b464ec6245ddf2b",
+            "message": "A reader with the sources reads every signal under a trend"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023142634-66d889"
+}

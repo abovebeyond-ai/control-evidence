@@ -1,0 +1,16 @@
+{
+    "action": "554a7efa7ad362ece836235ad3e8e151",
+    "effect": {
+        "detail": {
+            "base": "3fc6bfda6a40b34d171b07ee5e12f7f2f78c8f8d",
+            "branch": "workbench/login-drop-line",
+            "commit": "f13c3183fb8fd7e334fb8a33f2eb05897147e374",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4314,
+    "verdict": "ALLOW"
+}

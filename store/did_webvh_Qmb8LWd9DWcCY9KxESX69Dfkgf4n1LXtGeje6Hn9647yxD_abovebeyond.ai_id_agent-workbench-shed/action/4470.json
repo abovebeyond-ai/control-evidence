@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "026eb9788974d7d33a769b6904eda13d9ee7c6d3",
+            "branch": "workbench/pattern-min-sources",
+            "files_sha256": "d8cdb97725e453e25d4915a7bcfeff29e221006f115f904a6d10864a812e7bb1",
+            "message": "One source is one source, for patterns and what a trend rests on (0.16.0)"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261023114510-3a2eac"
+}

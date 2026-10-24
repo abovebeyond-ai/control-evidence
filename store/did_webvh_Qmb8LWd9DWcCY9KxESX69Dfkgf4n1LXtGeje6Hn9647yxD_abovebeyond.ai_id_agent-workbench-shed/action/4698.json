@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "91c09e8f0023a66813b4563ccbca04871d961b81",
+            "branch": "workbench/editor-role",
+            "files_sha256": "bfaae6251226ace756dd5b7313dfcc2d5d123aa2651299b1b6b810375daa544e",
+            "message": "Add an editor role: edits the team's posts, not someone else's drafts"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261024070321-4709b8"
+}

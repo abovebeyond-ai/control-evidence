@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "151d48b1403957f601183eb0d55773d59b55e44b",
+            "branch": "workbench/intelligence-reads-observatory",
+            "files_sha256": "9dfaca14c7c6d50a95ec879753a1448005345afe1aaf06f2075df4dcff8a0b7f",
+            "message": "Intelligence opens the Observatory to read"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023113046-217f27"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The corpus on the Overview was folded under \"The corpus \u00b7 Show topics, coverage, geography and live activity\", and once opened it spoke an older interface: a treemap in hard-coded warm greys with 10px labels, a steel-blue map in a white card, and two geography lists in white cards, each with its own heading style.\n\nNow it is a section like \"What is moving\":\n\n- **Heading** `The corpus` (text-lg 700) with one line under it: how many signals were read, by topic and by place.\n- **Topics**: bar rows in two columns (name, count, a 3px aqua bar), each opening the signals for that topic, with \"all signals\" on the right as \"all N\" sits on the lists above. The thin-coverage line stays under it.\n- **Coverage by region**: the map without its card (`GeoHeatMap bare`), on a scale from the ground (`raised`) to the Observatory's aqua (`cool`) instead of the steel blue from the dark years. Its hover tooltip had a near-black ground under ink text; it is white now. The compact maps on Insights, Patterns and Buffer keep their card and title.\n- **What the signals are about / Where the sources are**: the two geography lists unboxed, under the same list heading as the rest of the page, side by side on a desk and one under the other on a phone (`.corpus-cols`).\n- **Live activity** under its own heading; the empty sentence no longer repeats \"Live activity:\".\n\nThe `.fold-section` CSS is gone, since nothing else used it.\n\nChecks: build OK, e2e 49 of 49. eslint reports the same three errors on these files as on main (none new).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/corpus-open",
+            "title": "The corpus on the Overview opens as a section, in the Observatory's own look"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023165845-87a3e2"
+}

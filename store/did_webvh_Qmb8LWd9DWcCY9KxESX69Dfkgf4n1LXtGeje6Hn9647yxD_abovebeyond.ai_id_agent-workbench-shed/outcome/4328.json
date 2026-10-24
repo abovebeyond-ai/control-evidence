@@ -1,0 +1,16 @@
+{
+    "action": "02bb6c7b7f563e7b31b58f0180cb3d98",
+    "effect": {
+        "detail": {
+            "base": "a7613b142d775317dd9f9ea8ea5f6f48b4b81e34",
+            "branch": "workbench/note-tag-wording",
+            "commit": "5326a2ad0e850edcb2e78ddc3638b4df473f29a9",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4326,
+    "verdict": "ALLOW"
+}

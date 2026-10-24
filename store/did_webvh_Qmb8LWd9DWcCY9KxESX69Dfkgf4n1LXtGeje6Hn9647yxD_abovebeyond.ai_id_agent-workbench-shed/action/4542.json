@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2cfa9266d8b41909dda2d43626eac42a1b363aa7",
+            "branch": "workbench/link-to-gentells",
+            "files_sha256": "337df527c485408ee307bf9fe324e93254ae801dc62870266feaa7977aada6da",
+            "message": "Header links back to gentells.com, for guests too"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023141244-3211fb"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "11be5522ef974e1d523c2e99f2b8ebce708843c9",
+            "branch": "workbench/inspiration-site-name",
+            "files_sha256": "b83e2970cb3922983f03403f80ac0f8e702a6adf1ea12475c9e6db807f0d5f4b",
+            "message": "Inspiration check finds the publisher by its site name"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023135729-12e2a2"
+}

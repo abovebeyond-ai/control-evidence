@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cc328dffd76d1e486df73e98b8492aa9317cf6aa",
+            "branch": "workbench/queue-count-once",
+            "files_sha256": "25e439734f21464b8d915625631593f2717d20198f1ebed20a325d46e942b666",
+            "message": "Cited sources queue: count each citation once"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023082950-69494b"
+}

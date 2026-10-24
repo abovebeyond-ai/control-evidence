@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "One source is one source, for patterns and for what a trend rests on.\n\nOn 23 October 2026, 3 of the 40 newest insights in the Observatory showed five or six patterns on three to six signals. \"Teens struggle to stay with long content\" had 5 patterns on 3 signals from 2 reports. The patterns had been attached by shared words in their names, and none of their evidence was in the insight. Four of them had been minted from a single report chunk: a report signal weighs 3, which is exactly `minScore`.\n\n- `rules/pattern.json#detect` gets `minSources: 2`, distinct sources as in `trend.holds`. A single report chunk stays a concept.\n- `rules/pattern.json#prune` gets `belowSources`: a candidate under `minSources` in its recency window is archived at the next run, unless a trend rests on it.\n- `rules/trend.json#patterns`: a trend rests on a pattern only when one of its signals mentions one of the pattern's concepts. A pattern without shared evidence is a neighbour and is not counted or shown.\n- `tools/rules.mjs` gets `patternDetect`. `tools/validate-graph.mjs` refuses a `restsOnPattern` without shared evidence.\n- Conformance: four `patternDetect` vectors, plus `pattern-shared-evidence` (validates) and `pattern-no-shared-evidence` (refused).\n\nMinor version. `npm test` passes 97/97, compat included.\n\nAfter merge, tag `v0.16.0`. `v0.15.0` (#20) is not tagged yet; tag it too, on its merge commit.\n",
+            "branch": "workbench/pattern-min-sources",
+            "title": "One source is one source, for patterns and what a trend rests on (0.16.0)"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261023114510-3a2eac"
+}

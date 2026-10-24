@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d0418315d4890c4ddde3261f06e1dd38705d7da2",
+            "branch": "workbench/trend-signals-whole",
+            "files_sha256": "a3715fa379814440ab18c981737104ead29a7af0b6ab7bf526d358f48f1be932",
+            "message": "Trends go to the site with every signal, none from an inspiration-only source"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023142707-d72d29"
+}

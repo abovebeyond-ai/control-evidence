@@ -1,0 +1,16 @@
+{
+    "action": "8974d72e91d92a773e8f5100d3c5cad2",
+    "effect": {
+        "detail": {
+            "base": "4f5c92b5545b4906000eb68f2d7677060a040c29",
+            "branch": "workbench/graph-light-lines",
+            "commit": "832516a034df7510ee0f0534cceab8525f28b7e6",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4668,
+    "verdict": "ALLOW"
+}

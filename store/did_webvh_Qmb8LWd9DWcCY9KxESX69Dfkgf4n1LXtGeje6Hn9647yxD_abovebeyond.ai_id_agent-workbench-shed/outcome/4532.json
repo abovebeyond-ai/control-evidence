@@ -1,0 +1,16 @@
+{
+    "action": "7c110d1bda9a4778350558b057f85af6",
+    "effect": {
+        "detail": {
+            "base": "2cfa9266d8b41909dda2d43626eac42a1b363aa7",
+            "branch": "workbench/drop-observatory-plan",
+            "commit": "b782c5fc39f90a6113578e68a6694cfa996d3eb3",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4530,
+    "verdict": "ALLOW"
+}

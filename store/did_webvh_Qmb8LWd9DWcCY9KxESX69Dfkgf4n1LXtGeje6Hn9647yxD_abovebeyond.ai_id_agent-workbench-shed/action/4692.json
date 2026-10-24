@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c72cb738bacbcfa134a2878e0ee483fa97e3f0f3",
+            "branch": "workbench/graph-3d-fast",
+            "files_sha256": "6cf237053ff9c9367549171e609637f63b97ef6e1519ef19c243af8b85b43d3c",
+            "message": "Make the 3D network fast with every relation drawn\n\nWith every relation in the graph, 3D drew about 2,400 separate objects\n(a sphere per dot, a tube per line) and turning it stuttered; hovering\nalso rebuilt every name label. Now the library draws only the dots that\nmatter, opened projects and the lines of the dot in focus, as plain\nlines; the small relations are one point cloud and the resting lines one\nset of segments, each a single draw that moves with the simulation. That\nbrings a frame from ~2,400 draws to ~130. Hovering only recolours.\n\nFor both views: whether a dot is lit is looked up in a neighbour index\ninstead of walking every line for every dot each frame; the graph data\nis kept out of Alpine's reactivity so the simulation's moves are not\ntracked; the layout settles in fewer ticks, 3D starting from the flat\npicture's places; and the 3D code is fetched while the page is idle.\nthree is now a direct dependency, at the version 3d-force-graph uses.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023211127-91d6db"
+}

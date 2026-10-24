@@ -1,0 +1,16 @@
+{
+    "action": "35c0cc389879629f59f09992adaa41b3",
+    "effect": {
+        "detail": {
+            "base": "2cfa9266d8b41909dda2d43626eac42a1b363aa7",
+            "branch": "workbench/link-to-gentells",
+            "commit": "ac1ee32bdf2fa970071d6849373490065877a642",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4542,
+    "verdict": "ALLOW"
+}

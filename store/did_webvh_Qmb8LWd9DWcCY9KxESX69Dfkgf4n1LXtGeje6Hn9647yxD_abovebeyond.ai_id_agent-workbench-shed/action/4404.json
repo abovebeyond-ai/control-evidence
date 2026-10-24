@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e5047d6dc7b904909bdcc89ece702d5bc1b1695b",
+            "branch": "workbench/links-one-way",
+            "files_sha256": "b014a212901f6b948419eb4b0ba2395ca845ef3c99a14575d45d064b1c805c65",
+            "message": "Say what linking a frame does: cards under the article, nothing on the frame page"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261023093215-85fd3f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d916b54f455b3c451e921c1d5c9410a57c5340f7",
+            "branch": "workbench/test-accounts",
+            "files_sha256": "ca45cc69f97c4678e54240a4cfed1d1f34af28c64a0cc45d2fe27aaace27cad0",
+            "message": "Forward new test accounts from the Observatory to gentells.com"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023082006-60f4f7"
+}

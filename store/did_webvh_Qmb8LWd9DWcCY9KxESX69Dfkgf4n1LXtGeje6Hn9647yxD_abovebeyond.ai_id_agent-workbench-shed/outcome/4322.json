@@ -1,0 +1,16 @@
+{
+    "action": "681bd49099ab7aca735dff6e4e339dd9",
+    "effect": {
+        "detail": {
+            "base": "1019b96c588a7e0705c5e95727c373fb3828e8c6",
+            "branch": "workbench/social-login",
+            "commit": "0ec8b332826c1ee4ce43f4fb1aa3546f2bd64d76",
+            "files": 20,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4320,
+    "verdict": "ALLOW"
+}

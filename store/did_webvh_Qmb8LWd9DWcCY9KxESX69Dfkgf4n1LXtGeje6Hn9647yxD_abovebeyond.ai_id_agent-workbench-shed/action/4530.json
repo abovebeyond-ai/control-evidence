@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2cfa9266d8b41909dda2d43626eac42a1b363aa7",
+            "branch": "workbench/drop-observatory-plan",
+            "files_sha256": "3e61694811689e77108bbd6641261187978f2cda5a9a71f2347a4902765bc1b4",
+            "message": "Accounts page: Observatory access comes with Intelligence, no plan of its own"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023140906-03d55a"
+}

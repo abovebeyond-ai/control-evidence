@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Studio follows the new **editor** role (pipeline PR \"Add an editor role\"):\n- an editor opens every post in review or live, and every draft without an author, ready to edit;\n- someone else's draft stays closed to them, as before;\n- Delete shows only for the author, a co-author or an admin, so an editor does not see it on someone else's post (the pipeline refuses it too);\n- the read-only line now says \"Only they, an editor or an admin changes it\".\n\nMerge after the pipeline PR. 49/49, build clean.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/editor-role",
+            "title": "An editor edits the team's posts; Delete stays with author and admin"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261024070401-7a99ae"
+}

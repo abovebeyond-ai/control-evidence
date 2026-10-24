@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e46d860fb49928d87e06c7e17ae32836a3490df2",
+            "branch": "workbench/csrf-accounts-create",
+            "files_sha256": "f9adfcc0e972ef53c691042d205297e119b57693a6b9f20e7453e045741088ec",
+            "message": "Exempt the bare internal/accounts path from CSRF"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023140340-ad6dff"
+}

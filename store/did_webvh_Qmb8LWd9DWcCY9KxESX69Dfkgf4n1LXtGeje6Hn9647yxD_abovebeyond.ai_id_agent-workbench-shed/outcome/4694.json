@@ -1,0 +1,16 @@
+{
+    "action": "938554848620c204d49517940229617a",
+    "effect": {
+        "detail": {
+            "base": "c72cb738bacbcfa134a2878e0ee483fa97e3f0f3",
+            "branch": "workbench/graph-3d-fast",
+            "commit": "7d07a320b1c28289f5b5334846e54f6082b1f6ca",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4692,
+    "verdict": "ALLOW"
+}

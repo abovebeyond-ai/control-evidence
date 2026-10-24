@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eaa6211d19c304b6bd15b647ccc1f72b1f1c44d4",
+            "branch": "workbench/graph-shows-all",
+            "files_sha256": "2a6eb8d0609f9e7e10ece605dc1dd18baad26c6d227639446d5386ba90500f68",
+            "message": "Draw every relation on Netwerk, sized and coloured by importance\n\nThe graph drew the 60 relations with the most projects and hid the rest\nbehind a \"Hoeveel\" picker. It now draws every relation in the period. A\ndot grows with its projects, half again for high importance and a quarter\nless for low, and the new default colouring is by importance (red high,\ngreen medium, light green low, grey not yet set); colour by role or group\nstays one click away. Shared projects are counted per project instead of\nper pair of relations, so all of them draw quickly.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023193955-2e98f7"
+}

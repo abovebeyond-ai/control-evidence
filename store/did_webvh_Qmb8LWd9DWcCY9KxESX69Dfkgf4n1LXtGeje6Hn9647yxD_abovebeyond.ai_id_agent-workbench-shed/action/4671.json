@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "After #153 the lines between relations were almost invisible until a dot was pointed at, so the picture no longer showed who works with whom. This follows the approach of the Gentells observatory 3D view: light lines everywhere, the focused node's own lines strong in its colour.\n\n- At rest: every shared-project line is drawn in the colour of the busier of its two relations, at 13% (5% when a small relation is involved). Red lines therefore show what hangs together with relations only Geert carries.\n- Pointing at a relation: its own lines at 75% in its colour and thicker by shared projects; other lines fade to almost nothing, other dots dim, neighbours get their names.\n- Pointing at a line: it lights up and a tooltip names both relations and the number of shared projects.\n- 3D: same colours; faint lines become pale grey there, since 3D draws lines with one opacity.\n- The note under the graph says what pointing does.\n\nChecked in the browser on the 733-relation demo copy: rest state, hover on Gemeente Zulte, the 3D switch (no console errors). 339 PHP tests and the network-model JS tests pass, pint clean.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/graph-light-lines",
+            "title": "Show every line on Netwerk, lightly, and its own lines strongly on hover"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023201639-4198d8"
+}

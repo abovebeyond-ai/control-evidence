@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cdb172c44b64efb711f8bb64d2a0b9ce05071d5e",
+            "branch": "workbench/intelligence-always-observatory",
+            "files_sha256": "e630a554b3736a73d9f45f7fa45ecc34ec532b821336905b6924b51c49de031f",
+            "message": "Intelligence opens the Observatory whatever offer is saved"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023144545-0c08e4"
+}

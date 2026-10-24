@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Four changes to the article section that hoet-sanity #12 added.\n\n## Journal becomes Blog\n\nThe Studio shows *Blog* (with *Artikels*, *Categorie\u00ebn*, *Tags* under it) where it showed *Journal*. The *Voorbeeld* action opens `/{lang}/blog/preview/{id}`. The type names (`journalPost`, `journalCategory`, `journalTag`) stay as they are: the site mirrors documents by type, and renaming types would mean migrating documents for a word nobody sees. `docs/content-architectuur.md` in hoet-eyewear still says `/journal/...` for the site routes; those follow when phase 2 is built.\n\n## No author\n\nArticles carry no byline of a person: the brand is the author. The `author` field and document type are removed, as is the *Auteurs* list under *Gedeeld* and the author condition in the live config test. On the site the article's author becomes the brand (in JSON-LD an `Organization`, the same `@id` as the publisher) instead of a `Person`.\n\n## Image and video blocks up front\n\nThe body already had image, gallery, own video (mp4) and YouTube/Vimeo blocks, but they sat as plain entries in the editor's insert menu. Each block now has an icon, and the insert menu groups them: *Beeld en video* (image, gallery, video, embed) first, *Overige* (quote, divider, frame card, button) after. A test checks that every block except text sits in exactly one group, so a new block cannot be left out of the menu.\n\n## Links to frames and collections are weak\n\nThe *Monturen* and *Collecties* links on an article were strong references: as long as a published article pointed at a frame, Sanity refused to unpublish or delete that frame. They are now weak, like the links in the text. The site already treats a link that no longer resolves, or a frame that is not active, as absent.\n\n## Checks\n\n`tsc --noEmit`, `sanity schema validate` (0 errors, 0 warnings), `sanity build`, offline vitest 62/62. The live `config.test.ts` was not run: there is no Sanity read token on the workbench. After merge: `npm run deploy` for the Studio.\n",
+            "branch": "workbench/journal-to-blog",
+            "title": "Call the journal Blog, drop the author, put image and video blocks up front"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261023090824-7ddb9a"
+}

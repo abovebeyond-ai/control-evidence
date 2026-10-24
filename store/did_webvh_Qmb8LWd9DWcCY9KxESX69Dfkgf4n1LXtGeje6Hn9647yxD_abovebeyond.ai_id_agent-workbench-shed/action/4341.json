@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bf6d0d3fdf66da56ef8351dda27aa343460269ae",
+            "branch": "workbench/several-successors",
+            "files_sha256": "73063414d12431778d67fe8e39125fdb66d58c3827442552e4a4a4ed3183a0f0",
+            "message": "Several people can take a note over\n\n\"Wie neemt het over\" was one free text field. A note can be passed on to\nmore than one person, so the form now offers the colleagues from the\nMedewerkers group to tick, one or more, and a field for anyone else by\nname or role. They are kept on the note as one line of names, so the\nlist on Bespreken, its filter, the search and the export read them as\nbefore; no migration.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023081055-cd7151"
+}

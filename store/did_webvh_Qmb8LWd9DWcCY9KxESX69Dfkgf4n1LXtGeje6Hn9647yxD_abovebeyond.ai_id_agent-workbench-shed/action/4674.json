@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4f5c92b5545b4906000eb68f2d7677060a040c29",
+            "branch": "workbench/share-links-page",
+            "files_sha256": "6ae1e710a761bdbd014a6632b9a2ea53c6a8888295ecee5ed191f7a1ec861b84",
+            "message": "Give shared links their own page under the account menu\n\nMaking and revoking links sat in a fold on the Bouwsoft page because\nthat page was once the only one a link opened, and its text still said\nso. A link now opens Bespreken, Netwerk, Bouwsoft and Medewerkers, so the\nform and the list of active links move to their own page, Delen met een\nlink (/delen), in the account menu for everybody signed in, and the text\nsays what a link opens and what it does not. Links already handed out\nkeep working; somebody on a link cannot open the page.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023201840-57112f"
+}

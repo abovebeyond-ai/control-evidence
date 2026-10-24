@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5f4503295cb79e02ddb60c39eae9f5f102f938b5",
+            "branch": "workbench/cited-sources-queue",
+            "files_sha256": "0a4d27afca41a28c10956483e91da5cc8940df5fac4ceec4c01179aa7bc9551f",
+            "message": "Sources: review the publishers authors cited that are not followed yet"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023081743-bcc97d"
+}

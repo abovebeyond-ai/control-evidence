@@ -1,0 +1,16 @@
+{
+    "action": "372623454a84a0df2b42852d5187271b",
+    "effect": {
+        "detail": {
+            "base": "cdb172c44b64efb711f8bb64d2a0b9ce05071d5e",
+            "branch": "workbench/intelligence-always-observatory",
+            "commit": "7343083f7ce51826dc95017b8d430202dda12bc9",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4578,
+    "verdict": "ALLOW"
+}

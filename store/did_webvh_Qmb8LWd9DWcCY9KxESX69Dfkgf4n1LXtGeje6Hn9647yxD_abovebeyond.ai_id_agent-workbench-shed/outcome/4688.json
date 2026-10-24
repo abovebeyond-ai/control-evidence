@@ -1,0 +1,16 @@
+{
+    "action": "55b75dc65df99cd9b6791a3648969718",
+    "effect": {
+        "detail": {
+            "base": "fc792c006a06658afbd543745224a03c3de4e8f3",
+            "branch": "workbench/meta-pixel-consent",
+            "commit": "bdc56faa5ddbe0daf8ffdb8bbec20e615643dee6",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4686,
+    "verdict": "ALLOW"
+}

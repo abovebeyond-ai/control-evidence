@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "13e893214dc7dd8ec2af55a1d3afd8b1d346fcc0",
+            "branch": "workbench/portrait-focus",
+            "files_sha256": "59117904bc5f8764c03769cdb70f271eb7faa52552d2e3d4958c0084df49554a",
+            "message": "Cut a portrait frame photo to the box around its hotspot"
+        },
+        "resource": "Hoet-design/cabrio-eyewear"
+    },
+    "run": "workbench-20261023092831-fe70ae"
+}

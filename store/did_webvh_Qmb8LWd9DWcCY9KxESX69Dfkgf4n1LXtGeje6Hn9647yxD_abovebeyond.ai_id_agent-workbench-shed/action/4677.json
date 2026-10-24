@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"Delen met een link (0 actief)\" sat in a fold on the Bouwsoft page, because that page was once the only one a shared link opened. Its text still said \"Met de link zie je Bouwsoft en Netwerk\", while a link now opens Bespreken, Netwerk, Bouwsoft and Medewerkers and lands on Bespreken.\n\n- New page `Delen met een link` at `/delen` (`ShareLinks` component), linked from the account menu for everybody signed in, above Gebruikers.\n- Text: \"Met de link opent iemand zonder account Bespreken, Netwerk, Bouwsoft en Medewerkers, en kan er ook noteren. Niet het dagrapport, de fiches of de ploeg.\"\n- Same form, one-time link display and active-link list as before; `createLink`/`revokeLink` moved out of `Explore`.\n- The notice a link visitor sees on Bouwsoft now names the same four pages.\n- Somebody on a link gets 403 on `/delen`; existing links keep working.\n\nTests: 339 pass, pint clean; ExploreLinkTest covers the new page, the menu entry, the form gone from Bouwsoft, and the 403 for a link visitor. Checked in the browser: menu entry, making a link.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/share-links-page",
+            "title": "Give shared links their own page under the account menu"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023201840-57112f"
+}

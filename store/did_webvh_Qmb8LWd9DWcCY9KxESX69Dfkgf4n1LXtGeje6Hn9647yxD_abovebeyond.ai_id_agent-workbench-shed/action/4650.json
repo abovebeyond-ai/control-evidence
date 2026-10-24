@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eaa6211d19c304b6bd15b647ccc1f72b1f1c44d4",
+            "branch": "workbench/historiek-to-bouwsoft",
+            "files_sha256": "fd60541e05945a8530dcecbe524279fc07c021cc26ff61dd3e3e300703ce4e9a",
+            "message": "Call the Historiek page Bouwsoft\n\nThe page is where the office looks through the Bouwsoft data and the\nworksheets per project, person, machine and material; \"Historiek\" read\nlike a timeline. The menu item, page title, subtitle, shared-link copy\nand the \"Openen in\" links now say Bouwsoft. The /historiek URLs stay, so\nexisting and shared links keep working.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023193339-d42013"
+}

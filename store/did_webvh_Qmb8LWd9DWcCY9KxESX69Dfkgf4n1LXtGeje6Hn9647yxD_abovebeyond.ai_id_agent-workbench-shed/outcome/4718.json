@@ -1,0 +1,16 @@
+{
+    "action": "c4350c5deb0d701f1090fafe3cb0b5c9",
+    "effect": {
+        "detail": {
+            "base": "204fee6416cc01db8606551dec42cc2f65641688",
+            "branch": "workbench/consent-banner-copy",
+            "commit": "67be8b1f00a65d972b4c5047ffcfa9b2bcb1a35b",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4716,
+    "verdict": "ALLOW"
+}

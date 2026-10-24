@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cd313887a8029176db273ca7c42fe657e1531d18",
+            "branch": "workbench/corpus-open",
+            "files_sha256": "179599ffc3fca4978b1d21b38fa212e5a15d2282a0c25bf30b55eeb85df1a780",
+            "message": "Signals under a trend as open rows, like the trend list"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023163855-e46ad9"
+}

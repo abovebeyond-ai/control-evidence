@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Companion to gentells-site #228 and gentells-pipeline #377, which remove the unlisted Observatory plan: Intelligence opens the Observatory to read.\n\n- \"Give Observatory access\" now moves the account to Intelligence. The button says so, and so does the notice after the click. Before, it moved the account to the Observatory plan.\n- \"Take it away (back to Explore)\" goes. Every account that reads the Observatory now does so through its paid plan, and the row says \"It comes with the {plan} plan\". The plan selector above it stays the way to change a plan.\n- The hint names only Intelligence. When the site does not send `observatory`, the fallback check is now `plan === 'intelligence'`.\n- e2e: both Accounts tests use Intelligence. Full e2e suite 49/49, build passes.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/drop-observatory-plan",
+            "title": "Accounts page: Observatory access comes with Intelligence"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023140906-03d55a"
+}

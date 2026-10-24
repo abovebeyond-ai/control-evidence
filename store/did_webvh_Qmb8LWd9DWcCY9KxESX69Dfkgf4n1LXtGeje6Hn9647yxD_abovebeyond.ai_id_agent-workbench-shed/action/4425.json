@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A switch *Nieuws tonen* in the site settings (Hoet only), off by default.\n\nOn, the site shows *Nieuws* in the main menu and the footer, and the three newest articles on the home above the production film. Off, articles still live at their own address (for a direct link or a newsletter), but nothing on the site points to them yet. This lets the blog fill up with a handful of articles before it goes in the menu. The site also hides *Nieuws* while there is no listed article, switch or not.\n\nRead by hoet-eyewear (`App\\Support\\Journal::enabled`), proposed alongside. Either can merge first: without the field the site treats it as off.\n\n`tsc --noEmit`, `sanity schema validate` (0 errors, 0 warnings), offline vitest 62/62. After merge: `npm run deploy`.\n",
+            "branch": "workbench/news-toggle",
+            "title": "Add a switch for Nieuws on the site"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261023094719-fed1c0"
+}

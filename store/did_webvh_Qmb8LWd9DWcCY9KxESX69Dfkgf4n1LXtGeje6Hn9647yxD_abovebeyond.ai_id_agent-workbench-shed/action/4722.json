@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "170f4be78faa606c7b80152970d87af0a3e654bc",
+            "branch": "workbench/role-select",
+            "files_sha256": "f54b08015c5fb177c5859a6fdfce887338be6d674bcee8c0299cbebc4c6373c6",
+            "message": "Accounts: the role select shows the role, what it may do stands beside it"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261024072635-2c83ee"
+}

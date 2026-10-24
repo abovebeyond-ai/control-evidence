@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e88fff88dbbe82a8b44f1446a5a22c5d9fd4aab9",
+            "branch": "workbench/blog-decisions",
+            "files_sha256": "43312c1576db38fc394a5fef43e4701f1cc3da935dd67e83e0acdfe111633554",
+            "message": "Record the blog decisions in the content architecture"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261023093227-3430f0"
+}

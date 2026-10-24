@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4d0eac656cab8f1db1e4d1dc615f5ba934a741db",
+            "branch": "workbench/journal-to-blog",
+            "files_sha256": "b815d2830de66650aade04531adf9664fdaae7e2730654c94bf898dc0daaaeca",
+            "message": "Call the journal Blog in the Studio, drop the author, group image and video blocks"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261023090824-7ddb9a"
+}

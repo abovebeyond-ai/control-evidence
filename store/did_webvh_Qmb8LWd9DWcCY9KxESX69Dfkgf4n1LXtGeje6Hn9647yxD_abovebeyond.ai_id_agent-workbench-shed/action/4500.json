@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "24be879bcf60878be369f787b53fbaf971cafed2",
+            "branch": "workbench/account-delete-whole",
+            "files_sha256": "0ad68d081ac1d5c92999787042bb95d6be38cbb5a31652ed20ddbc9dd85b8347",
+            "message": "Deleting an account deletes the person in the Observatory too"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023140130-8724cd"
+}

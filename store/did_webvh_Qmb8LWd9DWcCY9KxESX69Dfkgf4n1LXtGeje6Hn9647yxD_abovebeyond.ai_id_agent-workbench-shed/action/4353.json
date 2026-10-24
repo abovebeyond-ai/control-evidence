@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "When a post's sources are cited under their sentence (`bin/cite-sources.mjs`, or \"Add a link\" in the Studio), the publisher itself was never looked at again. A publisher the pipeline does not follow stayed a one-off citation, and nobody decided whether it should be read every day. Trendwolves asked for these publishers to be checked against what is already followed, with the new ones put in a review queue named \"New Sources G.\".\n\nWhat changes:\n\n- `packages/core/cited-sources.mjs`: `planCitedSources` (pure) and `queueCitedSources`. A cited page's site is matched against the sources table by site, in any state, and by exact publisher name. A known site is left alone, and a rejected site counts as known, so a no stays a no. A new site enters as `proposed`, inactive, type `web-browse`, with `listing = {queue: \"New Sources G.\", site, publisher, cited, pieces}`. A later citation of a site already waiting adds to its count. Hosts that carry other people's pages (DOI resolvers, app stores, archives, social networks) are skipped.\n- `bin/cite-sources.mjs` queues the publishers in the same transaction as the citations and reports how many it queued; the dry run reports it without writing. The undo leaves the queue alone, because a proposal reads nothing until a person says yes.\n- `packages/core/source-by-link.mjs` queues the publisher of a page added by link.\n- `bin/queue-cited-sources.mjs [--apply]` fills the queue once from the citations made before this change: every page under \"Cited by the author\" that a post cites.\n\nApproving a row on the Sources page sets `active`, which already moves a proposed source to `trial` (`store.updateRecord`); admission stays a person's move under the Standard. The Sources page part is a separate PR in gentells-dashboard.\n\nOn the box after merge: `node bin/queue-cited-sources.mjs` (dry), then `--apply`. On 23 October the 2026-10-23 check alone named 73 sites, 17 of them already in the sources table.\n\nTests: `test/cited-sources.test.mjs` (3: queue once and count, skip hosts, rejected is never re-queued) and two assertions in `test/cite-sources.test.mjs` (the dry run does not write, the run queues the publisher). Full suite 1302/1308; the 6 failures are `report-render`, which needs `pdftoppm`, not installed on the workbench. Typecheck clean.\n\nCloses #364\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/cited-sources-queue",
+            "title": "Put cited publishers the pipeline does not follow in a review queue"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023081716-1a343e"
+}

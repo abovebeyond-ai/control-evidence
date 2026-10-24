@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A test account made on the Observatory's Accounts page (#224) gets a set-password link. While `PRELAUNCH` is on, that link opened the holding page for anyone without a preview link, so the invited person never reached the form. The only way round it was a token in `PRELAUNCH_TOKENS` and a `config:cache` on the server for every tester.\n\nWith this change an account works as a pass of its own:\n\n- `login`, `forgot-password` and `reset-password` (the form and the post) are open behind the cover;\n- a signed-in account that is not blocked passes the cover;\n- registering stays closed, so only accounts the team made, or someone with a preview link made, get in. A blocked account still sees the holding page.\n\nThe set-password mail for an account whose plan opens the Observatory now also says where to go: observatory.gentells.com, then \"Log in with gentells.com\".\n\nThat makes the whole flow happen in the browser: Accounts page, Add a test account on the Observatory plan, the person sets a password from the mail and signs in to the Observatory.\n\nTests: `PreLaunchTest` (3 new) and `InternalAccountsTest` (1 new). Full suite 471/472; `BuildStampTest` fails in a worktree, as on main.\n",
+            "branch": "workbench/prelaunch-lets-accounts-in",
+            "title": "Let an account through the prelaunch cover"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023093535-6ddef9"
+}

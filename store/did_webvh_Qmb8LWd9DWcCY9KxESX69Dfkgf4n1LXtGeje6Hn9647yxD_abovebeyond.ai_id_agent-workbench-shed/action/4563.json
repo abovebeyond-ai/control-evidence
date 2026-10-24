@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The three steps on Bespreken were stacked in one block: every relation first, then the projects and the people far below it.\n\n- Te bespreken now has a tab per step: Relaties, Projecten, Mensen, each with \"x van y besproken\" under its name. Tabs are text with an underline on the open one.\n- The page opens on the first step with something left to do; the open tab is kept in the link as `?stap=relaties|projecten|mensen`.\n- \"Nog te doen / Alles\" and the overall progress stay above the tabs.\n- Saving the last open item of a tab opens the next item in the following tab and switches to it.\n- The list of everything told, with its filters, stays below.\n\nTests: 338 pass, pint clean. HandoverAgendaTest covers opening a tab and moving on to the next one; NetworkTest checks the tabs render. Checked in the browser at 1280 and 390 wide.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/bespreken-tabs",
+            "title": "Show the Bespreken steps as tabs"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023142559-694018"
+}

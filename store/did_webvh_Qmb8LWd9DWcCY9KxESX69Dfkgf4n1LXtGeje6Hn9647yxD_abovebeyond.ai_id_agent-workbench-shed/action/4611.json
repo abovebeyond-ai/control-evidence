@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Since #378 a trend goes to gentells.com with every signal, but each one still came as the six-card teaser shaped it: the note cut at 90 characters mid-sentence, the source as its feed title (\"All Content from Business Insider\", a report's file name) and no day. Under a trend with fifty signals that makes the evidence hard to read and impossible to date.\n\n`trendSignalsForSite` now reads its own rows instead of `getInsightSignalSample`:\n\n- `label`: the note whole, capped at 240 characters only so a pasted article does not ride along\n- `source`: `readerSourceName`, which drops syndication wrappers (`All Content from`, `Latest stories from`, `- RSS Feed`) and file-name residue\n- `date`: the published day, or the day it was read when the source gave none\n- `platform`: so the site can mark a report chunk, which has no address to follow\n\nOrder and the inspiration-only filter are unchanged. The site groups by source and shows the day (gentells-site PR to follow); it reads the old shape too, so the order of merging does not matter.\n\nTests: `trend-signals-projection` 3 of 3; full suite 1339 of 1345, the 6 `report-render` failures need pdftoppm and fail on main too.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/trend-evidence",
+            "title": "Trend signals go to the site whole: full note, reader source name, day, platform"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023174051-664e75"
+}

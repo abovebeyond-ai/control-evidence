@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e2df4cda34e1b6e8ffccf7ab867c3b0debae1ce3",
+            "branch": "workbench/news-toggle",
+            "files_sha256": "6c15d3cb144cbfb9969ee9ca386288ad5160bb6b05a8751481b8d3317e9376a5",
+            "message": "Add a switch for Nieuws on the site"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261023094719-fed1c0"
+}

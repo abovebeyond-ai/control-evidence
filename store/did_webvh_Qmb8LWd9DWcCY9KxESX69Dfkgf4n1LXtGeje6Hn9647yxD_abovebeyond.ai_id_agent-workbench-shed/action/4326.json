@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a7613b142d775317dd9f9ea8ea5f6f48b4b81e34",
+            "branch": "workbench/note-tag-wording",
+            "files_sha256": "b6efb60695030fc80a35e3fbcea825024ce2f2114e74263a1911380462121ca8",
+            "message": "Say what the note labels mean in the context form\n\n\"Is het ook\" followed by two toggles named Risico and Gewoonte of\nafspraak did not say what ticking them meant. The form now has two\ncheckboxes with a plain sentence each: \"Dit kan mislopen als niemand\nhet weet\" and \"Dit is een vaste afspraak of gewoonte\". The short names\nstay on the notes, the filters on Bespreken and the export.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023080139-020a1d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "acc64c3b809fe4a7419a5478f777028d66cf6f7d",
+            "branch": "workbench/competitors",
+            "files_sha256": "dded876193826cd12c6a22806b7e0a67d6681554b605d89f76fb0ca761095e8e",
+            "message": "Pin Standard v0.17.0; the gate holds a text that names a competitor"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023185154-a00839"
+}

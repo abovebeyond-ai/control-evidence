@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4f5c92b5545b4906000eb68f2d7677060a040c29",
+            "branch": "workbench/graph-light-lines",
+            "files_sha256": "d3c7fd45374b978c25e3a9043d1a195721f2acf22d19af9b5e1d8912a6842c2d",
+            "message": "Show every line on Netwerk, lightly, and its own lines strongly on hover\n\nLines between relations were hidden until a dot was pointed at, so the\npicture no longer showed who works with whom. Every line is now drawn\nlightly in the colour of the busier of its two relations (the small ones'\nlines fainter still). Pointing at a relation draws its lines strongly in\nits own colour and fades the rest; pointing at a line shows the two\nrelations and how many projects they share. 3D follows the same colours.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023201639-4198d8"
+}

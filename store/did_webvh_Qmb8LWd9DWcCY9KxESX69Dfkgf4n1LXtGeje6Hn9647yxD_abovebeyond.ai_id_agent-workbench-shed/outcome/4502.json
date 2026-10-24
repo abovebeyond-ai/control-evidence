@@ -1,0 +1,16 @@
+{
+    "action": "de45c17895271fe4909382abb95ced67",
+    "effect": {
+        "detail": {
+            "base": "24be879bcf60878be369f787b53fbaf971cafed2",
+            "branch": "workbench/account-delete-whole",
+            "commit": "ebc5bae21dd94b6155179308abaf4a53bdbd3cd1",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4500,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "32911ba5d42b1a77121257acc7e9793d2635508f",
+            "branch": "workbench/pattern-evidence-ids",
+            "files_sha256": "6b002241723432e096f6f1bbe8b2c8f0028fbc218533c97c1d18e207a7dd23dc",
+            "message": "Pattern evidence reads bare concept slugs and names as the concept they spell"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023133427-364fa2"
+}

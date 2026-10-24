@@ -1,0 +1,16 @@
+{
+    "action": "1db232d5e3010e43239c6498d87de3e7",
+    "effect": {
+        "detail": {
+            "base": "32911ba5d42b1a77121257acc7e9793d2635508f",
+            "branch": "workbench/pattern-evidence-ids",
+            "commit": "1f3b7c2879d81f929e0c8a665740ffd0f68154ac",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4482,
+    "verdict": "ALLOW"
+}

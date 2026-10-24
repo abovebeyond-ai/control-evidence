@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Intelligence opens the Observatory to read (site and pipeline PRs of the same name). The Accounts page now reads `observatory` from the site's account row instead of comparing the plan to `observatory`.\n\n- An Intelligence client shows as reading the Observatory, with \"It comes with the Intelligence plan.\" in place of \"Take it away (back to Explore)\". That link moved any plan to Explore and could have downgraded a paying client.\n- Before the site sends the field, the page falls back to the plan name, as before.\n\ne2e: new test for the Intelligence client; full suite 45/45; build passes.\n",
+            "branch": "workbench/intelligence-reads-observatory",
+            "title": "Accounts: an Intelligence client reads the Observatory through the plan"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023113111-e2a8cf"
+}

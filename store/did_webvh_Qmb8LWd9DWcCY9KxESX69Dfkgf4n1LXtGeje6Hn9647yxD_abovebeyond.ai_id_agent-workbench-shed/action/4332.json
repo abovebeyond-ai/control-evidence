@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:32",
+            "note": "9 drafts imported; check done; citation plan (68) runs after publishing; relink plan 4 links. Waiting: go for converter PR + #364, which report is online.",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261023080220-e92897"
+}

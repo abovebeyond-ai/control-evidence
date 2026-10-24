@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The cookie banner from #39 named Meta, the pixel and the advertising purpose in full. That detail already lives in section 4 of the privacy page, so the banner now keeps one sentence on the purpose and links there.\n\nBefore: \"StockCars gebruikt de pixel van Meta (Facebook) om te meten welke advertenties bezoekers naar de site brengen. Die cookies komen er alleen als u akkoord gaat. Meer daarover leest u bij gegevensbescherming.\"\n\nAfter: \"StockCars gebruikt cookies om te meten hoe bezoekers de site vinden. Meer daarover leest u in de privacyverklaring.\"\n\nNothing else changes: \"Akkoord\" and \"Weigeren\" stay equal, and nothing loads before a choice.\n\nChecked on a production build at desktop and phone width.\n",
+            "branch": "workbench/consent-banner-copy",
+            "title": "Shorten the cookie banner text"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261024072044-09d987"
+}

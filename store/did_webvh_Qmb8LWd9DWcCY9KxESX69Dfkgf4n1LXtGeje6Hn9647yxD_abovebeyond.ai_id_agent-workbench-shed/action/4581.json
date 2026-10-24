@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #369.\n\n#369 added `observatory` to Intelligence's default abilities. On the box, though, the offer saved on Settings > Plans dates from before that change, and a saved plan's `abilities` replace the defaults completely. So live, Intelligence still did not open the Observatory:\n- gentells.com did not show the new Observatory link (site #229);\n- an Intelligence account was refused at the Observatory's login with \"This account has no access to the Observatory\".\n\nChecked on the box: `getPlans().plans.intelligence.abilities` is `latest, archive, sources, graph, reports, context, team`.\n\nChange: `normalize` now always adds `observatory` to Intelligence, the same way it already forces `latest` onto every plan. The projection sends the corrected offer at the next sync, and the site follows it.\n\nTests: a saved Intelligence without `observatory` still opens it, and Decode still does not. That test fails without the fix. Full suite 1337/1343; the 6 failures are the known report-render tests that need pdftoppm.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/intelligence-always-observatory",
+            "title": "Intelligence opens the Observatory whatever offer is saved"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023144545-0c08e4"
+}

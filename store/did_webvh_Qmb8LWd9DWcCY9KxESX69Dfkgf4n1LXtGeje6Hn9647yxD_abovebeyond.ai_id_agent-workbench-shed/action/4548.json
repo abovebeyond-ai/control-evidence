@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "04f2b91691ad4eea29555694e4ebc0140dfb32db",
+            "branch": "workbench/no-owner-chips",
+            "files_sha256": "8157289bababbbededaf1d72874a2bc7def047f27fc807c26f95d67e993708f9",
+            "message": "Leave the owner out of who carries or takes over\n\nThe owner hands the knowledge over, so offering them as a co-carrier or as\nthe one who takes it over makes no sense. The colleague chips in the panel\nnow skip whoever matches the configured owner name (the name alone or\nfollowed by a surname). The owner stays in the Medewerkers group and in\nthe CSV.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023141749-946b1a"
+}

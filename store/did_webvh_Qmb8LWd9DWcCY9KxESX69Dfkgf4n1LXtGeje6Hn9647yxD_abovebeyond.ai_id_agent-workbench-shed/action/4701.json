@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A third team role, **editor**, between member and admin.\n\nUntil now a post could be changed only by its author, someone it was shared with, or an admin. Published posts belong to their author or to no one (imported posts), so the person who looks after the published posts had to be an admin, which also gives settings and people.\n\n**What an editor may do** (`mayEdit` in `packages/core/articles-store.mjs`):\n- change every piece in review or live, whoever owns it;\n- change drafts without an author (imported pieces), which were already the team's;\n- not change someone else's draft. Drafts stay private as `visibleTo` keeps them, unless the author shares one.\n\n**Delete** gets its own check, `mayDelete`. An editor can take a post offline, but deleting someone else's post stays with its author, a co-author or an admin. For every other role nothing changes.\n\n**Roles:** `EDITOR_ROLE` and `TEAM_ROLES` now live in `users-store.mjs`. The role change (`PATCH /auth/users/:id`), invitations and sign-in through gentells.com all accept editor. An unknown role on an invitation still becomes client.\n\nTests: editor reach and delete rules in `edit-rights`, the role change in `team-management`, an editor invitation in `auth-invite`. The shared-drafts test used `editor` as a stand-in for any member and now says `client`. Suite 1353/1359 (the 6 known pdftoppm tests), tsc clean.\n\nMerge before dashboard and Studio: they send and read the new role.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/editor-role",
+            "title": "An editor role: edits the team's posts, not someone else's drafts"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261024070321-4709b8"
+}

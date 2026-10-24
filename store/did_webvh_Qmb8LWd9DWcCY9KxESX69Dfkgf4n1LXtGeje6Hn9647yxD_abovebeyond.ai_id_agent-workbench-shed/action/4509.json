@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On the Observatory's Accounts page, \"Make the account\" fails with \"Not made: The server answered 419\".\n\nThe pipeline posts to `POST /internal/accounts` (added in #224). The CSRF exemption in `bootstrap/app.php` lists `internal/accounts/*`, and that pattern does not match the bare path, so Laravel refuses the signed request as a CSRF failure. Updating a plan (`/internal/accounts/{user}`) and deleting (`/internal/accounts/{user}/delete`) both match the wildcard, which is why they work.\n\n- Adds `internal/accounts` to the exemption list. The route stays protected by the HMAC signature and the five-minute window, like the others.\n- Laravel skips CSRF checks while tests run, so the feature tests could not catch this. A new case in `WebhookCsrfTest` checks every accounts path the pipeline posts to against the exemption list. It fails without the fix.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/csrf-accounts-create",
+            "title": "Making a test account no longer answers 419"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023140340-ad6dff"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cd313887a8029176db273ca7c42fe657e1531d18",
+            "branch": "workbench/trend-evidence",
+            "files_sha256": "3193aa6dfac463c46c13aa09b8f9ce53aa79bc1ed209aa9fe1f005dee2934dec",
+            "message": "Evidence under a trend grouped by source, with the day of each signal"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023174112-7e0acc"
+}

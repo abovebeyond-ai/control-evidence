@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #371.\n\nAfter `bin/insight-pattern-evidence.mjs` took the word-matched patterns off live insights (run `pattern-evidence-1`, 143 insights), 20 live insights rested on no pattern. An example is \"Chinese Students Share Exam Stress as Teens Rally Around Fandoms\": 3 signals, 0 concepts, 0 patterns.\n\nThat is three signals no recurring concept ties together, and the signal path of `suggest.mjs` still wrote such clusters.\n\n- **`suggest.mjs`:** a cluster with no pattern sharing its evidence is dropped before the write call, which also saves the model call. The write step skips an insight whose pattern list ends up empty after the evidence filter, for a model that names only patterns of its own. The pattern path already skipped this case.\n- **`bin/lapse-patternless-insights.mjs`:** for the live insights with an empty pattern list, drafts go to `lapsed`. That is the state the daily life cycle gives an untouched draft: off the live stock, history kept, revived when evidence folds in. Reviewed or published insights, showcased ones and insights a post cites are listed and left for an editor. Nothing is written without `--apply --run=`; `--undo=<run>` restores each status from `insight_patternless_undo`.\n\nTests: `test/patternless-insights.test.mjs`. Full suite 1330/1336; the 6 failures are the known report-render tests that need pdftoppm.\n\nAfter deploy, on the box: `node bin/lapse-patternless-insights.mjs` (dry run), then `--apply --run=patternless-1`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/insight-needs-pattern",
+            "title": "An insight needs at least one pattern that shares its evidence"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023140430-0d7461"
+}

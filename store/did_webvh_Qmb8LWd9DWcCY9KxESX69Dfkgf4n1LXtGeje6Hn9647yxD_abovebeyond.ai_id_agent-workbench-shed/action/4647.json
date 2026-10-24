@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Netwerk subtitle read \"Voor wie en met wie GLK werkt, uit Bouwsoft.\" The page is where what was entered on Bespreken is drawn as a network, so it now reads:\n\n\"Wat in Bespreken ingevoerd is, als netwerk getekend. Bouwsoft bijgewerkt 23 okt. 05:50.\"\n\n\"Bespreken\" links to that page. Copy only; 338 tests pass, pint clean.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/network-subtitle",
+            "title": "Say on Netwerk that it draws what was told in Bespreken"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023192813-85f5ce"
+}

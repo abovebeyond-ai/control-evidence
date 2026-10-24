@@ -1,0 +1,16 @@
+{
+    "action": "6c8896cd0dcff5ea332c9396a7bda59c",
+    "effect": {
+        "detail": {
+            "base": "de49bb295c86e16fce7d9161417bc69e55e9af6a",
+            "branch": "workbench/corpus-open",
+            "commit": "2bfe5a3efa45b8fdad5c675d1713bd65227ebb6d",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4596,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "c716e2f43b297a928d814771eb1bd0eb",
+    "effect": {
+        "detail": {
+            "base": "ee121aa24b2fb180f31576c3e5e1db5f2d5653e6",
+            "branch": "workbench/cited-sources-queue",
+            "commit": "0681b4a582ec3a3eab7c61a0437cefc990c493d6",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4350,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "204fee6416cc01db8606551dec42cc2f65641688",
+            "branch": "workbench/consent-banner-copy",
+            "files_sha256": "0ddcdc102e5e9b8842975b5d539037be08e40bfe56e3a1accfb5599570177f92",
+            "message": "Shorten the cookie banner text, leave the Meta details to the privacy page"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261024072044-09d987"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1392f4197f4f47d41d95a7fe9ea19a4e346bafd1",
+            "branch": "workbench/standard-0.17.0",
+            "files_sha256": "475c1fa97a5c3c7e5f614aabe61f9a084cb797efa2d65d851d5ae1929be98922",
+            "message": "Pin Standard v0.17.0: the competitor list comes from the Standard"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023184754-03d700"
+}

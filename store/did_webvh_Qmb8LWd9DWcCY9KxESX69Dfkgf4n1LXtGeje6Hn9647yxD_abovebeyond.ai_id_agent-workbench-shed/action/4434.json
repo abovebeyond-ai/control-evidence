@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e08a9c1ae525d6e117df01f2c7ea046f5dcca2f6",
+            "branch": "workbench/intelligence-reads-observatory",
+            "files_sha256": "d9643e9dda768750878eadff7b6b2486c58fda9e21991ecc426937226871a8c9",
+            "message": "Intelligence opens the Observatory to read"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023113031-bd30b0"
+}

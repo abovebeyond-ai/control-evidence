@@ -1,0 +1,16 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (asked by the owner on 23 October 2026; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Editorial should be able to create a test account on gentells.com for someone, with a plan and a trial, and get a link to share, without a developer.\n\nToday the Accounts page in the Observatory manages accounts that already exist on gentells.com: plan, trial, Observatory access, block, delete. Creating one is not possible: a person has to register on the site first. For a prospect or a client who should try Gentells, editorial has no way to set up the account and hand it over.\n\nAsked:\n\n- create an account on gentells.com from the Accounts page: name, email address, plan, trial length;\n- get a link to share with that person, which lets them set their own password and sign in (and a mail with the same link when mail is configured);\n- see which accounts were made this way, so test accounts can be found and ended later.\n\nShape: a signed internal route on the site (`POST /internal/accounts`, next to the update and delete routes, same signature) that creates the user, sets plan and trial, marks the account as made by editorial, and returns a set-password link (the existing password reset token, with a longer life); a pipeline route that forwards it for admins; a form on the Accounts page that shows the link to copy. Nobody's password passes through the Observatory.\n",
+            "labels": [
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Create test accounts on gentells.com from the Accounts page and share a sign-in link"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023081312-eece9b"
+}

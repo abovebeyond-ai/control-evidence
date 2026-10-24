@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Companion to gentells-site #228.\n\nSince #369, Intelligence opens the Observatory to read. The unlisted `observatory` plan held the same abilities and limits, so it no longer does anything Intelligence does not.\n\n- `packages/core/plans.mjs`: `observatory` leaves `DEFAULTS` and `PLAN_ORDER`. A saved offer that still carries an `observatory` row is ignored, because `getPlans` reads only the plans in `PLAN_ORDER`. The next save on Settings > Plans drops it.\n- The projection stops sending the row. The site already ignores a plan it has no defaults for (#228).\n- Tests: the plans test checks that Intelligence opens the Observatory and that no `observatory` plan exists. The guest login test uses an Intelligence account.\n\nFull suite 1329/1335; the 6 failures are the known report-render tests that need pdftoppm.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/drop-observatory-plan",
+            "title": "Drop the Observatory plan from the offer"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023140747-631b40"
+}

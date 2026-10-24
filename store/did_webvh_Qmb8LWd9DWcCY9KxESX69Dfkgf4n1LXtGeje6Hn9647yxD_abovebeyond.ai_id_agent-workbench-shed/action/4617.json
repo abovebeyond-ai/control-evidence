@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #231.\n\nThe signals under a trend were a grid of stone cards, six in view and the rest behind \"Show all N signals\". With every signal now sent for readers who have the sources, a trend on fifty signals became a wall of cards each labelled \"Signal\" and \"View source\", with notes cut mid-sentence and the same source repeated on card after card.\n\nNow the evidence reads as who said what, and when:\n\n- **Grouped by source**, the source that gave most first: a block per source with its name and \"N signals\" on the left (a hairline above, like a row of the trend list), its signals on the right, newest first.\n- **The day of each signal** on the right, with a quiet \u2197 when it can be followed; the whole line is the link. A report chunk says \"report\" instead.\n- **One line on top**: \"Every signal this reading is built from: 52 from 38 sources, 16 Jul 2026 to 21 Oct 2026.\"\n- **Nothing folds away.**\n\nA reader without the sources still gets six notes, without source, day or link, and the \"+ N more signals feed this trend\" counter as the last row with its upgrade link.\n\nThe day, the platform and the whole note come from the pipeline (gentells-pipeline #380). Without them the page shows no day and the note as it comes, so either can merge first.\n\n- `partials/signal-card` replaced by `partials/signal-group`\n- `TrendSignalsTest`: the summary line, the grouping order and the source named once per group\n\nTests: 476 of 477 pass; `BuildStampTest` fails in a worktree as it always does.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/trend-evidence",
+            "title": "Evidence under a trend grouped by source, with the day of each signal"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023174112-7e0acc"
+}

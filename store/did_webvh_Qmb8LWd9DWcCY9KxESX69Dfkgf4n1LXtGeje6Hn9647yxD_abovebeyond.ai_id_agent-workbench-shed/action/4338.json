@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Posts delivered since 11 October use a new layout: a running head on every page (\"GENTELLS | Growing Up in Public 3\"), markers in the sentences (\"[1, 2, 3]\"), chart credits (\"Sources: Eurostat [1]\") and a numbered source list at the end, each entry with its address as a link on the line. `posts-to-json.mjs` read all of that as body text, so the head and the credits landed in the middle of paragraphs, a marker glued two paragraphs together, and the links were lost.\n\nWhat changes in `bin/posts-to-json.mjs`:\n\n- A line that comes back on most pages with only its number changed is the running head and is dropped.\n- The source list leaves the body and comes out as `sources` in the json: number, publisher, title and the address, read from the link annotation on that line.\n- The chart credits go; the list names those sources already.\n- The markers leave the text; for each one the json keeps the sentence it stood after, exactly as the body reads, in `citations`. That is what the source check and `bin/cite-sources.mjs` need.\n- A post without a source list (all posts before 11 October) converts as before. `import-articles.mjs` ignores the two new fields.\n\nUsed on 23 October for the nine posts of the 4 and 11 October deliveries (imported as drafts on the box, then dated, published and cited). The four posts of 11 October gave 27 sources with addresses and 20 marked sentences.\n\nTests: four new cases in `test/post-pdf.test.mjs` (running head, source list with addresses and credits, a post without a list, markers). Full suite 1303/1309; the 6 failures are `report-render`, which needs `pdftoppm` (not installed on the workbench, also failing on main). Typecheck clean.\n\nRefs #363\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/mail-32-converter",
+            "title": "posts-to-json: read the source list of the new post layout"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023080907-9acad4"
+}

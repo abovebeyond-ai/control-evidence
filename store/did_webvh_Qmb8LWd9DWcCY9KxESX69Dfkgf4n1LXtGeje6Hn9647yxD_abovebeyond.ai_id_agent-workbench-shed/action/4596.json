@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "de49bb295c86e16fce7d9161417bc69e55e9af6a",
+            "branch": "workbench/corpus-open",
+            "files_sha256": "32cfa3da0cff640a487bb8b529ad109e05435dd6e3248806e26327b3ab0329aa",
+            "message": "The corpus on the Overview opens as a section, in the Observatory's own look"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023165845-87a3e2"
+}

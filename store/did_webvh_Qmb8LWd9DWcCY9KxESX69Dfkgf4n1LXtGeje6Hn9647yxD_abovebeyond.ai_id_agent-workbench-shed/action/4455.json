@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Some publishers are worth reading but should never be the evidence of a Gentells post. YPulse is the first: it sells youth research as its own product, so a post resting on its work resells that work and sends the reader to them. What these publishers notice is still worth knowing, so their signals stay in the record and the team reads them in the Observatory.\n\n- Source gets `use`: `record` (the default; every earlier source reads as this) or `inspiration`, set by a person.\n- `rules/source.json#inspiration`: an inspiration source is collected, classified, promoted and counted like any other source in its state. A post does not cite it, link to it or name it, and a figure it publishes is not cited.\n- `rules/statistic.json#citable` gets `publisherUse: [\"record\"]`, and `statisticCitable` refuses a figure from an inspiration publisher.\n- `tools/rules.mjs` gets `sourceCitable` (not proposed or on trial, not inspiration). `tools/validate-graph.mjs` refuses a post that cites a signal from an inspiration source.\n- Conformance has two new cases. `inspiration-cited` (a post citing a YPulse signal) is refused. `inspiration-read` (the same signal backing a trend) validates.\n\nMinor version, added only; `tools/compat.mjs` passes. `npm test`: 94/94.\n\nAfter merge, tag `v0.15.0`. The pipeline enforces the rule in its own code and pins this tag in a follow-up.\n",
+            "branch": "workbench/inspiration-only",
+            "title": "A source can be read for inspiration only (0.15.0)"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261023113423-17b460"
+}

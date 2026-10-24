@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6393b8c98c3b2af0fe5dc91b9201c9878b39b16c",
+            "branch": "workbench/competitors",
+            "files_sha256": "817e4afe6e67c5038de8788ff6f62d9765589dee8c062f134d4141170c356f73",
+            "message": "Competitors are never named, cited or linked (Standard 0.17.0)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023175716-ac3912"
+}

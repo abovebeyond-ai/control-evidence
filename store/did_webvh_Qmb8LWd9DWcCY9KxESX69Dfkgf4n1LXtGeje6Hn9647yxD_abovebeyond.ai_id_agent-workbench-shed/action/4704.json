@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4c7e0249e95983187ee0e769139a01b7d512fb32",
+            "branch": "workbench/editor-role",
+            "files_sha256": "51a4131ab440f9f3255f13670e507314f701ca49d9d4393029d32cb5bf7e2415",
+            "message": "Accounts: the editor role, between member and admin"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261024070349-25b016"
+}

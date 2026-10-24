@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Companion to gentells-site #229, which adds an \"Observatory\" link to the gentells.com nav for Intelligence and the team.\n\n- The header now has \"gentells.com \u2197\" on the right, next to the tools. Guests (Intelligence readers) see it as the only tool: Ask and the Studio stay the team's, as before.\n- The address is `VITE_SITE_URL` when set, otherwise https://gentells.com.\n- e2e: the guest menu test checks the link and that Studio and Ask are still absent. Full suite 49/49, build passes.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/link-to-gentells",
+            "title": "Header links back to gentells.com"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023141244-3211fb"
+}

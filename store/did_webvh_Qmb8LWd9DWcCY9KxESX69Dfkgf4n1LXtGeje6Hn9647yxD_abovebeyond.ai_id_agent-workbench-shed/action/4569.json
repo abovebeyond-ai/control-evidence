@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Under each trend, gentells.com showed six signals and \"+ 47 more signals feed this trend. Read across 38 sources.\" Even a reader on Intelligence could not see the rest: the projection only sent six, so the site had nothing more to show.\n\nThis PR makes the site cut the list per reader, so the pipeline can send every signal (gentells-pipeline PR, to merge **after** this one):\n\n- `Reader::signalsFor`: a reader whose plan opens the sources (Signal and up) gets the whole list. Anyone else gets the first six, without urls or source names, as before. An agent still gets five on every plan.\n- `Reader::readingFor` cuts the signals and recounts `signals_more` to match, so the counter says what this reader does not see. The trend page and the API (`Shapes`) both use it.\n- Trend page: the first six signals stay in view. For a reader with the sources, the rest sit behind \"Show all N signals\". The signal card moved to `partials/signal-card`.\n- Until the pipeline sends the full list, nothing changes: six come in, six are shown.\n\nTests: `TrendSignalsTest` (Intelligence reads all 12 with links; a visitor reads 6 without names, with \"+ 46 more\"). Suite 475/476; BuildStampTest fails in a worktree checkout, as always.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/trend-signals-whole",
+            "title": "A reader with the sources reads every signal under a trend"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023142634-66d889"
+}

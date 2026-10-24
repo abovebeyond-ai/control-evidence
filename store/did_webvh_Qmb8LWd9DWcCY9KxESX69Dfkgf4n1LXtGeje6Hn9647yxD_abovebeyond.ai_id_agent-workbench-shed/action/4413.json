@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Brings `docs/content-architectuur.md` in line with the choices made for the blog on 2026-10-23, so phase 2 is built from the right plan. A new section \u00a70b lists them; the places that said otherwise are updated.\n\n- **Blog, *Nieuws* in the menu.** The Studio calls it Blog (hoet-sanity #13), addresses are `/{lang}/blog/{slug}` (preview, feed and newsletter feed follow), and the menu item in the main navigation and the footer reads *Nieuws*. Type and class names stay.\n- **No author.** The `author` type is gone from the model, the Studio structure, the mirror and the phase checklists; in JSON-LD the author is the brand as `Organization`.\n- **Links one way.** Linked frames show as cards under the article and as `about` in JSON-LD. The frame page no longer gets an *In het journal* section (removed from phase 3).\n- **Home.** A strip with the three newest articles above the production film, added to phase 2.\n\nDocumentation only.\n",
+            "branch": "workbench/blog-decisions",
+            "title": "Record the blog decisions in the content architecture"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261023093227-3430f0"
+}

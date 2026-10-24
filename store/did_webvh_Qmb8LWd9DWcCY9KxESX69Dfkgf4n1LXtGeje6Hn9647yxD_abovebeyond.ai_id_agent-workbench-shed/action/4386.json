@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`bin/queue-cited-sources.mjs --apply` run a second time added every citation to the \"cited N times\" count of the queued publishers again, so on the box the counts on the Sources page are now doubled. The doc said a second run adds nothing; for new rows that held, for the counts it did not.\n\nA citation is now a key: the post and the page (`urlKey`). The listing keeps the keys in `cites`, and `cited` is their number. Citing the same page in the same post again, or filling the queue again, changes nothing. A row queued before this change has only the running count; the next fill rebuilds it from the keys.\n\nOn the box after merge and deploy: `node bin/queue-cited-sources.mjs --apply` once. That puts the counts right; it adds no publishers.\n\nTests: `test/cited-sources.test.mjs` covers a refill that counts nothing twice and a row with an old count that is rebuilt. Full suite 1308/1314; the 6 failures are `report-render`, which needs `pdftoppm` (not installed on the workbench). Typecheck clean.\n\nRefs #364\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/queue-count-once",
+            "title": "Cited sources queue: count each citation once"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023082950-69494b"
+}

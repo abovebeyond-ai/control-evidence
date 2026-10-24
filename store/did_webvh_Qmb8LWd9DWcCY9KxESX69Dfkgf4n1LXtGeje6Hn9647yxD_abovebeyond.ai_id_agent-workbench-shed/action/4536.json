@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "19c344673d2a98e4f713d16ff339900a40a69f99",
+            "branch": "workbench/observatory-link",
+            "files_sha256": "909a11a8914ab28a903c13d8ed5ba5feaacdbd03812cb545e531445a0cade71e",
+            "message": "Nav links to the Observatory for whoever it opens for"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023141101-16c7d5"
+}

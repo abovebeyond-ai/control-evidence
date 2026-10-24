@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e390cc0e51d04786761a9d265d37af7cf7202a32",
+            "branch": "workbench/inspiration-only",
+            "files_sha256": "d20180b7c5bd3ca0ad80196aa23bcc2ab309cc9fa739147e283b61c12d5141bf",
+            "message": "Sources: mark a source as read for inspiration only"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023113551-5b520d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #370.\n\nThe text check for inspiration-only sources (`namesInInspiration`) matched only the source row's name. The Edelman row is called \"Keeping Current\" (site edelman.com), so a sentence naming \"Edelman\", such as the Edelman Trust Barometer, passed the publish gate and did not show up in `bin/inspiration-only.mjs`. Edelman as a whole is read for inspiration only, so the publisher's name should be caught as well.\n\n- The site's name is matched next to the source's name: edelman.com gives \"Edelman\", insights.ypulse.com gives \"Ypulse\". A two- or three-letter second level such as `co.uk` is skipped. Names under four characters are still ignored.\n- If the source name and the site name are the same word, the source name's spelling wins, so messages still say \"YPulse\".\n- A sentence is listed once per source, even when it names both.\n\nTests: a new case in `test/inspiration.test.mjs`. Full suite 1329/1335; the 6 failures are the known report-render tests that need pdftoppm.\n\nAfter deploy, `node bin/inspiration-only.mjs` on the box lists any post that names Edelman.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/inspiration-site-name",
+            "title": "Inspiration check finds the publisher by its site name"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023135729-12e2a2"
+}

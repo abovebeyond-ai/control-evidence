@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e46d860fb49928d87e06c7e17ae32836a3490df2",
+            "branch": "workbench/drop-observatory-plan",
+            "files_sha256": "84d61df4b67aeda394a960dee2817ce912940bc7b0075d1d0f294e96f011b137",
+            "message": "Drop the Observatory plan: Intelligence opens the Observatory"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261023140642-a5786f"
+}

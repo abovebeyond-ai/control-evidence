@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Sources page side of \"read for inspiration only\" (pipeline and Standard PRs of the same name). A post on gentells.com never cites, links or names such a source; the Observatory keeps reading it.\n\n- A source tile shows \"inspiration only\". The source panel says who marked it and when, explains it once, and offers \"Read for inspiration only\" or \"Citable again\".\n- The rows of the New Sources G. queue get the same link, so a proposed publisher such as YPulse can be marked without being followed.\n- The link posts to `/api/pipeline/sources/<id>/use`, refreshes the list, and shows the server's refusal in plain words. It is hidden for guests.\n- Fix: the New Sources G. block from #106 tested `s.lifecycle === 'proposed'`, but the sources list sends `state`, so the block never appeared. It now reads `state`.\n\ne2e: `e2e/inspiration.spec.js` (4); full suite 48/48; build passes.\n",
+            "branch": "workbench/inspiration-only",
+            "title": "Sources: mark a source as read for inspiration only"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023113551-5b520d"
+}

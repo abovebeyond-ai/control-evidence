@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Moves `STANDARD_REF` from v0.14.0 to v0.16.0 and regenerates the pinned copy with `node bin/sync-standard.mjs`.\n\n- **0.15.0:** `Source.use` (`record` | `inspiration`), `rules/source.json#inspiration`, `publisherUse` on citable statistics. The pipeline already enforces this in `packages/core/inspiration.mjs` (#370); the pinned copy now carries the rule it cites.\n- **0.16.0:** `rules/pattern.json#detect.minSources` 2, prune `belowSources`, `rules/trend.json#patterns.sharedSignalsAtLeast` 1. Implemented in #371.\n- `PATTERN_MIN_SOURCES` in `packages/core/db.mjs` reads `RULES.pattern.detect.minSources` without the `?? 2` fallback that held until this pin.\n\nRegenerated: `packages/core/standard.mjs`, `packages/core/standard-types.d.ts`, `test/fixtures/standard-conformance.json`.\n\nTests: full suite 1328/1334; the 6 failures are the known report-render tests that need pdftoppm.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/standard-0.16.0",
+            "title": "Pin the Gentells Standard at v0.16.0"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023134556-f60e14"
+}

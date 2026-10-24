@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #113. The role select on an open team row showed the whole description as its value (\"Editor: also edits every post in review or live\"), so it read as a sentence rather than a choice, and the row was labelled \"Observatory and Studio\".\n\nNow:\n- the row is labelled **Role**;\n- the select shows only the role: Member, Editor or Admin (the invitation and \"back on the team\" options are unchanged);\n- what the chosen role may do stands beside it as one plain sentence: Member \"Writes their own pieces and reads the team's.\", Editor \"Also edits every post in review or live. Other people's drafts stay theirs.\", Admin \"Also edits every piece, and runs settings and people.\"\n\nChecked on a build with mock data at 1280 px. Build clean.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/role-select",
+            "title": "Accounts: the role select shows the role, what it may do beside it"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261024072635-2c83ee"
+}

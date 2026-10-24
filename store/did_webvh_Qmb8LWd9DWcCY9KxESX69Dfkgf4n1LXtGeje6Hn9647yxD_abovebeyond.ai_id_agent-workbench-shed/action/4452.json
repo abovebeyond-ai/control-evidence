@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9393dfdf159aca274f5b0e743a91d6dd1ebc255b",
+            "branch": "workbench/inspiration-only",
+            "files_sha256": "76b800be2dd532bf004261157ae1ab0ad77cff79770bb4dbc1a12b4558901c40",
+            "message": "A source can be read for inspiration only (0.15.0)"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261023113423-17b460"
+}

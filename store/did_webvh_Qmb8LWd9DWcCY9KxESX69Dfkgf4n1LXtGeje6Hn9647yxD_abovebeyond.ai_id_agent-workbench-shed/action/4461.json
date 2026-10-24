@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Some publishers sell youth research as their own product (YPulse first). A post that rests on their work resells it and sends the reader to them, so a post on gentells.com must never cite, link or name them. They stay worth reading for ideas, so their signals stay in the Observatory. This implements rules/source.json#inspiration from Standard 0.15.0 (gentells-standard PR of the same name) in pipeline code; pinning the tag follows later.\n\n**The rule, at one choke point.** `sources.use` (null reads as `record`), plus `use_by` and `use_at`. `addArticleEvidence` refuses a signal or statistic from an inspiration source with `code = INSPIRATION_ONLY`. A signal counts as from such a source by its `source_id`, or by its address on the source's site or a subdomain. The second test catches the \"Cited by the author\" signals that carry a ypulse.com url.\n\n**Every caller handles the refusal:**\n- The Studio answers 409 with a plain sentence.\n- \"Add a link\" refuses before it fetches the page or makes a signal.\n- post-evidence, suggestions, Ask citations, version restore, cite-sources, cite-statistics and relink-evidence skip the row and say why. The writers and the evidence finder no longer offer such signals.\n\n**Publish gate.** A piece is held when its title, standfirst, body or Opportunity names an inspiration source, or when its evidence still cites one.\n\n**Projection.** `/internal/projection/articles/:id` leaves inspiration evidence out. Marking a source moves `updated_at` on the live posts that cite it, so the link disappears from gentells.com at the next reconcile.\n\n**Admin route.** `POST /sources/:id/use` `{use}` is admin only and records who. `/store/patch` refuses `use`, so the generic patch cannot bypass that check. Guests cannot reach either.\n\n**bin/inspiration-only.mjs:**\n- `--mark=<id|site> --by=<person>` marks a source.\n- With no flags it is a dry run: per post, the citations and the sentences that name an inspiration source.\n- `--apply --run=<name>` removes those citations and keeps them in an undo table; `--undo=<run>` puts them back.\n- It never edits a post's text. Sentences that name a source are listed for the editors.\n\nTests: `test/inspiration.test.mjs` (15) plus the touched modules' own tests. Full suite 1323/1329: the 6 report-render tests need pdftoppm, as on main. `tsc` is clean. The admin route has no HTTP-level test.\n\nAfter merge and deploy, on the box: mark the sources (Sources page, or `--mark`), run the dry run, then `--apply`.\n",
+            "branch": "workbench/inspiration-only",
+            "title": "Sources read for inspiration only: never cited, linked or named by a post"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023113503-0f9af6"
+}

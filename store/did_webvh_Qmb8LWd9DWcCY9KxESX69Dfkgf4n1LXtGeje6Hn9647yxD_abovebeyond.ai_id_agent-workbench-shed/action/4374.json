@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`POST /site/accounts` in `packages/server/routes-accounts.mjs`, for admins only, forwards a new test account to the site's new signed `POST /internal/accounts` and returns the site's answer: the account, its set-password link, when the link expires and whether the site mailed it.\n\nOnly `name`, `email`, `plan`, `trial_days` and `note` are passed on; anything else in the body (a password, a forged `by`) is dropped, and `by` is always the signed-in admin's address, as for the other account routes. The request is signed with the secret the pipeline already shares with the site, so nothing new has to be configured.\n\n## Why\n\nEditorial can manage accounts on gentells.com from the Observatory but cannot make one: a person had to register on the site first. With this, the Accounts page can set up an account with a plan and a trial and hand over a link, without a developer and without a password passing through the Observatory.\n\n## Tests\n\n- `test/site-accounts.test.mjs`: two new tests, in the style of the existing ones: a non-admin gets 403; an admin's request reaches the site at `/internal/accounts`, signed the way the site verifies, with only the allowed fields and the admin as `by`, and the link comes back with the site's status. `node --test test/site-accounts.test.mjs`: 5 passed.\n- `npm run typecheck`: passed.\n\nMerge after the site PR; until then the route answers with the site's 404 or 405.\n\nRefs Trendwolves/gentells-site#223\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/test-accounts",
+            "title": "POST /site/accounts: make a test account on gentells.com"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023082006-60f4f7"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "884603703a14852d1025bf18661746aa",
+    "effect": {
+        "detail": {
+            "base": "6393b8c98c3b2af0fe5dc91b9201c9878b39b16c",
+            "branch": "workbench/competitors",
+            "commit": "32919b848a5276af5f386072cfe97e190a91488d",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4626,
+    "verdict": "ALLOW"
+}

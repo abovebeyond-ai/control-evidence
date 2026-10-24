@@ -1,0 +1,16 @@
+{
+    "action": "e3cd6f77eacedaf8fab5094d861d433a",
+    "effect": {
+        "detail": {
+            "base": "6393b8c98c3b2af0fe5dc91b9201c9878b39b16c",
+            "branch": "workbench/trend-evidence",
+            "commit": "9ac8e09e7f40dec9ba47f1e807ff090477de5b13",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4608,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "ddf31aa4068503af4034b22f7ff99e09",
+    "effect": {
+        "detail": {
+            "base": "e08a9c1ae525d6e117df01f2c7ea046f5dcca2f6",
+            "branch": "workbench/intelligence-reads-observatory",
+            "commit": "014834b035fee437d9f61dc3f2fb6785a7c45f38",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4434,
+    "verdict": "ALLOW"
+}

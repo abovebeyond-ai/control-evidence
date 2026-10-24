@@ -1,0 +1,16 @@
+{
+    "action": "cab3f2d615fa38c40daaa2085a3dd277",
+    "effect": {
+        "detail": {
+            "base": "454298cf7b38e22bd7ad7532521e7a0728865a93",
+            "branch": "workbench/network-subtitle",
+            "commit": "eed523adb129115f714c6ee8c188f2de1c22a263",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4644,
+    "verdict": "ALLOW"
+}

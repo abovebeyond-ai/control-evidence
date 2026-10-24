@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The description under *Monturen* on an article said the frame page would show the article in return. That is not going to be built: linked frames appear as cards at the bottom of the article (and as `about` in the article's structured data), and the frame and collection pages stay as they are. The description now says only what happens.\n\nOne string; no schema change. Not built or tested locally: the change is the text of a description.\n",
+            "branch": "workbench/links-one-way",
+            "title": "Say what linking a frame does: cards under the article"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261023093215-85fd3f"
+}

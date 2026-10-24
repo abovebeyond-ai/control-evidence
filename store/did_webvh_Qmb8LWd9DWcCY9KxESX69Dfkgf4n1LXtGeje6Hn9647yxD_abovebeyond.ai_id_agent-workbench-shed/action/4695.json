@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "3D was very laggy with every relation drawn. Measured on a demo copy with 733 relations and 1,623 lines (headless Chrome, software WebGL):\n\n| | before | after |\n|---|---|---|\n| 3D draw calls per frame | 2,393 | 133 |\n| 3D render time per frame | 14 to 23 ms | 1 ms |\n| 3D frame rate once settled | 20 fps | 60 fps |\n| 3D settle | 150 ticks | 70 ticks, from the flat picture's places |\n| 2D first settle | 300 ticks, 10+ s | 200 ticks, 3.2 s |\n\n**3D**\n- The library draws only the relations that matter (not the small ones), opened projects, and the lines of the dot in focus, as plain lines (`linkWidth(0)`) instead of tubes.\n- The small relations are one `THREE.Points` cloud and the resting lines one `THREE.LineSegments` with a colour per line; both are single draws, updated on each simulation tick (`move3d`).\n- Hovering recolours and switches visibility; it no longer rebuilds every name sprite. The hovered dot's name is in the tooltip.\n- The 3D modules are fetched while the page is idle, after the flat picture settles.\n\n**Both views**\n- `near()` uses a neighbour index built once per structure instead of scanning every line for every dot on every frame.\n- The graph data and the graph instance are kept out of Alpine's reactivity (`__v_skip`), so the simulation's position updates are not tracked by a proxy.\n- Faster alpha decay and fewer cooldown ticks.\n\n`three` is now a direct dependency at `^0.186.1`, the version 3d-force-graph already installs (package.json and the lock's root entry only; nothing new is downloaded).\n\nMost of the remaining time to open 3D in the headless check is creating a WebGL context in software (about 3 s there); the main thread was 81% idle while 3D settled.\n\nTests: 339 PHP tests and 19 JS tests pass. Checked by screenshot: 2D, 3D at rest, 3D with Gemeente Zulte in focus, no console errors.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/graph-3d-fast",
+            "title": "Make the 3D network fast with every relation drawn"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023211127-91d6db"
+}

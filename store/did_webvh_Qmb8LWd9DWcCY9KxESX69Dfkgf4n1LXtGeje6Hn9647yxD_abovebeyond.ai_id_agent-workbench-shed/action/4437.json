@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Intelligence now opens the Observatory to read: a client on the top plan sees, as a guest, the record its posts and reports come from (no Ask, nothing that writes).\n\n- `INTELLIGENCE_ABILITIES` gets `observatory`. The unlisted Observatory plan opens the same doors and stays for people the team gives access without Intelligence.\n- These are the defaults. The offer an admin saved on Settings, Plans wins plan by plan, so the live offer changes when the Observatory box is ticked for Intelligence there.\n\nTests: `test/plans-setting.test.mjs`, `test/guest-role.test.mjs` (26 pass).\n",
+            "branch": "workbench/intelligence-reads-observatory",
+            "title": "Intelligence opens the Observatory to read"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023113031-bd30b0"
+}

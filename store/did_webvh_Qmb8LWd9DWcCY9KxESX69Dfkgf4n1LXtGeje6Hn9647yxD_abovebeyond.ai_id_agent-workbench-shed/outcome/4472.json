@@ -1,0 +1,16 @@
+{
+    "action": "91d9c5067f8fa554d137d4d15c280f1b",
+    "effect": {
+        "detail": {
+            "base": "026eb9788974d7d33a769b6904eda13d9ee7c6d3",
+            "branch": "workbench/pattern-min-sources",
+            "commit": "fd4b16aa32e9f85048c98f3a66b8d7019ee91376",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4470,
+    "verdict": "ALLOW"
+}

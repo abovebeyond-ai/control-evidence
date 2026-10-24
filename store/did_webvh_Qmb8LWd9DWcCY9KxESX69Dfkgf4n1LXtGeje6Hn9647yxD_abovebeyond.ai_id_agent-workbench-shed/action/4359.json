@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The pipeline now queues the publishers authors cite that it does not follow yet, as proposed sources with the listing \"New Sources G.\" (Trendwolves/gentells-pipeline#364). Those rows were invisible here: \"Needs a look\" only recognised the scout's proposals by their id prefix, and an inactive `web-browse` row would have shown up among the switched-off sources instead.\n\nWhat changes in `src/pages/Sources.jsx`:\n\n- Rows with `listing.queue === \"New Sources G.\"` that are still proposed get their own line in \"Needs a look\": how many publishers wait, then behind Review one row per publisher, with its name, its site and how often it was cited in how many posts. Most cited first, five shown, then Show all.\n- **Follow it** switches the row on, which already moves a proposed source to its trial in the pipeline.\n- **Not for us** sets the state to rejected instead of deleting the row. A deleted row would be proposed again by the next citation; a rejected one is not.\n- These rows are left out of the adapter lists below.\n\nChecked: `eslint` on the page, `vite build`. Not checked against live data on the workbench: the queue fills after the pipeline PR is merged and `bin/queue-cited-sources.mjs --apply` has run.\n\nMerge after Trendwolves/gentells-pipeline#366.\n\nRefs Trendwolves/gentells-pipeline#364\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/cited-sources-queue",
+            "title": "Sources: review the publishers authors cited that are not followed yet"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261023081743-bcc97d"
+}

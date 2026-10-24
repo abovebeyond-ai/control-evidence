@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "272ddc5a6821cb3464c0bbe833deaf2a6a069f3e",
+            "branch": "workbench/editor-role",
+            "files_sha256": "24b4c11981dd7d1b9a1ebef548a076825b5759bdd4488c57647565664f8c32ec",
+            "message": "An editor edits the team's posts in the Studio; Delete stays with author and admin"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261024070401-7a99ae"
+}

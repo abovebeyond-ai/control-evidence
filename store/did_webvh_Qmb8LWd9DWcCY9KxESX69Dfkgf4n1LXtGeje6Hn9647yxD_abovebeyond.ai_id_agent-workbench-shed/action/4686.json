@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fc792c006a06658afbd543745224a03c3de4e8f3",
+            "branch": "workbench/meta-pixel-consent",
+            "files_sha256": "4115fea48aa0e46940e97c8c264bfefd40451c9cf5329eb4804733f9c526f653",
+            "message": "Bring back the Meta Pixel behind a consent banner, link the social profiles"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261023205946-6f3b01"
+}

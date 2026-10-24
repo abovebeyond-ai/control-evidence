@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Merge **after** gentells-site #230, which cuts the list per reader.\n\nThe trends projection sent six signals per trend (`getInsightSignalSample` with its default limit), so gentells.com could show no more than six, even to an Intelligence reader, under \"+ 47 more signals feed this trend\".\n\n- New `packages/core/trend-signals.mjs`: `trendSignalsForSite` returns every signal of the trend, capped at 300, ordered as before: signals with a link first, then by relevance.\n- A signal from a source read for inspiration only is left out. Before this, the six-signal sample could carry a YPulse link to gentells.com.\n- `heavy.mjs` (`projection-trends`) uses it, and reads the flagged sources once per run. `signals_more` is still the trend's signal count minus what is sent.\n\nTests: `test/trend-signals-projection.test.mjs`: twelve signals go, the YPulse one does not. Full suite 1336/1342; the 6 failures are the known report-render tests that need pdftoppm.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/trend-signals-whole",
+            "title": "Trends go to the site with every signal"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023142707-d72d29"
+}

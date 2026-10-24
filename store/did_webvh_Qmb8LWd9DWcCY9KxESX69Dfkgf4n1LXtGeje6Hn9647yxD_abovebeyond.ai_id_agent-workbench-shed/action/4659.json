@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Netwerk drew only the 60 relations with the most projects (\"Hoeveel 60\"), so most of what was discussed on Bespreken never showed up in the picture.\n\n- Every relation in the period is drawn; the \"Hoeveel\" picker is gone.\n- Size: grows with the number of projects (as before), times 1.5 for high importance and 0.75 for low (`radius()` in `network-model.js`).\n- Colour: new default \"Kleur per belang\": red high, green medium, light green low, grey not yet set. \"Kleur per rol\" and \"Kleur per groep\" stay. The legend under the graph follows.\n- Names still show for the 15 busiest, high importance, and whatever is hovered or open.\n- `Network::graph()` counts shared projects per project instead of comparing every pair of relations, so the full set stays quick. The `$limit` argument is removed.\n\nChecked in the browser on a demo copy with 733 relations (700 generated): page loads in under a second, the graph settles in a few seconds. Relations that share fewer projects than \"Lijn vanaf\" with anyone sit as small dots around the edge.\n\nTests: 338 PHP tests pass, the network-model JS tests pass (new one for the size by importance), pint clean.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/graph-shows-all",
+            "title": "Draw every relation on Netwerk, sized and coloured by importance"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261023193955-2e98f7"
+}

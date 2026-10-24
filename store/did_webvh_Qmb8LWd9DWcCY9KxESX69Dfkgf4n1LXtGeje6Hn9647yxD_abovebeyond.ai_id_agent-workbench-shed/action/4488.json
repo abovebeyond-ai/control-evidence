@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "32911ba5d42b1a77121257acc7e9793d2635508f",
+            "branch": "workbench/standard-0.16.0",
+            "files_sha256": "7fbc63419e48a18376a513700ec083de657f5ad37f7e766a99d453cd38efb12a",
+            "message": "Pin the Gentells Standard at v0.16.0"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023134556-f60e14"
+}

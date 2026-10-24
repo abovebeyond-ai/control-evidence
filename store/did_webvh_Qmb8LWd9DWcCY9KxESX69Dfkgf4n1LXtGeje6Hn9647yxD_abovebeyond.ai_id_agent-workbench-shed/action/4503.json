@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "\"Delete this account\" on the Accounts page deleted only the account on gentells.com. The Observatory's own `users` row stayed behind:\n- the page kept listing the person as \"Removed from the team\" next to \"no account yet\";\n- a new gentells.com account at the same address was refused at Observatory sign-in as \"address linked to another site account\", because the old row still pointed at the deleted site id.\n\nChange:\n- `forgetSiteAccount` in `users-store.mjs`: once the site confirms the delete, the row is found by its site id, or by address when the row is linked to nothing else. If the person wrote no post, the row is deleted along with their Ask conversations and article shares. If they did write one, the row stays so the post keeps its author. It is then unlinked from the site, disabled, and marked `account_deleted_at`.\n- `POST /site/accounts/:id/delete` calls it only after the site answers 2xx, and returns `observatory: 'deleted' | 'kept for authorship' | null`.\n- `GET /auth/users` leaves out rows marked `account_deleted_at`, so the Accounts page no longer lists them. The Studio's team list already skipped disabled rows.\n- `bin/forget-deleted-accounts.mjs` applies the same rule to rows left behind by earlier deletes. Without `--apply` it only lists them; `--out` saves the rows as they were. It only touches rows that are removed from the team or are guests, and that have no account on the site, matched by site id or by address. A team member who signs in with a password is never touched.\n\nTests: `test/account-delete.test.mjs` (new, 5 cases). `test/site-accounts.test.mjs` now sets up a test database, because the relay writes to it. Full suite 1333/1339; the 6 failures are the known report-render tests that need pdftoppm.\n\nAfter deploy, on the box: `node bin/forget-deleted-accounts.mjs` (dry run), then `--apply`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/account-delete-whole",
+            "title": "Deleting an account deletes the person in the Observatory too"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261023140130-8724cd"
+}
