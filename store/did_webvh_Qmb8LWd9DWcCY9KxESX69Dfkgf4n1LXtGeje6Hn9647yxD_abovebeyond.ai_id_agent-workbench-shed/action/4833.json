@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea7e8f69ae9501deeb366d64692048ca7c71d5f6",
+            "branch": "workbench/te-doen",
+            "files_sha256": "8cf552fb9a9aa8b22ad6debad0616589b80a00e8be5ada915ab632bac1979abe",
+            "message": "Rename Bespreken to Te doen and besproken to gedaan\n\nThe page is the handover's to-do list; an item counts as gedaan once\nit was told about, cleared or given a taker. URL and route names stay.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024140421-24900f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7fbb0886b433dd6536f38408757dc04bd7eca701",
+            "branch": "workbench/role-per-request",
+            "files_sha256": "8edf38e743d5c8b64119e296bca70bce576db3faeec492764363501b0d318561",
+            "message": "A changed role counts on the next request, not at the next sign-in"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261024112825-b5062e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nWith a project open in Netwerk the right column stacked the project's header, its whole handover panel and a list of up to 25 relations, and a relation opened before stayed under it. The column ran far below the graph, and it was still not obvious which handover belonged to what.\n\n- **One thing open at a time.** Opening a project closes the relation and the other way round.\n- **One card per open item.** The card shows the type (\"Project\" or \"Relatie\"), the name and its details, then two tabs:\n  - a project has **Overdracht** and **Relaties 24**, with the count in red when someone is missing a taker; the Relaties tab says \"Elke relatie heeft haar eigen overdracht; tik om ze te openen\";\n  - a relation has **Overdracht** and **Werkt samen met 8**, listing who takes over each of those relations and how many projects they share.\n- Only one tab shows at a time, so the column stays about as high as the graph. The handover stays mounted while the other tab is open, so nothing typed is lost.\n- The handover panel gets a `heading` option; inside the card it drops its own heading and border, since the card already says what it is for.\n\n## Checks\n\n- 354 PHP tests and pint pass. A new test covers one item open at a time and the tabs for both types.\n- Checked on a demo copy: project on both tabs, relation.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/side-tabs",
+            "title": "Show what is open in Netwerk as one card with tabs"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024144009-211449"
+}

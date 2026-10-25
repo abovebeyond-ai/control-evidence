@@ -1,0 +1,16 @@
+{
+    "action": "1c3e643c45b393256103b7693b9d482e",
+    "effect": {
+        "detail": {
+            "base": "6782709262d6d8d984f4ce5f93c346e9e75ce4dd",
+            "branch": "workbench/flat-panel",
+            "commit": "d96e557b92ed49d98ea5481702540c3f7a0ca25a",
+            "files": 20,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4752,
+    "verdict": "ALLOW"
+}

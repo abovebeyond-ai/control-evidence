@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nEach row in the Netwerk list had a text button: \"Projecten\" on a relation, \"Wie\" on a project, \"Sluiten\" once open. Under an opened contact every project row ended in \"Wie\", which reads as a question rather than a control, and the words changed per row.\n\nThe button is now a fold-out arrow, the same on every row: pointing right when closed, down when open. Its tooltip and screen-reader label say what it opens (\"Projecten van deze relatie tonen\", \"Relaties op dit project tonen\", \"Dichtklappen\"), and it carries aria-expanded.\n\nThe same wording goes into the panel heading (\"Relaties op dit project\" instead of \"Wie erop stond\"), the empty-state hint and the graph's hover hint.\n\n## Checks\n\n- 345 PHP tests, 19 JS tests and pint pass.\n- Checked on a demo copy with a relation folded open.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/list-chevron",
+            "title": "Replace the Wie/Projecten buttons in the Netwerk list with a fold-out arrow"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024133248-4d51bb"
+}

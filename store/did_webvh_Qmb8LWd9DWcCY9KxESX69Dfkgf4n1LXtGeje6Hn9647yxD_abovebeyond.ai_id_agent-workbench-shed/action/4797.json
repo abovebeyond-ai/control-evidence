@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #385\n\nA role changed in Accounts now counts on the next request instead of at the next sign-in.\n\n**Why it was stuck.** The role a request acted with came from the sign-in token, which lives seven days. `getRequestUser` returned the payload as signed. `GET /auth/verify`, which the Studio reads on load to decide `canEdit`, echoed the same payload. Someone given the editor role while signed in kept acting as a client in the API (`mayEdit`) and in the Studio until they signed in again. A demotion waited the same way.\n\n**What changes.**\n- `withCurrentRole(payload)` in `auth.mjs` takes the role from the users table. Guests, readers and tokens without an email keep the role they carry. When there is no row, or the lookup fails, the token's role stands.\n- `getRequestUser` returns the payload with the current role. That is the same single indexed lookup per request that `isDisabled` already does for removals.\n- `/auth/verify` answers with the current role, so the Studio shows the edit controls as soon as it reloads.\n\n`requireAuth` is unchanged. It only tells staff from readers and guests, and a team account cannot become a reader through `PATCH /auth/users/:id`.\n\n**Tests.** `team-management` gets a new case: a token signed while the account was a client acts as editor after the role change, and as client again after the change back, in both `getRequestUser` and `/auth/verify`. The case fails without the fix. Suite 1354/1360 (the 6 known pdftoppm tests), tsc clean.\n\n**After deploy.** No action needed. Anyone already signed in gets their new role on the next request. Reloading the Studio shows the editor's controls.\n",
+            "branch": "workbench/role-per-request",
+            "title": "A changed role counts on the next request, not at the next sign-in"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261024112825-b5062e"
+}

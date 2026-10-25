@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea7e8f69ae9501deeb366d64692048ca7c71d5f6",
+            "branch": "workbench/adaptive-graph",
+            "files_sha256": "dd93791293a64175862e0aae91efa3841a4929ff7fb0c65bcbc57718f76aee66",
+            "message": "Let the Netwerk graph follow who takes over what\n\nAround a relation in focus the names say who takes each over, and the\npanel suggests takers from the relations it shares most projects with.\nA row of names above the graph lights one person's relations and the\nuntaken ones around them. A project lists who takes over each of its\nrelations. Saving a relation on the list opens the next one.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024141800-a705f0"
+}

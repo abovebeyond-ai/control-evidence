@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bf0c71c46a755fc8f983ce60d511049714f3bd7a",
+            "branch": "workbench/show-discussed",
+            "files_sha256": "aa48fb8fde4787801b4bb29fa7a04aa4421e52488907b100e4ff5dc40a8725d3",
+            "message": "Show discussed items in place in Bespreken, with a toggle to hide them\n\nThe list opens on everything in agenda order, discussed items marked\nwhere they rank. A Besproken tonen checkbox hides them; the relation\nlist follows it.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024103954-d3c377"
+}

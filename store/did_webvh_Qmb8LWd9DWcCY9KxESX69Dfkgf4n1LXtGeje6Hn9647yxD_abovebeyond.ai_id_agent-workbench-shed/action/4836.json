@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n\"Bespreken\" named the meeting, not the work: the page is the list of what has to be done for the handover, and an item is done once something is told about it, \"Niets over te dragen\" is chosen, or somebody is named to take it over.\n\n- Menu item, page title and heading: **Te doen**. The list heading becomes \"De belangrijkste eerst\".\n- \"besproken\" becomes **gedaan** throughout: \"1 van de 60 belangrijkste gedaan\", the badge and dot label in the lists, \"Gedaan tonen\" for the toggle, \"Gedaan, buiten de lijst\" for items done outside the ranking, \"Gedaan, niets over te dragen\" in a node's history.\n- The start page button \"Verder bespreken\" becomes \"Verder met de lijst\". The Netwerk legend says \"nog te doen\"; the share page and banner name Te doen.\n- Comments that name the page follow. The URL (`/overdracht`), route names and internal keys stay as they are.\n\n## Checks\n\n- 349 PHP tests, 19 JS tests and pint pass; tests that asserted the old words now assert the new ones.\n- Checked on a demo copy.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/te-doen",
+            "title": "Rename Bespreken to Te doen and besproken to gedaan"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024140421-24900f"
+}

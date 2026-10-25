@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b647c7000200fb1aed3e300b030cea3a45bcc0be",
+            "branch": "workbench/accounts-in-row",
+            "files_sha256": "5b367506ccae13170131dfa785f5e4feebf5d258565bdd602216c741261485c8",
+            "message": "Accounts: a team member is changed in their row, Block and Delete behind its menu"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261024082215-387bd1"
+}

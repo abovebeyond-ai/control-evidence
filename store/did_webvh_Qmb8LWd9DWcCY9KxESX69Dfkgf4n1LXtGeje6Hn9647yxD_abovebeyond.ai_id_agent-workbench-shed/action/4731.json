@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On the Netwerk page, the side panel for an open relation ran about twice as long as the graph column. Most of that length was its project list, which repeats what the list under the graph already opens. The graph itself was a wide band in a tall box, and opening a relation only centred on it, so the relation often sat on one edge with half the canvas empty.\n\n- **Panel:** the Projecten block is gone, along with the query that fed it. On wide screens the panel stays in view beside the graph and scrolls on its own. The note, the kenmerken and \"Staat vaak samen op projecten met\" stay.\n- **Canvas:** the canvas is 500px high instead of 640px, and the graph takes its size from its box instead of a fixed constant.\n- **Focus:** opening a relation zooms in on it and on the bigger relations it shares projects with, capped at 2.5x. The small dots are left out of that frame because they sit far out.\n- **List:** the relation list under the graph runs to 30rem instead of 18rem.\n\nChecked locally on the 733-relation demo copy: at rest, with Gemeente Zulte open, and scrolled. 339 PHP tests, 19 JS tests and pint pass.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/network-balance",
+            "title": "Balance the Netwerk page around the graph"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024074824-3dc12d"
+}

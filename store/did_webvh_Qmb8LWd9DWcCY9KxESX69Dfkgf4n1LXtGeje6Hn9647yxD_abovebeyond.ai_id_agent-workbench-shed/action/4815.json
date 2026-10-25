@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ad07225420ea79304cfd99f8dabd78519bf2e21",
+            "branch": "workbench/home-links",
+            "files_sha256": "fc828bcafe3332c826b1c5311d2d445b9c82f425c859fecce1f37046c07af710",
+            "message": "Link the start page figures to their part of the Dagrapport\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024134421-6d3223"
+}

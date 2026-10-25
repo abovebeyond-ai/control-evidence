@@ -1,0 +1,14 @@
+{
+    "action": "38b500af1b805253d97c17bbe1dffaec",
+    "effect": {
+        "detail": {
+            "key": "mail:33",
+            "project": "gentells",
+            "state": "done"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4800,
+    "verdict": "ALLOW"
+}

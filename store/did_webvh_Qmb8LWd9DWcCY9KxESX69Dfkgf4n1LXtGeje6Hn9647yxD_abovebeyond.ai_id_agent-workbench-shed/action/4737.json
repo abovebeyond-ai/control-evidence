@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The button next to Bewaren, in Bespreken and in the Netwerk panel, marks a relation or project as gone through with nothing to hand over. Its label \"Niets bijzonders\" didn't say that. After clicking it, the history showed \"Besproken: niets bijzonders\" with the stored body \"Niets bijzonders\" printed again underneath.\n\n- The button now reads **Niets over te dragen**.\n- The history shows a single line, \"Besproken, niets over te dragen\". The body is no longer printed for this kind of note.\n- New notes store \"Niets over te dragen\" as their body. Older notes keep \"Niets bijzonders\" in the database, which only shows in the CSV export.\n- The docs and test names are updated to match. The test now checks that the line shows once.\n\n339 PHP tests and pint pass.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/nothing-to-report",
+            "title": "Call the skip button \"Niets over te dragen\""
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024075648-d106ed"
+}

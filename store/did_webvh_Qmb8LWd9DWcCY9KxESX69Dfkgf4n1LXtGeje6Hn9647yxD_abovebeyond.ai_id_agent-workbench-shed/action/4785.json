@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nBespreken opened on \"Nog te doen\", so anything discussed disappeared from the list. To check what was told, or to see where a discussed item sits in the order, you had to switch to \"Alles\", a small text button that was easy to miss.\n\nThe list now shows everything by default, in the agenda's order (high importance first, then the largest clients and suppliers, the busiest projects and people). Discussed items stay in their place with the green dot and \"besproken\". A \"Besproken tonen\" checkbox hides them and leaves only what is still to do. The relation list under Relaties follows the same toggle. The URL keeps `lijst=open` when they are hidden.\n\n## Checks\n\n- 345 PHP tests and pint pass. Four tests that assumed discussed items were hidden by default now check the other way round.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/show-discussed",
+            "title": "Show discussed items in place in Bespreken, with a toggle to hide them"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024103954-d3c377"
+}

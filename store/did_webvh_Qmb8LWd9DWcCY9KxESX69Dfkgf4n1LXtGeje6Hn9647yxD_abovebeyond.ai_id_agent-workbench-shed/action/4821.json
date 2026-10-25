@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ad07225420ea79304cfd99f8dabd78519bf2e21",
+            "branch": "workbench/period-control",
+            "files_sha256": "fe2555ec2c94c722d5ad122ad43d8e1376363a2e7442255818bb4d35de5daab5",
+            "message": "Give the Bouwsoft period choices a label and one segmented control\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024134531-0e9d98"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a73f0938ca5cf0afecbc7ad7ab1f0a4a7690c1cc",
+            "branch": "workbench/home-index",
+            "files_sha256": "3e2d4d53f5c24a6893203e0228f1f27872c1630b54a1800cbbe340eb75dc3492",
+            "message": "Add a start page with worksheets and handover, icons in the menu\n\nThe root address shows the last working day's worksheets next to the\nhandover progress, each with its way in. The Dagrapport moves to\n/dagrapport under the same route name; an old /?datum= link redirects\nthere. Every menu item gets an icon from the worksheet marks' set.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024100220-7ed0c9"
+}

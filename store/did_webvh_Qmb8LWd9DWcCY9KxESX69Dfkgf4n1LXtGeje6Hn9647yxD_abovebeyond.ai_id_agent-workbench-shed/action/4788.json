@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:33",
+            "note": "Reading the new Going Out, Staying In PDF and the editor-role report; checking context from the other gentells session",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261024112359-157818"
+}

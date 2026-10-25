@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe root address opened straight on the Dagrapport, so whoever came in for the handover first landed on the worksheets. `/` is now a start page with the two sides of the tool next to each other:\n\n- **Werkfiches**, for the last working day (the day the Dagrapport opens on): fiches handed in out of the crew, typed into Bouwsoft out of those, and open signals. These are the same figures as the line at the top of the Dagrapport. Buttons to the Dagrapport and Ploeg.\n- **Overdracht**: discussed out of the total, per step (Relaties, Projecten, Mensen) with a groove each, the relations told about with nobody to take over, and the next item on the list with its reason. Buttons to Bespreken and Netwerk.\n\nThe Dagrapport moves to `/dagrapport` and keeps its route name, so every existing link to it still works. An old bookmark of `/?datum=...` redirects to that day's report. Login, the welcome link, the logo and the site app's \"Bureau\" link land on the start page.\n\nThe menu gets a Start item and an icon in front of every item, drawn in the same hand as the worksheet marks (`x-icoon`). The group separators are hidden on phone width, where the groups wrap under each other.\n\nThe untaken count moves from the Handover component into `Agenda::untaken()` so both pages share it.\n\nReplaces #161, which conflicted after #160 merged; same change, rebuilt on current main.\n\n## Checks\n\n- 345 PHP tests, 19 JS tests and pint pass.\n- New HomeTest: both blocks with their figures and the next item's link; `/dagrapport` opens; `/?datum=` redirects.\n- Clicked through on a demo copy at desktop and phone width.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/home-start",
+            "title": "Add a start page with worksheets and handover, icons in the menu"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024100606-e9a2e0"
+}

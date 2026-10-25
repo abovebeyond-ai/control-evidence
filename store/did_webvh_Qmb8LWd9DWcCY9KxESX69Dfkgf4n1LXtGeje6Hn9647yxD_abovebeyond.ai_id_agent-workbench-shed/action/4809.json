@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bf0c71c46a755fc8f983ce60d511049714f3bd7a",
+            "branch": "workbench/list-chevron",
+            "files_sha256": "ea0d49d269c335cb5f4e4c0558787cd48c8a8c4e99dc369609ea5ce8857621f0",
+            "message": "Replace the Wie/Projecten buttons in the Netwerk list with a fold-out arrow\n\nOne arrow on every row, with a label saying what it opens. Project\npanel heading and hints say relations instead of wie.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024133248-4d51bb"
+}

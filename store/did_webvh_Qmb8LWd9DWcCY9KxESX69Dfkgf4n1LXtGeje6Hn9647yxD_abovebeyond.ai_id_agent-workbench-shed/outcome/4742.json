@@ -1,0 +1,16 @@
+{
+    "action": "ff919e2781c7d1826cd69659540c50fa",
+    "effect": {
+        "detail": {
+            "base": "852e782f62f7928cbd8c5a2f1583c64b5ea4853c",
+            "branch": "workbench/footer-social-everywhere",
+            "commit": "7ce41fdf5d5f867141247f8afadf439547d1f12b",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4740,
+    "verdict": "ALLOW"
+}

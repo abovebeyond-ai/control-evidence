@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a73f0938ca5cf0afecbc7ad7ab1f0a4a7690c1cc",
+            "branch": "workbench/discussed-count",
+            "files_sha256": "567fae9b7adaee91c954cead419902846266d4e4967066404aac492e131cc438",
+            "message": "Count takers and off-list nodes as discussed in Bespreken\n\nA node counts as discussed once it has a note or somebody is named to\ntake it over. Nodes discussed outside the ranked agenda join the end of\ntheir step, so the progress counts all of them. Selected toggles in the\npanel get a light fill so only Bewaren is solid.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024095758-dbc9c6"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "96a3df4130108ea3fc84729eb4f8151177f1b704",
+            "branch": "workbench/studio-host-stockcars",
+            "files_sha256": "9332799523aaecb708547e1b03ab4385a6aa1c5b92b115a5731616e89629ddde",
+            "message": "Deploy the production studio to stockcars.sanity.studio"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261024085613-70239b"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "9467f9762b30a97b20ee3b6f3e2f1242",
+    "effect": {
+        "detail": {
+            "base": "2e6b126bcf8a184a2c6867afa5f4c8ac068e70ba",
+            "branch": "workbench/topology-v1",
+            "commit": "db4e54088bfbeec4fc2d58a0176bab6be1737628",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4827,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fb6211354001768ed724db315034a6bd056a6fe8",
+            "branch": "workbench/context-heading",
+            "files_sha256": "c82f4547455b83ed0f7c08dac638ef4ff798d0146df774810d5e80b66a97381d",
+            "message": "Name what each handover panel is for, and put a project's first\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024143027-34d568"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: A team member who was given the editor role in Accounts still cannot edit posts outside their own. A role change only counts after the next sign-in, so the editor role (#384) does nothing for someone already signed in.\n\n**What happens.** The role a request acts with comes from the sign-in token, not from the users table. `getRequestUser` (`packages/server/auth.mjs`) returns the token payload as signed, and `GET /auth/verify`, which the Studio calls on load to learn who is signed in, echoes the same payload. A token lives seven days. So when an admin changes someone's role in Accounts, both the API (`mayEdit`) and the Studio's `canEdit` keep using the old role until that person signs out and in again, or the token runs out.\n\nThat holds both ways: a promotion to editor or admin does not count yet, and neither does a demotion to client. A removal already counts at once, because `isDisabled` looks the account up on every request.\n\n**Seen in.** An editor role was given after #384 was deployed. The person reported back that the same posts still cannot be edited.\n\n**Expected.** A role changed in Accounts counts on the next request, the way a removal already does.\n\nSource: Portal mail:33.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "A role changed in Accounts only counts after the next sign-in"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261024112801-17cf46"
+}

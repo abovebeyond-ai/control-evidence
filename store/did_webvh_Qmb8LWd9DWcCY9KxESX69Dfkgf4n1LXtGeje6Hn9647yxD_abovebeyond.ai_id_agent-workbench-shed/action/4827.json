@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2e6b126bcf8a184a2c6867afa5f4c8ac068e70ba",
+            "branch": "workbench/topology-v1",
+            "files_sha256": "e273584e3a54e675abee55c98e15c08870fb7d824854f6150ee6dfeb1434c2fa",
+            "message": "Write down the handover graph's topology as version 1.0\n\ndocs/topology.md describes the nodes, edges, properties and knowledge\nof the graph and how versions move; App\\Graph\\Topology is the registry\nthe code reads. Notes are stamped with the version they were written\nagainst, the graph data carries it, and the handover CSV gains the\nanchor, source and version per row.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024135456-3f70fa"
+}

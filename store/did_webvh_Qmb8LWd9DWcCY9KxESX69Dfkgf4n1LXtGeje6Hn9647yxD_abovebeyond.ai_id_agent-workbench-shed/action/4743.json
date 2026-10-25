@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The social icons from #39 sat in the footer's Contact column, which exists only in the full footer. Pages with the contact block above the footer (home, the car pages) use the compact footer, so their footer had no icons at all.\n\nThe icons now sit under the brand line in both footers. In the full footer this also takes them out of the Contact column, where they made that column longer than the others. The icons in the contact block itself stay.\n\nChecked on a production build at desktop and phone width, on the home (compact footer) and on Over ons (full footer): four links in each footer, names and `rel=\"noopener\"` unchanged.\n\nOn phones the gap between the icons grows from 8px to 16px, so a thumb hits the one it means.\n",
+            "branch": "workbench/footer-social-everywhere",
+            "title": "Social icons in every footer, more room between them on phones"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261024080421-b3a780"
+}

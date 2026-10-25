@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ae0a5835d36ee83a66ad92994ce63e0001b1d3f4",
+            "branch": "workbench/network-balance",
+            "files_sha256": "ca1a994322623221d972e2e454ede1654757a4c0418b8c1f1695c7ec0f8bf7fa",
+            "message": "Balance the Netwerk page around the graph\n\nThe side panel repeated the open relation's projects, which the list\nunder the graph already opens, and ran twice as long as the graph\ncolumn. The graph sat in a 640px box with its picture, a wide band,\nfilling the middle half, and opening a relation only centred on it.\n\n- Drop the Projecten block from the panel and its query.\n- Keep the panel in view beside the graph on wide screens, with its\n  own scroll.\n- Lower the canvas to 500px and size the graph from its box.\n- Opening a relation frames it and the relations it shares projects\n  with, so its lines fill the canvas.\n- Let the relation list under the graph run longer.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024074824-3dc12d"
+}

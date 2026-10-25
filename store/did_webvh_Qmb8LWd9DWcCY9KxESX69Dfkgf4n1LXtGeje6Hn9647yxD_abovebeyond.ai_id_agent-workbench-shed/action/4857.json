@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "70eccb905b6f188d97518d96483cdfe942dc41a5",
+            "branch": "workbench/side-tabs",
+            "files_sha256": "1a98be5dff230b129710a648858312748adfd2cb7bebd9ca17fe657438718139",
+            "message": "Show what is open in Netwerk as one card with tabs\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024144009-211449"
+}

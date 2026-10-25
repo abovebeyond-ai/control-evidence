@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "852e782f62f7928cbd8c5a2f1583c64b5ea4853c",
+            "branch": "workbench/footer-social-everywhere",
+            "files_sha256": "5b2bec1d70cab74477707d934450b07e680b1e63b9c6c1fb1afd2b43f3e0d545",
+            "message": "Move the footer social icons under the brand line, on every page"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261024080421-b3a780"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6782709262d6d8d984f4ce5f93c346e9e75ce4dd",
+            "branch": "workbench/flat-panel",
+            "files_sha256": "feeb3beb5d2dea9371e5e0dc94f6a5396f14470091c25610f3a497412491ae8f",
+            "message": "Flatten the handover panel to belang, who takes over, what to know\n\nThe panel mixed new input, earlier notes and properties in one column,\nwith two near-identical rows of colleagues (who carries it today, who\ntakes it over), a group picker and two checkboxes. It now asks three\nthings in the order the table goes through them, with Bewaren under\nthem and what was told before below.\n\n- Who takes over is a property of the node (relation_tags.takers),\n  filled from the latest note that named somebody. It shows in the\n  panel when it opens, in the Bespreken list and in the graph.\n- Group, carrier and the risk/habit tags are no longer asked. Stored\n  values stay and are still exported; their filters and the colour by\n  group are gone.\n- Red in the graph now means told about with nobody named to take it\n  over; Bespreken counts those relations. Its agenda puts high\n  importance first.\n- A note records where it came from (source, source_ref), so notes\n  taken from a recorded conversation can hang off the same anchors and\n  show in the same panel.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024082621-3681c4"
+}

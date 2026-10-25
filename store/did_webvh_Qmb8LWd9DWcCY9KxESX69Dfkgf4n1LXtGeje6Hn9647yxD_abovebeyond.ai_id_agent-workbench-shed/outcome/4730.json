@@ -1,0 +1,16 @@
+{
+    "action": "3b6fc617d2037c9a4828e5ff46dc25e6",
+    "effect": {
+        "detail": {
+            "base": "ae0a5835d36ee83a66ad92994ce63e0001b1d3f4",
+            "branch": "workbench/network-balance",
+            "commit": "163580fbc476d86ff0d91d8b9accc10a30f0f959",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4728,
+    "verdict": "ALLOW"
+}

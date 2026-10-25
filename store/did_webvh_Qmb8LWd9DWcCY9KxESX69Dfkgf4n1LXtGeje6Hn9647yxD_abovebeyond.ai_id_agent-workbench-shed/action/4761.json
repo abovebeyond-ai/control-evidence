@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The production studio still deployed to `peugeot-de-backer.sanity.studio`, the name from before the rebrand. `studioHost` in `studio/target.ts` now gives `stockcars` for production; staging stays `stockcars-staging`.\n\nThis takes effect on the next `npm run deploy` in `studio/`. That deploy creates the studio at `stockcars.sanity.studio` and does not remove the old one: `peugeot-de-backer.sanity.studio` keeps working until it is deleted under Studios in the Sanity manage UI. If the name `stockcars` is already taken by another Sanity project, the deploy says so and nothing changes.\n\nThe README table lists the new host. The npm package name (`peugeot-de-backer-studio`) is internal and left alone.\n",
+            "branch": "workbench/studio-host-stockcars",
+            "title": "Deploy the production studio to stockcars.sanity.studio"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261024085613-70239b"
+}

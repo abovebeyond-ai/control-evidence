@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:33",
+            "note": "Issue pipeline #385, PR #386: role read per request (editor role only counted after re-sign-in). R9 v6 checked: p.3 63% gone, 56% Schweppes/OgilvyOZ holds, BE/NL overcrowding holds; p.9 NL bar still ~21.8 instead of 23.4",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/386"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261024112854-9c8b52"
+}

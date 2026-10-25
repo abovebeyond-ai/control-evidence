@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe progress on Bespreken and the start page read \"1 van 60 besproken\" for Relaties, while GLK has hundreds of relations, about 195 running projects and 59 active people. The 60, 38 and 25 are the ranked agenda (high importance and added by hand, the 30 largest clients and suppliers, the busiest projects and people of the last three months), but nothing on the page said so, so the totals looked wrong.\n\n- The agenda progress now says what it counts: \"1 van de 60 belangrijkste besproken\", per step and in total.\n- Each step adds a second line with the full count: how many relations, running projects and active people there are, and how many of those were discussed, on or off the list. \"Relaties: 1 van de 60 belangrijkste; 1 van 733 in totaal\".\n- Relations in total are the same set the Relaties list shows (relations with activity in the last three years), so the two numbers agree.\n\n## Checks\n\n- 346 PHP tests, 19 JS tests and pint pass. New test for the totals per step.\n- Checked on a demo copy, Bespreken and start page.\n\nTouches `handover.blade.php` on different lines than #163; both merge on their own.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nhttps://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L\n",
+            "branch": "workbench/step-totals",
+            "title": "Say the agenda counts the most important, and show the totals per step"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261024132737-05abcb"
+}

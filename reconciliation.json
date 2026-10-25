@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-24T07:34:46+00:00",
+    "computed_at": "2026-10-25T07:34:43+00:00",
     "window": {
-        "since": "2026-10-17T07:33:24+00:00",
+        "since": "2026-10-18T07:33:23+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 27,
-                "gateway": 27
+                "github": 28,
+                "gateway": 28
             }
         },
         "Trendwolves/gentells-site": {
@@ -125,8 +125,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 36,
-                "gateway": 36
+                "github": 53,
+                "gateway": 53
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -206,8 +206,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 4,
+                "gateway": 4
             }
         },
         "Hoet-design/hoet-design-web": {
@@ -305,8 +305,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 14,
-                "gateway": 14
+                "github": 15,
+                "gateway": 15
             }
         },
         "Trendwolves/gentells-standard": {
@@ -327,8 +327,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/bextrust": {
