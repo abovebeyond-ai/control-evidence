@@ -1,0 +1,16 @@
+{
+    "action": "f652acc11e9585614496b40b3b76d6e8",
+    "effect": {
+        "detail": {
+            "base": "f17cee14054c5ab3c6a4ad0ad151f19cb73c66cd",
+            "branch": "workbench/drop-staging",
+            "commit": "6f31da8bd7741578b4fdcca2261dcc771ac6a692",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4863,
+    "verdict": "ALLOW"
+}

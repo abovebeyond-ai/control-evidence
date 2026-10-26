@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The staging site on naviskore.on-forge.com is being removed, and its address no longer resolves. Elixir measured it from `elixir.json` and kept reporting it as down, with a failed deploy.\n\nThis leaves production (naviskore.be) as the only environment Elixir watches. Nothing in the app reads this file.\n",
+            "branch": "workbench/drop-staging",
+            "title": "Drop the staging environment from elixir.json"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261025153818-5d1579"
+}

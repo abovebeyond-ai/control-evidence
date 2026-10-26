@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "This replaces #266. The dependency audit job stops at its first failing step. Once #266 fixed Composer, the npm audit behind it failed too. This branch carries both fixes, so `Dependency audits` passes again for this pull request and the ones after it.\n\n**Composer: `livewire/livewire` 4.4.0 \u2192 4.4.8** for [GHSA-mhf7-xp6r-6qrc](https://github.com/advisories/GHSA-mhf7-xp6r-6qrc) (medium, authorization bypass in `#[Authorize]` / `#[Json]`). The app uses neither attribute, so there was no exposure that we found. The commit is the same as #266, including the test change: in 4.4.8 a not-found in a component call becomes a 404 response in tests, so `ACourseAndItsGoalsTest` asserts `assertNotFound()` and that `editing` stays null. The test fails when the course guard in `Goals::edit` is removed.\n\n**npm: `npm audit fix`** for [GHSA-mrhx-c7xc-m3w5](https://github.com/advisories/GHSA-mrhx-c7xc-m3w5) (high, zod can exhaust memory on oversized collections). zod came in through puppeteer \u2192 chromium-bidi. The lock moves puppeteer 25.12.0 \u2192 25.16.0, which stays within `^25.12.0` in package.json, and zod to 4.6.7. `npm audit --audit-level=high` finds 0 vulnerabilities. package.json is unchanged.\n\n**Printing.** Puppeteer installs its own Chrome on `npm ci`, so the first deploy after this downloads a newer Chrome for report printing. After the deploy, `php artisan naviskore:print-check` says whether it starts, and which library is missing if it does not.\n\n**Tests.** Full PHP suite on the workbench: 1366 passed, 21 failed. The 21 are the same failures as on `main` (Chrome, PDF and build-stamp tests that need the server). Pint passes, and `composer audit` is clean.\n",
+            "branch": "workbench/audits-green",
+            "title": "Dependency audits green: Livewire 4.4.8 and npm audit fix"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261025161344-387e26"
+}

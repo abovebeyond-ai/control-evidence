@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b34eaad7b4f85038cd2b5996bc358831dd971635",
+            "branch": "workbench/recent-share",
+            "files_sha256": "0d19c2a6290ac3e7f8ecca6b827bd5841fd3c7d3c40f0e9a6be5469a21ecfb2e",
+            "message": "Rank relations by their share of the last three years\n\nThe handover list ranked clients and suppliers on one calendar year,\nthe last full one. A client with a large project in 2024 and nothing\ninvoiced in 2025 fell off the list, and the reason line read \"in 2025\"\nas if nothing before counted.\n\nEach share row now also carries its share of the last 36 months up to\ntoday, and the agenda ranks and explains on that: \"7,5% van de omzet,\nde laatste drie jaar\". The yearly columns stay for the export.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01At3QtqQy4Jb4ERxwDAA49L"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261025153844-2107ee"
+}

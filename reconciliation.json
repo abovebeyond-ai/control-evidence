@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-25T07:34:43+00:00",
+    "computed_at": "2026-10-26T07:34:26+00:00",
     "window": {
-        "since": "2026-10-18T07:33:23+00:00",
+        "since": "2026-10-19T07:33:04+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -74,8 +74,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 5,
-                "gateway": 5
+                "github": 9,
+                "gateway": 9
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -125,8 +125,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 53,
-                "gateway": 53
+                "github": 54,
+                "gateway": 54
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -154,16 +154,6 @@
                 "github": 0,
                 "gateway": 0,
                 "workflow": "absent"
-            },
-            "pulls": {
-                "github": 0,
-                "gateway": 0
-            }
-        },
-        "abovebeyond-ai/vera": {
-            "dispatches": {
-                "github": 0,
-                "gateway": 0
             },
             "pulls": {
                 "github": 0,
@@ -446,6 +436,16 @@
                 "github": 0,
                 "gateway": 0,
                 "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "abovebeyond-ai/vera": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
                 "github": 0,

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f17cee14054c5ab3c6a4ad0ad151f19cb73c66cd",
+            "branch": "workbench/audits-green",
+            "files_sha256": "741781a475eab82412f163eb4af3296bde7fb9d05c9eb93f5dd0ee9ba9b50c58",
+            "message": "Update Livewire to 4.4.8 and fix the npm audit"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261025161344-387e26"
+}

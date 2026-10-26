@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f17cee14054c5ab3c6a4ad0ad151f19cb73c66cd",
+            "branch": "workbench/livewire-4.4.8",
+            "files_sha256": "b7e9c03ab3a28d1cb8487c1b6937ab7a1f1e05eb974e086ef5c881553598aad4",
+            "message": "Update Livewire to 4.4.8 for GHSA-mhf7-xp6r-6qrc"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261025154910-23b5c1"
+}

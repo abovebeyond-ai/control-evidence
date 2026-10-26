@@ -1,0 +1,17 @@
+{
+    "action": "24531fd2115ba8cbef05d94209c54ea1",
+    "effect": {
+        "detail": {
+            "fields": [
+                "elixir",
+                "nextAction",
+                "status"
+            ],
+            "project": "vera"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4872,
+    "verdict": "ALLOW"
+}

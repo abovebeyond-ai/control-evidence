@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8e704eca1ca089047a4096cbb7f855f83ce32048",
+            "branch": "workbench/by-question-admins",
+            "files_sha256": "803ee8d7494235de97d2d23bd53c1d122199667498f68d39e8066aafa6f5bba6",
+            "message": "Offer \"Per vraag\" to admins only with SCORING_BY_QUESTION=admins"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261026072102-294f40"
+}

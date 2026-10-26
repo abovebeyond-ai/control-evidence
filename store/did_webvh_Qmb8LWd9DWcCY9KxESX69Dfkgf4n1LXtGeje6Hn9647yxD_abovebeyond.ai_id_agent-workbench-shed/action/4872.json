@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "clearNextAction": true,
+            "elixir": false,
+            "status": "done"
+        },
+        "resource": "portal:vera"
+    },
+    "run": "workbench-20261025153833-0b24e5"
+}

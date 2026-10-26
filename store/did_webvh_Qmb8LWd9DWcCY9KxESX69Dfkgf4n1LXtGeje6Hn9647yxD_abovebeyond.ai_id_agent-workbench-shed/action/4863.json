@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f17cee14054c5ab3c6a4ad0ad151f19cb73c66cd",
+            "branch": "workbench/drop-staging",
+            "files_sha256": "8033287bc964eed8feeda11d4c3778eeb53ece97820cff0cf1087d0105ab3cd2",
+            "message": "Drop the staging environment from elixir.json"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261025153818-5d1579"
+}
