@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The campaign manager's page (`/campaign/<slug>?token=\u2026`) listed donations but had no export, and it showed anonymous donors as \"Anonymous\". The anonymous choice is about the public campaign page. The manager needs the name to thank a donor and to follow up.\n\n## Changes\n\n- **Anonymous donors by name**: on the manager's page and on the finance-gated `/manage` page, an anonymous donor shows by name with a small \"anonymous\" tag, so the manager knows not to thank them in public. The public campaign page is unchanged.\n- **Export on the manager's page**: \"Export to Excel\" next to \"Edit campaign message\" downloads the rows on the page as `afrodidact-<slug>-donations-<date>.csv`, in the same format as the finance exports (semicolons, comma decimals, BOM). Columns: date, name (with \"(anonymous)\" where it applies), email, type, amount, refunded, net amount, status, message. The file is built in the browser from the rows the page already shows, so there is no new endpoint.\n- **No finance fields**: national registry numbers, addresses, company VAT, invoice and certificate numbers and Mollie ids stay out of the manager export. `MANAGER_COLUMNS` in `src/lib/csv.ts` holds the list, and a unit test fails if one of those fields is added.\n\n## Verification\n\n- `npm test`: 60 unit tests pass, including the new guard on `MANAGER_COLUMNS`.\n- A local build with Sanity and Mollie swapped for fixture stubs, driven by Playwright: 15 checks pass. The anonymous donor shows by name with the tag on both pages; the export has the expected header, one line per donation shown, amounts as numbers and no registry number or address; a wrong token shows no data and no button.\n\nNot changed: below 600px wide the manager's page hides the Name column.\n",
+            "branch": "workbench/manager-export",
+            "title": "Campaign manager page: export, and anonymous donors by name"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261026143751-735bed"
+}

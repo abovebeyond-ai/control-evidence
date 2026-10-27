@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "088cfc89272c236c93babc9f76fd39d09245e9fa",
+            "branch": "workbench/clone-goals",
+            "files_sha256": "e9ac6783f4ed187a057c39957eca7ed292f09b21733a62563671fe77a3e961ac",
+            "message": "Cloning keeps an evaluation whole and asks who comes along\n\nA cloned evaluation lost its subgoals and maxima and got today's date.\ncloneWithProject loaded attainmentLevels (level = 1 only) and synced it by\nid, so the pivot max stayed behind and the level-2 rows of the same table\nwere never read. Every copy also landed on the day of cloning, so all its\nevaluations fell in the running term, in cloning order.\n\n- An evaluation copies its att_level_evaluation rows as they are: the\n  attainment levels with their max and the subgoals under them. A test by\n  question still rebuilds its maxima from its lines (S3-9).\n- Its date moves with the project start: as many days after the new start\n  as it was after the old one, unless the form says to keep the dates. The\n  form shows each evaluation with the date it will get, following the start\n  date and that choice as the teacher changes them.\n- The pupils a company evaluation names come along when they are in the\n  new project. Scores, absences and feedback never do.\n- The form asks who comes along: the team (ticked), the class groups and\n  the pupils added to the project itself (both unticked, so a copy gets no\n  pupils nobody chose). A class group of another school year never comes\n  along. For a project of another year the form proposes its dates moved\n  by whole school years.\n- replicate() handed the original's loaded relations to the copy, so the\n  copy could answer with the original's team or pupils; copies now start\n  without relations.\n- The clone takes its input through CloneProjectRequest: an empty name or\n  an end before the start is a validation error instead of a server error,\n  and only evaluations of the original are cloned (any evaluation id was\n  accepted, also from another school).\n\nSaving the evaluation form wiped its subgoals. syncAttainmentLevels called\nsync() on attainmentLevels(), whose level = 1 filter does not reach the\npivot query, so every save detached every subgoal. It now attaches and\ndetaches only attainment levels, and a level that leaves takes its\nsubgoals with it.\n\nRules S1-4.1 to S1-4.5 and a new chapter S2 (R S2-1.1).\n\nPortal: Een project klonen neemt de subdoelen, maxima en de plaats van elke evaluatie mee, en vraagt wie er meegaat. Een evaluatie bewaren laat de subdoelen staan."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261026123238-27e9bd"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "58fbef38f28164ac0e799378b9d8a27e7f24a603",
+            "branch": "workbench/usage-teachers",
+            "files_sha256": "0ea5f28e68e36360bdf8bdbb85d6f335a1e1cac8e1b00778af75b22879818a62",
+            "message": "Show per teacher what they entered, link teachers to classes, mark who is no teacher"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261026115128-87641d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fe2cfac038dcefb859f0a258476d6fb9ca8698ad",
+            "branch": "workbench/usage-enrolled-2",
+            "files_sha256": "26ab364512db9e1c660d710c176cbfdf8ce3c9d4ab75a8e70f980080696453dd",
+            "message": "Count pupils with marks on the usage page only when they are enrolled\n\nThe headline of the usage page counted every pupil with a mark in a project\nof the school, enrolled or not, out of the pupils enrolled in a class of the\nschool that year. Marks stay when an enrollment goes, so the figure could read\nmore than it is out of: on production on 2026-10-26 athena Heule read\n\"336 van 335\", for one pupil with marks and no enrollment in any school or\nyear.\n\n- Pupils with marks are now the pupils enrolled in a class of the school in\n  the window who got a mark there, so the figure never exceeds what it is out\n  of. Pupils with marks who are not enrolled there are counted apart and shown\n  on a line under the figure, only when there is one (\"1 leerling met scores\n  is hier niet ingeschreven\"). Their marks still count under Scores and in the\n  charts, which keep adding up to the same total.\n- Through the years reads the same number from the headline. Per class was\n  already right: it starts from the pupils in the class, so a pupil in no\n  class counts in no row.\n- The marks per pupil are one query, shared by the headline and per class\n  (marksPerPupil), in place of the single count(distinct) row.\n- The headline is remembered under headline.3: a closed year is kept for good\n  and a deploy leaves the usage store alone, so headline.2 would keep the old\n  count on screen. The per-class key keeps its meaning and stays.\n- R B8-2.4 defines the number; R B8-2.2 says a pupil in no class counts in\n  none.\n\nTheUsageCountsEnrolledPupilsTest covers a pupil enrolled nowhere, one\nenrolled at another school, one enrolled at this school in the year before\nonly, the line under the figure (none, one, several) and a headline left\nunder the old key. The old code fails all three tests; eleven mutants are\nkilled.\n\nPortal: Op de pagina Gebruik telt \"Leerlingen met scores\" alleen nog leerlingen die in een klas van de school ingeschreven zijn; wie scores heeft maar niet ingeschreven is, staat er apart onder."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261026092646-8459fb"
+}

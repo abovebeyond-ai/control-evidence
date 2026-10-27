@@ -1,0 +1,16 @@
+{
+    "action": "c352e8d94bed01dd062d5a7e55a5b115",
+    "effect": {
+        "detail": {
+            "base": "088cfc89272c236c93babc9f76fd39d09245e9fa",
+            "branch": "workbench/clone-goals",
+            "commit": "9d52e8a0201837d2de5666e21ed63a9a618ae64a",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4962,
+    "verdict": "ALLOW"
+}

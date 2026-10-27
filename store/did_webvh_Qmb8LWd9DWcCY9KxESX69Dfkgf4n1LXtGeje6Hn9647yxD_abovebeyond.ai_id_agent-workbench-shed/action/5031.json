@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`/singleshowroom/{dealer_id}/{vehicle_id}` was a public, unauthenticated route. It decoded\nboth ids as plain base64 and rendered a slide for the vehicle with its make, model and retail\nprice, without checking whether the vehicle was published, unsold or in the dealer's showroom\nselection. The ids run in sequence, so every vehicle of every dealer could be enumerated from\nit. Replayed on 26 October 2026: a sold, unpublished, unfinished vehicle came back with status\n200 and its retail price.\n\nA visitor without a login is meant to see only what a dealer published: the website (R S2-5.2)\nand the showroom selection (R S2-7.6). This route showed everything.\n\nThe route existed only as the page a headless Chrome photographed for \"Download showroom\".\nSince 16 September 2026 the download draws each slide in PHP (`App\\Support\\ShowroomSlide`,\nR S2-7.16), so nothing links to it any more.\n\n## Change\n\n- Remove the route `home.index.singleshowroomimage` and `SettingsController::singleShowroomImage`.\n  It was the only reader of the controller's injected `IVehicleRepository` and `IDealerRepository`,\n  so those constructor dependencies go with it.\n- Remove the orphaned wrapper view `ownstock/showroom_single_vehicles.blade.php`. The slide\n  markup lives in `ownstock/showroom_vehicle.blade.php`, which the carousel still includes; the\n  `eager` branch there had no other caller, so it collapses to the lazy path the carousel wants.\n- Drop `singleshowroom/*` from `FrameHeaders` and `Disallow: /singleshowroom/` from\n  `robots.txt`: both guarded a page that no longer exists.\n- Rules: R S2-7.6 and R P3-3.11 no longer name the path; R S2-7.11, which described the old\n  screenshot behaviour, lapses to `vervallen`, superseded by R S2-7.16.\n\nFixes bevinding singleshowroom-toont-elke-wagen.\n\n## Tests\n\n- `ShowroomTest`, `FrameHeadersTest`, `ShowroomScreenIsNotIndexedTest` and `SmokeTest` drop the\n  cases that drove the removed route; `the_carousel_keeps_the_photo_lazy` still passes, so the\n  public showroom is unchanged.\n- `RulesSourcesTest` and `RulesIdentityTest` confirm the rule and finding edits are consistent.\n- Full suite green on a fresh database.\n",
+            "branch": "workbench/drop-singleshowroom",
+            "title": "Remove the public /singleshowroom route that rendered any vehicle"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026151557-fef715"
+}

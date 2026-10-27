@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cdef86e7232268a9faf7694e73bb809f5ff0ede8",
+            "branch": "workbench/campaign-export",
+            "files_sha256": "ff55692d1232ae8d7eee1a82c3f784465601ef8f3c51af7de85ba6dc4e26c16e",
+            "message": "Finance: export per campaign, campaign filter on request tabs, open link"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261026131121-19087c"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:34",
+            "note": "Reading the iframe price slider code: lower bound fixed at 6000 and filter ignores the stocklist margin",
+            "state": "in-progress"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261026100750-6827cc"
+}

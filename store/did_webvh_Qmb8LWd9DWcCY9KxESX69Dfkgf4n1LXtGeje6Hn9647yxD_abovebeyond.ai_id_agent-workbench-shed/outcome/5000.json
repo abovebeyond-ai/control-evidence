@@ -1,0 +1,16 @@
+{
+    "action": "48abba6e0bd425cb83b1c66bdb632a08",
+    "effect": {
+        "detail": {
+            "base": "8ac95a97b83167755fba80bf697e97f132c6704c",
+            "branch": "workbench/sort-safety",
+            "commit": "589b53dd84db093426cceca88e7c46629b52bfb5",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4998,
+    "verdict": "ALLOW"
+}

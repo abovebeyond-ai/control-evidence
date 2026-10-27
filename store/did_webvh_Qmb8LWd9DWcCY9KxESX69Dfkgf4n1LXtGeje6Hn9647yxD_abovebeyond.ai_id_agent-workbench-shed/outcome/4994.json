@@ -1,0 +1,16 @@
+{
+    "action": "6894d7eeefdcb091a74b859cc5be4cb7",
+    "effect": {
+        "detail": {
+            "base": "cdef86e7232268a9faf7694e73bb809f5ff0ede8",
+            "branch": "workbench/campaign-export",
+            "commit": "873281fe5c7bfe4ba43fbb98f8377e507cb099f6",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4992,
+    "verdict": "ALLOW"
+}

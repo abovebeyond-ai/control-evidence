@@ -1,0 +1,16 @@
+{
+    "action": "4e33ac7fb4a6d22f5bbb23b9156f66c2",
+    "effect": {
+        "detail": {
+            "base": "b4e7c4aecb479f83a444b399b83897f023673072",
+            "branch": "workbench/stocklist-sort-allowlist",
+            "commit": "eb81d15d0e745bd97fe430284efe40d46310e1fe",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4968,
+    "verdict": "ALLOW"
+}

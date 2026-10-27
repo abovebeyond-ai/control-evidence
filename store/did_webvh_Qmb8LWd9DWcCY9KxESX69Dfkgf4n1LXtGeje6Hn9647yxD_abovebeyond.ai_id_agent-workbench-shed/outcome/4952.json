@@ -1,0 +1,16 @@
+{
+    "action": "09b12f967c4cd72791a75aaf763cd6f8",
+    "effect": {
+        "detail": {
+            "base": "8ca655c869eda4d6ae79541976ba5ffa3c09f429",
+            "branch": "workbench/livewire-4.4.8",
+            "commit": "a46681eb836f363770e144cf17e274e0b8df0e63",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4950,
+    "verdict": "ALLOW"
+}

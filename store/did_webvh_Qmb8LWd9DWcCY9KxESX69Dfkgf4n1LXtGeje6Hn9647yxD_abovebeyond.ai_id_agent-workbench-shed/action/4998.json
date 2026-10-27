@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ac95a97b83167755fba80bf697e97f132c6704c",
+            "branch": "workbench/sort-safety",
+            "files_sha256": "f36d03d22981380edce29679bb3bd8148161c05d8ba27a4f5bde9e7ddb190143",
+            "message": "Keep the list sort out of raw SQL; remove two unauthenticated write routes"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026132038-26b3d6"
+}

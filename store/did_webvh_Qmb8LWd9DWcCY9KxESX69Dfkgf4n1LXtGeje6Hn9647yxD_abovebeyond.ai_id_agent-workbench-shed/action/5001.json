@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two things from the architecture review, both reachable without anything unusual. Stated as what was wrong and what changed; no reproduction steps.\n\n**The sort of the classic overview lists could reach the raw SQL.** Every Beheer list (Dealers, Users, Roles, Locations, Orders and the rest) sorts through `App\\Http\\Helpers\\Search`, which read the sort column and direction from the request. `BaseModel::order` and `Vehicle::order` then put the direction into the ORDER BY as text, and on one list into a raw ORDER BY, so a direction that was not `asc` or `desc` reached the database verbatim. The column name is quoted by the query builder; the direction was not. `Search::sortering` now reduces the direction to `asc` or `desc` before it stores it, one value per column for a multi-column sort written `a|b`, and the dead `^`-to-`DB::raw` branch (no screen ever produced a `^` sort) is removed. A per-list allowlist of sortable columns is named in the architecture audit as the next step; this change closes the path into raw SQL.\n\n**Two maintenance routes changed data without a login.** `removenotexisting` deleted photo rows whose file it could not find, and `historical_update_damage` inserted a damage row on every vehicle, both on each unauthenticated call. Both are from the initial import, both are a one-off job that is long finished, and nothing calls either. They are removed; a request to either is now a 404.\n\nTests: `SortDirectionStaysSafeTest` (3) drives the real `Search::sortering` and checks that a direction the screen never offers is kept as ascending, that `desc` still descends, and that a multi-column sort keeps one direction per column. `LeftoverPublicRoutesAreGoneTest` (1) checks the two routes are gone. All four fail on `main`.\n\nCatalogue: two findings under `bevindingen/2026-10-26-*`.\n\nStill open from the review, each its own change: the `/singleshowroom` read that shows an unpublished vehicle (the finding is in #1047), the per-record ownership checks (leads, votes, export agreements), and the broad allowlisting of filter keys. They are named in the audit.\n",
+            "branch": "workbench/sort-safety",
+            "title": "Keep the classic-list sort out of raw SQL; remove two unauthenticated write routes"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026132038-26b3d6"
+}

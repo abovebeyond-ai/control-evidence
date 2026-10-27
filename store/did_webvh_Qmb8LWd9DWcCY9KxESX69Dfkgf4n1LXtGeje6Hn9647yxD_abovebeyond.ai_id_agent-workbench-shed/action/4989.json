@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Under the questions of a test by question, the maximum per attainment level was one line of codes: \"Per eindterm: 1.1 op 7, 2.3 op 5\". A code alone does not say which attainment level it is.\n\n## What changes\n\n- **A table instead of one line:** each attainment level gets its own row with its code, its name and its maximum (the sum of its points over the questions). Names wrap instead of being cut, and codes and names line up whatever the width of a code.\n- **No points yet:** such an attainment level now reads \"nog geen punten\" instead of \"op nog niets\".\n- **Rule:** R S3-9.10 now describes the table.\n\nOnly the view changes; nothing is computed differently.\n\n## Tests\n\n- `ATestByQuestionOnScreenTest` checks code, name and maximum in order, and the case with no points.\n- The old view fails it, and so does dropping the name, the code or the new wording.\n- `tests/Feature/Scoring` and the rule tests pass.\n",
+            "branch": "workbench/per-eindterm-names",
+            "title": "Show code and name per attainment level under the questions"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261026130638-74bf65"
+}

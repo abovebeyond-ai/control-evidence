@@ -1,0 +1,16 @@
+{
+    "action": "0de3ccd4ecf5ff1316fb0891f80e7932",
+    "effect": {
+        "detail": {
+            "base": "487c12c2f3a6ae02c3ad081a2df1b5ff4edfec4c",
+            "branch": "workbench/finance-note-box",
+            "commit": "3999111bdf764203df9f8d29c281767eda87ac36",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5034,
+    "verdict": "ALLOW"
+}

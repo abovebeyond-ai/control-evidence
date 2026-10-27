@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: The price slider in the website iframe cannot go below or above the 2nd/98th percentile of the stock, so the first move of the slider drops the cheapest and the dearest vehicles from the list. Visitors filtering on price never see them.\n\n## What happens\n\nOn a dealer website with 769 vehicles in the list, the price slider runs from \u20ac 6.000 to \u20ac 84.000. As long as nobody touches it, a car of \u20ac 5.500 is in the list. As soon as a visitor moves either handle, the search sends `lo;hi` with lo = 6.000 and that car is gone. The dealer has no website filters set, and Settings > Website has nothing to change the lower bound.\n\n## Why\n\n`WebsiteController::websiteHistogram` takes the slider's bounds from the 2nd and 98th percentile of the prices (to keep one outlier from flattening the histogram bars). But the bounds are also the filter: the handles cannot go past them, so every vehicle outside the percentile range is unreachable once the slider moves. With 769 vehicles that is the 15 cheapest and the 15 dearest. Mileage and construction year use the same function and have the same gap.\n\n## Asked\n\nLet the slider start from \u20ac 0, or compute the bounds from the actual stock. The public API already does the latter (`min`/`max` over the website price).\n\nSource: Portal mail:34.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Website price slider cuts off the cheapest and dearest vehicles (2nd/98th percentile bounds)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026101312-7c84a4"
+}

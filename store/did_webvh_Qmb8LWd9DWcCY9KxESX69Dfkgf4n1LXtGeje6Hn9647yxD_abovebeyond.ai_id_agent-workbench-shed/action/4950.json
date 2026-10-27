@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ca655c869eda4d6ae79541976ba5ffa3c09f429",
+            "branch": "workbench/livewire-4.4.8",
+            "files_sha256": "90016f85505d0c279e926b01801b1e77f8eecbd95ee9fd67c04aa8bf725f2f66",
+            "message": "Move Livewire to 4.4.8: authorization bypass advisory on 4.3.0 to 4.4.7"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026121206-39ea18"
+}

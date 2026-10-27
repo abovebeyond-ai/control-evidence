@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7a7f8086a4304678462d98aa86145f80b9c1e7eb",
+            "branch": "workbench/manager-export-full",
+            "files_sha256": "6cd18bf0aac92ce518b5843f1018e5a714d3660fbe23d2fb857c51dde148505b",
+            "message": "Campaign manager page: full campaign export"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261026150030-be8b3d"
+}

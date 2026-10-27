@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d3e58eb1bddf53aceaa78ccdc4f50814bc5b0eb9",
+            "branch": "workbench/manager-export",
+            "files_sha256": "6ed703ddcc219a693f47c9e1d0b7bc31f326b9716202f69a05a16813c19c4845",
+            "message": "Campaign manager page: export, and anonymous donors by name"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261026143751-735bed"
+}

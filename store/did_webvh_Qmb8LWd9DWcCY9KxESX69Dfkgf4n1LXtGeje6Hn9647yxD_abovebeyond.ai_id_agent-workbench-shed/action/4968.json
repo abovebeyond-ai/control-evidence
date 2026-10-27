@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b4e7c4aecb479f83a444b399b83897f023673072",
+            "branch": "workbench/stocklist-sort-allowlist",
+            "files_sha256": "7a718c4a85a7c2621178ebe4ccb85ccf62d0d76c671e263ad9fd8bac7beecf5d",
+            "message": "Shared stock sorts only on the offered orders"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026124011-27e1d4"
+}

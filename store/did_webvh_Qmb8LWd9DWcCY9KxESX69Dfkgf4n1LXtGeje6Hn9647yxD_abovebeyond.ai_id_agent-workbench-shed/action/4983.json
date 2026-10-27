@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was wrong\n\n\"Per leerkracht\" on the usage page lists every teacher of the school, so the table ran its full length and pushed \"Per klas\" far down the page. In a local demo with 50 teachers, the \"Per klas\" heading sat at 3,578 px on a 1440 x 900 screen, four screens down.\n\n## What changes\n\n- **The table stands in a box 30rem high that scrolls on its own** (`parts/teachers.blade.php`). It uses the `scrollbar-visible` utility the app already has, because macOS hides its scrollbar until you scroll. The last visible row is cut in half, which also shows there is more.\n- **The header stays in sight.** `thead` is sticky, and each header cell has its own white background and bottom line (an inset shadow). A border on a collapsed table does not move with a sticky header, so the old `divide-y` on the table is gone.\n- **A sort starts the list at its top again.** A click on a column resets the box's scroll, so a sort made while scrolled shows the new first rows.\n- Every teacher stays in the page. I chose this over showing the first ten with a \"show all\" toggle, which would hide the teachers who entered nothing (R B8-2.5) and break Ctrl+F on a name.\n- **Rules:** new R B8-3.4 describes the box.\n\n| Local demo, 50 teachers | Before | After |\n|---|---|---|\n| Height of the teacher section | 2,466 px | 620 px |\n| \"Per klas\" heading, 1440 x 900 | 3,578 px | 1,732 px |\n| \"Per klas\" heading, 390 px phone | 4,387 px | 2,541 px |\n\nIn the browser, the header stays at the top of the box after scrolling 600 px inside it, and a sort clicked while scrolled brings the box back to 0.\n\n## Tests\n\n`the_table_scrolls_on_its_own_so_the_classes_stay_within_reach` (`TheUsageCountsPerTeacherTest`, `@rule B8-3.4`) checks the box, the sticky header, the background and line on all five header cells, and the scroll reset on all four sort buttons. It fails on the old view and on seven mutants of the new one: no height, scrolling sideways only, header not sticky, no background, no line, the Klassen header left plain, and no scroll reset.\n\nThe usage tests and `RulesCoverageTest` pass (35). The full suite has 20 failures on the workbench, the usual list (report PDFs and Chrome printing, archiving, BuildStamp, a fifth school from scratch), none in the usage tests.\n",
+            "branch": "workbench/usage-teachers-short",
+            "title": "Keep the teacher table on the usage page about ten rows high"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261026125812-a3ab94"
+}

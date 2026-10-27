@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "aab3c776a036f2f187355441cd3efb1b98f40dad",
+            "branch": "workbench/usage-teachers-short",
+            "files_sha256": "fdb7688949ad2ae055bb4d1a681e288ccc7fda87092f8d89ec46fd3a9c9bbe25",
+            "message": "Keep the teacher table on the usage page about ten rows high\n\nPer leerkracht lists every teacher of the school, so it ran its full length\nand pushed per class far down the page: with 50 teachers in a local demo,\nthe per class heading sat at 3,578 px on a 1440 x 900 screen, four screens\ndown.\n\n- The table now stands in a box 30rem high that scrolls on its own, with the\n  always-visible scrollbar the app uses elsewhere (macOS hides its own until\n  you scroll). The header stays at the top of the box, with a ground and a\n  line of its own, since a border of a collapsed table does not stick.\n- A click on a column starts the list at its top again, so a sort made while\n  scrolled shows the new first rows.\n- R B8-3.4 describes the box.\n\nSame demo: the teacher section goes from 2,466 px to 620 px and per class\nstarts at 1,732 px (on a 390 px phone, 4,387 to 2,541). The new test fails on\nthe old view and on seven mutants of the new one.\n\nPortal: Op de pagina Gebruik is de tabel per leerkracht ongeveer tien rijen hoog en schuift binnen zichzelf, zodat per klas er meteen onder staat."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261026125812-a3ab94"
+}

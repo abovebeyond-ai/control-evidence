@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: The price filter in the website iframe compares on `retail_price`, while a vehicle from the shared stock is shown at the colleague's trade price plus the dealer's website margin. A visitor who sets a maximum of \u20ac 8.000 gets cars shown at \u20ac 9.250.\n\n## What happens\n\nA dealer has \"Integratie stocklist\" on with a website margin of \u20ac 1.250. With the price slider at a maximum of \u20ac 8.000, the list shows an Opel ADAM at \u20ac 9.250. In the shared stock that car has a trade price of \u20ac 8.000 (recommended retail also \u20ac 8.000), so it passes a filter on the stored price while the visitor sees the price with the margin.\n\n## Why\n\n`VehicleRepository::forWebsiteQuery` applies the slider as `whereBetween('retail_price', [lo, hi])`. The card and the detail page show `CustomerModePrice::websitePrice`: the own retail price for the dealer's own vehicles, and for a colleague's vehicle its trade price in the dealer's VAT plus the margin. The slider's histogram also reads `retail_price ?: trade_price`, so its bounds are not on the shown price either. The public API already filters on the shown price (`PublicWebsitePrice::sql`); the iframe does not.\n\n## Asked\n\nFilter (and draw the slider) on the price the visitor sees: dealer price plus margin.\n\nSource: Portal mail:34.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Website price filter ignores the website margin on shared-stock vehicles"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026101319-69d0b8"
+}

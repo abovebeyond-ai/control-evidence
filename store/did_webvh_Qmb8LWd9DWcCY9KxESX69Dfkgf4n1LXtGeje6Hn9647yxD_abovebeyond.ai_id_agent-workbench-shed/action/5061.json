@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nOn the dealer website widget, the price slider's bars could show a car the list did not: a selected\nprice range with two bars above it but one car underneath.\n\nThe bars and the list were two computations. The histogram was drawn once, at page load, in PHP over\na snapshot of the stock; the list is filtered live, in SQL. So the bars did not move when the visitor\nnarrowed the filters, and they binned the shown price with the PHP form of the rule while the filter\nselected with the SQL form. One price, computed in two places.\n\n## Change\n\nThe bars are now one computation with the list:\n\n- Each slider's bars are a facet: the spread of the stock that passes every OTHER filter, binned into\n  bounds taken from the whole stock, so the handles still reach every car (R S2-5.29). A slider never\n  bins its own range, as R S1-5.15 already does for the Stocklist search.\n- The price bars read the shown price in SQL (`PublicWebsitePrice::sql`), the very expression the\n  filter uses, so a bar stands exactly where the list holds a car.\n- They are recomputed on every filter change and shipped with the AJAX response; the frontend redraws\n  only the bar heights, leaving the bounds fixed so the handles do not jump.\n\n`VehicleRepository::forWebsiteQuery` gains two optional parameters (skip the user filters for the\nbounds; leave one filter out for its own facet), and `websiteMetricValues` reads the values in SQL.\n\nBecause the histogram now runs `forWebsiteQuery` several times per page, a garage whose shared stock\nis limited to a range is geocoded once per page build (`forgetWebsiteCentre`) rather than once per\nquery, so a page view asks Google no more often than before.\n\nFixes bevinding de-prijsbalkjes-liepen-niet-met-de-lijst. R S2-5.13 updated.\n\n## Tests\n\n- `WebsitePriceSliderTest`: a bar stands exactly where the list has a car (own stock plus a\n  colleague's margin vehicle), and the price bars follow a make filter. The four earlier cases\n  (bounds reach the cheapest and dearest, the margin and VAT prices, \"op aanvraag\" drops out) still\n  hold.\n- PHPStan clean; full suite green on a fresh database.\n",
+            "branch": "workbench/website-histogram-live",
+            "title": "Website price slider: bars follow the filters and match the list"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026182423-533131"
+}

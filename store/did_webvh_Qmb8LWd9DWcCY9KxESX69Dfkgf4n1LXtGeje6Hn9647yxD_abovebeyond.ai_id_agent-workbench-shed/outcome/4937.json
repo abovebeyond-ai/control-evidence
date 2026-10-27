@@ -1,0 +1,16 @@
+{
+    "action": "0b2138c39b869baaef362034a41e7dcb",
+    "effect": {
+        "detail": {
+            "base": "8ca655c869eda4d6ae79541976ba5ffa3c09f429",
+            "branch": "workbench/iframe-price-slider",
+            "commit": "7f0cdded0671df0912e9d0bfea53e5da98e9cd18",
+            "files": 17,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4935,
+    "verdict": "ALLOW"
+}

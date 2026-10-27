@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8ca655c869eda4d6ae79541976ba5ffa3c09f429",
+            "branch": "workbench/iframe-price-slider",
+            "files_sha256": "3b4cec89512666b884e4569f66530017429d509d9b26004834708b0a394dc049",
+            "message": "Price slider reaches every car and filters on the shown price; one price rule behind every public door"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026111059-111465"
+}

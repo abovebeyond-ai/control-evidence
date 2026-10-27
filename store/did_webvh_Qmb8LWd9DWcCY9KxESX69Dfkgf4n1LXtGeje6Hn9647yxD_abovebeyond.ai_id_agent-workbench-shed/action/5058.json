@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cc478fae0490859f64f1e71e9b660508fc374a9b",
+            "branch": "workbench/website-histogram-live",
+            "files_sha256": "993c3091bc81e69e084cd85e40fd8df58e8ba74b5636f396a6d7b2afeacd5afc",
+            "message": "Website price slider: bars follow the filters and match the list"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026182423-533131"
+}

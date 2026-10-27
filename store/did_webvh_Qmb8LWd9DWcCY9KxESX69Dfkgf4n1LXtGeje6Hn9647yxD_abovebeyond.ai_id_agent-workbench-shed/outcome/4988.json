@@ -1,0 +1,16 @@
+{
+    "action": "3192a5b4d15f9b641ebe7b50b9095de8",
+    "effect": {
+        "detail": {
+            "base": "aab3c776a036f2f187355441cd3efb1b98f40dad",
+            "branch": "workbench/per-eindterm-names",
+            "commit": "8c8a012ae5cb744ee63aab05afbe269fc82a7455",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 4986,
+    "verdict": "ALLOW"
+}

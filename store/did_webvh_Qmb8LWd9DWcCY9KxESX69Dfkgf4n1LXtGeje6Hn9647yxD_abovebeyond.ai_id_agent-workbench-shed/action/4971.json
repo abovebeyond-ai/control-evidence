@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The shared stock (the Stocklist marketplace of other garages' cars) is sorted by a public Livewire property, `StocklistBrowser::$orderBy`, in the shape `column;direction`. `buildCriteria` passed that column straight to `VehicleRepository::extendedSearch`, which sorted on it, with no check that it is one of the orders the screen offers.\n\nSo a dealer who set `orderBy` to `purchase_price;asc` got the colleagues' cars ranked by what each colleague paid for its car. That amount never leaves the garage that owns it (R S1-5.11). A direction other than `asc` or `desc` was an error page rather than a result.\n\n`buildCriteria` now keeps only an order that is in `Enumeration::orderByOptions()` (the orders the dropdown offers: publication date, retail price, mileage, construction year, and the lease price for dealers who show leasing) and falls back to the default for anything else. This is the same allowlist shape `OfferRepository::getListForLivewire` already uses. The offered orders, the filtering and the field names are unchanged, so nothing a dealer does on the screen changes.\n\nThis is one case of a pattern the architecture audit names (OWASP API3, a property a user may not read must not be sortable either). The others are in a separate security pull request.\n\nTests: `TheStocklistSortsOnlyOnTheOfferedColumnsTest` (3) checks that an offered order sorts the list, that the price columns and a few other columns sort nothing, and that a broken direction gives the default order instead of an error. The first and third fail on `main`. The rules catalogue and the existing shared-stock tests pass.\n\nCatalogue: R S5-1.3 is extended to say the sort is on the offered orders only, and the finding is `bevindingen/2026-10-26-de-stocklist-sorteerde-op-elke-kolom.md`.\n",
+            "branch": "workbench/stocklist-sort-allowlist",
+            "title": "Shared stock sorts only on the offered orders (not on the purchase price)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026124011-27e1d4"
+}

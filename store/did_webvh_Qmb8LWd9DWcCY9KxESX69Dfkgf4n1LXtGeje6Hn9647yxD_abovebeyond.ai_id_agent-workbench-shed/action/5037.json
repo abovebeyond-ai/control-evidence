@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The internal note on the Tax certificates and Invoices tabs of /finance was a one-line input of about 85px wide at a 1280px screen, so a note was cut off after a few words.\n\n## Changes\n\n- **Note box**: a three-line textarea in a 180px column. It wraps, grows with its text (`field-sizing: content`), and has a drag handle in browsers without that property. It saves on blur as before; a line break in a note stays inside its quoted cell in the export.\n- **Room for the other columns**: the two request tables use 8px side padding instead of 14px, and the finance page is 1440px wide instead of 1280px. At a 1280px screen Company, Contact, Email and Address keep about the same width as before.\n- **VAT column**: 116px instead of 104px, so a Belgian VAT number stays on one line.\n- The save and export scripts look up `[data-field]` instead of `input[data-field]`, so they include the textarea.\n\n## Verification\n\n- `npm test`: 60 unit tests pass.\n- A local build with Sanity and Mollie swapped for fixture stubs, driven by Playwright: 9 new checks pass. At 1280px the note box is 180x69 on both tabs (was 82x29 and 108x29) and both tables fit the page. A two-line note saves on blur, the box grows with it, the note is in the Invoices export, and it comes back after a reload. The earlier suites still pass: 25 finance, 20 campaign, 15 manager page checks. At phone width the note sits full width in the card, with no horizontal scroll.\n",
+            "branch": "workbench/finance-note-box",
+            "title": "Finance: larger internal note on the request tabs"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261026152416-469925"
+}

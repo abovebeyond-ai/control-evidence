@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "15c67c7336cfc6173e7cbfad0b9943ffbc3a5e27",
+            "branch": "workbench/member-access",
+            "files_sha256": "4add0be3d8308a40a15f0ac4e17a61d88e6f697e91d054f95f988f17c139de82",
+            "message": "A gentells.com member gets Ask, loses the Standard, and the team role reads Writer"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261026182317-8d73cf"
+}

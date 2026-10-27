@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:34",
+            "note": "Local only (c1867583, af266143, workbench/iframe-price-slider): slider fix #1042/#1043 plus one price rule; also closes a path-parameter filter on trade price and the showroom showing trade price without margin. Waits for a go to propose.",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261026110733-7ff957"
+}

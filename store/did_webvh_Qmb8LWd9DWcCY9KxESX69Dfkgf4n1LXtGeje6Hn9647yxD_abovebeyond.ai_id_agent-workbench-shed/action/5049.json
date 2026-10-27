@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A member of gentells.com may browse and use Ask, and nothing else. The pipeline holds that (gentells-pipeline `workbench/member-access`, merge it first); this makes the screens match.\n\n- **Standard** leaves the guest's screens: out of `GUEST_PATHS`, gone from the Data menu, and a typed `/standard` lands on the Overview.\n- **Ask** is on the bar for a guest. In the panel a guest gets no model choice, no \"start a piece in the Studio\", examples about what they read, and a line with the questions left today. At the daily number the panel says so plainly, with the time it opens again in the reader's own clock, and the input closes.\n- **Atlas**: \"Explain this chain\" is hidden from a guest. It is a free-form model call the pipeline refuses to a guest.\n- **Accounts**: the team role `client` is labelled Writer instead of Member. \"Member\" sat one line above the \"Members of gentells.com\" list, who are not on the team.\n\nChecked in a browser as a member signed in through gentells.com, against a local pipeline: every guest page sends no write, and its only buttons are paging, filters and time windows.\n\ne2e 51/51 (guest menu, typed `/standard`, the guest's Ask panel, the cap message), lint ratchet equal, build green.\n",
+            "branch": "workbench/member-access",
+            "title": "A gentells.com member gets Ask, loses the Standard, and the team role reads Writer"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261026182317-8d73cf"
+}

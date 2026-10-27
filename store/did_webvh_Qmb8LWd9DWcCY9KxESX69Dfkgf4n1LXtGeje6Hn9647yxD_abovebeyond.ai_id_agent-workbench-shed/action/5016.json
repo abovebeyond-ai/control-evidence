@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6bd6ad553ed4b95427fec064af3c951f23ed5d66",
+            "branch": "workbench/remove-singleshowroom",
+            "files_sha256": "1c7d7d59aee3a0dc475dd613dec65384a233a25a02f2ca714895e0621a9c45b1",
+            "message": "Remove the public /singleshowroom route that rendered any vehicle"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261026150100-54a348"
+}

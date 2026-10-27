@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The only per-campaign export on /finance was the Transactions tab with its campaign filter. The Tax certificates and Invoices tabs exported every campaign, and a campaign's own page had no export at all.\n\n## Changes\n\n- **Export on the campaign page**: `/campaign/<slug>/manage` gets \"Export to Excel\", every transaction of that campaign in the same columns as the finance export (tax certificate, invoice, address, invoice and certificate numbers). Served by the new `GET /api/finance-export?token=\u2026&campaign=<slug>`, gated by FINANCE_TOKEN. The file holds national registry numbers and addresses, so the campaign manager's own page does not offer it.\n- **One ledger, one format**: the code that joins Mollie payments to donor docs and builds an export row moves from `finance.astro` to `src/lib/ledger.ts`; the columns and the CSV format (semicolons, comma decimals, BOM) to `src/lib/csv.ts`. The finance page reads its export columns from there, so the page and the endpoint cannot drift apart.\n- **Campaign filter on the request tabs**: Tax certificates and Invoices get a campaign select with a count. Their export follows it and puts the campaign in the file name.\n- **Campaigns tab**: the campaign name, already a link to the manage page, is now underlined. \"Open\" next to \"Copy link\" opens the manager's own view in a new tab.\n- **No em dashes or middots** on the campaign pages: \"Anonymous\" and \"-\" for hidden or missing values, parentheses on the language labels, commas in the titles.\n\n## Verification\n\n- `npm test`: 59 unit tests pass, including the new `tests/unit/ledger.test.ts` (attribution by payment and customer id, metadata fallback, address rules on repeat charges, numbers, the CSV format).\n- A local build with Sanity and Mollie swapped for fixture stubs, driven by Playwright: 19 new checks pass. The campaign export has the same header and rows as the Transactions export filtered to that campaign; the tab filters and their exports follow the selected campaign; the endpoint answers 401 without the finance token, also with a manager token; no em dash or middot on /finance or the campaign pages. The 25 checks of the previous change still pass after the ledger move.\n\nNot changed: the donations table on the manage page still runs off the screen at phone width.\n",
+            "branch": "workbench/campaign-export",
+            "title": "Finance: export per campaign, campaign filter on request tabs, open link"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261026131121-19087c"
+}
