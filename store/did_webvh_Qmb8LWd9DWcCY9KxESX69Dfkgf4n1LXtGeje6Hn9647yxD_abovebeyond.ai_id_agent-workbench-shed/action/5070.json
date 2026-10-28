@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "336d7d1680216b19cd9ca4516f9518d5b8eeafbe",
+            "branch": "workbench/lead-vote-ownership",
+            "files_sha256": "6aa85dd395b6a1a7d39e6ab45747ef88f9de81093581aa211ae8250d20d1a55c",
+            "message": "Check per-record ownership on the lead and seller-rating routes"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261027085702-c2747b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #1054 / #1055.\n\n## Why\n\n`/huisstijl` was in English, but the screens it describes are in Dutch, and so are the people who use it to make tutorials or slides in the platform's look. Since #1055, Documentatie & support points administrators to this page, so it should read in their language.\n\n## What changes\n\n- **All prose on the page is now Dutch.** That covers the page title (Huisstijl), the brand section (\"Voor een handleiding, een presentatie of drukwerk\"), the section intros, the rank names of an action, the notes on the pieces and the checklist. Sample texts were already Dutch. Token names, class names, values and hex codes stay as they are.\n- **Each token now has a Dutch explanation.** Until now the page read the explanation of a token from the English comment behind it in `type.css` or `colour.css`. Code comments stay English, so the view now holds a Dutch explanation per token (`$notes`, 50 entries) and falls back to the comment when a token has none. The brand and state colours, which had no comment, get one too.\n- **A new test catches a missing explanation.** `test_the_page_explains_every_token_in_dutch` renders the page and fails if any comment of the token stylesheets appears on it. A token added to the CSS without a Dutch explanation is therefore caught. To check the test itself, I removed the explanation for `--ui-gap-items`: it then failed on \"controls in a row, fields in a group\".\n- **R P1-1.30 and the comment on the Documentatie link** no longer call the page English. The link stays for administrators only: the page is the reference for whoever builds or makes material in the platform's look, not a manual for a garage.\n\n## Checked\n\n- `TheTypefaceAndColoursCarryTheirCodesTest`: five tests, including the new one.\n- Full suite: 3175 tests, no failures. PHPStan: no errors.\n- `bin/rules-sources` reports no problems.\n- Rendered locally as an administrator. A scan of the rendered text found no English sentences left.\n\nSource: Portal mail:35.\n",
+            "branch": "workbench/huisstijl-in-dutch",
+            "title": "Put /huisstijl in Dutch"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261027111833-f48dd8"
+}

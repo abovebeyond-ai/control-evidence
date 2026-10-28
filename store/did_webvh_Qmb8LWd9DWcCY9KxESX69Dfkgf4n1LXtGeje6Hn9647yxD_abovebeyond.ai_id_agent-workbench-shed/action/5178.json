@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "16f45fd7a62ab54ea91ad23bda8b14dfa3c0e6e7",
+            "branch": "workbench/pdf-node-ids",
+            "files_sha256": "4ea50a3e58817dd38f8fad3409a8468b17ce9529b3f5ca712d1eabaaabbaea28",
+            "message": "Compare archived sheets without depending on Chrome's node numbers\n\nArchivingAReportTest renders one report twice, through the controller and\nthrough the archive, and compares the PDFs without what may differ between\ntwo renders. Chrome's PDF writer (Skia) numbers every element of the\nstructure tree, (node00000093), and those numbers need not start at the same\nplace in two renders. The test took the number out after /ID only, not where\nthe same number comes back: in the /Headers of a table cell and in the tree's\n/Names and /Limits. On 2026-10-26 PR #275, which changed no report, went red\non exactly that: the two sheets were the same apart from every node number\nbeing one higher in the second.\n\nThe node numbers are now renumbered in the order they appear instead of\nremoved, so two renders that count from a different start compare equal,\nwhile a cell that points at another header still fails. The comment named\ndompdf; the sheet comes from Chrome (/Producer (Skia/PDF m156)).\n\nChecked on a real sheet from the test: shifted by one, the old comparison\nfails and the new one passes; with one cell pointing at the next header, the\nnew one still fails."
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261027113336-8578c6"
+}

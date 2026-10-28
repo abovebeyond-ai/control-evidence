@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8a72544fda50bc7b4d04d7ecac713117e6bd8b3c",
+            "branch": "workbench/brand-at-a-glance",
+            "files_sha256": "4522b5544ab8ac3b3fcca2aa8bf14aba0d9e92b02534b0ecf7acdb68a4257ce1",
+            "message": "Show the typeface and the colour codes on /huisstijl, link it from Documentatie (closes #1054)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261027110123-52b744"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"symfony\\/http-foundation\",\"to\":\"8.1.7\",\"lock\":\"composer.lock\"},{\"pkg\":\"source-map-js\",\"to\":\"1.2.2\",\"lock\":\"package-lock.json\"},{\"pkg\":\"vite\",\"to\":\"8.2.4\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 3,
+            "plan_sha256": "62568cc5bd5954442d6979be04228805731e354b38be6e793fc7023683910cce",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "01M5ZG6T1ASZQTVDNDBM21MM6T"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "99e9ec157054d83b6084fce4df270688c2360e00",
+            "branch": "workbench/insight-open",
+            "files_sha256": "16e8aa0b97952ce0496fc100d5647cba23612c9a6edbbab19f2a660aaa8d8820",
+            "message": "An opened insight reads top down, the same in the list and on its page"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261027112224-200e56"
+}

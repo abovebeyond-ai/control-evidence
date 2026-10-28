@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "64b67822547af88a7491979879ec303c033c4c4e",
+            "branch": "workbench/source-perspective",
+            "files_sha256": "738a65408841e41fd9c43062e893237a8471211823a766f7f100abf53ba2d5a8",
+            "message": "Sources: each proposal says whether it has a stake in what it says"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261027092133-fdea30"
+}

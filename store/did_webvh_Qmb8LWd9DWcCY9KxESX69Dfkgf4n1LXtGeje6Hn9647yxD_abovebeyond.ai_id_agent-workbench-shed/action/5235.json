@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6a7b215ff80da15d1239dc1715aa078ca590a3c5",
+            "branch": "workbench/optional-technique",
+            "files_sha256": "3aef6c91cb30df57cd42d91e0754722d3187d6abe763ad7a95f7f6eef9488940",
+            "message": "Show works without a technique, and an import for her first works"
+        },
+        "resource": "ShaneDeconinck/elisabethdevestele"
+    },
+    "run": "workbench-20261028070233-1cf501"
+}

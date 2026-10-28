@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dd3fa053ed2dfe8f0fe448214c02edd56f28de2c",
+            "branch": "workbench/overview-this-week",
+            "files_sha256": "82e0f4f94024f973962c11e4bc4c8d6f4b32e1dfd846e4c51e2276771a4b5825",
+            "message": "The Overview answers what moved this week: strongest insights and rising patterns"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261027091350-7e06a1"
+}

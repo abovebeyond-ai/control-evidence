@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "63b6c4ef3d902b26feb5305212ad269ff56b8f0c",
+            "branch": "workbench/hours-note",
+            "files_sha256": "31986387b97f4c5baa8db6dcf36100e707ab4dcb922a4d86baf29a24a5ae51be",
+            "message": "Opening hours: optional text per line, e.g. \"op afspraak\"\n\nopeningHoursEntry gets note (localeString, optional), shown with the\nhours on the site. The preview shows it after the times. CONTRACT.md\nand the contract test follow."
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261027140801-c85c93"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "969ef01894a5120d4b28f22af8d0cd4fc8d135d3",
+            "branch": "workbench/saturday-appointment",
+            "files_sha256": "b7192dc4f7733475790637c6a24368aea27bf7d067597b8924bc2f98dccc9c8d",
+            "message": "Opening hours: optional text per line, Saturday by appointment\n\nAn opening-hours line can carry a note (Sanity openingHoursEntry.note,\nlocaleString, e.g. \"op afspraak\"). The footer shows it under the day,\nthe contact page and the seller card on a vehicle page in brackets\nafter the times, and the contact meta description includes it.\n\nThe built-in fallback (and so the seed export) gets Saturday 07:30 to\n12:00 by appointment. The live hours stay in Sanity; the Studio field\nis in schoutteet-sanity."
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027140722-a054f7"
+}

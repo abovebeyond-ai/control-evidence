@@ -1,0 +1,16 @@
+{
+    "action": "d3a97cb8cb0a6366a0faf4a481a8e135",
+    "effect": {
+        "detail": {
+            "base": "ea8e8a10237ae8c1a05ab7c61940c9da6b572a03",
+            "branch": "workbench/tools-answer-cap",
+            "commit": "94bf37db0ddc661e7b89a651265cf2bdbc9ab7f2",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5064,
+    "verdict": "ALLOW"
+}

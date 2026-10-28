@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nEach proposal on the Sources page says whether the source has a stake in what it says (Gentells Standard 0.18.0). This covers the scout's proposals, the publishers cited in posts, and a source's side panel. It reads **Independent**, **Has a stake** or **Writes about itself**, followed by the engine's one sentence why, and who changed it if a person did.\n\nThe team changes it in place: **Change** opens the three choices. The pipeline records the person and the time. A proposal without a rating says \"Not rated yet\", never \"Independent\".\n\n## Checked\n\n- `e2e/source-perspective.spec.js`:\n  - the three readings, with the reason;\n  - who changed it;\n  - an unrated proposal;\n  - a change, which sends `POST /sources/:id/perspective` with the choice.\n- Full e2e, on top of the new Overview (#117): 62 of 62. The lint ratchet is unchanged (at its ceiling), and the build passes.\n- A screenshot of the proposals with real ratings from the trial run was sent separately.\n\n## Order\n\nMerge after the pipeline change, which serves the fields and the route.\n",
+            "branch": "workbench/source-perspective",
+            "title": "Sources: each proposal says whether it has a stake in what it says"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261027092133-fdea30"
+}

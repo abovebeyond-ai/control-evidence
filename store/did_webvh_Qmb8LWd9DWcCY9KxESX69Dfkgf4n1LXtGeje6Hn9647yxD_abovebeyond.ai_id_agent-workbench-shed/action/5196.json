@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "At launch the Forge site will answer on several hostnames: www.trucks-schoutteet.com, trucks-schoutteet.com, schoutteet.com, www.schoutteet.com and the Forge host. The canonical tag is `url()->current()`, so it names whatever host was visited, and nothing sends a visitor to one host. Each extra domain would be a full copy of the site in Google. Today the bare trucks-schoutteet.com already shows the old site without a redirect.\n\n## What changes\n\n- **`CanonicalHost` middleware**, prepended to every request. With `APP_CANONICAL_HOST` set, any other host gets a 301 to the same path and query on `https://<canonical host>`. The comparison ignores case.\n- **`config('app.canonical_host')`** reads `APP_CANONICAL_HOST`. Empty (local, staging before launch): nothing is redirected, so this PR changes nothing until the variable is set.\n- **`DEPLOY.md`, \"Livegang: domeinen\":** the go-live order for the domains. TTL first, Forge domains, basic auth off, DNS (only the A records of `@` and `www`; MX and TXT carry the mail and stay), certificate, environment, Sanity webhook, checks, and the way back.\n\n## Behaviour to know\n\n- Once the variable is set, schoutteet.on-forge.com also redirects to the live host, and so does a POST to `/sanity/webhook` on it. The webhook has to point at the live host (step 7 in `DEPLOY.md`).\n- schoutteet.com currently sends visitors to `/en/` on the old site. With this, it keeps the path, so schoutteet.com lands on the Dutch home.\n- An old URL on an alias domain takes two hops: alias to canonical host, then the legacy redirect to the new page.\n\n## Checks\n\n- `tests/Feature/CanonicalHostTest.php`: no redirect without the setting; aliases, the bare domain and the Forge host go to the same path and query; the canonical host itself is served.\n- `php artisan test`: 61 passed\n- `vendor/bin/pint --test`: passed\n",
+            "branch": "workbench/canonical-host",
+            "title": "Send every other hostname to the canonical host with a 301"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027132647-8c65f7"
+}

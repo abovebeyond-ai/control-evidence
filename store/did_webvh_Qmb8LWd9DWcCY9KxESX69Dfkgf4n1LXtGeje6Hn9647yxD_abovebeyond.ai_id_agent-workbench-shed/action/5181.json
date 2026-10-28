@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was wrong\n\n`ArchivingAReportTest::the_controller_and_the_archive_make_the_same_sheet` renders one report twice, once through the controller and once through the archive, and compares the two PDFs after removing what may differ between two renders. #275 changed no report, and it went red on this test.\n\nThe sheet comes from Chrome (`/Producer (Skia/PDF m156)`), not from dompdf as the comment said. Chrome numbers every element of the PDF's structure tree as `(node00000093)`, and two renders need not start that count at the same place. The test removed the number only after `/ID`, not the places the same number comes back: the `/Headers` of a table cell, and the tree's `/Names` and `/Limits`. On #275 the two sheets were the same apart from every node number being one higher in the second:\n\n```\n-/Headers [(node00000093)]>> <</O /Table\n+/Headers [(node00000094)]>> <</O /Table\n```\n\n## What changes\n\n`withoutDates` now renumbers the node numbers in the order they appear, instead of removing them. Two renders that start counting at different points compare equal, and a cell that points at another header still fails. The comment now names Chrome. Only this test file changes.\n\n## Checked\n\nOn a real sheet saved from the test:\n\n| Comparison | Old | New |\n|---|---|---|\n| Controller sheet vs archived sheet | same | same |\n| Archived sheet with every node number one higher (the #275 failure) | different | same |\n| Archived sheet with one cell pointing at the next header | | different |\n\nThe archiving tests (10) pass with the Chrome renderer on the workbench. The full suite with Chrome has 2 failures, both from the workbench itself: BuildStamp in a worktree, and PrintCheck, which expects the version string of a full Chrome and gets the headless shell's.\n",
+            "branch": "workbench/pdf-node-ids",
+            "title": "Compare archived sheets without depending on Chrome's node numbers"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261027113336-8578c6"
+}

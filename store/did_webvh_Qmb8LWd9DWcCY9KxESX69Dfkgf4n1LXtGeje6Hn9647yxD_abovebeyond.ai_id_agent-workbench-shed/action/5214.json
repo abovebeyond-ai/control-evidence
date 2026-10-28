@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Own stock (the S numbers, `own = true`) was always sorted before partner stock: in the vehicle list, whatever sort the visitor chose, and in the similar vehicles on a detail page. It no longer needs to come first.\n\n## What changes\n\n- `VehicleController@index`: no `orderByDesc('own')` ahead of the chosen sort. The default stays newest registration first.\n- `similar()`: same, newest first within each tier.\n\nUnchanged: no label on own or partner stock, the \"Te bezichtigen in Oudenburg\" filter (`bezichtigen=1`) still lists own stock only, and the detail page still says \"In Oudenburg-Roksem\" or \"Op afspraak\".\n\n## Checks\n\n- `FilterPanelTest::test_own_stock_follows_the_sort_without_a_label`: the own Volvo (2015) now comes after the newer MAN (2019); the filter and the detail page lines as before.\n- `php artisan test`: 61 passed\n- `vendor/bin/pint --test`: passed\n",
+            "branch": "workbench/own-stock-not-first",
+            "title": "Stock list: own stock no longer forced to the top"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027140822-b30840"
+}

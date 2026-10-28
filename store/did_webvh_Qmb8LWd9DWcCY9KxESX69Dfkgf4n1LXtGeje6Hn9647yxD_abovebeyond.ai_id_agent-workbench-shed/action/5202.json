@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Saturday morning is by appointment. Opening-hours lines had only a label, days and two times, so there was nowhere to say that. Each line can now carry a short text.\n\n## What changes\n\n- **`Pages::hoursNote()`** returns the line's `note` in the current language, or `''`. The note is Sanity's `openingHoursEntry.note` (localeString), added to the Studio in ShaneDeconinck/schoutteet-sanity (branch `workbench/hours-note`).\n- **Footer:** the note sits under the day in small type. The row aligns on the baseline so the times stay level with the day.\n- **Contact page and the seller card on a vehicle page:** the note follows the times in brackets, \"Zaterdag: 07:30 \u2013 12:00 (op afspraak)\". The contact meta description includes it.\n- **Built-in hours** (fallback, and the seed export): Saturday 07:30 to 12:00 with \"op afspraak\", translated in de/en/fr/es.\n\nThe live hours stay in Sanity. Until the Saturday line is added in the Studio, the site shows what Sanity holds today (Monday to Friday).\n\nStructured data (`openingHoursSpecification`) lists every line as before, Saturday included, since schema.org has no way to mark hours as by appointment.\n\n## Checks\n\n- `tests/Feature/OpeningHoursTest.php`: built-in Saturday with its note in nl and en; a note from a Sanity document in nl and fr; a line without a note gets no brackets.\n- Screenshots of the footer (nl, es, fr at 1440 and 390), the contact block and the seller card.\n- `php artisan test`: 63 passed\n- `vendor/bin/pint --test`: passed\n",
+            "branch": "workbench/saturday-appointment",
+            "title": "Opening hours: optional text per line, Saturday by appointment"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027140722-a054f7"
+}

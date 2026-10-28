@@ -1,0 +1,16 @@
+{
+    "action": "5efff9ba2f79ab2cb934a7e8b33c2453",
+    "effect": {
+        "detail": {
+            "base": "781725856faf031de420bdf649c5810b44db978e",
+            "branch": "workbench/insight-open",
+            "commit": "2877d12b68f26850544a2b37ce60bf71e1aa010a",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5166,
+    "verdict": "ALLOW"
+}

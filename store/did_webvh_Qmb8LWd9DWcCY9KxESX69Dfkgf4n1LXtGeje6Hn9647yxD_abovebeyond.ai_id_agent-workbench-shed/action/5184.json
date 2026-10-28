@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8bf3e936a0e3eb208e121f97d5a59105c56e0811",
+            "branch": "workbench/footer-columns",
+            "files_sha256": "4e9a484dc8a9f7d0675aaa3bef3659b7a86e488023727a61ceb2203edbbd0c11",
+            "message": "Footer: navigation and services side by side, five columns on wide screens\n\nThe second footer column stacked Navigatie above Diensten, a long single\ncolumn next to three short ones. Each group now has its own column:\n\n- xl: brand, navigation, services, contact, hours in one row; the lists\n  take their natural width so no title wraps in any of the five locales\n  (the longest is \"Reparaciones y mantenimiento\").\n- lg: brand on the left, the four groups in two rows beside it (five\n  columns do not fit at 1024).\n- Tablet: brand across, then navigation | services and contact | hours.\n- Phone: navigation and services as two short lists side by side, with\n  tighter line height so a wrapped service title reads as one item.\n\nThe hours row gets a gap so day and time cannot touch when the column is\nat its natural width."
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027125325-b3e8b2"
+}

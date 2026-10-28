@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "app"
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261027131105-fd7570"
+}

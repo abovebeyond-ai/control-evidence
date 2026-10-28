@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dec80f502f8aec30db8aac105d57e69727c15f2a",
+            "branch": "workbench/conversion-per-kind",
+            "files_sha256": "5fd7a1f83099bef304a4cb408eabb97a3fe10c5f9ac7e4ee96aacbf140fadbc6",
+            "message": "Google Ads: one conversion per route, phone and WhatsApp at the click\n\nThe old site counts two Google Ads conversions, a click on the phone\nnumber and a click on WhatsApp, each with its own label, plus GA4\nevents \"Telefoon website\" and \"Whatsapp klik\". The new site had one\nlabel for every route and fired it on the page after the lead, which\nfor phone and WhatsApp is the next page the visitor happens to open.\n\n- tracing.ads_labels: TRACING_ADS_LABEL_TEL, _WHATSAPP and _REQUEST\n  replace TRACING_ADS_CONVERSION_LABEL. A route without a label sends\n  no Ads conversion.\n- Phone and WhatsApp fire at the click (beacon transport), with the old\n  GA4 event names (tracing.ga4_click_events), only once the tags are\n  loaded after consent.\n- A sent form (contact, price proposal, valuation) still fires\n  generate_lead and the request conversion on the page after it.\n  LeadRecorder no longer flashes lead_event for phone and WhatsApp.\n- DEPLOY.md lists the old site's ids and labels for go-live."
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027141318-f1f4f9"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "b8fc46d3081cbd51c3d0578e2ff217e8",
+    "effect": {
+        "detail": {
+            "base": "b58d39c18a1f671c53bf2e1862351d9b4608ecbe",
+            "branch": "workbench/address-u",
+            "commit": "3385d5dde9ed5a262ce1cdcfb165e306dd09dd0c",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5112,
+    "verdict": "ALLOW"
+}

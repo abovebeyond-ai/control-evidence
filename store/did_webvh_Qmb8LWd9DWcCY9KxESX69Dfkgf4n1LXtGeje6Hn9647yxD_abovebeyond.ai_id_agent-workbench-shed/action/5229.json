@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dec80f502f8aec30db8aac105d57e69727c15f2a",
+            "branch": "workbench/hours-extra-line",
+            "files_sha256": "d9128f6642ce50df7b2bc5ae3bc8e97f4db39c858575b2c70d3ef9a92c7568f3",
+            "message": "Opening hours: one line under the hours, \"Daarbuiten op afspraak\"\n\nSaturday 07:30 to 12:00 is a regular opening line; outside all the\nhours a visit is by appointment. That is one line under the hours, not\na note on Saturday.\n\n- Pages::hoursExtra(): Sanity's siteSettings.hoursNote (localeString)\n  in the current language. Without Sanity settings the built-in line\n  \"Daarbuiten op afspraak\"; with them, Sanity's value, so an editor can\n  also leave it empty.\n- Shown under the hours in the footer (max-w so a long text wraps\n  instead of widening the column), on the contact page, on the seller\n  card of a vehicle page, and at the end of the contact meta\n  description.\n- The built-in Saturday line drops its \"op afspraak\" note; the seed\n  export carries hoursNote."
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027142612-26ec0c"
+}

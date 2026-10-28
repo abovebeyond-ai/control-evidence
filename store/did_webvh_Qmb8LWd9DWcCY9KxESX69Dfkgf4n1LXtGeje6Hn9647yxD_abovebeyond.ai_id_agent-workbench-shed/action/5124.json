@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1216704b6674d127f98e1e2c342d0e2c6bb30570",
+            "branch": "workbench/design-c",
+            "files_sha256": "01f7cb8143a4c662a75a58f67463a1edde7178c22f1c6aa69e70fa68802be36f",
+            "message": "Maquette C: the home, trends, reports and services pages as the designer drew them"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261027104037-8eb8eb"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea8e8a10237ae8c1a05ab7c61940c9da6b572a03",
+            "branch": "workbench/tools-answer-cap",
+            "files_sha256": "288fab1e054ba0dfaf9eda0ae09e7d3609ca71a38c5d688c88cc5a54cb557c6e",
+            "message": "A long tool answer is cut to forty rows instead of stopping the API"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261027084924-1c3f34"
+}

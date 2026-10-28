@@ -1,0 +1,16 @@
+{
+    "action": "5b4e91aecd778f3ff0abd87bdb04b99e",
+    "effect": {
+        "detail": {
+            "base": "dec80f502f8aec30db8aac105d57e69727c15f2a",
+            "branch": "workbench/hours-extra-line",
+            "commit": "e2828eb7cefa609bdec2c2c8457ea0d67dc250ef",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5229,
+    "verdict": "ALLOW"
+}

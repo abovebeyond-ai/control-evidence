@@ -1,19 +1,19 @@
 {
-    "computed_at": "2026-10-27T07:34:31+00:00",
+    "computed_at": "2026-10-28T07:34:31+00:00",
     "window": {
-        "since": "2026-10-20T07:33:04+00:00",
+        "since": "2026-10-21T07:33:04+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
     "repositories": {
         "Hoet-design/cabrio-eyewear": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
-            },
-            "pulls": {
                 "github": 1,
                 "gateway": 1
+            },
+            "pulls": {
+                "github": 2,
+                "gateway": 2
             }
         },
         "Hoet-design/cabrio-eyewear-mirror": {
@@ -29,12 +29,12 @@
         },
         "Hoet-design/hoet-eyewear": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 3,
+                "gateway": 3
             }
         },
         "Hoet-design/hoet-eyewear-mirror": {
@@ -54,8 +54,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 2,
+                "gateway": 2
             }
         },
         "ShaneDeconinck/good-governance": {
@@ -74,8 +74,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 17,
-                "gateway": 17
+                "github": 18,
+                "gateway": 18
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 29,
-                "gateway": 29
+                "github": 31,
+                "gateway": 31
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 13,
-                "gateway": 13
+                "github": 14,
+                "gateway": 14
             }
         },
         "Trendwolves/glk-transferor": {
@@ -125,8 +125,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 44,
-                "gateway": 44
+                "github": 37,
+                "gateway": 37
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -186,8 +186,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 12,
-                "gateway": 12
+                "github": 14,
+                "gateway": 14
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -244,6 +244,17 @@
                 "gateway": 0
             }
         },
+        "ShaneDeconinck/elisabethdevestele": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 2,
+                "gateway": 2
+            }
+        },
         "ShaneDeconinck/naviskore-viz": {
             "dispatches": {
                 "github": 0,
@@ -262,8 +273,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 7,
-                "gateway": 7
+                "github": 10,
+                "gateway": 10
             }
         },
         "ShaneDeconinck/schoutteet-sanity": {
@@ -273,8 +284,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 7,
+                "gateway": 7
             }
         },
         "ShaneDeconinck/trendwolves-call-agents": {
@@ -295,8 +306,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 16,
-                "gateway": 16
+                "github": 19,
+                "gateway": 19
             }
         },
         "Trendwolves/gentells-standard": {
@@ -394,8 +405,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "abovebeyond-ai/proof-of-control": {
@@ -502,6 +513,9 @@
             "skipped": "no token to read GitHub"
         },
         "forge:dbc-webapplicatie": {
+            "skipped": "no token to read GitHub"
+        },
+        "forge:elisabethdevestele-website": {
             "skipped": "no token to read GitHub"
         },
         "forge:elixir": {
@@ -644,6 +658,9 @@
             "skipped": "no token to read GitHub"
         },
         "portal:dbc-webapplicatie": {
+            "skipped": "no token to read GitHub"
+        },
+        "portal:elisabethdevestele-website": {
             "skipped": "no token to read GitHub"
         },
         "portal:elixir": {

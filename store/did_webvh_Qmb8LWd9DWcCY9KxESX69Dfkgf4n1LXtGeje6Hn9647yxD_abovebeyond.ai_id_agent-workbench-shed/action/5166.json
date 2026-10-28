@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "781725856faf031de420bdf649c5810b44db978e",
+            "branch": "workbench/insight-open",
+            "files_sha256": "6a673328e8d89246d3f7beae566a5b93c5f7c80eb774fd4d8cef2473fc5abe39",
+            "message": "An opened insight carries its verdicts, and the writer never names a pattern that has no name"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261027112133-345c90"
+}

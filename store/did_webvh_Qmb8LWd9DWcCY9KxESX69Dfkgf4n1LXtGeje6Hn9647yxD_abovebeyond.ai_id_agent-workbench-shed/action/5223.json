@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d1851822b865b71cb0c64f007c68f4becb581b63",
+            "branch": "workbench/hours-extra-line",
+            "files_sha256": "e8f124811768abcb0667a7aa92dc61709896cd5ce3c969444bfc020b5b2cbbb8",
+            "message": "Settings: optional text under all the opening hours\n\nsiteSettings gets hoursNote (title \"Tekst onder de openingsuren\",\nlocaleString, optional), shown on the site under the hours, e.g.\n\"Daarbuiten op afspraak\". Empty: nothing is shown. CONTRACT.md and the\ncontract test follow."
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261027142547-2ef66b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The website for the painter Elisabeth De Vestele: a static Astro site on Netlify, with its content in a Sanity Studio.\n\n## What is in it\n\n- **Pages:** Home (her handwritten signature, a short line, a selection of works), Werk (the gallery, filtered by theme and technique, with a page per work and a full-screen view), Over (photo and text) and Contact (mail, phone, Instagram and a Netlify form with a honeypot and a no-JS thank-you page).\n- **Content:** Sanity project `qwhwwsdm`, dataset `production`, read at build time with the published perspective. The Studio speaks Dutch and is already deployed from this code at https://elisabethdevestele.sanity.studio. Every image requires alt text.\n- **Privacy:** no analytics, no trackers, no cookies. A CSP built from hashes per page goes into `_headers` (`web/scripts/gen-csp.mjs`).\n- **Builds:** only a merge to `main` and the Sanity webhook start one. `netlify.toml` cancels every other context, and no env vars are needed (the code defaults to the project, the dataset and the domain).\n\n## Content state\n\nThe production dataset is empty, so until works are published the gallery reads \"Nog geen werken.\" Her first three works and her portrait sit in `web/fixture/` as a local preview set (`npm run build:fixture`). Every page of that build says it is provisional, and it is noindex. It never goes into production.\n\nThe Studio offers acryl and olieverf as techniques. The first three works may be another technique; that is to settle with Elisabeth before she enters them.\n\n## Checks\n\n- `npm test`: 21 passed (labels, the gallery filter, and the GROQ queries run through groq-js on Studio-shaped documents).\n- `npm run build` against the live, empty dataset: 6 pages. The fixture build: 9 pages.\n- Playwright at phone and desktop width. Lighthouse, mobile, on the fixture build: performance 99, accessibility 100.\n\n## After the merge\n\n`docs/setup.md`, from step 6: import the repo into Netlify, switch deploy previews off, add the build hook and the Sanity webhook, set the form notification, then the DNS records at Vimexx.\n",
+            "branch": "workbench/site",
+            "title": "Elisabeth De Vestele site: Astro gallery with a Sanity Studio"
+        },
+        "resource": "ShaneDeconinck/elisabethdevestele"
+    },
+    "run": "workbench-20261027111004-9c4aa6"
+}

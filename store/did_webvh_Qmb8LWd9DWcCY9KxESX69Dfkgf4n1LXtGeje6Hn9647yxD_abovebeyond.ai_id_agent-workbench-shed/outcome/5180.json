@@ -1,0 +1,16 @@
+{
+    "action": "f74d9c4164c747b167a1a7535de2ac79",
+    "effect": {
+        "detail": {
+            "base": "16f45fd7a62ab54ea91ad23bda8b14dfa3c0e6e7",
+            "branch": "workbench/pdf-node-ids",
+            "commit": "aa13aa0730874aeeaf8c45407e3a28d69034d7b5",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5178,
+    "verdict": "ALLOW"
+}

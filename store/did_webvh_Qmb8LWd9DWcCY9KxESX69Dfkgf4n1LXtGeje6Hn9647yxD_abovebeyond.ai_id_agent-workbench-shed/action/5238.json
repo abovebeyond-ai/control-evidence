@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The live gallery is empty, and her first three works could not go in: the site dropped any work without a technique, and the Studio only offered acryl and olieverf, which these works may not be.\n\n## What changes\n\n- **Technique optional.** `WORKS_QUERY` and `mapWork` no longer require one; a work needs a slug, a photo and a theme. The work page, the captions and the gallery filter already handled a missing technique (the filter shows a technique group only when two techniques occur).\n- **Hidden in the Studio.** The `techniek` field is hidden and no longer required, until the list fits the techniques she works in. Existing values stay in the data.\n- **`npm run content:live`.** A `--live` mode of `web/scripts/fixture-ndjson.mjs` writes `web/live.ndjson` (gitignored) with only what is hers: the three works from `web/fixture/works/` with photo, alt text, theme and a working title marked \"(werktitel)\", and her portrait on Over without the sample text. The Over page then says the text is coming. No placeholder work, no generated image.\n- **Docs.** `docs/setup.md` step 10 describes the import; steps 1 and 9 now record how the domain went live (the delegation moved from NS1 to `ns.zxcs.*`, ALIAS plus CNAME, certificate on 2026-10-27).\n\n## Checks\n\n- `npm test`: 22 passed, one new (a work without technique or year is shown, with `medium` null).\n- `npm run check` and `tsc` for the Studio: clean.\n- `npm run build` against the live, still empty dataset: 6 pages. Fixture build: 9 pages.\n- `npm run content:live`: 4 documents (`werk-man-met-koptelefoon`, `werk-baby-met-muts`, `werk-kloek-met-kuikens`, `over`).\n\n## To put the works online\n\nFrom a checkout, with the Sanity webhook switched off first (otherwise the import starts four builds against the old query):\n\n```bash\ngh pr checkout 2 && npm ci\nnpm run content:live\ncd studio\nnpx sanity dataset import ../web/live.ndjson production --missing\nnpx sanity deploy\n```\n\nThen switch the webhook on and merge: the merge build shows the three works.\n",
+            "branch": "workbench/optional-technique",
+            "title": "Show works without a technique, and import her first works"
+        },
+        "resource": "ShaneDeconinck/elisabethdevestele"
+    },
+    "run": "workbench-20261028070233-1cf501"
+}

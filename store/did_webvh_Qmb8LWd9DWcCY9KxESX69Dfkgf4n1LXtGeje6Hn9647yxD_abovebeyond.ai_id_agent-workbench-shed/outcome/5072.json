@@ -1,0 +1,16 @@
+{
+    "action": "808b00c915837ca071e4fd58780c4ef0",
+    "effect": {
+        "detail": {
+            "base": "336d7d1680216b19cd9ca4516f9518d5b8eeafbe",
+            "branch": "workbench/lead-vote-ownership",
+            "commit": "74b4057307e43f397f755c9e166d637689742fdd",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 5070,
+    "verdict": "ALLOW"
+}

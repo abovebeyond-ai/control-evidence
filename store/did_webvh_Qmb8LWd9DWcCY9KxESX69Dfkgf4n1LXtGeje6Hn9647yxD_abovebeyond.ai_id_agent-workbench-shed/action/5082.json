@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d802cc642a1d2288a242ad5fecb14a6041bb53c0",
+            "branch": "workbench/overview-this-week",
+            "files_sha256": "e763ce9dcb48e1d6c2cdf1dfa672060a8aff531e63fb15f9178c3633ba641749",
+            "message": "Overview: this week, strongest first; Insights grouped by week by default"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261027091418-2e5b62"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The site addresses the visitor as **u** (u, uw), never je, jij, jou, jouw or jullie. The site enforces this in its own code with a test (ShaneDeconinck/schoutteet, branch `workbench/address-u`). The texts an editor writes here are not in that code, so the Studio now shows the rule and warns.\n\n## What changes\n\n- **Every long text (`localeText`):** the Dutch input carries the hint \"Spreek de bezoeker aan met u en uw, nooit met je, jij, jouw of jullie.\"\n- **FAQ question (`faqItem.question`):** shows how to phrase one: as the visitor asks it, \"Kan ik ...?\", not \"Doen jullie ...?\".\n- **Every Dutch input (`localeString` and `localeText`):** a warning when one of those words appears as a whole word, e.g. `Spreek de bezoeker aan met u en uw. Hier staat \"jullie\".` It is a warning, not an error, so it never blocks publishing.\n\nThe check lives in `schemaTypes/objects/formalAddress.ts`. No field names change, so the content contract (CONTRACT.md) stays as it is.\n\n## Checks\n\n- `npm test`: 13 passed (including the new `tests/formalAddress.test.ts`)\n- `npx eslint .` and `npx tsc --noEmit`: clean\n- `npx sanity build`: built\n\nAfter merge the Studio needs a deploy (`npx sanity deploy` with a Deploy Studio token) before editors see the hint.\n",
+            "branch": "workbench/address-u",
+            "title": "Dutch text fields: address the visitor as \"u\", with a warning"
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261027102009-2c1557"
+}

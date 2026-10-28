@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a6b96820471ea0e05a821267796a7176a41af4c7",
+            "branch": "workbench/source-perspective",
+            "files_sha256": "34bf859bfd6d033858bd975b124804c2ca736bc4da9ac4dfbb25f79784b3b927",
+            "message": "Every proposed source says whether it has a stake in what it says (Standard 0.18.0)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261027092004-32cf58"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nTrust says how reliable a source's reporting is, and closeness says how near it sits to young people. Neither says whether a source has a stake in what it writes about. A brand's newsroom can be well made and close to its customers and still only ever say what is good for the brand.\n\nOn 27 October 2026 the sources proposed to the Observatory included exactly that. Among the 152 publishers queued because a post cited them were Amazon's European newsroom, Apple Newsroom, Arc'teryx and a payment scheme's own site. The source list of 20 October holds 53 industry associations and 67 annual reports.\n\n## The change (0.18.0)\n\n- **`Source.perspective`** takes one of three values:\n  - `independent`: no stake in what it covers. Trade press counts as journalism.\n  - `interested`: a stake in a sector, a market or a cause it covers. Examples: an industry association, an agency publishing research it sells, an advocacy group, a platform reporting on its own users.\n  - `self`: it writes about itself. Examples: a brand's newsroom, blog, press releases or annual report.\n- **`rules/source.json#perspective`**:\n  - An engine rates every source it proposes, with one sentence why.\n  - A person may change the rating, and the change records who and when.\n  - The rating refuses nothing, admits nothing and sets no trust.\n  - A source without a rating is unrated, never independent by default.\n  - A competitor is `interested`.\n- **`tools/check.mjs`**: the rule's levels and the class's values must be the same three.\n- **Conformance**: `perspective-self` (a brand's newsroom rated `self`) validates; `perspective-unknown` (a value outside the three) is refused.\n- Added only, so every earlier release still reads.\n\n## Checked\n\n`npm test`: 103 of 103 pass, including both new cases and the compatibility check against every earlier release. Adding a fourth level to the rule alone makes `check.mjs` fail.\n\n## After merge\n\nTag `v0.18.0`. The pipeline change pins that tag.\n",
+            "branch": "workbench/source-perspective",
+            "title": "A source is rated for whether it has a stake in what it says (0.18.0)"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261027091452-452040"
+}

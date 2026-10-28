@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P2\nSummary: Stocklist Dealer is making tutorials in the look of the platform and asks where the platform's colours and typeface are written down. They looked in the business-rules page and in the app and did not find them.\n\n## What is asked\n\nWhich colours and which typeface the platform uses, and where to look them up, so the tutorials can follow the same look.\n\n## Where it stands\n\nThe answer exists, but it is not findable and not readable for someone who is not building screens:\n\n- The living reference is `/huisstijl` in the app (behind the login, R P2-4.6). Nothing in the app links to it: not the menu, not the footer, not the Documentatie page.\n- The page never names the typeface. It shows the text roles in Inter, but the word \"Inter\" appears only in `resources/css/type.css`.\n- The colour swatches show the token name (`--brand-blue`) and, for the brand colours, no note and no value. A hex code, which is what a slide or a video tool asks for, is only in a comment in `resources/css/colour.css`.\n- The business-rules catalogue describes the type ladder (R P1-1.28) but no colour values.\n\n## Proposed\n\n- On `/huisstijl`, a first card that answers this question: the typeface with its weights and where to get it, and the brand colours with their hex codes, read from the same stylesheets as the rest of the page.\n- Every colour swatch on the page shows its hex code.\n- A link to `/huisstijl` on the Documentatie page, so it can be found from the app.\n\nSource: Portal mail:35.\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P2"
+            ],
+            "title": "Where the platform's colours and typeface are written down (for tutorials)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261027105043-ae0266"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Saturday 07:30 to 12:00 is a regular opening line. Outside all the hours, a visit is by appointment. That is one line under the hours, not a note on Saturday (#39 made \"op afspraak\" the built-in Saturday note).\n\n## What changes\n\n- **`Pages::hoursExtra()`:** returns `siteSettings.hoursNote` (localeString) in the current language. The field is added to the Studio in ShaneDeconinck/schoutteet-sanity (branch `workbench/hours-extra-line`).\n  - Without Sanity settings, it gives the built-in \"Daarbuiten op afspraak\".\n  - Once the settings exist, Sanity's value counts, so an editor can also leave it empty and the line disappears.\n- **Shown under the hours** in the footer, on the contact page and on the seller card of a vehicle page. In the footer it has a `max-w-64`, so a long text wraps instead of widening the hours column on wide screens.\n- **The contact meta description** ends with it.\n- **The built-in Saturday line** drops its note. The per-line `note` from #39 stays available for other uses.\n- **Translations:** \"Sonst nach Vereinbarung\", \"Otherwise by appointment\", \"Sinon sur rendez-vous\" and \"Otras horas con cita previa\" replace the unused \"op afspraak\" keys.\n- **The seed export** carries `hoursNote`.\n\n## Checks\n\n- `tests/Feature/OpeningHoursTest.php`:\n  - The built-in line in nl and en, and in the meta description.\n  - The line from Sanity in nl and fr.\n  - Empty in Sanity: no line.\n  - A per-line note still renders.\n- Screenshots of the footer (nl, es, fr at 1440 and 390), the contact block and the seller card.\n- `php artisan test`: 64 passed\n- `vendor/bin/pint --test`: passed\n",
+            "branch": "workbench/hours-extra-line",
+            "title": "Opening hours: one line under the hours, \"Daarbuiten op afspraak\""
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027142612-26ec0c"
+}

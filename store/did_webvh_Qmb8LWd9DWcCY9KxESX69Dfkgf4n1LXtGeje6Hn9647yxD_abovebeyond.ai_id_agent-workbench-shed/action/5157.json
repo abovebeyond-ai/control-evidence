@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "613dc86dffbcd453c2a27648c5d2678de8a9b555",
+            "branch": "workbench/huisstijl-in-dutch",
+            "files_sha256": "79722a49384aa6d9217a3ac39a1c55c991b2e1e734c674a08c026bd3988fca7e",
+            "message": "Put /huisstijl in Dutch"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261027111833-f48dd8"
+}

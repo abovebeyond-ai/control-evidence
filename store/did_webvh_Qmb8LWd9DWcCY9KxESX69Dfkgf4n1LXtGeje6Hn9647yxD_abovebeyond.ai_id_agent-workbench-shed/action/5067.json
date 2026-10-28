@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What broke\n\n`query()` in `packages/core/observatory-tools.mjs` shortens an answer over 60 KB. To tell a list from an object it called `JSON.parse(text.slice(0, 1))`, which is `JSON.parse(\"[\")` or `JSON.parse(\"{\")`. Both throw, so every long answer threw.\n\nThrough `GET /observatory/tools/:name` the route had already written `200` before the tool ran. The `writeHead(400)` in its catch then threw `ERR_HTTP_HEADERS_SENT`, outside any catch, and the API process stopped. It was back about a minute later. On 27 October 2026 a search through this route (`insights-search` on a common word, a few thousand ids) took the API down twice in three minutes, 08:17 and 08:19 UTC, for every reader, the Observatory and anything else that reads the API.\n\nWho can trigger it: any team login and the owner's read mandate. A gentells.com member cannot, because `/observatory/tools` is not open to guests. In the Ask panel's MCP server the same throw only failed the tool call, so the model got an error where it should have got the first forty rows.\n\n## The change\n\n- The cut keeps the first forty of a list, and of every list inside an answer object (`{ids: [...]}`, `{tensions: [...]}`), marked `truncated` with the full length.\n- The route makes the answer before it writes the head, so a tool that throws answers `400` with its reason and the process stays up.\n\n## Checked\n\n- `test/tools-long-answer.test.mjs`: unit tests for both answer shapes; through the real server, a long search answers `200 truncated` and `/ping` still answers afterwards, and a tool that throws answers `400` with the server still up.\n- Mutation check: putting back the old route fails one test, putting back the old cut fails three.\n- Full suite: 1376 of 1382. The six that fail are `report-render`, which needs `pdftoppm`; it isn't on the workbench, and they fail there without this change too.\n\n## Not in this change\n\nAny other uncaught throw in the request handler still stops the process. A catch around the handler that answers 500 to the one request would close that whole class. It is a separate decision, because it changes crash-and-restart into carry-on.\n",
+            "branch": "workbench/tools-answer-cap",
+            "title": "A long tool answer is cut to forty rows instead of stopping the API"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261027084924-1c3f34"
+}

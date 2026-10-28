@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "38c545876ced1f3b0aa28a91f903d810c5bc4859",
+            "branch": "workbench/canonical-host",
+            "files_sha256": "67886355b83f34bd30a1b47bb127fd33b2a357f9b37a8829b6558ebb10db808d",
+            "message": "Send every other hostname to the canonical host with a 301\n\nThe canonical tag follows the visited host, so each extra domain on the\nForge site (bare trucks-schoutteet.com, schoutteet.com, the Forge host)\nwould be a full copy of the site in Google. With APP_CANONICAL_HOST set,\nCanonicalHost answers any other host with a 301 to the same path and\nquery on https://<canonical host>. Empty (local, staging before launch):\nnothing changes.\n\nDEPLOY.md gets the go-live steps for the domains: DNS (A records only,\nmail stays), Forge domains and certificate, environment, Sanity webhook,\nchecks and the way back."
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027132647-8c65f7"
+}

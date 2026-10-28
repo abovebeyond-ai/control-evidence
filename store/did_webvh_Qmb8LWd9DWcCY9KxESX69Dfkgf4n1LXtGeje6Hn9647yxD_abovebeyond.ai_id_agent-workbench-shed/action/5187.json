@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The footer's second column stacked two groups, Navigatie (4 links) and Diensten (5 services), into one long column next to three short ones. Each group now has its own place, side by side, at every width.\n\n## Layout per width\n\n- **xl (1280 px and up):** five columns in one row: brand, Navigatie, Diensten, Contact & locatie, Openingsuren. Template `minmax(10rem,1fr) repeat(4,auto)`: the four groups take their natural width, the brand column takes what is left.\n- **lg (1024 to 1279 px):** five columns do not fit in 992 px, so the brand sits on the left (two rows high) with Navigatie | Diensten and Contact | Openingsuren beside it.\n- **Tablet:** brand across the top, then Navigatie | Diensten, then Contact | Openingsuren.\n- **Phone:** Navigatie | Diensten as two short lists side by side (`auto` and `1fr`), contact and hours below. Below `sm` the lists use `leading-snug`, so a service title that wraps reads as one item; from `sm` up the line height is unchanged.\n\nThe hours row gets `gap-6`: at natural column width, day and time would otherwise touch.\n\nHeadings with the orange bar, colours, square corners and the bottom bar are unchanged.\n\n## Long strings\n\nThe widest titles across nl/de/en/fr/es are \"Reparaciones y mantenimiento\" (es) and \"Carrosserie et transformation\" (fr). The service titles in the Sanity seed match the built-in translations. At 1440 and 1024 px nothing wraps in any of the five locales. At 390 px the long service titles go to two lines, which two lists side by side cannot avoid at that width.\n\n## Checks\n\n- Screenshots of the footer at 1440, 1024, 768 and 390 px in all five locales, before and after.\n- `php artisan test`: 58 passed\n- `vendor/bin/pint --test`: passed\n",
+            "branch": "workbench/footer-columns",
+            "title": "Footer: navigation and services side by side, five columns on wide screens"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027125325-b3e8b2"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "969ef01894a5120d4b28f22af8d0cd4fc8d135d3",
+            "branch": "workbench/own-stock-not-first",
+            "files_sha256": "2b7489ce31176ff2f7ec0ef51a7c198df03e6240a8125811e1f21d4f4d931d24",
+            "message": "Stock list: own stock no longer forced to the top\n\nOwn stock (S numbers) was always sorted before partner stock, in the\nlist and in the similar vehicles on a detail page. It now follows the\nchosen sort like every other vehicle. Nothing else changes: no label,\nthe \"Te bezichtigen in Oudenburg\" filter still finds it, and the detail\npage still says where it can be viewed."
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261027140822-b30840"
+}

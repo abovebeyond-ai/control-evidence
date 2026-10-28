@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "02f77aff27b8c2df7a6b45de393e89b6988bbaf7",
+            "branch": "workbench/vote-ownership-2",
+            "files_sha256": "da757c9659c947b53d032fd3d9ccf4564e8ffd6f87b178232e751ae80b103e15",
+            "message": "Check ownership on the remaining voting routes"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261027092222-302df2"
+}

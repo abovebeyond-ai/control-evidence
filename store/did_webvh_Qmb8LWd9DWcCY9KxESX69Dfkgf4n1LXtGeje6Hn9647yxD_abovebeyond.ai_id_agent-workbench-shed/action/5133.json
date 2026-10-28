@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:35",
+            "note": "Reading the question: where the Stocklist Dealer colours and fonts are documented; checking the platform repo",
+            "state": "in-progress"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261027104829-f0246a"
+}
