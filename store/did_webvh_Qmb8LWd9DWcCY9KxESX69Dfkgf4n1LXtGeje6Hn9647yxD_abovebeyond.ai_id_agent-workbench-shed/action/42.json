@@ -3,12 +3,12 @@
         "classification": "public",
         "kind": "branch.push",
         "params": {
-            "base_sha": "7869ea1b7489de8531779e52080214a9a2b3941e",
-            "branch": "workbench/key1-on-token",
-            "files_sha256": "c00506efd750e7028c2a2c0526bf710fa764688ae2866a69037f9dcbb1e1cbbc",
-            "message": "Sign with key-1 through one module that also signs on a PKCS#11 token\n\nscripts/key-1.mjs opens key-1 from a descriptor (abovebeyond-key-1.key.json) or,\nwithout one, the legacy JWK file, and returns raw Ed25519 signatures. sign-post.mjs\nsigns through it under the successor DID; did-webvh.mjs shares its token calls,\nreads key-1 from a token slot for replace-key, refuses to generate over a key, and\nparses token public keys strictly."
+            "base_sha": "0fe1f1400b89fb77bab4fb964573ff025a403ccb",
+            "branch": "workbench/ask-context-counts",
+            "files_sha256": "f451725f0c30708119cedf2e46beb401a0fb26dbaa15c9a6a8e2573d0bdd5644",
+            "message": "Ask's context counts two numbers instead of walking every signal on the server's thread"
         },
-        "resource": "abovebeyond-ai/abovebeyond"
+        "resource": "Trendwolves/gentells-pipeline"
     },
-    "run": "workbench-20261005184157-225d53"
+    "run": "workbench-20261028145826-b5e272"
 }

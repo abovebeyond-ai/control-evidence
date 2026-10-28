@@ -3,12 +3,12 @@
         "classification": "public",
         "kind": "branch.push",
         "params": {
-            "base_sha": "a17af9aa4982fe7fd91bd3a605ef916087228f65",
-            "branch": "workbench/one-entry-point",
-            "files_sha256": "b2d888f95521f9358e204d712ca04accc6526f7980695bb12be73f1cec52f222",
-            "message": "One entry point: a session in ~/Projects finds its project first\n\nWhen a client calls, the project is not known beforehand. One Remote Control server runs in\n~/Projects; every repository Portal links is already cloned there by projects-sync, which also\nwrites PROJECTS.md. A session started there finds the project by client or name, then works in\nits own worktree, never in the shared checkout."
+            "base_sha": "e59cd6ef2f971b278caa596c8a39f9a598a98a3d",
+            "branch": "workbench/social-login-refresh",
+            "files_sha256": "eaa93233a2900f8d9802af20d3a781e5fe90df3076e3935f3e70ccc0a39ef36a",
+            "message": "Sign in with Google, LinkedIn and Microsoft, joining an existing account only where the provider holds the mailbox"
         },
-        "resource": "abovebeyond-ai/workspace"
+        "resource": "Trendwolves/gentells-site"
     },
-    "run": "workbench-20261005093057-3387cb"
+    "run": "workbench-20261028145541-c82a8f"
 }

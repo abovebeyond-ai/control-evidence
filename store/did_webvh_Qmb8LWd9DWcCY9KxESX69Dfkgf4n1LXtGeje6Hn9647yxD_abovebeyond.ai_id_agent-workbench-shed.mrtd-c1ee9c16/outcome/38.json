@@ -1,0 +1,16 @@
+{
+    "action": "be718dd71883ebf759ab33e64c5a4018",
+    "effect": {
+        "detail": {
+            "base": "2f1ac017e8ba2d37057bd6a698323a0f13fd7464",
+            "branch": "workbench/fix/questions-about-shared-cars-reach-the-worklist",
+            "commit": "04f7db32ddc8c8de4617cca4d18d38c91501f1e2",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 36,
+    "verdict": "ALLOW"
+}

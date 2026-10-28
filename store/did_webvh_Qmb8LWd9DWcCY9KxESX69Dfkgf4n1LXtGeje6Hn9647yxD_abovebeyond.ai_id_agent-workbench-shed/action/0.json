@@ -3,12 +3,12 @@
         "classification": "public",
         "kind": "branch.push",
         "params": {
-            "base_sha": "50171010c5b8052f880a2f7ae99239848fd1fae2",
-            "branch": "workbench/readme-paths",
-            "files_sha256": "76a976d762171d6fa9eda7ddbe7ba1930d2ad57454826b94901770540b77e0e6",
-            "message": "README: the examples use ~/Projects/portal-cli, the path on every workbench\n\nThe repo is cloned to ~/Projects/portal-cli on both workbenches; ~/Projects/.portal was the\nMacBook-only folder it grew in."
+            "base_sha": "3a1f822937ddfce5bcba1a858b887978d81f0714",
+            "branch": "workbench/remove-vera",
+            "files_sha256": "8e58ec62f8427ba5484157579414a94a9b3033f494466baee76664c8b07c8a08",
+            "message": "Remove Vera as a hand: the review door, its ticket and its words\n\nVera, the review product, is gone, and the gateway has not served #agent-vera\nsince 5 October. Portal still issued review tickets, kept operator words for\nthat hand and named it on the grants page.\n\n- POST /api/ingest/capability/vera/{slug}/{review} and reviewCapability are\n  removed, with Capability::issueForReview, REVIEW and REVIEW_KINDS and the\n  vera agent fragment.\n- OperatorKeys no longer accepts a word signed for #agent-vera; it is refused\n  like any hand the gateway does not serve.\n- Grants drops the \"Reviews in Vera\" type, the review target and the Vera\n  branch in admitted(). WorkbenchAdmission drops VERA and forAct().\n- History stays: the 2026_09_13_190000 migration and every admission row.\n  act() still reads an old word that names an act, so it is never taken for a\n  period, and a Vera row still in force reads as a past hand on\n  /portal/grants (Grants::PAST_HANDS) instead of a bare fragment.\n- docs/agent-doors.md keeps the dated history and loses the Vera door, its\n  table row and the Vera-only open question.\n- Tests: the review-ticket tests are replaced by one that a Vera word is\n  refused and the door is 404, one that an old Vera row admits no one, and\n  one that it renders as a past hand. The kind fixture loses review.*."
         },
-        "resource": "abovebeyond-ai/portal-cli"
+        "resource": "abovebeyond-ai/portal"
     },
-    "run": "workbench-20261005084210-dddc89"
+    "run": "workbench-20261028145344-0e622a"
 }

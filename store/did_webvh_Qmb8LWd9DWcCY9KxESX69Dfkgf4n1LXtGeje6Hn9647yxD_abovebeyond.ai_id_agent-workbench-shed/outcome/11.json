@@ -1,16 +1,10 @@
 {
-    "action": "25f0ccd7981e72f148ff378b918f241a",
-    "effect": {
-        "detail": {
-            "draft": false,
-            "number": 5,
-            "review_requested": "ShaneDeconinck",
-            "url": "https://github.com/abovebeyond-ai/portal-cli/pull/5",
-            "via": "app"
-        },
-        "ok": true
+    "detail": {
+        "base": "50bdfa0804522177761f62fd46401a74b5397ffe",
+        "branch": "workbench/remove-vera",
+        "commit": "98c5e857474e568a3e7093a99e245fe505318abb",
+        "files": 9,
+        "via": "app"
     },
-    "reason": "within grant",
-    "step": 9,
-    "verdict": "ALLOW"
+    "ok": true
 }

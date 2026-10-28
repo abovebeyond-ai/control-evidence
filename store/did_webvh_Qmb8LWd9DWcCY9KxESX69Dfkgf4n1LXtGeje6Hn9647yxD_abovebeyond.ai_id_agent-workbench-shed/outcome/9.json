@@ -1,0 +1,16 @@
+{
+    "action": "a3c2efc1fcf8182a9bd8bd7f9cb801d0",
+    "effect": {
+        "detail": {
+            "base": "40f01b084a4d2827ca89f96a01962ec45f69bbea",
+            "branch": "workbench/deploy-over-tailnet",
+            "commit": "d608fca2995984e94fff2a787cce86326b34b4e5",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 6,
+    "verdict": "ALLOW"
+}

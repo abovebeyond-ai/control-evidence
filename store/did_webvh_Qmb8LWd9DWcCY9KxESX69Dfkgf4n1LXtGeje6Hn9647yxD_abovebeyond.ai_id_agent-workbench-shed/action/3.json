@@ -4,11 +4,11 @@
         "kind": "pull.open",
         "params": {
             "base": "main",
-            "body": "The usage examples in the README pointed at `~/Projects/.portal/`, the MacBook-only folder this repo grew in. Both workbenches now clone it to `~/Projects/portal-cli`. Proposed from the workbench at home, as `#agent-workbench-shed`.\n",
-            "branch": "workbench/readme-paths",
-            "title": "README: the examples use ~/Projects/portal-cli"
+            "body": "Vera, the review product, is removed as a hand and as a product. The gateway has not served `#agent-vera` since 5 October, but Portal still issued review tickets, accepted operator words for that hand and named it on the grants page.\n\n## What goes\n\n- `POST /api/ingest/capability/vera/{slug}/{review}` and `IngestController::reviewCapability`. `Capability::issueForReview`, `REVIEW`, `REVIEW_KINDS` and the `vera` agent fragment go with them. An unknown playbook on the remaining capability route answers 404.\n- `OperatorKeys` refuses a word signed for `#agent-vera`, as it refuses any hand the gateway does not admit.\n- `Grants` drops the \"Reviews in Vera\" type, the review target and the Vera branch in `admitted()`. `PolicyApproval` drops the `vera/` arm, and `WorkbenchAdmission` drops `VERA` and `forAct()`.\n- `docs/agent-doors.md` loses the Vera door, its table row and the Vera-only open question. The dated history stays.\n\n## What stays\n\n- The `2026_09_13_190000` migration and every admission row. No migration deletes history.\n- `WorkbenchAdmission::act()` still reads an old word that names an act, so such a word is never taken for a period.\n- A Vera row still in force renders on `/portal/grants` as a past hand (\"Vera, the reviewer, removed in October 2026\", with a Dutch string) through `Grants::PAST_HANDS`, never as a bare fragment, and the page renders when the gateway's report no longer names the hand.\n\n## Callers\n\nNo repository calls the removed route except the Vera skill's own `gateway.mjs`, which only ran on request. Vera's machine has been down since 21 October. No access logs could be read from the workbench. To confirm, check Nightwatch, or the nginx logs on the box, for `api/ingest/capability/vera/`.\n\n## Tests\n\n- New: a Vera word is refused and its door answers 404 on the read and owner tokens. An old Vera row admits no one. A past hand's word reads by name on the grants page.\n- The review-ticket tests are removed. The kind fixture loses `review.*`.\n- Full suite: 750 of 751. `BuildStampTest` fails only in a git worktree, because `BuildStamp` does not follow `commondir`; it passes on a plain checkout. `pint --test` and PHPStan are clean.\n\nCan be merged independently of the control, elixir, portal-cli and abovebeyond PRs.\n",
+            "branch": "workbench/remove-vera",
+            "title": "Remove Vera as a hand: the review door, its ticket and its words"
         },
-        "resource": "abovebeyond-ai/portal-cli"
+        "resource": "abovebeyond-ai/portal"
     },
-    "run": "workbench-20261005084210-dddc89"
+    "run": "workbench-20261028145344-0e622a"
 }

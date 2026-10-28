@@ -5,15 +5,20 @@
         "branch.push",
         "forge.deploy",
         "issue.open",
+        "observatory.trend_edit",
+        "observatory.trend_site",
         "portal.expense",
         "portal.measure",
         "portal.playbook",
         "portal.project.patch",
+        "portal.share",
         "portal.task",
         "portal.time_entry",
         "portal.update",
         "preview.push",
-        "pull.open"
+        "pull.open",
+        "stocklist.photos_repair",
+        "studio.research_draft"
     ],
     "max_per_kind": 1,
     "path_aware": true,
@@ -34,9 +39,12 @@
         "ShaneDeconinck/cafe-t-hoekske",
         "ShaneDeconinck/cides",
         "ShaneDeconinck/dbc-subsidieportaal",
+        "ShaneDeconinck/elisabethdevestele",
         "ShaneDeconinck/good-governance",
         "ShaneDeconinck/naviskore",
         "ShaneDeconinck/naviskore-viz",
+        "ShaneDeconinck/schoutteet",
+        "ShaneDeconinck/schoutteet-sanity",
         "ShaneDeconinck/shanedeconinck.be",
         "ShaneDeconinck/trendwolves-call-agents",
         "ShaneDeconinck/vlamingdam-frituur",
@@ -53,9 +61,11 @@
         "abovebeyond-ai/elixir",
         "abovebeyond-ai/elixir-fix",
         "abovebeyond-ai/portal",
+        "abovebeyond-ai/portal-android",
         "abovebeyond-ai/portal-cli",
         "abovebeyond-ai/proof-of-control",
         "abovebeyond-ai/proveml",
+        "abovebeyond-ai/proveml-demos",
         "abovebeyond-ai/proveml-research",
         "abovebeyond-ai/trustedagentic.ai",
         "abovebeyond-ai/vera",
@@ -71,6 +81,7 @@
         "forge:cides-portfolio",
         "forge:control",
         "forge:dbc-webapplicatie",
+        "forge:elisabethdevestele-website",
         "forge:elixir",
         "forge:elixir-fix",
         "forge:find-your-voice",
@@ -96,12 +107,15 @@
         "forge:sportbusinessgame",
         "forge:stocklist-dealer-landing",
         "forge:stocklistplatform-eu",
+        "forge:swallow-method",
         "forge:trustedagentic",
         "forge:vera",
         "forge:verify-abovebeyond",
         "kubo-global/afrodidact-website",
         "kubo-global/kubo-school-platform",
         "kubo-global/kubo-website",
+        "kubo-global/swallow-method",
+        "observatory:pipeline",
         "portal:abovebeyond",
         "portal:afrodidact-website",
         "portal:axa-dare-to-call",
@@ -112,6 +126,7 @@
         "portal:cides-portfolio",
         "portal:control",
         "portal:dbc-webapplicatie",
+        "portal:elisabethdevestele-website",
         "portal:elixir",
         "portal:elixir-fix",
         "portal:find-your-voice",
@@ -137,13 +152,14 @@
         "portal:sportbusinessgame",
         "portal:stocklist-dealer-landing",
         "portal:stocklistplatform-eu",
+        "portal:swallow-method",
         "portal:trustedagentic",
         "portal:vera",
         "portal:verify-abovebeyond",
+        "stocklist:platform",
         "stocklistdealer-eu/landing",
         "stocklistdealer-eu/platform",
-        "stocklistdealer-eu/stockcars-website",
-        "stocklistdealer-eu/website"
+        "stocklistdealer-eu/stockcars-website"
     ],
     "schemas": {
         "branch.delete": {
@@ -157,12 +173,12 @@
         "branch.push": {
             "optional": {
                 "base_sha": "string",
-                "files_sha256": "hex64",
                 "message": "string",
                 "packages": "int"
             },
             "required": {
-                "branch": "string"
+                "branch": "string",
+                "files_sha256": "hex64"
             }
         },
         "forge.deploy": {
@@ -180,6 +196,21 @@
             },
             "required": {
                 "title": "string"
+            }
+        },
+        "observatory.trend_edit": {
+            "optional": [],
+            "required": {
+                "field": "string",
+                "text": "string",
+                "trend": "string"
+            }
+        },
+        "observatory.trend_site": {
+            "optional": [],
+            "required": {
+                "action": "string",
+                "trend": "string"
             }
         },
         "portal.expense": {
@@ -222,6 +253,16 @@
                 "summary": "string"
             },
             "required": []
+        },
+        "portal.share": {
+            "optional": {
+                "days": "int",
+                "passphrase_hash": "string"
+            },
+            "required": {
+                "files_sha256": "hex64",
+                "title": "string"
+            }
         },
         "portal.task": {
             "optional": {
@@ -306,6 +347,52 @@
             },
             "required": {
                 "root": "string"
+            }
+        },
+        "run.checkpoint": {
+            "optional": {
+                "next": "list",
+                "state": "strings"
+            },
+            "required": {
+                "summary": "string"
+            }
+        },
+        "run.close": {
+            "optional": {
+                "checks": "records",
+                "next": "list",
+                "state": "strings"
+            },
+            "required": {
+                "outcome": "string",
+                "summary": "string"
+            }
+        },
+        "run.open": {
+            "optional": {
+                "continues": "string",
+                "goal": "string"
+            },
+            "required": []
+        },
+        "stocklist.photos_repair": {
+            "optional": {
+                "apply": "bool"
+            },
+            "required": {
+                "vehicle": "int"
+            }
+        },
+        "studio.research_draft": {
+            "optional": {
+                "context": "string",
+                "sources": "records",
+                "status": "string"
+            },
+            "required": {
+                "description": "string",
+                "title": "string"
             }
         },
         "workflow.dispatch": {

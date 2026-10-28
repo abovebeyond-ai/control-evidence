@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "50bdfa0804522177761f62fd46401a74b5397ffe",
+            "branch": "workbench/remove-vera",
+            "files_sha256": "66c24fc2ec766160abf0a65e78b9f00067096842e42aa2090bd9bbc18191a8b9",
+            "message": "Remove the review hand: Elixir no longer writes a grant for Vera\n\nVera, the review product, is gone. Elixir wrote its grant (#agent-vera,\nreview.publish|invite|sign on vera/<project>/*) whenever\nELIXIR_CONTROL_VERA_KEY was set; that key left elixir's crontab on\n5 October, so the gateway has not served the hand since. This removes the\ncode path so the grant cannot come back by setting a variable.\n\n- App\\Control\\ReviewHand and its call in ControlService are removed, with\n  the control_vera_key setting.\n- PolicyLog no longer names #agent-vera or describes vera/ resources; a\n  hand it does not name is still said by its DID URL.\n- Tests: the review hand's two tests go; the policy-log tests that used\n  review.invite as the kind without a radius use branch.delete, as control's\n  own tests do now. The kind fixture loses review.*."
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261028145438-a9ea64"
+}

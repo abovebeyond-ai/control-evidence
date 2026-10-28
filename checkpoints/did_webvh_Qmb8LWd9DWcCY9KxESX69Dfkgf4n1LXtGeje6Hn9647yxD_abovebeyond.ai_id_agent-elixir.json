@@ -1,8 +1,8 @@
 {
     "agent": "did:webvh:Qmb8LWd9DWcCY9KxESX69Dfkgf4n1LXtGeje6Hn9647yxD:abovebeyond.ai:id#agent-elixir",
-    "tree_size": 192,
-    "root": "sha-256:a3b3a92269f9ef4e3e17dea025c47f01c55b06eb959131ebe22198dd57d5f586",
-    "chain_head": "sha-256:958112d6712f947d0bad9f004880850c1139b916222445da4bd6d28fb7578b8a",
-    "attestation": "sha-256:00f5fb5e4c8ccbcbaefb62254b65c41cbf85064b628e428549fead23d0054121",
-    "signature": "be15483aaea0d5bca851b05226efc83d17c926aa33385d087961a87a7c8f0fd4257c9898c38d469acf671523421cdad6f9769ab73aa647eba6dae41b94d8a206"
+    "tree_size": 0,
+    "root": "sha-256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "chain_head": "sha-256:b16aab1f4f9386ac12abee48c6a56cd4c0fd7ab7271c1b50b29dff8e9cb0ea78",
+    "attestation": "sha-256:aeec775d5564e33b215ea51c323576a9e117a8fa75f0f863e1d3011064e44d14",
+    "signature": "c5b7d6cf4f3e0ef8d8b796aaf171fe7367c676f5314572c97d375ae93195f367a2442c01ed36280bcb1d0a164e31cf1cf20a15772bab3f3b834bc45afd27b505"
 }

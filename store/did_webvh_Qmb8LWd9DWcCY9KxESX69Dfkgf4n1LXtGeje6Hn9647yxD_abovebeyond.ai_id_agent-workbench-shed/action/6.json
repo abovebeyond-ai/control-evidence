@@ -3,12 +3,12 @@
         "classification": "public",
         "kind": "branch.push",
         "params": {
-            "base_sha": "50171010c5b8052f880a2f7ae99239848fd1fae2",
-            "branch": "workbench/records-of-this-hand",
-            "files_sha256": "8b098e9ebb0d68c0a3edb28751b57c384cc498c1fc5bdfef4f8e7c9c8e1bf225",
-            "message": "hand.mjs records: the records of this machine's hand\n\nOn the workbench at home, records still asked for the Mac's #agent-workbench, and the answer\nfor that long chain was larger than the 16 MB the ssh call allowed, which read as a refusal.\nrecords now asks for the fragment this machine signs under (handFragment), and the calls to\nthe box allow 256 MB."
+            "base_sha": "40f01b084a4d2827ca89f96a01962ec45f69bbea",
+            "branch": "workbench/deploy-over-tailnet",
+            "files_sha256": "4f9a18aa936a580644281618810424eb85e525a1c75713d1895f2b0188050b8b",
+            "message": "Deploy over the tailnet"
         },
-        "resource": "abovebeyond-ai/portal-cli"
+        "resource": "kubo-global/afrodidact-website"
     },
-    "run": "workbench-20261005084312-94d269"
+    "run": "workbench-20261028145449-617728"
 }

@@ -4,11 +4,11 @@
         "kind": "pull.open",
         "params": {
             "base": "main",
-            "body": "Since portal#338 and portal-cli#6 the workbench at home reads Portal (fleet, onboard, changes) by signing each request with its own key, and the brief withholds the access codes from it, admitted or not. The core instructions say so and the item leaves the to-do list. Proposed from the workbench at home.\n",
-            "branch": "workbench/the-workbench-reads-portal",
-            "title": "The workbench at home reads Portal with its own key"
+            "body": "The Vera app is removed. The gateway stopped serving `#agent-vera` on 5 October, when its key left the configuration Elixir writes. This takes the hand out of the release.\n\n- `effects/vera.go` and its test are removed. The gateway no longer performs `review.publish`, `review.invite` or `review.sign` and no longer makes a `vera-seal.key` at boot. `/v1/key` publishes only the gateway's own key.\n- The three review kinds leave the built-in kind table, so an action that names one is refused as an unknown kind. Replaying old policy versions works as before: a kind outside the table and a review kind both had no radius.\n- `vera_base` leaves the configuration. The configuration is read with plain `json.Unmarshal` and Elixir never wrote the field, so no carried configuration is affected.\n- The read-token door and the boot script no longer treat `vera/` resources separately, and `startup.sh` and `rehearse.sh` no longer fetch or carry a `vera-token` secret.\n- The per-action word and the `/*` resource prefix stay, because both are generic. Their tests and examples now use `branch.delete` and a neutral prefix instead of the review kinds.\n- The conformance statement lists three hands and drops the review kinds from the in-scope actions. The hand's dates stay as history.\n\nThe records the review hand left stay in the log and verify as before: each record carries its own action, and no verifier reads the kind table.\n\nRebased on `main` after #133 to #137 (run lifecycle, review retry, v0.44.0). The adapter list keeps `gateway` for the run kinds. `gofmt`, `go vet` and `go test ./...` are clean.\n\n## After merging\n\n1. Cut a release (`v0.45.0`; `v0.44.0` is already taken).\n2. Pin it with its checksum in `deploy/gcp/startup.sh`.\n3. Carry it with `deploy/gcp/rehearse.sh upgrade`.\n\nNo grant changes, so no configuration transfer is needed. Once the gateway is upgraded, nothing reads the `vera-seal.key` and `vera-token` files on its disk, and the GCP secret `control-vera-token` and the service account `vera-client` can be deleted.\n",
+            "branch": "workbench/remove-vera",
+            "title": "The review hand leaves with the Vera app"
         },
-        "resource": "abovebeyond-ai/workspace"
+        "resource": "abovebeyond-ai/control"
     },
-    "run": "workbench-20261005090537-12c478"
+    "run": "workbench-20261028145509-92b056"
 }

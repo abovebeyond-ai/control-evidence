@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The deploy job reaches the box as root over SSH on its public address, so port 22 has to stay open to the whole internet. With the job on the tailnet, SSH on the box can be closed to everything but the tailnet.\n\n## Changes\n\n- **Join the tailnet**: before the SSH steps, `tailscale/github-action@v4` brings the runner up as a short-lived node tagged `tag:ci`, using a Tailscale OAuth client, and pings the box to fail early if it cannot be reached.\n- **SSH over the tailnet**: every `rsync` and `ssh` goes to `DEPLOY_TAILNET_HOST` (the box's tailnet address), checked against `DEPLOY_TAILNET_KNOWN_HOSTS`.\n- New secrets: `TS_OAUTH_CLIENT_ID`, `TS_OAUTH_SECRET`, `DEPLOY_TAILNET_HOST`, `DEPLOY_TAILNET_KNOWN_HOSTS`. `DEPLOY_HOST` and `DEPLOY_KNOWN_HOSTS` are no longer read and can be deleted once a deploy has gone through.\n\n## In place before this change\n\n- The tailnet policy defines `tag:afrodidact` and `tag:ci`. People's devices (`autogroup:member`) reach everything; `tag:ci` reaches `tag:afrodidact` on TCP 22 and nothing else. The default allow-all rule is gone.\n- The box is on the tailnet as `tag:afrodidact`. Its SSH host keys over the tailnet are the same as on its public address.\n- The Tailscale OAuth credential is limited to writing auth keys for `tag:ci`.\n- The four secrets are set.\n\n## After merging\n\nThe deploy on this merge is the first run over the tailnet. Port 22 is closed in the Hetzner firewall only after it has passed; then `DEPLOY_HOST` and `DEPLOY_KNOWN_HOSTS` can be deleted.\n\n## Verification\n\nThe workflow parses as YAML, and the action's inputs (`oauth-client-id`, `oauth-secret`, `tags`, `ping`) match `tailscale/github-action` v4.3.0. The first real check is the deploy run after the merge.\n",
+            "branch": "workbench/deploy-over-tailnet",
+            "title": "Deploy over the tailnet"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261028145449-617728"
+}

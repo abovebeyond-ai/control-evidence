@@ -3,12 +3,12 @@
         "classification": "public",
         "kind": "branch.push",
         "params": {
-            "base_sha": "e3ad29bc3b75aeb58ae2858e44c7ae0da46f7a24",
-            "branch": "workbench/the-workbench-reads-portal",
-            "files_sha256": "1b4103d6aa4a2c581529d1a539c029e472804ebf9d9864a859ef4a2b3eeda9f3",
-            "message": "The workbench at home reads Portal with its own key\n\nIt signs its reads (scope hand-read, ten GET routes) and never gets the access codes, admitted\nor not. The item leaves the to-do list; the token section says how the workbench reads."
+            "base_sha": "ff81d4ed2485a55783fd1f16c299a3cbebc200f9",
+            "branch": "workbench/remove-vera",
+            "files_sha256": "63c7beeee31f889ef1c74f0cb3f1e6df5cfe1fcf0e10d46763fc9a882e08d162",
+            "message": "The review hand leaves with the Vera app\n\nThe Vera app is gone, and the gateway stopped serving #agent-vera on\n5 October, when its key left the configuration Elixir writes. This takes\nthe hand out of the release:\n\n- effects/vera.go and its test removed: no review.publish, review.invite\n  or review.sign is performed any more, and no vera-seal.key is made at\n  boot; /v1/key publishes the gateway's own key only.\n- The three review kinds leave the built-in kind table; an action naming\n  one is refused as an unknown kind. Replaying old policy versions is\n  unchanged: a kind outside the table and a review kind both had no\n  radius.\n- vera_base leaves the configuration. The configuration is read with\n  plain json.Unmarshal, and Elixir never wrote the field, so no carried\n  configuration is affected.\n- The read-token door and the boot script no longer treat vera/\n  resources apart, and the boot script and rehearse.sh no longer fetch\n  or carry a vera-token secret.\n- The per-action word and the \"/*\" resource prefix stay: both are\n  generic. Their tests and examples now use branch.delete and a neutral\n  prefix instead of the review kinds.\n- The conformance statement lists three hands and drops the review\n  kinds from the in-scope actions, with the hand's dates kept as history.\n\nThe records the review hand left stay in the log and verify as before:\na record carries its own action, and no verifier reads the kind table."
         },
-        "resource": "abovebeyond-ai/workspace"
+        "resource": "abovebeyond-ai/control"
     },
-    "run": "workbench-20261005090537-12c478"
+    "run": "workbench-20261028145509-92b056"
 }

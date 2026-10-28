@@ -3,12 +3,12 @@
         "classification": "public",
         "kind": "branch.push",
         "params": {
-            "base_sha": "a54de276461bc9937aadb92eb8fcd32f30a5151f",
-            "branch": "workbench/sessions-from-the-phone",
-            "files_sha256": "c67cae31f523c1e5f783ce19fe4ca32de559d372b1d8ce5a028d98ef574828e4",
-            "message": "Sessions from the phone: a Remote Control server per project\n\nOn the workbench at home each project gets a user service, claude-rc@<folder>, running\nclaude remote-control in worktree mode with at most four sessions. A new session started from\nthe Claude app gets its own worktree, so sessions never share a checkout."
+            "base_sha": "2cd871af7acbfca791410af006c71bda28207e58",
+            "branch": "workbench/remove-vera",
+            "files_sha256": "0e04527cb5530fba15b2eda5e69f7662918016af80a5a9fced3fcc5899da1b23",
+            "message": "Remove the Vera hand from admit: the workbench is the only hand words are signed for\n\nVera, the review product, is gone, and Portal no longer keeps a word signed\nfor #agent-vera. hand.mjs admit drops --hand vera and --act (a word for one\nact only ever existed for that hand), admittedKinds drops its Vera branch,\nand the comments that pointed at Vera's machine now name the workbench at\nhome, which is the other machine that fetches an admission from Portal."
         },
-        "resource": "abovebeyond-ai/workspace"
+        "resource": "abovebeyond-ai/portal-cli"
     },
-    "run": "workbench-20261005091902-33b32d"
+    "run": "workbench-20261028145555-0b3efa"
 }

@@ -4,11 +4,11 @@
         "kind": "pull.open",
         "params": {
             "base": "main",
-            "body": "Each project on the workbench at home gets a Remote Control server as a user service (`claude-rc@<folder>`, worktree mode, at most four sessions), so a new session can be started from the Claude app on the phone, each in its own worktree. The core instructions say how to add a project. Running now for `platform`. Proposed from the workbench at home.\n",
-            "branch": "workbench/sessions-from-the-phone",
-            "title": "Sessions from the phone: a Remote Control server per project"
+            "body": "Vera, the review product, is removed, and Portal no longer accepts a word signed for `#agent-vera`.\n\n- `hand.mjs admit` drops `--hand vera` and `--act`. A word for a single act only ever existed for that hand. `admit` now signs words for the workbench only.\n- `admittedKinds` drops its Vera branch. `lib/policy.test.mjs` drops the Vera rows.\n- The comments that pointed at Vera's machine now name the workbench at home, the other machine that fetches an admission from Portal. The comments touched are now in English.\n\nRebased on `main` after #61 to #63. `node --test lib/*.test.mjs`: 48 of 49. The failure (`a machine that never reached the platform falls back to the bundled snapshot`) fails the same way on `main`.\n",
+            "branch": "workbench/remove-vera",
+            "title": "Remove the Vera hand from admit: the workbench is the only hand words are signed for"
         },
-        "resource": "abovebeyond-ai/workspace"
+        "resource": "abovebeyond-ai/portal-cli"
     },
-    "run": "workbench-20261005091902-33b32d"
+    "run": "workbench-20261028145555-0b3efa"
 }

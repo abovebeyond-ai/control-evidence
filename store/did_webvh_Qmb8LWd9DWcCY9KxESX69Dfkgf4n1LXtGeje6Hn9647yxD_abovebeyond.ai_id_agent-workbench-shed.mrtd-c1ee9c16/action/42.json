@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7869ea1b7489de8531779e52080214a9a2b3941e",
+            "branch": "workbench/key1-on-token",
+            "files_sha256": "c00506efd750e7028c2a2c0526bf710fa764688ae2866a69037f9dcbb1e1cbbc",
+            "message": "Sign with key-1 through one module that also signs on a PKCS#11 token\n\nscripts/key-1.mjs opens key-1 from a descriptor (abovebeyond-key-1.key.json) or,\nwithout one, the legacy JWK file, and returns raw Ed25519 signatures. sign-post.mjs\nsigns through it under the successor DID; did-webvh.mjs shares its token calls,\nreads key-1 from a token slot for replace-key, refuses to generate over a key, and\nparses token public keys strictly."
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261005184157-225d53"
+}

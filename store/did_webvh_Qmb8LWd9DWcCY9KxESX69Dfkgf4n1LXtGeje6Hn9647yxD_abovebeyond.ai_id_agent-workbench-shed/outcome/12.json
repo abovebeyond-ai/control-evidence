@@ -1,0 +1,16 @@
+{
+    "action": "4395f45d8a5f13e578fd4f1b57b47d87",
+    "effect": {
+        "detail": {
+            "base": "50bdfa0804522177761f62fd46401a74b5397ffe",
+            "branch": "workbench/remove-vera",
+            "commit": "98c5e857474e568a3e7093a99e245fe505318abb",
+            "files": 9,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 7,
+    "verdict": "ALLOW"
+}

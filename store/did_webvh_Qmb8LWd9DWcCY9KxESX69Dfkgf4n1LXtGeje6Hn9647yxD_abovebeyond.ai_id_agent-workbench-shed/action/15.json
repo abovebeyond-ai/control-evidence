@@ -4,11 +4,11 @@
         "kind": "pull.open",
         "params": {
             "base": "main",
-            "body": "The workbench at home now has `gh` (2.102.0, checksum verified) behind a wrapper that asks the gateway for a one-hour, read-only token for the owner a call names. `hand.mjs propose` needed it to check that main has not moved. The core instructions say so, and the item leaves the to-do list. Proposed from the workbench at home.\n",
-            "branch": "workbench/gh-on-the-workbench",
-            "title": "gh reads on the workbench too, with an hour token from the gateway"
+            "body": "Vera, the review product, is removed. Elixir wrote its grant (`#agent-vera`, `review.publish|invite|sign` on `vera/<project>/*`) whenever `ELIXIR_CONTROL_VERA_KEY` was set. That key left elixir's crontab on 5 October, so the gateway has not served the hand since. This removes the code path, so the grant cannot come back by setting a variable.\n\n- `App\\Control\\ReviewHand` is removed, along with its call in `ControlService` and the `control_vera_key` setting.\n- `PolicyLog` no longer names `#agent-vera` or describes `vera/` resources. It still names a hand it does not know by its DID URL.\n- Tests: the review hand's two tests are removed. The policy-log tests that used `review.invite` as the kind without a radius now use `branch.delete`, as control's tests do. The kind fixture loses `review.*`.\n\nRebased on `main` after #249 (run lifecycle). Full suite: 744 of 744.\n\nNo grant changes for the hands that remain, so no gateway configuration needs to be carried over.\n",
+            "branch": "workbench/remove-vera",
+            "title": "Remove the review hand: Elixir no longer writes a grant for Vera"
         },
-        "resource": "abovebeyond-ai/workspace"
+        "resource": "abovebeyond-ai/elixir"
     },
-    "run": "workbench-20261005084345-9cddef"
+    "run": "workbench-20261028145438-a9ea64"
 }

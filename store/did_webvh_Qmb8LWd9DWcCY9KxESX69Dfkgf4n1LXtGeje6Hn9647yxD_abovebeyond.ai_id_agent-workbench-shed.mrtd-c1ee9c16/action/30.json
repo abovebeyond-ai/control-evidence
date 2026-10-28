@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a17af9aa4982fe7fd91bd3a605ef916087228f65",
+            "branch": "workbench/one-entry-point",
+            "files_sha256": "b2d888f95521f9358e204d712ca04accc6526f7980695bb12be73f1cec52f222",
+            "message": "One entry point: a session in ~/Projects finds its project first\n\nWhen a client calls, the project is not known beforehand. One Remote Control server runs in\n~/Projects; every repository Portal links is already cloned there by projects-sync, which also\nwrites PROJECTS.md. A session started there finds the project by client or name, then works in\nits own worktree, never in the shared checkout."
+        },
+        "resource": "abovebeyond-ai/workspace"
+    },
+    "run": "workbench-20261005093057-3387cb"
+}

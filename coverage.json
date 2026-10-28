@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-28T08:23:17+00:00",
-    "request_records": 1811,
-    "records": 5433,
+    "computed_at": "2026-10-28T15:09:26+00:00",
+    "request_records": 16,
+    "records": 48,
     "evidence_writes_failed_closed": 0,
     "coverage": 1,
     "how": "a hand cannot act except through the gateway; in-scope actions are the request records plus the writes that failed closed (row 10.3.6)"

@@ -1,14 +1,14 @@
 {
     "action": {
         "classification": "public",
-        "kind": "pull.open",
+        "kind": "branch.push",
         "params": {
-            "base": "main",
-            "body": "Replaces the per-project Remote Control servers with one entry point in `~/Projects` (`claude-rc-workspace`), and `projects-sync` (hourly) keeps all 42 repositories Portal links cloned and fetched, writing `PROJECTS.md`. The core says how a session there finds its project and that it works in its own worktree. Proposed from the workbench at home.\n",
-            "branch": "workbench/one-entry-point",
-            "title": "One entry point: a session in ~/Projects finds its project first"
+            "base_sha": "4d646febfe9b92071c1030a46b815c7bccd09299",
+            "branch": "workbench/remove-vera",
+            "files_sha256": "730778014104fd259e0fe29f41c8fb4ae1976d3002bc1d733a9b203be534f09a",
+            "message": "Remove the Vera page, and let the DID script take a role out\n\nVera, the review product, is gone.\n\n- src/pages/vera.astro is removed; /vera and /vera/* redirect to the\n  homepage (301), as the site does for other addresses that were public.\n- The night hue for Vera leaves globals.css. The trust page names ProveML\n  alone for checking claims. The README, the brand guide and the parked keys\n  page stop presenting Vera as current; dated notes and the signed blog post\n  stay as they are.\n- scripts/did-webvh.mjs: --remove assigned to an undeclared `invocation`,\n  so any version that removed a role threw a ReferenceError before it was\n  built (no key was spent). The line goes, and the summary now names the\n  roles a version removed. Rehearsed on a throwaway log with software keys:\n  the old script fails on `rotate --remove`, the fixed one writes a version\n  without the removed roles and verifies.\n\npublic/id/did.jsonl and did.json are untouched: taking #agent-vera and #vera\nout of the identity is a signed version made on the YubiKeys."
         },
-        "resource": "abovebeyond-ai/workspace"
+        "resource": "abovebeyond-ai/abovebeyond"
     },
-    "run": "workbench-20261005093057-3387cb"
+    "run": "workbench-20261028145619-b16c18"
 }
