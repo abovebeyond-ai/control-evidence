@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "01c6d69fb4aae1ef9abcb4d7e24a36eb0bd0fcf0",
+            "branch": "workbench/unrelated-words",
+            "files_sha256": "f139b32998283a3600ad159db15e1b0352dc7aededab0ab3fb64279813a8637b",
+            "message": "Say what an unrelated signal is in the evidence line"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261028161314-3241c0"
+}

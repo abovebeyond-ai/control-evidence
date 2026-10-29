@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0e3e84deae40bf898c42fb1e3d4d0d510b3fbc50",
+            "branch": "workbench/app-redirect",
+            "files_sha256": "c168990aa8dd54d227a4e4589984a04543194d7888f40d42c5590e48529c8534",
+            "message": "Let the Gentells app sign in with the Observatory's client"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261028185411-900b73"
+}

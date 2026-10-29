@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The pedagogical direction made a renewed teacher manual for Naviskore and asks to link it in the platform. The interactive version lives on Genially, which the manuals page cannot show today.\n\nThe manuals page (`documentation.show`) embeds each manual's URL in an iframe. The Content Security Policy only allows `docs.google.com` and `drive.google.com` in `frame-src`, so a Genially manual (`view.genially.com`) would be blocked with \"Deze content is geblokkeerd\".\n\nThe manual comes in two forms:\n- an interactive Genially, publicly viewable and embeddable (no `X-Frame-Options`, no `frame-ancestors`);\n- an interactive PDF on a school Google Drive, which redirects to a Google sign-in for anyone outside that Drive's sharing, and Google's sign-in page refuses to be framed. Embedding that one only works for viewers already signed in with access.\n\nSo the Genially is the one to link. Needed: allow `https://view.genially.com` in `frame-src`, then an admin adds the manual through \"Handleiding toevoegen\" with the Genially URL.\n\nSource: Portal mail:36.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Link the renewed teacher manual (Genially) on the manuals page"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261028154803-be077f"
+}

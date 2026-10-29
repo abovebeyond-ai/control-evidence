@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ff81d4ed2485a55783fd1f16c299a3cbebc200f9",
+            "branch": "workbench/pin-v0.45.0",
+            "files_sha256": "438f7e20d3597328eed6a394b2f96b586204516489568d91b0ccb19303d8ffd9",
+            "message": "The gateway runs v0.45.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261028152021-562f9a"
+}

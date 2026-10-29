@@ -1,0 +1,16 @@
+{
+    "action": "37f8fe1917394c33ed6b1ef726dbecfe",
+    "effect": {
+        "detail": {
+            "base": "0fe1f1400b89fb77bab4fb964573ff025a403ccb",
+            "branch": "workbench/ask-router-shadow-race",
+            "commit": "5da93e98b32d005ae7f319589a04e59af396a089",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 72,
+    "verdict": "ALLOW"
+}

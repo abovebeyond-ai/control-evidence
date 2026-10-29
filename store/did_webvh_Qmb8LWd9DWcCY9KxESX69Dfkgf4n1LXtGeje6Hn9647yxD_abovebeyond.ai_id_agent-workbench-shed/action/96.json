@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "789ab79e3b9d19b8bec504c93d2136de618c15e2",
+            "branch": "workbench/manual-form",
+            "files_sha256": "57bf40c24c8d650d177a4b5c68a83adb6fc1f5ec6ac9955213485de4763dd579",
+            "message": "Put the add-a-manual form on the shared form components"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261028160432-42164d"
+}

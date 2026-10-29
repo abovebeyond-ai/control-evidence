@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n**A member personalises their week, rather than saying where they work.** \"Tell us where you work\" read like an employee profile. Research platforms name this setting after what it does, a personalised feed (CB Insights, Statista), and ask about the work, not the person. The title of the page is already \"This week\", so the card says what happens to it.\n\n| | Before | Now |\n|---|---|---|\n| Card heading | Tell us where you work | Personalise your week |\n| Card text | Name your organisation and pick the sectors, generations and markets that matter to it. Your week then starts with your sectors, and Ask answers for your organisation. | Pick the sectors, generations and markets you work on, and say what your organisation does. Your week then starts with your sectors, and Ask answers with that in mind. |\n| Button | Tell us about your organisation | Personalise your week |\n| Form heading | Your organisation | Personalise your week |\n| Form text | Your Overview starts with the sectors you pick, and Ask answers for your organisation. | Your week starts with the sectors you pick, and Ask answers with all of this in mind. |\n| First field | Name | Organisation |\n| Panel heading, no name yet | Your organisation | Your sectors |\n| Panel, sectors from sign-up only | Add your organisation and what it does, and Ask answers for it. | Add who you want to reach and what your organisation does, and Ask answers with it in mind. |\n| Panel link, sectors from sign-up only | Add your organisation | Add more |\n| Toast after removing | Your organisation is removed. | Removed. Your week is no longer personalised. |\n\nThese stay as they were:\n\n- \"Sectors you work in\", the same question sign-up asks;\n- the title \"This week for Noorderbank\" once an organisation is named;\n- Ask's suggested questions (\"What does this week mean for Noorderbank?\").\n\nWording only: nothing changes in what is stored or sent.\n\n## Checked\n\n- `e2e/overview.spec.js` follows the new words. **Full e2e run: 84 of 84.**\n- The lint ratchet is at its ceiling, and the build passes.\n- Seen in a browser with production data of 28 October: the card, and the form filled in.\n",
+            "branch": "workbench/member-focus",
+            "title": "A member personalises their week, rather than saying where they work"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261028162234-3fcfc1"
+}

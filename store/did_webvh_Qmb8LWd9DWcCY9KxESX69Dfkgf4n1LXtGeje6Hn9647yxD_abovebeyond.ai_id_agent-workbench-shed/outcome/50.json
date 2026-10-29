@@ -1,0 +1,16 @@
+{
+    "action": "4992a04ac76bf9d7735a358b91fdb3ea",
+    "effect": {
+        "detail": {
+            "base": "0fe1f1400b89fb77bab4fb964573ff025a403ccb",
+            "branch": "workbench/tests-without-live-router",
+            "commit": "96562cf35769339b59060e2143ae69d4a8b168ea",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 48,
+    "verdict": "ALLOW"
+}

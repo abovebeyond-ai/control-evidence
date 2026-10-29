@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pins v0.46.0 in `deploy/gcp/startup.sh`. v0.46.0 is tagged on `287a29a` (main after #138) and holds everything in v0.45.0: the run lifecycle (#133), owner-signed loosening of a lifecycle (#136), the lifecycle served as a policy field (#137) and, new, the removal of the review hand (#138).\n\n- `control-gateway-linux-amd64` sha256 `76e529f606e9d6ee459243a295dcfb9469184faa48a7ac420744bf132e9b94a0`, as listed in the release's `SHA256SUMS`. Checked against the downloaded asset.\n- The downloaded binary contains no `vera-seal.key`, `review.publish` or `vera_base`, and does serve `GET /v1/runs`.\n\nThis replaces #139, which pins v0.45.0. Pinning v0.46.0 directly means one stop-and-start of the gateway VM instead of two.\n\nAfter merging, carry it with `deploy/gcp/rehearse.sh upgrade` from a fresh clone. The upgrade stops and starts the VM. If the VM comes back on another firmware measurement than `f21e6b48\u2026`, the gateway will refuse every hand until the logs are rotated again, on the VM and in Elixir's anchors and evidence clone, as on 28 October.\n",
+            "branch": "workbench/pin-v0.46.0",
+            "title": "The gateway runs v0.46.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261028152647-0db1f8"
+}

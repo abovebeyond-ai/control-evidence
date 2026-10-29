@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: feedback  Priority: P3\nSummary: The teacher manual is maintained by the school's pedagogical direction, outside this repo. They ask that future changes to the platform also find their way into the manual.\n\nThere is no step today that tells the manual's authors what changed in Naviskore. Once the renewed manual is linked (see the request from the same mail), every change to a screen teachers use can make it outdated without anyone noticing.\n\nPossible shapes, to decide: a short note per release for the manual's authors, a checklist item on pull requests that touch teacher-facing screens, or a changelog page in the app.\n\nSource: Portal mail:36.\n",
+            "labels": [
+                "mail",
+                "feedback",
+                "priority:P3"
+            ],
+            "title": "Keep the teacher manual in step with platform changes"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261028154810-64fc11"
+}

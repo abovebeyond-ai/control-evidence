@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The `Soort` field on an event (live music, quiz, card night, theme night, other) was asked in the Studio but never used by the site: no page reads `kind`. It was one more field for the owner to fill in for nothing.\n\n- Removed the field from the `event` schema.\n- Removed `kind` from the event queries and the `EventDoc` type.\n\nNo document in the dataset has a value for `kind` (`count(*[defined(kind)])` is 0), so nothing is lost and the Studio shows no unknown-field warning.\n\nChecked: `astro build` against the live dataset and `tsc --noEmit`, both clean.\n",
+            "branch": "workbench/drop-event-kind",
+            "title": "Drop the event kind field"
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261028202249-e1f5dd"
+}

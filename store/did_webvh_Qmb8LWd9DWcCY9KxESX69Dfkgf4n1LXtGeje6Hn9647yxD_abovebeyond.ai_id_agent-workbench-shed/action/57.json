@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pins the gateway to v0.45.0: the run lifecycle (#133), the review request retried until GitHub lists the reviewer (#134), loosening a lifecycle held to the owner (#136), and `lifecycle` served as a grant field (#137).\n\n`control-gateway-linux-amd64` of the v0.45.0 release hashes to `c7481e8dffd40f29eae116e3a1ed29cdeefe1068c7865762912b1e7d8b50e6a3`. That matches SHA256SUMS, and I checked it against the downloaded asset. The tag is on ff81d4e, the merge of #137.\n\nOnce this runs, the gateway announces `lifecycle` among its fields. Elixir (#249) then writes the workbench lifecycle into the next policy version and signs it itself, since adding a lifecycle is narrower. From that version on, every workbench run is judged under it.\n\nThe gateway runs v0.45.0 only after the configuration is carried and the VM is stopped and started.\n",
+            "branch": "workbench/pin-v0.45.0",
+            "title": "The gateway runs v0.45.0"
+        },
+        "resource": "abovebeyond-ai/control"
+    },
+    "run": "workbench-20261028152021-562f9a"
+}

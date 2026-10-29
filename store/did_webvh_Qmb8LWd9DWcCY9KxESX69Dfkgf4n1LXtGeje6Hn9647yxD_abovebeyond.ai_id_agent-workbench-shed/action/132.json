@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8895998e4b0ebcfad30cc087a88a2be7529303e4",
+            "branch": "workbench/real-content-design",
+            "files_sha256": "c6e1a05d0b3622573dad5175c7909c62ed51722fd97275ce58677ed2dc9ff8fa",
+            "message": "Event pages that hold up with what the owner types\n\n- Lining figures site-wide: Cormorant's old-style figures made \"30\" read as \"3o\".\n- Dates and times in Europe/Brussels: the build runs in UTC, so a 16:26 start showed as 15:26.\n- Event titles: whitespace collapsed, hand-spaced letters joined, size steps down for long titles.\n- Summary and long description hidden when they repeat the title.\n- Event page: one serif voice for date and time, no script date, no arrow, no double rule.\n- Event paths fall back to a slug from the title when the stored slug is unusable (\".\").\n- Agenda and page content aligned with the header; opening hours sorted Monday first.\n- Studio: short-title hint and warnings, 15-minute time step, warnings for a start that looks\n  like the moment of entry or a date that differs from the one in the title, slug check,\n  \"Korte beschrijving\" only for what the title does not say.\n\nPortal: De agenda toont activiteiten nu juist, met het uur in Belgische tijd en ook bij lange titels; de Studio helpt bij het invullen."
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261028191240-930cc9"
+}

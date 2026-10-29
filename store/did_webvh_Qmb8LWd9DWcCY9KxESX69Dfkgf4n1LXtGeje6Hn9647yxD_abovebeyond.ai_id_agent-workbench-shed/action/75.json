@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`shadow: reads beside the answer, logs what it would have done, changes nothing` in `test/ask-router.test.mjs` counted the router's call right after the answer came back. Shadow does not wait for the router, so on a slow machine the answer can end before the router's stand-in has even logged its call: CI on #401 failed there (expected 1, got 0), on a change that does not touch the router. It now waits for the router's row, which is complete only once the router has answered, and counts after.\n\n## Checked\n\n- The race reproduced: with the stand-in's router call held 300 ms, the test as on main fails with CI's message (expected 1, actual 0); as here it passes.\n- `test/ask-router.test.mjs`: 38 of 38.\n\n#401 (the tests' own router file) is unaffected by this and right as it is; its red CI was this race. On the box, which runs the suite before every deploy on a slower machine than the workbench, the same race could hold a deploy back.\n",
+            "branch": "workbench/ask-router-shadow-race",
+            "title": "The router's shadow test waits for the router before counting its call"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261028153225-6fc512"
+}

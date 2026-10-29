@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8da6ca446a1a3ff412d42207217181f133df7010",
+            "branch": "workbench/genially-manual",
+            "files_sha256": "7516c685987fb55ffc1e27fa0c70c174a68b8c93c55095a06519adca2ea01b14",
+            "message": "Allow the Genially teacher manual in frame-src"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261028155115-1bb42a"
+}

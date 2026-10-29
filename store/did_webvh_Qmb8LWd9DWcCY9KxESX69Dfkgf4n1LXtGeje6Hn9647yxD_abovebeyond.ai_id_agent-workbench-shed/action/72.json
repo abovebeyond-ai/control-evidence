@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0fe1f1400b89fb77bab4fb964573ff025a403ccb",
+            "branch": "workbench/ask-router-shadow-race",
+            "files_sha256": "388a0bcba0d2e5bb4d25edad87f38a38877169b7696a5b310cc57d2d33c9d97b",
+            "message": "The router's shadow test waits for the router before counting its call"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261028153225-6fc512"
+}

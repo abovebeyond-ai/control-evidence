@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nAsk's icon on the header was a square bubble with a question mark in it, which read as help rather than as a conversation. It is now a round speech bubble with three dots, the shape people know as chat. Testers keeps the square bubble, so the two stay apart in the System menu and on the bar.\n\n## Checked\n\n- Looked at on the team's bar at 1440px, and at 3x.\n- `e2e/header.spec.js`, `e2e/ask-panel.spec.js`, `e2e/site-login.spec.js`: all pass. `MenuIcons.jsx` lints clean.\n",
+            "branch": "workbench/ask-icon-chat",
+            "title": "Ask's icon is a round chat bubble with three dots"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261028161503-a6a0d4"
+}

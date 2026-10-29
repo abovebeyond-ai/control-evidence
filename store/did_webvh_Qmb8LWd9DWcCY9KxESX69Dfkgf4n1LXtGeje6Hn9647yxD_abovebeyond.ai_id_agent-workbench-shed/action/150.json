@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2fdd2c805db1388756e26a3741af16dac2b3c6e2",
+            "branch": "workbench/drop-event-kind",
+            "files_sha256": "0a54471fb28ff1ade18bb997d4c47c8f9a455eb67fa58ed8b6aa29d1d2ad3538",
+            "message": "Drop the event kind field\n\nThe site never showed the kind of an event, so the Studio asked for a choice that went\nnowhere. No document in the dataset has a value for it."
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261028202249-e1f5dd"
+}

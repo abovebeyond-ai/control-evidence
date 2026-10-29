@@ -1,0 +1,16 @@
+{
+    "action": "5a29094e7b56abdf4720c073a83de9c4",
+    "effect": {
+        "detail": {
+            "base": "01c6d69fb4aae1ef9abcb4d7e24a36eb0bd0fcf0",
+            "branch": "workbench/ask-icon-chat",
+            "commit": "63b544bb4110c8a09cd80a355a19df8a818a1524",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 114,
+    "verdict": "ALLOW"
+}

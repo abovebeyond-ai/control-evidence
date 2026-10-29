@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The \"Handleiding toevoegen\" form was one of the last screens on the old markup: a `divide-y` line under each row and above the button, a `shadow` card, and inputs with the forms-plugin border, which `docs/design-system.md` says the fields switch off because the two outlines draw on top of each other. Two fields came out as a stack of grey lines.\n\n- The form now uses `x-form.form`, `x-form.row` and `x-form.input` in a card with `ring-1 ring-ink-200`, like \"Complementair vak aanmaken\". Labels \"Naam\" and \"Link\", the link field is `type=\"url\"`, and the header links back to \"Alle handleidingen\".\n- The manuals index checked `hasRole('dmin|superadmin')`. The routes let admins in, but only a superadmin saw \"Handleiding toevoegen\" and \"Handleiding beheren\". Fixed to `admin|superadmin`.\n- `AddingAManualTest`: an admin sees both buttons, a teacher does not, the form has no dividers and asks for a url, saving lists the manual.\n\nChecked by rendering the page with the built assets at 1280 and 390 px wide.\n\nTests: the new test passes (4 tests). The full suite on the workbench has 20 failures, all from the set a plain `origin/main` fails there (Chrome printing, BuildStamp, report PDFs).\n",
+            "branch": "workbench/manual-form",
+            "title": "Put the add-a-manual form on the shared form components"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261028160432-42164d"
+}

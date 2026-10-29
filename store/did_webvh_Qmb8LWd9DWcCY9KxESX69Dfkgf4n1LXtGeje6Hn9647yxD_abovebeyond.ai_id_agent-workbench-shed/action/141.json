@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The code defaults for `classify-verify` and `enrich-verify` named Together's Llama 3.3 70B. Production has not used it for a while: the saved `store/model-config.json` on the box puts both phases on Mistral Large 3 (EU endpoint), and in the 24 hours of usage read on 2026-10-28 there were 3,147 classify-verify and 1,316 enrich-verify calls, all on `mistral-large-2512`, none on Together. The same day Together withdrew Llama 3.3 70B from serverless (\"Unable to access non-serverless model\"), so the default was a model no call could reach. A box without the saved file, or one where the file is pruned, would have put the verify tier on a dead model.\n\nThis only makes the code say what runs. Whether Mistral Large is a good second reader is a separate measurement.\n\n## What changes\n\n- `PHASE_DEFAULTS`: `classify-verify` and `enrich-verify` are `mistral/mistral-large-2512`. The comment above them keeps its history and adds this step.\n- `MODEL_CATALOG.together` is empty, with the withdrawal recorded in the comment the way Kimi, DeepSeek and the rest were in August: a model in the catalog is a promise that a call to it is answered, and `applySavedConfig` drops a saved entry that names one that is gone. The provider itself stays, so old usage rows and refusals keep a name.\n- The judge comment notes that GLM 5.3 on Mistral's endpoint would be a third family; nothing about the judge changes.\n- `CLAUDE.md`: the verify-tier paragraph names Mistral Large instead of Llama.\n\n## Tests\n\n- `verify-tier`: Together lists nothing; both verify defaults are `mistral/mistral-large-2512` with no reasoning switched on; the judge is neither Model B's model nor its provider; the saved-config cases use a Mistral entry as the one that still exists.\n- `mistral-provider`: \"no phase runs on Mistral\" becomes \"only the two verify phases do\".\n- `prompt-fits`: the context-window check reads Mistral Large's 256k.\n- `second-reader`: the test key is Mistral's, since Model B's default now calls there.\n\nFull suite locally: 1491 of 1497 pass; the 6 that fail are `report-render`, which needs `pdftoppm` (Poppler), not installed here; CI has it. Type check clean.\n",
+            "branch": "workbench/verify-defaults-mistral",
+            "title": "Verify-tier defaults follow production onto Mistral Large 3"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261028195040-cb0594"
+}

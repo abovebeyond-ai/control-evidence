@@ -1,0 +1,16 @@
+{
+    "action": "b406fa2e61e4e0e6bbd9520927a2e5d7",
+    "effect": {
+        "detail": {
+            "base": "01c6d69fb4aae1ef9abcb4d7e24a36eb0bd0fcf0",
+            "branch": "workbench/unrelated-words",
+            "commit": "1810d5f17fed4eb5ec692c132a27e608cefa915a",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 108,
+    "verdict": "ALLOW"
+}

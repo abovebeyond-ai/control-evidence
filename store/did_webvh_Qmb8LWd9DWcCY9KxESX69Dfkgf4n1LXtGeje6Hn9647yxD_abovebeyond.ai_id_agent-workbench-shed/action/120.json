@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f4d3780492b27a4e34808772dc30b44804e96c5a",
+            "branch": "workbench/member-focus",
+            "files_sha256": "5bdfd856aab00dbc0486f2e568c83f01ecf4922bd167e42cce51a4af71a7cb3e",
+            "message": "A member personalises their week"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261028162234-3fcfc1"
+}

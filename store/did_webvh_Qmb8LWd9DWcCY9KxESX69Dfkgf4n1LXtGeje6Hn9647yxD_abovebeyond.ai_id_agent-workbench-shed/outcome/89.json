@@ -1,0 +1,16 @@
+{
+    "action": "ccc4cf2ae6ea805a8e21bcb6540a1d36",
+    "effect": {
+        "detail": {
+            "base": "8da6ca446a1a3ff412d42207217181f133df7010",
+            "branch": "workbench/genially-manual",
+            "commit": "d33497b0aeb097ec6cb339c372bc97696208cc6e",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 87,
+    "verdict": "ALLOW"
+}

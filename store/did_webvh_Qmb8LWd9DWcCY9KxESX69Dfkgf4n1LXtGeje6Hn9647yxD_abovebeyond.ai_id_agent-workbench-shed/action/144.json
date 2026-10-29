@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "875bfa736248eac26c461d1eac47c2dcbedf12ef",
+            "branch": "workbench/unrelated-left-out",
+            "files_sha256": "c4542f11126364e4065945f86ab465af0f64ff07b94fcde11e86539ee783f0f2",
+            "message": "Leave the signals judged unrelated out of an opened insight"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261028201422-aedc3c"
+}

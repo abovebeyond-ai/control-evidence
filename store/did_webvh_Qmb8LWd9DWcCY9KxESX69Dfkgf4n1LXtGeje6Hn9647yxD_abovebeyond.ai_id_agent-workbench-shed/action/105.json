@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe right side of the team's header held seven things: Ask, Studio \u2197, gentells.com \u2197, a divider, the time, Refresh and Sign out. At 1440px Studio \u2197, gentells.com \u2197 and Sign out each broke over two lines; at 1280px Sign out fell off the bar. Ask was the one item on the bar without an icon.\n\n- **Ask** has an icon like every page on the bar: a speech bubble with a question in it (Testers keeps the plain bubble).\n- **The time is the refresh button**: the arrow and the time of the newest data on the page, \"syncing\" while it loads. One control where there were a timestamp and the word Refresh; its name for a screen reader and a test is still \"Refresh\".\n- **Signing out and the way to gentells.com sit under the person's first name**, with the e-mail address at the top of that menu; Escape or a click elsewhere closes it. A member of gentells.com keeps gentells.com \u2197 on the bar: it is their way back.\n- Nothing on the bar wraps any more (`white-space: nowrap` on the tools).\n\nThe pages in the middle and the phone layout are unchanged.\n\n## Checked\n\n- `e2e/header.spec.js`, new: at 1280px every control on the team's right side is one line and inside the window; Ask has its icon and opens the drawer; Refresh shows a time; gentells.com and Sign out are not on the team's bar but in the menu, Escape closes it, and Sign out ends the session; a member keeps gentells.com \u2197 on the bar and Sign out in the menu. Against the old header it fails on \"Studio \u2197 broke over two lines\".\n- The whole e2e suite: 84 of 84. Lint unchanged at 43 (the same as main; the changed files are clean). `vite build` passes.\n- Looked at as the team at 1440 and 1280, as a member at 1280, at 390 wide, and the icons at 3x.\n",
+            "branch": "workbench/header-calmer",
+            "title": "The header's right side fits on one line: Ask gets its icon, the time is the refresh, signing out sits under the name"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261028160720-ef145e"
+}

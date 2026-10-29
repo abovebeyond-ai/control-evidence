@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n**The tests read Ask's router from their own scratch file, not the live one on the box.**\n\nThe box runs the whole suite before it deploys a merge, in the app's own checkout and environment. `setupTestDB` already points the model config at a scratch file for that reason. Ask's router was missing from it: `routerConfig()` read `store/ask-router.json` and `ASK_ROUTER` as they are on the box.\n\nThe router is on in production now (the cost log shows `ask-route` calls from 13:00 on 28 October). So every test that asks a question had it triaged as well. Two guest tests count the model calls and which model a guest got, and they fail:\n\n- stops a guest at the daily number with a plain answer, before the model is called;\n- tells the guest what is left, and logs every question per account.\n\nSince then the box has held back main: 0fe1f14 (with #398 and #399) was refused, and the box stays on 20dcecb.\n\n## How\n\n`setupTestDB` points `TW_ASK_ROUTER_CONFIG` at the test's scratch directory and removes `ASK_ROUTER`. `ask-router.test.mjs` sets its own config after `setupTestDB`, so it is unchanged.\n\n## Checked\n\n- `guest-ask.test.mjs` with the router on, by file and by `ASK_ROUTER` (shadow and on):\n  - before: 9 of 11. The same two fail on 20dcecb, so they predate #398 and #399;\n  - after: 11 of 11.\n- `ask-router.test.mjs`: 38 of 38.\n- **Full suite with `ASK_ROUTER=on` and `store/ask-router.json` set to on: 1487 of 1493.** The six failures are the `report-render` tests that need `pdftoppm`, which is not installed on the workbench.\n",
+            "branch": "workbench/tests-without-live-router",
+            "title": "Tests read Ask's router from their own scratch file, not the live one on the box"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261028152015-057077"
+}

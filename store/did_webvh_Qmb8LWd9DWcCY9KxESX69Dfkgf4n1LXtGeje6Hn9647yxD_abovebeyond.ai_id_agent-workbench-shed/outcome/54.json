@@ -1,0 +1,16 @@
+{
+    "action": "0560321765c611554325dec4afbd7874",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 401,
+            "review_requested": "ShaneDeconinck",
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/401",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 51,
+    "verdict": "ALLOW"
+}

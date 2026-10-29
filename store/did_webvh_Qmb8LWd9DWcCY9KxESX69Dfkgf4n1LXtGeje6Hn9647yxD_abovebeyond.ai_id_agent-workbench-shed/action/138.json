@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f51aac29a2f2d8bfb4a8839c05d9c8703350c97f",
+            "branch": "workbench/verify-defaults-mistral",
+            "files_sha256": "b3f0975f60ddf9b9bd2a79cb1c2c3b63dd33cc9e5546f0622f620dc00a02a58c",
+            "message": "Verify-tier defaults follow production onto Mistral Large 3; Together's last model is withdrawn"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261028195040-cb0594"
+}

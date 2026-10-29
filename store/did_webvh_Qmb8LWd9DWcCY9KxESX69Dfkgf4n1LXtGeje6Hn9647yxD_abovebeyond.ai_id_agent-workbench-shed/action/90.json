@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #278\n\nThe manuals page (`documentation.show`) shows each manual in an iframe. `frame-src` only allowed `docs.google.com` and `drive.google.com`, so the renewed teacher manual, made as a Genially, would show \"Deze content is geblokkeerd\".\n\n- `frame-src` gains `https://view.genially.com`, the host Genially serves public views from. Only that host, no wildcard, same as the Google ones.\n- `SecureHeadersMiddlewareTest` asserts the new policy; `NoThirdPartyRequestsTest` lists Genially with the manual embeds, which only load when someone opens the manual.\n\nChecked: the Genially view sends no `X-Frame-Options` and no `frame-ancestors`, so it can be embedded. The same manual's PDF on Google Drive is not shared publicly and redirects to a Google sign-in page that refuses framing, so the Genially is the link to add.\n\nAfter merge, an admin adds it with \"Handleiding toevoegen\": name and the Genially URL.\n\nTests: the two affected test classes pass (10 tests). The full suite on the workbench has 21 failures, the same ones a plain `origin/main` shows there (Chrome printing, Vite manifest, BuildStamp, report PDFs); none touch the CSP.\n",
+            "branch": "workbench/genially-manual",
+            "title": "Allow the Genially teacher manual in frame-src"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261028155115-1bb42a"
+}

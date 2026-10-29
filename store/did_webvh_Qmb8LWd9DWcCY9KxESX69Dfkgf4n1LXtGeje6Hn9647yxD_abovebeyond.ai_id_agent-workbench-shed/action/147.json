@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The judge reads every signal an insight's patterns brought in against its claim: supports, partly or unrelated. An opened insight listed the unrelated ones under itself, folded as \"the 33 signals judged unrelated to the claim\", counted them in its evidence line (\"; 33 about something else\") and drew them as a grey stretch in its groove. That puts signals under an insight only to say they do not belong there. It is not a corner case: on the twelve best backed insights this week, 389 of 743 signals are judged unrelated, between 20 and 42 per insight.\n\n## What changes\n\n- **The opened insight** (card and page) lists what bears it out, what does in part and, folded, what is not checked yet. The unrelated fold is gone, and \"All N signals on its page\" and the source mix in \"How it was made\" count only those signals.\n- **The evidence line** on the opened insight, the Overview cards and the review queue drops \"; N about something else\": \"3 signals outright and 1 in part, from 3 sources; 1 not checked yet.\"\n- **The groove** draws outright, in part and the track for not checked yet; the grey stretch and `.groove-off` are gone.\n- **\"How it was made\"** keeps the count in one sentence: \"Its patterns also brought in 33 signals that, read against its claim, are about something else. They are left out.\"\n\nThe agent door's starting point already leaves these signals out (`starting-point.mjs`); the dashboard now does the same. Nothing changes in the pipeline: the verdicts stay, on the current claim, so a rewritten claim reads them again.\n\n## Checks\n\n- `npx playwright test`: 85 pass. A new test opens an insight with two unrelated signals and checks that neither appears, that nothing names them on the page, and that \"How it was made\" counts them.\n- `npx eslint` on the touched files: clean.\n",
+            "branch": "workbench/unrelated-left-out",
+            "title": "Leave the signals judged unrelated out of an opened insight"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261028201422-aedc3c"
+}

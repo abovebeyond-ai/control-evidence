@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0fe1f1400b89fb77bab4fb964573ff025a403ccb",
+            "branch": "workbench/tests-without-live-router",
+            "files_sha256": "e4f1a204960a790cc82bdef47f21d76518cd71998c97331413ca0da5675b72a7",
+            "message": "Tests read Ask's router from their own scratch file, not the live one on the box"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261028152015-057077"
+}

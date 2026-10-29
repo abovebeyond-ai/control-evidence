@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:36",
+            "note": "Looking up where the teacher manual is linked in the webapp",
+            "state": "in-progress"
+        },
+        "resource": "portal:naviskore-webapp"
+    },
+    "run": "workbench-20261028154710-63f76c"
+}
