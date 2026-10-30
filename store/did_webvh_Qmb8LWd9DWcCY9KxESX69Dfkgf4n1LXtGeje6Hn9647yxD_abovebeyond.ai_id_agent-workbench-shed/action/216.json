@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9fa8588ca753dfa5bd029a5a428bb647100071f5",
+            "branch": "workbench/featured-event",
+            "files_sha256": "618c22bafa25d0ea999d28f7029485fc1f8aa1fc58aaf5c855f66209867bce05",
+            "message": "Home: show the next event as a featured band"
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261029145606-5fb17a"
+}

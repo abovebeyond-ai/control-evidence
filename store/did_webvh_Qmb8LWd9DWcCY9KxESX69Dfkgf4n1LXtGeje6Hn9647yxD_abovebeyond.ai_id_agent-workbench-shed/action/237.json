@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Clicking a relation in Netwerk showed who it shares projects with and how many, but not how they meet. Lines in the graph said the same: \"3 gedeelde projecten\".\n\n**\"Werkt samen met\" (the relation's panel)** now shows per relation:\n- what it is on the shared projects: role plus its most frequent cost category or contact function, e.g. `Leverancier: Stortkosten`, `Contact op project: Architect`, `Klant`\n- `samen op 38 projecten: P-\u2026 , P-\u2026 en 36 meer`, newest first (the full list is in the tooltip)\n- who takes it over (`neemt over: \u2026` / `nog niemand neemt over`), on its own line. Before, a long list of takers squeezed the relation's name down to one letter.\n\n**Graph:** the hover tip on a line names what each side is for GLK: \"A (klant) en B (leverancier), samen op 3 projecten\". The legend line under the graph points to \"Werkt samen met\".\n\n**Phone:** the panel is a grid item and now gets `min-w-0`. Without it, the longest line in the panel made the page wider than the screen.\n\nChecked on a seeded demo DB by screenshot, desktop and phone width. The line hover tip in the canvas was not screenshotted. New test for the partner lines. Full suite 362/362, JS 22/22, pint clean. No migration.\n",
+            "branch": "workbench/graph-why",
+            "title": "Netwerk: say how a relation works with the ones it is linked to"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261029154427-bb8bd3"
+}

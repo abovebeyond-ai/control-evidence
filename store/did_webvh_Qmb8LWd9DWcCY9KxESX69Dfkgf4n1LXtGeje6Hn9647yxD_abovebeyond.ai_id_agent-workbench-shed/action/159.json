@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two small things that showed on the live site.\n\n## Placeholder copy\n\nThe fallback texts for missing content spoke about the owner in the third person (\"wordt binnenkort ingevuld door de uitbater\"), which reads as a note to the builder rather than something a visitor should see. They now say it plainly:\n\n- Kaart: \"De kaart wordt binnenkort toegevoegd.\"\n- Contact: \"Telefoon en e-mail worden binnenkort toegevoegd.\"\n- Home and Over: \"Het verhaal volgt binnenkort.\" (Over lede: \"Het langere verhaal volgt binnenkort.\")\n\n## Favicon\n\nThe facade line drawing read as a thick blur at tab size. It is replaced by a single capital H in Cormorant Garamond SemiBold, the wordmark typeface, cream on oxblood with rounded corners. The letter is outlined to a path, so it renders the same without the font. Variants with \"'t H\" were tried and dropped: the 't is unreadable at 16 px.\n\n## Checked\n\n- Rendered at 16, 32, 64 and 128 px in headless Chromium.\n- No build run: only an SVG and fallback strings changed.\n",
+            "branch": "workbench/plain-placeholders",
+            "title": "Plain placeholder copy and an initial as favicon"
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261029081232-92f81b"
+}

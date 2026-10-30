@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The next event sat under the hero as one small italic line (\"vr 30 okt\" plus the title in body text) and was easy to miss. It now gets a band of its own.\n\n## What changes\n\n- A full-width bone band between the hero and the photo, with the next event as a calendar sheet: weekday on an oxblood strip, the day large in Cormorant, the month below.\n- Title in the display face, sized by length with the same `titleLength()` steps as the agenda; time and admission on one line; summary only when it does not repeat the title; an \"Alle info\" link. The whole block links to the event page.\n- Further featured or upcoming events follow as short lines under it.\n- The side quote, when set in the homepage document, still shows under the buttons; it no longer hides the events.\n\n## Staying current on a static site\n\nThe page is built ahead of time, so a small inline script runs in the visitor's browser:\n\n- the label above the title becomes \"Vanavond\", \"Vandaag\", \"Morgen\", \"Over N dagen\" or \"Nu bezig\" (days counted in Brussels time), and stays \"Binnenkort\" further out or without JavaScript;\n- events that are over (after `endsAt`, or six hours after the start when there is no end) are removed, and the band disappears when none are left.\n\n## Checked\n\n- `astro build` against the live dataset (read only) and `tsc --noEmit`, both clean.\n- Desktop (1440) and phone (390) screenshots of the band with the live opening event; the label read \"Morgen\" on 29 October.\n- Not seen rendered: the list of further events, since the dataset holds one upcoming event.\n",
+            "branch": "workbench/featured-event",
+            "title": "Home: show the next event as a featured band"
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261029145606-5fb17a"
+}

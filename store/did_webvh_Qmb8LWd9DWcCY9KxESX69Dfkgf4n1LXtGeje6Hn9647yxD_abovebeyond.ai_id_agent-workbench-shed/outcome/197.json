@@ -1,0 +1,16 @@
+{
+    "action": "153c78fe0b18b1147d4db73708d40436",
+    "effect": {
+        "detail": {
+            "base": "ad6a1133fda9d21cd5543b9041a60ba488441cc0",
+            "branch": "workbench/sites-hourly",
+            "commit": "ce2ead79a6a81d0557d268938ce3f2a3ac4ffebb",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 195,
+    "verdict": "ALLOW"
+}

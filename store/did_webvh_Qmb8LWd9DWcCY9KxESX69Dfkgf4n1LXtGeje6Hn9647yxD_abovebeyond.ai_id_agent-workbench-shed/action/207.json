@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The proposals waiting for a yes on the Sources page (the scout's discoveries and the journals openalex-venues suggests) could only be approved one at a time, each behind its own Approve button, five shown at once.\n\n## What changes\n\n- **\"Approve all N\"** above the list of proposed sources, for anyone who can write. A first click asks with the number: \"Switch on all 12 proposed sources? The next collect reads them, and each can be muted on its own row.\" \"Yes, approve all 12\" goes ahead; \"Not yet\" approves nothing.\n- Each source gets exactly what its own Approve sends (switched on, its tier or A, its trust weight or 1.0, the scout's reasoning). The two now share one `approval()` so they cannot drift.\n- `useApproveSources` patches them one after another and the line counts as it goes (\"Approving 4 of 12...\"). A source the pipeline refuses is named in the message at the end, with the reason, and the rest still go. The sources and the Overview are read again once, at the end, not after every source.\n- The publishers cited in posts (\"New Sources G.\") keep their own list with Follow it and Not for us, and are not touched.\n\nNo pipeline change: it is the same `/store/patch` the single Approve uses.\n\n## Checks\n\n- `npx playwright test`: 88 pass. `e2e/sources-approve-all.spec.js` checks that the first click asks and writes nothing, that each proposal gets its own fields in order and the cited publisher none, that \"Not yet\" writes nothing, and that a refused source is named while the others are approved.\n- `npx eslint` on the touched files: clean.\n",
+            "branch": "workbench/approve-all-proposed",
+            "title": "Approve all proposed sources in one go"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261029143259-e52cb6"
+}

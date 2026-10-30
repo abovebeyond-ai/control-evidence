@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #4: a few things that make the static site feel current, and two visual cleanups.\n\n## Open now\n\n- The header shows whether the caf\u00e9 is open: \"Nu open, tot 24.00\", \"Gesloten, open om 10.30\", \"Gesloten, morgen open om 10.30\" or \"Gesloten, vrijdag open om 10.30\". On a phone only the first part (\"Nu open\", \"Gesloten\") fits beside the menu button. A moss dot when open, ink-soft when closed.\n- Worked out in the visitor's browser (`src/lib/openStatus.ts`) from the Studio opening hours in Brussels time, so a page built days ago is still right. A closing time at or before the opening time runs past midnight: Saturday 10.30 to 2.00 still reads open on Sunday at 1.30.\n- Today's row in the footer hours is set in bold.\n- Without JavaScript or without opening hours, nothing is shown.\n\n## Agenda\n\nThe calendar sheet from the home band is now a `DateSheet` component, used large on the home page and small beside each upcoming event on the agenda. Time and admission sit under the title.\n\n## Cleanups\n\n- The footer map is toned to the site's paper and ink (`map-tint`: greyscale plus a little sepia). The coloured Google map was the loudest thing on every page.\n- The drawing's paper was not quite white, so under the multiply blend its edge showed as a grey patch at the bottom left. The paper is lifted to pure white (linear 1.09); the file is re-encoded and goes from 268 KB to 214 KB.\n\n## Checked\n\n- `astro build` against the live dataset (read only) and `tsc --noEmit`, both clean.\n- `openStatus` against six moments: Thursday afternoon (closed day), Friday before opening, Friday evening, Sunday 1.30 (Saturday's late closing), Sunday 2.30, Wednesday just after midnight.\n- Desktop and phone screenshots of the header, agenda and footer, with the map loaded.\n",
+            "branch": "workbench/open-now",
+            "title": "Open-now status, calendar sheets on the agenda, quieter map"
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261029154029-26154f"
+}

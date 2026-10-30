@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "gentells-app",
+                    "url": "https://github.com/Trendwolves/gentells-app"
+                }
+            ]
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261029143250-fd8733"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "cd5cd4284cf00024b96405056168b47d",
+    "effect": {
+        "detail": {
+            "base": "3fb19dbf6c0b5a55baeeb530863fe8ee08280b8e",
+            "branch": "workbench/werkfiche-feedback",
+            "commit": "b6c22fee63cda02b1a02777d14bdb203b9a79d1e",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 264,
+    "verdict": "ALLOW"
+}

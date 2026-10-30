@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The sign-up form opened with \"Create your free account\" and \"No card needed\", then offered four plans, three of them paid. The heading is now \"Create your account\" for every plan, and one line under it says how the choice works: \"Explore is free and needs no card. A paid plan goes on to payment once your account exists.\"\n\nThe button keeps naming what happens for the plan chosen (\"Create a free account\" on Explore, \"Create account and continue to payment\" otherwise), so the site's one call to action is unchanged.\n\nFull suite 538 of 539; the one failure is BuildStampTest, which needs a real checkout and fails in a worktree.\n",
+            "branch": "workbench/register-heading",
+            "title": "Sign-up form: one heading whatever the plan"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261030070121-0ecabd"
+}

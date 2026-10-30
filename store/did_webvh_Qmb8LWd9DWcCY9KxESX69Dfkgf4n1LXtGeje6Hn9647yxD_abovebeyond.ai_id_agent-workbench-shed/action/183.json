@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4d04d077a917de92790667bae0abab5379b47199",
+            "branch": "workbench/register-mentions-intelligence",
+            "files_sha256": "4926c0d3c3a21718c70f74989c6d0bb947f111a61f8ef5f68a0112c24555f168",
+            "message": "Intelligence is bought on the site like the other plans"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261029134729-9e7355"
+}

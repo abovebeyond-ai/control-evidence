@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "45b0acedb2e83d949a171b18e0da6b16702ea939",
+            "branch": "workbench/consensus-bench",
+            "files_sha256": "ece817f2e3f02f8c082758111c4dc94621249e03df2a39be19cb65fbea3fe883",
+            "message": "consensus@1: a bench for the second reader through production's consensus code"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261030070136-c564c6"
+}

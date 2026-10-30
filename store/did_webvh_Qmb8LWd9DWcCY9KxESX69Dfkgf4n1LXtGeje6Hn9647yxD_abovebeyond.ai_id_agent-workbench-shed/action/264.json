@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3fb19dbf6c0b5a55baeeb530863fe8ee08280b8e",
+            "branch": "workbench/werkfiche-feedback",
+            "files_sha256": "1554b5373ad2fc07817dfba5dcc009381235728b0e67deca85f358d8df905661",
+            "message": "Werf fiche: screen stays on, machines and material can be added later, list in order, quantity in its unit\n\nFour things a worker ran into on a real fiche:\n\n- The screen went off while he was still on the fiche. The fiche now holds a\n  screen wake lock, taken again whenever the page comes back into view.\n- A machine that came off the fiche could not be put back: the question panel\n  only offers machines while the fiche has none, and suggestions were hidden\n  once the fiche said \"no machines\". The board now has \"Machine toevoegen\" and\n  \"Materiaal toevoegen\" (suggestions plus search) whenever he worked on a site\n  and that question is not already open.\n- The material list ran by name only, so the diameters of one bend came in no\n  order. It is now grouped (optgroups), the types in natural order (15\u00b0, 30\u00b0,\n  45\u00b0, 90\u00b0), then the diameter from small to large, written first\n  (\"\u00f8110 45\u00b0 enkele mof\"). label(), used by the office, the export, Bouwsoft\n  and the conversation, is unchanged.\n- \"Magere kiftbeton 150 kg/c\" is sold per m\u00b3; the 150 kg/c is its strength.\n  The conversation could put 150 in the quantity with \"kg/c\" as unit, and the\n  correction form kept that unit. Picking an article now takes its catalogue\n  unit; a line without an article gets a unit choice; and the schema tells\n  the model that kg/c is a strength, not a unit."
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261030070728-43aaa5"
+}

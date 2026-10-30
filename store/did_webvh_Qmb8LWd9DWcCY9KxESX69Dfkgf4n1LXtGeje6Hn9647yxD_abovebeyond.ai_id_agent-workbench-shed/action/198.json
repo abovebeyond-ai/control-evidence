@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Sync the sites every hour instead of once a night.\n\nThe office creates sites in Bouwsoft during the day. With one run at 05:15, a site created in the morning cannot be named in a worker's conversation until the next day. A site run is one list of about 190 projects and takes seconds. Once an hour, Bouwsoft gets at most one token refresh per hour, about what the nightly run asks now. A refused run is retried an hour later instead of leaving the list a day old.\n\n- `routes/console.php`: `sites:sync` runs at a quarter past every hour (`hourlyAt(15)`). It is done before `reference:sync` starts at 05:30, so the two still never ask Bouwsoft at the same time.\n- `config/elixir.php`: the interval declared to Elixir for `sites:sync` goes from 86400 to 3600 s, so Elixir judges a missed run after an hour, not a day.\n- `ElixirEndpointTest`: a new test checks that every interval declared to Elixir is the interval the scheduler actually keeps. It fails if the two drift apart, as checked by putting 86400 back.\n\n`reference:sync` and `relations:sync` stay nightly. Bookings reach Bouwsoft days late, relations and staff hardly change within a day, and each reference run reads all bookings since August.\n\nNo migration. Full suite 356/356, Pint clean.\n",
+            "branch": "workbench/sites-hourly",
+            "title": "Sync the sites every hour"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261029143214-b7e462"
+}

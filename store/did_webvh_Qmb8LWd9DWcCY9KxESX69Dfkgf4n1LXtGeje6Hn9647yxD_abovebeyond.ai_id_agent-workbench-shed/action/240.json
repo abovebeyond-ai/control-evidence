@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c08ee882a00fd1e60f3e208eb9d8e3ade43e03b5",
+            "branch": "workbench/panel-tabs",
+            "files_sha256": "ff82300483cb5bbca182ed66fcf370f607b9778f03342217e4c99fbb032406c4",
+            "message": "Netwerk: make the panel's two tabs a visible switch, with icons"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261029160348-2931ae"
+}

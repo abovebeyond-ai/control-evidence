@@ -1,0 +1,15 @@
+{
+    "action": "06f1a0de007f48fec01c624c43bff3b5",
+    "effect": {
+        "detail": {
+            "fields": [
+                "links"
+            ],
+            "project": "gentells"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 201,
+    "verdict": "ALLOW"
+}

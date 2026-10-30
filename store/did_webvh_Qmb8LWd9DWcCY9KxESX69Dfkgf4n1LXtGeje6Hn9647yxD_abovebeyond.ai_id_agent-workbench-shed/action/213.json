@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Names alone do not tell two items on Te doen apart: two relations with the same name, or a person and a relation with the same name. Every item now shows the number the office finds it by in Bouwsoft, muted (`cijfer`) and after the name.\n\n| Item | Number shown | Stored |\n|---|---|---|\n| Relation | Bouwsoft client number (`clientnr`); the supplier number (`suppliernr`) when it is no client | **new**: `relations.client_nr`, `relations.supplier_nr` |\n| Project | project code, `P-2025xxxx` | already, `sites.code` |\n| Colleague | employee number (`Employees.nr`) | already, `reference_people.nr` |\n| Relation added by hand | nothing (still \"zelf toegevoegd\") | n/a |\n\nOur own ids and `bouwsoft:<id>` keys stay out of sight.\n\n**Where it shows**\n- Step 1, the relation list. On a phone the number opens the second line, because after a long name and place it was truncated away, and that is exactly where it is needed to tell two of the same name apart.\n- Steps Projecten and Collega's. A project's label was \"P-xxx Name\" and is now \"Name P-xxx\", so the code is in the same place as for the rest.\n- The node cards below.\n- Both Zoeken fields: typing the number finds the item.\n- CSV export: its own column `nummer in Bouwsoft`, and `over` is the name without the code in front.\n\n**Also:** the step \"Mensen\" is now \"Collega's\" (url `?stap=collegas`; old `?stap=mensen` links still open it; the Start page follows).\n\n**Deploy: needs `php artisan migrate`.** The relation numbers fill on the next nightly `relations:sync` (05:50). Until then relations show no number; projects and colleagues show theirs right away. The sync already read `clientnr`/`suppliernr` but kept them only as yes/no. The field values are not yet checked on real rows: a relation that is neither client nor supplier (only a contact on a project) has neither and shows none.\n\n**Checked**\n- Screenshots on a seeded demo DB, desktop and phone width (two relations with the same name, a relation added by hand, projects, colleagues, node cards).\n- New tests: numbers on agenda items and in the views, search by number, none for a manual relation, the CSV column, the sync keeping `clientnr`/`suppliernr` from a faked Addresses response, and the old `?stap=mensen` link.\n- Full suite 361/361. Pint clean.\n",
+            "branch": "workbench/te-doen-ids",
+            "title": "Te doen: show each item's number in Bouwsoft next to its name"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261029144453-9fe973"
+}

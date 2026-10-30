@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0f35da4e1b15a990a0389bf2d663f154f01fb6dc",
+            "branch": "workbench/classify-2-runs",
+            "files_sha256": "597b9cc26b1b44162c15731f8f99717dd794b82b8bd6a44a5904bf7d55805eed",
+            "message": "bench: classify@2 runs of Sonnet 5.5, Mistral Large 3 and Mistral Small 4"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261029081303-813e02"
+}

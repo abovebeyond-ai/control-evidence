@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ad6a1133fda9d21cd5543b9041a60ba488441cc0",
+            "branch": "workbench/sites-hourly",
+            "files_sha256": "49a2b698fafcf763497251d894be4461a448ef64023e5848c61c2a3bea6ddf84",
+            "message": "Sync the sites every hour"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261029143214-b7e462"
+}

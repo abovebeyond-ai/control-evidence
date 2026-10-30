@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5104318c95c9250f5736f830211c6418799de203",
+            "branch": "workbench/samen-tab",
+            "files_sha256": "3813ef267dafba520b15af3c2c796111ff0b6360c0fe112d9395f3795544b9e3",
+            "message": "Netwerk: name the partners tab after what it shows, and the takers line after the handover\n\nThe relation panel's second tab was called 'Werkt samen met', and each row in it\nended with 'neemt over: <colleague>'. Both read as people working together, so it\nwas unclear whether the names were partners on site or GLK colleagues taking the\nrelation over. The tab is now 'Samen op projecten', and the row's last line says\n'overdracht aan <colleague>' or 'overdracht: nog aan niemand', tying it to the\nOverdracht tab next to it.\n\nThe tabs size to their label (flex-auto, a little less padding on a phone), so\nthe longer label still fits beside Overdracht at 390px."
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261030064618-037042"
+}

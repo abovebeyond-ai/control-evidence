@@ -1,0 +1,16 @@
+{
+    "action": "fabe22a7763c2b3caaaf25380b687fc0",
+    "effect": {
+        "detail": {
+            "base": "0f35da4e1b15a990a0389bf2d663f154f01fb6dc",
+            "branch": "workbench/classify-2-runs",
+            "commit": "709728f443449dad530fb4dc28e15d75cf8b872f",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 166,
+    "verdict": "ALLOW"
+}

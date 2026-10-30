@@ -1,0 +1,16 @@
+{
+    "action": "e3f661fb911ccade957fb015adea3133",
+    "effect": {
+        "detail": {
+            "base": "55f4687d60d760d1cb0d0365b6bc954f84f8a4f9",
+            "branch": "workbench/te-doen-afgewerkt",
+            "commit": "45b9a5adac4c2c2988cae44d998bc90b2237f974",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 222,
+    "verdict": "ALLOW"
+}

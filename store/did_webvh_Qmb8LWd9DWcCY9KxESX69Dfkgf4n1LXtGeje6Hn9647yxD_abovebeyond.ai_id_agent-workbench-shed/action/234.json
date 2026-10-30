@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8cf83217945bc5bd147c80aa4e33f79747f3c040",
+            "branch": "workbench/graph-why",
+            "files_sha256": "2324ba59e19aa91cc8f9e87edba37a1528b623d1244cbe9498a7dd20b207fde9",
+            "message": "Netwerk: say how a relation works with the ones it is linked to"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261029154427-bb8bd3"
+}

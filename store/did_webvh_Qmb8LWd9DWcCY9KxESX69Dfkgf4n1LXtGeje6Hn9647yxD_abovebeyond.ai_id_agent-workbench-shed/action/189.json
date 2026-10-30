@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "37df15786786e8a2e86cee0082dfcb301b131fc5",
+            "branch": "workbench/intelligence-self-serve",
+            "files_sha256": "89434af41e5168075cac322ac57959e3cb05678c4e49fd857bc81579160e1e1c",
+            "message": "plans: Intelligence is no longer by conversation by default"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261029134754-839351"
+}

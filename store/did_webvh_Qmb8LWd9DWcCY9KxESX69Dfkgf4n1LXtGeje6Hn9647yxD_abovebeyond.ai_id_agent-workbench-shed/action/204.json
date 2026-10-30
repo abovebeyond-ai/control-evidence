@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "91ddbd74016d750691d30a2b6f31b2c9383c62c5",
+            "branch": "workbench/approve-all-proposed",
+            "files_sha256": "663fd6cf157604434a062ab03fbb95b87537ccaf6e1572b5252ba1f7b52d3061",
+            "message": "Approve all proposed sources in one go"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261029143259-e52cb6"
+}

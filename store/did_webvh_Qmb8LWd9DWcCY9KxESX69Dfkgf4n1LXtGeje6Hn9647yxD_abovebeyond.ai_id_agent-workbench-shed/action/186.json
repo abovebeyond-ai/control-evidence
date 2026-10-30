@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Intelligence can now be bought on gentells.com the way Signal and Decode are: chosen on the sign-up form or the pricing page, then paid through the checkout.\n\n- The sign-up form offers it beside the other three, two by two (Intelligence and its price do not fit a quarter of the form).\n- The checkout no longer sends Intelligence to the contact form by name. It follows the offer's `contact` flag, as the pricing page and the form already did, so all three agree.\n- The default for Intelligence is `contact: false`. The \"By conversation\" box on the Observatory's Settings page can still make any plan a conversation; a saved offer that has it ticked for Intelligence keeps it so until it is unticked there.\n\nThe matching default in the pipeline (`packages/core/plans.mjs`) is a separate pull request on gentells-pipeline.\n\nTests: the form offers Intelligence and sends it on to payment without granting the plan; pricing links to it; with `contact` ticked, pricing, form and checkout all go to the team. Full suite 537 of 538; the one failure is BuildStampTest, which needs a real checkout and fails in a worktree.\n",
+            "branch": "workbench/register-mentions-intelligence",
+            "title": "Intelligence is bought on the site like the other plans"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261029134729-9e7355"
+}

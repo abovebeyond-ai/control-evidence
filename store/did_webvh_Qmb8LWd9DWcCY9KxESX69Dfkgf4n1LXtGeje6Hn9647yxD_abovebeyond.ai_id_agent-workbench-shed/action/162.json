@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1b343588dfba5692d0c6cd04909476f901e969b4",
+            "branch": "workbench/app-reads",
+            "files_sha256": "08162e6f950b217fcee35e2eab617c65f4a79c5accf91702e35df5e0c828c9ae",
+            "message": "Let the Gentells app read posts and reports, and answer /me for the Observatory's own tokens only"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261029081249-7b920e"
+}

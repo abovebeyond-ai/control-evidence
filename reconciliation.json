@@ -1,14 +1,14 @@
 {
-    "computed_at": "2026-10-29T07:34:34+00:00",
+    "computed_at": "2026-10-30T07:34:40+00:00",
     "window": {
-        "since": "2026-10-22T07:33:04+00:00",
+        "since": "2026-10-23T07:33:04+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
     "repositories": {
         "Hoet-design/cabrio-eyewear": {
             "dispatches": {
-                "github": 0,
+                "github": 1,
                 "gateway": 0
             },
             "pulls": {
@@ -50,11 +50,11 @@
         },
         "ShaneDeconinck/cides": {
             "dispatches": {
-                "github": 1,
+                "github": 0,
                 "gateway": 0
             },
             "pulls": {
-                "github": 2,
+                "github": 0,
                 "gateway": 0
             }
         },
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 41,
-                "gateway": 5
+                "github": 43,
+                "gateway": 9
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 18,
-                "gateway": 2
+                "github": 19,
+                "gateway": 5
             }
         },
         "Trendwolves/glk-transferor": {
@@ -125,8 +125,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 36,
-                "gateway": 0
+                "github": 37,
+                "gateway": 7
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -162,11 +162,11 @@
         },
         "kubo-global/afrodidact-website": {
             "dispatches": {
-                "github": 1,
+                "github": 0,
                 "gateway": 0
             },
             "pulls": {
-                "github": 7,
+                "github": 6,
                 "gateway": 1
             }
         },
@@ -229,8 +229,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 5,
+                "gateway": 5
             }
         },
         "ShaneDeconinck/dbc-subsidieportaal": {
@@ -273,7 +273,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 10,
+                "github": 8,
                 "gateway": 0
             }
         },
@@ -284,11 +284,22 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 5,
+                "github": 3,
                 "gateway": 0
             }
         },
         "ShaneDeconinck/trendwolves-call-agents": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "Trendwolves/gentells-app": {
             "dispatches": {
                 "github": 0,
                 "gateway": 0,
@@ -306,8 +317,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 27,
-                "gateway": 5
+                "github": 25,
+                "gateway": 6
             }
         },
         "Trendwolves/gentells-standard": {
@@ -766,24 +777,22 @@
         }
     },
     "unexplained": [
+        "Hoet-design/cabrio-eyewear: 1 dispatches on GitHub, 0 performed by the gateway",
         "Hoet-design/cabrio-eyewear: 2 pulls on GitHub, 0 performed by the gateway",
         "Hoet-design/hoet-eyewear: 1 dispatches on GitHub, 0 performed by the gateway",
         "Hoet-design/hoet-eyewear: 3 pulls on GitHub, 0 performed by the gateway",
-        "ShaneDeconinck/cides: 1 dispatches on GitHub, 0 performed by the gateway",
-        "ShaneDeconinck/cides: 2 pulls on GitHub, 0 performed by the gateway",
         "ShaneDeconinck/naviskore: 17 pulls on GitHub, 2 performed by the gateway",
-        "Trendwolves/gentells-pipeline: 41 pulls on GitHub, 5 performed by the gateway",
-        "Trendwolves/gentells-site: 18 pulls on GitHub, 2 performed by the gateway",
-        "Trendwolves/glk-transferor: 36 pulls on GitHub, 0 performed by the gateway",
-        "kubo-global/afrodidact-website: 1 dispatches on GitHub, 0 performed by the gateway",
-        "kubo-global/afrodidact-website: 7 pulls on GitHub, 1 performed by the gateway",
+        "Trendwolves/gentells-pipeline: 43 pulls on GitHub, 9 performed by the gateway",
+        "Trendwolves/gentells-site: 19 pulls on GitHub, 5 performed by the gateway",
+        "Trendwolves/glk-transferor: 37 pulls on GitHub, 7 performed by the gateway",
+        "kubo-global/afrodidact-website: 6 pulls on GitHub, 1 performed by the gateway",
         "stocklistdealer-eu/platform: 13 pulls on GitHub, 0 performed by the gateway",
         "stocklistdealer-eu/stockcars-website: 4 pulls on GitHub, 0 performed by the gateway",
         "Hoet-design/hoet-sanity: 3 pulls on GitHub, 0 performed by the gateway",
         "ShaneDeconinck/elisabethdevestele: 2 pulls on GitHub, 0 performed by the gateway",
-        "ShaneDeconinck/schoutteet: 10 pulls on GitHub, 0 performed by the gateway",
-        "ShaneDeconinck/schoutteet-sanity: 5 pulls on GitHub, 0 performed by the gateway",
-        "Trendwolves/gentells-dashboard: 27 pulls on GitHub, 5 performed by the gateway",
+        "ShaneDeconinck/schoutteet: 8 pulls on GitHub, 0 performed by the gateway",
+        "ShaneDeconinck/schoutteet-sanity: 3 pulls on GitHub, 0 performed by the gateway",
+        "Trendwolves/gentells-dashboard: 25 pulls on GitHub, 6 performed by the gateway",
         "Trendwolves/gentells-standard: 4 pulls on GitHub, 0 performed by the gateway",
         "Trendwolves/gentells-studio: 2 pulls on GitHub, 0 performed by the gateway",
         "abovebeyond-ai/control: 8 pulls on GitHub, 3 performed by the gateway",
