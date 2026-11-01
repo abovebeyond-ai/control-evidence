@@ -1,0 +1,16 @@
+{
+    "action": "bd22c9f66858b32eddca25921d57de69",
+    "effect": {
+        "detail": {
+            "base": "ae05b8ee478aa0ba272771351c7aa4a4f57ddb34",
+            "branch": "workbench/weekly-quota",
+            "commit": "3ae1fb4395fdb642c7d9f537f907cb5ef247b804",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 367,
+    "verdict": "ALLOW"
+}

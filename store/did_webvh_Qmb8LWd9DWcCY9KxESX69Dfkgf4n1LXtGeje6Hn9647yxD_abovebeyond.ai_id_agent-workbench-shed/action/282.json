@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "46337bac761f110ddd61e89a33e92730dfe34159",
+            "branch": "workbench/usual-day",
+            "files_sha256": "d68bc7869af0340a7bc0a992e02b76a22de084a4128e1d6711732873de5baa7c",
+            "message": "Werf fiche: his usual day as a one-tap answer, and a way to set it\n\nDeparture, return and break were asked fresh every day, also for a man who\nleaves at 06:45 and takes half an hour every day.\n\n- A new UsualDay works out his usual departure, return and break: what he set\n  himself, and otherwise what most of his last twenty fiches say, once at\n  least three of them agree.\n- The question panel offers it as one tap: \"06:45 zoals gewoonlijk\" on the\n  departure and return questions, the usual break marked \"gewoonlijk\", and a\n  part's hours start from it when the sheet has nothing better. It is never\n  written on a fiche by itself: hours go to the customer, and a habit is a\n  guess until he taps it.\n- \"Mijn gewone dag\" in the werf menu lets him set the three himself; an empty\n  field goes back to his own fiches.\n\nNeeds php artisan migrate (workers.usual_start, usual_end, usual_break)."
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261031102253-a78360"
+}

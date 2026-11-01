@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\n`composer audit --locked` (the \"Dependencies carry no new advisory\" job) fails on every pull request since 28 October 2026 18:08 UTC, when CVE-2026-45070 was published for `symfony/mime` (email header injection via non-token characters in MIME parameter names, medium). The lock file pins 8.1.7; 8.1.10 is the first fixed 8.1 release.\n\n## What changes\n\n`composer update symfony/mime`: only that package moves, 8.1.7 to 8.1.10. `composer audit --locked` reports no advisories afterwards. npm stays at 1 high, under the ceiling of 6.\n",
+            "branch": "workbench/symfony-mime-advisory",
+            "title": "Bump symfony/mime to 8.1.10 for CVE-2026-45070"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261031130458-5b2d90"
+}

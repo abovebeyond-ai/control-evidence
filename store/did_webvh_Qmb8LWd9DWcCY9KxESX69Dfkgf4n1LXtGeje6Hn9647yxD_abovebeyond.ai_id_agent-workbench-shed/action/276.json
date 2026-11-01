@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "46337bac761f110ddd61e89a33e92730dfe34159",
+            "branch": "workbench/any-day",
+            "files_sha256": "7a6efc6ff9ab5f914ee3202b45fdcd8c752bba48ef41f1c0740f9b91d218a575",
+            "message": "Werf fiche: fill in any past day, not only today\n\nThe fiche was today's and nothing else (worksheetFor(now())), so a day he\ndid not get to in the evening could not be filled in the next morning.\n\n- Tapping the date under his name opens a day choice: Vandaag, Gisteren,\n  Eergisteren, or any earlier date. Never a day still to come. Not during a\n  call, because the voice would keep talking about the day it started on.\n- A new SheetDay keeps the choice in his session for the rest of the day it\n  was made; signing in, or opening the app the next day, starts on today.\n  The page and the conversation endpoints both ask SheetDay, so the voice\n  and the screen are always on the same fiche.\n- While it is not today, a strip says which day it is, with \"Terug naar\n  vandaag\"; the texts that said \"vandaag\" say \"die dag\".\n- The prompt says the fiche is for that day and not today.\n- The office sees \"achteraf ingevuld\" on the Dagrapport row and on the fiche,\n  for a fiche created on a later day than its date: it may arrive after that\n  day was already booked."
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261031102221-091c86"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P3\nSummary: One slow HEAD request to the bucket made a partner's vehicle upload through the API fail, and the whole new vehicle was rolled back. It is a one-off (951 store calls in the last five days without another), but the same timeout was already handled elsewhere and not here.\n\n## What happened\n\nOn 31 October 2026 at 13:53 the platform sent its automatic \"Stocklist Api error\" mail for `POST` vehicle store (`VehicleApiController::store`). While adding the first photo, `VehicleApiService::addPhoto` asks the bucket whether `<vehicle>/car_image_<order>.<ext>` already exists. That HEAD request did not answer, Flysystem threw `UnableToCheckExistence`, and the controller's catch deleted the vehicle it had just created and answered the partner with the error message (status 200).\n\nThe bucket is intermittently slow (see `App\\Support\\StorageUnavailable`, introduced for the same symptom in `ProcessImage` in #988). The disk itself retries only once at the SDK level with a 2 s connect timeout, on purpose, so a single slow moment can still surface.\n\n## What should happen\n\nA HEAD that does not answer is asked again once after a short pause, as in `ProcessImage`. If the bucket still does not answer, the upload fails as before (nothing half-written), but with a `StorageUnavailable` naming the real cause.\n\nSource: Portal mail:37.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P3"
+            ],
+            "title": "A slow bucket HEAD in the partner API photo upload rolls back the whole vehicle"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261031125956-af62e6"
+}

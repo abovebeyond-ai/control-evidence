@@ -1,0 +1,16 @@
+{
+    "action": "8798b46e02dbefc1caefad6414e76dca",
+    "effect": {
+        "detail": {
+            "base": "c98a927d63eda3cd1a12c6b9aed18ef9b5d5b5a4",
+            "branch": "workbench/api-photo-slow-bucket",
+            "commit": "fe0f1f9c1f036a4d7e508dd26d6266fac713c905",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 399,
+    "verdict": "ALLOW"
+}

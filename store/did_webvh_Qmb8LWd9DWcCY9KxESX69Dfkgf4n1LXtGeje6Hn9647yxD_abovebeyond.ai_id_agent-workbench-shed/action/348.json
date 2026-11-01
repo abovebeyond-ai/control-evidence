@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Gentells app for gentells.com members, Android first: sign in with the gentells.com account, this week's insights ranked by the member's sectors, an insight opened with what it rests on, the posts and reports of gentells.com, and Ask the Observatory. A member sees in the app what they see on the web: the app reads the Observatory's API and gentells.com's as the member, and the servers decide what a member may read.\n\n## What is in it\n\n- **Kotlin Multiplatform with Compose Multiplatform.** Everything is in `shared/commonMain`: the API client (Ktor), the models, the session, the screens, navigation and the brand. `androidApp` holds only what a phone does itself: the browser for sign-in, the keystore, and the App Link.\n- **Sign-in** through Chrome's Auth Tab against gentells.com's first-party Observatory client, with PKCE. The code returns to `https://gentells.com/app/callback`, an App Link only this app receives, because the client skips the consent screen and a custom scheme could be claimed by any app.\n- **Staying signed in.** The gentells.com tokens and the Observatory session are kept encrypted with a keystore key (`auth/Account.kt`) and renewed from the refresh token, for up to 30 days.\n- **This week** and **an insight** come from the Observatory's own store queries, in the dashboard's words (`words/Words.kt`).\n- **Posts and reports** from gentells.com's `/api/app/*`: posts as Markdown, report pages as the images the site renders.\n- **Ask** is the Observatory's Ask for a member (`state/Asking.kt`): the same routes and conversation ids as the dashboard, the answer streamed, earlier conversations reopened or deleted, and the daily cap shown with the hour it opens again.\n\n`README.md` has the architecture, the server routes the app depends on, and how to build and test.\n\n## Server side\n\nThe app needs Trendwolves/gentells-site#239 and Trendwolves/gentells-pipeline#406, in that order. Before they are live it cannot get past sign-in.\n\n## Checked\n\n- `./gradlew :shared:allTests :androidApp:testDebugUnitTest :androidApp:assembleDebug`: 67 tests pass, the debug APK builds, and the iOS simulator target compiles.\n- Roborazzi screenshot tests of the screens, Ask included.\n- Installed as 0.1.1 on a Pixel and signed in against production. Ask (0.1.3) waits for the two server PRs.\n",
+            "branch": "workbench/app-m1",
+            "title": "Gentells app for Android: sign in, this week, posts, reports, Ask"
+        },
+        "resource": "Trendwolves/gentells-app"
+    },
+    "run": "workbench-20261031104527-a2e1a5"
+}

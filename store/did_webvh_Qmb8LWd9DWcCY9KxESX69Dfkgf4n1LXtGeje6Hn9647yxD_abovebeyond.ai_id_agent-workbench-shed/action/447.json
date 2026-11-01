@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Deliveries page described itself in terms of plans, deliveries, categories and a fallback (\"What plans promise our customers, one row per delivery...\"). It did not say what the work is or what to fill in. The page now says it plainly:\n\n- **Lead:** every customer on Intelligence gets a written read on their sector four times a year. Each row is one read: for which customer, on which sector, when it is due and who writes it. A delivered read schedules the next one three months later. A customer who leaves Intelligence has their open reads cancelled.\n- **Empty state:** \"No reads are due. A row appears as soon as a customer takes Intelligence.\" This replaces \"Nothing is due.\"\n- **Missing brief:** \"without a sector yet: the customer has not filled in their brief on gentells.com.\"\n- **Owners section:** \"Category owners\" is now \"Who writes which sector\". The fallback field is labelled **Everyone else**, and each empty sector shows \"Everyone else\" as its placeholder.\n\nOnly the wording changes. The field ids, the saved setting (`fallback`, `bySector`) and the behaviour are the same, so owners already saved keep their values.\n\nTests: `e2e/deliveries.spec.js` and `e2e/header.spec.js` pass (6 of 6). ESLint is clean on the changed file.\n",
+            "branch": "workbench/deliveries-words",
+            "title": "Say what Deliveries is in plain words"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261031155447-6a3513"
+}

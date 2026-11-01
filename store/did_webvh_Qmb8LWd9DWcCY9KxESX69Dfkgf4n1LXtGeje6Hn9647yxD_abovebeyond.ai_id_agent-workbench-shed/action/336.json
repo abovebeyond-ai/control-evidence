@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The covers on the Reports tab of the Gentells app stay empty. `/api/app/reports` gives each report's cover as the site's preview route, `/reports/{slug}/preview/1`. That route is in the web group, behind the pre-launch screen, and the screen lets in a browser session or a preview cookie, not the app's bearer token. An image loader sends neither, so the app gets the holding page (HTML, 200) where it expects an image.\n\n## What changes\n\n- **`GET /api/app/reports/{slug}/preview/{page}`** serves the same public preview page through `ReportController::preview`, outside the web group and so outside the pre-launch screen. It is behind `signed:relative` and `throttle:120,1`.\n- **`/api/app/reports` signs the cover** (`AppController::cover`) until the end of the next day. Within a day the address stays the same, so the app's image cache keeps it. A report without a preview still has no cover.\n- `docs/design/android-app.md`: the cover and why it is signed.\n\nOnly preview pages are reachable this way, and only the ones `preview_pages` allows. A changed page number or a missing signature is a 403. The delivered pages stay on `/api/app/reports/{slug}/pages/{n}` with the member's token. The installed app needs no change: it loads whatever address it is given.\n\n## Checked\n\n- `AppReadsTest::test_a_report_cover_opens_past_the_pre_launch_screen`: with the pre-launch screen on, the site's preview route returns the holding page. The app's cover, fetched without a token or a session, returns the image. A changed page number and an unsigned address return 403. With the old cover address the test fails.\n- Full suite 539/540. `BuildStampTest` fails in any worktree because the branch ref lives in the common git dir.\n- Pint passes.\n",
+            "branch": "workbench/app-report-covers",
+            "title": "Serve the app's report covers past the pre-launch screen"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261031104504-ec06af"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Removes the \"peak hours\" tag from the supervisor line on Overview.\n\ngentells-pipeline #409 removes the supervisor's peak-hour brake. On weekdays from 13:00 to 19:00 GMT it allowed at most two workers and multiplied the paid phases by 0.7. The brake existed because the five-hour session limit drained faster at peak, and that limit is gone from the plan the Claude logins are on. The supervisor state therefore no longer carries `isPeak`, so this tag could never show again. Nothing else on the dashboard reads a field that #409 changes; its new fields (`budget.spend` per account, `week` on `/accounts`) only add to what is there.\n\nMerge order does not matter: before #409 the tag shows as it did, and after it there is nothing to show.\n\nChecks: `vite build` passes. `eslint` on Overview.jsx reports the same two errors as main (`Date.now` in render, `document.title` in the component), both on lines this change does not touch.\n",
+            "branch": "workbench/no-peak-hours",
+            "title": "Overview: drop the peak-hours tag"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261031105111-481362"
+}

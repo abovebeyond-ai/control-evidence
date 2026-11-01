@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Reports tab showed reports still to come between the published ones. It now lays them out as the reports page on gentells.com does: the published reports with their covers, then Coming next, each by title with the month the site gives it.\n\n## What changes\n\n- `Report.out`, from the site's `/api/app/reports` (Trendwolves/gentells-site#247). A site without the field sends none, and every report counts as out, so the list stays as it was.\n- `ReportsScreen`: published reports as cards, then Coming next as rows. \"Your plan opens N of M\" counts the published reports only.\n\n## Checked\n\n- `SiteTest.aReportIsOutUnlessTheSiteSaysItIsComing`: `out` true, false and missing.\n- Screenshot `6c-reports-coming-next`: one published report, two coming.\n- `./gradlew :shared:allTests :androidApp:testDebugUnitTest :androidApp:assemblePreview`: 69 tests pass, the preview APK builds.\n",
+            "branch": "workbench/reports-coming-next",
+            "title": "List coming reports under Coming next, as the reports page does"
+        },
+        "resource": "Trendwolves/gentells-app"
+    },
+    "run": "workbench-20261031171133-4a6fcb"
+}

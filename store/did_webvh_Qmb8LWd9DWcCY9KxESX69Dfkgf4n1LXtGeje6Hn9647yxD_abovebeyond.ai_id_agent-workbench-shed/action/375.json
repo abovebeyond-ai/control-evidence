@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b9554f669eb8114421432dd188dde7b3b130467",
+            "branch": "workbench/customers",
+            "files_sha256": "bec82127b8a152db30b4b824d4211ef239d06ae36e22cb14022cca12a70e42e3",
+            "message": "Customers, an outbox, and what Intelligence promises"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261031105956-c41817"
+}

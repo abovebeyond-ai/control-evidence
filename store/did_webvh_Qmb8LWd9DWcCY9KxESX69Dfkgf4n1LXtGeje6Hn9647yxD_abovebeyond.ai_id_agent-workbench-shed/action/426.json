@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "464f9b825212c9abdad393a5ac4c0eb488424c48",
+            "branch": "workbench/commitments-gate",
+            "files_sha256": "5ed96bb3db1b6220863f09134c1ddc41dfe694d4973a75fb472d7777c374f98a",
+            "message": "Let the Observatory past the cover to the deliveries routes"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261031154041-3db1e4"
+}

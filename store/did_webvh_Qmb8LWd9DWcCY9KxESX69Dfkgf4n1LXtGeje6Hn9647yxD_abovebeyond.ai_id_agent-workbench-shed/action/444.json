@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2054b48184d20317b5a10706614c141de891f131",
+            "branch": "workbench/deliveries-words",
+            "files_sha256": "35b687bedd515daefafaccf6b9b50ebdfe85e0d55931cc37657b2560dd38c3b6",
+            "message": "Say what Deliveries is in plain words"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261031155447-6a3513"
+}

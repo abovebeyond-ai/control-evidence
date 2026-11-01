@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ae05b8ee478aa0ba272771351c7aa4a4f57ddb34",
+            "branch": "workbench/weekly-quota",
+            "files_sha256": "5fd7eef760b34e42b57803b932792dfc097b4caa29442c847441c3ee287346ad",
+            "message": "Learn each Claude account's weekly quota, and use the whole week\n\nThe weekly pace aimed below a guessed figure. The goal is the opposite:\nuse each subscription's whole week, reaching the limit at the reset and\nnot before, since unused quota at a reset is gone.\n\n- The quota is learned per account (account_quota). A weekly refusal\n  measures it: what the account had used in that week, shaded to 95%.\n  A week that used at least 90% of the quota without a refusal raises\n  it by 10% (reviewWeeks, run by the supervisor each cycle), so it\n  climbs until a refusal says where the limit is.\n- The reserve left for the editors opens to the background over the\n  last 24 hours before a known reset.\n- The settings are named for what they are: CLAUDE_WEEKLY_QUOTA (the\n  starting quota, default 450), CLAUDE_QUOTA_RESERVE and\n  CLAUDE_QUOTA_BURST. The SPEND_* names of the first version still\n  count. The dollars are list price as a yardstick, not money.\n- bin/spend.mjs quota <account> <usd|clear> sets or clears one by hand."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261031110016-7b16ce"
+}

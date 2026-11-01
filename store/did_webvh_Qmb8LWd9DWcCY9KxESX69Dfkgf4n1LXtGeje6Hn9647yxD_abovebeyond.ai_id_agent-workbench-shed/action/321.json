@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "529bf9c65c715408d89269e63582de4117ff2633",
+            "branch": "workbench/typing",
+            "files_sha256": "3f825e37235bbb635477f62264ce2abe7550db4eb665cd162b684b209d7bb317",
+            "message": "Werf fiche: a whole fiche by tapping and typing, without talking\n\nTalking was the only way in. In a full canteen, or for whom talking does not\nsuit, the fiche could not be finished: three questions only had an answer by\nvoice, and two buttons started a call when none was running.\n\n- \"Wat heb je gedaan?\" gets a text field (RecordDay::setWorkDone).\n- \"Iets voor de werfleider?\": without a call, \"Alles liep vlot\" answers\n  \"nothing\", and the other topics open a field that puts his words on the\n  fiche as a signal of that type (RecordDay::addSignal). In a call the voice\n  still asks about the topic, as before.\n- \"Er was nog iets\" without a call opens \"Werf toevoegen\" on the board\n  instead of starting a call.\n- The start screen says \"Liever niet praten? Tik hierboven je werf aan, de\n  rest vraag ik op het scherm\", and when the voice is unavailable it says to\n  tap and type instead of to use paper.\n- A typed note for the site manager is kept like a tapped row until a\n  reading hands it back: signals get chosen_at, as lines, machines and\n  articles already have.\n\nNeeds php artisan migrate (signals.chosen_at)."
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261031103638-ebb715"
+}

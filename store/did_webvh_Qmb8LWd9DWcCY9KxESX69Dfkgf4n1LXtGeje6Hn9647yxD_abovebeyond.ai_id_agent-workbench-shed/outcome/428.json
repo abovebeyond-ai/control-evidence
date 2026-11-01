@@ -1,0 +1,16 @@
+{
+    "action": "3b30999d55aa60edfce04a2efe83e2eb",
+    "effect": {
+        "detail": {
+            "base": "464f9b825212c9abdad393a5ac4c0eb488424c48",
+            "branch": "workbench/commitments-gate",
+            "commit": "06978fbac363137eb4da0221c6f30c57556ff2bc",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 426,
+    "verdict": "ALLOW"
+}

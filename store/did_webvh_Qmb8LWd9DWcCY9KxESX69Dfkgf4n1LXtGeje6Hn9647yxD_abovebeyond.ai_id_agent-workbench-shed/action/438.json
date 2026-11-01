@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "464f9b825212c9abdad393a5ac4c0eb488424c48",
+            "branch": "workbench/login-autofill",
+            "files_sha256": "6fef692d4beee1b7db8f9561eb37053d53dbb42b98ad2ec27d947fc8a651a6b9",
+            "message": "Mark the sign-in address as the username, so Android offers saved logins from it"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261031155024-8aa7ff"
+}

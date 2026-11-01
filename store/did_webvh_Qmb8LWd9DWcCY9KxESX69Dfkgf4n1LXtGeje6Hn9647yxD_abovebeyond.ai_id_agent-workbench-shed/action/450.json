@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6965fe71ae8e12f44673384c0171a5055f123ee0",
+            "branch": "workbench/team-groups",
+            "files_sha256": "473aa9bfb8b6265cfb3d879f39dfe93ee7eb11359c4ab05d6fd8c35f8b2866a4",
+            "message": "Owners are people and groups on the team, not typed addresses"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261031161444-8a08f1"
+}

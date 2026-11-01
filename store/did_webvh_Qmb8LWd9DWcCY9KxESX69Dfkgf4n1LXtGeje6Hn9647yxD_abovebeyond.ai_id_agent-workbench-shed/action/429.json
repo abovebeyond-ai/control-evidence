@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`/internal/commitments` (from #244) was on neither of the two lists that let a signed machine route through:\n\n- **The pre-launch cover** (`PreLaunch::ALWAYS_OPEN`). An unsigned GET on gentells.com returns the \"Coming soon\" page with a 200. The Observatory read that as an empty answer, so its Deliveries page said \"Nothing is due\" and listed no categories under Category owners.\n- **The CSRF check** (`bootstrap/app.php`). A signed POST that moves a delivery (taken up, delivered) would have been refused with a 419.\n\nBoth lists now hold `internal/commitments` and `internal/commitments/*`, the same way they hold `internal/accounts`.\n\n`PreLaunchTest::test_every_internal_route_gets_past_the_cover_and_the_csrf_check` walks every route under `internal/`, with the cover on. Each route must get past the cover, and each POST must be excluded from the CSRF check. A new internal route that misses either list now fails the suite. Without this fix, the test fails on `GET /internal/commitments`.\n\nTests: the full suite passes (556 tests) apart from BuildStampTest, which needs a real checkout. Pint is clean on the changed files.\n",
+            "branch": "workbench/commitments-gate",
+            "title": "Let the Observatory past the cover to the deliveries routes"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261031154041-3db1e4"
+}

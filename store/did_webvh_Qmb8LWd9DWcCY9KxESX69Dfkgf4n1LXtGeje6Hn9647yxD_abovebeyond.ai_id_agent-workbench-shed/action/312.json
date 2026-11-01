@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Builds on #6 (shares `astro.config.ts` and `src/pages/index.astro`); merge #6 first.\n\nA pass over the SEO basics of the built site. Titles, descriptions, `lang`, Open Graph and Twitter tags, one `h1` per page, image alt texts and robots.txt were already in place. Four things were not.\n\n## Canonical pointed at the Netlify address\n\nthoekske.com serves the site, but `PUBLIC_SITE_URL` is not set on Netlify, so the canonical link, `og:url`, the sitemap and robots.txt all named `cafe-t-hoekske.netlify.app`. Search engines were told the Netlify address is the real one. The fallback in `astro.config.ts` is now `https://thoekske.com`; `PUBLIC_SITE_URL` still overrides it.\n\n## Opening hours in the BarOrPub JSON-LD\n\nThe hours went out as typed in the Studio (\"10.30\", \"24.00\"); schema.org expects `HH:MM`. `schemaTime()` turns them into \"10:30\", and a midnight closing into \"23:59\". A late closing (\"2.00\") becomes \"02:00\".\n\n## Event JSON-LD\n\nEvent pages now carry a schema.org `Event` (name, description, start and end, scheduled, offline, the caf\u00e9 as place and organizer, the drawing as image), so a search result can show the date. `Layout` takes an optional `schema` prop for page-level JSON-LD.\n\n## Smaller\n\n- Home meta description, used when the homepage has no lede: \"Caf\u00e9 't Hoekske, op de hoek van het Polenplein in Ardooie. Openingsuren, agenda en contact.\" (with \"de kaart\" once the menu is switched on). It read \"Openingsuren, agenda.\" after #6.\n- A `404` page in the site's style with links home and to the agenda, `noindex`, instead of Netlify's plain \"Page not found\". `Layout` takes `noindex`, which swaps the canonical link for a robots meta.\n\n## Checked\n\n- `astro build` against the live dataset (read only) and `tsc --noEmit`, both clean.\n- Built output: canonical, robots.txt and sitemap on thoekske.com; hours JSON-LD in `HH:MM`; Event JSON-LD on the event page; 404 with `noindex` and not in the sitemap.\n\nNo content was written to Sanity.\n",
+            "branch": "workbench/seo-basics",
+            "title": "SEO basics: thoekske.com as canonical, valid JSON-LD, 404 page"
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261031102818-06b3d2"
+}

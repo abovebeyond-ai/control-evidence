@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c20d758680c127c1ffcfed7e82e8c6c429b9d1e0",
+            "branch": "workbench/customers",
+            "files_sha256": "e3e3a00cf318169b0169c1b811e3feb23417efa3b4caa70c6a7df6c73b1bb076",
+            "message": "Deliveries: what plans promise customers, and who writes it"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261031110127-50498d"
+}

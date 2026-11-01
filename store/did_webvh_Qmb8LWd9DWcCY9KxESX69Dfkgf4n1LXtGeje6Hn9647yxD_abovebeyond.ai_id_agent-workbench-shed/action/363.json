@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b9554f669eb8114421432dd188dde7b3b130467",
+            "branch": "workbench/design-heroes",
+            "files_sha256": "dc3b70f2938da58399333561b6758a891005bf8697134b883b54464946b84f5a",
+            "message": "Subpage headers as drawn in the header maquette of 30 October 2026\n\nPosts, Trends, Services, Pricing and AI tools get the split hero: the\ndesigner's narrow picture A on the left with the page name in orange, the\nNewsreader heading in the middle with the name large and pale behind it,\nand the wide picture B running into the right edge. Reports and Contact get\nthe single hero: heading left, one picture right. One component,\n<x-page-hero>, replaces the black-and-white collage bands on these pages.\n\nFrom lg up the composition is the 1701-wide drawing scaled to the band in\ncqw, never lower than 380px. Below lg, where nothing is drawn, picture A\n(or the single picture) comes first at full width and B is not fetched.\n\nThe pictures are AVIF and WebP at their own width and a smaller one, with\nthe original's width and height on every img; bin/heroes.py makes them from\nthe delivery. The originals are not committed.\n\nPageHeroesTest holds a hero per page, the page's own pictures and no other\npage's, alt text and dimensions on every picture, every copy present, and B\nnot fetched on a phone."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261031105825-e5bf13"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The category owners on the Deliveries page were typed email addresses. A typo or someone who had left was accepted silently, and a sector could only go to one person. Owners are now people and groups on the team, picked rather than typed.\n\n**Groups on the team** (`packages/core/team-groups.mjs`)\n- A group is a name plus user ids, kept in `store/team-groups.json` (`TW_TEAM_GROUPS_PATH` in tests) like the category owners.\n- `GET /config/team-groups` is for admins and editors and returns the groups plus the members to pick from. `POST` is admin only and saves the whole set.\n- A group keeps its id when renamed. A name can't be empty or used twice, and a member must be on the team.\n- Someone removed from the team (or with an invitation not yet accepted) drops out of every group when it is read.\n\n**Owners are references**\n- `user:<id>` or `group:<id>`. `setCategoryOwners` refuses anything that doesn't resolve to a person or group on the team.\n- An address saved under the old format is read as the person with that address, so a setting saved before keeps working.\n\n**The relay** (`/site/commitments`)\n- Each read carries `owner` and `suggested_owner` resolved to a name (or `gone: true` when the owner has left), plus `mine`: whether it is the caller's, directly or through a group. The response includes the directory for the pickers.\n- `{take: true}` sets the read to drafting with the caller as owner.\n- A read still due may be owned by a group. Once it moves past due, a group owner (or no owner) is replaced by whoever moved it, so a read being written always has a person on it.\n- An owner that isn't on the team is refused with a 400.\n- gentells.com is unchanged: it stores the owner as an opaque string.\n\n`docs/design/customers-and-seams.md` describes the new behaviour.\n\nTests: `test/commitments-relay.test.mjs` (15 of 15: groups, references, the old-address migration, take-up, group to person, refusal, the page-not-data case). The full suite passes apart from the 6 report-render tests that need `pdftoppm`.\n",
+            "branch": "workbench/team-groups",
+            "title": "Owners are people and groups on the team, not typed addresses"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261031161444-8a08f1"
+}

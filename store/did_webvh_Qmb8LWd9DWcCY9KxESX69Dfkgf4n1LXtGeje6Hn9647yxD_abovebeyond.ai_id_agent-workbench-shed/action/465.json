@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Gentells app lists every report in position order, so reports still to come sit between the published ones. The reports page on gentells.com splits them: first what is out (the report or a preview of it), each with its cover, then a Coming next list by title. The app cannot draw that line itself: whether the file is there is not in what it gets.\n\n## What changes\n\n- `/api/app/reports` gives each report `out`: `isDeliverable() || hasPreview()`, the same rule as `pages/reports.blade.php`.\n- `docs/design/android-app.md`: the field.\n\nOnly the app's route changes. The agent API's `/api/v1/reports` is unchanged.\n\n## Checked\n\n- `AppReadsTest::test_a_report_is_out_once_its_file_or_a_preview_is_there`: a report with its file is out, one with neither file nor preview is not.\n- Full suite 557/558. `BuildStampTest` fails in any worktree because the branch ref lives in the common git dir.\n- Pint passes.\n",
+            "branch": "workbench/app-reports-out",
+            "title": "Say which reports are out in the app's reports list"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261031171111-be5b73"
+}

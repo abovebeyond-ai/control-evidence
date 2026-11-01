@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #185, which has a failing test (`SuggestionsTest::test_a_tap_fills_the_line_the_conversation_could_not_place`). The fix is described under \"Fix\" below.\n\nThe start screen offered one site. Once a site was on the fiche, the choice was gone. A site that was in no list could only be said in the conversation, not typed.\n\n- **Werf toevoegen.** A new link on the board, next to \"Machine toevoegen\" and \"Materiaal toevoegen\". It shows his other recent sites, the search, and a field to type a name. It appears once the fiche has a part, unless the site question is already the open one.\n- **A site he types.** \"Staat je werf er niet bij? Typ de naam.\" appears wherever sites are offered: the start screen, the site question and the board. `RecordDay::chooseOwnSite()` puts the line on the fiche with his words as `site_description` and no project, for the office to link. The line is kept like a tapped row (`chosen_at`). The conversation is told to take it over by exactly that name. The same name twice gives one line.\n- **Fix: a tap no longer overwrites a typed site.** `chooseSite` fills the first line without a project, and a typed name has no project, so tapping a second site replaced the typed one. It still fills a line the conversation could not place (\"ergens bij Zulte\"), as `SuggestionsTest` expects. It no longer fills a line he typed, which is recognised by its `chosen_at`.\n\n  **Known limit:** once a reading has taken the typed name over, `WorksheetWriter` clears `chosen_at`. From then on, a tap treats that line like any place the conversation wrote.\n- The start screen's site choice also disappears once a typed site is on the fiche.\n\nTests are in `tests/Feature/MoreSitesTest.php`:\n- a typed site, with whitespace cleaned and no duplicates;\n- a second site from the board, both tapped and typed;\n- a tap after a typed site adds a line instead of replacing it;\n- a typed site survives a reading that was made before he typed it;\n- nothing is added on a handed-in fiche, and names that are too short are refused.\n\nChecked by screenshot on the werf demo at 390px and 1280px: the start screen with the field, a typed site, and a second tapped site next to it. Doing this caught the overwrite bug. The full suite passes (373/373), and Pint is clean.\n\nNo migration. Like #183 and #184, this touches the werf partials, so whichever PR merges later may need a rebase. I'll do those rebases.\n",
+            "branch": "workbench/more-sites-2",
+            "title": "Werf fiche: more than one site in a day, and a site he types himself"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261031102754-32ba35"
+}

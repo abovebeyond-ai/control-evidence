@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ddded4569057c05b7ca9aaddd5b8b62666e30823",
+            "branch": "workbench/no-peak-hours",
+            "files_sha256": "4846d5fe76f9e5ea4ffb28bc9f020c7f62289f967b53c081a4f1dbbdf0c8e04a",
+            "message": "Overview: drop the peak-hours tag\n\nThe pipeline's supervisor no longer damps work on weekday afternoons\n(gentells-pipeline #409): the brake existed for the five-hour session\nlimit, which is gone from the plan the Claude logins are on. The\nsupervisor state no longer carries isPeak, so this tag could never\nshow again."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261031105111-481362"
+}

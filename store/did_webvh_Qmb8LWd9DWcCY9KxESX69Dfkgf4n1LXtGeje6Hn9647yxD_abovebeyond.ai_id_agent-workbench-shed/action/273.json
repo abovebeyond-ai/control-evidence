@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The werf app's voice was `VOICE_NAME` in `.env`. Changing it took a deploy, and nobody could hear the options first.\n\n- **New admin page, Stem** (`/stem`), reached through \"Stem van de werfapp\" in the user menu, next to Gebruikers. It lists the ten voices gpt-realtime speaks with. Each one has a play button for a Dutch sample sentence (the first thing a worker hears) and a **Kies** button. The voice in use is marked \"In gebruik\".\n- **The choice is stored in a new `settings` table** (key, value, updated_by). `OpenAiConversation` reads it for every new session. Until somebody chooses, `VOICE_NAME` stays the voice.\n- **Samples** come from OpenAI's speech endpoint (`gpt-4o-mini-tts`) with the same voice names and the same API key as the conversation. Each sample is made once per voice and sentence and kept on the private disk at `storage/app/voices`. The page says the sample is close to the conversation's voice but not identical, since a different model speaks it.\n- When the conversation does not run on OpenAI, the page says the choice only takes effect once it does.\n\nTests are in `tests/Feature/VoiceTest.php`:\n- only admins open the page and the samples;\n- a sample is made once, then served from disk;\n- an unknown voice returns 404;\n- the chosen voice reaches the realtime session;\n- without a choice, the `.env` voice stays.\n\nChecked by screenshot on the demo database at 390px and 1280px. The full suite passes (372/372), and Pint is clean.\n\n**Needs `php artisan migrate`** (the `settings` table).\n",
+            "branch": "workbench/voice-picker",
+            "title": "Stem: pick the werf app's voice by listening, without a deploy"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261031102136-c9a9d5"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "fe3cb30fe88312f7799c4ca75aa44cb7",
+    "effect": {
+        "detail": {
+            "base": "c98a927d63eda3cd1a12c6b9aed18ef9b5d5b5a4",
+            "branch": "workbench/api-error-mail-readable",
+            "commit": "8a4dd57487b9b1bcffda7d779e33b8236077fbaf",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 417,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c98a927d63eda3cd1a12c6b9aed18ef9b5d5b5a4",
+            "branch": "workbench/api-photo-slow-bucket",
+            "files_sha256": "d14e42f3ecb65d2be09ce85ecd385649449ef86900d0a79ad8c226c48dfdab51",
+            "message": "Retry a slow bucket HEAD in the partner API photo upload"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261031130013-fc87f7"
+}

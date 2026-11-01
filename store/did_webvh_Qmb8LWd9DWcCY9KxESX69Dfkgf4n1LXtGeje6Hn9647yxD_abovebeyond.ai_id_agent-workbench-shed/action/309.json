@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0e6b5a6fdefcf6e810b5ff1bb4ffa6457c63ef20",
+            "branch": "workbench/seo-basics",
+            "files_sha256": "9273ef306269716cd80bd4ee8a975bef241a7f5d6efe6d29bef21602d0859a5c",
+            "message": "SEO basics: live domain as site URL, valid opening hours and Event JSON-LD, 404 page"
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261031102818-06b3d2"
+}

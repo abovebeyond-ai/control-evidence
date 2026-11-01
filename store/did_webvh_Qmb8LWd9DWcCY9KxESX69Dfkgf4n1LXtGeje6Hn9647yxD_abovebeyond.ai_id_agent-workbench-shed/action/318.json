@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Replaces #184, rebased onto main now that #183 has merged. The conflict was in the record-day header and in `RecordDay`, where both PRs add to the same spots; both are kept. This also puts back a docblock that #183 had left above `chooseDay` instead of `refreshWorksheet`.\n\nDeparture, return and break were asked fresh every day, also for a worker who leaves at 06:45 and takes half an hour every day.\n\n- **The usual day.** `App\\Services\\UsualDay` works out his usual departure, return and break. It takes what he set himself, and otherwise what most of his last twenty fiches say, once at least three of them agree.\n- **One-tap answer.** The question panel offers it as a single tap:\n  - \"06:45 zoals gewoonlijk\" on the departure and return questions;\n  - the usual break tile marked \"gewoonlijk\";\n  - a part's hours start from it when the sheet has nothing better.\n\n  It is never written on a fiche by itself: hours go to the customer, and a habit is a guess until he taps it.\n- **Mijn gewone dag.** A new item in the werf menu lets him set the three values himself. An empty field goes back to his own fiches. When nothing is set, the panel shows what his fiches say, or that there are still too few of them.\n\nTests are in `tests/Feature/UsualDayTest.php`:\n- three agreeing fiches make a habit, two don't;\n- his own setting wins, and empty goes back to his fiches;\n- the usual time is offered without being written, and written only when tapped.\n\nChecked by screenshot on the werf demo at 390px and 1280px: setting the usual day, the departure tile, and the break question after one tap. The full suite passes after the rebase, and Pint is clean.\n\n**Needs `php artisan migrate`** (`workers.usual_start`, `usual_end`, `usual_break`).\n",
+            "branch": "workbench/usual-day-2",
+            "title": "Werf fiche: his usual day as a one-tap answer, and a way to set it"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261031103345-6f9f2f"
+}

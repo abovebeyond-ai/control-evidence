@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "workbench/more-sites-2",
+            "body": "**Stacked on #186** (base `workbench/more-sites-2`). It uses #186's \"Werf toevoegen\" on the board and the typed site name. Merge #186 first; GitHub then moves this PR onto main.\n\nTalking was the only way to fill in a fiche. In a full canteen, or for a worker who doesn't want to talk, the fiche couldn't be finished. Most questions could already be answered by tapping, but three only had an answer by voice, and two buttons started a call when none was running. Each is fixed now:\n\n- **\"Wat heb je gedaan?\"** gets a text field (`RecordDay::setWorkDone`). The conversation is told to take the text over exactly.\n- **\"Iets voor de werfleider?\"** without a call:\n  - \"Alles liep vlot\" answers \"nothing for the site manager\".\n  - Each other topic (iets kapot, moet morgen mee, \u2026) opens a field. His words go on the fiche as a signal of that type (`RecordDay::addSignal`).\n  - In a call nothing changes: the voice asks about the topic.\n- **\"Er was nog iets\"** without a call opens \"Werf toevoegen\" on the board instead of starting a call. \"Ja, dat was alles\" closes that panel again.\n- **Start screen:** it now says \"Liever niet praten? Tik hierboven je werf aan, de rest vraag ik op het scherm.\"\n- **Voice unavailable:** the notice now says \"Praten lukt nu niet. Tik en typ je fiche hieronder in.\" It used to send the worker to paper.\n- **Signals get `chosen_at`.** A typed note is kept like a tapped row until a reading hands it back, as lines, machines and articles already are. A first version stored it as a correction, which showed \"aangepast\" next to words he had just typed.\n\nTests are in `tests/Feature/TypedFicheTest.php`:\n- a complete fiche from an empty one to handed in, with the voice off and without a word spoken;\n- a typed note survives a later reading and is not marked as a correction;\n- empty text, unknown types and a handed-in fiche write nothing.\n\nChecked by walking the whole flow by screenshot on the werf demo (no voice locally), at 390px and 1280px: start, \"Er was nog iets\", hours, \"Wat heb je gedaan?\", machines/material none, departure, break, return, a note for the site manager, then \"Alles staat erop\". `ConversationTest` used to pin the paper text and now pins the new one. The full suite passes, the JS tests pass, and Pint is clean.\n\n**Needs `php artisan migrate`** (`signals.chosen_at`). This merges cleanly with main and with #187.\n",
+            "branch": "workbench/typing",
+            "title": "Werf fiche: a whole fiche by tapping and typing, without talking"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261031103638-ebb715"
+}

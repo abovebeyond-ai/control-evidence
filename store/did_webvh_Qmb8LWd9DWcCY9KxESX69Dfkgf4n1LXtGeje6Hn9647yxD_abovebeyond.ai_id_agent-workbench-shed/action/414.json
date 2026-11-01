@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: When the partner API fails to create a vehicle, the platform mails the office a raw PHP stack trace. The office cannot tell from it which garage or car is affected, what went wrong, or whether it has to do anything.\n\n## What is wrong\n\n`VehicleApiController::store` sends \"Stocklist Api error\" to `mail.api_error_recipient` (the office address) with the exception message, file, line and the full trace (over fifty frames of vendor paths). The mail of 31 October 2026 (see #1058) was a single slow bucket request, but nothing in it says so: not the garage, not the car, not that the vehicle was rolled back, not whether anyone has to act.\n\n## What is asked\n\nAn internal mail in Dutch, in the house style of the other office notifications (like the bell report): a subject that names what happened and for which garage, the facts (garage, car, chassis number, time), the cause in plain words, what it means (the vehicle was not created; the partner got an error back), and what to do about it. The technical detail stays available but short and at the bottom; the full trace is already in the log.\n\nSource: Portal mail:37.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "The API error mail to the office is a raw stack trace"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261031130622-50121e"
+}

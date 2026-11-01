@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-10-31T07:34:28+00:00",
+    "computed_at": "2026-11-01T07:34:28+00:00",
     "window": {
-        "since": "2026-10-24T07:33:04+00:00",
+        "since": "2026-10-25T07:33:04+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 23,
-                "gateway": 9
+                "github": 27,
+                "gateway": 14
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +115,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 8,
-                "gateway": 5
+                "github": 14,
+                "gateway": 11
             }
         },
         "Trendwolves/glk-transferor": {
@@ -125,8 +125,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 25,
-                "gateway": 7
+                "github": 15,
+                "gateway": 14
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -186,8 +186,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 13,
-                "gateway": 0
+                "github": 16,
+                "gateway": 3
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -196,7 +196,7 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 2,
+                "github": 0,
                 "gateway": 0
             }
         },
@@ -229,8 +229,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 5,
-                "gateway": 5
+                "github": 8,
+                "gateway": 8
             }
         },
         "ShaneDeconinck/dbc-subsidieportaal": {
@@ -306,8 +306,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 3,
+                "gateway": 3
             }
         },
         "Trendwolves/gentells-dashboard": {
@@ -317,8 +317,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 15,
-                "gateway": 6
+                "github": 18,
+                "gateway": 10
             }
         },
         "Trendwolves/gentells-standard": {
@@ -782,16 +782,15 @@
         "Hoet-design/hoet-eyewear: 1 dispatches on GitHub, 0 performed by the gateway",
         "Hoet-design/hoet-eyewear: 1 pulls on GitHub, 0 performed by the gateway",
         "ShaneDeconinck/naviskore: 15 pulls on GitHub, 2 performed by the gateway",
-        "Trendwolves/gentells-pipeline: 23 pulls on GitHub, 9 performed by the gateway",
-        "Trendwolves/gentells-site: 8 pulls on GitHub, 5 performed by the gateway",
-        "Trendwolves/glk-transferor: 25 pulls on GitHub, 7 performed by the gateway",
+        "Trendwolves/gentells-pipeline: 27 pulls on GitHub, 14 performed by the gateway",
+        "Trendwolves/gentells-site: 14 pulls on GitHub, 11 performed by the gateway",
+        "Trendwolves/glk-transferor: 15 pulls on GitHub, 14 performed by the gateway",
         "kubo-global/afrodidact-website: 6 pulls on GitHub, 1 performed by the gateway",
-        "stocklistdealer-eu/platform: 13 pulls on GitHub, 0 performed by the gateway",
-        "stocklistdealer-eu/stockcars-website: 2 pulls on GitHub, 0 performed by the gateway",
+        "stocklistdealer-eu/platform: 16 pulls on GitHub, 3 performed by the gateway",
         "ShaneDeconinck/elisabethdevestele: 2 pulls on GitHub, 0 performed by the gateway",
         "ShaneDeconinck/schoutteet: 8 pulls on GitHub, 0 performed by the gateway",
         "ShaneDeconinck/schoutteet-sanity: 3 pulls on GitHub, 0 performed by the gateway",
-        "Trendwolves/gentells-dashboard: 15 pulls on GitHub, 6 performed by the gateway",
+        "Trendwolves/gentells-dashboard: 18 pulls on GitHub, 10 performed by the gateway",
         "Trendwolves/gentells-standard: 1 pulls on GitHub, 0 performed by the gateway",
         "Trendwolves/gentells-studio: 1 pulls on GitHub, 0 performed by the gateway",
         "abovebeyond-ai/control: 8 pulls on GitHub, 3 performed by the gateway",

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "228a6420f27020b123217d4a2a3a8634a60ddcb0",
+            "branch": "workbench/weekly-pace",
+            "files_sha256": "77c1f4665fda80479426832fe7b172ec42dab354dcae1afe22097912a155b170",
+            "message": "Pace each Claude account's week evenly, and drop the peak-hour brake\n\nThe plan the two Claude logins are on no longer has a five-hour session\nlimit; the weekly limit stays. The session cap braked bursts by itself.\nWithout it one re-tag or bench run can spend an account's week in a day\nor two, and with both accounts refused every Claude phase stops until\nthe reset, so the later days of the week are classified and enriched\nlate or not at all.\n\nspend.mjs: the daily ceiling (SPEND_DAILY_USD) becomes a weekly budget\nper account (SPEND_WEEKLY_USD, default 350 notional dollars), paced\nevenly. The background may have spent (budget - reserve) x the elapsed\nshare of the week plus a burst allowance of at most a day's share. The\nweek runs from the account's own reset when known (read from the CLI's\nrefusal, kept in account_weeks), otherwise it is the rolling last seven\ndays. A reserve (default a tenth) is left for the interactive paths.\n\nLanes: background (engine, crons) is paced; every server request runs\nin the interactive lane and is not paced; bulk jobs (retag-cohort,\nbench, eval-models, or SPEND_LANE=bulk) wait while an account is on or\nabove its even line. accountsToTry skips an account at pace, so calls\nmove to the other one; with all at pace callCli throws a paced error\nand the scoring drops paid actions, classify included.\n\nThe supervisor's peak-hour brake (weekdays 13:00-19:00 GMT, two workers,\nexpensiveDiscount x 0.7) existed only for the session limit and is gone.\nIts rule now lives in supervisor-decide.mjs so it is tested as it runs.\n\nShown in /llm-health, /accounts, the supervisor state, /api/elixir\n(extra.spend*, spendAccounts) and on the wall: a finding when an account\nruns ahead of pace for six hours, or is refused on its weekly limit."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261031104644-95998c"
+}

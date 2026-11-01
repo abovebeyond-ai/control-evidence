@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The menu has seven categories in the dataset but no items yet, so every link to /kaart led to \"De kaart wordt binnenkort toegevoegd.\" This hides the menu until it is filled and switched on, and adds icons to the home buttons.\n\n## Menu behind a switch\n\n- New singleton `menuSettings` with one boolean, \"Toon de kaart op de site\" (off by default). In the Studio, Menukaart now opens on \"Kaart tonen op de site\" above the categories.\n- `isMenuVisible()` is true only when the switch is on and at least one category has items. Until then:\n  - \"de kaart\" is left out of the header nav (desktop and phone);\n  - a home button pointing to /kaart is not rendered;\n  - the home meta description drops \"en de kaart\";\n  - /kaart redirects to the home page (Astro static redirect, `noindex`) and is left out of the sitemap. The sitemap check runs the same GROQ query from `astro.config.ts`.\n- The button field in the Studio says that a menu button only appears once the menu is switched on.\n\nSwitching it on takes a new build, like any other content change.\n\n## Home\n\n- The buttons get a line icon per target page (calendar for the agenda, a glass for the menu, a book for the story, a pin for contact), drawn like the menu button: 1.5 stroke, `currentColor`.\n- The caption under the interior photo is removed; the alt text stays.\n\n## Checked\n\n- `astro build` against the live dataset (read only) and `tsc --noEmit`, both clean.\n- Live data (switch absent): one button, no \"de kaart\" in the nav, /kaart redirects, sitemap without /kaart.\n- With `isMenuVisible()` forced to true locally (not in this branch): both buttons with their icons.\n- Not checked: the Studio form, which needs a login.\n\nNo content was written to Sanity.\n",
+            "branch": "workbench/cta-icons",
+            "title": "Menu behind a Studio switch, icons on the home buttons"
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261031102447-82a823"
+}

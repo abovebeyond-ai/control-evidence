@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "This pairs with the gentells-pipeline PR that makes owners people and groups on the team.\n\n**Deliveries**\n- Every owner field is now a picker: the groups first, then the people on the team by name. This covers both Who writes which sector and the owner on each read.\n- The empty choice says what happens without a pick: \"Everyone else\" on a sector, \"Nobody: whoever takes it up\" on Everyone else, and \"<name>, by sector\" on a read.\n- An owner who has left the team shows as \"No longer on the team\", with \"Pick somebody\" in red under the read.\n- A read for you, directly or through your group, says \"For you\", and a group read gets a **Take it up** button that makes it yours by name. Others see \"Waiting for <name>\".\n- The summary line counts the reads that are yours: \"2 open, 1 late, 1 for you.\"\n\n**Accounts**\n- A new **Groups** section under Team: a name per group, the team members as toggles, Add a group, Remove, and Save the groups (saved as a whole).\n\nTests: `e2e/deliveries.spec.js` (pickers, take-up, a departed owner), `e2e/accounts.spec.js` (a new test that makes and saves a group) and `e2e/header.spec.js` pass (10 of 10). ESLint is clean on the changed files.\n",
+            "branch": "workbench/team-groups",
+            "title": "Pick owners from the team, and make groups on Accounts"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261031161504-926480"
+}

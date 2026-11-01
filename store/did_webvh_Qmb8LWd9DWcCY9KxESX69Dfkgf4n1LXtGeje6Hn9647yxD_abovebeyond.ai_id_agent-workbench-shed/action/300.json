@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "46337bac761f110ddd61e89a33e92730dfe34159",
+            "branch": "workbench/more-sites",
+            "files_sha256": "039493ba876c9f4644d6d88c7ce32ad3b85f11542495afc3cedd8adc8024899d",
+            "message": "Werf fiche: more than one site in a day, and a site he types himself\n\nThe start screen offered one site: once a site was on the fiche the choice\nwas gone, and a site in no list could only be said, not typed.\n\n- \"Werf toevoegen\" on the board, next to machine and material: his other\n  recent sites, the search, and a field for a name.\n- \"Staat je werf er niet bij? Typ de naam.\" wherever sites are offered (start\n  screen, the site question, the board). The line goes on the fiche under\n  his words, without a project, for the office to link; the conversation is\n  told to take it over by exactly that name. The same name twice is one line.\n- Tapping a site no longer fills a line that has a typed name: that line is\n  his site too, and the tap used to overwrite it."
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261031102723-66f945"
+}

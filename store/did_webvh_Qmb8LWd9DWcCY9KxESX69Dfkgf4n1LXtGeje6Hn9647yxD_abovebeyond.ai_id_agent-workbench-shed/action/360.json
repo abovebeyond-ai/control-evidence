@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The four lists (This week, Ask, Posts, Reports) put 12dp of their own under the status bar before the wordmark. On a phone with a tall camera cutout, such as the Pixel 11, the wordmark then sat noticeably low. Now it is 4dp, in line with Android's own apps. Sign in and the opened screens never had the extra space and are unchanged.\n\n## Checked\n\n- `./gradlew :shared:allTests :androidApp:testDebugUnitTest :androidApp:assembleDebug` passes.\n",
+            "branch": "workbench/top-gap",
+            "title": "Start the lists 4dp under the status bar instead of 12dp"
+        },
+        "resource": "Trendwolves/gentells-app"
+    },
+    "run": "workbench-20261031105923-e0f06f"
+}

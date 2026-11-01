@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:37",
+            "note": "Issue #1058: slow bucket HEAD in partner API photo upload rolled back the vehicle; retry once, PR #1059",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1059"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261031130033-af9db9"
+}

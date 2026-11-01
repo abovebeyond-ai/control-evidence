@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Observatory's side of what plans promise customers (gentells-site, pull request \"Customers, an outbox, and what Intelligence promises\"), and the design note behind both.\n\n- `packages/server/routes-commitments.mjs`: a signed relay to the site's commitments for the Deliveries page. `GET /site/commitments` and `POST /site/commitments/{id}`, admins and editors (who write the reads); the person travels as `by`.\n- `packages/core/category-owners.mjs` and `/config/category-owners`: an owner per sector of gentells.com and a fallback, kept in `store/category-owners.json`, read by the team and changed by an admin. A read taken up without an owner goes to its category's owner, else the fallback, else whoever took it up. Routing to a role instead of an address is what lets one person hold everything at five customers and a desk per sector at three hundred, with nothing changed but this setting.\n- `docs/design/customers-and-seams.md`: where Gentells needs seams on the commercial side (the customer above the reader, commitments, an outbox with adapters, roles), where it does not, the order, and what is built. The CRM adapter waits for the choice of CRM.\n\nMerge after the site pull request; until the site has `/internal/commitments` the Deliveries page says the site could not answer.\n\nTests: `test/commitments-relay.test.mjs` (owners and fallback, refusing a bad address, admin-only changes, the relay's roles, the suggested owner, a signed change with only the fields the site takes). Full suite 1508 of 1514; the six failures are report-render, which needs pdftoppm on the machine that ran it. tsc clean.\n",
+            "branch": "workbench/customers",
+            "title": "Deliveries: the relay to gentells.com's commitments, and category owners"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261031110107-f47f32"
+}

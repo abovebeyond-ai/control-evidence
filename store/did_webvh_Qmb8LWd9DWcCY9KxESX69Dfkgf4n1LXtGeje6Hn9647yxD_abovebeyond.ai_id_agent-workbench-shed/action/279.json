@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The fiche was today's and nothing else (`worksheetFor(now())`), so a day the worker didn't get to in the evening couldn't be filled in the next morning.\n\n- **Choosing a day.** Tapping the date under his name opens a day choice: Vandaag, Gisteren, Eergisteren, or any earlier date through a date field. A day still to come is refused, as is an invalid date. The choice is disabled during a call, because the voice would keep talking about the day it started on.\n- **One place decides the day.** `App\\Services\\SheetDay` keeps the choice in his session for the rest of the day it was made. Signing in, or opening the app the next day, starts on today again. `RecordDay` and `ConversationController` both ask `SheetDay`, so the screen and the voice are always on the same fiche.\n- **On the fiche.** While the fiche isn't today's, a strip says which day it is, with \"Terug naar vandaag\". The texts that said \"vandaag\" say \"die dag\".\n- **Prompt.** It says the fiche is for that day and not today, and that \"vandaag\" further down means that day.\n- **Office.** The Dagrapport row and the fiche show \"achteraf ingevuld\" for a fiche created on a later day than its date (`Worksheet::filledLate()`). Such a fiche can arrive after that day has already been booked.\n\nTests are in `tests/Feature/WorksheetOtherDayTest.php`:\n- yesterday's fiche, with the conversation on that same fiche and its prompt;\n- a future or invalid day refused;\n- the next morning starts on today;\n- signing in resets the day;\n- the office marker.\n\nChecked by screenshot on the werf demo at 390px and 1280px: the day choice, then yesterday's fiche with the strip, then back to today. The full suite passes (374/374), and Pint is clean.\n\nNo migration. This touches the header of `record-day.blade.php`, as the usual-day PR does, so whichever of the two merges second needs a rebase. I'll do that rebase.\n",
+            "branch": "workbench/any-day",
+            "title": "Werf fiche: fill in any past day, not only today"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261031102221-091c86"
+}

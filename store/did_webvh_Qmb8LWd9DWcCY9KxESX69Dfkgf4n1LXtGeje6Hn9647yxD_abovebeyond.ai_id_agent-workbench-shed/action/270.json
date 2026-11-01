@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "46337bac761f110ddd61e89a33e92730dfe34159",
+            "branch": "workbench/voice-picker",
+            "files_sha256": "96d65a7da11374245683cec9a14e02d06819cab5eaee10a314f16884c4e51044",
+            "message": "Stem: pick the werf app's voice by listening, without a deploy\n\nThe conversation's voice was VOICE_NAME in .env: changing it took a deploy,\nand nobody could hear the options first. A new admin page, Stem (in the user\nmenu next to Gebruikers), lists the ten voices gpt-realtime speaks with. Each\nhas a play button for a Dutch sample sentence and a Kies button. The choice\nis stored in a new settings table and holds from the next conversation on;\n.env stays the fallback until somebody chooses.\n\nSamples come from OpenAI's speech endpoint (gpt-4o-mini-tts) with the same\nvoices, made once per voice and sentence and kept on the private disk.\n\nNeeds php artisan migrate (settings table)."
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261031102136-c9a9d5"
+}
