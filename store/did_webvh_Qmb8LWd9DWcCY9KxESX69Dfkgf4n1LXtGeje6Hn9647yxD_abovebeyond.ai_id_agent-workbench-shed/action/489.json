@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Writers (role `client`) can now open the deliveries relay. A writer takes a read up and moves it through drafting to review. Sending it to the customer (delivered, with its link), calling it missed or cancelling it stays with editors and admins: the relay answers 403 and passes nothing to the site.\n\nA writer names nobody but themselves. Any owner field they send is dropped, so taking a read up or moving it past due makes it theirs, by the same rule that already applied when nobody was named.\n\nGuests are still refused.\n\nTests: `test/commitments-relay.test.mjs`, 16 pass, including a new test for the writer's path.\n",
+            "branch": "workbench/writers-deliveries",
+            "title": "Deliveries relay: writers work a read up to review, editors send it"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261102072208-c026ed"
+}

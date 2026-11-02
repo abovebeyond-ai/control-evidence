@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "153614649e567bbae44da68942934cc68425c80b",
+            "branch": "workbench/groups-read",
+            "files_sha256": "23005bc7e55af4cf9464df18e176ae457fb5e02ac7eb2b0f62523cfd9d6390eb",
+            "message": "Show a saved group as a line, open it with Change"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261101101851-10c82e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`updateRecord` turns every key of `fields` into a column name and puts it into the SQL as text. `PATCH /store/:id` passes the request body straight in, so any team token could name a \"field\" such as `headline = headline, status` and write columns the route never meant to open. `undoRecordEdit` reads table and field back from `record_edits` and builds SQL from them the same way.\n\nWhat changes:\n- `updateRecord` refuses any field that is not a column of the record's own table, before a statement is built. Before, an unknown field already failed, with SQLite's \"no such column\"; now it fails earlier, with the field named, and an injected expression can no longer reach the statement.\n- `undoRecordEdit` refuses a trail row whose table is not one of the editable tables, or whose field is not a column of it.\n- The five editable tables are named once (`EDITABLE_TABLES`).\n\nTests: two new cases in `test/record-edits.test.mjs` (an injected field and an unknown field leave the row and its trail untouched; an undo of a forged trail row is refused). Both fail on main and pass here. Full suite: 1552 of 1558 pass; the 6 that fail are `report-render`, which needs poppler (`pdfinfo`, `pdftoppm`), installed in CI but not on the machine that ran them. `tsc` is clean.\n\nFound while mapping which writes reach the shared graph. The other side doors from that map (the generic patch route still writing status, showcase and trust fields; role checks on admin routes; link expiry) are separate changes.\n",
+            "branch": "workbench/store-field-names",
+            "title": "Store: refuse field names that are not columns before building SQL"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261101101834-516cc8"
+}

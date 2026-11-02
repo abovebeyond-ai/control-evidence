@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-01T07:34:28+00:00",
+    "computed_at": "2026-11-02T07:34:36+00:00",
     "window": {
-        "since": "2026-10-25T07:33:04+00:00",
+        "since": "2026-10-26T07:33:04+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -74,7 +74,7 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 15,
+                "github": 11,
                 "gateway": 2
             }
         },
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 27,
-                "gateway": 14
+                "github": 29,
+                "gateway": 16
             }
         },
         "Trendwolves/gentells-site": {
@@ -125,7 +125,7 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 15,
+                "github": 14,
                 "gateway": 14
             }
         },
@@ -317,8 +317,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 18,
-                "gateway": 10
+                "github": 20,
+                "gateway": 12
             }
         },
         "Trendwolves/gentells-standard": {
@@ -781,16 +781,15 @@
         "Hoet-design/cabrio-eyewear: 1 pulls on GitHub, 0 performed by the gateway",
         "Hoet-design/hoet-eyewear: 1 dispatches on GitHub, 0 performed by the gateway",
         "Hoet-design/hoet-eyewear: 1 pulls on GitHub, 0 performed by the gateway",
-        "ShaneDeconinck/naviskore: 15 pulls on GitHub, 2 performed by the gateway",
-        "Trendwolves/gentells-pipeline: 27 pulls on GitHub, 14 performed by the gateway",
+        "ShaneDeconinck/naviskore: 11 pulls on GitHub, 2 performed by the gateway",
+        "Trendwolves/gentells-pipeline: 29 pulls on GitHub, 16 performed by the gateway",
         "Trendwolves/gentells-site: 14 pulls on GitHub, 11 performed by the gateway",
-        "Trendwolves/glk-transferor: 15 pulls on GitHub, 14 performed by the gateway",
         "kubo-global/afrodidact-website: 6 pulls on GitHub, 1 performed by the gateway",
         "stocklistdealer-eu/platform: 16 pulls on GitHub, 3 performed by the gateway",
         "ShaneDeconinck/elisabethdevestele: 2 pulls on GitHub, 0 performed by the gateway",
         "ShaneDeconinck/schoutteet: 8 pulls on GitHub, 0 performed by the gateway",
         "ShaneDeconinck/schoutteet-sanity: 3 pulls on GitHub, 0 performed by the gateway",
-        "Trendwolves/gentells-dashboard: 18 pulls on GitHub, 10 performed by the gateway",
+        "Trendwolves/gentells-dashboard: 20 pulls on GitHub, 12 performed by the gateway",
         "Trendwolves/gentells-standard: 1 pulls on GitHub, 0 performed by the gateway",
         "Trendwolves/gentells-studio: 1 pulls on GitHub, 0 performed by the gateway",
         "abovebeyond-ai/control: 8 pulls on GitHub, 3 performed by the gateway",

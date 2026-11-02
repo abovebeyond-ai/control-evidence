@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Goes with the pipeline PR that opens the deliveries relay to writers.\n\n**Deliveries for writers**\n- Deliveries is on a writer's bar, as it is on an editor's.\n- A writer's state choices stop at In review. The owner picker is read-only for them, and a read in review says \"An editor sends it to the customer\".\n- Delivered and missed rows are read-only for a writer.\n- Save sends the owner only for editors and admins.\n\n**Live: why a source is not collecting**\nThe \"Not collecting\" line showed each source's name and failure count. `/live` already sends the last error, and the line now shows it after the count, so a refusal (403), a missing feed (404) or a rate limit (429) can be read without opening Sources.\n\nTests: `e2e/deliveries.spec.js` (new writer test) and `e2e/live.spec.js`, 5 pass.\n",
+            "branch": "workbench/writers-deliveries",
+            "title": "Deliveries for writers; Live shows why a source is not collecting"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261102072228-866c9d"
+}

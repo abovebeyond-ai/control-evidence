@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e1a81546c2baf4f9fb0b7e892f4d5e1fbc5e7721",
+            "branch": "workbench/writers-deliveries",
+            "files_sha256": "e424c5f9d75f6d3c1c512af6f5eb8931dd36302deb6a7c1ae20c679062a96478",
+            "message": "Let writers work a read up to review; sending stays with editors"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261102072208-c026ed"
+}

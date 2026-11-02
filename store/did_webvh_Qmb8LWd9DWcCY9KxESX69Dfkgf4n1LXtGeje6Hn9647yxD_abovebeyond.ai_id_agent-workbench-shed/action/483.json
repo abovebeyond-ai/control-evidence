@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A saved group on Accounts kept showing its name field and a toggle button per team member, so it looked like a form that hadn't been saved yet.\n\nA saved group now reads as one line: its name, the people in it (\"Maarten, Guilherme\", or \"Nobody in it yet\"), and **Change** and **Remove**. **Change** opens that group into the name field and the people to click. A new group (from **Add a group**) opens straight away. **Save the groups** and **Cancel** appear only while something is being changed, and **Cancel** closes every opened group again.\n\nSaving is unchanged: the whole set goes to `/config/team-groups` as before.\n\nTests: `e2e/accounts.spec.js` (the group test now checks the saved line and opens it with Change), 4 of 4 passing. ESLint is clean on the changed files.\n",
+            "branch": "workbench/groups-read",
+            "title": "Show a saved group as a line, open it with Change"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261101101851-10c82e"
+}

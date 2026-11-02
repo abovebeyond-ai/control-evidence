@@ -1,0 +1,16 @@
+{
+    "action": "a50c8b0fff39ddf0a72cf16c75d25d1d",
+    "effect": {
+        "detail": {
+            "base": "e1a81546c2baf4f9fb0b7e892f4d5e1fbc5e7721",
+            "branch": "workbench/writers-deliveries",
+            "commit": "1feaddbe22cbe16339668ed7ed79f6f4107a67fc",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 486,
+    "verdict": "ALLOW"
+}

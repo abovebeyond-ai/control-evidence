@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3860297b70f00facaddca607e96d3ce715f927af",
+            "branch": "workbench/store-field-names",
+            "files_sha256": "d9647f264cde54180f6e5c04f899c53476474b15f39405d63a2aa57e76dfeb3b",
+            "message": "Store: refuse field names that are not columns before building SQL"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261101101834-516cc8"
+}

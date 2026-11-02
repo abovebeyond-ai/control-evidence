@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7019eef90c409615cbebe52430c0e732bca18f16",
+            "branch": "workbench/writers-deliveries",
+            "files_sha256": "f3e021e758d2832ab9399dad1947ec1ef1482d78f48136d5522c6cdef2497cae",
+            "message": "Deliveries for writers, and the reason a source is not collecting on Live"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261102072228-866c9d"
+}
