@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7983f9258e40b0e54b175bf6633627d2db0d5635",
+            "branch": "workbench/parking-holds",
+            "files_sha256": "4c935589ef12b1cf17c994d52b5667a106438a315cbf64aead124574a2bb1c3c",
+            "message": "A parked source stays parked: muted by the collector, never a proposal again"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261102094457-2097a4"
+}

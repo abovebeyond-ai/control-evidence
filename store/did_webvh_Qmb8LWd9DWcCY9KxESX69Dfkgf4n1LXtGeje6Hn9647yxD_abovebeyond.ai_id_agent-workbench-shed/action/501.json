@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "**What went wrong.** Ten sources stood under \"Not collecting\" on Live, switched on and failing: Hostelworld at 1040 failures in a row, Personnel Today and Banking Technology at 109, seven more at 25. They had all been parked. Their notes say so, and the last time each was tried is when it was parked. They were switched back on afterwards without their failure count being reset.\n\n**Why.** Parking set `active = 0` and nothing else. A scout's source (`source-proposed-*`) that is off and has no state reads as a proposal (`stateOf`). So a parked source went back into \"waiting for a yes\" on the Sources page and into the scout's review, which can delete it. Approving it switched it on with its old count. The same happened to one muted by hand, since Mute also only set `active`.\n\n**The fix**\n- `parkIfFailing` (source-state.mjs, used by collect.mjs) parks as `state = 'muted'`, `state_by = 'collector'`, with the reason in the notes as before.\n- `updateRecord`: switching a source on resets its failure count, whichever screen does it. Switching one off mutes it under the person's name.\n- The scout's pending proposals are rows whose lifecycle is `proposed`, so a muted source is no longer reviewed or dismissed.\n- Migration `parked-sources-muted-2026-11-02` (runs once):\n  - off rows parked by the collector or the old doctor are marked muted;\n  - on rows with that note and 25 or more failures still counted go back off, muted. On the box these are the ten on Live.\n  - A source someone switched on with its count reset is left alone.\n\nTests: `test/source-parking.test.mjs` (new, 8 pass). Full suite 1561 of 1567; the 6 failures are report-render, which needs pdftoppm on the workbench.\n",
+            "branch": "workbench/parking-holds",
+            "title": "A parked source stays parked: muted by the collector, never a proposal again"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261102094457-2097a4"
+}

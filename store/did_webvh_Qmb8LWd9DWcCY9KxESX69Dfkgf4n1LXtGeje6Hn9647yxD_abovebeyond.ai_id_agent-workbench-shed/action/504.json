@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c1f7f16da49d863a9bb3d4841c7f09d1a42126b7",
+            "branch": "workbench/parking-holds",
+            "files_sha256": "9fc3da98043f303a1f1241ca146db17b4bc7d8fc451441f94c4cd598728f2a3b",
+            "message": "Sources: a parked or muted source is not offered for approval"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261102094525-cdb3e4"
+}
