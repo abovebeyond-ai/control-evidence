@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "968f786b41e6e05c2bd0467f0421cdd244eab353",
+            "branch": "workbench/carpass-link-expires",
+            "files_sha256": "6ef1d24a950f2ca8e819f691aa930a9a85d926463379421f96ce29a98bf1971e",
+            "message": "Warn when a Car-Pass that came as a link expires"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261103144216-a75371"
+}

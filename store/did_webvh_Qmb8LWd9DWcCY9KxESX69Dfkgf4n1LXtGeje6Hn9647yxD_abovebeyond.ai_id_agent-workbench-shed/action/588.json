@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:39",
+            "note": "Issue #1068. Okasie-webhook komt er vandaag enkel met de hand (geen scherm, geen code die een rij in webhooks maakt). Vraag: dragen de acht Okasie-rijen in webhooks \u00e9\u00e9n gemeenschappelijke URL of per garage een sleutel van Okasie? Bij \u00e9\u00e9n URL bouw ik dat de Okasie-schakelaar op de dealerfiche de ontvanger zelf aanmaakt. Intussen: rijen voor Vanderheyden en Ucars met de hand toevoegen?",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261103161401-cb8e23"
+}

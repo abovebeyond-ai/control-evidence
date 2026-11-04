@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eae51b0cb0e541b20ca908970fa8a7f003c15f36",
+            "branch": "workbench/fast-park",
+            "files_sha256": "22c24af43a6821014f5f222a1f6067028f30a88db51cd45b53f21c53d8ec9662",
+            "message": "Park a source after 3 failures when its page is not there"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261103100536-d7ab7b"
+}

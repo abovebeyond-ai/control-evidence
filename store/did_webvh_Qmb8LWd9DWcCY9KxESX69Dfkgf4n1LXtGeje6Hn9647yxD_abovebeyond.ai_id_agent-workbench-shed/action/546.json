@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8f69a3dabf86470abed68f89a99b41a3b362cfcd",
+            "branch": "workbench/carpass-already-registered",
+            "files_sha256": "a2b7b7c869bb7baeaf73f0cdc8909d5a5d2551a7c65b9de542a883255e311da9",
+            "message": "Attach an existing Car-Pass instead of correcting issue 150"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261103125758-4b7776"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two reports stood as \"File not found on disk\" with their PDFs in `store/reports`:\n\n- \"The New Luxury is Participation\", notes `Uploaded: 1791905134119-Participation_Luxuary_.pdf (1 section, 608 chars)`\n- \"AA\", notes `File: AA_ACIG.pdf`\n\nEvery way in records the filename in the notes, but nothing read all of them. The retry button (`/retry-report`) read `File:` and `Google Drive:` only, then fell back to a 20-character substring of the name. The worker's sweep read no notes, only the name, and \"The New Luxury\" does not match \"Participation_Luxuary\", while \"AA\" is too short to match safely (by design).\n\n## What changes\n- `noteFile(notes)` in `packages/core/report-files.mjs` reads `File:`, `Google Drive:` and `Uploaded:` (without the section count).\n- `resolveReportFile(name, files, notes)` tries that file first, as stored or by its upload safe name, then the existing name rule.\n- The worker passes the notes; `/retry-report` uses `resolveReportFile` instead of its own matching, which also drops the unguarded substring fallback the worker lost earlier.\n\n## After deploy\nRetry on both reports on the Reports page. KARMA 2026 and ACTIVATE are a different case: the files on disk are a watermark page and a 5-byte placeholder, and need the real PDF uploaded.\n\n## Tests\n`test/report-files.test.mjs`: 10 pass, with the two real notes. Full suite 1568 of 1574; the 6 are report-render, which needs pdftoppm.\n",
+            "branch": "workbench/report-notes",
+            "title": "Find a report's file by the name its notes give"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261103123217-d6d9b8"
+}

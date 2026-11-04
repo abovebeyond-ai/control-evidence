@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On the Reports page the failed list was folded, and the only way to open it was a small grey triangle at the far right of a row that read \"4 failed\" in small warm text. Easy to miss, on the list that most needs a person.\n\n## What changes\n- The list opens by itself when a report failed. Processing alone still starts folded.\n- The count is a heading: base size, 600, `hot` when something failed (`warm` when only processing).\n- The triangle is gone; \"Show\" / \"Hide\" (`Button` link, `aria-expanded`) sits next to the count.\n\n## Tests\n`e2e/reports-retry-search.spec.js`: the list is open on arrival, Hide and Show fold and unfold it; the other two tests pass unchanged. Brand ratchet ok, build ok.\n",
+            "branch": "workbench/failed-toggle",
+            "title": "Reports: the failed list opens by itself and folds with words"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261103135810-2c9f62"
+}

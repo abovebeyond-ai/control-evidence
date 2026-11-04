@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:39",
+            "note": "Issue #1068. Okasie-webhook bestaat enkel met de hand, geen scherm. Vraag: delen de acht Okasie-rijen in webhooks \u00e9\u00e9n URL, of draagt elk een sleutel van Okasie per garage? Bij \u00e9\u00e9n URL maakt de Okasie-schakelaar de ontvanger zelf aan. Intussen Vanderheyden en Ucars met de hand?",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261103161407-b83c24"
+}

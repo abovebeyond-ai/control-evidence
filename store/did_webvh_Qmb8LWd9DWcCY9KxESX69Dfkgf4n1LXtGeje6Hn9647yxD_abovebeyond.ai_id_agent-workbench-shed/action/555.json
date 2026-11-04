@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "030004cd9aba3c9f947a97ea94bd63089fa03108",
+            "branch": "workbench/carpass-chip-opens-link",
+            "files_sha256": "7a21b1998941390ea5fad03019d1a346d29e75c68c71aa2fd5bea08200437c6e",
+            "message": "Open the Car-Pass report when a car has a link but no stored PDF"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261103131119-2014e3"
+}

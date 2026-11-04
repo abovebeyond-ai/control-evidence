@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f1b67e35450849662c36ed065ae5e2add19ae276",
+            "branch": "workbench/failed-toggle",
+            "files_sha256": "f2c30aa3ad27e83fbd915e9e8411e5640cd9eff97e099fce69993d923e453c48",
+            "message": "Reports: the failed list opens by itself and folds with words"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261103135810-2c9f62"
+}

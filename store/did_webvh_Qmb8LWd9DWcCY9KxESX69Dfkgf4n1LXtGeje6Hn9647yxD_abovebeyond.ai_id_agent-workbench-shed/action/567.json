@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dca40158305eeac025cd4a5cd4bf81e1f463fd0d",
+            "branch": "workbench/carpass-chip-says-where",
+            "files_sha256": "77e3e3c97134ddb898d14a381fd93e2864ec8059471809fd1d2c98a7d604cdf8",
+            "message": "Say that the Car-Pass chip opens at Car-Pass when there is no PDF"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261103135106-a65f9a"
+}

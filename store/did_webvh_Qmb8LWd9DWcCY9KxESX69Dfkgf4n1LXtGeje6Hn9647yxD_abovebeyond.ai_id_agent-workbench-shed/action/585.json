@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P2\nSummary: A platform administrator turned on the Okasie link for two dealers and asks whether she still has to pass that on so someone adds the Okasie webhook, or whether she can do it herself now. Today she cannot: nothing in the app creates a webhook receiver.\n\nSource: Portal mail:39.\n\n## What is asked\n\nBefore the migration, every time Okasie was switched on for a dealer, the previous supplier was asked to add a webhook for that dealer. The administrator wants to know whether that is still a manual step after the migration, and if so who does it.\n\n## What the code says\n\n- Okasie is a direct portal (`HexonLinks::DIRECT_CODES`): Hexon does not carry it. Okasie hears about a car through a dealer-bound row in `webhooks` (R S2-10.7) and then fetches the sheet through the partner API with a token of that dealer (R S2-10.8). As a fallback it reads `GET vehicles?type=portals` every quarter of an hour (docs/api/partner-api.md).\n- Rows in `webhooks` and `webhook_fields` are only ever created by hand. There is no `Webhook::create` anywhere in `app/`, and the Koppelingen panel (`IntegrationStatus`) only reads them.\n- So switching Okasie on for a dealer does not add the receiver. Until someone with database access adds the row, the dealer gets no per-change webhook, and Okasie only sees changes through its quarter-hour read (if it holds a token for that dealer).\n\n## The answer, and what could follow\n\nToday the answer is: yes, it still has to be passed on, and the row is added by hand on production.\n\nThe fix that makes it self-serve: switching the Okasie portal on for a dealer creates (or restores) that dealer's Okasie receiver with the same fields as the existing rows, and switching it off soft-deletes it (R S2-10.13). Whether that can be built depends on one fact only production shows: whether the eight existing Okasie rows share one URL, or carry a dealer-specific key that Okasie issues. In the second case the key has to come from Okasie and the screen needs a field for it.\n\nOpen as well: how Okasie gets the dealer's API token (one dealer has a token but no webhook row).\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P2"
+            ],
+            "title": "Okasie webhook for a dealer: still added by hand, no way for an administrator to do it"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261103161352-575147"
+}

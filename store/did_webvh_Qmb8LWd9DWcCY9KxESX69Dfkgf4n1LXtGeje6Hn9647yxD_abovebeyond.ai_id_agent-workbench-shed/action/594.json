@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:39",
+            "note": "Issue #1068. Okasie leest zelf (node, ~7x/dag) voor de 8 gekende garages, webhooks staan sinds maart uit en zijn niet nodig. Voor 256 en 444 leest Okasie niets: Okasie heeft hun API-token nog niet. Wie bezorgt het, en antwoorden aan Ilse.",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261103164211-5e2ddb"
+}

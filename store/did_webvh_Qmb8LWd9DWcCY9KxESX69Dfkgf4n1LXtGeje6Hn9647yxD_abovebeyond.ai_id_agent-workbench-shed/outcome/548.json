@@ -1,0 +1,16 @@
+{
+    "action": "179d28de683de60d7680c54d7397d73f",
+    "effect": {
+        "detail": {
+            "base": "8f69a3dabf86470abed68f89a99b41a3b362cfcd",
+            "branch": "workbench/carpass-already-registered",
+            "commit": "cee48d3b3d32697f66779b7f3141bc0db79865b1",
+            "files": 16,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 546,
+    "verdict": "ALLOW"
+}

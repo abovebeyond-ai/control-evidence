@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Refs #658\n\n## Why\n\nSince #1065, the Car-Pass chip of a car without a stored PDF opens the report at Car-Pass, the public link in `carpass_id`. Before, it gave a 404. The chip still looks the same as the one that opens a PDF, so a dealer who expects a PDF lands on another site without warning. The sheet had two smaller gaps:\n- After a confirmed unknown chassis number, the history said \"PDF\" next to a report that has no file.\n- A car whose Car-Pass is only a link has no registration to list, so the sheet said nothing about where its report is.\n\n## What changes\n\n- **The chip in the list** gets a small arrow pointing outward, and the hint \"Bekijk bij Car-Pass\", when the car has a link and no stored report. A car with a PDF keeps its chip as it was. So does every car when the list cannot tell, for example on the classic list.\n- **The list asks this once per page**, and only for the cars whose chip is a link: `CarpassLink::withStoredReport`. The query reads only `vehicle_id`, never the report rows themselves, which carry the PDF in base64. A page without such cars asks nothing, so the issue state still costs one query (`CarpassIssueChipTest`).\n- **The history on the sheet** marks a report without a file (`CarpassHistory` adds `file`) and shows \"Bekijk bij Car-Pass\" with the arrow instead of the PDF icon.\n- **A sheet of a car with only a link** gets one line that says where the report is, with the same link.\n- New words are in nl, fr, en and de. Rule R S3-4.8 now describes this.\n\n## Tests\n\n- `TheCarpassChipSaysWhereItOpensTest`, 4 tests:\n  - the chip in its three states: link only, with a PDF, and unknown;\n  - one query per page, which never reads `data`;\n  - the sheet for a report without a file, a car with only a link, and a car with a PDF;\n  - the new words in four languages.\n- Locally: PHPStan, pint on the new test, and the Car-Pass, list and CSS tests pass. In the full suite, the only failure is `APhotoWithoutAForegroundIsNotAFaultTest`, which also fails on this workbench without this change and passed in CI on #1064 and #1065.\n",
+            "branch": "workbench/carpass-chip-says-where",
+            "title": "Say that the Car-Pass chip opens at Car-Pass when there is no PDF"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261103135106-a65f9a"
+}

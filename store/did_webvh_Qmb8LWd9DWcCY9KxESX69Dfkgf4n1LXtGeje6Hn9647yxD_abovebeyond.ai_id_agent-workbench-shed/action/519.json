@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "More than three failing sources (on, two or more failures in a row) did two things in the supervisor: one extra worker, and scouting doubled (`scoutBoost` 2.0). Both assumed the scout repairs failing sources. It does not: it proposes new addresses, and unchecked proposals were where most of the failing sources came from (404s and login walls approved from the scout). With 41 failing on 2026-11-03 the boost was on, so the problem fed itself, and the extra worker spent Claude calls on a job the collector does with none.\n\n## What changes\n- `packages/engine/supervisor-decide.mjs`: `brokenSources` no longer adds to the worker target or sets `scoutBoost`. The collector still parks failing sources (`parkIfFailing`, #416 and #417).\n- `brokenSources` stays measured and shown on the Overview; it only stops steering.\n\n## Tests\n`test/supervisor-decide.test.mjs`: 41 failing sources give the same target and a `scoutBoost` of 1. Full suite 1565 of 1571; the 6 are report-render, which needs pdftoppm.\n",
+            "branch": "workbench/scout-loop",
+            "title": "Failing sources no longer add a worker or double scouting"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261103102238-a732ad"
+}

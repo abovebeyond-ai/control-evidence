@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Refs #658\n\n## What was wrong\n\nA car with a Car-Pass link but no stored PDF shows the \"Car-Pass\" chip in the list. A click on that chip gave a 404, \"no PDF\". Such a car comes from one of three places:\n- a partner (Hexon) that sends `main.carpass` (R P3-2.6, R P3-2.14);\n- a link the dealer pasted after Car-Pass issue 150 (R S3-3.10, #1064);\n- a confirmed unknown chassis number, where Car-Pass returns a public URL without a file (R S3-8.1).\n\nTwo cars of one garage became such cars today, so the dead end is no longer rare.\n\nIn the third case the click did not even give a 404. Car-Pass stores that report without a `file` key. `getPdf` read `$data?->file` on the right of `??`, which reads a missing property, so the click gave a **500**.\n\n## What changes\n\n- **The chip opens the report at Car-Pass** (`CarpassController::getPdf`, R S3-4.8). When there is no stored PDF, or the success row carries no readable file, the route redirects to the car's `carpass_id`. Only a link of a Car-Pass report is followed (`CarpassLink::normalize`); any other link stays a 404. A PDF that exists still wins (R S3-4.2).\n- **No more 500 on a row without `file`.** The file is read in one `??` chain. Rewriting that line removes one entry from `phpstan-baseline.neon`.\n\n## Not in this change\n\n#658 asks for the PDF itself on the sheet of a car that came in through Hexon. The platform still has no PDF for such a car, because only the garage's own Car-Pass account can fetch it. This change opens the public report instead, so the issue stays open.\n\n## Tests\n\n- `CarpassPdfResponseTest` has two new tests: a car with only a link opens the report, both without a success row and with a success row that has no file; and a link outside Car-Pass, or a row without `file` and no usable link, is a 404 and not a 500. The first fails on `main`, with a 500 on the row without `file`.\n- PHPStan and the rule tests pass. In the full suite locally, the only failure is `APhotoWithoutAForegroundIsNotAFaultTest`. It also fails here without this change, and it passed in CI on #1064.\n",
+            "branch": "workbench/carpass-chip-opens-link",
+            "title": "Open the Car-Pass report when a car has a link but no stored PDF"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261103131119-2014e3"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "500ad7e75be0c62a7b014fcc3a2f385e",
+    "effect": {
+        "detail": {
+            "base": "968f786b41e6e05c2bd0467f0421cdd244eab353",
+            "branch": "workbench/carpass-link-expires",
+            "commit": "f181cf7c161d235a98bc1b9c1ce2bddafefb04a1",
+            "files": 12,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 579,
+    "verdict": "ALLOW"
+}

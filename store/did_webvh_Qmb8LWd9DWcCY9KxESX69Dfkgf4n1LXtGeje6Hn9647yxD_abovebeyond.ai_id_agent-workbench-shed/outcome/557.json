@@ -1,0 +1,16 @@
+{
+    "action": "a0744d4da227d0cc670dbdf64ae8b3ad",
+    "effect": {
+        "detail": {
+            "base": "030004cd9aba3c9f947a97ea94bd63089fa03108",
+            "branch": "workbench/carpass-chip-opens-link",
+            "commit": "6215e1a8e9bbf6a624d46d7049d829601bb5ec25",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 555,
+    "verdict": "ALLOW"
+}

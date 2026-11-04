@@ -1,18 +1,18 @@
 {
-    "computed_at": "2026-11-03T07:34:34+00:00",
+    "computed_at": "2026-11-04T07:34:35+00:00",
     "window": {
-        "since": "2026-10-27T07:33:04+00:00",
+        "since": "2026-10-28T07:33:04+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
     "repositories": {
         "Hoet-design/cabrio-eyewear": {
             "dispatches": {
-                "github": 1,
+                "github": 0,
                 "gateway": 0
             },
             "pulls": {
-                "github": 1,
+                "github": 0,
                 "gateway": 0
             }
         },
@@ -29,11 +29,11 @@
         },
         "Hoet-design/hoet-eyewear": {
             "dispatches": {
-                "github": 1,
+                "github": 0,
                 "gateway": 0
             },
             "pulls": {
-                "github": 1,
+                "github": 0,
                 "gateway": 0
             }
         },
@@ -74,7 +74,7 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 3,
+                "github": 2,
                 "gateway": 2
             }
         },
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 29,
-                "gateway": 17
+                "github": 28,
+                "gateway": 20
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,7 +115,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 14,
+                "github": 13,
                 "gateway": 11
             }
         },
@@ -187,7 +187,7 @@
             },
             "pulls": {
                 "github": 8,
-                "gateway": 3
+                "gateway": 7
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -251,7 +251,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
+                "github": 0,
                 "gateway": 0
             }
         },
@@ -273,7 +273,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 8,
+                "github": 1,
                 "gateway": 0
             }
         },
@@ -284,7 +284,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
+                "github": 0,
                 "gateway": 0
             }
         },
@@ -317,8 +317,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 20,
-                "gateway": 13
+                "github": 19,
+                "gateway": 15
             }
         },
         "Trendwolves/gentells-standard": {
@@ -328,7 +328,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
+                "github": 0,
                 "gateway": 0
             }
         },
@@ -777,19 +777,11 @@
         }
     },
     "unexplained": [
-        "Hoet-design/cabrio-eyewear: 1 dispatches on GitHub, 0 performed by the gateway",
-        "Hoet-design/cabrio-eyewear: 1 pulls on GitHub, 0 performed by the gateway",
-        "Hoet-design/hoet-eyewear: 1 dispatches on GitHub, 0 performed by the gateway",
-        "Hoet-design/hoet-eyewear: 1 pulls on GitHub, 0 performed by the gateway",
-        "ShaneDeconinck/naviskore: 3 pulls on GitHub, 2 performed by the gateway",
-        "Trendwolves/gentells-pipeline: 29 pulls on GitHub, 17 performed by the gateway",
-        "Trendwolves/gentells-site: 14 pulls on GitHub, 11 performed by the gateway",
-        "stocklistdealer-eu/platform: 8 pulls on GitHub, 3 performed by the gateway",
-        "ShaneDeconinck/elisabethdevestele: 2 pulls on GitHub, 0 performed by the gateway",
-        "ShaneDeconinck/schoutteet: 8 pulls on GitHub, 0 performed by the gateway",
-        "ShaneDeconinck/schoutteet-sanity: 3 pulls on GitHub, 0 performed by the gateway",
-        "Trendwolves/gentells-dashboard: 20 pulls on GitHub, 13 performed by the gateway",
-        "Trendwolves/gentells-standard: 1 pulls on GitHub, 0 performed by the gateway",
+        "Trendwolves/gentells-pipeline: 28 pulls on GitHub, 20 performed by the gateway",
+        "Trendwolves/gentells-site: 13 pulls on GitHub, 11 performed by the gateway",
+        "stocklistdealer-eu/platform: 8 pulls on GitHub, 7 performed by the gateway",
+        "ShaneDeconinck/schoutteet: 1 pulls on GitHub, 0 performed by the gateway",
+        "Trendwolves/gentells-dashboard: 19 pulls on GitHub, 15 performed by the gateway",
         "abovebeyond-ai/control: 8 pulls on GitHub, 3 performed by the gateway",
         "abovebeyond-ai/elixir: 2 pulls on GitHub, 1 performed by the gateway",
         "abovebeyond-ai/portal-cli: 4 pulls on GitHub, 1 performed by the gateway"

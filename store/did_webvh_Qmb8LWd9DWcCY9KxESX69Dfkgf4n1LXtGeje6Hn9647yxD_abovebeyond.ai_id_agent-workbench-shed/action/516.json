@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d69259cff84e3ea421da1f96196e74b3a42018ed",
+            "branch": "workbench/scout-loop",
+            "files_sha256": "091b87681c2228fc24b11bd7ae3e69a59be0b464ca330034e78d589f19442afe",
+            "message": "Failing sources no longer add a worker or double scouting"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261103102238-a732ad"
+}
