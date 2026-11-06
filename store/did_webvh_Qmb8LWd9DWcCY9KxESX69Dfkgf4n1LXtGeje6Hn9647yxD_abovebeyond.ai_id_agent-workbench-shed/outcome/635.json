@@ -1,0 +1,16 @@
+{
+    "action": "f7bca027efc290d5a84bf7335f259d5e",
+    "effect": {
+        "detail": {
+            "base": "9a999ea719a05525eff078cabd5728d59b1d7d13",
+            "branch": "workbench/studio-preview-and-source-images-2",
+            "commit": "ca422815a11a662db9216ee6b16b3745e25a6bea",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 633,
+    "verdict": "ALLOW"
+}

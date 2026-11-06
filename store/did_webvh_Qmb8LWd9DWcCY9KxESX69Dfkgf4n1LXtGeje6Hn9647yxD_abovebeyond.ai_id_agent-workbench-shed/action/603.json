@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "42b8b0ac86e5142b0671d8b0532a0f95b1dcb732",
+            "branch": "workbench/guilherme-feedback-pipeline",
+            "files_sha256": "1acd0102b19f5d89004ee181e4ca083500aeca05fbd72d9fad5af88734a6899c",
+            "message": "Preview links for drafts, and images copied from a piece's sources\n\nImages from the sources. POST /articles/:id/images/from-source {url}: only an image the piece's cited\nsignals carry (the list the cover picker offers), fetched from the public web\nonly (assertPublic, redirects checked one by one), an image type only, at most\n8 MB. The copy lands in store/uploads like any body image and in the piece's\nimage pool with article_images.credit (source name, signal, its page, the\nimage's own address); asked again it returns the same copy. The cover picker\noffers the copy as one of the piece's own images instead of the original.\n\nPreview links. POST /articles/:id/preview-link (anyone who may see the piece, posts only)\nmakes a random token, keeps only its SHA-256 with the piece and an expiry of 30\nminutes (article_preview_links, core/site-preview.mjs), and answers the site's\n/preview/<token> address. GET /internal/projection/preview/:token, behind\nPROJECTION_TOKEN like every projection read, gives the site the piece in the\nshape of a published article (projectedArticle, now shared with the article\nread), 404 for an unknown link and 410 for one that ran out. The site has no\nother way to a draft: the manifest it reconciles from still lists published\nposts only.\n\nPUBLIC_SITE_BASE sets the site's address (default https://gentells.com)."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261105083500-0c108c"
+}

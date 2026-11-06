@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What the editor ran into\n\nThere was no way to see a post as gentells.com shows it before publishing. The Studio's \"As the site shows it\" view is its own rendering, a second imitation of the site's page. Pictures in the text could only be uploaded, while the cover could already pick from the images the cited sources carry.\n\n## What changes\n\n**Preview links.** `POST /articles/:id/preview-link`, for anyone who may see the piece, posts only. It makes a random 24-byte token, stores only its SHA-256 with the piece and an expiry of 30 minutes (`article_preview_links`, `core/site-preview.mjs`), and returns the site's `/preview/<token>` address (`PUBLIC_SITE_BASE`, default https://gentells.com). `GET /internal/projection/preview/:token` sits behind `PROJECTION_TOKEN` like every projection read. It returns the piece in the shape of a published article (`projectedArticle`, now shared with the article read), 404 for an unknown link and 410 for one that ran out. The manifest the site reconciles from still lists published posts only.\n\n**Images from the sources.** `POST /articles/:id/images/from-source {url}` copies one of the piece's source images into the uploads and adds it to the piece's image pool with its credit: the source name, the signal and its page, and the image's own address (`article_images.credit`, a new nullable column). The image must be a candidate of the piece's cited signals, the same list the cover offers. The fetch is public web only (`assertPublic`, every redirect checked), image types only, at most 8 MB. Asking again returns the same copy. The cover picker offers the copy as one of the piece's own images instead of the hotlinked original.\n\n## Checked\n\n- `test/site-preview.test.mjs` and `test/source-images.test.mjs` are new; the full suite passes apart from `report-render`, which needs `pdftoppm` and that is not installed on the workbench.\n- Local run on a copy of the production database: a link made in the Studio opened on a local gentells-site; an unknown token gave 404; a Wikimedia Commons image was copied, placed and credited.\n\nMerge first: the Studio and the site call these routes.\n\n",
+            "branch": "workbench/guilherme-feedback-pipeline",
+            "title": "Preview links for drafts, and images copied from a piece's sources"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261105083500-0c108c"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abdf3d1d5a6c1a37070f7ef32e9c668f4a8690e3",
+            "branch": "workbench/self-serve-billing",
+            "files_sha256": "9af43987db46ae0baea1fb2bcdf41458433c7f089ef1776e65094c9ab5f892d3",
+            "message": "Sell to organisations: billing details, VAT per buyer, payments recorded for invoicing"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261105083746-e8736f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9e547ae7cdb6a8a95ab109049d1e3f32c8504583",
+            "branch": "workbench/studio-preview-and-source-images",
+            "files_sha256": "9a598db26763f554ed6759ccf237e32a50cd6599935417d307d1800cc9fe42d5",
+            "message": "Preview in the editor bar, and images from the sources in the text\n\nFrom the sources. The + menu of the text offers From the sources next to Image: the same list\nand the same usage-rights warning as the cover. A pick is copied into the\nuploads by the pipeline (POST /articles/:id/images/from-source) and placed as a\nbody image with an empty caption; under it the editor shows which of the\npiece's sources it came from. Needs the pipeline route; without it the copy is\nrefused and nothing is placed.\n\nPreview. Saves what is on screen, asks the pipeline for a preview link\n(POST /articles/:id/preview-link) and opens it in a new tab, which is opened on\nthe click so the browser does not block it. Posts only, once something is\nwritten. Needs the pipeline route and the site's /preview/{token}."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261105083543-8137ed"
+}

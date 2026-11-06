@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:40",
+            "note": "Points 1 and 2 proposed as gentells-studio #73. Points 3 and 4: gentells-pipeline #420 and gentells-studio #74 proposed; the site PR waits for admission on gentells. Reply drafted, not sent.",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261105083607-8cc359"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:40",
+            "note": "Points 1 and 2: gentells-studio #73. Points 3 and 4: gentells-pipeline #420, gentells-site #248, gentells-studio #74; merge #73, then #420, #248, #74. Reply drafted in reply-to-guilherme.md, not sent.",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-studio/pull/73"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261105083702-751b5d"
+}

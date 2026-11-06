@@ -1,0 +1,16 @@
+{
+    "action": "3de983adbe130e4f4e074ca436b69d63",
+    "effect": {
+        "detail": {
+            "base": "abdf3d1d5a6c1a37070f7ef32e9c668f4a8690e3",
+            "branch": "workbench/self-serve-billing",
+            "commit": "dd4293f357d3e8c81566fe007d5fcdff56355b8a",
+            "files": 30,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 627,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9e547ae7cdb6a8a95ab109049d1e3f32c8504583",
+            "branch": "workbench/guilherme-feedback-studio",
+            "files_sha256": "eed39deaf3a18fbf257e86b4b2320c69f8d27375f5f5f8b95c7f3dbd1e5ebbe3",
+            "message": "Headings end at their line in the editor; a new post opens laid out in its sections\n\nA heading written with its text on the next line, \"## Why It Matters\" and the\nparagraph under it without a blank line, was drawn as one large heading holding\nthe whole paragraph, and its raw markdown came back on focus. gentells.com reads\nthe same body as CommonMark: a heading line, then a paragraph. The editor now\ncuts a paragraph into blocks where CommonMark does (blocksOf in piece.js), and a\nparagraph left with a heading line inside it is split into the heading and its\ntext, so the stored paragraphs match what the site shows and the pipeline counts.\n\nA new post opens with the sections every live post uses, in order and spelled as\non gentells.com: Signal, Why It Matters, Examples, How To Activate It with\nMonday: and This quarter: under it. They are laid out by the editor over an empty\nbody (postLayout) and stored only once something is written under them; a\nsection still exactly as laid out with nothing under it is left out on save\n(withoutEmptySections). An untouched post therefore stays an empty piece for\npieceStage, the empty-piece opening, autosave, the desk and the claim check, and\nno empty heading reaches the site. Headings no longer count as writing in\npieceStage. Articles and decks are unchanged. The template is POST_SECTIONS in\npiece.js, the one place to change the structure."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261105083421-7d5b4a"
+}

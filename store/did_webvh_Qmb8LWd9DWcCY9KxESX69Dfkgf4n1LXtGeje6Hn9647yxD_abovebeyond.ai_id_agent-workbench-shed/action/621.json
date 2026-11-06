@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What changes\n\n`GET /preview/{token}` exchanges the token with the pipeline and renders the draft with `pages.article`, as a member reads it, under a bar saying it is a preview that is not published, and until when the link works. The payload goes through the same mapping as a published post (`Projection::articleAttributes`, split out of `upsertArticle`) and is never saved: no Article row, no tagging record.\n\nWhat keeps a draft private:\n- The token is the only way in. It is 32 characters, lives half an hour, and the pipeline knows it only as a hash. A malformed token never leaves the site. The route is throttled.\n- `X-Robots-Tag: noindex, nofollow, noarchive`, `Cache-Control: no-store`, `Referrer-Policy: no-referrer`.\n- A robots meta instead of a canonical, no Article schema, no feedback strip.\n- `robots.txt` disallows `/preview/`.\n- Open past the holding page (`PreLaunch`), since the link is its own lock.\n- An ended link and one that never existed show the same page (404).\n\n## Checked\n\n- `tests/Feature/DraftPreviewTest.php` is new, 6 tests. The full suite passes apart from `BuildStampTest`, which cannot read the branch ref from a git worktree.\n- Local render against the local pipeline: headings and the picture in the text as on a live post; an ended link shows the ended page.\n\nMerge after Trendwolves/gentells-pipeline#420, which serves the preview to the site, and before Trendwolves/gentells-studio#74, which adds the Preview button.\n\n",
+            "branch": "workbench/draft-preview",
+            "title": "A draft from the Studio on its real article page, behind a link that runs out"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261105083623-55058d"
+}

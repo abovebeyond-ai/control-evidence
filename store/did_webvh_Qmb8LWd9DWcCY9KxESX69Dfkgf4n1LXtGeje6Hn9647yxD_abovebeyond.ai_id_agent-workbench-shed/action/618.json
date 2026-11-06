@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "abdf3d1d5a6c1a37070f7ef32e9c668f4a8690e3",
+            "branch": "workbench/draft-preview",
+            "files_sha256": "7b4eb60f3cc0d88e951537bad459498276c598e2de02aaf7b46881def921262b",
+            "message": "A draft from the Studio on its real article page, behind a link that runs out\n\nGET /preview/{token} exchanges the token with the pipeline\n(GET /internal/projection/preview/:token, the projection channel and token the\nsite already uses) and renders the draft with pages.article as a member reads\nit. The payload is mapped by the same code as a published post\n(Projection::articleAttributes) but never saved: no Article row, no tagging\nrecord.\n\nWhat keeps it private: the token is 32 random characters, valid half an hour,\nknown to the pipeline only as a hash; a malformed token never leaves the site;\nthe route is throttled; the page sends X-Robots-Tag noindex, Cache-Control\nno-store and Referrer-Policy no-referrer, carries a robots meta instead of a\ncanonical, no Article schema and no feedback strip; robots.txt disallows\n/preview/. It is open past the holding page, since the link is its own lock. A\nlink that ended and one that never was show the same page (404)."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261105083623-55058d"
+}
