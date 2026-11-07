@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a8c179aeeac2de78e5c1bf33bab3343bc8e4ffd7",
+            "branch": "workbench/communities-in-menu",
+            "files_sha256": "0b56cd2764ec8833dae88e87abb9edc74d546158fa8c8ea920aff0caf041fb3f",
+            "message": "Communities in the menu and footer, Alpha in the register box\n\nKUBO CyberSec exists, so the homepage line that listed community courses as\ncoming next now points to KUBO communities as they are, starting with KUBO\nCyberSec in The Gambia. Open learning resources keep their Soon label. Same in\nnl and fr.\n\nCommunities joins the About group in the menu, after Deployments, and the About\ncolumn in the footer, in all three languages. It shows as active on the\ncommunity pages too.\n\nWith the extra link the French bar no longer fit: the Commencer button was cut\noff between 1341 and 1420 px and again between 1561 and about 1760 px. The\nhamburger now takes over at 1420 px instead of 1340, the tighter spacing runs up\nto 1700 px instead of 1560, and the bar may grow to 1640 px instead of 1430.\nMeasured in en, nl and fr from 1420 to 2560 px: every item fits.\n\nThe register box on /communities/cybersec now shows who you message: Alpha Omar\nBah's photo, name and role as on the team page, above \"Send a message to\nAlpha\". The photo is the team portrait, cropped closer to the face, as webp at\n160 and 288 px with explicit dimensions and alt text in each language. It goes\nwith the register box, so it leaves the page after the event as well."
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261106173115-02eb20"
+}

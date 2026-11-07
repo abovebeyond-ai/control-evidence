@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1f8858d881c8840f61b27071f2850a7282867ccb",
+            "branch": "workbench/projection-published-only",
+            "files_sha256": "a6931cb8a2d4a00361d03e7e51f891237fa1ad98e08537e355adff9bc6a6b0e7",
+            "message": "The projection read by id serves published posts only\n\nGET /internal/projection/articles/:id returned any piece by its id, drafts\nincluded, to whoever held PROJECTION_TOKEN. It now answers what the manifest\nlists, a published post, and 404 for anything else, which the site already\nreads as gone. A draft reaches the site only through a preview link.\n\nThis also closes a gap in the site's reconcile: it upserts what comes back for\nan id the manifest listed a moment earlier, so a post unpublished in between\nwas written back as a public copy."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261106173356-fa4464"
+}

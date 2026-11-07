@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follows #1070.\n\nEvery way a vehicle gets its make and model picks from our list, and none of them adds a row:\n\n- the form offers the active models of the chosen make;\n- the chassis lookup matches the returned name against our rows and leaves the model empty when nothing matches (R S1-2.8);\n- the partner API takes our ids, not names (R P3-2.1).\n\nThe list comes from Hexon through `stocklist:hexon_import`, which was never scheduled. So a model Hexon added stayed missing until someone ran the import by hand, and a dealer could not enter it. Rule R S1-3.1 said the list was updated automatically. On 6 November 2026 a garage could not enter a BAIC BJ60: BAIC lacked 11 of Hexon's 15 models.\n\n**What changes**\n- `stocklist:hexon_import --new-models`: only the models Hexon has and we lack, under makes we have and that are switched on. It never writes a make. A new make, or a make someone switched off, stays a decision: the run counts them in a closing line (\"Left for a person: \u2026\"). It logs what it created per make (`Hexon import: created`), because no one reads the output of a scheduled run. It excludes `--make` and `--all` and is dry without `--apply`, like the others.\n- `routes/console.php`: `stocklist:hexon_import --new-models --apply`, Mondays 06:20 Europe/Brussels, `environments(['production'])` (the list is an outbound read; preview and staging run this file on a copy of production), `withoutOverlapping`.\n- R S1-3.1 now says what happens and when; R S1-3.24 describes `--new-models`.\n\n**Not in this PR**: `real-garant:mapping` is not scheduled after the import. It writes at once, has no dry run and no scope, so a new model still gets its RealGarant code by hand (the import's output already says so).\n\n**Tests**\n- `HexonReferenceImportTest`:\n  - a switched-on make gets its missing model;\n  - a switched-off make and the new makes are left alone and counted;\n  - the log line is written;\n  - a second week creates nothing;\n  - the dry run writes nothing, and `--new-models` with `--all` or `--make` is refused.\n- `ScheduleTest` pins the entry: weekly on Monday at 06:20, Brussels time, production only, `--new-models --apply` and not `--all`.\n- Full suite: 3212 tests OK. PHPStan is clean on the command. Pint passes on both test files; the command and `routes/console.php` already fail Pint on main (old style), and platform CI checks only added files.\n",
+            "branch": "workbench/hexon-weekly-models",
+            "title": "New models from Hexon arrive weekly: hexon_import --new-models on the schedule"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261106173004-4bdba6"
+}

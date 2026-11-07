@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #12, now that KUBO CyberSec is live on the site.\n\n## What\n\n- **Menu and footer:** Communities joins the About group in the menu, after Deployments, and the About column in the footer, in en, nl and fr. It shows as active on the community pages too.\n- **Homepage:** the line under the three product cards listed community courses as coming next, with a Soon label. A community exists now, so it reads \"Beyond the school walls: KUBO communities, starting with KUBO CyberSec in The Gambia.\" Open learning resources keep their Soon label. Same in nl and fr.\n- **Register box on /communities/cybersec:** shows who you message, with Alpha Omar Bah's photo, name and role as on the team page, above \"Send a message to Alpha\". The photo is the team portrait cropped closer to the face, webp at 160 and 288 px, explicit dimensions, alt text in each language. It belongs to the register box, so it leaves the page after the event along with the box.\n\n## Menu bar breakpoints\n\nWith the extra link the French bar no longer fit: the Commencer button was cut off between 1341 and 1420 px wide, and again between 1561 and about 1760 px. Measured content widths: French needs about 1420 px with the tight spacing and about 1620 px at full size. So in `global.css`:\n\n- the hamburger takes over at 1420 px instead of 1340 px,\n- the tighter spacing runs up to 1700 px instead of 1560 px (gap 16 px instead of 18 px),\n- the bar may grow to 1640 px instead of 1430 px.\n\nSide effect: windows between 1341 and 1420 px wide now get the hamburger menu in every language.\n\n## Checks\n\n- Tests: 25 pass. Build: clean. `npm run check:built`: no contact number in 80 text files.\n- Bar measured in en, nl and fr at widths from 1420 to 2560 px: every item fits, nothing overlaps or is cut off.\n- Looked at by screenshot: phone menu, the bar at 1421 and 1701 px, the homepage line on desktop and phone, the footer, and the register box in all three languages. No horizontal overflow.\n",
+            "branch": "workbench/communities-in-menu",
+            "title": "Communities in the menu and footer, Alpha in the register box"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261106173115-02eb20"
+}

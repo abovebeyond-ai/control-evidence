@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "febd3c8f20070c8a82575c172ce08cb5b28d9b19",
+            "branch": "workbench/symfony-8-1-11",
+            "files_sha256": "951138de721c1a9456cdd1693920ece7d42e565a437be470f76df9e391a73947",
+            "message": "Symfony 8.1.11: clear the ten advisories of 4 November 2026"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261106174547-c60f78"
+}

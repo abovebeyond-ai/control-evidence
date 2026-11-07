@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "febd3c8f20070c8a82575c172ce08cb5b28d9b19",
+            "branch": "workbench/hexon-weekly-models",
+            "files_sha256": "0eace65a2c72a79b49e9484199414bd6b87cbec08ecf440b7df55c18e395816d",
+            "message": "New models from Hexon arrive weekly: hexon_import --new-models on the schedule"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261106173004-4bdba6"
+}

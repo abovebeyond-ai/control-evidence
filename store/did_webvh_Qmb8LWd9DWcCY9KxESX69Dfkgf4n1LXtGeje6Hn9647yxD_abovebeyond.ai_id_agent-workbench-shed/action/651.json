@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "31205102c9b53ec469f5dea2541f7cd9ae809745",
+            "branch": "workbench/mail-41-anomaly",
+            "files_sha256": "75cf3890b6253e71cb838d6e377d9c7ce75d6925869401571f05c1a528cda82f",
+            "message": "The support bell sends in French: translations reach the script with @js"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261106160138-e9d784"
+}

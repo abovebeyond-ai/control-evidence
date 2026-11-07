@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Since 4 November 2026, `composer audit --locked` (the check \"Dependencies carry no new advisory\") fails on main, and so on every pull request. It reports ten advisories against Symfony 8.1.9 in symfony/filesystem, http-foundation, http-kernel, routing and serializer, all fixed in 8.1.11. #1071 merged with that check red, and #1072 shows the same failure.\n\n**What changes**: only `composer.lock`. The update ran `composer update \"symfony/*\" --with-dependencies`:\n- patch releases within Symfony 8.1: the five affected packages and console, finder, property-access, property-info, translation and type-info go to 8.1.11; the rest go to 8.1.10;\n- the Symfony contracts go to 3.8.1 and the polyfills to 1.43.3;\n- phpstan/phpdoc-parser goes to 2.4.1 (dev only).\n\n`composer.json` and laravel/framework (13.38.0) are untouched.\n\n**Checks**\n- `composer audit --locked`: no advisories.\n- Full suite: 3209 tests OK.\n- PHPStan: no errors.\n\nMerging this turns the advisory check green on #1072 and on later pull requests.\n",
+            "branch": "workbench/symfony-8-1-11",
+            "title": "Symfony 8.1.11: clear the ten advisories of 4 November 2026"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261106174547-c60f78"
+}

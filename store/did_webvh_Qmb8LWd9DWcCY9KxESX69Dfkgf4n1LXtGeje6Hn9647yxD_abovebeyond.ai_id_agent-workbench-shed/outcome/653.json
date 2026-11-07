@@ -1,0 +1,16 @@
+{
+    "action": "a4d022e0a9007755f26d6e7a5e891fed",
+    "effect": {
+        "detail": {
+            "base": "31205102c9b53ec469f5dea2541f7cd9ae809745",
+            "branch": "workbench/mail-41-anomaly",
+            "commit": "ae65aadc2e2c6ace53b323d1253d8064abc49c23",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 651,
+    "verdict": "ALLOW"
+}

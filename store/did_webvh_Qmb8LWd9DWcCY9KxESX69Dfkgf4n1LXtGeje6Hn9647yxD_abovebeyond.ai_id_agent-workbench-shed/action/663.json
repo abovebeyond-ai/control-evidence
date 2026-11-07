@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5d670fc20c5c39059ff54b7ab360cfb57a18d2cb",
+            "branch": "workbench/cybersec-community",
+            "files_sha256": "b7ee21c6c8b8bea82efa1aeeb820d139854cd5952586203e9b5ce74ee827cc71",
+            "message": "Communities: name KUBO CyberSec, give it a page with its first event\n\n/communities now lists its first community, KUBO CyberSec in The Gambia, with a link\nto its own page, and keeps a card open for the clubs to come. The \"Soon\" label is gone.\n\nThe new page /communities/cybersec (with nl and fr copies) says what the community is,\nwho it is for and how to join, and shows its first event, a Capture the Flag on\nSaturday 14 November 2026, with the facts from the poster, the poster itself (webp at\n848 and 480 px, explicit dimensions, descriptive alt text, a JPG to download), the\ncommunity's sudo ./learn keycap sticker in the header, and how to register. It carries\nschema.org Event data.\n\nThe contact number for registration is kept out of reach of scrapers. It is not in\nthe source or the built site as digits: the page holds an encoded form\n(src/lib/contact.js) and a \"Show number\" button decodes it in the browser on click;\nwithout JS the box points to info@kubo.global. The served poster copies have the\nnumber painted out in the poster's own background, and the alt text refers to the\npage instead. A check over the built site (npm run check:built, now a CI step after\nthe build) fails if any form of the number appears in a page, script, sitemap or\nother text file the site serves; unit tests cover the encoding and the matching.\n\nThe event switches by date: the build decides upcoming or past, and a small inline\nscript checks again in the browser, so after 17:00 on 14 November the registration\nbox gives way to a \"took place\" note even if the site is not rebuilt. A build after\nthe date leaves the registration box, and the encoded number, out of the HTML.\n\nThe page content lives in one component so the event facts cannot drift between the\nthree languages. The nl and fr /communities copies had a closing sentence spliced into\nthe middle of another; that text is replaced by the new card. Eyebrows use a comma\ninstead of a middot."
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261106171333-4c32ff"
+}

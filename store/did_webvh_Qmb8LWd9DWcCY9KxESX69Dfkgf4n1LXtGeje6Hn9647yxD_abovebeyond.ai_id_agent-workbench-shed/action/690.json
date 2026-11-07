@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bbd71df28f701645ed07272516ae3552e1ef438b",
+            "branch": "workbench/post-body-head",
+            "files_sha256": "ed87dc6f80cf6743befc62eac8c5c93c19ac83b4a3a32f5d4bb15d1c5271dfcd",
+            "message": "Posts keep their Signal heading; the teaser counts a glued heading apart\n\nThe repeat strip dropped any leading H1 or H2 and any italic line after it, to\navoid printing the title and standfirst twice. Every post opens with its\n\"## Signal\" section, so every post lost that heading. It now drops a leading\nheading only when it is the title, and an italic line only when it is the dek.\n\nThe teaser split the body at blank lines only, so a heading written with its\ntext on the next line was one paragraph starting with \"#\": kept whole and not\ncounted against the budget, which let that text through to readers the post\nis locked for. It now counts the blocks the page renders, a heading line on\nits own wherever it stands."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261106173417-da081c"
+}

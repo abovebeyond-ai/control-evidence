@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1069\n\nThe support bell's Send button did nothing for French-speaking users. Its `onclick` passed the confirmation text to `custom.sendAnomaly('...')` inside single quotes; Blade escapes the apostrophe as `&#039;`, the browser decodes it back before the handler runs, and the French \"l'objet d'un suivi\" ended the string. The handler was a syntax error, so no request went out. Dutch, English and German have no apostrophe there, which is why the bell kept working in Dutch accounts.\n\n**What changes**\n- `layouts/anomaly/index.blade.php`: the confirmation text goes to the script with `@js(trans(...))`, which quotes it for JavaScript (`'`).\n- `settings/setting/_tabs/options.blade.php`: the reset-option-order button had the same fault in French (`l'affiche`, `l'ordre`); same fix.\n- `TranslationsInClickHandlersTest`: renders the bell in nl, fr, en and de and checks the decoded handler is one JavaScript string; and a guard over every view that fails when a translation with a bare apostrophe sits inside a quoted inline handler. Without the fix both tests fail on exactly these two strings.\n- Rule R P1-6.2 says the button works in every language and names the test.\n\nOther handlers still quote `{{ trans(...) }}` by hand; none of their current translations has a bare apostrophe (`lblItemDupliceren` in French is pre-escaped as `l\\'\u00e9l\u00e9ment`), so they work, and the guard catches the next one. Dynamic values in those handlers (a vehicle name with an apostrophe) are not covered by the guard.\n\n**Tests**: the new test, `RulesIdentityTest`, `CompiledViewsTest`, then the full suite: 3209 tests, OK. Pint passes on the new file.\n\nSource: Portal mail:41.\n",
+            "branch": "workbench/mail-41-anomaly",
+            "title": "The support bell sends in French: translations reach the script with @js"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261106160138-e9d784"
+}

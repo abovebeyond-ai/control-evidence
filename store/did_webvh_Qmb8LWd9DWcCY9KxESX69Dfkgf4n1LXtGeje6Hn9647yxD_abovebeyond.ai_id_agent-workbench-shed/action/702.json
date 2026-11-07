@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "67ace27424719ee56489fc549fd92ae25c679ffd",
+            "branch": "workbench/communities-sticker",
+            "files_sha256": "9fe8e7d6905dc3f476eaec4eb53f7a0cbc19cae7e6eabab0430c386f7e6959b7",
+            "message": "Communities: the KUBO CyberSec card carries the community's sticker\n\nThe card for KUBO CyberSec on /communities (and the nl and fr copies) now shows\nthe sudo ./learn keycap from the community's page, at the top right of the\ncard, slightly tilted like a sticker and straightening on hover (no motion with\nreduced motion). It reuses the 480 px webp already served for the community\npage, with explicit dimensions. The image is decorative there: it sits inside\nthe card's link, whose text already names the community, and the community\npage carries the full description of the sticker, so its alt is empty rather\nthan repeating that inside the link name.\n\nThe card text and the community page's meta description no longer break off\ninto \"Its first event: a ...\" but run on in one sentence: \"..., from first\nsteps to advanced, starting with a Capture the Flag on 14 November 2026 at the\nIT Lab in Bakoteh.\" Same in nl (\"te beginnen met\") and fr (\"en commen\u00e7ant\npar\"). It still holds after the date."
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261106175347-7270ab"
+}

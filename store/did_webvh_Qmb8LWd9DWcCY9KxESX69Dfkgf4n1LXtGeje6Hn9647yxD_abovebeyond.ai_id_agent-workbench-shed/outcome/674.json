@@ -1,0 +1,16 @@
+{
+    "action": "91a215c64b259fe5c494726bb7694dd2",
+    "effect": {
+        "detail": {
+            "base": "febd3c8f20070c8a82575c172ce08cb5b28d9b19",
+            "branch": "workbench/hexon-weekly-models",
+            "commit": "98a3f459fdfccc1f474e33fd43fd030cbbd7557d",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 672,
+    "verdict": "ALLOW"
+}

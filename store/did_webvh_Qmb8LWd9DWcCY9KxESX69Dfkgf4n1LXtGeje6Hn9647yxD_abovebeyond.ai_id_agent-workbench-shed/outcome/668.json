@@ -1,0 +1,16 @@
+{
+    "action": "411db8ca48fa53cf89774778d8d58d6a",
+    "effect": {
+        "detail": {
+            "base": "5d670fc20c5c39059ff54b7ab360cfb57a18d2cb",
+            "branch": "workbench/cybersec-community",
+            "commit": "ab10d3a5a9814eacd91c7dc5ff0d56a91ec4e510",
+            "files": 19,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 666,
+    "verdict": "ALLOW"
+}

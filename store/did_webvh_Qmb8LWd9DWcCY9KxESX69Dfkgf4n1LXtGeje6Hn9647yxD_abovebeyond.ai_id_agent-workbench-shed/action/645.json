@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Add the BAIC BJ60 to the make and model list, so a garage can list one. Hexon already has it.\n\nA garage wants to enter a BAIC BJ60 and cannot pick it. Makes and models come from the Hexon reference list (rule R S1-3.24); the BJ60 is in that list today under BAIC, category AUTO, next to B30, B40 P, B40 PRO, B60, BJ30, BJ40 SE, BJ80, EU5, EU5 PLUS, U5 PLUS, X35, X55, X7 and X75.\n\nNo code change is needed: the import adds it on production, dry first, then for BAIC only:\n\n```\nphp artisan stocklist:hexon_import --make=BAIC\nphp artisan stocklist:hexon_import --make=BAIC --apply\n```\n\nThe apply writes every BAIC model the platform does not have yet (or creates BAIC if it is missing), not only the BJ60; the dry run shows which. The new model has no RealGarant code or system code yet (R S1-3.24), so a BJ60 gets no warranty offer until `real-garant:mapping` fills it.\n\nSource: Portal mail:41.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Add the BAIC BJ60 to the make and model list"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261106160119-9c914e"
+}

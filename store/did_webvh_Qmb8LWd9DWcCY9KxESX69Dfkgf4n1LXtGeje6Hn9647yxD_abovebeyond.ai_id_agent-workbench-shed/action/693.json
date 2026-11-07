@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was wrong\n\n**Every post lost its Signal heading.** `stripRepeatedHeader` exists so a body that repeats the title and standfirst does not print them twice. It dropped any leading H1 or H2, and any italic line after it. Every published post opens with `## Signal` (all 78 in a recent copy of the pipeline database; none starts with its own title), so on every post page and in the app's reading body the first section had no name and its text ran on from the standfirst.\n\n**The teaser let a glued section through.** `teaser()` split the body at blank lines only. A heading written with its text on the next line (`## Why It Matters` and the paragraph right under it) was one \"paragraph\" starting with `#`, which the teaser keeps whole and does not count against its budget. That whole text then went to readers the post is locked for. The page itself renders it as a heading and a paragraph (CommonMark).\n\n## What changes\n\n- A leading H1 or H2 is dropped only when it is the title, and an italic line at the head only when it is the dek, compared without case, punctuation or emphasis.\n- The teaser counts the blocks the page renders: paragraphs at blank lines, and a heading line on its own wherever it stands (`blocks()`).\n\n## Checked\n\n- `tests/Feature/PostBodyHeadTest.php` is new: the Signal heading kept, a real repeat of title and dek still dropped, an italic opening that is not the dek kept, a glued section kept out of the teaser. Three of its four fail on main.\n- The full suite passes apart from `BuildStampTest`, which cannot read the branch ref from a git worktree.\n\nIndependent of the pipeline PR that goes with it; merge in either order.\n\n",
+            "branch": "workbench/post-body-head",
+            "title": "Posts keep their Signal heading; the teaser counts a glued heading apart"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261106173417-da081c"
+}
