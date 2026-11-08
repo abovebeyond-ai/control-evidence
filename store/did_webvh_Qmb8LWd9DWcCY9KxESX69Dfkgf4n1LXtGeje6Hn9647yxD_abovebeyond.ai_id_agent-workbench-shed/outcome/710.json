@@ -1,0 +1,16 @@
+{
+    "action": "a3c19ca27848f4566691f5d5e203884d",
+    "effect": {
+        "detail": {
+            "base": "0751ccc09c08815e72bf792538bc0304349b6d97",
+            "branch": "workbench/realgarant-mapping-live-rows",
+            "commit": "9aa5151d28db69ac86943d497670b8db9d537ce5",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 708,
+    "verdict": "ALLOW"
+}

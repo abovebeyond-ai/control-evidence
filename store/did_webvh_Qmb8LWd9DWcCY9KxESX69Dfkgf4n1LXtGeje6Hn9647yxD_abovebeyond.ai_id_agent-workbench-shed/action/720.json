@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cdf5ebddfbe24fd0d5ecd7c698780afefc2d3ae4",
+            "branch": "workbench/partner-knows-sections",
+            "files_sha256": "6ee98c48247b0a8b710cd8f88c980367708e2f11d63c7bd80e0f52005436389a",
+            "message": "The writing partner writes a post in its sections\n\nA new post opens in the Studio laid out in Signal, Why It Matters, Examples and\nHow To Activate It with Monday: and This quarter: under it, but the writing\npartner still described a post as short paragraphs with a section or two, so\na first draft came in its own headings and had to be re-sectioned by hand.\n\nThe prompt now names the sections in order, spelled as the Studio lays them\nout, says a heading is a line of its own, and that text for a section the\npiece does not have yet starts with its heading. Articles and decks are\nunchanged."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261107120344-1596f2"
+}

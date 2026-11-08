@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was wrong\n\nA new post opens in the Studio laid out in its sections: Signal, Why It Matters, Examples, How To Activate It, with Monday: and This quarter: under it (`POST_SECTIONS` in gentells-studio `src/piece.js`). The writing partner still described a post as \"short paragraphs, a section or two under `## ` headings, and a brand implication\". A first draft it wrote came in headings of its own, beside the layout instead of in it, and the writer had to re-section it by hand.\n\n## What changes\n\nThe post line in `piece-prompt.mjs`:\n- names the sections in order, spelled as the Studio lays them out, with what goes in each, and the Monday: and This quarter: subheadings carrying their move after the colon, as on the live posts;\n- says a heading is a line of its own with a blank line after it, since a heading with its text on the next line is what the editor had trouble with;\n- says text for a section the piece does not have yet starts with that heading, and a first draft is one block per section, which keeps it within the eight blocks a first draft may have.\n\nThe Studio recognises a section by its level and the words its heading starts with, so a draft written this way lands in its place. A comment at the prompt points at `POST_SECTIONS`: a change of structure is an edit in both.\n\nArticles and decks are unchanged.\n\n## Checked\n\n- `test/piece-talk.test.mjs`: every section heading named, in order, as the Studio spells it; the heading-on-its-own-line rule; the article shape untouched. Both new cases fail on main.\n- Full suite: 1591/1591.\n- Not run against the model here. The writer's next first draft in the Studio is the check.\n\nSafe to merge alone; no Studio or site change needed.\n",
+            "branch": "workbench/partner-knows-sections",
+            "title": "The writing partner writes a post in its sections"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261107120344-1596f2"
+}

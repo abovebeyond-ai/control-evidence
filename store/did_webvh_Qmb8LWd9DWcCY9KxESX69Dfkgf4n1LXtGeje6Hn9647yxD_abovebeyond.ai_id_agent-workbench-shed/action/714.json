@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "818274222cd0bb55a9d227e465efd0c40de03cae",
+            "branch": "workbench/merge-makes-and-plus",
+            "files_sha256": "b57d198d12081a9cc102133a67bf93902404c084f56a2c15db923bac05832172",
+            "message": "Two makes that are one merge into one; a plus is part of a model name"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261107100658-2c1085"
+}

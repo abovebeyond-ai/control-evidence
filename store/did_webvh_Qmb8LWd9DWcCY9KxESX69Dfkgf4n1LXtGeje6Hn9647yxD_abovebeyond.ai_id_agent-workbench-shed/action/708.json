@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0751ccc09c08815e72bf792538bc0304349b6d97",
+            "branch": "workbench/realgarant-mapping-live-rows",
+            "files_sha256": "fc29392d938f3d7965f801a993b492b54ee3fd9a2e92742eb35860c8c7fd2eb6",
+            "message": "A RealGarant code lands on the live model; a person can merge two names into one"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261107090623-51fc3c"
+}
