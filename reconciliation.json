@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-08T07:34:28+00:00",
+    "computed_at": "2026-11-09T07:34:26+00:00",
     "window": {
-        "since": "2026-11-01T07:33:04+00:00",
+        "since": "2026-11-02T07:33:04+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -104,8 +104,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 9,
-                "gateway": 9
+                "github": 7,
+                "gateway": 7
             }
         },
         "Trendwolves/gentells-site": {
@@ -317,8 +317,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 5,
-                "gateway": 5
+                "github": 3,
+                "gateway": 3
             }
         },
         "Trendwolves/gentells-standard": {
