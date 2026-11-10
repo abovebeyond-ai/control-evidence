@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Mollie asks merchants to show an email address and a phone number on the site itself, not only in the terms. info@trendwolves.com appeared only in the terms, and no phone number appeared anywhere.\n\n## What changes\n\n- **One place for the company details:** `config('gentells.company')` holds the name, address, VAT number, email and phone, taken from trendwolves.com. They were typed out separately in the footer, the cover, the about page and the structured data.\n- **`<x-company-line />`** shows them in one line, with the email and phone as `mailto:` and `tel:` links. It is used in the site footer, which said only \"Gentells by Trendwolves\" and the street, and in the cover footer. On the cover the company line and the links now sit on two rows, so they no longer wrap into each other.\n- **Contact page:** a block \"Or call or mail us\" above \"Or find it yourself\" lists email, phone, address and VAT number.\n- **Structured data:** the organisation now carries `email` and `telephone`.\n\n## Tests\n\n- New `PreLaunchTest` case: the email, phone and VAT number appear on the home, pricing, contact and terms pages, with the cover on as well as off.\n- Full suite: 591 of 592 pass. The one failure is `BuildStampTest`, which fails in every worktree because it reads the checkout's own build stamp.\n- Checked by eye: the contact page, and the cover footer at desktop width.\n",
+            "branch": "workbench/seller-contact-visible",
+            "title": "Show the seller's email and phone on every page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261109101112-d64be0"
+}

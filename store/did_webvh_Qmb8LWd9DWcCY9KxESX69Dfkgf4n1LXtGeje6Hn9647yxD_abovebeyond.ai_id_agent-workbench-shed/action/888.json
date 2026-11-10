@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:44",
+            "note": "Investigating the daily digest counting a waiting transport while the transports page shows none",
+            "state": "in-progress"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261109142606-79bb3d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": "bd11f701ed5969216a0e8a694aee3724",
+    "effect": {
+        "detail": {
+            "only": "site",
+            "project": "cafe-t-hoekske-website",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 798,
+    "verdict": "ALLOW"
+}

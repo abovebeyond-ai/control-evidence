@@ -1,0 +1,16 @@
+{
+    "action": "195249c94844714b1f2ba10a1fce14f6",
+    "effect": {
+        "detail": {
+            "base": "f7d2089ad28ebbbe39d3f4cb08e4959c744f23f9",
+            "branch": "workbench/seller-contact-visible",
+            "commit": "8a5826af5841d845de03eabfdea2b23aeb9daad8",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 738,
+    "verdict": "ALLOW"
+}

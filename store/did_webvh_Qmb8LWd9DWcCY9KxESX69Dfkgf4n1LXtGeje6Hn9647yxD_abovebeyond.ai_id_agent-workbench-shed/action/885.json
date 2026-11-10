@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:43",
+            "note": "PDF link as Studio source: issue pipeline #429, PR #430 proposed (suite 1609/1609); rest of the mail confirms the four Studio fixes work",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/430"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261109115526-b4d5ee"
+}

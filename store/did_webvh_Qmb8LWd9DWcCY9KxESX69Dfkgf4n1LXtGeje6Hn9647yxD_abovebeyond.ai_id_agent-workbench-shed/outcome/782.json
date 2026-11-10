@@ -1,0 +1,16 @@
+{
+    "action": "dd2cb32c37d214b61350eb6c6a8b4e90",
+    "effect": {
+        "detail": {
+            "fields": [
+                "links",
+                "elixir"
+            ],
+            "project": "cafe-t-hoekske-website"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 780,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: A new list of sources was sent for the Observatory. Most of it is already in as proposals since the list of 20 October; eight sources are new and should come in the same way, so a person can trial and admit them on the Sources page.\n\nSource: Portal mail:42.\n\n## What was sent\n\nAbout thirty links in three groups: public data (Eurostat Statistics Explained pages on young people, an OECD Education at a Glance table, a World Bank indicator), trade coverage and Substack newsletters on culture and strategy, and web pages (Pinterest Business, Pinterest Predicts, CIM State of the Union 2026, Gallup's Generation Z topic).\n\n## Already held\n\nChecked against `research/source-list-2026-10-20.json`, which `bin/import-source-list.mjs --apply` read in as proposals on 21 October 2026 (pipeline #358):\n\n- The four Eurostat Statistics Explained pages (GT-BL46 to GT-BL49), the OECD school-to-work table DF_LSO_TRANS (GT-BL50) and the World Bank NEET indicator SL.UEM.NEET.ZS (GT-BL51), as reference rows.\n- WWD (GT-021) and Ad Age (GT-678).\n- ICYMI (GT-638), The Gen Zer (GT-743), In Bed With Social (GT-744), just vibes (GT-745), The New New (GT-746), Post-Culture (GT-747).\n- Pinterest Business blog, Dutch edition (GT-748), Pinterest Predicts (GT-711), CIM (GT-427), Gallup News: Generation Z (GT-749).\n\nThese need nothing new in the pipeline. Whether each one is proposed, on trial or admitted on the box is not readable from the workbench.\n\n## New\n\nEight sources, each with a working feed (checked 9 November 2026, all published in the last six weeks):\n\n| Source | Feed |\n|---|---|\n| Press Gazette | https://pressgazette.co.uk/feed/ |\n| Studio Elsewhere | https://studioelsewhere.substack.com/feed |\n| Alive in Social Media | https://aliveinsocialmedia.substack.com/feed |\n| The Trend Report | https://1234kyle5678.substack.com/feed |\n| Codes of Culture (Future+) | https://codesofculture.futureplus.xyz/feed |\n| Considered Chaos | https://eugenehealey.substack.com/feed |\n| Fashion Tingz | https://fashiontingz.substack.com/feed |\n| Future Narrative | https://futurenarrative.substack.com/feed |\n\nThe last five were sent as single posts (substack.com/inbox links); the publication behind each post is the source.\n\n## What is asked\n\nA second list in the same format, read with the same importer, so the eight come in proposed and inactive. Nothing is collected until a person starts a trial.\n\nNot in this issue: the single report pages (CIM State of the Union 2026, Pinterest Predicts 2026). A report goes on the shelf through the Studio's Reports upload, as a PDF.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Take in eight new sources from the source list of 9 November 2026"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261109105707-26c768"
+}

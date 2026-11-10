@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #429\n\n## What was wrong\n\n\"Paste a link\" in the Studio (`POST /articles/:id/sources/link`, `packages/core/source-by-link.mjs`) refused every response whose content type was not HTML, XML or plain text with \"That link is not a web page\". A trend report linked as a PDF could not be cited, so a claim taken from it went out unsourced or was cut.\n\n## What changes\n\n- `fetchPage` accepts a PDF: `application/pdf`, or `application/octet-stream` under a name ending in `.pdf`, or any body that starts with `%PDF-`. Same public-web checks per hop as a page. A PDF is read up to 40 MB and refused above it (a PDF cut short cannot be read, its index sits at the end); a page stays at 2 MB.\n- `readPdf` writes the bytes to a temporary folder, reads title, subject, creation date and page count with `pdfinfo` and the text of the first 80 pages with `pdftotext`, each as its own process with a 30 s deadline, and removes the folder. The title comes from the file unless it is a tool name (\"Microsoft Word - final_v3.docx\", \"Untitled\"), then the first line on the cover, then the file name.\n- The signal comes in under \"Cited by the author\" like a page, `meta.format = 'pdf'` and `meta.pages` added. Up to 60,000 characters of text are kept (a page keeps 3,000): classify and enrich read only the first 300, and the review gate snapshots the whole text, so a claim from page 20 can be retraced.\n- Refusals in the writer's words: \"That link is not a web page or a PDF\", \"That link said PDF but gave something else\" (a login page served as PDF), \"That PDF is larger than 40 MB\", \"The PDF has no text to read; it may be scanned pages\", \"The PDF could not be read\".\n- `binaries.mjs`: `pdfinfo` and `pdftotext` name `source-by-link.mjs` as a caller. Both are already required on the box and installed in CI.\n\nNo Studio change: it shows the server's message as it is.\n\n## Checked\n\n- `test/source-by-link.test.mjs`: six new cases on a real PDF built in the test (title, subject, date and text into a raw signal under its sentence; octet-stream; tool-name title falls back to the cover; neither page nor PDF; fake PDF; no text; empty title field; tool failure).\n- On real files from the workbench: arXiv 1706.03762 (2.2 MB, 15 pages, 39,621 characters) and a one-page W3C test PDF read; a web page still reads as before.\n- Full suite 1609/1609, `tsc` clean.\n\nAfter merge nothing is to be run on the box; the Studio picks it up on deploy.\n\n",
+            "branch": "workbench/pdf-link-source",
+            "title": "Cite a PDF by its link in the Studio, not only a web page"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261109115504-3a8355"
+}

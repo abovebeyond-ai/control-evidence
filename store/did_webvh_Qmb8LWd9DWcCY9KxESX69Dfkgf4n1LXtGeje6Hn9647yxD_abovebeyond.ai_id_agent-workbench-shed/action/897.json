@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The daily worklist mail and the transport worklist counted every transport that was not `paid`, `cancelled` or `price_requested` as waiting for the garage. That rule (R P1-2.8) is older than the planning states, so `transport_requested`, `pickup_confirmed` and `completed` slipped in: a garage with one delivered transport read \"1 transport dat op je wacht\" in every mail, and the link opened an overview that said there was nothing to do.\n\n## Change\n\n- `Transport::WAITING_FOR_GARAGE_STATES`: `pending`, `price_available`, `price_received`, `waiting_payment`. These are the states the transport overview already folds under \"wait for the garage\". Everything after is the office's work.\n- `Dealer::OpenTransport` (the mail's count), `WidgetService::get5Data` (the transport worklist) and `TransportOverview::SECTIONS['wait']` all read that one constant, so the mail, the worklist and the overview cannot drift apart again.\n- R P1-2.8 now says what is counted and why, and when it changed.\n\nA garage that only has open transports still gets no mail. That is the documented rule in R P1-2.12 and is not changed here.\n\n## Tests\n\n`WorklistMailTest::test_only_a_transport_waiting_for_the_garage_counts`: a garage with a transport in each of the six states after its turn gets a mail with only its lead, and each of the four waiting states counts. The test fails on `main` (the transport line is there) and passes with this change. Worklist mail and worklist page tests pass, plus the full suite.\n\nCloses #1076\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/digest-transport-count",
+            "title": "Count only transports that wait for the garage in the daily mail and worklist"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261109143800-c7be2e"
+}

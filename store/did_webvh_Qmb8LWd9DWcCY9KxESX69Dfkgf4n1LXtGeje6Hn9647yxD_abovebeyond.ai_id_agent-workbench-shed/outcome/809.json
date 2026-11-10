@@ -1,0 +1,15 @@
+{
+    "action": "0663e6fb656f31e0beae30cb69eb8516",
+    "effect": {
+        "detail": {
+            "fields": [
+                "links"
+            ],
+            "project": "bextrust"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 807,
+    "verdict": "ALLOW"
+}

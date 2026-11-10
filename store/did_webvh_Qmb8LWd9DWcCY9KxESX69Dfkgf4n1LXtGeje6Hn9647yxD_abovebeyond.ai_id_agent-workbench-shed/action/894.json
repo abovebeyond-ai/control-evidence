@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5c8ffac9f8cd427ef5a56eba559cb61efb3943a4",
+            "branch": "workbench/digest-transport-count",
+            "files_sha256": "7d29e9c26741b662c41de0303dd8a133477955d9da912c057be69aab2e98f286",
+            "message": "Count only transports that wait for the garage in the daily mail and worklist"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261109143800-c7be2e"
+}

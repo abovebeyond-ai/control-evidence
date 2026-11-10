@@ -1,0 +1,16 @@
+{
+    "action": "8e973f9c9f0779589f0d101351a28fc7",
+    "effect": {
+        "detail": {
+            "base": "df2923bda2932f849410301c3f3cc4139b622b49",
+            "branch": "workbench/digest-transports-alone",
+            "commit": "0082b93a0b4d9db10b08ed268004132eec6bc9f4",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 906,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,72 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "milestones": [
+                {
+                    "_key": "rmswy9phi40",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Gesprek in eigen taal: inspreken, doorvragen, bevestigen"
+                },
+                {
+                    "_key": "rmswy9phi41",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Backoffice: dagoverzicht en trendbeeld"
+                },
+                {
+                    "_key": "rmswy9phi42",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Uitrol op staging (Forge, HTTPS)"
+                },
+                {
+                    "_key": "rmswy9phi43",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Live gesprek als enige weg, met bord en handmatige correctie"
+                },
+                {
+                    "_key": "rmswy9phi44",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Onder Elixir: app-health en wekelijkse meting"
+                },
+                {
+                    "_key": "rmswy9phi45",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Catalogus en werven uit Bouwsoft"
+                },
+                {
+                    "_key": "rmswy9phi46",
+                    "clientVisible": true,
+                    "status": "done",
+                    "title": "Demo bij GLK"
+                },
+                {
+                    "_key": "rmswy9phi47",
+                    "clientVisible": true,
+                    "status": "planned",
+                    "title": "Beoordelen wat het model verstaat op echte GLK-audio"
+                },
+                {
+                    "_key": "rmswy9phi48",
+                    "clientVisible": true,
+                    "status": "planned",
+                    "title": "Export naar Bouwsoft"
+                },
+                {
+                    "_key": "rmswy9phi49",
+                    "clientVisible": true,
+                    "status": "planned",
+                    "title": "Productiedomein en echte inlog"
+                }
+            ]
+        },
+        "resource": "portal:glk-transferor"
+    },
+    "run": "workbench-20261109101512-71f445"
+}

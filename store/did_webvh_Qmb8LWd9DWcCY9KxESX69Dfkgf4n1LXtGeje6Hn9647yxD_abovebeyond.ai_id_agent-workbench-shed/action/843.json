@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "82f92a2675fc7e0c39a4434c97b0b9d7f0b2f79d",
+            "branch": "workbench/source-list-2026-11-09",
+            "files_sha256": "99642cac45a1bcbc23b339014c04ed8259a04f9fedfd48fbc03fb2ecba3c811f",
+            "message": "Take in eight new sources from the source list of 9 November 2026"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261109110014-b52710"
+}

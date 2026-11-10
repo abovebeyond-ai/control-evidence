@@ -1,0 +1,14 @@
+{
+    "action": "5ee16912f5a0d585726f7d5ba132c739",
+    "effect": {
+        "detail": {
+            "only": "site",
+            "project": "glk-transferor",
+            "queued": false
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 813,
+    "verdict": "ALLOW"
+}

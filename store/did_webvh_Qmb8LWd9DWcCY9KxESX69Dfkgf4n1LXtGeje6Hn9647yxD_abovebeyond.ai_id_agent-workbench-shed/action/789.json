@@ -1,0 +1,23 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "production",
+                    "label": "Productie",
+                    "url": "https://glk-transferor.on-forge.com"
+                },
+                {
+                    "kind": "repo",
+                    "label": "Repo",
+                    "url": "https://github.com/Trendwolves/glk-transferor"
+                }
+            ],
+            "replaceLinks": true
+        },
+        "resource": "portal:glk-transferor"
+    },
+    "run": "workbench-20261109101516-dc85f6"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f7d2089ad28ebbbe39d3f4cb08e4959c744f23f9",
+            "branch": "workbench/switch-plans-both-ways",
+            "files_sha256": "9bf428066be936ec0ad5b6f31c471199b791d0914ec006b98443dbe82817588a",
+            "message": "Pricing answers: both ways of switching, VAT, invoices, organisations as the buyer"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261109095928-4c30ae"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: The daily worklist mail tells a garage \"1 transport dat op je wacht\" while its transport overview says there is nothing to do. The count includes transports that no longer wait for the garage, such as a delivered one, so the mail keeps sending people to an empty page.\n\n## What happens\n\nA garage gets the daily mail (\"<garage>: 2 dingen wachten op je\") with one untreated lead and one waiting transport. The transport overview of that account has nothing open: its own transports there are one delivered (`completed`, \"Afgehandeld\") and one cancelled. The transport line comes back in every mail.\n\nThe garage also noticed that it only gets the mail on days with a lead or a Car-Pass to renew. That part is the documented rule (R P1-2.12: a dealer with only open transports is not selected) and is not changed here.\n\n## Why\n\n`Dealer::OpenTransport`, which the mail counts, and `WidgetService::get5Data`, the transport worklist, both take every transport that is not `paid`, `cancelled` or `price_requested` (R P1-2.8). That rule is older than the planning states: `transport_requested`, `pickup_confirmed` and `completed` came after it and were never excluded. So a transport that is in planning, or delivered long ago, still counts as waiting for the garage.\n\nThe transport overview already knows which states wait for the garage: its folded \"wait\" section is `pending`, `price_available`, `price_received` and `waiting_payment`. Everything after that is the office's to do.\n\n## Proposed fix\n\nOne named set of states on `Transport` (`WAITING_FOR_GARAGE_STATES`), used by the mail, the worklist widget and the overview's \"wait\" section, so the three cannot drift apart again. Update R P1-2.8 to match.\n\nSource: Portal mail:44.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Daily mail counts a delivered or planned transport as waiting for the garage"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261109143003-9167ec"
+}

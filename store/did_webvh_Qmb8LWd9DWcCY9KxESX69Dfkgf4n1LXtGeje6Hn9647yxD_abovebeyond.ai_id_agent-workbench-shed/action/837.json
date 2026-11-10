@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: The source list points at several public APIs (Eurostat, OECD, World Bank, Pinterest Trends) as worth using. The Observatory holds them as rows but reads none of them; using them is a build per API, not a source to switch on.\n\nSource: Portal mail:42.\n\n## What is asked\n\nThe mail says the list contains a number of interesting APIs. The ones in it:\n\n- **Eurostat** (Statistics Explained pages on young people: digital world, social inclusion, housing conditions, family and society). The dissemination API answers without a key in JSON-stat 2.0.\n- **OECD Data Explorer**, Education at a Glance, school-to-work transition at 18 to 24 (DF_LSO_TRANS), through the SDMX API.\n- **World Bank**, NEET share of young people (SL.UEM.NEET.ZS), through `api.worldbank.org/v2`.\n- **Pinterest Trends** in the Pinterest developer API (`developers.pinterest.com/docs/analytics-and-reports/trends/`).\n\n## Where this stands\n\n- The three statistics publishers are already reference rows (GT-BL46 to GT-BL51 in `research/source-list-2026-10-20.json`). Reference rows never become signals, and nothing fetches from them: a figure is cited by hand with `bin/cite-statistics.mjs` from a plan that names the value, the dataset and the link. The reference layer in `docs/design/sources-before-more-sources.md` (phase 3) describes the missing piece: one function that reads a single value by dataset code and filters, when someone asks for it, with Eurostat as the pilot. It also asks which indicators the pilot leans on, and that each publisher's reuse terms are read first (Eurostat allows commercial reuse with attribution; OECD and World Bank not yet read).\n- Pinterest is different: it would give signals, not figures. The `pinterest-trends` adapter (Apify actor) is OFF. The official Trends endpoint needs a Pinterest business account and an approved app, which is an account decision before any build.\n\n## Not decided\n\nWhich of the four comes first, and for the statistics which indicators. This issue holds the request until that is chosen.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Read the public APIs from the source list (Eurostat, OECD, World Bank, Pinterest Trends)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261109105718-46c293"
+}

@@ -1,0 +1,33 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "production",
+                    "label": "Huidige site",
+                    "url": "https://www.trucks-schoutteet.com"
+                },
+                {
+                    "kind": "staging",
+                    "label": "Staging",
+                    "url": "https://schoutteet.on-forge.com"
+                },
+                {
+                    "kind": "repo",
+                    "label": "Nieuwe website (Laravel)",
+                    "url": "https://github.com/ShaneDeconinck/schoutteet"
+                },
+                {
+                    "kind": "repo",
+                    "label": "Sanity Studio repo",
+                    "url": "https://github.com/ShaneDeconinck/schoutteet-sanity"
+                }
+            ],
+            "replaceLinks": true
+        },
+        "resource": "portal:schoutteet"
+    },
+    "run": "workbench-20261109101531-b1b6b0"
+}

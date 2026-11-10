@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #423\n\nA new list of sources for the Observatory came in by mail (Portal mail:42). Checked against `research/source-list-2026-10-20.json`, which was read in as proposals on 21 October 2026: most of it is already there (Eurostat, OECD and World Bank as reference rows, WWD, Ad Age, six of the newsletters, the Pinterest, CIM and Gallup pages). Eight sources are new, and all eight have a feed that published in the last six weeks (checked 9 November 2026).\n\n## What changes\n\n- `research/source-list-2026-11-09.json`: a second list in the first list's format, with only the eight new sources: Press Gazette, Studio Elsewhere, Alive in Social Media, The Trend Report, Codes of Culture (Future+), Considered Chaos, Fashion Tingz, Future Narrative. Refs `GT-M42-01` to `GT-M42-08`, so they cannot clash with the Trendwolves numbering. No priority, since none was given.\n- `test/source-lifecycle.test.mjs`: the second list, read against the first as the box holds it, adds all its rows, labels and twins none, and plans each as `rss` at its feed, proposed and inactive.\n\nNo code changes: `bin/import-source-list.mjs` reads the file as it is. Five of the newsletters were sent as single posts (substack.com/inbox links); the publication behind each post is the source.\n\n## On the box, after merge and deploy\n\n```bash\nnode bin/import-source-list.mjs research/source-list-2026-11-09.json          # dry: 8 new, proposed (rss 8)\nnode bin/import-source-list.mjs research/source-list-2026-11-09.json --apply\n```\n\nThen the eight sit among the proposals on the Sources page; a trial starts when a person accepts one.\n\n## Tests\n\n`npm test`: 1592 of 1592 pass. The dry run on an empty store: 8 new, proposed, all rss.\n\n## Not in this PR\n\nThe public APIs in the list (#424) and the question about the 2027 industry reports (#425).\n",
+            "branch": "workbench/source-list-2026-11-09",
+            "title": "Take in eight new sources from the source list of 9 November 2026"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261109110014-b52710"
+}

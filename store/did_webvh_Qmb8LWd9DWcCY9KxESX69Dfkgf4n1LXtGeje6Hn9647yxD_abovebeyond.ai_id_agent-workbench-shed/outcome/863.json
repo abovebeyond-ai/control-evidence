@@ -1,0 +1,16 @@
+{
+    "action": "edbd057e37db687d7bb08d53f6748e20",
+    "effect": {
+        "detail": {
+            "base": "42879bc651a0d65736442543ec1f64b82de5a5c3",
+            "branch": "workbench/failing-pages-to-feeds",
+            "commit": "d4aa402058995aa69cf826a47a4cdb81c70853ef",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 861,
+    "verdict": "ALLOW"
+}

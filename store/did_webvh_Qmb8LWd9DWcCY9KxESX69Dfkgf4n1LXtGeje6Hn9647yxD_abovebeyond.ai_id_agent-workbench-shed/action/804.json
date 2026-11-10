@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "domain:expiry",
+            "note": "Verlengt automatisch bij GoDaddy (registrar volgens RDAP; vorig jaar verlengd op 17-11-2025). RDAP toont die instelling niet. Op 17-11-2026 nakijken of de vervaldatum naar 2027 schoof, anders deze taak terug open.",
+            "state": "parked"
+        },
+        "resource": "portal:afrodidact-website"
+    },
+    "run": "workbench-20261109101631-475a11"
+}

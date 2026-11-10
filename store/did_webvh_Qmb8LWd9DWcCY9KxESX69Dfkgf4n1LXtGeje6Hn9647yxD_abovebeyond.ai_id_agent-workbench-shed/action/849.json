@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:42",
+            "note": "Issues pipeline #423 (8 new sources, PR #426), #424 (public APIs, waits for a choice), #425 (question: 2027 reports section); rest of the list already proposed since 21 Oct",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/426"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261109110035-509b4a"
+}

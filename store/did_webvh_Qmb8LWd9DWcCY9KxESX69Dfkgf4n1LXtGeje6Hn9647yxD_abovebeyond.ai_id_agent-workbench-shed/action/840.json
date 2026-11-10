@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P3\nSummary: An agent on the Trendwolves side watches for the new 2027 industry reports, and the mail asks whether that could become a new part of the Observatory. What the part would hold and how the agent's findings reach the pipeline are open.\n\nSource: Portal mail:42.\n\n## What is asked\n\nIndustry trend reports for 2027 are about to come out. An agent outside the Observatory is watching for them, and the mail suggests making a separate part of the Observatory for them.\n\n## What exists\n\n- Reports come in through the Studio's Reports upload as PDFs; the pipeline reads them as report jobs (`report-state.mjs`), and a report cites at a high rate (149 cited per 1,000 in, `docs/design/source-mix-2026-10.md`).\n- About 67 yearly reports are listed as sources (type \"Jaarrapport\" in `research/source-list-2026-10-20.json`), as `listed` rows with no adapter: nothing watches for a new edition.\n\n## Open questions\n\n1. A part of the Observatory for what: a list of 2027 reports expected and found (title, publisher, date, link, on the shelf or not), or a reading of what the 2027 reports say together?\n2. How the agent's findings arrive: a list sent now and then, a feed, or a call into the pipeline. Is the agent to keep running, or should the Observatory do the watching itself from the yearly-report rows it already holds?\n3. Who puts a found report on the shelf: many need a registration or a form before the PDF.\n\nNo build until these are answered.\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P3"
+            ],
+            "title": "A part of the Observatory for the 2027 industry reports?"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261109105721-37f9a0"
+}

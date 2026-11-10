@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fa6c03e12ca9d00ef95c0981c52d84662e8afd09",
+            "branch": "workbench/one-palette-for-charts",
+            "files_sha256": "bbf44b7bd816bac41c8c4938066c989bdff8fa1a6923b589682c5c11f247583f",
+            "message": "One colour ramp for counts, brand tokens for the timelines"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261109113220-452b69"
+}

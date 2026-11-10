@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ca471278b2dd0e02de5f9e500939ffb36844d11a",
+            "branch": "workbench/elixir-json",
+            "files_sha256": "8c67ac7e07f64407a1027c1f1dfade7f25791d068976c68edf510b10f3593e8e",
+            "message": "Declare the production address in elixir.json"
+        },
+        "resource": "ShaneDeconinck/cafe-t-hoekske"
+    },
+    "run": "workbench-20261109101256-6758c7"
+}

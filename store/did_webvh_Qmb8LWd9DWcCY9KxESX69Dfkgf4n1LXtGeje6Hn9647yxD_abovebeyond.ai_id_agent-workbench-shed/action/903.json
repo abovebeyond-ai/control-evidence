@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: A garage whose only open item is a transport waiting for it gets no daily mail. That transport is something the garage has to act on (finish the request, or agree to a price and pay), so it should be enough for the mail on its own.\n\n## What happens\n\nThe daily worklist mail selects a dealer only when it has unfinished vehicles, Car-Passes about to expire, untreated leads, or a user with unread release notes (`DealerRepository::getAllWithWorklistItems`, R P1-2.11 and R P1-2.12). A dealer whose only open item is a transport waiting for it is not selected. The transport only shows up in the mail on days when something else is open as well. The garage in Portal mail:44 noticed exactly this.\n\nSince #1077 the transport count holds only what waits for the garage (`Transport::WAITING_FOR_GARAGE_STATES`), so selecting on it no longer pulls in transports that are the office's to handle.\n\n## Asked\n\nSelect a dealer for the daily mail when it has an open transport (`Dealer::OpenTransport`) as well. Who gets the line stays as it is: only a user who passes the transport gate, and a user with no line he can open gets no mail. Update R P1-2.11 and R P1-2.12.\n\nSource: Portal mail:44 (follow-up to #1076).\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Daily mail for a garage whose only open item is a transport waiting for it"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261109200000-0b10aa"
+}

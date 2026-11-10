@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Until now a trend reached gentells.com only when a person approved it: from the morning curation mail (Approve / Skip, six proposals a day), the Studio, or the Overview's \"Put on gentells.com\". A trend nobody answered never went up, and nobody could say how much time the sign-off asked. This makes the existing bars the approval, and leaves a person the veto.\n\n## What changes\n\n**`publishByRules`** (`packages/core/articles-store.mjs`) puts a trend on gentells.com when it passes the bars that already held it back:\n- strength 80 or more, at most 45 days old, not decided, not already cited by a post (the morning's candidates, `listShowcaseCandidates`), plus the proposals nobody answered, under the same two bars;\n- seen at least `TW_SITE_MIN_OBSERVED` (5) times on platforms, the gate `decideShowcase` already enforces;\n- not lapsed (a lapsed trend is no card on the site);\n- at most `TW_SITE_AUTO_PER_WEEK` (default **10**) in seven days, spread as a seventh a day (two a day at 10), freshest first, then strongest.\n\nEach goes up as a decision by `site rules`, via `auto`, in `showcase_decisions`, so a trend's history names who put it there. A trend taken off (hidden) or skipped is never put up again by the rules. Approvals by a person do not count against the weekly number.\n\n**The morning run** (`packages/server/curation.mjs`): with the rules on, the daily run publishes, tells the site (`notifyProjection('trends')`), and mails the team \"On gentells.com since today\": one card per trend with a signed \"Take it off gentells.com\" link (action `hidden`, the existing `/curate/decide` route), and how many more pass the rules and wait for room. With `TW_SITE_AUTO_PER_WEEK=0` the lane is what it was: six proposals with Approve / Skip.\n\n## On the box\n\nNothing to run: the default is on, at 10 a week. To change the pace, set `TW_SITE_AUTO_PER_WEEK` in the box's environment and restart the server; `0` turns the rules off.\n\nFrom the first morning after deploy, the waiting list (unanswered proposals that are still fresh and strong enough) goes up two a day, freshest first.\n\n## Tests\n\n`npm test`: 1612 of 1612. `tsc`: clean. New: `test/site-rules.test.mjs` (what passes, what is held back, unanswered proposals, the daily and weekly limit, taken off stays off, rules off; the morning run publishes, notifies and mails take-off links, and proposes as before at 0).\n",
+            "branch": "workbench/trends-go-online",
+            "title": "Trends go on gentells.com by the site rules"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261109114955-56c272"
+}

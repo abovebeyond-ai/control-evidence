@@ -1,0 +1,16 @@
+{
+    "action": "9d6268a9869ad4d01bfd10bcd88c2d85",
+    "effect": {
+        "detail": {
+            "base": "e89c154bca7b88f6744757b466ebbb8448a88667",
+            "branch": "workbench/terms-match-what-is-sold",
+            "commit": "e38d41cc7410c2900f471da594fe535badb9ad8f",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 819,
+    "verdict": "ALLOW"
+}

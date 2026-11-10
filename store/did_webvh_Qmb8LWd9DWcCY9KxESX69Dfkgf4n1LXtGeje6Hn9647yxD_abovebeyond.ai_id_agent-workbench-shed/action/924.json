@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Retell removed `POST /v2/create-web-call` (deprecated on 18 October 2026, together with browser SDK 2.x). Every call on tw-call-agents failed to start: the `create-call` function got an error back, and the call screen showed \"Kon het gesprek niet starten\".\n\nThis replaces #1, whose deploy preview failed on the function bundling described below.\n\n## What changes\n\n- **`netlify/functions/create-call.js`** calls `/v3/create-web-call` with the same body. The reply adds `transport` and `ice_servers`; the function already passes the reply on whole.\n- **`src/views/call.js`** joins with `startCall({ callId, accessToken, transport, iceServers })`, as Retell's migration steps describe. Without the transport the SDK uses its default (LiveKit), whatever the call was set up for.\n- **`retell-client-js-sdk`** goes from 2.0.7 to 3.0.4. 3.x still ships `RetellWebClient`, so the events the screen listens to (`call_started`, `call_ended`, `agent_start_talking`, `agent_stop_talking`, `update`, `error`) keep their names.\n- **Functions as ES modules:** `package.json` declares `\"type\": \"module\"`, so Node loads every `.js` file as an ES module, and `exports.handler` in `create-call`, `get-call` and `log-event` fails at runtime. Netlify's bundler now refuses such a function at build time, which stopped the deploy of #1. They now `export const handler`; nothing else in them changes.\n- **Mute button:** it called `toggleMicrophone`, which neither 2.x nor 3.x has, so it threw. It now calls `mute()` and `unmute()`.\n\n`get-call` stays on `/v2/get-call`, which is not deprecated.\n\n## Checks\n\n- `npm run build` passes. Each function loads as an ES module under Node and exports `handler`. The committed `dist/` is left as it was: Netlify builds the site itself.\n- Not tested with a real call: that needs a microphone and the Retell key. Before relying on it, make one call on the deploy preview and check that it connects, that the customer is heard, that mute works and that the feedback screen follows.\n- One developer has reported that on the v3 gateway transport the talking events (`agent_start_talking`, `agent_stop_talking`, `update`) did not reach the browser. If so, the call works but the \"Klant spreekt...\" label and the visualizer stay still. The test call shows it.\n",
+            "branch": "workbench/retell-v3-esm-functions",
+            "title": "Start web calls on Retell v3"
+        },
+        "resource": "ShaneDeconinck/trendwolves-call-agents"
+    },
+    "run": "workbench-20261109202144-76ee03"
+}

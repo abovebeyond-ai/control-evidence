@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A garage whose only open item was a transport waiting for it got no daily mail. `DealerRepository::getAllWithWorklistItems` selected a dealer on unfinished vehicles, expiring Car-Passes or untreated leads (or a user with unread release notes), never on transports. So the transport only appeared in the mail on a day when something else was open too.\n\nSince #1077, `Dealer::OpenTransport` holds only transports that wait for the garage (a request it did not finish, or a price to agree to and pay). That is work in the same sense as an untreated lead, so it is now enough on its own to select the dealer.\n\n## Change\n\n- `getAllWithWorklistItems` also selects on `OpenTransport`.\n- Who gets the line is unchanged: only a user who passes the transport gate, and a user with no line he can open gets no mail (`WorklistDigest::lines`).\n- R P1-2.11 and R P1-2.12 say so, with the date.\n\n## Tests\n\nIn `WorklistMailTest`:\n- `test_a_garage_whose_only_open_item_is_a_transport_gets_the_mail`: fails on `main`, passes here.\n- `test_a_garage_whose_only_transports_are_done_or_ours_gets_no_mail`: transports in planning, delivered, cancelled or waiting for a price do not trigger a mail.\n\nFull suite: 3219 passed. The 6 failures in `APhotoWithoutAForegroundIsNotAFaultTest` fail on `main` on this machine too, and are green on CI.\n\nCloses #1078\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/digest-transports-alone",
+            "title": "Send the daily mail to a garage whose only open item is a transport"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261109200448-9f4579"
+}

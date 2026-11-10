@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ca7b8f7b43717859aed0d69e9b854edecad7b554",
+            "branch": "workbench/elixir-json",
+            "files_sha256": "18b6f9278fb5173b90ef0a5b1cf9cf035a6e49e1736ff8afe15532b56f0265da",
+            "message": "Declare production (the client's current site) and staging (the rebuild) in elixir.json"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261109101332-120d0f"
+}

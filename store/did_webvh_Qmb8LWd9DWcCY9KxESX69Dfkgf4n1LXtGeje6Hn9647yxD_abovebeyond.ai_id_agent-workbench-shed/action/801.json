@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "domain:expiry",
+            "note": "Verlengt automatisch bij GoDaddy (registrar volgens RDAP, IANA 146; vorig jaar verlengd op 17-11-2025). Elixir kan automatisch verlengen niet zien: RDAP publiceert die instelling niet. Op 17-11-2026 nakijken of de vervaldatum naar 2027 schoof; zo niet, deze taak terug open. Regelvoorstel: zie elixir-sweep-2026-11-09.",
+            "state": "parked"
+        },
+        "resource": "portal:afrodidact-website"
+    },
+    "run": "workbench-20261109101617-39948c"
+}

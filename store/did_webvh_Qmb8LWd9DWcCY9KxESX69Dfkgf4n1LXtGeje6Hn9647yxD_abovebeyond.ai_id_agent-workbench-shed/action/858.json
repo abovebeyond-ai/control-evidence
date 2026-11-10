@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Insights page showed three palettes side by side.\n\n- **Coverage by region** used the aqua ramp, from the Observatory's own `cool`, on the cool stone ground.\n- **By topic** still used the steel blue over warm paper from before the light theme. `heat.js` says the map and the blocks share one ramp, but the map had taken a copy when it moved to aqua, and the blocks never followed.\n- **Insight Timeline** used sage and amber, two hex values from the dark years that are no token. BRAND.md allows only its tokens for data.\n\n## What changes\n\n- **One ramp.** `HEAT_COLORS` in `heat.js` is the aqua ramp now, and `GeoHeatMap` imports it instead of keeping its own. That covers the topic blocks on Insights, Patterns and Buffer as well. White text on a block starts at the `cool` step, the first where it passes 4.5:1 (4.94; the step before it is 3.08).\n- **The timelines speak BRAND.md's data colours:**\n  - insights: new is `cool` (inflow), refined is `concept` (enrichment);\n  - patterns: candidate `txt-3`, emerging `warm`, confirmed `active`, peaking `hot`, declining `cool`. These are the colours the status words in the list below already use.\n- **The selected date range** on a timeline was drawn in white at 8% on a white card, invisible since the light theme. It is `brand-tint` now, and a single selected day is `raised`.\n\nThe source-type colours of the signal timeline (report, social, reddit, web, other) are still raw hex values. They have no meaning in BRAND.md to map to, so they need a decision first and are left for a follow-up.\n\n## Checks\n\n- Build passes. `lint-ratchet` stays at its ceiling. `brand-ratchet` passes and its ceiling comes down in three files.\n- e2e: `pages`, `overview`, `insight-open` and `navigation`, 48 of 48 pass.\n- Looked at Insights and Patterns with the e2e mock data at 1440 wide.\n",
+            "branch": "workbench/one-palette-for-charts",
+            "title": "One colour ramp for counts, brand tokens for the timelines"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261109113220-452b69"
+}

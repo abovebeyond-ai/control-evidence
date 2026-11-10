@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: A writer pasted the link to a trend report PDF under \"Paste a link\" in the Studio and it was refused, so a claim in a new post went out unsourced or was cut. A PDF link should be read and cited like a web page.\n\n## What happens\n\n`POST /articles/:id/sources/link` (`packages/core/source-by-link.mjs`) fetches the pasted link and refuses any response whose content type is not HTML, XML or plain text with \"That link is not a web page\" (415). A link to a PDF report therefore never becomes a source, while the same report as a web page would.\n\n## What is asked\n\nAccept a link to a PDF the same way: fetch it from the public web with the same checks, read its title and opening text, and make it a signal under \"Cited by the author\" so the pipeline classifies and enriches it like any other cited page. A PDF the Observatory already holds by its address is cited as it is.\n\nIt came up once in ten new posts, so it is not blocking, but it is the one gap left in the writing flow.\n\nSource: Portal mail:43.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Cite a PDF by its link in the Studio, not only a web page"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261109115046-2a8bb5"
+}

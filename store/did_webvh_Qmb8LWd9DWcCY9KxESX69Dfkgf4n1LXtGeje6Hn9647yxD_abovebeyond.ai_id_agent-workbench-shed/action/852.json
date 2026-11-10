@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d5b70351698a0412252104654acb7ae9cd4c85f5",
+            "branch": "workbench/repo-names",
+            "files_sha256": "4ae5a7f0e7695925f7dceed329242f8a786cd724a422f62bd53208c9e67fe957",
+            "message": "Name the repositories as GitHub does\n\nDocs and comments called the CRM and the gate by their old local folder\nnames, bextrust-crm and bextrust-control. They are bextrust/crm and\nbextrust/control in the organisation, cloned side by side as crm and\ncontrol."
+        },
+        "resource": "bextrust/control"
+    },
+    "run": "workbench-20261109113009-84072c"
+}

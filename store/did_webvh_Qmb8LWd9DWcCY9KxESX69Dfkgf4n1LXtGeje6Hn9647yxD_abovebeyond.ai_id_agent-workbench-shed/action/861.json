@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "42879bc651a0d65736442543ec1f64b82de5a5c3",
+            "branch": "workbench/failing-pages-to-feeds",
+            "files_sha256": "98e7a85e4da79e6621ebcf2cee27578aac51e740d304156255bd6e3e7f5776fc",
+            "message": "Read failing pages from their feed; Wikipedia reads the latest published day"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261109113245-ab0bbc"
+}

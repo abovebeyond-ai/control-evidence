@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "df2923bda2932f849410301c3f3cc4139b622b49",
+            "branch": "workbench/digest-transports-alone",
+            "files_sha256": "65bc0219922506f59b767fe0aae73538a9df27df1c646b94dd53b68a4e90c09d",
+            "message": "Send the daily mail to a garage whose only open item is a transport"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261109200448-9f4579"
+}

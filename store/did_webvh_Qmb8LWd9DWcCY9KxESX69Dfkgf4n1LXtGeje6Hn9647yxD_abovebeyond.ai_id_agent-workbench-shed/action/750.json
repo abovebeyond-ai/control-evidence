@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "76f0b877942abb669a0efeb0f6446c3ff17ec8d4",
+            "branch": "workbench/elixir-json",
+            "files_sha256": "abe1d0ba85d5e23185eac7d020f726a43b5b5e20d9c278c5d1bb06490c5a8352",
+            "message": "Declare the live app as production in elixir.json, behind a login"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261109101235-0eeddd"
+}

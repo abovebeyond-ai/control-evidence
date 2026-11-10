@@ -1,0 +1,14 @@
+{
+    "action": "c65e201c288a4a30221707d35f061ec7",
+    "effect": {
+        "detail": {
+            "key": "domain:expiry",
+            "project": "afrodidact-website",
+            "state": "parked"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 804,
+    "verdict": "ALLOW"
+}

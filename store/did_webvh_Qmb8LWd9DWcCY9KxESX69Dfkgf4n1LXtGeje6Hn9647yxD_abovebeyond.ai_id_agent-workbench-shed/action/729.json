@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Mollie reviews a merchant's website before it takes payments: what is sold, at what price, by whom, and how to reach them. gentells.com answers, but every page shows the pre-launch cover with only an email field, and Mollie's check reports the site as offline.\n\n## What changes\n\n- **`/pricing` and `/contact` open through the cover** (`PreLaunch::ALWAYS_OPEN`), next to the terms and privacy pages that were already open. The contact form posts to the same path, so it works too. Everything else stays behind the cover, registration included.\n- **The cover links them:** a line under the newsletter form (\"The plans and their prices are already up. See pricing\"), and Pricing and Contact in the footer.\n- **The footer names the seller in full:** Trendwolves NV, the address, and the VAT number BE 0882.982.288.\n\nA visitor who picks a plan on the pricing page still meets the cover. That is the intended state until launch.\n\n## Tests\n\n- New `PreLaunchTest` case: the cover links pricing and contact and shows the VAT number. Both pages open without a preview link, while `/trends` and `/register` stay covered.\n- Full suite: 590 of 591 pass. The one failure is `BuildStampTest`, which fails in every worktree because it reads the checkout's own build stamp. Pint clean.\n- Checked by eye at desktop and phone width, served locally with the cover on.\n\n## After merge\n\nAsk Mollie to check the website again. No environment change is needed.\n",
+            "branch": "workbench/cover-shows-the-offer",
+            "title": "Show the offer and the seller through the pre-launch cover"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261109095040-fbc583"
+}

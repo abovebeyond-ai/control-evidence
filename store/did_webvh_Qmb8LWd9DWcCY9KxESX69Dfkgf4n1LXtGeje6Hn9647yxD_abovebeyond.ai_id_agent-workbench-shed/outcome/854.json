@@ -1,0 +1,10 @@
+{
+    "action": "7996f19ce4e63f7b5f8f95af8700e858",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on bextrust/control",
+    "step": 852,
+    "verdict": "DENY"
+}

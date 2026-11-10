@@ -1,0 +1,16 @@
+{
+    "action": "dd14395ddb4a541a25282a4737c15730",
+    "effect": {
+        "detail": {
+            "base": "4d1fb81325495169d7eb8337cf74b7cc21841d6d",
+            "branch": "workbench/trends-go-online",
+            "commit": "06860ad7be201205ef323c97caa999ab9b24b384",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 867,
+    "verdict": "ALLOW"
+}

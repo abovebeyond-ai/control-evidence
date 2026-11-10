@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Mollie is reviewing the pricing page before it takes payments. Several of its answers did not match what the site does or what the terms say.\n\n## What changes\n\n- **Switching plans:** the answer named only the step up. It now covers both directions, as `Subscriptions::change` handles them.\n  - Up takes effect at once: the difference for the rest of the month is charged today, and the new price applies from the next payment.\n  - Down takes effect when the paid month, or the year on an annual plan, runs out. The plan stays as it is until then.\n- **Organisations as the buyer:** the answer and the line under the heading said a subscription was \"personal and in your name\". Paid plans are sold to organisations (billing details, VAT per buyer). Only the login is personal, as article 3 of the terms says. The meta description drops the same sentence.\n- **Currency:** conversion was attributed to the payment provider. A card in another currency is converted by its issuer, and \"No surprise fees\" could not be promised for that, so it is dropped.\n- **New: Is VAT included?** Prices are shown excl. VAT; Belgium pays 21%; an EU organisation outside Belgium with a VAT number is charged none (reverse charge); outside the EU no Belgian VAT applies. This matches `App\\Billing\\Vat` and article 4 of the terms.\n- **New: Do I get an invoice?** Trendwolves NV invoices every payment. It is shown only while billing is live, like the answer on cancelling.\n\n`docs/design/billing.md` no longer lists the pricing line as open. The mismatches in the terms themselves stay open: that is Trendwolves' text.\n\n## Tests\n\n- Two new `PricingTermsTest` cases: one for the switching answer, one for the buyer, VAT and currency wording.\n- Full suite: 592 of 593 pass. The one failure is `BuildStampTest`, which fails in every worktree because it reads the checkout's own build stamp. Pint clean.\n",
+            "branch": "workbench/switch-plans-both-ways",
+            "title": "Pricing answers: both ways of switching, VAT, invoices, organisations as the buyer"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261109095928-4c30ae"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "21a2acacfbc385b9ec8c8dd8ca71fe0ba8dc63f3",
+            "branch": "workbench/retell-v3-web-call",
+            "files_sha256": "bf5781524fd54684405dd083cecc7752a053ff39db8ba835f240a8b1728f1fda",
+            "message": "Start web calls on Retell v3"
+        },
+        "resource": "ShaneDeconinck/trendwolves-call-agents"
+    },
+    "run": "workbench-20261109201427-2fa13b"
+}

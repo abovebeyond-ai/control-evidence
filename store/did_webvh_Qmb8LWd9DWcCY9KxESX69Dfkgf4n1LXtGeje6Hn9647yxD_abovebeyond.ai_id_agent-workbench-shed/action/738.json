@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f7d2089ad28ebbbe39d3f4cb08e4959c744f23f9",
+            "branch": "workbench/seller-contact-visible",
+            "files_sha256": "ce99b54867091e8f61d7f22ab00dbd15db6862caba25774121716c6e95c17f65",
+            "message": "Show the seller's email and phone on every page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261109101112-d64be0"
+}

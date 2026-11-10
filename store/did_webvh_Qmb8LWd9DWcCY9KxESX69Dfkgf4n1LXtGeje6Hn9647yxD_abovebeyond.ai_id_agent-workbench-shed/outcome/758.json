@@ -1,0 +1,16 @@
+{
+    "action": "4e7bdc9e34330183db8f2131dda3d23e",
+    "effect": {
+        "detail": {
+            "base": "ca471278b2dd0e02de5f9e500939ffb36844d11a",
+            "branch": "workbench/elixir-json",
+            "commit": "3859b272ecb42c4fc50860e9f2e2859d73e8a4ec",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 756,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,15 @@
+{
+    "action": "93fe08e95c3a56380094f1330295a8e7",
+    "effect": {
+        "detail": {
+            "fields": [
+                "nextAction"
+            ],
+            "project": "glk-transferor"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 774,
+    "verdict": "ALLOW"
+}

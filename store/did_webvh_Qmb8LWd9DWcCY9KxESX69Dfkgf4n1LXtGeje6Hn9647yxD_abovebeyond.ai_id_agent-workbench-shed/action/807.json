@@ -1,0 +1,32 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "repo",
+                    "label": "bextrust/control",
+                    "url": "https://github.com/bextrust/control"
+                },
+                {
+                    "kind": "repo",
+                    "label": "bextrust/bextrust-android",
+                    "url": "https://github.com/bextrust/bextrust-android"
+                },
+                {
+                    "kind": "repo",
+                    "label": "bextrust/bextrust",
+                    "url": "https://github.com/bextrust/bextrust"
+                },
+                {
+                    "kind": "repo",
+                    "label": "bextrust/crm",
+                    "url": "https://github.com/bextrust/crm"
+                }
+            ]
+        },
+        "resource": "portal:bextrust"
+    },
+    "run": "workbench-20261109103240-503cdc"
+}

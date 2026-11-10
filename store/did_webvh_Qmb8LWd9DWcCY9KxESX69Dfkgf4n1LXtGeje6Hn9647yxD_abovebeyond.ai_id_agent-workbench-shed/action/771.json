@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Schoutteet goes under Elixir while the rebuild is still on staging and the client's current site is still the Drupal one at www.trucks-schoutteet.com. This file declares both:\n\n- `production`: https://www.trucks-schoutteet.com, the site visitors get today. It is canonical with hreflang on www, and schoutteet.com redirects there.\n- `staging`: https://schoutteet.on-forge.com, the Laravel rebuild in this repo.\n\nIn Portal the project will be marked `productionTheirs`, so staging carries the verdict about this code, and production is read only for what belongs to the client's site (uptime, domain, DNS).\n\nStaging is behind basic auth today and answers 401. Elixir reads 401 as down. So before Elixir can measure staging, nginx on staging has to let the box through, or Elixir needs a way to send the credentials. Both are outside this repo.\n\nAt cutover, when the new site takes over www.trucks-schoutteet.com, only the staging line needs to change, in the same commit as the move.\n",
+            "branch": "workbench/elixir-json",
+            "title": "Declare the client's current site and the rebuild for Elixir"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261109101332-120d0f"
+}

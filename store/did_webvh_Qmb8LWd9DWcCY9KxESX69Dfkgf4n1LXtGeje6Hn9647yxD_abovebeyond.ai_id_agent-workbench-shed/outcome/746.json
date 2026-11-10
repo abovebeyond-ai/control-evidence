@@ -1,0 +1,16 @@
+{
+    "action": "0186563ac2cd822e2e51f94453b050f7",
+    "effect": {
+        "detail": {
+            "base": "30b54650f11666c9d9d98c863ec90653ef4d10b1",
+            "branch": "workbench/delete-project-leftovers",
+            "commit": "f0dbde36822cdbea798f0fc012724964ef0177d1",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 742,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "4de137ce180f8b73e7d2a1aaea5d07a8",
+    "effect": {
+        "detail": {
+            "fields": [
+                "replaceLinks",
+                "links"
+            ],
+            "project": "glk-transferor"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 789,
+    "verdict": "ALLOW"
+}

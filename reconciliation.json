@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-09T07:34:26+00:00",
+    "computed_at": "2026-11-10T07:34:35+00:00",
     "window": {
-        "since": "2026-11-02T07:33:04+00:00",
+        "since": "2026-11-03T07:33:04+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -48,6 +48,17 @@
                 "gateway": 0
             }
         },
+        "ShaneDeconinck/cafe-t-hoekske": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 1,
+                "gateway": 1
+            }
+        },
         "ShaneDeconinck/cides": {
             "dispatches": {
                 "github": 0,
@@ -56,6 +67,17 @@
             "pulls": {
                 "github": 0,
                 "gateway": 0
+            }
+        },
+        "ShaneDeconinck/elisabethdevestele": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 1,
+                "gateway": 1
             }
         },
         "ShaneDeconinck/good-governance": {
@@ -104,8 +126,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 7,
-                "gateway": 7
+                "github": 10,
+                "gateway": 10
             }
         },
         "Trendwolves/gentells-site": {
@@ -115,8 +137,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 7,
+                "gateway": 7
             }
         },
         "Trendwolves/glk-transferor": {
@@ -125,8 +147,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -145,8 +167,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -186,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 9,
-                "gateway": 9
+                "github": 11,
+                "gateway": 11
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -200,51 +222,7 @@
                 "gateway": 0
             }
         },
-        "Hoet-design/hoet-design-web": {
-            "dispatches": {
-                "github": 0,
-                "gateway": 0,
-                "workflow": "absent"
-            },
-            "pulls": {
-                "github": 0,
-                "gateway": 0
-            }
-        },
         "Hoet-design/hoet-sanity": {
-            "dispatches": {
-                "github": 0,
-                "gateway": 0,
-                "workflow": "absent"
-            },
-            "pulls": {
-                "github": 0,
-                "gateway": 0
-            }
-        },
-        "ShaneDeconinck/cafe-t-hoekske": {
-            "dispatches": {
-                "github": 0,
-                "gateway": 0,
-                "workflow": "absent"
-            },
-            "pulls": {
-                "github": 0,
-                "gateway": 0
-            }
-        },
-        "ShaneDeconinck/dbc-subsidieportaal": {
-            "dispatches": {
-                "github": 0,
-                "gateway": 0,
-                "workflow": "absent"
-            },
-            "pulls": {
-                "github": 0,
-                "gateway": 0
-            }
-        },
-        "ShaneDeconinck/elisabethdevestele": {
             "dispatches": {
                 "github": 0,
                 "gateway": 0,
@@ -273,8 +251,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "ShaneDeconinck/schoutteet-sanity": {
@@ -295,8 +273,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             }
         },
         "Trendwolves/gentells-app": {
@@ -464,16 +442,6 @@
                 "gateway": 0
             }
         },
-        "abovebeyond-ai/vera": {
-            "dispatches": {
-                "github": 0,
-                "gateway": 0
-            },
-            "pulls": {
-                "github": 0,
-                "gateway": 0
-            }
-        },
         "abovebeyond-ai/verify-abovebeyond": {
             "dispatches": {
                 "github": 0,
@@ -486,6 +454,50 @@
             }
         },
         "abovebeyond-ai/workspace": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "bextrust/bextrust": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "bextrust/bextrust-android": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 0,
+                "gateway": 0
+            }
+        },
+        "bextrust/control": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 1,
+                "gateway": 0
+            }
+        },
+        "bextrust/crm": {
             "dispatches": {
                 "github": 0,
                 "gateway": 0,
@@ -523,9 +535,6 @@
         "forge:control": {
             "skipped": "no token to read GitHub"
         },
-        "forge:dbc-webapplicatie": {
-            "skipped": "no token to read GitHub"
-        },
         "forge:elisabethdevestele-website": {
             "skipped": "no token to read GitHub"
         },
@@ -548,9 +557,6 @@
             "skipped": "no token to read GitHub"
         },
         "forge:hoet": {
-            "skipped": "no token to read GitHub"
-        },
-        "forge:hoet-design-web": {
             "skipped": "no token to read GitHub"
         },
         "forge:hoet-eyewear-mirror": {
@@ -589,9 +595,6 @@
         "forge:shanedeconinck-be": {
             "skipped": "no token to read GitHub"
         },
-        "forge:she-cosmetics-website": {
-            "skipped": "no token to read GitHub"
-        },
         "forge:signal-observatory-gentells": {
             "skipped": "no token to read GitHub"
         },
@@ -608,9 +611,6 @@
             "skipped": "no token to read GitHub"
         },
         "forge:trustedagentic": {
-            "skipped": "no token to read GitHub"
-        },
-        "forge:vera": {
             "skipped": "no token to read GitHub"
         },
         "forge:verify-abovebeyond": {
@@ -668,9 +668,6 @@
         "portal:control": {
             "skipped": "no token to read GitHub"
         },
-        "portal:dbc-webapplicatie": {
-            "skipped": "no token to read GitHub"
-        },
         "portal:elisabethdevestele-website": {
             "skipped": "no token to read GitHub"
         },
@@ -693,9 +690,6 @@
             "skipped": "no token to read GitHub"
         },
         "portal:hoet": {
-            "skipped": "no token to read GitHub"
-        },
-        "portal:hoet-design-web": {
             "skipped": "no token to read GitHub"
         },
         "portal:hoet-eyewear-mirror": {
@@ -734,9 +728,6 @@
         "portal:shanedeconinck-be": {
             "skipped": "no token to read GitHub"
         },
-        "portal:she-cosmetics-website": {
-            "skipped": "no token to read GitHub"
-        },
         "portal:signal-observatory-gentells": {
             "skipped": "no token to read GitHub"
         },
@@ -753,9 +744,6 @@
             "skipped": "no token to read GitHub"
         },
         "portal:trustedagentic": {
-            "skipped": "no token to read GitHub"
-        },
-        "portal:vera": {
             "skipped": "no token to read GitHub"
         },
         "portal:verify-abovebeyond": {
@@ -776,6 +764,8 @@
             }
         }
     },
-    "unexplained": [],
+    "unexplained": [
+        "bextrust/control: 1 pulls on GitHub, 0 performed by the gateway"
+    ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind, counted across pages until the window closes (rows 10.3.2, 10.3.4)"
 }

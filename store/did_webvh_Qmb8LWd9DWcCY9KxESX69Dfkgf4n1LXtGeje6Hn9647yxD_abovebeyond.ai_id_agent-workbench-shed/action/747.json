@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`portal:project-delete` removed the project, its updates, reports, admissions and requests, but not what is keyed by the slug or the job name instead of a foreign key:\n\n- the measure job `measure:<slug>` in `job_runs` (and its `job_acknowledgements`)\n- the uptime history in `uptime_ticks` and `uptime_hours`\n\nThat is why blitzt-website still shows in the fleet brief's job list with a run from 14 September while no such project exists, and why vera, dbc-webapplicatie and hoet-design-web would keep their measure jobs after being deleted.\n\nWhat changes:\n\n- Deleting a project now also deletes those rows, in the same transaction. The dry run lists them (`jobs`, `uptime`) next to the existing counts.\n- A slug with no project but with leftovers (reports, a measure job, uptime rows) is no longer an error: the command lists what is left, and with `--confirm=<slug>` exports and removes it. Same lock as for a project; no money check, since money hangs on a project. A slug with nothing left still fails as before.\n- `measure:<slug>` is matched exactly, so `measure:oud-ander` survives deleting `oud` (tested).\n\nTests: two new cases in `DeleteProjectTest` (7 pass). Full suite: 752 of 753 pass. The one failure is `BuildStampTest`, which also fails on main in a git worktree (`.git` is a file there), so it has nothing to do with this change. Pint is clean.\n\nAfter merge, on the box: `php artisan portal:project-delete <slug>` (dry run) then `--confirm=<slug>`, for vera, dbc-webapplicatie, hoet-design-web and blitzt-website.\n",
+            "branch": "workbench/delete-project-leftovers",
+            "title": "Delete a project's measure job and uptime history with it"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261109101130-6f245c"
+}

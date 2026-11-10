@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4d1fb81325495169d7eb8337cf74b7cc21841d6d",
+            "branch": "workbench/pdf-link-source",
+            "files_sha256": "328bd2db317d385ae758b66d96dbf26c7f23faf5a67241b9bfdfe5676aefc881",
+            "message": "Cite a PDF by its link in the Studio, not only a web page\n\n\"Paste a link\" refused any response that was not HTML, XML or plain\ntext, so a trend report linked as a PDF could not be cited. A PDF is now\nfetched under the same public-web checks (up to 40 MB, since a PDF cut\nshort cannot be read), its title, subject, date and page count read with\npdfinfo and its text with pdftotext, and it comes in as a raw signal\nunder \"Cited by the author\" like a page. Up to 60,000 characters of the\ntext are kept so the review gate can retrace a claim that is not on the\ncover.\n\nPortal: A trend report linked as a PDF can now be cited as a source in the Studio."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261109115504-3a8355"
+}

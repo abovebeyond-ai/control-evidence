@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "21a2acacfbc385b9ec8c8dd8ca71fe0ba8dc63f3",
+            "branch": "workbench/retell-v3-esm-functions",
+            "files_sha256": "7d860bd6fe408bad9c731796e3e77a832e962f6d5258ab17533847fe212cd907",
+            "message": "Start web calls on Retell v3, functions as ES modules"
+        },
+        "resource": "ShaneDeconinck/trendwolves-call-agents"
+    },
+    "run": "workbench-20261109202144-76ee03"
+}

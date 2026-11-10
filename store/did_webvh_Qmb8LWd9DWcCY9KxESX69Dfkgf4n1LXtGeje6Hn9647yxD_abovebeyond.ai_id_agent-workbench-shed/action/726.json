@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "23950fa2e09f1b1507c69850bd1b6580db72d8bc",
+            "branch": "workbench/cover-shows-the-offer",
+            "files_sha256": "cf4c60502886f77e7b3900d9f97af25d3b460b1bed74dc82fc87588e34365782",
+            "message": "Show the offer and the seller through the pre-launch cover"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261109095040-fbc583"
+}

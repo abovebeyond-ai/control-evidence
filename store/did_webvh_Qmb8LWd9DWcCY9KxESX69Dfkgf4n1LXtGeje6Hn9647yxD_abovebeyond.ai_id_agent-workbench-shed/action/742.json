@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "30b54650f11666c9d9d98c863ec90653ef4d10b1",
+            "branch": "workbench/delete-project-leftovers",
+            "files_sha256": "7143779d3e2d841aed5503d342363e20a2df8c6816f88d2937e46491dc727704",
+            "message": "Delete a project's measure job and uptime history with it, and clean a slug's leftovers"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261109101130-6f245c"
+}
