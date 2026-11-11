@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb1fe58bea500d819756abb7e949aac100624de5",
+            "branch": "workbench/readme-sealed",
+            "files_sha256": "296cf4828e97c7941370b51cf219bd40e6e5de79252923e1369099ba5a720d57",
+            "message": "README: our demo runs in sealed hardware\n\nSealed hardware is designed for our company and not yet deployed;\nit is not switched off until a pilot."
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261110205319-2a51f6"
+}

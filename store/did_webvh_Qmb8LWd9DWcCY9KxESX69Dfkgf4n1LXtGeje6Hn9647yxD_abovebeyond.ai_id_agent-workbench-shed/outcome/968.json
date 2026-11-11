@@ -1,0 +1,14 @@
+{
+    "action": "408111469eefb3fcdd0cada87ffedb1e",
+    "effect": {
+        "detail": {
+            "key": "mail:45",
+            "project": "stocklistplatform-eu",
+            "state": "parked"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 966,
+    "verdict": "ALLOW"
+}

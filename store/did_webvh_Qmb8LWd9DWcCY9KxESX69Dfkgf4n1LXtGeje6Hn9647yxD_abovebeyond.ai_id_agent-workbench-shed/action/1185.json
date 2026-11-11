@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: A sector picker above the three lists, each sector with three example questions.\n\nBacklog item from the brief: a new component, later. Needs the example questions per sector.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Sector picker above posts, trends and reports, with three example questions per sector"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212906-71c071"
+}

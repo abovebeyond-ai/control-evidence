@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: European trends should come first in the ticker and the trends list; a trend from Asia shows one line on what it means for young people in Europe.\n\nBacklog item from the brief: not for this pass. Needs an order rule (European origin first) and a short Europe reading for trends that come from Asian platforms.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Europe first in the ticker and the trends list, with a Europe line on Asian trends"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261110212852-0c0db1"
+}

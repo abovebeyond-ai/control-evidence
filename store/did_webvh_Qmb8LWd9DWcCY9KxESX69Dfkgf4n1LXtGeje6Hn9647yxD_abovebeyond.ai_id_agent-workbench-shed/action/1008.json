@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: Car-Pass asks software suppliers to send the battery State of Health (SOH) of a BEV or PHEV, so it shows on the vehicle's Car-Pass. The platform holds a SOH figure per vehicle but never sends it.\n\n## What is asked\n\nCar-Pass reports that second-hand EV registrations rose by almost 40% this year, and that it receives very few SOH reports. It asks suppliers to integrate the upload and points to the obligation to share it.\n\nThe old `POST /observation/{guid}/vhr/state-of-health` is **deprecated**. Its replacement is a dedicated call that does not need a VHR first:\n\n- `POST /state-of-health` (multipart: a `request` JSON part, an optional `file` PDF part of at most 5 MB), keyed on a 17-character VIN.\n- `reportSource`: either one of Car-Pass's connected testers (Car-Pass fetches the report by VIN, and `carPassIsAllowedToRetrieveReportWithTester = true` is required), or `OWN_REPORT` with `ownReport.stateOfHealhPercentage` (0-105), `reportOdometerReading`, `reportDate` (at most 6 months old) and the PDF.\n- `GET /state-of-health-sources` lists the possible sources.\n- The answer is `feedback` (`REPORT_LOADED`, `REPORT_NOT_FOUND`, `EXTERNAL_TESTER_NOT_AVAILABLE`, `VIN_UNKNOWN`, `NOT_ELECTRIC_VEHICLE`) with a translated `feedbackReason`.\n- A report shows on Car-Pass documents for 6 months. A Car-Pass already generated is not renewed by a new upload.\n\n## In the platform today\n\n`vehicles.battery_health_soh` exists (sheet field, partner API `main.battery_health_soh`, 0-105), but there is no report date, report mileage, PDF or source, and nothing is sent to Car-Pass.\n\n## Proposed\n\nOn the vehicle sheet of a BEV/PHEV: \"Send SOH to Car-Pass\", either from a connected tester or with an own report (percentage, mileage, date, PDF). Store and show the feedback. A SOH sent before the Car-Pass document is requested ends up on that document.\n\nSource: Portal mail:46.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Send the battery State of Health (SOH) of a BEV/PHEV to Car-Pass"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261110154850-43aa82"
+}

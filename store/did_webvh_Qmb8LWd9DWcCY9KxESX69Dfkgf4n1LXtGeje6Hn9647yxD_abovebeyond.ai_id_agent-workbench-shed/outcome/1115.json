@@ -1,0 +1,16 @@
+{
+    "action": "91a757cc773479ef24c8a4951a8a999e",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 2,
+            "review_requested": "ShaneDeconinck",
+            "url": "https://github.com/bextrust/gate-demo-box/pull/2",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1113,
+    "verdict": "ALLOW"
+}

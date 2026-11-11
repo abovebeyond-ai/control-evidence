@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: The Premium badge appears on posts that are open to the person looking at them. It should only show when the post is locked for that viewer.\n\nTwo causes on main:\n\n- The post page, the featured post on Posts and the reading room ask `isPremium()`, a property of the post (outside the open window of fifteen), so a subscriber who reads the post in full still sees Premium on it.\n- The post cards ask `isLockedFor()`, which for a signed-out visitor is true on every post, so the fifteen open posts carry Premium too, although they only ask for a free account.\n\nThe brief notes that the fifteen most recent posts are open to everyone, as the Reports page says. On main a signed-out visitor gets the teaser of every post and needs a free account for the full text (a deliberate rule in `Article::isLockedFor`), so the Reports sentence and the rule disagree; which one is right is a question for the owner.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Premium badge shows on posts the viewer can read"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212838-003541"
+}

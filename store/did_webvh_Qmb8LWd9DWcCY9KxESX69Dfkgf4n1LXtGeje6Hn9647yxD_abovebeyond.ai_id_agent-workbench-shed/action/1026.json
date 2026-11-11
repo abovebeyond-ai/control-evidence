@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The staging on Forge, naviskore.on-forge.com, is gone: the name no longer resolves and nothing answers. `elixir.json` already dropped it on 25 October (6f31da8b), but the README and `docs/deploy.md` still described it as a live environment that deploys from `main` on every push.\n\nThis removes it from both:\n\n- README: the environments table lists production only, and says the Forge staging is gone.\n- `docs/deploy.md`: the opening now names one staging, the rehearsal one on Ploi (`staging.naviskore.abovebeyond.ai`). The note that Elixir measures the Forge staging is replaced by what `elixir.json` says today. The refresh procedure for the Forge staging is replaced by a short note.\n\n`bin/staging-copy.php` and `bin/staging-login.php` are left alone. Their `load`, `after` and login modes refuse any host outside `on-forge.com`, so today they run nowhere. Pointing them at the Ploi staging is a decision of its own, and the old procedure stays in this file's history.\n\nDocs only, no code changes.\n",
+            "branch": "workbench/drop-forge-staging",
+            "title": "Drop the Forge staging from the docs"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261110201144-5f4191"
+}

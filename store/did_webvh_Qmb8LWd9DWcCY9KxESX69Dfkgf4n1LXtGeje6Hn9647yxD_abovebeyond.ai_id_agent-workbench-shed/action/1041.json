@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8558788a06831a75e7e274e17a5d33e9f2aab99f",
+            "branch": "workbench/trends-load-on-scroll",
+            "files_sha256": "d6fd343b7b4d75c4aa03b4dbc8c57580bcc1846068af391833b9fb36dbdaad6c",
+            "message": "Trends list: show the next trends as the reader scrolls to the end"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110202257-fa89a5"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:46",
+            "note": "Issues #1083 (Car-Pass document, P2), #1084 (API changes: /document, documentStatus, no 4xx repeat, P2), #1085 (SOH, P3). Estimate ~7-9 days in total. Questions: 1) button on the order form under 'Acties'? 2) only for Flemish garages, or for everyone with Car-Pass's refusal shown? 3) will you request a beta test account from Car-Pass and does anyone join the Q&A of 12/11 10:00? 4) SOH in this round or later?",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261110154905-385d22"
+}

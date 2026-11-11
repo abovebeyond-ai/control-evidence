@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: A fifth plan on the pricing page for custom work, with a \"Talk to us\" call instead of a price.\n\nBacklog item from the brief: a new component, later. Relates to the team-plan line in the new pricing questions (five or more people).\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "A fifth plan, Custom, with \"Talk to us\""
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212908-30927c"
+}

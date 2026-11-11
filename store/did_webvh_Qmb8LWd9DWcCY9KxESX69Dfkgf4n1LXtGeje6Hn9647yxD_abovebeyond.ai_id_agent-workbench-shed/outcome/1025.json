@@ -1,0 +1,16 @@
+{
+    "action": "9002a0509189825dbeb7c559ba2cb846",
+    "effect": {
+        "detail": {
+            "base": "a4310c79b1dacf1b1a7c2e1d88cdf23f7bc8ee26",
+            "branch": "workbench/drop-forge-staging",
+            "commit": "d0fa49e72bca6977ade06ec860d62d2ff794f387",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1023,
+    "verdict": "ALLOW"
+}

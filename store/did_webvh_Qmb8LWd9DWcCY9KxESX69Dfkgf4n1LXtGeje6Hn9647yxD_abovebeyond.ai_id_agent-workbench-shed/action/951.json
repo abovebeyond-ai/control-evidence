@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a70c8263df04dd5b11c8a15893a1ab116197344a",
+            "branch": "workbench/trends-online-by-rule-e2e",
+            "files_sha256": "3f72a18062db173a654e438579780ba1926465116727a5cf3ec8d2040c98814d",
+            "message": "Overview and trend page: online by rule, no Put on gentells.com"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261110083018-858c03"
+}

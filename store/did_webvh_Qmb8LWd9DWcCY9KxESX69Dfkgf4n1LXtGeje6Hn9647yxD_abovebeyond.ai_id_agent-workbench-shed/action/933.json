@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cc76c9f92cc158daf58dc760e4d1aa09ba74ea79",
+            "branch": "workbench/trends-measured-only",
+            "files_sha256": "628f0780a506fb3bd63c5d24270139e9bccaf15fb0a7492971cb3cbdfff01ed2",
+            "message": "Show trends with what was measured only, and when they were last seen"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110081646-683411"
+}

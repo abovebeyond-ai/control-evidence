@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: A new sector for drinks (soft drinks, coffee, alcohol, no/low), with its own sources; alcohol is read for 18+ only.\n\nBacklog item from the brief: not for this pass. A new sector in the Standard, with the 18+ rule for alcohol, followed by sources in the Observatory and the filters on the site.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Add a Drinks sector"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261110212858-349bd8"
+}

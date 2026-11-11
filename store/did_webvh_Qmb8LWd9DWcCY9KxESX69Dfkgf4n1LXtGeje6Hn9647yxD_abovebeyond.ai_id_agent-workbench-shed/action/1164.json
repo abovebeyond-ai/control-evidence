@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Answering a contact message needs no consent, so the required checkbox should go; the newsletter gets its own optional checkbox, unticked by default.\n\nToday the contact form requires one checkbox that covers both the reply and, \"if I opted in\", the newsletter, while the form has no way to opt in. Asked: drop the required consent for the reply, and add a checkbox \"Send me Gentells This Week. I can unsubscribe at any time.\", unticked by default. The privacy text already gives legitimate interest as the basis for answering messages. If this needs a layout change, keep the current form and flag it.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Contact form: no consent box to send a message, a separate unticked box for the newsletter"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212847-135a96"
+}

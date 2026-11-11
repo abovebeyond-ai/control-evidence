@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: A new page on trust and data; the brief says its copy is ready.\n\nBacklog item from the brief: a new page, later. The copy still has to be sent.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "A Trust & data page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212911-61688d"
+}

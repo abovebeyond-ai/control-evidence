@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3a2c0f233d86fffa372bf192fef4e43146d97420",
+            "branch": "workbench/handover-since",
+            "files_sha256": "e24727c3aef40e0dcd52150ab955d7f093205e308f54a028aea6b965b0db0707",
+            "message": "HANDOVER: what changed since 23 October\n\nThe Odoo adapter lives on control's acme-demo branch; section 9\nrecords what moved since the handover."
+        },
+        "resource": "bextrust/gate-demo-box"
+    },
+    "run": "workbench-20261110204422-ec4155"
+}

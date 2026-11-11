@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5a9390de9ed93e50f7bded9f96e88e0bcae4f9be",
+            "branch": "workbench/e2e-rule-book",
+            "files_sha256": "456fa63b8ac34d38281dfcd11cf4d748c8ff146e11d7a963512a824347e00ffb",
+            "message": "The end-to-end test decides by the rule book too\n\nWith CONTROL_RULE_BOOK, the story test loads the compiled book as two\nfounders approved it; reads are held to L1-1, the first write to L2-2,\nand an agent the book does not name is refused by L2-3."
+        },
+        "resource": "bextrust/control"
+    },
+    "run": "workbench-20261110211252-679e17"
+}

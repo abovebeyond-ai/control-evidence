@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: The 3D graph on the home page tells everyone to hold ctrl or cmd to zoom, which means nothing on a phone or tablet.\n\nAsked: on touch devices the line under the graph reads \"Drag to turn it. Pinch to zoom.\"; elsewhere it stays \"Drag to turn it. Hold ctrl or cmd to zoom.\"\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Graph instruction on touch screens says pinch to zoom"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212844-ca0dcf"
+}

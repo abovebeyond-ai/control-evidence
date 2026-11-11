@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c33bf1310a4cb374334e48159fb41224c20428e6",
+            "branch": "workbench/leonardo-background-removal",
+            "files_sha256": "23212e356114527cb5b29461a20977678d362dfd74fef653a501ec2db61307ab",
+            "message": "Background removal through Leonardo.Ai, where remove.bg's API goes on 1 December"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261110133454-edb4a7"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:46",
+            "note": "Issues #1083-#1085. Estimate 3-4 days. Shane asked Car-Pass for test VINs + balance (2026-11-10). Waiting on Ilse: button under Acties on the order form, Flanders only, SOH now or later.",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261110200406-59d059"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "7804055011f7d1edbef544081ca841e4",
+    "effect": {
+        "detail": {
+            "base": "c33bf1310a4cb374334e48159fb41224c20428e6",
+            "branch": "workbench/leonardo-background-removal",
+            "commit": "11fdaea1a20ff307dc28f3eb0f4b0b63a2894058",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 981,
+    "verdict": "ALLOW"
+}

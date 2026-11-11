@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Car-Pass extended the status call, moved the report endpoint and asks software not to repeat requests that got a 4xx. The existing VHR flow should follow, before the Car-Pass document (2027-01-01) builds on it.\n\n## What changed at Car-Pass\n\n1. `GET observation/{guid}/status/vhr` is **deprecated**. The same answer is now at `GET observation/{guid}/document`. The platform still calls `status/vhr` (`CarpassController::executeRESTCall`, case `vhr`, and `CarpassSmoke`).\n2. `GET observation/{guid}/status` returns `documentStatus` (`AVAILABLE` / `NOT_AVAILABLE`) and `documentStatusReason` (nl/fr/de). With `NOT_AVAILABLE` the document must not be fetched, and the reason must be shown to the dealer. Today `handleVhrResult` fetches the report on every `PROCESSED`. With `NOT_AVAILABLE` that call gets a 400, and the dealer sees the generic \"error_carpass\" with no reason. One case that applies to the VHR today: an issue confirmed a day late gives no document, and a new request is needed.\n3. Error responses: a 400 means the request itself is wrong. Repeating it unchanged is pointless and Car-Pass asks every supplier to stop doing that. To check in the platform: the daily renewal (`Daily::doUpdateOldCarpasses`) picks the same expired vehicles again every day. A renewal that got a 400 (or an issue nobody answers) is therefore likely sent again each day.\n4. Related, from the same spec: a `VEHICLE_HISTORY_DOCUMENT` now requires today's date **and today's mileage**. The daily renewal sends the mileage as it stands on the sheet, which may be weeks old. Car-Pass warns that this creates issues, and an issue now stays on the vehicle's history even after a late correction.\n\n## Proposed\n\n- Switch `vhr` to `observation/{guid}/document` (same output: `file`, `publicUrl`, `unknownVehicle`, `validUntil`), smoke-tested on the Car-Pass beta environment first.\n- Read `documentStatus`: on `NOT_AVAILABLE`, store the answer, show `documentStatusReason` in the dealer's language, and do not fetch.\n- Do not resend a request whose last answer was a 4xx until its input changed. Log the `errors[].field/message` so they can be looked into.\n- Decide what the daily renewal does with a stale mileage (point 4).\n\nSource: Portal mail:46.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Car-Pass API changes: /document endpoint, documentStatus in status, no repeat after a 4xx"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261110154847-09bc7b"
+}

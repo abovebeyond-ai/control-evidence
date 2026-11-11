@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b62dc5898a47ec31c99692441b26f5bfa272ec9",
+            "branch": "workbench/org-layout",
+            "files_sha256": "d37699110c34e11313ab7a7ab14dc8dc3747f98daeb6d34c8f5c3758cf43d06e",
+            "message": "receiptgen imports bextrust/control\n\nThe receipt generator uses the gateway's evidence code from\ngithub.com/bextrust/control, replaced by ../../../control."
+        },
+        "resource": "bextrust/bextrust-android"
+    },
+    "run": "workbench-20261110202810-9c1b6d"
+}

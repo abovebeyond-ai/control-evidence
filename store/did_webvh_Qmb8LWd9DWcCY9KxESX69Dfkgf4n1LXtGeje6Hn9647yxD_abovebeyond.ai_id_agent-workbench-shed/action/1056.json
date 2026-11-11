@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cd31633a3ecd9c0105035782f68a66ea7451f34f",
+            "branch": "workbench/start-here",
+            "files_sha256": "366bde99b7527e773c7a3a9b5a5052dfb394493bdc339404857eb071f3afe83a",
+            "message": "The gateway decides by the book; a fresh clone builds\n\nThe evaluator moves to bextrust/control, so gateway and book share it.\npolicy_decisions names which decisions govern which system. go.mod and\nprose follow the org layout; README.md is the start for all five repos."
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261110202557-368e0f"
+}

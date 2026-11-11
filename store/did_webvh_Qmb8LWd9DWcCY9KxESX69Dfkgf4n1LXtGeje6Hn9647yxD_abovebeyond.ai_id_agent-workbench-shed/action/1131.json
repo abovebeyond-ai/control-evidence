@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`tools/simulate.sh` runs our whole company on one machine, with test keys made for the run:\n\n1. the rule book's cases, and its compiled version;\n2. the CRM built and tested against the book;\n3. three founders with test keys, two of whom sign the CRM's rules version;\n4. the CRM serving on localhost;\n5. the gate's end-to-end tests against it, deciding by the grant and by the book (bextrust/control#3);\n6. the record checked with `cmd/verify` and the gate's public key alone.\n\nIt does not cover the phone (approvals are signed with test keys), sealed hardware or the anchor; the README says so.\n\nThis branch also carries the README lines of #2 unchanged, so the two merge in either order.\n",
+            "branch": "workbench/simulate",
+            "title": "Run it all, locally: tools/simulate.sh"
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261110211314-147615"
+}

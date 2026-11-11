@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ad799a2dc57c7bf12ac33b4559e4cf44c4af0b4e",
+            "branch": "workbench/copy-update-brief",
+            "files_sha256": "ba1de4b57ffa1cdedcd6968f272c49ece4510546e155f65e55fb3b11a0faef51",
+            "message": "Copy update for gentells.com, and five small fixes from the same brief"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110213424-027b3a"
+}

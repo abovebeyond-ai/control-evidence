@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:45",
+            "note": "Issue #1080. Blurit goes away too: own cut-out service with hiding on is the only route (Leonardo only cuts). 3-4 days + machine/env/model hosting by Shane. Open: when does Blurit stop, and go for the machine.",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261110110531-026e30"
+}

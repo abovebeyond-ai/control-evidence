@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea3222f45461a669ca5a7a81e34ac3a56a688fae",
+            "branch": "workbench/trend-page-lean",
+            "files_sha256": "60483064ba8c86fda398d921dedb60f2284f085b43075ea0c971bb2e31f21326",
+            "message": "Trend pages: count signals and sources, no verdict, no explainer under the headline"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110203521-e0400c"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:45",
+            "note": "Issue #1080. Production still on remove.bg; which route goes live before 1 Dec: Leonardo driver (0.5-1 day, ~USD 500/month at list price, garage holds key) or own cut-out service (1-2 days + machine and Forge env by Shane, Blurit stays for plates)? Recommendation: own service, cut only.",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261110110309-4b234f"
+}

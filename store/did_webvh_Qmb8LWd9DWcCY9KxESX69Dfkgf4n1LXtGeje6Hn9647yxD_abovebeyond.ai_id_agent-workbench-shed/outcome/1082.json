@@ -1,0 +1,10 @@
+{
+    "action": "722dc2a4eb776ef0aa2417bce7c52fd2",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability does not cover branch.push on bextrust/gate-demo-box",
+    "step": 1080,
+    "verdict": "DENY"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "78b0fe456b4c69269ef5384bf5bbf21499a289a9",
+            "branch": "workbench/org-layout",
+            "files_sha256": "e3012e0477a001ebb5e63ce41fea69060d83f1806667b90046cae298314834e0",
+            "message": "Build against the org layout\n\ngo.mod replaces ../control, where a clone of the bextrust org puts it;\nthe README says how to clone the three repositories side by side."
+        },
+        "resource": "bextrust/crm"
+    },
+    "run": "workbench-20261110202754-5bc05b"
+}

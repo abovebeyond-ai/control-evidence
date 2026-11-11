@@ -1,0 +1,16 @@
+{
+    "action": "45472039b482337df1262d9581b8e91f",
+    "effect": {
+        "detail": {
+            "base": "ad799a2dc57c7bf12ac33b4559e4cf44c4af0b4e",
+            "branch": "workbench/copy-update-brief",
+            "commit": "dc07cf88121b0736a3acc286953ec12a9f91da5b",
+            "files": 32,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1197,
+    "verdict": "ALLOW"
+}

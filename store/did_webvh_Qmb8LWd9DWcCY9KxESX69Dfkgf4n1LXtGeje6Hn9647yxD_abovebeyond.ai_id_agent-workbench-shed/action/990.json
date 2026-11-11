@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c33bf1310a4cb374334e48159fb41224c20428e6",
+            "branch": "workbench/leonardo-real-answers",
+            "files_sha256": "5663cbf353113456ed64490f20f44a23dbe1652ad1dba8e0d30dfb787349d3d5",
+            "message": "Background removal through Leonardo.Ai, read as it really answers"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261110151414-c65b8c"
+}

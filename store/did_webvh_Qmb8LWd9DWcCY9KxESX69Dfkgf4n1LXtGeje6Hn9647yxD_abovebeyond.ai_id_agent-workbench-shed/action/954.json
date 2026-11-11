@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Trends now go on gentells.com by rule: live, seen at least five times on platforms, the newest at most 30 days old. A person can take one off. The Overview's \"Put on gentells.com\" button belonged to the approval step, which is gone.\n\n## What changes\n\n- **Overview** (`src/pages/Overview.jsx`):\n  - each trend card says where it stands, as one of three states:\n    - \"Online on gentells.com\";\n    - \"Taken off gentells.com\";\n    - \"Offline: seen too seldom or not lately on platforms\";\n  - the desk tile counts what is online and states the rules;\n  - the Put action is removed.\n- **Trend page** (`src/pages/InsightDetail.jsx`):\n  - \"On the site\" shows Online, Taken off or Offline, with the rules;\n  - the actions are \"Take it off the site\" and \"Put it back\".\n\n- **e2e**: the mocks give each Overview card a site state (`online`, `offline`) and the site rules. The specs check the badges and the desk tile, and that \"Put on gentells.com\" is gone.\n\nThis replaces #140, whose e2e run failed on the removed button and the old wording.\n\n## Tests\n\n- `npx playwright test`: 96 of 96.\n- `npm run build` passes.\n",
+            "branch": "workbench/trends-online-by-rule-e2e",
+            "title": "Overview and trend page: online by rule"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261110083018-858c03"
+}

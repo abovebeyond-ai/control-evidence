@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P3\nSummary: Most trends show \"Easing\" because the first month of measurement counts as the baseline and the current month is still incomplete.\n\nBacklog item from the brief: not for this pass. Recalculate the direction without the first month of measurement (March) and without the month that is still running, so a trend is not called easing for an artefact of the window.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P3"
+            ],
+            "title": "Trend direction: leave out the start-up month and the running month"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261110212855-fb6105"
+}

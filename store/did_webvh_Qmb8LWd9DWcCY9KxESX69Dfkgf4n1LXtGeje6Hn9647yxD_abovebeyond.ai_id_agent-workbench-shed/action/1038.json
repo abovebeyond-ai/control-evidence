@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Both stagings are gone. naviskore.on-forge.com no longer resolves, and staging.naviskore.abovebeyond.ai still points at the production server but nothing answers there. `elixir.json` already dropped staging on 25 October (6f31da8b), yet the README and `docs/deploy.md` still describe both as live.\n\n- README: the environments table lists production only and says there is no staging. The monitoring paragraph no longer says Elixir checks whether staging runs what was merged.\n- `docs/deploy.md`: the opening says there is no staging. \"De staging ernaast\" becomes \"De stagings, tot november 2026\", kept as a record of how they were set up, for whoever builds one again. The Forge refresh procedure is replaced by a short note. The report-comparison section says where it ran and that its commands still work against any copy of the database. Historical notes, such as what staging caught in August, stay as they were.\n\n`bin/staging-copy.php` and `bin/staging-login.php` are left alone. Their `load`, `after` and login modes refuse any host outside `on-forge.com`, so today they run nowhere. Whether to keep them is a decision of its own.\n\nDocs only. This supersedes #283, which still names the Ploi staging as live.\n",
+            "branch": "workbench/no-staging-docs",
+            "title": "Drop both stagings from the docs"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261110201637-c369ad"
+}

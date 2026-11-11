@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-10T07:34:35+00:00",
+    "computed_at": "2026-11-11T07:34:39+00:00",
     "window": {
-        "since": "2026-11-03T07:33:04+00:00",
+        "since": "2026-11-04T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -96,8 +96,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 4,
+                "gateway": 4
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -126,8 +126,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 10,
-                "gateway": 10
+                "github": 8,
+                "gateway": 8
             }
         },
         "Trendwolves/gentells-site": {
@@ -137,8 +137,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 7,
-                "gateway": 7
+                "github": 12,
+                "gateway": 12
             }
         },
         "Trendwolves/glk-transferor": {
@@ -208,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 11,
-                "gateway": 11
+                "github": 10,
+                "gateway": 10
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -317,8 +317,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 4,
+                "gateway": 4
             }
         },
         "abovebeyond-ai/bextrust": {
@@ -471,8 +471,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 3,
+                "gateway": 3
             }
         },
         "bextrust/bextrust-android": {
@@ -482,8 +482,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "bextrust/control": {
@@ -493,8 +493,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 0
+                "github": 3,
+                "gateway": 2
             }
         },
         "bextrust/crm": {
@@ -504,8 +504,19 @@
                 "workflow": "absent"
             },
             "pulls": {
+                "github": 1,
+                "gateway": 1
+            }
+        },
+        "bextrust/gate-demo-box": {
+            "dispatches": {
                 "github": 0,
-                "gateway": 0
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 2,
+                "gateway": 2
             }
         },
         "forge:abovebeyond": {
@@ -765,7 +776,7 @@
         }
     },
     "unexplained": [
-        "bextrust/control: 1 pulls on GitHub, 0 performed by the gateway"
+        "bextrust/control: 3 pulls on GitHub, 2 performed by the gateway"
     ],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind, counted across pages until the window closes (rows 10.3.2, 10.3.4)"
 }

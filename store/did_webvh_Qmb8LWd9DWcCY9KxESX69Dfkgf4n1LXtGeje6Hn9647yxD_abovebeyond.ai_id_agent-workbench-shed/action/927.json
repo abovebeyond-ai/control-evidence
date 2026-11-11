@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b2c303c60694c559251e84f05bfba5ae5854f21d",
+            "branch": "workbench/trends-measured-only",
+            "files_sha256": "852682619b88ef9e1084f9511b9cd860d042c15b301ce9cc15f934bd26ae40df",
+            "message": "Show trends on gentells.com by what was measured, by rule, without the model's prose"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261110081607-49ae71"
+}

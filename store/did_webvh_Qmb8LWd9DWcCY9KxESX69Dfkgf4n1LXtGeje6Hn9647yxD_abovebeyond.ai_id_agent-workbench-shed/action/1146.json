@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The brief moves Signal from month-by-month to the same twelve-month plan, billed monthly, as Decode and Intelligence, and rewrites the pricing page and its questions around that. The copy may only go live once billing matches it.\n\nWhat is asked:\n\n1. Billing: Signal becomes a twelve-month plan per person, billed monthly, like Decode and Intelligence. Today `Offer` marks Signal `annual => false`, and the live offer can be overridden from the Observatory (Settings > Plans), so the change is the site default, the pipeline's plan defaults and the saved offer together. The terms (section on plans) describe Signal as monthly and need the same change.\n2. Pricing copy, only after 1 is live: the hero line, a \"Per person \u00b7 12 months, billed monthly\" line under every paid price (new on Signal), new descriptions for Signal, Decode and Intelligence, and for Intelligence a booking link (placeholder, to be supplied).\n3. Pricing questions: \"Is the price per person?\", \"How are paid plans billed?\", new answers on switching and cancelling, and a new question \"Can I subscribe for one month?\" after the billing question.\n\nOpen before building: whether Signal moves to twelve months now, what happens to people already on a monthly Signal plan, and the matching terms text.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Every paid plan a twelve-month plan per person, and the pricing copy that says so"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212830-d4bbd3"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "5e17ad12714ea9a94af5e6185a7f522b",
+    "effect": {
+        "detail": {
+            "fields": [
+                "links",
+                "replaceLinks"
+            ],
+            "project": "naviskore-webapp"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1020,
+    "verdict": "ALLOW"
+}

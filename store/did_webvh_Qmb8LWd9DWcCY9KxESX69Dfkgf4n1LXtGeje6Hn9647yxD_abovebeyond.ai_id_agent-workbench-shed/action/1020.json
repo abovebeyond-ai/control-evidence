@@ -1,0 +1,28 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "links": [
+                {
+                    "kind": "production",
+                    "label": "Website",
+                    "url": "https://naviskore.be"
+                },
+                {
+                    "kind": "repo",
+                    "label": "Repo",
+                    "url": "https://github.com/ShaneDeconinck/naviskore"
+                },
+                {
+                    "kind": "hetzner",
+                    "label": "Hetzner",
+                    "url": "https://console.hetzner.cloud"
+                }
+            ],
+            "replaceLinks": true
+        },
+        "resource": "portal:naviskore-webapp"
+    },
+    "run": "workbench-20261110201041-693e41"
+}

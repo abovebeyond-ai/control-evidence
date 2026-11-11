@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P1\nSummary: The garage asks what has to happen before remove.bg's self-service API stops on 1 December 2026 at 09:00, and for an estimate. #1004 is closed because the own cut-out service was merged, but production still cuts every photo through remove.bg, so on 1 December background removal stops unless one route is live.\n\nSource: Portal mail:45 (a forwarded remove.bg notice from the garage, sent on 5 November; the account had used more than 80% of its 1,200 monthly credits).\n\n## Where it stands\n\n- `BACKGROUND_REMOVAL` still defaults to `removebg`. Nothing has been switched over in production.\n- The own service (`services/cutout`, #1006, #1008, #1009) is merged, but no machine runs it and `CUTOUT_URL` / `CUTOUT_TOKEN` are not set. Five later service commits (second look at plate zones, plate zone sizes, keeping the photo when the cut is no car) sit on `workbench/cutout-second-look` and have not been proposed.\n- No Leonardo.Ai driver exists. #1004 describes what it would take: the `generationssync` endpoint, a Bearer key, JSON in and out, the background as `guidances.background_image_reference`, refusals mapped from `errors[]`, and a new balance check.\n- Blurit is a separate API and is not touched by remove.bg's shutdown.\n\n## The two routes\n\n**A. Leonardo.Ai** (the path remove.bg points to)\n- Code: one `LeonardoRemover` behind the existing `BackgroundRemover` contract, a third driver value, the key setting, the Koppelingen check, and tests. Estimate: half a day to a day.\n- Someone at the garage has to open an account and enter the key.\n- Running cost: Leonardo's migration guide lists USD 0.1047 per image and gives no lower price for `size=preview`. Today a preview call costs 0.25 credit, so 1,200 credits cover about 4,800 photos a month. At Leonardo's list price, the same volume costs about USD 500 a month.\n\n**B. Own cut-out service** (already built)\n- Work: a 4 vCPU / 8 GB machine with no GPU (the trials were sized on a Hetzner CX32), the container with a token behind a firewall, the env values on Forge, then a run next to staging on a fresh sample before switching. Estimate: one to two days, plus the operator actions (creating the machine and setting the env values).\n- Lowest-risk cut-over before 1 December: the own service only cuts (`CUTOUT_HIDES_PLATES=false`) and Blurit keeps hiding the plates. On whole cars the cut-out was judged equal to remove.bg. Replacing Blurit can follow later, once the plate step's false blurs are under control.\n- Running cost: the machine, a fixed monthly fee and no per-photo charge.\n\n## Questions that need an answer\n\n1. Which route goes live before 1 December: A, B, or B with A as a fallback?\n2. For A: who opens the Leonardo.Ai account and holds the key?\n3. For B: who creates the machine and where it runs, and whether the five commits on `workbench/cutout-second-look` go in first.\n\nRelated: #1004, #1005, #584.\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P1"
+            ],
+            "title": "What has to happen before remove.bg's API stops on 1 December, and what does each route cost?"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261110110258-91afa4"
+}

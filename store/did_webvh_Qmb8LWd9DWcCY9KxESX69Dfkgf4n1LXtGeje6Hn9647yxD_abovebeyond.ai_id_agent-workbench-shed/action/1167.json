@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: Every trend currently carries only Gen Z. The brief asks to derive generation (Gen Z, ZAlpha, Gen Alpha) and life stage from the trend's signals.\n\nBacklog item from the brief: not for this pass, a separate ticket. Each trend should carry the generations and life stages its signals show, so the filters on the site and the trend pages say who it is about.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Derive generation and life stage per trend from its signals"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261110212850-5d8eb0"
+}

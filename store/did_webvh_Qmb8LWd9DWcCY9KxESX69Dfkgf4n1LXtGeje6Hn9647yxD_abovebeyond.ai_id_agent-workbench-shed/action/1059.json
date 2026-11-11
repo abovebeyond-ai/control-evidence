@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two things in one pull request.\n\n**The gateway decides by the book.** The DMN evaluator moves to bextrust/control (`rules`, `feel`), so the gateway and the book's own tests share one implementation. `book.Decision` is now `rules.Table`. `rulebook/book.json` gains `policy_decisions`, which says which decisions govern which system (crm: L1, L2; github: L4). `TestTheGatewayDecidesAsTheBook` checks that the gateway reaches the same outcome as the book on every case.\n\n**A fresh clone builds.** `go.mod` replaces now point to `../control`, the same layout as the GitHub org. Prose and cases name `bextrust/control` and `bextrust/crm`. A new `README.md` is the starting point for the five repositories: what each holds, how to clone, build, test and run locally, and what is built or not yet. `docs/hosting-lessons.md` keeps what an earlier staging attempt taught.\n\nMerge this before the crm `lean` PR, which needs `book.Decision` as a pointer.\n",
+            "branch": "workbench/start-here",
+            "title": "The gateway decides by the book; a fresh clone builds"
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261110202557-368e0f"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Every row in the trends list should carry the trend's own counts: signals, sources and platforms, without a verdict word.\n\nThe brief asks for the evidence line under each trend headline to show the three counts of that trend (for example 69 signals, 34 sources, 11 platforms) and to drop the verdict wording (\"A lead\", \"more in part\").\n\nOn main the verdict wording is already gone (the line reads \"N signals from M sources\" since 10 November 2026). What is left is the third count: platforms, which the card already carries as `platform_count`.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Trends list: show signals, sources and platforms under each headline"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212833-d1bda6"
+}

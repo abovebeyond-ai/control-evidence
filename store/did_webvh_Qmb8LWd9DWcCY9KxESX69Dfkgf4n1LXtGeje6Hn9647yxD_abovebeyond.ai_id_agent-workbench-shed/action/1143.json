@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The brief replaces the wording on the home page, the post cards, the Reports page, the contact page, the newsletter block and the footer. Words only; layout, sections and illustrations stay.\n\nWhat is asked, block by block (current text matched on main):\n\n- Home hero: the paragraph under \"Read, understand, activate\" gets a new two-sentence text (young Europe before it shows up in your data; twenty years of decoding, read in real time). The hero heading stays.\n- Home stats strip: the platform line names TikTok, Instagram, Pinterest, Rednote, Douyin and Bilibili, plus reports and cultural publications.\n- Post cards (home and Posts): the call on every card reads \"Read the post\", also when the post is locked (it said \"Read the teaser\").\n- How we read: step 01 Signal speaks of signals from Western and Asian platforms plus curated reports; step 03 says \"researchers\" instead of \"editors\".\n- Where AI stops: new intro (hybrid by design, semioticians with twenty years of youth culture) and new bodies for the three columns; the third column's title becomes \"Stay relevant\". The labels Depth, Context and Speed stay.\n- Built for professionals: three new labels and lines (brands and strategy teams; agencies and media; employers and institutions).\n- Reports page: the line under \"A new report every month.\" gains a first sentence on what each report does.\n- Contact: the right-hand block becomes \"Custom research and strategy sessions\" with a new text; the consent text uses the newsletter's new name.\n- Newsletter: the name is \"Gentells This Week\" everywhere (site, forms, confirmation mail and page, the newsletter mail itself), the block text and button follow.\n- Footer: the line by the Trendwolves mark adds who developed the product (a named person, in the brief).\n\nRules from the brief: British English; Gen Z, Gen Alpha and ZAlpha spelled so; a placeholder booking link is left out until it is supplied; a text that does not fit its element without a layout change is flagged, not forced.\n\nAlso asked: the Lifestage filter on Posts shows Students and Young Families, only if posts carry those tags. The filter already lists exactly the lifestages that have posts (`Taxonomy::lifestagesWithContent`), so the two appear by themselves once a post is tagged with them; no change needed.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Copy update: home, posts, reports, contact, newsletter and footer"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212819-09e6a5"
+}

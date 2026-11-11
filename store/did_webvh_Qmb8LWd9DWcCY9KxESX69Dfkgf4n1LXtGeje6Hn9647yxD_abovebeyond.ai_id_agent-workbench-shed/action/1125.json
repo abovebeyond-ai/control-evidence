@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The end-to-end test ran the gate by the grant only. With `CONTROL_RULE_BOOK` set to a compiled version of the rule book, it now loads that version as two founders approved it with their security keys, and the gate decides every act by the book as well:\n\n- each read under the standing grant is recorded as decided by L1-1, `go`;\n- the first write is recorded as decided by L2-2, `ask`, and waits for a founder's word as before;\n- at the end, another agent with the same grant, approved by two of the council, is refused by L2-3 before anyone is asked, and that refusal is recorded too.\n\nWithout `CONTROL_RULE_BOOK` the test runs as before. Under the sample book in `rules/testdata` it fails at the first read, so the new checks do bite.\n\nAgainst a real CRM, with our book: 60 records for the CRM agent and 3 for the refused one, all verified by `cmd/verify` with the gate's public key alone. `bextrust/tools/simulate.sh` (bextrust/bextrust#3) runs it.\n",
+            "branch": "workbench/e2e-rule-book",
+            "title": "The end-to-end test decides by the rule book too"
+        },
+        "resource": "bextrust/control"
+    },
+    "run": "workbench-20261110211252-679e17"
+}

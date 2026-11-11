@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a4310c79b1dacf1b1a7c2e1d88cdf23f7bc8ee26",
+            "branch": "workbench/drop-forge-staging",
+            "files_sha256": "9436325d42040ce8b3ce16dd3646916c432f46826f5db43f8af3d33a51ad17ce",
+            "message": "Drop the Forge staging from the README and the deploy docs"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261110201144-5f4191"
+}

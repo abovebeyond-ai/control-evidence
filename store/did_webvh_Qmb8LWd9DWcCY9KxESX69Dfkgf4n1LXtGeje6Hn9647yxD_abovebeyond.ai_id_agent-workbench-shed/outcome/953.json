@@ -1,0 +1,16 @@
+{
+    "action": "04dcf6f59549fad38f4ecde54b62b0b4",
+    "effect": {
+        "detail": {
+            "base": "a70c8263df04dd5b11c8a15893a1ab116197344a",
+            "branch": "workbench/trends-online-by-rule-e2e",
+            "commit": "4765aa03482dba938c92893fbeeaad1898b32ff7",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 951,
+    "verdict": "ALLOW"
+}

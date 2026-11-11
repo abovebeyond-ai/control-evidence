@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:45",
+            "note": "Issue #1080, PR #1081: Leonardo driver (BACKGROUND_REMOVAL=leonardo); waits for merge, a Leonardo key from the garage, staging test, switch before 1 Dec 09:00.",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1081"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261110133553-957420"
+}

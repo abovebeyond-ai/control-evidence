@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: A new strip with client logos under that line.\n\nBacklog item from the brief: a new component, later. Needs the logos and permission to show them.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Strip with client logos: \"Built by Trendwolves. Trusted by those who need to get it right.\""
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212903-6cba87"
+}

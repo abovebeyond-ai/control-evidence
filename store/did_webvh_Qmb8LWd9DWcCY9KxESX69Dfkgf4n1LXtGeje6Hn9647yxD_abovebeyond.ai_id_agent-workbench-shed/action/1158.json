@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P3\nSummary: One post carries the Gaming sector although it is about sportswear; it belongs under Fashion and Sport.\n\nThe post \"Sportswear Buyers Customize Their Kits Instead of Plain Logos\" shows GAMING as its sector on gentells.com. Asked: Fashion (and Sport) instead. The sector comes with the post from the Observatory, so the fix is in the post's tags there (Studio or the pipeline's tagging), not on the site.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P3"
+            ],
+            "title": "Post \"Sportswear Buyers Customize Their Kits Instead of Plain Logos\" is tagged Gaming"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261110212841-adcdf1"
+}

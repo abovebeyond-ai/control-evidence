@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:47",
+            "note": "PR #272 closes site #259 #261-#265. Ask: Signal to 12-month plan now? (#260, existing monthly subscribers, terms). Signed-out: 15 newest open in full, or Reports text changes? (#263). Backlog: site #266-271, pipeline #432-435, standard #24.",
+            "state": "parked",
+            "url": "https://github.com/Trendwolves/gentells-site/pull/272"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261110213553-690a40"
+}

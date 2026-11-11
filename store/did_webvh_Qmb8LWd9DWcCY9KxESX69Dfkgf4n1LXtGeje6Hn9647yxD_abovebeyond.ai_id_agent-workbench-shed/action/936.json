@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A trend page showed the full reading a model wrote, and nobody screens that prose before it is public. This shows a trend with what the Observatory measured only, and says when it was last seen on platforms. It goes with the pipeline change that puts trends on the site by rule (seen at least five times on platforms, the newest at most 30 days old).\n\n## What changes\n\n- **Migration** `2026_11_09_100000_trend_cards_measured_only`:\n  - adds `last_seen` (date) and `observed` to `trend_cards`;\n  - strips the prose fields (`TrendCard::PROSE`) from the stored readings;\n  - clears the summary, links, graph and shifts of the cards already online.\n- **Projection** stores `last_seen` and `observed`, and keeps summary, links, graph and shifts empty, whatever is sent.\n- **Trend page:**\n  - the reading sections, the \"Read it together with\" links and the layer graph are gone;\n  - a short block says how often and when the trend was last seen (`TrendCard::seenLine`);\n  - the block also says that the page shows what was measured and that the trend leaves when it goes quiet;\n  - the page description is that line;\n  - members keep every signal, now labelled with its own text.\n- **Trend card** says \"Last seen {date}\".\n- **Post page** links a cited trend only while it is reachable (`TrendCard::reachable`); a trend that went quiet is named without a link.\n- **API and MCP:**\n  - shapes add `last_seen` and `observed`;\n  - search matches the headline only, since the prose is gone;\n  - the contract moves to **4.0.0** (`docs/mcp-changelog.md`), because fields clients read are now empty.\n\n## Deploy\n\nRun the migration with the deploy. The first sync after the pipeline change may drop more than half of today's cards. In that case the delete brake refuses the whole sync, and the current cards stay up without their prose. To let it through, set `GENTELLS_MAX_DELETE_SHARE=1` for one sync, then remove it.\n\n## Tests\n\n- `php artisan test`: 597 of 598. The one failure is `BuildStampTest`, which only fails in a git worktree.\n- Pint passes.\n- New: `tests/Feature/TrendMeasuredOnlyTest.php`.\n- Updated: `EvidenceIsTheProduct`, `InsightGraph`, `TrendLinks`, `TrendShift`, `TrendSignals`.\n- The MCP contract fixture is rewritten.\n",
+            "branch": "workbench/trends-measured-only",
+            "title": "Trend pages: measured only, last seen on platforms"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110081646-683411"
+}

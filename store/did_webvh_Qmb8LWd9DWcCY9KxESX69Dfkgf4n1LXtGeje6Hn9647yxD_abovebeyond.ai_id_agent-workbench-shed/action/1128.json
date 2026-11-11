@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb1fe58bea500d819756abb7e949aac100624de5",
+            "branch": "workbench/simulate",
+            "files_sha256": "7f41c51b63a41b41d42d988f3647119683f334aecd85e6f90c0a025e62335576",
+            "message": "Run it all, locally: tools/simulate.sh\n\nThe book, the CRM under a signed rules version, the gate between agent\nand CRM deciding by grant and book, and the record checked with the\ngate's public key alone; test keys made for the run."
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261110211314-147615"
+}

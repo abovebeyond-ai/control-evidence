@@ -1,0 +1,16 @@
+{
+    "action": "11d2c44a690b7f06a90b8429df2bf771",
+    "effect": {
+        "detail": {
+            "base": "ea3222f45461a669ca5a7a81e34ac3a56a688fae",
+            "branch": "workbench/trend-page-lean",
+            "commit": "2ca9e1aa3d0ccf722dc317ca903def502e290bef",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1086,
+    "verdict": "ALLOW"
+}

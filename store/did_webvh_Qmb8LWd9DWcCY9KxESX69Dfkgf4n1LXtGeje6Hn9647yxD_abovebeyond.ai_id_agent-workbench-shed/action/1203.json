@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:47",
+            "note": "Site PR #272 proposed (copy + small fixes; closes site #259 #261-#265). Question for the owner: may Signal move to the twelve-month plan now (site #260: what about current monthly Signal subscribers, and the terms text)? Pricing copy waits on that. Also: should signed-out visitors read the 15 newest posts in full, as the Reports page says, or does that sentence change (#263)? Backlog issues: site #266-#271, pipeline #432-#435, standard #24.",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261110213541-2c0381"
+}

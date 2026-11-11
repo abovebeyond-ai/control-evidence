@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: Every link from gentells.com to the Signal Observatory should open in a new tab, so the site stays open behind it.\n\nThe Observatory links (nav, mobile menu, account page) open in the same tab today. Asked: `target=\"_blank\"` with `rel=\"noopener\"` on each of them.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Links to the Observatory open in a new tab"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212836-d22c66"
+}

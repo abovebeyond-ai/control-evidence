@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a4310c79b1dacf1b1a7c2e1d88cdf23f7bc8ee26",
+            "branch": "workbench/no-staging-docs",
+            "files_sha256": "df4e94c2be44fcf18ef7ddb4adf0329a2d776a7bb7df858d45ea5defbd82fac4",
+            "message": "Say there is no staging in the README and the deploy docs"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261110201637-c369ad"
+}

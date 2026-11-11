@@ -1,0 +1,16 @@
+{
+    "action": "53e6fcb4de7e53ed59e946404ab5a7d0",
+    "effect": {
+        "detail": {
+            "base": "c33bf1310a4cb374334e48159fb41224c20428e6",
+            "branch": "workbench/leonardo-real-answers",
+            "commit": "c911ab515a00ba1ad621b84b2a87c6ad9b932541",
+            "files": 15,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 990,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:47",
+            "note": "Reading the copy update brief (docx) and mapping it to gentells-site",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261110212353-14b74b"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: Search should find related terms (\"alcohol\" also finds beer, sober, no/low, nightlife) and, when nothing matches, show the nearest trends, reports and posts instead of an empty page.\n\nBacklog item from the brief: not for this pass.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Search on synonyms and related terms, never an empty result"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212900-2d1c23"
+}

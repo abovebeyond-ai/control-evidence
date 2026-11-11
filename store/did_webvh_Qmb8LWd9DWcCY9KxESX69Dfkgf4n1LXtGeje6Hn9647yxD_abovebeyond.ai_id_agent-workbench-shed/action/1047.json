@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a4310c79b1dacf1b1a7c2e1d88cdf23f7bc8ee26",
+            "branch": "workbench/dependency-audit-november",
+            "files_sha256": "7121fa5e850d0b46eee612c8424ef075d9d64415e0dba254ce534641e696b9e5",
+            "message": "Patch the Symfony packages and follow-redirects that fail the dependency audit"
+        },
+        "resource": "ShaneDeconinck/naviskore"
+    },
+    "run": "workbench-20261110202422-bafd70"
+}

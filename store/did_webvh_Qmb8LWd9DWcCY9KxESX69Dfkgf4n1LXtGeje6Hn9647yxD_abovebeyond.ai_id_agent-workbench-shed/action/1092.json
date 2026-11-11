@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b750d8e70aa5c1e49ce292c1b439618a111ee725",
+            "branch": "workbench/carpass-document-endpoint",
+            "files_sha256": "1469d0f70bb58823d2581c4e7263ce04634071c3381f19f6bc120335234d6d58",
+            "message": "Read Car-Pass documentStatus, fetch from /document, stop repeating 4xx"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261110203544-c83a9d"
+}

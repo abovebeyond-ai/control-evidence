@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The trends list showed nine cards and a \"Load more trends\" button. With trends now on the site by rule, the list is longer, and a reader had to click for every nine.\n\n## What changes\n\n- `revealOnScroll` (`resources/js/app.js`): an Alpine component that shows the next nine cards when a marker under the grid comes within a screen of view. If the marker is still in view after the cards render, it keeps going.\n- `resources/views/pages/trends.blade.php` uses it.\n  - The button stays, for keyboards and for browsers without IntersectionObserver. It disappears once every card is shown.\n  - The stale comment about a cap of 48 is updated.\n\nEvery card is still in the first response. Nothing is fetched while scrolling.\n\n## Tests\n\n- In a browser with 30 cards:\n  - desktop: 9, then 18, 27, 30 while scrolling;\n  - 390 px wide: 9, then 18, 27 and on.\n- `php artisan test` on the 23 feature tests that render the trends pages: 148 of 148.\n",
+            "branch": "workbench/trends-load-on-scroll",
+            "title": "Trends list: more trends appear while scrolling"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110202257-fa89a5"
+}

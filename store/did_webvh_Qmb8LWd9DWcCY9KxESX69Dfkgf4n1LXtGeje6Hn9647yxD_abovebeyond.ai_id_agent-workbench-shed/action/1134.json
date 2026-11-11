@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ad799a2dc57c7bf12ac33b4559e4cf44c4af0b4e",
+            "branch": "workbench/trend-graph-beside-title",
+            "files_sha256": "41de5eb4bec4e6e220c54125dd42ec5121912d95c9fbf218fac20e0a183ec001",
+            "message": "Trend page: the two diagrams beside the headline"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212007-c1a32b"
+}

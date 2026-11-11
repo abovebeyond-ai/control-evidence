@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3c47376be6fb4e80b71432c981b7ecd97791775b",
+            "branch": "workbench/trends-online-by-rule",
+            "files_sha256": "7e55c5a31966a4ffa8322a44bf2554a36a61e2e78cde1899a85252c946d117c8",
+            "message": "Trends tab: online by rule, taken off by a person"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261110081737-541620"
+}

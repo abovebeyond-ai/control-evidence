@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P2\nSummary: The homepage collage includes a recognisable character from a well-known franchise (Pikachu). Keep it or replace that one fragment; the rest of the collage stays.\n\nListed in the brief as a decision for the client, not for this pass. Worth deciding soon: a recognisable trademarked character on a commercial site is a rights question, and replacing one fragment is small once decided.\n\nSource: Portal mail:47 (copy update brief for gentells.com, 10 November 2026). The brief itself stays in Portal.\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P2"
+            ],
+            "title": "Homepage collage contains a recognisable licensed character"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261110212913-d40376"
+}

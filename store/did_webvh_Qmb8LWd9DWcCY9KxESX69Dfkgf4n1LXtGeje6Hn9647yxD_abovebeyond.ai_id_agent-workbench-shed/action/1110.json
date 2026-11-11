@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "76cc8a5d5d74efbd5c4ec9db41f7aa3f2a3f158f",
+            "branch": "workbench/handover-our-demo",
+            "files_sha256": "e33f5291553ff2e3eb5bda406b5368d39bd5ab8e90e5d848f540d144d517ad44",
+            "message": "HANDOVER: the next demo is our own company, in sealed hardware\n\nDrop the paragraph on leaving Confidential Space; renumber the new\nsection to 10 beside the existing 9."
+        },
+        "resource": "bextrust/gate-demo-box"
+    },
+    "run": "workbench-20261110205307-4424d1"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "0203ab08a4485a2e141ae6752f2c739c",
+    "effect": {
+        "detail": {
+            "draft": false,
+            "number": 3,
+            "review_requested": "ShaneDeconinck",
+            "url": "https://github.com/bextrust/control/pull/3",
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1125,
+    "verdict": "ALLOW"
+}
