@@ -1,0 +1,16 @@
+{
+    "action": "aa1bdf264310cf14b742b8157c207bee",
+    "effect": {
+        "detail": {
+            "base": "ec9bea9570b317e459cca3de88d06f0177dfc63f",
+            "branch": "workbench/free-fifteen",
+            "commit": "530af8d1a16378029f8390c871d45d988eb368d5",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1335,
+    "verdict": "ALLOW"
+}

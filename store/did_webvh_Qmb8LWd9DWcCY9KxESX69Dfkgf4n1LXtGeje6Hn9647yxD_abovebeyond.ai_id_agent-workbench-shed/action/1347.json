@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5ba463a84b8d2ae4e0132ab8b8e18ebd595a24e7",
+            "branch": "workbench/newsletter-own-source",
+            "files_sha256": "00761f39d92daf2d7fdee5cf04cc3b0b5150099810a5e2459753a6a0efa73abe",
+            "message": "Newsletters: their own source, and the publication on a platform"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111100508-63f1d4"
+}

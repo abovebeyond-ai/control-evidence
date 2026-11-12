@@ -1,0 +1,15 @@
+{
+    "action": "f9915f6dbc335750cce79331318f0e19",
+    "effect": {
+        "detail": {
+            "fields": [
+                "status"
+            ],
+            "project": "swallow-method"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1410,
+    "verdict": "ALLOW"
+}

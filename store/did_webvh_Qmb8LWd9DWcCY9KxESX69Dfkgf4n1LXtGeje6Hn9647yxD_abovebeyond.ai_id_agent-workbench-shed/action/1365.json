@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a3b728c448d2d5502a536b8d4d1843efb392b395",
+            "branch": "workbench/graph-depth",
+            "files_sha256": "79c29a30209c88197a651446f414cdb433fa4fc7e265391082c0ba848b226cd1",
+            "message": "Trend graph: keep patterns and tensions as unnamed points"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111100823-bfd411"
+}

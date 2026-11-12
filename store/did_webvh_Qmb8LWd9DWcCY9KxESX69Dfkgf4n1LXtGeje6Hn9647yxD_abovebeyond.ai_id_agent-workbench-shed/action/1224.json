@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: when RealGarant does not return its list of warranty programmes, `getPrograms` crashes on `$item->kind` instead of answering \"no programmes\". That turned the daily smoke test red on 2026-11-11 and gives a 500 on the public warranty route whenever it happens.\n\nSource: Portal mail:48 (Nightwatch #73, `stocklist:smoke --all` exit 1 at 06:30 on 2026-11-11).\n\n## What happened\n\nThe RealGarant line of the smoke test read:\n\n```\ntoken in 3073 ms; wagen #23924: ErrorException: Attempt to read property \"kind\" on false\n```\n\n`VehicleRealGarantService::getPrograms` takes the answer of `getWarrantyPrograms()` and maps over it with `$item->kind = trim($item->kind)`. But `getWarrantyPrograms()` does not always return a list of programmes:\n\n- on a non-2xx it returns `['success' => false, 'message' => <body>]`;\n- when RealGarant does not answer in time it returns the same shape from `unreachable()`;\n- under the outbound seal it returns `refusal()`, again that shape;\n- a body that decodes to `false` comes back as `false`.\n\n`collect(['success' => false, ...])` yields `false` as its first element, so the map reads `->kind` on `false`. This is the same shape as Nightwatch #41 (R S4-6.22), one call further down: the vehicle search got a gate then, the programme list did not.\n\n## Why it matters\n\n- `RealGarantController` (the public warranty route on dealer websites) only catches `ConnectionException`. An `ErrorException` from this map becomes a 500 on the page a dealer's customer sees.\n- In the smoke test the line said \"ErrorException\" instead of what RealGarant answered, so the alarm did not say whether the partner was down, refusing, or answering in an unexpected form.\n\n## What should happen\n\n- A programme list that is not a list of objects is treated as \"RealGarant gave no programme list\": `getPrograms` returns `success: false` with the reason, and the warranty block on the website hides as it does for other failures.\n- The smoke test reports that as a fault of the connection (the partner did not give the list), with RealGarant's own reason in the line, and stops asking further vehicles since the list does not depend on the vehicle.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "RealGarant: a failed warranty programme list crashes getPrograms instead of answering"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261111075719-1677b9"
+}

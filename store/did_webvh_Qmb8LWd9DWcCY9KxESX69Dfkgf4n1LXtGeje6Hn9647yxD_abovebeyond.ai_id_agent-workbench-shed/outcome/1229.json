@@ -1,0 +1,16 @@
+{
+    "action": "aec52a52648315324b3057dba1639e03",
+    "effect": {
+        "detail": {
+            "base": "c74e26fa6f23e0a0d26a058388695b964949de6b",
+            "branch": "workbench/newsletter-prune",
+            "commit": "fa3fcc938438952db0d9f9255403a9e6b1048ce4",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1227,
+    "verdict": "ALLOW"
+}

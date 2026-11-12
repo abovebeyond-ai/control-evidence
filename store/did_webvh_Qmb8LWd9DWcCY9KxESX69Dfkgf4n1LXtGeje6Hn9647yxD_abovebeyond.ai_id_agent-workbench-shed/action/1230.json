@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Clears the signups a script typed into the newsletter form on the night of 10 to 11 November 2026, before Turnstile closed the form (#273, #274), and keeps unconfirmed signups from piling up again.\n\n## What changes\n\n- `gentells:newsletter-prune` removes newsletter rows that were never confirmed and never unsubscribed, created more than `--days` ago (default 7). Without `--apply` it only counts, per day and per form, and prints no addresses.\n- The command runs nightly at 02:00 with `--days=7 --apply`. Anyone who has not confirmed within a week is removed; they can subscribe again.\n- Not touched: confirmed readers, and unsubscribed rows, which record that someone said no.\n\nAn unconfirmed row gets no letter and never went to Clay, so removing it loses nothing but a stranger's address.\n\n## To clear last night's signups (Forge > gentells.com > Commands)\n\n```\nphp artisan gentells:newsletter-prune --days=0\nphp artisan gentells:newsletter-prune --days=0 --apply\n```\n\nThe first command only counts. `--days=0` also takes anyone who subscribed this morning and has not yet clicked their link; they can subscribe again.\n\n## Tests\n\n`NewsletterPruneTest`: without `--apply` nothing is deleted; only old unconfirmed rows go, while recent, confirmed and unsubscribed rows stay; `--days=0` takes every unconfirmed row. The full suite passes apart from BuildStampTest, which fails in any worktree.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/newsletter-prune",
+            "title": "Remove newsletter signups that were never confirmed"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111080336-f017b5"
+}

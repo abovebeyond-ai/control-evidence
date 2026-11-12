@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b750d8e70aa5c1e49ce292c1b439618a111ee725",
+            "branch": "workbench/realgarant-programs-error",
+            "files_sha256": "5a4dc29dc6f74565d867db929fae65f7dcd1bf975278f38c04087fc69ac3f740",
+            "message": "A failed RealGarant programme list is not a list of programmes"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261111080444-b79f0b"
+}

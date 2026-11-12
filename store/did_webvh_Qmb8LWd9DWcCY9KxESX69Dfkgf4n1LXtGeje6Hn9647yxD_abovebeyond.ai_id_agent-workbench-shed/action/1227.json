@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c74e26fa6f23e0a0d26a058388695b964949de6b",
+            "branch": "workbench/newsletter-prune",
+            "files_sha256": "0454763117d34d9fcc067cafe4d78b215e0ae24a9d7239bdb40ad20cb6bcb5ad",
+            "message": "Remove newsletter signups that were never confirmed"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111080336-f017b5"
+}

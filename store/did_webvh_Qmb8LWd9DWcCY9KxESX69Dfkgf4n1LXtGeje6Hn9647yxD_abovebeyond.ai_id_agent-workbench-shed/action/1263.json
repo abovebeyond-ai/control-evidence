@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The default descriptions of Signal, Decode and Intelligence, matching the new pricing copy on gentells.com (Trendwolves/gentells-site#277, from the copy update brief in Portal mail:47). The site holds the same defaults in `App\\Plans\\Offer`.\n\n- Signal: For the independent strategist: the full archive, and the opportunity behind every post.\n- Decode: For teams who brief others: everything in Signal, plus every report we publish, ready for your next deck.\n- Intelligence: Everything in Decode, plus a quarterly read on your category, written for the decisions you face, and a direct line to Maarten Leyts.\n\nThese are defaults only. An offer already saved under Settings > Plans keeps its own descriptions until it is saved again with these, and that saved offer is what gentells.com shows.\n\nTests: the full suite, 1612 of 1612.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/plan-descriptions",
+            "title": "Plan descriptions from the gentells.com copy update"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111082901-0d4805"
+}

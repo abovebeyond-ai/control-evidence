@@ -1,0 +1,16 @@
+{
+    "action": "7bd39f08e15a70a373bf831f61c8c265",
+    "effect": {
+        "detail": {
+            "base": "b750d8e70aa5c1e49ce292c1b439618a111ee725",
+            "branch": "workbench/realgarant-programs-error",
+            "commit": "93e157e64dfccd13000f5bd3631c7b8883674fdd",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1245,
+    "verdict": "ALLOW"
+}

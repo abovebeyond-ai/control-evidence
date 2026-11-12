@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "gentells.com is to say where a trend's signals come from: \"From sources in 6 regions on 3 continents: DACH, Benelux, France, UK / Ireland, North America and East Asia.\" This sends the count with each trend, as `reading.origin`.\n\n## How a signal's origin is found\n\n`packages/core/trend-origin.mjs`, counted and not judged:\n\n1. The country its adapter asked for (`adapter_meta.countryCode`): TikTok Creative Center and the other charts are read per country.\n2. Otherwise the one region its source row names (`sources.region_hints`).\n3. Otherwise nowhere: a source with no region, one that names several (an international title), a continent only, or Global.\n\nNever the classifier's `region_tags`: those say what a signal is about, and they are a model's reading. Regions are the Standard's sub-regions (Benelux, DACH, East Asia, ...); continents are their parents.\n\nShape: `{regions: [{id, label, continent, signals}], continents, known, of}`, regions sorted by signals. `known` of `of` says how many of the listed signals have an origin, so the count is a floor. `null` when none is known; the site then says nothing. An error leaves it null and does not stop the projection, as with the graph.\n\n## Tests\n\n`test/trend-origin.test.mjs`: adapter country and source region counted, classifier tags never read, several regions or Global or a continent counted nowhere, continents counted, empty says nothing. Full suite 1617/1617, tsc clean.\n\nThe site side is a separate PR in gentells-site; either can merge first.\n",
+            "branch": "workbench/trend-origin",
+            "title": "Projection: where a trend's signals come from, by region"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111092753-e7fa5a"
+}

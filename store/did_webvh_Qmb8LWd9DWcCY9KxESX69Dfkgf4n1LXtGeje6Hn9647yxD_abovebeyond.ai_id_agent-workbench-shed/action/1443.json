@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3c918002f664df92bf87161d17fd54bb31d9ece0",
+            "branch": "workbench/silence-noise",
+            "files_sha256": "0016613a44b685a4a562f6743b3374ec3933b75937c6bce005f3bed6a2c5576d",
+            "message": "Stop raising verdicts nobody can act on"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261111174123-e44ed4"
+}

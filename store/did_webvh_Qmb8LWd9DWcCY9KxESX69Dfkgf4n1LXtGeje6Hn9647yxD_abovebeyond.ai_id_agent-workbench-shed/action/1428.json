@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A trend's graph drew a pattern as soon as it grouped one of the concepts on the picture. On a trend with twelve concepts, that put a single pattern point over one concept while the other eleven hung from the trend. The pattern says nothing about these concepts, yet the picture made it look as if it held them all.\n\nA pattern is now drawn only when it groups at least two of the concepts drawn here (`MIN_PATTERN_CONCEPTS`). A concept under a pattern that is left out hangs from the trend, as the ungrouped ones already did. Tensions are unchanged: they already need both poles on the picture.\n\nOn the site, Trendwolves/gentells-site places a pattern or tension above its own concepts instead of in the middle of its disc (separate PR). Either can merge first.\n\n## Tests\n\n`trend-graph.test.mjs`: a pattern over two drawn concepts is drawn with an edge to each; a pattern over one drawn concept is left out, and its concept hangs from the trend. Full suite 1630/1630, `tsc` clean.\n",
+            "branch": "workbench/pattern-two-concepts",
+            "title": "Trend graph: a pattern only over two drawn concepts"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111173608-809285"
+}

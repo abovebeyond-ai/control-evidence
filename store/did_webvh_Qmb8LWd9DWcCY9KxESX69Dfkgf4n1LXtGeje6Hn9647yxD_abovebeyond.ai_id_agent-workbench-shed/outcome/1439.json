@@ -1,0 +1,16 @@
+{
+    "action": "f8bc99f28a62149d3ce7883b426ef4d8",
+    "effect": {
+        "detail": {
+            "base": "3f464b78dd127c9d483268d92840d96a7581ad56",
+            "branch": "workbench/silence-noise",
+            "commit": "0737c63dd02971a9565286771e3c3b6c0e2880a7",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1437,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The concept graph left the projection on 9 November with the reading (#431), because most of what it named was written by a model: pattern names, tensions between concepts, and each signal titled by the classifier's note. Visitors liked the layers. This sends them again, made only of what can be checked.\n\n## What changes\n\n**`trendGraphForSite`** (`packages/core/trend-graph.mjs`) builds the layers under a trend:\n- **signals:** the trend's own signals as the site lists them (`trendSignalsForSite`, so none from an inspiration-only source), titled by their own text. The old subgraph took any signal that mentioned a concept, inside the trend or not.\n- **concepts:** the concepts those signals mention, at least two signals each, at most twelve, the most mentioned first. Archived concepts are left out, and so is a concept that names a listed competitor (Standard 0.17.0).\n- **no patterns and no tensions.**\n- No concept left means no graph (`null`).\n\n**The projection** (`packages/server/heavy.mjs`, `projection-trends`) sends this graph in place of `null`.\n\n## Deploy\n\nGoes with the gentells-site PR that draws the layers again and keeps only these node types. Merged alone, the site keeps drawing no graph.\n\n## Tests\n\n- `npm test`: 1612 of 1612. `tsc`: clean.\n- New: `test/trend-graph.test.mjs`. It covers:\n  - the layers and their titles;\n  - no single-mention, archived or competitor concept;\n  - no signal from outside the trend;\n  - the projection carries the graph without notes or pattern names.\n",
+            "branch": "workbench/trend-graph-measured",
+            "title": "Projection: the layers under a trend, measured only"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111080351-e592ac"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The trend graph on gentells.com (#436) left out patterns and tensions altogether, because their names are written by a model and nobody reads a trend before it goes up. The structure under those names is not: which of the trend's concepts a pattern groups, and which two a tension sets against each other. The home page's showcase graph has drawn exactly that, as unnamed points, all along. The trend graph now does the same.\n\n## What changes (`packages/core/trend-graph.mjs`)\n\n- **Patterns**: the trend's own (`insights.patterns`), not archived, and only as far as they group concepts drawn on this graph. Each goes as `{id: 'pattern-N', type: 'pattern'}`, with an edge from the trend and one to each of its concepts here. A concept under a pattern hangs from the pattern; the others still hang from the trend.\n- **Tensions**: those whose two poles are both drawn here, as `{id: 'tension-N', type: 'tension'}` with an edge to each pole.\n- No name, no title, no real id: the real ids carry the names (`pattern-the-bricolage-generation`), so they are numbered per graph.\n\nConcepts and signals are unchanged: the concepts at least two of the trend's own signals share, the signals by their own text.\n\n## Tests\n\n`test/trend-graph.test.mjs` gains a case: a pattern and a tension come as numbered points without their names; a pattern links only to concepts drawn here; a tension with a pole outside the graph stays out; the grouped concept hangs from its pattern. Full suite 1628/1628, tsc clean.\n\nThe site side (gentells-site) keeps them unnamed whatever arrives; either can merge first.\n",
+            "branch": "workbench/graph-depth",
+            "title": "Trend graph: patterns and tensions as unnamed points"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111100756-d80250"
+}

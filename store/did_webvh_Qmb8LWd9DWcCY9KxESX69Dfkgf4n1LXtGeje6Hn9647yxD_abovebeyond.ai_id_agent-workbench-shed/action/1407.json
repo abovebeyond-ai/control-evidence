@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "status": "waiting"
+        },
+        "resource": "portal:proveml"
+    },
+    "run": "workbench-20261111171907-fbd5c1"
+}

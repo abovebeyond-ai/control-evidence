@@ -1,0 +1,10 @@
+{
+    "action": "55a966aed7bff1a2530839c1fe449717",
+    "effect": {
+        "error": "Portal answered 422: The note field must not be greater than 300 characters.",
+        "ok": false
+    },
+    "reason": "within grant",
+    "step": 1210,
+    "verdict": "ALLOW"
+}

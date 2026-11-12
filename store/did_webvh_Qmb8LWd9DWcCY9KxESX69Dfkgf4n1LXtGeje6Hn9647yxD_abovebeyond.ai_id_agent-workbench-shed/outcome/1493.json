@@ -1,0 +1,10 @@
+{
+    "action": "bdd55a50efff6cf5fa148555d96b948e",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the owner ended this capability at 2026-11-11T17:40:49+00:00, before it expired",
+    "step": 1491,
+    "verdict": "DENY"
+}

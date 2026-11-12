@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c74e26fa6f23e0a0d26a058388695b964949de6b",
+            "branch": "workbench/trend-graph-layers",
+            "files_sha256": "5090dd226c1bff626e32b082527de2f7a0452590d003eeda1e14d77f9567931b",
+            "message": "Trend page: the layers underneath again, measured only"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111080412-bf3a89"
+}

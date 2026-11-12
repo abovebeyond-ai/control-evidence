@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Many publishers refuse a fetch of their pages (HTTP 403, bot walls) and publish no feed, yet send a newsletter to anyone who subscribes. Sources typed `newsletter` have been \"waiting for an inbox\" since October. This is the inbox: the site posts mail that arrives at the reading address (gentells-site, same day) to a new endpoint, and each story in it becomes a signal.\n\n## What changes\n\n- **`POST /internal/newsletter`** (`server/routes-newsletter.mjs`), with its own bearer token `NEWSLETTER_TOKEN`. It is not the projection token: that one reads premium bodies, this one writes signals. Unset means closed. Bodies above 3 MB are refused. A failure answers 5xx, so the site answers Resend 5xx and the mail is delivered again.\n- **`core/newsletter.mjs`**:\n  - each linked story is a signal: the link text as headline, the lines after it up to the next link, and the story's address;\n  - tracking redirects that carry the real address in their query (`url=`, `redirect=`, `u=` and similar) are unwrapped; utm, mc and similar tags are dropped;\n  - unsubscribe, preferences, browser view, sponsor, social profile, app store and bare home page links are left out, as is link text under 18 characters (\"Read more\");\n  - nothing is fetched or clicked, so no tracking pixel fires;\n  - a plain-text newsletter is read line by line.\n- **The sender decides the source.** The sender's domain is matched to a source by its site, a `newsletter` row first. A known source keeps its state: one on trial stays off the record, as the Standard says. A rejected or retired source is not read. An unknown sender becomes a proposed `newsletter` source in the queue `Newsletters`, so subscribing somewhere new needs nobody to register it first.\n- **Press, not observation.** The signals are `web`, so their evidence kind is `press`, and they never count towards the observations that put a trend on gentells.com.\n- **A confirmation is for a person.** A \"confirm your subscription\" mail makes no signal; the answer `forward` tells the site to pass it to the team.\n- The same story twice is one signal (matched on its address). `last_collect_at` on the source is the last edition received.\n\n## Tests\n\n- `test/newsletter.test.mjs` (9 tests): stories, filtering, unwrapping, a new sender, a known source keeping its state, a rejected source, confirmation, plain text, the route's token.\n- `npm test`: 1621 of 1621. `tsc` clean.\n\n## On the box\n\n`NEWSLETTER_TOKEN` in the pipeline's env, the same value as in the site's.\n",
+            "branch": "workbench/newsletters-as-sources",
+            "title": "Read newsletters as sources"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111090714-362b9d"
+}

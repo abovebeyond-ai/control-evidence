@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The trend page says how many signals and sources a trend rests on, and of what kind, but not from where. Breadth across regions is the strongest thing a trend can show, and it is measured. This adds one line under the counts:\n\n> From sources in 6 regions on 3 continents: DACH, Benelux, France, UK / Ireland, North America and East Asia.\n\n## What changes\n\n- `TrendCard::originLine()` builds the line from `reading.origin`, which the pipeline sends (gentells-pipeline, `trend-origin.mjs`): the regions of the Gentells Standard, counted from the country an adapter asked for or the one region a source names, never from the classifier's tags. \"on N continents\" only when there is more than one. A trend from one region says so plainly (\"From sources in DACH.\"). Nothing known, no line.\n- `trend-detail.blade.php`: the line under the kinds line, for every reader. It travels in the reading, so the API and MCP tools carry `origin` too.\n\nUntil the pipeline side is deployed, `reading.origin` is absent and the page is unchanged.\n\n## Tests\n\nNew `TrendOriginTest`: regions and continents in the line, one region, nothing known, the page shows it to a signed-out reader. The full suite passes apart from BuildStampTest, which fails in any worktree.\n",
+            "branch": "workbench/trend-origin",
+            "title": "Say where a trend's signals come from, by region"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111092708-ab26c3"
+}

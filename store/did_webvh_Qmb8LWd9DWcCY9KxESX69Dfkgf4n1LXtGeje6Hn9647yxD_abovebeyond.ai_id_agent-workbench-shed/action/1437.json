@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3f464b78dd127c9d483268d92840d96a7581ad56",
+            "branch": "workbench/silence-noise",
+            "files_sha256": "9423ad4e1ad9f9550e59399ab0c100c162b883ed930dc362d650c8d41c50a0bd",
+            "message": "Open fewer, truer tasks: uptime by Elixir's ladder, one task per cause, parked reopens when worse"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261111173943-57d7d3"
+}

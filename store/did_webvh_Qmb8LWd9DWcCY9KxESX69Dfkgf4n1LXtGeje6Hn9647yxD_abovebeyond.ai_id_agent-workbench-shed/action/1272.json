@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The site showed which networks it reads, and how little each one adds: \"11 platforms\" under every trend (there are about eight platform families, so the number sits near its ceiling), and a build-up graph with a layer per network, Reddit among them, although Reddit is no longer read. This shows the breadth by kind.\n\n## What changes\n\n- **Evidence line** (`TrendCard::evidenceLine`): \"69 signals, 34 sources\", without the platform count added in #272. An old row without sources says its signals alone.\n- **Build-up graph** (\"When the signals landed\"): `TrendCard::sparkByKind` adds the platform layers (social, Reddit, other) into one, Platforms, next to Web & press and Reports. It runs in `Reader::readingFor`, so the trend page, the API and the MCP tools all get kinds, and in the sparkline component for the trend cards.\n- **\"Read across N\"** under the signal list: sources only; no platform count as a fallback.\n\nNot changed: the platform line on the home page (copy from the brief) and the source name on each signal, which is the evidence itself and opens with the Sources ability.\n\n## Tests\n\nNew `SparkByKindTest`: layers add up into one, the reading every door reads carries kinds, the legend uses no network colour, empty stays empty. `BreedteVanBewijsTest`, `EvidenceKindsTest` and `MomentumInWordsTest` follow the shorter line. The full suite passes apart from BuildStampTest, which fails in any worktree.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/networks-quiet",
+            "title": "Show evidence by kind, not by network"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111085212-f60a2f"
+}

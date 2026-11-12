@@ -1,0 +1,16 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal**\nCategory: bug  Priority: P1\nSummary: The newsletter form on gentells.com was used by a script to send confirmation mails to strangers through Resend on the night of 10 to 11 November 2026. That harms the sending reputation of gentells.com and floods other people's inboxes.\n\nThe form mails a confirmation to any address typed into it. The only brake is a per-IP throttle (10 a minute), and an unconfirmed address got a new mail every time it was posted. Resend shows the confirmation mails (\"Confirm your subscription to Gen Tells This Week\", from hello@gentells.com) going to addresses that never asked for them.\n\nNeeded: a check in front of the public forms that send mail (newsletter, contact) that a script cannot pass, and at most one confirmation per address per day.\n",
+            "labels": [
+                "bug",
+                "priority:P1"
+            ],
+            "title": "Newsletter form used to send confirmation mails to strangers"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111074521-f919b0"
+}

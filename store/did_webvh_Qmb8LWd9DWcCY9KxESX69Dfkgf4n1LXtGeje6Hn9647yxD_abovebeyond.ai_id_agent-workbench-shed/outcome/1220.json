@@ -1,0 +1,16 @@
+{
+    "action": "501bd319a9b5d3c5397957f0992985cf",
+    "effect": {
+        "detail": {
+            "base": "f39a326aadc030d6aa7c372a9fde79b9b6732012",
+            "branch": "workbench/newsletter-guard",
+            "commit": "c6bab76fa140006d4dbbb1f9ebc519ed7c2b5938",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1218,
+    "verdict": "ALLOW"
+}

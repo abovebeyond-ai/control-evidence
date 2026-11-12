@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bf4636046a725d9ff2379c6851e8fb3e1ff203af",
+            "branch": "workbench/realgarant-programs-false",
+            "files_sha256": "a85fb2e9dfb3e6c9f3a2ad198921c2a6d5f3d10856e9bb3113c4b302ef42a44e",
+            "message": "A failed RealGarant call is not a car without cover\n\n#1088 gave the warranty programme list its gate (R S4-6.23). The calls\naround it in getPrograms still turned a failure into an answer about the\ncar: a failed vehicle search came out as \"Vehicle not found\", a failed\nmanufacturer list as a result without any message, and a failed contract\noffer as \"Contracts not found\". A dealer or the smoke test could not tell\na RealGarant hiccup from a car that has no programme.\n\nEach of the three now ends getPrograms with RealGarant's own reason\n(\"Contract offer not available from Real Garant: ...\"). `fault` is set\nfor the manufacturer list, which every car needs, and for a call that got\nno answer at all (unreachable() now says so with `unreachable: true`). A\nrefused search or offer can be about one car's data, so it is not a\nfault and does not turn the morning smoke test red (R P3-13.8). A\nsuccessful offer without a usable price stays \"Contracts not found\".\n\nNew rule R S4-6.24, R P3-13.8 amended. The new test drives the whole\npath through Http::fake; four of its cases fail without the change.\n\nNightwatch: 52"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261111172030-13ab22"
+}

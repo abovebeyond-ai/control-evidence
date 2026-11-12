@@ -1,0 +1,16 @@
+{
+    "action": "daedf8fa77898075978274e4d74c2845",
+    "effect": {
+        "detail": {
+            "base": "ca9b28e21c819ff929545fc156d40b16dfedff57",
+            "branch": "workbench/ci-browser-fallback",
+            "commit": "30fe14a23c0f7cea04bbad1343c3b449283413d2",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1389,
+    "verdict": "ALLOW"
+}

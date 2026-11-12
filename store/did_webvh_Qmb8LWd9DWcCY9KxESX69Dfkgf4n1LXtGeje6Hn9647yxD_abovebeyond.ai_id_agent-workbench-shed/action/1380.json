@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #287: the full company line, street address included, comes back to the footer, and \"Developed by Maarten Leyts\" stands on its own line above it.\n\n- `x-company-line` is again the single line it was before #287, without the `credit` prop. The footer and the pre-launch cover show the same line.\n- The footer stacks the credit and the company line in one column on the left of the bottom bar. The Terms and Privacy links stay on the right.\n\n`FooterCreditTest` now checks that the footer names the developer once, that the address is there, and that the credit comes before it. The full suite passes apart from BuildStampTest, which fails in any worktree.\n",
+            "branch": "workbench/footer-credit-above",
+            "title": "Footer: developer credit above the address"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111142208-856815"
+}

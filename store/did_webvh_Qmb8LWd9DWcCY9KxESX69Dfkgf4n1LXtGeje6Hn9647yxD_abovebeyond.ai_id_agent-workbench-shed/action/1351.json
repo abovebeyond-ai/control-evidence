@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "productionTheirs": false
+        },
+        "resource": "portal:naviskore-webapp"
+    },
+    "run": "workbench-20261111100517-dbbe2c"
+}

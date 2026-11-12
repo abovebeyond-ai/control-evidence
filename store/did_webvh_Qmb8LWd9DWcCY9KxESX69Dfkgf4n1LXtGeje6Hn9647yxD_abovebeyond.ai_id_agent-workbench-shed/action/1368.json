@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The trend page's graph drops patterns and tensions in `TrendCard::measuredGraph`, because their names are a model's and nobody reads them before they go up. The pipeline now sends them as unnamed points (gentells-pipeline, `trend-graph.mjs`), the way the home page's showcase graph has drawn them all along. This keeps them, unnamed.\n\n## What changes\n\n- `TrendCard::measuredGraph`: a pattern or tension node keeps only its layer, `{id: 'pattern-N' | 'tension-N', type}`, whatever arrives: no title, no name, and a numbered id, since a real id carries the name. Edges follow the new ids. Insight, concept and signal nodes are unchanged; any other type is still dropped.\n- The caption under the graph: \"The signals at the bottom, the concepts they share, the tensions and patterns they form, the trend on top.\"\n- The graph script already draws a node without a title as its layer only (as for concepts below Decode), so no JavaScript changes.\n\n## Tests\n\n`InsightGraphTest`: patterns and tensions reach the page as numbered points and their names and real ids never do, even for a Decode reader; `measuredGraph` keeps a pattern as `pattern-1` with its edge and drops an unknown type. The full suite passes apart from BuildStampTest, which fails in any worktree.\n",
+            "branch": "workbench/graph-depth",
+            "title": "Trend graph: keep patterns and tensions as unnamed points"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111100823-bfd411"
+}

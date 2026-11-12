@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The team will subscribe to newsletters with one address, `read@gentells.com`. Mail to it is not for a person: it goes to the pipeline, which reads each story as a signal (gentells-pipeline, same day, `POST /internal/newsletter`).\n\n## What changes\n\n- **`InboundMailController`**: a mail whose only recipient is the reading address is posted to the pipeline with its HTML, text, sender, subject and Resend id. The HTML goes along because the pipeline only reads links and words and renders nothing, so the argument for forwarding text to people does not apply.\n  - The pipeline answers `read` or `ignored`: the mail is done, nothing goes to the team.\n  - It answers `forward` for a subscription to confirm: the mail comes on to the team as any other, because the pipeline clicks nothing.\n  - It does not answer, or answers an error: 502, so Resend delivers it again.\n  - No token configured, the body could not be fetched, or a person is among the recipients: the team gets it as before.\n- **`config/gentells.php`**: `newsletters.address` (`NEWSLETTER_ADDRESS`, default `read@gentells.com`) and `newsletters.token` (`NEWSLETTER_TOKEN`). Its own token: this one writes signals, the projection token reads premium bodies.\n\n## Tests\n\n- `NewsletterInboxTest` (5 tests): to the pipeline with the HTML and not to the team; a confirmation to the team; a pipeline that does not answer gets the mail again; without a token as before; a person among the recipients.\n- `php artisan test`: 616 of 617. The one failure is `BuildStampTest`, which only fails in a git worktree. Pint passes.\n\n## On the box\n\n`NEWSLETTER_TOKEN` in the Forge env, the same value as the pipeline's. Resend must deliver mail for `read@gentells.com` to the inbound webhook.\n",
+            "branch": "workbench/newsletter-inbox",
+            "title": "Send mail to the reading address to the pipeline"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111090741-fc0f67"
+}

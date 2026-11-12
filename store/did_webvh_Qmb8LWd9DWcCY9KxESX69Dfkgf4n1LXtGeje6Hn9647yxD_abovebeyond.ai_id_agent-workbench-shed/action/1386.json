@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two things on the trend page graph, now that it carries patterns (and, with pipeline #442, tensions).\n\n## Layer spacing\n\nA trend page has one trend on top, and the layers between it and the concepts hold only a few points each. With a full step between every layer, the top of the graph was a tall empty shaft above two dense discs. On a graph with one trend, the step from signals to concepts stays the same and every layer above it sits half a step higher. The home graph, with a full layer on every floor, keeps its heights.\n\n## Lines\n\nThe lines were drawn in `--color-line`, a very light grey at 6 to 18% opacity, which was chosen for the dark home band. On the paper of a trend page they could not be seen, so the layers hung apart with nothing joining them. The script now reads the background of the first ancestor that has one. On a light ground the lines are deep aqua at 14 to 32%; on a dark ground nothing changes.\n\n## Checked\n\nI rendered a graph shaped like a live trend page (1 trend, 1 pattern, 12 concepts, 57 signals) in headless Chromium, once on paper and once on night. On paper the lines are visible and the top layers sit closer. On night it looks as before. The PHP suite passes apart from BuildStampTest, which fails in any worktree.\n",
+            "branch": "workbench/graph-spacing",
+            "title": "Trend graph: closer upper layers, visible lines on paper"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111142929-a2d091"
+}

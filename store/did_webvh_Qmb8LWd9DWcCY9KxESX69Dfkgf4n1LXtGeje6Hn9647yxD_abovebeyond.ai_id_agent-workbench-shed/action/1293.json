@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c3e613720217b71b23f91684fa34dd7a07d6b6c6",
+            "branch": "workbench/newsletters-on-sources",
+            "files_sha256": "5865b00e5384f788e3f60fa2283ff4652664f454ee302148bcb8fcbf6f99c089",
+            "message": "Sources: newsletters from new senders, and a newsletters group"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261111090758-752edb"
+}

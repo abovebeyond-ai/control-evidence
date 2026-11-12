@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follows #440. Two gaps in how a newsletter finds its source, both visible on the first subscription (Vogue Business).\n\n## What changes\n\n- **A newsletter has its own source.** It used to fold into any row for the same site. Vogue Business is already a muted `web-browse` source (its pages answer 403), so its newsletter would have inherited that row's state and never appeared under Needs a look; following it would have restarted the page reader that fails. Now only `newsletter` rows are matched, by the publication key stored on them (`listing.publication`). A new newsletter source names the other row for its site (`listing.sameSiteAs`, and in its notes), and that row is left as it is.\n- **A site a person turned down** (rejected or retired, in any type) is not read through its newsletter either.\n- **Editions filed before this** under the site's other row (signals with `via: newsletter`) move to the new newsletter source when it is created. The other row's own signals stay.\n- **A platform is not the publication.** Substack, beehiiv, Ghost, Buttondown, Kit, MailerLite and Medium send every publication's newsletter from their own domain, so every Substack newsletter would have been one source \"substack.com\". The publication is now the sender's own part of the address (`garbageday@substack.com` is `garbageday.substack.com`, `noreply@thepub.ghost.io` is `thepub.ghost.io`), else the sender's name when the address is generic (`hello@mail.beehiiv.com` from \"Hype Weekly\" is `hype-weekly.beehiiv.com`).\n\n## Tests\n\n- `test/newsletter.test.mjs`, 12 tests, new: a muted page reader does not swallow the newsletter; a turned-down site is not read; early editions move and the row's own signals stay; two Substack newsletters are two sources.\n- `npm test`: 1629 of 1629. `tsc` clean.\n",
+            "branch": "workbench/newsletter-own-source",
+            "title": "Newsletters: their own source, and the publication on a platform"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111100508-63f1d4"
+}

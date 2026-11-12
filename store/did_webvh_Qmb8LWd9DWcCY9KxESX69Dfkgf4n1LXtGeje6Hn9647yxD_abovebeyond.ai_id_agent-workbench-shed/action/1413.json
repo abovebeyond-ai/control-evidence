@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "status": "waiting"
+        },
+        "resource": "portal:kubo-platform"
+    },
+    "run": "workbench-20261111171913-02ac16"
+}

@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.project.patch",
+        "params": {
+            "status": "onhold"
+        },
+        "resource": "portal:axa-dare-to-call"
+    },
+    "run": "workbench-20261111171854-0ff8a6"
+}

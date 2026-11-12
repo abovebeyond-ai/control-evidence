@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6c67eb28150083f1eaf06c259a511bf002c49884",
+            "branch": "workbench/networks-quiet",
+            "files_sha256": "c3f22bd41acf77407fbe90269ea845d89fa4aae53d2d72d508af86ac0fef9076",
+            "message": "Show evidence by kind, not by network"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111085212-f60a2f"
+}

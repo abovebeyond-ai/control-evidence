@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f39a326aadc030d6aa7c372a9fde79b9b6732012",
+            "branch": "workbench/newsletter-guard",
+            "files_sha256": "ac8a2811cefd81f5bf9e61b4fa2025904bff71f265f80b79450a6164143ea9ae",
+            "message": "Turnstile on the forms that send mail, one confirmation a day per address"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111074544-4f68f5"
+}

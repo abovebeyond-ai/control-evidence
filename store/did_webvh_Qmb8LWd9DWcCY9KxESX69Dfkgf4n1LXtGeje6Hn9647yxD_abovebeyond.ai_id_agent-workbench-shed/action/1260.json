@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "766ee05ec089d460f3d0080d04f346da00207add",
+            "branch": "workbench/plan-descriptions",
+            "files_sha256": "f106138d09afaaaf850c6aefdffa2ee580ac0dd6edd845fae589153977f98f83",
+            "message": "Plan descriptions from the gentells.com copy update"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111082901-0d4805"
+}

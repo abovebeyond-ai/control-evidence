@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a25ee6073023ce652d07f0ca17e4726c8cebbf6e",
+            "branch": "workbench/graph-top-2",
+            "files_sha256": "ebce138d930cd9bf6fc326f88dd08bd3924b0f6590e9474cb9c3c482f6850a7e",
+            "message": "Put the layers graph on top of the trend page, beside the headline"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111090853-d00e1c"
+}

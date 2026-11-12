@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1536c330639db29832da7c83f33bda8025a736e4",
+            "branch": "workbench/trend-graph-measured",
+            "files_sha256": "683269bc84618bea263f5a25715a6f6fd3d12525c1e4b53d45faec1b257cbbb6",
+            "message": "Projection: the layers under a trend, from its own signals and their concepts"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111080351-e592ac"
+}

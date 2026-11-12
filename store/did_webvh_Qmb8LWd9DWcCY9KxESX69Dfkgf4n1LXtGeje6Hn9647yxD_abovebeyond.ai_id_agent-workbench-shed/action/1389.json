@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ca9b28e21c819ff929545fc156d40b16dfedff57",
+            "branch": "workbench/ci-browser-fallback",
+            "files_sha256": "3c9dd5eb794e3951fee1751c6a7b2680640f615eb0ba439e218356088309cff7",
+            "message": "CI: install the browser alone when the Ubuntu mirror is down"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111152309-ebf3d0"
+}

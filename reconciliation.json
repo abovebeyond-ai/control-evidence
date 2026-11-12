@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-11T07:34:39+00:00",
+    "computed_at": "2026-11-12T07:34:36+00:00",
     "window": {
-        "since": "2026-11-04T07:33:02+00:00",
+        "since": "2026-11-05T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -126,8 +126,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 8,
-                "gateway": 8
+                "github": 16,
+                "gateway": 16
             }
         },
         "Trendwolves/gentells-site": {
@@ -137,8 +137,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 12,
-                "gateway": 12
+                "github": 30,
+                "gateway": 30
             }
         },
         "Trendwolves/glk-transferor": {
@@ -167,8 +167,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 2,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -208,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 10,
-                "gateway": 10
+                "github": 12,
+                "gateway": 12
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -295,8 +295,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 4,
+                "gateway": 4
             }
         },
         "Trendwolves/gentells-standard": {
@@ -361,8 +361,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -555,9 +555,6 @@
         "forge:elixir-fix": {
             "skipped": "no token to read GitHub"
         },
-        "forge:find-your-voice": {
-            "skipped": "no token to read GitHub"
-        },
         "forge:garage-de-backer-website": {
             "skipped": "no token to read GitHub"
         },
@@ -686,9 +683,6 @@
             "skipped": "no token to read GitHub"
         },
         "portal:elixir-fix": {
-            "skipped": "no token to read GitHub"
-        },
-        "portal:find-your-voice": {
             "skipped": "no token to read GitHub"
         },
         "portal:garage-de-backer-website": {

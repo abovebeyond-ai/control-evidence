@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The layers graph left the trend page on 9 November (#255), with the reading. This brings it back, measured only: the trend, the concepts its own signals mention, and those signals. It goes with the pipeline PR that sends that graph.\n\n## What changes\n\n- **`TrendCard::measuredGraph`** keeps only `insight`, `concept` and `signal` nodes, and the edges between them. No concept left means no graph. It applies:\n  - in the projection (`Projection.php`), when a trend is stored;\n  - on the trend page (`TrendController`), so an older card that still holds a pattern or tension never shows it.\n- **Trend page:** \"The layers underneath\" is back, under the signals, with a description of the three layers.\n  - Concept names still show only from Decode up, through `Reader::graphFor`, as before.\n  - The graph JSON in the page is encoded with `JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT`. A signal's title is now text from the web, and a `</script>` in it could otherwise end the script block.\n- **`insight-graph.js`** leaves out a layer without nodes, and closes up the layers that remain. Without that, the trend page would show empty \"Patterns 0\" and \"Tensions 0\" discs. When every layer has nodes, the heights stay as they were.\n\n## Tests\n\n- `php artisan test`: 608 of 609. The one failure is `BuildStampTest`, which only fails in a git worktree. Pint passes.\n- `InsightGraphTest` is rewritten. It covers:\n  - the block renders;\n  - concept names only from Decode up;\n  - no pattern or tension from an older card;\n  - markup in a signal stays text;\n  - the projection filter.\n- Checked in a browser at 1280 px and 390 px.\n",
+            "branch": "workbench/trend-graph-layers",
+            "title": "Trend page: the layers underneath, measured only"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111080412-bf3a89"
+}

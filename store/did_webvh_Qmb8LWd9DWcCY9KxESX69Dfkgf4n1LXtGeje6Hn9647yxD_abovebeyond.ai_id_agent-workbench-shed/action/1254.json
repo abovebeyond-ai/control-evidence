@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8dd1c5f3aeaee61ee807d8367dbec6ddc0a4befd",
+            "branch": "workbench/pricing-annual",
+            "files_sha256": "a9b43da79836a2d553d8ebfa47ae04ad4e106430eb8e771c0204cc3465d41216",
+            "message": "Every paid plan a twelve-month plan per person, and the pricing copy that says so"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111082741-c7a8d4"
+}

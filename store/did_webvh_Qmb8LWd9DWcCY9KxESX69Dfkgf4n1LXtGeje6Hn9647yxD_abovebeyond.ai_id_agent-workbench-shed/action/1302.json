@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The layers graph (#276) sat below the full list of signals, so a reader had to scroll past fifty rows to reach the one visual on the page. It now stands at the top of the trend card, on the right of the headline.\n\nReplaces #279, which was stacked on #278 and conflicted once #278 was merged; this one starts from main.\n\n## What changes\n\n- **Trend card** (`trend-detail.blade.php`): left column (5 of 12) has the eyebrow, chips, headline, what was measured, the need, momentum and the evidence counts. Right column (7 of 12) has the graph, 480px high, with one line under it: \"The layers underneath. The signals at the bottom, the concepts they share above them, the trend on top. N nodes, drag to explore.\"\n- **The two small diagrams** (the record and \"When the signals landed\") move under both columns, inside the card, when there is a graph. A trend without a graph keeps them on the right, as before.\n- **`x-trend-diagrams`**: those two diagrams as one component, so the page has one copy for both places. The kind colours and labels from #278 move into it.\n- The separate \"The layers underneath\" section under the signals is gone.\n- Headline a step smaller (3rem on desktop) to fit the narrower column.\n\nOn a phone the order is: headline and counts, graph, diagrams, signals.\n\n## Tests\n\n`InsightGraphTest` gains a check that the graph comes after the headline and before the diagrams, and that the diagrams appear once. The full suite passes apart from BuildStampTest, which fails in any worktree.\n",
+            "branch": "workbench/graph-top-2",
+            "title": "Layers graph on top of the trend page"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111090853-d00e1c"
+}

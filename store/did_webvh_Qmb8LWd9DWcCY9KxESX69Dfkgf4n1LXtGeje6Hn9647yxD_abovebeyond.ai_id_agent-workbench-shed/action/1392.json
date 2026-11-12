@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Every CI run since 14:16 UTC on 11 November failed in \"Browser round trip (OAuth)\" before a single test ran. `npx playwright install --with-deps chromium` installs system packages through apt, and the runners could not resolve `azure.archive.ubuntu.com`. After seven minutes of retries the install gave up with code 100. A rerun an hour later failed the same way. ESLint, Pint and the PHP tests passed on every one of those runs.\n\nThe `ubuntu-24.04` runner image already has the libraries Chromium needs. The step still tries the full install first, but stops it after five minutes and then installs the browser alone. When apt works, nothing changes.\n\nOnly `.github/workflows/test.yml` changes. #288 and #289 failed on this step only.\n",
+            "branch": "workbench/ci-browser-fallback",
+            "title": "CI: install the browser alone when the Ubuntu mirror is down"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111152309-ebf3d0"
+}

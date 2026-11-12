@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #1088 (Nightwatch #52, the same error #1088 fixed as #73).\n\n#1088 gave the warranty programme list its gate (R S4-6.23). The other calls in `VehicleRealGarantService::getPrograms` still turned a failed call into an answer about the car:\n\n| call fails | before | now |\n|---|---|---|\n| contract offer | \"Contracts not found for Real Garant\" | \"Contract offer not available from Real Garant: <RealGarant's reason>\" |\n| vehicle search | \"Vehicle not found for Real Garant\" | \"Vehicle search not available from Real Garant: <reason>\" |\n| manufacturer list | `success: false` without any message | \"Manufacturer list not available from Real Garant: <reason>\" |\n\nSo neither a dealer nor the smoke test could tell a RealGarant hiccup from a car that has no programme.\n\n## Change\n\n- `VehicleRealGarantService::failedCall` recognises the failure shape every RealGarant call returns (refusal, seal, no answer, non-2xx); `failure()` / `unavailable()` carry RealGarant's own reason. `noProgramList` became `unavailable($what, ...)`, same text for the programme list.\n- `fault` (the connection, R P3-13.8) is set for the manufacturer list, which every car needs, and for any call that got no answer at all: `RealGarantService::unreachable()` now adds `unreachable: true` (additive, no caller compares the whole array). A refused search or offer can be about that one car's data, so it is not a fault and does not turn the 06:30 smoke test red.\n- A successful offer without a usable price stays \"Contracts not found\".\n- Rule R S4-6.24 added, R P3-13.8 amended.\n\n## Tests\n\n`ARealGarantHiccupIsNotACarWithoutCoverTest` drives the whole `getPrograms` path through `Http::fake`: refused and unanswered offers, an offer that decodes to `false`, failed searches (400 and timeout), a failed manufacturer list, the programme list timing out over HTTP, the happy path, and the smoke verdict for one refused car. Four of its cases fail without the change.\n\nRealGarant, rules and smoke tests: 460 green. PHPStan (whole repo) clean, pint on the added file clean. Full suite run once: 3248 passed; the only failures are the six in `APhotoWithoutAForegroundIsNotAFaultTest`, which fail identically on `main` locally (main's CI is green).\n\n## After merge\n\nNothing to run. The next time RealGarant refuses or stays silent, the warranty block and the smoke line give RealGarant's reason instead of \"not found\".\n",
+            "branch": "workbench/realgarant-programs-false",
+            "title": "A failed RealGarant call is not a car without cover"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261111172030-13ab22"
+}

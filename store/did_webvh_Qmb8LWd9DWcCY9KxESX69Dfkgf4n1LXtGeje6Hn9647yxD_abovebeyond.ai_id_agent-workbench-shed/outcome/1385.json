@@ -1,0 +1,16 @@
+{
+    "action": "cab42c7223b7aeaa6c10c92671d3bc8c",
+    "effect": {
+        "detail": {
+            "base": "ca9b28e21c819ff929545fc156d40b16dfedff57",
+            "branch": "workbench/graph-spacing",
+            "commit": "539163dae9933b08e752fb524ca6fcca3fdcc93b",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1383,
+    "verdict": "ALLOW"
+}

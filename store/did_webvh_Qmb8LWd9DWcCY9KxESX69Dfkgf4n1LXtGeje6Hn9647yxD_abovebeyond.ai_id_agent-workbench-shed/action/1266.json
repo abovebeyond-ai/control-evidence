@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:47",
+            "note": "Copy+fixes #272 merged. Pricing: Signal annual, copy, terms 1.2 as site #277 (closes #260) + pipeline #437. Open: Settings > Plans texts, booking link, #263 question, backlog #266-271, pipeline #432-435, standard #24.",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-site/pull/277"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261111082923-04b7d6"
+}

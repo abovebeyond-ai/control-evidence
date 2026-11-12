@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On a trend page, a lone pattern sat in the middle of its disc, right under the trend. The trend's lines to every concept outside the pattern ran through it, so the picture said the pattern held all twelve concepts. Pointing at it said \"1 concept\".\n\n## What changes\n\n- On a graph with one trend, a pattern or tension stands above the average position of the concepts it holds, read from its edges. Two that land on the same spot are moved apart. The home graph keeps its spiral.\n- The tooltip counts read \"1 concept\" and \"1 pattern\" instead of \"1 concepts\" and \"1 patterns\".\n\nTrendwolves/gentells-pipeline#443 also stops drawing a pattern that groups only one of the concepts on the picture. Either can merge first.\n\n## Checked\n\nI rendered a trend-page shape (1 trend, 12 concepts, 57 signals) in headless Chromium twice: once with one pattern over one concept, once with two patterns over four and three concepts. Each pattern stands above its own concepts, and the trend's lines run past it. ESLint is clean. The PHP suite passes apart from BuildStampTest, which fails in any worktree.\n",
+            "branch": "workbench/graph-counts",
+            "title": "Trend graph: a pattern or tension above its own concepts"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111173655-aaa2da"
+}

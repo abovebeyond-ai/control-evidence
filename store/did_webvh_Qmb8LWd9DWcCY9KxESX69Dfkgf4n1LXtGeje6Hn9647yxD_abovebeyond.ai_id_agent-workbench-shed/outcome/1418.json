@@ -1,0 +1,15 @@
+{
+    "action": "c1cad9c3c281cc2cf9612fc2e90af3fe",
+    "effect": {
+        "detail": {
+            "fields": [
+                "status"
+            ],
+            "project": "stocklist-dealer-landing"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1416,
+    "verdict": "ALLOW"
+}

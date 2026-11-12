@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "808bd1cb5fd11281837387de81031b3ddd9ed834",
+            "branch": "workbench/graph-legend",
+            "files_sha256": "b4bf004bbaa988a5baae8004f8c308721e603cfd817558cbadd47862930698e3",
+            "message": "Graph: no count on a layer of one"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111095703-500812"
+}

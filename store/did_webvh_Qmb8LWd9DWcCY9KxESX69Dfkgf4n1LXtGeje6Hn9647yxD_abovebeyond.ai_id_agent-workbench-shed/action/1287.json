@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a25ee6073023ce652d07f0ca17e4726c8cebbf6e",
+            "branch": "workbench/newsletter-inbox",
+            "files_sha256": "30710350b9e02e9ffc7c3375fa66e633d861a54888f2da3e2120827908d816c5",
+            "message": "Send mail to the reading address to the pipeline"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261111090741-fc0f67"
+}

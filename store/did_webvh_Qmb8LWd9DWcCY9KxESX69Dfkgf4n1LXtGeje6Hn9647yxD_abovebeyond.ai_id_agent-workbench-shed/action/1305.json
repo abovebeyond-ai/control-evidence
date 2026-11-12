@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "43ac3331cbb80e40cca51c9e70862332f9f280ef",
+            "branch": "workbench/trend-origin",
+            "files_sha256": "8e330df7700b26eeb123b9835341c6823a8a68443eecad24de14d1df9efbefa1",
+            "message": "Projection: where a trend's signals come from, by region"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261111092646-3cde43"
+}
