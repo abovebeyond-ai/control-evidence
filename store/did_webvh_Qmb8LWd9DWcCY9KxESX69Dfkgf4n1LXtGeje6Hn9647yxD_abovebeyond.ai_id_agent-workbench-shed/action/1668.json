@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fc942f69c1d13aba385de4ffd221b68500879586",
+            "branch": "workbench/audience-corporate",
+            "files_sha256": "ab3ba14a197dae0bb629179946dc3c927d728c5e88e316e2b97f8e9e6a954715",
+            "message": "Home audience section names corporate innovation teams, at a size that does not collide"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261113072240-11d709"
+}

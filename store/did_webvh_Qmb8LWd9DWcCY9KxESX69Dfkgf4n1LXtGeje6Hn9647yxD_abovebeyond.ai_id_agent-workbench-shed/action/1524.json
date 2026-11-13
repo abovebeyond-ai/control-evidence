@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A post's date becomes the editor's to set, and a live post dated ahead is scheduled: gentells.com sees it only once its date has come.\n\nUntil now the date was stamped the first time a post went live and could only be moved with `bin/redate-posts.mjs` on the box. Editors need two things the Studio could not do: put posts out on fixed days without being at the keyboard, and put posts in order (backdate) before the launch.\n\n## What changes\n\n- `updateArticle` accepts `publishedAt`, normalised by `postDate()` to the stored shape (`YYYY-MM-DD HH:MM:SS`, UTC). An ISO string with a zone is read in that zone, one without as UTC, a bare day as midnight UTC. Anything else, or a year outside 2000-2100, changes nothing. Own work has no publication date, so a date sent for it is dropped.\n- Going live keeps a date set earlier (in review) or sent in the same update. Without one it takes the moment it goes, as before. SQLite keeps the rightmost of two assignments to one column, so the `COALESCE(published_at, now)` is left out when the date is in the same update.\n- `onSiteSql()` / `isOnSite()` define \"on gentells.com\": published, kind article, and `published_at <= now`. They are used by:\n  - the projection manifest (`listPublishedArticles`), so the reconcile brings a scheduled post in at its time;\n  - the projection read by id, so the webhook nudge on publish cannot fetch it early;\n  - the public trend set, so a trend a scheduled post cites turns public with the post, not before;\n  - the Observatory live feed.\n- The Studio still lists a scheduled post under `status=published`.\n\n## Tests\n\n`test/post-dates.test.mjs`: the date shapes accepted and refused; moving a live post's date, an edit that leaves it alone, a date set in review kept on going live, a date sent together with going live, own work and a bad date; a scheduled post absent from the manifest and 404 by id, then listed and served once its date has passed; still listed in the Studio. Full suite 1638/1638, `tsc --noEmit` clean.\n\nMerge before the Studio PR that sends `publishedAt`.\n",
+            "branch": "workbench/post-dates",
+            "title": "Editable post dates, and scheduled posts that reach the site on their date"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261112113448-8cdda6"
+}

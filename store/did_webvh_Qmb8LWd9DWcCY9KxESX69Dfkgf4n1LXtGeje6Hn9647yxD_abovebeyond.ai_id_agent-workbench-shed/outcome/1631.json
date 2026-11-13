@@ -1,0 +1,16 @@
+{
+    "action": "de94bcc9d7f2f61b7c1091989ac31005",
+    "effect": {
+        "detail": {
+            "base": "8e6b506ea34304c397b9b764457b48e287f944d2",
+            "branch": "workbench/noindex-signin",
+            "commit": "e7fb0ffb93a7fa7ce401556ef31816126bdf5a47",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1629,
+    "verdict": "ALLOW"
+}

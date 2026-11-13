@@ -1,0 +1,16 @@
+{
+    "action": "4a1c2ccdafc7c72e7c8517ac3ac90642",
+    "effect": {
+        "detail": {
+            "base": "fc942f69c1d13aba385de4ffd221b68500879586",
+            "branch": "workbench/audience-corporate",
+            "commit": "a053b53e65537a9133be3bf5b710fa9f50ccd90e",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1668,
+    "verdict": "ALLOW"
+}

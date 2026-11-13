@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "On a report's page, the way to read it was easy to miss.\n\n- **The button.** \"Read the report\" (or \"Read the preview\") carried `btn-lg`, a class that was never defined, so it rendered at the size of every other button. It was also green on the dark band, which gives little contrast. `btn-lg` now exists (larger text and padding), and on the dark band the button is white with dark text (`btn-light`). The icon is a page of text (`fa-file-lines`, already in the icon subset) instead of the full-screen arrows.\n- **The cover.** The cover is the largest thing on the page and already opened the report, but nothing said so. It now carries a white \"Read the report\" label in its bottom corner, clear of the report's own title, and the label turns mint on hover.\n\nChecked in a local site with Going Out Staying In, at desktop and phone width. Report tests 35/35.\n",
+            "branch": "workbench/report-read-button",
+            "title": "Report page: make reading the report easy to find"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261112182055-239b88"
+}

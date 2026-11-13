@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The home section \"Built for professionals who need to get it right.\" should name corporate innovation teams as the audience, with the three groups under it. Corporate innovation teams are who looks for a youth-trend tool, and the page does not say so anywhere.\n\n## What is asked\n\n- Under the heading, a line in the orange of the group labels: \"For corporate innovation teams\".\n- The three group labels lose their \"For\": \"Brands and strategy teams\", \"Agencies and media\", \"Employers and institutions\".\n\nSource: Portal mail:49.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Home audience section: 'For corporate innovation teams' under the heading, group labels without 'For'"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261113072000-5da761"
+}

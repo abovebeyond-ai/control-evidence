@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6383cbb82629f38c96baef3b847b50d63b06e1a7",
+            "branch": "workbench/cited-source-pages",
+            "files_sha256": "26bd271857859d8530d248d195168fcf5ea898c6b7e8c6addc0965403d33c0b6",
+            "message": "A page per source an author cites, open to every reader and kept out of search; a post's citation links to it"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261112223353-fa8426"
+}

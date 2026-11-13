@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8e6b506ea34304c397b9b764457b48e287f944d2",
+            "branch": "workbench/noindex-signin",
+            "files_sha256": "75a2917227ca3a9cb8cf5f0eb689a95de7b489e4f936982b1c2413b5aba49fa4",
+            "message": "Mark every page shell noindex: Portal has no page to be found"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261113071718-9c21b5"
+}

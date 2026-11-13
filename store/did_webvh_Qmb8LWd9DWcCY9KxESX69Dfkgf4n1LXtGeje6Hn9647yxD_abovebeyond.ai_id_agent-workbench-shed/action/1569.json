@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two checks so that the sources of posts and reports end up in Gentells. Builds on #445 (`linksIn`, `reports`); merge that first.\n\n## A link straight out holds a post back in the review\n\n`uncitedLinks(article)` lists the links a post makes to other sites that are not yet cited as its sources: one entry per page (http/https, www and the closing slash are the same page), with its anchor text and sentence. A link to a source read for inspiration only is marked, since it cannot be cited and has to come out.\n\n`reviewSummaryFor` returns them as `uncitedLinks` and is not `ready` while any is left. Its reason comes first: \"a link to nielseniq.com is not cited as a source\" or \"3 links to other sites are not cited as sources\". The publish gate reads the same summary, so nothing else changes there. The Studio cites them with the existing `POST /articles/:id/sources/link`, one by one (Studio PR alongside).\n\nPosts already live are not touched: the gate only applies on the way to published.\n\n## A report's source list checked against Gentells\n\n`reportSources({slug})` reads each address on the report's source pages, from the file's links and from what is written out (`nielseniq.com`, `ec.europa.eu/eurostat`), and sorts it as:\n- **in Gentells:** a signal holds the page;\n- **known publisher:** the site is a source, the page is not held;\n- **new publisher.**\n\nA source that names only a home page is marked. A line of an address that the layout broke in two is not read as a site of its own.\n\nIt is served at `GET /reports/:slug/sources` for the Studio, and as the agent tool `report_sources`.\n\nOn the three reports checked locally:\n\n| Report | Sources | Home page only |\n|---|---|---|\n| Growing Into Money | 17 | 16 |\n| Going Out Staying In | 11 | 10 |\n| The New Status System | 17 | 2 |\n\n## Tests\n\n- `test/source-reads.test.mjs` (13): the uncited link found and the cited one left out, the same page twice counted once; the review not ready, with the link as its reason; a report's addresses sorted into the three groups with the home page marked.\n- Full suite 1651/1651, `tsc` clean.\n",
+            "branch": "workbench/source-checks",
+            "title": "Source checks: uncited links in the review, report source list"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261112182729-d4b705"
+}

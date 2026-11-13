@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b33d5c42618d11751ccf0da160fd7762a184cc43",
+            "branch": "workbench/source-checks",
+            "files_sha256": "979bb7562cac00e002e86711f8b47ece402b430efc4bac2a8a6cfd2b9d692362",
+            "message": "Cite these links in the Publish panel; the report's source list checked in Reports"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261112182754-b727fb"
+}

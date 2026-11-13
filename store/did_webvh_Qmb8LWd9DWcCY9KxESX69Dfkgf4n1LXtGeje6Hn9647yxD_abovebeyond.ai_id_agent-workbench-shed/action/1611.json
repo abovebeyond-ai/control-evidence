@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7b4ed6c3525dc49fc5e67ff9a21e198a6ab77714",
+            "branch": "workbench/silence-noise-2",
+            "files_sha256": "e2d27d6ab87c5affc014cd0487f866a293e28f7c13c43dd244c03d6881095c51",
+            "message": "Stop raising tasks no one can pick up: CSP, lab vitals, single errors, mail on platform hosts"
+        },
+        "resource": "abovebeyond-ai/elixir"
+    },
+    "run": "workbench-20261113071631-96d79a"
+}

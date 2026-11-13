@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nEvery page a stranger can reach in this app is a sign-in (`/aanmelden`, the crew's PIN door at `/werf`), a crew screen, or a private share link. None of them is meant to show up in search results.\n\n- `meta name=\"robots\" content=\"noindex, nofollow\"` in the four page shells: the `guest`, `office` and `site` layouts, and the print view.\n- `X-Robots-Tag: noindex, nofollow` in `SecurityHeaders`, so the CSV and Excel exports and the worker photos, which have no head, say the same.\n- `robots.txt` is left as it is (`Disallow:` empty). A crawler that is blocked never reads the noindex.\n\n## Why\n\nElixir scores basic tags on every page it can reach from outside. `/werf` answers 200 without a redirect, so it was scored as a public page with no description, and the project carried an SEO task at 50/100 for a screen nobody should find. Elixir now leaves noindex pages out of that score, so this ends the task at the source rather than in a rule.\n\n## Tests\n\n`SecurityHeadersTest::test_no_page_of_this_app_asks_to_be_found` checks the header and the meta tag on both sign-in routes. The full suite passes: 390 tests.\n",
+            "branch": "workbench/noindex-signin",
+            "title": "Tell search engines the app is not to be found"
+        },
+        "resource": "Trendwolves/glk-transferor"
+    },
+    "run": "workbench-20261113071657-e9a414"
+}

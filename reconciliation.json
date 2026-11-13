@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-12T07:34:36+00:00",
+    "computed_at": "2026-11-13T07:34:41+00:00",
     "window": {
-        "since": "2026-11-05T07:33:02+00:00",
+        "since": "2026-11-06T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -126,8 +126,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 16,
-                "gateway": 16
+                "github": 23,
+                "gateway": 23
             }
         },
         "Trendwolves/gentells-site": {
@@ -137,8 +137,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 30,
-                "gateway": 30
+                "github": 34,
+                "gateway": 34
             }
         },
         "Trendwolves/glk-transferor": {
@@ -147,8 +147,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 2,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -167,8 +167,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 3,
+                "gateway": 3
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -208,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 12,
-                "gateway": 12
+                "github": 14,
+                "gateway": 14
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -361,8 +361,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 2,
+                "gateway": 2
             }
         },
         "abovebeyond-ai/elixir-fix": {

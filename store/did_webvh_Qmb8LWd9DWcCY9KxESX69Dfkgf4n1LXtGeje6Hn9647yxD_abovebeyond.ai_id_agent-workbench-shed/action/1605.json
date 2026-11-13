@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A page on gentells.com for every source an author cites in a post or a report: what the source is, where Gentells cites it, the trends it feeds, and the link out to the publisher. It needs the pipeline PR that adds `/internal/projection/cited-sources`, so merge that one first.\n\n## Who sees what\n\nAn author's citation is open to every reader, like a footnote; a report prints its sources in full anyway. The Observatory's own sources behind a trend are unchanged: they stay with the Sources ability.\n\n## What is added\n\n- **`cited_sources`** (migration and `CitedSource` model), filled by `Projection::reconcileCitedSources()` in `gentells:reconcile`. The set is replaced wholesale. A malformed key or url is skipped. An empty answer while pages exist is refused (`ProjectionRefused`), so a pipeline that answers with nothing for a moment cannot take every page down, along with every link printed in a report.\n- **`/sources/{key}`** (`CitedSourceController`, `pages/source.blade.php`):\n  - What the page shows: title, publisher and date, \"Read it at <host>\", the full address, \"Where Gentells cites it\" (reports with the source's number in their list, posts with the sentences the source backs) and \"Trends it feeds\".\n  - Only posts, reports and trends that this site holds are listed.\n  - `noindex, follow`: the publisher's own page is the one that should rank.\n- **The post page:** a citation with a held page keeps its publisher for every reader and links to its page (\"View source\"). Its url no longer goes out with the evidence, since the page carries the link. A citation without a held page, and every Observatory signal, follow the old rule.\n\n## Checked\n\n- `tests/Feature/CitedSourcePageTest.php` (5):\n  - the reconcile replaces the set and skips malformed rows, and an empty answer is refused;\n  - the page opens for a stranger with noindex and the content above, and an unknown or malformed key gives 404;\n  - a free reader's post links the citation to its page, while the Observatory signal keeps neither name nor link;\n  - a citation with no page held yet falls back to the old rule.\n- Full suite: all pass except `BuildStampTest`, which fails in any worktree, and `SocialLoginTest`, because the vendor folder used here lacks Socialite.\n- Looked at in a local site at desktop and phone width.\n",
+            "branch": "workbench/cited-source-pages",
+            "title": "Cited source pages on gentells.com"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261112223353-fa8426"
+}

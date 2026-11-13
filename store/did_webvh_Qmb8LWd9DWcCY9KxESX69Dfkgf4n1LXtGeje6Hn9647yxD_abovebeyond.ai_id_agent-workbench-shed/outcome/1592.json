@@ -1,0 +1,16 @@
+{
+    "action": "373457e3127584c81a4c9818dbaf2ca9",
+    "effect": {
+        "detail": {
+            "base": "14b0a2f3db07cd7ce1aad89076c207150184969f",
+            "branch": "workbench/off-means-off",
+            "commit": "837f65476fdd08e862f50718ba8dba87b824d353",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1590,
+    "verdict": "ALLOW"
+}

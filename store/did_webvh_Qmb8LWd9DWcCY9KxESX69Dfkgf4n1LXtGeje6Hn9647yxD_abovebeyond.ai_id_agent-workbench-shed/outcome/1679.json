@@ -1,0 +1,16 @@
+{
+    "action": "b7eb966973792f2b1617cfd92bb97c95",
+    "effect": {
+        "detail": {
+            "base": "48d71a4a2b3cd291eeb5f093ec645b971c5f365a",
+            "branch": "workbench/phpseclib-patch",
+            "commit": "30f1efc187ca0a36430b9a48423045a9412938be",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1677,
+    "verdict": "ALLOW"
+}

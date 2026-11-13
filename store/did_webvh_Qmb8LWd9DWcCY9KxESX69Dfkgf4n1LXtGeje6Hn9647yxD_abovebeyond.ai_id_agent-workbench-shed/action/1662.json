@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Say on the site, where a corporate buyer sees it, that Gentells reads inside the AI assistants large companies already use, Microsoft Copilot in particular, through MCP. Several target customers work with Copilot, and that sells the plan more easily.\n\n## What is there now\n\n- /connect explains the MCP server and has a tab per tool: Claude, ChatGPT, Claude Code, Cursor, VS Code (\"For Copilot in Visual Studio Code\") and Codex.\n- /pricing names Claude, ChatGPT, Codex and Cursor. Copilot is not named, and the home page does not mention the AI-tool door at all.\n\n## What is open\n\nThe Copilot that large companies use is Microsoft 365 Copilot, extended through Copilot Studio, not Copilot in VS Code. Copilot Studio can add a remote MCP server, but nobody has added Gentells (OAuth at /mcp) to a Copilot Studio agent yet. Before the site claims it works there, it should be tried once in a Microsoft 365 tenant, and /connect should get a Copilot tab with the steps for an IT team.\n\nSource: Portal mail:49.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Say on the site that Gentells works in Microsoft Copilot and other assistants through MCP"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261113072011-78eeaa"
+}

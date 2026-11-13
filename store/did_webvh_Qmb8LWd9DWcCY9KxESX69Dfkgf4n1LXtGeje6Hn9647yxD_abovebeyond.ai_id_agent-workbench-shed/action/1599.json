@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Every source an author cites gets a page of its own on gentells.com. This PR adds the pipeline side: the list of those pages, and a page key on each citation in a post. The site side is a separate PR in gentells-site.\n\n## Which sources get a page\n\n- A page held under \"Cited by the author\" (`editorial-citations`) that a post on the site cites.\n- Every source in a report's source list (`report_sources`, #448), whichever source holds the page.\n\nThe Observatory's own signals cited in a post don't get a page, so they stay behind the Sources ability on the site as before. A draft's citation doesn't get one either, and a source read for inspiration only never does.\n\n## What is added\n\n- **`packages/core/cited-pages.mjs`**:\n  - `citedSourcePages()` returns one entry per page: key, url, publisher, title, date, unread, the posts that cite it (with the sentences it backs), the reports that cite it (with its number in the list) and the live trends it sits under. Where a report lists the source, the report's publisher, title and date come first, since that is what the reader saw in the PDF.\n  - `openCitationIds()` returns the ids of the signals that count as an author's citation.\n  - `pageKey()` gives the key: the first 10 hex characters of a sha256 of the signal id. It is stable, so a link printed in a PDF keeps working when a title is corrected, and it reveals nothing about the row behind it.\n- **`GET /internal/projection/cited-sources`**, behind the projection token: the full set every time, like the reports, because a source stops qualifying only by its absence.\n- **The article projection:** a citation in a post that has a page carries `page: <key>`.\n\n## Merge order\n\nMerge this first. The site's reconcile reads the new route and reports a failed section while the route is missing.\n\n## Tests\n\n- `test/cited-pages.test.mjs` (3):\n  - which sources get a page: the Observatory signal, the draft and the inspiration source do not;\n  - the fields, with the report list first and only the live trend;\n  - the route, and the page key on a post's evidence.\n- Full suite 1666/1666, `tsc` clean.\n",
+            "branch": "workbench/cited-source-pages",
+            "title": "Cited source pages: projection of every source an author cites"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261112223329-72d61b"
+}

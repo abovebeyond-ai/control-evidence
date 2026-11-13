@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: In the home audience section the capitals are set too large, and on a laptop-width screen the \"agencies and media\" block runs over the end of the \"brands and strategy teams\" text.\n\n## What is wrong\n\nThe section places its three blocks absolutely inside a box of fixed proportions (`lg:aspect-[1370/430]`), and the lines are set at `clamp(1.35rem, 2.2vw, 2.1rem)`. Around 1280 px wide, the brands text needs about seven lines and runs below 55% of the box height, where the agencies block starts. A screenshot from 12 November shows \"YOU ALREADY SENSE.\" under \"For agencies and media\".\n\nExpected: the three blocks never touch at any width from `lg` up, and the type sits closer to the size of the section heading.\n\nSource: Portal mail:49.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Home audience section: capitals too large, the agencies block overlaps the brands text at laptop width"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261113072004-4b0f9d"
+}

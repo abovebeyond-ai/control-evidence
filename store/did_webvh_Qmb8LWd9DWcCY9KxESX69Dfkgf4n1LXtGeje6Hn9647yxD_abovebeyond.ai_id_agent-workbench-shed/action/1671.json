@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #297\nCloses #298\nPart of #299\n\n## What changes\n\nThe home section \"Built for professionals who need to get it right.\" now names corporate innovation teams, and its type no longer collides.\n\n- Under the heading, a line in the orange of the group labels: \"For corporate innovation teams\". The three labels drop their \"For\": \"Brands and strategy teams\", \"Agencies and media\", \"Employers and institutions\".\n- The capitals go from `clamp(1.35rem, 2.2vw, 2.1rem)` to `clamp(1.05rem, 1.5vw, 1.4rem)` (from 1.55rem to 1.3rem on a phone). At the old size the brands text needed about seven lines around 1280 px and ran under the \"Agencies and media\" label, which starts at 55% of the fixed-proportion box.\n- The agencies block moves from left 18%, 30% wide, to left 12%, 26% wide. Its text ran under the torn-paper handshake piece, which starts at 38.5%.\n- The home page description (meta, Open Graph and Twitter) now opens with \"AI-powered youth trend tracking for corporate innovation teams\" and names \"youth culture research in Europe\". These are the phrases AI assistants were asked about in an outside visibility check. Where they should stand in the visible copy is still open in #299, so this PR does not close it.\n\n## Checked\n\n- Rendered locally in headless Chromium at 390, 1024, 1280, 1440 and 1920 px. Measured the gap between the end of the brands text and the agencies label every 32 px from 1024 to 2560: never under 14 px (1024), 39 to 69 px elsewhere. Before, it was negative around 1280.\n- `php artisan test`: 659 of 660 pass. `BuildStampTest` fails only in a git worktree, because `.git` is a file there. It is unrelated to this change.\n",
+            "branch": "workbench/audience-corporate",
+            "title": "Home audience section: for corporate innovation teams, at a size that does not collide"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261113072240-11d709"
+}

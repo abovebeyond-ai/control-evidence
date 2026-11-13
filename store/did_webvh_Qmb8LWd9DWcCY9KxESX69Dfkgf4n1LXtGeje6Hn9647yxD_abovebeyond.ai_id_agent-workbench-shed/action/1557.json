@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three read-only tools on the agent door (`GET /observatory/tools`, under the owner's read mandate), so an agent can read what the posts and the reports cite before turning those sources into sources Gentells holds.\n\nUntil now the articles and the report files were only reachable on the box itself. The Observatory's tools read signals and insights, not what a piece cites, so preparing citations meant an export over SSH every time.\n\n## The tools (`packages/core/source-reads.mjs`)\n\n- **`posts`:** the posts on gentells.com (or published, draft, all), newest first, each with how many links go straight to another site and how many citations it has. `with_links` lists those links with their anchor text and the sentence they sit in; images and gentells.com links are left out. With `id`: one post with its text, its outbound links and its citations (signal, address, source).\n- **`reports`:** the shelf, with whether each report has its file. With a slug: the pages that carry a source heading (Sources, Source list, References), as text, or the pages asked; plus every link in the file with its page (`pdfinfo -url`). Checked on R8, R9 and R10: the source pages are found (page 20; page 21; pages 26 to 28).\n- **`source_lookup`:** whether Gentells already holds a source. For an address: the signals stored under it (with and without www, closing slash, http), each with the current trends that rest on it. For a site: its publishers, including a publisher on a subdomain. For a name: sources called that. State and use say whether a publisher is admitted and may be cited.\n\n## Boundaries\n\n- **Agents only.** They are added on the HTTP route only, not to the desk partner's Ask (`toolsFor`), which has no use for them. A guest from gentells.com cannot reach the route at all (`/observatory/tools` is not in `GUEST_PATHS`).\n- **No people.** No author name or id, no one who admitted or moved a source.\n- **Nothing written.** Text is capped at 60,000 characters per answer.\n- `/observatory/tools` is already in `MANDATE_ROUTES`, so the mandate needs no change.\n\n## Tests\n\n- `test/source-reads.test.mjs` (10): links found with their sentence, not images or our own site; citations with a post and no author; the lookup across spellings, superseded trends left out, subdomains, no admitter's name; the shelf; a hand-built two-page PDF whose source page and link are found; the tools are not in the Ask.\n- Full suite 1648/1648, `tsc` clean.\n\nAfter merge nothing needs to run on the box; the auto-deploy restarts the server.\n",
+            "branch": "workbench/source-reads",
+            "title": "Agent reads: posts, report sources, source lookup"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261112180936-c327cf"
+}

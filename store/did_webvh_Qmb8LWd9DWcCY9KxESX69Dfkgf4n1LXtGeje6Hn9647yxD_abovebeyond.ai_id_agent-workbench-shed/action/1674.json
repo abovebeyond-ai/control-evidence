@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:49",
+            "note": "PR #302 proposed (closes #297 #298, part of #299). Open: #301 which loop is meant (hero band or audience section)? #300 Copilot claim needs one test in a Microsoft 365 tenant first; #299 where the two phrases go in visible copy.",
+            "state": "parked",
+            "url": "https://github.com/Trendwolves/gentells-site/pull/302"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261113072256-9a1845"
+}

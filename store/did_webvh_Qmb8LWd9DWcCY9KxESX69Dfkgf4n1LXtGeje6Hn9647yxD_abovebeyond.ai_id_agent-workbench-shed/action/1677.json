@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "48d71a4a2b3cd291eeb5f093ec645b971c5f365a",
+            "branch": "workbench/phpseclib-patch",
+            "files_sha256": "53265225caa36d0beacece4f91083d6bd4e5e63a2b8518a5608cbdb959890638",
+            "message": "Bump phpseclib to 4.0.3 for the PBKDF iteration advisory"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261113072450-2513f3"
+}

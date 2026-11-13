@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7a86a386d5aa43dc9fc5ad40cb49db6fb8838bcc",
+            "branch": "workbench/payment-method",
+            "files_sha256": "b40e37299ecae5c4dad3986bbd44eb263199c3d477b6ff488b9058406805ef01",
+            "message": "Update the payment method from settings: a verification payment on Mollie's page sets up the new mandate, the subscription moves to it, older mandates are revoked and the amount is refunded"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261112135845-05a16c"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A lighter Studio: fewer boxes, fewer lines, less bold, and underlines only where text is a link.\n\nThe screens carried more weight than what they say. A 2px yellow rule ran across the top of every page, around controls nobody needs to look at. About forty controls were underlined at rest, labels and buttons were set at 600, and every piece on the desk and every note in the margin sat in its own bordered box.\n\n## What changes\n\n- **Header:** a grey hairline instead of the 2px yellow rule. The yellow stays under the mode you are in, and as the loading bar while the Studio starts (`HeaderRule` only draws then).\n- **Weight:** controls and labels at 500 instead of 600. Page headings, the post's own typography and the deck visuals keep their weights.\n- **Underlines:** a quiet control (Preview, Versions, Delete, View, Take offline, the Publish panel's text buttons, the margin note's actions) is plain text until the pointer or focus is on it: the `.studio-quiet` class in `index.html`. Links inside a sentence stay underlined at rest.\n- **Desk:** a piece or a question is a row under a hairline, no box. The lanes stay side by side, with more air between the columns. The loading skeleton matches.\n- **Margin:** \"No source for this line\" is a note under a hairline, no box. The red heading carries it, and the sentence is in soft grey.\n- **Fewer lines:** no rule under the desk's group headings, none at the foot of the Publish panel.\n- **Grey for running text:** the Publish panel's explanations and the desk's \"live on gentells.com\" in soft grey; ink is kept for titles, choices and the post itself.\n\nNo behaviour changes. `npm test` 67/67, `vite build` clean. Checked against a copy of the data in a local Studio: desk, editor with the review open, Curate posts and the front page, before and after.\n",
+            "branch": "workbench/studio-lighter",
+            "title": "Lighter Studio: fewer boxes, lines and bold, underlines only on links"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261112114902-56059e"
+}

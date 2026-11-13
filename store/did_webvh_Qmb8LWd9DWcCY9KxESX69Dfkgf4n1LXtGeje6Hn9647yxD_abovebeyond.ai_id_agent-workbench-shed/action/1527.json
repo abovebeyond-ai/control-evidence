@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "036c1b6091d8da7b27370bc2f0fa23fe70753973",
+            "branch": "workbench/post-dates",
+            "files_sha256": "e5109bc782203a23b445f8c492fe483eb10e8d1b8e08960b9434f9687a80aedd",
+            "message": "Publish a post from one button, with scheduling and the post's date kept apart"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261112113513-0a63c2"
+}

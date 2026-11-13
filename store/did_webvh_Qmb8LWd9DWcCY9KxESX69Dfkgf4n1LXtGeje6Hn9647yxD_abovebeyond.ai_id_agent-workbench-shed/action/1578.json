@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3d0ef45e31cc008d8ec0cbc0d6d42505760b08a0",
+            "branch": "workbench/platform-links",
+            "files_sha256": "81464f70ca82ae2d99d31f2bed951138f5a71be798242c1be868c62483e8defe",
+            "message": "Cite a TikTok, Instagram or YouTube post by its link without fetching it"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261112183015-dfc0d4"
+}

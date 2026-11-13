@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Studio side of two source checks. Needs gentells-pipeline #446 (`uncitedLinks` in the review summary, `GET /reports/:slug/sources`); merge that first, without it nothing new shows.\n\n## Publish: Cite these links\n\nWhen the review lists links that go straight to another site, the Publish panel shows them in place of the review's reason: the site, the link text, and one button, **Cite these links**. It cites each with the existing `POST /articles/:id/sources/link`, under its sentence, or as a source of the whole piece when the sentence no longer matches. A page Gentells does not have yet is added. A link that cannot be cited shows why next to it, for example a page behind a login. A link to a source read for inspiration only says to take it out, and is not offered for citing.\n\nThe live review now also refreshes when the number of sources changes, so the list updates after citing.\n\n## Reports: the sources\n\nWith a file on the shelf, the report shows its source list checked against Gentells. Above it is one line: how many sources, on which pages, how many in Gentells, from a known publisher, or new. Below are the three groups. A source that names only a home page is marked, with a note to ask the designer for the page, its title and date. A new upload brings a new check.\n\n## Checks\n\n- `npm test` 67/67, `vite build` clean.\n- Both parts rendered against fixed answers, including a link that cannot be read and an inspiration-only source.\n",
+            "branch": "workbench/source-checks",
+            "title": "Cite these links on publish; report sources in Reports"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261112182754-b727fb"
+}

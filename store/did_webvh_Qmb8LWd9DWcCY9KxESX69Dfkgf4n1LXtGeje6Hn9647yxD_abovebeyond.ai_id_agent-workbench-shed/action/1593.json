@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The feed and page readers ask for their active rows, so a source switched off on the Sources page is not read. Seventeen adapters keep their rows in code (`src-youtube`, `src-*-hotrank`, `src-wikipedia-spikes`, Google Trends, Instagram, TikTok, Bluesky, Reddit and others) and never asked. A row of theirs that was switched off, or parked by the collector, went on being collected and classified.\n\nThe six China hot-rank lists show it. The collector parked them after Apify refused the key 25 times in a row (\"User was not found or authentication token is not valid\"). Once the key worked again they kept delivering (Toutiao 312, Bilibili 134 in the last day) while the Sources page showed all six parked and failing. A success clears the error, but not the park.\n\n## What changes\n\n- **An adapter whose every row is off does not run.** Its run is recorded as skipped: \"every source it reads is switched off\". An adapter with no row at all runs as before.\n- **The signals of a row that is off are held back** before they are stored, for one list or one country off while the rest of the adapter is on. The collect log names how many per source. A signal whose source has no row is kept.\n- **The China hot-rank adapter does not start an Apify run** for a list that is off. `ctx.sourceOn(id)` is there for any other adapter that wants to skip the fetch too.\n- The feed and page readers were already right and are unchanged.\n\n## Tests\n\n- `test/off-means-off.test.mjs`, 6 tests, new: every row off skips the adapter; one row on runs it; no row runs as before; the feed reader runs while any feed is on; signals of an off row are held back and the rest kept; a hot-rank list that is off starts no Apify run.\n- `npm test`: 1659 of 1659. `tsc` clean.\n\n## Before merging\n\nA row that is off today and still delivering stops at the next collect. Check Sources, under Switched off, for rows with signals in the last 30 days. The six China hot-rank lists are among them and need Switch on first, or China intake stops.\n",
+            "branch": "workbench/off-means-off",
+            "title": "Off means off for adapters that keep their sources in code"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261112192804-45bcb2"
+}

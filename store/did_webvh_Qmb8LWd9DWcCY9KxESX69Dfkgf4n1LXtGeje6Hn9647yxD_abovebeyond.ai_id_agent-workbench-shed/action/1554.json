@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7d6d4e514b340ef21ac2093887a8f285d9d32399",
+            "branch": "workbench/source-reads",
+            "files_sha256": "995cae0b2448906fda9c4b22d278808c98dab9abb859260a2b3f91742987e62b",
+            "message": "Observatory tools for agents: posts with their links and citations, report source pages, source lookup"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261112180936-c327cf"
+}

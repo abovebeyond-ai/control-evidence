@@ -1,0 +1,16 @@
+{
+    "action": "ad0f1061f50a416e06f9be0feda135b5",
+    "effect": {
+        "detail": {
+            "base": "2d89a4fae202a9123705911bf0948b40529bfb39",
+            "branch": "workbench/trend-lanes",
+            "commit": "70f4bb70a587fa4fded28d808fc136f80b5fd4e7",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1633,
+    "verdict": "ALLOW"
+}

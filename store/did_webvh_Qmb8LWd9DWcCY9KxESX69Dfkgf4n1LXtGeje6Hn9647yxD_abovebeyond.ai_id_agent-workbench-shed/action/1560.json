@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "98d232febe98c62fd24f7cc0f6349bc55eab847d",
+            "branch": "workbench/report-read-button",
+            "files_sha256": "ca7873fd0365319dcc544af7376306becdfebad53c1d4cd952b0ce19c1c288bf",
+            "message": "Report page: Read the report as a large white button on the dark band, and the cover says it opens the report"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261112182055-239b88"
+}

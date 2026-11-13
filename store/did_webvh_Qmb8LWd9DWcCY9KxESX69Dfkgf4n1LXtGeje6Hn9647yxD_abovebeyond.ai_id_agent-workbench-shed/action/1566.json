@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3d0ef45e31cc008d8ec0cbc0d6d42505760b08a0",
+            "branch": "workbench/source-checks",
+            "files_sha256": "5392b83ea84ea817e6232b39be1329df43de0e8784423bf0f057e90640ec7ea5",
+            "message": "Uncited links hold a post back in the review; a report's source list checked against Gentells"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261112182729-d4b705"
+}

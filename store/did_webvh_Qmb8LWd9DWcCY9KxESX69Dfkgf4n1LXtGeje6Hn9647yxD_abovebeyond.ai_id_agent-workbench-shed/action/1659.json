@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Put the phrases \"AI-powered youth trend tracking for corporate innovation teams\" and \"youth culture research in Europe\" in the gentells.com copy, so that AI assistants that answer those questions can find and name Gentells.\n\n## What is asked\n\nAn outside visibility check asked six AI assistants who does AI-powered youth trend tracking for corporate innovation teams, and who offers free or freemium tools for tracking youth culture signals. Gentells was not named; a US competitor was. Part of that is that the site is still behind the prelaunch gate, but the words those questions use are also not on the site.\n\nThe ask is that both phrases appear in the copy. Where exactly is open; a first step is the home page description (the meta description assistants and search engines read) and the audience section (see the issue on \"For corporate innovation teams\").\n\nSource: Portal mail:49.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Copy names 'AI-powered youth trend tracking for corporate innovation teams' and 'youth culture research in Europe'"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261113072007-79c936"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: Try letting the audience pieces of the home (\"Built for professionals who need to get it right.\") take turns in a loop with the collage at the top of the home and with the graph, and see what that gives.\n\n## What is asked\n\nAn experiment, not a decision: a version where these visuals alternate, to look at before choosing.\n\n## Open question\n\nIt is not clear which place the loop is meant for: the hero band at the top (collage, then the torn-paper audience cluster, then the graph), or the audience section itself (the torn-paper cluster alternating with a crop of the collage and the graph). The answer decides what gets built.\n\nSource: Portal mail:49.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P3"
+            ],
+            "title": "Try the audience pieces alternating in a loop with the home collage and the graph"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261113072015-987dda"
+}

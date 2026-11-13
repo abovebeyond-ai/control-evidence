@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ba621bdf337cf7487390be61468bc9bdd8015a3f",
+            "branch": "workbench/studio-lighter",
+            "files_sha256": "ee29b153d95dd522b8531ddba76b4968f77da65692d93bbe563a349ff9218a54",
+            "message": "Lighter Studio: hairlines instead of boxes and the 2px header rule, controls at 500, quiet controls underlined only on hover"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261112114902-56059e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "14b0a2f3db07cd7ce1aad89076c207150184969f",
+            "branch": "workbench/report-citations",
+            "files_sha256": "04b9a4a87fb115ac3ceeab7fa2d8845c37e54bdd3ae625028b685b33bb3f9af8",
+            "message": "Hold the sources of Gentells' own reports in Gentells, by their place in the source list"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261112192634-fa4b94"
+}

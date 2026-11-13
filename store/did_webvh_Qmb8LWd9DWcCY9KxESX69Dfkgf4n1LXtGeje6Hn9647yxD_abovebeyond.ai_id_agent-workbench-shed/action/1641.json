@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a25aa43b81f57e91c9359c84bfd310c3d3d828d5",
+            "branch": "workbench/noindex-signin",
+            "files_sha256": "48c3a3a30530f41f82c38083f9f4d66f9db7522356e5b76cfda617cb44ba6ae1",
+            "message": "Mark the sign-in and the app noindex, leave the website module indexed"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261113071737-eba596"
+}

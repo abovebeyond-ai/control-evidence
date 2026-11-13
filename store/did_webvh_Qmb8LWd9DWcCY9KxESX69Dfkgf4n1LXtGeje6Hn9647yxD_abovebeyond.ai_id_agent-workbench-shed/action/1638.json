@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nA third of the trends on the radar named China. That reflects how much we read on the Chinese hot-search lists, not what a reader comes to Gentells for. The pipeline now marks a trend whose evidence comes mostly from East Asia with a lane (Trendwolves/gentells-pipeline#451). The site keeps those trends apart.\n\n## What changes\n\n- **`trend_cards.lane`** (migration): null means the main list. The reconcile stores each trend's `lane`, and the payload's `lanes` (id, label, line) go in ProjectionState.\n- **`TrendCard::scopeMainList` and `TrendCard::lanes()`**.\n- **Trends page**: the main list leaves lane trends out. Each lane follows below it in a band with the pipeline's label and line, filtered like the list above. It shows three cards, then \"Show all N\".\n- **Home page and reading room**: only the main list, so a lane trend takes no place on the front.\n- **A lane the site has no label for** stays in the main list instead of disappearing.\n\n## Tests\n\n`tests/Feature/TrendLaneTest.php` (4 tests):\n- the reconcile keeps each lane and the labels;\n- the band sits under the main list, even for a lane trend that ranks first;\n- a lane trend is not on the front;\n- an unlabelled lane stays in the main list.\n\nIn the full suite, only BuildStampTest and SocialLoginTest fail. Both are local environment issues: BuildStampTest always fails in a worktree, and SocialLoginTest because Socialite is missing from the copied vendor folder.\n\nMerge after the pipeline PR. Until the pipeline sends `lane`, every card has none and the site looks as it does today.\n",
+            "branch": "workbench/trend-lanes",
+            "title": "Trends in a lane get their own band on the trends page, and stay off the front"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261113071721-5a4710"
+}
