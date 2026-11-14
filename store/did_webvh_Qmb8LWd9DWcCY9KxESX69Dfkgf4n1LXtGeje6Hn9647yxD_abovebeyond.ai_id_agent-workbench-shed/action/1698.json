@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\ngentells.com shows trends by rule, and editors can take one off. Until now a take-off recorded who and when but not why, so nothing could learn from it, and the same idea could come back under another headline with no trace that it had been refused. Editors also could not tell which of the trends on the site anyone had looked at.\n\n## What changes\n\n- `showcase_decisions.reason`: a take-off carries one of `TAKE_OFF_REASONS` (not about young people, a news item, same as another trend, the signals do not bear it out, wrong sector/generation/region, something else). The store refuses an unknown reason, or a reason on anything other than a take-off.\n- `trend_looks`: an editor looked at a trend and left it on the site. A take-off or put-back from the Studio counts as a look. The curation mail and an undo do not.\n- `POST /site/trends/:id` takes `reason` with `hide`, and the new actions `looked` and `unlook` (the undo of a look). Neither of those touches the projection.\n- `GET /site/trends`: each live trend carries `on_site_since` (from `site_shown`) and `looked` (`{by, at}` or null). Each hidden trend carries `hidden_by` and `reason`. The overview sends `takeOffReasons`.\n- Fix: an undo back to no status, which is the case for every trend online by rule, wrote NULL into `showcase_decisions.to_status` (NOT NULL), so the undo was rolled back. The log now writes `none`, and `showcaseHistory` reads it as null again.\n\nThe reasons are only kept here. Feeding them to the writer, and checking new trends against taken-off ones, is the next step.\n\n## Checked\n\n- `test/trend-desk.test.mjs` (5 tests). Full suite 1677/1677, `tsc` clean.\n\nAfter deploy, all trends currently on the site start as not looked at: a one-time pass through about 38.\n",
+            "branch": "workbench/trend-desk",
+            "title": "Trend desk: a reason when a trend comes off gentells.com, and which trends nobody looked at"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261113083802-4b050c"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "d0b3123b277456392ee9881bafe8a97c",
+    "effect": {
+        "detail": {
+            "base": "ee69192f5c106418ac8003b711f814f721497ad3",
+            "branch": "workbench/seo-basics",
+            "commit": "8f896cb8b6b011fe3badd76cf13c6dfacd50acfd",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1764,
+    "verdict": "ALLOW"
+}

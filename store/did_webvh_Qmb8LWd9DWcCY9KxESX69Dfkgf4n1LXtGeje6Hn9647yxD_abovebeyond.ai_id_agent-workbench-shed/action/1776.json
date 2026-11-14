@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9ee6d8dfc72125766ac932cee39b9344cc293099",
+            "branch": "workbench/alt-texts",
+            "files_sha256": "2c7ec90696453524db73e568feae58c18fbf3b1bf35a60bbe597c811ddf182a5",
+            "message": "Give the confidential card an alt; let Home stills carry their Studio alt"
+        },
+        "resource": "ShaneDeconinck/cides"
+    },
+    "run": "workbench-20261113091304-b70682"
+}

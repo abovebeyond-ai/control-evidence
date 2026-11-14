@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "vitals"
+        },
+        "resource": "portal:signal-observatory-gentells"
+    },
+    "run": "workbench-20261113084622-3b6fca"
+}

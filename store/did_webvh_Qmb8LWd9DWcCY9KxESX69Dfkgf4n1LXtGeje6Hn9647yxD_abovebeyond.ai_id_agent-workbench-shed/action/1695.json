@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "30dbe6ad4a2dc147792d633249f22885202c3d8a",
+            "branch": "workbench/trend-desk",
+            "files_sha256": "ddb514b093a637bc83ae15ddf2fa39ef15395ac172c58cd59e60b6145f646498",
+            "message": "Trend desk: a reason when a trend comes off gentells.com, and which trends nobody looked at"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261113083802-4b050c"
+}

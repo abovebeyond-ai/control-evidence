@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "62a05c8b6bc492ee72fcf281102771e1abb22b60",
+            "branch": "workbench/review-csp",
+            "files_sha256": "ff7bed4b50d468fb35024767f419055c9ac4e6a1c270ee05e1d132b331c2ed30",
+            "message": "Serve the review page's scripts from the same origin so the Studio review works"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261113124821-f3259b"
+}

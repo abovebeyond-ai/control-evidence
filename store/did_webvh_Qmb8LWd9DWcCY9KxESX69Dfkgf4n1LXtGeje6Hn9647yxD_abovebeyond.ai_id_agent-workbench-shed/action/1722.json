@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "pages"
+        },
+        "resource": "portal:glk-transferor"
+    },
+    "run": "workbench-20261113084619-ed8908"
+}

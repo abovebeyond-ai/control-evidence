@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nEditors could take a trend off gentells.com, but not say why. They also could not see which trends on the site nobody had looked at yet. Needs gentells-pipeline #453 (reasons and looks) merged first.\n\n## What changes\n\n- **Trends tab**\n  - It opens on **New on the site**: the trends nobody has looked at, newest first, with since when each one is on the site.\n  - Each has **Looks right** (it stays, and leaves the list) and **Take off**. Take off opens a short list of reasons, and the choice takes it off.\n  - Both say what they did, with Undo.\n  - **Online, looked at** says who looked and when. **Taken off** says who, when and why.\n- **Front page tray**: one line, \"N trends are on gentells.com that nobody has looked at\", with a link to Trends.\n- `src/trend-desk.js`: the list order, the editor's name (the address before the @) and the reason label, with tests.\n\n## Checked\n\n- `npm test` 70/70, `vite build` green.\n- Looked at in a local preview against sample trend data: the queue, the reason choice, the toast with Undo, and the tray line.\n",
+            "branch": "workbench/trend-desk",
+            "title": "Trend desk: new trends on the site first, taking one off asks why"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261113083822-9107da"
+}

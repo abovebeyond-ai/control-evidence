@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "vitals"
+        },
+        "resource": "portal:trustedagentic"
+    },
+    "run": "workbench-20261113084615-79b6e9"
+}

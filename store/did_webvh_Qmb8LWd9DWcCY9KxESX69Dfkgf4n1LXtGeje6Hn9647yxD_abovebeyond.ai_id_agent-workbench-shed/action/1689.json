@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a400cae64de743aac5e17f53fed93067ec53285c",
+            "branch": "workbench/now-mail",
+            "files_sha256": "6bc2b90d6ebf072bcfd520435c1cc0a3a5390de9ad0d8917cab7ac0b54aa078f",
+            "message": "Mail the owner once when a task opens in now"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261113082631-789314"
+}

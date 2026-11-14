@@ -1,0 +1,14 @@
+{
+    "action": "d660918fd99d368eb008e98f43777d79",
+    "effect": {
+        "detail": {
+            "only": "app",
+            "project": "signal-observatory-gentells",
+            "queued": true
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1743,
+    "verdict": "ALLOW"
+}

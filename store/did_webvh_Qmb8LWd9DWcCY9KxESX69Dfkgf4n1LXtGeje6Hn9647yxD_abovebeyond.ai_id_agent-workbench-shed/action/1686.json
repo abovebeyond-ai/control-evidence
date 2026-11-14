@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The app declares the keys it acts with to Elixir (`GET /elixir`, `credentials`), so a refused key becomes a task in Portal. The Apify token was not among them, although five adapters run on it: the six China hot-rank lists, Instagram search, TikTok, Pinterest and Twitter.\n\nOn 11 November Apify replaced every API token after a security incident. The pipeline's token stopped working, the China lists were parked after 25 failed rounds, and Instagram and TikTok delivered nothing for a day. Elixir measured nine other keys and saw nothing wrong, because this one was never declared.\n\n## What changes\n\n- **`apify api token`** is declared once `APIFY_API_TOKEN` is set, like the OpenAlex key:\n  - proven by the last run of any Apify adapter that Apify answered (`delivered`, `nothing-new` or `empty`; an empty list is still Apify accepting the token);\n  - refused by a failed run whose reason is Apify turning the token away (`user-or-token-not-found`, `token is not valid`, a 401), when it is newer than the last proof. An actor that crashes or a rental that ends is not the token, and is not reported as refused.\n- Never the secret.\n- `APIFY_ADAPTERS` names the adapters on the token, and a test holds it to the adapters whose meta says `vendor: 'apify'`.\n\n## Tests\n\n- `test/declared-keys.test.mjs`, 2 tests, new: not declared without a token; proven by a delivered or empty run; an actor failure is not a refusal; a token refusal is; a later answered run clears it; never the secret. The list matches the adapters on Apify.\n- `npm test`: 1674 of 1674. `tsc` clean.\n",
+            "branch": "workbench/apify-credential",
+            "title": "Declare the Apify token to Elixir"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261113082606-0922b1"
+}

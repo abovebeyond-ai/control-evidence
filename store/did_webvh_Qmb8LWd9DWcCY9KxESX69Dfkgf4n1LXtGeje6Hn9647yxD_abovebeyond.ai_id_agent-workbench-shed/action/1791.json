@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: The citation review page inside the Studio does nothing when clicked, so a writer cannot judge and sign the citations, and a post cannot be published. The writer who now also publishes is blocked on every post.\n\n## What happens\n\nIn the Studio, Publish says \"Before it goes live, the review: not reviewed yet. Open the review\". The review page opens, but clicking a citation never fills the Source panel: there is no \"sign review\" button, no \"to judge\" count and no summary line. The page renders exactly as it does with JavaScript switched off.\n\n## Why\n\n`docs/nginx-security-headers.sh` puts `Content-Security-Policy: ... script-src 'self' ...` on every response of observatory.gentells.com since 2026-09-11, `/api/pipeline/*` included (checked live on the 401 of `/api/pipeline/articles/x/review/page`). The review page that `GET /articles/:id/review/page` serves (ProveML's `reviewPage`, wrapped in `packages/pipeline/article-review.mjs`) runs entirely on inline `<script>` blocks: the page script, `PROVEML_REVIEW_SUBMIT` and `PROVEML_REVIEW_COMMITTED`. `script-src 'self'` blocks all three, so the page never wires its clicks. Nothing in the page uses inline event handlers or eval, so the inline blocks are the only thing in the way.\n\nLoosening the policy is not the fix: nginx adds its header on top of anything the pipeline sends, and a browser enforces both policies.\n\n## Fix\n\nServe the page's executable inline scripts as one same-origin script under the same review token, so the page passes `script-src 'self'` without touching nginx. The `text/plain` snapshot blocks stay inline, because they are data and CSP does not run them.\n\nSource: Portal mail:50 (a writer's report with two screenshots of the Publish panel and the review page).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "Studio review page does nothing on click: the CSP blocks its inline scripts, so posts cannot be published"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261113124557-96d035"
+}

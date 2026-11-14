@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A task with the term \"now\" waited in Portal until someone opened Portal. Nothing carried it to the owner: the Android app has no push, and Elixir mails only a job that fails and a site that goes down or comes back. In November the Observatory's first Claude account stood logged out with a \"now\" task open (\"claude a1: OAuth session expired\") while the other account carried the week alone, and it was found by chance.\n\n## What changes\n\n- **`NowMail`**, run by `portal:fleet-snapshot` (every fifteen minutes) after the reactor, on the same changes it reads:\n  - a task that **opened in \"now\"**, or **worsened into it**, since the last snapshot is mailed to `portal.owners` (`OWNER_EMAILS`);\n  - the mail names the project and task, the verdict, up to four evidence lines and the project's page in Portal; several at once are one mail;\n  - **once**: the same task standing open in the next snapshot is not mailed, and a task that closes and opens again within 24 hours is not mailed again, so a flapping measurement cannot fill the inbox;\n  - a task a person has taken up or parked is not mailed;\n  - a mail that fails to send is retried at the next change, and never fails the snapshot.\n- `--no-react` now also mails nobody, as it asks no hand.\n- No first-snapshot stampede: like the reactor, nothing is mailed when there is no previous snapshot.\n\n## Tests\n\n- `tests/Feature/NowMailTest.php`, 6 tests, new: an opened \"now\" task is mailed with its evidence and link; not twice within the quiet window; worsened into \"now\" says what it was; a \"week\" task and a held task are not mailed; several are one mail; without an owner nothing is sent and nothing is kept quiet.\n- `php artisan test`: 779 of 780. The one failure is `BuildStampTest`, which fails only in a git worktree. Pint passes.\n\n## On the box\n\nNothing new: it sends through the mailer the login link already uses, to `OWNER_EMAILS`.\n",
+            "branch": "workbench/now-mail",
+            "title": "Mail the owner once when a task opens in now"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261113082631-789314"
+}

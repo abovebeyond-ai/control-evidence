@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "891cdb686866be3a844812117a2c2d708a6475c2",
+            "branch": "workbench/headers-follow-elixir-2",
+            "files_sha256": "9a5826787cd5265c409d87da935cc3ec6f6d444434b3824dbb150fe82e6eaf71",
+            "message": "Let a judged header row weigh what Elixir judged"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261113085016-18af1f"
+}

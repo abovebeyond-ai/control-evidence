@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b2cab55c0478e7e753f0f1200f45d33a3284e718",
+            "branch": "workbench/apify-credential",
+            "files_sha256": "7225c78e1d1c8ebed1e42ff73638a4198f563e7e6e5ca739d7999dd3b893b5fe",
+            "message": "Declare the Apify token to Elixir, proven and refused like the other keys"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261113082606-0922b1"
+}

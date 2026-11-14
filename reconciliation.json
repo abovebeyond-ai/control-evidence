@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-13T07:34:41+00:00",
+    "computed_at": "2026-11-14T07:34:27+00:00",
     "window": {
-        "since": "2026-11-06T07:33:02+00:00",
+        "since": "2026-11-07T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -65,8 +65,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "ShaneDeconinck/elisabethdevestele": {
@@ -126,8 +126,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 23,
-                "gateway": 23
+                "github": 26,
+                "gateway": 26
             }
         },
         "Trendwolves/gentells-site": {
@@ -137,8 +137,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 34,
-                "gateway": 34
+                "github": 33,
+                "gateway": 33
             }
         },
         "Trendwolves/glk-transferor": {
@@ -157,8 +157,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/portal": {
@@ -167,8 +167,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 6,
+                "gateway": 6
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -198,8 +198,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 1,
+                "gateway": 1
             }
         },
         "stocklistdealer-eu/platform": {
@@ -208,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 14,
-                "gateway": 14
+                "github": 11,
+                "gateway": 11
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -218,8 +218,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "Hoet-design/hoet-sanity": {
@@ -317,8 +317,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 5,
+                "gateway": 5
             }
         },
         "abovebeyond-ai/bextrust": {
@@ -361,8 +361,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 3,
+                "gateway": 3
             }
         },
         "abovebeyond-ai/elixir-fix": {

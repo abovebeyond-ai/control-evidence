@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5e8756571b948fd06de55b081d2dd0b4aca4c294",
+            "branch": "workbench/trend-desk",
+            "files_sha256": "01ac11af3b0466d6f8986bb5d79babb56a24afcde043bc6c4552de6910de359c",
+            "message": "Trend desk: new trends on the site first, taking one off asks why"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261113083822-9107da"
+}

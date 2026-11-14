@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c19b958faebd238b2f73e99524052efb152b2cb2",
+            "branch": "workbench/alt-texts",
+            "files_sha256": "e35fc69829c19be108da1d16fc945c5bb5b96c6ed567f0f0eb11856c7afc36e4",
+            "message": "CyberSec sticker alt text: describe the prompt instead of spelling >_"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261113090802-cb4d41"
+}

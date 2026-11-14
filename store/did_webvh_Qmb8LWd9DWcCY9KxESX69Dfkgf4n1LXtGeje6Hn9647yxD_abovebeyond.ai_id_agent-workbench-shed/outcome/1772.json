@@ -1,0 +1,16 @@
+{
+    "action": "eb0cdb7129a0b9714b62d3373f976b4c",
+    "effect": {
+        "detail": {
+            "base": "42d9a3e60af85507dd0dad8c01fbd611bd70bf49",
+            "branch": "workbench/alt-quoted",
+            "commit": "29e9292081acbea5cc860b3d914c7451e04088e7",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1770,
+    "verdict": "ALLOW"
+}

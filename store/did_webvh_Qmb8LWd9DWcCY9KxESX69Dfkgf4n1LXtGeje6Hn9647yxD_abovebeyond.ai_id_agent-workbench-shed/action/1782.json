@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "13c2213e4ea3514f4151a656961fcfbbe23f303e",
+            "branch": "workbench/garage-pages",
+            "files_sha256": "f6deb2d8f672be5838a681ebcd300cc3f5c42c766dfe1ba50c6d26629c10e04a",
+            "message": "Fix /aanbod and /sitemap-index.xml 404 without slash; lighter mobile hero and fonts"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "workbench-20261113091844-5a2bbd"
+}

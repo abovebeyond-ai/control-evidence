@@ -1,0 +1,16 @@
+{
+    "action": "d5f98edf7eb4e957312013138205e503",
+    "effect": {
+        "detail": {
+            "base": "c19b958faebd238b2f73e99524052efb152b2cb2",
+            "branch": "workbench/alt-texts",
+            "commit": "d528dfcd4d88e15abe962841d5f437024e7cc490",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1758,
+    "verdict": "ALLOW"
+}

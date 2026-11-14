@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nelixir#252 moved `CSP_MISSING` to background: no hand writes a content security policy, so as a task it could only sit there every week. After that deployed and the fleet was measured again at 08:00, the `exposure` task was still open on the same eight sites (abovebeyond, afrodidact-website, cafe-t-hoekske-website, garage-de-backer-website, kubo-it-lab, menukaart-webapp, portal, sportbusinessgame).\n\nThe cause is in the exposure card. It gave the CSP and HSTS header rows `month` on its own (`$zwaar ? self::MONTH : ...`). The card's level opens a task even when none of Elixir's verdicts fires: Worklist falls back to one task under the card slug, with `threshold: null`. So here the card overruled the registry it is supposed to read.\n\n## What\n\n- `SecurityCards::exposure()`: a heavy header row takes the level of Elixir's verdict on its facet. That is `csp` for the policy and `headers` for HSTS. The fixed `month` stays only as the fallback for rows Elixir did not judge (older rows). Light headers stay background, as before.\n- `JudgedRows` now mirrors the registry after elixir#252, so `CSP_MISSING` is background there too.\n- Tests:\n  - A judged row with CSP and HSTS missing gives CSP background and HSTS month.\n  - When the policy alone is missing, the card stays below month, so no task opens.\n\n## Checked\n\n- `php artisan test`: 781 of 782 pass. The one that fails, `BuildStampTest`, fails the same way on main in this checkout, because the checkout has no build stamp.\n- pint and phpstan pass.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+            "branch": "workbench/headers-follow-elixir",
+            "title": "Let a judged header row weigh what Elixir judged"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261113084555-6b28a9"
+}

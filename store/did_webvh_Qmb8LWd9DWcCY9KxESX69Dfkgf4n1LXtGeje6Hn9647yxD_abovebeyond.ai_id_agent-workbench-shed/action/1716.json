@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "vitals"
+        },
+        "resource": "portal:afrodidact-website"
+    },
+    "run": "workbench-20261113084616-e35358"
+}

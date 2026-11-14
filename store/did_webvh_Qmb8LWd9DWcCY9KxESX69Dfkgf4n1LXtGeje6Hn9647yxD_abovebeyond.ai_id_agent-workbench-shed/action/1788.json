@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:50",
+            "note": "Reading the publish/review screenshots; finding where the review step blocks a writer who also publishes",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261113124207-28dea8"
+}

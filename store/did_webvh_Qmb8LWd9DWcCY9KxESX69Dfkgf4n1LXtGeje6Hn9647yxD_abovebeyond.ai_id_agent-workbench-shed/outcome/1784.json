@@ -1,0 +1,16 @@
+{
+    "action": "846f55b3c4c86a3dd4d433ca90dfbb2f",
+    "effect": {
+        "detail": {
+            "base": "13c2213e4ea3514f4151a656961fcfbbe23f303e",
+            "branch": "workbench/garage-pages",
+            "commit": "a43e1937e7f1efe772ff1fc158810e0ac67825d3",
+            "files": 18,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1782,
+    "verdict": "ALLOW"
+}

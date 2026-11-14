@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ee69192f5c106418ac8003b711f814f721497ad3",
+            "branch": "workbench/seo-basics",
+            "files_sha256": "e563095c39baad9712765474f48a285b54b41769ca13e96ad92c4b7723142806",
+            "message": "Add robots.txt, a sitemap, and canonical and Open Graph tags to every page"
+        },
+        "resource": "abovebeyond-ai/abovebeyond"
+    },
+    "run": "workbench-20261113091036-c1c251"
+}

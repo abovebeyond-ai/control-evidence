@@ -1,0 +1,11 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.measure",
+        "params": {
+            "only": "vitals"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261113084617-76eb4b"
+}

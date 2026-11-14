@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe hero image on the KUBO CyberSec page (the `sudo ./learn` keycap sticker) has an alt text, but it spells the prompt on the key as a literal `>_`. A screen reader reads that aloud as \"greater than, underscore\", which tells a blind visitor nothing about the picture.\n\nThe raw `>` inside the `alt` attribute is valid HTML, but tag scanners that read `<img ...>` up to the first `>` cut the tag off there and report the image as having no alt text. That is how /communities/cybersec/ and /nl/communities/cybersec/ came out as the only two images on the site without alt text. The FR page passed only because its alt text has an apostrophe before the `>`.\n\n## What\n\nIn `src/components/CyberSecPage.astro`, the `stickerAlt` text in all three languages now names the prompt instead of spelling it:\n\n- EN: \"... with a coral command-line prompt symbol below it, ...\"\n- NL: \"... daaronder een koraalrood teken van een opdrachtprompt, ...\"\n- FR: \"... en dessous un symbole d'invite de commande corail, ...\"\n\nThe rest of each description is unchanged. The small sticker on the /communities cards keeps `alt=\"\"`: it is decorative next to a card that already names the community.\n\n## Checked\n\n- Crawled all 40 URLs in the live sitemap: 542 `<img>` tags, every one with an `alt` attribute. The two flagged images are the CyberSec sticker on the EN and NL pages. Live matches `main` for these images.\n- `npm ci`, `npm test` (4 files, 25 tests pass), `npm run build` (42 pages), `npm run check:built` (passes).\n- Ran the same \"img up to the first `>`, then look for `alt=`\" check over the built `dist/` pages: no images flagged.\n",
+            "branch": "workbench/alt-texts",
+            "title": "CyberSec sticker alt text: describe the prompt instead of spelling >_"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261113090802-cb4d41"
+}

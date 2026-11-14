@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "62a05c8b6bc492ee72fcf281102771e1abb22b60",
+            "branch": "workbench/eu-youth-sources",
+            "files_sha256": "7a2247bd9d32ee6a4eb90788b2c2379e7d6929ae119d536acf952d8294614f7f",
+            "message": "European charts from Apple and Shazam, and a capped trial for paid actors"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261113090437-58108f"
+}
