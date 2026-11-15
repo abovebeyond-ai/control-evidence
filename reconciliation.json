@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-14T07:34:27+00:00",
+    "computed_at": "2026-11-15T07:34:28+00:00",
     "window": {
-        "since": "2026-11-07T07:33:02+00:00",
+        "since": "2026-11-08T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -122,12 +122,12 @@
         },
         "Trendwolves/gentells-pipeline": {
             "dispatches": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             },
             "pulls": {
-                "github": 26,
-                "gateway": 26
+                "github": 25,
+                "gateway": 25
             }
         },
         "Trendwolves/gentells-site": {
@@ -208,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 11,
-                "gateway": 11
+                "github": 9,
+                "gateway": 9
             }
         },
         "stocklistdealer-eu/stockcars-website": {

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"proxy-addr\",\"to\":\"2.0.8\",\"lock\":\"package-lock.json\"},{\"pkg\":\"@modelcontextprotocol\\/sdk\",\"to\":\"1.32.0\",\"lock\":\"package-lock.json\"},{\"pkg\":\"body-parser\",\"to\":\"2.4.0\",\"lock\":\"package-lock.json\"},{\"pkg\":\"markdown-it\",\"to\":\"14.3.3\",\"lock\":\"package-lock.json\"},{\"pkg\":\"sharp\",\"to\":\"0.35.5\",\"lock\":\"package-lock.json\"},{\"pkg\":\"undici\",\"to\":\"7.30.1\",\"lock\":\"package-lock.json\"},{\"pkg\":\"zod\",\"to\":\"4.6.6\",\"lock\":\"package-lock.json\"},{\"pkg\":\"@hono\\/node-server\",\"to\":\"2.1.6\",\"lock\":\"package-lock.json\"},{\"pkg\":\"fast-uri\",\"to\":\"3.1.9\",\"lock\":\"package-lock.json\"},{\"pkg\":\"hono\",\"to\":\"4.13.16\",\"lock\":\"package-lock.json\"},{\"pkg\":\"ip-address\",\"to\":\"10.7.4\",\"lock\":\"package-lock.json\"},{\"pkg\":\"qs\",\"to\":\"6.16.1\",\"lock\":\"package-lock.json\"},{\"pkg\":\"@ai-sdk\\/provider-utils\",\"to\":\"4.0.33\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 13,
+            "plan_sha256": "fe14525f18f9f39a4bc9c6da4806bf7272875235e664fc6ed0993f8ec38e5b51",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "01M7CNFEKHHGX4PH77KN8M3B62"
+}
