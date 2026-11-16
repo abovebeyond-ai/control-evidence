@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: A deck on young people and self-employment, made with Gentells, leaned on Belgian and European series that Gentells does not hold. They should be in Gentells so the next run can cite them from there.\n\nSource: Portal mail:51.\n\n## What is asked\n\nHold these series structurally, as the backbone for work on young people and self-employment in Belgium:\n\n- RSVZ, yearly figures on the self-employed (May)\n- StarterAtlas (July)\n- VDAB, list of shortage occupations (February)\n- Securex barometers (several a year)\n- TUI Stiftung, Young Europe youth study (June/July)\n- Eurostat, self-employed by age, quarterly\n\n## Where this stands (checked 2026-11-15)\n\n| Series | In Gentells |\n|---|---|\n| RSVZ | not held |\n| StarterAtlas | not held |\n| VDAB shortage occupations | only VDAB Trends (`source-gt-569`), proposed, never read |\n| Securex | news page (`source-gt-578`), proposed, never read; the press room has a live feed (`press.securex.be/feed`) that is not listed |\n| TUI Stiftung Young Europe | not held |\n| Eurostat self-employed by age | not held; the dataset is `lfsq_esgaed` and answers without a key |\n\n## What a pull request can do, and what it cannot\n\nA third source list (`research/source-list-2026-11-15.json`) adds the missing rows as proposals, the same way as the lists of 20 October and 9 November. After `bin/import-source-list.mjs --apply` on the box they exist in Gentells, and the Securex press feed can go on trial.\n\nThat alone does not put them in a deck. Reference rows are never fetched and never become signals: a figure from them reaches a reader only as a statistic cited under a sentence of a live post (`bin/cite-statistics.mjs`). The reading side is #424 (the reference layer, Eurostat as the pilot); the figures themselves are the separate issue on the deck's key figures.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Hold the Belgian and European series on young people and self-employment (RSVZ, StarterAtlas, VDAB, Securex, TUI, Eurostat)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261115083811-23aa9c"
+}

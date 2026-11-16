@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:52",
+            "note": "Fix ready locally (workbench/review-script-gate); gateway refuses: capability outlasts the working set",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261116072448-d47913"
+}

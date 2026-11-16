@@ -1,0 +1,10 @@
+{
+    "action": "fcb01c10b962d666f649de237886c17b",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "the capability outlasts the working set",
+    "step": 1812,
+    "verdict": "DENY"
+}
