@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "52de5b85d30a8f82374dfb65354d0d7cd3e0f90f",
+            "branch": "workbench/demo-score-entry",
+            "files_sha256": "7a615c75d8401c4d7e5a7f920616fc0235da089cd2f08f6bc713370e65517777",
+            "message": "Score entry: read marks against their column's maximum"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261116180236-05a0b0"
+}

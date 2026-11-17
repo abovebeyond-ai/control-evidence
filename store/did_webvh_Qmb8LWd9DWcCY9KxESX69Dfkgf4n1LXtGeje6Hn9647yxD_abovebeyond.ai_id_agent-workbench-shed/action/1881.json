@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:51",
+            "note": "Issues pipeline #458 #459 #460 #461, site #303. PRs pipeline #463 (source list, closes #460) and #464 (standalone figures, closes #461)",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/463"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261116083331-388ff9"
+}

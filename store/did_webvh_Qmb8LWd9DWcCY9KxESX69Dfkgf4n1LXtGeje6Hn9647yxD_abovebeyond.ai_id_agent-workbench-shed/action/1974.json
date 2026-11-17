@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "315c0ccef613899a98f2df0355794045c1739a11",
+            "branch": "workbench/trend-desk-signals",
+            "files_sha256": "a520407b4c544a7e8934cce5a7483b20cc2933c3ae37983ccbcc501051d7d65f",
+            "message": "Trend desk: the signals under a trend, with a verdict an editor can overrule"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261116172412-b95768"
+}

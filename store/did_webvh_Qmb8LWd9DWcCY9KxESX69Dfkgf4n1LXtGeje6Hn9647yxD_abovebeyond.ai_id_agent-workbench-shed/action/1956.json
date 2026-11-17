@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c6698b4cfecf30e3133bfafa4b85fdce4cad148f",
+            "branch": "workbench/partner-update-on-deleted-car",
+            "files_sha256": "a3bb6390d1cdf5908b0b779910bd6e06f6e9ae56130cb20d6ff4d5ba07278cd3",
+            "message": "A partner's update for a deleted car creates the car again\n\nA partner keeps the id of a car after the dealer deleted it and updates that id when the car returns to its feed. A regular partner's update became a proposal on a car nobody sees, a premium partner heard \"no vehicle found\", and the car never came in. Such an update for a deleted car of the caller's own dealer now runs through the create path and answers with the new car; the old row stays deleted.\n\nPortal: Een wagen die in Stocklist verwijderd werd en later opnieuw via een partner binnenkomt, wordt nu opnieuw aangemaakt in plaats van stil weg te blijven."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116160259-d4b3e7"
+}

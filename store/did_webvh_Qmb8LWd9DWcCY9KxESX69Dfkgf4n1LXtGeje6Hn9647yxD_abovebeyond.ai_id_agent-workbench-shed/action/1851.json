@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #457\n\n## What was wrong\n\n#456 moved the review page's scripts into `GET /articles/:id/review/page.js?t=`, because nginx allows only same-origin scripts. The page loads it as `<script src>`, which carries no bearer header, the same as the page in its iframe. `page.js` was not on the public review pattern in `public-routes.mjs`, so the staff gate answered 401 before the route could check its review token. The review page in the Studio stayed dead, and no post could be published.\n\nLive before this change: `/api/pipeline/articles/x/review/page.js?t=bad` answers with the gate's generic `{\"error\":\"Unauthorized\"}`, where `/review/page?t=bad` answers with the route's own message.\n\n#456's tests called the route handler directly, past the gate. That is how this got through.\n\n## What changes\n\n- `public-routes.mjs`: the review pattern is `(page|page\\.js|submit)`. The route still refuses anything without a review token for that piece (401).\n- `test/review-page-through-gate.test.mjs` (new): the real server through every layer, without a bearer header. It loads the page, takes the script url the page names, and gets JavaScript back. It also checks that a wrong or missing token is still refused. The test fails without this change.\n- `every-route-gated.test.mjs` and `guest-writes.test.mjs` know `page.js` as a door with its own token, like `page` and `submit`. Look-alike paths (`pagexjs`, `other.js`) stay closed.\n\n## Checked\n\n- Chromium, end to end: the real server behind a proxy that adds the live CSP, with the page in a same-origin iframe the way the Studio shows it. The script loaded and the Source panel showed \"sign review\". Signing posted the judgements, and the server stored the review as signed. No console errors.\n- Full suite: 1695 pass, 0 fail.\n\nSource: Portal mail:52.\n",
+            "branch": "workbench/review-script-gate",
+            "title": "Studio review page: let its script through the gate (follow-up to #456)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116083215-290e21"
+}

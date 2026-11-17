@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:56",
+            "note": "Same notice as mail:55. #1097 fixed (PR #1099, merged). #1098 answered with option 3: PR #1100 counts lost partner vehicles per cause; waits for merge.",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1100"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261116153357-94c824"
+}

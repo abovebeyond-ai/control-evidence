@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "130710f04473facb270120b61c8a30bea4feedb2",
+            "branch": "workbench/partner-old-id-follows-the-car",
+            "files_sha256": "47551fd3ca7af478f87cb1c5ec1dbe856ad223559dcb1493ea3372d7688ee34c",
+            "message": "The old id of a deleted car follows the car\n\nWhether a partner takes over the new id from the answer to an update is not in the platform's hands. An update that names a deleted car of the caller's dealer is now about the live car with the same chassis number when the dealer has one: a regular partner's call becomes a proposal on that car, a premium partner's call updates it. Without a live car it stays a create.\n\nPortal: Een partner die het oude nummer van een verwijderde wagen blijft sturen, bereikt nu de wagen zoals ze vandaag in Stocklist staat."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116171745-527da0"
+}

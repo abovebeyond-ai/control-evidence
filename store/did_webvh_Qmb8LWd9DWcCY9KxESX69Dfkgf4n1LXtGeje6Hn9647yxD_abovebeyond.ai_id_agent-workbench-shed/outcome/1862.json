@@ -1,0 +1,16 @@
+{
+    "action": "e2a6c1aed828ae0c762d3af8eb8f75e0",
+    "effect": {
+        "detail": {
+            "base": "495873b0a74c3dd4daddddd4ad159f22f1021573",
+            "branch": "workbench/source-list-mail-51",
+            "commit": "2b76159f9d66b27811648ca91dc45c1cefdba532",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1860,
+    "verdict": "ALLOW"
+}

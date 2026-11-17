@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1092\nCloses #1093\n\n## What\n\n`GET /api/v1/public/vehicles` and `/{id}` now return three more fields per vehicle:\n\n- `package`: the version the dealer typed on the sheet, or `null`.\n- `registration_tax`: `{ flanders, wallonia, brussels }`, the registration tax (BIV) in euros.\n- `road_tax`: `{ flanders, wallonia, brussels }`, the yearly road tax in euros.\n\nA region the dealer left empty is `null`, not `0`.\n\n## Why\n\nA dealer site built on the public API could only show make and model. For a motorhome those are the make and model of the chassis, and the version holds the name the buyer knows the vehicle by. The website iframe already shows the version as the last part of the title, and the Partner API returns all seven values (`main.package`, `main.registrationTax*`, `main.roadTax*`), so the public API was the only door without them.\n\nNothing internal becomes public: the version is already on the iframe, and the taxes are amounts the buyer pays to the region.\n\n## Changes\n\n- `PublicVehicleResource`: the three fields, with one helper for the amounts per region. The detail resource inherits them.\n- `PublicVehicleApiTest`: one test for list and detail, filled and empty.\n- `docs/api/public-api.md`: the fields in the example and the text. It also called `car_pass` the Car-Pass key; it is the link of the report.\n- Rule R P3-3.12 in `docs/bedrijfsregels/33-p3-integraties.md`.\n\n`car_pass` itself is unchanged (R S3-4.5); the report about it is #1094.\n\n## Tested\n\nFull suite green locally (3259 tests), PHPStan without errors.\n",
+            "branch": "workbench/public-api-vehicle-fields",
+            "title": "Public API: return the version and the taxes per region"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116084523-ff4d99"
+}

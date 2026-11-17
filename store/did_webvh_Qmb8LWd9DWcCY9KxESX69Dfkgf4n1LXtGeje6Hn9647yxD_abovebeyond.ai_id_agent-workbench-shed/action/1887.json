@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a0a66feda4c934e2ca01ca0311ca1c0737162c98",
+            "branch": "workbench/public-api-vehicle-fields",
+            "files_sha256": "6695247861cef5b9c460501f4f54fd0fa8b3231eb3b1a1df8cacf5d93065b35a",
+            "message": "Public API: return the version and the taxes per region\n\nThe list and the detail of the public website API now carry the version of a vehicle (package) and the registration tax and yearly road tax per region, as the dealer filled them in on the sheet. An empty amount is null.\n\nPortal: De publieke API geeft nu ook de uitvoering van een wagen en de BIV en verkeersbelasting per gewest."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116084523-ff4d99"
+}

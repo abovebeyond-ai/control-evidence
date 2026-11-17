@@ -1,0 +1,16 @@
+{
+    "action": "44337c06c67dcd9c3a6fe7311fc8dd51",
+    "effect": {
+        "detail": {
+            "base": "130710f04473facb270120b61c8a30bea4feedb2",
+            "branch": "workbench/partner-old-id-follows-the-car",
+            "commit": "3616a823ed5ecdd99fa79a3ae5819783595ae5b5",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1962,
+    "verdict": "ALLOW"
+}

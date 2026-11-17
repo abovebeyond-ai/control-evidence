@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:53",
+            "note": "Reading the public API code to see which vehicle fields are missing (package, registration/road tax, Car-Pass)",
+            "state": "in-progress"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261116083118-d6f18a"
+}

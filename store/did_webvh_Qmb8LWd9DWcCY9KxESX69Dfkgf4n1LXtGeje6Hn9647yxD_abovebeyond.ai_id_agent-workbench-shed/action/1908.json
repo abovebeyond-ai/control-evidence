@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: A post that started in the Studio as own work cannot be published, even when every source is judged and the review is signed. The posts for the launch of gentells.com are waiting on this.\n\n## What happens\n\nA writer opens a post in the Studio, completes the review (every citation judged, signed), opens Publish and clicks \"Publish now\". The Studio answers:\n\n> Not ready to publish: own work is never published\n\nThe piece is in the post format, the Publish panel offers \"Publish now\", and the review page shows \"signed\".\n\n## Why\n\nA piece made with \"New piece\" in the Studio is created as `kind: own` in the post format. The Publish panel is built for that: its request carries `kind: article, format: post, status: published`, so that publishing puts the piece on the path to gentells.com by itself.\n\n`POST /articles/:id` (`packages/server/routes-studio.mjs`) runs `publishGate` on the piece as it is stored, before the update is applied. The stored kind is still `own`, so the gate refuses with its first check, and the kind in the request never gets a say. \"Send for review\" does not pass the gate, which is why that path works and this one does not.\n\n## Wanted\n\nThe gate judges the piece as the request would leave it: a request that moves the piece to gentells.com (kind `article`, post format) is held to the review like any other post, and passes when the review is complete. A request that leaves the piece as own work, or gives it a format that is not a post, is still refused.\n\nSource: Portal mail:54.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "A post that started as own work cannot be published after its review is signed"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116112927-eece0f"
+}

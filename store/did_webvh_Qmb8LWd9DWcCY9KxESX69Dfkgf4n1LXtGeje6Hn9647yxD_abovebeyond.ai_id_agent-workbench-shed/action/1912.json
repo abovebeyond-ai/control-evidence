@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7100681e579ef6c5c27b757c31323df1c62fc598",
+            "branch": "workbench/publish-own-post",
+            "files_sha256": "5dced92ef64fa866c5494e91f71373126ec6dd91c2c6e75fe482e06d4c3005ff",
+            "message": "Judge a publish request by where it sends the piece, so a post that started as own work goes live\n\nThe Studio's Publish sends kind article, format post and status published in one\nrequest. The gate looked at the stored kind, still own, and refused a reviewed and\nsigned post as own work.\n\nPortal: Een post die in de Studio als eigen werk begon, kan na een getekende review gepubliceerd worden."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116113021-e1a0b0"
+}

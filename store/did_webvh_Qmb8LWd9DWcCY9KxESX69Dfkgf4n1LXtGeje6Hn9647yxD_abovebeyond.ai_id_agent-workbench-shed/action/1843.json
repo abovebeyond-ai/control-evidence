@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Trade and sector sources for resale, retail and jobs in the energy transition should be read as fixed feeds, so a deck can cite them from Gentells instead of from the open web.\n\nSource: Portal mail:51.\n\n## What is asked\n\nRead as fixed feeds:\n\n- RetailDetail, for resale and retail\n- EEA (European Environment Agency) and EHPA (European Heat Pump Association), for jobs in the energy transition\n- Vinted's annual results\n\n## Where this stands (checked 2026-11-15)\n\n| Source | In Gentells | Feed |\n|---|---|---|\n| RetailDetail BE (`source-gt-096`) | proposed since 21 October, never read | live |\n| RetailDetail EU (`source-gt-116`) | proposed since 21 October, never read | live |\n| RetailDetail NL | muted | |\n| EEA | not held | `eea.europa.eu/en/newsroom/rss.xml`, live |\n| EHPA | not held | `ehpa.org/feed/`, live |\n| Vinted Newsroom (`source-gt-042`) | listed, no feed, never read | none |\n\n## What is needed\n\n1. EEA and EHPA as rows in the source list of 15 November (proposed, with their feeds).\n2. On the box, after the import: start the trial for the four feeds (RetailDetail BE and EU, EEA, EHPA) with `bin/source-state.mjs trial`. A person runs this; signals from a trial stay off the record until the source is admitted with its terms, about 14 days later.\n3. Vinted's annual results appear once a year and have no feed. That is a figure, not a stream: it is better held as a statistic at its origin (the yearly results release) than as a feed.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Read the trade and sector sources as fixed feeds (RetailDetail, EEA, EHPA, Vinted, Securex press room)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116083223-83e4fc"
+}

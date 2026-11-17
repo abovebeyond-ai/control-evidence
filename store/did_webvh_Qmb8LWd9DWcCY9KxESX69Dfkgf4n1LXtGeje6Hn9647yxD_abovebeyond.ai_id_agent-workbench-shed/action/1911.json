@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A partner's new vehicle was thrown away because the photo bucket answered `503 Slow Down` for about a second. This is the second vehicle lost to a short bucket hiccup in two weeks (#1058 was the first), so the one retry after one second is not enough for this kind of answer.\n\n## What happened\n\nOn 2026-11-14 at 12:51 (Brussels time) a partner created a vehicle through `POST` on the partner API with photos. On the third photo, the HEAD in `VehicleApiService::addPhoto` that asks whether the name is already taken was refused:\n\n> StorageUnavailable: Server error: `HEAD .../vehicles/23961/car_image_2.jpg` resulted in a `503 Slow Down` response (app/Support/StorageUnavailable.php:52)\n\n`VehicleApiController::store` then deleted the vehicle it had just created, answered the partner with the error, and mailed the office (\"Wagen van ... kwam niet binnen via de API\", cause: storage).\n\n## Why the existing retry did not help\n\n`StorageUnavailable::retryOnce` (#1059) asks once more after one second. `503 Slow Down` is not a timeout: it is the bucket saying it is being asked too much right now, and it answers at once. With the default `AWS_RETRIES=1` that is at most four HEADs (two per attempt), all within little more than one second, inside the same throttle window. A bucket that says \"slow down\" has to be asked again later, not right away.\n\n## What else is fragile in the same method\n\nOnly that one HEAD is guarded. The three writes that follow (1280, 1024 and 400 px) are not:\n\n- the disk has no `throw`, so a refused `put()` answers `false`;\n- the answer of the first two writes is ignored, so a throttled write leaves a photo row whose large or medium file is not in the bucket;\n- a refused third write returns silently: the vehicle is created with a photo missing and nobody is told.\n\n## What is asked\n\n- A photo from a partner survives a bucket that throttles for a few seconds: wait longer before asking again when the answer is a throttle (429 or 503), without making a real timeout wait even longer than it does now.\n- The three writes get the same treatment as the HEAD, and a write the bucket does not take is an error instead of a silently missing photo.\n\n## Not verified\n\nThe office saw the same car as a draft in the garage's stock afterwards. The rolled-back vehicle is soft-deleted and does not show there, so that draft is most likely a later, second submission by the partner or the garage. This could not be checked from the workbench (no production read).\n\nSource: Portal mail:55 (a forwarded office notification).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Partner API: a bucket that answers 503 Slow Down for a second still throws away the partner's whole vehicle"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116113028-66414f"
+}

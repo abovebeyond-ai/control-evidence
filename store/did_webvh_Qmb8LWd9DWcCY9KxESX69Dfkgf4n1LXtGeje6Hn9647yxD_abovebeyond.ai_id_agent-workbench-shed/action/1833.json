@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: The Studio review page still does nothing on click after #456, so no post can be published. The page's script is refused by the staff gate, and gentells.com is about to launch with posts waiting.\n\n## What happens\n\n#456 (for #455) moved the review page's inline scripts into one same-origin script, `GET /articles/:id/review/page.js?t=`, because nginx allows only same-origin scripts. The page now loads that script as `<script src>`. That request carries no bearer header, the same as the page itself in its iframe. `page.js` is not on the public allowlist in `packages/server/public-routes.mjs`, so the gate answers 401 before the route checks its review token. The page is as dead as before.\n\nLive: `/api/pipeline/articles/x/review/page?t=bad` answers with the route's own \"The review link is missing or expired\", but `/api/pipeline/articles/x/review/page.js?t=bad` answers with the gate's generic `{\"error\":\"Unauthorized\"}`.\n\n#456's tests called the Studio route handler directly and never went through the gate, so they could not see this.\n\n## Fix\n\nPut `page.js` next to `page` and `submit` in the review pattern of `public-routes.mjs`. The route keeps its own check on the review token. Add a test that goes through the real server with no bearer header and loads the script the page names.\n\nFollows #455. Source: Portal mail:52 (the same thread as mail:50).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "Studio review page still dead after #456: the staff gate refuses its script (page.js)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116083212-050b04"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The public website API does not return the version of a vehicle (`vehicles.package`), so a dealer site built on it can only show make and model. For motorhomes the version is the actual name of the vehicle.\n\nSource: Portal mail:53.\n\n## What is asked\n\nA garage shows its stock on its own websites through `GET /api/v1/public/vehicles`. The version (\"uitvoering\") that the dealer types on the sheet is in the Partner API as `main.package` and in the website iframe as the last part of the title, but neither the list nor the detail of the public API carries it.\n\nFor a motorhome the make and model are those of the chassis (for example the van it is built on), and the version holds the name the buyer knows it by. Without the field the site can only show the chassis name. Typing the commercial name into the model instead would send a wrong model to the listing sites.\n\n## What to do\n\nAdd `package` to `PublicVehicleResource` (list and detail), document it in `docs/api/public-api.md`, and cover it in `PublicVehicleApiTest`. The iframe already shows the same text for own and shared vehicles, so nothing new becomes public.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Public API: return the version (package) of a vehicle"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116083253-f3da45"
+}

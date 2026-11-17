@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The public website API does not return the registration tax (BIV) and the yearly road tax per region, which the dealer fills in on the sheet and the Partner API returns. A dealer site built on the public API cannot show them.\n\nSource: Portal mail:53.\n\n## What is asked\n\nThe sheet has six amounts per vehicle: registration tax and road tax, each for Flanders, Wallonia and Brussels (`vehicles.registration_tax_*`, `vehicles.road_tax_*`). The Partner API returns them as `main.registrationTax*` and `main.roadTax*`. The public API (`GET /api/v1/public/vehicles` and `/{id}`) returns none of them. A garage that builds its own site on the public API asks for them in the list and in the detail.\n\n## What to do\n\nAdd the six amounts to `PublicVehicleResource` as two objects, `registration_tax` and `road_tax`, each with `flanders`, `wallonia` and `brussels` (a number in euros, or `null` when the dealer left it empty). Document them in `docs/api/public-api.md` and cover them in `PublicVehicleApiTest`. These are amounts a buyer pays to the region, meant for the buyer; they say nothing about the dealer's purchase price or margin.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Public API: return registration tax and road tax per region"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116083257-37917b"
+}

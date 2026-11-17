@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nOn the Trends tab an editor could keep a trend or take it off, but could not see or correct the evidence under it. Step 2 of the trend desk, after #80. Needs gentells-pipeline #467 (the signal routes) merged first.\n\n## What changes\n\n- **Signals under each trend.** A **Signals** button on a trend row opens its evidence in three groups: on the site, not judged yet, does not belong. Each signal says who judged it, the automatic judge or a named editor.\n- **Per signal**\n  - **Does not belong**, with a reason from a short list. The signal leaves what gentells.com lists under the trend.\n  - **Bears it out**, which puts a signal that was not judged yet on the site.\n  - Taking either call back restores the earlier verdict.\n- **Per source, from the same line:** mute, unmute or trust. Mute is offered only for an admitted source.\n- Every move says what it did in a toast, with Undo.\n- `src/trend-desk.js`: `groupSignals`, `verdictLine`, `sourceMoves`, with tests. The panel is `src/TrendSignals.jsx`.\n\n## Checked\n\n- `npm test` 73/73, `vite build` green.\n- Looked at in a local preview against sample signals: the three groups, the reason choice, and the toast with Undo.\n",
+            "branch": "workbench/trend-desk-signals",
+            "title": "Trend desk: the signals under a trend, with a verdict an editor can overrule"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261116172412-b95768"
+}

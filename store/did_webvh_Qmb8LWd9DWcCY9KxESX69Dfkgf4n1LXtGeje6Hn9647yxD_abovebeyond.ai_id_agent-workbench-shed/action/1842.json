@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "495873b0a74c3dd4daddddd4ad159f22f1021573",
+            "branch": "workbench/review-script-gate",
+            "files_sha256": "3b2b6d642f0d4a43d8db70518b0250a0b37615e34e1954136571b78945a8987d",
+            "message": "Let the review page's script through the gate, so the Studio review works"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116083215-290e21"
+}

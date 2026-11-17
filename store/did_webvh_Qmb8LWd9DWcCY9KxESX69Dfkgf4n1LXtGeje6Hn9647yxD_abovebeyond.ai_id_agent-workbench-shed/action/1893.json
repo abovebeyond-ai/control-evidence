@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:53",
+            "note": "PR #1095 proposed, closes #1092 (version) and #1093 (BIV/road tax): to merge. Still parked on #1094 (car_pass null): in production, do the garage's cars with a Car-Pass have carpass_id filled and carpass_init = 0?",
+            "state": "parked",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1095"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261116084551-2c08a6"
+}

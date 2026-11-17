@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nAn editor could take a whole trend off gentells.com, but could not say that one signal under it does not belong, and could not act on the source of a weak signal without leaving the trend for the Sources screen. Step 2 of the trend desk, after #453.\n\n## What changes\n\n- **A person's verdict on a signal under a trend.** `judgeAsPerson` / `unjudgeAsPerson` in `support-store.mjs` write to `insight_support`, where the judge's verdicts already live. A person's verdict overrules the judge's; the verdict it replaced is kept in `overruled`, so taking the call back restores it. \"Does not belong\" needs a reason from `NOT_BELONG_REASONS` (about something else, not about young people, an ad or a press release, something else).\n- **Nothing new removes signals.** The site lists only the signals whose verdict supports the trend, so the evidence, the counts and a later rewrite of the trend follow the verdict on their own. `insights.signals` is not touched.\n- **`core/trend-desk.mjs`.** `trendDesk(id)` lists a trend's signals with their verdict, who gave it and their source. `moveSourceFromDesk` mutes, unmutes, trusts or untrusts that source, with who did it.\n- **Mute only reaches an admitted source.** Unmuting admits a source, so a mute and unmute on a trial source would skip its admission check. Trial sources stay on the Sources screen.\n- **Trust.** `sources.trusted_by` / `trusted_at`. The weekly trust calibration in `self-improve.mjs` can still raise a trusted source but never lowers it. It adds no weight yet.\n- **Routes.** `GET /site/trends/:id/signals`, `POST /site/trends/:id/signals/:signal` with `{verdict, reason}`, `POST /site/sources/:id` with `{move}`. Same access as the take-off of a trend.\n\nEnough \"does not belong\" verdicts can take a trend off the site, because a trend is shown only while its support holds.\n\n## Checked\n\n- `test/trend-desk-signals.test.mjs`. Full suite 1705/1705 on main at 2f96a2e, `tsc` clean.\n\nMerge this before the Studio pull request that uses the routes.\n",
+            "branch": "workbench/trend-desk-signals",
+            "title": "Trend desk: an editor's verdict on a signal, and mute or trust its source from the trend"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116172345-6ac0dc"
+}

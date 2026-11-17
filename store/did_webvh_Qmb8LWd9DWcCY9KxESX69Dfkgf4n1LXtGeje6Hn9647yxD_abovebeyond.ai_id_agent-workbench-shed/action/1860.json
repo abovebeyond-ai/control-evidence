@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "495873b0a74c3dd4daddddd4ad159f22f1021573",
+            "branch": "workbench/source-list-mail-51",
+            "files_sha256": "7c592beb26df327bda7fbbf375eeb635b977e83be3b2c304d35061f527d4ceb0",
+            "message": "Source list of 15 November: Belgian and European series, generation surveys and three feeds"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116083245-ecce03"
+}

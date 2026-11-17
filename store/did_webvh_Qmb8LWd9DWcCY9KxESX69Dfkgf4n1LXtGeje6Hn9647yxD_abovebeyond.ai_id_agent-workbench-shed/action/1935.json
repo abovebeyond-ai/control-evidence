@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:53",
+            "note": "#1092 and #1093 merged in PR #1095 (CI fix in #1096). #1094 (car_pass null): Car-Pass turns out to work, no change needed; issue can be closed. Reply sent by the owner.",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1095"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261116115147-4ab262"
+}

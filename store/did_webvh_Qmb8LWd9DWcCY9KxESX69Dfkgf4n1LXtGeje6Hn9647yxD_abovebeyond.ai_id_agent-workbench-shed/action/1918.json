@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P3\nSummary: The office asks whether the developer also receives the \"Wagen van ... kwam niet binnen via de API\" notice, or whether they have to forward each one. In the code it goes to one address only, and nothing else alerts the developer.\n\n## What the code does today\n\n`VehicleApiController::store` sends `ApiVehicleNotCreatedMail` to `config('mail.api_error_recipient')`:\n\n- `MAIL_API_ERROR_RECIPIENT` when it is set in production;\n- otherwise `SUPPORT_EMAIL`, which defaults to the office's contact address.\n\nIt is one address, not a list. The notice of 2026-11-14 arrived at the office's contact address, so the developer is not on it unless the office forwards it. The value of `MAIL_API_ERROR_RECIPIENT` in production could not be read from the workbench.\n\nThe exception itself is written with `Log::error($e)`, not `report($e)`, so it does not open a Nightwatch issue either. The office's mailbox is the only place a lost partner vehicle becomes visible.\n\nThe mail's own advice matches that: do nothing for a single storage hiccup, forward it to the developer when it keeps coming back.\n\n## The decision that is open\n\nWhether the developer should see these without the office forwarding them, and how:\n\n1. Leave it: the office forwards a notice that comes back (what the mail text says now).\n2. Let the setting take several addresses, so the developer gets a copy of every notice.\n3. Keep the mail for the office and count the failures per cause where the developer already looks (the platform's error figures), so repeats show up without mail.\n\nNo change is made until one of these is chosen.\n\nSource: Portal mail:55 (a forwarded office notification).\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P3"
+            ],
+            "title": "Does the developer also receive the 'vehicle did not come in through the API' notice, or must the office forward it?"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116113034-acb6b9"
+}

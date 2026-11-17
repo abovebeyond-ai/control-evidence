@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-16T07:34:34+00:00",
+    "computed_at": "2026-11-17T07:34:34+00:00",
     "window": {
-        "since": "2026-11-09T07:33:02+00:00",
+        "since": "2026-11-10T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -55,8 +55,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "ShaneDeconinck/cides": {
@@ -76,8 +76,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "ShaneDeconinck/good-governance": {
@@ -126,8 +126,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 25,
-                "gateway": 25
+                "github": 27,
+                "gateway": 27
             }
         },
         "Trendwolves/gentells-site": {
@@ -137,8 +137,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 33,
-                "gateway": 33
+                "github": 29,
+                "gateway": 29
             }
         },
         "Trendwolves/glk-transferor": {
@@ -147,8 +147,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -167,8 +167,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 6,
-                "gateway": 6
+                "github": 5,
+                "gateway": 5
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -198,8 +198,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 3,
+                "gateway": 3
             }
         },
         "stocklistdealer-eu/platform": {
@@ -208,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 9,
-                "gateway": 9
+                "github": 13,
+                "gateway": 13
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -251,8 +251,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "ShaneDeconinck/schoutteet-sanity": {
@@ -273,8 +273,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 0,
+                "gateway": 0
             }
         },
         "Trendwolves/gentells-app": {
@@ -295,8 +295,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 3,
+                "gateway": 3
             }
         },
         "Trendwolves/gentells-standard": {
@@ -317,8 +317,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 5,
-                "gateway": 5
+                "github": 6,
+                "gateway": 6
             }
         },
         "abovebeyond-ai/bextrust": {
@@ -493,7 +493,7 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
+                "github": 2,
                 "gateway": 2
             }
         },
@@ -631,8 +631,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "kubo-global/swallow-method": {
@@ -769,8 +769,6 @@
             }
         }
     },
-    "unexplained": [
-        "bextrust/control: 3 pulls on GitHub, 2 performed by the gateway"
-    ],
+    "unexplained": [],
     "how": "dispatches of elixir-fix.yml by workflow_dispatch and pull requests from elixir/* and workbench/* branches as GitHub lists them, against effect records the gateway wrote as performed, matched by repository and kind, counted across pages until the window closes (rows 10.3.2, 10.3.4)"
 }

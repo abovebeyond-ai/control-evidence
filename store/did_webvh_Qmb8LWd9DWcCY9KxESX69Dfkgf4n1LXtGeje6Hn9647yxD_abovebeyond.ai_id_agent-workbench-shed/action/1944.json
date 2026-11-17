@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:56",
+            "note": "Same forwarded notice as mail:55, no new request. Fix #1097 merged as PR #1099; question #1098 (who receives the notice) is still open. No new issue opened.",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1099"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261116134522-4a4ed7"
+}

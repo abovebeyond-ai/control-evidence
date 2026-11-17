@@ -1,0 +1,16 @@
+{
+    "action": "4334cc50cbe0a74745caa0532b3b855e",
+    "effect": {
+        "detail": {
+            "base": "c6698b4cfecf30e3133bfafa4b85fdce4cad148f",
+            "branch": "workbench/partner-update-on-deleted-car",
+            "commit": "3479cfcd0f46c90c3018289aa975e8c9116a3856",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1956,
+    "verdict": "ALLOW"
+}

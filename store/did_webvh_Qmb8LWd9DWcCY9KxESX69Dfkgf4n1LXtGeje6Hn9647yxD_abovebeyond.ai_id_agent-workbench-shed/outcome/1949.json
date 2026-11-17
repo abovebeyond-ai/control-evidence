@@ -1,0 +1,16 @@
+{
+    "action": "b325d58597829031948c3ae8780a7f54",
+    "effect": {
+        "detail": {
+            "base": "1eda77f1b23ec45c4570afefe9973bf266913be8",
+            "branch": "workbench/lost-partner-vehicles-counted",
+            "commit": "71a290f69a1f522ebc87218614bc1df8a87a5c27",
+            "files": 16,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1947,
+    "verdict": "ALLOW"
+}

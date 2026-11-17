@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two faults in score entry on a tests-mode school, where a test is out of 25 and an exam out of 75. Both were reproduced read-only on demo.kubo.global on 2026-11-16.\n\n## Marks refused for exceeding the maximum\n\nThe \"Fill example marks (demo)\" button on the mark grid wrote marks from a 22 to 92 pool into every number field. In a column out of 25 the save then refused the column with \"marks above its maximum of 25\". In months mode the same button also overwrote the \"out of\" fields.\n\n- The example fill now touches mark cells only and scales each mark to its column's maximum.\n- The cells of a column that has no assessment yet carry the default maximum (25 or 75) instead of 100.\n- The \"Add test / exam\" wizard starts a tests-mode slot at 25 or 75 instead of 100.\n\n## Every pupil counted as failed\n\nThe per-period analysis and histogram (part of \"Download all (PDF)\") banded raw marks as if they were percentages, with fail below 40. A test out of 25 can never reach 40, so the analysis showed 100% fail.\n\n- Marks are now read as a percentage of their assessment's maximum: 18 out of 25 is 72%, a pass.\n- The red fail mark on the months-mode result sheets follows the same rule: a column out of 50 fails below 20.\n\n## Tests\n\nFive new tests in `ScoreEntryHardeningTest`; each fails without the change. Full suite: 528 tests pass, 2 skipped.\n\nThe example fill is browser script. It was checked by running the function against a stub DOM (a column out of 25 gets 6 to 23), not in a real browser.\n\n## Not in this change\n\n- The demo seeds no marks for Phonics, Spelling and Dictation and Verbal Aptitude, because the Swallow configuration adds those subjects after the scores are seeded. They show \"x\" on every sheet.\n- \"By term\" for a term without an exam shows a total of 0 and position 1 for every pupil. That is existing behaviour.\n",
+            "branch": "workbench/demo-score-entry",
+            "title": "Score entry: read marks against their column's maximum"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261116180236-05a0b0"
+}

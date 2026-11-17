@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: A member who builds a deck with their own assistant gets trends, posts and reports from Gentells, but no figures. The numbers then come from the open web, with sources outside Gentells. The MCP server needs a tool that returns the figures Gentells holds at their origin.\n\nSource: Portal mail:51.\n\n## What is asked\n\nA deck made through the Gentells connector should cite Gentells sources only. For trends and posts it can. For a number (\"how many student-self-employed are there in Belgium\") it cannot: the tools are `search_trends`, `get_trend`, `get_trend_graph`, `list_posts`, `read_post`, `list_reports` and `whoami`, and none returns a statistic unless it happens to sit under a sentence of a post.\n\n## What is needed\n\n- The site receives the statistics the Observatory holds (value, unit, measure, population, period, publisher, publication, place, address), only those the Standard lets be cited.\n- A tool on the MCP server, for example `find_figures`, that searches them by words and returns each with its source line and address, under the same plan and metering rules as the other tools.\n- The tool description says that a figure that is not returned is not in Gentells, so the assistant says a number is missing instead of fetching one elsewhere.\n\n## Depends on\n\nThe pipeline side: statistics that stand on their own and a read that lists them (the issue on the deck's key figures in gentells-pipeline). Until figures are recorded there, this tool has little to return.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "A figures tool on the members' MCP server"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261116083228-a80c30"
+}

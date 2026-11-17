@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: Five recurring generation surveys were used in a deck but came from outside Gentells. They belong on the shelf of external reports, each new edition when it appears. The WEF figures were expected in Gentells already and are not there.\n\nSource: Portal mail:51.\n\n## What is asked\n\nKeep these in the yearly reports folder, so they are read into the Observatory as report signals:\n\n- Deloitte Gen Z and Millennial Survey (May)\n- Fiverr Next Gen of Work (autumn)\n- Visa's Gen Alpha study\n- WEF Future of Jobs (every two to three years)\n- OECD/European Commission, The Missing Entrepreneurs (every two years)\n\n## Where this stands (checked 2026-11-15)\n\n- Deloitte: the 2026 survey is a reference row (`source-gt-562`), proposed, never read.\n- WEF: Future of Jobs is a reference row (`source-gt-bl25`), proposed, never read. The site itself is browsed (`source-proposed-weforum-org`), which gives news items, not the report's figures. That explains why the WEF figures are nowhere to be seen.\n- Fiverr, Visa, The Missing Entrepreneurs: not held.\n\n## How they get in\n\nNo code is needed for the reports themselves: a PDF goes in through the Reports page of the Observatory (upload, then `ingest-report`), or as a link in the Studio (\"Paste a link\" reads PDFs since #430). Before each upload: is this edition already on the shelf, and do the publisher's terms allow use in a paid product. The same check as in #356.\n\nThe three publishers that are missing are added as rows in the source list of 15 November, so the Observatory knows them and the yearly edition has a place to land.\n\n## Not decided\n\nWho uploads the current editions, and whether a yearly reminder per report (month of publication) is wanted so a new edition is not missed.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Put the recurring generation surveys on the reports shelf, each new edition (Deloitte, Fiverr, Visa, WEF, Missing Entrepreneurs)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116083220-32f823"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1d6f2e70211930370d6f6c60274f6109d0136e55",
+            "branch": "workbench/statistics-terms-read",
+            "files_sha256": "b7ad362eebb6b7109727b23cfae557f54a1ad173bb9779ec85e9bbc2b98dd828",
+            "message": "Figures of TUI Stiftung and Securex: terms decided, cited with attribution"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116173152-0a09f3"
+}

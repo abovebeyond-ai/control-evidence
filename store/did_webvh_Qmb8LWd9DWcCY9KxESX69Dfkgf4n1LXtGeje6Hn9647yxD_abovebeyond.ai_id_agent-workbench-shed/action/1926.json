@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "905eabe248e5eeab9cdc24a7a15451f40a7b61b8",
+            "branch": "workbench/partner-photo-slow-down",
+            "files_sha256": "660b6ef785bd4dfcafb5dafeb4bc190326680d8765766f6af12bbf56ec9942aa",
+            "message": "A partner's photo waits out a bucket that says slow down"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116113934-f87cbe"
+}

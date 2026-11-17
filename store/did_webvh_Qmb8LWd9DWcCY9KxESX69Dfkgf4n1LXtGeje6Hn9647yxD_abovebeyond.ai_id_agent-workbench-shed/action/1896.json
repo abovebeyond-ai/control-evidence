@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a0a66feda4c934e2ca01ca0311ca1c0737162c98",
+            "branch": "workbench/laravel-13-40",
+            "files_sha256": "cbc3b2dc0a00adc0835ed611ed8b3b539cbd181515fad459e0deaff5fce1b1ca",
+            "message": "Update laravel/framework to v13.42.0 for CVE-2026-128083\n\ncomposer audit --locked failed on main: GHSA-63hm-g96r-2m2q affects laravel/framework below 13.40.0. The lock moves the framework and the packages below it; composer.json is unchanged.\n\nThe new framework encodes a bare string passed to route() as a query, so the address window of the transport tab passes its redirect as an array."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116090027-20b9ea"
+}

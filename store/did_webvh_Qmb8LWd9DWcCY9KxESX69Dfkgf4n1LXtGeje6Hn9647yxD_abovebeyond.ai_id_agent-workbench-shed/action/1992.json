@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d2c013d8e8755a3a7cb502d2c8247fa3709829f3",
+            "branch": "workbench/cybersec-one-ranking",
+            "files_sha256": "de9528875c498b32b273f119e5f93e3fe23d32dd10f6dc6ef730dbda6d3f5be3",
+            "message": "CyberSec page: community voice, photos of the day, joining through the lead"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261116183137-450904"
+}

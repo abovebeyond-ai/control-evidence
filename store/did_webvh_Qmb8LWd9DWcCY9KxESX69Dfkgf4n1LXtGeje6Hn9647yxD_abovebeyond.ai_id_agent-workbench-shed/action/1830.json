@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:51",
+            "note": "Source list and standalone figures built locally; issues and proposals going out",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261116083202-29c09a"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "c53e0239e7117cb306ea4bfec991dfca",
+    "effect": {
+        "detail": {
+            "base": "a0a66feda4c934e2ca01ca0311ca1c0737162c98",
+            "branch": "workbench/public-api-vehicle-fields",
+            "commit": "99242ebe28d8c9c57d5fed074627347d8d514dd3",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1887,
+    "verdict": "ALLOW"
+}

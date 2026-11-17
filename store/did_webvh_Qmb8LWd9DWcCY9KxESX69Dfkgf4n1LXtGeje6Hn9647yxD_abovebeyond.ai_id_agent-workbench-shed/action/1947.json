@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1eda77f1b23ec45c4570afefe9973bf266913be8",
+            "branch": "workbench/lost-partner-vehicles-counted",
+            "files_sha256": "c11438881ddc907b0f63b86d81a7706ede215c66629b832505b7956e4a042cda",
+            "message": "A partner's vehicle that does not get in is counted per cause\n\nEach loss writes one row with its cause; Werking and the errors read show the count over 30 days, so a failure that comes back is visible without the office forwarding the mail.\n\nPortal: Een wagen van een partner die niet binnenkomt via de API wordt nu geteld per oorzaak; een fout die terugkomt is zichtbaar zonder dat kantoor de melding doorstuurt."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116153304-8b04c4"
+}

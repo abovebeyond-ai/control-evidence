@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:55",
+            "note": "#1097 (bug: 503 Slow Down lost a partner vehicle) fixed in PR #1099; #1098 (question: does the developer get this notice) waits for the owner's choice",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1099"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261116113958-a0b8ee"
+}

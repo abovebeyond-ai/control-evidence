@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2f96a2e849690b95bd8995a1ce0779774254c044",
+            "branch": "workbench/trend-desk-signals",
+            "files_sha256": "22f29f26d1acfa5655d28aae76ccbdfa9d839caf9faf4e57da7456f9c75c19dc",
+            "message": "Trend desk: an editor's verdict on a signal, and mute or trust its source from the trend"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116172345-6ac0dc"
+}

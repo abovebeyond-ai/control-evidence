@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A garage reports that `car_pass` in the public website API is `null` for vehicles that do have a Car-Pass, while the Partner API returns the link as `main.carpass`. A buyer on the garage's own site then sees no Car-Pass for a car that has one.\n\nSource: Portal mail:53.\n\n## What is reported\n\n`GET /api/v1/public/vehicles` gives `car_pass: null` for vehicles whose Car-Pass link is visible in the Partner API.\n\n## What the code does today\n\nThe two APIs read different things:\n\n- The Partner API returns `vehicles.carpass_id` as it is (`vehicleResource`).\n- The public API and the website iframe return the link only when `vehicles.carpass_init` is on (`PublicVehicleResource`, `resources/views/website/detail.blade.php`), by rule R S3-4.5: the public website shows the Car-Pass only when a report exists. `PublicVehicleApiTest::test_car_pass_volgt_de_embed_enkel_bij_een_bestaand_rapport` pins exactly this: a link with the flag off gives `null`.\n\nSo a vehicle with a link and the flag off is shown with a Car-Pass by one API and without by the other. Ways a vehicle gets into that state:\n\n- `VehicleApiController::update` for a premium dealer writes `carpass_id` from `main.carpass` and does not set `carpass_init` (only `VehicleApiService::storeVehicle` does, on creation). When the dealer has no Car-Pass account on the platform, `updateCarpassInit` does nothing and the flag stays off.\n- `VehicleApiService::updateCarpassInit` and `stocklist:force-update-carpass` set the flag off when a registration throws, and leave the link.\n\n## To find out first\n\nWhether the reporting garage's vehicles are in that state (link filled, flag off), from production. If so, the open question is what the flag off means for a link that is a valid Car-Pass report link: the iframe hides it too, so the same cars show \"Car-Pass not available\" there.\n\n## Likely fix once confirmed\n\nSet `carpass_init` through `CarpassLink::attach` when a partner update brings a valid report link (as the refused-update path already does, R P3-2.14), and repair existing rows. The public API itself keeps following R S3-4.5.\n\nAlso: `docs/api/public-api.md` calls `car_pass` \"the Car-Pass key\"; it is the full link of the report.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Public API: car_pass is null for vehicles whose Car-Pass link the Partner API returns"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261116083259-663063"
+}

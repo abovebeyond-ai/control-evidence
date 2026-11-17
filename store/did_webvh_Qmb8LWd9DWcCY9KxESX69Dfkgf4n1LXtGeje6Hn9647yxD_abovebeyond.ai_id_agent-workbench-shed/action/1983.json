@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nTwo of the three key figures from #461 could not be recorded: the plan held TUI Stiftung and Securex with terms left open, and the Standard refuses a figure whose publisher's terms are unknown. That is now decided: both may be cited, with attribution. Neither is a competitor.\n\n## What changes\n\n- `research/statistics-2026-11-15-terms-open.json` becomes `research/statistics-2026-11-16.json`, with `terms: \"attribution\"` on both publishers. The figures themselves are unchanged:\n  - 55% of 16 to 26 year olds in seven European countries can imagine becoming self-employed (TUI Stiftung, Junges Europa 2026, page 78, n=8,024).\n  - 31.8% of new open-ended contracts in Belgium went to employees under 30 in 2025, from 40.3% in 2024 (Securex press release of 5 February 2026). This is a figure about employment contracts, not about self-employment.\n- The test reads the new plan: both figures are taken, and the same plan without terms is still refused.\n\n## After the merge, on the box\n\n```\nnode bin/cite-statistics.mjs research/statistics-2026-11-16.json --admitted-by=<name> --run=figures-2026-11-16 --dry\nnode bin/cite-statistics.mjs research/statistics-2026-11-16.json --admitted-by=<name> --run=figures-2026-11-16\n```\n\nUndo with `node bin/cite-statistics.mjs --undo=figures-2026-11-16`.\n\n## Checked\n\n- Full suite and `tsc` pass on main at 1d6f2e7.\n",
+            "branch": "workbench/statistics-terms-read",
+            "title": "Figures of TUI Stiftung and Securex: terms decided, cited with attribution"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261116173152-0a09f3"
+}

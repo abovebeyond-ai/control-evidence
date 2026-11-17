@@ -1,0 +1,16 @@
+{
+    "action": "99f1c53ee5832b432e6992735a559983",
+    "effect": {
+        "detail": {
+            "base": "74c702127af1fe53274c25bcc6c62f7683d11118",
+            "branch": "workbench/cybersec-ctf-recap",
+            "commit": "9f5dec3c332dc4c8f7f79a982014111a0f1de8fa",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 1938,
+    "verdict": "ALLOW"
+}
