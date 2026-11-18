@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:58",
+            "note": "Issue #1104, no code change: KBA numbers are not used. Owner: run real-garant:mapping on production, check the three BAIC models carry a code, answer the sender. Question: schedule the mapping weekly after the Hexon import?",
+            "state": "parked",
+            "url": "https://github.com/stocklistdealer-eu/platform/issues/1104"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261117085824-77c248"
+}

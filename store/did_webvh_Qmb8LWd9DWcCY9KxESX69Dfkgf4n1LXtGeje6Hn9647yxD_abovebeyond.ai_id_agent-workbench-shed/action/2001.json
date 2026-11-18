@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: The daily integration smoke test (`stocklist:smoke --all`) ended with exit code 1 on production on 2026-11-17 at 06:30. One of the third-party connections failed its check; the alarm does not say which one.\n\n## What is wrong\n\nNightwatch issue 74 (production, first and last seen 2026-11-17 05:30 UTC) reports that the scheduled command `stocklist:smoke --all` failed with exit code 1. The command exits 1 as soon as one service in `IntegrationChecks::SERVICES` fails its read. The alarm carries only the exit code, so the failing service and its reason are not in it; they are in the cache entry `integration_smoke.last`, shown under Settings > Koppelingen.\n\n## What is known\n\n- The same alarm fired on 2026-11-11 (Nightwatch issue 73, #1087). The cause then was RealGarant's own server answering an error on the warranty programme list. Since #1088 and #1089 the smoke test fails with RealGarant's reason for as long as that list stays unavailable, so a RealGarant outage that is still going on would give exactly this alarm.\n- Issue 74 is a new number for the same message: the framework went from 13.38.0 to 13.42.0 on 2026-11-16 (#1096) and the reporting line in `ScheduleRunCommand.php` moved from 211 to 213. A new number therefore does not prove a new cause, and it does not show whether the test also failed on 12 to 16 November.\n- Merged since the last known run: #1095, #1096, #1099, #1100, #1101, #1102.\n\n## What is needed\n\nThe failing line from Settings > Koppelingen on production (or the output of `stocklist:smoke --all` there). With that line this is either a third party's outage to follow up, or a fault in the platform to fix.\n\nSource: Portal mail:57.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Integration smoke test failed on production on 2026-11-17: which service, and why"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261117084138-3f85da"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A bidding vehicle that is added step by step and finished later, on another device, comes back without its original owner, so the owner has to be picked a second time before the vehicle can be sent.\n\nSource: Portal mail:59.\n\n## What happens\n\nA bidding vehicle was created on a laptop, at first without photos. The photos were added afterwards on a phone. When the vehicle was then sent from the phone, the original owner chosen on the laptop was gone and had to be added again.\n\n## Why\n\nWhile a vehicle is being added, every \"Volgende\" writes the step to the draft row (`VehicleForm::saveStep` \u2192 `draftColumns`), and the sheet says \"Bewaard\". `draftColumns` writes the wired keys that are columns of `vehicles`. The original owner is wired as `relation_name` (the display name, not a column); the column itself, `original_owner_id`, is not in that list. It is only written by the final save (`toBackendArray`). So a sheet that is left before \"Wagen toevoegen\" and reopened later, on any device, reads the draft row and finds no owner.\n\n## Expected\n\nThe original owner chosen on the sheet is part of what \"Volgende\" saves, like every other field on that step.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Bidding vehicle loses its original owner when the sheet is left before the final save"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261117130802-c738de"
+}

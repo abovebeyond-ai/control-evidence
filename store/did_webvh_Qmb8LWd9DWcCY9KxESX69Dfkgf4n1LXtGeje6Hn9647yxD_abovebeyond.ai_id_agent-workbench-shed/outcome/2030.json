@@ -1,0 +1,10 @@
+{
+    "action": "b3699efe06153ae721f88f445c87c812",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "out of schema: parameter \"labels\" has a word longer than fifty characters",
+    "step": 2028,
+    "verdict": "DENY"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: RealGarant added the BAIC B40 P, B40 PRO and BJ40 SE to its database. Link our three models to them, so these vehicles get a warranty offer.\n\nUntil now RealGarant knew only \"B40\" and \"BJ40\" under BAIC, so our models B40 P, B40 PRO and BJ40 SE carried no RealGarant code and a vehicle on one of them got no warranty offer (R S1-3.24). RealGarant has now added the three models on its side and passed on KBA key numbers for them.\n\nThe platform does not use KBA key numbers. A warranty search sends RealGarant's own series code (`serieCode`, from `models.real_garant_code`), and `real-garant:mapping` reads those codes from RealGarant's API (`services/vehicle/manufacturer/<code>/series`) and matches them to our models by name within the make. So the key numbers are not needed, and no code change is needed either: one run on production picks up the new series.\n\n```\nphp artisan real-garant:mapping\n```\n\nThen check that the three models carry a code:\n\n```\nphp artisan tinker --execute=\"dump(DB::table('models')->join('manufacturers','manufacturers.id','=','models.manufacturers_id')->where('manufacturers.name','BAIC')->whereNull('models.merged_into_id')->pluck('models.real_garant_code','models.name'))\"\n```\n\nWhat can still go wrong:\n\n- The match is by name (case, spaces and punctuation ignored). If RealGarant named a series differently from \"B40 P\", \"B40 PRO\" or \"BJ40 SE\", that model stays without a code and the code has to be set by hand from `real_garant_codes`.\n- No BAIC of these three models is on the platform today, so the price cannot be checked on a real vehicle until a garage enters one.\n- `real-garant:mapping` is not on the schedule, while new models from Hexon arrive every Monday (R S1-3.1). A model that both Hexon and RealGarant know stays without a warranty offer until someone runs the mapping by hand. Putting the mapping on the schedule after the weekly import would close that gap; that is a separate decision.\n\nSource: Portal mail:58.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Link the BAIC B40 P, B40 PRO and BJ40 SE to RealGarant's new series"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261117085808-d672ec"
+}

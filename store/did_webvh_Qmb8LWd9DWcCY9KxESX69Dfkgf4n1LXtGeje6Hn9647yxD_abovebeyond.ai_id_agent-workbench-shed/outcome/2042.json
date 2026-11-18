@@ -1,0 +1,16 @@
+{
+    "action": "797ee453e7fd6ebe4726f6ce1b77862a",
+    "effect": {
+        "detail": {
+            "base": "35b0bb3648f5c890c872b8e663e2f4f4bbdb3de7",
+            "branch": "workbench/mail-59-first-owner-first-registration",
+            "commit": "a119a669b84667fe884e6744c969be17230cb666",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2040,
+    "verdict": "ALLOW"
+}

@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-17T07:34:34+00:00",
+    "computed_at": "2026-11-18T07:34:35+00:00",
     "window": {
-        "since": "2026-11-10T07:33:02+00:00",
+        "since": "2026-11-11T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -96,8 +96,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 0,
+                "gateway": 0
             }
         },
         "ShaneDeconinck/shanedeconinck.be": {
@@ -126,8 +126,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 27,
-                "gateway": 27
+                "github": 26,
+                "gateway": 26
             }
         },
         "Trendwolves/gentells-site": {
@@ -137,8 +137,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 29,
-                "gateway": 29
+                "github": 24,
+                "gateway": 24
             }
         },
         "Trendwolves/glk-transferor": {
@@ -208,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 13,
-                "gateway": 13
+                "github": 12,
+                "gateway": 12
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -295,8 +295,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 1,
+                "gateway": 1
             }
         },
         "Trendwolves/gentells-standard": {
@@ -317,8 +317,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 6,
-                "gateway": 6
+                "github": 5,
+                "gateway": 5
             }
         },
         "abovebeyond-ai/bextrust": {
@@ -471,8 +471,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 0,
+                "gateway": 0
             }
         },
         "bextrust/bextrust-android": {
@@ -482,8 +482,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "bextrust/control": {
@@ -493,8 +493,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 0,
+                "gateway": 0
             }
         },
         "bextrust/crm": {
@@ -504,8 +504,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "bextrust/gate-demo-box": {
@@ -515,8 +515,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 0,
+                "gateway": 0
             }
         },
         "forge:abovebeyond": {

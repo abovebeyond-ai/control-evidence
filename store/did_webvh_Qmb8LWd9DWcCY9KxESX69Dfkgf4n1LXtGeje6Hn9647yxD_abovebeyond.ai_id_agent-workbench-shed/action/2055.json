@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "35b0bb3648f5c890c872b8e663e2f4f4bbdb3de7",
+            "branch": "workbench/nightwatch-75-website-unserialize",
+            "files_sha256": "22e538666c6b7362029b7d11f77b0ef121c76441dd77146fab0b465a7a98ee16",
+            "message": "A website hash in either form opens the page\n\nThe website module carries the dealer id encrypted in the address in two forms: as a string, and serialized in the search form and its dependent lists. The decryption was chosen per route, so a string hash on a search, model list or body style route decrypted fine and then failed in unserialize() with an ErrorException that the 404 of R S2-5.24 did not catch. dealerIdFromHash now always decrypts as a string and reads the serialized form of an id by pattern, on every route. Nothing a visitor sends is unserialized any more.\n\nNightwatch: 75"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261117142231-4a9d77"
+}

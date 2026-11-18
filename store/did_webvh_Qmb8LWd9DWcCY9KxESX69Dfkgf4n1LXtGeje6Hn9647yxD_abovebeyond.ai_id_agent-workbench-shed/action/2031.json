@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P3\nSummary: Inzichten > Klanten en omzet says \"30 dealers zoeken VIN's op met saldo nul\". The office asks whether the figure is wrong or whether lookups still go through at balance zero, since rule R S1-2.1 says a dealer at zero cannot look up.\n\nSource: Portal mail:59.\n\n## What the code does\n\n`OwnStockController::createFromVIN` only performs the lookup when the dealer's `vwe_tokens` is above zero, and takes one token after a lookup that came back. That is rule R S1-2.1, and it holds.\n\n## What the figure counts today\n\n`InsightsRepository::flags`, `opzoeking_zonder_saldo`: the dealers whose balance is 0 today and who have at least one row in `carvwe_requests` in the last 12 months. `gratis_opzoekingen` (the \"Nu weggegeven\" tile) counts their lookups the same way.\n\nThe balance at the time of the lookup is not stored. So a dealer who used tokens during the year and stands at zero now is counted, and so are all the lookups that dealer paid for with tokens. The sentence \"Het verbruik loopt door, de factuur van de leverancier ook\" does not follow from this count.\n\n## What can still look up without a token\n\n- `stocklist:fetchRequiredFieldsByChassisNumber` (rule R S1-2.16): an administrator task that does a paid lookup when no stored answer exists and takes no token.\n- `stocklist:vwe-smoke` and the `--spend-tokens` smoke test, run by an administrator.\n\n## To decide\n\nWhether the line and the tile should go, or be replaced by something the data can carry (for example: dealers at balance zero, as a list to top up). Counting lookups that really happened at zero needs the balance written with each request from now on.\n",
+            "labels": [
+                "\"dealers zoeken VIN's op met saldo nul\" against rule R S1-2.1:mail",
+                "question",
+                "priority:P3"
+            ],
+            "title": "Inzichten"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261117130808-17ee37"
+}

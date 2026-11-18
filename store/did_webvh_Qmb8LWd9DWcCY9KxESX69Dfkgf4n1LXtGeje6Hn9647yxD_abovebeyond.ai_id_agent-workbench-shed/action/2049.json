@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:60",
+            "note": "Investigating Nightwatch #75: unserialize error in Settings/WebsiteController.php:71",
+            "state": "in-progress"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261117141556-b13db6"
+}

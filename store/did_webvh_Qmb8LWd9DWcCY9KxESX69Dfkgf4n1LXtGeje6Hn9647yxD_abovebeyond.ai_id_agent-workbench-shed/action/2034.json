@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P3\nSummary: Inzichten > Klanten en omzet says \"31 dealers beheren voorraad zonder module 1\". The office asks what that means, because managing stock is module 1 and a dealer without it should not be able to.\n\nSource: Portal mail:59.\n\n## What the figure counts today\n\n`InsightsRepository::flags`, `voorraad_zonder_module`: the dealers whose `module_1` is 0 today and who have at least one row in `vehicles` created in the last 12 months.\n\n## Why it reads higher than what the sentence says\n\n- It counts every vehicle, not only own stock. A bidding vehicle (`for_export = 1`) is a row in `vehicles` too, and offering vehicles for bids is module 2. A trader who entered one bidding vehicle is counted as \"managing stock\".\n- It compares today's flag with a year of history. A garage that had module 1 when it added its vehicles and whose module 1 was switched off since is counted as well.\n- Vehicles that came in through the partner API or an import are counted like vehicles typed on the sheet.\n\nThe sentence next to it (\"De vlag houdt het gebruik niet tegen, dus factureren erop klopt niet\") is therefore stronger than what the query can show.\n\n## To decide\n\nWhich of these the figure should mean: only own-stock vehicles (`for_export = 0`) added by a dealer without module 1, and whether a module switched off afterwards should count. With that answer the query and the sentence can be made to say the same thing. Which accounts are in the 31 can only be read on production.\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P3"
+            ],
+            "title": "Inzichten: what does \"dealers beheren voorraad zonder module 1\" count"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261117130819-52205c"
+}

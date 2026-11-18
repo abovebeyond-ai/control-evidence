@@ -1,0 +1,16 @@
+{
+    "action": "20905d046814031cc57b1acede7a0e0e",
+    "effect": {
+        "detail": {
+            "base": "35b0bb3648f5c890c872b8e663e2f4f4bbdb3de7",
+            "branch": "workbench/nightwatch-75-website-unserialize",
+            "commit": "26aaecbe7f43db05cc998c46aa59c72465f97826",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2055,
+    "verdict": "ALLOW"
+}

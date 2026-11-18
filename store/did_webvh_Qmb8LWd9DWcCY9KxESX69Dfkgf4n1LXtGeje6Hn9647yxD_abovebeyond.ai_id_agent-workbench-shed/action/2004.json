@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:57",
+            "note": "Issue #1103. Which service failed? The alarm only gives exit code 1 and the read layer still refuses the workbench. Need the red line from Settings > Koppelingen on production (or the output of stocklist:smoke --all there). If it is RealGarant's programme list again, nothing to fix in the platform.",
+            "state": "parked",
+            "url": "https://github.com/stocklistdealer-eu/platform/issues/1103"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261117084156-b53f4b"
+}

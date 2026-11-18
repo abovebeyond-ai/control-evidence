@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:59",
+            "note": "Reading the mail: two bugs (first owner lost on bid vehicle, first registration not enforced) and two questions on Inzichten figures",
+            "state": "in-progress"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261117130508-fef62d"
+}

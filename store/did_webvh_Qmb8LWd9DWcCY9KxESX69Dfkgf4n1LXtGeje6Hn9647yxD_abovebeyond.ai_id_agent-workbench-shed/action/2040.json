@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "35b0bb3648f5c890c872b8e663e2f4f4bbdb3de7",
+            "branch": "workbench/mail-59-first-owner-first-registration",
+            "files_sha256": "2e6a0397250c4dc577eb0c337fa39c3ec838c6f6f05e222b2b48296d72dab318",
+            "message": "Save the original owner with each step, require first registration on a used vehicle\n\nA bidding vehicle that was added up to the photos and finished later came back without its original owner: \"Volgende\" wrote the wired columns to the draft, and the owner is wired by its display name, which is no column. The draft save now writes the chosen owner as well.\n\nFirst registration was nullable on the server while the sheet showed the asterisk, so a chassis lookup that returned no date left a used vehicle saved without one. The date is now required for every usage category except a new vehicle, and judged on the Data step where the box stands.\n\nPortal: De originele eigenaar van een biedingswagen blijft bewaard wanneer de wagen later of op een ander toestel wordt afgewerkt, en een gebruikte wagen kan niet meer zonder eerste inschrijving bewaard worden."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261117131644-d80b97"
+}

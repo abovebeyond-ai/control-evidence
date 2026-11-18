@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A public website (iframe) address whose dealer hash is validly encrypted but in the other of the two forms answers 500 instead of opening or giving 404. One occurrence in production so far; it is a visitor-facing crash on a public page and noise in Nightwatch.\n\nSource: Portal mail:60 (Nightwatch issue 75, production, first and last seen 2026-11-17 14:10 UTC).\n\n## What happens\n\n`ErrorException: unserialize(): Error at offset 0 of 3 bytes` at `app/Http/Controllers/Settings/WebsiteController.php:71`.\n\nThe website module carries the dealer id encrypted in the address, in two forms: `Crypt::encryptString` (catalogue, detail, mode button) and `Crypt::encrypt`, which serializes first (search form, model list, body style list). `dealerIdFromHash` picks the decryption by route. When a hash of the string form arrives on a route that expects the serialized form, the decryption itself succeeds, and `Crypt::decrypt` then calls `unserialize()` on the plain id (three bytes here, a three-digit dealer id). That raises an `ErrorException`, not the `DecryptException` that R S2-5.24 turns into a 404, so the visitor gets a 500.\n\nNo blade in the repository builds such an address, so it was most likely put together by a crawler or copied from another page of the same widget. Rule R S2-5.24 already says an old or garbled address on these public pages is an ordinary event and not a failure; this case slipped past it.\n\n## What should happen\n\nA hash that decrypts to a dealer id opens the page whichever of the two forms it has; anything else stays a 404. No 500 from a public website address.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "A website address with the dealer hash in the other form answers 500 (unserialize error)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261117141646-8bda31"
+}
