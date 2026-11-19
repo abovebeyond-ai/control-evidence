@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "714051c8441d49b4e5bcc73cbd7c44ba7e0f97aa",
+            "branch": "workbench/standalone-app",
+            "files_sha256": "81217dce64ba179d3683e0a017bf68569095e69e1345a5b23d14a6c252562799",
+            "message": "Replace the Dutch-only app with the bilingual client app, built by Netlify\n\nThe site now carries the client app, its spec (both flows, Dutch and French) and\nthe three functions it needs in one repository. The access code is a site\nvariable, and each call is started with who called and about what as metadata."
+        },
+        "resource": "ShaneDeconinck/trendwolves-call-agents"
+    },
+    "run": "workbench-20261118201810-ad7717"
+}

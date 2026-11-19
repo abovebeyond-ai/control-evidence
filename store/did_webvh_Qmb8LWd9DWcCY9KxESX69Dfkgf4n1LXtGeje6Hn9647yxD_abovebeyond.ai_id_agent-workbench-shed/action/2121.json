@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: The designed reports still send the reader straight to other sites from their source lists. They go to a test group now and to a larger group on Friday 20 November, and they should cite through Gentells only.\n\nSource: Portal mail:61.\n\n## What is wrong\n\nThree designed reports came back from the designers with new covers. Their source pages, and a few links in the body, still point at the publishers' own sites, or print an address with no link at all. The sources of a report are held in Gentells and each has a page on gentells.com (`/sources/{key}`), but the file that goes out does not use those pages: stamping the links on upload was planned on 12 November and never built.\n\n## What was found in the three files\n\n| Report | Sources printed | Held in Gentells | Not held |\n|---|---|---|---|\n| The New Status System | 17 | 17 | 0 |\n| Going Out, Staying In | 12 | 11 | 1, a source marked as read for inspiration only, which a report may not cite |\n| Growing Up in Public | 19 | 0 (the report is not on the shelf yet) | 18 to hold, plus 1 entry that is a link to an internal working document |\n\nOf the 18 sources of Growing Up in Public, 8 pages are already in Gentells through posts, 5 are from a publisher Gentells knows, and 5 are from a new publisher.\n\n## What is needed\n\n1. The file on the shelf leads its source links through Gentells: a link the designers made to a held source goes to that source's page, and a printed address gets a link to it. Nothing else in the file changes, and what still leaves for another site is named.\n2. Growing Up in Public gets a row on the shelf, and its 18 sources are held (`bin/cite-report-sources.mjs`).\n3. Two entries need an editor: the inspiration-only source in Going Out, Staying In, and the internal link in Growing Up in Public.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "Designed reports still link their sources straight to other sites"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119071043-ad8a72"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:61",
+            "note": "Proposed: pipeline #472 (links in the report PDF through Gentells; closes #470 and #469), pipeline #471 then studio #83 (source list made in the Studio before the PDF; closes studio #82). Waits for merge.",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/472"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119072824-9c96ad"
+}

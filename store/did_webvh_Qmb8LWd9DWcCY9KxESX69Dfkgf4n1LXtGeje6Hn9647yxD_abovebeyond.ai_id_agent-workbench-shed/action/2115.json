@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:61",
+            "note": "Issue pipeline #469 open. Built and tested locally (worktree pipe-report-links, suite 1715/1715): links in the report PDF go to the source pages. Waiting for a go to propose.",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119070920-fd2da8"
+}

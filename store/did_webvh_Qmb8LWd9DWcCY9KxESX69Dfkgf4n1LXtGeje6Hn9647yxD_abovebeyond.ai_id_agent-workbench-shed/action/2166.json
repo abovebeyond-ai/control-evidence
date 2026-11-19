@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Issues filed: site #304 (sign-in failed 16 Nov, cause unknown), standard #25 (Flanders/Belgium: today only Benelux), site #305 (generation, age, industry: yes). Nothing built. Questions: (1) should Belgium, and perhaps Flanders, become a region of its own in the Standard, starting with a count of how many Benelux signals are Belgian? (2) may I dig into the sign-in failure of 16 Nov, which needs the logs of gentells.com from the box?",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119073323-9f8097"
+}

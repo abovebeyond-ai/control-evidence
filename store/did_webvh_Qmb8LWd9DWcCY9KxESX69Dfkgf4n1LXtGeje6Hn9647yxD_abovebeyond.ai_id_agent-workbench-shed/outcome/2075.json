@@ -1,0 +1,16 @@
+{
+    "action": "a897ce8546c8f483453e1dd0484be06e",
+    "effect": {
+        "detail": {
+            "base": "9518be96be8f566a990602087eed7c709c652515",
+            "branch": "workbench/retell-v3-web-call",
+            "commit": "04c0a2c9980a8615f141cdf87bfd2240343843d2",
+            "files": 14,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2073,
+    "verdict": "ALLOW"
+}

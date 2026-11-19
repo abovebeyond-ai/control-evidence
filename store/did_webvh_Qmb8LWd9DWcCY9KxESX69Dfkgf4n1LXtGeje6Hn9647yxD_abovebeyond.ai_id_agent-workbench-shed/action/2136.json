@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7d7bf124f0912a4d9e83961415bf4c82792f2b9f",
+            "branch": "workbench/report-source-list",
+            "files_sha256": "b7c83b378438c25188bb6996b105b0f16f6fd7635a82c4b1de31f4711b4241db",
+            "message": "Reports: the source list is made in the Studio before the PDF is\n\nA writer finds a source Gentells already holds or pastes a draft list, sees\nwhat each line is, adds the ones that stand and copies the numbered list for\nthe design, each source with its address on gentells.com."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119072521-fd73dd"
+}

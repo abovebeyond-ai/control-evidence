@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P3\nSummary: A media prospect asked whether youth trends can be read per generation, per age segment and per industry. All three exist today; this issue records the answer for the pitch deck.\n\nSource: Portal mail:62.\n\n## The question\n\nCan trends be shown per generation, per age segment and per industry?\n\n## The answer: yes, on all three (read 19 November 2026)\n\n**Per generation.** Gen Z (born 1995 to 2009), Gen Alpha (born 2010 to 2024) and ZAlpha (born 2006 to 2012, a lens over the border between the two). Millennials and Gen Beta are tagged as context only, as parents and children.\n\n**Per age segment.** Gentells calls these lifestages, each with its age range: Kids (6 to 10), Tweens (9 to 10), Teens (11 to 17), Students (18 to 25), Young Adults (18 to 34) and Young Families (parents of 25 to 39).\n\n**Per industry.** Twelve sectors: Fashion, Food & FMCG, Banking & Insurance, Employer Branding, Beauty, Media & Entertainment, Telecom & Tech, Automotive, Travel, Health & Wellness, Education, Government & NGO. Behind them sit seventeen topics.\n\nWhere a reader finds it:\n\n- gentells.com/trends filters on sector (by topic, see below), generation and lifestage, and the three can be combined.\n- The members' MCP server returns the same tags with every trend, so an assistant can answer per group and per sector.\n- The Observatory compares generations and lifestages side by side.\n\nVolume, from the Observatory's intake mix over the 90 days up to 19 November 2026 (kept signals; a signal can carry several tags): Gen Z 19,950, ZAlpha 1,674, Gen Alpha 713; Young Adults 18,783, Teens 13,920, Students 9,647, Tweens 3,648, Kids 1,521, Young Families 1,065.\n\n## One thing to know before showing it\n\nThe sector filter on the trends page works on the seventeen topics, not on the twelve sectors: a choice there is a topic such as Music & Movies, Media & Platforms or Gaming. For a prospect in media and radio that is the useful cut: Music & Movies is the largest topic (10,683 kept signals in 90 days) and can be chosen directly.\n\nThe regional side of the same conversation (Flanders, Belgium) is a separate issue in gentells-standard.\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P3"
+            ],
+            "title": "Can trends be read per generation, per age segment and per industry? Yes, on all three"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261119073315-ef95e3"
+}

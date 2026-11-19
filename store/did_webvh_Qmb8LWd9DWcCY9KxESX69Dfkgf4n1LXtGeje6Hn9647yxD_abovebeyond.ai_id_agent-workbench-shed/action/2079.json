@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7d7a6a75fd522b022580d44fa18e47edcd6aef13",
+            "branch": "workbench/demo-seed-and-open-term",
+            "files_sha256": "1624cf80dfd5b0bdd5819f380d85977559c824d77380c29826c8ea0b23aeabfd",
+            "message": "Demo: seed marks for every counting subject; say when a term has no term marks"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261118141948-aba787"
+}

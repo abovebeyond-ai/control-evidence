@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: On 16 November 2026 signing in on gentells.com failed for at least two accounts, one of them during a meeting with a prospect, so the product could not be shown. It works again, but the cause was never established, so it can return.\n\nSource: Portal mail:62.\n\n## What happened\n\n- On 16 November 2026, in the afternoon (one failure is timed at about 16:36 CET), signing in on gentells.com did not work for at least two existing accounts. The Observatory and the Studio sign in through gentells.com, so they were out of reach as well.\n- One of those accounts was being used to demonstrate Gentells to a prospect. Little could be shown.\n- By the evening of the same day signing in worked again, without a change on our side that explains it.\n\n## What is known\n\n- The server answered sign-in requests correctly during the failure, as far as was checked at the time.\n- Stale cookies in the browser were the working guess. It was not confirmed.\n\n## What is asked\n\nFind the cause and close it, or show that it cannot return:\n\n- Read the application log and the web server log of gentells.com for 16 November 2026 between 15:00 and 19:00 CET: sign-in attempts, 419 (expired CSRF token) and 302 loops, session errors.\n- Check what changed around that time: deploys, session or cookie settings (name, domain, SameSite, lifetime), the pre-launch gate and its preview cookie.\n- Reproduce with an old session cookie and an old gate cookie in the browser.\n- If stale cookies are the cause: make a sign-in with a stale cookie recover by itself instead of failing.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Signing in on gentells.com failed on 16 November 2026; cause not established"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261119073302-59872f"
+}

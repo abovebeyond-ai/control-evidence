@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Reading the mail: two questions about what Gentells can map (Flanders/Belgium; generation, age, industry) and a remark that logging in failed during a meeting; checking what exists before filing issues",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119073104-50c0e1"
+}

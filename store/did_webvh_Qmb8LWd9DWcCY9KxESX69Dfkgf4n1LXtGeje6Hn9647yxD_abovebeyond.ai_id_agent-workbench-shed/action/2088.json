@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Pupils without a mark are left out of the term ranking. In a term where nobody has a mark yet, such as the first term of a new school year, the ranking is empty and the By term page said \"No pupils are enrolled in this class yet\" while the enrolments were there.\n\nThe page now tells the two cases apart:\n\n- No pupils enrolled: the existing text.\n- Pupils enrolled, no marks yet: \"No marks entered for Term 1 yet. 25 pupils are enrolled in this class.\" with a link to where marks are entered (By test or By month, depending on the school).\n\n## Tests\n\nOne new test in `ScorebookByTermTest`, covering the empty class and the class with two pupils and no marks. Full suite: 531 tests pass, 2 skipped.\n",
+            "branch": "workbench/by-term-no-marks",
+            "title": "By term: a class with pupils but no marks is not called empty"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261118144937-a1ffeb"
+}

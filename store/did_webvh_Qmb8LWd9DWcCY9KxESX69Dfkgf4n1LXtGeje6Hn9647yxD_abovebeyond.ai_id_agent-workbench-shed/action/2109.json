@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:61",
+            "note": "Sources of R9 and R10 are held in Gentells with a page each; building the missing step: links in the report PDF go to the source pages on gentells.com",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119070508-bdad47"
+}

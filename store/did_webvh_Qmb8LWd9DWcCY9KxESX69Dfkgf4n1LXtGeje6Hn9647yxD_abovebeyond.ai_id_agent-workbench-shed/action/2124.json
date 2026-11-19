@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The person who writes or designs a report has no way to turn their sources into Gentells sources before the PDF is made. The check only runs on upload, when the list is already printed. They should be able to find or convert each source themselves and take a finished source list into the design.\n\nSource: Portal mail:61.\n\n## What is wrong today\n\n- A report's source list is checked against Gentells only after the PDF is uploaded (Reports, the source check). By then the list is printed with the publishers' own addresses, often a bare home page.\n- Holding the sources in Gentells is a run on the server from a plan someone else prepares. The writer cannot do it.\n- So every report comes back with the same repair: look up the exact pages, hold them, redirect the links in the file. The printed text still names the other site.\n\n## What is asked\n\nA place in the Studio, under Reports, that works before there is a PDF:\n\n1. **Paste the sources of a report**: addresses, or whole lines of a draft list. One per line.\n2. **Each line gets an answer**: already in Gentells (with its page), held now (the page is read, as \"Cite these links\" does for a post), or not usable as given, with the reason said plainly: a home page only, a page that cannot be read, a source read for inspiration only.\n3. **Search what Gentells already holds**: by publisher or title, so a source is picked instead of looked up again outside.\n4. **Take the list out**: the numbered source list as text, in one house format (publisher, date, title, the address on gentells.com), ready to place in the design. The same list is what the upload check then compares the PDF with.\n\n## Done when\n\n- A writer can go from a draft list to a finished source list without anyone running a script.\n- A report made from that list passes the upload check with every source held and no address outside Gentells in print.\n- A home page only is refused at the paste, not found after the design.\n\n## Notes\n\n- The pieces exist: citing a link (`core/source-by-link.mjs`), holding a report's sources by number (`core/report-citations.mjs`), the page per source (`core/cited-pages.mjs`). What is missing is the surface for the writer and the list to take out.\n- The report has to exist as a row first, so the sources can be held under it before its file is there.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Report sources: find or convert them in the Studio before the PDF is made, and take the finished list out"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119071335-9c1020"
+}

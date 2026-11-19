@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: question  Priority: P2\nSummary: A media prospect asked whether Gentells can map youth trends at the level of Flanders or Belgium. Today it cannot: the finest region that holds Belgium is Benelux. The answer is needed for a pitch deck.\n\nSource: Portal mail:62.\n\n## The question\n\nCan trends among young people be mapped for Flanders, or for Belgium, apart from the rest?\n\n## What exists today (Standard 0.18.0, read 19 November 2026)\n\n- `taxonomy/regions.json` has eighteen regions. Belgium is not one of them: the country code `be` is a hidden label of `region-benelux`, next to `nl` and `lu`. Flanders does not occur.\n- A signal observed in Belgium is therefore stored as Benelux and can no longer be told apart from a Dutch one by its region.\n- Volume, from the Observatory's intake mix over the 90 days up to 19 November 2026: 27,099 signals tagged Benelux came in, 3,878 were kept and 195 are cited by an insight. Benelux is the third largest region by intake, after North America and East Asia.\n- Language is recorded apart from region: 36,317 Dutch-language signals came in over the same 90 days. Dutch covers the Netherlands as well as Flanders, so it does not single out Flanders either.\n- The trends page on gentells.com filters on sector, generation and lifestage. It has no region filter.\n\n## The honest answer for now\n\nGentells reads Belgium as part of Benelux. It can say what moves among young people in Benelux and how that differs from other regions. It cannot yet give a Belgian or a Flemish reading.\n\n## What a yes would take, to decide\n\n1. A term for Belgium under Benelux in the Standard, and perhaps Flanders under Belgium, with a rule for when a signal counts as Belgian or Flemish (place of the source, of the people it is about, or both).\n2. The pipeline tags new signals with it. Older signals keep Benelux unless they are classified again.\n3. Enough Belgian sources to carry a reading of its own. How many of the Benelux signals are Belgian is not known today; that count comes first, because it decides whether a Belgian reading would stand on evidence.\n4. A region filter where readers look: the trends page and the members' MCP server.\n\nOpen for the editorial owner: whether Belgium or Flanders is a level Gentells wants to promise, and to whom.\n",
+            "labels": [
+                "mail",
+                "question",
+                "priority:P2"
+            ],
+            "title": "Can Gentells map youth trends for Flanders or Belgium? Today the finest level is Benelux"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261119073312-5f5687"
+}

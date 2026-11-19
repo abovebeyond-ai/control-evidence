@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b6ffc9f23f1b0b4d58b5dba33347f9d09797c73",
+            "branch": "workbench/report-source-list",
+            "files_sha256": "24ce43106c629eee6b1cb94e0309876cfc732292d39a123ed56646780434e245",
+            "message": "A report's source list is made in Gentells before the PDF is\n\nThe Studio can check pasted sources against Gentells, hold the ones that\nstand under the report, search what Gentells already holds, take a source\noff, and give the numbered list out as text with each source's address on\ngentells.com.\n\nPortal: Report writers can now turn their sources into Gentells sources in the Studio and copy the finished source list for the design."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119072457-43a804"
+}

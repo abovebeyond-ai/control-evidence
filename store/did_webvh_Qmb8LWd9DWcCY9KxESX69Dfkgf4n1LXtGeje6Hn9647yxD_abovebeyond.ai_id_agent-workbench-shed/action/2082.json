@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two loose ends found while reproducing the score entry faults fixed in #36.\n\n## Demo: three subjects had no marks\n\nThe demo seeder gave marks to its own subject list. The Swallow configuration runs afterwards and adds Phonics, Spelling and Dictation and Verbal Aptitude to every grade class, so those three columns stayed empty (\"x\") on every result sheet and counted as \"0 sat\" in the analysis.\n\nThe seeder now gives them marks like the other counting subjects. Checked on a locally seeded database: in Grade 1 and Grade 4 every counting subject has marks, out of 25.\n\nThis shows on the demo after its next reset.\n\n## By term: a term without term marks\n\nA subject's term mark needs at least one test and one exam. The rule is the same for months-mode schools (a test or an exam per month) and tests-mode schools (Test 1, Test 2, Exam). In a term that is still running no subject has a term mark yet, and the By term page ranked every pupil first on a total of 0.\n\n- The page now says that there are no term marks yet and links to the marks entered so far.\n- The entry grid shows a dash instead of a total of 0 for a pupil without a term mark.\n\nThis applies to every school, not only the demo.\n\n## Tests\n\nTwo new tests in `ScorebookByTermTest`. One existing test ranked pupils on the By term page without an exam and passed only through insertion order; it now enters an exam first. Full suite: 530 tests pass, 2 skipped.\n",
+            "branch": "workbench/demo-seed-and-open-term",
+            "title": "Demo: seed marks for every counting subject; say when a term has no term marks"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261118141948-aba787"
+}

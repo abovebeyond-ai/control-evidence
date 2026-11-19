@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "workflow.dispatch",
+        "params": {
+            "inputs": {
+                "plan": "[{\"pkg\":\"dompurify\",\"to\":\"3.4.17\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"zod\",\"to\":\"4.6.6\",\"lock\":\"package-lock.json\"},{\"pkg\":\"brace-expansion\",\"to\":\"2.1.7\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"nanoid\",\"to\":\"5.1.16\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"brace-expansion\",\"to\":\"5.0.12\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"browserslist\",\"to\":\"4.28.7\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"undici\",\"to\":\"7.30.1\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"js-yaml\",\"to\":\"3.15.2\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"nanoid\",\"to\":\"3.3.18\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"postcss\",\"to\":\"8.5.23\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"source-map-js\",\"to\":\"1.2.2\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"undici\",\"to\":\"6.29.1\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"vite\",\"to\":\"6.4.4\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"moment\",\"to\":\"2.31.0\",\"lock\":\"studio\\/package-lock.json\"},{\"pkg\":\"fast-uri\",\"to\":\"3.1.9\",\"lock\":\"package-lock.json\"}]"
+            },
+            "packages": 15,
+            "plan_sha256": "6aa8308377c038130938d79649990c0c5600c847c80738a97f06ef4a0bcc67b4",
+            "ref": "main",
+            "workflow": "elixir-fix.yml"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "01M7QQ4207DX6X2G1V3341TR6Z"
+}

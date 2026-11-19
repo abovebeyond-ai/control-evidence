@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "141ec680bc05a8b53726d62d365a418e54d51bf8",
+            "branch": "workbench/news-post-hero-quotes-gallery",
+            "files_sha256": "4138f0bfe4af4e9353d116cd2e3322df66b33fed9fcdd8a6dcb5c7512a931e4b",
+            "message": "News post: full-width cover, pull quotes, GitHub buttons and a photo gallery"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261118204409-8a45da"
+}

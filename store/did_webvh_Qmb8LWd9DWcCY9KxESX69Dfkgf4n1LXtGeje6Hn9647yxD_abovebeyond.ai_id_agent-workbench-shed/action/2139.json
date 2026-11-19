@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #82\n\nMerge after Trendwolves/gentells-pipeline#471, which adds the `source-list` routes; without it this panel shows an error line and nothing else changes.\n\n## Why\n\nThe person who writes a report had no way to turn its sources into Gentells sources before the design. The only check ran on upload, when the list was already printed with the publishers' own addresses.\n\n## What changes\n\nReports, in every report's row, with or without a file: **The source list**.\n\n- The list as Gentells holds it for this report, numbered, each source with its address on gentells.com, and \"take off\" per source.\n- **Copy the list for the design** puts the numbered text on the clipboard.\n- **Find a source in Gentells**: type a publisher, a title or part of an address and add a result to the list.\n- **Or paste the sources**, one per line. \"Check against Gentells\" says per line what it is and adds nothing. A new or unreadable page shows its publisher, title and date to correct or fill in; a home page, an inspiration-only source and a line without an address say why they cannot be used. One button adds the lines that stand.\n\nThe existing upload check stays, now headed \"The sources in the file\".\n\n## Checked\n\n- `src/report-sources.test.js`: 5 tests on what the screen decides itself. Suite 78 of 78, build clean.\n- The panel driven in a headless browser against mocked answers: search and add, check, name an unreadable page, add, take off. No page errors.\n- Not run against the live pipeline.\n",
+            "branch": "workbench/report-source-list",
+            "title": "Reports: the source list is made in the Studio before the PDF is"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119072521-fd73dd"
+}

@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Bijgewerkt binnen semver, dus de aanroepen blijven werken:\n\n- dompurify to 3.4.17\n- browserslist to 4.28.7\n- js-yaml to 3.15.2\n- postcss to 8.5.23\n- source-map-js to 1.2.2\n- vite to 6.4.4\n- moment to 2.31.0\n- fast-uri to 3.1.9\n\n## Mislukt\n\n- **brace-expansion** \u00b7 the tree carries 2 and 5.x of this package; an override would move them all\n- **nanoid** \u00b7 the tree carries 5 and 3.x of this package; an override would move them all\n- **undici** \u00b7 the tree carries 7 and 6.x of this package; an override would move them all\n- **zod** \u00b7 the tree carries 3 and 4.x of this package; an override would move them all\n\n## Bewijs\n\n- the project's own tests were green before the change, and again after\n- the judge was `npm test`\n- de lockfiles zijn teruggelezen: wat hierboven staat, staat er ook echt in\n\nVoorgesteld door Elixir. Mergen doet een mens.",
+            "branch": "elixir/security-2026-11-18-1618",
+            "packages": 8,
+            "title": "Security: update 8 package(s)"
+        },
+        "resource": "stocklistdealer-eu/stockcars-website"
+    },
+    "run": "01M7QQ4207DX6X2G1V3341TR6Z"
+}

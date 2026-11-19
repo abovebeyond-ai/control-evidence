@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ce1908d880f1c612148bd864531a1fe49c4b4ada",
+            "branch": "workbench/by-term-no-marks",
+            "files_sha256": "1d0c22ad1323f2912fd2c360d4e239054449b04d522dfccd0124fa214f94ae2b",
+            "message": "By term: a class with pupils but no marks is not called empty"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261118144937-a1ffeb"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e1a27fc8ceafeb0d5083f9cac413d57396a16a80",
+            "branch": "workbench/demo-teacher-one-class",
+            "files_sha256": "6ff06cccb394b37b1e9d1e292e55dd3968ea2fd6d88518662456944ef184aef9",
+            "message": "Demo: the Teacher persona leads one class"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261118173549-1ce254"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:61",
+            "note": "Issues pipeline #469/#470 (link step, built twice, one to choose) and studio #82 (source list made in the Studio before the PDF). #82 built and tested locally in pipeline and Studio. All waits for a go to propose.",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119072238-8eb4bf"
+}

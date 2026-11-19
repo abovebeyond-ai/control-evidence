@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The news post template was a title, a grey summary and a boxed cover image. The first real post, the write-up of the KUBO CyberSec Capture the Flag, has a group photo, three quotes from participants and fourteen more photos, and that template had no good place for any of them.\n\n## What changes\n\nAll in `src/pages/news/[slug].astro`, plus one field in the Studio schema copy.\n\n- **Cover as a full-width hero.** A post with a cover image shows it across the page with the date and title on its dark lower edge. On a phone the photo keeps its shape and the title sits under it. A post without a cover keeps the old header.\n- **The summary moves into the article**, as its first paragraph, in ink instead of grey.\n- **Quotes as pull quotes.** Light italic in the site's own typeface, with real quote marks, no box and no rule. A paragraph that directly follows a quote is shown small and grey with a dash: the credit line.\n- **Links to GitHub as a small dark button** with the GitHub mark, so a link to code stands out from the text links.\n- **A photo gallery under the article.** A new optional `gallery` field on the post. Photos are laid out in three columns (two on a phone), each in its own shape, so upright photos are not cut. A click opens the photo large in a `<dialog>`, with previous and next and the arrow keys. Without JavaScript the link opens the photo itself.\n\n## To know before merging\n\n- **Every news post gets this.** In particular, any normal paragraph placed right after a quote becomes a credit line, and any link to github.com in a post body becomes a button.\n- **The Studio needs the field too.** `sanity/post.js` here is the copy; the `gallery` field has to be added to the Studio's own schema before photos can be uploaded.\n- **Not yet run against a real post.** The site has no posts, so the template was checked through a local preview page with the same markup and local images. The Sanity side of the gallery (image URLs, and reading width and height from the asset reference) runs for the first time with the first post.\n\n## Checked\n\n- `npm test`: 25 passed.\n- `npm run build` and `npm run check:built`: 83 text files, no contact number.\n- Preview at 1440, 1100 and 390 wide: no horizontal scroll; gallery opens, steps with the arrow keys and closes with Escape; no page errors.\n",
+            "branch": "workbench/news-post-hero-quotes-gallery",
+            "title": "News post: full-width cover, pull quotes, GitHub buttons and a photo gallery"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261118204409-8a45da"
+}

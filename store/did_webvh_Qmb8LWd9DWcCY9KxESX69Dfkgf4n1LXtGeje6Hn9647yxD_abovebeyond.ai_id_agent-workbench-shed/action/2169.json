@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Issues: site #304 (sign-in failed 16 Nov), standard #25 (Belgium: only Benelux today), site #305 (generation, age, industry: yes). Nothing built. Should Belgium/Flanders become a region of its own? May I dig into the sign-in failure (needs the box logs)?",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119073329-507fd3"
+}

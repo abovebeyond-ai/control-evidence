@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Issues: standard #25 (Belgium: only Benelux today), site #305 (generation, age, industry: yes). Site #304 (sign-in) can be closed: the owner knows the cause, the cookie was gone. Nothing built. Open: should Belgium/Flanders become a region of its own?",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119073509-991b40"
+}

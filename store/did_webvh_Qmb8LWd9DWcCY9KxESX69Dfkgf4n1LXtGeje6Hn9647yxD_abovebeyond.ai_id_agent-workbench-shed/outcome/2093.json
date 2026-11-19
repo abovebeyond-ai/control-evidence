@@ -1,0 +1,16 @@
+{
+    "action": "ab62df887729327deb2907eed5b4de62",
+    "effect": {
+        "detail": {
+            "base": "e1a27fc8ceafeb0d5083f9cac413d57396a16a80",
+            "branch": "workbench/demo-teacher-one-class",
+            "commit": "7d7106b1b49d8ce4ca859a8837c668013e6dc865",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2091,
+    "verdict": "ALLOW"
+}

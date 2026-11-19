@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9518be96be8f566a990602087eed7c709c652515",
+            "branch": "workbench/retell-v3-web-call",
+            "files_sha256": "ec734ad079bcd6bb1d712500f643bcce52f067c22c678138c0336a8627eb890a",
+            "message": "Move web calls to Retell v3 and ship the export functions as ES modules\n\nRetell removed POST /v2/create-web-call, so every call started from the\nstudio preview or from a published site failed at connect.\n\n- create-call (export function) and RetellClient::createWebCall post to\n  /v3/create-web-call with the same body.\n- The v3 response adds transport and ice_servers; the export function\n  returns the response whole and ParticipantController::createCall now\n  returns both fields too.\n- CallPanel passes callId, accessToken, transport and iceServers to\n  startCall. retell-client-js-sdk goes from ^2.0.8 to ^3.0.4.\n- The export functions are ES modules and carry their own package.json\n  with \"type\": \"module\".\n- RetellClient is bound from config in the container, so the preview\n  call route no longer builds it without an API key.\n\nget-call stays on /v2/get-call, which Retell's deprecation notice does\nnot list."
+        },
+        "resource": "ShaneDeconinck/dare-to-call-studio"
+    },
+    "run": "workbench-20261118134604-d2765a"
+}

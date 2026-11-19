@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P1\nSummary: The designed report PDFs still send the reader straight to other sites from their source lists. The links in the file a reader downloads should go to the source's page on gentells.com instead. The reports go to a larger group on 20 November.\n\nSource: Portal mail:61.\n\n## What is asked\n\nThe designed reports (the mail names The New Status System, Going Out, Staying In and Growing Up in Public, with new covers) still show sources outside Gentells. The question is how that gets solved, and whether work on it was already under way.\n\n## Where it stands\n\nMost of it is in place since 12 November:\n\n- The sources of a report are held in Gentells by their place in the source list (`report_sources`, #448). Read on 19 November: The New Status System 17 of 17 held, Going Out, Staying In 12 of 12 held.\n- Every held source has its own page on gentells.com (`/sources/{key}`, #450 and site #295).\n- The Studio checks a report's source list against Gentells on upload (#446, studio #79).\n\nWhat is missing is the last step: the PDF itself. Its link annotations still point at the publisher, and where a list prints a bare domain without a link there is nothing to follow at all.\n\n## What to build\n\n- When the site fetches a report's file, it gets a copy in which every link to a held source points at that source's page on gentells.com. The designer's file on the shelf stays as uploaded, so the source check keeps reading what was printed.\n- An entry printed without a link (Going Out, Staying In prints bare domains) gets a link over its text.\n- The fingerprint the site compares covers the linked copy, so a change in the held sources reaches the site without a new upload.\n- A link that matches more than one held source and cannot be told apart is left alone and reported, never guessed.\n- A dry run per report that lists what would be rewritten, added and left.\n\n## Not covered by this\n\n- The printed text of a source list still names the publisher's address. Changing what is printed is the designer's file.\n- Growing Up in Public is not on the reports shelf, so its sources are not held yet. The transfer link in the mail no longer resolves, so the new files were not read.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P1"
+            ],
+            "title": "Links in a report's PDF go to the source's page on gentells.com"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119070510-b9c750"
+}

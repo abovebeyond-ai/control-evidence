@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Part of Trendwolves/gentells-studio#82 (the Studio screen closes it; merge this first).\n\n## Why\n\nA report is written and designed outside the Studio. Its sources arrived as whatever was pasted from the web, and Gentells first saw them printed in the uploaded PDF, often as a bare home page. Holding them was a run on the server from a plan someone else prepared, so every report came back with the same repair.\n\n## What changes\n\n`packages/core/report-source-list.mjs`, with five routes for the Studio:\n\n- `POST /reports/:slug/source-list/check {text}`: each pasted line against Gentells, nothing written. A line is in Gentells already, new (the page is read once, so its title, publisher and date show), unreadable (it can still be held once it is named), a home page only (refused), a source read for inspiration only (refused), twice in the paste, or without an address.\n- `POST /reports/:slug/source-list {entries}`: holds them under the report, numbered after what it has, through `citeReports`, the road a plan takes: one signal per page, a held page reused, new publishers to the review queue. A home page, a page already in the list and an entry without a publisher are refused with the reason.\n- `GET /reports/:slug/source-list`: the list as held, and as numbered text for the design: publisher, date, title and the address on gentells.com. A source that became inspiration only is named apart and left out of the text.\n- `DELETE /reports/:slug/source-list/:n`: takes one off; the later ones move up, so the numbers have no gaps. The signal goes with it only when this report made it and nothing else cites it.\n- `GET /reports/source-search?q=`: what Gentells holds, by publisher, title or address, every word; pages an author cited before come first; never an inspiration source.\n\nA report needs its row first (Studio, Reports), not its file.\n\n## Checked\n\n- `test/report-source-list.test.mjs`: 9 tests.\n- Full suite 1714 of 1714, `tsc` clean.\n\n## To know\n\n- The search is a `LIKE` over the signals table, not the full-text index, because it has to match publisher and address as well as text. Not measured on the box's table; if it is slow there, it gets an index of its own.\n- The check reads each new page once and holding reads it again. Two reads per new source, on purpose: the check writes nothing.\n",
+            "branch": "workbench/report-source-list",
+            "title": "A report's source list is made in Gentells before the PDF is"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119072457-43a804"
+}

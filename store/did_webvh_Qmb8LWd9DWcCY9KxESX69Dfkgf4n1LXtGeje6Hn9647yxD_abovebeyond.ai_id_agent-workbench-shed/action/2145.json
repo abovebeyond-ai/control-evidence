@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9b6ffc9f23f1b0b4d58b5dba33347f9d09797c73",
+            "branch": "workbench/report-link-stamping",
+            "files_sha256": "b080b2d314d9b61a8ebbcf2316d4055887023805c0ee50ba28eac2ad23d0acc5",
+            "message": "Reports: source links go through Gentells in the file that goes out\n\nA designed report links its sources straight to the publisher, or prints an\naddress with no link. The file on the shelf is now stamped from the designers'\ncopy: a link to a held source, and a held source's printed address on the\nsource pages, lead to that source's page on gentells.com. Nothing else in the\nfile changes, and the designers' file is kept as it came.\n\nStamped on upload, after bin/cite-report-sources.mjs holds or takes off a\nreport's sources, and by bin/stamp-reports.mjs for the reports already on the\nshelf. Links that still leave for another site are named, never guessed.\n\nAdds pdf-lib to write the link annotations.\n\nPortal: Links in the report PDFs now lead to the source's page on gentells.com instead of straight to the publisher."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119072743-93f602"
+}
