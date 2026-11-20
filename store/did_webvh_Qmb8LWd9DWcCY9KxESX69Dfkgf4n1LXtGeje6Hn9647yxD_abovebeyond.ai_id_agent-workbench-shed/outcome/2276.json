@@ -1,0 +1,16 @@
+{
+    "action": "1e8b52e0afbe48c46ed67a030fb50568",
+    "effect": {
+        "detail": {
+            "base": "c89cd268f6da3633b3976aae161af445781198e4",
+            "branch": "workbench/news-overview-nl-fr",
+            "commit": "e501a2183c445c047c3da43609870fabc694da84",
+            "files": 19,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2274,
+    "verdict": "ALLOW"
+}

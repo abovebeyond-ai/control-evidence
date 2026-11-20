@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2a3e9f36a9082003d7c82b0b5f9c69591b45d041",
+            "branch": "workbench/trial-waves",
+            "files_sha256": "8117dbe56aff6e6868d82f0a8a2f9fd8671b1a732d533fe4e58ffe8230a14d66",
+            "message": "Trials start by themselves, a wave a day\n\nA proposed source waited for a person to start its trial, and hundreds\nwaited. The Standard sends a proposed source to trial unless its terms\nrefuse it or it duplicates one we hold, and a trial is read off the\nrecord: the decision is the admission, which stays with a person. The\nengine now starts twenty a day, the most important first and feeds\nbefore pages, and stops while 150 trials are running. The desk read and\nthe morning mail say so instead of asking the desk to do it.\n\nPortal: Bronnen die op een proef wachten starten voortaan vanzelf, twintig per dag. Toelaten blijft een beslissing van de redactie."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119154252-325a08"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0ee3a005080a24affc8dc3838c55b1f97596c738",
+            "branch": "workbench/coverage",
+            "files_sha256": "a0a97bc42948c3edabb0570daa9b426894f589c3239990c603a9193e9ce237ff",
+            "message": "A Coverage page: per country, which sources, how each is read, whose move is next\n\nThe Mix stops at Benelux and the Sources page shows sources one by one, so\nnobody at the desk could say what a country rests on. The page opens on the\ntable per country; a country shows its sources with how each is read, what\nit brought, and for every source that is not simply running whether the\nnext step is the desk's, a decision or development, and what cannot be read\nthere and why. Reads GET /coverage from the pipeline.\n\nPortal: Het Observatory heeft een pagina Coverage: per land welke bronnen er zijn en wie de volgende stap zet."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261119095302-04ba08"
+}

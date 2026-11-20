@@ -1,0 +1,16 @@
+{
+    "action": "023d78e9198edd3958b10714a3c8ab92",
+    "effect": {
+        "detail": {
+            "base": "952a98b32ab40e2012eb5e1e4b9a900b6c0b3223",
+            "branch": "workbench/demo-door-polish",
+            "commit": "53ff4c9f2862c4cf91352595fc22457fd5232f7e",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2409,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c89cd268f6da3633b3976aae161af445781198e4",
+            "branch": "workbench/news-overview-nl-fr",
+            "files_sha256": "bae2e97a2f38bd4dac522874632f7764723b90fa4351dd0ab40a554de95b4ded",
+            "message": "News in Dutch and French: the overview and the posts, with the English text where a post has no translation"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119092015-e5da9a"
+}

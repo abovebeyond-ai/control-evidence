@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The booklet's box \"Beyond the school day\" (page 10) said schools open their labs after hours \"through evening classes, partner programs and more\". No evening classes run at the moment. What exists is a community that has held its first event, and the website's communities page was rewritten to say so. This brings the booklet source in line.\n\n## Change\n\nIn `print-src/booklet-a5-en.html` and `print-src/booklet-en.html` the box now reads:\n\n> A KUBO lab can serve more than its own students. Around it, communities bring ambitious students and professionals together to learn and practise with their peers. The first, KUBO CyberSec Community The Gambia, held its first Capture the Flag in November 2026. More at kubo.global/communities.\n\n## Not in this change: the PDFs\n\n`KUBO_Booklet_A5_EN.pdf`, `KUBO_Booklet_A5_EN_PRINT.pdf` and `KUBO_Booklet_EN.pdf` still carry the old text. They were built on a Mac (headless Chrome, then Ghostscript to outline the fonts, the print version cropped to 3 mm bleed), and that build step is not in the repository. A render on Linux breaks lines differently and spaces letters unevenly, so it was not used to replace files that passed the printer's preflight. The PDFs need a rebuild with the original steps before the next print run.\n\n## Checked\n\n- Both sources render to 16 pages. The new text takes four lines in the A5 box, as the old text did, and the page does not overflow.\n- The site build is not affected: `print-src/` is not part of it.\n",
+            "branch": "workbench/booklet-communities",
+            "title": "Booklet source: the box on life beyond the school day describes the community that exists"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119151549-8b32e1"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5dea11c9534f20349e7925be5a3874b8182eaf2a",
+            "branch": "workbench/desk-mail-recipients",
+            "files_sha256": "75ef4aa0547e8640e27be73b72fd531f459f1facf7972ad09b83f46e0cdeb2b1",
+            "message": "Accounts: switch the morning mail on per person on the team\n\nA team member's row menu sends or stops the desk's morning mail, and the\nrow says who gets it. Not offered for an invitation that was not accepted.\n\nPortal: Op de Accounts-pagina zet je per teamlid de ochtendmail aan of uit."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261119143343-ca8f36"
+}

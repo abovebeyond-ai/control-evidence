@@ -1,0 +1,16 @@
+{
+    "action": "f40e6d0fbebc93bfa47c95d3f3480ae9",
+    "effect": {
+        "detail": {
+            "base": "702e7bba87a8659dc9473b41ad3e187820a82610",
+            "branch": "workbench/countries-under-benelux",
+            "commit": "a8ef50a24f9e998089aaf69d7d8a837f875d6bf7",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2259,
+    "verdict": "ALLOW"
+}

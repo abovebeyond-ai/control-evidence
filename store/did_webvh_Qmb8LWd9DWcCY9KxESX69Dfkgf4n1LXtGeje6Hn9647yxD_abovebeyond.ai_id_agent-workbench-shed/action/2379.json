@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The line at the bottom of every page read \"A project of Afrodidact, with innovation hub\", followed by the Afrodidact logo and then The Swallow's logo. The words \"innovation hub\" therefore stood directly in front of the Afrodidact logo, while the innovation hub is The Swallow.\n\n## Change\n\n- The line is now built from two pairs: \"A project of\" with the Afrodidact logo, then \"with innovation hub\" with The Swallow's logo. The name Afrodidact is no longer written out beside its own logo.\n- Each pair stays together when the line wraps. On a narrow screen The Swallow's logo used to drop to a line of its own; now \"with innovation hub\" drops with it.\n- Same in Dutch (\"Een project van\", \"met innovatiehub\") and French (\"Un projet d'\", \"avec le laboratoire d'innovation\").\n\n## Checked\n\n- `npm test`: 29 passed. `npm run build` and `npm run check:built`: no contact number.\n- Footer in en and nl at 1440 wide, fr at 1000, nl at 390: both logos load, each sits behind its own words, nothing overflows.\n",
+            "branch": "workbench/footer-partner-order",
+            "title": "Footer: each partner's logo follows its own words"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119142423-43dcd1"
+}

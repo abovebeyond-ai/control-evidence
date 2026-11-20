@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "952a98b32ab40e2012eb5e1e4b9a900b6c0b3223",
+            "branch": "workbench/demo-door-polish",
+            "files_sha256": "0ecb6b014e67f7c28f36002f7406b5b3538f90654392afbb72fe90d87235f433",
+            "message": "Demo front door: one accent, sentence case, screens shown zoomed out"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261119143456-cf7dc7"
+}

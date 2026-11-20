@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #25\n\n## Why\n\nA prospect asked whether youth trends can be read for Flanders or for Belgium. They cannot: the finest region that holds Belgium is Benelux, and the country code `be` is one of its spellings. An engine that is handed the regions and asked for the most specific one for a Belgian signal has no narrower answer to give, so a Belgian and a Dutch signal are stored alike. The country is not lost on the way; it is never asked for.\n\n## What\n\nStandard 0.19.0, added only:\n\n- `region-belgium`, `region-netherlands` and `region-luxembourg`, each `broader: region-benelux`. A reading tagged with one still counts for Benelux and for Europe, as every nested region does.\n- The spellings move with them: `be`, `nl` and `lu` match the country, and each country carries its own names (Belgi\u00eb, Belgique, Nederland, Holland, Luxemburg).\n- Flanders, Wallonia and Brussels are spellings of Belgium, not regions.\n\n## Choices\n\n- **No Flemish region yet.** Whether a Belgian signal is Dutch- or French-language is its language. Belgium with a language gives a Flemish and a French-speaking reading without a third level. A later release adds the regions when the counts say Belgium alone is too coarse.\n- **All three countries, not Belgium alone.** With only Belgium under Benelux, \"Benelux\" would come to mean \"the Netherlands, probably\", and a Dutch signal could not be told from one about the three together.\n- **Nothing is re-tagged.** What was tagged Benelux stays Benelux and is found under it together with the new tags.\n\n## Changed in practice\n\nAn engine that reads the regions from the Standard starts tagging the three countries where a signal shows one, and Benelux only for what is about the three together. A count per region that does not roll a child up into its parent will show Benelux shrink as the countries appear.\n\nHow well a model tells a Belgian from a Dutch signal in Dutch-language text without a place name is not measured here; a sample after the pipeline takes this version should say.\n\n## Checked\n\n- `npm run check`: standard ok. `npm run export`: exports regenerated.\n- `npm test`: 103/103, including the region spellings (the three codes now answer the countries, ten spellings added) and compatibility with every earlier release.\n\n## After merge\n\nTag `v0.19.0`, then take it into the pipeline with `bin/sync-standard.mjs` (a pull request there). Only signals classified after that carry a country.\n",
+            "branch": "workbench/belgium",
+            "title": "Belgium, the Netherlands and Luxembourg are regions under Benelux (0.19.0)"
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261119085059-867766"
+}

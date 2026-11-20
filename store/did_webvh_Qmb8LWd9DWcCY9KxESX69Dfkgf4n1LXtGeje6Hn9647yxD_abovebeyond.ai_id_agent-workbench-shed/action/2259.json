@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "702e7bba87a8659dc9473b41ad3e187820a82610",
+            "branch": "workbench/countries-under-benelux",
+            "files_sha256": "5b3e9ff1ad3b55702ef8172d95ad62ef28f433d1f3f8bb27830f06eb1856cc77",
+            "message": "Take Gentells Standard 0.19.0 and read the region tree at any depth\n\nThe tagging gate holds every post and trend whose tags the pinned Standard\ndoes not know. The pipeline is about to tag Belgium, the Netherlands and\nLuxembourg (Standard 0.19.0), and the site was on 0.17.0: each of those\nwould have come off the site. The pinned copy moves to v0.19.0.\n\nThe countries hang under Benelux, not directly under Europe, so the region\ntree is read at any depth: a Belgian card says Belgium, Belgium with the\nNetherlands says Benelux. The cold-start snapshot is regenerated.\n\nPortal: gentells.com kent Belgi\u00eb, Nederland en Luxemburg als regio, zodat trends met die tags zichtbaar blijven."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261119091834-42457c"
+}

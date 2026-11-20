@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A source whose page has moved is held under its new address only, so the report's file, which prints the address the writer gave, does not find it: the source check calls it \"page not yet held\" and its link is not led through Gentells.\n\nSource: Portal mail:61, the first upload of Growing Up in Public (18 sources held from the Studio).\n\n## What happens\n\n- Source 16 was pasted with the address the report prints. The site redirects that address to a shorter one; the signal is stored under the shorter one and the list keeps no record of the address given.\n- The uploaded file prints the long address. The check on the file reports 17 in Gentells and this one as \"publisher known, page not yet held\", and the link step has nothing to match it on.\n- Pasting the same address again would hold the page a second time under a new number.\n- A source added or taken off after the file is uploaded does not remake the copy that goes out; that needs a second upload or a command on the server.\n\n## Expected\n\n- A held source keeps the address it was given beside the address of the page as it is now; both find it in a file.\n- An address that turns out to be a page the list already holds is not held twice; the row that is there learns the address.\n- Adding or taking off a source remakes the outgoing copy of a report that has its file.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Report source list: a source whose page moved is not found in the report's file"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119160245-19ceb7"
+}

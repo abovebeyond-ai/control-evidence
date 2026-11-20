@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3ff5e51a3866b401fb3b58aa6f234296c6ca477c",
+            "branch": "workbench/kolibri-delegated-session",
+            "files_sha256": "aa184624f562e8ee44c10d26ae0163b1eec2209d1d5ffaf0581de2523c1261b5",
+            "message": "Test the delegated Kolibri session and its fallback"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261119103432-3406e6"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:61",
+            "note": "Merged: pipeline #471, #472, studio #83. Five reports stamped on the box. Proposed: pipeline #475 (closes #474: report 1 found only 1 of 9 sources). Waits for merge, then restamp report 1.",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/475"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119081032-8a63d1"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f4af16d7dc32d0432e9490121813b3a8bebc78de",
+            "branch": "workbench/footer-partner-order",
+            "files_sha256": "3742d281ef5d77821802c40efd32a234649b89efbe7b19c7930a712247ee7262",
+            "message": "Footer: each partner's logo follows its own words"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119142423-43dcd1"
+}

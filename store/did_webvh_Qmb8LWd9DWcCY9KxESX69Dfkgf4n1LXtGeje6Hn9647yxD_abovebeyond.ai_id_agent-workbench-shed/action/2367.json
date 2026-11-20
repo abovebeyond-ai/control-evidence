@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fb91f5cf605f2889288ab5c40d5e18ae4d3251aa",
+            "branch": "workbench/ask-guide",
+            "files_sha256": "621f43fc01c3ee540c96db4171e0ea4fb4a8ab444b25ac93641a3b87ba98fe1a",
+            "message": "Ask knows the tool it sits in, and writes down what it cannot answer\n\nQuestions about what Gentells can do, how the Observatory works and who\ndoes what went to whoever built it. Ask now answers them from a guide\nwhose vocabulary is read from the pinned Standard, and writes a question\nthe guide does not cover down for development on the person's yes. An\nadmin answers it once, through Ask, and the person hears the answer the\nnext time they open a conversation.\n\nPortal: Ask beantwoordt vragen over wat Gentells kan en hoe het werkt, en noteert wat het niet weet voor ontwikkeling in plaats van dat er een mail moet vertrekken."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119141647-873044"
+}

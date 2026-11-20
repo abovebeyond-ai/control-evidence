@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #84\n\n## Why\n\nReports could edit a row but not add one: the year came from a seeder, and the empty state still pointed at a script that is gone. A report nobody had planned (Growing Up in Public) had no row, so its sources could not be held and its file could not be uploaded.\n\n## What changes\n\nUnder the year: **Add a report**, a title and a code, and \"Add to the year\".\n\n- The address comes from the title (`Growing Up in Public` gives `growing-up-in-public`), accents folded.\n- The report goes last in the year, says \"coming soon\", and its row opens at once so the sources can be added.\n- A title already in the year is refused, with the reason.\n- The line under it says that the report shows on gentells.com at once, and at which address.\n\nNo server change: `POST /reports` already creates a row for a new slug.\n\n## Checked\n\n- `src/report-slug.test.js`: 3 tests. Suite 81 of 81, build clean.\n- Driven in a headless browser against mocked answers: a title that exists is refused; a new one posts `{slug, title, code, status: \"coming soon\", position}` and its row opens on the source list. No page errors.\n",
+            "branch": "workbench/add-report",
+            "title": "Reports: add a report to the year from the Studio"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119081651-cb8d4a"
+}

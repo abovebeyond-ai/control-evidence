@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #90\n\nNeeds Trendwolves/gentells-pipeline#490 for the pasted address to be kept; without it the extra field is ignored and nothing else changes.\n\n## What changes\n\n`src/report-sources.js`:\n\n- `entriesOf` sends `given` with a line when the check returned one: the address as pasted, for a page that answers from another address.\n- `heldLine` adds the reason when exactly one source was not taken. \"0 sources added, one was not taken.\" said nothing about why.\n\n## Checked\n\n`src/report-sources.test.js`: one new test and one more case. Suite 84 of 84, build clean.\n",
+            "branch": "workbench/report-source-given-address",
+            "title": "Report source list: a moved page keeps the address it was pasted with, and one refusal says why"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119162525-341e70"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Merged: standard #26, pipeline #477 and #478, site #306 (audit clean). Proposed: dashboard #143 (Coverage page). Parked on purpose: Belgian source list (#473). Open: the reply to the sender, a sample of Belgian tags after a day.",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-dashboard/pull/143"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119095332-8b4508"
+}

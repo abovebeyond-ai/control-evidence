@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Built locally, nothing proposed: Standard 0.19.0 with Belgium, Netherlands, Luxembourg under Benelux (std-belgium, #25), coverage read + page (#476), Belgian source list (#473). Waits for a go per pull request, and the reply to the sender.",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119084901-c49542"
+}

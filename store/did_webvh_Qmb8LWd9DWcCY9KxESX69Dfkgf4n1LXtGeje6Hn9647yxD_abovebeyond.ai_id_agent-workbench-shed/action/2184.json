@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: What Gentells reads from Belgium rests on one broadcaster and holds no French-language source, so a Belgian or Flemish reading has too little under it. More Belgian sources are needed, in both languages and closer to young people.\n\nSource: Portal mail:62. Follows from the question in Trendwolves/gentells-standard#25.\n\n## What is thin\n\nCounted on 19 November 2026 from the Observatory's intake mix per source, over 90 days, by where the source is at home:\n\n| | In | Kept | Cited |\n|---|---|---|---|\n| Belgian sources | 9,174 | 1,351 | 47 |\n| Share of all intake | 3.2% | 2.6% | 1.4% |\n\n- VRT NWS brings 6,957 of the 9,174 (76%). Knack brings 1,575, FashionUnited BE 484, the Belgian charts (Shazam, App Store, Apple Music) 143 together.\n- Every Belgian source is Dutch-language. French-speaking Belgium is not read at all.\n- The Belgian sources are general news and trade press. Music, culture, gaming and lifestyle titles that young people in Belgium read are missing.\n- The source lists of 20 October, 9 November and 15 November hold 103 Belgian rows, mostly organisations, surveys and trade press; three are French-language, all trade press.\n\n## What is asked\n\n1. A source list of Belgian titles with a live feed that the earlier lists do not hold: Flemish news, music, culture, gaming and lifestyle, and the French-language counterparts (public broadcaster, dailies, weeklies, culture and youth media). They come in as proposals, like every list.\n2. A trial for them, started by a person, and a look at the scorecard after two weeks: which earn their place.\n3. Left for later, named so it is not lost: Belgian titles without a feed (student papers, youth newsrooms), which need a page reader or a newsletter inbox, and observed Belgian signals from platforms, which press cannot replace.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Read more Belgian sources: Flemish youth and culture titles, and French-language Belgium"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119075010-a9df36"
+}

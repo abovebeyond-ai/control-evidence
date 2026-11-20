@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe desk's morning mail went to an address list in the `.env`. Nobody at the desk can see or change that list, and it does not follow the team: someone who leaves keeps getting the mail until somebody edits a file on the server.\n\n## What\n\n- `users.desk_mail`, off by default. `PATCH /auth/users/:id` with `{deskMail: true|false}` sets it; admin only. It is the one thing an admin may also set on their own account, since it locks nobody out. A role in the same request on yourself is still refused.\n- `deskMailRecipients()`: people on the team with the setting on, not removed, whose account was not deleted and who accepted their invitation.\n- `runDeskMail` reads its recipients there. `DESK_EMAILS` is gone. With nobody switched on it skips with \"nobody gets the morning mail\".\n- `GET /auth/users` carries `desk_mail`, for the Accounts page.\n\nThe mailer's key and the sender address stay in the environment: they are secrets of the server, not settings of the desk.\n\n## Checked\n\n- `test/team-management.test.mjs`: nobody until switched on; a non-admin is refused; an admin on themselves; refused for someone removed; leaving the team and an open invitation stop the mail; switching off.\n- `test/desk-open.test.mjs`: the mail's own cases run against the setting.\n- Full suite 1770/1770, `tsc` clean. No real mail was sent.\n\n## After merge\n\nThe column is added at start. The control is in the dashboard pull request of the same name; until someone is switched on there, no mail goes out.\n",
+            "branch": "workbench/desk-mail-recipients",
+            "title": "Who gets the morning mail is set per account, not in the environment"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119143318-dfae26"
+}

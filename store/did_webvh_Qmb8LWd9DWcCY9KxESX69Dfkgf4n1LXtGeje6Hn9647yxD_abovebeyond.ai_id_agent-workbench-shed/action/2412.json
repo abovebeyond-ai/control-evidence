@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Follow-up to #41. On the live demo the front door asked for attention in too many places at once: a yellow word in the headline, a bright results sheet, coloured name cards, two buttons, bold role links, and column heads in capitals next to sentence-case copy.\n\n## What changes\n\n- **One accent.** Yellow is kept for the one call to action, \"Open as headmaster\". The headline is white, the second button has a thinner outline, and the role links and footer are muted.\n- **Sentence case throughout.** The sheet's column heads read \"No.\", \"Name\", \"Total\", \"Average\", \"Position\", and the other roles follow the button as one sentence: \"or as teacher, caregiver, assistant coordinator, administrator\".\n- **Less copy.** The two door subtitles are gone; the screens already show what they said.\n- **Screens shown zoomed out.** Each card draws its screen at full size and shows it zoomed out, so it stays sharp while more of the page fits in a smaller card: title, name, total, average, position and the first subject columns for the first pupils, and the first names of the sign-in list. Both are toned down so they read as pictures of what is behind the buttons.\n- **Two cards of equal height** that fill the width together, with more room between them and under the headline.\n\nThe results sheet still takes its rows from the Results page's own action. Its styling on the picker now differs from that page (no capitals, no zebra rows); the figures do not.\n\n## Checked\n\n- Rendered on a locally seeded demo database at desktop and phone width: no horizontal scroll.\n- `DemoModeTest` updated for the lower-case role links. Full suite: 540 tests pass, 2 skipped.\n",
+            "branch": "workbench/demo-door-polish",
+            "title": "Demo front door: one accent, sentence case, screens shown zoomed out"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261119143456-cf7dc7"
+}

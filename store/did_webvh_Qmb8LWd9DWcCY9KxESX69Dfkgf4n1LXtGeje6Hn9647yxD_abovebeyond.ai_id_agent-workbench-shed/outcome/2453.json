@@ -1,0 +1,16 @@
+{
+    "action": "a429b2b7d2717477565500f6861198c2",
+    "effect": {
+        "detail": {
+            "base": "0595f3a20c8206ac85d9b8d7b3dbf5a5bd197adf",
+            "branch": "workbench/ask-names-and-trial-end",
+            "commit": "e6a6f0307049b9ac6e5a11c53c74e6526ef97e18",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2451,
+    "verdict": "ALLOW"
+}

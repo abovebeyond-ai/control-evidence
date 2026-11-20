@@ -1,0 +1,16 @@
+{
+    "action": "a4af1b08ce4c4f211f1ce7339c0c36f0",
+    "effect": {
+        "detail": {
+            "base": "2a3e9f36a9082003d7c82b0b5f9c69591b45d041",
+            "branch": "workbench/trial-waves",
+            "commit": "2001a49e3502040ad1398d49ef01b204de33f535",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2430,
+    "verdict": "ALLOW"
+}

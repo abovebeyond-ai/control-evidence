@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Tests for kubo-global/kubo-kolibri#8, which lets the bridge ask Kolibri for a learner's session as the admin instead of signing in with a derived learner password. The package's tests live in this app, so they come as their own pull request.\n\nMerge kubo-global/kubo-kolibri#8 first: until it is on that repository's main, these tests call a method that does not exist yet and CI here stays red.\n\n## Covered\n\n- The client posts the learner's id to `/delegated-session/api/session/` with the admin's CSRF token and returns the two cookie values.\n- The client returns null when the plugin is absent (404), refuses (403) or answers without a session.\n- With `kubo-kolibri.delegated_session` on, the bridge uses the delegated session and never asks for a password.\n- When Kolibri does not answer, the bridge falls back to the derived password.\n- With the flag off, the bridge does not call the plugin at all.\n\nNo application code changes. Run against the package branch: 534 tests pass, 2 skipped.\n",
+            "branch": "workbench/kolibri-delegated-session",
+            "title": "Test the delegated Kolibri session and its fallback"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261119103432-3406e6"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "25802874f3d5aa062d13e05ab7c3e5a27b233687",
+            "branch": "workbench/print-build",
+            "files_sha256": "8f6b8095c0d3b0e5ca48fd4a6a69c8a2e6e911cf48d79b0e178239471a0bc0a1",
+            "message": "Print: a script that builds the print PDFs from print-src"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119152418-7c0513"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The print PDFs in the repository root (booklet, mold inserts, price lists, letter) are built from the HTML in `print-src/`, but the steps that build them were never committed. A text change in the booklet source could therefore not be followed by a rebuild. This adds those steps as one script.\n\n## `scripts/build-print.sh`\n\n- Chrome prints each HTML file to PDF at the page size its `@page` rule sets.\n- Ghostscript turns all text into outlines (`-dNoOutputFonts`), so a printer's preflight finds no fonts.\n- The A5 sources are drawn at 160 x 222 mm. From that one render come two files: `NAME.pdf` cut to plain A5 and `NAME_PRINT.pdf` cut to A5 plus 3 mm bleed, with the trim box marking the A5 inside.\n- `scripts/build-print.sh booklet` builds only the sources with \"booklet\" in their name; `OUT=/some/dir` writes elsewhere, to try a build without touching the repository.\n- Meant for a Mac with Google Chrome and Ghostscript. Chrome on Linux lays the same HTML out with other line breaks and uneven letter spacing.\n\n## Checked\n\nRun on Linux into a separate folder and compared with the eleven PDFs in the repository:\n\n- Same page counts; page sizes equal to within 0.01 pt.\n- The `_PRINT` files carry the same trim box, on every page.\n- No fonts in any file.\n- File sizes within about 10 percent, so images are not downsampled.\n- The price list's print page lines up with the current one.\n\nNot checked: the rendering of the type, which only a Mac run shows. No PDF in the repository is changed by this pull request.\n",
+            "branch": "workbench/print-build",
+            "title": "Print: a script that builds the print PDFs from print-src"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119152418-7c0513"
+}

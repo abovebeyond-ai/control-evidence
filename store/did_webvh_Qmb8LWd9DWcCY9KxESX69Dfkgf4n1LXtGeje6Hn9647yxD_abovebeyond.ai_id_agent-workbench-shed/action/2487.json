@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dab70f11e2ba49732d302607e5459c419c9c31f6",
+            "branch": "workbench/report-check-printed-address",
+            "files_sha256": "9483d2bf47b47485c1daaed8905baf011a5a9bf65cc2d4aa6ea2192ecf7e02cf",
+            "message": "cite-statistics test: find the figure by its id, not by its place in the list\n\nTwo figures in the test share a passage and the list is newest first, so the\nfirst one was the cited figure only when both were made within the same second."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119163039-b0a40b"
+}

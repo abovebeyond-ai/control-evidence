@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #88\n\n## What changes\n\nCurate, Reports:\n\n- A report opens on a page of its own instead of unfolding inside the list. At the top its code, title and state, and \"All reports\" to go back; below it, in this order: what gentells.com shows, the file, the source list, the sources in the file.\n- The open report is in the address (`&report=<slug>`). A reload stays on it, a link lands on it, and the browser's back returns to the year.\n- A report added with \"Add to the year\" opens on its page, as it opened in the list before.\n- The upload button takes the accent colour like the other buttons in the view.\n\nNothing changes in what is saved or sent; `ReportEditor` and the source panels are the same components.\n\n## Checked\n\n- `src/report-place.test.js`: the address helper. Suite 85 of 85, build clean.\n- Driven in a headless browser: open a report, reload, browser back, \"All reports\". No page errors.\n",
+            "branch": "workbench/report-own-page",
+            "title": "Reports: a report opens on a page of its own"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119161438-66346e"
+}

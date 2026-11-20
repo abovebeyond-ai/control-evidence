@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Issues: pipeline #476 (coverage read, comes first), #473 (Belgian sources, list built locally, not proposed), standard #25, site #305. Nothing proposed. Open: a go to build #476, and the reply to the sender.",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119081443-3b69c8"
+}

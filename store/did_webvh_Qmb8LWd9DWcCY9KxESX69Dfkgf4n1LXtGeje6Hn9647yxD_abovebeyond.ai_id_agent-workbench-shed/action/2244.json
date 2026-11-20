@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "63536a562d351760c35b9b0a96671bacf8cd1689",
+            "branch": "workbench/coverage",
+            "files_sha256": "b61e069b642f52a03cf1dde93759fcd66c2d7738797e3efc5ec5466e03020bbf",
+            "message": "A coverage read: sources per country, how each is read, what it brings, what is closed\n\nNobody at the desk could see what Gentells covers for a country: the finest\nregion is Benelux, and the state of a source, how it is read and what it\nbrings sat in three places. coverage() joins them and places every source\nin a country (set by a person, from its list, its name or its domain, or\nfrom the signal for a reader of several countries). Each source says whose\nmove its next step is: an editor, a decision, or development.\n\nAs a team tool beside the Observatory's other tools, and as GET /coverage.\n\nPortal: Het Observatory kan nu per land tonen welke bronnen er zijn, hoe ze gelezen worden en wat ze opleveren."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119085130-b3b982"
+}

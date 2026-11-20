@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P3\nSummary: The check of a report's file against Gentells looks a printed address up among the signals only. A source whose page moved is held under the new address, so the check keeps calling it \"publisher known, page not yet held\" even though the report's list holds it under the address it was given.\n\nSource: Portal mail:61. Follows #486, which made the list keep the given address and the link step use it; the check on the file was left reading signals only.\n\n## Expected\n\nAn address on a report's source pages that matches the given address of one of that report's held sources counts as in Gentells, with that source's signal. Another page of the same site does not.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P3"
+            ],
+            "title": "Report source check: a source held under the address it was given still reads as not held"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119161546-6afaa7"
+}

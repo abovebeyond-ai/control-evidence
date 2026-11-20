@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Three small things on the pages around the communities.\n\n## Dutch: \"community\"\n\n- The Dutch site said \"Gemeenschappen\" in the menu and footer and \"gemeenschap\" on the community pages, while the thing itself is called KUBO CyberSec **Community**. Dutch now says \"community\" and \"communities\" wherever a KUBO community is meant: menu, footer, homepage, the communities page and the CyberSec page.\n- Not changed: \"gemeenschap\" where it means the people around a school (communities page) and \"de ICT4D-gemeenschap\" (approach page). French keeps \"Communaut\u00e9s\".\n\n## CyberSec page: the link to the story of the day\n\n- It was a small yellow text link between the three figures and the explanation, easy to miss.\n- It is now an outlined button, placed after the facts of the day. The filled yellow button stays reserved for showing the number.\n\n## CyberSec page: the invitation to the next event\n\n- The block with the invitation, the organiser and the number button sat at the bottom of the left column, beside an empty corner under the photos.\n- It is now a band across both columns that closes the section: the words on the left, the person and the button on the right. On a narrow screen it stacks as before.\n- The order of the section reads: what the day was, the facts, the full story, then the next one.\n\n## Checked\n\n- `npm test`: 29 passed. `npm run build` and `npm run check:built`: no contact number.\n- CyberSec page in en, nl and fr at 1440 wide, Dutch also at 1000 and 390: no horizontal scroll, no page errors, and the number button still shows the number after a click.\n",
+            "branch": "workbench/nl-community",
+            "title": "Dutch \"community\", and a clearer end to the event section on the CyberSec page"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119095238-a3ceeb"
+}

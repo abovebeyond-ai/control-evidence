@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f21f5dc44f55c40d0fbeb6a3deb8e3c2d1d38f81",
+            "branch": "workbench/report-source-printed-address",
+            "files_sha256": "6a13d85b1599aee6bb5f49da824219e822c2546d57675661cc3d2d0533f25164",
+            "message": "Report source list: a held source keeps the address it was given, and the linked copy follows the list\n\nA page that moved was held under its new address only, so a report that prints\nthe address the writer gave did not find it. The given address is kept beside\nit. An address that turns out to be a page the list holds already teaches that\nrow the address instead of holding the page twice. Adding or taking off a\nsource remakes the outgoing copy of a report that has its file.\n\nPortal: A report source whose page has moved is now found in the report's file, and the report's links follow the source list when it changes."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119160357-6a7791"
+}

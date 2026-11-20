@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Issues: standard #25, site #305; #304 closed. Count for #25 (90 days, by home of the source): Belgian sources 9,174 in, 1,351 kept, 47 cited, all Flemish, three quarters VRT NWS. For the sender to decide: offer Belgium/Flanders as its own level?",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119074354-b5b1ce"
+}

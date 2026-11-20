@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dab70f11e2ba49732d302607e5459c419c9c31f6",
+            "branch": "workbench/report-check-printed-address",
+            "files_sha256": "beae607144818aeb9c35c1901e754d105cac1264b61ce8d470431cb148532aea",
+            "message": "Report sources: the address a moved page was given is kept and recognised\n\nThe check handed back only the address a page answers from, so the Studio added\nthe source under that one and the address the report prints was lost. The check\nnow gives both, the add takes the given one, and a page that is in the list\nalready learns it. The check on a report's file finds a source by that address\ntoo, where it looked among the signals only.\n\nPortal: A report source whose page has moved is now recognised in the report's file, also when it is added from the Studio."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119162504-725e9e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "To show a pupil an exercise, the bridge signs in to Kolibri as that pupil. Kolibri offers no way to do that except with the pupil's password, so the bridge derives one per pupil from a shared secret and sets it in Kolibri. Whoever holds that secret can sign in as any pupil.\n\nThis adds a small Kolibri plugin, `kolibri-delegated-session`, with one endpoint: a signed-in facility admin asks Kolibri for a session that belongs to a learner of their facility. The bridge uses it when `KOLIBRI_DELEGATED_SESSION=true` and falls back to the derived password when the plugin is absent or refuses, so nothing changes for an installation that has not enabled it.\n\n## The plugin\n\n`POST /delegated-session/api/session/` with `{ \"user\": \"<facility user id>\" }` returns the session and CSRF cookie values for that learner.\n\n- The caller must be a device superuser or an admin of the learner's facility. Coaches and learners are refused.\n- A session is only minted for a learner. A user with any role, or with superuser rights, is refused, so the endpoint cannot be used to gain rights.\n- The caller's own session is left as it was.\n- Every minted session is logged with the caller and the learner, and goes through Django's regular `login`.\n\nNothing in the plugin is specific to KUBO; `kolibri-plugin/README.md` describes install, endpoint, rules and limits.\n\n## The bridge\n\n- `KolibriClient::openDelegatedSession()` calls the endpoint and returns the two cookie values, or null.\n- `KolibriSessionBridge` asks for a delegated session first when the config flag is on, logs a warning and falls back to the password sign-in otherwise.\n- The flag `kubo-kolibri.delegated_session` defaults to off.\n\n## Checked\n\n- The plugin's 8 tests pass in Kolibri 0.19.5 (`kolibri manage test kolibri_delegated_session`).\n- End to end with the real `KolibriClient` against a running Kolibri 0.19.5: a learner is created, a session is minted, the session is that learner's, the admin stays signed in, and a session for the admin account is refused.\n- The bridge's own tests live in the school platform and follow in a separate pull request there.\n\n## Not covered\n\n- An exercise opened in a browser through the proxy with a minted session: the scratch Kolibri had no content.\n- Installing the plugin on a school's Raspberry Pi. Until it is enabled there, the derived password remains in use, and it stays as the fallback and in provisioning.\n",
+            "branch": "workbench/delegated-session-plugin",
+            "title": "Open a learner's Kolibri session without the learner's password"
+        },
+        "resource": "kubo-global/kubo-kolibri"
+    },
+    "run": "workbench-20261119103342-8b437f"
+}

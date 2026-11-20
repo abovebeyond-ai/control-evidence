@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "85b731b72ba5515aa41760dd477dce737ebb113e",
+            "branch": "workbench/desk-mail-recipients",
+            "files_sha256": "9b263d77e3024eab97d13dca057ba099a29adec2a7295c74c08d336d879103f0",
+            "message": "Who gets the morning mail is set per account, not in the environment\n\nThe desk mail went to an address list in the .env, which nobody at the\ndesk can see or change and which does not follow the team. It is now a\nsetting on a team member's account that an admin switches on, also for\nthemselves. Someone who leaves the team, or has not accepted the\ninvitation, gets no mail. Nobody is mailed until someone is switched on.\n\nPortal: Wie de ochtendmail van de redactie krijgt, stel je per persoon in op de Accounts-pagina."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119143318-dfae26"
+}

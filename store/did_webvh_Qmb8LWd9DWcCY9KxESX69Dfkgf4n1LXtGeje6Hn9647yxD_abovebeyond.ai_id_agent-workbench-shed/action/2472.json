@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A source whose page has moved loses the address it was pasted with on its way through the Studio, so the repair of Trendwolves/gentells-pipeline#486 cannot be reached from the screen; and when one source is not taken, the message does not say why.\n\nSource: Portal mail:61, the repair of source 16 of Growing Up in Public tried from the Studio.\n\n## What happens\n\n- \"Check against Gentells\" reads the page and hands back the address the page answers from. The Studio sends that address on when adding; the pasted one, which the report prints, is gone.\n- Pasting the address of a source that is in the list under its new address answers \"0 sources added, one was not taken\", with no reason.\n\n## Expected\n\n- The pasted address travels with the line from the check to the add (pipeline side: Trendwolves/gentells-pipeline#489).\n- When exactly one source is not taken, the message gives the reason.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Report source list: the pasted address of a moved page is lost between check and add"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119162153-51cf27"
+}

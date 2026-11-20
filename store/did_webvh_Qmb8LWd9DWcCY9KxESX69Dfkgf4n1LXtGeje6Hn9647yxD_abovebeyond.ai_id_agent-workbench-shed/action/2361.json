@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8a5a74787b9c30ca97c06461a9e794f048d3249f",
+            "branch": "workbench/ask-open",
+            "files_sha256": "2fc9803be66577b18480245a26d8335385966df9df740becb63db53e24434e7d",
+            "message": "Ask and a morning mail say what waits at the desk and what is off\n\nWhat the Observatory needs from a person piles up quietly: sources that\nwait for a trial, trials whose verdict is in, recommendations left by an\nassistant, sources the collector parked. One read counts it, with who can\nact on each line. Ask closes the first answer of a conversation with it,\nand a morning mail brings it to the desk when the list changed.\n\nPortal: De redactie hoort van Ask en in een ochtendmail wat op hen wacht en wat uit staat, en kan het door Ask laten afhandelen."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119141203-e97712"
+}

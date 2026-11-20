@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #474\n\n## Why\n\nThe dry run on the box after #472 found 1 of the 9 held sources of Going to School in Phone-Free Europe. All nine addresses are printed on its source page and all nine are held.\n\nThe stamp looked for a printed address only where it starts a line. This report sets each entry as one centred sentence with the address after the title, and a long address runs on over the next line. The one source found was the only one whose address stands on a line of its own.\n\n## What changes\n\n`core/report-stamp.mjs`: when an address is not found at the start of a line, it is looked for inside a line (`placesIn`), together with the lines it runs on to. The link then lies over the whole line the address is in, and over the piece on the next line.\n\n- An address on a line of its own is still taken there first, so the reports that already came through are stamped exactly as before.\n- A place is free only when none of its lines is taken, so the Ofcom report (`.../childrens`) does not land on the page whose address begins the same (`.../childrens-media-lives`).\n\n## Checked\n\n- New test with the layout of that report's source page: six entries, three of them running on to a second line, one on a line of its own, two that begin the same. It fails without the change.\n- Full suite 1722 of 1722, `tsc` clean.\n- The designers' files of Going Out, Staying In and The New Status System: the stamped output is byte for byte the same before and after this change. Growing Up in Public: 18 of 18, as before.\n- Not run on Going to School in Phone-Free Europe itself: that file is on the box only. The dry run below is the check.\n\n## After the merge, on the box\n\n```\nnode bin/stamp-reports.mjs going-to-school-in-phone-free-europe --dry\nnode bin/stamp-reports.mjs\n```\n",
+            "branch": "workbench/report-stamp-address-in-line",
+            "title": "Link stamp: an address printed after its title on the same line is found"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119081013-2460d2"
+}

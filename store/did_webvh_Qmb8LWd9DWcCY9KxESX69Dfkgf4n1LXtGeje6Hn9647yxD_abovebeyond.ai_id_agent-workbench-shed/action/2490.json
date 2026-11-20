@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "dab70f11e2ba49732d302607e5459c419c9c31f6",
+            "branch": "workbench/terms-prepared",
+            "files_sha256": "e13d42fac7690e35dab1a1f1b22471735534f75fe728d9478f0fbd3d73aa3f95",
+            "message": "Admitting a source moves into the tool, with its terms looked up\n\nAdmitting was a command on the server: nothing in the Observatory could\ndo it, while the desk read and the guide sent people to the Sources page.\nTrials passed and stayed where they were. A person now says what a\nsource's terms of use are, and the trial is decided by that: terms that\nallow a paid product admit a trial that passed, terms that do not turn\nit down.\n\nFinding the terms was the slow part, so the engine does the looking: it\nfinds the page, a model reads it, and the suggestion is kept only when\nthe sentence it rests on is on that page. It is laid ready as a\nsuggestion and never written as the terms; nothing here admits.\n\nPortal: De redactie kan een bron nu zelf toelaten in de Observatory. Het systeem zoekt de gebruiksvoorwaarden op en legt de gevonden zin klaar; een persoon leest en beslist."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119172608-8dc079"
+}

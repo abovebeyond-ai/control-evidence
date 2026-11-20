@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #489\n\nWorks with the Studio as it is; the Studio side is Trendwolves/gentells-studio#90. Either order of merging is safe.\n\n## Why\n\n#487 made a report's list keep the address a source was given. Two places did not follow:\n\n- The check on the file (`reportSources`, \"The sources in the file\" in the Studio and the read tool) looked each printed address up among the signals only, so a source whose page moved read as \"publisher known, page not yet held\" while the list holds it.\n- `checkSourceLines` handed back only the address the page answers from. The Studio adds what the check returns, so the given address never reached `holdSources`, and the repair of #487 for a row without it could not be reached from the screen.\n\n## What changes\n\n`core/source-reads.mjs`: an address on the source pages that matches `report_sources.printed` of one of this report's held sources is in Gentells, with that source's signal. The signal lookup still comes first; another page of the same site is not held by it.\n\n`core/report-source-list.mjs`:\n\n- `checkSourceLines` returns `given` beside `url` when a page answers from another address than the one pasted.\n- `holdSources` takes `given` on an entry and stores it as the printed address. An entry whose page is in the list already, reached through an address the row does not know, teaches the row that address and says under which number it stands.\n\n## Checked\n\n- `test/source-reads.test.mjs` (14 of 14) and `test/report-source-list.test.mjs` (15 of 15, two new tests that go through the check first, as the Studio does).\n- Full suite 1787 of 1787, `tsc` clean.\n\n## After the merge\n\nWith the Studio change in: paste the address of source 16 of Growing Up in Public again and add it. The list stays at 18, the row learns the address and the report's copy is remade.\n",
+            "branch": "workbench/report-check-printed-address",
+            "title": "Report sources: the address a moved page was given is kept and recognised"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119162504-725e9e"
+}

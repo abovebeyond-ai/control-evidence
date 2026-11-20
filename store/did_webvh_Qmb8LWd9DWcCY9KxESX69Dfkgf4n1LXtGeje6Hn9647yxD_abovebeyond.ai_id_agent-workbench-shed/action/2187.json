@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Pipeline #473: list of 29 Belgian feeds (14 nl, 15 fr) built and tested locally in /home/bench/work/pipe-belgian-sources, not proposed. May it go out as a pull request? Still open: standard #25, Belgium/Flanders as a region of its own.",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119075155-2948b8"
+}

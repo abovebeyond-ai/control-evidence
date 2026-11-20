@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c9627e440f409f50cba15fe17f78248a64b4d8e7",
+            "branch": "workbench/delegated-session-plugin",
+            "files_sha256": "8b1ede3aba900cad246134fd1279f01d53335c2cebdb7a2a8e4e0825e58a6d1a",
+            "message": "Open a learner's Kolibri session without the learner's password"
+        },
+        "resource": "kubo-global/kubo-kolibri"
+    },
+    "run": "workbench-20261119100653-4a94f2"
+}

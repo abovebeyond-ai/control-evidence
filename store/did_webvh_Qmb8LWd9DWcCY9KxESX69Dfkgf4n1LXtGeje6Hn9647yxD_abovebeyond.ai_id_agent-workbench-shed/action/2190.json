@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: The link stamp finds only 1 of the 9 held sources of Going to School in Phone-Free Europe, so 8 of its sources get no link to gentells.com. The reports go to a larger group on 20 November.\n\nSource: Portal mail:61, the dry run of `bin/stamp-reports.mjs` on the box after #472.\n\n## What happens\n\n`going-to-school-in-phone-free-europe: 1 of 9 sources lead through Gentells (0 links repointed, 1 added); 8 held sources not found on a source page`\n\nAll nine addresses are printed on page 25, under \"SOURCE LIST\", and all nine are held.\n\n## Why\n\nThe stamp looks for a printed address only where it starts a line. This report sets each entry as one centred sentence with the address after the title on the same line (\"Ofcom. (2026, May 21). Children's Media Lives 2026. https://...\"), and a long address runs on over the next line. The one source it found is the only one whose address stands on a line of its own.\n\nThe other reports print the address on its own line or carry link annotations, which is why they came through.\n\n## Expected\n\nAn address that stands inside its entry's line is found too, also when it runs on to the next line, and two addresses that begin the same (the two Ofcom pages) each go to their own source.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "Link stamp misses an address printed after the title on the same line (8 of 9 sources of report 1)"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119075243-6ef575"
+}

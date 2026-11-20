@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nA proposed source waited for a person to start its trial, and the desk's first morning mail showed how many wait. Starting a trial is not a decision a person adds anything to. The Standard sends a proposed source to trial unless its terms refuse it or it duplicates one we hold (`rules.source.entry`), and a trial is read off the record: nothing from it is promoted, backs a trend or is cited. The decision is the admission, and that stays with a person.\n\n## What\n\n`packages/core/trial-waves.mjs`, scheduled in the server from 05:00 UTC, once a day:\n\n- Starts at most 20 proposed sources (`TW_TRIAL_WAVE`; 0 switches the waves off).\n- Never lifts the running trials over 150 (`TW_TRIAL_MAX_RUNNING`). Trials nobody admits or rejects stop the waves, and the wave records why it held.\n- Order: what a source list marked A, then B, C, the unmarked; within each, feeds before pages a model has to read, then the oldest.\n- Only types an adapter reads. Two proposals for one feed: the first is tried.\n- A source the entry rule refuses is rejected by the engine with the reason in its notes (\"Not tried: ...\"). A person can still try it from the Sources page.\n- Every move is stamped `engine`; every wave is a row in `trial_waves`. Nothing is admitted.\n\nThe desk read gets a third list, `itself`: what goes by itself and needs nobody. Proposed sources and young trials are there. Proposed sources return to \"waits for a person\" only while the waves are held. The morning mail shows the list under \"Goes by itself\" and no longer goes out because that queue moved; Ask is told to leave it out unless asked. The guide's section on sources says trials start by themselves. Moves by the engine are not counted as moves by people at the desk.\n\n## Checked\n\n- `test/trial-waves.test.mjs`, 8 cases: order by priority, then feed before page, then age; once a day; the cap and its reason; only readable types; rejection with the reason for forbidden terms and for a duplicate address, not counted against the wave; one of two proposals for the same feed; nothing when switched off; nothing admitted.\n- `test/desk-open.test.mjs` adapted: a proposed feed goes by itself, and waits for a person when the waves are off.\n- Full suite 1778/1778, `tsc` clean.\n- Not measured: how many sources wait on production, and what twenty more trials a day cost in classification.\n\n## After merge\n\nThe first wave runs when the server restarts, if it is past 05:00 UTC: twenty sources go on trial that day. To hold it, set `TW_TRIAL_WAVE=0` before merging.\n",
+            "branch": "workbench/trial-waves",
+            "title": "Trials start by themselves, a wave a day"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119154252-325a08"
+}

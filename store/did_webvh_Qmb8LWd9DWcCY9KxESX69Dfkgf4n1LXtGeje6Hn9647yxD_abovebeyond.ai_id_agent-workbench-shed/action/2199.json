@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2600c5569a1f74ea86f5cdbfa0209c9b0ffe8258",
+            "branch": "workbench/report-stamp-address-in-line",
+            "files_sha256": "6bed68cc8b459c05fc12a053d1fb358a78efba667a2d06fc96bfbbe85071c927",
+            "message": "Link stamp: an address printed after its title on the same line is found\n\nThe stamp looked for a printed address only where it starts a line. A source\nlist set as sentences, with the address after the title and running on over\nthe next line, got no links: 8 of the 9 sources of Going to School in\nPhone-Free Europe. An address on a line of its own is still taken there first.\n\nPortal: The sources of Going to School in Phone-Free Europe now also lead to their page on gentells.com from the report PDF."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119081013-2460d2"
+}

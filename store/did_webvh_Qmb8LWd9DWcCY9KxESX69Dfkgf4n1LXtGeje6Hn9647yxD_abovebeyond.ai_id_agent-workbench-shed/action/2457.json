@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Merged: standard #26, pipeline #477 #478 #480-#485, site #306, dashboard #143 #144. Proposed: pipeline #488 (Ask finds sources by name, failed trials end by themselves). Open: terms lookup, Ask panel card, reply to the sender, tag sample.",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/488"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119161055-fe6d09"
+}

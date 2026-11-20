@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The approach page said that everything that can be handed over \"goes to the school, its teachers and technicians, and the ministry\". Handing over to a ministry is more than what happens: the handover is to the school and the people who run the system there.\n\n## Change\n\n- English: \"goes to the school and to its teachers and technicians.\"\n- Dutch: \"gaat naar de school en naar haar leerkrachten en technici.\"\n- French: \"passe \u00e0 l'\u00e9cole, \u00e0 ses enseignants et \u00e0 ses techniciens.\"\n\nNot changed: the platform page, where \"the ministry\" means the official forms a school hands in, and the team page.\n\n## Checked\n\n- `npm test`: 29 passed. `npm run build` and `npm run check:built`: no contact number.\n",
+            "branch": "workbench/approach-handover",
+            "title": "Approach page: the handover goes to the school and its people"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119143240-7ba05a"
+}

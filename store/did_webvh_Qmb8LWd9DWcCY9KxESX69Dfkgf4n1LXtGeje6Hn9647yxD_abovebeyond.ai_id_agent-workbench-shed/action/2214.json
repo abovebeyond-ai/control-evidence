@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The Studio can edit a report but cannot add one, so a report that was not in the seeded year (Growing Up in Public) has no row, and without a row its sources cannot be held and its file cannot be uploaded.\n\nSource: Portal mail:61.\n\n## What is wrong\n\nReports lists the rows that exist and edits them. Nothing in the screen creates a row; the empty state still points at `bin/seed-reports.mjs`, which is no longer in the pipeline. The server already creates a row on `POST /reports` with a new slug.\n\n## What is asked\n\nUnder the year: a title and a code, and \"Add to the year\". The address comes from the title, the report goes last in the year with \"coming soon\", and its row opens so the sources can be added. A title that is already in the year is refused. The screen says that the report shows on gentells.com at once.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Reports: add a report to the year from the Studio"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119081550-4ccec4"
+}

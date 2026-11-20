@@ -1,0 +1,16 @@
+{
+    "action": "3a628e3397bf7e9b16fad535b55a05d1",
+    "effect": {
+        "detail": {
+            "base": "1a197e5e500f3eff924a4b7f97f18669ec0d4937",
+            "branch": "workbench/approach-handover",
+            "commit": "b50e9517d36e0366cc17f95c934b7afb3fdb558b",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2388,
+    "verdict": "ALLOW"
+}

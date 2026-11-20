@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1a197e5e500f3eff924a4b7f97f18669ec0d4937",
+            "branch": "workbench/approach-handover",
+            "files_sha256": "530c335f67547592f15563a8007b88ca235ec8828a1f0b33d1d0a54e399284f1",
+            "message": "Approach page: the handover goes to the school and its people"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119143240-7ba05a"
+}

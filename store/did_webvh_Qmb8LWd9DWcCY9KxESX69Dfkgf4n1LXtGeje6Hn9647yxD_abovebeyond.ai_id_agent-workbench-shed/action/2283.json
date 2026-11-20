@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b633c68e1ab3a813bac5a0558f8bbd8ab49a0952",
+            "branch": "workbench/report-source-list-site-itself",
+            "files_sha256": "1d6176737e6fd6996a59827b2485ab93007c8dff5bb223a6351ca3b5ca6c2f4f",
+            "message": "Report source list: a site that is itself the source can be held, and read titles are tidied\n\nA front page was always refused, but a brand, a shop or an app is cited by its\nown site. It is held when the writer says the site itself is the source. A read\npage's title loses the site name hung on its end, and a host given as publisher\nis left for the writer to name."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119092439-c2c647"
+}

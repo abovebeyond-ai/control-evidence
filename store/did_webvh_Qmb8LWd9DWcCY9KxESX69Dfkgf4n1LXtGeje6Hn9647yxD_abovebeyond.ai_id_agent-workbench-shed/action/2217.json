@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a062f59e76717f8bd1223752c38b565cf2a57004",
+            "branch": "workbench/menu-dropdown-and-news-links",
+            "files_sha256": "5db09dbf71e78ba606ade54f665afc4d6fd11af6d59d604953315d9f4ec80b07",
+            "message": "Menu with an About dropdown and News in the bar; the latest story on the homepage and the CyberSec page"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119081616-208d26"
+}

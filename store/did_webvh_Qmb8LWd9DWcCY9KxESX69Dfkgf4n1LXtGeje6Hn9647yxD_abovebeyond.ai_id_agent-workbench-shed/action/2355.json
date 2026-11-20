@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "745e04072b1e3ac075145d3c8e15fae782a858e6",
+            "branch": "workbench/stay-signed-in",
+            "files_sha256": "5e8c8ed72cfe8023a26ea3915102f076501d1ca54b290925b46c900188561f43",
+            "message": "Sign-in: staff can stay signed in on their own device"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261119134304-0b654b"
+}

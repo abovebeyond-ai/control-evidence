@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b633c68e1ab3a813bac5a0558f8bbd8ab49a0952",
+            "branch": "workbench/standard-0.19",
+            "files_sha256": "0b993e5ef3ab861295bcb694a00cb29677e8e135158631454dc5c94a3371d117",
+            "message": "Take Gentells Standard 0.19.0: Belgium, the Netherlands and Luxembourg under Benelux\n\nThe Standard now has countries under Benelux, so the region tree has a third\nlevel. A continent is a region at the top with regions under it; Benelux\nholds countries and is not one (it had become a fifth continent). The trend\norigin reads a region's continent however deep, the classifier is told to\nuse Benelux only for something about its countries together, and a source\nlist that says Belgi\u00eb, Vlaanderen or Nederland maps to the country.\n\nSignals classified from here on carry the country; what was tagged Benelux\nstays Benelux, and a filter on Benelux finds both.\n\nPortal: Gentells herkent Belgi\u00eb en Nederland nu als eigen regio voor nieuwe signalen."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119091910-c93d1a"
+}

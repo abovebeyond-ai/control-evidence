@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d6e6995971b5b0fc6b207af789d61f2b765ed829",
+            "branch": "workbench/belgian-sources",
+            "files_sha256": "20c2a7d4930b90a18684a0f8108a52ee39ab2dcc335cd4dd61ad8ea863cf52b9",
+            "message": "A source list of 29 Belgian feeds, Dutch- and French-language\n\nOf 115 Belgian sources the Observatory knows, 9 are read, half of the\nBelgian signals come from one broadcaster, and none is in French. The\nlist adds news, music, culture, gaming and lifestyle titles with a live\nfeed; all enter as proposals, at home in Belgium.\n\nPortal: Een lijst van 29 Belgische bronnen (14 Nederlandstalig, 15 Franstalig) staat klaar om op proef te lezen."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119130947-2d73d3"
+}

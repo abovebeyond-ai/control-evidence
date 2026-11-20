@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-19T07:34:44+00:00",
+    "computed_at": "2026-11-20T07:34:37+00:00",
     "window": {
-        "since": "2026-11-12T07:33:06+00:00",
+        "since": "2026-11-13T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -126,8 +126,8 @@
                 "gateway": 1
             },
             "pulls": {
-                "github": 20,
-                "gateway": 20
+                "github": 26,
+                "gateway": 26
             }
         },
         "Trendwolves/gentells-site": {
@@ -137,8 +137,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 6,
-                "gateway": 6
+                "github": 1,
+                "gateway": 1
             }
         },
         "Trendwolves/glk-transferor": {
@@ -147,8 +147,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             }
         },
         "abovebeyond-ai/abovebeyond": {
@@ -167,8 +167,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 3,
+                "gateway": 3
             }
         },
         "abovebeyond-ai/trustedagentic.ai": {
@@ -198,8 +198,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 14,
+                "gateway": 14
             }
         },
         "stocklistdealer-eu/platform": {
@@ -208,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 10,
-                "gateway": 10
+                "github": 8,
+                "gateway": 8
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -306,8 +306,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 3,
+                "gateway": 3
             }
         },
         "Trendwolves/gentells-standard": {
@@ -317,8 +317,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "Trendwolves/gentells-studio": {
@@ -328,8 +328,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 6,
-                "gateway": 6
+                "github": 7,
+                "gateway": 7
             }
         },
         "abovebeyond-ai/bextrust": {
@@ -372,8 +372,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/elixir-fix": {
@@ -635,6 +635,17 @@
         "forge:verify-abovebeyond": {
             "skipped": "no token to read GitHub"
         },
+        "kubo-global/kubo-kolibri": {
+            "dispatches": {
+                "github": 0,
+                "gateway": 0,
+                "workflow": "absent"
+            },
+            "pulls": {
+                "github": 1,
+                "gateway": 1
+            }
+        },
         "kubo-global/kubo-school-platform": {
             "dispatches": {
                 "github": 0,
@@ -642,8 +653,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 4,
-                "gateway": 4
+                "github": 8,
+                "gateway": 8
             }
         },
         "kubo-global/swallow-method": {

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe Mix stops at Benelux and the Sources page shows sources one by one, so nobody at the desk could say what a country rests on, or which of its sources wait for whom. The pipeline answers that since Trendwolves/gentells-pipeline#477 (`GET /coverage`, issue Trendwolves/gentells-pipeline#476); this is the page that reads it.\n\n## What\n\nA page **Coverage** under Data, after Mix.\n\n- **Opens on the table per country:** what came in, its share, what was kept, what an insight cites, and how many of the known sources brought something.\n- **A country opens its sources**, one per row: how it is read (feed, web page, official API, rented scraper, no reader yet, and whether the reader is switched off), its state, its language, what it brought, and for every source that is not simply running whose move the next step is: the desk, a decision, or development.\n- **One sentence on top** says what the country rests on: the signals, the share of everything, how many sources brought them, how much comes from the largest one, and how many wait for whom.\n- **What cannot be read here, and why:** the readers that are off with their reason, and what a platform does not publish for that country.\n- Narrowed by language, and over a week, a month or a quarter.\n\nThe notes under the table say what a country means here: where a source is at home, not what a signal is about.\n\n## Choices\n\n- The controls are the shared `Filters` and `Button`; the page adds no styles of its own. The bars are the groove the Mix uses: what came in, with the kept part inside it.\n- No judgement on the page. It shows what is thin and whose move it is; it does not say what is too little.\n\n## Checked\n\n- `e2e/coverage.spec.js`, three cases on a mocked `/coverage`: the table per country opens a country; a waiting source says whose move it is and what is closed is listed; a country narrows to one language.\n- Full Playwright suite 102/102; `npm run build` passes; the lint and brand ratchets are at their ceilings.\n- Looked at in a browser with mocked data only. The route answers on production (115 Belgian sources, 9 reading); the page was not opened against it.\n",
+            "branch": "workbench/coverage",
+            "title": "A Coverage page: per country, which sources, how each is read, whose move is next"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261119095302-04ba08"
+}

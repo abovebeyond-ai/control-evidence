@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5c214383ab96865f4fe716b5c1553717db503085",
+            "branch": "workbench/communities-intro",
+            "files_sha256": "708f351fbe453cf8947a7d35ef94be0c065c32425586f0625cc6fce43ddbf00f",
+            "message": "Communities page: describe the community that exists, and show it"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119142602-61df00"
+}

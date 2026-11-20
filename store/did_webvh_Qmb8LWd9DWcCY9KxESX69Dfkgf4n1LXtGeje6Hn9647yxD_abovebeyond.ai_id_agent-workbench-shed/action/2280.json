@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: The first real use of the report source list (Growing Up in Public, 18 lines) showed three faults: the check reads as a jumble, an example date reads as a real date, and a brand or app cited by its own site cannot be added at all.\n\nSource: Portal mail:61, the first check on the live Studio after #83.\n\n## What is wrong\n\n- **The date field shows \"2026-05-18\" on every line without a date.** It is the example text of the field, and it reads as the page's date: an arXiv paper of 2023 and four unread pages all seemed dated 18 May 2026.\n- **Every line carries its own status, coloured edge and three fields**, so eighteen lines read as eighteen small forms. What is ready, what needs a name and what cannot be used are mixed in paste order.\n- **A front page is always refused.** Three of the report's sources are apps cited by their own site; the earlier reports hold such sources (two brands in Going to School in Phone-Free Europe). The writer has no way to say the site itself is the source.\n- A read title keeps the site's name on its end (\"... , Spotify\"), and a page that names no publisher shows its host as publisher (\"ec.europa.eu\").\n\n## Expected\n\n- Checked lines in groups: ready (as they will be printed), to name (fields under one row of headings, no example text), not usable (with the reason), already in the list.\n- A front page can be kept after the writer says the site itself is the source, and names it.\n- Read titles without the site's name on the end; no host as publisher.\n\nNeeds a small change in the pipeline too (the hold accepts a site that is itself the source; titles tidied at the check).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Report source list: the check is hard to read, an example date reads as real, and a site cannot itself be the source"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119092202-005011"
+}

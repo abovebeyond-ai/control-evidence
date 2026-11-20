@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6cdf0297c30845117e18b5baa71476b31e51cbc5",
+            "branch": "workbench/belgium",
+            "files_sha256": "94a34fce77e4db0bdeb797c7b4b57164dc93947b36cd08175107f174590b5e1e",
+            "message": "Belgium, the Netherlands and Luxembourg are regions under Benelux (0.19.0)\n\nThe finest region that held Belgium was Benelux, so an engine asked for the\nmost specific region of a Belgian signal had no narrower answer, and a\nFlemish or Belgian reading could not be made. The three countries are added\nunder Benelux; be, nl and lu now match the country. Flanders and Wallonia\nare spellings of Belgium, not regions: language tells them apart.\n\nPortal: De Gentells Standard krijgt Belgi\u00eb, Nederland en Luxemburg als eigen regio onder Benelux."
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261119085059-867766"
+}

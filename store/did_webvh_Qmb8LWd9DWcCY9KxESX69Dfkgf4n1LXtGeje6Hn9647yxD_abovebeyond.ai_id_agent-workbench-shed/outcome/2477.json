@@ -1,0 +1,16 @@
+{
+    "action": "4161ddb32954243863aee3f9d4d77e35",
+    "effect": {
+        "detail": {
+            "base": "dab70f11e2ba49732d302607e5459c419c9c31f6",
+            "branch": "workbench/report-check-printed-address",
+            "commit": "19a94ab3930b7142b3602bc056cb25621b126b43",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2475,
+    "verdict": "ALLOW"
+}

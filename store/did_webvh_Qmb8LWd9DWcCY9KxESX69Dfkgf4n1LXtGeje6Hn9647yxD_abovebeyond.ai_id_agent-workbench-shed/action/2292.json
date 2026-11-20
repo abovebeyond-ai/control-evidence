@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #86\n\nWorks with the pipeline as it is; the \"site itself\" choice is only honoured once Trendwolves/gentells-pipeline#479 is merged (until then such a line is refused on adding, with the reason).\n\n## What changes\n\nReports, The source list, after \"Check against Gentells\":\n\n- **Groups instead of eighteen small forms.** Ready for the list (each line as it will be printed, \"change\" on the ones that were read), Name these first (publisher, title and date under one row of headings), Cannot be used as given (with the reason), In the list already.\n- **No example text in the fields.** The date field showed \"2026-05-18\" on every line without a date, and it read as the page's date.\n- **A site can itself be the source.** A front page says why it is refused and offers \"The site itself is the source\"; the line then moves to the ones to name, with \"undo\".\n- Sources are added in the order they were pasted, whatever group they are shown in.\n\n## Checked\n\n- `src/report-sources.test.js`: 7 tests. Suite 83 of 83, build clean.\n- Driven in a headless browser against the lines of the real check: groups, naming a line, the site-itself choice, \"change\". No page errors.\n",
+            "branch": "workbench/report-source-list-groups",
+            "title": "Reports: checked sources shown in groups, and a site can itself be the source"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119092456-d02e97"
+}

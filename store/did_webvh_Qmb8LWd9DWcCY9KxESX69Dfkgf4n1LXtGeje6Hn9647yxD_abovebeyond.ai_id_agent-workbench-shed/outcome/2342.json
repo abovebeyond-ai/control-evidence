@@ -1,0 +1,16 @@
+{
+    "action": "dc104bb14dccc281718b335f4608cf6d",
+    "effect": {
+        "detail": {
+            "base": "d6e6995971b5b0fc6b207af789d61f2b765ed829",
+            "branch": "workbench/belgian-sources",
+            "commit": "aea6f24b3a0d2039d09b691a49b362ef17b33f64",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2340,
+    "verdict": "ALLOW"
+}

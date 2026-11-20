@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e2d75f9a5a65137f0bfa1f7132bbf70d4a7d7e22",
+            "branch": "workbench/report-source-given-address",
+            "files_sha256": "f668ceb8f465036f6574285e817fb74075610d38d55f3a6feebb698e12c24fd1",
+            "message": "Report source list: a moved page keeps the address it was pasted with, and one refusal says why\n\nThe check returns the address a page answers from; the Studio sent only that\none on, so the address the report prints was lost. It now travels with the\nline. When exactly one source is not taken, the message gives the reason."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119162525-341e70"
+}

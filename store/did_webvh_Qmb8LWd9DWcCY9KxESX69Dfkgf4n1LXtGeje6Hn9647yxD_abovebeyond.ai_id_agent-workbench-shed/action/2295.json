@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1b8ce6e1f8883c80f5776d036e02d3561c31a7b8",
+            "branch": "workbench/nl-community",
+            "files_sha256": "c75d844c13d8e61d2da5aadd70dd2e31fe10d8782a16cb3d36a4e20c55cb42c1",
+            "message": "Dutch \"community\"; on the CyberSec page a button to the story and the invitation as a band across both columns"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119095238-a3ceeb"
+}

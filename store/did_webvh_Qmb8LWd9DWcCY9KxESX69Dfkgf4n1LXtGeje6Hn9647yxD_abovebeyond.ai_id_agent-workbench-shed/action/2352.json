@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The demo's front door is the first thing a visitor sees after \"Try the demo\" on kubo.global. It listed six roles with a sentence each, which asks a first-time visitor to read and to already know what a role means in this product.\n\nIt now offers two doors and shows the screen behind each:\n\n- **Run the school**: a class's results sheet, then \"Open as headmaster\" and the other staff roles as links.\n- **Learn in it**: that class's pupil sign-in list, then \"Sign in as a pupil\".\n\nBoth screens are drawn from the demo's own data rather than from pictures, so they stay sharp at any size and cannot go stale. The results sheet comes from the Results page's own action, so the picker shows exactly what the page behind it shows. A school without classes or marks gets the two doors without the screens.\n\nThe page takes kubo.global's look: dark indigo, heavy Work Sans, the yellow call to action.\n\n## Also in this change\n\n- Each role lands on the screen where its work happens: the teacher in their class's scorebook, the caregiver on the health desk, the coordinator on the lesson plans. Headmaster and administrator keep the dashboard.\n- The demo bar no longer sits on top of the picker; it still shows everywhere inside the demo.\n- The role descriptions in `DemoController::ROLES` are gone: nothing reads them any more.\n\n## Checked\n\n- Rendered on a locally seeded demo database at desktop and phone width: no horizontal scroll, the headline breaks into two even lines on a phone.\n- `DemoModeTest` covers the two doors without data, the two screens against the seeded Albreda class (top pupil, total and position equal to the Results page), and the landing per role.\n- Full suite: 537 tests pass, 2 skipped.\n",
+            "branch": "workbench/demo-front-door",
+            "title": "Demo: the front door shows the two screens it leads to"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261119134246-677b8b"
+}

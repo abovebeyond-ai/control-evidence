@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ccb5662c42d71405231093a8def1d503e6b977c6",
+            "branch": "workbench/add-report",
+            "files_sha256": "98ffb257c7983c037ee9481462a7de95c3224908bbc1aa47141c8abceebcb58b",
+            "message": "Reports: add a report to the year from the Studio\n\nThe shelf could edit a report but not add one. Under the year, a title and a\ncode add a report that goes last, says coming soon, and opens so its sources\ncan be added before its file is here."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119081651-cb8d4a"
+}

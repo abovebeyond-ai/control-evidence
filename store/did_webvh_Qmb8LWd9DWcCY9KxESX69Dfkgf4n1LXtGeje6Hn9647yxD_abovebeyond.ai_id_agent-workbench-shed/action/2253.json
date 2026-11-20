@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "41a32c3d57498adf9f009828cd00652cdaf3874b",
+            "branch": "workbench/build-reads-live-sanity",
+            "files_sha256": "52a3626cb1f52df5f7a7b2707f23ed73cdd1432fec0a5125f6316e9b157c27cb",
+            "message": "Build reads Sanity's live API, so a build started by a publish sees that publish"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119085706-00fe01"
+}

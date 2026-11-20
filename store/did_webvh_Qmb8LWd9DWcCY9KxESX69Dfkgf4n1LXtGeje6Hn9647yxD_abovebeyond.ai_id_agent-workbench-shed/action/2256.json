@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A post published in Sanity started a Netlify build, the build finished, and the site still showed the previous text. It happened three times on 19 November 2026, with a title, an opening paragraph and a gallery photo. A second build a minute later showed the new content each time.\n\n## Cause\n\n`query()` in `src/lib/sanity.js` read from `apicdn.sanity.io`, Sanity's cached API. The Sanity webhook starts the build at the moment of publishing, and for a short while after a publish the cache can still answer with the previous version. Checked directly during one of the three: `api.sanity.io` returned the new text while the built site had the old one.\n\n## Change\n\n`query()` now reads from `api.sanity.io`, the live API. It is only called at build time, a handful of requests per build, so the cache bought nothing there.\n\nNot changed: the browser-side fetches in the pages (campaign and price widgets) and `src/lib/pricing.js` still use the cached API.\n\n## Checked\n\n- `npm test`: 25 passed. `npm run build` and `npm run check:built`: no contact number.\n- The build output lists the news post and the homepage's latest-news block as before.\n",
+            "branch": "workbench/build-reads-live-sanity",
+            "title": "Build reads Sanity's live API, so a build started by a publish sees that publish"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119085706-00fe01"
+}

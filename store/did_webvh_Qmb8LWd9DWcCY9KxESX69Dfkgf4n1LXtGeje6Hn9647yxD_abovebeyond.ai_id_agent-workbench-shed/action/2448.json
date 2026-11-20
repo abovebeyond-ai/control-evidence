@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #486\n\n## Why\n\nThe first report whose sources were held from the Studio came back with one source not found in its own file: the page had moved, the signal sits under the new address, and the list kept no record of the address the report prints.\n\n## What changes\n\n`core/report-source-list.mjs`:\n\n- `holdSources` stores the address as given in `printed`. The link step and the check already look for a source by both `printed` and the signal's address.\n- `settleTwice`: an address that, once read, is a page the list already holds does not get a second row. The row that was there takes the address when it had none, and the answer says under which number it stands. This is also the repair for a row held before this change: paste the address again.\n\n`server/routes-studio.mjs`:\n\n- `POST` and `DELETE` on `/reports/:slug/source-list` remake the outgoing copy when the report has its file, and return the outcome as `links`. Without a file nothing happens.\n\n## Checked\n\n- `test/report-source-list.test.mjs`: two new tests on a page that redirects (13 of 13).\n- Full suite 1780 of 1780, `tsc` clean.\n\n## After the merge\n\nIn the Studio, under Growing Up in Public, paste the address of source 16 again and add it. The list stays at 18 and the report's copy is remade.\n",
+            "branch": "workbench/report-source-printed-address",
+            "title": "Report source list: a held source keeps the address it was given, and the linked copy follows the list"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119160357-6a7791"
+}

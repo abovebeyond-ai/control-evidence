@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Building pipeline #476 locally: a country per source and a coverage read (sources, how each is read, what it brings, what is closed), as an Observatory tool; nothing proposed without a go",
+            "state": "in-progress"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119081714-18c5bc"
+}

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "Pipeline #476 built locally, not proposed: coverage read + tool + GET /coverage (pipe-coverage, 1737/1737) and a Coverage page (dash-coverage, 102/102). May both go out as pull requests? Staff MCP door not built yet. Also open: #473, standard #25, the reply.",
+            "state": "parked"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119083124-569028"
+}

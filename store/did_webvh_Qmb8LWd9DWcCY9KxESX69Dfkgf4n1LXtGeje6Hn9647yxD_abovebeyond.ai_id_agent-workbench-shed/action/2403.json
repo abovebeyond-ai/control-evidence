@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nWho gets the desk's morning mail was an address list on the server. It belongs with the team, on the page where the team is kept.\n\n## What\n\nOn the Accounts page, a team member's row menu has \"Send the morning mail\" or \"Stop the morning mail\", and the row says \"gets the morning mail\" under the role for whoever does. Not offered for an invitation that was not accepted.\n\nNeeds the pipeline pull request of the same name (`PATCH /auth/users/:id` with `deskMail`); merge that first. Against the pipeline as it is, the click answers \"Not saved\" and changes nothing.\n\n## Checked\n\n- `e2e/accounts.spec.js`, a new case: the menu item sends `deskMail: true`, the row then says who gets the mail and the item turns to stop; an open invitation has no such item.\n- All e2e 103/103, eslint clean on the page.\n",
+            "branch": "workbench/desk-mail-recipients",
+            "title": "Accounts: switch the morning mail on per person on the team"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261119143343-ca8f36"
+}

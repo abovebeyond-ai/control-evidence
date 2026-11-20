@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "745e04072b1e3ac075145d3c8e15fae782a858e6",
+            "branch": "workbench/demo-front-door",
+            "files_sha256": "69f6b3ec3d16298f0db0281fd4c4d315ee158419358a283727691c761fd7ed33",
+            "message": "Demo: the front door shows the two screens it leads to"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261119134246-677b8b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bd5835b53b2d006decc1e5deeb7b9821bf59ea64",
+            "branch": "workbench/booklet-communities",
+            "files_sha256": "693f3c09fba4dfe669935bf73177c0a3cbeca838aaa976ffa5fcf385c06419ab",
+            "message": "Booklet: the box on life beyond the school day describes the community that exists"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119151549-8b32e1"
+}

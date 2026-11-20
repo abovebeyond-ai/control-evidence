@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P3\nSummary: Under Reports, a report opens inside the list of the year, between the other rows. With the file, the source list and the source check added to it, that detail is long and hangs somewhere in the middle of eleven rows; it is hard to see where a report begins and ends.\n\nSource: Portal mail:61, working through a report's sources and file in the Studio.\n\n## What is wrong\n\n- The opened report unfolds in place: the rows of the other reports stay above and below it, and the page jumps when another row is opened.\n- Nothing at the top says which report is open once the row has scrolled out of view.\n- A reload closes the report; there is no address for one report.\n- The upload button is black, the only one in the view.\n\n## Expected\n\n- A report opens on a page of its own: its code, title and state at the top, a way back to the year, then what the site shows, the file, the source list and the sources in the file.\n- The open report is in the address, so a reload or a link lands on it and the browser's back returns to the year.\n",
+            "labels": [
+                "mail",
+                "request",
+                "priority:P3"
+            ],
+            "title": "Reports: an opened report hangs inside the list of the year"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119161125-18a70a"
+}

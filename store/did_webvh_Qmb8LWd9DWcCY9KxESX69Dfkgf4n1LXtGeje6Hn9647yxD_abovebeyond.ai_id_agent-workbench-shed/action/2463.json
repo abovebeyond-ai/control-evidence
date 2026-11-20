@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4e0d520bbbe981d83a3295564c7ae181d44563aa",
+            "branch": "workbench/report-own-page",
+            "files_sha256": "acf41376ca5a423e397e156e3015f911e18548ce5b0ca158671c6f914f0f37da",
+            "message": "Reports: a report opens on a page of its own\n\nAn opened report unfolded inside the list of the year. With the file, the source\nlist and the source check in it, that detail hung between the other rows and a\nreload closed it. It now replaces the list: code, title and state at the top, a\nway back to the year, and its place in the address."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119161438-66346e"
+}

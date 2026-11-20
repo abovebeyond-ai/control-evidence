@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:62",
+            "note": "All merged: standard #26, pipeline #477 #478 #480-#485, site #306, dashboard #143 #144. Open: one try in Ask, the reply to the sender, check the first trial wave and the Belgian tags after a day.",
+            "state": "done",
+            "url": "https://github.com/Trendwolves/gentells-pipeline/pull/485"
+        },
+        "resource": "portal:gentells"
+    },
+    "run": "workbench-20261119154623-7550b3"
+}

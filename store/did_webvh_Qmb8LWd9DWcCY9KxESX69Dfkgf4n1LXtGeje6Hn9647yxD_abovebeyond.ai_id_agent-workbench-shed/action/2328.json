@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3e349d56d7901b63e2f4629cd4ea751c81c12cf3",
+            "branch": "workbench/ask-acts",
+            "files_sha256": "e47f1a3bf8d621f934dfc2890d6f9398f7e846d6b4927eea3c99e5847eb0050d",
+            "message": "Ask manages sources for the person who is asking\n\nAsk looked things up and changed nothing; managing sources was the Sources\npage, one click per source, and the 24 Belgian sources that wait for the\ndesk were 24 clicks. Ask now has the moves as tools, for a team member who\nis signed in: the scorecard of a trial, start a trial, mute, unmute, turn\ndown, and place a source in a country, in a list of up to fifty.\n\nA change is shown first and runs only when confirmed, because Ask reads\nwhat the web wrote. One function decides what is allowed (the team looks,\nan editor or an admin changes, admitting a source stays with a person and\nthe recommendation is kept), and every change and refusal is written down\nwith the person, Ask and the conversation. A guest's Ask gets none of it.\n\nPortal: In het Observatory kan je Ask nu vragen om bronnen te beheren: een proef starten, dempen of het land zetten, na jouw bevestiging."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119110307-b88a54"
+}

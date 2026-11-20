@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "aee422b7ef5737da1887ebd9949ff53f4a1f81a6",
+            "branch": "workbench/report-source-list-groups",
+            "files_sha256": "e8898950fe4e270379952499ee22877421bafcebcc0481a462bf882cdcd0f886",
+            "message": "Reports: checked sources shown in groups, and a site can itself be the source\n\nThe check showed every line with its own status, border and fields, and the\ndate field's example read as a value. Lines now fall in groups: ready as they\nwill be printed, to name under one row of headings, and not usable with the\nreason. A front page can be kept when the site itself is the source."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261119092456-d02e97"
+}

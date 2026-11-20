@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0595f3a20c8206ac85d9b8d7b3dbf5a5bd197adf",
+            "branch": "workbench/ask-names-and-trial-end",
+            "files_sha256": "6263c2fdfbac1319a96ceeb8c1d7c9b40df315df19f03fb608eab2a72fd5c2f2",
+            "message": "Ask finds a source by its name, and failed trials end by themselves\n\nAsked to start five trials by name, Ask passed the names as ids, showed a\nplan in which every source was missing, and after the yes said the\nsources did not exist. A source is now found by id, name or address, a\nname that fits nothing or several stops the request with what was found,\nand the plan says per source what would change and what would not.\n\nA trial that failed was read on until a person rejected it and counted\nagainst the most that may run. The engine now ends it after its window,\nor after one more when it brought too few signals, with the reason. A\ntrial that passed is never ended.\n\nPortal: Ask vindt een bron op naam en toont vooraf wat wel en niet verandert. Proeven die zakken sluit het systeem na twee weken zelf af."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261119161027-d47480"
+}

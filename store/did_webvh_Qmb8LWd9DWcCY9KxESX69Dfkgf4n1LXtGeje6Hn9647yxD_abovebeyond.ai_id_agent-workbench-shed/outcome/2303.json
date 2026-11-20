@@ -1,0 +1,15 @@
+{
+    "action": "f6de89b6dc16b4a855ee0dddac4f996e",
+    "effect": {
+        "detail": {
+            "fields": [
+                "links"
+            ],
+            "project": "kubo-platform"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2301,
+    "verdict": "ALLOW"
+}

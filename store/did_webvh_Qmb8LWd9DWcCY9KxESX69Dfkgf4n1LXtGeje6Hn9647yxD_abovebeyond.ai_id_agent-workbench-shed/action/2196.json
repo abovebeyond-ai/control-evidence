@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "With one post on the site, the news overview was a large heading block, an empty band and a single white card in the left two thirds of the page. The post page had seven sections and no way to see or reach them except by scrolling.\n\n## News overview (`src/pages/news.astro`)\n\n- **The newest story opens the page.** Its cover photo runs from the left edge of the screen, directly under the menu. \"News\" (the page's `h1`), the date, the title and the summary sit beside it on a pale blue that fades down into the page colour. The blue is the site's own `--blue`, mixed into `--bg`.\n- **Older stories follow under \"Earlier\"**, two across: a small photo, the date, the title, and the summary in small text, cut off after three lines.\n- **On a narrow screen** the photo comes first and the text field sits under it; older stories go to one column.\n- **No posts:** the heading and the \"first updates are on their way\" note are kept as they were.\n- A post without a cover image gets the text field across the full width; an older story without one gets text only.\n\n## Post page (`src/pages/news/[slug].astro`)\n\n- **\"In this story\":** the post's section headings as links. On a wide screen the list sits in the free column to the right of the text, stays in view while scrolling, and marks the section being read. On a narrow screen it is a short list under the opening paragraph.\n- It appears only when a post has three or more headings.\n- Headings get an `id` made from their text at build time. `portableText.js` is untouched.\n\n## Checked\n\n- `npm test`: 25 passed. `npm run build` and `npm run check:built`: no contact number.\n- Overview against the live post at 1440 and 390 wide: one `h1`, no horizontal scroll, no page errors. The list of older stories was checked in a local preview with stand-in posts, since Sanity holds one post.\n- \"In this story\" at 1440, 1100 and 390 wide: a click scrolls to the section and the current section is marked.\n",
+            "branch": "workbench/news-overview-and-story-links",
+            "title": "News: the newest story opens the overview, and a post lists its sections"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261119075823-fc409d"
+}
