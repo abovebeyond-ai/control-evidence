@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nPage 10 of the booklet (\"Beyond the school day\") shows the first KUBO community the way the website does: a photo banner of the participants of the first Capture the Flag in front of the IT Lab, with the text over the dark lower part and the community's sticker in the corner. It replaces the text card.\n\n## Files\n\n- `print-src/booklet-a5-en.html`, `print-src/booklet-en.html`: the banner, old card styles removed.\n- `public/print/ctf-group.jpg`: the group photo.\n- `public/print/kubo-keycap-sudo-learn.png`: the community's sticker artwork.\n- `KUBO_Booklet_A5_EN.pdf`, `KUBO_Booklet_A5_EN_PRINT.pdf`, `KUBO_Booklet_EN.pdf`: rebuilt on a Mac from these sources. These are the files the print order was placed with.\n\n## Checked\n\n- All three PDFs: 16 pages, no fonts left (text is outlines), photos visible in Preview.\n- Print file: A5 plus 3 mm bleed, trim box marks the A5.\n- Page 10 rendered from each PDF: photo, text and sticker in place.\n- `npm test`, `npm run build`, `npm run check:built` pass.\n\nThe PDFs were built with the script from the print build repair pull request; this one does not depend on it to merge.\n",
+            "branch": "workbench/booklet-community-banner",
+            "title": "Booklet: the first community as a photo banner on page 10"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261120092248-63edc0"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "15c5268f81d028e02af58e6cf299f69bee901383",
+            "branch": "workbench/admit-on-sources-2",
+            "files_sha256": "5940567aa0d4eaa9a01ab03b17531222b85760a10d8ce787f64961ab06252ee1",
+            "message": "Sources: admit a trial that passed, after reading its terms\n\nA block above Needs a look lists the trials that passed with what the\nObservatory found about their terms of use: the page and the sentence.\nThe person says what the terms are; that admits the source or turns it\ndown. The choice starts empty and there is no button until it is made.\n\nPortal: Op de Sources-pagina staat een blok met proeven die geslaagd zijn. De redactie leest de gevonden voorwaarden en laat toe of wijst af."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261120075116-f38b5d"
+}

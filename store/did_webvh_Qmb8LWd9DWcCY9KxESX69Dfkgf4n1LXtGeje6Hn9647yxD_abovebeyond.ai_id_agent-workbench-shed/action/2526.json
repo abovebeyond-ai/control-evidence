@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a2c7f1b42ae96179df21b1c016579e4d75b92bec",
+            "branch": "workbench/booklet-community-banner",
+            "files_sha256": "6b0024a3f6a461bbdb05c354cea0ecd89dde8324ce86f5f0551e22ca77561091",
+            "message": "Booklet: page 10 shows the first community as a photo banner with its sticker"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261120092248-63edc0"
+}

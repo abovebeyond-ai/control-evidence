@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`scripts/build-print.sh` now writes PDFs whose photos show in Preview on a Mac.\n\n## Why\n\nChrome tags most photos with a small sRGB profile. Ghostscript 10.07 copies that profile as an empty stream. Preview then draws no photo at all, while other viewers fall back to plain RGB and show it. The script on main produces such files.\n\n## How\n\n- Ghostscript writes every object as plain text (`-dWriteObjStms=false -dWriteXRefStm=false`).\n- A `repair` step rewrites each colour space that points at an empty RGB profile to `/DeviceRGB`, padded to the same number of bytes so no offset in the file moves. The photos themselves are untouched. With a Ghostscript that writes the profile properly there is nothing to repair.\n- Chrome runs without the virtual time budget flag; it waits for images and fonts by itself.\n- A `report` step warns when a result is much smaller than Chrome's own output, the sign that photos were lost.\n- `OUT=/some/dir` builds without touching the repository.\n\nConverting everything to RGB in Ghostscript also removes the empty profile, but it drops the dark overlay on the booklet cover, so it is not used.\n\n## Checked\n\nBuilt the booklet on a Mac with Ghostscript 10.07.0: 16 pages, no fonts left, photos visible in Preview, trim box on the print file marks the A5 inside the 3 mm bleed.\n",
+            "branch": "workbench/print-build-repair",
+            "title": "Print build: photos show in Preview"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261120092210-5edb33"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nSince 19 November 2026 the source links in the designed reports lead through Gentells: each one opens `gentells.com/sources/<key>`. The site is still behind the launch cover, so a reader of a report who has no preview link and no account lands on the holding page instead of the source. The reports go to a wider group on 20 November.\n\n## What\n\n`sources/*` joins the paths the cover always lets through (`PreLaunch::ALWAYS_OPEN`).\n\n- A source page shows the publisher, the title, the date, where Gentells cites it and the way out to the publisher. It carries `noindex, follow` already.\n- What it links on to (a trend, a post, a report) stays behind the cover: a reader without a link meets the holding page there, as before.\n- A key that names no source is still a 404.\n\nTo weigh: the page names the reports and posts that cite the source and the public trends it feeds, by title. Those titles become readable before launch for anyone who holds a source link.\n\n## Checked\n\n- `PreLaunchTest`: a new case opens a source page through the cover, keeps the noindex, answers 404 for an unknown key, and shows `/trends` and `/reports` still covered. 19/19.\n- Full suite 666 of 667 locally; the one failure is `BuildStampTest`, which reads the checkout's git folder and does not find one in a worktree. Pint clean on the touched files.\n",
+            "branch": "workbench/sources-outside-gate",
+            "title": "A source a report cites opens through the launch cover"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261120092210-43ca10"
+}

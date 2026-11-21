@@ -1,0 +1,16 @@
+{
+    "action": "4aaeca55b4b63dbfb0768a1c447a8200",
+    "effect": {
+        "detail": {
+            "base": "1bbda98181ad5975ca2f0c237e393091a26e9288",
+            "branch": "workbench/marks-grid-browser-tests",
+            "commit": "27c251ec8b074d2d07fca38b5e4bdb790791e02f",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2562,
+    "verdict": "ALLOW"
+}

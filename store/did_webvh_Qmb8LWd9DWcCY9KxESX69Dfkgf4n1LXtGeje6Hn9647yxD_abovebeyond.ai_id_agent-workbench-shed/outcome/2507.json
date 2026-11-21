@@ -1,0 +1,10 @@
+{
+    "action": "1162f450d8b04be485febe1ba4c919ad",
+    "effect": {
+        "performed": false,
+        "why": "refused"
+    },
+    "reason": "a second branch.push in one run: the first already ran",
+    "step": 2505,
+    "verdict": "DENY"
+}

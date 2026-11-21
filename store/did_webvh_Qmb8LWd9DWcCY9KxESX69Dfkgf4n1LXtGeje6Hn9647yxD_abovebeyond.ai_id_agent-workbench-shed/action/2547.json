@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ddfb6705c112dc207504a57f8ecc9130367bac94",
+            "branch": "workbench/cited-source-date",
+            "files_sha256": "2ec7d9307b4ad8075f3a70f80044740881b1ea418b7da00cc08f29f0a2aa8aac",
+            "message": "Source pages: a remark in the date field no longer stops the sync\n\nNo source page existed on the site. One report's source list gave a\nremark as its date, longer than the column; the insert failed and the\nwhole sync of cited sources rolled back, on every run. The sync now\nkeeps the date that is in the field (a year, a month or a day) or none,\nand clips a publisher name to the column.\n\nPortal: De bronpagina's op gentells.com bestonden niet door een fout in het overnemen van \u00e9\u00e9n datum. Dat is opgelost; de links in de rapporten komen nu op een pagina uit."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261120125112-40630f"
+}

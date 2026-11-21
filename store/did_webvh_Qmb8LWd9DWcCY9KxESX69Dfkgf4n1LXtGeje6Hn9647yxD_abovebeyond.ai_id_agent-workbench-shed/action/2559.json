@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1bbda98181ad5975ca2f0c237e393091a26e9288",
+            "branch": "workbench/fill-example-exam",
+            "files_sha256": "55fce68a15bd178fe0fb3c6ec398916a2dfffbf0b1c97a556c6e0c48ae22b583",
+            "message": "Browser tests: run the CI job on Ubuntu 24.04"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261120132808-941518"
+}

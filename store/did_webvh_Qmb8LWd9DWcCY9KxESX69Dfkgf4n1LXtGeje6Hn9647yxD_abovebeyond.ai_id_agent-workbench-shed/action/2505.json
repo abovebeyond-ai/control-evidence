@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "15c5268f81d028e02af58e6cf299f69bee901383",
+            "branch": "workbench/admit-on-sources",
+            "files_sha256": "7c9ab94d5ab3c2b3a83fca23648edcd62ac1c51f6cf7c691360108c739f79189",
+            "message": "Passed trials test: drop the screenshot line that lint refuses"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261119172631-c3bb16"
+}

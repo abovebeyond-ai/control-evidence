@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a2c7f1b42ae96179df21b1c016579e4d75b92bec",
+            "branch": "workbench/booklet-community-banner-pdfs",
+            "files_sha256": "69616a7e8a5b576a0fc7cde4e36d4593b67cad2b23e2fd5cb39aac3ad01c5c1a",
+            "message": "Booklet: rebuilt PDFs with the community banner on page 10"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261120092358-d7541d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nA trial that passed waits for a person to read the source's terms of use and admit it. Nothing in the Observatory could do that: admitting was a command on the server. The pipeline now has the route and looks the terms up (Trendwolves/gentells-pipeline, \"Admitting a source moves into the tool, with its terms looked up\"); this is the place where a person uses it.\n\n## What\n\nA block \"Passed their trial\" at the top of the Sources page, shown only when there is one.\n\n- Per source: what the trial brought (signals, share kept against all sources, share that no other source brought).\n- What was found about the terms: a link to the page and the sentence the suggestion rests on, with how the Observatory reads it. When nothing could be told, the reason and a link to what was read. When it has not been looked up yet, a link to the site.\n- The person chooses what the terms say. The choice starts empty and there is no button until it is made; the suggestion is never filled in for them.\n- The button says what will happen: \"Admit <name>\" on terms that allow a paid product, \"Turn <name> down\" on terms that do not.\n- Read by the whole team; the choice and the button only for those who can write.\n\n## Checked\n\n- `e2e/sources-passed-trials.spec.js`: a trial that has not passed is not offered; the found sentence and its link are shown; no choice is made for the person and no button exists before one; the chosen terms are what is sent; the confirmation says the source is admitted.\n- Full e2e suite 104/104, eslint clean on the touched files.\n\n## Order\n\nMerge after the pipeline change is deployed. Before that the block stays hidden, because the route it reads does not answer.\n",
+            "branch": "workbench/admit-on-sources-2",
+            "title": "Sources: admit a trial that passed, after reading its terms"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261120075116-f38b5d"
+}

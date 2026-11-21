@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a2c7f1b42ae96179df21b1c016579e4d75b92bec",
+            "branch": "workbench/print-build-repair",
+            "files_sha256": "5e3391cf77faf066a0e46b0c08499ec0744240d5ee998cab5df26292efb5fcc3",
+            "message": "Print build: repair the empty colour profile Ghostscript 10.07 writes, so photos show in Preview"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261120092210-5edb33"
+}

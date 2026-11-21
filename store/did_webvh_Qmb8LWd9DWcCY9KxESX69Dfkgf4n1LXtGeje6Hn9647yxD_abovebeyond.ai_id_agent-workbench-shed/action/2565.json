@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was wrong\n\nOn the demo, \"Fill example marks\" in the scorebook's marks grid did nothing, in any period. The grid's script looked up `form[method=\"POST\"]` on the page and took the first match. On the demo that is a role button in the demo bar, not the grid, so the script found no mark cells. The warning before leaving with unsaved marks used the same lookup and never fired either.\n\n## What changes\n\nThe fill, the leave warning and the mouse-wheel guard move out of a loose `<script>` block into the form's own Alpine component, next to the autosave that already lived there. They reach the form through `$root`, so nothing depends on which forms a layout puts on the page.\n\nThe leave warning now follows the autosave. It shows only while marks are not on the server yet, which includes an autosave that failed. Before, it would have stayed on after the first typed mark, even once everything was saved.\n\n## Browser tests\n\nPHPUnit can only read the page's source, which is how a button that did nothing went unseen. This adds a small Playwright suite that needs nothing but PHP:\n\n- `npm run test:browser` starts a fresh demo school on its own SQLite file (`tests/DemoBrowser/serve.sh`) and clicks through it. No Kolibri, no MySQL.\n- A second job, `browser`, in the Tests workflow runs it on every push and pull request.\n\nFive tests on the marks grid, as the demo headmaster:\n\n- Fill example marks fills every open cell, never above the column's maximum, and the marks survive a reload.\n- The browser asks before leaving only while a mark is not saved yet.\n- A mark that fails to save keeps the warning on.\n- Arrow keys and Enter move between cells.\n- A wheel event over a focused mark takes the focus off it.\n\nAgainst the grid as it is on main, three of the five fail (the fill and both warning tests). With this change all five pass.\n\n## Notes\n\n- The wheel test sends the event by hand. A real wheel gesture over a number field behaves differently in a headless browser than on a desktop, so that part is less firmly proven than the rest.\n- The `browser` job has not run on GitHub before this pull request; its first run here is the check.\n- The older specs in `tests/Browser` expect a hand-started server with Kolibri and are left as they are.\n\n## Checked\n\n- PHPUnit: 541 passed, 2 skipped.\n- Browser suite: 5 passed, three runs in a row.\n",
+            "branch": "workbench/marks-grid-browser-tests",
+            "title": "Scorebook: Fill example marks works on the demo, with browser tests"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261120132822-3d7648"
+}

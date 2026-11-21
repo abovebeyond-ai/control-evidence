@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n`KUBO_Booklet_EN.pdf`, the A4 booklet, rebuilt on a Mac from the sources in #30 (page 10 with the community photo banner and sticker).\n\nIt is the third of the three booklet PDFs. The two A5 files are in #31; all three together were too large for one request. Merge alongside #30 and #31.\n\n## Checked\n\n16 pages, A4, no fonts left (text is outlines), photos visible in Preview, page 10 rendered with photo, text and sticker in place.\n",
+            "branch": "workbench/booklet-community-banner-pdf-a4",
+            "title": "Booklet: rebuilt A4 PDF with the community banner"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261120092429-aaa2b5"
+}

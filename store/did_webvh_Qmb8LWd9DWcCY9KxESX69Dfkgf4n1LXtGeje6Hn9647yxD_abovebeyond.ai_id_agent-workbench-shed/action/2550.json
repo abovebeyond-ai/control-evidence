@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nNo source page exists on gentells.com, so every source link stamped into a report ends on \"Not found\". The launch cover hid this until `sources/*` was let through it on 20 November 2026.\n\n`gentells:reconcile` on production says why:\n\n```\ncited sources: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'date'\n```\n\nOne source in a report's list carries a remark as its date (\"from 2026-09-09 (per search snippet)\"), 36 characters in a column of 32. The cited sources are written in one transaction, so that one row took every page with it, on every run since the list was held.\n\n## What\n\nIn `Projection::reconcileCitedSources`:\n\n- The date kept is the date in the field: a year, a year and month, or a full day. A field with no date in it gives none. The page shows a date, not a remark about how it was found.\n- A publisher name is clipped to the column.\n\nNo migration: the column is wide enough for what is now stored.\n\n## Checked\n\n- `CitedSourcePageTest`: a new case syncs a remark with a date in it, a year and month, a remark without a date and a bare year; all four pages are held, and the page shows \"9 September 2026\" without the remark.\n- Full suite 667 of 668 locally; the one failure is `BuildStampTest`, which looks for the checkout's git folder and finds none in a worktree. Pint clean.\n\n## After merge\n\n```bash\nphp artisan gentells:reconcile     # expect \"cited sources: N pages\"\n```\n\nThe same remark still sits in the Observatory's list for that report (Going Out, Staying In, source 5); tidying it there is editorial and changes nothing for this fix.\n",
+            "branch": "workbench/cited-source-date",
+            "title": "Source pages: a remark in the date field no longer stops the sync"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261120125112-40630f"
+}

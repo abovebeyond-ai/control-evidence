@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1bbda98181ad5975ca2f0c237e393091a26e9288",
+            "branch": "workbench/marks-grid-browser-tests",
+            "files_sha256": "dd0bba719cc1269786dbb741e5728648c66eadc554f2beea9355d52b658e3e4e",
+            "message": "Scorebook: the marks grid acts from inside its own form, with browser tests"
+        },
+        "resource": "kubo-global/kubo-school-platform"
+    },
+    "run": "workbench-20261120132822-3d7648"
+}

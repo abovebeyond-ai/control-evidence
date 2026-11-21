@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9400076b6ad64959a8bf0076d67d7eac20ee1fc3",
+            "branch": "workbench/report-source-pages",
+            "files_sha256": "ae8bec5907118ab77807ab32fe7a16f1a2cdb4fc33944d44e5ffe2f1d8dda4e4",
+            "message": "A report's source list is set again by Gentells\n\nThe link step could only lay a link over the addresses the designers\nprinted, so the page a reader saw still named the way out, and finding\nthose addresses in each new design was a guess. The pages that hold the\ndesigners' list are now taken out and the list is set in their place\nfrom the sources held for the report: publisher, title, date, and the\naddress of the source's page on gentells.com, the whole entry linked.\n\nA page is replaced only when it is a source list beyond doubt (a source\nheading with addresses of the list on it, or three or more of them).\nOtherwise the stamped links stand and the outcome says so. The\ndesigners' file is kept as it came.\n\nPortal: De bronnenlijst achteraan een rapport wordt nu door Gentells zelf gezet, met bij elke bron het adres van haar pagina op gentells.com."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261120132938-b26cff"
+}

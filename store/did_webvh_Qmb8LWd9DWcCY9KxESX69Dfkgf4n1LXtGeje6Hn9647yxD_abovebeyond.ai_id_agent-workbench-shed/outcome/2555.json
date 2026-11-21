@@ -1,0 +1,16 @@
+{
+    "action": "a017924674242d78aee1d2ba53dd8e33",
+    "effect": {
+        "detail": {
+            "base": "1bbda98181ad5975ca2f0c237e393091a26e9288",
+            "branch": "workbench/fill-example-exam",
+            "commit": "38b5c62c4d46962021c86bcac1de6582f40287fe",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2553,
+    "verdict": "ALLOW"
+}

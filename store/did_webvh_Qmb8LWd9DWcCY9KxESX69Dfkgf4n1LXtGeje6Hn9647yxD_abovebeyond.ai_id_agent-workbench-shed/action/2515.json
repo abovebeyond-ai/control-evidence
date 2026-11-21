@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fb2c00772a879dc60cf84e44c173b75f67c111e8",
+            "branch": "workbench/sources-outside-gate",
+            "files_sha256": "00d959710e6739dd2dcc18cfb76c02e7a1f130837bc522e041c2ee3223ea04c8",
+            "message": "A source a report cites opens through the launch cover\n\nThe links in a report's PDF lead to gentells.com/sources/<key>. A report\nis read by people who were never sent a preview link, so every one of\nthose clicks ended on the holding page. Source pages now pass the cover;\nthey stay out of search, and the trends, posts and reports they link on\nto stay closed.\n\nPortal: Wie in een rapport op een bron klikt, komt nu op de bronpagina uit en niet meer op het wachtscherm."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261120092210-43ca10"
+}
