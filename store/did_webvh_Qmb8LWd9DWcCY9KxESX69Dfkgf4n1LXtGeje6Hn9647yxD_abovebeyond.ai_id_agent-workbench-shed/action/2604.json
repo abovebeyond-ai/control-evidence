@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a4f69047a5d2ea21213586e09e0d077f774d1168",
+            "branch": "workbench/voice-study",
+            "files_sha256": "87b79e17c90e29fb0f2da745bb7df67af05c8ea89d0318dc945cde54cf766ad6",
+            "message": "Study by voice: a study conversation from the voice screen\n\nThe voice screen gets a second start, Study. It lists the courses the voice\nbridge offers (GET /study) with what studying by voice cost this month\nagainst its cap, and one tap on a course starts a study conversation:\nPOST /session {mode: \"study\", course, microphone?}. The bridge mints the same\nrealtime voice with the study service's instructions and its three tools\nonly; the app connects as it does for the work voice.\n\nIn a study conversation the voice opens (speaksFirst), tool calls go through\nPOST /act unchanged, and nothing is written into the work conversation: no\ntranscript, no notices, no typed lines. The screen shows the course, the\ntopic the study service is on, whether the voice speaks or waits, the time\nand one large Stop. When the study service ends the session, the app closes\nthe conversation after the voice's last words.\n\nWhat the realtime API reports as used (response.done, transcription\ncompleted) is sent to the bridge once per event id (POST /usage), for the\nwork voice too, because the session runs between the phone and OpenAI and\nthe bridge's ledger and monthly cap can only count what the phone reports.\nWhen the bridge answers that the cap is reached the running session goes on,\nthe app says so once and offers no new one. A refusal from the bridge (cap,\nunknown course, study service out of reach) is shown in the bridge's own\nsentence.\n\nThe end of a conversation is now told to the bridge outside the service's\nscope, so it is also told when the service is already gone."
+        },
+        "resource": "abovebeyond-ai/portal-android"
+    },
+    "run": "workbench-20261121213518-ea76ef"
+}

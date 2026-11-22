@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb3702e4cd1af04b9d1e6bef83efb82fad0675a2",
+            "branch": "workbench/newsletter-signup",
+            "files_sha256": "b3da3797ff28548568f54c50e095e059e1e86d18a60b82a220c345285d8c29f9",
+            "message": "The newsletter list is kept by the website and managed on its own admin page"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261121084948-6f4a94"
+}

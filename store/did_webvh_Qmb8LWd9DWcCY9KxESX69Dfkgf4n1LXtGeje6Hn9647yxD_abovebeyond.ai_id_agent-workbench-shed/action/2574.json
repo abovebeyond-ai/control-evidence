@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cb3702e4cd1af04b9d1e6bef83efb82fad0675a2",
+            "branch": "workbench/donors-private-path",
+            "files_sha256": "d4acaf39d7c98502ca29f64f69312802ac38ac0f135fb7e420474b09054bb317",
+            "message": "Donor records and campaign manager tokens are stored where they cannot be read without a login"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261121084909-1bcdbf"
+}

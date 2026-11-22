@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-21T07:34:32+00:00",
+    "computed_at": "2026-11-22T07:34:34+00:00",
     "window": {
-        "since": "2026-11-14T07:33:02+00:00",
+        "since": "2026-11-15T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -122,8 +122,8 @@
         },
         "Trendwolves/gentells-pipeline": {
             "dispatches": {
-                "github": 1,
-                "gateway": 1
+                "github": 0,
+                "gateway": 0
             },
             "pulls": {
                 "github": 23,
@@ -188,8 +188,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             }
         },
         "kubo-global/kubo-website": {
@@ -394,8 +394,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/portal-cli": {
@@ -405,8 +405,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "abovebeyond-ai/proof-of-control": {

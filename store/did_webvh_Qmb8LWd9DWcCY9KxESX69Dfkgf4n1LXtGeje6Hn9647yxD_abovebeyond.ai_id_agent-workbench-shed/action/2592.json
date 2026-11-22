@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:63",
+            "note": "Same alarm as open issue #1012 (no new issue). Fix rebased and tested on branch workbench/photo-upload-backoff-2 (worktree ~/work/photo-upload-backoff-63, PR body ~/work/photo-upload-backoff-63-pr.md), not proposed. Question: may it go out as a pull request? Also: the read layer is not admitted, so whether the photo of vehicle 24107 arrived is unchecked.",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261121183529-a3e17d"
+}

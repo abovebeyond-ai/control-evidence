@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:63",
+            "note": "Same alarm as open issue #1012, no new issue. Fix rebased and tested on branch workbench/photo-upload-backoff-2 (worktree ~/work/photo-upload-backoff-63), not proposed. Question: may it go out as a pull request?",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261121183537-5f3616"
+}

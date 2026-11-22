@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2a7bf89051ab2ec980f8884e0a7a8e409f2fe3e1",
+            "branch": "workbench/voice-study-mode",
+            "files_sha256": "baa3fad35068c3cfecc1e71b0c3ce6d4e46ccec39bd41e502e7806e7aeebf351",
+            "message": "Add a study mode to the voice bridge\n\nPOST /session {mode: \"study\", course} mints a realtime conversation whose\ninstructions and tools come from the study service on the workbench, and\nonly its three tools (study_next, study_answer, study_command). Tool calls\nof such a conversation are carried to the study service's routes of the\nsame name; any other name is refused, and a brief that offers another tool\nis refused before a session is minted. The work voice is minted exactly as\nbefore when no mode is given.\n\nA study conversation has its own id and stays out of the work timeline, the\ntranscripts and the memory consolidation, and hears no agent notices.\n\nThe session is minted with a capped conversation window (truncation by\nretention ratio). POST /usage takes the usage the realtime API reported to\nthe page or app into a monthly ledger priced at list price, counted once\nper event id, and a monthly cap on study usage refuses a new study session\nwith a sentence the phone can show. GET /study lists the courses with the\nmonth's amount and cap.\n\nThe study service address and the course list come from the environment,\nnever from the caller. The OpenAI key stays sealed to the bridge; the study\nservice holds none."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261121211949-61b7e8"
+}
