@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "14253dcc55e0c3c5fff83f6b2c5f9db2811069b5",
+            "branch": "workbench/import-skipped",
+            "files_sha256": "8f6d07f9b41287049c835365fa9ca9b69b814b1a995e99e585a78e554482657a",
+            "message": "The import says which rows it leaves out and why"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122174043-82181c"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "In the newsletter editor every block stood in one column, one below the other, always aligned left. This lets whoever writes a newsletter choose where things stand.\n\n**What can be chosen**\n\n- Heading, text and button: left, middle or right.\n- Photo: full width, half width, or left or right of a text.\n- Symbols: in a row of their own or left or right of a text, in three sizes (small, normal, large).\n- Blocks can be dragged by their handle, and a **+** between two blocks puts a new one there. Up and Down stay, for a phone or a keyboard.\n\n**How it holds up in a mail**\n\nFree placing as in a design tool does not survive mail programs, so these are fixed places built the way mails need them: tables with a fallback for Outlook, and a media query so that on a phone a photo beside a text goes above it at full width. Symbols beside a text stay beside it.\n\nOnly choices that differ from the usual are stored, so newsletters made before this look exactly as they did.\n\n**Checked**\n\n- `npm test`: 117 tests, including the new places, the mail they give and what the editor warns about.\n- `npm run build`.\n- In Chromium with a stand-in for Sanity and the mail: 81 steps over placing, symbols, name tags and the editor, on desktop and phone width.\n\nNot checked: Gmail, Outlook and Safari. A photo beside a text is the part to look at in a test mail in Outlook.\n",
+            "branch": "workbench/mailing-place",
+            "title": "Where things stand in a newsletter can be chosen"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261123071157-c50733"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8c83dd87b8bde713d65b9999bed96605583ff430",
+            "branch": "workbench/handover",
+            "files_sha256": "1fc4270ced159fde2914cddf8dc015dc4e89dfd93a1265ec393906b41ee4d3f6",
+            "message": "Handover: the lean CRM, the mail system and the accounts system"
+        },
+        "resource": "bextrust/crm"
+    },
+    "run": "workbench-20261122153335-cf8c78"
+}

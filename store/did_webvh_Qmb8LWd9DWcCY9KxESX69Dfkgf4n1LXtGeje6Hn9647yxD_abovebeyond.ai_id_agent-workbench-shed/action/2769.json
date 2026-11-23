@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nAsked for the Gentells links of a list of sources, Ask said there were none, asked whether to keep the pages, and after the yes showed the plan and asked again. Asked for a paragraph in between, it would not write before the second yes.\n\n## What\n\n- `source_links` says in its answer what can be kept and to show that plan at once with `source_keep`, without `confirm`. The person says yes once, to the plan. Because it is in the answer, it also reaches an assistant connected to gentells.com/mcp.\n- A text the person asked for is written meanwhile with the publishers' own addresses.\n- Ask's note names `source_find`: look there before saying a source is missing.\n\nNothing is kept without a yes to a shown plan, as before.\n\n## Checked\n\n- A real run on Ask's own note, tools and default model, throwaway database. Twelve links: the plan in the first answer, kept on one yes, a paragraph with the Gentells links after it. Fifty-one links: one yes, about 35 seconds per answer.\n- The same run before the change asked twice.\n- Full suite 1823 of 1823, `tsc` clean.\n\n## After merge\n\nNothing to run.\n",
+            "branch": "workbench/ask-writing",
+            "title": "Ask shows what it would keep together with the links, so there is one yes"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261122213934-aa7b4d"
+}

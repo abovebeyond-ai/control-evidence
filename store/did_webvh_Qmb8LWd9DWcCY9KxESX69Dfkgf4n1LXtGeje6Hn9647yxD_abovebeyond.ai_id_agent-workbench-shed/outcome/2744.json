@@ -1,0 +1,16 @@
+{
+    "action": "de919476861f280bba6543eb675f1238",
+    "effect": {
+        "detail": {
+            "base": "d1e918ee5926e1e8ab73dd5428f2549247e856fd",
+            "branch": "workbench/mcp-desk-tools",
+            "commit": "d23bb946061b54c792df56ab3c8730df51a4c844",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2742,
+    "verdict": "ALLOW"
+}

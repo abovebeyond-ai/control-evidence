@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nImporting a sheet answered with a count only: so many lines without a usable address are left out. With ten such lines in six hundred, whoever imports has to search the sheet by hand for an empty cell, a typing mistake or an address that is there twice.\n\n## What changes\n\n\"Check first\" and \"Import\" on `/newsletter-admin` now list every line that is left out:\n\n- its row in the sheet (the title row is row 1),\n- the reason: no email address, not a valid email address, or an address that is already higher up in the sheet,\n- what was in the cell, so the mistake can be seen at once.\n\nAfter an import with lines left out the page no longer reloads by itself, so the list stays readable; a \"Show the list\" link reloads it. Mending those rows in the sheet and pasting everything again is safe: people already on the list are skipped.\n\nThe list is cut off at 200 lines, with a count of the rest.\n\n## Checked\n\n- `npm test`: 96 pass. The existing test for left-out lines now also checks row and reason; one new test for a sheet with a title row.\n- `npm run build` passes.\n- Tried in a browser with a made-up sheet of six rows, four of them faulty (empty cell, address without a dot, two addresses in one cell, an address twice): each was listed with the right row and reason, for both \"Check first\" and \"Import\".\n\n## Not checked\n\nAgainst the real list. Nothing about what is stored changes.\n",
+            "branch": "workbench/import-skipped",
+            "title": "The import says which rows it leaves out and why"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122174043-82181c"
+}

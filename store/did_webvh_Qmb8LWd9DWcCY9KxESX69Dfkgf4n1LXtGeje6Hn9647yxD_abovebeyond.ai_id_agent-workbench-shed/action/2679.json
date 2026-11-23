@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c31e3a3f31be26e63da6943c723286ea4093cc8d",
+            "branch": "workbench/admin-login",
+            "files_sha256": "cd70fd2de3172b77c9bd96081014f243ea539eb4ebeb0d798eb19bead0677e79",
+            "message": "The back office gets a login by mail, one menu and one look"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122161118-5bcde9"
+}

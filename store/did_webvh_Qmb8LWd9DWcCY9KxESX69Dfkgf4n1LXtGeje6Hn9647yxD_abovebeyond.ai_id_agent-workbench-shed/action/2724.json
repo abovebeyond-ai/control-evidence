@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "98d14ddef17d48c25f256fac340d8fffccbced7d",
+            "branch": "workbench/ask-keeps-sources",
+            "files_sha256": "4618e23358e4e93da8af678b93785812a373ef15a46e3cde7db457b45364367d",
+            "message": "Ask and the Gentells MCP give a text's sources their Gentells links\n\nA source got a page on gentells.com only when a post or a report cited it. A text\nmade with an assistant outside both could only link to its publishers. An editor can\nnow hand over the addresses (at most 60 at a time), keep the pages Gentells does not\nhold after seeing them, and get each one's page back. Competitors, sources read for\ninspiration and pages of Gentells are refused, also behind a redirect. A title the\nassistant gives names only a page that could not be read and never becomes its text.\nThe guide now says Ask can look on the web.\n\nThe site reaches the same tools at POST /internal/desk-tools with its own token,\nDESK_TOOLS_TOKEN; unset means closed.\n\nPortal: Bronnen uit een tekst die met Ask of een gekoppelde assistent gemaakt is, kunnen nu een eigen pagina en link op gentells.com krijgen."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261122181554-18e047"
+}

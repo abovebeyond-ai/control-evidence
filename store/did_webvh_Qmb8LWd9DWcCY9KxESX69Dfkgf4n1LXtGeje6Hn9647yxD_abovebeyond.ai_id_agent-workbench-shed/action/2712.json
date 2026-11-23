@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d63dc5e981067c0fd273353a42d8993dc9f000ee",
+            "branch": "workbench/source-page-icon",
+            "files_sha256": "cc3c1661d74be0fa4984536ed78e2a1cbda1181f9d9e5fb77f1f57e84896c52f",
+            "message": "A source page shows the icon of the publisher's site\n\nA source page named its publisher in words only, the same for every source. The icon of\nthe publisher's site now stands above the title, so a reader sees whose page is about to\nopen.\n\nThe icon is fetched by the sync, five sites a run, and kept and served here: opening a\nsource page does not tell the publisher about the reader. Only public addresses are\nasked, the address that was checked is the one connected to, redirects are followed by\nhand and checked the same way, and only a picture is kept. An SVG is refused because it\ncan carry script and would be served from our name. A site without an icon is asked\nagain after a month and its source pages show none.\n\nPortal: Een bronpagina op gentells.com toont nu het icoon van de site waar de bron vandaan komt."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261122175456-bc7b9e"
+}

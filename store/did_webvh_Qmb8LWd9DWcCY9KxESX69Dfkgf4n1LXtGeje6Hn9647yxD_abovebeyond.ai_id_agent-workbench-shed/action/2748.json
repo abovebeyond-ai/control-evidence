@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bfae532a4cf63febc4faae08db802c37f9f01abb",
+            "branch": "workbench/mcp-desk-tools",
+            "files_sha256": "2c05c15619af54763497a89bcc9dd2ee8cf32cae02c09613af251230fb452a19",
+            "message": "The team's assistant gets the guide, what waits, sources and questions through /mcp\n\nSix more tools, listed to the proven team only and answered by the Observatory: guide,\nquestion_note, question_list, desk_open, source_find and source_trial. Every tool is on\nthe first page of the list. The instructions say to offer a written question instead of\na mail. MCP contract 4.2.0, added only.\n\nThe page of a source that nothing on the site cites says it is kept, not cited.\n\nPortal: Het team kan vanuit een gekoppelde assistent meer zelf; een bewaarde bron heet op haar pagina niet langer geciteerd."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261122203151-c9d699"
+}

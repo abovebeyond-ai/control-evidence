@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nA source page names its publisher in words only and looks the same for every source. The icon of the publisher's site shows at a glance whose page is about to open.\n\n## What\n\n- Above the title of a source page: the icon of the publisher's site, 40 by 40. A site without a usable icon leaves no gap and no broken picture.\n- `App\\Sources\\IconFetcher` reads the site's home page for the icon it names (the home screen icon first, then the largest), and tries `/favicon.ico` after that.\n- `App\\Sources\\SourceIcons` fills them at the end of the cited sources sync, five sites a run, one icon per site in a new `source_icons` table. A site that gave none is asked again after 30 days. A failure here never fails the sync.\n- `GET /sources/{key}/icon` serves our copy. The page does not load anything from the publisher, so opening it does not announce the reader there.\n\n## Safety\n\nThe addresses come from lists of cited sources, so the server asks sites nobody here chose.\n\n- https on the standard port only, a name and not a bare address, and every IPv4 address of that name must be public.\n- The address that was checked is pinned for the connection, so a name that answers differently the second time leads nowhere else.\n- Redirects are followed by hand, at most three, each checked the same way.\n- Kept only when the first bytes are PNG, JPEG, GIF, WebP or ICO and the file is at most 300 KB. SVG is refused: it can carry script and would be served from our name. Served with the kind that was checked and `nosniff`.\n\n## Checked\n\n- `SourceIconTest`, 5 cases: the named icon is kept and shown; only a picture is kept; a site without one is not asked again for a month; an address inside the network is never asked, also not after a redirect; one icon for every source of a site.\n- The fetcher tried on fifteen real sites from the workbench: fourteen gave an icon, most within 0.3 seconds, the slowest 1.5. Ofcom gave none.\n- A source page opened locally with a real icon.\n- Full suite 677 of 678; the one failure is `BuildStampTest`, which needs a git folder the worktree does not have.\n\n## After merge\n\nThe migration runs with the deploy. The icons arrive by themselves, five sites every sync.\n",
+            "branch": "workbench/source-page-icon",
+            "title": "A source page shows the icon of the publisher's site"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261122175456-bc7b9e"
+}

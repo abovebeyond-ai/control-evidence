@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nAn assistant connected to gentells.com/mcp could give a text its source links and nothing else of the desk's work. How something works, whether a publisher is read, or something that looks broken, still became a mail when the person worked outside Ask.\n\n## What\n\n- `MCP_TOOLS` also opens `guide`, `question_note`, `question_list`, `desk_open` and `source_trial` to a team member's own assistant, with the same roles, the same yes and the same record as in Ask. Muting, rejecting, placing in a country, answering questions and admitting stay where they were.\n- `source_find` (read), new in Ask and on the MCP: whether a publisher is known and read, by name or by site, with its state in words.\n- An answer to a question left for development is told once, in Ask or through the MCP, whichever the person uses first.\n- `desk_open` through the MCP leaves out the name of a tool the assistant does not have.\n- A publisher queued because a page of it was kept says so in its notes, instead of \"Cited by an author in a Gentells post\".\n- The guide says what an own assistant can do, and that keeping a page proposes its publisher.\n\n## Checked\n\n- `test/kept-sources.test.mjs`: the new tools by role, an answer told once, a trial started by an editor and not by a client account, the notes of a kept publisher. Tools that stay closed are refused.\n- Full suite 1822 of 1822, `tsc` clean.\n- A real assistant against a throwaway site and pipeline. Asked to write a paragraph with two sources, it looked up the links and offered to keep the sources without being asked. Asked whether three publishers are read and whom to mail about an empty map, it answered per publisher, showed what it would keep and the question it would note, and changed nothing without a yes.\n\n## After merge\n\nNothing to run. The site change (\"The team's assistant gets the guide, what waits, sources and questions through /mcp\") lists the tools; this one can go first or second.\n",
+            "branch": "workbench/mcp-desk-tools",
+            "title": "The team's own assistant answers what used to become a mail"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261122203123-f85d37"
+}

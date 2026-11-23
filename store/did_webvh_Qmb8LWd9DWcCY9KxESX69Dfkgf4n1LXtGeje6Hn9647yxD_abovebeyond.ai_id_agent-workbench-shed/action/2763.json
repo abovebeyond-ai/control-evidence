@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\n`npm audit` named 15 packages the pipeline runs with, one of them critical: proxy-addr (CVE-2026-90711), where a client can pass for another address when a trusted proxy is written in a certain way. proxy-addr comes in with the MCP SDK's express. The pipeline uses the SDK over stdio only, does not load express and sets no trusted proxies, so the critical one does not reach it. The others were not judged one by one.\n\n## What\n\n- All named packages on a fixed release: the MCP SDK, sharp, zod, undici, markdown-it, body-parser, hono, @hono/node-server, fast-uri, ip-address, qs, proxy-addr and the AI SDK packages.\n- No major version up, and no release younger than two weeks.\n- `markdown-it` `^14.3.3` as a dependency of our own. It is a peer of proveml, which asks for any version from 14 on; without it the fix would have moved it to 15.\n\n## Checked\n\n- `npm audit`: 0 vulnerabilities.\n- `npm ci` from the new lock, full suite green (1823), `tsc` clean.\n- sharp turns a JPEG into WebP; Ask's tool server starts and lists its tools, as on the old versions.\n\n## Seen on the way, not changed here\n\n`ai` and `@ai-sdk/openai-compatible` do not work together since 1 September 2026 (the second went to version 3). Nothing uses them: the function in `models.mjs` that does has no caller. Removing both would also drop the undici that comes with them.\n\n## After merge\n\nNothing to run.\n",
+            "branch": "workbench/dependency-advisories",
+            "title": "Update the packages with a known vulnerability"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261122211927-7c25f8"
+}

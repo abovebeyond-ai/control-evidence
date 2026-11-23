@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe projection door answers everything under `/internal/` that it does not know, with 401 or 404. The newsletter door and the team tools (#494) came after it in `server.mjs` and were never reached. A tool called through the Gentells MCP got 401, and so does a newsletter the site posts. The tests of both called the handler directly, so they were green.\n\nA second fault came up on the same path: the first confirmed change went through and then answered with an error, on a database where no assistant had acted before, because the table for the record is made by Ask's own server only.\n\n## What\n\n- The projection door comes after the two doors that have a token of their own.\n- The assistant tools make the record table before they act.\n- `test/internal-doors.test.mjs` asks the doors through the real server: each token reaches its own door and no other, and a confirmed change is written down on a fresh database.\n\n## Checked\n\n- The new test failed before the change (401 where 403 is expected) and passes after it.\n- The site's `DeskTools` run against the real server on a throwaway database: look up, show, keep, look up again, take off. A tool outside the three is refused.\n- Full suite 1820 of 1820, `tsc` clean.\n\n## After merge\n\nNothing to run.\n",
+            "branch": "workbench/internal-doors",
+            "title": "The newsletter door and the team tools are reached again"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261122193421-f6eff1"
+}

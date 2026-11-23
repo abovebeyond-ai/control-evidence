@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe reader shows a report as pictures of its pages, and a picture carries no link. Since the source list at the back of a report is set by Gentells, every entry leads to its page on gentells.com, but only in the PDF: in the reader nothing could be opened.\n\n## What\n\n- A `links` column on `reports` (migration). The pipeline sends, per link, the page, the address and where it lies on the page as shares of the page (Trendwolves/gentells-pipeline, \"A stamped report tells the site its pages and where its links lie\").\n- `Report::cleanLinks` keeps only what can be laid over a page: an http(s) address, a page number from 1, and a place inside the page.\n- The reader lays each link over its page as an anchor that opens in a new tab. Only the links on pages this reader is shown are in the page, so a preview does not give away what the later pages link to.\n- The browser leaves full screen when a new tab opens, which used to close the reader. After a link it now stays open on the page it was on.\n- A file that is already here still takes a newer page count and links from the feed. Without that, a report fetched before the pipeline sent them would wait for its next change.\n\n## Checked\n\n- `FullReportReaderTest`: a link of the file is in the reader at its place; a link on a page the visitor is not shown stays out.\n- `ProjectionReportsTest`: links come along with the file and only those that can be placed (a `javascript:` address, a place outside the page, page 0 and a non-row are dropped); the same file takes a newer page count and links without being fetched again.\n- Full suite 671 of 672; the one failure is `BuildStampTest`, which needs a git folder the worktree does not have.\n- Not tried in a browser against the live reader. The placement was checked on a sample page rendered at the reader's size with the pipeline's link places drawn over it.\n\n## Note\n\nThe reader holds every page in a 2200 by 1248 frame. The links are placed against that frame, which fits the landscape pages every report has today (1440 by 816, the same shape within a fifth of a percent). An upright page would need its links placed against the picture instead.\n\n## After merge\n\n`php artisan migrate` runs with the deploy. The links arrive with the next reconcile after the pipeline change is deployed and the reports are stamped again.\n",
+            "branch": "workbench/report-reader-links",
+            "title": "The report reader opens the links of the file"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261122151418-bd61ed"
+}

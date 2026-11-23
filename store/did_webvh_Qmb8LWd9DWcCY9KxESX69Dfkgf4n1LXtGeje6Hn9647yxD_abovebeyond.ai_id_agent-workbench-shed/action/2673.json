@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9e76d6d21190bdc2664bb24e12ba7bcadd0e32c7",
+            "branch": "workbench/newsletter-notes",
+            "files_sha256": "a378194482fba18e6de4f680208f5364d74fdf00c012b6d772b9b2a00f04dd99",
+            "message": "A remark can be kept with each person on the newsletter list"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122155829-654ab9"
+}

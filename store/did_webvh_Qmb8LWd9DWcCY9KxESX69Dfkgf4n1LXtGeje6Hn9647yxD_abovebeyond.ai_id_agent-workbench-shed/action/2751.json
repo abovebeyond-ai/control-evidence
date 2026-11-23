@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe team's assistant had the source tools only, so a question about how Gentells works, or about a publisher, still became a mail. And the page of a source a person kept said \"cited by Gentells\" while nothing on the site cites it.\n\n## What\n\n- Six more tools on `/mcp`, listed to the proven team only and answered by the Observatory: `guide`, `question_note`, `question_list`, `desk_open`, `source_find`, `source_trial`. What they change is shown first and done on `confirm: true`.\n- An answer to a question the person left for development comes along as `answers_to_tell`, once.\n- The instructions tell the assistant to look in the guide first and to offer a written question instead of a mail.\n- Every tool is on the first page of the tool list (the default page held 15).\n- A source page that no post or report cites says \"A source kept by Gentells\".\n- MCP contract 4.2.0, added only.\n\n## Checked\n\n- `McpSourceToolsTest`, `McpContractTest` (only additions), `CitedSourcePageTest`. Full suite 685 of 686; the one failure is `BuildStampTest`, which needs a git folder the worktree does not have.\n- A real assistant against a throwaway site and pipeline, described in the pipeline pull request \"The team's own assistant answers what used to become a mail\".\n\n## After merge\n\nNothing to run. Until the pipeline change is deployed the new tools answer that this account or tool is not open.\n",
+            "branch": "workbench/mcp-desk-tools",
+            "title": "The team's assistant gets the guide, what waits, sources and questions through /mcp"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261122203151-c9d699"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:57",
+            "note": "Issue #1103. Elixir 2026-11-23: stocklist:smoke --all fails every run; the log shows a 10 s cURL timeout to rg-wms.com (RealGarant) at 06:23. Likely RealGarant again, not yet confirmed as the smoke's red line.",
+            "state": "parked",
+            "url": "https://github.com/stocklistdealer-eu/platform/issues/1103"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261123071922-59b047"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nAn assistant connected to gentells.com/mcp can cite a trend by its url, but has no way to get a Gentells link for a source. A text the team makes with it links straight to the publishers.\n\n## What\n\n- Three tools on `/mcp`: `source_links` gives the Gentells link of each address, `source_keep` keeps pages as sources with a page on gentells.com to link to, `source_unkeep` takes them off. The last two show first and act on `confirm: true`.\n- The Observatory answers them (`App\\Services\\DeskTools`, `POST /internal/desk-tools`) and decides by the person's role there. It writes down what was done.\n- Their own token, `DESK_TOOLS_TOKEN`. Without it the tools are not there.\n- Listed only to the team, and only to an account shown to be that person (`User::provenTeam`). The team reconcile marks an account by its address, and registering does not confirm an address. So acting also needs the Observatory password behind the account, a provider that vouches for the address, or a confirmed address.\n- MCP contract 4.1.0, added only. Nobody else's tool list changes.\n\n## Checked\n\n- `McpSourceToolsTest` (new): listed to the team and to nobody else, an account marked by its address alone is refused, no tools without the token, the request carries the person and the token, refusals are passed on as they are.\n- `McpContractTest` with the new snapshot: only additions.\n- Full suite: the one failure is `BuildStampTest`, which needs a git folder the worktree does not have.\n- Not tried: the site and the pipeline together on production.\n\n## Known limit\n\nAn account registered by someone else on a team member's address, and later linked when that member signs in with the Observatory password, keeps the first password. That was so before this change. It matters a little more now, because the account can keep sources.\n\n## After merge\n\nSet `DESK_TOOLS_TOKEN` to the pipeline's value and run `php artisan config:cache`. Needs the pipeline pull request \"Ask and the Gentells MCP give a text's sources their Gentells links\"; either order works.\n",
+            "branch": "workbench/mcp-source-links",
+            "title": "The team's assistant gets Gentells links for sources through /mcp"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261122181627-f80958"
+}

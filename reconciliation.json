@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-22T07:34:34+00:00",
+    "computed_at": "2026-11-23T07:34:37+00:00",
     "window": {
-        "since": "2026-11-15T07:33:02+00:00",
+        "since": "2026-11-16T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -126,8 +126,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 23,
-                "gateway": 23
+                "github": 29,
+                "gateway": 29
             }
         },
         "Trendwolves/gentells-site": {
@@ -137,8 +137,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 3,
-                "gateway": 3
+                "github": 9,
+                "gateway": 9
             }
         },
         "Trendwolves/glk-transferor": {
@@ -188,8 +188,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 11,
+                "gateway": 11
             }
         },
         "kubo-global/kubo-website": {
@@ -482,8 +482,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 3,
+                "gateway": 3
             }
         },
         "bextrust/bextrust-android": {
@@ -493,8 +493,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             }
         },
         "bextrust/control": {
@@ -504,8 +504,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             }
         },
         "bextrust/crm": {
@@ -515,8 +515,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 2,
+                "gateway": 2
             }
         },
         "bextrust/gate-demo-box": {

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0912fe2d1414cb7a27c18c8f9d47ff1f58d6d293",
+            "branch": "workbench/ask-writing",
+            "files_sha256": "5763b34f3bc20cd7e6c1625bff3ce55d7233f64da83b274f8974a5c098e73660",
+            "message": "Ask shows what it would keep together with the links, so there is one yes\n\nAsked for the Gentells links of a list, Ask said there were none, asked whether to keep\nthe pages, and after the yes showed the plan and asked again. It did not write the text\nbefore the second yes. The plan now comes in the same answer as the links, and a text is\nwritten meanwhile with the publishers' addresses. The answer of the tool says so, which\nalso reaches an assistant connected to gentells.com/mcp.\n\nAsk also looks whether a publisher is known before saying a source is missing.\n\nPortal: Ask bewaart de bronnen van een tekst na \u00e9\u00e9n ja en geeft meteen de Gentells-links."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261122213934-aa7b4d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "291e80f2b4c2f7bd09fbcaeecce8a425dbbf2deb",
+            "branch": "workbench/list-support",
+            "files_sha256": "6fafde57a32461c44dc414bd6e8ba35c5ce532b1fd3c757b3136f8f80d279bbd",
+            "message": "The newsletter list can show who on it already supports, and how much"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122175411-d76d24"
+}

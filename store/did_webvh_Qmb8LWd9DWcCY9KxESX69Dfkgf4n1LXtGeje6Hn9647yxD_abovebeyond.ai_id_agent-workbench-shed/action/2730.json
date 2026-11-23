@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7f75af7d32bb97cec9d34e131cb33f80af9e7aa8",
+            "branch": "workbench/mcp-source-links",
+            "files_sha256": "fadf2d0d5f98204862721452625f7fa225cb43540eea20deec51994ae6ba2861",
+            "message": "The team's assistant gets Gentells links for sources through /mcp\n\nThree tools, source_links, source_keep and source_unkeep, listed only to a team member\nwhose account is shown to be theirs: marked by the reconcile on its address alone is\nnot enough, because registering does not confirm one. The Observatory answers them and\ndecides by the person's role there. Own token, DESK_TOOLS_TOKEN; unset means the tools\nare not there. MCP contract 4.1.0, added only.\n\nPortal: Het team kan vanuit een gekoppelde assistent Gentells-links voor bronnen opvragen en bewaren."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261122181627-f80958"
+}

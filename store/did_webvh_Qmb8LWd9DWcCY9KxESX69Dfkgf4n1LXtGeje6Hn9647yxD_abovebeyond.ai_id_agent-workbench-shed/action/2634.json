@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "4a60c4f6edb41fa7c08bf5ea17492e074cd1da66",
+            "branch": "workbench/handover",
+            "files_sha256": "bab2cf3ff4dca8ac074e71f52f20af935cd5fa92251dd62aa4dbc0684398c908",
+            "message": "Handover: the rule book with mail and accounts, the knowledge folder and the Principal AI"
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261122153705-9f179a"
+}

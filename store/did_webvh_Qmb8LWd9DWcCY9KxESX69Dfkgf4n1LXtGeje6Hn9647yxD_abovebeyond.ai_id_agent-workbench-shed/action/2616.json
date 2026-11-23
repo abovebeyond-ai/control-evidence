@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a6ebb91498eebb0a73473a42654f4d0d7ab657e9",
+            "branch": "workbench/report-reader-links",
+            "files_sha256": "71bf2975b38089fa8ecfb36978c689b0ee10f001c3664a6153197d022b26d5dd",
+            "message": "The report reader opens the links of the file\n\nThe reader shows a report as pictures of its pages, and a picture carries no link: a\nsource in the list at the back opened from the PDF and not from the reader. The\npipeline now sends where each link lies on its page; they are kept with the report and\nlaid back over the page, only for the pages a reader is shown.\n\nA link opens in a new tab. The browser leaves full screen for that, and the reader now\nstays open on the page it was on.\n\nA file that is already here still takes a newer page count and links, so a report\nfetched before the pipeline sent them does not wait for its next change.\n\nPortal: In de leesweergave van een rapport kan je de bronnen achteraan nu aanklikken."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261122151418-bd61ed"
+}

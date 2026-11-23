@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7d8384e8447b8c606b0e1df749bc75414f649d20",
+            "branch": "workbench/mailing-tags",
+            "files_sha256": "ff34758d51cfabfbf80241486c76e1577e88d958e75f3095e15b9a0181856714",
+            "message": "Name, bold, links, lists and symbols go into a newsletter with a button"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122215710-856439"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5038398727c71b8fcc7037db2c2d9bee2d53d02e",
+            "branch": "workbench/team-link-ends-old-ways-in",
+            "files_sha256": "b1d8bedf0b463d76109889cce6f96954c3795a47e549e6dc73b3de66f905f228",
+            "message": "Linking a team account ends every way in from before\n\nRegistering on gentells.com asks for no proof of the address. A team member who signs in\nwith the Observatory password is linked to the account that exists on their address, and\nwhoever made it kept its password, sessions, keys and linked providers. These end at the\nmoment of linking now. Signing in again later leaves the account as it is.\n\nA linked provider no longer counts as proof for the team's tools on /mcp: linking one does\nnot ask for a confirmed address. Blocking an account also ends the refresh tokens of its keys.\n\nPortal: Een teamaccount op gentells.com heeft na het koppelen alleen nog de eigen toegang."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261123072703-5bccde"
+}

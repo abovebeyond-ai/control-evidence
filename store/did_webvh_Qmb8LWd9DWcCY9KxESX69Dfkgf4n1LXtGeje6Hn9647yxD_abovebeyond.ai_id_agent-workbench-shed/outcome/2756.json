@@ -1,0 +1,16 @@
+{
+    "action": "ff5ed5305c7552db09af98dce01951d4",
+    "effect": {
+        "detail": {
+            "base": "25f2d2393dbe2b652de44b9e95145f4a0fbfeff7",
+            "branch": "workbench/mailing-editor",
+            "commit": "8f925b776d7e9fdc49e7cec6e62b1e15b1866d07",
+            "files": 10,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2754,
+    "verdict": "ALLOW"
+}

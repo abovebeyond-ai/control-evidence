@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Until now a newsletter had to be made in another program, from an export of the list. With this the newsletter is written in the back office, in the look of the site's other mails, and tried out before anything is sent. **Nothing in this pull request sends to the list.**\n\n## What it does\n\n- `/mailings`, linked from the newsletter list as \"Write a newsletter\": the newsletters, newest first. For people who may open the newsletter section.\n- The editor: a subject, a title and blocks (heading, text, photo, button) that can be moved up and down, with a live preview next to it. One version per language (NL, FR, EN); a version can start as a copy of another.\n- Text knows `**bold**`, links and `{voornaam}` / `{pr\u00e9nom}` / `{firstname}`. Everything typed is escaped, and only http(s) and mailto links become links.\n- The editor says what is missing (no subject, a photo without a description, a button without a link). An unfinished version is not sent as a test.\n- A test goes to the person who is logged in. With the shared link it can only go to an address that has access to the back office.\n\n## Privacy\n\n- A newsletter is stored under an id with a dot (`mailing.<uuid>`), so a draft is not readable without a token.\n- A photo is made smaller in the browser and stored as a JPEG, which drops the camera's own data such as the place. The address of a stored photo is public for whoever has it, as it has to be for a photo in a mail. Throwing a newsletter away does not remove its photos from the image store.\n\n## Checked\n\n- 111 unit tests pass and the build succeeds, on the main of #41.\n- Walked through in a browser (desktop and phone width) against a stand-in for the database and the mail service, 16 checks: closed without a login, writing, photo, order, what is missing, test mail, languages, keeping after a reload, throwing away.\n\n## Not checked\n\n- Storing a photo in the real image store, and through nginx: a photo is usually a few hundred kB, but a limit on the size of a request could refuse a large one.\n- How the mail looks in Gmail, Outlook and on phones. A test mail after the merge shows that.\n- Two people editing the same newsletter at once: the last one to save wins.\n",
+            "branch": "workbench/mailing-editor",
+            "title": "A newsletter can be written in the back office and tried out on yourself"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122205351-3fa5e9"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "master",
+            "body": "Everything built on the workbench since master, on one branch, so the default branch is the place to start.\n\nWhat it adds:\n\n- The lean CRM: built from our rule book and checked against it; a command's answer names only what it changed, by id.\n- A mail system beside the CRM, the only way a mail leaves Bextrust (rules M1 to M3).\n- An accounts system for our clients' accounts (rules A1 to A4): one organisation with one contact, a trial that ends on a named day and never comes back, and rules only a client's own key holders can approve.\n- Tests name the agent as the rule book does: the Principal AI.\n\nChecked: `go build ./...` and `go test ./...` pass. The build expects the `bextrust` and `control` repositories beside this one.\n\nNot in this pull request: no data, no keys. The three services share one engine and one repository for now; whether they stay together is open.\n",
+            "branch": "workbench/handover",
+            "title": "Handover: the lean CRM, the mail system and the accounts system"
+        },
+        "resource": "bextrust/crm"
+    },
+    "run": "workbench-20261122153335-cf8c78"
+}

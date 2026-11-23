@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "b2990047f390890830cee8a9d208adf2de40bc53",
+            "branch": "workbench/mailing-symbols",
+            "files_sha256": "40013501964cac8e37a67bab4aff4fe9a4f30b21f73f0144f9e45d6fe555bcf8",
+            "message": "The symbols have the exact shapes of the house style"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122220545-2763df"
+}

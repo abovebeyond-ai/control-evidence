@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "de7cc59b55008546abbfd1ac5cb8782e75d5c46b",
+            "branch": "workbench/start-here",
+            "files_sha256": "55ce2da43b764f9893818755ef8636be7465155c613c3a4d6e32c2f56f11183d",
+            "message": "Three systems live here: say so, and build all three"
+        },
+        "resource": "bextrust/crm"
+    },
+    "run": "workbench-20261122155434-18f6dd"
+}

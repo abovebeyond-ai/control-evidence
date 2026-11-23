@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Everything built on the workbench since main, on one branch, so main is the place to start.\n\nWhat it adds:\n\n- A relay for a council: enrolment on phones, changes of rights, one tap for a release of several changes, rules versions by their digest.\n- An ask on record: who asked is one of us as the registry holds them, the asker's role counts, and only the one who asked gives the word.\n- Mail through the gate: the gate's check before asking knows who asked.\n- What an agent says back: an answer in words and the helpers it put to work, shown to the person who asked.\n- What a person's screens read: what their agent remembers about them (keep and forget), the documents our agents read, and who is one of us.\n- A second screen linked to a person: it reads and asks as them and approves nothing.\n- Anchoring shown: `anchor watch` pins the record every round and tells the relay, which checks each receipt itself before keeping it.\n\nNone of the reading and answering is a submission: nothing is judged, written or approved by it.\n\nChecked: `go build ./...`, `go vet ./...` and `go test ./...` pass.\n\nKnown gaps, for whoever reads on:\n\n- Rules L4 and L5 of our rule book (coding agents) cannot be decided yet: the gateway does not hand an agent's role and kind to the rule book.\n- The gate has not been run sealed from this branch.\n",
+            "branch": "workbench/handover",
+            "title": "Handover: the relay for a council, asks on record, and what a person's screens read"
+        },
+        "resource": "bextrust/control"
+    },
+    "run": "workbench-20261122153554-258432"
+}

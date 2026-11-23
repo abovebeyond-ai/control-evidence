@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nRegistering on gentells.com asks for no proof of the address. When a team member signs in with the Observatory password, the account that exists on their address becomes their team account. Whoever made that account kept their way in: its password, sessions, keys and linked providers. Since #312 such an account can also keep sources.\n\n## What\n\n- `App\\Accounts\\WaysIn::end`: the password, a running change of address, reset and invite links, linked providers, sessions, keys and their refresh tokens. It runs at the moment an existing account is linked to a team member, and not at later sign-ins.\n- `User::provenTeam` no longer counts a linked provider. Linking one asks for a signed-in session and not for a confirmed address.\n- Blocking an account also ends the refresh tokens of its keys. Until now only the keys themselves ended.\n\nA team member who was a reader first notices that the old password stops working and that a linked provider has to be linked again. The Observatory password works.\n\n## Checked\n\n- `TeamLoginTest`: linking ends each of these; signing in again leaves the keys alone. `McpSourceToolsTest`: a linked provider is not proof, a confirmed address is.\n- Full suite: the one failure is `BuildStampTest`, which needs a git folder the worktree does not have.\n\n## Limits\n\n- Accounts that were linked before this change keep what they have. On production no team account is waiting to be linked today, so nobody notices the change now.\n- A team member who only ever signs in with a provider does not see the team's tools on `/mcp` until they sign in once with the Observatory password.\n\n## After merge\n\nNothing to run.\n",
+            "branch": "workbench/team-link-ends-old-ways-in",
+            "title": "Linking a team account ends every way in from before"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261123072703-5bccde"
+}

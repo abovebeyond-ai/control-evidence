@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A rehearsal compiled the rule book into `bextrust/build/rules-version.json`, the file a gate on the same machine may be reading. A gate only starts under the version its council approved, so after a rehearsal that gate refused to start. `simulate.sh` wrote to the same file.\n\n- Each run compiles the rule book into its own folder.\n- `phone-sim.sh up` beside a gate already set up writes `rules-version-next.json` and leaves the approved version alone.\n- `phone-sim.sh resume` reads the version named in the gate's configuration.\n- The front page marks `gate-demo-box` as archived and leaves it out of the clone command.\n\nChecked: `go test ./...` passes; `simulate.sh` holds from a clean checkout and writes nothing in `build/`; the build step of `phone-sim.sh` writes only to its own folder, with and without a gate set up. `rehearse` and `resume` were not run in full with this change.\n\nA simulation set up before this change keeps reading the file its gate's configuration names; there, `rulebook compile` without an output path still writes over it.\n",
+            "branch": "workbench/own-rule-book",
+            "title": "Each simulation compiles the rule book into its own folder"
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261122174831-94904e"
+}

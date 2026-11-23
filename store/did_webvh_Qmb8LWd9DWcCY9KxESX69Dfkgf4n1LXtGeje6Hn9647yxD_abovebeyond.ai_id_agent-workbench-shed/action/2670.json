@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The front page as things stand, for someone starting from the default branches.\n\n- What each repository holds, with its default branch.\n- The rule book's counts: 29 rules, 5 flows, 6 decision tables with 27 cases.\n- How to run with a real phone, and what the host name is for.\n- Where the running simulation is behind this repository: its gate still decides by the rule book of before 16 November.\n- `phone-sim.sh resume`: after a restart, start again whatever does not answer. It makes and signs nothing, and says what it left out.\n\nChecked: `simulate.sh` holds from a fresh clone (with the matching change in `control`). `rehearse` was not run from a fresh clone. `resume` was run once on the first machine, where it brought the systems and the gate back; two faults that run showed are fixed here and not run again.\n",
+            "branch": "workbench/front-page",
+            "title": "Start here, as it stands, and a resume step for the simulation"
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261122155507-694fc2"
+}

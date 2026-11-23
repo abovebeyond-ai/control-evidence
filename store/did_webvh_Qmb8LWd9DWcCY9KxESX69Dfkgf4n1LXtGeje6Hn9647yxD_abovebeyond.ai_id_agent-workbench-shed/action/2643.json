@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "master",
+            "body": "Everything built on the workbench since master, on one branch, so the default branch is the place to start.\n\nWhat it adds:\n\n- The council app for our own company on a phone (the `sim` flavour): what waits for a yes, one tap for everything that waits, a change of rules shown with its rules, a write in the rule book's words.\n- Talking to your Principal AI by voice or by typing, and reading what it says back. Voice only makes the words of an ask; a yes still needs the passkey.\n- The first screen is today: what waits and what went through. The look is Daylight.\n- A desk app for Mac and Linux in `desktop/`: a second screen linked to a person. It reads and asks as them, shows the rule book with its flows, our systems, the record and what the agents read. It holds no passkey and approves nothing.\n\nChecked: both apps compile, and the council vector tests pass. The full Android test suite and the desk app's screenshot tests were not run for this pull request.\n\nTo know before building:\n\n- `app/google-services.json` and `local.properties` are not in the repository; each builder brings their own.\n- The desk app's screenshot helper reads the compiled rule book from `RULE_BOOK`, or from the `bextrust` repository beside this one.\n- The repository's name no longer says what is inside: it holds the phone app and the desk app.\n",
+            "branch": "workbench/handover",
+            "title": "Handover: the council app with voice and Daylight, and a desk app for Mac and Linux"
+        },
+        "resource": "bextrust/bextrust-android"
+    },
+    "run": "workbench-20261122153857-a569ce"
+}

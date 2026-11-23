@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "654c211def2c212a2a7e2c6d20ba19726e6bb12c",
+            "branch": "workbench/internal-doors",
+            "files_sha256": "36f3fc8de0f9f3e61a257030a7ad38cd79510efb8a759cc05af7aa9589c1127b",
+            "message": "The newsletter door and the team tools are reached again\n\nThe projection door answers everything under /internal/ it does not know with 401 or\n404. The newsletter door and the team tools came after it and were never reached: a\nnewsletter sent by the site and a tool called through the Gentells MCP both got 401.\nThe projection door now comes last, and a test asks the doors through the real server.\n\nThe MCP tools also make the table their record goes in, as Ask's server does. Without\nit a first change went through and then answered with an error.\n\nPortal: Gentells-links opvragen vanuit een gekoppelde assistent werkt nu ook echt, en nieuwsbrieven op het leesadres komen weer binnen."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261122193421-f6eff1"
+}

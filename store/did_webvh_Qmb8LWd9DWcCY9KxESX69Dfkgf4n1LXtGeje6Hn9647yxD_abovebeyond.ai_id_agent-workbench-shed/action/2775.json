@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "In the newsletter editor the first name, bold words and links could only be had by knowing and typing their signs, such as `{voornaam}`. There were no lists, and nothing of the house style beyond the logo.\n\n## What it does\n\n- **First name**: a button at the subject, the title, headings and texts puts in the reader's name, in the word of the language being written.\n- **Bold** and **Link** for the selected words in a text, also with Ctrl or Cmd and B or K. The address of a link is asked in the page. What a button puts in can be undone like typing.\n- **List**: lines that start with a dash become a list, with the coloured points of the house style. Enter starts the next point.\n- **Symbols**: 34 symbols of the house style, in the title, in headings and texts, and as a row of their own between two parts. Not in the subject, which can only hold letters.\n- A test to someone whose own first name is not known uses the example name of the preview and says so. Before, the name was simply missing.\n\n## About the symbols\n\nThey are PNG files of 144 pixels high in `public/images/symbols`, 156 kB for all of them, because many mail programs do not show an SVG. They were cut from the house style board of 2021 and put in the colours of the logo as the site has it. The white point of the pencil was made black, since white does not show on a white mail; the diploma was left out for the same reason.\n\nIn a mail they carry an empty description, so a screen reader passes over them.\n\n## Checked\n\n- 115 unit tests pass and the build succeeds, on the main of #42.\n- Walked through in Chromium, desktop and phone width, against a stand-in for the database and the mail service, 60 checks in three walk-throughs: the editor as it was (15), name, bold and link (24), lists and symbols (21).\n\n## Not checked\n\n- Safari and Firefox.\n- How the symbols and lists look in Gmail, Outlook and in dark mode. A test mail after the merge shows that; the pictures are only on the site after it.\n\nCorrection to #42: its description says 16 checks in the browser; it was 15, and all passed.\n",
+            "branch": "workbench/mailing-tags",
+            "title": "Name, bold, links, lists and symbols go into a newsletter with a button"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122215710-856439"
+}

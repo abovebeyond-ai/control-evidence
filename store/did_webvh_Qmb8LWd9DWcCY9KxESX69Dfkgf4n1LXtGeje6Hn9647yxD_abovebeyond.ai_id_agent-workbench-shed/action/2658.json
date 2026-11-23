@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "master",
+            "body": "The front page described only the CRM. It now names the three systems in this repository, the CRM, the mail system and the accounts system, with their rules, default addresses and settings.\n\n`make build` builds the accounts system too, and its binary is ignored like the other two.\n\nNo code changes. `go test ./...` passes.\n",
+            "branch": "workbench/start-here",
+            "title": "Three systems live here: say so, and build all three"
+        },
+        "resource": "bextrust/crm"
+    },
+    "run": "workbench-20261122155434-18f6dd"
+}

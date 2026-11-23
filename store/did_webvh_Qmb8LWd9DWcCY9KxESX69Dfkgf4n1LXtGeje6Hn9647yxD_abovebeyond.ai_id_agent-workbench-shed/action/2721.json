@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nWho in the team knows which reader was in people's heads or in a remark. Nobody could ask for their own people, or see who has nobody.\n\n## What changes\n\nOn `/newsletter-admin`:\n\n- **Contacts under each name**, one or several, chosen from everybody with access to the back office. Each can be taken away on its own.\n- **For everyone shown at once**: add or take away a contact for all the people the search and filters leave. Their other contacts stay as they are.\n- **Filter** on one person's contacts (\"Me\" for whoever is logged in), or on those without any. It works together with the filter on supporters, so somebody can ask which of their people do not support yet.\n- A count of how many on the list have a contact.\n\nSomebody who is removed from the back office is nobody's contact any more; their people show up under \"Nobody yet\".\n\nThe contacts are in the backup and not in the file to send from. The privacy text (NL, FR, EN) says they are kept.\n\n## How it is stored\n\n`contactIds` on the subscriber, readable only with the token like the rest of the list. A change is made on the condition that the record is still what it was, and tried once more if not, so that two people working at the same time do not undo each other.\n\n## Checked\n\n- `npm test`: 101 pass, 2 of them new (adding, taking away, letting go of somebody who left the team).\n- `npm run build` passes.\n- Walked through in a browser with made-up people and donors, 21 checks, among them: several contacts for one person, changes at the same moment, refusing somebody outside the team, closed without login, and no amounts for someone with the newsletter section alone.\n\n## Not checked\n\nAgainst the real dataset. The walk-through ran on an in-memory stand-in. After it, only the spacing of the choice field and the width of the contacts changed.\n",
+            "branch": "workbench/list-contact",
+            "title": "Each person on the newsletter list can have contacts in the team"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122181525-cfb36e"
+}

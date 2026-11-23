@@ -1,0 +1,16 @@
+{
+    "action": "9b4af79411975ab14e34e27efab1df11",
+    "effect": {
+        "detail": {
+            "base": "b2990047f390890830cee8a9d208adf2de40bc53",
+            "branch": "workbench/mailing-symbols",
+            "commit": "4abbeedab2404af8a0931f7844cdb8dd2d2c9b7d",
+            "files": 39,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2778,
+    "verdict": "ALLOW"
+}

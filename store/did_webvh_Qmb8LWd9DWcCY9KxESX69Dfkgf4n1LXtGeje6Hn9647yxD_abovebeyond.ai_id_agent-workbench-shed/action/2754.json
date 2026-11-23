@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "25f2d2393dbe2b652de44b9e95145f4a0fbfeff7",
+            "branch": "workbench/mailing-editor",
+            "files_sha256": "7b240cda8312bbe15878d9eb56c5decfaf98275eaccaf069f3b7948735d4af80",
+            "message": "A newsletter can be written in the back office and tried out on yourself"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122205351-3fa5e9"
+}

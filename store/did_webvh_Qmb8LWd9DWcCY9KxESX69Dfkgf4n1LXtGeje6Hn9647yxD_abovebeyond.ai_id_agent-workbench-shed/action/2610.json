@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "45ba2bde26d8c9c5210b2d2ce3da3e98016aa98f",
+            "branch": "workbench/report-reader-links",
+            "files_sha256": "5a18d041be9b558d4720889b5bb53f4a096c287621320c068bf0ee8f7bc583f9",
+            "message": "A stamped report tells the site its pages and where its links lie\n\nSetting a report's source list again can change how many pages the file has, and the\npage count kept beside it stayed what the upload made it. The site lays out its reader\nby that number, so a report that gained a page lost its last one there, and one that\nlost a page showed an empty one.\n\nThe site shows a report as pictures of its pages, where no link can be opened. The\nstamp now keeps every link of the file that goes out, per page and as shares of the\npage, and the report feed carries them so the reader can lay them back on.\n\nAn address on the designers' list that Gentells does not hold went with the page it\nstood on, while the outcome still said it left from that page. It is now named as left\noff the new list, and a link on a page after the list is reported under the number\nthat page has now.\n\nThe line above the list is plainer.\n\nPortal: Bronnen achteraan een rapport worden ook in de leesweergave op gentells.com aanklikbaar; het aantal pagina's klopt weer na het opnieuw zetten van de bronnenlijst."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261122151350-313484"
+}

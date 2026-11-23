@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "16483d345b132e7ee38e0f27a4d5b46fced9aad2",
+            "branch": "workbench/own-rule-book",
+            "files_sha256": "6423b86004cb48e4e6464d7f91de0e9eca64a0636fe808c024c5287ff6914bbb",
+            "message": "Each simulation compiles the rule book into its own folder"
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261122174831-94904e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "eed89bd96f62b2d6d3a052f075c325c5a07bac9c",
+            "branch": "workbench/list-contact",
+            "files_sha256": "adff0ef9ad83331e42d9c2775003c1d64f5ffb05cc2b06d000d779abb33963e2",
+            "message": "Each person on the newsletter list can have contacts in the team"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261122181525-cfb36e"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ffc6a735f22daf0e98e8e382d7a121073a11ae56",
+            "branch": "workbench/start-here",
+            "files_sha256": "da454f561e35523083735e44d4aaab4c5b5cbb13772104524f972fe2ccebd5e6",
+            "message": "The end-to-end story names the agent as the rule book does"
+        },
+        "resource": "bextrust/control"
+    },
+    "run": "workbench-20261122155402-05b0f6"
+}

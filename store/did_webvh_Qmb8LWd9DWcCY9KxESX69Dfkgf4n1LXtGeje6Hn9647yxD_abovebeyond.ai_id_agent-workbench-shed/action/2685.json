@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "cf152fff7a0e32db9be8588c8bac329c71081534",
+            "branch": "workbench/reader-page-track",
+            "files_sha256": "c6c08a1e3b8cecf2f9d0e7d3a0f87a663cc51b220896513d74253600d7aee440",
+            "message": "The report reader goes to any page from the track under it\n\nThe reader moved one page at a time, back or forward, and the line under the page only\nshowed how far along it was. Reaching the source list at the back of a 28-page report\ntook 27 presses. The line is now one mark per page: the marks up to the open page are\nfilled, a mark takes the reader to its page, and the page a mark stands for is named\nabove the track while the pointer or the focus is on it.\n\nPortal: In de leesweergave van een rapport kan je onderaan rechtstreeks naar elke pagina springen."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261122161218-a64f7d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "95c7e97446f4d158bcaa9fc8e749945ad0cc08e4",
+            "branch": "workbench/mailing-place",
+            "files_sha256": "f0153de58fe6451f29279d24d5d5b58d603f9a34234d9d6033f982ad3ff5e63a",
+            "message": "Where things stand in a newsletter can be chosen"
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261123071157-c50733"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f3322958b29e5d1927fa56f612e4f70040b0d268",
+            "branch": "workbench/handover",
+            "files_sha256": "4cf39f1173001a20f6f7301633489bd1257a600450af1515bc3247f4ce2f5038",
+            "message": "Handover: the council app with voice and Daylight, and a desk app for Mac and Linux"
+        },
+        "resource": "bextrust/bextrust-android"
+    },
+    "run": "workbench-20261122153857-a569ce"
+}

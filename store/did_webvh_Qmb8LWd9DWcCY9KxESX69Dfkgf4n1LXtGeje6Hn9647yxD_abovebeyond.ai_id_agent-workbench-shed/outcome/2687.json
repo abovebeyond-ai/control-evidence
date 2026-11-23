@@ -1,0 +1,16 @@
+{
+    "action": "c062ad37b6d321ec1294459cddf41e54",
+    "effect": {
+        "detail": {
+            "base": "cf152fff7a0e32db9be8588c8bac329c71081534",
+            "branch": "workbench/reader-page-track",
+            "commit": "9754c66fcd929e7a629cf84e2960c29c38e3c49a",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2685,
+    "verdict": "ALLOW"
+}

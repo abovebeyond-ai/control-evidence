@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d1e918ee5926e1e8ab73dd5428f2549247e856fd",
+            "branch": "workbench/mcp-desk-tools",
+            "files_sha256": "5f6d9077b8132f1b1b0d0fd7ee3e8da78b216348e8c5b510760546dfa9f4da6d",
+            "message": "The team's own assistant answers what used to become a mail\n\nAn assistant connected to gentells.com/mcp could give a text its source links, and\nnothing else of the desk's work. It now also reads the guide, says what waits, finds\nwhether a publisher is known and read, starts a trial, and writes a question down for\ndevelopment, under the same roles and the same yes as in Ask. An answer to a question\nis told once, wherever the person works. Ask gets the publisher lookup too.\n\nA publisher queued because a page of it was kept no longer says a post cited it.\n\nPortal: Vanuit een gekoppelde assistent kan het team nu ook nakijken welke bronnen gelezen worden, een proef starten en een vraag laten noteren."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261122203123-f85d37"
+}

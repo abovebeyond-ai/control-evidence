@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a51cf3dded3e17517fed151e47ab7b62d6a6bdcf",
+            "branch": "workbench/start-here",
+            "files_sha256": "2b63be73b7ea692a59eb8948d3e40a50a65639dc43345f3f0ec44e8f45252edf",
+            "message": "The front page for 0.8.2 and the desk app; the simulation's host is a build setting"
+        },
+        "resource": "bextrust/bextrust-android"
+    },
+    "run": "workbench-20261122155448-f85d0a"
+}

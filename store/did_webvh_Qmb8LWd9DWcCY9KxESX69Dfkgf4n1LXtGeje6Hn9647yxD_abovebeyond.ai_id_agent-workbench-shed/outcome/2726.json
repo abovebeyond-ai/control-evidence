@@ -1,0 +1,16 @@
+{
+    "action": "70b762be516a151ce46783af4a012d13",
+    "effect": {
+        "detail": {
+            "base": "98d14ddef17d48c25f256fac340d8fffccbced7d",
+            "branch": "workbench/ask-keeps-sources",
+            "commit": "07c884814babef5336070d6f3bc3fa93f41eb281",
+            "files": 11,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2724,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "bdab7381360a57335e0058e893ddb312",
+    "effect": {
+        "detail": {
+            "base": "5038398727c71b8fcc7037db2c2d9bee2d53d02e",
+            "branch": "workbench/team-link-ends-old-ways-in",
+            "commit": "bb3d2850d44ea4c8dc0e062afdd9dbf813d0a552",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2799,
+    "verdict": "ALLOW"
+}

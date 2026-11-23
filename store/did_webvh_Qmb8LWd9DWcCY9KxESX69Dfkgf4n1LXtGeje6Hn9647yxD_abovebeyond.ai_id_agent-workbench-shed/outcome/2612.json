@@ -1,0 +1,16 @@
+{
+    "action": "ef069f84408974f2a409249ff6a09c1e",
+    "effect": {
+        "detail": {
+            "base": "45ba2bde26d8c9c5210b2d2ce3da3e98016aa98f",
+            "branch": "workbench/report-reader-links",
+            "commit": "71c3705ae88a145fa633715dc7c9874d9896f50e",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2610,
+    "verdict": "ALLOW"
+}

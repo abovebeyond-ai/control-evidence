@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c35a34aaccd3e2a4b3ad4b47b70d9de4301d78ff",
+            "branch": "workbench/dependency-advisories",
+            "files_sha256": "32ef6b6a83d46fc7cd1e31c23764720f8fea5ab46e329b1d7437eb56c30b10c8",
+            "message": "Update the packages with a known vulnerability\n\nnpm audit named 15 packages, one critical (proxy-addr, CVE-2026-90711). All are on a\nfixed release now, none younger than two weeks and none a major version up.\n\nmarkdown-it is named as a dependency of our own. proveml asks for any version from 14\non, so without it the fix would have moved it to 15."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261122211927-7c25f8"
+}
