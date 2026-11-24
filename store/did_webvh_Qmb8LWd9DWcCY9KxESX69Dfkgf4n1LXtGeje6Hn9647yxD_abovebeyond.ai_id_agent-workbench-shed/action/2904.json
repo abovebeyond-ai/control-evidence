@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "0b76bd4335cbdbb99d622ea307a8473129aeb4d0",
+            "branch": "workbench/contacts-stage",
+            "files_sha256": "10ce2759179a3e7095d3b9a8e02c1a5d7b6e3f7a3622725e81f0e787cfe8b3c6",
+            "message": "A contact has an organisation and a stage, for possible sponsors\n\nThe contacts include companies, foundations and schools that could support Afrodidact, and\nthe list could not say who they are with nor where things stand with them.\n\n- Organisation: shown under the name, found by the search, set when adding a contact or\n  from the row, and read by the import from a column such as Organisation, Organisatie,\n  Company, Bedrijf or Entreprise.\n- Stage: to approach, in conversation, promised, supports or stopped; most readers of the\n  newsletters have none. Chosen per contact under its status, for everyone shown at once,\n  and when adding; the filter Stage shows one stage or those without.\n- Both are in the backup, not in the file to send from.\n- The actions in a row stand under each other, so the list keeps its width.\n\nThe stage is about where things stand, not about money, so it is for everyone who may open\nthe contacts; what someone gave stays for those who may also open the donations."
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261123172539-18320f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "12693d28966fc6770624c92ec8d67b764ec1348a",
+            "branch": "workbench/newsletter-choose",
+            "files_sha256": "af3cc9b6e4063fd4362583901afb2cc8774c3b312e287ec46d4930ada64a4b71",
+            "message": "Behind the link at the foot of a newsletter, readers choose which newsletters they get\n\nThe page that only unsubscribed now shows the two newsletters, Afrodidact and KUBO, ticked\nas the person gets them. They can untick one, tick the other, or unsubscribe from both;\nsomeone who had unsubscribed can tick one to come back, since the link came to their own\naddress. Opening the page still changes nothing. A call without a choice still\nunsubscribes from everything."
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261123155115-d2102d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "12693d28966fc6770624c92ec8d67b764ec1348a",
+            "branch": "workbench/mailing-brand",
+            "files_sha256": "5ceecc935f996f5e78d776fc936b78d098f952c3614f74117a1240d59d5f31b6",
+            "message": "A newsletter is for Afrodidact or for KUBO, and a KUBO one looks like KUBO\n\nThe editor asks which newsletter a mail is; an outline sets it, an empty page starts as\nAfrodidact, and the list of newsletters shows it. A KUBO mail has the KUBO logo on top and\nKUBO in the foot, with under it, small, that KUBO is a project of Afrodidact, its logo and\nits address. The line about why someone gets the mail names the right newsletter. Mails\nwithout a choice stay as they were."
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261123155048-75dc19"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "1547c5154ed6c4e482b4614bcf73d8d1",
+    "effect": {
+        "detail": {
+            "base": "69728b92ad684eadffca5d1874edad871996eb33",
+            "branch": "workbench/links-carry-what-was-read",
+            "commit": "ad18cb124887dbd60d0bb120e93a2ea0c2599e96",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2847,
+    "verdict": "ALLOW"
+}

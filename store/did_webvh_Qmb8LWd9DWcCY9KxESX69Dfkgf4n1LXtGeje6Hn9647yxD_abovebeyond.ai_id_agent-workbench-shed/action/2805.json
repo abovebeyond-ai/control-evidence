@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7270acb52052bef935a4230546296192ffd0e5c8",
+            "branch": "workbench/drop-unused-ai-packages",
+            "files_sha256": "d2bb8cb3aa27787d833615ebfc7755af27db47b048cb5c1461555f1642fc62e5",
+            "message": "Drop the two AI SDK packages nothing uses\n\nThe agent loop on the Vercel AI SDK in models.mjs was never called: getAIProvider had no\ncaller, and generateText was imported and not used. Its two packages, ai and\n@ai-sdk/openai-compatible, go with it, and fourteen packages they brought along leave the\nlockfile. No other package changes.\n\nPortal: Twee ongebruikte pakketten zijn uit de pipeline van Gentells gehaald."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261123075825-e3af15"
+}

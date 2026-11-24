@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "985cf8c5e6618ebf3b59785c11bab275d295531f",
+            "branch": "workbench/newsletter-signup",
+            "files_sha256": "44bc28910e1dc404ba118f29f7fe6c0d733ebb66c380d0e10c30e6e85ea207a9",
+            "message": "Newsletter sign-up for KUBO on the news pages, with a tick for the Afrodidact one\n\nThe form posts to the Afrodidact website, which sends both newsletters and keeps the\nlist, and mails a link to confirm. Nothing about the visitor is kept on kubo.global."
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261123090624-2a7dc9"
+}

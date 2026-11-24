@@ -1,0 +1,16 @@
+{
+    "action": "c03182ccd222617720bca813a57d66dc",
+    "effect": {
+        "detail": {
+            "base": "7270acb52052bef935a4230546296192ffd0e5c8",
+            "branch": "workbench/drop-unused-ai-packages",
+            "commit": "eba62697c13be64864bd1cf73ed2b1a78b813111",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2805,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The newsletter sign-up was only on the news pages; the homepage, where most visitors arrive, had none. It now sits on the homepage in English, Dutch and French, right under the latest news, so it follows the news it promises more of.\n\n**Light version**\n\nRight under it on the homepage is the large photo of \"Where it comes from\". The band with the lab photo would meet that photo head on, so the homepage gets a light version of the same sign-up: the same title, line, fields and tick, on the page's own background behind a thin line, with a dark button. `NewsletterSignup` takes `light` for it; the news pages keep the band.\n\n**Checked**\n\n- `npm test` (29), `npm run build`, `npm run check:built` (no contact number in the 86 built text files).\n- In Chromium against the built site, with the post to afrodidact.org caught: on `/`, `/nl/` and `/fr/` (the last at phone width) there is one sign-up, in the light version; it sends the page's language (EN, NL, FR) and says thanks; on `/nl/news/` the band is unchanged and works; no sideways scroll, no script errors.\n\nNot checked in Safari or Firefox.\n",
+            "branch": "workbench/newsletter-on-home",
+            "title": "The homepage has the newsletter sign-up, under the latest news"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261123120312-5b313b"
+}

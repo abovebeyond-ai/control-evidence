@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\n`packages/core/models.mjs` carried an agent loop on the Vercel AI SDK that nothing calls: `getAIProvider` has no caller and `generateText` is imported but not used. Its two packages, `ai` and `@ai-sdk/openai-compatible`, still had to be installed, kept current and checked on every advisory.\n\n## What\n\n- The unused block in `models.mjs` goes.\n- `ai` and `@ai-sdk/openai-compatible` leave `package.json`. The lockfile loses them and the fourteen packages only they brought along. Nothing is added and no other version changes.\n\n## Checked\n\n- No file imports any of the packages that leave.\n- Full suite 1821 of 1821, `tsc` clean, `npm audit --omit=dev` finds 0 vulnerabilities.\n\n## After merge\n\nNothing to run.\n",
+            "branch": "workbench/drop-unused-ai-packages",
+            "title": "Drop the two AI SDK packages nothing uses"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261123075825-e3af15"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nSince gentells-pipeline #502, `source_links` and `source_keep` answer with what Gentells read from each page (`read`), and a note not to open the publisher's page. That note only arrives with the answer.\n\nAsked for a paragraph with three sources, an assistant in the Claude app opened the three publishers' pages at the same moment it asked Gentells for their links. The figures and the Gentells links were right, but the app showed vdab.be and Eurostat as chips beside the text, because it shows the address of every page an assistant opens.\n\n## What\n\n- The server's instructions, in the bullet for the team: call `source_links` first, do not open the publishers' pages yourself, not even at the same time, and write from `read`. A page not kept yet brings its `read` once `source_keep` has kept it.\n- `source_links` and `source_keep` say the same in their descriptions.\n\nText only. A customer's assistant does not have these tools, and the bullet applies only when `source_links` is in its list.\n\n## Checked\n\n- `McpContractTest`, `McpSourceToolsTest`, `McpServerTest`: 10 of 10.\n- Full suite: the one failure is `BuildStampTest`, which needs a git folder the worktree does not have.\n\n## After merge\n\nNothing to run. A connected assistant reads the new instructions when it connects again: Disconnect and Connect in Claude.\n",
+            "branch": "workbench/links-say-text-comes-along",
+            "title": "The team's assistant is told up front that a source link brings its text"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261123142612-3b8772"
+}

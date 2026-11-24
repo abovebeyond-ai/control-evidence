@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d3643f7d2708b81aebbad87d350f01c48ec4e73c",
+            "branch": "workbench/newsletter-lists",
+            "files_sha256": "7fc3fd329204554c18657462055195b9e6c5f04742c568d35d9de6198160febd",
+            "message": "The Afrodidact and KUBO newsletters each have their own readers\n\nThe two newsletters come out at their own pace, and the KUBO one goes deeper into the\ntechnology, so someone can get one of them or both. A subscriber's interest is now\nAFRODIDACT, KUBO or ALL for both; those already on the list keep what they had.\n\n- A sign-up gets the newsletter of the site its form is on; a form can offer the other\n  one as well in a field also. Signing up for one keeps the other someone already had.\n- The confirmation mail names the newsletter signed up for.\n- On the list page the newsletters can be chosen per person, for an import, for one\n  person added by hand, and for everyone shown at once. The list can be narrowed to\n  those who get one of them, and the counts show how many get each.\n- The language can be changed the same way, per person or for everyone shown, so that\n  an import with the wrong language can be put right.\n- The export for a newsletter keeps those who get it; the older ?interest=ALL gives the\n  Afrodidact one."
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261123090529-5535ca"
+}

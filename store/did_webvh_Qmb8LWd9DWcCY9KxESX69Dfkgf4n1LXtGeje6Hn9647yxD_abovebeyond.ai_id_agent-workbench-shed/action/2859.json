@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6a33de1debaec41e842dd73b1d76c35e02aaa8be",
+            "branch": "workbench/mailing-outline",
+            "files_sha256": "8b38a186517657d2ca33e895064b0c433414546ddf8e9b465f2d7980f9138adf",
+            "message": "A new newsletter can start from an outline for KUBO or for Afrodidact\n\nEach edition is read by very different people: donors, technical readers, schools and\npartners, funds. An outline gives each of them a part: a story from a school, how it\nworks, what it achieved and what readers can do, with a button to support. Hints to\nreplace stand in square brackets, and the editor lists any left so none goes out."
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261123115236-5932c1"
+}

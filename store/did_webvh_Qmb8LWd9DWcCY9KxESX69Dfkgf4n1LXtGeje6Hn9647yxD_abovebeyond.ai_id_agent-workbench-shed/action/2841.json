@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "be68e43337f0f01a942eb039144bc5c132cf9863",
+            "branch": "workbench/terms-looked-up-daily",
+            "files_sha256": "fcc7bc90def2e4ba0c12f5f379b68d7a2bd09a5485163f31b34a0630a069c5c0",
+            "message": "Terms of trials that passed are looked up every day\n\nThe terms of a trial that passed were looked up only at the end of a scout run. The scheduler\nstarts scout when the queues are nearly empty, and with 146 trials feeding signals in they\nnever were: on 23 November 2026, 85 sources had passed their trial and none had its terms\nlooked up.\n\nThe server now starts bin/terms-round.mjs once a day from 06:00 UTC as its own process (a\nmodel call is synchronous and would hold the server), for TW_TERMS_PER_DAY trials (10; 0 is\noff). The round writes its day first, so it runs once a day. The scout run still looks up a\nfew as well. Nothing here admits.\n\nPortal: De Observatory zoekt elke dag de gebruiksvoorwaarden op van bronnen die hun proef doorstonden."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261123111429-00186a"
+}

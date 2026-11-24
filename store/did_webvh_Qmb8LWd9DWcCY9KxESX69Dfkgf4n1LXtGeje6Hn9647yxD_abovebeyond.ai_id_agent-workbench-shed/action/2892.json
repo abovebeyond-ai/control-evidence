@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "12693d28966fc6770624c92ec8d67b764ec1348a",
+            "branch": "workbench/newsletter-tabs",
+            "files_sha256": "ab6d51b4c3788a7e570d46cf161c03567145642af434da8ce746b575d8975c77",
+            "message": "The list becomes Contacts, beside the Newsletter, and a contact can get no newsletter\n\nThe people on the list are more than newsletter readers: supporters, partners and possible\nsponsors are kept there too. So the menu gets Contacts, the list itself, and Newsletter,\nthe newsletters being written; both open for whoever may open the newsletter section, and\nthe right is now called Contacts and newsletter. /newsletter-admin leads to /contacts.\n\nOn Contacts the list has the page. Adding one contact, importing and the download to send\nare behind three buttons on top, one open at a time. The counts show how many get each\nnewsletter, per language, and how many get none.\n\nA contact can get no newsletter (NONE): a possible sponsor who never asked for one. They are\nin no download to send, only in the backup. If they later sign up on a website they get a\nconfirmation mail like anyone new, so nobody can sign up a known contact. A sign-up form\ncannot ask for no newsletter."
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261123155134-f5813f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ada5f25cd02208167c479cb0bd8552af7a9da8f8",
+            "branch": "workbench/contacts-support",
+            "files_sha256": "5af0e96c18e42bf05a87df89ece3ea7742f8ca6e8be78909258cc8c928fef557",
+            "message": "Contacts hold all support: givers become contacts, and support from elsewhere is entered by hand\n\nThe column Supports only knew gifts through the website, matched on the address of a\ncontact. A company that sponsors by bank transfer, a foundation with a grant or a gift in\nkind showed as not supporting yet, and people who gave online without being a contact were\nonly counted.\n\n- Whoever gives through the website becomes a contact when the payment comes in, without a\n  newsletter, since they did not ask for one. Those who gave before can be added in one go\n  from the line that counts them. Someone already a contact, also someone who unsubscribed,\n  stays as they are.\n- Per contact, support can be entered by hand: a bank transfer, a sponsorship, a grant, a\n  gift in kind or other, with amount, date and a note, and who entered it. Clicking the\n  amount of a contact opens what they gave online and by hand, where entries are added and\n  removed. It is kept on the contact, which is private like the rest of the list; the\n  donations and their certificates are not touched.\n- The column shows the total and what of it came in this year. The page adds online and by\n  hand up itself, so a change by hand shows at once without asking Mollie again.\n- All of this, and that a contact came in through a gift, is only for people who may also\n  open the donations."
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261123170346-0bfc82"
+}

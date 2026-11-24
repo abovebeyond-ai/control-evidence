@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bbc6b011329dd0f24fe50354e9f0d6b0b684bbd2",
+            "branch": "workbench/links-say-text-comes-along",
+            "files_sha256": "1cab6177e3e93592310d2a5da0077a6a6ecda4f7260a4618c6ae1a38501735a1",
+            "message": "The team's assistant is told up front that a source link brings its text\n\nSince gentells-pipeline #502, source_links and source_keep answer with what Gentells read\nfrom each page, and a note not to open the publisher's page. That note arrives with the\nanswer. An assistant in the Claude app that is asked for a text with its sources opens\nthe publishers' pages at the same moment it asks for the links, and the app shows those\npages' addresses beside the text: the chips came back.\n\nThe server's instructions and both tools' descriptions now say it before the first call:\ncall source_links first, do not open the publishers' pages, not even at the same time,\nand write from the read that comes with each link.\n\nPortal: Een assistent die met Gentells-bronnen schrijft, weet vooraf dat hij de pagina's van de uitgevers niet moet openen."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261123142547-da4182"
+}

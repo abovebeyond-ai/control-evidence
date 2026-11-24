@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The sign-up under the news asked five things (first name, last name, email, a language and a tick) and read as a form to fill in rather than a sign-up. It now asks what a sign-up needs and says what the newsletter brings.\n\n**What changes**\n\n- **Title and line:** \"Hoor het als eerste\" / \"Soyez les premiers inform\u00e9s\" / \"Be the first to know\", with under it what the newsletter brings: new schools, the technology behind the lab and the school platform, and what is learned along the way. That line speaks to donors, to technical readers and to partners alike.\n- **Fields:** a first name, to greet readers by, and the address, on one line with the button. The last name is gone; a newsletter does not use it.\n- **Language:** taken from the page, sent as a hidden field. It can still be changed per person in the Afrodidact back office.\n- **The tick for Afrodidact** says in a smaller line who that is: the organisation behind KUBO, including the model school The Swallow in The Gambia. Many who read KUBO news, in The Gambia or arriving on one post from elsewhere, do not know the name.\n- **Look:** a band with the photo from a KUBO lab that the site already uses, darkened on the side of the text, and the yellow button of the site's closing call to action. On a phone the photo sits behind the whole band and the fields stack.\n- **Robot field:** has no text any more, so \"Leave this empty\" no longer comes along when the page is copied. The fields have labels for screen readers.\n\nWhat is sent to `https://afrodidact.org/api/newsletter-signup` stays the same apart from `lastName`, which is no longer sent; that site does not require it.\n\n**Checked**\n\n- `npm test` (29), `npm run build`, `npm run check:built` (no contact number in the 86 built text files).\n- In Chromium against the built site, with the post to afrodidact.org caught: on `/nl/news/` at desktop width and `/news/` at phone width it sends the first name, the page's language, `interest=KUBO`, and `also=AFRODIDACT` only when ticked; it says thanks after; the copied text has no \"Leave this empty\"; no sideways scroll; no script errors.\n\nNot checked in Safari or Firefox.\n",
+            "branch": "workbench/newsletter-signup-look",
+            "title": "Newsletter sign-up: a first name and an address, on a band from a KUBO lab"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261123114922-fece90"
+}

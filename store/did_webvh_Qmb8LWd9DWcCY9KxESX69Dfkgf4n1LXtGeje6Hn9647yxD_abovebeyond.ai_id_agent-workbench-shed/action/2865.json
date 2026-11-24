@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2ada4cccc087bfc4e75e8e97ed940be49cfe7d98",
+            "branch": "workbench/newsletter-on-home",
+            "files_sha256": "59e4b7ca0e5f1c57b06ce87d1b275b4ff80519672fc5f5bd3f9db08c0dfdd854",
+            "message": "The homepage has the newsletter sign-up, under the latest news\n\nThere it follows the news it promises more of. It comes in a light version on the page's\nown background: the band with a photo would meet the photo of \"Where it comes from\"\nright under it."
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261123120312-5b313b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea5bf43f9f16796ba5e104110a9774541f35a503",
+            "branch": "workbench/scorecard-cited-once",
+            "files_sha256": "2506a6f42404b81504a2ea4ca01306d879a73675888f9bf0f2acb83fb1570cd2",
+            "message": "The source scorecard reads what insights name once\n\nThe scorecard counted a source's cited signals with a test per signal over every current\ninsight and its signal list. On 23 November 2026, with 11,134 insights and 146 sources on\ntrial, one source of 1,166 signals took longer than a minute. The morning desk mail asks the\nscorecard for every source on trial when the server starts and on its first round after\n07:00 UTC, on the server's only thread, so the Observatory answered nothing from that morning\nuntil the mail was held by hand. Ask builds the same list for every question.\n\nThe signals a current insight names are now read once per call, and each source's signals\nare counted against that set.\n\nPortal: De Observatory van Gentells blijft weer bereikbaar wanneer de ochtendmail van de redactie vertrekt."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261123100534-ba3cc9"
+}

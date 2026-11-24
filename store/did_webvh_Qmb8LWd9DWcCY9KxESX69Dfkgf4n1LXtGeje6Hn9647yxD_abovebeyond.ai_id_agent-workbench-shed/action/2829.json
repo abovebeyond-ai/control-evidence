@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "A sign-up form for the KUBO newsletter, at the bottom of the news overview and of each news post, in English, Dutch and French.\n\n**What it asks**\n\nFirst name, last name, email and the language of the newsletter (the page's language is ticked). It signs up for the KUBO newsletter, which is a bit more technical than the Afrodidact one; a tick \"Also send me the Afrodidact newsletter\" adds that one.\n\n**Where it goes**\n\nAfrodidact sends both newsletters and keeps the list, so the form posts to `https://afrodidact.org/api/newsletter-signup` with `site=kubo.global`, `interest=KUBO` and, when ticked, `also=AFRODIDACT`. That site mails a link to confirm; only the click puts someone on the list. Nothing about the visitor is kept on kubo.global. With JavaScript the form sends in the background and says a confirmation mail is on its way; without it, it simply posts. A hidden field catches robots.\n\nThis needs kubo-global/afrodidact-website#46 to be live for the tick to count: before that, the Afrodidact site reads the sign-up as KUBO only.\n\n**Checked**\n\n- `npm test` (29) and `npm run build`; `npm run check:built` finds no contact number in the 86 built text files.\n- In Chromium against the built site, with the post to afrodidact.org caught: the tick is off at first, the form sends `interest=KUBO` with and without `also=AFRODIDACT`, no sideways scroll on a phone, no script errors.\n\nNot checked in Safari or Firefox.\n",
+            "branch": "workbench/newsletter-signup",
+            "title": "Newsletter sign-up for KUBO on the news pages"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261123090624-2a7dc9"
+}

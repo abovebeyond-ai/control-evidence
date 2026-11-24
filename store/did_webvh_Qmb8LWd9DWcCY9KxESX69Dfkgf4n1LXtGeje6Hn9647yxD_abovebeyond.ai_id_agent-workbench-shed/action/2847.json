@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "69728b92ad684eadffca5d1874edad871996eb33",
+            "branch": "workbench/links-carry-what-was-read",
+            "files_sha256": "e63923ce171a588710136a346120d98c899cf601c9cf3d8355018019950fcbaf",
+            "message": "Gentells links come with what was read from the page\n\nsource_links and source_keep gave a page's Gentells link and nothing of the page. To write\nwith the figures, an assistant then opened the publisher's page itself, and the Claude app\nshows the address of every page it opens beside the text: a paragraph meant to cite\ngentells.com came back with chips to vdab.be and Eurostat.\n\nEach link now comes with what Gentells read when the page was kept: its title, publisher,\ndate and text, the text cut to a share of the answer (4,000 characters a page, less when\nmany are named). A note tells the assistant to write from it and not to open the page. A\npage that could not be read says so and brings no text. No signal id and nothing of who\nkept it goes out.\n\nPortal: Een assistent die met Gentells-bronnen schrijft, krijgt de tekst van de pagina mee, zodat er alleen Gentells-links in de tekst staan."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261123114215-f3f90a"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "3b8546f10da2ee5bc4333369644e8714",
+    "effect": {
+        "detail": {
+            "base": "be68e43337f0f01a942eb039144bc5c132cf9863",
+            "branch": "workbench/terms-looked-up-daily",
+            "commit": "0910e686a59272b48d255a7100fca31c1dddae6e",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2841,
+    "verdict": "ALLOW"
+}

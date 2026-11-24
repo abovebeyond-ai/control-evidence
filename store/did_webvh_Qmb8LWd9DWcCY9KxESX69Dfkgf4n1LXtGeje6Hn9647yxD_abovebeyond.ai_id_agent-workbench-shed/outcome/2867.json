@@ -1,0 +1,16 @@
+{
+    "action": "f8cfbbee0bd8e86620270c587da9ccc9",
+    "effect": {
+        "detail": {
+            "base": "2ada4cccc087bfc4e75e8e97ed940be49cfe7d98",
+            "branch": "workbench/newsletter-on-home",
+            "commit": "ce8a2d860c8e40bba875b3e4ad2d5b58cc7c0dcd",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2865,
+    "verdict": "ALLOW"
+}

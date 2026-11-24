@@ -1,0 +1,16 @@
+{
+    "action": "229c0b516ecd3f53ac10334bd3e66f34",
+    "effect": {
+        "detail": {
+            "base": "d15a614cddca30cc8442402968ff1635d4e079c5",
+            "branch": "workbench/newsletter-signup-look",
+            "commit": "928d5c2a2e73a88b52fbdadb28cee1272f09dcc1",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2853,
+    "verdict": "ALLOW"
+}

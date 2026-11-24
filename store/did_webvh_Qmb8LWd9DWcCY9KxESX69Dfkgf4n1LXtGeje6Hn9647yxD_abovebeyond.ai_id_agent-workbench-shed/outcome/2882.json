@@ -1,0 +1,16 @@
+{
+    "action": "ffb70b7f8f255b338926537bcc07d4c7",
+    "effect": {
+        "detail": {
+            "base": "12693d28966fc6770624c92ec8d67b764ec1348a",
+            "branch": "workbench/mailing-brand",
+            "commit": "41e7259897ba929b72cfa04d1e42f77b13f3b178",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2880,
+    "verdict": "ALLOW"
+}

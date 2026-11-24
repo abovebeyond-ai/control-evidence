@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:57",
+            "note": "#1103. Prod 2026-11-23: warrantyPrograms/all gives [] (HTTP 200) for all 9 dealer accounts; login and makes list ok (makes list hung at 06:30). No warranty offers anywhere. Question to RealGarant via Ilse. Smoke reads [] as ok: to fix.",
+            "state": "parked",
+            "url": "https://github.com/stocklistdealer-eu/platform/issues/1103"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261123100408-3e595a"
+}

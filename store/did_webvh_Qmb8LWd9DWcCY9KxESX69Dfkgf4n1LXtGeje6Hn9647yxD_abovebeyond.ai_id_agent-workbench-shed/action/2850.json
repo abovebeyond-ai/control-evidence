@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\n`source_links` and `source_keep` gave each page its Gentells link and nothing of the page. To write with its figures, an assistant then opened the publisher's page itself. The Claude app shows the address of every page it opens beside the text, so a paragraph meant to cite gentells.com came back with chips to vdab.be and Eurostat, and the person had to ask again.\n\nGentells reads each page once when it is kept, so the text is there already.\n\n## What\n\n- `whatWasRead` in `packages/core/kept-sources.mjs`: for each page, its title, publisher and date as read, and its text, cut to a share of the answer (40,000 characters in all, between 300 and 4,000 a page). A page that could not be read brings `unread: true` and no text.\n- `source_keep` returns it with each kept page, and `source_links` with each page that has a link, in `read`, with a `readNote`: write from it, do not open the publisher's page, and say an unread page is unread rather than fetching it.\n- The descriptions of both tools say the same. They are shared by Ask and by the MCP on gentells.com, which passes the answer on as it is.\n- No signal id goes out, and nothing of who kept a page or for what.\n\nThe three pages kept in today's test have their text already, so `source_links` brings it for them at once.\n\n## Checked\n\n- `test/kept-sources.test.mjs`: a kept page brings what was read; a page held already brings what was read then; an unread page brings no text and says so; no id and no keeper goes out; the text is cut to 4,000 for one page and to 666 for sixty; through Ask, `source_links` brings it with the link.\n- Full suite 1828 of 1828, `tsc` clean.\n\n## After merge\n\nNothing to run.\n",
+            "branch": "workbench/links-carry-what-was-read",
+            "title": "Gentells links come with what was read from the page"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261123114215-f3f90a"
+}

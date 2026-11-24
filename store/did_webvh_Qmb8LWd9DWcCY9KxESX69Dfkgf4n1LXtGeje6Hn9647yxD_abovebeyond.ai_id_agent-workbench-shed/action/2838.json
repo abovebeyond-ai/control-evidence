@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nOn 23 November 2026 the Observatory answered nothing from the morning on. The server ran one database query for minutes at a time, on its only thread.\n\nThe morning desk mail lists what waits at the desk, and for that it asks `sourceScorecard` for every source on trial (146 that day). The scorecard counted a source's cited signals with a test per signal over every current insight and its signal list (11,134 insights, each with the signals it rests on). Measured on the box with `sqlite3 -readonly`, that count alone ran longer than 60 seconds for one source of 1,166 signals. The mail is tried on the first round after 07:00 UTC and again at every start, so a restart froze the server again. Ask builds the same list for every question.\n\nThe trial waves started on 19 November, twenty sources a day, so the work grew every day. Friday's mail still went out; Monday's did not.\n\n## What\n\n`packages/core/source-scorecard.mjs`: the signals a current insight names are read once per call into a set, and each source's own signals are counted against it. The result is the same count.\n\n## Checked\n\n- `test/source-scorecard.test.mjs` (new): a signal named by two current insights counts once, one named only by a superseded insight does not, an insight with broken JSON is skipped. A load shaped like production (3,000 insights of 200 signals, ten sources on trial of 100 signals each) takes 0.6 s; the old query took 35 s on the same load.\n- The other heavy part of the scorecard, distinct concepts, measured on the box for the same source: 0.02 s.\n- Full suite 1823 of 1823, `tsc` clean.\n\n## After merge\n\nNothing to run. Today's desk mail was recorded as handled on the box (a `desk_mail` row for 2026-11-23 with fingerprint `held`) to get the server answering; tomorrow's goes out as usual.\n",
+            "branch": "workbench/scorecard-cited-once",
+            "title": "The source scorecard reads what insights name once"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261123100534-ba3cc9"
+}

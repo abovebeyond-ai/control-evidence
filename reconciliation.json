@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-23T07:34:37+00:00",
+    "computed_at": "2026-11-24T07:34:43+00:00",
     "window": {
-        "since": "2026-11-16T07:33:02+00:00",
+        "since": "2026-11-17T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -126,8 +126,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 29,
-                "gateway": 29
+                "github": 27,
+                "gateway": 27
             }
         },
         "Trendwolves/gentells-site": {
@@ -137,8 +137,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 9,
-                "gateway": 9
+                "github": 10,
+                "gateway": 10
             }
         },
         "Trendwolves/glk-transferor": {
@@ -188,8 +188,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 11,
-                "gateway": 11
+                "github": 18,
+                "gateway": 18
             }
         },
         "kubo-global/kubo-website": {
@@ -198,8 +198,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 17,
-                "gateway": 17
+                "github": 18,
+                "gateway": 18
             }
         },
         "stocklistdealer-eu/platform": {
@@ -208,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 8,
-                "gateway": 8
+                "github": 2,
+                "gateway": 2
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -328,8 +328,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 6,
-                "gateway": 6
+                "github": 5,
+                "gateway": 5
             }
         },
         "abovebeyond-ai/bextrust": {
@@ -653,8 +653,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 10,
-                "gateway": 10
+                "github": 9,
+                "gateway": 9
             }
         },
         "kubo-global/swallow-method": {

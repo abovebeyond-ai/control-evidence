@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d15a614cddca30cc8442402968ff1635d4e079c5",
+            "branch": "workbench/newsletter-signup-look",
+            "files_sha256": "5fb1d733a68d0591517b4d77ab69ab91f6baf060c5a04f312a66dbba65d735f5",
+            "message": "Newsletter sign-up asks only a first name and an address, on a band from a KUBO lab\n\nIt opens with an invitation and says under it what the newsletter brings. The language\ncomes from the page, and the tick for the Afrodidact newsletter says who Afrodidact is."
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261123114922-fece90"
+}
