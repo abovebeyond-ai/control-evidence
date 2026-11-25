@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:65",
+            "note": "PR #25 proposed (closes issue #24). Waiting for the rebuild webhook to be paused, then the swap of the nine sketches in production, then merge.",
+            "state": "in-progress"
+        },
+        "resource": "portal:cides-portfolio"
+    },
+    "run": "workbench-20261124090743-779129"
+}

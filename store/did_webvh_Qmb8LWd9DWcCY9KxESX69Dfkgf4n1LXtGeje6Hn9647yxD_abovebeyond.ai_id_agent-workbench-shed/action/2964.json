@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\n`composer audit --locked` (the job \"Dependencies carry no new advisory\") now finds six advisories in `web-auth/webauthn-lib` 5.3.9, the passkey library. They were published after main's last green run on 2026-11-18, and every pull request goes red on them, for example #1112. They concern CBOR length checks, attestation certificates sent as PEM text, metadata status reports and fake-credential decoys, and all are fixed from 5.3.13.\n\n## What changes\n\n- `composer update web-auth/webauthn-lib` takes it to 5.3.17.\n- Only that package's entry in `composer.lock` changes.\n- It brings no new or changed dependencies.\n\n## Tests\n\n- `composer audit --locked`: no advisories.\n- `TwoFactorTest`, `PasskeyRoutesTest` and `ACodeByMailIsASecondFactorTest`: green (34).\n- The full suite: green.\n\nAfter the merge, the red job on #1112 can run again: it audits the merge ref.\n",
+            "branch": "workbench/webauthn-lib-5-3-13",
+            "title": "Bump web-auth/webauthn-lib to 5.3.17 for six advisories"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261124134041-f09199"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "c15b67d0a4956009c0ab64911570d4ba",
+    "effect": {
+        "detail": {
+            "base": "2e62ec6fcdbdcb75494fce262009cb70391c6719",
+            "branch": "workbench/contacts-no-stage",
+            "commit": "fd27b92a74b9855132034aabc3ca9be00512837c",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2916,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "6d9bfd27576cfe8d3e81c49b80c01b80",
+    "effect": {
+        "detail": {
+            "base": "aeb562ce44965a835b35378cac4b9bd832ef2d50",
+            "branch": "workbench/fr-flow-label",
+            "commit": "17b5c2fc97224b7896d13ea343e12e64ace25f05",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2943,
+    "verdict": "ALLOW"
+}

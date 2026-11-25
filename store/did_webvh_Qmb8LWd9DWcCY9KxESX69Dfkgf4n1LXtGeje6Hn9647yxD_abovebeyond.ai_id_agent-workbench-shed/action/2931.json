@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "37828d2f22bd546588515d6f8e36c056de850915",
+            "branch": "workbench/palette-white-blue",
+            "files_sha256": "8553fbf99ac76323443148277c5a6d512e2e2cbc115959030771a217a445d7a3",
+            "message": "Switch the site to the white + powder blue palette"
+        },
+        "resource": "ShaneDeconinck/cides"
+    },
+    "run": "workbench-20261124090649-f7714a"
+}

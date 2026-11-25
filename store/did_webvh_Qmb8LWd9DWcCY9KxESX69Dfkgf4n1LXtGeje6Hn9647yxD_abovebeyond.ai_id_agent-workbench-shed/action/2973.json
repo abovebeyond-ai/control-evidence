@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f47a4758355e55785c45bf27c131dde7774d0c76",
+            "branch": "workbench/insights-own-stock-and-zero-balance",
+            "files_sha256": "db68a1bcb90db3a369da4fbf6ed354b69cb386d1fb686c1500ca2bffd40e86b2",
+            "message": "Inzichten: count own stock only, list the garages at zero balance\n\n\"dealers beheren voorraad zonder module 1\" counted every row in vehicles, so a trader with one bidding vehicle stood there as a garage managing stock. It now counts finished own vehicles (for_export 0, type 0) of the last twelve months.\n\n\"dealers zoeken VIN's op met saldo nul\" compared today's balance with a year of lookups and said the lookups went on at zero, which the platform does not allow (R S1-2.1). The line now counts the garages at zero that looked up a VIN in the last twelve months, the ones the office tops up, and the \"Nu weggegeven\" tile that priced those lookups is gone.\n\nBoth warnings open their garages in the dealer panel (\"Bekijk wie\"); the zero-balance list shows the last lookup and the lookups of the year. Count and list read one condition (InsightsRepository::LISTS).\n\nCloses #1106, closes #1107 (Portal mail:59).\n\nPortal: Onder Inzichten tellen de twee waarschuwingen nu wat ze zeggen, en met \"Bekijk wie\" zie je welke garages op saldo nul staan en bijgevuld moeten worden.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261124141828-c93500"
+}

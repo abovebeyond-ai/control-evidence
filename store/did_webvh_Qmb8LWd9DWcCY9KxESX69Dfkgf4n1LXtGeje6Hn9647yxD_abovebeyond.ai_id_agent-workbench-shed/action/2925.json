@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: request  Priority: P2\nSummary: The designer's handoff of 2026-11-21 replaces the warm cream/beige palette with \"white + powder blue\": a white page, light blue cards and a dark blue footer, with the red #ED1D29 unchanged as the only bright accent.\n\nSource: Portal mail:65 (handoff PDF \"Cides website nieuw kleurenpalet Wit + poederblauw\", attached there).\n\n## What is asked\n\n1. New values for the tokens in `:root` (`web/src/styles/global.css`), plus one new token `--sketch` (#F2F6F9) for the ground behind sketches and line drawings. `--cream` becomes #FFFFFF; renaming it to `--page` is allowed if done everywhere.\n\n   | Token | Old | New |\n   | --- | --- | --- |\n   | `--red` | #ED1D29 | #ED1D29 (unchanged) |\n   | `--cream` | #F7F1EA | #FFFFFF |\n   | `--card` | #EDE1D5 | #EAF1F7 |\n   | `--card-deep` | #E3D4C5 | #DAE6F0 |\n   | `--sketch` (new) | (was the card tone) | #F2F6F9 |\n   | `--ground` | #E4DAD0 | #DAE6F0 |\n   | `--sand` | #B9A392 | #A3B4C2 |\n   | `--divider` | #DED0C2 | #E3E9EE |\n   | `--chip-border` | #D8C8BA | #D0DCE6 |\n   | `--taupe` | #6B5D51 | #56636E |\n   | `--ink` | #2A1F19 | #18212A |\n   | `--footer` | #3A2A20 | #17222D |\n   | `--footer-text` | #E4DAD0 | #D5DEE6 |\n   | `--white` | #FFFFFF | #FFFFFF (unchanged) |\n\n2. Hard-coded colours that must follow: the chip border and the line above \"Result\" on Our approach (to `--chip-border`), the veil on the confidential card and the Home/Contact hero overlay (old ink rgba to the new ink, same opacities).\n3. Images with the old beige baked in get recoloured (divide by the old background, multiply by the new one, so lines and shadows stay): the four Our approach quadrants to #DAE6F0, the Home disc \"One product, four phases\" to #FFFFFF, the `*-warm` sketches in the case galleries to #F2F6F9. The quadrants and the disc live in the code; the sketches live in Sanity and need replacing there.\n4. Design rules 2 and 4 in `CLAUDE.md` rewritten for the new colours (text supplied in the handoff), and the token table in the docs updated.\n5. Check every page on desktop and at 390 px, and the confidential card and the Home hero with the new overlay colour.\n\nUnchanged: fonts, sizes, spacing, layout, the red, white behind product photos, interactions. The red still misses 4.5:1 for small text (4.4 on white, 3.8 on a card), slightly better than before; rule 3 forbids tinting it.\n\n## Why\n\nIt is the palette the client chose after testing it on a page with the real images. Because the cream and the card tone are baked into some images, changing only the tokens would leave beige blocks on a blue or white ground, so the code change and the image replacement in Sanity have to go live together.\n",
+            "labels": [
+                "mail",
+                "enhancement",
+                "priority:P2"
+            ],
+            "title": "Switch the site to the white + powder blue palette"
+        },
+        "resource": "ShaneDeconinck/cides"
+    },
+    "run": "workbench-20261124085807-97a58f"
+}

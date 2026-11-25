@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "16e218fdfae07b46aabfaeb3d17fd6afee8c0902",
+            "branch": "workbench/vin-lookup-new-garage-2",
+            "files_sha256": "f572f26327e7679664f5dc9b3166d0fbd0651f0d815066cba754c78fccc6d98c",
+            "message": "Chassis lookup answers within the request limit and always says what happened\n\nProduction stops a web request after 30 seconds. VWE (no timeout), AutoConnect (30 s) and CarWizard\n(30 s) could together outlast it; when AutoConnect was slow the request was killed, the browser got a\n504 and the modal showed nothing. The three calls now share a 24-second budget, every refusal answers\none sentence in one shape, and the modal shows a failure through one renderer, also without JSON.\n\nCloses #1111"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261124140521-4dd806"
+}

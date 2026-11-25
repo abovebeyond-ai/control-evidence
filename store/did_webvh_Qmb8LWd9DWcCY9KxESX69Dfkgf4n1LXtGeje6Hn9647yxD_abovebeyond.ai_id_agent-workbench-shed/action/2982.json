@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "986a8ca2757f0874c24772f9f86b3b173a6aa3bf",
+            "branch": "workbench/photo-upload-backoff-2",
+            "files_sha256": "0fc077b0d90c09c04408672b9f7ca216399e53878a8525c28456343efbdd4d81",
+            "message": "Photo upload: a refused bucket write waits for a later attempt, only the last one is an alarm\n\nNightwatch: 77"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261124144252-0cc3d9"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "aeb562ce44965a835b35378cac4b9bd832ef2d50",
+            "branch": "workbench/fr-flow-label",
+            "files_sha256": "5576595e2970f4973383902093666cf3ada7eb05e502ad7f2d425a1fe6b2d7e2",
+            "message": "Name the general flow in French on the French site"
+        },
+        "resource": "ShaneDeconinck/trendwolves-call-agents"
+    },
+    "run": "workbench-20261124110347-ab5b74"
+}

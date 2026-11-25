@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nSince #502, `source_links` and `source_keep` send what Gentells read from each page, so an assistant writes from that and not from the publisher's page. A kept page held only the opening 3,000 characters a post's source is read for, and a signal holds 4,000 at most.\n\nAsked for a paragraph with Eurostat's youth unemployment, an assistant found the Belgian figure missing from what Gentells sent and opened the page itself. That put ec.europa.eu back as a chip beside the text. On that page (euro indicators of 1 October 2026) the figure sits in a country table at character 7,400 of 15,800.\n\n## What\n\n- Keeping a page reads up to 20,000 characters of it (`KEPT_TEXT`) and holds them in a new column, `kept_sources.text`. The signal is left at the 4,000 characters that every reading of signals (classify, the writer, the judge) is sized for.\n- `readPage` takes the length as an option. Every other caller keeps the opening of 3,000 as before. A table's cells and rows stay apart (` | `, ` ; `), so a row reads as `Belgium | 18.4 | 19.1 | 19.1`.\n- `whatWasRead` takes the kept text when there is one. An answer passes on up to 12,000 characters a page for up to three pages, less when more are named (40,000 in all, as before).\n- `bin/reread-kept.mjs` reads the pages kept before this once more, web pages and PDFs, and replaces the kept text only by a longer one. Without `--write` it only says which would change.\n\n## Checked\n\n- `test/kept-sources.test.mjs`: a figure in a table past the opening is kept, its cells apart; the signal stays at 4,000 or less; the reread writes nothing without `--write`, writes the kept text and not the signal with it, and changes nothing a second time.\n- The real Eurostat page through the new `readPage`: 15,789 characters, `Belgium | 18.4 | 19.1 | 19.1` at 7,410.\n- Full suite 1829 of 1829, `tsc` clean.\n\n## After merge\n\nOn the box, once deployed:\n\n```\ncd ~/app && node bin/reread-kept.mjs\ncd ~/app && node bin/reread-kept.mjs --write\n```\n\nThe first says which pages get a longer text, the second writes it.\n",
+            "branch": "workbench/kept-pages-whole",
+            "title": "A kept page holds its whole text, tables included"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261124081524-191566"
+}

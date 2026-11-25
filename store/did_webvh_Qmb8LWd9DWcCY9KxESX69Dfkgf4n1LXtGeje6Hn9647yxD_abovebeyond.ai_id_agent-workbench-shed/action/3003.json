@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:66",
+            "note": "Own cause, not #1116: PhotoNames::free used exists() (S3 folder listing). Issue #1118; fix committed locally on workbench/photo-names-file-exists, suite green. Waits for a go to propose.",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261124151122-a51179"
+}

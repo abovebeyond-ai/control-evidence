@@ -1,0 +1,16 @@
+{
+    "action": "ee7dc949f47f693fb379e7c2b7557d09",
+    "effect": {
+        "detail": {
+            "base": "f47a4758355e55785c45bf27c131dde7774d0c76",
+            "branch": "workbench/insights-own-stock-and-zero-balance",
+            "commit": "44f21bd07bfcda95f01d088ccecda91f1cc7e977",
+            "files": 8,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2973,
+    "verdict": "ALLOW"
+}

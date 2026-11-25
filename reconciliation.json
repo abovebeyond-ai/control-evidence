@@ -1,7 +1,7 @@
 {
-    "computed_at": "2026-11-24T07:34:43+00:00",
+    "computed_at": "2026-11-25T07:34:37+00:00",
     "window": {
-        "since": "2026-11-17T07:33:02+00:00",
+        "since": "2026-11-18T07:33:02+00:00",
         "days": 7,
         "bounded_by": "the start of service mode"
     },
@@ -65,8 +65,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 0,
-                "gateway": 0
+                "github": 1,
+                "gateway": 1
             }
         },
         "ShaneDeconinck/elisabethdevestele": {
@@ -126,8 +126,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 27,
-                "gateway": 27
+                "github": 28,
+                "gateway": 28
             }
         },
         "Trendwolves/gentells-site": {
@@ -188,8 +188,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 18,
-                "gateway": 18
+                "github": 19,
+                "gateway": 19
             }
         },
         "kubo-global/kubo-website": {
@@ -208,8 +208,8 @@
                 "gateway": 0
             },
             "pulls": {
-                "github": 2,
-                "gateway": 2
+                "github": 6,
+                "gateway": 6
             }
         },
         "stocklistdealer-eu/stockcars-website": {
@@ -284,8 +284,8 @@
                 "workflow": "absent"
             },
             "pulls": {
-                "github": 1,
-                "gateway": 1
+                "github": 2,
+                "gateway": 2
             }
         },
         "Trendwolves/gentells-app": {

@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:65",
+            "note": "Reading the colour palette PDF and mapping it onto the cides site",
+            "state": "in-progress"
+        },
+        "resource": "portal:cides-portfolio"
+    },
+    "run": "workbench-20261124085516-6f4627"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2e62ec6fcdbdcb75494fce262009cb70391c6719",
+            "branch": "workbench/contacts-no-stage",
+            "files_sha256": "560127abaa853046e1e9a1360142e720a128f7737c7d5c3f30fdf9ef37d2dd56",
+            "message": "Contacts no longer have a stage; the organisation stays\n\nThe stage (to approach, in conversation, promised, supports, stopped) added a choice to\nevery row, a filter and an action for everyone shown, for something that is kept as well in\na remark and in who in the team is the contact. It is taken off the page, the import, the\nbackup and the calls. A stage already set stays in the data, unused.\n\nThe organisation stays, and so do the actions standing under each other."
+        },
+        "resource": "kubo-global/afrodidact-website"
+    },
+    "run": "workbench-20261124083230-f62f80"
+}

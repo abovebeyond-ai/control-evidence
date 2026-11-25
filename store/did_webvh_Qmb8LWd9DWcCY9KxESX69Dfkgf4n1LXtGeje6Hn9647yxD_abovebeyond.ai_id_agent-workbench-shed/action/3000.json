@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: Choosing the file name for a platform copy asks S3 for a folder listing on every copy, and on 2026-11-24 one listing did not answer, so the copy stopped with an unhandled `UnableToCheckDirectoryExistence` (Nightwatch #79). Same shape as rule R S1-6.38, in a place its test did not see.\n\n## What happened\n\nOn 2026-11-24 at 14:56 UTC (one occurrence) production threw:\n\n> League\\Flysystem\\UnableToCheckDirectoryExistence: Unable to check existence for: 24182/stocklist_car_image_7.jpg\n\nat `app/Support/PhotoNames.php:24`.\n\n## Why\n\n`PhotoNames::free()` picks the name of a platform copy (`stocklist_car_image_N.jpg`, then `(1)`, `(2)`). It asks `Storage::disk($disk)->exists($path)`. On S3, `exists()` means \"a file OR a folder\": a HEAD, and when that finds nothing, a `ListObjectsV2` over the prefix. A free name is the usual case, so every copy runs a folder listing. This time the listing did not answer and the exception went up unhandled.\n\nR S1-6.38 already forbids `exists` on the bucket, and `TheBucketIsNotAskedForADirectoryTest` checks for it. But the test only looks for the literal `disk('vehicles')->exists(`, and this call names the disk through a variable.\n\n`PhotoNames::free` is called from `PlatformPhotoService::duplicate` (the Stocklist checkbox, saving a vehicle, `stocklist:platform-photos`) and `Photo::createStockListPhotoFromPhoto` (the partner API). Nightwatch does not say which caller this was.\n\n## Not the same as #1012\n\n#1012 / #1116 is about a write the bucket refused in `ProcessVehiclePhoto`. This is a needless listing in another place. A slow bucket is the trigger both times, but the fix is different.\n\n## Fix\n\n- `PhotoNames::free` asks each name with `fileExists` (one HEAD), asked again once when the bucket does not answer (`StorageUnavailable::retryOnce`).\n- The rule test also catches `exists(`/`missing(` on `backgrounds`, `dealers` and on a disk passed in a variable.\n\nSource: Portal mail:66 (a forwarded Nightwatch notification).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Choosing a platform copy's name lists the vehicle's folder on S3 (Nightwatch #79)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261124151100-215f6b"
+}

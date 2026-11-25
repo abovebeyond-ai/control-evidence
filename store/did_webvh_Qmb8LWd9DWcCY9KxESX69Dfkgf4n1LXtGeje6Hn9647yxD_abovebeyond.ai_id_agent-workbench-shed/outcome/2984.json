@@ -1,0 +1,16 @@
+{
+    "action": "167c66e81ca1d3945741025428eb311a",
+    "effect": {
+        "detail": {
+            "base": "986a8ca2757f0874c24772f9f86b3b173a6aa3bf",
+            "branch": "workbench/photo-upload-backoff-2",
+            "commit": "fd00be71dd20396d735d865e385333bc23437904",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 2982,
+    "verdict": "ALLOW"
+}

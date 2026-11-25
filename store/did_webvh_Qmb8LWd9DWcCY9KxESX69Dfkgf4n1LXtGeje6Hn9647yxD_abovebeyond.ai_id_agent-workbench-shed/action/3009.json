@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1117\n\nNightwatch #79 (production, 2026-11-24 14:56): `UnableToCheckDirectoryExistence: Unable to check existence for: 24182/stocklist_car_image_7.jpg` at `app/Support/PhotoNames.php:24`.\n\n## Why it broke\n\n`PhotoNames::free` picks the free name for a platform copy with `Storage::disk($disk)->exists()`. On Flysystem that is `fileExists() || directoryExists()`, and on S3 the second half is a `ListObjectsV2` over the name as a prefix. The HEAD answered \"not there\", the listing after it failed, and the request threw.\n\nR S1-6.38 already forbids `exists()` on the vehicles disk. Its guard (`TheBucketIsNotAskedForADirectoryTest`) only matched the literal `disk('vehicles')->exists(`. This method takes the disk as `$disk`, so the guard never saw it.\n\nBoth callers stop on that exception. In the partner API (`VehicleApiService::addPhoto` \u2192 `Photo::createStockListPhotoFromPhoto`) it rolls the new vehicle back. On a dealer's save (`PlatformPhotoService::duplicate`) it fails the save. On the partner path every other bucket question already waits out a throttle. This one did not.\n\n## What changes\n\n- `PhotoNames::free` asks `fileExists()`, one HEAD per name, through `StorageUnavailable::retryPastThrottle`. A bucket that keeps failing is a `StorageUnavailable` carrying the bucket's own answer.\n- The guard matches the vehicles disk in either quote, or any disk in a variable, with `exists(` or `missing(`. A third test pins which shapes it does and does not flag.\n- `AFreePhotoNameIsAskedForAFileTest`: a bucket whose listings always fail still yields a free name, both when the name is taken and when it is not, with zero listings; a HEAD throttled twice lands on the third attempt; a bucket that stays throttled is an error naming the 503.\n- R S1-6.38 names this case.\n\n## Checked\n\n- The new tests and the widened guard fail on `origin/main` (both `PhotoNames.php:24` and `:39` reported) and pass with the change.\n- Full suite: 3313 tests OK (the 9 PHPUnit notices, 2 skips and 1 incomplete were already there). PHPStan is clean on the touched files.\n\nNot known from the notice: which of the two callers it was, and whether a partner vehicle was lost. The production read tools were not admitted for this project at the time.\n",
+            "branch": "workbench/nightwatch-79-photo-name",
+            "title": "Free photo name asks the bucket for a file, never a directory"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261124151318-244bfa"
+}

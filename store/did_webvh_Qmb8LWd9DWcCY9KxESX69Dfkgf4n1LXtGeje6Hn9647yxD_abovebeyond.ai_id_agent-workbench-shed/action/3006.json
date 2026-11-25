@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ce3dfea3c45ce1dcd1f864535f44cdac7b710a06",
+            "branch": "workbench/nightwatch-79-photo-name",
+            "files_sha256": "f10d76562fe89d7bfbf84c281e00a25b6e261d7f8a7e600c6f371280b9210ec9",
+            "message": "Free photo name asks the bucket for a file, never a directory\n\nPhotoNames::free checked names with Storage::exists(), which on S3 is a\nHEAD and then a ListObjectsV2 over the name. The listing failed for\n24182/stocklist_car_image_7.jpg and the request threw\nUnableToCheckDirectoryExistence. It now asks fileExists() through\nStorageUnavailable::retryPastThrottle, like the partner path's other\nbucket questions. The R S1-6.38 guard test also catches a disk passed\nin as a variable, which is how this call slipped past it.\n\nNightwatch: 79"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261124151318-244bfa"
+}

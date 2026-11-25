@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:65",
+            "note": "Built and checked locally (issue #24, branch workbench/palette-white-blue c150ea2): tokens, overlays, recoloured quadrants and Home disc. Nine Sanity sketches recoloured, swap dry-run 9 docs/9 refs. Waiting for a go: propose the PR, and run the Sanity swap with the webhook paused before the merge?",
+            "state": "parked"
+        },
+        "resource": "portal:cides-portfolio"
+    },
+    "run": "workbench-20261124090321-be68af"
+}

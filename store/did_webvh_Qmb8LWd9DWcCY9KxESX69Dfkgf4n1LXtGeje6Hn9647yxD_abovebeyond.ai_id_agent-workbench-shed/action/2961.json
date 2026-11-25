@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "337bec8cfb842420bcce505b9420793d48a779ef",
+            "branch": "workbench/webauthn-lib-5-3-13",
+            "files_sha256": "37a79f4c0203077b3860a342c2186a50d2d9c9fd3c528b1c62b36f59f74aadbe",
+            "message": "Bump web-auth/webauthn-lib to 5.3.17 for six advisories\n\ncomposer audit --locked found six advisories in 5.3.9, published after main's last green run;\nthey are fixed from 5.3.13. Only this package's entry in composer.lock changes."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261124134041-f09199"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: Naming a platform copy of a photo asked the bucket for a directory listing, and when that listing failed the request threw `UnableToCheckDirectoryExistence` (Nightwatch #79). Rule R S1-6.38 forbids that call on the vehicles disk, but its guard test did not see this one.\n\nSource: Portal mail:66, the Nightwatch notice for issue #79 (production, 2026-11-24 14:56:41, once).\n\n## What happened\n\n`League\\Flysystem\\UnableToCheckDirectoryExistence: Unable to check existence for: 24182/stocklist_car_image_7.jpg`, unhandled, at `app/Support/PhotoNames.php:24`.\n\n`PhotoNames::free` picks a free name for a platform copy (`stocklist_car_image_7.jpg`, then `(1)`, `(2)`, ...) with `Storage::disk($disk)->exists()`. On Flysystem `exists()` is `has()`: `fileExists() || directoryExists()`. On S3 the second half is a `ListObjectsV2` over the prefix. Here the HEAD answered (no such file yet), and the listing that followed failed. A directory with a photo's name is never what we mean.\n\nR S1-6.38 says exactly this: on the vehicles disk we ask with `fileExists`, never with `exists`. `TheBucketIsNotAskedForADirectoryTest` guards it, but it only looks for the literal `disk('vehicles')->exists(`, and `PhotoNames::free` passes the disk as a variable (`disk($disk)`), so it slipped through.\n\nThere are two callers, and both stop on that exception:\n- `Photo::createStockListPhotoFromPhoto`, from `VehicleApiService::addPhoto` for a partner's photo. There a throw rolls the whole new vehicle back (as in #1097). Every other bucket question on that path already waits out a throttle (`StorageUnavailable::retryPastThrottle`). The name check is the only one that does not.\n- `PlatformPhotoService::duplicate`, when a dealer saves a shared vehicle or turns Stocklist on from the list. A throw there fails the save.\n\nWhich caller it was is not in the notice. The production read tools were not admitted for this project when this was written.\n\n## What to do\n\n- `PhotoNames::free` asks `fileExists`, through `StorageUnavailable::retryPastThrottle` like the rest of the partner path.\n- The guard test also catches `disk($variable)->exists(` and `->missing(`, so the rule covers a disk name passed in.\n- R S1-6.38 names this fourth case.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Naming a platform photo copy asks the bucket for a directory (Nightwatch #79)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261124150707-0d6604"
+}

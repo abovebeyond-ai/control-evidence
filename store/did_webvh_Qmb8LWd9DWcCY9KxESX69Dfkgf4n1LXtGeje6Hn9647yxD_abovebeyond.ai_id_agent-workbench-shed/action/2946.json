@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nOn the French site the flow picker, the flow page heading and the header subtitle showed the general flow under its Dutch name, \"Algemeen\". Flow names had one language only; their taglines were already translated.\n\n## What changes\n\n- **Flows can carry their name per language.** `labels` on a flow and `subtitles` on its brand, keyed by language code, next to the existing `taglines`. Without them the single `label` and `subtitle` are used, as before.\n- **The general flow is \"G\u00e9n\u00e9rale\" in French.** Dutch stays \"Algemeen\". AXA needs no translation.\n- **`App.vue` reads the name for the active language** on the picker card, the flow page heading and the header subtitle.\n- **`scripts/check.mjs` fails a flow that translates its name in only some languages**, so one language cannot quietly fall back to another's word.\n\n## Checked\n\n- `npm run check`: 18 checks pass.\n- `npm run build` passes.\n- In a local preview with the language on French, the picker card, the flow page heading and the header subtitle read \"G\u00e9n\u00e9rale\", and \"Algemeen\" no longer appears.\n\n## Not checked\n\n- The Dutch site was not looked at in a browser; its strings in `spec.json` are unchanged.\n- No call was placed.\n\n## After the merge\n\nNetlify builds and publishes the site from `main`, as with #3.\n",
+            "branch": "workbench/fr-flow-label",
+            "title": "Name the general flow in French on the French site"
+        },
+        "resource": "ShaneDeconinck/trendwolves-call-agents"
+    },
+    "run": "workbench-20261124110347-ab5b74"
+}

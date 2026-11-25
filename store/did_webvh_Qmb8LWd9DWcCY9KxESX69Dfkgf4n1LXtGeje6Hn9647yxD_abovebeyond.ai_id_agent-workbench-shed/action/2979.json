@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:59",
+            "note": "PR #1115 (closes #1106, #1107): Inzichten counts own stock only and lists the garages at zero balance to top up. Earlier PR #1108 for the two sheet bugs.",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1115"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261124141907-cc79af"
+}

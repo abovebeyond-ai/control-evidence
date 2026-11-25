@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "170e53e444824fddd58a512283bf18f4fda898f1",
+            "branch": "workbench/kept-pages-whole",
+            "files_sha256": "951b767f815b27e8b3d9070d0edb8409ff9165061204163760b746f32738363f",
+            "message": "A kept page holds its whole text, tables included\n\nA kept page held the opening 3,000 characters a post's source is read for. Asked for a\nparagraph with Eurostat's youth unemployment, an assistant found the Belgian figure missing\nfrom what Gentells sent (it sits in a country table at character 7,400 of 15,800) and\nopened the publisher's page itself, which put Eurostat's address back beside the text.\n\n- Keeping a page reads up to 20,000 characters of it and holds them in kept_sources.text,\n  beside the signal. The signal stays at the 4,000 characters every reading of signals is\n  sized for.\n- readPage keeps a table's cells and rows apart (\" | \", \" ; \"), and takes the length as an\n  option; every other caller keeps the opening as before.\n- An answer passes on up to 12,000 characters a page, for up to three pages.\n- bin/reread-kept.mjs reads the pages kept before this once more; without --write it only\n  says which would get a longer text.\n\nPortal: Een bron die het team bewaart, houdt haar volledige tekst bij, tabellen inbegrepen."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261124081524-191566"
+}
