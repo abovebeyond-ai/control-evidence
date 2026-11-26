@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "48e5efe70f82a9fad148741c816c2bd7a365e0f2",
+            "branch": "workbench/blur-retry",
+            "files_sha256": "d69144d0901917f685012c2b63a32616746727ea6b55166ff470ea206118dafe",
+            "message": "A photo waiting for Blurit always gets an end: a failed task is sent again, a lost webhook is fetched"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261125105330-a0ebc2"
+}

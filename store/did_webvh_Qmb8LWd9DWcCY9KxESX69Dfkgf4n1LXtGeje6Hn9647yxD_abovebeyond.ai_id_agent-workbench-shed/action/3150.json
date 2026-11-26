@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c77ac5ea997958381603c2bee3643fd3fac18e19",
+            "branch": "workbench/autoconnect-twenty-seconds",
+            "files_sha256": "b459650449abd6f73ec216c10136828bb19830ae2b58fd1cf58e6a49e5290826",
+            "message": "AutoConnect gets 20 seconds of a chassis lookup instead of 10"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261125141916-b260e1"
+}

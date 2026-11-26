@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:68",
+            "note": "handed to mail-63 (wG:pQ): photo upload, same bucket area as #1116/#1119",
+            "state": "in-progress"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261125100012-b6d819"
+}

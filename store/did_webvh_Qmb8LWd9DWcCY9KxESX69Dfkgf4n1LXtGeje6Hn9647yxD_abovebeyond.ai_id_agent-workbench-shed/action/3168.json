@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "501e2ba17168159ba8b7926fd6e944fd89f6038c",
+            "branch": "workbench/locale-slugs",
+            "files_sha256": "449f0b3db6bca048a240f79cc9bd254f146d7624440398fc639ee3a72506f453",
+            "message": "Translate address words and keep old slugs of pages and frames alive\n\nThe word in front of a slug now follows the language: /en/collection,\n/fr/collection, /de/kollektion and /en/frame, /fr/monture, /de/fassung\n(blog categories: category, kategorie). Every word routes in every\nlanguage and answers with one 301 to the address of that language, so\nthe indexed /en/collectie/... and /en/montuur/... keep their value.\n\nPages and frames get a slug history like the blog's journal_slugs: the\nsync remembers every slug a document had per language (document_slugs),\nan old slug answers 301 to the current address, and the address of a\ndocument that is no longer published answers 410. The table starts\nfilled from the mirror and from the slugs that were live on 2026-11-25.\n\nSlugs are cleaned before use (App\\Support\\Slugs::normalize), and an\nempty slug counts as missing: a language without its own slug borrows\nthe Dutch one. The English slug of the O1 was a sentence with spaces and\nreached the sitemap that way; it now becomes a clean address, and the\nspaced one forwards to it.\n\nhreflang, canonical, the language switch, the sitemap and the collection\ntiles use the new addresses. Checked: all 236 URLs of the live sitemap\nanswer 200 or one 301 to a 200 against a mirror of the published content.\n\nPortal: Vertaalde adressen op hoet.be (/en/collection, /fr/monture, ...), en een gewijzigde slug van een pagina of montuur stuurt het oude adres door."
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261125144946-4940a8"
+}

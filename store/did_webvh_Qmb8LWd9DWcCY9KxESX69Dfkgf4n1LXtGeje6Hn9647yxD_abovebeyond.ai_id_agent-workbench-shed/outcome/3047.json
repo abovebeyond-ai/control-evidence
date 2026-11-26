@@ -1,0 +1,16 @@
+{
+    "action": "8283bb0a5e2a3d6fdd283ba3410ab16e",
+    "effect": {
+        "detail": {
+            "base": "7315b5d5be6171d0d42d87bded840bc84ff96248",
+            "branch": "workbench/admit-without-terms-2",
+            "commit": "7ed411fea741b8f252cb25a2694a35a4409f453b",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3045,
+    "verdict": "ALLOW"
+}

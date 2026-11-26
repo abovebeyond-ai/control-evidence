@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c1aeaa7b553f7d89ca0cdcce348218b9d44c038e",
+            "branch": "workbench/cite-without-terms",
+            "files_sha256": "437aa663516017a4089457800165ba32ee917bb7891bbe18c7001fb7b88df011",
+            "message": "A statistic from a publisher with unknown terms can be cited\n\nStandard 0.21.0 (Trendwolves/gentells-standard, refusePublisherTerms):\nonly recorded terms that forbid a paid product (non-commercial,\nforbidden) stop a citation. Since nobody looks terms up any more, the\nold rule would have kept every newly admitted publisher's figures\nuncitable for \"the publisher's terms are unknown\".\n\n- statisticCitable reads citable.refusePublisherTerms instead of\n  admit.allowTerms.\n- cite-statistics tests: a publisher without terms is taken; a\n  non-commercial one is still refused.\n- packages/core/standard.mjs synced from tag v0.21.0.\n\nPortal: Een cijfer van een toegelaten uitgever mag nu geciteerd worden ook als niemand zijn gebruiksvoorwaarden heeft opgezocht; alleen voorwaarden die commercieel gebruik verbieden houden het tegen."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261125105437-c77355"
+}

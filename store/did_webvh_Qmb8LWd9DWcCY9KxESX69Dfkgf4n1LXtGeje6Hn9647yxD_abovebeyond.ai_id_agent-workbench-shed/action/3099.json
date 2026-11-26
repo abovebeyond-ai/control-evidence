@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1122\n\n## What was wrong\n\nThe Blurit webhook (`ImageController::status`) only acted on `Succeeded`. A task Blurit reported as `Failed`, or a webhook that never arrived, left the photo on `processing = 1` for good. A platform copy with a cut-out is shown while it processes (R S1-6.39), and that cut-out is remove.bg's, with the plate readable. On 2026-11-25 sixteen rows were waiting this way, the oldest since 26 September. Asked directly, Blurit answered today's task with `Failed: Internal error`.\n\n## What changes\n\n- `App\\Support\\BlurTasks::failed()`:\n  - a **platform copy** is sent to Blurit again as a new task, up to three tasks in all;\n  - after three failed tasks the copy is removed hard (R S1-6.26), so it counts as missing and the next save makes it again; nobody sees its plate in the meantime;\n  - an **own photo** is not blurred (R S1-6.5), so it just leaves \"processing\".\n- The webhook calls `failed()` on a `Failed` status.\n- `stocklist:blur-pending`, scheduled every ten minutes, asks Blurit about every row that waited more than 15 minutes:\n  - a finished image is fetched and written through `write_image`, as the webhook would;\n  - a failed or unknown task goes through `failed()`;\n  - a task still running after two hours counts as failed;\n  - it asks nothing where Blurit is closed (staging, the preview).\n- `BluritService::task()` and `media()` ask for a task's status and its image. The four properties are declared, which ends the \"dynamic property\" deprecations on PHP 8.5.\n- R S1-6.9 describes the end a waiting photo always gets.\n\n## After the deploy\n\nThe first sweep handles the sixteen waiting rows. At most fourteen copies go to Blurit again, the own photo from September is released, and what Blurit keeps failing is removed after three tasks. That is a few dozen Blurit tasks at most.\n\n## Tests\n\n- `AFailedBlurGetsAnEndTest`, 7 tests:\n  - a failed task from the webhook sends the copy again;\n  - a copy is removed after three tasks;\n  - an own photo is released and not sent again;\n  - the sweep writes a finished image whose webhook never came, and sends a failed task again;\n  - it leaves a recent row and a task still running, but sends again one that has been running for three hours;\n  - it asks nothing where Blurit is closed.\n- The two webhook tests fail on main.\n- Full suite: 3322 tests green; PHPStan clean on the touched files.\n",
+            "branch": "workbench/blur-retry",
+            "title": "A photo waiting for Blurit always gets an end: a failed task is sent again, a lost webhook is fetched"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261125105330-a0ebc2"
+}

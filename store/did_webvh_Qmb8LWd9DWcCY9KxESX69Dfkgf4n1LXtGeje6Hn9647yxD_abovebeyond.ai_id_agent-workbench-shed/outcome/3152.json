@@ -1,0 +1,16 @@
+{
+    "action": "5f9f329c2d6ee8e425c412f5545648fe",
+    "effect": {
+        "detail": {
+            "base": "c77ac5ea997958381603c2bee3643fd3fac18e19",
+            "branch": "workbench/autoconnect-twenty-seconds",
+            "commit": "417f8c077becb8134637ece4376cd75c33ee8c0c",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3150,
+    "verdict": "ALLOW"
+}

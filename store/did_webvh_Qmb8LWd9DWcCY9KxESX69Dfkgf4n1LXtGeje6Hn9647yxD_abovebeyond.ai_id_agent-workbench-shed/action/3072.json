@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "61b25990653777cc56b06e11d8fb3ba2495135ce",
+            "branch": "workbench/upload-queue",
+            "files_sha256": "78f1b2fbe7d63fe5d32af43101d46329ec884bf57017888d61ef23221f82d304",
+            "message": "A dealer's upload has its own queue, taken before the platform copies"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261125102659-97be84"
+}

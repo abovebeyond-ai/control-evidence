@@ -1,0 +1,16 @@
+{
+    "action": "ba4610bf87359114fc1cd9f8e7bb8488",
+    "effect": {
+        "detail": {
+            "base": "bbc40cf4c0c093c6ac14cd0e1408759a06fb7e9a",
+            "branch": "workbench/mollie-test-flow",
+            "commit": "8b64d647f83bc0c6472a375258305d12bb6f5751",
+            "files": 36,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3087,
+    "verdict": "ALLOW"
+}

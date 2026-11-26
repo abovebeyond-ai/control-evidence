@@ -1,0 +1,16 @@
+{
+    "action": "07ba29a81d2362d1492e4dca7980d907",
+    "effect": {
+        "detail": {
+            "base": "48e5efe70f82a9fad148741c816c2bd7a365e0f2",
+            "branch": "workbench/blur-retry",
+            "commit": "7313ad71ffbfbd65a86c4a2b11f95a20613ee7ed",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3096,
+    "verdict": "ALLOW"
+}

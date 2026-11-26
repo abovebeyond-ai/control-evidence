@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:68",
+            "note": "Issue #1120. 45 own uploads stuck in processing; not #1119 (copies only), #1116 cannot leave a row stuck. Needs the tinker read in ~/work/mail-68-tinker.php (queue, failed jobs, rows).",
+            "state": "parked"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261125100320-600f49"
+}

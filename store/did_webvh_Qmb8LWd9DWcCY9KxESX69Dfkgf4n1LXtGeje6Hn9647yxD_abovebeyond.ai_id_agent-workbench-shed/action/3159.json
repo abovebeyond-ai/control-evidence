@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What was wrong\n\nThe Studio has an optional SEO block on Home, About, cases and blog posts, and Home already holds a Dutch and an English meta title and description in it. Since the redesign's content layer, the site reads none of it:\n\n- Home showed `We make your idea tangible | Cides` in both languages, with no \"product design\", \"productontwikkeling\" or \"Brugge\" in the title.\n- All 82 pages shared `og-default.png` as their share image, cases with good hero photos included.\n- The organisation JSON-LD lost `sameAs` (the three profile links in siteSettings), because `socialLinks` was hard-coded to an empty list.\n- 42 of 82 meta descriptions ran past 160 characters (sector intros up to 337, the Sen case 529), so search results cut them mid-word.\n\n## What changes\n\n- `web/src/lib/seo.ts`\n  - `resolveMeta`: an override counts only in the page's own language; otherwise the page default stays. A Dutch title on the English page would be the wrong language in the English result.\n  - `metaDescription`: automatic descriptions keep whole sentences up to 160 characters, else cut at a word with an ellipsis. Editor overrides are used as written.\n- Cases and posts share a 1200x630 JPG crop of their hero or cover (hotspot respected), unless the Studio sets a share image.\n- `siteSettings.socialLinks` feeds `sameAs` again.\n\nResult on a local build from production: Home becomes `Product design bureau voor innovatieve bedrijven | Cides` (NL) and `Product design agency for manufacturers | Cides` (EN), with the Studio descriptions that name Brugge/Bruges.\n\n## Checked\n\n- `npm test --workspace web`: 53 passed. The new tests fail when the language rule or the length cap is broken.\n- `npx astro check`: 0 errors.\n- Local production build: same 82 sitemap URLs, the same 5 noindex pages (404 and empty blog categories), share image URL returns 200 image/jpeg.\n- The built `<body>` of Home, a case, About and a post is byte-identical to the live pages: only the head changes. No CSS touched.\n",
+            "branch": "workbench/seo-setup",
+            "title": "Read the Studio SEO overrides again and fit meta descriptions"
+        },
+        "resource": "ShaneDeconinck/cides"
+    },
+    "run": "workbench-20261125142741-137eb5"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "79e68b8df20e291d6e4bbe5230c47c81ea7d88a8",
+            "branch": "workbench/rotary-grant",
+            "files_sha256": "68e689a9a063b595e8c8cfb94246cf107cedcc8cfbb8c35e647efaf30e3b9f75",
+            "message": "Deployments say who funded the three labs of Rotary Global Grant 2016052"
+        },
+        "resource": "kubo-global/kubo-website"
+    },
+    "run": "workbench-20261125144524-84f720"
+}

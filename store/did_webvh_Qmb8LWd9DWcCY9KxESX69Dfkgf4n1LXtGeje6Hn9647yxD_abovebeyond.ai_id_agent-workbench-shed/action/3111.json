@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "48e5efe70f82a9fad148741c816c2bd7a365e0f2",
+            "branch": "workbench/vin-autoconnect-garage",
+            "files_sha256": "2f914f927cf005a07918d00f2a2a58994a7e3389e80a390afeb28f3b28e0f54d",
+            "message": "Chassis lookup reuses the latest kept AutoConnect answer and keeps a late one"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261125105625-4531af"
+}

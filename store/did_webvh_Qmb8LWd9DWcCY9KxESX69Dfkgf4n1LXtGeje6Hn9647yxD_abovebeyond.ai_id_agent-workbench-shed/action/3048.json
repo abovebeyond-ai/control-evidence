@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The card under Passed their trial asked a person to read the terms of use the Observatory had looked up and say what they were; only terms that allowed a paid product admitted the source. The lookup often could not tell (a 403, no terms page), and those trials waited while they counted against the most trials that run at once, which held every new trial.\n\nAdmitting no longer depends on the terms (Standard 0.20.0, Trendwolves/gentells-standard#27). The card shows what the trial brought (signals, kept share against all sources, what is new) and offers Admit and Reject, posted to `POST /sources/:id/decide`.\n\n**Merge after the pipeline PR for the desk mail**: it adds that route and removes `POST /sources/:id/terms`.\n\n`eslint`, `npm run brand`, `vite build` and the Playwright suite (104) pass; `e2e/sources-passed-trials.spec.js` now checks Admit and Reject.\n\nReplaces #147, which the gateway cannot update: its e2e spec still drove the terms card and failed in CI.\n",
+            "branch": "workbench/admit-without-terms-2",
+            "title": "Passed trials are admitted or rejected on what they brought"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261125095927-5e7968"
+}

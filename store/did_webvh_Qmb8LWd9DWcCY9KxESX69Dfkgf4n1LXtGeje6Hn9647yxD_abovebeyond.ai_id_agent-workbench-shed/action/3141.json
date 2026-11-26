@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "e71c1955b1537bd9756105ff2d54f8684f6c485b",
+            "branch": "workbench/blur-result-gone",
+            "files_sha256": "efa26caa86c44d447c23c972469d9c19e212343df3a2a338b59897d6a6f5899f",
+            "message": "A finished Blurit task whose image is gone is sent again, and the sweep releases an own photo\n\nBlurit keeps a finished image only for a while. On 2026-11-25 the first sweeps of\nstocklist:blur-pending found eleven tasks Blurit still called Succeeded whose image it answered\nwith HTTP 400 \"File ... not found\". The sweep counted that as unreachable and asked again every\nten minutes for good. BluritService::media() now returns null on a client error, and such a\ncopy goes the way of a failed task: sent again, removed after three tasks. An own photo is not\nblurred (R S1-6.5), so the sweep releases it without asking Blurit.\n\nRefs #1122"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261125134635-db47e7"
+}

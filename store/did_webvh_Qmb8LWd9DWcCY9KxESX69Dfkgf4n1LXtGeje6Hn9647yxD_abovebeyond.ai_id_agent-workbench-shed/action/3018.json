@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9c2a4b9704b700a5089c126506c26c63c1972e60",
+            "branch": "workbench/admit-without-terms",
+            "files_sha256": "f29755c72ba2d1f3e6b90b2fcf2fdaf86427ce6f4e5d1ff762eaa644c48483b3",
+            "message": "Admitting a source no longer depends on its terms of use (0.20.0)\n\nA trial that passed on what it brought waited for a person to read the\npublisher's terms (needs-terms), and terms that were non-commercial or\nforbidden turned a source down before its trial. Admission now rests on\nthe trial verdict and a person's yes.\n\n- rules/source.json#trial: needs-terms is gone; a trial that passes is ready.\n- rules/source.json#entry: refuseTerms is empty (kept, so earlier releases read).\n- rules/source.json#admit: allowTerms only decides which publishers a\n  statistic may be cited from (rules/statistic.json#citable, unchanged).\n- Conformance follows; exports regenerated."
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261125085051-0fc5e5"
+}

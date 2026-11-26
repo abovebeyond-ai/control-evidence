@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "846713f91aae1c8b576e6369d5ca2aefd5d216b4",
+            "branch": "workbench/source-repairs-2026-11-25",
+            "files_sha256": "8f39a23030dcad03d7aa56515f3aa1d04b03f076538fffed4dec4f605457bb99",
+            "message": "Repair plan for the failing sources of 25 November\n\nresearch/source-repairs-2026-11-25.json, each source checked by hand:\neight read from a feed that answers (parsed with the collector's parser\nand User-Agent), Eye on Design read as a page without the www. the\nscout added, four muted (403 with no feed, or no address in DNS).\nJiskefet is left: one timeout, it answers again.\n\nbin/repair-sources.mjs learns two things the plan needs:\n- `page` reads a web-browse source at another address: same row, state\n  and history, failures from nought, the old address in its notes.\n- A source is found by its exact address whatever its type, so a broken\n  feed (Lebensmittel Zeitung's stored address is an HTML list of feeds)\n  can be given the right one. By host it still finds pages only.\n\nNothing changes until a person runs it with --apply --by=<name>.\n\nPortal: Voor dertien falende bronnen ligt een herstelplan klaar: acht krijgen een werkend feedadres, \u00e9\u00e9n een juist paginaadres, vier worden gedempt. Het plan doet niets tot iemand van de desk het uitvoert."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261125103034-63d67b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2daa56d6e25501474187b0675cce2a7a3cb29456",
+            "branch": "workbench/review-mode",
+            "files_sha256": "92d337152cf8d7cfb8658798a41e0331954325cdfae862e3df37f49ce8791fea",
+            "message": "A review mode for the cover: the offer open to anybody, the reading and registering for members"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261125110309-56a44c"
+}

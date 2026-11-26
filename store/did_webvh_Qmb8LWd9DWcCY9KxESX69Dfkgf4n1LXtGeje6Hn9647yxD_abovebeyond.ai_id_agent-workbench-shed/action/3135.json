@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "020ed00fd32881d4fa1d84f23a2f0f1793fb640d",
+            "branch": "workbench/editorial-byline",
+            "files_sha256": "8da3bc0e23f962eaece41497151e7a4691dbc642332e8f8bdfa33392b845b059",
+            "message": "Posts are by the Trendwolves Editorial Team, not by the editor who wrote them"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261125130726-597479"
+}

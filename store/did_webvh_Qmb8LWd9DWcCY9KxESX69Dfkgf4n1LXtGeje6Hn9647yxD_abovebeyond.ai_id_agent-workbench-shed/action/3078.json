@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:68",
+            "note": "Uploads waited behind platform copies on one worker. PR #1121 (closes #1120): uploads on own photos queue; Forge worker already set to photos,default,webhook.",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1121"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261125102728-7bd636"
+}

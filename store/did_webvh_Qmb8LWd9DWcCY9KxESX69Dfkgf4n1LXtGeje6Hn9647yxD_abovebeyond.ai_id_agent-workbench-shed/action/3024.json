@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c8e7d32257ecab889562e6c61121effdf3c50558",
+            "branch": "workbench/web-browse-longest-waiting",
+            "files_sha256": "355079e616919a26142cce88b79e629aab70cb3e5ad3185907f2f6f40a932bdb",
+            "message": "web-browse reads the longest-waiting page first, says why a fetch failed, and the scout proposes only addresses that answer\n\nThe page list began one place further every six hours while one round\nreads many pages, so a page was read in a few rounds in a row and then\nnot until the start came round the whole list. On 25 November 2026 nine\nsources on the failing list had been tried last on 9 November, with two\nor three failures each: too few to be parked. Pages are now read\nlongest waiting first (last_collect_at), a page never read before all.\n\nA failed fetch was stored as undici's bare \"fetch failed\"; it now names\nthe cause (no such host, no connection, a certificate for another\nname), and a timeout says \"no answer in 15 s\". A host that is gone does\nnot park sooner: our own DNS can fail too.\n\nThe scout's model puts \"www.\" in front of names that have none (Eye on\nDesign, Gorilla vs Bear) and the scout never looked at the page itself.\ncore/reachable.mjs asks the page first: any answer counts, a \"www.\" is\ndropped when only the bare name answers, and an address nothing answers\nat is not proposed.\n\nPortal: Webpagina's die de Observatory leest komen nu allemaal op hun beurt, een mislukte lezing zegt waarom, en de scout stelt geen bron meer voor op een adres dat niet bestaat."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261125085134-834b51"
+}

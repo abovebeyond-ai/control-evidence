@@ -1,0 +1,16 @@
+{
+    "action": "f34a384f8bd32fd2d6a7f423a07a19eb",
+    "effect": {
+        "detail": {
+            "base": "421c49dd8118edfb908b8df247d13965fc7b544d",
+            "branch": "workbench/desk-mail-count",
+            "commit": "c775c18ed945be51a4ebd4ef56edf4e20b6fd76b",
+            "files": 23,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3030,
+    "verdict": "ALLOW"
+}

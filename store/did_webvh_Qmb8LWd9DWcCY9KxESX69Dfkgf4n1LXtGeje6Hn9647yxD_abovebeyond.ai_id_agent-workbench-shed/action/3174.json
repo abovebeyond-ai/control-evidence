@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3ca886a0f1285cd6cec038d8a387e591a367c13d",
+            "branch": "workbench/slug-description",
+            "files_sha256": "e4a931d28bebc015be6050193facd89fe8efdfa2919d2754537fcfcf6d7d4f55",
+            "message": "Describe and check slugs; say that a changed slug forwards\n\nEvery slug field gets a short description: 2 to 5 words, lowercase,\nhyphens, no articles or dates, the search term in the language of that\nversion, empty means the Dutch slug applies. Pages, frames and blog\narticles add that changing the slug is safe because the old address\nforwards (hoet-eyewear document_slugs and journal_slugs).\n\nThe slug field accepted anything typed into it; the English slug of the\nO1 was a sentence with spaces. Now a slug with anything other than\nlowercase letters, digits and hyphens is an error that shows the clean\nform, more than five words is a warning, and Generate cleans the way the\nsite does (accents dropped). Once a published slug is changed, an info\nline names the old address that will forward.\n\nThe collection document's slug is not used for any address on the site;\nits description now points to the collection page, where the address\ncomes from.\n\nPortal: In de Studio staat bij elke slug hoe hij eruit hoort te zien, en dat wijzigen veilig is omdat het oude adres doorstuurt."
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261125145123-e877d7"
+}

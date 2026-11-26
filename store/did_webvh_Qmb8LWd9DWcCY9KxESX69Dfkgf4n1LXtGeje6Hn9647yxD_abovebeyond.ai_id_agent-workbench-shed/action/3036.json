@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "7315b5d5be6171d0d42d87bded840bc84ff96248",
+            "branch": "workbench/admit-without-terms",
+            "files_sha256": "908825752fae34c03cc1a302cc0621985a441d9e4fc047e15a25e58611d1b987",
+            "message": "Passed trials are admitted or rejected on what they brought\n\nThe card under Passed their trial asked a person to read the terms of\nuse the Observatory had looked up and say what they were; only terms\nthat allowed a paid product admitted the source. The lookup often could\nnot tell (a 403, no terms page), and those trials waited while they\ncounted against the most trials that run at once.\n\nAdmitting no longer depends on the terms (Standard 0.20.0). The card\nshows what the trial brought and offers Admit and Reject, posted to the\npipeline's new POST /sources/:id/decide. Needs the pipeline change\nfirst: POST /sources/:id/terms is gone there.\n\nPortal: Op de Sources-pagina laat je een bron die haar proef doorstond nu meteen toe of wijs je ze af, zonder eerst de gebruiksvoorwaarden te lezen."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261125090823-1a59a4"
+}

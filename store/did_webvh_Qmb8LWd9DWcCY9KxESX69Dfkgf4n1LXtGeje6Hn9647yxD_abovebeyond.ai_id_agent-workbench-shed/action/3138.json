@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Posts are published under the Trendwolves editorial team, not under the name of the editor who wrote them. Until now the site showed the pipeline's `author_name` wherever a post named its author.\n\n`Article::BYLINE` (\"Trendwolves Editorial Team\") is now the only author the site shows:\n\n- **Post page:** \"By Trendwolves Editorial Team\" in the byline.\n- **Posts page and reading room:** the featured post names the team. The reading room showed the editor's name.\n- **Structured data:** the author is an Organization with that name, no longer a Person.\n- **Agent door** (`Shapes::postCard`): `author` is the team.\n\nThe pipeline still sends `author_name`, and the site stores it without showing it, so the pipeline needs no change.\n\nChecked: `StructuredDataTest` asserts the Organization author and that the editor's name is nowhere on the post page. Suite: 712 of 713 (BuildStampTest needs a build stamp, which a worktree does not have).\n",
+            "branch": "workbench/editorial-byline",
+            "title": "Posts are by the Trendwolves Editorial Team, not by the editor who wrote them"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261125130726-597479"
+}

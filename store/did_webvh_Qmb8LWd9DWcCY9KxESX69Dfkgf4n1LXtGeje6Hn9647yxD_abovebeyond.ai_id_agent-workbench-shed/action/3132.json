@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "During the review (`PRELAUNCH_REVIEW`) the homepage leaves out the trends and the report band, so the coloured figures band comes straight before \"How we read\". On a wide screen that scene has no padding of its own, and its heading sat against the band's lower edge.\n\nFor a visitor in review mode the scene now gets `lg:pt-24` above it. A member's homepage is unchanged: there the report band ends in a thin line on paper. Phones were not affected, since the scene has its own padding there.\n\nChecked by adding the same padding to the live page in a browser: the heading now stands clear of the band. `PreLaunchTest`, which renders the review homepage, passes.\n",
+            "branch": "workbench/review-how-we-read",
+            "title": "Room above How we read during the review"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261125122511-7de0da"
+}

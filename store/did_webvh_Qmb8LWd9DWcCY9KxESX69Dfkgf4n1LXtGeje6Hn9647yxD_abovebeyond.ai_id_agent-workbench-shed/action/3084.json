@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The failing list on the Sources page of 25 November 2026 held fourteen sources. #504 fixed what was the collector's (the rotation that left nine untried since 9 November, the bare \"fetch failed\"). This is the rest: a plan per source, checked by hand, for `bin/repair-sources.mjs`.\n\n## The plan (`research/source-repairs-2026-11-25.json`)\n\n| Source | Does | Why |\n|---|---|---|\n| Lebensmittel Zeitung | feed `lebensmittelzeitung.net/news/feed/` | the stored address is the HTML page listing their feeds |\n| Dazed Korea | feed `dazedkorea.com/rss` | dazed.co.kr has no address in DNS |\n| Gay Times | feed `gaytimes.com/rss/` | gaytimes.co.uk no longer answers |\n| Gayming Magazine | feed `gaymingmag.com/feed/` | gayming-magazine.com has no address in DNS |\n| Good On You | feed `goodonyou.eco/feed/` | goodonyou.org serves an empty page |\n| Gorilla vs Bear | feed `gorillavsbear.net/feed/` | www. before the Blogger name, outside its certificate |\n| Clash Music | feed `clashmusic.com/feed/` | the page answers 403, the feed answers |\n| The Oxford Student | feed `oxfordstudent.com/feed/` | the page answers 403, the feed answers |\n| Eye on Design | page `eyeondesign.aiga.org` | www. the name does not have; no feed |\n| Neon | mute | page and feed answer 403 |\n| The Balance Careers | mute | 403, and the feed at thebalancemoney.com too |\n| Overt Magazine | mute | no address in DNS |\n| Threads Magazine | mute | no address in DNS; Threads at threadsmagazine.com is a sewing magazine |\n\nJiskefet is left: one timeout, it answers again. Every feed was parsed with rss-parser and the collector's User-Agent on 25 November; each had items from the last week or so.\n\n## What `repair-sources` learns\n\n- `page`: reads a web-browse source at another address. Same row, state and history; failures from nought; the old address goes in its notes. A feed is not given a page address.\n- A source is found by its exact address whatever its type, so a broken feed can be given its right one. By host it still finds pages only.\n\n## Running it\n\nNothing changes until a person runs it, on the box:\n\n```\nnode bin/repair-sources.mjs research/source-repairs-2026-11-25.json --by=<name>          # what it would do\nnode bin/repair-sources.mjs research/source-repairs-2026-11-25.json --by=<name> --apply\n```\n\nThe four mutes are the desk's call: whoever runs it can drop them from the plan first.\n\n`npm test`: 1832 pass. `tsc` clean.\n",
+            "branch": "workbench/source-repairs-2026-11-25",
+            "title": "Repair plan for the failing sources of 25 November"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261125103034-63d67b"
+}

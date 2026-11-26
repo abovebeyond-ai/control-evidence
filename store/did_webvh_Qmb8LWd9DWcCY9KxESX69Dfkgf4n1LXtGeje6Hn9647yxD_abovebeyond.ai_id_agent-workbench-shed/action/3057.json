@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P1\nSummary: A garage's 45 own photos of one vehicle stay \"processing\" on the photo tab: 0 of 45 ready, every tile grey with \"processing takes longer than expected\". The garage cannot use the vehicle's photos.\n\n## What was reported\n\nOn 2026-11-25 (reported 10:58) a garage saw every own photo of one vehicle stuck on the photo tab (\"Site web et petites annonces\"): the progress line says 0 of 45 photos ready and every tile shows the \"late\" pill on a grey tile. The vehicle is not shared; these are the garage's own photos, not platform copies.\n\n## What the screenshots tell\n\n- Grey tiles with the processing pill are rows with `processing = 1` whose image does not load. An own upload (`ImageController::upload_dropzone`) writes its row with the tmp path (`<id>/drop/car_image_N.ext`), which is not in the bucket, so the tile is grey until `ProcessVehiclePhoto` writes the three sizes and sets the final path. A background removal on an existing photo would show the photo dimmed instead. So these are most likely uploads whose `ProcessVehiclePhoto` job has not finished.\n- `ProcessVehiclePhoto` either finishes the row or, when it gives up, removes it (`failed()`, R S1-6.36). A row that stays in processing means the job did not run, or is still running, or was lost.\n\n## Relation to yesterday's merges\n\n- #1119 (`PhotoNames::free`) only names platform copies; this vehicle is not shared, so that code is not on this path.\n- #1116 (`ProcessVehiclePhoto` releases a job after a refused write, 10 s then 60 s) is on this path, but a release puts the job back in the queue for at most 70 seconds and the third attempt still ends in the photo or in `failed()`. It cannot leave a row in processing by itself. Both deploys yesterday did restart the queue worker, so a worker that did not come back would show up exactly like this, for every garage.\n\n## Needs\n\nA production read: the rows of this vehicle (created, updated, handled), the `jobs` table by job and reserved state, `failed_jobs` of the last days, and whether other garages' uploads since yesterday are stuck too. Asked of the owner as a tinker script.\n\nSource: Portal mail:68 (forwarded by the office, with screenshots).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P1"
+            ],
+            "title": "A vehicle's own uploaded photos stay in processing: 0 of 45 ready"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261125100309-e33c77"
+}

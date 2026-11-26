@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a2d94b79e3424c4d144a29ff55d00e7e84e9be3e",
+            "branch": "workbench/seo-setup",
+            "files_sha256": "c3e5d8629e5c0f8a62dda9860e915e175389d235d2f068a41f4e79d37336678a",
+            "message": "Read the Studio SEO overrides again and fit meta descriptions\n\nThe redesign's content layer stopped reading the seo object, so the Dutch and\nEnglish home titles already in the Studio never reached the page, every page\nshared og-default.png, and sameAs lost the three profile links.\n\n- lib/seo.ts: resolveMeta (override in the page language only, else the page\n  default) and metaDescription (whole sentences up to 160 characters, else a\n  word cut with an ellipsis); tested, and the tests fail when either rule breaks\n- cases and blog posts share a 1200x630 crop of their hero or cover\n- siteSettings.socialLinks back in the organisation JSON-LD\n\nOnly the head changes: the built body of Home, a case, About and a post is\nbyte-identical to the live pages."
+        },
+        "resource": "ShaneDeconinck/cides"
+    },
+    "run": "workbench-20261125142741-137eb5"
+}

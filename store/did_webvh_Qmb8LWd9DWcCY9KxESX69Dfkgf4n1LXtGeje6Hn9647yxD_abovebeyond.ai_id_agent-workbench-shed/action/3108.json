@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the office's report; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: After #1114 the chassis lookup answers, but for some cars only with VWE's fields. AutoConnect takes 25 to 30 seconds for them and now has at most 10, and a full AutoConnect answer that is already kept is not reused because only the first kept row for the VIN is looked at.\n\n## What happened\n\nOn 24 November at 16:32 the office looked up ZAC5JACL5SJL91514 (Jeep Avenger) again for a garage in onboarding (Pieteraerens), after #1114. The sheet came back with VWE's fields only: category, body style, fuel, weight, dimensions, taxes and the environment boxes stayed empty. The office's own lookup of the same VIN that morning got them.\n\nFrom the rows read on production for #1111:\n\n- The office's lookup: VWE row 6997 at 10:13:48, AutoConnect row 12351 at 10:14:14, so about 26 seconds for AutoConnect. It holds 7 blocks, a version and a date.\n- The garage's lookup at 13:19: VWE row 6999 at 13:19:32, AutoConnect row 12353 at 13:20:02 holding `\"0\"` (cURL's `false`), exactly 30 seconds later.\n- Since #1114 AutoConnect gets at most 10 seconds inside the request, so for this car it never answers in time.\n\n## Why\n\n`OwnStockService::updateByAutoConnect` reuses a kept lookup with `first(['chassis_number' => \u2026, 'type' => 'lookup'])`, so only the first row for the VIN counts. For this VIN that is 12350, the garage's empty row. The full answer 12351 is never used, every lookup goes out again, and runs out of time again. VWE had the same fault until #1114 (`keptVweAnswer`).\n\n## Proposed fix\n\n- Reuse the latest kept lookup that has blocks, a version and a date.\n- When AutoConnect sends nothing back in time (cURL `false`, not \"car unknown\"), queue a job that fetches the answer with more patience and keeps it, without writing on the sheet. The message tells the dealer to look up again in a minute.\n\nOpen: a second lookup costs a second token under R S1-2.7.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Chassis lookup fills only VWE's fields when AutoConnect is slower than the request allows"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261125105519-b0a09b"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "89ada27ecf33d03ceb98abf8618b3e8e",
+    "effect": {
+        "detail": {
+            "base": "501e2ba17168159ba8b7926fd6e944fd89f6038c",
+            "branch": "workbench/locale-slugs",
+            "commit": "f39ffe3740720f78293ff261a239c789a7007564",
+            "files": 18,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3168,
+    "verdict": "ALLOW"
+}

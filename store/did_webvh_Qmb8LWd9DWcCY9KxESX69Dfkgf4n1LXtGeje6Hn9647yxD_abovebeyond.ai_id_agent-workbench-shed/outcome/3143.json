@@ -1,0 +1,16 @@
+{
+    "action": "516d6dd23b0c5b7b4653355dfe905afd",
+    "effect": {
+        "detail": {
+            "base": "e71c1955b1537bd9756105ff2d54f8684f6c485b",
+            "branch": "workbench/blur-result-gone",
+            "commit": "251c591a3a6388f6f96010a4697c604c468020e9",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3141,
+    "verdict": "ALLOW"
+}

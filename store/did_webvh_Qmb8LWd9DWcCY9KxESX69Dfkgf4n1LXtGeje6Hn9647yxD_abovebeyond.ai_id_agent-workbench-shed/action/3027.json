@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The failing list on the Sources page of 25 November 2026 had nine sources last tried on 9 November and six that said only \"fetch failed\". Checked by hand: what was ours is fixed here; the rest is the desk's (new feed addresses or mute) and is not changed by this PR.\n\n## web-browse reads the page that waited longest first\n\nThe list began one place further every six hours, while one round reads many pages. A page was read in the few rounds while the start sat just before it, and then not until the start had come round the whole list. That is how Gay Times, Good On You and seven more stood on the failing list for two weeks with two or three failures each: too few to be parked, and not tried again. Pages are now read by `last_collect_at`, oldest first, a page never read before all others, so each is read once in as many rounds as the list takes. A test runs 120 pages at 20 a round: every page is read every 6 rounds.\n\n## A failed fetch says why\n\nundici's bare \"fetch failed\" now carries its cause: `fetch failed: no such host`, `no connection in 10 s`, a certificate for another name. A timeout says `timeout: no answer in 15 s` instead of \"This operation was aborted\". Of the six \"fetch failed\" sites, four had no address in DNS any more, and one answered only on a new domain. A host that is gone does not park sooner than before: our own DNS can fail too, and parking dozens at once is what happened before.\n\n## The scout proposes a page only at an address that answers\n\nThe scout's model puts \"www.\" in front of names that have none: Eye on Design was stored as `www.eyeondesign.aiga.org` (no such host), Gorilla vs Bear as `www.gorillavsbear.blogspot.com` (outside Blogger's certificate). The scout looked for a feed on the bare domain and never at the page. `core/reachable.mjs` asks the page first: any answer counts, a refusal too; a \"www.\" is dropped when only the bare name answers; an address nothing answers at is not proposed.\n\n`npm test`: 1834 pass. `tsc` clean.\n",
+            "branch": "workbench/web-browse-longest-waiting",
+            "title": "web-browse reads the longest-waiting page first, and the scout proposes only addresses that answer"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261125085134-834b51"
+}

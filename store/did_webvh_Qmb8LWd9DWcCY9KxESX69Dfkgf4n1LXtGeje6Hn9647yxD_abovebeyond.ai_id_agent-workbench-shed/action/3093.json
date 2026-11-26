@@ -1,0 +1,16 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (found while looking into Portal mail:68; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A platform copy whose Blurit task fails, or whose webhook never arrives, stays \"processing\" for good, and while it waits colleagues see remove.bg's cut-out with the plate readable. On 2026-11-25, 16 rows were waiting like that, the oldest since 26 September.\n\n## What happens\n\nA platform copy goes to Blurit after its background is cut out (`ProcessImage`), and the blurred version comes back through the webhook (`ImageController::status`). The webhook only acts on `status = Succeeded`. When Blurit reports a task as `Failed`, the webhook answers 200 and does nothing, and the row keeps `processing = 1` and its `processed_uuid` for good. A webhook that never arrives has the same result. `stocklist:clear-processing` exists but is not scheduled.\n\nA copy with a cut-out is shown while it is processing (`Vehicle::readyCopy`, R S1-6.39). That cut-out comes from remove.bg, which does not blur the plate, so a copy stuck this way shows the plate to colleagues.\n\n## Seen on production, 2026-11-25\n\n- One copy made at 10:39 went to Blurit at 10:56. Asked directly, Blurit answers the task with `status: Failed`, `error: Internal error`.\n- Rows with `processing = 1` that are waiting on a Blurit task:\n  - 14 platform copies with a cut-out (1 today, 11 since 31 October on 6 vehicles, 2 since 9 October);\n  - 1 platform copy without a cut-out (since 31 October). It is hidden, but counts as present, so it is never made again;\n  - 1 own photo (since 26 September), sent to Blurit before own photos stopped being blurred on 1 October.\n\n## Fix\n\n- The webhook acts on `Failed`. A platform copy is sent to Blurit again as a new task, three tasks in all. After that the copy is removed hard (R S1-6.26), so it counts as missing again and the next save makes it anew. An own photo is not blurred (R S1-6.5), so it just leaves \"processing\".\n- `stocklist:blur-pending`, every ten minutes, asks Blurit about rows that waited more than 15 minutes:\n  - a finished image is fetched and written as the webhook would;\n  - a failed or unknown task goes the same way as above;\n  - a task still running after two hours counts as failed.\n",
+            "labels": [
+                "bug",
+                "priority:P2"
+            ],
+            "title": "A platform copy whose Blurit task fails stays processing for good, with the plate readable"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261125105109-2db3f4"
+}

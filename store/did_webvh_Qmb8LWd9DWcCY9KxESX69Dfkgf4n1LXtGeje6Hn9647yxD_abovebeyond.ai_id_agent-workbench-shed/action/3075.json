@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1120\n\n**Before merging:** change the queue worker in Forge (Daemons) so it listens on `photos` first. After the merge, uploads go to the `photos` queue, and a worker that does not listen there processes no upload at all. Listening on a queue that is still empty does no harm, so change the daemon first and merge after.\n\nCurrent command on the box:\n\n```\nphp8.5 /home/forge/traders.stocklistdealer.eu/current/artisan queue:work database --sleep=3 --daemon --quiet --timeout=300 --tries=3 --queue=default,webhook --force\n```\n\nNew, only `--queue` changes:\n\n```\nphp8.5 /home/forge/traders.stocklistdealer.eu/current/artisan queue:work database --sleep=3 --daemon --quiet --timeout=300 --tries=3 --queue=photos,default,webhook --force\n```\n\nCheck with `ps -eo args | grep \"[q]ueue:work\"`.\n\n## What was wrong\n\nOn 2026-11-25 a garage uploaded 95 photos to two vehicles. Every tile stayed grey on \"processing takes longer than expected\" for 8 to 14 minutes. Nothing failed: the queue was empty again by 11:12 and `failed_jobs` had nothing in three days. The uploads were waiting.\n\nProduction runs one worker, and every job is on `default`: own uploads (`ProcessVehiclePhoto`), platform copies, cut-outs and blur. From 10:33 to past 11:06 that worker made platform copies at a steady seven to eight a minute, one vehicle after another. Each upload waited for every copy queued before it. Once a batch of uploads came up, all 45 were done within about a minute.\n\nAn upload is a few seconds of resizing the dealer sits and waits for. A copy or a cut-out calls an outside service for seconds each, and nobody watches it happen.\n\n## What changes\n\n- `ProcessVehiclePhoto` goes on its own queue, `photos` (`ProcessVehiclePhoto::QUEUE`).\n- CUTOVER.md section 4 gives the worker command as `--queue=photos,default,webhook` and says why `photos` comes first.\n- R S1-6.36 records the queue and the case.\n- Outside production the queue is `sync`, so staging and the preview do not change.\n\nNot changed: the copies and cut-outs themselves. Making them faster, or a second worker, would also help, but each costs memory or money; this change only reorders who goes first.\n\n## Tests\n\n- `AnUploadIsNotQueuedBehindCopiesTest`: an upload through the dropzone is pushed on `photos`, and the worker command in CUTOVER.md lists `photos`, `default`, `webhook` in that order. Both fail on main.\n- Full suite: 3315 tests green, PHPStan clean on the touched files.\n\nSource: Portal mail:68 (forwarded by the office, with screenshots).\n",
+            "branch": "workbench/upload-queue",
+            "title": "A dealer's upload has its own queue, taken before the platform copies"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261125102659-97be84"
+}

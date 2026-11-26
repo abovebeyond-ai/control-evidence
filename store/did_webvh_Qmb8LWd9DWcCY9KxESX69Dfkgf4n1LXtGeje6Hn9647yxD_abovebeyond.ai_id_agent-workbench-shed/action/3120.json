@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The payment provider only needs to read the offer, not to reach its payment page, and the free plan does not open yet. Taking the cover off would open registering to anybody. This adds a review mode to the cover instead: `PRELAUNCH_REVIEW=true`, with `PRELAUNCH` still on.\n\n## What a visitor without an invitation sees\n\n- **Open, with noindex:** home, about, services, pricing, contact, terms and privacy. No page says \"coming soon\".\n- **Homepage:** no ticker, posts, trends, reports or trend graph. A \"What you get\" band under the hero says what is sold and how access works, and the calls to action point to the plans.\n- **Menu and footer:** no Trends, Posts, Reports or sectors, and no \"Create a free account\".\n- **Everything else** (the reading, `/register`, checkout): a \"For members\" page, or \"New accounts open shortly\" on `/register`, with the weekly letter, the plans, sign in and contact. A POST to `/register` creates no account.\n- **Invited people** (preview link or signed in) see the whole site as before, test payments included.\n\nWithout `PRELAUNCH_REVIEW` the cover behaves exactly as it did.\n\n## Code\n\n- `PreLaunch`: every place that showed the holding page goes through `closed()`, which in review mode lets the sales pages through and renders `pages.for-members` for the rest. `PreLaunch::reviewing($request)` tells the nav, footer, hero and homepage that this is such a visitor. In review mode every response carries `X-Robots-Tag: noindex, nofollow`.\n- The wording of the band, the members page and the access card is proposed and waits for Trendwolves' approval.\n\n## Checked\n\n- `PreLaunchTest`: four new tests (the offer open without \"coming soon\", the reading and registering for members, invited visitors see everything, the cover unchanged without review mode).\n- Suite: 711 of 712 (BuildStampTest needs a build stamp, which a worktree does not have).\n\n## Deploy\n\nNew env `PRELAUNCH_REVIEW` (default `false`), described in `docs/design/billing.md`. Set it to `true` next to `PRELAUNCH=true` for the review, then `php artisan config:cache`.\n",
+            "branch": "workbench/review-mode",
+            "title": "A review mode for the cover: the offer open to anybody, the reading and registering for members"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261125110309-56a44c"
+}

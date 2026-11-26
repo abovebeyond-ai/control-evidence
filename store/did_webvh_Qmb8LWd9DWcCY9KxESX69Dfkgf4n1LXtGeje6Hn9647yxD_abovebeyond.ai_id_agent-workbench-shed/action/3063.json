@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ae54334d365257573155505a36b2d6095fdfb8d0",
+            "branch": "workbench/cite-without-terms",
+            "files_sha256": "07addd91a19696de2b892c8c246e8c7c64cba7c4519a5d990966274f5c9b439e",
+            "message": "A statistic is no longer stopped by terms nobody recorded (0.21.0)\n\nSince 0.20.0 nobody looks up a source's terms of use, but a citation\nstill needed the publisher's terms recorded as allowed or attribution,\nso every statistic from a newly admitted publisher would stay uncitable.\n\n- rules/statistic.json#citable: refusePublisherTerms (non-commercial,\n  forbidden) lists the recorded terms that stop a citation. Unknown\n  terms stop nothing.\n- rules/source.json#admit: allowTerms decides nothing, kept for compat.\n- tools/check.mjs holds refusePublisherTerms to Source.terms.\n- Conformance: a publisher with no recorded terms is citable.\n\nPortal: Een cijfer van een toegelaten uitgever mag nu geciteerd worden ook als niemand zijn gebruiksvoorwaarden heeft opgezocht; alleen voorwaarden die commercieel gebruik verbieden houden het tegen."
+        },
+        "resource": "Trendwolves/gentells-standard"
+    },
+    "run": "workbench-20261125102011-0ea370"
+}

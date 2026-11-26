@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "421c49dd8118edfb908b8df247d13965fc7b544d",
+            "branch": "workbench/desk-mail-count",
+            "files_sha256": "851430cb18f6faab1f82d629e47610cc8f68f0c7e9f6f5eb75be21c867dd1876",
+            "message": "The desk mail counts decisions, and admitting no longer waits on terms\n\nOn 25 November 2026 the morning mail said \"434 waiting for you\". 164\ntrials ran against a most of 150, so the trial waves were held, and\ndesk-open then counted every readable proposed source as waiting for a\nperson. Nobody handles those one by one; what a person can do is decide\nthe trials that passed, so the running count drops under the cap.\n\n- desk-open: `waits` holds only decisions (trials that passed,\n  recommendations to read, open questions) and `decisions` is their sum.\n  A held wave is `held`: one line with the backlog and what starts the\n  waves again (decide N of the trials that passed), or that deciding\n  them is not enough, or that no trial passed and only time or the cap\n  helps, which is for development. Ask reads the same line (deskLines).\n- desk-mail: subject and opening line count decisions; the held line\n  follows the opening. The fingerprint leaves out the backlog and the\n  sources without a reader, which grow by themselves.\n\nAdmitting a source no longer depends on its terms of use (Standard\n0.20.0, Trendwolves/gentells-standard#27, synced from tag v0.20.0):\n\n- needs-terms is gone: a trial that passes on what it brought is ready.\n  Terms refuse nothing at entry. moveSource admits on a person's name\n  and a ready verdict; terms given are kept as data.\n- The daily terms round (bin/terms-round.mjs, server/terms-round.mjs),\n  the scout's lookup and core/source-terms.mjs are removed.\n  core/passed-trials.mjs lists trials for the Sources page and\n  POST /sources/:id/decide {decision: admit|reject} replaces\n  POST /sources/:id/terms.\n- The terms, terms_found and terms_checked_at columns and the\n  terms_rounds table stay as they are, no migration. terms still decides\n  which publishers a statistic may be cited from (statisticCitable).\n\nPortal: De ochtendmail van de desk telt nu de beslissingen die op een persoon wachten, en een bron toelaten hangt niet meer af van haar gebruiksvoorwaarden."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261125090727-f9e0c0"
+}
