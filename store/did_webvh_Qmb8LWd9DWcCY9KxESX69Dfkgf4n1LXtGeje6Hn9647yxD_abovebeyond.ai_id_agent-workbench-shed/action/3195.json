@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "260110cbf16ee3dd6ce325db62fe3c5fe5cc6ac5",
+            "branch": "workbench/photo-upload-order",
+            "files_sha256": "8ca6a7f278bbb7f7dd0bc658588e38001b137ff570e41cf7ce96cb388d6e1f2a",
+            "message": "The first photos of a vehicle stand in the order its folder shows them\n\nFiles 1.jpg to 14.jpg uploaded to a new vehicle came out as 1, 10, 11, 12, 13, 14, 2 ... 9:\nthe order after the first upload was set with MySQL ORDER BY name, character by character.\nNames now compare the way Windows Explorer and the Finder show them (numbers by value, case\nignored, upload order on a tie), in one place for the uploader's reset and the sheet's re-sort.\n\nPortal: Foto's die in volgorde opgeladen worden bij een nieuwe wagen blijven nu in die volgorde staan."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126083127-7f5ca3"
+}

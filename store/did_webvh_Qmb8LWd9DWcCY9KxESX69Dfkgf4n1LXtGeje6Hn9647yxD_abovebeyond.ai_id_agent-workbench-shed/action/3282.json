@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a5664306a2c6f7e53b8ffd685b13b4968fa0f372",
+            "branch": "workbench/nightwatch-81-realgarant-guest",
+            "files_sha256": "73847d37b4500c5df3266eb535d2213c8e63a174cfa8b4869a3aa826cc96432e",
+            "message": "Warranty route asks a guest to sign in instead of a 500\n\nWithout a login and outside the website and stocklist views, show() read\ndealer_id from a missing user (Nightwatch 81). calculate() had the same read.\nBoth now throw an AuthenticationException: 401 on AJAX, the login otherwise.\n\nNightwatch: 81"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126101943-265476"
+}

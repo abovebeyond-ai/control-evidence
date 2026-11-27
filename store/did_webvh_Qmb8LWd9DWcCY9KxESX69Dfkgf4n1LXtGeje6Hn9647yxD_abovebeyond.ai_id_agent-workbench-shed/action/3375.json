@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "66a0d8f58f31d5ad5c72b9bf6ff5bdb80678b8a9",
+            "branch": "workbench/openapi-reference",
+            "files_sha256": "48350045462e0962c6f716a87f86b5e9cc6611bde2a6800102be8ce7b0a36ec1",
+            "message": "Add an OpenAPI reference for the public and partner API\n\nTwo OpenAPI 3.1 documents written from the code, a reference page per\nAPI under /docs drawn by a self-hosted Scalar build, the raw documents\nfor download, and tests that hold the documents to the routes and to\nreal responses. The schema check found three 500s in the partner API\nand the redirect on an error without Accept; all fixed here.\n\nCloses #1153"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126204732-943631"
+}

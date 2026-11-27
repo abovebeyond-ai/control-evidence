@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nEvery page title on hoet.be ends in **\" - Hoet\"**, once. The home page is the one exception: there the brand goes first.\n\nUntil now titles ended four ways, depending on where they came from:\n\n| page | before | after |\n|---|---|---|\n| home | Hoet - Onopvallend opvallende brillen | Hoet - Onopvallend opvallende brillen |\n| faq | Veelgestelde vragen \u2014 Hoet | Veelgestelde vragen - Hoet |\n| news | Nieuws \\| Hoet Eyewear | Nieuws - Hoet |\n| frame | HOET COUTURE F2 | Couture F2 - Hoet |\n| contact | Neem contact op met Hoet | Contact - Hoet |\n| privacy | Privacybeleid \u2014 Hoet | Privacybeleid - Hoet |\n\n**Frames take their title from the Studio.** A frame reads `seo.metaTitle`, `seo.metaDescription` and `seo.ogImage` (the new SEO field in hoet-sanity) in its own language. An empty field falls back to what the site derives: the line and the model (\"Couture F2\", no longer in capitals), and the material description as before. There is no fallback to the Dutch SEO text, because a Dutch sentence on `/en` is worse than the derived English title.\n\n## How\n\n`App\\Support\\PageTitle` builds the title in the layout, so `<title>`, `og:title` and `twitter:title` are the same:\n\n- `make()` takes a brand typed at the front or the end off first (\"Hoet - \u2026\", \"\u2026 \u2014 Hoet\", \"\u2026 | Hoet Eyewear\"), then appends \" - Hoet\". Titles already in the Studio therefore do not get the brand twice. A brand inside a title (\"Hoet Couture \u2014 \u2026\") stays, because it is part of a name. The Studio warns about those instead.\n- `home()` puts the brand in front. A title typed as \"Hoet - \u2026\" stays as it is.\n\nThe controllers no longer add a brand themselves (journal, faq, contact, Couture\u00b2, configurator tab). The error pages, which stand alone, end in \" - Hoet\" as well. Translation keys follow: \"Neem contact op met Hoet\" and \"Veelgestelde vragen \u2014 Hoet\" are gone, and \"Veelgestelde vragen\" is new.\n\n## Checked\n\n- Full suite: 474 tests, 473 pass. `BuildStampTest` fails in any git worktree, also on main. Pint passes.\n- New `tests/Feature/PaginaTitelTest.php` covers the titles typed in the Studio on 2026-11-26, home, contact, faq, news, and a frame with and without SEO.\n\n## After merge\n\nFive pages have \"Hoet\" inside their SEO title, in four languages: Over ons, Couture, Couture\u00b2, Costume and Verkooppunten. They work, but they show the brand twice until they are retyped without it.\n",
+            "branch": "workbench/page-titles",
+            "title": "End every page title in \" - Hoet\", and let a frame take its title from the Studio"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127072311-6f02d0"
+}

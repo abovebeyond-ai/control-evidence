@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "The public partner API page (https://traders.stocklistdealer.eu/docs/partner, rendered from `docs/api/partner-api.md`) shows two things that do not belong on a public page:\n\n- The token paragraph names the framework package behind `POST /api/token` and says a grant \"staat uit\", which is implementation detail and jargon for an integrator.\n- The section \"Wie gebruikt deze API\" names the partners that call the API, how often they call, and a path in this repository. That is commercial information about third parties, and it does not help anyone integrate.\n\nExpected: the page says what each route does and nothing about who else uses it. A website builder who only wants to show cars is pointed to the public API or the embed.\n",
+            "title": "Public partner API page names internal details and lists partners"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126084354-00eeb1"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5a4c1c207e0076aebe5c95f0e316729fce9733dd",
+            "branch": "workbench/general-inbox",
+            "files_sha256": "67dfb9751dfe84a1d861f0d2fa821ad7a6bfc533a463aeb486cdd0ac0e86dd04",
+            "message": "Keep mail without a project in a general inbox\n\nMail to an address that named no project was logged and dropped, and a\nrefused mail left nothing behind: a forward to a short name nobody had set\nup disappeared without a trace.\n\n- inbox@<inbound domain>, and every address no project answers to, now\n  keeps the mail without a project in state \"unassigned\", with the same\n  dedup and attachments as a project's mail.\n- A session assigns it through the task route: portal.task under the\n  project's slug with state \"assign\", so the gateway judges the assignment\n  as an action on that project. Until then its other states (parked with a\n  question, done, open) move under the inbox project, config\n  portal.inbox_project (default \"portal\"). Summaries carry taskProject, the\n  slug the state moves under, and the address it was sent to.\n- A refused mail (not from an owner, DMARC failing) stays refused, but is\n  kept as a notice: envelope and reason, never the text or attachments. The\n  log names the sender's domain only.\n- The Portal project's page lists the inbox and the refused notices.\n- php artisan portal:mail-fetch <email_id> takes a received mail again from\n  Resend, for mail the door dropped before this change, or a refused one\n  after the owners changed; same checks as the webhook.\n\nMigration: inbound_mails.project_id and to nullable, assigned_at added."
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261126082017-1d30e4"
+}

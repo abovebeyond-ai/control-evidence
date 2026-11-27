@@ -1,0 +1,16 @@
+{
+    "action": "14d746bdc84c83bb0f4788bcdf0ab097",
+    "effect": {
+        "detail": {
+            "base": "8f7a546ccc5299d7e9656ad204003690941ec0e2",
+            "branch": "workbench/chassis-lookup-as-a-job",
+            "commit": "9c30fade7d18a831cf7d92378cec2ee0c01fbc42",
+            "files": 21,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3354,
+    "verdict": "ALLOW"
+}

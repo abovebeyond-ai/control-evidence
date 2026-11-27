@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "`settings` is MyISAM, so `DatabaseTransactions` does not roll back the `background_image` and `background_light_image` rows that two tests in `WhiteIsTheDefaultBackgroundTest` create. Every run left four rows behind. In a test database that is reused between runs, `APhotoWithoutAForegroundIsNotAFaultTest` then found a background configured that is not on the faked disk, got the \"background configured but not on disk\" warning it forbids, and failed in all 6 cases. CI did not show it: it starts from a fresh database, and the photo test runs before this class.\n\nThe class now removes its background rows in `tearDown`, the same cleanup `RemoveBackgroundTest` and `OwnCutoutServiceTest` already do for this table. Test code only; nothing in the app changes.\n\nChecked on the workbench, main 3861d3f6:\n- Before: four rows left after `WhiteIsTheDefaultBackgroundTest`, then 6 errors in `APhotoWithoutAForegroundIsNotAFaultTest`.\n- After: no rows left, the photo test is green right after it.\n- After: the full suite, then the photo test again on the same database, is green.\n\nCloses #1148\n",
+            "branch": "workbench/background-settings-cleanup",
+            "title": "WhiteIsTheDefaultBackgroundTest removes the background settings it creates"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126112136-d3aad3"
+}

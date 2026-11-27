@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nOn 9 November the trend page stopped showing the reading because a model wrote it and nobody read it before it went up. The Observatory now has that step: someone from the editorial team checks a trend, and the pipeline sends the checked reading with `checked_at` (Trendwolves/gentells-pipeline, `workbench/insight-check`). A checked trend can show its reading again; anything unchecked stays measured only.\n\n## What\n\n- Migration: `trend_cards.checked_at`.\n- `Projection` keeps the reading's prose only when a valid `checked_at` comes with it, and fills the card `summary` from the checked \"what's happening\". Without it, the prose is dropped as before.\n- `TrendCard::checkedReading()` returns the four parts only for a checked card, whatever the stored reading holds.\n- Trend page: the four parts in the stone card under the headline row, laid out as before 9 November (Signal, Why it matters, The semiotic read, How to activate it; `**emphasis**` bold). The card in the trends list carries its summary again.\n- Still off: \"Read it together with\" (links with their why), shift names and the names in the layers graph. A model wrote them and the check does not cover them.\n\n## Tests\n\n`TrendMeasuredOnlyTest`: a checked trend keeps and shows all four parts and its summary; an unchecked one shows none, including prose stored before. 714 of 715 pass; `BuildStampTest` needs a plain checkout and fails the same way on main in a worktree. Pint clean. Rendered locally with a checked and an unchecked trend.\n\n## Order\n\nMerge after the pipeline PR. Before that, nothing sends `checked_at`, so the site keeps showing measured trends only.\n",
+            "branch": "workbench/checked-reading",
+            "title": "A trend someone from the editorial team checked shows its reading again"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261126123447-fe9a6d"
+}

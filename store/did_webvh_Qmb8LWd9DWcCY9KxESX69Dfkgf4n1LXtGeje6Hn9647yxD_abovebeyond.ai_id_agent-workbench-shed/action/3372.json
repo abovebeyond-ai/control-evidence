@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (change the labels if it is wrong)\nCategory: feature  Priority: P3\nSummary: The public API and the partner API are documented in prose only. A website builder or a platform that connects expects a machine-readable reference it can load into Postman, generate a client from, or try a call in.\n\n## What is missing\n\n`/docs/api` and `/docs/partner` explain both APIs in Dutch prose, rendered from `docs/api/public-api.md` and `docs/api/partner-api.md`. There is no OpenAPI document, so every integrator rebuilds the field list by hand from the prose, and nothing holds that prose to what the server actually answers. One example: the public page says 1000 requests a minute per address, while the `api` limiter allows 500.\n\n## What should be there\n\n- An OpenAPI 3.1 document for each API, written from the code (routes, controllers, resources, form requests): every operation, parameter, field, enum, error shape and limit, and JSON vs XML for the partner API.\n- A reference page per API under `/docs`, linked from the prose page, with the document downloadable. The viewer is served from our own host, and the page holds no key: \"Test Request\" goes to production with the key the reader types.\n- A test that keeps the documents honest: every route of both APIs is an operation and every operation a route, and real responses from the feature tests validate against the schemas.\n- Public pages name nothing internal: no libraries, tables, partners or repository paths.\n",
+            "title": "Machine-readable reference (OpenAPI) for the public and partner API"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126204637-569667"
+}

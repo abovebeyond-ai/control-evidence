@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Portal now keeps mail that names no project (state `unassigned`) and a notice for refused mail. This takes both up on the workbench.\n\n## What changes\n\n- **mail-intake** starts one agent per inbox mail with the task to find the project in `PROJECTS.md` first (`lib/intake.mjs`, `inboxTask`): assign when one project is clearly meant, park with one question to the owner when in doubt, and close a duplicate of a mail already on the project instead of handling it twice.\n- **`mail.mjs assign <id> <slug> [--note]`** sends `portal.task` with state `assign` under the project's slug (an action on that project, so its admission applies), then prints the usual task for that project's mail, so the same agent carries on as with any forwarded mail.\n- **`mail.mjs state`** moves an inbox mail under the slug Portal names (`taskProject`); `list` and `show` say when a mail is in the inbox.\n- **Refused mail** gives one herdr notification with the sender's domain and the reason; the journal only says a notice was shown.\n- The task texts and the `PROJECTS.md` parser move to `lib/intake.mjs`, with tests. The parser no longer reads the header and separator rows as projects.\n- A list Portal does not know yet (422 before the Portal change is deployed) is skipped, so new mail still starts.\n\nMerge after abovebeyond-ai/portal#424.\n\n## Tests\n\n`node --test lib/*.test.mjs test/*.test.mjs`: all pass except `stocklist-read` \"falls back to the bundled snapshot\", which fails on main as well. `mail-intake.mjs --dry-run` against the current Portal skips the two new states with a 422 and exits 0.\n",
+            "branch": "workbench/general-inbox",
+            "title": "Take up mail in the Portal inbox and notify refused mail"
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261126082056-64f734"
+}

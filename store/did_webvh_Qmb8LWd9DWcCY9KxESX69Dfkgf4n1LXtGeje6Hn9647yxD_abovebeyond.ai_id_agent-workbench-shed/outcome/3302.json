@@ -1,0 +1,16 @@
+{
+    "action": "24a7a31c9609c1a16c74c265d3c8a447",
+    "effect": {
+        "detail": {
+            "base": "3861d3f642ad49114068f77d10617aea913b2fb1",
+            "branch": "workbench/nightwatch-83-simple-image",
+            "commit": "217a31edf70b0a2eadb61b5c7aa0ffed6e75b926",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3300,
+    "verdict": "ALLOW"
+}

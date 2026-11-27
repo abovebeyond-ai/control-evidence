@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:70",
+            "note": "Nightwatch 81: guest without dId on the warranty route now gets a login prompt instead of a 500; issue #1140, PR #1145 waits for merge",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1145"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261126102012-a6d7b0"
+}

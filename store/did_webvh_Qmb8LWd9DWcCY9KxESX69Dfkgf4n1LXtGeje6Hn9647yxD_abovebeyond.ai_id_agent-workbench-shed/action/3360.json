@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a5d3851abd4401d8be03e80fd17be1d2647a8466",
+            "branch": "workbench/changes-2026-11-26",
+            "files_sha256": "b98c294f8358bc2bb9f7b73158e5ae8b026510bd41ca98c16d520a9d20c186dd",
+            "message": "Company details, service photo gallery and sell-page checklist\n\nsiteSettings.company holds the company's details (name, tagline, address,\nphone, fax, e-mail, WhatsApp) with a phone check that matches the site's E.164\nrule. service.photos is a gallery of images with alt per language; the old\nsingle image stays visible until it is moved. sellPage.checklist lists what\nhelps to value a vehicle. The steps fields of service and sellPage are hidden\nand lose their rules, so old data stays harmless."
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261126185800-b6c55b"
+}

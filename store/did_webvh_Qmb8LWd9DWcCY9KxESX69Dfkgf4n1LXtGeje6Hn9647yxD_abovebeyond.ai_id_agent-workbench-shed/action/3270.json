@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "## What a visitor without a login can do\n\nThe bidding link that goes out in the export mails is `/export/{a}&{b}&{c}`, where `a`, `b` and `c` are `base64_encode()` of the export vehicle id, the bidder id and the bidder type (0 merchant, 1 dealer). Base64 of a counter is not a secret: anyone can write the link for any export vehicle and any bidder.\n\n- `GET` (`ExportController::detail`, outside `auth`) renders `stocklist.detail` for the export vehicle: the full vehicle sheet with damage, options, dates and the bidder's own last five bids.\n- `POST` (`ExportController::addBidding`) places a bid in the name of the bidder in the link. `ExportVehicle::openTo()` checks that this bidder is in the circle, not that the visitor is that bidder.\n- `ownvehicle/{id}/addDealerVote` (`VotingController`, also outside `auth`) takes the same base64 export id: anyone can rate the seller of any export vehicle once, and the first rating stays.\n- An unknown bidder id throws (`Dealer not found` / `Merchant not found`) and answers 500, a known one 200, so the link also tells which dealer and merchant ids exist. An unknown export vehicle answers the not-found page with status 200.\n\nChecked on production on 2026-11-26 with made-up ids only: dealer id 10 answers 200, ids 1, 2 and 5 answer 500. No live export vehicle was opened.\n\n## Fix (needs a decision)\n\nMake the link a capability instead of a set of ids: a signed route (`URL::signedRoute`, or an HMAC of export id, bidder id and type in the query) checked in `detail`, `addBidding` and the vote routes, with a 404 for a missing or wrong signature. Links already in mailboxes stop working; a bidding round is short, so the cost is one round of links. The 500 on an unknown bidder becomes a 404 in the same change.\n",
+            "labels": [
+                "security"
+            ],
+            "title": "A bidding link is base64 of three ids: anyone can open an export car and bid as any bidder"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126090729-91e366"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "f6928fc8c22b8a15232087aa9ce1c880",
+    "effect": {
+        "detail": {
+            "base": "5f6ac41f424d747186f4f06d0abbc2a5b3979881",
+            "branch": "workbench/auto-slug",
+            "commit": "f0579a9aa6809d85ea5275ebf4cc5ce2151bf3ad",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3327,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The no-login page where the winner of a bidding rates the selling dealer (`GET ownvehicle/{vehicle}/addDealerVote`, R B1-5.11) read `$export_vehicle->vehicle_id` without checking that the id in the URL matched a bidding. An unknown id (a mangled or truncated mail link, a guessed URL) answered 500 with `Attempt to read property \"vehicle_id\" on null` (Nightwatch #82, once on production on 2026-11-26).\n\nThe lookup already includes trashed biddings, so a null here means the bidding does not exist. The page now answers 404, the same as its POST (`storeDealerVote`) already did. A valid link behaves exactly as before.\n\nTest: `VoteRoutesCheckOwnershipTest::test_the_no_login_dealer_vote_for_an_unknown_bidding_is_a_404` covers an id past the last bidding and an id that is not base64. It failed with a 500 before this change.\n\nCloses #1139\n",
+            "branch": "workbench/dealer-vote-404",
+            "title": "Rate-the-seller link for an unknown bidding answers 404 instead of 500"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126103048-b9666f"
+}

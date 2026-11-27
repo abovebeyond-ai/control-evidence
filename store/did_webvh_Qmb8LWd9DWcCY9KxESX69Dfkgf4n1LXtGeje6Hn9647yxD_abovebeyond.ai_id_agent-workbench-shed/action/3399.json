@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n- **Frames get an SEO field**: title, description and share image per language. The site reads it (hoet-eyewear, same branch name). An empty field means the site derives the title (\"Couture F2 - Hoet\") and the description from the material, as now.\n- **Pages use the shared `seo` type** instead of their inline copy. The shape is the same, and some pages already stored `_type: \"seo\"`, so no data changes.\n- **The SEO title says what it is**: the title in Google and on the browser tab, separate from the text on the page. On hoet.be the site adds \" - Hoet\" at the end, and \"Hoet - \" in front on the home page.\n- **A warning, not an error,** on hoet.be when:\n  - the brand is typed in a title (except on the home page), because the site adds it;\n  - the title with \" - Hoet\" passes 60 characters.\n\n  Elsewhere (Cabrio, Hoet Design) only the 60-character warning stays, as before.\n\n## How\n\nThe rules live in `schemaTypes/lib/titleRules.ts`. The brand check reuses `onHoetBe` and `isHomePage` from `slugRules.ts`: a frame's brand comes from its collection.\n\n## Checked\n\n- 95 tests pass (`vitest`, without the token-bound `config.test.ts`), including the new `tests/title-rules.test.ts`.\n- `tsc`, `sanity schema validate` (0 errors, 0 warnings), `sanity build` and lint pass.\n- Not clicked through in a running Studio: that needs a Sanity login.\n\n## After merge\n\n`npm run deploy` for the Studio.\n",
+            "branch": "workbench/page-titles",
+            "title": "Give frames an SEO field and warn when a title names the brand"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261127072311-bc81c1"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "260110cbf16ee3dd6ce325db62fe3c5fe5cc6ac5",
+            "branch": "workbench/partner-doc-public",
+            "files_sha256": "d183d5be3b77ca9433828ef0d86d4c7d2766d5e4146bb2b55c465262e707463b",
+            "message": "Partner API page: no library name and no partner list on a public page"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126084407-d4ed03"
+}

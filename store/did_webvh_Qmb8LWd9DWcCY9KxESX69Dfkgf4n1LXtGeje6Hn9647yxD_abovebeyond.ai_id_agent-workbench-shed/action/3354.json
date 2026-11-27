@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8f7a546ccc5299d7e9656ad204003690941ec0e2",
+            "branch": "workbench/chassis-lookup-as-a-job",
+            "files_sha256": "d8b2a51e0bbe6644b794db901fd107e6077c638600d3e320da816496d2fb789a",
+            "message": "Run the chassis lookup as a job"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126133750-0baf5d"
+}

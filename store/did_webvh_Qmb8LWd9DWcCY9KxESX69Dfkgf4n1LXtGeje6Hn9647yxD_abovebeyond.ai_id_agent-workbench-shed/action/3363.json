@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The Studio side of the site pull request with the same branch name (`workbench/changes-2026-11-26` on schoutteet).\n\n## Settings: company details\n- `siteSettings` is titled \"Bedrijfsgegevens en openingsuren\" and has two groups.\n- A new `company` object holds the name, tagline (per language), street, postal code, city, country (per language), phone, fax, e-mail and WhatsApp.\n- Phone is required and checked: it must be international, or a Belgian number with a leading 0. `schemaTypes/phone.ts` uses the same E.164 rule as the site and is tested in `tests/phone.test.ts`.\n- The preview shows the phone with its `tel:` form.\n- The opening hours and their note move to the \"Openingsuren\" group.\n\n## Services: photo gallery\n- `service.photos` is an array of images with alt text per language, shown as a gallery on the services page.\n- The old single `service.image` stays visible as \"Oude foto\" while it holds a photo, so nothing is lost before the migration script moves it into `photos`.\n- `steps` (\"Zo verloopt het\") is hidden and has no rules any more (it required exactly three), so existing steps stay in the data without blocking a publish.\n\n## Sell page\n- `sellPage.checklist` is the list of what helps to value a vehicle, shown beside the call, mail and WhatsApp buttons.\n- `steps` is hidden, without rules.\n- The singleton and the service route are called \"Voertuig verkopen\", as on the site.\n\n`CONTRACT.md` describes the new fields.\n\n## Checks\n- vitest: 16 passed.\n- tsc, eslint and `sanity build` pass.\n\n## After merge\nDeploy the Studio, then run the three Sanity scripts described in the site pull request.\n",
+            "branch": "workbench/changes-2026-11-26",
+            "title": "Company details, service photo gallery and sell-page checklist"
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261126185800-b6c55b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe editorial team will stand behind every trend that members and visitors read (Trendwolves/gentells-pipeline, `workbench/insight-check`). That needs a place to do it that is quick to work through, where the text can be shaped, and where the team sees what gentells.com will show before they check. Separately, the Observatory's pages had no shared spacing or type scale and every page built its cards and status colours by hand, which made screens flat and hard to scan.\n\n## What\n\n**Checking**\n- `InsightCheck.jsx`: on a trend's page, where its check stands and the two moves (\"We stand behind this\", \"Not like this\" with a reason). On Insights, a check desk: the queue in order on the left, the selected trend on the right; a check brings up the next one; J and K move.\n- `InsightShape.jsx`: a field right beside the check. Say what should change, see before and after, then \"Use it and stand behind it\", \"Use it\" or \"Discard\". It saves through `/store/patch`, so history is kept. While a rewrite is open, its moves replace the check's, so there is one primary button.\n- `SitePreview.jsx`: on top of the check, a framed picture of the site's trend page (chips, headline, seen line, momentum, signals and sources, and the four parts of the reading), with one sentence on where the trend stands with the site. It follows an open rewrite. Only this frame uses the site's own tokens and face (Newsreader); BRAND.md records the exception.\n\n**Design system**\n- Tokens: `--space-1..8` (4 to 64), a type scale `--text-xs..2xl`, `--shadow-1/2`.\n- Shared pieces in `components/ui`: Card, SectionHead, Status (one status map in `ui/status.js`), Facts, Stat, ListRow, Empty/Loading.\n- The trend page has two columns: the reading at reading width, with its standing and the team card held beside it.\n- The page name next to the lockup is gone; Array is no longer used in the Observatory.\n- `bin/brand-ratchet.mjs` gains `off-scale-space`, `hand-status` and `hand-card`, with their ceilings in `.brand-baseline.json`. No existing count rose.\n\n## Tests\n\nPlaywright 112 of 112 (new `insight-check.spec.js`: the line, the desk, the reason, nothing before the start, shaping, the preview, a trend the site does not carry). Lint ratchet unchanged; brand ratchet ok; build ok.\n\n## Order\n\nMerge after the pipeline PR (it adds the routes this calls). Nothing about checking shows until the check is started on the box.\n",
+            "branch": "workbench/insight-check",
+            "title": "The team checks and shapes a trend, beside what gentells.com will show"
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261126123514-8feae5"
+}

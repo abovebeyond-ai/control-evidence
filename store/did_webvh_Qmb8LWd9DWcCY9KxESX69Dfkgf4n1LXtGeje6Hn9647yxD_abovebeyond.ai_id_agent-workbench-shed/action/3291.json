@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a5664306a2c6f7e53b8ffd685b13b4968fa0f372",
+            "branch": "workbench/dealer-vote-404",
+            "files_sha256": "0d212eea7e01dff4302e0bb5f4072e3c34366434c01c5ba7af2eee36f33efffb",
+            "message": "Rate-the-seller link for an unknown bidding answers 404 instead of 500\n\naddDealerVote read vehicle_id on a null export vehicle when the id in the\nURL matched no bidding. It now aborts with 404, as storeDealerVote already did.\n\nPortal: A rating link that points to a bidding that no longer exists now shows a clear \"not found\" page instead of an error.\nNightwatch: 82"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126103048-b9666f"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "260110cbf16ee3dd6ce325db62fe3c5fe5cc6ac5",
+            "branch": "workbench/symfony-8-1-12",
+            "files_sha256": "13c90be7f48d31ecf54db9908e7851f14635e762cdaca60dc4712e5a61458f78",
+            "message": "Symfony 8.1.12 for seven advisories published on 25 November 2026\n\ncomposer audit --locked fails every pull request since the advisories for symfony/http-kernel,\nmailer, routing and serializer (CVE-2026-133743, -133746, -133751, -133752, -133754, -133755,\n-133761) came out; all are fixed in 8.1.12. http-foundation moves along because http-kernel\n8.1.12 requires it. Lock file only, patch releases."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126083833-89279d"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "497fac11316e03e23ea07e1422057c6aaffe3fc0",
+            "branch": "workbench/drop-steps",
+            "files_sha256": "f7e14f789d6d274c4de4271cff917b3e1025cb1f05108ed6f5607d29ccce7bce",
+            "message": "Remove the old steps fields from service and sellPage\n\nThe site stopped showing \"Zo verloopt het\" and the sell-page steps on 2026-11-26; the\nfields stayed hidden so existing data would not be flagged. The data is now cleared by a\nscript, so the fields go from the schema, the contract test and CONTRACT.md."
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261127071531-5f994f"
+}

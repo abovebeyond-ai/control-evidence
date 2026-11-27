@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "71136eb8d75401d2b1460b109d6b0f25bcbbef6a",
+            "branch": "workbench/insight-check",
+            "files_sha256": "06a4a73a8b71076f61c2e224f87137275a6dc6be412b7f078367402edb667185",
+            "message": "The team checks and shapes a trend, beside what gentells.com will show\n\nA check desk on Insights and a check on each trend's page; a field to shape\nthe text with a prompt; a framed preview of the site's trend page that\nfollows a rewrite. With it, a design system: spacing, type and depth tokens\nand shared content pieces (Card, Status, Facts, Stat, ListRow, Empty).\n\nPortal: In de Observatory keurt de redactie trends goed, herschrijft ze met een opdracht, en ziet meteen hoe ze op gentells.com staan."
+        },
+        "resource": "Trendwolves/gentells-dashboard"
+    },
+    "run": "workbench-20261126123514-8feae5"
+}

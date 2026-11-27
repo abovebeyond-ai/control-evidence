@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5f6ac41f424d747186f4f06d0abbc2a5b3979881",
+            "branch": "workbench/auto-slug",
+            "files_sha256": "1e187c1258d2af01f7b36b329e0c247879dbf31b6a62ec6491ea3c9ac48c3b55",
+            "message": "Fill empty slugs from the title on publish\n\nOn a hoet.be document, Publish now fills every empty slug from the title in\nthat language: lowercase, hyphens, no articles or punctuation, at most five\nwords, numbered when another document already carries it. A slug that is\nfilled in never changes by itself; changing one by hand forwards the old\naddress on the site (document_slugs, journal_slugs). The home page keeps no\nslug, and other brands are left alone: their sites do not forward an old\naddress.\n\nValidation now explains what is wrong and shows the fixed form: a domain or\nwhole address in front, \" - \" between keywords, spaces, capitals, other\ncharacters, and more than five words. The word limit is an error on hoet.be\nonly; elsewhere shortening would break a live address, so it stays a warning.\nAn empty slug shows what it becomes on publish.\n\nPortal: De slug van een nieuwe pagina, bril of story wordt bij publiceren vanzelf ingevuld uit de titel, in elke taal."
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261126113751-0c8579"
+}

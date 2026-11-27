@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2ab29f41ce5f27e3d8319e1be1a57d798f758936",
+            "branch": "workbench/insight-check",
+            "files_sha256": "47bf1835560dcb08efa66b6713ae9a065e83dfbed279e7b4e1264a66f5e05da7",
+            "message": "A person from the editorial team checks a trend before anyone outside the team reads it\n\nMembers, guest Ask and gentells.com see a trend only once someone from the\neditorial team stands behind it, in the text that was checked. The team can\nshape a trend with a prompt from its own evidence, and sees what the site\nwill show. A checked trend goes to the site with its reading again.\n\n- core/insight-check.mjs: checks, queue, carried set, routes, bin/insight-checks.mjs\n- core/insight-shape.mjs: POST /insights/:id/shape (phase trend-shape)\n- projection-trends: prose only for a trend that stands, with checked_at\n- GET /insights/:id/site-preview for the team\n\nPortal: De redactie keurt een trend goed voor iemand buiten het team hem leest, kan hem met een opdracht herschrijven, en een goedgekeurde trend staat met zijn tekst op gentells.com."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261126123358-52eb3c"
+}

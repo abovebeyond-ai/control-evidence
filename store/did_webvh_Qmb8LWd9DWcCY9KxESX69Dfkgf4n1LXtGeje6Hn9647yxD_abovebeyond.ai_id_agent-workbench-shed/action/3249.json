@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: Opening the \"rate the seller\" link for a bidding that does not exist crashes with a 500 instead of answering 404. One occurrence in production so far (Nightwatch #82).\n\n## What happens\n\n`GET ownvehicle/{vehicle}/addDealerVote` (`VotingController::addDealerVote`, the no-login page where the winner of a bidding rates the selling dealer, R B1-5.11) looks up the export vehicle by the base64 id in the URL, trashed rows included, and reads `$export_vehicle->vehicle_id` without checking the lookup found anything. An id that matches no export vehicle (a mangled or truncated mail link, a guessed URL, a crawler) gives:\n\n```\nErrorException: Attempt to read property \"vehicle_id\" on null\napp/Http/Controllers/Vehicle/VotingController.php:140\n```\n\nSeen once on production, 2026-11-26 08:47 UTC, Laravel 13.42.0, PHP 8.5.12.\n\nThe POST of the same page (`storeDealerVote`) already answers 404 for a missing bidding; the GET does not.\n\n## Expected\n\nA missing bidding is a 404, like the POST and like the other rating doors in this controller.\n\nSource: Portal mail:72 (a forwarded Nightwatch alert, issue #82).\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Rate-the-seller link for an unknown bidding crashes with a 500 instead of a 404"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126085458-be000c"
+}

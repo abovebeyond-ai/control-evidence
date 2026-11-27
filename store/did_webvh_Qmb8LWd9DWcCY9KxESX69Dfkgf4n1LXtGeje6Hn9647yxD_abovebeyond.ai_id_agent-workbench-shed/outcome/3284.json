@@ -1,0 +1,16 @@
+{
+    "action": "5d69b909d3cab17f1812b20e13e65059",
+    "effect": {
+        "detail": {
+            "base": "a5664306a2c6f7e53b8ffd685b13b4968fa0f372",
+            "branch": "workbench/nightwatch-81-realgarant-guest",
+            "commit": "560017d1825451252aaaec0d82772d29fd75b6d9",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3282,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:71",
+            "note": "Nightwatch 83: issue #1138, PR #1147 proposed (category icon route 404 instead of 500), waits for merge",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1147"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261126110105-ab883a"
+}

@@ -1,0 +1,16 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (found while running the suite for #1146; change the labels if it is wrong)\nCategory: bug  Priority: P3\nSummary: `WhiteIsTheDefaultBackgroundTest` leaves `background_image` / `background_light_image` rows in `settings` after it runs. A later test that expects no background configured then fails. CI stays green only because it starts from a fresh database and runs this test after the one it breaks.\n\n## What happens\n\n`settings` is MyISAM (see `database/schema/mysql-schema.sql`), so `DatabaseTransactions` does not roll back a `Setting::create`. Two tests in `WhiteIsTheDefaultBackgroundTest` create `donker.png` and `licht.png` without dealer and do not remove them. Every run adds four rows.\n\nIn any database that outlives one run (a local or workbench test database), `APhotoWithoutAForegroundIsNotAFaultTest` then fails in all 6 cases of `test_an_answer_about_the_image_is_logged_and_not_reported`: `BackgroundImage::forVehicle(null)` finds `donker.png`, the faked disk has no such file, and `Photo::old_remove_background` logs \"background configured but not on disk\", which the test forbids (`Log::shouldNotHaveReceived('warning')`).\n\nReproduced on main 3861d3f6: the photo test passes on a fresh test database, passes inside a full run, and fails when run again afterwards. Running the candidate classes one at a time on a cleaned `settings` table, only `WhiteIsTheDefaultBackgroundTest` leaves rows.\n\n## Expected\n\nThe class removes its own background rows in `tearDown`, as `RemoveBackgroundTest` and `OwnCutoutServiceTest` already do for the same table.\n",
+            "labels": [
+                "bug",
+                "priority:P3"
+            ],
+            "title": "WhiteIsTheDefaultBackgroundTest leaves background settings behind and breaks the remove.bg refusal test on a reused database"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126111644-e897d4"
+}

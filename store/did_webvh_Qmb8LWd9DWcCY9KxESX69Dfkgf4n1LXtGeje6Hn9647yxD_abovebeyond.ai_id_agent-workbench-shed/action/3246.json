@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: The public route that serves vehicle category icons (`simple.index.image`) answers with a 500 when the stored file cannot be decoded by GD. A broken or unusual icon file should be a logged 404 (or simply served as-is), not an unhandled exception.\n\nSource: Portal mail:71, a Laravel Nightwatch alert for production (Nightwatch issue #83, first and last seen 2026-11-26 08:47:20, one occurrence).\n\n## What is wrong\n\n`Intervention\\Image\\Exception\\NotReadableException: Image source not readable` at `app/Http/Controllers/Vehicle/ImageController.php:161`, which is the last line of `simple_image()`:\n\n```php\nreturn Image::make($fileContent)->response();\n```\n\n`simple_image()` checks that the path exists on the `default` disk, then hands the bytes to Intervention to re-encode them. When the file exists but is not an image GD can read (empty, truncated, a format GD was not built with, or not an image at all), Intervention throws and the request is a 500. The route is used for the vehicle category (group) icons in the stocklist filter and extended search, and in the simple admin form.\n\nThe dealer logo and background routes had exactly this fault and were fixed on 2026-09-15 (`cachedImageFromDisk()`): bytes plus their mime type are served as they are, and anything that is not `image/*` is a 404 that names the path in the log. `simple_image()` was left on the old pattern.\n\n## Expected\n\n- A file that is an image is served with its own bytes and mime type (no re-encoding through GD).\n- An SVG keeps being served as `image/svg+xml`.\n- A file that cannot be read or is not an image is a 404, logged with the disk and path, so the broken icon can be found and replaced.\n- Non-image files on the disk are still never served through this public route.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Category icon route returns 500 when the stored icon cannot be decoded (Nightwatch #83)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126085452-b9fc0e"
+}

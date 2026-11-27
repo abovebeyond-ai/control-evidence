@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:69",
+            "note": "Issue #1130, PR #1133 (replaces #1131, Pint); needs #1132 (Symfony 8.1.12 audit) merged first",
+            "state": "done",
+            "url": "https://github.com/stocklistdealer-eu/platform/pull/1133"
+        },
+        "resource": "portal:stocklistplatform-eu"
+    },
+    "run": "workbench-20261126083928-6a05bd"
+}

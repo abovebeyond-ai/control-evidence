@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Mail to an address that named no project was logged and dropped, and a refused mail left nothing behind: a forward to a short name nobody had set up disappeared without a trace.\n\n## What changes\n\n- **The inbox.** `inbox@<inbound domain>`, and every address no project answers to, keeps the mail without a project in state `unassigned`, with the same dedup and attachments as a project's mail. Per-project addresses work as before.\n- **Assigning.** Through the task route, so the existing gateway kind `portal.task` carries it: `POST tasks/<slug>/mail:<id>` with state `assign` puts the mail on that project as `new`, and the gateway judges it as an action on that project. Until then its other states (parked with a question, done, open) move under the inbox project, `config('portal.inbox_project')` (default `portal`). The mail summary carries `taskProject` (the slug its state moves under) and `to`.\n- **Refused mail** (not from an owner address, DMARC failing) stays refused, but is kept as a notice: envelope and reason, never the text or attachments. The log names the sender's domain only.\n- **The Portal project's page** lists the inbox and the refused notices.\n- **`php artisan portal:mail-fetch <email_id>...`** takes a received mail again from Resend, through the same checks as the webhook: for mail the door dropped before this change, or a refused one after the owners changed. A mail already kept stays as it is; the webhook never retakes a refused one.\n\n## Deploy\n\nMigration `2026_11_24_090000_inbound_mail_without_a_project`: `inbound_mails.project_id` and `to` nullable, `assigned_at` added. No new env; `MAIL_INBOX_PROJECT` is optional. Resend already posts mail for any address on the domain (the dropped mail reached the webhook), so the catch-all needs no setup.\n\nPairs with abovebeyond-ai/portal-cli (intake and `mail.mjs assign`); merge this one first.\n\n## Tests\n\n`ForwardedMailTest`: inbox for an unknown address and for `inbox@`, assign and park, the refused notice without text, the inbox on the Portal project page, `portal:mail-fetch`. Full suite green except `BuildStampTest` (worktree only); Pint and PHPStan clean.\n",
+            "branch": "workbench/general-inbox",
+            "title": "Keep mail without a project in a general inbox"
+        },
+        "resource": "abovebeyond-ai/portal"
+    },
+    "run": "workbench-20261126082017-1d30e4"
+}

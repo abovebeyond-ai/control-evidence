@@ -1,0 +1,16 @@
+{
+    "action": "90556789a53e9040e3d4b033157704b5",
+    "effect": {
+        "detail": {
+            "base": "3ca886a0f1285cd6cec038d8a387e591a367c13d",
+            "branch": "workbench/slug-rules",
+            "commit": "21f82196aa44fb3406638a51b8fcf073e77bef61",
+            "files": 7,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3264,
+    "verdict": "ALLOW"
+}

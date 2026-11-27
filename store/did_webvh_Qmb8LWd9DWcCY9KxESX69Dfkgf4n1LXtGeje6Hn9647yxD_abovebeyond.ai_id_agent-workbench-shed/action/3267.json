@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nTranslated slugs are being filled in on frames and pages. The slug field gave no guidance and accepted anything typed into it: the English slug of the O1 was published as `o1 - 3D printed - titanium - eyewear - couture - round`, and the site put that in its sitemap with the spaces.\n\nSince Hoet-design/hoet-eyewear#88 the site remembers every slug of a page or frame and forwards the old address with a 301, as it already did for blog articles. Changing a slug is safe once that is live, and the Studio can say so.\n\n## What changes\n\n`schemaTypes/lib/slugRules.ts` holds the rules; `localeSlug` uses them for every language:\n\n- **Description** on the slug of pages, frames and blog articles: \"2 tot 5 woorden, kleine letters, koppeltekens. Geen lidwoorden of datum. De zoekterm in de taal van die versie. Leeg: de Nederlandse slug geldt. Wijzigen mag: het oude adres stuurt door naar het nieuwe.\"\n- **Error** when a slug holds anything other than lowercase letters, digits and single hyphens, showing the clean form (\"Bijvoorbeeld: o1-3d-printed-titanium\"). This blocks publishing that one document until the slug is fixed; the site already cleans the address in the meantime.\n- **Warning** above five words.\n- **Info** once a published slug is changed: \"Het oude adres (o1) stuurt na publicatie door naar dit nieuwe.\" Only for pages, frames and blog articles, the types the site forwards.\n- **Generate** cleans the way the site does (accents dropped, `couture\u00b2` becomes `couture2`).\n- The **collection document's** slug is not used for any address on the site; its description now says so and points to Website > Pagina's > Collecties, where the collection address comes from.\n\n## Checked\n\n- `tests/slug-rules.test.ts` (9 tests): the O1 sentence, accents, length, error, warning, info only on change and only for forwarded types, no em dash or middot in the copy.\n- `tsc --noEmit` clean, `sanity schema validate` 0 errors 0 warnings, `sanity build` ok, offline tests 71/71. The live `config.test.ts` needs a `SANITY_READ_TOKEN` and was not run. Not tried in a running Studio.\n\n## After merge\n\n- Merge Hoet-design/hoet-eyewear#88 first: the \"old address forwards\" line is only true once that is deployed.\n- `npm run deploy` (needs a Sanity login).\n- The O1 shows the error on its English slug until it is shortened.\n- The branch `workbench/slug-description` holds the same commit from an earlier run that pushed but did not open its pull request; it can be deleted.\n",
+            "branch": "workbench/slug-rules",
+            "title": "Slug description, slug checks and a note that a changed slug forwards"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261126090038-6b0044"
+}

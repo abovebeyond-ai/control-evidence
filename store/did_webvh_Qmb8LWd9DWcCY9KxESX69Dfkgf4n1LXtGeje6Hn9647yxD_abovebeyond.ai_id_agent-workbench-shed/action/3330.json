@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nOn a hoet.be document, **Publish fills every empty slug** from the title in that language. A slug that is filled in never changes by itself.\n\n- The slug is made from the title: lowercase, accents and punctuation dropped, articles left out per language (Dutch \"de\", but not French \"de\"), at most five words. If another published document of the same type already has that slug, a number is added (`-2`).\n- A filled-in slug, typed or generated, is never touched. Changing one by hand forwards the old address on the site (`document_slugs` / `journal_slugs`, #88 in hoet-eyewear).\n- An empty slug shows a note with what it will become on publish. Dutch is required unless publishing fills it.\n- Only `brand-hoet` (for a frame, the brand comes from its collection). The home page never gets a slug. Cabrio and Hoet Design are left alone, because their sites do not forward an old address.\n\n**Validation** refuses, with the reason and a corrected example:\n- a domain or whole address in front (`https://`, `hoet.be`, `/nl/`)\n- `\" - \"` between keywords\n- spaces, capitals, other characters\n- more than five words\n\nThe word limit is an error on hoet.be only. Elsewhere, shortening would break a live address, so there it stays a warning. For example, the French Cabrio sunglasses slug `lunettes-de-soleil` has six words.\n\n## How\n\n`actions/autoSlug.tsx` wraps Sanity's own Publish action instead of replacing it, so its checks (validation, nothing to publish, a publish in progress) stay as they were. It patches the draft, then publishes. The rules live in `schemaTypes/lib/slugRules.ts`. The site needs no change: `Slugs::find` matches a slug in any language, so the old fallback address (the Dutch slug under `/en/`) still forwards once an English slug is filled in.\n\n## Checked\n\n- Studio tests pass: 88 tests (`vitest`, without the token-bound `config.test.ts`). `tsc`, `sanity schema validate` (0 errors, 0 warnings), `sanity build` and lint pass.\n- Every live slug was checked against the new rules: no existing document gets a slug filled in on republish.\n- Two documents must first get a shorter slug before they can be published again: F1 (keyword lists of 9 to 17 words in all four languages) and the English slug of O1 (still a sentence). The error message says how to shorten them, and the old address forwards.\n- Not clicked through in a running Studio: that needs a Sanity login.\n\n## After merge\n\n`npm run deploy` for the Studio.\n",
+            "branch": "workbench/auto-slug",
+            "title": "Fill empty slugs from the title on publish"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261126113751-0c8579"
+}

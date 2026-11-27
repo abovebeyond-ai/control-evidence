@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3861d3f642ad49114068f77d10617aea913b2fb1",
+            "branch": "workbench/background-settings-cleanup",
+            "files_sha256": "6b08db54fbd5e45517be4d75de9c6f423c9e176c6fccafd92a6a4441ee9087a3",
+            "message": "WhiteIsTheDefaultBackgroundTest removes the background settings it creates\n\nsettings is MyISAM, so the transaction did not roll these rows back. A reused\ntest database then had a background configured that is not on the disk, and\nAPhotoWithoutAForegroundIsNotAFaultTest failed on the warning that follows."
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126112136-d3aad3"
+}

@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: The public warranty route `real-garant/{id}` gives a 500 when it is called without a login and without the garage in `dId`. Nobody is locked out of anything, but every such request is an error page and a Nightwatch alert.\n\nSource: Portal mail:70, Nightwatch issue 81 on production, first and last seen 2026-11-26 08:47:20 (one occurrence).\n\n`ErrorException: Attempt to read property \"dealer_id\" on null` at `app/Http/Controllers/Services/RealGarantController.php:25`.\n\nThe route sits outside the `auth` middleware because the warranty block on a garage's own website and on the public stock list loads it without a login. Those pages pass the garage as `dId` with `view=website` or `view=stocklist`. Every other caller (the offer modal, the order form, the contract modal) sends neither and relies on the signed-in dealer: `show()` falls back to `Auth::user()->dealer_id`, which is null for a guest. That is a visitor or crawler opening the address directly, or a signed-in user whose session expired while an offer was open. `calculate()` has the same read of `Auth::user()` with no guard.\n\nExpected: without a login and outside the two public uses, the route asks for a login (a 401 for an AJAX call, the login page otherwise) instead of a 500. Laravel does not report that as a fault.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Warranty route gives a 500 for a guest without a garage in dId (Nightwatch 81)"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126085548-81b1f2"
+}

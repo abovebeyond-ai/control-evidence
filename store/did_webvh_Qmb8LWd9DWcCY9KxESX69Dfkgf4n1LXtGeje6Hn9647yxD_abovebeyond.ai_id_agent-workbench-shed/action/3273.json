@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "## What a visitor without a login can see\n\nThe image routes outside `auth` take a base64 storage path and serve whatever is at that path, without asking whose file it is or whether it was published:\n\n- `ownvehicle/image/{path}` and `stocklist/image/{path}` (`ImageController::vehicle_image`, disk `vehicles`)\n- `website/image/{path}` (`WebsiteController::image`, disk `vehicles`)\n- `dealer/image/{path}`, `dealer_backgrounds/image/{path}` (disks `dealers`, `background_images`)\n- `simple/image/{path}` (`ImageController::simple_image`, disk `default`, the bucket root; an SVG is returned as `image/svg+xml` from our origin)\n\nVehicle photos live at `{vehicle_id}/car_image_{n}.{ext}` (`ProcessVehiclePhoto`), with `thumb_`, `medium_` and `trans_` variants, and vehicle ids are a counter. So the photos of every vehicle on the platform can be listed by hand, including drafts, cars that were never on a website, merchant and export cars, damage photos, and the original of a photo whose published version was blurred.\n\nChecked on production on 2026-11-26: `base64(\"24173/car_image_1.jpg\")` and `base64(\"24000/car_image_1.jpg\")` both answer 200 with the photo, without a session.\n\n## Fix (needs a decision)\n\nEither sign the image URLs (`VehicleImageService::urlVoor()` already builds signed bucket URLs for derived sizes; the proxy routes could take a signature the same way), or, for a guest, serve a vehicle photo only when the vehicle is in a public selection (website, showroom, public API) and only the blurred variant where one exists. `simple/image` should be limited to the folder the simple settings write to. The signed route is the smaller change and covers all of them at once.\n",
+            "labels": [
+                "security"
+            ],
+            "title": "Image routes serve any storage path to a visitor without a login"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126090738-a6593f"
+}

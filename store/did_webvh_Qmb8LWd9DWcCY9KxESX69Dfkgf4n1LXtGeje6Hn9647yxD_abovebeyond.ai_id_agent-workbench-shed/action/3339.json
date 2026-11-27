@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3207482504ba3993d1108620dcaa01f07f76b149",
+            "branch": "workbench/checked-reading",
+            "files_sha256": "066dd52c3562c5797d0ec8bee405a1c5257fdddb6df4b096e595e19a8095cc76",
+            "message": "A trend someone from the editorial team checked shows its reading again\n\nThe pipeline sends a checked trend's reading with checked_at. The site keeps\nthe prose only with it and shows the four parts as before 9 November, and the\ncard in the list carries a summary from the checked text. Anything unchecked\nstays measured only.\n\n- trend_cards.checked_at; TrendCard::checkedReading\n- Projection keeps prose and summary only with a valid checked_at\n- Trend page: Signal, Why it matters, The semiotic read, How to activate it\n\nPortal: Op gentells.com staat bij een trend opnieuw de volledige tekst, zodra iemand van de redactie hem nakeek."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261126123447-fe9a6d"
+}

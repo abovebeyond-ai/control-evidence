@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from a conversion error on production; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A VWE answer with an empty construction date is lost entirely. The conversion passes the empty value to Carbon, which throws \"Array to string conversion\", and the sheet gets none of VWE's fields although the token was spent.\n\n## What happened\n\nOn 25 November at 13:06 a chassis lookup for KMHHC8137SU268780 (a Hyundai Kona) came back with \"Array to string conversion\".\n\nRead on production on 25 November:\n\n- VWE's answer carried make, model, version and the engine description. `ConstructionDate` was an empty element, which decodes as an empty array.\n- `OwnStockService::convertVweJsonToVehicle` gives that value to `Carbon::createFromFormat('Y-m-d', \u2026)`. That throws, and `createFromCarVwe` turns it into the field error, so nothing of the answer reaches the sheet.\n- The same conversion over the 187 VWE answers kept in the 30 days before: 7 failed on the empty date. The other 25 failures were VWE's own refusals (unknown chassis number, not 17 characters, make not supported, no data, application error).\n\n## Proposed fix\n\nRead the construction year only when `ConstructionDate` is a `Y-m-d` date. Without one, leave the year as it is and keep the rest of the answer.\n",
+            "labels": [
+                "bug",
+                "mail",
+                "priority:P2"
+            ],
+            "title": "A VWE answer without a construction date is lost entirely"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126084946-3330c4"
+}

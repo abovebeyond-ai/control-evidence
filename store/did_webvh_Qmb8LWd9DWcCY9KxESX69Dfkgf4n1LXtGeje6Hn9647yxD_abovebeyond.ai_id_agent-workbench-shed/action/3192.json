@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (from the forwarded mail; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: Photos uploaded in order to a new vehicle come back with the first five or six out of place, the rest in order. Every new car with numbered file names gets a wrong main photo and gallery until the garage drags them back.\n\n## What is wrong\n\nA garage uploaded the photos of a new vehicle in the order it wanted. On the photo tab the first five or six stood out of order; the others were right.\n\nThe uploader sends the files one at a time, in the order they were picked, and `upload_dropzone` numbers them in that order. But when a vehicle had no photos yet, two places then re-sort them by file name (R S1-6.3):\n\n- `ImageController::reset_image_order`, called by the uploader when the batch is done;\n- `OwnStockController::create`, on the next open of the sheet, when the first photo has `sort_order` 0.\n\nBoth sort with MySQL `ORDER BY name`, which compares character by character. Windows Explorer and the macOS Finder sort numbers by value. For files named `1.jpg` to `14.jpg` the garage sees 1, 2, 3 ... 14 in its folder, and the platform stores 1, 10, 11, 12, 13, 14, 2, 3 ... 9: the first six places shuffled, and from 2 on it looks right again. That matches the report.\n\n## What should happen\n\nThe order after the first upload is the order the garage sees in its own folder: file names compared the way a person reads them, numbers by value (`2` before `10`), case ignored. Upload order breaks a tie.\n\nThe sort on file name stays: it keeps the order independent of the order a file dialog or a drag hands the files over in. The file names of this vehicle were not read (no production access from here); the numbered-name case is the one that produces exactly this pattern.\n\nSource: Portal mail:69.\n",
+            "labels": [
+                "mail",
+                "bug",
+                "priority:P2"
+            ],
+            "title": "Photos uploaded to a new vehicle are sorted by file name character by character, so 10 comes before 2"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126082522-f609b5"
+}

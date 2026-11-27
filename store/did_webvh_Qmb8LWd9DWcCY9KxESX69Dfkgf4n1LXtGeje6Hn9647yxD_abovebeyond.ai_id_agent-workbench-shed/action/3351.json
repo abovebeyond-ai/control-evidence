@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (follow-up of #1124 and #1128; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: A chassis lookup runs inside the web request, and production stops a request after 30 seconds. AutoConnect takes longer than 20 seconds for one car in seven and is the only source of category, body style, fuel, weight and dimensions, so those sheets come back half filled, and filling them costs the garage a second lookup and a second token.\n\n## What happened\n\n- Production stops a web request after 30 seconds. Until #1114 a slow AutoConnect ran the lookup into that limit, and the modal showed nothing.\n- #1114 gave the three provider calls a shared budget of 24 seconds, with at most 10 for AutoConnect. #1129 raised that to 20.\n- Of the 355 AutoConnect answers kept in the 60 days before 24 November, 48 took more than 20 seconds (measured from VWE's row to AutoConnect's row of the same vehicle).\n- Category, body style, fuel, weight, length, width, height, taxes, CO2 and the euronorm come from AutoConnect alone. Without its answer the sheet is not complete.\n- #1125 fetches a late answer in the background and keeps it, but the sheet is not filled: the garage has to look the chassis number up again, which spends a second token.\n\n## Proposed fix\n\nRun the lookup as a job and let the modal ask for its state.\n\n- The button starts the lookup and gets an answer at once. The modal names the step (VWE, then AutoConnect) until the lookup is done, and then reloads the sheet as it does now.\n- Each provider gets its own limit instead of a share of a request. AutoConnect gets 90 seconds.\n- One lookup per vehicle at a time, and one token, only when something came back.\n- The shared budget and the background job of #1125 go.\n",
+            "labels": [
+                "bug",
+                "mail",
+                "priority:P2"
+            ],
+            "title": "A chassis lookup does not fit in a web request"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126133656-51de53"
+}

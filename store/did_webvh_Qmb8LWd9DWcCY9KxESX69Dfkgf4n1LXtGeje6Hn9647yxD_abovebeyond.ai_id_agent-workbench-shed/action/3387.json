@@ -1,0 +1,17 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (follow-up of #1151; change the labels if it is wrong)\nCategory: bug  Priority: P2\nSummary: Since #1152 a chassis lookup is a job that must start within 90 seconds, but production has one worker for `photos,default,webhook` (one process). Behind a garage's upload, a blur or another garage's lookup of up to two minutes, a lookup starts too late and the garage gets nothing.\n\n## What happened\n\n- #1152 runs the lookup as a job (`RunChassisLookup`) on `default`. A job the queue starts after 90 seconds calls nobody, so no token is spent, and the modal says the lookup could not start in time.\n- Production has one queue worker, one process, for `photos,default,webhook`, in that order (read on 26 November).\n- A lookup holds that worker up to about two minutes (VWE 30 seconds, AutoConnect 90). A second lookup in that time starts too late.\n- The worker takes `photos` first. A garage's upload of many photos, or a blur or copy on `default`, also delays it.\n\n## Proposed fix\n\n- Put `RunChassisLookup` on its own queue, `lookups`.\n- Add a worker for it with two processes, so two garages can look up at once.\n- The worker has to run before the change is merged. Until then nothing takes `lookups`.\n",
+            "labels": [
+                "bug",
+                "mail",
+                "priority:P2"
+            ],
+            "title": "A chassis lookup waits behind uploads and other lookups on the one worker"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127072017-9f6804"
+}

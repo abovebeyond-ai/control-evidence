@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2955f4ec7fc44bfdd66c51fd8c23cea3bae4274e",
+            "branch": "workbench/changes-2026-11-26",
+            "files_sha256": "86853cc27cee58e294626214fe4a14da0f28e85d2696595e7a44ec8e10e51b00",
+            "message": "Lighter hero, company details from Sanity, service gallery, simpler sell page, Brandweer and Personenwagens\n\n- Home hero: shade only behind the text from lg on, an even veil below; white\n  eyebrow with an orange bar. All hero text passes WCAG AA at 390 to 1440 px.\n- Company details (name, address, phone, fax, e-mail, WhatsApp) from\n  siteSettings.company over built-in values, everywhere they appear, JSON-LD\n  included; tel: links in E.164; form recipient stays in config.\n- Services: a photo gallery with a self-hosted lightbox replaces the steps.\n- Sell your vehicle: call, mail and WhatsApp buttons, a checklist and a short\n  form instead of the 14-field form; each click is a taxatie lead and one\n  request conversion.\n- Fire engines (body type Feuerwehrfahrzeug) go to Brandweer; branch 1 (PKW)\n  to Personenwagen, renamed from Auto with a 301 from /voertuigen/auto; the\n  import prints counts per category before and after."
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261126185835-a2037a"
+}

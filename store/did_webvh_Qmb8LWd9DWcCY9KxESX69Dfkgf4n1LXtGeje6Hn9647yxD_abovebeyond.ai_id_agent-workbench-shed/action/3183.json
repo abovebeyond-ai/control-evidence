@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "a22d7b4b35ea0c67ef9d13b9f433d802d1183b1b",
+            "branch": "workbench/general-inbox",
+            "files_sha256": "1375693078f356ee5bca835d21d0dfae416fceb3696d878098cf8ae839d4da0f",
+            "message": "Take up mail in the Portal inbox and notify refused mail\n\nPortal now keeps mail that names no project (state unassigned) and a notice\nfor refused mail, instead of dropping both.\n\n- mail-intake starts one agent per inbox mail with the task to find the\n  project in PROJECTS.md first: assign it when one project is clearly\n  meant, park it with one question to the owner when in doubt.\n- mail.mjs assign <id> <slug> sends portal.task with state \"assign\" under\n  the project's slug, then prints the usual task for that project's mail,\n  so the same agent carries on as with any forwarded mail.\n- mail.mjs state moves an inbox mail under the slug Portal names\n  (taskProject); list and show say when a mail is in the inbox.\n- A refused mail gives one herdr notification with the sender's domain and\n  the reason; the journal only says a notice was shown.\n- The task texts and the PROJECTS.md parser move to lib/intake.mjs, with\n  tests; the parser no longer reads the header and separator rows as\n  projects.\n- A list Portal does not know yet (422 before the Portal change is\n  deployed) is skipped, so new mail still starts."
+        },
+        "resource": "abovebeyond-ai/portal-cli"
+    },
+    "run": "workbench-20261126082056-64f734"
+}

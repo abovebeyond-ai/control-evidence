@@ -1,0 +1,13 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "portal.task",
+        "params": {
+            "key": "mail:73",
+            "note": "handed to hoet-locale-slugs (wD:p2D): blog as Stories, same site and routing as #88",
+            "state": "in-progress"
+        },
+        "resource": "portal:hoet"
+    },
+    "run": "workbench-20261126101552-f76183"
+}

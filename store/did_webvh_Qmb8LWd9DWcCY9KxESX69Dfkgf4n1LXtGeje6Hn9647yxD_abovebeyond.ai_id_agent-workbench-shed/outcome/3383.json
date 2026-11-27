@@ -1,0 +1,16 @@
+{
+    "action": "3cac6f28c3e138cffe12a5fd9bf701bd",
+    "effect": {
+        "detail": {
+            "base": "497fac11316e03e23ea07e1422057c6aaffe3fc0",
+            "branch": "workbench/drop-steps",
+            "commit": "2e956620dfa4e5bc8144c240d769a127aa67e683",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3381,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "96336a6d55fb78bc9817d9e477766df1b69cc088",
+            "branch": "workbench/page-titles",
+            "files_sha256": "fc23b1b1c66350b6829bd109671a8946c95588f35bf0eb79e1b7f088d5e8ada8",
+            "message": "End every page title in \" - Hoet\", brand first on the home page, frame titles from the Studio\n\nPortal: Paginatitels op hoet.be eindigen overal op \" - Hoet\"; monturen krijgen hun titel uit de Studio"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127072311-6f02d0"
+}

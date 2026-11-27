@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "The site stopped showing \"Zo verloopt het\" on the services and the three steps on \"Voertuig verkopen\" with #8 / site #45. The `steps` fields stayed in the schema, hidden and without rules, so the data already written would not be flagged in the Studio.\n\nThat data is now cleared in `o1i7w9ht/production` (6 documents, 18 steps, backed up first), so the fields can go:\n\n- `service.steps` and `sellPage.steps` removed from the schema\n- the contract test, CONTRACT.md and README follow\n- `contentItem` is now described as a paragraph or fact\n\nThe site does not read `steps`, so it needs no change.\n\nChecked locally: vitest (16), tsc, eslint and `sanity build`.\n\nAfter merge: deploy the Studio (`npm run deploy` with a Deploy Studio token).\n",
+            "branch": "workbench/drop-steps",
+            "title": "Remove the old steps fields from service and sellPage"
+        },
+        "resource": "ShaneDeconinck/schoutteet-sanity"
+    },
+    "run": "workbench-20261127071531-5f994f"
+}

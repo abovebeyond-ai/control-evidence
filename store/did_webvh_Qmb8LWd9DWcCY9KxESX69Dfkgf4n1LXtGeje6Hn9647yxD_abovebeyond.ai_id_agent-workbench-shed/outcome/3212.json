@@ -1,0 +1,16 @@
+{
+    "action": "3b570310fff1ef1b9bd4fecddcb42054",
+    "effect": {
+        "detail": {
+            "base": "260110cbf16ee3dd6ce325db62fe3c5fe5cc6ac5",
+            "branch": "workbench/photo-upload-order-2",
+            "commit": "8befef2191e571edd0d16c07d8a2bacd0b8aa7d5",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3210,
+    "verdict": "ALLOW"
+}

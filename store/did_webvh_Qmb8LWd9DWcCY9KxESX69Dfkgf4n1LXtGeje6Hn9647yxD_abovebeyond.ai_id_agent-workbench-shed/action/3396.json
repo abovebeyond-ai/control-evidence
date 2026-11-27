@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fe3124df0c72f767d0c8a83722c9c4d1d2aff25e",
+            "branch": "workbench/page-titles",
+            "files_sha256": "a0ba4f2b57171ef51129dda5c88914eb592b9235238b70ddbac40a271dc12418",
+            "message": "Give frames an SEO field and warn when a title names the brand\n\nPortal: In de Studio hebben monturen nu een SEO-veld; een titel met \"Hoet\" erin krijgt een waarschuwing"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261127072311-bc81c1"
+}

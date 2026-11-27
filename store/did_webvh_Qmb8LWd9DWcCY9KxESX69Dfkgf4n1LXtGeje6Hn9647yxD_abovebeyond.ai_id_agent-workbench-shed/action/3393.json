@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1155\n\n**Merge only once the `lookups` worker runs on production** (see the last section). Without it, no lookup starts: after 90 seconds every modal says the lookup could not start in time.\n\n## Why\n\nSince #1152 a chassis lookup is a job that must start within 90 seconds (`ChassisLookups::START_WITHIN_SECONDS`). Production has one queue worker, one process, for `photos,default,webhook`. A lookup holds it up to about two minutes, so a second garage's lookup in that time starts too late. The worker also takes `photos` before `default`, so a garage's upload goes first, and a blur or a copy on `default` runs first too.\n\n## What changes\n\n- `RunChassisLookup` goes on its own queue, `RunChassisLookup::QUEUE = 'lookups'`, set in the constructor as `ProcessVehiclePhoto` does.\n- CUTOVER.md section 4 names the worker: `queue:work database --queue=lookups --sleep=1 --tries=1 --timeout=200 --force`, two processes.\n  - `--tries=1`: a second try is a second invoice from VWE and AutoConnect.\n  - `--timeout=200`: above the job's 180 seconds and below `retry_after` (400).\n- R S1-2.23 names the queue and the worker.\n\n## Tests\n\n- `AChassisLookupWaitsForAutoConnectTest` checks that the job is pushed on `lookups` and that CUTOVER.md names the worker.\n- The full suite: 3360 of 3361 green, the same 9 notices as on main. `WebsiteFilterBarTest::test_with_a_make_the_model_list_follows_that_make` failed once in the full run and passes on its own; it does not touch the lookup. PHPStan and the rules tests are green.\n\n## Before merging, on Forge\n\nAdd a worker on the server of traders.stocklistdealer.eu (Daemons):\n\n- connection `database`, queue `lookups`, processes `2`;\n- sleep `1`, timeout `200`, tries `1`, `--force` on.\n\nCheck it with `ps -eo pid,etimes,args | grep \"queue=lookups\"`: two lines. It does nothing until this is merged.\n\nThis worker was added on 27 November, before this pull request, so it is in place. It does nothing until this is merged.\n",
+            "branch": "workbench/chassis-lookup-queue",
+            "title": "Run the chassis lookup on its own queue"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127072025-4367bf"
+}

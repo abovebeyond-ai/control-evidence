@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3861d3f642ad49114068f77d10617aea913b2fb1",
+            "branch": "workbench/nightwatch-83-simple-image-2",
+            "files_sha256": "2936c72ea54a5d65447c35ec09b6c254e7bfe623ff4af3f641d303f9e5144c87",
+            "message": "Serve category icons as bytes; an unreadable icon is a logged 404, not a 500\n\nsimple_image() re-encoded every file on the default disk through\nIntervention/GD, so an icon GD could not decode threw \"Image source not\nreadable\" as an unhandled 500. It now serves the bytes with their own\nmime, keeps SVG as image/svg+xml, and answers 404 with a log line naming\nthe path for anything missing, empty or not an image. The file is read\nwith get() instead of exists(), so the bucket is not asked for a\ndirectory listing (R S1-6.38).\n\nNightwatch: 83"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126111800-a1b6d5"
+}

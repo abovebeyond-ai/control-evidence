@@ -1,0 +1,16 @@
+{
+    "action": "10879a3d8ddae1fc609d46f0b399de56",
+    "effect": {
+        "detail": {
+            "base": "a5664306a2c6f7e53b8ffd685b13b4968fa0f372",
+            "branch": "workbench/dealer-vote-404",
+            "commit": "0e830f13acfb73ecfc5363cd8be1c2b261860dec",
+            "files": 2,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3291,
+    "verdict": "ALLOW"
+}

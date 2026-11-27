@@ -1,0 +1,15 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "## What a visitor without a login can see\n\nThe website module's detail page, `website/detail/{base64 id}&{dealer hash}` (`WebsiteController::detail`), looked the vehicle up as \"unsold, and this dealer's when the integration is off\". The list on the same module shows only published, complete, unsold vehicles that are not up for export, plus the shared stock when the integration is on (R S2-5.2, `VehicleRepository::forWebsiteQuery`).\n\nThe dealer hash is public (it is in the iframe on the dealer's own site and indexed by search engines) and vehicle ids are a counter, so a hand-made detail address opened:\n\n- the dealer's drafts, cars without the website tick and export cars;\n- with the integration on, any unsold vehicle of any garage on the platform, also outside the shared stock (not offered on the stocklist, excepted for this dealer, outside the dealer's website filter).\n\nChecked on production on 2026-11-26 with one dealer hash taken from a search engine result: of ten hand-made vehicle ids, four opened. From outside it cannot be told which of those the list would also show; the finding is the lookup above, which never asked.\n\n## Fix\n\nLook the vehicle up through `forWebsiteQuery` (the list's own selection), so the detail can never open a car the list could not show. Done on branch `workbench/public-leaks` with `TheWebsiteDetailShowsOnlyWhatTheListShowsTest`; three existing tests created their fixture vehicle without `on_website` and opened it anyway, which is the same gap.\n",
+            "labels": [
+                "security"
+            ],
+            "title": "The website detail opens vehicles the website list does not show"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261126090745-21e79f"
+}
