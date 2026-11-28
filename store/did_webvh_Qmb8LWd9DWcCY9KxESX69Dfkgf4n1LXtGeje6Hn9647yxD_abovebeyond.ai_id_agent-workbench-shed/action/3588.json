@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "98580ce5c45f7cd8027bc637a679f42fb3820737",
+            "branch": "workbench/ask-from-desk",
+            "files_sha256": "cb7970d3368f393697ccdeee8e606c0136c53cf211068ef5f9c99a2c3d471cb3",
+            "message": "relay: a second screen signs what it asks"
+        },
+        "resource": "bextrust/control"
+    },
+    "run": "workbench-20261127163719-f64da6"
+}

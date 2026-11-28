@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nAsk for members (and the Ask Gen built on it) answered from every trend gentells.com showed, including the ones carried over from before the check that no person approved yet. The Studio also had no way to find rejected trends again, to see which approved trends no post covers, or to count trends and posts per sector.\n\n## What\n\n- `approvedFor(db)` in `core/insight-check.mjs`: the visible checks with verdict `stands` only. The guest tools in `core/observatory-tools.mjs` screen with it, so Ask never reads a carried trend. Browsing screens keep `visibleFor`, as gentells.com does.\n- `rejectedList(db)`: rejected trends whose text has not changed since (a changed one is in the queue as `declined-changed`), with who, when, why and sectors. Returned by `GET /insight-checks` as `rejected`.\n- `postsByTrend()` split out of `siteTrendsOverview` (same supersede-chain logic). `GET /insight-checks` lines carry `posts`; `/site/trends` adds `postSectors`.\n- `unwrittenApproved({topic, q})`: approved trends no published post cites, newest approval first. Returned by `/articles/story-starters` as `unwritten` on the first page.\n\n## Tests\n\nFull suite 1858 of 1858, typecheck clean. New cases: Ask skips a carried trend (fails without the change), the rejected list until the text changes, unwritten approved trends, posts per trend.\n\n## Order\n\nMerge before the Studio PR; the Studio reads `rejected`, `posts`, `postSectors` and `unwritten` and shows nothing extra without them.\n",
+            "branch": "workbench/approve-words",
+            "title": "Ask reads approved trends only; rejected and unwritten trends for the Studio"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261127131616-8d65e6"
+}

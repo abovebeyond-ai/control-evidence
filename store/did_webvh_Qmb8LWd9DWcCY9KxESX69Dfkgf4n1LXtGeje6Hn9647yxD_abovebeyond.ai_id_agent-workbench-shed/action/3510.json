@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "5f7347363123c089da77141b3957394be8e9bbd6",
+            "branch": "workbench/hero-fit",
+            "files_sha256": "de20ab0e9881edabbe8d0c293de7bc48ce2cc66ba74d71b12eb54bb28c1991a6",
+            "message": "Home hero: compact on desktop so it fits a 1440x900 screen\n\nWith the intro as paragraphs and a list the hero grew to 798px: on 1440x900 the category\nbar fell below the fold and on 1366x768 the buttons did. From lg on the padding is 48px\ninstead of 112px and the service list runs on in a row (two lines instead of four). The\nhero is now 610px; phones keep the stacked list."
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261127120746-459264"
+}

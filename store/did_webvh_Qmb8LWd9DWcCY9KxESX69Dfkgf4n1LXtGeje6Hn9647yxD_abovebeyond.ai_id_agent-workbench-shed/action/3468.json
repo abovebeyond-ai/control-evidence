@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f709503d5c1de0df4e2118b71fbd70045530a8a3",
+            "branch": "workbench/story-style",
+            "files_sha256": "ed9e8a8414e2ba29599cde6353b5bf94456ddb0fc6d399a7fa00550edb6accd8",
+            "message": "Lay out a story like the site's photo and text pages\n\nPortal: Stories krijgen dezelfde opmaak als de rest van hoet.be: titel en beeld naast elkaar, de tekst in \u00e9\u00e9n leesbare kolom."
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127104400-fd43ea"
+}

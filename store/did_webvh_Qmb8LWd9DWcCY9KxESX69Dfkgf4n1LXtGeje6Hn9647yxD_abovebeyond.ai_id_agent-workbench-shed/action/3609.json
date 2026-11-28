@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two faults in the year and mileage sliders on `/voertuigen`, both seen on staging. The same two were fixed earlier in the StockCars site (12ff775) and the Stocklist widget (stocklistdealer-eu/platform#1051).\n\n## The bars did not follow the other filters\n\nThe bars and bounds were drawn once, at page load. A live filter change updated the list, the chips and the counts in the selects, but not the sliders. On staging, choosing the body type \"3-zijden kipper 2 assen\" left 97 vehicles in the list. The bars still showed the distribution of all 2625 vehicles until a reload.\n\n- After each fetch the sliders take their bars, bounds and values from the fetched page. That page already counts each scale over the stock that passes the other filters, but not the slider's own filter.\n- The inputs are updated in place instead of replaced, so keyboard focus stays on the slider. A slider held by the pointer while the answer arrives keeps its thumbs.\n- A bound outside the scale is clamped to its end, so the label shows where the thumb is. That bound selects nothing extra, because the scale already ends at the last vehicle.\n\n## The bars outside the selection were invisible\n\nThose bars and the slider rail used `brand-200`, which was not in the theme. Tailwind generated no rule, so the bars were transparent: with the year set from 2015, nothing showed to its left.\n\n- `brand-200` is now `#aac2d0`, halfway between 100 and 300: 1.7:1 on the filter panel and clearly apart from the orange.\n- The feature badges on the vehicle page also used `brand-200`. Without the colour, their border fell back to the text colour, brand-700. They now say `border-brand-700`, so they look as they do today.\n\n## Tests\n\n- `FilterPanelTest`: each scale covers the other filters, and a bound outside it is clamped.\n- `ThemeColoursTest`: every `brand-N` used in `resources` must be defined in the theme. It fails on main.\n- Checked in a browser against local stock: after a body-type change, and after three arrow-key steps on the year slider, the sliders match a reload of the same URL exactly. Focus stays on the slider.\n- Full suite: 87 tests green.\n",
+            "branch": "workbench/slider-bars",
+            "title": "Vehicle list sliders: follow every filter, show the bars outside the selection"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261127181141-93e34b"
+}

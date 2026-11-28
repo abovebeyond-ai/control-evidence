@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Everything needed to continue the deploy elsewhere, in one folder: `docs/handover/README.md` (what gets deployed, what must hold whatever the stack, the five decisions before prod, ready and to build, open decisions and actions, decisions already taken, known traps), plus the Principal AI's knowledge that was in no repository, the simulation's start script, and the gateway configuration's fields without values.\n\nNo secrets: keys, tokens, relay state and per-person memory are left out on purpose.\n",
+            "branch": "workbench/handover-deploy",
+            "title": "A handover for the deploy"
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261127153945-32c706"
+}

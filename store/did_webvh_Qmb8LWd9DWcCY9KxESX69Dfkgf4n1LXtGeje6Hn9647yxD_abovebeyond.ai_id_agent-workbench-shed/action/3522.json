@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2070840ffdb7cb77e536f107cd80ad2cd3df3efc",
+            "branch": "workbench/check-desk-filters",
+            "files_sha256": "cd667540dbfec94a92109687e4a2f363e7682018c6deb7269fb5da19675b3041",
+            "message": "A trend opens on its own page, with its text to type in and a conversation to rewrite it\n\nPortal: In de Studio zoek, filter en sorteer je de trends die op een check wachten en die op gentells.com staan."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261127121700-001c25"
+}

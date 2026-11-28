@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "Nightwatch 86: `stocklist:check-transactions` named vehicle 24218 as a buy-over without its `vehicle_history` row (\"both garages miss their order form and confirmation mail\").\n\nNothing was missed. 24218 is a copy (`duplicated_from_id = 23524`). 23524 was bought over from 19568 on 15 October 2026 and carries its row (253); it was sold, and the copy put the car back on the sheet.\n\n`OwnStockController::duplicateVehicle` copies every field except a fixed list, and `seller_vehicle_id` and `seller_id` are not on it. So a copy of a bought-over sheet looks like a second purchase of the same car: to the daily check, to the buy-over counts in Inzichten and DealerUsage, to seller voting and to the transport pick-up location. On production two copies carry a `seller_vehicle_id`.\n\n`create:vehicle-history` must not be run on them: it would write a purchase that never happened.\n\nWanted: copying leaves both fields out, and a dry-run command clears them on the copies that already inherited them.\n",
+            "title": "A copy of a bought-over sheet counts as a second purchase"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127100449-70a83b"
+}

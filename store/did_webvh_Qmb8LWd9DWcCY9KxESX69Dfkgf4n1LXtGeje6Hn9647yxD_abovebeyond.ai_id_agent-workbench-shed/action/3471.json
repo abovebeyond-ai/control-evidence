@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nA story now looks like the other pages of the site instead of a frame page.\n\n- **Top:** on white, the title, lead and date on the left and the image on the right. It reuses the photo and text block from Over ons (`rb-photo-text`, photo right). Vergroten still opens the image.\n- **Below:** the story in one reading column (the existing `.article__body`, 720px), in the type of the photo and text block: 15px, line height 1.7, headings 22px. The gallery, lists and FAQ block sit in that column. Then the two buttons, the frames and more stories.\n- **Phone:** the image first, then title and text.\n\n## Why\n\nThe frame-page layout (`.fd`) kept the image in view on the left and put the whole story in the narrow right column, on a beige ground. That works for a frame's few lines. For an article of five sections it gave a long, cramped column next to an empty half of the page, in a look the rest of the site does not use.\n\n## Checked\n\n- Full suite: 484 tests, 483 pass. `BuildStampTest` fails in any git worktree, also on main. Pint passes.\n- `StoriesTest` and `BlogTest` assert the new head, back link and body column.\n- Looked at locally on desktop and mobile with the two published stories (H8 & F8, Repair Kit) in four languages.\n",
+            "branch": "workbench/story-style",
+            "title": "Lay out a story like the site's photo and text pages"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127104400-fd43ea"
+}

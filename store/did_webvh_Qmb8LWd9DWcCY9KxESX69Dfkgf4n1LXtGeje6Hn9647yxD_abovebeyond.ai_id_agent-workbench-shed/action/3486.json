@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ad3158cba8d41d61cab659a030f50073e4a10ebe",
+            "branch": "workbench/check-in-studio",
+            "files_sha256": "135b596c73cec275eb14d5fe77cf78ffd4f343066be735b45f296fef82798932",
+            "message": "The Studio's trend list says where each trend stands with the check\n\nPortal: De redactie keurt trends voortaan goed in de Studio, waar ze ook schrijft."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261127114447-300bc8"
+}

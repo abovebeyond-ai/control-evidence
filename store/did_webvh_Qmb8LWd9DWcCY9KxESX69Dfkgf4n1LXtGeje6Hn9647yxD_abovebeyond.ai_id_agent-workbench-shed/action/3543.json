@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe trend moves read oddly (\"We stand behind this\", \"Not like this\"). Approval and being on gentells.com were mixed into one sentence, though they differ: an approved trend goes offline when it goes quiet, and one can be taken off by hand. Rejected trends could not be found again, and nothing showed how trends and posts spread over the sectors or which approved trends nobody wrote about.\n\n## What\n\n- Approve and Reject throughout the Trends tab, the trend page and the front page tray.\n- Changing the text has one button, Save. Approving is its own move, on the saved text.\n- The trend page shows three lines: Approval, gentells.com, Posts.\n- The Trends tab gains a count by sector (on gentells.com, no post yet, waiting, rejected, posts) and a Rejected list.\n- Both trend lists filter on \"No post yet\" or \"With a post\".\n- Write shows the approved trends with no post about them, in the opening of a new piece and at the top of See all.\n\n## Tests\n\n`trend-check.test.js` updated and extended: 104 of 104, build ok. Checked against a mocked pipeline (trend page, sector table, rejected list).\n\n## Order\n\nMerge after the pipeline PR (Trendwolves/gentells-pipeline, `workbench/approve-words`).\n",
+            "branch": "workbench/approve-words",
+            "title": "Trends: approve or reject, sectors, rejected list, unwritten trends in Write"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261127131647-7c8f8d"
+}

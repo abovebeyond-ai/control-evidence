@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "21b0fa176eba068ea02c4b6cd84a73194f31c631",
+            "branch": "workbench/stories",
+            "files_sha256": "34b0f6ada62d65afc26d113c442cea15e6e979b7d0778b0492c9c4177875b5f2",
+            "message": "Stories: the blog as a page with a film, a featured story and frame-style articles\n\nPortal: Stories staat klaar op de site: film, uitgelichte story, artikels als montuurpagina, en kaarten tussen stories en monturen"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127102052-d3befb"
+}

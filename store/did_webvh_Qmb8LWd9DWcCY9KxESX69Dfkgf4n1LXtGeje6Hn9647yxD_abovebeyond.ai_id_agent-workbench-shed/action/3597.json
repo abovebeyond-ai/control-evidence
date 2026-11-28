@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "master",
+            "body": "Asks from the desk app show on the phone as yours, from your Mac (0.8.3)\n\nAn ask typed on the desk app reached the phone as \"this phone sent no such ask\": true, since\nthe phone kept no copy, and so the write could not be approved.\n\nThe desk app now makes its own Ed25519 key, kept beside its link and forgotten on unlink, and\ngives the relay its public half. The phone shows \"Is this your Mac?\" with an eight-digit code\nfrom the key; the person compares it with the code on the Mac and says it matches, or \"Not\nmine\", which unlinks the screen. From then on the desk signs each ask over the gate's digest,\nand the phone holds a sealed ask to that signature and to the keys it took itself. The write\nthen reads \"You asked at 14:02, from your Mac\". A key the phone did not take, a signature\nthat does not hold or other words are shown as not asked by you. The yes stays the phone's\npasskey.\n\nTests: the relay's signed-ask vector, a Mac ask that holds, an untaken screen, a forged\nsignature, changed words, and the same code on both screens. Shots: new-screen, and the\ndesk account page waiting and paired.\n\n\nThe relay side is bextrust/control, branch ask-from-desk. Build: APK 0.8.3, desk jar.\n",
+            "branch": "workbench/ask-from-desk",
+            "title": "Asks from the desk app show on the phone as yours, from your Mac (0.8.3)"
+        },
+        "resource": "bextrust/bextrust-android"
+    },
+    "run": "workbench-20261127163744-e56b0f"
+}

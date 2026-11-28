@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "44d0771f8813290efa538ad95053deecef4883ef",
+            "branch": "workbench/slider-bars",
+            "files_sha256": "be5a7dbda30f6215dfde430474632de457470e4939c4db8bcd46a5e4427b1f71",
+            "message": "Vehicle list sliders: redraw with every filter, show the bars outside the selection"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261127181141-93e34b"
+}

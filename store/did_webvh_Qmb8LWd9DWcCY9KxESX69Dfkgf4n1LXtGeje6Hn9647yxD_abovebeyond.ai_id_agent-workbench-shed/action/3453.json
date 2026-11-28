@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1163\n\n## What was wrong\n\nNightwatch 86: `stocklist:check-transactions` named 24218 as a buy-over without its `vehicle_history` row. 24218 is a copy of 23524 (`duplicated_from_id`), which was bought over from 19568 and carries its row. Copying (`OwnStockController::duplicateVehicle`) takes every field except a fixed list, and `seller_vehicle_id` and `seller_id` were not on it, so the copy looked like a second purchase of the same car. Besides the false alarm, such a copy counts as a buy-over in Inzichten and DealerUsage and inherits the seller voting and transport pick-up lookups. Production has two such copies.\n\n## What changes\n\n- Copying leaves out `seller_vehicle_id` and `seller_id`. The purchase stays on the parent, which `duplicated_from_id` names.\n- `stocklist:detach-copied-purchases` lists, and with `--apply` clears, those two columns on every sheet without its own transaction while another sheet of the same dealer with the same `seller_vehicle_id` has one. That also finds copies made before `duplicated_from_id` existed (17 September 2026). A real purchase whose row failed has no such sibling and is left for the daily check and `create:vehicle-history`. Only the two columns change; `updated_at` is not touched.\n- R S1-10.2 and the finding `2026-11-27-een-kopie-leek-een-tweede-overkoop`.\n\n## Tests\n\n`ACopyIsNotASecondPurchaseTest`: copying a bought-over sheet (fails on `main`), the command's dry run and `--apply`, and a purchase without its row and without a sibling left alone. Full suite 3404 green before the finding got its PR number (the only red then was that missing number), phpstan clean.\n\n## After merge\n\nOn production: `php artisan stocklist:detach-copied-purchases`, check the two sheets it lists, then again with `--apply`. Do not run `create:vehicle-history` on them.\n",
+            "branch": "workbench/copy-drops-seller",
+            "title": "A copy of a bought-over sheet is not a second purchase"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127100518-a07036"
+}

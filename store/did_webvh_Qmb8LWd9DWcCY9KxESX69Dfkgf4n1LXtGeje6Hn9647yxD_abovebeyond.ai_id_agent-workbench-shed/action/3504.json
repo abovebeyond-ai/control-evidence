@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8b61e03a70d9a01fbf5348b72a2c108c96d7ccdb",
+            "branch": "workbench/hero-text",
+            "files_sha256": "ffaed60758d7b9cc1369108615a7eac2d896e3be24c4143b21e3aba2256865c8",
+            "message": "Home hero: keep Sanity line breaks, shade to AAA\n\nMulti-line Sanity texts (hero, story, sell intro, history intro) keep their paragraphs and\nbullet lists instead of running into one block. The hero intro is white and the shade is\n70% brand-900, the lightest at which all hero text reaches AAA on the staging and built-in\nphoto; from lg on it covers the text column only."
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261127115418-1d3bed"
+}

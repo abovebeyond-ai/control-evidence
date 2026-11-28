@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Two fixes to the home hero, both found on staging with the real Sanity photo and text.\n\n## Line breaks from Sanity\n\nThe hero text in Sanity is a paragraph followed by a list of services, one per line with a \"\u2022\". The site printed it as one paragraph, so on a phone it read as a single block of text.\n\n- `Content::blocks()` turns line breaks into paragraphs, and lines starting with \"\u2022\", \"- \" or \"* \" into one list.\n- `partials/text` renders the blocks, with small accent bullets.\n- Used for the hero and story text on home, the sell-page intro and the history intro.\n- A one-line text renders as before. A dash without a space (\"-20%\") stays text.\n\n## Contrast\n\nOn the staging photo, which has a white facade and a light sky, the light-blue intro reached only 3.5:1 at 1024px and 4.1:1 on a phone. That is below AA, measured against the brightest 5% of the photo behind the letters.\n\n- The intro is now white.\n- The shade is 70% brand-900. That is the lightest at which all hero text reaches AAA (7:1, large text 4.5:1) at 390, 768, 1024, 1440 and 1920px, on both the staging photo and the built-in one. The weakest spot measures 7.2:1.\n- From `lg` on, the shade (`.hero-shade` in `app.css`) covers only the text column: full strength until 120px before the h1's right edge, gone 380px past it. The right side of the photo stays clear. Below `lg` it is an even veil.\n\n## Tests\n\n- `SanityTextBlocksTest`: blocks, the dash case, and the hero markup with a list.\n- Full suite: 85 tests green.\n",
+            "branch": "workbench/hero-text",
+            "title": "Home hero: keep Sanity line breaks, shade to AAA"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261127115418-1d3bed"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\n\"Early access to a paid plan\" (topic `trial`) was reachable only by picking it from the contact form's list; no button or link on the site led to it. It was also the only contact topic that became a Clay lead (`trial_request`), so the event fired rarely and stood apart from every other sales question.\n\n## What\n\n- The option leaves the contact form.\n- The Clay route it fed goes with it: the `contact.received` mapping in `ClayAdapter`, `ClayLeads::REQUEST`, and the replay of trial messages in `gentells:clay-backfill`.\n- Clay now receives two events: `trial_signup` and `newsletter_signup`. Rows already in Clay are untouched; old contact messages keep their topic.\n\n## Tests\n\n`ClayLeadsTest` and `ContactFormTest` adjusted and extended (the form no longer offers the topic; a contact message is no Clay lead). Full suite: the same 9 failures with and without this change, all from the local environment (OAuth keys, build stamp), none in the files touched. Pint clean.\n",
+            "branch": "workbench/drop-trial-topic",
+            "title": "Drop the trial topic from the contact form, and trial_request with it"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261127134705-582ced"
+}

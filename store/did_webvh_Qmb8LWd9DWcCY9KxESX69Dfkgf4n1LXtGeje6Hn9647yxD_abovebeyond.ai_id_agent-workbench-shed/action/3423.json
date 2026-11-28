@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "bd32760aa4c2f9ae3ddcd2c0ad4f74920186aa68",
+            "branch": "workbench/wagens-on-your-website",
+            "files_sha256": "a3c0861fd197e353e52975f1c307bbca47b1fa5433dd3fed362ffa8210c962ff",
+            "message": "Call the website embed \"Wagens op je website\"; explain own_first without scope\n\n\"Voorraad\" named the embed in the docs, Settings > Website, the preview\npage and the mail to the web builder. own_first now says it only applies\nwith scope=all, and that without scope only own vehicles come back.\n\nCloses #1159"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127074822-2e3b2a"
+}

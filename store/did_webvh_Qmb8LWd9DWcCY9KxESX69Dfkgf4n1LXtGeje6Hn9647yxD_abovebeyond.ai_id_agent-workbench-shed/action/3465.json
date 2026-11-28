@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe blog becomes **Stories**, laid out like the rest of the site.\n\n**Overview, `/{lang}/stories`:**\n- The film at the top, under the header. It is the same hero as on the collection pages, with the path above the title. The video comes from the Studio (`siteSettings.stories`), else the Couture film from `config/sanity.php` until Hoet has a film without text.\n- The featured story, chosen in the Studio, else the newest.\n- \"Meer stories\", newest first.\n- Two ways on: find a sales point, or become a partner (now `/contact`).\n\n**A story, `/{lang}/stories/{slug}`:** built like a frame page (`.fd`). One image with Vergroten stays in view while the text scrolls past it. Then the frames the story chose as cards (\"Monturen in dit artikel\"), and more stories.\n\n**A frame page** now lists, under the frame, the stories that chose it (\"Stories over H8\"). The frame cards in a story therefore lead to the frame, and the frame leads back.\n\n**Article blocks:**\n- A FAQ block (`faqBlock`): questions that fold open, with links in the answers.\n- A `siteLink` mark that links to Contact or the FAQ page.\n- An internal link to a FAQ question, which lands on `/faq#question`.\n\n**No categories.** Hoet starts Stories without folders, and the Studio drops the category type (hoet-sanity, same branch name). The category pages, labels and sitemap entries are gone.\n\n**Former addresses:**\n- `/blog` \u2192 `/stories`, in one hop.\n- `/blog/{slug}` \u2192 `/stories/{slug}`, in one hop. A slug renamed while it was still the blog goes straight to the current one.\n- `/blog/categorie/{slug}` \u2192 `/stories`, in one hop.\n- An article taken offline still answers 410.\n\nTitles follow #89: \"Stories - Hoet\", and \"<story> - Hoet\".\n\n## Checked\n\n- Full suite: 484 tests, 483 pass. `BuildStampTest` fails in any git worktree, also on main. Pint passes.\n- New `tests/Feature/StoriesTest.php` covers:\n  - the overview, the featured choice and the film;\n  - the story layout;\n  - the former addresses;\n  - the sitemap and the language switch;\n  - the FAQ block and the Contact/FAQ links;\n  - the stories row on a frame page.\n\n  `BlogTest` is moved to `/stories`.\n- Looked at locally on desktop and mobile, with Hoet's two articles and images as demo content. No content was written to Sanity.\n\n## After merge\n\n- Hoet enters the articles in the Studio, once the hoet-sanity PR is merged and the Studio is deployed.\n- Stories shows in the menu once **Stories tonen** is switched on in the Studio.\n",
+            "branch": "workbench/stories",
+            "title": "Stories: the blog as a page with a film, a featured story and frame-style articles"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127102052-d3befb"
+}

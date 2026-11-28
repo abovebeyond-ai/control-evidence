@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nGoing through 38 trends in a two-line-per-row list, with the trend opening inline as a full copy of the gentells.com page, was slow. A copy of the site's layout also left no room to fix the text by hand.\n\n## What\n\n**Lists**\n- What waits, and the trends on gentells.com, each have a search on the headline, a sector filter, a filter by state and an order (`ListTools`).\n  - The state filter for what waits is: from before the check, changed, new.\n  - On the site it is: checked, changed since its check, from before the check.\n  - The orders are: the pipeline's order, most seen, seen most recently, strongest, newest.\n- What waits shows one line per trend.\n- The filters live in the address, so Back returns to the list as it was.\n\n**A trend's page** (`?trend=<id>`)\n- The headline, Signal, Why it matters and How to activate it are fields to type in. A changed field is marked.\n- While a field is changed, \"Save and stand behind it\", \"Save\" and \"Undo changes\" take the place of \"We stand behind this\" and \"Not like this\".\n- The semiotic read is shown, but not edited here.\n- On the left is a conversation that rewrites the trend on request, working from the fields as they stand. \"Put it in the fields\" places the answer in the fields, where it waits to be saved.\n- Previous, Next, J and K walk the list the page was opened from. After a check, the next trend opens.\n- The signals open under the text.\n- The framed copy of the gentells.com page is gone. One line says where the trend stands with the site, with a link to it.\n\n**Front page**\n- The Waiting tray counts the trends to check one by one. Its line says that a trend is checked in Trends and not placed on the page.\n\n## Tests\n\n`trend-check.test.js` covers counts, filter, sort, the live state, the facts line, changed fields and neighbours: 101 of 101 pass, build ok. Screens were checked against a mocked pipeline: the lists, a filtered list of trends on the site, the trend page, a rewrite put in the fields, the decline reasons and the tray.\n\n## Order\n\nMerge after the pipeline PR.\n",
+            "branch": "workbench/check-desk-filters",
+            "title": "A trend opens on its own page, with its text to type in and a conversation to rewrite it"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261127121700-001c25"
+}

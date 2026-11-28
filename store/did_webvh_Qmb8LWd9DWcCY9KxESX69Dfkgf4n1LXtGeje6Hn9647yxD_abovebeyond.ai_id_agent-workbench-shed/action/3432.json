@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ff742c77872d854c0250035df67beb89f0860f53",
+            "branch": "workbench/reference-drop-prose-link",
+            "files_sha256": "a5b7e9b579ff51fa9eb4e0c9a667cfa96b8b4678d8ea159eec972e42b09f6a23",
+            "message": "Drop the duplicate guide link from the API reference header\n\nThe /docs menu above it already links to the guide. The OpenAPI intros\ncall the guide \"de uitleg met voorbeelden\" instead.\n\nCloses #1161"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127080324-feb59d"
+}

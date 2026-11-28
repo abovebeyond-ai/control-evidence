@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nClay is for enriching a lead once, not for keeping who someone is with Gentells now. A customer moves between plans, cancels, writes in; that state and its history belong in the CRM. The site's outbox already records every one of these events; Attio was the missing receiver.\n\n## What\n\n- `App\\Services\\Attio`: a small client for Attio's REST API v2. Records are upserted on a matching attribute (`email_addresses` for people, `domains` for companies), so an address never makes a second person; notes go on the person's timeline.\n- `App\\Outbox\\AttioAdapter`, next to the Clay adapter:\n  - `newsletter.confirmed`: `gentells_newsletter` ticked.\n  - `account.created`: `gentells_plan` Explore, `gentells_signed_up_at`, `gentells_user_id`; the company by e-mail domain, skipped for mailbox providers (gmail.com, telenet.be, ...).\n  - `contact.received`: name and company; the message as a note.\n  - `subscription.*`: `gentells_plan` once the change takes effect (a downgrade or cancellation at the end of a period is a note now and sets the plan with `ended`); a note per change, none for renewals.\n  - Payments, briefs and commitments stay out: the plan already says what they changed.\n- `gentells:attio-setup [--dry]`: makes the four fields on people and the plan options; leaves what exists.\n- `gentells:attio-backfill [--dry]`: queues past outbox events (since 31 October 2026) for Attio, once.\n- Without `ATTIO_API_KEY` the adapter wants nothing.\n\n## After merge, on the site's server\n\n```\nphp artisan gentells:attio-setup\nphp artisan gentells:attio-backfill --dry\nphp artisan gentells:attio-backfill\n```\n\nRun setup first: until the fields exist, Attio refuses the writes and the outbox retries them.\n\n## Tests\n\nNew `AttioTest` against a faked Attio (upserts, company by domain, plan timing, notes, a refusal kept with Attio's reason, setup, backfill once): 9 tests. Full suite otherwise unchanged; the same environment-only failures as on main (OAuth keys, build stamp). Pint clean.\n\nNot yet run against a real Attio workspace. One thing the API docs leave open is the `config` of a new select attribute; setup sends `{}` and reports what Attio answers.\n",
+            "branch": "workbench/attio",
+            "title": "Tell Attio what happens on gentells.com"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261127134727-e3e703"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "45a53d68581d430ad2ee8903a3478422769e962d",
+            "branch": "workbench/story-links",
+            "files_sha256": "f2e02c70e7d0e006f062d4e53cda773240f8a361862aa60e44697a9e59f8095f",
+            "message": "Link stories to collection pages and explain the link fields"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261127163541-142be8"
+}

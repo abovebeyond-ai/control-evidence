@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "3184ab503861fb4b02a40c050a4b36e20dc0609d",
+            "branch": "workbench/approve-words",
+            "files_sha256": "b29cbc1bf8ca68aef97a3372f21446f15c632dd27751eaba689939010b59db5c",
+            "message": "Trends: approve or reject, approval and the site apart, sectors, unwritten\n\n- Approve and Reject replace \"We stand behind this\" and \"Not like this\".\n- Changing the text has one button, Save; approving is its own move.\n- A trend page shows its approval, its place on gentells.com and the\n  posts about it as three separate lines.\n- The Trends tab gains a count by sector (on gentells.com, no post yet,\n  waiting, rejected, posts) and a list of rejected trends.\n- Both trend lists filter on whether a post is about them.\n- Write lists the approved trends no post is about yet, in the opening\n  and under See all.\n\nPortal: In de Studio keur je trends goed of af, zie je per sector hoeveel trends en posts er zijn, en toont Write welke goedgekeurde trends nog geen post hebben."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261127131647-7c8f8d"
+}

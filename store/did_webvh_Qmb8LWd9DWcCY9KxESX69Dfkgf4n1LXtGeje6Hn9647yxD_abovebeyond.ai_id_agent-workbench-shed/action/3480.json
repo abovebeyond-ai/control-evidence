@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f81894b4ff76345d2af497c149d07d611d0c504f",
+            "branch": "workbench/story-gallery",
+            "files_sha256": "393931f6c28f35d1ad407d388d551b78c74f931b31114e9ced7f5bd8f07982d6",
+            "message": "Show Stories in the site's white and grey, gallery in the column\n\nThe overview, the featured story and the stories row on a frame page drop\ntheir beige ground and dark bar for white and the light grey of the photo\nand text blocks. A story's gallery stays inside the reading column.\n\nPortal: Het overzicht van Stories en de galerij in een artikel volgen nu de stijl van de rest van hoet.be."
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127110749-257278"
+}

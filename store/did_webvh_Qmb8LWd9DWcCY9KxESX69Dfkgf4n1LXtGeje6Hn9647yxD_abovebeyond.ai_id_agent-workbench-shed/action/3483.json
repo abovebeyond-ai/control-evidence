@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nStories in the site's own look, after #91 and #92.\n\n**Overview, `/stories`:**\n- No beige: the featured story and \"Meer stories\" stand on white, and the two ways on (sales point, partner) on the light grey `#f2f2f2` of the photo and text blocks on Over ons.\n- The featured story: image and text in two equal halves with a 60px gap, as in the photo and text block. The title is 27px, the site's section size, instead of up to 37px.\n- \"Meer stories\": the dark bar is gone, and the row has a plain 27px title on white.\n\n**A story:**\n- The gallery stays inside the 640px reading column instead of stepping out to 960px, with more room around it (2.6em) and between the images (16px). Stepping out made three photos of different tones cut through the text.\n- On a phone, a gallery of three stays one row of small images that open on a tap.\n- \"Meer stories\" under a story stands on the light grey, without the extra rule.\n\n**A frame page:** the \"Stories over H8\" row stands on the light grey instead of beige.\n\n## Checked\n\n- Full suite: 484 tests, 483 pass. `BuildStampTest` fails in any git worktree, also on main. Pint passes.\n- Looked at locally on desktop and mobile: the overview, both stories, and the H8 page.\n",
+            "branch": "workbench/story-gallery",
+            "title": "Show Stories in the site's white and grey, gallery in the column"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127110749-257278"
+}

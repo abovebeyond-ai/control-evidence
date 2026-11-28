@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "#48 sized the hero as the screen minus the header (176px) and the category bar (105px). The bar is not always 105px: its height depends on how the labels wrap (\"Brandweerwagens\"), and locally it is 91px. Where the bar came out lower, the difference showed as a white strip below it.\n\nHero and category bar now share one column, from `lg` on, that is the screen height minus the header. The hero takes what the bar leaves, whatever the bar's height. The header measures 175.5px; the column uses 175px, so it ends half a pixel past the fold instead of leaving a hairline.\n\nMeasured locally, with the bar as it renders and forced to 80px and 130px:\n\n- 1440x900, 1470x956, 1920x1080 and 2560x1440: the bar ends at the bottom of the screen in every case. The only exception is 1440x900 with a 130px bar, where the hero keeps its content height of 610px and the bar runs 15px past the fold.\n- 1366x768: unchanged, the hero keeps its 610px.\n- Phones and tablets: unchanged.\n\nAll hero text still reaches AAA at 390, 768, 1024, 1440 and 1920px. Full suite: 85 tests green.\n",
+            "branch": "workbench/hero-fill-bar",
+            "title": "Home hero: no white strip below the category bar"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261127174448-0bd728"
+}

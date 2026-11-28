@@ -1,0 +1,16 @@
+{
+    "action": "dfd42a5d023cf6dc4b401865956bc290",
+    "effect": {
+        "detail": {
+            "base": "6435ddab3cf169e682b6d1b691511a28f61ac9d9",
+            "branch": "workbench/attio-company",
+            "commit": "848e3fec38fd83a88798bdb85f6c0ce7ad3f9f57",
+            "files": 6,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3558,
+    "verdict": "ALLOW"
+}

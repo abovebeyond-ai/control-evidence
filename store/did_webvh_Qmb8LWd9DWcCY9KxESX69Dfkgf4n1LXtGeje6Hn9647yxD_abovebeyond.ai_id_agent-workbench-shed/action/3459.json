@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe blog becomes **Stories** in the Studio.\n\n- **Menu:** \"Blog\" is now \"Stories\". It has a **Pagina Stories** item that opens the settings of the overview: intro, featured story, film for desktop and mobile with their posters. Under it are Artikels and Tags. \"Stories tonen\" switches it on the site.\n- **FAQ block** (`faqBlock`) in an article: an optional title and questions with a short answer. Answers can carry links.\n- **Links:**\n  - a new `siteLink` mark that links to the Contact page or the whole FAQ page;\n  - an internal link can now also point at one FAQ question.\n\n  Hoet can lay these links themselves.\n- **No categories.** Stories starts without folders, so the following are removed: the `journalCategory` type, the category field on a story, its seed script, the slug check against category addresses, and the menu item. No story referred to a category, and the five category documents are already deleted from the dataset.\n- **Preview button:** now opens `/stories/preview/{id}`.\n\n## Checked\n\n- 95 tests pass (`vitest`, without the token-bound `config.test.ts`). `tsc`, `sanity schema validate` (0 errors, 0 warnings) and lint pass.\n- The member list of the article body and the link targets are shared fixtures with hoet-eyewear (`tests/fixtures/article-body-members.json`, `tests/fixtures/site-link-targets.json`). A block or link target added on one side fails the other's test until it is handled there.\n\n## After merge\n\n`npm run deploy` for the Studio, after the hoet-eyewear PR is merged.\n",
+            "branch": "workbench/stories",
+            "title": "Stories in the Studio: page settings, FAQ block, Contact and FAQ links, no categories"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261127102052-f951e5"
+}

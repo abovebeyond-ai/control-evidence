@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "After #47 the home hero was a fixed 610px on desktop. On a 1920x1080 screen that left the header, hero and category bar well short of the bottom, with the next section showing as a strip below.\n\nFrom `lg` on the hero now takes the height that is left of the first screen: `min-h-[calc(100svh-281px)]`, where 281px is the header (176px) plus the category bar (105px). The text is centred vertically in it. The content height stays the minimum, so a short screen (1366x768) keeps its buttons in view instead of squeezing the text.\n\nMeasured locally:\n\n| Screen | Hero height |\n|---|---|\n| 1366x768 | 610px (content minimum) |\n| 1440x900 | 619px |\n| 1920x1080 | 799px |\n| 2560x1440 | 1159px |\n\nFrom 1440px wide, header, hero and category bar end at the bottom of the screen. Phones and tablets are unchanged.\n\nIf the category bar ever wraps to two lines, it ends a little below the fold.\n\nAll hero text still reaches AAA at 390, 768, 1024, 1440 and 1920px. Full suite: 85 tests green.\n",
+            "branch": "workbench/hero-fill",
+            "title": "Home hero: fill the first screen on desktop"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261127131054-51e5c5"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nThe editorial team works in the Studio, and its Trends tab already had \"Looks right\" and \"Take off\". The check of a trend (#508) took nearly the same decision in the Observatory. Two places for one decision leaves nobody sure who approved what, so the check moves to the Studio (Trendwolves/gentells-studio, `workbench/check-in-studio`) and the two become one move.\n\n## What\n\n- `insight-check.mjs`: `checkLines(db, ids)` says where each of a list of trends stands with the check (state, by, at, changed) in one pass. It returns null before the check started.\n- `siteTrendsOverview` sends `checkStarted` and, per trend on the site, its `check`. Once the check started, a person standing behind a trend is its look: `looked` comes from the check, and a look from before the check still counts.\n\n## Tests\n\n`trend-desk.test.mjs`: nothing before the start; carried and checked trends with who and whether the text changed since; a declined trend is not in the list. Suite 1853 of 1853, tsc clean.\n\n## Order\n\nMerge before the Studio PR. Nothing changes until the check is started on the box (`node bin/insight-checks.mjs --start --by=<name>`).\n",
+            "branch": "workbench/check-in-studio",
+            "title": "The Studio's trend list says where each trend stands with the check"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261127114447-300bc8"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "relay: a second screen signs what it asks\n\nA desk app asked in its person's name, but the phone could not tell that ask from one an\nagent made up: it kept no copy, so it said \"this phone sent no such ask\" and the write could\nnot be approved.\n\nA linked screen now gives the relay its own Ed25519 key (POST /api/screens/key) and signs\neach ask over the digest the gate seals: id, by, agent, words and at. The relay checks the\nsignature, the screen's key, the id and the time, and keeps the key and signature with the\nask. The phone lists the screens (GET /api/screens), takes a key as its person's after the\nsame code shows on both, and checks the signature itself; it may tell the relay\n(/api/screens/trust) or unlink the screen (/api/screens/forget). The relay's word that a\nscreen is someone's counts for nothing on the phone.\n\nThe digest is unchanged, so the gate seals the ask as before. One vector is shared by the\nrelay, the gate and the phone.\n\n\nThe phone and desk side is bextrust/bextrust-android, branch ask-from-desk.\n",
+            "branch": "workbench/ask-from-desk",
+            "title": "relay: a second screen signs what it asks"
+        },
+        "resource": "bextrust/control"
+    },
+    "run": "workbench-20261127163719-f64da6"
+}

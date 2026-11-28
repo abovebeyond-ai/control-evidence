@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "96692cc554988695e31cc357402bd72046201505",
+            "branch": "workbench/check-in-studio",
+            "files_sha256": "dd405ae7af2b284feaabafd451b92bbb1f638a4463d24e1f35514b6608529421",
+            "message": "Trends are checked and rewritten in the Studio\n\nPortal: De redactie keurt trends voortaan goed in de Studio, waar ze ook schrijft."
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261127114512-f933ae"
+}

@@ -1,0 +1,16 @@
+{
+    "action": "fde3d7e2ce3533b49dabf7e124621688",
+    "effect": {
+        "detail": {
+            "base": "ad3158cba8d41d61cab659a030f50073e4a10ebe",
+            "branch": "workbench/check-in-studio",
+            "commit": "9c2f7999887a545a2361bb44d8e859b282d9c3bb",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3486,
+    "verdict": "ALLOW"
+}

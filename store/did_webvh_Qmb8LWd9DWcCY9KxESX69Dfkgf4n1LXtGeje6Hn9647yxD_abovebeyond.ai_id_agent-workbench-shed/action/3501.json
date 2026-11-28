@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\n**Two tabs in the site settings.** \"Pagina Stories\" opens the brand's whole site settings document, so its first field was \"Standaard SEO\", with a title that has nothing to do with Stories. The document now has two tabs:\n\n- **Stories**, with \"Stories tonen\" and the Stories page (video, intro, featured story), unfolded. It is the first tab, so \"Pagina Stories\" opens on it. It is hidden for a brand without Stories.\n- **Algemeen**, with everything else. A brand without Stories opens here.\n\nThe \"All fields\" tab is hidden. Every field sits in one of the two tabs, and a test keeps it that way.\n\n**Standaard SEO says what it is.** It is the brand's fallback, not the SEO of one page:\n- the title is used only for a page without a title;\n- the description is used for a page without its own description;\n- the share image is used for a page without its own image.\n\nThe meta title gets the same check as the other titles: on hoet.be it warns to leave \"Hoet\" out. Today it holds \"Hoet - Onopvallend opvallende brillen\".\n\n## Checked\n\n- 98 tests pass (`vitest`, without the token-bound `config.test.ts`), with the new `tests/settings-groups.test.ts`.\n- `tsc` and `sanity schema validate` (0 errors, 0 warnings) pass. Lint shows the same problems as on main, none in the changed file.\n- The tab that opens first follows Sanity's rule: a group marked default, otherwise the first visible one.\n- Not yet seen in a running Studio, which sits behind the login.\n\n## After merge\n\n`npm run deploy` for the Studio.\n",
+            "branch": "workbench/settings-groups",
+            "title": "Split the site settings into a Stories and an Algemeen tab"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261127114910-a36f43"
+}

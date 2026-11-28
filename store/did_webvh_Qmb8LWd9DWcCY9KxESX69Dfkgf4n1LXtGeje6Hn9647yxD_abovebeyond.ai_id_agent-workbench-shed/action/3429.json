@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (change the labels if it is wrong)\nCategory: copy  Priority: P3\nSummary: The header of the API reference pages has an \"Uitleg in gewone taal\" link to the guide page. The menu right above already links to that page, and the label suggests the reference is not plain language.\n\n## What should change\n\n- The link goes from the header of `/docs/api/reference` and `/docs/partner/reference`. The header keeps the page name and the OpenAPI download.\n- The intro of both OpenAPI documents calls the guide \"de uitleg met voorbeelden\" instead of \"de uitleg in gewone taal\". The intro also shows in Postman and other tools, where the pointer to the guide stays useful.\n",
+            "title": "Drop the duplicate guide link from the API reference header"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127080316-cd57ea"
+}

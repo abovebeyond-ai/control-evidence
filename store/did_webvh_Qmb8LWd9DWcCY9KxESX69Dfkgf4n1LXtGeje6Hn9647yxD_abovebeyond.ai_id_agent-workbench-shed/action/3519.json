@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nWith the check started, 38 trends wait in the Studio, and the trends on gentells.com are listed beside them. Both lists were one long column that could not be searched, narrowed or sorted. The Studio now filters by sector and sorts by how often and how recently a trend was seen (Trendwolves/gentells-studio, `workbench/check-desk-filters`), so each line has to carry those.\n\n## What\n\n- `checkQueue`: every line carries `topics`, `generations`, `observed` and `lastSeen`. Before, only trends that were new by the rule had the counts; now carried and changed trends have them too.\n- `siteTrendsOverview`: each trend on the site carries `topics` and `generations`.\n\n## Tests\n\n`insight-check.test.mjs` covers the new fields on carried and new lines. `trend-desk.test.mjs` checks that sectors ride along with a trend on the site. 1854 of 1854 pass, tsc clean.\n\n## Order\n\nMerge before the Studio PR.\n",
+            "branch": "workbench/check-desk-filters",
+            "title": "Trends in the Studio's lists carry their sectors and seen counts"
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261127121638-6c95ee"
+}

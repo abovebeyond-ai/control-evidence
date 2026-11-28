@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Closes #1159\n\n## What changes\n\n**Name of the website embed.** \"Voorraad op de website\" becomes \"Wagens op je website\" in every place where it names the embed:\n- the `/docs` menu (`DocsController::PAGES`);\n- `docs/integraties.md`, `docs/website-embed.md` and the link in `docs/api/partner-api.md`;\n- `embed_title`, `embed_code_help` and the mail subject and body in `resources/lang/nl/website.php`;\n- the preview page title and heading (\"Zo staan je wagens op je website\").\n\nR S2-5.20 quotes the heading and the mail subject, so it follows. The two embed tests assert the new text.\n\n**`own_first`.** The parameter now says it only applies with `scope=all`, and that without `scope` only the dealer's own vehicles come back. The change is in both the OpenAPI document and `public-api.md`.\n\nNot changed:\n- the `data-title` default `Voorraad` of the embed script, which is the frame's accessible name;\n- \"voorraad\" where it means stock in general (insights, momentum).\n\n## Checked\n\nFull suite: 3376 tests, no failures.\n",
+            "branch": "workbench/wagens-on-your-website",
+            "title": "Call the website embed \"Wagens op je website\"; explain own_first without scope"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127074822-2e3b2a"
+}

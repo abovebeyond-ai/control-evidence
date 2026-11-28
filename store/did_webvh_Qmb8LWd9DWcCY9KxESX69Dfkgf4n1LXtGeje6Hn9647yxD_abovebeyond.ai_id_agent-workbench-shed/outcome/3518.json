@@ -1,0 +1,16 @@
+{
+    "action": "0d9593d39a2bbadb1da18fd400a19064",
+    "effect": {
+        "detail": {
+            "base": "2915ddb11833bad7aea9e6fe48acece870a7f98a",
+            "branch": "workbench/check-desk-filters",
+            "commit": "cc58ae730027d03145cdc6901bd8d5353baa3329",
+            "files": 4,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3516,
+    "verdict": "ALLOW"
+}

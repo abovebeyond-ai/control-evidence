@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "d6971044b84164dacb1f52d08d8456c27c65c50d",
+            "branch": "workbench/story-layout",
+            "files_sha256": "294ddd66a99bce7608046d2f09bb2184d01d335933c00175c30cc8c225dd7814",
+            "message": "Put the story image on the left and tune the reading column\n\nThe image sits left, as on the featured story and a frame page. The story\ngets a 640px column at 16px (about 70 characters a line); galleries step\nout of it to 960px, and on a phone a three-image gallery opens with one\nlarge image.\n\nPortal: Stories zijn beter leesbaar: beeld links zoals op de rest van hoet.be, de tekst in een smallere kolom en grotere galerijbeelden."
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127105039-df402d"
+}

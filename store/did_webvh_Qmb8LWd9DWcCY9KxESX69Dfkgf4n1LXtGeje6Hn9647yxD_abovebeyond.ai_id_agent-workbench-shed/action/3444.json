@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe SEO title field on hoet.be now asks to leave \"Hoet\" out on **every** page, the home page included, and shows what the site makes of it:\n\n- **Description:** \"Kort, belangrijkste woord vooraan, zonder \"Hoet\": op hoet.be zet de site het merk er zelf bij. \"Contact\" wordt \"Contact - Hoet\", en op de startpagina wordt \"3D-geprinte titanium brillen\" \"Hoet - 3D-geprinte titanium brillen\".\"\n- **Home page:** a title with the brand in it gets a warning: 'laat \"Hoet\" weg, op de startpagina komt \"Hoet -\" er vanzelf voor.' Until now the home page was exempt, so a typed \"3D-geprinte titanium brillen-Hoet\" showed no hint, although the site removes it anyway (hoet-eyewear #89).\n\nThe length warning on the home page counts the brand the site adds, like every other page.\n\n## Checked\n\n- 96 tests pass (`vitest`, without the token-bound `config.test.ts`). `tsc`, `sanity schema validate` (0 errors, 0 warnings) and lint pass.\n\n## After merge\n\n`npm run deploy` for the Studio.\n",
+            "branch": "workbench/title-hint",
+            "title": "Ask to leave the brand out of the home page title too"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261127095720-8296c2"
+}

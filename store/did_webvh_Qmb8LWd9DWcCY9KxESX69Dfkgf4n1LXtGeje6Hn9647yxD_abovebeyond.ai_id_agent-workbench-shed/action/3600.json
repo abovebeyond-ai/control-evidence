@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "83c3a36c815a8af2a490b9f2c5068b54dae8aa8d",
+            "branch": "workbench/hero-fill-bar",
+            "files_sha256": "c164e319fc5fe5fafb2844f01f4e3de17120dfb74bc5c323233a00e48f7d5986",
+            "message": "Home hero: take what the category bar leaves of the first screen"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261127174448-0bd728"
+}

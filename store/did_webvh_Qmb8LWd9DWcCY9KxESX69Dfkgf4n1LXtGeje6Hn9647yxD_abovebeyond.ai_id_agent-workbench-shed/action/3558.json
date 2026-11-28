@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "6435ddab3cf169e682b6d1b691511a28f61ac9d9",
+            "branch": "workbench/attio-company",
+            "files_sha256": "e14d5b4bdff0309717d350659e5c33721515474131793185a311eac6d387e0cd",
+            "message": "Attio: the organisation a person gives, from billing details and the contact form\n\nA new person field Gentells company holds the legal name from the billing details, or\nthe company typed on the contact form. Saving billing details records a customer.details\nevent; Attio gets the name on the person, on the company by domain when the address has\none, and a note with country and VAT number. The backfill gives organisations that saved\nbilling details earlier that event once.\n\nPortal: Attio toont nu bij elke persoon de organisatie die ze opgaven, uit de factuurgegevens of het contactformulier."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261127140204-60b315"
+}

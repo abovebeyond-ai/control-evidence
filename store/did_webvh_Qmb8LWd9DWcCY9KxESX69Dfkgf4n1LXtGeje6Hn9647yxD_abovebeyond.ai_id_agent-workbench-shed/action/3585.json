@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nThe Koppelingen of a story now each say what they do, and Collecties now does something.\n\n- **Collecties points at the collection pages** (Couture, Couture\u00b2, Costume), the pages under Collecties in the menu. Before, it pointed at the collection documents, and the site did nothing with them. There are only two collection documents for three pages: one of them holds Couture and Couture\u00b2 together and sets up the dealer portal. The site's companion change in Hoet-design/hoet-eyewear shows a story at the foot of each collection page it chose, in a \"Stories over\" row, as a frame page already does. The picker only offers the collection pages of the story's brand, and the links stay weak.\n- **Field help:**\n  - **Monturen:** they appear as cards under the story, and the story appears on the frame page.\n  - **Collecties:** the story appears at the foot of that collection page.\n  - **Tags:** they are not visible on the site. They choose which stories come first under \"Meer stories\", they go to search engines as keywords, and they only start to matter with a handful of stories.\n\nNeither published story has a collection set, so no data changes.\n\n## Checked\n\n- 100 tests pass (`vitest`, without the token-bound `config.test.ts`), including the new `tests/story-links.test.ts`. `config.test.ts` checks that a story's collections belong to its brand; collection pages carry a brand, so that check keeps working.\n- `tsc` passes, and `sanity schema validate` reports 0 errors and 0 warnings.\n- Not yet seen in a running Studio, which sits behind the login.\n\n## After merge\n\n`npm run deploy` for the Studio.\n",
+            "branch": "workbench/story-links",
+            "title": "Link stories to collection pages and explain the link fields"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261127163541-142be8"
+}

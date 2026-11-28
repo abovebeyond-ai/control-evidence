@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea849d250395d08a65ad50d05e02c9fd063e5f5c",
+            "branch": "workbench/attio",
+            "files_sha256": "fdccd8a42c0772bf5763e284cac432ba05dcfe9edb7c3e829409063baeda08e6",
+            "message": "Tell Attio what happens on gentells.com\n\nAn outbox adapter beside Clay's. Each event finds the person in Attio\nby e-mail address (an upsert, never a second record), sets what is true\nnow and leaves a note on the timeline:\n\n- newsletter.confirmed: Gentells newsletter ticked\n- account.created: Gentells plan Explore, account since, user id, and\n  the company by e-mail domain (not for mailbox providers)\n- contact.received: name and company, the message as a note\n- subscription.*: Gentells plan once the change takes effect; a note\n  for each change except renewals\n\ngentells:attio-setup makes the four fields and the plan options once;\ngentells:attio-backfill queues the past outbox events for Attio.\nWithout ATTIO_API_KEY the adapter wants nothing.\n\nPortal: Wat er op gentells.com gebeurt (nieuwsbrief, account, plan, contactbericht) komt voortaan in Attio, per persoon met een tijdlijn."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261127134727-e3e703"
+}

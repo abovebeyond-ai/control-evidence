@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "ea849d250395d08a65ad50d05e02c9fd063e5f5c",
+            "branch": "workbench/drop-trial-topic",
+            "files_sha256": "bd68a8b239ad8a1b032e1a9e898f3954c8f8bba1b71268b56d04aa57f8763084",
+            "message": "Drop the trial topic from the contact form, and trial_request with it\n\nNothing on the site linked to \"Early access to a paid plan\"; a visitor\nreached it only by picking it from the list, and it was the one topic\nthat became a Clay lead. The option is gone, and so is the Clay route\nit fed: the contact.received mapping, ClayLeads::REQUEST and the\nbackfill's replay of trial messages. Old messages keep their topic;\nClay keeps the rows it has.\n\nPortal: Het contactformulier van gentells.com biedt \"Early access to a paid plan\" niet meer aan."
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261127134705-582ced"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "2915ddb11833bad7aea9e6fe48acece870a7f98a",
+            "branch": "workbench/check-desk-filters",
+            "files_sha256": "b2b6c8505980de1148d285fbdc68f2ca29957dd3cb3da5b55283139547799c10",
+            "message": "Trends in the Studio's lists carry their sectors and seen counts\n\nPortal: In de Studio zoek, filter en sorteer je de trends die op een check wachten en die op gentells.com staan."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261127121638-6c95ee"
+}

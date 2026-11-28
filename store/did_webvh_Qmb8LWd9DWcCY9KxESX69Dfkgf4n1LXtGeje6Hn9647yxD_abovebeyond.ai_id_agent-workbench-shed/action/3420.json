@@ -1,0 +1,12 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "issue.open",
+        "params": {
+            "body": "**Triage proposal** (change the labels if it is wrong)\nCategory: copy  Priority: P3\nSummary: The website embed is called \"Voorraad op de website\" in the docs, in Settings > Website, on the preview page and in the mail to the web builder. \"Wagens op je website\" says what a garage and its web builder actually see. The public API reference also leaves open what `own_first` does without `scope`.\n\n## What should change\n\n- The name of the website embed becomes \"Wagens op je website\" wherever it is the name of that thing:\n  - the `/docs` menu and hub;\n  - the website guide heading;\n  - the link in the partner guide;\n  - the title in Settings > Website;\n  - the preview page;\n  - the mail subject and body for the web builder.\n- The `own_first` parameter of the public API says it only applies with `scope=all`, and that without `scope` only the dealer's own vehicles come back.\n\nDutch only: the other languages do not use the word.\n",
+            "title": "Call the website embed \"Wagens op je website\" and explain own_first without scope"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127074813-935c7b"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "388e146f57a4b550b595bc4d07f096ca4ec3b6d8",
+            "branch": "workbench/stories-hero",
+            "files_sha256": "907f73551907356105ae51eeaec5fa7549741502c42aeed7dffc82332afe1469",
+            "message": "Give Stories the hero of the collection pages"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127162117-d08db4"
+}

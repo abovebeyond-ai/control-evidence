@@ -1,0 +1,16 @@
+{
+    "action": "48acc7207a30afae91aa8a36afe7ac2c",
+    "effect": {
+        "detail": {
+            "base": "ff742c77872d854c0250035df67beb89f0860f53",
+            "branch": "workbench/reference-drop-prose-link",
+            "commit": "b7ba1c6731cfc11c8b1f55b8693571dfc592d693",
+            "files": 3,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3432,
+    "verdict": "ALLOW"
+}

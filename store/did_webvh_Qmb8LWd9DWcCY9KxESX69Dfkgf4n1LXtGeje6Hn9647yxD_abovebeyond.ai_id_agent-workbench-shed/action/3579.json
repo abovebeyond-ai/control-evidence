@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## What\n\nA collection page now shows the stories that chose it, in a \"Stories over Couture\" row at its foot. This is the same row a frame page already has (\"Stories over H8\").\n\n- A story picks collection pages in its Collecties field. The Studio side is Hoet-design/hoet-sanity, where that field now points at the collection pages (Couture, Couture\u00b2, Costume) instead of the collection documents. One collection document holds Couture and Couture\u00b2 together and has no page of its own.\n- `Journal::aboutCollectionPage()` sits next to `Journal::aboutFrame()`, and both use one filter. As with the frame row, there are three stories at most, newest first, and none while Stories is switched off.\n- The partial `journal/about-frame` becomes `journal/about` and takes the stories and the name, so the frame page and the collection page share it.\n\nMerge this together with the Studio PR, or after it. Until a story has a collection page in that field, nothing changes on the site: both live stories have it empty.\n\n## Checked\n\n- Full suite: 485 tests, 484 pass. `BuildStampTest` fails in any git worktree, also on main. Pint passes.\n- The new test checks that the Couture page lists the story that chose it and not the other one, and that it shows no row while Stories is switched off.\n",
+            "branch": "workbench/collection-stories",
+            "title": "Show the stories that chose a collection page at its foot"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127163513-f5f914"
+}

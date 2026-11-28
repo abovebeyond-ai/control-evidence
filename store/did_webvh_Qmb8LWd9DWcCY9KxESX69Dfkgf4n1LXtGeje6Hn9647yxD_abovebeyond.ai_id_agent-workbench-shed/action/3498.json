@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "8feba31f8d24d4b781de082e24ebc339be7e027c",
+            "branch": "workbench/settings-groups",
+            "files_sha256": "4b5f49defcd122038914550004e4acff53f51a83e9055076564007d58aa13d88",
+            "message": "Split the site settings into a Stories and an Algemeen tab\n\nPagina Stories opened the whole settings document, starting with the\nbrand's fallback SEO. Stories now opens on its own tab; the fallback SEO\nsays what it is used for and warns about Hoet in the title.\n\nPortal: In de Studio toont Pagina Stories nu alleen wat bij Stories hoort; de andere instellingen staan onder Algemeen."
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261127114910-a36f43"
+}

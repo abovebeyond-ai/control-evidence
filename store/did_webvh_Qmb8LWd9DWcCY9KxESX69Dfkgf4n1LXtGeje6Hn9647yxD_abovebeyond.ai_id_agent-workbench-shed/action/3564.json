@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "c312e35a9e3b5919110f10990366567b3496a14c",
+            "branch": "workbench/handover-deploy",
+            "files_sha256": "6076690f01e6fda0a2fed7bdbce70991f66e2e76b98fae408e0e88af1ebc5323",
+            "message": "A handover for the deploy: the state, what must hold, what is open\n\ndocs/handover/README.md says what gets deployed, the guarantees and the five\ndecisions to fix before prod, what is ready and what is to build, the open\ndecisions and actions, the decisions already taken and the known traps. Beside\nit, the knowledge the Principal AI reads that was in no repository (the vision\npaper, the pitch, the core model, the generated accounts and mail models), the\nsimulation's start script, and the gateway configuration's fields without values."
+        },
+        "resource": "bextrust/bextrust"
+    },
+    "run": "workbench-20261127153945-32c706"
+}

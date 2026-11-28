@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "f5472feeec3625f7da11b17724a884607cf37dac",
+            "branch": "workbench/approve-words",
+            "files_sha256": "cc11c7bdfd17623220bf8ebd8e055570111f9016d67e288c266d51b58dbad9d9",
+            "message": "Approved only for Ask; rejected and unwritten trends for the Studio\n\n- Ask for members reads only trends a person approved (approvedFor), not\n  the ones carried over from before the check.\n- GET /insight-checks also returns the rejected trends (rejectedList), and\n  every line carries the published posts that cite it.\n- Story starters return the approved trends no published post is about\n  yet (unwrittenApproved), for Write.\n- /site/trends returns published posts per sector (postSectors);\n  postsByTrend is split out of siteTrendsOverview and reused.\n\nPortal: Ask Gen antwoordt alleen nog met goedgekeurde trends, en de Studio toont per sector hoeveel trends en posts er zijn en waarover nog niet geschreven is."
+        },
+        "resource": "Trendwolves/gentells-pipeline"
+    },
+    "run": "workbench-20261127131616-8d65e6"
+}

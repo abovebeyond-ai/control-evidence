@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "## Why\n\nOnce the check is started, a trend reaches gentells.com with its reading only when someone from the editorial team stands behind it (Trendwolves/gentells-pipeline #508). The desk for that was in the Observatory, but the editors work in the Studio, whose Trends tab already said \"Looks right\" and \"Take off\". The check moves here, and \"Looks right\" becomes \"We stand behind this\".\n\n## What\n\n- `TrendCheck.jsx`: on Trends, \"Waiting for a check\" lists what waits, in the pipeline's order. Each row says why it waits, and one trend is open at a time with three parts:\n  - gentells.com's view of the trend in the site's look;\n  - \"We stand behind this\", or \"Not like this\" with the take-off reasons (or a sentence for something else);\n  - a field to rewrite the trend with a prompt, with before and after, then \"Use it and stand behind it\", \"Use it\" or \"Discard\".\n  A check brings up the next trend.\n- Trends on the site say who checked them and when, or that they were carried over and not checked yet.\n- The front page tray counts the trends that wait for a check.\n- `trend-check.js` holds the words and choices, with tests. `taxonomy.js` also loads the lifestage labels, for the chips in the preview.\n- A writer's account sees the list, with a line saying that checking takes an editor's account.\n- Before the check is started, the tab is as it was.\n\n## Tests\n\n`trend-check.test.js` (8): roles, the reason a trend waits, the line per trend on the site, the words under the moves, the line over the preview, changed fields, the reason a decline keeps, and which trend opens after a check. 94 of 94, build ok. Screens checked against a mocked pipeline: the desk as an editor and as a writer, the decline reasons, a rewrite in the preview, and the tray.\n\n## Order\n\nMerge after the pipeline PR (it sends `checkStarted` and the check per trend).\n",
+            "branch": "workbench/check-in-studio",
+            "title": "Trends are checked and rewritten in the Studio"
+        },
+        "resource": "Trendwolves/gentells-studio"
+    },
+    "run": "workbench-20261127114512-f933ae"
+}

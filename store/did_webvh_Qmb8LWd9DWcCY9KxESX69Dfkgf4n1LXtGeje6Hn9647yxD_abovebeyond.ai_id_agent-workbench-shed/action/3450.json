@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "adbace4d05cea5de55372c6cee8c68bf9cff87cf",
+            "branch": "workbench/copy-drops-seller",
+            "files_sha256": "f999a8f8b2587958902cfbe80d3bc4ff6de4be459ebab3d961f4f5aa637aaad5",
+            "message": "A copy of a bought-over sheet is not a second purchase\n\nCopying a sheet took seller_vehicle_id and seller_id along, so a copy of a\ncar bought from a colleague counted as a buy-over without its transaction\nand set off stocklist:check-transactions. Copying now leaves both out; the\npurchase stays on the parent. stocklist:detach-copied-purchases clears them\non the copies that already inherited them (dry run by default).\n\nNightwatch: 86"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127100518-a07036"
+}

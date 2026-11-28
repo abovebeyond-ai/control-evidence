@@ -1,0 +1,16 @@
+{
+    "action": "d7d6d346945e028b1c79b53a7ee07a2f",
+    "effect": {
+        "detail": {
+            "base": "adbace4d05cea5de55372c6cee8c68bf9cff87cf",
+            "branch": "workbench/copy-drops-seller",
+            "commit": "643ee55c14d5f09d03e7a9d1ff51e21f1c43a277",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3450,
+    "verdict": "ALLOW"
+}

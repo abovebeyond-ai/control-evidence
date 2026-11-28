@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "fb35b39efc4959c4ed68d3e9a410d6bd9f746dcd",
+            "branch": "workbench/public-leaks",
+            "files_sha256": "14981b30bd9f3e48ed8e6aeccda5f4ecab1e13f69270da0dd9af1a925fbae381",
+            "message": "Close what a guest can open without a login"
+        },
+        "resource": "stocklistdealer-eu/platform"
+    },
+    "run": "workbench-20261127073524-36b1f9"
+}

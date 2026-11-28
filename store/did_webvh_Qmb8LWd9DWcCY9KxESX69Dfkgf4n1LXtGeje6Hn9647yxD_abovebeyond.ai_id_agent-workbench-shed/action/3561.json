@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "Attio knew a person's company only from their mail domain. Anyone on gmail, telenet or a similar mailbox had none, and the company typed on the contact form went into a note only.\n\nWhat changes:\n\n- **New person field `gentells_company`** (\"Gentells company\", text). `gentells:attio-setup` creates it and leaves the existing fields alone.\n- **Billing details** record a new outbox event `customer.details` (user, customer, email, legal name, country, VAT number) each time they are saved. Attio then:\n  - sets Gentells company to the legal name;\n  - names the company record after it when the address has a business domain;\n  - adds the note \"gentells.com: billing details\" with the organisation, country and VAT number.\n\n  The legal name is checked against VIES for EU buyers, so it is the most reliable company name Gentells gets.\n- **Contact form:** the typed company now also fills Gentells company, besides the note.\n- **Backfill:** customers who saved billing details before this event existed get one `customer.details` per user, once. Running it again adds nothing.\n\nThe signup form stays as it is. A free account needs no organisation, and a paying one gives it with the billing details.\n\nAfter merge, on the site server: `php artisan gentells:attio-setup`, then `gentells:attio-backfill --dry`, then `gentells:attio-backfill`.\n\nTests: `AttioTest` gains five cases (billing details on a gmail address and on a business domain, the event recorded on save, the backfill once, company from the contact form). AttioTest, BillingFlowTest, BillingTest and ContactFormTest pass (64). In the full suite 661 pass; the 9 failures are local OAuth keys and the build stamp, the same as on main.\n",
+            "branch": "workbench/attio-company",
+            "title": "Attio: the organisation a person gives, from billing details and the contact form"
+        },
+        "resource": "Trendwolves/gentells-site"
+    },
+    "run": "workbench-20261127140204-60b315"
+}

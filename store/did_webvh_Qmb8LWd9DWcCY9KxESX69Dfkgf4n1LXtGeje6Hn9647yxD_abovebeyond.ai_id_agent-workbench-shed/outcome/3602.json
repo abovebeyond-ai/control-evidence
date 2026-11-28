@@ -1,0 +1,16 @@
+{
+    "action": "50415e810eeca505446d7ee9281ce0f8",
+    "effect": {
+        "detail": {
+            "base": "83c3a36c815a8af2a490b9f2c5068b54dae8aa8d",
+            "branch": "workbench/hero-fill-bar",
+            "commit": "79f48dd84cd03d4abbdd3dae75084b7a9e8683bd",
+            "files": 1,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3600,
+    "verdict": "ALLOW"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "1412c1a9de4cd5b5a77358cdc1f72fcb5859c883",
+            "branch": "workbench/stories",
+            "files_sha256": "3dce131cba3af02ec36c25c79c5bbe6dc8b2fd7d4ab4cffd0ed18e3b238043ce",
+            "message": "Stories in the Studio: page settings, FAQ block, Contact and FAQ links, no categories\n\nPortal: In de Studio heet de blog nu Stories, met een FAQ-blok en links naar Contact en FAQ"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261127102052-f951e5"
+}

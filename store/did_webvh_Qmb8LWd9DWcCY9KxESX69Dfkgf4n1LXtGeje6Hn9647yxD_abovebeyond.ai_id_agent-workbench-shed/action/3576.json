@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "388e146f57a4b550b595bc4d07f096ca4ec3b6d8",
+            "branch": "workbench/collection-stories",
+            "files_sha256": "1a1e415716f6d0f2c0c8ec691839547207fb7adf828d4738f3c31fa8dba063c9",
+            "message": "Show the stories that chose a collection page at its foot"
+        },
+        "resource": "Hoet-design/hoet-eyewear"
+    },
+    "run": "workbench-20261127163513-f5f914"
+}

@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "branch.push",
+        "params": {
+            "base_sha": "9fbd2b5fb185a6ebc9fbc39acb7eba350bbe5953",
+            "branch": "workbench/title-hint",
+            "files_sha256": "75aad2cde8665aec7b9779282a57255ff73795f591dffafda40ba4fe3a61b495",
+            "message": "Ask to leave the brand out of the home page title too, with examples in the field\n\nPortal: De Studio legt bij de SEO-titel uit dat Hoet er vanzelf bij komt, ook op de startpagina"
+        },
+        "resource": "Hoet-design/hoet-sanity"
+    },
+    "run": "workbench-20261127095645-235e0f"
+}

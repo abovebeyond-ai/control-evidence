@@ -1,0 +1,14 @@
+{
+    "action": {
+        "classification": "public",
+        "kind": "pull.open",
+        "params": {
+            "base": "main",
+            "body": "After #46 the home hero shows the intro as paragraphs and a list. That made it 798px tall: on a 1440x900 screen the category bar fell below the fold, and on 1366x768 the buttons did.\n\nFrom `lg` on:\n- The vertical padding is 48px instead of 112px.\n- The service list runs on in a row, so it takes two lines instead of four. `partials/text` takes a `$list` class for that.\n\nResult:\n- The hero is 610px tall. On 1440x900 the category bar ends at about 891px on staging, so it fits without scrolling.\n- Phones keep the stacked list.\n- All hero text still reaches AAA at 390, 768, 1024, 1440 and 1920px.\n\nFull suite: 85 tests green.\n",
+            "branch": "workbench/hero-fit",
+            "title": "Home hero: compact on desktop so it fits a 1440x900 screen"
+        },
+        "resource": "ShaneDeconinck/schoutteet"
+    },
+    "run": "workbench-20261127120746-459264"
+}

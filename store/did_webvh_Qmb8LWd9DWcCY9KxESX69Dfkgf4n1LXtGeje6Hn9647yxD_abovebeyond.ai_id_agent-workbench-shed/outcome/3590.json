@@ -1,0 +1,16 @@
+{
+    "action": "d544d0b3d0785233b424623d70ce4a79",
+    "effect": {
+        "detail": {
+            "base": "98580ce5c45f7cd8027bc637a679f42fb3820737",
+            "branch": "workbench/ask-from-desk",
+            "commit": "961a46a1b59b596c0d2518bf767b67057dd03269",
+            "files": 5,
+            "via": "app"
+        },
+        "ok": true
+    },
+    "reason": "within grant",
+    "step": 3588,
+    "verdict": "ALLOW"
+}
